@@ -308,8 +308,7 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
             @param  xRequest
                     the interaction request, which should be intercepted.
          */
-        virtual void SAL_CALL handle(const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest)
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL handle(const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest);
 
     //-------------------------------------------
     // helper

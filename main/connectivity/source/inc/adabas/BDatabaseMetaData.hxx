@@ -43,8 +43,8 @@ namespace connectivity
 			}
 
 			// just to return our url
-            virtual ::rtl::OUString SAL_CALL getURL(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			virtual sal_Bool SAL_CALL supportsIntegrityEnhancementFacility(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+            virtual ::rtl::OUString SAL_CALL getURL(  );
+			virtual sal_Bool SAL_CALL supportsIntegrityEnhancementFacility(  );
 		};
 	}
 }

@@ -142,13 +142,13 @@ ScTableLink* ScSheetLinkObj::GetLink_Impl() const
 
 // XNamed
 
-rtl::OUString SAL_CALL ScSheetLinkObj::getName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScSheetLinkObj::getName()
 {
 	ScUnoGuard aGuard;
 	return getFileName();	// Name ist der Dateiname (URL)
 }
 
-void SAL_CALL ScSheetLinkObj::setName( const rtl::OUString& aName ) throw(uno::RuntimeException)
+void SAL_CALL ScSheetLinkObj::setName( const rtl::OUString& aName )
 {
 	ScUnoGuard aGuard;
 	setFileName(aName);		// Name ist der Dateiname (URL)
@@ -156,7 +156,7 @@ void SAL_CALL ScSheetLinkObj::setName( const rtl::OUString& aName ) throw(uno::R
 
 // XRefreshable
 
-void SAL_CALL ScSheetLinkObj::refresh() throw(uno::RuntimeException)
+void SAL_CALL ScSheetLinkObj::refresh()
 {
 	ScUnoGuard aGuard;
 	ScTableLink* pLink = GetLink_Impl();
@@ -166,7 +166,6 @@ void SAL_CALL ScSheetLinkObj::refresh() throw(uno::RuntimeException)
 
 void SAL_CALL ScSheetLinkObj::addRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<util::XRefreshListener>* pObj =
@@ -180,7 +179,6 @@ void SAL_CALL ScSheetLinkObj::addRefreshListener(
 
 void SAL_CALL ScSheetLinkObj::removeRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_uInt16 nCount = aRefreshListeners.Count();
@@ -215,7 +213,6 @@ void ScSheetLinkObj::ModifyRefreshDelay_Impl( sal_Int32 nRefresh )
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScSheetLinkObj::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	static uno::Reference<beans::XPropertySetInfo> aRef(
@@ -225,9 +222,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScSheetLinkObj::getPropertySetI
 
 void SAL_CALL ScSheetLinkObj::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	String aNameString(aPropertyName);
@@ -262,8 +256,6 @@ void SAL_CALL ScSheetLinkObj::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScSheetLinkObj::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	String aNameString(aPropertyName);
@@ -465,7 +457,6 @@ ScSheetLinkObj* ScSheetLinksObj::GetObjectByName_Impl(const rtl::OUString& aName
 // XEnumerationAccess
 
 uno::Reference<container::XEnumeration> SAL_CALL ScSheetLinksObj::createEnumeration()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     return new ScIndexEnumeration(this, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sheet.SheetLinksEnumeration")));
@@ -473,7 +464,7 @@ uno::Reference<container::XEnumeration> SAL_CALL ScSheetLinksObj::createEnumerat
 
 // XIndexAccess
 
-sal_Int32 SAL_CALL ScSheetLinksObj::getCount() throw(uno::RuntimeException)
+sal_Int32 SAL_CALL ScSheetLinksObj::getCount()
 {
 	ScUnoGuard aGuard;
 	sal_Int32 nCount = 0;
@@ -497,8 +488,6 @@ sal_Int32 SAL_CALL ScSheetLinksObj::getCount() throw(uno::RuntimeException)
 }
 
 uno::Any SAL_CALL ScSheetLinksObj::getByIndex( sal_Int32 nIndex )
-							throw(lang::IndexOutOfBoundsException,
-									lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<beans::XPropertySet> xLink(GetObjectByIndex_Impl(nIndex));
@@ -509,21 +498,19 @@ uno::Any SAL_CALL ScSheetLinksObj::getByIndex( sal_Int32 nIndex )
 //    return uno::Any();
 }
 
-uno::Type SAL_CALL ScSheetLinksObj::getElementType() throw(uno::RuntimeException)
+uno::Type SAL_CALL ScSheetLinksObj::getElementType()
 {
 	ScUnoGuard aGuard;
 	return getCppuType((uno::Reference<beans::XPropertySet>*)0);
 }
 
-sal_Bool SAL_CALL ScSheetLinksObj::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScSheetLinksObj::hasElements()
 {
 	ScUnoGuard aGuard;
 	return ( getCount() != 0 );
 }
 
 uno::Any SAL_CALL ScSheetLinksObj::getByName( const rtl::OUString& aName )
-			throw(container::NoSuchElementException,
-					lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<beans::XPropertySet> xLink(GetObjectByName_Impl(aName));
@@ -535,7 +522,6 @@ uno::Any SAL_CALL ScSheetLinksObj::getByName( const rtl::OUString& aName )
 }
 
 sal_Bool SAL_CALL ScSheetLinksObj::hasByName( const rtl::OUString& aName )
-										throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	//	Name ist der Dateiname
@@ -558,7 +544,7 @@ sal_Bool SAL_CALL ScSheetLinksObj::hasByName( const rtl::OUString& aName )
 	return sal_False;
 }
 
-uno::Sequence<rtl::OUString> SAL_CALL ScSheetLinksObj::getElementNames() throw(uno::RuntimeException)
+uno::Sequence<rtl::OUString> SAL_CALL ScSheetLinksObj::getElementNames()
 {
 	ScUnoGuard aGuard;
 	//	Name ist der Dateiname
@@ -707,7 +693,7 @@ void ScAreaLinkObj::ModifyRefreshDelay_Impl( sal_Int32 nRefresh )
 
 // XRefreshable
 
-void SAL_CALL ScAreaLinkObj::refresh() throw(uno::RuntimeException)
+void SAL_CALL ScAreaLinkObj::refresh()
 {
 	ScUnoGuard aGuard;
 	ScAreaLink* pLink = lcl_GetAreaLink(pDocShell, nPos);
@@ -717,7 +703,6 @@ void SAL_CALL ScAreaLinkObj::refresh() throw(uno::RuntimeException)
 
 void SAL_CALL ScAreaLinkObj::addRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<util::XRefreshListener>* pObj =
@@ -731,7 +716,6 @@ void SAL_CALL ScAreaLinkObj::addRefreshListener(
 
 void SAL_CALL ScAreaLinkObj::removeRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_uInt16 nCount = aRefreshListeners.Count();
@@ -759,7 +743,6 @@ void ScAreaLinkObj::Refreshed_Impl()
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScAreaLinkObj::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	static uno::Reference<beans::XPropertySetInfo> aRef(
@@ -769,9 +752,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScAreaLinkObj::getPropertySetIn
 
 void SAL_CALL ScAreaLinkObj::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	String aNameString(aPropertyName);
@@ -806,8 +786,6 @@ void SAL_CALL ScAreaLinkObj::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScAreaLinkObj::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	String aNameString(aPropertyName);
@@ -895,7 +873,7 @@ void ScAreaLinkObj::setRefreshDelay(sal_Int32 nRefreshDelay)
 
 // XAreaLink
 
-rtl::OUString SAL_CALL ScAreaLinkObj::getSourceArea() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScAreaLinkObj::getSourceArea()
 {
 	ScUnoGuard aGuard;
 	rtl::OUString aRet;
@@ -906,13 +884,12 @@ rtl::OUString SAL_CALL ScAreaLinkObj::getSourceArea() throw(uno::RuntimeExceptio
 }
 
 void SAL_CALL ScAreaLinkObj::setSourceArea( const rtl::OUString& aSourceArea )
-											throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	Modify_Impl( NULL, NULL, NULL, &aSourceArea, NULL );
 }
 
-table::CellRangeAddress SAL_CALL ScAreaLinkObj::getDestArea() throw(uno::RuntimeException)
+table::CellRangeAddress SAL_CALL ScAreaLinkObj::getDestArea()
 {
 	ScUnoGuard aGuard;
 	table::CellRangeAddress aRet;
@@ -923,7 +900,6 @@ table::CellRangeAddress SAL_CALL ScAreaLinkObj::getDestArea() throw(uno::Runtime
 }
 
 void SAL_CALL ScAreaLinkObj::setDestArea( const table::CellRangeAddress& aDestArea )
-											throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	Modify_Impl( NULL, NULL, NULL, NULL, &aDestArea );
@@ -969,7 +945,6 @@ void SAL_CALL ScAreaLinksObj::insertAtPosition( const table::CellAddress& aDestP
 												const rtl::OUString& aSourceArea,
 												const rtl::OUString& aFilter,
 												const rtl::OUString& aFilterOptions )
-											throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (pDocShell)
@@ -989,7 +964,7 @@ void SAL_CALL ScAreaLinksObj::insertAtPosition( const table::CellAddress& aDestP
 	}
 }
 
-void SAL_CALL ScAreaLinksObj::removeByIndex( sal_Int32 nIndex ) throw(uno::RuntimeException)
+void SAL_CALL ScAreaLinksObj::removeByIndex( sal_Int32 nIndex )
 {
 	ScUnoGuard aGuard;
 	ScAreaLink* pLink = lcl_GetAreaLink(pDocShell, (sal_uInt16)nIndex);
@@ -1005,7 +980,6 @@ void SAL_CALL ScAreaLinksObj::removeByIndex( sal_Int32 nIndex ) throw(uno::Runti
 // XEnumerationAccess
 
 uno::Reference<container::XEnumeration> SAL_CALL ScAreaLinksObj::createEnumeration()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     return new ScIndexEnumeration(this, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sheet.CellAreaLinksEnumeration")));
@@ -1013,7 +987,7 @@ uno::Reference<container::XEnumeration> SAL_CALL ScAreaLinksObj::createEnumerati
 
 // XIndexAccess
 
-sal_Int32 SAL_CALL ScAreaLinksObj::getCount() throw(uno::RuntimeException)
+sal_Int32 SAL_CALL ScAreaLinksObj::getCount()
 {
 	ScUnoGuard aGuard;
 	sal_Int32 nAreaCount = 0;
@@ -1032,8 +1006,6 @@ sal_Int32 SAL_CALL ScAreaLinksObj::getCount() throw(uno::RuntimeException)
 }
 
 uno::Any SAL_CALL ScAreaLinksObj::getByIndex( sal_Int32 nIndex )
-							throw(lang::IndexOutOfBoundsException,
-									lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<sheet::XAreaLink> xLink(GetObjectByIndex_Impl(nIndex));
@@ -1044,13 +1016,13 @@ uno::Any SAL_CALL ScAreaLinksObj::getByIndex( sal_Int32 nIndex )
 //    return uno::Any();
 }
 
-uno::Type SAL_CALL ScAreaLinksObj::getElementType() throw(uno::RuntimeException)
+uno::Type SAL_CALL ScAreaLinksObj::getElementType()
 {
 	ScUnoGuard aGuard;
 	return getCppuType((uno::Reference<sheet::XAreaLink>*)0);
 }
 
-sal_Bool SAL_CALL ScAreaLinksObj::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScAreaLinksObj::hasElements()
 {
 	ScUnoGuard aGuard;
 	return ( getCount() != 0 );
@@ -1108,13 +1080,13 @@ String lcl_BuildDDEName( const String& rAppl, const String& rTopic, const String
 	return aRet;
 }
 
-rtl::OUString SAL_CALL ScDDELinkObj::getName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScDDELinkObj::getName()
 {
 	ScUnoGuard aGuard;
 	return lcl_BuildDDEName( aAppl, aTopic, aItem );
 }
 
-void SAL_CALL ScDDELinkObj::setName( const rtl::OUString& /* aName */ ) throw(uno::RuntimeException)
+void SAL_CALL ScDDELinkObj::setName( const rtl::OUString& /* aName */ )
 {
 	//	name can't be changed (formulas wouldn't find the link)
 	throw uno::RuntimeException();
@@ -1122,7 +1094,7 @@ void SAL_CALL ScDDELinkObj::setName( const rtl::OUString& /* aName */ ) throw(un
 
 // XDDELink
 
-rtl::OUString SAL_CALL ScDDELinkObj::getApplication() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScDDELinkObj::getApplication()
 {
 	ScUnoGuard aGuard;
 	//!	Test, ob Link noch im Dokument enthalten?
@@ -1130,7 +1102,7 @@ rtl::OUString SAL_CALL ScDDELinkObj::getApplication() throw(uno::RuntimeExceptio
 	return aAppl;
 }
 
-rtl::OUString SAL_CALL ScDDELinkObj::getTopic() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScDDELinkObj::getTopic()
 {
 	ScUnoGuard aGuard;
 	//!	Test, ob Link noch im Dokument enthalten?
@@ -1138,7 +1110,7 @@ rtl::OUString SAL_CALL ScDDELinkObj::getTopic() throw(uno::RuntimeException)
 	return aTopic;
 }
 
-rtl::OUString SAL_CALL ScDDELinkObj::getItem() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScDDELinkObj::getItem()
 {
 	ScUnoGuard aGuard;
 	//!	Test, ob Link noch im Dokument enthalten?
@@ -1148,7 +1120,7 @@ rtl::OUString SAL_CALL ScDDELinkObj::getItem() throw(uno::RuntimeException)
 
 // XRefreshable
 
-void SAL_CALL ScDDELinkObj::refresh() throw(uno::RuntimeException)
+void SAL_CALL ScDDELinkObj::refresh()
 {
 	ScUnoGuard aGuard;
 	if (pDocShell)
@@ -1161,7 +1133,6 @@ void SAL_CALL ScDDELinkObj::refresh() throw(uno::RuntimeException)
 
 void SAL_CALL ScDDELinkObj::addRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<util::XRefreshListener>* pObj =
@@ -1175,7 +1146,6 @@ void SAL_CALL ScDDELinkObj::addRefreshListener(
 
 void SAL_CALL ScDDELinkObj::removeRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_uInt16 nCount = aRefreshListeners.Count();
@@ -1195,7 +1165,6 @@ void SAL_CALL ScDDELinkObj::removeRefreshListener(
 // XDDELinkResults
 
 uno::Sequence< uno::Sequence< uno::Any > > ScDDELinkObj::getResults(  )
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     uno::Sequence< uno::Sequence< uno::Any > > aReturn;
@@ -1234,7 +1203,6 @@ uno::Sequence< uno::Sequence< uno::Any > > ScDDELinkObj::getResults(  )
 }
 
 void ScDDELinkObj::setResults( const uno::Sequence< uno::Sequence< uno::Any > >& aResults )
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     bool bSuccess = false;
@@ -1332,7 +1300,6 @@ ScDDELinkObj* ScDDELinksObj::GetObjectByName_Impl(const rtl::OUString& aName)
 // XEnumerationAccess
 
 uno::Reference<container::XEnumeration> SAL_CALL ScDDELinksObj::createEnumeration()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     return new ScIndexEnumeration(this, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sheet.DDELinksEnumeration")));
@@ -1340,7 +1307,7 @@ uno::Reference<container::XEnumeration> SAL_CALL ScDDELinksObj::createEnumeratio
 
 // XIndexAccess
 
-sal_Int32 SAL_CALL ScDDELinksObj::getCount() throw(uno::RuntimeException)
+sal_Int32 SAL_CALL ScDDELinksObj::getCount()
 {
 	ScUnoGuard aGuard;
 	sal_Int32 nAreaCount = 0;
@@ -1350,8 +1317,6 @@ sal_Int32 SAL_CALL ScDDELinksObj::getCount() throw(uno::RuntimeException)
 }
 
 uno::Any SAL_CALL ScDDELinksObj::getByIndex( sal_Int32 nIndex )
-							throw(lang::IndexOutOfBoundsException,
-									lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<sheet::XDDELink> xLink(GetObjectByIndex_Impl(nIndex));
@@ -1362,21 +1327,19 @@ uno::Any SAL_CALL ScDDELinksObj::getByIndex( sal_Int32 nIndex )
 //    return uno::Any();
 }
 
-uno::Type SAL_CALL ScDDELinksObj::getElementType() throw(uno::RuntimeException)
+uno::Type SAL_CALL ScDDELinksObj::getElementType()
 {
 	ScUnoGuard aGuard;
 	return getCppuType((uno::Reference<sheet::XDDELink>*)0);
 }
 
-sal_Bool SAL_CALL ScDDELinksObj::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScDDELinksObj::hasElements()
 {
 	ScUnoGuard aGuard;
 	return ( getCount() != 0 );
 }
 
 uno::Any SAL_CALL ScDDELinksObj::getByName( const rtl::OUString& aName )
-			throw(container::NoSuchElementException,
-					lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<sheet::XDDELink> xLink(GetObjectByName_Impl(aName));
@@ -1387,7 +1350,7 @@ uno::Any SAL_CALL ScDDELinksObj::getByName( const rtl::OUString& aName )
 //    return uno::Any();
 }
 
-uno::Sequence<rtl::OUString> SAL_CALL ScDDELinksObj::getElementNames() throw(uno::RuntimeException)
+uno::Sequence<rtl::OUString> SAL_CALL ScDDELinksObj::getElementNames()
 {
 	ScUnoGuard aGuard;
 	if (pDocShell)
@@ -1410,7 +1373,6 @@ uno::Sequence<rtl::OUString> SAL_CALL ScDDELinksObj::getElementNames() throw(uno
 }
 
 sal_Bool SAL_CALL ScDDELinksObj::hasByName( const rtl::OUString& aName )
-										throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (pDocShell)
@@ -1435,7 +1397,6 @@ sal_Bool SAL_CALL ScDDELinksObj::hasByName( const rtl::OUString& aName )
 uno::Reference< sheet::XDDELink > ScDDELinksObj::addDDELink(
     const ::rtl::OUString& aApplication, const ::rtl::OUString& aTopic,
     const ::rtl::OUString& aItem, ::com::sun::star::sheet::DDELinkMode nMode )
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     uno::Reference< sheet::XDDELink > xLink;
@@ -1500,7 +1461,6 @@ ScExternalSheetCacheObj::~ScExternalSheetCacheObj()
 }
 
 void SAL_CALL ScExternalSheetCacheObj::setCellValue(sal_Int32 nCol, sal_Int32 nRow, const Any& rValue)
-    throw (IllegalArgumentException, RuntimeException)
 {
     ScUnoGuard aGuard;
     if (nRow < 0 || nCol < 0)
@@ -1521,7 +1481,6 @@ void SAL_CALL ScExternalSheetCacheObj::setCellValue(sal_Int32 nCol, sal_Int32 nR
 }
 
 Any SAL_CALL ScExternalSheetCacheObj::getCellValue(sal_Int32 nCol, sal_Int32 nRow)
-    throw (IllegalArgumentException, RuntimeException)
 {
     ScUnoGuard aGuard;
     if (nRow < 0 || nCol < 0)
@@ -1553,7 +1512,6 @@ Any SAL_CALL ScExternalSheetCacheObj::getCellValue(sal_Int32 nCol, sal_Int32 nRo
 }
 
 Sequence< sal_Int32 > SAL_CALL ScExternalSheetCacheObj::getAllRows()
-    throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     vector<SCROW> aRows;
@@ -1567,7 +1525,6 @@ Sequence< sal_Int32 > SAL_CALL ScExternalSheetCacheObj::getAllRows()
 }
 
 Sequence< sal_Int32 > SAL_CALL ScExternalSheetCacheObj::getAllColumns(sal_Int32 nRow)
-    throw (IllegalArgumentException, RuntimeException)
 {
     ScUnoGuard aGuard;
     if (nRow < 0)
@@ -1584,7 +1541,6 @@ Sequence< sal_Int32 > SAL_CALL ScExternalSheetCacheObj::getAllColumns(sal_Int32 
 }
 
 sal_Int32 SAL_CALL ScExternalSheetCacheObj::getTokenIndex()
-        throw (RuntimeException)
 {
     return static_cast< sal_Int32 >( mnIndex );
 }
@@ -1602,7 +1558,6 @@ ScExternalDocLinkObj::~ScExternalDocLinkObj()
 
 Reference< sheet::XExternalSheetCache > SAL_CALL ScExternalDocLinkObj::addSheetCache(
     const OUString& aSheetName, sal_Bool bDynamicCache )
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     size_t nIndex = 0;
@@ -1616,7 +1571,6 @@ Reference< sheet::XExternalSheetCache > SAL_CALL ScExternalDocLinkObj::addSheetC
 }
 
 Any SAL_CALL ScExternalDocLinkObj::getByName(const::rtl::OUString &aName)
-        throw (container::NoSuchElementException, lang::WrappedTargetException, RuntimeException)
 {
     ScUnoGuard aGuard;
     size_t nIndex = 0;
@@ -1632,7 +1586,6 @@ Any SAL_CALL ScExternalDocLinkObj::getByName(const::rtl::OUString &aName)
 }
 
 Sequence< OUString > SAL_CALL ScExternalDocLinkObj::getElementNames()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     vector<String> aTabNames;
@@ -1652,7 +1605,6 @@ Sequence< OUString > SAL_CALL ScExternalDocLinkObj::getElementNames()
 }
 
 sal_Bool SAL_CALL ScExternalDocLinkObj::hasByName(const OUString &aName)
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
 
@@ -1662,7 +1614,6 @@ sal_Bool SAL_CALL ScExternalDocLinkObj::hasByName(const OUString &aName)
 }
 
 sal_Int32 SAL_CALL ScExternalDocLinkObj::getCount()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
 
@@ -1671,7 +1622,6 @@ sal_Int32 SAL_CALL ScExternalDocLinkObj::getCount()
 }
 
 Any SAL_CALL ScExternalDocLinkObj::getByIndex(sal_Int32 nApiIndex)
-        throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, RuntimeException)
 {
     ScUnoGuard aGuard;
 
@@ -1695,7 +1645,6 @@ Any SAL_CALL ScExternalDocLinkObj::getByIndex(sal_Int32 nApiIndex)
 }
 
 Reference< container::XEnumeration > SAL_CALL ScExternalDocLinkObj::createEnumeration()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     Reference< container::XEnumeration > aRef(
@@ -1705,14 +1654,12 @@ Reference< container::XEnumeration > SAL_CALL ScExternalDocLinkObj::createEnumer
 }
 
 uno::Type SAL_CALL ScExternalDocLinkObj::getElementType()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     return getCppuType(static_cast<Reference<sheet::XExternalDocLink>*>(0));
 }
 
 sal_Bool SAL_CALL ScExternalDocLinkObj::hasElements()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
 
@@ -1721,7 +1668,6 @@ sal_Bool SAL_CALL ScExternalDocLinkObj::hasElements()
 }
 
 sal_Int32 SAL_CALL ScExternalDocLinkObj::getTokenIndex()
-        throw (RuntimeException)
 {
     return static_cast<sal_Int32>(mnFileId);
 }
@@ -1740,7 +1686,6 @@ ScExternalDocLinksObj::~ScExternalDocLinksObj()
 
 Reference< sheet::XExternalDocLink > SAL_CALL ScExternalDocLinksObj::addDocLink(
     const OUString& aDocName )
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     sal_uInt16 nFileId = mpRefMgr->getExternalFileId(aDocName);
@@ -1749,7 +1694,6 @@ Reference< sheet::XExternalDocLink > SAL_CALL ScExternalDocLinksObj::addDocLink(
 }
 
 Any SAL_CALL ScExternalDocLinksObj::getByName(const::rtl::OUString &aName)
-        throw (container::NoSuchElementException, lang::WrappedTargetException, RuntimeException)
 {
     ScUnoGuard aGuard;
     if (!mpRefMgr->hasExternalFile(aName))
@@ -1764,7 +1708,6 @@ Any SAL_CALL ScExternalDocLinksObj::getByName(const::rtl::OUString &aName)
 }
 
 Sequence< OUString > SAL_CALL ScExternalDocLinksObj::getElementNames()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     sal_uInt16 n = mpRefMgr->getExternalFileCount();
@@ -1779,21 +1722,18 @@ Sequence< OUString > SAL_CALL ScExternalDocLinksObj::getElementNames()
 }
 
 sal_Bool SAL_CALL ScExternalDocLinksObj::hasByName(const OUString &aName)
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     return mpRefMgr->hasExternalFile(aName);
 }
 
 sal_Int32 SAL_CALL ScExternalDocLinksObj::getCount()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     return mpRefMgr->getExternalFileCount();
 }
 
 Any SAL_CALL ScExternalDocLinksObj::getByIndex(sal_Int32 nIndex)
-        throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, RuntimeException)
 {
     ScUnoGuard aGuard;
     if (nIndex > ::std::numeric_limits<sal_uInt16>::max() || nIndex < ::std::numeric_limits<sal_uInt16>::min())
@@ -1811,7 +1751,6 @@ Any SAL_CALL ScExternalDocLinksObj::getByIndex(sal_Int32 nIndex)
 }
 
 Reference< container::XEnumeration > SAL_CALL ScExternalDocLinksObj::createEnumeration()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     Reference< container::XEnumeration > aRef(
@@ -1821,14 +1760,12 @@ Reference< container::XEnumeration > SAL_CALL ScExternalDocLinksObj::createEnume
 }
 
 uno::Type SAL_CALL ScExternalDocLinksObj::getElementType()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     return getCppuType(static_cast<Reference<sheet::XExternalDocLinks>*>(0));
 }
 
 sal_Bool SAL_CALL ScExternalDocLinksObj::hasElements()
-        throw (RuntimeException)
 {
     ScUnoGuard aGuard;
     return mpRefMgr->getExternalFileCount() > 0;

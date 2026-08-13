@@ -108,16 +108,14 @@ public:
 
 	static void FindConnectPoints(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& xMenu,
-		sal_Int32 nConnectPoints[2] )
-			throw ( ::com::sun::star::uno::Exception );
+		sal_Int32 nConnectPoints[2] );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess > MergeMenuesForInplace(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& xContMenu,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xContDisp,
 		const ::rtl::OUString& aContModuleName,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& xOwnMenu,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xOwnDisp )
-			throw ( ::com::sun::star::uno::Exception );
+		const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xOwnDisp );
 
 
 	DocumentHolder( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory,
@@ -179,30 +177,30 @@ public:
     ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseable > GetComponent() { return m_xComponent; }
 
 // XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 // XCloseListener
-    virtual void SAL_CALL queryClosing( const ::com::sun::star::lang::EventObject& Source, sal_Bool GetsOwnership ) throw (::com::sun::star::util::CloseVetoException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL notifyClosing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL queryClosing( const ::com::sun::star::lang::EventObject& Source, sal_Bool GetsOwnership );
+    virtual void SAL_CALL notifyClosing( const ::com::sun::star::lang::EventObject& Source );
 
 // XTerminateListener
-    virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& Event ) throw (::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& Event ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& Event );
+    virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& Event );
 
 // XModifyListener
-	virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
 
 // XEventListener
-    virtual void SAL_CALL notifyEvent( const ::com::sun::star::document::EventObject& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL notifyEvent( const ::com::sun::star::document::EventObject& Event );
 
 // XBorderResizeListener
-    virtual void SAL_CALL borderWidthsChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& aObject, const ::com::sun::star::frame::BorderWidths& aNewSize ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL borderWidthsChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& aObject, const ::com::sun::star::frame::BorderWidths& aNewSize );
 
 // XHatchWindowController
-    virtual void SAL_CALL requestPositioning( const ::com::sun::star::awt::Rectangle& aRect ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL calcAdjustedRectangle( const ::com::sun::star::awt::Rectangle& aRect ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL activated(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL deactivated(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL requestPositioning( const ::com::sun::star::awt::Rectangle& aRect );
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL calcAdjustedRectangle( const ::com::sun::star::awt::Rectangle& aRect );
+    virtual void SAL_CALL activated(  );
+    virtual void SAL_CALL deactivated(  );
 };
 
 #endif

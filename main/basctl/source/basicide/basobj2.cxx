@@ -391,7 +391,6 @@ namespace
 //----------------------------------------------------------------------------
 
 Sequence< ::rtl::OUString > GetMethodNames( const ScriptDocument& rDocument, const String& rLibName, const String& rModName )
-	throw(NoSuchElementException )
 {
     Sequence< ::rtl::OUString > aSeqMethods;
 

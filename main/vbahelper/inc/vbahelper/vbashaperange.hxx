@@ -42,39 +42,39 @@ protected:
     css::uno::Reference< css::frame::XModel > m_xModel;
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();
-	css::uno::Reference< css::drawing::XShapes > getShapes() throw (css::uno::RuntimeException) ;
+	css::uno::Reference< css::drawing::XShapes > getShapes() ;
 public:
     ScVbaShapeRange( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::container::XIndexAccess >& xShapes, const css::uno::Reference< css::drawing::XDrawPage>& xDrawShape, const css::uno::Reference< css::frame::XModel >& xModel );
 
     // Methods
-    virtual void SAL_CALL Select(  ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ::ooo::vba::msforms::XShape > SAL_CALL Group() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL IncrementRotation( double Increment ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL IncrementLeft( double Increment ) throw (css::uno::RuntimeException) ;
-    virtual void SAL_CALL IncrementTop( double Increment ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getHeight() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setHeight( double _height ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getWidth() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setWidth( double _width ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getLeft() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLeft( double _left ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getTop() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTop( double _top ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::msforms::XLineFormat > SAL_CALL getLine() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::msforms::XFillFormat > SAL_CALL getFill() throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getLockAspectRatio() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLockAspectRatio( ::sal_Bool _lockaspectratio ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getLockAnchor() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLockAnchor( ::sal_Bool _lockanchor ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getRelativeHorizontalPosition() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setRelativeHorizontalPosition( ::sal_Int32 _relativehorizontalposition ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getRelativeVerticalPosition() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setRelativeVerticalPosition( ::sal_Int32 _relativeverticalposition ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL SAL_CALL TextFrame(  ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL SAL_CALL WrapFormat(  ) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL Select(  );
+    virtual css::uno::Reference< ::ooo::vba::msforms::XShape > SAL_CALL Group();
+    virtual void SAL_CALL IncrementRotation( double Increment );
+    virtual void SAL_CALL IncrementLeft( double Increment ) ;
+    virtual void SAL_CALL IncrementTop( double Increment );
+    virtual double SAL_CALL getHeight();
+    virtual void SAL_CALL setHeight( double _height );
+    virtual double SAL_CALL getWidth();
+    virtual void SAL_CALL setWidth( double _width );
+    virtual double SAL_CALL getLeft();
+    virtual void SAL_CALL setLeft( double _left );
+    virtual double SAL_CALL getTop();
+    virtual void SAL_CALL setTop( double _top );
+    virtual css::uno::Reference< ov::msforms::XLineFormat > SAL_CALL getLine();
+    virtual css::uno::Reference< ov::msforms::XFillFormat > SAL_CALL getFill();
+    virtual ::sal_Bool SAL_CALL getLockAspectRatio();
+    virtual void SAL_CALL setLockAspectRatio( ::sal_Bool _lockaspectratio );
+    virtual ::sal_Bool SAL_CALL getLockAnchor();
+    virtual void SAL_CALL setLockAnchor( ::sal_Bool _lockanchor );
+    virtual ::sal_Int32 SAL_CALL getRelativeHorizontalPosition();
+    virtual void SAL_CALL setRelativeHorizontalPosition( ::sal_Int32 _relativehorizontalposition );
+    virtual ::sal_Int32 SAL_CALL getRelativeVerticalPosition();
+    virtual void SAL_CALL setRelativeVerticalPosition( ::sal_Int32 _relativeverticalposition );
+    virtual css::uno::Any SAL_CALL SAL_CALL TextFrame(  );
+    virtual css::uno::Any SAL_CALL SAL_CALL WrapFormat(  );
     //XEnumerationAccess
-    virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+    virtual css::uno::Type SAL_CALL getElementType();
+    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
     // ScVbaCollectionBaseImpl
     virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );
 };

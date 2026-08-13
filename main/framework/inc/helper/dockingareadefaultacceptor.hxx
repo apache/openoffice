@@ -87,9 +87,9 @@ class DockingAreaDefaultAcceptor    :	private ThreadHelpBase                    
 		//	XDockingAreaAcceptor
 		//---------------------------------------------------------------------------------------------------------
 
-        virtual css::uno::Reference< css::awt::XWindow > SAL_CALL getContainerWindow() throw (css::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL requestDockingAreaSpace( const css::awt::Rectangle& RequestedSpace ) throw (css::uno::RuntimeException);
-        virtual void SAL_CALL setDockingAreaSpace( const css::awt::Rectangle& BorderSpace ) throw (css::uno::RuntimeException);
+        virtual css::uno::Reference< css::awt::XWindow > SAL_CALL getContainerWindow();
+        virtual sal_Bool SAL_CALL requestDockingAreaSpace( const css::awt::Rectangle& RequestedSpace );
+        virtual void SAL_CALL setDockingAreaSpace( const css::awt::Rectangle& BorderSpace );
 
 
 	//-------------------------------------------------------------------------------------------------------------

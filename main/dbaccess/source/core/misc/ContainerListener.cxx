@@ -53,7 +53,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    Reference< XVeto > SAL_CALL OContainerListener::approveInsertElement( const ContainerEvent& _Event ) throw (WrappedTargetException, RuntimeException)
+    Reference< XVeto > SAL_CALL OContainerListener::approveInsertElement( const ContainerEvent& _Event )
     {
         ::osl::MutexGuard aGuard( m_rMutex );
         if ( m_bDisposed )
@@ -63,7 +63,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    Reference< XVeto > SAL_CALL OContainerListener::approveReplaceElement( const ContainerEvent& _Event ) throw (WrappedTargetException, RuntimeException)
+    Reference< XVeto > SAL_CALL OContainerListener::approveReplaceElement( const ContainerEvent& _Event )
     {
         ::osl::MutexGuard aGuard( m_rMutex );
         if ( m_bDisposed )
@@ -73,7 +73,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    Reference< XVeto > SAL_CALL OContainerListener::approveRemoveElement( const ContainerEvent& _Event ) throw (WrappedTargetException, RuntimeException)
+    Reference< XVeto > SAL_CALL OContainerListener::approveRemoveElement( const ContainerEvent& _Event )
     {
         ::osl::MutexGuard aGuard( m_rMutex );
         if ( m_bDisposed )
@@ -83,7 +83,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OContainerListener::elementInserted( const ContainerEvent& _Event ) throw(RuntimeException)
+    void SAL_CALL OContainerListener::elementInserted( const ContainerEvent& _Event )
     {
         ::osl::MutexGuard aGuard( m_rMutex );
         if ( m_bDisposed )
@@ -93,7 +93,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OContainerListener::elementRemoved( const ContainerEvent& _Event ) throw(RuntimeException)
+    void SAL_CALL OContainerListener::elementRemoved( const ContainerEvent& _Event )
     {
         ::osl::MutexGuard aGuard( m_rMutex );
         if ( m_bDisposed )
@@ -103,7 +103,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OContainerListener::elementReplaced( const ContainerEvent& _Event ) throw(RuntimeException)
+    void SAL_CALL OContainerListener::elementReplaced( const ContainerEvent& _Event )
     {
         ::osl::MutexGuard aGuard( m_rMutex );
         if ( m_bDisposed )
@@ -113,7 +113,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OContainerListener::disposing( const EventObject& _Source ) throw(RuntimeException)
+    void SAL_CALL OContainerListener::disposing( const EventObject& _Source )
     {
         ::osl::MutexGuard aGuard( m_rMutex );
         if ( m_bDisposed )

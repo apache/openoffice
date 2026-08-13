@@ -54,12 +54,12 @@ ODbaseResultSet::ODbaseResultSet( OStatement_Base* pStmt,connectivity::OSQLParse
 	registerProperty(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_ISBOOKMARKABLE),         PROPERTY_ID_ISBOOKMARKABLE,       PropertyAttribute::READONLY,&m_bBookmarkable,                ::getBooleanCppuType());
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODbaseResultSet::getImplementationName(  ) throw ( RuntimeException)
+::rtl::OUString SAL_CALL ODbaseResultSet::getImplementationName(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.dbase.ResultSet");
 }
 // -------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL ODbaseResultSet::getSupportedServiceNames(  ) throw( RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL ODbaseResultSet::getSupportedServiceNames(  )
 {
 	 Sequence< ::rtl::OUString > aSupported(2);
 	aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.ResultSet");
@@ -67,7 +67,7 @@ Sequence< ::rtl::OUString > SAL_CALL ODbaseResultSet::getSupportedServiceNames( 
 	return aSupported;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL ODbaseResultSet::supportsService( const ::rtl::OUString& _rServiceName ) throw( RuntimeException)
+sal_Bool SAL_CALL ODbaseResultSet::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -78,20 +78,20 @@ sal_Bool SAL_CALL ODbaseResultSet::supportsService( const ::rtl::OUString& _rSer
 	return pSupported != pEnd;
 }
 // -------------------------------------------------------------------------
-Any SAL_CALL ODbaseResultSet::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL ODbaseResultSet::queryInterface( const Type & rType )
 {
 	Any aRet = ODbaseResultSet_BASE::queryInterface(rType);
 	return aRet.hasValue() ? aRet : OResultSet::queryInterface(rType);
 }
 // -------------------------------------------------------------------------
- Sequence<  Type > SAL_CALL ODbaseResultSet::getTypes(  ) throw( RuntimeException)
+ Sequence<  Type > SAL_CALL ODbaseResultSet::getTypes(  )
 {
 	return ::comphelper::concatSequences(OResultSet::getTypes(),ODbaseResultSet_BASE::getTypes());
 }
 
 // -------------------------------------------------------------------------
 // XRowLocate
-Any SAL_CALL ODbaseResultSet::getBookmark(  ) throw( SQLException,  RuntimeException)
+Any SAL_CALL ODbaseResultSet::getBookmark(  )
 {
 	 ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -100,7 +100,7 @@ Any SAL_CALL ODbaseResultSet::getBookmark(  ) throw( SQLException,  RuntimeExcep
 	return makeAny((sal_Int32)(m_aRow->get())[0]->getValue());
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL ODbaseResultSet::moveToBookmark( const  Any& bookmark ) throw( SQLException,  RuntimeException)
+sal_Bool SAL_CALL ODbaseResultSet::moveToBookmark( const  Any& bookmark )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -111,7 +111,7 @@ sal_Bool SAL_CALL ODbaseResultSet::moveToBookmark( const  Any& bookmark ) throw(
 	return m_pTable ? Move(IResultSetHelper::BOOKMARK,comphelper::getINT32(bookmark),sal_True) : sal_False;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL ODbaseResultSet::moveRelativeToBookmark( const  Any& bookmark, sal_Int32 rows ) throw( SQLException,  RuntimeException)
+sal_Bool SAL_CALL ODbaseResultSet::moveRelativeToBookmark( const  Any& bookmark, sal_Int32 rows )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -125,7 +125,7 @@ sal_Bool SAL_CALL ODbaseResultSet::moveRelativeToBookmark( const  Any& bookmark,
 }
 
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL ODbaseResultSet::compareBookmarks( const Any& lhs, const Any& rhs ) throw( SQLException,  RuntimeException)
+sal_Int32 SAL_CALL ODbaseResultSet::compareBookmarks( const Any& lhs, const Any& rhs )
 {
 	sal_Int32 nFirst(0),nSecond(0),nResult(0);
 	if ( !( lhs  >>= nFirst ) || !( rhs >>= nSecond ) )
@@ -147,12 +147,12 @@ sal_Int32 SAL_CALL ODbaseResultSet::compareBookmarks( const Any& lhs, const Any&
 	return  nResult;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL ODbaseResultSet::hasOrderedBookmarks(  ) throw( SQLException,  RuntimeException)
+sal_Bool SAL_CALL ODbaseResultSet::hasOrderedBookmarks(  )
 {
 	return sal_True;
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL ODbaseResultSet::hashBookmark( const  Any& bookmark ) throw( SQLException,  RuntimeException)
+sal_Int32 SAL_CALL ODbaseResultSet::hashBookmark( const  Any& bookmark )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -162,7 +162,7 @@ sal_Int32 SAL_CALL ODbaseResultSet::hashBookmark( const  Any& bookmark ) throw( 
 }
 // -------------------------------------------------------------------------
 // XDeleteRows
-Sequence< sal_Int32 > SAL_CALL ODbaseResultSet::deleteRows( const  Sequence<  Any >& /*rows*/ ) throw( SQLException,  RuntimeException)
+Sequence< sal_Int32 > SAL_CALL ODbaseResultSet::deleteRows( const  Sequence<  Any >& /*rows*/ )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -226,7 +226,7 @@ void SAL_CALL ODbaseResultSet::release() throw()
 	ODbaseResultSet_BASE2::release();
 }
 // -----------------------------------------------------------------------------
-::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL ODbaseResultSet::getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL ODbaseResultSet::getPropertySetInfo(  )
 {
 	return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 }

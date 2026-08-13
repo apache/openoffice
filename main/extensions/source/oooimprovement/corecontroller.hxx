@@ -60,18 +60,13 @@ namespace oooimprovement
             virtual ~CoreController();
 
             // css::oooimprovement::XCoreController
-            virtual sal_Bool SAL_CALL enablingUiEventsLoggerAllowed(sal_Int16 version)
-                throw(css::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL showBuiltinOptionsPage(sal_Int16 version)
-                throw(css::uno::RuntimeException);
+            virtual sal_Bool SAL_CALL enablingUiEventsLoggerAllowed(sal_Int16 version);
+            virtual sal_Bool SAL_CALL showBuiltinOptionsPage(sal_Int16 version);
 
             // css::lang::XServiceInfo
-            virtual ::rtl::OUString SAL_CALL getImplementationName()
-                throw(css::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString& service_name)
-                throw(css::uno::RuntimeException);
-            virtual css::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames()
-                throw(css::uno::RuntimeException);
+            virtual ::rtl::OUString SAL_CALL getImplementationName();
+            virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString& service_name);
+            virtual css::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames();
 
         private:
             css::uno::Reference< css::lang::XMultiServiceFactory> m_ServiceFactory;

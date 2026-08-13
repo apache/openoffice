@@ -45,8 +45,7 @@ using namespace com::sun::star;
 extern OUString SAL_CALL className##_getImplementationName() throw();	\
 extern uno::Sequence< OUString > SAL_CALL className##_getSupportedServiceNames() throw();\
 extern uno::Reference< uno::XInterface > SAL_CALL className##_createInstance(			\
-		const uno::Reference< lang::XMultiServiceFactory > & rSMgr )				\
-	throw( uno::Exception )
+		const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 
 // impress oasis import
 SERVICE( XMLImpressImportOasis );

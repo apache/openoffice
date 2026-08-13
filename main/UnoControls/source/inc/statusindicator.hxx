@@ -159,7 +159,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	A RuntimeException is thrown.
 		*/
 
-		virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+		virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType );
 
 		/**_______________________________________________________________________________________________________
 			@short		increment refcount
@@ -210,7 +210,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	A RuntimeException is thrown.
 		*/
 
-		virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes() throw( UNO3_RUNTIMEEXCEPTION );
+		virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes();
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XAggregation
@@ -229,7 +229,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*/
 
-		virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+		virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XStatusIndicator
@@ -249,7 +249,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 		*//*-*****************************************************************************************************/
 
 		virtual void SAL_CALL start(	const	UNO3_OUSTRING&	sText	,
-												sal_Int32		nRange	) throw( UNO3_RUNTIMEEXCEPTION );
+												sal_Int32		nRange	);
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -264,7 +264,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL end() throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual void SAL_CALL end();
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -279,7 +279,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL reset() throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual void SAL_CALL reset();
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -294,7 +294,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL setText( const UNO3_OUSTRING& sText ) throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual void SAL_CALL setText( const UNO3_OUSTRING& sText );
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -309,7 +309,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL setValue( sal_Int32 nValue ) throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual void SAL_CALL setValue( sal_Int32 nValue );
 
 		//---------------------------------------------------------------------------------------------------------
 		// 	XLayoutConstrains
@@ -328,7 +328,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*/
 
-    	virtual UNO3_SIZE SAL_CALL getMinimumSize() throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual UNO3_SIZE SAL_CALL getMinimumSize();
 
 		/**_______________________________________________________________________________________________________
 			@short		-
@@ -343,7 +343,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*/
 
-    	virtual UNO3_SIZE SAL_CALL getPreferredSize() throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual UNO3_SIZE SAL_CALL getPreferredSize();
 
 		/**_______________________________________________________________________________________________________
 			@short		-
@@ -358,7 +358,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*/
 
-    	virtual UNO3_SIZE SAL_CALL calcAdjustedSize( const UNO3_SIZE& aNewSize ) throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual UNO3_SIZE SAL_CALL calcAdjustedSize( const UNO3_SIZE& aNewSize );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XControl
@@ -378,7 +378,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 		*/
 
     	virtual void SAL_CALL createPeer(	const	UNO3_REFERENCE< UNO3_XTOOLKIT >&	xToolkit	,
-											const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		) throw( UNO3_RUNTIMEEXCEPTION );
+											const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		);
 
 		/**_______________________________________________________________________________________________________
 			@short		-
@@ -393,7 +393,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*/
 
-    	virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel ) throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel );
 
 		/**_______________________________________________________________________________________________________
 			@short		-
@@ -408,7 +408,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*/
 
-    	virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel() throw( UNO3_RUNTIMEEXCEPTION );
+    	virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel();
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XComponent
@@ -427,7 +427,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 			@onerror	-
 		*/
 
-		virtual void SAL_CALL dispose() throw( UNO3_RUNTIMEEXCEPTION );
+		virtual void SAL_CALL dispose();
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XWindow
@@ -450,7 +450,7 @@ class StatusIndicator	: public UNO3_XLAYOUTCONSTRAINS
 											sal_Int32	nY		,
 											sal_Int32	nWidth	,
 											sal_Int32	nHeight	,
-											sal_Int16	nFlags	) throw( UNO3_RUNTIMEEXCEPTION );
+											sal_Int16	nFlags	);
 
 		//---------------------------------------------------------------------------------------------------------
 		//	BaseControl

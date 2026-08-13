@@ -107,49 +107,40 @@ public:
     /** @return  A reference to the parent accessible object. */
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-    getAccessibleParent()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getAccessibleParent();
 
     /** @return  The index of this object among the parent's children. */
-    virtual sal_Int32 SAL_CALL getAccessibleIndexInParent()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleIndexInParent();
 
     /** @return
 			The description of this object.
 	*/
-    virtual ::rtl::OUString SAL_CALL getAccessibleDescription()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getAccessibleDescription();
 
     /** @return
 			The name of this object.
 	*/
-    virtual ::rtl::OUString SAL_CALL getAccessibleName()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getAccessibleName();
 
     /** @return
 			The relation set (the GridControl does not have one).
 	*/
 	virtual ::com::sun::star::uno::Reference<
 	::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL
-		getAccessibleRelationSet()
-        throw ( ::com::sun::star::uno::RuntimeException );
+		getAccessibleRelationSet();
 
     /** @return  The set of current states. */
 	virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessibleStateSet > SAL_CALL
-		getAccessibleStateSet()
-        throw ( ::com::sun::star::uno::RuntimeException );
+		getAccessibleStateSet();
 
     /** @return  The parent's locale. */
-    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale()
-        throw ( ::com::sun::star::accessibility::IllegalAccessibleComponentStateException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale();
 
 	/** @return
 			The role of this object. Panel, ROWHEADER, COLUMNHEADER, TABLE, TABLE_CELL are supported.
 	*/
-    virtual sal_Int16 SAL_CALL getAccessibleRole()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int16 SAL_CALL getAccessibleRole();
 
     /*  Derived classes have to implement:
         -   getAccessibleChildCount,
@@ -162,41 +153,33 @@ public:
 
     /** @return
         <TRUE/>, if the point lies within the bounding box of this object. */
-    virtual sal_Bool SAL_CALL containsPoint( const ::com::sun::star::awt::Point& rPoint )
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL containsPoint( const ::com::sun::star::awt::Point& rPoint );
 
     /** @return  The bounding box of this object. */
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds();
 
     /** @return
         The upper left corner of the bounding box relative to the parent. */
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocation()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocation();
 
     /** @return
         The upper left corner of the bounding box in screen coordinates. */
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen();
 
     /** @return  The size of the bounding box. */
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize();
 
     /** @return  <TRUE/>, if the object is showing. */
-    virtual sal_Bool SAL_CALL isShowing()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL isShowing();
 
     /** @return  <TRUE/>, if the object is visible. */
-    virtual sal_Bool SAL_CALL isVisible()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL isVisible();
 
     /** @return  <TRUE/>, if the object can accept the focus. */
-    virtual sal_Bool SAL_CALL isFocusTraversable()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL isFocusTraversable();
 
-	virtual sal_Int32 SAL_CALL getForeground(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getBackground(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getForeground(  );
+	virtual sal_Int32 SAL_CALL getBackground(  );
 
 
     /*  Derived classes have to implement:
@@ -207,15 +190,13 @@ public:
 	/** @return
 		No key bindings supported by default.
 	*/
-    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleKeyBinding()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleKeyBinding();
 	/** @return
 			The accessible child rendered under the given point.
 	*/
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-    getAccessibleAtPoint( const ::com::sun::star::awt::Point& rPoint )
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getAccessibleAtPoint( const ::com::sun::star::awt::Point& rPoint );
 
     // XAccessibleEventBroadcaster --------------------------------------------
 
@@ -223,32 +204,27 @@ public:
     using cppu::WeakAggComponentImplHelperBase::addEventListener;
     virtual void SAL_CALL addEventListener(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::accessibility::XAccessibleEventListener>& rxListener )
-        throw ( ::com::sun::star::uno::RuntimeException );
+                ::com::sun::star::accessibility::XAccessibleEventListener>& rxListener );
 
     /** Removes an event listener. */
     using cppu::WeakAggComponentImplHelperBase::removeEventListener;
     virtual void SAL_CALL removeEventListener(
 			const ::com::sun::star::uno::Reference<
-                ::com::sun::star::accessibility::XAccessibleEventListener>& rxListener )
-        throw ( ::com::sun::star::uno::RuntimeException );
+                ::com::sun::star::accessibility::XAccessibleEventListener>& rxListener );
 
     // XTypeProvider ----------------------------------------------------------
 
     /** @return  An unique implementation ID. */
-    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
     // XServiceInfo -----------------------------------------------------------
 
     /** @return  Whether the specified service is supported by this class. */
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName )
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName );
 
     /** @return  A list of all supported services. */
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getSupportedServiceNames();
 
     /*  Derived classes have to implement:
         -   getImplementationName. */
@@ -297,8 +273,7 @@ protected:
     // internal helper methods ------------------------------------------------
 
     /** @throws <type>DisposedException</type>  If the object is not alive. */
-    void ensureIsAlive() const
-        throw ( ::com::sun::star::lang::DisposedException );
+    void ensureIsAlive() const;
 
     /** @return  The ::osl::Mutex member provided by the class OBaseMutex. */
     inline ::osl::Mutex& getOslMutex();
@@ -315,13 +290,11 @@ protected:
     /** Locks all mutex's and calculates the bounding box relative to the
         parent window.
         @return  The bounding box (VCL rect.) relative to the parent object. */
-    Rectangle getBoundingBox()
-        throw ( ::com::sun::star::lang::DisposedException );
+    Rectangle getBoundingBox();
     ///** Locks all mutex's and calculates the bounding box in screen
     //    coordinates.
     //    @return  The bounding box (VCL rect.) in screen coordinates. */
-    Rectangle getBoundingBoxOnScreen()
-        throw ( ::com::sun::star::lang::DisposedException );
+    Rectangle getBoundingBoxOnScreen();
 
     /** Creates a new UUID, if rId is empty.
         @attention  This method requires locked global mutex to prevent double
@@ -397,8 +370,7 @@ protected:
 	/** @return  The XAccessibleContext interface of this object. */
 	virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleContext > SAL_CALL
-	getAccessibleContext()
-		throw ( ::com::sun::star::uno::RuntimeException );
+	getAccessibleContext();
 
 private:
 	GridControlAccessibleElement();												// never implemented

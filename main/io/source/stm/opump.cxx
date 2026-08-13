@@ -96,7 +96,7 @@ namespace io_stm {
 		// XActiveDataControl
 		virtual void SAL_CALL addListener( const Reference< ::com::sun::star::io::XStreamListener >& xListener ) throw();
 		virtual void SAL_CALL removeListener( const Reference< ::com::sun::star::io::XStreamListener >& xListener ) throw();
-		virtual void SAL_CALL start() throw( RuntimeException );
+		virtual void SAL_CALL start();
 		virtual void SAL_CALL terminate() throw();
 
 		// XConnectable
@@ -372,7 +372,7 @@ void Pump::removeListener( const Reference< XStreamListener >& xListener ) throw
 
 // ------------------------------------------------------------
 
-void Pump::start() throw( RuntimeException )
+void Pump::start()
 {
 	Guard< Mutex > aGuard( m_aMutex );
 	m_aThread = osl_createSuspendedThread((oslWorkerFunction)Pump::static_run,this);
@@ -479,7 +479,7 @@ Sequence< OUString > Pump::getSupportedServiceNames(void) throw(  )
 }
 
 
-Reference< XInterface > SAL_CALL OPumpImpl_CreateInstance( const Reference< XComponentContext > & ) throw (Exception)
+Reference< XInterface > SAL_CALL OPumpImpl_CreateInstance( const Reference< XComponentContext > & )
 {
 	return Reference< XInterface >( *new Pump );
 }

@@ -98,44 +98,35 @@ public:
 
     // XConfigurationController
 
-    virtual void SAL_CALL lock (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL lock (void);
 
-    virtual void SAL_CALL unlock (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL unlock (void);
 
     virtual void SAL_CALL requestResourceActivation (
         const css::uno::Reference<css::drawing::framework::XResourceId>& rxResourceId,
-        css::drawing::framework::ResourceActivationMode eMode)
-        throw (css::uno::RuntimeException);
+        css::drawing::framework::ResourceActivationMode eMode);
 
     virtual void SAL_CALL requestResourceDeactivation (
         const css::uno::Reference<css::drawing::framework::XResourceId>&
-            rxResourceId)
-        throw (css::uno::RuntimeException);
+            rxResourceId);
 
     virtual css::uno::Reference<css::drawing::framework::XResource>
         SAL_CALL getResource (
-            const css::uno::Reference<css::drawing::framework::XResourceId>& rxResourceId)
-        throw (css::uno::RuntimeException);
+            const css::uno::Reference<css::drawing::framework::XResourceId>& rxResourceId);
 
-    virtual void SAL_CALL update (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL update (void);
 
     virtual  css::uno::Reference<
         css::drawing::framework::XConfiguration>
-        SAL_CALL getRequestedConfiguration (void)
-        throw (css::uno::RuntimeException);
+        SAL_CALL getRequestedConfiguration (void);
 
     virtual  css::uno::Reference<
         css::drawing::framework::XConfiguration>
-        SAL_CALL getCurrentConfiguration (void)
-        throw (css::uno::RuntimeException);
+        SAL_CALL getCurrentConfiguration (void);
 
     virtual void SAL_CALL restoreConfiguration (
         const css::uno::Reference<css::drawing::framework::XConfiguration>&
-        rxConfiguration)
-        throw (css::uno::RuntimeException);
+        rxConfiguration);
 
 
     // XConfigurationControllerBroadcaster
@@ -144,56 +135,46 @@ public:
         const css::uno::Reference<
             css::drawing::framework::XConfigurationChangeListener>& rxListener,
         const ::rtl::OUString& rsEventType,
-        const css::uno::Any& rUserData)
-        throw (css::uno::RuntimeException);
+        const css::uno::Any& rUserData);
 
     virtual void SAL_CALL removeConfigurationChangeListener (
         const css::uno::Reference<
-            css::drawing::framework::XConfigurationChangeListener>& rxListener)
-        throw (css::uno::RuntimeException);
+            css::drawing::framework::XConfigurationChangeListener>& rxListener);
 
     virtual void SAL_CALL notifyEvent (
-        const css::drawing::framework::ConfigurationChangeEvent& rEvent)
-        throw (css::uno::RuntimeException);
+        const css::drawing::framework::ConfigurationChangeEvent& rEvent);
 
 
     // XConfigurationRequestQueue
 
-    virtual sal_Bool SAL_CALL hasPendingRequests (void)
-        throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasPendingRequests (void);
 
     virtual void SAL_CALL postChangeRequest (
         const css::uno::Reference<
-            css::drawing::framework::XConfigurationChangeRequest>& rxRequest)
-        throw (css::uno::RuntimeException);
+            css::drawing::framework::XConfigurationChangeRequest>& rxRequest);
 
 
     // XResourceFactoryManager
 
     virtual void SAL_CALL addResourceFactory(
         const ::rtl::OUString& sResourceURL,
-        const css::uno::Reference<css::drawing::framework::XResourceFactory>& rxResourceFactory)
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference<css::drawing::framework::XResourceFactory>& rxResourceFactory);
 
     virtual void SAL_CALL removeResourceFactoryForURL(
-        const ::rtl::OUString& sResourceURL)
-        throw (css::uno::RuntimeException);
+        const ::rtl::OUString& sResourceURL);
 
     virtual void SAL_CALL removeResourceFactoryForReference(
-        const css::uno::Reference<css::drawing::framework::XResourceFactory>& rxResourceFactory)
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference<css::drawing::framework::XResourceFactory>& rxResourceFactory);
 
     virtual css::uno::Reference<css::drawing::framework::XResourceFactory>
         SAL_CALL getResourceFactory (
-        const ::rtl::OUString& sResourceURL)
-        throw (css::uno::RuntimeException);
+        const ::rtl::OUString& sResourceURL);
 
 
     // XInitialization
 
     virtual void SAL_CALL initialize(
-        const css::uno::Sequence<css::uno::Any>& rArguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        const css::uno::Sequence<css::uno::Any>& rArguments);
 
 
     /** Use this class instead of calling lock() and unlock() directly in
@@ -218,8 +199,7 @@ private:
     /** When the called object has already been disposed this method throws
         an exception and does not return.
     */
-    void ThrowIfDisposed (void) const
-        throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } } // end of namespace sd::framework

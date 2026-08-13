@@ -138,17 +138,17 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	// XServiceInfo
 	// -----------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL AccessibleIconChoiceCtrl::getImplementationName() throw (RuntimeException)
+	::rtl::OUString SAL_CALL AccessibleIconChoiceCtrl::getImplementationName()
 	{
 		return getImplementationName_Static();
 	}
 	// -----------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL AccessibleIconChoiceCtrl::getSupportedServiceNames() throw (RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL AccessibleIconChoiceCtrl::getSupportedServiceNames()
 	{
 		return getSupportedServiceNames_Static();
 	}
 	// -----------------------------------------------------------------------------
-	sal_Bool SAL_CALL AccessibleIconChoiceCtrl::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+	sal_Bool SAL_CALL AccessibleIconChoiceCtrl::supportsService( const ::rtl::OUString& _rServiceName )
 	{
 		Sequence< ::rtl::OUString > aSupported( getSupportedServiceNames() );
 		const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -161,7 +161,7 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	// XServiceInfo - static methods
 	// -----------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > AccessibleIconChoiceCtrl::getSupportedServiceNames_Static(void) throw (RuntimeException)
+	Sequence< ::rtl::OUString > AccessibleIconChoiceCtrl::getSupportedServiceNames_Static(void)
 	{
 		Sequence< ::rtl::OUString > aSupported(3);
 		aSupported[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.accessibility.AccessibleContext") );
@@ -170,14 +170,14 @@ namespace accessibility
 		return aSupported;
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString AccessibleIconChoiceCtrl::getImplementationName_Static(void) throw (RuntimeException)
+	::rtl::OUString AccessibleIconChoiceCtrl::getImplementationName_Static(void)
 	{
 		return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.svtools.AccessibleIconChoiceControl") );
 	}
 	// -----------------------------------------------------------------------------
 	// XAccessible
 	// -----------------------------------------------------------------------------
-	Reference< XAccessibleContext > SAL_CALL AccessibleIconChoiceCtrl::getAccessibleContext(  ) throw (RuntimeException)
+	Reference< XAccessibleContext > SAL_CALL AccessibleIconChoiceCtrl::getAccessibleContext(  )
 	{
 		ensureAlive();
 		return this;
@@ -185,7 +185,7 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	// XAccessibleContext
 	// -----------------------------------------------------------------------------
-	sal_Int32 SAL_CALL AccessibleIconChoiceCtrl::getAccessibleChildCount(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL AccessibleIconChoiceCtrl::getAccessibleChildCount(  )
 	{
 		::comphelper::OExternalLockGuard aGuard( this );
 
@@ -193,7 +193,7 @@ namespace accessibility
 		return getCtrl()->GetEntryCount();
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL AccessibleIconChoiceCtrl::getAccessibleChild( sal_Int32 i ) throw (RuntimeException, IndexOutOfBoundsException)
+	Reference< XAccessible > SAL_CALL AccessibleIconChoiceCtrl::getAccessibleChild( sal_Int32 i )
 	{
 		::comphelper::OExternalLockGuard aGuard( this );
 
@@ -206,7 +206,7 @@ namespace accessibility
 		return new AccessibleIconChoiceCtrlEntry( *pCtrl, i, this );
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL AccessibleIconChoiceCtrl::getAccessibleParent(  ) throw (RuntimeException)
+	Reference< XAccessible > SAL_CALL AccessibleIconChoiceCtrl::getAccessibleParent(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex );
 
@@ -214,13 +214,13 @@ namespace accessibility
 		return m_xParent;
 	}
 	// -----------------------------------------------------------------------------
-	sal_Int16 SAL_CALL AccessibleIconChoiceCtrl::getAccessibleRole(  ) throw (RuntimeException)
+	sal_Int16 SAL_CALL AccessibleIconChoiceCtrl::getAccessibleRole(  )
 	{
 		//return AccessibleRole::TREE;
 		return AccessibleRole::LIST;
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL AccessibleIconChoiceCtrl::getAccessibleDescription(  ) throw (RuntimeException)
+	::rtl::OUString SAL_CALL AccessibleIconChoiceCtrl::getAccessibleDescription(  )
 	{
 		::comphelper::OExternalLockGuard aGuard( this );
 
@@ -228,7 +228,7 @@ namespace accessibility
 		return getCtrl()->GetAccessibleDescription();
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL AccessibleIconChoiceCtrl::getAccessibleName(  ) throw (RuntimeException)
+	::rtl::OUString SAL_CALL AccessibleIconChoiceCtrl::getAccessibleName(  )
 	{
 		::comphelper::OExternalLockGuard aGuard( this );
 
@@ -242,7 +242,7 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	// XAccessibleSelection
 	// -----------------------------------------------------------------------------
-	void SAL_CALL AccessibleIconChoiceCtrl::selectAccessibleChild( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+	void SAL_CALL AccessibleIconChoiceCtrl::selectAccessibleChild( sal_Int32 nChildIndex )
 	{
     	::comphelper::OExternalLockGuard aGuard( this );
 
@@ -256,7 +256,7 @@ namespace accessibility
 		pCtrl->SetCursor( pEntry );
 	}
 	// -----------------------------------------------------------------------------
-	sal_Bool SAL_CALL AccessibleIconChoiceCtrl::isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+	sal_Bool SAL_CALL AccessibleIconChoiceCtrl::isAccessibleChildSelected( sal_Int32 nChildIndex )
 	{
     	::comphelper::OExternalLockGuard aGuard( this );
 
@@ -270,7 +270,7 @@ namespace accessibility
 		return ( pCtrl->GetCursor() == pEntry );
 	}
 	// -----------------------------------------------------------------------------
-	void SAL_CALL AccessibleIconChoiceCtrl::clearAccessibleSelection(  ) throw (RuntimeException)
+	void SAL_CALL AccessibleIconChoiceCtrl::clearAccessibleSelection(  )
 	{
     	::comphelper::OExternalLockGuard aGuard( this );
 
@@ -278,7 +278,7 @@ namespace accessibility
 		getCtrl()->SetNoSelection();
 	}
 	// -----------------------------------------------------------------------------
-	void SAL_CALL AccessibleIconChoiceCtrl::selectAllAccessibleChildren(  ) throw (RuntimeException)
+	void SAL_CALL AccessibleIconChoiceCtrl::selectAllAccessibleChildren(  )
 	{
     	::comphelper::OExternalLockGuard aGuard( this );
 
@@ -295,7 +295,7 @@ namespace accessibility
 		}
 	}
 	// -----------------------------------------------------------------------------
-	sal_Int32 SAL_CALL AccessibleIconChoiceCtrl::getSelectedAccessibleChildCount(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL AccessibleIconChoiceCtrl::getSelectedAccessibleChildCount(  )
 	{
     	::comphelper::OExternalLockGuard aGuard( this );
 
@@ -314,7 +314,7 @@ namespace accessibility
     	return nSelCount;
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL AccessibleIconChoiceCtrl::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+	Reference< XAccessible > SAL_CALL AccessibleIconChoiceCtrl::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
 	{
     	::comphelper::OExternalLockGuard aGuard( this );
 
@@ -343,7 +343,7 @@ namespace accessibility
 		return xChild;
 	}
 	// -----------------------------------------------------------------------------
-	void SAL_CALL AccessibleIconChoiceCtrl::deselectAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+	void SAL_CALL AccessibleIconChoiceCtrl::deselectAccessibleChild( sal_Int32 nSelectedChildIndex )
 	{
     	::comphelper::OExternalLockGuard aGuard( this );
 

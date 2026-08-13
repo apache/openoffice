@@ -83,7 +83,6 @@ rtl_StandardModuleCount g_moduleCount = MODULE_COUNT_INIT;
 
 void SAL_CALL ScriptProtocolHandler::initialize(
     const css::uno::Sequence < css::uno::Any >& aArguments )
-    throw ( css::uno::Exception )
 {
     if ( m_bInitialised )
     {
@@ -105,7 +104,6 @@ void SAL_CALL ScriptProtocolHandler::initialize(
 
 Reference< XDispatch > SAL_CALL ScriptProtocolHandler::queryDispatch(
     const URL& aURL, const ::rtl::OUString& sTargetFrameName, sal_Int32 nSearchFlags )
-    throw( ::com::sun::star::uno::RuntimeException )
 {
 	(void)sTargetFrameName;
 	(void)nSearchFlags;
@@ -133,7 +131,6 @@ Reference< XDispatch > SAL_CALL ScriptProtocolHandler::queryDispatch(
 Sequence< Reference< XDispatch > > SAL_CALL
 ScriptProtocolHandler::queryDispatches(
 const Sequence < DispatchDescriptor >& seqDescriptor )
-throw( RuntimeException )
 {
     sal_Int32 nCount = seqDescriptor.getLength();
     Sequence< Reference< XDispatch > > lDispatcher( nCount );
@@ -149,7 +146,6 @@ throw( RuntimeException )
 void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
     const URL& aURL, const Sequence < PropertyValue >& lArgs,
     const Reference< XDispatchResultListener >& xListener )
-    throw ( RuntimeException )
 {
 
     sal_Bool bSuccess = sal_False;
@@ -334,14 +330,12 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
 
 void SAL_CALL ScriptProtocolHandler::dispatch(
 const URL& aURL, const Sequence< PropertyValue >& lArgs )
-throw ( RuntimeException )
 {
     dispatchWithNotification( aURL, lArgs, Reference< XDispatchResultListener >() );
 }
 
 void SAL_CALL ScriptProtocolHandler::addStatusListener(
 const Reference< XStatusListener >& xControl, const URL& aURL )
-throw ( RuntimeException )
 {
 	(void)xControl;
 	(void)aURL;
@@ -351,7 +345,6 @@ throw ( RuntimeException )
 
 void SAL_CALL ScriptProtocolHandler::removeStatusListener(
 const Reference< XStatusListener >& xControl, const URL& aURL )
-throw ( RuntimeException )
 {
 	(void)xControl;
 	(void)aURL;
@@ -470,7 +463,6 @@ ScriptProtocolHandler::~ScriptProtocolHandler()
 
 /* XServiceInfo */
 ::rtl::OUString SAL_CALL ScriptProtocolHandler::getImplementationName( )
-throw( RuntimeException )
 {
     return impl_getStaticImplementationName();
 }
@@ -478,7 +470,6 @@ throw( RuntimeException )
 /* XServiceInfo */
 sal_Bool SAL_CALL ScriptProtocolHandler::supportsService(
 const ::rtl::OUString& sServiceName )
-throw( RuntimeException )
 {
     Sequence< ::rtl::OUString > seqServiceNames = getSupportedServiceNames();
     const ::rtl::OUString* pArray = seqServiceNames.getConstArray();
@@ -495,7 +486,6 @@ throw( RuntimeException )
 
 /* XServiceInfo */
 Sequence< ::rtl::OUString > SAL_CALL ScriptProtocolHandler::getSupportedServiceNames()
-throw( RuntimeException )
 {
     return impl_getStaticSupportedServiceNames();
 }
@@ -519,7 +509,6 @@ Sequence< ::rtl::OUString > ScriptProtocolHandler::impl_getStaticSupportedServic
 /* Helper for registry */
 Reference< XInterface > SAL_CALL ScriptProtocolHandler::impl_createInstance(
 const Reference< css::uno::XComponentContext > & xCtx)
-throw( RuntimeException )
 {
     return Reference < XInterface >( *new ScriptProtocolHandler( xCtx ) );
 }

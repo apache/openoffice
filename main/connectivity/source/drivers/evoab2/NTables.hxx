@@ -34,7 +34,7 @@ namespace connectivity
             ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData >       m_xMetaData;
 		protected:
             virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-            virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+            virtual void impl_refresh();
 		public:
             OEvoabTables(const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData >& _rMetaData,
 						 ::cppu::OWeakObject& _rParent, ::osl::Mutex& _rMutex,

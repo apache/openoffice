@@ -40,7 +40,6 @@ sal_Bool produceAllTypes(RegistryKey& rTypeKey, sal_Bool bIsExtraType,
                          codemaker::GeneratedTypeSet & generated,
 						 JavaOptions* pOptions,
 						 sal_Bool bFullScope)
-	throw( CannotDumpException )
 {
     OString typeName = typeMgr.getTypeName(rTypeKey);
 
@@ -92,7 +91,6 @@ sal_Bool produceAllTypes(const OString& typeName,
                          codemaker::GeneratedTypeSet & generated,
 						 JavaOptions* pOptions,
 						 sal_Bool bFullScope)
-	throw( CannotDumpException )
 {
 	if (!produceType(typeName, typeMgr,	generated, pOptions))
 	{

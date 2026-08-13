@@ -81,10 +81,10 @@ public:
 	GlobalEventListenerImpl( XMLFilterTestDialog* pDialog );
 
 	// XEventListener
-	virtual void SAL_CALL notifyEvent( const com::sun::star::document::EventObject& Event ) throw (RuntimeException);
+	virtual void SAL_CALL notifyEvent( const com::sun::star::document::EventObject& Event );
 
 	// lang::XEventListener
-	virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw (RuntimeException);
+	virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source );
 private:
 	XMLFilterTestDialog* mpDialog;
 };
@@ -94,7 +94,7 @@ GlobalEventListenerImpl::GlobalEventListenerImpl( XMLFilterTestDialog* pDialog )
 {
 }
 
-void SAL_CALL GlobalEventListenerImpl::notifyEvent( const com::sun::star::document::EventObject& Event ) throw (RuntimeException)
+void SAL_CALL GlobalEventListenerImpl::notifyEvent( const com::sun::star::document::EventObject& Event )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	if( (Event.EventName.compareToAscii( RTL_CONSTASCII_STRINGPARAM("OnFocus") ) == 0) ||
@@ -105,7 +105,7 @@ void SAL_CALL GlobalEventListenerImpl::notifyEvent( const com::sun::star::docume
 	}
 }
 
-void SAL_CALL GlobalEventListenerImpl::disposing( const com::sun::star::lang::EventObject& /* Source */ ) throw (RuntimeException)
+void SAL_CALL GlobalEventListenerImpl::disposing( const com::sun::star::lang::EventObject& /* Source */ )
 {
 }
 

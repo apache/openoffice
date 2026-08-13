@@ -62,14 +62,13 @@ public:
     }
 
     // XInterface
-    virtual Any SAL_CALL queryInterface( Type const & type )
-        throw (RuntimeException);
+    virtual Any SAL_CALL queryInterface( Type const & type );
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
 
     // XExceptionThrower
-    virtual void SAL_CALL throwException( Any const & exc ) throw (Exception);
-    virtual void SAL_CALL rethrowException() throw (Exception);
+    virtual void SAL_CALL throwException( Any const & exc );
+    virtual void SAL_CALL rethrowException();
 };
 
 extern "C"
@@ -141,7 +140,6 @@ static void SAL_CALL ExceptionThrower_dispatch(
 
 //______________________________________________________________________________
 Any ExceptionThrower::queryInterface( Type const & type )
-    throw (RuntimeException)
 {
     if (type.equals( ::getCppuType( reinterpret_cast<
                                     Reference< XInterface > const * >(0) ) ) ||
@@ -163,14 +161,14 @@ void ExceptionThrower::release() throw ()
 }
 
 //______________________________________________________________________________
-void ExceptionThrower::throwException( Any const & exc ) throw (Exception)
+void ExceptionThrower::throwException( Any const & exc )
 {
     OSL_ENSURE( 0, "unexpected!" );
     ::cppu::throwException( exc );
 }
 
 //______________________________________________________________________________
-void ExceptionThrower::rethrowException() throw (Exception)
+void ExceptionThrower::rethrowException()
 {
     throw;
 }
@@ -208,7 +206,7 @@ namespace cppu
 {
 
 //==============================================================================
-void SAL_CALL throwException( Any const & exc ) SAL_THROW( (Exception) )
+void SAL_CALL throwException( Any const & exc )
 {
     if (exc.getValueTypeClass() != TypeClass_EXCEPTION)
     {

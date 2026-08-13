@@ -46,7 +46,7 @@ NumberFormatCodeMapper::~NumberFormatCodeMapper()
 
 
 ::com::sun::star::i18n::NumberFormatCode SAL_CALL
-NumberFormatCodeMapper::getDefault( sal_Int16 formatType, sal_Int16 formatUsage, const ::com::sun::star::lang::Locale& rLocale ) throw(::com::sun::star::uno::RuntimeException)
+NumberFormatCodeMapper::getDefault( sal_Int16 formatType, sal_Int16 formatUsage, const ::com::sun::star::lang::Locale& rLocale )
 {
 
 	::rtl::OUString elementType	= mapElementTypeShortToString(formatType);
@@ -74,7 +74,7 @@ NumberFormatCodeMapper::getDefault( sal_Int16 formatType, sal_Int16 formatUsage,
 
 
 ::com::sun::star::i18n::NumberFormatCode SAL_CALL
-NumberFormatCodeMapper::getFormatCode( sal_Int16 formatIndex, const ::com::sun::star::lang::Locale& rLocale ) throw(::com::sun::star::uno::RuntimeException)
+NumberFormatCodeMapper::getFormatCode( sal_Int16 formatIndex, const ::com::sun::star::lang::Locale& rLocale )
 {
 	getFormats( rLocale );
 
@@ -98,7 +98,7 @@ NumberFormatCodeMapper::getFormatCode( sal_Int16 formatIndex, const ::com::sun::
 
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::i18n::NumberFormatCode > SAL_CALL
-NumberFormatCodeMapper::getAllFormatCode( sal_Int16 formatUsage, const ::com::sun::star::lang::Locale& rLocale ) throw(::com::sun::star::uno::RuntimeException)
+NumberFormatCodeMapper::getAllFormatCode( sal_Int16 formatUsage, const ::com::sun::star::lang::Locale& rLocale )
 {
 	getFormats( rLocale );
 
@@ -131,7 +131,7 @@ NumberFormatCodeMapper::getAllFormatCode( sal_Int16 formatUsage, const ::com::su
 
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::i18n::NumberFormatCode > SAL_CALL
-NumberFormatCodeMapper::getAllFormatCodes( const ::com::sun::star::lang::Locale& rLocale ) throw(::com::sun::star::uno::RuntimeException)
+NumberFormatCodeMapper::getAllFormatCodes( const ::com::sun::star::lang::Locale& rLocale )
 {
 	getFormats( rLocale );
 
@@ -276,7 +276,6 @@ NumberFormatCodeMapper::createLocaleDataObject() {
 
 ::rtl::OUString SAL_CALL
 NumberFormatCodeMapper::getImplementationName(void)
-                throw( ::com::sun::star::uno::RuntimeException )
 {
     return ::rtl::OUString::createFromAscii("com.sun.star.i18n.NumberFormatCodeMapper");
 }
@@ -285,13 +284,12 @@ const sal_Char cNumFormat[] = "com.sun.star.i18n.NumberFormatMapper";
 
 sal_Bool SAL_CALL
 NumberFormatCodeMapper::supportsService(const rtl::OUString& rServiceName)
-                throw( ::com::sun::star::uno::RuntimeException )
 {
     return !rServiceName.compareToAscii(cNumFormat);
 }
 
 ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-NumberFormatCodeMapper::getSupportedServiceNames(void) throw( ::com::sun::star::uno::RuntimeException )
+NumberFormatCodeMapper::getSupportedServiceNames(void)
 {
     ::com::sun::star::uno::Sequence< ::rtl::OUString > aRet(1);
     aRet[0] = ::rtl::OUString::createFromAscii(cNumFormat);

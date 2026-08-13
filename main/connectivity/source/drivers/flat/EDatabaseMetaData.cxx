@@ -164,7 +164,7 @@ Reference< XResultSet > OFlatDatabaseMetaData::impl_getTypeInfo_throw(  )
 // -------------------------------------------------------------------------
 Reference< XResultSet > SAL_CALL OFlatDatabaseMetaData::getColumns(
 	const Any& /*catalog*/, const ::rtl::OUString& /*schemaPattern*/, const ::rtl::OUString& tableNamePattern,
-        const ::rtl::OUString& columnNamePattern ) throw(SQLException, RuntimeException)
+        const ::rtl::OUString& columnNamePattern )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "flat", "Ocke.Janssen@sun.com", "OFlatDatabaseMetaData::getColumns" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -252,7 +252,7 @@ Reference< XResultSet > SAL_CALL OFlatDatabaseMetaData::getColumns(
 	return xRef;
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OFlatDatabaseMetaData::getURL(  ) throw(SQLException, RuntimeException)
+::rtl::OUString SAL_CALL OFlatDatabaseMetaData::getURL(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "flat", "Ocke.Janssen@sun.com", "OFlatDatabaseMetaData::getURL" );
 	::osl::MutexGuard aGuard( m_aMutex );

@@ -87,7 +87,7 @@ public:
         maWorkbook <<= ooo::vba::createVBAUnoAPIServiceWithArgs( mpDocShell, "ooo.vba.excel.Workbook", aArgs );
     }
 
-    virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException )
+    virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
     {
         ScUnoGuard aGuard;
         maCachedObject = uno::Any(); // clear cached object
@@ -129,7 +129,7 @@ public:
         return maCachedObject.hasValue();
 
     }
-    ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
     {
         ScUnoGuard aGuard;
         OSL_TRACE("ScVbaObjectForCodeNameProvider::getByName( %s )",
@@ -138,7 +138,7 @@ public:
             throw ::com::sun::star::container::NoSuchElementException();
         return maCachedObject;
     }
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (::com::sun::star::uno::RuntimeException)
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  )
     {
         ScUnoGuard aGuard;
         ScDocument* pDoc = mpDocShell->GetDocument();
@@ -157,8 +157,8 @@ public:
         return aNames;
     }
     // XElemenAccess
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw (::com::sun::star::uno::RuntimeException){ return uno::Type(); }
-    virtual ::sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException ) { return sal_True; }
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ){ return uno::Type(); }
+    virtual ::sal_Bool SAL_CALL hasElements(  ) { return sal_True; }
 
 };
 
@@ -168,7 +168,7 @@ ScDocShell* mpDocShell;
 public:
     ScVbaCodeNameProvider( ScDocShell* pDocShell ) : mpDocShell( pDocShell ) {}
     // XCodeNameQuery
-    rtl::OUString SAL_CALL getCodeNameForObject( const uno::Reference< uno::XInterface >& xIf ) throw( uno::RuntimeException )
+    rtl::OUString SAL_CALL getCodeNameForObject( const uno::Reference< uno::XInterface >& xIf )
     {
         ScUnoGuard aGuard;
         rtl::OUString sCodeName;

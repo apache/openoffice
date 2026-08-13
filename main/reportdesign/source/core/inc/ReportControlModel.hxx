@@ -109,22 +109,22 @@ namespace reportdesign
 		{}
 
         // XContainer
-		void addContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-		void removeContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+		void addContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener );
+		void removeContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener );
 
 		// XElementAccess
-		::sal_Bool hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
+		::sal_Bool hasElements(  );
 
 		// XIndexReplace
-		void replaceByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		void replaceByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element );
 
 		// XIndexContainer
-		void insertByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		void removeByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		void insertByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element );
+		void removeByIndex( ::sal_Int32 Index );
 
 		// XIndexAccess
-		::sal_Int32 getCount(  ) throw (::com::sun::star::uno::RuntimeException);
-		::com::sun::star::uno::Any getByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		::sal_Int32 getCount(  );
+		::com::sun::star::uno::Any getByIndex( ::sal_Int32 Index );
 
         static bool isInterfaceForbidden(const ::com::sun::star::uno::Type& _rType);
 	};

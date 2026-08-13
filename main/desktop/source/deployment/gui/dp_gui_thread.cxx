@@ -51,7 +51,6 @@ void Thread::launch() {
 }
 
 void * Thread::operator new(std::size_t size)
-    throw (std::bad_alloc)
 {
     return SimpleReferenceObject::operator new(size);
 }

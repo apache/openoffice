@@ -75,7 +75,7 @@ OSQLMessageDialog::OSQLMessageDialog(const Reference< XMultiServiceFactory >& _r
 }
 
 //-------------------------------------------------------------------------
-Sequence<sal_Int8> SAL_CALL OSQLMessageDialog::getImplementationId(  ) throw(RuntimeException)
+Sequence<sal_Int8> SAL_CALL OSQLMessageDialog::getImplementationId(  )
 {
 	static ::cppu::OImplementationId aId;
 	return aId.getImplementationId();
@@ -88,25 +88,25 @@ Reference< XInterface > SAL_CALL OSQLMessageDialog::Create(const Reference< XMul
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OSQLMessageDialog::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL OSQLMessageDialog::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString OSQLMessageDialog::getImplementationName_Static() throw(RuntimeException)
+::rtl::OUString OSQLMessageDialog::getImplementationName_Static()
 {
 	return ::rtl::OUString::createFromAscii("org.openoffice.comp.dbu.OSQLMessageDialog");
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL OSQLMessageDialog::getSupportedServiceNames() throw(RuntimeException)
+::comphelper::StringSequence SAL_CALL OSQLMessageDialog::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence OSQLMessageDialog::getSupportedServiceNames_Static() throw(RuntimeException)
+::comphelper::StringSequence OSQLMessageDialog::getSupportedServiceNames_Static()
 {
 	::comphelper::StringSequence aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdb.ErrorMessageDialog");
@@ -114,7 +114,7 @@ Reference< XInterface > SAL_CALL OSQLMessageDialog::Create(const Reference< XMul
 }
 
 //-------------------------------------------------------------------------
-sal_Bool SAL_CALL OSQLMessageDialog::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue) throw(IllegalArgumentException)
+sal_Bool SAL_CALL OSQLMessageDialog::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue)
 {
 	switch (_nHandle)
 	{
@@ -136,7 +136,7 @@ sal_Bool SAL_CALL OSQLMessageDialog::convertFastPropertyValue( Any& _rConvertedV
 }
 
 //-------------------------------------------------------------------------
-Reference<XPropertySetInfo>  SAL_CALL OSQLMessageDialog::getPropertySetInfo() throw(RuntimeException)
+Reference<XPropertySetInfo>  SAL_CALL OSQLMessageDialog::getPropertySetInfo()
 {
 	Reference<XPropertySetInfo>  xInfo( createPropertySetInfo( getInfoHelper() ) );
 	return xInfo;

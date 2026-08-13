@@ -42,7 +42,7 @@ SlideMasterTextStylesContext::~SlideMasterTextStylesContext()
 {
 }
 
-Reference< XFastContextHandler > SlideMasterTextStylesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& /* xAttribs */ ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > SlideMasterTextStylesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& /* xAttribs */ )
 {
 	oox::drawingml::TextListStylePtr aTextListStylePtr;
 	Reference< XFastContextHandler > xRet;

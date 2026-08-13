@@ -24,7 +24,7 @@
 
 namespace sax_test {
 Reference< XInterface > SAL_CALL OSaxWriterTest_CreateInstance(
-	const Reference< XMultiServiceFactory > & rSMgr ) throw ( Exception );
+	const Reference< XMultiServiceFactory > & rSMgr );
 OUString    OSaxWriterTest_getServiceName( ) throw();
 OUString 	OSaxWriterTest_getImplementationName( ) throw();
 Sequence<OUString> OSaxWriterTest_getSupportedServiceNames( ) throw();

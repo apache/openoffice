@@ -178,7 +178,6 @@ void DAVResourceAccess::PROPFIND(
     const std::vector< rtl::OUString > & rPropertyNames,
     std::vector< DAVResource > & rResources,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -221,7 +220,6 @@ void DAVResourceAccess::PROPFIND(
     const Depth nDepth,
     std::vector< DAVResourceInfo > & rResInfo,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -261,7 +259,6 @@ void DAVResourceAccess::PROPFIND(
 void DAVResourceAccess::PROPPATCH(
     const std::vector< ProppatchValue >& rValues,
     const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -301,7 +298,6 @@ void DAVResourceAccess::HEAD(
     const std::vector< rtl::OUString > & rHeaderNames,
     DAVResource & rResource,
     const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -340,7 +336,6 @@ void DAVResourceAccess::HEAD(
 //=========================================================================
 uno::Reference< io::XInputStream > DAVResourceAccess::GET(
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -382,7 +377,6 @@ uno::Reference< io::XInputStream > DAVResourceAccess::GET(
 void DAVResourceAccess::GET(
     uno::Reference< io::XOutputStream > & rStream,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -422,7 +416,6 @@ uno::Reference< io::XInputStream > DAVResourceAccess::GET(
     const std::vector< rtl::OUString > & rHeaderNames,
     DAVResource & rResource,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -468,7 +461,6 @@ uno::Reference< io::XInputStream > DAVResourceAccess::GET(
     const std::vector< rtl::OUString > & rHeaderNames,
     DAVResource & rResource,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -513,7 +505,6 @@ void DAVResourceAccess::GET(
     const std::vector< rtl::OUString > & rHeaderNames,
     DAVResource & rResource,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -552,7 +543,6 @@ void DAVResourceAccess::GET(
 
 //=========================================================================
 void DAVResourceAccess::abort()
-  throw( DAVException )
 {
     // 17.11.09 (tkr): abort currently disabled caused by issue i106766
     // initialize();
@@ -564,7 +554,6 @@ void DAVResourceAccess::abort()
 namespace {
 
     void resetInputStream( const uno::Reference< io::XInputStream > & rStream )
-        throw( DAVException )
     {
         try
         {
@@ -592,7 +581,6 @@ namespace {
 void DAVResourceAccess::PUT(
     const uno::Reference< io::XInputStream > & rStream,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -641,7 +629,6 @@ uno::Reference< io::XInputStream > DAVResourceAccess::POST(
     const rtl::OUString & rReferer,
     const uno::Reference< io::XInputStream > & rInputStream,
     const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-  throw ( DAVException )
 {
     initialize();
 
@@ -705,7 +692,6 @@ void DAVResourceAccess::POST(
     const uno::Reference< io::XInputStream > & rInputStream,
     uno::Reference< io::XOutputStream > & rOutputStream,
     const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-  throw ( DAVException )
 {
     initialize();
 
@@ -763,7 +749,6 @@ void DAVResourceAccess::POST(
 //=========================================================================
 void DAVResourceAccess::MKCOL(
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -803,7 +788,6 @@ void DAVResourceAccess::COPY(
     const ::rtl::OUString & rDestinationURI,
     sal_Bool bOverwrite,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -845,7 +829,6 @@ void DAVResourceAccess::MOVE(
     const ::rtl::OUString & rDestinationURI,
     sal_Bool bOverwrite,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -884,7 +867,6 @@ void DAVResourceAccess::MOVE(
 //=========================================================================
 void DAVResourceAccess::DESTROY(
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw( DAVException )
 {
     initialize();
 
@@ -923,7 +905,6 @@ void DAVResourceAccess::DESTROY(
 void DAVResourceAccess::LOCK(
     ucb::Lock & inLock,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw ( DAVException )
 {
     initialize();
 
@@ -964,7 +945,6 @@ void DAVResourceAccess::LOCK(
 sal_Int64 DAVResourceAccess::LOCK(
     sal_Int64 nTimeout,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw ( DAVException )
 {
     initialize();
 
@@ -1007,7 +987,6 @@ sal_Int64 DAVResourceAccess::LOCK(
 //=========================================================================
 void DAVResourceAccess::UNLOCK(
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-  throw ( DAVException )
 {
     initialize();
 
@@ -1043,7 +1022,6 @@ void DAVResourceAccess::UNLOCK(
 
 //=========================================================================
 void DAVResourceAccess::setURL( const rtl::OUString & rNewURL )
-    throw( DAVException )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
     m_aURL  = rNewURL;
@@ -1053,7 +1031,6 @@ void DAVResourceAccess::setURL( const rtl::OUString & rNewURL )
 //=========================================================================
 // init dav session and path
 void DAVResourceAccess::initialize()
-    throw ( DAVException )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
     if ( m_aPath.getLength() == 0 )
@@ -1136,7 +1113,6 @@ void DAVResourceAccess::getUserRequestHeaders(
 //=========================================================================
 sal_Bool DAVResourceAccess::detectRedirectCycle(
                                 const rtl::OUString& rRedirectURL )
-    throw ( DAVException )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
@@ -1173,7 +1149,6 @@ void DAVResourceAccess::resetUri()
 
 //=========================================================================
 sal_Bool DAVResourceAccess::handleException( DAVException & e, int errorCount )
-    throw ( DAVException )
 {
     switch ( e.getError() )
     {

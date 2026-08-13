@@ -164,62 +164,62 @@ namespace dbaui
 		virtual sal_Bool Construct(Window* pParent);
 
 		// UNO
-		virtual ::com::sun::star::uno::Any	SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any	SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType);
 
 		// XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 
 		// ::com::sun::star::lang::XEventListener
-		virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
 		// ::com::sun::star::util::XModifyListener
-		virtual void SAL_CALL modified(const ::com::sun::star::lang::EventObject& aEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL modified(const ::com::sun::star::lang::EventObject& aEvent);
 
 		// ::com::sun::star::container::XContainerListener
-		virtual void SAL_CALL elementInserted(const ::com::sun::star::container::ContainerEvent& Event) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL elementRemoved(const ::com::sun::star::container::ContainerEvent& Event) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL elementReplaced(const ::com::sun::star::container::ContainerEvent& Event) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL elementInserted(const ::com::sun::star::container::ContainerEvent& Event);
+		virtual void SAL_CALL elementRemoved(const ::com::sun::star::container::ContainerEvent& Event);
+		virtual void SAL_CALL elementReplaced(const ::com::sun::star::container::ContainerEvent& Event);
 
 		// XPropertyChangeListener
-		virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt );
 
         // XModule
-        virtual void SAL_CALL setIdentifier( const ::rtl::OUString& Identifier ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getIdentifier(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL setIdentifier( const ::rtl::OUString& Identifier );
+        virtual ::rtl::OUString SAL_CALL getIdentifier(  );
 
 		// ::com::sun::star::awt::XFocusListener
-		virtual void SAL_CALL focusGained(const ::com::sun::star::awt::FocusEvent& e) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL focusLost(const ::com::sun::star::awt::FocusEvent& e) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL focusGained(const ::com::sun::star::awt::FocusEvent& e);
+		virtual void SAL_CALL focusLost(const ::com::sun::star::awt::FocusEvent& e);
 
 		// ::com::sun::star::frame::XController
-		virtual sal_Bool SAL_CALL suspend(sal_Bool bSuspend) throw( ::com::sun::star::uno::RuntimeException );
+		virtual sal_Bool SAL_CALL suspend(sal_Bool bSuspend);
 
 		// ::com::sun::star::lang::XComponent
 		virtual void		SAL_CALL disposing();
 
 		// ::com::sun::star::frame::XFrameActionListener
-		virtual void		SAL_CALL frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void		SAL_CALL frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent);
 
 		// ::com::sun::star::sdb::XSQLErrorListener
-		virtual void		SAL_CALL errorOccured(const ::com::sun::star::sdb::SQLErrorEvent& aEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void		SAL_CALL errorOccured(const ::com::sun::star::sdb::SQLErrorEvent& aEvent);
 
 		// ::com::sun::star::form::XDatabaseParameterListener
-		virtual sal_Bool	SAL_CALL approveParameter(const ::com::sun::star::form::DatabaseParameterEvent& aEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual sal_Bool	SAL_CALL approveParameter(const ::com::sun::star::form::DatabaseParameterEvent& aEvent);
 
 		// ::com::sun::star::form::XConfirmDeleteListener
-		virtual sal_Bool	SAL_CALL confirmDelete(const ::com::sun::star::sdb::RowChangeEvent& aEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual sal_Bool	SAL_CALL confirmDelete(const ::com::sun::star::sdb::RowChangeEvent& aEvent);
 
 		// ::com::sun::star::form::XLoadListener
-		virtual void SAL_CALL loaded(const ::com::sun::star::lang::EventObject& aEvent) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL unloading(const ::com::sun::star::lang::EventObject& aEvent) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL unloaded(const ::com::sun::star::lang::EventObject& aEvent) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL reloading(const ::com::sun::star::lang::EventObject& aEvent) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL reloaded(const ::com::sun::star::lang::EventObject& aEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL loaded(const ::com::sun::star::lang::EventObject& aEvent);
+		virtual void SAL_CALL unloading(const ::com::sun::star::lang::EventObject& aEvent);
+		virtual void SAL_CALL unloaded(const ::com::sun::star::lang::EventObject& aEvent);
+		virtual void SAL_CALL reloading(const ::com::sun::star::lang::EventObject& aEvent);
+		virtual void SAL_CALL reloaded(const ::com::sun::star::lang::EventObject& aEvent);
 
 		// ::com::sun::star::form::XResetListener
-		virtual sal_Bool SAL_CALL approveReset(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL resetted(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual sal_Bool SAL_CALL approveReset(const ::com::sun::star::lang::EventObject& rEvent);
+		virtual void SAL_CALL resetted(const ::com::sun::star::lang::EventObject& rEvent);
 
 		// SbaGridListener
 		virtual void RowChanged();

@@ -51,8 +51,6 @@ VPolarTransformation::~VPolarTransformation()
 // ____ XTransformation ____
 Sequence< double > SAL_CALL VPolarTransformation::transform(
                         const Sequence< double >& rSourceValues )
-    throw (RuntimeException,
-           lang::IllegalArgumentException)
 {
     double fScaledLogicAngle  = rSourceValues[0];
     double fScaledLogicRadius = rSourceValues[1];
@@ -75,13 +73,11 @@ Sequence< double > SAL_CALL VPolarTransformation::transform(
 }
 
 sal_Int32 SAL_CALL VPolarTransformation::getSourceDimension()
-    throw (RuntimeException)
 {
     return 3;
 }
 
 sal_Int32 SAL_CALL VPolarTransformation::getTargetDimension()
-    throw (RuntimeException)
 {
     return 3;
 }

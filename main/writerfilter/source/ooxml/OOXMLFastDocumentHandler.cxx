@@ -65,25 +65,21 @@ OOXMLFastDocumentHandler::OOXMLFastDocumentHandler(
 // ::com::sun::star::xml::sax::XFastContextHandler:
 void SAL_CALL OOXMLFastDocumentHandler::startFastElement
 (::sal_Int32 /*Element*/, const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::startUnknownElement
 (const ::rtl::OUString & /*Namespace*/, const ::rtl::OUString & /*Name*/,
  const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
-throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::endFastElement(::sal_Int32 /*Element*/)
-throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::endUnknownElement
 (const ::rtl::OUString & /*Namespace*/, const ::rtl::OUString &  /*Name*/)
-throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
@@ -106,7 +102,6 @@ uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
  OOXMLFastDocumentHandler::createFastChildContext
 (::sal_Int32 Element,
  const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
 
     if ( mpStream == 0 && mpDocument == 0 )
@@ -124,31 +119,26 @@ OOXMLFastDocumentHandler::createUnknownChildContext
 (const ::rtl::OUString & /*Namespace*/,
  const ::rtl::OUString & /*Name*/,
  const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     return uno::Reference< xml::sax::XFastContextHandler >
         ( new OOXMLFastDocumentHandler( m_xContext, 0, 0 ) );
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::characters(const ::rtl::OUString & /*aChars*/)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 // ::com::sun::star::xml::sax::XFastDocumentHandler:
 void SAL_CALL OOXMLFastDocumentHandler::startDocument()
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::endDocument()
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::setDocumentLocator
 (const uno::Reference< xml::sax::XLocator > & /*xLocator*/)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 

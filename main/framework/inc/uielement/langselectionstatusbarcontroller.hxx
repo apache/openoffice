@@ -52,17 +52,17 @@ class LangSelectionStatusbarController : public svt::StatusbarController
         DECLARE_XSERVICEINFO
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XStatusListener
-        virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
         // XStatusbarController
         virtual void SAL_CALL command( const ::com::sun::star::awt::Point& aPos,
                                        ::sal_Int32 nCommand,
                                        ::sal_Bool bMouseEvent,
-                                       const ::com::sun::star::uno::Any& aData ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL click( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
+                                       const ::com::sun::star::uno::Any& aData );
+        virtual void SAL_CALL click( const ::com::sun::star::awt::Point& aPos );
 
     private:
         virtual ~LangSelectionStatusbarController() {}
@@ -77,7 +77,7 @@ class LangSelectionStatusbarController : public svt::StatusbarController
         ::rtl::OUString     m_aGuessedTextLang;     // the 'guessed' language for the selection, "" if none could be guessed
         LanguageGuessingHelper      m_aLangGuessHelper;
 
-        void LangMenu( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
+        void LangMenu( const ::com::sun::star::awt::Point& aPos );
 };
 
 } // framework namespace

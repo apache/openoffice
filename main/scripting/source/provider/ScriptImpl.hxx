@@ -56,8 +56,7 @@ public:
     ScriptImpl(
         const css::uno::Reference< css::beans::XPropertySet > & scriptingContext,
         const css::uno::Reference< dcsssf::runtime::XScriptInvocation > & runtimeMgr,
-        const ::rtl::OUString& scriptURI )
-    throw ( css::uno::RuntimeException );
+        const ::rtl::OUString& scriptURI );
 
     /*************************************************************
       ScriptImpl Destructor
@@ -89,11 +88,7 @@ public:
     virtual css::uno::Any SAL_CALL invoke(
         const css::uno::Sequence< css::uno::Any > & aParams,
         css::uno::Sequence< sal_Int16 > & aOutParamIndex,
-        css::uno::Sequence< css::uno::Any > & aOutParam )
-    throw ( css::lang::IllegalArgumentException,
-            css::script::CannotConvertException,
-            css::reflection::InvocationTargetException,
-            css::uno::RuntimeException );
+        css::uno::Sequence< css::uno::Any > & aOutParam );
 
 private:
     css::uno::Reference< css::beans::XPropertySet > m_XScriptingContext;

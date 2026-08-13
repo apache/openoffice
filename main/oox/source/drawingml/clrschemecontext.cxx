@@ -77,7 +77,7 @@ clrSchemeContext::clrSchemeContext( ContextHandler& rParent, ClrScheme& rClrSche
 }
 
 Reference< XFastContextHandler > clrSchemeContext::createFastChildContext(
-        sal_Int32 nElement, const Reference< XFastAttributeList >& ) throw (SAXException, RuntimeException)
+        sal_Int32 nElement, const Reference< XFastAttributeList >& )
 {
     switch( nElement )
     {

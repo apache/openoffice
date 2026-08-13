@@ -50,14 +50,13 @@ public:
 	DECLARE_DEFAULT_LEAF_XTOR( OTimeModel );
 
 	// stario::XPersistObject
-	virtual ::rtl::OUString SAL_CALL getServiceName() throw ( ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getServiceName();
 
 	// ::com::sun::star::beans::XPropertySet
 	virtual void SAL_CALL getFastPropertyValue(::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
 	virtual sal_Bool SAL_CALL convertFastPropertyValue(::com::sun::star::uno::Any& rConvertedValue, ::com::sun::star::uno::Any& rOldValue,
-										  sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-										throw(::com::sun::star::lang::IllegalArgumentException);
-	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue) throw ( ::com::sun::star::uno::Exception);
+										  sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
+	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue);
 
 	// ::com::sun::star::lang::XServiceInfo
 	IMPLEMENTATION_NAME(OTimeModel);

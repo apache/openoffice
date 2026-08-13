@@ -68,7 +68,7 @@ RelationsFragment::RelationsFragment( XmlFilterBase& rFilter, RelationsRef xRela
 }
 
 Reference< XFastContextHandler > RelationsFragment::createFastChildContext(
-        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs ) throw (SAXException, RuntimeException)
+        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
 {
     Reference< XFastContextHandler > xRet;
     AttributeList aAttribs( rxAttribs );

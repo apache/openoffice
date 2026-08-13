@@ -76,13 +76,9 @@ protected:
 
 	FilterType meType;
 
-    sal_Bool SAL_CALL exportImpl( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
+    sal_Bool SAL_CALL exportImpl( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor );
 
-		throw (::com::sun::star::uno::RuntimeException);
-
-    sal_Bool SAL_CALL importImpl( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-
-		throw (::com::sun::star::uno::RuntimeException);
+    sal_Bool SAL_CALL importImpl( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor );
 
 
 
@@ -98,81 +94,57 @@ public:
 
 	// XFilter
 
-    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
+    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor );
 
-		throw (::com::sun::star::uno::RuntimeException);
-
-    virtual void SAL_CALL cancel(  )
-
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL cancel(  );
 
 
 
 	// XExporter
 
-    virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 
 
 
 	// XImporter
 
-    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 
 
 
 	// XInitialization
 
-    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-
-		throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 
 
 	// XServiceInfo
 
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
 
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-
-		throw (::com::sun::star::uno::RuntimeException);
-
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 };
 
 
 
-::rtl::OUString XmlFilterAdaptor_getImplementationName()
-
-	throw ( ::com::sun::star::uno::RuntimeException );
+::rtl::OUString XmlFilterAdaptor_getImplementationName();
 
 
 
-sal_Bool SAL_CALL XmlFilterAdaptor_supportsService( const ::rtl::OUString& ServiceName )
-
-	throw ( ::com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL XmlFilterAdaptor_supportsService( const ::rtl::OUString& ServiceName );
 
 
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL XmlFilterAdaptor_getSupportedServiceNames(  )
-
-	throw ( ::com::sun::star::uno::RuntimeException );
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL XmlFilterAdaptor_getSupportedServiceNames(  );
 
 
 
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
 
-SAL_CALL XmlFilterAdaptor_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr)
-
-	throw ( ::com::sun::star::uno::Exception );
+SAL_CALL XmlFilterAdaptor_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 
 
 

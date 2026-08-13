@@ -55,47 +55,34 @@ public:
 	//XDefaultNumberingProvider
 	virtual com::sun::star::uno::Sequence< com::sun::star::uno::Reference<
 		com::sun::star::container::XIndexAccess > > SAL_CALL
-		getDefaultOutlineNumberings( const com::sun::star::lang::Locale& aLocale )
-		throw(com::sun::star::uno::RuntimeException);
+		getDefaultOutlineNumberings( const com::sun::star::lang::Locale& aLocale );
 
 	virtual com::sun::star::uno::Sequence< com::sun::star::uno::Sequence<
 		com::sun::star::beans::PropertyValue > > SAL_CALL
-		getDefaultContinuousNumberingLevels( const com::sun::star::lang::Locale& aLocale )
-		throw(com::sun::star::uno::RuntimeException);
+		getDefaultContinuousNumberingLevels( const com::sun::star::lang::Locale& aLocale );
 
 	//XNumberingFormatter
 	virtual rtl::OUString SAL_CALL makeNumberingString(
 		const com::sun::star::uno::Sequence<
 		com::sun::star::beans::PropertyValue >& aProperties,
-		const com::sun::star::lang::Locale& aLocale )
-		throw(com::sun::star::lang::IllegalArgumentException,
-		com::sun::star::uno::RuntimeException);
+		const com::sun::star::lang::Locale& aLocale );
 
 	//XNumberingTypeInfo
-	virtual com::sun::star::uno::Sequence< sal_Int16 > SAL_CALL getSupportedNumberingTypes(  )
-		throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int16 SAL_CALL getNumberingType( const rtl::OUString& NumberingIdentifier )
-		throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasNumberingType( const rtl::OUString& NumberingIdentifier )
-		throw(com::sun::star::uno::RuntimeException);
-	virtual rtl::OUString SAL_CALL getNumberingIdentifier( sal_Int16 NumberingType )
-		throw(com::sun::star::uno::RuntimeException);
+	virtual com::sun::star::uno::Sequence< sal_Int16 > SAL_CALL getSupportedNumberingTypes(  );
+	virtual sal_Int16 SAL_CALL getNumberingType( const rtl::OUString& NumberingIdentifier );
+	virtual sal_Bool SAL_CALL hasNumberingType( const rtl::OUString& NumberingIdentifier );
+	virtual rtl::OUString SAL_CALL getNumberingIdentifier( sal_Int16 NumberingType );
 
 	//XServiceInfo
-	virtual rtl::OUString SAL_CALL getImplementationName(void)
-                throw( com::sun::star::uno::RuntimeException );
-	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName)
-                throw( com::sun::star::uno::RuntimeException );
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(void)
-                throw( com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getImplementationName(void);
+	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(void);
 private:
 	com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > xSMgr;
 	com::sun::star::uno::Reference < com::sun::star::container::XHierarchicalNameAccess > xHierarchicalNameAccess;
 	TransliterationImpl* translit;
-	rtl::OUString SAL_CALL makeNumberingIdentifier( sal_Int16 index )
-		throw(com::sun::star::uno::RuntimeException);
-	sal_Bool SAL_CALL isScriptFlagEnabled(const rtl::OUString& aName )
-		throw(com::sun::star::uno::RuntimeException);
+	rtl::OUString SAL_CALL makeNumberingIdentifier( sal_Int16 index );
+	sal_Bool SAL_CALL isScriptFlagEnabled(const rtl::OUString& aName );
 };
 } } } }
 

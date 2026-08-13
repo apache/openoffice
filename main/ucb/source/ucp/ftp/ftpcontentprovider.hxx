@@ -76,9 +76,7 @@ namespace ftp {
 		// XContentProvider
 		virtual com::sun::star::uno::Reference< com::sun::star::ucb::XContent > SAL_CALL
 		queryContent(
-			const com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier >& Identifier )
-			throw( com::sun::star::ucb::IllegalIdentifierException,
-				   com::sun::star::uno::RuntimeException );
+			const com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier >& Identifier );
 
 		// FTPHandleProvider.
 
@@ -115,8 +113,7 @@ namespace ftp {
 		void init();
 
 		com::sun::star::uno::Reference<com::sun::star::ucb::XContentProvider>
-		getHttpProvider()
-			throw(com::sun::star::uno::RuntimeException);
+		getHttpProvider();
 
 	};  // end class FTPContentProvider
 

@@ -136,7 +136,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+		virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XEnumeration
@@ -157,7 +157,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 						(List is empty and there are no accessible elements ...)
 		*//*-*****************************************************************************************************/
 
-    	virtual sal_Bool SAL_CALL hasMoreElements() throw( css::uno::RuntimeException );
+    	virtual sal_Bool SAL_CALL hasMoreElements();
 
 		/*-****************************************************************************************************//**
 			@short		give the next element, if some exist
@@ -171,9 +171,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 			@onerror	If end of enumeration is arrived or there are no elements in list => a NoSuchElementException is thrown.
 		*//*-*****************************************************************************************************/
 
-    	virtual css::uno::Any SAL_CALL nextElement() throw(	css::container::NoSuchElementException	,
-							 								css::lang::WrappedTargetException		,
-															css::uno::RuntimeException				);
+    	virtual css::uno::Any SAL_CALL nextElement();
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

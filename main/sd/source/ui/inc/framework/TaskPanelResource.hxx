@@ -69,8 +69,8 @@ public:
     virtual void SAL_CALL disposing (void);
 
     // XResource
-    virtual cssu::Reference<cssdf::XResourceId> SAL_CALL getResourceId (void) throw (cssu::RuntimeException);
-    virtual sal_Bool SAL_CALL isAnchorOnly () throw (cssu::RuntimeException);
+    virtual cssu::Reference<cssdf::XResourceId> SAL_CALL getResourceId (void);
+    virtual sal_Bool SAL_CALL isAnchorOnly ();
 
     ::Window* GetControl (void) const;
 

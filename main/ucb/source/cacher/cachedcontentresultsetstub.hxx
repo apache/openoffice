@@ -60,9 +60,7 @@ private:
 	impl_getCurrentRowContent(
 		com::sun::star::uno::Any& rRowContent,
 		com::sun::star::uno::Reference<
-			com::sun::star::sdbc::XRow > xRow )
-		throw ( com::sun::star::sdbc::SQLException
-			  , com::sun::star::uno::RuntimeException );
+			com::sun::star::sdbc::XRow > xRow );
 
 	sal_Int32 SAL_CALL
 	impl_getColumnCount();
@@ -71,26 +69,22 @@ private:
 	impl_getCurrentContentIdentifierString(
 			com::sun::star::uno::Any& rAny
 			, com::sun::star::uno::Reference<
-				com::sun::star::ucb::XContentAccess > xContentAccess )
-			throw ( com::sun::star::uno::RuntimeException );
+				com::sun::star::ucb::XContentAccess > xContentAccess );
 
 	void SAL_CALL
 	impl_getCurrentContentIdentifier(
 			com::sun::star::uno::Any& rAny
 			, com::sun::star::uno::Reference<
-				com::sun::star::ucb::XContentAccess > xContentAccess )
-			throw ( com::sun::star::uno::RuntimeException );
+				com::sun::star::ucb::XContentAccess > xContentAccess );
 
 	void SAL_CALL
 	impl_getCurrentContent(
 			com::sun::star::uno::Any& rAny
 			, com::sun::star::uno::Reference<
-				com::sun::star::ucb::XContentAccess > xContentAccess )
-			throw ( com::sun::star::uno::RuntimeException );
+				com::sun::star::ucb::XContentAccess > xContentAccess );
 
 	void SAL_CALL
-	impl_propagateFetchSizeAndDirection( sal_Int32 nFetchSize, sal_Bool bFetchDirection )
-		throw ( com::sun::star::uno::RuntimeException );
+	impl_propagateFetchSizeAndDirection( sal_Int32 nFetchSize, sal_Bool bFetchDirection );
 
 public:
 	CachedContentResultSetStub( com::sun::star::uno::Reference<
@@ -107,13 +101,10 @@ public:
 	// own inherited
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
-	impl_propertyChange( const com::sun::star::beans::PropertyChangeEvent& evt )
-		throw( com::sun::star::uno::RuntimeException );
+	impl_propertyChange( const com::sun::star::beans::PropertyChangeEvent& evt );
 
 	virtual void SAL_CALL
-	impl_vetoableChange( const com::sun::star::beans::PropertyChangeEvent& aEvent )
-		throw( com::sun::star::beans::PropertyVetoException,
-			   com::sun::star::uno::RuntimeException );
+	impl_vetoableChange( const com::sun::star::beans::PropertyChangeEvent& aEvent );
 	//-----------------------------------------------------------------
 	// XTypeProvider
 	//-----------------------------------------------------------------
@@ -129,26 +120,22 @@ public:
 
 	virtual com::sun::star::ucb::FetchResult SAL_CALL
 	fetch( sal_Int32 nRowStartPosition
-		, sal_Int32 nRowCount, sal_Bool bDirection )
-		throw( com::sun::star::uno::RuntimeException );
+		, sal_Int32 nRowCount, sal_Bool bDirection );
 
 	//-----------------------------------------------------------------
 	// XFetchProviderForContentAccess
 	//-----------------------------------------------------------------
 	virtual com::sun::star::ucb::FetchResult SAL_CALL
 		 fetchContentIdentifierStrings( sal_Int32 nRowStartPosition
-		, sal_Int32 nRowCount, sal_Bool bDirection )
-		throw( com::sun::star::uno::RuntimeException );
+		, sal_Int32 nRowCount, sal_Bool bDirection );
 
 	virtual com::sun::star::ucb::FetchResult SAL_CALL
 		 fetchContentIdentifiers( sal_Int32 nRowStartPosition
-		, sal_Int32 nRowCount, sal_Bool bDirection )
-		throw( com::sun::star::uno::RuntimeException );
+		, sal_Int32 nRowCount, sal_Bool bDirection );
 
 	virtual com::sun::star::ucb::FetchResult SAL_CALL
 		 fetchContents( sal_Int32 nRowStartPosition
-		, sal_Int32 nRowCount, sal_Bool bDirection )
-		throw( com::sun::star::uno::RuntimeException );
+		, sal_Int32 nRowCount, sal_Bool bDirection );
 };
 
 //=========================================================================
@@ -190,8 +177,7 @@ public:
 				com::sun::star::sdbc::XResultSet > SAL_CALL
 	createCachedContentResultSetStub(
 				const com::sun::star::uno::Reference<
-					com::sun::star::sdbc::XResultSet > & xSource )
-			throw( com::sun::star::uno::RuntimeException );
+					com::sun::star::sdbc::XResultSet > & xSource );
 };
 
 #endif

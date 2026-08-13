@@ -96,9 +96,9 @@ private:
     virtual String  getSelectedName( String& _out_rAliasName ) const;
     virtual bool    isLeafSelected() const;
     // OContainerListener
-    virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-	virtual void _elementRemoved( const  ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-	virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent );
+	virtual void _elementRemoved( const  ::com::sun::star::container::ContainerEvent& _rEvent );
+	virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent );
 };
 
 TableListFacade::~TableListFacade()
@@ -149,17 +149,17 @@ String TableListFacade::getSelectedName( String& _out_rAliasName ) const
     return aComposedName;
 }
 // -----------------------------------------------------------------------------
-void TableListFacade::_elementInserted( const container::ContainerEvent& /*_rEvent*/ )  throw(::com::sun::star::uno::RuntimeException)
+void TableListFacade::_elementInserted( const container::ContainerEvent& /*_rEvent*/ )
 {
     updateTableObjectList(m_bAllowViews);
 }
 // -----------------------------------------------------------------------------
-void TableListFacade::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void TableListFacade::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ )
 {
     updateTableObjectList(m_bAllowViews);
 }
 // -----------------------------------------------------------------------------
-void TableListFacade::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void TableListFacade::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ )
 {
 }
 //------------------------------------------------------------------------------
@@ -260,9 +260,9 @@ private:
     virtual String  getSelectedName( String& _out_rAliasName ) const;
     virtual bool    isLeafSelected() const;
     // OContainerListener
-    virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-	virtual void _elementRemoved( const  ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-	virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent );
+	virtual void _elementRemoved( const  ::com::sun::star::container::ContainerEvent& _rEvent );
+	virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent );
 };
 QueryListFacade::~QueryListFacade()
 {
@@ -270,19 +270,19 @@ QueryListFacade::~QueryListFacade()
         m_pContainerListener->dispose();
 }
 // -----------------------------------------------------------------------------
-void QueryListFacade::_elementInserted( const container::ContainerEvent& _rEvent )  throw(::com::sun::star::uno::RuntimeException)
+void QueryListFacade::_elementInserted( const container::ContainerEvent& _rEvent )
 {
     ::rtl::OUString sName;
     if ( _rEvent.Accessor >>= sName )
         m_rQueryList.InsertEntry( sName );
 }
 // -----------------------------------------------------------------------------
-void QueryListFacade::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void QueryListFacade::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ )
 {
     updateTableObjectList(true);
 }
 // -----------------------------------------------------------------------------
-void QueryListFacade::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void QueryListFacade::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ )
 {
 }
 

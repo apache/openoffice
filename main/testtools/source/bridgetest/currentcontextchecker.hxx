@@ -50,8 +50,7 @@ public:
         ::com::sun::star::uno::Reference<
             ::test::testtools::bridgetest::XCurrentContextChecker > const &
             other,
-        ::sal_Int32 setSteps, ::sal_Int32 checkSteps)
-        throw (::com::sun::star::uno::RuntimeException);
+        ::sal_Int32 setSteps, ::sal_Int32 checkSteps);
 
 private:
     CurrentContextChecker(CurrentContextChecker &); // not defined

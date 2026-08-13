@@ -74,7 +74,7 @@ sal_Int32 fillStructWithInitializer(
     const Reference< XInvocation2 > &inv,
     typelib_CompoundTypeDescription *pCompType,
     PyObject *initializer,
-    const Runtime &runtime) throw ( RuntimeException )
+    const Runtime &runtime)
 {
     sal_Int32 nIndex = 0;
     if( pCompType->pBaseTypeDescription )

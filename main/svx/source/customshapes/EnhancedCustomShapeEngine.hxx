@@ -88,33 +88,22 @@ public:
 	virtual void SAL_CALL	release() throw();
 
 	// XInitialization
-	virtual void SAL_CALL initialize( const SEQ( NMSP_UNO::Any )& aArguments )
-		throw ( NMSP_UNO::Exception, NMSP_UNO::RuntimeException );
+	virtual void SAL_CALL initialize( const SEQ( NMSP_UNO::Any )& aArguments );
 
 	// XServiceInfo
-	virtual rtl::OUString SAL_CALL getImplementationName()
-		throw ( NMSP_UNO::RuntimeException );
-	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& rServiceName )
-		throw ( NMSP_UNO::RuntimeException );
-	virtual SEQ( rtl::OUString ) SAL_CALL getSupportedServiceNames()
-		throw ( NMSP_UNO::RuntimeException );
+	virtual rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& rServiceName );
+	virtual SEQ( rtl::OUString ) SAL_CALL getSupportedServiceNames();
 
 	// XCustomShapeEngine
-	virtual REF( com::sun::star::drawing::XShape ) SAL_CALL render()
-		throw ( NMSP_UNO::RuntimeException );
-	virtual com::sun::star::awt::Rectangle SAL_CALL getTextBounds()
-		throw ( NMSP_UNO::RuntimeException );
-	virtual com::sun::star::drawing::PolyPolygonBezierCoords SAL_CALL getLineGeometry()
-		throw ( NMSP_UNO::RuntimeException );
-	virtual SEQ( REF( com::sun::star::drawing::XCustomShapeHandle ) ) SAL_CALL getInteraction()
-		throw ( NMSP_UNO::RuntimeException );
+	virtual REF( com::sun::star::drawing::XShape ) SAL_CALL render();
+	virtual com::sun::star::awt::Rectangle SAL_CALL getTextBounds();
+	virtual com::sun::star::drawing::PolyPolygonBezierCoords SAL_CALL getLineGeometry();
+	virtual SEQ( REF( com::sun::star::drawing::XCustomShapeHandle ) ) SAL_CALL getInteraction();
 };
 
-rtl::OUString EnhancedCustomShapeEngine_getImplementationName()
-	throw ( NMSP_UNO::RuntimeException );
-sal_Bool SAL_CALL EnhancedCustomShapeEngine_supportsService( const rtl::OUString& rServiceName )
-	throw( NMSP_UNO::RuntimeException );
-SEQ( rtl::OUString ) SAL_CALL EnhancedCustomShapeEngine_getSupportedServiceNames()
-	throw( NMSP_UNO::RuntimeException );
+rtl::OUString EnhancedCustomShapeEngine_getImplementationName();
+sal_Bool SAL_CALL EnhancedCustomShapeEngine_supportsService( const rtl::OUString& rServiceName );
+SEQ( rtl::OUString ) SAL_CALL EnhancedCustomShapeEngine_getSupportedServiceNames();
 
 #endif

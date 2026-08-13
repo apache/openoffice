@@ -154,7 +154,6 @@ void ConfigColorScheme::retrieveConfigColors()
 
 // ____ XColorScheme ____
 ::sal_Int32 SAL_CALL ConfigColorScheme::getColorByIndex( ::sal_Int32 nIndex )
-    throw (uno::RuntimeException)
 {
     if( m_bNeedsUpdate )
         retrieveConfigColors();

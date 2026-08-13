@@ -411,7 +411,6 @@ bool ONSSInitializer::initNSS( const css::uno::Reference< css::lang::XMultiServi
 }
 
 css::uno::Reference< css::xml::crypto::XDigestContext > SAL_CALL ONSSInitializer::getDigestContext( ::sal_Int32 nDigestID, const css::uno::Sequence< css::beans::NamedValue >& aParams )
-    throw (css::lang::IllegalArgumentException, css::uno::RuntimeException)
 {
     SECOidTag nNSSDigestID = SEC_OID_UNKNOWN;
     sal_Int32 nDigestLength = 0;
@@ -448,7 +447,6 @@ css::uno::Reference< css::xml::crypto::XDigestContext > SAL_CALL ONSSInitializer
 }
 
 css::uno::Reference< css::xml::crypto::XCipherContext > SAL_CALL ONSSInitializer::getCipherContext( ::sal_Int32 nCipherID, const css::uno::Sequence< ::sal_Int8 >& aKey, const css::uno::Sequence< ::sal_Int8 >& aInitializationVector, ::sal_Bool bEncryption, const css::uno::Sequence< css::beans::NamedValue >& aParams )
-    throw (css::lang::IllegalArgumentException, css::uno::RuntimeException)
 {
     CK_MECHANISM_TYPE nNSSCipherID = 0;
     bool bW3CPadding = false;
@@ -479,20 +477,17 @@ css::uno::Reference< css::xml::crypto::XCipherContext > SAL_CALL ONSSInitializer
 }
 
 rtl::OUString ONSSInitializer_getImplementationName ()
-    throw (cssu::RuntimeException)
 {
 
     return rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
 sal_Bool SAL_CALL ONSSInitializer_supportsService( const rtl::OUString& ServiceName )
-    throw (cssu::RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( NSS_SERVICE_NAME ));
 }
 
 cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer_getSupportedServiceNames(  )
-    throw (cssu::RuntimeException)
 {
     cssu::Sequence < rtl::OUString > aRet(1);
     rtl::OUString* pArray = aRet.getArray();
@@ -501,24 +496,20 @@ cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer_getSupportedServiceName
 }
 
 cssu::Reference< cssu::XInterface > SAL_CALL ONSSInitializer_createInstance( const cssu::Reference< cssl::XMultiServiceFactory > & rSMgr)
-    throw( cssu::Exception )
 {
     return (cppu::OWeakObject*) new ONSSInitializer( rSMgr );
 }
 
 /* XServiceInfo */
 rtl::OUString SAL_CALL ONSSInitializer::getImplementationName()
-    throw (cssu::RuntimeException)
 {
     return ONSSInitializer_getImplementationName();
 }
 sal_Bool SAL_CALL ONSSInitializer::supportsService( const rtl::OUString& rServiceName )
-    throw (cssu::RuntimeException)
 {
     return ONSSInitializer_supportsService( rServiceName );
 }
 cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer::getSupportedServiceNames(  )
-    throw (cssu::RuntimeException)
 {
     return ONSSInitializer_getSupportedServiceNames();
 }

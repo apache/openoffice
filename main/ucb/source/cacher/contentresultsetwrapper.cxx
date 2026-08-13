@@ -179,7 +179,6 @@ void SAL_CALL ContentResultSetWrapper
 
 void SAL_CALL ContentResultSetWrapper
 ::impl_EnsureNotDisposed()
-	throw( DisposedException, RuntimeException )
 {
 	osl::Guard< osl::Mutex > aGuard( m_aMutex );
 	if( m_bDisposed )
@@ -250,8 +249,6 @@ void SAL_CALL ContentResultSetWrapper
 
 void SAL_CALL ContentResultSetWrapper
 	::impl_notifyVetoableChangeListeners( const PropertyChangeEvent& rEvt )
-	throw( PropertyVetoException,
-		   RuntimeException )
 {
 	{
 		osl::Guard< osl::Mutex > aGuard( m_aMutex );
@@ -363,7 +360,7 @@ QUERYINTERFACE_IMPL_END
 //--------------------------------------------------------------------------
 // virtual
 void SAL_CALL ContentResultSetWrapper
-	::dispose() throw( RuntimeException )
+	::dispose()
 {
 	impl_EnsureNotDisposed();
 
@@ -438,7 +435,6 @@ void SAL_CALL ContentResultSetWrapper
 // virtual
 void SAL_CALL ContentResultSetWrapper
 	::addEventListener(	const Reference< XEventListener >& Listener )
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	osl::Guard< osl::Mutex > aGuard( m_aMutex );
@@ -454,7 +450,6 @@ void SAL_CALL ContentResultSetWrapper
 // virtual
 void SAL_CALL ContentResultSetWrapper
 	::removeEventListener( const Reference< XEventListener >& Listener )
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	osl::Guard< osl::Mutex > aGuard( m_aMutex );
@@ -469,8 +464,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 void SAL_CALL ContentResultSetWrapper
 	::close()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	dispose();
@@ -482,8 +475,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 Reference< XResultSetMetaData > SAL_CALL ContentResultSetWrapper
 	::getMetaData()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -514,7 +505,7 @@ Reference< XResultSetMetaData > SAL_CALL ContentResultSetWrapper
 //--------------------------------------------------------------------------
 // virtual
 Reference< XPropertySetInfo > SAL_CALL ContentResultSetWrapper
-	::getPropertySetInfo() throw( RuntimeException )
+	::getPropertySetInfo()
 {
 	impl_EnsureNotDisposed();
 	{
@@ -529,11 +520,6 @@ Reference< XPropertySetInfo > SAL_CALL ContentResultSetWrapper
 // virtual
 void SAL_CALL ContentResultSetWrapper
 	::setPropertyValue( const OUString& rPropertyName, const Any& rValue )
-	throw( UnknownPropertyException,
-		   PropertyVetoException,
-		   IllegalArgumentException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	impl_init_xPropertySetOrigin();
@@ -549,9 +535,6 @@ void SAL_CALL ContentResultSetWrapper
 // virtual
 Any SAL_CALL ContentResultSetWrapper
 	::getPropertyValue( const OUString& rPropertyName )
-	throw( UnknownPropertyException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	impl_init_xPropertySetOrigin();
@@ -569,9 +552,6 @@ void SAL_CALL ContentResultSetWrapper
 	::addPropertyChangeListener(
 			const OUString& aPropertyName,
 			const Reference< XPropertyChangeListener >& xListener )
-	throw( UnknownPropertyException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -621,9 +601,6 @@ void SAL_CALL ContentResultSetWrapper
 	::addVetoableChangeListener(
 			const OUString& rPropertyName,
 			const Reference< XVetoableChangeListener >& xListener )
-	throw( UnknownPropertyException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -672,9 +649,6 @@ void SAL_CALL ContentResultSetWrapper
 	::removePropertyChangeListener(
 			const OUString& rPropertyName,
 			const Reference< XPropertyChangeListener >& xListener )
-	throw( UnknownPropertyException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -731,9 +705,6 @@ void SAL_CALL ContentResultSetWrapper
 	::removeVetoableChangeListener(
 			const OUString& rPropertyName,
 			const Reference< XVetoableChangeListener >& xListener )
-	throw( UnknownPropertyException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -791,7 +762,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 void SAL_CALL ContentResultSetWrapper
 	::impl_disposing( const EventObject& )
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -816,7 +786,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 void SAL_CALL ContentResultSetWrapper
 	::impl_propertyChange( const PropertyChangeEvent& rEvt )
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -829,8 +798,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 void SAL_CALL ContentResultSetWrapper
 	::impl_vetoableChange( const PropertyChangeEvent& rEvt )
-	throw( PropertyVetoException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -848,7 +815,6 @@ void SAL_CALL ContentResultSetWrapper
 // virtual
 OUString SAL_CALL ContentResultSetWrapper
 	::queryContentIdentifierString()
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	impl_init_xContentAccessOrigin();
@@ -864,7 +830,6 @@ OUString SAL_CALL ContentResultSetWrapper
 // virtual
 Reference< XContentIdentifier > SAL_CALL ContentResultSetWrapper
 	::queryContentIdentifier()
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	impl_init_xContentAccessOrigin();
@@ -880,7 +845,6 @@ Reference< XContentIdentifier > SAL_CALL ContentResultSetWrapper
 // virtual
 Reference< XContent > SAL_CALL ContentResultSetWrapper
 	::queryContent()
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	impl_init_xContentAccessOrigin();
@@ -899,8 +863,6 @@ Reference< XContent > SAL_CALL ContentResultSetWrapper
 
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::next()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -915,8 +877,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::previous()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -931,8 +891,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::absolute( sal_Int32 row )
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -947,8 +905,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::relative( sal_Int32 rows )
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -964,8 +920,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::first()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -980,8 +934,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::last()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -996,8 +948,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 void SAL_CALL ContentResultSetWrapper
 	::beforeFirst()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1012,8 +962,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 void SAL_CALL ContentResultSetWrapper
 	::afterLast()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1028,8 +976,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::isAfterLast()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1044,8 +990,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::isBeforeFirst()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1060,8 +1004,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::isFirst()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1076,8 +1018,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::isLast()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1093,8 +1033,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Int32 SAL_CALL ContentResultSetWrapper
 	::getRow()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1109,8 +1047,6 @@ sal_Int32 SAL_CALL ContentResultSetWrapper
 //virtual
 void SAL_CALL ContentResultSetWrapper
 	::refreshRow()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1125,8 +1061,6 @@ void SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::rowUpdated()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1140,8 +1074,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::rowInserted()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1156,8 +1088,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::rowDeleted()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1172,8 +1102,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 Reference< XInterface > SAL_CALL ContentResultSetWrapper
 	::getStatement()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	//@todo ?return anything
@@ -1197,8 +1125,6 @@ return m_xRowOrigin->getXXX( columnIndex );
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::wasNull()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	impl_init_xRowOrigin();
@@ -1213,8 +1139,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 rtl::OUString SAL_CALL ContentResultSetWrapper
 	::getString( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getString );
 }
@@ -1222,8 +1146,6 @@ rtl::OUString SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Bool SAL_CALL ContentResultSetWrapper
 	::getBoolean( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBoolean );
 }
@@ -1231,8 +1153,6 @@ sal_Bool SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Int8 SAL_CALL ContentResultSetWrapper
 	::getByte( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getByte );
 }
@@ -1240,8 +1160,6 @@ sal_Int8 SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Int16 SAL_CALL ContentResultSetWrapper
 	::getShort( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getShort );
 }
@@ -1249,8 +1167,6 @@ sal_Int16 SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Int32 SAL_CALL ContentResultSetWrapper
 	::getInt( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getInt );
 }
@@ -1258,8 +1174,6 @@ sal_Int32 SAL_CALL ContentResultSetWrapper
 //virtual
 sal_Int64 SAL_CALL ContentResultSetWrapper
 	::getLong( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getLong );
 }
@@ -1267,8 +1181,6 @@ sal_Int64 SAL_CALL ContentResultSetWrapper
 //virtual
 float SAL_CALL ContentResultSetWrapper
 	::getFloat( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getFloat );
 }
@@ -1276,8 +1188,6 @@ float SAL_CALL ContentResultSetWrapper
 //virtual
 double SAL_CALL ContentResultSetWrapper
 	::getDouble( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getDouble );
 }
@@ -1285,8 +1195,6 @@ double SAL_CALL ContentResultSetWrapper
 //virtual
 Sequence< sal_Int8 > SAL_CALL ContentResultSetWrapper
 	::getBytes( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBytes );
 }
@@ -1294,8 +1202,6 @@ Sequence< sal_Int8 > SAL_CALL ContentResultSetWrapper
 //virtual
 Date SAL_CALL ContentResultSetWrapper
 	::getDate( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getDate );
 }
@@ -1303,8 +1209,6 @@ Date SAL_CALL ContentResultSetWrapper
 //virtual
 Time SAL_CALL ContentResultSetWrapper
 	::getTime( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getTime );
 }
@@ -1312,8 +1216,6 @@ Time SAL_CALL ContentResultSetWrapper
 //virtual
 DateTime SAL_CALL ContentResultSetWrapper
 	::getTimestamp( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getTimestamp );
 }
@@ -1322,8 +1224,6 @@ DateTime SAL_CALL ContentResultSetWrapper
 Reference< com::sun::star::io::XInputStream >
 	SAL_CALL ContentResultSetWrapper
 	::getBinaryStream( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBinaryStream );
 }
@@ -1332,8 +1232,6 @@ Reference< com::sun::star::io::XInputStream >
 Reference< com::sun::star::io::XInputStream >
 	SAL_CALL ContentResultSetWrapper
 	::getCharacterStream( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getCharacterStream );
 }
@@ -1343,8 +1241,6 @@ Any SAL_CALL ContentResultSetWrapper
 	::getObject( sal_Int32 columnIndex,
 		   const Reference<
 			com::sun::star::container::XNameAccess >& typeMap )
-	throw( SQLException,
-		   RuntimeException )
 {
 	//if you change this macro please pay attention to
 	//define XROW_GETXXX, where this is similar implemented
@@ -1362,8 +1258,6 @@ Any SAL_CALL ContentResultSetWrapper
 //virtual
 Reference< XRef > SAL_CALL ContentResultSetWrapper
 	::getRef( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getRef );
 }
@@ -1371,8 +1265,6 @@ Reference< XRef > SAL_CALL ContentResultSetWrapper
 //virtual
 Reference< XBlob > SAL_CALL ContentResultSetWrapper
 	::getBlob( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBlob );
 }
@@ -1380,8 +1272,6 @@ Reference< XBlob > SAL_CALL ContentResultSetWrapper
 //virtual
 Reference< XClob > SAL_CALL ContentResultSetWrapper
 	::getClob( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getClob );
 }
@@ -1389,8 +1279,6 @@ Reference< XClob > SAL_CALL ContentResultSetWrapper
 //virtual
 Reference< XArray > SAL_CALL ContentResultSetWrapper
 	::getArray( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getArray );
 }
@@ -1433,7 +1321,6 @@ QUERYINTERFACE_IMPL_END
 //virtual
 void SAL_CALL ContentResultSetWrapperListener
 	::disposing( const EventObject& rEventObject )
-	throw( RuntimeException )
 {
 	if( m_pOwner )
 		m_pOwner->impl_disposing( rEventObject );
@@ -1446,7 +1333,6 @@ void SAL_CALL ContentResultSetWrapperListener
 //virtual
 void SAL_CALL ContentResultSetWrapperListener
 	::propertyChange( const PropertyChangeEvent& rEvt )
-	throw( RuntimeException )
 {
 	if( m_pOwner )
 		m_pOwner->impl_propertyChange( rEvt );
@@ -1458,8 +1344,6 @@ void SAL_CALL ContentResultSetWrapperListener
 //virtual
 void SAL_CALL ContentResultSetWrapperListener
 	::vetoableChange( const PropertyChangeEvent& rEvt )
-	throw( PropertyVetoException,
-		   RuntimeException )
 {
 	if( m_pOwner )
 		m_pOwner->impl_vetoableChange( rEvt );

@@ -64,7 +64,7 @@ namespace frm
         virtual bool    implTypedNotify(
                             const ::com::sun::star::uno::Reference< ListenerClass >& _rxListener,
                             const EventClass& _rEvent
-                        )   SAL_THROW( ( ::com::sun::star::uno::Exception ) ) = 0;
+                        ) = 0;
 
     public:
         inline bool notify()
@@ -125,7 +125,7 @@ namespace frm
         virtual bool    implTypedNotify(
                             const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener >& _rxListener,
                             const ::com::sun::star::lang::EventObject& _rEvent
-                        )   SAL_THROW( ( ::com::sun::star::uno::Exception ) );
+                        );
     };
 
 //........................................................................

@@ -78,16 +78,16 @@ public:
 	virtual									~ScannerManager();
 
 	// XInterface
-	virtual ANY SAL_CALL					queryInterface( const Type & rType ) throw( RuntimeException );
+	virtual ANY SAL_CALL					queryInterface( const Type & rType );
     virtual void SAL_CALL					acquire() throw();
     virtual void SAL_CALL					release() throw();
 
 	// XScannerManager
 	virtual SEQ( ScannerContext ) SAL_CALL	getAvailableScanners() throw();
-	virtual sal_Bool SAL_CALL					configureScanner( ScannerContext& scanner_context ) throw( ScannerException );
-	virtual void SAL_CALL					startScan( const ScannerContext& scanner_context, const REF( com::sun::star::lang::XEventListener )& rxListener ) throw( ScannerException );
-	virtual ScanError SAL_CALL				getError( const ScannerContext& scanner_context ) throw( ScannerException );
-	virtual REF( AWT::XBitmap ) SAL_CALL	getBitmap( const ScannerContext& scanner_context ) throw( ScannerException );
+	virtual sal_Bool SAL_CALL					configureScanner( ScannerContext& scanner_context );
+	virtual void SAL_CALL					startScan( const ScannerContext& scanner_context, const REF( com::sun::star::lang::XEventListener )& rxListener );
+	virtual ScanError SAL_CALL				getError( const ScannerContext& scanner_context );
+	virtual REF( AWT::XBitmap ) SAL_CALL	getBitmap( const ScannerContext& scanner_context );
 
 	// XBitmap
 	virtual AWT::Size SAL_CALL				getSize() throw();
@@ -107,6 +107,6 @@ public:
 
 // -----------------------------------------------------------------------------
 
-REF( XInterface ) SAL_CALL ScannerManager_CreateInstance( const REF( com::sun::star::lang::XMultiServiceFactory )& rxFactory ) throw( Exception );
+REF( XInterface ) SAL_CALL ScannerManager_CreateInstance( const REF( com::sun::star::lang::XMultiServiceFactory )& rxFactory );
 
 #endif

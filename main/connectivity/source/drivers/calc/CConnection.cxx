@@ -72,7 +72,6 @@ OCalcConnection::~OCalcConnection()
 }
 
 void OCalcConnection::construct(const ::rtl::OUString& url,const Sequence< PropertyValue >& info)
-	throw(SQLException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcConnection::construct" );
 	//	open file
@@ -211,7 +210,7 @@ IMPLEMENT_SERVICE_INFO(OCalcConnection, "com.sun.star.sdbc.drivers.calc.Connecti
 
 // --------------------------------------------------------------------------------
 
-Reference< XDatabaseMetaData > SAL_CALL OCalcConnection::getMetaData(  ) throw(SQLException, RuntimeException)
+Reference< XDatabaseMetaData > SAL_CALL OCalcConnection::getMetaData(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcConnection::getMetaData" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -246,7 +245,7 @@ Reference< XDatabaseMetaData > SAL_CALL OCalcConnection::getMetaData(  ) throw(S
 
 // --------------------------------------------------------------------------------
 
-Reference< XStatement > SAL_CALL OCalcConnection::createStatement(  ) throw(SQLException, RuntimeException)
+Reference< XStatement > SAL_CALL OCalcConnection::createStatement(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcConnection::createStatement" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -261,7 +260,6 @@ Reference< XStatement > SAL_CALL OCalcConnection::createStatement(  ) throw(SQLE
 // --------------------------------------------------------------------------------
 
 Reference< XPreparedStatement > SAL_CALL OCalcConnection::prepareStatement( const ::rtl::OUString& sql )
-	throw(SQLException, RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcConnection::prepareStatement" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -278,7 +276,6 @@ Reference< XPreparedStatement > SAL_CALL OCalcConnection::prepareStatement( cons
 // --------------------------------------------------------------------------------
 
 Reference< XPreparedStatement > SAL_CALL OCalcConnection::prepareCall( const ::rtl::OUString& /*sql*/ )
-	throw(SQLException, RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcConnection::prepareCall" );
 	::osl::MutexGuard aGuard( m_aMutex );

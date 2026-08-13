@@ -146,11 +146,9 @@ class SidebarTxtControlAccessibleContext : public VCLXAccessibleComponent
         virtual ~SidebarTxtControlAccessibleContext();
 
         virtual sal_Int32 SAL_CALL
-                getAccessibleChildCount()
-                throw (::com::sun::star::uno::RuntimeException);
+                getAccessibleChildCount();
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL
-                getAccessibleChild( sal_Int32 i )
-                throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+                getAccessibleChild( sal_Int32 i );
 
         using WeakAggComponentImplHelperBase::addEventListener;
         using WeakAggComponentImplHelperBase::removeEventListener;
@@ -158,13 +156,11 @@ class SidebarTxtControlAccessibleContext : public VCLXAccessibleComponent
         virtual void SAL_CALL
                 addEventListener (
                     const ::com::sun::star::uno::Reference<
-                        ::com::sun::star::accessibility::XAccessibleEventListener >& xListener)
-                throw (::com::sun::star::uno::RuntimeException);
+                        ::com::sun::star::accessibility::XAccessibleEventListener >& xListener);
         virtual void SAL_CALL
                 removeEventListener (
                     const ::com::sun::star::uno::Reference<
-                        ::com::sun::star::accessibility::XAccessibleEventListener >& xListener)
-                throw (::com::sun::star::uno::RuntimeException);
+                        ::com::sun::star::accessibility::XAccessibleEventListener >& xListener);
 
     protected:
         virtual void ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent );
@@ -202,7 +198,6 @@ void SidebarTxtControlAccessibleContext::defunc()
 }
 
 sal_Int32 SAL_CALL SidebarTxtControlAccessibleContext::getAccessibleChildCount()
-    throw (::com::sun::star::uno::RuntimeException)
 {
     vos::OGuard aGuard( maMutex );
 
@@ -217,7 +212,6 @@ sal_Int32 SAL_CALL SidebarTxtControlAccessibleContext::getAccessibleChildCount()
 }
 
 css::uno::Reference< css::accessibility::XAccessible > SAL_CALL SidebarTxtControlAccessibleContext::getAccessibleChild( sal_Int32 i )
-    throw ( css::lang::IndexOutOfBoundsException, css::uno::RuntimeException )
 {
     vos::OGuard aGuard( maMutex );
 
@@ -233,7 +227,6 @@ css::uno::Reference< css::accessibility::XAccessible > SAL_CALL SidebarTxtContro
 
 void SAL_CALL SidebarTxtControlAccessibleContext::addEventListener (
     const css::uno::Reference< css::accessibility::XAccessibleEventListener >& xListener)
-    throw (css::uno::RuntimeException)
 {
     vos::OGuard aGuard( maMutex );
 
@@ -245,7 +238,6 @@ void SAL_CALL SidebarTxtControlAccessibleContext::addEventListener (
 
 void SAL_CALL SidebarTxtControlAccessibleContext::removeEventListener (
     const css::uno::Reference< css::accessibility::XAccessibleEventListener >& xListener)
-    throw (css::uno::RuntimeException)
 {
     vos::OGuard aGuard( maMutex );
 

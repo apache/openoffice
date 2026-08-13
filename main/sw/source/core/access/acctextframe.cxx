@@ -159,7 +159,6 @@ void SwAccessibleTextFrame::Modify( const SfxPoolItem* pOld, const SfxPoolItem *
 
 com::sun::star::uno::Any SAL_CALL
     SwAccessibleTextFrame::queryInterface (const com::sun::star::uno::Type & rType)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::com::sun::star::uno::Any aReturn = SwAccessibleContext::queryInterface (rType);
     if ( ! aReturn.hasValue())
@@ -192,14 +191,12 @@ void SAL_CALL
 
 //--------------------------------------------------------------------------------
 void SAL_CALL SwAccessibleTextFrame::selectAccessibleChild( sal_Int32 )
-	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     DBG_ASSERT( false, "<SwAccessibleTextFrame::selectAccessibleChild( sal_Int32 )> - missing implementation" );
 }
 
 //----------------------------------------------------------------------------------
 sal_Bool SAL_CALL SwAccessibleTextFrame::isAccessibleChildSelected( sal_Int32 nChildIndex )
-	throw (lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
 	uno::Reference<XAccessible> xAcc = getAccessibleChild( nChildIndex );
 	uno::Reference<XAccessibleContext> xContext;
@@ -224,21 +221,18 @@ sal_Bool SAL_CALL SwAccessibleTextFrame::isAccessibleChildSelected( sal_Int32 nC
 
 //---------------------------------------------------------------------
 void SAL_CALL SwAccessibleTextFrame::clearAccessibleSelection(  )
-	throw ( uno::RuntimeException )
 {
     DBG_ASSERT( false, "<SwAccessibleTextFrame::clearAccessibleSelection(  )> - missing implementation" );
 }
 
 //-------------------------------------------------------------------------
 void SAL_CALL SwAccessibleTextFrame::selectAllAccessibleChildren(  )
-	throw ( uno::RuntimeException )
 {
     DBG_ASSERT( false, "<SwAccessibleTextFrame::selectAllAccessibleChildren(  )> - missing implementation" );
 }
 
 //----------------------------------------------------------------------------
 sal_Int32 SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChildCount()
-	throw ( uno::RuntimeException )
 {
 	sal_Int32 nCount = 0;
 	sal_Int32 TotalCount = getAccessibleChildCount();
@@ -250,7 +244,6 @@ sal_Int32 SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChildCount()
 
 //--------------------------------------------------------------------------------------
 uno::Reference<XAccessible> SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
-	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if ( nSelectedChildIndex > getSelectedAccessibleChildCount() )
 		throw lang::IndexOutOfBoundsException();
@@ -267,14 +260,12 @@ uno::Reference<XAccessible> SAL_CALL SwAccessibleTextFrame::getSelectedAccessibl
 
 //----------------------------------------------------------------------------------
 void SAL_CALL SwAccessibleTextFrame::deselectAccessibleChild( sal_Int32 )
-	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     DBG_ASSERT( false, "<SwAccessibleTextFrame::selectAllAccessibleChildren( sal_Int32 )> - missing implementation" );
 }
 
 // --> OD 2009-07-14 #i73249#
 OUString SAL_CALL SwAccessibleTextFrame::getAccessibleName (void)
-        throw (uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -290,7 +281,6 @@ OUString SAL_CALL SwAccessibleTextFrame::getAccessibleName (void)
 // <--
 
 OUString SAL_CALL SwAccessibleTextFrame::getAccessibleDescription (void)
-        throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -312,14 +302,12 @@ OUString SAL_CALL SwAccessibleTextFrame::getAccessibleDescription (void)
 }
 
 OUString SAL_CALL SwAccessibleTextFrame::getImplementationName()
-        throw( uno::RuntimeException )
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM(sImplementationName));
 }
 
 sal_Bool SAL_CALL SwAccessibleTextFrame::supportsService(
         const OUString& sTestServiceName)
-    throw (uno::RuntimeException)
 {
 	return sTestServiceName.equalsAsciiL( sServiceName,
 										  sizeof(sServiceName)-1 ) ||
@@ -328,7 +316,6 @@ sal_Bool SAL_CALL SwAccessibleTextFrame::supportsService(
 }
 
 uno::Sequence< OUString > SAL_CALL SwAccessibleTextFrame::getSupportedServiceNames()
-		throw( uno::RuntimeException )
 {
 	uno::Sequence< OUString > aRet(2);
 	OUString* pArray = aRet.getArray();
@@ -338,7 +325,6 @@ uno::Sequence< OUString > SAL_CALL SwAccessibleTextFrame::getSupportedServiceNam
 }
 
 uno::Sequence< sal_Int8 > SAL_CALL SwAccessibleTextFrame::getImplementationId()
-		throw(uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static uno::Sequence< sal_Int8 > aId( 16 );
@@ -380,7 +366,6 @@ AccessibleRelation SwAccessibleTextFrame::makeRelation( sal_Int16 nType, const S
 
 
 uno::Reference<XAccessibleRelationSet> SAL_CALL SwAccessibleTextFrame::getAccessibleRelationSet( )
-    throw ( uno::RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
     CHECK_FOR_DEFUNC( XAccessibleContext );

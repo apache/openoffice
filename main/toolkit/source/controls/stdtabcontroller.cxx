@@ -164,7 +164,7 @@ void StdTabController::ImplActivateControl( sal_Bool bFirst ) const
 }
 
 // XInterface
-Any StdTabController::queryAggregation( const Type & rType ) throw(RuntimeException)
+Any StdTabController::queryAggregation( const Type & rType )
 {
 	Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( XTabController*, this ),
@@ -179,35 +179,35 @@ IMPL_XTYPEPROVIDER_START( StdTabController )
 	getCppuType( ( Reference< XServiceInfo>* ) NULL )
 IMPL_XTYPEPROVIDER_END
 
-void StdTabController::setModel( const Reference< XTabControllerModel >& Model ) throw(RuntimeException)
+void StdTabController::setModel( const Reference< XTabControllerModel >& Model )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	mxModel = Model;
 }
 
-Reference< XTabControllerModel > StdTabController::getModel(  ) throw(RuntimeException)
+Reference< XTabControllerModel > StdTabController::getModel(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	return mxModel;
 }
 
-void StdTabController::setContainer( const Reference< XControlContainer >& Container ) throw(RuntimeException)
+void StdTabController::setContainer( const Reference< XControlContainer >& Container )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	mxControlContainer = Container;
 }
 
-Reference< XControlContainer > StdTabController::getContainer(  ) throw(RuntimeException)
+Reference< XControlContainer > StdTabController::getContainer(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	return mxControlContainer;
 }
 
-Sequence< Reference< XControl > > StdTabController::getControls(  ) throw(RuntimeException)
+Sequence< Reference< XControl > > StdTabController::getControls(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -233,7 +233,7 @@ Sequence< Reference< XControl > > StdTabController::getControls(  ) throw(Runtim
 	return aSeq;
 }
 
-void StdTabController::autoTabOrder(  ) throw(RuntimeException)
+void StdTabController::autoTabOrder(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -298,7 +298,7 @@ void StdTabController::autoTabOrder(  ) throw(RuntimeException)
 	mxModel->setControlModels( aNewSeq );
 }
 
-void StdTabController::activateTabOrder(  ) throw(RuntimeException)
+void StdTabController::activateTabOrder(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -354,14 +354,14 @@ void StdTabController::activateTabOrder(  ) throw(RuntimeException)
 	}
 }
 
-void StdTabController::activateFirst(  ) throw(RuntimeException)
+void StdTabController::activateFirst(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	ImplActivateControl( sal_True );
 }
 
-void StdTabController::activateLast(  ) throw(RuntimeException)
+void StdTabController::activateLast(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 

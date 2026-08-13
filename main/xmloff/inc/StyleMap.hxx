@@ -84,7 +84,7 @@ public:
 
 	// XUnoTunnel
     virtual sal_Int64 SAL_CALL getSomething(
-				const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+				const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 };
 
 #endif	//  _XMLOFF_STYLEMAP_HXX

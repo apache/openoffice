@@ -161,7 +161,6 @@ void ChildAccess::release() throw () {
 }
 
 css::uno::Reference< css::uno::XInterface > ChildAccess::getParent()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -170,7 +169,6 @@ css::uno::Reference< css::uno::XInterface > ChildAccess::getParent()
 }
 
 void ChildAccess::setParent(css::uno::Reference< css::uno::XInterface > const &)
-    throw (css::lang::NoSupportException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -182,7 +180,6 @@ void ChildAccess::setParent(css::uno::Reference< css::uno::XInterface > const &)
 
 sal_Int64 ChildAccess::getSomething(
     css::uno::Sequence< sal_Int8 > const & aIdentifier)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -382,7 +379,6 @@ void ChildAccess::addSupportedServiceNames(
 }
 
 css::uno::Any ChildAccess::queryInterface(css::uno::Type const & aType)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);

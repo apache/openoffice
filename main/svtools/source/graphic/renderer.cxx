@@ -91,7 +91,6 @@ uno::Sequence< ::rtl::OUString > GraphicRendererVCL::getSupportedServiceNames_St
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL GraphicRendererVCL::queryAggregation( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
 	uno::Any aAny;
 
@@ -116,7 +115,6 @@ uno::Any SAL_CALL GraphicRendererVCL::queryAggregation( const uno::Type & rType 
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL GraphicRendererVCL::queryInterface( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
 }
@@ -140,7 +138,6 @@ void SAL_CALL GraphicRendererVCL::release()
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL GraphicRendererVCL::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
 }
@@ -148,7 +145,6 @@ void SAL_CALL GraphicRendererVCL::release()
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL GraphicRendererVCL::supportsService( const rtl::OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString >	aSNL( getSupportedServiceNames() );
     const ::rtl::OUString*				pArray = aSNL.getConstArray();
@@ -163,7 +159,6 @@ sal_Bool SAL_CALL GraphicRendererVCL::supportsService( const rtl::OUString& Serv
 // ------------------------------------------------------------------------------
 
 uno::Sequence< rtl::OUString > SAL_CALL GraphicRendererVCL::getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	return getSupportedServiceNames_Static();
 }
@@ -171,7 +166,6 @@ uno::Sequence< rtl::OUString > SAL_CALL GraphicRendererVCL::getSupportedServiceN
 // ------------------------------------------------------------------------------
 
 uno::Sequence< uno::Type > SAL_CALL GraphicRendererVCL::getTypes()
-	throw( uno::RuntimeException )
 {
 	uno::Sequence< uno::Type >	aTypes( 7 );
 	uno::Type* 					pTypes = aTypes.getArray();
@@ -190,7 +184,6 @@ uno::Sequence< uno::Type > SAL_CALL GraphicRendererVCL::getTypes()
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL GraphicRendererVCL::getImplementationId()
-	throw( uno::RuntimeException )
 {
 	vos::OGuard 						aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
@@ -229,10 +222,6 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicRendererVCL::getImplementationId()
 // ------------------------------------------------------------------------------
 
 void GraphicRendererVCL::_setPropertyValues( const comphelper::PropertyMapEntry** ppEntries, const uno::Any* pValues )
-	throw( beans::UnknownPropertyException,
-		   beans::PropertyVetoException,
-		   lang::IllegalArgumentException,
-	   	   lang::WrappedTargetException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -284,7 +273,6 @@ void GraphicRendererVCL::_setPropertyValues( const comphelper::PropertyMapEntry*
 // ------------------------------------------------------------------------------
 
 void GraphicRendererVCL::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, uno::Any* pValues )
-	throw( beans::UnknownPropertyException, lang::WrappedTargetException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -323,7 +311,6 @@ void GraphicRendererVCL::_getPropertyValues( const comphelper::PropertyMapEntry*
 // ------------------------------------------------------------------------------
 
 void SAL_CALL GraphicRendererVCL::render( const uno::Reference< graphic::XGraphic >& rxGraphic )
-	throw (uno::RuntimeException)
 {
 	if( mpOutDev && mxDevice.is() && rxGraphic.is() )
 	{

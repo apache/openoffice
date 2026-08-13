@@ -54,11 +54,11 @@ class SAL_NO_VTABLE ImplHelper##N \
 { \
 	static class_data##N s_cd; \
 public: \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 		{ return ImplHelper_query( rType, (class_data *)&s_cd, this ); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 		{ return ImplHelper_getTypes( (class_data *)&s_cd ); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return ImplHelper_getImplementationId( (class_data *)&s_cd ); } \
 }; \
 template< __CLASS_IFC##N > \
@@ -72,15 +72,15 @@ class SAL_NO_VTABLE WeakImplHelper##N \
 { \
 	static class_data##N s_cd; \
 public: \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 		{ return WeakImplHelper_query( rType, (class_data *)&s_cd, this, (OWeakObject *)this ); } \
 	virtual void SAL_CALL acquire() throw () \
 		{ OWeakObject::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ OWeakObject::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 		{ return WeakImplHelper_getTypes( (class_data *)&s_cd ); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return ImplHelper_getImplementationId( (class_data *)&s_cd ); } \
 }; \
 template< __CLASS_IFC##N > \
@@ -94,17 +94,17 @@ class SAL_NO_VTABLE WeakAggImplHelper##N \
 { \
 	static class_data##N s_cd; \
 public: \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 		{ return OWeakAggObject::queryInterface( rType ); } \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) \
 		{ return WeakAggImplHelper_queryAgg( rType, (class_data *)&s_cd, this, (OWeakAggObject *)this ); } \
 	virtual void SAL_CALL acquire() throw () \
 		{ OWeakAggObject::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ OWeakAggObject::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 		{ return WeakAggImplHelper_getTypes( (class_data *)&s_cd ); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return ImplHelper_getImplementationId( (class_data *)&s_cd ); } \
 }; \
 template< __CLASS_IFC##N > \
@@ -117,7 +117,7 @@ class SAL_NO_VTABLE ImplInheritanceHelper##N \
 { \
 	static class_data##N s_cd; \
 public: \
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
     { \
         ::com::sun::star::uno::Any aRet( ImplHelper_queryNoXInterface( rType, (class_data *)&s_cd, this ) ); \
         if (aRet.hasValue()) \
@@ -128,9 +128,9 @@ public: \
 		{ BaseClass::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ BaseClass::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 	    { return ImplInhHelper_getTypes( (class_data *)&s_cd, BaseClass::getTypes() ); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return ImplHelper_getImplementationId( (class_data *)&s_cd ); } \
 }; \
 template< class BaseClass, __CLASS_IFC##N > \
@@ -143,9 +143,9 @@ class SAL_NO_VTABLE AggImplInheritanceHelper##N \
 { \
 	static class_data##N s_cd; \
 public: \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 		{ return BaseClass::queryInterface( rType ); } \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) \
     { \
         ::com::sun::star::uno::Any aRet( ImplHelper_queryNoXInterface( rType, (class_data *)&s_cd, this ) ); \
         if (aRet.hasValue()) \
@@ -156,9 +156,9 @@ public: \
 		{ BaseClass::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ BaseClass::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 	    { return ImplInhHelper_getTypes( (class_data *)&s_cd, BaseClass::getTypes() ); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return ImplHelper_getImplementationId( (class_data *)&s_cd ); } \
 }; \
 template< class BaseClass, __CLASS_IFC##N > \
@@ -181,15 +181,15 @@ public: \
 	inline WeakComponentImplHelper##N( ::osl::Mutex & rMutex ) SAL_THROW( () ) \
 		: WeakComponentImplHelperBase( rMutex ) \
 		{} \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 		{ return WeakComponentImplHelper_query( rType, (class_data *)&s_cd, this, (WeakComponentImplHelperBase *)this ); } \
 	virtual void SAL_CALL acquire() throw () \
 		{ WeakComponentImplHelperBase::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ WeakComponentImplHelperBase::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 		{ return WeakComponentImplHelper_getTypes( (class_data *)&s_cd ); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return ImplHelper_getImplementationId( (class_data *)&s_cd ); } \
 }; \
 template< __CLASS_IFC##N > \
@@ -206,17 +206,17 @@ public: \
 	inline WeakAggComponentImplHelper##N( ::osl::Mutex & rMutex ) SAL_THROW( () ) \
 		: WeakAggComponentImplHelperBase( rMutex ) \
 		{} \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 		{ return WeakAggComponentImplHelperBase::queryInterface( rType ); } \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) \
 		{ return WeakAggComponentImplHelper_queryAgg( rType, (class_data *)&s_cd, this, (WeakAggComponentImplHelperBase *)this ); } \
 	virtual void SAL_CALL acquire() throw () \
 		{ WeakAggComponentImplHelperBase::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ WeakAggComponentImplHelperBase::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 		{ return WeakAggComponentImplHelper_getTypes( (class_data *)&s_cd ); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return ImplHelper_getImplementationId( (class_data *)&s_cd ); } \
 }; \
 template< __CLASS_IFC##N > \

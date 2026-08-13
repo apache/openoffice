@@ -47,22 +47,19 @@ public:
 
 	//	Return the number of currently visible children.
 	virtual sal_Int32 SAL_CALL
-		getAccessibleChildCount (void) throw (::com::sun::star::uno::RuntimeException);
+		getAccessibleChildCount (void);
 
 	//	Return the specified child or throw exception.
 	virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessible> SAL_CALL
-		getAccessibleChild (sal_Int32 nIndex)
-		throw (::com::sun::star::lang::IndexOutOfBoundsException,
-			::com::sun::star::uno::RuntimeException);
+		getAccessibleChild (sal_Int32 nIndex);
 
 	// ===== XServiceInfo ====================================================
 
 	/**	Returns an identifier for the implementation of this object.
 	 */
 	virtual ::rtl::OUString SAL_CALL
-		getImplementationName (void)
-		throw (::com::sun::star::uno::RuntimeException);
+		getImplementationName (void);
 
 private:
 	::sd::toolpanel::ScrollPanel& GetScrollPanel (void) const;

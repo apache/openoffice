@@ -177,7 +177,6 @@ sal_Bool AccessibleContextBase::GetState (sal_Int16 aState)
 
 void AccessibleContextBase::SetRelationSet (
     const uno::Reference<XAccessibleRelationSet>& rxNewRelationSet)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     OSL_TRACE ("setting relation set");
 
@@ -207,7 +206,6 @@ void AccessibleContextBase::SetRelationSet (
 
 uno::Reference< XAccessibleContext> SAL_CALL
     AccessibleContextBase::getAccessibleContext (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	return this;
@@ -222,7 +220,6 @@ uno::Reference< XAccessibleContext> SAL_CALL
 */
 sal_Int32 SAL_CALL
    	AccessibleContextBase::getAccessibleChildCount (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
     return 0;
@@ -236,7 +233,6 @@ sal_Int32 SAL_CALL
 */
 uno::Reference<XAccessible> SAL_CALL
     AccessibleContextBase::getAccessibleChild (sal_Int32 nIndex)
-    throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
     throw lang::IndexOutOfBoundsException (
@@ -249,7 +245,6 @@ uno::Reference<XAccessible> SAL_CALL
 
 uno::Reference<XAccessible> SAL_CALL
    	AccessibleContextBase::getAccessibleParent (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	return mxParent;
@@ -260,7 +255,6 @@ uno::Reference<XAccessible> SAL_CALL
 
 sal_Int32 SAL_CALL
    	AccessibleContextBase::getAccessibleIndexInParent (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	//	Use a simple but slow solution for now.  Optimize later.
@@ -296,7 +290,6 @@ sal_Int32 SAL_CALL
 
 sal_Int16 SAL_CALL
 	AccessibleContextBase::getAccessibleRole (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	return maRole;
@@ -307,7 +300,6 @@ sal_Int16 SAL_CALL
 
 ::rtl::OUString SAL_CALL
    	AccessibleContextBase::getAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -319,7 +311,6 @@ sal_Int16 SAL_CALL
 
 OUString SAL_CALL
    	AccessibleContextBase::getAccessibleName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -341,7 +332,6 @@ OUString SAL_CALL
 */
 uno::Reference<XAccessibleRelationSet> SAL_CALL
    	AccessibleContextBase::getAccessibleRelationSet (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -368,7 +358,6 @@ uno::Reference<XAccessibleRelationSet> SAL_CALL
 */
 uno::Reference<XAccessibleStateSet> SAL_CALL
     AccessibleContextBase::getAccessibleStateSet (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::utl::AccessibleStateSetHelper* pStateSet = NULL;
 
@@ -409,8 +398,6 @@ uno::Reference<XAccessibleStateSet> SAL_CALL
 
 lang::Locale SAL_CALL
    	AccessibleContextBase::getLocale (void)
-	throw (IllegalAccessibleComponentStateException,
-        ::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
     // Delegate request to parent.
@@ -435,7 +422,6 @@ lang::Locale SAL_CALL
 void SAL_CALL
     AccessibleContextBase::addEventListener (
         const uno::Reference<XAccessibleEventListener >& rxListener)
-    throw (uno::RuntimeException)
 {
 	if (rxListener.is())
     {
@@ -459,7 +445,6 @@ void SAL_CALL
 void SAL_CALL
     AccessibleContextBase::removeEventListener (
         const uno::Reference<XAccessibleEventListener >& rxListener )
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	if (rxListener.is())
@@ -484,7 +469,6 @@ void SAL_CALL
 
 ::rtl::OUString SAL_CALL
    	AccessibleContextBase::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	return OUString(RTL_CONSTASCII_USTRINGPARAM("AccessibleContextBase"));
@@ -495,7 +479,6 @@ void SAL_CALL
 
 sal_Bool SAL_CALL
  	AccessibleContextBase::supportsService (const OUString& sServiceName)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
     //  Iterate over all supported service names and return true if on of them
@@ -513,7 +496,6 @@ sal_Bool SAL_CALL
 
 uno::Sequence< ::rtl::OUString> SAL_CALL
    	AccessibleContextBase::getSupportedServiceNames (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	static const OUString sServiceNames[2] = {
@@ -532,7 +514,6 @@ uno::Sequence< ::rtl::OUString> SAL_CALL
 
 uno::Sequence< ::com::sun::star::uno::Type>
 	AccessibleContextBase::getTypes (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -546,7 +527,6 @@ uno::Sequence< ::com::sun::star::uno::Type>
 
 uno::Sequence<sal_Int8> SAL_CALL
 	AccessibleContextBase::getImplementationId (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	static uno::Sequence<sal_Int8> aId;
@@ -584,7 +564,6 @@ void SAL_CALL AccessibleContextBase::disposing (void)
 void AccessibleContextBase::SetAccessibleDescription (
     const ::rtl::OUString& rDescription,
     StringOrigin eDescriptionOrigin)
-    throw (uno::RuntimeException)
 {
     if (eDescriptionOrigin < meDescriptionOrigin
         || (eDescriptionOrigin == meDescriptionOrigin && msDescription != rDescription))
@@ -609,7 +588,6 @@ void AccessibleContextBase::SetAccessibleDescription (
 void AccessibleContextBase::SetAccessibleName (
     const ::rtl::OUString& rName,
     StringOrigin eNameOrigin)
-    throw (uno::RuntimeException)
 {
     if (eNameOrigin < meNameOrigin
         || (eNameOrigin == meNameOrigin && msName != rName))
@@ -632,7 +610,6 @@ void AccessibleContextBase::SetAccessibleName (
 
 
 ::rtl::OUString AccessibleContextBase::CreateAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return ::rtl::OUString::createFromAscii ("Empty Description");
 }
@@ -641,7 +618,6 @@ void AccessibleContextBase::SetAccessibleName (
 
 
 ::rtl::OUString AccessibleContextBase::CreateAccessibleName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return ::rtl::OUString::createFromAscii ("Empty Name");
 }
@@ -682,7 +658,6 @@ void AccessibleContextBase::FireEvent (const AccessibleEventObject& aEvent)
 
 
 void AccessibleContextBase::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

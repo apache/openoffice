@@ -171,16 +171,12 @@ public:
 
 
 	// XEventListener
-	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	// XContainerListener
-	virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event )
-		throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event )
-		throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event );
+	virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
+	virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event );
 };
 
 
@@ -259,7 +255,6 @@ void BasMgrContainerListenerImpl::addLibraryModulesImpl( BasicManager* pMgr,
 //----------------------------------------------------------------------------
 
 void SAL_CALL BasMgrContainerListenerImpl::disposing( const EventObject& Source )
-	throw( RuntimeException )
 {
 	(void)Source;
 }
@@ -268,7 +263,6 @@ void SAL_CALL BasMgrContainerListenerImpl::disposing( const EventObject& Source 
 //----------------------------------------------------------------------------
 
 void SAL_CALL BasMgrContainerListenerImpl::elementInserted( const ContainerEvent& Event )
-	throw( RuntimeException )
 {
 	sal_Bool bLibContainer = maLibName.isEmpty();
 	::rtl::OUString aName;
@@ -317,7 +311,6 @@ void SAL_CALL BasMgrContainerListenerImpl::elementInserted( const ContainerEvent
 //----------------------------------------------------------------------------
 
 void SAL_CALL BasMgrContainerListenerImpl::elementReplaced( const ContainerEvent& Event )
-	throw( RuntimeException )
 {
 	::rtl::OUString aName;
 	Event.Accessor >>= aName;
@@ -349,7 +342,6 @@ void SAL_CALL BasMgrContainerListenerImpl::elementReplaced( const ContainerEvent
 //----------------------------------------------------------------------------
 
 void SAL_CALL BasMgrContainerListenerImpl::elementRemoved( const ContainerEvent& Event )
-	throw( RuntimeException )
 {
 	::rtl::OUString aName;
 	Event.Accessor >>= aName;
@@ -1989,11 +1981,11 @@ public:
 		: maName( aName ), maLanguage( aLanguage), maSource( aSource ) {}
 
     // Methods XStarBasicModuleInfo
-    virtual ::rtl::OUString SAL_CALL getName() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getName()
 		{ return maName; }
-    virtual ::rtl::OUString SAL_CALL getLanguage() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getLanguage()
 		{ return maLanguage; }
-    virtual ::rtl::OUString SAL_CALL getSource() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getSource()
 		{ return maSource; }
 };
 
@@ -2010,9 +2002,9 @@ public:
 		: maName( aName ), mData( Data ) {}
 
     // Methods XStarBasicDialogInfo
-    virtual ::rtl::OUString SAL_CALL getName() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getName()
 		{ return maName; }
-    virtual Sequence< sal_Int8 > SAL_CALL getData() throw(RuntimeException)
+    virtual Sequence< sal_Int8 > SAL_CALL getData()
 		{ return mData; }
 };
 
@@ -2047,17 +2039,17 @@ public:
 	{}
 
     // Methods XStarBasicLibraryInfo
-    virtual ::rtl::OUString SAL_CALL getName() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getName()
 		{ return maName; }
-    virtual Reference< XNameContainer > SAL_CALL getModuleContainer() throw(RuntimeException)
+    virtual Reference< XNameContainer > SAL_CALL getModuleContainer()
 		{ return mxModuleContainer; }
-    virtual Reference< XNameContainer > SAL_CALL getDialogContainer() throw(RuntimeException)
+    virtual Reference< XNameContainer > SAL_CALL getDialogContainer()
 		{ return mxDialogContainer; }
-    virtual ::rtl::OUString SAL_CALL getPassword() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getPassword()
 		{ return maPassword; }
-    virtual ::rtl::OUString SAL_CALL getExternalSourceURL() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getExternalSourceURL()
 		{ return maExternaleSourceURL; }
-    virtual ::rtl::OUString SAL_CALL getLinkTargetURL() throw(RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getLinkTargetURL()
 		{ return maLinkTargetURL; }
 };
 
@@ -2072,40 +2064,30 @@ public:
 		:mpLib( pLib ) {}
 
     // Methods XElementAccess
-    virtual Type SAL_CALL getElementType()
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements()
-		throw(RuntimeException);
+    virtual Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
     // Methods XNameAccess
-    virtual Any SAL_CALL getByName( const ::rtl::OUString& aName )
-		throw(NoSuchElementException, WrappedTargetException, RuntimeException);
-    virtual Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-		throw(RuntimeException);
+    virtual Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     // Methods XNameReplace
-    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const Any& aElement )
-		throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException);
+    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const Any& aElement );
 
     // Methods XNameContainer
-    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const Any& aElement )
-		throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException);
-    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name )
-		throw(NoSuchElementException, WrappedTargetException, RuntimeException);
+    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const Any& aElement );
+    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name );
 };
 
 // Methods XElementAccess
 Type ModuleContainer_Impl::getElementType()
-	throw(RuntimeException)
 {
 	Type aModuleType = ::getCppuType( (const Reference< XStarBasicModuleInfo > *)0 );
 	return aModuleType;
 }
 
 sal_Bool ModuleContainer_Impl::hasElements()
-	throw(RuntimeException)
 {
     SbxArray* pMods = mpLib ? mpLib->GetModules() : NULL;
     return pMods && pMods->Count() > 0;
@@ -2113,7 +2095,6 @@ sal_Bool ModuleContainer_Impl::hasElements()
 
 // Methods XNameAccess
 Any ModuleContainer_Impl::getByName( const ::rtl::OUString& aName )
-	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
     SbModule* pMod = mpLib ? mpLib->FindModule( aName ) : NULL;
 	if( !pMod )
@@ -2126,7 +2107,6 @@ Any ModuleContainer_Impl::getByName( const ::rtl::OUString& aName )
 }
 
 Sequence< ::rtl::OUString > ModuleContainer_Impl::getElementNames()
-	throw(RuntimeException)
 {
     SbxArray* pMods = mpLib ? mpLib->GetModules() : NULL;
     sal_uInt16 nMods = pMods ? pMods->Count() : 0;
@@ -2141,7 +2121,6 @@ Sequence< ::rtl::OUString > ModuleContainer_Impl::getElementNames()
 }
 
 sal_Bool ModuleContainer_Impl::hasByName( const ::rtl::OUString& aName )
-	throw(RuntimeException)
 {
     SbModule* pMod = mpLib ? mpLib->FindModule( aName ) : NULL;
 	sal_Bool bRet = (pMod != NULL);
@@ -2151,7 +2130,6 @@ sal_Bool ModuleContainer_Impl::hasByName( const ::rtl::OUString& aName )
 
 // Methods XNameReplace
 void ModuleContainer_Impl::replaceByName( const ::rtl::OUString& aName, const Any& aElement )
-	throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	removeByName( aName );
 	insertByName( aName, aElement );
@@ -2160,7 +2138,6 @@ void ModuleContainer_Impl::replaceByName( const ::rtl::OUString& aName, const An
 
 // Methods XNameContainer
 void ModuleContainer_Impl::insertByName( const ::rtl::OUString& aName, const Any& aElement )
-	throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	Type aModuleType = ::getCppuType( (const Reference< XStarBasicModuleInfo > *)0 );
 	Type aAnyType = aElement.getValueType();
@@ -2172,7 +2149,6 @@ void ModuleContainer_Impl::insertByName( const ::rtl::OUString& aName, const Any
 }
 
 void ModuleContainer_Impl::removeByName( const ::rtl::OUString& Name )
-	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	SbModule* pMod = mpLib ? mpLib->FindModule( Name ) : NULL;
 	if( !pMod )
@@ -2217,40 +2193,30 @@ public:
 		:mpLib( pLib ) {}
 
     // Methods XElementAccess
-    virtual Type SAL_CALL getElementType()
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements()
-		throw(RuntimeException);
+    virtual Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
     // Methods XNameAccess
-    virtual Any SAL_CALL getByName( const ::rtl::OUString& aName )
-		throw(NoSuchElementException, WrappedTargetException, RuntimeException);
-    virtual Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-		throw(RuntimeException);
+    virtual Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     // Methods XNameReplace
-    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const Any& aElement )
-		throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException);
+    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const Any& aElement );
 
     // Methods XNameContainer
-    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const Any& aElement )
-		throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException);
-    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name )
-		throw(NoSuchElementException, WrappedTargetException, RuntimeException);
+    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const Any& aElement );
+    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name );
 };
 
 // Methods XElementAccess
 Type DialogContainer_Impl::getElementType()
-	throw(RuntimeException)
 {
 	Type aModuleType = ::getCppuType( (const Reference< XStarBasicDialogInfo > *)0 );
 	return aModuleType;
 }
 
 sal_Bool DialogContainer_Impl::hasElements()
-	throw(RuntimeException)
 {
 	sal_Bool bRet = sal_False;
 
@@ -2270,7 +2236,6 @@ sal_Bool DialogContainer_Impl::hasElements()
 
 // Methods XNameAccess
 Any DialogContainer_Impl::getByName( const ::rtl::OUString& aName )
-	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	SbxVariable* pVar = mpLib->GetObjects()->Find( aName, SbxCLASS_DONTCARE );
 	if( !( pVar && pVar->ISA( SbxObject ) &&
@@ -2289,7 +2254,6 @@ Any DialogContainer_Impl::getByName( const ::rtl::OUString& aName )
 }
 
 Sequence< ::rtl::OUString > DialogContainer_Impl::getElementNames()
-	throw(RuntimeException)
 {
 	mpLib->GetAll( SbxCLASS_OBJECT );
 	sal_Int16 nCount = mpLib->GetObjects()->Count();
@@ -2311,7 +2275,6 @@ Sequence< ::rtl::OUString > DialogContainer_Impl::getElementNames()
 }
 
 sal_Bool DialogContainer_Impl::hasByName( const ::rtl::OUString& aName )
-	throw(RuntimeException)
 {
 	sal_Bool bRet = sal_False;
 	SbxVariable* pVar = mpLib->GetObjects()->Find( aName, SbxCLASS_DONTCARE );
@@ -2326,7 +2289,6 @@ sal_Bool DialogContainer_Impl::hasByName( const ::rtl::OUString& aName )
 
 // Methods XNameReplace
 void DialogContainer_Impl::replaceByName( const ::rtl::OUString& aName, const Any& aElement )
-	throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	removeByName( aName );
 	insertByName( aName, aElement );
@@ -2335,7 +2297,6 @@ void DialogContainer_Impl::replaceByName( const ::rtl::OUString& aName, const An
 
 // Methods XNameContainer
 void DialogContainer_Impl::insertByName( const ::rtl::OUString& aName, const Any& aElement )
-	throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	(void)aName;
 	Type aModuleType = ::getCppuType( (const Reference< XStarBasicDialogInfo > *)0 );
@@ -2349,7 +2310,6 @@ void DialogContainer_Impl::insertByName( const ::rtl::OUString& aName, const Any
 }
 
 void DialogContainer_Impl::removeByName( const ::rtl::OUString& Name )
-	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	(void)Name;
 	SbxVariable* pVar = mpLib->GetObjects()->Find( Name, SbxCLASS_DONTCARE );
@@ -2374,41 +2334,31 @@ public:
 		:mpMgr( pMgr ) {}
 
     // Methods XElementAccess
-    virtual Type SAL_CALL getElementType()
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements()
-		throw(RuntimeException);
+    virtual Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
     // Methods XNameAccess
-    virtual Any SAL_CALL getByName( const ::rtl::OUString& aName )
-		throw(NoSuchElementException, WrappedTargetException, RuntimeException);
-    virtual Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-		throw(RuntimeException);
+    virtual Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     // Methods XNameReplace
-    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const Any& aElement )
-		throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException);
+    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const Any& aElement );
 
     // Methods XNameContainer
-    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const Any& aElement )
-		throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException);
-    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name )
-		throw(NoSuchElementException, WrappedTargetException, RuntimeException);
+    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const Any& aElement );
+    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name );
 };
 
 
 // Methods XElementAccess
 Type LibraryContainer_Impl::getElementType()
-	throw(RuntimeException)
 {
 	Type aType = ::getCppuType( (const Reference< XStarBasicLibraryInfo > *)0 );
 	return aType;
 }
 
 sal_Bool LibraryContainer_Impl::hasElements()
-	throw(RuntimeException)
 {
 	sal_Int32 nLibs = mpMgr->GetLibCount();
 	sal_Bool bRet = (nLibs > 0);
@@ -2417,7 +2367,6 @@ sal_Bool LibraryContainer_Impl::hasElements()
 
 // Methods XNameAccess
 Any LibraryContainer_Impl::getByName( const ::rtl::OUString& aName )
-	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	Any aRetAny;
 	if( !mpMgr->HasLib( aName ) )
@@ -2457,7 +2406,6 @@ Any LibraryContainer_Impl::getByName( const ::rtl::OUString& aName )
 }
 
 Sequence< ::rtl::OUString > LibraryContainer_Impl::getElementNames()
-	throw(RuntimeException)
 {
 	sal_uInt16 nLibs = mpMgr->GetLibCount();
 	Sequence< ::rtl::OUString > aRetSeq( nLibs );
@@ -2470,7 +2418,6 @@ Sequence< ::rtl::OUString > LibraryContainer_Impl::getElementNames()
 }
 
 sal_Bool LibraryContainer_Impl::hasByName( const ::rtl::OUString& aName )
-	throw(RuntimeException)
 {
 	sal_Bool bRet = mpMgr->HasLib( aName );
 	return bRet;
@@ -2478,7 +2425,6 @@ sal_Bool LibraryContainer_Impl::hasByName( const ::rtl::OUString& aName )
 
 // Methods XNameReplace
 void LibraryContainer_Impl::replaceByName( const ::rtl::OUString& aName, const Any& aElement )
-	throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	removeByName( aName );
 	insertByName( aName, aElement );
@@ -2486,7 +2432,6 @@ void LibraryContainer_Impl::replaceByName( const ::rtl::OUString& aName, const A
 
 // Methods XNameContainer
 void LibraryContainer_Impl::insertByName( const ::rtl::OUString& aName, const Any& aElement )
-	throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	(void)aName;
 	(void)aElement;
@@ -2494,7 +2439,6 @@ void LibraryContainer_Impl::insertByName( const ::rtl::OUString& aName, const An
 }
 
 void LibraryContainer_Impl::removeByName( const ::rtl::OUString& Name )
-	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	StarBASIC* pLib = mpMgr->GetLib( Name );
 	if( !pLib )
@@ -2520,22 +2464,17 @@ public:
 public:
 
     // Methods
-    virtual Reference< XNameContainer > SAL_CALL getLibraryContainer()
-		throw(RuntimeException);
+    virtual Reference< XNameContainer > SAL_CALL getLibraryContainer();
     virtual void SAL_CALL createLibrary( const ::rtl::OUString& LibName, const ::rtl::OUString& Password,
-		const ::rtl::OUString& ExternalSourceURL, const ::rtl::OUString& LinkTargetURL )
-			throw(ElementExistException, RuntimeException);
+		const ::rtl::OUString& ExternalSourceURL, const ::rtl::OUString& LinkTargetURL );
     virtual void SAL_CALL addModule( const ::rtl::OUString& LibraryName, const ::rtl::OUString& ModuleName,
-		const ::rtl::OUString& Language, const ::rtl::OUString& Source )
-			throw(NoSuchElementException, RuntimeException);
+		const ::rtl::OUString& Language, const ::rtl::OUString& Source );
     virtual void SAL_CALL addDialog( const ::rtl::OUString& LibraryName, const ::rtl::OUString& DialogName,
-		const Sequence< sal_Int8 >& Data )
-			throw(NoSuchElementException, RuntimeException);
+		const Sequence< sal_Int8 >& Data );
 
 };
 
 Reference< XNameContainer > SAL_CALL StarBasicAccess_Impl::getLibraryContainer()
-	throw(RuntimeException)
 {
 	if( !mxLibContainer.is() )
 		mxLibContainer = (XNameContainer*)new LibraryContainer_Impl( mpMgr );
@@ -2549,7 +2488,6 @@ void SAL_CALL StarBasicAccess_Impl::createLibrary
 	const ::rtl::OUString& ExternalSourceURL,
 	const ::rtl::OUString& LinkTargetURL
 )
-	throw(ElementExistException, RuntimeException)
 {
 	(void)ExternalSourceURL;
 #ifdef DBG_UTIL
@@ -2566,7 +2504,6 @@ void SAL_CALL StarBasicAccess_Impl::addModule
 	const ::rtl::OUString& Language,
 	const ::rtl::OUString& Source
 )
-	throw(NoSuchElementException, RuntimeException)
 {
 	(void)Language;
 	StarBASIC* pLib = mpMgr->GetLib( LibraryName );
@@ -2581,7 +2518,6 @@ void SAL_CALL StarBasicAccess_Impl::addDialog
 	const ::rtl::OUString& DialogName,
 	const Sequence< sal_Int8 >& Data
 )
-	throw(NoSuchElementException, RuntimeException)
 {
 	(void)LibraryName;
 	(void)DialogName;

@@ -69,7 +69,6 @@ Reference< XMultiServiceFactory > FrameStatusListener::getServiceManager() const
 
 // XInterface
 Any SAL_CALL FrameStatusListener::queryInterface( const Type& rType )
-throw ( RuntimeException )
 {
 	Any a = ::cppu::queryInterface(
 				rType ,
@@ -97,7 +96,6 @@ void SAL_CALL FrameStatusListener::release() throw ()
 
 // XComponent
 void SAL_CALL FrameStatusListener::dispose()
-throw (::com::sun::star::uno::RuntimeException)
 {
     Reference< XComponent > xThis( static_cast< OWeakObject* >(this), UNO_QUERY );
 
@@ -134,20 +132,17 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 void SAL_CALL FrameStatusListener::addEventListener( const Reference< XEventListener >& )
-throw ( RuntimeException )
 {
     // helper class for status updates - no need to support listener
 }
 
 void SAL_CALL FrameStatusListener::removeEventListener( const Reference< XEventListener >& )
-throw ( RuntimeException )
 {
     // helper class for status updates - no need to support listener
 }
 
 // XEventListener
 void SAL_CALL FrameStatusListener::disposing( const EventObject& Source )
-throw ( RuntimeException )
 {
     Reference< XInterface > xSource( Source.Source );
 
@@ -169,13 +164,11 @@ throw ( RuntimeException )
 
 // XStatusListener
 void SAL_CALL FrameStatusListener::statusChanged( const FeatureStateEvent& )
-throw ( RuntimeException )
 {
     // must be implemented by sub class
 }
 
 void FrameStatusListener::frameAction( const FrameActionEvent& Action )
-throw ( RuntimeException )
 {
     if ( Action.Action == FrameAction_CONTEXT_CHANGED )
         bindListener();

@@ -163,7 +163,7 @@ GroupShapeContext::GroupShapeContext( ContextHandler& rParent,
 }
 
 Reference< XFastContextHandler > SAL_CALL GroupShapeContext::createFastChildContext(
-        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs ) throw (SAXException, RuntimeException)
+        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
 {
     ContextHandlerRef xContext = createShapeContext( *this, *this, nElement, AttributeList( rxAttribs ), mpGroupShapePtr );
     return xContext.get() ? xContext.get() : ShapeGroupContext::createFastChildContext( nElement, rxAttribs );

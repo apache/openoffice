@@ -172,7 +172,6 @@ SbMethod* CreateMacro( SbModule* pModule, const String& rMacroName )
 //----------------------------------------------------------------------------
 
 bool RenameDialog( Window* pErrorParent, const ScriptDocument& rDocument, const String& rLibName, const String& rOldName, const String& rNewName )
-	throw(ElementExistException, NoSuchElementException)
 {
     if ( !rDocument.hasDialog( rLibName, rOldName ) )
     {

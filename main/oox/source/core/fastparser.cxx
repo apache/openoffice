@@ -70,7 +70,7 @@ InputStreamCloseGuard::~InputStreamCloseGuard()
 
 // ============================================================================
 
-FastParser::FastParser( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+FastParser::FastParser( const Reference< XComponentContext >& rxContext ) :
     mrNamespaceMap( StaticNamespaceMap::get() )
 {
     // create a fast parser instance
@@ -85,7 +85,7 @@ FastParser::~FastParser()
 {
 }
 
-void FastParser::registerNamespace( sal_Int32 nNamespaceId ) throw( IllegalArgumentException, RuntimeException )
+void FastParser::registerNamespace( sal_Int32 nNamespaceId )
 {
     if( !mxParser.is() )
         throw RuntimeException();
@@ -97,14 +97,14 @@ void FastParser::registerNamespace( sal_Int32 nNamespaceId ) throw( IllegalArgum
     mxParser->registerNamespace( *pNamespaceUrl, nNamespaceId );
 }
 
-void FastParser::setDocumentHandler( const Reference< XFastDocumentHandler >& rxDocHandler ) throw( RuntimeException )
+void FastParser::setDocumentHandler( const Reference< XFastDocumentHandler >& rxDocHandler )
 {
     if( !mxParser.is() )
         throw RuntimeException();
     mxParser->setFastDocumentHandler( rxDocHandler );
 }
 
-void FastParser::parseStream( const InputSource& rInputSource, bool bCloseStream ) throw( SAXException, IOException, RuntimeException )
+void FastParser::parseStream( const InputSource& rInputSource, bool bCloseStream )
 {
     // guard closing the input stream also when exceptions are thrown
     InputStreamCloseGuard aGuard( rInputSource.aInputStream, bCloseStream );
@@ -113,7 +113,7 @@ void FastParser::parseStream( const InputSource& rInputSource, bool bCloseStream
     mxParser->parseStream( rInputSource );
 }
 
-void FastParser::parseStream( const Reference< XInputStream >& rxInStream, const OUString& rStreamName, bool bCloseStream ) throw( SAXException, IOException, RuntimeException )
+void FastParser::parseStream( const Reference< XInputStream >& rxInStream, const OUString& rStreamName, bool bCloseStream )
 {
     InputSource aInputSource;
     aInputSource.sSystemId = rStreamName;
@@ -121,7 +121,7 @@ void FastParser::parseStream( const Reference< XInputStream >& rxInStream, const
     parseStream( aInputSource, bCloseStream );
 }
 
-void FastParser::parseStream( StorageBase& rStorage, const OUString& rStreamName, bool bCloseStream ) throw( SAXException, IOException, RuntimeException )
+void FastParser::parseStream( StorageBase& rStorage, const OUString& rStreamName, bool bCloseStream )
 {
     parseStream( rStorage.openInputStream( rStreamName ), rStreamName, bCloseStream );
 }

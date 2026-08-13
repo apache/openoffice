@@ -68,8 +68,6 @@ uno::Reference< uno::XInterface > SAL_CALL FSStorageFactory::impl_staticCreateSe
 
 //-------------------------------------------------------------------------
 uno::Reference< uno::XInterface > SAL_CALL FSStorageFactory::createInstance()
-	throw ( uno::Exception,
-			uno::RuntimeException )
 {
 	::rtl::OUString aTempURL;
 
@@ -93,8 +91,6 @@ uno::Reference< uno::XInterface > SAL_CALL FSStorageFactory::createInstance()
 //-------------------------------------------------------------------------
 uno::Reference< uno::XInterface > SAL_CALL FSStorageFactory::createInstanceWithArguments(
 			const uno::Sequence< uno::Any >& aArguments )
-	throw ( uno::Exception,
-			uno::RuntimeException )
 {
 	// The request for storage can be done with up to three arguments
 
@@ -201,14 +197,12 @@ uno::Reference< uno::XInterface > SAL_CALL FSStorageFactory::createInstanceWithA
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL FSStorageFactory::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL FSStorageFactory::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -221,7 +215,6 @@ sal_Bool SAL_CALL FSStorageFactory::supportsService( const ::rtl::OUString& Serv
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL FSStorageFactory::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }

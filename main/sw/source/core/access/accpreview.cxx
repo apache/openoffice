@@ -65,13 +65,11 @@ SwAccessiblePreview::~SwAccessiblePreview()
 }
 
 OUString SwAccessiblePreview::getImplementationName( )
-    throw( RuntimeException )
 {
     return OUString( RTL_CONSTASCII_USTRINGPARAM( sImplementationName ) );
 }
 
 sal_Bool SwAccessiblePreview::supportsService( const OUString& rServiceName )
-    throw( RuntimeException )
 {
     return rServiceName.equalsAsciiL(
         		RTL_CONSTASCII_STRINGPARAM( sServiceName) ) ||
@@ -80,7 +78,6 @@ sal_Bool SwAccessiblePreview::supportsService( const OUString& rServiceName )
 }
 
 Sequence<OUString> SwAccessiblePreview::getSupportedServiceNames( )
-    throw( RuntimeException )
 {
     Sequence<OUString> aSeq( 2 );
     aSeq[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( sServiceName ) );
@@ -89,7 +86,6 @@ Sequence<OUString> SwAccessiblePreview::getSupportedServiceNames( )
 }
 
 Sequence< sal_Int8 > SAL_CALL SwAccessiblePreview::getImplementationId()
-		throw(RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static Sequence< sal_Int8 > aId( 16 );
@@ -101,12 +97,12 @@ Sequence< sal_Int8 > SAL_CALL SwAccessiblePreview::getImplementationId()
     }
     return aId;
 }
-OUString SAL_CALL SwAccessiblePreview::getAccessibleDescription (void) throw (com::sun::star::uno::RuntimeException)
+OUString SAL_CALL SwAccessiblePreview::getAccessibleDescription (void)
 {
 	return GetResource( STR_ACCESS_PREVIEW_DOC_NAME );
 }
 
-OUString SAL_CALL SwAccessiblePreview::getAccessibleName (void) throw (::com::sun::star::uno::RuntimeException)
+OUString SAL_CALL SwAccessiblePreview::getAccessibleName (void)
 {
 	OUString sName = SwAccessibleDocumentBase::getAccessibleName();
 	sName += OUString::createFromAscii(" ");

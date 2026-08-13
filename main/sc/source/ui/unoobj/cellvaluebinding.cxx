@@ -139,7 +139,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    Reference< XPropertySetInfo > SAL_CALL OCellValueBinding::getPropertySetInfo(  ) throw(RuntimeException)
+    Reference< XPropertySetInfo > SAL_CALL OCellValueBinding::getPropertySetInfo(  )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
         return createPropertySetInfo( getInfoHelper() ) ;
@@ -174,7 +174,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    Sequence< Type > SAL_CALL OCellValueBinding::getSupportedValueTypes(  ) throw (RuntimeException)
+    Sequence< Type > SAL_CALL OCellValueBinding::getSupportedValueTypes(  )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
         checkDisposed( );
@@ -206,7 +206,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    sal_Bool SAL_CALL OCellValueBinding::supportsType( const Type& aType ) throw (RuntimeException)
+    sal_Bool SAL_CALL OCellValueBinding::supportsType( const Type& aType )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
         checkDisposed( );
@@ -224,7 +224,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL OCellValueBinding::getValue( const Type& aType ) throw (IncompatibleTypesException, RuntimeException)
+    Any SAL_CALL OCellValueBinding::getValue( const Type& aType )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
         checkDisposed( );
@@ -311,7 +311,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OCellValueBinding::setValue( const Any& aValue ) throw (IncompatibleTypesException, NoSupportException, RuntimeException)
+    void SAL_CALL OCellValueBinding::setValue( const Any& aValue )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
         checkDisposed( );
@@ -442,7 +442,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void OCellValueBinding::checkDisposed( ) const SAL_THROW( ( DisposedException ) )
+    void OCellValueBinding::checkDisposed( ) const
     {
         if ( OCellValueBinding_Base::rBHelper.bInDispose || OCellValueBinding_Base::rBHelper.bDisposed )
             throw DisposedException();
@@ -450,7 +450,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void OCellValueBinding::checkInitialized() SAL_THROW( ( RuntimeException ) )
+    void OCellValueBinding::checkInitialized()
     {
         if ( !m_bInitialized )
             throw RuntimeException();
@@ -458,7 +458,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void OCellValueBinding::checkValueType( const Type& _rType ) const SAL_THROW( ( IncompatibleTypesException ) )
+    void OCellValueBinding::checkValueType( const Type& _rType ) const
     {
         OCellValueBinding* pNonConstThis = const_cast< OCellValueBinding* >( this );
         if ( !pNonConstThis->supportsType( _rType ) )
@@ -474,7 +474,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OCellValueBinding::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL OCellValueBinding::getImplementationName(  )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
 
@@ -482,7 +482,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    sal_Bool SAL_CALL OCellValueBinding::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+    sal_Bool SAL_CALL OCellValueBinding::supportsService( const ::rtl::OUString& _rServiceName )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
 
@@ -497,7 +497,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL OCellValueBinding::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL OCellValueBinding::getSupportedServiceNames(  )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
 
@@ -510,14 +510,14 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OCellValueBinding::addModifyListener( const Reference< XModifyListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL OCellValueBinding::addModifyListener( const Reference< XModifyListener >& _rxListener )
     {
        if ( _rxListener.is() )
            m_aModifyListeners.addInterface( _rxListener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OCellValueBinding::removeModifyListener( const Reference< XModifyListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL OCellValueBinding::removeModifyListener( const Reference< XModifyListener >& _rxListener )
     {
        if ( _rxListener.is() )
            m_aModifyListeners.removeInterface( _rxListener );
@@ -548,7 +548,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OCellValueBinding::modified( const EventObject& /* aEvent */ ) throw (RuntimeException)
+    void SAL_CALL OCellValueBinding::modified( const EventObject& /* aEvent */ )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
 
@@ -556,7 +556,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OCellValueBinding::disposing( const EventObject& aEvent ) throw (RuntimeException)
+    void SAL_CALL OCellValueBinding::disposing( const EventObject& aEvent )
     {
         DBG_CHKTHIS( OCellValueBinding, checkConsistency_static );
 
@@ -570,7 +570,7 @@ namespace calc
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OCellValueBinding::initialize( const Sequence< Any >& _rArguments ) throw (Exception, RuntimeException)
+    void SAL_CALL OCellValueBinding::initialize( const Sequence< Any >& _rArguments )
     {
         if ( m_bInitialized )
             throw Exception();

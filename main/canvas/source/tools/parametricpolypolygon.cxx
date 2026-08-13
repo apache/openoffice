@@ -175,7 +175,7 @@ namespace canvas
         mxDevice.clear();
     }
 
-    uno::Reference< rendering::XPolyPolygon2D > SAL_CALL ParametricPolyPolygon::getOutline( double /*t*/ ) throw (lang::IllegalArgumentException, uno::RuntimeException)
+    uno::Reference< rendering::XPolyPolygon2D > SAL_CALL ParametricPolyPolygon::getOutline( double /*t*/ )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -183,7 +183,7 @@ namespace canvas
         return uno::Reference< rendering::XPolyPolygon2D >();
     }
 
-    uno::Sequence< double > SAL_CALL ParametricPolyPolygon::getColor( double /*t*/ ) throw (lang::IllegalArgumentException, uno::RuntimeException)
+    uno::Sequence< double > SAL_CALL ParametricPolyPolygon::getColor( double /*t*/ )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -191,7 +191,7 @@ namespace canvas
         return uno::Sequence< double >();
     }
 
-    uno::Sequence< double > SAL_CALL ParametricPolyPolygon::getPointColor( const geometry::RealPoint2D& /*point*/ ) throw (lang::IllegalArgumentException, uno::RuntimeException)
+    uno::Sequence< double > SAL_CALL ParametricPolyPolygon::getPointColor( const geometry::RealPoint2D& /*point*/ )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -199,7 +199,7 @@ namespace canvas
         return uno::Sequence< double >();
     }
 
-    uno::Reference< rendering::XColorSpace > SAL_CALL ParametricPolyPolygon::getColorSpace() throw (uno::RuntimeException)
+    uno::Reference< rendering::XColorSpace > SAL_CALL ParametricPolyPolygon::getColorSpace()
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -209,17 +209,17 @@ namespace canvas
 #define IMPLEMENTATION_NAME "Canvas::ParametricPolyPolygon"
 #define SERVICE_NAME "com.sun.star.rendering.ParametricPolyPolygon"
 
-    ::rtl::OUString SAL_CALL ParametricPolyPolygon::getImplementationName(  ) throw (uno::RuntimeException)
+    ::rtl::OUString SAL_CALL ParametricPolyPolygon::getImplementationName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLEMENTATION_NAME ) );
     }
 
-    sal_Bool SAL_CALL ParametricPolyPolygon::supportsService( const ::rtl::OUString& ServiceName ) throw (uno::RuntimeException)
+    sal_Bool SAL_CALL ParametricPolyPolygon::supportsService( const ::rtl::OUString& ServiceName )
     {
         return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
     }
 
-    uno::Sequence< ::rtl::OUString > SAL_CALL ParametricPolyPolygon::getSupportedServiceNames(  ) throw (uno::RuntimeException)
+    uno::Sequence< ::rtl::OUString > SAL_CALL ParametricPolyPolygon::getSupportedServiceNames(  )
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );

@@ -138,18 +138,17 @@ public:
 	const ::com::sun::star::uno::Reference< ::com::sun::star::sdbcx::XColumnsSupplier >&	getColumnsSupplier() const	{ return m_xColumnsSupplier; }
 
 	// das normale queryInterface
-	::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& type) throw ( ::com::sun::star::uno::RuntimeException )
+	::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& type)
 	{ return m_xMoveOperations->queryInterface(type); }
 
 	// ::com::sun::star::uno::Reference< ::com::sun::star::sdbcx::XRowLocate>
 	::com::sun::star::uno::Any getBookmark(void)
-		throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException )
 	{ return m_xBookmarkOperations->getBookmark(); }
-	sal_Bool moveToBookmark(const ::com::sun::star::uno::Any& bookmark) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException ) { return m_xBookmarkOperations->moveToBookmark(bookmark); }
-	sal_Bool moveRelativeToBookmark(const ::com::sun::star::uno::Any& bookmark, sal_Int32 rows) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException ) { return m_xBookmarkOperations->moveRelativeToBookmark(bookmark, rows); }
-	sal_Int32 compareBookmarks(const ::com::sun::star::uno::Any& lhs, const ::com::sun::star::uno::Any& rhs) const throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException ) { return m_xBookmarkOperations->compareBookmarks(lhs, rhs); }
-	sal_Int32 hasOrderedBookmarks(void) const throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException ) { return m_xBookmarkOperations->hasOrderedBookmarks(); }
-	sal_Int32 hashBookmark(const ::com::sun::star::uno::Any& bookmark) const throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException ) { return m_xBookmarkOperations->hashBookmark(bookmark); }
+	sal_Bool moveToBookmark(const ::com::sun::star::uno::Any& bookmark) { return m_xBookmarkOperations->moveToBookmark(bookmark); }
+	sal_Bool moveRelativeToBookmark(const ::com::sun::star::uno::Any& bookmark, sal_Int32 rows) { return m_xBookmarkOperations->moveRelativeToBookmark(bookmark, rows); }
+	sal_Int32 compareBookmarks(const ::com::sun::star::uno::Any& lhs, const ::com::sun::star::uno::Any& rhs) const { return m_xBookmarkOperations->compareBookmarks(lhs, rhs); }
+	sal_Int32 hasOrderedBookmarks(void) const { return m_xBookmarkOperations->hasOrderedBookmarks(); }
+	sal_Int32 hashBookmark(const ::com::sun::star::uno::Any& bookmark) const { return m_xBookmarkOperations->hashBookmark(bookmark); }
 
 	// ::com::sun::star::sdbc::XResultSet
 	sal_Bool isBeforeFirst() const				{ return m_xMoveOperations->isBeforeFirst(); }
@@ -170,7 +169,7 @@ public:
 	sal_Bool rowDeleted()						{ return m_xMoveOperations->rowDeleted(); }
 	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface> getStatement() 		{ return m_xMoveOperations->getStatement(); }
 	// ::com::sun::star::sdbcx::XColumnsSupplier
-	::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess> getColumns() const throw( ::com::sun::star::uno::RuntimeException ) { return m_xColumnsSupplier->getColumns(); }
+	::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess> getColumns() const { return m_xColumnsSupplier->getColumns(); }
 private:
 	void ImplConstruct(const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet>& _rxCursor, sal_Bool bUseCloned);
 };
@@ -188,7 +187,7 @@ public:
 	FmXDisposeListener(::osl::Mutex& _rMutex) : m_pAdapter(NULL), m_rMutex(_rMutex) { }
 	virtual ~FmXDisposeListener();
 
-	virtual void disposing(const ::com::sun::star::lang::EventObject& _rEvent, sal_Int16 _nId) throw( ::com::sun::star::uno::RuntimeException ) = 0;
+	virtual void disposing(const ::com::sun::star::lang::EventObject& _rEvent, sal_Int16 _nId) = 0;
 
 protected:
 	void setAdapter(FmXDisposeMultiplexer* pAdapter);
@@ -207,7 +206,7 @@ public:
 	FmXDisposeMultiplexer(FmXDisposeListener* _pListener, const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent>& _rxObject, sal_Int16 _nId = -1);
 
 // ::com::sun::star::lang::XEventListener
-	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	void dispose();
 };

@@ -38,13 +38,13 @@ namespace comphelper
 	//= OInteractionPassword
 	//=========================================================================
     //--------------------------------------------------------------------
-    void SAL_CALL OInteractionPassword::setPassword( const ::rtl::OUString& _Password ) throw (RuntimeException)
+    void SAL_CALL OInteractionPassword::setPassword( const ::rtl::OUString& _Password )
     {
         m_sPassword = _Password;
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OInteractionPassword::getPassword(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL OInteractionPassword::getPassword(  )
     {
         return m_sPassword;
     }
@@ -77,13 +77,13 @@ namespace comphelper
 	}
 
 	//-------------------------------------------------------------------------
-	Any SAL_CALL OInteractionRequest::getRequest(  ) throw(RuntimeException)
+	Any SAL_CALL OInteractionRequest::getRequest(  )
 	{
 		return m_aRequest;
 	}
 
 	//-------------------------------------------------------------------------
-	Sequence< Reference< XInteractionContinuation > > SAL_CALL OInteractionRequest::getContinuations(  ) throw(RuntimeException)
+	Sequence< Reference< XInteractionContinuation > > SAL_CALL OInteractionRequest::getContinuations(  )
 	{
 		return m_aContinuations;
 	}

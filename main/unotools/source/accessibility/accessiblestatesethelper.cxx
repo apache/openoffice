@@ -49,20 +49,14 @@ public:
 	AccessibleStateSetHelperImpl(const AccessibleStateSetHelperImpl& rImpl);
 	~AccessibleStateSetHelperImpl();
 
-	sal_Bool IsEmpty ()
-		throw (uno::RuntimeException);
-	sal_Bool Contains (sal_Int16 aState)
-		throw (uno::RuntimeException);
-    uno::Sequence<sal_Int16> GetStates()
-        throw (uno::RuntimeException);
-	void AddState(sal_Int16 aState)
-		throw (uno::RuntimeException);
-	void RemoveState(sal_Int16 aState)
-		throw (uno::RuntimeException);
+	sal_Bool IsEmpty ();
+	sal_Bool Contains (sal_Int16 aState);
+    uno::Sequence<sal_Int16> GetStates();
+	void AddState(sal_Int16 aState);
+	void RemoveState(sal_Int16 aState);
 	sal_Bool Compare(const AccessibleStateSetHelperImpl* pComparativeValue,
 						AccessibleStateSetHelperImpl* pOldStates,
-						AccessibleStateSetHelperImpl* pNewStates)
-		throw (uno::RuntimeException);
+						AccessibleStateSetHelperImpl* pNewStates);
 
 	inline void	AddStates( const sal_Int64 _nStates ) SAL_THROW( ( ) );
 
@@ -88,7 +82,6 @@ AccessibleStateSetHelperImpl::~AccessibleStateSetHelperImpl()
 }
 
 inline sal_Bool AccessibleStateSetHelperImpl::IsEmpty ()
-	throw (uno::RuntimeException)
 {
 #if 0
 	return maStates.none();
@@ -97,7 +90,6 @@ inline sal_Bool AccessibleStateSetHelperImpl::IsEmpty ()
 }
 
 inline sal_Bool AccessibleStateSetHelperImpl::Contains (sal_Int16 aState)
-	throw (uno::RuntimeException)
 {
 	DBG_ASSERT(aState < BITFIELDSIZE, "the statesset is too small");
 #if 0
@@ -109,7 +101,6 @@ inline sal_Bool AccessibleStateSetHelperImpl::Contains (sal_Int16 aState)
 }
 
 inline uno::Sequence<sal_Int16> AccessibleStateSetHelperImpl::GetStates()
-    throw (uno::RuntimeException)
 {
     uno::Sequence<sal_Int16> aRet(BITFIELDSIZE);
     sal_Int16* pSeq = aRet.getArray();
@@ -131,7 +122,6 @@ inline void AccessibleStateSetHelperImpl::AddStates( const sal_Int64 _nStates ) 
 }
 
 inline void AccessibleStateSetHelperImpl::AddState(sal_Int16 aState)
-	throw (uno::RuntimeException)
 {
 	DBG_ASSERT(aState < BITFIELDSIZE, "the statesset is too small");
 #if 0
@@ -143,7 +133,6 @@ inline void AccessibleStateSetHelperImpl::AddState(sal_Int16 aState)
 }
 
 inline void AccessibleStateSetHelperImpl::RemoveState(sal_Int16 aState)
-	throw (uno::RuntimeException)
 {
 	DBG_ASSERT(aState < BITFIELDSIZE, "the statesset is too small");
 #if 0
@@ -159,7 +148,6 @@ inline sal_Bool AccessibleStateSetHelperImpl::Compare(
 	const AccessibleStateSetHelperImpl* pComparativeValue,
 		AccessibleStateSetHelperImpl* pOldStates,
 		AccessibleStateSetHelperImpl* pNewStates)
-	throw (uno::RuntimeException)
 {
 	sal_Bool bResult(sal_False);
 	if (pComparativeValue && pOldStates && pNewStates)
@@ -222,7 +210,6 @@ AccessibleStateSetHelper::~AccessibleStateSetHelper(void)
             <FALSE/> if there is at least one state set in it.
     */
 sal_Bool SAL_CALL AccessibleStateSetHelper::isEmpty ()
-	throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard (maMutex);
 	return mpHelperImpl->IsEmpty();
@@ -240,7 +227,6 @@ sal_Bool SAL_CALL AccessibleStateSetHelper::isEmpty ()
             state set and <FALSE/> otherwise.
     */
 sal_Bool SAL_CALL AccessibleStateSetHelper::contains (sal_Int16 aState)
-	throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard (maMutex);
 	return mpHelperImpl->Contains(aState);
@@ -263,7 +249,6 @@ sal_Bool SAL_CALL AccessibleStateSetHelper::contains (sal_Int16 aState)
     */
 sal_Bool SAL_CALL AccessibleStateSetHelper::containsAll
 	(const uno::Sequence<sal_Int16>& rStateSet)
-	throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard (maMutex);
 	sal_Int32 nCount(rStateSet.getLength());
@@ -279,21 +264,18 @@ sal_Bool SAL_CALL AccessibleStateSetHelper::containsAll
 }
 
 uno::Sequence<sal_Int16> SAL_CALL AccessibleStateSetHelper::getStates()
-    throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard(maMutex);
     return mpHelperImpl->GetStates();
 }
 
 void AccessibleStateSetHelper::AddState(sal_Int16 aState)
-	throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard (maMutex);
 	mpHelperImpl->AddState(aState);
 }
 
 void AccessibleStateSetHelper::RemoveState(sal_Int16 aState)
-	throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard (maMutex);
 	mpHelperImpl->RemoveState(aState);
@@ -303,7 +285,6 @@ sal_Bool AccessibleStateSetHelper::Compare(
 	const AccessibleStateSetHelper& rComparativeValue,
 		AccessibleStateSetHelper& rOldStates,
 		AccessibleStateSetHelper& rNewStates)
-	throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard (maMutex);
 	return mpHelperImpl->Compare(rComparativeValue.mpHelperImpl,
@@ -314,7 +295,6 @@ sal_Bool AccessibleStateSetHelper::Compare(
 
 uno::Sequence< ::com::sun::star::uno::Type>
 	AccessibleStateSetHelper::getTypes (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	const ::com::sun::star::uno::Type aTypeList[] = {
     	::getCppuType((const uno::Reference<
@@ -329,7 +309,6 @@ uno::Sequence< ::com::sun::star::uno::Type>
 
 uno::Sequence<sal_Int8> SAL_CALL
 	AccessibleStateSetHelper::getImplementationId (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard (maMutex);
 	static uno::Sequence<sal_Int8> aId;

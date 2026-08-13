@@ -82,36 +82,25 @@ public:
 	/** XInterface.
 	 */
 	virtual sal_Bool SAL_CALL queryInterface (
-		const Uik &rUik, Any &rIfc) throw(RuntimeException);
+		const Uik &rUik, Any &rIfc);
 
-	virtual void SAL_CALL acquire (void) throw(RuntimeException);
+	virtual void SAL_CALL acquire (void);
 
-	virtual void SAL_CALL release (void) throw(RuntimeException);
+	virtual void SAL_CALL release (void);
 
 	/** XInputStream.
 	 */
 	virtual sal_Int32 SAL_CALL readBytes (
-		Sequence<sal_Int8> &rData, sal_Int32 nBytesToRead)
-		throw (NotConnectedException,
-			   BufferSizeExceededException,
-			   IOException);
+		Sequence<sal_Int8> &rData, sal_Int32 nBytesToRead);
 
 	virtual sal_Int32 SAL_CALL readSomeBytes (
-		Sequence<sal_Int8> &rData, sal_Int32 nMaxBytesToRead)
-		throw (NotConnectedException,
-			   BufferSizeExceededException,
-			   IOException);
+		Sequence<sal_Int8> &rData, sal_Int32 nMaxBytesToRead);
 
-	virtual void SAL_CALL skipBytes (sal_Int32 nBytesToSkip)
-		throw (NotConnectedException,
-			   BufferSizeExceededException,
-			   IOException);
+	virtual void SAL_CALL skipBytes (sal_Int32 nBytesToSkip);
 
-	virtual sal_Int32 SAL_CALL available (void)
-		throw (NotConnectedException, IOException);
+	virtual sal_Int32 SAL_CALL available (void);
 
-	virtual void SAL_CALL closeInput (void)
-		throw (NotConnectedException, IOException);
+	virtual void SAL_CALL closeInput (void);
 };
 
 /*========================================================================
@@ -134,28 +123,19 @@ public:
 	/** XInterface.
 	 */
 	virtual sal_Bool SAL_CALL queryInterface (
-		const Uik &rUik, Any &rIfc) throw(RuntimeException);
+		const Uik &rUik, Any &rIfc);
 
-	virtual void SAL_CALL acquire (void) throw(RuntimeException);
-	virtual void SAL_CALL release (void) throw(RuntimeException);
+	virtual void SAL_CALL acquire (void);
+	virtual void SAL_CALL release (void);
 
 	/** XOutputStream.
 	 */
 	virtual void SAL_CALL writeBytes (
-		const Sequence<sal_Int8> &rBuffer)
-		throw (NotConnectedException,
-			   BufferSizeExceededException,
-			   IOException);
+		const Sequence<sal_Int8> &rBuffer);
 
-	virtual void SAL_CALL flush (void)
-		throw (NotConnectedException,
-			   BufferSizeExceededException,
-			   IOException);
+	virtual void SAL_CALL flush (void);
 
-	virtual void SAL_CALL closeOutput (void)
-		throw (NotConnectedException,
-			   BufferSizeExceededException,
-			   IOException);
+	virtual void SAL_CALL closeOutput (void);
 };
 
 /*========================================================================
@@ -174,11 +154,11 @@ public:
 	/** XInterface.
 	 */
 	virtual sal_Bool SAL_CALL queryInterface (
-		const Uik &rUik, Any &rIfc) throw(RuntimeException);
+		const Uik &rUik, Any &rIfc);
 
-	virtual void SAL_CALL acquire (void) throw(RuntimeException);
+	virtual void SAL_CALL acquire (void);
 
-	virtual void SAL_CALL release (void) throw(RuntimeException);
+	virtual void SAL_CALL release (void);
 
 	/** XEventListener.
 	 */
@@ -242,7 +222,7 @@ void DataSource_Impl::setBuffer (const Sequence<sal_Int8> &rBuffer)
  * XInterface: queryInterface.
  */
 sal_Bool SAL_CALL DataSource_Impl::queryInterface (
-	const Uik &rUik, Any &rIfc) throw(RuntimeException)
+	const Uik &rUik, Any &rIfc)
 {
 	if (com::sun::star::uno::queryInterface (
 		rUik, rIfc,
@@ -255,7 +235,7 @@ sal_Bool SAL_CALL DataSource_Impl::queryInterface (
 /*
  * XInterface: acquire.
  */
-void SAL_CALL DataSource_Impl::acquire (void) throw(RuntimeException)
+void SAL_CALL DataSource_Impl::acquire (void)
 {
 	OWeakObject::acquire();
 }
@@ -263,7 +243,7 @@ void SAL_CALL DataSource_Impl::acquire (void) throw(RuntimeException)
 /*
  * XInterface: release.
  */
-void SAL_CALL DataSource_Impl::release (void) throw(RuntimeException)
+void SAL_CALL DataSource_Impl::release (void)
 {
 	OWeakObject::release();
 }
@@ -273,7 +253,6 @@ void SAL_CALL DataSource_Impl::release (void) throw(RuntimeException)
  */
 sal_Int32 SAL_CALL DataSource_Impl::readBytes (
 	Sequence<sal_Int8> &rData, sal_Int32 nBytesToRead)
-	throw (NotConnectedException, BufferSizeExceededException, IOException)
 {
 	if (nBytesToRead < 0)
 		throw IOException();
@@ -295,7 +274,6 @@ sal_Int32 SAL_CALL DataSource_Impl::readBytes (
  */
 sal_Int32 SAL_CALL DataSource_Impl::readSomeBytes (
 	Sequence<sal_Int8> &rData, sal_Int32 nMaxBytesToRead)
-	throw (NotConnectedException, BufferSizeExceededException, IOException)
 {
 	return readBytes (rData, nMaxBytesToRead);
 }
@@ -304,7 +282,6 @@ sal_Int32 SAL_CALL DataSource_Impl::readSomeBytes (
  * XInputStream: skipBytes.
  */
 void SAL_CALL DataSource_Impl::skipBytes (sal_Int32 nBytesToSkip)
-	throw (NotConnectedException, BufferSizeExceededException, IOException)
 {
 	if (nBytesToSkip < 0)
 		throw IOException();
@@ -316,7 +293,6 @@ void SAL_CALL DataSource_Impl::skipBytes (sal_Int32 nBytesToSkip)
  * XInputStream: available.
  */
 sal_Int32 SAL_CALL DataSource_Impl::available (void)
-	throw (NotConnectedException, IOException)
 {
 	sal_Int32 k = m_buffer.getLength() - m_position;
 	return ((k > 0) ? k : 0);
@@ -326,7 +302,6 @@ sal_Int32 SAL_CALL DataSource_Impl::available (void)
  * XInputStream: closeInput.
  */
 void SAL_CALL DataSource_Impl::closeInput (void)
-	throw (NotConnectedException, IOException)
 {
 }
 
@@ -353,7 +328,7 @@ DataSink_Impl::~DataSink_Impl (void)
  * XInterface: queryInterface.
  */
 sal_Bool SAL_CALL DataSink_Impl::queryInterface (
-	const Uik &rUik, Any &rIfc) throw(RuntimeException)
+	const Uik &rUik, Any &rIfc)
 {
 	if (com::sun::star::uno::queryInterface (
 		rUik, rIfc,
@@ -366,7 +341,7 @@ sal_Bool SAL_CALL DataSink_Impl::queryInterface (
 /*
  * XInterface: acquire.
  */
-void SAL_CALL DataSink_Impl::acquire (void) throw(RuntimeException)
+void SAL_CALL DataSink_Impl::acquire (void)
 {
 	OWeakObject::acquire();
 }
@@ -374,7 +349,7 @@ void SAL_CALL DataSink_Impl::acquire (void) throw(RuntimeException)
 /*
  * XInterface: release.
  */
-void SAL_CALL DataSink_Impl::release (void) throw(RuntimeException)
+void SAL_CALL DataSink_Impl::release (void)
 {
 	OWeakObject::release();
 }
@@ -383,7 +358,6 @@ void SAL_CALL DataSink_Impl::release (void) throw(RuntimeException)
  * XOutputStream: writeBytes.
  */
 void SAL_CALL DataSink_Impl::writeBytes (const Sequence<sal_Int8> &rBuffer)
-	throw (NotConnectedException, BufferSizeExceededException, IOException)
 {
 	if (rBuffer.getLength())
 	{
@@ -401,7 +375,6 @@ void SAL_CALL DataSink_Impl::writeBytes (const Sequence<sal_Int8> &rBuffer)
  * XOutputStream: flush.
  */
 void SAL_CALL DataSink_Impl::flush (void)
-	throw (NotConnectedException, BufferSizeExceededException, IOException)
 {
 	if (m_buffer.getLength())
 	{
@@ -424,7 +397,6 @@ void SAL_CALL DataSink_Impl::flush (void)
  * XOutputStream: closeOutput.
  */
 void SAL_CALL DataSink_Impl::closeOutput (void)
-	throw (NotConnectedException, BufferSizeExceededException, IOException)
 {
 	flush();
 }
@@ -452,7 +424,7 @@ DecoderListener_Impl::~DecoderListener_Impl (void)
  * XInterface: queryInterface.
  */
 sal_Bool SAL_CALL DecoderListener_Impl::queryInterface (
-	const Uik &rUik, Any &rIfc) throw(RuntimeException)
+	const Uik &rUik, Any &rIfc)
 {
 	if (com::sun::star::uno::queryInterface (
 		rUik, rIfc,
@@ -466,7 +438,7 @@ sal_Bool SAL_CALL DecoderListener_Impl::queryInterface (
 /*
  * XInterface: acquire.
  */
-void SAL_CALL DecoderListener_Impl::acquire (void) throw(RuntimeException)
+void SAL_CALL DecoderListener_Impl::acquire (void)
 {
 	OWeakObject::acquire();
 }
@@ -474,7 +446,7 @@ void SAL_CALL DecoderListener_Impl::acquire (void) throw(RuntimeException)
 /*
  * XInterface: release.
  */
-void SAL_CALL DecoderListener_Impl::release (void) throw(RuntimeException)
+void SAL_CALL DecoderListener_Impl::release (void)
 {
 	OWeakObject::release();
 }

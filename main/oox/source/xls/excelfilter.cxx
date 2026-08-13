@@ -93,14 +93,14 @@ Sequence< OUString > SAL_CALL ExcelFilter_getSupportedServiceNames() throw()
 }
 
 Reference< XInterface > SAL_CALL ExcelFilter_createInstance(
-        const Reference< XComponentContext >& rxContext ) throw( Exception )
+        const Reference< XComponentContext >& rxContext )
 {
     return static_cast< ::cppu::OWeakObject* >( new ExcelFilter( rxContext ) );
 }
 
 // ----------------------------------------------------------------------------
 
-ExcelFilter::ExcelFilter( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+ExcelFilter::ExcelFilter( const Reference< XComponentContext >& rxContext ) :
     XmlFilterBase( rxContext )
 {
 }
@@ -184,14 +184,14 @@ Sequence< OUString > SAL_CALL ExcelBiffFilter_getSupportedServiceNames() throw()
 }
 
 Reference< XInterface > SAL_CALL ExcelBiffFilter_createInstance(
-        const Reference< XComponentContext >& rxContext ) throw( Exception )
+        const Reference< XComponentContext >& rxContext )
 {
     return static_cast< ::cppu::OWeakObject* >( new ExcelBiffFilter( rxContext ) );
 }
 
 // ----------------------------------------------------------------------------
 
-ExcelBiffFilter::ExcelBiffFilter( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+ExcelBiffFilter::ExcelBiffFilter( const Reference< XComponentContext >& rxContext ) :
     BinaryFilterBase( rxContext )
 {
 }
@@ -266,14 +266,14 @@ Sequence< OUString > SAL_CALL ExcelVbaProjectFilter_getSupportedServiceNames() t
 }
 
 Reference< XInterface > SAL_CALL ExcelVbaProjectFilter_createInstance(
-        const Reference< XComponentContext >& rxContext ) throw( Exception )
+        const Reference< XComponentContext >& rxContext )
 {
     return static_cast< ::cppu::OWeakObject* >( new ExcelVbaProjectFilter( rxContext ) );
 }
 
 // ----------------------------------------------------------------------------
 
-ExcelVbaProjectFilter::ExcelVbaProjectFilter( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+ExcelVbaProjectFilter::ExcelVbaProjectFilter( const Reference< XComponentContext >& rxContext ) :
     ExcelBiffFilter( rxContext )
 {
 }

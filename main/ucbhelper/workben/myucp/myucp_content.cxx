@@ -115,7 +115,6 @@ void SAL_CALL Content::release()
 //=========================================================================
 // virtual
 uno::Any SAL_CALL Content::queryInterface( const uno::Type & rType )
-    throw ( uno::RuntimeException )
 {
     uno::Any aRet;
 
@@ -139,7 +138,6 @@ XTYPEPROVIDER_COMMON_IMPL( Content );
 //=========================================================================
 // virtual
 uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
-    throw( uno::RuntimeException )
 {
 	// @@@ Add own interfaces.
 
@@ -176,7 +174,6 @@ uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
 
 // virtual
 rtl::OUString SAL_CALL Content::getImplementationName()
-    throw( uno::RuntimeException )
 {
     // @@@ Adjust implementation name.
     // Prefix with reversed company domain name.
@@ -186,7 +183,6 @@ rtl::OUString SAL_CALL Content::getImplementationName()
 //=========================================================================
 // virtual
 uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
-    throw( uno::RuntimeException )
 {
 	// @@@ Adjust macro name.
     uno::Sequence< rtl::OUString > aSNS( 1 );
@@ -203,7 +199,6 @@ uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
 
 // virtual
 rtl::OUString SAL_CALL Content::getContentType()
-    throw( uno::RuntimeException )
 {
 	// @@@ Adjust macro name ( def in myucp_provider.hxx ).
     return rtl::OUString::createFromAscii( MYUCP_CONTENT_TYPE );
@@ -220,9 +215,6 @@ uno::Any SAL_CALL Content::execute(
         const ucb::Command& aCommand,
         sal_Int32 /* CommandId */,
         const uno::Reference< ucb::XCommandEnvironment >& Environment )
-    throw( uno::Exception,
-           ucb::CommandAbortedException,
-           uno::RuntimeException )
 {
     uno::Any aRet;
 
@@ -459,7 +451,6 @@ uno::Any SAL_CALL Content::execute(
 //=========================================================================
 // virtual
 void SAL_CALL Content::abort( sal_Int32 )
-    throw( uno::RuntimeException )
 {
 	// @@@ Implement logic to abort running commands, if this makes
 	//     sense for your content.
@@ -874,7 +865,6 @@ void Content::insert(
         const uno::Reference< io::XInputStream > & xInputStream,
         sal_Bool bReplaceExisting,
         const uno::Reference< ucb::XCommandEnvironment >& Environment )
-    throw( uno::Exception )
 {
 	osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -949,7 +939,6 @@ void Content::insert(
 
 //=========================================================================
 void Content::destroy( sal_Bool bDeletePhysical )
-    throw( uno::Exception )
 {
 	// @@@ take care about bDeletePhysical -> trashcan support
 

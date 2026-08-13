@@ -268,7 +268,6 @@ xmlDocPtr SAXHelper::getDocument()
  * XDocumentHandler -- start an xml document
  */
 void SAXHelper::startDocument( void )
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	/*
 	 * Adjust inputTab
@@ -293,7 +292,6 @@ void SAXHelper::startDocument( void )
  * XDocumentHandler -- end an xml document
  */
 void SAXHelper::endDocument( void )
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	m_pSaxHandler->endDocument( m_pParserCtxt ) ;
 }
@@ -304,7 +302,6 @@ void SAXHelper::endDocument( void )
 void SAXHelper::startElement(
 	const rtl::OUString& aName,
 	const cssu::Sequence< cssxcsax::XMLAttribute >& aAttributes )
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	const xmlChar* fullName = NULL ;
 	const xmlChar** attrs = NULL ;
@@ -340,7 +337,6 @@ void SAXHelper::startElement(
  * XDocumentHandler -- end an xml element
  */
 void SAXHelper::endElement( const rtl::OUString& aName )
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	xmlChar* fullname = NULL ;
 
@@ -358,7 +354,6 @@ void SAXHelper::endElement( const rtl::OUString& aName )
  * XDocumentHandler -- an xml element or cdata characters
  */
 void SAXHelper::characters( const rtl::OUString& aChars )
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	const xmlChar* chars = NULL ;
 	int length = 0 ;
@@ -376,7 +371,6 @@ void SAXHelper::characters( const rtl::OUString& aChars )
  * XDocumentHandler -- ignorable xml white space
  */
 void SAXHelper::ignorableWhitespace( const rtl::OUString& aWhitespaces )
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	const xmlChar* chars = NULL ;
 	int length = 0 ;
@@ -396,7 +390,6 @@ void SAXHelper::ignorableWhitespace( const rtl::OUString& aWhitespaces )
 void SAXHelper::processingInstruction(
 	const rtl::OUString& aTarget,
 	const rtl::OUString& aData )
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	xmlChar* target = NULL ;
 	xmlChar* data = NULL ;
@@ -425,7 +418,6 @@ void SAXHelper::processingInstruction(
  */
 void SAXHelper::setDocumentLocator(
 	const cssu::Reference< cssxs::XLocator > &)
-	throw( cssxs::SAXException , cssu::RuntimeException )
 {
 	//--Pseudo code if necessary
 	//--m_pSaxLocator is a member defined as xmlSAXHabdlerPtr

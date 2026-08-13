@@ -57,8 +57,6 @@ uno::Reference< uno::XInterface > SAL_CALL VCLBitmapCreator::impl_staticCreateSe
 //-------------------------------------------------------------------------
 
 uno::Reference< uno::XInterface > SAL_CALL VCLBitmapCreator::createInstance()
-		throw ( uno::Exception,
-				uno::RuntimeException)
 {
 	BitmapEx aBitmap;
 	uno::Reference< uno::XInterface> aResult( VCLUnoHelper::CreateBitmap( aBitmap ), uno::UNO_QUERY );
@@ -69,8 +67,6 @@ uno::Reference< uno::XInterface > SAL_CALL VCLBitmapCreator::createInstance()
 //-------------------------------------------------------------------------
 uno::Reference< uno::XInterface > SAL_CALL VCLBitmapCreator::createInstanceWithArguments(
 												const uno::Sequence< uno::Any >& aArguments )
-		throw ( uno::Exception,
-				uno::RuntimeException)
 {
 	if ( aArguments.getLength() != 1 )
 		throw uno::Exception(); // TODO
@@ -92,14 +88,12 @@ uno::Reference< uno::XInterface > SAL_CALL VCLBitmapCreator::createInstanceWithA
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL VCLBitmapCreator::getImplementationName()
-		throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL VCLBitmapCreator::supportsService( const ::rtl::OUString& ServiceName )
-		throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -112,7 +106,6 @@ sal_Bool SAL_CALL VCLBitmapCreator::supportsService( const ::rtl::OUString& Serv
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL VCLBitmapCreator::getSupportedServiceNames()
-		throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }

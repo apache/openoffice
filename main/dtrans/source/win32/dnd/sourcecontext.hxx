@@ -59,18 +59,12 @@ public:
 	SourceContext( DragSource* pSource, const Reference<XDragSourceListener>& listener);
 	~SourceContext();
 
-	virtual void SAL_CALL addDragSourceListener( const Reference<XDragSourceListener >& dsl )
-		throw( RuntimeException);
-    virtual void SAL_CALL removeDragSourceListener( const Reference<XDragSourceListener >& dsl )
-		throw( RuntimeException);
-    virtual sal_Int32 SAL_CALL getCurrentCursor(  )
-		throw( RuntimeException);
-    virtual void SAL_CALL setCursor( sal_Int32 cursorId )
-		throw( RuntimeException);
-    virtual void SAL_CALL setImage( sal_Int32 imageId )
-		throw( RuntimeException);
-    virtual void SAL_CALL transferablesFlavorsChanged(  )
-		throw( RuntimeException);
+	virtual void SAL_CALL addDragSourceListener( const Reference<XDragSourceListener >& dsl );
+    virtual void SAL_CALL removeDragSourceListener( const Reference<XDragSourceListener >& dsl );
+    virtual sal_Int32 SAL_CALL getCurrentCursor(  );
+    virtual void SAL_CALL setCursor( sal_Int32 cursorId );
+    virtual void SAL_CALL setImage( sal_Int32 imageId );
+    virtual void SAL_CALL transferablesFlavorsChanged(  );
 
 
 

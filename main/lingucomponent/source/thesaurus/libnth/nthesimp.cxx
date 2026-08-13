@@ -150,7 +150,6 @@ PropertyHelper_Thesaurus& Thesaurus::GetPropHelper_Impl()
 
 
 Sequence< Locale > SAL_CALL Thesaurus::getLocales()
-        throw(RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -280,7 +279,6 @@ Sequence< Locale > SAL_CALL Thesaurus::getLocales()
 
 
 sal_Bool SAL_CALL Thesaurus::hasLocale(const Locale& rLocale)
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -304,7 +302,6 @@ sal_Bool SAL_CALL Thesaurus::hasLocale(const Locale& rLocale)
 Sequence < Reference < ::com::sun::star::linguistic2::XMeaning > > SAL_CALL Thesaurus::queryMeanings(
     const OUString& qTerm, const Locale& rLocale,
     const PropertyValues& rProperties)
-    throw(IllegalArgumentException, RuntimeException)
 {
     MutexGuard      aGuard( GetLinguMutex() );
 
@@ -564,7 +561,6 @@ Sequence < Reference < ::com::sun::star::linguistic2::XMeaning > > SAL_CALL Thes
 
 Reference< XInterface > SAL_CALL Thesaurus_CreateInstance(
             const Reference< XMultiServiceFactory > & /*rSMgr*/ )
-		throw(Exception)
 {
 	Reference< XInterface > xService = (cppu::OWeakObject*) new Thesaurus;
 	return xService;
@@ -572,7 +568,6 @@ Reference< XInterface > SAL_CALL Thesaurus_CreateInstance(
 
 
 OUString SAL_CALL Thesaurus::getServiceDisplayName( const Locale& /*rLocale*/ )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return A2OU( "New Thesaurus" );
@@ -580,7 +575,6 @@ OUString SAL_CALL Thesaurus::getServiceDisplayName( const Locale& /*rLocale*/ )
 
 
 void SAL_CALL Thesaurus::initialize( const Sequence< Any >& rArguments )
-		throw(Exception, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -670,7 +664,6 @@ OUString SAL_CALL Thesaurus::makeInitCap(const OUString& aTerm, CharClass * pCC)
 
 
 void SAL_CALL Thesaurus::dispose()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -684,7 +677,6 @@ void SAL_CALL Thesaurus::dispose()
 
 
 void SAL_CALL Thesaurus::addEventListener( const Reference< XEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -694,7 +686,6 @@ void SAL_CALL Thesaurus::addEventListener( const Reference< XEventListener >& rx
 
 
 void SAL_CALL Thesaurus::removeEventListener( const Reference< XEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -708,7 +699,6 @@ void SAL_CALL Thesaurus::removeEventListener( const Reference< XEventListener >&
 //
 
 OUString SAL_CALL Thesaurus::getImplementationName()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return getImplementationName_Static();
@@ -716,7 +706,6 @@ OUString SAL_CALL Thesaurus::getImplementationName()
 
 
 sal_Bool SAL_CALL Thesaurus::supportsService( const OUString& ServiceName )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -730,7 +719,6 @@ sal_Bool SAL_CALL Thesaurus::supportsService( const OUString& ServiceName )
 
 
 Sequence< OUString > SAL_CALL Thesaurus::getSupportedServiceNames()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return getSupportedServiceNames_Static();

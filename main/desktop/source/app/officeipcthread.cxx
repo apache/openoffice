@@ -307,19 +307,16 @@ OSignalHandler::TSignalAction SAL_CALL SalMainPipeExchangeSignalHandler::signal(
 
 // XServiceInfo
 OUString SAL_CALL OfficeIPCThreadController::getImplementationName()
-throw ( RuntimeException )
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.OfficeIPCThreadController" ));
 }
 
 sal_Bool SAL_CALL OfficeIPCThreadController::supportsService( const OUString& )
-throw ( RuntimeException )
 {
 	return sal_False;
 }
 
 Sequence< OUString > SAL_CALL OfficeIPCThreadController::getSupportedServiceNames()
-throw ( RuntimeException )
 {
 	Sequence< OUString > aSeq( 0 );
 	return aSeq;
@@ -327,13 +324,11 @@ throw ( RuntimeException )
 
 // XEventListener
 void SAL_CALL OfficeIPCThreadController::disposing( const EventObject& )
-throw( RuntimeException )
 {
 }
 
 // XTerminateListener
 void SAL_CALL OfficeIPCThreadController::queryTermination( const EventObject& )
-throw( TerminationVetoException, RuntimeException )
 {
 	// Desktop ask about pending request through our office ipc pipe. We have to
 	// be sure that no pending request is waiting because framework is not able to
@@ -346,7 +341,6 @@ throw( TerminationVetoException, RuntimeException )
 }
 
 void SAL_CALL OfficeIPCThreadController::notifyTermination( const EventObject& )
-throw( RuntimeException )
 {
 }
 

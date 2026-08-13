@@ -136,7 +136,6 @@ LayoutUnit::LayoutUnit() : LayoutUnit_Base()
 }
 
 void SAL_CALL LayoutUnit::queueResize( const uno::Reference< awt::XLayoutContainer > &xContainer )
-    throw( uno::RuntimeException )
 {
     AddResizeTimeout( xContainer );
 }

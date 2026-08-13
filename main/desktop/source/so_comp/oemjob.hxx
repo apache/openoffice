@@ -62,17 +62,17 @@ public:
 
 
 	// XComponent
-    virtual void SAL_CALL dispose() throw ( RuntimeException );
-    virtual void SAL_CALL addEventListener( const Reference< XEventListener > & aListener) throw ( RuntimeException );
-    virtual void SAL_CALL removeEventListener(const Reference< XEventListener > & aListener) throw ( RuntimeException );
+    virtual void SAL_CALL dispose();
+    virtual void SAL_CALL addEventListener( const Reference< XEventListener > & aListener);
+    virtual void SAL_CALL removeEventListener(const Reference< XEventListener > & aListener);
 
 	// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL	getImplementationName() throw ( RuntimeException );
-	virtual sal_Bool SAL_CALL			supportsService( const ::rtl::OUString& rServiceName ) throw ( RuntimeException );
-	virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw ( RuntimeException );
+	virtual ::rtl::OUString SAL_CALL	getImplementationName();
+	virtual sal_Bool SAL_CALL			supportsService( const ::rtl::OUString& rServiceName );
+	virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     //XJob
-    virtual Any SAL_CALL execute(const Sequence<NamedValue>& args)throw ( RuntimeException );
+    virtual Any SAL_CALL execute(const Sequence<NamedValue>& args);
 
 
     static const char* interfaces[];

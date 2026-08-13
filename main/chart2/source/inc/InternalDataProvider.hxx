@@ -92,134 +92,94 @@ public:
     APPHELPER_SERVICE_FACTORY_HELPER(InternalDataProvider)
 
     // ____ XInternalDataProvider ____
-    virtual ::sal_Bool SAL_CALL hasDataByRangeRepresentation( const ::rtl::OUString& aRange )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL hasDataByRangeRepresentation( const ::rtl::OUString& aRange );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > SAL_CALL
-        getDataByRangeRepresentation( const ::rtl::OUString& aRange )
-        throw (::com::sun::star::uno::RuntimeException);
+        getDataByRangeRepresentation( const ::rtl::OUString& aRange );
     virtual void SAL_CALL setDataByRangeRepresentation(
         const ::rtl::OUString& aRange,
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aNewData )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL insertSequence( ::sal_Int32 nAfterIndex )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL deleteSequence( ::sal_Int32 nAtIndex )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL appendSequence()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL insertComplexCategoryLevel( ::sal_Int32 nLevel )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL deleteComplexCategoryLevel( ::sal_Int32 nLevel )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL insertDataPointForAllSequences( ::sal_Int32 nAfterIndex )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL deleteDataPointForAllSequences( ::sal_Int32 nAtIndex )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL swapDataPointWithNextOneForAllSequences( ::sal_Int32 nAtIndex )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aNewData );
+    virtual void SAL_CALL insertSequence( ::sal_Int32 nAfterIndex );
+    virtual void SAL_CALL deleteSequence( ::sal_Int32 nAtIndex );
+    virtual void SAL_CALL appendSequence();
+    virtual void SAL_CALL insertComplexCategoryLevel( ::sal_Int32 nLevel );
+    virtual void SAL_CALL deleteComplexCategoryLevel( ::sal_Int32 nLevel );
+    virtual void SAL_CALL insertDataPointForAllSequences( ::sal_Int32 nAfterIndex );
+    virtual void SAL_CALL deleteDataPointForAllSequences( ::sal_Int32 nAtIndex );
+    virtual void SAL_CALL swapDataPointWithNextOneForAllSequences( ::sal_Int32 nAtIndex );
     virtual void SAL_CALL registerDataSequenceForChanges(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSequence >& xSeq )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSequence >& xSeq );
 
     // ____ XDataProvider (base of XInternalDataProvider) ____
     virtual ::sal_Bool SAL_CALL createDataSourcePossible(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArguments )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArguments );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSource > SAL_CALL createDataSource(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArguments )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArguments );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL detectArguments(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSource >& xDataSource )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSource >& xDataSource );
     virtual ::sal_Bool SAL_CALL createDataSequenceByRangeRepresentationPossible(
-        const ::rtl::OUString& aRangeRepresentation )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::rtl::OUString& aRangeRepresentation );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSequence > SAL_CALL createDataSequenceByRangeRepresentation(
-        const ::rtl::OUString& aRangeRepresentation )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XRangeSelection > SAL_CALL getRangeSelection()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::rtl::OUString& aRangeRepresentation );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XRangeSelection > SAL_CALL getRangeSelection();
 
     // ____ XRangeXMLConversion ____
     virtual ::rtl::OUString SAL_CALL convertRangeToXML(
-        const ::rtl::OUString& aRangeRepresentation )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::rtl::OUString& aRangeRepresentation );
     virtual ::rtl::OUString SAL_CALL convertRangeFromXML(
-        const ::rtl::OUString& aXMLRange )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::rtl::OUString& aXMLRange );
 
     // ____ XDateCategories ____
-    virtual ::com::sun::star::uno::Sequence< double > SAL_CALL getDateCategories() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDateCategories( const ::com::sun::star::uno::Sequence< double >& rDates ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< double > SAL_CALL getDateCategories();
+    virtual void SAL_CALL setDateCategories( const ::com::sun::star::uno::Sequence< double >& rDates );
 
     // ____ XAnyDescriptionAccess ____
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > > SAL_CALL
-        getAnyRowDescriptions() throw (::com::sun::star::uno::RuntimeException);
+        getAnyRowDescriptions();
     virtual void SAL_CALL setAnyRowDescriptions(
         const ::com::sun::star::uno::Sequence<
-        ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > >& aRowDescriptions )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > >& aRowDescriptions );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > > SAL_CALL
-        getAnyColumnDescriptions() throw (::com::sun::star::uno::RuntimeException);
+        getAnyColumnDescriptions();
     virtual void SAL_CALL setAnyColumnDescriptions(
         const ::com::sun::star::uno::Sequence<
-        ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > >& aColumnDescriptions )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > >& aColumnDescriptions );
 
     // ____ XComplexDescriptionAccess (base of XAnyDescriptionAccess) ____
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::rtl::OUString > > SAL_CALL
-        getComplexRowDescriptions() throw (::com::sun::star::uno::RuntimeException);
+        getComplexRowDescriptions();
     virtual void SAL_CALL setComplexRowDescriptions(
         const ::com::sun::star::uno::Sequence<
-        ::com::sun::star::uno::Sequence< ::rtl::OUString > >& aRowDescriptions )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > >& aRowDescriptions );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::rtl::OUString > > SAL_CALL
-        getComplexColumnDescriptions() throw (::com::sun::star::uno::RuntimeException);
+        getComplexColumnDescriptions();
     virtual void SAL_CALL setComplexColumnDescriptions(
         const ::com::sun::star::uno::Sequence<
-        ::com::sun::star::uno::Sequence< ::rtl::OUString > >& aColumnDescriptions )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > >& aColumnDescriptions );
 
     // ____ XChartDataArray (base of XComplexDescriptionAccess) ____
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > > SAL_CALL getData()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > > SAL_CALL getData();
     virtual void SAL_CALL setData(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > >& aData )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getRowDescriptions()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > >& aData );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getRowDescriptions();
     virtual void SAL_CALL setRowDescriptions(
-        const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRowDescriptions )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getColumnDescriptions()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRowDescriptions );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getColumnDescriptions();
     virtual void SAL_CALL setColumnDescriptions(
-        const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aColumnDescriptions )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aColumnDescriptions );
 
     // ____ XChartData (base of XChartDataArray) ____
     virtual void SAL_CALL addChartDataChangeEventListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart::XChartDataChangeEventListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart::XChartDataChangeEventListener >& aListener );
     virtual void SAL_CALL removeChartDataChangeEventListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart::XChartDataChangeEventListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL getNotANumber()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart::XChartDataChangeEventListener >& aListener );
+    virtual double SAL_CALL getNotANumber();
     virtual ::sal_Bool SAL_CALL isNotANumber(
-        double nNumber )
-        throw (::com::sun::star::uno::RuntimeException);
+        double nNumber );
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 	// ::com::sun::star::lang::XInitialization:
-    virtual void SAL_CALL initialize(const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > & aArguments)
-		throw (::com::sun::star::uno::RuntimeException, ::com::sun::star::uno::Exception);
+    virtual void SAL_CALL initialize(const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > & aArguments);
 
 private:
     void lcl_addDataSequenceToMap(

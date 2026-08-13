@@ -109,10 +109,10 @@ public:
     }
 private:
     // XEventListener
-    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& /*i_aEvt*/) throw ( RuntimeException )
+    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& /*i_aEvt*/)
     {
     }
-    virtual void SAL_CALL rowsChanged(const ::com::sun::star::sdb::RowsChangeEvent& i_aEvt) throw ( RuntimeException )
+    virtual void SAL_CALL rowsChanged(const ::com::sun::star::sdb::RowsChangeEvent& i_aEvt)
     {
         if ( i_aEvt.Action == RowChangeAction::UPDATE )
         {
@@ -154,7 +154,7 @@ public:
 	GridFieldValueListener(DbGridControl& _rParent, const Reference< XPropertySet >& xField, sal_uInt16 _nId);
 	virtual ~GridFieldValueListener();
 
-	virtual void _propertyChanged(const PropertyChangeEvent& evt) throw( RuntimeException );
+	virtual void _propertyChanged(const PropertyChangeEvent& evt);
 
 	void suspend() { ++m_nSuspended; }
 	void resume() { --m_nSuspended; }
@@ -187,7 +187,7 @@ GridFieldValueListener::~GridFieldValueListener()
 }
 
 //------------------------------------------------------------------------------
-void GridFieldValueListener::_propertyChanged(const PropertyChangeEvent& _evt) throw( RuntimeException )
+void GridFieldValueListener::_propertyChanged(const PropertyChangeEvent& _evt)
 {
 	DBG_ASSERT(m_nSuspended>=0, "GridFieldValueListener::_propertyChanged : resume > suspend !");
 	if (m_nSuspended <= 0)
@@ -226,7 +226,7 @@ public:
 	DisposeListenerGridBridge(	DbGridControl& _rParent, const Reference< XComponent >& _rxObject, sal_Int16 _rId = -1);
 	virtual ~DisposeListenerGridBridge();
 
-	virtual void disposing(const EventObject& _rEvent, sal_Int16 _nId) throw( RuntimeException ) { m_rParent.disposing(_nId, _rEvent); }
+	virtual void disposing(const EventObject& _rEvent, sal_Int16 _nId) { m_rParent.disposing(_nId, _rEvent); }
 };
 
 //==============================================================================
@@ -298,7 +298,7 @@ public:
 	void suspend() { ++m_nSuspended; }
 	void resume() { --m_nSuspended; }
 
-	virtual void _propertyChanged(const PropertyChangeEvent& evt) throw( RuntimeException );
+	virtual void _propertyChanged(const PropertyChangeEvent& evt);
 };
 
 //------------------------------------------------------------------------------
@@ -311,7 +311,7 @@ FmXGridSourcePropListener::FmXGridSourcePropListener(DbGridControl* _pParent)
 }
 
 //------------------------------------------------------------------------------
-void FmXGridSourcePropListener::_propertyChanged(const PropertyChangeEvent& evt) throw( RuntimeException )
+void FmXGridSourcePropListener::_propertyChanged(const PropertyChangeEvent& evt)
 {
 	DBG_ASSERT(m_nSuspended>=0, "FmXGridSourcePropListener::_propertyChanged : resume > suspend !");
 	if (m_nSuspended <= 0)
@@ -2815,7 +2815,7 @@ void DbGridControl::PostExecuteRowContextMenu(sal_uInt16 /*nRow*/, const PopupMe
 }
 
 //------------------------------------------------------------------------------
-void DbGridControl::DataSourcePropertyChanged(const PropertyChangeEvent& evt) throw( RuntimeException )
+void DbGridControl::DataSourcePropertyChanged(const PropertyChangeEvent& evt)
 {
 	TRACE_RANGE("DbGridControl::DataSourcePropertyChanged");
 	::vos::OGuard aGuard( Application::GetSolarMutex() );

@@ -90,7 +90,7 @@ APPHELPER_XSERVICEINFO_IMPL(CreationWizardUnoDlg,CHART_WIZARD_DIALOG_SERVICE_IMP
 
 //-------------------------------------------------------------------------
 // XInterface
-uno::Any SAL_CALL CreationWizardUnoDlg::queryInterface( const uno::Type& aType ) throw (uno::RuntimeException)
+uno::Any SAL_CALL CreationWizardUnoDlg::queryInterface( const uno::Type& aType )
 {
 	return OComponentHelper::queryInterface( aType );
 }
@@ -102,7 +102,7 @@ void SAL_CALL CreationWizardUnoDlg::release() throw ()
 {
     OComponentHelper::release();
 }
-uno::Any SAL_CALL CreationWizardUnoDlg::queryAggregation( uno::Type const & rType ) throw (uno::RuntimeException)
+uno::Any SAL_CALL CreationWizardUnoDlg::queryAggregation( uno::Type const & rType )
 {
     if (rType == ::getCppuType( (uno::Reference< ui::dialogs::XExecutableDialog > const *)0 ))
     {
@@ -135,7 +135,7 @@ uno::Any SAL_CALL CreationWizardUnoDlg::queryAggregation( uno::Type const & rTyp
 //-------------------------------------------------------------------------
 #define LCL_CPPUTYPE(t) (::getCppuType( reinterpret_cast< const uno::Reference<t> *>(0)))
 
-uno::Sequence< uno::Type > CreationWizardUnoDlg::getTypes() throw(uno::RuntimeException)
+uno::Sequence< uno::Type > CreationWizardUnoDlg::getTypes()
 {
     static uno::Sequence< uno::Type > aTypeList;
 
@@ -159,7 +159,7 @@ uno::Sequence< uno::Type > CreationWizardUnoDlg::getTypes() throw(uno::RuntimeEx
 	return aTypeList;
     // \--
 }
-uno::Sequence< sal_Int8 > SAL_CALL CreationWizardUnoDlg::getImplementationId( void ) throw( uno::RuntimeException )
+uno::Sequence< sal_Int8 > SAL_CALL CreationWizardUnoDlg::getImplementationId( void )
 {
     static uno::Sequence< sal_Int8 > aId;
 	if( aId.getLength() == 0 )
@@ -173,7 +173,7 @@ uno::Sequence< sal_Int8 > SAL_CALL CreationWizardUnoDlg::getImplementationId( vo
 //-------------------------------------------------------------------------
 
 // XTerminateListener
-void SAL_CALL CreationWizardUnoDlg::queryTermination( const lang::EventObject& /*Event*/ ) throw( frame::TerminationVetoException, uno::RuntimeException)
+void SAL_CALL CreationWizardUnoDlg::queryTermination( const lang::EventObject& /*Event*/ )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex());
 
@@ -187,19 +187,19 @@ void SAL_CALL CreationWizardUnoDlg::queryTermination( const lang::EventObject& /
 
 //-------------------------------------------------------------------------
 
-void SAL_CALL CreationWizardUnoDlg::notifyTermination( const lang::EventObject& /*Event*/ ) throw (uno::RuntimeException)
+void SAL_CALL CreationWizardUnoDlg::notifyTermination( const lang::EventObject& /*Event*/ )
 {
 	// we are going down, so dispose us!
 	dispose();
 }
 
-void SAL_CALL CreationWizardUnoDlg::disposing( const lang::EventObject& /*Source*/ ) throw (uno::RuntimeException)
+void SAL_CALL CreationWizardUnoDlg::disposing( const lang::EventObject& /*Source*/ )
 {
     //Listener should deregister himself and release all references to the closing object.
 }
 
 //-------------------------------------------------------------------------
-void SAL_CALL CreationWizardUnoDlg::setTitle( const ::rtl::OUString& /*rTitle*/ ) throw(uno::RuntimeException)
+void SAL_CALL CreationWizardUnoDlg::setTitle( const ::rtl::OUString& /*rTitle*/ )
 {
 }
 //-------------------------------------------------------------------------
@@ -244,7 +244,7 @@ IMPL_LINK( CreationWizardUnoDlg, DialogEventHdl, VclWindowEvent*, pEvent )
 }
 
 //-------------------------------------------------------------------------
-sal_Int16 SAL_CALL CreationWizardUnoDlg::execute(  ) throw(uno::RuntimeException)
+sal_Int16 SAL_CALL CreationWizardUnoDlg::execute(  )
 {
     sal_Int16 nRet = RET_CANCEL;
     {
@@ -261,7 +261,7 @@ sal_Int16 SAL_CALL CreationWizardUnoDlg::execute(  ) throw(uno::RuntimeException
 }
 
 //-------------------------------------------------------------------------
-void SAL_CALL CreationWizardUnoDlg::initialize( const uno::Sequence< uno::Any >& aArguments ) throw(uno::Exception, uno::RuntimeException)
+void SAL_CALL CreationWizardUnoDlg::initialize( const uno::Sequence< uno::Any >& aArguments )
 {
 	const uno::Any* pArguments = aArguments.getConstArray();
 	for(sal_Int32 i=0; i<aArguments.getLength(); ++i, ++pArguments)
@@ -317,7 +317,6 @@ void SAL_CALL CreationWizardUnoDlg::disposing()
 
 //XPropertySet
 uno::Reference< beans::XPropertySetInfo > SAL_CALL CreationWizardUnoDlg::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     OSL_ENSURE(false,"not implemented");
     return 0;
@@ -325,8 +324,6 @@ uno::Reference< beans::XPropertySetInfo > SAL_CALL CreationWizardUnoDlg::getProp
 
 void SAL_CALL CreationWizardUnoDlg::setPropertyValue( const ::rtl::OUString& rPropertyName
                                                      , const uno::Any& rValue )
-    throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException
-          , lang::WrappedTargetException, uno::RuntimeException)
 {
     if( rPropertyName.equals(C2U("Position")) )
     {
@@ -361,7 +358,6 @@ void SAL_CALL CreationWizardUnoDlg::setPropertyValue( const ::rtl::OUString& rPr
 }
 
 uno::Any SAL_CALL CreationWizardUnoDlg::getPropertyValue( const ::rtl::OUString& rPropertyName )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     uno::Any aRet;
     if( rPropertyName.equals(C2U("Position")) )
@@ -401,25 +397,21 @@ uno::Any SAL_CALL CreationWizardUnoDlg::getPropertyValue( const ::rtl::OUString&
 
 void SAL_CALL CreationWizardUnoDlg::addPropertyChangeListener(
         const ::rtl::OUString& /* aPropertyName */, const uno::Reference< beans::XPropertyChangeListener >& /* xListener */ )
-        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     OSL_ENSURE(false,"not implemented");
 }
 void SAL_CALL CreationWizardUnoDlg::removePropertyChangeListener(
     const ::rtl::OUString& /* aPropertyName */, const uno::Reference< beans::XPropertyChangeListener >& /* aListener */ )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     OSL_ENSURE(false,"not implemented");
 }
 
 void SAL_CALL CreationWizardUnoDlg::addVetoableChangeListener( const ::rtl::OUString& /* PropertyName */, const uno::Reference< beans::XVetoableChangeListener >& /* aListener */ )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     OSL_ENSURE(false,"not implemented");
 }
 
 void SAL_CALL CreationWizardUnoDlg::removeVetoableChangeListener( const ::rtl::OUString& /* PropertyName */, const uno::Reference< beans::XVetoableChangeListener >& /* aListener */ )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     OSL_ENSURE(false,"not implemented");
 }

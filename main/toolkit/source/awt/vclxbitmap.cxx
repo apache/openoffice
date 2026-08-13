@@ -35,7 +35,7 @@
 //	----------------------------------------------------
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXBitmap::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXBitmap::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XBitmap*, this ),
@@ -56,7 +56,7 @@ IMPL_XTYPEPROVIDER_END
 
 
 // ::com::sun::star::awt::XBitmap
-::com::sun::star::awt::Size VCLXBitmap::getSize() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXBitmap::getSize()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -64,7 +64,7 @@ IMPL_XTYPEPROVIDER_END
 	return aSize;
 }
 
-::com::sun::star::uno::Sequence< sal_Int8 > VCLXBitmap::getDIB() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< sal_Int8 > VCLXBitmap::getDIB()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -73,7 +73,7 @@ IMPL_XTYPEPROVIDER_END
 	return ::com::sun::star::uno::Sequence<sal_Int8>( (sal_Int8*) aMem.GetData(), aMem.Tell() );
 }
 
-::com::sun::star::uno::Sequence< sal_Int8 > VCLXBitmap::getMaskDIB() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< sal_Int8 > VCLXBitmap::getMaskDIB()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 

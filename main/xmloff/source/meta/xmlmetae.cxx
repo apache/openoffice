@@ -379,7 +379,6 @@ void SvXMLMetaExport::Export()
 // ::com::sun::star::xml::sax::XDocumentHandler:
 void SAL_CALL
 SvXMLMetaExport::startDocument()
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     // ignore: has already been done by SvXMLExport::exportDoc
     DBG_ASSERT( m_level == 0, "SvXMLMetaExport: level error" );
@@ -387,7 +386,6 @@ SvXMLMetaExport::startDocument()
 
 void SAL_CALL
 SvXMLMetaExport::endDocument()
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     // ignore: will be done by SvXMLExport::exportDoc
     DBG_ASSERT( m_level == 0, "SvXMLMetaExport: level error" );
@@ -397,7 +395,6 @@ SvXMLMetaExport::endDocument()
 void SAL_CALL
 SvXMLMetaExport::startElement(const ::rtl::OUString & i_rName,
     const uno::Reference< xml::sax::XAttributeList > & i_xAttribs)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
 
     if (m_level == 0) {
@@ -479,7 +476,6 @@ SvXMLMetaExport::startElement(const ::rtl::OUString & i_rName,
 
 void SAL_CALL
 SvXMLMetaExport::endElement(const ::rtl::OUString & i_rName)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     --m_level;
     if (m_level == 0) {
@@ -492,14 +488,12 @@ SvXMLMetaExport::endElement(const ::rtl::OUString & i_rName)
 
 void SAL_CALL
 SvXMLMetaExport::characters(const ::rtl::OUString & i_rChars)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     mrExport.Characters(i_rChars);
 }
 
 void SAL_CALL
 SvXMLMetaExport::ignorableWhitespace(const ::rtl::OUString & /*i_rWhitespaces*/)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     mrExport.IgnorableWhitespace(/*i_rWhitespaces*/);
 }
@@ -507,7 +501,6 @@ SvXMLMetaExport::ignorableWhitespace(const ::rtl::OUString & /*i_rWhitespaces*/)
 void SAL_CALL
 SvXMLMetaExport::processingInstruction(const ::rtl::OUString & i_rTarget,
     const ::rtl::OUString & i_rData)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     // ignore; the exporter cannot handle these
     (void) i_rTarget;
@@ -516,7 +509,6 @@ SvXMLMetaExport::processingInstruction(const ::rtl::OUString & i_rTarget,
 
 void SAL_CALL
 SvXMLMetaExport::setDocumentLocator(const uno::Reference<xml::sax::XLocator>&)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     // nothing to do here, move along...
 }

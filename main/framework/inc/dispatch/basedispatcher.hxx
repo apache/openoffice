@@ -278,22 +278,22 @@ class BaseDispatcher    :   // interfaces
         //  XNotifyingDispatch
         virtual void SAL_CALL dispatchWithNotification ( const css::util::URL& aURL,
                                                       const css::uno::Sequence< css::beans::PropertyValue >& aArgs,
-                                                      const css::uno::Reference< css::frame::XDispatchResultListener >& Listener ) throw ( css::uno::RuntimeException);
+                                                      const css::uno::Reference< css::frame::XDispatchResultListener >& Listener );
 
         //  XDispatch
         virtual void SAL_CALL dispatch              ( const css::util::URL&                                     aURL       ,
-                                                      const css::uno::Sequence< css::beans::PropertyValue >&    lArguments ) throw( css::uno::RuntimeException ) = 0;
+                                                      const css::uno::Sequence< css::beans::PropertyValue >&    lArguments ) = 0;
         virtual void SAL_CALL addStatusListener     ( const css::uno::Reference< css::frame::XStatusListener >& xListener  ,
-                                                      const css::util::URL&                                     aURL       ) throw( css::uno::RuntimeException );
+                                                      const css::util::URL&                                     aURL       );
         virtual void SAL_CALL removeStatusListener  ( const css::uno::Reference< css::frame::XStatusListener >& xListener  ,
-                                                      const css::util::URL&                                     aURL       ) throw( css::uno::RuntimeException );
+                                                      const css::util::URL&                                     aURL       );
 
         //   XLoadEventListener
-        virtual void SAL_CALL loadFinished          ( const css::uno::Reference< css::frame::XFrameLoader >&    xLoader    ) throw( css::uno::RuntimeException );
-        virtual void SAL_CALL loadCancelled         ( const css::uno::Reference< css::frame::XFrameLoader >&    xLoader    ) throw( css::uno::RuntimeException );
+        virtual void SAL_CALL loadFinished          ( const css::uno::Reference< css::frame::XFrameLoader >&    xLoader    );
+        virtual void SAL_CALL loadCancelled         ( const css::uno::Reference< css::frame::XFrameLoader >&    xLoader    );
 
 		//	 XEventListener
-        virtual void SAL_CALL disposing             ( const css::lang::EventObject&                             aEvent     ) throw( css::uno::RuntimeException );
+        virtual void SAL_CALL disposing             ( const css::lang::EventObject&                             aEvent     );
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

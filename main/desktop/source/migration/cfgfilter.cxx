@@ -45,7 +45,6 @@ CConfigFilter::CConfigFilter(const strings_v* include,  const strings_v* exclude
 }
 
 void SAL_CALL CConfigFilter::initialize(const Sequence< Any >& seqArgs)
-        throw (Exception)
 {
     NamedValue nv;
     for (sal_Int32 i=0; i < seqArgs.getLength(); i++)
@@ -139,9 +138,6 @@ void CConfigFilter::popElement()
 
 void SAL_CALL CConfigFilter::readData(
         const Reference< configuration::backend::XLayerHandler >& layerHandler)
-    throw (
-        com::sun::star::lang::NullPointerException, lang::WrappedTargetException,
-        com::sun::star::configuration::backend::MalformedDataException)
 {
     // when readData is called, the submitted handler will be stored
     // in m_xLayerHandler. we will then submit ourself as a handler to
@@ -161,15 +157,11 @@ void SAL_CALL CConfigFilter::readData(
 
 // XLayerHandler
 void SAL_CALL CConfigFilter::startLayer()
-    throw(::com::sun::star::lang::WrappedTargetException)
 {
     m_xLayerHandler->startLayer();
 }
 
 void SAL_CALL CConfigFilter::endLayer()
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     m_xLayerHandler->endLayer();
 }
@@ -178,9 +170,6 @@ void SAL_CALL CConfigFilter::overrideNode(
         const OUString& aName,
         sal_Int16 aAttributes,
         sal_Bool bClear)
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkElement(aName))
     {
@@ -194,9 +183,6 @@ void SAL_CALL CConfigFilter::overrideNode(
 void SAL_CALL CConfigFilter::addOrReplaceNode(
         const OUString& aName,
         sal_Int16 aAttributes)
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkElement(aName))
     {
@@ -211,9 +197,6 @@ void SAL_CALL  CConfigFilter::addOrReplaceNodeFromTemplate(
         const OUString& aName,
         const com::sun::star::configuration::backend::TemplateIdentifier& aTemplate,
         sal_Int16 aAttributes )
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkElement(aName))
     {
@@ -225,9 +208,6 @@ void SAL_CALL  CConfigFilter::addOrReplaceNodeFromTemplate(
 }
 
 void SAL_CALL  CConfigFilter::endNode()
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkCurrentElement())
     {
@@ -238,9 +218,6 @@ void SAL_CALL  CConfigFilter::endNode()
 
 void SAL_CALL  CConfigFilter::dropNode(
         const OUString& aName )
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     // does not get pushed
     if (checkElement(aName))
@@ -254,9 +231,6 @@ void SAL_CALL  CConfigFilter::overrideProperty(
         sal_Int16 aAttributes,
         const Type& aType,
         sal_Bool bClear )
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkElement(aName)){
         m_xLayerHandler->overrideProperty(aName, aAttributes, aType, bClear);
@@ -268,9 +242,6 @@ void SAL_CALL  CConfigFilter::overrideProperty(
 
 void SAL_CALL  CConfigFilter::setPropertyValue(
         const Any& aValue )
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkCurrentElement())
         m_xLayerHandler->setPropertyValue(aValue);
@@ -279,18 +250,12 @@ void SAL_CALL  CConfigFilter::setPropertyValue(
 void SAL_CALL CConfigFilter::setPropertyValueForLocale(
         const Any& aValue,
         const OUString& aLocale )
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkCurrentElement())
         m_xLayerHandler->setPropertyValueForLocale(aValue, aLocale);
 }
 
 void SAL_CALL  CConfigFilter::endProperty()
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkCurrentElement())
     {
@@ -304,9 +269,6 @@ void SAL_CALL  CConfigFilter::addProperty(
         const rtl::OUString& aName,
         sal_Int16 aAttributes,
         const Type& aType )
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     if (checkElement(aName))
         m_xLayerHandler->addProperty(aName, aAttributes, aType);
@@ -316,9 +278,6 @@ void SAL_CALL  CConfigFilter::addPropertyWithValue(
         const rtl::OUString& aName,
         sal_Int16 aAttributes,
         const Any& aValue )
-    throw(
-        ::com::sun::star::configuration::backend::MalformedDataException,
-        ::com::sun::star::lang::WrappedTargetException )
 {
     // add property with value doesn't push the property
     if (checkElement(aName))

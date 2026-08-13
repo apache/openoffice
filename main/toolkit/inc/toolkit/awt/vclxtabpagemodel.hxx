@@ -49,29 +49,29 @@ public:
 	~VCLXTabPageModel();
 
 	// ::com::sun::star::awt::XView
-    void SAL_CALL draw( sal_Int32 nX, sal_Int32 nY ) throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL draw( sal_Int32 nX, sal_Int32 nY );
 
 	// ::com::sun::star::awt::XDevice,
-	::com::sun::star::awt::DeviceInfo SAL_CALL getInfo() throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::awt::DeviceInfo SAL_CALL getInfo();
 
     // virtual void    GetPropertyIds( std::list< sal_uInt16 > &aIds ) { return ImplGetPropertyIds( aIds ); }
     UnoControlModel*	Clone() const { return new VCLXTabPageModel( *this ); }
 
     // ::com::sun::star::beans::XMultiPropertySet
-	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 	// ::com::sun::star::awt::XVclWindowPeer
-    void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value ) throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value );
 
 	// ::com::sun::star::awt::tab::XTabPageModel
-	virtual ::sal_Int16 SAL_CALL getTabPageID() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getEnabled() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setEnabled( ::sal_Bool _enabled ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getTitle() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setTitle( const ::rtl::OUString& _title ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getImageURL() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setImageURL( const ::rtl::OUString& _imageurl ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getToolTip() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setToolTip( const ::rtl::OUString& _tooltip ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Int16 SAL_CALL getTabPageID();
+    virtual ::sal_Bool SAL_CALL getEnabled();
+    virtual void SAL_CALL setEnabled( ::sal_Bool _enabled );
+    virtual ::rtl::OUString SAL_CALL getTitle();
+    virtual void SAL_CALL setTitle( const ::rtl::OUString& _title );
+    virtual ::rtl::OUString SAL_CALL getImageURL();
+    virtual void SAL_CALL setImageURL( const ::rtl::OUString& _imageurl );
+    virtual ::rtl::OUString SAL_CALL getToolTip();
+    virtual void SAL_CALL setToolTip( const ::rtl::OUString& _tooltip );
 protected:
     ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 };

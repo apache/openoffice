@@ -82,7 +82,7 @@ Reference<XInterface> SAL_CALL Configuration_createInstance (
 
 
 
-OUString Configuration_getImplementationName (void) throw(RuntimeException)
+OUString Configuration_getImplementationName (void)
 {
     return OUString(RTL_CONSTASCII_USTRINGPARAM(
         "com.sun.star.comp.Draw.framework.configuration.Configuration"));
@@ -92,7 +92,6 @@ OUString Configuration_getImplementationName (void) throw(RuntimeException)
 
 
 Sequence<rtl::OUString> SAL_CALL Configuration_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const OUString sServiceName(OUString::createFromAscii(
         "com.sun.star.drawing.framework.Configuration"));
@@ -150,7 +149,6 @@ void SAL_CALL Configuration::disposing (void)
 //----- XConfiguration --------------------------------------------------------
 
 void SAL_CALL Configuration::addResource (const Reference<XResourceId>& rxResourceId)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -173,7 +171,6 @@ void SAL_CALL Configuration::addResource (const Reference<XResourceId>& rxResour
 
 
 void SAL_CALL Configuration::removeResource (const Reference<XResourceId>& rxResourceId)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -200,7 +197,6 @@ Sequence<Reference<XResourceId> > SAL_CALL Configuration::getResources (
     const Reference<XResourceId>& rxAnchorId,
     const ::rtl::OUString& rsResourceURLPrefix,
     AnchorBindingMode eMode)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard (maMutex);
     ThrowIfDisposed();
@@ -251,7 +247,6 @@ Sequence<Reference<XResourceId> > SAL_CALL Configuration::getResources (
 
 
 sal_Bool SAL_CALL Configuration::hasResource (const Reference<XResourceId>& rxResourceId)
-    throw (RuntimeException)
 {
     ::osl::MutexGuard aGuard (maMutex);
     ThrowIfDisposed();
@@ -266,7 +261,6 @@ sal_Bool SAL_CALL Configuration::hasResource (const Reference<XResourceId>& rxRe
 //----- XCloneable ------------------------------------------------------------
 
 Reference<util::XCloneable> SAL_CALL Configuration::createClone (void)
-    throw (RuntimeException)
 {
     ::osl::MutexGuard aGuard (maMutex);
     ThrowIfDisposed();
@@ -285,7 +279,6 @@ Reference<util::XCloneable> SAL_CALL Configuration::createClone (void)
 //----- XNamed ----------------------------------------------------------------
 
 OUString SAL_CALL Configuration::getName (void)
-    throw (RuntimeException)
 {
     ::osl::MutexGuard aGuard (maMutex);
     OUString aString;
@@ -312,7 +305,6 @@ OUString SAL_CALL Configuration::getName (void)
 
 
 void SAL_CALL Configuration::setName (const OUString& rsName)
-    throw (RuntimeException)
 {
     (void)rsName; // rsName is ignored.
 }
@@ -353,7 +345,6 @@ void Configuration::PostEvent (
 
 
 void Configuration::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

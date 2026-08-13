@@ -55,10 +55,8 @@ public:
 	XTYPEPROVIDER_DECL()
 
 	// XActiveDataStreamer methods.
-    virtual void SAL_CALL setStream( const com::sun::star::uno::Reference< com::sun::star::io::XStream >& xStream )
-		throw( com::sun::star::uno::RuntimeException );
-    virtual com::sun::star::uno::Reference< com::sun::star::io::XStream > SAL_CALL getStream()
-		throw( com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL setStream( const com::sun::star::uno::Reference< com::sun::star::io::XStream >& xStream );
+    virtual com::sun::star::uno::Reference< com::sun::star::io::XStream > SAL_CALL getStream();
 };
 
 } /* namespace ucbhelper */

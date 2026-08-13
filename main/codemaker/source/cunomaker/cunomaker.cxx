@@ -41,7 +41,6 @@ sal_Bool produceAllTypes(const OString& typeName,
 						 TypeDependency& typeDependencies,
 						 CunoOptions* pOptions,
 						 sal_Bool bFullScope)
-	throw( CannotDumpException )
 {
 	if (!produceType(typeName, typeMgr,	typeDependencies, pOptions))
 	{

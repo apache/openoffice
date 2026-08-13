@@ -411,7 +411,7 @@ sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std
 	}
 
     // -------------------------------------------------------------------------
-    void OFilteredContainer::impl_refresh() throw(RuntimeException)
+    void OFilteredContainer::impl_refresh()
     {
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "api", "Ocke.Janssen@sun.com", "OFilteredContainer::impl_refresh" );
 	    if ( m_pRefreshListener )

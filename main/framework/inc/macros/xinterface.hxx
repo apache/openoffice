@@ -87,7 +87,7 @@ ________________________________________________________________________________
 //	implementation of XInterface::queryInterface() without any other interfaces!
 //*****************************************************************************************************************
 #define	PRIVATE_DEFINE_XINTERFACE_QUERYINTERFACE_PURE( CLASS, BASECLASS )																					\
-	::com::sun::star::uno::Any SAL_CALL CLASS::queryInterface( const ::com::sun::star::uno::Type& aType ) throw( ::com::sun::star::uno::RuntimeException )	\
+	::com::sun::star::uno::Any SAL_CALL CLASS::queryInterface( const ::com::sun::star::uno::Type& aType )	\
 	{																																						\
 		/* Attention: Don't use mutex or guard in this method!!! Is a method of XInterface.	*/																\
 		/* I have no own supported interfaces ...											*/																\
@@ -100,7 +100,7 @@ ________________________________________________________________________________
 //	implementation of XInterface::queryInterface() with max. 12 other interfaces!
 //*****************************************************************************************************************
 #define	PRIVATE_DEFINE_XINTERFACE_QUERYINTERFACE( CLASS, BASECLASS, INTERFACES )																			\
-	::com::sun::star::uno::Any SAL_CALL CLASS::queryInterface( const ::com::sun::star::uno::Type& aType ) throw( ::com::sun::star::uno::RuntimeException )	\
+	::com::sun::star::uno::Any SAL_CALL CLASS::queryInterface( const ::com::sun::star::uno::Type& aType )	\
 	{																																						\
 		/* Attention: Don't use mutex or guard in this method!!! Is a method of XInterface.	*/																\
 		/* Ask for my own supported interfaces ...											*/																\
@@ -121,7 +121,7 @@ ________________________________________________________________________________
 //	implementation of XInterface::queryInterface() with more then 12 other interfaces!
 //*****************************************************************************************************************
 #define	PRIVATE_DEFINE_XINTERFACE_QUERYINTERFACE_LARGE( CLASS, BASECLASS, INTERFACES_FIRST, INTERFACES_SECOND )												\
-	::com::sun::star::uno::Any SAL_CALL CLASS::queryInterface( const ::com::sun::star::uno::Type& aType ) throw( ::com::sun::star::uno::RuntimeException )	\
+	::com::sun::star::uno::Any SAL_CALL CLASS::queryInterface( const ::com::sun::star::uno::Type& aType )	\
 	{																																						\
 		/* Attention: Don't use mutex or guard in this method!!! Is a method of XInterface.	*/																\
 		/* Ask for my own supported interfaces ...											*/																\
@@ -233,7 +233,7 @@ ________________________________________________________________________________
 //	declaration of XInterface
 //*****************************************************************************************************************
 #define FWK_DECLARE_XINTERFACE																						   												\
-	virtual ::com::sun::star::uno::Any  SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType	) throw( ::com::sun::star::uno::RuntimeException );	\
+	virtual ::com::sun::star::uno::Any  SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType	);	\
     virtual void						SAL_CALL acquire       (											) throw();	\
 	virtual void						SAL_CALL release       (											) throw();
 

@@ -79,9 +79,9 @@ public:
 
 	virtual ~CorbaType();
 
-	virtual sal_Bool dump(CorbaOptions* pOptions, FileStream& o, TypeSet* allreadyDumped) throw( CannotDumpException );
-	virtual sal_Bool dumpDependedTypes(CorbaOptions* pOptions, FileStream& o, TypeSet* allreadyDumped)  throw( CannotDumpException );
-	virtual sal_Bool dumpConversionFunctions(FileStream& o, TypeSet* allreadyDumped) throw( CannotDumpException );
+	virtual sal_Bool dump(CorbaOptions* pOptions, FileStream& o, TypeSet* allreadyDumped);
+	virtual sal_Bool dumpDependedTypes(CorbaOptions* pOptions, FileStream& o, TypeSet* allreadyDumped);
+	virtual sal_Bool dumpConversionFunctions(FileStream& o, TypeSet* allreadyDumped);
 
 	static  void dumpDefaultHxxIncludes(FileStream& o);
 
@@ -94,26 +94,22 @@ public:
 	virtual ::rtl::OString printUnoType( const ::rtl::OString& type,
 										sal_Bool bConst=sal_False,
 										sal_Bool bRef=sal_False,
-										sal_Bool bNative=sal_False)
-		throw( CannotDumpException );
+										sal_Bool bNative=sal_False);
 
 	virtual void dumpUnoType(FileStream& o,
 							const ::rtl::OString& type,
 							sal_Bool bConst=sal_False,
 							sal_Bool bRef=sal_False,
-							sal_Bool bNative=sal_False)
-		throw( CannotDumpException );
+							sal_Bool bNative=sal_False);
 
 	 virtual ::rtl::OString printCorbaType(const ::rtl::OString& type,
 											sal_Bool bConst,
-											sal_Bool bRef)
-		throw( CannotDumpException );
+											sal_Bool bRef);
 
 	virtual void dumpCorbaType(FileStream& o,
 								const ::rtl::OString& type,
 								sal_Bool bConst=sal_False,
-								sal_Bool bRef=sal_False)
-		throw( CannotDumpException );
+								sal_Bool bRef=sal_False);
 
 	sal_Bool isPassedAsPointer(const ::rtl::OString& type);
 	sal_Bool isArray(const ::rtl::OString& type);
@@ -122,8 +118,7 @@ public:
 
 
 	::rtl::OString printCorbaParameter(const ::rtl::OString& type,
-										sal_Bool bOut = sal_False)
-								throw( CannotDumpException );
+										sal_Bool bOut = sal_False);
 
 	::rtl::OString	getTypeClass(const ::rtl::OString& type="",
 								sal_Bool bCStyle=sal_False);
@@ -200,7 +195,7 @@ public:
 
 	virtual ~ModuleType();
 
-	sal_Bool	dumpConversionFunctions(FileStream& o, TypeSet* allreadyDumped) throw( CannotDumpException );
+	sal_Bool	dumpConversionFunctions(FileStream& o, TypeSet* allreadyDumped);
 	void		dumpFunctions(FileStream& o);
 	sal_Bool	hasConstants();
 };
@@ -285,8 +280,7 @@ sal_Bool produceType(const ::rtl::OString& typeName,
 					TypeDependency& typeDependencies,
 					CorbaOptions* pOptions,
 					FileStream& o, TypeSet* allreadyDumped,
-					TypeSet* generatedConversions)
-	throw( CannotDumpException );
+					TypeSet* generatedConversions);
 
 /**
  * This function returns a C++ scoped name, represents the namespace

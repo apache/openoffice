@@ -152,7 +152,7 @@ void OPatternModel::describeFixedProperties( Sequence< Property >& _rProps ) con
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OPatternModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OPatternModel::getServiceName()
 {
     return FRM_COMPONENT_PATTERNFIELD;  // old (non-sun) name for compatibility !
 }

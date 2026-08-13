@@ -48,7 +48,7 @@ public:
 
 	const PropertyMap* getPropertyMap() const throw();
 
-	Property getPropertyByName( const OUString& aName ) throw( UnknownPropertyException );
+	Property getPropertyByName( const OUString& aName );
 	sal_Bool hasPropertyByName( const OUString& aName ) throw();
 
 private:
@@ -139,7 +139,7 @@ const PropertyMap* PropertyMapImpl::getPropertyMap() const throw()
 	return &maPropertyMap;
 }
 
-Property PropertyMapImpl::getPropertyByName( const OUString& aName ) throw( UnknownPropertyException )
+Property PropertyMapImpl::getPropertyByName( const OUString& aName )
 {
 	PropertyMap::iterator aIter = maPropertyMap.find( aName );
 
@@ -189,17 +189,17 @@ void PropertySetInfo::remove( const rtl::OUString& aName ) throw()
 	mpMap->remove( aName );
 }
 
-Sequence< ::com::sun::star::beans::Property > SAL_CALL PropertySetInfo::getProperties() throw(::com::sun::star::uno::RuntimeException)
+Sequence< ::com::sun::star::beans::Property > SAL_CALL PropertySetInfo::getProperties()
 {
 	return mpMap->getProperties();
 }
 
-Property SAL_CALL PropertySetInfo::getPropertyByName( const ::rtl::OUString& aName ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException)
+Property SAL_CALL PropertySetInfo::getPropertyByName( const ::rtl::OUString& aName )
 {
 	return mpMap->getPropertyByName( aName );
 }
 
-sal_Bool SAL_CALL PropertySetInfo::hasPropertyByName( const ::rtl::OUString& Name ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL PropertySetInfo::hasPropertyByName( const ::rtl::OUString& Name )
 {
 	return mpMap->hasPropertyByName( Name );
 }

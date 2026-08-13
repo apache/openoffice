@@ -126,7 +126,7 @@ void OQueryDescriptor::registerProperties()
 }
 // -----------------------------------------------------------------------------
 //--------------------------------------------------------------------------
-Reference< XPropertySetInfo > SAL_CALL OQueryDescriptor::getPropertySetInfo(  ) throw(RuntimeException)
+Reference< XPropertySetInfo > SAL_CALL OQueryDescriptor::getPropertySetInfo(  )
 {
 	return createPropertySetInfo( getInfoHelper() ) ;
 }
@@ -180,7 +180,7 @@ OQueryDescriptor_Base::~OQueryDescriptor_Base()
     DBG_DTOR(OQueryDescriptor_Base,NULL);
 }
 // -----------------------------------------------------------------------------
-sal_Int64 SAL_CALL OQueryDescriptor_Base::getSomething( const Sequence< sal_Int8 >& _rIdentifier ) throw(RuntimeException)
+sal_Int64 SAL_CALL OQueryDescriptor_Base::getSomething( const Sequence< sal_Int8 >& _rIdentifier )
 {
 	if (_rIdentifier.getLength() != 16)
 		return 0;
@@ -215,7 +215,7 @@ void OQueryDescriptor_Base::clearColumns( )
 }
 
 //--------------------------------------------------------------------------
-Reference< XNameAccess > SAL_CALL OQueryDescriptor_Base::getColumns( ) throw (RuntimeException)
+Reference< XNameAccess > SAL_CALL OQueryDescriptor_Base::getColumns( )
 {
 	MutexGuard aGuard(m_rMutex);
 
@@ -246,19 +246,19 @@ Reference< XNameAccess > SAL_CALL OQueryDescriptor_Base::getColumns( ) throw (Ru
 }
 
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OQueryDescriptor_Base::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OQueryDescriptor_Base::getImplementationName(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.sdb.OQueryDescriptor");
 }
 
 //--------------------------------------------------------------------------
-sal_Bool SAL_CALL OQueryDescriptor_Base::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL OQueryDescriptor_Base::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	return ::comphelper::findValue(getSupportedServiceNames(), _rServiceName, sal_True).getLength() != 0;
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OQueryDescriptor_Base::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OQueryDescriptor_Base::getSupportedServiceNames(  )
 {
 	Sequence< ::rtl::OUString > aSupported(2);
 	aSupported.getArray()[0] = SERVICE_SDB_DATASETTINGS;

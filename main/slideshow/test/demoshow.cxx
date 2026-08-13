@@ -111,7 +111,7 @@ public:
                                      aEvent );
     }
 
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  ) throw (::com::sun::star::uno::RuntimeException)
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  )
     {
         // FIXME:
         ::com::sun::star::awt::Rectangle r;
@@ -125,12 +125,12 @@ public:
 private:
     virtual ~View() {}
 
-    virtual uno::Reference< rendering::XSpriteCanvas > SAL_CALL getCanvas(  ) throw (uno::RuntimeException)
+    virtual uno::Reference< rendering::XSpriteCanvas > SAL_CALL getCanvas(  )
     {
         return mxCanvas;
     }
 
-    virtual void SAL_CALL clear(  ) throw (uno::RuntimeException)
+    virtual void SAL_CALL clear(  )
     {
         ::basegfx::B2DPolygon aPoly( ::basegfx::tools::createPolygonFromRect(
                                          ::basegfx::B2DRectangle(0.0,0.0,
@@ -154,54 +154,54 @@ private:
         }
     }
 
-    virtual geometry::AffineMatrix2D SAL_CALL getTransformation(  ) throw (uno::RuntimeException)
+    virtual geometry::AffineMatrix2D SAL_CALL getTransformation(  )
     {
         geometry::AffineMatrix2D aRes;
         return basegfx::unotools::affineMatrixFromHomMatrix( aRes,
                                                              maTransform );
     }
 
-    virtual void SAL_CALL addTransformationChangedListener( const uno::Reference< util::XModifyListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addTransformationChangedListener( const uno::Reference< util::XModifyListener >& xListener )
     {
         maTransformationListeners.addInterface( xListener );
     }
 
-    virtual void SAL_CALL removeTransformationChangedListener( const uno::Reference< util::XModifyListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removeTransformationChangedListener( const uno::Reference< util::XModifyListener >& xListener )
     {
         maTransformationListeners.removeInterface( xListener );
     }
 
-    virtual void SAL_CALL addPaintListener( const uno::Reference< awt::XPaintListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addPaintListener( const uno::Reference< awt::XPaintListener >& xListener )
     {
         maPaintListeners.addInterface( xListener );
     }
 
-    virtual void SAL_CALL removePaintListener( const uno::Reference< awt::XPaintListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removePaintListener( const uno::Reference< awt::XPaintListener >& xListener )
     {
         maPaintListeners.removeInterface( xListener );
     }
 
-    virtual void SAL_CALL addMouseListener( const uno::Reference< awt::XMouseListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addMouseListener( const uno::Reference< awt::XMouseListener >& xListener )
     {
         maMouseListeners.addInterface( xListener );
     }
 
-    virtual void SAL_CALL removeMouseListener( const uno::Reference< awt::XMouseListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removeMouseListener( const uno::Reference< awt::XMouseListener >& xListener )
     {
         maMouseListeners.removeInterface( xListener );
     }
 
-    virtual void SAL_CALL addMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& xListener )
     {
         maMouseMotionListeners.addInterface( xListener );
     }
 
-    virtual void SAL_CALL removeMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& xListener ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removeMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& xListener )
     {
         maMouseMotionListeners.removeInterface( xListener );
     }
 
-    virtual void SAL_CALL setMouseCursor( ::sal_Int16 /*nPointerShape*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL setMouseCursor( ::sal_Int16 /*nPointerShape*/ )
     {
     }
 
@@ -224,46 +224,46 @@ public:
 
 private:
     // XDrawPage
-    virtual void SAL_CALL add( const uno::Reference< drawing::XShape >& /*xShape*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL add( const uno::Reference< drawing::XShape >& /*xShape*/ )
     {
     }
 
-    virtual void SAL_CALL remove( const uno::Reference< drawing::XShape >& /*xShape*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL remove( const uno::Reference< drawing::XShape >& /*xShape*/ )
     {
     }
 
-    virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException)
+    virtual ::sal_Int32 SAL_CALL getCount(  )
     {
         return 0;
     }
 
-    virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 /*Index*/ ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
+    virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 /*Index*/ )
     {
         return uno::Any();
     }
 
-    virtual uno::Type SAL_CALL getElementType(  ) throw (uno::RuntimeException)
+    virtual uno::Type SAL_CALL getElementType(  )
     {
         return uno::Type();
     }
 
-    virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException)
+    virtual ::sal_Bool SAL_CALL hasElements(  )
     {
         return false;
     }
 
     // XPropertySet
-    virtual uno::Reference< beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw (uno::RuntimeException)
+    virtual uno::Reference< beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  )
     {
         return uno::Reference< beans::XPropertySetInfo >();
     }
 
     virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& /*aPropertyName*/,
-                                            const uno::Any& /*aValue*/ ) throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
+                                            const uno::Any& /*aValue*/ )
     {
     }
 
-    virtual uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
+    virtual uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName )
     {
         typedef ::canvas::tools::ValueMap< sal_Int16 > PropMapT;
 
@@ -290,22 +290,22 @@ private:
     }
 
     virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& /*aPropertyName*/,
-                                                     const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/ ) throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
+                                                     const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/ )
     {
     }
 
     virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& /*aPropertyName*/,
-                                                        const uno::Reference< beans::XPropertyChangeListener >& /*aListener*/ ) throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
+                                                        const uno::Reference< beans::XPropertyChangeListener >& /*aListener*/ )
     {
     }
 
     virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& /*PropertyName*/,
-                                                     const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ ) throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
+                                                     const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
     {
     }
 
     virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& /*PropertyName*/,
-                                                        const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ ) throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
+                                                        const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
     {
     }
 };

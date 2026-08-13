@@ -164,14 +164,11 @@ public:
 	//////////////////////////////////////////////////////////////////////
 
     virtual ::rtl::OUString SAL_CALL
-	getImplementationName()
-		throw( ::com::sun::star::uno::RuntimeException ) = 0;
+	getImplementationName() = 0;
     virtual sal_Bool SAL_CALL
-	supportsService( const ::rtl::OUString& ServiceName )
-		throw( ::com::sun::star::uno::RuntimeException );
+	supportsService( const ::rtl::OUString& ServiceName );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-	getSupportedServiceNames()
-		throw( ::com::sun::star::uno::RuntimeException ) = 0;
+	getSupportedServiceNames() = 0;
 
 	//////////////////////////////////////////////////////////////////////
 	// XContentProvider
@@ -191,15 +188,12 @@ public:
 	virtual ::com::sun::star::uno::Reference<
 				::com::sun::star::ucb::XContent > SAL_CALL
 	queryContent( const ::com::sun::star::uno::Reference<
-					::com::sun::star::ucb::XContentIdentifier >& Identifier )
-		throw( ::com::sun::star::ucb::IllegalIdentifierException,
-			   ::com::sun::star::uno::RuntimeException ) = 0;
+					::com::sun::star::ucb::XContentIdentifier >& Identifier ) = 0;
     virtual sal_Int32 SAL_CALL
 	compareContentIds( const ::com::sun::star::uno::Reference<
 							::com::sun::star::ucb::XContentIdentifier >& Id1,
 					   const ::com::sun::star::uno::Reference<
-					   		::com::sun::star::ucb::XContentIdentifier >& Id2 )
-		throw( ::com::sun::star::uno::RuntimeException );
+					   		::com::sun::star::ucb::XContentIdentifier >& Id2 );
 
 	//////////////////////////////////////////////////////////////////////
 	// Non-interface methods.

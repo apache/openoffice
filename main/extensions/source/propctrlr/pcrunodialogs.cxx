@@ -71,7 +71,7 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	Sequence<sal_Int8> SAL_CALL OTabOrderDialog::getImplementationId(  ) throw(RuntimeException)
+	Sequence<sal_Int8> SAL_CALL OTabOrderDialog::getImplementationId(  )
 	{
 		static ::cppu::OImplementationId aId;
 		return aId.getImplementationId();
@@ -84,25 +84,25 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OTabOrderDialog::getImplementationName() throw(RuntimeException)
+	::rtl::OUString SAL_CALL OTabOrderDialog::getImplementationName()
 	{
 		return getImplementationName_static();
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString OTabOrderDialog::getImplementationName_static() throw(RuntimeException)
+	::rtl::OUString OTabOrderDialog::getImplementationName_static()
 	{
 		return ::rtl::OUString::createFromAscii( "org.openoffice.comp.form.ui.OTabOrderDialog" );
 	}
 
 	//---------------------------------------------------------------------
-	::comphelper::StringSequence SAL_CALL OTabOrderDialog::getSupportedServiceNames() throw(RuntimeException)
+	::comphelper::StringSequence SAL_CALL OTabOrderDialog::getSupportedServiceNames()
 	{
 		return getSupportedServiceNames_static();
 	}
 
 	//---------------------------------------------------------------------
-	::comphelper::StringSequence OTabOrderDialog::getSupportedServiceNames_static() throw(RuntimeException)
+	::comphelper::StringSequence OTabOrderDialog::getSupportedServiceNames_static()
 	{
 		::comphelper::StringSequence aSupported(1);
 		aSupported.getArray()[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.form.ui.TabOrderDialog" ) );
@@ -110,7 +110,7 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	Reference<XPropertySetInfo>  SAL_CALL OTabOrderDialog::getPropertySetInfo() throw(RuntimeException)
+	Reference<XPropertySetInfo>  SAL_CALL OTabOrderDialog::getPropertySetInfo()
 	{
 		Reference<XPropertySetInfo>  xInfo( createPropertySetInfo( getInfoHelper() ) );
 		return xInfo;

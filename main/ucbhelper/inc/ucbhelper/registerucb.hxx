@@ -118,8 +118,7 @@ UCBHELPER_DLLPUBLIC bool registerAtUcb(
 	rtl::OUString const & rName,
 	rtl::OUString const & rArguments,
 	rtl::OUString const & rTemplate,
-	ContentProviderRegistrationInfo * pInfo)
-	throw (com::sun::star::uno::RuntimeException);
+	ContentProviderRegistrationInfo * pInfo);
 
 }
 #endif // _UCBHELPER_REGISTERUCB_HXX_

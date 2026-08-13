@@ -49,7 +49,6 @@ halfwidthToFullwidth::halfwidthToFullwidth()
 
 OUString SAL_CALL
 halfwidthToFullwidth::transliterate( const OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, Sequence< sal_Int32 >& offset )
-  throw(RuntimeException)
 {
     sal_Bool _useOffset = useOffset;
     // One to One mapping
@@ -63,7 +62,6 @@ halfwidthToFullwidth::transliterate( const OUString& inStr, sal_Int32 startPos, 
 
 sal_Unicode SAL_CALL
 halfwidthToFullwidth::transliterateChar2Char( sal_Unicode inChar)
-  throw(RuntimeException, MultipleCharsOutputException)
 {
     return transliteration_OneToOne::transliterateChar2Char(inChar);
 }
@@ -79,7 +77,6 @@ halfwidthKatakanaToFullwidthKatakana::halfwidthKatakanaToFullwidthKatakana()
 
 OUString SAL_CALL
 halfwidthKatakanaToFullwidthKatakana::transliterate( const OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, Sequence< sal_Int32 >& offset )
-  throw(RuntimeException)
 {
     sal_Bool _useOffset = useOffset;
     // One to One mapping
@@ -93,7 +90,6 @@ halfwidthKatakanaToFullwidthKatakana::transliterate( const OUString& inStr, sal_
 
 sal_Unicode SAL_CALL
 halfwidthKatakanaToFullwidthKatakana::transliterateChar2Char( sal_Unicode inChar)
-  throw(RuntimeException, MultipleCharsOutputException)
 {
     return transliteration_OneToOne::transliterateChar2Char(inChar);
 }
@@ -109,7 +105,6 @@ halfwidthToFullwidthLikeJIS::halfwidthToFullwidthLikeJIS()
 
 OUString SAL_CALL
 halfwidthToFullwidthLikeJIS::transliterate( const OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, Sequence< sal_Int32 >& offset )
-  throw(RuntimeException)
 {
     sal_Bool _useOffset = useOffset;
     // One to One mapping
@@ -123,7 +118,6 @@ halfwidthToFullwidthLikeJIS::transliterate( const OUString& inStr, sal_Int32 sta
 
 sal_Unicode SAL_CALL
 halfwidthToFullwidthLikeJIS::transliterateChar2Char( sal_Unicode inChar)
-  throw(RuntimeException, MultipleCharsOutputException)
 {
     return transliteration_OneToOne::transliterateChar2Char(inChar);
 }

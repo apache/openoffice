@@ -86,7 +86,7 @@ public:
 
     // XView
 
-    virtual Reference<XResourceId> SAL_CALL getResourceId (void) throw (RuntimeException)
+    virtual Reference<XResourceId> SAL_CALL getResourceId (void)
     { return mxResourceId; };
 
 private:
@@ -113,7 +113,6 @@ public:
     virtual ~NextSlidePreview (void) {}
     virtual void SAL_CALL setCurrentPage (
         const css::uno::Reference<css::drawing::XDrawPage>& rxSlide)
-        throw (css::uno::RuntimeException)
     {
         Reference<presentation::XSlideShowController> xSlideShowController (
             mpPresenterController->GetSlideShowController());
@@ -232,7 +231,6 @@ PresenterViewFactory::~PresenterViewFactory (void)
 
 
 void SAL_CALL PresenterViewFactory::disposing (void)
-    throw (RuntimeException)
 {
     if (mxConfigurationController.is())
         mxConfigurationController->removeResourceFactoryForReference(this);
@@ -266,7 +264,6 @@ void SAL_CALL PresenterViewFactory::disposing (void)
 
 Reference<XResource> SAL_CALL PresenterViewFactory::createResource (
     const Reference<XResourceId>& rxViewId)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -295,7 +292,6 @@ Reference<XResource> SAL_CALL PresenterViewFactory::createResource (
 
 
 void SAL_CALL PresenterViewFactory::releaseResource (const Reference<XResource>& rxView)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -600,7 +596,6 @@ Reference<XView> PresenterViewFactory::CreateHelpView(
 
 
 void PresenterViewFactory::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

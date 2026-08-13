@@ -53,7 +53,6 @@ TableStyleListFragmentHandler::~TableStyleListFragmentHandler()
 // CT_TableStyleList
 Reference< XFastContextHandler > TableStyleListFragmentHandler::createFastChildContext(
 	sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 {
 	Reference< XFastContextHandler > xRet;
 	switch( aElementToken )

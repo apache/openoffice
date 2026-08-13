@@ -80,7 +80,7 @@ static OUString getOrdinalSuffixEn( sal_Int32 nNumber )
 
 
 OUString SAL_CALL OrdinalSuffix::getOrdinalSuffix( sal_Int32 nNumber,
-        const Locale &aLocale ) throw( RuntimeException )
+        const Locale &aLocale )
 {
     OUString retValue;
 
@@ -93,17 +93,17 @@ OUString SAL_CALL OrdinalSuffix::getOrdinalSuffix( sal_Int32 nNumber,
 
 const sal_Char cOrdinalSuffix[] = "com.sun.star.i18n.OrdinalSuffix";
 
-OUString SAL_CALL OrdinalSuffix::getImplementationName(void) throw( RuntimeException )
+OUString SAL_CALL OrdinalSuffix::getImplementationName(void)
 {
     return OUString::createFromAscii(cOrdinalSuffix);
 }
 
-sal_Bool SAL_CALL OrdinalSuffix::supportsService( const OUString& rServiceName) throw( RuntimeException )
+sal_Bool SAL_CALL OrdinalSuffix::supportsService( const OUString& rServiceName)
 {
     return !rServiceName.compareToAscii(cOrdinalSuffix);
 }
 
-Sequence< OUString > SAL_CALL OrdinalSuffix::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< OUString > SAL_CALL OrdinalSuffix::getSupportedServiceNames(void)
 {
     Sequence< OUString > aRet(1);
     aRet[0] = OUString::createFromAscii(cOrdinalSuffix);

@@ -152,7 +152,6 @@ ONE_INSTANCE_SERVICE_FACTORY_IMPL( ContentProvider );
 // virtual
 uno::Reference< ucb::XContent > SAL_CALL ContentProvider::queryContent(
         const uno::Reference< ucb::XContentIdentifier >& Identifier )
-    throw( ucb::IllegalIdentifierException, uno::RuntimeException )
 {
 	// Check URL scheme...
 	if(!getHandle())
@@ -518,7 +517,7 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 	return getContentProperty(_sTitle,aFunc);
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString ContentProvider::openDoc(const ::rtl::Reference<ContentProperties>& _rProp)  throw (uno::Exception)
+::rtl::OUString ContentProvider::openDoc(const ::rtl::Reference<ContentProperties>& _rProp)
 {
 	OSL_ENSURE(_rProp.is(),"No valid content properties!");
 	if(!_rProp->m_bIsOpen)

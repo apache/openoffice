@@ -33,12 +33,12 @@
 using namespace com::sun::star;
 using namespace ooo::vba;
 
-ScVbaCommandBar::ScVbaCommandBar( const uno::Reference< ov::XHelperInterface > xParent, const uno::Reference< uno::XComponentContext > xContext, VbaCommandBarHelperRef pHelper, const uno::Reference< container::XIndexAccess >& xBarSettings, const rtl::OUString& sResourceUrl, sal_Bool bIsMenu, sal_Bool bTemporary ) throw( uno::RuntimeException ) : CommandBar_BASE( xParent, xContext ), pCBarHelper( pHelper ), m_xBarSettings( xBarSettings ), m_sResourceUrl( sResourceUrl ), m_bIsMenu( bIsMenu ), m_bTemporary( bTemporary )
+ScVbaCommandBar::ScVbaCommandBar( const uno::Reference< ov::XHelperInterface > xParent, const uno::Reference< uno::XComponentContext > xContext, VbaCommandBarHelperRef pHelper, const uno::Reference< container::XIndexAccess >& xBarSettings, const rtl::OUString& sResourceUrl, sal_Bool bIsMenu, sal_Bool bTemporary ) : CommandBar_BASE( xParent, xContext ), pCBarHelper( pHelper ), m_xBarSettings( xBarSettings ), m_sResourceUrl( sResourceUrl ), m_bIsMenu( bIsMenu ), m_bTemporary( bTemporary )
 {
 }
 
 ::rtl::OUString SAL_CALL
-ScVbaCommandBar::getName() throw ( uno::RuntimeException )
+ScVbaCommandBar::getName()
 {
     // This will get a "NULL length string" when Name is not set.
     uno::Reference< beans::XPropertySet > xPropertySet( m_xBarSettings, uno::UNO_QUERY_THROW );
@@ -70,7 +70,7 @@ ScVbaCommandBar::getName() throw ( uno::RuntimeException )
     return sName;
 }
 void SAL_CALL
-ScVbaCommandBar::setName( const ::rtl::OUString& _name ) throw (uno::RuntimeException)
+ScVbaCommandBar::setName( const ::rtl::OUString& _name )
 {
     uno::Reference< beans::XPropertySet > xPropertySet( m_xBarSettings, uno::UNO_QUERY_THROW );
     xPropertySet->setPropertyValue( rtl::OUString::createFromAscii("UIName"), uno::makeAny( _name ) );
@@ -78,7 +78,7 @@ ScVbaCommandBar::setName( const ::rtl::OUString& _name ) throw (uno::RuntimeExce
     pCBarHelper->ApplyChange( m_sResourceUrl, m_xBarSettings );
 }
 ::sal_Bool SAL_CALL
-ScVbaCommandBar::getVisible() throw (uno::RuntimeException)
+ScVbaCommandBar::getVisible()
 {
     // menu bar is always visible in AOO
     if( m_bIsMenu )
@@ -101,7 +101,7 @@ ScVbaCommandBar::getVisible() throw (uno::RuntimeException)
     return bVisible;
 }
 void SAL_CALL
-ScVbaCommandBar::setVisible( ::sal_Bool _visible ) throw (uno::RuntimeException)
+ScVbaCommandBar::setVisible( ::sal_Bool _visible )
 {
     try
     {
@@ -124,21 +124,21 @@ ScVbaCommandBar::setVisible( ::sal_Bool _visible ) throw (uno::RuntimeException)
 }
 
 ::sal_Bool SAL_CALL
-ScVbaCommandBar::getEnabled() throw (uno::RuntimeException)
+ScVbaCommandBar::getEnabled()
 {
     // emulated with Visible
     return getVisible();
 }
 
 void SAL_CALL
-ScVbaCommandBar::setEnabled( sal_Bool _enabled ) throw (uno::RuntimeException)
+ScVbaCommandBar::setEnabled( sal_Bool _enabled )
 {
     // emulated with Visible
     setVisible( _enabled );
 }
 
 void SAL_CALL
-ScVbaCommandBar::Delete(  ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaCommandBar::Delete(  )
 {
     pCBarHelper->removeSettings( m_sResourceUrl );
     uno::Reference< container::XNameContainer > xNameContainer( pCBarHelper->getPersistentWindowState(), uno::UNO_QUERY_THROW );
@@ -148,7 +148,7 @@ ScVbaCommandBar::Delete(  ) throw (script::BasicErrorException, uno::RuntimeExce
     }
 }
 uno::Any SAL_CALL
-ScVbaCommandBar::Controls( const uno::Any& aIndex ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaCommandBar::Controls( const uno::Any& aIndex )
 {
     uno::Reference< XCommandBarControls > xCommandBarControls( new ScVbaCommandBarControls( this, mxContext, m_xBarSettings, pCBarHelper, m_xBarSettings, m_sResourceUrl ) );
     if( aIndex.hasValue() )
@@ -159,7 +159,7 @@ ScVbaCommandBar::Controls( const uno::Any& aIndex ) throw (script::BasicErrorExc
 }
 
 sal_Int32 SAL_CALL
-ScVbaCommandBar::Type() throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaCommandBar::Type()
 {
     // #FIXME support msoBarTypePopup
     sal_Int32 nType = office::MsoBarType::msoBarTypePopup;
@@ -168,7 +168,7 @@ ScVbaCommandBar::Type() throw (script::BasicErrorException, uno::RuntimeExceptio
 }
 
 uno::Any SAL_CALL
-ScVbaCommandBar::FindControl( const uno::Any& /*aType*/, const uno::Any& /*aId*/, const uno::Any& /*aTag*/, const uno::Any& /*aVisible*/, const uno::Any& /*aRecursive*/ ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaCommandBar::FindControl( const uno::Any& /*aType*/, const uno::Any& /*aId*/, const uno::Any& /*aTag*/, const uno::Any& /*aVisible*/, const uno::Any& /*aRecursive*/ )
 {
     // alwayse fail to find control
     return uno::makeAny( uno::Reference< XCommandBarControl > () );
@@ -196,50 +196,50 @@ ScVbaCommandBar::getServiceNames()
 VbaDummyCommandBar::VbaDummyCommandBar(
         const uno::Reference< ov::XHelperInterface > xParent,
         const uno::Reference< uno::XComponentContext > xContext,
-        const ::rtl::OUString& rName, sal_Int32 nType ) throw( uno::RuntimeException ) :
+        const ::rtl::OUString& rName, sal_Int32 nType ) :
     CommandBar_BASE( xParent, xContext ),
     maName( rName ),
     mnType( nType )
 {
 }
 
-::rtl::OUString SAL_CALL VbaDummyCommandBar::getName() throw ( uno::RuntimeException )
+::rtl::OUString SAL_CALL VbaDummyCommandBar::getName()
 {
     return maName;
 }
 
-void SAL_CALL VbaDummyCommandBar::setName( const ::rtl::OUString& _name ) throw (uno::RuntimeException)
+void SAL_CALL VbaDummyCommandBar::setName( const ::rtl::OUString& _name )
 {
     maName = _name;
 }
 
-::sal_Bool SAL_CALL VbaDummyCommandBar::getVisible() throw (uno::RuntimeException)
+::sal_Bool SAL_CALL VbaDummyCommandBar::getVisible()
 {
     return sal_True;
 }
 
-void SAL_CALL VbaDummyCommandBar::setVisible( ::sal_Bool /*_visible*/ ) throw (uno::RuntimeException)
+void SAL_CALL VbaDummyCommandBar::setVisible( ::sal_Bool /*_visible*/ )
 {
 }
 
-::sal_Bool SAL_CALL VbaDummyCommandBar::getEnabled() throw (uno::RuntimeException)
+::sal_Bool SAL_CALL VbaDummyCommandBar::getEnabled()
 {
     // emulated with Visible
     return getVisible();
 }
 
-void SAL_CALL VbaDummyCommandBar::setEnabled( sal_Bool _enabled ) throw (uno::RuntimeException)
+void SAL_CALL VbaDummyCommandBar::setEnabled( sal_Bool _enabled )
 {
     // emulated with Visible
     setVisible( _enabled );
 }
 
-void SAL_CALL VbaDummyCommandBar::Delete(  ) throw (script::BasicErrorException, uno::RuntimeException)
+void SAL_CALL VbaDummyCommandBar::Delete(  )
 {
     // no-op
 }
 
-uno::Any SAL_CALL VbaDummyCommandBar::Controls( const uno::Any& aIndex ) throw (script::BasicErrorException, uno::RuntimeException)
+uno::Any SAL_CALL VbaDummyCommandBar::Controls( const uno::Any& aIndex )
 {
     uno::Reference< XCommandBarControls > xCommandBarControls( new VbaDummyCommandBarControls( this, mxContext ) );
     if( aIndex.hasValue() )
@@ -247,12 +247,12 @@ uno::Any SAL_CALL VbaDummyCommandBar::Controls( const uno::Any& aIndex ) throw (
     return uno::Any( xCommandBarControls );
 }
 
-sal_Int32 SAL_CALL VbaDummyCommandBar::Type() throw (script::BasicErrorException, uno::RuntimeException)
+sal_Int32 SAL_CALL VbaDummyCommandBar::Type()
 {
     return mnType;
 }
 
-uno::Any SAL_CALL VbaDummyCommandBar::FindControl( const uno::Any& /*aType*/, const uno::Any& /*aId*/, const uno::Any& /*aTag*/, const uno::Any& /*aVisible*/, const uno::Any& /*aRecursive*/ ) throw (script::BasicErrorException, uno::RuntimeException)
+uno::Any SAL_CALL VbaDummyCommandBar::FindControl( const uno::Any& /*aType*/, const uno::Any& /*aId*/, const uno::Any& /*aTag*/, const uno::Any& /*aVisible*/, const uno::Any& /*aRecursive*/ )
 {
     return uno::Any( uno::Reference< XCommandBarControl >() );
 }

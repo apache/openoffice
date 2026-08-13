@@ -54,7 +54,7 @@ sdbcx::ObjectType OTables::createObject(const ::rtl::OUString& /*_rName*/)
 	return sdbcx::ObjectType();
 }
 // -------------------------------------------------------------------------
-void OTables::impl_refresh(  ) throw(RuntimeException)
+void OTables::impl_refresh(  )
 {
 	static_cast<OFileCatalog&>(m_rParent).refreshTables();
 }
@@ -65,7 +65,7 @@ m_xMetaData.clear();
 	OCollection::disposing();
 }
 //------------------------------------------------------------------
-Any SAL_CALL OTables::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL OTables::queryInterface( const Type & rType )
 {
 	if( rType == ::getCppuType((const Reference<XColumnLocate>*)0) ||
 		rType == ::getCppuType((const Reference<XDataDescriptorFactory>*)0) ||

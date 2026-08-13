@@ -44,7 +44,7 @@ template< typename CONCRETE_DATA_TYPE_IMPL, typename SUPERCLASS >
 
 //--------------------------------------------------------------------
 template< typename CONCRETE_DATA_TYPE_IMPL, typename SUPERCLASS >
-::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL ODerivedDataType< CONCRETE_DATA_TYPE_IMPL, SUPERCLASS >::getPropertySetInfo() throw( ::com::sun::star::uno::RuntimeException )
+::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL ODerivedDataType< CONCRETE_DATA_TYPE_IMPL, SUPERCLASS >::getPropertySetInfo()
 {
         return ::cppu::OPropertySetHelper::createPropertySetInfo( getInfoHelper() );
 }

@@ -58,26 +58,26 @@ namespace toolkit
 	    ::rtl::OUString				GetComponentServiceName();
 
 	    // XAnimation
-        virtual void SAL_CALL startAnimation(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL stopAnimation(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL isAnimationRunning(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL startAnimation(  );
+        virtual void SAL_CALL stopAnimation(  );
+        virtual ::sal_Bool SAL_CALL isAnimationRunning(  );
 
 	    // XServiceInfo
-        ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getImplementationName(  );
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         // XControl
-        sal_Bool SAL_CALL setModel( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& i_rModel ) throw ( ::com::sun::star::uno::RuntimeException );
-        void SAL_CALL createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit >& i_toolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& i_parentPeer ) throw(::com::sun::star::uno::RuntimeException);
+        sal_Bool SAL_CALL setModel( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& i_rModel );
+        void SAL_CALL createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit >& i_toolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& i_parentPeer );
 
 
         // XContainerListener
-        virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event );
+        virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event );
+        virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& i_event ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& i_event );
     };
 
     //==================================================================================================================
@@ -96,38 +96,38 @@ namespace toolkit
         virtual UnoControlModel*        Clone() const;
 
         // XPropertySet
-        ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
         // XPersistObject
-        ::rtl::OUString SAL_CALL getServiceName() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getServiceName();
 
         // XServiceInfo
-        ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getImplementationName(  );
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         // XAnimatedImages
-        virtual ::sal_Int32 SAL_CALL getStepTime() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setStepTime( ::sal_Int32 _steptime ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL getAutoRepeat() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setAutoRepeat( ::sal_Bool _autorepeat ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Int16 SAL_CALL getScaleMode() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setScaleMode( ::sal_Int16 _scalemode ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Int32 SAL_CALL getImageSetCount(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getImageSet( ::sal_Int32 i_index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL insertImageSet( ::sal_Int32 i_index, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& i_imageURLs ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL replaceImageSet( ::sal_Int32 i_index, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& i_imageURLs ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeImageSet( ::sal_Int32 i_index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Int32 SAL_CALL getStepTime();
+        virtual void SAL_CALL setStepTime( ::sal_Int32 _steptime );
+        virtual ::sal_Bool SAL_CALL getAutoRepeat();
+        virtual void SAL_CALL setAutoRepeat( ::sal_Bool _autorepeat );
+        virtual ::sal_Int16 SAL_CALL getScaleMode();
+        virtual void SAL_CALL setScaleMode( ::sal_Int16 _scalemode );
+        virtual ::sal_Int32 SAL_CALL getImageSetCount(  );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getImageSet( ::sal_Int32 i_index );
+        virtual void SAL_CALL insertImageSet( ::sal_Int32 i_index, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& i_imageURLs );
+        virtual void SAL_CALL replaceImageSet( ::sal_Int32 i_index, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& i_imageURLs );
+        virtual void SAL_CALL removeImageSet( ::sal_Int32 i_index );
 
         // XAnimatedImages::XContainer
-        virtual void SAL_CALL addContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& i_listener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& i_listener ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL addContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& i_listener );
+        virtual void SAL_CALL removeContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& i_listener );
 
     protected:
                                         ~AnimatedImagesControlModel();
 
         ::com::sun::star::uno::Any		ImplGetDefaultValue( sal_uInt16 nPropId ) const;
         ::cppu::IPropertyArrayHelper&	SAL_CALL getInfoHelper();
-	    void SAL_CALL                   setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue ) throw (::com::sun::star::uno::Exception);
+	    void SAL_CALL                   setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 
     private:
         ::boost::scoped_ptr< AnimatedImagesControlModel_Data >

@@ -62,7 +62,7 @@ namespace canvas
         mxTarget.clear();
     }
 
-    sal_Int8 SAL_CALL CachedPrimitiveBase::redraw( const rendering::ViewState& aState ) throw (lang::IllegalArgumentException, uno::RuntimeException)
+    sal_Int8 SAL_CALL CachedPrimitiveBase::redraw( const rendering::ViewState& aState )
     {
         ::basegfx::B2DHomMatrix aUsedTransformation;
         ::basegfx::B2DHomMatrix aNewTransformation;
@@ -88,17 +88,17 @@ namespace canvas
                          bSameViewTransforms );
     }
 
-    ::rtl::OUString SAL_CALL CachedPrimitiveBase::getImplementationName(  ) throw (uno::RuntimeException)
+    ::rtl::OUString SAL_CALL CachedPrimitiveBase::getImplementationName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLEMENTATION_NAME ) );
     }
 
-    sal_Bool SAL_CALL CachedPrimitiveBase::supportsService( const ::rtl::OUString& ServiceName ) throw (uno::RuntimeException)
+    sal_Bool SAL_CALL CachedPrimitiveBase::supportsService( const ::rtl::OUString& ServiceName )
     {
         return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
     }
 
-    uno::Sequence< ::rtl::OUString > SAL_CALL CachedPrimitiveBase::getSupportedServiceNames(  ) throw (uno::RuntimeException)
+    uno::Sequence< ::rtl::OUString > SAL_CALL CachedPrimitiveBase::getSupportedServiceNames(  )
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );

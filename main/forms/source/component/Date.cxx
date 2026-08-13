@@ -165,7 +165,7 @@ StringSequence SAL_CALL ODateModel::getSupportedServiceNames() throw()
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODateModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ODateModel::getServiceName()
 {
 	return FRM_COMPONENT_DATEFIELD;	// old (non-sun) name for compatibility !
 }
@@ -201,7 +201,7 @@ void SAL_CALL ODateModel::getFastPropertyValue(Any& _rValue, sal_Int32 _nHandle 
 
 //------------------------------------------------------------------------------
 sal_Bool SAL_CALL ODateModel::convertFastPropertyValue(Any& _rConvertedValue, Any& _rOldValue,
-		sal_Int32 _nHandle, const Any& _rValue ) throw(IllegalArgumentException)
+		sal_Int32 _nHandle, const Any& _rValue )
 {
 	if (PROPERTY_ID_FORMATKEY == _nHandle)
 		return convertFormatKeyPropertyValue(_rConvertedValue, _rOldValue, _rValue);
@@ -210,7 +210,7 @@ sal_Bool SAL_CALL ODateModel::convertFastPropertyValue(Any& _rConvertedValue, An
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL ODateModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue) throw ( ::com::sun::star::uno::Exception)
+void SAL_CALL ODateModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue)
 {
 	if (PROPERTY_ID_FORMATKEY == _nHandle)
 		setFormatKeyPropertyValue(_rValue);

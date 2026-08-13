@@ -47,14 +47,12 @@ BarChartType::~BarChartType()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL BarChartType::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new BarChartType( *this ));
 }
 
 // ____ XChartType ____
 ::rtl::OUString SAL_CALL BarChartType::getChartType()
-    throw (uno::RuntimeException)
 {
     return CHART2_SERVICE_NAME_CHARTTYPE_BAR;
 }

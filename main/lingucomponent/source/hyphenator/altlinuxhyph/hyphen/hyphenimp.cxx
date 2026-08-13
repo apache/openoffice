@@ -127,7 +127,6 @@ PropertyHelper_Hyphenation& Hyphenator::GetPropHelper_Impl()
 
 
 Sequence< Locale > SAL_CALL Hyphenator::getLocales()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -251,7 +250,6 @@ Sequence< Locale > SAL_CALL Hyphenator::getLocales()
 
 
 sal_Bool SAL_CALL Hyphenator::hasLocale(const Locale& rLocale)
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -277,7 +275,6 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
        const ::com::sun::star::lang::Locale& aLocale,
        sal_Int16 nMaxLeading,
        const ::com::sun::star::beans::PropertyValues& aProperties )
-       throw (com::sun::star::uno::RuntimeException, com::sun::star::lang::IllegalArgumentException)
 {
 	int nHyphenationPos = -1;
     int nHyphenationPosAlt = -1;
@@ -534,7 +531,6 @@ Reference < XHyphenatedWord > SAL_CALL Hyphenator::queryAlternativeSpelling(
         const ::com::sun::star::lang::Locale& /*aLocale*/,
         sal_Int16 /*nIndex*/,
         const ::com::sun::star::beans::PropertyValues& /*aProperties*/ )
-        throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
   /* alternative spelling isn't supported by tex dictionaries */
   /* XXX: OOo's extended libhjn algorithm can support alternative spellings with extended TeX dic. */
@@ -545,7 +541,6 @@ Reference < XHyphenatedWord > SAL_CALL Hyphenator::queryAlternativeSpelling(
 Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const ::rtl::OUString& aWord,
         const ::com::sun::star::lang::Locale& aLocale,
         const ::com::sun::star::beans::PropertyValues& aProperties )
-        throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     int wordlen;
     char *hyphens;
@@ -789,7 +784,6 @@ OUString SAL_CALL Hyphenator::makeInitCap(const OUString& aTerm, CharClass * pCC
 
 Reference< XInterface > SAL_CALL Hyphenator_CreateInstance(
         const Reference< XMultiServiceFactory > & /*rSMgr*/ )
-        throw(Exception)
 {
 	Reference< XInterface > xService = (cppu::OWeakObject*) new Hyphenator;
 	return xService;
@@ -798,7 +792,6 @@ Reference< XInterface > SAL_CALL Hyphenator_CreateInstance(
 
 sal_Bool SAL_CALL Hyphenator::addLinguServiceEventListener(
         const Reference< XLinguServiceEventListener >& rxLstnr )
-        throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -813,7 +806,6 @@ sal_Bool SAL_CALL Hyphenator::addLinguServiceEventListener(
 
 sal_Bool SAL_CALL Hyphenator::removeLinguServiceEventListener(
         const Reference< XLinguServiceEventListener >& rxLstnr )
-        throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -827,7 +819,6 @@ sal_Bool SAL_CALL Hyphenator::removeLinguServiceEventListener(
 
 
 OUString SAL_CALL Hyphenator::getServiceDisplayName( const Locale& /*rLocale*/ )
-        throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return A2OU( "Libhyphen Hyphenator" );
@@ -835,7 +826,6 @@ OUString SAL_CALL Hyphenator::getServiceDisplayName( const Locale& /*rLocale*/ )
 
 
 void SAL_CALL Hyphenator::initialize( const Sequence< Any >& rArguments )
-		throw(Exception, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -864,7 +854,6 @@ void SAL_CALL Hyphenator::initialize( const Sequence< Any >& rArguments )
 
 
 void SAL_CALL Hyphenator::dispose()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -878,7 +867,6 @@ void SAL_CALL Hyphenator::dispose()
 
 
 void SAL_CALL Hyphenator::addEventListener( const Reference< XEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -888,7 +876,6 @@ void SAL_CALL Hyphenator::addEventListener( const Reference< XEventListener >& r
 
 
 void SAL_CALL Hyphenator::removeEventListener( const Reference< XEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -902,7 +889,6 @@ void SAL_CALL Hyphenator::removeEventListener( const Reference< XEventListener >
 //
 
 OUString SAL_CALL Hyphenator::getImplementationName()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -911,7 +897,6 @@ OUString SAL_CALL Hyphenator::getImplementationName()
 
 
 sal_Bool SAL_CALL Hyphenator::supportsService( const OUString& ServiceName )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -925,7 +910,6 @@ sal_Bool SAL_CALL Hyphenator::supportsService( const OUString& ServiceName )
 
 
 Sequence< OUString > SAL_CALL Hyphenator::getSupportedServiceNames()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 

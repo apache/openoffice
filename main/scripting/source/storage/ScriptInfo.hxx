@@ -45,22 +45,16 @@ public:
     virtual ~ScriptInfo();
 
     // XScriptInfo
-    virtual ::rtl::OUString SAL_CALL getLogicalName()
-        throw ( css::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getDescription()
-        throw ( css::uno::RuntimeException ) ;
-    virtual ::rtl::OUString SAL_CALL getLanguage() throw ( css::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getFunctionName()
-        throw ( css::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getParcelURI()
-        throw ( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getLogicalName();
+    virtual ::rtl::OUString SAL_CALL getDescription() ;
+    virtual ::rtl::OUString SAL_CALL getLanguage();
+    virtual ::rtl::OUString SAL_CALL getFunctionName();
+    virtual ::rtl::OUString SAL_CALL getParcelURI();
     virtual css::uno::Reference< css::beans::XPropertySet > SAL_CALL
-        getLanguageProperties() throw ( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getFileSetNames()
-        throw ( css::uno::RuntimeException );
+        getLanguageProperties();
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getFileSetNames();
     virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getFilesInFileSet( const ::rtl::OUString & fileSetName )
-        throw ( css::uno::RuntimeException );
+        getFilesInFileSet( const ::rtl::OUString & fileSetName );
 
 private:
     ScriptData m_scriptData;

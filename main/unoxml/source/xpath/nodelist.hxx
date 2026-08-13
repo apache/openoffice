@@ -70,12 +70,11 @@ namespace XPath
         /**
         The number of nodes in the list.
         */
-        virtual sal_Int32 SAL_CALL getLength() throw (RuntimeException);
+        virtual sal_Int32 SAL_CALL getLength();
         /**
         Returns the indexth item in the collection.
         */
-        virtual Reference< XNode > SAL_CALL item(sal_Int32 index)
-            throw (RuntimeException);
+        virtual Reference< XNode > SAL_CALL item(sal_Int32 index);
     };
 }
 

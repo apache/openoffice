@@ -159,14 +159,12 @@ LineChartType::~LineChartType()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL LineChartType::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new LineChartType( *this ));
 }
 
 // ____ XChartType ____
 ::rtl::OUString SAL_CALL LineChartType::getChartType()
-    throw (uno::RuntimeException)
 {
     return CHART2_SERVICE_NAME_CHARTTYPE_LINE;
 }
@@ -174,7 +172,6 @@ uno::Reference< util::XCloneable > SAL_CALL LineChartType::createClone()
 
 // ____ OPropertySet ____
 uno::Any LineChartType::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticLineChartTypeDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -190,7 +187,6 @@ uno::Any LineChartType::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL LineChartType::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticLineChartTypeInfo::get();
 }

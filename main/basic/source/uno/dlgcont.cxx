@@ -187,7 +187,6 @@ void SAL_CALL SfxDialogLibraryContainer::writeLibraryElement
 	const OUString& aElementName,
 	const Reference< XOutputStream >& xOutput
 )
-	throw(Exception)
 {
 	Any aElement = xLib->getByName( aElementName );
 	Reference< XInputStreamProvider > xISP;
@@ -220,7 +219,7 @@ void SAL_CALL SfxDialogLibraryContainer::writeLibraryElement
 	xInput->closeInput();
 }
 
-void SfxDialogLibraryContainer::storeLibrariesToStorage( const uno::Reference< embed::XStorage >& xStorage ) throw ( RuntimeException )
+void SfxDialogLibraryContainer::storeLibrariesToStorage( const uno::Reference< embed::XStorage >& xStorage )
 {
     LibraryContainerMethodGuard aGuard( *this );
 	mbOasis2OOoFormat = sal_False;
@@ -489,12 +488,12 @@ void createRegistryInfo_SfxDialogLibraryContainer()
     static OAutoRegistration< SfxDialogLibraryContainer > aAutoRegistration;
 }
 
-::rtl::OUString SAL_CALL SfxDialogLibraryContainer::getImplementationName( ) throw (RuntimeException)
+::rtl::OUString SAL_CALL SfxDialogLibraryContainer::getImplementationName( )
 {
     return getImplementationName_static();
 }
 
-Sequence< ::rtl::OUString > SAL_CALL SfxDialogLibraryContainer::getSupportedServiceNames( ) throw (RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL SfxDialogLibraryContainer::getSupportedServiceNames( )
 {
     return getSupportedServiceNames_static();
 }
@@ -522,7 +521,7 @@ OUString SfxDialogLibraryContainer::getImplementationName_static()
     return aImplName;
 }
 
-Reference< XInterface > SAL_CALL SfxDialogLibraryContainer::Create( const Reference< XComponentContext >& ) throw( Exception )
+Reference< XInterface > SAL_CALL SfxDialogLibraryContainer::Create( const Reference< XComponentContext >& )
 {
     Reference< XInterface > xRet =
         static_cast< XInterface* >( static_cast< OWeakObject* >(new SfxDialogLibraryContainer()) );
@@ -628,7 +627,7 @@ void SfxDialogLibrary::storeResourcesToStorage( const ::com::sun::star::uno::Ref
 
 // XStringResourceSupplier
 Reference< resource::XStringResourceResolver >
-	SAL_CALL SfxDialogLibrary::getStringResource(  ) throw (RuntimeException)
+	SAL_CALL SfxDialogLibrary::getStringResource(  )
 {
 	if( !m_xStringResourcePersistence.is() )
 		m_xStringResourcePersistence = m_pParent->implCreateStringResource( this );

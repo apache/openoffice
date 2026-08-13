@@ -122,7 +122,6 @@ void ScDocDefaultsObj::ItemsChanged()
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScDocDefaultsObj::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     static uno::Reference<beans::XPropertySetInfo> aRef = new SfxItemPropertySetInfo(
@@ -132,9 +131,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScDocDefaultsObj::getPropertySe
 
 void SAL_CALL ScDocDefaultsObj::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -225,8 +221,6 @@ void SAL_CALL ScDocDefaultsObj::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScDocDefaultsObj::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	//	use pool default if set
 
@@ -285,7 +279,6 @@ SC_IMPL_DUMMY_PROPERTY_LISTENER( ScDocDefaultsObj )
 // XPropertyState
 
 beans::PropertyState SAL_CALL ScDocDefaultsObj::getPropertyState( const rtl::OUString& aPropertyName )
-								throw(beans::UnknownPropertyException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -320,7 +313,6 @@ beans::PropertyState SAL_CALL ScDocDefaultsObj::getPropertyState( const rtl::OUS
 
 uno::Sequence<beans::PropertyState> SAL_CALL ScDocDefaultsObj::getPropertyStates(
 							const uno::Sequence<rtl::OUString>& aPropertyNames )
-					throw(beans::UnknownPropertyException, uno::RuntimeException)
 {
 	//	the simple way: call getPropertyState
 
@@ -334,7 +326,6 @@ uno::Sequence<beans::PropertyState> SAL_CALL ScDocDefaultsObj::getPropertyStates
 }
 
 void SAL_CALL ScDocDefaultsObj::setPropertyToDefault( const rtl::OUString& aPropertyName )
-							throw(beans::UnknownPropertyException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -355,8 +346,6 @@ void SAL_CALL ScDocDefaultsObj::setPropertyToDefault( const rtl::OUString& aProp
 }
 
 uno::Any SAL_CALL ScDocDefaultsObj::getPropertyDefault( const rtl::OUString& aPropertyName )
-							throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-									uno::RuntimeException)
 {
 	//	always use static default
 

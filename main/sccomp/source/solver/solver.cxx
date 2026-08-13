@@ -176,24 +176,24 @@ cppu::IPropertyArrayHelper& SAL_CALL SolverComponent::getInfoHelper()
     return *getArrayHelper();
 }
 
-uno::Reference<beans::XPropertySetInfo> SAL_CALL SolverComponent::getPropertySetInfo() throw(uno::RuntimeException)
+uno::Reference<beans::XPropertySetInfo> SAL_CALL SolverComponent::getPropertySetInfo()
 {
     return createPropertySetInfo( getInfoHelper() );
 }
 
 // XSolverDescription
 
-OUString SAL_CALL SolverComponent::getComponentDescription() throw (uno::RuntimeException)
+OUString SAL_CALL SolverComponent::getComponentDescription()
 {
     return lcl_GetResourceString( RID_SOLVER_COMPONENT );
 }
 
-OUString SAL_CALL SolverComponent::getStatusDescription() throw (uno::RuntimeException)
+OUString SAL_CALL SolverComponent::getStatusDescription()
 {
     return maStatus;
 }
 
-OUString SAL_CALL SolverComponent::getPropertyDescription( const OUString& rPropertyName ) throw (uno::RuntimeException)
+OUString SAL_CALL SolverComponent::getPropertyDescription( const OUString& rPropertyName )
 {
     sal_uInt32 nResId = 0;
 	sal_Int32 nHandle = getInfoHelper().getHandleByName( rPropertyName );
@@ -230,79 +230,76 @@ OUString SAL_CALL SolverComponent::getPropertyDescription( const OUString& rProp
 
 // XSolver: settings
 
-uno::Reference<sheet::XSpreadsheetDocument> SAL_CALL SolverComponent::getDocument() throw(uno::RuntimeException)
+uno::Reference<sheet::XSpreadsheetDocument> SAL_CALL SolverComponent::getDocument()
 {
     return mxDoc;
 }
 
 void SAL_CALL SolverComponent::setDocument( const uno::Reference<sheet::XSpreadsheetDocument>& _document )
-                                throw(uno::RuntimeException)
 {
     mxDoc = _document;
 }
 
-table::CellAddress SAL_CALL SolverComponent::getObjective() throw(uno::RuntimeException)
+table::CellAddress SAL_CALL SolverComponent::getObjective()
 {
     return maObjective;
 }
 
-void SAL_CALL SolverComponent::setObjective( const table::CellAddress& _objective ) throw(uno::RuntimeException)
+void SAL_CALL SolverComponent::setObjective( const table::CellAddress& _objective )
 {
     maObjective = _objective;
 }
 
-uno::Sequence<table::CellAddress> SAL_CALL SolverComponent::getVariables() throw(uno::RuntimeException)
+uno::Sequence<table::CellAddress> SAL_CALL SolverComponent::getVariables()
 {
     return maVariables;
 }
 
 void SAL_CALL SolverComponent::setVariables( const uno::Sequence<table::CellAddress>& _variables )
-                                throw(uno::RuntimeException)
 {
     maVariables = _variables;
 }
 
-uno::Sequence<sheet::SolverConstraint> SAL_CALL SolverComponent::getConstraints() throw(uno::RuntimeException)
+uno::Sequence<sheet::SolverConstraint> SAL_CALL SolverComponent::getConstraints()
 {
     return maConstraints;
 }
 
 void SAL_CALL SolverComponent::setConstraints( const uno::Sequence<sheet::SolverConstraint>& _constraints )
-                                throw(uno::RuntimeException)
 {
     maConstraints = _constraints;
 }
 
-sal_Bool SAL_CALL SolverComponent::getMaximize() throw(uno::RuntimeException)
+sal_Bool SAL_CALL SolverComponent::getMaximize()
 {
     return mbMaximize;
 }
 
-void SAL_CALL SolverComponent::setMaximize( sal_Bool _maximize ) throw(uno::RuntimeException)
+void SAL_CALL SolverComponent::setMaximize( sal_Bool _maximize )
 {
     mbMaximize = _maximize;
 }
 
 // XSolver: get results
 
-sal_Bool SAL_CALL SolverComponent::getSuccess() throw(uno::RuntimeException)
+sal_Bool SAL_CALL SolverComponent::getSuccess()
 {
     return mbSuccess;
 }
 
-double SAL_CALL SolverComponent::getResultValue() throw(uno::RuntimeException)
+double SAL_CALL SolverComponent::getResultValue()
 {
     return mfResultValue;
 }
 
-uno::Sequence<double> SAL_CALL SolverComponent::getSolution() throw(uno::RuntimeException)
+uno::Sequence<double> SAL_CALL SolverComponent::getSolution()
 {
     return maSolution;
 }
 
 // -------------------------------------------------------------------------
 
-void SAL_CALL SolverComponent::solve() throw(uno::RuntimeException)
+void SAL_CALL SolverComponent::solve()
 {
     uno::Reference<frame::XModel> xModel( mxDoc, uno::UNO_QUERY );
     if ( !xModel.is() )
@@ -609,12 +606,12 @@ OUString SolverComponent_getImplementationName()
     return OUString::createFromAscii( "com.sun.star.comp.Calc.Solver" );
 }
 
-OUString SAL_CALL SolverComponent::getImplementationName() throw(uno::RuntimeException)
+OUString SAL_CALL SolverComponent::getImplementationName()
 {
     return SolverComponent_getImplementationName();
 }
 
-sal_Bool SAL_CALL SolverComponent::supportsService( const OUString& rServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SolverComponent::supportsService( const OUString& rServiceName )
 {
     const uno::Sequence< OUString > aServices = SolverComponent_getSupportedServiceNames();
     const OUString* pArray = aServices.getConstArray();
@@ -622,13 +619,12 @@ sal_Bool SAL_CALL SolverComponent::supportsService( const OUString& rServiceName
     return ::std::find( pArray, pArrayEnd, rServiceName ) != pArrayEnd;
 }
 
-uno::Sequence<OUString> SAL_CALL SolverComponent::getSupportedServiceNames() throw(uno::RuntimeException)
+uno::Sequence<OUString> SAL_CALL SolverComponent::getSupportedServiceNames()
 {
     return SolverComponent_getSupportedServiceNames();
 }
 
 uno::Reference<uno::XInterface> SolverComponent_createInstance( const uno::Reference<uno::XComponentContext>& rSMgr )
-    throw(uno::Exception)
 {
 	return (cppu::OWeakObject*) new SolverComponent( rSMgr );
 }

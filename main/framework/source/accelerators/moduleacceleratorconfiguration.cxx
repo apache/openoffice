@@ -113,8 +113,6 @@ ModuleAcceleratorConfiguration::~ModuleAcceleratorConfiguration()
 
 //-----------------------------------------------
 void SAL_CALL ModuleAcceleratorConfiguration::initialize(const css::uno::Sequence< css::uno::Any >& lArguments)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ModuleAcceleratorConfiguration::initialize" );
     // SAFE -> ----------------------------------
@@ -172,7 +170,6 @@ void ModuleAcceleratorConfiguration::impl_ts_fillCache()
 // XComponent.dispose(),  #120029#, to release the cyclic reference
 //
 void SAL_CALL ModuleAcceleratorConfiguration::dispose()
-	throw(css::uno::RuntimeException)
 {
     try
     {

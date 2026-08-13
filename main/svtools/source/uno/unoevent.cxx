@@ -73,11 +73,6 @@ SvBaseEventDescriptor::~SvBaseEventDescriptor()
 void SvBaseEventDescriptor::replaceByName(
 	const OUString& rName,
 	const Any& rElement )
-	throw(
-		IllegalArgumentException,
-		NoSuchElementException,
-		WrappedTargetException,
-		RuntimeException)
 {
 	sal_uInt16 nMacroID = getMacroID(rName);
 
@@ -99,10 +94,6 @@ void SvBaseEventDescriptor::replaceByName(
 
 Any SvBaseEventDescriptor::getByName(
 	const OUString& rName )
-	throw(
-		NoSuchElementException,
-		WrappedTargetException,
-		RuntimeException)
 {
 	sal_uInt16 nMacroID = getMacroID(rName);
 
@@ -119,7 +110,6 @@ Any SvBaseEventDescriptor::getByName(
 }
 
 Sequence<OUString> SvBaseEventDescriptor::getElementNames()
-	throw(RuntimeException)
 {
 	// create and fill sequence
 	Sequence<OUString> aSequence(mnMacroItems);
@@ -133,32 +123,27 @@ Sequence<OUString> SvBaseEventDescriptor::getElementNames()
 
 sal_Bool SvBaseEventDescriptor::hasByName(
 	const OUString& rName )
-	throw(RuntimeException)
 {
 	sal_uInt16 nMacroID = getMacroID(rName);
 	return (nMacroID != 0);
 }
 
 Type SvBaseEventDescriptor::getElementType()
-	throw(RuntimeException)
 {
 	return ::getCppuType((Sequence<PropertyValue> *)0);
 }
 
 sal_Bool SvBaseEventDescriptor::hasElements()
-	throw(RuntimeException)
 {
 	return mnMacroItems != 0;
 }
 
 sal_Bool SvBaseEventDescriptor::supportsService(const OUString& rServiceName)
-	throw(RuntimeException)
 {
 	return sServiceName.equals(rServiceName);
 }
 
 Sequence<OUString> SvBaseEventDescriptor::getSupportedServiceNames(void)
-	throw(RuntimeException)
 {
 	Sequence<OUString> aSequence(1);
 	aSequence[0] = sServiceName;
@@ -297,7 +282,6 @@ void SvBaseEventDescriptor::getAnyFromMacro(Any& rAny,
 void SvBaseEventDescriptor::getMacroFromAny(
 	SvxMacro& rMacro,
 	const Any& rAny)
-		throw ( IllegalArgumentException )
 {
 	// get sequence
 	Sequence<PropertyValue> aSequence;
@@ -409,11 +393,6 @@ SvEventDescriptor::~SvEventDescriptor()
 void SvEventDescriptor::replaceByName(
 	const sal_uInt16 nEvent,
 	const SvxMacro& rMacro)
-		throw(
-			IllegalArgumentException,
-			NoSuchElementException,
-			WrappedTargetException,
-			RuntimeException)
 {
 	SvxMacroItem aItem(getMacroItemWhich());
 	aItem.SetMacroTable(getMacroItem().GetMacroTable());
@@ -424,10 +403,6 @@ void SvEventDescriptor::replaceByName(
 void SvEventDescriptor::getByName(
 	SvxMacro& rMacro,
 	const sal_uInt16 nEvent )
-		throw(
-			NoSuchElementException,
-			WrappedTargetException,
-			RuntimeException)
 {
 	const SvxMacroItem& rItem = getMacroItem();
 	if( rItem.HasMacro( nEvent ) )
@@ -481,7 +456,6 @@ sal_Int16 SvDetachedEventDescriptor::getIndex(const sal_uInt16 nID) const
 }
 
 OUString SvDetachedEventDescriptor::getImplementationName()
-	throw( ::com::sun::star::uno::RuntimeException )
 {
 	return sImplName;
 }
@@ -490,11 +464,6 @@ OUString SvDetachedEventDescriptor::getImplementationName()
 void SvDetachedEventDescriptor::replaceByName(
 	const sal_uInt16 nEvent,
 	const SvxMacro& rMacro)
-	throw(
-		IllegalArgumentException,
-		NoSuchElementException,
-		WrappedTargetException,
-		RuntimeException)
 {
 	sal_Int16 nIndex = getIndex(nEvent);
 	if (-1 == nIndex)
@@ -508,10 +477,6 @@ void SvDetachedEventDescriptor::replaceByName(
 void SvDetachedEventDescriptor::getByName(
 	SvxMacro& rMacro,
 	const sal_uInt16 nEvent )
-	throw(
-		NoSuchElementException,
-		WrappedTargetException,
-		RuntimeException)
 {
 	sal_Int16 nIndex = getIndex(nEvent);
 	if (-1 == nIndex )
@@ -523,7 +488,6 @@ void SvDetachedEventDescriptor::getByName(
 
 sal_Bool SvDetachedEventDescriptor::hasByName(
 	const sal_uInt16 nEvent ) const		// item ID of event
-		throw(IllegalArgumentException)
 {
 	sal_Int16 nIndex = getIndex(nEvent);
 	if (-1 == nIndex)

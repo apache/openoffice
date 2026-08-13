@@ -55,12 +55,9 @@ public:
     ~ScriptNameResolverImpl();
 
     // XServiceInfo implementation
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     /**********************************************
      resolve method
@@ -77,20 +74,15 @@ public:
     */
     css::uno::Reference < dcsssf::storage::XScriptInfo > SAL_CALL resolve(
         const ::rtl::OUString & scriptURI,
-        css::uno::Any& invocationCtx )
-        throw( css::script::CannotConvertException, css::lang::IllegalArgumentException,
-           css::uno::RuntimeException );
+        css::uno::Any& invocationCtx );
 private:
     css::uno::Reference < dcsssf::storage::XScriptInfo >
     resolveURIFromStorageID( sal_Int32 sid, const rtl::OUString & docURI,
-        const ::rtl::OUString & nameToResolve )
-        SAL_THROW ( ( css::lang::IllegalArgumentException, css::uno::RuntimeException ) );
+        const ::rtl::OUString & nameToResolve );
     css::uno::Reference< dcsssf::storage::XScriptInfoAccess >
-    getStorageInstance( sal_Int32 sid, const rtl::OUString & permissionURI)
-        SAL_THROW ( ( css::uno::RuntimeException ) );
+    getStorageInstance( sal_Int32 sid, const rtl::OUString & permissionURI);
     ::rtl::OUString
-    ScriptNameResolverImpl::getFilesysURL( const ::rtl::OUString & scriptURI )
-        throw( css::lang::IllegalArgumentException );
+    ScriptNameResolverImpl::getFilesysURL( const ::rtl::OUString & scriptURI );
 
     /**********************************************
      Reference< XComponentContext > m_xContext

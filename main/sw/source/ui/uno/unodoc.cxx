@@ -58,7 +58,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL SwTextDocument_getSupportedServiceName
 
 uno::Reference< uno::XInterface > SAL_CALL SwTextDocument_createInstance(
         const uno::Reference< lang::XMultiServiceFactory >&, const sal_uInt64 _nCreationFlags )
-	throw( uno::Exception )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	SwDLL::Init();
@@ -87,7 +86,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL SwWebDocument_getSupportedServiceNames
 
 uno::Reference< uno::XInterface > SAL_CALL SwWebDocument_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & )
-        throw( uno::Exception )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	SwDLL::Init();
@@ -114,7 +112,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL SwGlobalDocument_getSupportedServiceNa
 
 uno::Reference< uno::XInterface > SAL_CALL SwGlobalDocument_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > &)
-        throw( uno::Exception )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	SwDLL::Init();

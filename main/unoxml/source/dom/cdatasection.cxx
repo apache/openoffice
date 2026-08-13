@@ -46,12 +46,12 @@ namespace DOM
         }
     }
 
-    OUString SAL_CALL CCDATASection::getNodeName()throw (RuntimeException)
+    OUString SAL_CALL CCDATASection::getNodeName()
     {
         return OUString::createFromAscii("#cdata-section");
     }
 
-    OUString SAL_CALL CCDATASection::getNodeValue() throw (RuntimeException)
+    OUString SAL_CALL CCDATASection::getNodeValue()
     {
         return CCharacterData::getData();
     }

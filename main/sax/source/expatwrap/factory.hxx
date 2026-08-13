@@ -22,7 +22,7 @@
 
 namespace sax_expatwrap {
 Reference< XInterface > SAL_CALL SaxWriter_CreateInstance(
-	const Reference< XComponentContext > & rCtx ) throw (Exception);
+	const Reference< XComponentContext > & rCtx );
 OUString SaxWriter_getServiceName() throw();
 OUString SaxWriter_getImplementationName() throw();
 Sequence< OUString > 	SaxWriter_getSupportedServiceNames(void) throw();

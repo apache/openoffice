@@ -185,7 +185,6 @@ void SAL_CALL SfxScriptLibraryContainer::writeLibraryElement
 	const OUString& aElementName,
 	const Reference< XOutputStream >& xOutput
 )
-	throw(Exception)
 {
 	// Create sax writer
 	Reference< XExtendedDocumentHandler > xHandler(
@@ -409,7 +408,6 @@ void SAL_CALL SfxScriptLibraryContainer::importFromOldStorage( const ::rtl::OUSt
 
 // Methods XLibraryContainerPassword
 sal_Bool SAL_CALL SfxScriptLibraryContainer::isLibraryPasswordProtected( const OUString& Name )
-    throw (NoSuchElementException, RuntimeException)
 {
     LibraryContainerMethodGuard aGuard( *this );
     SfxLibrary* pImplLib = getImplLib( Name );
@@ -418,7 +416,6 @@ sal_Bool SAL_CALL SfxScriptLibraryContainer::isLibraryPasswordProtected( const O
 }
 
 sal_Bool SAL_CALL SfxScriptLibraryContainer::isLibraryPasswordVerified( const OUString& Name )
-    throw (IllegalArgumentException, NoSuchElementException, RuntimeException)
 {
     LibraryContainerMethodGuard aGuard( *this );
     SfxLibrary* pImplLib = getImplLib( Name );
@@ -430,7 +427,6 @@ sal_Bool SAL_CALL SfxScriptLibraryContainer::isLibraryPasswordVerified( const OU
 
 sal_Bool SAL_CALL SfxScriptLibraryContainer::verifyLibraryPassword
     ( const OUString& Name, const OUString& Password )
-        throw (IllegalArgumentException, NoSuchElementException, RuntimeException)
 {
     LibraryContainerMethodGuard aGuard( *this );
     SfxLibrary* pImplLib = getImplLib( Name );
@@ -467,7 +463,6 @@ sal_Bool SAL_CALL SfxScriptLibraryContainer::verifyLibraryPassword
 
 void SAL_CALL SfxScriptLibraryContainer::changeLibraryPassword( const OUString& Name,
     const OUString& OldPassword, const OUString& NewPassword )
-        throw (IllegalArgumentException, NoSuchElementException, RuntimeException)
 {
     LibraryContainerMethodGuard aGuard( *this );
     SfxLibrary* pImplLib = getImplLib( Name );
@@ -870,7 +865,6 @@ sal_Bool SfxScriptLibraryContainer::implStorePasswordLibrary( SfxLibrary* pLib, 
 
 sal_Bool SfxScriptLibraryContainer::implLoadPasswordLibrary
     ( SfxLibrary* pLib, const OUString& Name, sal_Bool bVerifyPasswordOnly )
-        throw(WrappedTargetException, RuntimeException)
 {
 	sal_Bool bRet = sal_True;
 
@@ -1160,12 +1154,12 @@ void createRegistryInfo_SfxScriptLibraryContainer()
     static OAutoRegistration< SfxScriptLibraryContainer > aAutoRegistration;
 }
 
-::rtl::OUString SAL_CALL SfxScriptLibraryContainer::getImplementationName( ) throw (RuntimeException)
+::rtl::OUString SAL_CALL SfxScriptLibraryContainer::getImplementationName( )
 {
     return getImplementationName_static();
 }
 
-Sequence< ::rtl::OUString > SAL_CALL SfxScriptLibraryContainer::getSupportedServiceNames( ) throw (RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL SfxScriptLibraryContainer::getSupportedServiceNames( )
 {
     return getSupportedServiceNames_static();
 }
@@ -1195,7 +1189,6 @@ OUString SfxScriptLibraryContainer::getImplementationName_static()
 
 Reference< XInterface > SAL_CALL SfxScriptLibraryContainer::Create
     ( const Reference< XComponentContext >& )
-        throw( Exception )
 {
     Reference< XInterface > xRet =
         static_cast< XInterface* >( static_cast< OWeakObject* >(new SfxScriptLibraryContainer()) );
@@ -1276,7 +1269,7 @@ IMPLEMENT_FORWARD_XINTERFACE2( SfxScriptLibrary, SfxLibrary, SfxScriptLibrary_BA
 IMPLEMENT_FORWARD_XTYPEPROVIDER2( SfxScriptLibrary, SfxLibrary, SfxScriptLibrary_BASE );
 
 script::ModuleInfo SAL_CALL
-SfxScriptLibrary::getModuleInfo( const ::rtl::OUString& ModuleName ) throw (NoSuchElementException, WrappedTargetException, RuntimeException)
+SfxScriptLibrary::getModuleInfo( const ::rtl::OUString& ModuleName )
 {
     if ( !hasModuleInfo( ModuleName ) )
         throw NoSuchElementException();
@@ -1284,7 +1277,7 @@ SfxScriptLibrary::getModuleInfo( const ::rtl::OUString& ModuleName ) throw (NoSu
 }
 
 sal_Bool SAL_CALL
-SfxScriptLibrary::hasModuleInfo( const ::rtl::OUString& ModuleName ) throw (RuntimeException)
+SfxScriptLibrary::hasModuleInfo( const ::rtl::OUString& ModuleName )
 {
     sal_Bool bRes = sal_False;
     ModuleInfoMap::iterator it = mModuleInfos.find( ModuleName );
@@ -1295,14 +1288,14 @@ SfxScriptLibrary::hasModuleInfo( const ::rtl::OUString& ModuleName ) throw (Runt
     return bRes;
 }
 
-void SAL_CALL SfxScriptLibrary::insertModuleInfo( const ::rtl::OUString& ModuleName, const script::ModuleInfo& ModuleInfo ) throw (IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
+void SAL_CALL SfxScriptLibrary::insertModuleInfo( const ::rtl::OUString& ModuleName, const script::ModuleInfo& ModuleInfo )
 {
     if ( hasModuleInfo( ModuleName ) )
         throw ElementExistException();
     mModuleInfos[ ModuleName ] = ModuleInfo;
 }
 
-void SAL_CALL SfxScriptLibrary::removeModuleInfo( const ::rtl::OUString& ModuleName ) throw (NoSuchElementException, WrappedTargetException, RuntimeException)
+void SAL_CALL SfxScriptLibrary::removeModuleInfo( const ::rtl::OUString& ModuleName )
 {
         // #FIXME add NoSuchElementException to the spec
     if ( !hasModuleInfo( ModuleName ) )

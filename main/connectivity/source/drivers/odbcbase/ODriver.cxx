@@ -62,7 +62,7 @@ void ODBCDriver::disposing()
 
 // static ServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString ODBCDriver::getImplementationName_Static(  ) throw(RuntimeException)
+rtl::OUString ODBCDriver::getImplementationName_Static(  )
 {
 	return rtl::OUString::createFromAscii("com.sun.star.comp.sdbc.ODBCDriver");
 		// this name is referenced in the configuration and in the odbc.xml
@@ -71,7 +71,7 @@ rtl::OUString ODBCDriver::getImplementationName_Static(  ) throw(RuntimeExceptio
 
 typedef Sequence< ::rtl::OUString > SSEQ;
 //------------------------------------------------------------------------------
-SSEQ ODBCDriver::getSupportedServiceNames_Static(  ) throw (RuntimeException)
+SSEQ ODBCDriver::getSupportedServiceNames_Static(  )
 {
 	SSEQ aSNS( 1 );
 	aSNS[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.Driver");
@@ -79,13 +79,13 @@ SSEQ ODBCDriver::getSupportedServiceNames_Static(  ) throw (RuntimeException)
 }
 
 //------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODBCDriver::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL ODBCDriver::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------
-sal_Bool SAL_CALL ODBCDriver::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL ODBCDriver::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	SSEQ aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -97,13 +97,13 @@ sal_Bool SAL_CALL ODBCDriver::supportsService( const ::rtl::OUString& _rServiceN
 }
 
 //------------------------------------------------------------------
-SSEQ SAL_CALL ODBCDriver::getSupportedServiceNames(  ) throw(RuntimeException)
+SSEQ SAL_CALL ODBCDriver::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }
 
 // --------------------------------------------------------------------------------
-Reference< XConnection > SAL_CALL ODBCDriver::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info ) throw(SQLException, RuntimeException)
+Reference< XConnection > SAL_CALL ODBCDriver::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info )
 {
 	if ( ! acceptsURL(url) )
 		return NULL;
@@ -123,12 +123,11 @@ Reference< XConnection > SAL_CALL ODBCDriver::connect( const ::rtl::OUString& ur
 }
 // --------------------------------------------------------------------------------
 sal_Bool SAL_CALL ODBCDriver::acceptsURL( const ::rtl::OUString& url )
-		throw(SQLException, RuntimeException)
 {
 	return (!url.compareTo(::rtl::OUString::createFromAscii("sdbc:odbc:"),10));
 }
 // --------------------------------------------------------------------------------
-Sequence< DriverPropertyInfo > SAL_CALL ODBCDriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ ) throw(SQLException, RuntimeException)
+Sequence< DriverPropertyInfo > SAL_CALL ODBCDriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ )
 {
 	if ( acceptsURL(url) )
 	{
@@ -210,12 +209,12 @@ Sequence< DriverPropertyInfo > SAL_CALL ODBCDriver::getPropertyInfo( const ::rtl
 	return Sequence< DriverPropertyInfo >();
 }
 // --------------------------------------------------------------------------------
-sal_Int32 SAL_CALL ODBCDriver::getMajorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL ODBCDriver::getMajorVersion(  )
 {
 	return 1;
 }
 // --------------------------------------------------------------------------------
-sal_Int32 SAL_CALL ODBCDriver::getMinorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL ODBCDriver::getMinorVersion(  )
 {
 	return 0;
 }

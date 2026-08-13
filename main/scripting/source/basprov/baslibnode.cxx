@@ -74,7 +74,7 @@ namespace basprov
     // XBrowseNode
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString BasicLibraryNodeImpl::getName(  ) throw (RuntimeException)
+    ::rtl::OUString BasicLibraryNodeImpl::getName(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -83,7 +83,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    Sequence< Reference< browse::XBrowseNode > > BasicLibraryNodeImpl::getChildNodes(  ) throw (RuntimeException)
+    Sequence< Reference< browse::XBrowseNode > > BasicLibraryNodeImpl::getChildNodes(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -117,7 +117,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool BasicLibraryNodeImpl::hasChildNodes(  ) throw (RuntimeException)
+    sal_Bool BasicLibraryNodeImpl::hasChildNodes(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -130,7 +130,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Int16 BasicLibraryNodeImpl::getType(  ) throw (RuntimeException)
+    sal_Int16 BasicLibraryNodeImpl::getType(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

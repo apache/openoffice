@@ -126,11 +126,11 @@ public:
 
 private:
 	// FmXChangeListener
-	virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt);
     // OContainerListener
-    virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-	virtual void _elementRemoved( const  ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-	virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent );
+	virtual void _elementRemoved( const  ::com::sun::star::container::ContainerEvent& _rEvent );
+	virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent );
 };
 //==============================================================================
 } // rptui

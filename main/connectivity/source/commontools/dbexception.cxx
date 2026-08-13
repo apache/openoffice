@@ -388,7 +388,7 @@ void SQLExceptionIteratorHelper::next( SQLExceptionInfo& _out_rInfo )
 }
 
 //------------------------------------------------------------
-void throwFunctionSequenceException(const Reference< XInterface >& _Context, const Any& _Next)  throw ( ::com::sun::star::sdbc::SQLException )
+void throwFunctionSequenceException(const Reference< XInterface >& _Context, const Any& _Next)
 {
     ::connectivity::SharedResources aResources;
 	throw SQLException(
@@ -401,7 +401,7 @@ void throwFunctionSequenceException(const Reference< XInterface >& _Context, con
 }
 // -----------------------------------------------------------------------------
 void throwInvalidIndexException(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _Context,
-		const ::com::sun::star::uno::Any& _Next)  throw ( ::com::sun::star::sdbc::SQLException )
+		const ::com::sun::star::uno::Any& _Next)
 {
     ::connectivity::SharedResources aResources;
 	throw SQLException(
@@ -415,7 +415,7 @@ void throwInvalidIndexException(const ::com::sun::star::uno::Reference< ::com::s
 // -----------------------------------------------------------------------------
 void throwFunctionNotSupportedException(const ::rtl::OUString& _rMsg,
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _Context,
-        const ::com::sun::star::uno::Any& _Next)  throw ( ::com::sun::star::sdbc::SQLException )
+        const ::com::sun::star::uno::Any& _Next)
 {
 	throw SQLException(
         _rMsg,
@@ -427,7 +427,7 @@ void throwFunctionNotSupportedException(const ::rtl::OUString& _rMsg,
 }
 // -----------------------------------------------------------------------------
 void throwFunctionNotSupportedException( const sal_Char* _pAsciiFunctionName, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
-        const ::com::sun::star::uno::Any* _pNextException ) throw ( ::com::sun::star::sdbc::SQLException )
+        const ::com::sun::star::uno::Any* _pNextException )
 {
     ::connectivity::SharedResources aResources;
     const ::rtl::OUString sError( aResources.getResourceStringWithSubstitution(
@@ -444,21 +444,18 @@ void throwFunctionNotSupportedException( const sal_Char* _pAsciiFunctionName, co
 }
 // -----------------------------------------------------------------------------
 void throwGenericSQLException(const ::rtl::OUString& _rMsg, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxSource)
-	throw (::com::sun::star::sdbc::SQLException)
 {
 	throwGenericSQLException(_rMsg, _rxSource, Any());
 }
 
 // -----------------------------------------------------------------------------
 void throwGenericSQLException(const ::rtl::OUString& _rMsg, const Reference< XInterface >& _rxSource, const Any& _rNextException)
-	throw (SQLException)
 {
 	throw SQLException( _rMsg, _rxSource, getStandardSQLState( SQL_GENERAL_ERROR ), 0, _rNextException);
 }
 
 // -----------------------------------------------------------------------------
 void throwFeatureNotImplementedException( const sal_Char* _pAsciiFeatureName, const Reference< XInterface >& _rxContext, const Any* _pNextException )
-    throw (SQLException)
 {
     ::connectivity::SharedResources aResources;
     const ::rtl::OUString sError( aResources.getResourceStringWithSubstitution(
@@ -477,7 +474,7 @@ void throwFeatureNotImplementedException( const sal_Char* _pAsciiFeatureName, co
 
 // -----------------------------------------------------------------------------
 void throwSQLException( const sal_Char* _pAsciiMessage, const sal_Char* _pAsciiState,
-        const Reference< XInterface >& _rxContext, const sal_Int32 _nErrorCode, const Any* _pNextException ) throw (SQLException)
+        const Reference< XInterface >& _rxContext, const sal_Int32 _nErrorCode, const Any* _pNextException )
 {
     throw SQLException(
         ::rtl::OUString::createFromAscii( _pAsciiMessage ),
@@ -491,7 +488,7 @@ void throwSQLException( const sal_Char* _pAsciiMessage, const sal_Char* _pAsciiS
 // -----------------------------------------------------------------------------
 void throwSQLException( const sal_Char* _pAsciiMessage, StandardSQLState _eSQLState,
         const Reference< XInterface >& _rxContext, const sal_Int32 _nErrorCode,
-        const Any* _pNextException ) throw (SQLException)
+        const Any* _pNextException )
 {
     throwSQLException( _pAsciiMessage, getStandardSQLStateAscii( _eSQLState ), _rxContext, _nErrorCode, _pNextException );
 }
@@ -499,7 +496,7 @@ void throwSQLException( const sal_Char* _pAsciiMessage, StandardSQLState _eSQLSt
 // -----------------------------------------------------------------------------
 void throwSQLException( const ::rtl::OUString& _rMessage, StandardSQLState _eSQLState,
         const Reference< XInterface >& _rxContext, const sal_Int32 _nErrorCode,
-        const Any* _pNextException ) throw (SQLException)
+        const Any* _pNextException )
 {
     throw SQLException(
         _rMessage,

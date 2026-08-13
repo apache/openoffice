@@ -115,15 +115,13 @@ public:
 
     // XInteractionHandler methods.
     virtual void SAL_CALL handle(
-            const uno::Reference< task::XInteractionRequest >& Request )
-        throw ( uno::RuntimeException );
+            const uno::Reference< task::XInteractionRequest >& Request );
 };
 
 //=========================================================================
 // virtual
 void SAL_CALL InteractionHandlerProxy::handle(
             const uno::Reference< task::XInteractionRequest >& Request )
-    throw ( uno::RuntimeException )
 {
     if ( !m_xOrig.is() )
         return;
@@ -184,17 +182,14 @@ class ActiveDataSink : public cppu::WeakImplHelper1< io::XActiveDataSink >
 public:
     // XActiveDataSink methods.
     virtual void SAL_CALL setInputStream(
-                        const uno::Reference< io::XInputStream >& aStream )
-        throw( uno::RuntimeException );
-    virtual uno::Reference< io::XInputStream > SAL_CALL getInputStream()
-        throw( uno::RuntimeException );
+                        const uno::Reference< io::XInputStream >& aStream );
+    virtual uno::Reference< io::XInputStream > SAL_CALL getInputStream();
 };
 
 //=========================================================================
 // virtual
 void SAL_CALL ActiveDataSink::setInputStream(
                         const uno::Reference< io::XInputStream >& aStream )
-    throw( uno::RuntimeException )
 {
     m_xStream = aStream;
 }
@@ -202,7 +197,6 @@ void SAL_CALL ActiveDataSink::setInputStream(
 //=========================================================================
 // virtual
 uno::Reference< io::XInputStream > SAL_CALL ActiveDataSink::getInputStream()
-    throw( uno::RuntimeException )
 {
     return m_xStream;
 }
@@ -223,18 +217,13 @@ public:
     virtual ~CommandProcessorInfo();
 
     // XCommandInfo methods
-    virtual uno::Sequence< ucb::CommandInfo > SAL_CALL getCommands()
-        throw( uno::RuntimeException );
+    virtual uno::Sequence< ucb::CommandInfo > SAL_CALL getCommands();
     virtual ucb::CommandInfo SAL_CALL
-    getCommandInfoByName( const rtl::OUString& Name )
-        throw( ucb::UnsupportedCommandException, uno::RuntimeException );
+    getCommandInfoByName( const rtl::OUString& Name );
     virtual ucb::CommandInfo SAL_CALL
-    getCommandInfoByHandle( sal_Int32 Handle )
-        throw( ucb::UnsupportedCommandException, uno::RuntimeException );
-    virtual sal_Bool SAL_CALL hasCommandByName( const rtl::OUString& Name )
-        throw( uno::RuntimeException );
-    virtual sal_Bool SAL_CALL hasCommandByHandle( sal_Int32 Handle )
-        throw( uno::RuntimeException );
+    getCommandInfoByHandle( sal_Int32 Handle );
+    virtual sal_Bool SAL_CALL hasCommandByName( const rtl::OUString& Name );
+    virtual sal_Bool SAL_CALL hasCommandByHandle( sal_Int32 Handle );
 };
 
 //=========================================================================
@@ -267,7 +256,6 @@ CommandProcessorInfo::~CommandProcessorInfo()
 // virtual
 uno::Sequence< ucb::CommandInfo > SAL_CALL
 CommandProcessorInfo::getCommands()
-    throw( uno::RuntimeException )
 {
     return uno::Sequence< ucb::CommandInfo >( *m_pInfo );
 }
@@ -276,7 +264,6 @@ CommandProcessorInfo::getCommands()
 // virtual
 ucb::CommandInfo SAL_CALL
 CommandProcessorInfo::getCommandInfoByName( const rtl::OUString& Name )
-    throw( ucb::UnsupportedCommandException, uno::RuntimeException )
 {
     for ( sal_Int32 n = 0; n < m_pInfo->getLength(); ++n )
     {
@@ -291,7 +278,6 @@ CommandProcessorInfo::getCommandInfoByName( const rtl::OUString& Name )
 // virtual
 ucb::CommandInfo SAL_CALL
 CommandProcessorInfo::getCommandInfoByHandle( sal_Int32 Handle )
-    throw( ucb::UnsupportedCommandException, uno::RuntimeException )
 {
     for ( sal_Int32 n = 0; n < m_pInfo->getLength(); ++n )
     {
@@ -306,7 +292,6 @@ CommandProcessorInfo::getCommandInfoByHandle( sal_Int32 Handle )
 // virtual
 sal_Bool SAL_CALL CommandProcessorInfo::hasCommandByName(
                                                 const rtl::OUString& Name )
-    throw( uno::RuntimeException )
 {
     for ( sal_Int32 n = 0; n < m_pInfo->getLength(); ++n )
     {
@@ -320,7 +305,6 @@ sal_Bool SAL_CALL CommandProcessorInfo::hasCommandByName(
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL CommandProcessorInfo::hasCommandByHandle( sal_Int32 Handle )
-    throw( uno::RuntimeException )
 {
     for ( sal_Int32 n = 0; n < m_pInfo->getLength(); ++n )
     {
@@ -478,7 +462,6 @@ bool setTitle(
         const uno::Reference< ucb::XCommandProcessor > & xCommandProcessor,
         const uno::Reference< ucb::XCommandEnvironment > & xEnv,
         const rtl::OUString & rNewTitle )
-    throw( uno::RuntimeException )
 {
     try
     {
@@ -528,7 +511,6 @@ uno::Reference< ucb::XContent > createNew(
                     sal_Bool bSourceIsFolder,
                     sal_Bool bSourceIsDocument,
                     sal_Bool bSourceIsLink )
-    throw( uno::Exception )
 {
     //////////////////////////////////////////////////////////////////////
     //
@@ -762,7 +744,6 @@ void transferProperties(
     const TransferCommandContext & rContext,
     const uno::Reference< ucb::XCommandProcessor > & xCommandProcessorS,
     const uno::Reference< ucb::XCommandProcessor > & xCommandProcessorN )
-        throw( uno::Exception )
 {
     ucb::Command aGetPropertySetInfoCommand(
                 rtl::OUString::createFromAscii( "getPropertySetInfo" ),
@@ -926,7 +907,6 @@ void transferProperties(
 uno::Reference< io::XInputStream > getInputStream(
     const TransferCommandContext & rContext,
     const uno::Reference< ucb::XCommandProcessor > & xCommandProcessorS )
-        throw( uno::Exception )
 {
     uno::Reference< io::XInputStream > xInputStream;
 
@@ -1014,7 +994,6 @@ uno::Reference< io::XInputStream > getInputStream(
 uno::Reference< sdbc::XResultSet > getResultSet(
     const TransferCommandContext & rContext,
     const uno::Reference< ucb::XCommandProcessor > & xCommandProcessorS )
-        throw( uno::Exception )
 {
     uno::Reference< sdbc::XResultSet > xResultSet;
 
@@ -1065,7 +1044,6 @@ void handleNameClashRename(
         const uno::Reference<
             ucb::XCommandProcessor > & xCommandProcessorS,
         /* [inout] */ uno::Reference< io::XInputStream > & xInputStream )
-    throw( uno::Exception )
 {
     sal_Int32 nTry = 0;
 
@@ -1241,7 +1219,6 @@ void globalTransfer_(
         const uno::Reference< ucb::XContent > & xSource,
         const uno::Reference< ucb::XContent > & xTarget,
         const uno::Reference< sdbc::XRow > & xSourceProps )
-    throw( uno::Exception )
 {
     // IsFolder: property is required.
     sal_Bool bSourceIsFolder = xSourceProps->getBoolean( 1 );
@@ -1732,7 +1709,6 @@ UniversalContentBroker::getCommandInfo()
 void UniversalContentBroker::globalTransfer(
             const ucb::GlobalTransferCommandArgument & rArg,
             const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     // Use own command environment with own interaction handler intercepting
     // some interaction requests that shall not be handled by the user-supplied

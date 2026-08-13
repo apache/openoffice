@@ -175,24 +175,20 @@ public:
 		: maBasicRef( pBasic ), m_xModel( xModel ) {}
 
     // Methods of XAllListener
-    virtual void SAL_CALL firing(const ScriptEvent& aScriptEvent)
-		throw( RuntimeException );
-    virtual Any SAL_CALL approveFiring(const ScriptEvent& aScriptEvent)
-		throw( InvocationTargetException, RuntimeException );
+    virtual void SAL_CALL firing(const ScriptEvent& aScriptEvent);
+    virtual Any SAL_CALL approveFiring(const ScriptEvent& aScriptEvent);
 
     // Methods of XEventListener
-    virtual void SAL_CALL disposing(const EventObject& Source)
-		throw( RuntimeException );
+    virtual void SAL_CALL disposing(const EventObject& Source);
 };
 
 // Methods XAllListener
-void BasicScriptListener_Impl::firing( const ScriptEvent& aScriptEvent ) throw ( RuntimeException )
+void BasicScriptListener_Impl::firing( const ScriptEvent& aScriptEvent )
 {
 	firing_impl( aScriptEvent, NULL );
 }
 
 Any BasicScriptListener_Impl::approveFiring( const ScriptEvent& aScriptEvent )
-	throw ( InvocationTargetException, RuntimeException )
 {
 	Any aRetAny;
 	firing_impl( aScriptEvent, &aRetAny );
@@ -200,7 +196,7 @@ Any BasicScriptListener_Impl::approveFiring( const ScriptEvent& aScriptEvent )
 }
 
 // Methods XEventListener
-void BasicScriptListener_Impl::disposing(const EventObject& ) throw ( RuntimeException )
+void BasicScriptListener_Impl::disposing(const EventObject& )
 {
 	// TODO: ???
 	//vos::OGuard guard( Application::GetSolarMutex() );

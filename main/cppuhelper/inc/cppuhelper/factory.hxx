@@ -130,8 +130,7 @@ namespace cppu
 */
 typedef ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >(
     SAL_CALL * ComponentFactoryFunc)(
-        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext )
-    SAL_THROW( (::com::sun::star::uno::Exception) );
+        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext );
 
 /** Creates a single component factory supporting the XSingleComponentFactory interface.
 

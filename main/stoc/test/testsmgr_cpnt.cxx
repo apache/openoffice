@@ -132,7 +132,7 @@ Reference< XInterface > SAL_CALL Test_Manager_Impl_CreateInstance_Impl()
 // Test_Manager_Impl_CreateInstance()
 //
 Reference < XInterface > SAL_CALL Test_Manager_Impl_CreateInstance(
-	const Reference< XMultiServiceFactory > & /*rSMgr*/ ) throw (Exception)
+	const Reference< XMultiServiceFactory > & /*rSMgr*/ )
 {
 	Reference < XInterface >  xService = (XWeak *)(OWeakObject *)new Test_Manager_Impl( );
 

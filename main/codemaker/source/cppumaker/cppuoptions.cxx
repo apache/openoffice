@@ -39,7 +39,6 @@
 using namespace rtl;
 
 sal_Bool CppuOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
-	throw( IllegalArgument )
 {
 	sal_Bool 	ret = sal_True;
 	sal_uInt16	i=0;

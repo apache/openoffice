@@ -32,7 +32,7 @@ using namespace ::com::sun::star::uno;
 extern OUString SAL_CALL className##_getImplementationName() throw();                   \
 extern Sequence< OUString > SAL_CALL className##_getSupportedServiceNames() throw();    \
 extern Reference< XInterface > SAL_CALL className##_createInstance(                     \
-    const Reference< XComponentContext >& rxContext ) throw (Exception)
+    const Reference< XComponentContext >& rxContext )
 
 namespace oox {
     namespace core {    DECLARE_FUNCTIONS( FastTokenHandler );          }

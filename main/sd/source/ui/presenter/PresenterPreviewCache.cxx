@@ -94,7 +94,7 @@ Reference<XInterface> SAL_CALL PresenterPreviewCache_createInstance (
 
 
 
-::rtl::OUString PresenterPreviewCache_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString PresenterPreviewCache_getImplementationName (void)
 {
     return OUString::createFromAscii("com.sun.star.comp.Draw.PresenterPreviewCache");
 }
@@ -103,7 +103,6 @@ Reference<XInterface> SAL_CALL PresenterPreviewCache_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL PresenterPreviewCache_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.PresenterPreviewCache"));
@@ -137,7 +136,6 @@ PresenterPreviewCache::~PresenterPreviewCache (void)
 //----- XInitialize -----------------------------------------------------------
 
 void SAL_CALL PresenterPreviewCache::initialize (const Sequence<Any>& rArguments)
-    throw(Exception, RuntimeException)
 {
     if (rArguments.getLength() != 0)
         throw RuntimeException();
@@ -151,7 +149,6 @@ void SAL_CALL PresenterPreviewCache::initialize (const Sequence<Any>& rArguments
 void SAL_CALL PresenterPreviewCache::setDocumentSlides (
     const Reference<container::XIndexAccess>& rxSlides,
     const Reference<XInterface>& rxDocument)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     OSL_ASSERT(mpCacheContext.get()!=NULL);
@@ -165,7 +162,6 @@ void SAL_CALL PresenterPreviewCache::setDocumentSlides (
 void SAL_CALL PresenterPreviewCache::setVisibleRange (
     sal_Int32 nFirstVisibleSlideIndex,
     sal_Int32 nLastVisibleSlideIndex)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     OSL_ASSERT(mpCacheContext.get()!=NULL);
@@ -178,7 +174,6 @@ void SAL_CALL PresenterPreviewCache::setVisibleRange (
 
 void SAL_CALL PresenterPreviewCache::setPreviewSize (
     const css::geometry::IntegerSize2D& rSize)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     OSL_ASSERT(mpCache.get()!=NULL);
@@ -193,7 +188,6 @@ void SAL_CALL PresenterPreviewCache::setPreviewSize (
 Reference<rendering::XBitmap> SAL_CALL PresenterPreviewCache::getSlidePreview (
     sal_Int32 nSlideIndex,
     const Reference<rendering::XCanvas>& rxCanvas)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     OSL_ASSERT(mpCacheContext.get()!=NULL);
@@ -220,7 +214,6 @@ Reference<rendering::XBitmap> SAL_CALL PresenterPreviewCache::getSlidePreview (
 
 void SAL_CALL PresenterPreviewCache::addPreviewCreationNotifyListener (
     const Reference<drawing::XSlidePreviewCacheListener>& rxListener)
-    throw (css::uno::RuntimeException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
         return;
@@ -233,7 +226,6 @@ void SAL_CALL PresenterPreviewCache::addPreviewCreationNotifyListener (
 
 void SAL_CALL PresenterPreviewCache::removePreviewCreationNotifyListener (
     const css::uno::Reference<css::drawing::XSlidePreviewCacheListener>& rxListener)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     mpCacheContext->RemovePreviewCreationNotifyListener(rxListener);
@@ -243,7 +235,6 @@ void SAL_CALL PresenterPreviewCache::removePreviewCreationNotifyListener (
 
 
 void SAL_CALL PresenterPreviewCache::pause (void)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     OSL_ASSERT(mpCache.get()!=NULL);
@@ -254,7 +245,6 @@ void SAL_CALL PresenterPreviewCache::pause (void)
 
 
 void SAL_CALL PresenterPreviewCache::resume (void)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     OSL_ASSERT(mpCache.get()!=NULL);
@@ -267,7 +257,6 @@ void SAL_CALL PresenterPreviewCache::resume (void)
 //-----------------------------------------------------------------------------
 
 void PresenterPreviewCache::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

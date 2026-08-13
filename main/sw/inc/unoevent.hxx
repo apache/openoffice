@@ -43,8 +43,7 @@ class SwHyperlinkEventDescriptor : public SvDetachedEventDescriptor
 	const ::rtl::OUString sImplName;
 
 	//XServiceInfo
-	virtual rtl::OUString SAL_CALL getImplementationName(void)
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getImplementationName(void);
 protected:
 	virtual ~SwHyperlinkEventDescriptor();
 public:
@@ -81,8 +80,7 @@ public:
 
 	~SwFrameEventDescriptor();
 
-	virtual rtl::OUString SAL_CALL getImplementationName(void)
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getImplementationName(void);
 
 protected:
 	virtual void setMacroItem(const SvxMacroItem& rItem);
@@ -101,8 +99,7 @@ public:
 
 	~SwFrameStyleEventDescriptor();
 
-	virtual rtl::OUString SAL_CALL getImplementationName(void)
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getImplementationName(void);
 
 protected:
 	virtual void setMacroItem(const SvxMacroItem& rItem);

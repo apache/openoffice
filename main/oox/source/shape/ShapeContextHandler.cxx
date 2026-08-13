@@ -47,7 +47,6 @@ ShapeContextHandler_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL
 ShapeContextHandler_createInstance( const uno::Reference< uno::XComponentContext > & context)
-        SAL_THROW((uno::Exception))
 {
     return static_cast< ::cppu::OWeakObject* >( new ShapeContextHandler(context) );
 }
@@ -137,7 +136,6 @@ ShapeContextHandler::getContextHandler()
 void SAL_CALL ShapeContextHandler::startFastElement
 (::sal_Int32 Element,
  const uno::Reference< xml::sax::XFastAttributeList > & Attribs)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     static const ::rtl::OUString sInputStream
         (RTL_CONSTASCII_USTRINGPARAM ("InputStream"));
@@ -158,7 +156,6 @@ void SAL_CALL ShapeContextHandler::startFastElement
 void SAL_CALL ShapeContextHandler::startUnknownElement
 (const ::rtl::OUString & Namespace, const ::rtl::OUString & Name,
  const uno::Reference< xml::sax::XFastAttributeList > & Attribs)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     uno::Reference<XFastContextHandler> xContextHandler(getContextHandler());
 
@@ -167,7 +164,6 @@ void SAL_CALL ShapeContextHandler::startUnknownElement
 }
 
 void SAL_CALL ShapeContextHandler::endFastElement(::sal_Int32 Element)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     uno::Reference<XFastContextHandler> xContextHandler(getContextHandler());
 
@@ -178,7 +174,6 @@ void SAL_CALL ShapeContextHandler::endFastElement(::sal_Int32 Element)
 void SAL_CALL ShapeContextHandler::endUnknownElement
 (const ::rtl::OUString & Namespace,
  const ::rtl::OUString & Name)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     uno::Reference<XFastContextHandler> xContextHandler(getContextHandler());
 
@@ -190,7 +185,6 @@ uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
 ShapeContextHandler::createFastChildContext
 (::sal_Int32 Element,
  const uno::Reference< xml::sax::XFastAttributeList > & Attribs)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     uno::Reference< xml::sax::XFastContextHandler > xResult;
     uno::Reference< xml::sax::XFastContextHandler > xContextHandler(getContextHandler());
@@ -207,7 +201,6 @@ ShapeContextHandler::createUnknownChildContext
 (const ::rtl::OUString & Namespace,
  const ::rtl::OUString & Name,
  const uno::Reference< xml::sax::XFastAttributeList > & Attribs)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     uno::Reference<XFastContextHandler> xContextHandler(getContextHandler());
 
@@ -219,7 +212,6 @@ ShapeContextHandler::createUnknownChildContext
 }
 
 void SAL_CALL ShapeContextHandler::characters(const ::rtl::OUString & aChars)
-    throw (uno::RuntimeException, xml::sax::SAXException)
 {
     uno::Reference<XFastContextHandler> xContextHandler(getContextHandler());
 
@@ -229,7 +221,7 @@ void SAL_CALL ShapeContextHandler::characters(const ::rtl::OUString & aChars)
 
 // ::com::sun::star::xml::sax::XFastShapeContextHandler:
 uno::Reference< drawing::XShape > SAL_CALL
-ShapeContextHandler::getShape() throw (uno::RuntimeException)
+ShapeContextHandler::getShape()
 {
     uno::Reference< drawing::XShape > xResult;
     uno::Reference< drawing::XShapes > xShapes( mxDrawPage, uno::UNO_QUERY );
@@ -254,20 +246,19 @@ ShapeContextHandler::getShape() throw (uno::RuntimeException)
 }
 
 css::uno::Reference< css::drawing::XDrawPage > SAL_CALL
-ShapeContextHandler::getDrawPage() throw (css::uno::RuntimeException)
+ShapeContextHandler::getDrawPage()
 {
     return mxDrawPage;
 }
 
 void SAL_CALL ShapeContextHandler::setDrawPage
 (const css::uno::Reference< css::drawing::XDrawPage > & the_value)
-    throw (css::uno::RuntimeException)
 {
     mxDrawPage = the_value;
 }
 
 css::uno::Reference< css::frame::XModel > SAL_CALL
-ShapeContextHandler::getModel() throw (css::uno::RuntimeException)
+ShapeContextHandler::getModel()
 {
     if( !mxFilterBase.is() )
         throw uno::RuntimeException();
@@ -276,7 +267,6 @@ ShapeContextHandler::getModel() throw (css::uno::RuntimeException)
 
 void SAL_CALL ShapeContextHandler::setModel
 (const css::uno::Reference< css::frame::XModel > & the_value)
-    throw (css::uno::RuntimeException)
 {
     if( !mxFilterBase.is() )
         throw uno::RuntimeException();
@@ -285,37 +275,34 @@ void SAL_CALL ShapeContextHandler::setModel
 }
 
 uno::Reference< io::XInputStream > SAL_CALL
-ShapeContextHandler::getInputStream() throw (uno::RuntimeException)
+ShapeContextHandler::getInputStream()
 {
     return mxInputStream;
 }
 
 void SAL_CALL ShapeContextHandler::setInputStream
 (const uno::Reference< io::XInputStream > & the_value)
-    throw (uno::RuntimeException)
 {
     mxInputStream = the_value;
 }
 
 ::rtl::OUString SAL_CALL ShapeContextHandler::getRelationFragmentPath()
-    throw (uno::RuntimeException)
 {
     return msRelationFragmentPath;
 }
 
 void SAL_CALL ShapeContextHandler::setRelationFragmentPath
 (const ::rtl::OUString & the_value)
-    throw (uno::RuntimeException)
 {
     msRelationFragmentPath = the_value;
 }
 
-::sal_Int32 SAL_CALL ShapeContextHandler::getStartToken() throw (::com::sun::star::uno::RuntimeException)
+::sal_Int32 SAL_CALL ShapeContextHandler::getStartToken()
 {
     return mnStartToken;
 }
 
-void SAL_CALL ShapeContextHandler::setStartToken( ::sal_Int32 _starttoken ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ShapeContextHandler::setStartToken( ::sal_Int32 _starttoken )
 {
     mnStartToken = _starttoken;
 
@@ -323,19 +310,17 @@ void SAL_CALL ShapeContextHandler::setStartToken( ::sal_Int32 _starttoken ) thro
 }
 
 ::rtl::OUString ShapeContextHandler::getImplementationName()
-    throw (css::uno::RuntimeException)
 {
     return ShapeContextHandler_getImplementationName();
 }
 
 uno::Sequence< ::rtl::OUString > ShapeContextHandler::getSupportedServiceNames()
-    throw (css::uno::RuntimeException)
 {
     return ShapeContextHandler_getSupportedServiceNames();
 }
 
 ::sal_Bool SAL_CALL ShapeContextHandler::supportsService
-(const ::rtl::OUString & ServiceName) throw (css::uno::RuntimeException)
+(const ::rtl::OUString & ServiceName)
 {
     uno::Sequence< ::rtl::OUString > aSeq = getSupportedServiceNames();
 

@@ -85,7 +85,7 @@ public:
 	//----------------------------------------------------------------------------------
     // XExtendedFilterDetect
 	//----------------------------------------------------------------------------------
-    virtual ::rtl::OUString SAL_CALL detect( SEQUENCE< ::com::sun::star::beans::PropertyValue >& lDescriptor ) throw( RUNTIME_EXCEPTION );
+    virtual ::rtl::OUString SAL_CALL detect( SEQUENCE< ::com::sun::star::beans::PropertyValue >& lDescriptor );
 };
 
 #endif

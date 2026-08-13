@@ -53,8 +53,7 @@ class SfxDialogLibraryContainer : public SfxLibraryContainer
 		const ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer>& xLibrary,
 		const ::rtl::OUString& aElementName,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutput
-	)
-		throw(::com::sun::star::uno::Exception);
+	);
 
 	virtual ::com::sun::star::uno::Any SAL_CALL importLibraryElement
 	(
@@ -80,25 +79,21 @@ public:
 
     // Methods XStorageBasedLibraryContainer
     virtual void SAL_CALL storeLibrariesToStorage(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& RootStorage )
-            throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& RootStorage );
 
 	// Resource handling
     ::com::sun::star::uno::Reference< ::com::sun::star::resource::XStringResourcePersistence >
 		implCreateStringResource( class SfxDialogLibrary* pDialog );
 
     // Methods XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName( )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames( )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName( );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames( );
 
     // Service
 	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static();
 	static ::rtl::OUString getImplementationName_static();
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL Create
-        ( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xServiceManager )
-            throw( ::com::sun::star::uno::Exception );
+        ( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xServiceManager );
 };
 
 //============================================================================
@@ -148,7 +143,7 @@ public:
 
 	// XStringResourceSupplier
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::resource::XStringResourceResolver >
-		SAL_CALL getStringResource(  ) throw (::com::sun::star::uno::RuntimeException);
+		SAL_CALL getStringResource(  );
 
 	::rtl::OUString getName( void )
 		{ return m_aName; }

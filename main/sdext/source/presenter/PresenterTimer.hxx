@@ -109,8 +109,7 @@ public:
 
     // XCallback
 
-    virtual void SAL_CALL notify (const css::uno::Any& rUserData)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL notify (const css::uno::Any& rUserData);
 
 private:
     static ::rtl::Reference<PresenterClockTimer> mpInstance;

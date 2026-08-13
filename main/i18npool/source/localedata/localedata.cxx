@@ -288,7 +288,7 @@ LocaleData::~LocaleData()
 
 
 LocaleDataItem SAL_CALL
-LocaleData::getLocaleItem( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getLocaleItem( const Locale& rLocale )
 {
         sal_Int16 dataItemCount = 0;
         sal_Unicode **dataItem = NULL;
@@ -463,7 +463,6 @@ oslGenericFunction SAL_CALL lcl_LookupTableHelper::getFunctionSymbolByName(
 
 Sequence< CalendarItem > &LocaleData::getCalendarItemByName(const OUString& name,
         const Locale& rLocale, const Sequence< Calendar >& calendarsSeq, sal_Int16 len, sal_Int16 item)
-        throw(RuntimeException)
 {
         if (!ref_name.equals(name)) {
             sal_Int32 index = 0;
@@ -500,7 +499,7 @@ Sequence< CalendarItem > &LocaleData::getCalendarItemByName(const OUString& name
 
 
 Sequence< Calendar > SAL_CALL
-LocaleData::getAllCalendars( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getAllCalendars( const Locale& rLocale )
 {
 
         sal_Int16 calendarsCount = 0;
@@ -573,7 +572,7 @@ LocaleData::getAllCalendars( const Locale& rLocale ) throw(RuntimeException)
 
 
 Sequence< Currency2 > SAL_CALL
-LocaleData::getAllCurrencies2( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getAllCurrencies2( const Locale& rLocale )
 {
 
         sal_Int16 currencyCount = 0;
@@ -608,7 +607,7 @@ LocaleData::getAllCurrencies2( const Locale& rLocale ) throw(RuntimeException)
 
 
 Sequence< Currency > SAL_CALL
-LocaleData::getAllCurrencies( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getAllCurrencies( const Locale& rLocale )
 {
     Sequence< Currency2 > aCur2( getAllCurrencies2( rLocale));
     sal_Int32 nLen = aCur2.getLength();
@@ -658,7 +657,7 @@ static const sal_Unicode * replace( sal_Unicode const * const formatCode, sal_Un
 }
 
 Sequence< FormatElement > SAL_CALL
-LocaleData::getAllFormats( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getAllFormats( const Locale& rLocale )
 {
     const int SECTIONS = 2;
     struct FormatSection
@@ -717,7 +716,7 @@ LocaleData::getAllFormats( const Locale& rLocale ) throw(RuntimeException)
 #define COLLATOR_ELEMENTS       3
 
 OUString SAL_CALL
-LocaleData::getCollatorRuleByAlgorithm( const Locale& rLocale, const OUString& algorithm ) throw(RuntimeException)
+LocaleData::getCollatorRuleByAlgorithm( const Locale& rLocale, const OUString& algorithm )
 {
         MyFunc_Type func = (MyFunc_Type) getFunctionSymbol( rLocale, "getCollatorImplementation" );
         if ( func ) {
@@ -732,7 +731,7 @@ LocaleData::getCollatorRuleByAlgorithm( const Locale& rLocale, const OUString& a
 
 
 Sequence< Implementation > SAL_CALL
-LocaleData::getCollatorImplementations( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getCollatorImplementations( const Locale& rLocale )
 {
         sal_Int16 collatorCount = 0;
         sal_Unicode **collatorArray = NULL;
@@ -757,7 +756,7 @@ LocaleData::getCollatorImplementations( const Locale& rLocale ) throw(RuntimeExc
 }
 
 Sequence< OUString > SAL_CALL
-LocaleData::getCollationOptions( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getCollationOptions( const Locale& rLocale )
 {
         sal_Int16 optionsCount = 0;
         sal_Unicode **optionsArray = NULL;
@@ -779,7 +778,7 @@ LocaleData::getCollationOptions( const Locale& rLocale ) throw(RuntimeException)
 }
 
 Sequence< OUString > SAL_CALL
-LocaleData::getSearchOptions( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getSearchOptions( const Locale& rLocale )
 {
         sal_Int16 optionsCount = 0;
         sal_Unicode **optionsArray = NULL;
@@ -811,7 +810,7 @@ LocaleData::getIndexArray(const Locale& rLocale, sal_Int16& indexCount)
 }
 
 Sequence< OUString > SAL_CALL
-LocaleData::getIndexAlgorithm( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getIndexAlgorithm( const Locale& rLocale )
 {
         sal_Int16 indexCount = 0;
         sal_Unicode **indexArray = getIndexArray(rLocale, indexCount);
@@ -830,7 +829,7 @@ LocaleData::getIndexAlgorithm( const Locale& rLocale ) throw(RuntimeException)
 }
 
 OUString SAL_CALL
-LocaleData::getDefaultIndexAlgorithm( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getDefaultIndexAlgorithm( const Locale& rLocale )
 {
         sal_Int16 indexCount = 0;
         sal_Unicode **indexArray = getIndexArray(rLocale, indexCount);
@@ -845,7 +844,7 @@ LocaleData::getDefaultIndexAlgorithm( const Locale& rLocale ) throw(RuntimeExcep
 }
 
 sal_Bool SAL_CALL
-LocaleData::hasPhonetic( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::hasPhonetic( const Locale& rLocale )
 {
         sal_Int16 indexCount = 0;
         sal_Unicode **indexArray = getIndexArray(rLocale, indexCount);
@@ -874,28 +873,28 @@ LocaleData::getIndexArrayForAlgorithm(const Locale& rLocale, const OUString& alg
 }
 
 sal_Bool SAL_CALL
-LocaleData::isPhonetic( const Locale& rLocale, const OUString& algorithm ) throw(RuntimeException)
+LocaleData::isPhonetic( const Locale& rLocale, const OUString& algorithm )
 {
         sal_Unicode **indexArray = getIndexArrayForAlgorithm(rLocale, algorithm);
         return (indexArray && indexArray[4][0]) ? sal_True : sal_False;
 }
 
 OUString SAL_CALL
-LocaleData::getIndexKeysByAlgorithm( const Locale& rLocale, const OUString& algorithm ) throw(RuntimeException)
+LocaleData::getIndexKeysByAlgorithm( const Locale& rLocale, const OUString& algorithm )
 {
         sal_Unicode **indexArray = getIndexArrayForAlgorithm(rLocale, algorithm);
         return indexArray ? OUString::createFromAscii("0-9")+OUString(indexArray[2]) : OUString();
 }
 
 OUString SAL_CALL
-LocaleData::getIndexModuleByAlgorithm( const Locale& rLocale, const OUString& algorithm ) throw(RuntimeException)
+LocaleData::getIndexModuleByAlgorithm( const Locale& rLocale, const OUString& algorithm )
 {
         sal_Unicode **indexArray = getIndexArrayForAlgorithm(rLocale, algorithm);
         return indexArray ? OUString(indexArray[1]) : OUString();
 }
 
 Sequence< UnicodeScript > SAL_CALL
-LocaleData::getUnicodeScripts( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getUnicodeScripts( const Locale& rLocale )
 {
         sal_Int16 scriptCount = 0;
         sal_Unicode **scriptArray = NULL;
@@ -917,7 +916,7 @@ LocaleData::getUnicodeScripts( const Locale& rLocale ) throw(RuntimeException)
 }
 
 Sequence< OUString > SAL_CALL
-LocaleData::getFollowPageWords( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getFollowPageWords( const Locale& rLocale )
 {
         sal_Int16 wordCount = 0;
         sal_Unicode **wordArray = NULL;
@@ -939,7 +938,7 @@ LocaleData::getFollowPageWords( const Locale& rLocale ) throw(RuntimeException)
 }
 
 Sequence< OUString > SAL_CALL
-LocaleData::getTransliterations( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getTransliterations( const Locale& rLocale )
 {
 
         sal_Int16 transliterationsCount = 0;
@@ -967,7 +966,7 @@ LocaleData::getTransliterations( const Locale& rLocale ) throw(RuntimeException)
 
 
 LanguageCountryInfo SAL_CALL
-LocaleData::getLanguageCountryInfo( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getLanguageCountryInfo( const Locale& rLocale )
 {
         sal_Int16 LCInfoCount = 0;
         sal_Unicode **LCInfoArray = NULL;
@@ -992,7 +991,7 @@ LocaleData::getLanguageCountryInfo( const Locale& rLocale ) throw(RuntimeExcepti
 
 
 ForbiddenCharacters SAL_CALL
-LocaleData::getForbiddenCharacters( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getForbiddenCharacters( const Locale& rLocale )
 {
         sal_Int16 LCForbiddenCharactersCount = 0;
         sal_Unicode **LCForbiddenCharactersArray = NULL;
@@ -1011,7 +1010,7 @@ LocaleData::getForbiddenCharacters( const Locale& rLocale ) throw(RuntimeExcepti
 }
 
 OUString SAL_CALL
-LocaleData::getHangingCharacters( const Locale& rLocale ) throw(RuntimeException)
+LocaleData::getHangingCharacters( const Locale& rLocale )
 {
         sal_Int16 LCForbiddenCharactersCount = 0;
         sal_Unicode **LCForbiddenCharactersArray = NULL;
@@ -1027,7 +1026,7 @@ LocaleData::getHangingCharacters( const Locale& rLocale ) throw(RuntimeException
 }
 
 Sequence< OUString > SAL_CALL
-LocaleData::getBreakIteratorRules( const Locale& rLocale  ) throw(RuntimeException)
+LocaleData::getBreakIteratorRules( const Locale& rLocale  )
 {
         sal_Int16 LCBreakIteratorRuleCount = 0;
         sal_Unicode **LCBreakIteratorRulesArray = NULL;
@@ -1051,7 +1050,7 @@ LocaleData::getBreakIteratorRules( const Locale& rLocale  ) throw(RuntimeExcepti
 
 
 Sequence< OUString > SAL_CALL
-LocaleData::getReservedWord( const Locale& rLocale  ) throw(RuntimeException)
+LocaleData::getReservedWord( const Locale& rLocale  )
 {
         sal_Int16 LCReservedWordsCount = 0;
         sal_Unicode **LCReservedWordsArray = NULL;
@@ -1081,7 +1080,7 @@ OUString C2U( const char* s )
 }
 
 Sequence< Sequence<beans::PropertyValue> > SAL_CALL
-LocaleData::getContinuousNumberingLevels( const lang::Locale& rLocale ) throw(RuntimeException)
+LocaleData::getContinuousNumberingLevels( const lang::Locale& rLocale )
 {
          int i;
 
@@ -1184,13 +1183,12 @@ public:
         ~OutlineNumbering();
 
         //XIndexAccess
-        virtual sal_Int32 SAL_CALL getCount(  ) throw(RuntimeException);
-        virtual Any SAL_CALL getByIndex( sal_Int32 Index )
-            throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException);
+        virtual sal_Int32 SAL_CALL getCount(  );
+        virtual Any SAL_CALL getByIndex( sal_Int32 Index );
 
         //XElementAccess
-        virtual Type SAL_CALL getElementType(  ) throw(RuntimeException);
-        virtual sal_Bool SAL_CALL hasElements(  ) throw(RuntimeException);
+        virtual Type SAL_CALL getElementType(  );
+        virtual sal_Bool SAL_CALL hasElements(  );
 };
 
 //
@@ -1210,7 +1208,7 @@ sal_Char* U2C( OUString str )
 
 
 Sequence< Reference<container::XIndexAccess> > SAL_CALL
-LocaleData::getOutlineNumberingLevels( const lang::Locale& rLocale ) throw(RuntimeException)
+LocaleData::getOutlineNumberingLevels( const lang::Locale& rLocale )
 {
     int i;
 
@@ -1292,7 +1290,6 @@ LocaleData::getOutlineNumberingLevels( const lang::Locale& rLocale ) throw(Runti
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 oslGenericFunction SAL_CALL LocaleData::getFunctionSymbol( const Locale& rLocale, const sal_Char* pFunction )
-        throw(RuntimeException)
 {
         lcl_LookupTableHelper & rLookupTable = lcl_LookupTableStatic::get();
 
@@ -1344,7 +1341,7 @@ oslGenericFunction SAL_CALL LocaleData::getFunctionSymbol( const Locale& rLocale
 }
 
 Sequence< Locale > SAL_CALL
-LocaleData::getAllInstalledLocaleNames() throw(RuntimeException)
+LocaleData::getAllInstalledLocaleNames()
 {
         Sequence< lang::Locale > seq( nbOfLocales );
         OUString empStr;
@@ -1403,13 +1400,12 @@ OutlineNumbering::~OutlineNumbering()
         delete [] m_pOutlineLevels;
 }
 
-sal_Int32 OutlineNumbering::getCount(  ) throw(RuntimeException)
+sal_Int32 OutlineNumbering::getCount(  )
 {
         return m_nCount;
 }
 
 Any OutlineNumbering::getByIndex( sal_Int32 nIndex )
-        throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
 {
         if(nIndex < 0 || nIndex >= m_nCount)
                 throw IndexOutOfBoundsException();
@@ -1447,31 +1443,30 @@ Any OutlineNumbering::getByIndex( sal_Int32 nIndex )
         return aRet;
 }
 
-Type OutlineNumbering::getElementType(  ) throw(RuntimeException)
+Type OutlineNumbering::getElementType(  )
 {
         return ::getCppuType((Sequence<PropertyValue>*)0);
 }
 
-sal_Bool OutlineNumbering::hasElements(  ) throw(RuntimeException)
+sal_Bool OutlineNumbering::hasElements(  )
 {
         return m_nCount > 0;
 }
 
 OUString SAL_CALL
-LocaleData::getImplementationName() throw( RuntimeException )
+LocaleData::getImplementationName()
 {
         return OUString::createFromAscii(clocaledata);
 }
 
 sal_Bool SAL_CALL
 LocaleData::supportsService(const OUString& rServiceName)
-                throw( RuntimeException )
 {
         return !rServiceName.compareToAscii(clocaledata);
 }
 
 Sequence< OUString > SAL_CALL
-LocaleData::getSupportedServiceNames() throw( RuntimeException )
+LocaleData::getSupportedServiceNames()
 {
         Sequence< OUString > aRet(1);
         aRet[0] = OUString::createFromAscii(clocaledata);

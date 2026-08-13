@@ -264,7 +264,6 @@ css::geometry::IntegerSize2D PresenterButton::GetSize (void)
 //----- XWindowListener -------------------------------------------------------
 
 void SAL_CALL PresenterButton::windowResized (const css::awt::WindowEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -275,7 +274,6 @@ void SAL_CALL PresenterButton::windowResized (const css::awt::WindowEvent& rEven
 
 
 void SAL_CALL PresenterButton::windowMoved (const css::awt::WindowEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -285,7 +283,6 @@ void SAL_CALL PresenterButton::windowMoved (const css::awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterButton::windowShown (const css::lang::EventObject& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -295,7 +292,6 @@ void SAL_CALL PresenterButton::windowShown (const css::lang::EventObject& rEvent
 
 
 void SAL_CALL PresenterButton::windowHidden (const css::lang::EventObject& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -307,7 +303,6 @@ void SAL_CALL PresenterButton::windowHidden (const css::lang::EventObject& rEven
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterButton::windowPaint (const css::awt::PaintEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     if (mxWindow.is() && mxCanvas.is())
@@ -343,7 +338,6 @@ void SAL_CALL PresenterButton::windowPaint (const css::awt::PaintEvent& rEvent)
 //----- XMouseListener --------------------------------------------------------
 
 void SAL_CALL PresenterButton::mousePressed (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -355,7 +349,6 @@ void SAL_CALL PresenterButton::mousePressed (const css::awt::MouseEvent& rEvent)
 
 
 void SAL_CALL PresenterButton::mouseReleased (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -374,7 +367,6 @@ void SAL_CALL PresenterButton::mouseReleased (const css::awt::MouseEvent& rEvent
 
 
 void SAL_CALL PresenterButton::mouseEntered (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -386,7 +378,6 @@ void SAL_CALL PresenterButton::mouseEntered (const css::awt::MouseEvent& rEvent)
 
 
 void SAL_CALL PresenterButton::mouseExited (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -401,7 +392,6 @@ void SAL_CALL PresenterButton::mouseExited (const css::awt::MouseEvent& rEvent)
 //----- XMouseMotionListener --------------------------------------------------
 
 void SAL_CALL PresenterButton::mouseMoved (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -411,7 +401,6 @@ void SAL_CALL PresenterButton::mouseMoved (const css::awt::MouseEvent& rEvent)
 
 
 void SAL_CALL PresenterButton::mouseDragged (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -423,7 +412,6 @@ void SAL_CALL PresenterButton::mouseDragged (const css::awt::MouseEvent& rEvent)
 //----- lang::XEventListener --------------------------------------------------
 
 void SAL_CALL PresenterButton::disposing (const css::lang::EventObject& rEvent)
-    throw (css::uno::RuntimeException)
 {
     if (rEvent.Source == mxWindow)
         mxWindow = NULL;
@@ -593,7 +581,6 @@ Reference<beans::XPropertySet> PresenterButton::GetConfigurationProperties (
 
 
 void PresenterButton::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

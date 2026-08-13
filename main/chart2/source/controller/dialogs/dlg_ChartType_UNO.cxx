@@ -59,19 +59,19 @@ ChartTypeUnoDlg::~ChartTypeUnoDlg()
 //-------------------------------------------------------------------------
 // lang::XServiceInfo
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ChartTypeUnoDlg::getImplementationName() throw(uno::RuntimeException)
+::rtl::OUString SAL_CALL ChartTypeUnoDlg::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString ChartTypeUnoDlg::getImplementationName_Static() throw(uno::RuntimeException)
+::rtl::OUString ChartTypeUnoDlg::getImplementationName_Static()
 {
 	return CHART_TYPE_DIALOG_SERVICE_IMPLEMENTATION_NAME;
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL ChartTypeUnoDlg::getSupportedServiceNames() throw(uno::RuntimeException)
+::comphelper::StringSequence SAL_CALL ChartTypeUnoDlg::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
@@ -85,7 +85,7 @@ uno::Sequence< rtl::OUString > ChartTypeUnoDlg::getSupportedServiceNames_Static(
 	return aSNS;
 }
 //-------------------------------------------------------------------------
-uno::Sequence< sal_Int8 > SAL_CALL ChartTypeUnoDlg::getImplementationId( void ) throw( uno::RuntimeException )
+uno::Sequence< sal_Int8 > SAL_CALL ChartTypeUnoDlg::getImplementationId( void )
 {
     static ::cppu::OImplementationId aId;
 	return aId.getImplementationId();
@@ -111,7 +111,7 @@ Dialog*	ChartTypeUnoDlg::createDialog(Window* _pParent)
 }
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
-uno::Reference<beans::XPropertySetInfo>  SAL_CALL ChartTypeUnoDlg::getPropertySetInfo() throw(uno::RuntimeException)
+uno::Reference<beans::XPropertySetInfo>  SAL_CALL ChartTypeUnoDlg::getPropertySetInfo()
 {
 	return createPropertySetInfo( getInfoHelper() );
 }

@@ -43,7 +43,7 @@ SvxUnoShapeModifyListener::~SvxUnoShapeModifyListener() throw()
 }
 
 // ::com::sun::star::util::XModifyListener
-void SAL_CALL SvxUnoShapeModifyListener::modified(const lang::EventObject& ) throw( uno::RuntimeException )
+void SAL_CALL SvxUnoShapeModifyListener::modified(const lang::EventObject& )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if( mpObj )
@@ -54,7 +54,7 @@ void SAL_CALL SvxUnoShapeModifyListener::modified(const lang::EventObject& ) thr
 }
 
 // ::com::sun::star::lang::XEventListener
-void SvxUnoShapeModifyListener::disposing(const lang::EventObject& ) throw( uno::RuntimeException )
+void SvxUnoShapeModifyListener::disposing(const lang::EventObject& )
 {
 	invalidate();
 }

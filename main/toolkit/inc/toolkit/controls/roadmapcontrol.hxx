@@ -119,37 +119,37 @@ namespace toolkit
 
 
     // ::com::sun::star::io::XPersistObject
-	::rtl::OUString SAL_CALL getServiceName() throw(::com::sun::star::uno::RuntimeException);
+	::rtl::OUString SAL_CALL getServiceName();
 
 	// ::com::sun::star::lang::XServiceInfo
 	DECLIMPL_SERVICEINFO_DERIVED( UnoControlRoadmapModel, UnoControlRoadmapModel_Base, szServiceName2_UnoControlRoadmapModel )
 
-	sal_Int32 SAL_CALL getCount() throw (RuntimeException);
-    virtual Any SAL_CALL getByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
+	sal_Int32 SAL_CALL getCount();
+    virtual Any SAL_CALL getByIndex( sal_Int32 Index );
 
-    virtual void SAL_CALL insertByIndex( sal_Int32 Index, const Any & _Element) throw	 (IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
-    virtual void SAL_CALL removeByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
-    virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const Any & _Element) throw (IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
+    virtual void SAL_CALL insertByIndex( sal_Int32 Index, const Any & _Element);
+    virtual void SAL_CALL removeByIndex( sal_Int32 Index );
+    virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const Any & _Element);
 
-    virtual void SAL_CALL addContainerListener( const Reference< XContainerListener >& xListener ) throw (RuntimeException);
-    virtual void SAL_CALL removeContainerListener( const Reference< XContainerListener >& xListener ) throw (RuntimeException);
+    virtual void SAL_CALL addContainerListener( const Reference< XContainerListener >& xListener );
+    virtual void SAL_CALL removeContainerListener( const Reference< XContainerListener >& xListener );
 
-	::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException) { return UnoControlRoadmapModel_Base::queryInterface(rType); }
-    ::com::sun::star::uno::Any	SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) { return UnoControlRoadmapModel_Base::queryInterface(rType); }
+    ::com::sun::star::uno::Any	SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType );
 	void						SAL_CALL acquire() throw()	{ UnoControlRoadmapModel_Base::acquire(); }
 	void						SAL_CALL release() throw()	{ UnoControlRoadmapModel_Base::release(); }
 
 
     // ::com::sun::star::beans::XPropertySet
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
 
-    virtual Reference< XInterface > SAL_CALL createInstance(  ) throw (Exception, RuntimeException);
-    virtual Reference< XInterface > SAL_CALL createInstanceWithArguments( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException);
+    virtual Reference< XInterface > SAL_CALL createInstance(  );
+    virtual Reference< XInterface > SAL_CALL createInstanceWithArguments( const Sequence< Any >& aArguments );
 
-	virtual Type SAL_CALL getElementType() throw (RuntimeException);
+	virtual Type SAL_CALL getElementType();
 
-	virtual sal_Bool SAL_CALL hasElements() throw (RuntimeException);
+	virtual sal_Bool SAL_CALL hasElements();
 
 	};
 
@@ -166,24 +166,24 @@ namespace toolkit
 							UnoRoadmapControl( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& i_factory );
 		::rtl::OUString		GetComponentServiceName();
 
-    void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException) { UnoControlBase::disposing( Source ); }
+    void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) { UnoControlBase::disposing( Source ); }
 
-    void SAL_CALL   dispose(  ) throw(::com::sun::star::uno::RuntimeException);
-
-
-    sal_Bool SAL_CALL setModel(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& Model) throw ( ::com::sun::star::uno::RuntimeException );
-
-    void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
-
-    virtual void SAL_CALL addItemListener( const Reference< XItemListener >& l ) throw (RuntimeException);
-    virtual void SAL_CALL removeItemListener( const Reference< XItemListener >& l ) throw (RuntimeException);
+    void SAL_CALL   dispose(  );
 
 
-    virtual void SAL_CALL itemStateChanged( const ItemEvent& rEvent ) throw (RuntimeException);
+    sal_Bool SAL_CALL setModel(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& Model);
 
-    virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt ) throw (::com::sun::star::uno::RuntimeException);
+    void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& rEvent );
+    void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& rEvent );
+    void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& rEvent );
+
+    virtual void SAL_CALL addItemListener( const Reference< XItemListener >& l );
+    virtual void SAL_CALL removeItemListener( const Reference< XItemListener >& l );
+
+
+    virtual void SAL_CALL itemStateChanged( const ItemEvent& rEvent );
+
+    virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt );
 
 	// XTypeProvider
 	DECLARE_XTYPEPROVIDER( )

@@ -66,11 +66,11 @@ ShapePtr ShapeContext::getShape()
 	return mpShapePtr;
 }
 
-void ShapeContext::endFastElement( sal_Int32 /* aElementToken */ ) throw( SAXException, RuntimeException )
+void ShapeContext::endFastElement( sal_Int32 /* aElementToken */ )
 {
 }
 
-Reference< XFastContextHandler > ShapeContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > ShapeContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 

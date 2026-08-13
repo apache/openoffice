@@ -138,7 +138,6 @@ PresenterPaneFactory::~PresenterPaneFactory (void)
 
 
 void SAL_CALL PresenterPaneFactory::disposing (void)
-    throw (RuntimeException)
 {
     Reference<XConfigurationController> xCC (mxConfigurationControllerWeak);
     if (xCC.is())
@@ -167,7 +166,6 @@ void SAL_CALL PresenterPaneFactory::disposing (void)
 
 Reference<XResource> SAL_CALL PresenterPaneFactory::createResource (
     const Reference<XResourceId>& rxPaneId)
-    throw (RuntimeException, IllegalArgumentException, WrappedTargetException)
 {
     ThrowIfDisposed();
 
@@ -210,7 +208,6 @@ Reference<XResource> SAL_CALL PresenterPaneFactory::createResource (
 
 
 void SAL_CALL PresenterPaneFactory::releaseResource (const Reference<XResource>& rxResource)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -359,7 +356,6 @@ Reference<XResource> PresenterPaneFactory::CreatePane (
 
 
 void PresenterPaneFactory::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

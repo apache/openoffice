@@ -51,13 +51,11 @@ protected:
     ~VCLXTabPage();
 
     // XComponent
-    void SAL_CALL dispose() throw(css::uno::RuntimeException);
+    void SAL_CALL dispose();
 
     // ::com::sun::star::awt::XLayoutContainer
-    virtual void SAL_CALL allocateArea( css::awt::Rectangle const& rArea )
-        throw (css::uno::RuntimeException);
-    virtual css::awt::Size SAL_CALL getMinimumSize()
-        throw(css::uno::RuntimeException);
+    virtual void SAL_CALL allocateArea( css::awt::Rectangle const& rArea );
+    virtual css::awt::Size SAL_CALL getMinimumSize();
 
 private:
     VCLXTabPage( VCLXTabPage const & );

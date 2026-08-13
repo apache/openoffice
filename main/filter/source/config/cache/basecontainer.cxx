@@ -143,7 +143,6 @@ void BaseContainer::impl_loadOnDemand()
     03.03.2004 12:18
 -----------------------------------------------*/
 void BaseContainer::impl_initFlushMode()
-    throw (css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -174,7 +173,6 @@ FilterCache* BaseContainer::impl_getWorkingCache() const
     03.07.2003 11:12
 -----------------------------------------------*/
 ::rtl::OUString SAL_CALL BaseContainer::getImplementationName()
-    throw (css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -186,7 +184,6 @@ FilterCache* BaseContainer::impl_getWorkingCache() const
     03.07.2003 11:14
 -----------------------------------------------*/
 sal_Bool SAL_CALL BaseContainer::supportsService(const ::rtl::OUString& sServiceName)
-    throw (css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -206,7 +203,6 @@ sal_Bool SAL_CALL BaseContainer::supportsService(const ::rtl::OUString& sService
     03.07.2003 11:12
 -----------------------------------------------*/
 css::uno::Sequence< ::rtl::OUString > SAL_CALL BaseContainer::getSupportedServiceNames()
-    throw (css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -219,10 +215,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL BaseContainer::getSupportedServic
 -----------------------------------------------*/
 void SAL_CALL BaseContainer::insertByName(const ::rtl::OUString& sItem ,
                                           const css::uno::Any&   aValue)
-    throw (css::lang::IllegalArgumentException  ,
-           css::container::ElementExistException,
-           css::lang::WrappedTargetException    ,
-           css::uno::RuntimeException           )
 {
     if (!sItem.getLength())
         throw css::lang::IllegalArgumentException(
@@ -261,9 +253,6 @@ void SAL_CALL BaseContainer::insertByName(const ::rtl::OUString& sItem ,
     03.03.2004 11:40
 -----------------------------------------------*/
 void SAL_CALL BaseContainer::removeByName(const ::rtl::OUString& sItem)
-    throw (css::container::NoSuchElementException,
-           css::lang::WrappedTargetException     ,
-           css::uno::RuntimeException            )
 {
     impl_loadOnDemand();
 
@@ -285,10 +274,6 @@ void SAL_CALL BaseContainer::removeByName(const ::rtl::OUString& sItem)
 -----------------------------------------------*/
 void SAL_CALL BaseContainer::replaceByName(const ::rtl::OUString& sItem ,
                                            const css::uno::Any&   aValue)
-    throw (css::lang::IllegalArgumentException   ,
-           css::container::NoSuchElementException,
-           css::lang::WrappedTargetException     ,
-           css::uno::RuntimeException            )
 {
     if (!sItem.getLength())
         throw css::lang::IllegalArgumentException(
@@ -327,9 +312,6 @@ void SAL_CALL BaseContainer::replaceByName(const ::rtl::OUString& sItem ,
     03.03.2004 11:44
 -----------------------------------------------*/
 css::uno::Any SAL_CALL BaseContainer::getByName(const ::rtl::OUString& sItem)
-    throw (css::container::NoSuchElementException,
-           css::lang::WrappedTargetException     ,
-           css::uno::RuntimeException            )
 {
     if (!sItem.getLength())
         throw css::container::NoSuchElementException(
@@ -370,7 +352,6 @@ css::uno::Any SAL_CALL BaseContainer::getByName(const ::rtl::OUString& sItem)
     03.03.2004 11:46
 -----------------------------------------------*/
 css::uno::Sequence< ::rtl::OUString > SAL_CALL BaseContainer::getElementNames()
-    throw (css::uno::RuntimeException)
 {
     css::uno::Sequence< ::rtl::OUString > lNames;
 
@@ -400,7 +381,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL BaseContainer::getElementNames()
     03.03.2004 11:47
 -----------------------------------------------*/
 sal_Bool SAL_CALL BaseContainer::hasByName(const ::rtl::OUString& sItem)
-    throw (css::uno::RuntimeException)
 {
     sal_Bool bHasOne = sal_False;
 
@@ -429,7 +409,6 @@ sal_Bool SAL_CALL BaseContainer::hasByName(const ::rtl::OUString& sItem)
     02.07.2003 10:18
 -----------------------------------------------*/
 css::uno::Type SAL_CALL BaseContainer::getElementType()
-    throw (css::uno::RuntimeException)
 {
     // no lock necessary - because the type of our items
     // is fix! no internal call or member needed ...
@@ -440,7 +419,6 @@ css::uno::Type SAL_CALL BaseContainer::getElementType()
     03.03.2004 11:48
 -----------------------------------------------*/
 sal_Bool SAL_CALL BaseContainer::hasElements()
-    throw (css::uno::RuntimeException)
 {
     sal_Bool bHasSome = sal_False;
 
@@ -469,7 +447,6 @@ sal_Bool SAL_CALL BaseContainer::hasElements()
     15.07.2003 09:21
 -----------------------------------------------*/
 css::uno::Reference< css::container::XEnumeration > SAL_CALL BaseContainer::createSubSetEnumerationByQuery(const ::rtl::OUString& /* sQuery */ )
-    throw (css::uno::RuntimeException)
 {
     OSL_ENSURE(sal_False, "not pure virtual ... but not really implemented .-)");
 
@@ -481,7 +458,6 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL BaseContainer::crea
     15.07.2003 10:15
 -----------------------------------------------*/
 css::uno::Reference< css::container::XEnumeration > SAL_CALL BaseContainer::createSubSetEnumerationByProperties(const css::uno::Sequence< css::beans::NamedValue >& lProperties)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Reference< css::container::XEnumeration > xEnum;
     OUStringList                                        lKeys;
@@ -531,7 +507,6 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL BaseContainer::crea
     07.03.2004 10:48
 -----------------------------------------------*/
 void SAL_CALL BaseContainer::flush()
-    throw (css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -610,7 +585,6 @@ void SAL_CALL BaseContainer::flush()
     02.07.2003 12:16
 -----------------------------------------------*/
 void SAL_CALL BaseContainer::addFlushListener(const css::uno::Reference< css::util::XFlushListener >& xListener)
-    throw (css::uno::RuntimeException)
 {
     // no locks necessary
     // used helper lives if we live and is threadsafe by itself ...
@@ -622,7 +596,6 @@ void SAL_CALL BaseContainer::addFlushListener(const css::uno::Reference< css::ut
     02.07.2003 12:18
 -----------------------------------------------*/
 void SAL_CALL BaseContainer::removeFlushListener(const css::uno::Reference< css::util::XFlushListener >& xListener)
-    throw (css::uno::RuntimeException)
 {
     // no locks necessary
     // used helper lives if we live and is threadsafe by itself ...

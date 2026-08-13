@@ -75,21 +75,16 @@ public:
     Table();
 
     // css::awt::XLayoutContainer
-    virtual void SAL_CALL addChild( const css::uno::Reference< css::awt::XLayoutConstrains >& Child )
-        throw (css::uno::RuntimeException, css::awt::MaxChildrenException);
+    virtual void SAL_CALL addChild( const css::uno::Reference< css::awt::XLayoutConstrains >& Child );
 
-    virtual void SAL_CALL allocateArea( const css::awt::Rectangle &rArea )
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL allocateArea( const css::awt::Rectangle &rArea );
 
-    virtual css::awt::Size SAL_CALL getMinimumSize()
-        throw(css::uno::RuntimeException);
+    virtual css::awt::Size SAL_CALL getMinimumSize();
 
     // unimplemented:
     virtual sal_Bool SAL_CALL hasHeightForWidth()
-        throw(css::uno::RuntimeException)
     { return false; }
     virtual sal_Int32 SAL_CALL getHeightForWidth( sal_Int32 /*nWidth*/ )
-    throw(css::uno::RuntimeException)
     { return maRequisition.Height; }
 };
 

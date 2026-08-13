@@ -86,7 +86,6 @@ ScriptRuntimeManager::~ScriptRuntimeManager()
 // Get the proper XScriptInvocation
 Reference< runtime::XScriptInvocation > SAL_CALL ScriptRuntimeManager::getScriptRuntime(
 const Reference< XInterface >& scriptInfo )
-throw( RuntimeException )
 {
     OSL_TRACE( "** ==> ScriptRuntimeManager in getScriptRuntime\n" );
 
@@ -119,7 +118,6 @@ throw( RuntimeException )
 // Get the proper XScriptNameResolver
 Reference< runtime::XScriptNameResolver > SAL_CALL
 ScriptRuntimeManager::getScriptNameResolver()
-throw( RuntimeException )
 {
     OSL_TRACE( "** ==> ScriptRuntimeManager in getScriptNameResolver\n" );
     Reference< runtime::XScriptNameResolver > xScriptNameResolver;
@@ -149,8 +147,6 @@ Any SAL_CALL ScriptRuntimeManager::invoke(
     const ::rtl::OUString & scriptURI,
     const Any& invocationCtx, const Sequence< Any >& aParams,
     Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam )
-    throw ( lang::IllegalArgumentException, script::CannotConvertException,
-            reflection::InvocationTargetException, RuntimeException )
 {
     OSL_TRACE( "** ==> ScriptRuntimeManager in runtimemgr invoke\n" );
 
@@ -281,7 +277,6 @@ Any SAL_CALL ScriptRuntimeManager::invoke(
 Reference< storage::XScriptInfo > SAL_CALL
 ScriptRuntimeManager::resolve( const ::rtl::OUString& scriptURI,
     Any& invocationCtx )
-throw( lang::IllegalArgumentException, script::CannotConvertException, RuntimeException )
 {
     OSL_TRACE( "** ==> ScriptRuntimeManager in resolve\n" );
     Reference< storage::XScriptInfo > resolvedURI;
@@ -330,14 +325,12 @@ throw( lang::IllegalArgumentException, script::CannotConvertException, RuntimeEx
 
 //*************************************************************************
 OUString SAL_CALL ScriptRuntimeManager::getImplementationName( )
-throw( RuntimeException )
 {
     return s_implName;
 }
 
 //*************************************************************************
 sal_Bool SAL_CALL ScriptRuntimeManager::supportsService( const OUString& serviceName )
-throw( RuntimeException )
 {
     OUString const * pNames = s_serviceNames.getConstArray();
     for ( sal_Int32 nPos = s_serviceNames.getLength(); nPos--; )
@@ -352,7 +345,6 @@ throw( RuntimeException )
 
 //*************************************************************************
 Sequence<OUString> SAL_CALL ScriptRuntimeManager::getSupportedServiceNames( )
-throw( RuntimeException )
 {
     return s_serviceNames;
 }
@@ -380,8 +372,7 @@ SAL_THROW( () )
 
 //*************************************************************************
 Reference< XInterface > SAL_CALL scriptnri_create(
-    Reference< XComponentContext > const & xComponentContext )
-SAL_THROW( ( Exception ) );
+    Reference< XComponentContext > const & xComponentContext );
 
 //*************************************************************************
 Sequence< OUString > scriptnri_getSupportedServiceNames() SAL_THROW( () );
@@ -391,8 +382,7 @@ OUString scriptnri_getImplementationName() SAL_THROW( () );
 
 //******************** ScriptStorageMangaer defines ***********************
 Reference< XInterface > SAL_CALL ssm_create(
-    Reference< XComponentContext > const & xComponentContext )
-SAL_THROW( ( Exception ) );
+    Reference< XComponentContext > const & xComponentContext );
 //*************************************************************************
 Sequence< OUString > ssm_getSupportedServiceNames() SAL_THROW( () );
 //*************************************************************************

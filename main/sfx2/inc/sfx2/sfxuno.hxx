@@ -122,14 +122,14 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 //						XTypeProvider::getImplementationId()
 //************************************************************************************************************************
 #define SFX_DECL_XINTERFACE \
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw( ::com::sun::star::uno::RuntimeException ); \
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ); \
     virtual void SAL_CALL acquire() throw(); \
     virtual void SAL_CALL release() throw();
 
 #define SFX_DECL_XTYPEPROVIDER                                                                                                      \
 	/* XTypeProvider */																																\
-	virtual UNOSEQUENCE< UNOTYPE >  SAL_CALL getTypes() throw( UNORUNTIMEEXCEPTION );																\
-	virtual UNOSEQUENCE< sal_Int8 > SAL_CALL getImplementationId() throw( UNORUNTIMEEXCEPTION );
+	virtual UNOSEQUENCE< UNOTYPE >  SAL_CALL getTypes();																\
+	virtual UNOSEQUENCE< sal_Int8 > SAL_CALL getImplementationId();
 
 #define SFX_DECL_XINTERFACE_XTYPEPROVIDER                                                                                            \
     SFX_DECL_XINTERFACE                                                                                                               \
@@ -150,16 +150,16 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 //************************************************************************************************************************
 #define SFX_DECL_XSERVICEINFO                                                                                             \
 	/* XServiceInfo */																																\
-    virtual UNOOUSTRING SAL_CALL getImplementationName() throw( UNORUNTIMEEXCEPTION );																\
-    virtual sal_Bool SAL_CALL supportsService( const UNOOUSTRING& sServiceName ) throw( UNORUNTIMEEXCEPTION );										\
-    virtual UNOSEQUENCE< UNOOUSTRING > SAL_CALL getSupportedServiceNames() throw( UNORUNTIMEEXCEPTION );											\
+    virtual UNOOUSTRING SAL_CALL getImplementationName();																\
+    virtual sal_Bool SAL_CALL supportsService( const UNOOUSTRING& sServiceName );										\
+    virtual UNOSEQUENCE< UNOOUSTRING > SAL_CALL getSupportedServiceNames();											\
 																																					\
 	/* Helper for XServiceInfo */																													\
 	static UNOSEQUENCE< UNOOUSTRING > impl_getStaticSupportedServiceNames();																		\
 	static UNOOUSTRING impl_getStaticImplementationName();																							\
 																																					\
 	/* Helper for registry */																														\
-	static UNOREFERENCE< UNOXINTERFACE > SAL_CALL impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager ) throw( UNOEXCEPTION );\
+	static UNOREFERENCE< UNOXINTERFACE > SAL_CALL impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager );\
 	static UNOREFERENCE< UNOXSINGLESERVICEFACTORY > impl_createFactory( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager );
 
 #define SFX_DECL_XINTERFACE_XTYPEPROVIDER_XSERVICEINFO																								\
@@ -189,7 +189,7 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 		BASECLASS::release();																														\
 	}																																				\
 																																					\
-	UNOANY SAL_CALL IMPLCLASS::queryInterface( const UNOTYPE& rType ) throw( UNORUNTIMEEXCEPTION )													\
+	UNOANY SAL_CALL IMPLCLASS::queryInterface( const UNOTYPE& rType )													\
 	{																																				\
 		/* Attention: Don't use mutex or guard in this method!!! Is a method of XInterface.	*/														\
 		/* Ask for my own supported interfaces ...											*/														\
@@ -331,7 +331,7 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 // DON'T USE FOLLOW MACROS DIRECTLY!!!
 #define SFX_IMPL_XTYPEPROVIDER_BASE( IMPLCLASS, IMPLTYPES )																							\
 																																					\
-	UNOSEQUENCE< sal_Int8 > SAL_CALL IMPLCLASS::getImplementationId() throw( UNORUNTIMEEXCEPTION )												\
+	UNOSEQUENCE< sal_Int8 > SAL_CALL IMPLCLASS::getImplementationId()												\
 	{																																				\
 		/* Create one Id for all instances of this class.												*/											\
 		/* Use ethernet address to do this! (sal_True)													*/											\
@@ -355,7 +355,7 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 		return pID->getImplementationId();																											\
 	}																																				\
 																																					\
-	UNOSEQUENCE< UNOTYPE > SAL_CALL IMPLCLASS::getTypes() throw( UNORUNTIMEEXCEPTION )															\
+	UNOSEQUENCE< UNOTYPE > SAL_CALL IMPLCLASS::getTypes()															\
 	{																																				\
 		/* Optimize this method !																					*/								\
 		/* We initialize a static variable only one time. And we don't must use a mutex at every call!				*/								\
@@ -502,13 +502,13 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 #define SFX_IMPL_XSERVICEINFO( IMPLCLASS, IMPLSERVICENAME, IMPLNAME )																				\
 																																					\
 	/* XServiceInfo */																																\
-	UNOOUSTRING SAL_CALL IMPLCLASS::getImplementationName() throw( UNORUNTIMEEXCEPTION )															\
+	UNOOUSTRING SAL_CALL IMPLCLASS::getImplementationName()															\
 	{																																				\
 		return impl_getStaticImplementationName();																									\
 	}																																				\
 																																					\
 	/* XServiceInfo */																																\
-	sal_Bool SAL_CALL IMPLCLASS::supportsService( const UNOOUSTRING& sServiceName ) throw( UNORUNTIMEEXCEPTION )									\
+	sal_Bool SAL_CALL IMPLCLASS::supportsService( const UNOOUSTRING& sServiceName )									\
 	{																																				\
     	UNOSEQUENCE< UNOOUSTRING >	seqServiceNames	=	getSupportedServiceNames();																	\
     	const UNOOUSTRING*			pArray			=	seqServiceNames.getConstArray();															\
@@ -523,7 +523,7 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 	}																																				\
 																																					\
 	/* XServiceInfo */																																\
-	UNOSEQUENCE< UNOOUSTRING > SAL_CALL IMPLCLASS::getSupportedServiceNames() throw( UNORUNTIMEEXCEPTION )										\
+	UNOSEQUENCE< UNOOUSTRING > SAL_CALL IMPLCLASS::getSupportedServiceNames()										\
 	{																																				\
 		return impl_getStaticSupportedServiceNames();																								\
 	}																																				\
@@ -544,7 +544,7 @@ bool GetEncryptionData_Impl( const SfxItemSet* pSet, ::com::sun::star::uno::Sequ
 	}																																				\
 																																					\
 	/* Helper for registry */																														\
-	UNOREFERENCE< UNOXINTERFACE > SAL_CALL IMPLCLASS::impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager ) throw( UNOEXCEPTION )		\
+	UNOREFERENCE< UNOXINTERFACE > SAL_CALL IMPLCLASS::impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager )		\
 	{																																				\
 		return UNOREFERENCE< UNOXINTERFACE >( *new IMPLCLASS( xServiceManager ) );																\
 	}

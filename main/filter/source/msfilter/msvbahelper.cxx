@@ -474,7 +474,7 @@ uno::Sequence< ::rtl::OUString > VBAMacroResolver_getSupportedServiceNames()
     return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.vba.VBAMacroResolver" ) );
 }
 
-uno::Reference< uno::XInterface > SAL_CALL VBAMacroResolver_createInstance( const uno::Reference< uno::XComponentContext >& ) throw (uno::Exception)
+uno::Reference< uno::XInterface > SAL_CALL VBAMacroResolver_createInstance( const uno::Reference< uno::XComponentContext >& )
 {
     return static_cast< ::cppu::OWeakObject* >( new VBAMacroResolver );
 }
@@ -492,12 +492,12 @@ VBAMacroResolver::~VBAMacroResolver()
 
 // com.sun.star.lang.XServiceInfo interface -----------------------------------
 
-::rtl::OUString SAL_CALL VBAMacroResolver::getImplementationName() throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL VBAMacroResolver::getImplementationName()
 {
     return VBAMacroResolver_getImplementationName();
 }
 
-sal_Bool SAL_CALL VBAMacroResolver::supportsService( const ::rtl::OUString& rService ) throw (uno::RuntimeException)
+sal_Bool SAL_CALL VBAMacroResolver::supportsService( const ::rtl::OUString& rService )
 {
     uno::Sequence< ::rtl::OUString > aServices = VBAMacroResolver_getSupportedServiceNames();
     const ::rtl::OUString* pArray = aServices.getConstArray();
@@ -505,14 +505,14 @@ sal_Bool SAL_CALL VBAMacroResolver::supportsService( const ::rtl::OUString& rSer
     return ::std::find( pArray, pArrayEnd, rService ) != pArrayEnd;
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL VBAMacroResolver::getSupportedServiceNames() throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL VBAMacroResolver::getSupportedServiceNames()
 {
     return VBAMacroResolver_getSupportedServiceNames();
 }
 
 // com.sun.star.lang.XInitialization interface --------------------------------
 
-void SAL_CALL VBAMacroResolver::initialize( const uno::Sequence< uno::Any >& rArgs ) throw (uno::Exception, uno::RuntimeException)
+void SAL_CALL VBAMacroResolver::initialize( const uno::Sequence< uno::Any >& rArgs )
 {
     OSL_ENSURE( rArgs.getLength() < 2, "VBAMacroResolver::initialize - missing arguments" );
     if( rArgs.getLength() < 2 )
@@ -532,7 +532,7 @@ void SAL_CALL VBAMacroResolver::initialize( const uno::Sequence< uno::Any >& rAr
 
 // com.sun.star.script.vba.XVBAMacroResolver interface ------------------------
 
-::rtl::OUString SAL_CALL VBAMacroResolver::resolveVBAMacroToScriptURL( const ::rtl::OUString& rVBAMacroName ) throw (lang::IllegalArgumentException, uno::RuntimeException)
+::rtl::OUString SAL_CALL VBAMacroResolver::resolveVBAMacroToScriptURL( const ::rtl::OUString& rVBAMacroName )
 {
     if( !mpObjShell )
         throw uno::RuntimeException();
@@ -563,7 +563,7 @@ void SAL_CALL VBAMacroResolver::initialize( const uno::Sequence< uno::Any >& rAr
     return makeMacroURL( aInfo.msResolvedMacro );
 }
 
-::rtl::OUString SAL_CALL VBAMacroResolver::resolveScriptURLtoVBAMacro( const ::rtl::OUString& /*rScriptURL*/ ) throw (lang::IllegalArgumentException, uno::RuntimeException)
+::rtl::OUString SAL_CALL VBAMacroResolver::resolveScriptURLtoVBAMacro( const ::rtl::OUString& /*rScriptURL*/ )
 {
     OSL_ENSURE( false, "VBAMacroResolver::resolveScriptURLtoVBAMacro - not implemented" );
     throw uno::RuntimeException();

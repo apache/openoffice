@@ -211,8 +211,6 @@ sal_Bool SAL_CALL CachedContentResultSet::CCRS_Cache
 
 Any& SAL_CALL CachedContentResultSet::CCRS_Cache
 	::getRowAny( sal_Int32 nRow )
-	throw( SQLException,
-	RuntimeException )
 {
 	if( !nRow )
 		throw SQLException();
@@ -277,8 +275,6 @@ Sequence< sal_Bool >* SAL_CALL CachedContentResultSet::CCRS_Cache
 
 const Any& SAL_CALL CachedContentResultSet::CCRS_Cache
 	::getAny( sal_Int32 nRow, sal_Int32 nColumnIndex )
-	throw( SQLException,
-	RuntimeException )
 {
 	if( !nColumnIndex )
 		throw SQLException();
@@ -306,7 +302,6 @@ const Any& SAL_CALL CachedContentResultSet::CCRS_Cache
 
 const rtl::OUString& SAL_CALL CachedContentResultSet::CCRS_Cache
 	::getContentIdentifierString( sal_Int32 nRow )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	try
 	{
@@ -329,7 +324,6 @@ const rtl::OUString& SAL_CALL CachedContentResultSet::CCRS_Cache
 
 const Reference< XContentIdentifier >& SAL_CALL CachedContentResultSet::CCRS_Cache
 	::getContentIdentifier( sal_Int32 nRow )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	try
 	{
@@ -352,7 +346,6 @@ const Reference< XContentIdentifier >& SAL_CALL CachedContentResultSet::CCRS_Cac
 
 const Reference< XContent >& SAL_CALL CachedContentResultSet::CCRS_Cache
 	::getContent( sal_Int32 nRow )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	try
 	{
@@ -427,16 +420,13 @@ public:
 
 	// XPropertySetInfo
     virtual Sequence< com::sun::star::beans::Property > SAL_CALL
-	getProperties()
-		throw( RuntimeException );
+	getProperties();
 
     virtual com::sun::star::beans::Property SAL_CALL
-	getPropertyByName( const rtl::OUString& aName )
-		throw( com::sun::star::beans::UnknownPropertyException, RuntimeException );
+	getPropertyByName( const rtl::OUString& aName );
 
     virtual sal_Bool SAL_CALL
-	hasPropertyByName( const rtl::OUString& Name )
-		throw( RuntimeException );
+	hasPropertyByName( const rtl::OUString& Name );
 };
 
 OUString	CCRS_PropertySetInfo::m_aPropertyNameForCount( OUString::createFromAscii( "RowCount" ) );
@@ -544,7 +534,7 @@ XTYPEPROVIDER_IMPL_2( CCRS_PropertySetInfo
 //--------------------------------------------------------------------------
 //virtual
 Sequence< Property > SAL_CALL CCRS_PropertySetInfo
-	::getProperties() throw( RuntimeException )
+	::getProperties()
 {
 	return *m_pProperties;
 }
@@ -552,7 +542,6 @@ Sequence< Property > SAL_CALL CCRS_PropertySetInfo
 //virtual
 Property SAL_CALL CCRS_PropertySetInfo
 	::getPropertyByName( const rtl::OUString& aName )
-		throw( UnknownPropertyException, RuntimeException )
 {
 	if ( !aName.getLength() )
 		throw UnknownPropertyException();
@@ -567,7 +556,6 @@ Property SAL_CALL CCRS_PropertySetInfo
 //virtual
 sal_Bool SAL_CALL CCRS_PropertySetInfo
 	::hasPropertyByName( const rtl::OUString& Name )
-		throw( RuntimeException )
 {
 	return ( impl_getPos( Name ) != -1 );
 }
@@ -706,8 +694,6 @@ CachedContentResultSet::~CachedContentResultSet()
 
 sal_Bool SAL_CALL CachedContentResultSet
 	::applyPositionToOrigin( sal_Int32 nRow )
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	//-------------------------------------------------------------------------
@@ -837,7 +823,6 @@ if( bIsFinalCount && !bCurIsFinalCount )							\
 void SAL_CALL CachedContentResultSet
 	::impl_fetchData( sal_Int32 nRow
 		, sal_Int32 nFetchSize, sal_Int32 nFetchDirection )
-		throw( com::sun::star::uno::RuntimeException )
 {
 	FETCH_XXX( m_aCache, m_xFetchProvider, fetch );
 }
@@ -927,7 +912,6 @@ XINTERFACE_COMMON_IMPL( CachedContentResultSet )
 
 Any SAL_CALL CachedContentResultSet
 	::queryInterface( const Type&  rType )
-	throw ( RuntimeException )
 {
 	//list all interfaces inclusive baseclasses of interfaces
 
@@ -979,11 +963,6 @@ XSERVICEINFO_NOFACTORY_IMPL_1( CachedContentResultSet,
 // virtual
 void SAL_CALL CachedContentResultSet
 	::setPropertyValue( const OUString& aPropertyName, const Any& aValue )
-	throw( UnknownPropertyException,
-		   PropertyVetoException,
-		   IllegalArgumentException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1092,9 +1071,6 @@ void SAL_CALL CachedContentResultSet
 // virtual
 Any SAL_CALL CachedContentResultSet
 	::getPropertyValue( const OUString& rPropertyName )
-	throw( UnknownPropertyException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1155,7 +1131,6 @@ Any SAL_CALL CachedContentResultSet
 //virtual
 void SAL_CALL CachedContentResultSet
 	::impl_disposing( const EventObject& rEventObject )
-	throw( RuntimeException )
 {
 	{
 		impl_EnsureNotDisposed();
@@ -1170,7 +1145,6 @@ void SAL_CALL CachedContentResultSet
 //virtual
 void SAL_CALL CachedContentResultSet
 	::impl_propertyChange( const PropertyChangeEvent& rEvt )
-	throw( RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1228,8 +1202,6 @@ void SAL_CALL CachedContentResultSet
 //virtual
 void SAL_CALL CachedContentResultSet
 	::impl_vetoableChange( const PropertyChangeEvent& rEvt )
-	throw( PropertyVetoException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1290,7 +1262,6 @@ return m_aCache##XXX.get##XXX( nRow );
 // virtual
 OUString SAL_CALL CachedContentResultSet
 	::queryContentIdentifierString()
-	throw( RuntimeException )
 {
 	XCONTENTACCESS_queryXXX( queryContentIdentifierString, ContentIdentifierString, OUString )
 }
@@ -1299,7 +1270,6 @@ OUString SAL_CALL CachedContentResultSet
 // virtual
 Reference< XContentIdentifier > SAL_CALL CachedContentResultSet
 	::queryContentIdentifier()
-	throw( RuntimeException )
 {
 	XCONTENTACCESS_queryXXX( queryContentIdentifier, ContentIdentifier, Reference< XContentIdentifier > )
 }
@@ -1308,7 +1278,6 @@ Reference< XContentIdentifier > SAL_CALL CachedContentResultSet
 // virtual
 Reference< XContent > SAL_CALL CachedContentResultSet
 	::queryContent()
-	throw( RuntimeException )
 {
 	XCONTENTACCESS_queryXXX( queryContent, Content, Reference< XContent > )
 }
@@ -1320,8 +1289,6 @@ Reference< XContent > SAL_CALL CachedContentResultSet
 
 sal_Bool SAL_CALL CachedContentResultSet
 	::next()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1361,8 +1328,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::previous()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1402,8 +1367,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::absolute( sal_Int32 row )
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1521,8 +1484,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::relative( sal_Int32 rows )
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1576,8 +1537,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::first()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1611,8 +1570,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::last()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1660,8 +1617,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 void SAL_CALL CachedContentResultSet
 	::beforeFirst()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1676,8 +1631,6 @@ void SAL_CALL CachedContentResultSet
 //virtual
 void SAL_CALL CachedContentResultSet
 	::afterLast()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1692,8 +1645,6 @@ void SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::isAfterLast()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1725,8 +1676,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::isBeforeFirst()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1761,8 +1710,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::isFirst()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1796,8 +1743,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::isLast()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1829,8 +1774,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Int32 SAL_CALL CachedContentResultSet
 	::getRow()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1843,8 +1786,6 @@ sal_Int32 SAL_CALL CachedContentResultSet
 //virtual
 void SAL_CALL CachedContentResultSet
 	::refreshRow()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1855,8 +1796,6 @@ void SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::rowUpdated()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1866,8 +1805,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::rowInserted()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1878,8 +1815,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::rowDeleted()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 
@@ -1890,8 +1825,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 Reference< XInterface > SAL_CALL CachedContentResultSet
 	::getStatement()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	//@todo ?return anything
@@ -1905,8 +1838,6 @@ Reference< XInterface > SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::wasNull()
-	throw( SQLException,
-		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
 	impl_init_xRowOrigin();
@@ -1926,8 +1857,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 rtl::OUString SAL_CALL CachedContentResultSet
 	::getString( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getString, OUString );
 }
@@ -1935,8 +1864,6 @@ rtl::OUString SAL_CALL CachedContentResultSet
 //virtual
 sal_Bool SAL_CALL CachedContentResultSet
 	::getBoolean( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBoolean, sal_Bool );
 }
@@ -1944,8 +1871,6 @@ sal_Bool SAL_CALL CachedContentResultSet
 //virtual
 sal_Int8 SAL_CALL CachedContentResultSet
 	::getByte( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getByte, sal_Int8 );
 }
@@ -1953,8 +1878,6 @@ sal_Int8 SAL_CALL CachedContentResultSet
 //virtual
 sal_Int16 SAL_CALL CachedContentResultSet
 	::getShort( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getShort, sal_Int16 );
 }
@@ -1962,8 +1885,6 @@ sal_Int16 SAL_CALL CachedContentResultSet
 //virtual
 sal_Int32 SAL_CALL CachedContentResultSet
 	::getInt( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getInt, sal_Int32 );
 }
@@ -1971,8 +1892,6 @@ sal_Int32 SAL_CALL CachedContentResultSet
 //virtual
 sal_Int64 SAL_CALL CachedContentResultSet
 	::getLong( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getLong, sal_Int64 );
 }
@@ -1980,8 +1899,6 @@ sal_Int64 SAL_CALL CachedContentResultSet
 //virtual
 float SAL_CALL CachedContentResultSet
 	::getFloat( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getFloat, float );
 }
@@ -1989,8 +1906,6 @@ float SAL_CALL CachedContentResultSet
 //virtual
 double SAL_CALL CachedContentResultSet
 	::getDouble( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getDouble, double );
 }
@@ -1998,8 +1913,6 @@ double SAL_CALL CachedContentResultSet
 //virtual
 Sequence< sal_Int8 > SAL_CALL CachedContentResultSet
 	::getBytes( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBytes, Sequence< sal_Int8 > );
 }
@@ -2007,8 +1920,6 @@ Sequence< sal_Int8 > SAL_CALL CachedContentResultSet
 //virtual
 Date SAL_CALL CachedContentResultSet
 	::getDate( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getDate, Date );
 }
@@ -2016,8 +1927,6 @@ Date SAL_CALL CachedContentResultSet
 //virtual
 Time SAL_CALL CachedContentResultSet
 	::getTime( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getTime, Time );
 }
@@ -2025,8 +1934,6 @@ Time SAL_CALL CachedContentResultSet
 //virtual
 DateTime SAL_CALL CachedContentResultSet
 	::getTimestamp( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getTimestamp, DateTime );
 }
@@ -2035,8 +1942,6 @@ DateTime SAL_CALL CachedContentResultSet
 Reference< com::sun::star::io::XInputStream >
 	SAL_CALL CachedContentResultSet
 	::getBinaryStream( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBinaryStream, Reference< com::sun::star::io::XInputStream > );
 }
@@ -2045,8 +1950,6 @@ Reference< com::sun::star::io::XInputStream >
 Reference< com::sun::star::io::XInputStream >
 	SAL_CALL CachedContentResultSet
 	::getCharacterStream( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getCharacterStream, Reference< com::sun::star::io::XInputStream > );
 }
@@ -2056,8 +1959,6 @@ Any SAL_CALL CachedContentResultSet
 	::getObject( sal_Int32 columnIndex,
 		   const Reference<
 			com::sun::star::container::XNameAccess >& typeMap )
-	throw( SQLException,
-		   RuntimeException )
 {
 	//if you change this macro please pay attention to
 	//define XROW_GETXXX, where this is similar implemented
@@ -2100,8 +2001,6 @@ Any SAL_CALL CachedContentResultSet
 //virtual
 Reference< XRef > SAL_CALL CachedContentResultSet
 	::getRef( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getRef, Reference< XRef > );
 }
@@ -2109,8 +2008,6 @@ Reference< XRef > SAL_CALL CachedContentResultSet
 //virtual
 Reference< XBlob > SAL_CALL CachedContentResultSet
 	::getBlob( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getBlob, Reference< XBlob > );
 }
@@ -2118,8 +2015,6 @@ Reference< XBlob > SAL_CALL CachedContentResultSet
 //virtual
 Reference< XClob > SAL_CALL CachedContentResultSet
 	::getClob( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getClob, Reference< XClob > );
 }
@@ -2127,8 +2022,6 @@ Reference< XClob > SAL_CALL CachedContentResultSet
 //virtual
 Reference< XArray > SAL_CALL CachedContentResultSet
 	::getArray( sal_Int32 columnIndex )
-	throw( SQLException,
-		   RuntimeException )
 {
 	XROW_GETXXX( getArray, Reference< XArray > );
 }
@@ -2216,7 +2109,6 @@ Reference< XResultSet > SAL_CALL CachedContentResultSetFactory
 	::createCachedContentResultSet(
 			const Reference< XResultSet > & xSource,
 			const Reference< XContentIdentifierMapping > & xMapping )
-			throw( com::sun::star::uno::RuntimeException )
 {
 	Reference< XResultSet > xRet;
     xRet = new CachedContentResultSet( m_xSMgr, xSource, xMapping );

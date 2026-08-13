@@ -67,31 +67,26 @@ public:
     TargetObject()
         { ++s_obj; }
 
-    Any SAL_CALL queryInterface( Type const & type )
-        throw (RuntimeException);
+    Any SAL_CALL queryInterface( Type const & type );
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException)
+	virtual OUString SAL_CALL getImplementationName()
 		{ return OUString::createFromAscii( "target" ); }
 	virtual sal_Bool SAL_CALL supportsService( const OUString & /*rServiceName*/ )
-        throw (RuntimeException)
 		{ return sal_False; }
 	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException)
 		{ return Sequence< OUString >(); }
 	// XProxyFactory
     virtual Reference< XAggregation > SAL_CALL createProxy(
-        const Reference< XInterface > & xTarget ) throw (RuntimeException)
+        const Reference< XInterface > & xTarget )
 		{ return Reference< XAggregation >( xTarget, UNO_QUERY ); }
     // XCurrentContext
     virtual Any SAL_CALL getValueByName( OUString const & name )
-        throw (RuntimeException)
         { return makeAny( name ); }
 };
 
 //______________________________________________________________________________
 Any TargetObject::queryInterface( Type const & type )
-    throw (RuntimeException)
 {
     Any ret( t_impl::queryInterface( type ) );
     if (ret.hasValue())
@@ -125,7 +120,6 @@ public:
     }
 
     virtual Any SAL_CALL queryInterface( const Type & rType )
-        throw (RuntimeException)
 	{
 		Any aRet(
             WeakImplHelper1< lang::XServiceInfo >::queryInterface( rType ) );
@@ -135,13 +129,11 @@ public:
 	}
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException)
+	virtual OUString SAL_CALL getImplementationName()
 		{ return OUString::createFromAscii( "master" ); }
 	virtual sal_Bool SAL_CALL supportsService( const OUString & /*rServiceName*/ )
-        throw (RuntimeException)
 		{ return sal_False; }
 	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException)
 		{ return Sequence< OUString >(); }
 };
 

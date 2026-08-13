@@ -148,35 +148,35 @@ String DecodeSpaces_Impl( const String& rSource );
 // ------------------------------------------------------------------------
 // XFilePickerListener Methods
 // ------------------------------------------------------------------------
-void SAL_CALL FileDialogHelper_Impl::fileSelectionChanged( const FilePickerEvent& aEvent ) throw ( RuntimeException )
+void SAL_CALL FileDialogHelper_Impl::fileSelectionChanged( const FilePickerEvent& aEvent )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	mpAntiImpl->FileSelectionChanged( aEvent );
 }
 
 // ------------------------------------------------------------------------
-void SAL_CALL FileDialogHelper_Impl::directoryChanged( const FilePickerEvent& aEvent ) throw ( RuntimeException )
+void SAL_CALL FileDialogHelper_Impl::directoryChanged( const FilePickerEvent& aEvent )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	mpAntiImpl->DirectoryChanged( aEvent );
 }
 
 // ------------------------------------------------------------------------
-OUString SAL_CALL FileDialogHelper_Impl::helpRequested( const FilePickerEvent& aEvent ) throw ( RuntimeException )
+OUString SAL_CALL FileDialogHelper_Impl::helpRequested( const FilePickerEvent& aEvent )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	return mpAntiImpl->HelpRequested( aEvent );
 }
 
 // ------------------------------------------------------------------------
-void SAL_CALL FileDialogHelper_Impl::controlStateChanged( const FilePickerEvent& aEvent ) throw ( RuntimeException )
+void SAL_CALL FileDialogHelper_Impl::controlStateChanged( const FilePickerEvent& aEvent )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	mpAntiImpl->ControlStateChanged( aEvent );
 }
 
 // ------------------------------------------------------------------------
-void SAL_CALL FileDialogHelper_Impl::dialogSizeChanged() throw ( RuntimeException )
+void SAL_CALL FileDialogHelper_Impl::dialogSizeChanged()
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	mpAntiImpl->DialogSizeChanged();
@@ -185,7 +185,7 @@ void SAL_CALL FileDialogHelper_Impl::dialogSizeChanged() throw ( RuntimeExceptio
 // ------------------------------------------------------------------------
 // XDialogClosedListener Methods
 // ------------------------------------------------------------------------
-void SAL_CALL FileDialogHelper_Impl::dialogClosed( const DialogClosedEvent& _rEvent ) throw ( RuntimeException )
+void SAL_CALL FileDialogHelper_Impl::dialogClosed( const DialogClosedEvent& _rEvent )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     mpAntiImpl->DialogClosed( _rEvent );
@@ -308,7 +308,7 @@ void FileDialogHelper_Impl::handleDialogSizeChanged()
 // ------------------------------------------------------------------------
 // XEventListener Methods
 // ------------------------------------------------------------------------
-void SAL_CALL FileDialogHelper_Impl::disposing( const EventObject& ) throw ( RuntimeException )
+void SAL_CALL FileDialogHelper_Impl::disposing( const EventObject& )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	dispose();

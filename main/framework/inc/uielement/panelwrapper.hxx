@@ -54,29 +54,29 @@ class PanelWrapper : public UIElementWrapperBase
 		// XInterface
 		virtual void SAL_CALL acquire() throw();
 		virtual void SAL_CALL release() throw();
-		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw( ::com::sun::star::uno::RuntimeException );
+		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 
 		// XComponent
-		virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL dispose();
 
 		// XInitialization
-		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 		// XUIElement
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getRealInterface() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getRealInterface();
 
 		// XUpdatable
-		virtual void SAL_CALL update() throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL update();
 
 		// XEventListener
 		using cppu::OPropertySetHelper::disposing;
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aEvent );
 
     //-------------------------------------------------------------------------------------------------------------
     //	protected methods
     //-------------------------------------------------------------------------------------------------------------
     protected:
-		virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const com::sun::star::uno::Any&  aValue ) throw( com::sun::star::uno::Exception );
+		virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const com::sun::star::uno::Any&  aValue );
 
     private:
 		com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >    m_xServiceManager;

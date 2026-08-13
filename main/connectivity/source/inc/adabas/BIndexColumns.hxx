@@ -37,7 +37,7 @@ namespace connectivity
 		protected:
             virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
             virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > createDescriptor();
-            virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+            virtual void impl_refresh();
             virtual sdbcx::ObjectType appendObject( const ::rtl::OUString& _rForName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& descriptor );
 		public:
 			OIndexColumns(	OAdabasIndex* _pIndex,

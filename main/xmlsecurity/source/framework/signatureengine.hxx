@@ -102,8 +102,7 @@ protected:
 	SignatureEngine( );
 	virtual ~SignatureEngine() {};
 
-	virtual void tryToPerform( )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void tryToPerform( );
 	virtual void clearUp( ) const;
 	virtual bool checkReady() const;
 
@@ -114,26 +113,21 @@ protected:
 	 */
 	virtual void startEngine( const com::sun::star::uno::Reference<
                               com::sun::star::xml::crypto::XXMLSignatureTemplate >&)
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException)
 		{};
 
 public:
 	/* XReferenceCollector */
-	virtual void SAL_CALL setReferenceCount( sal_Int32 count )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setReferenceCount( sal_Int32 count );
 
-	virtual void SAL_CALL setReferenceId( sal_Int32 id )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setReferenceId( sal_Int32 id );
 
 	/* XUriBinding */
 	virtual void SAL_CALL setUriBinding(
 		const rtl::OUString& uri,
 		const com::sun::star::uno::Reference<
-			com::sun::star::io::XInputStream >& aInputStream )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+			com::sun::star::io::XInputStream >& aInputStream );
 	virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream >
-		SAL_CALL getUriBinding( const rtl::OUString& uri )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+		SAL_CALL getUriBinding( const rtl::OUString& uri );
 };
 
 #endif

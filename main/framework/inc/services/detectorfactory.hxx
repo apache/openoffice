@@ -159,9 +159,7 @@ class DetectorFactory : // interfaces
                         if the requested service could not be created or initialized.
          */
 
-        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance( const ::rtl::OUString& sName )
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance( const ::rtl::OUString& sName );
 
         //---------------------------------------
         // XMultiServiceFactory
@@ -181,9 +179,7 @@ class DetectorFactory : // interfaces
          */
 
         virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstanceWithArguments( const ::rtl::OUString&                     sName      ,
-                                                                                                  const css::uno::Sequence< css::uno::Any >& lArguments )
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+                                                                                                  const css::uno::Sequence< css::uno::Any >& lArguments );
 
         //---------------------------------------
         // XMultiServiceFactory
@@ -197,8 +193,7 @@ class DetectorFactory : // interfaces
             @return A list of all registered detect services.
          */
 
-        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getAvailableServiceNames()
-            throw(css::uno::RuntimeException);
+        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getAvailableServiceNames();
 
         //---------------------------------------
         // XNameContainer
@@ -230,11 +225,7 @@ class DetectorFactory : // interfaces
          */
 
         virtual void SAL_CALL insertByName( const ::rtl::OUString& sName        ,
-                                            const css::uno::Any&   aPropertySet )
-            throw(css::lang::IllegalArgumentException  ,
-                  css::container::ElementExistException,
-                  css::lang::WrappedTargetException    ,
-                  css::uno::RuntimeException           );
+                                            const css::uno::Any&   aPropertySet );
 
         //---------------------------------------
         // XNameContainer
@@ -256,10 +247,7 @@ class DetectorFactory : // interfaces
                         if creation of the internal structures failed.
          */
 
-        virtual void SAL_CALL removeByName( const ::rtl::OUString& sName )
-            throw(css::container::NoSuchElementException,
-                  css::lang::WrappedTargetException     ,
-                  css::uno::RuntimeException            );
+        virtual void SAL_CALL removeByName( const ::rtl::OUString& sName );
 
         //---------------------------------------
         // XNameReplace
@@ -291,11 +279,7 @@ class DetectorFactory : // interfaces
          */
 
         virtual void SAL_CALL replaceByName( const ::rtl::OUString& sName        ,
-                                             const css::uno::Any&   aPropertySet )
-            throw(css::lang::IllegalArgumentException   ,
-                  css::container::NoSuchElementException,
-                  css::lang::WrappedTargetException     ,
-                  css::uno::RuntimeException            );
+                                             const css::uno::Any&   aPropertySet );
 
         //---------------------------------------
         // XNameAccess
@@ -335,10 +319,7 @@ class DetectorFactory : // interfaces
          */
         /// @NOHTML
 
-        virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& sName )
-            throw(css::container::NoSuchElementException,
-                  css::lang::WrappedTargetException     ,
-                  css::uno::RuntimeException            );
+        virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& sName );
 
         //---------------------------------------
         // XNameAccess
@@ -352,8 +333,7 @@ class DetectorFactory : // interfaces
             @return A list of all well known container items.
          */
 
-        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-            throw(css::uno::RuntimeException);
+        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
 
         //---------------------------------------
         // XNameAccess
@@ -370,8 +350,7 @@ class DetectorFactory : // interfaces
             @return sal_True if the requested item exist; sal_False otherwise.
          */
 
-        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& sName )
-            throw(css::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& sName );
 
         //---------------------------------------
         // XElementAccess
@@ -381,8 +360,7 @@ class DetectorFactory : // interfaces
             @return Type of sequence< com::sun::star::beans::PropertyValue > every time - because it's fix.
          */
 
-        virtual css::uno::Type SAL_CALL getElementType()
-            throw(css::uno::RuntimeException);
+        virtual css::uno::Type SAL_CALL getElementType();
 
         //---------------------------------------
         // XElementAccess
@@ -392,8 +370,7 @@ class DetectorFactory : // interfaces
             @return sal_True if any item exist inside this container; sal_False otherwise.
          */
 
-        virtual sal_Bool SAL_CALL hasElements()
-            throw(css::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasElements();
 
         //---------------------------------------
         // XFlushable
@@ -415,8 +392,7 @@ class DetectorFactory : // interfaces
                         if the changes on this container was invald and could not be repaired.
          */
 
-        virtual void SAL_CALL flush()
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL flush();
 
         //---------------------------------------
         // XFlushable
@@ -431,8 +407,7 @@ class DetectorFactory : // interfaces
                         Note: multiple calls of this method for the same listener won't be checked!
          */
 
-        virtual void SAL_CALL addFlushListener( const css::uno::Reference< css::util::XFlushListener >& xListener )
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL addFlushListener( const css::uno::Reference< css::util::XFlushListener >& xListener );
 
         //---------------------------------------
         // XFlushable
@@ -447,8 +422,7 @@ class DetectorFactory : // interfaces
                         Note: multiple calls of this method for the same listener won't be checked!
          */
 
-        virtual void SAL_CALL removeFlushListener( const css::uno::Reference< css::util::XFlushListener >& xListener )
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL removeFlushListener( const css::uno::Reference< css::util::XFlushListener >& xListener );
 
 }; // class DetectorFactory
 

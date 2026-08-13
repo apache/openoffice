@@ -89,7 +89,6 @@ ResultSetBase::release(
 uno::Any SAL_CALL
 ResultSetBase::queryInterface(
 	const uno::Type& rType )
-	throw( uno::RuntimeException )
 {
 	uno::Any aRet = cppu::queryInterface( rType,
 										  SAL_STATIC_CAST( lang::XComponent*, this),
@@ -109,7 +108,6 @@ ResultSetBase::queryInterface(
 void SAL_CALL
 ResultSetBase::addEventListener(
 	const uno::Reference< lang::XEventListener >& Listener )
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -124,7 +122,6 @@ ResultSetBase::addEventListener(
 void SAL_CALL
 ResultSetBase::removeEventListener(
 	const uno::Reference< lang::XEventListener >& Listener )
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -136,7 +133,6 @@ ResultSetBase::removeEventListener(
 
 void SAL_CALL
 ResultSetBase::dispose()
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -164,8 +160,6 @@ ResultSetBase::dispose()
 sal_Bool SAL_CALL
 ResultSetBase::next(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	sal_Bool test;
 	m_nRow++;
@@ -180,8 +174,6 @@ ResultSetBase::next(
 sal_Bool SAL_CALL
 ResultSetBase::isBeforeFirst(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return m_nRow == -1;
 }
@@ -190,8 +182,6 @@ ResultSetBase::isBeforeFirst(
 sal_Bool SAL_CALL
 ResultSetBase::isAfterLast(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return sal::static_int_cast<sal_uInt32>( m_nRow ) >= m_aItems.size();   // Cannot happen, if m_aFolder.isOpen()
 }
@@ -200,8 +190,6 @@ ResultSetBase::isAfterLast(
 sal_Bool SAL_CALL
 ResultSetBase::isFirst(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return m_nRow == 0;
 }
@@ -210,8 +198,6 @@ ResultSetBase::isFirst(
 sal_Bool SAL_CALL
 ResultSetBase::isLast(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	if( sal::static_int_cast<sal_uInt32>( m_nRow ) ==  m_aItems.size() - 1 )
 		return true;
@@ -223,8 +209,6 @@ ResultSetBase::isLast(
 void SAL_CALL
 ResultSetBase::beforeFirst(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	m_nRow = -1;
 }
@@ -233,8 +217,6 @@ ResultSetBase::beforeFirst(
 void SAL_CALL
 ResultSetBase::afterLast(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	m_nRow = m_aItems.size();
 }
@@ -243,8 +225,6 @@ ResultSetBase::afterLast(
 sal_Bool SAL_CALL
 ResultSetBase::first(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	m_nRow = -1;
 	return next();
@@ -254,8 +234,6 @@ ResultSetBase::first(
 sal_Bool SAL_CALL
 ResultSetBase::last(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	m_nRow = m_aItems.size() - 1;
 	return true;
@@ -265,8 +243,6 @@ ResultSetBase::last(
 sal_Int32 SAL_CALL
 ResultSetBase::getRow(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	// Test, whether behind last row
 	if( -1 == m_nRow || sal::static_int_cast<sal_uInt32>( m_nRow ) >= m_aItems.size() )
@@ -277,7 +253,6 @@ ResultSetBase::getRow(
 
 
 sal_Bool SAL_CALL ResultSetBase::absolute( sal_Int32 row )
-	throw( sdbc::SQLException, uno::RuntimeException)
 {
 	if( row >= 0 )
 		m_nRow = row - 1;
@@ -298,8 +273,6 @@ sal_Bool SAL_CALL ResultSetBase::absolute( sal_Int32 row )
 sal_Bool SAL_CALL
 ResultSetBase::relative(
 	sal_Int32 row )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	if( isAfterLast() || isBeforeFirst() )
 		throw sdbc::SQLException();
@@ -319,8 +292,6 @@ ResultSetBase::relative(
 sal_Bool SAL_CALL
 ResultSetBase::previous(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	if( sal::static_int_cast<sal_uInt32>( m_nRow ) > m_aItems.size() )
 		m_nRow = m_aItems.size();  // Correct Handling of afterLast
@@ -333,8 +304,6 @@ ResultSetBase::previous(
 void SAL_CALL
 ResultSetBase::refreshRow(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 }
 
@@ -342,8 +311,6 @@ ResultSetBase::refreshRow(
 sal_Bool SAL_CALL
 ResultSetBase::rowUpdated(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return false;
 }
@@ -351,8 +318,6 @@ ResultSetBase::rowUpdated(
 sal_Bool SAL_CALL
 ResultSetBase::rowInserted(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return false;
 }
@@ -360,8 +325,6 @@ ResultSetBase::rowInserted(
 sal_Bool SAL_CALL
 ResultSetBase::rowDeleted(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return false;
 }
@@ -370,8 +333,6 @@ ResultSetBase::rowDeleted(
 uno::Reference< uno::XInterface > SAL_CALL
 ResultSetBase::getStatement(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	uno::Reference< uno::XInterface > test( 0 );
 	return test;
@@ -383,8 +344,6 @@ ResultSetBase::getStatement(
 void SAL_CALL
 ResultSetBase::close(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 }
 
@@ -392,7 +351,6 @@ ResultSetBase::close(
 rtl::OUString SAL_CALL
 ResultSetBase::queryContentIdentifierString(
 	void )
-	throw( uno::RuntimeException )
 {
 	if( 0 <= m_nRow && sal::static_int_cast<sal_uInt32>( m_nRow ) < m_aItems.size() )
 		return m_aPath[m_nRow];
@@ -404,7 +362,6 @@ ResultSetBase::queryContentIdentifierString(
 uno::Reference< ucb::XContentIdentifier > SAL_CALL
 ResultSetBase::queryContentIdentifier(
 	void )
-	throw( uno::RuntimeException )
 {
 	if( 0 <= m_nRow && sal::static_int_cast<sal_uInt32>( m_nRow ) < m_aItems.size() )
 	{
@@ -422,7 +379,6 @@ ResultSetBase::queryContentIdentifier(
 uno::Reference< ucb::XContent > SAL_CALL
 ResultSetBase::queryContent(
 	void )
-	throw( uno::RuntimeException )
 {
 	if( 0 <= m_nRow && sal::static_int_cast<sal_uInt32>( m_nRow ) < m_aItems.size() )
 		return m_xProvider->queryContent( queryContentIdentifier() );
@@ -457,7 +413,6 @@ public:
     }
 
     uno::Any SAL_CALL queryInterface( const uno::Type& rType )
-        throw( uno::RuntimeException )
     {
         uno::Any aRet = cppu::queryInterface( rType,
                                               SAL_STATIC_CAST( beans::XPropertySetInfo*, this ) );
@@ -465,14 +420,11 @@ public:
     }
 
     uno::Sequence< beans::Property > SAL_CALL getProperties()
-        throw( uno::RuntimeException )
     {
         return m_aSeq;
     }
 
     beans::Property SAL_CALL getPropertyByName( const ::rtl::OUString& aName )
-        throw( beans::UnknownPropertyException,
-               uno::RuntimeException)
     {
         for( int i = 0; i < m_aSeq.getLength(); ++i )
             if( aName == m_aSeq[i].Name )
@@ -481,7 +433,6 @@ public:
     }
 
     sal_Bool SAL_CALL hasPropertyByName( const ::rtl::OUString& Name )
-        throw( uno::RuntimeException )
     {
         for( int i = 0; i < m_aSeq.getLength(); ++i )
             if( Name == m_aSeq[i].Name )
@@ -499,7 +450,6 @@ private:
 // XPropertySet
 uno::Reference< beans::XPropertySetInfo > SAL_CALL
 ResultSetBase::getPropertySetInfo()
-	throw( uno::RuntimeException)
 {
 	uno::Sequence< beans::Property > seq(2);
 	seq[0].Name = rtl::OUString::createFromAscii( "RowCount" );
@@ -520,11 +470,6 @@ ResultSetBase::getPropertySetInfo()
 
 void SAL_CALL ResultSetBase::setPropertyValue(
 	const rtl::OUString& aPropertyName, const uno::Any& aValue )
-	throw( beans::UnknownPropertyException,
-		   beans::PropertyVetoException,
-		   lang::IllegalArgumentException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	(void)aValue;
 
@@ -538,9 +483,6 @@ void SAL_CALL ResultSetBase::setPropertyValue(
 
 uno::Any SAL_CALL ResultSetBase::getPropertyValue(
 	const rtl::OUString& PropertyName )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	if( PropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) )
 	{
@@ -563,9 +505,6 @@ uno::Any SAL_CALL ResultSetBase::getPropertyValue(
 void SAL_CALL ResultSetBase::addPropertyChangeListener(
 	const rtl::OUString& aPropertyName,
 	const uno::Reference< beans::XPropertyChangeListener >& xListener )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	if( aPropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) )
 	{
@@ -592,9 +531,6 @@ void SAL_CALL ResultSetBase::addPropertyChangeListener(
 void SAL_CALL ResultSetBase::removePropertyChangeListener(
 	const rtl::OUString& aPropertyName,
 	const uno::Reference< beans::XPropertyChangeListener >& aListener )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	if( aPropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) &&
 		m_pIsFinalListeners )
@@ -616,9 +552,6 @@ void SAL_CALL ResultSetBase::removePropertyChangeListener(
 void SAL_CALL ResultSetBase::addVetoableChangeListener(
 	const rtl::OUString& PropertyName,
 	const uno::Reference< beans::XVetoableChangeListener >& aListener )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	(void)PropertyName;
 	(void)aListener;
@@ -628,9 +561,6 @@ void SAL_CALL ResultSetBase::addVetoableChangeListener(
 void SAL_CALL ResultSetBase::removeVetoableChangeListener(
 	const rtl::OUString& PropertyName,
 	const uno::Reference< beans::XVetoableChangeListener >& aListener )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	(void)PropertyName;
 	(void)aListener;
@@ -642,8 +572,6 @@ void SAL_CALL ResultSetBase::removeVetoableChangeListener(
 uno::Reference< sdbc::XResultSetMetaData > SAL_CALL
 ResultSetBase::getMetaData(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	::ucbhelper::ResultSetMetaData* p =
 		  new ::ucbhelper::ResultSetMetaData(

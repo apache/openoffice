@@ -181,8 +181,8 @@ public:
     {}
     ~SwAuthenticator();
 
-    virtual ::rtl::OUString SAL_CALL getUserName( ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getPassword(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getUserName( );
+    virtual ::rtl::OUString SAL_CALL getPassword(  );
 
 };
 /*-- 25.08.2004 12:48:47---------------------------------------------------
@@ -199,8 +199,7 @@ public:
     SwConnectionContext(const ::rtl::OUString& rMailServer, sal_Int16 nPort, const ::rtl::OUString& rConnectionType);
     ~SwConnectionContext();
 
-    virtual ::com::sun::star::uno::Any SAL_CALL     getValueByName( const ::rtl::OUString& Name )
-                                                            throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL     getValueByName( const ::rtl::OUString& Name );
 };
 /*-- 21.05.2004 10:39:20---------------------------------------------------
 
@@ -225,14 +224,11 @@ public:
     {}
     ~SwConnectionListener();
 
-    virtual void SAL_CALL connected(const ::com::sun::star::lang::EventObject& aEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL connected(const ::com::sun::star::lang::EventObject& aEvent);
 
-    virtual void SAL_CALL disconnected(const ::com::sun::star::lang::EventObject& aEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disconnected(const ::com::sun::star::lang::EventObject& aEvent);
 
-    virtual void SAL_CALL disposing(const com::sun::star::lang::EventObject& aEvent)
-        throw(com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing(const com::sun::star::lang::EventObject& aEvent);
 };
 
 /*-- 13.07.2004 09:02:12---------------------------------------------------
@@ -257,23 +253,20 @@ class SwMailTransferable :
     SwMailTransferable(const rtl::OUString& rBody, const rtl::OUString& rMimeType);
     ~SwMailTransferable();
     virtual ::com::sun::star::uno::Any SAL_CALL
-                        getTransferData( const ::com::sun::star::datatransfer::DataFlavor& aFlavor )
-                            throw (::com::sun::star::datatransfer::UnsupportedFlavorException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+                        getTransferData( const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::datatransfer::DataFlavor > SAL_CALL
-                        getTransferDataFlavors(  )
-                            throw (::com::sun::star::uno::RuntimeException) ;
+                        getTransferDataFlavors(  ) ;
     virtual ::sal_Bool SAL_CALL
-                        isDataFlavorSupported( const ::com::sun::star::datatransfer::DataFlavor& aFlavor )
-                            throw (::com::sun::star::uno::RuntimeException);
+                        isDataFlavorSupported( const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
 
     //XPropertySet
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
+    virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue );
+    virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName );
+    virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
+    virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener );
+    virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
+    virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
 
 };
 
@@ -302,33 +295,30 @@ public:
     ~SwMailMessage();
 
     // Attributes
-    virtual ::rtl::OUString SAL_CALL    getSenderName() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL    getSenderAddress() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL    getReplyToAddress() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL               setReplyToAddress( const ::rtl::OUString& _replytoaddress ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL    getSubject() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL               setSubject( const ::rtl::OUString& _subject ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL    getSenderName();
+    virtual ::rtl::OUString SAL_CALL    getSenderAddress();
+    virtual ::rtl::OUString SAL_CALL    getReplyToAddress();
+    virtual void SAL_CALL               setReplyToAddress( const ::rtl::OUString& _replytoaddress );
+    virtual ::rtl::OUString SAL_CALL    getSubject();
+    virtual void SAL_CALL               setSubject( const ::rtl::OUString& _subject );
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL
-                                        getBody()
-                                                throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL               setBody( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& _body )
-                                                throw (::com::sun::star::uno::RuntimeException);
+                                        getBody();
+    virtual void SAL_CALL               setBody( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& _body );
 
     // Methods
-    virtual void SAL_CALL               addRecipient( const ::rtl::OUString& sRecipientAddress ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL               addCcRecipient( const ::rtl::OUString& sRecipientAddress ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL               addBccRecipient( const ::rtl::OUString& sRecipientAddress ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL               addRecipient( const ::rtl::OUString& sRecipientAddress );
+    virtual void SAL_CALL               addCcRecipient( const ::rtl::OUString& sRecipientAddress );
+    virtual void SAL_CALL               addBccRecipient( const ::rtl::OUString& sRecipientAddress );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-                                        getRecipients(  ) throw (::com::sun::star::uno::RuntimeException);
+                                        getRecipients(  );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-                                        getCcRecipients(  ) throw (::com::sun::star::uno::RuntimeException);
+                                        getCcRecipients(  );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-                                        getBccRecipients(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL               addAttachment( const ::com::sun::star::mail::MailAttachment& aMailAttachment )
-                                            throw (::com::sun::star::uno::RuntimeException);
+                                        getBccRecipients(  );
+    virtual void SAL_CALL               addAttachment( const ::com::sun::star::mail::MailAttachment& aMailAttachment );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::mail::MailAttachment > SAL_CALL
-                                        getAttachments(  ) throw (::com::sun::star::uno::RuntimeException);
+                                        getAttachments(  );
     void                                SetSenderName(const ::rtl::OUString& rSenderName)
                                                 {m_sSenderName = rSenderName;}
     void                                SetSenderAddress(const ::rtl::OUString& rSenderAddress)

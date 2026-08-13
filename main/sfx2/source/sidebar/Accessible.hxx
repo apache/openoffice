@@ -60,8 +60,7 @@ public:
 
 
     // XAccessible
-    virtual cssu::Reference<css::accessibility::XAccessibleContext> SAL_CALL getAccessibleContext (void)
-        throw (cssu::RuntimeException);
+    virtual cssu::Reference<css::accessibility::XAccessibleContext> SAL_CALL getAccessibleContext (void);
 
 private:
     cssu::Reference<css::accessibility::XAccessibleContext> mxContext;

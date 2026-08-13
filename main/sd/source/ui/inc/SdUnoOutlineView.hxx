@@ -59,58 +59,42 @@ public:
 	// XSelectionSupplier
 
     virtual sal_Bool SAL_CALL select (
-        const css::uno::Any& aSelection)
-        throw(css::lang::IllegalArgumentException,
-            css::uno::RuntimeException);
+        const css::uno::Any& aSelection);
 
-    virtual css::uno::Any SAL_CALL getSelection (void)
-        throw(css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getSelection (void);
 
     virtual void SAL_CALL addSelectionChangeListener (
-        const css::uno::Reference<css::view::XSelectionChangeListener>& rxListener)
-        throw(css::uno::RuntimeException);
+        const css::uno::Reference<css::view::XSelectionChangeListener>& rxListener);
 
     virtual void SAL_CALL removeSelectionChangeListener (
-        const css::uno::Reference<css::view::XSelectionChangeListener>& rxListener)
-        throw(css::uno::RuntimeException);
+        const css::uno::Reference<css::view::XSelectionChangeListener>& rxListener);
 
 
 	// XDrawView
 
     virtual void SAL_CALL setCurrentPage (
-        const css::uno::Reference<css::drawing::XDrawPage >& xPage)
-        throw(css::uno::RuntimeException);
+        const css::uno::Reference<css::drawing::XDrawPage >& xPage);
 
-    virtual css::uno::Reference<css::drawing::XDrawPage> SAL_CALL getCurrentPage (void)
-        throw(css::uno::RuntimeException);
+    virtual css::uno::Reference<css::drawing::XDrawPage> SAL_CALL getCurrentPage (void);
 
 
     // XFastPropertySet
 
     virtual void SAL_CALL setFastPropertyValue (
         sal_Int32 nHandle,
-        const css::uno::Any& rValue)
-        throw(css::beans::UnknownPropertyException,
-            css::beans::PropertyVetoException,
-            css::lang::IllegalArgumentException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+        const css::uno::Any& rValue);
 
     virtual css::uno::Any SAL_CALL getFastPropertyValue (
-        sal_Int32 nHandle)
-        throw(css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+        sal_Int32 nHandle);
 
     // lang::XEventListener
     virtual void SAL_CALL
-        disposing (const ::com::sun::star::lang::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const ::com::sun::star::lang::EventObject& rEventObject);
 
 	// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 private:
     DrawController& mrController;

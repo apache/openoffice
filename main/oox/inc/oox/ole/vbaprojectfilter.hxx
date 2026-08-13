@@ -37,8 +37,7 @@ public:
     explicit            VbaProjectFilterBase(
                             const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext,
                             const ::rtl::OUString& rAppName,
-                            const ::rtl::OUString& rStorageName )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::rtl::OUString& rStorageName );
 
     virtual bool        importDocument() throw();
     virtual bool        exportDocument() throw();
@@ -57,8 +56,7 @@ class WordVbaProjectFilter : public VbaProjectFilterBase
 {
 public:
     explicit            WordVbaProjectFilter(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
 
 private:
     virtual ::rtl::OUString implGetImplementationName() const;

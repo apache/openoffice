@@ -439,7 +439,6 @@ SdXMLExport::SdXMLExport(
 
 // XExporter
 void SAL_CALL SdXMLExport::setSourceDocument( const Reference< lang::XComponent >& xDoc )
-	throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	SvXMLExport::setSourceDocument( xDoc );
 
@@ -762,15 +761,15 @@ public:
 	ImpDefaultMapper( Reference< beans::XPropertyState >& rxState );
 
 	// Methods
-	virtual Reference< beans::XPropertySetInfo > SAL_CALL getPropertySetInfo() throw(uno::RuntimeException);
-	virtual void SAL_CALL setPropertyValue( const OUString& aPropertyName, const Any& aValue ) throw(beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException);
-	virtual Any SAL_CALL getPropertyValue( const OUString& PropertyName ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
+	virtual Reference< beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
+	virtual void SAL_CALL setPropertyValue( const OUString& aPropertyName, const Any& aValue );
+	virtual Any SAL_CALL getPropertyValue( const OUString& PropertyName );
 
 	// empty implementations
-	virtual void SAL_CALL addPropertyChangeListener( const OUString& aPropertyName, const Reference< beans::XPropertyChangeListener >& xListener ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
-	virtual void SAL_CALL removePropertyChangeListener( const OUString& aPropertyName, const Reference< beans::XPropertyChangeListener >& aListener ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
-	virtual void SAL_CALL addVetoableChangeListener( const OUString& PropertyName, const Reference< beans::XVetoableChangeListener >& aListener ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
-	virtual void SAL_CALL removeVetoableChangeListener( const OUString& PropertyName, const Reference< beans::XVetoableChangeListener >& aListener ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
+	virtual void SAL_CALL addPropertyChangeListener( const OUString& aPropertyName, const Reference< beans::XPropertyChangeListener >& xListener );
+	virtual void SAL_CALL removePropertyChangeListener( const OUString& aPropertyName, const Reference< beans::XPropertyChangeListener >& aListener );
+	virtual void SAL_CALL addVetoableChangeListener( const OUString& PropertyName, const Reference< beans::XVetoableChangeListener >& aListener );
+	virtual void SAL_CALL removeVetoableChangeListener( const OUString& PropertyName, const Reference< beans::XVetoableChangeListener >& aListener );
 };
 
 ImpDefaultMapper::ImpDefaultMapper( Reference< beans::XPropertyState >& rxState )
@@ -779,26 +778,26 @@ ImpDefaultMapper::ImpDefaultMapper( Reference< beans::XPropertyState >& rxState 
 {
 }
 
-Reference< beans::XPropertySetInfo > SAL_CALL ImpDefaultMapper::getPropertySetInfo() throw(uno::RuntimeException)
+Reference< beans::XPropertySetInfo > SAL_CALL ImpDefaultMapper::getPropertySetInfo()
 {
 	return mxSet->getPropertySetInfo();
 }
 
-void SAL_CALL ImpDefaultMapper::setPropertyValue( const OUString& aPropertyName, const Any& /*aValue*/ ) throw(beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
+void SAL_CALL ImpDefaultMapper::setPropertyValue( const OUString& aPropertyName, const Any& /*aValue*/ )
 {
 	mxState->setPropertyToDefault( aPropertyName /*, aValue */ );
 }
 
-Any SAL_CALL ImpDefaultMapper::getPropertyValue( const OUString& PropertyName ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
+Any SAL_CALL ImpDefaultMapper::getPropertyValue( const OUString& PropertyName )
 {
 	return mxState->getPropertyDefault(  PropertyName  );
 }
 
 // empty implementations
-void SAL_CALL ImpDefaultMapper::addPropertyChangeListener( const OUString&, const Reference< beans::XPropertyChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
-void SAL_CALL ImpDefaultMapper::removePropertyChangeListener( const OUString&, const Reference< beans::XPropertyChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
-void SAL_CALL ImpDefaultMapper::addVetoableChangeListener( const OUString&, const Reference< beans::XVetoableChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
-void SAL_CALL ImpDefaultMapper::removeVetoableChangeListener( const OUString&, const Reference< beans::XVetoableChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
+void SAL_CALL ImpDefaultMapper::addPropertyChangeListener( const OUString&, const Reference< beans::XPropertyChangeListener >& ) {}
+void SAL_CALL ImpDefaultMapper::removePropertyChangeListener( const OUString&, const Reference< beans::XPropertyChangeListener >& ) {}
+void SAL_CALL ImpDefaultMapper::addVetoableChangeListener( const OUString&, const Reference< beans::XVetoableChangeListener >& ) {}
+void SAL_CALL ImpDefaultMapper::removeVetoableChangeListener( const OUString&, const Reference< beans::XVetoableChangeListener >& ) {}
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -2888,7 +2887,7 @@ OUString SAL_CALL classname##_getImplementationName() throw()\
 {\
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( implementationname ) );\
 }\
-uno::Reference< uno::XInterface > SAL_CALL classname##_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr) throw( uno::Exception )\
+uno::Reference< uno::XInterface > SAL_CALL classname##_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr)\
 {\
 	return (cppu::OWeakObject*)new SdXMLExport( rSMgr, draw, flags );\
 }
@@ -2921,7 +2920,7 @@ SERVICE( XMLDrawingLayerExport, "com.sun.star.comp.DrawingLayer.XMLExporter", "X
 SERVICE( XMLImpressClipboardExport, "com.sun.star.comp.Impress.XMLClipboardExporter", "XMLImpressClipboardExport", sal_False, EXPORT_OASIS|EXPORT_STYLES|EXPORT_AUTOSTYLES|EXPORT_CONTENT|EXPORT_FONTDECLS|EXPORT_EMBEDDED );
 
 // XServiceInfo
-OUString SAL_CALL SdXMLExport::getImplementationName() throw( uno::RuntimeException )
+OUString SAL_CALL SdXMLExport::getImplementationName()
 {
     if( IsDraw())
     {

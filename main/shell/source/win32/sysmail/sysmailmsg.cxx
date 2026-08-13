@@ -39,98 +39,84 @@ WinSysMailMsg::WinSysMailMsg( )
 }
 
 void SAL_CALL WinSysMailMsg::setBody( const OUString& aBody )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aBody = aBody;
 }
 
 OUString SAL_CALL WinSysMailMsg::getBody(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aBody;
 }
 
 void SAL_CALL WinSysMailMsg::setRecipient( const OUString& aRecipient )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aRecipient = aRecipient;
 }
 
 OUString SAL_CALL WinSysMailMsg::getRecipient(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aRecipient;
 }
 
 void SAL_CALL WinSysMailMsg::setCcRecipient( const Sequence< OUString >& aCcRecipient )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_CcRecipients = aCcRecipient;
 }
 
 Sequence< OUString > SAL_CALL WinSysMailMsg::getCcRecipient(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_CcRecipients;
 }
 
 void SAL_CALL WinSysMailMsg::setBccRecipient( const Sequence< OUString >& aBccRecipient )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_BccRecipients = aBccRecipient;
 }
 
 Sequence< OUString > SAL_CALL WinSysMailMsg::getBccRecipient(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_BccRecipients;
 }
 
 void SAL_CALL WinSysMailMsg::setOriginator( const OUString& aOriginator )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aOriginator = aOriginator;
 }
 
 OUString SAL_CALL WinSysMailMsg::getOriginator(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aOriginator;
 }
 
 void SAL_CALL WinSysMailMsg::setSubject( const OUString& aSubject )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aSubject = aSubject;
 }
 
 OUString SAL_CALL WinSysMailMsg::getSubject(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aSubject;
 }
 
 void SAL_CALL WinSysMailMsg::setAttachement( const Sequence< OUString >& aAttachement )
-    throw (IllegalArgumentException, RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_Attachements = aAttachement;
 }
 
 Sequence< OUString > SAL_CALL WinSysMailMsg::getAttachement(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_Attachements;

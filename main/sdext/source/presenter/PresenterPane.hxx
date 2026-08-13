@@ -60,38 +60,30 @@ public:
     static ::rtl::OUString getImplementationName_static (void);
     static css::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static (void);
     static css::uno::Reference<css::uno::XInterface> Create(
-        const css::uno::Reference<css::uno::XComponentContext>& rxContext)
-        SAL_THROW((css::uno::Exception));
+        const css::uno::Reference<css::uno::XComponentContext>& rxContext);
 
 
     // XPane
 
-    css::uno::Reference<css::awt::XWindow> SAL_CALL getWindow (void)
-        throw (css::uno::RuntimeException);
+    css::uno::Reference<css::awt::XWindow> SAL_CALL getWindow (void);
 
-    css::uno::Reference<css::rendering::XCanvas> SAL_CALL getCanvas (void)
-        throw (css::uno::RuntimeException);
+    css::uno::Reference<css::rendering::XCanvas> SAL_CALL getCanvas (void);
 
 
     // XWindowListener
 
-    virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent);
 
-    virtual void SAL_CALL windowMoved (const css::awt::WindowEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowMoved (const css::awt::WindowEvent& rEvent);
 
-    virtual void SAL_CALL windowShown (const css::lang::EventObject& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowShown (const css::lang::EventObject& rEvent);
 
-    virtual void SAL_CALL windowHidden (const css::lang::EventObject& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowHidden (const css::lang::EventObject& rEvent);
 
 
     // XPaintListener
 
-    virtual void SAL_CALL windowPaint (const css::awt::PaintEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowPaint (const css::awt::PaintEvent& rEvent);
 
 
 private:

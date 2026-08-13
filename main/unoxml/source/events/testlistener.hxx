@@ -85,18 +85,15 @@ namespace DOM { namespace events
         virtual ~CTestListener();
 
         // XServiceInfo
-        virtual OUString SAL_CALL getImplementationName()
-            throw (RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName)
-            throw (RuntimeException);
-        virtual Sequence< OUString > SAL_CALL getSupportedServiceNames ()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getImplementationName();
+        virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+        virtual Sequence< OUString > SAL_CALL getSupportedServiceNames ();
 
 
         // XEventListener
-        virtual void SAL_CALL initialize(const Sequence< Any >& args) throw (RuntimeException);
+        virtual void SAL_CALL initialize(const Sequence< Any >& args);
 
-        virtual void SAL_CALL handleEvent(const Reference< XEvent >& evt) throw (RuntimeException);
+        virtual void SAL_CALL handleEvent(const Reference< XEvent >& evt);
 
 
     };

@@ -476,7 +476,7 @@ namespace svx
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormControllerHelper::invalidateFeatures( const Sequence< ::sal_Int16 >& _Features ) throw (RuntimeException)
+    void SAL_CALL FormControllerHelper::invalidateFeatures( const Sequence< ::sal_Int16 >& _Features )
     {
         if ( !m_pInvalidationCallback )
             // nobody's interested in ...
@@ -494,7 +494,7 @@ namespace svx
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormControllerHelper::invalidateAllFeatures() throw (RuntimeException)
+    void SAL_CALL FormControllerHelper::invalidateAllFeatures()
     {
         if ( !m_pInvalidationCallback )
             // nobody's interested in ...
@@ -537,14 +537,14 @@ namespace svx
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormControllerHelper::errorOccured( const SQLErrorEvent& _Event ) throw (RuntimeException)
+    void SAL_CALL FormControllerHelper::errorOccured( const SQLErrorEvent& _Event )
     {
         OSL_ENSURE( !m_aOperationError.hasValue(), "FormControllerHelper::errorOccured: two errors during one operation?" );
         m_aOperationError = _Event.Reason;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormControllerHelper::disposing( const EventObject& /*_Source*/ ) throw (RuntimeException)
+    void SAL_CALL FormControllerHelper::disposing( const EventObject& /*_Source*/ )
     {
         // not interested in
     }

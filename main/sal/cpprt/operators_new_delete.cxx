@@ -146,7 +146,6 @@ static void default_handler (void)
 
 static void* allocate (
 	std::size_t n, AllocatorTraits const & rTraits)
-	SAL_THROW((std::bad_alloc))
 {
 	n = rTraits.size (n);
 	for (;;)
@@ -196,7 +195,7 @@ static void deallocate (void * p, AllocatorTraits const & rTraits)
 // T * p = new T; delete p;
 // =======================================================================
 
-void* SAL_CALL operator new (std::size_t n) throw (std::bad_alloc)
+void* SAL_CALL operator new (std::size_t n)
 {
 	return allocate (n, ScalarTraits());
 }
@@ -228,7 +227,7 @@ void SAL_CALL operator delete (void * p, std::nothrow_t const &) throw ()
 // T * p = new T[n]; delete[] p;
 // =======================================================================
 
-void* SAL_CALL operator new[] (std::size_t n) throw (std::bad_alloc)
+void* SAL_CALL operator new[] (std::size_t n)
 {
 	return allocate (n, VectorTraits());
 }

@@ -230,7 +230,6 @@ AccessiblePageShape* AccessibleDrawDocumentView::CreateDrawPageShape (void)
 
 sal_Int32 SAL_CALL
     AccessibleDrawDocumentView::getAccessibleChildCount (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -248,7 +247,6 @@ sal_Int32 SAL_CALL
 
 uno::Reference<XAccessible> SAL_CALL
     AccessibleDrawDocumentView::getAccessibleChild (sal_Int32 nIndex)
-    throw (uno::RuntimeException, lang::IndexOutOfBoundsException)
 {
     ThrowIfDisposed ();
 
@@ -283,7 +281,6 @@ uno::Reference<XAccessible> SAL_CALL
 
 OUString SAL_CALL
 	AccessibleDrawDocumentView::getAccessibleName(void)
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	OUString sName = String( SdResId(SID_SD_A11Y_D_PRESENTATION) );
 	::sd::View* pSdView = static_cast< ::sd::View* >( maShapeTreeInfo.GetSdrView() );
@@ -321,7 +318,6 @@ OUString SAL_CALL
 
 void SAL_CALL
     AccessibleDrawDocumentView::disposing (const lang::EventObject& rEventObject)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -342,7 +338,6 @@ void SAL_CALL
 
 void SAL_CALL
     AccessibleDrawDocumentView::propertyChange (const beans::PropertyChangeEvent& rEventObject)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -459,7 +454,6 @@ void SAL_CALL
 
 ::rtl::OUString SAL_CALL
     AccessibleDrawDocumentView::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(
         "AccessibleDrawDocumentView"));
@@ -470,7 +464,6 @@ void SAL_CALL
 
 ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
     AccessibleDrawDocumentView::getSupportedServiceNames (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed();
     // Get list of supported service names from base class...
@@ -491,7 +484,6 @@ void SAL_CALL
 
 uno::Any SAL_CALL
     AccessibleDrawDocumentView::queryInterface (const uno::Type & rType)
-    throw (uno::RuntimeException)
 {
     uno::Any aReturn = AccessibleDocumentViewBase::queryInterface (rType);
     if ( ! aReturn.hasValue())
@@ -516,7 +508,6 @@ void SAL_CALL
 //=====  XAccessibleGroupPosition  =========================================
 uno::Sequence< sal_Int32 > SAL_CALL
     AccessibleDrawDocumentView::getGroupPosition( const uno::Any& rAny )
-    throw (uno::RuntimeException)
 {
 	// we will return the:
 	// [0] group level(always be 0 now)
@@ -587,7 +578,6 @@ uno::Sequence< sal_Int32 > SAL_CALL
 	return aRet;
 }
 ::rtl::OUString AccessibleDrawDocumentView::getObjectLink( const uno::Any& rAny )
-	throw (uno::RuntimeException)
 {
 	::rtl::OUString aRet;
 	//get the xShape of the current selected drawing object
@@ -619,7 +609,6 @@ uno::Sequence< sal_Int32 > SAL_CALL
 ///	Create a name for this view.
 ::rtl::OUString
     AccessibleDrawDocumentView::CreateAccessibleName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	rtl::OUString sName;
 
@@ -676,7 +665,6 @@ uno::Sequence< sal_Int32 > SAL_CALL
 */
 ::rtl::OUString
     AccessibleDrawDocumentView::CreateAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	rtl::OUString sDescription;
 
@@ -732,7 +720,6 @@ uno::Sequence< sal_Int32 > SAL_CALL
 */
 sal_Bool
     AccessibleDrawDocumentView::implIsSelected( sal_Int32 nAccessibleChildIndex )
-    throw (uno::RuntimeException)
 {
     const vos::OGuard                           aSolarGuard( Application::GetSolarMutex() );
     uno::Reference< view::XSelectionSupplier >  xSel( mxController, uno::UNO_QUERY );
@@ -777,7 +764,6 @@ sal_Bool
 */
 void
     AccessibleDrawDocumentView::implSelect( sal_Int32 nAccessibleChildIndex, sal_Bool bSelect )
-    throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
     const vos::OGuard                           aSolarGuard( Application::GetSolarMutex() );
     uno::Reference< view::XSelectionSupplier >  xSel( mxController, uno::UNO_QUERY );
@@ -933,7 +919,6 @@ void SAL_CALL AccessibleDrawDocumentView::disposing (void)
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >
 		SAL_CALL AccessibleDrawDocumentView::get_AccFlowTo(const ::com::sun::star::uno::Any& rAny, sal_Int32 nType)
-		throw ( ::com::sun::star::uno::RuntimeException )
 {
 	const sal_Int32 SPELLCHECKFLOWTO = 1;
 	const sal_Int32 FINDREPLACEFLOWTO = 2;

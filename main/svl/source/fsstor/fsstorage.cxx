@@ -312,7 +312,6 @@ void FSStorage::CopyContentToStorage_Impl( ::ucbhelper::Content* pContent, const
 
 //-----------------------------------------------
 uno::Any SAL_CALL FSStorage::queryInterface( const uno::Type& rType )
-		throw( uno::RuntimeException )
 {
 	uno::Any aReturn;
 	aReturn <<= ::cppu::queryInterface
@@ -349,7 +348,6 @@ void SAL_CALL FSStorage::release() throw()
 
 //-----------------------------------------------
 uno::Sequence< uno::Type > SAL_CALL FSStorage::getTypes()
-		throw( uno::RuntimeException )
 {
 	if ( m_pImpl->m_pTypeCollection == NULL )
 	{
@@ -370,7 +368,6 @@ uno::Sequence< uno::Type > SAL_CALL FSStorage::getTypes()
 
 //-----------------------------------------------
 uno::Sequence< sal_Int8 > SAL_CALL FSStorage::getImplementationId()
-		throw( uno::RuntimeException )
 {
 	static ::cppu::OImplementationId* pID = NULL ;
 
@@ -395,11 +392,6 @@ uno::Sequence< sal_Int8 > SAL_CALL FSStorage::getImplementationId()
 
 //-----------------------------------------------
 void SAL_CALL FSStorage::copyToStorage( const uno::Reference< embed::XStorage >& xDest )
-		throw ( embed::InvalidStorageException,
-				io::IOException,
-				lang::IllegalArgumentException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -448,12 +440,6 @@ void SAL_CALL FSStorage::copyToStorage( const uno::Reference< embed::XStorage >&
 //-----------------------------------------------
 uno::Reference< io::XStream > SAL_CALL FSStorage::openStreamElement(
 	const ::rtl::OUString& aStreamName, sal_Int32 nOpenMode )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				packages::WrongPasswordException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -560,13 +546,6 @@ uno::Reference< io::XStream > SAL_CALL FSStorage::openStreamElement(
 //-----------------------------------------------
 uno::Reference< io::XStream > SAL_CALL FSStorage::openEncryptedStreamElement(
 	const ::rtl::OUString&, sal_Int32, const ::rtl::OUString& )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				packages::NoEncryptionException,
-				packages::WrongPasswordException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	throw packages::NoEncryptionException();
 }
@@ -574,11 +553,6 @@ uno::Reference< io::XStream > SAL_CALL FSStorage::openEncryptedStreamElement(
 //-----------------------------------------------
 uno::Reference< embed::XStorage > SAL_CALL FSStorage::openStorageElement(
 			const ::rtl::OUString& aStorName, sal_Int32 nStorageMode )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -668,12 +642,6 @@ uno::Reference< embed::XStorage > SAL_CALL FSStorage::openStorageElement(
 
 //-----------------------------------------------
 uno::Reference< io::XStream > SAL_CALL FSStorage::cloneStreamElement( const ::rtl::OUString& aStreamName )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				packages::WrongPasswordException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -745,13 +713,6 @@ uno::Reference< io::XStream > SAL_CALL FSStorage::cloneStreamElement( const ::rt
 uno::Reference< io::XStream > SAL_CALL FSStorage::cloneEncryptedStreamElement(
 	const ::rtl::OUString&,
 	const ::rtl::OUString& )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				packages::NoEncryptionException,
-				packages::WrongPasswordException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	throw packages::NoEncryptionException();
 }
@@ -759,11 +720,6 @@ uno::Reference< io::XStream > SAL_CALL FSStorage::cloneEncryptedStreamElement(
 //-----------------------------------------------
 void SAL_CALL FSStorage::copyLastCommitTo(
 			const uno::Reference< embed::XStorage >& xTargetStorage )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	copyToStorage( xTargetStorage );
 }
@@ -772,11 +728,6 @@ void SAL_CALL FSStorage::copyLastCommitTo(
 void SAL_CALL FSStorage::copyStorageElementLastCommitTo(
 			const ::rtl::OUString& aStorName,
 			const uno::Reference< embed::XStorage >& xTargetStorage )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -790,10 +741,6 @@ void SAL_CALL FSStorage::copyStorageElementLastCommitTo(
 
 //-----------------------------------------------
 sal_Bool SAL_CALL FSStorage::isStreamElement( const ::rtl::OUString& aElementName )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				container::NoSuchElementException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -811,10 +758,6 @@ sal_Bool SAL_CALL FSStorage::isStreamElement( const ::rtl::OUString& aElementNam
 
 //-----------------------------------------------
 sal_Bool SAL_CALL FSStorage::isStorageElement( const ::rtl::OUString& aElementName )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				container::NoSuchElementException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -832,12 +775,6 @@ sal_Bool SAL_CALL FSStorage::isStorageElement( const ::rtl::OUString& aElementNa
 
 //-----------------------------------------------
 void SAL_CALL FSStorage::removeElement( const ::rtl::OUString& aElementName )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				container::NoSuchElementException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -859,13 +796,6 @@ void SAL_CALL FSStorage::removeElement( const ::rtl::OUString& aElementName )
 
 //-----------------------------------------------
 void SAL_CALL FSStorage::renameElement( const ::rtl::OUString& aElementName, const ::rtl::OUString& aNewName )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				container::NoSuchElementException,
-				container::ElementExistException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -941,13 +871,6 @@ void SAL_CALL FSStorage::renameElement( const ::rtl::OUString& aElementName, con
 void SAL_CALL FSStorage::copyElementTo(	const ::rtl::OUString& aElementName,
 										const uno::Reference< embed::XStorage >& xDest,
 										const ::rtl::OUString& aNewName )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				container::NoSuchElementException,
-				container::ElementExistException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1026,13 +949,6 @@ void SAL_CALL FSStorage::copyElementTo(	const ::rtl::OUString& aElementName,
 void SAL_CALL FSStorage::moveElementTo(	const ::rtl::OUString& aElementName,
 										const uno::Reference< embed::XStorage >& xDest,
 										const ::rtl::OUString& aNewName )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				container::NoSuchElementException,
-				container::ElementExistException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	copyElementTo( aElementName, xDest, aNewName );
@@ -1049,9 +965,6 @@ void SAL_CALL FSStorage::moveElementTo(	const ::rtl::OUString& aElementName,
 
 //-----------------------------------------------
 uno::Any SAL_CALL FSStorage::getByName( const ::rtl::OUString& aName )
-		throw ( container::NoSuchElementException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1108,7 +1021,6 @@ uno::Any SAL_CALL FSStorage::getByName( const ::rtl::OUString& aName )
 
 //-----------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL FSStorage::getElementNames()
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1174,7 +1086,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL FSStorage::getElementNames()
 
 //-----------------------------------------------
 sal_Bool SAL_CALL FSStorage::hasByName( const ::rtl::OUString& aName )
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1211,7 +1122,6 @@ sal_Bool SAL_CALL FSStorage::hasByName( const ::rtl::OUString& aName )
 
 //-----------------------------------------------
 uno::Type SAL_CALL FSStorage::getElementType()
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1224,7 +1134,6 @@ uno::Type SAL_CALL FSStorage::getElementType()
 
 //-----------------------------------------------
 sal_Bool SAL_CALL FSStorage::hasElements()
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1256,7 +1165,6 @@ sal_Bool SAL_CALL FSStorage::hasElements()
 
 //-----------------------------------------------
 void SAL_CALL FSStorage::dispose()
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1276,7 +1184,6 @@ void SAL_CALL FSStorage::dispose()
 //-----------------------------------------------
 void SAL_CALL FSStorage::addEventListener(
 			const uno::Reference< lang::XEventListener >& xListener )
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1292,7 +1199,6 @@ void SAL_CALL FSStorage::addEventListener(
 //-----------------------------------------------
 void SAL_CALL FSStorage::removeEventListener(
 			const uno::Reference< lang::XEventListener >& xListener )
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1309,7 +1215,6 @@ void SAL_CALL FSStorage::removeEventListener(
 
 //-----------------------------------------------
 uno::Reference< beans::XPropertySetInfo > SAL_CALL FSStorage::getPropertySetInfo()
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1323,11 +1228,6 @@ uno::Reference< beans::XPropertySetInfo > SAL_CALL FSStorage::getPropertySetInfo
 
 //-----------------------------------------------
 void SAL_CALL FSStorage::setPropertyValue( const ::rtl::OUString& aPropertyName, const uno::Any& )
-		throw ( beans::UnknownPropertyException,
-				beans::PropertyVetoException,
-				lang::IllegalArgumentException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1343,9 +1243,6 @@ void SAL_CALL FSStorage::setPropertyValue( const ::rtl::OUString& aPropertyName,
 
 //-----------------------------------------------
 uno::Any SAL_CALL FSStorage::getPropertyValue( const ::rtl::OUString& aPropertyName )
-		throw ( beans::UnknownPropertyException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1365,9 +1262,6 @@ uno::Any SAL_CALL FSStorage::getPropertyValue( const ::rtl::OUString& aPropertyN
 void SAL_CALL FSStorage::addPropertyChangeListener(
 			const ::rtl::OUString& /*aPropertyName*/,
 			const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/ )
-		throw ( beans::UnknownPropertyException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1382,9 +1276,6 @@ void SAL_CALL FSStorage::addPropertyChangeListener(
 void SAL_CALL FSStorage::removePropertyChangeListener(
 			const ::rtl::OUString& /*aPropertyName*/,
 			const uno::Reference< beans::XPropertyChangeListener >& /*aListener*/ )
-		throw ( beans::UnknownPropertyException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1399,9 +1290,6 @@ void SAL_CALL FSStorage::removePropertyChangeListener(
 void SAL_CALL FSStorage::addVetoableChangeListener(
 			const ::rtl::OUString& /*PropertyName*/,
 			const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
-		throw ( beans::UnknownPropertyException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1416,9 +1304,6 @@ void SAL_CALL FSStorage::addVetoableChangeListener(
 void SAL_CALL FSStorage::removeVetoableChangeListener(
 			const ::rtl::OUString& /*PropertyName*/,
 			const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
-		throw ( beans::UnknownPropertyException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1433,12 +1318,6 @@ void SAL_CALL FSStorage::removeVetoableChangeListener(
 //____________________________________________________________________________________________________
 //-----------------------------------------------
 uno::Reference< embed::XExtendedStorageStream > SAL_CALL FSStorage::openStreamElementByHierarchicalName( const ::rtl::OUString& sStreamPath, ::sal_Int32 nOpenMode )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				packages::WrongPasswordException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1558,25 +1437,12 @@ uno::Reference< embed::XExtendedStorageStream > SAL_CALL FSStorage::openStreamEl
 
 //-----------------------------------------------
 uno::Reference< embed::XExtendedStorageStream > SAL_CALL FSStorage::openEncryptedStreamElementByHierarchicalName( const ::rtl::OUString& /*sStreamName*/, ::sal_Int32 /*nOpenMode*/, const ::rtl::OUString& /*sPassword*/ )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				packages::NoEncryptionException,
-				packages::WrongPasswordException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	throw packages::NoEncryptionException();
 }
 
 //-----------------------------------------------
 void SAL_CALL FSStorage::removeStreamElementByHierarchicalName( const ::rtl::OUString& sStreamPath )
-		throw ( embed::InvalidStorageException,
-				lang::IllegalArgumentException,
-				container::NoSuchElementException,
-				io::IOException,
-				embed::StorageWrappedTargetException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 

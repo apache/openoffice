@@ -208,7 +208,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType );
 
 	/**_______________________________________________________________________________________________________
 		@short		increment refcount
@@ -259,7 +259,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes();
 
 	//________________________________________________________________________________________________________
 	//	XAggregation
@@ -278,7 +278,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType );
 
 	//________________________________________________________________________________________________________
 	//	XProgressMonitor
@@ -306,7 +306,7 @@ public:
 
 	virtual void SAL_CALL addText(	const	UNO3_OUSTRING&	sTopic			,
 									const	UNO3_OUSTRING&	sText			,
-											sal_Bool		bbeforeProgress	) throw( UNO3_RUNTIMEEXCEPTION );
+											sal_Bool		bbeforeProgress	);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -322,7 +322,7 @@ public:
 	*/
 
 	virtual void SAL_CALL removeText(	const	UNO3_OUSTRING&	sTopic			,
-												sal_Bool		bbeforeProgress	) throw( UNO3_RUNTIMEEXCEPTION );
+												sal_Bool		bbeforeProgress	);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -339,7 +339,7 @@ public:
 
 	virtual void SAL_CALL updateText(	const	UNO3_OUSTRING&	sTopic			,
 										const	UNO3_OUSTRING&	sText			,
-												sal_Bool		bbeforeProgress	) throw( UNO3_RUNTIMEEXCEPTION );
+												sal_Bool		bbeforeProgress	);
 
 	//________________________________________________________________________________________________________
 	//	XProgressBar
@@ -358,7 +358,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setForegroundColor( sal_Int32 nColor ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setForegroundColor( sal_Int32 nColor );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -373,7 +373,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setBackgroundColor( sal_Int32 nColor ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setBackgroundColor( sal_Int32 nColor );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -388,7 +388,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setValue( sal_Int32 nValue ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setValue( sal_Int32 nValue );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -404,7 +404,7 @@ public:
 	*/
 
     virtual void SAL_CALL setRange(	sal_Int32	nMin	,
-									sal_Int32	nMax	) throw( UNO3_RUNTIMEEXCEPTION );
+									sal_Int32	nMax	);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -419,7 +419,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual sal_Int32 SAL_CALL getValue() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Int32 SAL_CALL getValue();
 
 	//________________________________________________________________________________________________________
 	//	XButton
@@ -438,7 +438,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL addActionListener( const UNO3_REFERENCE< UNO3_XACTIONLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL addActionListener( const UNO3_REFERENCE< UNO3_XACTIONLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -453,7 +453,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL removeActionListener( const UNO3_REFERENCE< UNO3_XACTIONLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL removeActionListener( const UNO3_REFERENCE< UNO3_XACTIONLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -468,7 +468,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL setLabel( const UNO3_OUSTRING& sLabel ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL setLabel( const UNO3_OUSTRING& sLabel );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -483,7 +483,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual	void SAL_CALL setActionCommand( const UNO3_OUSTRING& sCommand ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual	void SAL_CALL setActionCommand( const UNO3_OUSTRING& sCommand );
 
 	//________________________________________________________________________________________________________
 	// 	XLayoutConstrains
@@ -502,7 +502,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_SIZE SAL_CALL getMinimumSize() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_SIZE SAL_CALL getMinimumSize();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -517,7 +517,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_SIZE SAL_CALL getPreferredSize() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_SIZE SAL_CALL getPreferredSize();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -532,7 +532,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_SIZE SAL_CALL calcAdjustedSize( const UNO3_SIZE& aNewSize ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_SIZE SAL_CALL calcAdjustedSize( const UNO3_SIZE& aNewSize );
 
 	//________________________________________________________________________________________________________
 	//	XControl
@@ -552,7 +552,7 @@ public:
 	*/
 
     virtual void SAL_CALL createPeer(	const	UNO3_REFERENCE< UNO3_XTOOLKIT >&	xToolkit	,
-										const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		) throw( UNO3_RUNTIMEEXCEPTION );
+										const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -567,7 +567,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -582,7 +582,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel();
 
 	//________________________________________________________________________________________________________
 	//	XComponent
@@ -601,7 +601,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL dispose() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL dispose();
 
 	//________________________________________________________________________________________________________
 	//	XWindow
@@ -624,7 +624,7 @@ public:
 										sal_Int32	nY		,
 										sal_Int32	nWidth	,
 										sal_Int32	nHeight	,
-										sal_Int16	nFlags	) throw( UNO3_RUNTIMEEXCEPTION );
+										sal_Int16	nFlags	);
 
 	//________________________________________________________________________________________________________
 	//	BaseControl

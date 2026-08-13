@@ -64,7 +64,7 @@ struct AttributeList_impl
 
 
 
-sal_Int16 AttributeList::getLength(void) throw (RuntimeException)
+sal_Int16 AttributeList::getLength(void)
 {
     return static_cast<sal_Int16>(m_pImpl->vecAttribute.size());
 }
@@ -77,7 +77,7 @@ AttributeList::AttributeList( const AttributeList &r ) :
 	*m_pImpl = *(r.m_pImpl);
 }
 
-OUString AttributeList::getNameByIndex(sal_Int16 i) throw (RuntimeException)
+OUString AttributeList::getNameByIndex(sal_Int16 i)
 {
 	if( std::vector< TagAttribute >::size_type(i) < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sName;
@@ -86,7 +86,7 @@ OUString AttributeList::getNameByIndex(sal_Int16 i) throw (RuntimeException)
 }
 
 
-OUString AttributeList::getTypeByIndex(sal_Int16 i) throw (RuntimeException)
+OUString AttributeList::getTypeByIndex(sal_Int16 i)
 {
 	if( std::vector< TagAttribute >::size_type(i) < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sType;
@@ -94,7 +94,7 @@ OUString AttributeList::getTypeByIndex(sal_Int16 i) throw (RuntimeException)
 	return OUString();
 }
 
-OUString AttributeList::getValueByIndex(sal_Int16 i) throw (RuntimeException)
+OUString AttributeList::getValueByIndex(sal_Int16 i)
 {
 	if( std::vector< TagAttribute >::size_type(i) < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sValue;
@@ -103,7 +103,7 @@ OUString AttributeList::getValueByIndex(sal_Int16 i) throw (RuntimeException)
 
 }
 
-OUString AttributeList::getTypeByName( const OUString& sName ) throw (RuntimeException)
+OUString AttributeList::getTypeByName( const OUString& sName )
 {
 	vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -115,7 +115,7 @@ OUString AttributeList::getTypeByName( const OUString& sName ) throw (RuntimeExc
 	return OUString();
 }
 
-OUString AttributeList::getValueByName(const OUString& sName) throw (RuntimeException)
+OUString AttributeList::getValueByName(const OUString& sName)
 {
 	vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -128,7 +128,7 @@ OUString AttributeList::getValueByName(const OUString& sName) throw (RuntimeExce
 }
 
 
-Reference< XCloneable > AttributeList::createClone() throw (RuntimeException)
+Reference< XCloneable > AttributeList::createClone()
 {
 	AttributeList *p = new AttributeList( *this );
 	return Reference< XCloneable > ( (XCloneable * ) p );

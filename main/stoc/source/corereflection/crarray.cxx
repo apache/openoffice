@@ -35,7 +35,6 @@ namespace stoc_corefl
 // XInterface
 //__________________________________________________________________________________________________
 Any ArrayIdlClassImpl::queryInterface( const Type & rType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Any aRet( ::cppu::queryInterface( rType, static_cast< XIdlArray * >( this ) ) );
 	return (aRet.hasValue() ? aRet : IdlClassImpl::queryInterface( rType ));
@@ -54,7 +53,6 @@ void ArrayIdlClassImpl::release() throw()
 // XTypeProvider
 //__________________________________________________________________________________________________
 Sequence< Type > ArrayIdlClassImpl::getTypes()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	static OTypeCollection * s_pTypes = 0;
 	if (! s_pTypes)
@@ -72,7 +70,6 @@ Sequence< Type > ArrayIdlClassImpl::getTypes()
 }
 //__________________________________________________________________________________________________
 Sequence< sal_Int8 > ArrayIdlClassImpl::getImplementationId()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	static OImplementationId * s_pId = 0;
 	if (! s_pId)
@@ -90,7 +87,6 @@ Sequence< sal_Int8 > ArrayIdlClassImpl::getImplementationId()
 // XIdlArray
 //__________________________________________________________________________________________________
 void ArrayIdlClassImpl::realloc( Any & rArray, sal_Int32 nLen )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
 	TypeClass eTC = rArray.getValueTypeClass();
 	if (eTC != TypeClass_SEQUENCE && eTC != TypeClass_ARRAY)
@@ -115,7 +111,6 @@ void ArrayIdlClassImpl::realloc( Any & rArray, sal_Int32 nLen )
 }
 //__________________________________________________________________________________________________
 sal_Int32 ArrayIdlClassImpl::getLen( const Any & rArray )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
 	TypeClass eTC = rArray.getValueTypeClass();
 	if (eTC != TypeClass_SEQUENCE && eTC != TypeClass_ARRAY)
@@ -129,7 +124,6 @@ sal_Int32 ArrayIdlClassImpl::getLen( const Any & rArray )
 }
 //__________________________________________________________________________________________________
 Any ArrayIdlClassImpl::get( const Any & rArray, sal_Int32 nIndex )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::ArrayIndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 	TypeClass eTC = rArray.getValueTypeClass();
 	if (eTC != TypeClass_SEQUENCE && eTC != TypeClass_ARRAY)
@@ -160,7 +154,6 @@ Any ArrayIdlClassImpl::get( const Any & rArray, sal_Int32 nIndex )
 
 //__________________________________________________________________________________________________
 void ArrayIdlClassImpl::set( Any & rArray, sal_Int32 nIndex, const Any & rNewValue )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::ArrayIndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 	TypeClass eTC = rArray.getValueTypeClass();
 	if (eTC != TypeClass_SEQUENCE && eTC != TypeClass_ARRAY)
@@ -203,7 +196,6 @@ void ArrayIdlClassImpl::set( Any & rArray, sal_Int32 nIndex, const Any & rNewVal
 // ArrayIdlClassImpl
 //__________________________________________________________________________________________________
 sal_Bool ArrayIdlClassImpl::isAssignableFrom( const Reference< XIdlClass > & xType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return (xType.is() &&
 			(equals( xType ) ||
@@ -212,13 +204,11 @@ sal_Bool ArrayIdlClassImpl::isAssignableFrom( const Reference< XIdlClass > & xTy
 }
 //__________________________________________________________________________________________________
 Reference< XIdlClass > ArrayIdlClassImpl::getComponentType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return getReflection()->forType( getTypeDescr()->pType );
 }
 //__________________________________________________________________________________________________
 Reference< XIdlArray > ArrayIdlClassImpl::getArray()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return this;
 }

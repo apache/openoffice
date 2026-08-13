@@ -115,25 +115,21 @@ public:
 
 	// XEventListener
 	virtual void SAL_CALL
-		disposing( const ::com::sun::star::lang::EventObject& rSource )
-			throw(::com::sun::star::uno::RuntimeException);
+		disposing( const ::com::sun::star::lang::EventObject& rSource );
 
 	// XPropertyChangeListener
 	virtual void SAL_CALL
-		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt )
-			throw(::com::sun::star::uno::RuntimeException);
+		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt );
 
 	// XLinguServiceEventBroadcaster
     virtual sal_Bool SAL_CALL
 		addLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
-					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException);
+					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener );
     virtual sal_Bool SAL_CALL
 		removeLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
-					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException);
+					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener );
 
 	// non-UNO functions
 	void 	AddAsPropListener();
@@ -173,8 +169,7 @@ public:
 
 	// XPropertyChangeListener
 	virtual void SAL_CALL
-		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt )
-			throw(::com::sun::star::uno::RuntimeException);
+		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt );
 };
 
 class LNG_DLLPUBLIC PropertyHelper_Thesaurus
@@ -240,8 +235,7 @@ public:
 
 	// XPropertyChangeListener
 	virtual void SAL_CALL
-		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt )
-			throw(::com::sun::star::uno::RuntimeException);
+		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt );
 
     virtual sal_Int16   GetDefaultNumberOfSuggestions() const;
 
@@ -278,12 +272,10 @@ public:
 	sal_Bool	IsSpellCapitalization() const;
     sal_Bool addLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
-					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException);
+					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener );
     sal_Bool removeLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
-					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException);
+					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener );
 };
 
 ///////////////////////////////////////////////////////////////////////////
@@ -324,8 +316,7 @@ public:
 
 	// XPropertyChangeListener
 	virtual void SAL_CALL
-		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt )
-			throw(::com::sun::star::uno::RuntimeException);
+		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt );
 
 	sal_Int16	GetMinLeading() const				{ return nResHyphMinLeading; }
 	sal_Int16	GetMinTrailing() const				{ return nResHyphMinTrailing; }
@@ -357,12 +348,10 @@ public:
 	sal_Int16	GetMinWordLength() const;
     sal_Bool addLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
-					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException);
+					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener );
     sal_Bool removeLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
-					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException);
+					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener );
 };
 
 ///////////////////////////////////////////////////////////////////////////

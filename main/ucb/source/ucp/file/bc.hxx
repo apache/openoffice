@@ -98,8 +98,7 @@ namespace fileaccess {
 		// XInterface
 		virtual com::sun::star::uno::Any SAL_CALL
 		queryInterface(
-			const com::sun::star::uno::Type& aType )
-			throw( com::sun::star::uno::RuntimeException);
+			const com::sun::star::uno::Type& aType );
 
 		virtual void SAL_CALL
 		acquire(
@@ -115,17 +114,14 @@ namespace fileaccess {
 		// XComponent
 		virtual void SAL_CALL
 		dispose(
-			void )
-			throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		virtual void SAL_CALL
 		addEventListener(
-			const com::sun::star::uno::Reference< com::sun::star::lang::XEventListener >& xListener )
-			throw( com::sun::star::uno::RuntimeException );
+			const com::sun::star::uno::Reference< com::sun::star::lang::XEventListener >& xListener );
 
 		virtual void SAL_CALL
-		removeEventListener( const com::sun::star::uno::Reference< com::sun::star::lang::XEventListener >& aListener )
-			throw( com::sun::star::uno::RuntimeException );
+		removeEventListener( const com::sun::star::uno::Reference< com::sun::star::lang::XEventListener >& aListener );
 
 
 		// XTypeProvider
@@ -135,59 +131,47 @@ namespace fileaccess {
 
 		// XServiceInfo
 		virtual rtl::OUString SAL_CALL
-		getImplementationName()
-			throw( com::sun::star::uno::RuntimeException);
+		getImplementationName();
 
 		virtual sal_Bool SAL_CALL
-		supportsService( const rtl::OUString& ServiceName )
-			throw( com::sun::star::uno::RuntimeException);
+		supportsService( const rtl::OUString& ServiceName );
 
 		virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-		getSupportedServiceNames()
-			throw( com::sun::star::uno::RuntimeException );
+		getSupportedServiceNames();
 
 
 		// XCommandProcessor
 		virtual sal_Int32 SAL_CALL
 		createCommandIdentifier(
-			void )
-			throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		virtual com::sun::star::uno::Any SAL_CALL
 		execute(
 			const com::sun::star::ucb::Command& aCommand,
 			sal_Int32 CommandId,
-			const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& Environment )
-			throw( com::sun::star::uno::Exception,
-				   com::sun::star::ucb::CommandAbortedException,
-				   com::sun::star::uno::RuntimeException );
+			const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& Environment );
 
 		virtual void SAL_CALL
 		abort(
-			sal_Int32 CommandId )
-			throw( com::sun::star::uno::RuntimeException );
+			sal_Int32 CommandId );
 
 
 		// XContent
 		virtual com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier > SAL_CALL
 		getIdentifier(
-			void )
-			throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		virtual rtl::OUString SAL_CALL
 		getContentType(
-			void )
-			throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		virtual void SAL_CALL
 		addContentEventListener(
-			const com::sun::star::uno::Reference< com::sun::star::ucb::XContentEventListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+			const com::sun::star::uno::Reference< com::sun::star::ucb::XContentEventListener >& Listener );
 
 		virtual void SAL_CALL
 		removeContentEventListener(
-			const com::sun::star::uno::Reference< com::sun::star::ucb::XContentEventListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+			const com::sun::star::uno::Reference< com::sun::star::ucb::XContentEventListener >& Listener );
 
 		// XPropertiesChangeNotifier
 
@@ -195,14 +179,12 @@ namespace fileaccess {
 		addPropertiesChangeListener(
 			const com::sun::star::uno::Sequence< rtl::OUString >& PropertyNames,
 			const com::sun::star::uno::Reference<
-			com::sun::star::beans::XPropertiesChangeListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+			com::sun::star::beans::XPropertiesChangeListener >& Listener );
 
 		virtual void SAL_CALL
 		removePropertiesChangeListener( const com::sun::star::uno::Sequence< rtl::OUString >& PropertyNames,
 										const com::sun::star::uno::Reference<
-										com::sun::star::beans::XPropertiesChangeListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+										com::sun::star::beans::XPropertiesChangeListener >& Listener );
 
 		// XPropertyContainer
 
@@ -210,57 +192,44 @@ namespace fileaccess {
 		addProperty(
 			const rtl::OUString& Name,
 			sal_Int16 Attributes,
-			const com::sun::star::uno::Any& DefaultValue )
-			throw( com::sun::star::beans::PropertyExistException,
-				   com::sun::star::beans::IllegalTypeException,
-				   com::sun::star::lang::IllegalArgumentException,
-				   com::sun::star::uno::RuntimeException);
+			const com::sun::star::uno::Any& DefaultValue );
 
 		virtual void SAL_CALL
 		removeProperty(
-			const rtl::OUString& Name )
-			throw( com::sun::star::beans::UnknownPropertyException,
-				   com::sun::star::beans::NotRemoveableException,
-				   com::sun::star::uno::RuntimeException );
+			const rtl::OUString& Name );
 
 		// XPropertySetInfoChangeNotifier
 
 		virtual void SAL_CALL
 		addPropertySetInfoChangeListener(
 			const com::sun::star::uno::Reference<
-			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener );
 
 		virtual void SAL_CALL
 		removePropertySetInfoChangeListener(
 			const com::sun::star::uno::Reference<
-			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener );
 
 
 		// XContentCreator
 
 		virtual com::sun::star::uno::Sequence< com::sun::star::ucb::ContentInfo > SAL_CALL
 		queryCreatableContentsInfo(
-			void )
-			throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		virtual com::sun::star::uno::Reference< com::sun::star::ucb::XContent > SAL_CALL
 		createNewContent(
-			const com::sun::star::ucb::ContentInfo& Info )
-			throw( com::sun::star::uno::RuntimeException );
+			const com::sun::star::ucb::ContentInfo& Info );
 
 
 		// XChild
 		virtual com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL
 		getParent(
-			void ) throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		// Not supported
 		virtual void SAL_CALL
-		setParent( const com::sun::star::uno::Reference< com::sun::star::uno::XInterface >& Parent )
-			throw( com::sun::star::lang::NoSupportException,
-				   com::sun::star::uno::RuntimeException);
+		setParent( const com::sun::star::uno::Reference< com::sun::star::uno::XInterface >& Parent );
 
 
 		// Notifier
@@ -297,19 +266,16 @@ namespace fileaccess {
 
 		// Private Methods
 		com::sun::star::uno::Reference< com::sun::star::ucb::XCommandInfo > SAL_CALL
-		getCommandInfo()
-			throw( com::sun::star::uno::RuntimeException );
+		getCommandInfo();
 
 		virtual com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL
 		getPropertySetInfo(
-			sal_Int32 nMyCommandIdentifier )
-			throw( com::sun::star::uno::RuntimeException );
+			sal_Int32 nMyCommandIdentifier );
 
 		virtual com::sun::star::uno::Reference< com::sun::star::sdbc::XRow > SAL_CALL
 		getPropertyValues(
 			sal_Int32 nMyCommandIdentifier,
-			const com::sun::star::uno::Sequence< com::sun::star::beans::Property >& PropertySet )
-			throw( com::sun::star::uno::RuntimeException );
+			const com::sun::star::uno::Sequence< com::sun::star::beans::Property >& PropertySet );
 
 		com::sun::star::uno::Sequence< com::sun::star::uno::Any > SAL_CALL
 		setPropertyValues(

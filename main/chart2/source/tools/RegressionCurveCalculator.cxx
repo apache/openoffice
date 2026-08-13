@@ -91,8 +91,6 @@ Sequence< geometry::RealPoint2D > SAL_CALL RegressionCurveCalculator::getCurveVa
     const Reference< chart2::XScaling >& xScalingX,
     const Reference< chart2::XScaling >& /* xScalingY */,
     ::sal_Bool /* bMaySkipPointsInCalculation */ )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     if( nPointCount < 2 )
         throw lang::IllegalArgumentException();
@@ -127,13 +125,11 @@ Sequence< geometry::RealPoint2D > SAL_CALL RegressionCurveCalculator::getCurveVa
 }
 
 double SAL_CALL RegressionCurveCalculator::getCorrelationCoefficient()
-    throw (uno::RuntimeException)
 {
     return m_fCorrelationCoeffitient;
 }
 
 OUString SAL_CALL RegressionCurveCalculator::getRepresentation()
-    throw (uno::RuntimeException)
 {
     return ImplGetRepresentation( Reference< util::XNumberFormatter >(), 0 );
 }
@@ -141,7 +137,6 @@ OUString SAL_CALL RegressionCurveCalculator::getRepresentation()
 OUString SAL_CALL RegressionCurveCalculator::getFormattedRepresentation(
     const Reference< util::XNumberFormatsSupplier > & xNumFmtSupplier,
     ::sal_Int32 nNumberFormatKey )
-    throw (uno::RuntimeException)
 {
     // create and prepare a number formatter
     if( !xNumFmtSupplier.is())

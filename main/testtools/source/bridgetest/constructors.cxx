@@ -68,12 +68,10 @@ private:
     virtual ~Impl() {}
 
     virtual void SAL_CALL initialize(
-        css::uno::Sequence< css::uno::Any > const & arguments)
-        throw (css::uno::Exception);
+        css::uno::Sequence< css::uno::Any > const & arguments);
 };
 
 void Impl::initialize(css::uno::Sequence< css::uno::Any > const & arguments)
-    throw (css::uno::Exception)
 {
     ::sal_Bool arg0 = sal_Bool();
     ::sal_Int8 arg1 = sal_Int8();
@@ -218,25 +216,19 @@ private:
     virtual ~Impl2() {}
 
     virtual void SAL_CALL initialize(
-        css::uno::Sequence< css::uno::Any > const & arguments)
-        throw (css::uno::Exception);
+        css::uno::Sequence< css::uno::Any > const & arguments);
 
     //XMultiBase1
-    virtual double SAL_CALL getatt1()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setatt1( double _att1 )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL fn11( ::sal_Int32 arg )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL fn12( const ::rtl::OUString& arg )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual double SAL_CALL getatt1();
+    virtual void SAL_CALL setatt1( double _att1 );
+    virtual ::sal_Int32 SAL_CALL fn11( ::sal_Int32 arg );
+    virtual ::rtl::OUString SAL_CALL fn12( const ::rtl::OUString& arg );
 
 
     double m_attr1;
 };
 
 void Impl2::initialize(css::uno::Sequence< css::uno::Any > const & arguments)
-    throw (css::uno::Exception)
 {
     ttb::TestPolyStruct< css::uno::Type > arg0;
     ttb::TestPolyStruct< css::uno::Any > arg1;
@@ -422,31 +414,27 @@ void Impl2::initialize(css::uno::Sequence< css::uno::Any > const & arguments)
 
 //XMultiBase1
 double Impl2::getatt1()
-        throw (::com::sun::star::uno::RuntimeException)
 {
     return m_attr1;
 }
 
-void Impl2::setatt1( double _att1 )throw (::com::sun::star::uno::RuntimeException)
+void Impl2::setatt1( double _att1 )
 {
     m_attr1 = _att1;
 }
 
 ::sal_Int32 Impl2::fn11( ::sal_Int32 arg )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     return 11 * arg;
 }
 
 ::rtl::OUString Impl2::fn12( const ::rtl::OUString& arg )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("12")) + arg;
 }
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL create(
     css::uno::Reference< css::uno::XComponentContext > const &)
-    SAL_THROW((css::uno::Exception))
 {
     return static_cast< ::cppu::OWeakObject * >(new Impl);
 }
@@ -466,7 +454,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() {
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL create2(
     css::uno::Reference< css::uno::XComponentContext > const &)
-    SAL_THROW((css::uno::Exception))
 {
     return static_cast< ::cppu::OWeakObject * >(new Impl2);
 }

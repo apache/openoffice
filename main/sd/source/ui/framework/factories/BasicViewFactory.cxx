@@ -69,7 +69,7 @@ Reference<XInterface> SAL_CALL BasicViewFactory_createInstance (
 
 
 
-::rtl::OUString BasicViewFactory_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString BasicViewFactory_getImplementationName (void)
 {
     return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.Draw.framework.BasicViewFactory"));
@@ -79,7 +79,6 @@ Reference<XInterface> SAL_CALL BasicViewFactory_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL BasicViewFactory_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.framework.BasicViewFactory"));
@@ -186,7 +185,6 @@ void SAL_CALL BasicViewFactory::disposing (void)
 
 Reference<XResource> SAL_CALL BasicViewFactory::createResource (
     const Reference<XResourceId>& rxViewId)
-    throw(RuntimeException, IllegalArgumentException, WrappedTargetException)
 {
     Reference<XResource> xView;
     const bool bIsCenterPane (
@@ -244,7 +242,6 @@ Reference<XResource> SAL_CALL BasicViewFactory::createResource (
 
 
 void SAL_CALL BasicViewFactory::releaseResource (const Reference<XResource>& rxView)
-    throw(RuntimeException)
 {
     if ( ! rxView.is())
         throw lang::IllegalArgumentException();
@@ -298,7 +295,6 @@ void SAL_CALL BasicViewFactory::releaseResource (const Reference<XResource>& rxV
 
 
 void SAL_CALL BasicViewFactory::initialize (const Sequence<Any>& aArguments)
-    throw (Exception, RuntimeException)
 {
     if (aArguments.getLength() > 0)
     {

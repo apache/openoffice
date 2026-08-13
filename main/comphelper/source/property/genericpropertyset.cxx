@@ -69,31 +69,31 @@ namespace comphelper
         ::cppu::OMultiTypeInterfaceContainerHelperVar< ::rtl::OUString,UStringHash,UStringEqual> m_aListener;
 
 	protected:
-		virtual void _setPropertyValues( const PropertyMapEntry** ppEntries, const  Any* pValues ) throw( UnknownPropertyException,  PropertyVetoException,  IllegalArgumentException,  WrappedTargetException );
-		virtual void _getPropertyValues( const PropertyMapEntry** ppEntries,  Any* pValue ) throw( UnknownPropertyException,  WrappedTargetException );
+		virtual void _setPropertyValues( const PropertyMapEntry** ppEntries, const  Any* pValues );
+		virtual void _getPropertyValues( const PropertyMapEntry** ppEntries,  Any* pValue );
 
 	public:
 		GenericPropertySet( PropertySetInfo* pInfo ) throw();
 		virtual ~GenericPropertySet() throw();
 
 		// XInterface
-		virtual  Any SAL_CALL queryAggregation( const  Type & rType ) throw( RuntimeException);
-		virtual  Any SAL_CALL queryInterface( const  Type & rType ) throw( RuntimeException);
+		virtual  Any SAL_CALL queryAggregation( const  Type & rType );
+		virtual  Any SAL_CALL queryInterface( const  Type & rType );
 		virtual void SAL_CALL acquire() throw();
 		virtual void SAL_CALL release() throw();
 
 		// XTypeProvider
-		virtual  Sequence<  Type > SAL_CALL getTypes(  ) throw( RuntimeException);
-		virtual  Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw( RuntimeException);
+		virtual  Sequence<  Type > SAL_CALL getTypes(  );
+		virtual  Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 
 		// XServiceInfo
-		virtual rtl::OUString SAL_CALL getImplementationName() throw(  RuntimeException );
-		virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName ) throw(  RuntimeException );
-		virtual  Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames() throw(  RuntimeException );
+		virtual rtl::OUString SAL_CALL getImplementationName();
+		virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName );
+		virtual  Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         // XPropertySet
-        virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
+        virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener );
 	};
 
 }
@@ -109,7 +109,7 @@ GenericPropertySet::GenericPropertySet( PropertySetInfo* pInfo ) throw()
 GenericPropertySet::~GenericPropertySet() throw()
 {
 }
-void SAL_CALL GenericPropertySet::addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& xListener ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
+void SAL_CALL GenericPropertySet::addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& xListener )
 {
     Reference < XPropertySetInfo > xInfo = getPropertySetInfo(  );
     if ( xInfo.is() )
@@ -131,7 +131,7 @@ void SAL_CALL GenericPropertySet::addPropertyChangeListener( const ::rtl::OUStri
     }
 }
 
-void SAL_CALL GenericPropertySet::removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& xListener ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
+void SAL_CALL GenericPropertySet::removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& xListener )
 {
     ResettableMutexGuard aGuard( maMutex );
     Reference < XPropertySetInfo > xInfo = getPropertySetInfo(  );
@@ -156,7 +156,6 @@ void SAL_CALL GenericPropertySet::removePropertyChangeListener( const ::rtl::OUS
 }
 
 void GenericPropertySet::_setPropertyValues( const PropertyMapEntry** ppEntries, const Any* pValues )
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	ResettableMutexGuard aGuard( maMutex );
 
@@ -183,7 +182,6 @@ void GenericPropertySet::_setPropertyValues( const PropertyMapEntry** ppEntries,
 }
 
 void GenericPropertySet::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, Any* pValue )
-	throw( UnknownPropertyException, WrappedTargetException )
 {
 	MutexGuard aGuard( maMutex );
 
@@ -200,13 +198,11 @@ void GenericPropertySet::_getPropertyValues( const comphelper::PropertyMapEntry*
 // XInterface
 
 Any SAL_CALL GenericPropertySet::queryInterface( const Type & rType )
-	throw( RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
 }
 
 Any SAL_CALL GenericPropertySet::queryAggregation( const Type & rType )
-	throw(RuntimeException)
 {
 	Any aAny;
 
@@ -235,7 +231,6 @@ void SAL_CALL GenericPropertySet::release() throw()
 }
 
 uno::Sequence< uno::Type > SAL_CALL GenericPropertySet::getTypes()
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< uno::Type > aTypes( 5 );
 	uno::Type* pTypes = aTypes.getArray();
@@ -250,7 +245,6 @@ uno::Sequence< uno::Type > SAL_CALL GenericPropertySet::getTypes()
 }
 
 uno::Sequence< sal_Int8 > SAL_CALL GenericPropertySet::getImplementationId()
-	throw (uno::RuntimeException)
 {
 	MutexGuard aGuard( maMutex );
 
@@ -265,7 +259,7 @@ uno::Sequence< sal_Int8 > SAL_CALL GenericPropertySet::getImplementationId()
 
 // XServiceInfo
 
-sal_Bool SAL_CALL GenericPropertySet::supportsService( const  OUString& ServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL GenericPropertySet::supportsService( const  OUString& ServiceName )
 {
     Sequence< OUString > aSNL( getSupportedServiceNames() );
     const OUString * pArray = aSNL.getConstArray();
@@ -277,13 +271,12 @@ sal_Bool SAL_CALL GenericPropertySet::supportsService( const  OUString& ServiceN
     return sal_False;
 }
 
-OUString SAL_CALL GenericPropertySet::getImplementationName() throw( RuntimeException )
+OUString SAL_CALL GenericPropertySet::getImplementationName()
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.comphelper.GenericPropertySet") );
 }
 
 Sequence< OUString > SAL_CALL GenericPropertySet::getSupportedServiceNames(  )
-	throw( RuntimeException )
 {
     Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.beans.XPropertySet" ));

@@ -64,22 +64,15 @@ public: // implementation names
 public:
     virtual void SAL_CALL testInvariant(
 		const OUString& TestName,
-		const Reference < XInterface >& TestObject)
-		throw (	IllegalArgumentException,
-				RuntimeException) ;
+		const Reference < XInterface >& TestObject) ;
 
     virtual sal_Int32 SAL_CALL  test(	const OUString& TestName,
     					const Reference < XInterface >& TestObject,
-    					sal_Int32 hTestHandle)
-		throw (	IllegalArgumentException, RuntimeException);
-    virtual sal_Bool SAL_CALL testPassed(void)
-		throw (	RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getErrors(void)
-		throw (RuntimeException);
-    virtual Sequence< Any > SAL_CALL getErrorExceptions(void)
-		throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getWarnings(void)
-		throw (RuntimeException);
+    					sal_Int32 hTestHandle);
+    virtual sal_Bool SAL_CALL testPassed(void);
+    virtual Sequence< OUString > SAL_CALL getErrors(void);
+    virtual Sequence< Any > SAL_CALL getErrorExceptions(void);
+    virtual Sequence< OUString > SAL_CALL getWarnings(void);
 
 private:
 	void testSimple( const Reference< XOutputStream > &r, const Reference < XInputStream > &rInput );
@@ -108,7 +101,6 @@ OMarkableOutputStreamTest::~OMarkableOutputStreamTest()
 
 void OMarkableOutputStreamTest::testInvariant( const OUString& TestName,
 											   const Reference < XInterface >& TestObject )
-	throw (	IllegalArgumentException, RuntimeException)
 {
 	Reference< XServiceInfo > info( TestObject, UNO_QUERY );
 	ERROR_ASSERT( info.is() , "XServiceInfo not supported !" );
@@ -125,7 +117,6 @@ sal_Int32 OMarkableOutputStreamTest::test(
 	const OUString& TestName,
 	const Reference < XInterface >& TestObject,
 	sal_Int32 hTestHandle)
-	throw (	IllegalArgumentException, RuntimeException)
 {
 	if( OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.io.MarkableOutputStream") )
 				  == TestName  )  {
@@ -181,25 +172,25 @@ sal_Int32 OMarkableOutputStreamTest::test(
 
 
 
-sal_Bool OMarkableOutputStreamTest::testPassed(void) 						throw (RuntimeException)
+sal_Bool OMarkableOutputStreamTest::testPassed(void)
 {
 	return m_seqErrors.getLength() == 0;
 }
 
 
-Sequence< OUString > OMarkableOutputStreamTest::getErrors(void) 		throw (RuntimeException)
+Sequence< OUString > OMarkableOutputStreamTest::getErrors(void)
 {
 	return m_seqErrors;
 }
 
 
-Sequence< Any > OMarkableOutputStreamTest::getErrorExceptions(void) throw (RuntimeException)
+Sequence< Any > OMarkableOutputStreamTest::getErrorExceptions(void)
 {
 	return m_seqExceptions;
 }
 
 
-Sequence< OUString > OMarkableOutputStreamTest::getWarnings(void) 		throw (RuntimeException)
+Sequence< OUString > OMarkableOutputStreamTest::getWarnings(void)
 {
 	return m_seqWarnings;
 }
@@ -374,7 +365,7 @@ void OMarkableOutputStreamTest::testSimple(  	const Reference< XOutputStream > &
 *
 *
 **/
-Reference < XInterface > SAL_CALL OMarkableOutputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw(Exception)
+Reference < XInterface > SAL_CALL OMarkableOutputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr )
 {
 	OMarkableOutputStreamTest *p = new OMarkableOutputStreamTest( rSMgr );
 	return Reference < XInterface > ( SAL_STATIC_CAST( OWeakObject * , p ) );
@@ -423,24 +414,17 @@ public: // implementation names
 public:
     virtual void SAL_CALL testInvariant(
 		const OUString& TestName,
-		const Reference < XInterface >& TestObject)
-		throw (	IllegalArgumentException, RuntimeException) ;
+		const Reference < XInterface >& TestObject) ;
 
     virtual sal_Int32 SAL_CALL test(
 		const OUString& TestName,
 		const Reference < XInterface >& TestObject,
-		sal_Int32 hTestHandle)
-		throw (	IllegalArgumentException,
-				RuntimeException) ;
+		sal_Int32 hTestHandle) ;
 
-    virtual sal_Bool SAL_CALL testPassed(void)
-		throw (	RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getErrors(void)
-		throw (RuntimeException);
-    virtual Sequence< Any > SAL_CALL getErrorExceptions(void)
-		throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getWarnings(void)
-		throw (RuntimeException);
+    virtual sal_Bool SAL_CALL testPassed(void);
+    virtual Sequence< OUString > SAL_CALL getErrors(void);
+    virtual Sequence< Any > SAL_CALL getErrorExceptions(void);
+    virtual Sequence< OUString > SAL_CALL getWarnings(void);
 
 private:
 	void testSimple( const Reference< XOutputStream > &r,
@@ -469,7 +453,6 @@ OMarkableInputStreamTest::~OMarkableInputStreamTest()
 
 void OMarkableInputStreamTest::testInvariant(
 	const OUString& TestName, const Reference < XInterface >& TestObject )
-	throw (	IllegalArgumentException, RuntimeException)
 {
 	if( OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.io.MarkableInputStream"))
 		== TestName )  {
@@ -494,7 +477,7 @@ void OMarkableInputStreamTest::testInvariant(
 sal_Int32 OMarkableInputStreamTest::test(
 	const OUString& TestName,
 	const Reference < XInterface >& TestObject,
-	sal_Int32 hTestHandle) 	throw (	IllegalArgumentException, RuntimeException)
+	sal_Int32 hTestHandle)
 {
 	if( OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.io.MarkableInputStream")) == TestName )
 	{
@@ -548,25 +531,25 @@ sal_Int32 OMarkableInputStreamTest::test(
 
 
 
-sal_Bool OMarkableInputStreamTest::testPassed(void) 										throw (RuntimeException)
+sal_Bool OMarkableInputStreamTest::testPassed(void)
 {
 	return m_seqErrors.getLength() == 0;
 }
 
 
-Sequence< OUString > OMarkableInputStreamTest::getErrors(void) 							throw (RuntimeException)
+Sequence< OUString > OMarkableInputStreamTest::getErrors(void)
 {
 	return m_seqErrors;
 }
 
 
-Sequence< Any > OMarkableInputStreamTest::getErrorExceptions(void) 					throw (RuntimeException)
+Sequence< Any > OMarkableInputStreamTest::getErrorExceptions(void)
 {
 	return m_seqExceptions;
 }
 
 
-Sequence< OUString > OMarkableInputStreamTest::getWarnings(void) 						throw (RuntimeException)
+Sequence< OUString > OMarkableInputStreamTest::getWarnings(void)
 {
 	return m_seqWarnings;
 }
@@ -646,7 +629,7 @@ void OMarkableInputStreamTest::testSimple(  	const Reference< XOutputStream > &r
 *
 *
 **/
-Reference < XInterface > SAL_CALL OMarkableInputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw(Exception)
+Reference < XInterface > SAL_CALL OMarkableInputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr )
 {
 	OMarkableInputStreamTest *p = new OMarkableInputStreamTest( rSMgr );
 	return Reference < XInterface > ( SAL_STATIC_CAST( OWeakObject * , p ) );

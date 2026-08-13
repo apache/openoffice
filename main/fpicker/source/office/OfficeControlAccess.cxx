@@ -180,7 +180,7 @@ namespace svt
 		};
 
 		//-----------------------------------------------------------------
-		void lcl_throwIllegalArgumentException( ) SAL_THROW( (IllegalArgumentException) )
+		void lcl_throwIllegalArgumentException( )
 		{
 			throw IllegalArgumentException();
 			// TODO: error message in the exception
@@ -252,7 +252,7 @@ namespace svt
 	}
 
 	//---------------------------------------------------------------------
-	Control* OControlAccess::implGetControl( const ::rtl::OUString& _rControlName, sal_Int16* _pId, sal_Int32* _pPropertyMask ) const SAL_THROW( (IllegalArgumentException) )
+	Control* OControlAccess::implGetControl( const ::rtl::OUString& _rControlName, sal_Int16* _pId, sal_Int32* _pPropertyMask ) const
 	{
 		Control* pControl = NULL;
 

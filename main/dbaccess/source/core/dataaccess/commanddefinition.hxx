@@ -111,17 +111,17 @@ public:
 	DECLARE_XINTERFACE( )
 
 // ::com::sun::star::lang::XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 // ::com::sun::star::lang::XServiceInfo - static methods
-	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static(void) throw( ::com::sun::star::uno::RuntimeException );
-	static ::rtl::OUString getImplementationName_static(void) throw( ::com::sun::star::uno::RuntimeException );
+	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static(void);
+	static ::rtl::OUString getImplementationName_static(void);
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		Create(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >&);
 
 	// XRename
-	virtual void SAL_CALL rename( const ::rtl::OUString& newName ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::container::ElementExistException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL rename( const ::rtl::OUString& newName );
 
 	// OPropertySetHelper
 	DECLARE_PROPERTYCONTAINER_DEFAULTS( );

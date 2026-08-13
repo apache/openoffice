@@ -92,7 +92,6 @@ void SAL_CALL TaskPanelResource::disposing ()
 
 
 Reference<XResourceId> SAL_CALL TaskPanelResource::getResourceId ()
-    throw (css::uno::RuntimeException)
 {
     return mxResourceId;
 }
@@ -101,7 +100,6 @@ Reference<XResourceId> SAL_CALL TaskPanelResource::getResourceId ()
 
 
 sal_Bool SAL_CALL TaskPanelResource::isAnchorOnly (void)
-    throw (RuntimeException)
 {
     return false;
 }

@@ -71,11 +71,11 @@ namespace sdbtools
         );
 
         // XObjectNames
-        virtual ::rtl::OUString SAL_CALL suggestName( ::sal_Int32 CommandType, const ::rtl::OUString& BaseName ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL convertToSQLName( const ::rtl::OUString& Name ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL isNameUsed( ::sal_Int32 CommandType, const ::rtl::OUString& Name ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL isNameValid( ::sal_Int32 CommandType, const ::rtl::OUString& Name ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL checkNameForCreate( ::sal_Int32 CommandType, const ::rtl::OUString& Name ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL suggestName( ::sal_Int32 CommandType, const ::rtl::OUString& BaseName );
+        virtual ::rtl::OUString SAL_CALL convertToSQLName( const ::rtl::OUString& Name );
+        virtual ::sal_Bool SAL_CALL isNameUsed( ::sal_Int32 CommandType, const ::rtl::OUString& Name );
+        virtual ::sal_Bool SAL_CALL isNameValid( ::sal_Int32 CommandType, const ::rtl::OUString& Name );
+        virtual void SAL_CALL checkNameForCreate( ::sal_Int32 CommandType, const ::rtl::OUString& Name );
 
     protected:
         virtual ~ObjectNames();

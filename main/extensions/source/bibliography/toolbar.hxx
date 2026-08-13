@@ -59,12 +59,10 @@ public:
 
 	// ::com::sun::star::lang::XEventListener
 	// we do not hold References to dispatches, so there is nothing to do on disposal
-	virtual void	SAL_CALL disposing(const ::com::sun::star::lang::EventObject& /*Source*/)
-											throw( ::com::sun::star::uno::RuntimeException ){};
+	virtual void	SAL_CALL disposing(const ::com::sun::star::lang::EventObject& /*Source*/){};
 
 	// ::com::sun::star::frame::XStatusListener
-	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event)
-											throw( ::com::sun::star::uno::RuntimeException );
+	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event);
 
 };
 
@@ -75,8 +73,7 @@ public:
 	BibTBListBoxListener(BibToolBar *pTB,rtl::OUString aStr,sal_uInt16 nId);
 	~BibTBListBoxListener();
 
-	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event)
-											throw( ::com::sun::star::uno::RuntimeException );
+	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event);
 
 };
 
@@ -87,8 +84,7 @@ public:
 	BibTBEditListener(BibToolBar *pTB,rtl::OUString aStr,sal_uInt16 nId);
 	~BibTBEditListener();
 
-	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event)
-											throw( ::com::sun::star::uno::RuntimeException );
+	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event);
 
 };
 
@@ -99,8 +95,7 @@ public:
 	BibTBQueryMenuListener(BibToolBar *pTB,rtl::OUString aStr,sal_uInt16 nId);
 	~BibTBQueryMenuListener();
 
-	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event)
-											throw( ::com::sun::star::uno::RuntimeException );
+	virtual void	SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event);
 
 };
 
@@ -172,8 +167,7 @@ class BibToolBar:	public ToolBox
 		sal_uInt16	InsertFilterItem(const XubString& );
 		void	SelectFilterItem(sal_uInt16 nId);
 
-		void	statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event)
-											throw( ::com::sun::star::uno::RuntimeException );
+		void	statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event);
 
 		void	SetDatMan(BibDataManager& rDatMan) {pDatMan = &rDatMan;}
         void    SendDispatch(sal_uInt16 nId, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rArgs);

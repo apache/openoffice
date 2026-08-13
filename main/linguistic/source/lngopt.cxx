@@ -386,14 +386,12 @@ void LinguProps::launchEvent( const PropertyChangeEvent &rEvt ) const
 
 Reference< XInterface > SAL_CALL LinguProps_CreateInstance(
             const Reference< XMultiServiceFactory > & /*rSMgr*/ )
-		throw(Exception)
 {
 	Reference< XInterface > xService = (cppu::OWeakObject*)new LinguProps;
 	return xService;
 }
 
 Reference< XPropertySetInfo > SAL_CALL LinguProps::getPropertySetInfo()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -404,8 +402,6 @@ Reference< XPropertySetInfo > SAL_CALL LinguProps::getPropertySetInfo()
 
 void SAL_CALL LinguProps::setPropertyValue(
             const OUString& rPropertyName, const Any& rValue )
-		throw(UnknownPropertyException, PropertyVetoException,
-			  IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -429,7 +425,6 @@ void SAL_CALL LinguProps::setPropertyValue(
 }
 
 Any SAL_CALL LinguProps::getPropertyValue( const OUString& rPropertyName )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -453,7 +448,6 @@ Any SAL_CALL LinguProps::getPropertyValue( const OUString& rPropertyName )
 void SAL_CALL LinguProps::addPropertyChangeListener(
 			const OUString& rPropertyName,
 			const Reference< XPropertyChangeListener >& rxListener )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -474,7 +468,6 @@ void SAL_CALL LinguProps::addPropertyChangeListener(
 void SAL_CALL LinguProps::removePropertyChangeListener(
 			const OUString& rPropertyName,
 			const Reference< XPropertyChangeListener >& rxListener )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -495,7 +488,6 @@ void SAL_CALL LinguProps::removePropertyChangeListener(
 void SAL_CALL LinguProps::addVetoableChangeListener(
             const OUString& /*rPropertyName*/,
             const Reference< XVetoableChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 //	MutexGuard	aGuard( GetLinguMutex() );
 }
@@ -503,15 +495,12 @@ void SAL_CALL LinguProps::addVetoableChangeListener(
 void SAL_CALL LinguProps::removeVetoableChangeListener(
             const OUString& /*rPropertyName*/,
             const Reference< XVetoableChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 //	MutexGuard	aGuard( GetLinguMutex() );
 }
 
 
 void SAL_CALL LinguProps::setFastPropertyValue( sal_Int32 nHandle, const Any& rValue )
-		throw(UnknownPropertyException, PropertyVetoException,
-			  IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -526,7 +515,6 @@ void SAL_CALL LinguProps::setFastPropertyValue( sal_Int32 nHandle, const Any& rV
 
 
 Any SAL_CALL LinguProps::getFastPropertyValue( sal_Int32 nHandle )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -537,7 +525,6 @@ Any SAL_CALL LinguProps::getFastPropertyValue( sal_Int32 nHandle )
 
 Sequence< PropertyValue > SAL_CALL
 	LinguProps::getPropertyValues()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -561,8 +548,6 @@ Sequence< PropertyValue > SAL_CALL
 
 void SAL_CALL
 	LinguProps::setPropertyValues( const Sequence< PropertyValue >& rProps )
-		throw(UnknownPropertyException, PropertyVetoException,
-			  IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -577,7 +562,6 @@ void SAL_CALL
 
 void SAL_CALL
 	LinguProps::dispose()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -597,7 +581,6 @@ void SAL_CALL
 
 void SAL_CALL
 	LinguProps::addEventListener( const Reference< XEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -607,7 +590,6 @@ void SAL_CALL
 
 void SAL_CALL
 	LinguProps::removeEventListener( const Reference< XEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -622,7 +604,6 @@ void SAL_CALL
 
 // XServiceInfo
 OUString SAL_CALL LinguProps::getImplementationName()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return getImplementationName_Static();
@@ -630,7 +611,6 @@ OUString SAL_CALL LinguProps::getImplementationName()
 
 // XServiceInfo
 sal_Bool SAL_CALL LinguProps::supportsService( const OUString& ServiceName )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -644,7 +624,6 @@ sal_Bool SAL_CALL LinguProps::supportsService( const OUString& ServiceName )
 
 // XServiceInfo
 uno::Sequence< OUString > SAL_CALL LinguProps::getSupportedServiceNames()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return getSupportedServiceNames_Static();

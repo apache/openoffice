@@ -38,7 +38,7 @@ using namespace ::com::sun::star;
  * @return a range for the position; null is returned if no range can be
  * constructed.
  */
-uno::Reference< text::XTextRange > SwVbaRangeHelper::getRangeByPosition( const uno::Reference< text::XText >& rText, sal_Int32 _position ) throw ( uno::RuntimeException )
+uno::Reference< text::XTextRange > SwVbaRangeHelper::getRangeByPosition( const uno::Reference< text::XText >& rText, sal_Int32 _position )
 {
     uno::Reference< text::XTextRange > xRange;
     if( rText.is() )
@@ -64,7 +64,7 @@ uno::Reference< text::XTextRange > SwVbaRangeHelper::getRangeByPosition( const u
 }
 
 
-void SwVbaRangeHelper::insertString( uno::Reference< text::XTextRange >& rTextRange, uno::Reference< text::XText >& rText, const rtl::OUString& rStr, sal_Bool _bAbsorb ) throw ( uno::RuntimeException )
+void SwVbaRangeHelper::insertString( uno::Reference< text::XTextRange >& rTextRange, uno::Reference< text::XText >& rText, const rtl::OUString& rStr, sal_Bool _bAbsorb )
 {
     sal_Int32 nlastIndex = 0;
     sal_Int32 nIndex = 0;
@@ -92,7 +92,7 @@ void SwVbaRangeHelper::insertString( uno::Reference< text::XTextRange >& rTextRa
     }
 }
 
-uno::Reference< text::XTextCursor > SwVbaRangeHelper::initCursor( const uno::Reference< text::XTextRange >& rTextRange, const uno::Reference< text::XText >& rText ) throw ( uno::RuntimeException )
+uno::Reference< text::XTextCursor > SwVbaRangeHelper::initCursor( const uno::Reference< text::XTextRange >& rTextRange, const uno::Reference< text::XText >& rText )
 {
     uno::Reference< text::XTextCursor > xTextCursor;
     sal_Bool bGotTextCursor = sal_False;
@@ -136,7 +136,7 @@ uno::Reference< text::XTextCursor > SwVbaRangeHelper::initCursor( const uno::Ref
     return xTextCursor;
 }
 
-sal_Int32 SwVbaRangeHelper::getPosition( const uno::Reference< text::XText >& rText, const uno::Reference< text::XTextRange >& rTextRange ) throw ( uno::RuntimeException )
+sal_Int32 SwVbaRangeHelper::getPosition( const uno::Reference< text::XText >& rText, const uno::Reference< text::XTextRange >& rTextRange )
 {
     sal_Int32 nPosition = -1;
     if( rText.is() && rTextRange.is() )

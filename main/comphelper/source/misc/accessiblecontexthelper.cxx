@@ -142,7 +142,7 @@ namespace comphelper
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OAccessibleContextHelper::addEventListener( const Reference< XAccessibleEventListener >& _rxListener ) throw (RuntimeException)
+	void SAL_CALL OAccessibleContextHelper::addEventListener( const Reference< XAccessibleEventListener >& _rxListener )
 	{
 		OMutexGuard aGuard( getExternalLock() );
 			// don't use the OContextEntryGuard - it will throw an exception if we're not alive
@@ -165,7 +165,7 @@ namespace comphelper
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OAccessibleContextHelper::removeEventListener( const Reference< XAccessibleEventListener >& _rxListener ) throw (RuntimeException)
+	void SAL_CALL OAccessibleContextHelper::removeEventListener( const Reference< XAccessibleEventListener >& _rxListener )
 	{
 		OMutexGuard aGuard( getExternalLock() );
 			// don't use the OContextEntryGuard - it will throw an exception if we're not alive
@@ -245,7 +245,7 @@ namespace comphelper
 	}
 
 	//---------------------------------------------------------------------
-	void OAccessibleContextHelper::ensureAlive() const SAL_THROW( ( DisposedException ) )
+	void OAccessibleContextHelper::ensureAlive() const
 	{
 		if( !isAlive() )
 			throw DisposedException();
@@ -275,7 +275,7 @@ namespace comphelper
 	}
 
 	//---------------------------------------------------------------------
-	sal_Int32 SAL_CALL OAccessibleContextHelper::getAccessibleIndexInParent(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL OAccessibleContextHelper::getAccessibleIndexInParent(  )
 	{
 		OExternalLockGuard aGuard( this );
 
@@ -321,7 +321,7 @@ namespace comphelper
 	}
 
 	//---------------------------------------------------------------------
-	Locale SAL_CALL OAccessibleContextHelper::getLocale(  ) throw (IllegalAccessibleComponentStateException, RuntimeException)
+	Locale SAL_CALL OAccessibleContextHelper::getLocale(  )
 	{
 		// simply ask the parent
 		Reference< XAccessible > xParent = getAccessibleParent();
@@ -336,7 +336,7 @@ namespace comphelper
 	}
 
 	//---------------------------------------------------------------------
-	Reference< XAccessibleContext > OAccessibleContextHelper::implGetParentContext() SAL_THROW( ( RuntimeException ) )
+	Reference< XAccessibleContext > OAccessibleContextHelper::implGetParentContext()
 	{
 		Reference< XAccessible > xParent = getAccessibleParent();
 		Reference< XAccessibleContext > xParentContext;

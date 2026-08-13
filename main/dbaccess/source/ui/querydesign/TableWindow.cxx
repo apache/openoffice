@@ -800,17 +800,17 @@ String OTableWindow::getTitle() const
 	return m_aTitle.GetText();
 }
 // -----------------------------------------------------------------------------
-void OTableWindow::_elementInserted( const container::ContainerEvent& /*_rEvent*/ )  throw(::com::sun::star::uno::RuntimeException)
+void OTableWindow::_elementInserted( const container::ContainerEvent& /*_rEvent*/ )
 {
     FillListBox();
 }
 // -----------------------------------------------------------------------------
-void OTableWindow::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void OTableWindow::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ )
 {
     FillListBox();
 }
 // -----------------------------------------------------------------------------
-void OTableWindow::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void OTableWindow::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ )
 {
     FillListBox();
 }

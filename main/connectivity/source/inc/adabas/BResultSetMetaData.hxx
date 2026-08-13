@@ -43,9 +43,9 @@ namespace connectivity
 			OAdabasResultSetMetaData(odbc::OConnection*	_pConnection, SQLHANDLE _pStmt ,const ::vos::ORef<OSQLColumns>& _rSelectColumns);
 			virtual ~OAdabasResultSetMetaData();
 
-			virtual sal_Int32 SAL_CALL getColumnType( sal_Int32 column ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			virtual sal_Int32 SAL_CALL isNullable( sal_Int32 column ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL isAutoIncrement( sal_Int32 column ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+			virtual sal_Int32 SAL_CALL getColumnType( sal_Int32 column );
+			virtual sal_Int32 SAL_CALL isNullable( sal_Int32 column );
+            virtual sal_Bool SAL_CALL isAutoIncrement( sal_Int32 column );
 		};
 	}
 }

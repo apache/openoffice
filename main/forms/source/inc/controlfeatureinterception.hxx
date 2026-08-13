@@ -65,8 +65,8 @@ namespace frm
         ControlFeatureInterception( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB );
 
         // XDispatchProviderInterception
-        void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException );
-        void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException );
+        void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
+        void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
 
         // XComponent
         void SAL_CALL dispose();
@@ -74,18 +74,18 @@ namespace frm
         /** queries the interceptor chain for the given dispatch
         */
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch >
-            queryDispatch( const ::com::sun::star::util::URL& _rURL, const ::rtl::OUString& _rTargetFrameName, ::sal_Int32 _nSearchFlags ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+            queryDispatch( const ::com::sun::star::util::URL& _rURL, const ::rtl::OUString& _rTargetFrameName, ::sal_Int32 _nSearchFlags );
 
         /** queries the interceptor chain for the given dispatch, with a blank target frame and no frame search flags
         */
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch >
-            queryDispatch( const ::com::sun::star::util::URL& _rURL ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+            queryDispatch( const ::com::sun::star::util::URL& _rURL );
 
         /** queries the interceptor chain for the URL given as ASCII string,
             with a blank target frame and no frame search flags
         */
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch >
-            queryDispatch( const sal_Char* _pAsciiURL ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+            queryDispatch( const sal_Char* _pAsciiURL );
 	};
 
 //........................................................................

@@ -49,7 +49,6 @@ DiagramDataFragmentHandler::~DiagramDataFragmentHandler( ) throw ()
 }
 
 void SAL_CALL DiagramDataFragmentHandler::endDocument()
-	throw (SAXException, RuntimeException)
 {
 
 }
@@ -58,7 +57,6 @@ void SAL_CALL DiagramDataFragmentHandler::endDocument()
 Reference< XFastContextHandler > SAL_CALL
 DiagramDataFragmentHandler::createFastChildContext( ::sal_Int32 aElement,
 													const Reference< XFastAttributeList >& )
-	throw ( SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -94,7 +92,6 @@ DiagramLayoutFragmentHandler::~DiagramLayoutFragmentHandler( ) throw ()
 }
 
 void SAL_CALL DiagramLayoutFragmentHandler::endDocument()
-	throw (SAXException, RuntimeException)
 {
 
 }
@@ -103,7 +100,6 @@ void SAL_CALL DiagramLayoutFragmentHandler::endDocument()
 Reference< XFastContextHandler > SAL_CALL
 DiagramLayoutFragmentHandler::createFastChildContext( ::sal_Int32 aElement,
 													  const Reference< XFastAttributeList >& xAttribs )
-	throw ( SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -139,7 +135,6 @@ DiagramQStylesFragmentHandler::~DiagramQStylesFragmentHandler( ) throw ()
 }
 
 void SAL_CALL DiagramQStylesFragmentHandler::endDocument()
-	throw (SAXException, RuntimeException)
 {
 
 }
@@ -148,7 +143,6 @@ void SAL_CALL DiagramQStylesFragmentHandler::endDocument()
 Reference< XFastContextHandler > SAL_CALL
 DiagramQStylesFragmentHandler::createFastChildContext( ::sal_Int32 aElement,
 													const Reference< XFastAttributeList >& )
-	throw ( SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -184,7 +178,6 @@ DiagramColorsFragmentHandler::~DiagramColorsFragmentHandler( ) throw ()
 }
 
 void SAL_CALL DiagramColorsFragmentHandler::endDocument()
-	throw (SAXException, RuntimeException)
 {
 
 }
@@ -193,7 +186,6 @@ void SAL_CALL DiagramColorsFragmentHandler::endDocument()
 Reference< XFastContextHandler > SAL_CALL
 DiagramColorsFragmentHandler::createFastChildContext( ::sal_Int32 aElement,
 													const Reference< XFastAttributeList >& )
-	throw ( SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 

@@ -236,7 +236,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    Any SAL_CALL ORichTextModel::queryAggregation( const Type& _rType ) throw ( RuntimeException )
+    Any SAL_CALL ORichTextModel::queryAggregation( const Type& _rType )
     {
 	    Any aReturn = ORichTextModel_BASE::queryInterface( _rType );
 
@@ -341,7 +341,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    sal_Bool SAL_CALL ORichTextModel::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue ) throw( IllegalArgumentException )
+    sal_Bool SAL_CALL ORichTextModel::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue )
     {
         sal_Bool bModified = sal_False;
 
@@ -362,7 +362,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ORichTextModel::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw ( Exception)
+    void SAL_CALL ORichTextModel::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
     {
         if ( isRegisteredProperty( _nHandle ) )
         {
@@ -510,20 +510,20 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL ORichTextModel::getServiceName() throw ( RuntimeException)
+    ::rtl::OUString SAL_CALL ORichTextModel::getServiceName()
     {
         return FRM_SUN_COMPONENT_RICHTEXTCONTROL;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ORichTextModel::write(const Reference< XObjectOutputStream >& _rxOutStream) throw ( IOException, RuntimeException)
+    void SAL_CALL ORichTextModel::write(const Reference< XObjectOutputStream >& _rxOutStream)
     {
         OControlModel::write( _rxOutStream );
         // TODO: place your code here
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ORichTextModel::read(const Reference< XObjectInputStream >& _rxInStream) throw ( IOException, RuntimeException)
+    void SAL_CALL ORichTextModel::read(const Reference< XObjectInputStream >& _rxInStream)
     {
         OControlModel::read( _rxInStream );
         // TODO: place your code here
@@ -584,7 +584,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    sal_Int64 SAL_CALL ORichTextModel::getSomething( const Sequence< sal_Int8 >& _rId ) throw (RuntimeException)
+    sal_Int64 SAL_CALL ORichTextModel::getSomething( const Sequence< sal_Int8 >& _rId )
     {
         Sequence< sal_Int8 > aEditEngineAccessId( getEditEngineTunnelId() );
 	    if  (   ( _rId.getLength() == aEditEngineAccessId.getLength() )
@@ -600,13 +600,13 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ORichTextModel::addModifyListener( const Reference< XModifyListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL ORichTextModel::addModifyListener( const Reference< XModifyListener >& _rxListener )
     {
         m_aModifyListeners.addInterface( _rxListener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ORichTextModel::removeModifyListener( const Reference< XModifyListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL ORichTextModel::removeModifyListener( const Reference< XModifyListener >& _rxListener )
     {
         m_aModifyListeners.removeInterface( _rxListener );
     }

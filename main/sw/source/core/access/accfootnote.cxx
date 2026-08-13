@@ -83,7 +83,6 @@ SwAccessibleFootnote::~SwAccessibleFootnote()
 }
 
 OUString SAL_CALL SwAccessibleFootnote::getAccessibleDescription (void)
-        throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -106,7 +105,6 @@ OUString SAL_CALL SwAccessibleFootnote::getAccessibleDescription (void)
 }
 
 OUString SAL_CALL SwAccessibleFootnote::getImplementationName()
-        throw( RuntimeException )
 {
 	if( AccessibleRole::END_NOTE == GetRole() )
 		return OUString(RTL_CONSTASCII_USTRINGPARAM(sImplementationNameEndnote));
@@ -116,7 +114,6 @@ OUString SAL_CALL SwAccessibleFootnote::getImplementationName()
 
 sal_Bool SAL_CALL SwAccessibleFootnote::supportsService(
 		const ::rtl::OUString& sTestServiceName)
-    throw (uno::RuntimeException)
 {
 	if( sTestServiceName.equalsAsciiL( sAccessibleServiceName,
 									   sizeof(sAccessibleServiceName)-1 ) )
@@ -129,7 +126,6 @@ sal_Bool SAL_CALL SwAccessibleFootnote::supportsService(
 }
 
 Sequence< OUString > SAL_CALL SwAccessibleFootnote::getSupportedServiceNames()
-        throw( uno::RuntimeException )
 {
 	Sequence< OUString > aRet(2);
 	OUString* pArray = aRet.getArray();
@@ -142,7 +138,6 @@ Sequence< OUString > SAL_CALL SwAccessibleFootnote::getSupportedServiceNames()
 }
 
 Sequence< sal_Int8 > SAL_CALL SwAccessibleFootnote::getImplementationId()
-		throw(RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static Sequence< sal_Int8 > aId( 16 );

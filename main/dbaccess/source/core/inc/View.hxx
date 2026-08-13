@@ -61,7 +61,7 @@ namespace dbaccess
         DECLARE_XTYPEPROVIDER()
 
         // XAlterView
-        virtual void SAL_CALL alterCommand( const ::rtl::OUString& NewCommand ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL alterCommand( const ::rtl::OUString& NewCommand );
 
     protected:
         virtual ~View();

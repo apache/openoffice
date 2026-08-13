@@ -125,63 +125,63 @@ namespace xforms
     OSL_POSTCOND( member == value, "OXSDDataType::setFoo: inconsistency!" );
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OXSDDataType::getName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL OXSDDataType::getName(  )
     {
         return m_sName;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::setName( const ::rtl::OUString& aName ) throw (RuntimeException, VetoException)
+    void SAL_CALL OXSDDataType::setName( const ::rtl::OUString& aName )
     {
         // TODO: check the name for conflicts in the repository
         SET_PROPERTY( NAME, aName, m_sName );
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OXSDDataType::getPattern() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL OXSDDataType::getPattern()
     {
         return m_sPattern;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::setPattern( const ::rtl::OUString& _pattern ) throw (RuntimeException)
+    void SAL_CALL OXSDDataType::setPattern( const ::rtl::OUString& _pattern )
     {
         SET_PROPERTY( XSD_PATTERN, _pattern, m_sPattern );
     }
 
     //--------------------------------------------------------------------
-    sal_Int16 SAL_CALL OXSDDataType::getWhiteSpaceTreatment() throw (RuntimeException)
+    sal_Int16 SAL_CALL OXSDDataType::getWhiteSpaceTreatment()
     {
         return m_nWST;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::setWhiteSpaceTreatment( sal_Int16 _whitespacetreatment ) throw (RuntimeException, IllegalArgumentException)
+    void SAL_CALL OXSDDataType::setWhiteSpaceTreatment( sal_Int16 _whitespacetreatment )
     {
         SET_PROPERTY( XSD_WHITESPACE, _whitespacetreatment, m_nWST );
     }
 
     //--------------------------------------------------------------------
-    sal_Bool SAL_CALL OXSDDataType::getIsBasic() throw (RuntimeException)
+    sal_Bool SAL_CALL OXSDDataType::getIsBasic()
     {
         return m_bIsBasic;
     }
 
 
     //--------------------------------------------------------------------
-    sal_Int16 SAL_CALL OXSDDataType::getTypeClass() throw (RuntimeException)
+    sal_Int16 SAL_CALL OXSDDataType::getTypeClass()
     {
         return m_nTypeClass;
     }
 
     //--------------------------------------------------------------------
-    sal_Bool OXSDDataType::validate( const ::rtl::OUString& sValue ) throw( RuntimeException )
+    sal_Bool OXSDDataType::validate( const ::rtl::OUString& sValue )
     {
         return ( _validate( sValue ) == 0 );
     }
 
     //--------------------------------------------------------------------
-  ::rtl::OUString OXSDDataType::explainInvalid( const ::rtl::OUString& sValue ) throw( RuntimeException )
+  ::rtl::OUString OXSDDataType::explainInvalid( const ::rtl::OUString& sValue )
     {
         // get reason
         sal_uInt16 nReason = _validate( sValue );
@@ -258,7 +258,7 @@ namespace xforms
     }
 
     //--------------------------------------------------------------------
-	sal_Bool OXSDDataType::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue ) throw(IllegalArgumentException)
+	sal_Bool OXSDDataType::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue )
     {
         // let the base class do the conversion
         if ( !OXSDDataType_PBase::convertFastPropertyValue( _rConvertedValue, _rOldValue, _nHandle, _rValue ) )
@@ -278,7 +278,7 @@ namespace xforms
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw (Exception)
+    void SAL_CALL OXSDDataType::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
     {
         OXSDDataType_PBase::setFastPropertyValue_NoBroadcast( _nHandle, _rValue );
         if ( _nHandle == PROPERTY_ID_XSD_PATTERN )
@@ -306,37 +306,37 @@ namespace xforms
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::setPropertyValue( const ::rtl::OUString& aPropertyName, const Any& aValue ) throw (UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OXSDDataType::setPropertyValue( const ::rtl::OUString& aPropertyName, const Any& aValue )
     {
         OXSDDataType_PBase::setPropertyValue( aPropertyName, aValue );
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL OXSDDataType::getPropertyValue( const ::rtl::OUString& PropertyName ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    Any SAL_CALL OXSDDataType::getPropertyValue( const ::rtl::OUString& PropertyName )
     {
         return OXSDDataType_PBase::getPropertyValue( PropertyName );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& xListener ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OXSDDataType::addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& xListener )
     {
         OXSDDataType_PBase::addPropertyChangeListener( aPropertyName, xListener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& aListener ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OXSDDataType::removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener >& aListener )
     {
         OXSDDataType_PBase::removePropertyChangeListener( aPropertyName, aListener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::addVetoableChangeListener( const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener >& aListener ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OXSDDataType::addVetoableChangeListener( const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener >& aListener )
     {
         OXSDDataType_PBase::addVetoableChangeListener( PropertyName, aListener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OXSDDataType::removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener >& aListener ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OXSDDataType::removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener >& aListener )
     {
         OXSDDataType_PBase::removeVetoableChangeListener( PropertyName, aListener );
     }
@@ -375,7 +375,7 @@ namespace xforms
 
     //--------------------------------------------------------------------
     void SAL_CALL OValueLimitedType_Base::setFastPropertyValue_NoBroadcast(
-        sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue ) throw (::com::sun::star::uno::Exception)
+        sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue )
     {
         OXSDDataType::setFastPropertyValue_NoBroadcast( _nHandle, _rValue );
 

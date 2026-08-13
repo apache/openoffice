@@ -52,30 +52,29 @@ public:
 		{}
 
 	// XInterface
-	virtual Any SAL_CALL queryInterface( const Type & rType ) throw (::com::sun::star::uno::RuntimeException);
+	virtual Any SAL_CALL queryInterface( const Type & rType );
 	virtual void SAL_CALL acquire() throw ();
 	virtual void SAL_CALL release() throw ();
 
 	// XTypeProvider
-	virtual Sequence< Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
-	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+	virtual Sequence< Type > SAL_CALL getTypes();
+	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 	// XIdlMember
-    virtual Reference< XIdlClass > SAL_CALL getDeclaringClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual Reference< XIdlClass > SAL_CALL getDeclaringClass();
+    virtual OUString SAL_CALL getName();
 	// XIdlField
-    virtual Reference< XIdlClass > SAL_CALL getType() throw(::com::sun::star::uno::RuntimeException);
-    virtual FieldAccessMode SAL_CALL getAccessMode() throw(::com::sun::star::uno::RuntimeException);
-    virtual Any SAL_CALL get( const Any & rObj ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL set( const Any & rObj, const Any & rValue ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException);
+    virtual Reference< XIdlClass > SAL_CALL getType();
+    virtual FieldAccessMode SAL_CALL getAccessMode();
+    virtual Any SAL_CALL get( const Any & rObj );
+    virtual void SAL_CALL set( const Any & rObj, const Any & rValue );
 	// XIdlField2: getType, getAccessMode and get are equal to XIdlField
-    virtual void SAL_CALL set( Any & rObj, const Any & rValue ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL set( Any & rObj, const Any & rValue );
 };
 
 // XInterface
 //__________________________________________________________________________________________________
 Any IdlCompFieldImpl::queryInterface( const Type & rType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Any aRet( ::cppu::queryInterface( rType,
     								  static_cast< XIdlField * >( this ),
@@ -96,7 +95,6 @@ void IdlCompFieldImpl::release() throw()
 // XTypeProvider
 //__________________________________________________________________________________________________
 Sequence< Type > IdlCompFieldImpl::getTypes()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	static OTypeCollection * s_pTypes = 0;
 	if (! s_pTypes)
@@ -115,7 +113,6 @@ Sequence< Type > IdlCompFieldImpl::getTypes()
 }
 //__________________________________________________________________________________________________
 Sequence< sal_Int8 > IdlCompFieldImpl::getImplementationId()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	static OImplementationId * s_pId = 0;
 	if (! s_pId)
@@ -133,7 +130,6 @@ Sequence< sal_Int8 > IdlCompFieldImpl::getImplementationId()
 // XIdlMember
 //__________________________________________________________________________________________________
 Reference< XIdlClass > IdlCompFieldImpl::getDeclaringClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (! _xDeclClass.is())
 	{
@@ -161,7 +157,6 @@ Reference< XIdlClass > IdlCompFieldImpl::getDeclaringClass()
 }
 //__________________________________________________________________________________________________
 OUString IdlCompFieldImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return IdlMemberImpl::getName();
 }
@@ -169,19 +164,16 @@ OUString IdlCompFieldImpl::getName()
 // XIdlField
 //__________________________________________________________________________________________________
 Reference< XIdlClass > IdlCompFieldImpl::getType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return getReflection()->forType( getTypeDescr() );
 }
 //__________________________________________________________________________________________________
 FieldAccessMode IdlCompFieldImpl::getAccessMode()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     return FieldAccessMode_READWRITE;
 }
 //__________________________________________________________________________________________________
 Any IdlCompFieldImpl::get( const Any & rObj )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
 	if (rObj.getValueTypeClass() == com::sun::star::uno::TypeClass_STRUCT ||
 		rObj.getValueTypeClass() == com::sun::star::uno::TypeClass_EXCEPTION)
@@ -214,7 +206,6 @@ Any IdlCompFieldImpl::get( const Any & rObj )
 }
 //__________________________________________________________________________________________________
 void IdlCompFieldImpl::set( const Any & rObj, const Any & rValue )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException)
 {
 	if (rObj.getValueTypeClass() == com::sun::star::uno::TypeClass_STRUCT ||
 		rObj.getValueTypeClass() == com::sun::star::uno::TypeClass_EXCEPTION)
@@ -251,7 +242,6 @@ void IdlCompFieldImpl::set( const Any & rObj, const Any & rValue )
 
 //__________________________________________________________________________________________________
 void IdlCompFieldImpl::set( Any & rObj, const Any & rValue )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException)
 {
 	if (rObj.getValueTypeClass() == com::sun::star::uno::TypeClass_STRUCT ||
 		rObj.getValueTypeClass() == com::sun::star::uno::TypeClass_EXCEPTION)
@@ -299,7 +289,6 @@ CompoundIdlClassImpl::~CompoundIdlClassImpl()
 
 //__________________________________________________________________________________________________
 sal_Bool CompoundIdlClassImpl::isAssignableFrom( const Reference< XIdlClass > & xType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (xType.is())
 	{
@@ -323,7 +312,6 @@ sal_Bool CompoundIdlClassImpl::isAssignableFrom( const Reference< XIdlClass > & 
 }
 //__________________________________________________________________________________________________
 Sequence< Reference< XIdlClass > > CompoundIdlClassImpl::getSuperclasses()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (! _xSuperClass.is())
 	{
@@ -342,7 +330,6 @@ Sequence< Reference< XIdlClass > > CompoundIdlClassImpl::getSuperclasses()
 }
 //__________________________________________________________________________________________________
 Reference< XIdlField > CompoundIdlClassImpl::getField( const OUString & rName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (! _pFields)
 		getFields(); // init fields
@@ -355,7 +342,6 @@ Reference< XIdlField > CompoundIdlClassImpl::getField( const OUString & rName )
 }
 //__________________________________________________________________________________________________
 Sequence< Reference< XIdlField > > CompoundIdlClassImpl::getFields()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( getMutexAccess() );
 	if (! _pFields)

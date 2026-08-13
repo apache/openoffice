@@ -140,9 +140,6 @@ EmbedServer_Impl::~EmbedServer_Impl()
 uno::Any SAL_CALL
 EmbedServer_Impl::queryInterface(
 	const uno::Type& aType )
-	throw(
-		uno::RuntimeException
-	)
 {
 	uno::Any a=
 		::cppu::queryInterface(
@@ -153,12 +150,12 @@ EmbedServer_Impl::queryInterface(
 		return a;
 }
 
-void SAL_CALL EmbedServer_Impl::acquire(  ) throw(uno::RuntimeException)
+void SAL_CALL EmbedServer_Impl::acquire(  )
 {
 	OWeakObject::acquire();
 }
 
-void SAL_CALL EmbedServer_Impl::release(  ) throw (uno::RuntimeException)
+void SAL_CALL EmbedServer_Impl::release(  )
 {
 	OWeakObject::release();
 }
@@ -167,9 +164,6 @@ void SAL_CALL EmbedServer_Impl::release(  ) throw (uno::RuntimeException)
 // XTypeProvider --------------------------------------------------
 uno::Sequence< uno::Type > SAL_CALL
 EmbedServer_Impl::getTypes( )
-	throw(
-		uno::RuntimeException
-	)
 {
 	static ::cppu::OTypeCollection *pCollection = 0;
 	if( ! pCollection )
@@ -189,7 +183,7 @@ EmbedServer_Impl::getTypes( )
 	return (*pCollection).getTypes();
 }
 
-uno::Sequence< sal_Int8 > SAL_CALL EmbedServer_Impl::getImplementationId() throw(uno::RuntimeException)
+uno::Sequence< sal_Int8 > SAL_CALL EmbedServer_Impl::getImplementationId()
 {
 	static ::cppu::OImplementationId *pId = 0;
 	if( ! pId )

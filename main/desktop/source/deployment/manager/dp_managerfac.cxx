@@ -68,7 +68,7 @@ public:
 
     // XPackageManagerFactory
     virtual Reference<deployment::XPackageManager> SAL_CALL getPackageManager(
-        OUString const & context ) throw (RuntimeException);
+        OUString const & context );
 };
 
 //==============================================================================
@@ -149,7 +149,6 @@ void PackageManagerFactoryImpl::disposing()
 //______________________________________________________________________________
 Reference<deployment::XPackageManager>
 PackageManagerFactoryImpl::getPackageManager( OUString const & context )
-    throw (RuntimeException)
 {
     Reference< deployment::XPackageManager > xRet;
     ::osl::ResettableMutexGuard guard( getMutex() );

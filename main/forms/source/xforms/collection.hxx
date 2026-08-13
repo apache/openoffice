@@ -162,28 +162,22 @@ public:
 
     // XElementAccess
     virtual Type_t SAL_CALL getElementType()
-        throw( RuntimeException_t )
     {
         return getCppuType( static_cast<T*>( NULL ) );
     }
 
     virtual sal_Bool SAL_CALL hasElements()
-        throw( RuntimeException_t )
     {
         return hasItems();
     }
 
     // XIndexAccess : XElementAccess
     virtual sal_Int32 SAL_CALL getCount()
-        throw( RuntimeException_t )
     {
         return countItems();
     }
 
     virtual Any_t SAL_CALL getByIndex( sal_Int32 nIndex )
-        throw( IndexOutOfBoundsException_t,
-               WrappedTargetException_t,
-               RuntimeException_t)
     {
         if( isValidIndex( nIndex ) )
             return com::sun::star::uno::makeAny( getItem( nIndex ) );
@@ -194,10 +188,6 @@ public:
     // XIndexReplace : XIndexAccess
     virtual void SAL_CALL replaceByIndex( sal_Int32 nIndex,
                                           const Any_t& aElement )
-        throw( IllegalArgumentException_t,
-               IndexOutOfBoundsException_t,
-               WrappedTargetException_t,
-               RuntimeException_t)
     {
         T t;
         if( isValidIndex( nIndex) )
@@ -211,7 +201,6 @@ public:
 
     // XEnumerationAccess : XElementAccess
     virtual XEnumeration_t SAL_CALL createEnumeration()
-        throw( RuntimeException_t )
     {
         return new Enumeration( this );
     }
@@ -219,16 +208,12 @@ public:
 
     // XSet : XEnumerationAccess
     virtual sal_Bool SAL_CALL has( const Any_t& aElement )
-        throw( RuntimeException_t )
     {
         T t;
         return ( aElement >>= t ) ? hasItem( t ) : sal_False;
     }
 
     virtual void SAL_CALL insert( const Any_t& aElement )
-        throw( IllegalArgumentException_t,
-               ElementExistException_t,
-               RuntimeException_t )
     {
         T t;
         if( ( aElement >>= t ) && isValid( t ) )
@@ -241,9 +226,6 @@ public:
     }
 
     virtual void SAL_CALL remove( const Any_t& aElement )
-        throw( IllegalArgumentException_t,
-               NoSuchElementException_t,
-               RuntimeException_t )
     {
         T t;
         if( aElement >>= t )
@@ -259,7 +241,6 @@ public:
     // XContainer
     virtual void SAL_CALL addContainerListener(
         const XContainerListener_t& xListener )
-        throw( RuntimeException_t )
     {
         OSL_ENSURE( xListener.is(), "need listener!" );
         if( std::find( maListeners.begin(), maListeners.end(), xListener)
@@ -269,7 +250,6 @@ public:
 
     virtual void SAL_CALL removeContainerListener(
         const XContainerListener_t& xListener )
-        throw( RuntimeException_t )
     {
         OSL_ENSURE( xListener.is(), "need listener!" );
         Listeners_t::iterator aIter =

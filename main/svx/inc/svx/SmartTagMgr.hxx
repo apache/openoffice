@@ -224,13 +224,13 @@ public:
     const rtl::OUString GetApplicationName() const { return maApplicationName; }
 
     // ::com::sun::star::lang::XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     // ::com::sun::star::util::XModifyListener
-    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
 
     // ::com::sun::star::util::XChangesListener
-  	virtual void SAL_CALL changesOccurred( const ::com::sun::star::util::ChangesEvent& Event ) throw(::com::sun::star::uno::RuntimeException);
+  	virtual void SAL_CALL changesOccurred( const ::com::sun::star::util::ChangesEvent& Event );
 };
 
 #endif

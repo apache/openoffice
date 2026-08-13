@@ -118,20 +118,20 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL DefaultGridColumnModel::getColumnCount() throw (RuntimeException)
+    ::sal_Int32 SAL_CALL DefaultGridColumnModel::getColumnCount()
     {
 	    return m_aColumns.size();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XGridColumn > SAL_CALL DefaultGridColumnModel::createColumn(  ) throw (RuntimeException)
+    Reference< XGridColumn > SAL_CALL DefaultGridColumnModel::createColumn(  )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return new GridColumn();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL DefaultGridColumnModel::addColumn( const Reference< XGridColumn > & i_column ) throw (RuntimeException, IllegalArgumentException)
+    ::sal_Int32 SAL_CALL DefaultGridColumnModel::addColumn( const Reference< XGridColumn > & i_column )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -156,7 +156,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridColumnModel::removeColumn( ::sal_Int32 i_columnIndex )  throw (RuntimeException, IndexOutOfBoundsException)
+    void SAL_CALL DefaultGridColumnModel::removeColumn( ::sal_Int32 i_columnIndex )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -201,14 +201,14 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< Reference< XGridColumn > > SAL_CALL DefaultGridColumnModel::getColumns() throw (RuntimeException)
+    Sequence< Reference< XGridColumn > > SAL_CALL DefaultGridColumnModel::getColumns()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return ::comphelper::containerToSequence( m_aColumns );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XGridColumn > SAL_CALL DefaultGridColumnModel::getColumn(::sal_Int32 index) throw (IndexOutOfBoundsException, RuntimeException)
+    Reference< XGridColumn > SAL_CALL DefaultGridColumnModel::getColumn(::sal_Int32 index)
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -219,7 +219,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridColumnModel::setDefaultColumns(sal_Int32 rowElements) throw (RuntimeException)
+    void SAL_CALL DefaultGridColumnModel::setDefaultColumns(sal_Int32 rowElements)
     {
         ::std::vector< ContainerEvent > aRemovedColumns;
         ::std::vector< ContainerEvent > aInsertedColumns;
@@ -303,13 +303,13 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL DefaultGridColumnModel::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL DefaultGridColumnModel::getImplementationName(  )
     {
 	    return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.comp.toolkit.DefaultGridColumnModel" ) );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    sal_Bool SAL_CALL DefaultGridColumnModel::supportsService( const ::rtl::OUString& i_serviceName ) throw (RuntimeException)
+    sal_Bool SAL_CALL DefaultGridColumnModel::supportsService( const ::rtl::OUString& i_serviceName )
     {
         const Sequence< ::rtl::OUString > aServiceNames( getSupportedServiceNames() );
         for ( sal_Int32 i=0; i<aServiceNames.getLength(); ++i )
@@ -319,7 +319,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL DefaultGridColumnModel::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL DefaultGridColumnModel::getSupportedServiceNames(  )
     {
 	    const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( szServiceName_DefaultGridColumnModel ) );
 	    const Sequence< ::rtl::OUString > aSeq( &aServiceName, 1 );
@@ -327,14 +327,14 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridColumnModel::addContainerListener( const Reference< XContainerListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL DefaultGridColumnModel::addContainerListener( const Reference< XContainerListener >& i_listener )
     {
         if ( i_listener.is() )
             m_aContainerListeners.addInterface( i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridColumnModel::removeContainerListener( const Reference< XContainerListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL DefaultGridColumnModel::removeContainerListener( const Reference< XContainerListener >& i_listener )
     {
         if ( i_listener.is() )
             m_aContainerListeners.removeInterface( i_listener );
@@ -371,7 +371,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XCloneable > SAL_CALL DefaultGridColumnModel::createClone(  ) throw (RuntimeException)
+    Reference< XCloneable > SAL_CALL DefaultGridColumnModel::createClone(  )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return new DefaultGridColumnModel( *this );

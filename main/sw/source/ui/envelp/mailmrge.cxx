@@ -109,8 +109,8 @@ public:
     SwXSelChgLstnr_Impl(SwMailMergeDlg& rParentDlg);
     ~SwXSelChgLstnr_Impl();
 
-    virtual void SAL_CALL selectionChanged( const EventObject& aEvent ) throw (RuntimeException);
-    virtual void SAL_CALL disposing( const EventObject& Source ) throw (RuntimeException);
+    virtual void SAL_CALL selectionChanged( const EventObject& aEvent );
+    virtual void SAL_CALL disposing( const EventObject& Source );
 };
 /* -----------------------------05.06.01 13:51--------------------------------
 
@@ -126,7 +126,7 @@ SwXSelChgLstnr_Impl::~SwXSelChgLstnr_Impl()
 /* -----------------------------05.06.01 14:06--------------------------------
 
  ---------------------------------------------------------------------------*/
-void SwXSelChgLstnr_Impl::selectionChanged( const EventObject&  ) throw (RuntimeException)
+void SwXSelChgLstnr_Impl::selectionChanged( const EventObject&  )
 {
     //call the parent to enable selection mode
     Sequence <Any> aSelection;
@@ -146,7 +146,7 @@ void SwXSelChgLstnr_Impl::selectionChanged( const EventObject&  ) throw (Runtime
 /* -----------------------------05.06.01 14:06--------------------------------
 
  ---------------------------------------------------------------------------*/
-void SwXSelChgLstnr_Impl::disposing( const EventObject&  ) throw (RuntimeException)
+void SwXSelChgLstnr_Impl::disposing( const EventObject&  )
 {
     DBG_ERROR("disposing");
 }

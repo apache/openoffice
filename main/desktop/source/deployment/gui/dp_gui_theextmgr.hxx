@@ -107,18 +107,14 @@ public:
         ::rtl::OUString const & view = ::rtl::OUString() );
 
     // XEventListener
-    virtual void SAL_CALL disposing( ::com::sun::star::lang::EventObject const & evt )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( ::com::sun::star::lang::EventObject const & evt );
 
     // XTerminateListener
-    virtual void SAL_CALL queryTermination( ::com::sun::star::lang::EventObject const & evt )
-        throw (::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL notifyTermination( ::com::sun::star::lang::EventObject const & evt )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL queryTermination( ::com::sun::star::lang::EventObject const & evt );
+    virtual void SAL_CALL notifyTermination( ::com::sun::star::lang::EventObject const & evt );
 
     // XModifyListener
-    virtual void SAL_CALL modified( ::com::sun::star::lang::EventObject const & evt )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL modified( ::com::sun::star::lang::EventObject const & evt );
 };
 
 } // namespace dp_gui

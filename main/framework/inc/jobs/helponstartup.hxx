@@ -125,14 +125,10 @@ class HelpOnStartup : private ThreadHelpBase
         DECLARE_XSERVICEINFO
 
         // css.task.XJob
-        virtual css::uno::Any SAL_CALL execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments)
-            throw(css::lang::IllegalArgumentException,
-                  css::uno::Exception                ,
-                  css::uno::RuntimeException         );
+        virtual css::uno::Any SAL_CALL execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments);
 
         // css.lang.XEventListener
-        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent);
 
     //-------------------------------------------
     // helper

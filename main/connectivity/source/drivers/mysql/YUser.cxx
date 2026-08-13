@@ -84,7 +84,7 @@ cppu::IPropertyArrayHelper & OUserExtend::getInfoHelper()
 }
 typedef connectivity::sdbcx::OUser_BASE OUser_BASE_RBHELPER;
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL OMySQLUser::getPrivileges( const ::rtl::OUString& objName, sal_Int32 objType ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OMySQLUser::getPrivileges( const ::rtl::OUString& objName, sal_Int32 objType )
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OUser_BASE_RBHELPER::rBHelper.bDisposed);
@@ -94,7 +94,7 @@ sal_Int32 SAL_CALL OMySQLUser::getPrivileges( const ::rtl::OUString& objName, sa
 	return nRights;
 }
 // -----------------------------------------------------------------------------
-void OMySQLUser::findPrivilegesAndGrantPrivileges(const ::rtl::OUString& objName, sal_Int32 objType,sal_Int32& nRights,sal_Int32& nRightsWithGrant) throw(SQLException, RuntimeException)
+void OMySQLUser::findPrivilegesAndGrantPrivileges(const ::rtl::OUString& objName, sal_Int32 objType,sal_Int32& nRights,sal_Int32& nRightsWithGrant)
 {
 	nRightsWithGrant = nRights = 0;
 	// first we need to create the sql stmt to select the privs
@@ -208,7 +208,7 @@ void OMySQLUser::findPrivilegesAndGrantPrivileges(const ::rtl::OUString& objName
 	}
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OMySQLUser::getGrantablePrivileges( const ::rtl::OUString& objName, sal_Int32 objType ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OMySQLUser::getGrantablePrivileges( const ::rtl::OUString& objName, sal_Int32 objType )
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OUser_BASE_RBHELPER::rBHelper.bDisposed);
@@ -218,7 +218,7 @@ sal_Int32 SAL_CALL OMySQLUser::getGrantablePrivileges( const ::rtl::OUString& ob
 	return nRightsWithGrant;
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OMySQLUser::grantPrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges ) throw(SQLException, RuntimeException)
+void SAL_CALL OMySQLUser::grantPrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges )
 {
     if ( objType != PrivilegeObject::TABLE )
     {
@@ -248,7 +248,7 @@ void SAL_CALL OMySQLUser::grantPrivileges( const ::rtl::OUString& objName, sal_I
 	}
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OMySQLUser::revokePrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges ) throw(SQLException, RuntimeException)
+void SAL_CALL OMySQLUser::revokePrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges )
 {
     if ( objType != PrivilegeObject::TABLE )
     {
@@ -279,7 +279,7 @@ void SAL_CALL OMySQLUser::revokePrivileges( const ::rtl::OUString& objName, sal_
 }
 // -----------------------------------------------------------------------------
 // XUser
-void SAL_CALL OMySQLUser::changePassword( const ::rtl::OUString& /*oldPassword*/, const ::rtl::OUString& newPassword ) throw(SQLException, RuntimeException)
+void SAL_CALL OMySQLUser::changePassword( const ::rtl::OUString& /*oldPassword*/, const ::rtl::OUString& newPassword )
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OUser_BASE_RBHELPER::rBHelper.bDisposed);

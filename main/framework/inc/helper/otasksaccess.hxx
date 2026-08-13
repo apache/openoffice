@@ -139,7 +139,7 @@ class OTasksAccess	:	public css::lang::XTypeProvider				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-	    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw( css::uno::RuntimeException );
+	    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XElementAccess
@@ -158,7 +158,7 @@ class OTasksAccess	:	public css::lang::XTypeProvider				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual css::uno::Type SAL_CALL getElementType() throw( css::uno::RuntimeException );
+		virtual css::uno::Type SAL_CALL getElementType();
 
 		/*-****************************************************************************************************//**
 			@short		get state of tasklist of enumeration.
@@ -173,7 +173,7 @@ class OTasksAccess	:	public css::lang::XTypeProvider				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual sal_Bool SAL_CALL hasElements() throw( css::uno::RuntimeException );
+    	virtual sal_Bool SAL_CALL hasElements();
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

@@ -51,7 +51,6 @@ using namespace ::com::sun::star;
 
 // -----------------------------------
 uno::Sequence< beans::StringPair > DocTemplLocaleHelper::ReadGroupLocalizationSequence( const uno::Reference< io::XInputStream >& xInStream, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	::rtl::OUString aStringID = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "groupuinames.xml" ) );
 	return ReadLocalizationSequence_Impl( xInStream, aStringID, xFactory );
@@ -59,7 +58,6 @@ uno::Sequence< beans::StringPair > DocTemplLocaleHelper::ReadGroupLocalizationSe
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::WriteGroupLocalizationSequence( const uno::Reference< io::XOutputStream >& xOutStream, const uno::Sequence< beans::StringPair >& aSequence, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	if ( !xOutStream.is() )
 		throw uno::RuntimeException();
@@ -111,7 +109,6 @@ void SAL_CALL DocTemplLocaleHelper::WriteGroupLocalizationSequence( const uno::R
 
 // -----------------------------------
 uno::Sequence< beans::StringPair > SAL_CALL DocTemplLocaleHelper::ReadLocalizationSequence_Impl( const uno::Reference< io::XInputStream >& xInStream, const ::rtl::OUString& aStringID, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	if ( !xFactory.is() || !xInStream.is() )
 		throw uno::RuntimeException();
@@ -157,19 +154,16 @@ uno::Sequence< beans::StringPair > DocTemplLocaleHelper::GetParsingResult()
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::startDocument()
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::endDocument()
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::startElement( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs )
-		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	if ( aName == m_aGroupListElement )
 	{
@@ -221,7 +215,6 @@ void SAL_CALL DocTemplLocaleHelper::startElement( const ::rtl::OUString& aName, 
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::endElement( const ::rtl::OUString& aName )
-	throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	sal_Int32 nLength = m_aElementsSeq.getLength();
 	if ( nLength <= 0 )
@@ -235,24 +228,20 @@ void SAL_CALL DocTemplLocaleHelper::endElement( const ::rtl::OUString& aName )
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::characters( const ::rtl::OUString& /*aChars*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::ignorableWhitespace( const ::rtl::OUString& /*aWhitespaces*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::processingInstruction( const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL DocTemplLocaleHelper::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /*xLocator*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }

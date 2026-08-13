@@ -125,11 +125,11 @@ class ImpTwain : public ::cppu::WeakImplHelper1< util::XCloseListener >
 												DECL_LINK( ImplDestroyHdl, void* );
 
     // from util::XCloseListener
-    virtual void SAL_CALL queryClosing( const lang::EventObject& Source, sal_Bool GetsOwnership ) throw (util::CloseVetoException, uno::RuntimeException);
-    virtual void SAL_CALL notifyClosing( const lang::EventObject& Source ) throw (uno::RuntimeException);
+    virtual void SAL_CALL queryClosing( const lang::EventObject& Source, sal_Bool GetsOwnership );
+    virtual void SAL_CALL notifyClosing( const lang::EventObject& Source );
 
     // from lang::XEventListener
-    virtual void SAL_CALL disposing( const lang::EventObject& Source ) throw (uno::RuntimeException);
+    virtual void SAL_CALL disposing( const lang::EventObject& Source );
 
 public:
 
@@ -686,7 +686,7 @@ void ImpTwain::ImplDeregisterCloseListener()
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL ImpTwain::queryClosing( const lang::EventObject& /*Source*/, sal_Bool GetsOwnership ) throw (util::CloseVetoException, uno::RuntimeException)
+void SAL_CALL ImpTwain::queryClosing( const lang::EventObject& /*Source*/, sal_Bool GetsOwnership )
 {
     // shall we re-send the close query later on?
     mbCloseFrameOnExit = GetsOwnership;
@@ -697,7 +697,7 @@ void SAL_CALL ImpTwain::queryClosing( const lang::EventObject& /*Source*/, sal_B
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL ImpTwain::notifyClosing( const lang::EventObject& /*Source*/ ) throw (uno::RuntimeException)
+void SAL_CALL ImpTwain::notifyClosing( const lang::EventObject& /*Source*/ )
 {
     // should not happen
     DBG_ERROR("ImpTwain::notifyClosing called, but we vetoed the closing before!");
@@ -705,7 +705,7 @@ void SAL_CALL ImpTwain::notifyClosing( const lang::EventObject& /*Source*/ ) thr
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL ImpTwain::disposing( const lang::EventObject& /*Source*/ ) throw (uno::RuntimeException)
+void SAL_CALL ImpTwain::disposing( const lang::EventObject& /*Source*/ )
 {
     // we're not holding any references to the frame, thus noop
 }
@@ -998,7 +998,6 @@ SEQ( ScannerContext ) SAL_CALL ScannerManager::getAvailableScanners() throw()
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL ScannerManager::configureScanner( ScannerContext& rContext )
-    throw( ScannerException )
 {
 	vos::OGuard				            aGuard( maProtector );
 	uno::Reference< XScannerManager >	xThis( this );
@@ -1014,7 +1013,6 @@ sal_Bool SAL_CALL ScannerManager::configureScanner( ScannerContext& rContext )
 // -----------------------------------------------------------------------------
 
 void SAL_CALL ScannerManager::startScan( const ScannerContext& rContext, const uno::Reference< lang::XEventListener >& rxListener )
-    throw( ScannerException )
 {
 	vos::OGuard				            aGuard( maProtector );
 	uno::Reference< XScannerManager >	xThis( this );
@@ -1029,7 +1027,6 @@ void SAL_CALL ScannerManager::startScan( const ScannerContext& rContext, const u
 // -----------------------------------------------------------------------------
 
 ScanError SAL_CALL ScannerManager::getError( const ScannerContext& rContext )
-    throw( ScannerException )
 {
 	vos::OGuard				            aGuard( maProtector );
 	uno::Reference< XScannerManager >	xThis( this );
@@ -1043,7 +1040,6 @@ ScanError SAL_CALL ScannerManager::getError( const ScannerContext& rContext )
 // -----------------------------------------------------------------------------
 
 uno::Reference< awt::XBitmap > SAL_CALL ScannerManager::getBitmap( const ScannerContext& /*rContext*/ )
-    throw( ScannerException )
 {
 	vos::OGuard	aGuard( maProtector );
 	return uno::Reference< awt::XBitmap >( this );

@@ -56,22 +56,22 @@ namespace comphelper
 	}
 
 	//---------------------------------------------------------------------
-	void OContainerListener::_elementInserted( const ContainerEvent& /*_rEvent*/ ) throw(RuntimeException)
+	void OContainerListener::_elementInserted( const ContainerEvent& /*_rEvent*/ )
 	{
 	}
 
 	//---------------------------------------------------------------------
-	void OContainerListener::_elementRemoved( const ContainerEvent& ) throw(RuntimeException)
+	void OContainerListener::_elementRemoved( const ContainerEvent& )
 	{
 	}
 
 	//---------------------------------------------------------------------
-	void OContainerListener::_elementReplaced( const ContainerEvent& /*_rEvent*/ ) throw(RuntimeException)
+	void OContainerListener::_elementReplaced( const ContainerEvent& /*_rEvent*/ )
 	{
 	}
 
 	//---------------------------------------------------------------------
-	void OContainerListener::_disposing(const EventObject& ) throw( RuntimeException)
+	void OContainerListener::_disposing(const EventObject& )
 	{
 	}
 
@@ -156,7 +156,7 @@ namespace comphelper
 	}
 
 	//------------------------------------------------------------------
-	void SAL_CALL OContainerListenerAdapter::disposing( const EventObject& _rSource) throw(RuntimeException)
+	void SAL_CALL OContainerListenerAdapter::disposing( const EventObject& _rSource)
 	{
 		if (m_pListener)
 		{
@@ -173,21 +173,21 @@ namespace comphelper
 	}
 
 	//------------------------------------------------------------------
-	void SAL_CALL OContainerListenerAdapter::elementInserted( const ContainerEvent& _rEvent ) throw(RuntimeException)
+	void SAL_CALL OContainerListenerAdapter::elementInserted( const ContainerEvent& _rEvent )
 	{
 		if (m_pListener && !locked())
 			m_pListener->_elementInserted(_rEvent);
 	}
 
 	//------------------------------------------------------------------
-	void SAL_CALL OContainerListenerAdapter::elementRemoved( const ContainerEvent& _rEvent ) throw(RuntimeException)
+	void SAL_CALL OContainerListenerAdapter::elementRemoved( const ContainerEvent& _rEvent )
 	{
 		if (m_pListener && !locked())
 			m_pListener->_elementRemoved(_rEvent);
 	}
 
 	//------------------------------------------------------------------
-	void SAL_CALL OContainerListenerAdapter::elementReplaced( const ContainerEvent& _rEvent ) throw(RuntimeException)
+	void SAL_CALL OContainerListenerAdapter::elementReplaced( const ContainerEvent& _rEvent )
 	{
 		if (m_pListener && !locked())
 			m_pListener->_elementReplaced(_rEvent);

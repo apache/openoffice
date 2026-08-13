@@ -252,7 +252,7 @@ static sal_Bool lcl_IsAnyXMLFilter( const SfxFilter* pFilter )
 }
 #endif
 
-::rtl::OUString SAL_CALL ScFilterDetect::detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lDescriptor ) throw( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL ScFilterDetect::detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lDescriptor )
 {
     REFERENCE< XInputStream > xStream;
     REFERENCE< XContent > xContent;
@@ -895,13 +895,13 @@ static sal_Bool lcl_IsAnyXMLFilter( const SfxFilter* pFilter )
 SFX_IMPL_SINGLEFACTORY( ScFilterDetect )
 
 /* XServiceInfo */
-UNOOUSTRING SAL_CALL ScFilterDetect::getImplementationName() throw( UNORUNTIMEEXCEPTION )
+UNOOUSTRING SAL_CALL ScFilterDetect::getImplementationName()
 {
     return impl_getStaticImplementationName();
 }
                                                                                                                                 \
 /* XServiceInfo */
-sal_Bool SAL_CALL ScFilterDetect::supportsService( const UNOOUSTRING& sServiceName ) throw( UNORUNTIMEEXCEPTION )
+sal_Bool SAL_CALL ScFilterDetect::supportsService( const UNOOUSTRING& sServiceName )
 {
     UNOSEQUENCE< UNOOUSTRING >  seqServiceNames(getSupportedServiceNames());
     const UNOOUSTRING*          pArray          =   seqServiceNames.getConstArray();
@@ -916,7 +916,7 @@ sal_Bool SAL_CALL ScFilterDetect::supportsService( const UNOOUSTRING& sServiceNa
 }
 
 /* XServiceInfo */
-UNOSEQUENCE< UNOOUSTRING > SAL_CALL ScFilterDetect::getSupportedServiceNames() throw( UNORUNTIMEEXCEPTION )
+UNOSEQUENCE< UNOOUSTRING > SAL_CALL ScFilterDetect::getSupportedServiceNames()
 {
     return impl_getStaticSupportedServiceNames();
 }
@@ -937,7 +937,7 @@ UNOOUSTRING ScFilterDetect::impl_getStaticImplementationName()
 }
 
 /* Helper for registry */
-UNOREFERENCE< UNOXINTERFACE > SAL_CALL ScFilterDetect::impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager ) throw( UNOEXCEPTION )
+UNOREFERENCE< UNOXINTERFACE > SAL_CALL ScFilterDetect::impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager )
 {
     return UNOREFERENCE< UNOXINTERFACE >( *new ScFilterDetect( xServiceManager ) );
 }

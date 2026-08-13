@@ -72,11 +72,7 @@ namespace basprov
         virtual ::com::sun::star::uno::Any SAL_CALL invoke(
             const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aParams,
             ::com::sun::star::uno::Sequence< sal_Int16 >& aOutParamIndex,
-            ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam )
-            throw (
-                    ::com::sun::star::script::provider::ScriptFrameworkErrorException,
-                    ::com::sun::star::reflection::InvocationTargetException,
-                    ::com::sun::star::uno::RuntimeException );
+            ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam );
 
         // SfxListener
         virtual void		Notify( SfxBroadcaster& rBC, const SfxHint& rHint );

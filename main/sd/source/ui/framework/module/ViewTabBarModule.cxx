@@ -108,7 +108,6 @@ void SAL_CALL ViewTabBarModule::disposing (void)
 
 void SAL_CALL ViewTabBarModule::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     if (mxConfigurationController.is())
     {
@@ -146,7 +145,6 @@ void SAL_CALL ViewTabBarModule::notifyConfigurationChange (
 
 void SAL_CALL ViewTabBarModule::disposing (
     const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if (mxConfigurationController.is()
         && rEvent.Source == mxConfigurationController)

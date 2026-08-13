@@ -54,7 +54,6 @@ executeFilterDialog(
     rtl::OUString       const & rURL    ,
     uui::FilterNameList const & rFilters,
     rtl::OUString             & rFilter )
-       SAL_THROW((uno::RuntimeException))
 {
     try
     {
@@ -90,7 +89,6 @@ handleNoSuchFilterRequest_(
     document::NoSuchFilterRequest const & rRequest,
     uno::Sequence< uno::Reference< task::XInteractionContinuation > > const &
             rContinuations )
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Reference< task::XInteractionAbort > xAbort;
     uno::Reference< document::XInteractionFilterSelect > xFilterTransport;
@@ -207,7 +205,6 @@ handleAmbigousFilterRequest_(
     uno::Sequence<
         uno::Reference<
             task::XInteractionContinuation > > const & rContinuations)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Reference< task::XInteractionAbort > xAbort;
     uno::Reference< document::XInteractionFilterSelect > xFilterTransport;
@@ -310,7 +307,6 @@ handleFilterOptionsRequest_(
     document::FilterOptionsRequest const & rRequest,
     uno::Sequence< uno::Reference< task::XInteractionContinuation > > const &
         rContinuations)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Reference< task::XInteractionAbort > xAbort;
     uno::Reference< document::XInteractionFilterOptions > xFilterOptions;
@@ -411,7 +407,6 @@ handleFilterOptionsRequest_(
 bool
 UUIInteractionHelper::handleNoSuchFilterRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 
@@ -430,7 +425,6 @@ UUIInteractionHelper::handleNoSuchFilterRequest(
 bool
 UUIInteractionHelper::handleAmbigousFilterRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 
@@ -449,7 +443,6 @@ UUIInteractionHelper::handleAmbigousFilterRequest(
 bool
 UUIInteractionHelper::handleFilterOptionsRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 

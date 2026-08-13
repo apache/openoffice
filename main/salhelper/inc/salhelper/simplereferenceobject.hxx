@@ -93,7 +93,7 @@ public:
 
     /** see general class documentation
      */
-    SALHELPER_DLLPUBLIC static void * operator new(std::size_t nSize) SAL_THROW((std::bad_alloc));
+    SALHELPER_DLLPUBLIC static void * operator new(std::size_t nSize);
 
     /** see general class documentation
      */

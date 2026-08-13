@@ -278,7 +278,7 @@ IMPLEMENT_SERVICE_INFO3(OQuery, "com.sun.star.sdb.dbaccess.OQuery", SERVICE_SDB_
 
 // ::com::sun::star::beans::XPropertyChangeListener
 //--------------------------------------------------------------------------
-void SAL_CALL OQuery::propertyChange( const PropertyChangeEvent& _rSource ) throw(RuntimeException)
+void SAL_CALL OQuery::propertyChange( const PropertyChangeEvent& _rSource )
 {
 	sal_Int32 nOwnHandle = -1;
 	{
@@ -311,7 +311,7 @@ void SAL_CALL OQuery::propertyChange( const PropertyChangeEvent& _rSource ) thro
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OQuery::disposing( const EventObject& _rSource ) throw (RuntimeException)
+void SAL_CALL OQuery::disposing( const EventObject& _rSource )
 {
 	MutexGuard aGuard(m_aMutex);
 
@@ -325,7 +325,7 @@ void SAL_CALL OQuery::disposing( const EventObject& _rSource ) throw (RuntimeExc
 
 // XDataDescriptorFactory
 //--------------------------------------------------------------------------
-Reference< XPropertySet > SAL_CALL OQuery::createDataDescriptor(  ) throw(RuntimeException)
+Reference< XPropertySet > SAL_CALL OQuery::createDataDescriptor(  )
 {
 	return new OQueryDescriptor(*this);
 }
@@ -346,7 +346,7 @@ void SAL_CALL OQuery::disposing()
 }
 
 //--------------------------------------------------------------------------
-void OQuery::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw (Exception)
+void OQuery::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
 {
 	ODataSettings::setFastPropertyValue_NoBroadcast(_nHandle, _rValue);
 	::rtl::OUString sAggPropName;
@@ -368,7 +368,7 @@ void OQuery::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _r
 }
 
 //--------------------------------------------------------------------------
-Reference< XPropertySetInfo > SAL_CALL OQuery::getPropertySetInfo(	) throw(RuntimeException)
+Reference< XPropertySetInfo > SAL_CALL OQuery::getPropertySetInfo(	)
 {
 	return createPropertySetInfo( getInfoHelper() ) ;
 }
@@ -393,7 +393,7 @@ OColumn* OQuery::createColumn(const ::rtl::OUString& /*_rName*/) const
 	return NULL;
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OQuery::rename( const ::rtl::OUString& newName ) throw (SQLException, ElementExistException, RuntimeException)
+void SAL_CALL OQuery::rename( const ::rtl::OUString& newName )
 {
 	MutexGuard aGuard(m_aMutex);
 	Reference<XRename> xRename(m_xCommandDefinition,UNO_QUERY);

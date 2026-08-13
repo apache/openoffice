@@ -890,7 +890,6 @@ URIHelper::removePassword(UniString const & rURI,
 
 INetURLObject::FSysStyle URIHelper::queryFSysStyle(UniString const & rFileUrl,
 												   bool bAddConvenienceStyles)
-	throw (uno::RuntimeException)
 {
 	::ucbhelper::ContentBroker const * pBroker = ::ucbhelper::ContentBroker::get();
 	uno::Reference< ucb::XContentProviderManager > xManager;

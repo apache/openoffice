@@ -73,32 +73,29 @@ public:
     virtual ~DragSource();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments )
-        throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
     virtual void SAL_CALL disposing();
 
     // XDragSource
-    virtual sal_Bool SAL_CALL isDragImageSupported(  ) throw(RuntimeException);
-    virtual sal_Int32 SAL_CALL getDefaultCursor(sal_Int8 dragAction)
-        throw(IllegalArgumentException, RuntimeException);
+    virtual sal_Bool SAL_CALL isDragImageSupported(  );
+    virtual sal_Int32 SAL_CALL getDefaultCursor(sal_Int8 dragAction);
     virtual void SAL_CALL startDrag( const DragGestureEvent& trigger,
                                      sal_Int8 sourceActions,
                                      sal_Int32 cursor,
                                      sal_Int32 image,
                                      const Reference< XTransferable>& transferable,
-                                     const Reference< XDragSourceListener>& listener)
-        throw(RuntimeException);
+                                     const Reference< XDragSourceListener>& listener);
 
     // XDragSourceContext
-    virtual sal_Int32 SAL_CALL getCurrentCursor() throw( RuntimeException);
-    virtual void SAL_CALL setCursor( sal_Int32) throw( RuntimeException);
-    virtual void SAL_CALL setImage( sal_Int32) throw( RuntimeException);
-    virtual void SAL_CALL transferablesFlavorsChanged() throw( RuntimeException);
+    virtual sal_Int32 SAL_CALL getCurrentCursor();
+    virtual void SAL_CALL setCursor( sal_Int32);
+    virtual void SAL_CALL setImage( sal_Int32);
+    virtual void SAL_CALL transferablesFlavorsChanged();
 
     // XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) throw (RuntimeException);
-    virtual Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+    virtual Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     // OS/2 window messaging handlers
     MRESULT render( PDRAGTRANSFER);

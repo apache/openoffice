@@ -118,7 +118,6 @@ static void checkLdapReturnCode(const sal_Char *aOperation,
 }
 //------------------------------------------------------------------------------
 void  LdapConnection::connectSimple(const LdapDefinition& aDefinition)
-   throw (ldap::LdapConnectionException, ldap::LdapGenericException)
 {
     OSL_ENSURE(!isValid(), "Recoonecting an LDAP connection that is already established");
     if (isValid()) disconnect();
@@ -128,7 +127,6 @@ void  LdapConnection::connectSimple(const LdapDefinition& aDefinition)
 }
 //------------------------------------------------------------------------------
 void  LdapConnection::connectSimple()
-   throw (ldap::LdapConnectionException, ldap::LdapGenericException)
 {
     if (!isValid())
 	{
@@ -158,7 +156,6 @@ void  LdapConnection::connectSimple()
 }
 //------------------------------------------------------------------------------
 void LdapConnection::initConnection()
-    throw (ldap::LdapConnectionException)
 {
     if (mLdapDefinition.mServer.getLength() == 0)
     {
@@ -187,8 +184,6 @@ void LdapConnection::initConnection()
 //------------------------------------------------------------------------------
  void LdapConnection::getUserProfile(
      const rtl::OUString& aUser, LdapData * data)
-    throw (lang::IllegalArgumentException,
-            ldap::LdapConnectionException, ldap::LdapGenericException)
 {
     OSL_ASSERT(data != 0);
     if (!isValid()) { connectSimple(); }
@@ -222,8 +217,6 @@ void LdapConnection::initConnection()
 }
 //------------------------------------------------------------------------------
  rtl::OString LdapConnection::findUserDn(const rtl::OString& aUser)
-    throw (lang::IllegalArgumentException,
-            ldap::LdapConnectionException, ldap::LdapGenericException)
 {
     if (!isValid()) { connectSimple(); }
 

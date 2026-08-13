@@ -91,29 +91,24 @@ public:
 	//----- XAccessible -------------------------------------------------------
 
 	virtual cssu::Reference<cssa::XAccessibleContext> SAL_CALL
-		getAccessibleContext (void)
-		throw (cssu::RuntimeException);
+		getAccessibleContext (void);
 
 
 	//----- XFocusListener ----------------------------------------------------
 
-	virtual void SAL_CALL focusGained (const css::awt::FocusEvent& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL focusGained (const css::awt::FocusEvent& rEvent);
 
-	virtual void SAL_CALL focusLost (const css::awt::FocusEvent& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL focusLost (const css::awt::FocusEvent& rEvent);
 
 
 	//----- XEventListener ----------------------------------------------------
 
-	virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent);
 
 
 	//----- XInitialization ---------------------------------------------------
 
-	virtual void SAL_CALL initialize (const cssu::Sequence<cssu::Any>& rArguments)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL initialize (const cssu::Sequence<cssu::Any>& rArguments);
 
 
 	class AccessibleObject;

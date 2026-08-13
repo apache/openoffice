@@ -61,13 +61,11 @@ public:
 
     ~EditImpl ();
 
-    virtual void SAL_CALL disposing( lang::EventObject const& e )
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL disposing( lang::EventObject const& e );
 
     virtual void SetModifyHdl( Link const& link );
 
     void SAL_CALL textChanged( const awt::TextEvent& /* rEvent */ )
-        throw (uno::RuntimeException)
     {
         maModifyHdl.Call( mpWindow );
     }
@@ -78,7 +76,6 @@ EditImpl::~EditImpl ()
 }
 
 void SAL_CALL EditImpl::disposing( lang::EventObject const& e )
-    throw (uno::RuntimeException)
 {
     ControlImpl::disposing (e);
     mxEdit.clear ();
@@ -388,11 +385,9 @@ public:
         maSelectHdl = link;
     }
 
-    void SAL_CALL disposing( lang::EventObject const& e )
-        throw (uno::RuntimeException);
+    void SAL_CALL disposing( lang::EventObject const& e );
 
     void SAL_CALL actionPerformed (const awt::ActionEvent&)
-        throw (uno::RuntimeException)
     {
         ComboBox* pComboBox = static_cast<ComboBox*>( mpWindow );
         if ( !pComboBox )
@@ -401,7 +396,6 @@ public:
     }
 
     void SAL_CALL itemStateChanged( awt::ItemEvent const&)
-        throw (uno::RuntimeException)
     {
         ComboBox* pComboBox = static_cast<ComboBox*>( mpWindow );
         if ( !pComboBox )
@@ -426,7 +420,6 @@ ComboBoxImpl::~ComboBoxImpl ()
 }
 
 void ComboBoxImpl::disposing( lang::EventObject const& e )
-    throw (uno::RuntimeException)
 {
     EditImpl::disposing (e);
     mxComboBox.clear ();
@@ -578,7 +571,6 @@ public:
     }
 
     virtual void SAL_CALL disposing( lang::EventObject const& e )
-        throw (uno::RuntimeException)
     {
         ControlImpl::disposing (e);
         mxListBox.clear ();
@@ -599,7 +591,6 @@ public:
     }
 
     void SAL_CALL actionPerformed( const awt::ActionEvent& /* rEvent */ )
-        throw (uno::RuntimeException)
     {
         maClickHdl.Call( mpWindow );
     }
@@ -619,7 +610,6 @@ public:
     }
 
     void SAL_CALL itemStateChanged (awt::ItemEvent const&)
-        throw (uno::RuntimeException)
     {
         maSelectHdl.Call (static_cast <ListBox*> (mpWindow));
     }
@@ -638,18 +628,18 @@ public:
         maDoubleClickHdl = link;
     }
 
-    void SAL_CALL mousePressed (awt::MouseEvent const&) throw (uno::RuntimeException)
+    void SAL_CALL mousePressed (awt::MouseEvent const&)
     {
     }
-    void SAL_CALL mouseReleased (awt::MouseEvent const& e) throw (uno::RuntimeException)
+    void SAL_CALL mouseReleased (awt::MouseEvent const& e)
     {
         if (e.ClickCount == 2)
             maDoubleClickHdl.Call (mpWindow);
     }
-    void SAL_CALL mouseEntered (awt::MouseEvent const&) throw (uno::RuntimeException)
+    void SAL_CALL mouseEntered (awt::MouseEvent const&)
     {
     }
-    void SAL_CALL mouseExited (awt::MouseEvent const&) throw (uno::RuntimeException)
+    void SAL_CALL mouseExited (awt::MouseEvent const&)
     {
     }
 };

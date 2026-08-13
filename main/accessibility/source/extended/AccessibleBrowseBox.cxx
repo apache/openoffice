@@ -128,7 +128,6 @@ void SAL_CALL AccessibleBrowseBox::disposing()
 // XAccessibleContext ---------------------------------------------------------
 
 sal_Int32 SAL_CALL AccessibleBrowseBox::getAccessibleChildCount()
-    throw ( uno::RuntimeException )
 {
     BBSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -139,7 +138,6 @@ sal_Int32 SAL_CALL AccessibleBrowseBox::getAccessibleChildCount()
 
 Reference< XAccessible > SAL_CALL
 AccessibleBrowseBox::getAccessibleChild( sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     BBSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -177,7 +175,6 @@ AccessibleBrowseBox::getAccessibleChild( sal_Int32 nChildIndex )
 
 Reference< XAccessible > SAL_CALL
 AccessibleBrowseBox::getAccessibleAtPoint( const awt::Point& rPoint )
-    throw ( uno::RuntimeException )
 {
     BBSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -208,7 +205,6 @@ AccessibleBrowseBox::getAccessibleAtPoint( const awt::Point& rPoint )
 // -----------------------------------------------------------------------------
 
 void SAL_CALL AccessibleBrowseBox::grabFocus()
-    throw ( uno::RuntimeException )
 {
     BBSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -218,7 +214,6 @@ void SAL_CALL AccessibleBrowseBox::grabFocus()
 // -----------------------------------------------------------------------------
 
 Any SAL_CALL AccessibleBrowseBox::getAccessibleKeyBinding()
-    throw ( uno::RuntimeException )
 {
     ensureIsAlive();
 	return Any();
@@ -228,7 +223,6 @@ Any SAL_CALL AccessibleBrowseBox::getAccessibleKeyBinding()
 // XServiceInfo ---------------------------------------------------------------
 
 OUString SAL_CALL AccessibleBrowseBox::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.svtools.AccessibleBrowseBox" ) );
 }
@@ -368,7 +362,7 @@ void AccessibleBrowseBoxAccess::dispose()
 }
 
 // -----------------------------------------------------------------------------
-Reference< XAccessibleContext > SAL_CALL AccessibleBrowseBoxAccess::getAccessibleContext() throw ( RuntimeException )
+Reference< XAccessibleContext > SAL_CALL AccessibleBrowseBoxAccess::getAccessibleContext()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 

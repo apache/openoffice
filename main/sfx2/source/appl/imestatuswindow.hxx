@@ -97,12 +97,10 @@ private:
     virtual ~ImeStatusWindow();
 
     virtual void SAL_CALL
-    disposing(com::sun::star::lang::EventObject const & rSource)
-        throw (com::sun::star::uno::RuntimeException);
+    disposing(com::sun::star::lang::EventObject const & rSource);
 
     virtual void SAL_CALL
-    propertyChange(com::sun::star::beans::PropertyChangeEvent const & rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+    propertyChange(com::sun::star::beans::PropertyChangeEvent const & rEvent);
 
     com::sun::star::uno::Reference< com::sun::star::beans::XPropertySet >
     getConfig();

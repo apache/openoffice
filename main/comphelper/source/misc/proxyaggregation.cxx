@@ -78,13 +78,13 @@ namespace comphelper
 	}
 
 	//-------------------------------------------------------------------------
-	Any SAL_CALL OProxyAggregation::queryAggregation( const Type& _rType ) throw (RuntimeException)
+	Any SAL_CALL OProxyAggregation::queryAggregation( const Type& _rType )
 	{
 		return m_xProxyAggregate.is() ? m_xProxyAggregate->queryAggregation( _rType ) : Any();
 	}
 
 	//-------------------------------------------------------------------------
-	Sequence< Type > SAL_CALL OProxyAggregation::getTypes(  ) throw (RuntimeException)
+	Sequence< Type > SAL_CALL OProxyAggregation::getTypes(  )
 	{
 		Sequence< Type > aTypes;
 		if ( m_xProxyAggregate.is() )
@@ -139,7 +139,7 @@ namespace comphelper
 	}
 
 	//-------------------------------------------------------------------------
-	Any SAL_CALL OComponentProxyAggregationHelper::queryInterface( const Type& _rType ) throw (RuntimeException)
+	Any SAL_CALL OComponentProxyAggregationHelper::queryInterface( const Type& _rType )
 	{
 		Any aReturn( BASE::queryInterface( _rType ) );
 		if ( !aReturn.hasValue() )
@@ -166,7 +166,7 @@ namespace comphelper
 	}
 
 	//-------------------------------------------------------------------------
-	void SAL_CALL OComponentProxyAggregationHelper::disposing( const EventObject& _rSource ) throw (RuntimeException)
+	void SAL_CALL OComponentProxyAggregationHelper::disposing( const EventObject& _rSource )
 	{
 		if ( _rSource.Source == m_xInner )
 		{	// it's our inner context which is dying -> dispose ourself
@@ -178,7 +178,7 @@ namespace comphelper
 	}
 
 	//-------------------------------------------------------------------------
-	void SAL_CALL OComponentProxyAggregationHelper::dispose() throw( RuntimeException )
+	void SAL_CALL OComponentProxyAggregationHelper::dispose()
 	{
 		::osl::MutexGuard aGuard( m_rBHelper.rMutex );
 
@@ -221,7 +221,7 @@ namespace comphelper
 	IMPLEMENT_GET_IMPLEMENTATION_ID( OComponentProxyAggregation )
 
 	//-------------------------------------------------------------------------
-	Sequence< Type > SAL_CALL OComponentProxyAggregation::getTypes(  ) throw (RuntimeException)
+	Sequence< Type > SAL_CALL OComponentProxyAggregation::getTypes(  )
 	{
 		Sequence< Type > aTypes( OComponentProxyAggregationHelper::getTypes() );
 
@@ -244,7 +244,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL OComponentProxyAggregation::disposing( const EventObject& _rSource ) throw (RuntimeException)
+	void SAL_CALL OComponentProxyAggregation::disposing( const EventObject& _rSource )
 	{
 		// simly disambiguate - this is necessary for MSVC to distinguish
 		// "disposing( EventObject )" from "disposing()"
@@ -252,14 +252,14 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL OComponentProxyAggregation::disposing()  throw (RuntimeException)
+	void SAL_CALL OComponentProxyAggregation::disposing()
 	{
 		// call the dispose-functionality of the base, which will dispose our aggregated component
 		OComponentProxyAggregationHelper::dispose();
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL OComponentProxyAggregation::dispose() throw( RuntimeException )
+	void SAL_CALL OComponentProxyAggregation::dispose()
 	{
 		// simply disambiguate
 		OComponentProxyAggregation_CBase::dispose();

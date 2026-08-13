@@ -70,8 +70,8 @@ class DocumentsEnumeration : public ::cppu::WeakImplHelper1< container::XEnumera
 {
 public:
     DocumentsEnumeration( const uno::Reference< frame::XModel >& rxModel );
-    virtual sal_Bool SAL_CALL hasMoreElements() throw (uno::RuntimeException);
-    virtual uno::Any SAL_CALL nextElement() throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasMoreElements();
+    virtual uno::Any SAL_CALL nextElement();
 private:
     typedef ::std::vector< uno::Reference< frame::XModel > > ModelVector;
     ModelVector maModels;
@@ -101,12 +101,12 @@ DocumentsEnumeration::DocumentsEnumeration( const uno::Reference< frame::XModel 
     maModelIt = maModels.begin();
 }
 
-sal_Bool SAL_CALL DocumentsEnumeration::hasMoreElements() throw (uno::RuntimeException)
+sal_Bool SAL_CALL DocumentsEnumeration::hasMoreElements()
 {
     return maModelIt != maModels.end();
 }
 
-uno::Any SAL_CALL DocumentsEnumeration::nextElement() throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+uno::Any SAL_CALL DocumentsEnumeration::nextElement()
 {
     if( maModelIt == maModels.end() )
         throw container::NoSuchElementException();

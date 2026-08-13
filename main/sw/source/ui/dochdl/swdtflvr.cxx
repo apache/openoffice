@@ -3644,7 +3644,7 @@ const Sequence< sal_Int8 >& SwTransferable::getUnoTunnelId()
 /* -----------------3/31/2003 11:46AM----------------
 
  --------------------------------------------------*/
-sal_Int64 SwTransferable::getSomething( const Sequence< sal_Int8 >& rId ) throw( RuntimeException )
+sal_Int64 SwTransferable::getSomething( const Sequence< sal_Int8 >& rId )
 {
 	sal_Int64 nRet;
 	if( ( rId.getLength() == 16 ) &&

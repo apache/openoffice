@@ -46,7 +46,7 @@ VCLXRegion::~VCLXRegion()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXRegion::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXRegion::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XRegion*, this ),
@@ -65,56 +65,56 @@ IMPL_XTYPEPROVIDER_END
 
 
 
-::com::sun::star::awt::Rectangle VCLXRegion::getBounds() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Rectangle VCLXRegion::getBounds()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	return AWTRectangle( maRegion.GetBoundRect() );
 }
 
-void VCLXRegion::clear() throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::clear()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	maRegion.SetEmpty();
 }
 
-void VCLXRegion::move( sal_Int32 nHorzMove, sal_Int32 nVertMove ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::move( sal_Int32 nHorzMove, sal_Int32 nVertMove )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	maRegion.Move( nHorzMove, nVertMove );
 }
 
-void VCLXRegion::unionRectangle( const ::com::sun::star::awt::Rectangle& rRect ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::unionRectangle( const ::com::sun::star::awt::Rectangle& rRect )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	maRegion.Union( VCLRectangle( rRect ) );
 }
 
-void VCLXRegion::intersectRectangle( const ::com::sun::star::awt::Rectangle& rRect ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::intersectRectangle( const ::com::sun::star::awt::Rectangle& rRect )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	maRegion.Intersect( VCLRectangle( rRect ) );
 }
 
-void VCLXRegion::excludeRectangle( const ::com::sun::star::awt::Rectangle& rRect ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::excludeRectangle( const ::com::sun::star::awt::Rectangle& rRect )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	maRegion.Exclude( VCLRectangle( rRect ) );
 }
 
-void VCLXRegion::xOrRectangle( const ::com::sun::star::awt::Rectangle& rRect ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::xOrRectangle( const ::com::sun::star::awt::Rectangle& rRect )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	maRegion.XOr( VCLRectangle( rRect ) );
 }
 
-void VCLXRegion::unionRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::unionRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -122,7 +122,7 @@ void VCLXRegion::unionRegion( const ::com::sun::star::uno::Reference< ::com::sun
 		maRegion.Union( VCLUnoHelper::GetRegion( rxRegion ) );
 }
 
-void VCLXRegion::intersectRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::intersectRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -130,7 +130,7 @@ void VCLXRegion::intersectRegion( const ::com::sun::star::uno::Reference< ::com:
 		maRegion.Intersect( VCLUnoHelper::GetRegion( rxRegion ) );
 }
 
-void VCLXRegion::excludeRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::excludeRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -138,7 +138,7 @@ void VCLXRegion::excludeRegion( const ::com::sun::star::uno::Reference< ::com::s
 		maRegion.Exclude( VCLUnoHelper::GetRegion( rxRegion ) );
 }
 
-void VCLXRegion::xOrRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRegion::xOrRegion( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion >& rxRegion )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -146,7 +146,7 @@ void VCLXRegion::xOrRegion( const ::com::sun::star::uno::Reference< ::com::sun::
 		maRegion.XOr( VCLUnoHelper::GetRegion( rxRegion ) );
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::awt::Rectangle > VCLXRegion::getRectangles() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::com::sun::star::awt::Rectangle > VCLXRegion::getRectangles()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 

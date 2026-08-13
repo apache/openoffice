@@ -246,7 +246,6 @@ sal_Bool produceAllTypes(const OString& typeName,
 						 FileStream& o,
 						 RegistryKey& regKey,
 						 StringSet& filterTypes2)
-	throw( CannotDumpException )
 {
 	if (!produceType(typeName, typeMgr,	typeDependencies, pOptions, o, regKey, filterTypes2))
 	{

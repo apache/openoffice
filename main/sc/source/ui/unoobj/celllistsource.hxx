@@ -92,22 +92,22 @@ namespace calc
         DECLARE_XTYPEPROVIDER()
 
         // XListEntrySource
-        virtual sal_Int32 SAL_CALL getListEntryCount(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getListEntry( sal_Int32 Position ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getAllListEntries(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL addListEntryListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntryListener >& Listener ) throw (::com::sun::star::lang::NullPointerException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeListEntryListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntryListener >& Listener ) throw (::com::sun::star::lang::NullPointerException, ::com::sun::star::uno::RuntimeException);
+        virtual sal_Int32 SAL_CALL getListEntryCount(  );
+        virtual ::rtl::OUString SAL_CALL getListEntry( sal_Int32 Position );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getAllListEntries(  );
+        virtual void SAL_CALL addListEntryListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntryListener >& Listener );
+        virtual void SAL_CALL removeListEntryListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntryListener >& Listener );
 
         // OComponentHelper/XComponent
         virtual void SAL_CALL disposing();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // XPropertySet
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
         // OPropertySetHelper
         virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
@@ -117,17 +117,15 @@ namespace calc
 		virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
 
         // XModifyListener
-        virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
     private:
-        void    checkDisposed( ) const
-                    SAL_THROW( ( ::com::sun::star::lang::DisposedException ) );
-        void    checkInitialized()
-                    SAL_THROW( ( ::com::sun::star::uno::RuntimeException ) );
+        void    checkDisposed( ) const;
+        void    checkInitialized();
 
         /** retrieves the actual address of our cell range
             @precond

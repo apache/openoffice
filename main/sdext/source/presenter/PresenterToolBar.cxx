@@ -176,18 +176,15 @@ namespace {
 
         // lang::XEventListener
 
-        virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent);
 
         // document::XEventListener
 
-        virtual void SAL_CALL notifyEvent (const css::document::EventObject& rEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL notifyEvent (const css::document::EventObject& rEvent);
 
         // frame::XStatusListener
 
-        virtual void SAL_CALL statusChanged (const css::frame::FeatureStateEvent& rEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL statusChanged (const css::frame::FeatureStateEvent& rEvent);
 
     protected:
         ::rtl::Reference<PresenterToolBar> mpToolBar;
@@ -242,8 +239,7 @@ namespace {
 
         // lang::XEventListener
 
-        virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent);
 
     protected:
         virtual awt::Size CreateBoundingSize (
@@ -597,7 +593,6 @@ Reference<XComponentContext> PresenterToolBar::GetComponentContext (void) const
 //-----  lang::XEventListener -------------------------------------------------
 
 void SAL_CALL PresenterToolBar::disposing (const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if (rEventObject.Source == mxWindow)
         mxWindow = NULL;
@@ -609,7 +604,6 @@ void SAL_CALL PresenterToolBar::disposing (const lang::EventObject& rEventObject
 //----- XWindowListener -------------------------------------------------------
 
 void SAL_CALL PresenterToolBar::windowResized (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     mbIsLayoutPending = true;
@@ -619,7 +613,6 @@ void SAL_CALL PresenterToolBar::windowResized (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterToolBar::windowMoved (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -628,7 +621,6 @@ void SAL_CALL PresenterToolBar::windowMoved (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterToolBar::windowShown (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     mbIsLayoutPending = true;
@@ -638,7 +630,6 @@ void SAL_CALL PresenterToolBar::windowShown (const lang::EventObject& rEvent)
 
 
 void SAL_CALL PresenterToolBar::windowHidden (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -649,7 +640,6 @@ void SAL_CALL PresenterToolBar::windowHidden (const lang::EventObject& rEvent)
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterToolBar::windowPaint (const css::awt::PaintEvent& rEvent)
-    throw (RuntimeException)
 {
     if ( ! mxCanvas.is())
         return;
@@ -678,7 +668,6 @@ void SAL_CALL PresenterToolBar::windowPaint (const css::awt::PaintEvent& rEvent)
 //----- XMouseListener --------------------------------------------------------
 
 void SAL_CALL PresenterToolBar::mousePressed (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     CheckMouseOver(rEvent, true, true);
 }
@@ -687,7 +676,6 @@ void SAL_CALL PresenterToolBar::mousePressed (const css::awt::MouseEvent& rEvent
 
 
 void SAL_CALL PresenterToolBar::mouseReleased (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     CheckMouseOver(rEvent, true);
 }
@@ -696,7 +684,6 @@ void SAL_CALL PresenterToolBar::mouseReleased (const css::awt::MouseEvent& rEven
 
 
 void SAL_CALL PresenterToolBar::mouseEntered (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     CheckMouseOver(rEvent, true);
 }
@@ -705,7 +692,6 @@ void SAL_CALL PresenterToolBar::mouseEntered (const css::awt::MouseEvent& rEvent
 
 
 void SAL_CALL PresenterToolBar::mouseExited (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     CheckMouseOver(rEvent, false);
 }
@@ -716,7 +702,6 @@ void SAL_CALL PresenterToolBar::mouseExited (const css::awt::MouseEvent& rEvent)
 //----- XMouseMotionListener --------------------------------------------------
 
 void SAL_CALL PresenterToolBar::mouseMoved (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -727,7 +712,6 @@ void SAL_CALL PresenterToolBar::mouseMoved (const css::awt::MouseEvent& rEvent)
 
 
 void SAL_CALL PresenterToolBar::mouseDragged (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     (void)rEvent;
@@ -739,7 +723,6 @@ void SAL_CALL PresenterToolBar::mouseDragged (const css::awt::MouseEvent& rEvent
 //----- XDrawView -------------------------------------------------------------
 
 void SAL_CALL PresenterToolBar::setCurrentPage (const Reference<drawing::XDrawPage>& rxSlide)
-    throw (RuntimeException)
 {
     if (rxSlide != mxCurrentSlide)
     {
@@ -752,7 +735,6 @@ void SAL_CALL PresenterToolBar::setCurrentPage (const Reference<drawing::XDrawPa
 
 
 Reference<drawing::XDrawPage> SAL_CALL PresenterToolBar::getCurrentPage (void)
-    throw (RuntimeException)
 {
     return mxCurrentSlide;
 }
@@ -1138,7 +1120,6 @@ void PresenterToolBar::CheckMouseOver (
 
 
 void PresenterToolBar::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{
@@ -1247,7 +1228,6 @@ void SAL_CALL PresenterToolBarView::disposing (void)
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterToolBarView::windowPaint (const css::awt::PaintEvent& rEvent)
-    throw (RuntimeException)
 {
     awt::Rectangle aWindowBox (mxWindow->getPosSize());
     mpPresenterController->GetCanvasHelper()->Paint(
@@ -1264,7 +1244,6 @@ void SAL_CALL PresenterToolBarView::windowPaint (const css::awt::PaintEvent& rEv
 //-----  lang::XEventListener -------------------------------------------------
 
 void SAL_CALL PresenterToolBarView::disposing (const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if (rEventObject.Source == mxWindow)
         mxWindow = NULL;
@@ -1276,7 +1255,6 @@ void SAL_CALL PresenterToolBarView::disposing (const lang::EventObject& rEventOb
 //----- XResourceId -----------------------------------------------------------
 
 Reference<XResourceId> SAL_CALL PresenterToolBarView::getResourceId (void)
-    throw (RuntimeException)
 {
     return mxViewId;
 }
@@ -1285,7 +1263,6 @@ Reference<XResourceId> SAL_CALL PresenterToolBarView::getResourceId (void)
 
 
 sal_Bool SAL_CALL PresenterToolBarView::isAnchorOnly (void)
-    throw (RuntimeException)
 {
     return false;
 }
@@ -1296,7 +1273,6 @@ sal_Bool SAL_CALL PresenterToolBarView::isAnchorOnly (void)
 //----- XDrawView -------------------------------------------------------------
 
 void SAL_CALL PresenterToolBarView::setCurrentPage (const Reference<drawing::XDrawPage>& rxSlide)
-    throw (RuntimeException)
 {
     Reference<drawing::XDrawView> xToolBar (static_cast<XWeak*>(mpToolBar.get()), UNO_QUERY);
     if (xToolBar.is())
@@ -1307,7 +1283,6 @@ void SAL_CALL PresenterToolBarView::setCurrentPage (const Reference<drawing::XDr
 
 
 Reference<drawing::XDrawPage> SAL_CALL PresenterToolBarView::getCurrentPage (void)
-    throw (RuntimeException)
 {
     return NULL;
 }
@@ -1318,7 +1293,6 @@ Reference<drawing::XDrawPage> SAL_CALL PresenterToolBarView::getCurrentPage (voi
 //-----------------------------------------------------------------------------
 
 void PresenterToolBarView::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{
@@ -1559,7 +1533,6 @@ void Element::UpdateState (void)
 //----- lang::XEventListener --------------------------------------------------
 
 void SAL_CALL Element::disposing (const css::lang::EventObject& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1570,7 +1543,6 @@ void SAL_CALL Element::disposing (const css::lang::EventObject& rEvent)
 //----- document::XEventListener ----------------------------------------------
 
 void SAL_CALL Element::notifyEvent (const css::document::EventObject& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     UpdateState();
@@ -1582,7 +1554,6 @@ void SAL_CALL Element::notifyEvent (const css::document::EventObject& rEvent)
 //----- frame::XStatusListener ------------------------------------------------
 
 void SAL_CALL Element::statusChanged (const css::frame::FeatureStateEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     bool bIsSelected (mbIsSelected);
     bool bIsEnabled (rEvent.IsEnabled);
@@ -1841,7 +1812,6 @@ PresenterBitmapDescriptor::Mode Button::GetMode (void) const
 //----- lang::XEventListener --------------------------------------------------
 
 void SAL_CALL Button::disposing (const css::lang::EventObject& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     mbIsListenerRegistered = false;

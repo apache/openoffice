@@ -100,15 +100,15 @@ namespace dbaccess
         ~DatabaseRegistrations();
 
     public:
-        virtual ::sal_Bool SAL_CALL hasRegisteredDatabase( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getRegistrationNames() throw (RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getDatabaseLocation( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, NoSuchElementException, RuntimeException);
-        virtual void SAL_CALL registerDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _Location ) throw (IllegalArgumentException, ElementExistException, RuntimeException);
-        virtual void SAL_CALL revokeDatabaseLocation( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, NoSuchElementException, IllegalAccessException, RuntimeException);
-        virtual void SAL_CALL changeDatabaseLocation( const ::rtl::OUString& Name, const ::rtl::OUString& NewLocation ) throw (IllegalArgumentException, NoSuchElementException, IllegalAccessException, RuntimeException);
-        virtual ::sal_Bool SAL_CALL isDatabaseRegistrationReadOnly( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, NoSuchElementException, RuntimeException);
-        virtual void SAL_CALL addDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& Listener ) throw (RuntimeException);
-        virtual void SAL_CALL removeDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& Listener ) throw (RuntimeException);
+        virtual ::sal_Bool SAL_CALL hasRegisteredDatabase( const ::rtl::OUString& _Name );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getRegistrationNames();
+        virtual ::rtl::OUString SAL_CALL getDatabaseLocation( const ::rtl::OUString& _Name );
+        virtual void SAL_CALL registerDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _Location );
+        virtual void SAL_CALL revokeDatabaseLocation( const ::rtl::OUString& _Name );
+        virtual void SAL_CALL changeDatabaseLocation( const ::rtl::OUString& Name, const ::rtl::OUString& NewLocation );
+        virtual ::sal_Bool SAL_CALL isDatabaseRegistrationReadOnly( const ::rtl::OUString& _Name );
+        virtual void SAL_CALL addDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& Listener );
+        virtual void SAL_CALL removeDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& Listener );
 
     private:
         ::utl::OConfigurationNode
@@ -245,7 +245,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DatabaseRegistrations::hasRegisteredDatabase( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, RuntimeException)
+    ::sal_Bool SAL_CALL DatabaseRegistrations::hasRegisteredDatabase( const ::rtl::OUString& _Name )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         ::utl::OConfigurationNode aNodeForName = impl_getNodeForName_nothrow( _Name );
@@ -253,7 +253,7 @@ namespace dbaccess
     }
 
     //------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL DatabaseRegistrations::getRegistrationNames() throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL DatabaseRegistrations::getRegistrationNames()
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !m_aConfigurationRoot.isValid() )
@@ -277,7 +277,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL DatabaseRegistrations::getDatabaseLocation( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, NoSuchElementException, RuntimeException)
+    ::rtl::OUString SAL_CALL DatabaseRegistrations::getDatabaseLocation( const ::rtl::OUString& _Name )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -291,7 +291,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DatabaseRegistrations::registerDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _Location ) throw (IllegalArgumentException, ElementExistException, RuntimeException)
+    void SAL_CALL DatabaseRegistrations::registerDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _Location )
     {
         ::osl::ClearableMutexGuard aGuard( m_aMutex );
 
@@ -310,7 +310,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DatabaseRegistrations::revokeDatabaseLocation( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, NoSuchElementException, IllegalAccessException, RuntimeException)
+    void SAL_CALL DatabaseRegistrations::revokeDatabaseLocation( const ::rtl::OUString& _Name )
     {
         ::osl::ClearableMutexGuard aGuard( m_aMutex );
 
@@ -336,7 +336,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DatabaseRegistrations::changeDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _NewLocation ) throw (IllegalArgumentException, NoSuchElementException, IllegalAccessException, RuntimeException)
+    void SAL_CALL DatabaseRegistrations::changeDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _NewLocation )
     {
         ::osl::ClearableMutexGuard aGuard( m_aMutex );
 
@@ -362,7 +362,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DatabaseRegistrations::isDatabaseRegistrationReadOnly( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, NoSuchElementException, RuntimeException)
+    ::sal_Bool SAL_CALL DatabaseRegistrations::isDatabaseRegistrationReadOnly( const ::rtl::OUString& _Name )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         ::utl::OConfigurationNode aDataSourceRegistration = impl_checkValidName_throw( _Name, true );
@@ -370,14 +370,14 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DatabaseRegistrations::addDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& _Listener ) throw (RuntimeException)
+    void SAL_CALL DatabaseRegistrations::addDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& _Listener )
     {
         if ( _Listener.is() )
             m_aRegistrationListeners.addInterface( _Listener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DatabaseRegistrations::removeDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& _Listener ) throw (RuntimeException)
+    void SAL_CALL DatabaseRegistrations::removeDatabaseRegistrationsListener( const Reference< XDatabaseRegistrationsListener >& _Listener )
     {
         if ( _Listener.is() )
             m_aRegistrationListeners.removeInterface( _Listener );

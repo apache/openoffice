@@ -109,14 +109,14 @@ void VCLXAccessibleHeaderBar::FillAccessibleStateSet( utl::AccessibleStateSetHel
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleHeaderBar::getImplementationName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleHeaderBar::getImplementationName()
 {
 	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleHeaderBar" );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > VCLXAccessibleHeaderBar::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleHeaderBar::getSupportedServiceNames()
 {
 	Sequence< ::rtl::OUString > aNames(1);
 	aNames[0] = ::rtl::OUString::createFromAscii( "com.sun.star.awt.AccessibleHeaderBar" );
@@ -126,7 +126,6 @@ Sequence< ::rtl::OUString > VCLXAccessibleHeaderBar::getSupportedServiceNames() 
 // =======XAccessibleContext=======
 
 sal_Int32 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleChildCount(  )
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nCount = 0;
 	if ( m_pHeadBar )
@@ -135,7 +134,7 @@ sal_Int32 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleChildCount(  )
     return nCount;
 }
 ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL
-		VCLXAccessibleHeaderBar::getAccessibleChild( sal_Int32 i ) 	throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+		VCLXAccessibleHeaderBar::getAccessibleChild( sal_Int32 i )
 {
 	if ( i < 0 || i >= getAccessibleChildCount() )
 		throw IndexOutOfBoundsException();
@@ -153,7 +152,7 @@ sal_Int32 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleChildCount(  )
     return xChild;
 }
 
-sal_Int16 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleRole(  ) throw (::com::sun::star::uno::RuntimeException)
+sal_Int16 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleRole(  )
 {
 	return com::sun::star::accessibility::AccessibleRole::LIST;
 }

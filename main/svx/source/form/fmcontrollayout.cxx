@@ -99,7 +99,7 @@ namespace svxform
         }
 
         //....................................................................
-        static bool lcl_getDocumentDefaultStyleAndFamily( const Reference< XInterface >& _rxDocument, ::rtl::OUString& _rFamilyName, ::rtl::OUString& _rStyleName ) SAL_THROW(( Exception ))
+        static bool lcl_getDocumentDefaultStyleAndFamily( const Reference< XInterface >& _rxDocument, ::rtl::OUString& _rFamilyName, ::rtl::OUString& _rStyleName )
         {
             bool bSuccess = true;
             Reference< XServiceInfo > xDocumentSI( _rxDocument, UNO_QUERY );

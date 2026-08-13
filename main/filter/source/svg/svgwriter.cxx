@@ -1968,7 +1968,7 @@ SVGWriter::~SVGWriter()
 // -----------------------------------------------------------------------------
 
 
-ANY SAL_CALL SVGWriter::queryInterface( const NMSP_UNO::Type & rType ) throw( NMSP_UNO::RuntimeException )
+ANY SAL_CALL SVGWriter::queryInterface( const NMSP_UNO::Type & rType )
 {
 	const ANY aRet( NMSP_CPPU::queryInterface( rType,
 			static_cast< NMSP_SVG::XSVGWriter* >( this ),
@@ -1993,7 +1993,7 @@ void SAL_CALL SVGWriter::release() throw()
 // -----------------------------------------------------------------------------
 
 void SAL_CALL SVGWriter::write( const REF( NMSP_SAX::XDocumentHandler )& rxDocHandler,
-								const SEQ( sal_Int8 )& rMtfSeq ) throw( NMSP_UNO::RuntimeException )
+								const SEQ( sal_Int8 )& rMtfSeq )
 {
 	SvMemoryStream	aMemStm( (char*) rMtfSeq.getConstArray(), rMtfSeq.getLength(), STREAM_READ );
 	GDIMetaFile		aMtf;
@@ -2011,7 +2011,6 @@ void SAL_CALL SVGWriter::write( const REF( NMSP_SAX::XDocumentHandler )& rxDocHa
 // -----------------------------------------------------------------------------
 
 void SVGWriter::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-	throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	if ( aArguments.getLength() == 1 )
 	{
@@ -2026,7 +2025,6 @@ void SVGWriter::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::s
 #define SVG_WRITER_IMPLEMENTATION_NAME  "com.sun.star.comp.Draw.SVGWriter"
 
 rtl::OUString SVGWriter_getImplementationName()
-	throw (RuntimeException)
 {
 	return rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM( SVG_WRITER_IMPLEMENTATION_NAME ) );
 }
@@ -2034,7 +2032,6 @@ rtl::OUString SVGWriter_getImplementationName()
 // -----------------------------------------------------------------------------
 
 Sequence< sal_Int8 > SAL_CALL SVGWriter_getImplementationId()
-    throw(RuntimeException)
 {
     static const ::cppu::OImplementationId aId;
 
@@ -2044,7 +2041,6 @@ Sequence< sal_Int8 > SAL_CALL SVGWriter_getImplementationId()
 // -----------------------------------------------------------------------------
 
 Sequence< rtl::OUString > SAL_CALL SVGWriter_getSupportedServiceNames()
-    throw (RuntimeException)
 {
 	Sequence< rtl::OUString > aRet( 1 );
 
@@ -2056,7 +2052,6 @@ Sequence< rtl::OUString > SAL_CALL SVGWriter_getSupportedServiceNames()
 // -----------------------------------------------------------------------------
 
 Reference< XInterface > SAL_CALL SVGWriter_createInstance( const Reference< XMultiServiceFactory > & rSMgr )
-    throw( Exception )
 {
     return( static_cast< cppu::OWeakObject* >( new SVGWriter( rSMgr ) ) );
 }

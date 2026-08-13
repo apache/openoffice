@@ -177,46 +177,40 @@ public:
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
 		attachFrame( const ::com::sun::star::uno::Reference<
-					  ::com::sun::star::frame::XFrame > & xFrame )
-							throw (::com::sun::star::uno::RuntimeException);
+					  ::com::sun::star::frame::XFrame > & xFrame );
 
 	virtual sal_Bool SAL_CALL
 		attachModel( const ::com::sun::star::uno::Reference<
-						::com::sun::star::frame::XModel > & xModel )
-							throw (::com::sun::star::uno::RuntimeException);
+						::com::sun::star::frame::XModel > & xModel );
 
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > SAL_CALL
-		getFrame()			throw (::com::sun::star::uno::RuntimeException);
+		getFrame();
 
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > SAL_CALL
-		getModel()			throw (::com::sun::star::uno::RuntimeException);
+		getModel();
 
 	virtual ::com::sun::star::uno::Any SAL_CALL
-		getViewData()		throw (::com::sun::star::uno::RuntimeException);
+		getViewData();
 
 	virtual void SAL_CALL
-		restoreViewData( const ::com::sun::star::uno::Any& rValue )
-							throw (::com::sun::star::uno::RuntimeException);
+		restoreViewData( const ::com::sun::star::uno::Any& rValue );
 
 	virtual sal_Bool SAL_CALL
-		suspend( sal_Bool bSuspend )
-							throw (::com::sun::star::uno::RuntimeException);
+		suspend( sal_Bool bSuspend );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::lang::XComponent (base of XController)
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
-		dispose()			throw (::com::sun::star::uno::RuntimeException);
+		dispose();
 
 	virtual void SAL_CALL
 		addEventListener( const ::com::sun::star::uno::Reference<
-						  ::com::sun::star::lang::XEventListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+						  ::com::sun::star::lang::XEventListener > & xListener );
 
 	virtual void SAL_CALL
 		removeEventListener( const ::com::sun::star::uno::Reference<
-						  ::com::sun::star::lang::XEventListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+						  ::com::sun::star::lang::XEventListener > & xListener );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::frame::XDispatchProvider (required interface)
@@ -225,48 +219,41 @@ public:
 		::com::sun::star::frame::XDispatch> SAL_CALL
 		queryDispatch( const ::com::sun::star::util::URL& rURL
 							, const rtl::OUString& rTargetFrameName
-							, sal_Int32 nSearchFlags)
-							throw (::com::sun::star::uno::RuntimeException);
+							, sal_Int32 nSearchFlags);
 
 	virtual ::com::sun::star::uno::Sequence<
 		::com::sun::star::uno::Reference<
 		::com::sun::star::frame::XDispatch > > SAL_CALL
 		queryDispatches( const ::com::sun::star::uno::Sequence<
-							::com::sun::star::frame::DispatchDescriptor > & xDescripts)
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::frame::DispatchDescriptor > & xDescripts);
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::view::XSelectionSupplier (optional interface)
 	//-----------------------------------------------------------------
 	virtual sal_Bool SAL_CALL
-		select( const ::com::sun::star::uno::Any& rSelection )
-							throw ( com::sun::star::lang::IllegalArgumentException );
+		select( const ::com::sun::star::uno::Any& rSelection );
 
 	virtual ::com::sun::star::uno::Any	SAL_CALL
-		getSelection() throw (::com::sun::star::uno::RuntimeException);
+		getSelection();
 
 	virtual void SAL_CALL
 		addSelectionChangeListener( const ::com::sun::star::uno::Reference<
-							com::sun::star::view::XSelectionChangeListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+							com::sun::star::view::XSelectionChangeListener > & xListener );
 
 	virtual void SAL_CALL
 		removeSelectionChangeListener( const ::com::sun::star::uno::Reference<
-							com::sun::star::view::XSelectionChangeListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+							com::sun::star::view::XSelectionChangeListener > & xListener );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::ui::XContextMenuInterception (optional interface)
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
 		registerContextMenuInterceptor( const ::com::sun::star::uno::Reference<
-							::com::sun::star::ui::XContextMenuInterceptor > & xInterceptor)
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::ui::XContextMenuInterceptor > & xInterceptor);
 
 	virtual void SAL_CALL
 		releaseContextMenuInterceptor( const ::com::sun::star::uno::Reference<
-							::com::sun::star::ui::XContextMenuInterceptor > & xInterceptor)
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::ui::XContextMenuInterceptor > & xInterceptor);
 
 
 	//-----------------------------------------------------------------
@@ -278,20 +265,16 @@ public:
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
 		queryClosing( const ::com::sun::star::lang::EventObject& Source
-							, sal_Bool GetsOwnership )
-							throw (::com::sun::star::util::CloseVetoException
-								 , ::com::sun::star::uno::RuntimeException);
+							, sal_Bool GetsOwnership );
 
     virtual void SAL_CALL
-		notifyClosing( const ::com::sun::star::lang::EventObject& Source )
-							throw (::com::sun::star::uno::RuntimeException);
+		notifyClosing( const ::com::sun::star::lang::EventObject& Source );
 
 	//-------------------------------------------------------------------------------------
 	// ::com::sun::star::util::XEventListener (base of XCloseListener and XModifyListener)
 	//-------------------------------------------------------------------------------------
 	virtual void SAL_CALL
-		disposing( const ::com::sun::star::lang::EventObject& Source )
-							throw (::com::sun::star::uno::RuntimeException);
+		disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::frame::XDispatch
@@ -300,135 +283,109 @@ public:
 	virtual void SAL_CALL
 		dispatch( const ::com::sun::star::util::URL& aURL
 					, const ::com::sun::star::uno::Sequence<
-					::com::sun::star::beans::PropertyValue >& aArgs )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::beans::PropertyValue >& aArgs );
 
     virtual void SAL_CALL
 		addStatusListener( const ::com::sun::star::uno::Reference<
 					::com::sun::star::frame::XStatusListener >& xControl
-					, const ::com::sun::star::util::URL& aURL )
-					throw (::com::sun::star::uno::RuntimeException);
+					, const ::com::sun::star::util::URL& aURL );
 
     virtual void SAL_CALL
 		removeStatusListener( const ::com::sun::star::uno::Reference<
 					::com::sun::star::frame::XStatusListener >& xControl
-					, const ::com::sun::star::util::URL& aURL )
-					throw (::com::sun::star::uno::RuntimeException);
+					, const ::com::sun::star::util::URL& aURL );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::awt::XWindow
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
 		setPosSize( sal_Int32 X, sal_Int32 Y
-					, sal_Int32 Width, sal_Int32 Height, sal_Int16 Flags )
-					throw (::com::sun::star::uno::RuntimeException);
+					, sal_Int32 Width, sal_Int32 Height, sal_Int16 Flags );
 
     virtual ::com::sun::star::awt::Rectangle SAL_CALL
-		getPosSize()
-					throw (::com::sun::star::uno::RuntimeException);
+		getPosSize();
 
     virtual void SAL_CALL
-		setVisible( sal_Bool Visible )
-					throw (::com::sun::star::uno::RuntimeException);
+		setVisible( sal_Bool Visible );
 
     virtual void SAL_CALL
-		setEnable( sal_Bool Enable )
-					throw (::com::sun::star::uno::RuntimeException);
+		setEnable( sal_Bool Enable );
 
     virtual void SAL_CALL
-		setFocus()	throw (::com::sun::star::uno::RuntimeException);
+		setFocus();
 
     //----------------
     virtual void SAL_CALL
 		addWindowListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XWindowListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XWindowListener >& xListener );
 
     virtual void SAL_CALL
 		removeWindowListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XWindowListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XWindowListener >& xListener );
 
     virtual void SAL_CALL
 		addFocusListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XFocusListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XFocusListener >& xListener );
 
     virtual void SAL_CALL
 		removeFocusListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XFocusListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XFocusListener >& xListener );
 
     virtual void SAL_CALL
 		addKeyListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XKeyListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XKeyListener >& xListener );
 
     virtual void SAL_CALL
 		removeKeyListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XKeyListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XKeyListener >& xListener );
 
     virtual void SAL_CALL
 		addMouseListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XMouseListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XMouseListener >& xListener );
 
     virtual void SAL_CALL
 		removeMouseListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XMouseListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XMouseListener >& xListener );
 
     virtual void SAL_CALL
 		addMouseMotionListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XMouseMotionListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XMouseMotionListener >& xListener );
 
     virtual void SAL_CALL
 		removeMouseMotionListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XMouseMotionListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XMouseMotionListener >& xListener );
 
     virtual void SAL_CALL
 		addPaintListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XPaintListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XPaintListener >& xListener );
 
     virtual void SAL_CALL
 		removePaintListener( const ::com::sun::star::uno::Reference<
-					::com::sun::star::awt::XPaintListener >& xListener )
-					throw (::com::sun::star::uno::RuntimeException);
+					::com::sun::star::awt::XPaintListener >& xListener );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::lang XMultiServiceFactory
 	//-----------------------------------------------------------------
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
-        createInstance( const ::rtl::OUString& aServiceSpecifier )
-            throw (::com::sun::star::uno::Exception,
-                   ::com::sun::star::uno::RuntimeException);
+        createInstance( const ::rtl::OUString& aServiceSpecifier );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
         createInstanceWithArguments( const ::rtl::OUString& ServiceSpecifier,
                                      const ::com::sun::star::uno::Sequence<
-                                         ::com::sun::star::uno::Any >& Arguments )
-            throw (::com::sun::star::uno::Exception,
-                   ::com::sun::star::uno::RuntimeException);
+                                         ::com::sun::star::uno::Any >& Arguments );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getAvailableServiceNames()
-            throw (::com::sun::star::uno::RuntimeException);
+        getAvailableServiceNames();
 
     //-----------------------------------------------------------------
     // ::com::sun::star::util::XModifyListener
     //-----------------------------------------------------------------
     virtual void SAL_CALL modified(
-        const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& aEvent );
 
     //-----------------------------------------------------------------
     // ::com::sun::star::util::XModeChangeListener
     //-----------------------------------------------------------------
     virtual void SAL_CALL modeChanged(
-        const ::com::sun::star::util::ModeChangeEvent& _rSource )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::util::ModeChangeEvent& _rSource );
 
     //-----------------------------------------------------------------
     // ::com::sun::star::frame::XLayoutManagerListener
@@ -436,8 +393,7 @@ public:
     virtual void SAL_CALL layoutEvent(
         const ::com::sun::star::lang::EventObject& aSource,
         ::sal_Int16 eLayoutEvent,
-        const ::com::sun::star::uno::Any& aInfo )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Any& aInfo );
 
     //-----------------------------------------------------------------
     // chart2::WindowController

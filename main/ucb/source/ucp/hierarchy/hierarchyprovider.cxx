@@ -120,7 +120,6 @@ ONE_INSTANCE_SERVICE_FACTORY_IMPL( HierarchyContentProvider );
 uno::Reference< ucb::XContent > SAL_CALL
 HierarchyContentProvider::queryContent(
         const uno::Reference< ucb::XContentIdentifier >& Identifier )
-    throw( ucb::IllegalIdentifierException, uno::RuntimeException )
 {
     HierarchyUri aUri( Identifier->getContentIdentifier() );
     if ( !aUri.isValid() )
@@ -158,7 +157,6 @@ HierarchyContentProvider::queryContent(
 // virtual
 void SAL_CALL HierarchyContentProvider::initialize(
                                 const uno::Sequence< uno::Any >& aArguments )
-    throw( uno::Exception, uno::RuntimeException )
 {
 #if 0
 	if ( aArguments.getLength() > 0 )

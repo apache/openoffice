@@ -51,7 +51,6 @@ namespace css = com::sun::star;
 
 css::uno::Reference< css::uno::XInterface > BridgeFactory::static_create(
     css::uno::Reference< css::uno::XComponentContext > const & xContext)
-    SAL_THROW((css::uno::Exception))
 {
     return static_cast< cppu::OWeakObject * >(new BridgeFactory(xContext));
 }
@@ -99,13 +98,11 @@ BridgeFactory::BridgeFactory(
 BridgeFactory::~BridgeFactory() {}
 
 rtl::OUString BridgeFactory::getImplementationName()
-    throw (css::uno::RuntimeException)
 {
     return static_getImplementationName();
 }
 
 sal_Bool BridgeFactory::supportsService(rtl::OUString const & ServiceName)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Sequence< rtl::OUString > s(getSupportedServiceNames());
     for (sal_Int32 i = 0; i != s.getLength(); ++i) {
@@ -117,7 +114,6 @@ sal_Bool BridgeFactory::supportsService(rtl::OUString const & ServiceName)
 }
 
 css::uno::Sequence< rtl::OUString > BridgeFactory::getSupportedServiceNames()
-    throw (css::uno::RuntimeException)
 {
     return static_getSupportedServiceNames();
 }
@@ -127,9 +123,6 @@ css::uno::Reference< css::bridge::XBridge > BridgeFactory::createBridge(
     css::uno::Reference< css::connection::XConnection > const & aConnection,
     css::uno::Reference< css::bridge::XInstanceProvider > const &
         anInstanceProvider)
-    throw (
-        css::bridge::BridgeExistsException, css::lang::IllegalArgumentException,
-        css::uno::RuntimeException)
 {
     rtl::Reference< Bridge > b;
     {
@@ -161,7 +154,7 @@ css::uno::Reference< css::bridge::XBridge > BridgeFactory::createBridge(
 }
 
 css::uno::Reference< css::bridge::XBridge > BridgeFactory::getBridge(
-    rtl::OUString const & sName) throw (css::uno::RuntimeException)
+    rtl::OUString const & sName)
 {
     osl::MutexGuard g(*this);
     BridgeMap::iterator i(named_.find(sName));
@@ -170,7 +163,7 @@ css::uno::Reference< css::bridge::XBridge > BridgeFactory::getBridge(
 }
 
 css::uno::Sequence< css::uno::Reference< css::bridge::XBridge > >
-BridgeFactory::getExistingBridges() throw (css::uno::RuntimeException) {
+BridgeFactory::getExistingBridges() {
     osl::MutexGuard g(*this);
     if (unnamed_.size() > SAL_MAX_INT32) {
         throw css::uno::RuntimeException(

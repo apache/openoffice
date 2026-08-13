@@ -96,7 +96,7 @@ public:
 	// XLoader
 	virtual void SAL_CALL load(	const Reference< XFrame > & _rFrame, const ::rtl::OUString& _rURL,
 								const Sequence< PropertyValue >& _rArgs,
-								const Reference< XLoadEventListener > & _rListener) throw(::com::sun::star::uno::RuntimeException);
+								const Reference< XLoadEventListener > & _rListener);
 	virtual void SAL_CALL cancel(void) throw();
 };
 DBG_NAME(DBContentLoader)
@@ -181,7 +181,7 @@ extern "C" void SAL_CALL writeDBLoaderInfo(void* pRegistryKey)
 // -----------------------------------------------------------------------
 void SAL_CALL DBContentLoader::load(const Reference< XFrame > & rFrame, const ::rtl::OUString& rURL,
 		const Sequence< PropertyValue >& rArgs,
-		const Reference< XLoadEventListener > & rListener) throw(::com::sun::star::uno::RuntimeException)
+		const Reference< XLoadEventListener > & rListener)
 {
 	m_xFrame	= rFrame;
 	m_xListener = rListener;

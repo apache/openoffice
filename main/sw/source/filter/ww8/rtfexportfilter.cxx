@@ -48,7 +48,6 @@ RtfExportFilter::~RtfExportFilter()
 }
 
 sal_Bool RtfExportFilter::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor )
-    throw (uno::RuntimeException)
 {
     OSL_TRACE("%s", OSL_THIS_FUNC);
 
@@ -98,12 +97,11 @@ sal_Bool RtfExportFilter::filter( const uno::Sequence< beans::PropertyValue >& a
 }
 
 
-void RtfExportFilter::cancel(  ) throw (uno::RuntimeException)
+void RtfExportFilter::cancel(  )
 {
 }
 
 void RtfExportFilter::setSourceDocument( const uno::Reference< lang::XComponent >& xDoc )
-    throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     m_xSrcDoc = xDoc;
 }
@@ -124,7 +122,7 @@ uno::Sequence< OUString > SAL_CALL RtfExport_getSupportedServiceNames() throw()
     return aSeq;
 }
 
-uno::Reference< uno::XInterface > SAL_CALL RtfExport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+uno::Reference< uno::XInterface > SAL_CALL RtfExport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
     return (cppu::OWeakObject*) new RtfExportFilter( rSMgr );
 }

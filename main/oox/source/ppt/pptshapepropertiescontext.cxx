@@ -55,7 +55,6 @@ PPTShapePropertiesContext::PPTShapePropertiesContext( ContextHandler& rParent, :
 }
 
 Reference< XFastContextHandler > PPTShapePropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
-	throw (SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 

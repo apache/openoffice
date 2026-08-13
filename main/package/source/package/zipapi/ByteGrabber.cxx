@@ -55,7 +55,6 @@ void ByteGrabber::setInputStream (uno::Reference < io::XInputStream > xNewStream
 // XInputStream chained
 sal_Int32 SAL_CALL ByteGrabber::readBytes( uno::Sequence< sal_Int8 >& aData,
 										sal_Int32 nBytesToRead )
-	throw(io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	return xStream->readBytes(aData, nBytesToRead );
@@ -63,7 +62,6 @@ sal_Int32 SAL_CALL ByteGrabber::readBytes( uno::Sequence< sal_Int8 >& aData,
 
 // XSeekable chained...
 sal_Int64 SAL_CALL ByteGrabber::seek( sal_Int64 location )
-	throw(lang::IllegalArgumentException, io::IOException, uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	if (xSeek.is() )
@@ -81,7 +79,6 @@ sal_Int64 SAL_CALL ByteGrabber::seek( sal_Int64 location )
 }
 
 sal_Int64 SAL_CALL ByteGrabber::getPosition(  )
-		throw(io::IOException, uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	if (xSeek.is() )
@@ -91,7 +88,6 @@ sal_Int64 SAL_CALL ByteGrabber::getPosition(  )
 }
 
 sal_Int64 SAL_CALL ByteGrabber::getLength(  )
-		throw(io::IOException, uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	if (xSeek.is() )

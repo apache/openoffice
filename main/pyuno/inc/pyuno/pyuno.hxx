@@ -190,7 +190,7 @@ public:
         @throw RuntimeException in case the runtime has not been
                initialized before
      */
-    Runtime() throw( com::sun::star::uno::RuntimeException );
+    Runtime();
 
     Runtime( const Runtime & );
     Runtime & operator = ( const Runtime & );
@@ -208,13 +208,12 @@ public:
                                 has not been initialized.
     */
     static void SAL_CALL initialize(
-        const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > & ctx )
-        throw ( com::sun::star::uno::RuntimeException );
+        const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > & ctx );
 
 
     /** Checks, whether the uno runtime is already initialized in the current python interpreter.
      */
-    static bool SAL_CALL isInitialized() throw (com::sun::star::uno::RuntimeException);
+    static bool SAL_CALL isInitialized();
 
 
     /** disposes the UNO bridge in this interpreter. All existing stubs/proxies
@@ -224,7 +223,7 @@ public:
         the global interpreter lock is held and pyuno was
         initialized before for the currently in use interpreter.
     */
-    static void SAL_CALL finalize() throw(com::sun::star::uno::RuntimeException );
+    static void SAL_CALL finalize();
 
     /** converts something contained in an UNO Any to a Python object
 
@@ -232,10 +231,7 @@ public:
         the global interpreter lock is held and pyuno::Runtime
         has been initialized.
     */
-    PyRef any2PyObject (const com::sun::star::uno::Any &source ) const
-        throw ( com::sun::star::script::CannotConvertException,
-                com::sun::star::lang::IllegalArgumentException,
-                com::sun::star::uno::RuntimeException );
+    PyRef any2PyObject (const com::sun::star::uno::Any &source ) const;
 
     /** converts a Python object to a UNO any
 
@@ -244,8 +240,7 @@ public:
         has been initialized
     */
     com::sun::star::uno::Any pyObject2Any (
-        const PyRef & source , enum ConversionMode mode = REJECT_UNO_ANY ) const
-        throw ( com::sun::star::uno::RuntimeException);
+        const PyRef & source , enum ConversionMode mode = REJECT_UNO_ANY ) const;
 
     /** extracts a proper uno exception from a given python exception
      */
@@ -297,7 +292,7 @@ public:
         @raises com::sun::star::uno::RuntimeException
              in case no pythread state could be created
      */
-    PyThreadAttach( PyInterpreterState *interp) throw ( com::sun::star::uno::RuntimeException );
+    PyThreadAttach( PyInterpreterState *interp);
 
 
     /** Releases the global interpreter lock and destroys the thread state.
@@ -322,7 +317,7 @@ public:
        precondition: The current thread MUST hold the global interpreter lock.
        postcondition: The current thread does not hold the global interpreter lock anymore.
     */
-    PyThreadDetach() throw ( com::sun::star::uno::RuntimeException );
+    PyThreadDetach();
     /** Acquires the global interpreter lock again
     */
     ~PyThreadDetach();

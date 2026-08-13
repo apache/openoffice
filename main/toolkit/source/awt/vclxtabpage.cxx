@@ -58,7 +58,7 @@ VCLXTabPage::~VCLXTabPage()
 {
 }
 
-void SAL_CALL VCLXTabPage::dispose() throw(uno::RuntimeException)
+void SAL_CALL VCLXTabPage::dispose()
 {
     {
         ::vos::OGuard aGuard( GetMutex() );
@@ -71,7 +71,6 @@ void SAL_CALL VCLXTabPage::dispose() throw(uno::RuntimeException)
 }
 
 void SAL_CALL VCLXTabPage::allocateArea( awt::Rectangle const& area )
-    throw (uno::RuntimeException)
 {
     awt::Size currentSize = getSize();
     awt::Size requestedSize = getMinimumSize();
@@ -142,7 +141,6 @@ void SAL_CALL VCLXTabPage::allocateArea( awt::Rectangle const& area )
 }
 
 awt::Size SAL_CALL VCLXTabPage::getMinimumSize()
-    throw(uno::RuntimeException)
 {
     ::vos::OGuard aGuard( GetMutex() );
 

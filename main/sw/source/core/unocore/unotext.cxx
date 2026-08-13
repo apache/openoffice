@@ -107,16 +107,13 @@ public:
         finishOrAppendParagraph(
             const bool bFinish,
             const uno::Sequence< beans::PropertyValue >&
-                rCharacterAndParagraphProperties)
-        throw (lang::IllegalArgumentException, uno::RuntimeException);
+                rCharacterAndParagraphProperties);
 
     sal_Int16 ComparePositions(
             const uno::Reference<text::XTextRange>& xPos1,
-            const uno::Reference<text::XTextRange>& xPos2)
-        throw (lang::IllegalArgumentException, uno::RuntimeException);
+            const uno::Reference<text::XTextRange>& xPos2);
 
-    bool CheckForOwnMember(const SwPaM & rPaM)
-        throw (lang::IllegalArgumentException, uno::RuntimeException);
+    bool CheckForOwnMember(const SwPaM & rPaM);
 
     void ConvertCell(
             const bool bFirstCell,
@@ -179,7 +176,6 @@ SwXText::PrepareForAttach(uno::Reference< text::XTextRange > &, const SwPaM &)
 }
 
 bool SwXText::CheckForOwnMemberMeta(const SwPaM &, const bool)
-    throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     ASSERT(CURSOR_META != m_pImpl->m_eType, "should not be called!");
     return false;
@@ -191,7 +187,7 @@ const SwStartNode *SwXText::GetStartNode() const
 }
 
 uno::Reference< text::XTextCursor >
-SwXText::CreateCursor() throw (uno::RuntimeException)
+SwXText::CreateCursor()
 {
 	uno::Reference< text::XTextCursor >  xRet;
 	if(IsValid())
@@ -209,7 +205,7 @@ SwXText::CreateCursor() throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 uno::Any SAL_CALL
-SwXText::queryInterface(const uno::Type& rType) throw (uno::RuntimeException)
+SwXText::queryInterface(const uno::Type& rType)
 {
 	uno::Any aRet;
     if (rType == text::XText::static_type())
@@ -282,7 +278,7 @@ SwXText::queryInterface(const uno::Type& rType) throw (uno::RuntimeException)
 
  ---------------------------------------------------------------------------*/
 uno::Sequence< uno::Type > SAL_CALL
-SwXText::getTypes() throw (uno::RuntimeException)
+SwXText::getTypes()
 {
     uno::Sequence< uno::Type > aRet(12);
     uno::Type* pTypes = aRet.getArray();
@@ -306,7 +302,6 @@ SwXText::getTypes() throw (uno::RuntimeException)
 void SAL_CALL
 SwXText::insertString(const uno::Reference< text::XTextRange >& xTextRange,
     const OUString& rString, sal_Bool bAbsorb)
-throw (uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -414,7 +409,6 @@ void SAL_CALL
 SwXText::insertControlCharacter(
         const uno::Reference< text::XTextRange > & xTextRange,
         sal_Int16 nControlCharacter, sal_Bool bAbsorb)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -531,7 +525,6 @@ SwXText::insertTextContent(
         const uno::Reference< text::XTextRange > & xRange,
         const uno::Reference< text::XTextContent > & xContent,
         sal_Bool bAbsorb)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -654,7 +647,6 @@ void SAL_CALL
 SwXText::insertTextContentBefore(
 	const uno::Reference< text::XTextContent>& xNewContent,
 	const uno::Reference< text::XTextContent>& xSuccessor)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -718,7 +710,6 @@ void SAL_CALL
 SwXText::insertTextContentAfter(
 	const uno::Reference< text::XTextContent>& xNewContent,
 	const uno::Reference< text::XTextContent>& xPredecessor)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -778,7 +769,6 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
 void SAL_CALL
 SwXText::removeTextContentBefore(
 	const uno::Reference< text::XTextContent>& xSuccessor)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -834,7 +824,6 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
 void SAL_CALL
 SwXText::removeTextContentAfter(
         const uno::Reference< text::XTextContent>& xPredecessor)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -891,7 +880,6 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
 void SAL_CALL
 SwXText::removeTextContent(
         const uno::Reference< text::XTextContent > & xContent)
-throw (container::NoSuchElementException, uno::RuntimeException)
 {
     // forward: need no solar mutex here
 	if(!xContent.is())
@@ -907,7 +895,7 @@ throw (container::NoSuchElementException, uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 uno::Reference< text::XText > SAL_CALL
-SwXText::getText() throw (uno::RuntimeException)
+SwXText::getText()
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -919,7 +907,7 @@ SwXText::getText() throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 uno::Reference< text::XTextRange > SAL_CALL
-SwXText::getStart() throw (uno::RuntimeException)
+SwXText::getStart()
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -938,7 +926,7 @@ SwXText::getStart() throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 uno::Reference< text::XTextRange > SAL_CALL
-SwXText::getEnd() throw (uno::RuntimeException)
+SwXText::getEnd()
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -957,7 +945,7 @@ SwXText::getEnd() throw (uno::RuntimeException)
 /*-- 09.12.98 12:43:29---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-OUString SAL_CALL SwXText::getString() throw (uno::RuntimeException)
+OUString SAL_CALL SwXText::getString()
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -975,7 +963,7 @@ OUString SAL_CALL SwXText::getString() throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 void SAL_CALL
-SwXText::setString(const OUString& rString) throw (uno::RuntimeException)
+SwXText::setString(const OUString& rString)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -1045,7 +1033,6 @@ SwXText::setString(const OUString& rString) throw (uno::RuntimeException)
 //				Only one of the pointers has to be set!
 bool SwXText::Impl::CheckForOwnMember(
     const SwPaM & rPaM)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     const uno::Reference<text::XTextCursor> xOwnCursor(m_rThis.CreateCursor());
 
@@ -1093,7 +1080,6 @@ sal_Int16
 SwXText::Impl::ComparePositions(
     const uno::Reference<text::XTextRange>& xPos1,
     const uno::Reference<text::XTextRange>& xPos2)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     SwUnoInternalPaM aPam1(*m_pDoc);
     SwUnoInternalPaM aPam2(*m_pDoc);
@@ -1136,7 +1122,6 @@ sal_Int16 SAL_CALL
 SwXText::compareRegionStarts(
     const uno::Reference<text::XTextRange>& xRange1,
     const uno::Reference<text::XTextRange>& xRange2)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -1156,7 +1141,6 @@ sal_Int16 SAL_CALL
 SwXText::compareRegionEnds(
 	const uno::Reference<text::XTextRange>& xRange1,
 	const uno::Reference<text::XTextRange>& xRange2)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -1174,7 +1158,7 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 uno::Reference< beans::XPropertySetInfo > SAL_CALL
-SwXText::getPropertySetInfo() throw(uno::RuntimeException)
+SwXText::getPropertySetInfo()
 {
     vos::OGuard g(Application::GetSolarMutex());
 
@@ -1189,9 +1173,6 @@ SwXText::getPropertySetInfo() throw(uno::RuntimeException)
 void SAL_CALL
 SwXText::setPropertyValue(const ::rtl::OUString& /*aPropertyName*/,
         const uno::Any& /*aValue*/)
-throw (beans::UnknownPropertyException, beans::PropertyVetoException,
-    lang::IllegalArgumentException, lang::WrappedTargetException,
-    uno::RuntimeException)
 {
     throw lang::IllegalArgumentException();
 }
@@ -1201,8 +1182,6 @@ throw (beans::UnknownPropertyException, beans::PropertyVetoException,
 uno::Any SAL_CALL
 SwXText::getPropertyValue(
     const ::rtl::OUString& rPropertyName)
-throw (beans::UnknownPropertyException, lang::WrappedTargetException,
-        uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -1261,8 +1240,6 @@ void SAL_CALL
 SwXText::addPropertyChangeListener(
         const ::rtl::OUString& /*rPropertyName*/,
         const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/)
-throw (beans::UnknownPropertyException, lang::WrappedTargetException,
-    uno::RuntimeException)
 {
     OSL_ENSURE(false,
         "SwXText::addPropertyChangeListener(): not implemented");
@@ -1274,8 +1251,6 @@ void SAL_CALL
 SwXText::removePropertyChangeListener(
         const ::rtl::OUString& /*rPropertyName*/,
         const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/)
-throw (beans::UnknownPropertyException, lang::WrappedTargetException,
-    uno::RuntimeException)
 {
     OSL_ENSURE(false,
         "SwXText::removePropertyChangeListener(): not implemented");
@@ -1287,8 +1262,6 @@ void SAL_CALL
 SwXText::addVetoableChangeListener(
         const ::rtl::OUString& /*rPropertyName*/,
         const uno::Reference< beans::XVetoableChangeListener >& /*xListener*/)
-throw (beans::UnknownPropertyException, lang::WrappedTargetException,
-    uno::RuntimeException)
 {
     OSL_ENSURE(false,
         "SwXText::addVetoableChangeListener(): not implemented");
@@ -1300,8 +1273,6 @@ void SAL_CALL
 SwXText::removeVetoableChangeListener(
         const ::rtl::OUString& /*rPropertyName*/,
         const uno::Reference< beans::XVetoableChangeListener >& /*xListener*/)
-throw (beans::UnknownPropertyException, lang::WrappedTargetException,
-        uno::RuntimeException)
 {
     OSL_ENSURE(false,
         "SwXText::removeVetoableChangeListener(): not implemented");
@@ -1320,7 +1291,6 @@ const uno::Sequence< sal_Int8 > & SwXText::getUnoTunnelId()
  ---------------------------------------------------------------------------*/
 sal_Int64 SAL_CALL
 SwXText::getSomething(const uno::Sequence< sal_Int8 >& rId)
-throw (uno::RuntimeException)
 {
     return ::sw::UnoTunnelImpl<SwXText>(rId, this);
 }
@@ -1331,7 +1301,6 @@ throw (uno::RuntimeException)
 uno::Reference< text::XTextRange > SAL_CALL
 SwXText::appendParagraph(
         const uno::Sequence< beans::PropertyValue > & rProperties)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     vos::OGuard g(Application::GetSolarMutex());
 
@@ -1343,7 +1312,6 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
 uno::Reference< text::XTextRange > SAL_CALL
 SwXText::finishParagraph(
         const uno::Sequence< beans::PropertyValue > & rProperties)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     vos::OGuard g(Application::GetSolarMutex());
 
@@ -1357,7 +1325,6 @@ uno::Reference< text::XTextRange >
 SwXText::Impl::finishOrAppendParagraph(
         const bool bFinish,
         const uno::Sequence< beans::PropertyValue > & rProperties)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     if (!m_bIsValid)
     {
@@ -1463,7 +1430,6 @@ SwXText::appendTextPortion(
         const ::rtl::OUString& rText,
         const uno::Sequence< beans::PropertyValue > &
             rCharacterAndParagraphProperties)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -1568,7 +1534,6 @@ SwXText::appendTextContent(
     const uno::Reference< text::XTextContent >& xTextContent,
     const uno::Sequence< beans::PropertyValue >&
         rCharacterAndParagraphProperties)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -1629,7 +1594,6 @@ SwXText::convertToTextFrame(
     const uno::Reference< text::XTextRange >& xStart,
     const uno::Reference< text::XTextRange >& xEnd,
     const uno::Sequence< beans::PropertyValue >& rFrameProperties)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2245,7 +2209,6 @@ SwXText::convertToTable(
     const uno::Sequence< uno::Sequence< beans::PropertyValue > >&
         rRowProperties,
     const uno::Sequence< beans::PropertyValue >& rTableProperties)
-throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2374,7 +2337,6 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
 void SAL_CALL
 SwXText::copyText(
     const uno::Reference< text::XTextCopy >& xSource )
-throw (uno::RuntimeException)
 {
     vos::OGuard g(Application::GetSolarMutex());
 
@@ -2418,7 +2380,7 @@ SwXBodyText::~SwXBodyText()
 
  ---------------------------------------------------------------------------*/
 OUString SAL_CALL
-SwXBodyText::getImplementationName() throw (uno::RuntimeException)
+SwXBodyText::getImplementationName()
 {
 	return C2U("SwXBodyText");
 }
@@ -2433,14 +2395,13 @@ static const size_t g_nServicesBodyText(
     sizeof(g_ServicesBodyText)/sizeof(g_ServicesBodyText[0]));
 
 sal_Bool SAL_CALL SwXBodyText::supportsService(const OUString& rServiceName)
-throw (uno::RuntimeException)
 {
     return ::sw::SupportsServiceImpl(
             g_nServicesBodyText, g_ServicesBodyText, rServiceName);
 }
 
 uno::Sequence< OUString > SAL_CALL
-SwXBodyText::getSupportedServiceNames() throw (uno::RuntimeException)
+SwXBodyText::getSupportedServiceNames()
 {
     return ::sw::GetSupportedServiceNamesImpl(
             g_nServicesBodyText, g_ServicesBodyText);
@@ -2451,7 +2412,6 @@ SwXBodyText::getSupportedServiceNames() throw (uno::RuntimeException)
   -----------------------------------------------------------------------*/
 uno::Any SAL_CALL
 SwXBodyText::queryAggregation(const uno::Type& rType)
-throw (uno::RuntimeException)
 {
 	uno::Any aRet;
     if (rType == container::XEnumerationAccess::static_type())
@@ -2481,7 +2441,7 @@ throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 uno::Sequence< uno::Type > SAL_CALL
-SwXBodyText::getTypes() throw (uno::RuntimeException)
+SwXBodyText::getTypes()
 {
     const uno::Sequence< uno::Type > aTypes = SwXBodyText_Base::getTypes();
     const uno::Sequence< uno::Type > aTextTypes = SwXText::getTypes();
@@ -2491,7 +2451,7 @@ SwXBodyText::getTypes() throw (uno::RuntimeException)
 
  ---------------------------------------------------------------------------*/
 uno::Sequence< sal_Int8 > SAL_CALL
-SwXBodyText::getImplementationId() throw (uno::RuntimeException)
+SwXBodyText::getImplementationId()
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static uno::Sequence< sal_Int8 > aId( 16 );
@@ -2508,7 +2468,6 @@ SwXBodyText::getImplementationId() throw (uno::RuntimeException)
   -----------------------------------------------------------------------*/
 uno::Any SAL_CALL
 SwXBodyText::queryInterface(const uno::Type& rType)
-throw (uno::RuntimeException)
 {
     const uno::Any ret = SwXText::queryInterface(rType);
     return (ret.getValueType() == ::getCppuVoidType())
@@ -2550,7 +2509,7 @@ SwXTextCursor * SwXBodyText::CreateTextCursor(const bool bIgnoreTables)
 
   -----------------------------------------------------------------------*/
 uno::Reference< text::XTextCursor > SAL_CALL
-SwXBodyText::createTextCursor() throw (uno::RuntimeException)
+SwXBodyText::createTextCursor()
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2570,7 +2529,6 @@ SwXBodyText::createTextCursor() throw (uno::RuntimeException)
 uno::Reference< text::XTextCursor > SAL_CALL
 SwXBodyText::createTextCursorByRange(
     const uno::Reference< text::XTextRange > & xTextPosition)
-throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2614,7 +2572,6 @@ throw (uno::RuntimeException)
   -----------------------------------------------------------------------*/
 uno::Reference< container::XEnumeration > SAL_CALL
 SwXBodyText::createEnumeration()
-throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2639,7 +2596,7 @@ throw (uno::RuntimeException)
  *
  * --------------------------------------------------*/
 uno::Type SAL_CALL
-SwXBodyText::getElementType() throw (uno::RuntimeException)
+SwXBodyText::getElementType()
 {
     return text::XTextRange::static_type();
 }
@@ -2647,7 +2604,7 @@ SwXBodyText::getElementType() throw (uno::RuntimeException)
  *
  * --------------------------------------------------*/
 sal_Bool SAL_CALL
-SwXBodyText::hasElements() throw (uno::RuntimeException)
+SwXBodyText::hasElements()
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2751,7 +2708,7 @@ SwXHeadFootText::~SwXHeadFootText()
 
  ---------------------------------------------------------------------------*/
 OUString SAL_CALL
-SwXHeadFootText::getImplementationName() throw (uno::RuntimeException)
+SwXHeadFootText::getImplementationName()
 {
 	return C2U("SwXHeadFootText");
 }
@@ -2767,14 +2724,13 @@ static const size_t g_nServicesHeadFootText(
     sizeof(g_ServicesHeadFootText)/sizeof(g_ServicesHeadFootText[0]));
 
 sal_Bool SAL_CALL SwXHeadFootText::supportsService(const OUString& rServiceName)
-throw (uno::RuntimeException)
 {
     return ::sw::SupportsServiceImpl(
             g_nServicesHeadFootText, g_ServicesHeadFootText, rServiceName);
 }
 
 uno::Sequence< OUString > SAL_CALL
-SwXHeadFootText::getSupportedServiceNames() throw (uno::RuntimeException)
+SwXHeadFootText::getSupportedServiceNames()
 {
     return ::sw::GetSupportedServiceNamesImpl(
             g_nServicesHeadFootText, g_ServicesHeadFootText);
@@ -2799,7 +2755,7 @@ const SwStartNode *SwXHeadFootText::GetStartNode() const
 }
 
 uno::Reference< text::XTextCursor >
-SwXHeadFootText::CreateCursor() throw (uno::RuntimeException)
+SwXHeadFootText::CreateCursor()
 {
 	return createTextCursor();
 }
@@ -2807,7 +2763,7 @@ SwXHeadFootText::CreateCursor() throw (uno::RuntimeException)
 
  ---------------------------------------------------------------------------*/
 uno::Sequence< uno::Type > SAL_CALL
-SwXHeadFootText::getTypes() throw (uno::RuntimeException)
+SwXHeadFootText::getTypes()
 {
     const uno::Sequence< uno::Type > aTypes = SwXHeadFootText_Base::getTypes();
     const uno::Sequence< uno::Type > aTextTypes = SwXText::getTypes();
@@ -2818,7 +2774,7 @@ SwXHeadFootText::getTypes() throw (uno::RuntimeException)
 
  ---------------------------------------------------------------------------*/
 uno::Sequence< sal_Int8 > SAL_CALL
-SwXHeadFootText::getImplementationId() throw (uno::RuntimeException)
+SwXHeadFootText::getImplementationId()
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static uno::Sequence< sal_Int8 > aId( 16 );
@@ -2835,7 +2791,6 @@ SwXHeadFootText::getImplementationId() throw (uno::RuntimeException)
  ---------------------------------------------------------------------------*/
 uno::Any SAL_CALL
 SwXHeadFootText::queryInterface(const uno::Type& rType)
-throw (uno::RuntimeException)
 {
     const uno::Any ret = SwXHeadFootText_Base::queryInterface(rType);
     return (ret.getValueType() == ::getCppuVoidType())
@@ -2847,7 +2802,7 @@ throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 uno::Reference< text::XTextCursor > SAL_CALL
-SwXHeadFootText::createTextCursor() throw (uno::RuntimeException)
+SwXHeadFootText::createTextCursor()
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2898,7 +2853,6 @@ SwXHeadFootText::createTextCursor() throw (uno::RuntimeException)
 uno::Reference< text::XTextCursor > SAL_CALL
 SwXHeadFootText::createTextCursorByRange(
     const uno::Reference< text::XTextRange > & xTextPosition)
-throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2936,7 +2890,6 @@ throw (uno::RuntimeException)
  * --------------------------------------------------*/
 uno::Reference< container::XEnumeration > SAL_CALL
 SwXHeadFootText::createEnumeration()
-throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2959,14 +2912,14 @@ throw (uno::RuntimeException)
  *
  * --------------------------------------------------*/
 uno::Type SAL_CALL
-SwXHeadFootText::getElementType() throw (uno::RuntimeException)
+SwXHeadFootText::getElementType()
 {
     return text::XTextRange::static_type();
 }
 /* -----------------19.03.99 15:50-------------------
  *
  * --------------------------------------------------*/
-sal_Bool SAL_CALL SwXHeadFootText::hasElements() throw (uno::RuntimeException)
+sal_Bool SAL_CALL SwXHeadFootText::hasElements()
 {
 	return sal_True;
 }

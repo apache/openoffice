@@ -219,14 +219,12 @@ Reference<deploy::XPackageManager>  ExtensionManager::getBakRepository()
 }
 
 Reference<task::XAbortChannel> ExtensionManager::createAbortChannel()
-    throw (uno::RuntimeException)
 {
     return new dp_misc::AbortChannel;
 }
 
 css::uno::Reference<css::deployment::XPackageManager>
 ExtensionManager::getPackageManager(::rtl::OUString const & repository)
-    throw (css::lang::IllegalArgumentException)
 {
     Reference<deploy::XPackageManager> xPackageManager;
     if (repository.equals(OUSTR("user")))
@@ -375,11 +373,6 @@ ExtensionManager::getExtensionsWithSameIdentifier(
         OUString const & identifier,
         OUString const & fileName,
         Reference< ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (
-            deploy::DeploymentException,
-            ucb::CommandFailedException,
-            lang::IllegalArgumentException,
-            uno::RuntimeException)
 {
     try
     {
@@ -583,7 +576,6 @@ Reference<deploy::XPackage> ExtensionManager::backupExtension(
 //call to one of the repositories.
 uno::Sequence< Reference<deploy::XPackageTypeInfo> >
 ExtensionManager::getSupportedPackageTypes()
-    throw (uno::RuntimeException)
 {
     return getUserRepository()->getSupportedPackageTypes();
 }
@@ -599,11 +591,6 @@ bool ExtensionManager::doChecksForAddExtension(
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv,
     Reference<deploy::XPackage> & out_existingExtension )
-    throw (deploy::DeploymentException,
-           ucb::CommandFailedException,
-           ucb::CommandAbortedException,
-           lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     try
     {
@@ -695,11 +682,6 @@ Reference<deploy::XPackage> ExtensionManager::addExtension(
     OUString const & repository,
         Reference<task::XAbortChannel> const & xAbortChannel,
         Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (deploy::DeploymentException,
-               ucb::CommandFailedException,
-               ucb::CommandAbortedException,
-               lang::IllegalArgumentException,
-               uno::RuntimeException)
 {
     Reference<deploy::XPackage> xNewExtension;
     //Determine the repository to use
@@ -888,11 +870,6 @@ void ExtensionManager::removeExtension(
     OUString const & repository,
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-           ucb::CommandFailedException,
-           ucb::CommandAbortedException,
-           lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     uno::Any excOccurred1;
     Reference<deploy::XPackage> xExtensionBackup;
@@ -988,11 +965,6 @@ void ExtensionManager::enableExtension(
     Reference<deploy::XPackage> const & extension,
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv)
-    throw (deploy::DeploymentException,
-        ucb::CommandFailedException,
-        ucb::CommandAbortedException,
-        lang::IllegalArgumentException,
-        uno::RuntimeException)
 {
     ::osl::MutexGuard guard(getMutex());
     bool bUserDisabled = false;
@@ -1053,11 +1025,6 @@ sal_Int32 ExtensionManager::checkPrerequisitesAndEnable(
     Reference<deploy::XPackage> const & extension,
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv)
-    throw (deploy::DeploymentException,
-        ucb::CommandFailedException,
-        ucb::CommandAbortedException,
-        lang::IllegalArgumentException,
-        uno::RuntimeException)
 {
     try
     {
@@ -1103,11 +1070,6 @@ void ExtensionManager::disableExtension(
     Reference<deploy::XPackage> const & extension,
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-           ucb::CommandFailedException,
-           ucb::CommandAbortedException,
-           lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     ::osl::MutexGuard guard(getMutex());
     uno::Any excOccurred;
@@ -1166,11 +1128,6 @@ uno::Sequence< Reference<deploy::XPackage> >
     OUString const & repository,
     Reference<task::XAbortChannel> const &xAbort,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-        ucb::CommandFailedException,
-        ucb::CommandAbortedException,
-        lang::IllegalArgumentException,
-        uno::RuntimeException)
 {
     return getPackageManager(repository)->getDeployedPackages(
         xAbort, xCmdEnv);
@@ -1182,10 +1139,6 @@ Reference<deploy::XPackage>
     OUString const & identifier,
     OUString const & filename,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-        ucb::CommandFailedException,
-        lang::IllegalArgumentException,
-        uno::RuntimeException)
 {
     return getPackageManager(repository)->getDeployedPackage(
         identifier, filename, xCmdEnv);
@@ -1195,11 +1148,6 @@ uno::Sequence< uno::Sequence<Reference<deploy::XPackage> > >
     ExtensionManager::getAllExtensions(
     Reference<task::XAbortChannel> const & xAbort,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-        ucb::CommandFailedException,
-        ucb::CommandAbortedException,
-        lang::IllegalArgumentException,
-        uno::RuntimeException)
 {
     try
     {
@@ -1262,9 +1210,6 @@ void ExtensionManager::reinstallDeployedExtensions(
     OUString const & repository,
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-        ucb::CommandFailedException, ucb::CommandAbortedException,
-        lang::IllegalArgumentException, uno::RuntimeException)
 {
     try
     {
@@ -1316,8 +1261,6 @@ void ExtensionManager::reinstallDeployedExtensions(
 void ExtensionManager::synchronizeBundledPrereg(
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-           uno::RuntimeException)
 {
     try
     {
@@ -1371,11 +1314,6 @@ void ExtensionManager::synchronizeBundledPrereg(
 sal_Bool ExtensionManager::synchronize(
     Reference<task::XAbortChannel> const & xAbortChannel,
     Reference<ucb::XCommandEnvironment> const & xCmdEnv )
-    throw (deploy::DeploymentException,
-           ucb::CommandFailedException,
-           ucb::CommandAbortedException,
-           lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     try
     {
@@ -1534,8 +1472,6 @@ uno::Sequence<Reference<deploy::XPackage> > SAL_CALL
 ExtensionManager::getExtensionsWithUnacceptedLicenses(
         OUString const & repository,
         Reference<ucb::XCommandEnvironment> const & xCmdEnv)
-        throw (deploy::DeploymentException,
-               uno::RuntimeException)
 {
     Reference<deploy::XPackageManager>
         xPackageManager = getPackageManager(repository);
@@ -1544,7 +1480,6 @@ ExtensionManager::getExtensionsWithUnacceptedLicenses(
 }
 
 sal_Bool ExtensionManager::isReadOnlyRepository(::rtl::OUString const & repository)
-        throw (uno::RuntimeException)
 {
     return getPackageManager(repository)->isReadOnly();
 }
@@ -1586,7 +1521,6 @@ bool singleton_entries(
 //______________________________________________________________________________
 void ExtensionManager::addModifyListener(
     Reference<util::XModifyListener> const & xListener )
-    throw (uno::RuntimeException)
 {
      check();
      rBHelper.addListener( ::getCppuType( &xListener ), xListener );
@@ -1595,7 +1529,6 @@ void ExtensionManager::addModifyListener(
 //______________________________________________________________________________
 void ExtensionManager::removeModifyListener(
     Reference<util::XModifyListener> const & xListener )
-    throw (uno::RuntimeException)
 {
     check();
     rBHelper.removeListener( ::getCppuType( &xListener ), xListener );

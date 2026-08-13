@@ -49,25 +49,13 @@ public:
 
 protected:
     // ____ XLayoutContainer ____
-    virtual void SAL_CALL addConstrainedElementByIdentifier( const ::rtl::OUString& aIdentifier, const ::com::sun::star::layout::Constraint& Constraint )
-        throw (::com::sun::star::layout::IllegalConstraintException,
-               ::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addElementByIdentifier( const ::rtl::OUString& aIdentifier )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeElementByIdentifier( const ::rtl::OUString& aIdentifier )
-        throw (::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setConstraintByIdentifier( const ::rtl::OUString& aIdentifier, const ::com::sun::star::layout::Constraint& Constraint )
-        throw (::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::layout::Constraint SAL_CALL getConstraintByIdentifier( const ::rtl::OUString& aIdentifier )
-        throw (::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addConstrainedElementByIdentifier( const ::rtl::OUString& aIdentifier, const ::com::sun::star::layout::Constraint& Constraint );
+    virtual void SAL_CALL addElementByIdentifier( const ::rtl::OUString& aIdentifier );
+    virtual void SAL_CALL removeElementByIdentifier( const ::rtl::OUString& aIdentifier );
+    virtual void SAL_CALL setConstraintByIdentifier( const ::rtl::OUString& aIdentifier, const ::com::sun::star::layout::Constraint& Constraint );
+    virtual ::com::sun::star::layout::Constraint SAL_CALL getConstraintByIdentifier( const ::rtl::OUString& aIdentifier );
     virtual ::com::sun::star::uno::Sequence<
-        ::rtl::OUString > SAL_CALL getElementIdentifiers()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString > SAL_CALL getElementIdentifiers();
 
 private:
     typedef ::std::vector< ::rtl::OUString > tLayoutElements;

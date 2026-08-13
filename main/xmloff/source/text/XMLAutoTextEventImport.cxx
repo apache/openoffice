@@ -67,7 +67,6 @@ XMLAutoTextEventImport::~XMLAutoTextEventImport() throw()
 
 void XMLAutoTextEventImport::initialize(
 	const Sequence<Any> & rArguments )
-		throw(Exception, RuntimeException)
 {
 	// The events may come as either an XNameReplace or XEventsSupplier.
 
@@ -131,7 +130,6 @@ OUString SAL_CALL XMLAutoTextEventImport_getImplementationName() throw()
 
 Reference< XInterface > SAL_CALL XMLAutoTextEventImport_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new XMLAutoTextEventImport;

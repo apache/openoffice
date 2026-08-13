@@ -46,7 +46,6 @@ void
 SAL_CALL exportLibraryContainer(
 	Reference< xml::sax::XExtendedDocumentHandler > const & xOut,
 	const LibDescriptorArray* pLibArray )
-		SAL_THROW( (Exception) )
 {
 	xOut->startDocument();
 
@@ -116,7 +115,6 @@ void
 SAL_CALL exportLibrary(
 	::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XExtendedDocumentHandler > const & xOut,
 	const LibDescriptor& rLib )
-		SAL_THROW( (::com::sun::star::uno::Exception) )
 {
 	xOut->startDocument();
 

@@ -108,7 +108,6 @@ void SAL_CALL OPreparedStatement::release()
 
 /* {{{ OPreparedStatement::queryInterface() -I- */
 Any SAL_CALL OPreparedStatement::queryInterface(const Type & rType)
-	throw(RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::queryInterface");
 	Any aRet = OCommonStatement::queryInterface(rType);
@@ -122,7 +121,6 @@ Any SAL_CALL OPreparedStatement::queryInterface(const Type & rType)
 
 /* {{{ OPreparedStatement::getPropertySetInfo() -I- */
 Sequence< Type > SAL_CALL OPreparedStatement::getTypes()
-	throw(RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::getTypes");
 	return concatSequences(OPreparedStatement_BASE::getTypes(), OCommonStatement::getTypes());
@@ -132,7 +130,6 @@ Sequence< Type > SAL_CALL OPreparedStatement::getTypes()
 
 /* {{{ OPreparedStatement::getMetaData() -I- */
 Reference< XResultSetMetaData > SAL_CALL OPreparedStatement::getMetaData()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::getMetaData");
 	MutexGuard aGuard(m_aMutex);
@@ -157,7 +154,6 @@ Reference< XResultSetMetaData > SAL_CALL OPreparedStatement::getMetaData()
 
 /* {{{ OPreparedStatement::close() -I- */
 void SAL_CALL OPreparedStatement::close()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::close");
 
@@ -180,7 +176,6 @@ void SAL_CALL OPreparedStatement::close()
 
 /* {{{ OPreparedStatement::execute() -I- */
 sal_Bool SAL_CALL OPreparedStatement::execute()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::execute");
 	MutexGuard aGuard(m_aMutex);
@@ -199,7 +194,6 @@ sal_Bool SAL_CALL OPreparedStatement::execute()
 
 /* {{{ OPreparedStatement::executeUpdate() -I- */
 sal_Int32 SAL_CALL OPreparedStatement::executeUpdate()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::executeUpdate");
 	MutexGuard aGuard(m_aMutex);
@@ -218,7 +212,6 @@ sal_Int32 SAL_CALL OPreparedStatement::executeUpdate()
 
 /* {{{ OPreparedStatement::getPropertySetInfo() -I- */
 void SAL_CALL OPreparedStatement::setString(sal_Int32 parameter, const OUString& x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setString");
 	MutexGuard aGuard(m_aMutex);
@@ -239,7 +232,6 @@ void SAL_CALL OPreparedStatement::setString(sal_Int32 parameter, const OUString&
 
 /* {{{ OPreparedStatement::getConnection() -I- */
 Reference< XConnection > SAL_CALL OPreparedStatement::getConnection()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::getConnection");
 	MutexGuard aGuard(m_aMutex);
@@ -250,26 +242,22 @@ Reference< XConnection > SAL_CALL OPreparedStatement::getConnection()
 /* }}} */
 
 Reference< XResultSet > SAL_CALL OPreparedStatement::executeQuery(const OUString& sql)
-    throw(SQLException, RuntimeException)
 {
     return OCommonStatement::executeQuery( sql );
 }
 
 sal_Int32 SAL_CALL OPreparedStatement::executeUpdate(const OUString& sql)
-    throw(SQLException, RuntimeException)
 {
     return OCommonStatement::executeUpdate( sql );
 }
 
 sal_Bool SAL_CALL OPreparedStatement::execute( const OUString& sql )
-    throw(SQLException, RuntimeException)
 {
     return OCommonStatement::execute( sql );
 }
 
 /* {{{ OPreparedStatement::executeQuery() -I- */
 Reference< XResultSet > SAL_CALL OPreparedStatement::executeQuery()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::executeQuery");
 	MutexGuard aGuard(m_aMutex);
@@ -289,7 +277,6 @@ Reference< XResultSet > SAL_CALL OPreparedStatement::executeQuery()
 
 /* {{{ OPreparedStatement::setBoolean() -I- */
 void SAL_CALL OPreparedStatement::setBoolean(sal_Int32 parameter, sal_Bool x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setBoolean");
 	MutexGuard aGuard(m_aMutex);
@@ -309,7 +296,6 @@ void SAL_CALL OPreparedStatement::setBoolean(sal_Int32 parameter, sal_Bool x)
 
 /* {{{ OPreparedStatement::setByte() -I- */
 void SAL_CALL OPreparedStatement::setByte(sal_Int32 parameter, sal_Int8 x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setByte");
 	MutexGuard aGuard(m_aMutex);
@@ -329,7 +315,6 @@ void SAL_CALL OPreparedStatement::setByte(sal_Int32 parameter, sal_Int8 x)
 
 /* {{{ OPreparedStatement::setDate() -I- */
 void SAL_CALL OPreparedStatement::setDate(sal_Int32 parameter, const Date& aData)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setDate");
 	MutexGuard aGuard(m_aMutex);
@@ -357,7 +342,6 @@ void SAL_CALL OPreparedStatement::setDate(sal_Int32 parameter, const Date& aData
 
 /* {{{ OPreparedStatement::setTime() -I- */
 void SAL_CALL OPreparedStatement::setTime(sal_Int32 parameter, const Time& aVal)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setTime");
 	MutexGuard aGuard(m_aMutex);
@@ -385,7 +369,6 @@ void SAL_CALL OPreparedStatement::setTime(sal_Int32 parameter, const Time& aVal)
 
 /* {{{ OPreparedStatement::setTimestamp() -I- */
 void SAL_CALL OPreparedStatement::setTimestamp(sal_Int32 parameter, const DateTime& aVal)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setTimestamp");
 	MutexGuard aGuard(m_aMutex);
@@ -421,7 +404,6 @@ void SAL_CALL OPreparedStatement::setTimestamp(sal_Int32 parameter, const DateTi
 
 /* {{{ OPreparedStatement::setDouble() -I- */
 void SAL_CALL OPreparedStatement::setDouble(sal_Int32 parameter, double x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setDouble");
 	MutexGuard aGuard(m_aMutex);
@@ -441,7 +423,6 @@ void SAL_CALL OPreparedStatement::setDouble(sal_Int32 parameter, double x)
 
 /* {{{ OPreparedStatement::setFloat() -I- */
 void SAL_CALL OPreparedStatement::setFloat(sal_Int32 parameter, float x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setFloat");
 	MutexGuard aGuard(m_aMutex);
@@ -461,7 +442,6 @@ void SAL_CALL OPreparedStatement::setFloat(sal_Int32 parameter, float x)
 
 /* {{{ OPreparedStatement::setInt() -I- */
 void SAL_CALL OPreparedStatement::setInt(sal_Int32 parameter, sal_Int32 x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setInt");
 	MutexGuard aGuard(m_aMutex);
@@ -481,7 +461,6 @@ void SAL_CALL OPreparedStatement::setInt(sal_Int32 parameter, sal_Int32 x)
 
 /* {{{ OPreparedStatement::setLong() -I- */
 void SAL_CALL OPreparedStatement::setLong(sal_Int32 parameter, sal_Int64 aVal)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setLong");
 	MutexGuard aGuard(m_aMutex);
@@ -501,7 +480,6 @@ void SAL_CALL OPreparedStatement::setLong(sal_Int32 parameter, sal_Int64 aVal)
 
 /* {{{ OPreparedStatement::setNull() -I- */
 void SAL_CALL OPreparedStatement::setNull(sal_Int32 parameter, sal_Int32 sqlType)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setNull");
 	MutexGuard aGuard(m_aMutex);
@@ -521,7 +499,6 @@ void SAL_CALL OPreparedStatement::setNull(sal_Int32 parameter, sal_Int32 sqlType
 
 /* {{{ OPreparedStatement::setClob() -U- */
 void SAL_CALL OPreparedStatement::setClob(sal_Int32 parameter, const Reference< XClob >& /* x */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setClob");
 	MutexGuard aGuard(m_aMutex);
@@ -535,7 +512,6 @@ void SAL_CALL OPreparedStatement::setClob(sal_Int32 parameter, const Reference< 
 
 /* {{{ OPreparedStatement::setBlob() -U- */
 void SAL_CALL OPreparedStatement::setBlob(sal_Int32 parameter, const Reference< XBlob >& /* x */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setBlob");
 	MutexGuard aGuard(m_aMutex);
@@ -549,7 +525,6 @@ void SAL_CALL OPreparedStatement::setBlob(sal_Int32 parameter, const Reference< 
 
 /* {{{ OPreparedStatement::setArray() -U- */
 void SAL_CALL OPreparedStatement::setArray(sal_Int32 parameter, const Reference< XArray >& /* x */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setArray");
 	MutexGuard aGuard(m_aMutex);
@@ -563,7 +538,6 @@ void SAL_CALL OPreparedStatement::setArray(sal_Int32 parameter, const Reference<
 
 /* {{{ OPreparedStatement::setRef() -U- */
 void SAL_CALL OPreparedStatement::setRef(sal_Int32 parameter, const Reference< XRef >& /* x */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setRef");
 	MutexGuard aGuard(m_aMutex);
@@ -605,7 +579,6 @@ namespace
 
 /* {{{ OPreparedStatement::setObjectWithInfo() -U- */
 void SAL_CALL OPreparedStatement::setObjectWithInfo(sal_Int32 _parameterIndex, const Any& _value, sal_Int32 _targetSqlType, sal_Int32 /* scale */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setObjectWithInfo");
 	checkDisposed(OPreparedStatement::rBHelper.bDisposed);
@@ -742,7 +715,6 @@ void SAL_CALL OPreparedStatement::setObjectWithInfo(sal_Int32 _parameterIndex, c
 
 /* {{{ OPreparedStatement::setObjectNull() -U- */
 void SAL_CALL OPreparedStatement::setObjectNull(sal_Int32 parameter, sal_Int32 /* sqlType */, const OUString& /* typeName */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setObjectNull");
 	MutexGuard aGuard(m_aMutex);
@@ -756,7 +728,6 @@ void SAL_CALL OPreparedStatement::setObjectNull(sal_Int32 parameter, sal_Int32 /
 
 /* {{{ OPreparedStatement::setObject() -U- */
 void SAL_CALL OPreparedStatement::setObject(sal_Int32 parameter, const Any& /* x */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setObject");
 	MutexGuard aGuard(m_aMutex);
@@ -770,7 +741,6 @@ void SAL_CALL OPreparedStatement::setObject(sal_Int32 parameter, const Any& /* x
 
 /* {{{ OPreparedStatement::setShort() -I- */
 void SAL_CALL OPreparedStatement::setShort(sal_Int32 parameter, sal_Int16 x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setShort");
 	MutexGuard aGuard(m_aMutex);
@@ -790,7 +760,6 @@ void SAL_CALL OPreparedStatement::setShort(sal_Int32 parameter, sal_Int16 x)
 
 /* {{{ OPreparedStatement::setBytes() -I- */
 void SAL_CALL OPreparedStatement::setBytes(sal_Int32 parameter, const Sequence< sal_Int8 >& x)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setBytes");
 	MutexGuard aGuard(m_aMutex);
@@ -813,7 +782,6 @@ void SAL_CALL OPreparedStatement::setBytes(sal_Int32 parameter, const Sequence< 
 void SAL_CALL OPreparedStatement::setCharacterStream(sal_Int32 parameter,
 													const Reference< XInputStream >& /* x */,
 													sal_Int32 /* length */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setCharacterStream");
 	MutexGuard aGuard(m_aMutex);
@@ -829,7 +797,6 @@ void SAL_CALL OPreparedStatement::setCharacterStream(sal_Int32 parameter,
 void SAL_CALL OPreparedStatement::setBinaryStream(sal_Int32 parameter,
 												const Reference< XInputStream >& /* x */,
 												sal_Int32 /* length */)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::setBinaryStream");
 	MutexGuard aGuard(m_aMutex);
@@ -843,7 +810,6 @@ void SAL_CALL OPreparedStatement::setBinaryStream(sal_Int32 parameter,
 
 /* {{{ OPreparedStatement::clearParameters() -I- */
 void SAL_CALL OPreparedStatement::clearParameters()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::clearParameters");
 	MutexGuard aGuard(m_aMutex);
@@ -862,7 +828,6 @@ void SAL_CALL OPreparedStatement::clearParameters()
 
 /* {{{ OPreparedStatement::clearBatch() -U- */
 void SAL_CALL OPreparedStatement::clearBatch()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::clearBatch");
 	mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::clearBatch", *this);
@@ -872,7 +837,6 @@ void SAL_CALL OPreparedStatement::clearBatch()
 
 /* {{{ OPreparedStatement::addBatch() -U- */
 void SAL_CALL OPreparedStatement::addBatch()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::addBatch");
 	mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::addBatch", *this);
@@ -882,7 +846,6 @@ void SAL_CALL OPreparedStatement::addBatch()
 
 /* {{{ OPreparedStatement::executeBatch() -I- */
 Sequence< sal_Int32 > SAL_CALL OPreparedStatement::executeBatch()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OPreparedStatement::executeBatch");
 	Sequence< sal_Int32 > aRet= Sequence< sal_Int32 > ();
@@ -893,7 +856,6 @@ Sequence< sal_Int32 > SAL_CALL OPreparedStatement::executeBatch()
 
 /* {{{ OPreparedStatement::setFastPropertyValue_NoBroadcast() -I- */
 void OPreparedStatement::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const Any& rValue)
-	throw(Exception)
 {
 	OSL_TRACE("OPreparedStatement::setFastPropertyValue_NoBroadcast");
 	switch(nHandle)

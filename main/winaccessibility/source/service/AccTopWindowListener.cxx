@@ -146,7 +146,7 @@ AccTopWindowListener::~AccTopWindowListener()
 /**
  *	It is invoked when a new window is opened, the source of this EventObject is the window
  */
-void AccTopWindowListener::windowOpened( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::windowOpened( const ::com::sun::star::lang::EventObject& e )
 {
     if ( !e.Source.is())
     {
@@ -222,7 +222,7 @@ void AccTopWindowListener::AddAllListeners(com::sun::star::accessibility::XAcces
     }
 }
 
-void AccTopWindowListener::windowClosing( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::windowClosing( const ::com::sun::star::lang::EventObject& e )
 {
 }
 
@@ -231,7 +231,7 @@ void AccTopWindowListener::windowClosing( const ::com::sun::star::lang::EventObj
  *	from current manager's cache, and remove the COM object and the accessible event listener
  *	assigned to the accessible objects.
  */
-void AccTopWindowListener::windowClosed( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::windowClosed( const ::com::sun::star::lang::EventObject& e )
 {
     if ( !e.Source.is())
     {
@@ -275,28 +275,28 @@ void AccTopWindowListener::windowClosed( const ::com::sun::star::lang::EventObje
 
 }
 
-void AccTopWindowListener::windowMinimized( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::windowMinimized( const ::com::sun::star::lang::EventObject& )
 {
 }
 
-void AccTopWindowListener::windowNormalized( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::windowNormalized( const ::com::sun::star::lang::EventObject& )
 {
 }
 
-void AccTopWindowListener::windowActivated( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::windowActivated( const ::com::sun::star::lang::EventObject& )
 {
 }
 
-void AccTopWindowListener::windowDeactivated( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::windowDeactivated( const ::com::sun::star::lang::EventObject& )
 {
 }
 
-void AccTopWindowListener::disposing( const ::com::sun::star::lang::EventObject&  ) throw (::com::sun::star::uno::RuntimeException)
+void AccTopWindowListener::disposing( const ::com::sun::star::lang::EventObject&  )
 {
 }
 
 //need to investigate further
-::com::sun::star::uno::Any SAL_CALL AccTopWindowListener::queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any SAL_CALL AccTopWindowListener::queryInterface( const ::com::sun::star::uno::Type& aType )
 {
     if (aType.equals( ::getCppuType( (Reference< com::sun::star::awt::XTopWindowListener> const *)0 ) ))
     {

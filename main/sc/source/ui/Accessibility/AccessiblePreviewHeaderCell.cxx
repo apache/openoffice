@@ -120,7 +120,6 @@ void ScAccessiblePreviewHeaderCell::Notify( SfxBroadcaster& rBC, const SfxHint& 
 //=====  XInterface  =====================================================
 
 uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::queryInterface( uno::Type const & rType )
-	throw (uno::RuntimeException)
 {
 	uno::Any aAny (ScAccessiblePreviewHeaderCellImpl::queryInterface(rType));
 	return aAny.hasValue() ? aAny : ScAccessibleContextBase::queryInterface(rType);
@@ -140,7 +139,7 @@ void SAL_CALL ScAccessiblePreviewHeaderCell::release()
 
 //=====  XAccessibleValue  ================================================
 
-uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getCurrentValue() throw (uno::RuntimeException)
+uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getCurrentValue()
 {
  	ScUnoGuard aGuard;
     IsObjectValid();
@@ -157,13 +156,12 @@ uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getCurrentValue() throw (uno::R
 }
 
 sal_Bool SAL_CALL ScAccessiblePreviewHeaderCell::setCurrentValue( const uno::Any& /* aNumber */ )
-								    							throw (uno::RuntimeException)
 {
 	//	it is not possible to set a value
 	return sal_False;
 }
 
-uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getMaximumValue() throw (uno::RuntimeException)
+uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getMaximumValue()
 {
  	ScUnoGuard aGuard;
     IsObjectValid();
@@ -178,7 +176,7 @@ uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getMaximumValue() throw (uno::R
 	return aAny;
 }
 
-uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getMinimumValue() throw (uno::RuntimeException)
+uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getMinimumValue()
 {
 	double fValue(0.0);
     uno::Any aAny;
@@ -189,7 +187,6 @@ uno::Any SAL_CALL ScAccessiblePreviewHeaderCell::getMinimumValue() throw (uno::R
 //=====  XAccessibleComponent  ============================================
 
 uno::Reference< XAccessible > SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleAtPoint( const awt::Point& rPoint )
-								throw (uno::RuntimeException)
 {
     uno::Reference<XAccessible> xRet;
     if (containsPoint(rPoint))
@@ -206,7 +203,7 @@ uno::Reference< XAccessible > SAL_CALL ScAccessiblePreviewHeaderCell::getAccessi
     return xRet;
 }
 
-void SAL_CALL ScAccessiblePreviewHeaderCell::grabFocus() throw (uno::RuntimeException)
+void SAL_CALL ScAccessiblePreviewHeaderCell::grabFocus()
 {
  	ScUnoGuard aGuard;
     IsObjectValid();
@@ -220,7 +217,7 @@ void SAL_CALL ScAccessiblePreviewHeaderCell::grabFocus() throw (uno::RuntimeExce
 
 //=====  XAccessibleContext  ==============================================
 
-sal_Int32 SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleChildCount() throw(uno::RuntimeException)
+sal_Int32 SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleChildCount()
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -230,7 +227,6 @@ sal_Int32 SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleChildCount() thro
 }
 
 uno::Reference< XAccessible > SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleChild(sal_Int32 nIndex)
-					        throw (uno::RuntimeException, lang::IndexOutOfBoundsException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -239,13 +235,12 @@ uno::Reference< XAccessible > SAL_CALL ScAccessiblePreviewHeaderCell::getAccessi
 	return mpTextHelper->GetChild(nIndex);
 }
 
-sal_Int32 SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleIndexInParent() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleIndexInParent()
 {
 	return mnIndex;
 }
 
 uno::Reference<XAccessibleStateSet> SAL_CALL ScAccessiblePreviewHeaderCell::getAccessibleStateSet()
-						    throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -273,13 +268,12 @@ uno::Reference<XAccessibleStateSet> SAL_CALL ScAccessiblePreviewHeaderCell::getA
 
 //=====  XServiceInfo  ====================================================
 
-rtl::OUString SAL_CALL ScAccessiblePreviewHeaderCell::getImplementationName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScAccessiblePreviewHeaderCell::getImplementationName()
 {
 	return rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ScAccessiblePreviewHeaderCell"));
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL ScAccessiblePreviewHeaderCell::getSupportedServiceNames()
-													throw(uno::RuntimeException)
 {
 	uno::Sequence< ::rtl::OUString > aSequence = ScAccessibleContextBase::getSupportedServiceNames();
     sal_Int32 nOldSize(aSequence.getLength());
@@ -294,14 +288,12 @@ uno::Sequence<rtl::OUString> SAL_CALL ScAccessiblePreviewHeaderCell::getSupporte
 //=====  XTypeProvider  =======================================================
 
 uno::Sequence< uno::Type > SAL_CALL ScAccessiblePreviewHeaderCell::getTypes()
-		throw (uno::RuntimeException)
 {
 	return comphelper::concatSequences(ScAccessiblePreviewHeaderCellImpl::getTypes(), ScAccessibleContextBase::getTypes());
 }
 
 uno::Sequence<sal_Int8> SAL_CALL
 	ScAccessiblePreviewHeaderCell::getImplementationId(void)
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -316,7 +308,7 @@ uno::Sequence<sal_Int8> SAL_CALL
 
 //====  internal  =========================================================
 
-Rectangle ScAccessiblePreviewHeaderCell::GetBoundingBoxOnScreen() const throw (uno::RuntimeException)
+Rectangle ScAccessiblePreviewHeaderCell::GetBoundingBoxOnScreen() const
 {
     Rectangle aCellRect;
 
@@ -343,7 +335,7 @@ Rectangle ScAccessiblePreviewHeaderCell::GetBoundingBoxOnScreen() const throw (u
 	return aCellRect;
 }
 
-Rectangle ScAccessiblePreviewHeaderCell::GetBoundingBox() const throw (uno::RuntimeException)
+Rectangle ScAccessiblePreviewHeaderCell::GetBoundingBox() const
 {
 	FillTableInfo();
 
@@ -370,13 +362,13 @@ Rectangle ScAccessiblePreviewHeaderCell::GetBoundingBox() const throw (uno::Runt
     return Rectangle();
 }
 
-rtl::OUString SAL_CALL ScAccessiblePreviewHeaderCell::createAccessibleDescription() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScAccessiblePreviewHeaderCell::createAccessibleDescription()
 {
     rtl::OUString sDescription = String(ScResId(STR_ACC_HEADERCELL_DESCR));
     return sDescription;
 }
 
-rtl::OUString SAL_CALL ScAccessiblePreviewHeaderCell::createAccessibleName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScAccessiblePreviewHeaderCell::createAccessibleName()
 {
 	rtl::OUString sName = String(ScResId(STR_ACC_HEADERCELL_NAME));
 

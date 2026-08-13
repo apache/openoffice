@@ -102,14 +102,12 @@ public:
     */
     virtual void SAL_CALL
         statusChanged (
-            const ::com::sun::star::frame::FeatureStateEvent& rState)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::frame::FeatureStateEvent& rState);
 
     //=====  lang::XEventListener  ============================================
 
     virtual void SAL_CALL
-        disposing(const com::sun::star::lang::EventObject& rEvent)
-        throw(com::sun::star::uno::RuntimeException);
+        disposing(const com::sun::star::lang::EventObject& rEvent);
 
 protected:
     /** This method is called by the WeakComponentImplHelper base class in
@@ -137,8 +135,7 @@ private:
     /** This method throws a DisposedException when the object has already been
         disposed.
     */
-    void ThrowIfDisposed (void)
-        throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void);
 
     /** Transform the given string into a URL object.
     */

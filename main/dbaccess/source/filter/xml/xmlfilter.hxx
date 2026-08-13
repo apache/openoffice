@@ -127,7 +127,7 @@ private:
 	sal_Int32										m_nPreviewMode;
     bool                                            m_bNewFormat;
 
-	sal_Bool							implImport( const Sequence< PropertyValue >& rDescriptor ) throw (RuntimeException);
+	sal_Bool							implImport( const Sequence< PropertyValue >& rDescriptor );
 
 
 	/** fills the map with the Properties
@@ -154,7 +154,7 @@ public:
 	ODBFilter( const Reference< XMultiServiceFactory >& _rxMSF );
 
 	// XFilter
-    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor ) throw(RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor );
 
 	// XServiceInfo
 	DECLARE_SERVICE_INFO_STATIC( );

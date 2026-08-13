@@ -41,14 +41,14 @@ public:
 
 	// XServiceInfo
 	IMPLEMENTATION_NAME(OGroupBoxModel);
-	virtual StringSequence SAL_CALL	getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual StringSequence SAL_CALL	getSupportedServiceNames();
 
 	// XPersistObject
-    virtual ::rtl::OUString SAL_CALL	getServiceName() throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL	getServiceName();
     virtual void SAL_CALL
-		write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream);
     virtual void SAL_CALL
-		read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream);
 
     // OControlModel's property handling
 	virtual void describeAggregateProperties(
@@ -69,7 +69,7 @@ public:
 
 	// XServiceInfo
 	IMPLEMENTATION_NAME(OGroupBoxControl);
-	virtual StringSequence SAL_CALL	getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual StringSequence SAL_CALL	getSupportedServiceNames();
 };
 
 //.........................................................................

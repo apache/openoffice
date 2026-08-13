@@ -97,106 +97,106 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::com::sun::star::uno::Any SAL_CALL GridColumn::getIdentifier() throw (::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::uno::Any SAL_CALL GridColumn::getIdentifier()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_aIdentifier;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setIdentifier(const ::com::sun::star::uno::Any & value) throw (::com::sun::star::uno::RuntimeException)
+    void SAL_CALL GridColumn::setIdentifier(const ::com::sun::star::uno::Any & value)
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    m_aIdentifier = value;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL GridColumn::getColumnWidth() throw (::com::sun::star::uno::RuntimeException)
+    ::sal_Int32 SAL_CALL GridColumn::getColumnWidth()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_nColumnWidth;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setColumnWidth(::sal_Int32 value) throw (::com::sun::star::uno::RuntimeException)
+    void SAL_CALL GridColumn::setColumnWidth(::sal_Int32 value)
     {
         impl_set( m_nColumnWidth, value, "ColumnWidth" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL GridColumn::getMaxWidth() throw (::com::sun::star::uno::RuntimeException)
+    ::sal_Int32 SAL_CALL GridColumn::getMaxWidth()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_nMaxWidth;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setMaxWidth(::sal_Int32 value) throw (::com::sun::star::uno::RuntimeException)
+    void SAL_CALL GridColumn::setMaxWidth(::sal_Int32 value)
     {
         impl_set( m_nMaxWidth, value, "MaxWidth" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL GridColumn::getMinWidth() throw (::com::sun::star::uno::RuntimeException)
+    ::sal_Int32 SAL_CALL GridColumn::getMinWidth()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_nMinWidth;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setMinWidth(::sal_Int32 value) throw (::com::sun::star::uno::RuntimeException)
+    void SAL_CALL GridColumn::setMinWidth(::sal_Int32 value)
     {
         impl_set( m_nMinWidth, value, "MinWidth" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL GridColumn::getTitle() throw (::com::sun::star::uno::RuntimeException)
+    ::rtl::OUString SAL_CALL GridColumn::getTitle()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_sTitle;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setTitle(const ::rtl::OUString & value) throw (::com::sun::star::uno::RuntimeException)
+    void SAL_CALL GridColumn::setTitle(const ::rtl::OUString & value)
     {
         impl_set( m_sTitle, value, "Title" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL GridColumn::getHelpText() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL GridColumn::getHelpText()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_sHelpText;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setHelpText( const ::rtl::OUString & value ) throw (RuntimeException)
+    void SAL_CALL GridColumn::setHelpText( const ::rtl::OUString & value )
     {
         impl_set( m_sHelpText, value, "HelpText" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    sal_Bool SAL_CALL GridColumn::getResizeable() throw (::com::sun::star::uno::RuntimeException)
+    sal_Bool SAL_CALL GridColumn::getResizeable()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_bResizeable;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setResizeable(sal_Bool value) throw (::com::sun::star::uno::RuntimeException)
+    void SAL_CALL GridColumn::setResizeable(sal_Bool value)
     {
         impl_set( m_bResizeable, value, "Resizeable" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL GridColumn::getFlexibility() throw (RuntimeException)
+    ::sal_Int32 SAL_CALL GridColumn::getFlexibility()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return m_nFlexibility;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setFlexibility( ::sal_Int32 i_value ) throw (IllegalArgumentException, RuntimeException)
+    void SAL_CALL GridColumn::setFlexibility( ::sal_Int32 i_value )
     {
         if ( i_value < 0 )
             throw IllegalArgumentException( ::rtl::OUString(), *this, 1 );
@@ -204,26 +204,26 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    HorizontalAlignment SAL_CALL GridColumn::getHorizontalAlign() throw (::com::sun::star::uno::RuntimeException)
+    HorizontalAlignment SAL_CALL GridColumn::getHorizontalAlign()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return m_eHorizontalAlign;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setHorizontalAlign(HorizontalAlignment align) throw (::com::sun::star::uno::RuntimeException)
+    void SAL_CALL GridColumn::setHorizontalAlign(HorizontalAlignment align)
     {
         impl_set( m_eHorizontalAlign, align, "HorizontalAlign" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::addGridColumnListener( const Reference< XGridColumnListener >& xListener ) throw (RuntimeException)
+    void SAL_CALL GridColumn::addGridColumnListener( const Reference< XGridColumnListener >& xListener )
     {
 	    rBHelper.addListener( XGridColumnListener::static_type(), xListener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::removeGridColumnListener( const Reference< XGridColumnListener >& xListener ) throw (RuntimeException)
+    void SAL_CALL GridColumn::removeGridColumnListener( const Reference< XGridColumnListener >& xListener )
     {
 	    rBHelper.removeListener( XGridColumnListener::static_type(), xListener );
     }
@@ -237,7 +237,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL GridColumn::getIndex() throw (RuntimeException)
+    ::sal_Int32 SAL_CALL GridColumn::getIndex()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return m_nIndex;
@@ -251,26 +251,26 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL GridColumn::getDataColumnIndex() throw(RuntimeException)
+    ::sal_Int32 SAL_CALL GridColumn::getDataColumnIndex()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return m_nDataColumnIndex;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL GridColumn::setDataColumnIndex( ::sal_Int32 i_dataColumnIndex ) throw(RuntimeException)
+    void SAL_CALL GridColumn::setDataColumnIndex( ::sal_Int32 i_dataColumnIndex )
     {
         impl_set( m_nDataColumnIndex, i_dataColumnIndex, "DataColumnIndex" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL GridColumn::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL GridColumn::getImplementationName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.comp.toolkit.GridColumn" ) );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    sal_Bool SAL_CALL GridColumn::supportsService( const ::rtl::OUString& i_serviceName ) throw (RuntimeException)
+    sal_Bool SAL_CALL GridColumn::supportsService( const ::rtl::OUString& i_serviceName )
     {
         const Sequence< ::rtl::OUString > aServiceNames( getSupportedServiceNames() );
         for ( sal_Int32 i=0; i<aServiceNames.getLength(); ++i )
@@ -280,7 +280,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL GridColumn::getSupportedServiceNames(  ) throw (RuntimeException)
+    ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL GridColumn::getSupportedServiceNames(  )
     {
         const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( szServiceName_GridColumn ) );
         const Sequence< ::rtl::OUString > aSeq( &aServiceName, 1 );
@@ -288,13 +288,13 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XCloneable > SAL_CALL GridColumn::createClone(  ) throw (RuntimeException)
+    Reference< XCloneable > SAL_CALL GridColumn::createClone(  )
     {
         return new GridColumn( *this );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    sal_Int64 SAL_CALL GridColumn::getSomething( const Sequence< sal_Int8 >& i_identifier ) throw(RuntimeException)
+    sal_Int64 SAL_CALL GridColumn::getSomething( const Sequence< sal_Int8 >& i_identifier )
     {
         if ( ( i_identifier.getLength() == 16 ) && ( i_identifier == getUnoTunnelId() ) )
             return ::sal::static_int_cast< sal_Int64 >( reinterpret_cast< sal_IntPtr >( this ) );

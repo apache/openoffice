@@ -229,7 +229,7 @@ public:
 	virtual					~SvXMLExportEventListener();
 
 							// XEventListener
-	virtual void SAL_CALL disposing(const lang::EventObject& rEventObject) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing(const lang::EventObject& rEventObject);
 };
 
 SvXMLExportEventListener::SvXMLExportEventListener(SvXMLExport* pTempExport)
@@ -243,7 +243,6 @@ SvXMLExportEventListener::~SvXMLExportEventListener()
 
 // XEventListener
 void SAL_CALL SvXMLExportEventListener::disposing( const lang::EventObject& )
-	throw(uno::RuntimeException)
 {
 	if (pExport)
 	{
@@ -672,7 +671,6 @@ SvXMLExport::~SvXMLExport()
 
 // XExporter
 void SAL_CALL SvXMLExport::setSourceDocument( const uno::Reference< lang::XComponent >& xDoc )
-	throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	mxModel = uno::Reference< frame::XModel >::query( xDoc );
 	if( !mxModel.is() )
@@ -773,7 +771,6 @@ void SAL_CALL SvXMLExport::setSourceDocument( const uno::Reference< lang::XCompo
 
 // XInitialize
 void SAL_CALL SvXMLExport::initialize( const uno::Sequence< uno::Any >& aArguments )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	// #93186# we need to queryInterface every single Any with any expected outcome. This variable hold the queryInterface results.
 
@@ -886,7 +883,7 @@ void SAL_CALL SvXMLExport::initialize( const uno::Sequence< uno::Any >& aArgumen
 }
 
 // XFilter
-sal_Bool SAL_CALL SvXMLExport::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SvXMLExport::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogContext, "xmloff", LOGFILE_AUTHOR,
                                 "SvXMLExport::filter" );
@@ -955,7 +952,7 @@ sal_Bool SAL_CALL SvXMLExport::filter( const uno::Sequence< beans::PropertyValue
 	return (GetErrorFlags() & (ERROR_DO_NOTHING|ERROR_ERROR_OCCURED)) == 0;
 }
 
-void SAL_CALL SvXMLExport::cancel() throw(uno::RuntimeException)
+void SAL_CALL SvXMLExport::cancel()
 {
 	// stop export
 	Sequence<OUString> aEmptySeq;
@@ -963,26 +960,24 @@ void SAL_CALL SvXMLExport::cancel() throw(uno::RuntimeException)
 }
 
 ::rtl::OUString SAL_CALL SvXMLExport::getName(  )
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	return msFilterName;
 }
 
 void SAL_CALL SvXMLExport::setName( const ::rtl::OUString& )
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	// do nothing, because it is not possible to set the FilterName
 }
 
 
 // XServiceInfo
-OUString SAL_CALL SvXMLExport::getImplementationName(  ) throw(uno::RuntimeException)
+OUString SAL_CALL SvXMLExport::getImplementationName(  )
 {
 	OUString aStr;
 	return aStr;
 }
 
-sal_Bool SAL_CALL SvXMLExport::supportsService( const OUString& rServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SvXMLExport::supportsService( const OUString& rServiceName )
 {
     return
         rServiceName.equalsAsciiL(
@@ -994,7 +989,6 @@ sal_Bool SAL_CALL SvXMLExport::supportsService( const OUString& rServiceName ) t
 }
 
 uno::Sequence< OUString > SAL_CALL SvXMLExport::getSupportedServiceNames(  )
-	throw(uno::RuntimeException)
 {
     uno::Sequence<OUString> aSeq(2);
     aSeq[0] = OUString(
@@ -2193,7 +2187,6 @@ SvXMLExport* SvXMLExport::getImplementation( uno::Reference< uno::XInterface > x
 
 // XUnoTunnel
 sal_Int64 SAL_CALL SvXMLExport::getSomething( const uno::Sequence< sal_Int8 >& rId )
-	throw( uno::RuntimeException )
 {
 	if( rId.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
 														 rId.getConstArray(), 16 ) )

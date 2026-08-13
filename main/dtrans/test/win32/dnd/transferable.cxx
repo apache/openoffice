@@ -57,7 +57,6 @@ CTransferable::CTransferable( wchar_t* dataString ) :
 //----------------------------------------------------------------
 
 Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
-	throw(UnsupportedFlavorException, IOException, RuntimeException)
 {
 	Any anyData;
 
@@ -85,7 +84,6 @@ Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
 //----------------------------------------------------------------
 
 Sequence< DataFlavor > SAL_CALL CTransferable::getTransferDataFlavors(  )
-	throw(RuntimeException)
 {
 	return m_seqDFlv;
 }
@@ -95,7 +93,6 @@ Sequence< DataFlavor > SAL_CALL CTransferable::getTransferDataFlavors(  )
 //----------------------------------------------------------------
 
 sal_Bool SAL_CALL CTransferable::isDataFlavorSupported( const DataFlavor& aFlavor )
-	throw(RuntimeException)
 {
 	sal_Int32 nLength = m_seqDFlv.getLength( );
 	sal_Bool bRet     = sal_False;
@@ -117,6 +114,5 @@ sal_Bool SAL_CALL CTransferable::isDataFlavorSupported( const DataFlavor& aFlavo
 //----------------------------------------------------------------
 
 void SAL_CALL CTransferable::lostOwnership( const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans )
-	throw(RuntimeException)
 {
 }

@@ -133,7 +133,6 @@ ShellExec::ShellExec( const Reference< XComponentContext >& xContext ) :
 //-------------------------------------------------
 
 void SAL_CALL ShellExec::execute( const OUString& aCommand, const OUString& aParameter, sal_Int32 nFlags )
-    throw (IllegalArgumentException, SystemShellExecuteException, RuntimeException)
 {
     OStringBuffer aBuffer, aLaunchBuffer;
 
@@ -297,7 +296,6 @@ void SAL_CALL ShellExec::execute( const OUString& aCommand, const OUString& aPar
 // -------------------------------------------------
 
 OUString SAL_CALL ShellExec::getImplementationName(  )
-    throw( RuntimeException )
 {
 	return OUString::createFromAscii( SHELLEXEC_IMPL_NAME );
 }
@@ -307,7 +305,6 @@ OUString SAL_CALL ShellExec::getImplementationName(  )
 // -------------------------------------------------
 
 sal_Bool SAL_CALL ShellExec::supportsService( const OUString& ServiceName )
-    throw( RuntimeException )
 {
     Sequence < OUString > SupportedServicesNames = ShellExec_getSupportedServiceNames();
 
@@ -323,7 +320,6 @@ sal_Bool SAL_CALL ShellExec::supportsService( const OUString& ServiceName )
 // -------------------------------------------------
 
 Sequence< OUString > SAL_CALL ShellExec::getSupportedServiceNames(	 )
-    throw( RuntimeException )
 {
     return ShellExec_getSupportedServiceNames();
 }

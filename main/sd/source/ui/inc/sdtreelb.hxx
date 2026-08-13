@@ -114,7 +114,7 @@ public:
 		SD_DLLPRIVATE virtual sal_Bool	GetData( const ::com::sun::star::datatransfer::DataFlavor& rFlavor );
 		SD_DLLPRIVATE virtual void		DragFinished( sal_Int8 nDropAction );
 
-        SD_DLLPRIVATE virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw( ::com::sun::star::uno::RuntimeException );
+        SD_DLLPRIVATE virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId );
 	};
 
 	friend class SdPageObjsTLB::SdPageObjsTransferable;

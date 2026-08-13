@@ -390,15 +390,14 @@ namespace
         ~WebDAVResponseParser();
 
         // Methods XDocumentHandler
-        virtual void SAL_CALL startDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException);
-        virtual void SAL_CALL endDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException);
-        virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs )
-            throw (xml::sax::SAXException, uno::RuntimeException);
-        virtual void SAL_CALL endElement( const ::rtl::OUString& aName ) throw (xml::sax::SAXException, uno::RuntimeException);
-        virtual void SAL_CALL characters( const ::rtl::OUString& aChars ) throw (xml::sax::SAXException, uno::RuntimeException);
-        virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces ) throw (xml::sax::SAXException, uno::RuntimeException);
-        virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData ) throw (xml::sax::SAXException, uno::RuntimeException);
-        virtual void SAL_CALL setDocumentLocator( const uno::Reference< xml::sax::XLocator >& xLocator ) throw (xml::sax::SAXException, uno::RuntimeException);
+        virtual void SAL_CALL startDocument(  );
+        virtual void SAL_CALL endDocument(  );
+        virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs );
+        virtual void SAL_CALL endElement( const ::rtl::OUString& aName );
+        virtual void SAL_CALL characters( const ::rtl::OUString& aChars );
+        virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces );
+        virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData );
+        virtual void SAL_CALL setDocumentLocator( const uno::Reference< xml::sax::XLocator >& xLocator );
 
         const std::vector< http_dav_ucp::DAVResource >& getResult_PropFind() const { return maResult_PropFind; }
         const std::vector< http_dav_ucp::DAVResourceInfo >& getResult_PropName() const { return maResult_PropName; }
@@ -442,18 +441,17 @@ namespace
         }
     }
 
-    void SAL_CALL WebDAVResponseParser::startDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException)
+    void SAL_CALL WebDAVResponseParser::startDocument(  )
     {
         OSL_ENSURE(!mpContext, "Parser start with existing content (!)");
     }
 
-    void SAL_CALL WebDAVResponseParser::endDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException)
+    void SAL_CALL WebDAVResponseParser::endDocument(  )
     {
         OSL_ENSURE(!mpContext, "Parser end with existing content (!)");
     }
 
     void SAL_CALL WebDAVResponseParser::startElement( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs )
-        throw (xml::sax::SAXException, uno::RuntimeException)
     {
         const sal_Int32 nLen(aName.getLength());
 
@@ -568,7 +566,7 @@ namespace
         }
     }
 
-    void SAL_CALL WebDAVResponseParser::endElement( const ::rtl::OUString& aName ) throw (xml::sax::SAXException, uno::RuntimeException)
+    void SAL_CALL WebDAVResponseParser::endElement( const ::rtl::OUString& aName )
     {
         const sal_Int32 nLen(aName.getLength());
         OSL_ENSURE(mpContext, "Parser EndElement without content (!)");
@@ -940,7 +938,7 @@ namespace
         }
     }
 
-    void SAL_CALL WebDAVResponseParser::characters( const ::rtl::OUString& aChars ) throw (xml::sax::SAXException, uno::RuntimeException)
+    void SAL_CALL WebDAVResponseParser::characters( const ::rtl::OUString& aChars )
     {
         // collect whitespace over evtl. several calls in mpContext
         OSL_ENSURE(mpContext, "Parser characters without content (!)");
@@ -967,16 +965,15 @@ namespace
         }
     }
 
-    void SAL_CALL WebDAVResponseParser::ignorableWhitespace( const ::rtl::OUString& /*aWhitespaces*/ ) throw (xml::sax::SAXException, uno::RuntimeException)
+    void SAL_CALL WebDAVResponseParser::ignorableWhitespace( const ::rtl::OUString& /*aWhitespaces*/ )
     {
     }
 
     void SAL_CALL WebDAVResponseParser::processingInstruction( const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-        throw (xml::sax::SAXException, uno::RuntimeException)
     {
     }
 
-    void SAL_CALL WebDAVResponseParser::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /*xLocator*/ ) throw (xml::sax::SAXException, uno::RuntimeException)
+    void SAL_CALL WebDAVResponseParser::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /*xLocator*/ )
     {
     }
 } // end of anonymous namespace

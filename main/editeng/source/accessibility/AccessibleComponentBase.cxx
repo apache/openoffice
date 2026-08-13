@@ -63,7 +63,6 @@ AccessibleComponentBase::~AccessibleComponentBase (void)
 
 sal_Bool SAL_CALL AccessibleComponentBase::containsPoint (
         const ::com::sun::star::awt::Point& aPoint)
-        throw (::com::sun::star::uno::RuntimeException)
 {
     awt::Size aSize (getSize());
     return (aPoint.X >= 0)
@@ -78,7 +77,6 @@ sal_Bool SAL_CALL AccessibleComponentBase::containsPoint (
 uno::Reference<XAccessible > SAL_CALL
     AccessibleComponentBase::getAccessibleAtPoint (
         const awt::Point& /*aPoint*/)
-    throw (uno::RuntimeException)
 {
     return uno::Reference<XAccessible>();
 }
@@ -87,7 +85,6 @@ uno::Reference<XAccessible > SAL_CALL
 
 
 awt::Rectangle SAL_CALL AccessibleComponentBase::getBounds (void)
-    throw (uno::RuntimeException)
 {
     return awt::Rectangle();
 }
@@ -96,7 +93,6 @@ awt::Rectangle SAL_CALL AccessibleComponentBase::getBounds (void)
 
 
 awt::Point SAL_CALL AccessibleComponentBase::getLocation (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     awt::Rectangle aBBox (getBounds());
     return awt::Point (aBBox.X, aBBox.Y);
@@ -106,7 +102,6 @@ awt::Point SAL_CALL AccessibleComponentBase::getLocation (void)
 
 
 awt::Point SAL_CALL AccessibleComponentBase::getLocationOnScreen (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return awt::Point();
 }
@@ -115,7 +110,6 @@ awt::Point SAL_CALL AccessibleComponentBase::getLocationOnScreen (void)
 
 
 ::com::sun::star::awt::Size SAL_CALL AccessibleComponentBase::getSize (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     awt::Rectangle aBBox (getBounds());
     return awt::Size (aBBox.Width, aBBox.Height);
@@ -127,7 +121,6 @@ awt::Point SAL_CALL AccessibleComponentBase::getLocationOnScreen (void)
 void SAL_CALL AccessibleComponentBase::addFocusListener (
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XFocusListener >& /*xListener*/)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     // Ignored
 }
@@ -137,7 +130,6 @@ void SAL_CALL AccessibleComponentBase::addFocusListener (
 
 void SAL_CALL AccessibleComponentBase::removeFocusListener (const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XFocusListener >& /*xListener*/ )
-    throw (::com::sun::star::uno::RuntimeException)
 {
     // Ignored
 }
@@ -146,7 +138,6 @@ void SAL_CALL AccessibleComponentBase::removeFocusListener (const ::com::sun::st
 
 
 void SAL_CALL AccessibleComponentBase::grabFocus (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     uno::Reference<XAccessibleContext> xContext (this, uno::UNO_QUERY);
     uno::Reference<XAccessibleSelection> xSelection (
@@ -163,7 +154,6 @@ void SAL_CALL AccessibleComponentBase::grabFocus (void)
 
 
 sal_Int32 SAL_CALL AccessibleComponentBase::getForeground (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
     return Color(COL_BLACK).GetColor();
 }
@@ -172,7 +162,6 @@ sal_Int32 SAL_CALL AccessibleComponentBase::getForeground (void)
 
 
 sal_Int32 SAL_CALL AccessibleComponentBase::getBackground (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return Color(COL_WHITE).GetColor();
 }
@@ -184,7 +173,6 @@ sal_Int32 SAL_CALL AccessibleComponentBase::getBackground (void)
 
 ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL
         AccessibleComponentBase::getFont (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
     return uno::Reference<awt::XFont>();
 }
@@ -193,7 +181,6 @@ sal_Int32 SAL_CALL AccessibleComponentBase::getBackground (void)
 
 
 ::rtl::OUString SAL_CALL AccessibleComponentBase::getTitledBorderText (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
     return ::rtl::OUString::createFromAscii ("");
 }
@@ -202,7 +189,6 @@ sal_Int32 SAL_CALL AccessibleComponentBase::getBackground (void)
 
 
 ::rtl::OUString SAL_CALL AccessibleComponentBase::getToolTipText (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return ::rtl::OUString::createFromAscii ("");
 }
@@ -214,7 +200,6 @@ sal_Int32 SAL_CALL AccessibleComponentBase::getBackground (void)
 
 uno::Sequence<uno::Type> SAL_CALL
     AccessibleComponentBase::getTypes (void)
-    throw (uno::RuntimeException)
 {
     // Get list of types from the context base implementation...
 	uno::Sequence<uno::Type> aTypeList (2);

@@ -49,20 +49,20 @@ public:
     virtual ~CLiteral() {}
 
     // ::com::sun::star::lang::XServiceInfo:
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString & ServiceName) throw (css::uno::RuntimeException);
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString & ServiceName);
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     // ::com::sun::star::lang::XInitialization:
-    virtual void SAL_CALL initialize(const css::uno::Sequence< ::com::sun::star::uno::Any > & aArguments) throw (css::uno::RuntimeException, css::uno::Exception);
+    virtual void SAL_CALL initialize(const css::uno::Sequence< ::com::sun::star::uno::Any > & aArguments);
 
     // ::com::sun::star::rdf::XNode:
-    virtual ::rtl::OUString SAL_CALL getStringValue() throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getStringValue();
 
     // ::com::sun::star::rdf::XLiteral:
-    virtual ::rtl::OUString SAL_CALL getValue() throw (css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getLanguage() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::rdf::XURI > SAL_CALL getDatatype() throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getValue();
+    virtual ::rtl::OUString SAL_CALL getLanguage();
+    virtual css::uno::Reference< css::rdf::XURI > SAL_CALL getDatatype();
 
 private:
     CLiteral(const CLiteral &); // not defined
@@ -80,12 +80,12 @@ CLiteral::CLiteral(css::uno::Reference< css::uno::XComponentContext > const & co
 {}
 
 // com.sun.star.uno.XServiceInfo:
-::rtl::OUString SAL_CALL CLiteral::getImplementationName() throw (css::uno::RuntimeException)
+::rtl::OUString SAL_CALL CLiteral::getImplementationName()
 {
     return comp_CLiteral::_getImplementationName();
 }
 
-::sal_Bool SAL_CALL CLiteral::supportsService(::rtl::OUString const & serviceName) throw (css::uno::RuntimeException)
+::sal_Bool SAL_CALL CLiteral::supportsService(::rtl::OUString const & serviceName)
 {
     css::uno::Sequence< ::rtl::OUString > serviceNames = comp_CLiteral::_getSupportedServiceNames();
     for (::sal_Int32 i = 0; i < serviceNames.getLength(); ++i) {
@@ -95,13 +95,13 @@ CLiteral::CLiteral(css::uno::Reference< css::uno::XComponentContext > const & co
     return sal_False;
 }
 
-css::uno::Sequence< ::rtl::OUString > SAL_CALL CLiteral::getSupportedServiceNames() throw (css::uno::RuntimeException)
+css::uno::Sequence< ::rtl::OUString > SAL_CALL CLiteral::getSupportedServiceNames()
 {
     return comp_CLiteral::_getSupportedServiceNames();
 }
 
 // ::com::sun::star::lang::XInitialization:
-void SAL_CALL CLiteral::initialize(const css::uno::Sequence< ::com::sun::star::uno::Any > & aArguments) throw (css::uno::RuntimeException, css::uno::Exception)
+void SAL_CALL CLiteral::initialize(const css::uno::Sequence< ::com::sun::star::uno::Any > & aArguments)
 {
     const sal_Int32 len( aArguments.getLength() );
     if (len < 1 || len > 2) {
@@ -153,7 +153,7 @@ void SAL_CALL CLiteral::initialize(const css::uno::Sequence< ::com::sun::star::u
 }
 
 // ::com::sun::star::rdf::XNode:
-::rtl::OUString SAL_CALL CLiteral::getStringValue() throw (css::uno::RuntimeException)
+::rtl::OUString SAL_CALL CLiteral::getStringValue()
 {
     if (!m_Language.equalsAscii("")) {
         ::rtl::OUStringBuffer buf(m_Value);
@@ -171,17 +171,17 @@ void SAL_CALL CLiteral::initialize(const css::uno::Sequence< ::com::sun::star::u
 }
 
 // ::com::sun::star::rdf::XLiteral:
-::rtl::OUString SAL_CALL CLiteral::getValue() throw (css::uno::RuntimeException)
+::rtl::OUString SAL_CALL CLiteral::getValue()
 {
     return m_Value;
 }
 
-::rtl::OUString SAL_CALL CLiteral::getLanguage() throw (css::uno::RuntimeException)
+::rtl::OUString SAL_CALL CLiteral::getLanguage()
 {
     return m_Language;
 }
 
-css::uno::Reference< css::rdf::XURI > SAL_CALL CLiteral::getDatatype() throw (css::uno::RuntimeException)
+css::uno::Reference< css::rdf::XURI > SAL_CALL CLiteral::getDatatype()
 {
     return m_xDatatype;
 }
@@ -208,7 +208,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL _getSupportedServiceNames()
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL _create(
     const css::uno::Reference< css::uno::XComponentContext > & context)
-        SAL_THROW((css::uno::Exception))
 {
     return static_cast< ::cppu::OWeakObject * >(new CLiteral(context));
 }

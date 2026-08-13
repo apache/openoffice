@@ -40,7 +40,7 @@ using namespace ::ooo::vba;
 
 // ============================================================================
 
-ScDocShell* GetDocShellFromRange( const uno::Reference< uno::XInterface >& xRange ) throw ( uno::RuntimeException )
+ScDocShell* GetDocShellFromRange( const uno::Reference< uno::XInterface >& xRange )
 {
     ScCellRangesBase* pScCellRangesBase = ScCellRangesBase::getImplementation( xRange );
     if ( !pScCellRangesBase )
@@ -50,7 +50,7 @@ ScDocShell* GetDocShellFromRange( const uno::Reference< uno::XInterface >& xRang
     return pScCellRangesBase->GetDocShell();
 }
 
-ScDocument* GetDocumentFromRange( const uno::Reference< uno::XInterface >& xRange ) throw ( uno::RuntimeException )
+ScDocument* GetDocumentFromRange( const uno::Reference< uno::XInterface >& xRange )
 {
         ScDocShell* pDocShell = GetDocShellFromRange( xRange );
         if ( !pDocShell )
@@ -87,7 +87,7 @@ class PasteCellsWarningReseter
 {
 private:
 	bool bInitialWarningState;
-	static uno::Reference< beans::XPropertySet > getGlobalSheetSettings() throw ( uno::RuntimeException )
+	static uno::Reference< beans::XPropertySet > getGlobalSheetSettings()
 	{
 		static uno::Reference< beans::XPropertySet > xTmpProps( ::comphelper::getProcessServiceFactory(), uno::UNO_QUERY_THROW );
 		static uno::Reference<uno::XComponentContext > xContext( xTmpProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))), uno::UNO_QUERY_THROW );
@@ -97,19 +97,19 @@ private:
 		return xProps;
 	}
 
-	bool getReplaceCellsWarning() throw ( uno::RuntimeException )
+	bool getReplaceCellsWarning()
 	{
 		sal_Bool res = sal_False;
 		getGlobalSheetSettings()->getPropertyValue( REPLACE_CELLS_WARNING ) >>= res;
 		return ( res == sal_True );
 	}
 
-	void setReplaceCellsWarning( bool bState ) throw ( uno::RuntimeException )
+	void setReplaceCellsWarning( bool bState )
 	{
 		getGlobalSheetSettings()->setPropertyValue( REPLACE_CELLS_WARNING, uno::makeAny( bState ) );
 	}
 public:
-	PasteCellsWarningReseter() throw ( uno::RuntimeException )
+	PasteCellsWarningReseter()
 	{
 		bInitialWarningState = getReplaceCellsWarning();
 		if ( bInitialWarningState )
@@ -244,7 +244,7 @@ getViewFrame( const uno::Reference< frame::XModel >& xModel )
 }
 
 uno::Reference< XHelperInterface >
-getUnoSheetModuleObj( const uno::Reference< sheet::XSpreadsheet >& xSheet ) throw ( uno::RuntimeException )
+getUnoSheetModuleObj( const uno::Reference< sheet::XSpreadsheet >& xSheet )
 {
     uno::Reference< beans::XPropertySet > xProps( xSheet, uno::UNO_QUERY_THROW );
     rtl::OUString sCodeName;
@@ -258,7 +258,7 @@ getUnoSheetModuleObj( const uno::Reference< sheet::XSpreadsheet >& xSheet ) thro
 }
 
 uno::Reference< XHelperInterface >
-getUnoSheetModuleObj( const uno::Reference< table::XCellRange >& xRange ) throw ( uno::RuntimeException )
+getUnoSheetModuleObj( const uno::Reference< table::XCellRange >& xRange )
 {
     uno::Reference< sheet::XSheetCellRange > xSheetRange( xRange, uno::UNO_QUERY_THROW );
     uno::Reference< sheet::XSpreadsheet > xSheet( xSheetRange->getSpreadsheet(), uno::UNO_SET_THROW );
@@ -266,7 +266,7 @@ getUnoSheetModuleObj( const uno::Reference< table::XCellRange >& xRange ) throw 
 }
 
 uno::Reference< XHelperInterface >
-getUnoSheetModuleObj( const uno::Reference< sheet::XSheetCellRangeContainer >& xRanges ) throw ( uno::RuntimeException )
+getUnoSheetModuleObj( const uno::Reference< sheet::XSheetCellRangeContainer >& xRanges )
 {
     uno::Reference< container::XEnumerationAccess > xEnumAccess( xRanges, uno::UNO_QUERY_THROW );
     uno::Reference< container::XEnumeration > xEnum = xEnumAccess->createEnumeration();
@@ -275,7 +275,7 @@ getUnoSheetModuleObj( const uno::Reference< sheet::XSheetCellRangeContainer >& x
 }
 
 uno::Reference< XHelperInterface >
-getUnoSheetModuleObj( const uno::Reference< table::XCell >& xCell ) throw ( uno::RuntimeException )
+getUnoSheetModuleObj( const uno::Reference< table::XCell >& xCell )
 {
     uno::Reference< sheet::XSheetCellRange > xSheetRange( xCell, uno::UNO_QUERY_THROW );
     uno::Reference< sheet::XSpreadsheet > xSheet( xSheetRange->getSpreadsheet(), uno::UNO_SET_THROW );
@@ -283,7 +283,7 @@ getUnoSheetModuleObj( const uno::Reference< table::XCell >& xCell ) throw ( uno:
 }
 
 uno::Reference< XHelperInterface >
-getUnoSheetModuleObj( const uno::Reference< frame::XModel >& xModel, SCTAB nTab ) throw ( uno::RuntimeException )
+getUnoSheetModuleObj( const uno::Reference< frame::XModel >& xModel, SCTAB nTab )
 {
     uno::Reference< sheet::XSpreadsheetDocument > xDoc( xModel, uno::UNO_QUERY_THROW );
     uno::Reference< container::XIndexAccess > xSheets( xDoc->getSheets(), uno::UNO_QUERY_THROW );

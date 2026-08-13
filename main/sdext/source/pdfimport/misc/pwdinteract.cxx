@@ -57,15 +57,15 @@ public:
     explicit PDFPasswordRequest(bool bFirstTry, const rtl::OUString& rName);
 
     // XInteractionRequest
-    virtual uno::Any SAL_CALL getRequest(  ) throw (uno::RuntimeException);
-    virtual uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL getContinuations(  ) throw (uno::RuntimeException);
+    virtual uno::Any SAL_CALL getRequest(  );
+    virtual uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL getContinuations(  );
 
     // XInteractionPassword
-    virtual void SAL_CALL setPassword( const rtl::OUString& rPwd ) throw (uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getPassword() throw (uno::RuntimeException);
+    virtual void SAL_CALL setPassword( const rtl::OUString& rPwd );
+    virtual rtl::OUString SAL_CALL getPassword();
 
     // XInteractionContinuation
-    virtual void SAL_CALL select() throw (uno::RuntimeException);
+    virtual void SAL_CALL select();
 
     bool isSelected() const { osl::MutexGuard const guard( m_aMutex ); return m_bSelected; }
 };
@@ -83,7 +83,7 @@ PDFPasswordRequest::PDFPasswordRequest( bool bFirstTry, const rtl::OUString& rNa
     m_aRequest.Name = rName;
 }
 
-uno::Any SAL_CALL PDFPasswordRequest::getRequest() throw (uno::RuntimeException)
+uno::Any SAL_CALL PDFPasswordRequest::getRequest()
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -92,7 +92,7 @@ uno::Any SAL_CALL PDFPasswordRequest::getRequest() throw (uno::RuntimeException)
     return aRet;
 }
 
-uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL PDFPasswordRequest::getContinuations() throw (uno::RuntimeException)
+uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL PDFPasswordRequest::getContinuations()
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -101,21 +101,21 @@ uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL PDFPa
     return aRet;
 }
 
-void SAL_CALL PDFPasswordRequest::setPassword( const rtl::OUString& rPwd ) throw (uno::RuntimeException)
+void SAL_CALL PDFPasswordRequest::setPassword( const rtl::OUString& rPwd )
 {
     osl::MutexGuard const guard( m_aMutex );
 
     m_aPassword = rPwd;
 }
 
-rtl::OUString SAL_CALL PDFPasswordRequest::getPassword() throw (uno::RuntimeException)
+rtl::OUString SAL_CALL PDFPasswordRequest::getPassword()
 {
     osl::MutexGuard const guard( m_aMutex );
 
     return m_aPassword;
 }
 
-void SAL_CALL PDFPasswordRequest::select() throw (uno::RuntimeException)
+void SAL_CALL PDFPasswordRequest::select()
 {
     osl::MutexGuard const guard( m_aMutex );
 

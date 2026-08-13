@@ -47,26 +47,26 @@ public:
 	virtual ~ScVbaWorkbook() {}
 
     // Attributes
-	virtual ::sal_Bool SAL_CALL getProtectStructure() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< ov::excel::XWorksheet > SAL_CALL getActiveSheet() throw (css::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL getPrecisionAsDisplayed() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setPrecisionAsDisplayed( sal_Bool _precisionAsDisplayed ) throw (css::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL getProtectStructure();
+	virtual css::uno::Reference< ov::excel::XWorksheet > SAL_CALL getActiveSheet();
+	virtual ::sal_Bool SAL_CALL getPrecisionAsDisplayed();
+	virtual void SAL_CALL setPrecisionAsDisplayed( sal_Bool _precisionAsDisplayed );
 
 	// Methods
-	virtual css::uno::Any SAL_CALL Worksheets( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL Sheets( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL Windows( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL Activate() throw (css::uno::RuntimeException);
+	virtual css::uno::Any SAL_CALL Worksheets( const css::uno::Any& aIndex );
+	virtual css::uno::Any SAL_CALL Sheets( const css::uno::Any& aIndex );
+	virtual css::uno::Any SAL_CALL Windows( const css::uno::Any& aIndex );
+    virtual void SAL_CALL Activate();
     // Amelia Wang
-    virtual css::uno::Any SAL_CALL Names( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL Names( const css::uno::Any& aIndex );
 
-	virtual css::uno::Any SAL_CALL Styles( const css::uno::Any& Item ) throw (css::uno::RuntimeException);
-	virtual void SAL_CALL ResetColors(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL Colors( const css::uno::Any& Index ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL FileFormat(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual void SAL_CALL SaveCopyAs( const rtl::OUString& Filename ) throw ( css::uno::RuntimeException);
+	virtual css::uno::Any SAL_CALL Styles( const css::uno::Any& Item );
+	virtual void SAL_CALL ResetColors(  );
+	virtual css::uno::Any SAL_CALL Colors( const css::uno::Any& Index );
+	virtual ::sal_Int32 SAL_CALL FileFormat(  );
+	virtual void SAL_CALL SaveCopyAs( const rtl::OUString& Filename );
     // code name
-    virtual ::rtl::OUString SAL_CALL getCodeName() throw ( css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getCodeName();
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

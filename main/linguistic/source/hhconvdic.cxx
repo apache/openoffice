@@ -70,7 +70,7 @@ using namespace i18n;
 #define SCRIPT_HANGUL   2
 
 // from i18npool/source/textconversion/textconversion_ko.cxx
-sal_Int16 SAL_CALL checkScriptType(sal_Unicode c) throw (RuntimeException)
+sal_Int16 SAL_CALL checkScriptType(sal_Unicode c)
 {
   UErrorCode status = U_ZERO_ERROR;
 
@@ -112,7 +112,6 @@ HHConvDic::~HHConvDic()
 void SAL_CALL HHConvDic::addEntry(
         const OUString& aLeftText,
         const OUString& aRightText )
-    throw (IllegalArgumentException, container::ElementExistException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -125,7 +124,6 @@ void SAL_CALL HHConvDic::addEntry(
 
 
 OUString SAL_CALL HHConvDic::getImplementationName(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return getImplementationName_Static();
@@ -133,7 +131,6 @@ OUString SAL_CALL HHConvDic::getImplementationName(  )
 
 
 sal_Bool SAL_CALL HHConvDic::supportsService( const OUString& rServiceName )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     sal_Bool bRes = sal_False;
@@ -145,7 +142,6 @@ sal_Bool SAL_CALL HHConvDic::supportsService( const OUString& rServiceName )
 
 
 uno::Sequence< OUString > SAL_CALL HHConvDic::getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return getSupportedServiceNames_Static();

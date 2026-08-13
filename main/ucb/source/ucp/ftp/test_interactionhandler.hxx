@@ -45,8 +45,7 @@ namespace test_ftp {
 		// XInterface
 
 		virtual com::sun::star::uno::Any SAL_CALL
-		queryInterface( const com::sun::star::uno::Type& rType )
-			throw( com::sun::star::uno::RuntimeException );
+		queryInterface( const com::sun::star::uno::Type& rType );
 
 
 		virtual void SAL_CALL acquire( void ) throw();
@@ -58,8 +57,7 @@ namespace test_ftp {
 
         virtual void SAL_CALL
         handle( const ::com::sun::star::uno::Reference<
-                ::com::sun::star::task::XInteractionRequest >& Request )
-            throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::task::XInteractionRequest >& Request );
 
     private:
 

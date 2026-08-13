@@ -49,12 +49,10 @@ CRC32::~CRC32()
 {
 }
 void SAL_CALL CRC32::reset()
-	throw(RuntimeException)
 {
 	nCRC=0;
 }
 sal_Int32 SAL_CALL CRC32::getValue()
-	throw(RuntimeException)
 {
 	return nCRC & 0xFFFFFFFFL;
 }
@@ -63,20 +61,17 @@ sal_Int32 SAL_CALL CRC32::getValue()
 void SAL_CALL CRC32::updateSegment(const Sequence< sal_Int8 > &b,
 									sal_Int32 off,
 									sal_Int32 len)
-		throw(RuntimeException)
 {
 	nCRC = crc32(nCRC, (const unsigned char*)b.getConstArray()+off, len );
 }
 /** Update CRC32 with specified sequence of bytes
  */
 void SAL_CALL CRC32::update(const Sequence< sal_Int8 > &b)
-		throw(RuntimeException)
 {
 	nCRC = crc32(nCRC, (const unsigned char*)b.getConstArray(),b.getLength());
 }
 
 sal_Int32 SAL_CALL CRC32::updateStream( Reference < XInputStream > & xStream )
-	throw ( RuntimeException )
 {
 	sal_Int32 nLength, nTotal = 0;
 	Sequence < sal_Int8 > aSeq ( n_ConstBufferSize );

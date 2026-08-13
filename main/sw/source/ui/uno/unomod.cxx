@@ -206,7 +206,7 @@ static ChainablePropertySetInfo * lcl_createPrintSettingsInfo()
  *
  * --------------------------------------------------*/
 Reference< uno::XInterface > SAL_CALL SwXModule_createInstance(
-    const Reference< XMultiServiceFactory > & /*rSMgr*/) throw( Exception )
+    const Reference< XMultiServiceFactory > & /*rSMgr*/)
 {
 	static Reference< uno::XInterface >  xModule = (cppu::OWeakObject*)new SwXModule();
 	return xModule;
@@ -246,7 +246,7 @@ SwXModule::~SwXModule()
 /*-- 17.12.98 12:19:03---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-Reference< XPropertySet >  SwXModule::getViewSettings(void) throw( uno::RuntimeException )
+Reference< XPropertySet >  SwXModule::getViewSettings(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	if(!pxViewSettings)
@@ -260,7 +260,7 @@ Reference< XPropertySet >  SwXModule::getViewSettings(void) throw( uno::RuntimeE
 /*-- 17.12.98 12:19:03---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-Reference< XPropertySet >  SwXModule::getPrintSettings(void) throw( uno::RuntimeException )
+Reference< XPropertySet >  SwXModule::getPrintSettings(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	if(!pxPrintSettings)
@@ -274,14 +274,14 @@ Reference< XPropertySet >  SwXModule::getPrintSettings(void) throw( uno::Runtime
 /* -----------------------------06.04.00 10:59--------------------------------
 
  ---------------------------------------------------------------------------*/
-OUString SwXModule::getImplementationName(void) throw( RuntimeException )
+OUString SwXModule::getImplementationName(void)
 {
     return SwXModule_getImplementationName();
 }
 /* -----------------------------06.04.00 10:59--------------------------------
 
  ---------------------------------------------------------------------------*/
-sal_Bool SwXModule::supportsService(const OUString& rServiceName) throw( RuntimeException )
+sal_Bool SwXModule::supportsService(const OUString& rServiceName)
 {
     const Sequence< OUString > aNames = SwXModule_getSupportedServiceNames();
     for(sal_Int32 nService = 0; nService < aNames.getLength(); nService++)
@@ -294,7 +294,7 @@ sal_Bool SwXModule::supportsService(const OUString& rServiceName) throw( Runtime
 /* -----------------------------06.04.00 10:59--------------------------------
 
  ---------------------------------------------------------------------------*/
-Sequence< OUString > SwXModule::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< OUString > SwXModule::getSupportedServiceNames(void)
 {
     return SwXModule_getSupportedServiceNames();
 }
@@ -321,7 +321,6 @@ SwXPrintSettings::~SwXPrintSettings()
 }
 
 void SwXPrintSettings::_preSetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	switch (meType)
 	{
@@ -342,7 +341,6 @@ void SwXPrintSettings::_preSetValues ()
 }
 
 void SwXPrintSettings::_setSingleValue( const comphelper::PropertyInfo & rInfo, const uno::Any &rValue )
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	sal_Bool bVal;
 	if ( rInfo.mnHandle != HANDLE_PRINTSET_ANNOTATION_MODE &&
@@ -471,13 +469,11 @@ void SwXPrintSettings::_setSingleValue( const comphelper::PropertyInfo & rInfo, 
 	}
 }
 void SwXPrintSettings::_postSetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	mpPrtOpt = NULL;
 }
 
 void SwXPrintSettings::_preGetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	switch (meType)
 	{
@@ -497,7 +493,6 @@ void SwXPrintSettings::_preGetValues ()
 	}
 }
 void SwXPrintSettings::_getSingleValue( const comphelper::PropertyInfo & rInfo, uno::Any & rValue )
-	throw(UnknownPropertyException, WrappedTargetException )
 {
 	switch( rInfo.mnHandle )
 	{
@@ -570,28 +565,27 @@ void SwXPrintSettings::_getSingleValue( const comphelper::PropertyInfo & rInfo, 
 	}
 }
 void SwXPrintSettings::_postGetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	mpPrtOpt = NULL;
 }
 /* -----------------------------06.04.00 11:02--------------------------------
 
  ---------------------------------------------------------------------------*/
-OUString SwXPrintSettings::getImplementationName(void) throw( RuntimeException )
+OUString SwXPrintSettings::getImplementationName(void)
 {
 	return C2U("SwXPrintSettings");
 }
 /* -----------------------------06.04.00 11:02--------------------------------
 
  ---------------------------------------------------------------------------*/
-sal_Bool SwXPrintSettings::supportsService(const OUString& rServiceName) throw( RuntimeException )
+sal_Bool SwXPrintSettings::supportsService(const OUString& rServiceName)
 {
 	return C2U("com.sun.star.text.PrintSettings") == rServiceName;
 }
 /* -----------------------------06.04.00 11:02--------------------------------
 
  ---------------------------------------------------------------------------*/
-Sequence< OUString > SwXPrintSettings::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< OUString > SwXPrintSettings::getSupportedServiceNames(void)
 {
 	Sequence< OUString > aRet(1);
 	OUString* pArray = aRet.getArray();
@@ -632,7 +626,6 @@ SwXViewSettings::~SwXViewSettings()
 
 }
 void SwXViewSettings::_preSetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	const SwViewOption* pVOpt = 0;
 	if(pView)
@@ -650,7 +643,6 @@ void SwXViewSettings::_preSetValues ()
 		mpViewOption->SetStarOneSetting(sal_True);
 }
 void SwXViewSettings::_setSingleValue( const comphelper::PropertyInfo & rInfo, const uno::Any &rValue )
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	sal_Bool bVal = HANDLE_VIEWSET_ZOOM != rInfo.mnHandle ?
 		*(sal_Bool*)rValue.getValue() : sal_False;
@@ -839,7 +831,6 @@ void SwXViewSettings::_setSingleValue( const comphelper::PropertyInfo & rInfo, c
 }
 
 void SwXViewSettings::_postSetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
     if( pView )
     {
@@ -871,7 +862,6 @@ void SwXViewSettings::_postSetValues ()
 }
 
 void SwXViewSettings::_preGetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	if(pView)
 	{
@@ -883,7 +873,6 @@ void SwXViewSettings::_preGetValues ()
 		mpConstViewOption = SW_MOD()->GetViewOption(bWeb);
 }
 void SwXViewSettings::_getSingleValue( const comphelper::PropertyInfo & rInfo, uno::Any & rValue )
-	throw(UnknownPropertyException, WrappedTargetException )
 {
 	sal_Bool bBool = sal_True;
 	sal_Bool bBoolVal;
@@ -1026,22 +1015,21 @@ void SwXViewSettings::_getSingleValue( const comphelper::PropertyInfo & rInfo, u
 		rValue.setValue(&bBoolVal, ::getBooleanCppuType());
 }
 void SwXViewSettings::_postGetValues ()
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	mpConstViewOption = NULL;
 }
 
-OUString SwXViewSettings::getImplementationName(void) throw( RuntimeException )
+OUString SwXViewSettings::getImplementationName(void)
 {
 	return C2U("SwXViewSettings");
 }
 
-sal_Bool SwXViewSettings::supportsService(const OUString& rServiceName) throw( RuntimeException )
+sal_Bool SwXViewSettings::supportsService(const OUString& rServiceName)
 {
 	return C2U("com.sun.star.text.ViewSettings") == rServiceName;
 }
 
-Sequence< OUString > SwXViewSettings::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< OUString > SwXViewSettings::getSupportedServiceNames(void)
 {
 	Sequence< OUString > aRet(1);
 	OUString* pArray = aRet.getArray();

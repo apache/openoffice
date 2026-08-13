@@ -119,13 +119,13 @@ OBookmarkContainer::~OBookmarkContainer()
 
 // XServiceInfo
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OBookmarkContainer::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OBookmarkContainer::getImplementationName(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.comp.dba.OBookmarkContainer");
 }
 
 //--------------------------------------------------------------------------
-sal_Bool SAL_CALL OBookmarkContainer::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL OBookmarkContainer::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -133,7 +133,7 @@ sal_Bool SAL_CALL OBookmarkContainer::supportsService( const ::rtl::OUString& _r
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OBookmarkContainer::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OBookmarkContainer::getSupportedServiceNames(  )
 {
 	Sequence< ::rtl::OUString > aReturn(1);
 	aReturn.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdb.DefinitionContainer");
@@ -142,7 +142,7 @@ Sequence< ::rtl::OUString > SAL_CALL OBookmarkContainer::getSupportedServiceName
 
 // XNameContainer
 //--------------------------------------------------------------------------
-void SAL_CALL OBookmarkContainer::insertByName( const ::rtl::OUString& _rName, const Any& aElement ) throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
+void SAL_CALL OBookmarkContainer::insertByName( const ::rtl::OUString& _rName, const Any& aElement )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_True);
@@ -172,7 +172,7 @@ void SAL_CALL OBookmarkContainer::insertByName( const ::rtl::OUString& _rName, c
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OBookmarkContainer::removeByName( const ::rtl::OUString& _rName ) throw(NoSuchElementException, WrappedTargetException, RuntimeException)
+void SAL_CALL OBookmarkContainer::removeByName( const ::rtl::OUString& _rName )
 {
 	::rtl::OUString sOldBookmark;
 	{
@@ -205,7 +205,7 @@ void SAL_CALL OBookmarkContainer::removeByName( const ::rtl::OUString& _rName ) 
 
 // XNameReplace
 //--------------------------------------------------------------------------
-void SAL_CALL OBookmarkContainer::replaceByName( const ::rtl::OUString& _rName, const Any& aElement ) throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
+void SAL_CALL OBookmarkContainer::replaceByName( const ::rtl::OUString& _rName, const Any& aElement )
 {
 	ClearableMutexGuard aGuard(m_rMutex);
 	checkValid(sal_True);
@@ -241,7 +241,7 @@ void SAL_CALL OBookmarkContainer::replaceByName( const ::rtl::OUString& _rName, 
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OBookmarkContainer::addContainerListener( const Reference< XContainerListener >& _rxListener ) throw(RuntimeException)
+void SAL_CALL OBookmarkContainer::addContainerListener( const Reference< XContainerListener >& _rxListener )
 {
 	MutexGuard aGuard(m_rMutex);
 	if (_rxListener.is())
@@ -249,7 +249,7 @@ void SAL_CALL OBookmarkContainer::addContainerListener( const Reference< XContai
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OBookmarkContainer::removeContainerListener( const Reference< XContainerListener >& _rxListener ) throw(RuntimeException)
+void SAL_CALL OBookmarkContainer::removeContainerListener( const Reference< XContainerListener >& _rxListener )
 {
 	MutexGuard aGuard(m_rMutex);
 	if (_rxListener.is())
@@ -258,7 +258,7 @@ void SAL_CALL OBookmarkContainer::removeContainerListener( const Reference< XCon
 
 // XElementAccess
 //--------------------------------------------------------------------------
-Type SAL_CALL OBookmarkContainer::getElementType( ) throw (RuntimeException)
+Type SAL_CALL OBookmarkContainer::getElementType( )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -266,7 +266,7 @@ Type SAL_CALL OBookmarkContainer::getElementType( ) throw (RuntimeException)
 }
 
 //--------------------------------------------------------------------------
-sal_Bool SAL_CALL OBookmarkContainer::hasElements( ) throw (RuntimeException)
+sal_Bool SAL_CALL OBookmarkContainer::hasElements( )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -275,7 +275,7 @@ sal_Bool SAL_CALL OBookmarkContainer::hasElements( ) throw (RuntimeException)
 
 // XEnumerationAccess
 //--------------------------------------------------------------------------
-Reference< XEnumeration > SAL_CALL OBookmarkContainer::createEnumeration(  ) throw(RuntimeException)
+Reference< XEnumeration > SAL_CALL OBookmarkContainer::createEnumeration(  )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -284,7 +284,7 @@ Reference< XEnumeration > SAL_CALL OBookmarkContainer::createEnumeration(  ) thr
 
 //--------------------------------------------------------------------------
 // XIndexAccess
-sal_Int32 SAL_CALL OBookmarkContainer::getCount(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL OBookmarkContainer::getCount(  )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -292,7 +292,7 @@ sal_Int32 SAL_CALL OBookmarkContainer::getCount(  ) throw(RuntimeException)
 }
 
 //--------------------------------------------------------------------------
-Any SAL_CALL OBookmarkContainer::getByIndex( sal_Int32 _nIndex ) throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+Any SAL_CALL OBookmarkContainer::getByIndex( sal_Int32 _nIndex )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -304,7 +304,7 @@ Any SAL_CALL OBookmarkContainer::getByIndex( sal_Int32 _nIndex ) throw(IndexOutO
 }
 
 //--------------------------------------------------------------------------
-Any SAL_CALL OBookmarkContainer::getByName( const ::rtl::OUString& _rName ) throw(NoSuchElementException, WrappedTargetException, RuntimeException)
+Any SAL_CALL OBookmarkContainer::getByName( const ::rtl::OUString& _rName )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -316,7 +316,7 @@ Any SAL_CALL OBookmarkContainer::getByName( const ::rtl::OUString& _rName ) thro
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OBookmarkContainer::getElementNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OBookmarkContainer::getElementNames(  )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -336,7 +336,7 @@ Sequence< ::rtl::OUString > SAL_CALL OBookmarkContainer::getElementNames(  ) thr
 }
 
 //--------------------------------------------------------------------------
-sal_Bool SAL_CALL OBookmarkContainer::hasByName( const ::rtl::OUString& _rName ) throw(RuntimeException)
+sal_Bool SAL_CALL OBookmarkContainer::hasByName( const ::rtl::OUString& _rName )
 {
 	MutexGuard aGuard(m_rMutex);
 	checkValid(sal_False);
@@ -396,18 +396,18 @@ void OBookmarkContainer::implReplace(const ::rtl::OUString& _rName, const ::rtl:
 }
 
 //--------------------------------------------------------------------------
-void OBookmarkContainer::checkValid(sal_Bool /*_bIntendWriteAccess*/) const throw (RuntimeException, DisposedException)
+void OBookmarkContainer::checkValid(sal_Bool /*_bIntendWriteAccess*/) const
 {
 }
 
 //--------------------------------------------------------------------------
-Reference< XInterface > SAL_CALL OBookmarkContainer::getParent(  ) throw (RuntimeException)
+Reference< XInterface > SAL_CALL OBookmarkContainer::getParent(  )
 {
 	return m_rParent;
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OBookmarkContainer::setParent( const Reference< XInterface >& /*Parent*/ ) throw (NoSupportException, RuntimeException)
+void SAL_CALL OBookmarkContainer::setParent( const Reference< XInterface >& /*Parent*/ )
 {
 	throw NoSupportException();
 }

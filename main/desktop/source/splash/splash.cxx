@@ -92,7 +92,6 @@ SplashScreen::~SplashScreen()
 }
 
 void SAL_CALL SplashScreen::start(const OUString&, sal_Int32 nRange)
-	throw (RuntimeException)
 {
     _iMax = nRange;
     if (_bVisible) {
@@ -107,7 +106,6 @@ void SAL_CALL SplashScreen::start(const OUString&, sal_Int32 nRange)
 }
 
 void SAL_CALL SplashScreen::end()
-	throw (RuntimeException)
 {
     _iProgress = _iMax;
     if (_bVisible )
@@ -120,7 +118,6 @@ void SAL_CALL SplashScreen::end()
 }
 
 void SAL_CALL SplashScreen::reset()
-	throw (RuntimeException)
 {
     _iProgress = 0;
     if (_bVisible && !_bProgressEnd )
@@ -133,7 +130,6 @@ void SAL_CALL SplashScreen::reset()
 }
 
 void SAL_CALL SplashScreen::setText(const OUString& rText)
-	throw (RuntimeException)
 {
     ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     if ( _sProgressText != rText )
@@ -151,7 +147,6 @@ void SAL_CALL SplashScreen::setText(const OUString& rText)
 }
 
 void SAL_CALL SplashScreen::setValue(sal_Int32 nValue)
-	throw (RuntimeException)
 {
     RTL_LOGFILE_CONTEXT( aLog, "::SplashScreen::setValue (lo119109)" );
     RTL_LOGFILE_CONTEXT_TRACE1( aLog, "value=%d", nValue );
@@ -170,7 +165,6 @@ void SAL_CALL SplashScreen::setValue(sal_Int32 nValue)
 // XInitialize
 void SAL_CALL
 SplashScreen::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any>& aArguments )
-	throw (RuntimeException)
 {
 	::osl::ClearableMutexGuard	aGuard(	_aMutex );
 	if (aArguments.getLength() > 0)

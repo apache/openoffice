@@ -82,8 +82,7 @@ public:
 //    virtual ~TestDataSink();
 
     // XInterface methods
-    virtual Any SAL_CALL queryInterface( const Type & rType )
-        throw( RuntimeException );
+    virtual Any SAL_CALL queryInterface( const Type & rType );
     virtual void SAL_CALL acquire()
         throw ();
     virtual void SAL_CALL release()
@@ -91,10 +90,8 @@ public:
 
     // XActiveDataSink methods.
     virtual void SAL_CALL setInputStream(
-                                const uno::Reference< XInputStream >& aStream )
-        throw( RuntimeException );
-    virtual uno::Reference< XInputStream > SAL_CALL getInputStream()
-        throw( RuntimeException );
+                                const uno::Reference< XInputStream >& aStream );
+    virtual uno::Reference< XInputStream > SAL_CALL getInputStream();
 };
 
 //=========================================================================
@@ -216,7 +213,6 @@ public:
 
 // virtual
 Any SAL_CALL TestDataSink::queryInterface( const Type & rType )
-    throw( RuntimeException )
 {
     Any aRet = cppu::queryInterface(
                         rType,
@@ -244,7 +240,6 @@ void SAL_CALL TestDataSink::release()
 // virtual
 void SAL_CALL TestDataSink::setInputStream(
                                 const uno::Reference< XInputStream >& aStream )
-    throw( RuntimeException )
 {
     m_xStream = aStream;
 }
@@ -252,7 +247,6 @@ void SAL_CALL TestDataSink::setInputStream(
 //=========================================================================
 // virtual
 uno::Reference< XInputStream > SAL_CALL TestDataSink::getInputStream()
-    throw( RuntimeException )
 {
     return m_xStream;
 }

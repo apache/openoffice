@@ -53,7 +53,6 @@ Stream::~Stream( void )
 }
 
 Any Stream::queryInterface( const Type &type )
-    throw( RuntimeException )
 {
     Any aRet = ::cppu::queryInterface
         ( type,
@@ -72,7 +71,6 @@ Any Stream::queryInterface( const Type &type )
 
 com::sun::star::uno::Reference< com::sun::star::io::XInputStream > SAL_CALL
 Stream::getInputStream(  )
-    throw( com::sun::star::uno::RuntimeException )
 {
     {
         osl::MutexGuard aGuard( m_aMutex );
@@ -83,7 +81,6 @@ Stream::getInputStream(  )
 
 com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > SAL_CALL
 Stream::getOutputStream(  )
-    throw( com::sun::star::uno::RuntimeException )
 {
     {
         osl::MutexGuard aGuard( m_aMutex );
@@ -98,10 +95,6 @@ Stream::getOutputStream(  )
 
 sal_Int32 SAL_CALL Stream::readBytes(
     Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
-        throw( NotConnectedException,
-               BufferSizeExceededException,
-               IOException,
-               RuntimeException )
 {
     GnomeVFSResult   result;
     GnomeVFSFileSize nBytesRead = 0;
@@ -139,10 +132,6 @@ sal_Int32 SAL_CALL Stream::readBytes(
 
 sal_Int32 SAL_CALL Stream::readSomeBytes(
     Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
-            throw( NotConnectedException,
-               BufferSizeExceededException,
-               IOException,
-               RuntimeException )
 {
     // Again - having 2 methods here just sucks; cf. filinpstr.cxx
     // This can never be an effective non-blocking API - so why bother ?
@@ -150,10 +139,6 @@ sal_Int32 SAL_CALL Stream::readSomeBytes(
 }
 
 void SAL_CALL Stream::skipBytes( sal_Int32 nBytesToSkip )
-        throw( NotConnectedException,
-               BufferSizeExceededException,
-               IOException,
-               RuntimeException )
 {
     GnomeVFSResult result;
 
@@ -170,17 +155,11 @@ void SAL_CALL Stream::skipBytes( sal_Int32 nBytesToSkip )
 }
 
 sal_Int32 SAL_CALL Stream::available(  )
-        throw( NotConnectedException,
-               IOException,
-               RuntimeException )
 {
     return 0; // cf. filinpstr.cxx
 }
 
 void SAL_CALL Stream::closeInput( void )
-        throw( NotConnectedException,
-                   IOException,
-                   RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
     m_bInputStreamCalled = false;
@@ -194,9 +173,6 @@ void SAL_CALL Stream::closeInput( void )
 // -------------------------------------------------------------------
 
 void SAL_CALL Stream::seek( sal_Int64 location )
-        throw( ::com::sun::star::lang::IllegalArgumentException,
-               IOException,
-               RuntimeException )
 {
     GnomeVFSResult result;
 
@@ -216,8 +192,6 @@ void SAL_CALL Stream::seek( sal_Int64 location )
 }
 
 sal_Int64 SAL_CALL Stream::getPosition()
-        throw( IOException,
-               RuntimeException )
 {
     GnomeVFSFileSize nBytesIn = 0;
 
@@ -230,7 +204,6 @@ sal_Int64 SAL_CALL Stream::getPosition()
 }
 
 sal_Int64 SAL_CALL Stream::getLength()
-    throw( IOException, RuntimeException )
 {
     // FIXME: so this sucks; it may be stale but ...
     if (m_info.valid_fields & GNOME_VFS_FILE_INFO_FIELDS_SIZE)
@@ -246,8 +219,6 @@ sal_Int64 SAL_CALL Stream::getLength()
 // -------------------------------------------------------------------
 
 void SAL_CALL Stream::truncate( void )
-    throw( com::sun::star::io::IOException,
-           com::sun::star::uno::RuntimeException )
 {
     if( ! m_handle )
         throw IOException();
@@ -260,10 +231,6 @@ void SAL_CALL Stream::truncate( void )
 // -------------------------------------------------------------------
 
 void SAL_CALL Stream::writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData )
-    throw( com::sun::star::io::NotConnectedException,
-           com::sun::star::io::BufferSizeExceededException,
-           com::sun::star::io::IOException,
-           com::sun::star::uno::RuntimeException)
 {
     GnomeVFSResult   result = GNOME_VFS_OK;
     GnomeVFSFileSize toWrite = aData.getLength();
@@ -286,15 +253,10 @@ void SAL_CALL Stream::writeBytes( const com::sun::star::uno::Sequence< sal_Int8 
 }
 
 void SAL_CALL Stream::flush( void )
-    throw( NotConnectedException, BufferSizeExceededException,
-           IOException, RuntimeException )
 {
 }
 
 void SAL_CALL Stream::closeOutput( void )
-    throw( com::sun::star::io::NotConnectedException,
-           com::sun::star::io::IOException,
-           com::sun::star::uno::RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
     m_bOutputStreamCalled = false;
@@ -308,9 +270,6 @@ void SAL_CALL Stream::closeOutput( void )
 // -------------------------------------------------------------------
 
 void Stream::closeStream( void )
-    throw( ::com::sun::star::io::NotConnectedException,
-           ::com::sun::star::io::IOException,
-           ::com::sun::star::uno::RuntimeException )
 {
     if (m_handle) {
         gnome_vfs_close (m_handle);
@@ -320,10 +279,6 @@ void Stream::closeStream( void )
 }
 
 void Stream::throwOnError( GnomeVFSResult result )
-    throw( NotConnectedException,
-           BufferSizeExceededException,
-           IOException,
-           RuntimeException )
 {
     if( result != GNOME_VFS_OK ) {
         ::rtl::OUString aMsg = ::rtl::OUString::createFromAscii

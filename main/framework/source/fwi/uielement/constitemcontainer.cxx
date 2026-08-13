@@ -76,9 +76,9 @@ public:
 	OPropertySetHelperInfo_Impl( IPropertyArrayHelper & rHelper_ ) SAL_THROW( () );
 
 	// XPropertySetInfo-Methoden
-    virtual Sequence< Property > SAL_CALL getProperties(void) throw(::com::sun::star::uno::RuntimeException);
-    virtual Property SAL_CALL getPropertyByName(const ::rtl::OUString& PropertyName) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasPropertyByName(const ::rtl::OUString& PropertyName) throw(::com::sun::star::uno::RuntimeException);
+    virtual Sequence< Property > SAL_CALL getProperties(void);
+    virtual Property SAL_CALL getPropertyByName(const ::rtl::OUString& PropertyName);
+    virtual sal_Bool SAL_CALL hasPropertyByName(const ::rtl::OUString& PropertyName);
 };
 
 
@@ -95,7 +95,7 @@ OPropertySetHelperInfo_Impl::OPropertySetHelperInfo_Impl(
 /**
  * Return the sequence of properties, which are provided throug the constructor.
  */
-Sequence< Property > OPropertySetHelperInfo_Impl::getProperties(void) throw(::com::sun::star::uno::RuntimeException)
+Sequence< Property > OPropertySetHelperInfo_Impl::getProperties(void)
 {
 	return aInfos;
 }
@@ -103,7 +103,7 @@ Sequence< Property > OPropertySetHelperInfo_Impl::getProperties(void) throw(::co
 /**
  * Return the sequence of properties, which are provided throug the constructor.
  */
-Property OPropertySetHelperInfo_Impl::getPropertyByName( const ::rtl::OUString & PropertyName ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException)
+Property OPropertySetHelperInfo_Impl::getPropertyByName( const ::rtl::OUString & PropertyName )
 {
 	Property * pR;
 	pR = (Property *)bsearch( &PropertyName, aInfos.getConstArray(), aInfos.getLength(),
@@ -119,7 +119,7 @@ Property OPropertySetHelperInfo_Impl::getPropertyByName( const ::rtl::OUString &
 /**
  * Return the sequence of properties, which are provided throug the constructor.
  */
-sal_Bool OPropertySetHelperInfo_Impl::hasPropertyByName( const ::rtl::OUString & PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool OPropertySetHelperInfo_Impl::hasPropertyByName( const ::rtl::OUString & PropertyName )
 {
 	Property * pR;
 	pR = (Property *)bsearch( &PropertyName, aInfos.getConstArray(), aInfos.getLength(),
@@ -285,7 +285,7 @@ Reference< XIndexAccess > ConstItemContainer::deepCopyContainer( const Reference
 }
 
 // XUnoTunnel
-sal_Int64 ConstItemContainer::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int64 ConstItemContainer::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier )
 {
     if( ( rIdentifier.getLength() == 16 ) && ( 0 == rtl_compareMemory( ConstItemContainer::GetUnoTunnelId().getConstArray(), rIdentifier.getConstArray(), 16 ) ) )
 	{
@@ -319,20 +319,17 @@ ConstItemContainer* ConstItemContainer::GetImplementation( const ::com::sun::sta
 
 // XElementAccess
 sal_Bool SAL_CALL ConstItemContainer::hasElements()
-throw ( RuntimeException )
 {
     return ( !m_aItemVector.empty() );
 }
 
 // XIndexAccess
 sal_Int32 SAL_CALL ConstItemContainer::getCount()
-throw ( RuntimeException )
 {
     return m_aItemVector.size();
 }
 
 Any SAL_CALL ConstItemContainer::getByIndex( sal_Int32 Index )
-throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
     if ( sal_Int32( m_aItemVector.size()) > Index )
         return makeAny( m_aItemVector[Index] );
@@ -342,7 +339,6 @@ throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 
 // XPropertySet
 Reference< XPropertySetInfo > SAL_CALL ConstItemContainer::getPropertySetInfo()
-throw (::com::sun::star::uno::RuntimeException)
 {
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't must use a mutex at every call!
@@ -367,12 +363,10 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 void SAL_CALL ConstItemContainer::setPropertyValue( const ::rtl::OUString&, const Any& )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 }
 
 Any SAL_CALL ConstItemContainer::getPropertyValue( const ::rtl::OUString& PropertyName )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     if ( PropertyName.equals( PROPNAME_UINAME ))
         return makeAny( m_aUIName );
@@ -381,36 +375,30 @@ throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang
 }
 
 void SAL_CALL ConstItemContainer::addPropertyChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 }
 
 void SAL_CALL ConstItemContainer::removePropertyChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     // Only read-only properties - do nothing
 }
 
 void SAL_CALL ConstItemContainer::addVetoableChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     // Only read-only properties - do nothing
 }
 
 void SAL_CALL ConstItemContainer::removeVetoableChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     // Only read-only properties - do nothing
 }
 
 // XFastPropertySet
 void SAL_CALL ConstItemContainer::setFastPropertyValue( sal_Int32, const ::com::sun::star::uno::Any& )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 }
 
 Any SAL_CALL ConstItemContainer::getFastPropertyValue( sal_Int32 nHandle )
-throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     if ( nHandle == PROPHANDLE_UINAME )
         return makeAny( m_aUIName );

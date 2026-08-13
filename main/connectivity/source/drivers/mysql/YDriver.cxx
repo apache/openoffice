@@ -47,7 +47,7 @@ namespace connectivity
 
 	namespace mysql
 	{
-		Reference< XInterface >  SAL_CALL ODriverDelegator_CreateInstance(const Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFac) throw( Exception )
+		Reference< XInterface >  SAL_CALL ODriverDelegator_CreateInstance(const Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFac)
 		{
 			return *(new ODriverDelegator(_rxFac));
 		}
@@ -244,7 +244,7 @@ namespace connectivity
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XConnection > SAL_CALL ODriverDelegator::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info ) throw (SQLException, RuntimeException)
+	Reference< XConnection > SAL_CALL ODriverDelegator::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info )
 	{
 		Reference< XConnection > xConnection;
 		if ( acceptsURL(url) )
@@ -306,7 +306,7 @@ namespace connectivity
 	}
 
 	//--------------------------------------------------------------------
-	sal_Bool SAL_CALL ODriverDelegator::acceptsURL( const ::rtl::OUString& url ) throw (SQLException, RuntimeException)
+	sal_Bool SAL_CALL ODriverDelegator::acceptsURL( const ::rtl::OUString& url )
 	{
 		Sequence< PropertyValue > info;
 
@@ -319,7 +319,7 @@ namespace connectivity
 	}
 
 	//--------------------------------------------------------------------
-	Sequence< DriverPropertyInfo > SAL_CALL ODriverDelegator::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ ) throw (SQLException, RuntimeException)
+	Sequence< DriverPropertyInfo > SAL_CALL ODriverDelegator::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ )
 	{
 		::std::vector< DriverPropertyInfo > aDriverInfo;
 		if ( !acceptsURL(url) )
@@ -379,19 +379,19 @@ namespace connectivity
 	}
 
 	//--------------------------------------------------------------------
-	sal_Int32 SAL_CALL ODriverDelegator::getMajorVersion(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL ODriverDelegator::getMajorVersion(  )
 	{
 		return 1;
 	}
 
 	//--------------------------------------------------------------------
-	sal_Int32 SAL_CALL ODriverDelegator::getMinorVersion(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL ODriverDelegator::getMinorVersion(  )
 	{
 		return 0;
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XTablesSupplier > SAL_CALL ODriverDelegator::getDataDefinitionByConnection( const Reference< XConnection >& connection ) throw (SQLException, RuntimeException)
+	Reference< XTablesSupplier > SAL_CALL ODriverDelegator::getDataDefinitionByConnection( const Reference< XConnection >& connection )
 	{
 		::osl::MutexGuard aGuard( m_aMutex );
 		checkDisposed(ODriverDelegator_BASE::rBHelper.bDisposed);
@@ -441,7 +441,7 @@ namespace connectivity
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XTablesSupplier > SAL_CALL ODriverDelegator::getDataDefinitionByURL( const ::rtl::OUString& url, const Sequence< PropertyValue >& info ) throw (SQLException, RuntimeException)
+	Reference< XTablesSupplier > SAL_CALL ODriverDelegator::getDataDefinitionByURL( const ::rtl::OUString& url, const Sequence< PropertyValue >& info )
 	{
 		if ( ! acceptsURL(url) )
         {
@@ -456,12 +456,12 @@ namespace connectivity
 	// XServiceInfo
 	// --------------------------------------------------------------------------------
 	//------------------------------------------------------------------------------
-	rtl::OUString ODriverDelegator::getImplementationName_Static(  ) throw(RuntimeException)
+	rtl::OUString ODriverDelegator::getImplementationName_Static(  )
 	{
 		return rtl::OUString::createFromAscii("org.openoffice.comp.drivers.MySQL.Driver");
 	}
 	//------------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > ODriverDelegator::getSupportedServiceNames_Static(  ) throw (RuntimeException)
+	Sequence< ::rtl::OUString > ODriverDelegator::getSupportedServiceNames_Static(  )
 	{
 		Sequence< ::rtl::OUString > aSNS( 2 );
 		aSNS[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.Driver");
@@ -469,13 +469,13 @@ namespace connectivity
 		return aSNS;
 	}
 	//------------------------------------------------------------------
-	::rtl::OUString SAL_CALL ODriverDelegator::getImplementationName(  ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL ODriverDelegator::getImplementationName(  )
 	{
 		return getImplementationName_Static();
 	}
 
 	//------------------------------------------------------------------
-	sal_Bool SAL_CALL ODriverDelegator::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+	sal_Bool SAL_CALL ODriverDelegator::supportsService( const ::rtl::OUString& _rServiceName )
 	{
 		Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 		const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -486,7 +486,7 @@ namespace connectivity
 		return pSupported != pEnd;
 	}
 	//------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL ODriverDelegator::getSupportedServiceNames(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL ODriverDelegator::getSupportedServiceNames(  )
 	{
 		return getSupportedServiceNames_Static();
 	}

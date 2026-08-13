@@ -42,30 +42,22 @@ public:
     virtual ~WriterFilterDetection();
 
     //XExtendedFilterDetection
-    virtual ::rtl::OUString SAL_CALL detect( com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& Descriptor )
-        throw( com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL detect( com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& Descriptor );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 };
 
-::rtl::OUString WriterFilterDetection_getImplementationName()
-    throw ( ::com::sun::star::uno::RuntimeException );
+::rtl::OUString WriterFilterDetection_getImplementationName();
 
-sal_Bool SAL_CALL WriterFilterDetection_supportsService( const ::rtl::OUString& ServiceName )
-    throw ( ::com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL WriterFilterDetection_supportsService( const ::rtl::OUString& ServiceName );
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL WriterFilterDetection_getSupportedServiceNames(  )
-    throw ( ::com::sun::star::uno::RuntimeException );
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL WriterFilterDetection_getSupportedServiceNames(  );
 
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL WriterFilterDetection_createInstance(
                                                                         const ::com::sun::star::uno::Reference<
-                                                                        ::com::sun::star::uno::XComponentContext > &xContext)
-    throw( ::com::sun::star::uno::Exception );
+                                                                        ::com::sun::star::uno::XComponentContext > &xContext);
 
 #endif

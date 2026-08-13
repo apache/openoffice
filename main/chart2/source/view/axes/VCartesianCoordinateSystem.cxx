@@ -59,7 +59,6 @@ public:
 
     //XTextualDataSequence
     virtual uno::Sequence< ::rtl::OUString > SAL_CALL getTextualData()
-        throw ( uno::RuntimeException)
     {
         return m_aTextSequence;
     }

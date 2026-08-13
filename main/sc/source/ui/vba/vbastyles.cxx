@@ -37,7 +37,7 @@ lcl_createAPIStyleToVBAObject( const css::uno::Any& aObject, const uno::Referenc
 }
 
 
-ScVbaStyles::ScVbaStyles( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xModel ) throw ( script::BasicErrorException ) : ScVbaStyles_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( ScVbaStyle::getStylesNameContainer( xModel ), uno::UNO_QUERY_THROW ) ), mxModel( xModel ), mxParent( xParent )
+ScVbaStyles::ScVbaStyles( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xModel ) : ScVbaStyles_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( ScVbaStyle::getStylesNameContainer( xModel ), uno::UNO_QUERY_THROW ) ), mxModel( xModel ), mxParent( xParent )
 {
 	try
 	{
@@ -51,7 +51,7 @@ ScVbaStyles::ScVbaStyles( const uno::Reference< XHelperInterface >& xParent, con
 }
 
 uno::Sequence< rtl::OUString >
-ScVbaStyles::getStyleNames() throw ( uno::RuntimeException )
+ScVbaStyles::getStyleNames()
 {
 	return mxNameContainerCellStyles->getElementNames();
 }
@@ -64,7 +64,7 @@ ScVbaStyles::createCollectionObject(const uno::Any& aObject)
 }
 
 uno::Type SAL_CALL
-ScVbaStyles::getElementType() throw (uno::RuntimeException)
+ScVbaStyles::getElementType()
 {
 	return excel::XStyle::static_type(0);
 }
@@ -79,11 +79,11 @@ class EnumWrapper : public EnumerationHelper_BASE
         sal_Int32 nIndex;
 public:
         EnumWrapper( const uno::Reference< container::XIndexAccess >& xIndexAccess, const uno::Reference<XHelperInterface >& xParent, const uno::Reference<uno::XComponentContext >& xContext, const uno::Reference<frame::XModel >& xModel ) : m_xIndexAccess( xIndexAccess ), m_xParent( xParent ), m_xContext( xContext ), m_xModel( xModel ), nIndex( 0 ) {}
-        virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+        virtual ::sal_Bool SAL_CALL hasMoreElements(  )
         {
                 return ( nIndex < m_xIndexAccess->getCount() );
         }
-        virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+        virtual uno::Any SAL_CALL nextElement(  )
         {
                 if ( nIndex < m_xIndexAccess->getCount() )
                         return lcl_createAPIStyleToVBAObject( m_xIndexAccess->getByIndex( nIndex++ ), m_xParent, m_xContext, m_xModel );
@@ -92,13 +92,13 @@ public:
 };
 
 uno::Reference< container::XEnumeration > SAL_CALL
-ScVbaStyles::createEnumeration() throw (uno::RuntimeException)
+ScVbaStyles::createEnumeration()
 {
 	return new EnumWrapper( m_xIndexAccess, mxParent, mxContext, mxModel );
 }
 
 uno::Reference< excel::XStyle > SAL_CALL
-ScVbaStyles::Add( const ::rtl::OUString& _sName, const uno::Any& _aBasedOn ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaStyles::Add( const ::rtl::OUString& _sName, const uno::Any& _aBasedOn )
 {
 	uno::Reference< excel::XStyle > aRet;
 	try
@@ -145,7 +145,7 @@ ScVbaStyles::Add( const ::rtl::OUString& _sName, const uno::Any& _aBasedOn ) thr
 }
 
 void
-ScVbaStyles::Delete(const rtl::OUString _sStyleName) throw ( script::BasicErrorException )
+ScVbaStyles::Delete(const rtl::OUString _sStyleName)
 {
 	try
 	{

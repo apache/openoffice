@@ -60,7 +60,7 @@ OAdabasConnection::OAdabasConnection(const SQLHANDLE _pDriverHandle, connectivit
 	m_bUseOldDateFormat = sal_True;
 }
 //-----------------------------------------------------------------------------
-SQLRETURN OAdabasConnection::Construct( const ::rtl::OUString& url,const Sequence< PropertyValue >& info) throw(SQLException)
+SQLRETURN OAdabasConnection::Construct( const ::rtl::OUString& url,const Sequence< PropertyValue >& info)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -185,7 +185,7 @@ Reference< XTablesSupplier > OAdabasConnection::createCatalog()
 	return xTab;
 }
 // --------------------------------------------------------------------------------
-Reference< XDatabaseMetaData > SAL_CALL OAdabasConnection::getMetaData(  ) throw(SQLException, RuntimeException)
+Reference< XDatabaseMetaData > SAL_CALL OAdabasConnection::getMetaData(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OConnection_BASE2::rBHelper.bDisposed);
@@ -201,7 +201,7 @@ Reference< XDatabaseMetaData > SAL_CALL OAdabasConnection::getMetaData(  ) throw
 	return xMetaData;
 }
 // --------------------------------------------------------------------------------
-Reference< XStatement > SAL_CALL OAdabasConnection::createStatement(  ) throw(SQLException, RuntimeException)
+Reference< XStatement > SAL_CALL OAdabasConnection::createStatement(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OConnection_BASE2::rBHelper.bDisposed);
@@ -211,7 +211,7 @@ Reference< XStatement > SAL_CALL OAdabasConnection::createStatement(  ) throw(SQ
 	return xReturn;
 }
 // --------------------------------------------------------------------------------
-Reference< XPreparedStatement > SAL_CALL OAdabasConnection::prepareStatement( const ::rtl::OUString& sql ) throw(SQLException, RuntimeException)
+Reference< XPreparedStatement > SAL_CALL OAdabasConnection::prepareStatement( const ::rtl::OUString& sql )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OConnection_BASE2::rBHelper.bDisposed);
@@ -221,7 +221,7 @@ Reference< XPreparedStatement > SAL_CALL OAdabasConnection::prepareStatement( co
 	return xReturn;
 }
 // -----------------------------------------------------------------------------
-sal_Int64 SAL_CALL OAdabasConnection::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw (::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL OAdabasConnection::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId )
 {
 	return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
 				? reinterpret_cast< sal_Int64 >( this )

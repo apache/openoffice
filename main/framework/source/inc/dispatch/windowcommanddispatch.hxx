@@ -129,8 +129,7 @@ class WindowCommandDispatch : private ThreadHelpBase
     public:
 
         // XEventListener
-         virtual void SAL_CALL disposing(const css::lang::EventObject& aSource)
-            throw (css::uno::RuntimeException);
+         virtual void SAL_CALL disposing(const css::lang::EventObject& aSource);
 
     //___________________________________________
     // implementation

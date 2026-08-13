@@ -95,32 +95,30 @@ OEMPreloadJob::~OEMPreloadJob()
 }
 
 // XComponent
-void SAL_CALL OEMPreloadJob::dispose() throw ( RuntimeException )
+void SAL_CALL OEMPreloadJob::dispose()
 {
     EventObject aObject;
     aObject.Source = (XComponent*)this;
     m_aListeners.disposeAndClear( aObject );
 }
 
-void SAL_CALL OEMPreloadJob::addEventListener( const Reference< XEventListener > & aListener) throw ( RuntimeException )
+void SAL_CALL OEMPreloadJob::addEventListener( const Reference< XEventListener > & aListener)
 {
     m_aListeners.addInterface( aListener );
 }
 
-void SAL_CALL OEMPreloadJob::removeEventListener( const Reference< XEventListener > & aListener ) throw ( RuntimeException )
+void SAL_CALL OEMPreloadJob::removeEventListener( const Reference< XEventListener > & aListener )
 {
     m_aListeners.removeInterface( aListener );
 }
 
 // XServiceInfo
 ::rtl::OUString SAL_CALL OEMPreloadJob::getImplementationName()
-throw ( RuntimeException )
 {
 	return OEMPreloadJob::GetImplementationName();
 }
 
 sal_Bool SAL_CALL OEMPreloadJob::supportsService( const ::rtl::OUString& rServiceName )
-throw ( RuntimeException )
 {
 	sal_Int32 nSize = sizeof( interfaces ) / sizeof( const char *);
 
@@ -131,14 +129,12 @@ throw ( RuntimeException )
 }
 
 Sequence< ::rtl::OUString > SAL_CALL OEMPreloadJob::getSupportedServiceNames()
-throw ( RuntimeException )
 {
 	return OEMPreloadJob::GetSupportedServiceNames();
 }
 
 // XJob
 Any SAL_CALL OEMPreloadJob::execute(const Sequence<NamedValue>&)
-throw ( RuntimeException )
 {
     sal_Bool bCont = sal_False;
     // are we an OEM version at all?

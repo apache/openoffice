@@ -63,72 +63,42 @@ namespace odma
 		sal_Bool						    m_bOutputStreamCalled;
 		sal_Bool						    m_bModified;
 
-		void ensureInputStream()  throw( ::com::sun::star::io::IOException );
-		void ensureOutputStream()  throw( ::com::sun::star::io::IOException );
-		void SAL_CALL closeStream() throw(	::com::sun::star::io::NotConnectedException,
-											::com::sun::star::io::IOException,
-											::com::sun::star::uno::RuntimeException );
+		void ensureInputStream();
+		void ensureOutputStream();
+		void SAL_CALL closeStream();
 	public:
 		OOdmaStream(::ucbhelper::Content* _pContent,
 					ContentProvider* _pProvider,
 					const ::rtl::Reference<ContentProperties>& _rProp);
 		virtual ~OOdmaStream();
 		// com::sun::star::io::XInputStream
-		virtual sal_Int32 SAL_CALL readBytes( ::com::sun::star::uno::Sequence<sal_Int8>& aData, sal_Int32 nBytesToRead )
-			throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException,
-				  ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL readBytes( ::com::sun::star::uno::Sequence<sal_Int8>& aData, sal_Int32 nBytesToRead );
 
-		virtual sal_Int32 SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence<sal_Int8>& aData, sal_Int32 nMaxBytesToRead )
-			throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException,
-				  ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence<sal_Int8>& aData, sal_Int32 nMaxBytesToRead );
 
-		virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip )
-			throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException,
-				  ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip );
 
-		virtual sal_Int32 SAL_CALL available(  )
-			throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL available(  );
 
-		virtual void SAL_CALL closeInput(  )
-			throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL closeInput(  );
 
 		// com::sun::star::io::XStream
-		virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream > SAL_CALL getInputStream(  ) throw( com::sun::star::uno::RuntimeException );
-		virtual com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > SAL_CALL getOutputStream(  ) throw( com::sun::star::uno::RuntimeException );
+		virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream > SAL_CALL getInputStream(  );
+		virtual com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > SAL_CALL getOutputStream(  );
 
 		// com::sun::star::io::XOutputStream
-		void SAL_CALL writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData )
-					throw( com::sun::star::io::NotConnectedException,
-						   com::sun::star::io::BufferSizeExceededException,
-						   com::sun::star::io::IOException,
-						   com::sun::star::uno::RuntimeException);
+		void SAL_CALL writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData );
 
-		void SAL_CALL flush()
-					throw( com::sun::star::io::NotConnectedException,
-						   com::sun::star::io::BufferSizeExceededException,
-						   com::sun::star::io::IOException,
-						   com::sun::star::uno::RuntimeException);
-        void SAL_CALL closeOutput()
-					throw( com::sun::star::io::NotConnectedException,
-						   com::sun::star::io::IOException,
-						   com::sun::star::uno::RuntimeException );
+		void SAL_CALL flush();
+        void SAL_CALL closeOutput();
 		// XTruncate
-		virtual void SAL_CALL truncate( void )
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL truncate( void );
 		// XSeekable
-		void SAL_CALL seek(sal_Int64 location )
-			throw( com::sun::star::lang::IllegalArgumentException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		void SAL_CALL seek(sal_Int64 location );
 
-		sal_Int64 SAL_CALL getPosition()
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		sal_Int64 SAL_CALL getPosition();
 
-		sal_Int64 SAL_CALL getLength()
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		sal_Int64 SAL_CALL getLength();
 	};
 }
 #endif // ODMA_INPUTSTREAM_HXX

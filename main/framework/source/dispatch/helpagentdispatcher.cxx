@@ -83,7 +83,6 @@ HelpAgentDispatcher::~HelpAgentDispatcher()
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::dispatch(const css::util::URL& 								   aURL ,
 											const css::uno::Sequence< css::beans::PropertyValue >&)
-	throw(css::uno::RuntimeException)
 {
 	// silently drop the request if the new URL was marked to be ignored next time.
 	sal_Int32 nAllowedToIgnore = SvtHelpOptions().getAgentIgnoreURLCounter(aURL.Complete);
@@ -111,7 +110,6 @@ void SAL_CALL HelpAgentDispatcher::dispatch(const css::util::URL& 								   aUR
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::addStatusListener(const css::uno::Reference< css::frame::XStatusListener >&,
 													 const css::util::URL&)
-	throw(css::uno::RuntimeException)
 {
 	// no status available
 }
@@ -119,42 +117,36 @@ void SAL_CALL HelpAgentDispatcher::addStatusListener(const css::uno::Reference< 
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::removeStatusListener(const css::uno::Reference< css::frame::XStatusListener >&,
 														const css::util::URL&)
-	throw(css::uno::RuntimeException)
 {
 	// no status available
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::windowResized(const css::awt::WindowEvent&)
-	throw(css::uno::RuntimeException)
 {
 	implts_positionAgentWindow();
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::windowMoved(const css::awt::WindowEvent&)
-	throw(css::uno::RuntimeException)
 {
 	implts_positionAgentWindow();
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::windowShown(const css::lang::EventObject&)
-	throw(css::uno::RuntimeException)
 {
 	implts_showAgentWindow();
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::windowHidden(const css::lang::EventObject&)
-	throw(css::uno::RuntimeException)
 {
 	implts_hideAgentWindow();
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL HelpAgentDispatcher::disposing(const css::lang::EventObject& aEvent)
-	throw(css::uno::RuntimeException)
 {
 	// SAFE ->
 	WriteGuard aWriteLock(m_aLock);

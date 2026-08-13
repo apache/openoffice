@@ -40,7 +40,7 @@ ScVbaCondition< Ifc1 >::ScVbaCondition(  const uno::Reference< XHelperInterface 
 
 template< typename Ifc1 >
 sheet::ConditionOperator
-ScVbaCondition< Ifc1 >::retrieveAPIOperator( const uno::Any& _aOperator) throw ( script::BasicErrorException )
+ScVbaCondition< Ifc1 >::retrieveAPIOperator( const uno::Any& _aOperator)
 {
 	sheet::ConditionOperator aRetAPIOperator = sheet::ConditionOperator_NONE;
 	sal_Int32 nOperator = 0;
@@ -82,21 +82,21 @@ ScVbaCondition< Ifc1 >::retrieveAPIOperator( const uno::Any& _aOperator) throw (
 
 template< typename Ifc1 >
 rtl::OUString
-ScVbaCondition< Ifc1 >::Formula1( ) throw ( script::BasicErrorException, uno::RuntimeException )
+ScVbaCondition< Ifc1 >::Formula1( )
 {
 	 return mxSheetCondition->getFormula1();
 }
 
 template< typename Ifc1 >
 rtl::OUString
-ScVbaCondition< Ifc1 >::Formula2( ) throw ( script::BasicErrorException, uno::RuntimeException )
+ScVbaCondition< Ifc1 >::Formula2( )
 {
 	 return mxSheetCondition->getFormula2();
 }
 
 template< typename Ifc1 >
 void
-ScVbaCondition< Ifc1 >::setFormula1( const uno::Any& _aFormula1) throw ( script::BasicErrorException )
+ScVbaCondition< Ifc1 >::setFormula1( const uno::Any& _aFormula1)
 {
 	rtl::OUString sFormula;
 	if ( (_aFormula1 >>= sFormula ))
@@ -110,7 +110,7 @@ ScVbaCondition< Ifc1 >::setFormula1( const uno::Any& _aFormula1) throw ( script:
 
 template< typename Ifc1 >
 void
-ScVbaCondition< Ifc1 >::setFormula2( const uno::Any& _aFormula2) throw ( script::BasicErrorException )
+ScVbaCondition< Ifc1 >::setFormula2( const uno::Any& _aFormula2)
 {
 	rtl::OUString sFormula2;
 	// #TODO surely this can't be right?
@@ -121,7 +121,7 @@ ScVbaCondition< Ifc1 >::setFormula2( const uno::Any& _aFormula2) throw ( script:
 
 template< typename Ifc1 >
 sal_Int32
-ScVbaCondition< Ifc1 >::Operator(sal_Bool _bIncludeFormulaValue) throw ( script::BasicErrorException )
+ScVbaCondition< Ifc1 >::Operator(sal_Bool _bIncludeFormulaValue)
 {
 	sal_Int32 retvalue = -1;
 	sheet::ConditionOperator aConditionalOperator =  mxSheetCondition->getOperator();

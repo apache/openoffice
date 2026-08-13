@@ -50,7 +50,6 @@ MeanValueRegressionCurveCalculator::~MeanValueRegressionCurveCalculator()
 void SAL_CALL MeanValueRegressionCurveCalculator::recalculateRegression(
     const uno::Sequence< double >& /*aXValues*/,
     const uno::Sequence< double >& aYValues )
-    throw (uno::RuntimeException)
 {
     const sal_Int32 nDataLength = aYValues.getLength();
     sal_Int32 nMax = nDataLength;
@@ -96,8 +95,6 @@ void SAL_CALL MeanValueRegressionCurveCalculator::recalculateRegression(
 }
 
 double SAL_CALL MeanValueRegressionCurveCalculator::getCurveValue( double /*x*/ )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     return m_fMeanValue;
 }
@@ -108,8 +105,6 @@ uno::Sequence< geometry::RealPoint2D > SAL_CALL MeanValueRegressionCurveCalculat
     const uno::Reference< chart2::XScaling >& xScalingX,
     const uno::Reference< chart2::XScaling >& xScalingY,
     ::sal_Bool bMaySkipPointsInCalculation )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     if( bMaySkipPointsInCalculation )
     {

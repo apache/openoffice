@@ -74,7 +74,7 @@ sdbcx::ObjectType MacabTables::createObject(const ::rtl::OUString& _rName)
 	return xRet;
 }
 // -------------------------------------------------------------------------
-void MacabTables::impl_refresh(  ) throw(RuntimeException)
+void MacabTables::impl_refresh(  )
 {
 	static_cast<MacabCatalog&>(m_rParent).refreshTables();
 }

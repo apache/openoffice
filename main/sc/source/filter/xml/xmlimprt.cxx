@@ -116,7 +116,7 @@ uno::Sequence< rtl::OUString > SAL_CALL ScXMLImport_getSupportedServiceNames() t
 }
 
 uno::Reference< uno::XInterface > SAL_CALL ScXMLImport_createInstance(
-    const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+    const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
     // #110680#
     // return (cppu::OWeakObject*)new ScXMLImport(IMPORT_ALL);
@@ -135,7 +135,7 @@ uno::Sequence< rtl::OUString > SAL_CALL ScXMLImport_Meta_getSupportedServiceName
 }
 
 uno::Reference< uno::XInterface > SAL_CALL ScXMLImport_Meta_createInstance(
-    const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+    const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
     // #110680#
     // return (cppu::OWeakObject*)new ScXMLImport(IMPORT_META);
@@ -154,7 +154,7 @@ uno::Sequence< rtl::OUString > SAL_CALL ScXMLImport_Styles_getSupportedServiceNa
 }
 
 uno::Reference< uno::XInterface > SAL_CALL ScXMLImport_Styles_createInstance(
-    const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+    const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
     // #110680#
     // return (cppu::OWeakObject*)new ScXMLImport(IMPORT_STYLES|IMPORT_AUTOSTYLES|IMPORT_MASTERSTYLES|IMPORT_FONTDECLS);
@@ -173,7 +173,7 @@ uno::Sequence< rtl::OUString > SAL_CALL ScXMLImport_Content_getSupportedServiceN
 }
 
 uno::Reference< uno::XInterface > SAL_CALL ScXMLImport_Content_createInstance(
-    const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+    const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
     // #110680#
     // return (cppu::OWeakObject*)new ScXMLImport(IMPORT_META|IMPORT_STYLES|IMPORT_MASTERSTYLES|IMPORT_AUTOSTYLES|IMPORT_CONTENT|IMPORT_SCRIPTS|IMPORT_SETTINGS|IMPORT_FONTDECLS);
@@ -192,7 +192,7 @@ uno::Sequence< rtl::OUString > SAL_CALL ScXMLImport_Settings_getSupportedService
 }
 
 uno::Reference< uno::XInterface > SAL_CALL ScXMLImport_Settings_createInstance(
-    const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+    const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
     // #110680#
     // return (cppu::OWeakObject*)new ScXMLImport(IMPORT_SETTINGS);
@@ -2545,7 +2545,6 @@ void ScXMLImport::SetStylesToRangesFinished()
 
 // XImporter
 void SAL_CALL ScXMLImport::setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     LockSolarMutex();
     SvXMLImport::setTargetDocument( xDoc );
@@ -2566,7 +2565,6 @@ throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::R
 
 // XServiceInfo
 ::rtl::OUString SAL_CALL ScXMLImport::getImplementationName(  )
-throw(::com::sun::star::uno::RuntimeException)
 {
     switch( getImportFlags() )
     {
@@ -2588,7 +2586,6 @@ throw(::com::sun::star::uno::RuntimeException)
 
 // ::com::sun::star::xml::sax::XDocumentHandler
 void SAL_CALL ScXMLImport::startDocument(void)
-throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
     LockSolarMutex();
     SvXMLImport::startDocument();
@@ -2798,7 +2795,6 @@ void ScXMLImport::SetNamedRanges()
 }
 
 void SAL_CALL ScXMLImport::endDocument(void)
-throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
     LockSolarMutex();
     if (getImportFlags() & IMPORT_CONTENT)

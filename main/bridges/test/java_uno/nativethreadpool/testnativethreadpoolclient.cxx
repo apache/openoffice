@@ -67,17 +67,15 @@ public:
 private:
     virtual ~Client() {}
 
-    virtual sal_Int32 SAL_CALL run(css::uno::Sequence< rtl::OUString > const &)
-        throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL run(css::uno::Sequence< rtl::OUString > const &);
 
-    virtual sal_Int32 SAL_CALL get() throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL get();
 
     css::uno::Reference< css::uno::XComponentContext > context;
     osl::ThreadData data;
 };
 
 sal_Int32 Client::run(css::uno::Sequence< rtl::OUString > const &)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Reference< css::lang::XMultiComponentFactory > factory(
         context->getServiceManager());
@@ -138,13 +136,12 @@ sal_Int32 Client::run(css::uno::Sequence< rtl::OUString > const &)
     return success ? 0 : 1;
 }
 
-sal_Int32 Client::get() throw (css::uno::RuntimeException) {
+sal_Int32 Client::get() {
     return reinterpret_cast< sal_Int32 >(data.getData());
 }
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL create(
     css::uno::Reference< css::uno::XComponentContext > const & context)
-    SAL_THROW((css::uno::Exception))
 {
     return static_cast< cppu::OWeakObject * >(new Client(context));
 }

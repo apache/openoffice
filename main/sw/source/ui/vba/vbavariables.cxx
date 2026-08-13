@@ -28,7 +28,7 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-uno::Reference< container::XIndexAccess > createVariablesAccess( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< beans::XPropertyAccess >& xUserDefined ) throw ( uno::RuntimeException )
+uno::Reference< container::XIndexAccess > createVariablesAccess( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< beans::XPropertyAccess >& xUserDefined )
 {
     // FIXME: the performance is poor?
     XNamedObjectCollectionHelper< word::XVariable >::XNamedVec mVariables;
@@ -47,12 +47,12 @@ SwVbaVariables::SwVbaVariables( const uno::Reference< XHelperInterface >& xParen
 }
 // XEnumerationAccess
 uno::Type
-SwVbaVariables::getElementType() throw (uno::RuntimeException)
+SwVbaVariables::getElementType()
 {
 	return word::XVariable::static_type(0);
 }
 uno::Reference< container::XEnumeration >
-SwVbaVariables::createEnumeration() throw (uno::RuntimeException)
+SwVbaVariables::createEnumeration()
 {
     uno::Reference< container::XEnumerationAccess > xEnumerationAccess( m_xIndexAccess, uno::UNO_QUERY_THROW );
     return xEnumerationAccess->createEnumeration();
@@ -65,7 +65,7 @@ SwVbaVariables::createCollectionObject( const css::uno::Any& aSource )
 }
 
 uno::Any SAL_CALL
-SwVbaVariables::Add( const rtl::OUString& rName, const uno::Any& rValue ) throw (uno::RuntimeException)
+SwVbaVariables::Add( const rtl::OUString& rName, const uno::Any& rValue )
 {
     uno::Any aValue;
     if( rValue.hasValue() )

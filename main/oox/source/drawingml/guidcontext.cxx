@@ -35,7 +35,7 @@ GuidContext::GuidContext( ContextHandler& rParent, rtl::OUString& rGuidId )
 , mrGuidId( rGuidId )
 {
 }
-void GuidContext::characters( const OUString& aChars ) throw ( SAXException, RuntimeException )
+void GuidContext::characters( const OUString& aChars )
 {
     mrGuidId += aChars;
 }

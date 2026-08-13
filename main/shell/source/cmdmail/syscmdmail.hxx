@@ -47,23 +47,17 @@ namespace shell
         SystemCommandMail( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xContext );
         ~SystemCommandMail();
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailClient > SAL_CALL queryMailClient(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailClient > SAL_CALL queryMailClient(  );
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailMessage > SAL_CALL createMailMessage(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailMessage > SAL_CALL createMailMessage(  );
 
-        virtual void SAL_CALL sendMailMessage( const ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailMessage >& xMailMessage, sal_Int32 aFlag )
-            throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL sendMailMessage( const ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailMessage >& xMailMessage, sal_Int32 aFlag );
 
-        virtual ::rtl::OUString SAL_CALL getImplementationName()
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
 
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         static com::sun::star::uno::Reference< com::sun::star::uno::XInterface > Create( const com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xContext);
         static rtl::OUString getImplementationName_static();

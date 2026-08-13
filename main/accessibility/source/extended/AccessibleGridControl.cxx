@@ -128,7 +128,6 @@ void SAL_CALL AccessibleGridControl::disposing()
 // XAccessibleContext ---------------------------------------------------------
 
 sal_Int32 SAL_CALL AccessibleGridControl::getAccessibleChildCount()
-    throw ( uno::RuntimeException )
 {
 	TCSolarGuard aSolarGuard;
 	::osl::MutexGuard aGuard( getOslMutex() );
@@ -139,7 +138,6 @@ sal_Int32 SAL_CALL AccessibleGridControl::getAccessibleChildCount()
 
 Reference< XAccessible > SAL_CALL
 AccessibleGridControl::getAccessibleChild( sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
 	TCSolarGuard aSolarGuard;
 	::osl::MutexGuard aGuard( getOslMutex() );
@@ -184,7 +182,6 @@ AccessibleGridControl::getAccessibleChild( sal_Int32 nChildIndex )
 // -----------------------------------------------------------------------------
 
 sal_Int16 SAL_CALL AccessibleGridControl::getAccessibleRole()
-    throw ( uno::RuntimeException )
 {
 	ensureIsAlive();
 	return AccessibleRole::PANEL;
@@ -195,7 +192,6 @@ sal_Int16 SAL_CALL AccessibleGridControl::getAccessibleRole()
 
 Reference< XAccessible > SAL_CALL
 AccessibleGridControl::getAccessibleAtPoint( const awt::Point& rPoint )
-    throw ( uno::RuntimeException )
 {
 	TCSolarGuard aSolarGuard;
 	::osl::MutexGuard aGuard( getOslMutex() );
@@ -226,7 +222,6 @@ AccessibleGridControl::getAccessibleAtPoint( const awt::Point& rPoint )
 // -----------------------------------------------------------------------------
 
 void SAL_CALL AccessibleGridControl::grabFocus()
-    throw ( uno::RuntimeException )
 {
 	TCSolarGuard aSolarGuard;
 	::osl::MutexGuard aGuard( getOslMutex() );
@@ -236,7 +231,6 @@ void SAL_CALL AccessibleGridControl::grabFocus()
 // -----------------------------------------------------------------------------
 
 Any SAL_CALL AccessibleGridControl::getAccessibleKeyBinding()
-    throw ( uno::RuntimeException )
 {
 	ensureIsAlive();
 	return Any();
@@ -246,7 +240,6 @@ Any SAL_CALL AccessibleGridControl::getAccessibleKeyBinding()
 // XServiceInfo ---------------------------------------------------------------
 
 OUString SAL_CALL AccessibleGridControl::getImplementationName()
-    throw ( uno::RuntimeException )
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.accessibility.AccessibleGridControl" ) );
 }
@@ -420,7 +413,7 @@ void AccessibleGridControlAccess::dispose()
 }
 
 // -----------------------------------------------------------------------------
-Reference< XAccessibleContext > SAL_CALL AccessibleGridControlAccess::getAccessibleContext() throw ( RuntimeException )
+Reference< XAccessibleContext > SAL_CALL AccessibleGridControlAccess::getAccessibleContext()
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 

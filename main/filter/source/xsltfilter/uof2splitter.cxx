@@ -56,17 +56,17 @@ UOF2Splitter::~UOF2Splitter()
 }
 
 // XActiveDataControl
-void UOF2Splitter::addListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener ) throw( ::com::sun::star::uno::RuntimeException)
+void UOF2Splitter::addListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener )
 {
 	m_StreamListeners.insert( rxListener );
 }
 
-void UOF2Splitter::removeListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener ) throw( ::com::sun::star::uno::RuntimeException)
+void UOF2Splitter::removeListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener )
 {
 	m_StreamListeners.erase( rxListener );
 }
 
-void UOF2Splitter::start (void) throw( ::com::sun::star::uno::RuntimeException)
+void UOF2Splitter::start (void)
 {
 	if ( !m_xStream.is() )
 		return;
@@ -106,28 +106,28 @@ void UOF2Splitter::start (void) throw( ::com::sun::star::uno::RuntimeException)
 	}
 }
 
-void UOF2Splitter::terminate (void) throw( ::com::sun::star::uno::RuntimeException)
+void UOF2Splitter::terminate (void)
 {
 }
 
 // XActiveDataSink
-void UOF2Splitter::setInputStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> &rxInputStream) throw( ::com::sun::star::uno::RuntimeException)
+void UOF2Splitter::setInputStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> &rxInputStream)
 {
 	m_xInputStream = rxInputStream;
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> UOF2Splitter::getInputStream(void) throw( ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> UOF2Splitter::getInputStream(void)
 {
 	return m_xInputStream;
 }
 
 // XActiveDataStreamer
-void UOF2Splitter::setStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> &rxStream) throw( ::com::sun::star::uno::RuntimeException)
+void UOF2Splitter::setStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> &rxStream)
 {
 	m_xStream = rxStream;
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> UOF2Splitter::getStream (void) throw( ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> UOF2Splitter::getStream (void)
 {
 	return m_xStream;
 }

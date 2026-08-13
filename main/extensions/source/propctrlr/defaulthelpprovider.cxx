@@ -83,13 +83,13 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-	::rtl::OUString DefaultHelpProvider::getImplementationName_static(  ) throw(RuntimeException)
+	::rtl::OUString DefaultHelpProvider::getImplementationName_static(  )
 	{
 		return ::rtl::OUString::createFromAscii( "org.openoffice.comp.extensions.DefaultHelpProvider");
 	}
 
 	//------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > DefaultHelpProvider::getSupportedServiceNames_static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > DefaultHelpProvider::getSupportedServiceNames_static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii( "com.sun.star.inspection.DefaultHelpProvider" );
@@ -103,7 +103,7 @@ namespace pcr
 	}
 
     //--------------------------------------------------------------------
-    void SAL_CALL DefaultHelpProvider::focusGained( const Reference< XPropertyControl >& _Control ) throw (RuntimeException)
+    void SAL_CALL DefaultHelpProvider::focusGained( const Reference< XPropertyControl >& _Control )
     {
         if ( !m_xInspectorUI.is() )
             throw RuntimeException( ::rtl::OUString(), *this );
@@ -119,13 +119,13 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DefaultHelpProvider::valueChanged( const Reference< XPropertyControl >& /*_Control*/ ) throw (RuntimeException)
+    void SAL_CALL DefaultHelpProvider::valueChanged( const Reference< XPropertyControl >& /*_Control*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DefaultHelpProvider::initialize( const Sequence< Any >& _arguments ) throw (Exception, RuntimeException)
+    void SAL_CALL DefaultHelpProvider::initialize( const Sequence< Any >& _arguments )
     {
         if ( m_bConstructed )
             throw AlreadyInitializedException();

@@ -49,12 +49,12 @@ OCalcResultSet::OCalcResultSet( OStatement_Base* pStmt,connectivity::OSQLParseTr
 	registerProperty(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_ISBOOKMARKABLE),         PROPERTY_ID_ISBOOKMARKABLE,       PropertyAttribute::READONLY,&m_bBookmarkable,                ::getBooleanCppuType());
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OCalcResultSet::getImplementationName(  ) throw ( RuntimeException)
+::rtl::OUString SAL_CALL OCalcResultSet::getImplementationName(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.calc.ResultSet");
 }
 // -------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OCalcResultSet::getSupportedServiceNames(  ) throw( RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OCalcResultSet::getSupportedServiceNames(  )
 {
 	 Sequence< ::rtl::OUString > aSupported(2);
 	aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.ResultSet");
@@ -62,7 +62,7 @@ Sequence< ::rtl::OUString > SAL_CALL OCalcResultSet::getSupportedServiceNames(  
 	return aSupported;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OCalcResultSet::supportsService( const ::rtl::OUString& _rServiceName ) throw( RuntimeException)
+sal_Bool SAL_CALL OCalcResultSet::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -73,20 +73,20 @@ sal_Bool SAL_CALL OCalcResultSet::supportsService( const ::rtl::OUString& _rServ
 	return pSupported != pEnd;
 }
 // -------------------------------------------------------------------------
-Any SAL_CALL OCalcResultSet::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL OCalcResultSet::queryInterface( const Type & rType )
 {
 	Any aRet = OResultSet::queryInterface(rType);
 	return aRet.hasValue() ? aRet : OCalcResultSet_BASE::queryInterface(rType);
 }
 // -------------------------------------------------------------------------
- Sequence<  Type > SAL_CALL OCalcResultSet::getTypes(  ) throw( RuntimeException)
+ Sequence<  Type > SAL_CALL OCalcResultSet::getTypes(  )
 {
 	return ::comphelper::concatSequences(OResultSet::getTypes(),OCalcResultSet_BASE::getTypes());
 }
 
 // -------------------------------------------------------------------------
 // XRowLocate
-Any SAL_CALL OCalcResultSet::getBookmark(  ) throw( SQLException,  RuntimeException)
+Any SAL_CALL OCalcResultSet::getBookmark(  )
 {
 	 ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -95,7 +95,7 @@ Any SAL_CALL OCalcResultSet::getBookmark(  ) throw( SQLException,  RuntimeExcept
 	return makeAny((sal_Int32)(m_aRow->get())[0]->getValue());
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OCalcResultSet::moveToBookmark( const  Any& bookmark ) throw( SQLException,  RuntimeException)
+sal_Bool SAL_CALL OCalcResultSet::moveToBookmark( const  Any& bookmark )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -106,7 +106,7 @@ sal_Bool SAL_CALL OCalcResultSet::moveToBookmark( const  Any& bookmark ) throw( 
 	return Move(IResultSetHelper::BOOKMARK,comphelper::getINT32(bookmark),sal_True);
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OCalcResultSet::moveRelativeToBookmark( const  Any& bookmark, sal_Int32 rows ) throw( SQLException,  RuntimeException)
+sal_Bool SAL_CALL OCalcResultSet::moveRelativeToBookmark( const  Any& bookmark, sal_Int32 rows )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -120,17 +120,17 @@ sal_Bool SAL_CALL OCalcResultSet::moveRelativeToBookmark( const  Any& bookmark, 
 }
 
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OCalcResultSet::compareBookmarks( const Any& lhs, const  Any& rhs ) throw( SQLException,  RuntimeException)
+sal_Int32 SAL_CALL OCalcResultSet::compareBookmarks( const Any& lhs, const  Any& rhs )
 {
 	return (lhs == rhs) ? 0 : 2;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OCalcResultSet::hasOrderedBookmarks(  ) throw( SQLException,  RuntimeException)
+sal_Bool SAL_CALL OCalcResultSet::hasOrderedBookmarks(  )
 {
 	return sal_True;
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OCalcResultSet::hashBookmark( const  Any& bookmark ) throw( SQLException,  RuntimeException)
+sal_Int32 SAL_CALL OCalcResultSet::hashBookmark( const  Any& bookmark )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -140,7 +140,7 @@ sal_Int32 SAL_CALL OCalcResultSet::hashBookmark( const  Any& bookmark ) throw( S
 }
 // -------------------------------------------------------------------------
 // XDeleteRows
-Sequence< sal_Int32 > SAL_CALL OCalcResultSet::deleteRows( const  Sequence<  Any >& /*rows*/ ) throw( SQLException,  RuntimeException)
+Sequence< sal_Int32 > SAL_CALL OCalcResultSet::deleteRows( const  Sequence<  Any >& /*rows*/ )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -178,7 +178,7 @@ void SAL_CALL OCalcResultSet::release() throw()
 	OCalcResultSet_BASE2::release();
 }
 // -----------------------------------------------------------------------------
-::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL OCalcResultSet::getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL OCalcResultSet::getPropertySetInfo(  )
 {
 	return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 }

@@ -63,10 +63,8 @@ public:
     virtual ~BmpConverter();
 
     virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection() throw();
-    virtual void SAL_CALL setValue( const OUString& rProperty, const Any& rValue )
-        throw( UnknownPropertyException );
-    virtual Any SAL_CALL getValue( const OUString& rProperty )
-        throw( UnknownPropertyException );
+    virtual void SAL_CALL setValue( const OUString& rProperty, const Any& rValue );
+    virtual Any SAL_CALL getValue( const OUString& rProperty );
     virtual sal_Bool SAL_CALL hasMethod( const OUString& rName ) throw();
     virtual sal_Bool SAL_CALL hasProperty( const OUString& rProp ) throw();
 
@@ -74,8 +72,7 @@ public:
                                  const Sequence< Any >& rParams,
                                  Sequence< sal_Int16 >& rOutParamIndex,
                                  Sequence< Any >& rOutParam
-                                 )
-        throw( CannotConvertException, InvocationTargetException );
+                                 );
 };
 
 }
@@ -100,12 +97,12 @@ Reference< XIntrospectionAccess > SAL_CALL BmpConverter::getIntrospection() thro
     return Reference< XIntrospectionAccess >();
 }
 
-void SAL_CALL BmpConverter::setValue( const OUString&, const Any& ) throw( UnknownPropertyException )
+void SAL_CALL BmpConverter::setValue( const OUString&, const Any& )
 {
     throw UnknownPropertyException();
 }
 
-Any SAL_CALL BmpConverter::getValue( const OUString& ) throw( UnknownPropertyException )
+Any SAL_CALL BmpConverter::getValue( const OUString& )
 {
     throw UnknownPropertyException();
 }
@@ -125,7 +122,6 @@ Any SAL_CALL BmpConverter::invoke(
                                   const Sequence< Any >& rParams,
                                   Sequence< sal_Int16 >&,
                                   Sequence< Any >& )
-    throw( CannotConvertException, InvocationTargetException )
 {
     Any aRet;
 

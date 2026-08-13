@@ -45,7 +45,7 @@ ScVbaFont::ScVbaFont(
         const uno::Reference< uno::XComponentContext >& xContext,
         const ScVbaPalette& dPalette,
         const uno::Reference< beans::XPropertySet >& xPropertySet,
-        ScCellRangeObj* pRangeObj, bool bFormControl ) throw ( uno::RuntimeException ) :
+        ScCellRangeObj* pRangeObj, bool bFormControl ) :
     ScVbaFont_BASE( xParent, xContext, dPalette.getPalette(), xPropertySet, bFormControl ),
     mPalette( dPalette ),
     mpRangeObj( pRangeObj )
@@ -63,7 +63,7 @@ ScVbaFont::~ScVbaFont()
 }
 
 
-uno::Reference< beans::XPropertySet > lcl_TextProperties( uno::Reference< table::XCell >& xIf ) throw ( uno::RuntimeException )
+uno::Reference< beans::XPropertySet > lcl_TextProperties( uno::Reference< table::XCell >& xIf )
 {
 	uno::Reference< text::XTextRange > xTxtRange( xIf, uno::UNO_QUERY_THROW );
 	uno::Reference< text::XSimpleText > xTxt( xTxtRange->getText(), uno::UNO_QUERY_THROW ) ;
@@ -71,7 +71,7 @@ uno::Reference< beans::XPropertySet > lcl_TextProperties( uno::Reference< table:
 	return xProps;
 }
 void SAL_CALL
-ScVbaFont::setSuperscript( const uno::Any& aValue ) throw ( uno::RuntimeException )
+ScVbaFont::setSuperscript( const uno::Any& aValue )
 {
 	// #FIXEME create some sort of generic get/set code where
 	// you can pass a functor
@@ -114,7 +114,7 @@ ScVbaFont::setSuperscript( const uno::Any& aValue ) throw ( uno::RuntimeExceptio
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getSuperscript() throw ( uno::RuntimeException )
+ScVbaFont::getSuperscript()
 {
         uno::Reference< table::XCell> xCell( mxFont, uno::UNO_QUERY );
         uno::Reference< table::XCellRange > xCellRange( mxFont, uno::UNO_QUERY );
@@ -147,7 +147,7 @@ ScVbaFont::getSuperscript() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-ScVbaFont::setSubscript( const uno::Any& aValue ) throw ( uno::RuntimeException )
+ScVbaFont::setSubscript( const uno::Any& aValue )
 {
         uno::Reference< table::XCell> xCell( mxFont, uno::UNO_QUERY );
         uno::Reference< table::XCellRange > xCellRange( mxFont, uno::UNO_QUERY );
@@ -188,7 +188,7 @@ ScVbaFont::setSubscript( const uno::Any& aValue ) throw ( uno::RuntimeException 
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getSubscript() throw ( uno::RuntimeException )
+ScVbaFont::getSubscript()
 {
         uno::Reference< table::XCell> xCell( mxFont, uno::UNO_QUERY );
         uno::Reference< table::XCellRange > xCellRange( mxFont, uno::UNO_QUERY );
@@ -222,7 +222,7 @@ ScVbaFont::getSubscript() throw ( uno::RuntimeException )
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getSize() throw ( uno::RuntimeException )
+ScVbaFont::getSize()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_HEIGHT, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -231,7 +231,7 @@ ScVbaFont::getSize() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-ScVbaFont::setColorIndex( const uno::Any& _colorindex ) throw( uno::RuntimeException )
+ScVbaFont::setColorIndex( const uno::Any& _colorindex )
 {
 	sal_Int32 nIndex = 0;
 	_colorindex >>= nIndex;
@@ -249,7 +249,7 @@ ScVbaFont::setColorIndex( const uno::Any& _colorindex ) throw( uno::RuntimeExcep
 
 
 uno::Any SAL_CALL
-ScVbaFont::getColorIndex() throw ( uno::RuntimeException )
+ScVbaFont::getColorIndex()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_COLOR, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -259,7 +259,7 @@ ScVbaFont::getColorIndex() throw ( uno::RuntimeException )
 
 //////////////////////////////////////////////////////////////////////////////////////////
 void  SAL_CALL
-ScVbaFont::setStandardFontSize( const uno::Any& /*aValue*/ ) throw( uno::RuntimeException )
+ScVbaFont::setStandardFontSize( const uno::Any& /*aValue*/ )
 {
 //XXX #TODO# #FIXME#
 	//mxFont->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CharSize" ) ), ( uno::Any )fValue );
@@ -269,7 +269,7 @@ ScVbaFont::setStandardFontSize( const uno::Any& /*aValue*/ ) throw( uno::Runtime
 
 
 uno::Any SAL_CALL
-ScVbaFont::getStandardFontSize() throw ( uno::RuntimeException )
+ScVbaFont::getStandardFontSize()
 {
 //XXX #TODO# #FIXME#
 	throw uno::RuntimeException(
@@ -279,7 +279,7 @@ ScVbaFont::getStandardFontSize() throw ( uno::RuntimeException )
 
 
 void  SAL_CALL
-ScVbaFont::setStandardFont( const uno::Any& /*aValue*/ ) throw( uno::RuntimeException )
+ScVbaFont::setStandardFont( const uno::Any& /*aValue*/ )
 {
 //XXX #TODO# #FIXME#
 	throw uno::RuntimeException(
@@ -288,7 +288,7 @@ ScVbaFont::setStandardFont( const uno::Any& /*aValue*/ ) throw( uno::RuntimeExce
 
 
 uno::Any SAL_CALL
-ScVbaFont::getStandardFont() throw ( uno::RuntimeException )
+ScVbaFont::getStandardFont()
 {
 //XXX #TODO# #FIXME#
 	throw uno::RuntimeException(
@@ -297,7 +297,7 @@ ScVbaFont::getStandardFont() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-ScVbaFont::setFontStyle( const uno::Any& aValue ) throw( uno::RuntimeException )
+ScVbaFont::setFontStyle( const uno::Any& aValue )
 {
     sal_Bool bBold = sal_False;
     sal_Bool bItalic = sal_False;
@@ -329,7 +329,7 @@ ScVbaFont::setFontStyle( const uno::Any& aValue ) throw( uno::RuntimeException )
 
 
 uno::Any SAL_CALL
-ScVbaFont::getFontStyle() throw ( uno::RuntimeException )
+ScVbaFont::getFontStyle()
 {
     rtl::OUStringBuffer aStyles;
     sal_Bool bValue = sal_False;
@@ -348,7 +348,7 @@ ScVbaFont::getFontStyle() throw ( uno::RuntimeException )
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getBold() throw ( uno::RuntimeException )
+ScVbaFont::getBold()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_WEIGHT, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -357,7 +357,7 @@ ScVbaFont::getBold() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-ScVbaFont::setUnderline( const uno::Any& aValue ) throw ( uno::RuntimeException )
+ScVbaFont::setUnderline( const uno::Any& aValue )
 {
 	// default
 	sal_Int32 nValue = excel::XlUnderlineStyle::xlUnderlineStyleNone;
@@ -391,7 +391,7 @@ ScVbaFont::setUnderline( const uno::Any& aValue ) throw ( uno::RuntimeException 
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getUnderline() throw ( uno::RuntimeException )
+ScVbaFont::getUnderline()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_UNDERLINE, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -418,7 +418,7 @@ ScVbaFont::getUnderline() throw ( uno::RuntimeException )
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getStrikethrough() throw ( uno::RuntimeException )
+ScVbaFont::getStrikethrough()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_CROSSEDOUT, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -427,7 +427,7 @@ ScVbaFont::getStrikethrough() throw ( uno::RuntimeException )
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getShadow() throw (uno::RuntimeException)
+ScVbaFont::getShadow()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_SHADOWED, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -436,7 +436,7 @@ ScVbaFont::getShadow() throw (uno::RuntimeException)
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getItalic() throw ( uno::RuntimeException )
+ScVbaFont::getItalic()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_POSTURE, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -446,7 +446,7 @@ ScVbaFont::getItalic() throw ( uno::RuntimeException )
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getName() throw ( uno::RuntimeException )
+ScVbaFont::getName()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT, sal_True, NULL) == SFX_ITEM_DONTCARE )
@@ -454,7 +454,7 @@ ScVbaFont::getName() throw ( uno::RuntimeException )
 	return ScVbaFont_BASE::getName();
 }
 uno::Any
-ScVbaFont::getColor() throw (uno::RuntimeException)
+ScVbaFont::getColor()
 {
 	// #TODO #FIXME - behave like getXXX above ( wrt. GetDataSet )
 	uno::Any aAny;
@@ -463,13 +463,13 @@ ScVbaFont::getColor() throw (uno::RuntimeException)
 }
 
 void  SAL_CALL
-ScVbaFont::setOutlineFont( const uno::Any& aValue ) throw ( uno::RuntimeException )
+ScVbaFont::setOutlineFont( const uno::Any& aValue )
 {
 	mxFont->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CharContoured" ) ), aValue );
 }
 
 uno::Any SAL_CALL
-ScVbaFont::getOutlineFont() throw (uno::RuntimeException)
+ScVbaFont::getOutlineFont()
 {
 	if ( GetDataSet() )
 		if (  GetDataSet()->GetItemState( ATTR_FONT_CONTOUR, sal_True, NULL) == SFX_ITEM_DONTCARE )

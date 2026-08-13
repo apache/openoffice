@@ -64,7 +64,6 @@ protected:
     // ____ XEventListener (base of all listeners) ____
     virtual void SAL_CALL disposing(
         const ::com::sun::star::lang::EventObject& Source )
-        throw (::com::sun::star::uno::RuntimeException)
     {
         ::com::sun::star::uno::Reference<
               ::com::sun::star::lang::XEventListener > xEventListener =
@@ -96,8 +95,7 @@ public:
 
 protected:
     // ____ XModifyListener ____
-    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
 };
 
 // --------------------------------------------------------------------------------
@@ -113,8 +111,7 @@ public:
 protected:
     // ____ XSelectionChangeListener ____
     virtual void SAL_CALL selectionChanged(
-        const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& aEvent );
 };
 
 } //  namespace chart

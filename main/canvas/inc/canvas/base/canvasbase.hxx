@@ -129,7 +129,7 @@ namespace canvas
         }
 
         // XCanvas
-        virtual void SAL_CALL clear() throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL clear()
         {
             MutexType aGuard( BaseType::m_aMutex );
 
@@ -141,8 +141,7 @@ namespace canvas
 
         virtual void SAL_CALL drawPoint( const ::com::sun::star::geometry::RealPoint2D& 	aPoint,
                                          const ::com::sun::star::rendering::ViewState& 		viewState,
-                                         const ::com::sun::star::rendering::RenderState& 	renderState ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                 ::com::sun::star::uno::RuntimeException)
+                                         const ::com::sun::star::rendering::RenderState& 	renderState )
         {
             tools::verifyArgs(aPoint, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -159,8 +158,7 @@ namespace canvas
         virtual void SAL_CALL drawLine( const ::com::sun::star::geometry::RealPoint2D& 	aStartPoint,
                                         const ::com::sun::star::geometry::RealPoint2D& 	aEndPoint,
                                         const ::com::sun::star::rendering::ViewState& 	viewState,
-                                        const ::com::sun::star::rendering::RenderState& renderState	) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                             ::com::sun::star::uno::RuntimeException)
+                                        const ::com::sun::star::rendering::RenderState& renderState	)
         {
             tools::verifyArgs(aStartPoint, aEndPoint, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -177,8 +175,7 @@ namespace canvas
         virtual void SAL_CALL drawBezier( const ::com::sun::star::geometry::RealBezierSegment2D& 	aBezierSegment,
                                           const ::com::sun::star::geometry::RealPoint2D& 			aEndPoint,
                                           const ::com::sun::star::rendering::ViewState& 			viewState,
-                                          const ::com::sun::star::rendering::RenderState& 			renderState ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                         ::com::sun::star::uno::RuntimeException)
+                                          const ::com::sun::star::rendering::RenderState& 			renderState )
         {
             tools::verifyArgs(aBezierSegment, aEndPoint, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -195,8 +192,7 @@ namespace canvas
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCachedPrimitive > SAL_CALL
         	drawPolyPolygon( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& xPolyPolygon,
                              const ::com::sun::star::rendering::ViewState& 											viewState,
-                             const ::com::sun::star::rendering::RenderState& 										renderState ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                         ::com::sun::star::uno::RuntimeException)
+                             const ::com::sun::star::rendering::RenderState& 										renderState )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -214,8 +210,7 @@ namespace canvas
         	strokePolyPolygon( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& 	xPolyPolygon,
                                const ::com::sun::star::rendering::ViewState& 											viewState,
                                const ::com::sun::star::rendering::RenderState& 											renderState,
-                               const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                  ::com::sun::star::uno::RuntimeException)
+                               const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState, strokeAttributes,
                               BOOST_CURRENT_FUNCTION,
@@ -234,8 +229,7 @@ namespace canvas
                                        const ::com::sun::star::rendering::ViewState& 											viewState,
                                        const ::com::sun::star::rendering::RenderState& 											renderState,
                                        const ::com::sun::star::uno::Sequence< ::com::sun::star::rendering::Texture >& 			textures,
-                                       const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                          ::com::sun::star::uno::RuntimeException)
+                                       const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState, strokeAttributes,
                               BOOST_CURRENT_FUNCTION,
@@ -255,8 +249,7 @@ namespace canvas
                                             const ::com::sun::star::rendering::RenderState& 										renderState,
                                             const ::com::sun::star::uno::Sequence< ::com::sun::star::rendering::Texture >& 			textures,
                                             const ::com::sun::star::uno::Reference< ::com::sun::star::geometry::XMapping2D >& 		xMapping,
-                                            const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                              ::com::sun::star::uno::RuntimeException)
+                                            const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState, textures, xMapping, strokeAttributes,
                               BOOST_CURRENT_FUNCTION,
@@ -274,8 +267,7 @@ namespace canvas
         	queryStrokeShapes( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& 	xPolyPolygon,
                                const ::com::sun::star::rendering::ViewState& 											viewState,
                                const ::com::sun::star::rendering::RenderState& 											renderState,
-                               const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                  ::com::sun::star::uno::RuntimeException)
+                               const ::com::sun::star::rendering::StrokeAttributes& 									strokeAttributes )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState, strokeAttributes,
                               BOOST_CURRENT_FUNCTION,
@@ -292,8 +284,7 @@ namespace canvas
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCachedPrimitive > SAL_CALL
         	fillPolyPolygon( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& xPolyPolygon,
                              const ::com::sun::star::rendering::ViewState& 											viewState,
-                             const ::com::sun::star::rendering::RenderState& 										renderState ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                         ::com::sun::star::uno::RuntimeException)
+                             const ::com::sun::star::rendering::RenderState& 										renderState )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -311,8 +302,7 @@ namespace canvas
         	fillTexturedPolyPolygon( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& xPolyPolygon,
                                      const ::com::sun::star::rendering::ViewState& 											viewState,
                                      const ::com::sun::star::rendering::RenderState& 										renderState,
-                                     const ::com::sun::star::uno::Sequence< ::com::sun::star::rendering::Texture >& 		textures ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                              ::com::sun::star::uno::RuntimeException)
+                                     const ::com::sun::star::uno::Sequence< ::com::sun::star::rendering::Texture >& 		textures )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState, textures,
                               BOOST_CURRENT_FUNCTION,
@@ -331,7 +321,7 @@ namespace canvas
                                           const ::com::sun::star::rendering::ViewState& 											viewState,
                                           const ::com::sun::star::rendering::RenderState& 											renderState,
                                           const ::com::sun::star::uno::Sequence< ::com::sun::star::rendering::Texture >& 			textures,
-                                          const ::com::sun::star::uno::Reference< ::com::sun::star::geometry::XMapping2D >& 		xMapping ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+                                          const ::com::sun::star::uno::Reference< ::com::sun::star::geometry::XMapping2D >& 		xMapping )
         {
             tools::verifyArgs(xPolyPolygon, viewState, renderState, textures, xMapping,
                               BOOST_CURRENT_FUNCTION,
@@ -349,8 +339,7 @@ namespace canvas
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCanvasFont > SAL_CALL
         	createFont( const ::com::sun::star::rendering::FontRequest& 									fontRequest,
                         const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& 	extraFontProperties,
-                        const ::com::sun::star::geometry::Matrix2D& 										fontMatrix ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                ::com::sun::star::uno::RuntimeException)
+                        const ::com::sun::star::geometry::Matrix2D& 										fontMatrix )
         {
             tools::verifyArgs(fontRequest,
                               // dummy, to keep argPos in sync
@@ -367,8 +356,7 @@ namespace canvas
 
         virtual ::com::sun::star::uno::Sequence< ::com::sun::star::rendering::FontInfo > SAL_CALL
         	queryAvailableFonts( const ::com::sun::star::rendering::FontInfo& 										aFilter,
-                                 const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& 	aFontProperties ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                             ::com::sun::star::uno::RuntimeException)
+                                 const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& 	aFontProperties )
         {
             tools::verifyArgs(aFilter,
                               BOOST_CURRENT_FUNCTION,
@@ -385,8 +373,7 @@ namespace canvas
                       const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCanvasFont >& 	xFont,
                       const ::com::sun::star::rendering::ViewState& 										viewState,
                       const ::com::sun::star::rendering::RenderState& 										renderState,
-                      sal_Int8 																				textDirection ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                   ::com::sun::star::uno::RuntimeException)
+                      sal_Int8 																				textDirection )
         {
             tools::verifyArgs(xFont, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -407,7 +394,7 @@ namespace canvas
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCachedPrimitive > SAL_CALL
         	drawTextLayout( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XTextLayout >& layoutetText,
                             const ::com::sun::star::rendering::ViewState& 										viewState,
-                            const ::com::sun::star::rendering::RenderState& 									renderState ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+                            const ::com::sun::star::rendering::RenderState& 									renderState )
         {
             tools::verifyArgs(layoutetText, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -425,7 +412,7 @@ namespace canvas
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCachedPrimitive > SAL_CALL
         	drawBitmap( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap >& xBitmap,
                         const ::com::sun::star::rendering::ViewState& 									viewState,
-                        const ::com::sun::star::rendering::RenderState& 								renderState ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+                        const ::com::sun::star::rendering::RenderState& 								renderState )
         {
             tools::verifyArgs(xBitmap, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -442,7 +429,7 @@ namespace canvas
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCachedPrimitive > SAL_CALL
         	drawBitmapModulated( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap >& 	xBitmap,
                                  const ::com::sun::star::rendering::ViewState& 										viewState,
-                                 const ::com::sun::star::rendering::RenderState& 									renderState ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+                                 const ::com::sun::star::rendering::RenderState& 									renderState )
         {
             tools::verifyArgs(xBitmap, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -457,7 +444,7 @@ namespace canvas
         }
 
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XGraphicDevice >   SAL_CALL
-        	getDevice() throw (::com::sun::star::uno::RuntimeException)
+        	getDevice()
         {
             MutexType aGuard( BaseType::m_aMutex );
 

@@ -93,7 +93,6 @@ SidebarPanelBase::~SidebarPanelBase (void)
 
 
 void SAL_CALL SidebarPanelBase::disposing (void)
-    throw (cssu::RuntimeException)
 {
     if (mpControl != NULL)
     {
@@ -134,7 +133,6 @@ void SidebarPanelBase::SetControl (::Window* pControl)
 // XContextChangeEventListener
 void SAL_CALL SidebarPanelBase::notifyContextChangeEvent (
     const ui::ContextChangeEventObject& rEvent)
-    throw (cssu::RuntimeException)
 {
     IContextChangeReceiver* pContextChangeReceiver
         = dynamic_cast<IContextChangeReceiver*>(mpControl);
@@ -152,7 +150,6 @@ void SAL_CALL SidebarPanelBase::notifyContextChangeEvent (
 
 void SAL_CALL SidebarPanelBase::disposing (
     const css::lang::EventObject& rEvent)
-    throw (cssu::RuntimeException)
 {
     (void)rEvent;
 
@@ -164,7 +161,6 @@ void SAL_CALL SidebarPanelBase::disposing (
 
 
 cssu::Reference<css::frame::XFrame> SAL_CALL SidebarPanelBase::getFrame (void)
-    throw(cssu::RuntimeException)
 {
     return mxFrame;
 }
@@ -173,7 +169,6 @@ cssu::Reference<css::frame::XFrame> SAL_CALL SidebarPanelBase::getFrame (void)
 
 
 ::rtl::OUString SAL_CALL SidebarPanelBase::getResourceURL (void)
-    throw(cssu::RuntimeException)
 {
     return msResourceURL;
 }
@@ -182,7 +177,6 @@ cssu::Reference<css::frame::XFrame> SAL_CALL SidebarPanelBase::getFrame (void)
 
 
 sal_Int16 SAL_CALL SidebarPanelBase::getType (void)
-    throw(cssu::RuntimeException)
 {
     return ui::UIElementType::TOOLPANEL;
 }
@@ -191,7 +185,6 @@ sal_Int16 SAL_CALL SidebarPanelBase::getType (void)
 
 
 Reference<XInterface> SAL_CALL SidebarPanelBase::getRealInterface (void)
-    throw(cssu::RuntimeException)
 {
     return Reference<XInterface>(static_cast<XWeak*>(this));
 }
@@ -201,7 +194,6 @@ Reference<XInterface> SAL_CALL SidebarPanelBase::getRealInterface (void)
 
 Reference<accessibility::XAccessible> SAL_CALL SidebarPanelBase::createAccessible (
     const Reference<accessibility::XAccessible>& rxParentAccessible)
-    throw(cssu::RuntimeException)
 {
     (void)rxParentAccessible;
 
@@ -213,7 +205,6 @@ Reference<accessibility::XAccessible> SAL_CALL SidebarPanelBase::createAccessibl
 
 
 Reference<awt::XWindow> SAL_CALL SidebarPanelBase::getWindow (void)
-    throw(cssu::RuntimeException)
 {
     if (mpControl != NULL)
         return Reference<awt::XWindow>(
@@ -227,7 +218,6 @@ Reference<awt::XWindow> SAL_CALL SidebarPanelBase::getWindow (void)
 
 
 ui::LayoutSize SAL_CALL SidebarPanelBase::getHeightForWidth (const sal_Int32 nWidth)
-    throw(cssu::RuntimeException)
 {
     if (maLayoutSize.Minimum >= 0)
         return maLayoutSize;

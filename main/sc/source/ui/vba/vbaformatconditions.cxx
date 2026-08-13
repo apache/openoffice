@@ -54,7 +54,7 @@ ScVbaFormatConditions::ScVbaFormatConditions( const uno::Reference< XHelperInter
 }
 
 void SAL_CALL
-ScVbaFormatConditions::Delete(  ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatConditions::Delete(  )
 {
 	try
 	{
@@ -77,7 +77,7 @@ ScVbaFormatConditions::Delete(  ) throw (script::BasicErrorException, uno::Runti
 }
 
 uno::Type SAL_CALL
-ScVbaFormatConditions::getElementType() throw (css::uno::RuntimeException)
+ScVbaFormatConditions::getElementType()
 {
 	return excel::XFormatCondition::static_type(0);
 }
@@ -111,12 +111,12 @@ class EnumWrapper : public EnumerationHelper_BASE
         sal_Int32 nIndex;
 public:
         EnumWrapper( const uno::Reference< container::XIndexAccess >& xIndexAccess, const uno::Reference<excel::XRange >& xRange, const uno::Reference<uno::XComponentContext >& xContext, const uno::Reference<excel::XStyles >& xStyles, const uno::Reference< excel::XFormatConditions >& xCollection, const uno::Reference<beans::XPropertySet >& xProps  ) : m_xIndexAccess( xIndexAccess ), m_xParentRange( xRange ), m_xContext( xContext ), m_xStyles( xStyles ), m_xParentCollection( xCollection ), m_xProps( xProps ), nIndex( 0 ) {}
-        virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+        virtual ::sal_Bool SAL_CALL hasMoreElements(  )
         {
                 return ( nIndex < m_xIndexAccess->getCount() );
         }
 
-        virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+        virtual uno::Any SAL_CALL nextElement(  )
         {
                 if ( nIndex < m_xIndexAccess->getCount() )
                         return xSheetConditionToFormatCondition( uno::Reference< XHelperInterface >( m_xParentRange, uno::UNO_QUERY_THROW ), m_xContext, m_xStyles, m_xParentCollection, m_xProps, m_xIndexAccess->getByIndex( nIndex++ ) );
@@ -125,13 +125,13 @@ public:
 };
 
 uno::Reference< excel::XFormatCondition > SAL_CALL
-ScVbaFormatConditions::Add( ::sal_Int32 _nType, const uno::Any& _aOperator, const uno::Any& _aFormula1, const uno::Any& _aFormula2 ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatConditions::Add( ::sal_Int32 _nType, const uno::Any& _aOperator, const uno::Any& _aFormula1, const uno::Any& _aFormula2 )
 {
 	return Add( _nType, _aOperator, _aFormula1, _aFormula2, uno::Reference< excel::XStyle >() );
 }
 
 uno::Reference< excel::XFormatCondition >
-ScVbaFormatConditions::Add( ::sal_Int32 _nType, const uno::Any& _aOperator, const uno::Any& _aFormula1, const uno::Any& _aFormula2, const css::uno::Reference< excel::XStyle >& _xStyle  ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatConditions::Add( ::sal_Int32 _nType, const uno::Any& _aOperator, const uno::Any& _aFormula1, const uno::Any& _aFormula2, const css::uno::Reference< excel::XStyle >& _xStyle  )
 {
 	// #TODO
 	// #FIXME
@@ -208,14 +208,14 @@ ScVbaFormatConditions::Add( ::sal_Int32 _nType, const uno::Any& _aOperator, cons
 
 
 uno::Reference< container::XEnumeration > SAL_CALL
-ScVbaFormatConditions::createEnumeration() throw (uno::RuntimeException)
+ScVbaFormatConditions::createEnumeration()
 {
 	return new EnumWrapper( m_xIndexAccess, mxRangeParent, mxContext, mxStyles, this, mxParentRangePropertySet  );
 }
 
 
 void
-ScVbaFormatConditions::notifyRange() throw ( script::BasicErrorException )
+ScVbaFormatConditions::notifyRange()
 {
 	try
 	{
@@ -228,7 +228,7 @@ ScVbaFormatConditions::notifyRange() throw ( script::BasicErrorException )
 }
 
 rtl::OUString
-ScVbaFormatConditions::getA1Formula(const css::uno::Any& _aFormula) throw ( script::BasicErrorException )
+ScVbaFormatConditions::getA1Formula(const css::uno::Any& _aFormula)
 {
 	// #TODO, #FIXME hook-in proper formula conversion detection & logic
 	rtl::OUString sFormula;
@@ -248,7 +248,7 @@ ScVbaFormatConditions::getStyleName()
 }
 
 void
-ScVbaFormatConditions::removeFormatCondition( const rtl::OUString& _sStyleName, sal_Bool _bRemoveStyle) throw ( script::BasicErrorException )
+ScVbaFormatConditions::removeFormatCondition( const rtl::OUString& _sStyleName, sal_Bool _bRemoveStyle)
 {
 	try
 	{

@@ -66,30 +66,30 @@ public:
     SdrModel* GetModel() { return (mpPage != 0) ? mpPage->GetModel() : 0; }
 
     // XInterface:
-    virtual Any SAL_CALL queryInterface(Type const & type) throw (RuntimeException);
+    virtual Any SAL_CALL queryInterface(Type const & type);
     virtual void SAL_CALL acquire() throw () { ::cppu::WeakComponentImplHelper1< XAnnotation >::acquire(); }
     virtual void SAL_CALL release() throw () { ::cppu::WeakComponentImplHelper1< XAnnotation >::release(); }
 
     // ::com::sun::star::beans::XPropertySet:
-    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo() throw (RuntimeException);
-    virtual void SAL_CALL setPropertyValue(const OUString & aPropertyName, const Any & aValue) throw (RuntimeException, UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException);
-    virtual Any SAL_CALL getPropertyValue(const OUString & PropertyName) throw (RuntimeException, UnknownPropertyException, WrappedTargetException);
-    virtual void SAL_CALL addPropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & xListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException);
-    virtual void SAL_CALL removePropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & aListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException);
-    virtual void SAL_CALL addVetoableChangeListener(const OUString & PropertyName, const Reference< XVetoableChangeListener > & aListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException);
-    virtual void SAL_CALL removeVetoableChangeListener(const OUString & PropertyName, const Reference< XVetoableChangeListener > & aListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException);
+    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo();
+    virtual void SAL_CALL setPropertyValue(const OUString & aPropertyName, const Any & aValue);
+    virtual Any SAL_CALL getPropertyValue(const OUString & PropertyName);
+    virtual void SAL_CALL addPropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & xListener);
+    virtual void SAL_CALL removePropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & aListener);
+    virtual void SAL_CALL addVetoableChangeListener(const OUString & PropertyName, const Reference< XVetoableChangeListener > & aListener);
+    virtual void SAL_CALL removeVetoableChangeListener(const OUString & PropertyName, const Reference< XVetoableChangeListener > & aListener);
 
     // ::com::sun::star::office::XAnnotation:
-    virtual ::com::sun::star::uno::Any SAL_CALL getAnchor() throw (::com::sun::star::uno::RuntimeException);
-    virtual RealPoint2D SAL_CALL getPosition() throw (RuntimeException);
-    virtual void SAL_CALL setPosition(const RealPoint2D & the_value) throw (RuntimeException);
-    virtual ::com::sun::star::geometry::RealSize2D SAL_CALL getSize() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setSize( const ::com::sun::star::geometry::RealSize2D& _size ) throw (::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getAuthor() throw (RuntimeException);
-    virtual void SAL_CALL setAuthor(const OUString & the_value) throw (RuntimeException);
-    virtual util::DateTime SAL_CALL getDateTime() throw (RuntimeException);
-    virtual void SAL_CALL setDateTime(const util::DateTime & the_value) throw (RuntimeException);
-    virtual Reference< XText > SAL_CALL getTextRange() throw (RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getAnchor();
+    virtual RealPoint2D SAL_CALL getPosition();
+    virtual void SAL_CALL setPosition(const RealPoint2D & the_value);
+    virtual ::com::sun::star::geometry::RealSize2D SAL_CALL getSize();
+    virtual void SAL_CALL setSize( const ::com::sun::star::geometry::RealSize2D& _size );
+    virtual OUString SAL_CALL getAuthor();
+    virtual void SAL_CALL setAuthor(const OUString & the_value);
+    virtual util::DateTime SAL_CALL getDateTime();
+    virtual void SAL_CALL setDateTime(const util::DateTime & the_value);
+    virtual Reference< XText > SAL_CALL getTextRange();
 
 private:
     Annotation(const Annotation &); // not defined
@@ -195,48 +195,48 @@ void SAL_CALL Annotation::disposing()
 	}
 }
 
-Any Annotation::queryInterface(Type const & type) throw (RuntimeException)
+Any Annotation::queryInterface(Type const & type)
 {
     return ::cppu::WeakComponentImplHelper1< XAnnotation>::queryInterface(type);
 }
 
 // com.sun.star.beans.XPropertySet:
-Reference< XPropertySetInfo > SAL_CALL Annotation::getPropertySetInfo() throw (RuntimeException)
+Reference< XPropertySetInfo > SAL_CALL Annotation::getPropertySetInfo()
 {
     return ::cppu::PropertySetMixin< XAnnotation >::getPropertySetInfo();
 }
 
-void SAL_CALL Annotation::setPropertyValue(const OUString & aPropertyName, const Any & aValue) throw (RuntimeException, UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException)
+void SAL_CALL Annotation::setPropertyValue(const OUString & aPropertyName, const Any & aValue)
 {
     ::cppu::PropertySetMixin< XAnnotation >::setPropertyValue(aPropertyName, aValue);
 }
 
-Any SAL_CALL Annotation::getPropertyValue(const OUString & aPropertyName) throw (RuntimeException, UnknownPropertyException, WrappedTargetException)
+Any SAL_CALL Annotation::getPropertyValue(const OUString & aPropertyName)
 {
     return ::cppu::PropertySetMixin< XAnnotation >::getPropertyValue(aPropertyName);
 }
 
-void SAL_CALL Annotation::addPropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & xListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException)
+void SAL_CALL Annotation::addPropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & xListener)
 {
     ::cppu::PropertySetMixin< XAnnotation >::addPropertyChangeListener(aPropertyName, xListener);
 }
 
-void SAL_CALL Annotation::removePropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & xListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException)
+void SAL_CALL Annotation::removePropertyChangeListener(const OUString & aPropertyName, const Reference< XPropertyChangeListener > & xListener)
 {
     ::cppu::PropertySetMixin< XAnnotation >::removePropertyChangeListener(aPropertyName, xListener);
 }
 
-void SAL_CALL Annotation::addVetoableChangeListener(const OUString & aPropertyName, const Reference< XVetoableChangeListener > & xListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException)
+void SAL_CALL Annotation::addVetoableChangeListener(const OUString & aPropertyName, const Reference< XVetoableChangeListener > & xListener)
 {
     ::cppu::PropertySetMixin< XAnnotation >::addVetoableChangeListener(aPropertyName, xListener);
 }
 
-void SAL_CALL Annotation::removeVetoableChangeListener(const OUString & aPropertyName, const Reference< XVetoableChangeListener > & xListener) throw (RuntimeException, UnknownPropertyException, WrappedTargetException)
+void SAL_CALL Annotation::removeVetoableChangeListener(const OUString & aPropertyName, const Reference< XVetoableChangeListener > & xListener)
 {
     ::cppu::PropertySetMixin< XAnnotation >::removeVetoableChangeListener(aPropertyName, xListener);
 }
 
-Any SAL_CALL Annotation::getAnchor() throw (RuntimeException)
+Any SAL_CALL Annotation::getAnchor()
 {
     osl::MutexGuard g(m_aMutex);
     Any aRet;
@@ -249,13 +249,13 @@ Any SAL_CALL Annotation::getAnchor() throw (RuntimeException)
 }
 
 // ::com::sun::star::office::XAnnotation:
-RealPoint2D SAL_CALL Annotation::getPosition() throw (RuntimeException)
+RealPoint2D SAL_CALL Annotation::getPosition()
 {
     osl::MutexGuard g(m_aMutex);
     return m_Position;
 }
 
-void SAL_CALL Annotation::setPosition(const RealPoint2D & the_value) throw (RuntimeException)
+void SAL_CALL Annotation::setPosition(const RealPoint2D & the_value)
 {
     prepareSet(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Position")),
@@ -268,13 +268,13 @@ void SAL_CALL Annotation::setPosition(const RealPoint2D & the_value) throw (Runt
 }
 
 // ::com::sun::star::office::XAnnotation:
-RealSize2D SAL_CALL Annotation::getSize() throw (RuntimeException)
+RealSize2D SAL_CALL Annotation::getSize()
 {
     osl::MutexGuard g(m_aMutex);
     return m_Size;
 }
 
-void SAL_CALL Annotation::setSize(const RealSize2D & the_value) throw (RuntimeException)
+void SAL_CALL Annotation::setSize(const RealSize2D & the_value)
 {
     prepareSet(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Size")),
@@ -286,13 +286,13 @@ void SAL_CALL Annotation::setSize(const RealSize2D & the_value) throw (RuntimeEx
     }
 }
 
-OUString SAL_CALL Annotation::getAuthor() throw (RuntimeException)
+OUString SAL_CALL Annotation::getAuthor()
 {
     osl::MutexGuard g(m_aMutex);
     return m_Author;
 }
 
-void SAL_CALL Annotation::setAuthor(const OUString & the_value) throw (RuntimeException)
+void SAL_CALL Annotation::setAuthor(const OUString & the_value)
 {
     prepareSet(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Author")),
@@ -304,13 +304,13 @@ void SAL_CALL Annotation::setAuthor(const OUString & the_value) throw (RuntimeEx
     }
 }
 
-util::DateTime SAL_CALL Annotation::getDateTime() throw (RuntimeException)
+util::DateTime SAL_CALL Annotation::getDateTime()
 {
     osl::MutexGuard g(m_aMutex);
     return m_DateTime;
 }
 
-void SAL_CALL Annotation::setDateTime(const util::DateTime & the_value) throw (RuntimeException)
+void SAL_CALL Annotation::setDateTime(const util::DateTime & the_value)
 {
     prepareSet(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DateTime")),
@@ -336,7 +336,7 @@ void Annotation::createChangeUndo()
     }
 }
 
-Reference< XText > SAL_CALL Annotation::getTextRange() throw (RuntimeException)
+Reference< XText > SAL_CALL Annotation::getTextRange()
 {
     osl::MutexGuard g(m_aMutex);
 	if( !m_TextRange.is() && (mpPage != 0) )

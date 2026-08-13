@@ -35,11 +35,9 @@ namespace shell
     class WinSysMailClient : public WinSysMailClient_Base
     {
     public:
-        virtual css::uno::Reference<css::system::XMailMessage> SAL_CALL createMailMessage()
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Reference<css::system::XMailMessage> SAL_CALL createMailMessage();
 
-        virtual void SAL_CALL sendMailMessage(const css::uno::Reference<css::system::XMailMessage>& xMailMessage, sal_Int32 aFlag)
-            throw (css::lang::IllegalArgumentException, css::uno::Exception, css::uno::RuntimeException);
+        virtual void SAL_CALL sendMailMessage(const css::uno::Reference<css::system::XMailMessage>& xMailMessage, sal_Int32 aFlag);
 
     private:
         void validateParameter(const css::uno::Reference<css::system::XMailMessage>& xMailMessage, sal_Int32 aFlag);

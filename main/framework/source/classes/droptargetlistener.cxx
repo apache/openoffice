@@ -80,7 +80,7 @@ DropTargetListener::~DropTargetListener()
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL DropTargetListener::disposing( const css::lang::EventObject& ) throw( css::uno::RuntimeException )
+void SAL_CALL DropTargetListener::disposing( const css::lang::EventObject& )
 {
     m_xTargetFrame = css::uno::WeakReference< css::frame::XFrame >();
     m_xFactory     = css::uno::Reference< css::lang::XMultiServiceFactory >();
@@ -88,7 +88,7 @@ void SAL_CALL DropTargetListener::disposing( const css::lang::EventObject& ) thr
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL DropTargetListener::drop( const css::datatransfer::dnd::DropTargetDropEvent& dtde ) throw( css::uno::RuntimeException )
+void SAL_CALL DropTargetListener::drop( const css::datatransfer::dnd::DropTargetDropEvent& dtde )
 {
 	const sal_Int8 nAction = dtde.DropAction;
 
@@ -123,7 +123,7 @@ void SAL_CALL DropTargetListener::drop( const css::datatransfer::dnd::DropTarget
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL DropTargetListener::dragEnter( const css::datatransfer::dnd::DropTargetDragEnterEvent& dtdee ) throw( css::uno::RuntimeException )
+void SAL_CALL DropTargetListener::dragEnter( const css::datatransfer::dnd::DropTargetDragEnterEvent& dtdee )
 {
 	try
 	{
@@ -138,7 +138,7 @@ void SAL_CALL DropTargetListener::dragEnter( const css::datatransfer::dnd::DropT
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL DropTargetListener::dragExit( const css::datatransfer::dnd::DropTargetEvent& ) throw( css::uno::RuntimeException )
+void SAL_CALL DropTargetListener::dragExit( const css::datatransfer::dnd::DropTargetEvent& )
 {
 	try
 	{
@@ -151,7 +151,7 @@ void SAL_CALL DropTargetListener::dragExit( const css::datatransfer::dnd::DropTa
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL DropTargetListener::dragOver( const css::datatransfer::dnd::DropTargetDragEvent& dtde ) throw( css::uno::RuntimeException )
+void SAL_CALL DropTargetListener::dragOver( const css::datatransfer::dnd::DropTargetDragEvent& dtde )
 {
 	try
 	{
@@ -170,7 +170,7 @@ void SAL_CALL DropTargetListener::dragOver( const css::datatransfer::dnd::DropTa
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL DropTargetListener::dropActionChanged( const css::datatransfer::dnd::DropTargetDragEvent& ) throw( css::uno::RuntimeException )
+void SAL_CALL DropTargetListener::dropActionChanged( const css::datatransfer::dnd::DropTargetDragEvent& )
 {
 }
 

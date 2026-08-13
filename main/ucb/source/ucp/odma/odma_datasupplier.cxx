@@ -446,6 +446,5 @@ void DataSupplier::close()
 //=========================================================================
 // virtual
 void DataSupplier::validate()
-	throw( ResultSetException )
 {
 }

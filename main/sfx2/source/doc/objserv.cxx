@@ -155,12 +155,11 @@ public:
 
 	void SetPreventClose( sal_Bool bPrevent ) { m_bPreventClose = bPrevent; }
 
-    virtual void SAL_CALL queryClosing( const lang::EventObject& aEvent, sal_Bool bDeliverOwnership )
-        throw ( uno::RuntimeException, util::CloseVetoException );
+    virtual void SAL_CALL queryClosing( const lang::EventObject& aEvent, sal_Bool bDeliverOwnership );
 
-    virtual void SAL_CALL notifyClosing( const lang::EventObject& aEvent ) throw ( uno::RuntimeException ) ;
+    virtual void SAL_CALL notifyClosing( const lang::EventObject& aEvent ) ;
 
-	virtual void SAL_CALL disposing( const lang::EventObject& aEvent ) throw ( uno::RuntimeException ) ;
+	virtual void SAL_CALL disposing( const lang::EventObject& aEvent ) ;
 
 } ;
 
@@ -171,7 +170,6 @@ SfxClosePreventer_Impl::SfxClosePreventer_Impl()
 }
 
 void SAL_CALL SfxClosePreventer_Impl::queryClosing( const lang::EventObject&, sal_Bool bDeliverOwnership )
-        throw ( uno::RuntimeException, util::CloseVetoException )
 {
 	if ( m_bPreventClose )
 	{
@@ -182,10 +180,10 @@ void SAL_CALL SfxClosePreventer_Impl::queryClosing( const lang::EventObject&, sa
 	}
 }
 
-void SAL_CALL SfxClosePreventer_Impl::notifyClosing( const lang::EventObject& ) throw ( uno::RuntimeException )
+void SAL_CALL SfxClosePreventer_Impl::notifyClosing( const lang::EventObject& )
 {}
 
-void SAL_CALL SfxClosePreventer_Impl::disposing( const lang::EventObject& ) throw ( uno::RuntimeException )
+void SAL_CALL SfxClosePreventer_Impl::disposing( const lang::EventObject& )
 {}
 
 //=========================================================================

@@ -160,7 +160,7 @@ protected:
     // window
 	virtual void	Resize();
 	// OPropertyChangeListener
-	virtual void	_propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent) throw( ::com::sun::star::uno::RuntimeException);
+	virtual void	_propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent);
 public:
 	OGroupsSortingDialog( Window* pParent
 						,sal_Bool _bReadOnly
@@ -191,7 +191,7 @@ public:
     virtual ImageList getImageList(sal_Int16 _eSymbolsSize,sal_Bool _bHiContast) const;
 
     // ImageListProvider interface
-    virtual ImageList getImageList(vcl::ImageListType) SAL_THROW ((com::sun::star::lang::IllegalArgumentException ));
+    virtual ImageList getImageList(vcl::ImageListType);
 
 };
 // =============================================================================

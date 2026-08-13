@@ -266,14 +266,12 @@ protected:
     void initializePropertyValueCache( sal_Int32 nHandle );
 
     /// OPropertysetHelper methods
-    virtual sal_Bool SAL_CALL convertFastPropertyValue( Any_t& rConvertedValue, Any_t& rOldValue, sal_Int32 nHandle, const Any_t& rValue )
-		throw (::com::sun::star::lang::IllegalArgumentException);
-	virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const Any_t& rValue )
-        throw (::com::sun::star::uno::Exception);
+    virtual sal_Bool SAL_CALL convertFastPropertyValue( Any_t& rConvertedValue, Any_t& rOldValue, sal_Int32 nHandle, const Any_t& rValue );
+	virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const Any_t& rValue );
 	virtual void SAL_CALL getFastPropertyValue( Any_t& rValue, sal_Int32 nHandle ) const;
 
     virtual cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
 public:
     /// helper struct for granting selective access to some notification-related methods

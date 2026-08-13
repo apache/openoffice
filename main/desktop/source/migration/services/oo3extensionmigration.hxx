@@ -57,8 +57,7 @@ namespace migration
     ::rtl::OUString SAL_CALL OO3ExtensionMigration_getImplementationName();
     ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL OO3ExtensionMigration_getSupportedServiceNames();
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL OO3ExtensionMigration_create(
-        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext )
-        SAL_THROW( (::com::sun::star::uno::Exception) );
+        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext );
 
 
     // =============================================================================
@@ -101,22 +100,16 @@ namespace migration
         virtual ~OO3ExtensionMigration();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName()
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-            throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XJob
         virtual ::com::sun::star::uno::Any SAL_CALL execute(
-            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Arguments )
-            throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::Exception,
-                ::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Arguments );
     };
 
     class TmpRepositoryCommandEnv
@@ -132,21 +125,18 @@ namespace migration
 
         // XCommandEnvironment
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler > SAL_CALL
-        getInteractionHandler() throw ( ::com::sun::star::uno::RuntimeException );
+        getInteractionHandler();
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XProgressHandler >
-        SAL_CALL getProgressHandler() throw ( ::com::sun::star::uno::RuntimeException );
+        SAL_CALL getProgressHandler();
 
         // XInteractionHandler
         virtual void SAL_CALL handle(
-            ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest > const & xRequest )
-            throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest > const & xRequest );
 
         // XProgressHandler
-        virtual void SAL_CALL push( ::com::sun::star::uno::Any const & Status )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL update( ::com::sun::star::uno::Any const & Status )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL pop() throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL push( ::com::sun::star::uno::Any const & Status );
+        virtual void SAL_CALL update( ::com::sun::star::uno::Any const & Status );
+        virtual void SAL_CALL pop();
     };
 
 //.........................................................................

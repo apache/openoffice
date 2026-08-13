@@ -89,16 +89,12 @@ class DocumentAcceleratorConfiguration : public XMLBasedAcceleratorConfiguration
         DECLARE_XSERVICEINFO
 
         // XInitialization
-        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments)
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments);
 
 		// XUIConfigurationStorage
-		virtual void SAL_CALL setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage);
 
-		virtual sal_Bool SAL_CALL hasStorage()
-			throw(css::uno::RuntimeException);
+		virtual sal_Bool SAL_CALL hasStorage();
 
     //______________________________________
     // helper

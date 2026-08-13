@@ -391,7 +391,6 @@ void DropTarget::concludeDragOperation(id /*sender*/)
 
 
   void SAL_CALL DropTarget::initialize(const Sequence< Any >& aArguments)
-	throw(Exception)
   {
 	if (aArguments.getLength() < 2)
 	  {
@@ -424,38 +423,36 @@ void DropTarget::concludeDragOperation(id /*sender*/)
 
 
   void SAL_CALL DropTarget::addDropTargetListener(const uno::Reference<XDropTargetListener>& dtl)
-	throw(RuntimeException)
   {
 	rBHelper.addListener(::getCppuType(&dtl), dtl);
   }
 
 
   void SAL_CALL DropTarget::removeDropTargetListener(const uno::Reference<XDropTargetListener>& dtl)
-	throw(RuntimeException)
   {
 	rBHelper.removeListener(::getCppuType(&dtl), dtl);
   }
 
 
-  sal_Bool SAL_CALL DropTarget::isActive(  ) throw(RuntimeException)
+  sal_Bool SAL_CALL DropTarget::isActive(  )
   {
 	return mbActive;
   }
 
 
-  void SAL_CALL DropTarget::setActive(sal_Bool active) throw(RuntimeException)
+  void SAL_CALL DropTarget::setActive(sal_Bool active)
   {
 	mbActive = active;
   }
 
 
-  sal_Int8 SAL_CALL DropTarget::getDefaultActions() throw(RuntimeException)
+  sal_Int8 SAL_CALL DropTarget::getDefaultActions()
   {
 	return mDefaultActions;
   }
 
 
-  void SAL_CALL DropTarget::setDefaultActions(sal_Int8 actions) throw(RuntimeException)
+  void SAL_CALL DropTarget::setDefaultActions(sal_Int8 actions)
   {
 	OSL_ENSURE( actions < 8, "No valid default actions");
 	mDefaultActions= actions;
@@ -464,13 +461,13 @@ void DropTarget::concludeDragOperation(id /*sender*/)
 
   // XDropTargetDragContext
 
-  void SAL_CALL DropTarget::acceptDrag(sal_Int8 dragOperation) throw (RuntimeException)
+  void SAL_CALL DropTarget::acceptDrag(sal_Int8 dragOperation)
   {
 	mSelectedDropAction = dragOperation;
   }
 
 
-  void SAL_CALL DropTarget::rejectDrag() throw (RuntimeException)
+  void SAL_CALL DropTarget::rejectDrag()
   {
 	mSelectedDropAction = DNDConstants::ACTION_NONE;
   }
@@ -478,19 +475,19 @@ void DropTarget::concludeDragOperation(id /*sender*/)
 
   //XDropTargetDropContext
 
-  void SAL_CALL DropTarget::acceptDrop(sal_Int8 dropOperation) throw( RuntimeException)
+  void SAL_CALL DropTarget::acceptDrop(sal_Int8 dropOperation)
   {
 	mSelectedDropAction = dropOperation;
   }
 
 
-  void SAL_CALL DropTarget::rejectDrop() throw (RuntimeException)
+  void SAL_CALL DropTarget::rejectDrop()
   {
 	mSelectedDropAction = DNDConstants::ACTION_NONE;
   }
 
 
-  void SAL_CALL DropTarget::dropComplete(sal_Bool success) throw (RuntimeException)
+  void SAL_CALL DropTarget::dropComplete(sal_Bool success)
   {
 	// Reset the internal transferable used as shortcut in case this is
 	// an internal D&D operation
@@ -588,19 +585,19 @@ void DropTarget::concludeDragOperation(id /*sender*/)
 
   // XServiceInfo
 
-  OUString SAL_CALL DropTarget::getImplementationName() throw (RuntimeException)
+  OUString SAL_CALL DropTarget::getImplementationName()
   {
 	return dropTarget_getImplementationName();
   }
 
 
-  sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+  sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName )
   {
 	return ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.datatransfer.dnd.OleDropTarget")));
   }
 
 
-  Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  ) throw (RuntimeException)
+  Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  )
   {
 	return dropTarget_getSupportedServiceNames();
   }

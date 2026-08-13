@@ -85,7 +85,6 @@ XINTERFACE_COMMON_IMPL( CachedDynamicResultSet )
 
 Any SAL_CALL CachedDynamicResultSet
 	::queryInterface( const Type&  rType )
-	throw ( RuntimeException )
 {
 	//list all interfaces inclusive baseclasses of interfaces
 
@@ -127,7 +126,6 @@ XSERVICEINFO_NOFACTORY_IMPL_1( CachedDynamicResultSet,
 //virtual
 void SAL_CALL CachedDynamicResultSet
 	::impl_disposing( const EventObject& Source )
-	throw( RuntimeException )
 {
 	DynamicResultSetWrapper::impl_disposing( Source );
 	m_xContentIdentifierMapping.clear();
@@ -192,7 +190,6 @@ Reference< XDynamicResultSet > SAL_CALL CachedDynamicResultSetFactory
 	::createCachedDynamicResultSet(
 		  const Reference< XDynamicResultSet > & SourceStub
 		, const Reference< XContentIdentifierMapping > & ContentIdentifierMapping )
-		throw( RuntimeException )
 {
 	Reference< XDynamicResultSet > xRet;
 	xRet = new CachedDynamicResultSet( SourceStub, ContentIdentifierMapping, m_xSMgr );

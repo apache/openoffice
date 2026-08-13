@@ -126,7 +126,6 @@ long ChildrenManagerImpl::GetChildCount (void) const throw ()
 
 ::com::sun::star::uno::Reference<
         ::com::sun::star::drawing::XShape> ChildrenManagerImpl::GetChildShape(long nIndex)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	uno::Reference<XAccessible> xAcc = GetChild(nIndex);
 	ChildDescriptorListType::iterator I, aEnd = maVisibleChildren.end();
@@ -143,8 +142,6 @@ long ChildrenManagerImpl::GetChildCount (void) const throw ()
 */
 uno::Reference<XAccessible>
     ChildrenManagerImpl::GetChild (long nIndex)
-    throw (::com::sun::star::uno::RuntimeException,
-           ::com::sun::star::lang::IndexOutOfBoundsException)
 {
     // Check whether the given index is valid.
     if (nIndex < 0 || (unsigned long)nIndex >= maVisibleChildren.size())
@@ -164,7 +161,6 @@ uno::Reference<XAccessible>
 */
 uno::Reference<XAccessible>
     ChildrenManagerImpl::GetChild (ChildDescriptor& rChildDescriptor,sal_Int32 _nIndex)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     if ( ! rChildDescriptor.mxAccessibleShape.is())
     {
@@ -205,7 +201,6 @@ uno::Reference<XAccessible>
 
 uno::Reference<XAccessible>
     ChildrenManagerImpl::GetChild (const uno::Reference<drawing::XShape>& xShape)
-    throw (uno::RuntimeException)
 {
     ChildDescriptorListType::iterator I, aEnd = maVisibleChildren.end();
     for (I = maVisibleChildren.begin(); I != aEnd; ++I)
@@ -673,7 +668,6 @@ void ChildrenManagerImpl::SetInfo (const AccessibleShapeTreeInfo& rShapeTreeInfo
 
 void SAL_CALL
     ChildrenManagerImpl::disposing (const lang::EventObject& rEventObject)
-    throw (uno::RuntimeException)
 {
     if (rEventObject.Source == maShapeTreeInfo.GetModelBroadcaster()
             || rEventObject.Source == maShapeTreeInfo.GetController())
@@ -709,7 +703,6 @@ void SAL_CALL
 void SAL_CALL
     ChildrenManagerImpl::notifyEvent (
 		const document::EventObject& rEventObject)
-    throw (uno::RuntimeException)
 {
     static const ::rtl::OUString sShapeInserted (
 		RTL_CONSTASCII_USTRINGPARAM("ShapeInserted"));
@@ -731,7 +724,6 @@ void SAL_CALL
 
 void  SAL_CALL
     ChildrenManagerImpl::selectionChanged (const lang::EventObject& /*rEvent*/)
-        throw (uno::RuntimeException)
 {
     UpdateSelection ();
 }
@@ -795,7 +787,6 @@ void SAL_CALL ChildrenManagerImpl::disposing (void)
 // This method is experimental.  Use with care.
 long int ChildrenManagerImpl::GetChildIndex (const ::com::sun::star::uno::Reference<
     ::com::sun::star::accessibility::XAccessible>& xChild) const
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard (maMutex);
 	sal_Int32 nCount = maVisibleChildren.size();
@@ -842,7 +833,6 @@ sal_Bool ChildrenManagerImpl::ReplaceChild (
 	const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& _rxShape,
 	const long _nIndex,
 	const AccessibleShapeTreeInfo& _rShapeTreeInfo)
-    throw (uno::RuntimeException)
 {
     AccessibleShapeInfo aShapeInfo( _rxShape, pCurrentChild->getAccessibleParent(), this, _nIndex );
 	// create the new child
@@ -891,7 +881,7 @@ sal_Bool ChildrenManagerImpl::ReplaceChild (
     return bResult;
 }
 // Add the impl method for IAccessibleParent interface
-AccessibleControlShape * ChildrenManagerImpl::GetAccControlShapeFromModel(::com::sun::star::beans::XPropertySet* pSet) throw (::com::sun::star::uno::RuntimeException)
+AccessibleControlShape * ChildrenManagerImpl::GetAccControlShapeFromModel(::com::sun::star::beans::XPropertySet* pSet)
 {
 	sal_Int32 count = GetChildCount();
 	for (sal_Int32 index=0;index<count;index++)
@@ -908,7 +898,6 @@ AccessibleControlShape * ChildrenManagerImpl::GetAccControlShapeFromModel(::com:
 }
 uno::Reference<XAccessible>
     ChildrenManagerImpl::GetAccessibleCaption (const uno::Reference<drawing::XShape>& xShape)
-    throw (uno::RuntimeException)
 {
     ChildDescriptorListType::iterator I, aEnd = maVisibleChildren.end();
     for (I = maVisibleChildren.begin(); I != aEnd; ++I)

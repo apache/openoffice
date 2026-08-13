@@ -94,7 +94,7 @@ namespace pcr
         bool    hasNonEmptyCurrentTargetURL() const;
 
     private:
-        sal_Int32 implGetCurrentButtonType() const SAL_THROW(( ::com::sun::star::uno::Exception ));
+        sal_Int32 implGetCurrentButtonType() const;
     };
 
 //............................................................................

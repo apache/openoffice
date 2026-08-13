@@ -89,21 +89,18 @@ public:
 
     //===== lang::XEventListener ==============================================
     virtual void SAL_CALL
-        disposing (const ::com::sun::star::lang::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const ::com::sun::star::lang::EventObject& rEventObject);
 
 
     //===== beans::XPropertySetListener =======================================
     virtual void SAL_CALL
         propertyChange (
-            const com::sun::star::beans::PropertyChangeEvent& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+            const com::sun::star::beans::PropertyChangeEvent& rEvent);
 
     //===== view::XSelectionChangeListener ====================================
     virtual void SAL_CALL
         selectionChanged (
-            const com::sun::star::lang::EventObject& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+            const com::sun::star::lang::EventObject& rEvent);
 
     //===== frame::XFrameActionListener  ======================================
     /** For certain actions the listener connects to a new controller of the
@@ -111,14 +108,12 @@ public:
         in the center pane is replaced by another view shell.
     */
     virtual void SAL_CALL
-        frameAction (const ::com::sun::star::frame::FrameActionEvent& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+        frameAction (const ::com::sun::star::frame::FrameActionEvent& rEvent);
 
     //===== drawing::framework::XConfigurationChangeListener ==================
     virtual void SAL_CALL
         notifyConfigurationChange (
-            const ::com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent);
 
 
     virtual void SAL_CALL disposing (void);
@@ -165,8 +160,7 @@ private:
     /** This method throws a DisposedException when the object has already been
         disposed.
     */
-    void ThrowIfDisposed (void)
-        throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void);
 
     DECL_LINK(SlideSorterSelectionChangeListener, void*);
 };
@@ -526,7 +520,6 @@ void EventMultiplexer::Implementation::DisconnectFromController (void)
 
 void SAL_CALL EventMultiplexer::Implementation::disposing (
     const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if (mbListeningToController)
     {
@@ -553,7 +546,6 @@ void SAL_CALL EventMultiplexer::Implementation::disposing (
 
 void SAL_CALL EventMultiplexer::Implementation::propertyChange (
     const beans::PropertyChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -579,7 +571,6 @@ void SAL_CALL EventMultiplexer::Implementation::propertyChange (
 
 void SAL_CALL EventMultiplexer::Implementation::frameAction (
     const frame::FrameActionEvent& rEvent)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     Reference<frame::XFrame> xFrame (mxFrameWeak);
     if (rEvent.Frame == xFrame)
@@ -614,7 +605,6 @@ void SAL_CALL EventMultiplexer::Implementation::frameAction (
 
 void SAL_CALL EventMultiplexer::Implementation::selectionChanged (
     const lang::EventObject& )
-    throw (::com::sun::star::uno::RuntimeException)
 {
     CallListeners (EventMultiplexerEvent::EID_EDIT_VIEW_SELECTION);
 }
@@ -626,7 +616,6 @@ void SAL_CALL EventMultiplexer::Implementation::selectionChanged (
 
 void SAL_CALL EventMultiplexer::Implementation::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     sal_Int32 nEventType = 0;
     rEvent.UserData >>= nEventType;
@@ -707,7 +696,6 @@ void SAL_CALL EventMultiplexer::Implementation::disposing (void)
 
 
 void EventMultiplexer::Implementation::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

@@ -30,7 +30,7 @@ using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
 SwVbaVariable::SwVbaVariable( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext,
-    const uno::Reference< beans::XPropertyAccess >& rUserDefined, const rtl::OUString& rName ) throw ( uno::RuntimeException ) :
+    const uno::Reference< beans::XPropertyAccess >& rUserDefined, const rtl::OUString& rName ) :
     SwVbaVariable_BASE( rParent, rContext ), mxUserDefined( rUserDefined ), maName( rName )
 {
 }
@@ -40,27 +40,27 @@ SwVbaVariable::~SwVbaVariable()
 }
 
 rtl::OUString SAL_CALL
-SwVbaVariable::getName() throw ( css::uno::RuntimeException )
+SwVbaVariable::getName()
 {
     return maName;
 }
 
 void SAL_CALL
-SwVbaVariable::setName( const rtl::OUString& ) throw ( css::uno::RuntimeException )
+SwVbaVariable::setName( const rtl::OUString& )
 {
     throw uno::RuntimeException( rtl::OUString(
             RTL_CONSTASCII_USTRINGPARAM(" Fail to set name")), uno::Reference< uno::XInterface >() );
 }
 
 uno::Any SAL_CALL
-SwVbaVariable::getValue() throw ( css::uno::RuntimeException )
+SwVbaVariable::getValue()
 {
     uno::Reference< beans::XPropertySet > xProp( mxUserDefined, uno::UNO_QUERY_THROW );
     return xProp->getPropertyValue( maName );
 }
 
 void SAL_CALL
-SwVbaVariable::setValue( const uno::Any& rValue ) throw ( css::uno::RuntimeException )
+SwVbaVariable::setValue( const uno::Any& rValue )
 {
     // FIXME: fail to set the value if the new type of vaue is differenct from the original one.
     uno::Reference< beans::XPropertySet > xProp( mxUserDefined, uno::UNO_QUERY_THROW );
@@ -68,7 +68,7 @@ SwVbaVariable::setValue( const uno::Any& rValue ) throw ( css::uno::RuntimeExcep
 }
 
 sal_Int32 SAL_CALL
-SwVbaVariable::getIndex() throw ( css::uno::RuntimeException )
+SwVbaVariable::getIndex()
 {
     const uno::Sequence< beans::PropertyValue > props = mxUserDefined->getPropertyValues();
     for (sal_Int32 i = 0; i < props.getLength(); ++i)

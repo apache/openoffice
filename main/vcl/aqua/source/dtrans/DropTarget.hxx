@@ -98,35 +98,32 @@ public:
   virtual void SAL_CALL disposing();
 
   // XInitialization
-  virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments )
-	throw(com::sun::star::uno::Exception);
+  virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments );
 
   // XDropTarget
-  virtual void SAL_CALL addDropTargetListener( const com::sun::star::uno::Reference< com::sun::star::datatransfer::dnd::XDropTargetListener >& dtl )
-	throw(com::sun::star::uno::RuntimeException);
+  virtual void SAL_CALL addDropTargetListener( const com::sun::star::uno::Reference< com::sun::star::datatransfer::dnd::XDropTargetListener >& dtl );
 
-  virtual void SAL_CALL removeDropTargetListener( const com::sun::star::uno::Reference<  com::sun::star::datatransfer::dnd::XDropTargetListener >& dtl )
-	throw(com::sun::star::uno::RuntimeException);
+  virtual void SAL_CALL removeDropTargetListener( const com::sun::star::uno::Reference<  com::sun::star::datatransfer::dnd::XDropTargetListener >& dtl );
 
   // Default is not active
-  virtual sal_Bool SAL_CALL isActive() throw(com::sun::star::uno::RuntimeException);
-  virtual void SAL_CALL setActive(sal_Bool isActive) throw(com::sun::star::uno::RuntimeException);
-  virtual sal_Int8 SAL_CALL getDefaultActions() throw(com::sun::star::uno::RuntimeException);
-  virtual void SAL_CALL setDefaultActions(sal_Int8 actions) throw(com::sun::star::uno::RuntimeException);
+  virtual sal_Bool SAL_CALL isActive();
+  virtual void SAL_CALL setActive(sal_Bool isActive);
+  virtual sal_Int8 SAL_CALL getDefaultActions();
+  virtual void SAL_CALL setDefaultActions(sal_Int8 actions);
 
   // XDropTargetDragContext
-  virtual void SAL_CALL acceptDrag(sal_Int8 dragOperation) throw(com::sun::star::uno::RuntimeException);
-  virtual void SAL_CALL rejectDrag() throw(com::sun::star::uno::RuntimeException);
+  virtual void SAL_CALL acceptDrag(sal_Int8 dragOperation);
+  virtual void SAL_CALL rejectDrag();
 
   // XDropTargetDragContext
-  virtual void SAL_CALL acceptDrop(sal_Int8 dropOperation) throw (com::sun::star::uno::RuntimeException);
-  virtual void SAL_CALL rejectDrop() throw (com::sun::star::uno::RuntimeException);
-  virtual void SAL_CALL dropComplete(sal_Bool success) throw (com::sun::star::uno::RuntimeException);
+  virtual void SAL_CALL acceptDrop(sal_Int8 dropOperation);
+  virtual void SAL_CALL rejectDrop();
+  virtual void SAL_CALL dropComplete(sal_Bool success);
 
   // XServiceInfo
-  virtual rtl::OUString SAL_CALL getImplementationName() throw (com::sun::star::uno::RuntimeException);
-  virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) throw (com::sun::star::uno::RuntimeException);
-  virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);
+  virtual rtl::OUString SAL_CALL getImplementationName();
+  virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+  virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
   // NSDraggingDestination protocol functions
   virtual NSDragOperation draggingEntered(id sender);

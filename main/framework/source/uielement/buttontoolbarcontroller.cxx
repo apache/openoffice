@@ -95,7 +95,6 @@ ButtonToolbarController::~ButtonToolbarController()
 
         // XInterface
 uno::Any SAL_CALL ButtonToolbarController::queryInterface( const uno::Type& rType )
-throw (::com::sun::star::uno::RuntimeException)
 {
     Any a = ::cppu::queryInterface(
                 rType ,
@@ -124,7 +123,6 @@ void SAL_CALL ButtonToolbarController::release() throw ()
 // XInitialization
 void SAL_CALL ButtonToolbarController::initialize(
     const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     const rtl::OUString aFrameName( RTL_CONSTASCII_USTRINGPARAM( "Frame" ));
     const rtl::OUString aCommandURLName( RTL_CONSTASCII_USTRINGPARAM( "CommandURL" ));
@@ -163,7 +161,7 @@ throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException
 }
 
 // XComponent
-void SAL_CALL ButtonToolbarController::dispose() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ButtonToolbarController::dispose()
 {
     Reference< XComponent > xThis( static_cast< OWeakObject* >(this), UNO_QUERY );
 
@@ -182,21 +180,18 @@ void SAL_CALL ButtonToolbarController::dispose() throw (::com::sun::star::uno::R
 
 void SAL_CALL ButtonToolbarController::addEventListener(
     const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& )
-throw (::com::sun::star::uno::RuntimeException)
 {
     // do nothing
 }
 
 void SAL_CALL ButtonToolbarController::removeEventListener(
     const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& )
-throw (::com::sun::star::uno::RuntimeException)
 {
     // do nothing
 }
 
 // XUpdatable
 void SAL_CALL ButtonToolbarController::update()
-throw (::com::sun::star::uno::RuntimeException)
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
     if ( m_bDisposed )
@@ -206,7 +201,6 @@ throw (::com::sun::star::uno::RuntimeException)
 // XEventListener
 void SAL_CALL ButtonToolbarController::disposing(
     const com::sun::star::lang::EventObject& Source )
-throw ( ::com::sun::star::uno::RuntimeException )
 {
     uno::Reference< uno::XInterface > xSource( Source.Source );
 
@@ -221,7 +215,6 @@ throw ( ::com::sun::star::uno::RuntimeException )
 }
 
 void SAL_CALL ButtonToolbarController::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& )
-throw ( ::com::sun::star::uno::RuntimeException )
 {
     // do nothing
     if ( m_bDisposed )
@@ -230,7 +223,6 @@ throw ( ::com::sun::star::uno::RuntimeException )
 
 // XToolbarController
 void SAL_CALL ButtonToolbarController::execute( sal_Int16 KeyModifier )
-throw (::com::sun::star::uno::RuntimeException)
 {
     uno::Reference< frame::XDispatch >      xDispatch;
     uno::Reference< frame::XFrame >         xFrame;
@@ -291,7 +283,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 void SAL_CALL ButtonToolbarController::click()
-throw (::com::sun::star::uno::RuntimeException)
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 
@@ -303,7 +294,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 void SAL_CALL ButtonToolbarController::doubleClick()
-throw (::com::sun::star::uno::RuntimeException)
 {
     // do nothing
     if ( m_bDisposed )
@@ -311,7 +301,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 uno::Reference< awt::XWindow > SAL_CALL ButtonToolbarController::createPopupWindow()
-throw (::com::sun::star::uno::RuntimeException)
 {
     if ( m_bDisposed )
         throw DisposedException();
@@ -321,7 +310,6 @@ throw (::com::sun::star::uno::RuntimeException)
 
 uno::Reference< awt::XWindow > SAL_CALL ButtonToolbarController::createItemWindow(
     const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& )
-throw (::com::sun::star::uno::RuntimeException)
 {
     if ( m_bDisposed )
         throw DisposedException();

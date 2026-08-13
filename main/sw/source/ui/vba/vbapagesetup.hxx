@@ -35,26 +35,26 @@ typedef cppu::ImplInheritanceHelper1< VbaPageSetupBase, ooo::vba::word::XPageSet
 class SwVbaPageSetup :  public SwVbaPageSetup_BASE
 {
 private:
-    rtl::OUString getStyleOfFirstPage() throw (css::uno::RuntimeException);
+    rtl::OUString getStyleOfFirstPage();
 
 public:
 	SwVbaPageSetup( const css::uno::Reference< ooo::vba::XHelperInterface >& xParent,
                     const css::uno::Reference< css::uno::XComponentContext >& xContext,
                     const css::uno::Reference< css::frame::XModel >& xModel,
-                    const css::uno::Reference< css::beans::XPropertySet >& xProps ) throw (css::uno::RuntimeException);
+                    const css::uno::Reference< css::beans::XPropertySet >& xProps );
 	virtual ~SwVbaPageSetup(){}
 
     // Attributes
-    virtual double SAL_CALL getGutter() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setGutter( double _gutter ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getHeaderDistance() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setHeaderDistance( double _headerdistance ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getFooterDistance() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setFooterDistance( double _footerdistance ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getDifferentFirstPageHeaderFooter() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setDifferentFirstPageHeaderFooter( sal_Bool status ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getSectionStart() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setSectionStart( ::sal_Int32 _sectionstart ) throw (css::uno::RuntimeException);
+    virtual double SAL_CALL getGutter();
+    virtual void SAL_CALL setGutter( double _gutter );
+    virtual double SAL_CALL getHeaderDistance();
+    virtual void SAL_CALL setHeaderDistance( double _headerdistance );
+    virtual double SAL_CALL getFooterDistance();
+    virtual void SAL_CALL setFooterDistance( double _footerdistance );
+    virtual sal_Bool SAL_CALL getDifferentFirstPageHeaderFooter();
+    virtual void SAL_CALL setDifferentFirstPageHeaderFooter( sal_Bool status );
+    virtual ::sal_Int32 SAL_CALL getSectionStart();
+    virtual void SAL_CALL setSectionStart( ::sal_Int32 _sectionstart );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

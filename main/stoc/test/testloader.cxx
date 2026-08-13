@@ -62,12 +62,10 @@ class EmptyComponentContext : public WeakImplHelper1< XComponentContext >
 {
 public:
 	virtual Any SAL_CALL getValueByName( const OUString& /*Name*/ )
-		throw (RuntimeException)
 		{
 			return Any();
 		}
     virtual Reference< XMultiComponentFactory > SAL_CALL getServiceManager(  )
-		throw (RuntimeException)
 		{
 			return Reference< XMultiComponentFactory > ();
 		}

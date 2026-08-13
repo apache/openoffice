@@ -84,22 +84,18 @@ public:
     //Constructors and Destructors
     //=========================================================================
     explicit ScriptStorage(
-        const css::uno::Reference< css::uno::XComponentContext > & xContext )
-        throw ( css::uno::RuntimeException );
+        const css::uno::Reference< css::uno::XComponentContext > & xContext );
     //-------------------------------------------------------------------------
     virtual ~ScriptStorage() SAL_THROW( () );
     //=========================================================================
 
     // XServiceInfo impl
     //=========================================================================
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw ( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
     //-------------------------------------------------------------------------
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString & ServiceName )
-        throw ( css::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString & ServiceName );
     //-------------------------------------------------------------------------
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw ( css::uno::RuntimeException );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
     //-------------------------------------------------------------------------
     static css::uno::Sequence< ::rtl::OUString > SAL_CALL
         getSupportedServiceNames_Static();
@@ -108,8 +104,7 @@ public:
     // XInitialization impl
     //=========================================================================
     virtual void SAL_CALL
-        initialize( css::uno::Sequence< css::uno::Any > const & args )
-        throw ( css::uno::RuntimeException, css::uno::Exception );
+        initialize( css::uno::Sequence< css::uno::Any > const & args );
     //=========================================================================
 
     //XScriptInfoAccess
@@ -121,8 +116,7 @@ public:
      *      The logical names
      */
     virtual css::uno::Sequence< ::rtl::OUString >
-        SAL_CALL getScriptLogicalNames()
-        throw ( css::uno::RuntimeException );
+        SAL_CALL getScriptLogicalNames();
 
     //=========================================================================
     /**
@@ -136,8 +130,7 @@ public:
      */
     virtual css::uno::Sequence< css::uno::Reference< dcsssf::storage::XScriptInfo > >
         SAL_CALL getImplementations(
-            const ::rtl::OUString& queryURI )
-        throw ( css::lang::IllegalArgumentException, css::uno::RuntimeException );
+            const ::rtl::OUString& queryURI );
 
     //=========================================================================
     /**
@@ -148,8 +141,7 @@ public:
      *      script implementations
      */
     virtual css::uno::Sequence< css::uno::Reference< dcsssf::storage::XScriptInfo > >
-        SAL_CALL getAllImplementations()
-        throw ( css::uno::RuntimeException );
+        SAL_CALL getAllImplementations();
 
     //=========================================================================
 
@@ -157,16 +149,14 @@ public:
      * Save the scripts stored in the ScriptStorage into the corresponding
      * area (document or application)
      */
-    void SAL_CALL save()
-        throw ( css::uno::RuntimeException );
+    void SAL_CALL save();
     //=========================================================================
 
     /**
      * Refresh the ScriptStorage from the data stored in the corresponding area
      * (document or application).
      */
-    void SAL_CALL refresh()
-        throw ( css::uno::RuntimeException );
+    void SAL_CALL refresh();
     //=========================================================================
 
 private:
@@ -188,10 +178,8 @@ private:
     void updateMaps( const Datas_vec & vScriptDatas );
     void writeMetadataHeader(
         css::uno::Reference < css::xml::sax::XExtendedDocumentHandler > & xExDocHandler );
-    void create ()
-	throw (css::uno::RuntimeException, css::uno::Exception);
-    void createForFilesystem ( const ::rtl::OUString & scriptLanguage )
-	throw (css::uno::RuntimeException, css::uno::Exception);
+    void create ();
+    void createForFilesystem ( const ::rtl::OUString & scriptLanguage );
     ::rtl::OUString getFileExtension ( const ::rtl::OUString & stringUri );
 
 }; // class ScriptingStorage

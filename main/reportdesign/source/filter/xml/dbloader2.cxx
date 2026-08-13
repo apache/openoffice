@@ -49,7 +49,7 @@ ORptTypeDetection::ORptTypeDetection(Reference< XComponentContext > const & xCon
 {
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ORptTypeDetection::detect( Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor ) throw (RuntimeException)
+::rtl::OUString SAL_CALL ORptTypeDetection::detect( Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor )
 {
 
 	::comphelper::SequenceAsHashMap aTemp(Descriptor);
@@ -108,7 +108,7 @@ Sequence< ::rtl::OUString > SAL_CALL ORptTypeDetection::getSupportedServiceNames
 }
 // -------------------------------------------------------------------------
 // ORegistryServiceManager_Static
-Sequence< ::rtl::OUString > ORptTypeDetection::getSupportedServiceNames_Static(void) throw( RuntimeException )
+Sequence< ::rtl::OUString > ORptTypeDetection::getSupportedServiceNames_Static(void)
 {
 	Sequence< ::rtl::OUString > aSNS( 1 );
 	aSNS.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.document.ExtendedTypeDetection");

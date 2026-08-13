@@ -38,7 +38,7 @@ using namespace ::com::sun::star::registry;
 //.......................................................................................
 #define DECLARE_SERVICE_INFO(classImplName) \
 	namespace frm { \
-		extern ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface> SAL_CALL classImplName##_CreateInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory) throw (::com::sun::star::uno::RuntimeException); \
+		extern ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface> SAL_CALL classImplName##_CreateInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory); \
 	}
 
 //---------------------------------------------------------------------------------------
@@ -90,7 +90,7 @@ DECLARE_SERVICE_INFO(OFormattedFieldWrapper)
 	// the object was instantiated and the stream contains a FormattedModel, it switches permanently to
 	// formatted.)
 namespace frm { \
-	extern Reference< XInterface > SAL_CALL OFormattedFieldWrapper_CreateInstance_ForceFormatted(const Reference<XMultiServiceFactory>& _rxFactory) throw (RuntimeException); \
+	extern Reference< XInterface > SAL_CALL OFormattedFieldWrapper_CreateInstance_ForceFormatted(const Reference<XMultiServiceFactory>& _rxFactory); \
 }
 
 DECLARE_SERVICE_INFO(OFormsCollection)

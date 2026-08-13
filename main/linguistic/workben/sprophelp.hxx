@@ -80,23 +80,19 @@ public:
 
 	// XEventListener
 	virtual void SAL_CALL
-		disposing( const EventObject& rSource )
-			throw(RuntimeException);
+		disposing( const EventObject& rSource );
 
 	// XPropertyChangeListener
 	virtual void SAL_CALL
-		propertyChange( const PropertyChangeEvent& rEvt )
-			throw(RuntimeException) = 0;
+		propertyChange( const PropertyChangeEvent& rEvt ) = 0;
 
 	// XLinguServiceEventBroadcaster
     virtual sal_Bool SAL_CALL
 		addLinguServiceEventListener(
-				const Reference< XLinguServiceEventListener >& rxListener )
-			throw(RuntimeException);
+				const Reference< XLinguServiceEventListener >& rxListener );
     virtual sal_Bool SAL_CALL
 		removeLinguServiceEventListener(
-				const Reference< XLinguServiceEventListener >& rxListener )
-			throw(RuntimeException);
+				const Reference< XLinguServiceEventListener >& rxListener );
 
 	// non UNO functions
 	void 	AddAsPropListener();
@@ -149,8 +145,7 @@ public:
 
 	// XPropertyChangeListener
 	virtual void SAL_CALL
-		propertyChange( const PropertyChangeEvent& rEvt )
-			throw(RuntimeException);
+		propertyChange( const PropertyChangeEvent& rEvt );
 
 	void	SetTmpPropVals( const PropertyValues &rPropVals );
 

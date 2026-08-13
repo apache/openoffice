@@ -68,7 +68,7 @@ OComponentEventThread::~OComponentEventThread()
     impl_clearEventQueue();
 }
 
-Any SAL_CALL OComponentEventThread::queryInterface(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL OComponentEventThread::queryInterface(const Type& _rType)
 {
 	Any aReturn;
 
@@ -93,7 +93,7 @@ void OComponentEventThread::impl_clearEventQueue()
 	m_aFlags.erase( m_aFlags.begin(), m_aFlags.end() );
 }
 
-void OComponentEventThread::disposing( const EventObject& evt ) throw ( ::com::sun::star::uno::RuntimeException)
+void OComponentEventThread::disposing( const EventObject& evt )
 {
 	if( evt.Source == m_xComp )
 	{

@@ -60,57 +60,45 @@ public:
 
     // XInterface
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-            const ::com::sun::star::uno::Type& rType)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Type& rType);
     virtual void SAL_CALL acquire() throw() { OWeakObject::acquire(); }
     virtual void SAL_CALL release() throw() { OWeakObject::release(); }
 
     // XAggregation
     virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(
-            const ::com::sun::star::uno::Type& rType)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Type& rType);
 
     // XTypeProvider
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >
-        SAL_CALL getTypes()
-        throw (::com::sun::star::uno::RuntimeException);
+        SAL_CALL getTypes();
     virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL
-        getImplementationId()
-        throw (::com::sun::star::uno::RuntimeException);
+        getImplementationId();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
     virtual sal_Bool SAL_CALL supportsService(
-            const ::rtl::OUString& rServiceName)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString& rServiceName);
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames()
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames();
 
     // XElementAccess
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
     // XEnumerationAccess
     virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::container::XEnumeration >  SAL_CALL
-        createEnumeration()
-        throw (::com::sun::star::uno::RuntimeException);
+        createEnumeration();
 
     // XSimpleText
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextCursor >  SAL_CALL
-        createTextCursor()
-        throw (::com::sun::star::uno::RuntimeException);
+        createTextCursor();
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextCursor >  SAL_CALL
         createTextCursorByRange(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextRange > & xTextPosition)
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextRange > & xTextPosition);
 
 };
 
@@ -138,8 +126,7 @@ protected:
     virtual const SwStartNode *GetStartNode() const;
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextCursor >
-        CreateCursor()
-        throw (::com::sun::star::uno::RuntimeException);
+        CreateCursor();
 
     virtual ~SwXHeadFootText();
 
@@ -153,52 +140,41 @@ public:
 
     // XInterface
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-            const ::com::sun::star::uno::Type& rType)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Type& rType);
     virtual void SAL_CALL acquire() throw() { OWeakObject::acquire(); }
     virtual void SAL_CALL release() throw() { OWeakObject::release(); }
 
     // XTypeProvider
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >
-        SAL_CALL getTypes()
-        throw (::com::sun::star::uno::RuntimeException);
+        SAL_CALL getTypes();
     virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL
-        getImplementationId()
-        throw (::com::sun::star::uno::RuntimeException);
+        getImplementationId();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
     virtual sal_Bool SAL_CALL supportsService(
-            const ::rtl::OUString& rServiceName)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString& rServiceName);
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames()
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames();
 
     // XElementAccess
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
     // XEnumerationAccess
     virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::container::XEnumeration >  SAL_CALL
-        createEnumeration()
-        throw (::com::sun::star::uno::RuntimeException);
+        createEnumeration();
 
     // XSimpleText
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextCursor >  SAL_CALL
-        createTextCursor()
-        throw (::com::sun::star::uno::RuntimeException);
+        createTextCursor();
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextCursor >  SAL_CALL
         createTextCursorByRange(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextRange > & xTextPosition)
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextRange > & xTextPosition);
 
 };
 

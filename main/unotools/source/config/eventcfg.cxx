@@ -256,14 +256,14 @@ void GlobalEventConfig_Impl::initBindingInfo()
 	}
 }
 
-Reference< container::XNameReplace > SAL_CALL GlobalEventConfig_Impl::getEvents() throw (::com::sun::star::uno::RuntimeException)
+Reference< container::XNameReplace > SAL_CALL GlobalEventConfig_Impl::getEvents()
 {
     //how to return this object as an XNameReplace?
     Reference< container::XNameReplace > ret;
     return ret;
 }
 
-void SAL_CALL GlobalEventConfig_Impl::replaceByName( const OUString& aName, const Any& aElement ) throw (lang::IllegalArgumentException, container::NoSuchElementException, lang::WrappedTargetException, RuntimeException)
+void SAL_CALL GlobalEventConfig_Impl::replaceByName( const OUString& aName, const Any& aElement )
 {
     Sequence< beans::PropertyValue > props;
     //DF should we prepopulate the hash with a list of valid event Names?
@@ -283,7 +283,7 @@ void SAL_CALL GlobalEventConfig_Impl::replaceByName( const OUString& aName, cons
     SetModified();
 }
 
-Any SAL_CALL GlobalEventConfig_Impl::getByName( const OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, RuntimeException)
+Any SAL_CALL GlobalEventConfig_Impl::getByName( const OUString& aName )
 {
     Any aRet;
     Sequence< beans::PropertyValue > props(2);
@@ -309,13 +309,13 @@ Any SAL_CALL GlobalEventConfig_Impl::getByName( const OUString& aName ) throw (c
     return aRet;
 }
 
-Sequence< OUString > SAL_CALL GlobalEventConfig_Impl::getElementNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL GlobalEventConfig_Impl::getElementNames(  )
 {
     const ::rtl::OUString* pRet = m_supportedEvents.empty() ? NULL : &m_supportedEvents[0];
 	return uno::Sequence< ::rtl::OUString >(pRet, m_supportedEvents.size());
 }
 
-sal_Bool SAL_CALL GlobalEventConfig_Impl::hasByName( const OUString& aName ) throw (RuntimeException)
+sal_Bool SAL_CALL GlobalEventConfig_Impl::hasByName( const OUString& aName )
 {
     if ( m_eventBindingHash.find( aName ) != m_eventBindingHash.end() )
         return sal_True;
@@ -329,13 +329,13 @@ sal_Bool SAL_CALL GlobalEventConfig_Impl::hasByName( const OUString& aName ) thr
     return sal_False;
 }
 
-Type SAL_CALL GlobalEventConfig_Impl::getElementType(  ) throw (RuntimeException)
+Type SAL_CALL GlobalEventConfig_Impl::getElementType(  )
 {
     //DF definitely not sure about this??
     return ::getCppuType((const Sequence<beans::PropertyValue>*)0);
 }
 
-sal_Bool SAL_CALL GlobalEventConfig_Impl::hasElements(  ) throw (RuntimeException)
+sal_Bool SAL_CALL GlobalEventConfig_Impl::hasElements(  )
 {
     return ( m_eventBindingHash.empty() );
 }
@@ -382,39 +382,39 @@ void GlobalEventConfig::EstablishFrameCallback(const ::com::sun::star::uno::Refe
     m_pImpl->EstablishFrameCallback( xFrame );
 }
 
-Reference< container::XNameReplace > SAL_CALL GlobalEventConfig::getEvents() throw (::com::sun::star::uno::RuntimeException)
+Reference< container::XNameReplace > SAL_CALL GlobalEventConfig::getEvents()
 {
     MutexGuard aGuard( GetOwnStaticMutex() );
     Reference< container::XNameReplace > ret(this);
     return ret;
 }
 
-void SAL_CALL GlobalEventConfig::replaceByName( const OUString& aName, const Any& aElement ) throw (lang::IllegalArgumentException, container::NoSuchElementException, lang::WrappedTargetException, RuntimeException)
+void SAL_CALL GlobalEventConfig::replaceByName( const OUString& aName, const Any& aElement )
 {
     MutexGuard aGuard( GetOwnStaticMutex() );
     m_pImpl->replaceByName( aName, aElement );
 }
-Any SAL_CALL GlobalEventConfig::getByName( const OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, RuntimeException)
+Any SAL_CALL GlobalEventConfig::getByName( const OUString& aName )
 {
     MutexGuard aGuard( GetOwnStaticMutex() );
     return m_pImpl->getByName( aName );
 }
-Sequence< OUString > SAL_CALL GlobalEventConfig::getElementNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL GlobalEventConfig::getElementNames(  )
 {
     MutexGuard aGuard( GetOwnStaticMutex() );
     return m_pImpl->getElementNames( );
 }
-sal_Bool SAL_CALL GlobalEventConfig::hasByName( const OUString& aName ) throw (RuntimeException)
+sal_Bool SAL_CALL GlobalEventConfig::hasByName( const OUString& aName )
 {
     MutexGuard aGuard( GetOwnStaticMutex() );
     return m_pImpl->hasByName( aName );
 }
-Type SAL_CALL GlobalEventConfig::getElementType(  ) throw (RuntimeException)
+Type SAL_CALL GlobalEventConfig::getElementType(  )
 {
     MutexGuard aGuard( GetOwnStaticMutex() );
     return m_pImpl->getElementType( );
 }
-sal_Bool SAL_CALL GlobalEventConfig::hasElements(  ) throw (RuntimeException)
+sal_Bool SAL_CALL GlobalEventConfig::hasElements(  )
 {
     MutexGuard aGuard( GetOwnStaticMutex() );
     return m_pImpl->hasElements( );

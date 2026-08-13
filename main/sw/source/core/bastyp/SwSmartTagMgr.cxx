@@ -58,7 +58,7 @@ SwSmartTagMgr::~SwSmartTagMgr()
 }
 
 // ::com::sun::star::util::XModifyListener
-void SwSmartTagMgr::modified( const lang::EventObject& rEO ) throw( RuntimeException )
+void SwSmartTagMgr::modified( const lang::EventObject& rEO )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -69,7 +69,7 @@ void SwSmartTagMgr::modified( const lang::EventObject& rEO ) throw( RuntimeExcep
 }
 
 // ::com::sun::star::util::XChangesListener
-void SwSmartTagMgr::changesOccurred( const util::ChangesEvent& rEvent ) throw( RuntimeException)
+void SwSmartTagMgr::changesOccurred( const util::ChangesEvent& rEvent )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 

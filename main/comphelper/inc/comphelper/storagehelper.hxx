@@ -52,20 +52,17 @@ public:
 	static ::com::sun::star::uno::Reference< ::com::sun::star::lang::XSingleServiceFactory >
 		GetStorageFactory(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xSF
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::lang::XSingleServiceFactory >
 		GetFileSystemStorageFactory(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xSF
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
 		GetTemporaryStorage(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
     /// this one will only return Storage
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
@@ -73,8 +70,7 @@ public:
 			const ::rtl::OUString& aURL,
 			sal_Int32 nStorageMode,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
     /// this one will return either Storage or FileSystemStorage
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
@@ -82,54 +78,45 @@ public:
 			const ::rtl::OUString& aURL,
 			sal_Int32 nStorageMode,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
         GetStorageFromInputStream(
             const ::com::sun::star::uno::Reference < ::com::sun::star::io::XInputStream >& xStream,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
         GetStorageFromStream(
             const ::com::sun::star::uno::Reference < ::com::sun::star::io::XStream >& xStream,
 			sal_Int32 nStorageMode = ::com::sun::star::embed::ElementModes::READWRITE,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
 	static void CopyInputToOutput(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xInput,
-			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutput )
-		throw ( ::com::sun::star::uno::Exception );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutput );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >
 		GetInputStreamFromURL(
 			const ::rtl::OUString& aURL,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
 	static void SetCommonStorageEncryptionData(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage,
-			const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& aEncryptionData )
-		throw ( ::com::sun::star::uno::Exception );
+			const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& aEncryptionData );
 
 	// the following method supports only storages of OOo formats
 	static sal_Int32 GetXStorageFormat(
-			const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage )
-		throw ( ::com::sun::star::uno::Exception );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage );
 
 	// The followin methods are related to creation of a storage of specified format
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
 		GetTemporaryStorageOfFormat(
 			const ::rtl::OUString& aFormat,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
-							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() )
-		throw ( ::com::sun::star::uno::Exception );
+							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >() );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
 		GetStorageOfFormatFromURL(
@@ -138,8 +125,7 @@ public:
 			sal_Int32 nStorageMode,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
 							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >(),
-            sal_Bool bRepairStorage = sal_False )
-		throw ( ::com::sun::star::uno::Exception );
+            sal_Bool bRepairStorage = sal_False );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
         GetStorageOfFormatFromInputStream(
@@ -147,8 +133,7 @@ public:
             const ::com::sun::star::uno::Reference < ::com::sun::star::io::XInputStream >& xStream,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
 							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >(),
-            sal_Bool bRepairStorage = sal_False )
-		throw ( ::com::sun::star::uno::Exception );
+            sal_Bool bRepairStorage = sal_False );
 
 	static ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >
         GetStorageOfFormatFromStream(
@@ -157,8 +142,7 @@ public:
 			sal_Int32 nStorageMode = ::com::sun::star::embed::ElementModes::READWRITE,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory
 							= ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >(),
-            sal_Bool bRepairStorage = sal_False )
-		throw ( ::com::sun::star::uno::Exception );
+            sal_Bool bRepairStorage = sal_False );
 
     static ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >
         CreatePackageEncryptionData(

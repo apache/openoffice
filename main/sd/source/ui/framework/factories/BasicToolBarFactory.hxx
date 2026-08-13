@@ -75,28 +75,24 @@ public:
     virtual css::uno::Reference<com::sun::star::drawing::framework::XResource> SAL_CALL
         createResource (
             const css::uno::Reference<
-                css::drawing::framework::XResourceId>& rxToolBarId)
-        throw (css::uno::RuntimeException, css::lang::IllegalArgumentException, css::lang::WrappedTargetException);
+                css::drawing::framework::XResourceId>& rxToolBarId);
 
     virtual void SAL_CALL
         releaseResource (
             const css::uno::Reference<com::sun::star::drawing::framework::XResource>&
-                rxToolBar)
-        throw (css::uno::RuntimeException);
+                rxToolBar);
 
 
     // XInitialization
 
     virtual void SAL_CALL initialize(
-        const css::uno::Sequence<com::sun::star::uno::Any>& aArguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        const css::uno::Sequence<com::sun::star::uno::Any>& aArguments);
 
 
     // lang::XEventListener
 
     virtual void SAL_CALL disposing (
-        const css::lang::EventObject& rEventObject)
-        throw (css::uno::RuntimeException);
+        const css::lang::EventObject& rEventObject);
 
 private:
     css::uno::Reference<css::drawing::framework::XConfigurationController> mxConfigurationController;
@@ -105,8 +101,7 @@ private:
 
     void Shutdown (void);
 
-    void ThrowIfDisposed (void) const
-        throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } } // end of namespace sd::framework

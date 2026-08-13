@@ -44,7 +44,6 @@ AccMenuEventListener::~AccMenuEventListener()
  *	@param AccessibleEventObject	the event object which contains information about event
  */
 void  AccMenuEventListener::notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent )
-throw (::com::sun::star::uno::RuntimeException)
 {
     switch (aEvent.EventId)
     {

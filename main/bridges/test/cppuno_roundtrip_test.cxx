@@ -60,15 +60,12 @@ class TestObj : public ::cppu::WeakImplHelper1< XServiceInfo >
 {
 public:
     virtual OUString SAL_CALL getImplementationName()
-        throw (RuntimeException)
         { return OUSTR("mscx.roundtrip.TestObj"); }
 
     virtual sal_Bool SAL_CALL supportsService( const OUString & name )
-        throw (RuntimeException)
         { return name.equalsAscii("Yes"); }
 
     virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException)
         { Sequence< OUString > s(1); s[0] = OUSTR("svc.one"); return s; }
 };
 

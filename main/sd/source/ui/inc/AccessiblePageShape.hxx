@@ -97,44 +97,36 @@ public:
     */
     virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible> SAL_CALL
-    	getAccessibleChild (sal_Int32 nIndex)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleChild (sal_Int32 nIndex);
 
 
     //=====  XAccessibleComponent  ============================================
 
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void);
 
-    virtual sal_Int32 SAL_CALL getForeground (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getForeground (void);
 
-    virtual sal_Int32 SAL_CALL getBackground (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getBackground (void);
 
     //=====  XComponent  ======================================================
 
     virtual void SAL_CALL
-        dispose (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        dispose (void);
 
 
 	//=====  XServiceInfo  ====================================================
 
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName (void)
-	    throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName (void);
 
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-        getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames (void);
 
 
     //=====  lang::XEventListener  ============================================
 
     virtual void SAL_CALL
-        disposing (const ::com::sun::star::lang::EventObject& Source)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const ::com::sun::star::lang::EventObject& Source);
 
 
 	using AccessibleShape::disposing;
@@ -143,17 +135,14 @@ protected:
     /**	Create a base name string that contains the accessible name.
     */
 	virtual ::rtl::OUString
-    	CreateAccessibleBaseName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleBaseName (void);
 
 	virtual ::rtl::OUString
-    	CreateAccessibleName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleName (void);
 
     ///	Create a description string that contains the accessible description.
 	virtual ::rtl::OUString
-    	CreateAccessibleDescription (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleDescription (void);
 
 private:
     ::com::sun::star::uno::Reference<

@@ -51,10 +51,10 @@ public:
 
     UnoControlModel*	Clone() const;
 	// ::com::sun::star::beans::XMultiPropertySet
-	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
 	// ::com::sun::star::io::XPersistObject
-    ::rtl::OUString SAL_CALL getServiceName() throw(::com::sun::star::uno::RuntimeException);
+    ::rtl::OUString SAL_CALL getServiceName();
 
 	// XServiceInfo
 	DECLIMPL_SERVICEINFO_DERIVED( UnoControlDialogModel, ControlModelContainerBase, szServiceName2_UnoControlDialogModel )
@@ -79,38 +79,38 @@ public:
 								~UnoDialogControl();
 	::rtl::OUString				GetComponentServiceName();
 
-    void SAL_CALL createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit >& Toolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& Parent ) throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit >& Toolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& Parent );
+    void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
+    void SAL_CALL dispose();
 
     // ::com::sun::star::awt::XTopWindow
-    void SAL_CALL addTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL removeTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL toFront(  ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL toBack(  ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL setMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMenuBar >& xMenu ) throw (::com::sun::star::uno::RuntimeException);
+    void SAL_CALL addTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& xListener );
+    void SAL_CALL removeTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& xListener );
+    void SAL_CALL toFront(  );
+    void SAL_CALL toBack(  );
+    void SAL_CALL setMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMenuBar >& xMenu );
 
     // ::com::sun::star::awt::XWindowListener
-    virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e );
+    virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e );
+    virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& e );
 
     // ::com::sun::star::awt::XDialog2
-    virtual void SAL_CALL endDialog( ::sal_Int32 Result ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setHelpId( const rtl::OUString& Id ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL endDialog( ::sal_Int32 Result );
+    virtual void SAL_CALL setHelpId( const rtl::OUString& Id );
 
 	// ::com::sun::star::awt::XDialog
-    void SAL_CALL setTitle( const ::rtl::OUString& Title ) throw(::com::sun::star::uno::RuntimeException);
-	::rtl::OUString SAL_CALL getTitle() throw(::com::sun::star::uno::RuntimeException);
-	sal_Int16 SAL_CALL execute() throw(::com::sun::star::uno::RuntimeException);
-	void SAL_CALL endExecute() throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL setTitle( const ::rtl::OUString& Title );
+	::rtl::OUString SAL_CALL getTitle();
+	sal_Int16 SAL_CALL execute();
+	void SAL_CALL endExecute();
 
 	// ::com::sun::star::awt::XControl
-    sal_Bool SAL_CALL setModel( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& Model ) throw(::com::sun::star::uno::RuntimeException);
+    sal_Bool SAL_CALL setModel( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& Model );
 
     // XModifyListener
-    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
 
     // ::com::sun::star::lang::XServiceInfo
 	DECLIMPL_SERVICEINFO( UnoDialogControl, szServiceName2_UnoControlDialog )
@@ -118,7 +118,7 @@ public:
 protected:
    // virtual void ImplModelPropertiesChanged( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent >& rEvents ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void PrepareWindowDescriptor( ::com::sun::star::awt::WindowDescriptor& rDesc );
-    virtual void ImplModelPropertiesChanged( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent >& rEvents ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void ImplModelPropertiesChanged( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent >& rEvents );
 protected:
 };
 

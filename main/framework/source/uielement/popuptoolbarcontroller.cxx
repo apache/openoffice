@@ -65,7 +65,6 @@ PopupMenuToolbarController::~PopupMenuToolbarController()
 }
 
 void SAL_CALL PopupMenuToolbarController::dispose()
-throw ( css::uno::RuntimeException )
 {
     svt::ToolboxController::dispose();
 
@@ -93,7 +92,6 @@ throw ( css::uno::RuntimeException )
 
 void SAL_CALL PopupMenuToolbarController::initialize(
     const css::uno::Sequence< css::uno::Any >& aArguments )
-throw ( css::uno::Exception, css::uno::RuntimeException )
 {
     ToolboxController::initialize( aArguments );
 
@@ -132,7 +130,6 @@ throw ( css::uno::Exception, css::uno::RuntimeException )
 void SAL_CALL
 PopupMenuToolbarController::statusChanged(
     const css::frame::FeatureStateEvent& rEvent )
-    throw ( css::uno::RuntimeException )
 {
     // TODO move to base class
 
@@ -142,7 +139,6 @@ PopupMenuToolbarController::statusChanged(
 
 css::uno::Reference< css::awt::XWindow > SAL_CALL
 PopupMenuToolbarController::createPopupWindow()
-    throw ( css::uno::RuntimeException )
 {
     css::uno::Reference< css::awt::XWindow > xRet;
 
@@ -272,7 +268,6 @@ NewToolbarController::NewToolbarController(
 void SAL_CALL
 NewToolbarController::initialize(
     const css::uno::Sequence< css::uno::Any >& aArguments )
-throw ( css::uno::Exception, css::uno::RuntimeException )
 {
     PopupMenuToolbarController::initialize( aArguments );
 
@@ -283,7 +278,6 @@ throw ( css::uno::Exception, css::uno::RuntimeException )
 void SAL_CALL
 NewToolbarController::statusChanged(
     const css::frame::FeatureStateEvent& rEvent )
-    throw ( css::uno::RuntimeException )
 {
     if ( rEvent.IsEnabled )
     {
@@ -299,7 +293,6 @@ NewToolbarController::statusChanged(
 
 void SAL_CALL
 NewToolbarController::execute( sal_Int16 /*KeyModifier*/ )
-    throw ( css::uno::RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
     if ( !m_aLastURL.getLength() )

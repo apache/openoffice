@@ -105,7 +105,6 @@ sal_Bool CunoType::hasNestedType(const ::rtl::OString& type)
 }
 
 sal_Bool CunoType::dump(CunoOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -218,7 +217,6 @@ sal_Bool CunoType::dump(CunoOptions* pOptions)
 	return ret;
 }
 sal_Bool CunoType::dumpDependedTypes(CunoOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_True;
 
@@ -1022,7 +1020,6 @@ OString	CunoType::getTypeClass(const OString& type, sal_Bool bCStyle)
 
 void CunoType::dumpType(FileStream& o, const OString& type,
 						sal_Bool bConst, sal_Bool bPointer, sal_Bool bParam)
-	throw( CannotDumpException )
 {
 	OString sType(checkRealBaseType(type, sal_True));
 	sal_uInt32 index = sType.lastIndexOf(']');
@@ -1517,7 +1514,6 @@ InterfaceType::~InterfaceType()
 }
 
 sal_Bool InterfaceType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "H"));
 	o << "\n";
@@ -1585,7 +1581,6 @@ void InterfaceType::dumpInheritedFunctions(FileStream& o, rtl::OString& superTyp
 }
 
 sal_Bool InterfaceType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "typedef struct _" << m_name << "_ftab\n" << indent() << "{";
 	inc();
@@ -1662,7 +1657,6 @@ sal_Bool InterfaceType::dumpDeclaration(FileStream& o)
 }
 
 sal_Bool InterfaceType::dumpCFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	dumpInclude(o, m_typeName, "h");
 	o << "\n";
@@ -2520,7 +2514,6 @@ ModuleType::~ModuleType()
 }
 
 sal_Bool ModuleType::dump(CunoOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -2628,7 +2621,6 @@ sal_Bool ModuleType::dump(CunoOptions* pOptions)
 }
 
 sal_Bool ModuleType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	sal_Bool bSpecialDefine = sal_True;
 
@@ -2656,7 +2648,6 @@ sal_Bool ModuleType::dumpHFile(FileStream& o)
 }
 
 sal_Bool ModuleType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	sal_uInt32 		fieldCount = m_reader.getFieldCount();
 	RTFieldAccess 	access = RT_ACCESS_INVALID;
@@ -2699,7 +2690,6 @@ sal_Bool ModuleType::hasConstants()
 }
 
 sal_Bool ModuleType::dumpCFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	return sal_True;
 }
@@ -2721,7 +2711,6 @@ ConstantsType::~ConstantsType()
 }
 
 sal_Bool ConstantsType::dump(CunoOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -2836,7 +2825,6 @@ StructureType::~StructureType()
 }
 
 sal_Bool StructureType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "H"));
 	o << "\n";
@@ -2865,7 +2853,6 @@ sal_Bool StructureType::dumpHFile(FileStream& o)
 }
 
 sal_Bool StructureType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "#ifdef SAL_W32\n"
 	  << "#   pragma pack(push, 8)\n"
@@ -2915,7 +2902,6 @@ sal_Bool StructureType::dumpDeclaration(FileStream& o)
 }
 
 sal_Bool StructureType::dumpCFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	dumpInclude(o, m_typeName, "h");
 	o << "\n";
@@ -2946,7 +2932,6 @@ ExceptionType::~ExceptionType()
 }
 
 sal_Bool ExceptionType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "H"));
 	o << "\n";
@@ -2975,7 +2960,6 @@ sal_Bool ExceptionType::dumpHFile(FileStream& o)
 }
 
 sal_Bool ExceptionType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "#ifdef SAL_W32\n"
 	  << "#   pragma pack(push, 8)\n"
@@ -3025,7 +3009,6 @@ sal_Bool ExceptionType::dumpDeclaration(FileStream& o)
 }
 
 sal_Bool ExceptionType::dumpCFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	dumpInclude(o, m_typeName, "h");
 	o << "\n";
@@ -3057,7 +3040,6 @@ EnumType::~EnumType()
 }
 
 sal_Bool EnumType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "H"));
 	o << "\n";
@@ -3083,7 +3065,6 @@ sal_Bool EnumType::dumpHFile(FileStream& o)
 }
 
 sal_Bool EnumType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "\ntypedef enum _" << m_name << "\n{\n";
 	inc();
@@ -3120,7 +3101,6 @@ sal_Bool EnumType::dumpDeclaration(FileStream& o)
 }
 
 sal_Bool EnumType::dumpCFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	dumpInclude(o, m_typeName, "h");
 	o << "\n";
@@ -3285,7 +3265,6 @@ TypeDefType::~TypeDefType()
 }
 
 sal_Bool TypeDefType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "H"));
 	o << "\n";
@@ -3314,7 +3293,6 @@ sal_Bool TypeDefType::dumpHFile(FileStream& o)
 }
 
 sal_Bool TypeDefType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "\ntypedef ";
 	dumpType(o, m_reader.getSuperTypeName());
@@ -3324,7 +3302,6 @@ sal_Bool TypeDefType::dumpDeclaration(FileStream& o)
 }
 
 sal_Bool TypeDefType::dumpCFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	dumpInclude(o, m_typeName, "h");
 	o << "\n";
@@ -3365,7 +3342,6 @@ sal_Bool produceType(const OString& typeName,
 					 TypeManager& typeMgr,
 					 TypeDependency& typeDependencies,
 					 CunoOptions* pOptions)
-	throw( CannotDumpException )
 {
 	if (typeDependencies.isGenerated(typeName))
 		return sal_True;

@@ -39,98 +39,84 @@ CmdMailMsg::CmdMailMsg()
 }
 
 void SAL_CALL CmdMailMsg::setBody( const OUString& aBody )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aBody = aBody;
 }
 
 OUString SAL_CALL CmdMailMsg::getBody(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aBody;
 }
 
 void SAL_CALL CmdMailMsg::setRecipient( const OUString& aRecipient )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aRecipient = aRecipient;
 }
 
 OUString SAL_CALL CmdMailMsg::getRecipient(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aRecipient;
 }
 
 void SAL_CALL CmdMailMsg::setCcRecipient( const Sequence< OUString >& aCcRecipient )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_CcRecipients = aCcRecipient;
 }
 
 Sequence< OUString > SAL_CALL CmdMailMsg::getCcRecipient(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_CcRecipients;
 }
 
 void SAL_CALL CmdMailMsg::setBccRecipient( const Sequence< OUString >& aBccRecipient )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_BccRecipients = aBccRecipient;
 }
 
 Sequence< OUString > SAL_CALL CmdMailMsg::getBccRecipient(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_BccRecipients;
 }
 
 void SAL_CALL CmdMailMsg::setOriginator( const OUString& aOriginator )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aOriginator = aOriginator;
 }
 
 OUString SAL_CALL CmdMailMsg::getOriginator(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aOriginator;
 }
 
 void SAL_CALL CmdMailMsg::setSubject( const OUString& aSubject )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_aSubject = aSubject;
 }
 
 OUString SAL_CALL CmdMailMsg::getSubject(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_aSubject;
 }
 
 void SAL_CALL CmdMailMsg::setAttachement( const Sequence< OUString >& aAttachment )
-    throw (IllegalArgumentException, RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     m_Attachments = aAttachment;
 }
 
 Sequence< OUString > SAL_CALL CmdMailMsg::getAttachement(  )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     return m_Attachments;

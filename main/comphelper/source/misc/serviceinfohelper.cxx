@@ -33,13 +33,13 @@ namespace comphelper
 {
 
 /** returns an empty UString(). most times sufficient */
-::rtl::OUString SAL_CALL ServiceInfoHelper::getImplementationName() throw( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL ServiceInfoHelper::getImplementationName()
 {
 	return ::rtl::OUString();
 }
 
 /** the base implementation iterates over the service names from <code>getSupportedServiceNames</code> */
-sal_Bool SAL_CALL ServiceInfoHelper::supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL ServiceInfoHelper::supportsService( const ::rtl::OUString& ServiceName )
 {
 	return supportsService( ServiceName, getSupportedServiceNames() );
 }
@@ -54,7 +54,7 @@ sal_Bool SAL_CALL ServiceInfoHelper::supportsService( const ::rtl::OUString& Ser
 }
 
 /** the base implementation has no supported services */
-::com::sun::star::uno::Sequence< ::rtl::OUString > ServiceInfoHelper::getSupportedServiceNames(void) throw( ::com::sun::star::uno::RuntimeException )
+::com::sun::star::uno::Sequence< ::rtl::OUString > ServiceInfoHelper::getSupportedServiceNames(void)
 {
 	::com::sun::star::uno::Sequence< ::rtl::OUString> aSeq(0);
 	return aSeq;

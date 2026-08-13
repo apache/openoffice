@@ -200,7 +200,7 @@ hyper_link_get_type (void)
 // ---------------------- AtkHyperText ----------------------
 
 static accessibility::XAccessibleHypertext*
-    getHypertext( AtkHypertext *pHypertext ) throw (uno::RuntimeException)
+    getHypertext( AtkHypertext *pHypertext )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pHypertext );
     if( pWrap )

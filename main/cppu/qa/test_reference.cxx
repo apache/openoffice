@@ -50,7 +50,6 @@ public:
     }
 
     virtual Any SAL_CALL queryInterface(const Type & _type)
-        throw (RuntimeException)
     {
         Any aInterface;
         if (_type == getCppuType< Reference< XInterface > >())

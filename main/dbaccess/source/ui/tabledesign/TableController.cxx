@@ -130,25 +130,25 @@ namespace
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OTableController::getImplementationName() throw( RuntimeException )
+::rtl::OUString SAL_CALL OTableController::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString OTableController::getImplementationName_Static() throw( RuntimeException )
+::rtl::OUString OTableController::getImplementationName_Static()
 {
 	return ::rtl::OUString::createFromAscii("org.openoffice.comp.dbu.OTableDesign");
 }
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString> OTableController::getSupportedServiceNames_Static(void) throw( RuntimeException )
+Sequence< ::rtl::OUString> OTableController::getSupportedServiceNames_Static(void)
 {
 	Sequence< ::rtl::OUString> aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdb.TableDesign");
 	return aSupported;
 }
 //-------------------------------------------------------------------------
-Sequence< ::rtl::OUString> SAL_CALL OTableController::getSupportedServiceNames() throw(RuntimeException)
+Sequence< ::rtl::OUString> SAL_CALL OTableController::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
@@ -580,7 +580,7 @@ sal_Bool OTableController::Construct(Window* pParent)
 	return sal_True;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OTableController::suspend(sal_Bool /*_bSuspend*/) throw( RuntimeException )
+sal_Bool SAL_CALL OTableController::suspend(sal_Bool /*_bSuspend*/)
 {
 	if ( getBroadcastHelper().bInDispose || getBroadcastHelper().bDisposed )
 		return sal_True;
@@ -666,7 +666,7 @@ void OTableController::impl_onModifyChanged()
 	InvalidateFeature( SID_INDEXDESIGN );
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OTableController::disposing( const EventObject& _rSource ) throw(RuntimeException)
+void SAL_CALL OTableController::disposing( const EventObject& _rSource )
 {
 	if ( _rSource.Source == m_xTable )
 	{	// some deleted our table so we have a new one
@@ -963,7 +963,7 @@ Reference<XNameAccess> OTableController::getKeyColumns() const
 	return getPrimaryKeyColumns_throw(m_xTable);
 }
 // -----------------------------------------------------------------------------
-sal_Bool OTableController::checkColumns(sal_Bool _bNew) throw(::com::sun::star::sdbc::SQLException)
+sal_Bool OTableController::checkColumns(sal_Bool _bNew)
 {
 	sal_Bool bOk = sal_True;
 	sal_Bool bFoundPKey = sal_False;

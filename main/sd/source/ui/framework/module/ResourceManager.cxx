@@ -143,7 +143,6 @@ void ResourceManager::Disable (void)
 
 void SAL_CALL ResourceManager::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     OSL_ASSERT(rEvent.ResourceId.is());
 
@@ -276,7 +275,6 @@ void ResourceManager::HandleResourceRequest(
 
 void SAL_CALL ResourceManager::disposing (
     const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if (mxConfigurationController.is()
         && rEvent.Source == mxConfigurationController)

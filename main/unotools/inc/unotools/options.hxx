@@ -63,16 +63,6 @@ namespace utl {
 		// notify listeners; nHint is an implementation detail of the particular class deriving from ConfigurationBroadcaster
         void NotifyListeners( sal_uInt32 nHint );
         ConfigurationBroadcaster();
-        /*	Widened for the WHOLE CHAIN, not just here.  Classes deriving from
-            these also derive from UNO bases whose destructors are declared
-            SAL_THROW( (RuntimeException) ), and from C++11 on a destructor with
-            no written specification gets an implicit "never throws" -- so the
-            derived class ends up weaker than its base, which an override may not
-            be (C2694).  EVERY level from the root down must be widened: widening
-            only a middle class moves the conflict up to ITS base (learned from
-            SvMemoryStream).  Widening a ROOT is safe by construction, since a
-            wider base accepts any narrower derived.  Inert under C++03, and MSVC
-            uses a dynamic specification only for this compile-time check. */
         virtual ~ConfigurationBroadcaster();
         virtual void BlockBroadcasts( bool bBlock );
     };

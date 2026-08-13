@@ -86,34 +86,31 @@ public:
     virtual void SAL_CALL disposing();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments)
-        throw(Exception);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments);
 
     // XDropTarget
-    virtual void SAL_CALL addDropTargetListener( const Reference< XDropTargetListener >& dtl )
-        throw(RuntimeException);
-    virtual void SAL_CALL removeDropTargetListener( const Reference<  XDropTargetListener >& dtl )
-        throw(RuntimeException);
+    virtual void SAL_CALL addDropTargetListener( const Reference< XDropTargetListener >& dtl );
+    virtual void SAL_CALL removeDropTargetListener( const Reference<  XDropTargetListener >& dtl );
 
     // Default is not active
-    virtual sal_Bool SAL_CALL isActive() throw(RuntimeException);
-    virtual void SAL_CALL setActive(sal_Bool) throw(RuntimeException);
-    virtual sal_Int8 SAL_CALL getDefaultActions() throw(RuntimeException);
-    virtual void SAL_CALL setDefaultActions(sal_Int8) throw(RuntimeException);
+    virtual sal_Bool SAL_CALL isActive();
+    virtual void SAL_CALL setActive(sal_Bool);
+    virtual sal_Int8 SAL_CALL getDefaultActions();
+    virtual void SAL_CALL setDefaultActions(sal_Int8);
 
     // XDropTargetDragContext
-    virtual void SAL_CALL acceptDrag( sal_Int8) throw(RuntimeException);
-    virtual void SAL_CALL rejectDrag() throw(RuntimeException);
+    virtual void SAL_CALL acceptDrag( sal_Int8);
+    virtual void SAL_CALL rejectDrag();
 
     // XDropTargetDropContext
-    virtual void SAL_CALL acceptDrop(sal_Int8) throw (RuntimeException);
-    virtual void SAL_CALL rejectDrop() throw (RuntimeException);
-    virtual void SAL_CALL dropComplete(sal_Bool) throw (RuntimeException);
+    virtual void SAL_CALL acceptDrop(sal_Int8);
+    virtual void SAL_CALL rejectDrop();
+    virtual void SAL_CALL dropComplete(sal_Bool);
 
     // XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) throw (RuntimeException);
-    virtual Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+    virtual Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     // OS/2 window messaging handlers
     MRESULT dragEnter( PDRAGINFO dragInfo);

@@ -35,13 +35,13 @@ SwVbaWindow::SwVbaWindow(
         const uno::Reference< XHelperInterface >& xParent,
         const uno::Reference< uno::XComponentContext >& xContext,
         const uno::Reference< frame::XModel >& xModel,
-        const uno::Reference< frame::XController >& xController ) throw (uno::RuntimeException) :
+        const uno::Reference< frame::XController >& xController ) :
     WindowImpl_BASE( xParent, xContext, xModel, xController )
 {
 }
 
 void
-SwVbaWindow::Activate() throw (css::uno::RuntimeException)
+SwVbaWindow::Activate()
 {
 	SwVbaDocument document( uno::Reference< XHelperInterface >( Application(), uno::UNO_QUERY_THROW ), mxContext, m_xModel );
 
@@ -49,7 +49,7 @@ SwVbaWindow::Activate() throw (css::uno::RuntimeException)
 }
 
 void
-SwVbaWindow::Close( const uno::Any& SaveChanges, const uno::Any& RouteDocument ) throw (uno::RuntimeException)
+SwVbaWindow::Close( const uno::Any& SaveChanges, const uno::Any& RouteDocument )
 {
     // FIXME: it is incorrect when there are more than 1 windows
 	SwVbaDocument document( uno::Reference< XHelperInterface >( Application(), uno::UNO_QUERY_THROW ), mxContext, m_xModel );
@@ -58,12 +58,12 @@ SwVbaWindow::Close( const uno::Any& SaveChanges, const uno::Any& RouteDocument )
 }
 
 uno::Any SAL_CALL
-SwVbaWindow::getView() throw (uno::RuntimeException)
+SwVbaWindow::getView()
 {
     return uno::makeAny( uno::Reference< word::XView >( new SwVbaView( this,  mxContext, m_xModel ) ) );
 }
 
-void SAL_CALL SwVbaWindow::setView( const uno::Any& _view ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaWindow::setView( const uno::Any& _view )
 {
     sal_Int32 nType = 0;
     if( _view >>= nType )
@@ -74,7 +74,7 @@ void SAL_CALL SwVbaWindow::setView( const uno::Any& _view ) throw (uno::RuntimeE
 }
 
 uno::Any SAL_CALL
-SwVbaWindow::Panes( const uno::Any& aIndex ) throw (uno::RuntimeException)
+SwVbaWindow::Panes( const uno::Any& aIndex )
 {
     uno::Reference< XCollection > xPanes( new SwVbaPanes( this,  mxContext, m_xModel ) );
     if(  aIndex.getValueTypeClass() == uno::TypeClass_VOID )
@@ -84,7 +84,7 @@ SwVbaWindow::Panes( const uno::Any& aIndex ) throw (uno::RuntimeException)
 }
 
 uno::Any SAL_CALL
-SwVbaWindow::ActivePane() throw (uno::RuntimeException)
+SwVbaWindow::ActivePane()
 {
     return uno::makeAny( uno::Reference< word::XPane >( new SwVbaPane( this,  mxContext, m_xModel ) ) );
 }

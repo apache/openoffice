@@ -45,7 +45,7 @@ public: \
 	WeakComponentImplHelper##N( ::osl::Mutex & rMutex ) SAL_THROW( () ) \
 		: WeakComponentImplHelperBase( rMutex ) \
 		{} \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 	{ \
 		::com::sun::star::uno::Any aRet( getClassData( s_aCD ).query( rType, (ImplHelperBase##N< __IFC##N > *)this ) ); \
 		if (aRet.hasValue()) \
@@ -56,9 +56,9 @@ public: \
 		{ WeakComponentImplHelperBase::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ WeakComponentImplHelperBase::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 		{ return getClassData( s_aCD ).getTypes(); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return getClassData( s_aCD ).getImplementationId(); } \
 }; \
 template< __CLASS_IFC##N > \
@@ -71,9 +71,9 @@ public: \
 	WeakAggComponentImplHelper##N( ::osl::Mutex & rMutex ) SAL_THROW( () ) \
 		: WeakAggComponentImplHelperBase( rMutex ) \
 		{} \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) \
 		{ return WeakAggComponentImplHelperBase::queryInterface( rType ); } \
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) \
 	{ \
 		::com::sun::star::uno::Any aRet( getClassData( s_aCD ).query( rType, (ImplHelperBase##N< __IFC##N > *)this ) ); \
 		if (aRet.hasValue()) \
@@ -84,9 +84,9 @@ public: \
 		{ WeakAggComponentImplHelperBase::acquire(); } \
 	virtual void SAL_CALL release() throw () \
 		{ WeakAggComponentImplHelperBase::release(); } \
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() \
 		{ return getClassData( s_aCD ).getTypes(); } \
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException) \
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() \
 		{ return getClassData( s_aCD ).getImplementationId(); } \
 };
 

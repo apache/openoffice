@@ -89,18 +89,18 @@ public:
 
 	MyDragAndDropListener( Window * pWindow ) : m_pWindow( pWindow ) {};
 
-	virtual void SAL_CALL dragGestureRecognized( const DragGestureEvent& dge ) throw(RuntimeException);
-	virtual void SAL_CALL drop( const DropTargetDropEvent& dtde ) throw(RuntimeException);
-	virtual void SAL_CALL dragEnter( const DropTargetDragEnterEvent& dtde ) throw(RuntimeException);
-	virtual void SAL_CALL dragExit( const DropTargetEvent& dte ) throw(RuntimeException);
-	virtual void SAL_CALL dragOver( const DropTargetDragEvent& dtde ) throw(RuntimeException);
-	virtual void SAL_CALL dropActionChanged( const DropTargetDragEvent& dtde ) throw(RuntimeException);
-    virtual void SAL_CALL dragDropEnd( const DragSourceDropEvent& dsde ) throw(RuntimeException);
-    virtual void SAL_CALL dragEnter( const DragSourceDragEvent& dsdee ) throw(RuntimeException);
-    virtual void SAL_CALL dragExit( const DragSourceEvent& dse ) throw(RuntimeException);
-    virtual void SAL_CALL dragOver( const DragSourceDragEvent& dsde ) throw(RuntimeException);
-    virtual void SAL_CALL dropActionChanged( const DragSourceDragEvent& dsde ) throw(RuntimeException);
-	virtual void SAL_CALL disposing( const EventObject& eo ) throw(RuntimeException);
+	virtual void SAL_CALL dragGestureRecognized( const DragGestureEvent& dge );
+	virtual void SAL_CALL drop( const DropTargetDropEvent& dtde );
+	virtual void SAL_CALL dragEnter( const DropTargetDragEnterEvent& dtde );
+	virtual void SAL_CALL dragExit( const DropTargetEvent& dte );
+	virtual void SAL_CALL dragOver( const DropTargetDragEvent& dtde );
+	virtual void SAL_CALL dropActionChanged( const DropTargetDragEvent& dtde );
+    virtual void SAL_CALL dragDropEnd( const DragSourceDropEvent& dsde );
+    virtual void SAL_CALL dragEnter( const DragSourceDragEvent& dsdee );
+    virtual void SAL_CALL dragExit( const DragSourceEvent& dse );
+    virtual void SAL_CALL dragOver( const DragSourceDragEvent& dsde );
+    virtual void SAL_CALL dropActionChanged( const DragSourceDragEvent& dsde );
+	virtual void SAL_CALL disposing( const EventObject& eo );
 };
 
 // -----------------------------------------------------------------------
@@ -141,9 +141,9 @@ public:
 	 	m_aFlavorList[0] = df;
 	};
 
-	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor ) throw(UnsupportedFlavorException, IOException, RuntimeException);
-    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  ) throw(RuntimeException);
-	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor ) throw(RuntimeException);
+	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor );
+    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  );
+	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor );
 };
 
 
@@ -288,7 +288,7 @@ void MyWin::Resize()
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragGestureRecognized( const DragGestureEvent& dge ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragGestureRecognized( const DragGestureEvent& dge )
 {
 	printf( "XDragGestureListener::dragGestureRecognized called ( Window: %p, %"SAL_PRIdINT32", %"SAL_PRIdINT32" ).\n", m_pWindow, dge.DragOriginX, dge.DragOriginY );
 
@@ -299,7 +299,7 @@ void SAL_CALL MyDragAndDropListener::dragGestureRecognized( const DragGestureEve
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::drop( const DropTargetDropEvent& dtde ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::drop( const DropTargetDropEvent& dtde )
 {
 	printf( "XDropTargetListener::drop called ( Window: %p, %"SAL_PRIdINT32", %"SAL_PRIdINT32" ).\n", m_pWindow, dtde.LocationX, dtde.LocationY );
 
@@ -308,7 +308,7 @@ void SAL_CALL MyDragAndDropListener::drop( const DropTargetDropEvent& dtde ) thr
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragEnter( const DropTargetDragEnterEvent& dtdee ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragEnter( const DropTargetDragEnterEvent& dtdee )
 {
 	printf( "XDropTargetListener::dragEnter called ( Window: %p, %"SAL_PRIdINT32", %"SAL_PRIdINT32" ).\n", m_pWindow, dtdee.LocationX, dtdee.LocationY );
 	dtdee.Context->acceptDrag( dtdee.DropAction );
@@ -316,14 +316,14 @@ void SAL_CALL MyDragAndDropListener::dragEnter( const DropTargetDragEnterEvent& 
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragExit( const DropTargetEvent& ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragExit( const DropTargetEvent& )
 {
 	printf( "XDropTargetListener::dragExit called ( Window: %p ).\n", m_pWindow );
 }
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragOver( const DropTargetDragEvent& dtde ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragOver( const DropTargetDragEvent& dtde )
 {
 	printf( "XDropTargetListener::dragOver called ( Window: %p, %"SAL_PRIdINT32", %"SAL_PRIdINT32" ).\n", m_pWindow, dtde.LocationX, dtde.LocationY );
 	dtde.Context->acceptDrag( dtde.DropAction );
@@ -331,7 +331,7 @@ void SAL_CALL MyDragAndDropListener::dragOver( const DropTargetDragEvent& dtde )
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dropActionChanged( const DropTargetDragEvent& dtde ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dropActionChanged( const DropTargetDragEvent& dtde )
 {
 	printf( "XDropTargetListener::dropActionChanged called ( Window: %p, %"SAL_PRIdINT32", %"SAL_PRIdINT32" ).\n", m_pWindow, dtde.LocationX, dtde.LocationY );
 	dtde.Context->acceptDrag( dtde.DropAction );
@@ -339,42 +339,42 @@ void SAL_CALL MyDragAndDropListener::dropActionChanged( const DropTargetDragEven
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragDropEnd( const DragSourceDropEvent& dsde ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragDropEnd( const DragSourceDropEvent& dsde )
 {
 	printf( "XDragSourceListener::dropDropEnd called ( Window: %p, %s ).\n", m_pWindow, dsde.DropSuccess ? "success" : "failed" );
 }
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragEnter( const DragSourceDragEvent& ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragEnter( const DragSourceDragEvent& )
 {
 	printf( "XDragSourceListener::dragEnter called ( Window: %p ).\n", m_pWindow );
 }
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragExit( const DragSourceEvent& ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragExit( const DragSourceEvent& )
 {
 	printf( "XDragSourceListener::dragExit called ( Window: %p ).\n", m_pWindow );
 }
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dragOver( const DragSourceDragEvent& ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dragOver( const DragSourceDragEvent& )
 {
 	printf( "XDragSourceListener::dragOver called ( Window: %p ).\n", m_pWindow );
 }
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::dropActionChanged( const DragSourceDragEvent& ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::dropActionChanged( const DragSourceDragEvent& )
 {
 	printf( "XDragSourceListener::dropActionChanged called ( Window: %p ).\n", m_pWindow );
 }
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL MyDragAndDropListener::disposing( const EventObject& ) throw(RuntimeException)
+void SAL_CALL MyDragAndDropListener::disposing( const EventObject& )
 {
 	printf( "XEventListener::disposing called ( Window: %p ).\n", m_pWindow );
 }
@@ -419,7 +419,6 @@ MyListBox::MyListBox( Window* pParent ) : ListBox( pParent )
 // -----------------------------------------------------------------------
 
 Any SAL_CALL StringTransferable::getTransferData( const DataFlavor& )
-	throw(UnsupportedFlavorException, IOException, RuntimeException)
 {
 	return makeAny( m_aData );
 }
@@ -427,7 +426,6 @@ Any SAL_CALL StringTransferable::getTransferData( const DataFlavor& )
 // -----------------------------------------------------------------------
 
 Sequence< DataFlavor > SAL_CALL StringTransferable::getTransferDataFlavors(  )
-	throw(RuntimeException)
 {
 	return m_aFlavorList;
 }
@@ -435,7 +433,6 @@ Sequence< DataFlavor > SAL_CALL StringTransferable::getTransferDataFlavors(  )
 // -----------------------------------------------------------------------
 
 sal_Bool SAL_CALL StringTransferable::isDataFlavorSupported( const DataFlavor& )
-	throw(RuntimeException)
 {
 	return sal_True;
 }

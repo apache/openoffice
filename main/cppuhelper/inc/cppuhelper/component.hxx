@@ -63,15 +63,13 @@ public:
 	OComponentHelper( ::osl::Mutex & rMutex ) SAL_THROW( () );
 	/** Dewstructor. If this object was not disposed previously, object will be disposed manually.
 	*/
-	virtual ~OComponentHelper() SAL_THROW_DTOR( (::com::sun::star::uno::RuntimeException) );
+	virtual ~OComponentHelper();
 
 	// XAggregation
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-        ::com::sun::star::uno::Type const & rType )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Type const & rType );
 	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(
-        ::com::sun::star::uno::Type const & rType )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Type const & rType );
     virtual void SAL_CALL acquire()
         throw ();
     virtual void SAL_CALL release()
@@ -80,23 +78,18 @@ public:
 	/** @attention
         XTypeProvider::getImplementationId() has to be implemented separately!
     */
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
-        throw(::com::sun::star::uno::RuntimeException) = 0;
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() = 0;
 	/** @attention
         XTypeProvider::getTypes() has to be re-implemented!
     */
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
 
 	// XComponent
-	virtual void SAL_CALL dispose()
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL dispose();
 	virtual void SAL_CALL addEventListener(
-		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener )
-		throw(::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 	virtual void SAL_CALL removeEventListener(
-		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener )
-		throw(::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
 protected:
 	/** Called in dispose method after the listeners were notified.

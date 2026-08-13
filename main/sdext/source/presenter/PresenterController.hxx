@@ -147,62 +147,49 @@ public:
     // XConfigurationChangeListener
 
     virtual void SAL_CALL notifyConfigurationChange (
-        const com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+        const com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent);
 
 
     // XEventListener
 
     virtual void SAL_CALL disposing (
-        const com::sun::star::lang::EventObject& rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+        const com::sun::star::lang::EventObject& rEvent);
 
 
     // XFrameActionListener
 
     virtual void SAL_CALL frameAction (
-        const css::frame::FrameActionEvent& rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+        const css::frame::FrameActionEvent& rEvent);
 
 
     // XKeyListener
 
-    virtual void SAL_CALL keyPressed (const css::awt::KeyEvent& rEvent)
-        throw (css::uno::RuntimeException);
-    virtual void SAL_CALL keyReleased (const css::awt::KeyEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL keyPressed (const css::awt::KeyEvent& rEvent);
+    virtual void SAL_CALL keyReleased (const css::awt::KeyEvent& rEvent);
 
 
     // XFocusListener
 
-    virtual void SAL_CALL focusGained (const css::awt::FocusEvent& rEvent)
-        throw (css::uno::RuntimeException);
-    virtual void SAL_CALL focusLost (const css::awt::FocusEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL focusGained (const css::awt::FocusEvent& rEvent);
+    virtual void SAL_CALL focusLost (const css::awt::FocusEvent& rEvent);
 
 
     // XMouseListener
 
-    virtual void SAL_CALL mousePressed (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mousePressed (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseReleased (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseReleased (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseEntered (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseEntered (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseExited (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseExited (const css::awt::MouseEvent& rEvent);
 
 
     // XMouseMotionListener
 
-    virtual void SAL_CALL mouseMoved (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseMoved (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseDragged (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseDragged (const css::awt::MouseEvent& rEvent);
 
 private:
     typedef ::std::map<css::uno::Reference<css::frame::XFrame>,rtl::Reference<PresenterController> > InstanceContainer;
@@ -254,7 +241,7 @@ private:
     */
     void HandleNumericKeyPress (const sal_Int32 nKey, const sal_Int32 nModifiers);
 
-    void ThrowIfDisposed (void) const throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 

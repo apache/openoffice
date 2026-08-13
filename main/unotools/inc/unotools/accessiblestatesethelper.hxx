@@ -85,8 +85,7 @@ public:
             Returns <TRUE/> if there is no state in this state set and
             <FALSE/> if there is at least one state set in it.
     */
-    virtual sal_Bool SAL_CALL isEmpty ()
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isEmpty ();
 
     /** Checks if the given state is a member of the state set of this
         object.
@@ -99,8 +98,7 @@ public:
             Returns <TRUE/> if the given state is a member of this object's
             state set and <FALSE/> otherwise.
     */
-    virtual sal_Bool SAL_CALL contains (sal_Int16 aState)
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL contains (sal_Int16 aState);
 
     /** Checks if all of the given states are in this object's state
         set.
@@ -118,23 +116,19 @@ public:
             object's state set.
     */
     virtual sal_Bool SAL_CALL containsAll (
-		const ::com::sun::star::uno::Sequence<sal_Int16>& rStateSet)
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Sequence<sal_Int16>& rStateSet);
 
     /** Returns a sequence of all states.
     */
-    virtual com::sun::star::uno::Sequence<sal_Int16> SAL_CALL getStates()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual com::sun::star::uno::Sequence<sal_Int16> SAL_CALL getStates();
 
 	/** Adds a state to the set.
 	*/
-	void	AddState(sal_Int16 aState)
-		throw (::com::sun::star::uno::RuntimeException);
+	void	AddState(sal_Int16 aState);
 
 	/** Removes a state from the set if the set contains the state, otherwise nothing is done.
 	*/
-	void	RemoveState(sal_Int16 aState)
-		throw (::com::sun::star::uno::RuntimeException);
+	void	RemoveState(sal_Int16 aState);
 
 	/** Compares the set with the set given by rComparativeValue and puts the results
 		into rOldStates and rNewStates.
@@ -147,22 +141,19 @@ public:
 	*/
 	sal_Bool Compare(const AccessibleStateSetHelper& rComparativeValue,
 						AccessibleStateSetHelper& rOldStates,
-						AccessibleStateSetHelper& rNewStates)
-		throw (::com::sun::star::uno::RuntimeException);
+						AccessibleStateSetHelper& rNewStates);
 
 	//=====  XTypeProvider  ===================================================
 
     /**	Returns a sequence of all supported interfaces.
     */
 	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
-		getTypes (void)
-        throw (::com::sun::star::uno::RuntimeException);
+		getTypes (void);
 
     /**	Returns a implementation id.
     */
     virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL
-        getImplementationId (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getImplementationId (void);
 
 protected:
 	///	Mutex guarding this object.

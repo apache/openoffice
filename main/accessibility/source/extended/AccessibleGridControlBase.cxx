@@ -97,7 +97,6 @@ void SAL_CALL AccessibleGridControlBase::disposing()
 // XAccessibleContext ---------------------------------------------------------
 
 Reference< XAccessible > SAL_CALL AccessibleGridControlBase::getAccessibleParent()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslMutex() );
     ensureIsAlive();
@@ -105,7 +104,6 @@ Reference< XAccessible > SAL_CALL AccessibleGridControlBase::getAccessibleParent
 }
 
 sal_Int32 SAL_CALL AccessibleGridControlBase::getAccessibleIndexInParent()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslMutex() );
     ensureIsAlive();
@@ -140,7 +138,6 @@ sal_Int32 SAL_CALL AccessibleGridControlBase::getAccessibleIndexInParent()
 }
 
 OUString SAL_CALL AccessibleGridControlBase::getAccessibleDescription()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslMutex() );
     ensureIsAlive();
@@ -148,7 +145,6 @@ OUString SAL_CALL AccessibleGridControlBase::getAccessibleDescription()
 }
 
 OUString SAL_CALL AccessibleGridControlBase::getAccessibleName()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslMutex() );
     ensureIsAlive();
@@ -157,7 +153,6 @@ OUString SAL_CALL AccessibleGridControlBase::getAccessibleName()
 
 Reference< XAccessibleRelationSet > SAL_CALL
 AccessibleGridControlBase::getAccessibleRelationSet()
-    throw ( uno::RuntimeException )
 {
    ensureIsAlive();
    // GridControl does not have relations.
@@ -166,7 +161,6 @@ AccessibleGridControlBase::getAccessibleRelationSet()
 
 Reference< XAccessibleStateSet > SAL_CALL
 AccessibleGridControlBase::getAccessibleStateSet()
-    throw ( uno::RuntimeException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -175,7 +169,6 @@ AccessibleGridControlBase::getAccessibleStateSet()
 }
 
 lang::Locale SAL_CALL AccessibleGridControlBase::getLocale()
-    throw ( IllegalAccessibleComponentStateException, uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslMutex() );
     ensureIsAlive();
@@ -192,37 +185,31 @@ lang::Locale SAL_CALL AccessibleGridControlBase::getLocale()
 // XAccessibleComponent -------------------------------------------------------
 
 sal_Bool SAL_CALL AccessibleGridControlBase::containsPoint( const awt::Point& rPoint )
-    throw ( uno::RuntimeException )
 {
    return Rectangle( Point(), getBoundingBox().GetSize() ).IsInside( VCLPoint( rPoint ) );
 }
 
 awt::Rectangle SAL_CALL AccessibleGridControlBase::getBounds()
-    throw ( uno::RuntimeException )
 {
    return AWTRectangle( getBoundingBox() );
 }
 
 awt::Point SAL_CALL AccessibleGridControlBase::getLocation()
-    throw ( uno::RuntimeException )
 {
     return AWTPoint( getBoundingBox().TopLeft() );
 }
 
 awt::Point SAL_CALL AccessibleGridControlBase::getLocationOnScreen()
-    throw ( uno::RuntimeException )
 {
     return AWTPoint( getBoundingBoxOnScreen().TopLeft() );
 }
 
 awt::Size SAL_CALL AccessibleGridControlBase::getSize()
-    throw ( uno::RuntimeException )
 {
     return AWTSize( getBoundingBox().GetSize() );
 }
 
 sal_Bool SAL_CALL AccessibleGridControlBase::isShowing()
-    throw ( uno::RuntimeException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -231,7 +218,6 @@ sal_Bool SAL_CALL AccessibleGridControlBase::isShowing()
 }
 
 sal_Bool SAL_CALL AccessibleGridControlBase::isVisible()
-    throw ( uno::RuntimeException )
 {
     Reference< XAccessibleStateSet > xStateSet = getAccessibleStateSet();
     return xStateSet.is() ?
@@ -239,7 +225,6 @@ sal_Bool SAL_CALL AccessibleGridControlBase::isVisible()
 }
 
 sal_Bool SAL_CALL AccessibleGridControlBase::isFocusTraversable()
-    throw ( uno::RuntimeException )
 {
     Reference< XAccessibleStateSet > xStateSet = getAccessibleStateSet();
     return xStateSet.is() ?
@@ -249,7 +234,6 @@ sal_Bool SAL_CALL AccessibleGridControlBase::isFocusTraversable()
 
 void SAL_CALL AccessibleGridControlBase::addEventListener(
         const Reference< XAccessibleEventListener>& _rxListener )
-    throw ( uno::RuntimeException )
 {
 	if ( _rxListener.is() )
 	{
@@ -263,7 +247,6 @@ void SAL_CALL AccessibleGridControlBase::addEventListener(
 
 void SAL_CALL AccessibleGridControlBase::removeEventListener(
         const Reference< XAccessibleEventListener>& _rxListener )
-    throw ( uno::RuntimeException )
 {
     if( _rxListener.is() && getClientId( ) )
     {
@@ -285,7 +268,6 @@ void SAL_CALL AccessibleGridControlBase::removeEventListener(
 // XTypeProvider --------------------------------------------------------------
 
 Sequence< sal_Int8 > SAL_CALL AccessibleGridControlBase::getImplementationId()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslGlobalMutex() );
     static Sequence< sal_Int8 > aId;
@@ -297,7 +279,6 @@ Sequence< sal_Int8 > SAL_CALL AccessibleGridControlBase::getImplementationId()
 
 sal_Bool SAL_CALL AccessibleGridControlBase::supportsService(
         const OUString& rServiceName )
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslMutex() );
 
@@ -312,7 +293,6 @@ sal_Bool SAL_CALL AccessibleGridControlBase::supportsService(
 }
 
 Sequence< OUString > SAL_CALL AccessibleGridControlBase::getSupportedServiceNames()
-    throw ( uno::RuntimeException )
 {
     const OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.accessibility.AccessibleContext" ) );
     return Sequence< OUString >( &aServiceName, 1 );
@@ -359,14 +339,12 @@ sal_Bool AccessibleGridControlBase::isAlive() const
 }
 
 void AccessibleGridControlBase::ensureIsAlive() const
-    throw ( lang::DisposedException )
 {
     if( !isAlive() )
         throw lang::DisposedException();
 }
 
 Rectangle AccessibleGridControlBase::getBoundingBox()
-    throw ( lang::DisposedException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -380,7 +358,6 @@ Rectangle AccessibleGridControlBase::getBoundingBox()
 }
 
 Rectangle AccessibleGridControlBase::getBoundingBoxOnScreen()
-    throw ( lang::DisposedException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -425,7 +402,6 @@ void AccessibleGridControlBase::implCreateUuid( Sequence< sal_Int8 >& rId )
 }
 // -----------------------------------------------------------------------------
 sal_Int16 SAL_CALL AccessibleGridControlBase::getAccessibleRole()
-    throw ( uno::RuntimeException )
 {
     ensureIsAlive();
 	sal_Int16 nRole = AccessibleRole::UNKNOWN;
@@ -453,18 +429,16 @@ sal_Int16 SAL_CALL AccessibleGridControlBase::getAccessibleRole()
 }
 // -----------------------------------------------------------------------------
 Any SAL_CALL AccessibleGridControlBase::getAccessibleKeyBinding()
-        throw ( uno::RuntimeException )
 {
 	return Any();
 }
 // -----------------------------------------------------------------------------
 Reference<XAccessible > SAL_CALL AccessibleGridControlBase::getAccessibleAtPoint( const ::com::sun::star::awt::Point& )
-        throw ( uno::RuntimeException )
 {
 	return NULL;
 }
 //// -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL AccessibleGridControlBase::getForeground(  ) throw (::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL AccessibleGridControlBase::getForeground(  )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -489,7 +463,7 @@ sal_Int32 SAL_CALL AccessibleGridControlBase::getForeground(  ) throw (::com::su
     return nColor;
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL AccessibleGridControlBase::getBackground(  ) throw (::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL AccessibleGridControlBase::getBackground(  )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -522,7 +496,7 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER2( GridControlAccessibleElement, AccessibleGridCo
 
 // XAccessible ----------------------------------------------------------------
 
-Reference< XAccessibleContext > SAL_CALL GridControlAccessibleElement::getAccessibleContext() throw ( uno::RuntimeException )
+Reference< XAccessibleContext > SAL_CALL GridControlAccessibleElement::getAccessibleContext()
 {
     ensureIsAlive();
     return this;

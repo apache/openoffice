@@ -65,7 +65,6 @@ DocumentContentFactory::~DocumentContentFactory()
 
 // virtual
 ::rtl::OUString SAL_CALL DocumentContentFactory::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return getImplementationName_Static();
 }
@@ -74,7 +73,6 @@ DocumentContentFactory::~DocumentContentFactory()
 // virtual
 sal_Bool SAL_CALL
 DocumentContentFactory::supportsService( const ::rtl::OUString& ServiceName )
-    throw ( uno::RuntimeException )
 {
     uno::Sequence< rtl::OUString > aSNL = getSupportedServiceNames();
     const rtl::OUString * pArray = aSNL.getConstArray();
@@ -90,7 +88,6 @@ DocumentContentFactory::supportsService( const ::rtl::OUString& ServiceName )
 // virtual
 uno::Sequence< ::rtl::OUString > SAL_CALL
 DocumentContentFactory::getSupportedServiceNames()
-    throw ( uno::RuntimeException )
 {
     return getSupportedServiceNames_Static();
 }
@@ -125,7 +122,6 @@ DocumentContentFactory::getSupportedServiceNames_Static()
 uno::Reference< ucb::XContent > SAL_CALL
 DocumentContentFactory::createDocumentContent(
         const uno::Reference< frame::XModel >& Model )
-    throw ( lang::IllegalArgumentException, uno::RuntimeException )
 {
     uno::Reference< frame::XTransientDocumentsDocumentContentFactory > xDocFac;
     try
@@ -161,7 +157,6 @@ DocumentContentFactory::createDocumentContent(
 static uno::Reference< uno::XInterface > SAL_CALL
 DocumentContentFactory_CreateInstance(
     const uno::Reference< lang::XMultiServiceFactory> & rSMgr )
-    throw( uno::Exception )
 {
     lang::XServiceInfo * pX = static_cast< lang::XServiceInfo * >(
         new DocumentContentFactory( rSMgr ) );

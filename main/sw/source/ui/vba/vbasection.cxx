@@ -28,7 +28,7 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-SwVbaSection::SwVbaSection( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< frame::XModel >& xModel, const uno::Reference< beans::XPropertySet >& xProps ) throw ( uno::RuntimeException ) :
+SwVbaSection::SwVbaSection( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< frame::XModel >& xModel, const uno::Reference< beans::XPropertySet >& xProps ) :
     SwVbaSection_BASE( rParent, rContext ), mxModel( xModel ), mxPageProps( xProps )
 {
 }
@@ -37,27 +37,27 @@ SwVbaSection::~SwVbaSection()
 {
 }
 
-::sal_Bool SAL_CALL SwVbaSection::getProtectedForForms() throw (uno::RuntimeException)
+::sal_Bool SAL_CALL SwVbaSection::getProtectedForForms()
 {
     return sal_False;
 }
 
-void SAL_CALL SwVbaSection::setProtectedForForms( ::sal_Bool /*_protectedforforms*/ ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaSection::setProtectedForForms( ::sal_Bool /*_protectedforforms*/ )
 {
 }
 
-uno::Any SAL_CALL SwVbaSection::Headers(  ) throw (uno::RuntimeException)
+uno::Any SAL_CALL SwVbaSection::Headers(  )
 {
     return uno::Any();
 }
 
-uno::Any SAL_CALL SwVbaSection::Footers(  ) throw (uno::RuntimeException)
+uno::Any SAL_CALL SwVbaSection::Footers(  )
 {
     return uno::Any();
 }
 
 uno::Any SAL_CALL
-SwVbaSection::PageSetup( ) throw (uno::RuntimeException)
+SwVbaSection::PageSetup( )
 {
     return uno::makeAny( uno::Reference< word::XPageSetup >( new SwVbaPageSetup( this, mxContext, mxModel, mxPageProps ) ) );
 }

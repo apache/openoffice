@@ -78,7 +78,6 @@ FileContentIdentifier::release(
 uno::Any SAL_CALL
 FileContentIdentifier::queryInterface(
 	const uno::Type& rType )
-	throw( uno::RuntimeException )
 {
 	uno::Any aRet = cppu::queryInterface( rType,
 										  SAL_STATIC_CAST( lang::XTypeProvider*, this),
@@ -89,7 +88,6 @@ FileContentIdentifier::queryInterface(
 
 uno::Sequence< sal_Int8 > SAL_CALL
 FileContentIdentifier::getImplementationId()
-	throw( uno::RuntimeException )
 {
 	static cppu::OImplementationId* pId = NULL;
 	if ( !pId )
@@ -108,7 +106,6 @@ FileContentIdentifier::getImplementationId()
 uno::Sequence< uno::Type > SAL_CALL
 FileContentIdentifier::getTypes(
 	void )
-	throw( uno::RuntimeException )
 {
 	static cppu::OTypeCollection* pCollection = NULL;
 	if ( !pCollection ) {
@@ -129,7 +126,6 @@ rtl::OUString
 SAL_CALL
 FileContentIdentifier::getContentIdentifier(
 	void )
-	throw( uno::RuntimeException )
 {
 	return m_aContentId;
 }
@@ -138,7 +134,6 @@ FileContentIdentifier::getContentIdentifier(
 rtl::OUString SAL_CALL
 FileContentIdentifier::getContentProviderScheme(
 	void )
-	throw( uno::RuntimeException )
 {
 	return m_aProviderScheme;
 }

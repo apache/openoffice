@@ -61,12 +61,9 @@ public:
 
 
 public:
-    virtual void SAL_CALL writeBytes(const Sequence< sal_Int8 >& aData)
-		throw  (NotConnectedException, BufferSizeExceededException, RuntimeException);
-    virtual void SAL_CALL flush(void)
-		throw  (NotConnectedException, BufferSizeExceededException, RuntimeException);
-    virtual void SAL_CALL closeOutput(void)
-		throw  (NotConnectedException, BufferSizeExceededException, RuntimeException);
+    virtual void SAL_CALL writeBytes(const Sequence< sal_Int8 >& aData);
+    virtual void SAL_CALL flush(void);
+    virtual void SAL_CALL closeOutput(void);
 private:
 	char m_pcFile[256];
 	FILE *m_f;
@@ -74,7 +71,6 @@ private:
 
 
 void OFileWriter::writeBytes(const Sequence< sal_Int8 >& aData)
-	throw  (NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	if( ! m_f ) {
 		m_f = fopen( m_pcFile , "w" );
@@ -85,13 +81,11 @@ void OFileWriter::writeBytes(const Sequence< sal_Int8 >& aData)
 
 
 void OFileWriter::flush(void)
-	throw  (NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	fflush( m_f );
 }
 
 void OFileWriter::closeOutput(void)
-	throw  (NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	fclose( m_f );
 	m_f = 0;
@@ -112,21 +106,17 @@ public:
 public:
     virtual void SAL_CALL testInvariant(
 		const OUString& TestName,
-		const Reference < XInterface >& TestObject)
-		throw  (	IllegalArgumentException,
-					RuntimeException);
+		const Reference < XInterface >& TestObject);
 
     virtual sal_Int32 SAL_CALL test(
 		const OUString& TestName,
 		const Reference < XInterface >& TestObject,
-		sal_Int32 hTestHandle)
-		throw  (	IllegalArgumentException,RuntimeException);
+		sal_Int32 hTestHandle);
 
-    virtual sal_Bool SAL_CALL testPassed(void)
-		throw  (	RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getErrors(void) 				throw  (RuntimeException);
-    virtual Sequence< Any > SAL_CALL getErrorExceptions(void) 		throw  (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getWarnings(void) 			throw  (RuntimeException);
+    virtual sal_Bool SAL_CALL testPassed(void);
+    virtual Sequence< OUString > SAL_CALL getErrors(void);
+    virtual Sequence< Any > SAL_CALL getErrorExceptions(void);
+    virtual Sequence< OUString > SAL_CALL getWarnings(void);
 
 private:
 	void testSimple( const Reference< XExtendedDocumentHandler > &r );
@@ -159,12 +149,12 @@ public:
 	~AttributeListImpl();
 
 public:
-    virtual sal_Int16 SAL_CALL getLength(void) throw  (RuntimeException);
-    virtual OUString SAL_CALL getNameByIndex(sal_Int16 i) throw  (RuntimeException);
-    virtual OUString SAL_CALL getTypeByIndex(sal_Int16 i) throw  (RuntimeException);
-    virtual OUString SAL_CALL getTypeByName(const OUString& aName) throw  (RuntimeException);
-    virtual OUString SAL_CALL getValueByIndex(sal_Int16 i) throw  (RuntimeException);
-    virtual OUString SAL_CALL getValueByName(const OUString& aName) throw  (RuntimeException);
+    virtual sal_Int16 SAL_CALL getLength(void);
+    virtual OUString SAL_CALL getNameByIndex(sal_Int16 i);
+    virtual OUString SAL_CALL getTypeByIndex(sal_Int16 i);
+    virtual OUString SAL_CALL getTypeByName(const OUString& aName);
+    virtual OUString SAL_CALL getValueByIndex(sal_Int16 i);
+    virtual OUString SAL_CALL getValueByName(const OUString& aName);
 
 public:
 	void addAttribute( const OUString &sName ,
@@ -206,7 +196,7 @@ struct AttributeListImpl_impl
 
 
 
-sal_Int16 AttributeListImpl::getLength(void) throw  (RuntimeException)
+sal_Int16 AttributeListImpl::getLength(void)
 {
 	return m_pImpl->vecAttribute.size();
 }
@@ -218,7 +208,7 @@ AttributeListImpl::AttributeListImpl( const AttributeListImpl &r )
 	*m_pImpl = *(r.m_pImpl);
 }
 
-OUString AttributeListImpl::getNameByIndex(sal_Int16 i) throw  (RuntimeException)
+OUString AttributeListImpl::getNameByIndex(sal_Int16 i)
 {
 	if( i < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sName;
@@ -227,7 +217,7 @@ OUString AttributeListImpl::getNameByIndex(sal_Int16 i) throw  (RuntimeException
 }
 
 
-OUString AttributeListImpl::getTypeByIndex(sal_Int16 i) throw  (RuntimeException)
+OUString AttributeListImpl::getTypeByIndex(sal_Int16 i)
 {
 	if( i < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sType;
@@ -235,7 +225,7 @@ OUString AttributeListImpl::getTypeByIndex(sal_Int16 i) throw  (RuntimeException
 	return OUString();
 }
 
-OUString AttributeListImpl::getValueByIndex(sal_Int16 i) throw  (RuntimeException)
+OUString AttributeListImpl::getValueByIndex(sal_Int16 i)
 {
 	if( i < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sValue;
@@ -244,7 +234,7 @@ OUString AttributeListImpl::getValueByIndex(sal_Int16 i) throw  (RuntimeExceptio
 
 }
 
-OUString AttributeListImpl::getTypeByName( const OUString& sName ) throw  (RuntimeException)
+OUString AttributeListImpl::getTypeByName( const OUString& sName )
 {
 	vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -256,7 +246,7 @@ OUString AttributeListImpl::getTypeByName( const OUString& sName ) throw  (Runti
 	return OUString();
 }
 
-OUString AttributeListImpl::getValueByName(const OUString& sName) throw  (RuntimeException)
+OUString AttributeListImpl::getValueByName(const OUString& sName)
 {
 	vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -311,7 +301,7 @@ void AttributeListImpl::clear()
 *
 *
 **/
-Reference < XInterface > SAL_CALL OSaxWriterTest_CreateInstance( const Reference < XMultiServiceFactory > & rSMgr ) throw (Exception)
+Reference < XInterface > SAL_CALL OSaxWriterTest_CreateInstance( const Reference < XMultiServiceFactory > & rSMgr )
 {
 	OSaxWriterTest *p = new OSaxWriterTest( rSMgr );
 	Reference < XInterface > xService = *p;
@@ -341,7 +331,6 @@ Sequence<OUString> OSaxWriterTest_getSupportedServiceNames( ) throw  ()
 
 void OSaxWriterTest::testInvariant( const OUString& TestName,
 									const Reference < XInterface >& TestObject )
-	throw  (	IllegalArgumentException, RuntimeException)
 {
 	if( OUString::createFromAscii("com.sun.star.xml.sax.Writer") == TestName ) {
 		Reference< XDocumentHandler > doc( TestObject , UNO_QUERY );
@@ -362,7 +351,6 @@ sal_Int32 OSaxWriterTest::test(
 	const OUString& TestName,
 	const Reference < XInterface >& TestObject,
 	sal_Int32 hTestHandle)
-	throw  (	IllegalArgumentException,RuntimeException)
 {
 	if( OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.xml.sax.Writer")) == TestName )
 	{
@@ -414,25 +402,25 @@ sal_Int32 OSaxWriterTest::test(
 
 
 
-sal_Bool OSaxWriterTest::testPassed(void)					throw  (RuntimeException)
+sal_Bool OSaxWriterTest::testPassed(void)
 {
 	return m_seqErrors.getLength() == 0;
 }
 
 
-Sequence< OUString > OSaxWriterTest::getErrors(void) throw  (RuntimeException)
+Sequence< OUString > OSaxWriterTest::getErrors(void)
 {
 	return m_seqErrors;
 }
 
 
-Sequence< Any > OSaxWriterTest::getErrorExceptions(void) 					throw  (RuntimeException)
+Sequence< Any > OSaxWriterTest::getErrorExceptions(void)
 {
 	return m_seqExceptions;
 }
 
 
-Sequence< OUString > OSaxWriterTest::getWarnings(void) 						throw  (RuntimeException)
+Sequence< OUString > OSaxWriterTest::getWarnings(void)
 {
 	return m_seqWarnings;
 }

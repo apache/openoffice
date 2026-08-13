@@ -48,7 +48,7 @@ namespace pcr
 	{
 	}
 //---------------------------------------------------------------------
-	Sequence<sal_Int8> SAL_CALL MasterDetailLinkDialog::getImplementationId(  ) throw(RuntimeException)
+	Sequence<sal_Int8> SAL_CALL MasterDetailLinkDialog::getImplementationId(  )
 	{
 		static ::cppu::OImplementationId aId;
 		return aId.getImplementationId();
@@ -61,25 +61,25 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL MasterDetailLinkDialog::getImplementationName() throw(RuntimeException)
+	::rtl::OUString SAL_CALL MasterDetailLinkDialog::getImplementationName()
 	{
 		return getImplementationName_static();
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString MasterDetailLinkDialog::getImplementationName_static() throw(RuntimeException)
+	::rtl::OUString MasterDetailLinkDialog::getImplementationName_static()
 	{
 		return ::rtl::OUString::createFromAscii("org.openoffice.comp.form.ui.MasterDetailLinkDialog");
 	}
 
 	//---------------------------------------------------------------------
-	::comphelper::StringSequence SAL_CALL MasterDetailLinkDialog::getSupportedServiceNames() throw(RuntimeException)
+	::comphelper::StringSequence SAL_CALL MasterDetailLinkDialog::getSupportedServiceNames()
 	{
 		return getSupportedServiceNames_static();
 	}
 
 	//---------------------------------------------------------------------
-	::comphelper::StringSequence MasterDetailLinkDialog::getSupportedServiceNames_static() throw(RuntimeException)
+	::comphelper::StringSequence MasterDetailLinkDialog::getSupportedServiceNames_static()
 	{
 		::comphelper::StringSequence aSupported(1);
 		aSupported.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.form.MasterDetailLinkDialog");
@@ -87,7 +87,7 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	Reference<XPropertySetInfo>  SAL_CALL MasterDetailLinkDialog::getPropertySetInfo() throw(RuntimeException)
+	Reference<XPropertySetInfo>  SAL_CALL MasterDetailLinkDialog::getPropertySetInfo()
 	{
 		Reference<XPropertySetInfo>  xInfo( createPropertySetInfo( getInfoHelper() ) );
 		return xInfo;

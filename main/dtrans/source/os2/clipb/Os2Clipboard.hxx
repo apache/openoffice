@@ -60,43 +60,33 @@ public:
 	/*
 	 * XInitialization
 	 */
-	virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	/*
 	 * XServiceInfo
 	 */
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-		throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 	/*
 	 * XClipboard
 	 */
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getContents()
-		throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setContents( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& xTransferable, const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardOwner >& xClipboardOwner )
-		throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getName()
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getContents();
+	virtual void SAL_CALL setContents( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& xTransferable, const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardOwner >& xClipboardOwner );
+	virtual ::rtl::OUString SAL_CALL getName();
 
 	/*
 	 * XClipboardEx
 	 */
-	virtual sal_Int8 SAL_CALL getRenderingCapabilities()
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int8 SAL_CALL getRenderingCapabilities();
 
 	/*
 	 * XClipboardNotifier
 	 */
-	virtual void SAL_CALL addClipboardListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener )
-		throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL removeClipboardListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener )
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL addClipboardListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener );
+	virtual void SAL_CALL removeClipboardListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener );
 	void SAL_CALL notifyAllClipboardListener( );
 
 public:

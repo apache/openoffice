@@ -374,7 +374,6 @@ ONE_INSTANCE_SERVICE_FACTORY_IMPL( UcbPropertiesManager );
 
 // virtual
 Sequence< Property > SAL_CALL UcbPropertiesManager::getProperties()
-	throw( RuntimeException )
 {
 	osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
@@ -425,7 +424,6 @@ Sequence< Property > SAL_CALL UcbPropertiesManager::getProperties()
 //=========================================================================
 // virtual
 Property SAL_CALL UcbPropertiesManager::getPropertyByName( const OUString& aName )
-	throw( UnknownPropertyException, RuntimeException )
 {
 	Property aProp;
 	if ( queryProperty( aName, aProp ) )
@@ -437,7 +435,6 @@ Property SAL_CALL UcbPropertiesManager::getPropertyByName( const OUString& aName
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL UcbPropertiesManager::hasPropertyByName( const OUString& Name )
-	throw( RuntimeException )
 {
 	Property aProp;
 	return queryProperty( Name, aProp );

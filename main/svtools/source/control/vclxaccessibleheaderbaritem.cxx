@@ -141,7 +141,7 @@ void VCLXAccessibleHeaderBarItem::FillAccessibleStateSet( utl::AccessibleStateSe
 // OCommonAccessibleComponent
 // -----------------------------------------------------------------------------
 
-awt::Rectangle VCLXAccessibleHeaderBarItem::implGetBounds() throw (RuntimeException)
+awt::Rectangle VCLXAccessibleHeaderBarItem::implGetBounds()
 {
 	awt::Rectangle aBounds;
 	OExternalLockGuard aGuard( this );
@@ -179,14 +179,14 @@ void VCLXAccessibleHeaderBarItem::disposing()
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleHeaderBarItem::getImplementationName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleHeaderBarItem::getImplementationName()
 {
 	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.svtools.AccessibleHeaderBarItem" );
 }
 
 // -----------------------------------------------------------------------------
 
-sal_Bool VCLXAccessibleHeaderBarItem::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+sal_Bool VCLXAccessibleHeaderBarItem::supportsService( const ::rtl::OUString& rServiceName )
 {
 	Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -199,7 +199,7 @@ sal_Bool VCLXAccessibleHeaderBarItem::supportsService( const ::rtl::OUString& rS
 
 // -----------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > VCLXAccessibleHeaderBarItem::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleHeaderBarItem::getSupportedServiceNames()
 {
 	Sequence< ::rtl::OUString > aNames(1);
 	aNames[0] = ::rtl::OUString::createFromAscii( "com.sun.star.awt.AccessibleHeaderBarItem" );
@@ -210,7 +210,7 @@ Sequence< ::rtl::OUString > VCLXAccessibleHeaderBarItem::getSupportedServiceName
 // XAccessible
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleContext > VCLXAccessibleHeaderBarItem::getAccessibleContext() throw (RuntimeException)
+Reference< XAccessibleContext > VCLXAccessibleHeaderBarItem::getAccessibleContext()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -221,7 +221,7 @@ Reference< XAccessibleContext > VCLXAccessibleHeaderBarItem::getAccessibleContex
 // XAccessibleContext
 // -----------------------------------------------------------------------------
 
-sal_Int32 VCLXAccessibleHeaderBarItem::getAccessibleChildCount() throw (RuntimeException)
+sal_Int32 VCLXAccessibleHeaderBarItem::getAccessibleChildCount()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -230,7 +230,7 @@ sal_Int32 VCLXAccessibleHeaderBarItem::getAccessibleChildCount() throw (RuntimeE
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleChild( sal_Int32 i ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleChild( sal_Int32 i )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -242,7 +242,7 @@ Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleChild( sal_In
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleParent() throw (RuntimeException)
+Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleParent()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -257,7 +257,7 @@ Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleParent() thro
 
 // -----------------------------------------------------------------------------
 
-sal_Int32 VCLXAccessibleHeaderBarItem::getAccessibleIndexInParent() throw (RuntimeException)
+sal_Int32 VCLXAccessibleHeaderBarItem::getAccessibleIndexInParent()
 {
 	OExternalLockGuard aGuard( this );
 	return m_nIndexInParent - 1;
@@ -265,7 +265,7 @@ sal_Int32 VCLXAccessibleHeaderBarItem::getAccessibleIndexInParent() throw (Runti
 
 // -----------------------------------------------------------------------------
 
-sal_Int16 VCLXAccessibleHeaderBarItem::getAccessibleRole() throw (RuntimeException)
+sal_Int16 VCLXAccessibleHeaderBarItem::getAccessibleRole()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -274,7 +274,7 @@ sal_Int16 VCLXAccessibleHeaderBarItem::getAccessibleRole() throw (RuntimeExcepti
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleHeaderBarItem::getAccessibleDescription() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleHeaderBarItem::getAccessibleDescription()
 {
 	OExternalLockGuard aGuard( this );
 	::rtl::OUString sDescription;
@@ -283,7 +283,7 @@ sal_Int16 VCLXAccessibleHeaderBarItem::getAccessibleRole() throw (RuntimeExcepti
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleHeaderBarItem::getAccessibleName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleHeaderBarItem::getAccessibleName()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -295,7 +295,7 @@ sal_Int16 VCLXAccessibleHeaderBarItem::getAccessibleRole() throw (RuntimeExcepti
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleRelationSet > VCLXAccessibleHeaderBarItem::getAccessibleRelationSet(  ) throw (RuntimeException)
+Reference< XAccessibleRelationSet > VCLXAccessibleHeaderBarItem::getAccessibleRelationSet(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -306,7 +306,7 @@ Reference< XAccessibleRelationSet > VCLXAccessibleHeaderBarItem::getAccessibleRe
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleStateSet > VCLXAccessibleHeaderBarItem::getAccessibleStateSet(  ) throw (RuntimeException)
+Reference< XAccessibleStateSet > VCLXAccessibleHeaderBarItem::getAccessibleStateSet(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -327,7 +327,7 @@ Reference< XAccessibleStateSet > VCLXAccessibleHeaderBarItem::getAccessibleState
 
 // -----------------------------------------------------------------------------
 
-com::sun::star::lang::Locale VCLXAccessibleHeaderBarItem::getLocale() throw (IllegalAccessibleComponentStateException, RuntimeException)
+com::sun::star::lang::Locale VCLXAccessibleHeaderBarItem::getLocale()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -338,7 +338,7 @@ com::sun::star::lang::Locale VCLXAccessibleHeaderBarItem::getLocale() throw (Ill
 // XAccessibleComponent
 // -----------------------------------------------------------------------------
 
-Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleAtPoint( const awt::Point& ) throw (RuntimeException)
+Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleAtPoint( const awt::Point& )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -347,7 +347,7 @@ Reference< XAccessible > VCLXAccessibleHeaderBarItem::getAccessibleAtPoint( cons
 
 // -----------------------------------------------------------------------------
 
-sal_Int32 VCLXAccessibleHeaderBarItem::getForeground() throw (RuntimeException)
+sal_Int32 VCLXAccessibleHeaderBarItem::getForeground()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -357,7 +357,7 @@ sal_Int32 VCLXAccessibleHeaderBarItem::getForeground() throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-sal_Int32 VCLXAccessibleHeaderBarItem::getBackground() throw (RuntimeException)
+sal_Int32 VCLXAccessibleHeaderBarItem::getBackground()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -369,7 +369,7 @@ sal_Int32 VCLXAccessibleHeaderBarItem::getBackground() throw (RuntimeException)
 // XAccessibleExtendedComponent
 // -----------------------------------------------------------------------------
 
-Reference< awt::XFont > VCLXAccessibleHeaderBarItem::getFont() throw (RuntimeException)
+Reference< awt::XFont > VCLXAccessibleHeaderBarItem::getFont()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -379,7 +379,7 @@ Reference< awt::XFont > VCLXAccessibleHeaderBarItem::getFont() throw (RuntimeExc
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleHeaderBarItem::getTitledBorderText() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleHeaderBarItem::getTitledBorderText()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -389,7 +389,7 @@ Reference< awt::XFont > VCLXAccessibleHeaderBarItem::getFont() throw (RuntimeExc
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleHeaderBarItem::getToolTipText() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleHeaderBarItem::getToolTipText()
 {
 	OExternalLockGuard aGuard( this );
 

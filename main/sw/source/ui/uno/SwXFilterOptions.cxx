@@ -77,7 +77,7 @@ uno::Sequence< ::rtl::OUString> SwXFilterOptions::getSupportedServiceNames_Stati
 /*-- 2002/06/21 11:01:25---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Sequence< beans::PropertyValue > SwXFilterOptions::getPropertyValues() throw (uno::RuntimeException)
+uno::Sequence< beans::PropertyValue > SwXFilterOptions::getPropertyValues()
 {
     uno::Sequence<beans::PropertyValue> aRet(1);
 	beans::PropertyValue* pArray = aRet.getArray();
@@ -91,8 +91,6 @@ uno::Sequence< beans::PropertyValue > SwXFilterOptions::getPropertyValues() thro
 
   -----------------------------------------------------------------------*/
 void   SwXFilterOptions::setPropertyValues( const uno::Sequence<beans::PropertyValue >& aProps )
-    throw (beans::UnknownPropertyException, beans::PropertyVetoException,
-       IllegalArgumentException, WrappedTargetException, uno::RuntimeException)
 {
     const beans::PropertyValue* pPropArray = aProps.getConstArray();
 	long nPropCount = aProps.getLength();
@@ -113,13 +111,12 @@ void   SwXFilterOptions::setPropertyValues( const uno::Sequence<beans::PropertyV
 
   -----------------------------------------------------------------------*/
 void   SwXFilterOptions::setTitle( const ::rtl::OUString& /*rTitle*/ )
-    throw (uno::RuntimeException)
 {
 }
 /*-- 2002.06.21 11:01:25---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Int16 SwXFilterOptions::execute() throw (uno::RuntimeException)
+sal_Int16 SwXFilterOptions::execute()
 {
     sal_Int16 nRet = ui::dialogs::ExecutableDialogResults::CANCEL;
 
@@ -164,7 +161,6 @@ sal_Int16 SwXFilterOptions::execute() throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 void   SwXFilterOptions::setTargetDocument( const uno::Reference< XComponent >& xDoc )
-    throw (IllegalArgumentException, uno::RuntimeException)
 {
     bExport = sal_False;
     xModel = xDoc;
@@ -173,7 +169,6 @@ void   SwXFilterOptions::setTargetDocument( const uno::Reference< XComponent >& 
 
   -----------------------------------------------------------------------*/
 void   SwXFilterOptions::setSourceDocument( const uno::Reference<XComponent >& xDoc )
-        throw (IllegalArgumentException,uno::RuntimeException)
 {
     bExport = sal_True;
     xModel = xDoc;
@@ -181,7 +176,7 @@ void   SwXFilterOptions::setSourceDocument( const uno::Reference<XComponent >& x
 /*-- 2002/06/21 11:01:26---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-::rtl::OUString SwXFilterOptions::getImplementationName() throw(uno::RuntimeException)
+::rtl::OUString SwXFilterOptions::getImplementationName()
 {
     return ::rtl::OUString(SWFILTEROPTIONSOBJ_IMPLNAME);
 }
@@ -189,7 +184,6 @@ void   SwXFilterOptions::setSourceDocument( const uno::Reference<XComponent >& x
 
   -----------------------------------------------------------------------*/
 sal_Bool SwXFilterOptions::supportsService( const ::rtl::OUString& rServiceName )
-    throw(uno::RuntimeException)
 {
     return rServiceName == ::rtl::OUString(SWFILTEROPTIONSOBJ_SERVICE);
 }
@@ -197,7 +191,6 @@ sal_Bool SwXFilterOptions::supportsService( const ::rtl::OUString& rServiceName 
 
   -----------------------------------------------------------------------*/
 uno::Sequence< ::rtl::OUString > SwXFilterOptions::getSupportedServiceNames()
-                throw(uno::RuntimeException)
 {
     return SwXFilterOptions::getSupportedServiceNames_Static();
 }

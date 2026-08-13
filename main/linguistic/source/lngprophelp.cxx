@@ -246,7 +246,6 @@ sal_Bool PropertyChgHelper::propertyChange_Impl( const PropertyChangeEvent& rEvt
 
 void SAL_CALL
 	PropertyChgHelper::propertyChange( const PropertyChangeEvent& rEvt )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	propertyChange_Impl( rEvt );
@@ -295,7 +294,6 @@ void PropertyChgHelper::LaunchEvent( const LinguServiceEvent &rEvt )
 
 
 void SAL_CALL PropertyChgHelper::disposing( const EventObject& rSource )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	if (rSource.Source == xPropSet)
@@ -310,7 +308,6 @@ void SAL_CALL PropertyChgHelper::disposing( const EventObject& rSource )
 sal_Bool SAL_CALL
 	PropertyChgHelper::addLinguServiceEventListener(
 			const Reference< XLinguServiceEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -327,7 +324,6 @@ sal_Bool SAL_CALL
 sal_Bool SAL_CALL
 	PropertyChgHelper::removeLinguServiceEventListener(
 			const Reference< XLinguServiceEventListener >& rxListener )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -360,7 +356,6 @@ PropertyHelper_Thes::~PropertyHelper_Thes()
 
 void SAL_CALL
 	PropertyHelper_Thes::propertyChange( const PropertyChangeEvent& rEvt )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
     PropertyChgHelper::propertyChange_Impl( rEvt );
@@ -507,7 +502,6 @@ sal_Bool PropertyHelper_Spell::propertyChange_Impl( const PropertyChangeEvent& r
 
 void SAL_CALL
 	PropertyHelper_Spell::propertyChange( const PropertyChangeEvent& rEvt )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	propertyChange_Impl( rEvt );
@@ -669,7 +663,6 @@ sal_Bool PropertyHelper_Hyphen::propertyChange_Impl( const PropertyChangeEvent& 
 
 void SAL_CALL
     PropertyHelper_Hyphen::propertyChange( const PropertyChangeEvent& rEvt )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	propertyChange_Impl( rEvt );
@@ -783,7 +776,6 @@ sal_Int16 PropertyHelper_Hyphenation::GetMinWordLength() const
 sal_Bool PropertyHelper_Hyphenation::addLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
 					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException)
 {
 	return pInst->addLinguServiceEventListener( rxListener );
 }
@@ -791,7 +783,6 @@ sal_Bool PropertyHelper_Hyphenation::addLinguServiceEventListener(
 sal_Bool PropertyHelper_Hyphenation::removeLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
 					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException)
 {
 	return pInst->removeLinguServiceEventListener( rxListener );
 }
@@ -848,7 +839,6 @@ sal_Bool PropertyHelper_Spelling::IsSpellCapitalization() const
 sal_Bool PropertyHelper_Spelling::addLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
 					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException)
 {
 	return pInst->addLinguServiceEventListener( rxListener );
 }
@@ -856,7 +846,6 @@ sal_Bool PropertyHelper_Spelling::addLinguServiceEventListener(
 sal_Bool PropertyHelper_Spelling::removeLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
 					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
-			throw(::com::sun::star::uno::RuntimeException)
 {
 	return pInst->removeLinguServiceEventListener( rxListener );
 }

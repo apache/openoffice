@@ -45,14 +45,13 @@ Reference<XInterface> SAL_CALL SlideRenderer_createInstance (
 }
 
 
-::rtl::OUString SlideRenderer_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString SlideRenderer_getImplementationName (void)
 {
 	return OUString::createFromAscii("com.sun.star.comp.Draw.SlideRenderer");
 }
 
 
 Sequence<rtl::OUString> SAL_CALL SlideRenderer_getSupportedServiceNames (void)
-	throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
 		::rtl::OUString::createFromAscii("com.sun.star.drawing.SlideRenderer"));
@@ -83,7 +82,6 @@ void SAL_CALL SlideRenderer::disposing (void)
 //----- XInitialization -------------------------------------------------------
 
 void SAL_CALL SlideRenderer::initialize (const Sequence<Any>& rArguments)
-	throw (Exception, RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -112,7 +110,6 @@ Reference<awt::XBitmap> SlideRenderer::createPreview (
 	const Reference<drawing::XDrawPage>& rxSlide,
 	const awt::Size& rMaximalSize,
 	sal_Int16 nSuperSampleFactor)
-	throw (css::uno::RuntimeException)
 {
 	ThrowIfDisposed();
 	::vos::OGuard aGuard (Application::GetSolarMutex());
@@ -127,7 +124,6 @@ Reference<rendering::XBitmap> SlideRenderer::createPreviewForCanvas (
 	const awt::Size& rMaximalSize,
 	sal_Int16 nSuperSampleFactor,
 	const Reference<rendering::XCanvas>& rxCanvas)
-	throw (css::uno::RuntimeException)
 {
 	ThrowIfDisposed();
 	::vos::OGuard aGuard (Application::GetSolarMutex());
@@ -146,7 +142,6 @@ Reference<rendering::XBitmap> SlideRenderer::createPreviewForCanvas (
 awt::Size SAL_CALL SlideRenderer::calculatePreviewSize (
 	double nSlideAspectRatio,
 	const awt::Size& rMaximalSize)
-	throw (css::uno::RuntimeException)
 {
 	if (rMaximalSize.Width <= 0
 		|| rMaximalSize.Height <= 0
@@ -173,7 +168,6 @@ BitmapEx SlideRenderer::CreatePreview (
 	const Reference<drawing::XDrawPage>& rxSlide,
 	const awt::Size& rMaximalSize,
 	sal_Int16 nSuperSampleFactor)
-	throw (css::uno::RuntimeException)
 {
 	const SdPage* pPage = SdPage::getImplementation(rxSlide);
 	if (pPage == NULL)
@@ -230,7 +224,6 @@ BitmapEx SlideRenderer::CreatePreview (
 
 
 void SlideRenderer::ThrowIfDisposed (void)
-	throw (::com::sun::star::lang::DisposedException)
 {
 	if (SlideRendererInterfaceBase::rBHelper.bDisposed || SlideRendererInterfaceBase::rBHelper.bInDispose)
 	{

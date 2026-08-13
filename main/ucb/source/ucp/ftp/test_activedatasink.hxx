@@ -46,8 +46,7 @@ namespace test_ftp {
 		// XInterface
 
 		virtual com::sun::star::uno::Any SAL_CALL
-		queryInterface( const com::sun::star::uno::Type& rType )
-			throw( com::sun::star::uno::RuntimeException );
+		queryInterface( const com::sun::star::uno::Type& rType );
 
 
 		virtual void SAL_CALL acquire( void ) throw();
@@ -59,7 +58,6 @@ namespace test_ftp {
 
 		virtual void SAL_CALL
 		setInputStream(const com::sun::star::uno::Reference<com::sun::star::io::XInputStream>& aStream )
-			throw(com::sun::star::uno::RuntimeException)
 		{
 			m_xInputStream = aStream;
 		}
@@ -67,7 +65,6 @@ namespace test_ftp {
 
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL
 		getInputStream(  )
-			throw(::com::sun::star::uno::RuntimeException)
 		{
 			return m_xInputStream;
 		}

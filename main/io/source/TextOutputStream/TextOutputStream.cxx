@@ -74,31 +74,24 @@ class OTextOutputStream : public TextOutputStreamHelper
 	rtl_UnicodeToTextContext   	mContextUnicode2Text;
 
 	Sequence<sal_Int8> implConvert( const OUString& rSource );
-    void checkOutputStream() throw(IOException);
+    void checkOutputStream();
 
 public:
 	OTextOutputStream();
 	~OTextOutputStream();
 
     // Methods XTextOutputStream
-    virtual void SAL_CALL writeString( const OUString& aString )
-		throw(IOException, RuntimeException);
-    virtual void SAL_CALL setEncoding( const OUString& Encoding )
-		throw(RuntimeException);
+    virtual void SAL_CALL writeString( const OUString& aString );
+    virtual void SAL_CALL setEncoding( const OUString& Encoding );
 
     // Methods XOutputStream
-    virtual void SAL_CALL writeBytes( const Sequence< sal_Int8 >& aData )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual void SAL_CALL flush(  )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual void SAL_CALL closeOutput(  )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
+    virtual void SAL_CALL writeBytes( const Sequence< sal_Int8 >& aData );
+    virtual void SAL_CALL flush(  );
+    virtual void SAL_CALL closeOutput(  );
 
     // Methods XActiveDataSource
-    virtual void SAL_CALL setOutputStream( const Reference< XOutputStream >& aStream )
-		throw(RuntimeException);
-    virtual Reference< XOutputStream > SAL_CALL getOutputStream(  )
-		throw(RuntimeException);
+    virtual void SAL_CALL setOutputStream( const Reference< XOutputStream >& aStream );
+    virtual Reference< XOutputStream > SAL_CALL getOutputStream(  );
 
 	// Methods XServiceInfo
         virtual OUString              SAL_CALL getImplementationName() throw();
@@ -173,7 +166,6 @@ Sequence<sal_Int8> OTextOutputStream::implConvert( const OUString& rSource )
 // XTextOutputStream
 
 void OTextOutputStream::writeString( const OUString& aString )
-	throw(IOException, RuntimeException)
 {
     checkOutputStream();
 	if( !mbEncodingInitialized )
@@ -189,7 +181,6 @@ void OTextOutputStream::writeString( const OUString& aString )
 }
 
 void OTextOutputStream::setEncoding( const OUString& Encoding )
-	throw(RuntimeException)
 {
 	OString aOEncodingStr = OUStringToOString( Encoding, RTL_TEXTENCODING_ASCII_US );
 	rtl_TextEncoding encoding = rtl_getTextEncodingFromMimeCharset( aOEncodingStr.getStr() );
@@ -205,21 +196,18 @@ void OTextOutputStream::setEncoding( const OUString& Encoding )
 //===========================================================================
 // XOutputStream
 void OTextOutputStream::writeBytes( const Sequence< sal_Int8 >& aData )
-	throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
     checkOutputStream();
 	mxStream->writeBytes( aData );
 }
 
 void OTextOutputStream::flush(  )
-	throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
     checkOutputStream();
 	mxStream->flush();
 }
 
 void OTextOutputStream::closeOutput(  )
-	throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
     checkOutputStream();
 	mxStream->closeOutput();
@@ -227,7 +215,6 @@ void OTextOutputStream::closeOutput(  )
 
 
 void OTextOutputStream::checkOutputStream()
-    throw(IOException)
 {
     if (! mxStream.is() )
         throw IOException(
@@ -240,13 +227,11 @@ void OTextOutputStream::checkOutputStream()
 // XActiveDataSource
 
 void OTextOutputStream::setOutputStream( const Reference< XOutputStream >& aStream )
-	throw(RuntimeException)
 {
 	mxStream = aStream;
 }
 
 Reference< XOutputStream > OTextOutputStream::getOutputStream()
-	throw(RuntimeException)
 {
 	return mxStream;
 }

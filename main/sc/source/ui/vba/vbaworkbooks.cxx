@@ -156,9 +156,9 @@ class WorkBookEnumImpl : public EnumerationHelperImpl
 {
 	uno::Any m_aApplication;
 public:
-	WorkBookEnumImpl( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration, const uno::Any& aApplication ) throw ( uno::RuntimeException ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), m_aApplication( aApplication ) {}
+	WorkBookEnumImpl( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration, const uno::Any& aApplication ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), m_aApplication( aApplication ) {}
 
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL nextElement(  )
 	{
 		uno::Reference< sheet::XSpreadsheetDocument > xDoc( m_xEnumeration->nextElement(), uno::UNO_QUERY_THROW );
 		return getWorkbook( m_xContext, xDoc, m_xParent );
@@ -171,12 +171,12 @@ ScVbaWorkbooks::ScVbaWorkbooks( const uno::Reference< XHelperInterface >& xParen
 }
 // XEnumerationAccess
 uno::Type
-ScVbaWorkbooks::getElementType() throw (uno::RuntimeException)
+ScVbaWorkbooks::getElementType()
 {
 	return excel::XWorkbook::static_type(0);
 }
 uno::Reference< container::XEnumeration >
-ScVbaWorkbooks::createEnumeration() throw (uno::RuntimeException)
+ScVbaWorkbooks::createEnumeration()
 {
 	// #FIXME its possible the WorkBookEnumImpl here doens't reflect
 	// the state of this object ( although it should ) would be
@@ -195,7 +195,7 @@ ScVbaWorkbooks::createCollectionObject( const css::uno::Any& aSource )
 
 
 uno::Any SAL_CALL
-ScVbaWorkbooks::Add( const uno::Any& Template ) throw (uno::RuntimeException)
+ScVbaWorkbooks::Add( const uno::Any& Template )
 {
     uno::Reference< sheet::XSpreadsheetDocument > xSpreadDoc;
     sal_Int32 nWorkbookType = 0;
@@ -239,7 +239,7 @@ ScVbaWorkbooks::Add( const uno::Any& Template ) throw (uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaWorkbooks::Close() throw (uno::RuntimeException)
+ScVbaWorkbooks::Close()
 {
     closeDocuments();
 }
@@ -282,7 +282,7 @@ ScVbaWorkbooks::getFileFilterType( const rtl::OUString& rFileName )
 
 // #TODO# #FIXME# can any of the unused params below be used?
 uno::Any SAL_CALL
-ScVbaWorkbooks::Open( const rtl::OUString& rFileName, const uno::Any& /*UpdateLinks*/, const uno::Any& ReadOnly, const uno::Any& Format, const uno::Any& /*Password*/, const uno::Any& /*WriteResPassword*/, const uno::Any& /*IgnoreReadOnlyRecommended*/, const uno::Any& /*Origin*/, const uno::Any& Delimiter, const uno::Any& /*Editable*/, const uno::Any& /*Notify*/, const uno::Any& /*Converter*/, const uno::Any& /*AddToMru*/ ) throw (uno::RuntimeException)
+ScVbaWorkbooks::Open( const rtl::OUString& rFileName, const uno::Any& /*UpdateLinks*/, const uno::Any& ReadOnly, const uno::Any& Format, const uno::Any& /*Password*/, const uno::Any& /*WriteResPassword*/, const uno::Any& /*IgnoreReadOnlyRecommended*/, const uno::Any& /*Origin*/, const uno::Any& Delimiter, const uno::Any& /*Editable*/, const uno::Any& /*Notify*/, const uno::Any& /*Converter*/, const uno::Any& /*AddToMru*/ )
 {
 	// we need to detect if this is a URL, if not then assume its a file path
     rtl::OUString aURL;

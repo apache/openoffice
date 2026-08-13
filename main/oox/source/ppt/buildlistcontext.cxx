@@ -47,7 +47,7 @@ namespace oox { namespace ppt {
 	{
 	}
 
-	void SAL_CALL BuildListContext::endFastElement( sal_Int32 aElement ) throw ( SAXException, RuntimeException)
+	void SAL_CALL BuildListContext::endFastElement( sal_Int32 aElement )
 	{
 		switch( aElement )
 		{
@@ -61,7 +61,6 @@ namespace oox { namespace ppt {
 
 	Reference< XFastContextHandler > SAL_CALL BuildListContext::createFastChildContext( ::sal_Int32 aElementToken,
 																																										 const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 	{
 		Reference< XFastContextHandler > xRet;
 

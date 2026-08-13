@@ -74,7 +74,6 @@ Meaning::~Meaning()
 
 
 OUString SAL_CALL Meaning::getMeaning()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return aTerm;
@@ -82,7 +81,6 @@ OUString SAL_CALL Meaning::getMeaning()
 
 
 Sequence< OUString > SAL_CALL Meaning::querySynonyms()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
         return aSyn;

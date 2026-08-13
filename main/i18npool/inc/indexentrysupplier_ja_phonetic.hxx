@@ -39,15 +39,15 @@ public:
 	};
 	virtual rtl::OUString SAL_CALL getIndexCharacter( const rtl::OUString& rIndexEntry,\
 		const com::sun::star::lang::Locale& rLocale, const rtl::OUString& rSortAlgorithm ) \
-		throw (com::sun::star::uno::RuntimeException);\
+		;\
 	virtual rtl::OUString SAL_CALL getIndexKey( const rtl::OUString& IndexEntry, \
 		const rtl::OUString& PhoneticEntry, const com::sun::star::lang::Locale& rLocale )\
-		throw (com::sun::star::uno::RuntimeException);\
+		;\
 	virtual sal_Int16 SAL_CALL compareIndexEntry( const rtl::OUString& IndexEntry1,\
 		const rtl::OUString& PhoneticEntry1, const com::sun::star::lang::Locale& rLocale1,\
 		const rtl::OUString& IndexEntry2, const ::rtl::OUString& PhoneticEntry2,\
 		const com::sun::star::lang::Locale& rLocale2 )\
-		throw (com::sun::star::uno::RuntimeException);\
+		;\
 };
 
 #define INDEXENTRYSUPPLIER_JA_PHONETIC( algorithm ) \
@@ -59,7 +59,7 @@ public:\
 	virtual sal_Bool SAL_CALL loadAlgorithm(\
 		const com::sun::star::lang::Locale& rLocale,\
 		const rtl::OUString& SortAlgorithm, sal_Int32 collatorOptions ) \
-		throw (com::sun::star::uno::RuntimeException);\
+		;\
 };
 
 INDEXENTRYSUPPLIER_JA_PHONETIC( ja_phonetic_alphanumeric_first_by_syllable )

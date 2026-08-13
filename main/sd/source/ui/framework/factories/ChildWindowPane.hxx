@@ -96,8 +96,7 @@ public:
         window pointer before forwarding the call to the base class.
     */
     virtual ::com::sun::star::uno::Reference<com::sun::star::awt::XWindow>
-        SAL_CALL getWindow (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        SAL_CALL getWindow (void);
 
     DECLARE_XINTERFACE()
 	DECLARE_XTYPEPROVIDER()
@@ -106,8 +105,7 @@ public:
     // XEventListener
 
     virtual void SAL_CALL disposing(
-        const com::sun::star::lang::EventObject& rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+        const com::sun::star::lang::EventObject& rEvent);
 
 private:
     ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XResourceId> mxPaneId;

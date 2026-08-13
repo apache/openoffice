@@ -66,7 +66,6 @@ void SAL_CALL PropertySetContainer::release() throw ()
 }
 
 Any SAL_CALL PropertySetContainer::queryInterface( const Type& rType )
-throw ( RuntimeException )
 {
 	Any a = ::cppu::queryInterface(
 				rType ,
@@ -85,7 +84,6 @@ throw ( RuntimeException )
 
 // XIndexContainer
 void SAL_CALL PropertySetContainer::insertByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element )
-	throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -118,7 +116,6 @@ void SAL_CALL PropertySetContainer::insertByIndex( sal_Int32 Index, const ::com:
 }
 
 void SAL_CALL PropertySetContainer::removeByIndex( sal_Int32 Index )
-	throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -134,7 +131,6 @@ void SAL_CALL PropertySetContainer::removeByIndex( sal_Int32 Index )
 
 // XIndexReplace
 void SAL_CALL PropertySetContainer::replaceByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element )
-	throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
 {
 	if ( (sal_Int32)m_aPropertySetVector.size() > Index )
 	{
@@ -157,7 +153,6 @@ void SAL_CALL PropertySetContainer::replaceByIndex( sal_Int32 Index, const ::com
 
 // XIndexAccess
 sal_Int32 SAL_CALL PropertySetContainer::getCount()
-	throw ( RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -165,7 +160,6 @@ sal_Int32 SAL_CALL PropertySetContainer::getCount()
 }
 
 Any SAL_CALL PropertySetContainer::getByIndex( sal_Int32 Index )
-	throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -182,7 +176,6 @@ Any SAL_CALL PropertySetContainer::getByIndex( sal_Int32 Index )
 
 // XElementAccess
 sal_Bool SAL_CALL PropertySetContainer::hasElements()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	ResetableGuard aGuard( m_aLock );
 

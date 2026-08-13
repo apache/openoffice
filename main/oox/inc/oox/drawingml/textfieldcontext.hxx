@@ -37,11 +37,10 @@ public:
     TextFieldContext( ::oox::core::ContextHandler& rParent,
                         const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rXAttributes,
                         TextField& rTextField);
-    virtual void SAL_CALL endFastElement( sal_Int32 aElementToken ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL characters( const ::rtl::OUString& aChars ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL endFastElement( sal_Int32 aElementToken );
+    virtual void SAL_CALL characters( const ::rtl::OUString& aChars );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL createFastChildContext(
-        sal_Int32 aElementToken, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rXAttributes )
-        throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+        sal_Int32 aElementToken, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rXAttributes );
 
 private:
     TextField& mrTextField;

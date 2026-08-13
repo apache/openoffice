@@ -38,15 +38,15 @@ private:
 
 public:
 	SwVbaVariable( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext,
-        const css::uno::Reference< css::beans::XPropertyAccess >& rUserDefined, const rtl::OUString& rName ) throw ( css::uno::RuntimeException );
+        const css::uno::Reference< css::beans::XPropertyAccess >& rUserDefined, const rtl::OUString& rName );
 	virtual ~SwVbaVariable();
 
    // XVariable
-    virtual rtl::OUString SAL_CALL getName() throw ( css::uno::RuntimeException );
-    virtual void SAL_CALL setName( const rtl::OUString& ) throw ( css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL getValue() throw ( css::uno::RuntimeException );
-    virtual void SAL_CALL setValue( const css::uno::Any& rValue ) throw ( css::uno::RuntimeException );
-    virtual sal_Int32 SAL_CALL getIndex() throw ( css::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const rtl::OUString& );
+    virtual css::uno::Any SAL_CALL getValue();
+    virtual void SAL_CALL setValue( const css::uno::Any& rValue );
+    virtual sal_Int32 SAL_CALL getIndex();
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

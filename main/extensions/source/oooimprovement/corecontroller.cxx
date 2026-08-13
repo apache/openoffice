@@ -41,7 +41,7 @@ namespace oooimprovement
     CoreController::~CoreController()
     { }
 
-    sal_Bool SAL_CALL CoreController::enablingUiEventsLoggerAllowed(sal_Int16 version) throw(RuntimeException)
+    sal_Bool SAL_CALL CoreController::enablingUiEventsLoggerAllowed(sal_Int16 version)
     {
         Config config(m_ServiceFactory);
         if(version==1 && config.getEnablingAllowed() && config.getShowedInvitation() && config.getInvitationAccepted())
@@ -49,7 +49,7 @@ namespace oooimprovement
         return false;
     }
 
-    sal_Bool SAL_CALL CoreController::showBuiltinOptionsPage(sal_Int16 version) throw(RuntimeException)
+    sal_Bool SAL_CALL CoreController::showBuiltinOptionsPage(sal_Int16 version)
     {
         Config config(m_ServiceFactory);
         if(version==1 && config.getEnablingAllowed())
@@ -57,7 +57,7 @@ namespace oooimprovement
         return false;
     }
 
-    sal_Bool SAL_CALL CoreController::supportsService(const OUString& service_name) throw(RuntimeException)
+    sal_Bool SAL_CALL CoreController::supportsService(const OUString& service_name)
     {
         const Sequence<OUString> service_names(getSupportedServiceNames());
         for (sal_Int32 idx = service_names.getLength()-1; idx>=0; --idx)
@@ -65,10 +65,10 @@ namespace oooimprovement
         return sal_False;
     }
 
-    OUString SAL_CALL CoreController::getImplementationName() throw(RuntimeException)
+    OUString SAL_CALL CoreController::getImplementationName()
     { return getImplementationName_static(); }
 
-    Sequence<OUString> SAL_CALL CoreController::getSupportedServiceNames() throw(RuntimeException)
+    Sequence<OUString> SAL_CALL CoreController::getSupportedServiceNames()
     { return getSupportedServiceNames_static(); }
 
     OUString SAL_CALL CoreController::getImplementationName_static()

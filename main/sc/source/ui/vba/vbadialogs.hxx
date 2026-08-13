@@ -39,10 +39,10 @@ public:
 	virtual ~ScVbaDialogs() {}
 
 	// XCollection
-	virtual css::uno::Any SAL_CALL Item( const css::uno::Any& Index ) throw (css::uno::RuntimeException);
+	virtual css::uno::Any SAL_CALL Item( const css::uno::Any& Index );
 
 	// XDialogs
-	virtual void SAL_CALL Dummy() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL Dummy();
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

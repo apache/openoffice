@@ -144,7 +144,6 @@ executeUnknownAuthDialog(
     Window * pParent,
     uno::Reference< lang::XMultiServiceFactory > const & xServiceFactory,
     const uno::Reference< security::XCertificate >& rXCert)
-    SAL_THROW((uno::RuntimeException))
 {
     try
     {
@@ -193,7 +192,6 @@ executeSSLWarnDialog(
     const uno::Reference< security::XCertificate >& rXCert,
     sal_Int32 const & failure,
     const rtl::OUString & hostName )
-    SAL_THROW((uno::RuntimeException))
 {
     try
     {
@@ -268,7 +266,6 @@ handleCertificateValidationRequest_(
     ucb::CertificateValidationRequest const & rRequest,
     uno::Sequence< uno::Reference< task::XInteractionContinuation > > const &
         rContinuations)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Reference< task::XInteractionApprove > xApprove;
     uno::Reference< task::XInteractionAbort > xAbort;
@@ -374,7 +371,6 @@ handleCertificateValidationRequest_(
 bool
 UUIInteractionHelper::handleCertificateValidationRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 

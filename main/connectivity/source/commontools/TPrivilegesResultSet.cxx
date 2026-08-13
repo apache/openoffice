@@ -124,7 +124,7 @@ m_xTables.clear();
 m_xRow.clear();
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OResultSetPrivileges::next(  ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OResultSetPrivileges::next(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(ODatabaseMetaDataResultSet_BASE::rBHelper.bDisposed );

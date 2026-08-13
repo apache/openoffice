@@ -67,7 +67,6 @@ namespace
                 mxFrame->removeEventListener(this);
         }
         virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
-            throw (cssu::RuntimeException)
         {
             (void)rEvent;
             mrInfoProvider.SetFrame(NULL);

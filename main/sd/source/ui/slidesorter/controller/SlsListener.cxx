@@ -442,7 +442,6 @@ IMPL_LINK(Listener, EventMultiplexerCallback, ::sd::tools::EventMultiplexerEvent
 
 void SAL_CALL Listener::disposing (
     const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if ((mbListeningToDocument || mbListeningToUNODocument)
         && mrSlideSorter.GetModel().GetDocument()!=NULL
@@ -469,7 +468,6 @@ void SAL_CALL Listener::disposing (
 
 void SAL_CALL Listener::notifyEvent (
     const document::EventObject& )
-    throw (RuntimeException)
 {
 }
 
@@ -480,7 +478,6 @@ void SAL_CALL Listener::notifyEvent (
 
 void SAL_CALL Listener::propertyChange (
     const PropertyChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -529,7 +526,6 @@ void SAL_CALL Listener::propertyChange (
 //===== frame::XFrameActionListener  ==========================================
 
 void SAL_CALL Listener::frameAction (const frame::FrameActionEvent& rEvent)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     switch (rEvent.Action)
     {
@@ -557,7 +553,6 @@ void SAL_CALL Listener::frameAction (const frame::FrameActionEvent& rEvent)
 
 void SAL_CALL Listener::notifyEvent (
     const AccessibleEventObject& )
-    throw (RuntimeException)
 {
 }
 
@@ -680,7 +675,6 @@ void Listener::HandleShapeModification (const SdrPage* pPage)
 
 
 void Listener::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

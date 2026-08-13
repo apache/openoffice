@@ -219,7 +219,6 @@ void RootAccess::clearListeners() throw() {
 }
 
 css::uno::Any RootAccess::queryInterface(css::uno::Type const & aType)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -242,7 +241,6 @@ css::uno::Any RootAccess::queryInterface(css::uno::Type const & aType)
 
 void RootAccess::addChangesListener(
     css::uno::Reference< css::util::XChangesListener > const & aListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     {
@@ -266,7 +264,6 @@ void RootAccess::addChangesListener(
 
 void RootAccess::removeChangesListener(
     css::uno::Reference< css::util::XChangesListener > const & aListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -278,7 +275,6 @@ void RootAccess::removeChangesListener(
 }
 
 void RootAccess::commitChanges()
-    throw (css::lang::WrappedTargetException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_UPDATE));
     Broadcaster bc;
@@ -299,7 +295,7 @@ void RootAccess::commitChanges()
     bc.send();
 }
 
-sal_Bool RootAccess::hasPendingChanges() throw (css::uno::RuntimeException) {
+sal_Bool RootAccess::hasPendingChanges() {
     OSL_ASSERT(thisIs(IS_UPDATE));
     osl::MutexGuard g(lock);
     checkLocalizedPropertyAccess();
@@ -310,7 +306,6 @@ sal_Bool RootAccess::hasPendingChanges() throw (css::uno::RuntimeException) {
 }
 
 css::util::ChangesSet RootAccess::getPendingChanges()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_UPDATE));
     osl::MutexGuard g(lock);

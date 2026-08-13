@@ -251,7 +251,6 @@ void SAL_CALL SidebarController::disposing (void)
 
 
 void SAL_CALL SidebarController::notifyContextChangeEvent (const css::ui::ContextChangeEventObject& rEvent)
-    throw(cssu::RuntimeException)
 {
     // Update to the requested new context asynchronously to avoid
     // subtle errors caused by SFX2 which in rare cases can not
@@ -270,7 +269,6 @@ void SAL_CALL SidebarController::notifyContextChangeEvent (const css::ui::Contex
 
 
 void SAL_CALL SidebarController::disposing (const css::lang::EventObject& rEventObject)
-    throw(cssu::RuntimeException)
 {
     (void)rEventObject;
 
@@ -281,7 +279,6 @@ void SAL_CALL SidebarController::disposing (const css::lang::EventObject& rEvent
 
 
 void SAL_CALL SidebarController::propertyChange (const css::beans::PropertyChangeEvent& rEvent)
-    throw(cssu::RuntimeException)
 {
     (void)rEvent;
 
@@ -292,7 +289,6 @@ void SAL_CALL SidebarController::propertyChange (const css::beans::PropertyChang
 
 
 void SAL_CALL SidebarController::statusChanged (const css::frame::FeatureStateEvent& rEvent)
-    throw(cssu::RuntimeException)
 {
     bool bIsReadWrite (true);
     if (rEvent.IsEnabled)
@@ -315,7 +311,6 @@ void SAL_CALL SidebarController::statusChanged (const css::frame::FeatureStateEv
 
 
 void SAL_CALL SidebarController::requestLayout (void)
-    throw(cssu::RuntimeException)
 {
     if (mpCurrentDeck)
         mpCurrentDeck->RequestLayout();

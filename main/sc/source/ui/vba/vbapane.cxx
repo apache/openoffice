@@ -34,7 +34,7 @@ ScVbaPane::ScVbaPane(
         const css::uno::Reference< ov::XHelperInterface >& xParent,
         const uno::Reference< uno::XComponentContext >& xContext,
         const uno::Reference< frame::XModel >& xModel,
-        const uno::Reference< sheet::XViewPane > xViewPane ) throw (uno::RuntimeException) :
+        const uno::Reference< sheet::XViewPane > xViewPane ) :
     ScVbaPane_BASE( xParent, xContext ),
     m_xModel( xModel, uno::UNO_SET_THROW ),
     m_xViewPane( xViewPane, uno::UNO_SET_THROW )
@@ -42,13 +42,13 @@ ScVbaPane::ScVbaPane(
 }
 
 sal_Int32 SAL_CALL
-ScVbaPane::getScrollColumn() throw (uno::RuntimeException)
+ScVbaPane::getScrollColumn()
 {
     return ( m_xViewPane->getFirstVisibleColumn() + 1 );
 }
 
 void SAL_CALL
-ScVbaPane::setScrollColumn( sal_Int32 _scrollcolumn ) throw (uno::RuntimeException)
+ScVbaPane::setScrollColumn( sal_Int32 _scrollcolumn )
 {
     if( _scrollcolumn < 1 )
     {
@@ -59,13 +59,13 @@ ScVbaPane::setScrollColumn( sal_Int32 _scrollcolumn ) throw (uno::RuntimeExcepti
 }
 
 sal_Int32 SAL_CALL
-ScVbaPane::getScrollRow() throw (uno::RuntimeException)
+ScVbaPane::getScrollRow()
 {
     return ( m_xViewPane->getFirstVisibleRow() + 1 );
 }
 
 void SAL_CALL
-ScVbaPane::setScrollRow( sal_Int32 _scrollrow ) throw (uno::RuntimeException)
+ScVbaPane::setScrollRow( sal_Int32 _scrollrow )
 {
     if( _scrollrow < 1 )
     {
@@ -76,7 +76,7 @@ ScVbaPane::setScrollRow( sal_Int32 _scrollrow ) throw (uno::RuntimeException)
 }
 
 uno::Reference< excel::XRange > SAL_CALL
-ScVbaPane::getVisibleRange() throw (uno::RuntimeException)
+ScVbaPane::getVisibleRange()
 {
     // TODO: Excel includes partly visible rows/columns, Calc does not
     table::CellRangeAddress aRangeAddr = m_xViewPane->getVisibleRange();
@@ -90,7 +90,7 @@ ScVbaPane::getVisibleRange() throw (uno::RuntimeException)
 
 //Method
 void SAL_CALL
-ScVbaPane::SmallScroll( const uno::Any& Down, const uno::Any& Up, const uno::Any& ToRight, const uno::Any& ToLeft ) throw (uno::RuntimeException)
+ScVbaPane::SmallScroll( const uno::Any& Down, const uno::Any& Up, const uno::Any& ToRight, const uno::Any& ToLeft )
 {
     rtl::OUString messageBuffer;
     sal_Int32 downRows = 0;
@@ -143,7 +143,7 @@ ScVbaPane::SmallScroll( const uno::Any& Down, const uno::Any& Up, const uno::Any
 }
 
 void SAL_CALL
-ScVbaPane::LargeScroll( const uno::Any& Down, const uno::Any& Up, const uno::Any& ToRight, const uno::Any& ToLeft ) throw (uno::RuntimeException)
+ScVbaPane::LargeScroll( const uno::Any& Down, const uno::Any& Up, const uno::Any& ToRight, const uno::Any& ToLeft )
 {
     rtl::OUString messageBuffer;
     table::CellRangeAddress visibleRange = m_xViewPane->getVisibleRange();

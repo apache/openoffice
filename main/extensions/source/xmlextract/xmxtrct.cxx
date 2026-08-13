@@ -154,7 +154,7 @@ XMLExtractor::~XMLExtractor()
 
 // -----------------------------------------------------------------------------
 
-REF( NMSP_IO::XInputStream ) SAL_CALL XMLExtractor::extract( const REF( NMSP_IO::XInputStream )& rxIStm ) throw( NMSP_UNO::RuntimeException )
+REF( NMSP_IO::XInputStream ) SAL_CALL XMLExtractor::extract( const REF( NMSP_IO::XInputStream )& rxIStm )
 {
 	REF( NMSP_IO::XInputStream ) xRet;
 

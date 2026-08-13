@@ -279,8 +279,7 @@ public:
 	bool        commitEmbeddedStorage( bool _bPreventRootCommits = false );
 
     /// commits all sub storages
-    void commitStorages()
-            SAL_THROW(( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException ));
+    void commitStorages();
 
 	ODatabaseModelImpl(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory,
@@ -295,7 +294,7 @@ public:
 		);
 
 	// XEventListener
-	void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+	void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     void setModified( sal_Bool bModified );
 

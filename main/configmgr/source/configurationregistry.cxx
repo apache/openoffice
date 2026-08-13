@@ -87,59 +87,40 @@ private:
     virtual ~Service() {}
 
     virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException)
     { return configuration_registry::getImplementationName(); }
 
     virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName)
-        throw (css::uno::RuntimeException)
     { return ServiceName == getSupportedServiceNames()[0]; } //TODO
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException)
+    getSupportedServiceNames()
     { return configuration_registry::getSupportedServiceNames(); }
 
-    virtual rtl::OUString SAL_CALL getURL() throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getURL();
 
     virtual void SAL_CALL open(
-        rtl::OUString const & rURL, sal_Bool bReadOnly, sal_Bool)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & rURL, sal_Bool bReadOnly, sal_Bool);
 
-    virtual sal_Bool SAL_CALL isValid() throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isValid();
 
-    virtual void SAL_CALL close()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL close();
 
-    virtual void SAL_CALL destroy()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL destroy();
 
     virtual css::uno::Reference< css::registry::XRegistryKey > SAL_CALL
-    getRootKey()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    getRootKey();
 
-    virtual sal_Bool SAL_CALL isReadOnly() throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isReadOnly();
 
-    virtual void SAL_CALL mergeKey(rtl::OUString const &, rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::MergeConflictException, css::uno::RuntimeException);
+    virtual void SAL_CALL mergeKey(rtl::OUString const &, rtl::OUString const &);
 
-    virtual void SAL_CALL flush() throw (css::uno::RuntimeException);
+    virtual void SAL_CALL flush();
 
     virtual void SAL_CALL addFlushListener(
-        css::uno::Reference< css::util::XFlushListener > const &)
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::util::XFlushListener > const &);
 
     virtual void SAL_CALL removeFlushListener(
-        css::uno::Reference< css::util::XFlushListener > const &)
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::util::XFlushListener > const &);
 
     void checkValid();
 
@@ -167,155 +148,73 @@ public:
 private:
     virtual ~RegistryKey() {}
 
-    virtual rtl::OUString SAL_CALL getKeyName()
-        throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getKeyName();
 
-    virtual sal_Bool SAL_CALL isReadOnly()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isReadOnly();
 
-    virtual sal_Bool SAL_CALL isValid() throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isValid();
 
     virtual css::registry::RegistryKeyType SAL_CALL getKeyType(
-        rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const &);
 
-    virtual css::registry::RegistryValueType SAL_CALL getValueType()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual css::registry::RegistryValueType SAL_CALL getValueType();
 
-    virtual sal_Int32 SAL_CALL getLongValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getLongValue();
 
-    virtual void SAL_CALL setLongValue(sal_Int32)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL setLongValue(sal_Int32);
 
-    virtual css::uno::Sequence< sal_Int32 > SAL_CALL getLongListValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< sal_Int32 > SAL_CALL getLongListValue();
 
     virtual void SAL_CALL setLongListValue(
-        css::uno::Sequence< sal_Int32 > const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        css::uno::Sequence< sal_Int32 > const &);
 
-    virtual rtl::OUString SAL_CALL getAsciiValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getAsciiValue();
 
-    virtual void SAL_CALL setAsciiValue(rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL setAsciiValue(rtl::OUString const &);
 
-    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getAsciiListValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getAsciiListValue();
 
     virtual void SAL_CALL setAsciiListValue(
-        css::uno::Sequence< rtl::OUString > const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        css::uno::Sequence< rtl::OUString > const &);
 
-    virtual rtl::OUString SAL_CALL getStringValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getStringValue();
 
-    virtual void SAL_CALL setStringValue(rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL setStringValue(rtl::OUString const &);
 
-    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getStringListValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getStringListValue();
 
     virtual void SAL_CALL setStringListValue(
-        css::uno::Sequence< rtl::OUString > const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        css::uno::Sequence< rtl::OUString > const &);
 
-    virtual css::uno::Sequence< sal_Int8 > SAL_CALL getBinaryValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< sal_Int8 > SAL_CALL getBinaryValue();
 
-    virtual void SAL_CALL setBinaryValue(css::uno::Sequence< sal_Int8 > const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL setBinaryValue(css::uno::Sequence< sal_Int8 > const &);
 
     virtual css::uno::Reference< css::registry::XRegistryKey > SAL_CALL openKey(
-        rtl::OUString const & aKeyName)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & aKeyName);
 
     virtual css::uno::Reference< css::registry::XRegistryKey > SAL_CALL
-    createKey(rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    createKey(rtl::OUString const &);
 
-    virtual void SAL_CALL closeKey()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL closeKey();
 
-    virtual void SAL_CALL deleteKey(rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL deleteKey(rtl::OUString const &);
 
     virtual
     css::uno::Sequence< css::uno::Reference< css::registry::XRegistryKey > >
-    SAL_CALL openKeys()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    SAL_CALL openKeys();
 
-    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getKeyNames()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getKeyNames();
 
     virtual sal_Bool SAL_CALL createLink(
-        rtl::OUString const &, rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const &, rtl::OUString const &);
 
-    virtual void SAL_CALL deleteLink(rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual void SAL_CALL deleteLink(rtl::OUString const &);
 
-    virtual rtl::OUString SAL_CALL getLinkTarget(rtl::OUString const &)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getLinkTarget(rtl::OUString const &);
 
     virtual rtl::OUString SAL_CALL getResolvedName(
-        rtl::OUString const & aKeyName)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & aKeyName);
 
     Service & service_;
     css::uno::Any value_;
@@ -349,14 +248,13 @@ Service::Service(
     }
 }
 
-rtl::OUString Service::getURL() throw (css::uno::RuntimeException) {
+rtl::OUString Service::getURL() {
     osl::MutexGuard g(mutex_);
     checkValid_RuntimeException();
     return url_;
 }
 
 void Service::open(rtl::OUString const & rURL, sal_Bool bReadOnly, sal_Bool)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     //TODO: bCreate
     osl::MutexGuard g(mutex_);
@@ -392,13 +290,12 @@ void Service::open(rtl::OUString const & rURL, sal_Bool bReadOnly, sal_Bool)
     readOnly_ = bReadOnly;
 }
 
-sal_Bool Service::isValid() throw (css::uno::RuntimeException) {
+sal_Bool Service::isValid() {
     osl::MutexGuard g(mutex_);
     return access_.is();
 }
 
 void Service::close()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(mutex_);
     checkValid();
@@ -406,7 +303,6 @@ void Service::close()
 }
 
 void Service::destroy()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -417,23 +313,19 @@ void Service::destroy()
 }
 
 css::uno::Reference< css::registry::XRegistryKey > Service::getRootKey()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(mutex_);
     checkValid();
     return new RegistryKey(*this, css::uno::makeAny(access_));
 }
 
-sal_Bool Service::isReadOnly() throw (css::uno::RuntimeException) {
+sal_Bool Service::isReadOnly() {
     osl::MutexGuard g(mutex_);
     checkValid_RuntimeException();
     return readOnly_;
 }
 
 void Service::mergeKey(rtl::OUString const &, rtl::OUString const &)
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::MergeConflictException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -443,7 +335,7 @@ void Service::mergeKey(rtl::OUString const &, rtl::OUString const &)
         static_cast< cppu::OWeakObject * >(this));
 }
 
-void Service::flush() throw (css::uno::RuntimeException)
+void Service::flush()
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -455,7 +347,6 @@ void Service::flush() throw (css::uno::RuntimeException)
 
 void Service::addFlushListener(
     css::uno::Reference< css::util::XFlushListener > const &)
-    throw (css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -467,7 +358,6 @@ void Service::addFlushListener(
 
 void Service::removeFlushListener(
     css::uno::Reference< css::util::XFlushListener > const &)
-    throw (css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -503,7 +393,7 @@ void Service::doClose() {
     access_.clear();
 }
 
-rtl::OUString RegistryKey::getKeyName() throw (css::uno::RuntimeException) {
+rtl::OUString RegistryKey::getKeyName() {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();
     css::uno::Reference< css::container::XNamed > named;
@@ -519,19 +409,17 @@ rtl::OUString RegistryKey::getKeyName() throw (css::uno::RuntimeException) {
 }
 
 sal_Bool RegistryKey::isReadOnly()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();
     return service_.readOnly_; //TODO: read-only sub-nodes in update access?
 }
 
-sal_Bool RegistryKey::isValid() throw (css::uno::RuntimeException) {
+sal_Bool RegistryKey::isValid() {
     return service_.isValid();
 }
 
 css::registry::RegistryKeyType RegistryKey::getKeyType(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -539,7 +427,6 @@ css::registry::RegistryKeyType RegistryKey::getKeyType(rtl::OUString const &)
 }
 
 css::registry::RegistryValueType RegistryKey::getValueType()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -567,9 +454,6 @@ css::registry::RegistryValueType RegistryKey::getValueType()
 }
 
 sal_Int32 RegistryKey::getLongValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -585,7 +469,6 @@ sal_Int32 RegistryKey::getLongValue()
 }
 
 void RegistryKey::setLongValue(sal_Int32)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -596,9 +479,6 @@ void RegistryKey::setLongValue(sal_Int32)
 }
 
 css::uno::Sequence< sal_Int32 > RegistryKey::getLongListValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -614,7 +494,6 @@ css::uno::Sequence< sal_Int32 > RegistryKey::getLongListValue()
 }
 
 void RegistryKey::setLongListValue(css::uno::Sequence< sal_Int32 > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -625,9 +504,6 @@ void RegistryKey::setLongListValue(css::uno::Sequence< sal_Int32 > const &)
 }
 
 rtl::OUString RegistryKey::getAsciiValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -643,7 +519,6 @@ rtl::OUString RegistryKey::getAsciiValue()
 }
 
 void RegistryKey::setAsciiValue(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -654,9 +529,6 @@ void RegistryKey::setAsciiValue(rtl::OUString const &)
 }
 
 css::uno::Sequence< rtl::OUString > RegistryKey::getAsciiListValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -672,7 +544,6 @@ css::uno::Sequence< rtl::OUString > RegistryKey::getAsciiListValue()
 }
 
 void RegistryKey::setAsciiListValue(css::uno::Sequence< rtl::OUString > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -683,9 +554,6 @@ void RegistryKey::setAsciiListValue(css::uno::Sequence< rtl::OUString > const &)
 }
 
 rtl::OUString RegistryKey::getStringValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -701,7 +569,6 @@ rtl::OUString RegistryKey::getStringValue()
 }
 
 void RegistryKey::setStringValue(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -712,9 +579,6 @@ void RegistryKey::setStringValue(rtl::OUString const &)
 }
 
 css::uno::Sequence< rtl::OUString > RegistryKey::getStringListValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -731,7 +595,6 @@ css::uno::Sequence< rtl::OUString > RegistryKey::getStringListValue()
 
 void RegistryKey::setStringListValue(
     css::uno::Sequence< rtl::OUString > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -742,9 +605,6 @@ void RegistryKey::setStringListValue(
 }
 
 css::uno::Sequence< sal_Int8 > RegistryKey::getBinaryValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid();
@@ -760,7 +620,6 @@ css::uno::Sequence< sal_Int8 > RegistryKey::getBinaryValue()
 }
 
 void RegistryKey::setBinaryValue(css::uno::Sequence< sal_Int8 > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -772,7 +631,6 @@ void RegistryKey::setBinaryValue(css::uno::Sequence< sal_Int8 > const &)
 
 css::uno::Reference< css::registry::XRegistryKey > RegistryKey::openKey(
     rtl::OUString const & aKeyName)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();
@@ -788,8 +646,6 @@ css::uno::Reference< css::registry::XRegistryKey > RegistryKey::openKey(
 
 css::uno::Reference< css::registry::XRegistryKey > RegistryKey::createKey(
     rtl::OUString const &)
-    throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -800,15 +656,12 @@ css::uno::Reference< css::registry::XRegistryKey > RegistryKey::createKey(
 }
 
 void RegistryKey::closeKey()
-    throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();
 }
 
 void RegistryKey::deleteKey(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -820,7 +673,6 @@ void RegistryKey::deleteKey(rtl::OUString const &)
 
 css::uno::Sequence< css::uno::Reference< css::registry::XRegistryKey > >
 RegistryKey::openKeys()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -831,7 +683,6 @@ RegistryKey::openKeys()
 }
 
 css::uno::Sequence< rtl::OUString > RegistryKey::getKeyNames()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
         rtl::OUString(
@@ -842,7 +693,6 @@ css::uno::Sequence< rtl::OUString > RegistryKey::getKeyNames()
 }
 
 sal_Bool RegistryKey::createLink(rtl::OUString const &, rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();
@@ -850,14 +700,12 @@ sal_Bool RegistryKey::createLink(rtl::OUString const &, rtl::OUString const &)
 }
 
 void RegistryKey::deleteLink(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();
 }
 
 rtl::OUString RegistryKey::getLinkTarget(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();
@@ -865,7 +713,6 @@ rtl::OUString RegistryKey::getLinkTarget(rtl::OUString const &)
 }
 
 rtl::OUString RegistryKey::getResolvedName(rtl::OUString const & aKeyName)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(service_.mutex_);
     service_.checkValid_RuntimeException();

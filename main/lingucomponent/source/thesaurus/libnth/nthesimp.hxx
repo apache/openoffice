@@ -111,27 +111,27 @@ public:
 	virtual ~Thesaurus();
 
 	// XSupportedLocales (for XThesaurus)
-    virtual Sequence< Locale > SAL_CALL getLocales() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasLocale( const Locale& rLocale ) throw(RuntimeException);
+    virtual Sequence< Locale > SAL_CALL getLocales();
+    virtual sal_Bool SAL_CALL hasLocale( const Locale& rLocale );
 
     // XThesaurus
-    virtual Sequence< Reference < ::com::sun::star::linguistic2::XMeaning > > SAL_CALL queryMeanings( const OUString& rTerm, const Locale& rLocale, const PropertyValues& rProperties ) throw(IllegalArgumentException, RuntimeException);
+    virtual Sequence< Reference < ::com::sun::star::linguistic2::XMeaning > > SAL_CALL queryMeanings( const OUString& rTerm, const Locale& rLocale, const PropertyValues& rProperties );
 
 	// XServiceDisplayName
-    virtual OUString SAL_CALL getServiceDisplayName( const Locale& rLocale ) throw(RuntimeException);
+    virtual OUString SAL_CALL getServiceDisplayName( const Locale& rLocale );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& rArguments ) throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& rArguments );
 
 	// XComponent
-    virtual void SAL_CALL dispose() throw(RuntimeException);
-    virtual void SAL_CALL addEventListener( const Reference< XEventListener >& rxListener ) throw(RuntimeException);
-    virtual void SAL_CALL removeEventListener( const Reference< XEventListener >& rxListener ) throw(RuntimeException);
+    virtual void SAL_CALL dispose();
+    virtual void SAL_CALL addEventListener( const Reference< XEventListener >& rxListener );
+    virtual void SAL_CALL removeEventListener( const Reference< XEventListener >& rxListener );
 
 	// XServiceInfo
-    virtual OUString SAL_CALL getImplementationName() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& rServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString& rServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 
 	static inline OUString

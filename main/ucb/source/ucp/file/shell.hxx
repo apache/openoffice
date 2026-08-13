@@ -191,17 +191,11 @@ namespace fileaccess {
         void SAL_CALL associate( const rtl::OUString& UnqPath,
                                  const rtl::OUString& PropertyName,
                                  const com::sun::star::uno::Any& DefaultValue,
-                                 const sal_Int16 Attributes )
-            throw( com::sun::star::beans::PropertyExistException,
-                   com::sun::star::beans::IllegalTypeException,
-                   com::sun::star::uno::RuntimeException);
+                                 const sal_Int16 Attributes );
 
 
         void SAL_CALL deassociate( const rtl::OUString& UnqPath,
-                                   const rtl::OUString& PropertyName )
-            throw( com::sun::star::beans::UnknownPropertyException,
-                   com::sun::star::beans::NotRemoveableException,
-                   com::sun::star::uno::RuntimeException);
+                                   const rtl::OUString& PropertyName );
 
 
 

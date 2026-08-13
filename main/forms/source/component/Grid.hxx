@@ -111,64 +111,63 @@ public:
 
     // UNO Anbindung
 	DECLARE_UNO3_AGG_DEFAULTS(OGridControlModel, OControlModel);
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType );
 
     // XChild
-	virtual void SAL_CALL setParent(const InterfaceRef& Parent) throw(::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setParent(const InterfaceRef& Parent);
 
     // XServiceInfo
 	IMPLEMENTATION_NAME(OGridControlModel);
-	virtual StringSequence SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual StringSequence SAL_CALL getSupportedServiceNames();
 
     // XTypeProvider
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
 
     // OComponentHelper
 	virtual void SAL_CALL disposing();
 
     // XEventListener
-	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource);
 
     // XReset
-	virtual void SAL_CALL reset() throw ( ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL addResetListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener>& _rxListener) throw ( ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeResetListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener>& _rxListener) throw ( ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL reset();
+	virtual void SAL_CALL addResetListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener>& _rxListener);
+	virtual void SAL_CALL removeResetListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener>& _rxListener);
 
     // XSelectionSupplier
-	virtual sal_Bool SAL_CALL select(const ::com::sun::star::uno::Any& aElement) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL getSelection() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL addSelectionChangeListener(const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener) throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeSelectionChangeListener(const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener) throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL select(const ::com::sun::star::uno::Any& aElement);
+	virtual ::com::sun::star::uno::Any SAL_CALL getSelection();
+	virtual void SAL_CALL addSelectionChangeListener(const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener);
+	virtual void SAL_CALL removeSelectionChangeListener(const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener);
 
     // XGridColumnFactory
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet> SAL_CALL createColumn(const ::rtl::OUString& ColumnType) throw ( :: com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-	virtual StringSequence SAL_CALL getColumnTypes() throw ( ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet> SAL_CALL createColumn(const ::rtl::OUString& ColumnType);
+	virtual StringSequence SAL_CALL getColumnTypes();
 
     // XPersistObject
-	virtual ::rtl::OUString SAL_CALL getServiceName() throw ( ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getServiceName();
+	virtual void SAL_CALL write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream);
+	virtual void SAL_CALL read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream);
 
     // XPropertySet
 	virtual void SAL_CALL getFastPropertyValue(::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
 	virtual sal_Bool SAL_CALL convertFastPropertyValue(::com::sun::star::uno::Any& rConvertedValue, ::com::sun::star::uno::Any& rOldValue,
-										  sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-										throw(::com::sun::star::lang::IllegalArgumentException);
-	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue) throw ( ::com::sun::star::uno::Exception);
+										  sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
+	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue);
 
     // XPropertyState
 	virtual ::com::sun::star::uno::Any getPropertyDefaultByHandle( sal_Int32 nHandle ) const;
 
     // XSQLErrorListener
-	virtual void SAL_CALL errorOccured( const ::com::sun::star::sdb::SQLErrorEvent& _rEvent ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL errorOccured( const ::com::sun::star::sdb::SQLErrorEvent& _rEvent );
 
     // XRowSetSupplier
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet > SAL_CALL getRowSet(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setRowSet( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet >& xDataSource ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet > SAL_CALL getRowSet(  );
+    virtual void SAL_CALL setRowSet( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet >& xDataSource );
 
     // XRowSetChangeBroadcaster
-    virtual void SAL_CALL addRowSetChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetChangeListener >& i_Listener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeRowSetChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetChangeListener >& i_Listener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addRowSetChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetChangeListener >& i_Listener );
+    virtual void SAL_CALL removeRowSetChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetChangeListener >& i_Listener );
 
     // OControlModel's property handling
 	virtual void describeFixedProperties(

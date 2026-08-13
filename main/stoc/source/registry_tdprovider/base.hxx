@@ -187,8 +187,8 @@ public:
 	virtual ~TypeDescriptionImpl();
 
 	// XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 };
 
 //==================================================================================================
@@ -227,26 +227,25 @@ public:
 	virtual ~InterfaceTypeDescriptionImpl();
 
 	// XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 
 	// XInterfaceTypeDescription2
-    virtual Uik SAL_CALL getUik() throw(::com::sun::star::uno::RuntimeException);
+    virtual Uik SAL_CALL getUik();
     virtual com::sun::star::uno::Reference< XTypeDescription > SAL_CALL
-    getBaseType() throw(::com::sun::star::uno::RuntimeException);
+    getBaseType();
     virtual
     Sequence<
         com::sun::star::uno::Reference< XInterfaceMemberTypeDescription > >
-    SAL_CALL getMembers() throw(::com::sun::star::uno::RuntimeException);
+    SAL_CALL getMembers();
 
     virtual Sequence< com::sun::star::uno::Reference< XTypeDescription > >
-    SAL_CALL getBaseTypes() throw (RuntimeException);
+    SAL_CALL getBaseTypes();
 
     virtual Sequence< com::sun::star::uno::Reference< XTypeDescription > >
-    SAL_CALL getOptionalBaseTypes() throw (RuntimeException);
+    SAL_CALL getOptionalBaseTypes();
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return _published; }
 };
 
@@ -289,18 +288,17 @@ public:
 	virtual ~CompoundTypeDescriptionImpl();
 
 	// XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 
 	// XCompoundTypeDescription
     virtual com::sun::star::uno::Reference< XTypeDescription > SAL_CALL
-    getBaseType() throw(::com::sun::star::uno::RuntimeException);
+    getBaseType();
     virtual Sequence< com::sun::star::uno::Reference< XTypeDescription > >
-    SAL_CALL getMemberTypes() throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getMemberNames() throw(::com::sun::star::uno::RuntimeException);
+    SAL_CALL getMemberTypes();
+    virtual Sequence< OUString > SAL_CALL getMemberNames();
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return _published; }
 };
 
@@ -338,16 +336,15 @@ public:
 	virtual ~EnumTypeDescriptionImpl();
 
 	// XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 
 	// XEnumTypeDescription
-    virtual sal_Int32 SAL_CALL getDefaultEnumValue() throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getEnumNames() throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< sal_Int32 > SAL_CALL getEnumValues() throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getDefaultEnumValue();
+    virtual Sequence< OUString > SAL_CALL getEnumNames();
+    virtual Sequence< sal_Int32 > SAL_CALL getEnumValues();
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return _published; }
 };
 
@@ -378,15 +375,14 @@ public:
 	virtual ~TypedefTypeDescriptionImpl();
 
 	// XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 
 	// XIndirectTypeDescription
     virtual com::sun::star::uno::Reference< XTypeDescription > SAL_CALL
-    getReferencedType() throw(::com::sun::star::uno::RuntimeException);
+    getReferencedType();
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return _published; }
 };
 
@@ -433,57 +429,46 @@ public:
 
     // XTypeDescription
     virtual TypeClass SAL_CALL
-    getTypeClass()
-        throw(::com::sun::star::uno::RuntimeException);
+    getTypeClass();
     virtual OUString SAL_CALL
-    getName()
-        throw(::com::sun::star::uno::RuntimeException);
+    getName();
 
     // XServiceTypeDescription
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
             ::com::sun::star::reflection::XServiceTypeDescription > > SAL_CALL
-    getMandatoryServices()
-        throw (::com::sun::star::uno::RuntimeException);
+    getMandatoryServices();
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
             ::com::sun::star::reflection::XServiceTypeDescription > > SAL_CALL
-    getOptionalServices()
-        throw (::com::sun::star::uno::RuntimeException);
+    getOptionalServices();
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
             ::com::sun::star::reflection::XInterfaceTypeDescription > > SAL_CALL
-    getMandatoryInterfaces()
-        throw (::com::sun::star::uno::RuntimeException);
+    getMandatoryInterfaces();
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
             ::com::sun::star::reflection::XInterfaceTypeDescription > > SAL_CALL
-    getOptionalInterfaces()
-        throw (::com::sun::star::uno::RuntimeException);
+    getOptionalInterfaces();
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
             ::com::sun::star::reflection::XPropertyTypeDescription > > SAL_CALL
-    getProperties()
-        throw (::com::sun::star::uno::RuntimeException);
+    getProperties();
 
     // XServiceTypeDescription2
-    virtual sal_Bool SAL_CALL isSingleInterfaceBased()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isSingleInterfaceBased();
     virtual ::com::sun::star::uno::Reference< XTypeDescription > SAL_CALL
-    getInterface() throw (::com::sun::star::uno::RuntimeException);
+    getInterface();
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
             ::com::sun::star::reflection::XServiceConstructorDescription > >
-    SAL_CALL getConstructors()
-        throw (::com::sun::star::uno::RuntimeException);
+    SAL_CALL getConstructors();
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return _published; }
 
 private:
-    void getReferences()
-        throw (::com::sun::star::uno::RuntimeException);
+    void getReferences();
 };
 
 //==================================================================================================
@@ -507,18 +492,15 @@ public:
 
     // XTypeDescription
     virtual TypeClass SAL_CALL
-    getTypeClass()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getTypeClass();
     virtual OUString SAL_CALL
-    getName()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getName();
 
     // XModuleTypeDescription
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
             ::com::sun::star::reflection::XTypeDescription > > SAL_CALL
-    getMembers()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getMembers();
 };
 
 //==================================================================================================
@@ -538,16 +520,13 @@ public:
 
     // XTypeDescription
     virtual TypeClass SAL_CALL
-    getTypeClass()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getTypeClass();
     virtual OUString SAL_CALL
-    getName()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getName();
 
     // XConstantTypeDescription
     virtual ::com::sun::star::uno::Any SAL_CALL
-    getConstantValue()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getConstantValue();
 };
 
 //==================================================================================================
@@ -573,19 +552,16 @@ public:
 
     // XTypeDescription
     virtual TypeClass SAL_CALL
-    getTypeClass()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getTypeClass();
     virtual OUString SAL_CALL
-    getName()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getName();
 
     // XConstantsTypeDescription
     virtual
     Sequence< com::sun::star::uno::Reference< XConstantTypeDescription > >
-    SAL_CALL getConstants() throw ( RuntimeException );
+    SAL_CALL getConstants();
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return _published; }
 };
 
@@ -617,24 +593,20 @@ public:
 
     // XTypeDescription
     virtual TypeClass SAL_CALL
-    getTypeClass()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getTypeClass();
     virtual OUString SAL_CALL
-    getName()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getName();
 
     // XSingletonTypeDescription
     virtual com::sun::star::uno::Reference< XServiceTypeDescription > SAL_CALL
-    getService() throw ( ::com::sun::star::uno::RuntimeException );
+    getService();
 
     // XSingletonTypeDescription2
-    virtual sal_Bool SAL_CALL isInterfaceBased()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isInterfaceBased();
     virtual com::sun::star::uno::Reference< XTypeDescription > SAL_CALL
-    getInterface() throw (::com::sun::star::uno::RuntimeException);
+    getInterface();
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return _published; }
 };
 

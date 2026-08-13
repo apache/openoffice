@@ -52,18 +52,18 @@ public:
 			throw uno::RuntimeException();
 	}
 
-	virtual void SAL_CALL commit(  ) throw (io::IOException, lang::WrappedTargetException, uno::RuntimeException);
-	virtual void SAL_CALL revert(  ) throw (io::IOException, lang::WrappedTargetException, uno::RuntimeException);
+	virtual void SAL_CALL commit(  );
+	virtual void SAL_CALL revert(  );
 };
 
 // ------------------------------------------------------------------------
-void SAL_CALL OTransactionHelper::commit(  ) throw (io::IOException, lang::WrappedTargetException, uno::RuntimeException)
+void SAL_CALL OTransactionHelper::commit(  )
 {
 	m_pFileStream->Commit_Impl();
 }
 
 // ------------------------------------------------------------------------
-void SAL_CALL OTransactionHelper::revert(  ) throw (io::IOException, lang::WrappedTargetException, uno::RuntimeException)
+void SAL_CALL OTransactionHelper::revert(  )
 {
 	m_pFileStream->Revert_Impl();
 }
@@ -344,7 +344,6 @@ void OTruncatedTransactedFileStream::Revert_Impl()
 // com::sun::star::io::XStream
 // ------------------------------------------------------------------------
 uno::Reference< io::XInputStream > SAL_CALL OTruncatedTransactedFileStream::getInputStream(  )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -356,7 +355,6 @@ uno::Reference< io::XInputStream > SAL_CALL OTruncatedTransactedFileStream::getI
 
 // ------------------------------------------------------------------------
 uno::Reference< io::XOutputStream > SAL_CALL OTruncatedTransactedFileStream::getOutputStream(  )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -370,7 +368,6 @@ uno::Reference< io::XOutputStream > SAL_CALL OTruncatedTransactedFileStream::get
 // com::sun::star::io::XInputStream
 // ------------------------------------------------------------------------
 ::sal_Int32 SAL_CALL OTruncatedTransactedFileStream::readBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nBytesToRead )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -398,7 +395,6 @@ uno::Reference< io::XOutputStream > SAL_CALL OTruncatedTransactedFileStream::get
 
 // ------------------------------------------------------------------------
 ::sal_Int32 SAL_CALL OTruncatedTransactedFileStream::readSomeBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nMaxBytesToRead )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -425,7 +421,6 @@ uno::Reference< io::XOutputStream > SAL_CALL OTruncatedTransactedFileStream::get
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::skipBytes( ::sal_Int32 nBytesToSkip )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -453,7 +448,6 @@ void SAL_CALL OTruncatedTransactedFileStream::skipBytes( ::sal_Int32 nBytesToSki
 
 // ------------------------------------------------------------------------
 ::sal_Int32 SAL_CALL OTruncatedTransactedFileStream::available(  )
-	throw (io::NotConnectedException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -481,7 +475,6 @@ void SAL_CALL OTruncatedTransactedFileStream::skipBytes( ::sal_Int32 nBytesToSki
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::closeInput()
-	throw (io::NotConnectedException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -498,7 +491,6 @@ void SAL_CALL OTruncatedTransactedFileStream::closeInput()
 // com::sun::star::io::XOutputStream
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::writeBytes( const uno::Sequence< ::sal_Int8 >& aData )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -526,7 +518,6 @@ void SAL_CALL OTruncatedTransactedFileStream::writeBytes( const uno::Sequence< :
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::flush(  )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -560,7 +551,6 @@ void SAL_CALL OTruncatedTransactedFileStream::flush(  )
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::closeOutput(  )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -577,7 +567,6 @@ void SAL_CALL OTruncatedTransactedFileStream::closeOutput(  )
 // com::sun::star::io::XTruncate
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::truncate(  )
-	throw (io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -607,7 +596,6 @@ void SAL_CALL OTruncatedTransactedFileStream::truncate(  )
 // com::sun::star::io::XSeekable
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::seek( ::sal_Int64 location )
-	throw (lang::IllegalArgumentException, io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -635,7 +623,6 @@ void SAL_CALL OTruncatedTransactedFileStream::seek( ::sal_Int64 location )
 
 // ------------------------------------------------------------------------
 ::sal_Int64 SAL_CALL OTruncatedTransactedFileStream::getPosition(  )
-	throw (io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -663,7 +650,6 @@ void SAL_CALL OTruncatedTransactedFileStream::seek( ::sal_Int64 location )
 
 // ------------------------------------------------------------------------
 ::sal_Int64 SAL_CALL OTruncatedTransactedFileStream::getLength(  )
-	throw (io::IOException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -691,7 +677,6 @@ void SAL_CALL OTruncatedTransactedFileStream::seek( ::sal_Int64 location )
 // com::sun::star::beans::XPropertySetInfo
 // ------------------------------------------------------------------------
 uno::Sequence< beans::Property > SAL_CALL OTruncatedTransactedFileStream::getProperties()
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -706,7 +691,6 @@ uno::Sequence< beans::Property > SAL_CALL OTruncatedTransactedFileStream::getPro
 
 // ------------------------------------------------------------------------
 beans::Property SAL_CALL OTruncatedTransactedFileStream::getPropertyByName( const ::rtl::OUString& aName )
-	throw (beans::UnknownPropertyException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -726,7 +710,6 @@ beans::Property SAL_CALL OTruncatedTransactedFileStream::getPropertyByName( cons
 
 // ------------------------------------------------------------------------
 ::sal_Bool SAL_CALL OTruncatedTransactedFileStream::hasPropertyByName( const ::rtl::OUString& Name )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -739,7 +722,6 @@ beans::Property SAL_CALL OTruncatedTransactedFileStream::getPropertyByName( cons
 // com::sun::star::beans::XPropertySet
 // ------------------------------------------------------------------------
 uno::Reference< beans::XPropertySetInfo > SAL_CALL OTruncatedTransactedFileStream::getPropertySetInfo()
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -749,7 +731,6 @@ uno::Reference< beans::XPropertySetInfo > SAL_CALL OTruncatedTransactedFileStrea
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::setPropertyValue( const ::rtl::OUString& aPropertyName, const uno::Any& )
-	throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -763,7 +744,6 @@ void SAL_CALL OTruncatedTransactedFileStream::setPropertyValue( const ::rtl::OUS
 
 // ------------------------------------------------------------------------
 uno::Any SAL_CALL OTruncatedTransactedFileStream::getPropertyValue( const ::rtl::OUString& PropertyName )
-	throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -786,7 +766,6 @@ uno::Any SAL_CALL OTruncatedTransactedFileStream::getPropertyValue( const ::rtl:
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::addPropertyChangeListener( const ::rtl::OUString&, const uno::Reference< beans::XPropertyChangeListener >& )
-	throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	// not implemented
 }
@@ -794,7 +773,6 @@ void SAL_CALL OTruncatedTransactedFileStream::addPropertyChangeListener( const :
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::removePropertyChangeListener( const ::rtl::OUString&, const uno::Reference< beans::XPropertyChangeListener >& )
-	throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	// not implemented
 }
@@ -802,7 +780,6 @@ void SAL_CALL OTruncatedTransactedFileStream::removePropertyChangeListener( cons
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::addVetoableChangeListener( const ::rtl::OUString&, const uno::Reference< beans::XVetoableChangeListener >& )
-	throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	// not implemented
 }
@@ -810,7 +787,6 @@ void SAL_CALL OTruncatedTransactedFileStream::addVetoableChangeListener( const :
 
 // ------------------------------------------------------------------------
 void SAL_CALL OTruncatedTransactedFileStream::removeVetoableChangeListener( const ::rtl::OUString&, const uno::Reference< beans::XVetoableChangeListener >& )
-	throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	// not implemented
 }

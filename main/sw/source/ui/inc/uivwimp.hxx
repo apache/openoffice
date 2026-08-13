@@ -63,7 +63,7 @@ public:
 
 	// XEventListener
 	virtual void SAL_CALL disposing(
-					const ::com::sun::star::lang::EventObject& rEventObject ) throw(::com::sun::star::uno::RuntimeException);
+					const ::com::sun::star::lang::EventObject& rEventObject );
 
 	void ViewDestroyed() { pView = 0; }
 };
@@ -76,12 +76,10 @@ class SwClipboardChangeListener : public ::cppu::WeakImplHelper1<
 	SwView*	pView;
 
 	// XEventListener
-	virtual void SAL_CALL disposing( const STAR_NMSPC::lang::EventObject& rEventObject )
-		throw ( com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL disposing( const STAR_NMSPC::lang::EventObject& rEventObject );
 
 	// XClipboardListener
-	virtual void SAL_CALL changedContents( const CLIP_NMSPC::ClipboardEvent& rEventObject )
-		throw ( com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL changedContents( const CLIP_NMSPC::ClipboardEvent& rEventObject );
 
 public:
 	SwClipboardChangeListener( SwView& rView ) : pView( &rView ) {}

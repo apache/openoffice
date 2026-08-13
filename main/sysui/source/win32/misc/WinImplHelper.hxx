@@ -47,24 +47,19 @@ sal_Bool SAL_CALL IsWin2000( );
 
 // set actions
 void SAL_CALL ListboxAddItem(
-    HWND hwnd, const ::com::sun::star::uno::Any& aItem, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( ::com::sun::star::lang::IllegalArgumentException );
+    HWND hwnd, const ::com::sun::star::uno::Any& aItem, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos );
 
 void SAL_CALL ListboxAddItems(
-    HWND hwnd, const ::com::sun::star::uno::Any& aItemList, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( ::com::sun::star::lang:: IllegalArgumentException );
+    HWND hwnd, const ::com::sun::star::uno::Any& aItemList, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos );
 
 void SAL_CALL ListboxDeleteItem(
-    HWND hwnd, const ::com::sun::star::uno::Any& aPosition, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( ::com::sun::star::lang::IllegalArgumentException );
+    HWND hwnd, const ::com::sun::star::uno::Any& aPosition, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos );
 
 void SAL_CALL ListboxDeleteItems(
-    HWND hwnd, const ::com::sun::star::uno::Any& aUnused, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( ::com::sun::star::lang::IllegalArgumentException );
+    HWND hwnd, const ::com::sun::star::uno::Any& aUnused, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos );
 
 void SAL_CALL ListboxSetSelectedItem(
-    HWND hwnd, const ::com::sun::star::uno::Any& aPosition, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( ::com::sun::star::lang::IllegalArgumentException );
+    HWND hwnd, const ::com::sun::star::uno::Any& aPosition, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos );
 
 // get actions
 ::com::sun::star::uno::Any SAL_CALL ListboxGetItems( HWND hwnd );
@@ -74,8 +69,7 @@ void SAL_CALL ListboxSetSelectedItem(
 ::com::sun::star::uno::Any SAL_CALL CheckboxGetState( HWND hwnd );
 
 void SAL_CALL CheckboxSetState(
-    HWND hwnd, const ::com::sun::star::uno::Any& aState, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos )
-    throw( ::com::sun::star::lang::IllegalArgumentException );
+    HWND hwnd, const ::com::sun::star::uno::Any& aState, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rXInterface, sal_Int16 aArgPos );
 
 // calculates the length of '\0' separated and '\0\0'
 // ending strings used in some Win32 functions

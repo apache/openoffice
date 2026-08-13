@@ -198,14 +198,14 @@ namespace migration
     // XServiceInfo
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString AutocorrectionMigration::getImplementationName() throw (RuntimeException)
+    ::rtl::OUString AutocorrectionMigration::getImplementationName()
     {
         return AutocorrectionMigration_getImplementationName();
     }
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool AutocorrectionMigration::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+    sal_Bool AutocorrectionMigration::supportsService( const ::rtl::OUString& rServiceName )
     {
 	    Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	    const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -218,7 +218,7 @@ namespace migration
 
     // -----------------------------------------------------------------------------
 
-    Sequence< ::rtl::OUString > AutocorrectionMigration::getSupportedServiceNames() throw (RuntimeException)
+    Sequence< ::rtl::OUString > AutocorrectionMigration::getSupportedServiceNames()
     {
         return AutocorrectionMigration_getSupportedServiceNames();
     }
@@ -227,7 +227,7 @@ namespace migration
     // XInitialization
     // -----------------------------------------------------------------------------
 
-    void AutocorrectionMigration::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+    void AutocorrectionMigration::initialize( const Sequence< Any >& aArguments )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -254,7 +254,6 @@ namespace migration
     // -----------------------------------------------------------------------------
 
     Any AutocorrectionMigration::execute( const Sequence< beans::NamedValue >& )
-        throw (lang::IllegalArgumentException, Exception, RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 

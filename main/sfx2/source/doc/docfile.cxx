@@ -226,8 +226,7 @@ class SfxMediumHandler_Impl : public ::cppu::WeakImplHelper1< com::sun::star::ta
     com::sun::star::uno::Reference< com::sun::star::task::XInteractionHandler > m_xInter;
 
 public:
-    virtual void SAL_CALL handle( const com::sun::star::uno::Reference< com::sun::star::task::XInteractionRequest >& xRequest )
-            throw( com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL handle( const com::sun::star::uno::Reference< com::sun::star::task::XInteractionRequest >& xRequest );
 
     SfxMediumHandler_Impl( com::sun::star::uno::Reference< com::sun::star::task::XInteractionHandler > xInteraction )
         : m_xInter( xInteraction )
@@ -243,7 +242,6 @@ SfxMediumHandler_Impl::~SfxMediumHandler_Impl()
 
 //----------------------------------------------------------------
 void SAL_CALL SfxMediumHandler_Impl::handle( const com::sun::star::uno::Reference< com::sun::star::task::XInteractionRequest >& xRequest )
-        throw( com::sun::star::uno::RuntimeException )
 {
 	if( !m_xInter.is() )
 		return;

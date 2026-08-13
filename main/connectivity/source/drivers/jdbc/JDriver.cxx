@@ -58,32 +58,32 @@ java_sql_Driver::~java_sql_Driver()
 
 // static ServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString java_sql_Driver::getImplementationName_Static(  ) throw(RuntimeException)
+rtl::OUString java_sql_Driver::getImplementationName_Static(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.comp.sdbc.JDBCDriver");
 		// this name is referenced in the configuration and in the jdbc.xml
 		// Please take care when changing it.
 }
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > java_sql_Driver::getSupportedServiceNames_Static(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > java_sql_Driver::getSupportedServiceNames_Static(  )
 {
 	Sequence< ::rtl::OUString > aSNS( 1 );
 	aSNS[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.Driver");
 	return aSNS;
 }
 //------------------------------------------------------------------
-::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL connectivity::java_sql_Driver_CreateInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory) throw( ::com::sun::star::uno::Exception )
+::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL connectivity::java_sql_Driver_CreateInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory)
 {
 	return *(new java_sql_Driver(_rxFactory));
 }
 // --------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL java_sql_Driver::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL java_sql_Driver::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 
 // --------------------------------------------------------------------------------
-sal_Bool SAL_CALL java_sql_Driver::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL java_sql_Driver::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -95,13 +95,13 @@ sal_Bool SAL_CALL java_sql_Driver::supportsService( const ::rtl::OUString& _rSer
 }
 
 // --------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL java_sql_Driver::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL java_sql_Driver::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }
 // -------------------------------------------------------------------------
 Reference< XConnection > SAL_CALL java_sql_Driver::connect( const ::rtl::OUString& url, const
-														 Sequence< PropertyValue >& info ) throw(SQLException, RuntimeException)
+														 Sequence< PropertyValue >& info )
 {
     m_aLogger.log( LogLevel::INFO, STR_LOG_DRIVER_CONNECTING_URL, url );
 
@@ -118,7 +118,7 @@ Reference< XConnection > SAL_CALL java_sql_Driver::connect( const ::rtl::OUStrin
 	return xOut;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL java_sql_Driver::acceptsURL( const ::rtl::OUString& url ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL java_sql_Driver::acceptsURL( const ::rtl::OUString& url )
 {
 	// don't ask the real driver for the url
 	// I feel responsible for all jdbc url's
@@ -129,7 +129,7 @@ sal_Bool SAL_CALL java_sql_Driver::acceptsURL( const ::rtl::OUString& url ) thro
 }
 // -------------------------------------------------------------------------
 Sequence< DriverPropertyInfo > SAL_CALL java_sql_Driver::getPropertyInfo( const ::rtl::OUString& url,
-																		 const Sequence< PropertyValue >& /*info*/ ) throw(SQLException, RuntimeException)
+																		 const Sequence< PropertyValue >& /*info*/ )
 {
 	if ( acceptsURL(url) )
 	{
@@ -238,12 +238,12 @@ Sequence< DriverPropertyInfo > SAL_CALL java_sql_Driver::getPropertyInfo( const 
 	return Sequence< DriverPropertyInfo >();
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL java_sql_Driver::getMajorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL java_sql_Driver::getMajorVersion(  )
 {
 	return 1;
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL java_sql_Driver::getMinorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL java_sql_Driver::getMinorVersion(  )
 {
 	return 0;
 }

@@ -172,7 +172,7 @@ const Reference< XAccessibleContext >& ToolbarMenuEntry::GetAccessible( bool bCr
 
 // --------------------------------------------------------------------
 
-sal_Int32 ToolbarMenuEntry::getAccessibleChildCount() throw (RuntimeException)
+sal_Int32 ToolbarMenuEntry::getAccessibleChildCount()
 {
 	if( mpControl )
 	{
@@ -187,7 +187,7 @@ sal_Int32 ToolbarMenuEntry::getAccessibleChildCount() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-Reference< XAccessible > ToolbarMenuEntry::getAccessibleChild( sal_Int32 index ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessible > ToolbarMenuEntry::getAccessibleChild( sal_Int32 index )
 {
 	const Reference< XAccessibleContext >& xContext = GetAccessible( true );
 	if( mpControl )
@@ -259,7 +259,7 @@ bool ToolbarMenu_Impl::hasAccessibleListeners()
 
 // --------------------------------------------------------------------
 
-sal_Int32 ToolbarMenu_Impl::getAccessibleChildCount() throw (RuntimeException)
+sal_Int32 ToolbarMenu_Impl::getAccessibleChildCount()
 {
 	sal_Int32 nCount = 0;
 	const int nEntryCount = maEntryVector.size();
@@ -284,7 +284,7 @@ sal_Int32 ToolbarMenu_Impl::getAccessibleChildCount() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-Reference< XAccessible > ToolbarMenu_Impl::getAccessibleChild( sal_Int32 index ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessible > ToolbarMenu_Impl::getAccessibleChild( sal_Int32 index )
 {
 	const int nEntryCount = maEntryVector.size();
 	for( int nEntry = 0; nEntry < nEntryCount; nEntry++ )
@@ -306,7 +306,7 @@ Reference< XAccessible > ToolbarMenu_Impl::getAccessibleChild( sal_Int32 index )
 
 // --------------------------------------------------------------------
 
-Reference< XAccessible > ToolbarMenu_Impl::getAccessibleChild( Control* pControl, sal_Int32 childIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessible > ToolbarMenu_Impl::getAccessibleChild( Control* pControl, sal_Int32 childIndex )
 {
 	const int nEntryCount = maEntryVector.size();
 	for( int nEntry = 0; nEntry < nEntryCount; nEntry++ )
@@ -323,7 +323,7 @@ Reference< XAccessible > ToolbarMenu_Impl::getAccessibleChild( Control* pControl
 
 // --------------------------------------------------------------------
 
-void ToolbarMenu_Impl::selectAccessibleChild( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+void ToolbarMenu_Impl::selectAccessibleChild( sal_Int32 nChildIndex )
 {
 	const int nEntryCount = maEntryVector.size();
 	for( int nEntry = 0; nEntry < nEntryCount; nEntry++ )
@@ -354,7 +354,7 @@ void ToolbarMenu_Impl::selectAccessibleChild( sal_Int32 nChildIndex ) throw (Ind
 
 // --------------------------------------------------------------------
 
-sal_Bool ToolbarMenu_Impl::isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool ToolbarMenu_Impl::isAccessibleChildSelected( sal_Int32 nChildIndex )
 {
 	const int nEntryCount = maEntryVector.size();
 	for( int nEntry = 0; nEntry < nEntryCount; nEntry++ )
@@ -1695,7 +1695,7 @@ void ToolbarMenu::UpdateStatus( const rtl::OUString& rCommandURL )
 // --------------------------------------------------------------------
 
 // XStatusListener (subclasses must override this one to get the status updates
-void SAL_CALL ToolbarMenu::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& /*Event*/ ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL ToolbarMenu::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& /*Event*/ )
 {
 }
 
@@ -1708,8 +1708,8 @@ public:
 							   const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& xFrame,
 							   ToolbarMenu& rToolbarMenu );
 
-	virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL dispose();
+	virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
 	ToolbarMenu* mpMenu;
 };
@@ -1727,7 +1727,7 @@ ToolbarMenuStatusListener::ToolbarMenuStatusListener(
 
 // --------------------------------------------------------------------
 
-void SAL_CALL ToolbarMenuStatusListener::dispose() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ToolbarMenuStatusListener::dispose()
 {
 	mpMenu = 0;
 	svt::FrameStatusListener::dispose();
@@ -1735,7 +1735,7 @@ void SAL_CALL ToolbarMenuStatusListener::dispose() throw (::com::sun::star::uno:
 
 // --------------------------------------------------------------------
 
-void SAL_CALL ToolbarMenuStatusListener::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL ToolbarMenuStatusListener::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
 {
 	if( mpMenu )
 		mpMenu->statusChanged( Event );

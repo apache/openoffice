@@ -169,7 +169,7 @@ void ConfigurationAccess_ControllerFactory::removeServiceFromCommandModule(
 }
 
 // container.XContainerListener
-void SAL_CALL ConfigurationAccess_ControllerFactory::elementInserted( const ContainerEvent& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_ControllerFactory::elementInserted( const ContainerEvent& aEvent )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_ControllerFactory::elementInserted" );
     rtl::OUString   aCommand;
@@ -191,7 +191,7 @@ void SAL_CALL ConfigurationAccess_ControllerFactory::elementInserted( const Cont
     }
 }
 
-void SAL_CALL ConfigurationAccess_ControllerFactory::elementRemoved ( const ContainerEvent& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_ControllerFactory::elementRemoved ( const ContainerEvent& aEvent )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_ControllerFactory::elementRemoved" );
     rtl::OUString   aCommand;
@@ -211,14 +211,14 @@ void SAL_CALL ConfigurationAccess_ControllerFactory::elementRemoved ( const Cont
     }
 }
 
-void SAL_CALL ConfigurationAccess_ControllerFactory::elementReplaced( const ContainerEvent& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_ControllerFactory::elementReplaced( const ContainerEvent& aEvent )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_ControllerFactory::elementReplaced" );
     elementInserted(aEvent);
 }
 
 // lang.XEventListener
-void SAL_CALL ConfigurationAccess_ControllerFactory::disposing( const EventObject& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_ControllerFactory::disposing( const EventObject& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_ControllerFactory::disposing" );
     // SAFE

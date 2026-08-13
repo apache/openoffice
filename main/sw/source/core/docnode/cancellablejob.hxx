@@ -38,7 +38,7 @@ public:
     ~CancellableJob() {}
 
     // ::com::sun::star::util::XCancellable:
-    virtual void SAL_CALL cancel() throw (com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL cancel();
 
 private:
     CancellableJob( CancellableJob& ); // not defined

@@ -130,7 +130,6 @@ void WindowContentFactoryManager::RetrieveTypeNameFromResourceURL( const rtl::OU
 // XSingleComponentFactory
 uno::Reference< uno::XInterface > SAL_CALL WindowContentFactoryManager::createInstanceWithContext(
     const uno::Reference< uno::XComponentContext >& /*xContext*/ )
-throw (uno::Exception, uno::RuntimeException)
 {
 /*
     // Currently this method cannot be implemented for generic use. There is no way for external
@@ -163,7 +162,6 @@ throw (uno::Exception, uno::RuntimeException)
 
 uno::Reference< uno::XInterface > SAL_CALL WindowContentFactoryManager::createInstanceWithArgumentsAndContext(
     const uno::Sequence< uno::Any >& Arguments, const uno::Reference< uno::XComponentContext >& Context )
-throw (uno::Exception, uno::RuntimeException)
 {
     uno::Reference< uno::XInterface > xWindow;
     uno::Reference< frame::XFrame >   xFrame;

@@ -63,7 +63,6 @@ DNDEventDispatcher::~DNDEventDispatcher()
 //==================================================================================================
 
 void SAL_CALL DNDEventDispatcher::drop( const DropTargetDropEvent& dtde )
-	throw(RuntimeException)
 {
 	MutexGuard aImplGuard( m_aMutex );
 
@@ -120,7 +119,6 @@ void SAL_CALL DNDEventDispatcher::drop( const DropTargetDropEvent& dtde )
 //==================================================================================================
 
 void SAL_CALL DNDEventDispatcher::dragEnter( const DropTargetDragEnterEvent& dtdee )
-	throw(RuntimeException)
 {
 	MutexGuard aImplGuard( m_aMutex );
 	Point location( dtdee.LocationX, dtdee.LocationY );
@@ -165,7 +163,6 @@ void SAL_CALL DNDEventDispatcher::dragEnter( const DropTargetDragEnterEvent& dtd
 //==================================================================================================
 
 void SAL_CALL DNDEventDispatcher::dragExit( const DropTargetEvent& /*dte*/ )
-	throw(RuntimeException)
 {
 	MutexGuard aImplGuard( m_aMutex );
 
@@ -181,7 +178,6 @@ void SAL_CALL DNDEventDispatcher::dragExit( const DropTargetEvent& /*dte*/ )
 //==================================================================================================
 
 void SAL_CALL DNDEventDispatcher::dragOver( const DropTargetDragEvent& dtde )
-	throw(RuntimeException)
 {
 	MutexGuard aImplGuard( m_aMutex );
 
@@ -239,7 +235,6 @@ void SAL_CALL DNDEventDispatcher::dragOver( const DropTargetDragEvent& dtde )
 //==================================================================================================
 
 void SAL_CALL DNDEventDispatcher::dropActionChanged( const DropTargetDragEvent& dtde )
-	throw(RuntimeException)
 {
 	MutexGuard aImplGuard( m_aMutex );
 
@@ -298,7 +293,6 @@ void SAL_CALL DNDEventDispatcher::dropActionChanged( const DropTargetDragEvent& 
 //==================================================================================================
 
 void SAL_CALL DNDEventDispatcher::dragGestureRecognized( const DragGestureEvent& dge )
-    throw(RuntimeException)
 {	MutexGuard aImplGuard( m_aMutex );
 
 	Point origin( dge.DragOriginX, dge.DragOriginY );
@@ -330,7 +324,6 @@ void SAL_CALL DNDEventDispatcher::dragGestureRecognized( const DragGestureEvent&
 //==================================================================================================
 
 void SAL_CALL DNDEventDispatcher::disposing( const EventObject& )
-	throw(RuntimeException)
 {
 }
 
@@ -338,7 +331,7 @@ void SAL_CALL DNDEventDispatcher::disposing( const EventObject& )
 // DNDEventDispatcher::acceptDrag
 //==================================================================================================
 
-void SAL_CALL DNDEventDispatcher::acceptDrag( sal_Int8 /*dropAction*/ ) throw(RuntimeException)
+void SAL_CALL DNDEventDispatcher::acceptDrag( sal_Int8 /*dropAction*/ )
 {
 }
 
@@ -346,7 +339,7 @@ void SAL_CALL DNDEventDispatcher::acceptDrag( sal_Int8 /*dropAction*/ ) throw(Ru
 // DNDEventDispatcher::rejectDrag
 //==================================================================================================
 
-void SAL_CALL DNDEventDispatcher::rejectDrag() throw(RuntimeException)
+void SAL_CALL DNDEventDispatcher::rejectDrag()
 {
 }
 
@@ -358,7 +351,6 @@ sal_Int32 DNDEventDispatcher::fireDragEnterEvent( Window *pWindow,
 	const Reference< XDropTargetDragContext >& xContext, const sal_Int8 nDropAction,
 	const Point& rLocation, const sal_Int8 nSourceActions, const Sequence< DataFlavor >& aFlavorList
 )
-	throw(RuntimeException)
 {
 	sal_Int32 n = 0;
 
@@ -394,7 +386,6 @@ sal_Int32 DNDEventDispatcher::fireDragOverEvent( Window *pWindow,
 	const Reference< XDropTargetDragContext >& xContext, const sal_Int8 nDropAction,
 	const Point& rLocation, const sal_Int8 nSourceActions
 )
-	throw(RuntimeException)
 {
 	sal_Int32 n = 0;
 
@@ -423,7 +414,7 @@ sal_Int32 DNDEventDispatcher::fireDragOverEvent( Window *pWindow,
 // DNDEventDispatcher::fireDragExitEvent
 //==================================================================================================
 
-sal_Int32 DNDEventDispatcher::fireDragExitEvent( Window *pWindow ) throw(RuntimeException)
+sal_Int32 DNDEventDispatcher::fireDragExitEvent( Window *pWindow )
 {
 	sal_Int32 n = 0;
 
@@ -454,7 +445,6 @@ sal_Int32 DNDEventDispatcher::fireDropActionChangedEvent( Window *pWindow,
 	const Reference< XDropTargetDragContext >& xContext, const sal_Int8 nDropAction,
 	const Point& rLocation, const sal_Int8 nSourceActions
 )
-	throw(RuntimeException)
 {
 	sal_Int32 n = 0;
 
@@ -487,7 +477,6 @@ sal_Int32 DNDEventDispatcher::fireDropEvent( Window *pWindow,
 	const Reference< XDropTargetDropContext >& xContext, const sal_Int8 nDropAction, const Point& rLocation,
 	const sal_Int8 nSourceActions, const Reference< XTransferable >& xTransferable
 )
-	throw(RuntimeException)
 {
 	sal_Int32 n = 0;
 
@@ -532,7 +521,6 @@ sal_Int32 DNDEventDispatcher::fireDragGestureEvent( Window *pWindow,
     const Reference< XDragSource >& xSource, const Any event,
     const Point& rOrigin, const sal_Int8 nDragAction
 )
-    throw(::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 n = 0;
 

@@ -53,7 +53,6 @@ public:
     Service() {}
 
     virtual ::test::types::Data SAL_CALL getData()
-        throw (::css::uno::RuntimeException)
     {
         return ::test::types::Data(
             rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Hello")), 42);
@@ -70,7 +69,6 @@ namespace CppServer {
 
 ::css::uno::Reference< ::css::uno::XInterface > create(
     ::css::uno::Reference< ::css::uno::XComponentContext > const &)
-    SAL_THROW((::css::uno::Exception))
 {
     try {
         return static_cast< ::cppu::OWeakObject * >(new Service);

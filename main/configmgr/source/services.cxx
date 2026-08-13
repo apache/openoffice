@@ -45,7 +45,6 @@ namespace css = com::sun::star;
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL dummy(
     css::uno::Reference< css::uno::XComponentContext > const &)
-    SAL_THROW((css::uno::Exception))
 {
     OSL_ASSERT(false);
     return css::uno::Reference< css::uno::XInterface >();

@@ -58,8 +58,8 @@ namespace pcr
 		DefaultHelpProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& _rxContext );
 
         // XServiceInfo - static versions
-		static ::rtl::OUString getImplementationName_static(  ) throw(::com::sun::star::uno::RuntimeException);
-		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static(  ) throw(::com::sun::star::uno::RuntimeException);
+		static ::rtl::OUString getImplementationName_static(  );
+		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static(  );
 		static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 						Create(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >&);
 
@@ -67,11 +67,11 @@ namespace pcr
         ~DefaultHelpProvider();
 
         // XPropertyControlObserver
-        virtual void SAL_CALL focusGained( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL valueChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL focusGained( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control );
+        virtual void SAL_CALL valueChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control );
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
     protected:
         // Service constructors

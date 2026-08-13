@@ -80,19 +80,19 @@ public:
 	virtual ~InterfaceMethodImpl();
 
 	// XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 
 	// XInterfaceMemberTypeDescription
-    virtual OUString SAL_CALL getMemberName() throw(::com::sun::star::uno::RuntimeException)
+    virtual OUString SAL_CALL getMemberName()
     { return _desc.getName(); }
-    virtual sal_Int32 SAL_CALL getPosition() throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getPosition();
 
 	// XInterfaceMethodTypeDescription
-	virtual Reference< XTypeDescription > SAL_CALL getReturnType() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isOneway() throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< Reference< XMethodParameter > > SAL_CALL getParameters() throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< Reference< XTypeDescription > > SAL_CALL getExceptions() throw(::com::sun::star::uno::RuntimeException);
+	virtual Reference< XTypeDescription > SAL_CALL getReturnType();
+    virtual sal_Bool SAL_CALL isOneway();
+    virtual Sequence< Reference< XMethodParameter > > SAL_CALL getParameters();
+    virtual Sequence< Reference< XTypeDescription > > SAL_CALL getExceptions();
 };
 //__________________________________________________________________________________________________
 InterfaceMethodImpl::~InterfaceMethodImpl()
@@ -103,13 +103,11 @@ InterfaceMethodImpl::~InterfaceMethodImpl()
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass InterfaceMethodImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return TypeClass_INTERFACE_METHOD;
 }
 //__________________________________________________________________________________________________
 OUString InterfaceMethodImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aTypeName;
 }
@@ -117,7 +115,6 @@ OUString InterfaceMethodImpl::getName()
 // XInterfaceMemberTypeDescription
 //__________________________________________________________________________________________________
 sal_Int32 InterfaceMethodImpl::getPosition()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _nPosition;
 }
@@ -125,7 +122,6 @@ sal_Int32 InterfaceMethodImpl::getPosition()
 // XInterfaceMethodTypeDescription
 //__________________________________________________________________________________________________
 Reference<XTypeDescription > InterfaceMethodImpl::getReturnType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (!_xReturnTD.is() && _aReturnType.getLength())
 	{
@@ -150,13 +146,11 @@ Reference<XTypeDescription > InterfaceMethodImpl::getReturnType()
 }
 //__________________________________________________________________________________________________
 sal_Bool InterfaceMethodImpl::isOneway()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _bIsOneWay;
 }
 //__________________________________________________________________________________________________
 Sequence<Reference<XMethodParameter > > InterfaceMethodImpl::getParameters()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     Sequence< Reference< XParameter > > s1(_desc.getParameters());
     Sequence< Reference< XMethodParameter > > s2(s1.getLength());
@@ -167,7 +161,6 @@ Sequence<Reference<XMethodParameter > > InterfaceMethodImpl::getParameters()
 }
 //__________________________________________________________________________________________________
 Sequence<Reference<XTypeDescription > > InterfaceMethodImpl::getExceptions()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     Sequence< Reference< XCompoundTypeDescription > > s1(
         _desc.getExceptions());
@@ -230,22 +223,22 @@ public:
 	virtual ~InterfaceAttributeImpl();
 
 	// XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-    virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 
 	// XInterfaceMemberTypeDescription
-    virtual OUString SAL_CALL getMemberName() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getPosition() throw(::com::sun::star::uno::RuntimeException);
+    virtual OUString SAL_CALL getMemberName();
+    virtual sal_Int32 SAL_CALL getPosition();
 
 	// XInterfaceAttributeTypeDescription2
-	virtual sal_Bool SAL_CALL isReadOnly() throw(::com::sun::star::uno::RuntimeException);
-	virtual Reference< XTypeDescription > SAL_CALL getType() throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL isReadOnly();
+	virtual Reference< XTypeDescription > SAL_CALL getType();
 
-    virtual sal_Bool SAL_CALL isBound() throw (RuntimeException)
+    virtual sal_Bool SAL_CALL isBound()
     { return _bBound; }
 
     virtual Sequence< Reference< XCompoundTypeDescription > > SAL_CALL
-    getGetExceptions() throw (RuntimeException)
+    getGetExceptions()
     {
         if (_getter.get() != 0) {
             return _getter->getExceptions();
@@ -255,7 +248,7 @@ public:
     }
 
     virtual Sequence< Reference< XCompoundTypeDescription > > SAL_CALL
-    getSetExceptions() throw (RuntimeException)
+    getSetExceptions()
     {
         if (_setter.get() != 0) {
             return _setter->getExceptions();
@@ -272,13 +265,11 @@ InterfaceAttributeImpl::~InterfaceAttributeImpl()
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass InterfaceAttributeImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return TypeClass_INTERFACE_ATTRIBUTE;
 }
 //__________________________________________________________________________________________________
 OUString InterfaceAttributeImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aTypeName;
 }
@@ -286,13 +277,11 @@ OUString InterfaceAttributeImpl::getName()
 // XInterfaceMemberTypeDescription
 //__________________________________________________________________________________________________
 OUString InterfaceAttributeImpl::getMemberName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aMemberName;
 }
 //__________________________________________________________________________________________________
 sal_Int32 InterfaceAttributeImpl::getPosition()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _nPosition;
 }
@@ -300,13 +289,11 @@ sal_Int32 InterfaceAttributeImpl::getPosition()
 // XInterfaceAttributeTypeDescription2
 //__________________________________________________________________________________________________
 sal_Bool InterfaceAttributeImpl::isReadOnly()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _bReadOnly;
 }
 //__________________________________________________________________________________________________
 Reference<XTypeDescription > InterfaceAttributeImpl::getType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (!_xMemberTD.is() && _aMemberTypeName.getLength())
 	{
@@ -415,13 +402,11 @@ InterfaceTypeDescriptionImpl::~InterfaceTypeDescriptionImpl()
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass InterfaceTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return TypeClass_INTERFACE;
 }
 //__________________________________________________________________________________________________
 OUString InterfaceTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aName;
 }
@@ -429,20 +414,17 @@ OUString InterfaceTypeDescriptionImpl::getName()
 // XInterfaceTypeDescription2
 //__________________________________________________________________________________________________
 Reference< XTypeDescription > InterfaceTypeDescriptionImpl::getBaseType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     Sequence< Reference< XTypeDescription > > aBaseTypes(getBaseTypes());
     return aBaseTypes.getLength() >= 1 ? aBaseTypes[0] : 0;
 }
 //__________________________________________________________________________________________________
 Uik SAL_CALL InterfaceTypeDescriptionImpl::getUik()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return Uik();
 }
 //__________________________________________________________________________________________________
 Sequence< Reference< XInterfaceMemberTypeDescription > > InterfaceTypeDescriptionImpl::getMembers()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     osl::MutexGuard guard(getMutex());
     if (!_membersInit) {
@@ -527,7 +509,7 @@ Sequence< Reference< XInterfaceMemberTypeDescription > > InterfaceTypeDescriptio
 }
 
 Sequence< Reference< XTypeDescription > >
-InterfaceTypeDescriptionImpl::getBaseTypes() throw (RuntimeException) {
+InterfaceTypeDescriptionImpl::getBaseTypes() {
     MutexGuard guard(getMutex());
     if (_xBaseTDs.getLength() == 0 && _aBaseTypes.getLength() != 0) {
         Sequence< Reference< XTypeDescription > > tds(_aBaseTypes.getLength());
@@ -551,7 +533,7 @@ InterfaceTypeDescriptionImpl::getBaseTypes() throw (RuntimeException) {
 }
 
 Sequence< Reference< XTypeDescription > >
-InterfaceTypeDescriptionImpl::getOptionalBaseTypes() throw (RuntimeException) {
+InterfaceTypeDescriptionImpl::getOptionalBaseTypes() {
     MutexGuard guard(getMutex());
     if (_xOptionalBaseTDs.getLength() == 0
         && _aOptionalBaseTypes.getLength() != 0)

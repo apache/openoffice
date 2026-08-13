@@ -40,9 +40,9 @@ namespace ooo
 		//css::uno::Reference< css::frame::XModel > getCurrentDocument() throw (css::uno::RuntimeException);
         SwDocShell* getDocShell( const css::uno::Reference< css::frame::XModel>& xModel );
         SwView* getView( const css::uno::Reference< css::frame::XModel>& xModel );
-        css::uno::Reference< css::text::XTextViewCursor > getXTextViewCursor( const css::uno::Reference< css::frame::XModel >& xModel ) throw (css::uno::RuntimeException);
-        css::uno::Reference< css::style::XStyle > getCurrentPageStyle( const css::uno::Reference< css::frame::XModel >& xModel ) throw (css::uno::RuntimeException);
-        sal_Int32 getPageCount( const css::uno::Reference< css::frame::XModel>& xModel ) throw (css::uno::RuntimeException);
+        css::uno::Reference< css::text::XTextViewCursor > getXTextViewCursor( const css::uno::Reference< css::frame::XModel >& xModel );
+        css::uno::Reference< css::style::XStyle > getCurrentPageStyle( const css::uno::Reference< css::frame::XModel >& xModel );
+        sal_Int32 getPageCount( const css::uno::Reference< css::frame::XModel>& xModel );
 
 } // word
 } // vba

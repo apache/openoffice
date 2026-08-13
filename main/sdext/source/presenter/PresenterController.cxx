@@ -812,7 +812,6 @@ void PresenterController::RequestViews (
 
 void SAL_CALL PresenterController::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -898,7 +897,6 @@ void SAL_CALL PresenterController::notifyConfigurationChange (
 
 void SAL_CALL PresenterController::disposing (
     const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Source == mxController)
         mxController = NULL;
@@ -917,7 +915,6 @@ void SAL_CALL PresenterController::disposing (
 
 void SAL_CALL PresenterController::frameAction (
     const frame::FrameActionEvent& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Action == frame::FrameAction_FRAME_ACTIVATED)
     {
@@ -932,7 +929,6 @@ void SAL_CALL PresenterController::frameAction (
 //----- XKeyListener ----------------------------------------------------------
 
 void SAL_CALL PresenterController::keyPressed (const awt::KeyEvent& rEvent)
-    throw (RuntimeException)
 {
     // Tell all views about the unhandled key event.
     PresenterPaneContainer::PaneList::const_iterator iPane;
@@ -951,7 +947,6 @@ void SAL_CALL PresenterController::keyPressed (const awt::KeyEvent& rEvent)
 
 
 void SAL_CALL PresenterController::keyReleased (const awt::KeyEvent& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Source != mxMainWindow)
         return;
@@ -1155,7 +1150,6 @@ void PresenterController::HandleNumericKeyPress (
 //----- XFocusListener --------------------------------------------------------
 
 void SAL_CALL PresenterController::focusGained (const css::awt::FocusEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1164,7 +1158,6 @@ void SAL_CALL PresenterController::focusGained (const css::awt::FocusEvent& rEve
 
 
 void SAL_CALL PresenterController::focusLost (const css::awt::FocusEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1175,7 +1168,6 @@ void SAL_CALL PresenterController::focusLost (const css::awt::FocusEvent& rEvent
 //----- XMouseListener --------------------------------------------------------
 
 void SAL_CALL PresenterController::mousePressed (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     if (mxMainWindow.is())
@@ -1186,7 +1178,6 @@ void SAL_CALL PresenterController::mousePressed (const css::awt::MouseEvent& rEv
 
 
 void SAL_CALL PresenterController::mouseReleased (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1195,7 +1186,6 @@ void SAL_CALL PresenterController::mouseReleased (const css::awt::MouseEvent& rE
 
 
 void SAL_CALL PresenterController::mouseEntered (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1204,7 +1194,6 @@ void SAL_CALL PresenterController::mouseEntered (const css::awt::MouseEvent& rEv
 
 
 void SAL_CALL PresenterController::mouseExited (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1215,7 +1204,6 @@ void SAL_CALL PresenterController::mouseExited (const css::awt::MouseEvent& rEve
 //----- XMouseMotionListener --------------------------------------------------
 
 void SAL_CALL PresenterController::mouseMoved (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1224,7 +1212,6 @@ void SAL_CALL PresenterController::mouseMoved (const css::awt::MouseEvent& rEven
 
 
 void SAL_CALL PresenterController::mouseDragged (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -1358,7 +1345,6 @@ void PresenterController::UpdatePendingSlideNumber (const sal_Int32 nPendingSlid
 
 
 void PresenterController::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

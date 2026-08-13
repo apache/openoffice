@@ -41,8 +41,8 @@ namespace oox { namespace ppt {
 	public:
         AnimVariantContext( ::oox::core::ContextHandler& rParent, ::sal_Int32 aElement, ::com::sun::star::uno::Any & aValue );
 		~AnimVariantContext( ) throw( );
-		virtual void SAL_CALL endFastElement( sal_Int32 /*aElement*/ ) throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& xAttribs ) throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL endFastElement( sal_Int32 /*aElement*/ );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& xAttribs );
 
 	private:
 		::sal_Int32 mnElement;

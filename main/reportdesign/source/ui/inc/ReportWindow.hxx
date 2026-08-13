@@ -74,7 +74,7 @@ namespace rptui
 	protected:
 		virtual void DataChanged( const DataChangedEvent& rDCEvt );
         // OPropertyChangeListener
-		virtual void	_propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void	_propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent);
 	public:
 		OReportWindow(OScrollWindowHelper* _pParent,ODesignView* _pView);
 		virtual ~OReportWindow();

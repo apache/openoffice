@@ -54,28 +54,21 @@ public:
 
     // XOfficeInstallationDirectories
     virtual ::rtl::OUString SAL_CALL
-    getOfficeInstallationDirectoryURL()
-        throw (::com::sun::star::uno::RuntimeException);
+    getOfficeInstallationDirectoryURL();
     virtual ::rtl::OUString SAL_CALL
-    getOfficeUserDataDirectoryURL()
-        throw (::com::sun::star::uno::RuntimeException);
+    getOfficeUserDataDirectoryURL();
     virtual ::rtl::OUString SAL_CALL
-    makeRelocatableURL( const ::rtl::OUString& URL )
-        throw (::com::sun::star::uno::RuntimeException);
+    makeRelocatableURL( const ::rtl::OUString& URL );
     virtual ::rtl::OUString SAL_CALL
-    makeAbsoluteURL( const ::rtl::OUString& URL )
-        throw (::com::sun::star::uno::RuntimeException);
+    makeAbsoluteURL( const ::rtl::OUString& URL );
 
     // XServiceInfo
     virtual ::rtl::OUString SAL_CALL
-    getImplementationName()
-        throw (::com::sun::star::uno::RuntimeException);
+    getImplementationName();
     virtual sal_Bool SAL_CALL
-    supportsService( const ::rtl::OUString& ServiceName )
-        throw (::com::sun::star::uno::RuntimeException);
+    supportsService( const ::rtl::OUString& ServiceName );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-        throw (::com::sun::star::uno::RuntimeException);
+    getSupportedServiceNames();
 
     // XServiceInfo - static versions (used for component registration)
     static ::rtl::OUString SAL_CALL

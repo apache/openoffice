@@ -44,10 +44,8 @@ public:
 	ScDrawModelBroadcaster( SdrModel *pDrawModel );
 	virtual ~ScDrawModelBroadcaster();
 
-    virtual void SAL_CALL addEventListener( const com::sun::star::uno::Reference< com::sun::star::document::XEventListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeEventListener( const com::sun::star::uno::Reference< com::sun::star::document::XEventListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addEventListener( const com::sun::star::uno::Reference< com::sun::star::document::XEventListener >& xListener );
+    virtual void SAL_CALL removeEventListener( const com::sun::star::uno::Reference< com::sun::star::document::XEventListener >& xListener );
 
 	virtual void		Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 };

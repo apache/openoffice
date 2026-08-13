@@ -91,7 +91,7 @@ public:
 
 	// UNO Anbindung
 	DECLARE_UNO3_DEFAULTS(OComponentEventThread, OWeakObject);
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType);
 
 	OComponentEventThread(::cppu::OComponentHelper* pCompImpl);
 	virtual ~OComponentEventThread();
@@ -101,7 +101,7 @@ public:
 				   sal_Bool bFlag = sal_False );
 
 	// ::com::sun::star::lang::XEventListener
-	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource );
 
 /* resolve ambiguity : both OWeakObject and OObject have these memory operators */
 	void * SAL_CALL operator new( size_t size ) throw() { return OThread::operator new(size); }

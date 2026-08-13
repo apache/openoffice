@@ -85,7 +85,7 @@ namespace xmloff
 	}
 
 	//---------------------------------------------------------------------
-	sal_Int16 SAL_CALL OAttribListMerger::getLength(  ) throw(RuntimeException)
+	sal_Int16 SAL_CALL OAttribListMerger::getLength(  )
 	{
 		sal_Int16 nCount = 0;
 		for (	ConstAttributeListArrayIterator aAccumulate = m_aLists.begin();
@@ -97,7 +97,7 @@ namespace xmloff
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OAttribListMerger::getNameByIndex( sal_Int16 i ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL OAttribListMerger::getNameByIndex( sal_Int16 i )
 	{
 		Reference< sax::XAttributeList > xSubList;
 		sal_Int16 nLocalIndex;
@@ -109,7 +109,7 @@ namespace xmloff
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OAttribListMerger::getTypeByIndex( sal_Int16 i ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL OAttribListMerger::getTypeByIndex( sal_Int16 i )
 	{
 		Reference< sax::XAttributeList > xSubList;
 		sal_Int16 nLocalIndex;
@@ -121,7 +121,7 @@ namespace xmloff
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OAttribListMerger::getTypeByName( const ::rtl::OUString& _rName ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL OAttribListMerger::getTypeByName( const ::rtl::OUString& _rName )
 	{
 		Reference< sax::XAttributeList > xSubList;
 		sal_Int16 nLocalIndex;
@@ -135,7 +135,7 @@ namespace xmloff
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OAttribListMerger::getValueByIndex( sal_Int16 i ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL OAttribListMerger::getValueByIndex( sal_Int16 i )
 	{
 		Reference< sax::XAttributeList > xSubList;
 		sal_Int16 nLocalIndex;
@@ -147,7 +147,7 @@ namespace xmloff
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OAttribListMerger::getValueByName( const ::rtl::OUString& _rName ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL OAttribListMerger::getValueByName( const ::rtl::OUString& _rName )
 	{
 		Reference< sax::XAttributeList > xSubList;
 		sal_Int16 nLocalIndex;

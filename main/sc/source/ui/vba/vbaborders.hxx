@@ -38,7 +38,7 @@ class ScVbaPalette;
 class ScVbaBorders : public ScVbaBorders_BASE
 {
 	// XEnumerationAccess
-	virtual css::uno::Any getItemByIntIndex( const sal_Int32 nIndex ) throw (css::uno::RuntimeException);
+	virtual css::uno::Any getItemByIntIndex( const sal_Int32 nIndex );
 	bool bRangeIsSingleCell;
 	css::uno::Reference< css::beans::XPropertySet > m_xProps;
 public:
@@ -46,8 +46,8 @@ public:
 	virtual ~ScVbaBorders() {}
 
 	// XEnumerationAccess
-	virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+	virtual css::uno::Type SAL_CALL getElementType();
+	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
 
 	// XBorders
@@ -55,14 +55,14 @@ public:
 	// ScVbaCollectionBaseImpl
 	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );
 
-	virtual css::uno::Any SAL_CALL getColor() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setColor( const css::uno::Any& _color ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getColorIndex() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setColorIndex( const css::uno::Any& _colorindex ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getLineStyle() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setLineStyle( const css::uno::Any& _linestyle ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getWeight() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setWeight( const  css::uno::Any& ) throw (css::uno::RuntimeException);
+	virtual css::uno::Any SAL_CALL getColor();
+	virtual void SAL_CALL setColor( const css::uno::Any& _color );
+	virtual css::uno::Any SAL_CALL getColorIndex();
+	virtual void SAL_CALL setColorIndex( const css::uno::Any& _colorindex );
+	virtual css::uno::Any SAL_CALL getLineStyle();
+	virtual void SAL_CALL setLineStyle( const css::uno::Any& _linestyle );
+	virtual css::uno::Any SAL_CALL getWeight();
+	virtual void SAL_CALL setWeight( const  css::uno::Any& );
 	// xxxxBASE
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

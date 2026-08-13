@@ -79,7 +79,6 @@ SvXMLImportContext* XMLMetaImportComponent::CreateContext(
 
 void SAL_CALL XMLMetaImportComponent::setTargetDocument(
     const uno::Reference< lang::XComponent >& xDoc )
-    throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
     mxDocProps = uno::Reference< document::XDocumentProperties >::query( xDoc );
     if( !mxDocProps.is() )
@@ -105,7 +104,6 @@ rtl::OUString SAL_CALL XMLMetaImportComponent_getImplementationName() throw()
 
 uno::Reference< uno::XInterface > SAL_CALL XMLMetaImportComponent_createInstance(
         const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-    throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new XMLMetaImportComponent;

@@ -48,14 +48,13 @@ ShapeStyleContext::~ShapeStyleContext()
 
 // --------------------------------------------------------------------
 
-void ShapeStyleContext::endFastElement( sal_Int32 ) throw (SAXException, RuntimeException)
+void ShapeStyleContext::endFastElement( sal_Int32 )
 {
 }
 
 // --------------------------------------------------------------------
 
 Reference< XFastContextHandler > ShapeStyleContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& rxAttributes )
-	throw ( SAXException, RuntimeException )
 {
 	Reference< XFastContextHandler > xRet;
     AttributeList aAttribs( rxAttributes );

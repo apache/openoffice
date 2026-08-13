@@ -3946,11 +3946,11 @@ public:
 	//virtual sal_Bool queryInterface( Uik aUik, Reference< XInterface > & rOut );
 
 	// Methoden von XAllListener
-	virtual void SAL_CALL firing(const AllEventObject& Event) throw ( RuntimeException );
-	virtual Any SAL_CALL approveFiring(const AllEventObject& Event) throw ( RuntimeException );
+	virtual void SAL_CALL firing(const AllEventObject& Event);
+	virtual Any SAL_CALL approveFiring(const AllEventObject& Event);
 
 	// Methoden von XEventListener
-	virtual void SAL_CALL disposing(const EventObject& Source) throw ( RuntimeException );
+	virtual void SAL_CALL disposing(const EventObject& Source);
 };
 
 
@@ -4021,12 +4021,12 @@ void BasicAllListener_Impl::firing_impl( const AllEventObject& Event, Any* pRet 
 
 
 // Methoden von XAllListener
-void BasicAllListener_Impl::firing( const AllEventObject& Event ) throw ( RuntimeException )
+void BasicAllListener_Impl::firing( const AllEventObject& Event )
 {
 	firing_impl( Event, NULL );
 }
 
-Any BasicAllListener_Impl::approveFiring( const AllEventObject& Event ) throw ( RuntimeException )
+Any BasicAllListener_Impl::approveFiring( const AllEventObject& Event )
 {
 	Any aRetAny;
 	firing_impl( Event, &aRetAny );
@@ -4035,7 +4035,7 @@ Any BasicAllListener_Impl::approveFiring( const AllEventObject& Event ) throw ( 
 
 //========================================================================
 // Methoden von XEventListener
-void BasicAllListener_Impl ::disposing(const EventObject& ) throw ( RuntimeException )
+void BasicAllListener_Impl ::disposing(const EventObject& )
 {
 	vos::OGuard guard( Application::GetSolarMutex() );
 
@@ -4055,14 +4055,12 @@ public:
 		const Reference< XAllListener >& AllListener, const Any& Helper );
 
 	// XInvocation
-    virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection(void) throw( RuntimeException );
-    virtual Any SAL_CALL invoke(const ::rtl::OUString& FunctionName, const Sequence< Any >& Params, Sequence< sal_Int16 >& OutParamIndex, Sequence< Any >& OutParam)
-		throw( IllegalArgumentException, CannotConvertException, InvocationTargetException, RuntimeException );
-    virtual void SAL_CALL setValue(const ::rtl::OUString& PropertyName, const Any& Value)
-		throw( UnknownPropertyException, CannotConvertException, InvocationTargetException, RuntimeException );
-    virtual Any SAL_CALL getValue(const ::rtl::OUString& PropertyName) throw( UnknownPropertyException, RuntimeException );
-    virtual sal_Bool SAL_CALL hasMethod(const ::rtl::OUString& Name) throw( RuntimeException );
-    virtual sal_Bool SAL_CALL hasProperty(const ::rtl::OUString& Name) throw( RuntimeException );
+    virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection(void);
+    virtual Any SAL_CALL invoke(const ::rtl::OUString& FunctionName, const Sequence< Any >& Params, Sequence< sal_Int16 >& OutParamIndex, Sequence< Any >& OutParam);
+    virtual void SAL_CALL setValue(const ::rtl::OUString& PropertyName, const Any& Value);
+    virtual Any SAL_CALL getValue(const ::rtl::OUString& PropertyName);
+    virtual sal_Bool SAL_CALL hasMethod(const ::rtl::OUString& Name);
+    virtual sal_Bool SAL_CALL hasProperty(const ::rtl::OUString& Name);
 
 private:
 	Reference< XIdlReflection >  m_xCoreReflection;
@@ -4105,7 +4103,6 @@ InvocationToAllListenerMapper::InvocationToAllListenerMapper
 
 //*************************************************************************
 Reference< XIntrospectionAccess > SAL_CALL InvocationToAllListenerMapper::getIntrospection(void)
-	throw( RuntimeException )
 {
 	return Reference< XIntrospectionAccess >();
 }
@@ -4113,8 +4110,6 @@ Reference< XIntrospectionAccess > SAL_CALL InvocationToAllListenerMapper::getInt
 //*************************************************************************
 Any SAL_CALL InvocationToAllListenerMapper::invoke(const ::rtl::OUString& FunctionName, const Sequence< Any >& Params,
 	Sequence< sal_Int16 >& OutParamIndex, Sequence< Any >& OutParam)
-		throw( IllegalArgumentException, CannotConvertException,
-		InvocationTargetException, RuntimeException )
 {
     (void)OutParamIndex;
     (void)OutParam     ;
@@ -4166,8 +4161,6 @@ Any SAL_CALL InvocationToAllListenerMapper::invoke(const ::rtl::OUString& Functi
 
 //*************************************************************************
 void SAL_CALL InvocationToAllListenerMapper::setValue(const ::rtl::OUString& PropertyName, const Any& Value)
-	throw( UnknownPropertyException, CannotConvertException,
-		   InvocationTargetException, RuntimeException )
 {
     (void)PropertyName;
     (void)Value;
@@ -4175,7 +4168,6 @@ void SAL_CALL InvocationToAllListenerMapper::setValue(const ::rtl::OUString& Pro
 
 //*************************************************************************
 Any SAL_CALL InvocationToAllListenerMapper::getValue(const ::rtl::OUString& PropertyName)
-	throw( UnknownPropertyException, RuntimeException )
 {
     (void)PropertyName;
 
@@ -4184,7 +4176,6 @@ Any SAL_CALL InvocationToAllListenerMapper::getValue(const ::rtl::OUString& Prop
 
 //*************************************************************************
 sal_Bool SAL_CALL InvocationToAllListenerMapper::hasMethod(const ::rtl::OUString& Name)
-	throw( RuntimeException )
 {
 	Reference< XIdlMethod > xMethod = m_xListenerType->getMethod( Name );
 	return xMethod.is();
@@ -4192,7 +4183,6 @@ sal_Bool SAL_CALL InvocationToAllListenerMapper::hasMethod(const ::rtl::OUString
 
 //*************************************************************************
 sal_Bool SAL_CALL InvocationToAllListenerMapper::hasProperty(const ::rtl::OUString& Name)
-	throw( RuntimeException )
 {
 	Reference< XIdlField > xField = m_xListenerType->getField( Name );
 	return xField.is();
@@ -4429,23 +4419,20 @@ public:
 
 	// XInvocation
     virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection() throw();
-    virtual void SAL_CALL setValue( const ::rtl::OUString& rProperty, const Any& rValue )
-        throw( UnknownPropertyException );
-    virtual Any SAL_CALL getValue( const ::rtl::OUString& rProperty )
-        throw( UnknownPropertyException );
+    virtual void SAL_CALL setValue( const ::rtl::OUString& rProperty, const Any& rValue );
+    virtual Any SAL_CALL getValue( const ::rtl::OUString& rProperty );
     virtual sal_Bool SAL_CALL hasMethod( const ::rtl::OUString& rName ) throw();
     virtual sal_Bool SAL_CALL hasProperty( const ::rtl::OUString& rProp ) throw();
 
     virtual Any SAL_CALL invoke( const ::rtl::OUString& rFunction,
                                  const Sequence< Any >& rParams,
                                  Sequence< sal_Int16 >& rOutParamIndex,
-                                 Sequence< Any >& rOutParam )
-        throw( CannotConvertException, InvocationTargetException );
+                                 Sequence< Any >& rOutParam );
 
     // XComponent
-    virtual void SAL_CALL dispose() throw(RuntimeException);
-    virtual void SAL_CALL addEventListener( const Reference< XEventListener >& xListener ) throw (RuntimeException);
-    virtual void SAL_CALL removeEventListener( const Reference< XEventListener >& aListener ) throw (RuntimeException);
+    virtual void SAL_CALL dispose();
+    virtual void SAL_CALL addEventListener( const Reference< XEventListener >& xListener );
+    virtual void SAL_CALL removeEventListener( const Reference< XEventListener >& aListener );
 };
 
 ModuleInvocationProxy::ModuleInvocationProxy( const ::rtl::OUString& aPrefix, SbxObjectRef xScopeObj )
@@ -4461,7 +4448,7 @@ Reference< XIntrospectionAccess > SAL_CALL ModuleInvocationProxy::getIntrospecti
     return Reference< XIntrospectionAccess >();
 }
 
-void SAL_CALL ModuleInvocationProxy::setValue( const ::rtl::OUString& rProperty, const Any& rValue ) throw( UnknownPropertyException )
+void SAL_CALL ModuleInvocationProxy::setValue( const ::rtl::OUString& rProperty, const Any& rValue )
 {
 	if( !m_bProxyIsClassModuleObject )
 		throw UnknownPropertyException();
@@ -4502,7 +4489,7 @@ void SAL_CALL ModuleInvocationProxy::setValue( const ::rtl::OUString& rProperty,
 
 }
 
-Any SAL_CALL ModuleInvocationProxy::getValue( const ::rtl::OUString& rProperty ) throw( UnknownPropertyException )
+Any SAL_CALL ModuleInvocationProxy::getValue( const ::rtl::OUString& rProperty )
 {
 	if( !m_bProxyIsClassModuleObject )
 	    throw UnknownPropertyException();
@@ -4543,7 +4530,6 @@ Any SAL_CALL ModuleInvocationProxy::invoke( const ::rtl::OUString& rFunction,
 											const Sequence< Any >& rParams,
 											Sequence< sal_Int16 >&,
 											Sequence< Any >& )
-    throw( CannotConvertException, InvocationTargetException )
 {
 	vos::OGuard guard( Application::GetSolarMutex() );
 
@@ -4609,7 +4595,6 @@ Any SAL_CALL ModuleInvocationProxy::invoke( const ::rtl::OUString& rFunction,
 }
 
 void SAL_CALL ModuleInvocationProxy::dispose()
-    throw(RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -4620,13 +4605,11 @@ void SAL_CALL ModuleInvocationProxy::dispose()
 }
 
 void SAL_CALL ModuleInvocationProxy::addEventListener( const Reference< XEventListener >& xListener )
-    throw (RuntimeException)
 {
     m_aListeners.addInterface( xListener );
 }
 
 void SAL_CALL ModuleInvocationProxy::removeEventListener( const Reference< XEventListener >& xListener )
-    throw (RuntimeException)
 {
     m_aListeners.removeInterface( xListener );
 }

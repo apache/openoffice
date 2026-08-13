@@ -85,9 +85,7 @@ namespace chelp {
 			virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::ucb::XContent > SAL_CALL
 		queryContent( const ::com::sun::star::uno::Reference<
-					  ::com::sun::star::ucb::XContentIdentifier >& Identifier )
-			throw( ::com::sun::star::ucb::IllegalIdentifierException,
-				   ::com::sun::star::uno::RuntimeException );
+					  ::com::sun::star::ucb::XContentIdentifier >& Identifier );
 
 		//////////////////////////////////////////////////////////////////////
 		// Additional interfaces
@@ -96,19 +94,16 @@ namespace chelp {
 		// XComponent
 
 		virtual void SAL_CALL
-		dispose(  )
-			throw (::com::sun::star::uno::RuntimeException);
+		dispose(  );
 
 		virtual void SAL_CALL
 		addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener )
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			(void)xListener;
 		}
 
 		virtual void SAL_CALL
 		removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener )
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			(void)aListener;
 		}
@@ -117,7 +112,6 @@ namespace chelp {
 
 		virtual void SAL_CALL
 		disposing( const ::com::sun::star::lang::EventObject& Source )
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			(void)Source;
 			m_xContainer = com::sun::star::uno::Reference<com::sun::star::container::XContainer>(0);
@@ -125,21 +119,18 @@ namespace chelp {
 
 		virtual void SAL_CALL
 		elementInserted( const ::com::sun::star::container::ContainerEvent& Event )
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			(void)Event;
 		}
 
 		virtual void SAL_CALL
 		elementRemoved( const ::com::sun::star::container::ContainerEvent& Event )
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			(void)Event;
 		}
 
 		virtual void SAL_CALL
-		elementReplaced( const ::com::sun::star::container::ContainerEvent& Event )
-			throw (::com::sun::star::uno::RuntimeException);
+		elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
 
 
 		//////////////////////////////////////////////////////////////////////

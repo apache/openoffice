@@ -90,10 +90,10 @@ class MenuManager : public ThreadHelpBase			,
 		virtual ~MenuManager();
 
 		// XStatusListener
-		virtual void SAL_CALL statusChanged( const FEATURSTATEEVENT& Event ) throw ( RUNTIMEEXCEPTION );
+		virtual void SAL_CALL statusChanged( const FEATURSTATEEVENT& Event );
 
 		// XEventListener
-		virtual void SAL_CALL disposing( const EVENTOBJECT& Source ) throw ( RUNTIMEEXCEPTION );
+		virtual void SAL_CALL disposing( const EVENTOBJECT& Source );
 
 		DECL_LINK( Select, Menu * );
 

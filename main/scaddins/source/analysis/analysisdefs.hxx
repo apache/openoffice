@@ -36,11 +36,8 @@
 #define STRING				::rtl::OUString
 #define STRFROMASCII(s)		STRING::createFromAscii( s )
 #define STRFROMANSI(s)		STRING( s, strlen( s ), RTL_TEXTENCODING_MS_1252 )
-#define THROWDEF_RTE		throw(CSS::uno::RuntimeException)
 #define THROW_RTE			throw CSS::uno::RuntimeException()
-#define THROWDEF_RTE_IAE	throw(CSS::uno::RuntimeException,CSS::lang::IllegalArgumentException)
 #define	THROW_IAE			throw CSS::lang::IllegalArgumentException()
-#define THROWDEF_RTE_IAE_NCE    throw(CSS::uno::RuntimeException,CSS::lang::IllegalArgumentException,CSS::sheet::NoConvergenceException)
 #define THROW_NCE           throw CSS::sheet::NoConvergenceException()
 
 #define CHK_Freq            ( nFreq != 1 && nFreq != 2 && nFreq != 4 )

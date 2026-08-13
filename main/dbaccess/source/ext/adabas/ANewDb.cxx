@@ -73,7 +73,7 @@ OAdabasCreateDialog::OAdabasCreateDialog(const Reference< XMultiServiceFactory >
 }
 
 //-------------------------------------------------------------------------
-Sequence<sal_Int8> SAL_CALL OAdabasCreateDialog::getImplementationId(  ) throw(RuntimeException)
+Sequence<sal_Int8> SAL_CALL OAdabasCreateDialog::getImplementationId(  )
 {
 	static ::cppu::OImplementationId aId;
 	return aId.getImplementationId();
@@ -86,25 +86,25 @@ Reference< XInterface > SAL_CALL OAdabasCreateDialog::Create(const Reference< XM
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OAdabasCreateDialog::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL OAdabasCreateDialog::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString OAdabasCreateDialog::getImplementationName_Static() throw(RuntimeException)
+::rtl::OUString OAdabasCreateDialog::getImplementationName_Static()
 {
 	return ::rtl::OUString::createFromAscii("org.openoffice.comp.adabasui.AdabasCreateDialog");
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL OAdabasCreateDialog::getSupportedServiceNames() throw(RuntimeException)
+::comphelper::StringSequence SAL_CALL OAdabasCreateDialog::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence OAdabasCreateDialog::getSupportedServiceNames_Static() throw(RuntimeException)
+::comphelper::StringSequence OAdabasCreateDialog::getSupportedServiceNames_Static()
 {
 	::comphelper::StringSequence aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdb.AdabasCreationDialog");
@@ -112,7 +112,7 @@ Reference< XInterface > SAL_CALL OAdabasCreateDialog::Create(const Reference< XM
 }
 
 //-------------------------------------------------------------------------
-Reference<XPropertySetInfo>  SAL_CALL OAdabasCreateDialog::getPropertySetInfo() throw(RuntimeException)
+Reference<XPropertySetInfo>  SAL_CALL OAdabasCreateDialog::getPropertySetInfo()
 {
 	Reference<XPropertySetInfo>  xInfo( createPropertySetInfo( getInfoHelper() ) );
 	return xInfo;

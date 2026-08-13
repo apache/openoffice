@@ -59,13 +59,6 @@ protected:
 
 public:
 	OPropertyArrayUsageHelper();
-	/*	Classes derived from this one also derive from a UNO base whose destructor
-		is declared SAL_THROW( (RuntimeException) ).  From C++11 on a destructor with
-		no written specification gets an implicit "never throws", so the derived
-		class's own deduced specification came out weaker than this one, which an
-		override may not be (C2694).  Inert under C++03, where no implicit
-		specification exists, and MSVC does not enforce a dynamic specification at
-		run time in any case -- it only uses it for this compile-time check. */
 	virtual ~OPropertyArrayUsageHelper()
 	{	// ARGHHHHHHH ..... would like to implement this after the class
         // definition (as we do with all other methods) but SUNPRO 5 compiler

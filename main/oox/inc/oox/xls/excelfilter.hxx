@@ -55,8 +55,7 @@ class ExcelFilter : public ::oox::core::XmlFilterBase, public ExcelFilterBase
 {
 public:
     explicit            ExcelFilter(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
     virtual             ~ExcelFilter();
 
     virtual bool        importDocument() throw();
@@ -79,8 +78,7 @@ class ExcelBiffFilter : public ::oox::core::BinaryFilterBase, public ExcelFilter
 {
 public:
     explicit            ExcelBiffFilter(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
     virtual             ~ExcelBiffFilter();
 
     virtual bool        importDocument() throw();
@@ -98,8 +96,7 @@ class ExcelVbaProjectFilter : public ExcelBiffFilter
 {
 public:
     explicit            ExcelVbaProjectFilter(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
 
     virtual bool        importDocument() throw();
     virtual bool        exportDocument() throw();

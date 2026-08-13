@@ -93,7 +93,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL PropertyControlExtender::keyPressed( const KeyEvent& _event ) throw (RuntimeException)
+    void SAL_CALL PropertyControlExtender::keyPressed( const KeyEvent& _event )
     {
         OSL_ENSURE( _event.Source == m_pData->xControlWindow, "PropertyControlExtender::keyPressed: where does this come from?" );
         if  (   ( _event.KeyFunc == KeyFunction::DELETE )
@@ -122,13 +122,13 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL PropertyControlExtender::keyReleased( const KeyEvent& /*_event*/ ) throw (RuntimeException)
+    void SAL_CALL PropertyControlExtender::keyReleased( const KeyEvent& /*_event*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL PropertyControlExtender::disposing( const EventObject& Source ) throw (RuntimeException)
+    void SAL_CALL PropertyControlExtender::disposing( const EventObject& Source )
     {
         OSL_ENSURE( Source.Source == m_pData->xControlWindow, "PropertyControlExtender::disposing: where does this come from?" );
         (void)Source.Source;

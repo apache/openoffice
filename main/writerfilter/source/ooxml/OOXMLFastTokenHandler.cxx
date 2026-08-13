@@ -44,7 +44,6 @@ OOXMLFastTokenHandler::OOXMLFastTokenHandler
 
 // ::com::sun::star::xml::sax::XFastTokenHandler:
 ::sal_Int32 SAL_CALL OOXMLFastTokenHandler::getToken(const ::rtl::OUString & Identifier)
-    throw (css::uno::RuntimeException)
 {
     ::sal_Int32 nResult = OOXML_FAST_TOKENS_END;
 
@@ -67,7 +66,6 @@ OOXMLFastTokenHandler::OOXMLFastTokenHandler
 }
 
 ::rtl::OUString SAL_CALL OOXMLFastTokenHandler::getIdentifier(::sal_Int32 Token)
-    throw (css::uno::RuntimeException)
 {
     ::rtl::OUString sResult;
 
@@ -89,7 +87,6 @@ OOXMLFastTokenHandler::OOXMLFastTokenHandler
 }
 
 css::uno::Sequence< ::sal_Int8 > SAL_CALL OOXMLFastTokenHandler::getUTF8Identifier(::sal_Int32 Token)
-    throw (css::uno::RuntimeException)
 {
 #if 0
 	if ( Token < 0  || Token >= OOXML_FAST_TOKENS_END )
@@ -105,7 +102,7 @@ css::uno::Sequence< ::sal_Int8 > SAL_CALL OOXMLFastTokenHandler::getUTF8Identifi
 }
 
 ::sal_Int32 SAL_CALL OOXMLFastTokenHandler::getTokenFromUTF8
-(const css::uno::Sequence< ::sal_Int8 > & Identifier) throw (css::uno::RuntimeException)
+(const css::uno::Sequence< ::sal_Int8 > & Identifier)
 {
     ::sal_Int32 nResult = OOXML_FAST_TOKENS_END;
 

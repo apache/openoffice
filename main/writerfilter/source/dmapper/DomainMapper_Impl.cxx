@@ -2457,7 +2457,6 @@ void DomainMapper_Impl::SetNumberFormat( const ::rtl::OUString& rCommand,
   -----------------------------------------------------------------------*/
 uno::Reference< beans::XPropertySet > DomainMapper_Impl::FindOrCreateFieldMaster(
         const sal_Char* pFieldMasterService, const ::rtl::OUString& rFieldMasterName )
-            throw(::com::sun::star::uno::Exception)
 {
     // query master, create if not available
     uno::Reference< text::XTextFieldsSupplier > xFieldsSupplier( GetTextDocument(), uno::UNO_QUERY );

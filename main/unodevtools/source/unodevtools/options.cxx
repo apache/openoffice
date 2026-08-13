@@ -45,7 +45,6 @@ static void out( const sal_Char * pText )
 //-------------------------------------------------------------------------------
 sal_Bool readOption( OUString * pValue, const sal_Char * pOpt,
                      sal_Int32 * pnIndex, const OUString & aArg)
-	throw (RuntimeException)
 {
 	const OUString dash = OUString(RTL_CONSTASCII_USTRINGPARAM("-"));
 	if(aArg.indexOf(dash) != 0)

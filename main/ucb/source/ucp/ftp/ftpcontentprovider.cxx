@@ -123,10 +123,6 @@ Reference<XContent> SAL_CALL
 FTPContentProvider::queryContent(
 	const Reference< XContentIdentifier >& xCanonicId
 )
-    throw(
-		IllegalIdentifierException,
-		RuntimeException
-	)
 {
     // Check, if a content with given id already exists...
     Reference<XContent> xContent = queryExistingContent(xCanonicId).get();
@@ -252,7 +248,6 @@ bool  FTPContentProvider::setHost(
 
 Reference<XContentProvider>
 FTPContentProvider::getHttpProvider()
-    throw(RuntimeException)
 {
 	// used for access to ftp-proxy
 	ucbhelper::ContentBroker *pBroker = ucbhelper::ContentBroker::get();

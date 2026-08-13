@@ -67,7 +67,6 @@ StatusIndicator::~StatusIndicator()
 //***********************************************
 void SAL_CALL StatusIndicator::start(const ::rtl::OUString& sText ,
                                            sal_Int32        nRange)
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ReadGuard aReadLock(m_aLock);
@@ -83,7 +82,6 @@ void SAL_CALL StatusIndicator::start(const ::rtl::OUString& sText ,
 
 //***********************************************
 void SAL_CALL StatusIndicator::end()
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ReadGuard aReadLock(m_aLock);
@@ -99,7 +97,6 @@ void SAL_CALL StatusIndicator::end()
 
 //***********************************************
 void SAL_CALL StatusIndicator::reset()
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ReadGuard aReadLock(m_aLock);
@@ -115,7 +112,6 @@ void SAL_CALL StatusIndicator::reset()
 
 //***********************************************
 void SAL_CALL StatusIndicator::setText(const ::rtl::OUString& sText)
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ReadGuard aReadLock(m_aLock);
@@ -131,7 +127,6 @@ void SAL_CALL StatusIndicator::setText(const ::rtl::OUString& sText)
 
 //***********************************************
 void SAL_CALL StatusIndicator::setValue(sal_Int32 nValue)
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ReadGuard aReadLock(m_aLock);

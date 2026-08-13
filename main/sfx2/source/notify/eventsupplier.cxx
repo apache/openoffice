@@ -75,8 +75,6 @@ using ::com::sun::star::beans::PropertyValue;
 	//  --- XNameReplace ---
 //--------------------------------------------------------------------------------------------------------
 void SAL_CALL SfxEvents_Impl::replaceByName( const OUSTRING & aName, const ANY & rElement )
-								throw( ILLEGALARGUMENTEXCEPTION, NOSUCHELEMENTEXCEPTION,
-									   WRAPPEDTARGETEXCEPTION, RUNTIMEEXCEPTION )
 {
 	::osl::MutexGuard aGuard( maMutex );
 
@@ -133,8 +131,6 @@ void SAL_CALL SfxEvents_Impl::replaceByName( const OUSTRING & aName, const ANY &
 //  --- XNameAccess ---
 //--------------------------------------------------------------------------------------------------------
 ANY SAL_CALL SfxEvents_Impl::getByName( const OUSTRING& aName )
-								throw( NOSUCHELEMENTEXCEPTION, WRAPPEDTARGETEXCEPTION,
-									   RUNTIMEEXCEPTION )
 {
 	::osl::MutexGuard aGuard( maMutex );
 
@@ -152,13 +148,13 @@ ANY SAL_CALL SfxEvents_Impl::getByName( const OUSTRING& aName )
 }
 
 //--------------------------------------------------------------------------------------------------------
-SEQUENCE< OUSTRING > SAL_CALL SfxEvents_Impl::getElementNames() throw ( RUNTIMEEXCEPTION )
+SEQUENCE< OUSTRING > SAL_CALL SfxEvents_Impl::getElementNames()
 {
 	return maEventNames;
 }
 
 //--------------------------------------------------------------------------------------------------------
-sal_Bool SAL_CALL SfxEvents_Impl::hasByName( const OUSTRING& aName ) throw ( RUNTIMEEXCEPTION )
+sal_Bool SAL_CALL SfxEvents_Impl::hasByName( const OUSTRING& aName )
 {
 	::osl::MutexGuard aGuard( maMutex );
 
@@ -178,14 +174,14 @@ sal_Bool SAL_CALL SfxEvents_Impl::hasByName( const OUSTRING& aName ) throw ( RUN
 //--------------------------------------------------------------------------------------------------------
 //  --- XElementAccess ( parent of XNameAccess ) ---
 //--------------------------------------------------------------------------------------------------------
-UNOTYPE SAL_CALL SfxEvents_Impl::getElementType() throw ( RUNTIMEEXCEPTION )
+UNOTYPE SAL_CALL SfxEvents_Impl::getElementType()
 {
 	UNOTYPE aElementType = ::getCppuType( (const SEQUENCE < PROPERTYVALUE > *)0 );
 	return aElementType;
 }
 
 //--------------------------------------------------------------------------------------------------------
-sal_Bool SAL_CALL SfxEvents_Impl::hasElements() throw ( RUNTIMEEXCEPTION )
+sal_Bool SAL_CALL SfxEvents_Impl::hasElements()
 {
 	::osl::MutexGuard aGuard( maMutex );
 
@@ -310,7 +306,7 @@ static void Execute( ANY& aEventData, const css::document::DocumentEvent& aTrigg
 //--------------------------------------------------------------------------------------------------------
 // --- ::document::XEventListener ---
 //--------------------------------------------------------------------------------------------------------
-void SAL_CALL SfxEvents_Impl::notifyEvent( const DOCEVENTOBJECT& aEvent ) throw( RUNTIMEEXCEPTION )
+void SAL_CALL SfxEvents_Impl::notifyEvent( const DOCEVENTOBJECT& aEvent )
 {
 	::osl::ClearableMutexGuard aGuard( maMutex );
 
@@ -340,7 +336,7 @@ void SAL_CALL SfxEvents_Impl::notifyEvent( const DOCEVENTOBJECT& aEvent ) throw(
 //--------------------------------------------------------------------------------------------------------
 // --- ::lang::XEventListener ---
 //--------------------------------------------------------------------------------------------------------
-void SAL_CALL SfxEvents_Impl::disposing( const EVENTOBJECT& /*Source*/ ) throw( RUNTIMEEXCEPTION )
+void SAL_CALL SfxEvents_Impl::disposing( const EVENTOBJECT& /*Source*/ )
 {
 	::osl::MutexGuard aGuard( maMutex );
 
@@ -550,7 +546,6 @@ void ModelCollectionEnumeration::setModelList(const TModelList& rList)
 }
 
 sal_Bool SAL_CALL ModelCollectionEnumeration::hasMoreElements()
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -559,9 +554,6 @@ sal_Bool SAL_CALL ModelCollectionEnumeration::hasMoreElements()
 }
 
 css::uno::Any SAL_CALL ModelCollectionEnumeration::nextElement()
-    throw(css::container::NoSuchElementException,
-          css::lang::WrappedTargetException     ,
-          css::uno::RuntimeException            )
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -605,7 +597,6 @@ SfxGlobalEvents_Impl::~SfxGlobalEvents_Impl()
 
 //-----------------------------------------------------------------------------
 css::uno::Reference< css::container::XNameReplace > SAL_CALL SfxGlobalEvents_Impl::getEvents()
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -615,7 +606,6 @@ css::uno::Reference< css::container::XNameReplace > SAL_CALL SfxGlobalEvents_Imp
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::addEventListener(const css::uno::Reference< css::document::XEventListener >& xListener)
-    throw(css::uno::RuntimeException)
 {
     // container is threadsafe
 	m_aLegacyListeners.addInterface(xListener);
@@ -623,7 +613,6 @@ void SAL_CALL SfxGlobalEvents_Impl::addEventListener(const css::uno::Reference< 
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::removeEventListener(const css::uno::Reference< css::document::XEventListener >& xListener)
-    throw(css::uno::RuntimeException)
 {
     // container is threadsafe
 	m_aLegacyListeners.removeInterface(xListener);
@@ -631,14 +620,12 @@ void SAL_CALL SfxGlobalEvents_Impl::removeEventListener(const css::uno::Referenc
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::addDocumentEventListener( const css::uno::Reference< css::document::XDocumentEventListener >& _Listener )
-    throw(css::uno::RuntimeException)
 {
     m_aDocumentListeners.addInterface( _Listener );
 }
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::removeDocumentEventListener( const css::uno::Reference< css::document::XDocumentEventListener >& _Listener )
-    throw(css::uno::RuntimeException)
 {
     m_aDocumentListeners.removeInterface( _Listener );
 }
@@ -646,7 +633,6 @@ void SAL_CALL SfxGlobalEvents_Impl::removeDocumentEventListener( const css::uno:
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::notifyDocumentEvent( const ::rtl::OUString& /*_EventName*/,
         const css::uno::Reference< css::frame::XController2 >& /*_ViewController*/, const css::uno::Any& /*_Supplement*/ )
-        throw (css::lang::IllegalArgumentException, css::lang::NoSupportException, css::uno::RuntimeException)
 {
     // we're a multiplexer only, no chance to generate artificial events here
     throw css::lang::NoSupportException(::rtl::OUString(), *this);
@@ -654,7 +640,6 @@ void SAL_CALL SfxGlobalEvents_Impl::notifyDocumentEvent( const ::rtl::OUString& 
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::notifyEvent(const css::document::EventObject& aEvent)
-    throw(css::uno::RuntimeException)
 {
     css::document::DocumentEvent aDocEvent(aEvent.Source, aEvent.EventName, NULL, css::uno::Any());
     implts_notifyJobExecution(aEvent);
@@ -664,7 +649,6 @@ void SAL_CALL SfxGlobalEvents_Impl::notifyEvent(const css::document::EventObject
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::documentEventOccured( const ::css::document::DocumentEvent& _Event )
-    throw (::css::uno::RuntimeException)
 {
     implts_notifyJobExecution(css::document::EventObject(_Event.Source, _Event.EventName));
     implts_checkAndExecuteEventBindings(_Event);
@@ -673,7 +657,6 @@ void SAL_CALL SfxGlobalEvents_Impl::documentEventOccured( const ::css::document:
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::disposing(const css::lang::EventObject& aEvent)
-    throw(css::uno::RuntimeException)
 {
     css::uno::Reference< css::frame::XModel > xDoc(aEvent.Source, UNO_QUERY);
 
@@ -688,7 +671,6 @@ void SAL_CALL SfxGlobalEvents_Impl::disposing(const css::lang::EventObject& aEve
 
 //-----------------------------------------------------------------------------
 sal_Bool SAL_CALL SfxGlobalEvents_Impl::has(const css::uno::Any& aElement)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Reference< css::frame::XModel > xDoc;
     aElement >>= xDoc;
@@ -708,9 +690,6 @@ sal_Bool SAL_CALL SfxGlobalEvents_Impl::has(const css::uno::Any& aElement)
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::insert( const css::uno::Any& aElement )
-    throw (css::lang::IllegalArgumentException  ,
-           css::container::ElementExistException,
-           css::uno::RuntimeException           )
 {
     css::uno::Reference< css::frame::XModel > xDoc;
     aElement >>= xDoc;
@@ -745,9 +724,6 @@ void SAL_CALL SfxGlobalEvents_Impl::insert( const css::uno::Any& aElement )
 
 //-----------------------------------------------------------------------------
 void SAL_CALL SfxGlobalEvents_Impl::remove( const css::uno::Any& aElement )
-    throw (css::lang::IllegalArgumentException   ,
-           css::container::NoSuchElementException,
-           css::uno::RuntimeException            )
 {
     css::uno::Reference< css::frame::XModel > xDoc;
     aElement >>= xDoc;
@@ -782,7 +758,6 @@ void SAL_CALL SfxGlobalEvents_Impl::remove( const css::uno::Any& aElement )
 
 //-----------------------------------------------------------------------------
 css::uno::Reference< css::container::XEnumeration > SAL_CALL SfxGlobalEvents_Impl::createEnumeration()
-    throw (css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -799,14 +774,12 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL SfxGlobalEvents_Imp
 
 //-----------------------------------------------------------------------------
 css::uno::Type SAL_CALL SfxGlobalEvents_Impl::getElementType()
-    throw (css::uno::RuntimeException)
 {
     return ::getCppuType(static_cast< css::uno::Reference< css::frame::XModel >* >(NULL));
 }
 
 //-----------------------------------------------------------------------------
 sal_Bool SAL_CALL SfxGlobalEvents_Impl::hasElements()
-    throw (css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);

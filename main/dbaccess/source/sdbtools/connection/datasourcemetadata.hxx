@@ -74,7 +74,7 @@ namespace sdbtools
         );
 
         // XDataSourceMetaData
-        virtual ::sal_Bool SAL_CALL supportsQueriesInFrom(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Bool SAL_CALL supportsQueriesInFrom(  );
 
     protected:
         virtual ~DataSourceMetaData();

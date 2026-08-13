@@ -49,10 +49,10 @@ public:
     void stopListening();
 
     //XModifyListener
-    virtual void SAL_CALL modified( const lang::EventObject& aEvent ) throw (uno::RuntimeException);
+    virtual void SAL_CALL modified( const lang::EventObject& aEvent );
 
     //XEventListener
-    virtual void SAL_CALL disposing( const lang::EventObject& Source ) throw (uno::RuntimeException);
+    virtual void SAL_CALL disposing( const lang::EventObject& Source );
 
     using ::cppu::WeakComponentImplHelperBase::disposing;
 
@@ -74,13 +74,13 @@ ModifyListenerCallBack_impl::~ModifyListenerCallBack_impl()
 }
 
 //XModifyListener
-void SAL_CALL ModifyListenerCallBack_impl::modified( const lang::EventObject& /*aEvent*/ ) throw (uno::RuntimeException)
+void SAL_CALL ModifyListenerCallBack_impl::modified( const lang::EventObject& /*aEvent*/ )
 {
     m_aLink.Call(0);
 }
 
 //XEventListener
-void SAL_CALL ModifyListenerCallBack_impl::disposing( const lang::EventObject& /*Source*/ ) throw (uno::RuntimeException)
+void SAL_CALL ModifyListenerCallBack_impl::disposing( const lang::EventObject& /*Source*/ )
 {
     m_xBroadcaster.clear();
 }

@@ -57,15 +57,6 @@ public:
 
 							SfxBroadcaster();
 							SfxBroadcaster( const SfxBroadcaster &rBC );
-	/*	The specification is paperwork, not behaviour: this destructor throws
-		nothing and MSVC does not enforce a dynamic specification at run time.
-		It is required because classes derived from this one ALSO derive from a
-		UNO base whose destructor is declared SAL_THROW( (RuntimeException) ).
-		From C++11 on the compiler gives a destructor with no written
-		specification an implicit "never throws", and the derived class's own
-		implicit specification -- deduced from its bases -- is then weaker than
-		that, which an override may not be (C2694). Under C++03 no implicit
-		specification exists and this is inert. */
 	virtual 				~SfxBroadcaster();
 
 	void					Broadcast( const SfxHint &rHint );

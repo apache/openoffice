@@ -69,7 +69,7 @@ VCLXTopWindow_Base::~VCLXTopWindow_Base()
 {
 }
 
-Any VCLXTopWindow_Base::queryInterface( const Type & rType ) throw(RuntimeException)
+Any VCLXTopWindow_Base::queryInterface( const Type & rType )
 {
     ::com::sun::star::uno::Any aRet( VCLXTopWindow_XBase::queryInterface( rType ) );
 
@@ -80,7 +80,7 @@ Any VCLXTopWindow_Base::queryInterface( const Type & rType ) throw(RuntimeExcept
     return aRet;
 }
 
-Sequence< Type > VCLXTopWindow_Base::getTypes() throw(RuntimeException)
+Sequence< Type > VCLXTopWindow_Base::getTypes()
 {
     Sequence< Type > aTypes( VCLXTopWindow_XBase::getTypes() );
     if ( m_bWHWND )
@@ -88,7 +88,7 @@ Sequence< Type > VCLXTopWindow_Base::getTypes() throw(RuntimeException)
     return aTypes;
 }
 
-::com::sun::star::uno::Any VCLXTopWindow_Base::getWindowHandle( const ::com::sun::star::uno::Sequence< sal_Int8 >& /*ProcessId*/, sal_Int16 SystemType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXTopWindow_Base::getWindowHandle( const ::com::sun::star::uno::Sequence< sal_Int8 >& /*ProcessId*/, sal_Int16 SystemType )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -129,21 +129,21 @@ Sequence< Type > VCLXTopWindow_Base::getTypes() throw(RuntimeException)
 	return aRet;
 }
 
-void VCLXTopWindow_Base::addTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTopWindow_Base::addTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
 	GetTopWindowListenersImpl().addInterface( rxListener );
 }
 
-void VCLXTopWindow_Base::removeTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTopWindow_Base::removeTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
 	GetTopWindowListenersImpl().removeInterface( rxListener );
 }
 
-void VCLXTopWindow_Base::toFront(  ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTopWindow_Base::toFront(  )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -152,7 +152,7 @@ void VCLXTopWindow_Base::toFront(  ) throw(::com::sun::star::uno::RuntimeExcepti
 		((WorkWindow*)pWindow)->ToTop( TOTOP_RESTOREWHENMIN );
 }
 
-void VCLXTopWindow_Base::toBack(  ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTopWindow_Base::toBack(  )
 {
 #if 0 // Not possible in VCL...
 
@@ -166,7 +166,7 @@ void VCLXTopWindow_Base::toBack(  ) throw(::com::sun::star::uno::RuntimeExceptio
 #endif
 }
 
-void VCLXTopWindow_Base::setMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMenuBar >& rxMenu ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTopWindow_Base::setMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMenuBar >& rxMenu )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -185,7 +185,7 @@ void VCLXTopWindow_Base::setMenuBar( const ::com::sun::star::uno::Reference< ::c
 }
 
 //--------------------------------------------------------------------
-::sal_Bool SAL_CALL VCLXTopWindow_Base::getIsMaximized() throw (RuntimeException)
+::sal_Bool SAL_CALL VCLXTopWindow_Base::getIsMaximized()
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -197,7 +197,7 @@ void VCLXTopWindow_Base::setMenuBar( const ::com::sun::star::uno::Reference< ::c
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL VCLXTopWindow_Base::setIsMaximized( ::sal_Bool _ismaximized ) throw (RuntimeException)
+void SAL_CALL VCLXTopWindow_Base::setIsMaximized( ::sal_Bool _ismaximized )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -209,7 +209,7 @@ void SAL_CALL VCLXTopWindow_Base::setIsMaximized( ::sal_Bool _ismaximized ) thro
 }
 
 //--------------------------------------------------------------------
-::sal_Bool SAL_CALL VCLXTopWindow_Base::getIsMinimized() throw (RuntimeException)
+::sal_Bool SAL_CALL VCLXTopWindow_Base::getIsMinimized()
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -221,7 +221,7 @@ void SAL_CALL VCLXTopWindow_Base::setIsMaximized( ::sal_Bool _ismaximized ) thro
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL VCLXTopWindow_Base::setIsMinimized( ::sal_Bool _isMinimized ) throw (RuntimeException)
+void SAL_CALL VCLXTopWindow_Base::setIsMinimized( ::sal_Bool _isMinimized )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -233,7 +233,7 @@ void SAL_CALL VCLXTopWindow_Base::setIsMinimized( ::sal_Bool _isMinimized ) thro
 }
 
 //--------------------------------------------------------------------
-::sal_Int32 SAL_CALL VCLXTopWindow_Base::getDisplay() throw (RuntimeException)
+::sal_Int32 SAL_CALL VCLXTopWindow_Base::getDisplay()
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -245,7 +245,7 @@ void SAL_CALL VCLXTopWindow_Base::setIsMinimized( ::sal_Bool _isMinimized ) thro
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL VCLXTopWindow_Base::setDisplay( ::sal_Int32 _display ) throw (RuntimeException, IndexOutOfBoundsException)
+void SAL_CALL VCLXTopWindow_Base::setDisplay( ::sal_Int32 _display )
 {
 	::vos::OGuard aGuard( GetMutexImpl() );
 
@@ -293,7 +293,7 @@ Window* VCLXTopWindow::GetWindowImpl()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXTopWindow::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXTopWindow::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
     ::com::sun::star::uno::Any aRet( VCLXTopWindow_Base::queryInterface( rType ) );
 
@@ -303,7 +303,7 @@ Window* VCLXTopWindow::GetWindowImpl()
     return aRet;
 }
 
-::com::sun::star::uno::Sequence< sal_Int8 > VCLXTopWindow::getImplementationId() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< sal_Int8 > VCLXTopWindow::getImplementationId()
 {
     static ::cppu::OImplementationId* pId = NULL;
     static ::cppu::OImplementationId* pIdWithHandle = NULL;
@@ -337,7 +337,7 @@ Window* VCLXTopWindow::GetWindowImpl()
     }
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > VCLXTopWindow::getTypes() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > VCLXTopWindow::getTypes()
 {
     return ::comphelper::concatSequences( VCLXTopWindow_Base::getTypes(), VCLXContainer::getTypes() );
 }

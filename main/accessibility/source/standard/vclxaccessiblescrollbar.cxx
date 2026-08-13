@@ -113,14 +113,14 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER2( VCLXAccessibleScrollBar, VCLXAccessibleCompone
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleScrollBar::getImplementationName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleScrollBar::getImplementationName()
 {
 	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleScrollBar" );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > VCLXAccessibleScrollBar::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleScrollBar::getSupportedServiceNames()
 {
 	Sequence< ::rtl::OUString > aNames(1);
 	aNames[0] = ::rtl::OUString::createFromAscii( "com.sun.star.awt.AccessibleScrollBar" );
@@ -131,7 +131,7 @@ Sequence< ::rtl::OUString > VCLXAccessibleScrollBar::getSupportedServiceNames() 
 // XAccessibleAction
 // -----------------------------------------------------------------------------
 
-sal_Int32 VCLXAccessibleScrollBar::getAccessibleActionCount( ) throw (RuntimeException)
+sal_Int32 VCLXAccessibleScrollBar::getAccessibleActionCount( )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -140,7 +140,7 @@ sal_Int32 VCLXAccessibleScrollBar::getAccessibleActionCount( ) throw (RuntimeExc
 
 // -----------------------------------------------------------------------------
 
-sal_Bool VCLXAccessibleScrollBar::doAccessibleAction ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool VCLXAccessibleScrollBar::doAccessibleAction ( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -169,7 +169,7 @@ sal_Bool VCLXAccessibleScrollBar::doAccessibleAction ( sal_Int32 nIndex ) throw 
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleScrollBar::getAccessibleActionDescription ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+::rtl::OUString VCLXAccessibleScrollBar::getAccessibleActionDescription ( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -192,7 +192,7 @@ sal_Bool VCLXAccessibleScrollBar::doAccessibleAction ( sal_Int32 nIndex ) throw 
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleKeyBinding > VCLXAccessibleScrollBar::getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessibleKeyBinding > VCLXAccessibleScrollBar::getAccessibleActionKeyBinding( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -206,7 +206,7 @@ Reference< XAccessibleKeyBinding > VCLXAccessibleScrollBar::getAccessibleActionK
 // XAccessibleValue
 // -----------------------------------------------------------------------------
 
-Any VCLXAccessibleScrollBar::getCurrentValue(  ) throw (RuntimeException)
+Any VCLXAccessibleScrollBar::getCurrentValue(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -221,7 +221,7 @@ Any VCLXAccessibleScrollBar::getCurrentValue(  ) throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-sal_Bool VCLXAccessibleScrollBar::setCurrentValue( const Any& aNumber ) throw (RuntimeException)
+sal_Bool VCLXAccessibleScrollBar::setCurrentValue( const Any& aNumber )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -249,7 +249,7 @@ sal_Bool VCLXAccessibleScrollBar::setCurrentValue( const Any& aNumber ) throw (R
 
 // -----------------------------------------------------------------------------
 
-Any VCLXAccessibleScrollBar::getMaximumValue(  ) throw (RuntimeException)
+Any VCLXAccessibleScrollBar::getMaximumValue(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -264,7 +264,7 @@ Any VCLXAccessibleScrollBar::getMaximumValue(  ) throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-Any VCLXAccessibleScrollBar::getMinimumValue(  ) throw (RuntimeException)
+Any VCLXAccessibleScrollBar::getMinimumValue(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -276,7 +276,7 @@ Any VCLXAccessibleScrollBar::getMinimumValue(  ) throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleScrollBar::getAccessibleName(  ) throw (uno::RuntimeException)
+::rtl::OUString VCLXAccessibleScrollBar::getAccessibleName(  )
 {
 	OExternalLockGuard aGuard( this );
 

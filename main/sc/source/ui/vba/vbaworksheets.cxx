@@ -70,11 +70,11 @@ class WorkSheetsEnumeration : public SheetEnumeration_BASE
 	SheetMap::iterator mIt;
 public:
 	WorkSheetsEnumeration( const SheetMap& sMap ) : mSheetMap( sMap ), mIt( mSheetMap.begin() ) {}
-	virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasMoreElements(  )
 	{
 		return ( mIt != mSheetMap.end() );
 	}
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL nextElement(  )
 	{
 		if ( !hasMoreElements() )
 			throw container::NoSuchElementException();
@@ -90,16 +90,16 @@ class SheetCollectionHelper : public SheetCollectionHelper_BASE
 public:
 	SheetCollectionHelper( const SheetMap& sMap ) : mSheetMap( sMap ), cachePos(mSheetMap.begin()) {}
 	// XElementAccess
-	virtual uno::Type SAL_CALL getElementType(  ) throw (uno::RuntimeException) { return  sheet::XSpreadsheet::static_type(0); }
-	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException) { return ( mSheetMap.size() > 0 ); }
+	virtual uno::Type SAL_CALL getElementType(  ) { return  sheet::XSpreadsheet::static_type(0); }
+	virtual ::sal_Bool SAL_CALL hasElements(  ) { return ( mSheetMap.size() > 0 ); }
 	// XNameAcess
-	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
 	{
 		if ( !hasByName(aName) )
 			throw container::NoSuchElementException();
 		return uno::makeAny( *cachePos );
 	}
-	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (uno::RuntimeException)
+	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  )
 	{
 		uno::Sequence< rtl::OUString > sNames( mSheetMap.size() );
 		rtl::OUString* pString = sNames.getArray();
@@ -113,7 +113,7 @@ public:
 		}
 		return sNames;
 	}
-	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
 	{
 		cachePos = mSheetMap.begin();
 		SheetMap::iterator it_end = mSheetMap.end();
@@ -127,8 +127,8 @@ public:
 	}
 
 	// XElementAccess
-	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException) { return mSheetMap.size(); }
-	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException )
+	virtual ::sal_Int32 SAL_CALL getCount(  ) { return mSheetMap.size(); }
+	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index )
 	{
 		if ( Index < 0 || Index >= getCount() )
 			throw lang::IndexOutOfBoundsException();
@@ -137,7 +137,7 @@ public:
 
 	}
 	// XEnumerationAccess
-	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration(  ) throw (uno::RuntimeException)
+	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration(  )
 	{
 		return new WorkSheetsEnumeration( mSheetMap );
 	}
@@ -147,9 +147,9 @@ class SheetsEnumeration : public EnumerationHelperImpl
 {
 	uno::Reference< frame::XModel > m_xModel;
 public:
-    SheetsEnumeration( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration,  const uno::Reference< frame::XModel >& xModel  ) throw ( uno::RuntimeException ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), m_xModel( xModel ) {}
+    SheetsEnumeration( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration,  const uno::Reference< frame::XModel >& xModel  ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), m_xModel( xModel ) {}
 
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL nextElement(  )
 	{
 		uno::Reference< sheet::XSpreadsheet > xSheet( m_xEnumeration->nextElement(), uno::UNO_QUERY_THROW );
 		uno::Reference< XHelperInterface > xIf = excel::getUnoSheetModuleObj( xSheet );
@@ -178,13 +178,13 @@ ScVbaWorksheets::ScVbaWorksheets( const uno::Reference< XHelperInterface >& xPar
 
 // XEnumerationAccess
 uno::Type
-ScVbaWorksheets::getElementType() throw (uno::RuntimeException)
+ScVbaWorksheets::getElementType()
 {
 	return excel::XWorksheet::static_type(0);
 }
 
 uno::Reference< container::XEnumeration >
-ScVbaWorksheets::createEnumeration() throw (uno::RuntimeException)
+ScVbaWorksheets::createEnumeration()
 {
 	if ( !m_xSheets.is() )
 	{
@@ -216,7 +216,7 @@ ScVbaWorksheets::createCollectionObject( const uno::Any& aSource )
 // XWorksheets
 uno::Any
 ScVbaWorksheets::Add( const uno::Any& Before, const uno::Any& After,
-					 const uno::Any& Count, const uno::Any& Type ) throw (uno::RuntimeException)
+					 const uno::Any& Count, const uno::Any& Type )
 {
 	if ( isSelectedSheets() )
 		return uno::Any(); // or should we throw?
@@ -291,7 +291,7 @@ ScVbaWorksheets::Add( const uno::Any& Before, const uno::Any& After,
 }
 
 void
-ScVbaWorksheets::Delete() throw (uno::RuntimeException)
+ScVbaWorksheets::Delete()
 {
 	// #TODO #INVESTIGATE
 	// mmm this method could be trouble if the underlying
@@ -312,7 +312,7 @@ ScVbaWorksheets::isSelectedSheets()
 }
 
 void SAL_CALL
-ScVbaWorksheets::PrintOut( const uno::Any& From, const uno::Any& To, const uno::Any& Copies, const uno::Any& Preview, const uno::Any& ActivePrinter, const uno::Any& PrintToFile, const uno::Any& Collate, const uno::Any& PrToFileName ) throw (uno::RuntimeException)
+ScVbaWorksheets::PrintOut( const uno::Any& From, const uno::Any& To, const uno::Any& Copies, const uno::Any& Preview, const uno::Any& ActivePrinter, const uno::Any& PrintToFile, const uno::Any& Collate, const uno::Any& PrToFileName )
 {
 	sal_Int32 nTo = 0;
 	sal_Int32 nFrom = 0;
@@ -333,7 +333,7 @@ ScVbaWorksheets::PrintOut( const uno::Any& From, const uno::Any& To, const uno::
 }
 
 uno::Any SAL_CALL
-ScVbaWorksheets::getVisible() throw (uno::RuntimeException)
+ScVbaWorksheets::getVisible()
 {
 	sal_Bool bVisible = sal_True;
 	uno::Reference< container::XEnumeration > xEnum( createEnumeration(), uno::UNO_QUERY_THROW );
@@ -350,7 +350,7 @@ ScVbaWorksheets::getVisible() throw (uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaWorksheets::setVisible( const uno::Any& _visible ) throw (uno::RuntimeException)
+ScVbaWorksheets::setVisible( const uno::Any& _visible )
 {
 	sal_Bool bState = sal_False;
 	if ( _visible >>= bState )
@@ -368,7 +368,7 @@ ScVbaWorksheets::setVisible( const uno::Any& _visible ) throw (uno::RuntimeExcep
 }
 
 void SAL_CALL
-ScVbaWorksheets::Select( const uno::Any& Replace ) throw (uno::RuntimeException)
+ScVbaWorksheets::Select( const uno::Any& Replace )
 {
 	ScTabViewShell* pViewShell = excel::getBestViewShell( mxModel );
 	if ( !pViewShell )
@@ -404,7 +404,7 @@ ScVbaWorksheets::Select( const uno::Any& Replace ) throw (uno::RuntimeException)
 
 //ScVbaCollectionBaseImpl
 uno::Any SAL_CALL
-ScVbaWorksheets::Item( const uno::Any& Index, const uno::Any& Index2  ) throw (uno::RuntimeException)
+ScVbaWorksheets::Item( const uno::Any& Index, const uno::Any& Index2  )
 {
 	if ( Index.getValueTypeClass() == uno::TypeClass_SEQUENCE )
 	{
@@ -434,7 +434,7 @@ ScVbaWorksheets::Item( const uno::Any& Index, const uno::Any& Index2  ) throw (u
 }
 
 uno::Any
-ScVbaWorksheets::getItemByStringIndex( const rtl::OUString& sIndex ) throw (uno::RuntimeException)
+ScVbaWorksheets::getItemByStringIndex( const rtl::OUString& sIndex )
 {
 	return ScVbaWorksheets_BASE::getItemByStringIndex( sIndex );
 }
@@ -458,7 +458,7 @@ ScVbaWorksheets::getServiceNames()
 	return sNames;
 }
 
-/*static*/ bool ScVbaWorksheets::nameExists( uno::Reference <sheet::XSpreadsheetDocument>& xSpreadDoc, const ::rtl::OUString & name, SCTAB& nTab ) throw ( lang::IllegalArgumentException )
+/*static*/ bool ScVbaWorksheets::nameExists( uno::Reference <sheet::XSpreadsheetDocument>& xSpreadDoc, const ::rtl::OUString & name, SCTAB& nTab )
 {
 	if (!xSpreadDoc.is())
 		throw lang::IllegalArgumentException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "nameExists() xSpreadDoc is null" ) ), uno::Reference< uno::XInterface  >(), 1 );

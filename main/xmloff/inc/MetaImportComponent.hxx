@@ -55,8 +55,7 @@ protected:
 			::com::sun::star::xml::sax::XAttributeList > & xAttrList );
 
 	// XImporter
-    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-        throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 };
 
 
@@ -72,7 +71,6 @@ protected:
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 	XMLMetaImportComponent_createInstance(
 		const ::com::sun::star::uno::Reference<
-			::com::sun::star::lang::XMultiServiceFactory > & )
-	throw( ::com::sun::star::uno::Exception );
+			::com::sun::star::lang::XMultiServiceFactory > & );
 
 #endif

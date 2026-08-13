@@ -121,24 +121,19 @@ class TagWindowAsModified :   // interfaces
 
         //____________________________
         // XInitialization
-        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments)
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments);
 
         //____________________________
         // XModifyListener
-        virtual void SAL_CALL modified(const css::lang::EventObject& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL modified(const css::lang::EventObject& aEvent);
 
         //____________________________
         // XFrameActionListener
-        virtual void SAL_CALL frameAction(const css::frame::FrameActionEvent& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL frameAction(const css::frame::FrameActionEvent& aEvent);
 
         //____________________________
         // XEventListener
-        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent);
 
     private:
 

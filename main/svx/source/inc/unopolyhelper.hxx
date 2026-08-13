@@ -38,8 +38,7 @@ namespace basegfx {
 
 /** convert a drawing::PolyPolygonBezierCoords to a B2DPolyPolygon
 */
-basegfx::B2DPolyPolygon SvxConvertPolyPolygonBezierToB2DPolyPolygon( const com::sun::star::drawing::PolyPolygonBezierCoords* pSourcePolyPolygon)
-	throw( com::sun::star::lang::IllegalArgumentException );
+basegfx::B2DPolyPolygon SvxConvertPolyPolygonBezierToB2DPolyPolygon( const com::sun::star::drawing::PolyPolygonBezierCoords* pSourcePolyPolygon);
 
 /** convert a B2DPolyPolygon to a drawing::PolyPolygonBezierCoords
 */

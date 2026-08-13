@@ -75,19 +75,16 @@ uno::Reference< uno::XInterface > SAL_CALL LayoutFactory::impl_staticCreateSelfI
 
 // XServiceInfo
 ::rtl::OUString SAL_CALL LayoutFactory::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return impl_staticGetImplementationName();
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL LayoutFactory::getSupportedServiceNames()
-    throw ( uno::RuntimeException )
 {
     return impl_staticGetSupportedServiceNames();
 }
 
 sal_Bool SAL_CALL LayoutFactory::supportsService( const ::rtl::OUString& ServiceName )
-    throw ( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
     for ( sal_Int32 i = 0; i < aSeq.getLength(); i++ )
@@ -99,8 +96,6 @@ sal_Bool SAL_CALL LayoutFactory::supportsService( const ::rtl::OUString& Service
 
 // XSingleServiceFactory
 uno::Reference< uno::XInterface > SAL_CALL LayoutFactory::createInstance()
-    throw ( uno::Exception,
-            uno::RuntimeException )
 {
     return uno::Reference< uno::XInterface >(
         static_cast< OWeakObject* >( new LayoutRoot( m_xFactory ) ),
@@ -109,8 +104,6 @@ uno::Reference< uno::XInterface > SAL_CALL LayoutFactory::createInstance()
 
 uno::Reference< uno::XInterface > SAL_CALL LayoutFactory::createInstanceWithArguments(
     const uno::Sequence< uno::Any >& aArguments )
-    throw ( uno::Exception,
-            uno::RuntimeException )
 {
     uno::Reference< uno::XInterface > layout = createInstance();
     uno::Reference< lang::XInitialization > xInit( layout, uno::UNO_QUERY );

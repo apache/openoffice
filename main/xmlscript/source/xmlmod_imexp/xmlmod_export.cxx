@@ -40,7 +40,6 @@ void
 SAL_CALL exportScriptModule(
 	Reference< xml::sax::XExtendedDocumentHandler > const & xOut,
 	const ModuleDescriptor& rMod )
-		SAL_THROW( (Exception) )
 {
 	xOut->startDocument();
 

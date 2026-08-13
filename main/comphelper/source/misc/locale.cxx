@@ -356,7 +356,6 @@ const Locale& Locale::ZH_TW()
 
 //-----------------------------------------------
 Locale::Locale(const ::rtl::OUString& sISO)
-    throw(Locale::MalFormedLocaleException)
 {
     fromISO(sISO);
 }
@@ -429,7 +428,6 @@ void Locale::setVariant(const ::rtl::OUString& sVariant)
    automatically...
  */
 void Locale::fromISO(const ::rtl::OUString& sISO)
-    throw(Locale::MalFormedLocaleException)
 {
     m_sLanguage = ::rtl::OUString();
     m_sCountry  = ::rtl::OUString();
@@ -506,7 +504,6 @@ sal_Bool Locale::similar(const Locale& aComparable) const
 //-----------------------------------------------
 ::std::vector< ::rtl::OUString >::const_iterator Locale::getFallback(const ::std::vector< ::rtl::OUString >& lISOList     ,
                                                                      const ::rtl::OUString&                  sReferenceISO)
-    throw(Locale::MalFormedLocaleException)
 {
     Locale aReference(sReferenceISO);
 

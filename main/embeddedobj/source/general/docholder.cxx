@@ -612,7 +612,6 @@ uno::Reference< container::XIndexAccess > DocumentHolder::RetrieveOwnMenu_Impl()
 void DocumentHolder::FindConnectPoints(
 		const uno::Reference< container::XIndexAccess >& xMenu,
 		sal_Int32 nConnectPoints[2] )
-	throw ( uno::Exception )
 {
 	nConnectPoints[0] = -1;
 	nConnectPoints[1] = -1;
@@ -645,7 +644,6 @@ uno::Reference< container::XIndexAccess > DocumentHolder::MergeMenuesForInplace(
 		const ::rtl::OUString& aContModuleName,
 		const uno::Reference< container::XIndexAccess >& xOwnMenu,
 		const uno::Reference< frame::XDispatchProvider >& xOwnDisp )
-	throw ( uno::Exception )
 {
 	// TODO/LATER: use dispatch providers on merge
 
@@ -1153,7 +1151,6 @@ awt::Rectangle DocumentHolder::AddBorderToArea( const awt::Rectangle& aRect )
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::disposing( const com::sun::star::lang::EventObject& aSource )
-		throw (uno::RuntimeException)
 {
 	if ( m_xComponent.is() && m_xComponent == aSource.Source )
 	{
@@ -1176,7 +1173,6 @@ void SAL_CALL DocumentHolder::disposing( const com::sun::star::lang::EventObject
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::queryClosing( const lang::EventObject& aSource, sal_Bool /*bGetsOwnership*/ )
-		throw (util::CloseVetoException, uno::RuntimeException)
 {
 	if ( m_xComponent.is() && m_xComponent == aSource.Source && !m_bAllowClosing )
 		throw util::CloseVetoException();
@@ -1184,7 +1180,6 @@ void SAL_CALL DocumentHolder::queryClosing( const lang::EventObject& aSource, sa
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::notifyClosing( const lang::EventObject& aSource )
-		throw (uno::RuntimeException)
 {
 	if ( m_xComponent.is() && m_xComponent == aSource.Source )
 	{
@@ -1206,7 +1201,6 @@ void SAL_CALL DocumentHolder::notifyClosing( const lang::EventObject& aSource )
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::queryTermination( const lang::EventObject& )
-		throw (frame::TerminationVetoException, uno::RuntimeException)
 {
 	if ( m_bWaitForClose )
 		throw frame::TerminationVetoException();
@@ -1214,7 +1208,6 @@ void SAL_CALL DocumentHolder::queryTermination( const lang::EventObject& )
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::notifyTermination( const lang::EventObject& aSource )
-		throw (uno::RuntimeException)
 {
 	OSL_ENSURE( !m_xComponent.is(), "Just a disaster..." );
 
@@ -1226,7 +1219,6 @@ void SAL_CALL DocumentHolder::notifyTermination( const lang::EventObject& aSourc
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::modified( const lang::EventObject& aEvent )
-	throw ( uno::RuntimeException )
 {
 	// if the component does not support document::XEventBroadcaster
 	// the modify notifications are used as workaround, but only for running state
@@ -1236,7 +1228,6 @@ void SAL_CALL DocumentHolder::modified( const lang::EventObject& aEvent )
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::notifyEvent( const document::EventObject& Event )
-	throw ( uno::RuntimeException )
 {
 	if( m_pEmbedObj && Event.Source == m_xComponent )
 	{
@@ -1253,7 +1244,6 @@ void SAL_CALL DocumentHolder::notifyEvent( const document::EventObject& Event )
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::borderWidthsChanged( const uno::Reference< uno::XInterface >& aObject,
 													const frame::BorderWidths& aNewSize )
-	throw ( uno::RuntimeException )
 {
 	// TODO: may require mutex introduction ???
 	if ( m_pEmbedObj && m_xFrame.is() && aObject == m_xFrame->getController() )
@@ -1272,7 +1262,6 @@ void SAL_CALL DocumentHolder::borderWidthsChanged( const uno::Reference< uno::XI
 
 //---------------------------------------------------------------------------
 void SAL_CALL DocumentHolder::requestPositioning( const awt::Rectangle& aRect )
-	throw (uno::RuntimeException)
 {
 	// TODO: may require mutex introduction ???
 	if ( m_pEmbedObj )
@@ -1286,7 +1275,6 @@ void SAL_CALL DocumentHolder::requestPositioning( const awt::Rectangle& aRect )
 
 //---------------------------------------------------------------------------
 awt::Rectangle SAL_CALL DocumentHolder::calcAdjustedRectangle( const awt::Rectangle& aRect )
-	throw (uno::RuntimeException)
 {
 	// Solar mutex should be locked already since this is a call from HatchWindow with focus
 	awt::Rectangle aResult( aRect );
@@ -1312,7 +1300,7 @@ awt::Rectangle SAL_CALL DocumentHolder::calcAdjustedRectangle( const awt::Rectan
 	return aResult;
 }
 
-void SAL_CALL DocumentHolder::activated(  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL DocumentHolder::activated(  )
 {
     if ( (m_pEmbedObj->getStatus(embed::Aspects::MSOLE_CONTENT)&embed::EmbedMisc::MS_EMBED_ACTIVATEWHENVISIBLE) )
     {
@@ -1349,7 +1337,7 @@ void DocumentHolder::ResizeHatchWindow()
 	xHatchWindow->setHatchBorderSize( awt::Size( HATCH_BORDER_WIDTH, HATCH_BORDER_WIDTH ) );
 }
 
-void SAL_CALL DocumentHolder::deactivated(  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL DocumentHolder::deactivated(  )
 {
 	// deactivation is too unspecific to be useful; usually we only trigger code from activation
 	// so UIDeactivation is actively triggered by the container

@@ -94,26 +94,26 @@ public:
 
     // XDispatchProvider
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > SAL_CALL
-							queryDispatch( const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags ) throw(::com::sun::star::uno::RuntimeException);
+							queryDispatch( const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > > SAL_CALL
-							queryDispatches( const ::com::sun::star::uno::Sequence< ::com::sun::star::frame::DispatchDescriptor >& aDescripts ) throw(::com::sun::star::uno::RuntimeException);
+							queryDispatches( const ::com::sun::star::uno::Sequence< ::com::sun::star::frame::DispatchDescriptor >& aDescripts );
 
 	// XDispatchProviderInterceptor
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > SAL_CALL
-							getSlaveDispatchProvider(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL	setSlaveDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewSlave ) throw(::com::sun::star::uno::RuntimeException);
+							getSlaveDispatchProvider(  );
+    virtual void SAL_CALL	setSlaveDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewSlave );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > SAL_CALL
-							getMasterDispatchProvider(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL	setMasterDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewMaster ) throw(::com::sun::star::uno::RuntimeException);
+							getMasterDispatchProvider(  );
+    virtual void SAL_CALL	setMasterDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewMaster );
 
 	// XInterceptorInfo
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-							getInterceptedURLs(  ) throw(::com::sun::star::uno::RuntimeException);
+							getInterceptedURLs(  );
 
     // XDispatch
-    virtual void SAL_CALL 	dispatch( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 	addStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& xControl, const ::com::sun::star::util::URL& aURL ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 	removeStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& xControl, const ::com::sun::star::util::URL& aURL ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL 	dispatch( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs );
+    virtual void SAL_CALL 	addStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& xControl, const ::com::sun::star::util::URL& aURL );
+    virtual void SAL_CALL 	removeStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& xControl, const ::com::sun::star::util::URL& aURL );
 
 	// extras
 	void					InitWaiter( SfxHelpWindow_Impl* pWindow )
@@ -133,10 +133,8 @@ private:
 public:
 	HelpListener_Impl( HelpInterceptor_Impl* pInter );
 
-	virtual void SAL_CALL	statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
-								throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& obj )
-								throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL	statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
+	virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& obj );
 
 	void					SetChangeHdl( const Link& rLink ) { aChangeLink = rLink; }
 	String					GetFactory() const { return aFactory; }
@@ -156,10 +154,8 @@ public:
         com::sun::star::util::URL& rURL);
     ~HelpStatusListener_Impl();
 
-    virtual void SAL_CALL   statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
-								throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& obj )
-								throw( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL   statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
+	virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& obj );
     const ::com::sun::star::frame::FeatureStateEvent&
                             GetStateEvent() const {return aStateEvent;}
 };

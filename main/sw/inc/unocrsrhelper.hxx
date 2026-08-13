@@ -105,7 +105,7 @@ namespace SwUnoCursorHelper
 	void 						InsertFile(SwUnoCrsr* pUnoCrsr,
                                     const String& rURL,
                                     const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rOptions
-                                    ) throw( com::sun::star::lang::IllegalArgumentException, com::sun::star::io::IOException, com::sun::star::uno::RuntimeException );
+                                    );
 
 	void 						getNumberingProperty(
 									SwPaM& rPam,
@@ -124,8 +124,7 @@ namespace SwUnoCursorHelper
                     const SwPaM &rNewCursor, const String &rText,
                     const bool bForceExpandHints );
     void    makeRedline( SwPaM& rPaM, const ::rtl::OUString& RedlineType,
-            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& RedlineProperties )
-                throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& RedlineProperties );
 
 
     /// @param bTableMode: attributes should be applied to a table selection
@@ -155,19 +154,11 @@ namespace SwUnoCursorHelper
             const ::rtl::OUString & rPropertyName,
             const ::com::sun::star::uno::Any & rValue,
             const SetAttrMode nAttrMode = nsSetAttrMode::SETATTR_DEFAULT,
-            const bool bTableMode = false)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::beans::PropertyVetoException,
-                ::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+            const bool bTableMode = false);
     ::com::sun::star::uno::Any  GetPropertyValue(
             SwPaM& rPaM,
             const SfxItemPropertySet & rPropSet,
-            const ::rtl::OUString & rPropertyName)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString & rPropertyName);
     ::com::sun::star::uno::Sequence<
                 ::com::sun::star::beans::PropertyState > GetPropertyStates(
             SwPaM & rPaM,
@@ -175,39 +166,28 @@ namespace SwUnoCursorHelper
             const ::com::sun::star::uno::Sequence< ::rtl::OUString >&
                 rPropertyNames,
             const SwGetPropertyStatesCaller eCaller =
-                SW_PROPERTY_STATE_CALLER_DEFAULT)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::uno::RuntimeException);
+                SW_PROPERTY_STATE_CALLER_DEFAULT);
     ::com::sun::star::beans::PropertyState GetPropertyState(
             SwPaM & rPaM,
             const SfxItemPropertySet & rPropSet,
-            const ::rtl::OUString & rPropertyName)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString & rPropertyName);
     void SetPropertyToDefault(
             SwPaM & rPaM,
             const SfxItemPropertySet & rPropSet,
-            const ::rtl::OUString & rPropertyName)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString & rPropertyName);
     ::com::sun::star::uno::Any  GetPropertyDefault(
             SwPaM & rPaM,
             const SfxItemPropertySet & rPropSet,
-            const ::rtl::OUString & rPropertyName)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString & rPropertyName);
 
     bool SetPageDesc(
             const ::com::sun::star::uno::Any& rValue,
             SwDoc & rDoc, SfxItemSet & rSet);
-    void SetTxtFmtColl(const ::com::sun::star::uno::Any & rAny, SwPaM & rPaM)
-        throw (::com::sun::star::lang::IllegalArgumentException);
+    void SetTxtFmtColl(const ::com::sun::star::uno::Any & rAny, SwPaM & rPaM);
     bool SetCursorPropertyValue(
             SfxItemPropertySimpleEntry const& rEntry,
             ::com::sun::star::uno::Any const& rValue,
-            SwPaM & rPam, SfxItemSet & rItemSet)
-        throw (::com::sun::star::lang::IllegalArgumentException);
+            SwPaM & rPam, SfxItemSet & rItemSet);
 
 } // namespace SwUnoCursorHelper
 

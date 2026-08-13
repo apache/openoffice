@@ -88,11 +88,9 @@ private:
 
     rtl::OUString           composeCurrentUri( const rtl::OUString & inPath );
     void                    addEnvironmentRequestHeaders( CurlRequest &curlRequest,
-                                                          const DAVRequestEnvironment &env )
-                                throw ( DAVException );
+                                                          const DAVRequestEnvironment &env );
     void                    processResponse( CurlRequest &curlRequest,
-                                             CURLcode curlCode )
-                                throw ( DAVException );
+                                             CURLcode curlCode );
 
     static CURLcode         Curl_SSLContextCallback( CURL *curl,
                                                      void *ssl_ctx,
@@ -110,10 +108,10 @@ private:
     int                     curlDebugOutput( curl_infotype type, char *data, int size );
 
     static bool             Curl_ProvideCredentials( long statusCode,
-                                                     void *userdata ) throw (DAVException);
+                                                     void *userdata );
     bool                    provideCredentials( const DAVRequestEnvironment &env,
                                                 CurlRequest &request,
-                                                long statusCode ) throw (DAVException);
+                                                long statusCode );
 
 protected:
     virtual ~CurlSession();
@@ -121,8 +119,7 @@ protected:
 public:
     CurlSession( const rtl::Reference< DAVSessionFactory > & rSessionFactory,
                  const rtl::OUString& inUri,
-                 const ucbhelper::InternetProxyDecider & rProxyDecider )
-        throw ( DAVException );
+                 const ucbhelper::InternetProxyDecider & rProxyDecider );
 
     // DAVSession methods
     virtual sal_Bool CanUse( const ::rtl::OUString & inUri );
@@ -138,48 +135,41 @@ public:
               const Depth inDepth,
               const std::vector< ::rtl::OUString > & inPropNames,
               std::vector< DAVResource > & ioResources,
-              const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+              const DAVRequestEnvironment & rEnv );
 
     // propnames
     virtual void
     PROPFIND( const ::rtl::OUString & inPath,
               const Depth inDepth,
               std::vector< DAVResourceInfo >& ioResInfo,
-              const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+              const DAVRequestEnvironment & rEnv );
 
     virtual void
     PROPPATCH( const ::rtl::OUString & inPath,
                const std::vector< ProppatchValue > & inValues,
-               const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+               const DAVRequestEnvironment & rEnv );
 
     virtual void
     HEAD( const ::rtl::OUString &  inPath,
           const std::vector< ::rtl::OUString > & inHeaderNames,
           DAVResource & ioResource,
-          const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+          const DAVRequestEnvironment & rEnv );
 
     virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream >
     GET( const ::rtl::OUString & inPath,
-         const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+         const DAVRequestEnvironment & rEnv );
 
     virtual void
     GET( const ::rtl::OUString & inPath,
          com::sun::star::uno::Reference<
              com::sun::star::io::XOutputStream > &  ioOutputStream,
-         const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+         const DAVRequestEnvironment & rEnv );
 
     virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream >
     GET( const ::rtl::OUString & inPath,
          const std::vector< ::rtl::OUString > & inHeaderNames,
          DAVResource & ioResource,
-         const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+         const DAVRequestEnvironment & rEnv );
 
     virtual void
     GET( const ::rtl::OUString & inPath,
@@ -187,15 +177,13 @@ public:
              com::sun::star::io::XOutputStream > & ioOutputStream,
          const std::vector< ::rtl::OUString > & inHeaderNames,
          DAVResource & ioResource,
-         const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+         const DAVRequestEnvironment & rEnv );
 
     virtual void
     PUT( const ::rtl::OUString & inPath,
          const com::sun::star::uno::Reference<
              com::sun::star::io::XInputStream > & inInputStream,
-         const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+         const DAVRequestEnvironment & rEnv );
 
     virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream >
     POST( const rtl::OUString & inPath,
@@ -203,8 +191,7 @@ public:
           const rtl::OUString & rReferer,
           const com::sun::star::uno::Reference<
               com::sun::star::io::XInputStream > & inInputStream,
-          const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+          const DAVRequestEnvironment & rEnv );
 
     virtual void
     POST( const rtl::OUString & inPath,
@@ -214,51 +201,42 @@ public:
               com::sun::star::io::XInputStream > & inInputStream,
           com::sun::star::uno::Reference<
               com::sun::star::io::XOutputStream > & oOutputStream,
-          const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+          const DAVRequestEnvironment & rEnv );
 
     virtual void
     MKCOL( const ::rtl::OUString & inPath,
-           const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+           const DAVRequestEnvironment & rEnv );
 
     virtual void
     COPY( const ::rtl::OUString & inSourceURL,
           const ::rtl::OUString & inDestinationURL,
           const DAVRequestEnvironment & rEnv,
-          sal_Bool inOverWrite )
-        throw ( DAVException );
+          sal_Bool inOverWrite );
 
     virtual void
     MOVE( const ::rtl::OUString & inSourceURL,
           const ::rtl::OUString & inDestinationURL,
           const DAVRequestEnvironment & rEnv,
-          sal_Bool inOverWrite )
-        throw ( DAVException );
+          sal_Bool inOverWrite );
 
     virtual void DESTROY( const ::rtl::OUString & inPath,
-                          const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+                          const DAVRequestEnvironment & rEnv );
 
     // set new lock.
     virtual void LOCK( const ::rtl::OUString & inURL,
                        com::sun::star::ucb::Lock & inLock,
-                       const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+                       const DAVRequestEnvironment & rEnv );
 
     // refresh existing lock.
     virtual sal_Int64 LOCK( const ::rtl::OUString & inURL,
                             sal_Int64 nTimeout,
-                            const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+                            const DAVRequestEnvironment & rEnv );
 
     virtual void UNLOCK( const ::rtl::OUString & inURL,
-                         const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+                         const DAVRequestEnvironment & rEnv );
 
     // helpers
-    virtual void abort()
-        throw ( DAVException );
+    virtual void abort();
 
     const rtl::OUString & getHostName() const { return m_aUri.GetHost(); }
     int getPort() const { return m_aUri.GetPort(); }
@@ -273,11 +251,9 @@ public:
 private:
     friend class CurlLockStore;
 
-    void Init( void )
-        throw ( DAVException );
+    void Init( void );
 
-    void Init( const DAVRequestEnvironment & rEnv )
-        throw ( DAVException );
+    void Init( const DAVRequestEnvironment & rEnv );
 
     const ucbhelper::InternetProxyServer & getProxySettings() const;
 

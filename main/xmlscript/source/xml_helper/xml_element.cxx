@@ -77,20 +77,17 @@ void XMLElement::dump( Reference< xml::sax::XDocumentHandler > const & xOut )
 // XAttributeList
 //__________________________________________________________________________________________________
 sal_Int16 XMLElement::getLength()
-	throw (RuntimeException)
 {
 	return static_cast<sal_Int16>(_attrNames.size());
 }
 //__________________________________________________________________________________________________
 OUString XMLElement::getNameByIndex( sal_Int16 nPos )
-	throw (RuntimeException)
 {
 	OSL_ASSERT( (size_t)nPos < _attrNames.size() );
 	return _attrNames[ nPos ];
 }
 //__________________________________________________________________________________________________
 OUString XMLElement::getTypeByIndex( sal_Int16 nPos )
-	throw (RuntimeException)
 {
 	OSL_ASSERT( (size_t)nPos < _attrNames.size() );
     static_cast<void>(nPos);
@@ -99,21 +96,18 @@ OUString XMLElement::getTypeByIndex( sal_Int16 nPos )
 }
 //__________________________________________________________________________________________________
 OUString XMLElement::getTypeByName( OUString const & /*rName*/ )
-	throw (RuntimeException)
 {
 	// xxx todo
 	return OUString();
 }
 //__________________________________________________________________________________________________
 OUString XMLElement::getValueByIndex( sal_Int16 nPos )
-	throw (RuntimeException)
 {
 	OSL_ASSERT( (size_t)nPos < _attrNames.size() );
 	return _attrValues[ nPos ];
 }
 //__________________________________________________________________________________________________
 OUString XMLElement::getValueByName( OUString const & rName )
-	throw (RuntimeException)
 {
 	for ( size_t nPos = 0; nPos < _attrNames.size(); ++nPos )
 	{

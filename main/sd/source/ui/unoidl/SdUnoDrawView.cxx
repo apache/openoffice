@@ -189,7 +189,6 @@ void SdUnoDrawView::setActiveLayer (const Reference<drawing::XLayer>& rxLayer) t
 
 
 sal_Bool SAL_CALL SdUnoDrawView::select( const Any& aSelection )
-	throw(lang::IllegalArgumentException, RuntimeException)
 {
     bool bOk = true;
 
@@ -287,7 +286,6 @@ sal_Bool SAL_CALL SdUnoDrawView::select( const Any& aSelection )
 //----------------------------------------------------------------------
 
 Any SAL_CALL SdUnoDrawView::getSelection()
-	throw(RuntimeException)
 {
 	Any aAny;
 
@@ -339,7 +337,6 @@ Any SAL_CALL SdUnoDrawView::getSelection()
 
 void SAL_CALL SdUnoDrawView::addSelectionChangeListener (
     const css::uno::Reference<css::view::XSelectionChangeListener>& rxListener)
-    throw(css::uno::RuntimeException)
 {
     (void)rxListener;
 }
@@ -349,7 +346,6 @@ void SAL_CALL SdUnoDrawView::addSelectionChangeListener (
 
 void SAL_CALL SdUnoDrawView::removeSelectionChangeListener (
     const css::uno::Reference<css::view::XSelectionChangeListener>& rxListener)
-    throw(css::uno::RuntimeException)
 {
     (void)rxListener;
 }
@@ -360,11 +356,6 @@ void SAL_CALL SdUnoDrawView::removeSelectionChangeListener (
 void SdUnoDrawView::setFastPropertyValue (
 	sal_Int32 nHandle,
         const Any& rValue)
-    throw(css::beans::UnknownPropertyException,
-        css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException,
-        css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
 	switch( nHandle )
 	{
@@ -429,9 +420,6 @@ void SdUnoDrawView::setFastPropertyValue (
 
 Any SAL_CALL SdUnoDrawView::getFastPropertyValue (
     sal_Int32 nHandle)
-    throw(css::beans::UnknownPropertyException,
-        css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     Any aValue;
 	switch( nHandle )
@@ -481,7 +469,6 @@ Any SAL_CALL SdUnoDrawView::getFastPropertyValue (
 
 void SAL_CALL SdUnoDrawView::setCurrentPage (
     const Reference< drawing::XDrawPage >& xPage )
-	throw(RuntimeException)
 {
     SvxDrawPage* pDrawPage = SvxDrawPage::getImplementation( xPage );
     SdrPage *pSdrPage = pDrawPage ? pDrawPage->GetSdrPage() : NULL;
@@ -501,7 +488,6 @@ void SAL_CALL SdUnoDrawView::setCurrentPage (
 //----------------------------------------------------------------------
 
 Reference< drawing::XDrawPage > SAL_CALL SdUnoDrawView::getCurrentPage()
-	throw(RuntimeException)
 {
 	Reference< drawing::XDrawPage >  xPage;
 
@@ -620,17 +606,17 @@ Any SdUnoDrawView::getDrawViewMode() const
 }
 
 // XServiceInfo
-OUString SAL_CALL SdUnoDrawView::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL SdUnoDrawView::getImplementationName(  )
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.sd.SdUnoDrawView") );
 }
 
-sal_Bool SAL_CALL SdUnoDrawView::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL SdUnoDrawView::supportsService( const OUString& ServiceName )
 {
 	return comphelper::ServiceInfoHelper::supportsService( ServiceName, getSupportedServiceNames() );
 }
 
-Sequence< OUString > SAL_CALL SdUnoDrawView::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL SdUnoDrawView::getSupportedServiceNames(  )
 {
 	OUString aSN( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.drawing.DrawingDocumentDrawView") );
 	uno::Sequence< OUString > aSeq( &aSN, 1 );

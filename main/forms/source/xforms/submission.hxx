@@ -182,8 +182,7 @@ private:
 
     /// check whether object is live, and throw suitable exception if not
     /// (to be used be API methods before acting on the object)
-    void liveCheck()
-        throw( com::sun::star::uno::RuntimeException );
+    void liveCheck();
 
     /// get the model implementation
     xforms::Model* getModelImpl() const;
@@ -202,8 +201,7 @@ protected:
         com::sun::star::uno::Any& rConvertedValue,
         com::sun::star::uno::Any& rOldValue,
         sal_Int32 nHandle,
-        const com::sun::star::uno::Any& rValue )
-		throw ( com::sun::star::lang::IllegalArgumentException );
+        const com::sun::star::uno::Any& rValue );
 
 private:
     void initializePropertySet();
@@ -216,11 +214,9 @@ public:
     //   get/set name
     //
 
-    virtual rtl::OUString SAL_CALL getName()
-        throw( com::sun::star::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getName();
 
-    virtual void SAL_CALL setName( const rtl::OUString& )
-        throw( com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL setName( const rtl::OUString& );
 
 
 
@@ -229,41 +225,32 @@ public:
     //
 
     virtual sal_Int64 SAL_CALL getSomething(
-        const com::sun::star::uno::Sequence<sal_Int8>& )
-        throw( com::sun::star::uno::RuntimeException );
+        const com::sun::star::uno::Sequence<sal_Int8>& );
 
 
     //
     // XSubmission
     //
 
-    virtual void SAL_CALL submit(  )
-        throw ( com::sun::star::util::VetoException,
-                com::sun::star::lang::WrappedTargetException,
-                com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL submit(  );
     virtual void SAL_CALL submitWithInteraction(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& aHandler )
-        throw ( com::sun::star::util::VetoException,
-                com::sun::star::lang::WrappedTargetException,
-                com::sun::star::uno::RuntimeException );
+        const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& aHandler );
     virtual void SAL_CALL addSubmissionVetoListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener )
-        throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener );
     virtual void SAL_CALL removeSubmissionVetoListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener )
-        throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener );
 
     //
     // XPropertySet
     // (need to disambiguate this)
 
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
+    virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue );
+    virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName );
+    virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
+    virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener );
+    virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
+    virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
 };
 
 

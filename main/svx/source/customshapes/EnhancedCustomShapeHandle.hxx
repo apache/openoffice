@@ -52,14 +52,11 @@ public:
 	virtual void SAL_CALL release() throw();
 
 	// XCustomShapeHandle
-	virtual com::sun::star::awt::Point SAL_CALL getPosition()
-		throw ( com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setControllerPosition( const com::sun::star::awt::Point& )
-		throw ( com::sun::star::uno::RuntimeException );
+	virtual com::sun::star::awt::Point SAL_CALL getPosition();
+	virtual void SAL_CALL setControllerPosition( const com::sun::star::awt::Point& );
 
 	// XInitialization
-	virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments )
-		throw ( com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments );
 };
 
 #endif

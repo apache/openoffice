@@ -37,7 +37,7 @@ namespace connectivity
 			OEvoabTable*	m_pTable;
 
 			virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-			virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+			virtual void impl_refresh();
 
 		public:
 			OEvoabColumns(	OEvoabTable* _pTable,

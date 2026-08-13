@@ -155,14 +155,12 @@ StockBar::~StockBar()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL StockBar::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new StockBar( *this ));
 }
 
 // ____ OPropertySet ____
 uno::Any StockBar::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticStockBarDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -178,14 +176,12 @@ uno::Any StockBar::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 Reference< beans::XPropertySetInfo > SAL_CALL StockBar::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticStockBarInfo::get();
 }
 
 // ____ XModifyBroadcaster ____
 void SAL_CALL StockBar::addModifyListener( const uno::Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -199,7 +195,6 @@ void SAL_CALL StockBar::addModifyListener( const uno::Reference< util::XModifyLi
 }
 
 void SAL_CALL StockBar::removeModifyListener( const uno::Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -214,14 +209,12 @@ void SAL_CALL StockBar::removeModifyListener( const uno::Reference< util::XModif
 
 // ____ XModifyListener ____
 void SAL_CALL StockBar::modified( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
     m_xModifyEventForwarder->modified( aEvent );
 }
 
 // ____ XEventListener (base of XModifyListener) ____
 void SAL_CALL StockBar::disposing( const lang::EventObject& /* Source */ )
-    throw (uno::RuntimeException)
 {
     // nothing
 }

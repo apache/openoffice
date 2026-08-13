@@ -67,8 +67,7 @@ void addFactories(
     char const * const * ppNames /* lib, implname, ..., 0 */,
     OUString const & bootstrapPath,
     Reference< lang::XMultiComponentFactory > const & xMgr,
-    Reference< registry::XRegistryKey > const & xKey )
-    SAL_THROW( (Exception) );
+    Reference< registry::XRegistryKey > const & xKey );
 
 Reference< security::XAccessController >
 createDefaultAccessController() SAL_THROW( () );
@@ -186,7 +185,6 @@ Reference< registry::XSimpleRegistry > SAL_CALL createNestedRegistry(
 static void add_access_control_entries(
     ::std::vector< ContextEntry_Init > * values,
     Bootstrap const & bootstrap )
-    SAL_THROW( (Exception) )
 {
     ContextEntry_Init entry;
     ::std::vector< ContextEntry_Init > & context_values = *values;
@@ -319,7 +317,6 @@ static void add_access_control_entries(
 SAL_DLLPUBLIC_EXPORT
 Reference< lang::XMultiComponentFactory > bootstrapInitialSF(
     OUString const & rBootstrapPath )
-    SAL_THROW( (Exception) )
 {
     OUString const & bootstrap_path =
         0 == rBootstrapPath.getLength() ? get_this_libpath() : rBootstrapPath;
@@ -366,7 +363,6 @@ Reference< XComponentContext > bootstrapInitialContext(
     Reference< registry::XSimpleRegistry > const & types_xRegistry,
     Reference< registry::XSimpleRegistry > const & services_xRegistry,
     OUString const & rBootstrapPath, Bootstrap const & bootstrap )
-    SAL_THROW( (Exception) )
 {
     Reference< lang::XInitialization > xSFInit( xSF, UNO_QUERY );
     if (! xSFInit.is())
@@ -525,7 +521,6 @@ static Reference< lang::XMultiComponentFactory > createImplServiceFactory(
     const OUString & rReadRegistry,
     sal_Bool bReadOnly,
     const OUString & rBootstrapPath )
-    SAL_THROW( (Exception) )
 {
     Reference< lang::XMultiComponentFactory > xSF(
         bootstrapInitialSF( rBootstrapPath ) );
@@ -625,7 +620,6 @@ Reference< lang::XMultiServiceFactory > SAL_CALL createRegistryServiceFactory(
     const OUString & rReadRegistry,
     sal_Bool bReadOnly,
     const OUString & rBootstrapPath )
-    SAL_THROW( (Exception) )
 {
     return Reference< lang::XMultiServiceFactory >( createImplServiceFactory(
         rWriteRegistry, rReadRegistry, bReadOnly, rBootstrapPath ), UNO_QUERY );
@@ -634,7 +628,6 @@ Reference< lang::XMultiServiceFactory > SAL_CALL createRegistryServiceFactory(
 Reference< XComponentContext > SAL_CALL bootstrap_InitialComponentContext(
     Reference< registry::XSimpleRegistry > const & xRegistry,
     OUString const & rBootstrapPath )
-    SAL_THROW( (Exception) )
 {
     Bootstrap bootstrap;
 

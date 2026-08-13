@@ -66,26 +66,19 @@ public:
         { return const_cast< cppu::OWeakObject * > (static_cast< cppu::OWeakObject const * > (this)); };
 
     // XJob
-    virtual uno::Any SAL_CALL execute(const uno::Sequence<beans::NamedValue>&)
-        throw (lang::IllegalArgumentException, uno::Exception);
+    virtual uno::Any SAL_CALL execute(const uno::Sequence<beans::NamedValue>&);
 
     // XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName)
-        throw (uno::RuntimeException);
-    virtual uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw (uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName);
+    virtual uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     // XEventListener
-    virtual void SAL_CALL disposing( ::com::sun::star::lang::EventObject const & evt )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( ::com::sun::star::lang::EventObject const & evt );
 
     // XTerminateListener
-    virtual void SAL_CALL queryTermination( lang::EventObject const & evt )
-        throw ( frame::TerminationVetoException, uno::RuntimeException );
-    virtual void SAL_CALL notifyTermination( lang::EventObject const & evt )
-        throw ( uno::RuntimeException );
+    virtual void SAL_CALL queryTermination( lang::EventObject const & evt );
+    virtual void SAL_CALL notifyTermination( lang::EventObject const & evt );
 
 private:
     uno::Reference<uno::XComponentContext>  m_xContext;
@@ -133,7 +126,6 @@ UpdateCheckJob::getImplName()
 
 uno::Any
 UpdateCheckJob::execute(const uno::Sequence<beans::NamedValue>& namedValues)
-    throw (lang::IllegalArgumentException, uno::Exception)
 {
     for ( sal_Int32 n=namedValues.getLength(); n-- > 0; )
     {
@@ -205,7 +197,7 @@ void UpdateCheckJob::handleExtensionUpdates( const uno::Sequence< beans::NamedVa
 //------------------------------------------------------------------------------
 
 rtl::OUString SAL_CALL
-UpdateCheckJob::getImplementationName() throw (uno::RuntimeException)
+UpdateCheckJob::getImplementationName()
 {
     return getImplName();
 }
@@ -213,7 +205,7 @@ UpdateCheckJob::getImplementationName() throw (uno::RuntimeException)
 //------------------------------------------------------------------------------
 
 uno::Sequence< rtl::OUString > SAL_CALL
-UpdateCheckJob::getSupportedServiceNames() throw (uno::RuntimeException)
+UpdateCheckJob::getSupportedServiceNames()
 {
     return getServiceNames();
 }
@@ -221,7 +213,7 @@ UpdateCheckJob::getSupportedServiceNames() throw (uno::RuntimeException)
 //------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL
-UpdateCheckJob::supportsService( rtl::OUString const & serviceName ) throw (uno::RuntimeException)
+UpdateCheckJob::supportsService( rtl::OUString const & serviceName )
 {
     uno::Sequence< rtl::OUString > aServiceNameList = getServiceNames();
 
@@ -235,7 +227,6 @@ UpdateCheckJob::supportsService( rtl::OUString const & serviceName ) throw (uno:
 //------------------------------------------------------------------------------
 // XEventListener
 void SAL_CALL UpdateCheckJob::disposing( lang::EventObject const & rEvt )
-    throw ( uno::RuntimeException )
 {
     bool shutDown = ( rEvt.Source == m_xDesktop );
 
@@ -249,13 +240,11 @@ void SAL_CALL UpdateCheckJob::disposing( lang::EventObject const & rEvt )
 //------------------------------------------------------------------------------
 // XTerminateListener
 void SAL_CALL UpdateCheckJob::queryTermination( lang::EventObject const & )
-    throw ( frame::TerminationVetoException, uno::RuntimeException )
 {
 }
 
 //------------------------------------------------------------------------------
 void SAL_CALL UpdateCheckJob::notifyTermination( lang::EventObject const & )
-    throw ( uno::RuntimeException )
 {
 }
 

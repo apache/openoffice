@@ -115,12 +115,10 @@ public:
     virtual ~SfxClipboardChangeListener();
 
     // XEventListener
-    virtual void SAL_CALL disposing( const lang::EventObject& rEventObject )
-        throw ( uno::RuntimeException );
+    virtual void SAL_CALL disposing( const lang::EventObject& rEventObject );
 
     // XClipboardListener
-    virtual void SAL_CALL changedContents( const datatransfer::clipboard::ClipboardEvent& rEventObject )
-        throw ( uno::RuntimeException );
+    virtual void SAL_CALL changedContents( const datatransfer::clipboard::ClipboardEvent& rEventObject );
 
     void DisconnectViewShell() { m_pViewShell = NULL; }
     void ChangedContents();
@@ -200,7 +198,6 @@ IMPL_STATIC_LINK_NOINSTANCE( SfxClipboardChangeListener, AsyncExecuteHdl_Impl, A
 }
 
 void SAL_CALL SfxClipboardChangeListener::disposing( const lang::EventObject& /*rEventObject*/ )
-throw ( uno::RuntimeException )
 {
     // Either clipboard or ViewShell is going to be destroyed -> no interest in listening anymore
     uno::Reference< lang::XComponent > xCtrl( m_xCtrl );
@@ -220,7 +217,6 @@ throw ( uno::RuntimeException )
 }
 
 void SAL_CALL SfxClipboardChangeListener::changedContents( const datatransfer::clipboard::ClipboardEvent& )
-        throw ( RuntimeException )
 {
     // Make asynchronous call to avoid locking SolarMutex which is the
     // root for many deadlocks, especially in conjunction with the "Windows"

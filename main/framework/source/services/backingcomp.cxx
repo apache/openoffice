@@ -109,7 +109,6 @@ BackingComp::~BackingComp()
  */
 
 css::uno::Any SAL_CALL BackingComp::queryInterface( /*IN*/ const css::uno::Type& aType )
-    throw(css::uno::RuntimeException)
 {
     css::uno::Any aResult;
 
@@ -180,7 +179,6 @@ void SAL_CALL BackingComp::release()
 */
 
 css::uno::Sequence< css::uno::Type > SAL_CALL BackingComp::getTypes()
-    throw(css::uno::RuntimeException)
 {
     static ::cppu::OTypeCollection* pTypeCollection = NULL;
     if (!pTypeCollection)
@@ -227,7 +225,6 @@ css::uno::Sequence< css::uno::Type > SAL_CALL BackingComp::getTypes()
 */
 
 css::uno::Sequence< sal_Int8 > SAL_CALL BackingComp::getImplementationId()
-    throw(css::uno::RuntimeException)
 {
     static ::cppu::OImplementationId* pID = NULL;
     if (!pID)
@@ -259,7 +256,6 @@ css::uno::Sequence< sal_Int8 > SAL_CALL BackingComp::getImplementationId()
 */
 
 ::rtl::OUString SAL_CALL BackingComp::getImplementationName()
-    throw(css::uno::RuntimeException)
 {
     return impl_getStaticImplementationName();
 }
@@ -279,7 +275,6 @@ css::uno::Sequence< sal_Int8 > SAL_CALL BackingComp::getImplementationId()
 */
 
 sal_Bool SAL_CALL BackingComp::supportsService( /*IN*/ const ::rtl::OUString& sServiceName )
-    throw(css::uno::RuntimeException)
 {
     return (
             sServiceName.equals(SERVICENAME_STARTMODULE    ) ||
@@ -301,7 +296,6 @@ sal_Bool SAL_CALL BackingComp::supportsService( /*IN*/ const ::rtl::OUString& sS
 */
 
 css::uno::Sequence< ::rtl::OUString > SAL_CALL BackingComp::getSupportedServiceNames()
-    throw(css::uno::RuntimeException)
 {
     return impl_getStaticSupportedServiceNames();
 }
@@ -360,7 +354,6 @@ css::uno::Sequence< ::rtl::OUString > BackingComp::impl_getStaticSupportedServic
 */
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL BackingComp::impl_createInstance( /*IN*/ const css::uno::Reference< css::lang::XMultiServiceFactory >& xSMGR )
-    throw(css::uno::Exception)
 {
     BackingComp* pObject = new BackingComp(xSMGR);
     return css::uno::Reference< css::uno::XInterface >(static_cast< ::cppu::OWeakObject* >(pObject), css::uno::UNO_QUERY);
@@ -450,7 +443,6 @@ css::uno::Reference< css::lang::XSingleServiceFactory > BackingComp::impl_create
 */
 
 void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::frame::XFrame >& xFrame )
-    throw (css::uno::RuntimeException)
 {
     /* SAFE */
     WriteGuard aWriteLock(m_aLock);
@@ -541,7 +533,6 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
  */
 
 sal_Bool SAL_CALL BackingComp::attachModel( /*IN*/ const css::uno::Reference< css::frame::XModel >& )
-    throw (css::uno::RuntimeException)
 {
     return sal_False;
 }
@@ -557,7 +548,6 @@ sal_Bool SAL_CALL BackingComp::attachModel( /*IN*/ const css::uno::Reference< cs
  */
 
 css::uno::Reference< css::frame::XModel > SAL_CALL BackingComp::getModel()
-    throw (css::uno::RuntimeException)
 {
     return css::uno::Reference< css::frame::XModel >();
 }
@@ -570,7 +560,6 @@ css::uno::Reference< css::frame::XModel > SAL_CALL BackingComp::getModel()
  */
 
 css::uno::Any SAL_CALL BackingComp::getViewData()
-    throw (css::uno::RuntimeException)
 {
     return css::uno::Any();
 }
@@ -584,7 +573,6 @@ css::uno::Any SAL_CALL BackingComp::getViewData()
  */
 
 void SAL_CALL BackingComp::restoreViewData( /*IN*/ const css::uno::Any& )
-    throw (css::uno::RuntimeException)
 {
 }
 
@@ -599,7 +587,6 @@ void SAL_CALL BackingComp::restoreViewData( /*IN*/ const css::uno::Any& )
  */
 
 css::uno::Reference< css::frame::XFrame > SAL_CALL BackingComp::getFrame()
-    throw (css::uno::RuntimeException)
 {
     /* SAFE { */
     ReadGuard aReadLock(m_aLock);
@@ -623,7 +610,6 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL BackingComp::getFrame()
  */
 
 sal_Bool SAL_CALL BackingComp::suspend( /*IN*/ sal_Bool )
-    throw (css::uno::RuntimeException)
 {
     /* FIXME ... implemented by using default :-( */
     return sal_True;
@@ -647,7 +633,6 @@ sal_Bool SAL_CALL BackingComp::suspend( /*IN*/ sal_Bool )
 */
 
 void SAL_CALL BackingComp::disposing( /*IN*/ const css::lang::EventObject& aEvent )
-    throw(css::uno::RuntimeException)
 {
     // Attention: dont free m_pAccExec here! see comments inside dtor and
     // keyPressed() for further details.
@@ -677,7 +662,6 @@ void SAL_CALL BackingComp::disposing( /*IN*/ const css::lang::EventObject& aEven
 */
 
 void SAL_CALL BackingComp::dispose()
-    throw(css::uno::RuntimeException)
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
@@ -748,7 +732,6 @@ void SAL_CALL BackingComp::dispose()
  */
 
 void SAL_CALL BackingComp::addEventListener( /*IN*/ const css::uno::Reference< css::lang::XEventListener >& )
-    throw(css::uno::RuntimeException)
 {
     throw css::uno::RuntimeException(
             ::rtl::OUString::createFromAscii("not supported"),
@@ -766,7 +749,6 @@ void SAL_CALL BackingComp::addEventListener( /*IN*/ const css::uno::Reference< c
  */
 
 void SAL_CALL BackingComp::removeEventListener( /*IN*/ const css::uno::Reference< css::lang::XEventListener >& )
-    throw(css::uno::RuntimeException)
 {
 }
 
@@ -791,7 +773,6 @@ void SAL_CALL BackingComp::removeEventListener( /*IN*/ const css::uno::Reference
  */
 
 void SAL_CALL BackingComp::initialize( /*IN*/ const css::uno::Sequence< css::uno::Any >& lArgs )
-    throw(css::uno::Exception, css::uno::RuntimeException)
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
@@ -841,7 +822,6 @@ void SAL_CALL BackingComp::initialize( /*IN*/ const css::uno::Sequence< css::uno
  */
 
 void SAL_CALL BackingComp::keyPressed( /*IN*/ const css::awt::KeyEvent&  )
-    throw(css::uno::RuntimeException)
 {
 }
 
@@ -851,7 +831,6 @@ void SAL_CALL BackingComp::keyPressed( /*IN*/ const css::awt::KeyEvent&  )
  */
 
 void SAL_CALL BackingComp::keyReleased( /*IN*/ const css::awt::KeyEvent& )
-    throw(css::uno::RuntimeException)
 {
     /* Attention
         Please use keyPressed() instead of this method. Otherwise it would be possible, that

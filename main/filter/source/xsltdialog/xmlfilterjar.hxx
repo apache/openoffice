@@ -42,7 +42,7 @@ public:
 	void openPackage( const rtl::OUString& rPackageURL, XMLFilterVector& rFilters );
 
 private:
-	void addFile( com::sun::star::uno::Reference< com::sun::star::uno::XInterface > xRootFolder, com::sun::star::uno::Reference< com::sun::star::lang::XSingleServiceFactory > xFactory, const ::rtl::OUString& rSourceFile ) throw( com::sun::star::uno::Exception );
+	void addFile( com::sun::star::uno::Reference< com::sun::star::uno::XInterface > xRootFolder, com::sun::star::uno::Reference< com::sun::star::lang::XSingleServiceFactory > xFactory, const ::rtl::OUString& rSourceFile );
 
 	bool copyFile( com::sun::star::uno::Reference< com::sun::star::container::XHierarchicalNameAccess > xIfc, ::rtl::OUString& rURL, const ::rtl::OUString& rTargetURL );
 	bool copyFiles( com::sun::star::uno::Reference< com::sun::star::container::XHierarchicalNameAccess > xIfc, filter_info_impl* pFilter );

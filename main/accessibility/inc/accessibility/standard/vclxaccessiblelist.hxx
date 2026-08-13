@@ -97,53 +97,43 @@ public:
 
 	// XAccessible
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext> SAL_CALL
-        getAccessibleContext (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getAccessibleContext (void);
 
     // XAccessibleContext
-    virtual sal_Int32 SAL_CALL getAccessibleChildCount (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getAccessibleChildCount (void);
     ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-        getAccessibleChild (sal_Int32 i)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+        getAccessibleChild (sal_Int32 i);
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL
-		getAccessibleParent(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		getAccessibleParent(  );
 
     /** The index returned as index in parent is always the one set with the
         <member>SetIndexInParent()</member> method.
     */
-    virtual sal_Int32 SAL_CALL getAccessibleIndexInParent (void)
-        throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int16 SAL_CALL getAccessibleRole (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getAccessibleIndexInParent (void);
+	virtual sal_Int16 SAL_CALL getAccessibleRole (void);
 
 	// XAccessibleComponent
-	virtual sal_Bool SAL_CALL contains (const ::com::sun::star::awt::Point& aPoint)
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL contains (const ::com::sun::star::awt::Point& aPoint);
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-        getAccessibleAt (const ::com::sun::star::awt::Point& aPoint)
-        throw (::com::sun::star::uno::RuntimeException);
+        getAccessibleAt (const ::com::sun::star::awt::Point& aPoint);
 
 
 	// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName (void);
     // Return list specific services.
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames (void);
 
 	// XAccessibleSelection
-	virtual void SAL_CALL selectAccessibleChild( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL clearAccessibleSelection(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL selectAllAccessibleChildren(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL deselectAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL selectAccessibleChild( sal_Int32 nChildIndex );
+	virtual sal_Bool SAL_CALL isAccessibleChildSelected( sal_Int32 nChildIndex );
+	virtual void SAL_CALL clearAccessibleSelection(  );
+	virtual void SAL_CALL selectAllAccessibleChildren(  );
+	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex );
+	virtual void SAL_CALL deselectAccessibleChild( sal_Int32 nSelectedChildIndex );
 
-	virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen(	) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen(	);
 	sal_Bool    IsInDropDown();
 	void 		HandleDropOpen();
 	virtual void ProcessWindowEvent (const VclWindowEvent& rVclWindowEvent, bool b_IsDropDownList);
@@ -202,7 +192,7 @@ protected:
     virtual void HandleChangedItemList (bool bItemInserted, sal_Int32 nIndex);
 
 	// VCLXAccessibleComponent
-	virtual ::com::sun::star::awt::Rectangle SAL_CALL implGetBounds(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::awt::Rectangle SAL_CALL implGetBounds(  );
 
 private:
     /** We need to save the accessible parent to return it in <type>getAccessibleParent()</type>,

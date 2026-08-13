@@ -71,15 +71,12 @@ protected:
     // XAccessibleContext -----------------------------------------------------
 
     /** @return  The count of visible children. */
-    virtual sal_Int32 SAL_CALL getAccessibleChildCount()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleChildCount();
 
     /** @return  The XAccessible interface of the specified child. */
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-    getAccessibleChild( sal_Int32 nChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+    getAccessibleChild( sal_Int32 nChildIndex );
 
     /** @return  The role of this object (a table). */
 //    virtual sal_Int16 SAL_CALL getAccessibleRole()
@@ -92,24 +89,20 @@ protected:
 	*/
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-    getAccessibleAtPoint( const ::com::sun::star::awt::Point& rPoint )
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getAccessibleAtPoint( const ::com::sun::star::awt::Point& rPoint );
 
     /** Grabs the focus to the BrowseBox. */
-    virtual void SAL_CALL grabFocus()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL grabFocus();
 
     /** @return  The key bindings associated with this object. */
-    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleKeyBinding()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleKeyBinding();
 
     // XServiceInfo -----------------------------------------------------------
 
     /** @return
 			The name of this class.
 	*/
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
 public:
 	// helper functions
@@ -239,7 +232,7 @@ protected:
 
     // XAccessible
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext >
-        SAL_CALL getAccessibleContext() throw ( ::com::sun::star::uno::RuntimeException );
+        SAL_CALL getAccessibleContext();
 
     // IAccessibleBrowseBox
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >

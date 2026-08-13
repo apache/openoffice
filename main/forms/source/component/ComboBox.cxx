@@ -80,7 +80,7 @@ using namespace ::com::sun::star::form::binding;
 // class OComboBoxModel
 //========================================================================
 //------------------------------------------------------------------
-InterfaceRef SAL_CALL OComboBoxModel_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory) throw (RuntimeException)
+InterfaceRef SAL_CALL OComboBoxModel_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory)
 {
 	return (*new OComboBoxModel(_rxFactory));
 }
@@ -97,7 +97,7 @@ Sequence<Type> OComboBoxModel::_getTypes()
 
 // XServiceInfo
 //------------------------------------------------------------------------------
-StringSequence SAL_CALL OComboBoxModel::getSupportedServiceNames() throw(RuntimeException)
+StringSequence SAL_CALL OComboBoxModel::getSupportedServiceNames()
 {
 	StringSequence aSupported = OBoundControlModel::getSupportedServiceNames();
 
@@ -120,7 +120,7 @@ StringSequence SAL_CALL OComboBoxModel::getSupportedServiceNames() throw(Runtime
 }
 
 //------------------------------------------------------------------------------
-Any SAL_CALL OComboBoxModel::queryAggregation(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL OComboBoxModel::queryAggregation(const Type& _rType)
 {
 	Any aReturn = OBoundControlModel::queryAggregation( _rType );
     if ( !aReturn.hasValue() )
@@ -219,7 +219,6 @@ void OComboBoxModel::getFastPropertyValue(Any& _rValue, sal_Int32 _nHandle) cons
 
 //------------------------------------------------------------------------------
 void OComboBoxModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue)
-						throw (Exception)
 {
 	switch (_nHandle)
 	{
@@ -275,7 +274,6 @@ void OComboBoxModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const 
 //------------------------------------------------------------------------------
 sal_Bool OComboBoxModel::convertFastPropertyValue(
 						Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue)
-						throw (IllegalArgumentException)
 {
 	sal_Bool bModified(sal_False);
 	switch (_nHandle)
@@ -330,14 +328,13 @@ void OComboBoxModel::describeAggregateProperties( Sequence< Property >& _rAggreg
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OComboBoxModel::getServiceName() throw(RuntimeException)
+::rtl::OUString SAL_CALL OComboBoxModel::getServiceName()
 {
 	return FRM_COMPONENT_COMBOBOX;	// old (non-sun) name for compatibility !
 }
 
 //------------------------------------------------------------------------------
 void SAL_CALL OComboBoxModel::write(const Reference<stario::XObjectOutputStream>& _rxOutStream)
-		throw(stario::IOException, RuntimeException)
 {
 	OBoundControlModel::write(_rxOutStream);
 
@@ -374,7 +371,7 @@ void SAL_CALL OComboBoxModel::write(const Reference<stario::XObjectOutputStream>
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OComboBoxModel::read(const Reference<stario::XObjectInputStream>& _rxInStream) throw(stario::IOException, RuntimeException)
+void SAL_CALL OComboBoxModel::read(const Reference<stario::XObjectInputStream>& _rxInStream)
 {
 	OBoundControlModel::read(_rxInStream);
 	ControlModelLock aLock( *this );
@@ -714,7 +711,7 @@ void OComboBoxModel::onDisconnectedDbColumn()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OComboBoxModel::reloaded( const EventObject& aEvent ) throw(RuntimeException)
+void SAL_CALL OComboBoxModel::reloaded( const EventObject& aEvent )
 {
 	OBoundControlModel::reloaded(aEvent);
 
@@ -871,7 +868,7 @@ void OComboBoxModel::refreshInternalEntryList()
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL OComboBoxModel::disposing( const EventObject& _rSource ) throw ( RuntimeException )
+void SAL_CALL OComboBoxModel::disposing( const EventObject& _rSource )
 {
     if ( !OEntryListHelper::handleDisposing( _rSource ) )
         OBoundControlModel::disposing( _rSource );
@@ -882,7 +879,7 @@ void SAL_CALL OComboBoxModel::disposing( const EventObject& _rSource ) throw ( R
 //========================================================================
 
 //------------------------------------------------------------------
-InterfaceRef SAL_CALL OComboBoxControl_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory) throw (RuntimeException)
+InterfaceRef SAL_CALL OComboBoxControl_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory)
 {
 	return *(new OComboBoxControl(_rxFactory));
 }
@@ -894,7 +891,7 @@ OComboBoxControl::OComboBoxControl(const Reference<XMultiServiceFactory>& _rxFac
 }
 
 //------------------------------------------------------------------------------
-StringSequence SAL_CALL OComboBoxControl::getSupportedServiceNames() throw(RuntimeException)
+StringSequence SAL_CALL OComboBoxControl::getSupportedServiceNames()
 {
 	StringSequence aSupported = OBoundControl::getSupportedServiceNames();
 	aSupported.realloc(aSupported.getLength() + 1);

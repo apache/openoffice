@@ -88,13 +88,13 @@ Reference< XContent > OCommandContainer::createObject( const ::rtl::OUString& _r
 }
 
 // -----------------------------------------------------------------------------
-Reference< XInterface > SAL_CALL OCommandContainer::createInstanceWithArguments(const Sequence< Any >& /*aArguments*/ ) throw (Exception, RuntimeException)
+Reference< XInterface > SAL_CALL OCommandContainer::createInstanceWithArguments(const Sequence< Any >& /*aArguments*/ )
 {
 	return createInstance( );
 }
 
 // -----------------------------------------------------------------------------
-Reference< XInterface > SAL_CALL OCommandContainer::createInstance( ) throw (Exception, RuntimeException)
+Reference< XInterface > SAL_CALL OCommandContainer::createInstance( )
 {
     return m_aContext.createComponent( (::rtl::OUString)( m_bTables ? SERVICE_SDB_TABLEDEFINITION : SERVICE_SDB_COMMAND_DEFINITION ) );
 }

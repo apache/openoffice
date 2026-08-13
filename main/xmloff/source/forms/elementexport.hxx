@@ -155,7 +155,7 @@ namespace xmloff
 
 		/** writes everything which needs to be represented as sub tag
 		*/
-		void exportSubTags() throw (::com::sun::star::uno::Exception);
+		void exportSubTags();
 
         /** adds the attributes which are handled via generic IPropertyHandlers
 

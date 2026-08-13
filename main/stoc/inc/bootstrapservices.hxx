@@ -42,33 +42,28 @@ namespace stoc_bootstrap
     ::com::sun::star::uno::Sequence< ::rtl::OUString > smgr_wrapper_getSupportedServiceNames();
     ::rtl::OUString smgr_wrapper_getImplementationName();
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL OServiceManagerWrapper_CreateInstance(
-	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & xContext )
-	throw (::com::sun::star::uno::Exception);
+	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & xContext );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > smgr_getSupportedServiceNames();
     ::rtl::OUString smgr_getImplementationName();
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL ORegistryServiceManager_CreateInstance(
-	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & xContext )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & xContext );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > regsmgr_getSupportedServiceNames();
     ::rtl::OUString regsmgr_getImplementationName();
 
     //security
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL ac_create(
-	    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xComponentContext )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+	    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xComponentContext );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > ac_getSupportedServiceNames() SAL_THROW( () );
     ::rtl::OUString ac_getImplementationName() SAL_THROW( () );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL filepolicy_create(
-	    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xComponentContext )
-	SAL_THROW( (com::sun::star::uno::Exception) );
+	    ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xComponentContext );
     ::com::sun::star::uno::Sequence< rtl::OUString > filepolicy_getSupportedServiceNames() SAL_THROW( () );
     ::rtl::OUString filepolicy_getImplementationName() SAL_THROW( () );
 
     //defaultregistry
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL NestedRegistry_CreateInstance(
-	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& )
-	throw( ::com::sun::star::uno::Exception);
+	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > defreg_getSupportedServiceNames();
     ::rtl::OUString defreg_getImplementationName();
 
@@ -86,22 +81,19 @@ namespace stoc_bootstrap
 
     //loader
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL DllComponentLoader_CreateInstance(
-	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& )
-	throw(::com::sun::star::uno::Exception);
+	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > loader_getSupportedServiceNames();
     ::rtl::OUString loader_getImplementationName();
 
     //registry_tdprovider
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL ProviderImpl_create(
-	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& )
-	throw(::com::sun::star::uno::Exception);
+	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > rdbtdp_getSupportedServiceNames();
     ::rtl::OUString rdbtdp_getImplementationName();
 
     //tdmanager
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL ManagerImpl_create(
-	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL tdmgr_getSupportedServiceNames();
     ::rtl::OUString SAL_CALL tdmgr_getImplementationName();
 } // namespace

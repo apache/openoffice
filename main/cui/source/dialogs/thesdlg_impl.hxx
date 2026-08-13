@@ -208,7 +208,7 @@ struct SvxThesaurusDialog_Impl
     ~SvxThesaurusDialog_Impl();
 
     uno::Sequence< uno::Reference< linguistic2::XMeaning > > SAL_CALL
-            queryMeanings_Impl( ::rtl::OUString& rTerm, const lang::Locale& rLocale, const beans::PropertyValues& rProperties ) throw(lang::IllegalArgumentException, uno::RuntimeException);
+            queryMeanings_Impl( ::rtl::OUString& rTerm, const lang::Locale& rLocale, const beans::PropertyValues& rProperties );
 
     bool    UpdateAlternativesBox_Impl();
     void    UpdateVendorImage();

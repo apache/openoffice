@@ -514,9 +514,9 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL flush() throw( RUNTIMEEXCEPTION );
-    	virtual void SAL_CALL addFlushListener( const REFERENCE< XFLUSHLISTENER >& xListener ) throw( RUNTIMEEXCEPTION );
-    	virtual void SAL_CALL removeFlushListener( const REFERENCE< XFLUSHLISTENER >& xListener ) throw( RUNTIMEEXCEPTION );
+    	virtual void SAL_CALL flush();
+    	virtual void SAL_CALL addFlushListener( const REFERENCE< XFLUSHLISTENER >& xListener );
+    	virtual void SAL_CALL removeFlushListener( const REFERENCE< XFLUSHLISTENER >& xListener );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XDialog
@@ -534,7 +534,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL setTitle( const OUSTRING& sTitle ) throw( RUNTIMEEXCEPTION );
+    	virtual void SAL_CALL setTitle( const OUSTRING& sTitle );
 
 		/*-****************************************************************************************************//**
 			@short		return the current title of this dialog
@@ -548,7 +548,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual OUSTRING SAL_CALL getTitle() throw( RUNTIMEEXCEPTION );
+    	virtual OUSTRING SAL_CALL getTitle();
 
 		/*-****************************************************************************************************//**
 			@short		show the dialog and return user reaction
@@ -565,7 +565,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 			@onerror	We return 0(sal_False).
 		*//*-*****************************************************************************************************/
 
-    	virtual sal_Int16 SAL_CALL execute() throw( RUNTIMEEXCEPTION );
+    	virtual sal_Int16 SAL_CALL execute();
 
 		/*-****************************************************************************************************//**
 			@short		not implemented yet!
@@ -579,7 +579,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL endExecute() throw( RUNTIMEEXCEPTION );
+    	virtual void SAL_CALL endExecute();
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods
@@ -616,7 +616,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 		virtual sal_Bool SAL_CALL convertFastPropertyValue(			ANY&		aConvertedValue	,
 								  									ANY&		aOldValue		,
 																	sal_Int32	nHandle			,
-															const	ANY&		aValue			) throw( ILLEGALARGUMENTEXCEPTION );
+															const	ANY&		aValue			);
 
 		/*-****************************************************************************************************//**
 			@short		set value of a transient property
@@ -635,7 +635,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 		*//*-*****************************************************************************************************/
 
 		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(			sal_Int32	nHandle	,
-							  									const	ANY&		aValue	) throw( EXCEPTION );
+							  									const	ANY&		aValue	);
 
 		/*-****************************************************************************************************//**
 			@short		get value of a transient property
@@ -684,7 +684,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual REFERENCE< XPROPERTYSETINFO > SAL_CALL getPropertySetInfo() throw (::com::sun::star::uno::RuntimeException);
+		virtual REFERENCE< XPROPERTYSETINFO > SAL_CALL getPropertySetInfo();
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	private methods
@@ -721,27 +721,27 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 		sal_Bool impl_tryToChangeProperty(	const	OUSTRING&				sProperty		,
 											const	ANY&					aValue			,
 													ANY&					aOldValue		,
-													ANY&					aConvertedValue	) throw( ILLEGALARGUMENTEXCEPTION );
+													ANY&					aConvertedValue	);
 
 		sal_Bool impl_tryToChangeProperty(	const	SEQUENCE< OUSTRING >&	seqProperty		,
 											const	ANY&					aValue			,
 													ANY&					aOldValue		,
-													ANY&					aConvertedValue	) throw( ILLEGALARGUMENTEXCEPTION );
+													ANY&					aConvertedValue	);
 
 		sal_Bool impl_tryToChangeProperty(	const	sal_Int32&				nProperty		,
 											const	ANY&					aValue			,
 													ANY&					aOldValue		,
-													ANY&					aConvertedValue	) throw( ILLEGALARGUMENTEXCEPTION );
+													ANY&					aConvertedValue	);
 
 		sal_Bool impl_tryToChangeProperty(	const	LOCALE&					aProperty		,
 											const	ANY&					aValue			,
 													ANY&					aOldValue		,
-													ANY&					aConvertedValue	) throw( ILLEGALARGUMENTEXCEPTION );
+													ANY&					aConvertedValue	);
 
         sal_Bool impl_tryToChangeProperty(  const   ANY&                    aProperty       ,
 											const	ANY&					aValue			,
 													ANY&					aOldValue		,
-													ANY&					aConvertedValue	) throw( ILLEGALARGUMENTEXCEPTION );
+													ANY&					aConvertedValue	);
 
 		/*-****************************************************************************************************//**
 			@short		search and open profile

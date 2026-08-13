@@ -56,10 +56,9 @@ protected:
 	/** Virtual dtor.
 
         @attention
-        Despite the fact that a RuntimeException is allowed to be thrown, you must not throw any
-        exception upon destruction!
+        You must not throw any exception upon destruction!
 	*/
-    virtual ~OWeakObject() SAL_THROW_DTOR( (::com::sun::star::uno::RuntimeException) );
+    virtual ~OWeakObject();
 
     /** disposes and resets m_pWeakConnectionPoint
         @precond
@@ -136,8 +135,7 @@ public:
         @return demanded type or empty any
     */
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-		const ::com::sun::star::uno::Type & rType )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Type & rType );
     /** increasing m_refCount
     */
     virtual void SAL_CALL acquire()
@@ -151,8 +149,7 @@ public:
 
         @return a ::com::sun::star::uno::XAdapter reference
     */
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XAdapter > SAL_CALL queryAdapter()
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XAdapter > SAL_CALL queryAdapter();
 
 	/** Cast operator to XInterface reference.
 

@@ -31,7 +31,7 @@ namespace comphelper
 			_rxListener) : m_xListener(_rxListener)
 	{
 	}
-	void SAL_CALL OEventListenerHelper::disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException)
+	void SAL_CALL OEventListenerHelper::disposing( const ::com::sun::star::lang::EventObject& Source )
 	{
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener> xRef = m_xListener;
 		if(xRef.is())

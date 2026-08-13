@@ -41,11 +41,11 @@ private:
     css::uno::Reference< css::text::XTextRange > mxTextRange;
 
 public:
-	SwVbaParagraph( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& xDocument, const css::uno::Reference< css::text::XTextRange >& xTextRange ) throw ( css::uno::RuntimeException );
+	SwVbaParagraph( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& xDocument, const css::uno::Reference< css::text::XTextRange >& xTextRange );
 	virtual ~SwVbaParagraph();
 
     // XParagraph
-    virtual css::uno::Reference< ooo::vba::word::XRange > SAL_CALL getRange() throw ( css::uno::RuntimeException );
+    virtual css::uno::Reference< ooo::vba::word::XRange > SAL_CALL getRange();
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
@@ -61,12 +61,12 @@ class SwVbaParagraphs : public SwVbaParagraphs_BASE
 private:
     css::uno::Reference< css::text::XTextDocument > mxTextDocument;
 public:
-	SwVbaParagraphs( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::text::XTextDocument >& xDocument ) throw (css::uno::RuntimeException);
+	SwVbaParagraphs( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::text::XTextDocument >& xDocument );
 	virtual ~SwVbaParagraphs() {}
 
 	// XEnumerationAccess
-	virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+	virtual css::uno::Type SAL_CALL getElementType();
+	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
 	// SwVbaParagraphs_BASE
 	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );

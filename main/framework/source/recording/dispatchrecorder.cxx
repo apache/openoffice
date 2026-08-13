@@ -92,7 +92,6 @@ void flatten_struct_members(
 //==================================================================================================
 Sequence< Any > make_seq_out_of_struct(
     Any const & val )
-    SAL_THROW( (RuntimeException) )
 {
     Type const & type = val.getValueType();
     TypeClass eTypeClass = type.getTypeClass();
@@ -137,7 +136,7 @@ DispatchRecorder::~DispatchRecorder()
 
 //*************************************************************************
 // generate header
-void SAL_CALL DispatchRecorder::startRecording( const css::uno::Reference< css::frame::XFrame >& ) throw( css::uno::RuntimeException )
+void SAL_CALL DispatchRecorder::startRecording( const css::uno::Reference< css::frame::XFrame >& )
 {
     /* SAFE{ */
     /* } */
@@ -145,7 +144,7 @@ void SAL_CALL DispatchRecorder::startRecording( const css::uno::Reference< css::
 
 //*************************************************************************
 void SAL_CALL DispatchRecorder::recordDispatch( const css::util::URL& aURL,
-                                                const css::uno::Sequence< css::beans::PropertyValue >& lArguments ) throw( css::uno::RuntimeException )
+                                                const css::uno::Sequence< css::beans::PropertyValue >& lArguments )
 {
 	::rtl::OUString aTarget;
 
@@ -155,7 +154,7 @@ void SAL_CALL DispatchRecorder::recordDispatch( const css::util::URL& aURL,
 
 //*************************************************************************
 void SAL_CALL DispatchRecorder::recordDispatchAsComment( const css::util::URL& aURL,
-                                                         const css::uno::Sequence< css::beans::PropertyValue >& lArguments ) throw( css::uno::RuntimeException )
+                                                         const css::uno::Sequence< css::beans::PropertyValue >& lArguments )
 {
 	::rtl::OUString aTarget;
 
@@ -165,7 +164,7 @@ void SAL_CALL DispatchRecorder::recordDispatchAsComment( const css::util::URL& a
 }
 
 //*************************************************************************
-void SAL_CALL DispatchRecorder::endRecording() throw( css::uno::RuntimeException )
+void SAL_CALL DispatchRecorder::endRecording()
 {
     /* SAFE{ */
     WriteGuard aWriteLock(m_aLock);
@@ -174,7 +173,7 @@ void SAL_CALL DispatchRecorder::endRecording() throw( css::uno::RuntimeException
 }
 
 //*************************************************************************
-::rtl::OUString SAL_CALL DispatchRecorder::getRecordedMacro() throw( css::uno::RuntimeException )
+::rtl::OUString SAL_CALL DispatchRecorder::getRecordedMacro()
 {
     /* SAFE{ */
     WriteGuard aWriteLock(m_aLock);
@@ -422,22 +421,22 @@ void SAL_CALL DispatchRecorder::implts_recordMacro( const ::rtl::OUString& aURL,
     /* } */
 }
 
-com::sun::star::uno::Type SAL_CALL DispatchRecorder::getElementType() throw (::com::sun::star::uno::RuntimeException)
+com::sun::star::uno::Type SAL_CALL DispatchRecorder::getElementType()
 {
 	return ::getCppuType((const com::sun::star::frame::DispatchStatement *)NULL);
 }
 
-sal_Bool SAL_CALL DispatchRecorder::hasElements() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL DispatchRecorder::hasElements()
 {
 	return (! m_aStatements.empty());
 }
 
-sal_Int32 SAL_CALL DispatchRecorder::getCount() throw (::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL DispatchRecorder::getCount()
 {
 	return m_aStatements.size();
 }
 
-com::sun::star::uno::Any SAL_CALL DispatchRecorder::getByIndex(sal_Int32 idx) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
+com::sun::star::uno::Any SAL_CALL DispatchRecorder::getByIndex(sal_Int32 idx)
 {
     if (idx >= (sal_Int32)m_aStatements.size()) {
 		throw com::sun::star::lang::IndexOutOfBoundsException(
@@ -453,7 +452,7 @@ com::sun::star::uno::Any SAL_CALL DispatchRecorder::getByIndex(sal_Int32 idx) th
 	return element;
 }
 
-void SAL_CALL DispatchRecorder::replaceByIndex(sal_Int32 idx, const com::sun::star::uno::Any& element) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL DispatchRecorder::replaceByIndex(sal_Int32 idx, const com::sun::star::uno::Any& element)
 {
 	if (element.getValueType() !=
 	    ::getCppuType((const com::sun::star::frame::DispatchStatement *)NULL)) {

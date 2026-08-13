@@ -48,11 +48,11 @@ public:
 	SfxStatusInd_Impl();
 
 	// XStatusIndicator
-	virtual void SAL_CALL start(const ::rtl::OUString& aText, sal_Int32 nRange) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL end(void) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setText(const ::rtl::OUString& aText) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setValue(sal_Int32 nValue) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL reset() throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL start(const ::rtl::OUString& aText, sal_Int32 nRange);
+	virtual void SAL_CALL end(void);
+	virtual void SAL_CALL setText(const ::rtl::OUString& aText);
+	virtual void SAL_CALL setValue(sal_Int32 nValue);
+	virtual void SAL_CALL reset();
 };
 
 class SfxPopupStatusIndicator : public Window

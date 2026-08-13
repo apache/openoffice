@@ -60,19 +60,14 @@ public:
 protected:
     // ____ XMultiServiceFactory ____
     virtual ::com::sun::star::uno::Reference<
-            ::com::sun::star::uno::XInterface > SAL_CALL createInstance( const ::rtl::OUString& aServiceSpecifier )
-        throw (::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::uno::XInterface > SAL_CALL createInstance( const ::rtl::OUString& aServiceSpecifier );
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::uno::XInterface > SAL_CALL createInstanceWithArguments(
             const ::rtl::OUString& ServiceSpecifier,
             const ::com::sun::star::uno::Sequence<
-            ::com::sun::star::uno::Any >& Arguments )
-        throw (::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::uno::Any >& Arguments );
     virtual ::com::sun::star::uno::Sequence<
-        ::rtl::OUString > SAL_CALL getAvailableServiceNames()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString > SAL_CALL getAvailableServiceNames();
 
     // ____ XChartTypeManager ____
     // currently empty

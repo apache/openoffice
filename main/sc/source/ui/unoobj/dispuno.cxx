@@ -113,7 +113,6 @@ void ScDispatchProviderInterceptor::Notify( SfxBroadcaster&, const SfxHint& rHin
 uno::Reference<frame::XDispatch> SAL_CALL ScDispatchProviderInterceptor::queryDispatch(
 						const util::URL& aURL, const rtl::OUString& aTargetFrameName,
 						sal_Int32 nSearchFlags )
-						throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -138,7 +137,6 @@ uno::Reference<frame::XDispatch> SAL_CALL ScDispatchProviderInterceptor::queryDi
 uno::Sequence< uno::Reference<frame::XDispatch> > SAL_CALL
 						ScDispatchProviderInterceptor::queryDispatches(
 						const uno::Sequence<frame::DispatchDescriptor>& aDescripts )
-						throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -157,7 +155,6 @@ uno::Sequence< uno::Reference<frame::XDispatch> > SAL_CALL
 
 uno::Reference<frame::XDispatchProvider> SAL_CALL
 						ScDispatchProviderInterceptor::getSlaveDispatchProvider()
-						throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return m_xSlaveDispatcher;
@@ -165,7 +162,6 @@ uno::Reference<frame::XDispatchProvider> SAL_CALL
 
 void SAL_CALL ScDispatchProviderInterceptor::setSlaveDispatchProvider(
 						const uno::Reference<frame::XDispatchProvider>& xNewDispatchProvider )
-						throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	m_xSlaveDispatcher.set(xNewDispatchProvider);
@@ -173,7 +169,6 @@ void SAL_CALL ScDispatchProviderInterceptor::setSlaveDispatchProvider(
 
 uno::Reference<frame::XDispatchProvider> SAL_CALL
 						ScDispatchProviderInterceptor::getMasterDispatchProvider()
-						throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return m_xMasterDispatcher;
@@ -181,7 +176,6 @@ uno::Reference<frame::XDispatchProvider> SAL_CALL
 
 void SAL_CALL ScDispatchProviderInterceptor::setMasterDispatchProvider(
 						const uno::Reference<frame::XDispatchProvider>& xNewSupplier )
-						throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	m_xMasterDispatcher.set(xNewSupplier);
@@ -190,7 +184,6 @@ void SAL_CALL ScDispatchProviderInterceptor::setMasterDispatchProvider(
 // XEventListener
 
 void SAL_CALL ScDispatchProviderInterceptor::disposing( const lang::EventObject& /* Source */ )
-								throw(::com::sun::star::uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -241,7 +234,6 @@ void ScDispatch::Notify( SfxBroadcaster&, const SfxHint& rHint )
 
 void SAL_CALL ScDispatch::dispatch( const util::URL& aURL,
 								const uno::Sequence<beans::PropertyValue>& aArgs )
-								throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -290,7 +282,6 @@ void lcl_FillDataSource( frame::FeatureStateEvent& rEvent, const ScImportParam& 
 void SAL_CALL ScDispatch::addStatusListener(
                                 const uno::Reference<frame::XStatusListener>& xListener,
                                 const util::URL& aURL )
-                                throw(uno::RuntimeException)
 {
     ScUnoGuard aGuard;
 
@@ -330,7 +321,6 @@ void SAL_CALL ScDispatch::addStatusListener(
 void SAL_CALL ScDispatch::removeStatusListener(
                                 const uno::Reference<frame::XStatusListener>& xListener,
                                 const util::URL& aURL )
-                                throw(uno::RuntimeException)
 {
     ScUnoGuard aGuard;
 
@@ -360,7 +350,6 @@ void SAL_CALL ScDispatch::removeStatusListener(
 // XSelectionChangeListener
 
 void SAL_CALL ScDispatch::selectionChanged( const ::com::sun::star::lang::EventObject& /* aEvent */ )
-                                throw (::com::sun::star::uno::RuntimeException)
 {
     //  currently only called for URL cURLDocDataSource
 
@@ -395,7 +384,6 @@ void SAL_CALL ScDispatch::selectionChanged( const ::com::sun::star::lang::EventO
 // XEventListener
 
 void SAL_CALL ScDispatch::disposing( const ::com::sun::star::lang::EventObject& rSource )
-                                throw (::com::sun::star::uno::RuntimeException)
 {
     uno::Reference<view::XSelectionSupplier> xSupplier(rSource.Source, uno::UNO_QUERY);
     xSupplier->removeSelectionChangeListener(this);

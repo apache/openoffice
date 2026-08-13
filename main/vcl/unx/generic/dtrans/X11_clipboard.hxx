@@ -77,53 +77,44 @@ namespace x11 {
 		/*
 		 *	XInitialization
 		 */
-		virtual void SAL_CALL initialize( const Sequence< Any >& arguments ) throw(  ::com::sun::star::uno::Exception );
+		virtual void SAL_CALL initialize( const Sequence< Any >& arguments );
 
 		/*
 		 * XServiceInfo
 		 */
 
-		virtual ::rtl::OUString SAL_CALL getImplementationName(	 )
-			throw(RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(	 );
 
-		virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-			throw(RuntimeException);
+		virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-		virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-			throw(RuntimeException);
+		virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 		/*
 		 * XClipboard
 		 */
 
-		virtual com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getContents()
-			throw(RuntimeException);
+		virtual com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getContents();
 
 		virtual void SAL_CALL setContents(
 			const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& xTrans,
-			const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardOwner >& xClipboardOwner )
-			throw(RuntimeException);
+			const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardOwner >& xClipboardOwner );
 
-		virtual ::rtl::OUString SAL_CALL getName()
-			throw(RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getName();
 
 		/*
 		 * XClipboardEx
 		 */
 
-		virtual sal_Int8 SAL_CALL getRenderingCapabilities()
-			throw(RuntimeException);
+		virtual sal_Int8 SAL_CALL getRenderingCapabilities();
 
 		/*
 		 * XClipboardNotifier
 		 */
 		virtual void SAL_CALL addClipboardListener(
-			const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener )
-			throw(RuntimeException);
+			const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener );
 
 		virtual void SAL_CALL removeClipboardListener(
-			const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener )
-			throw(RuntimeException);
+			const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardListener >& listener );
 
 		/*
 		 *	SelectionAdaptor

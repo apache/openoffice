@@ -61,15 +61,13 @@ public:
     static ::rtl::OUString getImplementationName_static (void);
     static css::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static (void);
     static css::uno::Reference<css::uno::XInterface> Create(
-        const css::uno::Reference<css::uno::XComponentContext>& rxContext)
-        SAL_THROW((css::uno::Exception));
+        const css::uno::Reference<css::uno::XComponentContext>& rxContext);
 
 
     // XInitialization
 
     virtual void SAL_CALL initialize(
-        const css::uno::Sequence<css::uno::Any>& aArguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        const css::uno::Sequence<css::uno::Any>& aArguments);
 
 
     // XDispatchProvider
@@ -78,20 +76,18 @@ public:
         queryDispatch (
             const css::util::URL& aURL,
             const rtl::OUString& aTargetFrameName,
-            sal_Int32 nSearchFlags )
-        throw(css::uno::RuntimeException);
+            sal_Int32 nSearchFlags );
 
     virtual css::uno::Sequence<css::uno::Reference<css::frame::XDispatch> > SAL_CALL
         queryDispatches(
-            const css::uno::Sequence< css::frame::DispatchDescriptor>& rDescriptors)
-        throw(css::uno::RuntimeException);
+            const css::uno::Sequence< css::frame::DispatchDescriptor>& rDescriptors);
 
 
 private:
     class Dispatch;
     ::rtl::Reference<PresenterController> mpPresenterController;
 
-    void ThrowIfDisposed (void) const throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } }

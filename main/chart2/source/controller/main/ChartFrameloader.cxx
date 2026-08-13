@@ -83,7 +83,6 @@ APPHELPER_XSERVICEINFO_IMPL(ChartFrameLoader,CHART_FRAMELOADER_SERVICE_IMPLEMENT
 	sal_Bool SAL_CALL ChartFrameLoader
 ::load( const uno::Sequence< beans::PropertyValue >& rMediaDescriptor
 		, const uno::Reference<frame::XFrame >& xFrame )
-		throw (uno::RuntimeException)
 {
 	//@todo ? need to add as terminate listener to desktop?
 
@@ -191,7 +190,7 @@ APPHELPER_XSERVICEINFO_IMPL(ChartFrameLoader,CHART_FRAMELOADER_SERVICE_IMPLEMENT
 }
 
 	void SAL_CALL ChartFrameLoader
-::cancel() throw (uno::RuntimeException)
+::cancel()
 {
 	m_oCancelFinished.reset();
 	m_bCancelRequired = sal_True;

@@ -68,8 +68,6 @@ ContentHandlerFactory::~ContentHandlerFactory()
     16.07.2003 13:38
 -----------------------------------------------*/
 css::uno::Reference< css::uno::XInterface > SAL_CALL ContentHandlerFactory::createInstance(const ::rtl::OUString& sHandler)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     return createInstanceWithArguments(sHandler, css::uno::Sequence< css::uno::Any >());
 }
@@ -79,8 +77,6 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL ContentHandlerFactory::crea
 -----------------------------------------------*/
 css::uno::Reference< css::uno::XInterface > SAL_CALL ContentHandlerFactory::createInstanceWithArguments(const ::rtl::OUString&                     sHandler  ,
                                                                                                         const css::uno::Sequence< css::uno::Any >& lArguments)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     css::uno::Reference< css::uno::XInterface > xHandler;
 
@@ -160,7 +156,6 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL ContentHandlerFactory::crea
     09.07.2003 07:46
 -----------------------------------------------*/
 css::uno::Sequence< ::rtl::OUString > SAL_CALL ContentHandlerFactory::getAvailableServiceNames()
-    throw(css::uno::RuntimeException)
 {
     // must be the same list as ((XNameAccess*)this)->getElementNames() return!
     return getElementNames();

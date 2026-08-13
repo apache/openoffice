@@ -262,7 +262,6 @@ TVBase::release(
 Any SAL_CALL
 TVBase::queryInterface(
 	const Type& rType )
-	throw( RuntimeException )
 {
 	Any aRet = cppu::queryInterface( rType,
 									 SAL_STATIC_CAST( XTypeProvider*, this ),
@@ -327,9 +326,6 @@ TVRead::~TVRead()
 
 Any SAL_CALL
 TVRead::getByName( const rtl::OUString& aName )
-	throw( NoSuchElementException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	bool found( true );
 	Any aAny;
@@ -356,7 +352,6 @@ TVRead::getByName( const rtl::OUString& aName )
 
 Sequence< rtl::OUString > SAL_CALL
 TVRead::getElementNames( )
-	throw( RuntimeException )
 {
 	Sequence< rtl::OUString > seq( 3 );
 
@@ -371,7 +366,6 @@ TVRead::getElementNames( )
 
 sal_Bool SAL_CALL
 TVRead::hasByName( const rtl::OUString& aName )
-	throw( RuntimeException )
 {
 	if( aName.compareToAscii( "Title" ) == 0        ||
 		aName.compareToAscii( "TargetURL" ) == 0    ||
@@ -386,8 +380,6 @@ TVRead::hasByName( const rtl::OUString& aName )
 
 Any SAL_CALL
 TVRead::getByHierarchicalName( const rtl::OUString& aName )
-	throw( NoSuchElementException,
-		   RuntimeException )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );
@@ -404,7 +396,6 @@ TVRead::getByHierarchicalName( const rtl::OUString& aName )
 
 sal_Bool SAL_CALL
 TVRead::hasByHierarchicalName( const rtl::OUString& aName )
-	throw( RuntimeException )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );
@@ -552,9 +543,6 @@ TVChildTarget::~TVChildTarget()
 
 Any SAL_CALL
 TVChildTarget::getByName( const rtl::OUString& aName )
-	throw( NoSuchElementException,
-		   WrappedTargetException,
-		   RuntimeException )
 {
 	rtl::OUString num( aName.getStr()+2,aName.getLength()-4 );
 	sal_Int32 idx = num.toInt32() - 1;
@@ -572,7 +560,6 @@ TVChildTarget::getByName( const rtl::OUString& aName )
 
 Sequence< rtl::OUString > SAL_CALL
 TVChildTarget::getElementNames( )
-	throw( RuntimeException )
 {
 	Sequence< rtl::OUString > seq( Elements.size() );
 	for( unsigned i = 0; i < Elements.size(); ++i )
@@ -585,7 +572,6 @@ TVChildTarget::getElementNames( )
 
 sal_Bool SAL_CALL
 TVChildTarget::hasByName( const rtl::OUString& aName )
-	throw( RuntimeException )
 {
 	rtl::OUString num( aName.getStr()+2,aName.getLength()-4 );
 	sal_Int32 idx = num.toInt32() - 1;
@@ -601,8 +587,6 @@ TVChildTarget::hasByName( const rtl::OUString& aName )
 
 Any SAL_CALL
 TVChildTarget::getByHierarchicalName( const rtl::OUString& aName )
-	throw( NoSuchElementException,
-		   RuntimeException )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );
@@ -625,7 +609,6 @@ TVChildTarget::getByHierarchicalName( const rtl::OUString& aName )
 
 sal_Bool SAL_CALL
 TVChildTarget::hasByHierarchicalName( const rtl::OUString& aName )
-	throw( RuntimeException )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );

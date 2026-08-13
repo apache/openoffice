@@ -92,7 +92,7 @@ void ScVbaWorkbook::initColorData( const uno::Sequence< sal_Int32 >& sColors )
 
 
 void SAL_CALL
-ScVbaWorkbook::ResetColors(  ) throw (::script::BasicErrorException, ::uno::RuntimeException)
+ScVbaWorkbook::ResetColors(  )
 {
 		uno::Reference< container::XIndexAccess > xIndexAccess( ScVbaPalette::getDefaultPalette(), uno::UNO_QUERY_THROW );
 		sal_Int32 nLen = xIndexAccess->getCount();
@@ -106,7 +106,7 @@ ScVbaWorkbook::ResetColors(  ) throw (::script::BasicErrorException, ::uno::Runt
 }
 
 ::uno::Any SAL_CALL
-ScVbaWorkbook::Colors( const ::uno::Any& Index ) throw (::script::BasicErrorException, ::uno::RuntimeException)
+ScVbaWorkbook::Colors( const ::uno::Any& Index )
 {
 	uno::Any aRet;
 	if ( Index.getValue() )
@@ -121,7 +121,7 @@ ScVbaWorkbook::Colors( const ::uno::Any& Index ) throw (::script::BasicErrorExce
 }
 
 ::sal_Int32 SAL_CALL
-ScVbaWorkbook::FileFormat(  ) throw (::script::BasicErrorException, ::uno::RuntimeException)
+ScVbaWorkbook::FileFormat(  )
 {
         sal_Int32 aFileFormat = 0;
         rtl::OUString aFilterName;
@@ -210,7 +210,7 @@ ScVbaWorkbook::ScVbaWorkbook( uno::Sequence< uno::Any> const & args,
 }
 
 uno::Reference< excel::XWorksheet >
-ScVbaWorkbook::getActiveSheet() throw (uno::RuntimeException)
+ScVbaWorkbook::getActiveSheet()
 {
 	uno::Reference< frame::XModel > xModel( getCurrentExcelDoc( mxContext ), uno::UNO_SET_THROW );
 	uno::Reference< sheet::XSpreadsheetView > xView( xModel->getCurrentController(), uno::UNO_QUERY_THROW );
@@ -223,13 +223,13 @@ ScVbaWorkbook::getActiveSheet() throw (uno::RuntimeException)
 }
 
 uno::Any SAL_CALL
-ScVbaWorkbook::Sheets( const uno::Any& aIndex ) throw (uno::RuntimeException)
+ScVbaWorkbook::Sheets( const uno::Any& aIndex )
 {
 	return Worksheets( aIndex );
 }
 
 uno::Any SAL_CALL
-ScVbaWorkbook::Worksheets( const uno::Any& aIndex ) throw (uno::RuntimeException)
+ScVbaWorkbook::Worksheets( const uno::Any& aIndex )
 {
 	uno::Reference< frame::XModel > xModel( getModel() );
 	uno::Reference <sheet::XSpreadsheetDocument> xSpreadDoc( xModel, uno::UNO_QUERY_THROW );
@@ -243,7 +243,7 @@ ScVbaWorkbook::Worksheets( const uno::Any& aIndex ) throw (uno::RuntimeException
 	return uno::Any( xWorkSheets->Item( aIndex, uno::Any() ) );
 }
 uno::Any SAL_CALL
-ScVbaWorkbook::Windows( const uno::Any& aIndex ) throw (uno::RuntimeException)
+ScVbaWorkbook::Windows( const uno::Any& aIndex )
 {
 
 	uno::Reference< excel::XWindows >  xWindows( new ScVbaWindows( getParent(), mxContext ) );
@@ -253,26 +253,26 @@ ScVbaWorkbook::Windows( const uno::Any& aIndex ) throw (uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaWorkbook::Activate() throw (uno::RuntimeException)
+ScVbaWorkbook::Activate()
 {
     VbaDocumentBase::Activate();
 }
 
 ::sal_Bool
-ScVbaWorkbook::getProtectStructure() throw (uno::RuntimeException)
+ScVbaWorkbook::getProtectStructure()
 {
 	uno::Reference< util::XProtectable > xProt( getModel(), uno::UNO_QUERY_THROW );
 	return xProt->isProtected();
 }
 
-::sal_Bool SAL_CALL ScVbaWorkbook::getPrecisionAsDisplayed() throw (uno::RuntimeException)
+::sal_Bool SAL_CALL ScVbaWorkbook::getPrecisionAsDisplayed()
 {
     uno::Reference< frame::XModel > xModel( getModel(), uno::UNO_QUERY_THROW );
     ScDocument* pDoc = excel::getDocShell( xModel )->GetDocument();
     return pDoc->GetDocOptions().IsCalcAsShown();
 }
 
-void SAL_CALL ScVbaWorkbook::setPrecisionAsDisplayed( sal_Bool _precisionAsDisplayed ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaWorkbook::setPrecisionAsDisplayed( sal_Bool _precisionAsDisplayed )
 {
     uno::Reference< frame::XModel > xModel( getModel(), uno::UNO_QUERY_THROW );
     ScDocument* pDoc = excel::getDocShell( xModel )->GetDocument();
@@ -282,7 +282,7 @@ void SAL_CALL ScVbaWorkbook::setPrecisionAsDisplayed( sal_Bool _precisionAsDispl
 }
 
 void
-ScVbaWorkbook::SaveCopyAs( const rtl::OUString& sFileName ) throw ( uno::RuntimeException)
+ScVbaWorkbook::SaveCopyAs( const rtl::OUString& sFileName )
 {
 	rtl::OUString aURL;
 	osl::FileBase::getFileURLFromSystemPath( sFileName, aURL );
@@ -294,7 +294,7 @@ ScVbaWorkbook::SaveCopyAs( const rtl::OUString& sFileName ) throw ( uno::Runtime
 }
 
 css::uno::Any SAL_CALL
-ScVbaWorkbook::Styles( const uno::Any& Item ) throw (uno::RuntimeException)
+ScVbaWorkbook::Styles( const uno::Any& Item )
 {
 	// quick look and Styles object doesn't seem to have a valid parent
 	// or a least the object browser just shows an object that has no
@@ -307,7 +307,7 @@ ScVbaWorkbook::Styles( const uno::Any& Item ) throw (uno::RuntimeException)
 
 // Amelia Wang
 uno::Any SAL_CALL
-ScVbaWorkbook::Names( const uno::Any& aIndex ) throw (uno::RuntimeException)
+ScVbaWorkbook::Names( const uno::Any& aIndex )
 {
 	uno::Reference< frame::XModel > xModel( getModel(), uno::UNO_SET_THROW );
 	uno::Reference< beans::XPropertySet > xProps( xModel, uno::UNO_QUERY_THROW );
@@ -338,7 +338,7 @@ ScVbaWorkbook::getServiceNames()
 }
 
 ::rtl::OUString SAL_CALL
-ScVbaWorkbook::getCodeName() throw (css::uno::RuntimeException)
+ScVbaWorkbook::getCodeName()
 {
     uno::Reference< beans::XPropertySet > xModelProp( getModel(), uno::UNO_QUERY_THROW );
     return xModelProp->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CodeName" ) ) ).get< ::rtl::OUString >();

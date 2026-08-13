@@ -87,8 +87,7 @@ class OOX_DLLPUBLIC FilterBase : public FilterBase_BASE, public ::cppu::BaseMute
 {
 public:
     explicit            FilterBase(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
 
     virtual             ~FilterBase();
 
@@ -216,16 +215,13 @@ public:
     // com.sun.star.lang.XServiceInfo interface -------------------------------
 
     virtual ::rtl::OUString SAL_CALL
-                        getImplementationName()
-                            throw( ::com::sun::star::uno::RuntimeException );
+                        getImplementationName();
 
     virtual sal_Bool SAL_CALL
-                        supportsService( const ::rtl::OUString& rServiceName )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                        supportsService( const ::rtl::OUString& rServiceName );
 
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-                        getSupportedServiceNames()
-                            throw( ::com::sun::star::uno::RuntimeException );
+                        getSupportedServiceNames();
 
     // com.sun.star.lang.XInitialization interface ----------------------------
 
@@ -240,32 +236,24 @@ public:
             filter implementations may support different arguments.
      */
     virtual void SAL_CALL initialize(
-                            const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& rArgs )
-                            throw(  ::com::sun::star::uno::Exception,
-                                    ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& rArgs );
 
     // com.sun.star.document.XImporter interface ------------------------------
 
     virtual void SAL_CALL setTargetDocument(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& rxDocument )
-                            throw(  ::com::sun::star::lang::IllegalArgumentException,
-                                    ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& rxDocument );
 
     // com.sun.star.document.XExporter interface ------------------------------
 
     virtual void SAL_CALL setSourceDocument(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& rxDocument )
-                            throw(  ::com::sun::star::lang::IllegalArgumentException,
-                                    ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& rxDocument );
 
     // com.sun.star.document.XFilter interface --------------------------------
 
     virtual sal_Bool SAL_CALL filter(
-                            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescSeq )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescSeq );
 
-    virtual void SAL_CALL cancel()
-                            throw( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL cancel();
 
     // ------------------------------------------------------------------------
 protected:

@@ -152,31 +152,25 @@ class SessionListener :   // interfaces
 
         virtual ~SessionListener();
 
-        virtual void SAL_CALL disposing(const com::sun::star::lang::EventObject&) throw (css::uno::RuntimeException);
+        virtual void SAL_CALL disposing(const com::sun::star::lang::EventObject&);
 
 
         // XInitialization
-        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any  >& args) throw (css::uno::RuntimeException);
+        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any  >& args);
 
         // XSessionManagerListener
-        virtual void SAL_CALL doSave( sal_Bool bShutdown, sal_Bool bCancelable )
-            throw (css::uno::RuntimeException);
-        virtual void SAL_CALL approveInteraction( sal_Bool bInteractionGranted )
-            throw (css::uno::RuntimeException);
-       virtual void SAL_CALL shutdownCanceled()
-            throw (css::uno::RuntimeException);
-       virtual sal_Bool SAL_CALL doRestore()
-            throw (css::uno::RuntimeException);
+        virtual void SAL_CALL doSave( sal_Bool bShutdown, sal_Bool bCancelable );
+        virtual void SAL_CALL approveInteraction( sal_Bool bInteractionGranted );
+       virtual void SAL_CALL shutdownCanceled();
+       virtual sal_Bool SAL_CALL doRestore();
 
         // XSessionManagerListener2
-        virtual void SAL_CALL doQuit()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL doQuit();
 
        // XStatusListener
-       virtual void SAL_CALL statusChanged(const com::sun::star::frame::FeatureStateEvent& event)
-           throw (css::uno::RuntimeException);
+       virtual void SAL_CALL statusChanged(const com::sun::star::frame::FeatureStateEvent& event);
 
-        void doSaveImpl( sal_Bool bShutdown, sal_Bool bCancelable ) throw (css::uno::RuntimeException);
+        void doSaveImpl( sal_Bool bShutdown, sal_Bool bCancelable );
 };
 
 } // namespace framework

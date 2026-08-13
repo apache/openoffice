@@ -176,7 +176,6 @@ DropdownToolbarController::~DropdownToolbarController()
 // ------------------------------------------------------------------
 
 void SAL_CALL DropdownToolbarController::dispose()
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 

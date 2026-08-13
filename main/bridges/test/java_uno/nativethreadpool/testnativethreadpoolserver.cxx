@@ -62,12 +62,12 @@ public:
 private:
     virtual ~Server() {}
 
-    virtual sal_Int32 SAL_CALL get() throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL get();
 
     css::uno::Reference< css::uno::XComponentContext > context;
 };
 
-sal_Int32 Server::get() throw (css::uno::RuntimeException) {
+sal_Int32 Server::get() {
     css::uno::Reference< css::lang::XMultiComponentFactory > factory(
         context->getServiceManager());
     if (!factory.is()) {
@@ -106,7 +106,6 @@ sal_Int32 Server::get() throw (css::uno::RuntimeException) {
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL create(
     css::uno::Reference< css::uno::XComponentContext > const & context)
-    SAL_THROW((css::uno::Exception))
 {
     return static_cast< cppu::OWeakObject * >(new Server(context));
 }

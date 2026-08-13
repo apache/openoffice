@@ -85,7 +85,6 @@ SVGFilter::~SVGFilter()
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL SVGFilter::filter( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
     Window*     pFocusWindow = Application::GetFocusWindow();
@@ -212,14 +211,13 @@ sal_Bool SAL_CALL SVGFilter::filter( const Sequence< PropertyValue >& rDescripto
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SVGFilter::cancel( ) throw (RuntimeException)
+void SAL_CALL SVGFilter::cancel( )
 {
 }
 
 // -----------------------------------------------------------------------------
 
 void SAL_CALL SVGFilter::setSourceDocument( const Reference< XComponent >& xDoc )
-	throw (IllegalArgumentException, RuntimeException)
 {
 	mxSrcDoc = xDoc;
 }
@@ -228,7 +226,6 @@ void SAL_CALL SVGFilter::setSourceDocument( const Reference< XComponent >& xDoc 
 
 #ifdef SOLAR_JAVA
 void SAL_CALL SVGFilter::setTargetDocument( const Reference< XComponent >& xDoc )
-	throw (::com::sun::star::lang::IllegalArgumentException, RuntimeException)
 {
 	mxDstDoc = xDoc;
 }
@@ -237,14 +234,12 @@ void SAL_CALL SVGFilter::setTargetDocument( const Reference< XComponent >& xDoc 
 // -----------------------------------------------------------------------------
 
 void SAL_CALL SVGFilter::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& /* aArguments */ )
-	throw (Exception, RuntimeException)
 {
 }
 
 // -----------------------------------------------------------------------------
 
 OUString SVGFilter_getImplementationName ()
-	throw (RuntimeException)
 {
     return OUString ( RTL_CONSTASCII_USTRINGPARAM ( SVG_FILTER_IMPLEMENTATION_NAME ) );
 }
@@ -252,14 +247,13 @@ OUString SVGFilter_getImplementationName ()
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL SVGFilter_supportsService( const OUString& rServiceName )
-	throw (RuntimeException)
 {
     return( rServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SVG_FILTER_SERVICE_NAME ) ) );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL SVGFilter_getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL SVGFilter_getSupportedServiceNames(  )
 {
 	Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -269,7 +263,7 @@ Sequence< OUString > SAL_CALL SVGFilter_getSupportedServiceNames(  ) throw (Runt
 
 // -----------------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL SVGFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr) throw( Exception )
+Reference< XInterface > SAL_CALL SVGFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
 {
 	return (cppu::OWeakObject*) new SVGFilter( rSMgr );
 }
@@ -277,7 +271,6 @@ Reference< XInterface > SAL_CALL SVGFilter_createInstance( const Reference< XMul
 // -----------------------------------------------------------------------------
 
 OUString SAL_CALL SVGFilter::getImplementationName(  )
-	throw (RuntimeException)
 {
 	return SVGFilter_getImplementationName();
 }
@@ -285,14 +278,13 @@ OUString SAL_CALL SVGFilter::getImplementationName(  )
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL SVGFilter::supportsService( const OUString& rServiceName )
-	throw (RuntimeException)
 {
     return SVGFilter_supportsService( rServiceName );
 }
 
 // -----------------------------------------------------------------------------
 
-::com::sun::star::uno::Sequence< OUString > SAL_CALL SVGFilter::getSupportedServiceNames(  ) throw (RuntimeException)
+::com::sun::star::uno::Sequence< OUString > SAL_CALL SVGFilter::getSupportedServiceNames(  )
 {
     return SVGFilter_getSupportedServiceNames();
 }

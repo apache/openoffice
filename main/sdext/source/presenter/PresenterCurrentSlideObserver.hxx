@@ -63,23 +63,22 @@ public:
     virtual void SAL_CALL disposing (void);
 
     // XSlideShowListener
-    virtual void SAL_CALL paused(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL resumed(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL slideTransitionStarted(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL slideTransitionEnded(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL slideAnimationsEnded(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL slideEnded(sal_Bool bReverse) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL hyperLinkClicked( const ::rtl::OUString& hyperLink ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL paused(  );
+    virtual void SAL_CALL resumed(  );
+    virtual void SAL_CALL slideTransitionStarted(  );
+    virtual void SAL_CALL slideTransitionEnded(  );
+    virtual void SAL_CALL slideAnimationsEnded(  );
+    virtual void SAL_CALL slideEnded(sal_Bool bReverse);
+    virtual void SAL_CALL hyperLinkClicked( const ::rtl::OUString& hyperLink );
 
 	// XAnimationListener
-    virtual void SAL_CALL beginEvent( const ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& Node ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endEvent( const ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& Node ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL repeat( const ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& Node, ::sal_Int32 Repeat ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL beginEvent( const ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& Node );
+    virtual void SAL_CALL endEvent( const ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& Node );
+    virtual void SAL_CALL repeat( const ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& Node, ::sal_Int32 Repeat );
 
     // XEventListener
     virtual void SAL_CALL disposing (
-        const com::sun::star::lang::EventObject& rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+        const com::sun::star::lang::EventObject& rEvent);
 
 private:
     ::rtl::Reference<PresenterController> mpPresenterController;

@@ -311,7 +311,7 @@ sal_Int32 ADOS::mapRights2Ado(sal_Int32 nRights)
 	return eRights;
 }
 // -----------------------------------------------------------------------------
-WpADOField ADOS::getField(ADORecordset* _pRecordSet,sal_Int32 _nColumnIndex) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+WpADOField ADOS::getField(ADORecordset* _pRecordSet,sal_Int32 _nColumnIndex)
 {
 	if ( !_pRecordSet )
 		return WpADOField();

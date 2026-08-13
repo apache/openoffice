@@ -92,8 +92,7 @@ handleInteractionRequest(
     com::sun::star::uno::Reference<
             com::sun::star::ucb::XCommandEnvironment > const &
         rEnvironment,
-    bool bThrowOnAbort = true)
-    SAL_THROW((com::sun::star::uno::Exception));
+    bool bThrowOnAbort = true);
 
 }
 
@@ -150,8 +149,7 @@ handleInteractionRequest(
     com::sun::star::uno::Reference<
             com::sun::star::ucb::XCommandEnvironment > const &
         rEnvironment,
-    bool bThrowOnAbort = true)
-    SAL_THROW((com::sun::star::uno::Exception));
+    bool bThrowOnAbort = true);
 
 }
 
@@ -203,8 +201,7 @@ handleInteractionRequest(
     com::sun::star::uno::Reference<
             com::sun::star::ucb::XCommandEnvironment > const &
         rEnvironment,
-    bool bThrowOnAbort = true)
-    SAL_THROW((com::sun::star::uno::Exception));
+    bool bThrowOnAbort = true);
 
 }
 #endif // INCLUDED_UCBHELPER_HANDLEINTERACTIONREQUEST_HXX

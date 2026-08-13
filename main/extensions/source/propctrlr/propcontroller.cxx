@@ -125,7 +125,7 @@ namespace pcr
     IMPLEMENT_FORWARD_REFCOUNT( OPropertyBrowserController, OPropertyBrowserController_Base )
 
 	//------------------------------------------------------------------------
-    Any SAL_CALL OPropertyBrowserController::queryInterface( const Type& _rType ) throw (RuntimeException)
+    Any SAL_CALL OPropertyBrowserController::queryInterface( const Type& _rType )
 	{
         Any aReturn = OPropertyBrowserController_Base::queryInterface( _rType );
         if ( !aReturn.hasValue() )
@@ -175,7 +175,7 @@ namespace pcr
 	}
 
     //--------------------------------------------------------------------
-    Reference< XObjectInspectorModel > SAL_CALL OPropertyBrowserController::getInspectorModel() throw (RuntimeException)
+    Reference< XObjectInspectorModel > SAL_CALL OPropertyBrowserController::getInspectorModel()
     {
         return m_xModel;
     }
@@ -265,7 +265,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::setInspectorModel( const Reference< XObjectInspectorModel >& _inspectorModel ) throw (RuntimeException)
+    void SAL_CALL OPropertyBrowserController::setInspectorModel( const Reference< XObjectInspectorModel >& _inspectorModel )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -276,14 +276,14 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Reference< XObjectInspectorUI > SAL_CALL OPropertyBrowserController::getInspectorUI() throw (RuntimeException)
+    Reference< XObjectInspectorUI > SAL_CALL OPropertyBrowserController::getInspectorUI()
     {
         // we're derived from this interface, though we do not expose it in queryInterface and getTypes.
         return this;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::inspect( const Sequence< Reference< XInterface > >& _rObjects ) throw (com::sun::star::util::VetoException, RuntimeException)
+    void SAL_CALL OPropertyBrowserController::inspect( const Sequence< Reference< XInterface > >& _rObjects )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
         ::osl::MutexGuard aGuard( m_aMutex );
@@ -304,14 +304,14 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Reference< XDispatch > SAL_CALL OPropertyBrowserController::queryDispatch( const URL& /*URL*/, const ::rtl::OUString& /*TargetFrameName*/, ::sal_Int32 /*SearchFlags*/ ) throw (RuntimeException)
+    Reference< XDispatch > SAL_CALL OPropertyBrowserController::queryDispatch( const URL& /*URL*/, const ::rtl::OUString& /*TargetFrameName*/, ::sal_Int32 /*SearchFlags*/ )
     {
         // we don't have any dispatches at all, right now
         return Reference< XDispatch >();
     }
 
     //--------------------------------------------------------------------
-    Sequence< Reference< XDispatch > > SAL_CALL OPropertyBrowserController::queryDispatches( const Sequence< DispatchDescriptor >& Requests ) throw (RuntimeException)
+    Sequence< Reference< XDispatch > > SAL_CALL OPropertyBrowserController::queryDispatches( const Sequence< DispatchDescriptor >& Requests )
     {
 	    Sequence< Reference< XDispatch > > aReturn;
 	    sal_Int32 nLen = Requests.getLength();
@@ -328,7 +328,7 @@ namespace pcr
     }
 
     //------------------------------------------------------------------------
-	void SAL_CALL OPropertyBrowserController::initialize( const Sequence< Any >& _arguments ) throw (Exception, RuntimeException)
+	void SAL_CALL OPropertyBrowserController::initialize( const Sequence< Any >& _arguments )
     {
         if ( m_bConstructed )
             throw AlreadyInitializedException();
@@ -371,7 +371,7 @@ namespace pcr
     }
 
     //------------------------------------------------------------------------
-	void SAL_CALL OPropertyBrowserController::attachFrame( const Reference< XFrame >& _rxFrame ) throw(RuntimeException)
+	void SAL_CALL OPropertyBrowserController::attachFrame( const Reference< XFrame >& _rxFrame )
 	{
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
         ::osl::MutexGuard aGuard( m_aMutex );
@@ -413,7 +413,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	sal_Bool SAL_CALL OPropertyBrowserController::attachModel( const Reference< XModel >& _rxModel ) throw(RuntimeException)
+	sal_Bool SAL_CALL OPropertyBrowserController::attachModel( const Reference< XModel >& _rxModel )
 	{
         Reference< XObjectInspectorModel > xModel( _rxModel, UNO_QUERY );
         if ( !xModel.is() )
@@ -479,7 +479,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-	sal_Bool SAL_CALL OPropertyBrowserController::suspend( sal_Bool _bSuspend ) throw(RuntimeException)
+	sal_Bool SAL_CALL OPropertyBrowserController::suspend( sal_Bool _bSuspend )
 	{
         ::osl::MutexGuard aGuard( m_aMutex );
 		OSL_ENSURE( haveView(), "OPropertyBrowserController::suspend: don't have a view anymore!" );
@@ -506,13 +506,13 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	Any SAL_CALL OPropertyBrowserController::getViewData(  ) throw(RuntimeException)
+	Any SAL_CALL OPropertyBrowserController::getViewData(  )
 	{
         return makeAny( m_sPageSelection );
 	}
 
 	//------------------------------------------------------------------------
-	void SAL_CALL OPropertyBrowserController::restoreViewData( const Any& Data ) throw(RuntimeException)
+	void SAL_CALL OPropertyBrowserController::restoreViewData( const Any& Data )
 	{
         ::rtl::OUString sPageSelection;
         if ( ( Data >>= sPageSelection ) && sPageSelection.getLength() )
@@ -523,20 +523,20 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	Reference< XModel > SAL_CALL OPropertyBrowserController::getModel(  ) throw(RuntimeException)
+	Reference< XModel > SAL_CALL OPropertyBrowserController::getModel(  )
 	{
 		// have no model
 		return Reference< XModel >();
 	}
 
 	//------------------------------------------------------------------------
-	Reference< XFrame > SAL_CALL OPropertyBrowserController::getFrame(  ) throw(RuntimeException)
+	Reference< XFrame > SAL_CALL OPropertyBrowserController::getFrame(  )
 	{
 		return m_xFrame;
 	}
 
 	//------------------------------------------------------------------------
-	void SAL_CALL OPropertyBrowserController::dispose(  ) throw(RuntimeException)
+	void SAL_CALL OPropertyBrowserController::dispose(  )
 	{
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -562,25 +562,25 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	void SAL_CALL OPropertyBrowserController::addEventListener( const Reference< XEventListener >& _rxListener ) throw(RuntimeException)
+	void SAL_CALL OPropertyBrowserController::addEventListener( const Reference< XEventListener >& _rxListener )
 	{
 		m_aDisposeListeners.addInterface(_rxListener);
 	}
 
 	//------------------------------------------------------------------------
-	void SAL_CALL OPropertyBrowserController::removeEventListener( const Reference< XEventListener >& _rxListener ) throw(RuntimeException)
+	void SAL_CALL OPropertyBrowserController::removeEventListener( const Reference< XEventListener >& _rxListener )
 	{
 		m_aDisposeListeners.removeInterface(_rxListener);
 	}
 
 	//------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OPropertyBrowserController::getImplementationName(  ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL OPropertyBrowserController::getImplementationName(  )
 	{
 		return getImplementationName_static();
 	}
 
 	//------------------------------------------------------------------------
-	sal_Bool SAL_CALL OPropertyBrowserController::supportsService( const ::rtl::OUString& ServiceName ) throw(RuntimeException)
+	sal_Bool SAL_CALL OPropertyBrowserController::supportsService( const ::rtl::OUString& ServiceName )
 	{
 		Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 		const ::rtl::OUString* pArray = aSupported.getConstArray();
@@ -591,19 +591,19 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL OPropertyBrowserController::getSupportedServiceNames(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL OPropertyBrowserController::getSupportedServiceNames(  )
 	{
 		return getSupportedServiceNames_static();
 	}
 
 	//------------------------------------------------------------------------
-	::rtl::OUString OPropertyBrowserController::getImplementationName_static(  ) throw(RuntimeException)
+	::rtl::OUString OPropertyBrowserController::getImplementationName_static(  )
 	{
 		return ::rtl::OUString::createFromAscii("org.openoffice.comp.extensions.ObjectInspector");
 	}
 
 	//------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > OPropertyBrowserController::getSupportedServiceNames_static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > OPropertyBrowserController::getSupportedServiceNames_static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii( "com.sun.star.inspection.ObjectInspector" );
@@ -617,7 +617,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::focusGained( const FocusEvent& _rSource ) throw (RuntimeException)
+    void SAL_CALL OPropertyBrowserController::focusGained( const FocusEvent& _rSource )
 	{
 		Reference< XWindow > xSourceWindow(_rSource.Source, UNO_QUERY);
 		Reference< XWindow > xContainerWindow;
@@ -632,13 +632,13 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::focusLost( const FocusEvent& /*_rSource*/ ) throw (RuntimeException)
+    void SAL_CALL OPropertyBrowserController::focusLost( const FocusEvent& /*_rSource*/ )
 	{
 		// not interested in
 	}
 
 	//------------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::disposing( const EventObject& _rSource ) throw(RuntimeException)
+    void SAL_CALL OPropertyBrowserController::disposing( const EventObject& _rSource )
 	{
 		if ( m_xView.is() && ( m_xView == _rSource.Source ) )
 		{
@@ -746,7 +746,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::propertyChange( const PropertyChangeEvent& _rEvent ) throw (RuntimeException)
+    void SAL_CALL OPropertyBrowserController::propertyChange( const PropertyChangeEvent& _rEvent )
     {
         if ( _rEvent.Source == m_xModel )
         {
@@ -784,7 +784,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-    Reference< XPropertyControl > SAL_CALL OPropertyBrowserController::createPropertyControl( ::sal_Int16 ControlType, ::sal_Bool _CreateReadOnly ) throw (IllegalArgumentException, RuntimeException)
+    Reference< XPropertyControl > SAL_CALL OPropertyBrowserController::createPropertyControl( ::sal_Int16 ControlType, ::sal_Bool _CreateReadOnly )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1128,7 +1128,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	::com::sun::star::awt::Size SAL_CALL OPropertyBrowserController::getMinimumSize() throw (::com::sun::star::uno::RuntimeException)
+	::com::sun::star::awt::Size SAL_CALL OPropertyBrowserController::getMinimumSize()
 	{
 		::com::sun::star::awt::Size aSize;
 		if( m_pView )
@@ -1138,13 +1138,13 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	::com::sun::star::awt::Size SAL_CALL OPropertyBrowserController::getPreferredSize() throw (::com::sun::star::uno::RuntimeException)
+	::com::sun::star::awt::Size SAL_CALL OPropertyBrowserController::getPreferredSize()
 	{
 		return getMinimumSize();
 	}
 
 	//------------------------------------------------------------------------
-	::com::sun::star::awt::Size SAL_CALL OPropertyBrowserController::calcAdjustedSize( const ::com::sun::star::awt::Size& _rNewSize ) throw (::com::sun::star::uno::RuntimeException)
+	::com::sun::star::awt::Size SAL_CALL OPropertyBrowserController::calcAdjustedSize( const ::com::sun::star::awt::Size& _rNewSize )
 	{
 		awt::Size aMinSize = getMinimumSize( );
 		awt::Size aAdjustedSize( _rNewSize );
@@ -1156,7 +1156,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-    void OPropertyBrowserController::describePropertyLine( const Property& _rProperty, OLineDescriptor& _rDescriptor ) SAL_THROW((Exception))
+    void OPropertyBrowserController::describePropertyLine( const Property& _rProperty, OLineDescriptor& _rDescriptor )
     {
         try
         {
@@ -1379,7 +1379,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-    sal_Bool SAL_CALL OPropertyBrowserController::hasPropertyByName( const ::rtl::OUString& _rName ) throw (RuntimeException)
+    sal_Bool SAL_CALL OPropertyBrowserController::hasPropertyByName( const ::rtl::OUString& _rName )
     {
         for (   OrderedPropertyMap::const_iterator search = m_aProperties.begin();
                 search != m_aProperties.end();
@@ -1575,7 +1575,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-    void OPropertyBrowserController::rebuildPropertyUI( const ::rtl::OUString& _rPropertyName ) throw (RuntimeException)
+    void OPropertyBrowserController::rebuildPropertyUI( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !haveView() )
@@ -1599,7 +1599,7 @@ namespace pcr
    }
 
 	//------------------------------------------------------------------------
-    void OPropertyBrowserController::enablePropertyUI( const ::rtl::OUString& _rPropertyName, sal_Bool _bEnable ) throw (RuntimeException)
+    void OPropertyBrowserController::enablePropertyUI( const ::rtl::OUString& _rPropertyName, sal_Bool _bEnable )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !haveView() )
@@ -1612,7 +1612,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-    void OPropertyBrowserController::enablePropertyUIElements( const ::rtl::OUString& _rPropertyName, sal_Int16 _nElements, sal_Bool _bEnable ) throw (RuntimeException)
+    void OPropertyBrowserController::enablePropertyUIElements( const ::rtl::OUString& _rPropertyName, sal_Int16 _nElements, sal_Bool _bEnable )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !haveView() )
@@ -1625,7 +1625,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-    void OPropertyBrowserController::showPropertyUI( const ::rtl::OUString& _rPropertyName ) throw (RuntimeException)
+    void OPropertyBrowserController::showPropertyUI( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !haveView() )
@@ -1675,7 +1675,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-    void OPropertyBrowserController::hidePropertyUI( const ::rtl::OUString& _rPropertyName ) throw (RuntimeException)
+    void OPropertyBrowserController::hidePropertyUI( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !haveView() )
@@ -1688,7 +1688,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-    void OPropertyBrowserController::showCategory( const ::rtl::OUString& _rCategory, sal_Bool _bShow ) throw (RuntimeException)
+    void OPropertyBrowserController::showCategory( const ::rtl::OUString& _rCategory, sal_Bool _bShow )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !haveView() )
@@ -1701,7 +1701,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------------
-    Reference< XPropertyControl > SAL_CALL OPropertyBrowserController::getPropertyControl( const ::rtl::OUString& _rPropertyName ) throw (RuntimeException)
+    Reference< XPropertyControl > SAL_CALL OPropertyBrowserController::getPropertyControl( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !haveView() )
@@ -1712,19 +1712,19 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::registerControlObserver( const Reference< XPropertyControlObserver >& _Observer ) throw (RuntimeException)
+    void SAL_CALL OPropertyBrowserController::registerControlObserver( const Reference< XPropertyControlObserver >& _Observer )
     {
         m_aControlObservers.addInterface( _Observer );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::revokeControlObserver( const Reference< XPropertyControlObserver >& _Observer ) throw (RuntimeException)
+    void SAL_CALL OPropertyBrowserController::revokeControlObserver( const Reference< XPropertyControlObserver >& _Observer )
     {
         m_aControlObservers.removeInterface( _Observer );
     }
 
 	//------------------------------------------------------------------------
-    void SAL_CALL OPropertyBrowserController::setHelpSectionText( const ::rtl::OUString& _rHelpText ) throw (NoSupportException, RuntimeException)
+    void SAL_CALL OPropertyBrowserController::setHelpSectionText( const ::rtl::OUString& _rHelpText )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
         ::osl::MutexGuard aGuard( m_aMutex );

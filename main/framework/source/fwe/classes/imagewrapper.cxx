@@ -64,7 +64,7 @@ Sequence< sal_Int8 > ImageWrapper::GetUnoTunnelId()
 }
 
 // XBitmap
-com::sun::star::awt::Size SAL_CALL ImageWrapper::getSize() throw ( RuntimeException )
+com::sun::star::awt::Size SAL_CALL ImageWrapper::getSize()
 {
 	vos::OGuard	aGuard( Application::GetSolarMutex() );
 
@@ -74,7 +74,7 @@ com::sun::star::awt::Size SAL_CALL ImageWrapper::getSize() throw ( RuntimeExcept
 	return com::sun::star::awt::Size( aBitmapSize.Width(), aBitmapSize.Height() );
 }
 
-Sequence< sal_Int8 > SAL_CALL ImageWrapper::getDIB() throw ( RuntimeException )
+Sequence< sal_Int8 > SAL_CALL ImageWrapper::getDIB()
 {
 	vos::OGuard	aGuard( Application::GetSolarMutex() );
 
@@ -83,7 +83,7 @@ Sequence< sal_Int8 > SAL_CALL ImageWrapper::getDIB() throw ( RuntimeException )
 	return Sequence< sal_Int8 >( (sal_Int8*) aMem.GetData(), aMem.Tell() );
 }
 
-Sequence< sal_Int8 > SAL_CALL ImageWrapper::getMaskDIB() throw ( RuntimeException )
+Sequence< sal_Int8 > SAL_CALL ImageWrapper::getMaskDIB()
 {
 	vos::OGuard	aGuard( Application::GetSolarMutex() );
 	BitmapEx 	aBmpEx( m_aImage.GetBitmapEx() );
@@ -105,7 +105,7 @@ Sequence< sal_Int8 > SAL_CALL ImageWrapper::getMaskDIB() throw ( RuntimeExceptio
 }
 
 // XUnoTunnel
-sal_Int64 SAL_CALL ImageWrapper::getSomething( const Sequence< sal_Int8 >& aIdentifier ) throw ( RuntimeException )
+sal_Int64 SAL_CALL ImageWrapper::getSomething( const Sequence< sal_Int8 >& aIdentifier )
 {
     if ( aIdentifier == impl_getStaticIdentifier() )
         return reinterpret_cast< sal_Int64 >( this );

@@ -40,8 +40,7 @@ using namespace com::sun::star::script;
 namespace func_provider
 {
 
-ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, const Sequence< Any >& scriptContext )
-    throw ( RuntimeException ) : m_Sctx( scriptContext ), m_xContext( xContext )
+ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, const Sequence< Any >& scriptContext ) : m_Sctx( scriptContext ), m_xContext( xContext )
 {
     // initialise m_hProviderDetailsCache with details of ScriptProviders
     // will use createContentEnumeration
@@ -52,8 +51,7 @@ ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, co
 }
 
 
-ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, const Sequence< Any >& scriptContext, const Sequence< ::rtl::OUString >& blackList )
-    throw ( RuntimeException ) : m_sBlackList( blackList ), m_Sctx( scriptContext ), m_xContext( xContext )
+ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, const Sequence< Any >& scriptContext, const Sequence< ::rtl::OUString >& blackList ) : m_sBlackList( blackList ), m_Sctx( scriptContext ), m_xContext( xContext )
 
 {
     // initialise m_hProviderDetailsCache with details of ScriptProviders
@@ -90,7 +88,7 @@ ProviderCache::getProvider( const ::rtl::OUString& providerName )
 }
 
 Sequence < Reference< provider::XScriptProvider > >
-ProviderCache::getAllProviders() throw ( RuntimeException )
+ProviderCache::getAllProviders()
 {
     Sequence < Reference< provider::XScriptProvider > > providers (  m_hProviderDetailsCache.size() );
     // need to create providers that haven't been created already
@@ -143,7 +141,7 @@ ProviderCache::getAllProviders() throw ( RuntimeException )
 }
 
 void
-ProviderCache::populateCache() throw ( RuntimeException )
+ProviderCache::populateCache()
 {
     // wrong name in services.rdb
     ::rtl::OUString serviceName;
@@ -193,7 +191,7 @@ ProviderCache::populateCache() throw ( RuntimeException )
 }
 
 Reference< provider::XScriptProvider >
-ProviderCache::createProvider( ProviderDetails& details ) throw ( RuntimeException )
+ProviderCache::createProvider( ProviderDetails& details )
 {
     try
     {

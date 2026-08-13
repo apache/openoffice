@@ -80,14 +80,12 @@ private:
 	com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XSecurityEnvironment > m_xSecurityEnvironment;
 
-	virtual void notifyResultListener() const
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void notifyResultListener() const;
 	virtual void clearUp( ) const;
 	virtual bool checkReady() const;
 	virtual void startEngine( const com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XXMLSignatureTemplate >&
-		xSignatureTemplate)
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+		xSignatureTemplate);
 
 public:
 	explicit SignatureCreatorImpl( const com::sun::star::uno::Reference<
@@ -95,46 +93,35 @@ public:
 	virtual ~SignatureCreatorImpl();
 
 	/* XBlockerMonitor */
-	virtual void SAL_CALL setBlockerId( sal_Int32 id )
-    		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setBlockerId( sal_Int32 id );
 
 	/* XSignatureCreationResultBroadcaster */
 	void SAL_CALL addSignatureCreationResultListener(
 		const com::sun::star::uno::Reference<
-			com::sun::star::xml::crypto::sax::XSignatureCreationResultListener >& listener )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+			com::sun::star::xml::crypto::sax::XSignatureCreationResultListener >& listener );
 
 	void SAL_CALL removeSignatureCreationResultListener(
 		const com::sun::star::uno::Reference<
-			com::sun::star::xml::crypto::sax::XSignatureCreationResultListener >& listener )
-		throw (com::sun::star::uno::RuntimeException);
+			com::sun::star::xml::crypto::sax::XSignatureCreationResultListener >& listener );
 
 	/* XInitialization */
 	virtual void SAL_CALL initialize(
-		const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+		const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments );
 
 	/* XServiceInfo */
-	virtual rtl::OUString SAL_CALL getImplementationName(  )
-		throw (com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName )
-		throw (com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual rtl::OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName );
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 };
 
-rtl::OUString SignatureCreatorImpl_getImplementationName()
-	throw ( com::sun::star::uno::RuntimeException );
+rtl::OUString SignatureCreatorImpl_getImplementationName();
 
-sal_Bool SAL_CALL SignatureCreatorImpl_supportsService( const rtl::OUString& ServiceName )
-	throw ( com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL SignatureCreatorImpl_supportsService( const rtl::OUString& ServiceName );
 
-com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL SignatureCreatorImpl_getSupportedServiceNames(  )
-	throw ( com::sun::star::uno::RuntimeException );
+com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL SignatureCreatorImpl_getSupportedServiceNames(  );
 
 com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
 SAL_CALL SignatureCreatorImpl_createInstance(
-	const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > & rSMgr)
-	throw ( com::sun::star::uno::Exception );
+	const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 
 #endif

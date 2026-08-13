@@ -116,8 +116,8 @@ class DocObjectWrapper : public DocObjectWrapper_BASE
     Reference< XTypeProvider > m_xAggregateTypeProv;
     Sequence< Type >           m_Types;
     SbModule*                m_pMod;
-    SbMethodRef getMethod( const rtl::OUString& aName ) throw (RuntimeException);
-    SbPropertyRef getProperty( const rtl::OUString& aName ) throw (RuntimeException);
+    SbMethodRef getMethod( const rtl::OUString& aName );
+    SbPropertyRef getProperty( const rtl::OUString& aName );
     String mName; // for debugging
 
 public:
@@ -127,23 +127,23 @@ public:
     virtual void SAL_CALL acquire() throw();
     virtual void SAL_CALL release() throw();
 
-    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (RuntimeException)
+    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId()
     {
         if( !m_xAggregateTypeProv.is() )
             throw RuntimeException();
         return m_xAggregateTypeProv->getImplementationId();
     }
 
-    virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection(  ) throw (RuntimeException);
+    virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection(  );
 
-    virtual Any SAL_CALL invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams, Sequence< ::sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam ) throw (IllegalArgumentException, CannotConvertException, InvocationTargetException, RuntimeException);
-    virtual void SAL_CALL setValue( const ::rtl::OUString& aPropertyName, const Any& aValue ) throw (UnknownPropertyException, CannotConvertException, InvocationTargetException, RuntimeException);
-    virtual Any SAL_CALL getValue( const ::rtl::OUString& aPropertyName ) throw (UnknownPropertyException, RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasMethod( const ::rtl::OUString& aName ) throw (RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasProperty( const ::rtl::OUString& aName ) throw (RuntimeException);
-    virtual  Any SAL_CALL queryInterface( const Type& aType ) throw ( RuntimeException );
+    virtual Any SAL_CALL invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams, Sequence< ::sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam );
+    virtual void SAL_CALL setValue( const ::rtl::OUString& aPropertyName, const Any& aValue );
+    virtual Any SAL_CALL getValue( const ::rtl::OUString& aPropertyName );
+    virtual ::sal_Bool SAL_CALL hasMethod( const ::rtl::OUString& aName );
+    virtual ::sal_Bool SAL_CALL hasProperty( const ::rtl::OUString& aName );
+    virtual  Any SAL_CALL queryInterface( const Type& aType );
 
-    virtual Sequence< Type > SAL_CALL getTypes() throw ( RuntimeException );
+    virtual Sequence< Type > SAL_CALL getTypes();
 };
 
 DocObjectWrapper::DocObjectWrapper( SbModule* pVar ) : m_pMod( pVar ), mName( pVar->GetName() )
@@ -226,7 +226,6 @@ DocObjectWrapper::~DocObjectWrapper()
 }
 
 Sequence< Type > SAL_CALL DocObjectWrapper::getTypes()
-    throw ( RuntimeException )
 {
     if ( m_Types.getLength() == 0 )
     {
@@ -247,13 +246,13 @@ Sequence< Type > SAL_CALL DocObjectWrapper::getTypes()
 }
 
 Reference< XIntrospectionAccess > SAL_CALL
-DocObjectWrapper::getIntrospection(  ) throw (RuntimeException)
+DocObjectWrapper::getIntrospection(  )
 {
     return NULL;
 }
 
 Any SAL_CALL
-DocObjectWrapper::invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams, Sequence< ::sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam ) throw (IllegalArgumentException, CannotConvertException, InvocationTargetException, RuntimeException)
+DocObjectWrapper::invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams, Sequence< ::sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam )
 {
     if ( m_xAggInv.is() &&  m_xAggInv->hasMethod( aFunctionName ) )
             return m_xAggInv->invoke( aFunctionName, aParams, aOutParamIndex, aOutParam );
@@ -348,7 +347,7 @@ DocObjectWrapper::invoke( const ::rtl::OUString& aFunctionName, const Sequence< 
 }
 
 void SAL_CALL
-DocObjectWrapper::setValue( const ::rtl::OUString& aPropertyName, const Any& aValue ) throw (UnknownPropertyException, CannotConvertException, InvocationTargetException, RuntimeException)
+DocObjectWrapper::setValue( const ::rtl::OUString& aPropertyName, const Any& aValue )
 {
     if ( m_xAggInv.is() &&  m_xAggInv->hasProperty( aPropertyName ) )
             return m_xAggInv->setValue( aPropertyName, aValue );
@@ -360,7 +359,7 @@ DocObjectWrapper::setValue( const ::rtl::OUString& aPropertyName, const Any& aVa
 }
 
 Any SAL_CALL
-DocObjectWrapper::getValue( const ::rtl::OUString& aPropertyName ) throw (UnknownPropertyException, RuntimeException)
+DocObjectWrapper::getValue( const ::rtl::OUString& aPropertyName )
 {
     if ( m_xAggInv.is() &&  m_xAggInv->hasProperty( aPropertyName ) )
             return m_xAggInv->getValue( aPropertyName );
@@ -378,7 +377,7 @@ DocObjectWrapper::getValue( const ::rtl::OUString& aPropertyName ) throw (Unknow
 }
 
 ::sal_Bool SAL_CALL
-DocObjectWrapper::hasMethod( const ::rtl::OUString& aName ) throw (RuntimeException)
+DocObjectWrapper::hasMethod( const ::rtl::OUString& aName )
 {
     if ( m_xAggInv.is() && m_xAggInv->hasMethod( aName ) )
         return sal_True;
@@ -386,7 +385,7 @@ DocObjectWrapper::hasMethod( const ::rtl::OUString& aName ) throw (RuntimeExcept
 }
 
 ::sal_Bool SAL_CALL
-DocObjectWrapper::hasProperty( const ::rtl::OUString& aName ) throw (RuntimeException)
+DocObjectWrapper::hasProperty( const ::rtl::OUString& aName )
 {
     sal_Bool bRes = sal_False;
     if ( m_xAggInv.is() && m_xAggInv->hasProperty( aName ) )
@@ -396,7 +395,6 @@ DocObjectWrapper::hasProperty( const ::rtl::OUString& aName ) throw (RuntimeExce
 }
 
 Any SAL_CALL DocObjectWrapper::queryInterface( const Type& aType )
-    throw ( RuntimeException )
 {
     Any aRet = DocObjectWrapper_BASE::queryInterface( aType );
     if ( aRet.hasValue() )
@@ -406,7 +404,7 @@ Any SAL_CALL DocObjectWrapper::queryInterface( const Type& aType )
     return aRet;
 }
 
-SbMethodRef DocObjectWrapper::getMethod( const rtl::OUString& aName ) throw (RuntimeException)
+SbMethodRef DocObjectWrapper::getMethod( const rtl::OUString& aName )
 {
     SbMethodRef pMethod = NULL;
     if ( m_pMod )
@@ -421,7 +419,7 @@ SbMethodRef DocObjectWrapper::getMethod( const rtl::OUString& aName ) throw (Run
     return pMethod;
 }
 
-SbPropertyRef DocObjectWrapper::getProperty( const rtl::OUString& aName ) throw (RuntimeException)
+SbPropertyRef DocObjectWrapper::getProperty( const rtl::OUString& aName )
 {
     SbPropertyRef pProperty = NULL;
     if ( m_pMod )
@@ -2161,7 +2159,7 @@ SbObjModule::~SbObjModule()
 }
 
 void
-SbObjModule::SetUnoObject( const uno::Any& aObj ) throw ( uno::RuntimeException )
+SbObjModule::SetUnoObject( const uno::Any& aObj )
 {
     SbUnoObject* pUnoObj = PTR_CAST(SbUnoObject,(SbxVariable*)pDocObject);
     if ( pUnoObj && pUnoObj->getUnoAny() == aObj ) // object is equal, nothing to do
@@ -2287,7 +2285,7 @@ public:
         mxModel.clear();
     }
 
-    virtual void SAL_CALL windowOpened( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowOpened( const lang::EventObject& /*e*/ )
     {
         if ( mpUserForm )
         {
@@ -2302,7 +2300,7 @@ public:
     }
 
     //liuchen 2009-7-21, support Excel VBA Form_QueryClose event
-    virtual void SAL_CALL windowClosing( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowClosing( const lang::EventObject& /*e*/ )
     {
 #if IN_THE_FUTURE
 		uno::Reference< awt::XDialog > xDialog( e.Source, uno::UNO_QUERY );
@@ -2336,21 +2334,21 @@ public:
     }
 	//liuchen 2009-7-21
 
-    virtual void SAL_CALL windowClosed( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowClosed( const lang::EventObject& /*e*/ )
     {
         mbOpened = sal_False;
         mbShowing = sal_False;
     }
 
-    virtual void SAL_CALL windowMinimized( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowMinimized( const lang::EventObject& /*e*/ )
     {
     }
 
-    virtual void SAL_CALL windowNormalized( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowNormalized( const lang::EventObject& /*e*/ )
     {
     }
 
-    virtual void SAL_CALL windowActivated( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowActivated( const lang::EventObject& /*e*/ )
     {
         if ( mpUserForm )
         {
@@ -2363,13 +2361,13 @@ public:
         }
     }
 
-    virtual void SAL_CALL windowDeactivated( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowDeactivated( const lang::EventObject& /*e*/ )
     {
         if ( mpUserForm )
             mpUserForm->triggerDeactivateEvent();
     }
 
-    virtual void SAL_CALL windowResized( const awt::WindowEvent& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowResized( const awt::WindowEvent& /*e*/ )
     {
         if ( mpUserForm )
         {
@@ -2378,21 +2376,21 @@ public:
         }
     }
 
-    virtual void SAL_CALL windowMoved( const awt::WindowEvent& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowMoved( const awt::WindowEvent& /*e*/ )
     {
         if ( mpUserForm )
             mpUserForm->triggerLayoutEvent();
     }
 
-    virtual void SAL_CALL windowShown( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowShown( const lang::EventObject& /*e*/ )
     {
     }
 
-    virtual void SAL_CALL windowHidden( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL windowHidden( const lang::EventObject& /*e*/ )
     {
     }
 
-    virtual void SAL_CALL notifyEvent( const document::EventObject& rEvent ) throw (uno::RuntimeException)
+    virtual void SAL_CALL notifyEvent( const document::EventObject& rEvent )
     {
         // early dosposing on document event "OnUnload", to be sure Basic still exists when calling VBA "UserForm_Terminate"
         if( rEvent.EventName == GlobalEventConfig::GetEventName( STR_EVENT_CLOSEDOC ) )
@@ -2404,7 +2402,7 @@ public:
         }
     }
 
-    virtual void SAL_CALL disposing( const lang::EventObject& /*Source*/ ) throw (uno::RuntimeException)
+    virtual void SAL_CALL disposing( const lang::EventObject& /*Source*/ )
     {
         OSL_TRACE("** Userform/Dialog disposing");
         removeListener();

@@ -55,7 +55,7 @@ VCLXFixedLine::~VCLXFixedLine()
 
 IMPLEMENT_FORWARD_XTYPEPROVIDER1( VCLXFixedLine, VCLXWindow );
 
-void SAL_CALL VCLXFixedLine::dispose() throw(RuntimeException)
+void SAL_CALL VCLXFixedLine::dispose()
 {
     {
         ::vos::OGuard aGuard( GetMutex() );
@@ -68,7 +68,6 @@ void SAL_CALL VCLXFixedLine::dispose() throw(RuntimeException)
 }
 
 ::com::sun::star::awt::Size SAL_CALL VCLXFixedLine::getMinimumSize()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return awt::Size( 8, 8 );
 }
@@ -89,7 +88,7 @@ void VCLXFixedLine::ProcessWindowEvent( const VclWindowEvent& _rVclWindowEvent )
 */
 }
 
-void SAL_CALL VCLXFixedLine::setProperty( const ::rtl::OUString& PropertyName, const Any &Value ) throw(RuntimeException)
+void SAL_CALL VCLXFixedLine::setProperty( const ::rtl::OUString& PropertyName, const Any &Value )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -106,7 +105,7 @@ void SAL_CALL VCLXFixedLine::setProperty( const ::rtl::OUString& PropertyName, c
     }
 }
 
-Any SAL_CALL VCLXFixedLine::getProperty( const ::rtl::OUString& PropertyName ) throw(RuntimeException)
+Any SAL_CALL VCLXFixedLine::getProperty( const ::rtl::OUString& PropertyName )
 {
     ::vos::OGuard aGuard( GetMutex() );
 

@@ -289,8 +289,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
                         Note: If an interactionHandler is part of the given descriptor too, it was already used.
                         Means: let the exception pass through the top most interface method!
          */
-        void impl_openStream(::comphelper::MediaDescriptor& rDescriptor)
-            throw (css::uno::Exception);
+        void impl_openStream(::comphelper::MediaDescriptor& rDescriptor);
 
         //---------------------------------------
 
@@ -395,12 +394,10 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
         //---------------------------------------
         // XTypeDetection
 
-        virtual ::rtl::OUString SAL_CALL queryTypeByURL(const ::rtl::OUString& sURL)
-            throw (css::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL queryTypeByURL(const ::rtl::OUString& sURL);
 
         virtual ::rtl::OUString SAL_CALL queryTypeByDescriptor(css::uno::Sequence< css::beans::PropertyValue >& lDescriptor,
-                                                               sal_Bool                                         bAllowDeep )
-            throw (css::uno::RuntimeException);
+                                                               sal_Bool                                         bAllowDeep );
 
     //-------------------------------------------
     // static uno helper!

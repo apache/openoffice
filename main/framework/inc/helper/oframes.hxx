@@ -132,7 +132,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 			@onerror	We do nothing in release or throw an assert in debug version.
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL append( const css::uno::Reference< css::frame::XFrame >& xFrame ) throw( css::uno::RuntimeException );
+    	virtual void SAL_CALL append( const css::uno::Reference< css::frame::XFrame >& xFrame );
 
 		/*-****************************************************************************************************//**
 			@short      remove frame from container
@@ -147,7 +147,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 			@onerror	We do nothing in release or throw an assert in debug version.
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL remove( const css::uno::Reference< css::frame::XFrame >& xFrame ) throw( css::uno::RuntimeException );
+    	virtual void SAL_CALL remove( const css::uno::Reference< css::frame::XFrame >& xFrame );
 
 		/*-****************************************************************************************************//**
 			@short      return list of all applicable frames for given flags
@@ -161,7 +161,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 			@onerror	An empty list is returned.
 		*//*-*****************************************************************************************************/
 
-    	virtual css::uno::Sequence< css::uno::Reference< css::frame::XFrame > > SAL_CALL queryFrames( sal_Int32 nSearchFlags ) throw( css::uno::RuntimeException );
+    	virtual css::uno::Sequence< css::uno::Reference< css::frame::XFrame > > SAL_CALL queryFrames( sal_Int32 nSearchFlags );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XIndexAccess
@@ -181,7 +181,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 			@onerror	If a lock is set, we return 0 for prevent further access!
 		*//*-*****************************************************************************************************/
 
-    	virtual sal_Int32 SAL_CALL getCount() throw( css::uno::RuntimeException );
+    	virtual sal_Int32 SAL_CALL getCount();
 
 		/*-****************************************************************************************************//**
 			@short		get specified container item by index
@@ -198,9 +198,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 			@onerror	If index out of range, an IndexOutOfBoundsException is thrown.
 		*//*-*****************************************************************************************************/
 
-    	virtual css::uno::Any SAL_CALL getByIndex( sal_Int32 nIndex ) throw(	css::lang::IndexOutOfBoundsException	,
-																				css::lang::WrappedTargetException		,
-																				css::uno::RuntimeException				);
+    	virtual css::uno::Any SAL_CALL getByIndex( sal_Int32 nIndex );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XElementAccess
@@ -219,7 +217,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual css::uno::Type SAL_CALL getElementType() throw( css::uno::RuntimeException );
+		virtual css::uno::Type SAL_CALL getElementType();
 
 		/*-****************************************************************************************************//**
 			@short      get fill state of current container
@@ -235,7 +233,7 @@ class OFrames   :   private ThreadHelpBase      ,   // Must be the first of base
 			@onerror	We return sal_False.
 		*//*-*****************************************************************************************************/
 
-    	virtual sal_Bool SAL_CALL hasElements() throw( css::uno::RuntimeException );
+    	virtual sal_Bool SAL_CALL hasElements();
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

@@ -105,22 +105,19 @@ public:
     virtual css::awt::Rectangle SAL_CALL addBorder (
         const rtl::OUString& rsPaneBorderStyleName,
         const css::awt::Rectangle& rRectangle,
-        css::drawing::framework::BorderType eBorderType)
-        throw(css::uno::RuntimeException);
+        css::drawing::framework::BorderType eBorderType);
 
     virtual css::awt::Rectangle SAL_CALL removeBorder (
         const rtl::OUString& rsPaneBorderStyleName,
         const css::awt::Rectangle& rRectangle,
-        css::drawing::framework::BorderType eBorderType)
-        throw(css::uno::RuntimeException);
+        css::drawing::framework::BorderType eBorderType);
 
     virtual void SAL_CALL paintBorder (
         const rtl::OUString& rsPaneBorderStyleName,
         const css::uno::Reference<css::rendering::XCanvas>& rxCanvas,
         const css::awt::Rectangle& rOuterBorderRectangle,
         const css::awt::Rectangle& rRepaintArea,
-        const rtl::OUString& rsTitle)
-        throw(css::uno::RuntimeException);
+        const rtl::OUString& rsTitle);
 
     virtual void SAL_CALL paintBorderWithCallout (
         const rtl::OUString& rsPaneBorderStyleName,
@@ -128,12 +125,10 @@ public:
         const css::awt::Rectangle& rOuterBorderRectangle,
         const css::awt::Rectangle& rRepaintArea,
         const rtl::OUString& rsTitle,
-        const css::awt::Point& rCalloutAnchor)
-        throw(css::uno::RuntimeException);
+        const css::awt::Point& rCalloutAnchor);
 
     virtual css::awt::Point SAL_CALL getCalloutOffset (
-        const rtl::OUString& rsPaneBorderStyleName)
-        throw(css::uno::RuntimeException);
+        const rtl::OUString& rsPaneBorderStyleName);
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxContext;
@@ -150,8 +145,7 @@ private:
         const css::uno::Reference<css::rendering::XCanvas>& rxCanvas);
     bool ProvideTheme (void);
 
-    void ThrowIfDisposed (void) const
-        throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } } // end of namespace ::sd::presenter

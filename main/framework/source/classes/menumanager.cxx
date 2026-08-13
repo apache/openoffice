@@ -97,7 +97,6 @@ class StringLength : public ::cppu::WeakImplHelper1< ::com::sun::star::util::XSt
 
 		// XStringWidth
 		sal_Int32 SAL_CALL queryStringWidth( const ::rtl::OUString& aString )
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			return aString.getLength();
 		}
@@ -458,7 +457,6 @@ MenuManager::MenuItemHandler* MenuManager::GetMenuItemHandler( sal_uInt16 nItemI
 
 
 void SAL_CALL MenuManager::statusChanged( const FEATURSTATEEVENT& Event )
-throw ( RuntimeException )
 {
 	::rtl::OUString aFeatureURL = Event.FeatureURL.Complete;
 	MenuItemHandler* pStatusChangedMenu = NULL;
@@ -559,7 +557,7 @@ void MenuManager::ClearMenuDispatch(const EVENTOBJECT& Source,bool _bRemoveOnly)
 }
 
 
-void SAL_CALL MenuManager::disposing( const EVENTOBJECT& Source ) throw ( RUNTIMEEXCEPTION )
+void SAL_CALL MenuManager::disposing( const EVENTOBJECT& Source )
 {
 	if ( Source.Source == m_xFrame )
 	{

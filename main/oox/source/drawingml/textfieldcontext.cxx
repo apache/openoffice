@@ -44,7 +44,7 @@ TextFieldContext::TextFieldContext( ContextHandler& rParent,
     mrTextField.setType( rXAttributes->getOptionalValue( XML_type ) );
 }
 
-void TextFieldContext::endFastElement( sal_Int32 aElementToken ) throw (SAXException, RuntimeException)
+void TextFieldContext::endFastElement( sal_Int32 aElementToken )
 {
     if( aElementToken == (A_TOKEN( t )) )
     {
@@ -52,7 +52,7 @@ void TextFieldContext::endFastElement( sal_Int32 aElementToken ) throw (SAXExcep
     }
 }
 
-void TextFieldContext::characters( const OUString& aChars ) throw (SAXException, RuntimeException)
+void TextFieldContext::characters( const OUString& aChars )
 {
     if( mbIsInText )
     {
@@ -61,7 +61,6 @@ void TextFieldContext::characters( const OUString& aChars ) throw (SAXException,
 }
 
 Reference< XFastContextHandler > TextFieldContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
-    throw (SAXException, RuntimeException)
 {
     Reference< XFastContextHandler > xRet;
     switch( aElementToken )

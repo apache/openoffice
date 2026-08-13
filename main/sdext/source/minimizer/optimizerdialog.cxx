@@ -277,7 +277,6 @@ OptimizerDialog::~OptimizerDialog()
 
 void SAL_CALL OptimizerDialog::statusChanged(
 	const ::com::sun::star::frame::FeatureStateEvent& aState )
-throw (::com::sun::star::uno::RuntimeException)
 {
 	Sequence< PropertyValue > aArguments;
 	if ( ( aState.State >>= aArguments ) && aArguments.getLength() )
@@ -286,7 +285,6 @@ throw (::com::sun::star::uno::RuntimeException)
 
 void SAL_CALL OptimizerDialog::disposing(
 	const ::com::sun::star::lang::EventObject& /*aSource*/ )
-throw (::com::sun::star::uno::RuntimeException)
 {}
 
 // -----------------------------------------------------------------------------
@@ -404,7 +402,6 @@ void OptimizerDialog::UpdateStatus( const com::sun::star::uno::Sequence< com::su
 // -----------------------------------------------------------------------------
 
 void OptimizerDialog::itemStateChanged( const ItemEvent& Event )
-	throw ( RuntimeException )
 {
 	try
 	{
@@ -534,7 +531,6 @@ void OptimizerDialog::itemStateChanged( const ItemEvent& Event )
 // -----------------------------------------------------------------------------
 
 void OptimizerDialog::actionPerformed( const ActionEvent& rEvent )
-	throw ( com::sun::star::uno::RuntimeException )
 {
 	switch( TKGet( rEvent.ActionCommand ) )
 	{
@@ -709,7 +705,6 @@ void OptimizerDialog::actionPerformed( const ActionEvent& rEvent )
 // -----------------------------------------------------------------------------
 
 void OptimizerDialog::textChanged( const TextEvent& rEvent )
-	throw ( com::sun::star::uno::RuntimeException )
 {
 	Reference< XSpinField > xFormattedField( rEvent.Source, UNO_QUERY );
 	if ( xFormattedField.is() )
@@ -748,7 +743,6 @@ void OptimizerDialog::textChanged( const TextEvent& rEvent )
 // -----------------------------------------------------------------------------
 
 void OptimizerDialog::up( const SpinEvent& /* rEvent */ )
-	throw ( com::sun::star::uno::RuntimeException )
 {
 	double fDouble;
 	Any aAny = getControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ) );
@@ -763,7 +757,6 @@ void OptimizerDialog::up( const SpinEvent& /* rEvent */ )
 }
 
 void OptimizerDialog::down( const SpinEvent& /* rEvent */ )
-	throw ( com::sun::star::uno::RuntimeException )
 {
 	double fDouble;
 	Any aAny = getControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ) );
@@ -778,14 +771,12 @@ void OptimizerDialog::down( const SpinEvent& /* rEvent */ )
 }
 
 void OptimizerDialog::first( const SpinEvent& /* rEvent */ )
-	throw ( com::sun::star::uno::RuntimeException )
 {
 	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( static_cast< double >( 0 ) ) );
 	SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)0 ) );
 }
 
 void OptimizerDialog::last( const SpinEvent& /* rEvent */ )
-	throw ( com::sun::star::uno::RuntimeException )
 {
 	setControlProperty( TKGet( TK_FormattedField0Pg1 ), TKGet( TK_EffectiveValue ), Any( static_cast< double >( 100 ) ) );
 	SetConfigProperty( TK_JPEGQuality, Any( (sal_Int32)100 ) );

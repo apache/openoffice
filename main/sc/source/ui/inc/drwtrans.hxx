@@ -99,7 +99,7 @@ public:
     sal_uInt32          GetSourceDocID() const      { return nSourceDocID; }
 
 	static ScDrawTransferObj* GetOwnClipboard( Window* pUIWin );
-    virtual sal_Int64 SAL_CALL getSomething( const com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw( com::sun::star::uno::RuntimeException );
+    virtual sal_Int64 SAL_CALL getSomething( const com::sun::star::uno::Sequence< sal_Int8 >& rId );
     static const com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId();
 
     const ScRangeListVector& GetProtectedChartRangesVector() const { return m_aProtectedChartRangesVector; }

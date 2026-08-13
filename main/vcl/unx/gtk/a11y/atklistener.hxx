@@ -39,12 +39,10 @@ public:
     AtkListener(AtkObjectWrapper * pWrapper);
 
     // XEventListener
-    virtual void disposing( const ::com::sun::star::lang::EventObject& Source )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void disposing( const ::com::sun::star::lang::EventObject& Source );
 
     // XAccessibleEventListener
-    virtual void notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent )
-        throw( ::com::sun::star::uno::RuntimeException );
+    virtual void notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent );
 
     AtkObjectWrapper *mpWrapper;
     AccessibleVector m_aChildList;

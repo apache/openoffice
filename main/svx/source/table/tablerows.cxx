@@ -67,7 +67,7 @@ void TableRows::dispose()
 
 // -----------------------------------------------------------------------------
 
-void TableRows::throwIfDisposed() const throw (::com::sun::star::uno::RuntimeException)
+void TableRows::throwIfDisposed() const
 {
 	if( !mxTableModel.is() )
 		throw DisposedException();
@@ -77,7 +77,7 @@ void TableRows::throwIfDisposed() const throw (::com::sun::star::uno::RuntimeExc
 // XTableRows
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TableRows::insertByIndex( sal_Int32 nIndex, sal_Int32 nCount ) throw (RuntimeException)
+void SAL_CALL TableRows::insertByIndex( sal_Int32 nIndex, sal_Int32 nCount )
 {
 	throwIfDisposed();
 	mxTableModel->insertRows( nIndex, nCount );
@@ -85,7 +85,7 @@ void SAL_CALL TableRows::insertByIndex( sal_Int32 nIndex, sal_Int32 nCount ) thr
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TableRows::removeByIndex( sal_Int32 nIndex, sal_Int32 nCount ) throw (RuntimeException)
+void SAL_CALL TableRows::removeByIndex( sal_Int32 nIndex, sal_Int32 nCount )
 {
 	throwIfDisposed();
 	mxTableModel->removeRows( nIndex, nCount );
@@ -95,7 +95,7 @@ void SAL_CALL TableRows::removeByIndex( sal_Int32 nIndex, sal_Int32 nCount ) thr
 // XIndexAccess
 // -----------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL TableRows::getCount() throw (RuntimeException)
+sal_Int32 SAL_CALL TableRows::getCount()
 {
 	throwIfDisposed();
 	return mxTableModel->getRowCount();
@@ -103,7 +103,7 @@ sal_Int32 SAL_CALL TableRows::getCount() throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-Any SAL_CALL TableRows::getByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+Any SAL_CALL TableRows::getByIndex( sal_Int32 Index )
 {
 	throwIfDisposed();
 	return Any( Reference< XCellRange >( static_cast< XCellRange* >( mxTableModel->getRow( Index ).get() ) ) );
@@ -113,7 +113,7 @@ Any SAL_CALL TableRows::getByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsExc
 // XElementAccess
 // -----------------------------------------------------------------------------
 
-Type SAL_CALL TableRows::getElementType() throw (RuntimeException)
+Type SAL_CALL TableRows::getElementType()
 {
 	throwIfDisposed();
 	return XCellRange::static_type();
@@ -121,7 +121,7 @@ Type SAL_CALL TableRows::getElementType() throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL TableRows::hasElements() throw (RuntimeException)
+sal_Bool SAL_CALL TableRows::hasElements()
 {
 	throwIfDisposed();
 	return mxTableModel->getRowCount() != 0;

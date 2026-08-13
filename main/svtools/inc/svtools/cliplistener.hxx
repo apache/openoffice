@@ -46,11 +46,9 @@ public:
 	void	ClearCallbackLink();
 
 			// XEventListener
-	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-											throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 			// XClipboardListener
-	virtual void SAL_CALL changedContents( const ::com::sun::star::datatransfer::clipboard::ClipboardEvent& event )
-											throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL changedContents( const ::com::sun::star::datatransfer::clipboard::ClipboardEvent& event );
 };
 
 #endif

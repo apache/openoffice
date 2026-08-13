@@ -103,7 +103,7 @@ namespace pcr
     }
 
     //------------------------------------------------------------------------
-    sal_Int32 PushButtonNavigation::implGetCurrentButtonType() const SAL_THROW((Exception))
+    sal_Int32 PushButtonNavigation::implGetCurrentButtonType() const
     {
         sal_Int32 nButtonType = FormButtonType_PUSH;
         if ( !m_xControlModel.is() )

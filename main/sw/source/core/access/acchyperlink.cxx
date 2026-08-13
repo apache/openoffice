@@ -78,13 +78,11 @@ const SwTxtAttr *SwAccessibleHyperlink::GetTxtAttr() const
 
 // XAccessibleAction
 sal_Int32 SAL_CALL SwAccessibleHyperlink::getAccessibleActionCount()
-		throw (uno::RuntimeException)
 {
 	 return isValid() ? 1 : 0;
 }
 
 sal_Bool SAL_CALL SwAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -121,7 +119,6 @@ sal_Bool SAL_CALL SwAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
 
 OUString SAL_CALL SwAccessibleHyperlink::getAccessibleActionDescription(
 		sal_Int32 nIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	OUString sDesc;
 
@@ -138,7 +135,6 @@ OUString SAL_CALL SwAccessibleHyperlink::getAccessibleActionDescription(
 
 uno::Reference< XAccessibleKeyBinding > SAL_CALL
 	SwAccessibleHyperlink::getAccessibleActionKeyBinding( sal_Int32 )
-	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	uno::Reference< XAccessibleKeyBinding > xKeyBinding;
 
@@ -162,7 +158,6 @@ uno::Reference< XAccessibleKeyBinding > SAL_CALL
 // XAccessibleHyperlink
 uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionAnchor(
         sal_Int32 nIndex)
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	uno::Any aRet;
 	if(nIndex != 0)
@@ -176,7 +171,6 @@ uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionAnchor(
 
 uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionObject(
             sal_Int32 nIndex )
-	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if(nIndex != 0)
 		throw new IndexOutOfBoundsException;
@@ -194,19 +188,16 @@ uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionObject(
 }
 
 sal_Int32 SAL_CALL SwAccessibleHyperlink::getStartIndex()
-		throw (uno::RuntimeException)
 {
 	return nStartIdx;
 }
 
 sal_Int32 SAL_CALL SwAccessibleHyperlink::getEndIndex()
-		throw (uno::RuntimeException)
 {
 	return nEndIdx;
 }
 
 sal_Bool SAL_CALL SwAccessibleHyperlink::isValid(  )
-		throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	//	return xPara.isValid();

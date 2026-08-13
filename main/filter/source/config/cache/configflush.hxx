@@ -90,26 +90,20 @@ class ConfigFlush : public BaseLock
         //---------------------------------------
         // XServiceInfo
 
-        virtual ::rtl::OUString SAL_CALL getImplementationName()
-            throw (css::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
 
-        virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& sServiceName)
-            throw (css::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& sServiceName);
 
-        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         //---------------------------------------
         // XRefreshable
 
-        virtual void SAL_CALL refresh()
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL refresh();
 
-        virtual void SAL_CALL addRefreshListener(const css::uno::Reference< css::util::XRefreshListener >& xListener)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL addRefreshListener(const css::uno::Reference< css::util::XRefreshListener >& xListener);
 
-        virtual void SAL_CALL removeRefreshListener(const css::uno::Reference< css::util::XRefreshListener >& xListener)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL removeRefreshListener(const css::uno::Reference< css::util::XRefreshListener >& xListener);
 
         //---------------------------------------
         // interface to register/create this instance as an UNO service

@@ -54,7 +54,7 @@ namespace accessibility
 		virtual Rectangle implGetBoundingBoxOnScreen();
 
 		// XAccessibleComponent
-		virtual void SAL_CALL grabFocus() throw ( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL grabFocus();
 
 	protected:
 		AccessibleBrowseBoxCell(

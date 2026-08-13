@@ -67,47 +67,35 @@ namespace dtrans
          * XServiceInfo
          */
 
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
 
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         /*
          * XComponent
          */
 
-        virtual void SAL_CALL dispose()
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL dispose();
 
         /*
          * XEventListener
          */
 
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
         /*
          * XClipboardManager
          */
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboard > SAL_CALL getClipboard( const ::rtl::OUString& aName )
-            throw(::com::sun::star::container::NoSuchElementException,
-                  ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboard > SAL_CALL getClipboard( const ::rtl::OUString& aName );
 
-        virtual void SAL_CALL addClipboard( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboard >& xClipboard )
-            throw(::com::sun::star::lang::IllegalArgumentException,
-                  ::com::sun::star::container::ElementExistException,
-                  ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL addClipboard( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboard >& xClipboard );
 
-        virtual void SAL_CALL removeClipboard( const ::rtl::OUString& aName )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL removeClipboard( const ::rtl::OUString& aName );
 
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL listClipboardNames(  )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL listClipboardNames(  );
 
 
     };

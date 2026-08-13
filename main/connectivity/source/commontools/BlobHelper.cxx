@@ -35,30 +35,30 @@ BlobHelper::BlobHelper(const ::com::sun::star::uno::Sequence< sal_Int8 >& _val) 
 {
 }
 // -----------------------------------------------------------------------------
-::sal_Int64 SAL_CALL BlobHelper::length(  ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+::sal_Int64 SAL_CALL BlobHelper::length(  )
 {
     return m_aValue.getLength();
 }
 // -----------------------------------------------------------------------------
-::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL BlobHelper::getBytes( ::sal_Int64 pos, ::sal_Int32 _length ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL BlobHelper::getBytes( ::sal_Int64 pos, ::sal_Int32 _length )
 {
     if ( sal_Int32(pos + _length) > m_aValue.getLength() )
         throw ::com::sun::star::sdbc::SQLException();
     return ::com::sun::star::uno::Sequence< ::sal_Int8 >(m_aValue.getConstArray() + sal_Int32(pos),_length);
 }
 // -----------------------------------------------------------------------------
-::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL BlobHelper::getBinaryStream(  ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL BlobHelper::getBinaryStream(  )
 {
     return new ::comphelper::SequenceInputStream(m_aValue);
 }
 // -----------------------------------------------------------------------------
-::sal_Int64 SAL_CALL BlobHelper::position( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& /*pattern*/, ::sal_Int64 /*start*/ ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+::sal_Int64 SAL_CALL BlobHelper::position( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& /*pattern*/, ::sal_Int64 /*start*/ )
 {
     ::dbtools::throwFeatureNotImplementedException( "XBlob::position", *this );
     return 0;
 }
 // -----------------------------------------------------------------------------
-::sal_Int64 SAL_CALL BlobHelper::positionOfBlob( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XBlob >& /*pattern*/, ::sal_Int64 /*start*/ ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+::sal_Int64 SAL_CALL BlobHelper::positionOfBlob( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XBlob >& /*pattern*/, ::sal_Int64 /*start*/ )
 {
     ::dbtools::throwFeatureNotImplementedException( "XBlob::positionOfBlob", *this );
     return 0;

@@ -277,7 +277,6 @@ PropHelper::convertFastPropertyValue(
     uno::Any & rOldValue,
     sal_Int32 nHandle,
     const uno::Any& rValue )
-    throw (lang::IllegalArgumentException)
 {
     OSL_ASSERT( nHandle >= 0 && nHandle < (sal_Int32) maDetails.size() );
 
@@ -300,7 +299,6 @@ PropHelper::convertFastPropertyValue(
 void SAL_CALL
 PropHelper::setFastPropertyValue_NoBroadcast( sal_Int32 nHandle,
                                               const uno::Any& rValue )
-    throw (uno::Exception)
 {
     OSL_ASSERT( nHandle >= 0 && nHandle < (sal_Int32) maDetails.size() );
 
@@ -343,12 +341,12 @@ PropHelper::getFastPropertyValue( uno::Any& rValue,
 }
 
 ::com::sun::star::uno::Any
-PropHelper::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+PropHelper::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
     return OPropertySetHelper::queryInterface( rType );
 }
 
-uno::Reference <beans::XPropertySetInfo> SAL_CALL PropHelper::getPropertySetInfo () throw (uno::RuntimeException)
+uno::Reference <beans::XPropertySetInfo> SAL_CALL PropHelper::getPropertySetInfo ()
 {
     return css::uno::Reference <css::beans::XPropertySetInfo> (createPropertySetInfo (getInfoHelper ()));
 }

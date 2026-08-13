@@ -103,7 +103,7 @@ void SAL_CALL OComponentEnumeration::disposing( const EventObject&
 #if OSL_DEBUG_LEVEL > 0
 aEvent
 #endif
-) throw( RuntimeException )
+)
 {
 	// Ready for multithreading
 	ResetableGuard aGuard( m_aLock );
@@ -119,7 +119,7 @@ aEvent
 //*****************************************************************************************************************
 //	XEnumeration
 //*****************************************************************************************************************
-sal_Bool SAL_CALL OComponentEnumeration::hasMoreElements() throw( RuntimeException )
+sal_Bool SAL_CALL OComponentEnumeration::hasMoreElements()
 {
 	// Ready for multithreading
 	ResetableGuard aGuard( m_aLock );
@@ -134,9 +134,7 @@ sal_Bool SAL_CALL OComponentEnumeration::hasMoreElements() throw( RuntimeExcepti
 //*****************************************************************************************************************
 //	XEnumeration
 //*****************************************************************************************************************
-Any SAL_CALL OComponentEnumeration::nextElement() throw(	NoSuchElementException	,
-										 					WrappedTargetException	,
-															RuntimeException		)
+Any SAL_CALL OComponentEnumeration::nextElement()
 {
 	// Ready for multithreading
 	ResetableGuard aGuard( m_aLock );

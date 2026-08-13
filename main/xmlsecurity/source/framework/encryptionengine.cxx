@@ -95,7 +95,6 @@ bool EncryptionEngine::checkReady() const
 }
 
 void EncryptionEngine::tryToPerform( )
-    	throw (cssu::Exception, cssu::RuntimeException)
 /****** EncryptionEngine/tryToPerform ****************************************
  *
  *   NAME
@@ -204,7 +203,6 @@ void EncryptionEngine::clearUp( ) const
 
 /* XBlockerMonitor */
 void SAL_CALL EncryptionEngine::setBlockerId( sal_Int32 id )
-	throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException)
 {
 	m_nIdOfBlocker = id;
 	tryToPerform();

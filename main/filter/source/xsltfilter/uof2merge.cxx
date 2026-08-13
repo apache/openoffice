@@ -71,12 +71,12 @@ public:
 
 	void addAttribute( const UOF2Attribute& rAttribute );
 
-	virtual sal_Int16 SAL_CALL getLength() throw ( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getNameByIndex( sal_Int16 i) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getTypeByIndex( sal_Int16 i) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getTypeByName( const ::rtl::OUString& rName ) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getValueByIndex( sal_Int16 i ) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getValueByName( const ::rtl::OUString& rName ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int16 SAL_CALL getLength();
+	virtual ::rtl::OUString SAL_CALL getNameByIndex( sal_Int16 i);
+	virtual ::rtl::OUString SAL_CALL getTypeByIndex( sal_Int16 i);
+	virtual ::rtl::OUString SAL_CALL getTypeByName( const ::rtl::OUString& rName );
+	virtual ::rtl::OUString SAL_CALL getValueByIndex( sal_Int16 i );
+	virtual ::rtl::OUString SAL_CALL getValueByName( const ::rtl::OUString& rName );
 private:
 	::std::vector< UOF2Attribute > m_aAttributes;
 };
@@ -95,22 +95,22 @@ void UOF2AttributeList::addAttribute( const UOF2Attribute& rAttribute )
 		m_aAttributes.push_back(rAttribute);
 }
 
-sal_Int16 SAL_CALL UOF2AttributeList::getLength() throw ( ::com::sun::star::uno::RuntimeException )
+sal_Int16 SAL_CALL UOF2AttributeList::getLength()
 {
 	return static_cast< sal_Int16 >(m_aAttributes.size());
 }
 
-::rtl::OUString SAL_CALL UOF2AttributeList::getNameByIndex( sal_Int16 i ) throw ( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL UOF2AttributeList::getNameByIndex( sal_Int16 i )
 {
 	return m_aAttributes[i].m_sName;
 }
 
-::rtl::OUString SAL_CALL UOF2AttributeList::getTypeByIndex( sal_Int16 i ) throw ( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL UOF2AttributeList::getTypeByIndex( sal_Int16 i )
 {
 	return m_aAttributes[i].m_sType;
 }
 
-::rtl::OUString SAL_CALL UOF2AttributeList::getTypeByName( const ::rtl::OUString& rName ) throw ( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL UOF2AttributeList::getTypeByName( const ::rtl::OUString& rName )
 {
 	::std::vector< UOF2AttributeList::UOF2Attribute >::const_iterator aIter = m_aAttributes.begin();
 	::std::vector< UOF2AttributeList::UOF2Attribute >::const_iterator aEnd = m_aAttributes.end();
@@ -124,12 +124,12 @@ sal_Int16 SAL_CALL UOF2AttributeList::getLength() throw ( ::com::sun::star::uno:
 	return ::rtl::OUString();
 }
 
-::rtl::OUString SAL_CALL UOF2AttributeList::getValueByIndex( sal_Int16 i ) throw ( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL UOF2AttributeList::getValueByIndex( sal_Int16 i )
 {
 	return m_aAttributes[i].m_sValue;
 }
 
-::rtl::OUString SAL_CALL UOF2AttributeList::getValueByName( const ::rtl::OUString& rName ) throw ( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL UOF2AttributeList::getValueByName( const ::rtl::OUString& rName )
 {
 	::std::vector< UOF2AttributeList::UOF2Attribute >::const_iterator aIter = m_aAttributes.begin();
 	::std::vector< UOF2AttributeList::UOF2Attribute >::const_iterator aEnd = m_aAttributes.end();
@@ -153,30 +153,22 @@ public:
 	explicit UOF2FlatDocMergeHandler(UOF2Merge& rUOF2Merge);
 	virtual ~UOF2FlatDocMergeHandler();
 
-	virtual void SAL_CALL startDocument()
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL startDocument();
 
-	virtual void SAL_CALL endDocument()
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL endDocument();
 
 	virtual void SAL_CALL startElement( const ::rtl::OUString& rElemName,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& rAttribs )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+		const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& rAttribs );
 
-	virtual void SAL_CALL endElement( const ::rtl::OUString& rElemName )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL endElement( const ::rtl::OUString& rElemName );
 
-	virtual void SAL_CALL characters( const ::rtl::OUString& rElemName )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL characters( const ::rtl::OUString& rElemName );
 
-	virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& rWhiteSpaces )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& rWhiteSpaces );
 
-	virtual void SAL_CALL processingInstruction( const ::rtl::OUString& rTarget, const ::rtl::OUString& rData )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL processingInstruction( const ::rtl::OUString& rTarget, const ::rtl::OUString& rData );
 
-	virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator );
 protected:
 	UOF2Merge& getUOF2Merge(){ return m_rUOF2Merge; }
 private:
@@ -198,18 +190,15 @@ UOF2FlatDocMergeHandler::~UOF2FlatDocMergeHandler()
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::startDocument()
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::endDocument()
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::startElement( const ::rtl::OUString& rElemName,
 								const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& rAttribs )
-							throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	++m_nLevel;
 	if( m_nLevel == 1)
@@ -243,31 +232,26 @@ void SAL_CALL UOF2FlatDocMergeHandler::startElement( const ::rtl::OUString& rEle
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::endElement( const ::rtl::OUString& rElemName )
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	--m_nLevel;
 	m_rUOF2Merge.getSaxWriter()->endElement(rElemName);
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::characters( const ::rtl::OUString& rElemName )
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	m_rUOF2Merge.getSaxWriter()->characters(rElemName);
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::ignorableWhitespace( const ::rtl::OUString& /*rWhiteSpaces*/ )
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::processingInstruction( const ::rtl::OUString& /*rTarget*/, const ::rtl::OUString&/* rData */)
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
 void SAL_CALL UOF2FlatDocMergeHandler::setDocumentLocator(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& /*xLocator*/ )
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
@@ -281,8 +265,7 @@ public:
 	explicit UOF2UOFXMLDocMergeHandler( UOF2Merge& rUOF2Merge);
 	virtual ~UOF2UOFXMLDocMergeHandler();
 
-	virtual void SAL_CALL endElement( const ::rtl::OUString& rElemName )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL endElement( const ::rtl::OUString& rElemName );
 };
 
 UOF2UOFXMLDocMergeHandler::UOF2UOFXMLDocMergeHandler( UOF2Merge& rUOF2Merge )
@@ -295,7 +278,6 @@ UOF2UOFXMLDocMergeHandler::~UOF2UOFXMLDocMergeHandler()
 }
 
 void SAL_CALL UOF2UOFXMLDocMergeHandler::endElement( const ::rtl::OUString& /*rElemName*/ )
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
@@ -310,14 +292,11 @@ public:
 	virtual ~UOF2ObjdataXMLDocMergeHandler();
 
 	virtual void SAL_CALL startElement( const ::rtl::OUString& rElemName,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& rAttribs )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+		const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& rAttribs );
 
-	virtual void SAL_CALL endElement( const ::rtl::OUString& rElemName )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL endElement( const ::rtl::OUString& rElemName );
 
-	virtual void SAL_CALL characters( const ::rtl::OUString& rChars )
-		throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL characters( const ::rtl::OUString& rChars );
 private:
 	static const ::rtl::OUString OBJPATH;
 	static const ::rtl::OUString OBJDATA;
@@ -340,7 +319,6 @@ UOF2ObjdataXMLDocMergeHandler::~UOF2ObjdataXMLDocMergeHandler()
 
 void SAL_CALL UOF2ObjdataXMLDocMergeHandler::startElement( const ::rtl::OUString& rElemName,
 						const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& rAttribs )
-					throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	if(rElemName.equals(OBJPATH))
 	{
@@ -355,7 +333,6 @@ void SAL_CALL UOF2ObjdataXMLDocMergeHandler::startElement( const ::rtl::OUString
 }
 
 void SAL_CALL UOF2ObjdataXMLDocMergeHandler::endElement( const ::rtl::OUString& rElemName )
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	if(m_bIsObjPathElem)
 		UOF2FlatDocMergeHandler::endElement(OBJDATA);
@@ -366,7 +343,6 @@ void SAL_CALL UOF2ObjdataXMLDocMergeHandler::endElement( const ::rtl::OUString& 
 }
 
 void SAL_CALL UOF2ObjdataXMLDocMergeHandler::characters( const ::rtl::OUString& rChars )
-	throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	if(m_bIsObjPathElem)
 	{
