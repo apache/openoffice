@@ -478,7 +478,16 @@ res_stage(
         "//main/basctl:basctl_res":                    "basctlen-US",
         "//main/basic:basic_res":                      "sben-US",
         "//main/chart2:chart2_res":                    "chartcontrolleren-US",
+        # Three SEPARATE bundles, looked up by name at runtime, not one merged
+        # .res: cnr is the shared driver strings (dbtools is compiled with
+        # CONN_SHARED_RESOURCE_FILE=cnr), sdbcl is what JDriver.cxx's
+        # ResourceBasedEventLogger("sdbcl", "org.openoffice.sdbc.jdbcBridge")
+        # resolves, and sdberr holds the SQL error messages.  connectivity's
+        # fourth reslib, hsqldb, is deliberately absent — it exists only to pull
+        # its two images into images.zip and upstream never installs it.
         "//main/connectivity:connectivity_res":        "cnren-US",
+        "//main/connectivity:connectivity_log_res":    "sdbclen-US",
+        "//main/connectivity:connectivity_err_res":    "sdberren-US",
         "//main/cui:cui_res":                          "cuien-US",
         "//main/scaddins:date_res":                    "dateen-US",
         "//main/dbaccess:dba_res":                     "dbaen-US",

@@ -21,6 +21,16 @@ _COPTS = [
     "/Zc:wchar_t-",
 ]
 
+# Shared by the four rsc_res targets below.  source/resource/makefile.mk builds
+# THREE separate resource libraries (cnr, sdbcl, sdberr) and the hsqldb driver
+# a fourth (hsqldb) -- they are separate bundles looked up by NAME at runtime,
+# so they must not be globbed into one .res.
+_RES_INCLUDES = [
+    "main/connectivity/source/resource",
+    "main/connectivity/source/drivers/hsqldb",
+    "main/connectivity/source/inc",
+]
+
 # ── public headers ─────────────────────────────────────────────────
 cc_library(
     name = "connectivity_headers",
@@ -456,7 +466,7 @@ cc_binary(
 # lives inside the .odb zip storage rather than as loose files on disk.
 #
 # DUAL-ROLE DLL: a UNO component AND a JNI library, hence a DEF that carries
-# both component_* entries and 28 undecorated Java_* names (JNICALL is
+# both component_* entries and 27 undecorated Java_* names (JNICALL is
 # __stdcall on Win32, so without the DEF they would be exported as _Java_..@N
 # and the JVM could not find them) -- same trick as //main/jurt jpipe.def.
 #
@@ -550,17 +560,54 @@ uno_jar(
 
 rsc_res(
     name     = "connectivity_res",
-    srcs     = glob(["source/**/*.src"]),
+    srcs     = ["source/resource/conn_shared_res.src"],
     hdrs     = glob(["source/**/*.hrc"]),
-    includes = [
-        "main/connectivity/source/resource",
-        "main/connectivity/source/drivers/hsqldb",
-        "main/connectivity/source/inc",
-    ],
+    includes = _RES_INCLUDES,
     images      = ["//main/default_images:database_images"],
     images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
+
+# ── sdbcl — the connection LOGGER's messages ───────────────────────
+# java_sql_DatabaseMetaData::impl_callBooleanMethod() and friends log every
+# call and its result through comphelper::ResourceBasedEventLogger, which
+# JDriver.cxx constructs as ("sdbcl", "org.openoffice.sdbc.jdbcBridge") --
+# the first argument is this bundle's name, so the logger resolves
+# sdbcl<lang>.res, not cnr<lang>.res.  Inert while the logger is off (its
+# level check returns before any resource lookup), which is why nothing has
+# ever failed on its absence; it becomes load-bearing the moment JDBC
+# logging is switched on to diagnose a driver.
+rsc_res(
+    name     = "connectivity_log_res",
+    srcs     = ["source/resource/conn_log_res.src"],
+    hdrs     = glob(["source/**/*.hrc"]),
+    includes = _RES_INCLUDES,
+    visibility = ["//visibility:public"],
+)
+
+# ── sdberr — SQL ERROR messages ────────────────────────────────────
+# The strings behind the SQLExceptions the drivers throw.  Missing bundle =
+# hollowed-out error text at exactly the moment something goes wrong, which
+# is the worst possible time to lose a message.
+rsc_res(
+    name     = "connectivity_err_res",
+    srcs     = ["source/resource/conn_error_message.src"],
+    hdrs     = glob(["source/**/*.hrc"]),
+    includes = _RES_INCLUDES,
+    visibility = ["//visibility:public"],
+)
+
+# NO target for source/drivers/hsqldb/hsqlui.src, deliberately.  Upstream
+# builds it as a fourth reslib, but hsqlui.src says why itself: "The resource
+# file built here (hsqldb.res, finally) is *not* included in the final OOo
+# installation.  Instead, it is only built to ensure that the two images below
+# are included in the application-wide image repository (images.zip)" -- they
+# are reached at runtime via the GraphicProvider's private:imagerepository/
+# protocol, not through a ResId.  That is a dmake artifact: there, compiling a
+# .src was the only way to pull an image into the repository.  Here
+# //main/default_images:images globs database/**/*.png directly, so
+# linked_text_table{,_hc}.png are already zip entries and a resource library
+# built for its side effect would be a dead target.
 
 exports_files(glob(["**/*.component"]))
 
