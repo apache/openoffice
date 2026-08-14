@@ -42,3 +42,20 @@ build:winXP-x86 --symlink_prefix=bazel-winXP-x86-
 build:winXP-x64 --platforms=//build/platforms:winXP-x64
 build:winXP-x64 --platform_suffix=winXP-x64
 build:winXP-x64 --symlink_prefix=bazel-winXP-x64-
+# ── --config=timelog — AOO's own startup/exception tracing ───────────────────
+# sal/inc/rtl/logfile.hxx gates every RTL_LOGFILE_CONTEXT/_TRACE macro behind
+# TIMELOG; without it they all compile to ((void)0), and desktop's Desktop::Main
+# is densely instrumented with exactly those.  rtl_logfile itself is NOT gated —
+# it reads the RTL_LOGFILE bootstrap variable at runtime — so only the call sites
+# need switching on, and that is a pure compiler define, no source change.
+#
+# Combine with a separate --platform_suffix so the traced build lands in its own
+# output tree instead of invalidating the normal one:
+#   bazel build --config=winXP-x64 --config=timelog //main/staging:install
+#   soffice.exe -env:RTL_LOGFILE=C:/temp/oo -env:UserInstallation=...
+# writes C:\temp\oo<pid>.log.  Without --config=timelog the same env var still
+# works but yields only the handful of RTL_LOGFILE_PRODUCT_* points, which is
+# enough to tell how far startup got and nothing more.
+build:timelog --copt=/DTIMELOG
+build:timelog --platform_suffix=timelog
+build:timelog --symlink_prefix=bazel-timelog-
