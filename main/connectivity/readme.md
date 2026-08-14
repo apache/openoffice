@@ -1,12 +1,125 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # connectivity — Bazel Migration
 
 ## Targets
 
 | Target | Output | Description |
-|--------|--------|-------------|
+| ------ | ------ | ----------- |
 | `//main/connectivity:dbtools` | `dbtools.dll` | Core database tools library (SQL parser, schema classes, common utilities) |
 | `//main/connectivity:sdbc2` | `sdbc2.dll` | SDBC driver manager UNO component |
 | `//main/connectivity:dbpool2` | `dbpool2.dll` | Connection pool UNO component |
+| `//main/connectivity:file` | `file.dll` | Shared file-based SDBC implementation — **not** a UNO component |
+| `//main/connectivity:dbase` | `dbase.dll` | dBASE III/IV driver |
+| `//main/connectivity:flat` | `flat.dll` | Delimited-text driver |
+| `//main/connectivity:calc` | `calc.dll` | Spreadsheet-as-datasource driver |
+| `//main/connectivity:jdbc` | `jdbc.dll` | Generic JDBC bridge driver |
+| `//main/connectivity:hsqldb` | `hsqldb.dll` | Embedded HSQLDB driver (UNO component **and** JNI library) |
+| `//main/connectivity:hsqldb_jar` | `hsqldb.jar` | HSQLDB 1.8.0 engine, AOO-patched |
+| `//main/connectivity:sdbc_hsqldb_jar` | `sdbc_hsqldb.jar` | AOO's storage bridge letting the engine live inside the `.odb` |
+
+## The embedded-database path
+
+"Create a new Base database" is `sdbc:embedded:hsqldb`, hardcoded in
+`dbaccess/source/core/misc/dsntypes.cxx`.  It needs all four of the last rows
+above at once:
+
+1. `hsqldb.dll` implements the driver, but delegates the actual SQL — `HDriver`
+   asks the driver manager for `jdbc:hsqldb:db`.
+2. `jdbc.dll` serves that, driving the engine through JNI.
+3. `hsqldb.jar` is the engine.
+4. `sdbc_hsqldb.jar` is what makes the database a *single file*:
+   `StorageAccess` / `StorageFileAccess` implement `org.hsqldb.lib.Storage` /
+   `FileAccess` over UNO's embedded storage, and their native methods are the
+   28 `Java_*` exports of `hsqldb.dll`.
+
+Both jars are staged to `program/classes/` — not by convention but because
+`HDriver.cxx` builds the classpath as the literal string
+`vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/<name>.jar`.
+
+### hsqldb.jar is the release jar plus AOO's behaviour patches
+
+Upstream builds HSQLDB with Ant, and that build is not a plain `javac`: it runs
+HSQLDB's own `org.hsqldb.util.CodeSwitcher` over the sources first, commenting
+blocks in and out per JDK level.  Compiling the 255 non-test sources directly
+fails with 12 errors, all the same shape — the JDBC wrapper classes (`jdbcClob`,
+`jdbcDatabaseMetaData`, `jdbcDataSource`, `jdbcParameterMetaData`,
+`jdbcResultSet`, `jdbcDriver`) do not implement methods `java.sql` grew after
+2008: `getCharacterStream(long,long)` (JDBC 4.0), `isWrapperFor`,
+`generatedKeyAlwaysReturned`, `getParentLogger`, `getObject(String,Class<T>)`
+(JDBC 4.1).  AOO's `i121754.patch` exists to paper over exactly that for Java 7,
+and `javac` 21 cannot target below `--release 8`, so a raw source build would
+need *new* source changes upstream does not have.
+
+So `@hsqldb//:hsqldb_upstream` is the release jar from the archive (already
+CodeSwitcher-processed), and `@hsqldb//:hsqldb_patches` recompiles only the
+eight **behaviourally** patched files — `script.patch`'s fix to skip `SCRIPT`
+while a script or log is replayed, plus `i121754`'s alignment to 1.8.0.11
+(`Expression`, `Library`, `Select`, `Table`, `TableWorks`,
+`persist/HsqlDatabaseProperties`, `lib/StringComparator`,
+`DatabaseCommandInterpreter`).  None of those is a `java.sql` implementor, so
+they all compile against the release jar.  `uno_jar` merges them with the
+patched classes FIRST, because singlejar keeps the first occurrence of a
+duplicate entry.  Net effect: every behaviour patch is kept; only the JDBC-compat
+hunks are dropped, and those exist purely to make the source build on Java 7.
+
+**LANDMINE — the AOO patches cannot be used verbatim as bzlmod `patches`.**
+`i121754.patch` was generated with `diff -urbwB` (ignore whitespace *and* blank
+lines), which GNU `patch` tolerates and Bazel's stricter implementation silently
+does not: it applied `script.patch` and skipped `i121754.patch` entirely, with no
+error, and did not create the new file `lib/StringComparator.java`.  The fix is a
+single regenerated byte-exact patch (`ext_libraries/modules/hsqldb/1.8.0/patches/
+aoo-hsqldb.patch`, `patch_strip: 1`); the fetched tree is now byte-identical to a
+GNU-`patch` reference.  The originals stay at
+`ext_libraries/modules/hsqldb/patches/` as the dmake inputs.  Also note a
+`source.json` change needs `bazel mod deps --lockfile_mode=refresh` — otherwise
+the stale external repo is reused and the rebuild "fails" for the old reason.
+
+## Drivers deliberately NOT registered
+
+`adabas`, `ado`, `mysql` and `odbc` have `.component` files and DataAccess
+`.xcu` files in this module, and **all four used to be registered in
+services.rdb with no DLL behind them**.  That is worse than not registering
+them: the driver manager resolves the service, `osl_loadModule` fails on a file
+that was never produced, and the resulting UNO exception escapes the VCL message
+loop to `desktop/source/app/app.cxx:2241`, whose `catch` calls `FatalError()` →
+`_exit()`.  Picking such a driver in Base killed the office instead of reporting
+an error.  They are now unregistered until their `cc_binary` exists.  What each
+would take:
+
+- **odbc** — `odbcbase.dll` (9 sources, declspec exports via
+  `OOO_DLLIMPLEMENTATION_ODBCBASE`) + `odbc.dll` (3 sources).  The header
+  dependency is already solved: `//main/unixODBC:odbc_headers` exists and works
+  on Windows (`_IODBCUNIX_H` guard; dbaccess already consumes it).  Cheapest of
+  the four.
+- **mysql** — 9 sources, no external libs.  A pure delegator: `YDriver.cxx`
+  routes `sdbc:mysql:odbc:` to the ODBC driver and `sdbc:mysql:jdbc:` to the
+  JDBC one.  Useless alone; nearly free once odbc exists, and the JDBC arm works
+  today.  Ships no MySQL client — the user supplies Connector/J or a DSN.
+- **ado** — 32 sources of COM/OLE-DB wrapper.  `adoint.h`, `adoctint.h`,
+  `oledb.h`, `oaidl.h`, `ocidl.h` are all present in the pinned SDK v7.0 this
+  build already uses, so there is no external module to add — just the largest
+  file count and the least value on modern Windows.
+- **adabas** — 22 sources plus `odbcbase`, and it needs an installed Adabas D
+  server and client.  Discontinued commercial product; nothing can exercise it.
+  Recommend leaving it unregistered permanently.
 
 ## Source layout
 
@@ -44,4 +157,22 @@ files as textual fragments (declared via `_parse_generated` cc_library).
   with `std::lower_bound`/`std::equal_range`; MSVC debug STL validates the range by
   calling `comp(T, T)` which these comparators don't provide — semantically correct C++
   but the MSVC debug probe trips on it; applied per-binary for consistency across TUs
-- Drivers (ado, odbc, dbase, calc, flat, hsqldb, jdbc, mysql, …) are not yet migrated
+- stlport is required by every consumer of `connectivity/dbtools.hxx`, not just the
+  modules using `hash_map`: line 611 declares `askForParameters()` with a
+  `::std::bit_vector` default argument, an SGI STL extension only stlport provides
+- `dbase/DNoException.cxx` must be EXCLUDED from the source glob.  It is the one
+  file in that directory absent from dmake's `SLOFILES` and `#include`d by nothing:
+  a stale second copy of bodies that also live in `DTable.cxx` and `dindexnode.cxx`,
+  so compiling it gives ~25 `LNK2005` duplicate-symbol errors
+- `SOLAR_JAVA` is load-bearing for `jdbc` and `hsqldb`, not a feature switch:
+  `jvmaccess/virtualmachine.hxx` includes the real `<jni.h>` only under it and
+  otherwise declares stubs, so without it every `JNIEnv->` call is C2027
+- `hsqldb.dll` carries 28 undecorated `Java_*` exports in its DEF alongside the two
+  `component_*` ones (JNICALL is `__stdcall` on Win32, so without the DEF they would
+  be `_Java_…@N` and the JVM could not find them) — same trick as `jurt`'s
+  `jpipe.def`.  It does NOT need the RT_MANIFEST id 2 embedded manifest that
+  `jpipe`/`jpipx` need: those are loaded by a stock `java.exe` with no VC90
+  activation context, whereas this JVM runs in-process inside `soffice.exe`
+- `hsqldb.dll` takes no DLLPOSTFIX (version.mk sets `HSQLDB_TARGET=hsqldb` bare)
+  because the Java side hardcodes `System.loadLibrary("hsqldb")`
+- Drivers still unmigrated: ado, odbc/odbcbase, mysql, adabas (see above)

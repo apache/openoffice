@@ -1,5 +1,26 @@
-# Migrated Packages.
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
+# Migrated Packages
+
 These packages have been migrated.
+
 ```
 sal           ✅  — main/sal/readme.md
 salhelper     ✅
@@ -75,7 +96,11 @@ framework     ✅  (fwi.dll, fwe.dll, fwk.dll, fwl.dll, fwm.dll) — main/framew
 editeng       ✅  (editeng.dll) — main/editeng/readme.md
 canvas        ✅  (canvastools, canvasfactory, nullcanvas, simplecanvas, vclcanvas, directx9canvas, gdipluscanvas) — main/canvas/readme.md
 basic         ✅  (oovbaapi, svtools, xmlscript, framework, salhelper)
-connectivity  ✅  (dbtools.dll, sdbc2.dll, dbpool2.dll) — main/connectivity/readme.md
+connectivity  ✅  (dbtools.dll, sdbc2.dll, dbpool2.dll + SDBC drivers file/dbase/flat/
+                   calc/jdbc/hsqldb.dll, hsqldb.jar, sdbc_hsqldb.jar) —
+                   main/connectivity/readme.md.  STILL UNMIGRATED: odbc+odbcbase,
+                   ado, mysql, adabas — deliberately UNREGISTERED, not merely absent
+                   (see readme: a registration with no DLL behind it kills the office).
 ── Layer 9 ──────────────────────────────────────────────────────────────
 sfx2          ✅  (basic, xmlscript, framework, shell, sax + libxml2 ext) — main/sfx2/readme.md
 cppcanvas     ✅  (cppcanvas.dll) — main/cppcanvas/readme.md
@@ -168,3 +193,4 @@ default_images ✅  images.zip staged to share/config/ via images_zip Starlark r
                    strip_prefix="main/default_images" → zip entries like "framework/res/backing.png"
 ooo_custom_images ✅  images_industrial.zip staged to share/config/; classic deferred
                    (classic_images.tar.gz needs tar→zip conversion)
+```
