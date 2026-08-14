@@ -1025,6 +1025,33 @@ Source code is NOT being changed — only the build system.
 - cppumaker output dir: prefix -O with "./" so osl's convertToFileUrl uses
   getAbsoluteFileURL (relative-to-workdir) instead of failing on relative paths
 - never manipulate the cache directly, if you have to reset it use: bazel mod deps --lockfile_mode=refresh or ask the user for cleanup.
+- TRIAGE RULE, learned the hard way 2026-08-14: when runtime symptoms are
+  INCOHERENT — a feature works then stops, some tables in one database are
+  editable and others are not, a capability is missing that the driver plainly
+  supports — suspect a STALE / MIXED staging tree BEFORE analysing source.  A
+  whole session went into an embedded-database "bug" (greyed-out field editing,
+  then a hard exit creating a database) that a plain full rebuild made vanish,
+  and afterwards the driver also exposed sdbcx VIEWS, i.e. what was staged had
+  been a partial build all along.  The cheap check is timestamps:
+  `ls -la bazel-<cfg>-bin/main/staging/program/{soffice.exe,services.rdb,*.dll}`
+  — a multi-HOUR spread across services.rdb and the DLLs is the tell (it was
+  02:24 vs 09:11 here).  Bazel does preserve timestamps of unchanged outputs, so
+  a spread is a signal and not proof; treat it as "rebuild before theorising",
+  which costs one build against hours of chasing a phantom.
+- `--config=timelog` turns on AOO's OWN tracing: sal/inc/rtl/logfile.hxx gates
+  every RTL_LOGFILE_CONTEXT/_TRACE behind TIMELOG, so untraced they are all
+  ((void)0), and desktop's Desktop::Main is densely instrumented with exactly
+  those.  rtl_logfile itself is NOT gated (it reads the RTL_LOGFILE bootstrap
+  variable at runtime), so only the call sites need enabling and that is a pure
+  compiler define — no source change.  Run the result with
+  `-env:RTL_LOGFILE=C:/temp/oo`.  Without the config the same env var still
+  yields the few RTL_LOGFILE_PRODUCT_* points, enough to see how far startup
+  got.  The config carries its own --platform_suffix so a traced build does not
+  invalidate the normal output tree.
+- capturing a GUI process's stderr works fine: `soffice.exe … 2> file`.  The
+  handle is inherited whether or not a console is attached, so this needs no
+  debugger — useful because UNO exceptions do not derive from std::exception and
+  their message often reaches only stderr, flushed at process exit.
 - add a migration summary to the module as readme.md
 - let the user build
 - update frontier after build is successful.
