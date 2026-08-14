@@ -1044,10 +1044,19 @@ Source code is NOT being changed — only the build system.
   those.  rtl_logfile itself is NOT gated (it reads the RTL_LOGFILE bootstrap
   variable at runtime), so only the call sites need enabling and that is a pure
   compiler define — no source change.  Run the result with
-  `-env:RTL_LOGFILE=C:/temp/oo`.  Without the config the same env var still
-  yields the few RTL_LOGFILE_PRODUCT_* points, enough to see how far startup
-  got.  The config carries its own --platform_suffix so a traced build does not
-  invalidate the normal output tree.
+  `-env:RTL_LOGFILE=C:/temp/oo`, which writes `C:\temp\oo_<pid>.log` (logfile.cxx
+  appends `_<pid>.log` unless the value ends in `.nopid`).  Without the config the
+  same env var still yields the few RTL_LOGFILE_PRODUCT_* points, enough to see
+  how far startup got.  The config carries its own --platform_suffix so a traced
+  build does not invalidate the normal output tree.
+- CRASH-vs-CLEAN-EXIT TEST, free with any RTL_LOGFILE run and far more reliable
+  than reading a cdb stack: the final line `closing log file at <n>` is written
+  by `LoggerGuard::~LoggerGuard()`, a STATIC DESTRUCTOR.  Static destructors run
+  on normal CRT teardown and are SKIPPED by `_exit()` — which is exactly what
+  desktop's FatalError() calls.  So a log ending in that line exited cleanly; a
+  log that simply stops was killed.  A healthy x64 session reads:
+  `enter Main()` (1 ms) → `enter Application::Execute()` (3.8 s) →
+  `DesktopOpenClients_Impl()` → … → `closing log file`.
 - capturing a GUI process's stderr works fine: `soffice.exe … 2> file`.  The
   handle is inherited whether or not a console is attached, so this needs no
   debugger — useful because UNO exceptions do not derive from std::exception and

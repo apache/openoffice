@@ -53,9 +53,16 @@ build:winXP-x64 --symlink_prefix=bazel-winXP-x64-
 # output tree instead of invalidating the normal one:
 #   bazel build --config=winXP-x64 --config=timelog //main/staging:install
 #   soffice.exe -env:RTL_LOGFILE=C:/temp/oo -env:UserInstallation=...
-# writes C:\temp\oo<pid>.log.  Without --config=timelog the same env var still
-# works but yields only the handful of RTL_LOGFILE_PRODUCT_* points, which is
-# enough to tell how far startup got and nothing more.
+# writes C:\temp\oo_<pid>.log — logfile.cxx appends "_<pid>.log" unless the value
+# ends in ".nopid", in which case it is used verbatim.  Without --config=timelog
+# the same env var still works but yields only the handful of
+# RTL_LOGFILE_PRODUCT_* points, which is enough to tell how far startup got.
+#
+# CRASH-vs-CLEAN-EXIT TEST, free with any of the above: the final line
+# "closing log file at <n>" is written by LoggerGuard::~LoggerGuard(), a STATIC
+# DESTRUCTOR.  Those run on normal CRT teardown and are skipped by _exit(),
+# which is what desktop's FatalError() calls.  So a log ending in that line
+# exited cleanly; a log that just stops was killed.
 build:timelog --copt=/DTIMELOG
 build:timelog --platform_suffix=timelog
 build:timelog --symlink_prefix=bazel-timelog-
