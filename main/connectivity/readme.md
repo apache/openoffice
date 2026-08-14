@@ -48,7 +48,7 @@ above at once:
 4. `sdbc_hsqldb.jar` is what makes the database a *single file*:
    `StorageAccess` / `StorageFileAccess` implement `org.hsqldb.lib.Storage` /
    `FileAccess` over UNO's embedded storage, and their native methods are the
-   28 `Java_*` exports of `hsqldb.dll`.
+   27 `Java_*` exports of `hsqldb.dll`.
 
 Both jars are staged to `program/classes/` — not by convention but because
 `HDriver.cxx` builds the classpath as the literal string
@@ -167,7 +167,7 @@ files as textual fragments (declared via `_parse_generated` cc_library).
 - `SOLAR_JAVA` is load-bearing for `jdbc` and `hsqldb`, not a feature switch:
   `jvmaccess/virtualmachine.hxx` includes the real `<jni.h>` only under it and
   otherwise declares stubs, so without it every `JNIEnv->` call is C2027
-- `hsqldb.dll` carries 28 undecorated `Java_*` exports in its DEF alongside the two
+- `hsqldb.dll` carries 27 undecorated `Java_*` exports in its DEF alongside the two
   `component_*` ones (JNICALL is `__stdcall` on Win32, so without the DEF they would
   be `_Java_…@N` and the JVM could not find them) — same trick as `jurt`'s
   `jpipe.def`.  It does NOT need the RT_MANIFEST id 2 embedded manifest that
@@ -175,4 +175,19 @@ files as textual fragments (declared via `_parse_generated` cc_library).
   activation context, whereas this JVM runs in-process inside `soffice.exe`
 - `hsqldb.dll` takes no DLLPOSTFIX (version.mk sets `HSQLDB_TARGET=hsqldb` bare)
   because the Java side hardcodes `System.loadLibrary("hsqldb")`
+- `source/resource/` builds **three separate resource libraries**, not one, and they
+  are looked up by NAME at runtime so they must not be globbed together:
+  `cnr` (shared driver strings — dbtools compiles with
+  `CONN_SHARED_RESOURCE_FILE=cnr`), `sdbcl` (the connection logger's messages;
+  `JDriver.cxx` constructs `ResourceBasedEventLogger("sdbcl",
+  "org.openoffice.sdbc.jdbcBridge")`, and the first argument IS the bundle name)
+  and `sdberr` (SQL error messages).  A single merged `.res` leaves two of the
+  three unresolvable and can collide IDs across what were meant to be separate
+  bundles.  `sdbcl` is inert while logging is off — the level check returns before
+  any resource lookup — which is why its absence went unnoticed until a driver was
+  actually built; `sdberr` hollows out error text at exactly the wrong moment.
+- upstream's fourth reslib, `hsqldb` (from `hsqlui.src`), is deliberately NOT built:
+  its own comment says the `.res` is never installed and it exists only to force two
+  images into `images.zip`, which was a dmake necessity.  `//main/default_images:images`
+  globs `database/**/*.png` directly, so it would be a dead target here
 - Drivers still unmigrated: ado, odbc/odbcbase, mysql, adabas (see above)

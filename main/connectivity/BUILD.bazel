@@ -21,10 +21,11 @@ _COPTS = [
     "/Zc:wchar_t-",
 ]
 
-# Shared by the four rsc_res targets below.  source/resource/makefile.mk builds
-# THREE separate resource libraries (cnr, sdbcl, sdberr) and the hsqldb driver
-# a fourth (hsqldb) -- they are separate bundles looked up by NAME at runtime,
-# so they must not be globbed into one .res.
+# Shared by the three rsc_res targets below.  source/resource/makefile.mk builds
+# THREE separate resource libraries (cnr, sdbcl, sdberr) -- separate bundles,
+# looked up by NAME at runtime, so they must not be globbed into one .res.
+# (Upstream has a fourth, hsqldb, which is deliberately not built here; see the
+# note where it would otherwise go.)
 _RES_INCLUDES = [
     "main/connectivity/source/resource",
     "main/connectivity/source/drivers/hsqldb",

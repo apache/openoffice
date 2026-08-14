@@ -688,7 +688,7 @@ dbaccess hardcodes sdbc:embedded:hsqldb (dsntypes.cxx) -> hsqldb.dll -> which
 does NOT do the SQL but asks the driver manager for "jdbc:hsqldb:db" ->
 jdbc.dll -> the hsqldb.jar engine; sdbc_hsqldb.jar is what makes it a SINGLE
 FILE (StorageAccess/StorageFileAccess implement org.hsqldb.lib.Storage/
-FileAccess over UNO embedded storage, their native methods being the 28 Java_*
+FileAccess over UNO embedded storage, their native methods being the 27 Java_*
 exports of hsqldb.dll).  Both jars MUST land in program/classes/ — not a
 convention, HDriver.cxx hardcodes
 vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/<name>.jar.
@@ -755,6 +755,23 @@ STILL UNMIGRATED, with what each needs (none is blocked, all are just work):
  • adabas — 22 srcs + odbcbase, and needs an installed Adabas D server+client.
    Discontinued commercial product; nothing can exercise it.  Recommend leaving
    it unregistered permanently rather than migrating.
+RESOURCE-LIBRARY SPLIT, fixed 2026-08-14 — GENERAL rsc_res LESSON: one module's
+source/**/*.src is NOT necessarily one .res.  connectivity/source/resource builds
+THREE (cnr, sdbcl, sdberr) and the old glob merged them into cnren-US.res alone,
+so two bundles simply did not exist and IDs could collide across what were meant
+to be separate namespaces.  They are looked up BY NAME at runtime: dbtools is
+compiled with CONN_SHARED_RESOURCE_FILE=cnr, and JDriver.cxx constructs
+comphelper::ResourceBasedEventLogger("sdbcl", "org.openoffice.sdbc.jdbcBridge")
+where the FIRST argument is the bundle name, so the logger resolves sdbcl<lang>.res.
+Latent until now because no driver was built; and sdbcl is inert while logging is
+off (the level check returns before any resource lookup), while sdberr is the SQL
+ERROR MESSAGES — missing, it empties the text at exactly the moment something
+fails, which is part of why driver problems here are so quiet.  CHECK ANY OTHER
+MODULE WHOSE rsc_res GLOBS `source/**/*.src` against its makefile's RESLIB<N>NAME
+count.  Upstream's fourth reslib here (hsqldb, from hsqlui.src) is deliberately
+NOT built: its own comment says the .res is never installed and it exists only to
+force two images into images.zip, a dmake necessity that
+//main/default_images:images already covers by globbing `database/**/*.png`.
 See main/connectivity/readme.md.
 NOTE: rules_java 8.11.0 IS now wired (MODULE.bazel) and the core Java UNO
 runtime is migrated & green — ridljar/jurt/jvmaccess/javaunohelper/jvmfwk/
