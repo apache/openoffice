@@ -603,9 +603,51 @@ void DBContentLoader::cancel(void) throw()
 {
 }
 // -----------------------------------------------------------------------------
+namespace
+{
+    /** tell the user that the table wizard could not be started
+
+        Both ways this can fail used to be completely silent, which is issue
+        80338 (comment 21): the wizard dialog simply never appeared, with no
+        error message of any kind.
+
+        1. The service is not registered at all.  createComponentWithArguments()
+           returns false in that case rather than throwing, and the caller had no
+           else branch, so nothing happened and nothing was said.
+        2. Creation threw -- e.g. the Java component is registered but the
+           java_uno bridge cannot be loaded, which is the case in the original
+           report.  That was discarded by a debug-only OSL_ENSURE, so a product
+           build again showed nothing.
+
+        The text shown is the underlying error's own message, so this needs no
+        new localizable string.  Reporting an error must never itself throw and
+        replace the error being reported, hence the catch-all.
+    */
+    void lcl_reportWizardStartFailure( const ::rtl::OUString& _rMessage )
+    {
+        try
+        {
+            ::rtl::OUString sMessage( _rMessage );
+            if ( !sMessage.getLength() )
+                sMessage = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
+                    "The table wizard could not be started." ) );
+
+            // the solar mutex is not necessarily held here: when creation threw,
+            // the guard in the caller's try block has already been unwound
+            ::vos::OGuard aGuard( Application::GetSolarMutex() );
+            ErrorBox( NULL, WB_OK, sMessage ).Execute();
+        }
+        catch( const Exception& )
+        {
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
 IMPL_LINK( DBContentLoader, OnStartTableWizard, void*, /*NOTINTERESTEDIN*/ )
 {
 	m_nStartWizard = 0;
+    ::rtl::OUString sWizardError;
 	try
 	{
         Sequence< Any > aWizArgs(1);
@@ -618,12 +660,32 @@ IMPL_LINK( DBContentLoader, OnStartTableWizard, void*, /*NOTINTERESTEDIN*/ )
         Reference< XJobExecutor > xTableWizard;
         if ( m_aContext.createComponentWithArguments( "com.sun.star.wizards.table.CallTableWizard", aWizArgs, xTableWizard ) )
 			xTableWizard->trigger(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("start")));
+        else
+            sWizardError = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
+                "The table wizard is not available: the service "
+                "com.sun.star.wizards.table.CallTableWizard could not be created." ) );
 	}
-	catch(const Exception&)
+	catch(const Exception& e)
 	{
 		OSL_ENSURE(sal_False, "caught an exception while starting the table wizard!");
+        sWizardError = e.Message;
+        if ( !sWizardError.getLength() )
+            sWizardError = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
+                "The table wizard could not be started." ) );
 	}
+
+    // Nothing may touch this object once an error is reported: a message box
+    // pumps a nested event loop, during which the document and frame creation
+    // this handler was posted from can still run and drop the last reference.
+    // So settle all member state first -- the local keep-alive is what makes it
+    // safe to release the self-reference here rather than at the end -- and only
+    // then report.
+    Reference< XFrameLoader > xKeepAlive( m_xMySelf );
 	m_xMySelf = NULL;
+
+    if ( sWizardError.getLength() )
+        lcl_reportWizardStartFailure( sWizardError );
+
 	return 0L;
 }
 }
