@@ -83,3 +83,7 @@ repos:
         args: [--config=.github/linters/.markdown-lint.yml]
         types: [markdown]
         files: \.md$
+        # Generated artifact, not authored prose: the raw AI ASVS scan output.
+        # Reformatting it only diverges it from what the scanner emits, and it
+        # is the source of truth the triage is written against.
+        exclude: ^security-internal/security-bug-report\.md$

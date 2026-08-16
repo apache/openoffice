@@ -11,3 +11,15 @@ MD033: false
 
 # MD040/fenced-code-language Fenced code blocks should have a language specified
 MD040: false
+
+# MD010/no-hard-tabs Hard tabs
+# Still enforced in prose, but NOT inside fenced blocks: this tree's C++ is
+# tab-indented, so a doc quoting source verbatim must keep the tabs it quotes.
+# Rewriting them would falsify the excerpt.
+MD010:
+  code_blocks: false
+
+# MD014/commands-show-output Dollar signs used before commands without showing output
+# The docs use "$ cmd  → result" transcripts as evidence that a command was
+# actually run; dropping the $ loses that distinction.
+MD014: false
