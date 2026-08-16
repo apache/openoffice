@@ -431,10 +431,16 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    while the loop at jni_data.cxx:1115 writes nElements elements into it
                    (nPos*nSize overflowing too, so some writes land BEFORE the buffer):
                    a heap overflow reachable from any in-process Java UNO caller.
-                   THE FIX EXISTS ON ANOTHER BRANCH — 7efd38098e "jni_uno: added guard
-                   sequence allocation size against integer overflow" (security-triage,
-                   security-ASVS-Scan, ww8-fixes): size in sal_uInt64, negatives
-                   rejected, > SAL_MAX_SIZE ⇒ "sequence size out of range".  799ee9fa5e
+                   THE FIX EXISTS ON ANOTHER BRANCH — find it by SUBJECT, not hash:
+                   "jni_uno: added guard sequence allocation size against integer
+                   overflow", on security-triage and ww8-fixes.  (Cited as 7efd38098e
+                   until 2026-08-16; rebasing rewrites that hash on every branch it
+                   sits on, so the subject is the only stable handle — it is currently
+                   1b2ff27d90 on security-triage and d150d3a4a6 on ww8-fixes, same
+                   patch-id.  security-ASVS-Scan also carried it and was deleted as
+                   strictly superseded by security-triage.)  The fix widens the size to
+                   sal_uInt64, rejects negatives, and returns "sequence size out of
+                   range" above SAL_MAX_SIZE.  799ee9fa5e
                    brought the TEST here when it unified the two bridge test sets and
                    deliberately left the security-branch SOURCE edits behind; its own
                    note says "both test targets ANALYSE clean", i.e. analysis, not
