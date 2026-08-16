@@ -24,9 +24,11 @@ load("@product_info//:defs.bzl", "PRODUCT_NAME", "PRODUCT_FULLNAME", "PRODUCT_VE
 
 # ── Component files — Windows build ──────────────────────────────────────────
 # Mirrors packcomponents/makefile.mk my_components for OS=WNT.
-# Java-only components (ScriptFramework, hsqldb, jdbc, postgresql, wizards,
-# XMergeBridge, LuceneHelpWrapper, XSLTValidate) are omitted — Java build
-# is deferred.  ENABLE_ONLINE_UPDATE components (updchk.uno) are included.
+# The remaining Java-only components (ScriptFramework, postgresql,
+# XMergeBridge, LuceneHelpWrapper, XSLTValidate) are omitted — those modules
+# are not migrated yet.  hsqldb/jdbc landed with the embedded database, and the
+# eight wizards components with //main/wizards.
+# ENABLE_ONLINE_UPDATE components (updchk.uno) are included.
 
 # Map each .component file to its full URI string (injected via createcomponent.xslt).
 # Native DLLs:  basis_native("foo.dll")
@@ -554,6 +556,31 @@ _SERVICES_COMPONENTS = {
         basis_native("xsec_fw.dll"),
     "//main/xmlsecurity:util/xsec_xmlsec.windows.component":
         basis_native("xsec_xmlsec.dll"),
+
+    # ── wizards (Java) ────────────────────────────────────────────────────
+    # The File > Wizards menu.  officecfg's Common.xcu has dispatched
+    # "service:com.sun.star.wizards.<x>.CallWizard?start" since the demo
+    # baseline; these eight registrations are what those URLs finally resolve
+    # to.  Each jar carries the implementation named in its .component as its
+    # manifest RegistrationClassName — javaloader has no other way to find it.
+    # reportbuilderwizard.jar is deliberately NOT here: it is loaded
+    # reflectively by report.jar, not registered as a service.
+    "//main/wizards:com/sun/star/wizards/agenda/agenda.component":
+        basis_java("agenda.jar"),
+    "//main/wizards:com/sun/star/wizards/fax/fax.component":
+        basis_java("fax.jar"),
+    "//main/wizards:com/sun/star/wizards/form/form.component":
+        basis_java("form.jar"),
+    "//main/wizards:com/sun/star/wizards/letter/letter.component":
+        basis_java("letter.jar"),
+    "//main/wizards:com/sun/star/wizards/query/query.component":
+        basis_java("query.jar"),
+    "//main/wizards:com/sun/star/wizards/report/report.component":
+        basis_java("report.jar"),
+    "//main/wizards:com/sun/star/wizards/table/table.component":
+        basis_java("table.jar"),
+    "//main/wizards:com/sun/star/wizards/web/web.component":
+        basis_java("web.jar"),
 
     # ── accessibility (Java UNO bridge, deferred) ─────────────────────────
     "//main/accessibility:java/java_uno_accessbridge/java_uno_accessbridge.component":

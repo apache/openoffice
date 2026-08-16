@@ -169,6 +169,12 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+filegroup(
+    name = "wizards_res_images",
+    srcs = glob(["wizards/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
 # ── images.zip ────────────────────────────────────────────────────────────────
 # Toolbar and UI icons loaded at runtime from share/config/images.zip.
 # In the dmake build this is assembled by packimages.pl using .ilst files
@@ -215,6 +221,19 @@ _images_srcs = glob(
         "sw/res/**/*.png",
         "sw/res/**/*.bmp",
         "sw/imglst/**/*.png",
+        # wizards/imagelists.src is pure Image resources — the report/form/web
+        # wizards' orientation and layout thumbnails, reached as
+        # "private:resource/wzi/image/<id>".  Present for the same reason as
+        # every other module's res dir, but NOTE it does not make those
+        # thumbnails resolve today: imagelists.src writes the one-line form
+        # `ImageBitmap = Bitmap { File = "x.png"; };`, and rsc2 only rewrites a
+        # File= line into a path-qualified one when the line holds a SINGLE '='
+        # (rsc.cxx PreprocessSrsFile), so the .res keeps the bare basename
+        # while the zip is keyed "wizards/res/x.png".  That mismatch is
+        # tree-wide (1033 such references in 19 modules) and upstream's own —
+        # its images.zip is built from .ilst files that this path never feeds.
+        # See main/wizards/readme.md.
+        "wizards/res/**/*.png",
         "xmlsecurity/res/**/*.png",
     ],
     allow_empty = True,

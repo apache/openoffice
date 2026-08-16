@@ -340,5 +340,29 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── ScriptBindingLibrary → share/basic/ScriptBindingLibrary/ ────────────────
+# The tenth entry in the shared BASIC container index that //main/wizards ships
+# as share/basic/script.xlc — it lives here because scp2 builds it here
+# (examples/makefile.mk ZIP5, from workben/bindings).  Upstream ships it as
+# scriptbindinglib.zip, extracted on install; Bazel stages the tree directly.
+#
+# The three files are exactly ZIP5LIST ("*.xlb Highlight.xdl"), which is
+# narrower than the directory: ScriptBinding.xba and the other six .xdl dialogs
+# are workbench sources, not shipped.  script.xlb agrees — it declares no
+# modules at all.  dialog.xlb does NOT: it declares both Highlight and
+# MacroEditor while upstream ships only Highlight.xdl, so expanding this
+# library in the BASIC IDE looks for a dialog that was never installed.  That
+# is upstream's, reproduced rather than quietly repaired — adding the file
+# would change what ships.
+filegroup(
+    name = "basic_scriptbinding",
+    srcs = [
+        "workben/bindings/Highlight.xdl",
+        "workben/bindings/dialog.xlb",
+        "workben/bindings/script.xlb",
+    ],
+    visibility = ["//visibility:public"],
+)
+
 exports_files(glob(["**/*.component"]))
 

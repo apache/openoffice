@@ -532,6 +532,19 @@ res_stage(
         "//main/svx:textconversiondlgs_res":           "textconversiondlgsen-US",
         "//main/uui:uui_res":                          "uuien-US",
         "//main/vcl:vcl_res":                          "vclen-US",
+        # wizards — seven bundles, and the bundle NAME is the lookup key, not a
+        # filename convention: BASIC asks by prefix (Tools/Misc.xba
+        # InitResources("Euro Converter","eur")) and Java by module argument
+        # (new Resource(xMSF,"Database","dbw")).  dbw serves ALL the Java
+        # wizards, not just the database ones; wzi holds Images rather than
+        # strings, reached as "private:resource/wzi/image/<id>".
+        "//main/wizards:cal_res":                      "calen-US",
+        "//main/wizards:dbw_res":                      "dbwen-US",
+        "//main/wizards:eur_res":                      "euren-US",
+        "//main/wizards:imp_res":                      "impen-US",
+        "//main/wizards:tpl_res":                      "tplen-US",
+        "//main/wizards:wwz_res":                      "wwzen-US",
+        "//main/wizards:wzi_res":                      "wzien-US",
         "//main/xmlsecurity:xmlsecurity_res":          "xmlsecen-US",
         "//main/filter:xsltdialog_res":                "xsltdlgen-US",
     },
@@ -639,6 +652,98 @@ tree_install(
     dst          = "presets/basic/Standard",
 )
 
+# ── share/basic/ — the shipped BASIC libraries ───────────────────────────────
+# The Depot/Euro/Gimmicks/… sample and wizard macro libraries, plus the two
+# container index files that make them visible (Tools > Macros, and the
+# Euro Converter / Address Data Source entries that call into them).
+#
+# Upstream ships each as a .zip that the MSI unpacks into share/basic/<Name>/;
+# there is no MSI here, so the directory IS the deliverable and the zip step
+# has nothing to port.  The <Name> is scp2's DosName, not the source directory
+# name — script.xlc's hrefs spell it out ($(INST)/share/basic/FormWizard/…),
+# so formwizard→FormWizard and importwizard→ImportWizard are corrections, not
+# cosmetics: get the case wrong on a case-sensitive volume and the library
+# silently fails to load.
+tree_install(
+    name = "_install_basic_index",
+    src          = "//main/wizards:basic_share_config",
+    strip_prefix = "main/wizards/source/configshare",
+    dst          = "share/basic",
+)
+
+tree_install(
+    name = "_install_basic_depot",
+    src          = "//main/wizards:basic_depot",
+    strip_prefix = "main/wizards/source/depot",
+    dst          = "share/basic/Depot",
+)
+
+tree_install(
+    name = "_install_basic_euro",
+    src          = "//main/wizards:basic_euro",
+    strip_prefix = "main/wizards/source/euro",
+    dst          = "share/basic/Euro",
+)
+
+tree_install(
+    name = "_install_basic_formwizard",
+    src          = "//main/wizards:basic_formwizard",
+    strip_prefix = "main/wizards/source/formwizard",
+    dst          = "share/basic/FormWizard",
+)
+
+tree_install(
+    name = "_install_basic_gimmicks",
+    src          = "//main/wizards:basic_gimmicks",
+    strip_prefix = "main/wizards/source/gimmicks",
+    dst          = "share/basic/Gimmicks",
+)
+
+tree_install(
+    name = "_install_basic_importwizard",
+    src          = "//main/wizards:basic_importwizard",
+    strip_prefix = "main/wizards/source/importwizard",
+    dst          = "share/basic/ImportWizard",
+)
+
+tree_install(
+    name = "_install_basic_schedule",
+    src          = "//main/wizards:basic_schedule",
+    strip_prefix = "main/wizards/source/schedule",
+    dst          = "share/basic/Schedule",
+)
+
+tree_install(
+    name = "_install_basic_template",
+    src          = "//main/wizards:basic_template",
+    strip_prefix = "main/wizards/source/template",
+    dst          = "share/basic/Template",
+)
+
+tree_install(
+    name = "_install_basic_tools",
+    src          = "//main/wizards:basic_tools",
+    strip_prefix = "main/wizards/source/tools",
+    dst          = "share/basic/Tools",
+)
+
+tree_install(
+    name = "_install_basic_tutorials",
+    src          = "//main/wizards:basic_tutorials",
+    strip_prefix = "main/wizards/source/tutorials",
+    dst          = "share/basic/Tutorials",
+)
+
+# The tenth library the index names, ScriptBindingLibrary, is //main/scripting's
+# (scp2 builds it from scripting/workben/bindings) — staged here so the index
+# has no dangling entry.
+tree_install(
+    name = "_install_basic_scriptbinding",
+    src          = "//main/scripting:basic_scriptbinding",
+    strip_prefix = "main/scripting/workben/bindings",
+    dst          = "share/basic/ScriptBindingLibrary",
+)
+
 # ── images.zip — toolbar and UI icons ─────────────────────────────────────────
 # share/config/images.zip    — default icon set (all modules)
 # share/config/images_industrial.zip — industrial/tango theme overrides
@@ -689,6 +794,23 @@ filegroup(
         # so program/classes is not a convention here, it is the lookup path.
         "//main/connectivity:hsqldb_jar",
         "//main/connectivity:sdbc_hsqldb_jar",
+        # The wizards.  program/classes is the lookup path here too, twice
+        # over: services.rdb registers each component at
+        # vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/<x>.jar, and each
+        # component jar's manifest then carries "Class-Path: commonwizards.jar"
+        # — a RELATIVE entry, resolved by URLClassLoader against the jar's own
+        # URL, so commonwizards.jar has to be this same directory.
+        # reportbuilderwizard.jar is absent on purpose: it ships inside the
+        # reportbuilder .oxt, not in the install (see //main/wizards).
+        "//main/wizards:commonwizards_jar",
+        "//main/wizards:agenda_jar",
+        "//main/wizards:fax_jar",
+        "//main/wizards:form_jar",
+        "//main/wizards:letter_jar",
+        "//main/wizards:query_jar",
+        "//main/wizards:report_jar",
+        "//main/wizards:table_jar",
+        "//main/wizards:web_jar",
     ],
 )
 
@@ -747,6 +869,17 @@ filegroup(
         ":_install_presets_config",
         ":_install_presets_basic",
         ":_install_presets_basic_standard",
+        ":_install_basic_index",
+        ":_install_basic_depot",
+        ":_install_basic_euro",
+        ":_install_basic_formwizard",
+        ":_install_basic_gimmicks",
+        ":_install_basic_importwizard",
+        ":_install_basic_schedule",
+        ":_install_basic_template",
+        ":_install_basic_tools",
+        ":_install_basic_tutorials",
+        ":_install_basic_scriptbinding",
         ":_install_images_zip",
         ":_install_images_industrial_zip",
         ":_install_uiconfig",

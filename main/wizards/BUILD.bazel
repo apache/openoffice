@@ -1,28 +1,213 @@
-# wizards — mostly a deferred (Java) module.  The only piece needed for the
-# en-US runtime is the initial USER BASIC library template: the Standard-only
-# script.xlc / dialog.xlc that scp2 ships as basicusr.zip into user/basic/.
-# Without it, a fresh profile has no user/basic/script.xlc and the application
-# BASIC library container raises ERRCODE_IO_GENERAL on startup ("Error loading
-# BASIC of document .../user/basic/script.xlc/").  See repo bug-readme.md.
+# wizards — the Wizards feature, in three unrelated halves.
 #
-# source/config/      → user/basic/ template  (Standard, link=false)
-# source/configshare/ → share/basic/ index    (lists the deferred wizard libs;
-#                       NOT staged — those .xlb libraries aren't built, and the
-#                       share read fails silently anyway.)
+#  1. Java UNO components (Module_wizards.mk's ten Jar_* targets).  These ARE
+#     the File > Wizards menu: officecfg's Common.xcu has pointed
+#     "service:com.sun.star.wizards.letter.CallWizard?start" at nothing since
+#     the demo baseline, because the services were never built.  Registered in
+#     program/services.rdb via //main/postprocess.
+#
+#  2. BASIC libraries (the fifteen Zip_* targets) — .xba modules and .xdl
+#     dialogs shipped as share/basic/<Name>/, plus the two container index
+#     files that make them visible to the BASIC IDE, plus the seed of the
+#     user profile's own (empty) BASIC library.
+#
+#  3. Resource bundles (the seven AllLangResTarget_* targets) — the strings
+#     BOTH halves display.  The Java side reaches them through
+#     common/Resource.java (VclStringResourceLoader, bundle name = "dbw"), the
+#     BASIC side through Tools/Misc.xba::InitResources(desc, prefix).  wzi is
+#     not strings but images: ui/UnoDialog.java builds
+#     "private:resource/wzi/image/<id>" URLs.
+#
+# See readme.md for the migration notes and the deliberate divergences.
 
+package(default_visibility = ["//visibility:public"])
+
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
+load("@rules_java//java:defs.bzl", "java_library")
+load(":wizards.bzl", "JAVACOPTS", "UNO_DEPS", "basic_library", "wizard_jar")
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 1. Java UNO components
+# ═══════════════════════════════════════════════════════════════════════════
+
+# commonwizards.jar — the shared half every wizard links against: the UNO
+# dialog framework (ui/), database metadata (db/), document manipulation
+# (document/, text/) and the helpers in common/.
+#
+# The five packages below are exactly Jar_commonwizards.mk's 87 source files;
+# the glob was checked against that list file for file, not just by count.
+java_library(
+    name = "commonwizards",
+    srcs = glob([
+        "com/sun/star/wizards/common/*.java",
+        "com/sun/star/wizards/db/*.java",
+        "com/sun/star/wizards/document/*.java",
+        "com/sun/star/wizards/text/*.java",
+        "com/sun/star/wizards/ui/*.java",
+        "com/sun/star/wizards/ui/event/*.java",
+    ]),
+    javacopts = JAVACOPTS,
+    deps = UNO_DEPS,
+)
+
+# Class-Path: saxon9.jar is upstream's, kept verbatim.  saxon is still ⬜ in
+# the frontier, and a Class-Path entry naming a jar that is not there is
+# silently ignored by URLClassLoader — so this costs nothing now and needs no
+# second edit when saxon lands.
+uno_jar(
+    name = "commonwizards_jar",
+    out = "commonwizards.jar",
+    jars = [":commonwizards"],
+    manifest_lines = ["Class-Path: saxon9.jar"],
+)
+
+# The eight registered components.  Implementation names are read off each
+# package's own .component file, which is what postprocess registers — the two
+# must agree or the service resolves to a class that is not there.
+wizard_jar(
+    name = "agenda",
+    registration_class = "com.sun.star.wizards.agenda.CallWizard",
+)
+
+wizard_jar(
+    name = "fax",
+    registration_class = "com.sun.star.wizards.fax.CallWizard",
+)
+
+wizard_jar(
+    name = "form",
+    registration_class = "com.sun.star.wizards.form.CallFormWizard",
+)
+
+wizard_jar(
+    name = "letter",
+    registration_class = "com.sun.star.wizards.letter.CallWizard",
+)
+
+wizard_jar(
+    name = "query",
+    registration_class = "com.sun.star.wizards.query.CallQueryWizard",
+)
+
+wizard_jar(
+    name = "report",
+    registration_class = "com.sun.star.wizards.report.CallReportWizard",
+)
+
+wizard_jar(
+    name = "table",
+    registration_class = "com.sun.star.wizards.table.CallTableWizard",
+)
+
+wizard_jar(
+    name = "web",
+    registration_class = "com.sun.star.wizards.web.CallWizard",
+)
+
+# reportbuilderwizard.jar — the Report Builder's layout back end, and the one
+# jar here that is NOT a UNO component: report.jar's ReportWizard instantiates
+# it reflectively (Class.forName on the IReportBuilderLayouter implementations),
+# so it has no .component, no RegistrationClassName, and nothing in
+# services.rdb.  That reflective edge is also why report.jar does not
+# compile-depend on it — no cycle, despite the dependency reading both ways.
+#
+# It is packaged INTO the reportbuilder .oxt, which is still ⬜ (JFreeReport is
+# not on Maven), so it is built here but not staged.  Building it now is what
+# keeps it from rotting until that bucket lands.
+wizard_jar(
+    name = "reportbuilder",
+    out = "reportbuilderwizard.jar",
+    registration_class = None,
+    class_path = [
+        "report.jar",
+        "commonwizards.jar",
+    ],
+    deps = [":report_classes"],
+)
+
+# The postprocess services.rdb pipeline reads these directly.
+exports_files(glob(["com/sun/star/wizards/**/*.component"]))
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 2. BASIC libraries
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# Each Zip_*.mk target is a directory of .xba (BASIC modules), .xdl (dialogs)
+# and the two .xlb library indices, zipped and then extracted by the installer
+# into share/basic/<Name>/.  Bazel stages the directory directly — there is no
+# zip step to port, because there is no installer to unpack it.
+#
+# The per-directory globs below are exact: every one matches its Zip_*.mk file
+# list one for one.  Restricting to the three extensions is what keeps the
+# co-located .src files (euro.src, dbwizres.src, …) out — those are inputs to
+# the resource bundles in section 3, not BASIC sources.
+
+# Installed into share/basic/<Name>/ — the nine directories scp2's
+# gid_Dir_Basic_* entries create, minus ScriptBindingLibrary which belongs to
+# //main/scripting.
+basic_library("depot")
+
+basic_library("euro")
+
+basic_library("formwizard")
+
+basic_library("gimmicks")
+
+basic_library("importwizard")
+
+basic_library("schedule")
+
+basic_library("template")
+
+basic_library("tools")
+
+basic_library("tutorials")
+
+# Built by Module_wizards.mk but installed by NOTHING: file_ooo.scp has no File
+# entry for basicsrvweb.zip or basicsrvlauncher.zip, and neither library
+# appears in configshare's script.xlc.  (WebWizard even has a scp2 directory,
+# gid_Dir_Basic_Webwiz, with no file to put in it.)  Kept as targets so
+# `bazel build //main/wizards/...` covers what dmake covers; deliberately
+# absent from //main/staging.  The WebWizard FEATURE is not lost with them —
+# it is the Java web.jar above, a different implementation entirely.
+basic_library("webwizard")
+
+basic_library("launcher")
+
+# share/basic/{script,dialog}.xlc — the container index the BASIC IDE reads to
+# discover the nine shared libraries above.  Its entries are library:link=true
+# hrefs; a link whose target is missing is not resolved until something expands
+# that library, so a short install degrades rather than failing at startup.
+filegroup(
+    name = "basic_share_config",
+    srcs = [
+        "source/configshare/dialog.xlc",
+        "source/configshare/script.xlc",
+    ],
+)
+
+# ── User profile seed ────────────────────────────────────────────────────────
+# Pre-existing targets (they predate the rest of this module, as the only piece
+# the en-US demo runtime needed), unchanged.
+#
+# The initial USER BASIC library template: the Standard-only script.xlc /
+# dialog.xlc that scp2 ships as basicusr.zip into user/basic/.  Without it, a
+# fresh profile has no user/basic/script.xlc and the application BASIC library
+# container raises ERRCODE_IO_GENERAL on startup ("Error loading BASIC of
+# document .../user/basic/script.xlc/").
 filegroup(
     name = "basic_user_config",
     srcs = [
         "source/config/dialog.xlc",
         "source/config/script.xlc",
     ],
-    visibility = ["//visibility:public"],
 )
 
-# The empty "Standard" user library (scp2 basicsrvstandard.zip → user/basic/Standard/).
-# The container index (basic_user_config) lists "Standard"; loading it needs these
-# library index files, or the BasicManager raises ERRCODE_IO_GENERAL on
-# user/basic/Standard/dialog.xlb at startup.
+# The empty "Standard" user library (scp2 basicsrvstandard.zip →
+# user/basic/Standard/).  The container index (basic_user_config) lists
+# "Standard"; loading it needs these library index files, or the BasicManager
+# raises ERRCODE_IO_GENERAL on user/basic/Standard/dialog.xlb at startup.
 filegroup(
     name = "basic_user_standard",
     srcs = [
@@ -30,5 +215,72 @@ filegroup(
         "source/standard/dialog.xlb",
         "source/standard/script.xlb",
     ],
-    visibility = ["//visibility:public"],
+)
+
+# ═══════════════════════════════════════════════════════════════════════════
+# 3. Resource bundles
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# Seven bundles, one per AllLangResTarget_*.mk.  The bundle NAME is the lookup
+# key at runtime, not a filename convention — it is the second argument to
+# InitResources() in BASIC and the third to `new Resource()` in Java — so each
+# gets its own rsc_res and its own program/resource/<name>en-US.res.  None of
+# these .src files #includes anything, so there are no hdrs and no includes.
+
+rsc_res(
+    name = "cal_res",
+    srcs = ["source/schedule/schedule.src"],
+)
+
+# dbw is the big one: 3,474 lines covering every Java wizard, not just the
+# database ones the name suggests (agenda/fax/letter/web all resolve
+# "dbw" — see e.g. AgendaWizardDialogResources.MODULE_NAME).
+rsc_res(
+    name = "dbw_res",
+    srcs = ["source/formwizard/dbwizres.src"],
+)
+
+rsc_res(
+    name = "eur_res",
+    srcs = ["source/euro/euro.src"],
+)
+
+rsc_res(
+    name = "imp_res",
+    srcs = ["source/importwizard/importwi.src"],
+)
+
+rsc_res(
+    name = "tpl_res",
+    srcs = ["source/template/template.src"],
+)
+
+rsc_res(
+    name = "wwz_res",
+    srcs = ["source/webwizard/webwizar.src"],
+)
+
+# wzi carries Image resources, not strings — the report/form/web wizards'
+# orientation and layout thumbnails.
+#
+# images_root is the standard "main/default_images" every other module uses, so
+# rsc2 finds the files and the staging layout matches images.zip's keys.  Be
+# aware it does NOT make these thumbnails load, and the usual images_root rule
+# is not the reason: imagelists.src writes every reference as the ONE-LINE form
+#
+#     ImageBitmap = Bitmap { File = "portrait_32.png"; };
+#
+# and rsc2 only rewrites a File= line into a path-qualified one when that line
+# holds a single '=' (rsc.cxx PreprocessSrsFile).  Two '=' on the line, so the
+# rewrite is skipped, the .res keeps the bare basename, and
+# ImplImageTree::loadImage's exact hasByName() lookup misses the
+# "wizards/res/portrait_32.png" zip key.  Verified end to end, and NOT specific
+# to this module — 1033 references in 19 modules take the same shape, and
+# upstream ships the same mismatch.  Fixing it is a product change, not a
+# migration one; see readme.md.
+rsc_res(
+    name = "wzi_res",
+    srcs = ["source/imagelists/imagelists.src"],
+    images = ["//main/default_images:wizards_res_images"],
+    images_root = "main/default_images",
 )
