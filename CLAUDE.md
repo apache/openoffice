@@ -790,7 +790,48 @@ saxon         ⬜  (XSLT 2.0 processor — IN SCOPE for full migration.  Feeds t
                    source-9.0.0.7-bj (ant/build.xml) → http_archive + java build or
                    vendored jar.  When built, compile against the toolchain JDK's
                    javax.xml.stream — no bundled stax jar.  See Dropped: stax below.)
-wizards       ⬜  (Java-based document wizards)
+wizards       ✅  DONE 2026-08-16 — File > Wizards is LIVE (officecfg had
+                   dispatched service:com.sun.star.wizards.letter.CallWizard?start
+                   at nothing since the demo baseline).  Three unrelated halves:
+                   10 Java uno_jars (wizard_jar macro in main/wizards/wizards.bzl)
+                   → program/classes, 9 BASIC libraries staged as DIRECTORIES to
+                   share/basic/<DosName>/ (no zip step to port — upstream's .zip
+                   only exists for the MSI to unpack), 7 rsc_res bundles.  First
+                   module that is all Java/data, no C++.
+                   LANDMINE — UNO-Type-Path must be PRESENT and EMPTY, and absent
+                   is NOT the same: UnoClassLoader.getClassLoader() substitutes
+                   "<>" for a missing header, which resolves to the jar's own URL
+                   and gets addURL()ed into the SHARED UnoClassLoader, permanently
+                   hoisting a component jar into the global UNO type path.  Needs
+                   a trailing space in Starlark ("UNO-Type-Path: ") — singlejar
+                   splits on ": ".  Emitted manifests verified byte-equivalent to
+                   upstream's checked-in MANIFEST.MF.
+                   The bundle NAME is the runtime lookup key (2nd arg of BASIC
+                   InitResources(), 3rd of Java new Resource()), so the seven
+                   cannot merge; dbw serves ALL the Java wizards, not just the
+                   database ones.  A "com" bundle is referenced by Tools/Misc.xba
+                   and exists NOWHERE in the tree, upstream included — dead
+                   branch, not a migration gap.
+                   NOT STAGED, on purpose: reportbuilderwizard.jar (ships inside
+                   the deferred reportbuilder .oxt), basicsrvweb + basicsrvlauncher
+                   (file_ooo.scp has no File entry for either and script.xlc does
+                   not list them — upstream builds and then discards them).
+                   DEFECT FOUND, LEFT UNFIXED — the wizard thumbnails are blank,
+                   and it is NOT the usual images_root mistake.  rsc2 rewrites a
+                   File= line into a path-qualified one ONLY when that line holds
+                   a SINGLE '=' (rsc.cxx PreprocessSrsFile, GetTokenCount('=')==2).
+                   The one-line form `ImageBitmap = Bitmap { File = "x.png"; };`
+                   has two, so the rewrite is skipped, the .res keeps the BARE
+                   basename and nothing reaches the .ilst; ImplImageTree::loadImage
+                   then does an EXACT hasByName() against an images.zip keyed by
+                   path with ZERO top-level entries.  TREE-WIDE and upstream's own:
+                   1033 such references in 19 modules (svx 307, sfx2 113, sd 105,
+                   cui 91, sw 87, sc 85 …), wizards contributing 30.  Modules that
+                   put `File =` on its own line (vcl, framework) are unaffected —
+                   which is why the Start Center images.zip fix worked.  Repair =
+                   1033 source edits or re-keying images.zip for every module, i.e.
+                   a product change; deliberately not slipped into a module port.
+                   See main/wizards/readme.md.
 xmerge        ⬜  (document format converter, Java)
 javainstaller2 ⬜ (Java installer UI)
 swext         ⬜  (Writer Java extensions e.g. mediawiki)
