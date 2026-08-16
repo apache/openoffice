@@ -20,7 +20,8 @@
 # Apache OpenOffice
 
 Agent context lives in [`.agent/`](.agent/README.md), split so that branches
-cannot collide. This file is a loader: it is byte-identical on every branch and
+cannot collide. This file is a loader for tools that read `AGENTS.md`; `CLAUDE.md`
+is its twin and carries the same content. It is byte-identical on every branch and
 should not be edited to record branch- or migration-specific facts.
 
 ## Always applies
