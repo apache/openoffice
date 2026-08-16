@@ -119,10 +119,15 @@ calls `System.loadLibrary("java_uno")`), so there is no build-time cycle.
   into it (`nPos * nSize` overflowing as well, so some writes land *before* the
   buffer). That is a heap overflow reachable from any in-process Java UNO caller.
 
-  **The fix exists, on another branch**: `7efd38098e` "jni_uno: added guard
-  sequence allocation size against integer overflow" (on `security-triage`,
-  `security-ASVS-Scan`, `ww8-fixes`) computes the size in `sal_uInt64`, rejects
-  negatives, and throws `"sequence size out of range"` above `SAL_MAX_SIZE`.
+  **The fix exists, on another branch** — find it by *subject*, not hash:
+  "jni_uno: added guard sequence allocation size against integer overflow", on
+  `security-triage` and `ww8-fixes`. It computes the size in `sal_uInt64`,
+  rejects negatives, and throws `"sequence size out of range"` above
+  `SAL_MAX_SIZE`. (It was cited as `7efd38098e` until 2026-08-16; the commit
+  lives only on topic branches, so every rebase rewrites its hash. It is
+  currently `1b2ff27d90` on `security-triage` and `d150d3a4a6` on `ww8-fixes`,
+  same patch-id. `security-ASVS-Scan` carried it too and was deleted as
+  strictly superseded by `security-triage`.)
   `799ee9fa5e` brought the *test* here when it unified the two bridge test sets
   and deliberately left the security-branch source edits behind — its own
   verification note is "both test targets **analyse** clean", i.e. analysis, not
