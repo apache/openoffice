@@ -84,6 +84,23 @@ launch — launching under cdb races the DLL loads, while `-pn` attach plus a
 `shlib.cxx`'s failure branch is what pinned `impl` + `srcEnv` + `env.is`
 exactly.
 
+## Verifying the x64 ABI
+
+Two targets prove the bridge, and both run on either arch (the compiled
+`CPPU_ENV` picks `msci_uno` or `mscx_uno`), so they are the cheap regression
+check after any bridge or toolchain change:
+
+- `//main/bridges:cppuno_roundtrip_test` — maps a C++ `XServiceInfo`
+  cpp→uno (which loads the bridge DLL), invokes `getImplementationName`
+  through the `uno_Interface` **dispatcher** so a real uno→cpp marshalled call
+  happens, checks the returned `OUString`, and asserts cpp→uno→cpp identity
+  collapse. Going through the dispatcher is the point: a test that calls the
+  mapped-back C++ pointer directly proves nothing, which is why the broken x64
+  bridge above went unnoticed for so long.
+- `//main/bridges:inter_libs_exc_test` — a UNO/C++ exception thrown in one DLL
+  and caught in another, i.e. cross-DLL SEH unwind. This is what defect (3)'s
+  `.SETFRAME` and `__type_info` halves break.
+
 ## Reference
 
 `origin/windows-amd64` (56 commits, dmake-era) is the reference for
