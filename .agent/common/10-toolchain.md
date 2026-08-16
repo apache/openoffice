@@ -38,3 +38,7 @@
 - windows_cc_toolchain_config.bzl: default_cpp_std disabled (no /std: flag), remove_unreferenced_code disabled (no /Zc:inline)
 - tool_bin_path = VC\bin (not msvc_env_path) sets PATH for actions
 - BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1 disables auto-detection
+
+Migration state for the x64 build — what is still to re-exercise, and the four
+defects the port turned up — is in
+[`../migration/win64.md`](../migration/win64.md).

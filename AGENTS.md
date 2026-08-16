@@ -50,6 +50,9 @@ part you need rather than all of it — the frontier alone is ~885 lines:
   state: what is migrated, what is in flight, and the landmines each cost.
 - [`.agent/migration/backports.md`](.agent/migration/backports.md) — trunk
   backports: what was taken, what was deliberately not, and why.
+- [`.agent/migration/win64.md`](.agent/migration/win64.md) — the x86-64 build:
+  what still needs re-exercising on x64, and the four real defects the port
+  turned up.
 - [`.agent/migration/localization.md`](.agent/migration/localization.md) — the
   three language axes and the missing Pootle→SDF rule.
 - [`.agent/migration/dependencies.md`](.agent/migration/dependencies.md) —
