@@ -25,6 +25,7 @@ Branched from `bazel-migration` at `1bdcd7a4de`, the same point as
 ## Goal, and what is deliberately not the goal
 
 **Goal: `--config=win10-x64` compiles the product with modern MSVC and the Windows 10 SDK.**
+**Reached** — `//main/staging:install` builds and the installation runs. See M5.
 
 Not here, on purpose:
 
@@ -114,7 +115,8 @@ small, mechanical source changes that are inert on VC9 and therefore backportabl
 | **M1** | *(done — see below)* Toolchain discovery: find modern `cl.exe`/`lib.exe`/`link.exe` under `VS_MODERN_PATH` and the newest Windows 10 SDK, and expose the paths. |
 | **M2** | *(done — see below)* A third `cc_toolchain` on those paths, the `win10-x64` platform, `--config=win10-x64` with its own output tree. |
 | **M3** | *(done — see below)* Build **`//main/sal`** and climb: `sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`. |
-| **M4** | *(in progress — see below)* Widen to the rest of the tree, module by module. This is where the real conformance number is learned; the 216-file sample only says where to expect trouble. |
+| **M4** | *(done — see below)* Widen to the rest of the tree, module by module. This is where the real conformance number is learned; the 216-file sample only says where to expect trouble. |
+| **M5** | *(done — see below)* The whole product: `//main/staging:install` links and runs under `--config=win10-x64`. |
 
 **Definition of done for every phase**: `--config=winXP-x86` unchanged. Same rule as the other
 branch, same reason.
@@ -359,6 +361,110 @@ directly. So each header gains a four-line namespace forward declaration and not
 include, no coupling change — and on GCC and Sun CC `SAL_THROW` expands to nothing at all, so the
 declaration is simply unused. One edit per base class then covers every derived class in the tree,
 rather than annotating each meeting point.
+
+## M5 — the whole product builds, and what the last mile was made of
+
+`//main/staging:install` builds under `--config=win10-x64` and the resulting installation runs.
+
+The tail after M4 was six defects in four families. None was architectural, and — worth stating
+because it is the branch's recurring shape — **only one was a build-configuration problem; the
+other five were real defects in code that VC9 had simply never held to the rule.**
+
+### The one build-configuration item: `snwprintf`, and why the CRT shim is not symmetric
+
+`svx/source/dialog/sendreportw32.cxx` and `framework/source/uielement/spinfieldtoolbarcontroller.cxx`
+call `snwprintf` bare. M3 removed `crt_defines` from the modern toolchain because the UCRT declares
+a real `snprintf` and refuses to be compiled with that name taken (C1189) — but the two halves of
+the VC9 shim are **not** symmetric. The UCRT declares no `snwprintf` at all: the wide C99 name never
+existed in any MSVC CRT, only `_snwprintf` does. So those sources are exactly as broken on a modern
+CRT as on VC9, and the modern toolchain now carries `crt_defines = ["snwprintf=_snwprintf"]` —
+the wide half only. Verified directly that this triggers no C1189 with the STL included.
+
+### `C3848` — a comparator must be callable on a `const` comparator
+
+`std::set`'s const member functions (`find`, `lower_bound`) hold the comparator by const reference,
+so `operator()` must be const. It is a standard requirement, not a modern-MSVC opinion; VC9's
+`<xtree>` reached the comparator through a non-const path and never checked. Eight sites, all of
+them `std::set`/`std::multiset` comparators, all fixed by adding `const`:
+
+| Module | Comparator |
+| --- | --- |
+| `sdext` | `PresenterTimer.cxx` `TimerTaskComparator` |
+| `sd` | `SlsRequestQueue.cxx` `Request::Comparator` |
+| `sd` | `TemplateScanner.cxx` `FolderDescriptor::Comparator` |
+| `sd` | `MasterPageContainerQueue.cxx` `PreviewCreationRequest::Compare` |
+| `sd` | `AllMasterPagesSelector.cxx` `MasterPageDescriptorOrder` |
+| `sw` | `unoportenum.cxx` `BookmarkCompareStruct`, `AnnotationStartCompareStruct`, `RedlineCompareStruct` |
+
+`RedlineCompareStruct` needed a second `const` on its `getPosition()` helper, since a const
+`operator()` can only call const members. **Method note, because it paid off and will again**: only
+two of these eight came from a build. The other six came from a sweep for every type used as the
+comparator argument of an associative container whose `operator()` lacks `const` — cheaper than six
+build round-trips. The sweep's noise is entirely dmake output trees (`*.pro/`, `solver/450/`) and
+bundled boost/vigra/nss, which Bazel never compiles; filter those out and what remains is small.
+
+### `C2280` — an output iterator must be CopyAssignable
+
+`chart2/source/controller/dialogs/DialogModel.cxx` defines two custom output iterators,
+`lcl_DataSeriesContainerAppend` and `lcl_RolesWithRangeAppend`, each holding its destination as a
+`tContainerType &`. A reference member deletes the implicit copy assignment, and `Cpp17Iterator`
+requires assignability — MSVC's `std::copy` assigns the destination iterator through
+`_Seek_wrapped` (`xutility` line 1378), VC9's never did. Both now hold a pointer, which is what the
+class always meant; inert on VC9. This is the one item in the tail that is a latent defect rather
+than paperwork: the type was never a conforming output iterator.
+
+### `<iterator>`, again
+
+`xmloff/source/chart/SchXMLSeriesHelper.cxx` (`back_inserter`) and
+`xmlhelp/source/cxxhelp/provider/resultsetforquery.cxx` (`inserter`) — the same transitive-include
+family as `<time.h>` in `tools/dirent.cxx`. A sweep says ~25 files in compiled code use the inserter
+family without naming the header, but **not all of them fail** — `PresenterTimer.cxx` is on that
+list and compiles fine, so it still gets the header transitively. The 23 were deliberately left
+alone: adding an include that changes nothing is churn in a diff meant to stay backportable. Fix
+them when a build names them.
+
+### The external dependency: NSS captured `<stdint.h>`
+
+`ext_libraries/modules/nss/3.39/overlay/nss/lib/freebl/stdint.h` is a hand-written shim for VS2008,
+and `nss/lib/freebl` sits on the `/I` list ahead of the system directories — so it captures *every*
+`<stdint.h>`, including the one the UCRT's own `<inttypes.h>` includes. VC9 never reaches it
+(`freebl/verified/kremlib_base.h` includes `<inttypes.h>` only from `_MSC_VER >= 1800` on); a modern
+MSVC does, and the shim has no `UINT64_C`. In C that is an implicit function declaration, which is
+why it surfaced as an *unresolved external* at link time rather than a compile error. Gated on
+`_MSC_VER >= 1900` and forwarded to the real header with the same retargeting trick M4 used for the
+stlport shims: `#include <../include/stdint.h>`, a path that resolves only from inside the toolset's
+own include directory. (The shim also hardcodes `SIZE_MAX` to 32 bits, which is wrong on x64 in
+*both* configs — recorded, not fixed; this branch does not churn source for latent warnings.)
+
+**The second bug there mattered more than the first.** None of the nine NSS/NSPR targets declared
+its headers: `srcs` lists only `.c`, and headers arrive through `copts` `/I`. Bazel therefore cannot
+see a header change and silently relinks the stale objects — the fix appeared not to work, with
+`190 action cache hit` as the only clue. This is exactly the latent bug the python27 overlay had
+(`9b268cdc02`), whose commit message predicted it would recur. `_ALL_HDRS = glob([...])` is now in
+the `srcs` of all nine. **Any overlay reaching headers only through `includes[]`/`copts` has it.**
+
+Two operational notes for the next overlay edit, both hit here:
+
+- `bazel mod deps --lockfile_mode=refresh` is **no longer sufficient on its own**. With Bazel 8.4's
+  repo contents cache, `external/<repo>` is a symlink into
+  `<output_user_root>/cache/repos/v1/contents/<key>/<uuid>` and the key does not cover the overlay
+  hashes. The order that works is: edit overlay → fix `source.json` → `refresh` (this pulls the new
+  content into the CAS) → `bazel fetch --force --repo=@@<canonical>` (this re-materializes) →
+  **diff the fetched file against the overlay** → build. `fetch --force` alone reports "fetched
+  successfully" while still materializing the old tree.
+- Hash overlay files **after** the pre-commit hooks have run, not before. A stale hash is silently
+  ignored, which looks exactly like the edit not working.
+
+### Verified on all three configs
+
+All three configs are green over the nine touched source files, so the phase meets the branch's
+definition of done rather than resting on "inert by construction": `--config=win10-x64` builds
+`//main/staging:install` and the installation runs, and `--config=winXP-x86` and `--config=winXP-x64`
+are unchanged. That the VC9 configs survive is not a formality — a `const` on a comparator, a
+pointer member in place of a reference, and two named includes are all legal C++03, and the only
+build-system change (`crt_defines`) is scoped to the `vs2019` config block, so no VC9 command line
+moved. The NSS overlay was verified on all three configs separately, since it is the one change that
+rebuilds an external dependency.
 
 ## How this branch differs from `win10-64-support`
 
