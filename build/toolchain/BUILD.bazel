@@ -376,6 +376,15 @@ cc_toolchain_config(
     # Identical to aoo_msvc_vs2008_x64 — the C++/UNO environment and CPU defines
     # are properties of the TARGET, not of the compiler that produced it.
     arch_defines       = ["_AMD64_=1", "X86_64", "CPPU_ENV=mscx"],
+    # HALF of the VC9 shim, and the halves are not symmetric.  The UCRT declares
+    # a real snprintf and refuses to be compiled with that name taken (C1189), so
+    # that mapping must NOT be inherited here.  It declares no snwprintf at all —
+    # the wide C99 name never existed in any MSVC CRT, only _snwprintf does — so
+    # the sources calling it bare (svx sendreportw32.cxx, framework
+    # spinfieldtoolbarcontroller.cxx) are as broken on a modern CRT as on VC9 and
+    # need the same mapping.  Verified: -Dsnwprintf=_snwprintf compiles clean
+    # against the UCRT with the STL included, i.e. it triggers no C1189.
+    crt_defines        = ["snwprintf=_snwprintf"],
     # ml64 rejects the x86 /coff and /Cx flags — assemble with /c only.
     masm_flags         = ["/c"],
     # x64 has no SafeSEH — drop /SAFESEH:NO from the generate_pdb link.
