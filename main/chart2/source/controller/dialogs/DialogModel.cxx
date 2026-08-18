@@ -159,7 +159,7 @@ struct lcl_DataSeriesContainerAppend : public
     typedef ::std::vector< ::chart::DialogModel::tSeriesWithChartTypeByName > tContainerType;
 
     explicit lcl_DataSeriesContainerAppend( tContainerType & rCnt )
-            : m_rDestCnt( rCnt )
+            : m_pDestCnt( &rCnt )
     {}
 
     lcl_DataSeriesContainerAppend & operator= ( const value_type & xVal )
@@ -175,7 +175,7 @@ struct lcl_DataSeriesContainerAppend : public
                     aRole = xCT->getRoleOfSequenceForSeriesLabel();
                 for( sal_Int32 nI = 0; nI < aSeq.getLength(); ++ nI )
                 {
-                    m_rDestCnt.push_back(
+                    m_pDestCnt->push_back(
                         ::chart::DialogModel::tSeriesWithChartTypeByName(
                             ::chart::DataSeriesHelper::getDataSeriesLabel( aSeq[nI], aRole ),
                             ::std::make_pair( aSeq[nI], xCT )));
@@ -194,7 +194,11 @@ struct lcl_DataSeriesContainerAppend : public
     lcl_DataSeriesContainerAppend & operator++ (int) { return *this; }
 
 private:
-    tContainerType & m_rDestCnt;
+    // A pointer, not a reference: an output iterator must be CopyAssignable,
+    // and a reference member deletes the implicit copy assignment.  MSVC's
+    // std::copy assigns the destination iterator (_Seek_wrapped); VC9's did
+    // not, which is why the reference went unnoticed.
+    tContainerType * m_pDestCnt;
 };
 
 struct lcl_RolesWithRangeAppend : public
@@ -204,7 +208,7 @@ struct lcl_RolesWithRangeAppend : public
 
     explicit lcl_RolesWithRangeAppend( tContainerType & rCnt,
                                        const ::rtl::OUString & aLabelRole )
-            : m_rDestCnt( rCnt ),
+            : m_pDestCnt( &rCnt ),
               m_aRoleForLabelSeq( aLabelRole )
     {}
 
@@ -222,7 +226,7 @@ struct lcl_RolesWithRangeAppend : public
                     Reference< beans::XPropertySet > xProp( xSeq, uno::UNO_QUERY_THROW );
                     if( xProp->getPropertyValue( C2U("Role")) >>= aRole )
                     {
-                        m_rDestCnt.insert(
+                        m_pDestCnt->insert(
                             tContainerType::value_type(
                                 aRole, xSeq->getSourceRangeRepresentation()));
                         // label
@@ -231,7 +235,7 @@ struct lcl_RolesWithRangeAppend : public
                             Reference< data::XDataSequence > xLabelSeq( xVal->getLabel());
                             if( xLabelSeq.is())
                             {
-                                m_rDestCnt.insert(
+                                m_pDestCnt->insert(
                                     tContainerType::value_type(
                                         lcl_aLabelRole, xLabelSeq->getSourceRangeRepresentation()));
                             }
@@ -252,7 +256,8 @@ struct lcl_RolesWithRangeAppend : public
     lcl_RolesWithRangeAppend & operator++ (int) { return *this; }
 
 private:
-    tContainerType & m_rDestCnt;
+    // A pointer, not a reference — see lcl_DataSeriesContainerAppend above.
+    tContainerType * m_pDestCnt;
     OUString m_aRoleForLabelSeq;
 };
 

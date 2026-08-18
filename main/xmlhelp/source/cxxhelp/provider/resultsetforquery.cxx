@@ -36,6 +36,9 @@
 #endif
 #ifndef INCLUDED_STL_SET
 #include <set>
+// std::inserter lives in <iterator>.  VC9's headers pulled it in
+// transitively, a modern one does not.
+#include <iterator>
 #define INCLUDED_STL_SET
 #endif
 

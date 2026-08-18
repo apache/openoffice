@@ -87,7 +87,7 @@ public:
     Reference<com::sun::star::ucb::XCommandEnvironment> mxFolderEnvironment;
 
     class Comparator { public:
-        bool operator() (const FolderDescriptor& r1, const FolderDescriptor& r2)
+        bool operator() (const FolderDescriptor& r1, const FolderDescriptor& r2) const
         { return r1.mnPriority < r2.mnPriority; }
     };
 };
