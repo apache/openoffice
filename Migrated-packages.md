@@ -44,6 +44,7 @@ offapi        ✅  (offapi_idl.rdb + offapi_idl_inc/ — 3718 IDL files)
 binaryurp     ✅  (binaryurp.dll)
 remotebridges ✅  (uuresolver.dll)
 cpputools     ✅  (regcomp.exe, regsingleton.exe, sp2bv.exe, uno.exe)
+unodevtools   ✅  (uno-skeletonmaker.exe, + qa) — main/unodevtools/readme.md
 i18nutil      ✅  (i18nutil.dll)
 ucbhelper     ✅  (ucbhelper.dll)
 comphelper    ✅  (comphelp.dll) — main/comphelper/readme.md

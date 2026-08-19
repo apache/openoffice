@@ -837,7 +837,17 @@ wizards       ✅  DONE 2026-08-16 — File > Wizards is LIVE (officecfg had
 xmerge        ⬜  (document format converter, Java)
 javainstaller2 ⬜ (Java installer UI)
 swext         ⬜  (Writer Java extensions e.g. mediawiki)
-unodevtools   ⬜  (UNO component inspector, Java)
+unodevtools   ✅  MIGRATED 2026-08-18 and MOVED OUT of this bucket — it is not
+                   Java and never was.  `uno-skeletonmaker.exe`, 9 C++ sources, no
+                   Java source at all: Java is only one of the OUTPUT languages of
+                   the skeletons it emits, which is why it links codemaker's
+                   `commonjava`.  So it was never gated on the Java bucket and it
+                   built on the first try.  Has a qa/ now (7 gtest cases,
+                   //main/unodevtools:skeletonmaker_test) that upstream does NOT
+                   have: the generators are UNO-free and take codemaker's
+                   TypeManager base, so the suite runs off udkapi's rdb via
+                   RegistryTypeManager with 3 DLLs and NO staged install.
+                   See main/unodevtools/readme.md.
 
 ── Remaining: .NET interop ──────────────────────────────────────────────
 cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
