@@ -10,6 +10,16 @@ idl_library(
     visibility = ["//visibility:public"],
 )
 
+# Just the merged type registry, without the generated-header tree that also
+# comes out of udkapi_idl.  For consumers that stage files one by one -- a test
+# fixture reading types straight from the .rdb, say.
+filegroup(
+    name = "udkapi_rdb",
+    srcs = [":udkapi_idl"],
+    output_group = "rdb",
+    visibility = ["//visibility:public"],
+)
+
 # ── Generated headers as a cc_library dep ─────────────────────────
 # Consumers get the cppumaker output tree on their include path via
 # includes = ["udkapi_idl_inc"]  (Bazel prepends both source and bin roots)

@@ -201,6 +201,16 @@ def _idl_library_impl(ctx):
 
     return [
         DefaultInfo(files = depset([rdb, hdr_dir])),
+        # DefaultInfo carries the .rdb AND the generated-header directory, so a
+        # consumer that wants only one of them cannot say so -- and passing the
+        # whole target somewhere that stages files individually fails on the
+        # directory ("symlink() with target_file directory param").  These let a
+        # filegroup pick a side:
+        #     filegroup(name = "x_rdb", srcs = [":x_idl"], output_group = "rdb")
+        OutputGroupInfo(
+            rdb = depset([rdb]),
+            headers = depset([hdr_dir]),
+        ),
     ]
 
 # ---------------------------------------------------------------------------

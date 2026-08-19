@@ -1,0 +1,208 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
+
+# uno-skeletonmaker — generates C++/Java UNO component and language-binding
+# skeletons from a type registry.  Mirrors Executable_uno-skeletonmaker.mk.
+#
+# Despite its place in the "Java" bucket of the frontier, this module is pure
+# C++: the Java half is only the *output* language of the skeletons it emits.
+
+_DEFINES = [
+    "WNT",
+    "GUI",
+    "WIN32",
+    "WINVER=0x0500",
+    "_WIN32_WINNT=0x0500",
+    "_WIN32_IE=0x0500",
+    "FULL_DESK",
+]
+
+# Same shape as //main/codemaker, whose static libs this tool links; it must
+# agree with them on /GR and /EHsc.
+_COPTS = [
+    "/Zm500",
+    "/Zc:forScope",
+    "/GR",
+    "/nologo",
+    "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061",
+    "/wd4063",
+    "/wd4127",
+]
+
+# ── Public headers ────────────────────────────────────────────────
+# inc/unodevtools/{options,typemanager}.hxx, included as
+# "unodevtools/options.hxx" — hence strip_include_prefix = "inc".
+cc_library(
+    name = "unodevtools_headers",
+    hdrs = glob(["inc/unodevtools/*.hxx"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/codemaker:codemaker_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── generator library (no UNO) ───────────────────
+# The five skeleton writers.  They depend on codemaker and registry and nothing
+# else: every "com/sun/star/..." string in them is part of the code they EMIT,
+# not something they include.  So this half links against no UNO library and
+# needs no bootstrap to run, which is what makes qa/ cheap.
+#
+# The generators take `TypeManager const &` — the codemaker base class — so a
+# caller can feed them either the UNO-backed provider below or codemaker's own
+# RegistryTypeManager, which reads .rdb files directly.  The tool uses the
+# former; the test uses the latter.
+cc_library(
+    name = "skeletonmaker_lib",
+    srcs = [
+        "source/skeletonmaker/cppcompskeleton.cxx",
+        "source/skeletonmaker/cpptypemaker.cxx",
+        "source/skeletonmaker/javacompskeleton.cxx",
+        "source/skeletonmaker/javatypemaker.cxx",
+        "source/skeletonmaker/skeletoncommon.cxx",
+    ],
+    hdrs = [
+        "source/skeletonmaker/skeletoncommon.hxx",
+        "source/skeletonmaker/skeletoncpp.hxx",
+        "source/skeletonmaker/skeletonjava.hxx",
+    ],
+    strip_include_prefix = "source/skeletonmaker",
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        "//main/codemaker:codemaker",
+        "//main/codemaker:codemaker_headers",
+        "//main/codemaker:commoncpp",
+        "//main/codemaker:commonjava",
+        "//main/registry:registry_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── UNO type provider + CLI options (exe only) ──────────
+# UnoTypeManager bootstraps a component context and reads types from the running
+# theTypeDescriptionManager; readOption parses the command line.  Both are used
+# only by main(), and both are why the TOOL needs a UNO installation while the
+# generators do not.
+cc_library(
+    name = "unodevtools_uno",
+    srcs = [
+        "source/unodevtools/options.cxx",
+        "source/unodevtools/typeblob.cxx",
+        "source/unodevtools/typemanager.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":unodevtools_headers",
+        "//main/codemaker:codemaker",
+        "//main/codemaker:codemaker_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/registry:registry_headers",
+        "//main/sal:sal_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/stlport:stlport",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+_IMPLIBS = [
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    "//main/registry:reg_implib",
+    "//main/sal:sal_implib",
+    "//main/salhelper:salhelper_implib",
+]
+
+_IMPLIB_LINKOPTS = [
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath //main/registry:reg_implib)",
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/salhelper:salhelper_implib)",
+]
+
+# ── uno-skeletonmaker executable ────────────────
+cc_binary(
+    name = "uno-skeletonmaker",
+    srcs = ["source/skeletonmaker/skeletonmaker.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":skeletonmaker_lib",
+        ":unodevtools_headers",
+        ":unodevtools_uno",
+        "//main/codemaker:codemaker_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    # The VC90-CRT manifest, compiled to a .res and linked in at RT_MANIFEST
+    # id 1.  Unlike cppumaker/javamaker — build-internal tools whose runner
+    # stages an external <exe>.manifest beside them — this one is an SDK tool a
+    # user runs from wherever it was installed, so it has to carry its own
+    # activation context or the /MD CRT is unresolvable.  Upstream gets the
+    # same effect from solenv, which embeds a manifest in every executable.
+    additional_linker_inputs = [
+        "//main/external/msvcp90:vc90_app_manifest_res",
+    ] + _IMPLIBS,
+    linkopts = [
+        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
+    ] + _IMPLIB_LINKOPTS + ["/MANIFEST:NO"],
+    visibility = ["//visibility:public"],
+)
+
+# ── qa ────────────────────────────
+# Deliberately NOT an office fixture.  The generators only need a type registry,
+# and codemaker's RegistryTypeManager reads one straight from a .rdb, so the
+# whole suite runs against //main/udkapi's rdb with three DLLs beside the exe —
+# no staged install, no bootstrap, no services.rdb.  (An earlier draft used
+# uno_install = //main/staging:install: correct, but it made a test of a
+# standalone code generator depend on the entire office, NSS and Python
+# included.  Every type these tests name is therefore a udkapi type.)
+#
+# NOTE this module has no upstream qa/ — these tests are new, not ported.
+gtest_test(
+    name = "skeletonmaker_test",
+    srcs = ["qa/skeletonmaker_test.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":skeletonmaker_lib",
+        "//main/codemaker:codemaker",
+        "//main/codemaker:codemaker_headers",
+        "//main/registry:registry_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/registry:reg_implib",
+        "//main/sal:sal_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/registry:reg_implib)",
+        "$(execpath //main/sal:sal_implib)",
+    ],
+    # reg3 opens the .rdb through store3.
+    runtime_dlls = [
+        "//main/sal:sal3",
+        "//main/registry:reg",
+        "//main/store:store",
+    ],
+    # Staged beside the exe, and the test runs with its working directory set
+    # there, so the suite opens it by bare name.
+    data_files = ["//main/udkapi:udkapi_rdb"],
+    # Read with plain getenv(), so NOT bootstrap-expanded: single backslashes.
+    # The staged dir is read-only build output; generated files go here.
+    env = {"SKELETONMAKER_OUT": "$(SCRATCH)"},
+)
