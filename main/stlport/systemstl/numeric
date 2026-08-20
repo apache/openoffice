@@ -19,20 +19,27 @@
  * 
  *************************************************************/
 
-#ifndef SYSTEM_STL_SET
-#define SYSTEM_STL_SET
+#ifndef SYSTEM_STL_NUMERIC
+#define SYSTEM_STL_NUMERIC
 
-#if defined(HAVE_STL_INCLUDE_PATH)
-	namespace std { class type_info; };
+#ifdef HAVE_STL_INCLUDE_PATH
 	// TODO: use computed include file name
-	#include "utility"
-	#include_next <set>
+	#include_next <numeric>
+#elif defined(_MSC_VER) && (_MSC_VER >= 1900)
+    /*  A modern MSVC keeps the standard headers in <toolset>/include, and this
+        file shadows <numeric> on the include path, so the real one has to be
+        reached explicitly. The path below resolves against the toolset's own
+        include directory and against nothing else on the search path -- the
+        same trick the VC9 branch below uses, retargeted at the layout a modern
+        toolset has. #include_next, used by the branches around this one, is a
+        GCC extension that MSVC does not have. */
+    #include <../include/numeric>
 #elif defined(__cplusplus) && (__cplusplus >= 201103L)
-    #include_next <set>
+    #include_next <numeric>
 #elif defined(_MSC_VER)
-	#include <../../VC/include/set>
+	#include <../../VC/include/numeric>
 #else // fall back to boost/tr1
-	#include <boost/tr1/tr1/set>
+	#include <boost/tr1/tr1/numeric>
 #endif
 
 #endif
