@@ -62,7 +62,8 @@ PATCH_FILES=\
    xmlsec1-noverify.patch \
    xmlsec1-mingw32.patch \
    xmlsec1-mingw-keymgr-mscrypto.patch \
-   xmlsec1-nowin98.patch
+   xmlsec1-nowin98.patch \
+   xmlsec1-ucrt-snprintf.patch
 
 .IF "$(GUI)"=="OS2"
 PATCH_FILES+=xmlsec1-os2.patch
