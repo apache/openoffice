@@ -221,6 +221,30 @@ Delivered as new `*.patch.ucrt` files listed after the existing
 `libxml2` needed nothing — 2.9.10 already guards its own `snprintf` shim on
 `_MSC_VER < 1900`. `nss` needed nothing either.
 
+## The old Platform SDK does not go away entirely
+
+`--with-frame-home` must keep pointing at the **Platform SDK v7.0**, whatever
+compiler is in use. It is checked by looking for `lib/mscoree.lib`
+([`configure.ac:2651`](../main/configure.ac)), and the Windows 10 SDK has no
+`mscoree.lib` anywhere in its `Lib/` tree — verified, not assumed. That library
+is the .NET Framework import library the CLI/managed parts link against, and it
+never moved into the new SDK.
+
+The other two flags a build script typically derives from the same variable do
+move:
+
+| flag | on a modern toolset |
+| --- | --- |
+| `--with-frame-home` | **keep** on Platform SDK v7.0 — `lib/mscoree.lib` |
+| `--with-psdk-home` | drop; the Windows 10 SDK is found automatically, and pointing this at v7.0 now warns |
+| `--with-midl-path` | drop, so the Windows 10 SDK's `midl.exe` is used — it has to match the headers it is generating against |
+
+`$FRAME_HOME/lib` is the whole v7.0 library directory, so it does put a full set
+of old import libraries on `LIB`. That is safe by ordering rather than by luck:
+`set_soenv.in` places the SDK's `ucrt` and `um` directories **before** it, so the
+Windows 10 copies of `kernel32.lib` and friends win, and v7.0 supplies only what
+the earlier directories do not have — which is `mscoree.lib`.
+
 ## Verification
 
 Honest accounting, because the gap matters more than the list of changes.
