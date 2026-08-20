@@ -238,23 +238,6 @@ void printMethodParameters(std::ostream & o,
     }
 }
 
-void printExceptionSpecification(std::ostream & o,
-    ProgramOptions const & options, TypeManager const & manager,
-    typereg::Reader const & reader, sal_uInt16 method)
-{
-    o << ((options.shortnames) ? " throw (css::uno::RuntimeException" :
-          " throw (::com::sun::star::uno::RuntimeException");
-    if (reader.getMethodExceptionCount(method) > 0) {
-        for (sal_uInt16 i = 0; i < reader.getMethodExceptionCount(method); ++i) {
-            o << ", ";
-            printType(o, options, manager,
-                codemaker::convertString(
-                    reader.getMethodExceptionTypeName(method, i)), 1);
-        }
-    }
-    o << ")";
-}
-
 void printSetPropertyMixinBody(std::ostream & o,
                                typereg::Reader const & reader,
                                sal_uInt16 field,
@@ -413,8 +396,7 @@ void printMethods(std::ostream & o,
     if (body && options.componenttype == 2) {
         if (type.equals("com/sun/star/lang/XServiceName")) {
             o << "// ::com::sun::star::lang::XServiceName:\n"
-                "::rtl::OUString SAL_CALL " << classname << "getServiceName() "
-                "throw (css::uno::RuntimeException)\n{\n    "
+                "::rtl::OUString SAL_CALL " << classname << "getServiceName()\n{\n    "
                 "return ::rtl::OUString::createFromAscii("
                 "sADDIN_SERVICENAME);\n}\n";
             generated.add(type);
@@ -500,10 +482,7 @@ void printMethods(std::ostream & o,
             && reader.getMethodFlags(method) == RT_MODE_ATTRIBUTE_GET
             && reader.getMethodName(method) == reader.getFieldName(i))
         {
-            printExceptionSpecification(o, options, manager, reader, method++);
-        } else {
-            o << ((options.shortnames) ? " throw (css::uno::RuntimeException)" :
-                  " throw (::com::sun::star::uno::RuntimeException)");
+            ++method;
         }
         if (body) {
             if (defaultbody) {
@@ -554,10 +533,7 @@ void printMethods(std::ostream & o,
                 && reader.getMethodFlags(method) == RT_MODE_ATTRIBUTE_SET
                 && reader.getMethodName(method) == reader.getFieldName(i))
             {
-                printExceptionSpecification(o, options, manager, reader, method++);
-            } else {
-                o << ((options.shortnames) ? " throw (css::uno::RuntimeException)" :
-                      " throw (::com::sun::star::uno::RuntimeException)");
+                ++method;
             }
             if (body) {
                 if (defaultbody) {
@@ -601,7 +577,6 @@ void printMethods(std::ostream & o,
         o << methodName << '(';
         printMethodParameters(o, options, manager, reader, method, false, true);
         o << ')';
-        printExceptionSpecification(o, options, manager, reader, method);
         if (body) {
             static OUString s(RTL_CONSTASCII_USTRINGPARAM("void"));
             if (defaultbody) {
@@ -670,7 +645,6 @@ void printConstructionMethods(std::ostream & o,
         printMethodParameters(o, options, manager, reader, i,
                               true, true);
         o << ')';
-        printExceptionSpecification(o, options, manager, reader, i);
         o << ";\n";
     }
 }
