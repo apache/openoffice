@@ -6159,6 +6159,14 @@ if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes"; then
       if test -x "$with_cl_home/bin/ml.exe"; then
         with_asm_home=$with_cl_home/bin
         AC_MSG_RESULT([found ($with_asm_home)])
+      elif test -x "$with_cl_home/$cl_subdirectory/ml.exe"; then
+        dnl  A modern toolset keeps the assembler beside the compiler in the
+        dnl  split bin/Host<host>/<target> tree, and the target half matters:
+        dnl  the x86 directory has ml.exe, the x64 one has ml64.exe.  Reusing
+        dnl  $cl_subdirectory is what keeps assembler and compiler on the same
+        dnl  target rather than merely on the same toolset.
+        with_asm_home=$with_cl_home/$cl_subdirectory
+        AC_MSG_RESULT([found ($with_asm_home)])
       else
         AC_MSG_ERROR([Configure did not find ml.exe assembler.])
       fi
