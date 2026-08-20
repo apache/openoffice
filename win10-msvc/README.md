@@ -245,6 +245,39 @@ of old import libraries on `LIB`. That is safe by ordering rather than by luck:
 Windows 10 copies of `kernel32.lib` and friends win, and v7.0 supplies only what
 the earlier directories do not have — which is `mscoree.lib`.
 
+## Known gap: the staged CRT is still VC90
+
+`bootstrap` calls `oowintool --msvc-copy-dlls`, which finds a compiler through
+the pre-Windows-8 registry keys it knows about, and on a machine that still has
+VS2008 installed that is VS2008. So `main/external/msvcp90/` receives
+`msvcr90.dll`, `msvcp90.dll`, `msvcm90.dll` and `Microsoft.VC90.CRT.manifest`,
+`main/external/prj/d.lst` delivers them, and the installer ships them --
+while everything else is now built against the UCRT.
+
+This does **not** stop a build: the files exist, they are copied, nothing
+references them at link time. What it produces is an installation carrying
+three dead VC90 DLLs and missing the runtime it actually needs
+(`vcruntime140.dll`, `msvcp140.dll`, and the UCRT). On a developer machine
+that runs anyway, because installing Visual Studio installs the redistributable
+system-wide; on a clean machine it would not.
+
+The modern equivalent is `VC/Redist/MSVC/<toolset>/<arch>/Microsoft.VC142.CRT`,
+and note it is *not* a like-for-like swap: the UCRT is an operating-system
+component on Windows 10 rather than an application-private SxS assembly, so the
+manifest half of the old arrangement has no counterpart rather than a renamed
+one.
+
+`win10-64-minimal` drew its scope line in exactly the same place -- "this
+branch targets compiling; the CRT/SxS story is the phase after" -- so this is
+inherited, not newly introduced. It is recorded here because it is invisible
+until someone installs the result on a machine without Visual Studio.
+
+Related, same cause, harmless: `bootstrap` prints
+`Can't find MS Visual Studio / VC++ at ./oowintool line 228`. That is
+`find_msvs()`, which looks for the Visual Studio IDE through the same old
+registry keys; VS2019 BuildTools registers none of them. Nothing downstream
+needs the answer once `--with-cl-home` is given.
+
 ## Verification
 
 Honest accounting, because the gap matters more than the list of changes.
