@@ -1,12 +1,20 @@
---- misc/gtest-1.7.0/include/gtest/internal/gtest-port.h	2013-09-18 19:48:30.000000000 +0200
-+++ misc/build/gtest-1.7.0/include/gtest/internal/gtest-port.h	2014-06-03 15:14:03.000000000 +0200
-@@ -76,6 +76,9 @@
+--- misc/gtest-1.7.0/include/gtest/internal/gtest-port.h
++++ misc/build/gtest-1.7.0/include/gtest/internal/gtest-port.h
+@@ -76,6 +76,17 @@
  //                              Test's own tr1 tuple implementation should be
  //                              used.  Unused when the user sets
  //                              GTEST_HAS_TR1_TUPLE to 0.
 +
++/*  VS2008 ships its own <tr1/tuple> only in a Feature Pack that cannot be
++    assumed present, so Google Test has to use its bundled tuple there.
++    From VS2010 on the detection further down gets this right unaided, and
++    forcing the bundled one is actively wrong on a toolset that has no
++    std::tr1 at all: gtest-tuple.h then tries to define into a namespace
++    the standard library no longer owns (C2888), and collides with the
++    real <tuple>. */
++#if defined(_MSC_VER) && (_MSC_VER < 1600)
 +#define GTEST_USE_OWN_TR1_TUPLE 1
-+
++#endif
+ 
  //   GTEST_LANG_CXX11         - Define it to 1/0 to indicate that Google Test
  //                              is building in C++11/C++98 mode.
- //   GTEST_LINKED_AS_SHARED_LIBRARY
