@@ -705,9 +705,17 @@ elsif ( $platform =~ m/cygwin/ )
   else # The MSVC section starts here
   {
       $COMPATH        = PathFormat('@COMPATH@');
-      $CXX_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/cl.exe');
-      $LINK_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/link.exe');
-      $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/lib.exe');
+      if ( "@MSVC_MODERN@" ne "" ) {
+          my $x64_bin = -d '@COMPATH@/bin/Hostx64' ? 'bin/Hostx64/x64'
+                                                  : 'bin/Hostx86/x64';
+          $CXX_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/cl.exe');
+          $LINK_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/link.exe');
+          $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/lib.exe');
+      } else {
+          $CXX_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/cl.exe');
+          $LINK_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/link.exe');
+          $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/lib.exe');
+      }
       $COMEX          = '@COMEX@';
       if ( "@COMEX@" eq "10" ) { # .NET 2003 needs M1310
           $CVER        = "M1310";
@@ -716,6 +724,13 @@ elsif ( $platform =~ m/cygwin/ )
 	      $CVER        = "M1400";
 	  } elsif ( "@COMEX@" eq "12" ) {
 	      $CVER        = "M1500";
+	  } elsif ( "@COMEX@" eq "14" ) {
+	      # The UCRT generation: VS2015 (_MSC_VER 1900) and everything
+	      # since.  M1900 is the floor, not the exact toolset -- source
+	      # that needs to tell VS2019 from VS2022 does not exist here,
+	      # and source that needs to tell either from VC9 tests _MSC_VER
+	      # directly.
+	      $CVER        = "M1900";
 	  } else {                   # Unsupported
 	      die "Unsupported value for COMEX variable.\n";
 	  }
@@ -1091,7 +1106,24 @@ if ($platform =~ m/cygwin|os2/)
    if ( "@COM@" eq "MSC" )
    {  $ILIB       .=    $wps.$SOLARVER.$ds.$INPATH.$LIB.
                         $wps.$JAVA_HOME.$LIB;
-      if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+      if ( "@MSVC_MODERN@" ne "" ) {
+          my $sdk_lib = $PSDK_HOME.$LIB.$ds.'@WINDOWS_SDK_VERSION@';
+          my $arch;
+          if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+              $arch = "x86";
+          } elsif ( $CPUNAME eq "X86_64" ) {
+              $arch = "x64";
+          } else {
+              print "Unsupported Windows CPU: $CPUNAME\n";
+              exit 1;
+          }
+          # ucrt before um: both ship a few of the same names and the CRT's
+          # copy is the one that matches the headers on INCLUDE.
+          $ILIB   .=    $wps.$sdk_lib.$ds."ucrt".$ds.$arch.
+                        $wps.$sdk_lib.$ds."um".$ds.$arch.
+                        $wps.$FRAME_HOME.$LIB.
+                        $wps.$COMPATH.$LIB.$ds.$arch;
+      } elsif ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
           $ILIB   .=    $wps.$PSDK_HOME.$LIB.
                         $wps.$FRAME_HOME.$LIB.
                         $wps.$COMPATH.$LIB;
@@ -1479,8 +1511,17 @@ elsif ($platform =~ m/cygwin/)
                         $I.'$JAVA_HOME'.$ds."include";
    # Mingw is different
    if ( "@COM@" eq "MSC" )
-   {  $SOLARINC       .= $I.'$PSDK_HOME'.$INCLUDE.
+   {  if ( "@MSVC_MODERN@" ne "" ) {
+          my $sdk_inc = '$PSDK_HOME'.$INCLUDE.$ds.'@WINDOWS_SDK_VERSION@';
+          $SOLARINC   .= $I.'$COMPATH'.$ds."include".
+                         $I.$sdk_inc.$ds."ucrt".
+                         $I.$sdk_inc.$ds."um".
+                         $I.$sdk_inc.$ds."shared".
+                         $I.$sdk_inc.$ds."winrt";
+      } else {
+          $SOLARINC   .= $I.'$PSDK_HOME'.$INCLUDE.
                          $I.'$COMPATH'.$ds."include";
+      }
       if ( '@ENABLE_DIRECTX@' ne "" ) {
           $SOLARINC   .= $I.PathFormat('@DIRECTXSDK_HOME@').$INCLUDE;
           if ( '@COMEX@' eq "10" ) {
