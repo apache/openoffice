@@ -169,7 +169,7 @@ void generateCompHelperDefinition(std::ostream & o,
 
     o << "css::uno::Reference< css::uno::XInterface > SAL_CALL _create("
       << "\n    const css::uno::Reference< css::uno::XComponentContext > & "
-      << "context)\n        SAL_THROW((css::uno::Exception))\n{\n"
+      << "context)\n{\n"
       << "    return static_cast< ::cppu::OWeakObject * >(new "
       << classname <<  "(context));\n}\n\n";
 
@@ -211,54 +211,47 @@ void generateXPropertySetBodies(std::ostream& o,
     o << "// com.sun.star.beans.XPropertySet:\n";
 
     o << "css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL "
-      << classname << "getPropertySetInfo() throw ("
-        "css::uno::RuntimeException)\n{\n    return ::cppu::PropertySetMixin< "
+      << classname << "getPropertySetInfo()"
+        "\n{\n    return ::cppu::PropertySetMixin< "
       << propertyhelper
       << " >::getPropertySetInfo();\n}\n\n";
 
     o << "void SAL_CALL " << classname << "setPropertyValue(const ::rtl::OUString"
-        " & aPropertyName, const css::uno::Any & aValue) throw ("
-        "css::uno::RuntimeException, css::beans::UnknownPropertyException, "
-        "css::beans::PropertyVetoException, css::lang::IllegalArgumentException, "
-        "css::lang::WrappedTargetException)\n{\n    ::cppu::PropertySetMixin< "
+        " & aPropertyName, const css::uno::Any & aValue)"
+        "\n{\n    ::cppu::PropertySetMixin< "
       << propertyhelper << " >::setPropertyValue(aPropertyName, aValue);\n}\n\n";
 
 
     o << "css::uno::Any SAL_CALL " << classname << "getPropertyValue(const "
-        "::rtl::OUString & aPropertyName) throw (css::uno::RuntimeException, "
-        "css::beans::UnknownPropertyException, css::lang::WrappedTargetException)"
+        "::rtl::OUString & aPropertyName)"
         "\n{\n    return ::cppu::PropertySetMixin< "
       << propertyhelper << " >::getPropertyValue(aPropertyName);\n}\n\n";
 
     o << "void SAL_CALL " << classname << "addPropertyChangeListener(const "
         "::rtl::OUString & aPropertyName, const css::uno::Reference< "
-        "css::beans::XPropertyChangeListener > & xListener) throw ("
-        "css::uno::RuntimeException, css::beans::UnknownPropertyException, "
-        "css::lang::WrappedTargetException)\n{\n    ::cppu::PropertySetMixin< "
+        "css::beans::XPropertyChangeListener > & xListener)"
+        "\n{\n    ::cppu::PropertySetMixin< "
       << propertyhelper
       << " >::addPropertyChangeListener(aPropertyName, xListener);\n}\n\n";
 
     o << "void SAL_CALL " << classname << "removePropertyChangeListener(const "
         "::rtl::OUString & aPropertyName, const css::uno::Reference< "
-        "css::beans::XPropertyChangeListener > & xListener) throw ("
-        "css::uno::RuntimeException, css::beans::UnknownPropertyException, "
-        "css::lang::WrappedTargetException)\n{\n    ::cppu::PropertySetMixin< "
+        "css::beans::XPropertyChangeListener > & xListener)"
+        "\n{\n    ::cppu::PropertySetMixin< "
       << propertyhelper
       << " >::removePropertyChangeListener(aPropertyName, xListener);\n}\n\n";
 
     o << "void SAL_CALL " << classname << "addVetoableChangeListener(const "
         "::rtl::OUString & aPropertyName, const css::uno::Reference< "
-        "css::beans::XVetoableChangeListener > & xListener) throw ("
-        "css::uno::RuntimeException, css::beans::UnknownPropertyException, "
-        "css::lang::WrappedTargetException)\n{\n    ::cppu::PropertySetMixin< "
+        "css::beans::XVetoableChangeListener > & xListener)"
+        "\n{\n    ::cppu::PropertySetMixin< "
       << propertyhelper
       << " >::addVetoableChangeListener(aPropertyName, xListener);\n}\n\n";
 
     o << "void SAL_CALL " << classname << "removeVetoableChangeListener(const "
         "::rtl::OUString & aPropertyName, const css::uno::Reference< "
-        "css::beans::XVetoableChangeListener > & xListener) throw ("
-        "css::uno::RuntimeException, css::beans::UnknownPropertyException, "
-        "css::lang::WrappedTargetException)\n{\n    ::cppu::PropertySetMixin< "
+        "css::beans::XVetoableChangeListener > & xListener)"
+        "\n{\n    ::cppu::PropertySetMixin< "
       << propertyhelper
       << " >::removeVetoableChangeListener(aPropertyName, xListener);\n}\n\n";
 }
@@ -270,16 +263,14 @@ void generateXFastPropertySetBodies(std::ostream& o,
     o << "// com.sun.star.beans.XFastPropertySet:\n";
 
     o << "void SAL_CALL " << classname << "setFastPropertyValue( ::sal_Int32 "
-        "nHandle, const css::uno::Any& aValue ) throw ("
-        "css::beans::UnknownPropertyException, css::beans::PropertyVetoException, "
-        "css::lang::IllegalArgumentException, css::lang::WrappedTargetException, "
-        "css::uno::RuntimeException)\n{\n    ::cppu::PropertySetMixin< "
+        "nHandle, const css::uno::Any& aValue )"
+        "\n{\n    ::cppu::PropertySetMixin< "
       << propertyhelper << " >::setFastPropertyValue(nHandle, aValue);\n}\n\n";
 
 
     o << "css::uno::Any SAL_CALL " << classname << "getFastPropertyValue( "
-        "::sal_Int32 nHandle ) throw (css::beans::UnknownPropertyException, "
-        "css::lang::WrappedTargetException, css::uno::RuntimeException)\n{\n"
+        "::sal_Int32 nHandle )"
+        "\n{\n"
         "    return ::cppu::PropertySetMixin< "
       << propertyhelper << " >::getFastPropertyValue(nHandle);\n}\n\n";
 }
@@ -291,16 +282,14 @@ void generateXPropertyAccessBodies(std::ostream& o,
     o << "    // com.sun.star.beans.XPropertyAccess:\n";
 
     o << "css::uno::Sequence< css::beans::PropertyValue > SAL_CALL "
-      << classname << "getPropertyValues(  ) throw ("
-        "::com::sun::star::uno::RuntimeException)\n{\n"
+      << classname << "getPropertyValues(  )"
+        "\n{\n"
         "    return ::cppu::PropertySetMixin< "
       << propertyhelper << " >::getPropertyValues();\n}\n\n";
 
     o << "void SAL_CALL " << classname << "setPropertyValues( const "
-        "css::uno::Sequence< css::beans::PropertyValue >& aProps ) throw ("
-        "css::beans::UnknownPropertyException, css::beans::PropertyVetoException, "
-        "css::lang::IllegalArgumentException, css::lang::WrappedTargetException, "
-        "css::uno::RuntimeException)\n{\n"
+        "css::uno::Sequence< css::beans::PropertyValue >& aProps )"
+        "\n{\n"
         "    ::cppu::PropertySetMixin< "
       << propertyhelper << " >::setPropertyValues(aProps);\n}\n\n";
 }
@@ -309,10 +298,10 @@ void generateXLocalizable(std::ostream& o, const OString & classname)
 {
     o << "// ::com::sun::star::lang::XLocalizable:\n"
         "void SAL_CALL " << classname << "setLocale(const css::lang::"
-        "Locale & eLocale) throw (css::uno::RuntimeException)\n{\n"
+        "Locale & eLocale)\n{\n"
         "     m_locale = eLocale;\n}\n\n"
-        "css::lang::Locale SAL_CALL " << classname << "getLocale() "
-        "throw (css::uno::RuntimeException)\n{\n    return m_locale;\n}\n\n";
+        "css::lang::Locale SAL_CALL " << classname << "getLocale()"
+        "\n{\n    return m_locale;\n}\n\n";
 }
 
 void generateXAddInBodies(std::ostream& o, const OString & classname)
@@ -320,7 +309,7 @@ void generateXAddInBodies(std::ostream& o, const OString & classname)
     o << "// ::com::sun::star::sheet::XAddIn:\n";
 
     o << "::rtl::OUString SAL_CALL " << classname << "getProgrammaticFuntionName("
-        "const ::rtl::OUString & aDisplayName) throw (css::uno::RuntimeException)"
+        "const ::rtl::OUString & aDisplayName)"
         "\n{\n    ::rtl::OUString ret;\n    try {\n        css::uno::Reference< "
         "css::container::XNameAccess > xNAccess(m_xHAccess, css::uno::UNO_QUERY);\n"
         "        css::uno::Sequence< ::rtl::OUString > functions = "
@@ -335,37 +324,37 @@ void generateXAddInBodies(std::ostream& o, const OString & classname)
         "     catch ( css::uno::Exception & ) {\n    }\n    return ret;\n}\n\n";
 
     o << "::rtl::OUString SAL_CALL " << classname << "getDisplayFunctionName(const "
-        "::rtl::OUString & aProgrammaticName) throw (css::uno::RuntimeException)\n"
+        "::rtl::OUString & aProgrammaticName)\n"
         "{\n    return getAddinProperty(aProgrammaticName, ::rtl::OUString(), "
         "sDISPLAYNAME);\n}\n\n";
 
     o << "::rtl::OUString SAL_CALL " << classname << "getFunctionDescription(const "
-        "::rtl::OUString & aProgrammaticName) throw (css::uno::RuntimeException)\n"
+        "::rtl::OUString & aProgrammaticName)\n"
         "{\n    return getAddinProperty(aProgrammaticName, ::rtl::OUString(), "
         "sDESCRIPTION);\n}\n\n";
 
     o << "::rtl::OUString SAL_CALL " << classname << "getDisplayArgumentName(const "
-        "::rtl::OUString & aProgrammaticFunctionName, ::sal_Int32 nArgument) throw "
-        "(css::uno::RuntimeException)\n{\n    return getAddinProperty("
+        "::rtl::OUString & aProgrammaticFunctionName, ::sal_Int32 nArgument)"
+        "\n{\n    return getAddinProperty("
         "aProgrammaticFunctionName,\n                            m_functionMap["
         "aProgrammaticFunctionName][nArgument],\n"
         "                            sDISPLAYNAME);\n}\n\n";
 
     o << "::rtl::OUString SAL_CALL " << classname << "getArgumentDescription(const "
-        "::rtl::OUString & aProgrammaticFunctionName, ::sal_Int32 nArgument) throw "
-        "(css::uno::RuntimeException)\n{\n    return getAddinProperty("
+        "::rtl::OUString & aProgrammaticFunctionName, ::sal_Int32 nArgument)"
+        "\n{\n    return getAddinProperty("
         "aProgrammaticFunctionName,\n                            "
         "m_functionMap[aProgrammaticFunctionName][nArgument],\n"
         "                            sDESCRIPTION);\n}\n\n";
 
     o << "::rtl::OUString SAL_CALL " << classname << "getProgrammaticCategoryName("
-        "const ::rtl::OUString & aProgrammaticFunctionName) throw ("
-        "css::uno::RuntimeException)\n{\n    return getAddinProperty("
+        "const ::rtl::OUString & aProgrammaticFunctionName)"
+        "\n{\n    return getAddinProperty("
         "aProgrammaticFunctionName, ::rtl::OUString(), sCATEGORY);\n}\n\n";
 
     o << "::rtl::OUString SAL_CALL " << classname << "getDisplayCategoryName(const "
-        "::rtl::OUString & aProgrammaticFunctionName) throw ("
-        "css::uno::RuntimeException)\n{\n    return getAddinProperty("
+        "::rtl::OUString & aProgrammaticFunctionName)"
+        "\n{\n    return getAddinProperty("
         "aProgrammaticFunctionName, ::rtl::OUString(), "
         "sCATEGORYDISPLAYNAME);\n}\n\n";
 }
@@ -374,8 +363,8 @@ void generateXCompatibilityNamesBodies(std::ostream& o, const OString & classnam
 {
     o << "// ::com::sun::star::sheet::XCompatibilityNames:\n"
         "css::uno::Sequence< css::sheet::LocalizedName > SAL_CALL " << classname
-      << "getCompatibilityNames(const ::rtl::OUString & aProgrammaticName) throw "
-        "(css::uno::RuntimeException)\n{\n    css::uno::Sequence< "
+      << "getCompatibilityNames(const ::rtl::OUString & aProgrammaticName)"
+        "\n{\n    css::uno::Sequence< "
         "css::sheet::LocalizedName > seqLocalizedNames;\n    try {\n        "
         "::rtl::OUStringBuffer buf("
         "aProgrammaticName);\n        buf.appendAscii(\"/CompatibilityName\");\n"
@@ -413,8 +402,8 @@ void generateXInitialization(std::ostream& o, const OString & classname)
 {
     o << "// ::com::sun::star::lang::XInitialization:\n"
         "void SAL_CALL " << classname << "initialize( const css::uno::Sequence< "
-        "css::uno::Any >& aArguments ) "
-        "throw (css::uno::Exception, css::uno::RuntimeException)\n{\n"
+        "css::uno::Any >& aArguments )"
+        "\n{\n"
         "    css::uno::Reference < css::frame::XFrame > xFrame;\n"
         "    if ( aArguments.getLength() ) {\n        aArguments[0] >>= xFrame;\n"
         "        m_xFrame = xFrame;\n    }\n}\n\n";
@@ -428,8 +417,8 @@ void generateXDispatch(std::ostream& o,
     // dispatch
     o << "// ::com::sun::star::frame::XDispatch:\n"
         "void SAL_CALL " << classname << "dispatch( const css::util::URL& aURL, const "
-        "css::uno::Sequence< css::beans::PropertyValue >& aArguments ) throw"
-        "(css::uno::RuntimeException)\n{\n";
+        "css::uno::Sequence< css::beans::PropertyValue >& aArguments )"
+        "\n{\n";
 
     ProtocolCmdMap::const_iterator iter = protocolCmdMap.begin();
     while (iter != protocolCmdMap.end()) {
@@ -450,14 +439,14 @@ void generateXDispatch(std::ostream& o,
 
     // addStatusListener
     o << "void SAL_CALL " << classname << "addStatusListener( const css::uno::Reference< "
-        "css::frame::XStatusListener >& xControl, const css::util::URL& aURL ) "
-        "throw (css::uno::RuntimeException)\n{\n"
+        "css::frame::XStatusListener >& xControl, const css::util::URL& aURL )"
+        "\n{\n"
         "    // add your own code here\n}\n\n";
 
     // removeStatusListener
     o << "void SAL_CALL " << classname << "removeStatusListener( const css::uno::Reference"
-        "< css::frame::XStatusListener >& xControl, const css::util::URL& aURL ) "
-        "throw (css::uno::RuntimeException)\n{\n"
+        "< css::frame::XStatusListener >& xControl, const css::util::URL& aURL )"
+        "\n{\n"
         "    // add your own code here\n}\n\n";
 }
 
@@ -471,8 +460,8 @@ void generateXDispatchProvider(std::ostream& o,
     o << "// ::com::sun::star::frame::XDispatchProvider:\n"
         "css::uno::Reference< css::frame::XDispatch > SAL_CALL " << classname
       << "queryDispatch( const css::util::URL& aURL,"
-        " const ::rtl::OUString& sTargetFrameName, sal_Int32 nSearchFlags ) "
-        "throw(css::uno::RuntimeException)\n{\n    css::uno::Reference< "
+        " const ::rtl::OUString& sTargetFrameName, sal_Int32 nSearchFlags )"
+        "\n{\n    css::uno::Reference< "
         "css::frame::XDispatch > xRet;\n"
         "    if ( !m_xFrame.is() )\n        return 0;\n\n";
 
@@ -495,8 +484,8 @@ void generateXDispatchProvider(std::ostream& o,
     // queryDispatches
     o << "css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL "
       << classname << "queryDispatches( const css::uno::Sequence< "
-        "css::frame::DispatchDescriptor >& seqDescripts ) throw("
-        "css::uno::RuntimeException)\n{\n"
+        "css::frame::DispatchDescriptor >& seqDescripts )"
+        "\n{\n"
         "    sal_Int32 nCount = seqDescripts.getLength();\n"
         "    css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > "
         "lDispatcher(nCount);\n\n"
@@ -566,8 +555,8 @@ void generateAddinConstructorAndHelper(std::ostream& o,
 
         o << "// addin configuration property helper function:\n::rtl::OUString "
             "SAL_CALL " << classname << "::getAddinProperty(const ::rtl::OUString &"
-            " funcName, const ::rtl::OUString & paramName, const char * propName) "
-            "throw (css::uno::RuntimeException)\n{\n"
+            " funcName, const ::rtl::OUString & paramName, const char * propName)"
+            "\n{\n"
             "    ::rtl::OUString ret;\n    try {\n        "
             "::rtl::OUStringBuffer buf(funcName);\n"
             "        if (paramName.getLength() > 0) {\n"
@@ -687,8 +676,7 @@ OString generateClassDefinition(std::ostream& o,
     if (propertyhelper.getLength() > 1) {
         o << "    // ::com::sun::star::uno::XInterface:\n"
             "    virtual css::uno::Any SAL_CALL queryInterface("
-            "css::uno::Type const & type) throw ("
-            "css::uno::RuntimeException);\n";
+            "css::uno::Type const & type);\n";
 
         OStringBuffer buffer(256);
         buffer.append(parentname);
@@ -733,8 +721,8 @@ OString generateClassDefinition(std::ostream& o,
             "    typedef std::hash_map< rtl::OUString, ParamMap, "
             "rtl::OUStringHash > FunctionMap;\n\n"
             "    ::rtl::OUString SAL_CALL getAddinProperty(const ::rtl::OUString & "
-            "funcName, const ::rtl::OUString & paramName, const char * propName) "
-            "throw (css::uno::RuntimeException);\n\n";
+            "funcName, const ::rtl::OUString & paramName, const char * propName"
+            ");\n\n";
     }
 
     if (supportxcomponent) {
@@ -869,13 +857,13 @@ void generateXServiceInfoBodies(std::ostream& o,
                                 OString const & comphelpernamespace)
 {
     o << "// com.sun.star.uno.XServiceInfo:\n"
-      << "::rtl::OUString SAL_CALL " << classname << "getImplementationName() "
-      << "throw (css::uno::RuntimeException)\n{\n    "
+      << "::rtl::OUString SAL_CALL " << classname << "getImplementationName()"
+      << "\n{\n    "
       << "return " << comphelpernamespace << "::_getImplementationName();\n}\n\n";
 
     o << "::sal_Bool SAL_CALL " << classname
       << "supportsService(::rtl::OUString const & "
-      << "serviceName) throw (css::uno::RuntimeException)\n{\n    "
+      << "serviceName)\n{\n    "
       << "css::uno::Sequence< ::rtl::OUString > serviceNames = "
       << comphelpernamespace << "::_getSupportedServiceNames();\n    "
       << "for (::sal_Int32 i = 0; i < serviceNames.getLength(); ++i) {\n    "
@@ -883,7 +871,7 @@ void generateXServiceInfoBodies(std::ostream& o,
       << "    }\n    return sal_False;\n}\n\n";
 
     o << "css::uno::Sequence< ::rtl::OUString > SAL_CALL " << classname
-      << "getSupportedServiceNames() throw (css::uno::RuntimeException)\n{\n    "
+      << "getSupportedServiceNames()\n{\n    "
       << "return " << comphelpernamespace
       << "::_getSupportedServiceNames();\n}\n\n";
 }
@@ -926,8 +914,8 @@ void generateQueryInterface(std::ostream& o,
         return;
 
     o << "css::uno::Any " << classname
-      << "::queryInterface(css::uno::Type const & type) throw ("
-        "css::uno::RuntimeException)\n{\n    ";
+      << "::queryInterface(css::uno::Type const & type)"
+        "\n{\n    ";
 
     if (propertyhelper.getLength() >= 1)
         o << "return ";
