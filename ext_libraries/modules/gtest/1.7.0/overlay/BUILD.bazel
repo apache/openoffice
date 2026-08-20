@@ -13,10 +13,27 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 # `#include "src/gtest-internal-inl.h"` resolves; `include/` is for consumers'
 # `#include "gtest/gtest.h"`.
 #
-# GTEST_USE_OWN_TR1_TUPLE=1 reproduces use-own-tuple.patch: VS2008's <tr1/tuple>
-# is incomplete, so gtest uses its bundled tuple.  It is a `defines` (propagated)
-# not a local define because gtest-port.h is included by consumers too and the
-# tuple choice MUST be identical on both sides of the ABI.
+# THE TUPLE CHOICE IS LEFT TO gtest-port.h's OWN DETECTION, and must stay that
+# way: it is the one setting here that differs per toolchain, and gtest gets it
+# right on all three.
+#   * VC9 (_MSC_VER 1500, no /Zc:__cplusplus): neither GTEST_ENV_HAS_TR1_TUPLE_
+#     (needs _MSC_VER >= 1600) nor GTEST_ENV_HAS_STD_TUPLE_ (needs
+#     GTEST_LANG_CXX11) is set, so GTEST_USE_OWN_TR1_TUPLE comes out 1 -- the
+#     bundled tuple, which is what use-own-tuple.patch forced in the dmake
+#     recipe, because VS2008's own <tr1/tuple> is incomplete.
+#   * VS2019 (_MSC_VER 1929, /std:c++14 /Zc:__cplusplus): both are set, so
+#     GTEST_USE_OWN_TR1_TUPLE comes out 0 and gtest-port.h includes the real
+#     <tuple> and aliases it into ::std::tr1.
+# Hardcoding `defines = ["GTEST_USE_OWN_TR1_TUPLE=1"]` here was correct while VC9
+# was the only compiler, and became a build break the moment a modern one
+# appeared: it forces the bundled tuple into a std::tr1 that the modern STL no
+# longer has, and gtest-tuple.h then collides with the real <tuple> (~100 errors
+# in gtest-tuple.h, "type is not a member of std::tuple_element").
+#
+# Whatever it resolves to, it is a PROPAGATED property, not a local one:
+# gtest-port.h is included by consumers too, and the tuple choice must be
+# identical on both sides of the ABI.  Detection gives that for free, since every
+# TU in one configuration sees the same compiler.
 
 _COPTS = [
     "/EHsc",     # gtest uses try/catch (exception tests)
@@ -47,7 +64,6 @@ cc_library(
         ".",        # gtest-all.cc: #include "src/gtest-internal-inl.h"
     ],
     copts = _COPTS,
-    defines = ["GTEST_USE_OWN_TR1_TUPLE=1"],
     visibility = ["//visibility:public"],
 )
 
