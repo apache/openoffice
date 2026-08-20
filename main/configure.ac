@@ -2361,6 +2361,91 @@ AC_SUBST(MSPDB_PATH)
 AC_SUBST(MSVC_MODERN)
 AC_SUBST(USE_MINGW)
 
+dnl ===================================================================
+dnl  The Windows 10 SDK, for a UCRT-generation toolset
+dnl ===================================================================
+dnl  This sits here, immediately after the compiler, rather than next to
+dnl  the Platform SDK check far below, because the SDK now supplies
+dnl  midl.exe and the Windows Installer tools -- and the .NET/midl hunt
+dnl  is only a few lines further down.
+if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
+	dnl =====================================================================
+	dnl  A UCRT-generation toolset is paired with the Windows 10/11 SDK,
+	dnl  whose layout is genuinely different rather than merely renamed.
+	dnl  Platform SDK v7.0 has one Include/ and one Lib/; the Windows 10 SDK
+	dnl  has FOUR include trees (ucrt, um, shared, winrt) and TWO lib trees
+	dnl  (ucrt, um) per installed version, each under a version directory.
+	dnl  So the single PSDK_HOME/Include and PSDK_HOME/Lib that set_soenv.in
+	dnl  builds by concatenation become a version plus a fixed set of
+	dnl  subdirectories -- and that version is what has to be found here.
+	AC_MSG_CHECKING([for the Windows 10 SDK])
+	if test -z "$with_windows_sdk_home"; then
+		WINDOWS_SDK_HOME=`$OOWINTOOL --psdk-home 2>/dev/null`
+		dnl  oowintool knows only the pre-Windows-8 registry keys, so it
+		dnl  usually comes back empty here.  Fall back to the documented
+		dnl  install root, which has not moved since the SDK was split out
+		dnl  of Visual Studio.
+		if test ! -d "$WINDOWS_SDK_HOME/Include"; then
+			WINDOWS_SDK_HOME="/cygdrive/c/Program Files (x86)/Windows Kits/10"
+		fi
+	else
+		WINDOWS_SDK_HOME=`cygpath -u "$with_windows_sdk_home"`
+	fi
+	dnl  Remove a possible trailing slash
+	WINDOWS_SDK_HOME=`echo $WINDOWS_SDK_HOME | $SED 's:/$::'`
+
+	dnl  Pick the newest COMPLETE version.  Completeness matters more than it
+	dnl  sounds: bin/ routinely holds several versions while Include/ and
+	dnl  Lib/ hold one or two, so selecting on bin/ alone can pick a version
+	dnl  that has no headers at all.  Compare component by component as
+	dnl  integers -- a plain string compare sorts 10.0.9xxxx above
+	dnl  10.0.19041.
+	if test -n "$with_windows_sdk_version"; then
+		WINDOWS_SDK_VERSION="$with_windows_sdk_version"
+	else
+		windows_sdk_candidates=
+		for sdkver in `ls "$WINDOWS_SDK_HOME/Include" 2>/dev/null`; do
+			if test -d "$WINDOWS_SDK_HOME/Include/$sdkver/um" -a -d "$WINDOWS_SDK_HOME/Lib/$sdkver/um"; then
+				windows_sdk_candidates="$windows_sdk_candidates $sdkver"
+			fi
+		done
+		WINDOWS_SDK_VERSION=`for v in $windows_sdk_candidates; do echo $v; done | $AWK -F. '{ printf "%05d%05d%05d%05d %s\n", $1, $2, $3, $4, $0 }' | sort | tail -n 1 | $AWK '{ print $2 }'`
+	fi
+	if test -z "$WINDOWS_SDK_VERSION"; then
+		AC_MSG_ERROR([No complete Windows 10 SDK found under $WINDOWS_SDK_HOME. A version counts as complete only when it has both an Include/<version>/um and a Lib/<version>/um. Use --with-windows-sdk-home and/or --with-windows-sdk-version.])
+	fi
+	AC_MSG_RESULT([$WINDOWS_SDK_VERSION in $WINDOWS_SDK_HOME])
+
+	dnl  PSDK_HOME stays the SDK root, so everything downstream that only
+	dnl  wants a base directory keeps working.  What changes is that the
+	dnl  include and lib paths are built from the version as well; that
+	dnl  happens in set_soenv.in.
+	PSDK_HOME="$WINDOWS_SDK_HOME"
+
+	windows_sdk_um="$WINDOWS_SDK_HOME/Include/$WINDOWS_SDK_VERSION/um"
+	if test ! -f "$windows_sdk_um/adoint.h" -o ! -f "$windows_sdk_um/sqlucode.h" -o ! -f "$windows_sdk_um/usp10.h"; then
+		AC_MSG_ERROR([$windows_sdk_um is missing headers this build needs (adoint.h, sqlucode.h, usp10.h). Install the "Windows SDK for Desktop C++" component.])
+	fi
+	windows_sdk_lib="$WINDOWS_SDK_HOME/Lib/$WINDOWS_SDK_VERSION"
+	if test ! -f "$windows_sdk_lib/ucrt/x86/ucrt.lib" -a ! -f "$windows_sdk_lib/ucrt/x64/ucrt.lib"; then
+		AC_MSG_ERROR([$windows_sdk_lib has no ucrt import library for either architecture.])
+	fi
+
+	dnl  The Windows Installer tools moved into bin/<version>/<arch>.  They
+	dnl  run on the build machine, so x86 is the right choice whatever is
+	dnl  being built.
+	WINDOWS_SDK_BINDIR="$WINDOWS_SDK_HOME/bin/$WINDOWS_SDK_VERSION/x86"
+	for sdktool in msiinfo msidb uuidgen msitran; do
+		if test ! -x "$WINDOWS_SDK_BINDIR/$sdktool.exe"; then
+			AC_MSG_ERROR([$sdktool.exe is missing from $WINDOWS_SDK_BINDIR. Install the "MSI Tools" SDK component.])
+		fi
+	done
+	WINDOWS_VISTA_PSDK=TRUE
+fi
+AC_SUBST(WINDOWS_SDK_HOME)
+AC_SUBST(WINDOWS_SDK_VERSION)
+AC_SUBST(WINDOWS_SDK_BINDIR)
+
 dnl Compiler detection, logic from setsoenv.in
 case "$build_os" in
 	*cygwin*)
@@ -2522,6 +2607,13 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 		if test -x "$psdktest/Bin/midl.exe" ; then
 			MIDL_PATH="$psdktest/Bin"
 		fi
+	fi
+	dnl  On the Windows 10 SDK midl.exe sits with the other SDK tools in
+	dnl  bin/<version>/<arch>.  This wins over anything found above: an
+	dnl  AC_PATH_PROG hit from an ambient vcvars environment is exactly the
+	dnl  kind of mismatch that produces headers the compiler cannot parse.
+	if test -n "$WINDOWS_SDK_BINDIR" -a -x "$WINDOWS_SDK_BINDIR/midl.exe" ; then
+		MIDL_PATH="$WINDOWS_SDK_BINDIR"
 	fi
 	if test ! -x "$MIDL_PATH/midl.exe"; then
 		AC_MSG_ERROR([midl.exe not found. Make sure it's in the path or use --with-midl-path])
@@ -5636,80 +5728,7 @@ dnl Check for the Microsoft Platform SDK.
 dnl =========================================
 dnl FIXME: I don't know yet if PSDK works with MinGW, keep it until I know better,
 dnl and add "-a \( "$WITH_MINGWIN" != "yes" \)" then
-if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
-	dnl =====================================================================
-	dnl  A UCRT-generation toolset is paired with the Windows 10/11 SDK,
-	dnl  whose layout is genuinely different rather than merely renamed.
-	dnl  Platform SDK v7.0 has one Include/ and one Lib/; the Windows 10 SDK
-	dnl  has FOUR include trees (ucrt, um, shared, winrt) and TWO lib trees
-	dnl  (ucrt, um) per installed version, each under a version directory.
-	dnl  So the single PSDK_HOME/Include and PSDK_HOME/Lib that set_soenv.in
-	dnl  builds by concatenation become a version plus a fixed set of
-	dnl  subdirectories -- and that version is what has to be found here.
-	AC_MSG_CHECKING([for the Windows 10 SDK])
-	if test -z "$with_windows_sdk_home"; then
-		WINDOWS_SDK_HOME=`$OOWINTOOL --psdk-home 2>/dev/null`
-		dnl  oowintool knows only the pre-Windows-8 registry keys, so it
-		dnl  usually comes back empty here.  Fall back to the documented
-		dnl  install root, which has not moved since the SDK was split out
-		dnl  of Visual Studio.
-		if test ! -d "$WINDOWS_SDK_HOME/Include"; then
-			WINDOWS_SDK_HOME="/cygdrive/c/Program Files (x86)/Windows Kits/10"
-		fi
-	else
-		WINDOWS_SDK_HOME=`cygpath -u "$with_windows_sdk_home"`
-	fi
-	dnl  Remove a possible trailing slash
-	WINDOWS_SDK_HOME=`echo $WINDOWS_SDK_HOME | $SED 's:/$::'`
-
-	dnl  Pick the newest COMPLETE version.  Completeness matters more than it
-	dnl  sounds: bin/ routinely holds several versions while Include/ and
-	dnl  Lib/ hold one or two, so selecting on bin/ alone can pick a version
-	dnl  that has no headers at all.  Compare component by component as
-	dnl  integers -- a plain string compare sorts 10.0.9xxxx above
-	dnl  10.0.19041.
-	if test -n "$with_windows_sdk_version"; then
-		WINDOWS_SDK_VERSION="$with_windows_sdk_version"
-	else
-		windows_sdk_candidates=
-		for sdkver in `ls "$WINDOWS_SDK_HOME/Include" 2>/dev/null`; do
-			if test -d "$WINDOWS_SDK_HOME/Include/$sdkver/um" -a -d "$WINDOWS_SDK_HOME/Lib/$sdkver/um"; then
-				windows_sdk_candidates="$windows_sdk_candidates $sdkver"
-			fi
-		done
-		WINDOWS_SDK_VERSION=`for v in $windows_sdk_candidates; do echo $v; done | $AWK -F. '{ printf "%05d%05d%05d%05d %s\n", $1, $2, $3, $4, $0 }' | sort | tail -n 1 | $AWK '{ print $2 }'`
-	fi
-	if test -z "$WINDOWS_SDK_VERSION"; then
-		AC_MSG_ERROR([No complete Windows 10 SDK found under $WINDOWS_SDK_HOME. A version counts as complete only when it has both an Include/<version>/um and a Lib/<version>/um. Use --with-windows-sdk-home and/or --with-windows-sdk-version.])
-	fi
-	AC_MSG_RESULT([$WINDOWS_SDK_VERSION in $WINDOWS_SDK_HOME])
-
-	dnl  PSDK_HOME stays the SDK root, so everything downstream that only
-	dnl  wants a base directory keeps working.  What changes is that the
-	dnl  include and lib paths are built from the version as well; that
-	dnl  happens in set_soenv.in.
-	PSDK_HOME="$WINDOWS_SDK_HOME"
-
-	windows_sdk_um="$WINDOWS_SDK_HOME/Include/$WINDOWS_SDK_VERSION/um"
-	if test ! -f "$windows_sdk_um/adoint.h" -o ! -f "$windows_sdk_um/sqlucode.h" -o ! -f "$windows_sdk_um/usp10.h"; then
-		AC_MSG_ERROR([$windows_sdk_um is missing headers this build needs (adoint.h, sqlucode.h, usp10.h). Install the "Windows SDK for Desktop C++" component.])
-	fi
-	windows_sdk_lib="$WINDOWS_SDK_HOME/Lib/$WINDOWS_SDK_VERSION"
-	if test ! -f "$windows_sdk_lib/ucrt/x86/ucrt.lib" -a ! -f "$windows_sdk_lib/ucrt/x64/ucrt.lib"; then
-		AC_MSG_ERROR([$windows_sdk_lib has no ucrt import library for either architecture.])
-	fi
-
-	dnl  The Windows Installer tools moved into bin/<version>/<arch>.  They
-	dnl  run on the build machine, so x86 is the right choice whatever is
-	dnl  being built.
-	WINDOWS_SDK_BINDIR="$WINDOWS_SDK_HOME/bin/$WINDOWS_SDK_VERSION/x86"
-	for sdktool in msiinfo msidb uuidgen msitran; do
-		if test ! -x "$WINDOWS_SDK_BINDIR/$sdktool.exe"; then
-			AC_MSG_ERROR([$sdktool.exe is missing from $WINDOWS_SDK_BINDIR. Install the "MSI Tools" SDK component.])
-		fi
-	done
-	WINDOWS_VISTA_PSDK=TRUE
-elif test \( "$_os" = "WINNT" \) ; then
+if test \( "$_os" = "WINNT" \) -a \( -z "$MSVC_MODERN" \) ; then
 	AC_MSG_CHECKING([for PSDK files])
 	if test -z "$with_psdk_home"; then
 		# This first line will detect a February 2003 Microsoft Platform SDK
@@ -5778,9 +5797,6 @@ dnl Check if this is the right SDK.
 fi
 AC_SUBST(PSDK_HOME)
 AC_SUBST(WINDOWS_VISTA_PSDK)
-AC_SUBST(WINDOWS_SDK_HOME)
-AC_SUBST(WINDOWS_SDK_VERSION)
-AC_SUBST(WINDOWS_SDK_BINDIR)
 
 dnl =========================================
 dnl Check for the Microsoft DirectX SDK.

@@ -1225,7 +1225,15 @@ elsif ($platform =~ m/cygwin/)
 
    # Add path to compiler
    if ( "@COM@" eq "MSC" ) {
-       if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64") && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+       if ( "@MSVC_MODERN@" ne "" ) {
+           # bin/ is split by host and then by target.  The host half has to
+           # match what configure picked, or the compiler on PATH is not the
+           # one whose version was measured.
+           my $host = -d '@COMPATH@/bin/Hostx64' ? "Hostx64" : "Hostx86";
+           my $target = ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" eq "TRUE" ) )
+                        ? "x64" : "x86";
+           $tmppath = CygFormat($COMPATH).$BIN.$ds.$host.$ds.$target;
+       } elsif ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64") && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
            $tmppath = CygFormat($COMPATH).$BIN;
        } elsif ( $CPUNAME eq "X86_64" ) {
            $tmppath = CygFormat($COMPATH).$BIN.$ds."amd64";
@@ -1236,10 +1244,15 @@ elsif ($platform =~ m/cygwin/)
        $tmppath =~ s/^\/\//\//;
        $PATH .= $ps.$tmppath;
 
-       $tmppath = CygFormat($MSPDB_PATH);
-	   # for .NET to find mspdb71.dll (needed by CL.EXE C/C++ Compiler)
-	   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
-		   $PATH .= $ps.$tmppath;
+	   # for .NET to find mspdb71.dll (needed by CL.EXE C/C++ Compiler).
+	   # A modern toolset keeps its mspdb next to cl.exe, so configure never
+	   # looks for one and MSPDB_PATH is empty -- adding CygFormat("") here
+	   # would put a bare "/" on PATH.
+	   if ( $MSPDB_PATH ne "" ) {
+	       $tmppath = CygFormat($MSPDB_PATH);
+	       if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
+		       $PATH .= $ps.$tmppath;
+	       }
 	   }
 	   if ( ( $COMEX ge "10" ) ) {
 		   # .NET needs midl.exe
@@ -1252,10 +1265,16 @@ elsif ($platform =~ m/cygwin/)
 		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
 			   $PATH .= $ps.$tmppath;
 		   }
-		   # Native installer needs some files if the Windows Installer SDK
-               $tmppath = CygFormat($PSDK_HOME);
-		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath\/bin)(?:[:]|\Z)/i ) {
-			   $PATH .= $ps.$tmppath.$BIN;
+		   # rc.exe, mt.exe and the Windows Installer tools.  On the
+		   # Windows 10 SDK they all live in bin/<version>/<arch>; on the
+		   # old Platform SDK they are directly in bin/.
+		   if ( "@MSVC_MODERN@" ne "" ) {
+		       $tmppath = CygFormat(PathFormat('@WINDOWS_SDK_BINDIR@'));
+		   } else {
+		       $tmppath = CygFormat($PSDK_HOME).$BIN;
+		   }
+		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/i ) {
+			   $PATH .= $ps.$tmppath;
 		   }
 	   }
    } else { # Mingw is different
