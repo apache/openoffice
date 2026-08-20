@@ -2379,6 +2379,18 @@ if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
 	dnl  builds by concatenation become a version plus a fixed set of
 	dnl  subdirectories -- and that version is what has to be found here.
 	AC_MSG_CHECKING([for the Windows 10 SDK])
+	if test -z "$with_windows_sdk_home" -a -n "$with_psdk_home"; then
+		dnl  --with-psdk-home predates this option and is what existing build
+		dnl  scripts pass.  Honour it when it names a Windows 10 SDK; when it
+		dnl  names the old Platform SDK, say that it is being ignored rather
+		dnl  than quietly using something the user did not ask for.
+		windows_sdk_from_psdk=`cygpath -u "$with_psdk_home"`
+		if test -d "$windows_sdk_from_psdk/Include" -a -d "$windows_sdk_from_psdk/Lib"; then
+			with_windows_sdk_home="$with_psdk_home"
+		else
+			AC_MSG_WARN([--with-psdk-home=$with_psdk_home does not look like a Windows 10 SDK; ignoring it and searching for one. Use --with-windows-sdk-home to be explicit.])
+		fi
+	fi
 	if test -z "$with_windows_sdk_home"; then
 		WINDOWS_SDK_HOME=`$OOWINTOOL --psdk-home 2>/dev/null`
 		dnl  oowintool knows only the pre-Windows-8 registry keys, so it
@@ -2609,10 +2621,13 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 		fi
 	fi
 	dnl  On the Windows 10 SDK midl.exe sits with the other SDK tools in
-	dnl  bin/<version>/<arch>.  This wins over anything found above: an
-	dnl  AC_PATH_PROG hit from an ambient vcvars environment is exactly the
-	dnl  kind of mismatch that produces headers the compiler cannot parse.
-	if test -n "$WINDOWS_SDK_BINDIR" -a -x "$WINDOWS_SDK_BINDIR/midl.exe" ; then
+	dnl  bin/<version>/<arch>.  This is preferred over what the searches above
+	dnl  turn up -- an AC_PATH_PROG hit from an ambient vcvars environment is
+	dnl  exactly the kind of midl/headers mismatch that surfaces much later as
+	dnl  output the compiler cannot parse -- but NOT over --with-midl-path,
+	dnl  which is the user saying which one they mean.
+	if test -z "$with_midl_path" \
+	     -a -n "$WINDOWS_SDK_BINDIR" -a -x "$WINDOWS_SDK_BINDIR/midl.exe" ; then
 		MIDL_PATH="$WINDOWS_SDK_BINDIR"
 	fi
 	if test ! -x "$MIDL_PATH/midl.exe"; then

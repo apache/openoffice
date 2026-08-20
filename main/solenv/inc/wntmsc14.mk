@@ -96,19 +96,19 @@ LIBCMT+=vcruntime.lib ucrt.lib
 # every compile would have to serialise on.
 CFLAGSENABLESYMBOLS=-Z7
 
-# ATL and MFC moved out of the Platform SDK and into the toolset, and their
-# libraries gained the same per-architecture subdirectory the toolset's own
-# libraries have.  These are set with *= in the base file, i.e. only if unset,
-# so they need an unconditional assignment here rather than an append.
-.IF "$(CPU)" == "X"
-ATL_LIB:=$(COMPATH)/atlmfc/lib/x64
-MFC_LIB:=$(COMPATH)/atlmfc/lib/x64
-.ELSE
-ATL_LIB:=$(COMPATH)/atlmfc/lib/x86
-MFC_LIB:=$(COMPATH)/atlmfc/lib/x86
-.ENDIF
-ATL_INCLUDE:=$(COMPATH)/atlmfc/include
-MFC_INCLUDE:=$(COMPATH)/atlmfc/include
+# ATL and MFC are deliberately NOT set here.  configure already computes
+# ATL_INCLUDE / ATL_LIB / ATL_LIB_X64 / MFC_INCLUDE / MFC_LIB, honours
+# --with-atl-include-dir and friends, and then VALIDATES the result by looking
+# for atlbase.h and atls.lib -- and it exports them, which is why the base
+# file assigns them with *= (only if unset) rather than plainly.  Assigning
+# them here would override both configure's checked value and the user's
+# explicit flag with a guess.
+#
+# The guess would often be wrong, too: the "C++ ATL" component is a separate
+# Visual Studio install option, so a BuildTools installation frequently has no
+# atlmfc directory under the toolset at all.  Builds that need ATL point at
+# whichever copy they have -- commonly the WinDDK one -- through the configure
+# options, and that keeps working here unchanged.
 
 # --- warnings ------------------------------------------------------------
 
