@@ -2379,37 +2379,42 @@ if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
 	dnl  builds by concatenation become a version plus a fixed set of
 	dnl  subdirectories -- and that version is what has to be found here.
 	AC_MSG_CHECKING([for the Windows 10 SDK])
-	if test -z "$with_windows_sdk_home" -a -n "$with_psdk_home"; then
-		dnl  --with-psdk-home predates this option and is what existing build
-		dnl  scripts pass.  Honour it when it names a Windows 10 SDK; when it
-		dnl  names the old Platform SDK, say that it is being ignored rather
-		dnl  than quietly using something the user did not ask for.
-		dnl  The test has to be for the VERSIONED layout, not merely for
-		dnl  Include/ and Lib/ -- Platform SDK v7.0 has both of those, so a
-		dnl  looser test accepts it here and then fails the version scan
-		dnl  below with a misleading "no complete Windows 10 SDK" error.
-		dnl  Only a Windows 10 SDK has Include/<version>/um.
-		windows_sdk_from_psdk=`cygpath -u "$with_psdk_home"`
-		if test -n "`ls -d \"$windows_sdk_from_psdk\"/Include/*/um 2>/dev/null`"; then
-			with_windows_sdk_home="$with_psdk_home"
-		else
-			AC_MSG_WARN([--with-psdk-home=$with_psdk_home does not look like a Windows 10 SDK; ignoring it and searching for one. Use --with-windows-sdk-home to be explicit.])
+	dnl  Every candidate is judged by ONE rule: does it have Include/<ver>/um?
+	dnl  That is the only cheap thing that separates a Windows 10 SDK from the
+	dnl  old Platform SDK, which also has an Include/ and a Lib/ -- so a test
+	dnl  for those two accepts v7.0 and then fails the version scan below with
+	dnl  a message naming the right directory and the wrong reason.
+	dnl
+	dnl  In order: what the user said, what the old option said, what the
+	dnl  registry says (oowintool knows only pre-Windows-8 keys, so this is
+	dnl  usually the Platform SDK and usually rejected here), then the two
+	dnl  documented install roots.
+	windows_sdk_seen=
+	WINDOWS_SDK_HOME=
+	for windows_sdk_try in \
+		"$with_windows_sdk_home" \
+		"$with_psdk_home" \
+		"`$OOWINTOOL --psdk-home 2>/dev/null`" \
+		"/cygdrive/c/Program Files (x86)/Windows Kits/10" \
+		"/cygdrive/c/Program Files/Windows Kits/10" ; do
+		test -z "$windows_sdk_try" && continue
+		windows_sdk_try=`cygpath -u "$windows_sdk_try" 2>/dev/null || echo "$windows_sdk_try"`
+		windows_sdk_try=`echo "$windows_sdk_try" | $SED 's:/$::'`
+		windows_sdk_seen="$windows_sdk_seen
+	    $windows_sdk_try"
+		if test -n "`ls -d \"$windows_sdk_try\"/Include/*/um 2>/dev/null`"; then
+			WINDOWS_SDK_HOME="$windows_sdk_try"
+			break
 		fi
+	done
+	if test -z "$WINDOWS_SDK_HOME"; then
+		AC_MSG_ERROR([No Windows 10 SDK found. A directory qualifies only when it has an Include/<version>/um; the old Platform SDK does not, and is not a substitute. Tried, in order:$windows_sdk_seen
+
+Use --with-windows-sdk-home to name one explicitly.])
 	fi
-	if test -z "$with_windows_sdk_home"; then
-		WINDOWS_SDK_HOME=`$OOWINTOOL --psdk-home 2>/dev/null`
-		dnl  oowintool knows only the pre-Windows-8 registry keys, so it
-		dnl  usually comes back empty here.  Fall back to the documented
-		dnl  install root, which has not moved since the SDK was split out
-		dnl  of Visual Studio.
-		if test ! -d "$WINDOWS_SDK_HOME/Include"; then
-			WINDOWS_SDK_HOME="/cygdrive/c/Program Files (x86)/Windows Kits/10"
-		fi
-	else
-		WINDOWS_SDK_HOME=`cygpath -u "$with_windows_sdk_home"`
+	if test -n "$with_psdk_home" -a "$WINDOWS_SDK_HOME" != "`cygpath -u \"$with_psdk_home\" 2>/dev/null`"; then
+		AC_MSG_WARN([--with-psdk-home=$with_psdk_home is not a Windows 10 SDK; using $WINDOWS_SDK_HOME instead. It is still used for --with-frame-home purposes only if you passed it there too.])
 	fi
-	dnl  Remove a possible trailing slash
-	WINDOWS_SDK_HOME=`echo $WINDOWS_SDK_HOME | $SED 's:/$::'`
 
 	dnl  Pick the newest COMPLETE version.  Completeness matters more than it
 	dnl  sounds: bin/ routinely holds several versions while Include/ and
