@@ -189,6 +189,52 @@ gb_STDLIBS := \
     msvcrt \
     oldnames \
 
+# The UCRT compiler generation -- COMEX 14, i.e. VS2015 (cl 19.00) and every
+# toolset since.  This mirrors solenv/inc/wntmsc14.mk, which carries the same
+# delta for the dmake half of the build.  The two have to agree: a module built
+# by one links against libraries built by the other.  See that file for the
+# reasoning behind each of these.
+ifeq ($(COMEX),14)
+
+# C++14, not 17.  std::tr1 -- which boost/tr1 and the stlport shims name
+# directly -- is only present while _HAS_CXX17 is 0; the tree is still full of
+# empty exception specifications, which C++20 removes; and <hash_map> and
+# <hash_set> become a hard #error under C++17.  /std:c++03 is not an escape,
+# a modern cl rejects it outright (D9002).
+gb_CXXFLAGS += -std:c++14
+
+# Without this MSVC reports __cplusplus as 199711L whatever /std: says, and
+# the shims in main/stlport/systemstl branch on that value.
+gb_CXXFLAGS += -Zc:__cplusplus
+
+# The two halves of the old snprintf shim are not symmetric.  The UCRT
+# declares a real snprintf and refuses to compile with the name taken (C1189);
+# it has never declared snwprintf, because the wide C99 name has never existed
+# in any MSVC CRT.  So one half is dropped and the other kept.
+gb_CFLAGS += -Dsnwprintf=_snwprintf
+gb_CXXFLAGS += -Dsnwprintf=_snwprintf
+
+# stdext::hash_map and stdext::hash_set are deprecated to the point of a hard
+# #error.  These are the stdext containers, not std::unordered_map, so
+# replacing them is a refactor and not a build fix.
+gb_CFLAGS += -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
+gb_CXXFLAGS += -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
+
+# Warnings a modern cl adds in volume, every one of them a report about old
+# code: C4996 deprecated CRT and POSIX names, C4577 noexcept without an
+# exception handling mode (this build passes -EHa, which is one, but the
+# warning fires on the empty specifications anyway), C5040 an exception
+# specification on a function pointer type.
+gb_CFLAGS += -wd4996
+gb_CXXFLAGS += -wd4996 -wd4577 -wd5040
+
+# The CRT split in three when the UCRT arrived, and this build links
+# -NODEFAULTLIB, so the /DEFAULTLIB directives cl emits are ignored and every
+# part has to be named.
+gb_STDLIBS += vcruntime ucrt
+
+endif
+
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
 gb_CFLAGS_WERROR := -WX
 gb_CXXFLAGS_WERROR := -WX
