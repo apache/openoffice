@@ -26,7 +26,6 @@ _COPTS = [
     "/nologo",
     "/Gs",
     "/EHsc",
-    "/Dsnprintf=_snprintf",
     "/wd4061",
     "/wd4063",
     "/wd4127",
