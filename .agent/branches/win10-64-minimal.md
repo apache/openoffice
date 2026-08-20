@@ -120,16 +120,27 @@ the bulk deletion:
 - The nine destructor comments this branch wrote about
   `SAL_THROW( (RuntimeException) )` are retired, since nothing says that any more.
 
-**Deliberately not done, recorded rather than forgotten:** `main/unodevtools`'
-skeletonmaker still emits `throw (RuntimeException)` into the C++ skeletons it
-**generates** (centralised in `cpptypemaker.cxx` ~line 245, plus ~50 fragmented
-string literals in `cppcompskeleton.cxx`). Harmless — those are member functions,
-and an override more restrictive than a spec-free base is legal — but it hands new
-component authors a construct C++17 deleted. It could not be verified when (a)
-landed because the module was not built here; it is now migrated on
-`bazel-migration` with a gtest suite (`//main/unodevtools:skeletonmaker_test`), so
-it can be. `main/codemaker/source/bonobowrappermaker` likewise, and that one is
-dead code (in no `BUILD.bazel` and no `build.lst`).
+**The one deferral is now closed.** `main/unodevtools`' skeletonmaker was left
+out of (a) because the module was neither built nor migrated here, so the edit
+could not be verified. It is migrated on `bazel-migration` now, with a gtest
+suite, so the debt was paid: `printExceptionSpecification()` and its four call
+sites are gone from `cpptypemaker.cxx`, ~35 hand-written specifications are gone
+from `cppcompskeleton.cxx`, and so is the `SAL_THROW((css::uno::Exception))` on
+the generated `_create()` — which was the last non-empty `SAL_THROW` in any
+tracked file in the tree. Three cases of
+`//main/unodevtools:skeletonmaker_test` now pin the contract; reverting the
+generators turns exactly those three red and leaves the Java ones green. The
+empty `throw ()` on generated `acquire()`/`release()` stays, for (b).
+
+The same record named `main/codemaker/source/bonobowrappermaker` as carrying the
+debt too. **That was wrong** — it generates CORBA IDL, every `throw` in it is a
+throw statement in its own code, and it emits no specification in any spelling.
+It is dead code (in no `BUILD.bazel` and no `build.lst`) and needs nothing.
+
+Found while verifying, not fixed (it is a separate change to generated output):
+the generated class's private-destructor comment has no terminating newline, so
+`virtual ~<Class>() {}` lands **inside** the `//` comment and every skeleton gets
+an implicit public destructor. See `main/unodevtools/readme.md`.
 
 ### (b) — migrate the empty specification to `noexcept`
 

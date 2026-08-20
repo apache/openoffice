@@ -95,10 +95,82 @@ from failure by exit code, only by scraping stderr. This is upstream behaviour,
 reproduced identically here, and is left alone: source is not being changed in
 this migration. Worth knowing before anything automates the tool.
 
+## Second upstream quirk, found the same way and also left alone
+
+`generateClassDefinition()` writes the private-destructor comment without a
+terminating newline:
+
+```cpp
+o << "    // destructor is private and will be called indirectly by the release call"
+  << "    virtual ~" << classname << "() {}
+
+";
+```
+
+so every generated skeleton comes out as
+
+```cpp
+    // destructor is private and will be called indirectly by the release call    virtual ~MySvc() {}
+```
+
+— the declaration is inside the `//` comment. The class therefore gets an
+implicit **public** destructor instead of the private one the comment promises,
+which is the opposite of the intent for a reference-counted UNO object. It still
+compiles, which is why it has survived.
+
+This is unrelated to the exception specifications and is a one-character fix
+(`call
+`), but it changes generated output on its own account, so it is
+reported rather than folded into that change.
+
+## The skeletons no longer carry dynamic exception specifications
+
+The tree-wide removal of `throw(X)` deliberately left this module alone: it was
+neither built nor migrated at the time, so the edit could not be verified. It is
+built now, and it had a `qa/`, so the debt was paid here.
+
+Three generators emitted them, all into the C++ they *write*:
+
+- `cpptypemaker.cxx` had the centralised printer, `printExceptionSpecification()`
+  — deleted, along with its declaration in `skeletoncpp.hxx` and its four call
+  sites. Two of those sat in an `if`/`else` whose only other job was advancing
+  the attribute-method cursor with `method++`; that advance is kept as `++method`
+  and the `else` is gone.
+- `cppcompskeleton.cxx` had ~35 more, hand-written into fragmented string
+  literals rather than routed through the printer.
+- `cppcompskeleton.cxx` also emitted `SAL_THROW((css::uno::Exception))` on the
+  generated `_create()`. That is the same construct in the other spelling, and it
+  was the **last** non-empty `SAL_THROW` left in any tracked file in the tree.
+
+The **empty** `throw ()` on the generated `acquire()`/`release()` is kept
+deliberately. It is a different construct — MSVC implements it as
+`__declspec(nothrow)`, C++17 keeps it as a deprecated spelling of `noexcept` —
+and migrating it is a separate change, exactly as for the rest of the tree.
+`javatypemaker`/`javacompskeleton` are untouched: a Java `throws` clause is a
+checked-exception declaration, not this construct.
+
+### It also fixed generated code that was ill-formed
+
+`SAL_THROW((Exception))` appeared on the **definition** of `_create()` while the
+forward declaration a few lines above had no specification. C++ requires all
+declarations of a function to carry compatible exception specifications, so the
+skeletons this tool emitted were only accepted because MSVC does not enforce the
+rule. They now agree, because neither has one.
+
+### A related note that was wrong, and is corrected here
+
+The record of the throw-spec removal named
+`main/codemaker/source/bonobowrappermaker` as carrying the same debt. It does
+not: that generator writes CORBA IDL, and every `throw` in it is a throw
+*statement* in its own code. It emits no exception specification in any
+spelling. It remains dead code (see the last section) and needs nothing.
+
 ## qa: `//main/unodevtools:skeletonmaker_test`, and why it needs no install
 
 Seven GoogleTest cases over the generators. Upstream has no `qa/` here, so these
-are new, not ported.
+are new, not ported. Three of them also pin that no generator emits a dynamic
+exception specification, in either spelling — `hasExceptionSpec()` in the suite
+states that contract, and deliberately tolerates the empty `throw ()`.
 
 They exist because the tool cannot usefully be tested through its command line:
 by the section above, a failed generation exits 0, so a test judging the exe by
@@ -158,4 +230,6 @@ in the tree calls it, so there is no staging entry to add yet; the target is
 
 Also note `main/codemaker/source/bonobowrappermaker`, a sibling of the
 `commoncpp`/`commonjava` helpers this tool links: it is dead code, in no
-`BUILD.bazel` and no `build.lst`, and stays that way.
+`BUILD.bazel` and no `build.lst`, and stays that way. It emits CORBA IDL, not
+C++, so despite what the throw-spec record said it never carried an exception
+specification to remove.
