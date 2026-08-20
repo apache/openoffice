@@ -754,6 +754,23 @@ AC_ARG_WITH(frame-home,
 
                           Usage: --with-frame-home=<absolute path to Framework SDK [[home]]>
 ],,)
+AC_ARG_WITH(windows-sdk-home,
+[  --with-windows-sdk-home For Windows users building with a VS2015-or-newer
+                          toolset: the root of the Windows 10/11 SDK, i.e. the
+                          directory holding Include/, Lib/ and bin/.  Only
+                          needed when it is not in the default location.
+
+                          Usage: --with-windows-sdk-home=<absolute path to Windows Kits\10>
+],,)
+
+AC_ARG_WITH(windows-sdk-version,
+[  --with-windows-sdk-version
+                          Pin the Windows 10/11 SDK to one version instead of
+                          taking the newest complete one that is installed.
+
+                          Usage: --with-windows-sdk-version=10.0.19041.0
+],,)
+
 AC_ARG_WITH(psdk-home,
 [  --with-psdk-home        For Windows users, please supply the path to the
                           Microsoft Platform SDK.
@@ -2164,8 +2181,29 @@ if test "$_os" = "WINNT"; then
 		AC_MSG_RESULT([done])
 
 		dnl ===========================================================
+		dnl  Which MSVC layout is --with-cl-home pointing at?
+		dnl ===========================================================
+		dnl  VS2008 (VC9) keeps cl.exe in VC/bin and its debug-info server
+		dnl  (mspdb80.dll) somewhere else entirely -- Common7/IDE, or the
+		dnl  Windows SDK's own bin.  From VS2015 on the toolset is versioned,
+		dnl  self-contained and reached as
+		dnl      VC/Tools/MSVC/<toolset>/bin/Host<host>/<target>/cl.exe
+		dnl  with its headers in <toolset>/include, its import libraries in
+		dnl  <toolset>/lib/<target>, and mspdb140.dll next to cl.exe.
+		dnl  Detecting the layout here lets the mspdb hunt and the VC/bin
+		dnl  logic below stay exactly as they were for VC9.
+		MSVC_MODERN=
+		if test -d "$with_cl_home/bin/Hostx86" -o -d "$with_cl_home/bin/Hostx64"; then
+			MSVC_MODERN="TRUE"
+		fi
+
+		dnl ===========================================================
 		dnl  Check for mspdb71.dll/mspdb80.dll
 		dnl ===========================================================
+		dnl  VC9 and older only: a modern toolset ships its mspdb*.dll in the
+		dnl  same directory as cl.exe, which the compile actions already have
+		dnl  on PATH.
+		if test -z "$MSVC_MODERN"; then
 		dnl  .NET 2003/5/8 Compiler
 		if test -n "$with_mspdb_path";then
 			with_mspdb_path=`cygpath -u "$with_mspdb_path"`
@@ -2200,8 +2238,36 @@ if test "$_os" = "WINNT"; then
 		MSPDB_PATH=`cygpath -u "$MSPDB_PATH"`
 		dnl The path needs to be added before cl is called
 		PATH="$MSPDB_PATH:$PATH"
+		fi
 
 		AC_MSG_CHECKING([the Microsoft C/C++ Compiler])
+		dnl  A modern toolset splits bin/ by HOST and then by TARGET, so the
+		dnl  cross compiler is a directory rather than VC9's "bin/amd64"
+		dnl  suffix.  Prefer a Hostx64 tree when one exists: the x64-hosted
+		dnl  compiler is not confined to a 2GB address space, which matters
+		dnl  on the larger translation units in this tree.
+		if test -n "$MSVC_MODERN"; then
+		  if test -d "$with_cl_home/bin/Hostx64"; then
+		    cl_host="Hostx64"
+		  else
+		    cl_host="Hostx86"
+		  fi
+		  case "$build_cpu" in
+		    i?86)
+		      cl_subdirectory="bin/$cl_host/x86"
+		      ;;
+		    x86_64)
+		      if test "$BUILD_WIN64" = "TRUE" ; then
+		        cl_subdirectory="bin/$cl_host/x64"
+		      else
+		        cl_subdirectory="bin/$cl_host/x86"
+		      fi
+		      ;;
+		    *)
+		      AC_MSG_ERROR([Unknown/unsupported Windows CPU $build_cpu.])
+		      ;;
+		  esac
+		else
 		case "$build_cpu" in
 		  i?86)
 		    cl_subdirectory="bin"
@@ -2217,6 +2283,7 @@ if test "$_os" = "WINNT"; then
 		    AC_MSG_ERROR([Unknown/unsupported Windows CPU $build_cpu.])
 		    ;;
 		esac
+		fi
    		if test -x "$with_cl_home/$cl_subdirectory/cl.exe"; then
    			CC="$with_cl_home/$cl_subdirectory/cl.exe"
 			COMPATH="$with_cl_home"
@@ -2227,7 +2294,14 @@ if test "$_os" = "WINNT"; then
 			COMPATH=`cygpath -u "$COMPATH"`
 			# Remove /cl.exe from CC case insensitive
 			AC_MSG_RESULT([found ($CC)])
-			export INCLUDE=`cygpath -d "$COMPATH/Include"`
+			dnl  VC9 spells it VC/Include, a modern toolset spells it
+			dnl  <toolset>/include.  NTFS is case-insensitive so either
+			dnl  name resolves, but only one of the two directories exists.
+			if test -n "$MSVC_MODERN"; then
+				export INCLUDE=`cygpath -d "$COMPATH/include"`
+			else
+				export INCLUDE=`cygpath -d "$COMPATH/Include"`
+			fi
 			dnl  Check which Microsoft C/C++ compiler is found
 			AC_MSG_CHECKING([the Version of Microsoft C/C++ Compiler])
 dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out.
@@ -2241,12 +2315,29 @@ dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out
 							}
 							}"`
 			AC_MSG_RESULT([found Compiler version $CCNUMVER in "$CCTXTVER"])
-			if test "$CCNUMVER" -ge "001500000000"; then
+			dnl  COMEX names the compiler generation the rest of the build
+			dnl  switches on: it selects solenv/inc/wntmsci<COMEX>.mk, the
+			dnl  CVER define, and the wntmsci<COMEX> output tree.  14 is the
+			dnl  UCRT generation -- VS2015 (cl 19.00) and everything since,
+			dnl  which share one CRT and one SDK layout.  There is
+			dnl  deliberately no value per Visual Studio release: nothing in
+			dnl  this tree distinguishes VS2017 from VS2022.
+			if test "$CCNUMVER" -ge "001900000000"; then
+				COMEX=14
+				MSVSVER=2015
+				AC_MSG_RESULT([found a UCRT-generation compiler (VS2015 or newer).])
+				if test -z "$MSVC_MODERN"; then
+					AC_MSG_ERROR([cl.exe reports version $CCNUMVER, i.e. VS2015 or newer, but $with_cl_home has no bin/Host* layout. Point --with-cl-home at the versioned toolset directory, e.g. .../VC/Tools/MSVC/14.29.30133])
+				fi
+			elif test "$CCNUMVER" -ge "001500000000"; then
 				COMEX=12
 				MSVSVER=2008
 				AC_MSG_RESULT([found .NET 2008 / VS 9.0.])
+				if test -n "$MSVC_MODERN"; then
+					AC_MSG_ERROR([$with_cl_home has a modern bin/Host* layout but its cl.exe reports version $CCNUMVER. Refusing to guess which of the two it is.])
+				fi
 			else
-				AC_MSG_ERROR([Compiler too old. Use Microsoft C/C++ .NET 2008.])
+				AC_MSG_ERROR([Compiler too old. Use Microsoft C/C++ .NET 2008, or a VS2015-or-newer toolset.])
 			fi
 		else
 			AC_MSG_ERROR([Microsoft C/C++ Compiler not found. Use --with-cl-home.])
@@ -2267,6 +2358,7 @@ dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out
 fi
 AC_SUBST(COMEX)
 AC_SUBST(MSPDB_PATH)
+AC_SUBST(MSVC_MODERN)
 AC_SUBST(USE_MINGW)
 
 dnl Compiler detection, logic from setsoenv.in
@@ -5544,7 +5636,80 @@ dnl Check for the Microsoft Platform SDK.
 dnl =========================================
 dnl FIXME: I don't know yet if PSDK works with MinGW, keep it until I know better,
 dnl and add "-a \( "$WITH_MINGWIN" != "yes" \)" then
-if test \( "$_os" = "WINNT" \) ; then
+if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
+	dnl =====================================================================
+	dnl  A UCRT-generation toolset is paired with the Windows 10/11 SDK,
+	dnl  whose layout is genuinely different rather than merely renamed.
+	dnl  Platform SDK v7.0 has one Include/ and one Lib/; the Windows 10 SDK
+	dnl  has FOUR include trees (ucrt, um, shared, winrt) and TWO lib trees
+	dnl  (ucrt, um) per installed version, each under a version directory.
+	dnl  So the single PSDK_HOME/Include and PSDK_HOME/Lib that set_soenv.in
+	dnl  builds by concatenation become a version plus a fixed set of
+	dnl  subdirectories -- and that version is what has to be found here.
+	AC_MSG_CHECKING([for the Windows 10 SDK])
+	if test -z "$with_windows_sdk_home"; then
+		WINDOWS_SDK_HOME=`$OOWINTOOL --psdk-home 2>/dev/null`
+		dnl  oowintool knows only the pre-Windows-8 registry keys, so it
+		dnl  usually comes back empty here.  Fall back to the documented
+		dnl  install root, which has not moved since the SDK was split out
+		dnl  of Visual Studio.
+		if test ! -d "$WINDOWS_SDK_HOME/Include"; then
+			WINDOWS_SDK_HOME="/cygdrive/c/Program Files (x86)/Windows Kits/10"
+		fi
+	else
+		WINDOWS_SDK_HOME=`cygpath -u "$with_windows_sdk_home"`
+	fi
+	dnl  Remove a possible trailing slash
+	WINDOWS_SDK_HOME=`echo $WINDOWS_SDK_HOME | $SED 's:/$::'`
+
+	dnl  Pick the newest COMPLETE version.  Completeness matters more than it
+	dnl  sounds: bin/ routinely holds several versions while Include/ and
+	dnl  Lib/ hold one or two, so selecting on bin/ alone can pick a version
+	dnl  that has no headers at all.  Compare component by component as
+	dnl  integers -- a plain string compare sorts 10.0.9xxxx above
+	dnl  10.0.19041.
+	if test -n "$with_windows_sdk_version"; then
+		WINDOWS_SDK_VERSION="$with_windows_sdk_version"
+	else
+		windows_sdk_candidates=
+		for sdkver in `ls "$WINDOWS_SDK_HOME/Include" 2>/dev/null`; do
+			if test -d "$WINDOWS_SDK_HOME/Include/$sdkver/um" -a -d "$WINDOWS_SDK_HOME/Lib/$sdkver/um"; then
+				windows_sdk_candidates="$windows_sdk_candidates $sdkver"
+			fi
+		done
+		WINDOWS_SDK_VERSION=`for v in $windows_sdk_candidates; do echo $v; done | $AWK -F. '{ printf "%05d%05d%05d%05d %s\n", $1, $2, $3, $4, $0 }' | sort | tail -n 1 | $AWK '{ print $2 }'`
+	fi
+	if test -z "$WINDOWS_SDK_VERSION"; then
+		AC_MSG_ERROR([No complete Windows 10 SDK found under $WINDOWS_SDK_HOME. A version counts as complete only when it has both an Include/<version>/um and a Lib/<version>/um. Use --with-windows-sdk-home and/or --with-windows-sdk-version.])
+	fi
+	AC_MSG_RESULT([$WINDOWS_SDK_VERSION in $WINDOWS_SDK_HOME])
+
+	dnl  PSDK_HOME stays the SDK root, so everything downstream that only
+	dnl  wants a base directory keeps working.  What changes is that the
+	dnl  include and lib paths are built from the version as well; that
+	dnl  happens in set_soenv.in.
+	PSDK_HOME="$WINDOWS_SDK_HOME"
+
+	windows_sdk_um="$WINDOWS_SDK_HOME/Include/$WINDOWS_SDK_VERSION/um"
+	if test ! -f "$windows_sdk_um/adoint.h" -o ! -f "$windows_sdk_um/sqlucode.h" -o ! -f "$windows_sdk_um/usp10.h"; then
+		AC_MSG_ERROR([$windows_sdk_um is missing headers this build needs (adoint.h, sqlucode.h, usp10.h). Install the "Windows SDK for Desktop C++" component.])
+	fi
+	windows_sdk_lib="$WINDOWS_SDK_HOME/Lib/$WINDOWS_SDK_VERSION"
+	if test ! -f "$windows_sdk_lib/ucrt/x86/ucrt.lib" -a ! -f "$windows_sdk_lib/ucrt/x64/ucrt.lib"; then
+		AC_MSG_ERROR([$windows_sdk_lib has no ucrt import library for either architecture.])
+	fi
+
+	dnl  The Windows Installer tools moved into bin/<version>/<arch>.  They
+	dnl  run on the build machine, so x86 is the right choice whatever is
+	dnl  being built.
+	WINDOWS_SDK_BINDIR="$WINDOWS_SDK_HOME/bin/$WINDOWS_SDK_VERSION/x86"
+	for sdktool in msiinfo msidb uuidgen msitran; do
+		if test ! -x "$WINDOWS_SDK_BINDIR/$sdktool.exe"; then
+			AC_MSG_ERROR([$sdktool.exe is missing from $WINDOWS_SDK_BINDIR. Install the "MSI Tools" SDK component.])
+		fi
+	done
+	WINDOWS_VISTA_PSDK=TRUE
+elif test \( "$_os" = "WINNT" \) ; then
 	AC_MSG_CHECKING([for PSDK files])
 	if test -z "$with_psdk_home"; then
 		# This first line will detect a February 2003 Microsoft Platform SDK
@@ -5613,6 +5778,9 @@ dnl Check if this is the right SDK.
 fi
 AC_SUBST(PSDK_HOME)
 AC_SUBST(WINDOWS_VISTA_PSDK)
+AC_SUBST(WINDOWS_SDK_HOME)
+AC_SUBST(WINDOWS_SDK_VERSION)
+AC_SUBST(WINDOWS_SDK_BINDIR)
 
 dnl =========================================
 dnl Check for the Microsoft DirectX SDK.
