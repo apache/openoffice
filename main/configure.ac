@@ -2384,8 +2384,13 @@ if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
 		dnl  scripts pass.  Honour it when it names a Windows 10 SDK; when it
 		dnl  names the old Platform SDK, say that it is being ignored rather
 		dnl  than quietly using something the user did not ask for.
+		dnl  The test has to be for the VERSIONED layout, not merely for
+		dnl  Include/ and Lib/ -- Platform SDK v7.0 has both of those, so a
+		dnl  looser test accepts it here and then fails the version scan
+		dnl  below with a misleading "no complete Windows 10 SDK" error.
+		dnl  Only a Windows 10 SDK has Include/<version>/um.
 		windows_sdk_from_psdk=`cygpath -u "$with_psdk_home"`
-		if test -d "$windows_sdk_from_psdk/Include" -a -d "$windows_sdk_from_psdk/Lib"; then
+		if test -n "`ls -d \"$windows_sdk_from_psdk\"/Include/*/um 2>/dev/null`"; then
 			with_windows_sdk_home="$with_psdk_home"
 		else
 			AC_MSG_WARN([--with-psdk-home=$with_psdk_home does not look like a Windows 10 SDK; ignoring it and searching for one. Use --with-windows-sdk-home to be explicit.])
