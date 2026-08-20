@@ -466,6 +466,74 @@ build-system change (`crt_defines`) is scoped to the `vs2019` config block, so n
 moved. The NSS overlay was verified on all three configs separately, since it is the one change that
 rebuilds an external dependency.
 
+## M6 — `bazel test` on `--config=win10-x64`
+
+M5 ended at "the product compiles and the installation runs". Running the *tests*
+on the modern toolchain took two more things, and neither was in the source.
+
+### The target platform has to be an execution platform too
+
+`bazel test --config=win10-x64` failed in analysis, before compiling anything:
+
+```
+No matching toolchains found for types:
+  @@bazel_tools//tools/test:default_test_toolchain_type
+```
+
+Bazel runs a test on the first **execution** platform matching all of the target
+platform's constraints. `winXP-x64` and `winXP-x86` were registered as execution
+platforms; `win10-x64` was only ever a target. No registered exec platform
+carries `//build/constraints:win10`, so no test toolchain resolved — and the
+message names the test toolchain, not the platform, which is what makes it read
+like a toolchain bug rather than a missing registration.
+
+The same reasoning already sits in `MODULE.bazel` for `winXP-x86`: it is
+registered *specifically* so x86 tests can resolve a test toolchain, not because
+anything builds there. `win10-x64` is now registered for that reason too, and
+**last**. Order matters: its cpu and os are identical to `winXP-x64`, so any
+earlier position would hand it exec-tool actions (idlc, cppumaker, rsc) on the
+winXP configs as well. Last, it is reached only by a target whose platform
+carries the `win10` constraint — exactly the case the other two cannot serve.
+
+### GoogleTest 1.7.0's tuple, and a define that was right until it wasn't
+
+With the platform registered, the test compiled — gtest did not. ~100 errors in
+`gtest-tuple.h`, of the form *"`type` is not a member of `std::tuple_element`"*.
+
+The gtest overlay pinned `defines = ["GTEST_USE_OWN_TR1_TUPLE=1"]`, reproducing
+the dmake recipe's `use-own-tuple.patch`: VS2008's own `<tr1/tuple>` is
+incomplete, so gtest must use its bundled one. Correct — while VC9 was the only
+compiler. A modern MSVC has no `std::tr1` at all, so forcing the bundled tuple
+declares it into a namespace the STL no longer owns, and it collides with the
+real `<tuple>`.
+
+**The fix is a deletion, not a `select()`.** `gtest-port.h` already derives this
+correctly on all three toolchains:
+
+| | `_MSC_VER >= 1600` | `GTEST_LANG_CXX11` | result |
+| --- | --- | --- | --- |
+| VC9 | no | no (`__cplusplus` 199711) | `GTEST_USE_OWN_TR1_TUPLE 1` — bundled |
+| VS2019 | yes | yes (`/std:c++14 /Zc:__cplusplus`) | `0` — real `<tuple>`, aliased into `::std::tr1` |
+
+So the hardcoded define only ever restated what detection already concluded on
+VC9, while overriding it wrongly on the modern one. Removing it leaves every VC9
+command line unchanged (verified by `aquery`: the define appears in zero compile
+actions on all three configs, and the VC9 suites stay green) and lets the modern
+build take the `<tuple>` path.
+
+Note `GTEST_LANG_CXX11` depends on `/Zc:__cplusplus`, which the `vs2019` block
+already passes in `all_compile_flags`. Without it MSVC reports `__cplusplus` as
+199711 whatever `/std:` says, detection would pick "the user has a conforming
+tr1" — and gtest would fail on a `std::tr1` that does not exist.
+
+### Verified — the first test executed on the modern toolchain
+
+`//main/unodevtools:skeletonmaker_test` runs 7/7 green on **all three** configs,
+which is the first test executed under `--config=win10-x64` on this branch. The
+VC9 gtest suites — binaryurp, cppu, cppuhelper, o3tl, salhelper, comphelper, sax,
+svl, tools — were re-run on `winXP-x86` to confirm the overlay change is inert
+there.
+
 ## How this branch differs from `win10-64-support`
 
 They are not competing. `win10-64-support` is the long road — the SOLID experiment, the capability
