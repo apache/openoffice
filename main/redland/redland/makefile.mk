@@ -83,6 +83,11 @@ BUILD_DIR=$(CONFIGURE_DIR)
 .ELSE
 # there is no wntmsci build environment in the tarball; we use custom dmakefile
 OOO_PATCH_FILES+= $(TARFILE_NAME).patch.win32
+# Must come after .patch.win32, which touches the same header: three of the
+# win32 shims stopped being redundant and became harmful once the UCRT started
+# declaring the real functions.  The guards are on _MSC_VER, so this is inert
+# on VC9 and the file behaves exactly as it did before.
+OOO_PATCH_FILES+= $(TARFILE_NAME).patch.ucrt
 CONFIGURE_ACTION= \
 	$(COPY) src/rdf_config.h.in src/rdf_config.h
 BUILD_ACTION=dmake
