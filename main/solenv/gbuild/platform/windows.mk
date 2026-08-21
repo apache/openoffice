@@ -228,11 +228,6 @@ gb_CXXFLAGS += -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 gb_CFLAGS += -wd4996
 gb_CXXFLAGS += -wd4996 -wd4577 -wd5040
 
-# The CRT split in three when the UCRT arrived, and this build links
-# -NODEFAULTLIB, so the /DEFAULTLIB directives cl emits are ignored and every
-# part has to be named.
-gb_STDLIBS += vcruntime ucrt
-
 endif
 
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
@@ -582,6 +577,21 @@ gb_Library_PLAINLIBS_NONE += \
 	winspool \
 	ws2_32 \
 	wsock32
+
+# The CRT split in three when the UCRT arrived: msvcrt.lib is the startup and
+# import library, vcruntime.lib the compiler runtime, ucrt.lib the C library
+# proper.  This build links -NODEFAULTLIB, so the /DEFAULTLIB directives cl
+# emits are ignored and every part has to be named -- but gbuild refuses to
+# link a library it has not been told about, so they are registered here
+# first.  Both statements sit together because doing only one of them fails
+# late and confusingly ("Cannot link against library/libraries ...").
+ifeq ($(COMEX),14)
+gb_Library_PLAINLIBS_NONE += \
+	ucrt \
+	vcruntime
+
+gb_STDLIBS += vcruntime ucrt
+endif
 
 gb_Library_LAYER := \
 	$(foreach lib,$(gb_Library_OOOLIBS),$(lib):OOO) \
