@@ -45,25 +45,25 @@ using namespace uno;
 namespace cli_uno
 {
 
-public __gc class UnoInterfaceInfo
+public ref class UnoInterfaceInfo
 {
 public:
     UnoInterfaceInfo(Bridge const * bridge, uno_Interface* unoI,
                      typelib_InterfaceTypeDescription* td);
     ~UnoInterfaceInfo();
     uno_Interface * m_unoI; // wrapped interface
-	System::Type * m_type;
+	System::Type ^ m_type;
     typelib_InterfaceTypeDescription* m_typeDesc;
 
     Bridge const* m_bridge;
 };
 
-public __gc class  UnoInterfaceProxy: public srrp::RealProxy,
+public ref class  UnoInterfaceProxy: public srrp::RealProxy,
                                       public srr::IRemotingTypeInfo
 {
     /** used for IRemotingTypeInfo.TypeName
      */
-    System::String* m_sTypeName;
+    System::String ^ m_sTypeName;
     /** The list is filled with UnoInterfaceInfo objects. The list can only
         grow and elements are never changed. If an element was added it
         must not be changed!
@@ -80,10 +80,10 @@ public __gc class  UnoInterfaceProxy: public srrp::RealProxy,
     sc::ArrayList* m_listAdditionalProxies;
     int m_nlistAdditionalProxies;
 
-    UnoInterfaceInfo * findInfo( ::System::Type * type );
+    UnoInterfaceInfo ^ findInfo( ::System::Type ^ type );
 
     Bridge const* m_bridge;
- 	System::String* m_oid;
+ 	System::String ^ m_oid;
 
 #if OSL_DEBUG_LEVEL >= 2
     /** The string contains all names of UNO interfaces which are
@@ -101,7 +101,7 @@ public:
 
     /** Creates a proxy and registers it on the dot NET side.
      */
-    static System::Object* create(Bridge * bridge,
+    static System::Object ^ create(Bridge * bridge,
                                   uno_Interface * pUnoI,
                                   typelib_InterfaceTypeDescription* pTd,
                                   const rtl::OUString& oid);
@@ -120,17 +120,17 @@ public:
 
     /**
      */
-    inline System::String * getOid()
+    inline System::String ^ getOid()
         { return m_oid; }
 
     //IRemotingTypeInfo ----------------------------------------------
-    bool CanCastTo(System::Type* fromType, System::Object* o);
+    bool CanCastTo(System::Type ^ fromType, System::Object ^ o);
 
-    __property System::String* get_TypeName()
+    __property System::String ^ get_TypeName()
     {
         return m_sTypeName;
     }
-    __property void set_TypeName(System::String* name)
+    __property void set_TypeName(System::String ^ name)
     {
         m_sTypeName = name;
     }
@@ -143,26 +143,26 @@ private:
         typelib_InterfaceTypeDescription* pTD,
 		const rtl::OUString& oid );
 
-    static srrm::IMessage* constructReturnMessage(System::Object* retVal,
-                           System::Object* outArgs[],
+    static srrm::IMessage* constructReturnMessage(System::Object ^ retVal,
+                           cli::array< System::Object ^ > ^ outArgs,
                            typelib_InterfaceMethodTypeDescription* mtd,
-                           srrm::IMessage* msg, System::Object* exc);
+                           srrm::IMessage* msg, System::Object ^ exc);
 
-    static System::String* m_methodNameString =
-                           new System::String("__MethodName");
-    static System::String* m_typeNameString = new System::String("__TypeName");
-    static System::String* m_ArgsString = new System::String("__Args");
-    static System::String* m_CallContextString =
-                           new System::String("__CallContext");
-    static System::String* m_system_Object_String =
-                           new System::String("System.Object");
-    static System::String* m_methodSignatureString =
-                           new System::String("__MethodSignature");
-    static System::String* m_Equals_String =  new System::String("Equals");
-    static System::String* m_GetHashCode_String =
-                           new System::String("GetHashCode");
-    static System::String* m_GetType_String = new System::String("GetType");
-    static System::String* m_ToString_String = new System::String("ToString");
+    static System::String ^ m_methodNameString =
+                           gcnew System::String("__MethodName");
+    static System::String ^ m_typeNameString = gcnew System::String("__TypeName");
+    static System::String ^ m_ArgsString = gcnew System::String("__Args");
+    static System::String ^ m_CallContextString =
+                           gcnew System::String("__CallContext");
+    static System::String ^ m_system_Object_String =
+                           gcnew System::String("System.Object");
+    static System::String ^ m_methodSignatureString =
+                           gcnew System::String("__MethodSignature");
+    static System::String ^ m_Equals_String =  gcnew System::String("Equals");
+    static System::String ^ m_GetHashCode_String =
+                           gcnew System::String("GetHashCode");
+    static System::String ^ m_GetType_String = gcnew System::String("GetType");
+    static System::String ^ m_ToString_String = gcnew System::String("ToString");
 
 protected:
      srrm::IMessage* invokeObject(sc::IDictionary* properties,
@@ -176,10 +176,10 @@ struct CliProxy: public uno_Interface
 {
     mutable oslInterlockedCount m_ref;
     const Bridge* m_bridge;
-    const gcroot<System::Object*> m_cliI;
-    gcroot<System::Type*> m_type;
+    const gcroot<System::Object ^> m_cliI;
+    gcroot<System::Type ^> m_type;
     const com::sun::star::uno::TypeDescription m_unoType;
-    const gcroot<System::String*> m_oid;
+    const gcroot<System::String ^> m_oid;
     const rtl::OUString m_usOid;
 
     enum MethodKind {MK_METHOD = 0, MK_SET, MK_GET};
@@ -235,13 +235,13 @@ struct CliProxy: public uno_Interface
      */
     gcroot<System::Int32[]> m_arInterfaceMethodCount;
 
-    CliProxy( Bridge const* bridge, System::Object* cliI,
+    CliProxy( Bridge const* bridge, System::Object ^ cliI,
                  typelib_TypeDescription const* pTD,
                  const rtl::OUString& usOid);
     ~CliProxy();
 
     static uno_Interface* create(Bridge const * bridge,
-                                 System::Object* cliI,
+                                 System::Object ^ cliI,
                                  typelib_TypeDescription const * TD,
                                  rtl::OUString const & usOid );
 

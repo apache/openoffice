@@ -44,6 +44,9 @@ USE_DEFFILE = TRUE
 # in CLR meta-data - use of this type may lead to a runtime exception":
 .IF "$(CCNUMVER)" <= "001399999999"
 CFLAGSCXX += -clr -AI $(DLLDEST) -AI $(SOLARBINDIR) -wd4339
+.ELIF "$(COMEX)"=="14"
+# /clr:oldSyntax went away after VS2015; these sources are C++/CLI now.
+CFLAGSCXX += -clr -AI $(DLLDEST) -AI $(SOLARBINDIR) -wd4339
 .ELSE
 CFLAGSCXX += -clr:oldSyntax -AI $(DLLDEST) -AI $(SOLARBINDIR) -wd4339
 .ENDIF
