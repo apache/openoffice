@@ -75,7 +75,7 @@ inline auto_ptr< rtl_mem > seq_allocate( sal_Int32 nElements, sal_Int32 nSize )
 
 System::Object ^ Bridge::map_uno2cli(uno_Interface * pUnoI, typelib_InterfaceTypeDescription *pTD) const
 {
-    System::Object ^ retVal= NULL;
+    System::Object ^ retVal= nullptr;
 // get oid
     rtl_uString * pOid = 0;
     (*m_uno_env->getObjectIdentifier)( m_uno_env, &pOid, pUnoI );
@@ -153,7 +153,7 @@ inline System::Type ^ loadCliType(rtl_uString * unoName)
 
 System::Type ^ loadCliType(System::String ^ unoName)
 {
-    System::Type ^ retVal= NULL;
+    System::Type ^ retVal= nullptr;
     try
     {
         //If unoName denotes a polymorphic type, e.g com.sun.star.beans.Defaulted<System.Char>
@@ -168,7 +168,7 @@ System::Type ^ loadCliType(System::String ^ unoName)
             bIsPolymorphic = true;
         }
         System::AppDomain ^  currentDomain = System::AppDomain::CurrentDomain;
-        sr::Assembly*  assems[] = currentDomain->GetAssemblies();
+        cli::array< sr::Assembly ^ > ^ assems = currentDomain->GetAssemblies();
         for (int i = 0; i < assems->Length; i++)
         {
             retVal = assems[i]->GetType(loadName, false);
@@ -176,7 +176,7 @@ System::Type ^ loadCliType(System::String ^ unoName)
                 break;
         }
 
-		if (retVal == NULL)
+		if (retVal == nullptr)
 		{
             System::String ^ msg = gcnew System::String("A type could not be loaded: ");
             msg = System::String::Concat(msg, loadName);
@@ -204,7 +204,7 @@ System::Type ^ mapUnoType(typelib_TypeDescription const * pTD)
 
 System::Type ^ mapUnoType(typelib_TypeDescriptionReference const * pTD)
 {
-    System::Type ^ retVal = 0;
+    System::Type ^ retVal = nullptr;
     switch (pTD->eTypeClass)
     {
     case typelib_TypeClass_VOID:
@@ -326,7 +326,7 @@ System::Type ^ mapUnoType(typelib_TypeDescriptionReference const * pTD)
 typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
 {
     typelib_TypeDescriptionReference* retVal= NULL;
-    if (cliType == NULL)
+    if (cliType == nullptr)
     {
         retVal = * typelib_static_type_getByTypeClass(
             typelib_TypeClass_VOID );
@@ -442,7 +442,7 @@ typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
         {
             OUString usTypeName;
             uno::PolymorphicType ^ poly = dynamic_cast<uno::PolymorphicType ^>(cliType);
-            if (poly != NULL)
+            if (poly != nullptr)
                 usTypeName = mapCliTypeName( poly->PolymorphicName);
             else
                 usTypeName = mapCliTypeName(cliTypeName);
@@ -474,7 +474,7 @@ typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
 System::String ^ mapUnoTypeName(rtl_uString const * typeName)
 {
     OUString usUnoName( const_cast< rtl_uString * >( typeName ) );
-    st::StringBuilder* buf= new st::StringBuilder();
+    st::StringBuilder ^ buf= gcnew st::StringBuilder();
     //determine if the type is a sequence and its dimensions
     int dims= 0;
     if (usUnoName[0] == '[')
@@ -584,7 +584,7 @@ System::String ^ mapPolymorphicName(System::String ^ unoName, bool bCliToUno)
 	int countParams = 0;
 	while (cur <= endIndex)
 	{
-		System::Char c = unoName->Chars[cur];
+		System::Char c = unoName[cur];
 		if (c == ',' || c == '>')
 		{
 			//insert a comma if needed
@@ -613,7 +613,7 @@ System::String ^ mapPolymorphicName(System::String ^ unoName, bool bCliToUno)
 			int numNested = 0;
 			for (;;cur++)
 			{
-				System::Char curChar = unoName->Chars[cur];
+				System::Char curChar = unoName[cur];
 				if (curChar == '<')
 				{
 					numNested ++;
@@ -645,7 +645,7 @@ OUString mapCliTypeName(System::String ^ typeName)
     bool bRightBracket = false;
 	while (cur >= 0)
 	{
-		System::Char c = typeName->Chars[cur];
+		System::Char c = typeName[cur];
 		if (c == ']')
 		{
             bRightBracket = true;
@@ -724,7 +724,8 @@ OUString mapCliTypeName(System::String ^ typeName)
     return mapCliString(buf->ToString());
 }
 /** Maps uno types to dot net types.
- *  If uno_data is null then the type description is converted to System::Type ^/
+ *  If uno_data is null then the type description is converted to System::Type
+ */
 inline System::String ^ mapUnoString( rtl_uString const * data)
 {
     OSL_ASSERT(data);
@@ -734,7 +735,7 @@ inline System::String ^ mapUnoString( rtl_uString const * data)
 OUString mapCliString(System::String ^ data)
 {
 
-    if (data != NULL)
+    if (data != nullptr)
     {
         OSL_ASSERT(sizeof(wchar_t) == sizeof(sal_Unicode));
         pin_ptr< wchar_t const > pdata= PtrToStringChars(data);
@@ -760,67 +761,67 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
             break;
         case typelib_TypeClass_CHAR:
         {
-            System::Char aChar= *safe_cast< System::Char ^ >(cli_data);
+            System::Char aChar= safe_cast< System::Char >(cli_data);
             *(sal_Unicode*) uno_data= aChar;
             break;
         }
         case typelib_TypeClass_BOOLEAN:
         {
-            System::Boolean aBool= *safe_cast< System::Boolean ^ >(cli_data);
+            System::Boolean aBool= safe_cast< System::Boolean >(cli_data);
             *(sal_Bool*)uno_data= aBool == true ? sal_True : sal_False;
             break;
         }
         case typelib_TypeClass_BYTE:
         {
-            System::Byte aByte= *safe_cast< System::Byte ^ >(cli_data);
+            System::Byte aByte= safe_cast< System::Byte >(cli_data);
             *(sal_Int8*) uno_data= aByte;
             break;
         }
         case typelib_TypeClass_SHORT:
         {
-            System::Int16 aShort= *safe_cast< System::Int16 ^ >(cli_data);
+            System::Int16 aShort= safe_cast< System::Int16 >(cli_data);
             *(sal_Int16*) uno_data= aShort;
             break;
         }
         case typelib_TypeClass_UNSIGNED_SHORT:
         {
-            System::UInt16 aUShort= *safe_cast< System::UInt16 ^ >(cli_data);
+            System::UInt16 aUShort= safe_cast< System::UInt16 >(cli_data);
             *(sal_uInt16*) uno_data= aUShort;
             break;
         }
         case typelib_TypeClass_LONG:
         {
-            System::Int32 aLong= *safe_cast< System::Int32 ^ >(cli_data);
+            System::Int32 aLong= safe_cast< System::Int32 >(cli_data);
             *(sal_Int32*) uno_data= aLong;
             break;
         }
         case typelib_TypeClass_UNSIGNED_LONG:
         {
-            System::UInt32 aULong= *safe_cast< System::UInt32 ^ >(cli_data);
+            System::UInt32 aULong= safe_cast< System::UInt32 >(cli_data);
             *(sal_uInt32*) uno_data= aULong;
             break;
         }
         case typelib_TypeClass_HYPER:
         {
-            System::Int64 aHyper= *safe_cast< System::Int64 ^ >(cli_data);
+            System::Int64 aHyper= safe_cast< System::Int64 >(cli_data);
             *(sal_Int64*) uno_data= aHyper;
             break;
         }
         case typelib_TypeClass_UNSIGNED_HYPER:
         {
-            System::UInt64 aLong= *safe_cast< System::UInt64 ^ >(cli_data);
+            System::UInt64 aLong= safe_cast< System::UInt64 >(cli_data);
             *(sal_uInt64*) uno_data= aLong;
             break;
         }
         case typelib_TypeClass_FLOAT:
         {
-            System::Single aFloat= *safe_cast< System::Single ^ >(cli_data);
+            System::Single aFloat= safe_cast< System::Single >(cli_data);
             *(float*) uno_data= aFloat;
             break;
         }
         case typelib_TypeClass_DOUBLE:
         {
-            System::Double aDouble= *safe_cast< System::Double ^ >(cli_data);
+            System::Double aDouble= safe_cast< System::Double >(cli_data);
             *(double*) uno_data= aDouble;
             break;
         }
@@ -865,7 +866,7 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                 uno_any_construct( pAny, 0, 0, 0 );
                 break;
             }
-            uno::Any aAny= *safe_cast< uno::Any >(cli_data);
+            uno::Any aAny= safe_cast< uno::Any >(cli_data);
             css::uno::Type  value_td( mapCliType(aAny.Type), SAL_NO_ACQUIRE);
 
             if (assign)
@@ -880,42 +881,42 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     break;
                 case typelib_TypeClass_CHAR:
                     pAny->pData = &pAny->pReserved;
-                    *(sal_Unicode*) &pAny->pReserved = *safe_cast< System::Char ^ >(aAny.Value);
+                    *(sal_Unicode*) &pAny->pReserved = safe_cast< System::Char >(aAny.Value);
                     break;
                 case typelib_TypeClass_BOOLEAN:
                     pAny->pData = &pAny->pReserved;
-                    *(sal_Bool *) &pAny->pReserved = *safe_cast< System::Boolean ^ >(aAny.Value);
+                    *(sal_Bool *) &pAny->pReserved = safe_cast< System::Boolean >(aAny.Value);
                     break;
                 case typelib_TypeClass_BYTE:
                     pAny->pData = &pAny->pReserved;
-                    *(sal_Int8*) &pAny->pReserved =  *safe_cast< System::Byte ^ >(aAny.Value);
+                    *(sal_Int8*) &pAny->pReserved =  safe_cast< System::Byte >(aAny.Value);
                     break;
                 case typelib_TypeClass_SHORT:
                     pAny->pData = &pAny->pReserved;
-                    *(sal_Int16*) &pAny->pReserved =  *safe_cast< System::Int16 ^ >(aAny.Value);
+                    *(sal_Int16*) &pAny->pReserved =  safe_cast< System::Int16 >(aAny.Value);
                     break;
                 case typelib_TypeClass_UNSIGNED_SHORT:
                     pAny->pData = &pAny->pReserved;
-                    *(sal_uInt16*) &pAny->pReserved =  *safe_cast< System::UInt16 ^ >(aAny.Value);
+                    *(sal_uInt16*) &pAny->pReserved =  safe_cast< System::UInt16 >(aAny.Value);
                     break;
                 case typelib_TypeClass_LONG:
                     pAny->pData = &pAny->pReserved;
-                    *(sal_Int32*) &pAny->pReserved =  *safe_cast< System::Int32 ^ >(aAny.Value);
+                    *(sal_Int32*) &pAny->pReserved =  safe_cast< System::Int32 >(aAny.Value);
                     break;
                 case typelib_TypeClass_UNSIGNED_LONG:
                     pAny->pData = &pAny->pReserved;
-                    *(sal_uInt32*) &pAny->pReserved =  *safe_cast< System::UInt32 ^ >(aAny.Value);
+                    *(sal_uInt32*) &pAny->pReserved =  safe_cast< System::UInt32 >(aAny.Value);
                     break;
                 case typelib_TypeClass_HYPER:
                     if (sizeof (sal_Int64) <= sizeof (void *))
                     {
                         pAny->pData = &pAny->pReserved;
-                        *(sal_Int64*) &pAny->pReserved = *safe_cast< System::Int64 ^ >(aAny.Value);
+                        *(sal_Int64*) &pAny->pReserved = safe_cast< System::Int64 >(aAny.Value);
                     }
                     else
                     {
                         auto_ptr< rtl_mem > mem( rtl_mem::allocate( sizeof (sal_Int64) ) );
-                        *(sal_Int64 *) mem.get()=  *safe_cast< System::Int64 ^ >(aAny.Value);
+                        *(sal_Int64 *) mem.get()=  safe_cast< System::Int64 >(aAny.Value);
                         pAny->pData = mem.release();
                     }
                     break;
@@ -923,12 +924,12 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     if (sizeof (sal_uInt64) <= sizeof (void *))
                     {
                         pAny->pData = &pAny->pReserved;
-                        *(sal_uInt64*) &pAny->pReserved = *safe_cast< System::UInt64 ^ >(aAny.Value);
+                        *(sal_uInt64*) &pAny->pReserved = safe_cast< System::UInt64 >(aAny.Value);
                     }
                     else
                     {
                         auto_ptr< rtl_mem > mem( rtl_mem::allocate( sizeof (sal_uInt64) ) );
-                        *(sal_uInt64 *) mem.get()=  *safe_cast< System::UInt64 ^ >(aAny.Value);
+                        *(sal_uInt64 *) mem.get()=  safe_cast< System::UInt64 >(aAny.Value);
                         pAny->pData = mem.release();
                     }
                     break;
@@ -936,12 +937,12 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     if (sizeof (float) <= sizeof (void *))
                     {
                         pAny->pData = &pAny->pReserved;
-                        *(float*) &pAny->pReserved = *safe_cast< System::Single ^ >(aAny.Value);
+                        *(float*) &pAny->pReserved = safe_cast< System::Single >(aAny.Value);
                     }
                     else
                     {
                         auto_ptr< rtl_mem > mem( rtl_mem::allocate( sizeof (float) ) );
-                        *(float*) mem.get() = *safe_cast< System::Single ^ >(aAny.Value);
+                        *(float*) mem.get() = safe_cast< System::Single >(aAny.Value);
                         pAny->pData = mem.release();
                     }
                     break;
@@ -949,12 +950,12 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     if (sizeof (double) <= sizeof (void *))
                     {
                         pAny->pData = &pAny->pReserved;
-                        *(double*) &pAny->pReserved= *safe_cast< System::Double ^ >(aAny.Value);
+                        *(double*) &pAny->pReserved= safe_cast< System::Double >(aAny.Value);
                     }
                     else
                     {
                         auto_ptr< rtl_mem > mem( rtl_mem::allocate( sizeof (double) ) );
-                        *(double*) mem.get()= *safe_cast< System::Double ^ >(aAny.Value);
+                        *(double*) mem.get()= safe_cast< System::Double >(aAny.Value);
                         pAny->pData= mem.release();
                     }
                     break;
@@ -1062,7 +1063,7 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
 
             sal_Int32 nMembers = comp_td->nMembers;
             boolean bException= false;
-            System::Type ^ cliType = NULL;
+            System::Type ^ cliType = nullptr;
             if (cli_data)
                 cliType = cli_data->GetType();
 
@@ -1084,14 +1085,14 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     member_type= comp_td->ppTypeRefs[nPos];
 #if OSL_DEBUG_LEVEL >= 2
                     System::String ^ __s;
-                    sr::FieldInfo* arFields[];
+                    cli::array< sr::FieldInfo ^ > ^ arFields;
                     __s = mapUnoString(comp_td->ppMemberNames[nPos]);
                     arFields = cliType != NULL ? cliType->GetFields() : NULL;
 #endif
-                    System::Object ^ val= NULL;
+                    System::Object ^ val= nullptr;
                     if (cli_data != NULL)
                     {
-                        sr::FieldInfo* aField= cliType->GetField(
+                        sr::FieldInfo ^ aField= cliType->GetField(
                             mapUnoString(comp_td->ppMemberNames[nPos]));
                         // special case for Exception.Message property
                         // The com.sun.star.uno.Exception.Message field is mapped to the
@@ -1101,9 +1102,9 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
 							rtl::OUString usMessageMember(RTL_CONSTASCII_USTRINGPARAM("Message"));
                             if (usMessageMember.equals(comp_td->ppMemberNames[nPos]))
                             {
-                                sr::PropertyInfo* pi= cliType->GetProperty(
+                                sr::PropertyInfo ^ pi= cliType->GetProperty(
                                     mapUnoString(comp_td->ppMemberNames[nPos]));
-                                val= pi->GetValue(cli_data, NULL);
+                                val= pi->GetValue(cli_data, nullptr);
                             }
                             else
                             {
@@ -1132,67 +1133,67 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                         if (bDefault)
                             *(sal_Unicode*) p = 0;
                         else
-                            *(sal_Unicode*) p = *safe_cast< System::Char ^ >(val);
+                            *(sal_Unicode*) p = safe_cast< System::Char >(val);
                         break;
                     case typelib_TypeClass_BOOLEAN:
                         if (bDefault)
                             *(sal_Bool*) p = sal_False;
                         else
-                            *(sal_Bool*) p = *safe_cast< System::Boolean ^ >(val);
+                            *(sal_Bool*) p = safe_cast< System::Boolean >(val);
                         break;
                     case typelib_TypeClass_BYTE:
                         if (bDefault)
                             *(sal_Int8*) p = 0;
                         else
-                            *(sal_Int8*) p = *safe_cast< System::Byte ^ >(val);
+                            *(sal_Int8*) p = safe_cast< System::Byte >(val);
                         break;
                     case typelib_TypeClass_SHORT:
                         if (bDefault)
                             *(sal_Int16*) p = 0;
                         else
-                            *(sal_Int16*) p = *safe_cast< System::Int16 ^ >(val);
+                            *(sal_Int16*) p = safe_cast< System::Int16 >(val);
                         break;
                     case typelib_TypeClass_UNSIGNED_SHORT:
                         if (bDefault)
                             *(sal_uInt16*) p = 0;
                         else
-                            *(sal_uInt16*) p = *safe_cast< System::UInt16 ^ >(val);
+                            *(sal_uInt16*) p = safe_cast< System::UInt16 >(val);
                         break;
                     case typelib_TypeClass_LONG:
                         if (bDefault)
                             *(sal_Int32*) p = 0;
                         else
-                            *(sal_Int32*) p = *safe_cast< System::Int32 ^ >(val);
+                            *(sal_Int32*) p = safe_cast< System::Int32 >(val);
                         break;
                     case typelib_TypeClass_UNSIGNED_LONG:
                         if (bDefault)
                             *(sal_uInt32*) p = 0;
                         else
-                            *(sal_uInt32*) p = *safe_cast< System::UInt32 ^ >(val);
+                            *(sal_uInt32*) p = safe_cast< System::UInt32 >(val);
                         break;
                     case typelib_TypeClass_HYPER:
                         if (bDefault)
                             *(sal_Int64*) p = 0;
                         else
-                            *(sal_Int64*) p = *safe_cast< System::Int64 ^ >(val);
+                            *(sal_Int64*) p = safe_cast< System::Int64 >(val);
                         break;
                     case typelib_TypeClass_UNSIGNED_HYPER:
                         if (bDefault)
                             *(sal_uInt64*) p = 0;
                         else
-                            *(sal_uInt64*) p= *safe_cast< System::UInt64 ^ >(val);
+                            *(sal_uInt64*) p= safe_cast< System::UInt64 >(val);
                         break;
                     case typelib_TypeClass_FLOAT:
                         if (bDefault)
                             *(float*) p = 0.;
                         else
-                            *(float*) p = *safe_cast< System::Single ^ >(val);
+                            *(float*) p = safe_cast< System::Single >(val);
                         break;
                     case typelib_TypeClass_DOUBLE:
                         if (bDefault)
                             *(double*) p = 0.;
                         else
-                            *(double*) p = *safe_cast< System::Double ^ >(val);
+                            *(double*) p = safe_cast< System::Double >(val);
                         break;
                     default:
                     {   // ToDo enum, should be converted here
@@ -1264,7 +1265,7 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
 
             auto_ptr< rtl_mem > seq;
 
-            System::Array ^ ar = NULL;
+            System::Array ^ ar = nullptr;
             if (cli_data != NULL)
             {
                 ar = safe_cast< System::Array ^ >(cli_data);
@@ -1277,60 +1278,57 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     case typelib_TypeClass_CHAR:
                         seq = seq_allocate(nElements, sizeof (sal_Unicode));
                         sri::Marshal::Copy(safe_cast< cli::array< System::Char > ^ >(cli_data), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_BOOLEAN:
                         seq = seq_allocate(nElements, sizeof (sal_Bool));
-                        sri::Marshal::Copy(safe_cast< cli::array< System::Boolean > ^ >(cli_data), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                        sri::Marshal::Copy(safe_cast< cli::array< System::Byte > ^ >(cli_data), 0,
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_BYTE:
                         seq = seq_allocate( nElements, sizeof (sal_Int8) );
                     sri::Marshal::Copy(safe_cast< cli::array< System::Byte > ^ >(cli_data), 0,
-                                       & ((uno_Sequence*) seq.get())->elements, nElements);
+                                       System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                     break;
                     case typelib_TypeClass_SHORT:
                         seq = seq_allocate(nElements, sizeof (sal_Int16));
                         sri::Marshal::Copy(safe_cast< cli::array< System::Int16 > ^ >(cli_data), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_UNSIGNED_SHORT:
                         seq = seq_allocate( nElements, sizeof (sal_uInt16) );
-                        sri::Marshal::Copy(static_cast<System::Int16[]>(
-                                               safe_cast< cli::array< System::UInt16 > ^ >(cli_data)), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                        sri::Marshal::Copy(safe_cast< cli::array< System::Int16 > ^ >(cli_data), 0,
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_LONG:
                         seq = seq_allocate(nElements, sizeof (sal_Int32));
                         sri::Marshal::Copy(safe_cast< cli::array< System::Int32 > ^ >(cli_data), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_UNSIGNED_LONG:
                         seq = seq_allocate( nElements, sizeof (sal_uInt32) );
-                        sri::Marshal::Copy(static_cast<System::Int32[]>(
-                                               safe_cast< cli::array< System::UInt32 > ^ >(cli_data)), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                        sri::Marshal::Copy(safe_cast< cli::array< System::Int32 > ^ >(cli_data), 0,
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_HYPER:
                         seq = seq_allocate(nElements, sizeof (sal_Int64));
                         sri::Marshal::Copy(safe_cast< cli::array< System::Int64 > ^ >(cli_data), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_UNSIGNED_HYPER:
                         seq = seq_allocate(nElements, sizeof (sal_uInt64));
-                        sri::Marshal::Copy(static_cast<System::Int64[]>(
-                                               safe_cast< cli::array< System::UInt64 > ^ >(cli_data)), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                        sri::Marshal::Copy(safe_cast< cli::array< System::Int64 > ^ >(cli_data), 0,
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_FLOAT:
                         seq = seq_allocate(nElements, sizeof (float));
                         sri::Marshal::Copy(safe_cast< cli::array< System::Single > ^ >(cli_data), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_DOUBLE:
                         seq = seq_allocate(nElements, sizeof (double));
                         sri::Marshal::Copy(safe_cast< cli::array< System::Double > ^ >(cli_data), 0,
-                                           & ((uno_Sequence*) seq.get())->elements, nElements);
+                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_STRING:
                     {
@@ -1570,9 +1568,9 @@ void Bridge::map_to_cli(
         uno_Any const * pAny = (uno_Any const *)uno_data;
         if (typelib_TypeClass_VOID != pAny->pType->eTypeClass)
         {
-            System::Object ^ objCli= NULL;
+            System::Object ^ objCli= nullptr;
             map_to_cli(
-                &objCli, pAny->pData, pAny->pType, 0,
+                &objCli, pAny->pData, pAny->pType, nullptr,
                 false);
 
             uno::Any anyVal(mapUnoType(pAny->pType), objCli);
@@ -1586,15 +1584,15 @@ void Bridge::map_to_cli(
     }
     case typelib_TypeClass_ENUM:
      {
-         if (info != NULL)
+         if (info != nullptr)
          {
              OSL_ASSERT(info->IsByRef);
              info= info->GetElementType();
-             *cli_data= System::Enum::ToObject(info, *(System::Int32 ^) uno_data);
+             *cli_data= System::Enum::ToObject(info, *(System::Int32 *) uno_data);
          }
          else
              *cli_data= System::Enum::ToObject(
-                 mapUnoType(type), *(System::Int32 ^) uno_data);
+                 mapUnoType(type), *(System::Int32 *) uno_data);
         break;
     }
     case typelib_TypeClass_STRUCT:
@@ -1651,12 +1649,12 @@ void Bridge::map_to_cli(
                                                         ((char*) uno_data + offset));
                 //We need to find a constructor for the exception that takes the message string
                 //We assume that the first argument is the message string
-                sr::ConstructorInfo* arCtorInfo[] = cliType->GetConstructors();
-                sr::ConstructorInfo* ctorInfo = NULL;
+                cli::array< sr::ConstructorInfo ^ > ^ arCtorInfo = cliType->GetConstructors();
+                sr::ConstructorInfo ^ ctorInfo = nullptr;
                 int numCtors = arCtorInfo->Length;
                 //Constructor must at least have 2 params for the base
                 //unoidl.com.sun.star.uno.Exception (String, Object);
-                sr::ParameterInfo * arParamInfo[];
+                cli::array< sr::ParameterInfo ^ > ^ arParamInfo;
                 for (int i = 0; i < numCtors; i++)
                 {
                     arParamInfo = arCtorInfo[i]->GetParameters();
@@ -1671,7 +1669,7 @@ void Bridge::map_to_cli(
                     && arParamInfo[1]->Position == 1);
                 //Prepare parameters for constructor
                 int numArgs = arParamInfo->Length;
-                cli::array< System::Object ^ > ^ args = gcgcnew cli::array< System::Object ^ >( numArgs );
+                cli::array< System::Object ^ > ^ args = gcnew cli::array< System::Object ^ >( numArgs );
                 //only initialize the first argument with the message
                 args[0] = sMessage;
                 cliObj = ctorInfo->Invoke(args);
@@ -1688,7 +1686,7 @@ void Bridge::map_to_cli(
             // cliObj is used by the callee instead of a newly created struct
             map_to_cli(
                 &cliObj, uno_data,
-                ((typelib_TypeDescription *)comp_td->pBaseTypeDescription)->pWeakRef, 0,
+                ((typelib_TypeDescription *)comp_td->pBaseTypeDescription)->pWeakRef, nullptr,
                 true);
         }
 		rtl::OUString usUnoException(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.uno.Exception"));
@@ -1696,7 +1694,7 @@ void Bridge::map_to_cli(
         {
             typelib_TypeDescriptionReference * member_type = comp_td->ppTypeRefs[ nPos ];
             System::String ^ sMemberName= mapUnoString(comp_td->ppMemberNames[nPos]);
-            sr::FieldInfo* aField= cliType->GetField(sMemberName);
+            sr::FieldInfo ^ aField= cliType->GetField(sMemberName);
             // special case for Exception.Message. The field has already been
             // set while constructing cli object
             if ( ! aField && usUnoException.equals(td.get()->pTypeName))
@@ -1707,43 +1705,43 @@ void Bridge::map_to_cli(
             switch (member_type->eTypeClass)
             {
             case typelib_TypeClass_CHAR:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Char ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Char *) p));
                 break;
             case typelib_TypeClass_BOOLEAN:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Boolean ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Boolean *) p));
                 break;
             case typelib_TypeClass_BYTE:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Byte ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Byte *) p));
                 break;
             case typelib_TypeClass_SHORT:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Int16 ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Int16 *) p));
                 break;
             case typelib_TypeClass_UNSIGNED_SHORT:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::UInt16 ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::UInt16 *) p));
                 break;
             case typelib_TypeClass_LONG:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Int32 ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Int32 *) p));
                 break;
             case typelib_TypeClass_UNSIGNED_LONG:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::UInt32 ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::UInt32 *) p));
                 break;
             case typelib_TypeClass_HYPER:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Int64 ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Int64 *) p));
                 break;
             case typelib_TypeClass_UNSIGNED_HYPER:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::UInt64 ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::UInt64 *) p));
                 break;
             case typelib_TypeClass_FLOAT:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Single ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Single *) p));
                 break;
             case typelib_TypeClass_DOUBLE:
-                aField->SetValue(cliObj, (::System::Object ^)(*(System::Double ^) p));
+                aField->SetValue(cliObj, (::System::Object ^)(*(System::Double *) p));
                 break;
             default:
             {
                 System::Object ^ cli_val;
                 map_to_cli(
-                    &cli_val, p, member_type, 0,
+                    &cli_val, p, member_type, nullptr,
                     false);
                 aField->SetValue(cliObj, cli_val);
                 break;
@@ -1768,86 +1766,86 @@ void Bridge::map_to_cli(
         {
         case typelib_TypeClass_CHAR:
         {
-            System::Char arChar[]= gcnew System::Char[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arChar, 0, nElements);
+            cli::array< System::Char > ^ arChar = gcnew cli::array< System::Char >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arChar, 0, nElements);
             *cli_data= arChar;
             break;
         }
         case typelib_TypeClass_BOOLEAN:
         {
-            System::Boolean arBool[]= gcnew System::Boolean[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arBool, 0, nElements);
+            cli::array< System::Byte > ^ arBool = gcnew cli::array< System::Byte >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arBool, 0, nElements);
             *cli_data= arBool;
             break;
         }
         case typelib_TypeClass_BYTE:
         {
-            System::Byte arByte[]= gcnew System::Byte[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arByte, 0, nElements);
+            cli::array< System::Byte > ^ arByte = gcnew cli::array< System::Byte >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arByte, 0, nElements);
             *cli_data= arByte;
             break;
         }
         case typelib_TypeClass_SHORT:
         {
-            System::Int16 arShort[]= gcnew System::Int16[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arShort, 0, nElements);
+            cli::array< System::Int16 > ^ arShort = gcnew cli::array< System::Int16 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arShort, 0, nElements);
             *cli_data= arShort;
             break;
         }
         case typelib_TypeClass_UNSIGNED_SHORT:
         {
-            System::UInt16 arUInt16[]= gcnew System::UInt16[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, static_cast<System::Int16[]>(arUInt16),
+            cli::array< System::Int16 > ^ arUInt16 = gcnew cli::array< System::Int16 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arUInt16,
                                 0, nElements);
             *cli_data= arUInt16;
             break;
         }
         case typelib_TypeClass_LONG:
         {
-            System::Int32 arInt32[]= gcnew System::Int32[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arInt32, 0, nElements);
+            cli::array< System::Int32 > ^ arInt32 = gcnew cli::array< System::Int32 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arInt32, 0, nElements);
             *cli_data= arInt32;
             break;
         }
         case typelib_TypeClass_UNSIGNED_LONG:
         {
-            System::UInt32 arUInt32[]= gcnew System::UInt32[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, static_cast<System::Int32[]>(arUInt32),
+            cli::array< System::Int32 > ^ arUInt32 = gcnew cli::array< System::Int32 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arUInt32,
                                 0, nElements);
             *cli_data= arUInt32;
             break;
         }
         case typelib_TypeClass_HYPER:
         {
-            System::Int64 arInt64[]= gcnew System::Int64[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arInt64, 0, nElements);
+            cli::array< System::Int64 > ^ arInt64 = gcnew cli::array< System::Int64 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arInt64, 0, nElements);
             *cli_data= arInt64;
             break;
         }
         case typelib_TypeClass_UNSIGNED_HYPER:
         {
-            System::UInt64 arUInt64[]= gcnew System::UInt64[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arUInt64, 0, nElements);
+            cli::array< System::Int64 > ^ arUInt64 = gcnew cli::array< System::Int64 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arUInt64, 0, nElements);
             *cli_data= arUInt64;
             break;
         }
         case typelib_TypeClass_FLOAT:
         {
-            System::Single arSingle[]= gcnew System::Single[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arSingle, 0, nElements);
+            cli::array< System::Single > ^ arSingle = gcnew cli::array< System::Single >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arSingle, 0, nElements);
             *cli_data= arSingle;
             break;
         }
         case typelib_TypeClass_DOUBLE:
         {
-            System::Double arDouble[]= gcnew System::Double[nElements];
-            sri::Marshal::Copy( (void*) &seq->elements, arDouble, 0, nElements);
+            cli::array< System::Double > ^ arDouble = gcnew cli::array< System::Double >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arDouble, 0, nElements);
             *cli_data= arDouble;
             break;
         }
         case typelib_TypeClass_STRING:
         {
-            cli::array< System::String ^ > ^ arString= gcgcnew cli::array< System::String ^ >( nElements );
+            cli::array< System::String ^ > ^ arString= gcnew cli::array< System::String ^ >( nElements );
             for (int i= 0; i < nElements; i++)
             {
                 rtl_uString *aStr= ((rtl_uString**)(&seq->elements))[i];
@@ -1858,7 +1856,7 @@ void Bridge::map_to_cli(
         }
         case typelib_TypeClass_TYPE:
         {
-            cli::array< System::Type ^ > ^ arType= gcgcnew cli::array< System::Type ^ >( nElements );
+            cli::array< System::Type ^ > ^ arType= gcnew cli::array< System::Type ^ >( nElements );
             for (int i= 0; i < nElements; i++)
             {
                 arType[i]=
@@ -1873,10 +1871,10 @@ void Bridge::map_to_cli(
             uno_Any const * p = (uno_Any const *)seq->elements;
             for (sal_Int32 nPos = 0; nPos < nElements; ++nPos )
             {
-				System::Object ^ cli_obj = NULL;
+				System::Object ^ cli_obj = nullptr;
                 map_to_cli(
-                    &cli_obj, &p[ nPos ], element_type, 0, false);
-                arCli[nPos]= *safe_cast< uno::Any >(cli_obj);
+                    &cli_obj, &p[ nPos ], element_type, nullptr, false);
+                arCli[nPos]= safe_cast< uno::Any >(cli_obj);
             }
             *cli_data= arCli;
             break;
@@ -1884,8 +1882,8 @@ void Bridge::map_to_cli(
         case typelib_TypeClass_ENUM:
         {
             //get the Enum type
-            System::Type ^ enumType= NULL;
-            if (info != NULL)
+            System::Type ^ enumType= nullptr;
+            if (info != nullptr)
             {
                 //info is EnumType[]&, remove &
                 OSL_ASSERT(info->IsByRef);
@@ -1921,7 +1919,7 @@ void Bridge::map_to_cli(
                 {
                     System::Object ^ val;
                     map_to_cli(
-                        &val, p + (nSize * nPos), element_type, 0, false);
+                        &val, p + (nSize * nPos), element_type, nullptr, false);
                     ar->SetValue(val, nPos);
                 }
             }
@@ -1941,7 +1939,7 @@ void Bridge::map_to_cli(
                 {
                     System::Object ^ val;
                     map_to_cli(
-                        &val, &elements[nPos], element_type, 0, false);
+                        &val, &elements[nPos], element_type, nullptr, false);
                     ar->SetValue(val, nPos);
                 }
             }
@@ -1960,7 +1958,7 @@ void Bridge::map_to_cli(
             {
                 System::Object ^ val;
                 map_to_cli(
-                    &val, p + (nSize * nPos), element_type, NULL, false);
+                    &val, p + (nSize * nPos), element_type, nullptr, false);
 
                 ar->SetValue(val, nPos);
             }

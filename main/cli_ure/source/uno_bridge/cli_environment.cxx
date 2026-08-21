@@ -91,7 +91,7 @@ System::Object ^ Cli_environment::registerInterface      (
 
 void Cli_environment::revokeInterface(System::String ^ oid, System::Type ^ type)
 {
-    System::String ^ key = type != NULL ? createKey(oid, type) : oid;
+    System::String ^ key = type != nullptr ? createKey(oid, type) : oid;
 #if OSL_DEBUG_LEVEL >= 1
     _numRegisteredObjects --;
 #endif
@@ -112,7 +112,7 @@ void Cli_environment::revokeInterface(System::String ^ oid, System::Type ^ type)
 
 inline void Cli_environment::revokeInterface(System::String ^ oid)
 {
-    return revokeInterface(oid, NULL);
+    return revokeInterface(oid, nullptr);
 }
 
 System::Object ^ Cli_environment::getRegisteredInterface(System::String ^ oid,
@@ -140,7 +140,7 @@ System::Object ^ Cli_environment::getRegisteredInterface(System::String ^ oid,
 
 System::String ^ Cli_environment::getObjectIdentifier(System::Object ^ obj)
 {
-    System::String ^ oId= 0;
+    System::String ^ oId= nullptr;
     RealProxy ^ aProxy= RemotingServices::GetRealProxy(obj);
     if (aProxy)
     {
@@ -149,13 +149,13 @@ System::String ^ Cli_environment::getObjectIdentifier(System::Object ^ obj)
             oId= proxyImpl->getOid();
     }
 
-    if (oId == 0)
+    if (oId == nullptr)
     {
         StringBuilder ^ buf= gcnew StringBuilder(256);
 		bool bFirst = false;
 		System::Threading::Monitor::Enter(Cli_environment::typeid);
 		try {
-			buf->Append(m_IDGen->GetId(obj, & bFirst));
+			buf->Append(m_IDGen->GetId(obj, bFirst));
 		} __finally
         {
             System::Threading::Monitor::Exit(Cli_environment::typeid);

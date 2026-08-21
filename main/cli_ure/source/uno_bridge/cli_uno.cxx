@@ -139,9 +139,13 @@ System::Object ^ Bridge::call_uno(uno_Interface * pUnoI,
             {
                 try
                 {
+                    // A cli::array element has no native address, so the
+                    // out-parameter goes through a local and is assigned back.
+                    System::Object ^ cliArg = nullptr;
                     map_to_cli(
-                        &args[nPos], uno_args[nPos], param.pTypeRef,
-                        argTypes != NULL ? argTypes[nPos] : NULL, false );
+                        &cliArg, uno_args[nPos], param.pTypeRef,
+                        argTypes != nullptr ? argTypes[nPos] : nullptr, false );
+                    args[nPos] = cliArg;
                 }
                 catch (...)
                 {
@@ -171,7 +175,7 @@ System::Object ^ Bridge::call_uno(uno_Interface * pUnoI,
             {
                 System::Object ^ cli_ret;
                  map_to_cli(
-                     &cli_ret, uno_ret, return_type, 0, false);
+                     &cli_ret, uno_ret, return_type, nullptr, false);
 				 uno_type_destructData(uno_ret, return_type, 0);
                 return cli_ret;
             }
@@ -195,34 +199,36 @@ System::Object ^ Bridge::call_uno(uno_Interface * pUnoI,
             }
         }
         map_to_cli(ppExc, uno_exc_holder.pData,
-                uno_exc_holder.pType, NULL, false);
+                uno_exc_holder.pType, nullptr, false);
         return 0;
     }
 }
 
 void Bridge::call_cli(
     System::Object ^ cliI,
-    sr::MethodInfo* method,
+    sr::MethodInfo ^ method,
     typelib_TypeDescriptionReference * return_type,
     typelib_MethodParameter * params, int nParams,
     void * uno_ret, void * uno_args [], uno_Any ** uno_exc ) const
 {
-    System::Object ^args[]=  gcgcnew cli::array< System::Object ^ >( nParams );
+    cli::array< System::Object ^ > ^ args =  gcnew cli::array< System::Object ^ >( nParams );
     for (int nPos= 0; nPos < nParams; nPos++)
     {
         typelib_MethodParameter const & param= params[nPos];
         if (param.bIn)
         {
-            map_to_cli( &args[nPos],
-                uno_args[nPos], param.pTypeRef, 0, false);
+            System::Object ^ cliArg = nullptr;
+            map_to_cli( &cliArg,
+                uno_args[nPos], param.pTypeRef, nullptr, false);
+            args[nPos] = cliArg;
         }
     }
-    System::Object ^ retInvoke= NULL;
+    System::Object ^ retInvoke= nullptr;
     try
     {
         retInvoke= method->Invoke(cliI, args);
     }
-    catch (sr::TargetInvocationException* e)
+    catch (sr::TargetInvocationException ^ e)
     {
         System::Exception ^ exc= e->InnerException;
         css::uno::TypeDescription td(mapCliType(exc->GetType()));

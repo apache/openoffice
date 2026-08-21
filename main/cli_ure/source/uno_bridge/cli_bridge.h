@@ -52,7 +52,7 @@ struct Mapping : public uno_Mapping
 //Managed cli environment for cli objects an UNO proxies (which are cli
 //objects. The uno_Environment is not used for cli objects.
 ref struct CliEnvHolder {
-static Cli_environment ^ g_cli_env = NULL;
+static Cli_environment ^ g_cli_env = nullptr;
 };
 
 //==================================================================================================
@@ -100,7 +100,7 @@ struct Bridge
 
 
     void call_cli(
-        System::Object ^ cliI, sr::MethodInfo* method,
+        System::Object ^ cliI, sr::MethodInfo ^ method,
         typelib_TypeDescriptionReference * return_type,
         typelib_MethodParameter * params, int nParams,
         void * uno_ret, void * uno_args [], uno_Any ** uno_exc ) const;

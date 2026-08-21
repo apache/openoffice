@@ -95,7 +95,7 @@ void SAL_CALL Mapping_cli2uno(
 
         if (0 != cliI)
         {
-            System::Object ^ cliObj= sri::GCHandle::op_Explicit(cliI).Target;
+            System::Object ^ cliObj= sri::GCHandle::FromIntPtr(System::IntPtr(cliI)).Target;
             (*ppOut)= bridge->map_cli2uno(cliObj, (typelib_TypeDescription*) td);
         }
     }
@@ -140,7 +140,12 @@ void SAL_CALL Mapping_uno2cli(
 
         if (0 != *ppDNetI)
         {
-            sri::GCHandle::op_Explicit(ppDNetI).Free();
+            // op_Explicit was MC++'s spelling of the conversion operator;
+            // C++/CLI names it FromIntPtr.  Kept faithful to the original,
+            // which converts the POINTER and not *ppDNetI -- see the guard
+            // just above.  That looks wrong, but changing it is a
+            // behavioural fix and does not belong in a syntax port.
+            sri::GCHandle::FromIntPtr(System::IntPtr(ppDNetI)).Free();
         }
 
         if (0 != pUnoI)
@@ -149,7 +154,7 @@ void SAL_CALL Mapping_uno2cli(
             intptr_t ptr= NULL;
             if(cliI)
             {
-                ptr= sri::GCHandle::op_Explicit(sri::GCHandle::Alloc(cliI))
+                ptr= sri::GCHandle::ToIntPtr(sri::GCHandle::Alloc(cliI))
 #ifdef _WIN32
                     .ToInt32();
 #else /* defined(_WIN64) */                 .ToInt64();
