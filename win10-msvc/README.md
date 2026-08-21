@@ -19,10 +19,36 @@
 
 # `win10-msvc-trunk` — building trunk on Windows again
 
-**Status: not built yet.** Every claim below is either a reading of the tree or
-a check that could be run without a Windows toolchain. Nothing here has been
-compiled. The [Verification](#verification) section says exactly what was
-checked and what was not.
+**Status: the build is green, end to end.** On VS2019 14.29.30133 with Windows
+SDK 10.0.19041.0, `configure`, `bootstrap` and `build.pl` all run to
+completion into a `wntmsci14.pro` output tree, and `instsetoo_native` produces
+
+    openoffice450.msi
+    openoffice450sdk.msi
+
+Every bundled third-party library builds — including, for the first time on
+Windows, **Python**, which trunk has never built here at all.
+
+Two things that headline does not say, and both matter more than it does.
+
+**Nothing has been run.** The MSI exists; nobody has installed it or started
+the office. The single piece of runtime evidence points the wrong way:
+`testtools/source/bridgetest` fails with `getCaughtException() failed!`, which
+is UNO exception propagation through the x86 C++ bridge. See
+[The open defect](#the-open-defect).
+
+**Some of the green is subtraction.** The CLI/.NET binding is switched off
+entirely, and Python is built without `_ssl`, `_ctypes`, `_bz2`, `_lzma` and
+`_sqlite3`. Both are deliberate and both are described below, but a build that
+is green with those absent is a narrower claim than one that is green with
+them present.
+
+That is a different claim from the one this file made when it was written, and
+the difference was expensive: **forty defects so far, every one of them found
+by building and none of them by reading.**
+[What building found](#what-building-found) groups the forty by cause;
+[Verification](#verification) says what is now measured and what is still only
+argued.
 
 ## Why trunk does not build on Windows
 
@@ -278,42 +304,214 @@ Related, same cause, harmless: `bootstrap` prints
 registry keys; VS2019 BuildTools registers none of them. Nothing downstream
 needs the answer once `--with-cl-home` is given.
 
+## What building found
+
+Forty defects, grouped by cause rather than by module and running roughly in
+the order a build meets them. The grouping is the useful part: each family has
+more members further up the tree, and knowing the family is how the next one
+gets recognised in one reading instead of three.
+
+**The toolchain has to be located before it can be wrong** (4).
+`--with-cl-home` and friends were being overridden by the branch's own guesses
+rather than winning over them; `ml.exe` moved into a per-host subdirectory
+(`bin/Hostx64/x86`) that no longer matches the flat VC9 layout; and the Windows
+10 SDK search found Platform SDK v7.0 first and accepted it. The SDK search is
+now one rule over an ordered candidate list.
+
+**The UCRT stopped declaring things** (2). `PATH_MAX` in `soltools/cpp`,
+`__iob_func` in ICU's `icuio`. Both had been supplied by the old CRT without
+being anyone's deliberate dependency.
+
+**A shim that became harmful** (1 more, 5 total on this branch). `libxmlsec`
+joined `sal`, `uwinapi`, `redland` and `rasqal` in `#define`-ing away a name
+the UCRT now declares for real. The guard is always `_MSC_VER < 1900`.
+
+**Tools and flags that no longer exist** (4). `/OPT:NOWIN98`; `vcbuild.exe`,
+which is why CoinMP went 1.7.6 → 1.8.4; `lib.exe -EXTRACT:/`, which is below
+because of *how* it fails; and `/clr:oldSyntax`, which is its own entry.
+
+**The build host is not the target** (1). NSPR took its architecture from
+`uname`, which on a 64-bit Cygwin building a 32-bit product is wrong.
+
+**Bundled third-party builds more than we need** (2). ICU's test programs and
+`icuio` both fail and neither is used.
+
+**Patch mechanics, not code** (4). A gtest patch reconstructed by un-applying
+it mentally was wrong by one blank line and its hunk rejected silently; the
+bundled tr1 tuple was forced tree-wide instead of where it is needed; git was
+normalising CRLF inside `*.patch` files, now held by `.gitattributes`; and
+CoinMP 1.8.4 ships an upstream packaging bug naming `.vcxproj` files under a
+`v9` directory.
+
+**The CRT split in three** (5). `-NODEFAULTLIB` means every part must be
+named, and there turned out to be **three different ways to end up with one
+third of it**: `sal`'s `kill` chooses the static CRT through `DYNAMIC_CRT`
+and got a mismatched pair; `embedserv`'s in-process server *replaces* `LIBCMT`
+outright, so an append made earlier is lost; and `regpatchactivex` and
+`desktop`'s win32 setup never touch `LIBCMT` at all, appending `libcmt.lib` to
+their own `SHL1STDLIBS`. Each needed a different fix. Plus the gbuild side and
+the CoinMP link inputs.
+
+**Modern SDKs moved things, or dropped them** (3). The 64-bit shell extension
+computes its own library paths and both layouts had moved — the SDK gained a
+version level and split into `um/` and `ucrt/`, the toolset renamed `amd64/`
+to `x64/`. `mapix.h` is not in the Windows 10 SDK **at all**: extended MAPI
+went to Outlook, and only simple MAPI stayed. Python 3 split its public
+headers into `Include/` and `Include/cpython/`, and the delivery list only
+knew about the first.
+
+**An x64 source branch leaves x86 twins untouched** (1). The `<typeinfo.h>`
+fix was cherry-picked onto `msvc_win64_x86-64/except.cxx` and its message says
+"the file is the MSVC x64 bridge which no other platform compiles" — true
+where it came from. This build compiles `msvc_win32_intel`, which holds a
+second copy of the same line. Expect more of these.
+
+**Includes VC9 supplied by accident** (2 sweeps, 42 files). `std::back_inserter`
+and the iterator types live in `<iterator>`, which VC9's containers dragged in
+and a modern MSVC's do not. Recorded as two entries because the first sweep
+was wrong twice — see the note on sweeps below.
+
+**Deferred work coming due** (2). Two things trunk had explicitly parked until
+a modern compiler existed, which is what this branch is. The CLI binding is
+Managed Extensions for C++ and needs `/clr:oldSyntax`, removed after VS2015 —
+switched off here, and a C++/CLI port is its own piece of work. Python had its
+entire Windows half commented out with a note saying so; it now builds through
+PCbuild and MSBuild.
+
+**Building Python turned out to be four defects, not one** (4). `find_python.bat`
+probes only `py -3.10` and `py -3.9` and otherwise **downloads** a Python
+through nuget, which offline cannot do — `HOST_PYTHON` is the documented way
+past that. It must be a *native* Python: a cygwin one passes a version check
+and still reads the native paths PCbuild hands it as relative, prepending its
+own working directory. `IncludeExternals=false` looks like the way to stay
+offline and also silently removes zlib from `pythoncore`, which then does not
+compile. And `pcbuild.sln` carries dependencies that are editorial rather than
+structural — `python.vcxproj` declares one on `_ctypes` so the IDE yields a
+usable interpreter — so the projects are built individually instead.
+
+**An awk with a space in its path** (1). `configure.ac` spells `$AWK`
+unquoted in some forty places. On a Cygwin carrying `gawk-<version>.exe` but
+no plain `gawk`, the only `gawk` on `PATH` is Git for Windows' copy under
+`C:\Program Files`, and the build dies hundreds of lines away with
+`/cygdrive/c/Program: No such file`. Fixed by taking the 8.3 form, because the
+Cygwin-side fix does not survive a Cygwin update.
+
+**Symbols a modern compiler adds** (1). `__xmm@<hex>` vector constants appear
+in archive symbol tables exactly as `__real@<hex>` always has. They are merged
+COMDATs, not exports, and a `.def` naming one fails to link.
+
+### The most expensive shape: succeeding while doing nothing
+
+Three of the forty did not fail. They reported success, wrote a plausible
+output file, and left the damage to surface somewhere else entirely:
+
+* **`makedepend`** rejects `-std:c++14` — `-s` is one of its own options — and
+  exits before scanning a single `#include`. It still creates the `.d` file,
+  and that file still holds its target line, so make is satisfied. Every gbuild
+  C++ object in the build had an **empty dependency list**. A clean build is
+  unaffected, which is why it survived a full run; an incremental one silently
+  stops rebuilding on header changes.
+* **`lib.exe -EXTRACT:/`** cannot extract an archive's linker member any more.
+  It says so, writes nothing, and **exits 0**. The build fails later, in
+  `ldump`, naming the `.def` rather than the step that broke.
+* **An external module's `so_built_*` flag** is not invalidated by editing its
+  `BUILD_ACTION`. The first Python build after rewriting the whole Windows
+  half did nothing at all and reported success.
+
+The common thread is that none of them is visible from a green build. They are
+found by reading the noise in a log that already succeeded, which is a habit
+worth keeping for the rest of the port.
+
+### A note on sweeps
+
+The `<iterator>` sweep was wrong twice, and both times it looked complete.
+First it matched the factory functions (`std::back_inserter`) and not the
+types they return, so it missed a file whose only use is
+`typedef back_insert_iterator<contents_t> inserter_t`. Widened to bare names
+for files saying `using namespace std`, it missed the same file again, because
+that line reads `using namespace ::std;` and the pattern did not allow the
+leading `::`.
+
+A criterion narrower than the defect finds a tidy subset and reads like
+completeness. Both misses were found by the build rather than by re-reading
+the pattern.
+
+## The open defect
+
+    getCaughtException() failed!
+    dmake:  Error code 1, while making 'runtest'
+
+`testtools/source/bridgetest` is the only thing on this branch that has
+actually been *run*, and it fails. It exercises UNO exception propagation
+across the C++ bridge, which is `cppu::getCaughtException()` reaching into
+MSVC's own exception machinery to recover the thrown object.
+
+The implementation is
+`bridges/source/cpp_uno/msvc_win32_intel/except.cxx`, and it decodes MSVC's
+`ThrowInfo` / `CatchableTypeArray` structures using layout assumptions that
+were true for VC9. `win10-64-minimal` rewrote the **x64** copy of that file
+against the modern layout — it carries its own SEH decoding and a long comment
+diagramming `EXCEPTION_RECORD` — and the x86 copy never received the same
+treatment, because that branch never compiled it.
+
+So this is the same family as the `<typeinfo.h>` miss, and a far deeper
+instance of it. It is not a build fix and has not been attempted here.
+
+It is worth being clear about the consequence: exception propagation is not a
+corner of this product. Until this works, a build that produces an installer
+should not be read as a product that runs.
+
 ## Verification
 
-Honest accounting, because the gap matters more than the list of changes.
+Honest accounting, because the gap still matters more than the list of changes.
 
-**Checked:**
+**Now measured, by building:**
 
-* `configure.ac` — both edited regions extracted, macros stubbed, and parsed
-  with `sh -n`. Two pre-existing unbracketed `AC_MSG_CHECKING(...)` calls
-  elsewhere in the file defeat that check beyond the edited regions; they are
-  not new.
-* `set_soenv.in` — `perl -c` after substituting the `@...@` placeholders.
-* the two new third-party patches — `patch --dry-run -p2`, run from the
-  directory the build applies them in. Both apply cleanly.
-* `throwspec.py report` over the whole tree, post-sweep: no typed specification
-  remains, including in the files trunk added since the source branch diverged.
-* the source cherry-picks — 5,069 of 5,070 files in the sweep applied without
-  conflict, and every other picked commit applied clean.
+* `configure` runs and completes, and `configure.ac` therefore expands —
+  `autoconf` was not available when this file was first written, so the whole
+  file had never been through `m4`.
+* `bootstrap` runs, `set_soenv.in` produces a `winenv.set.sh` the build sources
+  without complaint, and `COMEX=14` selects a `wntmsci14.pro` output tree.
+* Every bundled third-party library builds and delivers, Python included.
+* Every module builds and delivers, and `instsetoo_native` assembles both
+  installers.
+* The awk fix is measured, not argued: `configure` now completes with Git for
+  Windows on `PATH`, and logs
+  `.../Program Files/Git/usr/bin/gawk has a space in it, using
+  /cygdrive/c/PROGRA~1/Git/usr/bin/gawk.exe instead`. Both checks that used to
+  die there — the environment sanity check and the GNU make version check —
+  pass.
+* `-Zm500` and `-safeseh` are still accepted; `-NODEFAULTLIB` plus the named
+  CRT libraries is the complete set in both the static and the dynamic model.
+* The `<../include/NAME>` retarget works. Four of the six shadowing headers —
+  `list`, `map`, `set`, `vector` — have now been compiled through on this
+  compiler, which the C4464 warnings in the log record by name. `map` and `set`
+  are also two of the three whose branch order was wrong, so that fix is
+  measured rather than argued.
 
-**Not checked — this is the whole of it:**
+**Still only argued:**
 
-* **Nothing has been compiled.** No `configure` run, no `bootstrap`, no build,
-  on either compiler.
-* `autoconf` is not available here, so `configure.ac` has never been expanded.
+* **The product has never been started.** Building is not running, and the one
+  runtime test that exists fails. See [The open defect](#the-open-defect).
+* **The CLI/.NET binding is absent**, not fixed. Six places had to be taught
+  that — three `util/makefile.pmk` files, the SDK's file list, the SDK's
+  checker, bridgetest's IDL, and the installer via `SCPDEFS`.
+* **Python is missing five extension modules**, because their sources are
+  downloaded by `get_externals.bat` and an offline build cannot run it.
 * The **VC9 regression claim** is by construction, not by measurement: every
   toolchain edit adds a branch in front of existing code rather than rewriting
-  it, and every source edit is legal C++03. That is a strong argument and not a
-  green build.
-* Details that only a link exposes: manifest handling (`mt.exe`,
-  `_VC_MANIFEST_*`), whether `-Zm500` and `-safeseh` are still accepted, and
-  whether `-NODEFAULTLIB` plus the three named CRT libraries is the complete
-  set.
-* The `<../include/NAME>` retarget is proven for `vector` and `functional` on
-  the source branch and unproven for the other four, though the mechanism is
-  identical.
+  it, and every source edit is legal C++03. Nothing on this branch has been
+  compiled with VC9. That is a strong argument and not a green build.
+* `functional` and `numeric`, the other two shadowing headers, have not been
+  reached yet.
+* Manifest handling (`mt.exe`, `_VC_MANIFEST_*`) — nothing built so far
+  exercises it.
+* Nothing has been **run**. The build produces libraries; whether the product
+  starts is a question this branch has not asked. See also
+  [Known gap: the staged CRT is still VC90](#known-gap-the-staged-crt-is-still-vc90),
+  which is a runtime problem by construction.
 
-Expect a tail. On `win10-64-minimal` the last mile was six defects in four
-families, and every one of them was found by building rather than by reading —
-which is the strongest reason to treat the list above as a starting position
-rather than a finished port.
+The rate is the useful number here. On `win10-64-minimal` the last mile was six
+defects in four families; this branch took forty in a dozen to reach a green
+build, and a green build is not the finish line — it is the point at which the
+runtime questions start.
