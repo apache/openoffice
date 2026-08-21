@@ -36,6 +36,17 @@ TARGETTYPE=CUI
 
 .IF "$(COM)"=="GCC"
 CDEFS=-D_WIN32_WINNT=0x0501
+.ELIF "$(COMEX)"=="14"
+# kill.cxx calls GetProcessId, which is a Windows XP API.  The Platform SDK
+# declared it outside any guard, so the tree-wide _WIN32_WINNT=0x0500 floor
+# never hid it; the Windows 10 SDK gates it on >= 0x0501 and it disappears
+# (C3861).  The MinGW branch above has always said this module wants 0x0501 --
+# it simply never applied to MSVC, because MSVC never needed it to.
+#
+# -U first so this replaces the global define instead of redefining it, which
+# would be C4005.  Scoped to the UCRT toolset so the VC9 command line is
+# untouched.
+CDEFS+=-U_WIN32_WINNT -D_WIN32_WINNT=0x0501
 .ENDIF
 
 .IF "$(USE_SYSTEM_STL)" != "YES" && "$(PRODUCT)" = ""
