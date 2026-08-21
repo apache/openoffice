@@ -410,7 +410,7 @@ typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
             break;
         }
     }
-    if (retVal == NULL)
+    if (retVal == nullptr)
     {
         System::String ^ cliTypeName= cliType->FullName;
         // Void
@@ -456,7 +456,7 @@ typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
             }
         }
     }
-    if (retVal == NULL)
+    if (retVal == nullptr)
     {
         OUStringBuffer buf( 128 );
         buf.appendAscii(
@@ -831,7 +831,7 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                 rtl_uString_release(*(rtl_uString**) uno_data);
 
             *(rtl_uString **)uno_data = 0;
-            if (cli_data == NULL)
+            if (cli_data == nullptr)
             {
                  rtl_uString_new((rtl_uString**) uno_data);
             }
@@ -859,7 +859,7 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
         case typelib_TypeClass_ANY:
         {
             uno_Any * pAny = (uno_Any *)uno_data;
-            if (cli_data == NULL) // null-ref or uninitialized any maps to empty any
+            if (cli_data == nullptr) // null-ref or uninitialized any maps to empty any
             {
                 if (assign)
                     uno_any_destruct( pAny, 0 );
@@ -1087,10 +1087,10 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     System::String ^ __s;
                     cli::array< sr::FieldInfo ^ > ^ arFields;
                     __s = mapUnoString(comp_td->ppMemberNames[nPos]);
-                    arFields = cliType != NULL ? cliType->GetFields() : NULL;
+                    arFields = cliType != nullptr ? cliType->GetFields() : NULL;
 #endif
                     System::Object ^ val= nullptr;
-                    if (cli_data != NULL)
+                    if (cli_data != nullptr)
                     {
                         sr::FieldInfo ^ aField= cliType->GetField(
                             mapUnoString(comp_td->ppMemberNames[nPos]));
@@ -1125,8 +1125,8 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                     bool bDefault = ((struct_td != NULL
                                      && struct_td->pParameterizedTypes != NULL
                                      && struct_td->pParameterizedTypes[nPos] == sal_True
-                                      && val == NULL)
-                                     || cli_data == NULL) ? true : false;
+                                      && val == nullptr)
+                                     || cli_data == nullptr) ? true : false;
                     switch (member_type->eTypeClass)
                     {
                     case typelib_TypeClass_CHAR:
@@ -1266,7 +1266,7 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
             auto_ptr< rtl_mem > seq;
 
             System::Array ^ ar = nullptr;
-            if (cli_data != NULL)
+            if (cli_data != nullptr)
             {
                 ar = safe_cast< System::Array ^ >(cli_data);
                 sal_Int32 nElements = ar->GetLength(0);
@@ -1281,10 +1281,23 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
                                            System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
                         break;
                     case typelib_TypeClass_BOOLEAN:
+                    {
+                        // Marshal::Copy has no Boolean[] overload.  MC++ got
+                        // away with handing it one because it would implicitly
+                        // convert an array of bool to an array of byte;
+                        // C++/CLI will not, and a safe_cast to Byte[] throws,
+                        // because bool[] and byte[] are not castclass
+                        // compatible the way int16[] and uint16[] are.  Copy
+                        // the elements instead.
                         seq = seq_allocate(nElements, sizeof (sal_Bool));
-                        sri::Marshal::Copy(safe_cast< cli::array< System::Byte > ^ >(cli_data), 0,
-                                           System::IntPtr(& ((uno_Sequence*) seq.get())->elements), nElements);
+                        cli::array< System::Boolean > ^ arBool =
+                            safe_cast< cli::array< System::Boolean > ^ >(cli_data);
+                        sal_Bool * pDest = (sal_Bool *)
+                            & ((uno_Sequence*) seq.get())->elements;
+                        for (sal_Int32 i = 0; i < nElements; i++)
+                            pDest[i] = arBool[i] ? sal_True : sal_False;
                         break;
+                    }
                     case typelib_TypeClass_BYTE:
                         seq = seq_allocate( nElements, sizeof (sal_Int8) );
                     sri::Marshal::Copy(safe_cast< cli::array< System::Byte > ^ >(cli_data), 0,
@@ -1442,10 +1455,10 @@ void Bridge::map_to_uno(void * uno_data, System::Object ^ cli_data,
             if (assign)
             {
                 uno_Interface * p = *(uno_Interface **)uno_data;
-                if (0 != p)
+                if (nullptr != p)
                     (*p->release)( p );
             }
-            if (0 == cli_data) // null-ref
+            if (nullptr == cli_data) // null-ref
             {
                 *(uno_Interface **)uno_data = 0;
             }
@@ -1773,8 +1786,14 @@ void Bridge::map_to_cli(
         }
         case typelib_TypeClass_BOOLEAN:
         {
-            cli::array< System::Byte > ^ arBool = gcnew cli::array< System::Byte >( nElements );
-            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arBool, 0, nElements);
+            // The element type has to be Boolean -- the caller gets a bool[].
+            // Marshal::Copy cannot fill one (see the other direction), so copy
+            // the elements.
+            cli::array< System::Boolean > ^ arBool =
+                gcnew cli::array< System::Boolean >( nElements );
+            sal_Bool const * pSrc = (sal_Bool const *) &seq->elements;
+            for (sal_Int32 i = 0; i < nElements; i++)
+                arBool[i] = (pSrc[i] != sal_False);
             *cli_data= arBool;
             break;
         }

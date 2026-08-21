@@ -127,13 +127,13 @@ System::Object ^ Cli_environment::getRegisteredInterface(System::String ^ oid,
         oid = createKey(oid, type);
         ret = m_objects[ oid ];
     }
-    if (ret != 0)
+    if (ret != nullptr)
     {
         System::WeakReference ^ weakIface =
             static_cast< System::WeakReference ^ >( ret );
         ret = weakIface->Target;
     }
-    if (ret == 0)
+    if (ret == nullptr)
         m_objects->Remove( oid );
     return ret;
 }
