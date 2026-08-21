@@ -24,11 +24,11 @@
 # no translation here anyway
 .IF "$(L10N_framework)"==""
 .IF "$(COM)" == "MSC"
-# ...but not when configure has ruled the binding out.  It is written in Managed
-# Extensions for C++ -- __gc, S"...", __pin -- which needs /clr:oldSyntax, and
-# that switch was removed after VS2015; porting it to C++/CLI is its own piece
-# of work.  Every consumer already handles BUILD_FOR_CLI being empty, because
-# that is how the non-MSC platforms build.  VC9 is unaffected.
+# ...but not when configure was told --disable-cli.  The binding is C++/CLI now
+# and builds with either compiler generation, but it still wants a .NET SDK --
+# csc.exe and mscoree.lib -- which a Windows machine need not have.  Every
+# consumer already handles BUILD_FOR_CLI being empty, because that is how the
+# non-MSC platforms build.
 .IF "$(DISABLE_CLI)"==""
 BUILD_FOR_CLI = "true"
 .ENDIF

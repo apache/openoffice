@@ -57,8 +57,8 @@ EXELIST = \
 	$(DESTDIRBIN)/uno-skeletonmaker$(EXEPOSTFIX)
 
 # Both of these are products of the CLI binding, so they exist only when it
-# was built.  DISABLE_CLI is what configure sets when the compiler cannot
-# build it -- see cli_ure/util/makefile.pmk.
+# was built.  DISABLE_CLI is what configure sets for --disable-cli -- see
+# cli_ure/util/makefile.pmk.
 .IF "$(GUI)"=="WNT" && "$(DISABLE_CLI)"==""
 EXELIST += \
 	$(DESTDIRBIN)/climaker$(EXEPOSTFIX)

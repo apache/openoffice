@@ -2417,19 +2417,34 @@ AC_SUBST(USE_MINGW)
 dnl ===================================================================
 dnl  The CLI/.NET language binding, and whether it can be built at all
 dnl ===================================================================
-dnl  cli_ure is written in Managed Extensions for C++ -- __gc, S"...",
-dnl  __pin -- which needs /clr:oldSyntax.  That switch was removed after
-dnl  VS2015, so a UCRT-generation compiler cannot build the binding at
-dnl  all; porting it to C++/CLI is a separate piece of work.
+dnl  cli_ure, the .NET language binding.  It was written in Managed
+dnl  Extensions for C++ -- __gc, S"...", __pin -- which needs /clr:oldSyntax,
+dnl  and that switch was removed after VS2015; it is now C++/CLI and builds
+dnl  with either compiler generation.
 dnl
-dnl  One variable rather than a COMEX test in each consumer: the module
-dnl  makefiles, the SDK's file lists and its checker all need the same
-dnl  answer, and they should not each rediscover it.
+dnl  It is still optional, because it wants a .NET SDK: csc.exe to compile the
+dnl  C# half and mscoree.lib to link the C++ half.  --disable-cli is for a
+dnl  Windows box that has a compiler but no SDK.
+dnl
+dnl  One variable rather than a test in each consumer: the module makefiles,
+dnl  the SDK's file lists and its checker all need the same answer, and they
+dnl  should not each rediscover it.
+AC_ARG_ENABLE(cli,
+[  --disable-cli           Do not build the CLI (.NET) language binding.  It
+                          needs a .NET SDK -- csc.exe and mscoree.lib -- which
+                          a Windows machine need not have.
+],,)
 DISABLE_CLI=
-if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
-	AC_MSG_CHECKING([whether the CLI language binding can be built])
+if test "$_os" != "WINNT" -o "$enable_cli" = "no" ; then
 	DISABLE_CLI="TRUE"
-	AC_MSG_RESULT([no, /clr:oldSyntax is gone from this compiler])
+fi
+if test "$_os" = "WINNT" ; then
+	AC_MSG_CHECKING([whether to build the CLI language binding])
+	if test -z "$DISABLE_CLI" ; then
+		AC_MSG_RESULT([yes])
+	else
+		AC_MSG_RESULT([no, --disable-cli])
+	fi
 fi
 AC_SUBST(DISABLE_CLI)
 
@@ -2860,8 +2875,48 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 	      CSC_PATH="$csctest"
 	   fi
 	fi
-	if test ! -x "$CSC_PATH/csc.exe"; then
-		AC_MSG_ERROR([csc.exe not found. Make sure it's in the path or use --with-csc-path])
+	dnl  Which CLR the C# half must target is decided by the C++ half, and a
+	dnl  UCRT-generation compiler settles it: /clr has not emitted CLR 2
+	dnl  assemblies since VS2010.  Mixing the two does not fail at build time,
+	dnl  it fails when the process loads them --
+	dnl
+	dnl    System.BadImageFormatException: ... The assembly was created by a
+	dnl    runtime that is newer than the currently loaded runtime
+	dnl
+	dnl  oowintool goes looking for the v2 csc on purpose, which is right for
+	dnl  VC9 and wrong here, so take the newest compiler beside it instead.
+	dnl  This overrides an explicit --with-csc-path, because the constraint is
+	dnl  the compiler's and not a preference; hence the warning.
+	if test -n "$MSVC_MODERN" -a -z "$DISABLE_CLI"; then
+		AC_MSG_CHECKING([for a csc.exe matching the C++ compiler's CLR])
+		case "$CSC_PATH" in
+		*[[Vv]]1.*|*[[Vv]]2.*|*[[Vv]]3.*)
+			_csc_root=`dirname "$CSC_PATH"`
+			_csc_new=
+			for _c in `ls -d "$_csc_root"/[[Vv]]4* 2>/dev/null | sort -r`; do
+				if test -x "$_c/csc.exe"; then
+					_csc_new="$_c"
+					break
+				fi
+			done
+			if test -n "$_csc_new"; then
+				if test -n "$with_csc_path"; then
+					AC_MSG_WARN([--with-csc-path points at a CLR 2 compiler; using $_csc_new instead, because this C++ compiler emits CLR 4 assemblies])
+				fi
+				CSC_PATH="$_csc_new"
+				AC_MSG_RESULT([$CSC_PATH])
+			else
+				AC_MSG_RESULT([none found])
+				AC_MSG_ERROR([This C++ compiler emits CLR 4 assemblies, but only a CLR 2 csc.exe was found. Point --with-csc-path at a v4 .NET Framework directory, or configure --disable-cli.])
+			fi
+			;;
+		*)
+			AC_MSG_RESULT([$CSC_PATH])
+			;;
+		esac
+	fi
+	if test ! -x "$CSC_PATH/csc.exe" -a -z "$DISABLE_CLI"; then
+		AC_MSG_ERROR([csc.exe not found. Make sure it's in the path or use --with-csc-path, or configure --disable-cli])
 	fi
 	# Convert to posix path with 8.3 filename restrictions ( No spaces )
 	CSC_PATH=`cygpath -d "$CSC_PATH"`
@@ -2890,8 +2945,8 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
              fi
           fi
 	    fi
-	    if test ! -f "$FRAME_HOME/lib/mscoree.lib"; then
-		AC_MSG_ERROR([mscoree.lib (.NET Framework) not found. Make sure you use --with-frame-home])
+	    if test ! -f "$FRAME_HOME/lib/mscoree.lib" -a -z "$DISABLE_CLI"; then
+		AC_MSG_ERROR([mscoree.lib (.NET Framework) not found. Make sure you use --with-frame-home, or configure --disable-cli])
 	    fi
 	    AC_MSG_RESULT(found)
 	# Convert to posix path with 8.3 filename restrictions ( No spaces )

@@ -54,8 +54,8 @@ if (-d "$StartDir") {
 	}
 
 	# climaker is a product of the CLI binding, so it is only there when the
-	# binding was built.  DISABLE_CLI is what configure sets when the compiler
-	# cannot build it -- see cli_ure/util/makefile.pmk.
+	# binding was built.  DISABLE_CLI is what configure sets for --disable-cli
+	# -- see cli_ure/util/makefile.pmk.
 	if (($OperatingSystem eq "windows" || $OperatingSystem eq "mingw")
 	    && ! $ENV{'DISABLE_CLI'}) {
 	    if ($OperatingSystem eq "windows" && ! -e "$StartDir/bin/climaker.exe") {
