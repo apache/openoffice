@@ -29,6 +29,7 @@
 #include <map>
 #include <functional>
 #include <algorithm>
+#include <iterator>
 
 #include <boost/utility.hpp>
 #include <boost/shared_ptr.hpp>
