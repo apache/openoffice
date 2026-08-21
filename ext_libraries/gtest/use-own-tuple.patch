@@ -15,6 +15,6 @@
 +#if defined(_MSC_VER) && (_MSC_VER < 1600)
 +#define GTEST_USE_OWN_TR1_TUPLE 1
 +#endif
- 
  //   GTEST_LANG_CXX11         - Define it to 1/0 to indicate that Google Test
  //                              is building in C++11/C++98 mode.
+ //   GTEST_LINKED_AS_SHARED_LIBRARY
