@@ -229,7 +229,7 @@ public:
     virtual sal_Int64 SAL_CALL testPackedStack(
         sal_Int64, sal_Int64, sal_Int64, sal_Int64, sal_Int64, sal_Int64,
         sal_Int64, sal_Int8 b, sal_Int8 c, sal_Int16 s, sal_Int32 l,
-        sal_Int8 d, sal_Int64 h) throw(com::sun::star::uno::RuntimeException)
+        sal_Int8 d, sal_Int64 h)
     {
         return ((static_cast<sal_Int64>(b) << 56) |
             (static_cast<sal_uInt64>(static_cast<sal_uInt8>(c)) << 48) |
@@ -239,7 +239,7 @@ public:
     }
     virtual double SAL_CALL testFpStack(
         double, double, double, double, double, double, double, double,
-        float f8, double d9) throw(com::sun::star::uno::RuntimeException)
+        float f8, double d9)
         { return static_cast<double>(f8) + d9; }
 
     virtual sal_Bool SAL_CALL getBool()
