@@ -119,7 +119,7 @@ System::Object ^ Cli_environment::getRegisteredInterface(System::String ^ oid,
                                                         System::Type ^ type)
 {
     //try if it is a UNO interface
-    System::Object ^ ret = NULL;
+    System::Object ^ ret = nullptr;
     ret = m_objects[ oid ];
     if (! ret)
     {

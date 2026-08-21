@@ -326,6 +326,10 @@ System::Type ^ mapUnoType(typelib_TypeDescriptionReference const * pTD)
 typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
 {
     typelib_TypeDescriptionReference* retVal= NULL;
+    // Kept for the error message: "could not map type: X" alone does not say
+    // which UNO name was looked up, and for a polymorphic struct that name is
+    // the whole question.
+    OUString usTypeName;
     if (cliType == nullptr)
     {
         retVal = * typelib_static_type_getByTypeClass(
@@ -440,7 +444,6 @@ typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
         //struct, interfaces, sequences
         else
         {
-            OUString usTypeName;
             uno::PolymorphicType ^ poly = dynamic_cast<uno::PolymorphicType ^>(cliType);
             if (poly != nullptr)
                 usTypeName = mapCliTypeName( poly->PolymorphicName);
@@ -463,6 +466,12 @@ typelib_TypeDescriptionReference* mapCliType(System::Type ^ cliType)
             RTL_CONSTASCII_STRINGPARAM("[cli_uno bridge] mapCliType():"
                                        "could not map type: ") );
         buf.append(mapCliString(cliType->FullName));
+        if (usTypeName.getLength())
+        {
+            buf.appendAscii( RTL_CONSTASCII_STRINGPARAM(" (looked up UNO name: ") );
+            buf.append(usTypeName);
+            buf.appendAscii( RTL_CONSTASCII_STRINGPARAM(")") );
+        }
         throw BridgeRuntimeError( buf.makeStringAndClear() );
     }
     return retVal;
@@ -598,7 +607,14 @@ System::String ^ mapPolymorphicName(System::String ^ unoName, bool bCliToUno)
 			index = cur;
             if (bCliToUno)
             {
-                builder->Append( mapCliTypeName(sParam).getStr());
+                // NOT Append(OUString::getStr()).  getStr() hands back a
+                // sal_Unicode const*, and the only Append overload a
+                // "unsigned short const*" converts to is Append(bool) -- via
+                // the ordinary pointer-to-bool conversion.  The type
+                // parameter then comes out as the text "True" and the
+                // resulting UNO name matches nothing:
+                //   []test.testtools.bridgetest.TestPolyStruct<True>
+                builder->Append( mapUnoString( mapCliTypeName(sParam).pData ) );
             }
             else
             {
@@ -1813,8 +1829,15 @@ void Bridge::map_to_cli(
         }
         case typelib_TypeClass_UNSIGNED_SHORT:
         {
-            cli::array< System::Int16 > ^ arUInt16 = gcnew cli::array< System::Int16 >( nElements );
-            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arUInt16,
+            // The caller gets an unsigned array -- allocate THAT, and cast
+            // only for the Copy call, which has no unsigned overload.  An
+            // array of unsigned and one of signed of the same size are
+            // castclass compatible, so the cast is a no-op at runtime.
+            cli::array< System::UInt16 > ^ arUInt16 =
+                gcnew cli::array< System::UInt16 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ),
+                                safe_cast< cli::array< System::Int16 > ^ >(
+                                    (System::Object ^) arUInt16 ),
                                 0, nElements);
             *cli_data= arUInt16;
             break;
@@ -1828,8 +1851,15 @@ void Bridge::map_to_cli(
         }
         case typelib_TypeClass_UNSIGNED_LONG:
         {
-            cli::array< System::Int32 > ^ arUInt32 = gcnew cli::array< System::Int32 >( nElements );
-            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arUInt32,
+            // The caller gets an unsigned array -- allocate THAT, and cast
+            // only for the Copy call, which has no unsigned overload.  An
+            // array of unsigned and one of signed of the same size are
+            // castclass compatible, so the cast is a no-op at runtime.
+            cli::array< System::UInt32 > ^ arUInt32 =
+                gcnew cli::array< System::UInt32 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ),
+                                safe_cast< cli::array< System::Int32 > ^ >(
+                                    (System::Object ^) arUInt32 ),
                                 0, nElements);
             *cli_data= arUInt32;
             break;
@@ -1843,8 +1873,16 @@ void Bridge::map_to_cli(
         }
         case typelib_TypeClass_UNSIGNED_HYPER:
         {
-            cli::array< System::Int64 > ^ arUInt64 = gcnew cli::array< System::Int64 >( nElements );
-            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ), arUInt64, 0, nElements);
+            // The caller gets an unsigned array -- allocate THAT, and cast
+            // only for the Copy call, which has no unsigned overload.  An
+            // array of unsigned and one of signed of the same size are
+            // castclass compatible, so the cast is a no-op at runtime.
+            cli::array< System::UInt64 > ^ arUInt64 =
+                gcnew cli::array< System::UInt64 >( nElements );
+            sri::Marshal::Copy( System::IntPtr( (void*) &seq->elements ),
+                                safe_cast< cli::array< System::Int64 > ^ >(
+                                    (System::Object ^) arUInt64 ),
+                                0, nElements);
             *cli_data= arUInt64;
             break;
         }
@@ -2006,7 +2044,12 @@ void Bridge::map_to_cli(
                                           typelib_InterfaceTypeDescription*>(td.get())) ;
         }
 		else
-			*cli_data= NULL;
+			// NOT NULL.  *cli_data is a System::Object^, and assigning the
+			// literal 0 to one BOXES it into an Int32 rather than storing a
+			// null reference.  The caller then holds a boxed integer where the
+			// signature says an interface; mapping it back builds a proxy FOR
+			// THAT INTEGER, so a null interface returns non-null.
+			*cli_data= nullptr;
         break;
     }
     default:

@@ -523,10 +523,14 @@ static bool performTest(XBridgeTest ^ xLBT)
 
 		bRet = (compareData( aData, aRet ) && compareData( aData, aRet2 )) && bRet ;
 
-        // check setting of null reference
-        xLBT->Interface = 0;
+        // check setting of null reference.  XInterface maps to Object^, and
+        // "= 0" on one BOXES the literal into an Int32 instead of storing
+        // null -- so the property ends up non-null and the comparison below
+        // is false whatever happens.  Neither has a check() message, which is
+        // why this failed as a bare "standard test failed".
+        xLBT->Interface = nullptr;
         aRet->Interface = xLBT->Interface;
-        bRet = (aRet->Interface == 0) && bRet;
+        bRet = (aRet->Interface == nullptr) && bRet;
 
         }
 

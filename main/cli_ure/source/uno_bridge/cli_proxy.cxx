@@ -334,7 +334,7 @@ srrm::IMessage ^ UnoInterfaceProxy::invokeObject(
     srrm::LogicalCallContext ^ context,
     srrm::IMethodCallMessage ^ mcm)
 {
-    System::Object ^ retMethod = 0;
+    System::Object ^ retMethod = nullptr;
     System::String ^ sMethod = static_cast<System::String ^>
         (props[ m_methodNameString ]);
     cli::array< System::Object ^ > ^ args = safe_cast< cli::array< System::Object ^ > ^ >(
