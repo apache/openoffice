@@ -78,6 +78,10 @@ CFLAGSCXX +=-AI$(BIN)
 # in CLR meta-data - use of this type may lead to a runtime exception":
 .IF "$(COMEX)"=="10"
 CFLAGSCXX += -clr:noAssembly -wd4339
+.ELIF "$(COMEX)"=="14"
+# /clr:oldSyntax -- Managed Extensions for C++ -- was removed after VS2015.
+# These sources are C++/CLI now, so plain /clr.
+CFLAGSCXX += -clr -LN -wd4339 -wd4715
 .ELSE
 CFLAGSCXX += -clr:oldSyntax -LN -wd4339 -wd4715
 .ENDIF
