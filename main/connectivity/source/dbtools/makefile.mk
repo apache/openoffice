@@ -90,11 +90,6 @@ $(MISC)$/$(SHL1TARGET).flt: makefile.mk
 	@echo ------------------------------
 	@echo _TI				>$@
 	@echo _real				>>$@
-# A modern MSVC puts its SSE vector constants in the archive symbol table
-# as __xmm@<hex>, exactly as it has always done for __real@<hex> above.
-# They are merged COMDAT constants, not exports, so a .def naming them
-# fails to link:  unresolved external symbol _xmm@41f0000...
-	@echo _xmm				>>$@
 
 
 ALLTAR : $(MISC)/dbtools.component
