@@ -1858,6 +1858,10 @@ ToFile( "Variable values.",  $empty,             "c" );
 if ( $platform =~ m/cygwin/ )
 {  ToFile( "CYGWIN_PATH",       $CYGWIN_PATH,       "e" );
    ToFile( "PSDK_HOME",         $PSDK_HOME,         "e" );
+   # Platform SDK v7.0, which a modern SDK does not replace.  It supplies
+   # mscoree.lib for the .NET parts and rebase.exe for postprocess, neither
+   # of which is in the Windows 10 SDK.  See win10-msvc/README.md.
+   ToFile( "FRAME_HOME",        $FRAME_HOME,        "e" );
    # The CLI binding cannot be built by a UCRT-generation compiler, and the
    # bundled Python needs an already-installed one to build with.  Both are
    # decided by configure and read by several unrelated modules.
