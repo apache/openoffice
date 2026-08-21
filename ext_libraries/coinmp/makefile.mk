@@ -57,7 +57,12 @@ TARFILE_MD5=dd85ff540997a95ebb233bb5ae7bcc61
 #                                 static_cast<const void*>
 #   coinmp-1.7.6-nopedantic.patch -pedantic-errors is no longer added by
 #                                 coin.m4 or by any generated configure
-PATCH_FILES=coinmp-1.8.4.patch
+# Upstream packaging bug in 1.8.4: the v10 solution names its dependency
+# projects under MSVisualStudio\v9\ but with the .vcxproj extension, and the
+# v9 directories hold .vcproj -- so all seven paths point at files that do
+# not exist (MSB3202), the libraries never build, and CoinMP.def then fails
+# to resolve the Clp symbols it exports.
+PATCH_FILES=coinmp-1.8.4.patch coinmp-1.8.4-v10-sln-paths.patch
 .IF "$(OS)"=="OS2"
 PATCH_FILES+=coinmp-1.6.0-os2.patch
 .ENDIF

@@ -747,8 +747,20 @@ $(call gb_LinkTarget_set_auxtargets,$(2),\
 	$(call gb_LinkTarget_get_target,$(2)).manifest \
 )
 
+# VC9 linked an external <exe>.manifest beside every executable, because the
+# CRT it used was a side-by-side assembly that had to be named there.  The UCRT
+# is not an assembly, so a modern link emits no manifest at all -- and
+# delivering an auxiliary target that was never produced fails the build with
+# "cp: cannot stat ...xml2cmp.exe.manifest".  The link rule itself already
+# copes, embedding a manifest only "if [ -f ... ]"; only this delivery list
+# assumed one.
+ifeq ($(COMEX),14)
+$(call gb_Executable_get_target,$(1)) \
+$(call gb_Executable_get_clean_target,$(1)) : AUXTARGETS :=
+else
 $(call gb_Executable_get_target,$(1)) \
 $(call gb_Executable_get_clean_target,$(1)) : AUXTARGETS := $(call gb_Executable_get_target,$(1)).manifest
+endif
 
 $(call gb_LinkTarget_get_target,$(2)) \
 $(call gb_LinkTarget_get_headers_target,$(2)) : PDBFILE = $(call gb_LinkTarget_get_pdbfile,$(2))
