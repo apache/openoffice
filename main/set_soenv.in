@@ -100,6 +100,7 @@ my ( $oldPATH, $SRC_ROOT, $SO_HOME, $JAVA_HOME, $JDK, $JAVAFLAGS, $OOO_SHELL,
      $PATH, $SOLAREXTRAINC, $SOLAREXTRALIB, $SOLARLIB,
      $SOLARINC, $LOCALINI, $FRAMEWORKSHOME, $COMEX, $PERL,
      $COMP_ENV, $ILIB, $JAVAHOME, $PSDK_HOME, $DIRECTXSDK_LIB, $USE_NEW_SDK, $FRAME_HOME,
+     $MSBUILD_PATH, $VCTOOLSET, $WINDOWS_SDK_VERSION,
      $USE_DIRECTX5, $ATL_LIB, $ATL_LIB_X64, $HAVE_ATLTHUNK, $ATL_INCLUDE, $MFC_LIB, $MFC_INCLUDE, $TMPDIR,
      $COMMON_BUILD_TOOLS, $WIN_GREP, $WIN_FIND, $WIN_LS,
      $WIN_GNUCOPY, $WIN_TOUCH, $MOZILLABUILD,
@@ -1857,6 +1858,9 @@ ToFile( "Variable values.",  $empty,             "c" );
 if ( $platform =~ m/cygwin/ )
 {  ToFile( "CYGWIN_PATH",       $CYGWIN_PATH,       "e" );
    ToFile( "PSDK_HOME",         $PSDK_HOME,         "e" );
+   ToFile( "MSBUILD_PATH",      "@MSBUILD_PATH@",   "e" );
+   ToFile( "VCTOOLSET",         "@VCTOOLSET@",      "e" );
+   ToFile( "WINDOWS_SDK_VERSION", "@WINDOWS_SDK_VERSION@", "e" );
    ToFile( "WINDOWS_VISTA_PSDK","@WINDOWS_VISTA_PSDK@","e" );
    ToFile( "DIRECTXSDK_LIB",    $DIRECTXSDK_LIB,    "e" );
    ToFile( "USE_DIRECTX5",      $USE_DIRECTX5,      "e" );

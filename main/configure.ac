@@ -754,6 +754,14 @@ AC_ARG_WITH(frame-home,
 
                           Usage: --with-frame-home=<absolute path to Framework SDK [[home]]>
 ],,)
+AC_ARG_WITH(msbuild-path,
+[  --with-msbuild-path     For Windows users building with a VS2015-or-newer
+                          toolset: the directory holding MSBuild.exe.  Only
+                          needed when it is not beside the toolset.
+
+                          Usage: --with-msbuild-path=<absolute path to MSBuild.exe directory>
+],,)
+
 AC_ARG_WITH(windows-sdk-home,
 [  --with-windows-sdk-home For Windows users building with a VS2015-or-newer
                           toolset: the root of the Windows 10/11 SDK, i.e. the
@@ -2467,6 +2475,76 @@ fi
 AC_SUBST(WINDOWS_SDK_HOME)
 AC_SUBST(WINDOWS_SDK_VERSION)
 AC_SUBST(WINDOWS_SDK_BINDIR)
+
+dnl ===================================================================
+dnl  MSBuild, for dependencies that ship Visual Studio project files
+dnl ===================================================================
+dnl  vcbuild.exe built .vcproj files and shipped with VS2005 and VS2008
+dnl  only; VS2010 replaced it with MSBuild and changed the project format
+dnl  to .vcxproj at the same time, so this is not a renamed binary but a
+dnl  different tool reading different files.  CoinMP is the one bundled
+dnl  dependency that needs it.
+dnl
+dnl  MSBuild lives beside the toolset rather than inside it, and is not on
+dnl  PATH in a BuildTools installation, so it is looked for relative to
+dnl  --with-cl-home: <VS>/VC/Tools/MSVC/<ver> puts the VS root four levels
+dnl  up.  Only searched for a UCRT-generation toolset -- VC9 uses vcbuild
+dnl  and must not be given an MSBuild it would not know what to do with.
+MSBUILD_PATH=
+if test "$_os" = "WINNT" -a -n "$MSVC_MODERN"; then
+	AC_MSG_CHECKING([for MSBuild])
+	if test -n "$with_msbuild_path"; then
+		MSBUILD_PATH=`cygpath -u "$with_msbuild_path"`
+	else
+		for msbuild_try in \
+			"$with_cl_home/../../../../MSBuild/Current/Bin" \
+			"$with_cl_home/../../../../MSBuild/15.0/Bin" ; do
+			if test -x "$msbuild_try/MSBuild.exe"; then
+				MSBUILD_PATH="$msbuild_try"
+				break
+			fi
+		done
+		if test -z "$MSBUILD_PATH"; then
+			AC_PATH_PROG(MSBUILD_EXE, MSBuild.exe)
+			if test -n "$MSBUILD_EXE"; then
+				MSBUILD_PATH=`dirname "$MSBUILD_EXE"`
+			fi
+		fi
+	fi
+	if test -z "$MSBUILD_PATH" -o ! -x "$MSBUILD_PATH/MSBuild.exe"; then
+		AC_MSG_ERROR([MSBuild.exe not found.  It is needed to build CoinMP, whose Visual Studio projects can no longer be built by vcbuild.  It is normally beside the toolset, in <VisualStudio>/MSBuild/Current/Bin; use --with-msbuild-path to name it, or --disable-coinmp to do without the Calc solver.])
+	fi
+	dnl  Convert to a posix path with 8.3 names, as the other tool paths are
+	MSBUILD_PATH=`cygpath -d "$MSBUILD_PATH"`
+	MSBUILD_PATH=`cygpath -u "$MSBUILD_PATH"`
+	AC_MSG_RESULT([$MSBUILD_PATH])
+fi
+AC_SUBST(MSBUILD_PATH)
+
+dnl  The PlatformToolset MSBuild should retarget a project to.  CoinMP's
+dnl  MSBuild projects are v10, i.e. they name toolset v100 (VS2010), which is
+dnl  not installed -- so the toolset has to be passed on the command line or
+dnl  the build fails with "the build tools for v100 cannot be found".
+dnl
+dnl  It is derived from the toolset directory name rather than from cl's
+dnl  version, because that name IS the toolset version and needs no parsing
+dnl  of the four-part number configure builds elsewhere: 14.29.30133 is v142,
+dnl  14.16.x is v141, 14.0x is v140, 14.3x is v143.
+VCTOOLSET=
+if test "$_os" = "WINNT" -a -n "$MSVC_MODERN"; then
+	AC_MSG_CHECKING([which MSBuild PlatformToolset to use])
+	vctoolset_ver=`basename "$with_cl_home"`
+	vctoolset_major=`echo "$vctoolset_ver" | cut -d. -f1`
+	vctoolset_minor=`echo "$vctoolset_ver" | cut -d. -f2`
+	if test -n "$vctoolset_major" -a -n "$vctoolset_minor"; then
+		VCTOOLSET="v$vctoolset_major`expr $vctoolset_minor / 10`"
+	fi
+	if test -z "$VCTOOLSET"; then
+		AC_MSG_ERROR([Could not work out a PlatformToolset from the toolset directory name "$vctoolset_ver". --with-cl-home should name the versioned toolset directory, e.g. .../VC/Tools/MSVC/14.29.30133])
+	fi
+	AC_MSG_RESULT([$VCTOOLSET])
+fi
+AC_SUBST(VCTOOLSET)
 
 dnl Compiler detection, logic from setsoenv.in
 case "$build_os" in
