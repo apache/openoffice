@@ -234,7 +234,7 @@ BUILD_ACTION=cd allinone && nmake /f all.mak EXFLAGS="-EHsc" && cd ..$/..
 # removed, in its original order.  Naming the targets rather than patching
 # all.mak keeps the VC9 branch above and the default branch below reaching
 # ICU exactly as they always have.
-BUILD_ACTION=cd allinone && nmake /f all.mak EXFLAGS="-EHa -Zc:wchar_t-" stubdata common i18n cal date layout layoutex toolutil gensprep genprops genpname genctd icupkg gencnval derb makeconv genbidi ctestfw gentest genccode gennorm genrb gencase genuca gennames gencmn pkgdata uconv genbrk gencfu io makedata && cd ..$/..
+BUILD_ACTION=cd allinone && nmake /f all.mak EXFLAGS="-EHa -Zc:wchar_t-" stubdata common i18n cal date layout layoutex toolutil gensprep genprops genpname genctd icupkg gencnval derb makeconv genbidi ctestfw gentest genccode gennorm genrb gencase genuca gennames gencmn pkgdata uconv genbrk gencfu makedata && cd ..$/..
 .ELSE
 BUILD_ACTION=cd allinone && nmake /f all.mak EXFLAGS="-EHa -Zc:wchar_t-" && cd ..$/..
 .ENDIF
