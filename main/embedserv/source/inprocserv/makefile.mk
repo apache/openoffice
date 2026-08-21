@@ -34,7 +34,12 @@ use_shl_versions=
 
 LIBTARGET=NO
 USE_DEFFILE=YES
-LIBCMT=libcmt.lib
+# The static CRT, deliberately, and replacing LIBCMT rather than adding to it:
+# this DLL is loaded into a foreign process and cannot rely on that process
+# having ours.  $(LIBCRTEXTRA_STATIC) is the rest of the static CRT on the UCRT
+# generation, where it comes in three pieces rather than one; it is undefined,
+# and so expands to nothing, on VC9.
+LIBCMT=libcmt.lib $(LIBCRTEXTRA_STATIC)
 UWINAPILIB=
 
 # --- Files -------------------------------------

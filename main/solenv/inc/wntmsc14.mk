@@ -91,10 +91,18 @@ CDEFS+=-D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 # link mixes the two models: a module setting DYNAMIC_CRT= (sal's kill is the
 # one that does) gets libcmt.lib and then fails on __except_handler4, which
 # lives in libvcruntime.lib and not in the import library of the same name.
+# Named as well as appended, because appending only reaches a module that lets
+# LIBCMT alone.  embedserv's in-process server REPLACES it outright -- it wants
+# the static CRT whatever the rest of the build is doing -- and an append made
+# before that assignment is simply lost.  Such a module names the matching
+# variable instead, which is empty on VC9 and so changes nothing there.
+LIBCRTEXTRA_DYNAMIC=vcruntime.lib ucrt.lib
+LIBCRTEXTRA_STATIC=libvcruntime.lib libucrt.lib
+
 .IF "$(DYNAMIC_CRT)"!=""
-LIBCMT+=vcruntime.lib ucrt.lib
+LIBCMT+=$(LIBCRTEXTRA_DYNAMIC)
 .ELSE
-LIBCMT+=libvcruntime.lib libucrt.lib
+LIBCMT+=$(LIBCRTEXTRA_STATIC)
 .ENDIF
 
 # --- what the modern toolchain removed -----------------------------------
