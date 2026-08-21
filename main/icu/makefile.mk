@@ -217,6 +217,24 @@ CONFIGURE_ACTION+= $(PERL) ..$/..$/..$/..$/..$/createmak.pl ..$/..$/..$/..$/..$/
 
 .IF "$(CCNUMVER)"<="001400000000"
 BUILD_ACTION=cd allinone && nmake /f all.mak EXFLAGS="-EHsc" && cd ..$/..
+.ELIF "$(COMEX)"=="14"
+# ICU 4.2's test programs use the C++03 idiom `".."MACRO' -- a string literal
+# glued straight onto an identifier.  C++11 reads that as a user-defined
+# literal suffix, so a modern compiler stops with
+#     letest.cpp(418): error C3688: invalid literal suffix 'U_FILE_SEP_STRING'
+# and there are ~85 such sites across letest, intltest and iotest.
+#
+# None of them is delivered.  OUT2BIN and OUT2LIB below take the five
+# libraries, the five DLLs and three tools, and nothing else -- ICU's tests
+# are never built into the product and never run by this build.  So the fix
+# is to stop building them rather than to rewrite eighty-five lines of
+# vendored test code.
+#
+# This is all.mak's own ALL: list with letest, cintltst, intltest and iotest
+# removed, in its original order.  Naming the targets rather than patching
+# all.mak keeps the VC9 branch above and the default branch below reaching
+# ICU exactly as they always have.
+BUILD_ACTION=cd allinone && nmake /f all.mak EXFLAGS="-EHa -Zc:wchar_t-" stubdata common i18n cal date layout layoutex toolutil gensprep genprops genpname genctd icupkg gencnval derb makeconv genbidi ctestfw gentest genccode gennorm genrb gencase genuca gennames gencmn pkgdata uconv genbrk gencfu io makedata && cd ..$/..
 .ELSE
 BUILD_ACTION=cd allinone && nmake /f all.mak EXFLAGS="-EHa -Zc:wchar_t-" && cd ..$/..
 .ENDIF
