@@ -108,7 +108,7 @@ $(DEF$(TNR)TARGETN) .PHONY :
 .ELSE
 .IF "$(SHL$(TNR)USE_EXPORTS)"==""
 	@-$(RMHACK$(TNR)) $(MISC)/$(SHL$(TNR)TARGET).exp
-	@$(LIBMGR) -EXTRACT:/ /OUT:$(MISC)/$(SHL$(TNR)TARGET).exp $(SLB)/$(DEFLIB$(TNR)NAME).lib
+	@$(SOLARENV)/bin/extract-linker-member.sh $(SLB)/$(DEFLIB$(TNR)NAME).lib $(MISC)/$(SHL$(TNR)TARGET).exp
 	@$(LDUMP2) -N $(EXPORT_ALL_SWITCH) -F $(MISC)/$(SHL$(TNR)TARGET).flt $(MISC)/$(SHL$(TNR)TARGET).exp			   >>$@.tmpfile
 	$(COMMAND_ECHO)$(RMHACK$(TNR)) $(MISC)/$(SHL$(TNR)TARGET).exp
 .ELSE			# "$(SHL$(TNR)USE_EXPORTS)"==""
