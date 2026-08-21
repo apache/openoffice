@@ -73,6 +73,14 @@ mkdir: %_DEST%\inc%_EXT%\python\cpython
 ..\%__SRC%\misc\build\Python-3.11.15\Include\* %_DEST%\inc%_EXT%\python\*
 ..\%__SRC%\misc\build\Python-3.11.15\Include\cpython\* %_DEST%\inc%_EXT%\python\cpython\*
 
+# Python 3 split the public headers in two: Include/ holds the stable API and
+# Include/cpython/ the unstable one, and 34 of the headers above reach into it
+# by name whenever Py_LIMITED_API is not defined -- which is our case.  A flat
+# Include\* does not follow that, so this line does.  Include/internal/ is NOT
+# delivered: nothing outside Py_BUILD_CORE includes it.
+mkdir: %_DEST%\inc%_EXT%\python\cpython
+..\%__SRC%\misc\build\Python-3.11.15\Include\cpython\* %_DEST%\inc%_EXT%\python\cpython\*
+
 #unix ONLY !
 ..\%__SRC%\misc\build\python-inst\bin\python %_DEST%\bin%_EXT%\python
 ..\%__SRC%\misc\build\Python-3.11.15\pyconfig.h %_DEST%\inc%_EXT%\python\pyconfig.h

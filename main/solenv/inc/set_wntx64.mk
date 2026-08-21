@@ -114,8 +114,19 @@ STDSLOCUI_X64=
 
 IMPLIBFLAGS_X64=-machine:X64
 
+# Both SDK and toolset moved their 64-bit libraries when the UCRT arrived.  The
+# SDK gained a version level and split its libraries into um/ and ucrt/; the
+# toolset renamed amd64/ to x64/.  This mirrors what set_soenv.in already does
+# for the main build's ILIB -- see the MSVC_MODERN branch there -- for the one
+# thing that computes its own paths instead, the 64-bit shell extension.
+.IF "$(COMEX)"=="14"
+LIBPATH_X64=$(PSDK_HOME)/lib/$(WINDOWS_SDK_VERSION)/um/x64
+LIBPATH_UCRT_X64=$(PSDK_HOME)/lib/$(WINDOWS_SDK_VERSION)/ucrt/x64
+LIBPATH_VC_X64=$(COMPATH)/lib/x64
+.ELSE
 LIBPATH_X64=$(PSDK_HOME)/lib/x64
 LIBPATH_VC_X64=$(COMPATH)/lib/amd64
+.ENDIF
 
 ADVAPI32LIB_X64=$(LIBPATH_X64)/advapi32.lib
 SHELL32LIB_X64=$(LIBPATH_X64)/shell32.lib
@@ -147,6 +158,12 @@ OLDNAMESLIB_X64=$(LIBPATH_VC_X64)/oldnames.lib
 MSIMG32LIB_X64=$(LIBPATH_X64)/msimg32.lib
 MSVCPRT_X64=$(LIBPATH_VC_X64)/msvcprt.lib
 MSVCRT_X64=$(LIBPATH_VC_X64)/msvcrt.lib
+.IF "$(COMEX)"=="14"
+# The same three-way CRT split the 32-bit build already deals with, reaching
+# the one target that names its CRT libraries by full path.  These consumers
+# all link -NODEFAULTLIB, so an unnamed library is an unlinked one.
+MSVCRT_X64+=$(LIBPATH_VC_X64)/vcruntime.lib $(LIBPATH_UCRT_X64)/ucrt.lib
+.ENDIF
 
 MISC_X64=$(MISC)/x64
 OBJ_X64=$(OBJ)/x64
