@@ -189,6 +189,12 @@ gb_STDLIBS := \
     msvcrt \
     oldnames \
 
+# Compiler flags that must NOT reach makedepend.  gbuild hands the same flag
+# list to the compiler and to makedepend, and makedepend is an X11-era tool
+# that parses the list itself rather than ignoring what it does not know.
+# Empty by default, so a VC9 build passes exactly what it passed before.
+gb_MakeDepend_FILTEROUT :=
+
 # The UCRT compiler generation -- COMEX 14, i.e. VS2015 (cl 19.00) and every
 # toolset since.  This mirrors solenv/inc/wntmsc14.mk, which carries the same
 # delta for the dmake half of the build.  The two have to agree: a module built
@@ -202,6 +208,19 @@ ifeq ($(COMEX),14)
 # <hash_set> become a hard #error under C++17.  /std:c++03 is not an escape,
 # a modern cl rejects it outright (D9002).
 gb_CXXFLAGS += -std:c++14
+
+# ...and makedepend must never see it.  -s is one of makedepend's OWN options
+# -- the start delimiter it writes above the dependencies, which has to begin
+# with '#'.  It reads -std:c++14 as that option with an illegal value, prints
+#
+#     makedepend.exe: error:  -s flag's value should start with '#'.
+#
+# and exits before scanning anything.  The .d file is still created and still
+# holds its target line, so make is happy and the build succeeds -- but it
+# lists no prerequisites at all, and every header change stops triggering a
+# rebuild.  Nothing about that is visible from a clean build, which is why it
+# is called out at this length.
+gb_MakeDepend_FILTEROUT += -std:%
 
 # Without this MSVC reports __cplusplus as 199711L whatever /std: says, and
 # the shims in main/stlport/systemstl branch on that value.
@@ -341,7 +360,7 @@ ifeq ($(gb_FULLDEPS),$(true))
 define gb_Object__command_deponcompile
 $(call gb_Helper_abbreviate_dirs_native,\
 	$(OUTDIR)/bin/makedepend$(gb_Executable_EXT) \
-		$(filter-out -DPRECOMPILED_HEADERS,$(4)) $(5) \
+		$(filter-out -DPRECOMPILED_HEADERS $(gb_MakeDepend_FILTEROUT),$(4)) $(filter-out $(gb_MakeDepend_FILTEROUT),$(5)) \
 		-I$(dir $(3)) \
 		$(filter-out -I$(COMPATH)% %/pch -I$(JAVA_HOME)%,$(6)) \
 		$(3) \
@@ -407,7 +426,7 @@ ifeq ($(gb_FULLDEPS),$(true))
 define gb_PrecompiledHeader__command_deponcompile
 $(call gb_Helper_abbreviate_dirs_native,\
 	$(OUTDIR)/bin/makedepend$(gb_Executable_EXT) \
-		$(4) $(5) \
+		$(filter-out $(gb_MakeDepend_FILTEROUT),$(4) $(5)) \
 		-I$(dir $(3)) \
 		$(filter-out -I$(COMPATH)% -I$(JAVA_HOME)%,$(6)) \
 		$(3) \
@@ -449,7 +468,7 @@ ifeq ($(gb_FULLDEPS),$(true))
 define gb_NoexPrecompiledHeader__command_deponcompile
 $(call gb_Helper_abbreviate_dirs_native,\
 	$(OUTDIR)/bin/makedepend$(gb_Executable_EXT) \
-		$(4) $(5) \
+		$(filter-out $(gb_MakeDepend_FILTEROUT),$(4) $(5)) \
 		-I$(dir $(3)) \
 		$(filter-out -I$(COMPATH)% -I$(JAVA_HOME)%,$(6)) \
 		$(3) \
