@@ -284,14 +284,42 @@ Assembly ^ TypeEmitter::type_resolve(
 	::System::Object ^, ::System::ResolveEventArgs ^ args )
 {
 	::System::String ^ cts_name = args->Name;
-	::System::Type ^ ret_type = m_module_builder->GetType(
-		cts_name, false /* no exc */ );
-	if (nullptr == ret_type)
+
+	// Two things have to happen before anything else, and both exist because
+	// AppDomain::TypeResolve is not re-entrancy-guarded: asking the
+	// ModuleBuilder for a name it cannot resolve raises TypeResolve again, for
+	// the same name, and lands straight back here.
+	//
+	// First: refuse to answer a name we are already answering.  Returning
+	// nullptr tells the runtime we cannot help, which is true, and ends the
+	// chain instead of extending it.
+	if (m_resolving->ContainsKey( cts_name ))
+		return nullptr;
+
+	// Second: consult the incomplete-interface table BEFORE the ModuleBuilder.
+	// A type that has been DefineType'd but not yet CreateType'd is in that
+	// table, and on .NET 4 ModuleBuilder::GetType does not return it -- so
+	// asking the ModuleBuilder first is both slower and the thing that
+	// recurses.
+	::System::Type ^ ret_type = nullptr;
 	{
 		iface_entry ^ entry = dynamic_cast< iface_entry ^ >(
 			m_incomplete_ifaces[ cts_name ] );
 		if (nullptr != entry)
 			ret_type = entry->m_type_builder;
+	}
+
+	if (nullptr == ret_type)
+	{
+		m_resolving->Add( cts_name, cts_name );
+		try
+		{
+			ret_type = m_module_builder->GetType( cts_name, false /* no exc */ );
+		}
+		finally
+		{
+			m_resolving->Remove( cts_name );
+		}
 	}
 	if (nullptr == ret_type)
 	{
@@ -322,15 +350,32 @@ Assembly ^ TypeEmitter::type_resolve(
 	::System::String ^ cts_name, bool throw_exc )
 {
 	::System::Type ^ ret_type = m_module_builder->GetType( cts_name, false );
-	//We get the type from the ModuleBuilder even if the type is not complete
-	//but have been defined.
-	//if (ret_type == 0)
-	//{
-	//	iface_entry ^ entry = dynamic_cast< iface_entry ^ >(
-	//		m_incomplete_ifaces[ cts_name ] );
-	//	if (nullptr != entry)
-	//		ret_type = entry->m_type_builder;
-	//}
+
+	// The lines below were commented out with the note "We get the type from
+	// the ModuleBuilder even if the type is not complete but have been
+	// defined."  That was true of the .NET this was written against; it is not
+	// true of .NET 4, where ModuleBuilder::GetType returns null for a type that
+	// has been DefineType'd but not yet CreateType'd.
+	//
+	// Leaving them commented out is not merely a missed lookup -- it does not
+	// terminate.  The caller falls through to Type::GetType, which raises
+	// AppDomain::TypeResolve, whose handler is type_resolve, which asks
+	// ModuleBuilder::GetType for the same name, which raises TypeResolve
+	// again.  AppDomain::TypeResolve has no re-entrancy guard, so climaker
+	// dies with a StackOverflowException the second time any interface is
+	// looked up -- the first time defines it, the second recurses:
+	//
+	//     Process is terminated due to StackOverflowException.
+	//
+	// The incomplete-interface table is exactly the right answer here, which
+	// is presumably why it was written in the first place.
+	if (ret_type == nullptr)
+	{
+		iface_entry ^ entry = dynamic_cast< iface_entry ^ >(
+			m_incomplete_ifaces[ cts_name ] );
+		if (nullptr != entry)
+			ret_type = entry->m_type_builder;
+	}
 		//try the cli_basetypes assembly
 	if (ret_type == nullptr)
 	{
@@ -2234,6 +2279,7 @@ TypeEmitter::TypeEmitter(
 	  m_type_Exception( nullptr ),
 	  m_type_RuntimeException( nullptr ),
 	  m_incomplete_ifaces( gcnew ::System::Collections::Hashtable() ),
+	  m_resolving( gcnew ::System::Collections::Hashtable() ),
 	  m_incomplete_structs( gcnew ::System::Collections::Hashtable() ),
 	  m_incomplete_services(gcnew ::System::Collections::Hashtable() ),
 	  m_incomplete_singletons(gcnew ::System::Collections::Hashtable() ),

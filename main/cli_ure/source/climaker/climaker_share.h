@@ -169,6 +169,9 @@ ref class TypeEmitter : public ::System::IDisposable
         ::System::Reflection::Emit::TypeBuilder ^ m_type_builder;
     };
     ::System::Collections::Hashtable ^ m_incomplete_ifaces;
+    // Names type_resolve is part-way through answering.  AppDomain's
+    // TypeResolve event has no re-entrancy guard of its own.
+    ::System::Collections::Hashtable ^ m_resolving;
     ::System::Type ^ complete_iface_type( iface_entry ^ entry );
 
     ref class struct_entry
