@@ -81,12 +81,21 @@ CDEFS+=-Dsnwprintf=_snwprintf
 # replacing them is a refactor and not a build fix.
 CDEFS+=-D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 
-# The CRT split in three when the UCRT arrived: msvcrt.lib is the startup and
-# import library, vcruntime.lib covers the compiler runtime, ucrt.lib the C
-# library proper.  Normally cl emits /DEFAULTLIB directives naming all three --
-# but this build links with -NODEFAULTLIB, so anything not named here is not
-# linked.  msvcrt.lib and msvcprt.lib are already in LIBCMT from the base file.
+# The CRT split in three when the UCRT arrived: a startup/import library, the
+# compiler runtime, and the C library proper.  Normally cl emits /DEFAULTLIB
+# directives naming all three -- but this build links with -NODEFAULTLIB, so
+# anything not named here is not linked.  The first of the three is already in
+# LIBCMT from the base file; these are the other two.
+#
+# They MUST follow the same static/dynamic choice the base file made, or the
+# link mixes the two models: a module setting DYNAMIC_CRT= (sal's kill is the
+# one that does) gets libcmt.lib and then fails on __except_handler4, which
+# lives in libvcruntime.lib and not in the import library of the same name.
+.IF "$(DYNAMIC_CRT)"!=""
 LIBCMT+=vcruntime.lib ucrt.lib
+.ELSE
+LIBCMT+=libvcruntime.lib libucrt.lib
+.ENDIF
 
 # --- what the modern toolchain removed -----------------------------------
 
