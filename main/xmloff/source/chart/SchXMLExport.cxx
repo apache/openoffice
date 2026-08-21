@@ -54,6 +54,7 @@
 #include <list>
 #include <typeinfo>
 #include <algorithm>
+#include <iterator>
 
 #include <com/sun/star/task/XStatusIndicatorSupplier.hpp>
 #include <com/sun/star/lang/XServiceInfo.hpp>

@@ -50,6 +50,7 @@
 #include <com/sun/star/sheet/TablePageBreakData.hpp>
 
 #include <algorithm>
+#include <iterator>
 #include <limits>
 
 using ::com::sun::star::uno::Sequence;

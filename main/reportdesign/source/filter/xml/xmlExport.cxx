@@ -21,6 +21,7 @@
 
 
 #include "precompiled_rptxml.hxx"
+#include <iterator>
 
 #include "xmlExport.hxx"
 #include "xmlAutoStyle.hxx"

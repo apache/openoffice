@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_dbaxml.hxx"
+#include <iterator>
 
 #include "xmlExport.hxx"
 #include "xmlAutoStyle.hxx"

@@ -56,6 +56,7 @@
 #include <vcl/window.hxx>
 
 #include <algorithm>
+#include <iterator>
 
 #include "ChartElementFactory.hxx"
 
