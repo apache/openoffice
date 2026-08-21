@@ -1858,6 +1858,11 @@ ToFile( "Variable values.",  $empty,             "c" );
 if ( $platform =~ m/cygwin/ )
 {  ToFile( "CYGWIN_PATH",       $CYGWIN_PATH,       "e" );
    ToFile( "PSDK_HOME",         $PSDK_HOME,         "e" );
+   # The CLI binding cannot be built by a UCRT-generation compiler, and the
+   # bundled Python needs an already-installed one to build with.  Both are
+   # decided by configure and read by several unrelated modules.
+   ToFile( "DISABLE_CLI",       "@DISABLE_CLI@",    "e" );
+   ToFile( "HOST_PYTHON",       "@HOST_PYTHON@",    "e" );
    ToFile( "MSBUILD_PATH",      "@MSBUILD_PATH@",   "e" );
    ToFile( "VCTOOLSET",         "@VCTOOLSET@",      "e" );
    ToFile( "WINDOWS_SDK_VERSION", "@WINDOWS_SDK_VERSION@", "e" );

@@ -56,12 +56,15 @@ EXELIST = \
 	$(DESTDIRBIN)/unoapploader$(EXEPOSTFIX) \
 	$(DESTDIRBIN)/uno-skeletonmaker$(EXEPOSTFIX)
 
-.IF "$(GUI)"=="WNT"
+# Both of these are products of the CLI binding, so they exist only when it
+# was built.  DISABLE_CLI is what configure sets when the compiler cannot
+# build it -- see cli_ure/util/makefile.pmk.
+.IF "$(GUI)"=="WNT" && "$(DISABLE_CLI)"==""
 EXELIST += \
 	$(DESTDIRBIN)/climaker$(EXEPOSTFIX)
 .ENDIF
 
-.IF "$(GUI)"=="WNT"
+.IF "$(GUI)"=="WNT" && "$(DISABLE_CLI)"==""
 CLILIST = \
 	$(DESTDIRCLI)/cli_basetypes.dll 	\
 	$(DESTDIRCLI)/cli_uretypes.dll 	\

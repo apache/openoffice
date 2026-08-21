@@ -24,14 +24,12 @@
 # no translation here anyway
 .IF "$(L10N_framework)"==""
 .IF "$(COM)" == "MSC"
-# ...but NOT on the UCRT generation.  The CLI binding is written in Managed
+# ...but not when configure has ruled the binding out.  It is written in Managed
 # Extensions for C++ -- __gc, S"...", __pin -- which needs /clr:oldSyntax, and
-# that switch was removed after VS2015.  A modern cl reports it as an unknown
-# option and then fails on System::Object (C1190).  This is a source port to
-# C++/CLI, not a flag, so the binding is switched off here until that is done.
-# Every consumer already handles BUILD_FOR_CLI being empty -- that is how the
-# non-MSC platforms build -- so this needs no other change.  VC9 is unaffected.
-.IF "$(COMEX)"!="14"
+# that switch was removed after VS2015; porting it to C++/CLI is its own piece
+# of work.  Every consumer already handles BUILD_FOR_CLI being empty, because
+# that is how the non-MSC platforms build.  VC9 is unaffected.
+.IF "$(DISABLE_CLI)"==""
 BUILD_FOR_CLI = "true"
 .ENDIF
 CFLAGSENABLESYMBOLS:=-Z7
