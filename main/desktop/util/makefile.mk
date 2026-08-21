@@ -230,7 +230,18 @@ ALLTAR : $(BIN)$/soffice_mac$(EXECPOST)
 
 # create a manifest file with the same name as the
 # office executable file soffice.exe.manifest
-.IF "$(CCNUMVER)" <= "001399999999"
+# COMEX 14 joins the simple branch.  The .ELSE below extracts the manifest the
+# LINKER embedded and merges the template into it, and a modern MSVC embeds
+# none -- mt.exe then fails with
+#
+#     general error c101008c: Failed to read the manifest from the resource
+#     of file "soffice.exe".  The specified resource type was not found.
+#
+# Nothing is lost by not having it.  That fragment existed to declare the VC90
+# CRT as a side-by-side assembly, and the UCRT is not one -- it is an operating
+# system component on Windows 10.  The template carries everything else this
+# executable needs, which is what the pre-VC9 branch has always relied on.
+.IF "$(CCNUMVER)" <= "001399999999" || "$(COMEX)" == "14"
 $(MISC)$/$(TARGET).exe.manifest: template.manifest
    $(COPY) $< $@
 .ELSE
@@ -246,7 +257,8 @@ $(MISC)$/$(TARGET).exe.manifest: $(MISC)$/$(TARGET).exe.template.manifest $(MISC
 
 # create a manifest file with the same name as the
 # office executable file soffice.bin.manifest
-.IF "$(CCNUMVER)" <= "001399999999"
+# Same condition as above, and for the same reason.
+.IF "$(CCNUMVER)" <= "001399999999" || "$(COMEX)" == "14"
 $(MISC)$/$(TARGET).bin.manifest: template.manifest
    $(COPY) $< $@
 .ELSE
