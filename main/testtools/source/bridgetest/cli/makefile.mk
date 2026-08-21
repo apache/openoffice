@@ -43,7 +43,10 @@ CFLAGSENABLESYMBOLS:=-Z7
 # ------------------------------------------------------------------
 
 #These tests are for Windows only
-.IF "$(COM)" == "MSC" && "$(GUI)" == "WNT"
+# ...and only when the CLI binding was actually built.  This whole directory is
+# the C++/CLI half of bridgetest and needs /clr:oldSyntax like the rest of it.
+# No makefile.pmk here, so DISABLE_CLI comes from the environment.
+.IF "$(COM)" == "MSC" && "$(GUI)" == "WNT" && "$(DISABLE_CLI)" == ""
 
 .IF "$(CCNUMVER)" >= "001399999999"
 CFLAGSCXX += -clr:oldSyntax -AI $(OUT)$/bin -AI $(SOLARBINDIR)
@@ -71,7 +74,10 @@ DEF1NAME = $(SHL1TARGET)
 
 .INCLUDE :	target.mk
 
-.IF "$(COM)" == "MSC" && "$(GUI)" == "WNT"
+# ...and only when the CLI binding was actually built.  This whole directory is
+# the C++/CLI half of bridgetest and needs /clr:oldSyntax like the rest of it.
+# No makefile.pmk here, so DISABLE_CLI comes from the environment.
+.IF "$(COM)" == "MSC" && "$(GUI)" == "WNT" && "$(DISABLE_CLI)" == ""
 
 ALLTAR : $(BIN)$/cli_bridgetest_inprocess.exe
 
