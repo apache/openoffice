@@ -125,7 +125,7 @@ STD_LIB_FILE(gid_File_Lib_Chartview, chartview)
 #endif
 
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Lib_Cli_Oootypes_Assembly
     TXT_FILE_BODY;
@@ -145,7 +145,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 File gid_File_Lib_Policy_Cli_Oootypes_Assembly
     TXT_FILE_BODY;
     Styles = (PACKED, ASSEMBLY, DONTRENAMEINPATCH);
@@ -164,7 +164,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Lib_Policy_Cli_Oootypes_Config
     TXT_FILE_BODY;
