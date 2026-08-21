@@ -51,7 +51,7 @@ $(DEF$(TNR)EXPORTFILE) : $(SHL$(TNR)VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"

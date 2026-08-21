@@ -46,7 +46,7 @@ $(DEF1EXPORTFILE) : $(SHL1VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -338,7 +338,7 @@ $(DEF2EXPORTFILE) : $(SHL2VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -630,7 +630,7 @@ $(DEF3EXPORTFILE) : $(SHL3VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -922,7 +922,7 @@ $(DEF4EXPORTFILE) : $(SHL4VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -1214,7 +1214,7 @@ $(DEF5EXPORTFILE) : $(SHL5VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -1506,7 +1506,7 @@ $(DEF6EXPORTFILE) : $(SHL6VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -1798,7 +1798,7 @@ $(DEF7EXPORTFILE) : $(SHL7VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -2090,7 +2090,7 @@ $(DEF8EXPORTFILE) : $(SHL8VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -2382,7 +2382,7 @@ $(DEF9EXPORTFILE) : $(SHL9VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -2674,7 +2674,7 @@ $(DEF10EXPORTFILE) : $(SHL10VERSIONMAP)
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
 # "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
