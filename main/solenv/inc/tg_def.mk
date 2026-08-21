@@ -46,6 +46,14 @@ $(DEF$(TNR)EXPORTFILE) : $(SHL$(TNR)OBJS) $(SHL$(TNR)LIBS)
 
 $(DEF$(TNR)EXPORTFILE) : $(SHL$(TNR)VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp

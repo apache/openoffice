@@ -41,6 +41,14 @@ $(DEF1EXPORTFILE) : $(SHL1OBJS) $(SHL1LIBS)
 
 $(DEF1EXPORTFILE) : $(SHL1VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -325,6 +333,14 @@ $(DEF2EXPORTFILE) : $(SHL2OBJS) $(SHL2LIBS)
 
 $(DEF2EXPORTFILE) : $(SHL2VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -609,6 +625,14 @@ $(DEF3EXPORTFILE) : $(SHL3OBJS) $(SHL3LIBS)
 
 $(DEF3EXPORTFILE) : $(SHL3VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -893,6 +917,14 @@ $(DEF4EXPORTFILE) : $(SHL4OBJS) $(SHL4LIBS)
 
 $(DEF4EXPORTFILE) : $(SHL4VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -1177,6 +1209,14 @@ $(DEF5EXPORTFILE) : $(SHL5OBJS) $(SHL5LIBS)
 
 $(DEF5EXPORTFILE) : $(SHL5VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -1461,6 +1501,14 @@ $(DEF6EXPORTFILE) : $(SHL6OBJS) $(SHL6LIBS)
 
 $(DEF6EXPORTFILE) : $(SHL6VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -1745,6 +1793,14 @@ $(DEF7EXPORTFILE) : $(SHL7OBJS) $(SHL7LIBS)
 
 $(DEF7EXPORTFILE) : $(SHL7VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -2029,6 +2085,14 @@ $(DEF8EXPORTFILE) : $(SHL8OBJS) $(SHL8LIBS)
 
 $(DEF8EXPORTFILE) : $(SHL8VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -2313,6 +2377,14 @@ $(DEF9EXPORTFILE) : $(SHL9OBJS) $(SHL9LIBS)
 
 $(DEF9EXPORTFILE) : $(SHL9VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
@@ -2597,6 +2669,14 @@ $(DEF10EXPORTFILE) : $(SHL10OBJS) $(SHL10LIBS)
 
 $(DEF10EXPORTFILE) : $(SHL10VERSIONMAP)
 	$(COMMAND_ECHO)$(TYPE) $< | $(AWK) -f $(SOLARENV)/bin/getcsym.awk > $@
+.IF "$(COM)"!="GCC"
+# Wildcards in a version script are a GCC concept -- the GCC branch below
+# pulls them out into a .symbols-regexp and matches them against the real
+# objects.  MSVC has no equivalent, and asking link.exe to export a literal
+# "_ZTI*" fails with LNK2001, so drop those lines here.
+	$(COMMAND_ECHO)$(GREP) -v "[*?]" $@ > $@.nowild
+	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
+.ENDIF
 .IF "$(COM)"=="GCC"
 	$(COMMAND_ECHO)-$(GREP) -v "\*\|?" $@ | $(SED) -e 's@#.*@@' > $@.exported-symbols
 	$(COMMAND_ECHO)-$(GREP) "\*\|?" $@ > $@.symbols-regexp
