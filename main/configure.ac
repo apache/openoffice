@@ -732,6 +732,15 @@ AC_ARG_WITH(csc-path,
 
                           Usage: --with-csc-path=<absolute path to csc.exe>
 ],,)
+AC_ARG_WITH(host-python,
+[  --with-host-python      For Windows users on a modern MSVC, the Python 3.9 or
+                          newer used to RUN the bundled Python's build scripts.
+                          It is not the Python that gets shipped.  Autodetected
+                          from the path; supply it when that finds nothing, or
+                          the build would try to download one.
+
+                          Usage: --with-host-python=<absolute path to python.exe>
+],,)
 AC_ARG_WITH(nsis-path,
 [  --with-nsis-path        For Windows users, please supply the path to the
                           "Nullsoft Scriptable Install System" (NSIS). If NSIS
@@ -1030,6 +1039,40 @@ GREP=$EGREP
 fi
 AC_PROG_AWK
 AC_PATH_PROG( AWK, $AWK)
+
+dnl ===================================================================
+dnl  A space in $AWK is fatal, so take the 8.3 form when there is one
+dnl ===================================================================
+dnl  configure.ac spells $AWK unquoted in some forty places, so a path
+dnl  with a space in it does not merely look untidy -- it word-splits,
+dnl  and the build dies a long way from here with
+dnl
+dnl      ./configure: line NNNN: /cygdrive/c/Program: No such file
+dnl
+dnl  That is what a Cygwin carrying gawk-<version>.exe but no plain
+dnl  gawk gives you: the only gawk left on PATH is then Git for
+dnl  Windows' copy, under C:\Program Files.
+dnl
+dnl  Fixing it on the Cygwin side -- copying gawk-<version>.exe to
+dnl  gawk.exe -- does work, and does not survive the next Cygwin
+dnl  update, which is why it keeps coming back.  The 8.3 form of the
+dnl  very same file has no space and needs no upkeep at all.
+case "$AWK" in
+*\ *)
+   _awk_short=`cygpath -d "$AWK" 2>/dev/null`
+   if test -n "$_awk_short"; then
+      _awk_short=`cygpath -u "$_awk_short" 2>/dev/null`
+   fi
+   if test -n "$_awk_short" -a -x "$_awk_short"; then
+      AC_MSG_NOTICE([$AWK has a space in it, using $_awk_short instead])
+      AWK="$_awk_short"
+   else
+      AC_MSG_WARN([$AWK has a space in it and has no 8.3 name.
+Either put a space-free awk earlier on PATH, or enable 8.3 names on that
+volume; several checks below will fail on the space otherwise.])
+   fi
+   ;;
+esac
 if test -z "$AWK"; then
    AC_MSG_ERROR([install awk to run this script])
 fi
@@ -1708,7 +1751,9 @@ if test $_os = "WINNT"; then
    dnl ===================================================================
    dnl As long as awk instead of $AWK is used somewhere in the sources,
    dnl check for $AWK and awk. $AWK is pointing to gawk in cygwin.
-      if test -L $AWK -o -L `which awk` ; then
+      dnl  Quoted: either side can be a path with a space in it, and an
+      dnl  unquoted one splits into "test: too many arguments" here.
+      if test -L "$AWK" -o -L "`which awk`" ; then
          AC_MSG_ERROR([$AWK / awk is a cygwin symlink!
 Native Windows programs cannot use cygwin symlinks. Remove the symbolic
 link, and copy the program to the name of the link.])
@@ -2368,6 +2413,80 @@ AC_SUBST(COMEX)
 AC_SUBST(MSPDB_PATH)
 AC_SUBST(MSVC_MODERN)
 AC_SUBST(USE_MINGW)
+
+dnl ===================================================================
+dnl  The CLI/.NET language binding, and whether it can be built at all
+dnl ===================================================================
+dnl  cli_ure is written in Managed Extensions for C++ -- __gc, S"...",
+dnl  __pin -- which needs /clr:oldSyntax.  That switch was removed after
+dnl  VS2015, so a UCRT-generation compiler cannot build the binding at
+dnl  all; porting it to C++/CLI is a separate piece of work.
+dnl
+dnl  One variable rather than a COMEX test in each consumer: the module
+dnl  makefiles, the SDK's file lists and its checker all need the same
+dnl  answer, and they should not each rediscover it.
+DISABLE_CLI=
+if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) ; then
+	AC_MSG_CHECKING([whether the CLI language binding can be built])
+	DISABLE_CLI="TRUE"
+	AC_MSG_RESULT([no, /clr:oldSyntax is gone from this compiler])
+fi
+AC_SUBST(DISABLE_CLI)
+
+dnl ===================================================================
+dnl  A host Python, for building the bundled one on Windows
+dnl ===================================================================
+dnl  Python 3's PCbuild runs generator scripts under an ALREADY EXISTING
+dnl  Python.  Its find_python.bat probes only "py -3.10" and "py -3.9"
+dnl  and then falls back to downloading a private copy through nuget,
+dnl  which an offline build cannot do.  HOST_PYTHON is the environment
+dnl  variable that batch file checks before any of that, so naming one
+dnl  here keeps the build off the network.
+dnl  AOO_CHECK_HOST_PYTHON(candidate)
+dnl
+dnl  Sets HOST_PYTHON to the Windows form of $1 when it is a NATIVE Windows
+dnl  Python 3.9 or newer, and leaves it empty otherwise.
+dnl
+dnl  os.name is the whole point of the test.  A cygwin Python passes the
+dnl  version check and is still the wrong tool: it reads the native paths
+dnl  PCbuild hands it -- C:\foo\bar -- as RELATIVE, and prepends its own
+dnl  working directory, so deepfreeze.py dies on a path with a drive letter
+dnl  in the middle of it.
+AC_DEFUN([AOO_CHECK_HOST_PYTHON], [
+	_pycand="$1"
+	dnl  cygwin's which reports the name without the .exe that Windows needs
+	if test -f "$_pycand.exe"; then
+		_pycand="$_pycand.exe"
+	fi
+	if "$_pycand" -Ec "import os, sys; assert os.name == 'nt'; assert sys.version_info[[:2]] >= (3, 9)" >/dev/null 2>&1; then
+		HOST_PYTHON=`cygpath -m "$_pycand"`
+	fi
+])
+
+HOST_PYTHON=
+if test \( "$_os" = "WINNT" \) -a \( -n "$MSVC_MODERN" \) -a \( "$SYSTEM_PYTHON" != "YES" \) ; then
+	AC_MSG_CHECKING([for a host Python to build the bundled Python with])
+	if test -n "$with_host_python"; then
+		AOO_CHECK_HOST_PYTHON([$with_host_python])
+		if test -z "$HOST_PYTHON"; then
+			AC_MSG_ERROR([--with-host-python=$with_host_python is not a native Windows Python 3.9 or newer])
+		fi
+	else
+		dnl  which -a, not which: cygwin's own python comes first on PATH and
+		dnl  is not usable here, so the search has to see past it.
+		for _pypath in `which -a python3 python py 2>/dev/null`; do
+			AOO_CHECK_HOST_PYTHON([$_pypath])
+			if test -n "$HOST_PYTHON"; then
+				break
+			fi
+		done
+	fi
+	if test -z "$HOST_PYTHON"; then
+		AC_MSG_ERROR([no Python 3.9 or newer found.  PCbuild needs one to build the bundled Python; pass --with-host-python=<path to python.exe>])
+	fi
+	AC_MSG_RESULT([$HOST_PYTHON])
+fi
+AC_SUBST(HOST_PYTHON)
 
 dnl ===================================================================
 dnl  The Windows 10 SDK, for a UCRT-generation toolset
