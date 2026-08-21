@@ -71,14 +71,10 @@ mkdir: %_DEST%\inc%_EXT%\python\cpython
 ..\pyversion_dmake.mk %_DEST%\inc%_EXT%\pyversion_dmake.mk
 
 ..\%__SRC%\misc\build\Python-3.11.15\Include\* %_DEST%\inc%_EXT%\python\*
-..\%__SRC%\misc\build\Python-3.11.15\Include\cpython\* %_DEST%\inc%_EXT%\python\cpython\*
-
-# Python 3 split the public headers in two: Include/ holds the stable API and
-# Include/cpython/ the unstable one, and 34 of the headers above reach into it
-# by name whenever Py_LIMITED_API is not defined -- which is our case.  A flat
-# Include\* does not follow that, so this line does.  Include/internal/ is NOT
-# delivered: nothing outside Py_BUILD_CORE includes it.
-mkdir: %_DEST%\inc%_EXT%\python\cpython
+# Python 3 split the public headers in two: Include/ holds the stable API
+# and Include/cpython/ the unstable one, which 34 of the headers above
+# reach into by name whenever Py_LIMITED_API is undefined -- our case.
+# Include/internal/ is NOT delivered: only Py_BUILD_CORE needs it.
 ..\%__SRC%\misc\build\Python-3.11.15\Include\cpython\* %_DEST%\inc%_EXT%\python\cpython\*
 
 #unix ONLY !
