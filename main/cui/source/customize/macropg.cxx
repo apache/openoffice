@@ -50,6 +50,7 @@
 
 #include <algorithm>
 #include <set>
+#include <iterator>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;

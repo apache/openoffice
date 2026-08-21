@@ -35,6 +35,7 @@
 #include <vector>
 #include <list>
 #include <hash_map>
+#include <iterator>
 #include <com/sun/star/lang/XServiceInfo.hpp>
 #include <com/sun/star/container/XEnumerationAccess.hpp>
 #include <com/sun/star/container/XEnumeration.hpp>

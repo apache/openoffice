@@ -53,6 +53,7 @@
 #include "scresid.hxx"
 #include "sc.hrc"
 #include <algorithm>
+#include <iterator>
 
 using namespace	::com::sun::star;
 using namespace	::com::sun::star::accessibility;

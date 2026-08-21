@@ -35,6 +35,7 @@
 #include <functional>
 #include <algorithm>
 #include <map>
+#include <iterator>
 
 //........................................................................
 namespace pcr

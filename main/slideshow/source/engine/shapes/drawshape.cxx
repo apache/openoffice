@@ -61,6 +61,7 @@
 #include <cmath> // for trigonometry and fabs
 #include <algorithm>
 #include <functional>
+#include <iterator>
 #include <limits>
 
 #include "drawshapesubsetting.hxx"

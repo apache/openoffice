@@ -92,6 +92,7 @@
 
 #include <algorithm>
 #include <functional>
+#include <iterator>
 
 using namespace ::com::sun::star;
 using namespace ::comphelper;

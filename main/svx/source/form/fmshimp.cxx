@@ -110,6 +110,7 @@
 
 #include <algorithm>
 #include <functional>
+#include <iterator>
 
 // wird fuer Invalidate verwendet -> mitpflegen
 sal_uInt16 DatabaseSlotMap[] =

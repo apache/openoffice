@@ -89,6 +89,7 @@
 #include <algorithm>
 #include <functional>
 #include <set>
+#include <iterator>
 
 //........................................................................
 namespace basctl
