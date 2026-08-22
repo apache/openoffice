@@ -45,8 +45,9 @@ $(DEF1EXPORTFILE) : $(SHL1VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -337,8 +338,9 @@ $(DEF2EXPORTFILE) : $(SHL2VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -629,8 +631,9 @@ $(DEF3EXPORTFILE) : $(SHL3VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -921,8 +924,9 @@ $(DEF4EXPORTFILE) : $(SHL4VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -1213,8 +1217,9 @@ $(DEF5EXPORTFILE) : $(SHL5VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -1505,8 +1510,9 @@ $(DEF6EXPORTFILE) : $(SHL6VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -1797,8 +1803,9 @@ $(DEF7EXPORTFILE) : $(SHL7VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -2089,8 +2096,9 @@ $(DEF8EXPORTFILE) : $(SHL8VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -2381,8 +2389,9 @@ $(DEF9EXPORTFILE) : $(SHL9VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
@@ -2673,8 +2682,9 @@ $(DEF10EXPORTFILE) : $(SHL10VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"

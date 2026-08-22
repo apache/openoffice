@@ -50,8 +50,9 @@ $(DEF$(TNR)EXPORTFILE) : $(SHL$(TNR)VERSIONMAP)
 # Wildcards in a version script are a GCC concept -- the GCC branch below
 # pulls them out into a .symbols-regexp and matches them against the real
 # objects.  MSVC has no equivalent, and asking link.exe to export a literal
-# "_ZTI*" fails with LNK2001, so drop those lines here.
-	$(COMMAND_ECHO)-$(GREP) -v "[*?]" $@ > $@.nowild
+# "_ZTI*" fails with LNK2001, so drop those lines here.  Match "*" alone:
+# every MSVC-mangled C++ name begins with "?", so "[*?]" would drop the lot.
+	$(COMMAND_ECHO)-$(GREP) -v "[*]" $@ > $@.nowild
 	$(COMMAND_ECHO)$(RENAME) $@.nowild $@
 .ENDIF
 .IF "$(COM)"=="GCC"
