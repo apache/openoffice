@@ -184,10 +184,19 @@ BUILD_DIR=PCbuild
 # order: python.vcxproj declares one on _ctypes purely so that a developer
 # building 'python' in the IDE gets a usable interpreter.  Going through the
 # solution therefore drags in libffi, which we do not have and do not want.
-# A .vcxproj built directly honours its own ProjectReferences -- python still
-# builds pythoncore first, and pythoncore still builds _freeze_module -- and
-# ignores the solution's editorial ones.
-PYTHON_PROJECTS=pythoncore python pythonw _socket select unicodedata pyexpat _elementtree _multiprocessing _overlapped _asyncio _queue _uuid _zoneinfo winsound _decimal _msi
+# A .vcxproj built directly honours its own ProjectReferences and ignores the
+# solution's editorial ones.
+#
+# _freeze_module is named EXPLICITLY, and first.  Relying on pythoncore's
+# reference to pull it in happens to work for Win32 and does not for x64: the
+# x64 build ran without _freeze_module ever being invoked, left
+# Python/frozen_modules holding nothing but its README, and then died a long
+# way from the cause --
+#     getpath.c(22): fatal error C1083: cannot open include file
+#                    '../Python/frozen_modules/getpath.h'
+# Naming it costs one project and does not depend on which references MSBuild
+# decides to honour.
+PYTHON_PROJECTS=_freeze_module pythoncore python pythonw _socket select unicodedata pyexpat _elementtree _multiprocessing _overlapped _asyncio _queue _uuid _zoneinfo winsound _decimal _msi
 
 # main/zlib's unpacked source, in the form MSBuild wants.  Globbed rather than
 # spelled out so a zlib version bump does not silently miss it -- pythoncore

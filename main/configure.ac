@@ -6411,17 +6411,26 @@ dnl ***************************************
 dnl testing ml.exe assembler path
 dnl ***************************************
 if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes"; then
-  AC_MSG_CHECKING([ml.exe assembler path])
+  dnl  The 64 bit assembler is a different BINARY, not just a different copy:
+  dnl  ml.exe emits 32 bit objects and ml64.exe 64 bit ones, and the x64
+  dnl  toolset directory ships only the latter.  Look for whichever one goes
+  dnl  with the target being built.
+  if test "$BUILD_WIN64" = "TRUE" ; then
+    ASM_EXE_NAME=ml64.exe
+  else
+    ASM_EXE_NAME=ml.exe
+  fi
+  AC_MSG_CHECKING([$ASM_EXE_NAME assembler path])
   if test -n "$with_asm_home"; then
     with_asm_home=`cygpath -u "$with_asm_home"`
   fi
-  if test ! -x "$with_asm_home/ml.exe"; then
-    AC_PATH_PROG(ML_EXE, ml.exe)
+  if test ! -x "$with_asm_home/$ASM_EXE_NAME"; then
+    AC_PATH_PROG(ML_EXE, $ASM_EXE_NAME)
     if test -z "$ML_EXE"; then
-      if test -x "$with_cl_home/bin/ml.exe"; then
+      if test -x "$with_cl_home/bin/$ASM_EXE_NAME"; then
         with_asm_home=$with_cl_home/bin
         AC_MSG_RESULT([found ($with_asm_home)])
-      elif test -x "$with_cl_home/$cl_subdirectory/ml.exe"; then
+      elif test -x "$with_cl_home/$cl_subdirectory/$ASM_EXE_NAME"; then
         dnl  A modern toolset keeps the assembler beside the compiler in the
         dnl  split bin/Host<host>/<target> tree, and the target half matters:
         dnl  the x86 directory has ml.exe, the x64 one has ml64.exe.  Reusing
@@ -6430,7 +6439,7 @@ if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes"; then
         with_asm_home=$with_cl_home/$cl_subdirectory
         AC_MSG_RESULT([found ($with_asm_home)])
       else
-        AC_MSG_ERROR([Configure did not find ml.exe assembler.])
+        AC_MSG_ERROR([Configure did not find $ASM_EXE_NAME assembler.])
       fi
     else
        with_asm_home="ASM_IN_PATH"
