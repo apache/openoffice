@@ -1228,6 +1228,11 @@ elsif ($platform =~ m/cygwin/)
 	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."client" ) {
 		  $PATH .= $ps.CygFormat($JAVA_HOME).$ds."jre".$ds."bin".$ds."client";
 	  }
+	  # A 64 bit HotSpot JDK ships only jre/bin/server -- there is no client
+	  # VM -- so without this no JVM directory reaches PATH at all on x64.
+	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."server" ) {
+		  $PATH .= $ps.CygFormat($JAVA_HOME).$ds."jre".$ds."bin".$ds."server";
+	  }
    }
 
    # Add path to compiler
@@ -1390,6 +1395,11 @@ elsif ($platform =~ m/os2/)
 	  }
 	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."client" ) {
 		  $PATH .= $ps.$JAVA_HOME.$ds."jre".$ds."bin".$ds."client";
+	  }
+	  # A 64 bit HotSpot JDK ships only jre/bin/server -- there is no client
+	  # VM -- so without this no JVM directory reaches PATH at all on x64.
+	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."server" ) {
+		  $PATH .= $ps.$JAVA_HOME.$ds."jre".$ds."bin".$ds."server";
 	  }
    }
 
