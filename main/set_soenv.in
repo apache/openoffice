@@ -1120,9 +1120,15 @@ if ($platform =~ m/cygwin|os2/)
           }
           # ucrt before um: both ship a few of the same names and the CRT's
           # copy is the one that matches the headers on INCLUDE.
+          # The .NET Framework SDK keeps its x86 import libraries directly in
+          # lib/ and the x64 ones in lib/x64 -- there is no lib/x86, so this
+          # cannot simply reuse $arch.  Without the suffix an x64 climaker.exe
+          # links the x86 mscoree.lib and dies LNK2001 on _CorExeMain.
+          my $frame_lib = $FRAME_HOME.$LIB;
+          $frame_lib .= $ds."x64" if ( $arch eq "x64" );
           $ILIB   .=    $wps.$sdk_lib.$ds."ucrt".$ds.$arch.
                         $wps.$sdk_lib.$ds."um".$ds.$arch.
-                        $wps.$FRAME_HOME.$LIB.
+                        $wps.$frame_lib.
                         $wps.$COMPATH.$LIB.$ds.$arch;
       } elsif ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
           $ILIB   .=    $wps.$PSDK_HOME.$LIB.
@@ -1130,7 +1136,7 @@ if ($platform =~ m/cygwin|os2/)
                         $wps.$COMPATH.$LIB;
       } elsif ( $CPUNAME eq "X86_64" ) {
           $ILIB   .=    $wps.$PSDK_HOME.$LIB.$ds."x64".
-                        $wps.$FRAME_HOME.$LIB.
+                        $wps.$FRAME_HOME.$LIB.$ds."x64".
                         $wps.$COMPATH.$LIB.$ds."amd64";
       } else {
           print "Unsupported Windows CPU: $CPUNAME\n";
