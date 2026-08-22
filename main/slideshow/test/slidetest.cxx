@@ -201,9 +201,19 @@ TEST_F(LayerManagerTest, testShapeRepaint)
     TestShapeSharedPtr pShape4( createTestShape(
         basegfx::B2DRange(0.0,0.0,10.0,10.0),
         4.0));
+    // NB: priority must differ from pShape4's.  Shape::lessThanShape
+    // tie-breaks equal priorities on raw pointer value, so two shapes at the
+    // same priority order by heap address -- which makes updateShapeLayers()
+    // assign them to layers differently depending on allocation history, and
+    // this test then passes or fails with the wind (it survived on x86 and
+    // failed on x64; --gtest_shuffle flips it on either).  The tie cannot
+    // occur in production: ShapeImporter hands out priorities from a running
+    // counter (mnAscendingPrio += 1.0 per shape), so they are unique by
+    // construction, and the pointer tie-break exists only to stop std::set
+    // from treating two shapes as equivalent and dropping one.
     TestShapeSharedPtr pShape5( createTestShape(
         basegfx::B2DRange(20.0,20.0,30.0,30.0),
-        4.0));
+        5.0));
 
     mpLayerManager->addShape(mpTestShape);
     mpLayerManager->addShape(pShape2);
