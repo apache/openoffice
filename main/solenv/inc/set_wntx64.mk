@@ -83,7 +83,14 @@ LINKFLAGS_X64=/MAP /OPT:NOREF
 .ENDIF
 
 # exception handling protection
+# /SAFESEH is x86-only -- x64 SEH is table-driven and the linker rejects the
+# flag outright with LNK1246.  This file predates a full x64 build: it was
+# written to cross-build the x64 shell extension from an x86 build, where
+# plain LINKFLAGS was still the x86 link.  gbuild's windows.mk already gates
+# -SAFESEH on CPUNAME==INTEL; the dmake path needs the same guard.
+.IF "$(CPUNAME)"=="INTEL"
 LINKFLAGS+=-safeseh
+.ENDIF
 
 # enable DEP
 LINKFLAGS+=-nxcompat
