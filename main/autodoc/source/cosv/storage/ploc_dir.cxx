@@ -157,7 +157,7 @@ Directory::GetContainedDirectories( StringVector & o_rResult ) const
 
 	struct _finddata_t
                     aEntry;
-	long            hFile = _findfirst( sFilter.c_str(), &aEntry );
+	intptr_t        hFile = _findfirst( sFilter.c_str(), &aEntry );
 
 	for ( int bFindMore = (hFile == -1 ? 1 : 0);
 		  bFindMore == 0;
@@ -189,7 +189,7 @@ Directory::GetContainedFiles( StringVector &    o_rResult,
 
 	struct _finddata_t
                     aEntry;
-	long            hFile = _findfirst( sFilter.c_str(), &aEntry );
+	intptr_t        hFile = _findfirst( sFilter.c_str(), &aEntry );
 	for ( int bFindMore = (hFile == -1 ? 1 : 0);
 		  bFindMore == 0;
 		  bFindMore = _findnext( hFile, &aEntry ) )
