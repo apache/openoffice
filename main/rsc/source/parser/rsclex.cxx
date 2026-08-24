@@ -233,7 +233,7 @@ int MakeToken( YYSTYPE * pTokenVal ){
                         break;
                     case CONSTNAME:
                         pTokenVal->constname.hashid = aKey.nName;
-                        pTokenVal->constname.nValue = aKey.yylval;
+                        pTokenVal->constname.nValue = (sal_Int32)aKey.yylval;
                         break;
                     case BOOLEAN:
                         pTokenVal->svbool = (sal_Bool)aKey.yylval;
@@ -241,7 +241,7 @@ int MakeToken( YYSTYPE * pTokenVal ){
                     case INCLUDE:
                         bLastInclude = sal_True;
                     default:
-                        pTokenVal->value = aKey.yylval;
+                        pTokenVal->value = (sal_Int32)aKey.yylval;
                 };
 
                 return( aKey.nTyp );

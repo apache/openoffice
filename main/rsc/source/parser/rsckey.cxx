@@ -121,7 +121,7 @@ void RscNameTable::SetSort( sal_Bool bSorted ){
 |*    Letzte Aenderung  MM 28.02.91
 |*
 *************************************************************************/
-Atom RscNameTable::Put( Atom nName, sal_uInt32 nTyp, long nValue ){
+Atom RscNameTable::Put( Atom nName, sal_uInt32 nTyp, sal_IntPtr nValue ){
     if( pTable )
         pTable = (KEY_STRUCT *)
                  rtl_reallocateMemory( (void *)pTable,
@@ -139,14 +139,14 @@ Atom RscNameTable::Put( Atom nName, sal_uInt32 nTyp, long nValue ){
     return( nName );
 };
 
-Atom RscNameTable::Put( const char * pName, sal_uInt32 nTyp, long nValue )
+Atom RscNameTable::Put( const char * pName, sal_uInt32 nTyp, sal_IntPtr nValue )
 {
     return( Put( pHS->getID( pName ), nTyp, nValue ) );
 };
 
 Atom RscNameTable::Put( Atom nName, sal_uInt32 nTyp )
 {
-    return( Put( nName, nTyp, (long)nName ) );
+    return( Put( nName, nTyp, (sal_IntPtr)nName ) );
 };
 
 Atom RscNameTable::Put( const char * pName, sal_uInt32 nTyp )
@@ -154,17 +154,17 @@ Atom RscNameTable::Put( const char * pName, sal_uInt32 nTyp )
     Atom  nId;
 
     nId = pHS->getID( pName );
-    return( Put( nId, nTyp, (long)nId ) );
+    return( Put( nId, nTyp, (sal_IntPtr)nId ) );
 };
 
 Atom RscNameTable::Put( Atom nName, sal_uInt32 nTyp, RscTop * pClass )
 {
-    return( Put( nName, nTyp, (long)pClass ) );
+    return( Put( nName, nTyp, (sal_IntPtr)pClass ) );
 };
 
 Atom RscNameTable::Put( const char * pName, sal_uInt32 nTyp, RscTop * pClass )
 {
-    return( Put( pHS->getID( pName ), nTyp, (long)pClass ) );
+    return( Put( pHS->getID( pName ), nTyp, (sal_IntPtr)pClass ) );
 };
 
 /*************************************************************************

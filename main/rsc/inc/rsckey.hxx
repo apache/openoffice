@@ -31,7 +31,7 @@ class RscTop;
 typedef struct {
     Atom          nName;
     sal_uInt32          nTyp;
-    long            yylval;
+    sal_IntPtr      yylval;
 } KEY_STRUCT;
 
 class RscNameTable {
@@ -42,9 +42,9 @@ public:
             RscNameTable();
             ~RscNameTable();
     void    SetSort( sal_Bool bSorted = sal_True );
-    Atom  Put( Atom nName, sal_uInt32 nTyp, long nValue );
+    Atom  Put( Atom nName, sal_uInt32 nTyp, sal_IntPtr nValue );
     Atom  Put( Atom nName, sal_uInt32 nTyp );
-    Atom  Put( const char * pName, sal_uInt32 nTyp, long nValue );
+    Atom  Put( const char * pName, sal_uInt32 nTyp, sal_IntPtr nValue );
     Atom  Put( const char * pName, sal_uInt32 nTyp );
     Atom  Put( Atom nName, sal_uInt32 nTyp, RscTop * pClass );
     Atom  Put( const char * pName, sal_uInt32 nTyp, RscTop * pClass );
