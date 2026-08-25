@@ -279,6 +279,15 @@ sub setglobalvariables
 		$installer::globals::iswindowsbuild = 1;
 	}
 
+	# ... and which of the two Windows architectures.  The letter after the compiler
+	# name is the discriminator that $ENV{OUTPATH} already carries: wntmsci14 is 32 bit,
+	# wntmscx14 is 64 bit.  download.pm's get_download_architecture() keys off the same
+	# thing.
+	if ( $installer::globals::compiler =~ /wnt(msc|gcc)x/ )
+	{
+		$installer::globals::iswin64build = 1;
+	}
+
 	if ( $installer::globals::compiler =~ /unxso[lg][siux]/ )
 	{
 		$installer::globals::issolarisbuild = 1;
