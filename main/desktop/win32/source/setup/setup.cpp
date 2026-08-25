@@ -64,6 +64,13 @@
 #define ERROR_SHOW_USAGE      -2
 #define ERROR_SETUP_TO_OLD    -3
 #define ERROR_SETUP_NOT_FOUND -4
+#define ERROR_OS_TO_OLD       -5
+#define ERROR_RUNTIME_FAILED  -6
+
+// Lowest Windows this office can run on.  Not an arbitrary policy: the VC v14
+// redistributable that supplies the runtime the binaries need installs only on
+// Windows 10/11 and Server 2016 and later, so the floor comes with the toolset.
+#define REQUIRED_WINDOWS_MAJOR  10
 
 #define PARAM_SETUP_USED    TEXT( " SETUP_USED=1 " )
 #define PARAM_PACKAGE       TEXT( "/I " )
@@ -1041,6 +1048,12 @@ void SetupApp::DisplayError( UINT nErr ) const
                                 nMsgType = MB_OK | MB_ICONINFORMATION;
                                 WIN::LoadString( m_hInst, IDS_USAGE, sError, MAX_TEXT_LENGTH );
                                 break;
+        case ERROR_OS_TO_OLD:       // - 5
+                                WIN::LoadString( m_hInst, IDS_OS_TO_OLD, sError, MAX_TEXT_LENGTH );
+                                break;
+        case ERROR_RUNTIME_FAILED:  // - 6
+                                WIN::LoadString( m_hInst, IDS_RUNTIME_FAILED, sError, MAX_TEXT_LENGTH );
+                                break;
 
         default:                WIN::LoadString( m_hInst, IDS_UNKNOWN_ERROR, sError, MAX_TEXT_LENGTH );
                                 break;
@@ -1839,6 +1852,75 @@ boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
 }
 
 //--------------------------------------------------------------------------
+// The real Windows version, not the shimmed one.
+//
+// GetVersionEx() and the Windows Installer VersionNT / WindowsBuild properties all
+// report Windows 8.1 (6.3 / 9600) on Windows 10 and 11 unless the caller carries a
+// supportedOS manifest entry.  Measured on Windows 11 build 26200, msiexec reports
+// VersionNT=603 and WindowsBuild=9600 -- which is why this check cannot be expressed
+// as an MSI LaunchCondition, and lives here instead.
+//
+// RtlGetVersion is not subject to that shim.
+static bool GetRealWindowsVersion( DWORD *pMajor, DWORD *pBuild )
+{
+    typedef LONG ( WINAPI *pfnRtlGetVersion_t )( OSVERSIONINFOW * );
+
+    HMODULE hNtdll = ::GetModuleHandle( TEXT( "ntdll.dll" ) );
+    if ( hNtdll == NULL )
+        return false;
+
+    pfnRtlGetVersion_t pRtlGetVersion =
+        (pfnRtlGetVersion_t)::GetProcAddress( hNtdll, "RtlGetVersion" );
+    if ( pRtlGetVersion == NULL )
+        return false;
+
+    OSVERSIONINFOW aInfo;
+    ZeroMemory( &aInfo, sizeof( aInfo ) );
+    aInfo.dwOSVersionInfoSize = sizeof( aInfo );
+
+    if ( pRtlGetVersion( &aInfo ) != 0 )
+        return false;
+
+    *pMajor = aInfo.dwMajorVersion;
+    *pBuild = aInfo.dwBuildNumber;
+    return true;
+}
+
+//--------------------------------------------------------------------------
+boolean SetupApp::CheckOSVersion()
+{
+    DWORD nMajor = 0;
+    DWORD nBuild = 0;
+
+    if ( !GetRealWindowsVersion( &nMajor, &nBuild ) )
+    {
+        // Could not determine the version.  Let the install proceed rather than
+        // refuse on a machine we simply failed to identify -- if the OS really is too
+        // old the runtime install will fail next, and say so.
+        Log( TEXT( "Warning: could not determine the Windows version.\r\n" ) );
+        return true;
+    }
+
+    TCHAR sBuf[ 128 ];
+
+    StringCchPrintf( sBuf, 128, TEXT( " Windows major version %u, build %u\r\n" ),
+                     nMajor, nBuild );
+    Log( sBuf );
+
+    if ( nMajor < REQUIRED_WINDOWS_MAJOR )
+    {
+        StringCchPrintf( sBuf, 128,
+                         TEXT( "ERROR: Windows %u is older than the required Windows %u.\r\n" ),
+                         nMajor, (DWORD)REQUIRED_WINDOWS_MAJOR );
+        Log( sBuf );
+        SetError( ERROR_OS_TO_OLD );
+        return false;
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------
 // Is the VC v14 runtime already usable in THIS process?
 //
 // Deliberately functional rather than a registry or ProductCode lookup: it needs no
@@ -1996,6 +2078,8 @@ boolean SetupApp::InstallRuntimes()
 
     OutputDebugStringFormat( TEXT( "found architecture<%d>\r\n" ), siSysInfo.wProcessorArchitecture );
 
+    bool bOk = true;
+
 #if defined( _WIN64 )
 
     // A 64 bit office ships no 32 bit binaries at all, so it needs only the x64
@@ -2004,9 +2088,12 @@ boolean SetupApp::InstallRuntimes()
     (void)siSysInfo;
 
     if ( GetPathToFile( RUNTIME_X64_NAME, &sRuntimePath ) )
-        InstallRuntimes( sRuntimePath, true );
+        bOk = InstallRuntimes( sRuntimePath, true ) ? true : false;
     else
-        Log( TEXT( "ERROR: no installer for x64 runtime libraries found!" ) );
+    {
+        Log( TEXT( "ERROR: no installer for x64 runtime libraries found!\r\n" ) );
+        bOk = false;
+    }
 
     if ( sRuntimePath )
         delete [] sRuntimePath;
@@ -2019,9 +2106,15 @@ boolean SetupApp::InstallRuntimes()
     if ( siSysInfo.wProcessorArchitecture == PROCESSOR_ARCHITECTURE_AMD64 )
     {
         if ( GetPathToFile( RUNTIME_X64_NAME, &sRuntimePath ) )
-            InstallRuntimes( sRuntimePath, false );   // cannot probe x64 from a 32 bit process
+        {
+            if ( !InstallRuntimes( sRuntimePath, false ) )  // cannot probe x64 from a 32 bit process
+                bOk = false;
+        }
         else
-            Log( TEXT( "ERROR: no installer for x64 runtime libraries found!" ) );
+        {
+            Log( TEXT( "ERROR: no installer for x64 runtime libraries found!\r\n" ) );
+            bOk = false;
+        }
 
         if ( sRuntimePath )
         {
@@ -2031,18 +2124,31 @@ boolean SetupApp::InstallRuntimes()
     }
 
     if ( GetPathToFile( RUNTIME_X86_NAME, &sRuntimePath ) )
-        InstallRuntimes( sRuntimePath, true );
+    {
+        if ( !InstallRuntimes( sRuntimePath, true ) )
+            bOk = false;
+    }
     else
-        Log( TEXT( "ERROR: no installer for x86 runtime libraries found!" ) );
+    {
+        Log( TEXT( "ERROR: no installer for x86 runtime libraries found!\r\n" ) );
+        bOk = false;
+    }
 
     if ( sRuntimePath )
         delete [] sRuntimePath;
 
 #endif
 
-    // NB still unconditionally true: making a failed runtime install fatal is a separate
-    // change, so that it can be bisected on its own if it turns out to reject a machine
-    // we did not expect.
+    // A failed runtime install used to be swallowed here -- the per-runtime result was
+    // discarded and this returned true regardless.  The office then installed and could
+    // not start, with nothing to point at.  Fail loudly instead.
+    if ( !bOk )
+    {
+        Log( TEXT( "ERROR: the Visual C++ runtime could not be installed.\r\n" ) );
+        SetError( ERROR_RUNTIME_FAILED );
+        return false;
+    }
+
     return true;
 }
 

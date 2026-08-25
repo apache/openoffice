@@ -68,6 +68,11 @@ extern "C" int __stdcall WinMain( HINSTANCE hInst, HINSTANCE, LPSTR, int )
         if ( ! pSetup->CheckVersion() )
             throw pSetup->GetError();
 
+        // Refuse early and clearly on an unsupported Windows, rather than letting the
+        // runtime install fail later with a message that does not name the real cause.
+        if ( ! pSetup->CheckOSVersion() )
+            throw pSetup->GetError();
+
         if ( ! pSetup->IsAdminInstall() )
             if ( ! pSetup->GetPatches() )
                 throw pSetup->GetError();

@@ -109,6 +109,7 @@ public:
     virtual boolean GetPatches();
     virtual boolean ChooseLanguage( long& rLanguage );
     virtual boolean CheckVersion();
+    virtual boolean CheckOSVersion();
     virtual boolean CheckForUpgrade();
     virtual boolean InstallRuntimes();
     virtual boolean Install( long nLanguage );
