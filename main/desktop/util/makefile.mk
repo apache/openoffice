@@ -241,12 +241,26 @@ ALLTAR : $(BIN)$/soffice_mac$(EXECPOST)
 # CRT as a side-by-side assembly, and the UCRT is not one -- it is an operating
 # system component on Windows 10.  The template carries everything else this
 # executable needs, which is what the pre-VC9 branch has always relied on.
+# template.manifest is checked in with the x86 architecture spelled out.  It is
+# copied verbatim into whichever build is running, so on x64 it used to hand the
+# process an activation context asking for the *x86* Common-Controls 6.0
+# assembly.  Binding that into a 64 bit process pulls
+# WinSxS\x86_microsoft.windows.common-controls\COMCTL32.dll, which cannot load,
+# so every component that touches common controls failed to load -- fps.dll
+# among them, which is why the native file dialogs silently fell back to the
+# OpenOffice ones.  Substitute the architecture instead of copying.
+.IF "$(CPUNAME)"=="X86_64"
+MANIFEST_ARCH=amd64
+.ELSE
+MANIFEST_ARCH=x86
+.ENDIF
+
 .IF "$(CCNUMVER)" <= "001399999999" || "$(COMEX)" == "14"
 $(MISC)$/$(TARGET).exe.manifest: template.manifest
-   $(COPY) $< $@
+   $(COMMAND_ECHO)$(SED) -e 's/processorArchitecture="x86"/processorArchitecture="$(MANIFEST_ARCH)"/g' $< > $@
 .ELSE
 $(MISC)$/$(TARGET).exe.template.manifest: template.manifest
-   $(COPY) $< $@
+   $(COMMAND_ECHO)$(SED) -e 's/processorArchitecture="x86"/processorArchitecture="$(MANIFEST_ARCH)"/g' $< > $@
 
 $(MISC)$/$(TARGET).exe.linker.manifest: $(BIN)$/$(TARGET)$(EXECPOST)
    mt.exe -inputresource:$(BIN)$/$(TARGET)$(EXECPOST) -out:$@
@@ -260,7 +274,7 @@ $(MISC)$/$(TARGET).exe.manifest: $(MISC)$/$(TARGET).exe.template.manifest $(MISC
 # Same condition as above, and for the same reason.
 .IF "$(CCNUMVER)" <= "001399999999" || "$(COMEX)" == "14"
 $(MISC)$/$(TARGET).bin.manifest: template.manifest
-   $(COPY) $< $@
+   $(COMMAND_ECHO)$(SED) -e 's/processorArchitecture="x86"/processorArchitecture="$(MANIFEST_ARCH)"/g' $< > $@
 .ELSE
 $(MISC)$/$(TARGET).bin.manifest: $(MISC)$/$(TARGET).exe.manifest
    $(COPY) $(MISC)$/$(TARGET).exe.manifest $@
