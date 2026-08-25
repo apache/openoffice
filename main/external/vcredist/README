@@ -1,3 +1,44 @@
-For windows we need the VC redistributables.
-Copy vcredist_x86.exe and vcredist_x64.exe in this directory.
-You can download them from https://www.microsoft.com/en-us/download/details.aspx?id=26368
+For Windows we need the Visual C++ Redistributables.
+
+Copy them into this directory as:
+
+    vcredist_x86.exe
+    vcredist_x64.exe
+
+Note the names: Microsoft ships these as vc_redist.x86.exe / vc_redist.x64.exe,
+so they have to be renamed.  configure, external/prj/d.lst, scp2 and
+desktop/win32/source/setup/setup.cpp all refer to the vcredist_* spelling.
+
+Which ones
+----------
+The Visual C++ v14 Redistributable (Visual Studio 2015-2022), latest version:
+
+    x86  https://aka.ms/vc14/vc_redist.x86.exe
+    x64  https://aka.ms/vc14/vc_redist.x64.exe
+
+These are permalinks that always resolve to the current v14 release.
+
+The rule is that the redistributable must be the same version as, or newer
+than, the MSVC build tools used to compile the office.  A v14 redistributable
+covers anything built with the toolsets in Visual Studio 2017, 2019, 2022 or
+2026, because they all share one runtime.
+
+Do NOT use the Visual C++ 2008 redistributable.  This file used to point at
+https://www.microsoft.com/en-us/download/details.aspx?id=26368, which is the
+Visual Studio 2008 SP1 download (version 9.0.30729).  Binaries built with a
+modern toolset import VCRUNTIME140.dll, VCRUNTIME140_1.dll, MSVCP140.dll and
+the UCRT; none of those are in the 2008 package, and the MSI ships no CRT of
+its own.  Installing with the 2008 redistributable produces an office that
+cannot start on a machine which does not already happen to have the v14
+runtime.
+
+Supported Windows versions
+--------------------------
+The current v14 redistributable supports Windows 10 and 11, and Windows Server
+2016 / 2019 / 2022 / 2025 -- it does not install on anything older.  That is
+what sets the minimum Windows version for a build made with a modern toolset;
+it is not an independent choice.
+
+If an older floor is ever needed, an older v14 servicing release has to be
+pinned here explicitly, and its own supported-OS list checked -- the v14 line
+has raised its floor over time.
