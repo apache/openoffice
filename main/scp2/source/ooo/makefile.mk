@@ -47,6 +47,11 @@ SCPDEFS+=-DBUILD_SPECIAL
 SCPDEFS+=-DBUILD_X64
 .ENDIF
 
+# A 64 bit build ships no 32 bit binaries, so it needs only the x64 runtime.
+.IF "$(BUILD_WIN64)"!=""
+SCPDEFS+=-DBUILD_WIN64
+.ENDIF
+
 .IF "$(PROF_EDITION)"!=""
 SCPDEFS+=-DPROF_EDITION
 .ENDIF
