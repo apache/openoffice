@@ -96,7 +96,7 @@ private:
     boolean     IsTerminalServerInstalled() const;
     void        AddFileToPatchList( TCHAR* pPath, TCHAR* pFile );
     boolean     IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName );
-    boolean     InstallRuntimes( TCHAR* pProductCode, TCHAR* pFileName );
+    boolean     InstallRuntimes( TCHAR* pFileName, bool bMatchesOwnArchitecture );
 
 public:
     UINT            m_uiRet;

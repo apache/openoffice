@@ -74,7 +74,17 @@
 #define PARAM_PATCH         TEXT( " /update " )
 #define PARAM_REG_ALL_MSO_TYPES TEXT( "REGISTER_ALL_MSO_TYPES=1 " )
 #define PARAM_REG_NO_MSO_TYPES  TEXT( "REGISTER_NO_MSO_TYPES=1 " )
-#define PARAM_SILENTINSTALL     TEXT( " /Q" )
+// The VC v14 redistributable is a Burn bundle, not the old MSI-style installer the
+// VC++ 2008 package was.  It does not understand /Q; its silent switches are these.
+// /norestart matters -- without it the bundle may reboot the machine mid-install.
+#define PARAM_SILENTINSTALL     TEXT( " /install /quiet /norestart" )
+
+// Burn exit codes that mean "the runtime is now present".  1638 is
+// ERROR_PRODUCT_VERSION: a NEWER runtime is already installed, which is success for
+// our purposes -- it is also the common case on any developer machine.
+#define RUNTIME_INSTALL_OK          0L
+#define RUNTIME_INSTALL_NEWER       1638L
+#define RUNTIME_INSTALL_REBOOT_REQ  3010L
 
 #define PARAM_RUNNING           TEXT( "ignore_running" )
 #define CMDLN_REG_ALL_MSO_TYPES TEXT( "msoreg=1" )
@@ -85,10 +95,13 @@
 
 #define RUNTIME_X64_NAME    TEXT( "redist\\vcredist_x64.exe" )
 #define RUNTIME_X86_NAME    TEXT( "redist\\vcredist_x86.exe" )
-// Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161
-#define PRODUCTCODE_X86     TEXT( "{9BE518E6-ECC6-35A9-88E4-87755C07200F}" )
-// Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161
-#define PRODUCTCODE_X64     TEXT( "{5FCE6D76-F5DC-37AB-B2B8-22AB8CEDB1D4}" )
+
+// There is deliberately no ProductCode here any more.  The old code gated on
+// MsiQueryProductState() against a hardcoded VC++ 2008 GUID, which cannot work for the
+// v14 runtime: Microsoft reissues that redistributable with a NEW ProductCode on every
+// servicing revision, so an exact-GUID test misreports every machine that has anything
+// other than the one pinned build.  We test for the runtime functionally instead --
+// see RuntimeAlreadyPresent().
 
 #define ADVAPI32API_CheckTokenMembership "CheckTokenMembership"
 
@@ -1826,12 +1839,50 @@ boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupApp::InstallRuntimes( TCHAR *sProductCode, TCHAR *sRuntimePath )
+// Is the VC v14 runtime already usable in THIS process?
+//
+// Deliberately functional rather than a registry or ProductCode lookup: it needs no
+// GUID that goes stale with every servicing update, no registry view juggling, and it
+// tests the thing that actually matters -- whether our DLLs will be able to bind.
+//
+// LOAD_LIBRARY_SEARCH_SYSTEM32 so we probe the machine-wide runtime and cannot be
+// fooled by a stray copy sitting next to setup.exe.
+//
+// This can only answer for setup.exe's own bitness -- a 64 bit process cannot load a
+// 32 bit DLL and vice versa.  That is fine: the caller only uses it to skip the
+// matching redistributable.  For the other architecture we just run the bundle, which
+// is idempotent and returns 1638 quickly when a newer runtime is already there.
+static bool RuntimeAlreadyPresent()
 {
-    INSTALLSTATE  nRet = aoo_MsiQueryProductState( sProductCode );
-    OutputDebugStringFormat( TEXT( "MsiQueryProductState returned <%d>\r\n" ), nRet );
-    if ( nRet == INSTALLSTATE_DEFAULT )
+    const TCHAR *pModules[] = {
+        TEXT( "vcruntime140.dll" ),
+        TEXT( "msvcp140.dll" ),
+#if defined( _WIN64 )
+        // x64 only -- the separate EH runtime introduced with VS2017.
+        TEXT( "vcruntime140_1.dll" ),
+#endif
+    };
+
+    for ( size_t i = 0; i < sizeof( pModules ) / sizeof( pModules[0] ); ++i )
+    {
+        HMODULE hMod = ::LoadLibraryEx( pModules[i], NULL,
+                                        LOAD_LIBRARY_SEARCH_SYSTEM32 );
+        if ( hMod == NULL )
+            return false;
+        ::FreeLibrary( hMod );
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------
+boolean SetupApp::InstallRuntimes( TCHAR *sRuntimePath, bool bMatchesOwnArchitecture )
+{
+    if ( bMatchesOwnArchitecture && RuntimeAlreadyPresent() )
+    {
+        Log( TEXT( " Runtime already present, skipping <%s>\r\n" ), sRuntimePath );
         return true;
+    }
 
     Log( TEXT( " Will install runtime <%s>\r\n" ), sRuntimePath );
     OutputDebugStringFormat( TEXT( " Will install runtime <%s>\r\n" ), sRuntimePath );
@@ -1879,16 +1930,30 @@ boolean SetupApp::InstallRuntimes( TCHAR *sProductCode, TCHAR *sRuntimePath )
     else
     {
         GetExitCodeProcess( aPI.hProcess, &nResult );
-        SetError( nResult );
 
-        if ( nResult != ERROR_SUCCESS )
+        // Burn reports more than one flavour of success.  Treating anything non-zero as
+        // a failure would flag every machine that already carries a newer runtime.
+        if ( nResult == RUNTIME_INSTALL_OK )
         {
-            TCHAR sBuf[80];
-            StringCchPrintf( sBuf, 80, TEXT("Warning: install runtime returned %u.\r\n"), nResult );
-            Log( sBuf );
+            Log( TEXT( " Installation of runtime completed successfully.\r\n" ) );
+        }
+        else if ( nResult == RUNTIME_INSTALL_NEWER )
+        {
+            Log( TEXT( " A newer runtime is already installed, nothing to do.\r\n" ) );
+        }
+        else if ( nResult == RUNTIME_INSTALL_REBOOT_REQ )
+        {
+            Log( TEXT( " Installation of runtime completed, a reboot is required.\r\n" ) );
         }
         else
-            Log( TEXT( " Installation of runtime completed successfully.\r\n" ) );
+        {
+            TCHAR sBuf[80];
+            StringCchPrintf( sBuf, 80,
+                             TEXT("ERROR: install runtime returned %u.\r\n"), nResult );
+            Log( sBuf );
+            SetError( nResult );
+            bRet = false;
+        }
     }
 
     CloseHandle( aPI.hProcess );
@@ -1931,10 +1996,30 @@ boolean SetupApp::InstallRuntimes()
 
     OutputDebugStringFormat( TEXT( "found architecture<%d>\r\n" ), siSysInfo.wProcessorArchitecture );
 
+#if defined( _WIN64 )
+
+    // A 64 bit office ships no 32 bit binaries at all, so it needs only the x64
+    // runtime.  (The 32 bit office is the other way round: it cross-builds 64 bit
+    // shell extensions, which is why the branch below installs both.)
+    (void)siSysInfo;
+
+    if ( GetPathToFile( RUNTIME_X64_NAME, &sRuntimePath ) )
+        InstallRuntimes( sRuntimePath, true );
+    else
+        Log( TEXT( "ERROR: no installer for x64 runtime libraries found!" ) );
+
+    if ( sRuntimePath )
+        delete [] sRuntimePath;
+
+#else
+
+    // 32 bit office.  On 64 bit Windows it additionally needs the x64 runtime, because
+    // its shell extensions (shlxthdl_x64, ooofilt_x64, propertyhdl_x64, so_activex_x64)
+    // are 64 bit and get loaded by 64 bit Explorer and friends.
     if ( siSysInfo.wProcessorArchitecture == PROCESSOR_ARCHITECTURE_AMD64 )
     {
         if ( GetPathToFile( RUNTIME_X64_NAME, &sRuntimePath ) )
-            InstallRuntimes( PRODUCTCODE_X64, sRuntimePath );
+            InstallRuntimes( sRuntimePath, false );   // cannot probe x64 from a 32 bit process
         else
             Log( TEXT( "ERROR: no installer for x64 runtime libraries found!" ) );
 
@@ -1946,13 +2031,18 @@ boolean SetupApp::InstallRuntimes()
     }
 
     if ( GetPathToFile( RUNTIME_X86_NAME, &sRuntimePath ) )
-        InstallRuntimes( PRODUCTCODE_X86, sRuntimePath );
+        InstallRuntimes( sRuntimePath, true );
     else
         Log( TEXT( "ERROR: no installer for x86 runtime libraries found!" ) );
 
     if ( sRuntimePath )
         delete [] sRuntimePath;
 
+#endif
+
+    // NB still unconditionally true: making a failed runtime install fatal is a separate
+    // change, so that it can be bisected on its own if it turns out to reject a machine
+    // we did not expect.
     return true;
 }
 
