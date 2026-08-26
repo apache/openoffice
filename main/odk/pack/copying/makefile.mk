@@ -231,7 +231,7 @@ $(DESTDIRBIN)/addsym-macosx.sh : addsym-macosx.sh
 $(DESTDIRSETTINGS)/dk.mk : dk.mk
 	@@-rm -f $@
 	-$(MKDIRHIER) $(@:d)
-	tr -d "\015" < dk.mk | sed -e 's/@@RELEASE@@/$(PRODUCT_RELEASE)/' -e 's/@@BUILDID@@/$(RSCREVISION)/' -e 's/@@SCMREVISION@@/$(SCMREVISION)/'> $@
+	tr -d "\015" < dk.mk | sed -e 's/@@RELEASE@@/$(PRODUCT_RELEASE)/' -e 's/@@BUILDID@@/$(RSCREVISION)/' -e 's/@@SCMREVISION@@/$(SCMREVISION)/' -e 's/@@PLATFORMID@@/$(PLATFORMID)/' > $@
 
 $(CONVERTTAGFLAG) : $(DOCUHTMLFILES)
 #	$(PERL) $(CONVERTTAGSCRIPT) 1 "$(TITLE)" "$(OFFICEPRODUCTNAME)" $(DOCUHTMLFILES)

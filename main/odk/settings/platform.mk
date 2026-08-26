@@ -59,7 +59,17 @@ else
 		EXTENSION_PLATFORM=solaris_x86
 	else
 	ifeq "$(UNOPKG_PLATFORM)" "Windows"
-		EXTENSION_PLATFORM=windows_x86
+		# UNOPKG_PLATFORM deliberately carries no architecture: it names the
+		# manifest platform, and the office matches that with platform_fits(),
+		# which accepts an OS-only token on every architecture.  The
+		# description.xml platform value has no such shortcut -- it goes
+		# through isValidPlatform(), which wants the exact token -- so an x64
+		# SDK must say windows_x86_64 here or the office it belongs to will
+		# reject its own extensions.  Nothing in the SDK environment knows the
+		# architecture (settings.mk gets PROCTYPE from config.guess, which does
+		# not exist on Windows), so dk.mk carries the value baked in at SDK
+		# build time.  The fallback keeps an SDK built before that works.
+		EXTENSION_PLATFORM=$(if $(SDK_PLATFORMID),$(SDK_PLATFORMID),windows_x86)
 	endif
 	endif
 	endif
