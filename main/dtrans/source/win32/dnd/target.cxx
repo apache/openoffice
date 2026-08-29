@@ -134,7 +134,9 @@ void SAL_CALL DropTarget::initialize( const Sequence< Any >& aArguments )
 	if( aArguments.getLength() > 0)
 	{
 		// Get the window handle from aArgument. It is needed for RegisterDragDrop.
-		m_hWnd= *(HWND*)aArguments[0].getValue();
+		sal_uInt64 nWindowHandle= 0;
+		aArguments[0] >>= nWindowHandle;
+		m_hWnd= (HWND)(sal_uIntPtr) nWindowHandle;
 		OSL_ASSERT( IsWindow( m_hWnd) );
 
 		// Obtain the id of the thread that created the window

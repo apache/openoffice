@@ -73,7 +73,9 @@ void SAL_CALL DropTarget::initialize(const Sequence< Any >& aArguments)
                                static_cast<OWeakObject*>(this));
     }
 
-    m_hWnd = *(HWND*) aArguments[0].getValue();
+    sal_uInt64 nWindowHandle = 0;
+    aArguments[0] >>= nWindowHandle;
+    m_hWnd = (HWND)(sal_uIntPtr) nWindowHandle;
     debug_printf("DropTarget::initialize hwnd %x", m_hWnd);
 
     // subclass window to allow intercepting D&D messages
