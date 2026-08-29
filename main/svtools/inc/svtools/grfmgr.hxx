@@ -43,10 +43,20 @@
 // - AutoSwap Defines -
 // --------------------
 
-#define GRFMGR_AUTOSWAPSTREAM_LINK		((SvStream*)0x00000000UL)
-#define GRFMGR_AUTOSWAPSTREAM_LOADED	((SvStream*)0xfffffffdUL)
-#define GRFMGR_AUTOSWAPSTREAM_TEMP		((SvStream*)0xfffffffeUL)
-#define GRFMGR_AUTOSWAPSTREAM_NONE		((SvStream*)0xffffffffUL)
+/* These four are not streams: they are sentinels that a swap handler returns
+   in place of one.  The handler hands them back through Link::Call(), whose
+   return type is long -- 32 bit on Windows x64 -- so a 64-bit pointer value
+   makes the round trip only if it survives truncation to long and the cast
+   back.  Spelling the sentinels as negative sal_IntPtr does that: the bits
+   are unchanged where long is pointer-sized, and where it is not, the cast
+   back sign-extends to exactly these values, so the comparisons in
+   GraphicObject::ImplAutoSwapOutHdl()/ImplAutoSwapIn() still match.  Written
+   as 0xffffffffUL they did not, and _NONE arrived there as a stream to write
+   to. */
+#define GRFMGR_AUTOSWAPSTREAM_LINK		((SvStream*)(sal_IntPtr) 0)
+#define GRFMGR_AUTOSWAPSTREAM_LOADED	((SvStream*)(sal_IntPtr)-3)
+#define GRFMGR_AUTOSWAPSTREAM_TEMP		((SvStream*)(sal_IntPtr)-2)
+#define GRFMGR_AUTOSWAPSTREAM_NONE		((SvStream*)(sal_IntPtr)-1)
 
 // ----------------------
 // - Adjustment Defines -
