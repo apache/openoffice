@@ -41,7 +41,7 @@ namespace drawinglayer
 	namespace primitive2d
 	{
 		uno::Reference< uno::XInterface > SAL_CALL XPrimitiveFactory2DProvider_createInstance(
-			const uno::Reference< lang::XMultiServiceFactory >& /*rSMgr*/) throw( uno::Exception )
+			const uno::Reference< lang::XMultiServiceFactory >& /*rSMgr*/)
 		{
 			return *(new PrimitiveFactory2D());
 		}
@@ -62,7 +62,7 @@ namespace drawinglayer
 
 		Primitive2DSequence SAL_CALL PrimitiveFactory2D::createPrimitivesFromXShape(
 			const uno::Reference< drawing::XShape >& xShape,
-			const uno::Sequence< beans::PropertyValue >& /*aParms*/ ) throw (uno::RuntimeException)
+			const uno::Sequence< beans::PropertyValue >& /*aParms*/ )
 		{
 			Primitive2DSequence aRetval;
 
@@ -82,7 +82,7 @@ namespace drawinglayer
 
 		Primitive2DSequence SAL_CALL PrimitiveFactory2D::createPrimitivesFromXDrawPage(
 			const uno::Reference< drawing::XDrawPage >& xDrawPage,
-			const uno::Sequence< beans::PropertyValue >& /*aParms*/ ) throw (uno::RuntimeException)
+			const uno::Sequence< beans::PropertyValue >& /*aParms*/ )
 		{
 			Primitive2DSequence aRetval;
 

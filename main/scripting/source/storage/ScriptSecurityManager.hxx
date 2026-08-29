@@ -54,32 +54,24 @@ class ScriptSecurityManager
 {
 public:
     explicit ScriptSecurityManager(
-        const css::uno::Reference< css::uno::XComponentContext > & xContext )
-        throw ( css::uno::RuntimeException );
+        const css::uno::Reference< css::uno::XComponentContext > & xContext );
     ~ScriptSecurityManager();
-    void addScriptStorage( rtl::OUString scriptStorageURL, sal_Int32 storageID)
-        throw ( css::uno::RuntimeException );
+    void addScriptStorage( rtl::OUString scriptStorageURL, sal_Int32 storageID);
 /**
  * checks to see if the requested permission can be granted
  * checks to see whether the requested ScriptPeremission is allowed.
  */
     void checkPermission( const rtl::OUString & scriptStorageURL,
-        const rtl::OUString & permissionRequest )
-        throw ( css::uno::RuntimeException, css::lang::IllegalArgumentException,
-            css::security::AccessControlException );
+        const rtl::OUString & permissionRequest );
     void removePermissionSettings ( ::rtl::OUString & scriptStorageURL );
 private:
-    void readConfiguration() throw (css::uno::RuntimeException);
+    void readConfiguration();
 
-    short executeDialog ( const rtl::OUString & path )
-        throw (css::uno::RuntimeException);
-    short executeStandardDialog()
-        throw ( css::uno::RuntimeException );
-    short executePathDialog(const rtl::OUString & path)
-        throw ( css::uno::RuntimeException );
+    short executeDialog ( const rtl::OUString & path );
+    short executeStandardDialog();
+    short executePathDialog(const rtl::OUString & path);
 
-        void addToSecurePaths ( const rtl::OUString & path )
-        throw (css::uno::RuntimeException);
+        void addToSecurePaths ( const rtl::OUString & path );
     bool isSecureURL( const rtl::OUString & path );
     css::uno::Reference< css::uno::XComponentContext > m_xContext;
     sal_Bool m_confirmationRequired;

@@ -236,7 +236,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::setPosSize( sal_Int32 X, sal_Int32 Y
 			, sal_Int32 Width, sal_Int32 Height, sal_Int16 Flags )
-			throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -296,7 +295,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 
 	awt::Rectangle SAL_CALL ChartController
 ::getPosSize()
-			throw (uno::RuntimeException)
 {
 	//@todo
     awt::Rectangle aRet(0,0,0,0);
@@ -310,7 +308,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 
 	void SAL_CALL ChartController
 ::setVisible( sal_Bool Visible )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -321,7 +318,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 
 	void SAL_CALL ChartController
 ::setEnable( sal_Bool Enable )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -331,7 +327,7 @@ const short HITPIX=2; //hit-tolerance in pixel
 }
 
 	void SAL_CALL ChartController
-::setFocus()	throw (uno::RuntimeException)
+::setFocus()
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -343,7 +339,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::addWindowListener( const uno::Reference<
 			awt::XWindowListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -355,7 +350,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::removeWindowListener( const uno::Reference<
 			awt::XWindowListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -367,7 +361,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::addFocusListener( const uno::Reference<
 			awt::XFocusListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -379,7 +372,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::removeFocusListener( const uno::Reference<
 			awt::XFocusListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -391,7 +383,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::addKeyListener( const uno::Reference<
 			awt::XKeyListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -403,7 +394,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::removeKeyListener( const uno::Reference<
 			awt::XKeyListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -415,7 +405,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::addMouseListener( const uno::Reference<
 			awt::XMouseListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -427,7 +416,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::removeMouseListener( const uno::Reference<
 			awt::XMouseListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -439,7 +427,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::addMouseMotionListener( const uno::Reference<
 			awt::XMouseMotionListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -451,7 +438,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::removeMouseMotionListener( const uno::Reference<
 			awt::XMouseMotionListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -463,7 +449,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::addPaintListener( const uno::Reference<
 			awt::XPaintListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -475,7 +460,6 @@ const short HITPIX=2; //hit-tolerance in pixel
 	void SAL_CALL ChartController
 ::removePaintListener( const uno::Reference<
 			awt::XPaintListener >& xListener )
-			throw (uno::RuntimeException)
 {
 	//@todo
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
@@ -1644,7 +1628,6 @@ bool ChartController::requestQuickHelp(
 //-----------------------------------------------------------------
 		sal_Bool SAL_CALL ChartController
 ::select( const uno::Any& rSelection )
-		throw( lang::IllegalArgumentException )
 {
     bool bSuccess = false;
 
@@ -1696,7 +1679,7 @@ bool ChartController::requestQuickHelp(
 }
 
 		uno::Any SAL_CALL ChartController
-::getSelection() throw(uno::RuntimeException)
+::getSelection()
 {
     uno::Any aReturn;
     if ( m_aSelection.hasSelection() )
@@ -1718,7 +1701,6 @@ bool ChartController::requestQuickHelp(
 		void SAL_CALL ChartController
 ::addSelectionChangeListener( const uno::Reference<
 		view::XSelectionChangeListener > & xListener )
-		throw(uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex());
 	if( impl_isDisposedOrSuspended() )//@todo? allow adding of listeners in suspend mode?
@@ -1731,7 +1713,6 @@ bool ChartController::requestQuickHelp(
 		void SAL_CALL ChartController
 ::removeSelectionChangeListener( const uno::Reference<
 		view::XSelectionChangeListener > & xListener )
-		throw(uno::RuntimeException)
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex());
 	if( impl_isDisposedOrSuspended() ) //@todo? allow removing of listeners in suspend mode?

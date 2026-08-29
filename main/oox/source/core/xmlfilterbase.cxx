@@ -86,13 +86,13 @@ struct XmlFilterBaseImpl
     RelationsMap        maRelationsMap;
     TextFieldStack      maTextFieldStack;
 
-    explicit            XmlFilterBaseImpl( const Reference< XComponentContext >& rxContext ) throw( RuntimeException );
+    explicit            XmlFilterBaseImpl( const Reference< XComponentContext >& rxContext );
     ~XmlFilterBaseImpl();
 };
 
 // ----------------------------------------------------------------------------
 
-XmlFilterBaseImpl::XmlFilterBaseImpl( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+XmlFilterBaseImpl::XmlFilterBaseImpl( const Reference< XComponentContext >& rxContext ) :
     maFastParser( rxContext ),
     maBinSuffix( CREATE_OUSTRING( ".bin" ) ),
     maVmlSuffix( CREATE_OUSTRING( ".vml" ) )
@@ -128,7 +128,7 @@ XmlFilterBaseImpl::~XmlFilterBaseImpl()
 
 // ============================================================================
 
-XmlFilterBase::XmlFilterBase( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+XmlFilterBase::XmlFilterBase( const Reference< XComponentContext >& rxContext ) :
     FilterBase( rxContext ),
     mxImpl( new XmlFilterBaseImpl( rxContext ) ),
     mnRelId( 1 ),

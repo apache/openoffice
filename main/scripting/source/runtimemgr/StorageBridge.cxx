@@ -65,7 +65,7 @@ StorageBridge::StorageBridge( const Reference< XComponentContext >& xContext,
 
 //*************************************************************************
 void
-StorageBridge::initStorage() throw ( ::com::sun::star::uno::RuntimeException )
+StorageBridge::initStorage()
 {
     try
     {
@@ -90,8 +90,6 @@ StorageBridge::initStorage() throw ( ::com::sun::star::uno::RuntimeException )
 //*************************************************************************
 Sequence< ::rtl::OUString >
 StorageBridge::getScriptLogicalNames()
-throw ( lang::IllegalArgumentException,
-        RuntimeException )
 {
     OSL_TRACE( "In StorageBridge getScriptLogicalNames...\n" );
     Sequence < ::rtl::OUString  > results;
@@ -110,7 +108,6 @@ throw ( lang::IllegalArgumentException,
 //*************************************************************************
 Sequence < Reference< storage::XScriptInfo > >
 StorageBridge::getImplementations( const ::rtl::OUString& queryURI )
-throw ( lang::IllegalArgumentException, RuntimeException )
 {
     OSL_TRACE( "In StorageBridge getImplementations...\n" );
     Sequence < Reference< storage::XScriptInfo > > results;

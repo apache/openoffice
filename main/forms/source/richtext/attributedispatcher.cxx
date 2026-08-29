@@ -92,7 +92,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OAttributeDispatcher::dispatch( const URL& _rURL, const Sequence< PropertyValue >& _rArguments ) throw (RuntimeException)
+    void SAL_CALL OAttributeDispatcher::dispatch( const URL& _rURL, const Sequence< PropertyValue >& _rArguments )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 

@@ -112,7 +112,6 @@ SystemCommandMail::~SystemCommandMail()
 
 Reference< XMailClient > SAL_CALL
 SystemCommandMail::queryMailClient()
-throw ( RuntimeException )
 {
     return Reference< XMailClient >(
         static_cast < cppu::OWeakObject * >( this ), UNO_QUERY );
@@ -121,7 +120,6 @@ throw ( RuntimeException )
 
 Reference< XMailMessage > SAL_CALL
 SystemCommandMail::createMailMessage()
-throw ( RuntimeException )
 {
     return Reference< XMailMessage >(
         static_cast< cppu::OWeakObject *>(
@@ -134,7 +132,6 @@ void SAL_CALL
 SystemCommandMail::sendMailMessage(
     const Reference< XMailMessage >& xMailMessage,
     sal_Int32 /*aFlag*/ )
-throw (IllegalArgumentException, Exception, RuntimeException)
 {
     osl::ClearableMutexGuard aGuard( m_aMutex );
     Reference< XMultiServiceFactory > xConfigurationProvider = m_xConfigurationProvider;
@@ -303,7 +300,6 @@ throw (IllegalArgumentException, Exception, RuntimeException)
 
 OUString SAL_CALL
 SystemCommandMail::getImplementationName(  )
-throw( RuntimeException )
 {
     return getImplementationName_static();
 }
@@ -311,7 +307,6 @@ throw( RuntimeException )
 sal_Bool SAL_CALL
 SystemCommandMail::supportsService(
     const OUString& ServiceName )
-throw( RuntimeException )
 {
     Sequence < OUString > SupportedServicesNames = getSupportedServiceNames_static();
 
@@ -324,7 +319,6 @@ throw( RuntimeException )
 
 Sequence< OUString > SAL_CALL
 SystemCommandMail::getSupportedServiceNames()
-throw( RuntimeException )
 {
     return getSupportedServiceNames_static();
 }

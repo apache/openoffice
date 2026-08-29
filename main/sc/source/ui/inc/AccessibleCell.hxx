@@ -85,20 +85,16 @@ public:
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
 		SAL_CALL getAccessibleAtPoint(
-		const ::com::sun::star::awt::Point& rPoint )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::awt::Point& rPoint );
 
-    virtual void SAL_CALL grabFocus(  )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL grabFocus(  );
 
 protected:
     ///	Return the object's current bounding box relative to the desktop.
-	virtual Rectangle GetBoundingBoxOnScreen(void) const
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual Rectangle GetBoundingBoxOnScreen(void) const;
 
 	///	Return the object's current bounding box relative to the parent object.
-	virtual Rectangle GetBoundingBox(void) const
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual Rectangle GetBoundingBox(void) const;
 
 public:
 	///=====  XAccessibleContext  ==============================================
@@ -106,47 +102,38 @@ public:
     ///	Return the number of currently visible children.
     // is overloaded to calculate this on demand
     virtual sal_Int32 SAL_CALL
-    	getAccessibleChildCount(void)
-    				throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleChildCount(void);
 
     ///	Return the specified child or NULL if index is invalid.
     // is overloaded to calculate this on demand
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-    	getAccessibleChild(sal_Int32 nIndex)
-        throw (::com::sun::star::uno::RuntimeException,
-				::com::sun::star::lang::IndexOutOfBoundsException);
+    	getAccessibleChild(sal_Int32 nIndex);
 
 	///	Return the set of current states.
 	virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessibleStateSet> SAL_CALL
-    	getAccessibleStateSet(void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleStateSet(void);
 
 	virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleRelationSet> SAL_CALL
-   		getAccessibleRelationSet(void)
-		throw (::com::sun::star::uno::RuntimeException);
+   		getAccessibleRelationSet(void);
 
 	///=====  XServiceInfo  ====================================================
 
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName(void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName(void);
 
 	/** Returns a list of all supported services.
     */
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-    	getSupportedServiceNames(void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getSupportedServiceNames(void);
 
-    virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes()
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
+    virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() ;
 
 	// Override this method to handle cell's ParaIndent attribute specially.
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes )
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes );
 private:
 	ScTabViewShell* mpViewShell;
     ScAccessibleDocument* mpAccDoc;

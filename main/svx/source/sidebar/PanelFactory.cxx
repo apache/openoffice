@@ -107,10 +107,6 @@ PanelFactory::~PanelFactory (void)
 Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     const ::rtl::OUString& rsResourceURL,
     const ::cssu::Sequence<css::beans::PropertyValue>& rArguments)
-    throw(
-        container::NoSuchElementException,
-        lang::IllegalArgumentException,
-        RuntimeException)
 {
     const ::comphelper::NamedValueCollection aArguments (rArguments);
     Reference<frame::XFrame> xFrame (aArguments.getOrDefault("Frame", Reference<frame::XFrame>()));

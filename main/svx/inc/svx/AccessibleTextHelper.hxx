@@ -147,7 +147,7 @@ namespace accessibility
         	should only be called from the main office thread.
 
          */
-        virtual const SvxEditSource& GetEditSource() const SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual const SvxEditSource& GetEditSource() const;
 
         /** Set the current edit source
 
@@ -189,7 +189,7 @@ namespace accessibility
 	        The new edit source to set. Object ownership is transferred
     	    from the caller to the callee.
         */
-        virtual void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource );
 
         /** Set the event source
 
@@ -292,7 +292,7 @@ namespace accessibility
 	        (e.g. via TEXT_HINT_VIEWSCROLLED). Normally, there should
 	        not be a need to call this method.
         */
-        virtual void UpdateChildren() SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual void UpdateChildren();
 
         /** Drop all references and enter disposed state
 
@@ -327,7 +327,7 @@ namespace accessibility
 
             @see HaveFocus()
          */
-        virtual void SetFocus( sal_Bool bHaveFocus = sal_True ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual void SetFocus( sal_Bool bHaveFocus = sal_True );
 
         /** Query the focus state of the surrounding object
 
@@ -339,7 +339,7 @@ namespace accessibility
 
             @return the state of the focus ownership
          */
-        virtual sal_Bool HaveFocus() SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual sal_Bool HaveFocus();
 
         /** Call this method to invoke all event listeners with the given event
 
@@ -385,13 +385,13 @@ namespace accessibility
     		@attention Don't call with locked mutexes. You may hold
     		the solar mutex, but this method aquires it anyway.
         */
-        virtual sal_Int32 GetChildCount() SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual sal_Int32 GetChildCount();
         /** Implements getAccessibleChild
 
     		@attention Don't call with locked mutexes. You may hold
     		the solar mutex, but this method aquires it anyway.
         */
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > GetChild( sal_Int32 i ) SAL_THROW((::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException));
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > GetChild( sal_Int32 i );
 
         // XAccessibleEventBroadcaster child related methods
         //-----------------------------------------------------------------
@@ -399,12 +399,12 @@ namespace accessibility
 
     		@attention Don't call with locked mutexes
         */
-        virtual void AddEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual void AddEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener );
         /** Implements removeEventListener
 
     		@attention Don't call with locked mutexes
         */
-        virtual void RemoveEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual void RemoveEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener );
 
         // XAccessibleComponent child related methods
         //-----------------------------------------------------------------
@@ -413,7 +413,7 @@ namespace accessibility
     		@attention Don't call with locked mutexes. You may hold
     		the solar mutex, but this method aquires it anyway.
         */
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL GetAt( const ::com::sun::star::awt::Point& aPoint ) SAL_THROW((::com::sun::star::uno::RuntimeException));
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL GetAt( const ::com::sun::star::awt::Point& aPoint );
 
     private:
 

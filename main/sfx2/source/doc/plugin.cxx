@@ -88,7 +88,7 @@ PluginObject::~PluginObject()
 {
 }
 
-void SAL_CALL PluginObject::initialize( const uno::Sequence< uno::Any >& aArguments ) throw ( uno::Exception, uno::RuntimeException )
+void SAL_CALL PluginObject::initialize( const uno::Sequence< uno::Any >& aArguments )
 {
 	if ( aArguments.getLength() )
         aArguments[0] >>= mxObj;
@@ -97,7 +97,6 @@ void SAL_CALL PluginObject::initialize( const uno::Sequence< uno::Any >& aArgume
 sal_Bool SAL_CALL PluginObject::load(
     const uno::Sequence < com::sun::star::beans::PropertyValue >& /*lDescriptor*/,
     const uno::Reference < frame::XFrame >& xFrame )
-throw( uno::RuntimeException )
 {
     uno::Reference< plugin::XPluginManager > xPMgr( mxFact->createInstance( ::rtl::OUString::createFromAscii("com.sun.star.plugin.PluginManager") ), uno::UNO_QUERY );
     if (!xPMgr.is() )
@@ -167,7 +166,7 @@ throw( uno::RuntimeException )
     return sal_False;
 }
 
-void SAL_CALL PluginObject::cancel() throw( com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::cancel()
 {
     uno::Reference< lang::XComponent > xComp( mxPlugin, uno::UNO_QUERY );
 	if (xComp.is())
@@ -175,31 +174,30 @@ void SAL_CALL PluginObject::cancel() throw( com::sun::star::uno::RuntimeExceptio
     mxPlugin = 0;
 }
 
-void SAL_CALL PluginObject::close( sal_Bool /*bDeliverOwnership*/ ) throw( com::sun::star::util::CloseVetoException, com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::close( sal_Bool /*bDeliverOwnership*/ )
 {
 }
 
-void SAL_CALL PluginObject::addCloseListener( const com::sun::star::uno::Reference < com::sun::star::util::XCloseListener >& ) throw( com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::addCloseListener( const com::sun::star::uno::Reference < com::sun::star::util::XCloseListener >& )
 {
 }
 
-void SAL_CALL PluginObject::removeCloseListener( const com::sun::star::uno::Reference < com::sun::star::util::XCloseListener >& ) throw( com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::removeCloseListener( const com::sun::star::uno::Reference < com::sun::star::util::XCloseListener >& )
 {
 }
 
-void SAL_CALL PluginObject::disposing( const com::sun::star::lang::EventObject& ) throw (com::sun::star::uno::RuntimeException)
+void SAL_CALL PluginObject::disposing( const com::sun::star::lang::EventObject& )
 {
     cancel();
 }
 
-uno::Reference< beans::XPropertySetInfo > SAL_CALL PluginObject::getPropertySetInfo() throw( ::com::sun::star::uno::RuntimeException )
+uno::Reference< beans::XPropertySetInfo > SAL_CALL PluginObject::getPropertySetInfo()
 {
     static uno::Reference< beans::XPropertySetInfo > xInfo = new SfxItemPropertySetInfo( &maPropMap );
     return xInfo;
 }
 
 void SAL_CALL PluginObject::setPropertyValue(const ::rtl::OUString& aPropertyName, const uno::Any& aAny)
-    throw ( beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     if ( aPropertyName.equalsAscii("PluginURL") )
     {
@@ -221,7 +219,6 @@ void SAL_CALL PluginObject::setPropertyValue(const ::rtl::OUString& aPropertyNam
 }
 
 uno::Any SAL_CALL PluginObject::getPropertyValue(const ::rtl::OUString& aPropertyName)
-        throw ( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     uno::Any aAny;
     if ( aPropertyName.equalsAscii("PluginURL") )
@@ -243,19 +240,19 @@ uno::Any SAL_CALL PluginObject::getPropertyValue(const ::rtl::OUString& aPropert
     return aAny;
 }
 
-void SAL_CALL PluginObject::addPropertyChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & ) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::addPropertyChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & )
 {
 }
 
-void SAL_CALL PluginObject::removePropertyChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & ) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::removePropertyChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & )
 {
 }
 
-void SAL_CALL PluginObject::addVetoableChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & ) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::addVetoableChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & )
 {
 }
 
-void SAL_CALL PluginObject::removeVetoableChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & ) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL PluginObject::removeVetoableChangeListener(const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & )
 {
 }
 

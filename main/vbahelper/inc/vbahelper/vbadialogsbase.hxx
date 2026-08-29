@@ -40,8 +40,8 @@ public:
 	virtual ~VbaDialogsBase() {}
 
 	// XCollection
-	virtual ::sal_Int32 SAL_CALL getCount() throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL Item( const css::uno::Any& Index ) throw (css::uno::RuntimeException);
+	virtual ::sal_Int32 SAL_CALL getCount();
+	virtual css::uno::Any SAL_CALL Item( const css::uno::Any& Index );
 };
 
 #endif /* VBA_DIALOGS_BASE_HXX */

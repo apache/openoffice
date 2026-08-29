@@ -124,58 +124,47 @@ public:
     //===== XResourceId =======================================================
 
     virtual ::rtl::OUString SAL_CALL
-        getResourceURL (void)
-        throw(css::uno::RuntimeException);
+        getResourceURL (void);
 
     virtual css::util::URL SAL_CALL
-        getFullResourceURL (void)
-        throw(css::uno::RuntimeException);
+        getFullResourceURL (void);
 
     virtual sal_Bool SAL_CALL
-        hasAnchor (void)
-        throw (css::uno::RuntimeException);
+        hasAnchor (void);
 
     virtual css::uno::Reference<
         css::drawing::framework::XResourceId> SAL_CALL
-        getAnchor (void)
-        throw (css::uno::RuntimeException);
+        getAnchor (void);
 
     virtual css::uno::Sequence<rtl::OUString> SAL_CALL
-        getAnchorURLs (void)
-        throw (css::uno::RuntimeException);
+        getAnchorURLs (void);
 
     virtual ::rtl::OUString SAL_CALL
-        getResourceTypePrefix (void)
-        throw (css::uno::RuntimeException);
+        getResourceTypePrefix (void);
 
     virtual sal_Int16 SAL_CALL
         compareTo (const css::uno::Reference<
-            css::drawing::framework::XResourceId>& rxResourceId)
-        throw (css::uno::RuntimeException);
+            css::drawing::framework::XResourceId>& rxResourceId);
 
     virtual sal_Bool SAL_CALL
         isBoundTo (
             const css::uno::Reference<
                 css::drawing::framework::XResourceId>& rxResourceId,
-            css::drawing::framework::AnchorBindingMode eMode)
-        throw(css::uno::RuntimeException);
+            css::drawing::framework::AnchorBindingMode eMode);
 
     virtual sal_Bool SAL_CALL
         isBoundToURL (
             const ::rtl::OUString& rsAnchorURL,
-            css::drawing::framework::AnchorBindingMode eMode)
-        throw (css::uno::RuntimeException);
+            css::drawing::framework::AnchorBindingMode eMode);
 
     virtual css::uno::Reference<
         css::drawing::framework::XResourceId> SAL_CALL
-        clone (void)
-        throw(css::uno::RuntimeException);
+        clone (void);
 
     //===== XInitialization ===================================================
 
     void SAL_CALL initialize (
-        const css::uno::Sequence<css::uno::Any>& aArguments)
-        throw (css::uno::RuntimeException);
+        const css::uno::Sequence<css::uno::Any>& aArguments);
 
 private:
     /** The set of URLs that consist of the resource URL at index 0 and the

@@ -156,8 +156,7 @@ public:
         getMyself() = 0;
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
-        SAL_CALL getAccessibleChild( sal_Int32 nChildIndex )
-            throw ( ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException ) = 0;
+        SAL_CALL getAccessibleChild( sal_Int32 nChildIndex ) = 0;
 
 	/** returns the accessible object for the row or the column header bar
 	*/

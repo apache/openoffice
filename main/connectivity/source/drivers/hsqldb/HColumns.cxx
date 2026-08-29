@@ -75,7 +75,7 @@ void OHSQLColumn::construct()
 	return *OHSQLColumn_PROP::getArrayHelper(isNew() ? 1 : 0);
 }
 // -----------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OHSQLColumn::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OHSQLColumn::getSupportedServiceNames(  )
 {
 	Sequence< ::rtl::OUString > aSupported(1);
 	aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.Column");

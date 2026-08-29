@@ -55,9 +55,6 @@ Any SAL_CALL
 FTPContentIdentifier::queryInterface(
 	const Type& rType
 )
-	throw(
-		RuntimeException
-	)
 {
 	Any aRet =
 		::cppu::queryInterface(rType,
@@ -80,7 +77,6 @@ void SAL_CALL FTPContentIdentifier::release( void ) throw() {
 
 Sequence<sal_Int8> SAL_CALL
 FTPContentIdentifier::getImplementationId()
-	throw(RuntimeException)
 {
 	static cppu::OImplementationId* pId = NULL;
 	if(!pId)
@@ -99,7 +95,6 @@ FTPContentIdentifier::getImplementationId()
 Sequence<Type> SAL_CALL
 FTPContentIdentifier::getTypes(
 	void )
-	throw(RuntimeException)
 {
 	static cppu::OTypeCollection* pCollection = NULL;
 	if ( !pCollection ) {
@@ -121,9 +116,6 @@ FTPContentIdentifier::getTypes(
 rtl::OUString SAL_CALL
 FTPContentIdentifier::getContentIdentifier(
 )
-	throw (
-		com::sun::star::uno::RuntimeException
-	)
 {
 	return m_ident;
 }
@@ -132,9 +124,6 @@ FTPContentIdentifier::getContentIdentifier(
 rtl::OUString SAL_CALL
 FTPContentIdentifier::getContentProviderScheme(
 )
-	throw (
-		com::sun::star::uno::RuntimeException
-	)
 {
 	return rtl::OUString::createFromAscii("ftp");
 }

@@ -91,19 +91,14 @@ public:
     virtual void SAL_CALL release() throw ();
 
     virtual com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
-    SAL_CALL getParent()
-        throw (com::sun::star::uno::RuntimeException);
+    SAL_CALL getParent();
 
     virtual void SAL_CALL setParent(
         com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
-            const &)
-        throw (
-            com::sun::star::lang::NoSupportException,
-            com::sun::star::uno::RuntimeException);
+            const &);
 
     virtual sal_Int64 SAL_CALL getSomething(
-        com::sun::star::uno::Sequence< sal_Int8 > const & aIdentifier)
-        throw (com::sun::star::uno::RuntimeException);
+        com::sun::star::uno::Sequence< sal_Int8 > const & aIdentifier);
 
     void bind(
         rtl::Reference< RootAccess > const & root,
@@ -136,8 +131,7 @@ private:
         std::vector< rtl::OUString > * services);
 
     virtual com::sun::star::uno::Any SAL_CALL queryInterface(
-        com::sun::star::uno::Type const & aType)
-        throw (com::sun::star::uno::RuntimeException);
+        com::sun::star::uno::Type const & aType);
 
     rtl::Reference< RootAccess > root_;
     rtl::Reference< Access > parent_; // null iff free node

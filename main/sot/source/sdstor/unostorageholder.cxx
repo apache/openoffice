@@ -90,14 +90,11 @@ String UNOStorageHolder::GetStorageName()
 }
 
 void SAL_CALL UNOStorageHolder::preCommit( const lang::EventObject& /*aEvent*/ )
-		throw ( uno::Exception,
-				uno::RuntimeException )
 {
 	// do nothing
 }
 
 void SAL_CALL UNOStorageHolder::commited( const lang::EventObject& /*aEvent*/ )
-		throw ( uno::RuntimeException )
 {
 	::utl::TempFile aTmpStorFile;
 	if ( !aTmpStorFile.GetURL().Len() )
@@ -157,21 +154,17 @@ void SAL_CALL UNOStorageHolder::commited( const lang::EventObject& /*aEvent*/ )
 }
 
 void SAL_CALL UNOStorageHolder::preRevert( const lang::EventObject& /*aEvent*/ )
-		throw ( uno::Exception,
-				uno::RuntimeException )
 {
 	// do nothing
 }
 
 void SAL_CALL UNOStorageHolder::reverted( const lang::EventObject& /*aEvent*/ )
-		throw ( uno::RuntimeException )
 {
 	// do nothing, since reverting of the duplicate storage just means
 	// not to copy changes done for it to the original storage
 }
 
 void SAL_CALL UNOStorageHolder::disposing( const lang::EventObject& /*Source*/ )
-		throw ( uno::RuntimeException )
 {
 	if ( m_pTempFile )
 	{

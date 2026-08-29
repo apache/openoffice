@@ -65,15 +65,15 @@ class StateEventHelper : public ::com::sun::star::frame::XStatusListener,
         bool isCommandEnabled();
 
 		// XInterface
-		virtual uno::Any SAL_CALL queryInterface( const uno::Type& aType ) throw ( uno::RuntimeException);
+		virtual uno::Any SAL_CALL queryInterface( const uno::Type& aType );
 		virtual void SAL_CALL acquire() throw ();
 		virtual void SAL_CALL release() throw ();
 
         // XEventListener
-	    virtual void SAL_CALL disposing(const lang::EventObject& Source) throw( uno::RuntimeException );
+	    virtual void SAL_CALL disposing(const lang::EventObject& Source);
 
         // XStatusListener
-	    virtual void SAL_CALL statusChanged(const frame::FeatureStateEvent& Event) throw( uno::RuntimeException );
+	    virtual void SAL_CALL statusChanged(const frame::FeatureStateEvent& Event);
 
     private:
         StateEventHelper();
@@ -104,7 +104,6 @@ StateEventHelper::~StateEventHelper()
 
 uno::Any SAL_CALL StateEventHelper::queryInterface(
     const uno::Type& aType )
-throw ( uno::RuntimeException )
 {
     uno::Any a = ::cppu::queryInterface(
 				aType,
@@ -130,7 +129,6 @@ throw ()
 
 void SAL_CALL StateEventHelper::disposing(
     const lang::EventObject& )
-throw ( uno::RuntimeException )
 {
     vos::OGuard	aSolarGuard( Application::GetSolarMutex() );
     m_xDispatchProvider.clear();
@@ -140,7 +138,6 @@ throw ( uno::RuntimeException )
 
 void SAL_CALL StateEventHelper::statusChanged(
     const frame::FeatureStateEvent& Event )
-throw ( uno::RuntimeException )
 {
     vos::OGuard	aSolarGuard( Application::GetSolarMutex() );
     m_bCurrentCommandEnabled = Event.IsEnabled;

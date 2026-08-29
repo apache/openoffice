@@ -77,12 +77,12 @@ void MozillaBootstrap::disposing()
 
 // static ServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString MozillaBootstrap::getImplementationName_Static(  ) throw(RuntimeException)
+rtl::OUString MozillaBootstrap::getImplementationName_Static(  )
 {
     return rtl::OUString::createFromAscii(MOZAB_MozillaBootstrap_IMPL_NAME);
 }
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > MozillaBootstrap::getSupportedServiceNames_Static(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > MozillaBootstrap::getSupportedServiceNames_Static(  )
 {
     // which service is supported
     // for more information @see com.sun.star.mozilla.MozillaBootstrap
@@ -92,13 +92,13 @@ Sequence< ::rtl::OUString > MozillaBootstrap::getSupportedServiceNames_Static(  
 }
 
 //------------------------------------------------------------------
-::rtl::OUString SAL_CALL MozillaBootstrap::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL MozillaBootstrap::getImplementationName(  )
 {
     return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------
-sal_Bool SAL_CALL MozillaBootstrap::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL MozillaBootstrap::supportsService( const ::rtl::OUString& _rServiceName )
 {
     Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
     const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -110,62 +110,62 @@ sal_Bool SAL_CALL MozillaBootstrap::supportsService( const ::rtl::OUString& _rSe
 }
 
 //------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL MozillaBootstrap::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL MozillaBootstrap::getSupportedServiceNames(  )
 {
     return getSupportedServiceNames_Static();
 }
 
 
 // XProfileDiscover
-::sal_Int32 SAL_CALL MozillaBootstrap::getProfileCount( ::com::sun::star::mozilla::MozillaProductType product) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int32 SAL_CALL MozillaBootstrap::getProfileCount( ::com::sun::star::mozilla::MozillaProductType product)
 {
     return m_ProfileAccess->getProfileCount(product);
 }
-::sal_Int32 SAL_CALL MozillaBootstrap::getProfileList( ::com::sun::star::mozilla::MozillaProductType product, ::com::sun::star::uno::Sequence< ::rtl::OUString >& list ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int32 SAL_CALL MozillaBootstrap::getProfileList( ::com::sun::star::mozilla::MozillaProductType product, ::com::sun::star::uno::Sequence< ::rtl::OUString >& list )
 {
     return m_ProfileAccess->getProfileList(product,list);
 }
-::rtl::OUString SAL_CALL MozillaBootstrap::getDefaultProfile( ::com::sun::star::mozilla::MozillaProductType product ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL MozillaBootstrap::getDefaultProfile( ::com::sun::star::mozilla::MozillaProductType product )
 {
     return m_ProfileAccess->getDefaultProfile(product);
 }
-::rtl::OUString SAL_CALL MozillaBootstrap::getProfilePath( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL MozillaBootstrap::getProfilePath( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName )
 {
     return m_ProfileAccess->getProfilePath(product,profileName);
 }
-::sal_Bool SAL_CALL MozillaBootstrap::isProfileLocked( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL MozillaBootstrap::isProfileLocked( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName )
 {
     return m_ProfileAccess->isProfileLocked(product,profileName);
 }
-::sal_Bool SAL_CALL MozillaBootstrap::getProfileExists( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL MozillaBootstrap::getProfileExists( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName )
 {
     return m_ProfileAccess->getProfileExists(product,profileName);
 }
 
 // XProfileManager
-::sal_Int32 SAL_CALL MozillaBootstrap::bootupProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int32 SAL_CALL MozillaBootstrap::bootupProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName )
 {
     (void)product; /* avoid warning about unused parameter */
     (void)profileName; /* avoid warning about unused parameter */
         return -1;
 }
-::sal_Int32 SAL_CALL MozillaBootstrap::shutdownProfile(  ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int32 SAL_CALL MozillaBootstrap::shutdownProfile(  )
 {
     return -1;
 }
-::com::sun::star::mozilla::MozillaProductType SAL_CALL MozillaBootstrap::getCurrentProduct(  ) throw (::com::sun::star::uno::RuntimeException)
+::com::sun::star::mozilla::MozillaProductType SAL_CALL MozillaBootstrap::getCurrentProduct(  )
 {
     return ::com::sun::star::mozilla::MozillaProductType_Default;
 }
-::rtl::OUString SAL_CALL MozillaBootstrap::getCurrentProfile(  ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL MozillaBootstrap::getCurrentProfile(  )
 {
     return ::rtl::OUString();
 }
-::sal_Bool SAL_CALL MozillaBootstrap::isCurrentProfileLocked(  ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL MozillaBootstrap::isCurrentProfileLocked(  )
 {
     return true;
 }
-::rtl::OUString SAL_CALL MozillaBootstrap::setCurrentProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL MozillaBootstrap::setCurrentProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName )
 {
     (void)product; /* avoid warning about unused parameter */
     (void)profileName; /* avoid warning about unused parameter */
@@ -173,7 +173,7 @@ Sequence< ::rtl::OUString > SAL_CALL MozillaBootstrap::getSupportedServiceNames(
 }
 
 // XProxyRunner
-::sal_Int32 SAL_CALL MozillaBootstrap::Run( const ::com::sun::star::uno::Reference< ::com::sun::star::mozilla::XCodeProxy >& aCode ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int32 SAL_CALL MozillaBootstrap::Run( const ::com::sun::star::uno::Reference< ::com::sun::star::mozilla::XCodeProxy >& aCode )
 {
     (void)aCode; /* avoid warning about unused parameter */
     return -1;

@@ -111,7 +111,7 @@ namespace xmlsearch {
 			}
 
 
-			sal_Int32 getNextByte() throw( xmlsearch::excep::XmlSearchException )
+			sal_Int32 getNextByte()
 			{
 				if( arrayL_ <= index_ )
 					throw  xmlsearch::excep::XmlSearchException(

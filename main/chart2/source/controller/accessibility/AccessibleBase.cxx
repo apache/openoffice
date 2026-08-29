@@ -56,6 +56,7 @@
 #include <vcl/window.hxx>
 
 #include <algorithm>
+#include <iterator>
 
 #include "ChartElementFactory.hxx"
 
@@ -109,7 +110,6 @@ AccessibleBase::~AccessibleBase()
 // ________ public ________
 
 bool AccessibleBase::CheckDisposeState( bool bThrowException /* default: true */ ) const
-    throw (lang::DisposedException)
 {
     if( bThrowException &&
         m_bIsDisposed )
@@ -219,7 +219,6 @@ bool AccessibleBase::NotifyEvent( EventType eEventType, const AccessibleUniqueId
 }
 
 void AccessibleBase::AddState( sal_Int16 aState )
-    throw (RuntimeException)
 {
     CheckDisposeState();
     OSL_ASSERT( m_pStateSetHelper );
@@ -227,7 +226,6 @@ void AccessibleBase::AddState( sal_Int16 aState )
 }
 
 void AccessibleBase::RemoveState( sal_Int16 aState )
-    throw (RuntimeException)
 {
     CheckDisposeState();
     OSL_ASSERT( m_pStateSetHelper );
@@ -543,14 +541,12 @@ void SAL_CALL AccessibleBase::disposing()
 
 // ________ XAccessible ________
 Reference< XAccessibleContext > SAL_CALL AccessibleBase::getAccessibleContext()
-    throw (RuntimeException)
 {
     return this;
 }
 
 // ________ AccessibleBase::XAccessibleContext ________
 sal_Int32 SAL_CALL AccessibleBase::getAccessibleChildCount()
-    throw (RuntimeException)
 {
     // /--
     ClearableMutexGuard aGuard( GetMutex() );
@@ -572,13 +568,11 @@ sal_Int32 SAL_CALL AccessibleBase::getAccessibleChildCount()
 }
 
 sal_Int32 AccessibleBase::ImplGetAccessibleChildCount() const
-    throw (RuntimeException)
 {
     return m_aChildList.size();
 }
 
 Reference< XAccessible > SAL_CALL AccessibleBase::getAccessibleChild( sal_Int32 i )
-    throw (lang::IndexOutOfBoundsException, RuntimeException)
 {
     CheckDisposeState();
     Reference< XAccessible > xResult;
@@ -601,7 +595,6 @@ Reference< XAccessible > SAL_CALL AccessibleBase::getAccessibleChild( sal_Int32 
 }
 
 Reference< XAccessible > AccessibleBase::ImplGetAccessibleChildById( sal_Int32 i ) const
-    throw (lang::IndexOutOfBoundsException, RuntimeException)
 {
     Reference< XAccessible > xResult;
     // /--
@@ -628,7 +621,6 @@ Reference< XAccessible > AccessibleBase::ImplGetAccessibleChildById( sal_Int32 i
 }
 
 Reference< XAccessible > SAL_CALL AccessibleBase::getAccessibleParent()
-    throw (RuntimeException)
 {
     CheckDisposeState();
     Reference< XAccessible > aResult;
@@ -639,7 +631,6 @@ Reference< XAccessible > SAL_CALL AccessibleBase::getAccessibleParent()
 }
 
 sal_Int32 SAL_CALL AccessibleBase::getAccessibleIndexInParent()
-    throw (RuntimeException)
 {
     CheckDisposeState();
 
@@ -649,20 +640,17 @@ sal_Int32 SAL_CALL AccessibleBase::getAccessibleIndexInParent()
 }
 
 sal_Int16 SAL_CALL AccessibleBase::getAccessibleRole()
-    throw (RuntimeException)
 {
     return AccessibleRole::SHAPE/*LIST_ITEM*/; // #i73747# role SHAPE seems more appropriate, but is not read
 }
 
 Reference< XAccessibleRelationSet > SAL_CALL AccessibleBase::getAccessibleRelationSet()
-    throw (RuntimeException)
 {
     Reference< XAccessibleRelationSet > aResult;
     return aResult;
 }
 
 Reference< XAccessibleStateSet > SAL_CALL AccessibleBase::getAccessibleStateSet()
-    throw (RuntimeException)
 {
     if( ! m_bStateSetInitialized )
     {
@@ -684,7 +672,6 @@ Reference< XAccessibleStateSet > SAL_CALL AccessibleBase::getAccessibleStateSet(
 
 
 lang::Locale SAL_CALL AccessibleBase::getLocale()
-    throw (IllegalAccessibleComponentStateException, RuntimeException)
 {
     CheckDisposeState();
 
@@ -693,7 +680,6 @@ lang::Locale SAL_CALL AccessibleBase::getLocale()
 
 // ________ AccessibleBase::XAccessibleComponent ________
 sal_Bool SAL_CALL AccessibleBase::containsPoint( const awt::Point& aPoint )
-    throw (RuntimeException)
 {
     awt::Rectangle aRect( getBounds() );
 
@@ -708,7 +694,6 @@ sal_Bool SAL_CALL AccessibleBase::containsPoint( const awt::Point& aPoint )
 }
 
 Reference< XAccessible > SAL_CALL AccessibleBase::getAccessibleAtPoint( const awt::Point& aPoint )
-    throw (RuntimeException)
 {
     CheckDisposeState();
     Reference< XAccessible > aResult;
@@ -750,7 +735,6 @@ Reference< XAccessible > SAL_CALL AccessibleBase::getAccessibleAtPoint( const aw
 }
 
 awt::Rectangle SAL_CALL AccessibleBase::getBounds()
-    throw (RuntimeException)
 {
     ExplicitValueProvider *pExplicitValueProvider(
         ExplicitValueProvider::getExplicitValueProvider( m_aAccInfo.m_xView ));
@@ -789,7 +773,6 @@ awt::Rectangle SAL_CALL AccessibleBase::getBounds()
 }
 
 awt::Point SAL_CALL AccessibleBase::getLocation()
-    throw (RuntimeException)
 {
     CheckDisposeState();
     awt::Rectangle aBBox( getBounds() );
@@ -797,7 +780,6 @@ awt::Point SAL_CALL AccessibleBase::getLocation()
 }
 
 awt::Point SAL_CALL AccessibleBase::getLocationOnScreen()
-    throw (RuntimeException)
 {
     CheckDisposeState();
 
@@ -818,7 +800,6 @@ awt::Point SAL_CALL AccessibleBase::getLocationOnScreen()
 }
 
 awt::Size SAL_CALL AccessibleBase::getSize()
-    throw (RuntimeException)
 {
     CheckDisposeState();
     awt::Rectangle aBBox( getBounds() );
@@ -826,7 +807,6 @@ awt::Size SAL_CALL AccessibleBase::getSize()
 }
 
 void SAL_CALL AccessibleBase::grabFocus()
-    throw (RuntimeException)
 {
     CheckDisposeState();
 
@@ -838,13 +818,11 @@ void SAL_CALL AccessibleBase::grabFocus()
 }
 
 sal_Int32 SAL_CALL AccessibleBase::getForeground()
-    throw (RuntimeException)
 {
     return getColor( ACC_BASE_FOREGROUND );
 }
 
 sal_Int32 SAL_CALL AccessibleBase::getBackground()
-    throw (RuntimeException)
 {
     return getColor( ACC_BASE_BACKGROUND );
 }
@@ -943,19 +921,16 @@ sal_Int32 AccessibleBase::getColor( eColorType eColType )
 
 // ________ AccessibleBase::XServiceInfo ________
 OUString SAL_CALL AccessibleBase::getImplementationName()
-    throw (RuntimeException)
 {
     return OUString( RTL_CONSTASCII_USTRINGPARAM( "AccessibleBase" ));
 }
 
 sal_Bool SAL_CALL AccessibleBase::supportsService( const OUString& ServiceName )
-    throw (RuntimeException)
 {
     return comphelper::ServiceInfoHelper::supportsService( ServiceName, getSupportedServiceNames() );
 }
 
 uno::Sequence< OUString > SAL_CALL AccessibleBase::getSupportedServiceNames()
-    throw (RuntimeException)
 {
     uno::Sequence< ::rtl::OUString > aSeq( 2 );
     ::rtl::OUString* pStr = aSeq.getArray();
@@ -967,13 +942,11 @@ uno::Sequence< OUString > SAL_CALL AccessibleBase::getSupportedServiceNames()
 
 // ________ AccessibleBase::XEventListener ________
 void SAL_CALL AccessibleBase::disposing( const lang::EventObject& /*Source*/ )
-    throw (RuntimeException)
 {
 }
 
 // ________ XAccessibleEventBroadcasters ________
 void SAL_CALL AccessibleBase::addEventListener( const Reference< XAccessibleEventListener >& xListener )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( GetMutex() );
 
@@ -987,7 +960,6 @@ void SAL_CALL AccessibleBase::addEventListener( const Reference< XAccessibleEven
 }
 
 void SAL_CALL AccessibleBase::removeEventListener( const Reference< XAccessibleEventListener >& xListener )
-    throw (RuntimeException)
 {
     MutexGuard aGuard( GetMutex() );
 

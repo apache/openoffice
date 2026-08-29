@@ -58,7 +58,6 @@ public:
     // XInterface
 
     css::uno::Any SAL_CALL queryInterface( const css::uno::Type& rType )
-        throw( css::uno::RuntimeException )
     {
         css::uno::Any aRet( OPropertySetHelper::queryInterface( rType ) );
         return (aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType ));
@@ -66,8 +65,7 @@ public:
     void SAL_CALL acquire() throw() { ::cppu::OWeakObject::acquire(); }
     void SAL_CALL release() throw() { ::cppu::OWeakObject::release(); }
     // XPropertySet
-    virtual css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  )
-            throw ( css::uno::RuntimeException );
+    virtual css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
     //XTypeProvider
     DECLARE_XTYPEPROVIDER( )
 

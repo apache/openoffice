@@ -52,8 +52,7 @@ namespace treeview {
 		// XInterface
 		virtual com::sun::star::uno::Any SAL_CALL
 		queryInterface(
-			const com::sun::star::uno::Type& aType )
-			throw( com::sun::star::uno::RuntimeException);
+			const com::sun::star::uno::Type& aType );
 
 		virtual void SAL_CALL
 		acquire(
@@ -74,37 +73,29 @@ namespace treeview {
 		// XServiceInfo
 		virtual rtl::OUString SAL_CALL
 		getImplementationName(
-			void )
-			throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		virtual sal_Bool SAL_CALL
 		supportsService(
-			const rtl::OUString& ServiceName )
-			throw(com::sun::star::uno::RuntimeException );
+			const rtl::OUString& ServiceName );
 
 		virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
 		getSupportedServiceNames(
-			void )
-			throw( com::sun::star::uno::RuntimeException );
+			void );
 
 		// XMultiServiceFactory
 
 		virtual com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL
 		createInstance(
-			const rtl::OUString& aServiceSpecifier )
-			throw( com::sun::star::uno::Exception,
-				   com::sun::star::uno::RuntimeException );
+			const rtl::OUString& aServiceSpecifier );
 
 		virtual com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL
 		createInstanceWithArguments(
 			const rtl::OUString& ServiceSpecifier,
-			const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& Arguments )
-			throw( com::sun::star::uno::Exception,
-				   com::sun::star::uno::RuntimeException);
+			const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& Arguments );
 
 		virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-		getAvailableServiceNames( )
-			throw( com::sun::star::uno::RuntimeException );
+		getAvailableServiceNames( );
 
 		// Other
 

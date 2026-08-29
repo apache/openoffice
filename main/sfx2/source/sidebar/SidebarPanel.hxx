@@ -60,8 +60,7 @@ protected:
         Panel* pPanel);
     virtual ~SidebarPanel (void);
 
-    virtual void SAL_CALL disposing (const css::lang::EventObject& rEventObject)
-        throw(cssu::RuntimeException);
+    virtual void SAL_CALL disposing (const css::lang::EventObject& rEventObject);
 
     virtual void SAL_CALL disposing (void);
 

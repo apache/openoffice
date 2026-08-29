@@ -125,7 +125,7 @@ STD_LIB_FILE(gid_File_Lib_Chartview, chartview)
 #endif
 
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Lib_Cli_Oootypes_Assembly
     TXT_FILE_BODY;
@@ -145,7 +145,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 File gid_File_Lib_Policy_Cli_Oootypes_Assembly
     TXT_FILE_BODY;
     Styles = (PACKED, ASSEMBLY, DONTRENAMEINPATCH);
@@ -164,7 +164,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Lib_Policy_Cli_Oootypes_Config
     TXT_FILE_BODY;
@@ -665,7 +665,20 @@ STD_LIB_FILE( gid_File_Lib_Fwl , fwl)
 
 STD_LIB_FILE( gid_File_Lib_Fwm , fwm)
 
-#ifdef WNT
+// This is the legacy GDI+ redistributable, needed back when Windows 2000 and the
+// original XP had no GDI+ of their own.  Since XP SP1 it is a side-by-side assembly
+// (Microsoft.Windows.GdiPlus), and SxS resolution runs ahead of the ordinary DLL
+// search path -- so this private copy is never the one that gets loaded.  Verified on
+// a running 64 bit office, which loads
+//   C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_..._1.1.26100.9168_...\gdiplus.dll
+//
+// The file external/gdiplus/gdiplus.dll is 32 bit, so in a 64 bit install it is 1.7 MB
+// that could not be loaded even if something tried.  It went unnoticed precisely
+// because SxS means nothing ever does.  Do not ship it there.
+//
+// The 32 bit build keeps it: same reasoning says it is equally unused, but that is the
+// shipping configuration and dropping it is a separate decision.
+#if defined(WNT) && !defined(BUILD_WIN64)
 File gid_File_Lib_Gdiplus
     BIN_FILE_BODY;
     Styles = (PACKED);

@@ -35,7 +35,7 @@ using namespace ::ooo::vba;
 
 // Class HeaderFooterHelper
 
-sal_Bool HeaderFooterHelper::isHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     uno::Reference< text::XPageCursor > xPageCursor( word::getXTextViewCursor( xModel ), uno::UNO_QUERY_THROW );
     uno::Reference< beans::XPropertySet > xStyleProps( word::getCurrentPageStyle( xModel ), uno::UNO_QUERY_THROW );
@@ -66,7 +66,7 @@ sal_Bool HeaderFooterHelper::isHeader( const uno::Reference< frame::XModel >& xM
     return ( xText == xCurrentText );
 }
 
-sal_Bool HeaderFooterHelper::isFirstPageHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isFirstPageHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     if( isHeader( xModel, xCurrentText ) )
     {
@@ -78,7 +78,7 @@ sal_Bool HeaderFooterHelper::isFirstPageHeader( const uno::Reference< frame::XMo
     return sal_False;
 }
 
-sal_Bool HeaderFooterHelper::isEvenPagesHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isEvenPagesHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     if( isHeader( xModel, xCurrentText ) )
     {
@@ -94,7 +94,7 @@ sal_Bool HeaderFooterHelper::isEvenPagesHeader( const uno::Reference< frame::XMo
     return sal_False;
 }
 
-sal_Bool HeaderFooterHelper::isFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     uno::Reference< text::XPageCursor > xPageCursor( word::getXTextViewCursor( xModel ), uno::UNO_QUERY_THROW );
     uno::Reference< beans::XPropertySet > xStyleProps( word::getCurrentPageStyle( xModel ), uno::UNO_QUERY_THROW );
@@ -125,7 +125,7 @@ sal_Bool HeaderFooterHelper::isFooter( const uno::Reference< frame::XModel >& xM
     return ( xText == xCurrentText );
 }
 
-sal_Bool HeaderFooterHelper::isFirstPageFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isFirstPageFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     if( isFooter( xModel, xCurrentText ) )
     {
@@ -136,7 +136,7 @@ sal_Bool HeaderFooterHelper::isFirstPageFooter( const uno::Reference< frame::XMo
     return sal_False;
 }
 
-sal_Bool HeaderFooterHelper::isEvenPagesFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isEvenPagesFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     if( isFooter( xModel, xCurrentText ) )
     {
@@ -152,7 +152,7 @@ sal_Bool HeaderFooterHelper::isEvenPagesFooter( const uno::Reference< frame::XMo
     return sal_False;
 }
 #ifdef TOMORROW
-sal_Bool HeaderFooterHelper::isPrimaryHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isPrimaryHeader( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     if( isHeader( xModel, xCurrentText ) )
     {
@@ -161,7 +161,7 @@ sal_Bool HeaderFooterHelper::isPrimaryHeader( const uno::Reference< frame::XMode
     return sal_False;
 }
 
-sal_Bool HeaderFooterHelper::isPrimaryFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText ) throw (uno::RuntimeException)
+sal_Bool HeaderFooterHelper::isPrimaryFooter( const uno::Reference< frame::XModel >& xModel, const uno::Reference< text::XText >& xCurrentText )
 {
     if( isHeader( xModel, xCurrentText ) )
     {

@@ -94,8 +94,7 @@ public:
                 xSupplyAuthentication,
         rtl::OUString const & rURL,
         com::sun::star::uno::Reference<
-            com::sun::star::task::XInteractionHandler > const & xIH )
-    SAL_THROW( (com::sun::star::uno::RuntimeException) );
+            com::sun::star::task::XInteractionHandler > const & xIH );
 
     /** This member function adds credentials for the given URL to the password
         container.
@@ -130,8 +129,7 @@ public:
                     rPasswords,
                     com::sun::star::uno::Reference<
                         com::sun::star::task::XInteractionHandler > const & xIH,
-                    bool bPersist )
-        SAL_THROW( (com::sun::star::uno::RuntimeException) );
+                    bool bPersist );
 
     // ------------------------------------------------------------------------
 
@@ -153,22 +151,18 @@ public:
     virtual ~PasswordContainerInteractionHandler();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw ( com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
     virtual sal_Bool SAL_CALL
-    supportsService( const ::rtl::OUString& ServiceName )
-        throw ( com::sun::star::uno::RuntimeException );
+    supportsService( const ::rtl::OUString& ServiceName );
 
     virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-        throw ( com::sun::star::uno::RuntimeException );
+    getSupportedServiceNames();
 
     // XInteractionHandler
     virtual void SAL_CALL
     handle( const ::com::sun::star::uno::Reference<
-                ::com::sun::star::task::XInteractionRequest >& Request )
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::task::XInteractionRequest >& Request );
 
     // Non-UNO interfaces
     static rtl::OUString

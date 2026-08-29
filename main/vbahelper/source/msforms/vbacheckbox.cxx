@@ -37,7 +37,7 @@ ScVbaCheckbox::ScVbaCheckbox( const uno::Reference< ov::XHelperInterface >& xPar
 
 // Attributes
 rtl::OUString SAL_CALL
-ScVbaCheckbox::getCaption() throw (css::uno::RuntimeException)
+ScVbaCheckbox::getCaption()
 {
     rtl::OUString Label;
     m_xProps->getPropertyValue( LABEL ) >>= Label;
@@ -45,13 +45,13 @@ ScVbaCheckbox::getCaption() throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaCheckbox::setCaption( const rtl::OUString& _caption ) throw (::com::sun::star::uno::RuntimeException)
+ScVbaCheckbox::setCaption( const rtl::OUString& _caption )
 {
     m_xProps->setPropertyValue( LABEL, uno::makeAny( _caption ) );
 }
 
 uno::Any SAL_CALL
-ScVbaCheckbox::getValue() throw (css::uno::RuntimeException)
+ScVbaCheckbox::getValue()
 {
     sal_Int16 nValue = -1;
     m_xProps->getPropertyValue( STATE ) >>= nValue;
@@ -64,7 +64,7 @@ ScVbaCheckbox::getValue() throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaCheckbox::setValue( const uno::Any& _value ) throw (css::uno::RuntimeException)
+ScVbaCheckbox::setValue( const uno::Any& _value )
 {
     sal_Int16 nValue = 0;
     sal_Bool bValue = false;
@@ -81,7 +81,7 @@ ScVbaCheckbox::setValue( const uno::Any& _value ) throw (css::uno::RuntimeExcept
     m_xProps->setPropertyValue( STATE, uno::makeAny( nValue ) );
 }
 
-uno::Reference< msforms::XNewFont > SAL_CALL ScVbaCheckbox::getFont() throw (uno::RuntimeException)
+uno::Reference< msforms::XNewFont > SAL_CALL ScVbaCheckbox::getFont()
 {
     return new VbaNewFont( this, mxContext, m_xProps );
 }

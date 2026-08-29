@@ -156,14 +156,76 @@ BUILD_ACTION=$(ENV_BUILD) make && make install
 #.ENDIF #"$(WINDOWS_VISTA_PSDK)"!=""
 #.ENDIF
 
-# Windows build deferred — Python 3 requires modern MSVC (PCbuild); VS9.0/vcbuild
-# no longer supported. Retained for reference. See python3 migration notes.
-#BUILD_DIR=PC/VS9.0
-#.IF "$(CPUNAME)"=="INTEL"
-#BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|Win32"
-#.ELIF "$(CPUNAME)"=="X86_64"
-#BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|x64"
-#.ENDIF
+# The deferral above comes due here.  VS2008 cannot build Python 3.11 at all --
+# that is why trunk left this commented out -- but the UCRT generation can,
+# through PCbuild and MSBuild.  Same move CoinMP made on this branch, for the
+# same reason: vcbuild.exe does not exist any more.  VC9 keeps the deferral,
+# because for VC9 it is still true.
+.IF "$(COMEX)"=="14"
+
+# pcbuild.proj, not pcbuild.sln: the solution builds every project
+# unconditionally, while the .proj is what understands the switches below.
+BUILD_DIR=PCbuild
+
+# The projects are named one by one rather than letting pcbuild.proj pick them,
+# because its selection is all-or-nothing in the wrong place.  Switching its
+# IncludeExternals off drops _bz2, _lzma and _sqlite3 -- which we do want
+# dropped, their sources are downloaded by get_externals.bat and an offline
+# build cannot run it -- but the SAME property also decides whether pythoncore
+# gets zlib, and pythoncore without zlib does not compile:  binascii.c is
+# handed USE_ZLIB_CRC32 unconditionally and then cannot find zlib.h.  CPython
+# says as much itself, in a _WarnAboutZlib target reading "Not including zlib
+# is not a supported configuration."
+#
+# So: build from the solution, name the targets, and give pythoncore the zlib
+# this tree already has.  Everything below needs no external source at all.
+# Built one project at a time, and NOT through pcbuild.sln, because the
+# solution carries dependencies that have nothing to do with compilation
+# order: python.vcxproj declares one on _ctypes purely so that a developer
+# building 'python' in the IDE gets a usable interpreter.  Going through the
+# solution therefore drags in libffi, which we do not have and do not want.
+# A .vcxproj built directly honours its own ProjectReferences and ignores the
+# solution's editorial ones.
+#
+# _freeze_module is named EXPLICITLY, and first.  Relying on pythoncore's
+# reference to pull it in happens to work for Win32 and does not for x64: the
+# x64 build ran without _freeze_module ever being invoked, left
+# Python/frozen_modules holding nothing but its README, and then died a long
+# way from the cause --
+#     getpath.c(22): fatal error C1083: cannot open include file
+#                    '../Python/frozen_modules/getpath.h'
+# Naming it costs one project and does not depend on which references MSBuild
+# decides to honour.
+PYTHON_PROJECTS=_freeze_module pythoncore python pythonw _socket select unicodedata pyexpat _elementtree _multiprocessing _overlapped _asyncio _queue _uuid _zoneinfo winsound _decimal _msi
+
+# main/zlib's unpacked source, in the form MSBuild wants.  Globbed rather than
+# spelled out so a zlib version bump does not silently miss it -- pythoncore
+# compiles these sources into itself, so it needs the .c files and not just the
+# headers we deliver to solver.
+PYTHON_ZLIB_DIR=$(shell cygpath -m `ls -d $(PRJ)$/..$/zlib$/$(INPATH)$/misc$/build$/zlib-*$/ | head -1`)
+
+# PlatformToolset and WindowsTargetPlatformVersion are passed for the reason
+# CoinMP passes them: the projects default to a newer toolset than is installed.
+PYTHON_MSBUILDFLAGS=\
+	/p:Configuration=Release \
+	/p:PlatformToolset=$(VCTOOLSET) \
+	/p:WindowsTargetPlatformVersion=$(WINDOWS_SDK_VERSION) \
+	/p:zlibDir=$(PYTHON_ZLIB_DIR) \
+	/p:IncludeExternals=true \
+	/p:IncludeSSL=false \
+	/p:IncludeCTypes=false \
+	/p:IncludeTkinter=false \
+	/p:IncludeTests=false
+
+.IF "$(CPUNAME)"=="INTEL"
+PYTHON_MSBUILDPLATFORM=Win32
+.ELIF "$(CPUNAME)"=="X86_64"
+PYTHON_MSBUILDPLATFORM=x64
+.ENDIF
+
+BUILD_ACTION=for p in $(PYTHON_PROJECTS) ; do $(MSBUILD_PATH)$/MSBuild.exe $$p.vcxproj /p:Platform=$(PYTHON_MSBUILDPLATFORM) $(PYTHON_MSBUILDFLAGS) || exit 1 ; done
+
+.ENDIF			# "$(COMEX)"=="14"
 .ENDIF
 .ENDIF
 

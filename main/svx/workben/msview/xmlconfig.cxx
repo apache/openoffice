@@ -63,38 +63,38 @@ class ConfigHandler : public ::cppu::WeakAggImplHelper1<XDocumentHandler>
 {
 public:
 	// XDocumentHandler
-	virtual void SAL_CALL startDocument(void) throw( SAXException, RuntimeException );
-	virtual void SAL_CALL endDocument(void) throw( SAXException, RuntimeException );
-	virtual void SAL_CALL startElement(const OUString& aName, const Reference< XAttributeList > & xAttribs) throw( SAXException, RuntimeException );
-	virtual void SAL_CALL endElement(const OUString& aName) throw( SAXException, RuntimeException );
-	virtual void SAL_CALL characters(const OUString& aChars) throw( SAXException, RuntimeException );
-	virtual void SAL_CALL ignorableWhitespace(const OUString& aWhitespaces) throw( SAXException, RuntimeException );
-	virtual void SAL_CALL processingInstruction(const OUString& aTarget, const OUString& aData) throw( SAXException, RuntimeException );
-	virtual void SAL_CALL setDocumentLocator(const Reference< XLocator > & xLocator) throw( SAXException, RuntimeException );
+	virtual void SAL_CALL startDocument(void);
+	virtual void SAL_CALL endDocument(void);
+	virtual void SAL_CALL startElement(const OUString& aName, const Reference< XAttributeList > & xAttribs);
+	virtual void SAL_CALL endElement(const OUString& aName);
+	virtual void SAL_CALL characters(const OUString& aChars);
+	virtual void SAL_CALL ignorableWhitespace(const OUString& aWhitespaces);
+	virtual void SAL_CALL processingInstruction(const OUString& aTarget, const OUString& aData);
+	virtual void SAL_CALL setDocumentLocator(const Reference< XLocator > & xLocator);
 
 private:
-	void errorThrow( const OUString& rErrorMessage ) throw (SAXException );
-	ElementConfigType parseType( const OUString& rErrorMessage ) throw ( SAXException );
-	void addElement( ElementConfigPtr& rElementConfig ) throw ( SAXException );
-	OUString getAttribute( const Reference< XAttributeList > & xAttribs, const sal_Char* pName ) throw( SAXException );
+	void errorThrow( const OUString& rErrorMessage );
+	ElementConfigType parseType( const OUString& rErrorMessage );
+	void addElement( ElementConfigPtr& rElementConfig );
+	OUString getAttribute( const Reference< XAttributeList > & xAttribs, const sal_Char* pName );
 
-	ElementConfigPtr importAtomConfig( const Reference< XAttributeList > & xAttribs, bool bIsContainer ) throw( SAXException );
-	ElementConfigPtr importElementConfig( const Reference< XAttributeList > & xAttribs ) throw( SAXException );
-	ElementConfigPtr importSwitchConfig( const Reference< XAttributeList > & xAttribs ) throw( SAXException );
-	ElementConfigPtr importCaseConfig( const Reference< XAttributeList > & xAttribs ) throw( SAXException );
-	ElementConfigPtr importValueElementConfig( const Reference< XAttributeList > & xAttribs ) throw( SAXException );
+	ElementConfigPtr importAtomConfig( const Reference< XAttributeList > & xAttribs, bool bIsContainer );
+	ElementConfigPtr importElementConfig( const Reference< XAttributeList > & xAttribs );
+	ElementConfigPtr importSwitchConfig( const Reference< XAttributeList > & xAttribs );
+	ElementConfigPtr importCaseConfig( const Reference< XAttributeList > & xAttribs );
+	ElementConfigPtr importValueElementConfig( const Reference< XAttributeList > & xAttribs );
 
 	std::stack< ElementConfigPtr > maElementStack;
 };
 
-void ConfigHandler::errorThrow( const OUString& rErrorMessage ) throw (SAXException )
+void ConfigHandler::errorThrow( const OUString& rErrorMessage )
 {
 	Reference< XInterface > aContext;
 	Any aWrappedException;
     throw SAXException(rErrorMessage, aContext, aWrappedException);
 }
 
-ElementConfigType ConfigHandler::parseType( const OUString& sType ) throw (SAXException )
+ElementConfigType ConfigHandler::parseType( const OUString& sType )
 {
 	if( sType.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("uint") ) )
 	{
@@ -125,7 +125,7 @@ ElementConfigType ConfigHandler::parseType( const OUString& sType ) throw (SAXEx
 	return ECT_HEXDUMP;
 }
 
-void ConfigHandler::addElement( ElementConfigPtr& rElementConfig ) throw ( SAXException )
+void ConfigHandler::addElement( ElementConfigPtr& rElementConfig )
 {
 	ElementConfigContainer* pParent = dynamic_cast< ElementConfigContainer* >( maElementStack.top().get() );
 
@@ -136,7 +136,7 @@ void ConfigHandler::addElement( ElementConfigPtr& rElementConfig ) throw ( SAXEx
 	pParent->addElementConfig( rElementConfig );
 }
 
-OUString ConfigHandler::getAttribute( const Reference< XAttributeList > & xAttribs, const sal_Char* pName ) throw( SAXException )
+OUString ConfigHandler::getAttribute( const Reference< XAttributeList > & xAttribs, const sal_Char* pName )
 {
 	OUString aName( OUString::createFromAscii( pName ) );
 
@@ -155,15 +155,15 @@ OUString ConfigHandler::getAttribute( const Reference< XAttributeList > & xAttri
 	return OUString();
 }
 
-void SAL_CALL ConfigHandler::startDocument(void) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::startDocument(void)
 {
 }
 
-void SAL_CALL ConfigHandler::endDocument(void) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::endDocument(void)
 {
 }
 
-void SAL_CALL ConfigHandler::startElement(const OUString& aName, const Reference< XAttributeList > & xAttribs) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::startElement(const OUString& aName, const Reference< XAttributeList > & xAttribs)
 {
 	ElementConfigPtr pElement;
 
@@ -241,7 +241,7 @@ sal_Int32 toInt( const OUString& rText )
 	}
 }
 
-ElementConfigPtr ConfigHandler::importAtomConfig( const Reference< XAttributeList > & xAttribs, bool bIsContainer ) throw (SAXException)
+ElementConfigPtr ConfigHandler::importAtomConfig( const Reference< XAttributeList > & xAttribs, bool bIsContainer )
 {
 	if( !maElementStack.empty() )
 		errorThrow( OUString( RTL_CONSTASCII_USTRINGPARAM("atom elements must be root" ) ) );
@@ -251,7 +251,7 @@ ElementConfigPtr ConfigHandler::importAtomConfig( const Reference< XAttributeLis
 	return aPtr;
 }
 
-ElementConfigPtr ConfigHandler::importElementConfig( const Reference< XAttributeList > & xAttribs ) throw (SAXException)
+ElementConfigPtr ConfigHandler::importElementConfig( const Reference< XAttributeList > & xAttribs )
 {
 	ElementConfigType nType = parseType( getAttribute( xAttribs, "type" ) );
 	ElementConfigPtr pElementConfig( new ElementConfigContainer( getAttribute( xAttribs, "name" ), nType ) );
@@ -259,14 +259,14 @@ ElementConfigPtr ConfigHandler::importElementConfig( const Reference< XAttribute
 	return pElementConfig;
 }
 
-ElementConfigPtr ConfigHandler::importValueElementConfig( const Reference< XAttributeList > & xAttribs ) throw (SAXException)
+ElementConfigPtr ConfigHandler::importValueElementConfig( const Reference< XAttributeList > & xAttribs )
 {
 	ElementConfigPtr pElementConfig( new ElementValueConfig( getAttribute( xAttribs, "name" ), getAttribute( xAttribs, "value" ) ) );
 	addElement( pElementConfig );
 	return pElementConfig;
 }
 
-ElementConfigPtr ConfigHandler::importSwitchConfig( const Reference< XAttributeList > & xAttribs ) throw (SAXException)
+ElementConfigPtr ConfigHandler::importSwitchConfig( const Reference< XAttributeList > & xAttribs )
 {
 	ElementConfigType nType = parseType( getAttribute( xAttribs, "type" ) );
 	ElementConfigPtr pElementConfig( new SwitchElementConfig( nType ) );
@@ -274,14 +274,14 @@ ElementConfigPtr ConfigHandler::importSwitchConfig( const Reference< XAttributeL
 	return pElementConfig;
 }
 
-ElementConfigPtr ConfigHandler::importCaseConfig( const Reference< XAttributeList > & xAttribs ) throw (SAXException)
+ElementConfigPtr ConfigHandler::importCaseConfig( const Reference< XAttributeList > & xAttribs )
 {
 	ElementConfigPtr pElementConfig( new CaseElementConfig( getAttribute( xAttribs, "value" ) ) );
 	addElement( pElementConfig );
 	return pElementConfig;
 }
 
-void SAL_CALL ConfigHandler::endElement(const OUString& aName) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::endElement(const OUString& aName)
 {
 	if( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "config" ) ) )
 	{
@@ -291,19 +291,19 @@ void SAL_CALL ConfigHandler::endElement(const OUString& aName) throw( SAXExcepti
 	maElementStack.pop();
 }
 
-void SAL_CALL ConfigHandler::characters(const OUString& aChars) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::characters(const OUString& aChars)
 {
 }
 
-void SAL_CALL ConfigHandler::ignorableWhitespace(const OUString& aWhitespaces) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::ignorableWhitespace(const OUString& aWhitespaces)
 {
 }
 
-void SAL_CALL ConfigHandler::processingInstruction(const OUString& aTarget, const OUString& aData) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::processingInstruction(const OUString& aTarget, const OUString& aData)
 {
 }
 
-void SAL_CALL ConfigHandler::setDocumentLocator(const Reference< XLocator > & xLocator) throw( SAXException, RuntimeException )
+void SAL_CALL ConfigHandler::setDocumentLocator(const Reference< XLocator > & xLocator)
 {
 }
 

@@ -250,36 +250,32 @@ public:
 	virtual 								~SVGWriter();
 
 	// XInterface
-	virtual NMSP_UNO::Any SAL_CALL			queryInterface( const NMSP_UNO::Type & rType ) throw( NMSP_UNO::RuntimeException );
+	virtual NMSP_UNO::Any SAL_CALL			queryInterface( const NMSP_UNO::Type & rType );
     virtual void SAL_CALL					acquire() throw();
     virtual void SAL_CALL					release() throw();
 
 	// XSVGWriter
 	virtual void SAL_CALL					write( const REF( NMSP_SAX::XDocumentHandler )& rxDocHandler,
-												   const SEQ( sal_Int8 )& rMtfSeq ) throw( NMSP_UNO::RuntimeException );
+												   const SEQ( sal_Int8 )& rMtfSeq );
 
     // ::com::sun::star::lang::XInitialization
-	void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 };
 
-::rtl::OUString SVGWriter_getImplementationName ()
-	throw ( ::com::sun::star::uno::RuntimeException );
+::rtl::OUString SVGWriter_getImplementationName ();
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL SVGWriter_supportsService( const ::rtl::OUString& ServiceName )
-	throw ( ::com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL SVGWriter_supportsService( const ::rtl::OUString& ServiceName );
 
 // -----------------------------------------------------------------------------
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGWriter_getSupportedServiceNames(  )
-	throw ( ::com::sun::star::uno::RuntimeException );
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGWriter_getSupportedServiceNames(  );
 
 // -----------------------------------------------------------------------------
 
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
-	SAL_CALL SVGWriter_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr)
-		throw ( ::com::sun::star::uno::Exception );
+	SAL_CALL SVGWriter_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 
 #endif

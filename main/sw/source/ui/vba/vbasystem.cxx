@@ -74,7 +74,7 @@ SwVbaSystem::~SwVbaSystem()
 }
 
 sal_Int32 SAL_CALL
-SwVbaSystem::getCursor() throw (uno::RuntimeException)
+SwVbaSystem::getCursor()
 {
     sal_Int32 nPointerStyle =  getPointerStyle( getCurrentWordDoc(mxContext) );
 
@@ -94,7 +94,7 @@ SwVbaSystem::getCursor() throw (uno::RuntimeException)
 }
 
 void SAL_CALL
-SwVbaSystem::setCursor( sal_Int32 _cursor ) throw (uno::RuntimeException)
+SwVbaSystem::setCursor( sal_Int32 _cursor )
 {
     try
     {
@@ -140,7 +140,7 @@ SwVbaSystem::setCursor( sal_Int32 _cursor ) throw (uno::RuntimeException)
 }
 
 uno::Any SAL_CALL
-SwVbaSystem::PrivateProfileString( const rtl::OUString& rFilename, const rtl::OUString& rSection, const rtl::OUString& rKey ) throw ( uno::RuntimeException )
+SwVbaSystem::PrivateProfileString( const rtl::OUString& rFilename, const rtl::OUString& rSection, const rtl::OUString& rKey )
 {
     if( rFilename.getLength() == 0 )
         throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Failed to access document from shell" ) ), uno::Reference< uno::XInterface >() );

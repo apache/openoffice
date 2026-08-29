@@ -1288,42 +1288,36 @@ public:
     ~ImplementationRegistration();
 
 	// XServiceInfo
-	OUString 						SAL_CALL getImplementationName() throw(RuntimeException);
-    sal_Bool 						SAL_CALL supportsService(const OUString& ServiceName) throw(RuntimeException);
-    Sequence< OUString > 			SAL_CALL getSupportedServiceNames(void) throw(RuntimeException);
+	OUString 						SAL_CALL getImplementationName();
+    sal_Bool 						SAL_CALL supportsService(const OUString& ServiceName);
+    Sequence< OUString > 			SAL_CALL getSupportedServiceNames(void);
 
 	// XImplementationRegistration
     virtual void SAL_CALL registerImplementation(
 		const OUString& implementationLoader,
 		const OUString& location,
-		const Reference < XSimpleRegistry > & xReg)
-		throw(	CannotRegisterImplementationException, RuntimeException );
+		const Reference < XSimpleRegistry > & xReg);
 
     virtual sal_Bool SAL_CALL revokeImplementation(
 		const OUString& location,
-		const Reference < XSimpleRegistry >& xReg)
-		throw( RuntimeException );
+		const Reference < XSimpleRegistry >& xReg);
 
     virtual Sequence< OUString > SAL_CALL getImplementations(
 		const OUString& implementationLoader,
-		const OUString& location)
-		throw( RuntimeException );
+		const OUString& location);
     virtual Sequence< OUString > SAL_CALL checkInstantiation(
-		const OUString& implementationName)
-		throw( RuntimeException );
+		const OUString& implementationName);
 
 	// XImplementationRegistration2
     virtual void SAL_CALL registerImplementationWithLocation(
 		const OUString& implementationLoader,
 		const OUString& location,
         const OUString& registeredLocation,
-		const Reference < XSimpleRegistry > & xReg)
-		throw(	CannotRegisterImplementationException, RuntimeException );
+		const Reference < XSimpleRegistry > & xReg);
 
     // XInitialization
     virtual void SAL_CALL initialize(
-		const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-		throw(	::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 private: // helper methods
     void prepareRegister(
@@ -1378,13 +1372,13 @@ ImplementationRegistration::~ImplementationRegistration()
 
 
 // XServiceInfo
-OUString ImplementationRegistration::getImplementationName() throw(RuntimeException)
+OUString ImplementationRegistration::getImplementationName()
 {
 	return stoc_bootstrap::impreg_getImplementationName();
 }
 
 // XServiceInfo
-sal_Bool ImplementationRegistration::supportsService(const OUString& ServiceName) throw(RuntimeException)
+sal_Bool ImplementationRegistration::supportsService(const OUString& ServiceName)
 {
 	Sequence< OUString > aSNL = getSupportedServiceNames();
 	const OUString * pArray = aSNL.getConstArray();
@@ -1395,7 +1389,7 @@ sal_Bool ImplementationRegistration::supportsService(const OUString& ServiceName
 }
 
 // XServiceInfo
-Sequence< OUString > ImplementationRegistration::getSupportedServiceNames(void) throw(RuntimeException)
+Sequence< OUString > ImplementationRegistration::getSupportedServiceNames(void)
 {
 	return stoc_bootstrap::impreg_getSupportedServiceNames();
 }
@@ -1429,7 +1423,6 @@ Reference< XSimpleRegistry > ImplementationRegistration::getRegistryFromServiceM
 //
 void ImplementationRegistration::initialize(
 	const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArgs )
-	throw(	::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 
 	if( aArgs.getLength() != 4 ) {
@@ -1528,7 +1521,6 @@ void ImplementationRegistration::registerImplementationWithLocation(
 	const OUString& locationUrl,
     const OUString& registeredLocationUrl,
 	const Reference < XSimpleRegistry > & xReg)
-	throw( CannotRegisterImplementationException, RuntimeException )
 {
     prepareRegister(
         implementationLoaderUrl, locationUrl, registeredLocationUrl, xReg);
@@ -1635,7 +1627,6 @@ void ImplementationRegistration::registerImplementation(
 	const OUString& implementationLoaderUrl,
 	const OUString& locationUrl,
 	const Reference < XSimpleRegistry > & xReg)
-	throw( CannotRegisterImplementationException, RuntimeException )
 {
     prepareRegister(implementationLoaderUrl, locationUrl, locationUrl, xReg);
 }
@@ -1646,7 +1637,6 @@ void ImplementationRegistration::registerImplementation(
 //
 sal_Bool ImplementationRegistration::revokeImplementation(const OUString& location,
 													  const Reference < XSimpleRegistry >& xReg)
-	throw ( RuntimeException )
 {
 	sal_Bool ret = sal_False;
 
@@ -1695,7 +1685,6 @@ sal_Bool ImplementationRegistration::revokeImplementation(const OUString& locati
 Sequence< OUString > ImplementationRegistration::getImplementations(
 	const OUString & implementationLoaderUrl,
 	const OUString & locationUrl)
-	throw ( RuntimeException )
 {
 	OUString implLoaderUrl(implementationLoaderUrl);
 	OUString activatorName;
@@ -1777,7 +1766,6 @@ Sequence< OUString > ImplementationRegistration::getImplementations(
 // virtual function checkInstantiation of XImplementationRegistration
 //
 Sequence< OUString > ImplementationRegistration::checkInstantiation(const OUString&)
-	throw ( RuntimeException )
 {
 	OSL_ENSURE( sal_False, "ImplementationRegistration::checkInstantiation not implemented" );
 	return Sequence<OUString>();

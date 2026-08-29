@@ -54,7 +54,6 @@ void ExceptionTreeNode::clearChildren() {
 }
 
 void ExceptionTree::add(rtl::OString const & name, TypeManager const & manager)
-    throw( CannotDumpException )
 {
     typedef std::vector< rtl::OString > List;
     List list;

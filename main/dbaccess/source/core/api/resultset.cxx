@@ -147,7 +147,7 @@ OResultSet::~OResultSet()
 
 // com::sun::star::lang::XTypeProvider
 //--------------------------------------------------------------------------
-Sequence< Type > OResultSet::getTypes() throw (RuntimeException)
+Sequence< Type > OResultSet::getTypes()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getTypes" );
 	OTypeCollection aTypes(::getCppuType( (const Reference< XPropertySet > *)0 ),
@@ -157,7 +157,7 @@ Sequence< Type > OResultSet::getTypes() throw (RuntimeException)
 }
 
 //--------------------------------------------------------------------------
-Sequence< sal_Int8 > OResultSet::getImplementationId() throw (RuntimeException)
+Sequence< sal_Int8 > OResultSet::getImplementationId()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getImplementationId" );
 	static OImplementationId * pId = 0;
@@ -175,7 +175,7 @@ Sequence< sal_Int8 > OResultSet::getImplementationId() throw (RuntimeException)
 
 // com::sun::star::uno::XInterface
 //--------------------------------------------------------------------------
-Any OResultSet::queryInterface( const Type & rType ) throw (RuntimeException)
+Any OResultSet::queryInterface( const Type & rType )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::queryInterface" );
 	Any aIface = OResultSetBase::queryInterface( rType );
@@ -224,7 +224,7 @@ void OResultSet::disposing()
 
 // XCloseable
 //------------------------------------------------------------------------------
-void OResultSet::close(void) throw( SQLException, RuntimeException )
+void OResultSet::close(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::close" );
 	{
@@ -236,21 +236,21 @@ void OResultSet::close(void) throw( SQLException, RuntimeException )
 
 // XServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString OResultSet::getImplementationName(  ) throw(RuntimeException)
+rtl::OUString OResultSet::getImplementationName(  )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getImplementationName" );
 	return rtl::OUString::createFromAscii("com.sun.star.sdb.OResultSet");
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+sal_Bool OResultSet::supportsService( const ::rtl::OUString& _rServiceName )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::supportsService" );
 	return ::comphelper::findValue(getSupportedServiceNames(), _rServiceName, sal_True).getLength() != 0;
 }
 
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > OResultSet::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > OResultSet::getSupportedServiceNames(  )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getSupportedServiceNames" );
 	Sequence< ::rtl::OUString > aSNS( 2 );
@@ -261,7 +261,7 @@ Sequence< ::rtl::OUString > OResultSet::getSupportedServiceNames(  ) throw (Runt
 
 // com::sun::star::beans::XPropertySet
 //------------------------------------------------------------------------------
-Reference< XPropertySetInfo > OResultSet::getPropertySetInfo() throw (RuntimeException)
+Reference< XPropertySetInfo > OResultSet::getPropertySetInfo()
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getPropertySetInfo" );
 	return createPropertySetInfo( getInfoHelper() ) ;
@@ -291,7 +291,7 @@ Reference< XPropertySetInfo > OResultSet::getPropertySetInfo() throw (RuntimeExc
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::convertFastPropertyValue(Any & rConvertedValue, Any & rOldValue, sal_Int32 nHandle, const Any& rValue ) throw( IllegalArgumentException  )
+sal_Bool OResultSet::convertFastPropertyValue(Any & rConvertedValue, Any & rOldValue, sal_Int32 nHandle, const Any& rValue )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::convertFastPropertyValue" );
     // be lazy ...
@@ -301,7 +301,7 @@ sal_Bool OResultSet::convertFastPropertyValue(Any & rConvertedValue, Any & rOldV
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const Any& rValue ) throw (Exception)
+void OResultSet::setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const Any& rValue )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::setFastPropertyValue_NoBroadcast" );
 	// set it for the driver result set
@@ -347,7 +347,7 @@ void OResultSet::getFastPropertyValue( Any& rValue, sal_Int32 nHandle ) const
 
 // XWarningsSupplier
 //------------------------------------------------------------------------------
-Any OResultSet::getWarnings(void) throw( SQLException, RuntimeException )
+Any OResultSet::getWarnings(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getWarnings" );
 	MutexGuard aGuard(m_aMutex);
@@ -356,7 +356,7 @@ Any OResultSet::getWarnings(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::clearWarnings(void) throw( SQLException, RuntimeException )
+void OResultSet::clearWarnings(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::clearWarnings" );
 	MutexGuard aGuard(m_aMutex);
@@ -366,7 +366,7 @@ void OResultSet::clearWarnings(void) throw( SQLException, RuntimeException )
 
 // ::com::sun::star::sdbc::XResultSetMetaDataSupplier
 //------------------------------------------------------------------------------
-Reference< XResultSetMetaData > OResultSet::getMetaData(void) throw( SQLException, RuntimeException )
+Reference< XResultSetMetaData > OResultSet::getMetaData(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getMetaData" );
 	MutexGuard aGuard(m_aMutex);
@@ -377,7 +377,7 @@ Reference< XResultSetMetaData > OResultSet::getMetaData(void) throw( SQLExceptio
 
 // ::com::sun::star::sdbc::XColumnLocate
 //------------------------------------------------------------------------------
-sal_Int32 OResultSet::findColumn(const rtl::OUString& columnName) throw( SQLException, RuntimeException )
+sal_Int32 OResultSet::findColumn(const rtl::OUString& columnName)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::findColumn" );
 	MutexGuard aGuard(m_aMutex);
@@ -413,7 +413,7 @@ namespace
 }
 // ::com::sun::star::sdbcx::XColumnsSupplier
 //------------------------------------------------------------------------------
-Reference< ::com::sun::star::container::XNameAccess > OResultSet::getColumns(void) throw( RuntimeException )
+Reference< ::com::sun::star::container::XNameAccess > OResultSet::getColumns(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getColumns" );
 	MutexGuard aGuard(m_aMutex);
@@ -485,7 +485,7 @@ Reference< ::com::sun::star::container::XNameAccess > OResultSet::getColumns(voi
 
 // ::com::sun::star::sdbc::XRow
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::wasNull(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::wasNull(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::wasNull" );
 	MutexGuard aGuard(m_aMutex);
@@ -494,7 +494,7 @@ sal_Bool OResultSet::wasNull(void) throw( SQLException, RuntimeException )
 	return m_xDelegatorRow->wasNull();
 }
 //------------------------------------------------------------------------------
-rtl::OUString OResultSet::getString(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+rtl::OUString OResultSet::getString(sal_Int32 columnIndex)
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getString" );
 	MutexGuard aGuard(m_aMutex);
@@ -503,7 +503,7 @@ rtl::OUString OResultSet::getString(sal_Int32 columnIndex) throw( SQLException, 
 	return m_xDelegatorRow->getString(columnIndex);
 }
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::getBoolean(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::getBoolean(sal_Int32 columnIndex)
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getBoolean" );
 	MutexGuard aGuard(m_aMutex);
@@ -512,7 +512,7 @@ sal_Bool OResultSet::getBoolean(sal_Int32 columnIndex) throw( SQLException, Runt
 	return m_xDelegatorRow->getBoolean(columnIndex);
 }
 //------------------------------------------------------------------------------
-sal_Int8 OResultSet::getByte(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+sal_Int8 OResultSet::getByte(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getByte" );
 	MutexGuard aGuard(m_aMutex);
@@ -521,7 +521,7 @@ sal_Int8 OResultSet::getByte(sal_Int32 columnIndex) throw( SQLException, Runtime
 	return m_xDelegatorRow->getByte(columnIndex);
 }
 //------------------------------------------------------------------------------
-sal_Int16 OResultSet::getShort(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+sal_Int16 OResultSet::getShort(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getShort" );
 	MutexGuard aGuard(m_aMutex);
@@ -530,7 +530,7 @@ sal_Int16 OResultSet::getShort(sal_Int32 columnIndex) throw( SQLException, Runti
 	return m_xDelegatorRow->getShort(columnIndex);
 }
 //------------------------------------------------------------------------------
-sal_Int32 OResultSet::getInt(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+sal_Int32 OResultSet::getInt(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getInt" );
 	MutexGuard aGuard(m_aMutex);
@@ -539,7 +539,7 @@ sal_Int32 OResultSet::getInt(sal_Int32 columnIndex) throw( SQLException, Runtime
 	return m_xDelegatorRow->getInt(columnIndex);
 }
 //------------------------------------------------------------------------------
-sal_Int64 OResultSet::getLong(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+sal_Int64 OResultSet::getLong(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getLong" );
 	MutexGuard aGuard(m_aMutex);
@@ -548,7 +548,7 @@ sal_Int64 OResultSet::getLong(sal_Int32 columnIndex) throw( SQLException, Runtim
 	return m_xDelegatorRow->getLong(columnIndex);
 }
 //------------------------------------------------------------------------------
-float OResultSet::getFloat(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+float OResultSet::getFloat(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getFloat" );
 	MutexGuard aGuard(m_aMutex);
@@ -557,7 +557,7 @@ float OResultSet::getFloat(sal_Int32 columnIndex) throw( SQLException, RuntimeEx
 	return m_xDelegatorRow->getFloat(columnIndex);
 }
 //------------------------------------------------------------------------------
-double OResultSet::getDouble(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+double OResultSet::getDouble(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getDouble" );
 	MutexGuard aGuard(m_aMutex);
@@ -566,7 +566,7 @@ double OResultSet::getDouble(sal_Int32 columnIndex) throw( SQLException, Runtime
 	return m_xDelegatorRow->getDouble(columnIndex);
 }
 //------------------------------------------------------------------------------
-Sequence< sal_Int8 > OResultSet::getBytes(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+Sequence< sal_Int8 > OResultSet::getBytes(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getBytes" );
 	MutexGuard aGuard(m_aMutex);
@@ -575,7 +575,7 @@ Sequence< sal_Int8 > OResultSet::getBytes(sal_Int32 columnIndex) throw( SQLExcep
 	return m_xDelegatorRow->getBytes(columnIndex);
 }
 //------------------------------------------------------------------------------
-::com::sun::star::util::Date OResultSet::getDate(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+::com::sun::star::util::Date OResultSet::getDate(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getDate" );
 	MutexGuard aGuard(m_aMutex);
@@ -584,7 +584,7 @@ Sequence< sal_Int8 > OResultSet::getBytes(sal_Int32 columnIndex) throw( SQLExcep
 	return m_xDelegatorRow->getDate(columnIndex);
 }
 //------------------------------------------------------------------------------
-::com::sun::star::util::Time OResultSet::getTime(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+::com::sun::star::util::Time OResultSet::getTime(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getTime" );
 	MutexGuard aGuard(m_aMutex);
@@ -593,7 +593,7 @@ Sequence< sal_Int8 > OResultSet::getBytes(sal_Int32 columnIndex) throw( SQLExcep
 	return m_xDelegatorRow->getTime(columnIndex);
 }
 //------------------------------------------------------------------------------
-::com::sun::star::util::DateTime OResultSet::getTimestamp(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+::com::sun::star::util::DateTime OResultSet::getTimestamp(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getTimestamp" );
 	MutexGuard aGuard(m_aMutex);
@@ -602,7 +602,7 @@ Sequence< sal_Int8 > OResultSet::getBytes(sal_Int32 columnIndex) throw( SQLExcep
 	return m_xDelegatorRow->getTimestamp(columnIndex);
 }
 //------------------------------------------------------------------------------
-Reference< ::com::sun::star::io::XInputStream >  OResultSet::getBinaryStream(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+Reference< ::com::sun::star::io::XInputStream >  OResultSet::getBinaryStream(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getBinaryStream" );
 	MutexGuard aGuard(m_aMutex);
@@ -611,7 +611,7 @@ Reference< ::com::sun::star::io::XInputStream >  OResultSet::getBinaryStream(sal
 	return m_xDelegatorRow->getBinaryStream(columnIndex);
 }
 //------------------------------------------------------------------------------
-Reference< ::com::sun::star::io::XInputStream >  OResultSet::getCharacterStream(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+Reference< ::com::sun::star::io::XInputStream >  OResultSet::getCharacterStream(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getCharacterStream" );
 	MutexGuard aGuard(m_aMutex);
@@ -620,7 +620,7 @@ Reference< ::com::sun::star::io::XInputStream >  OResultSet::getCharacterStream(
 	return m_xDelegatorRow->getCharacterStream(columnIndex);
 }
 //------------------------------------------------------------------------------
-Any OResultSet::getObject(sal_Int32 columnIndex, const Reference< ::com::sun::star::container::XNameAccess > & typeMap) throw( SQLException, RuntimeException )
+Any OResultSet::getObject(sal_Int32 columnIndex, const Reference< ::com::sun::star::container::XNameAccess > & typeMap)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getObject" );
 	MutexGuard aGuard(m_aMutex);
@@ -629,7 +629,7 @@ Any OResultSet::getObject(sal_Int32 columnIndex, const Reference< ::com::sun::st
 	return m_xDelegatorRow->getObject(columnIndex, typeMap);
 }
 //------------------------------------------------------------------------------
-Reference< XRef >  OResultSet::getRef(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+Reference< XRef >  OResultSet::getRef(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getRef" );
 	MutexGuard aGuard(m_aMutex);
@@ -638,7 +638,7 @@ Reference< XRef >  OResultSet::getRef(sal_Int32 columnIndex) throw( SQLException
 	return m_xDelegatorRow->getRef(columnIndex);
 }
 //------------------------------------------------------------------------------
-Reference< XBlob >  OResultSet::getBlob(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+Reference< XBlob >  OResultSet::getBlob(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getBlob" );
 	MutexGuard aGuard(m_aMutex);
@@ -647,7 +647,7 @@ Reference< XBlob >  OResultSet::getBlob(sal_Int32 columnIndex) throw( SQLExcepti
 	return m_xDelegatorRow->getBlob(columnIndex);
 }
 //------------------------------------------------------------------------------
-Reference< XClob >  OResultSet::getClob(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+Reference< XClob >  OResultSet::getClob(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getClob" );
 	MutexGuard aGuard(m_aMutex);
@@ -656,7 +656,7 @@ Reference< XClob >  OResultSet::getClob(sal_Int32 columnIndex) throw( SQLExcepti
 	return m_xDelegatorRow->getClob(columnIndex);
 }
 //------------------------------------------------------------------------------
-Reference< XArray >  OResultSet::getArray(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+Reference< XArray >  OResultSet::getArray(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getArray" );
 	MutexGuard aGuard(m_aMutex);
@@ -667,7 +667,7 @@ Reference< XArray >  OResultSet::getArray(sal_Int32 columnIndex) throw( SQLExcep
 
 // ::com::sun::star::sdbc::XRowUpdate
 //------------------------------------------------------------------------------
-void OResultSet::updateNull(sal_Int32 columnIndex) throw( SQLException, RuntimeException )
+void OResultSet::updateNull(sal_Int32 columnIndex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateNull" );
 	MutexGuard aGuard(m_aMutex);
@@ -679,7 +679,7 @@ void OResultSet::updateNull(sal_Int32 columnIndex) throw( SQLException, RuntimeE
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::updateBoolean(sal_Int32 columnIndex, sal_Bool x) throw( SQLException, RuntimeException )
+void OResultSet::updateBoolean(sal_Int32 columnIndex, sal_Bool x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateBoolean" );
 	MutexGuard aGuard(m_aMutex);
@@ -690,7 +690,7 @@ void OResultSet::updateBoolean(sal_Int32 columnIndex, sal_Bool x) throw( SQLExce
 	m_xDelegatorRowUpdate->updateBoolean(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateByte(sal_Int32 columnIndex, sal_Int8 x) throw( SQLException, RuntimeException )
+void OResultSet::updateByte(sal_Int32 columnIndex, sal_Int8 x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateByte" );
 	MutexGuard aGuard(m_aMutex);
@@ -701,7 +701,7 @@ void OResultSet::updateByte(sal_Int32 columnIndex, sal_Int8 x) throw( SQLExcepti
 	m_xDelegatorRowUpdate->updateByte(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateShort(sal_Int32 columnIndex, sal_Int16 x) throw( SQLException, RuntimeException )
+void OResultSet::updateShort(sal_Int32 columnIndex, sal_Int16 x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateShort" );
 		MutexGuard aGuard(m_aMutex);
@@ -712,7 +712,7 @@ void OResultSet::updateShort(sal_Int32 columnIndex, sal_Int16 x) throw( SQLExcep
 	m_xDelegatorRowUpdate->updateShort(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateInt(sal_Int32 columnIndex, sal_Int32 x) throw( SQLException, RuntimeException )
+void OResultSet::updateInt(sal_Int32 columnIndex, sal_Int32 x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateInt" );
 	MutexGuard aGuard(m_aMutex);
@@ -723,7 +723,7 @@ void OResultSet::updateInt(sal_Int32 columnIndex, sal_Int32 x) throw( SQLExcepti
 	m_xDelegatorRowUpdate->updateInt(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateLong(sal_Int32 columnIndex, sal_Int64 x) throw( SQLException, RuntimeException )
+void OResultSet::updateLong(sal_Int32 columnIndex, sal_Int64 x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateLong" );
 	MutexGuard aGuard(m_aMutex);
@@ -734,7 +734,7 @@ void OResultSet::updateLong(sal_Int32 columnIndex, sal_Int64 x) throw( SQLExcept
 	m_xDelegatorRowUpdate->updateLong(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateFloat(sal_Int32 columnIndex, float x) throw( SQLException, RuntimeException )
+void OResultSet::updateFloat(sal_Int32 columnIndex, float x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateFloat" );
 	MutexGuard aGuard(m_aMutex);
@@ -745,7 +745,7 @@ void OResultSet::updateFloat(sal_Int32 columnIndex, float x) throw( SQLException
 	m_xDelegatorRowUpdate->updateFloat(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateDouble(sal_Int32 columnIndex, double x) throw( SQLException, RuntimeException )
+void OResultSet::updateDouble(sal_Int32 columnIndex, double x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateDouble" );
 	MutexGuard aGuard(m_aMutex);
@@ -756,7 +756,7 @@ void OResultSet::updateDouble(sal_Int32 columnIndex, double x) throw( SQLExcepti
 	m_xDelegatorRowUpdate->updateDouble(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateString(sal_Int32 columnIndex, const rtl::OUString& x) throw( SQLException, RuntimeException )
+void OResultSet::updateString(sal_Int32 columnIndex, const rtl::OUString& x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateString" );
 	MutexGuard aGuard(m_aMutex);
@@ -767,7 +767,7 @@ void OResultSet::updateString(sal_Int32 columnIndex, const rtl::OUString& x) thr
 	m_xDelegatorRowUpdate->updateString(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateBytes(sal_Int32 columnIndex, const Sequence< sal_Int8 >& x) throw( SQLException, RuntimeException )
+void OResultSet::updateBytes(sal_Int32 columnIndex, const Sequence< sal_Int8 >& x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateBytes" );
 	MutexGuard aGuard(m_aMutex);
@@ -778,7 +778,7 @@ void OResultSet::updateBytes(sal_Int32 columnIndex, const Sequence< sal_Int8 >& 
 	m_xDelegatorRowUpdate->updateBytes(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateDate(sal_Int32 columnIndex, const ::com::sun::star::util::Date& x) throw( SQLException, RuntimeException )
+void OResultSet::updateDate(sal_Int32 columnIndex, const ::com::sun::star::util::Date& x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateDate" );
 	MutexGuard aGuard(m_aMutex);
@@ -789,7 +789,7 @@ void OResultSet::updateDate(sal_Int32 columnIndex, const ::com::sun::star::util:
 	m_xDelegatorRowUpdate->updateDate(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateTime(sal_Int32 columnIndex, const ::com::sun::star::util::Time& x) throw( SQLException, RuntimeException )
+void OResultSet::updateTime(sal_Int32 columnIndex, const ::com::sun::star::util::Time& x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateTime" );
 	MutexGuard aGuard(m_aMutex);
@@ -800,7 +800,7 @@ void OResultSet::updateTime(sal_Int32 columnIndex, const ::com::sun::star::util:
 	m_xDelegatorRowUpdate->updateTime(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateTimestamp(sal_Int32 columnIndex, const ::com::sun::star::util::DateTime& x) throw( SQLException, RuntimeException )
+void OResultSet::updateTimestamp(sal_Int32 columnIndex, const ::com::sun::star::util::DateTime& x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateTimestamp" );
 	MutexGuard aGuard(m_aMutex);
@@ -811,7 +811,7 @@ void OResultSet::updateTimestamp(sal_Int32 columnIndex, const ::com::sun::star::
 	m_xDelegatorRowUpdate->updateTimestamp(columnIndex, x);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateBinaryStream(sal_Int32 columnIndex, const Reference< ::com::sun::star::io::XInputStream > & x, sal_Int32 length) throw( SQLException, RuntimeException )
+void OResultSet::updateBinaryStream(sal_Int32 columnIndex, const Reference< ::com::sun::star::io::XInputStream > & x, sal_Int32 length)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateBinaryStream" );
 	MutexGuard aGuard(m_aMutex);
@@ -822,7 +822,7 @@ void OResultSet::updateBinaryStream(sal_Int32 columnIndex, const Reference< ::co
 	m_xDelegatorRowUpdate->updateBinaryStream(columnIndex, x, length);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateCharacterStream(sal_Int32 columnIndex, const Reference< ::com::sun::star::io::XInputStream > & x, sal_Int32 length) throw( SQLException, RuntimeException )
+void OResultSet::updateCharacterStream(sal_Int32 columnIndex, const Reference< ::com::sun::star::io::XInputStream > & x, sal_Int32 length)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateCharacterStream" );
 	MutexGuard aGuard(m_aMutex);
@@ -833,7 +833,7 @@ void OResultSet::updateCharacterStream(sal_Int32 columnIndex, const Reference< :
 	m_xDelegatorRowUpdate->updateCharacterStream(columnIndex, x, length);
 }
 //------------------------------------------------------------------------------
-void OResultSet::updateNumericObject(sal_Int32 columnIndex, const Any& x, sal_Int32 scale) throw( SQLException, RuntimeException )
+void OResultSet::updateNumericObject(sal_Int32 columnIndex, const Any& x, sal_Int32 scale)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateNumericObject" );
 	MutexGuard aGuard(m_aMutex);
@@ -845,7 +845,7 @@ void OResultSet::updateNumericObject(sal_Int32 columnIndex, const Any& x, sal_In
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::updateObject(sal_Int32 columnIndex, const Any& x) throw( SQLException, RuntimeException )
+void OResultSet::updateObject(sal_Int32 columnIndex, const Any& x)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateObject" );
 	MutexGuard aGuard(m_aMutex);
@@ -858,7 +858,7 @@ void OResultSet::updateObject(sal_Int32 columnIndex, const Any& x) throw( SQLExc
 
 // ::com::sun::star::sdbc::XResultSet
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::next(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::next(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::next" );
 	MutexGuard aGuard(m_aMutex);
@@ -868,7 +868,7 @@ sal_Bool OResultSet::next(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::isBeforeFirst(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::isBeforeFirst(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::isBeforeFirst" );
 	MutexGuard aGuard(m_aMutex);
@@ -878,7 +878,7 @@ sal_Bool OResultSet::isBeforeFirst(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::isAfterLast(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::isAfterLast(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::isAfterLast" );
 	MutexGuard aGuard(m_aMutex);
@@ -888,7 +888,7 @@ sal_Bool OResultSet::isAfterLast(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::isFirst(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::isFirst(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::isFirst" );
 	MutexGuard aGuard(m_aMutex);
@@ -898,7 +898,7 @@ sal_Bool OResultSet::isFirst(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::isLast(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::isLast(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::isLast" );
 	MutexGuard aGuard(m_aMutex);
@@ -908,7 +908,7 @@ sal_Bool OResultSet::isLast(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::beforeFirst(void) throw( SQLException, RuntimeException )
+void OResultSet::beforeFirst(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::beforeFirst" );
 	MutexGuard aGuard(m_aMutex);
@@ -918,7 +918,7 @@ void OResultSet::beforeFirst(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::afterLast(void) throw( SQLException, RuntimeException )
+void OResultSet::afterLast(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::afterLast" );
 	MutexGuard aGuard(m_aMutex);
@@ -928,7 +928,7 @@ void OResultSet::afterLast(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::first(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::first(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::first" );
 	MutexGuard aGuard(m_aMutex);
@@ -938,7 +938,7 @@ sal_Bool OResultSet::first(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::last(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::last(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::last" );
 	MutexGuard aGuard(m_aMutex);
@@ -948,7 +948,7 @@ sal_Bool OResultSet::last(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Int32 OResultSet::getRow(void) throw( SQLException, RuntimeException )
+sal_Int32 OResultSet::getRow(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getRow" );
 	MutexGuard aGuard(m_aMutex);
@@ -958,7 +958,7 @@ sal_Int32 OResultSet::getRow(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::absolute(sal_Int32 row) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::absolute(sal_Int32 row)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::absolute" );
 	MutexGuard aGuard(m_aMutex);
@@ -968,7 +968,7 @@ sal_Bool OResultSet::absolute(sal_Int32 row) throw( SQLException, RuntimeExcepti
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::relative(sal_Int32 rows) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::relative(sal_Int32 rows)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::relative" );
 	MutexGuard aGuard(m_aMutex);
@@ -978,7 +978,7 @@ sal_Bool OResultSet::relative(sal_Int32 rows) throw( SQLException, RuntimeExcept
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::previous(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::previous(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::previous" );
 	MutexGuard aGuard(m_aMutex);
@@ -988,7 +988,7 @@ sal_Bool OResultSet::previous(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::refreshRow(void) throw( SQLException, RuntimeException )
+void OResultSet::refreshRow(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::refreshRow" );
 	MutexGuard aGuard(m_aMutex);
@@ -998,7 +998,7 @@ void OResultSet::refreshRow(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::rowUpdated(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::rowUpdated(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::rowUpdated" );
 	MutexGuard aGuard(m_aMutex);
@@ -1008,7 +1008,7 @@ sal_Bool OResultSet::rowUpdated(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::rowInserted(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::rowInserted(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::rowInserted" );
 	MutexGuard aGuard(m_aMutex);
@@ -1018,7 +1018,7 @@ sal_Bool OResultSet::rowInserted(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::rowDeleted(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::rowDeleted(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::rowDeleted" );
 	MutexGuard aGuard(m_aMutex);
@@ -1028,7 +1028,7 @@ sal_Bool OResultSet::rowDeleted(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-Reference< XInterface > OResultSet::getStatement(void) throw( SQLException, RuntimeException )
+Reference< XInterface > OResultSet::getStatement(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getStatement" );
 	MutexGuard aGuard(m_aMutex);
@@ -1039,7 +1039,7 @@ Reference< XInterface > OResultSet::getStatement(void) throw( SQLException, Runt
 
 // ::com::sun::star::sdbcx::XRowLocate
 //------------------------------------------------------------------------------
-Any OResultSet::getBookmark(void) throw( SQLException, RuntimeException )
+Any OResultSet::getBookmark(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::getBookmark" );
 	MutexGuard aGuard(m_aMutex);
@@ -1051,7 +1051,7 @@ Any OResultSet::getBookmark(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::moveToBookmark(const Any& bookmark) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::moveToBookmark(const Any& bookmark)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::moveToBookmark" );
 	MutexGuard aGuard(m_aMutex);
@@ -1063,7 +1063,7 @@ sal_Bool OResultSet::moveToBookmark(const Any& bookmark) throw( SQLException, Ru
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::moveRelativeToBookmark(const Any& bookmark, sal_Int32 rows) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::moveRelativeToBookmark(const Any& bookmark, sal_Int32 rows)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::moveRelativeToBookmark" );
 	MutexGuard aGuard(m_aMutex);
@@ -1075,7 +1075,7 @@ sal_Bool OResultSet::moveRelativeToBookmark(const Any& bookmark, sal_Int32 rows)
 }
 
 //------------------------------------------------------------------------------
-sal_Int32 OResultSet::compareBookmarks(const Any& _first, const Any& _second) throw( SQLException, RuntimeException )
+sal_Int32 OResultSet::compareBookmarks(const Any& _first, const Any& _second)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::compareBookmarks" );
 	MutexGuard aGuard(m_aMutex);
@@ -1087,7 +1087,7 @@ sal_Int32 OResultSet::compareBookmarks(const Any& _first, const Any& _second) th
 }
 
 //------------------------------------------------------------------------------
-sal_Bool OResultSet::hasOrderedBookmarks(void) throw( SQLException, RuntimeException )
+sal_Bool OResultSet::hasOrderedBookmarks(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::hasOrderedBookmarks" );
 	MutexGuard aGuard(m_aMutex);
@@ -1099,7 +1099,7 @@ sal_Bool OResultSet::hasOrderedBookmarks(void) throw( SQLException, RuntimeExcep
 }
 
 //------------------------------------------------------------------------------
-sal_Int32 OResultSet::hashBookmark(const Any& bookmark) throw( SQLException, RuntimeException )
+sal_Int32 OResultSet::hashBookmark(const Any& bookmark)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::hashBookmark" );
 	MutexGuard aGuard(m_aMutex);
@@ -1112,7 +1112,7 @@ sal_Int32 OResultSet::hashBookmark(const Any& bookmark) throw( SQLException, Run
 
 // ::com::sun::star::sdbc::XResultSetUpdate
 //------------------------------------------------------------------------------
-void OResultSet::insertRow(void) throw( SQLException, RuntimeException )
+void OResultSet::insertRow(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::insertRow" );
 	MutexGuard aGuard(m_aMutex);
@@ -1124,7 +1124,7 @@ void OResultSet::insertRow(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::updateRow(void) throw( SQLException, RuntimeException )
+void OResultSet::updateRow(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::updateRow" );
 	MutexGuard aGuard(m_aMutex);
@@ -1136,7 +1136,7 @@ void OResultSet::updateRow(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::deleteRow(void) throw( SQLException, RuntimeException )
+void OResultSet::deleteRow(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::deleteRow" );
 	MutexGuard aGuard(m_aMutex);
@@ -1148,7 +1148,7 @@ void OResultSet::deleteRow(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::cancelRowUpdates(void) throw( SQLException, RuntimeException )
+void OResultSet::cancelRowUpdates(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::cancelRowUpdates" );
 	MutexGuard aGuard(m_aMutex);
@@ -1160,7 +1160,7 @@ void OResultSet::cancelRowUpdates(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::moveToInsertRow(void) throw( SQLException, RuntimeException )
+void OResultSet::moveToInsertRow(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::moveToInsertRow" );
 	MutexGuard aGuard(m_aMutex);
@@ -1172,7 +1172,7 @@ void OResultSet::moveToInsertRow(void) throw( SQLException, RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void OResultSet::moveToCurrentRow(void) throw( SQLException, RuntimeException )
+void OResultSet::moveToCurrentRow(void)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OResultSet::moveToCurrentRow" );
 	MutexGuard aGuard(m_aMutex);

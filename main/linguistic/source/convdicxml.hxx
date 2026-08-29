@@ -64,7 +64,7 @@ public:
     }
 
     // XServiceInfo (override parent method)
-    ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
+    ::rtl::OUString SAL_CALL getImplementationName();
 
     // SvXMLExport
     void _ExportAutoStyles()    {}
@@ -106,10 +106,10 @@ public:
     }
 
     // XServiceInfo (override parent method)
-    ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
+    ::rtl::OUString SAL_CALL getImplementationName();
 
-    virtual void SAL_CALL startDocument(void) throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL endDocument(void) throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL startDocument(void);
+    virtual void SAL_CALL endDocument(void);
 
     virtual SvXMLImportContext * CreateContext(
         sal_uInt16 nPrefix, const rtl::OUString &rLocalName,

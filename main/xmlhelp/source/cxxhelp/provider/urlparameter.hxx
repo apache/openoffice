@@ -118,8 +118,7 @@ namespace chelp {
 	public:
 
 		URLParameter( const rtl::OUString& aURL,
-					  Databases* pDatabases )
-			throw( com::sun::star::ucb::IllegalIdentifierException );
+					  Databases* pDatabases );
 
 		bool isPicture() 		{ return m_aModule.compareToAscii("picture") == 0; }
 		bool isActive()         { return m_aActive.getLength() > 0 && m_aActive.compareToAscii( "true" ) == 0; }
@@ -236,7 +235,7 @@ namespace chelp {
 
 		void readHelpDataFile();
 
-		void parse() throw( com::sun::star::ucb::IllegalIdentifierException );
+		void parse();
 
 		bool scheme();
 

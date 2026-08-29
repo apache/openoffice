@@ -47,10 +47,10 @@ public:
 	UnoControlModel*	Clone() const { return new UnoControlContainerModel( *this ); }
 
 	// ::com::sun::star::beans::XMultiPropertySet
-	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
 	// ::com::sun::star::io::XPersistObject
-    ::rtl::OUString SAL_CALL getServiceName() throw(::com::sun::star::uno::RuntimeException);
+    ::rtl::OUString SAL_CALL getServiceName();
 
 	// ::com::sun::star::lang::XServiceInfo
 	DECLIMPL_SERVICEINFO_DERIVED( UnoControlContainerModel, UnoControlModel, szServiceName2_UnoControlContainerModel )

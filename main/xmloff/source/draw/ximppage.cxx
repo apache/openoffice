@@ -563,12 +563,12 @@ public:
 	NavigationOrderAccess( std::vector< Reference< XShape > >& rShapes );
 
 	// XIndexAccess
-    virtual sal_Int32 SAL_CALL getCount(  ) throw (RuntimeException);
-    virtual Any SAL_CALL getByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException);
+    virtual sal_Int32 SAL_CALL getCount(  );
+    virtual Any SAL_CALL getByIndex( sal_Int32 Index );
 
     // XElementAccess
-    virtual Type SAL_CALL getElementType(  ) throw (RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  ) throw (RuntimeException);
+    virtual Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
 
 private:
 	std::vector< Reference< XShape > > maShapes;
@@ -580,12 +580,12 @@ NavigationOrderAccess::NavigationOrderAccess( std::vector< Reference< XShape > >
 }
 
 // XIndexAccess
-sal_Int32 SAL_CALL NavigationOrderAccess::getCount(  ) throw (RuntimeException)
+sal_Int32 SAL_CALL NavigationOrderAccess::getCount(  )
 {
 	return static_cast< sal_Int32 >( maShapes.size() );
 }
 
-Any SAL_CALL NavigationOrderAccess::getByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+Any SAL_CALL NavigationOrderAccess::getByIndex( sal_Int32 Index )
 {
 	if( (Index < 0) || (Index > getCount()) )
 		throw IndexOutOfBoundsException();
@@ -594,12 +594,12 @@ Any SAL_CALL NavigationOrderAccess::getByIndex( sal_Int32 Index ) throw (IndexOu
 }
 
 // XElementAccess
-Type SAL_CALL NavigationOrderAccess::getElementType(  ) throw (RuntimeException)
+Type SAL_CALL NavigationOrderAccess::getElementType(  )
 {
 	return XShape::static_type();
 }
 
-sal_Bool SAL_CALL NavigationOrderAccess::hasElements(  ) throw (RuntimeException)
+sal_Bool SAL_CALL NavigationOrderAccess::hasElements(  )
 {
 	return maShapes.empty() ? sal_False : sal_True;
 }

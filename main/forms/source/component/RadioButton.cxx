@@ -53,13 +53,13 @@ using namespace ::com::sun::star::form::binding;
 
 //==================================================================
 //------------------------------------------------------------------------------
-InterfaceRef SAL_CALL ORadioButtonControl_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory) throw (RuntimeException)
+InterfaceRef SAL_CALL ORadioButtonControl_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory)
 {
 	return *(new ORadioButtonControl(_rxFactory));
 }
 
 //------------------------------------------------------------------------------
-StringSequence SAL_CALL	ORadioButtonControl::getSupportedServiceNames() throw(RuntimeException)
+StringSequence SAL_CALL	ORadioButtonControl::getSupportedServiceNames()
 {
 	StringSequence aSupported = OBoundControl::getSupportedServiceNames();
 	aSupported.realloc(aSupported.getLength() + 1);
@@ -77,7 +77,7 @@ ORadioButtonControl::ORadioButtonControl(const Reference<XMultiServiceFactory>& 
 }
 
 //------------------------------------------------------------------
-void SAL_CALL ORadioButtonControl::createPeer(const Reference<starawt::XToolkit>& _rxToolkit, const Reference<starawt::XWindowPeer>& _rxParent) throw (RuntimeException)
+void SAL_CALL ORadioButtonControl::createPeer(const Reference<starawt::XToolkit>& _rxToolkit, const Reference<starawt::XWindowPeer>& _rxParent)
 {
 	OBoundControl::createPeer(_rxToolkit, _rxParent);
 
@@ -98,7 +98,7 @@ void SAL_CALL ORadioButtonControl::createPeer(const Reference<starawt::XToolkit>
 }
 
 //==================================================================
-InterfaceRef SAL_CALL ORadioButtonModel_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory) throw (RuntimeException)
+InterfaceRef SAL_CALL ORadioButtonModel_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory)
 {
 	return *(new ORadioButtonModel(_rxFactory));
 }
@@ -136,7 +136,7 @@ IMPLEMENT_DEFAULT_CLONING( ORadioButtonModel )
 
 // XServiceInfo
 //------------------------------------------------------------------------------
-StringSequence SAL_CALL	ORadioButtonModel::getSupportedServiceNames() throw(RuntimeException)
+StringSequence SAL_CALL	ORadioButtonModel::getSupportedServiceNames()
 {
 	StringSequence aSupported = OReferenceValueComponent::getSupportedServiceNames();
 
@@ -196,7 +196,7 @@ void ORadioButtonModel::SetSiblingPropsTo(const ::rtl::OUString& rPropName, cons
 }
 
 //------------------------------------------------------------------------------
-void ORadioButtonModel::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue) throw (Exception)
+void ORadioButtonModel::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue)
 {
 	OReferenceValueComponent::setFastPropertyValue_NoBroadcast( nHandle, rValue );
 
@@ -276,14 +276,13 @@ void ORadioButtonModel::describeFixedProperties( Sequence< Property >& _rProps )
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ORadioButtonModel::getServiceName() throw(RuntimeException)
+::rtl::OUString SAL_CALL ORadioButtonModel::getServiceName()
 {
 	return FRM_COMPONENT_RADIOBUTTON;	// old (non-sun) name for compatibility !
 }
 
 //------------------------------------------------------------------------------
 void SAL_CALL ORadioButtonModel::write(const Reference<XObjectOutputStream>& _rxOutStream)
-	throw(IOException, RuntimeException)
 {
 	OReferenceValueComponent::write(_rxOutStream);
 
@@ -300,7 +299,7 @@ void SAL_CALL ORadioButtonModel::write(const Reference<XObjectOutputStream>& _rx
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL ORadioButtonModel::read(const Reference<XObjectInputStream>& _rxInStream) throw(IOException, RuntimeException)
+void SAL_CALL ORadioButtonModel::read(const Reference<XObjectInputStream>& _rxInStream)
 {
 	OReferenceValueComponent::read(_rxInStream);
 	::osl::MutexGuard aGuard(m_aMutex);
@@ -343,7 +342,7 @@ void SAL_CALL ORadioButtonModel::read(const Reference<XObjectInputStream>& _rxIn
 }
 
 //------------------------------------------------------------------------------
-void ORadioButtonModel::_propertyChanged(const PropertyChangeEvent& _rEvent) throw(RuntimeException)
+void ORadioButtonModel::_propertyChanged(const PropertyChangeEvent& _rEvent)
 {
 	if ( _rEvent.PropertyName.equals( PROPERTY_STATE ) )
 	{

@@ -36,8 +36,7 @@ class LayoutUnit : public LayoutUnit_Base
 {
 public:
     LayoutUnit();
-    void SAL_CALL queueResize( const com::sun::star::uno::Reference< com::sun::star::awt::XLayoutContainer > &xContainer )
-        throw( com::sun::star::uno::RuntimeException );
+    void SAL_CALL queueResize( const com::sun::star::uno::Reference< com::sun::star::awt::XLayoutContainer > &xContainer );
 };
 
 }

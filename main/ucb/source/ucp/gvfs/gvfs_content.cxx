@@ -113,7 +113,6 @@ Content::Content(
           const uno::Reference< lang::XMultiServiceFactory >& rxSMgr,
           ContentProvider* pProvider,
           const uno::Reference< ucb::XContentIdentifier >& Identifier)
-  throw ( ucb::ContentCreationException )
     : ContentImplHelper( rxSMgr, pProvider, Identifier ),
       m_pProvider( pProvider ),
       m_bTransient( sal_False )
@@ -129,7 +128,6 @@ Content::Content(
     ContentProvider                                   * pProvider,
     const uno::Reference< ucb::XContentIdentifier >&    Identifier,
     sal_Bool                                            IsFolder)
-        throw ( ucb::ContentCreationException )
     : ContentImplHelper( rxSMgr, pProvider, Identifier ),
       m_pProvider( pProvider ),
       m_bTransient( sal_True )
@@ -166,7 +164,6 @@ void SAL_CALL Content::release()
     ContentImplHelper::release();
 }
 uno::Any SAL_CALL Content::queryInterface( const uno::Type & rType )
-    throw ( uno::RuntimeException )
 {
     // Note: isFolder may require network activities! So call it only
     //       if it is really necessary!!!
@@ -186,7 +183,6 @@ uno::Any SAL_CALL Content::queryInterface( const uno::Type & rType )
 XTYPEPROVIDER_COMMON_IMPL( Content );
 
 uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
-    throw( uno::RuntimeException )
 {
     static cppu::OTypeCollection *pFolderCollection = NULL;
     static cppu::OTypeCollection *pFileCollection = NULL;
@@ -239,13 +235,11 @@ uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
 //
 
 rtl::OUString SAL_CALL Content::getImplementationName()
-    throw( uno::RuntimeException )
 {
     return rtl::OUString::createFromAscii("com.sun.star.comp.GnomeVFSContent" );
 }
 
 uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
-    throw( uno::RuntimeException )
 {
     uno::Sequence< rtl::OUString > aSNS( 1 );
     aSNS.getArray()[ 0 ] = rtl::OUString::createFromAscii(
@@ -258,7 +252,6 @@ uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
 //
 
 rtl::OUString SAL_CALL Content::getContentType()
-    throw( uno::RuntimeException )
 {
     if ( isFolder( uno::Reference< ucb::XCommandEnvironment >() ) )
         return rtl::OUString::createFromAscii( GVFS_FOLDER_TYPE );
@@ -284,9 +277,6 @@ uno::Any SAL_CALL Content::execute(
         const ucb::Command& aCommand,
         sal_Int32 /*CommandId*/,
         const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-    throw( uno::Exception,
-           ucb::CommandAbortedException,
-           uno::RuntimeException )
 {
     uno::Any aRet;
 
@@ -433,7 +423,6 @@ uno::Any SAL_CALL Content::execute(
 }
 
 void SAL_CALL Content::abort( sal_Int32 /*CommandId*/ )
-    throw( uno::RuntimeException )
 {
     // FIXME: we should use the GnomeVFSCancellation APIs here ...
 }
@@ -444,7 +433,6 @@ void SAL_CALL Content::abort( sal_Int32 /*CommandId*/ )
 
 uno::Sequence< ucb::ContentInfo > Content::queryCreatableContentsInfo(
     const uno::Reference< ucb::XCommandEnvironment >& xEnv)
-            throw( uno::RuntimeException )
 {
     if ( isFolder( xEnv ) )
     {
@@ -478,14 +466,12 @@ uno::Sequence< ucb::ContentInfo > Content::queryCreatableContentsInfo(
 }
 
 uno::Sequence< ucb::ContentInfo > SAL_CALL Content::queryCreatableContentsInfo()
-            throw( uno::RuntimeException )
 {
     return queryCreatableContentsInfo( uno::Reference< ucb::XCommandEnvironment >() );
 }
 
 uno::Reference< ucb::XContent > SAL_CALL
 Content::createNewContent( const ucb::ContentInfo& Info )
-    throw( uno::RuntimeException )
 {
     bool create_document;
     const char *name;
@@ -922,7 +908,6 @@ void Content::insert(
         const uno::Reference< io::XInputStream >               &xInputStream,
         sal_Bool                                                bReplaceExisting,
         const uno::Reference< ucb::XCommandEnvironment > &xEnv )
-        throw( uno::Exception )
 {
     osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -1017,7 +1002,6 @@ void Content::insert(
 
 void Content::transfer(const ucb::TransferInfo & /*rArgs*/,
                const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-    throw( uno::Exception )
 {
     // FIXME: see gnome-vfs-xfer.h - but we need to be able to easily
     // detect which are gnome-vfs owned URI types ...
@@ -1030,7 +1014,6 @@ void Content::transfer(const ucb::TransferInfo & /*rArgs*/,
 }
 
 void Content::destroy( sal_Bool bDeletePhysical )
-    throw( uno::Exception )
 {
     // @@@ take care about bDeletePhysical -> trashcan support
     rtl::OUString aURL = getOUURI();
@@ -1293,7 +1276,6 @@ void Content::cancelCommandExecution(
     GnomeVFSResult result,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv,
     sal_Bool bWrite /* = sal_False */ )
-    throw ( uno::Exception )
 {
     ucbhelper::cancelCommandExecution( mapVFSException( result, bWrite ), xEnv );
     // Unreachable
@@ -1433,7 +1415,6 @@ Content::copyData( uno::Reference< io::XInputStream > xIn,
 uno::Reference< io::XInputStream >
 Content::createTempStream(
     const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-        throw( uno::Exception )
 {
     GnomeVFSResult result;
     GnomeVFSHandle *handle = NULL;
@@ -1462,7 +1443,6 @@ Content::createTempStream(
 uno::Reference< io::XInputStream >
 Content::createInputStream(
     const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-        throw( uno::Exception )
 {
     GnomeVFSHandle *handle = NULL;
     GnomeVFSResult  result;

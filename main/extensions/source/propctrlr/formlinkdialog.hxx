@@ -122,12 +122,12 @@ namespace pcr
         void        ensureFormConnection(
                         const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _rxFormProps,
                             ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection >& /* [out] */ _rxConnection
-                    ) const SAL_THROW(( ::com::sun::star::uno::Exception ));
+                    ) const;
 
         void        getConnectionMetaData(
                         const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _rxFormProps,
                             ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData >& /* [out] */ _rxMeta
-                    ) const SAL_THROW(( ::com::sun::star::uno::Exception ));
+                    ) const;
 
         ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >
                     getCanonicUnderlyingTable( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _rxFormProps ) const;

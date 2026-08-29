@@ -61,8 +61,7 @@ public:
 
 	virtual sal_Int32 SAL_CALL getAvailableHeight();
 
-	virtual void SAL_CALL setImage( sal_Int16 aImageFormat, const Any& aImage )
-		throw (IllegalArgumentException,RuntimeException);
+	virtual void SAL_CALL setImage( sal_Int16 aImageFormat, const Any& aImage );
 
     virtual sal_Bool SAL_CALL setShowState(sal_Bool bShowState);
 
@@ -87,7 +86,7 @@ protected:
 
 	virtual void SAL_CALL rearrangeLayout();
 
-	void SAL_CALL initializeActivePreview() throw(std::runtime_error);
+	void SAL_CALL initializeActivePreview();
 
 	HWND SAL_CALL findFileListbox() const;
 
@@ -156,7 +155,6 @@ sal_Int32 SAL_CALL CPreviewAdapterImpl::getAvailableHeight()
 //-----------------------------------------
 
 void SAL_CALL CPreviewAdapterImpl::setImage( sal_Int16 aImageFormat, const Any& aImage )
-	throw (IllegalArgumentException,RuntimeException)
 {
 	m_Preview->setImage(aImageFormat,aImage);
 }
@@ -358,7 +356,7 @@ void SAL_CALL CPreviewAdapterImpl::rearrangeLayout()
 //
 //-----------------------------------------
 
-void SAL_CALL CPreviewAdapterImpl::initializeActivePreview() throw(std::runtime_error)
+void SAL_CALL CPreviewAdapterImpl::initializeActivePreview()
 {
 	sal_Bool bShowState = m_Preview->getImaginaryShowState();
 
@@ -649,7 +647,6 @@ sal_Int32 SAL_CALL CPreviewAdapter::getAvailableHeight()
 //-------------------------------
 
 void SAL_CALL CPreviewAdapter::setImage( sal_Int16 aImageFormat, const Any& aImage )
-	throw (IllegalArgumentException, RuntimeException)
 {
 	m_pImpl->setImage(aImageFormat,aImage);
 }

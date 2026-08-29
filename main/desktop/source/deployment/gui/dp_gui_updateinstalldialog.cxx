@@ -151,21 +151,18 @@ public:
 
     // XCommandEnvironment
     virtual cssu::Reference<css::task::XInteractionHandler > SAL_CALL
-    getInteractionHandler() throw (cssu::RuntimeException);
+    getInteractionHandler();
     virtual cssu::Reference<css::ucb::XProgressHandler >
-    SAL_CALL getProgressHandler() throw (cssu::RuntimeException);
+    SAL_CALL getProgressHandler();
 
     // XInteractionHandler
     virtual void SAL_CALL handle(
-        cssu::Reference<css::task::XInteractionRequest > const & xRequest )
-        throw (cssu::RuntimeException);
+        cssu::Reference<css::task::XInteractionRequest > const & xRequest );
 
     // XProgressHandler
-    virtual void SAL_CALL push( cssu::Any const & Status )
-        throw (cssu::RuntimeException);
-    virtual void SAL_CALL update( cssu::Any const & Status )
-        throw (cssu::RuntimeException);
-    virtual void SAL_CALL pop() throw (cssu::RuntimeException);
+    virtual void SAL_CALL push( cssu::Any const & Status );
+    virtual void SAL_CALL update( cssu::Any const & Status );
+    virtual void SAL_CALL pop();
 };
 
 
@@ -660,14 +657,12 @@ UpdateCommandEnv::~UpdateCommandEnv()
 // XCommandEnvironment
 //______________________________________________________________________________
 cssu::Reference<css::task::XInteractionHandler> UpdateCommandEnv::getInteractionHandler()
-throw (cssu::RuntimeException)
 {
     return this;
 }
 
 //______________________________________________________________________________
 cssu::Reference<css::ucb::XProgressHandler> UpdateCommandEnv::getProgressHandler()
-throw (cssu::RuntimeException)
 {
     return this;
 }
@@ -675,7 +670,6 @@ throw (cssu::RuntimeException)
 // XInteractionHandler
 void UpdateCommandEnv::handle(
     cssu::Reference< css::task::XInteractionRequest> const & xRequest )
-    throw (cssu::RuntimeException)
 {
     cssu::Any request( xRequest->getRequest() );
     OSL_ASSERT( request.getValueTypeClass() == cssu::TypeClass_EXCEPTION );
@@ -734,17 +728,15 @@ void UpdateCommandEnv::handle(
 
 // XProgressHandler
 void UpdateCommandEnv::push( cssu::Any const & /*Status*/ )
-throw (cssu::RuntimeException)
 {
 }
 
 
 void UpdateCommandEnv::update( cssu::Any const & /*Status */)
-throw (cssu::RuntimeException)
 {
 }
 
-void UpdateCommandEnv::pop() throw (cssu::RuntimeException)
+void UpdateCommandEnv::pop()
 {
 }
 

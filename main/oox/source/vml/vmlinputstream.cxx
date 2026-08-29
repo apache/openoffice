@@ -282,7 +282,6 @@ InputStream::~InputStream()
 }
 
 sal_Int32 SAL_CALL InputStream::readBytes( Sequence< sal_Int8 >& rData, sal_Int32 nBytesToRead )
-        throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
     if( nBytesToRead < 0 )
         throw IOException();
@@ -308,13 +307,11 @@ sal_Int32 SAL_CALL InputStream::readBytes( Sequence< sal_Int8 >& rData, sal_Int3
 }
 
 sal_Int32 SAL_CALL InputStream::readSomeBytes( Sequence< sal_Int8 >& rData, sal_Int32 nMaxBytesToRead )
-        throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
     return readBytes( rData, nMaxBytesToRead );
 }
 
 void SAL_CALL InputStream::skipBytes( sal_Int32 nBytesToSkip )
-        throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
     if( nBytesToSkip < 0 )
         throw IOException();
@@ -328,20 +325,20 @@ void SAL_CALL InputStream::skipBytes( sal_Int32 nBytesToSkip )
     }
 }
 
-sal_Int32 SAL_CALL InputStream::available() throw (NotConnectedException, IOException, RuntimeException)
+sal_Int32 SAL_CALL InputStream::available()
 {
     updateBuffer();
     return maBuffer.getLength() - mnBufferPos;
 }
 
-void SAL_CALL InputStream::closeInput() throw (NotConnectedException, IOException, RuntimeException)
+void SAL_CALL InputStream::closeInput()
 {
     mxTextStrm->closeInput();
 }
 
 // private --------------------------------------------------------------------
 
-void InputStream::updateBuffer() throw (IOException, RuntimeException)
+void InputStream::updateBuffer()
 {
     while( (mnBufferPos >= maBuffer.getLength()) && !mxTextStrm->isEOF() )
     {
@@ -379,12 +376,12 @@ void InputStream::updateBuffer() throw (IOException, RuntimeException)
     }
 }
 
-OString InputStream::readToElementBegin() throw (IOException, RuntimeException)
+OString InputStream::readToElementBegin()
 {
     return OUStringToOString( mxTextStrm->readString( maOpeningBracket, sal_False ), RTL_TEXTENCODING_ISO_8859_1 );
 }
 
-OString InputStream::readToElementEnd() throw (IOException, RuntimeException)
+OString InputStream::readToElementEnd()
 {
     OString aText = OUStringToOString( mxTextStrm->readString( maClosingBracket, sal_False ), RTL_TEXTENCODING_ISO_8859_1 );
     OSL_ENSURE( (aText.getLength() > 0) && (aText[ aText.getLength() - 1 ] == '>'), "InputStream::readToElementEnd - missing closing bracket of XML element" );

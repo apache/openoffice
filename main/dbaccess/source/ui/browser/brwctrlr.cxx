@@ -148,11 +148,11 @@ public:
 	Sequence< PropertyValue >	getValues() const { return m_aValues; }
 
 // XInteractionSupplyParameters
-	virtual void SAL_CALL setParameters( const Sequence< PropertyValue >& _rValues ) throw(RuntimeException);
+	virtual void SAL_CALL setParameters( const Sequence< PropertyValue >& _rValues );
 };
 
 //------------------------------------------------------------------
-void SAL_CALL OParameterContinuation::setParameters( const Sequence< PropertyValue >& _rValues ) throw(RuntimeException)
+void SAL_CALL OParameterContinuation::setParameters( const Sequence< PropertyValue >& _rValues )
 {
 	m_aValues = _rValues;
 }
@@ -174,82 +174,82 @@ public:
 	FormControllerImpl(SbaXDataBrowserController* pOwner);
 
 	// XFormController
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormOperations > SAL_CALL getFormOperations() throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl >  SAL_CALL getCurrentControl(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL addActivateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormControllerListener > & l) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL removeActivateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormControllerListener > & l) throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL addChildController( const ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >& _ChildController ) throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormControllerContext > SAL_CALL getContext() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setContext( const ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormControllerContext >& _context ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler > SAL_CALL getInteractionHandler() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setInteractionHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& _interactionHandler ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormOperations > SAL_CALL getFormOperations();
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl >  SAL_CALL getCurrentControl(void);
+	virtual void SAL_CALL addActivateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormControllerListener > & l);
+	virtual void SAL_CALL removeActivateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormControllerListener > & l);
+    virtual void SAL_CALL addChildController( const ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >& _ChildController );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormControllerContext > SAL_CALL getContext();
+    virtual void SAL_CALL setContext( const ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormControllerContext >& _context );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler > SAL_CALL getInteractionHandler();
+    virtual void SAL_CALL setInteractionHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& _interactionHandler );
 
     // XChild, base of XFormController
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  );
+    virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent );
 
     // XComponent, base of XFormController
-    virtual void SAL_CALL dispose(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose(  );
+    virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+    virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
     // XIndexAccess, base of XFormController
-    virtual ::sal_Int32 SAL_CALL getCount(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getCount(  );
+    virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index );
 
     // XElementAccess, base of XIndexAccess
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+    virtual ::sal_Bool SAL_CALL hasElements(  );
 
     // XEnumerationAccess, base of XElementAccess
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createEnumeration(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createEnumeration(  );
 
     // XModifyBroadcaster, base of XFormController
-    virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
+    virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
     // XConfirmDeleteBroadcaster, base of XFormController
-    virtual void SAL_CALL addConfirmDeleteListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XConfirmDeleteListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeConfirmDeleteListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XConfirmDeleteListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addConfirmDeleteListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XConfirmDeleteListener >& aListener );
+    virtual void SAL_CALL removeConfirmDeleteListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XConfirmDeleteListener >& aListener );
 
     // XSQLErrorBroadcaster, base of XFormController
-    virtual void SAL_CALL addSQLErrorListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XSQLErrorListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeSQLErrorListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XSQLErrorListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addSQLErrorListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XSQLErrorListener >& Listener );
+    virtual void SAL_CALL removeSQLErrorListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XSQLErrorListener >& Listener );
 
     // XRowSetApproveBroadcaster, base of XFormController
-    virtual void SAL_CALL addRowSetApproveListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetApproveListener >& listener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeRowSetApproveListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetApproveListener >& listener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addRowSetApproveListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetApproveListener >& listener );
+    virtual void SAL_CALL removeRowSetApproveListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XRowSetApproveListener >& listener );
 
     // XDatabaseParameterBroadcaster2, base of XFormController
-    virtual void SAL_CALL addDatabaseParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeDatabaseParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addDatabaseParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener );
+    virtual void SAL_CALL removeDatabaseParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener );
 
     // XDatabaseParameterBroadcaster, base of XDatabaseParameterBroadcaster2
-    virtual void SAL_CALL addParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener );
+    virtual void SAL_CALL removeParameterListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener );
 
     // XModeSelector, base of XFormController
-    virtual void SAL_CALL setMode( const ::rtl::OUString& aMode ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getMode(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedModes(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsMode( const ::rtl::OUString& aMode ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setMode( const ::rtl::OUString& aMode );
+    virtual ::rtl::OUString SAL_CALL getMode(  );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedModes(  );
+    virtual ::sal_Bool SAL_CALL supportsMode( const ::rtl::OUString& aMode );
 
 	// XTabController, base of XFormController
-	virtual void SAL_CALL setModel(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabControllerModel > & Model) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabControllerModel >	SAL_CALL getModel(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setContainer(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlContainer > & _Container) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlContainer >  SAL_CALL getContainer(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl >  > SAL_CALL getControls(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL autoTabOrder(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL activateTabOrder(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL activateFirst(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL activateLast(void) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL setModel(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabControllerModel > & Model);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabControllerModel >	SAL_CALL getModel(void);
+	virtual void SAL_CALL setContainer(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlContainer > & _Container);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlContainer >  SAL_CALL getContainer(void);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl >  > SAL_CALL getControls(void);
+	virtual void SAL_CALL autoTabOrder(void);
+	virtual void SAL_CALL activateTabOrder(void);
+	virtual void SAL_CALL activateFirst(void);
+	virtual void SAL_CALL activateLast(void);
 
 	// XFrameActionListener
-	virtual void SAL_CALL frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent);
 
 	// XEventListener
-	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
 protected:
 	~FormControllerImpl();
@@ -275,214 +275,214 @@ SbaXDataBrowserController::FormControllerImpl::~FormControllerImpl()
 }
 
 //------------------------------------------------------------------
-Reference< runtime::XFormOperations > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getFormOperations() throw (RuntimeException)
+Reference< runtime::XFormOperations > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getFormOperations()
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::getFormOperations: not supported!" );
     return NULL;
 }
 
 //------------------------------------------------------------------
-Reference< ::com::sun::star::awt::XControl >  SbaXDataBrowserController::FormControllerImpl::getCurrentControl(void) throw( RuntimeException )
+Reference< ::com::sun::star::awt::XControl >  SbaXDataBrowserController::FormControllerImpl::getCurrentControl(void)
 {
 	return m_pOwner->getBrowserView() ? m_pOwner->getBrowserView()->getGridControl() : Reference< ::com::sun::star::awt::XControl > ();
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addActivateListener(const Reference< ::com::sun::star::form::XFormControllerListener > & l) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addActivateListener(const Reference< ::com::sun::star::form::XFormControllerListener > & l)
 {
 	m_aActivateListeners.addInterface(l);
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeActivateListener(const Reference< ::com::sun::star::form::XFormControllerListener > & l) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeActivateListener(const Reference< ::com::sun::star::form::XFormControllerListener > & l)
 {
 	m_aActivateListeners.removeInterface(l);
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addChildController( const Reference< runtime::XFormController >& /*_ChildController*/ ) throw( RuntimeException, IllegalArgumentException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addChildController( const Reference< runtime::XFormController >& /*_ChildController*/ )
 {
     // not supported
     throw IllegalArgumentException( ::rtl::OUString(), *this, 1 );
 }
 
 //------------------------------------------------------------------
-Reference< runtime::XFormControllerContext > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getContext() throw (RuntimeException)
+Reference< runtime::XFormControllerContext > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getContext()
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::getContext: no support!!" );
     return NULL;
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setContext( const Reference< runtime::XFormControllerContext >& /*_context*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setContext( const Reference< runtime::XFormControllerContext >& /*_context*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::setContext: no support!!" );
 }
 
 //------------------------------------------------------------------
-Reference< XInteractionHandler > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getInteractionHandler() throw (RuntimeException)
+Reference< XInteractionHandler > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getInteractionHandler()
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::getInteractionHandler: no support!!" );
     return NULL;
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setInteractionHandler( const Reference< XInteractionHandler >& /*_interactionHandler*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setInteractionHandler( const Reference< XInteractionHandler >& /*_interactionHandler*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::setInteractionHandler: no support!!" );
 }
 
 //------------------------------------------------------------------
-Reference< XInterface > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getParent(  ) throw (RuntimeException)
+Reference< XInterface > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getParent(  )
 {
     // don't have any parent form controllers
     return NULL;
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setParent( const Reference< XInterface >& /*Parent*/ ) throw (NoSupportException, RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setParent( const Reference< XInterface >& /*Parent*/ )
 {
     throw NoSupportException( ::rtl::OUString(), *this );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::dispose(  ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::dispose(  )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::dispose: no, you do *not* want to do this!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addEventListener( const Reference< XEventListener >& /*xListener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addEventListener( const Reference< XEventListener >& /*xListener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::addEventListener: no support!!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeEventListener( const Reference< XEventListener >& /*aListener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeEventListener( const Reference< XEventListener >& /*aListener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::removeEventListener: no support!!" );
 }
 
 //------------------------------------------------------------------
-::sal_Int32 SAL_CALL SbaXDataBrowserController::FormControllerImpl::getCount(  ) throw (RuntimeException)
+::sal_Int32 SAL_CALL SbaXDataBrowserController::FormControllerImpl::getCount(  )
 {
     // no sub controllers, never
     return 0;
 }
 
 //------------------------------------------------------------------
-Any SAL_CALL SbaXDataBrowserController::FormControllerImpl::getByIndex( ::sal_Int32 /*Index*/ ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+Any SAL_CALL SbaXDataBrowserController::FormControllerImpl::getByIndex( ::sal_Int32 /*Index*/ )
 {
     // no sub controllers, never
     throw IndexOutOfBoundsException( ::rtl::OUString(), *this );
 }
 
 //------------------------------------------------------------------
-Type SAL_CALL SbaXDataBrowserController::FormControllerImpl::getElementType(  ) throw (RuntimeException)
+Type SAL_CALL SbaXDataBrowserController::FormControllerImpl::getElementType(  )
 {
     return ::cppu::UnoType< runtime::XFormController >::get();
 }
 
 //------------------------------------------------------------------
-::sal_Bool SAL_CALL SbaXDataBrowserController::FormControllerImpl::hasElements(  ) throw (RuntimeException)
+::sal_Bool SAL_CALL SbaXDataBrowserController::FormControllerImpl::hasElements(  )
 {
     // no sub controllers, never
     return false;
 }
 
 //------------------------------------------------------------------
-Reference< XEnumeration > SAL_CALL SbaXDataBrowserController::FormControllerImpl::createEnumeration(  ) throw (RuntimeException)
+Reference< XEnumeration > SAL_CALL SbaXDataBrowserController::FormControllerImpl::createEnumeration(  )
 {
     return new ::comphelper::OEnumerationByIndex( this );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addModifyListener( const Reference< XModifyListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addModifyListener( const Reference< XModifyListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::addModifyListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeModifyListener( const Reference< XModifyListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeModifyListener( const Reference< XModifyListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::removeModifyListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addConfirmDeleteListener( const Reference< XConfirmDeleteListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addConfirmDeleteListener( const Reference< XConfirmDeleteListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::addConfirmDeleteListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeConfirmDeleteListener( const Reference< XConfirmDeleteListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeConfirmDeleteListener( const Reference< XConfirmDeleteListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::removeConfirmDeleteListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addSQLErrorListener( const Reference< XSQLErrorListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addSQLErrorListener( const Reference< XSQLErrorListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::addSQLErrorListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeSQLErrorListener( const Reference< XSQLErrorListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeSQLErrorListener( const Reference< XSQLErrorListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::removeSQLErrorListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addRowSetApproveListener( const Reference< XRowSetApproveListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addRowSetApproveListener( const Reference< XRowSetApproveListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::addRowSetApproveListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeRowSetApproveListener( const Reference< XRowSetApproveListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeRowSetApproveListener( const Reference< XRowSetApproveListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::removeRowSetApproveListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addDatabaseParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addDatabaseParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::addDatabaseParameterListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeDatabaseParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeDatabaseParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::removeDatabaseParameterListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::addParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::addParameterListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::removeParameterListener( const Reference< XDatabaseParameterListener >& /*_Listener*/ )
 {
     OSL_ENSURE( false, "SbaXDataBrowserController::FormControllerImpl::removeParameterListener: no support!" );
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setMode( const ::rtl::OUString& _rMode ) throw (NoSupportException, RuntimeException)
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setMode( const ::rtl::OUString& _rMode )
 {
     if ( !supportsMode( _rMode ) )
         throw NoSupportException();
 }
 
 //------------------------------------------------------------------
-::rtl::OUString SAL_CALL SbaXDataBrowserController::FormControllerImpl::getMode(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL SbaXDataBrowserController::FormControllerImpl::getMode(  )
 {
     return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DataMode" ) );
 }
 
 //------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getSupportedModes(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getSupportedModes(  )
 {
     Sequence< ::rtl::OUString > aModes(1);
     aModes[1] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DataMode" ) );
@@ -490,31 +490,31 @@ Sequence< ::rtl::OUString > SAL_CALL SbaXDataBrowserController::FormControllerIm
 }
 
 //------------------------------------------------------------------
-::sal_Bool SAL_CALL SbaXDataBrowserController::FormControllerImpl::supportsMode( const ::rtl::OUString& aMode ) throw (RuntimeException)
+::sal_Bool SAL_CALL SbaXDataBrowserController::FormControllerImpl::supportsMode( const ::rtl::OUString& aMode )
 {
     return aMode.compareToAscii( "DataMode" ) == 0;
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setModel(const Reference< ::com::sun::star::awt::XTabControllerModel > & /*Model*/) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setModel(const Reference< ::com::sun::star::awt::XTabControllerModel > & /*Model*/)
 {
 	OSL_ENSURE(sal_False, "SbaXDataBrowserController::FormControllerImpl::setModel : invalid call, can't change my model !");
 }
 
 //------------------------------------------------------------------
-Reference< ::com::sun::star::awt::XTabControllerModel >  SAL_CALL SbaXDataBrowserController::FormControllerImpl::getModel(void) throw( RuntimeException )
+Reference< ::com::sun::star::awt::XTabControllerModel >  SAL_CALL SbaXDataBrowserController::FormControllerImpl::getModel(void)
 {
 	return Reference< XTabControllerModel >(m_pOwner->getRowSet(), UNO_QUERY);
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setContainer(const Reference< ::com::sun::star::awt::XControlContainer > & /*_Container*/) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::setContainer(const Reference< ::com::sun::star::awt::XControlContainer > & /*_Container*/)
 {
 	OSL_ENSURE(sal_False, "SbaXDataBrowserController::FormControllerImpl::setContainer : invalid call, can't change my container !");
 }
 
 //------------------------------------------------------------------
-Reference< ::com::sun::star::awt::XControlContainer >  SAL_CALL SbaXDataBrowserController::FormControllerImpl::getContainer(void) throw( RuntimeException )
+Reference< ::com::sun::star::awt::XControlContainer >  SAL_CALL SbaXDataBrowserController::FormControllerImpl::getContainer(void)
 {
 	if (m_pOwner->getBrowserView())
 		return m_pOwner->getBrowserView()->getContainer();
@@ -522,7 +522,7 @@ Reference< ::com::sun::star::awt::XControlContainer >  SAL_CALL SbaXDataBrowserC
 }
 
 //------------------------------------------------------------------
-Sequence< Reference< ::com::sun::star::awt::XControl > > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getControls(void) throw( RuntimeException )
+Sequence< Reference< ::com::sun::star::awt::XControl > > SAL_CALL SbaXDataBrowserController::FormControllerImpl::getControls(void)
 {
 	if (m_pOwner->getBrowserView())
 	{
@@ -533,38 +533,38 @@ Sequence< Reference< ::com::sun::star::awt::XControl > > SAL_CALL SbaXDataBrowse
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::autoTabOrder(void) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::autoTabOrder(void)
 {
 	OSL_ENSURE(sal_False, "SbaXDataBrowserController::FormControllerImpl::autoTabOrder : nothing to do (always have only one control) !");
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::activateTabOrder(void) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::activateTabOrder(void)
 {
 	OSL_ENSURE(sal_False, "SbaXDataBrowserController::FormControllerImpl::activateTabOrder : nothing to do (always have only one control) !");
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::activateFirst(void) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::activateFirst(void)
 {
 	if (m_pOwner->getBrowserView())
 		m_pOwner->getBrowserView()->getVclControl()->ActivateCell();
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::activateLast(void) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::activateLast(void)
 {
 	if (m_pOwner->getBrowserView())
 		m_pOwner->getBrowserView()->getVclControl()->ActivateCell();
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::frameAction(const ::com::sun::star::frame::FrameActionEvent& /*aEvent*/) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::frameAction(const ::com::sun::star::frame::FrameActionEvent& /*aEvent*/)
 {
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::FormControllerImpl::disposing(const ::com::sun::star::lang::EventObject& /*Source*/) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::FormControllerImpl::disposing(const ::com::sun::star::lang::EventObject& /*Source*/)
 {
 	// nothing to do
 	// we don't add ourself as listener to any broadcasters, so we are not responsible for removing us
@@ -574,7 +574,7 @@ void SAL_CALL SbaXDataBrowserController::FormControllerImpl::disposing(const ::c
 //= SbaXDataBrowserController
 //==================================================================
 //------------------------------------------------------------------
-Sequence< Type > SAL_CALL SbaXDataBrowserController::getTypes(	) throw (RuntimeException)
+Sequence< Type > SAL_CALL SbaXDataBrowserController::getTypes(	)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::getTypes" );
 	return ::comphelper::concatSequences(
@@ -584,7 +584,7 @@ Sequence< Type > SAL_CALL SbaXDataBrowserController::getTypes(	) throw (RuntimeE
 }
 
 //------------------------------------------------------------------
-Sequence< sal_Int8 > SAL_CALL SbaXDataBrowserController::getImplementationId(  ) throw (RuntimeException)
+Sequence< sal_Int8 > SAL_CALL SbaXDataBrowserController::getImplementationId(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::getImplementationId" );
 	static ::cppu::OImplementationId * pId = 0;
@@ -601,7 +601,7 @@ Sequence< sal_Int8 > SAL_CALL SbaXDataBrowserController::getImplementationId(  )
 }
 
 //------------------------------------------------------------------
-Any SAL_CALL SbaXDataBrowserController::queryInterface(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL SbaXDataBrowserController::queryInterface(const Type& _rType)
 {
 	// check for our additional interfaces
 	Any aRet = SbaXDataBrowserController_Base::queryInterface(_rType);
@@ -1049,7 +1049,7 @@ void SbaXDataBrowserController::removeControlListeners(const Reference< ::com::s
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::focusGained(const FocusEvent& /*e*/) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::focusGained(const FocusEvent& /*e*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::focusGained" );
 	// notify our activate listeners (registered on the form controller aggregate)
@@ -1060,7 +1060,7 @@ void SAL_CALL SbaXDataBrowserController::focusGained(const FocusEvent& /*e*/) th
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::focusLost(const FocusEvent& e) throw( RuntimeException )
+void SAL_CALL SbaXDataBrowserController::focusLost(const FocusEvent& e)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::focusLost" );
 	// some general checks
@@ -1145,7 +1145,7 @@ void SbaXDataBrowserController::disposingColumnModel(const ::com::sun::star::lan
 }
 
 // -------------------------------------------------------------------------
-void SbaXDataBrowserController::disposing(const EventObject& Source) throw( RuntimeException )
+void SbaXDataBrowserController::disposing(const EventObject& Source)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::disposing" );
 	// if it's a component other than our aggregate, forward it to the aggregate
@@ -1186,7 +1186,7 @@ void SbaXDataBrowserController::disposing(const EventObject& Source) throw( Runt
 }
 
 // -----------------------------------------------------------------------
-void SAL_CALL SbaXDataBrowserController::setIdentifier( const ::rtl::OUString& _Identifier ) throw (RuntimeException)
+void SAL_CALL SbaXDataBrowserController::setIdentifier( const ::rtl::OUString& _Identifier )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::setIdentifier" );
     ::osl::MutexGuard aGuard( getMutex() );
@@ -1194,7 +1194,7 @@ void SAL_CALL SbaXDataBrowserController::setIdentifier( const ::rtl::OUString& _
 }
 
 // -----------------------------------------------------------------------
-::rtl::OUString SAL_CALL SbaXDataBrowserController::getIdentifier(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL SbaXDataBrowserController::getIdentifier(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::getIdentifier" );
     ::osl::MutexGuard aGuard( getMutex() );
@@ -1202,7 +1202,7 @@ void SAL_CALL SbaXDataBrowserController::setIdentifier( const ::rtl::OUString& _
 }
 
 // -----------------------------------------------------------------------
-void SbaXDataBrowserController::propertyChange(const PropertyChangeEvent& evt) throw ( RuntimeException )
+void SbaXDataBrowserController::propertyChange(const PropertyChangeEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::propertyChange" );
 	Reference< XPropertySet >  xSource(evt.Source, UNO_QUERY);
@@ -1255,14 +1255,14 @@ void SbaXDataBrowserController::propertyChange(const PropertyChangeEvent& evt) t
 }
 
 //------------------------------------------------------------------------
-void SbaXDataBrowserController::modified(const ::com::sun::star::lang::EventObject& /*aEvent*/) throw( RuntimeException )
+void SbaXDataBrowserController::modified(const ::com::sun::star::lang::EventObject& /*aEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::modified" );
 	setCurrentModified( sal_True );
 }
 
 // -----------------------------------------------------------------------
-void SbaXDataBrowserController::elementInserted(const ::com::sun::star::container::ContainerEvent& evt) throw( RuntimeException )
+void SbaXDataBrowserController::elementInserted(const ::com::sun::star::container::ContainerEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::elementInserted" );
 	DBG_ASSERT(Reference< XInterface >(evt.Source, UNO_QUERY).get() == Reference< XInterface >(getControlModel(), UNO_QUERY).get(),
@@ -1273,7 +1273,7 @@ void SbaXDataBrowserController::elementInserted(const ::com::sun::star::containe
 }
 
 // -----------------------------------------------------------------------
-void SbaXDataBrowserController::elementRemoved(const ::com::sun::star::container::ContainerEvent& evt) throw( RuntimeException )
+void SbaXDataBrowserController::elementRemoved(const ::com::sun::star::container::ContainerEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::elementRemoved" );
 	DBG_ASSERT(Reference< XInterface >(evt.Source, UNO_QUERY).get() == Reference< XInterface >(getControlModel(), UNO_QUERY).get(),
@@ -1284,7 +1284,7 @@ void SbaXDataBrowserController::elementRemoved(const ::com::sun::star::container
 }
 
 // -----------------------------------------------------------------------
-void SbaXDataBrowserController::elementReplaced(const ::com::sun::star::container::ContainerEvent& evt) throw( RuntimeException )
+void SbaXDataBrowserController::elementReplaced(const ::com::sun::star::container::ContainerEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::elementReplaced" );
 	DBG_ASSERT(Reference< XInterface >(evt.Source, UNO_QUERY).get() == Reference< XInterface >(getControlModel(), UNO_QUERY).get(),
@@ -1299,7 +1299,7 @@ void SbaXDataBrowserController::elementReplaced(const ::com::sun::star::containe
 }
 
 // -----------------------------------------------------------------------
-sal_Bool SbaXDataBrowserController::suspend(sal_Bool /*bSuspend*/) throw( RuntimeException )
+sal_Bool SbaXDataBrowserController::suspend(sal_Bool /*bSuspend*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::suspend" );
 	DBG_ASSERT(m_nPendingLoadFinished == 0, "SbaXDataBrowserController::suspend : there shouldn't be a pending load !");
@@ -1379,7 +1379,7 @@ void SbaXDataBrowserController::disposing()
 		// don't dispose, just reset - it's owned by the RowSet
 }
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent) throw( RuntimeException )
+void SbaXDataBrowserController::frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::frameAction" );
     ::osl::MutexGuard aGuard( getMutex() );
@@ -1428,7 +1428,7 @@ IMPL_LINK( SbaXDataBrowserController, OnAsyncDisplayError, void*, /* _pNotIntere
 }
 
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::errorOccured(const ::com::sun::star::sdb::SQLErrorEvent& aEvent) throw( RuntimeException )
+void SbaXDataBrowserController::errorOccured(const ::com::sun::star::sdb::SQLErrorEvent& aEvent)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::errorOccured" );
     ::osl::MutexGuard aGuard( getMutex() );
@@ -1450,7 +1450,7 @@ void SbaXDataBrowserController::errorOccured(const ::com::sun::star::sdb::SQLErr
 }
 
 //------------------------------------------------------------------------------
-sal_Bool SbaXDataBrowserController::approveParameter(const ::com::sun::star::form::DatabaseParameterEvent& aEvent) throw( RuntimeException )
+sal_Bool SbaXDataBrowserController::approveParameter(const ::com::sun::star::form::DatabaseParameterEvent& aEvent)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::approveParameter" );
 	if (aEvent.Source != getRowSet())
@@ -1536,14 +1536,14 @@ sal_Bool SbaXDataBrowserController::approveParameter(const ::com::sun::star::for
 
 
 //------------------------------------------------------------------------------
-sal_Bool SbaXDataBrowserController::approveReset(const ::com::sun::star::lang::EventObject& /*rEvent*/) throw( RuntimeException )
+sal_Bool SbaXDataBrowserController::approveReset(const ::com::sun::star::lang::EventObject& /*rEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::approveReset" );
 	return sal_True;
 }
 
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::resetted(const ::com::sun::star::lang::EventObject& rEvent) throw( RuntimeException )
+void SbaXDataBrowserController::resetted(const ::com::sun::star::lang::EventObject& rEvent)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::resetted" );
 	DBG_ASSERT(rEvent.Source == getControlModel(), "SbaXDataBrowserController::resetted : where did this come from ?");
@@ -1552,7 +1552,7 @@ void SbaXDataBrowserController::resetted(const ::com::sun::star::lang::EventObje
 }
 
 //------------------------------------------------------------------------------
-sal_Bool SbaXDataBrowserController::confirmDelete(const ::com::sun::star::sdb::RowChangeEvent& /*aEvent*/) throw( RuntimeException )
+sal_Bool SbaXDataBrowserController::confirmDelete(const ::com::sun::star::sdb::RowChangeEvent& /*aEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::confirmDelete" );
 	if (QueryBox(getBrowserView(), ModuleRes(QUERY_BRW_DELETE_ROWS)).Execute() != RET_YES)
@@ -2745,7 +2745,7 @@ void SbaXDataBrowserController::initializeParser() const
     }
 }
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::loaded(const EventObject& /*aEvent*/) throw( RuntimeException )
+void SbaXDataBrowserController::loaded(const EventObject& /*aEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::loaded" );
 	// not interested in
@@ -2753,14 +2753,14 @@ void SbaXDataBrowserController::loaded(const EventObject& /*aEvent*/) throw( Run
 }
 
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::unloading(const EventObject& /*aEvent*/) throw( RuntimeException )
+void SbaXDataBrowserController::unloading(const EventObject& /*aEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::unloading" );
 	// not interested in
 }
 
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::unloaded(const EventObject& /*aEvent*/) throw( RuntimeException )
+void SbaXDataBrowserController::unloaded(const EventObject& /*aEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::unloaded" );
     m_xParser.clear();
@@ -2773,14 +2773,14 @@ void SbaXDataBrowserController::unloaded(const EventObject& /*aEvent*/) throw( R
 }
 
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::reloading(const EventObject& /*aEvent*/) throw( RuntimeException )
+void SbaXDataBrowserController::reloading(const EventObject& /*aEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::reloading" );
 	// not interested in
 }
 
 //------------------------------------------------------------------------------
-void SbaXDataBrowserController::reloaded(const EventObject& /*aEvent*/) throw( RuntimeException )
+void SbaXDataBrowserController::reloaded(const EventObject& /*aEvent*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaui", "Ocke.Janssen@sun.com", "SbaXDataBrowserController::reloaded" );
 	InvalidateAll();
@@ -2861,19 +2861,19 @@ public:
 	LoadFormHelper(const Reference< XRowSet > & _rxForm);
 
 	// ::com::sun::star::form::XLoadListener
-	virtual void SAL_CALL loaded(const ::com::sun::star::lang::EventObject& aEvent) throw( RuntimeException );
-	virtual void SAL_CALL unloaded(const ::com::sun::star::lang::EventObject& aEvent) throw( RuntimeException );
-	virtual void SAL_CALL unloading(const ::com::sun::star::lang::EventObject& aEvent) throw( RuntimeException );
-	virtual void SAL_CALL reloading(const ::com::sun::star::lang::EventObject& aEvent) throw( RuntimeException );
-	virtual void SAL_CALL reloaded(const ::com::sun::star::lang::EventObject& aEvent) throw( RuntimeException );
+	virtual void SAL_CALL loaded(const ::com::sun::star::lang::EventObject& aEvent);
+	virtual void SAL_CALL unloaded(const ::com::sun::star::lang::EventObject& aEvent);
+	virtual void SAL_CALL unloading(const ::com::sun::star::lang::EventObject& aEvent);
+	virtual void SAL_CALL reloading(const ::com::sun::star::lang::EventObject& aEvent);
+	virtual void SAL_CALL reloaded(const ::com::sun::star::lang::EventObject& aEvent);
 
 	// XRowSetListener
-	virtual void SAL_CALL cursorMoved(const ::com::sun::star::lang::EventObject& event) throw( RuntimeException );
-	virtual void SAL_CALL rowChanged(const ::com::sun::star::lang::EventObject& event) throw( RuntimeException );
-    virtual void SAL_CALL rowSetChanged(const ::com::sun::star::lang::EventObject& event) throw( RuntimeException );
+	virtual void SAL_CALL cursorMoved(const ::com::sun::star::lang::EventObject& event);
+	virtual void SAL_CALL rowChanged(const ::com::sun::star::lang::EventObject& event);
+    virtual void SAL_CALL rowSetChanged(const ::com::sun::star::lang::EventObject& event);
 
 	// ::com::sun::star::lang::XEventListener
-	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( RuntimeException );
+	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
 
 	bool WaitUntilReallyLoaded(bool _bOnlyIfLoaded);
@@ -2925,7 +2925,7 @@ void LoadFormHelper::implDispose()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::loaded(const ::com::sun::star::lang::EventObject& /*aEvent*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::loaded(const ::com::sun::star::lang::EventObject& /*aEvent*/)
 {
 	::osl::MutexGuard aGuard(m_aAccessSafety);
 	DBG_ASSERT(m_eState == STARTED || m_eState == DISPOSED, "LoadFormHelper::loaded : wrong call !");
@@ -2934,7 +2934,7 @@ void SAL_CALL LoadFormHelper::loaded(const ::com::sun::star::lang::EventObject& 
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::unloaded(const ::com::sun::star::lang::EventObject& /*aEvent*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::unloaded(const ::com::sun::star::lang::EventObject& /*aEvent*/)
 {
 	::osl::MutexGuard aGuard(m_aAccessSafety);
 	DBG_ERROR("LoadFormHelper::unloaded : shouldn't be called !");
@@ -2942,22 +2942,22 @@ void SAL_CALL LoadFormHelper::unloaded(const ::com::sun::star::lang::EventObject
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::unloading(const ::com::sun::star::lang::EventObject& /*aEvent*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::unloading(const ::com::sun::star::lang::EventObject& /*aEvent*/)
 {
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::reloading(const ::com::sun::star::lang::EventObject& /*aEvent*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::reloading(const ::com::sun::star::lang::EventObject& /*aEvent*/)
 {
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::reloaded(const ::com::sun::star::lang::EventObject& /*aEvent*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::reloaded(const ::com::sun::star::lang::EventObject& /*aEvent*/)
 {
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::cursorMoved(const ::com::sun::star::lang::EventObject& /*event*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::cursorMoved(const ::com::sun::star::lang::EventObject& /*event*/)
 {
 	::osl::MutexGuard aGuard(m_aAccessSafety);
 	if (m_eState == LOADED)
@@ -2965,17 +2965,17 @@ void SAL_CALL LoadFormHelper::cursorMoved(const ::com::sun::star::lang::EventObj
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::rowChanged(const ::com::sun::star::lang::EventObject& /*event*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::rowChanged(const ::com::sun::star::lang::EventObject& /*event*/)
 {
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::rowSetChanged(const ::com::sun::star::lang::EventObject& /*event*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::rowSetChanged(const ::com::sun::star::lang::EventObject& /*event*/)
 {
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL LoadFormHelper::disposing(const ::com::sun::star::lang::EventObject& /*Source*/) throw( RuntimeException )
+void SAL_CALL LoadFormHelper::disposing(const ::com::sun::star::lang::EventObject& /*Source*/)
 {
 	::osl::MutexGuard aGuard(m_aAccessSafety);
 	implDispose();

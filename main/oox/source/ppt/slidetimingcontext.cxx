@@ -55,12 +55,12 @@ SlideTimingContext::~SlideTimingContext() throw()
 
 }
 
-void SlideTimingContext::endFastElement( sal_Int32 /*aElement*/ ) throw ( SAXException, RuntimeException)
+void SlideTimingContext::endFastElement( sal_Int32 /*aElement*/ )
 {
 }
 
 
-Reference< XFastContextHandler > SlideTimingContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > SlideTimingContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -88,7 +88,7 @@ Reference< XFastContextHandler > SlideTimingContext::createFastChildContext( sal
 	return xRet;
 }
 
-void SAL_CALL SlideTimingContext::endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlideTimingContext::endDocument(  )
 {
 
 }

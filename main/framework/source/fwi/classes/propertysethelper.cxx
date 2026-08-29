@@ -79,8 +79,6 @@ void PropertySetHelper::impl_setPropertyChangeBroadcaster(const css::uno::Refere
 
 //-----------------------------------------------------------------------------
 void SAL_CALL PropertySetHelper::impl_addPropertyInfo(const css::beans::Property& aProperty)
-    throw(css::beans::PropertyExistException,
-          css::uno::Exception               )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_SOFTEXCEPTIONS);
 
@@ -97,8 +95,6 @@ void SAL_CALL PropertySetHelper::impl_addPropertyInfo(const css::beans::Property
 
 //-----------------------------------------------------------------------------
 void SAL_CALL PropertySetHelper::impl_removePropertyInfo(const ::rtl::OUString& sProperty)
-    throw(css::beans::UnknownPropertyException,
-          css::uno::Exception                 )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_SOFTEXCEPTIONS);
 
@@ -195,7 +191,6 @@ void PropertySetHelper::impl_notifyChangeListener(const css::beans::PropertyChan
 
 //-----------------------------------------------------------------------------
 css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL PropertySetHelper::getPropertySetInfo()
-    throw(css::uno::RuntimeException)
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_HARDEXCEPTIONS);
 
@@ -206,11 +201,6 @@ css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL PropertySetHelper::
 //-----------------------------------------------------------------------------
 void SAL_CALL PropertySetHelper::setPropertyValue(const ::rtl::OUString& sProperty,
                                                   const css::uno::Any&   aValue   )
-    throw(css::beans::UnknownPropertyException,
-          css::beans::PropertyVetoException   ,
-          css::lang::IllegalArgumentException ,
-          css::lang::WrappedTargetException   ,
-          css::uno::RuntimeException          )
 {
     // TODO look for e.g. readonly props and reject setProp() call!
 
@@ -271,9 +261,6 @@ void SAL_CALL PropertySetHelper::setPropertyValue(const ::rtl::OUString& sProper
 
 //-----------------------------------------------------------------------------
 css::uno::Any SAL_CALL PropertySetHelper::getPropertyValue(const ::rtl::OUString& sProperty)
-    throw(css::beans::UnknownPropertyException,
-          css::lang::WrappedTargetException   ,
-          css::uno::RuntimeException          )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_HARDEXCEPTIONS);
 
@@ -300,9 +287,6 @@ css::uno::Any SAL_CALL PropertySetHelper::getPropertyValue(const ::rtl::OUString
 //-----------------------------------------------------------------------------
 void SAL_CALL PropertySetHelper::addPropertyChangeListener(const ::rtl::OUString&                                            sProperty,
                                                            const css::uno::Reference< css::beans::XPropertyChangeListener >& xListener)
-    throw(css::beans::UnknownPropertyException,
-          css::lang::WrappedTargetException   ,
-          css::uno::RuntimeException          )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_HARDEXCEPTIONS);
 
@@ -322,9 +306,6 @@ void SAL_CALL PropertySetHelper::addPropertyChangeListener(const ::rtl::OUString
 //-----------------------------------------------------------------------------
 void SAL_CALL PropertySetHelper::removePropertyChangeListener(const ::rtl::OUString&                                            sProperty,
                                                               const css::uno::Reference< css::beans::XPropertyChangeListener >& xListener)
-    throw(css::beans::UnknownPropertyException,
-          css::lang::WrappedTargetException   ,
-          css::uno::RuntimeException          )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_SOFTEXCEPTIONS);
 
@@ -344,9 +325,6 @@ void SAL_CALL PropertySetHelper::removePropertyChangeListener(const ::rtl::OUStr
 //-----------------------------------------------------------------------------
 void SAL_CALL PropertySetHelper::addVetoableChangeListener(const ::rtl::OUString&                                            sProperty,
                                                            const css::uno::Reference< css::beans::XVetoableChangeListener >& xListener)
-    throw(css::beans::UnknownPropertyException,
-          css::lang::WrappedTargetException   ,
-          css::uno::RuntimeException          )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_HARDEXCEPTIONS);
 
@@ -366,9 +344,6 @@ void SAL_CALL PropertySetHelper::addVetoableChangeListener(const ::rtl::OUString
 //-----------------------------------------------------------------------------
 void SAL_CALL PropertySetHelper::removeVetoableChangeListener(const ::rtl::OUString&                                            sProperty,
                                                               const css::uno::Reference< css::beans::XVetoableChangeListener >& xListener)
-    throw(css::beans::UnknownPropertyException,
-          css::lang::WrappedTargetException   ,
-          css::uno::RuntimeException          )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_SOFTEXCEPTIONS);
 
@@ -387,7 +362,6 @@ void SAL_CALL PropertySetHelper::removeVetoableChangeListener(const ::rtl::OUStr
 
 //-----------------------------------------------------------------------------
 css::uno::Sequence< css::beans::Property > SAL_CALL PropertySetHelper::getProperties()
-    throw(css::uno::RuntimeException)
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_HARDEXCEPTIONS);
 
@@ -411,8 +385,6 @@ css::uno::Sequence< css::beans::Property > SAL_CALL PropertySetHelper::getProper
 
 //-----------------------------------------------------------------------------
 css::beans::Property SAL_CALL PropertySetHelper::getPropertyByName(const ::rtl::OUString& sName)
-    throw(css::beans::UnknownPropertyException,
-          css::uno::RuntimeException          )
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_HARDEXCEPTIONS);
 
@@ -429,7 +401,6 @@ css::beans::Property SAL_CALL PropertySetHelper::getPropertyByName(const ::rtl::
 
 //-----------------------------------------------------------------------------
 sal_Bool SAL_CALL PropertySetHelper::hasPropertyByName(const ::rtl::OUString& sName)
-    throw(css::uno::RuntimeException)
 {
     TransactionGuard aTransaction(m_rTransactionManager, E_HARDEXCEPTIONS);
 

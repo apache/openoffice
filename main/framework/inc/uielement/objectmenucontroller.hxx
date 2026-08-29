@@ -66,10 +66,10 @@ namespace framework
 		    DECLARE_XSERVICEINFO
 
 		    // XStatusListener
-		    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+		    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
 		    // XEventListener
-		    virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
+		    virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source );
 
 		private:
             void fillPopupMenu( const com::sun::star::uno::Sequence< com::sun::star::embed::VerbDescriptor >& rVerbCommandSeq, com::sun::star::uno::Reference< com::sun::star::awt::XPopupMenu >& rPopupMenu );

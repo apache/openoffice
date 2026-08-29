@@ -77,12 +77,9 @@ public:
     OTransferable( HWND hwnd, PDRAGINFO dragInfo);
     ~OTransferable();
 
-    virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor)
-        throw(UnsupportedFlavorException, IOException, RuntimeException);
-    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors()
-        throw(RuntimeException);
-    virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor)
-        throw(RuntimeException);
+    virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor);
+    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors();
+    virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor);
 
     bool renderComplete( PDRAGTRANSFER pdxfer);
     bool requestRendering( void);

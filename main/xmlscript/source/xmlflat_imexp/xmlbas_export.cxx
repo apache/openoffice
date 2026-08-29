@@ -136,7 +136,7 @@ namespace xmlscript
     // XServiceInfo
     // -----------------------------------------------------------------------------
 
-    sal_Bool XMLBasicExporterBase::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+    sal_Bool XMLBasicExporterBase::supportsService( const ::rtl::OUString& rServiceName )
     {
 	    Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	    const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -151,7 +151,7 @@ namespace xmlscript
     // XInitialization
     // -----------------------------------------------------------------------------
 
-    void XMLBasicExporterBase::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+    void XMLBasicExporterBase::initialize( const Sequence< Any >& aArguments )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -179,7 +179,6 @@ namespace xmlscript
     // -----------------------------------------------------------------------------
 
     void XMLBasicExporterBase::setSourceDocument( const Reference< XComponent >& rxDoc )
-	    throw (IllegalArgumentException, RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -198,7 +197,6 @@ namespace xmlscript
     // -----------------------------------------------------------------------------
 
 sal_Bool XMLBasicExporterBase::filter( const Sequence< beans::PropertyValue >& /*aDescriptor*/ )
-        throw (RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -448,7 +446,6 @@ sal_Bool XMLBasicExporterBase::filter( const Sequence< beans::PropertyValue >& /
     // -----------------------------------------------------------------------------
 
     void XMLBasicExporterBase::cancel()
-        throw (RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -475,14 +472,14 @@ sal_Bool XMLBasicExporterBase::filter( const Sequence< beans::PropertyValue >& /
     // XServiceInfo
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString XMLBasicExporter::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString XMLBasicExporter::getImplementationName(  )
     {
         return getImplementationName_XMLBasicExporter();
     }
 
     // -----------------------------------------------------------------------------
 
-    Sequence< ::rtl::OUString > XMLBasicExporter::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > XMLBasicExporter::getSupportedServiceNames(  )
     {
         return getSupportedServiceNames_XMLBasicExporter();
     }
@@ -507,14 +504,14 @@ sal_Bool XMLBasicExporterBase::filter( const Sequence< beans::PropertyValue >& /
     // XServiceInfo
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString XMLOasisBasicExporter::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString XMLOasisBasicExporter::getImplementationName(  )
     {
         return getImplementationName_XMLOasisBasicExporter();
     }
 
     // -----------------------------------------------------------------------------
 
-    Sequence< ::rtl::OUString > XMLOasisBasicExporter::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > XMLOasisBasicExporter::getSupportedServiceNames(  )
     {
         return getSupportedServiceNames_XMLOasisBasicExporter();
     }

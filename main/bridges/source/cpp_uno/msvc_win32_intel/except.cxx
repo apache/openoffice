@@ -28,7 +28,9 @@
 #include <hash_map>
 #include <sal/config.h>
 #include <malloc.h>
-#include <typeinfo.h>
+// <typeinfo.h> was a Microsoft compatibility header, removed in VS2015+.
+// The standard spelling works on VC9 too, so this needs no guard.
+#include <typeinfo>
 #include <signal.h>
 
 #include "rtl/alloc.h"
@@ -38,6 +40,13 @@
 #include "com/sun/star/uno/Any.hxx"
 
 #include "msci.hxx"
+
+#if defined _MSC_VER && _MSC_VER >= 1900
+// The UCRT's own accessor for the field the hack below reaches into by offset.
+// vcruntime exports it and no public header declares it; the CRT's internal
+// ehdata.h spells _pCurrentException as exactly this dereference.
+extern "C" void ** __cdecl __current_exception();
+#endif
 
 
 #pragma pack(push, 8)
@@ -517,6 +526,25 @@ int msci_filterCppException(
 #endif
     if (rethrow && pRecord == pPointers->ExceptionRecord)
     {
+#if defined _MSC_VER && _MSC_VER >= 1900
+        // Ask the CRT, rather than guessing where it keeps the answer.
+        //
+        // The #else below hard-codes a byte offset into _tiddata, the CRT's
+        // private per-thread block, and the last offset anybody measured was
+        // msvcr80's.  VC9 happens to match it; the UCRT does not, so on a
+        // modern CRT that arithmetic lands in the middle of some unrelated
+        // member and pRecord comes back pointing at nothing in particular.
+        //
+        // The symptom is not a crash.  The bogus record fails the checks just
+        // below, filtering stops, and the caller gets a C++ exception where it
+        // expected a UNO one:
+        //
+        //     getCaughtException() failed!
+        //
+        // __current_exception() is the accessor the CRT uses for this itself.
+        pRecord = *reinterpret_cast< EXCEPTION_RECORD ** >(
+            __current_exception() );
+#else
         // hack to get msvcrt internal _curexception field:
         pRecord = *reinterpret_cast< EXCEPTION_RECORD ** >(
             reinterpret_cast< char * >( __pxcptinfoptrs() ) +
@@ -536,6 +564,7 @@ int msci_filterCppException(
             0x28 // msvcr80.dll
 #endif
             );
+#endif
     }
     // rethrow: handle only C++ exceptions:
 	if (pRecord == 0 || pRecord->ExceptionCode != MSVC_ExceptionCode)

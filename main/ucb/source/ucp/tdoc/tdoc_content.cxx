@@ -209,7 +209,6 @@ void SAL_CALL Content::release()
 //=========================================================================
 // virtual
 uno::Any SAL_CALL Content::queryInterface( const uno::Type & rType )
-    throw ( uno::RuntimeException )
 {
     uno::Any aRet = ContentImplHelper::queryInterface( rType );
 
@@ -238,7 +237,6 @@ XTYPEPROVIDER_COMMON_IMPL( Content );
 //=========================================================================
 // virtual
 uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
-    throw( uno::RuntimeException )
 {
     cppu::OTypeCollection * pCollection = 0;
 
@@ -319,7 +317,6 @@ uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
 
 // virtual
 rtl::OUString SAL_CALL Content::getImplementationName()
-    throw( uno::RuntimeException )
 {
     return rtl::OUString::createFromAscii(
                 "com.sun.star.comp.ucb.TransientDocumentsContent" );
@@ -328,7 +325,6 @@ rtl::OUString SAL_CALL Content::getImplementationName()
 //=========================================================================
 // virtual
 uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
-    throw( uno::RuntimeException )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
@@ -358,7 +354,6 @@ uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
 
 // virtual
 rtl::OUString SAL_CALL Content::getContentType()
-    throw( uno::RuntimeException )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
     return m_aProps.getContentType();
@@ -368,7 +363,6 @@ rtl::OUString SAL_CALL Content::getContentType()
 // virtual
 uno::Reference< ucb::XContentIdentifier > SAL_CALL
 Content::getIdentifier()
-    throw( uno::RuntimeException )
 {
     {
         osl::Guard< osl::Mutex > aGuard( m_aMutex );
@@ -394,9 +388,6 @@ uno::Any SAL_CALL Content::execute(
         const ucb::Command& aCommand,
         sal_Int32 /*CommandId*/,
         const uno::Reference< ucb::XCommandEnvironment >& Environment )
-    throw( uno::Exception,
-           ucb::CommandAbortedException,
-           uno::RuntimeException )
 {
     uno::Any aRet;
 
@@ -716,7 +707,6 @@ uno::Any SAL_CALL Content::execute(
 //=========================================================================
 // virtual
 void SAL_CALL Content::abort( sal_Int32 /*CommandId*/ )
-    throw( uno::RuntimeException )
 {
 }
 
@@ -729,7 +719,6 @@ void SAL_CALL Content::abort( sal_Int32 /*CommandId*/ )
 // virtual
 uno::Sequence< ucb::ContentInfo > SAL_CALL
 Content::queryCreatableContentsInfo()
-    throw( uno::RuntimeException )
 {
     return m_aProps.getCreatableContentsInfo();
 }
@@ -738,7 +727,6 @@ Content::queryCreatableContentsInfo()
 // virtual
 uno::Reference< ucb::XContent > SAL_CALL
 Content::createNewContent( const ucb::ContentInfo& Info )
-    throw( uno::RuntimeException )
 {
     if ( m_aProps.isContentCreator() )
     {
@@ -1201,7 +1189,6 @@ uno::Reference< sdbc::XRow > Content::getPropertyValues(
 uno::Sequence< uno::Any > Content::setPropertyValues(
         const uno::Sequence< beans::PropertyValue >& rValues,
         const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -1499,7 +1486,6 @@ uno::Sequence< uno::Any > Content::setPropertyValues(
 uno::Any Content::open(
                 const ucb::OpenCommandArgument2& rArg,
                 const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-    throw( uno::Exception )
 {
     if ( rArg.Mode == ucb::OpenMode::ALL ||
          rArg.Mode == ucb::OpenMode::FOLDERS ||
@@ -1690,7 +1676,6 @@ void Content::insert( const uno::Reference< io::XInputStream >& xData,
                       sal_Int32 nNameClashResolve,
                       const uno::Reference<
                           ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -1864,7 +1849,6 @@ void Content::insert( const uno::Reference< io::XInputStream >& xData,
 void Content::destroy( sal_Bool bDeletePhysical,
                        const uno::Reference<
                            ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     // @@@ take care about bDeletePhysical -> trashcan support
 
@@ -2015,7 +1999,6 @@ void Content::notifyChildInserted( const rtl::OUString & rRelativeChildUri )
 void Content::transfer(
             const ucb::TransferInfo& rInfo,
             const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -2479,8 +2462,6 @@ bool Content::loadData( ContentProvider* pProvider,
 bool Content::storeData( const uno::Reference< io::XInputStream >& xData,
                          const uno::Reference<
                             ucb::XCommandEnvironment >& xEnv )
-    throw ( ucb::CommandFailedException,
-            task::DocumentPasswordRequest )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
@@ -2876,8 +2857,6 @@ static rtl::OUString obtainPassword(
         const rtl::OUString & rName,
         task::PasswordRequestMode eMode,
         const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw ( ucb::CommandFailedException,
-            task::DocumentPasswordRequest )
 {
     rtl::Reference< DocumentPasswordRequest > xRequest
         = new DocumentPasswordRequest( eMode, rName );
@@ -2933,8 +2912,6 @@ static rtl::OUString obtainPassword(
 //=========================================================================
 uno::Reference< io::XInputStream > Content::getInputStream(
         const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw ( ucb::CommandFailedException,
-            task::DocumentPasswordRequest )
 {
     rtl::OUString aUri;
     rtl::OUString aPassword;
@@ -2976,8 +2953,6 @@ static uno::Reference< io::XOutputStream > lcl_getTruncatedOutputStream(
                 const rtl::OUString & rUri,
                 ContentProvider * pProvider,
                 const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw ( ucb::CommandFailedException,
-            task::DocumentPasswordRequest )
 {
     rtl::OUString aPassword;
     bool bPasswordRequested = false;
@@ -3006,8 +2981,6 @@ static uno::Reference< io::XOutputStream > lcl_getTruncatedOutputStream(
 //=========================================================================
 uno::Reference< io::XOutputStream > Content::getTruncatedOutputStream(
         const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw ( ucb::CommandFailedException,
-            task::DocumentPasswordRequest )
 {
     OSL_ENSURE( m_aProps.getType() == STREAM,
                 "Content::getTruncatedOutputStream - content is no stream!" );
@@ -3021,8 +2994,6 @@ uno::Reference< io::XOutputStream > Content::getTruncatedOutputStream(
 //=========================================================================
 uno::Reference< io::XStream > Content::getStream(
         const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw ( ucb::CommandFailedException,
-            task::DocumentPasswordRequest )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 

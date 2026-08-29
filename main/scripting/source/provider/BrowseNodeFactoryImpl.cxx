@@ -85,14 +85,12 @@ public:
 
     virtual ::rtl::OUString
     SAL_CALL getName()
-            throw ( RuntimeException )
     {
         return m_Name;
     }
 
     virtual Sequence< Reference< browse::XBrowseNode > > SAL_CALL
     getChildNodes()
-        throw ( RuntimeException )
     {
         std::vector<  Sequence< Reference < browse::XBrowseNode > > > seqs;
         seqs.reserve( m_Nodes.getLength() );
@@ -132,7 +130,6 @@ public:
 
     virtual sal_Bool SAL_CALL
     hasChildNodes()
-        throw ( RuntimeException )
     {
         if ( m_Nodes.getLength() != 0 )
         {
@@ -157,7 +154,6 @@ public:
     }
 
     virtual sal_Int16 SAL_CALL getType()
-        throw ( RuntimeException )
     {
         return browse::BrowseNodeTypes::CONTAINER;
     }
@@ -209,14 +205,12 @@ public:
     // -------------------------------------------------------------------------
 
     virtual ::rtl::OUString SAL_CALL getName()
-        throw ( RuntimeException )
     {
         return m_sNodeName;
     }
 
     virtual Sequence< Reference< browse::XBrowseNode > > SAL_CALL
     getChildNodes()
-        throw ( RuntimeException )
     {
         if ( m_hBNA == NULL )
         {
@@ -237,13 +231,11 @@ public:
     }
 
     virtual sal_Bool SAL_CALL hasChildNodes()
-        throw ( RuntimeException )
     {
         return sal_True;
     }
 
     virtual sal_Int16 SAL_CALL getType()
-        throw ( RuntimeException )
     {
         return browse::BrowseNodeTypes::CONTAINER;
     }
@@ -445,7 +437,6 @@ public:
 
     virtual Sequence< Reference< browse::XBrowseNode > > SAL_CALL
                 getChildNodes()
-    throw ( RuntimeException )
     {
         if ( hasChildNodes() )
         {
@@ -479,28 +470,24 @@ public:
     }
 
     virtual sal_Int16 SAL_CALL getType()
-        throw ( RuntimeException )
     {
         return m_xWrappedBrowseNode->getType();
     }
 
     virtual ::rtl::OUString
     SAL_CALL getName()
-    throw ( RuntimeException )
     {
         return m_xWrappedBrowseNode->getName();
     }
 
     virtual sal_Bool SAL_CALL
     hasChildNodes()
-        throw ( RuntimeException )
     {
         return m_xWrappedBrowseNode->hasChildNodes();
     }
 
     // XInterface
     virtual Any SAL_CALL queryInterface( const Type& aType )
-        throw ( com::sun::star::uno::RuntimeException )
     {
         Any aRet = t_BrowseNodeBase::queryInterface( aType );
         if ( aRet.hasValue() )
@@ -534,12 +521,10 @@ public:
     // XTypeProvider (implemnented by base, but needs to be overridden for
     //                delegating to aggregate)
     virtual Sequence< Type > SAL_CALL getTypes()
-        throw ( com::sun::star::uno::RuntimeException )
     {
         return m_xWrappedTypeProv->getTypes();
     }
     virtual Sequence< sal_Int8 > SAL_CALL getImplementationId()
-        throw ( com::sun::star::uno::RuntimeException )
     {
         return m_xWrappedTypeProv->getImplementationId();
 
@@ -574,7 +559,6 @@ public:
 
     virtual Sequence< Reference< browse::XBrowseNode > > SAL_CALL
                 getChildNodes()
-    throw ( RuntimeException )
     {
         // no need to sort user, share, doc1...docN
         //::std::sort( m_vNodes.begin(), m_vNodes.end(), alphaSortForBNodes() );
@@ -588,21 +572,18 @@ public:
     }
 
     virtual sal_Int16 SAL_CALL getType()
-        throw ( RuntimeException )
     {
         return browse::BrowseNodeTypes::ROOT;
     }
 
     virtual ::rtl::OUString
     SAL_CALL getName()
-    throw ( RuntimeException )
     {
         return m_Name;
     }
 
     virtual sal_Bool SAL_CALL
     hasChildNodes()
-        throw ( RuntimeException )
     {
         sal_Bool result = sal_True;
         if ( !m_vNodes.size() )
@@ -631,14 +612,12 @@ public:
     }
 
     virtual ::rtl::OUString SAL_CALL getName()
-        throw ( RuntimeException )
     {
 	    return ::rtl::OUString::createFromAscii( "Root" );
     }
 
     virtual Sequence< Reference< browse::XBrowseNode > > SAL_CALL
     getChildNodes()
-        throw ( RuntimeException )
     {
 
         Sequence < Reference < browse::XBrowseNode > > locnBNs = getAllBrowseNodes( m_xComponentContext );
@@ -655,13 +634,11 @@ public:
     }
 
     virtual sal_Bool SAL_CALL hasChildNodes()
-        throw ( RuntimeException )
     {
         return sal_True; // will always be user and share
     }
 
     virtual sal_Int16 SAL_CALL getType()
-        throw ( RuntimeException )
     {
         return browse::BrowseNodeTypes::CONTAINER;
     }
@@ -688,7 +665,6 @@ BrowseNodeFactoryImpl::~BrowseNodeFactoryImpl()
  */
 Reference< browse::XBrowseNode > SAL_CALL
 BrowseNodeFactoryImpl::createView( sal_Int16 viewType )
-    throw (RuntimeException)
 {
     switch( viewType )
     {
@@ -703,7 +679,6 @@ BrowseNodeFactoryImpl::createView( sal_Int16 viewType )
 
 Reference< browse::XBrowseNode >
 BrowseNodeFactoryImpl::getSelectorHierarchy()
-    throw (RuntimeException)
 {
     /*if ( !m_xSelectorBrowseNode.is() )
     {
@@ -714,7 +689,6 @@ BrowseNodeFactoryImpl::getSelectorHierarchy()
 
 Reference< browse::XBrowseNode >
 BrowseNodeFactoryImpl::getOrganizerHierarchy()
-    throw (RuntimeException)
 {
     Reference< browse::XBrowseNode > xRet = new  DefaultRootBrowseNode( m_xComponentContext );
     return xRet;
@@ -747,7 +721,6 @@ bnf_getImplementationName( )
 
 Reference< XInterface > SAL_CALL
 bnf_create( Reference< XComponentContext > const & xComponentContext )
-    SAL_THROW( (Exception) )
 {
     return static_cast< ::cppu::OWeakObject * >(
         new BrowseNodeFactoryImpl( xComponentContext ) );
@@ -759,21 +732,18 @@ bnf_create( Reference< XComponentContext > const & xComponentContext )
 
 ::rtl::OUString SAL_CALL
 BrowseNodeFactoryImpl::getImplementationName()
-    throw (RuntimeException)
 {
     return bnf_getImplementationName();
 }
 
 Sequence< ::rtl::OUString > SAL_CALL
 BrowseNodeFactoryImpl::getSupportedServiceNames()
-    throw (RuntimeException)
 {
     return bnf_getSupportedServiceNames();
 }
 
 sal_Bool BrowseNodeFactoryImpl::supportsService(
     ::rtl::OUString const & serviceName )
-    throw (RuntimeException)
 {
 //     check();
 

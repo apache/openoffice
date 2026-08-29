@@ -33,7 +33,7 @@
 using namespace ::com::sun::star;
 
 static accessibility::XAccessibleSelection*
-    getSelection( AtkSelection *pSelection ) throw (uno::RuntimeException)
+    getSelection( AtkSelection *pSelection )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pSelection );
     if( pWrap )

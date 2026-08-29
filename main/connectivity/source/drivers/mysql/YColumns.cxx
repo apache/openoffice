@@ -75,7 +75,7 @@ void OMySQLColumn::construct()
 	return *OMySQLColumn_PROP::getArrayHelper(isNew() ? 1 : 0);
 }
 // -----------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OMySQLColumn::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OMySQLColumn::getSupportedServiceNames(  )
 {
 	Sequence< ::rtl::OUString > aSupported(1);
 	aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.Column");

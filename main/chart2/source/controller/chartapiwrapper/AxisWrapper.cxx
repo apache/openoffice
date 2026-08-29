@@ -400,7 +400,7 @@ AxisWrapper::~AxisWrapper()
 }
 
 // ____ chart::XAxis ____
-Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getAxisTitle() throw (uno::RuntimeException)
+Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getAxisTitle()
 {
     if( !m_xAxisTitle.is() )
     {
@@ -429,7 +429,7 @@ Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getAxisTitle() throw (uno
     }
     return m_xAxisTitle;
 }
-Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getMajorGrid() throw (uno::RuntimeException)
+Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getMajorGrid()
 {
     if( !m_xMajorGrid.is() )
     {
@@ -452,7 +452,7 @@ Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getMajorGrid() throw (uno
     }
     return m_xMajorGrid;
 }
-Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getMinorGrid() throw (uno::RuntimeException)
+Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getMinorGrid()
 {
     if( !m_xMinorGrid.is() )
     {
@@ -478,42 +478,35 @@ Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getMinorGrid() throw (uno
 
 // ____ XShape ____
 awt::Point SAL_CALL AxisWrapper::getPosition()
-    throw (uno::RuntimeException)
 {
     awt::Point aResult( m_spChart2ModelContact->GetAxisPosition( this->getAxis() ) );
     return aResult;
 }
 
 void SAL_CALL AxisWrapper::setPosition( const awt::Point& /*aPosition*/ )
-    throw (uno::RuntimeException)
 {
     OSL_ENSURE( false, "trying to set position of Axis" );
 }
 
 awt::Size SAL_CALL AxisWrapper::getSize()
-    throw (uno::RuntimeException)
 {
     awt::Size aSize( m_spChart2ModelContact->GetAxisSize( this->getAxis() ) );
     return aSize;
 }
 
 void SAL_CALL AxisWrapper::setSize( const awt::Size& /*aSize*/ )
-    throw (beans::PropertyVetoException,
-           uno::RuntimeException)
 {
     OSL_ENSURE( false, "trying to set size of Axis" );
 }
 
 // ____ XShapeDescriptor (base of XShape) ____
 OUString SAL_CALL AxisWrapper::getShapeType()
-    throw (uno::RuntimeException)
 {
     return C2U( "com.sun.star.chart.ChartAxis" );
 }
 
 // ____ XNumberFormatsSupplier ____
 uno::Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getNumberFormatSettings()
-    throw (uno::RuntimeException)
 {
     Reference< util::XNumberFormatsSupplier > xNumSuppl( m_spChart2ModelContact->getChartModel(), uno::UNO_QUERY );
     if( xNumSuppl.is() )
@@ -523,7 +516,6 @@ uno::Reference< beans::XPropertySet > SAL_CALL AxisWrapper::getNumberFormatSetti
 }
 
 uno::Reference< util::XNumberFormats > SAL_CALL AxisWrapper::getNumberFormats()
-    throw (uno::RuntimeException)
 {
     Reference< util::XNumberFormatsSupplier > xNumSuppl( m_spChart2ModelContact->getChartModel(), uno::UNO_QUERY );
     if( xNumSuppl.is() )
@@ -551,7 +543,6 @@ void AxisWrapper::getDimensionAndMainAxisBool( tAxisType eType, sal_Int32& rnDim
 
 // ____ XComponent ____
 void SAL_CALL AxisWrapper::dispose()
-    throw (uno::RuntimeException)
 {
     Reference< uno::XInterface > xSource( static_cast< ::cppu::OWeakObject* >( this ) );
     m_aEventListenerContainer.disposeAndClear( lang::EventObject( xSource ) );
@@ -565,14 +556,12 @@ void SAL_CALL AxisWrapper::dispose()
 
 void SAL_CALL AxisWrapper::addEventListener(
     const Reference< lang::XEventListener >& xListener )
-    throw (uno::RuntimeException)
 {
 	m_aEventListenerContainer.addInterface( xListener );
 }
 
 void SAL_CALL AxisWrapper::removeEventListener(
     const Reference< lang::XEventListener >& aListener )
-    throw (uno::RuntimeException)
 {
 	m_aEventListenerContainer.removeInterface( aListener );
 }

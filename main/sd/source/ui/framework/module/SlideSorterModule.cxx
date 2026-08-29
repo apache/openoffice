@@ -84,7 +84,6 @@ SlideSorterModule::~SlideSorterModule (void)
 
 void SAL_CALL SlideSorterModule::notifyConfigurationChange (
 	const ConfigurationChangeEvent& rEvent)
-	throw (RuntimeException)
 {
 	if (rEvent.Type.equals(FrameworkHelper::msResourceActivationEvent))
 	{

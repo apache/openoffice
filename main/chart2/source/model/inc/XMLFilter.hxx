@@ -75,24 +75,18 @@ protected:
     // ____ XFilter ____
     virtual sal_Bool SAL_CALL filter(
         const ::com::sun::star::uno::Sequence<
-            ::com::sun::star::beans::PropertyValue >& aDescriptor )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL cancel()
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::beans::PropertyValue >& aDescriptor );
+    virtual void SAL_CALL cancel();
 
     // ____ XImporter ____
     virtual void SAL_CALL setTargetDocument(
         const ::com::sun::star::uno::Reference<
-            ::com::sun::star::lang::XComponent >& Document )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::lang::XComponent >& Document );
 
     // ____ XExporter ____
     virtual void SAL_CALL setSourceDocument(
         const ::com::sun::star::uno::Reference<
-            ::com::sun::star::lang::XComponent >& Document )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::lang::XComponent >& Document );
 
     inline ::rtl::OUString getDocumentHandler() const { return m_sDocumentHandler; }
     inline void setDocumentHandler(const ::rtl::OUString& _sDocumentHandler) { m_sDocumentHandler = _sDocumentHandler; }
@@ -173,7 +167,7 @@ public:
     {}
     /// establish methods for factory instantiation
     static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL	create(
-        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext) throw(::com::sun::star::uno::Exception)
+        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext)
     {
 	    return (::cppu::OWeakObject *)new XMLReportFilterHelper( xContext );
     }
@@ -184,7 +178,6 @@ public:
 protected:
     virtual ::rtl::OUString SAL_CALL
 		getImplementationName()
-			throw( ::com::sun::star::uno::RuntimeException )
     {
         return getImplementationName_Static();
     }
@@ -192,8 +185,6 @@ protected:
     virtual void SAL_CALL setTargetDocument(
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::lang::XComponent >& Document )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException)
     {
         setDocumentHandler(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.report.ImportDocumentHandler")));
         XMLFilter::setTargetDocument(Document);
@@ -203,8 +194,6 @@ protected:
     virtual void SAL_CALL setSourceDocument(
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::lang::XComponent >& Document )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException)
     {
         setDocumentHandler(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.report.ExportDocumentHandler")));
         XMLFilter::setSourceDocument(Document);

@@ -81,7 +81,6 @@ TypeDetection::~TypeDetection()
     03.11.2003 08:43
 -----------------------------------------------*/
 ::rtl::OUString SAL_CALL TypeDetection::queryTypeByURL(const ::rtl::OUString& sURL)
-    throw (css::uno::RuntimeException)
 {
     ::rtl::OUString sType;
 
@@ -124,7 +123,6 @@ TypeDetection::~TypeDetection()
 -----------------------------------------------*/
 ::rtl::OUString SAL_CALL TypeDetection::queryTypeByDescriptor(css::uno::Sequence< css::beans::PropertyValue >& lDescriptor,
                                                               sal_Bool                                         bAllowDeep )
-    throw (css::uno::RuntimeException)
 {
     // make the descriptor more usable :-)
     ::comphelper::MediaDescriptor stlDescriptor(lDescriptor);
@@ -1130,7 +1128,6 @@ void TypeDetection::impl_seekStreamToZero(comphelper::MediaDescriptor& rDescript
     10.03.2004 10:30
 -----------------------------------------------*/
 void TypeDetection::impl_openStream(::comphelper::MediaDescriptor& rDescriptor)
-    throw (css::uno::Exception)
 {
     sal_Bool bSuccess = sal_False;
     ::rtl::OUString sURL = rDescriptor.getUnpackedValueOrDefault( ::comphelper::MediaDescriptor::PROP_URL(), ::rtl::OUString() );

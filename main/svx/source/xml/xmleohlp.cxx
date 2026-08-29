@@ -90,9 +90,9 @@ public:
 	virtual ~OutputStorageWrapper_Impl();
 
 // stario::XOutputStream
-	virtual void SAL_CALL writeBytes(const Sequence< sal_Int8 >& aData) throw(NotConnectedException, BufferSizeExceededException, RuntimeException);
-	virtual void SAL_CALL flush() throw(NotConnectedException, BufferSizeExceededException, RuntimeException);
-	virtual void SAL_CALL closeOutput() throw(NotConnectedException, BufferSizeExceededException, RuntimeException);
+	virtual void SAL_CALL writeBytes(const Sequence< sal_Int8 >& aData);
+	virtual void SAL_CALL flush();
+	virtual void SAL_CALL closeOutput();
 
     SvStream*   GetStream();
 };
@@ -119,21 +119,18 @@ SvStream *OutputStorageWrapper_Impl::GetStream()
 
 void SAL_CALL OutputStorageWrapper_Impl::writeBytes(
 		const Sequence< sal_Int8 >& aData)
-	throw(NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	xOut->writeBytes( aData );
 }
 
 void SAL_CALL OutputStorageWrapper_Impl::flush()
-	throw(NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	xOut->flush();
 }
 
 void SAL_CALL OutputStorageWrapper_Impl::closeOutput()
-	throw(NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	xOut->closeOutput();
@@ -650,7 +647,6 @@ void SvXMLEmbeddedObjectHelper::Flush()
 
 // XGraphicObjectResolver: alien objects!
 ::rtl::OUString SAL_CALL SvXMLEmbeddedObjectHelper::resolveEmbeddedObjectURL( const ::rtl::OUString& aURL )
-	throw(RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 
@@ -660,7 +656,6 @@ void SvXMLEmbeddedObjectHelper::Flush()
 // XNameAccess: alien objects!
 Any SAL_CALL SvXMLEmbeddedObjectHelper::getByName(
 		const ::rtl::OUString& rURLStr )
-	throw (NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	Any aRet;
@@ -759,14 +754,12 @@ Any SAL_CALL SvXMLEmbeddedObjectHelper::getByName(
 }
 
 Sequence< ::rtl::OUString > SAL_CALL SvXMLEmbeddedObjectHelper::getElementNames()
-	throw (RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	return Sequence< ::rtl::OUString >(0);
 }
 
 sal_Bool SAL_CALL SvXMLEmbeddedObjectHelper::hasByName( const ::rtl::OUString& rURLStr )
-	throw (RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	if( EMBEDDEDOBJECTHELPER_MODE_READ == meCreateMode )
@@ -789,7 +782,6 @@ sal_Bool SAL_CALL SvXMLEmbeddedObjectHelper::hasByName( const ::rtl::OUString& r
 
 // XNameAccess
 Type SAL_CALL SvXMLEmbeddedObjectHelper::getElementType()
-	throw (RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	if( EMBEDDEDOBJECTHELPER_MODE_READ == meCreateMode )
@@ -799,7 +791,6 @@ Type SAL_CALL SvXMLEmbeddedObjectHelper::getElementType()
 }
 
 sal_Bool SAL_CALL SvXMLEmbeddedObjectHelper::hasElements()
-	throw (RuntimeException)
 {
 	MutexGuard			aGuard( maMutex );
 	if( EMBEDDEDOBJECTHELPER_MODE_READ == meCreateMode )

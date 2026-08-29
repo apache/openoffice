@@ -206,9 +206,6 @@ ScDocOptionsObj::~ScDocOptionsObj()
 
 void SAL_CALL ScDocOptionsObj::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -219,8 +216,6 @@ void SAL_CALL ScDocOptionsObj::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScDocOptionsObj::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 

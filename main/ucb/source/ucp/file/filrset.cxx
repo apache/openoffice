@@ -130,7 +130,6 @@ XResultSet_impl::release(
 uno::Any SAL_CALL
 XResultSet_impl::queryInterface(
 	const uno::Type& rType )
-	throw( uno::RuntimeException )
 {
 	uno::Any aRet = cppu::queryInterface(
         rType,
@@ -150,7 +149,6 @@ XResultSet_impl::queryInterface(
 
 void SAL_CALL
 XResultSet_impl::disposing( const lang::EventObject& )
-	throw( uno::RuntimeException )
 {
 	// To do, but what
 }
@@ -172,7 +170,6 @@ XTYPEPROVIDER_IMPL_10( XResultSet_impl,
 void SAL_CALL
 XResultSet_impl::addEventListener(
 	const uno::Reference< lang::XEventListener >& Listener )
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -187,7 +184,6 @@ XResultSet_impl::addEventListener(
 void SAL_CALL
 XResultSet_impl::removeEventListener(
 	const uno::Reference< lang::XEventListener >& Listener )
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -199,7 +195,6 @@ XResultSet_impl::removeEventListener(
 
 void SAL_CALL
 XResultSet_impl::dispose()
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -279,8 +274,6 @@ void XResultSet_impl::isFinalChanged()
 sal_Bool SAL_CALL
 XResultSet_impl::OneMore(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	if( ! m_nIsOpen )
         return false;
@@ -360,8 +353,6 @@ XResultSet_impl::OneMore(
 sal_Bool SAL_CALL
 XResultSet_impl::next(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	sal_Bool test;
 	if( ++m_nRow < sal::static_int_cast<sal_Int32>(m_aItems.size()) ) test = true;
@@ -374,8 +365,6 @@ XResultSet_impl::next(
 sal_Bool SAL_CALL
 XResultSet_impl::isBeforeFirst(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return m_nRow == -1;
 }
@@ -384,8 +373,6 @@ XResultSet_impl::isBeforeFirst(
 sal_Bool SAL_CALL
 XResultSet_impl::isAfterLast(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return m_nRow >= sal::static_int_cast<sal_Int32>(m_aItems.size());   // Cannot happen, if m_aFolder.isOpen()
 }
@@ -394,8 +381,6 @@ XResultSet_impl::isAfterLast(
 sal_Bool SAL_CALL
 XResultSet_impl::isFirst(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return m_nRow == 0;
 }
@@ -404,8 +389,6 @@ XResultSet_impl::isFirst(
 sal_Bool SAL_CALL
 XResultSet_impl::isLast(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	if( m_nRow ==  sal::static_int_cast<sal_Int32>(m_aItems.size()) - 1 )
 		return ! OneMore();
@@ -417,8 +400,6 @@ XResultSet_impl::isLast(
 void SAL_CALL
 XResultSet_impl::beforeFirst(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	m_nRow = -1;
 }
@@ -427,8 +408,6 @@ XResultSet_impl::beforeFirst(
 void SAL_CALL
 XResultSet_impl::afterLast(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	m_nRow = sal::static_int_cast<sal_Int32>(m_aItems.size());
 	while( OneMore() )
@@ -439,8 +418,6 @@ XResultSet_impl::afterLast(
 sal_Bool SAL_CALL
 XResultSet_impl::first(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	m_nRow = -1;
 	return next();
@@ -450,8 +427,6 @@ XResultSet_impl::first(
 sal_Bool SAL_CALL
 XResultSet_impl::last(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	m_nRow = sal::static_int_cast<sal_Int32>(m_aItems.size()) - 1;
 	while( OneMore() )
@@ -463,8 +438,6 @@ XResultSet_impl::last(
 sal_Int32 SAL_CALL
 XResultSet_impl::getRow(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	// Test, whether behind last row
 	if( -1 == m_nRow || m_nRow >= sal::static_int_cast<sal_Int32>(m_aItems.size()) )
@@ -476,7 +449,6 @@ XResultSet_impl::getRow(
 
 
 sal_Bool SAL_CALL XResultSet_impl::absolute( sal_Int32 row )
-	throw( sdbc::SQLException, uno::RuntimeException)
 {
 	if( row >= 0 )
 	{
@@ -502,8 +474,6 @@ sal_Bool SAL_CALL XResultSet_impl::absolute( sal_Int32 row )
 sal_Bool SAL_CALL
 XResultSet_impl::relative(
 	sal_Int32 row )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	if( isAfterLast() || isBeforeFirst() )
 		throw sdbc::SQLException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >(), ::rtl::OUString(), 0, uno::Any() );
@@ -520,8 +490,6 @@ XResultSet_impl::relative(
 sal_Bool SAL_CALL
 XResultSet_impl::previous(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	if( m_nRow > sal::static_int_cast<sal_Int32>(m_aItems.size()) )
 		m_nRow = sal::static_int_cast<sal_Int32>(m_aItems.size());  // Correct Handling of afterLast
@@ -534,8 +502,6 @@ XResultSet_impl::previous(
 void SAL_CALL
 XResultSet_impl::refreshRow(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	// get the row from the filesystem
 	return;
@@ -545,8 +511,6 @@ XResultSet_impl::refreshRow(
 sal_Bool SAL_CALL
 XResultSet_impl::rowUpdated(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return false;
 }
@@ -554,8 +518,6 @@ XResultSet_impl::rowUpdated(
 sal_Bool SAL_CALL
 XResultSet_impl::rowInserted(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return false;
 }
@@ -563,8 +525,6 @@ XResultSet_impl::rowInserted(
 sal_Bool SAL_CALL
 XResultSet_impl::rowDeleted(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return false;
 }
@@ -573,8 +533,6 @@ XResultSet_impl::rowDeleted(
 uno::Reference< uno::XInterface > SAL_CALL
 XResultSet_impl::getStatement(
 	void  )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	return uno::Reference< uno::XInterface >();
 }
@@ -585,8 +543,6 @@ XResultSet_impl::getStatement(
 void SAL_CALL
 XResultSet_impl::close(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException)
 {
 	if( m_nIsOpen )
 	{
@@ -602,7 +558,6 @@ XResultSet_impl::close(
 rtl::OUString SAL_CALL
 XResultSet_impl::queryContentIdentifierString(
 	void )
-	throw( uno::RuntimeException )
 {
 	uno::Reference< ucb::XContentIdentifier > xContentId
         = queryContentIdentifier();
@@ -617,7 +572,6 @@ XResultSet_impl::queryContentIdentifierString(
 uno::Reference< ucb::XContentIdentifier > SAL_CALL
 XResultSet_impl::queryContentIdentifier(
 	void )
-	throw( uno::RuntimeException )
 {
 	if( 0 <= m_nRow && m_nRow < sal::static_int_cast<sal_Int32>(m_aItems.size()) )
 	{
@@ -637,7 +591,6 @@ XResultSet_impl::queryContentIdentifier(
 uno::Reference< ucb::XContent > SAL_CALL
 XResultSet_impl::queryContent(
 	void )
-	throw( uno::RuntimeException )
 {
 	if( 0 <= m_nRow && m_nRow < sal::static_int_cast<sal_Int32>(m_aItems.size()) )
 		return m_pMyShell->m_pProvider->queryContent( queryContentIdentifier() );
@@ -652,8 +605,6 @@ XResultSet_impl::queryContent(
 // virtual
 uno::Reference< sdbc::XResultSet > SAL_CALL
 XResultSet_impl::getStaticResultSet()
-	throw( ucb::ListenerAlreadySetException,
-		   uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -668,8 +619,6 @@ XResultSet_impl::getStaticResultSet()
 void SAL_CALL
 XResultSet_impl::setListener(
 	const uno::Reference< ucb::XDynamicResultSetListener >& Listener )
-	throw( ucb::ListenerAlreadySetException,
-		   uno::RuntimeException )
 {
 	osl::ClearableMutexGuard aGuard( m_aMutex );
 
@@ -708,10 +657,6 @@ XResultSet_impl::setListener(
 void SAL_CALL
 XResultSet_impl::connectToCache(
 	const uno::Reference< ucb::XDynamicResultSet > & xCache )
-	throw( ucb::ListenerAlreadySetException,
-		   ucb::AlreadyInitializedException,
-		   ucb::ServiceNotFoundException,
-		   uno::RuntimeException )
 {
 	uno::Reference< lang::XMultiServiceFactory > mxSMgr
 		= m_pMyShell->m_xMultiServiceFactory;
@@ -753,7 +698,6 @@ XResultSet_impl::connectToCache(
 // virtual
 sal_Int16 SAL_CALL
 XResultSet_impl::getCapabilities()
-  throw( uno::RuntimeException )
 {
 	// Never set ucb::ContentResultSetCapability::SORTED
 	// 	- Underlying content cannot provide sorted data...
@@ -764,8 +708,6 @@ XResultSet_impl::getCapabilities()
 uno::Reference< sdbc::XResultSetMetaData > SAL_CALL
 XResultSet_impl::getMetaData(
 	void )
-	throw( sdbc::SQLException,
-		   uno::RuntimeException )
 {
 	for ( sal_Int32 n = 0; n < m_sProperty.getLength(); ++n )
 	{
@@ -799,7 +741,6 @@ XResultSet_impl::getMetaData(
 // XPropertySet
 uno::Reference< beans::XPropertySetInfo > SAL_CALL
 XResultSet_impl::getPropertySetInfo()
-	throw( uno::RuntimeException)
 {
 
 	uno::Sequence< beans::Property > seq(2);
@@ -822,11 +763,6 @@ XResultSet_impl::getPropertySetInfo()
 
 void SAL_CALL XResultSet_impl::setPropertyValue(
 	const rtl::OUString& aPropertyName, const uno::Any& )
-	throw( beans::UnknownPropertyException,
-		   beans::PropertyVetoException,
-		   lang::IllegalArgumentException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	if( aPropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) ||
 		aPropertyName == rtl::OUString::createFromAscii( "RowCount" ) )
@@ -837,9 +773,6 @@ void SAL_CALL XResultSet_impl::setPropertyValue(
 
 uno::Any SAL_CALL XResultSet_impl::getPropertyValue(
 	const rtl::OUString& PropertyName )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	if( PropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) )
 	{
@@ -862,9 +795,6 @@ uno::Any SAL_CALL XResultSet_impl::getPropertyValue(
 void SAL_CALL XResultSet_impl::addPropertyChangeListener(
 	const rtl::OUString& aPropertyName,
 	const uno::Reference< beans::XPropertyChangeListener >& xListener )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	if( aPropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) )
 	{
@@ -891,9 +821,6 @@ void SAL_CALL XResultSet_impl::addPropertyChangeListener(
 void SAL_CALL XResultSet_impl::removePropertyChangeListener(
 	const rtl::OUString& aPropertyName,
 	const uno::Reference< beans::XPropertyChangeListener >& aListener )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 	if( aPropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) &&
 		m_pIsFinalListeners )
@@ -915,9 +842,6 @@ void SAL_CALL XResultSet_impl::removePropertyChangeListener(
 void SAL_CALL XResultSet_impl::addVetoableChangeListener(
 	const rtl::OUString&,
 	const uno::Reference< beans::XVetoableChangeListener >& )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 }
 
@@ -925,8 +849,5 @@ void SAL_CALL XResultSet_impl::addVetoableChangeListener(
 void SAL_CALL XResultSet_impl::removeVetoableChangeListener(
 	const rtl::OUString&,
 	const uno::Reference< beans::XVetoableChangeListener >& )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException,
-		   uno::RuntimeException)
 {
 }

@@ -166,7 +166,7 @@ TextParagraphPropertiesContext::~TextParagraphPropertiesContext()
 
 // --------------------------------------------------------------------
 
-void TextParagraphPropertiesContext::endFastElement( sal_Int32 ) throw (SAXException, RuntimeException)
+void TextParagraphPropertiesContext::endFastElement( sal_Int32 )
 {
 }
 
@@ -174,7 +174,7 @@ void TextParagraphPropertiesContext::endFastElement( sal_Int32 ) throw (SAXExcep
 
 // --------------------------------------------------------------------
 
-Reference< XFastContextHandler > TextParagraphPropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& rXAttributes ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > TextParagraphPropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& rXAttributes )
 {
     AttributeList aAttribs( rXAttributes );
 	Reference< XFastContextHandler > xRet;

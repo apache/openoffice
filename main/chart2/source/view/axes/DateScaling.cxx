@@ -66,7 +66,6 @@ DateScaling::~DateScaling()
 }
 
 double SAL_CALL DateScaling::doScaling( double value )
-    throw (uno::RuntimeException)
 {
     double fResult(value);
     if( ::rtl::math::isNan( value ) || ::rtl::math::isInf( value ) )
@@ -107,13 +106,11 @@ double SAL_CALL DateScaling::doScaling( double value )
 }
 
 uno::Reference< XScaling > SAL_CALL DateScaling::getInverseScaling()
-    throw (uno::RuntimeException)
 {
     return new InverseDateScaling( m_aNullDate, m_nTimeUnit, m_bShifted );
 }
 
 ::rtl::OUString SAL_CALL DateScaling::getServiceName()
-    throw (uno::RuntimeException)
 {
     return lcl_aServiceName_DateScaling;
 }
@@ -140,7 +137,6 @@ InverseDateScaling::~InverseDateScaling()
 }
 
 double SAL_CALL InverseDateScaling::doScaling( double value )
-    throw (uno::RuntimeException)
 {
     double fResult(value);
     if( ::rtl::math::isNan( value ) || ::rtl::math::isInf( value ) )
@@ -188,13 +184,11 @@ double SAL_CALL InverseDateScaling::doScaling( double value )
 }
 
 uno::Reference< XScaling > SAL_CALL InverseDateScaling::getInverseScaling()
-    throw (uno::RuntimeException)
 {
     return new DateScaling( m_aNullDate, m_nTimeUnit, m_bShifted );
 }
 
 ::rtl::OUString SAL_CALL InverseDateScaling::getServiceName()
-    throw (uno::RuntimeException)
 {
     return lcl_aServiceName_InverseDateScaling;
 }

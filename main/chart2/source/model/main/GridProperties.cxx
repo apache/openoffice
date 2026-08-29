@@ -166,7 +166,6 @@ GridProperties::~GridProperties()
 
 // ____ OPropertySet ____
 uno::Any GridProperties::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticGridDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -182,21 +181,18 @@ uno::Any GridProperties::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 Reference< beans::XPropertySetInfo > SAL_CALL GridProperties::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticGridInfo::get();
 }
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL GridProperties::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new GridProperties( *this ));
 }
 
 // ____ XModifyBroadcaster ____
 void SAL_CALL GridProperties::addModifyListener( const Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -210,7 +206,6 @@ void SAL_CALL GridProperties::addModifyListener( const Reference< util::XModifyL
 }
 
 void SAL_CALL GridProperties::removeModifyListener( const Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -225,14 +220,12 @@ void SAL_CALL GridProperties::removeModifyListener( const Reference< util::XModi
 
 // ____ XModifyListener ____
 void SAL_CALL GridProperties::modified( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
     m_xModifyEventForwarder->modified( aEvent );
 }
 
 // ____ XEventListener (base of XModifyListener) ____
 void SAL_CALL GridProperties::disposing( const lang::EventObject& /* Source */ )
-    throw (uno::RuntimeException)
 {
     // nothing
 }

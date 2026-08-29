@@ -51,18 +51,18 @@ class OOO_DLLPUBLIC_DBA OAuthenticationContinuation :
 public:
     OAuthenticationContinuation();
 
-    sal_Bool SAL_CALL canSetRealm(  ) throw(com::sun::star::uno::RuntimeException);
-    void SAL_CALL setRealm( const ::rtl::OUString& Realm ) throw(com::sun::star::uno::RuntimeException);
-    sal_Bool SAL_CALL canSetUserName(  ) throw(com::sun::star::uno::RuntimeException);
-    void SAL_CALL setUserName( const ::rtl::OUString& UserName ) throw(com::sun::star::uno::RuntimeException);
-    sal_Bool SAL_CALL canSetPassword(  ) throw(com::sun::star::uno::RuntimeException);
-    void SAL_CALL setPassword( const ::rtl::OUString& Password ) throw(com::sun::star::uno::RuntimeException);
-    com::sun::star::uno::Sequence< com::sun::star::ucb::RememberAuthentication > SAL_CALL getRememberPasswordModes( com::sun::star::ucb::RememberAuthentication& Default ) throw(com::sun::star::uno::RuntimeException);
-    void SAL_CALL setRememberPassword( com::sun::star::ucb::RememberAuthentication Remember ) throw(com::sun::star::uno::RuntimeException);
-    sal_Bool SAL_CALL canSetAccount(  ) throw(com::sun::star::uno::RuntimeException);
-    void SAL_CALL setAccount( const ::rtl::OUString& Account ) throw(com::sun::star::uno::RuntimeException);
-    com::sun::star::uno::Sequence< com::sun::star::ucb::RememberAuthentication > SAL_CALL getRememberAccountModes( com::sun::star::ucb::RememberAuthentication& Default ) throw(com::sun::star::uno::RuntimeException);
-    void SAL_CALL setRememberAccount( com::sun::star::ucb::RememberAuthentication Remember ) throw(com::sun::star::uno::RuntimeException);
+    sal_Bool SAL_CALL canSetRealm(  );
+    void SAL_CALL setRealm( const ::rtl::OUString& Realm );
+    sal_Bool SAL_CALL canSetUserName(  );
+    void SAL_CALL setUserName( const ::rtl::OUString& UserName );
+    sal_Bool SAL_CALL canSetPassword(  );
+    void SAL_CALL setPassword( const ::rtl::OUString& Password );
+    com::sun::star::uno::Sequence< com::sun::star::ucb::RememberAuthentication > SAL_CALL getRememberPasswordModes( com::sun::star::ucb::RememberAuthentication& Default );
+    void SAL_CALL setRememberPassword( com::sun::star::ucb::RememberAuthentication Remember );
+    sal_Bool SAL_CALL canSetAccount(  );
+    void SAL_CALL setAccount( const ::rtl::OUString& Account );
+    com::sun::star::uno::Sequence< com::sun::star::ucb::RememberAuthentication > SAL_CALL getRememberAccountModes( com::sun::star::ucb::RememberAuthentication& Default );
+    void SAL_CALL setRememberAccount( com::sun::star::ucb::RememberAuthentication Remember );
 
     void            setCanChangeUserName( sal_Bool bVal )  { m_bCanSetUserName = bVal; }
     ::rtl::OUString getUser() const             { return m_sUser; }

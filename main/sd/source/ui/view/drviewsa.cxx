@@ -113,7 +113,7 @@ public:
 							~ScannerEventListener();
 
 	// XEventListener
-	virtual void SAL_CALL 	disposing( const ::com::sun::star::lang::EventObject& rEventObject ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL 	disposing( const ::com::sun::star::lang::EventObject& rEventObject );
 
 	void					ParentDestroyed() { mpParent = NULL; }
 };
@@ -126,7 +126,7 @@ ScannerEventListener::~ScannerEventListener()
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL ScannerEventListener::disposing( const ::com::sun::star::lang::EventObject& rEventObject ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ScannerEventListener::disposing( const ::com::sun::star::lang::EventObject& rEventObject )
 {
 	if( mpParent )
 		mpParent->ScannerEvent( rEventObject );

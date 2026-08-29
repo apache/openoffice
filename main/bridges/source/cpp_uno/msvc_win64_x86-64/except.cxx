@@ -28,7 +28,9 @@
 #include <hash_map>
 #include <sal/config.h>
 #include <malloc.h>
-#include <typeinfo.h>
+// <typeinfo.h> was a Microsoft compatibility header, removed in VS2015+.
+// The standard spelling works on VC9 too, so this needs no guard.
+#include <typeinfo>
 #include <signal.h>
 
 #include "rtl/alloc.h"
@@ -38,6 +40,13 @@
 #include "com/sun/star/uno/Any.hxx"
 
 #include "mscx.hxx"
+
+#if defined _MSC_VER && _MSC_VER >= 1900
+// The UCRT's own accessor for the field the hack below reaches into by offset.
+// vcruntime exports it and no public header declares it; the CRT's internal
+// ehdata.h spells _pCurrentException as exactly this dereference.
+extern "C" void ** __cdecl __current_exception();
+#endif
 
 
 #pragma pack(push, 8)
@@ -618,6 +627,18 @@ int mscx_filterCppException(
 #endif
     if (rethrow && pRecord == pPointers->ExceptionRecord)
     {
+#if defined _MSC_VER && _MSC_VER >= 1900
+        // Ask the CRT, rather than guessing where it keeps the answer.  See
+        // the same change in msvc_win32_intel/except.cxx for the reasoning;
+        // the offset below is _tiddata's on msvcr80 and is not the UCRT's.
+        //
+        // NOTE: this half is UNTESTED.  The branch builds x86 only, so the
+        // x86 twin is the one a run has exercised.  It is changed here anyway
+        // because leaving a known-wrong copy behind is how the <typeinfo.h>
+        // miss happened.
+        pRecord = *reinterpret_cast< EXCEPTION_RECORD ** >(
+            __current_exception() );
+#else
         // hack to get msvcrt internal _curexception field:
         pRecord = *reinterpret_cast< EXCEPTION_RECORD ** >(
             reinterpret_cast< char * >( __pxcptinfoptrs() ) +
@@ -629,6 +650,7 @@ int mscx_filterCppException(
             // offsetof (_tiddata, _tpxcptinfoptrs):
             48
             );
+#endif
     }
     // rethrow: handle only C++ exceptions:
 	if (pRecord == 0 || pRecord->ExceptionCode != MSVC_ExceptionCode)

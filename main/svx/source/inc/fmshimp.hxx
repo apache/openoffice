@@ -271,32 +271,32 @@ public:
 
 	// UNO Anbindung
 	DECLARE_UNO3_DEFAULTS(FmXFormShell, FmXFormShell_BASE);
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& type) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& type);
 
 protected:
 	~FmXFormShell();
 
 // XTypeProvider
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
+	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
 
 // EventListener
-	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
 // ::com::sun::star::container::XContainerListener
-	virtual void SAL_CALL elementInserted(const ::com::sun::star::container::ContainerEvent& rEvent) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL elementReplaced(const ::com::sun::star::container::ContainerEvent& rEvent) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL elementRemoved(const ::com::sun::star::container::ContainerEvent& rEvent) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL elementInserted(const ::com::sun::star::container::ContainerEvent& rEvent);
+	virtual void SAL_CALL elementReplaced(const ::com::sun::star::container::ContainerEvent& rEvent);
+	virtual void SAL_CALL elementRemoved(const ::com::sun::star::container::ContainerEvent& rEvent);
 
 // XSelectionChangeListener
-	virtual void SAL_CALL selectionChanged(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL selectionChanged(const ::com::sun::star::lang::EventObject& rEvent);
 
 // ::com::sun::star::beans::XPropertyChangeListener
-	virtual void SAL_CALL propertyChange(const ::com::sun::star::beans::PropertyChangeEvent& evt) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL propertyChange(const ::com::sun::star::beans::PropertyChangeEvent& evt);
 
 // ::com::sun::star::form::XFormControllerListener
-	virtual void SAL_CALL formActivated(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL formDeactivated(const ::com::sun::star::lang::EventObject& rEvent) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL formActivated(const ::com::sun::star::lang::EventObject& rEvent);
+	virtual void SAL_CALL formDeactivated(const ::com::sun::star::lang::EventObject& rEvent);
 
 // OComponentHelper
 	virtual void SAL_CALL disposing();

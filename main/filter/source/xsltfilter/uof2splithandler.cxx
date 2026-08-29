@@ -81,18 +81,17 @@ UOF2SplitHandler::~UOF2SplitHandler()
 	delete m_pStore;
 }
 
-void UOF2SplitHandler::startDocument() throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
+void UOF2SplitHandler::startDocument()
 {
 	m_xHandler->startDocument();
 }
 
-void UOF2SplitHandler::endDocument() throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
+void UOF2SplitHandler::endDocument()
 {
 	m_xHandler->endDocument();
 }
 
 void UOF2SplitHandler::startElement(const ::rtl::OUString& qName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& AttrList )
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	if ( qName.equalsAscii("pzip:entry") )
 	{
@@ -129,7 +128,6 @@ void UOF2SplitHandler::startElement(const ::rtl::OUString& qName, const ::com::s
 }
 
 void UOF2SplitHandler::endElement(const ::rtl::OUString& qName )
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	if ( qName.equalsAscii("pzip:entry") )
 	{
@@ -146,24 +144,20 @@ void UOF2SplitHandler::endElement(const ::rtl::OUString& qName )
 }
 
 void UOF2SplitHandler::characters(const ::rtl::OUString& rStr )
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	m_xHandler->characters( rStr );
 }
 
 void UOF2SplitHandler::ignorableWhitespace(const ::rtl::OUString& str)
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 	m_xHandler->ignorableWhitespace( str );
 }
 
 void UOF2SplitHandler::processingInstruction(const ::rtl::OUString& /*str*/, const ::rtl::OUString& /*str2*/)
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
 void UOF2SplitHandler::setDocumentLocator(const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >&/* doclocator*/)
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
@@ -171,7 +165,7 @@ void UOF2SplitHandler::setDocumentLocator(const ::com::sun::star::uno::Reference
     create substream and write sub file when starting a <pzip:target> element
 	close substream when ending a <pzip:target> element
 ---- */
-void UOF2SplitHandler::Write( OUString & rFileName , sal_Bool bStart ) throw( RuntimeException )
+void UOF2SplitHandler::Write( OUString & rFileName , sal_Bool bStart )
 {
 	if ( bStart )
 	{

@@ -66,28 +66,23 @@ public:
 	// ===== XAccessibleContext ==============================================
 
 	virtual sal_Int32 SAL_CALL
-		getAccessibleChildCount (void)
-		throw (::com::sun::star::uno::RuntimeException);
+		getAccessibleChildCount (void);
 
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-		getAccessibleChild (sal_Int32 nIndex)
-		throw (::com::sun::star::uno::RuntimeException);
+		getAccessibleChild (sal_Int32 nIndex);
 	virtual ::rtl::OUString SAL_CALL
-		getAccessibleName(void)
-		throw (::com::sun::star::uno::RuntimeException);
+		getAccessibleName(void);
 	// ===== XAccessibleEventBroadcaster ========================================
 
 	virtual void SAL_CALL
 		addEventListener (
 			const ::com::sun::star::uno::Reference<
-				::com::sun::star::accessibility::XAccessibleEventListener >& xListener)
-		throw (::com::sun::star::uno::RuntimeException);
+				::com::sun::star::accessibility::XAccessibleEventListener >& xListener);
 
 	virtual void SAL_CALL
 		removeEventListener (
 			const ::com::sun::star::uno::Reference<
-				::com::sun::star::accessibility::XAccessibleEventListener >& xListener)
-		throw (::com::sun::star::uno::RuntimeException);
+				::com::sun::star::accessibility::XAccessibleEventListener >& xListener);
 
 	using cppu::WeakComponentImplHelperBase::addEventListener;
 	using cppu::WeakComponentImplHelperBase::removeEventListener;
@@ -97,20 +92,17 @@ public:
 	/**	Returns an identifier for the implementation of this object.
 	 */
 	virtual ::rtl::OUString SAL_CALL
-		getImplementationName (void)
-		throw (::com::sun::star::uno::RuntimeException);
+		getImplementationName (void);
 
 	// ===== lang::XEventListener ============================================
 
 	virtual void SAL_CALL
-		disposing (const ::com::sun::star::lang::EventObject& rEventObject)
-		throw (::com::sun::star::uno::RuntimeException);
+		disposing (const ::com::sun::star::lang::EventObject& rEventObject);
 
 	// ===== XPropertyChangeListener =========================================
 
 	virtual void SAL_CALL
-		propertyChange (const ::com::sun::star::beans::PropertyChangeEvent& rEventObject)
-		throw (::com::sun::star::uno::RuntimeException);
+		propertyChange (const ::com::sun::star::beans::PropertyChangeEvent& rEventObject);
 
 
 protected:
@@ -133,14 +125,12 @@ protected:
 
 	//	Create an accessible name that contains the current view mode.
 	virtual ::rtl::OUString
-		CreateAccessibleName ()
-		throw (::com::sun::star::uno::RuntimeException);
+		CreateAccessibleName ();
 
 	//	Create an accessible description that contains the current
 	//	view mode.
 	virtual ::rtl::OUString
-		CreateAccessibleDescription ()
-		throw (::com::sun::star::uno::RuntimeException);
+		CreateAccessibleDescription ();
 
 private:
 

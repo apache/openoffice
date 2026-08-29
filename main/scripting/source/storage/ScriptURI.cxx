@@ -49,8 +49,7 @@ static const OUString schema = OUString::createFromAscii( "vnd.sun.star.script:/
  *
  *  @param scriptURI the string script URI
  */
-ScriptURI::ScriptURI( const ::rtl::OUString& scriptURI )
-    throw ( IllegalArgumentException ) : m_uri( scriptURI )
+ScriptURI::ScriptURI( const ::rtl::OUString& scriptURI ) : m_uri( scriptURI )
 {
     OSL_TRACE( "received uri: %s\n",::rtl::OUStringToOString( m_uri, RTL_TEXTENCODING_ASCII_US).pData->buffer );
     set_values( parseIt() );

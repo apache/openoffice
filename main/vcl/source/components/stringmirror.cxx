@@ -51,12 +51,12 @@ public:
     {}
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService( const OUString& ) throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName(  );
+    virtual ::sal_Bool SAL_CALL supportsService( const OUString& );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
 
     // XStringMapping
-    virtual sal_Bool SAL_CALL mapStrings( Sequence< OUString >& io_rStrings ) throw (RuntimeException)
+    virtual sal_Bool SAL_CALL mapStrings( Sequence< OUString >& io_rStrings )
     {
         sal_Int32 nItems = io_rStrings.getLength();
         for( sal_Int32 n = 0; n < nItems; n++ )
@@ -95,12 +95,12 @@ Reference< XInterface > SAL_CALL StringMirror_createInstance( const Reference< X
 
 
 // XServiceInfo
-OUString SAL_CALL StringMirror::getImplementationName() throw (RuntimeException)
+OUString SAL_CALL StringMirror::getImplementationName()
 {
 	return StringMirror_getImplementationName();
 }
 
-sal_Bool SAL_CALL StringMirror::supportsService( const OUString& i_rServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL StringMirror::supportsService( const OUString& i_rServiceName )
 {
 	Sequence< OUString > aSN( StringMirror_getSupportedServiceNames() );
 	for( sal_Int32 nService = 0; nService < aSN.getLength(); nService++ )
@@ -111,7 +111,7 @@ sal_Bool SAL_CALL StringMirror::supportsService( const OUString& i_rServiceName 
 	return sal_False;
 }
 
-Sequence< OUString > SAL_CALL StringMirror::getSupportedServiceNames() throw (RuntimeException)
+Sequence< OUString > SAL_CALL StringMirror::getSupportedServiceNames()
 {
 	return StringMirror_getSupportedServiceNames();
 }

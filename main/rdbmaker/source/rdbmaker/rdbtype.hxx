@@ -41,7 +41,6 @@ sal_Bool produceType(const ::rtl::OString& typeName,
 					 FileStream& o,
 					 RegistryKey& regKey,
 					 StringSet& filterTypes,
-                     sal_Bool bDepend = sal_False)
-				 throw( CannotDumpException );
+                     sal_Bool bDepend = sal_False);
 
 #endif // _RDBMAKER_RDBTYPE_HXX_

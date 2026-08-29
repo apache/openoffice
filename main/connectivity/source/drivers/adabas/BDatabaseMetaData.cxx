@@ -37,14 +37,14 @@ using namespace ::com::sun::star::sdbc;
 using namespace ::com::sun::star::container;
 using namespace ::com::sun::star::lang;
 
-::rtl::OUString SAL_CALL OAdabasDatabaseMetaData::getURL(  ) throw(SQLException, RuntimeException)
+::rtl::OUString SAL_CALL OAdabasDatabaseMetaData::getURL(  )
 {
     ::rtl::OUString aValue(RTL_CONSTASCII_USTRINGPARAM("sdbc:adabas:"));
 	aValue += OAdabasDatabaseMetaData_BASE::getURLImpl();
 	return aValue;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OAdabasDatabaseMetaData::supportsIntegrityEnhancementFacility(  ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasDatabaseMetaData::supportsIntegrityEnhancementFacility(  )
 {
 	return sal_True;
 }

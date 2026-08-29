@@ -60,16 +60,12 @@ namespace oooimprovement
             // XAsyncJob
             virtual void SAL_CALL executeAsync(
                 const css::uno::Sequence< css::beans::NamedValue>& args,
-                const css::uno::Reference< css::task::XJobListener>& listener)
-                throw(css::uno::RuntimeException);
+                const css::uno::Reference< css::task::XJobListener>& listener);
 
             // XServiceInfo
-            virtual ::rtl::OUString SAL_CALL getImplementationName()
-                throw(css::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& service_name)
-                throw(css::uno::RuntimeException);
-            virtual css::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames()
-                throw(css::uno::RuntimeException);
+            virtual ::rtl::OUString SAL_CALL getImplementationName();
+            virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& service_name);
+            virtual css::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames();
 
         private:
             css::uno::Reference< css::lang::XMultiServiceFactory> m_ServiceFactory;

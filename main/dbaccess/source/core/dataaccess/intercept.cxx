@@ -61,7 +61,6 @@ using namespace ::cppu;
 // the OSL_ENSURE in CTOR has to be changed too, when adding new defines
 
 void SAL_CALL OInterceptor::dispose()
-	throw( RuntimeException )
 {
 	EventObject aEvt( *this );
 
@@ -120,7 +119,7 @@ struct DispatchHelper
 };
 
 //XDispatch
-void SAL_CALL OInterceptor::dispatch( const URL& _URL,const Sequence<PropertyValue >& Arguments ) throw (RuntimeException)
+void SAL_CALL OInterceptor::dispatch( const URL& _URL,const Sequence<PropertyValue >& Arguments )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 	if ( !m_pContentHolder )
@@ -223,9 +222,6 @@ void SAL_CALL OInterceptor::addStatusListener(
 	const Reference<
 	XStatusListener >& Control,
 	const URL& _URL )
-	throw (
-		RuntimeException
-	)
 {
 	if(!Control.is())
 		return;
@@ -306,9 +302,6 @@ void SAL_CALL OInterceptor::removeStatusListener(
 	const Reference<
 	XStatusListener >& Control,
 	const URL& _URL )
-	throw (
-		RuntimeException
-	)
 {
 	if(!(Control.is() && m_pStatCL))
 		return;
@@ -321,7 +314,7 @@ void SAL_CALL OInterceptor::removeStatusListener(
 
 
 //XInterceptorInfo
-Sequence< ::rtl::OUString > SAL_CALL OInterceptor::getInterceptedURLs(  ) 	throw ( RuntimeException	)
+Sequence< ::rtl::OUString > SAL_CALL OInterceptor::getInterceptedURLs(  )
 {
 	// now implemented as update
 	return m_aInterceptedURL;
@@ -331,7 +324,6 @@ Sequence< ::rtl::OUString > SAL_CALL OInterceptor::getInterceptedURLs(  ) 	throw
 // XDispatchProvider
 
 Reference< XDispatch > SAL_CALL OInterceptor::queryDispatch( const URL& _URL,const ::rtl::OUString& TargetFrameName,sal_Int32 SearchFlags )
-	throw (RuntimeException)
 {
 	osl::MutexGuard aGuard(m_aMutex);
 	const ::rtl::OUString* pIter = m_aInterceptedURL.getConstArray();
@@ -348,7 +340,7 @@ Reference< XDispatch > SAL_CALL OInterceptor::queryDispatch( const URL& _URL,con
 		return Reference<XDispatch>();
 }
 
-Sequence< Reference< XDispatch > > SAL_CALL OInterceptor::queryDispatches( 	const Sequence<DispatchDescriptor >& Requests )	throw (		RuntimeException	)
+Sequence< Reference< XDispatch > > SAL_CALL OInterceptor::queryDispatches( 	const Sequence<DispatchDescriptor >& Requests )
 {
 	Sequence< Reference< XDispatch > > aRet;
 	osl::MutexGuard aGuard(m_aMutex);
@@ -378,7 +370,7 @@ Sequence< Reference< XDispatch > > SAL_CALL OInterceptor::queryDispatches( 	cons
 
 //XDispatchProviderInterceptor
 
-Reference< XDispatchProvider > SAL_CALL OInterceptor::getSlaveDispatchProvider(  ) 	throw ( RuntimeException 	)
+Reference< XDispatchProvider > SAL_CALL OInterceptor::getSlaveDispatchProvider(  )
 {
 	osl::MutexGuard aGuard(m_aMutex);
 	return m_xSlaveDispatchProvider;
@@ -386,7 +378,6 @@ Reference< XDispatchProvider > SAL_CALL OInterceptor::getSlaveDispatchProvider( 
 
 void SAL_CALL
 OInterceptor::setSlaveDispatchProvider(	const Reference< XDispatchProvider >& NewDispatchProvider )
-	throw (		RuntimeException	)
 {
 	osl::MutexGuard aGuard(m_aMutex);
 	m_xSlaveDispatchProvider = NewDispatchProvider;
@@ -394,9 +385,6 @@ OInterceptor::setSlaveDispatchProvider(	const Reference< XDispatchProvider >& Ne
 
 
 Reference< XDispatchProvider > SAL_CALL OInterceptor::getMasterDispatchProvider(  )
-	throw (
-		RuntimeException
-	)
 {
 	osl::MutexGuard aGuard(m_aMutex);
 	return m_xMasterDispatchProvider;
@@ -405,15 +393,12 @@ Reference< XDispatchProvider > SAL_CALL OInterceptor::getMasterDispatchProvider(
 
 void SAL_CALL OInterceptor::setMasterDispatchProvider(
 	const Reference< XDispatchProvider >& NewSupplier )
-	throw (
-		RuntimeException
-	)
 {
 	osl::MutexGuard aGuard(m_aMutex);
 	m_xMasterDispatchProvider = NewSupplier;
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OInterceptor::notifyEvent( const ::com::sun::star::document::EventObject& Event ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL OInterceptor::notifyEvent( const ::com::sun::star::document::EventObject& Event )
 {
 	osl::ResettableMutexGuard _rGuard(m_aMutex);
 	if ( m_pStatCL &&	Event.EventName == ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("OnModifyChanged")) )
@@ -433,7 +418,7 @@ void SAL_CALL OInterceptor::notifyEvent( const ::com::sun::star::document::Event
 	}
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OInterceptor::disposing( const ::com::sun::star::lang::EventObject& /*Source*/ ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL OInterceptor::disposing( const ::com::sun::star::lang::EventObject& /*Source*/ )
 {
 }
 

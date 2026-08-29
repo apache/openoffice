@@ -49,10 +49,8 @@ public:
 	TargetDragContext( DropTarget* pTarget);
 	~TargetDragContext();
 
-    virtual void SAL_CALL acceptDrag( sal_Int8 dragOperation )
-		throw( RuntimeException);
-    virtual void SAL_CALL rejectDrag(  )
-		throw( RuntimeException);
+    virtual void SAL_CALL acceptDrag( sal_Int8 dragOperation );
+    virtual void SAL_CALL rejectDrag(  );
 };
 
 #endif

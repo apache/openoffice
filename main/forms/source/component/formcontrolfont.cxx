@@ -261,7 +261,7 @@ namespace frm
 
     //---------------------------------------------------------------------
     sal_Bool FontControlModel::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue,
-                sal_Int32 _nHandle, const Any& _rValue ) throw( IllegalArgumentException )
+                sal_Int32 _nHandle, const Any& _rValue )
     {
         sal_Bool bModified = sal_False;
         switch( _nHandle )
@@ -360,7 +360,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    void FontControlModel::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw ( Exception )
+    void FontControlModel::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
     {
         switch( _nHandle )
         {

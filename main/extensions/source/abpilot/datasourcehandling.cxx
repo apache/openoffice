@@ -71,7 +71,7 @@ namespace abp
 
 	//=====================================================================
 	//---------------------------------------------------------------------
-	static Reference< XNameAccess > lcl_getDataSourceContext( const Reference< XMultiServiceFactory >& _rxORB ) SAL_THROW (( Exception ))
+	static Reference< XNameAccess > lcl_getDataSourceContext( const Reference< XMultiServiceFactory >& _rxORB )
 	{
 		Reference< XNameAccess > xContext( _rxORB->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.sdb.DatabaseContext" ) ), UNO_QUERY );
 		DBG_ASSERT(xContext.is(), "lcl_getDataSourceContext: could not access the data source context!");
@@ -82,7 +82,7 @@ namespace abp
 	// creates a new data source and inserts it into the context
 	static void lcl_implCreateAndInsert(
 		const Reference< XMultiServiceFactory >& _rxORB, const ::rtl::OUString& _rName,
-		Reference< XPropertySet >& /* [out] */ _rxNewDataSource ) SAL_THROW (( ::com::sun::star::uno::Exception ))
+		Reference< XPropertySet >& /* [out] */ _rxNewDataSource )
 	{
 		//.............................................................
 		// get the data source context
@@ -145,7 +145,7 @@ namespace abp
 	//---------------------------------------------------------------------
 	void lcl_registerDataSource(
 		const Reference< XMultiServiceFactory >& _rxORB, const ::rtl::OUString& _sName,
-		const ::rtl::OUString& _sURL ) SAL_THROW (( ::com::sun::star::uno::Exception ))
+		const ::rtl::OUString& _sURL )
 	{
 		OSL_ENSURE( _sName.getLength(), "lcl_registerDataSource: invalid name!" );
 		OSL_ENSURE( _sURL.getLength(), "lcl_registerDataSource: invalid URL!" );

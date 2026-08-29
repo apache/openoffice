@@ -96,7 +96,7 @@ const ::rtl::OUString& MacabCatalog::getDot()
 // -----------------------------------------------------------------------------
 
 // XTablesSupplier
-Reference< XNameAccess > SAL_CALL MacabCatalog::getTables(  ) throw(RuntimeException)
+Reference< XNameAccess > SAL_CALL MacabCatalog::getTables(  )
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(rBHelper.bDisposed);

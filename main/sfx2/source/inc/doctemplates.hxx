@@ -72,27 +72,27 @@ public:
 								   ~SfxDocTplService();
 
 	// --- XLocalizable ---
-    void SAL_CALL                   setLocale( const UNOLOCALE & eLocale ) throw( RUNTIMEEXCEPTION );
-    UNOLOCALE SAL_CALL              getLocale() throw( RUNTIMEEXCEPTION );
+    void SAL_CALL                   setLocale( const UNOLOCALE & eLocale );
+    UNOLOCALE SAL_CALL              getLocale();
 
 	// --- XDocumentTemplates ---
-    REFERENCE< XCONTENT > SAL_CALL	getContent() throw( RUNTIMEEXCEPTION );
+    REFERENCE< XCONTENT > SAL_CALL	getContent();
     sal_Bool SAL_CALL				storeTemplate( const ::rtl::OUString& GroupName,
 												   const ::rtl::OUString& TemplateName,
-												   const REFERENCE< XSTORABLE >& Storable ) throw( RUNTIMEEXCEPTION );
+												   const REFERENCE< XSTORABLE >& Storable );
     sal_Bool SAL_CALL				addTemplate( const ::rtl::OUString& GroupName,
 												 const ::rtl::OUString& TemplateName,
-												 const ::rtl::OUString& SourceURL ) throw( RUNTIMEEXCEPTION );
+												 const ::rtl::OUString& SourceURL );
     sal_Bool SAL_CALL				removeTemplate( const ::rtl::OUString& GroupName,
-													const ::rtl::OUString& TemplateName ) throw( RUNTIMEEXCEPTION );
+													const ::rtl::OUString& TemplateName );
     sal_Bool SAL_CALL				renameTemplate( const ::rtl::OUString& GroupName,
 													const ::rtl::OUString& OldTemplateName,
-													const ::rtl::OUString& NewTemplateName ) throw( RUNTIMEEXCEPTION );
-    sal_Bool SAL_CALL				addGroup( const ::rtl::OUString& GroupName ) throw( RUNTIMEEXCEPTION );
-    sal_Bool SAL_CALL				removeGroup( const ::rtl::OUString& GroupName ) throw( RUNTIMEEXCEPTION );
+													const ::rtl::OUString& NewTemplateName );
+    sal_Bool SAL_CALL				addGroup( const ::rtl::OUString& GroupName );
+    sal_Bool SAL_CALL				removeGroup( const ::rtl::OUString& GroupName );
     sal_Bool SAL_CALL				renameGroup( const ::rtl::OUString& OldGroupName,
-												 const ::rtl::OUString& NewGroupName ) throw( RUNTIMEEXCEPTION );
-    void SAL_CALL					update() throw( RUNTIMEEXCEPTION );
+												 const ::rtl::OUString& NewGroupName );
+    void SAL_CALL					update();
 };
 
 #endif

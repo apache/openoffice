@@ -51,18 +51,17 @@ public:
 
     virtual ~Constructor() {}
 
-    virtual sal_Bool SAL_CALL isDefaultConstructor() throw (RuntimeException)
+    virtual sal_Bool SAL_CALL isDefaultConstructor()
     { return m_desc.getName().getLength() == 0; }
 
-    virtual rtl::OUString SAL_CALL getName() throw (RuntimeException)
+    virtual rtl::OUString SAL_CALL getName()
     { return m_desc.getName(); }
 
     virtual Sequence< Reference< XParameter > > SAL_CALL getParameters()
-        throw (RuntimeException)
     { return m_desc.getParameters(); }
 
     virtual Sequence< Reference<XCompoundTypeDescription > > SAL_CALL
-    getExceptions() throw (RuntimeException)
+    getExceptions()
     { return m_desc.getExceptions(); }
 
 private:
@@ -99,16 +98,12 @@ public:
     virtual ~PropertyTypeDescriptionImpl();
 
     // XTypeDescription
-    virtual TypeClass SAL_CALL getTypeClass()
-        throw( RuntimeException );
-    virtual OUString SAL_CALL getName()
-        throw( RuntimeException );
+    virtual TypeClass SAL_CALL getTypeClass();
+    virtual OUString SAL_CALL getName();
 
     // XPropertyTypeDescription
-    virtual sal_Int16 SAL_CALL getPropertyFlags()
-        throw ( RuntimeException );
-    virtual Reference< XTypeDescription > SAL_CALL getPropertyTypeDescription()
-        throw ( RuntimeException );
+    virtual sal_Int16 SAL_CALL getPropertyFlags();
+    virtual Reference< XTypeDescription > SAL_CALL getPropertyTypeDescription();
 };
 
 //__________________________________________________________________________________________________
@@ -122,14 +117,12 @@ PropertyTypeDescriptionImpl::~PropertyTypeDescriptionImpl()
 //__________________________________________________________________________________________________
 // virtual
 TypeClass PropertyTypeDescriptionImpl::getTypeClass()
-    throw ( RuntimeException )
 {
     return TypeClass_PROPERTY;
 }
 //__________________________________________________________________________________________________
 // virtual
 OUString PropertyTypeDescriptionImpl::getName()
-    throw ( RuntimeException )
 {
     return _aName;
 }
@@ -138,7 +131,6 @@ OUString PropertyTypeDescriptionImpl::getName()
 //__________________________________________________________________________________________________
 // virtual
 sal_Int16 SAL_CALL PropertyTypeDescriptionImpl::getPropertyFlags()
-    throw ( RuntimeException )
 {
     return _nFlags;
 }
@@ -147,7 +139,6 @@ sal_Int16 SAL_CALL PropertyTypeDescriptionImpl::getPropertyFlags()
 // virtual
 Reference< XTypeDescription > SAL_CALL
 PropertyTypeDescriptionImpl::getPropertyTypeDescription()
-    throw ( RuntimeException )
 {
     return _xTD;
 }
@@ -169,14 +160,12 @@ ServiceTypeDescriptionImpl::~ServiceTypeDescriptionImpl()
 //__________________________________________________________________________________________________
 // virtual
 TypeClass ServiceTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     return TypeClass_SERVICE;
 }
 //__________________________________________________________________________________________________
 // virtual
 OUString ServiceTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aName;
 }
@@ -186,7 +175,6 @@ OUString ServiceTypeDescriptionImpl::getName()
 // virtual
 Sequence< Reference< XServiceTypeDescription > > SAL_CALL
 ServiceTypeDescriptionImpl::getMandatoryServices()
-    throw ( RuntimeException )
 {
     getReferences();
     return _aMandatoryServices;
@@ -196,7 +184,6 @@ ServiceTypeDescriptionImpl::getMandatoryServices()
 // virtual
 Sequence< Reference< XServiceTypeDescription > > SAL_CALL
 ServiceTypeDescriptionImpl::getOptionalServices()
-    throw ( RuntimeException )
 {
     getReferences();
     return _aOptionalServices;
@@ -206,7 +193,6 @@ ServiceTypeDescriptionImpl::getOptionalServices()
 // virtual
 Sequence< Reference< XInterfaceTypeDescription > > SAL_CALL
 ServiceTypeDescriptionImpl::getMandatoryInterfaces()
-    throw ( RuntimeException )
 {
     getReferences();
     return _aMandatoryInterfaces;
@@ -216,7 +202,6 @@ ServiceTypeDescriptionImpl::getMandatoryInterfaces()
 // virtual
 Sequence< Reference< XInterfaceTypeDescription > > SAL_CALL
 ServiceTypeDescriptionImpl::getOptionalInterfaces()
-    throw ( RuntimeException )
 {
     getReferences();
     return _aOptionalInterfaces;
@@ -226,7 +211,6 @@ ServiceTypeDescriptionImpl::getOptionalInterfaces()
 // virtual
 Sequence< Reference< XPropertyTypeDescription > > SAL_CALL
 ServiceTypeDescriptionImpl::getProperties()
-    throw ( RuntimeException )
 {
     {
         MutexGuard guard(getMutex());
@@ -313,21 +297,19 @@ ServiceTypeDescriptionImpl::getProperties()
 }
 
 sal_Bool ServiceTypeDescriptionImpl::isSingleInterfaceBased()
-    throw (RuntimeException)
 {
     getReferences();
     return _xInterfaceTD.is();
 }
 
 Reference< XTypeDescription > ServiceTypeDescriptionImpl::getInterface()
-    throw (RuntimeException)
 {
     getReferences();
     return _xInterfaceTD;
 }
 
 Sequence< Reference< XServiceConstructorDescription > >
-ServiceTypeDescriptionImpl::getConstructors() throw (RuntimeException) {
+ServiceTypeDescriptionImpl::getConstructors() {
     MutexGuard guard(getMutex());
     if (_pCtors.get() == 0) {
         typereg::Reader reader(
@@ -363,7 +345,6 @@ ServiceTypeDescriptionImpl::getConstructors() throw (RuntimeException) {
 
 //__________________________________________________________________________________________________
 void ServiceTypeDescriptionImpl::getReferences()
-    throw ( RuntimeException )
 {
     {
         MutexGuard guard(getMutex());

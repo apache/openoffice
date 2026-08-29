@@ -84,7 +84,6 @@ Os2Transferable::~Os2Transferable()
 //==================================================================================================
 
 Any SAL_CALL Os2Transferable::getTransferData( const DataFlavor& rFlavor )
-    throw(UnsupportedFlavorException, IOException, RuntimeException)
 {
 	debug_printf("Os2Transferable::getTransferData %08x\n", this);
 	debug_printf("Os2Transferable::getTransferData mimetype: %s\n", CHAR_POINTER(rFlavor.MimeType));
@@ -137,7 +136,6 @@ Any SAL_CALL Os2Transferable::getTransferData( const DataFlavor& rFlavor )
 //==================================================================================================
 
 Sequence< DataFlavor > SAL_CALL Os2Transferable::getTransferDataFlavors()
-    throw(RuntimeException)
 {
 	debug_printf("Os2Transferable::getTransferDataFlavors %08x\n", this);
 	Sequence< DataFlavor > aFlavorList(1);
@@ -149,7 +147,6 @@ Sequence< DataFlavor > SAL_CALL Os2Transferable::getTransferDataFlavors()
 //==================================================================================================
 
 sal_Bool SAL_CALL Os2Transferable::isDataFlavorSupported( const DataFlavor& aFlavor )
-    throw(RuntimeException)
 {
 	debug_printf("Os2Transferable::isDataFlavorSupported %08x\n", this);
 	debug_printf("Os2Transferable::isDataFlavorSupported %s\n", CHAR_POINTER(aFlavor.MimeType));

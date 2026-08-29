@@ -181,10 +181,10 @@ namespace pcr
         }
 
         // XPropertyChangeListener
-        virtual void SAL_CALL propertyChange( const PropertyChangeEvent& _event ) throw (RuntimeException);
+        virtual void SAL_CALL propertyChange( const PropertyChangeEvent& _event );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const EventObject& _event ) throw (RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& _event );
 
     protected:
         virtual ~ShapeGeometryChangeNotifier()
@@ -223,21 +223,21 @@ namespace pcr
             const Reference< XComponentContext >& _rxContext
         );
 
-        static ::rtl::OUString SAL_CALL getImplementationName_static(  ) throw (RuntimeException);
-        static Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static(  ) throw (RuntimeException);
+        static ::rtl::OUString SAL_CALL getImplementationName_static(  );
+        static Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static(  );
 
     protected:
         ~FormGeometryHandler();
 
     protected:
         // XPropertyHandler overriables
-        virtual Any                         SAL_CALL getPropertyValue( const ::rtl::OUString& _rPropertyName ) throw (UnknownPropertyException, RuntimeException);
-        virtual void                        SAL_CALL setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) throw (UnknownPropertyException, RuntimeException);
-        virtual LineDescriptor              SAL_CALL describePropertyLine( const ::rtl::OUString& _rPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlFactory >& _rxControlFactory ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::NullPointerException, ::com::sun::star::uno::RuntimeException);
-        virtual void                        SAL_CALL addPropertyChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& _rxListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void                        SAL_CALL removePropertyChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& _rxListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getActuatingProperties( ) throw (RuntimeException);
-        virtual void                        SAL_CALL actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& _rOldValue, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool _bFirstTimeInit ) throw (NullPointerException, RuntimeException);
+        virtual Any                         SAL_CALL getPropertyValue( const ::rtl::OUString& _rPropertyName );
+        virtual void                        SAL_CALL setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue );
+        virtual LineDescriptor              SAL_CALL describePropertyLine( const ::rtl::OUString& _rPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlFactory >& _rxControlFactory );
+        virtual void                        SAL_CALL addPropertyChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& _rxListener );
+        virtual void                        SAL_CALL removePropertyChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& _rxListener );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getActuatingProperties( );
+        virtual void                        SAL_CALL actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& _rOldValue, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool _bFirstTimeInit );
 
         // OComponentHandler overridables
         virtual void SAL_CALL disposing();
@@ -321,13 +321,13 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL FormGeometryHandler::getImplementationName_static(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL FormGeometryHandler::getImplementationName_static(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.extensions.FormGeometryHandler" ) );
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL FormGeometryHandler::getSupportedServiceNames_static(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL FormGeometryHandler::getSupportedServiceNames_static(  )
     {
         Sequence< ::rtl::OUString > aSupported( 1 );
         aSupported[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.form.inspection.FormGeometryHandler" ) );
@@ -335,7 +335,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL FormGeometryHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL FormGeometryHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId( impl_getPropertyId_throw( _rPropertyName ) );
@@ -384,7 +384,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormGeometryHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) throw (UnknownPropertyException, RuntimeException)
+    void SAL_CALL FormGeometryHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId( impl_getPropertyId_throw( _rPropertyName ) );
@@ -452,7 +452,6 @@ namespace pcr
     //--------------------------------------------------------------------
     LineDescriptor SAL_CALL FormGeometryHandler::describePropertyLine( const ::rtl::OUString& _rPropertyName,
             const Reference< XPropertyControlFactory >& _rxControlFactory )
-        throw (UnknownPropertyException, NullPointerException, RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId( impl_getPropertyId_throw( _rPropertyName ) );
@@ -499,7 +498,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormGeometryHandler::addPropertyChangeListener( const Reference< XPropertyChangeListener >& _listener ) throw (RuntimeException)
+    void SAL_CALL FormGeometryHandler::addPropertyChangeListener( const Reference< XPropertyChangeListener >& _listener )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         OSL_PRECOND( m_xChangeNotifier.is(), "FormGeometryHandler::addPropertyChangeListener: no notified, implies no shape!?" );
@@ -508,7 +507,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormGeometryHandler::removePropertyChangeListener( const Reference< XPropertyChangeListener >& _listener ) throw (RuntimeException)
+    void SAL_CALL FormGeometryHandler::removePropertyChangeListener( const Reference< XPropertyChangeListener >& _listener )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         OSL_PRECOND( m_xChangeNotifier.is(), "FormGeometryHandler::removePropertyChangeListener: no notified, implies no shape!?" );
@@ -517,7 +516,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL FormGeometryHandler::getActuatingProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL FormGeometryHandler::getActuatingProperties( )
     {
         Sequence< ::rtl::OUString > aInterestedIn(1);
         aInterestedIn[0] = PROPERTY_TEXT_ANCHOR_TYPE;
@@ -525,7 +524,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormGeometryHandler::actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool /*_bFirstTimeInit*/ ) throw (NullPointerException, RuntimeException)
+    void SAL_CALL FormGeometryHandler::actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool /*_bFirstTimeInit*/ )
     {
         if ( !_rxInspectorUI.is() )
             throw NullPointerException();
@@ -731,7 +730,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ShapeGeometryChangeNotifier::propertyChange( const PropertyChangeEvent& _event ) throw (RuntimeException)
+    void SAL_CALL ShapeGeometryChangeNotifier::propertyChange( const PropertyChangeEvent& _event )
     {
         ::comphelper::ComponentMethodGuard aGuard( *this );
 
@@ -775,7 +774,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ShapeGeometryChangeNotifier::disposing( const EventObject& /*_event*/ ) throw (RuntimeException)
+    void SAL_CALL ShapeGeometryChangeNotifier::disposing( const EventObject& /*_event*/ )
     {
         ::comphelper::ComponentMethodGuard aGuard( *this );
         impl_dispose_nothrow();

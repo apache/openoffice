@@ -247,10 +247,10 @@ public:
 	~SdXMLImport() throw ();
 
 	// XImporter
-	virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	void SetProgress(sal_Int32 nProg);
 
@@ -320,7 +320,7 @@ public:
 	sal_Bool IsPreview() const { return mbPreview; }
 
     // XServiceInfo ( : SvXMLExport )
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
 	void AddHeaderDecl( const ::rtl::OUString& rName, const ::rtl::OUString& rText );
 	void AddFooterDecl( const ::rtl::OUString& rName, const ::rtl::OUString& rText );

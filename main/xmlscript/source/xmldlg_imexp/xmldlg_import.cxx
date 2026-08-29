@@ -64,7 +64,6 @@ namespace xmlscript
 
 //__________________________________________________________________________________________________
 void EventElement::endElement()
-    throw (xml::sax::SAXException, RuntimeException)
 {
     static_cast< ControlElement * >( _pParent )->_events.push_back( this );
 }
@@ -1716,57 +1715,48 @@ void ImportContext::importDefaults(
 
 //__________________________________________________________________________________________________
 Reference< xml::input::XElement > ElementBase::getParent()
-    throw (RuntimeException)
 {
     return static_cast< xml::input::XElement * >( _pParent );
 }
 //__________________________________________________________________________________________________
 OUString ElementBase::getLocalName()
-    throw (RuntimeException)
 {
     return _aLocalName;
 }
 //__________________________________________________________________________________________________
 sal_Int32 ElementBase::getUid()
-    throw (RuntimeException)
 {
     return _nUid;
 }
 //__________________________________________________________________________________________________
 Reference< xml::input::XAttributes > ElementBase::getAttributes()
-    throw (RuntimeException)
 {
     return _xAttributes;
 }
 //__________________________________________________________________________________________________
 void ElementBase::ignorableWhitespace(
     OUString const & /*rWhitespaces*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     // not used
 }
 //__________________________________________________________________________________________________
 void ElementBase::characters( OUString const & /*rChars*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     // not used, all characters ignored
 }
 //__________________________________________________________________________________________________
 void ElementBase::endElement()
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 //______________________________________________________________________________
 void ElementBase::processingInstruction(
     OUString const & /*Target*/, OUString const & /*Data*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 Reference< xml::input::XElement > ElementBase::startChildElement(
     sal_Int32 /*nUid*/, OUString const & /*rLocalName*/,
     Reference< xml::input::XAttributes > const & /*xAttributes*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     throw xml::sax::SAXException(
         OUString( RTL_CONSTASCII_USTRINGPARAM("unexpected element!") ),
@@ -1818,7 +1808,6 @@ ElementBase::~ElementBase()
 //______________________________________________________________________________
 void DialogImport::startDocument(
     Reference< xml::input::XNamespaceMapping > const & xNamespaceMapping )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     XMLNS_DIALOGS_UID = xNamespaceMapping->getUidByUri(
         OUSTR(XMLNS_DIALOGS_URI) );
@@ -1827,21 +1816,18 @@ void DialogImport::startDocument(
 }
 //__________________________________________________________________________________________________
 void DialogImport::endDocument()
-    throw (xml::sax::SAXException, RuntimeException)
 {
     // ignored
 }
 //__________________________________________________________________________________________________
 void DialogImport::processingInstruction(
     OUString const & /*rTarget*/, OUString const & /*rData*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     // ignored for now: xxx todo
 }
 //__________________________________________________________________________________________________
 void DialogImport::setDocumentLocator(
     Reference< xml::sax::XLocator > const & /*xLocator*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     // ignored for now: xxx todo
 }
@@ -1849,7 +1835,6 @@ void DialogImport::setDocumentLocator(
 Reference< xml::input::XElement > DialogImport::startRootElement(
     sal_Int32 nUid, OUString const & rLocalName,
     Reference< xml::input::XAttributes > const & xAttributes )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     if (XMLNS_DIALOGS_UID != nUid)
     {
@@ -1929,7 +1914,6 @@ Reference< xml::input::XElement > DialogImport::getStyle(
 Reference< xml::sax::XDocumentHandler > SAL_CALL importDialogModel(
     Reference< container::XNameContainer > const & xDialogModel,
     Reference< XComponentContext > const & xContext )
-    SAL_THROW( (Exception) )
 {
     return ::xmlscript::createDocumentHandler(
         static_cast< xml::input::XRoot * >(

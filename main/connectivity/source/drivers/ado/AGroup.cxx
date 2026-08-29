@@ -110,7 +110,7 @@ Sequence< sal_Int8 > OAdoGroup::getUnoTunnelImplementationId()
 
 // com::sun::star::lang::XUnoTunnel
 //------------------------------------------------------------------
-sal_Int64 OAdoGroup::getSomething( const Sequence< sal_Int8 > & rId ) throw (RuntimeException)
+sal_Int64 OAdoGroup::getSomething( const Sequence< sal_Int8 > & rId )
 {
 	return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
 				? reinterpret_cast< sal_Int64 >( this )
@@ -118,7 +118,7 @@ sal_Int64 OAdoGroup::getSomething( const Sequence< sal_Int8 > & rId ) throw (Run
 }
 
 // -------------------------------------------------------------------------
-void OAdoGroup::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const Any& rValue)throw (Exception)
+void OAdoGroup::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const Any& rValue)
 {
 	if(m_aGroup.IsValid())
 	{
@@ -150,12 +150,12 @@ void OAdoGroup::getFastPropertyValue(Any& rValue,sal_Int32 nHandle) const
 }
 // -------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL OAdoGroup::getPrivileges( const ::rtl::OUString& objName, sal_Int32 objType ) throw(::com::sun::star::sdbc::SQLException, RuntimeException)
+sal_Int32 SAL_CALL OAdoGroup::getPrivileges( const ::rtl::OUString& objName, sal_Int32 objType )
 {
 	return MapRight(m_aGroup.GetPermissions(objName,MapObjectType(objType)));
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OAdoGroup::getGrantablePrivileges( const ::rtl::OUString& objName, sal_Int32 objType ) throw(::com::sun::star::sdbc::SQLException, RuntimeException)
+sal_Int32 SAL_CALL OAdoGroup::getGrantablePrivileges( const ::rtl::OUString& objName, sal_Int32 objType )
 {
 	RightsEnum eNum = m_aGroup.GetPermissions(objName,MapObjectType(objType));
 	if(eNum & adRightWithGrant)
@@ -163,12 +163,12 @@ sal_Int32 SAL_CALL OAdoGroup::getGrantablePrivileges( const ::rtl::OUString& obj
 	return 0;
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OAdoGroup::grantPrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges ) throw(::com::sun::star::sdbc::SQLException, RuntimeException)
+void SAL_CALL OAdoGroup::grantPrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges )
 {
 	m_aGroup.SetPermissions(objName,MapObjectType(objType),adAccessGrant,Map2Right(objPrivileges));
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OAdoGroup::revokePrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges ) throw(::com::sun::star::sdbc::SQLException, RuntimeException)
+void SAL_CALL OAdoGroup::revokePrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges )
 {
 	m_aGroup.SetPermissions(objName,MapObjectType(objType),adAccessDeny,Map2Right(objPrivileges));
 }

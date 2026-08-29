@@ -54,14 +54,11 @@ public:
     virtual ~RtfExportFilter();
 
     // XFilter
-    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL cancel(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor );
+    virtual void SAL_CALL cancel(  );
 
     // XExporter
-    virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-        throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 
     RtfWriter m_aWriter;
 };
@@ -71,8 +68,7 @@ public:
     throw();
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL RtfExport_createInstance(
                                                                         const ::com::sun::star::uno::Reference<
-                                                                        com::sun::star::lang::XMultiServiceFactory > &xMSF)
-    throw( ::com::sun::star::uno::Exception );
+                                                                        com::sun::star::lang::XMultiServiceFactory > &xMSF);
 
 #define IMPL_NAME_RTFEXPORT "com.sun.star.comp.Writer.RtfExport"
 

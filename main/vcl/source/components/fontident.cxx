@@ -63,15 +63,15 @@ FontIdentificator() {}
 
 
 	// XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService( const OUString& ) throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName(  );
+    virtual ::sal_Bool SAL_CALL supportsService( const OUString& );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
 
     // XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& ) throw (Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& );
 
     // XMaterialHolder
-    virtual Any SAL_CALL getMaterial() throw(RuntimeException);
+    virtual Any SAL_CALL getMaterial();
 
 };
 
@@ -81,7 +81,7 @@ FontIdentificator::~FontIdentificator()
 {
 }
 
-void SAL_CALL FontIdentificator::initialize( const Sequence<Any>& i_rArgs ) throw(Exception,RuntimeException)
+void SAL_CALL FontIdentificator::initialize( const Sequence<Any>& i_rArgs )
 {
 	if( !ImplGetSVData() )
 		return; // VCL not initialized
@@ -99,7 +99,7 @@ void SAL_CALL FontIdentificator::initialize( const Sequence<Any>& i_rArgs ) thro
     }
 }
 
-Any SAL_CALL FontIdentificator::getMaterial() throw(RuntimeException)
+Any SAL_CALL FontIdentificator::getMaterial()
 {
 	if( !ImplGetSVData() )
 		return Any(); // VCL not initialized
@@ -183,12 +183,12 @@ Reference< XInterface > SAL_CALL FontIdentificator_createInstance( const Referen
 
 
 // XServiceInfo
-OUString SAL_CALL FontIdentificator::getImplementationName() throw (RuntimeException)
+OUString SAL_CALL FontIdentificator::getImplementationName()
 {
 	return FontIdentificator_getImplementationName();
 }
 
-sal_Bool SAL_CALL FontIdentificator::supportsService( const OUString& i_rServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL FontIdentificator::supportsService( const OUString& i_rServiceName )
 {
 	Sequence< OUString > aSN( FontIdentificator_getSupportedServiceNames() );
 	for( sal_Int32 nService = 0; nService < aSN.getLength(); nService++ )
@@ -199,7 +199,7 @@ sal_Bool SAL_CALL FontIdentificator::supportsService( const OUString& i_rService
 	return sal_False;
 }
 
-Sequence< OUString > SAL_CALL FontIdentificator::getSupportedServiceNames() throw (RuntimeException)
+Sequence< OUString > SAL_CALL FontIdentificator::getSupportedServiceNames()
 {
 	return FontIdentificator_getSupportedServiceNames();
 }

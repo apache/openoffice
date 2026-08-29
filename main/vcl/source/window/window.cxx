@@ -8614,8 +8614,8 @@ uno::Reference< XDragSource > Window::GetDragSource()
 #if defined WNT || defined OS2
                         aDragSourceSN = OUString::createFromAscii( "com.sun.star.datatransfer.dnd.OleDragSource" );
                         aDropTargetSN = OUString::createFromAscii( "com.sun.star.datatransfer.dnd.OleDropTarget" );
-                        aDragSourceAL[ 1 ] = makeAny( (sal_uInt32) pEnvData->hWnd );
-                        aDropTargetAL[ 0 ] = makeAny( (sal_uInt32) pEnvData->hWnd );
+                        aDragSourceAL[ 1 ] = makeAny( (sal_uInt64)(sal_uIntPtr) pEnvData->hWnd );
+                        aDropTargetAL[ 0 ] = makeAny( (sal_uInt64)(sal_uIntPtr) pEnvData->hWnd );
 #elif defined QUARTZ
 			/* FIXME: Mac OS X specific dnd interface does not exist! *
 			 * Using Windows based dnd as a temporary solution        */

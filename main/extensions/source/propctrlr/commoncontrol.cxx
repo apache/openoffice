@@ -64,37 +64,37 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    ::sal_Int16 SAL_CALL ControlHelper::getControlType() throw (RuntimeException)
+    ::sal_Int16 SAL_CALL ControlHelper::getControlType()
     {
         return m_nControlType;
     }
 
     //--------------------------------------------------------------------
-    Reference< XPropertyControlContext > SAL_CALL ControlHelper::getControlContext() throw (RuntimeException)
+    Reference< XPropertyControlContext > SAL_CALL ControlHelper::getControlContext()
     {
         return m_xContext;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ControlHelper::setControlContext( const Reference< XPropertyControlContext >& _controlcontext ) throw (RuntimeException)
+    void SAL_CALL ControlHelper::setControlContext( const Reference< XPropertyControlContext >& _controlcontext )
     {
         m_xContext = _controlcontext;
     }
 
     //--------------------------------------------------------------------
-    Reference< XWindow > SAL_CALL ControlHelper::getControlWindow() throw (RuntimeException)
+    Reference< XWindow > SAL_CALL ControlHelper::getControlWindow()
     {
         return VCLUnoHelper::GetInterface( m_pControlWindow );
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL ControlHelper::isModified(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL ControlHelper::isModified(  )
     {
         return m_bModified;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ControlHelper::notifyModifiedValue(  ) throw (RuntimeException)
+    void SAL_CALL ControlHelper::notifyModifiedValue(  )
     {
 		if ( isModified() && m_xContext.is() )
         {

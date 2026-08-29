@@ -46,7 +46,7 @@ public:
     /** Sort requests according to priority classes and then to priorities.
     */
     class Comparator { public:
-        bool operator() (const Request& rRequest1, const Request& rRequest2)
+        bool operator() (const Request& rRequest1, const Request& rRequest2) const
         {
             if (rRequest1.meClass == rRequest2.meClass)
                 return (rRequest1.mnPriorityInClass > rRequest2.mnPriorityInClass);

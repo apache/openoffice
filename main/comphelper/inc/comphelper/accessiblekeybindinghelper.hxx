@@ -64,12 +64,12 @@ namespace comphelper
 		OAccessibleKeyBindingHelper();
 		OAccessibleKeyBindingHelper( const OAccessibleKeyBindingHelper& rHelper );
 
-		void AddKeyBinding( const ::com::sun::star::uno::Sequence< ::com::sun::star::awt::KeyStroke >& rKeyBinding ) throw (::com::sun::star::uno::RuntimeException);
-		void AddKeyBinding( const ::com::sun::star::awt::KeyStroke& rKeyStroke ) throw (::com::sun::star::uno::RuntimeException);
+		void AddKeyBinding( const ::com::sun::star::uno::Sequence< ::com::sun::star::awt::KeyStroke >& rKeyBinding );
+		void AddKeyBinding( const ::com::sun::star::awt::KeyStroke& rKeyStroke );
 
 		// XAccessibleKeyBinding
-		virtual sal_Int32 SAL_CALL getAccessibleKeyBindingCount() throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::awt::KeyStroke > SAL_CALL getAccessibleKeyBinding( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL getAccessibleKeyBindingCount();
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::awt::KeyStroke > SAL_CALL getAccessibleKeyBinding( sal_Int32 nIndex );
 	};
 
 //..............................................................................

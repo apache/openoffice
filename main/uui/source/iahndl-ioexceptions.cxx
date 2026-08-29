@@ -109,7 +109,6 @@ UUIInteractionHelper::handleInteractiveIOException(
         bool bObtainErrorStringOnly,
         bool & bHasErrorString,
         rtl::OUString & rErrorString)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
     bHasErrorString = false;

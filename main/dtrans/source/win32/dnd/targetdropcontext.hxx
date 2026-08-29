@@ -49,10 +49,8 @@ public:
 
 
 	// XDropTargetDragContext
-    virtual void SAL_CALL acceptDrop( sal_Int8 dropOperation )
-		throw( RuntimeException);
-    virtual void SAL_CALL rejectDrop(  )
-		throw( RuntimeException);
+    virtual void SAL_CALL acceptDrop( sal_Int8 dropOperation );
+    virtual void SAL_CALL rejectDrop(  );
 
 
 /*	virtual Sequence< DataFlavor > SAL_CALL getCurrentDataFlavors(  )
@@ -62,7 +60,6 @@ public:
 */
 
 	// XDropTargetDropContext (inherits XDropTargetDragContext)
-    virtual void SAL_CALL dropComplete( sal_Bool success )
-		throw(  RuntimeException);
+    virtual void SAL_CALL dropComplete( sal_Bool success );
 };
 #endif

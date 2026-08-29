@@ -212,7 +212,7 @@ SvxSearchItem::SvxSearchItem( const SvxSearchItem& rItem ) :
 
 // -----------------------------------------------------------------------
 
-SvxSearchItem::~SvxSearchItem()
+SvxSearchItem::~SvxSearchItem() SAL_THROW( () )
 {
 }
 

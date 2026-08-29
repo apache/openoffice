@@ -64,12 +64,10 @@ public:
     // XAccessibleContext -----------------------------------------------------
 
     /** @return  The count of visible children. */
-    virtual sal_Int32 SAL_CALL getAccessibleChildCount()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleChildCount();
 
     /** @return  The role of this object (a table). */
-    virtual sal_Int16 SAL_CALL getAccessibleRole()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int16 SAL_CALL getAccessibleRole();
 
     /*  Derived classes have to implement:
         -   getAccessibleChild,
@@ -85,51 +83,37 @@ public:
     // XAccessibleTable -------------------------------------------------------
 
     /** @return  The number of used rows in the table (0 = empty table). */
-    virtual sal_Int32 SAL_CALL getAccessibleRowCount()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleRowCount();
 
     /** @return  The number of used columns in the table (0 = empty table). */
-    virtual sal_Int32 SAL_CALL getAccessibleColumnCount()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleColumnCount();
 
     /** @return  The row extent of the specified cell (always 1). */
     virtual sal_Int32 SAL_CALL
-    getAccessibleRowExtentAt( sal_Int32 nRow, sal_Int32 nColumn )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+    getAccessibleRowExtentAt( sal_Int32 nRow, sal_Int32 nColumn );
 
     /** @return  The column extent of the specified cell (always 1). */
     virtual sal_Int32 SAL_CALL
-    getAccessibleColumnExtentAt( sal_Int32 nRow, sal_Int32 nColumn )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+    getAccessibleColumnExtentAt( sal_Int32 nRow, sal_Int32 nColumn );
 
     /** @return  The caption cell of the table (not supported). */
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-    getAccessibleCaption()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getAccessibleCaption();
 
     /** @return  The summary object of the table (not supported). */
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-    getAccessibleSummary()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    getAccessibleSummary();
 
     /** @return  The child index of the specified cell. */
-    virtual sal_Int32 SAL_CALL getAccessibleIndex( sal_Int32 nRow, sal_Int32 nColumn )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleIndex( sal_Int32 nRow, sal_Int32 nColumn );
 
     /** @return  The row index of the specified child cell. */
-    virtual sal_Int32 SAL_CALL getAccessibleRow( sal_Int32 nChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleRow( sal_Int32 nChildIndex );
 
     /** @return  The column index of the specified child cell. */
-    virtual sal_Int32 SAL_CALL getAccessibleColumn( sal_Int32 nChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getAccessibleColumn( sal_Int32 nChildIndex );
 
     /*  Derived classes have to implement:
         -   getAccessibleRowDescription,
@@ -147,8 +131,7 @@ public:
 
     /** Queries for a new interface. */
     ::com::sun::star::uno::Any SAL_CALL queryInterface(
-            const ::com::sun::star::uno::Type& rType )
-        throw ( ::com::sun::star::uno::RuntimeException );
+            const ::com::sun::star::uno::Type& rType );
 
     /** Aquires the object (calls acquire() on base class). */
     virtual void SAL_CALL acquire() throw ();
@@ -159,12 +142,10 @@ public:
     // XTypeProvider ----------------------------------------------------------
 
     /** @return  A sequence of possible types (received from base classes). */
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
 
     /** @return  An unique implementation ID. */
-    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 protected:
     // internal helper methods ------------------------------------------------
@@ -203,23 +184,19 @@ protected:
     /** @attention  This method requires locked mutex's and a living object.
         @throws <type>IndexOutOfBoundsException</type>
         If the specified row index is invalid. */
-    void ensureIsValidRow( sal_Int32 nRow )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException );
+    void ensureIsValidRow( sal_Int32 nRow );
     /** @attention  This method requires locked mutex's and a living object.
         @throws <type>IndexOutOfBoundsException</type>
         If the specified column index is invalid. */
-    void ensureIsValidColumn( sal_Int32 nColumn )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException );
+    void ensureIsValidColumn( sal_Int32 nColumn );
     /** @attention  This method requires locked mutex's and a living object.
         @throws <type>IndexOutOfBoundsException</type>
         If the specified cell address is invalid. */
-    void ensureIsValidAddress( sal_Int32 nRow, sal_Int32 nColumn )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException );
+    void ensureIsValidAddress( sal_Int32 nRow, sal_Int32 nColumn );
     /** @attention  This method requires locked mutex's and a living object.
         @throws <type>IndexOutOfBoundsException</type>
         If the specified child index is invalid. */
-    void ensureIsValidIndex( sal_Int32 nChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException );
+    void ensureIsValidIndex( sal_Int32 nChildIndex );
 };
 
 // ============================================================================

@@ -116,8 +116,7 @@ class SdGRFFilter_ImplInteractionHdl : public ::cppu::WeakImplHelper1< com::sun:
 
 	sal_uInt16 GetErrorCode() const { return nFilterError; };
 
-	virtual void SAL_CALL	handle( const com::sun::star::uno::Reference< com::sun::star::task::XInteractionRequest >& )
-								throw( com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL	handle( const com::sun::star::uno::Reference< com::sun::star::task::XInteractionRequest >& );
 };
 
 SdGRFFilter_ImplInteractionHdl::~SdGRFFilter_ImplInteractionHdl()
@@ -125,7 +124,6 @@ SdGRFFilter_ImplInteractionHdl::~SdGRFFilter_ImplInteractionHdl()
 }
 
 void SdGRFFilter_ImplInteractionHdl::handle( const com::sun::star::uno::Reference< com::sun::star::task::XInteractionRequest >& xRequest )
-        throw( com::sun::star::uno::RuntimeException )
 {
 	if( !m_xInter.is() )
 		return;

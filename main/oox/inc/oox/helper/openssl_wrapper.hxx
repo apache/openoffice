@@ -34,13 +34,13 @@ namespace oox {
 
 // ============================================================================
 
-extern void throwOpenSSLException( const char *prefix ) throw ( ::com::sun::star::uno::Exception );
+extern void throwOpenSSLException( const char *prefix );
 
 
 class OpenSSLDigest
 {
 public:
-    OpenSSLDigest() throw ( ::com::sun::star::uno::Exception )
+    OpenSSLDigest()
     {
 #if OPENSSL_VERSION_NUMBER >= 0x10100000
         digest_ctx = EVP_MD_CTX_new();
@@ -60,31 +60,31 @@ public:
 #endif
     }
 
-    void initialize( const EVP_MD* aDigest ) throw ( ::com::sun::star::uno::Exception )
+    void initialize( const EVP_MD* aDigest )
     {
         if( 1 != EVP_DigestInit_ex( digest_ctx, aDigest, NULL ) )
             throwOpenSSLException( "Failed to initialize digest context" );
         digest = aDigest;
     }
 
-    int digestSize() throw ( ::com::sun::star::uno::Exception )
+    int digestSize()
     {
         return digestSize( digest );
     }
 
-    void update( const void *data, unsigned int count ) throw ( ::com::sun::star::uno::Exception )
+    void update( const void *data, unsigned int count )
     {
         if( 1 != EVP_DigestUpdate( digest_ctx, data, count ) )
             throwOpenSSLException( "Failed to update the digest context" );
     }
 
-    void final( unsigned char *md, unsigned int *count ) throw ( ::com::sun::star::uno::Exception )
+    void final( unsigned char *md, unsigned int *count )
     {
         if( 1 != EVP_DigestFinal_ex( digest_ctx, md, count ) )
             throwOpenSSLException( "Failed to finalize digest" );
     }
 
-    static int digestSize( const EVP_MD* digest ) throw ( ::com::sun::star::uno::Exception )
+    static int digestSize( const EVP_MD* digest )
     {
         int digest_size = EVP_MD_size( digest );
         if( digest_size < 0 )
@@ -105,7 +105,7 @@ private:
 class OpenSSLCipher
 {
 public:
-    OpenSSLCipher() throw ( ::com::sun::star::uno::Exception )
+    OpenSSLCipher()
     {
         cipher_ctx = EVP_CIPHER_CTX_new();
         if( cipher_ctx == NULL )
@@ -117,26 +117,26 @@ public:
         EVP_CIPHER_CTX_free( cipher_ctx );
     }
 
-    void initialize( const EVP_CIPHER *aCipher, const unsigned char *key, const unsigned char *iv, int enc ) throw ( ::com::sun::star::uno::Exception )
+    void initialize( const EVP_CIPHER *aCipher, const unsigned char *key, const unsigned char *iv, int enc )
     {
         if( 1 != EVP_CipherInit_ex( cipher_ctx, aCipher, NULL, key, iv, enc ) )
             throwOpenSSLException( "Failed to initialize the cipher context for decryption" );
         cipher = aCipher;
     }
 
-    void setPadding( int padding) throw ( ::com::sun::star::uno::Exception )
+    void setPadding( int padding)
     {
         if( 1 != EVP_CIPHER_CTX_set_padding( cipher_ctx, padding ) )
             throwOpenSSLException( "Failed to set cipher padding" );
     }
 
-    void update( const unsigned char* dataIn, int dataInSize, unsigned char *dataOut, int *dataOutSize ) throw ( ::com::sun::star::uno::Exception )
+    void update( const unsigned char* dataIn, int dataInSize, unsigned char *dataOut, int *dataOutSize )
     {
         if( 1 != EVP_CipherUpdate( cipher_ctx, dataOut, dataOutSize, dataIn, dataInSize ) )
             throwOpenSSLException( "EVP_CipherUpdate failed" );
     }
 
-    void final( unsigned char *dataOut, int *dataOutSize ) throw ( ::com::sun::star::uno::Exception )
+    void final( unsigned char *dataOut, int *dataOutSize )
     {
         if( 1 != EVP_CipherFinal( cipher_ctx, dataOut, dataOutSize ) )
             throwOpenSSLException( "EVP_CipherFinal failed" );

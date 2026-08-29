@@ -352,13 +352,11 @@ SalGtkFilePicker::SalGtkFilePicker( const uno::Reference<lang::XMultiServiceFact
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SalGtkFilePicker::addFilePickerListener( const uno::Reference<XFilePickerListener>& xListener )
-	throw( uno::RuntimeException )
 {
 	m_xListener = xListener;
 }
 
 void SAL_CALL SalGtkFilePicker::removeFilePickerListener( const uno::Reference<XFilePickerListener>& )
-	throw( uno::RuntimeException )
 {
 	m_xListener.clear();
 }
@@ -367,7 +365,7 @@ void SAL_CALL SalGtkFilePicker::removeFilePickerListener( const uno::Reference<X
 // XEventListener
 // -------------------------------------------------
 
-void SAL_CALL SalGtkFilePicker::disposing( const lang::EventObject& aEvent ) throw( uno::RuntimeException )
+void SAL_CALL SalGtkFilePicker::disposing( const lang::EventObject& aEvent )
 {
 	uno::Reference<XFilePickerListener> xFilePickerListener( aEvent.Source, ::com::sun::star::uno::UNO_QUERY );
 
@@ -666,7 +664,6 @@ void SalGtkFilePicker::ensureFilterList( const ::rtl::OUString& _rInitialCurrent
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL SalGtkFilePicker::appendFilter( const rtl::OUString& aTitle, const rtl::OUString& aFilter )
-	throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -685,7 +682,6 @@ void SAL_CALL SalGtkFilePicker::appendFilter( const rtl::OUString& aTitle, const
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL SalGtkFilePicker::setCurrentFilter( const rtl::OUString& aTitle )
-	throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -751,7 +747,7 @@ void SalGtkFilePicker::UpdateFilterfromUI()
 	}
 }
 
-rtl::OUString SAL_CALL SalGtkFilePicker::getCurrentFilter() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL SalGtkFilePicker::getCurrentFilter()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -770,7 +766,6 @@ rtl::OUString SAL_CALL SalGtkFilePicker::getCurrentFilter() throw( uno::RuntimeE
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL SalGtkFilePicker::appendFilterGroup( const rtl::OUString& /*sGroupTitle*/, const uno::Sequence<beans::StringPair>& aFilters )
-	throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -799,7 +794,7 @@ void SAL_CALL SalGtkFilePicker::appendFilterGroup( const rtl::OUString& /*sGroup
 // XFilePicker functions
 //-----------------------------------------------------------------------------------------
 
-void SAL_CALL SalGtkFilePicker::setMultiSelectionMode( sal_Bool bMode ) throw( uno::RuntimeException )
+void SAL_CALL SalGtkFilePicker::setMultiSelectionMode( sal_Bool bMode )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -809,7 +804,6 @@ void SAL_CALL SalGtkFilePicker::setMultiSelectionMode( sal_Bool bMode ) throw( u
 }
 
 void SAL_CALL SalGtkFilePicker::setDefaultName( const rtl::OUString& aName )
-	throw( uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -824,17 +818,16 @@ void SAL_CALL SalGtkFilePicker::setDefaultName( const rtl::OUString& aName )
 }
 
 void SAL_CALL SalGtkFilePicker::setDisplayDirectory( const rtl::OUString& rDirectory )
-	throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
 	implsetDisplayDirectory(rDirectory);
 }
 
-rtl::OUString SAL_CALL SalGtkFilePicker::getDisplayDirectory() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL SalGtkFilePicker::getDisplayDirectory()
 {
 	return implgetDisplayDirectory();
 }
 
-uno::Sequence<rtl::OUString> SAL_CALL SalGtkFilePicker::getFiles() throw( uno::RuntimeException )
+uno::Sequence<rtl::OUString> SAL_CALL SalGtkFilePicker::getFiles()
 {
 	uno::Sequence< rtl::OUString > aFiles = getSelectedFiles();
 	/*
@@ -846,7 +839,7 @@ uno::Sequence<rtl::OUString> SAL_CALL SalGtkFilePicker::getFiles() throw( uno::R
 	return aFiles;
 }
 
-uno::Sequence<rtl::OUString> SAL_CALL SalGtkFilePicker::getSelectedFiles() throw( uno::RuntimeException )
+uno::Sequence<rtl::OUString> SAL_CALL SalGtkFilePicker::getSelectedFiles()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -993,12 +986,12 @@ uno::Sequence<rtl::OUString> SAL_CALL SalGtkFilePicker::getSelectedFiles() throw
 // XExecutableDialog functions
 //-----------------------------------------------------------------------------------------
 
-void SAL_CALL SalGtkFilePicker::setTitle( const rtl::OUString& rTitle ) throw( uno::RuntimeException )
+void SAL_CALL SalGtkFilePicker::setTitle( const rtl::OUString& rTitle )
 {
 	implsetTitle(rTitle);
 }
 
-sal_Int16 SAL_CALL SalGtkFilePicker::execute() throw( uno::RuntimeException )
+sal_Int16 SAL_CALL SalGtkFilePicker::execute()
 {
 	OSL_TRACE( "1: HERE WE ARE\n");
 	OSL_ASSERT( m_pDialog != NULL );
@@ -1305,7 +1298,6 @@ uno::Any SalGtkFilePicker::HandleGetListValue(GtkComboBox *pWidget, sal_Int16 nC
 }
 
 void SAL_CALL SalGtkFilePicker::setValue( sal_Int16 nControlId, sal_Int16 nControlAction, const uno::Any& rValue )
-	throw( uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1333,7 +1325,6 @@ void SAL_CALL SalGtkFilePicker::setValue( sal_Int16 nControlId, sal_Int16 nContr
 }
 
 uno::Any SAL_CALL SalGtkFilePicker::getValue( sal_Int16 nControlId, sal_Int16 nControlAction )
-	throw( uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1358,7 +1349,6 @@ uno::Any SAL_CALL SalGtkFilePicker::getValue( sal_Int16 nControlId, sal_Int16 nC
 }
 
 void SAL_CALL SalGtkFilePicker::enableControl( sal_Int16 nControlId, sal_Bool bEnable )
-throw( uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1386,7 +1376,6 @@ throw( uno::RuntimeException )
 }
 
 void SAL_CALL SalGtkFilePicker::setLabel( sal_Int16 nControlId, const ::rtl::OUString& rLabel )
-	throw( uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1423,7 +1412,6 @@ void SAL_CALL SalGtkFilePicker::setLabel( sal_Int16 nControlId, const ::rtl::OUS
 }
 
 rtl::OUString SAL_CALL SalGtkFilePicker::getLabel( sal_Int16 nControlId )
-	throw( uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1447,7 +1435,7 @@ rtl::OUString SAL_CALL SalGtkFilePicker::getLabel( sal_Int16 nControlId )
 // XFilePreview functions
 //------------------------------------------------------------------------------------
 
-uno::Sequence<sal_Int16> SAL_CALL SalGtkFilePicker::getSupportedImageFormats() throw( uno::RuntimeException )
+uno::Sequence<sal_Int16> SAL_CALL SalGtkFilePicker::getSupportedImageFormats()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1455,7 +1443,7 @@ uno::Sequence<sal_Int16> SAL_CALL SalGtkFilePicker::getSupportedImageFormats() t
 	return uno::Sequence<sal_Int16>();
 }
 
-sal_Int32 SAL_CALL SalGtkFilePicker::getTargetColorDepth() throw( uno::RuntimeException )
+sal_Int32 SAL_CALL SalGtkFilePicker::getTargetColorDepth()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1463,14 +1451,14 @@ sal_Int32 SAL_CALL SalGtkFilePicker::getTargetColorDepth() throw( uno::RuntimeEx
 	return 0;
 }
 
-sal_Int32 SAL_CALL SalGtkFilePicker::getAvailableWidth() throw( uno::RuntimeException )
+sal_Int32 SAL_CALL SalGtkFilePicker::getAvailableWidth()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
 	return m_PreviewImageWidth;
 }
 
-sal_Int32 SAL_CALL SalGtkFilePicker::getAvailableHeight() throw( uno::RuntimeException )
+sal_Int32 SAL_CALL SalGtkFilePicker::getAvailableHeight()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1478,7 +1466,6 @@ sal_Int32 SAL_CALL SalGtkFilePicker::getAvailableHeight() throw( uno::RuntimeExc
 }
 
 void SAL_CALL SalGtkFilePicker::setImage( sal_Int16 /*aImageFormat*/, const uno::Any& /*aImage*/ )
-	throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1581,7 +1568,7 @@ void SalGtkFilePicker::update_preview_cb( GtkFileChooser *file_chooser, SalGtkFi
 		g_free( filename );
 }
 
-sal_Bool SAL_CALL SalGtkFilePicker::setShowState( sal_Bool bShowState ) throw( uno::RuntimeException )
+sal_Bool SAL_CALL SalGtkFilePicker::setShowState( sal_Bool bShowState )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1615,7 +1602,7 @@ sal_Bool SAL_CALL SalGtkFilePicker::setShowState( sal_Bool bShowState ) throw( u
 	return true;
 }
 
-sal_Bool SAL_CALL SalGtkFilePicker::getShowState() throw( uno::RuntimeException )
+sal_Bool SAL_CALL SalGtkFilePicker::getShowState()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1627,7 +1614,6 @@ sal_Bool SAL_CALL SalGtkFilePicker::getShowState() throw( uno::RuntimeException 
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SalGtkFilePicker::initialize( const uno::Sequence<uno::Any>& aArguments )
-	throw( uno::Exception, uno::RuntimeException )
 {
 	// parameter checking
 	uno::Any aAny;
@@ -1794,7 +1780,7 @@ void SalGtkFilePicker::preview_toggled_cb( GtkObject *cb, SalGtkFilePicker* pobj
 // XCancellable
 //------------------------------------------------------------------------------------
 
-void SAL_CALL SalGtkFilePicker::cancel() throw( uno::RuntimeException )
+void SAL_CALL SalGtkFilePicker::cancel()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -1806,7 +1792,6 @@ void SAL_CALL SalGtkFilePicker::cancel() throw( uno::RuntimeException )
 // -------------------------------------------------
 
 rtl::OUString SAL_CALL SalGtkFilePicker::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return rtl::OUString::createFromAscii( FILE_PICKER_IMPL_NAME );
 }
@@ -1816,7 +1801,6 @@ rtl::OUString SAL_CALL SalGtkFilePicker::getImplementationName()
 // -------------------------------------------------
 
 sal_Bool SAL_CALL SalGtkFilePicker::supportsService( const rtl::OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
 	uno::Sequence <rtl::OUString> SupportedServicesNames = FilePicker_getSupportedServiceNames();
 
@@ -1832,7 +1816,6 @@ sal_Bool SAL_CALL SalGtkFilePicker::supportsService( const rtl::OUString& Servic
 // -------------------------------------------------
 
 uno::Sequence<rtl::OUString> SAL_CALL SalGtkFilePicker::getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	return FilePicker_getSupportedServiceNames();
 }

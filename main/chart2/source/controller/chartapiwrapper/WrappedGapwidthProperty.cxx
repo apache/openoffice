@@ -73,7 +73,6 @@ WrappedBarPositionProperty_Base::~WrappedBarPositionProperty_Base()
 }
 
 void WrappedBarPositionProperty_Base::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Int32 nNewValue = 0;
     if( ! (rOuterValue >>= nNewValue) )
@@ -123,7 +122,6 @@ void WrappedBarPositionProperty_Base::setPropertyValue( const Any& rOuterValue, 
 }
 
 Any WrappedBarPositionProperty_Base::getPropertyValue( const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Reference< chart2::XDiagram > xDiagram( m_spChart2ModelContact->getChart2Diagram() );
     if( xDiagram.is() )

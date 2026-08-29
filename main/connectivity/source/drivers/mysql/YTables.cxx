@@ -116,7 +116,7 @@ sdbcx::ObjectType OTables::createObject(const ::rtl::OUString& _rName)
 	return xRet;
 }
 // -------------------------------------------------------------------------
-void OTables::impl_refresh(  ) throw(RuntimeException)
+void OTables::impl_refresh(  )
 {
 	static_cast<OMySQLCatalog&>(m_rParent).refreshTables();
 }

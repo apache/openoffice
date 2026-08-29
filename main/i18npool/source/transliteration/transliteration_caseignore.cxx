@@ -61,13 +61,12 @@ Transliteration_simplecaseignore::Transliteration_simplecaseignore()
 
 void SAL_CALL
 Transliteration_caseignore::loadModule( TransliterationModules modName, const Locale& rLocale )
-	throw(RuntimeException)
 {
 	moduleLoaded = (TransliterationModules) (moduleLoaded|modName);
 	aLocale = rLocale;
 }
 
-sal_Int16 SAL_CALL Transliteration_caseignore::getType() throw(RuntimeException)
+sal_Int16 SAL_CALL Transliteration_caseignore::getType()
 {
 	// It's NOT TransliterationType::ONE_TO_ONE because it's using casefolding
 	return TransliterationType::IGNORE;
@@ -76,7 +75,6 @@ sal_Int16 SAL_CALL Transliteration_caseignore::getType() throw(RuntimeException)
 
 Sequence< OUString > SAL_CALL
 Transliteration_caseignore::transliterateRange( const OUString& str1, const OUString& str2 )
-	throw( RuntimeException)
 {
 	if (str1.getLength() != 1 || str2.getLength() != 1)
 	    throw RuntimeException();
@@ -111,7 +109,6 @@ sal_Bool SAL_CALL
 Transliteration_caseignore::equals(
 	const ::rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1, sal_Int32& nMatch1,
 	const ::rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return (compare(str1, pos1, nCount1, nMatch1, str2, pos2, nCount2, nMatch2) == 0);
 }
@@ -120,7 +117,6 @@ sal_Int32 SAL_CALL
 Transliteration_caseignore::compareSubstring(
 	const ::rtl::OUString& str1, sal_Int32 off1, sal_Int32 len1,
 	const ::rtl::OUString& str2, sal_Int32 off2, sal_Int32 len2)
-	throw(RuntimeException)
 {
 	sal_Int32 nMatch1, nMatch2;
 	return compare(str1, off1, len1, nMatch1, str2, off2, len2, nMatch2);
@@ -131,7 +127,6 @@ sal_Int32 SAL_CALL
 Transliteration_caseignore::compareString(
 	const ::rtl::OUString& str1,
 	const ::rtl::OUString& str2)
-	throw(RuntimeException)
 {
 	sal_Int32 nMatch1, nMatch2;
 	return compare(str1, 0, str1.getLength(), nMatch1, str2, 0, str2.getLength(), nMatch2);
@@ -141,7 +136,6 @@ sal_Int32 SAL_CALL
 Transliteration_caseignore::compare(
 	const ::rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1, sal_Int32& nMatch1,
 	const ::rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2)
-	throw(RuntimeException)
 {
 	const sal_Unicode *unistr1 = (sal_Unicode*) str1.getStr() + pos1;
 	const sal_Unicode *unistr2 = (sal_Unicode*) str2.getStr() + pos2;

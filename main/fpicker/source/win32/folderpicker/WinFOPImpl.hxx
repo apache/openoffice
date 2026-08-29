@@ -52,21 +52,17 @@ public:
 	// XExecutableDialog
 	//-----------------------------------------------------------------------------------------
 
-    virtual sal_Int16 SAL_CALL execute(  )
-		throw( com::sun::star::uno::RuntimeException );
+    virtual sal_Int16 SAL_CALL execute(  );
 
 	//-----------------------------------------------------
 	// XFolderPicker
 	//-----------------------------------------------------
 
-	virtual void SAL_CALL setDisplayDirectory( const rtl::OUString& aDirectory )
-		throw( com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL setDisplayDirectory( const rtl::OUString& aDirectory );
 
-	virtual rtl::OUString SAL_CALL getDisplayDirectory( )
-		throw( com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getDisplayDirectory( );
 
-    virtual rtl::OUString SAL_CALL getDirectory( )
-        throw( com::sun::star::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getDirectory( );
 
 protected:
 	virtual void SAL_CALL onSelChanged( const rtl::OUString& aNewPath );

@@ -74,14 +74,14 @@ namespace svxform
 
 	// XPropertyChangeListener
 	//------------------------------------------------------------------------
-	void SAL_CALL OFormComponentObserver::disposing(const EventObject& Source) throw( RuntimeException )
+	void SAL_CALL OFormComponentObserver::disposing(const EventObject& Source)
 	{
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "OFormComponentObserver::disposing" );
 		Remove( Source.Source );
 	}
 
 	//------------------------------------------------------------------------
-	void SAL_CALL OFormComponentObserver::propertyChange(const PropertyChangeEvent& evt) throw(RuntimeException)
+	void SAL_CALL OFormComponentObserver::propertyChange(const PropertyChangeEvent& evt)
 	{
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "OFormComponentObserver::propertyChange" );
 		if( !m_pNavModel ) return;
@@ -107,7 +107,7 @@ namespace svxform
 
 	// XContainerListener
 	//------------------------------------------------------------------------------
-	void SAL_CALL OFormComponentObserver::elementInserted(const ContainerEvent& evt) throw(RuntimeException)
+	void SAL_CALL OFormComponentObserver::elementInserted(const ContainerEvent& evt)
 	{
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "OFormComponentObserver::elementInserted" );
 		if (IsLocked() || !m_pNavModel)
@@ -148,7 +148,7 @@ namespace svxform
 	}
 
 	//------------------------------------------------------------------------------
-	void SAL_CALL OFormComponentObserver::elementReplaced(const ContainerEvent& evt) throw(RuntimeException)
+	void SAL_CALL OFormComponentObserver::elementReplaced(const ContainerEvent& evt)
 	{
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "OFormComponentObserver::elementReplaced" );
 		if (IsLocked() || !m_pNavModel)
@@ -198,7 +198,7 @@ namespace svxform
 	}
 
 	//------------------------------------------------------------------------------
-	void SAL_CALL OFormComponentObserver::elementRemoved(const ContainerEvent& evt) throw(RuntimeException)
+	void SAL_CALL OFormComponentObserver::elementRemoved(const ContainerEvent& evt)
 	{
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "OFormComponentObserver::elementRemoved" );
 		Reference< XInterface > xElement;

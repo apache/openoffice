@@ -77,7 +77,7 @@ namespace rptui
 		virtual void			Resize();
         virtual long            Notify( NotifyEvent& rNEvt );
         // OPropertyChangeListener
-		virtual void	        _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void	        _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent);
 	public:
 		OScrollWindowHelper( ODesignView* _pReportDesignView);
 		virtual ~OScrollWindowHelper();

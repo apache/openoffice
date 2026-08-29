@@ -82,7 +82,7 @@ Reference<XInterface> SAL_CALL PanelFactory_createInstance (
 
 
 
-::rtl::OUString PanelFactory_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString PanelFactory_getImplementationName (void)
 {
     return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("org.openoffice.comp.Draw.framework.PanelFactory"));
@@ -92,7 +92,6 @@ Reference<XInterface> SAL_CALL PanelFactory_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL PanelFactory_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.framework.PanelFactory"));
@@ -132,10 +131,6 @@ void SAL_CALL PanelFactory::disposing (void)
 Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     const ::rtl::OUString& rsUIElementResourceURL,
     const ::cssu::Sequence<css::beans::PropertyValue>& rArguments)
-    throw(
-        css::container::NoSuchElementException,
-        css::lang::IllegalArgumentException,
-        cssu::RuntimeException)
 {
     // Process arguments.
     const ::comphelper::NamedValueCollection aArguments (rArguments);

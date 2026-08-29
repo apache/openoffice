@@ -154,7 +154,6 @@ PopupWindowController::~PopupWindowController()
 
 // XInterface
 Any SAL_CALL PopupWindowController::queryInterface( const Type& aType )
-throw (RuntimeException)
 {
     Any a( ToolboxController::queryInterface( aType ) );
     if ( a.hasValue() )
@@ -174,7 +173,7 @@ void SAL_CALL PopupWindowController::release() throw ()
 }
 
 // XServiceInfo
-sal_Bool SAL_CALL PopupWindowController::supportsService( const OUString& ServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL PopupWindowController::supportsService( const OUString& ServiceName )
 {
     const Sequence< OUString > aSNL( getSupportedServiceNames() );
     const OUString * pArray = aSNL.getConstArray();
@@ -187,7 +186,7 @@ sal_Bool SAL_CALL PopupWindowController::supportsService( const OUString& Servic
 }
 
 // XInitialization
-void SAL_CALL PopupWindowController::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL PopupWindowController::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
 {
 	svt::ToolboxController::initialize( aArguments );
 	if( m_aCommandURL.getLength() )
@@ -195,7 +194,7 @@ void SAL_CALL PopupWindowController::initialize( const ::com::sun::star::uno::Se
 }
 
 // XComponent
-void SAL_CALL PopupWindowController::dispose() throw (RuntimeException)
+void SAL_CALL PopupWindowController::dispose()
 {
 	if( m_aCommandURL.getLength() )
 		removeStatusListener( m_aCommandURL );
@@ -205,29 +204,29 @@ void SAL_CALL PopupWindowController::dispose() throw (RuntimeException)
 
 
 // XStatusListener
-void SAL_CALL PopupWindowController::statusChanged( const frame::FeatureStateEvent& rEvent ) throw ( RuntimeException )
+void SAL_CALL PopupWindowController::statusChanged( const frame::FeatureStateEvent& rEvent )
 {
 	svt::ToolboxController::statusChanged(rEvent);
 	enable( rEvent.IsEnabled );
 }
 
 // XToolbarController
-void SAL_CALL PopupWindowController::execute( sal_Int16 KeyModifier ) throw (RuntimeException)
+void SAL_CALL PopupWindowController::execute( sal_Int16 KeyModifier )
 {
 	svt::ToolboxController::execute( KeyModifier );
 }
 
-void SAL_CALL PopupWindowController::click() throw (RuntimeException)
+void SAL_CALL PopupWindowController::click()
 {
 	svt::ToolboxController::click();
 }
 
-void SAL_CALL PopupWindowController::doubleClick() throw (RuntimeException)
+void SAL_CALL PopupWindowController::doubleClick()
 {
 	svt::ToolboxController::doubleClick();
 }
 
-Reference< awt::XWindow > SAL_CALL PopupWindowController::createPopupWindow() throw (RuntimeException)
+Reference< awt::XWindow > SAL_CALL PopupWindowController::createPopupWindow()
 {
 	ToolBox* pToolBox = dynamic_cast< ToolBox* >( VCLUnoHelper::GetWindow( getParent() ) );
 	if( pToolBox )
@@ -249,7 +248,6 @@ Reference< awt::XWindow > SAL_CALL PopupWindowController::createPopupWindow() th
 }
 
 Reference< awt::XWindow > SAL_CALL PopupWindowController::createItemWindow( const Reference< awt::XWindow >& /*Parent*/ )
-    throw (RuntimeException)
 {
     return Reference< awt::XWindow >();
 }

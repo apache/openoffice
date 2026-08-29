@@ -334,11 +334,11 @@ private:
 
     void                        InitDefLocales();
     const ::com::sun::star::lang::Locale& GetLocale( sal_uInt32 nIndex );
-    ResMgr&                     GetResMgr() throw( ::com::sun::star::uno::RuntimeException );
+    ResMgr&                     GetResMgr();
     void                        InitData();
 
-    ::rtl::OUString             GetDisplFuncStr( sal_uInt16 nResId ) throw( ::com::sun::star::uno::RuntimeException );
-    ::rtl::OUString             GetFuncDescrStr( sal_uInt16 nResId, sal_uInt16 nStrIndex ) throw( ::com::sun::star::uno::RuntimeException );
+    ::rtl::OUString             GetDisplFuncStr( sal_uInt16 nResId );
+    ::rtl::OUString             GetFuncDescrStr( sal_uInt16 nResId, sal_uInt16 nStrIndex );
 
 public:
                                 ScaDateAddIn();
@@ -348,28 +348,28 @@ public:
     static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static();
 
                                 // XAddIn
-    virtual ::rtl::OUString SAL_CALL getProgrammaticFuntionName( const ::rtl::OUString& aDisplayName ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getDisplayFunctionName( const ::rtl::OUString& aProgrammaticName ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getFunctionDescription( const ::rtl::OUString& aProgrammaticName ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getDisplayArgumentName( const ::rtl::OUString& aProgrammaticName, sal_Int32 nArgument ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getArgumentDescription( const ::rtl::OUString& aProgrammaticName, sal_Int32 nArgument ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getProgrammaticCategoryName( const ::rtl::OUString& aProgrammaticName ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL getDisplayCategoryName( const ::rtl::OUString& aProgrammaticName ) throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getProgrammaticFuntionName( const ::rtl::OUString& aDisplayName );
+    virtual ::rtl::OUString SAL_CALL getDisplayFunctionName( const ::rtl::OUString& aProgrammaticName );
+    virtual ::rtl::OUString SAL_CALL getFunctionDescription( const ::rtl::OUString& aProgrammaticName );
+    virtual ::rtl::OUString SAL_CALL getDisplayArgumentName( const ::rtl::OUString& aProgrammaticName, sal_Int32 nArgument );
+    virtual ::rtl::OUString SAL_CALL getArgumentDescription( const ::rtl::OUString& aProgrammaticName, sal_Int32 nArgument );
+    virtual ::rtl::OUString SAL_CALL getProgrammaticCategoryName( const ::rtl::OUString& aProgrammaticName );
+    virtual ::rtl::OUString SAL_CALL getDisplayCategoryName( const ::rtl::OUString& aProgrammaticName );
 
                                 // XCompatibilityNames
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::LocalizedName > SAL_CALL getCompatibilityNames( const ::rtl::OUString& aProgrammaticName ) throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::LocalizedName > SAL_CALL getCompatibilityNames( const ::rtl::OUString& aProgrammaticName );
 
                                 // XLocalizable
-    virtual void SAL_CALL       setLocale( const ::com::sun::star::lang::Locale& eLocale ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale() throw( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL       setLocale( const ::com::sun::star::lang::Locale& eLocale );
+    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale();
 
                                 // XServiceName
-    virtual ::rtl::OUString SAL_CALL getServiceName() throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getServiceName();
 
                                 // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL   supportsService( const ::rtl::OUString& ServiceName ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL   supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     //  methods from own interfaces start here
 
@@ -377,45 +377,37 @@ public:
     virtual sal_Int32 SAL_CALL  getDiffWeeks(
                                     const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xOptions,
                                     sal_Int32 nEndDate, sal_Int32 nStartDate,
-                                    sal_Int32 nMode )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    sal_Int32 nMode );
 
     virtual sal_Int32 SAL_CALL  getDiffMonths(
                                     const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xOptions,
                                     sal_Int32 nEndDate, sal_Int32 nStartDate,
-                                    sal_Int32 nMode )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    sal_Int32 nMode );
 
     virtual sal_Int32 SAL_CALL  getDiffYears(
                                     const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xOptions,
                                     sal_Int32 nEndDate, sal_Int32 nStartDate,
-                                    sal_Int32 nMode )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    sal_Int32 nMode );
 
     virtual sal_Int32 SAL_CALL  getIsLeapYear(
                                     const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xOptions,
-                                    sal_Int32 nDate )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    sal_Int32 nDate );
 
     virtual sal_Int32 SAL_CALL  getDaysInMonth(
                                     const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xOptions,
-                                    sal_Int32 nDate )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    sal_Int32 nDate );
 
     virtual sal_Int32 SAL_CALL  getDaysInYear(
                                     const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xOptions,
-                                    sal_Int32 nDate )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    sal_Int32 nDate );
 
     virtual sal_Int32 SAL_CALL  getWeeksInYear(
                                     const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xOptions,
-                                    sal_Int32 nDate )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    sal_Int32 nDate );
 
                                 // XMiscFunctions
     virtual ::rtl::OUString SAL_CALL getRot13(
-                                    const ::rtl::OUString& aSrcText )
-                                throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+                                    const ::rtl::OUString& aSrcText );
 };
 
 //------------------------------------------------------------------

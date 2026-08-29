@@ -186,7 +186,6 @@ namespace svxform
 	//--------------------------------------------------------------------
 	Reference< XConnection> OStaticDataAccessTools::getConnection_withFeedback(const ::rtl::OUString& _rDataSourceName,
 		const ::rtl::OUString& _rUser, const ::rtl::OUString& _rPwd, const Reference< XMultiServiceFactory>& _rxFactory) const
-			SAL_THROW ( (SQLException) )
 	{
 		Reference< XConnection > xReturn;
 		if ( ensureLoaded() )
@@ -197,7 +196,6 @@ namespace svxform
 	//--------------------------------------------------------------------
 	Reference< XConnection > OStaticDataAccessTools::connectRowset( const Reference< XRowSet >& _rxRowSet,
         const Reference< XMultiServiceFactory >& _rxFactory, sal_Bool _bSetAsActiveConnection ) const
-        SAL_THROW ( ( SQLException, WrappedTargetException, RuntimeException ) )
 	{
 		Reference< XConnection > xReturn;
 		if ( ensureLoaded() )
@@ -206,7 +204,7 @@ namespace svxform
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XConnection > OStaticDataAccessTools::getRowSetConnection(const Reference< XRowSet >& _rxRowSet) const SAL_THROW ( (RuntimeException) )
+	Reference< XConnection > OStaticDataAccessTools::getRowSetConnection(const Reference< XRowSet >& _rxRowSet) const
 	{
 		Reference< XConnection > xReturn;
 		if ( ensureLoaded() )

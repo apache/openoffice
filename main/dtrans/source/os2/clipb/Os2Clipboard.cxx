@@ -135,7 +135,6 @@ Os2Clipboard::~Os2Clipboard()
 }
 
 void SAL_CALL Os2Clipboard::initialize( const Sequence< Any >& aArguments )
-	throw(Exception, RuntimeException)
 {
 	if (!m_bInitialized)
 	{
@@ -148,13 +147,13 @@ void SAL_CALL Os2Clipboard::initialize( const Sequence< Any >& aArguments )
 	}
 }
 
-OUString SAL_CALL Os2Clipboard::getImplementationName() throw( RuntimeException )
+OUString SAL_CALL Os2Clipboard::getImplementationName()
 {
 	debug_printf("Os2Clipboard::getImplementationName\n");
 	return OUString::createFromAscii( OS2_CLIPBOARD_IMPL_NAME );
 }
 
-sal_Bool SAL_CALL Os2Clipboard::supportsService( const OUString& ServiceName ) throw( RuntimeException )
+sal_Bool SAL_CALL Os2Clipboard::supportsService( const OUString& ServiceName )
 {
 	debug_printf("Os2Clipboard::supportsService\n");
 	Sequence < OUString > SupportedServicesNames = Os2Clipboard_getSupportedServiceNames();
@@ -166,13 +165,13 @@ sal_Bool SAL_CALL Os2Clipboard::supportsService( const OUString& ServiceName ) t
 	return sal_False;
 }
 
-Sequence< OUString > SAL_CALL Os2Clipboard::getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL Os2Clipboard::getSupportedServiceNames()
 {
 	debug_printf("Os2Clipboard::getSupportedServiceNames\n");
 	return Os2Clipboard_getSupportedServiceNames();
 }
 
-Reference< XTransferable > SAL_CALL Os2Clipboard::getContents() throw( RuntimeException )
+Reference< XTransferable > SAL_CALL Os2Clipboard::getContents()
 {
 	debug_printf("Os2Clipboard::getContents\n");
 	MutexGuard aGuard(m_aMutex);
@@ -211,7 +210,7 @@ Reference< XTransferable > SAL_CALL Os2Clipboard::getContents() throw( RuntimeEx
 	return m_aContents;
 }
 
-void SAL_CALL Os2Clipboard::setContents( const Reference< XTransferable >& xTrans, const Reference< XClipboardOwner >& xClipboardOwner ) throw( RuntimeException )
+void SAL_CALL Os2Clipboard::setContents( const Reference< XTransferable >& xTrans, const Reference< XClipboardOwner >& xClipboardOwner )
 {
 	debug_printf("Os2Clipboard::setContents\n");
 	// remember old values for callbacks before setting the new ones.
@@ -325,13 +324,13 @@ void SAL_CALL Os2Clipboard::setContents( const Reference< XTransferable >& xTran
 
 }
 
-OUString SAL_CALL Os2Clipboard::getName() throw( RuntimeException )
+OUString SAL_CALL Os2Clipboard::getName()
 {
 	debug_printf("Os2Clipboard::getName\n");
 	return m_aName;
 }
 
-sal_Int8 SAL_CALL Os2Clipboard::getRenderingCapabilities() throw( RuntimeException )
+sal_Int8 SAL_CALL Os2Clipboard::getRenderingCapabilities()
 {
 	debug_printf("Os2Clipboard::getRenderingCapabilities\n");
 	return Delayed;
@@ -341,7 +340,7 @@ sal_Int8 SAL_CALL Os2Clipboard::getRenderingCapabilities() throw( RuntimeExcepti
 // XClipboardNotifier
 //========================================================================
 
-void SAL_CALL Os2Clipboard::addClipboardListener( const Reference< XClipboardListener >& listener ) throw( RuntimeException )
+void SAL_CALL Os2Clipboard::addClipboardListener( const Reference< XClipboardListener >& listener )
 {
 	debug_printf("Os2Clipboard::addClipboardListener\n");
 	MutexGuard aGuard( rBHelper.rMutex );
@@ -351,7 +350,7 @@ void SAL_CALL Os2Clipboard::addClipboardListener( const Reference< XClipboardLis
 		rBHelper.aLC.addInterface( getCppuType( (const ::com::sun::star::uno::Reference< XClipboardListener > *) 0), listener );
 }
 
-void SAL_CALL Os2Clipboard::removeClipboardListener( const Reference< XClipboardListener >& listener ) throw( RuntimeException )
+void SAL_CALL Os2Clipboard::removeClipboardListener( const Reference< XClipboardListener >& listener )
 {
 	debug_printf("Os2Clipboard::removeClipboardListener\n");
 	MutexGuard aGuard( rBHelper.rMutex );

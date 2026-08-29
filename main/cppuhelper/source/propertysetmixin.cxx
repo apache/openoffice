@@ -337,23 +337,18 @@ class Info: public cppu::WeakImplHelper1< css::beans::XPropertySetInfo > {
 public:
     explicit Info(Data * data): m_data(data) {}
 
-    virtual css::uno::Sequence< css::beans::Property > SAL_CALL getProperties()
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Sequence< css::beans::Property > SAL_CALL getProperties();
 
     virtual css::beans::Property SAL_CALL getPropertyByName(
-        rtl::OUString const & name)
-        throw (
-            css::beans::UnknownPropertyException, css::uno::RuntimeException);
+        rtl::OUString const & name);
 
-    virtual sal_Bool SAL_CALL hasPropertyByName(rtl::OUString const & name)
-        throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasPropertyByName(rtl::OUString const & name);
 
 private:
     rtl::Reference< Data > m_data;
 };
 
 css::uno::Sequence< css::beans::Property > Info::getProperties()
-    throw (css::uno::RuntimeException)
 {
     try {
         OSL_ASSERT(m_data->properties.size() <= SAL_MAX_INT32);
@@ -377,14 +372,12 @@ css::uno::Sequence< css::beans::Property > Info::getProperties()
 }
 
 css::beans::Property Info::getPropertyByName(rtl::OUString const & name)
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     return m_data->get(static_cast< cppu::OWeakObject * >(this), name)->
         second.property;
 }
 
 sal_Bool Info::hasPropertyByName(rtl::OUString const & name)
-    throw (css::uno::RuntimeException)
 {
     Data::PropertyMap::iterator i(m_data->properties.find(name));
     return i != m_data->properties.end() && i->second.present;
@@ -1134,7 +1127,6 @@ void PropertySetMixinImpl::dispose() {
 }
 
 css::uno::Any PropertySetMixinImpl::queryInterface(css::uno::Type const & type)
-    throw (css::uno::RuntimeException)
 {
     if (((m_impl->implements & IMPLEMENTS_PROPERTY_SET) != 0
          && type == css::beans::XPropertySet::static_type()))
@@ -1160,7 +1152,7 @@ css::uno::Any PropertySetMixinImpl::queryInterface(css::uno::Type const & type)
 }
 
 css::uno::Reference< css::beans::XPropertySetInfo >
-PropertySetMixinImpl::getPropertySetInfo() throw (css::uno::RuntimeException) {
+PropertySetMixinImpl::getPropertySetInfo() {
     try {
         return new Info(m_impl);
     } catch (std::bad_alloc &) {
@@ -1172,10 +1164,6 @@ PropertySetMixinImpl::getPropertySetInfo() throw (css::uno::RuntimeException) {
 
 void PropertySetMixinImpl::setPropertyValue(
     rtl::OUString const & propertyName, css::uno::Any const & value)
-    throw (
-        css::beans::UnknownPropertyException, css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     try {
         m_impl->setProperty(
@@ -1190,9 +1178,6 @@ void PropertySetMixinImpl::setPropertyValue(
 
 css::uno::Any PropertySetMixinImpl::getPropertyValue(
     rtl::OUString const & propertyName)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     try {
         return m_impl->getProperty(
@@ -1207,9 +1192,6 @@ css::uno::Any PropertySetMixinImpl::getPropertyValue(
 void PropertySetMixinImpl::addPropertyChangeListener(
     rtl::OUString const & propertyName,
     css::uno::Reference< css::beans::XPropertyChangeListener > const & listener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     css::uno::Reference< css::beans::XPropertyChangeListener >(
         listener, css::uno::UNO_QUERY_THROW); // reject NULL listener
@@ -1238,9 +1220,6 @@ void PropertySetMixinImpl::addPropertyChangeListener(
 void PropertySetMixinImpl::removePropertyChangeListener(
     rtl::OUString const & propertyName,
     css::uno::Reference< css::beans::XPropertyChangeListener > const & listener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(listener.is());
     checkUnknown(propertyName);
@@ -1264,9 +1243,6 @@ void PropertySetMixinImpl::removePropertyChangeListener(
 void PropertySetMixinImpl::addVetoableChangeListener(
     rtl::OUString const & propertyName,
     css::uno::Reference< css::beans::XVetoableChangeListener > const & listener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     css::uno::Reference< css::beans::XVetoableChangeListener >(
         listener, css::uno::UNO_QUERY_THROW); // reject NULL listener
@@ -1295,9 +1271,6 @@ void PropertySetMixinImpl::addVetoableChangeListener(
 void PropertySetMixinImpl::removeVetoableChangeListener(
     rtl::OUString const & propertyName,
     css::uno::Reference< css::beans::XVetoableChangeListener > const & listener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(listener.is());
     checkUnknown(propertyName);
@@ -1320,10 +1293,6 @@ void PropertySetMixinImpl::removeVetoableChangeListener(
 
 void PropertySetMixinImpl::setFastPropertyValue(
     sal_Int32 handle, css::uno::Any const & value)
-    throw (
-        css::beans::UnknownPropertyException, css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     try {
         m_impl->setProperty(
@@ -1339,9 +1308,6 @@ void PropertySetMixinImpl::setFastPropertyValue(
 }
 
 css::uno::Any PropertySetMixinImpl::getFastPropertyValue(sal_Int32 handle)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     try {
         return m_impl->getProperty(
@@ -1357,7 +1323,7 @@ css::uno::Any PropertySetMixinImpl::getFastPropertyValue(sal_Int32 handle)
 }
 
 css::uno::Sequence< css::beans::PropertyValue >
-PropertySetMixinImpl::getPropertyValues() throw (css::uno::RuntimeException) {
+PropertySetMixinImpl::getPropertyValues() {
     try {
         css::uno::Sequence< css::beans::PropertyValue > s(
             m_impl->handleMap.getLength());
@@ -1389,10 +1355,6 @@ PropertySetMixinImpl::getPropertyValues() throw (css::uno::RuntimeException) {
 
 void PropertySetMixinImpl::setPropertyValues(
     css::uno::Sequence< css::beans::PropertyValue > const & props)
-    throw (
-        css::beans::UnknownPropertyException, css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     try {
         for (sal_Int32 i = 0; i < props.getLength(); ++i) {

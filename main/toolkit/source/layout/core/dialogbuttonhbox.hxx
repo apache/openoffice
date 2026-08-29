@@ -36,8 +36,8 @@ public:
     DialogButtonHBox();
 
     void setOrdering( rtl::OUString const& ordering );
-    void SAL_CALL addChild( css::uno::Reference< css::awt::XLayoutConstrains > const& xChild ) throw ( css::uno::RuntimeException, css::awt::MaxChildrenException );
-    void SAL_CALL removeChild( css::uno::Reference< css::awt::XLayoutConstrains > const& xChild ) throw ( css::uno::RuntimeException );
+    void SAL_CALL addChild( css::uno::Reference< css::awt::XLayoutConstrains > const& xChild );
+    void SAL_CALL removeChild( css::uno::Reference< css::awt::XLayoutConstrains > const& xChild );
 
 private:
     enum Ordering { PLATFORM, GNOME, KDE, MACOS, WINDOWS };

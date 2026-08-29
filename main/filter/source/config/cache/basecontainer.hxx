@@ -200,8 +200,7 @@ class BaseContainer : public BaseLock
             @descr  If no exception occurs, its guaranteed, that the member m_rFlushCache
                     was initialized right and can be used further.
          */
-        void impl_initFlushMode()
-            throw (css::uno::RuntimeException);
+        void impl_initFlushMode();
 
         //---------------------------------------
 
@@ -233,59 +232,38 @@ class BaseContainer : public BaseLock
         //---------------------------------------
         // XServiceInfo
 
-        virtual ::rtl::OUString SAL_CALL getImplementationName()
-            throw (css::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
 
-        virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& sServiceName)
-            throw (css::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& sServiceName);
 
-        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         //---------------------------------------
         // XNameContainer
 
         virtual void SAL_CALL insertByName(const ::rtl::OUString& sItem ,
-                                           const css::uno::Any&   aValue)
-            throw (css::lang::IllegalArgumentException  ,
-                   css::container::ElementExistException,
-                   css::lang::WrappedTargetException    ,
-                   css::uno::RuntimeException           );
+                                           const css::uno::Any&   aValue);
 
-        virtual void SAL_CALL removeByName(const ::rtl::OUString& sItem)
-            throw (css::container::NoSuchElementException,
-                   css::lang::WrappedTargetException     ,
-                   css::uno::RuntimeException            );
+        virtual void SAL_CALL removeByName(const ::rtl::OUString& sItem);
 
         //---------------------------------------
         // XNameReplace
 
         virtual void SAL_CALL replaceByName(const ::rtl::OUString& sItem ,
-                                            const css::uno::Any&   aValue)
-            throw (css::lang::IllegalArgumentException   ,
-                   css::container::NoSuchElementException,
-                   css::lang::WrappedTargetException     ,
-                   css::uno::RuntimeException            );
+                                            const css::uno::Any&   aValue);
 
         //---------------------------------------
         // XElementAccess
 
-        virtual css::uno::Any SAL_CALL getByName(const ::rtl::OUString& sItem)
-            throw (css::container::NoSuchElementException,
-                   css::lang::WrappedTargetException     ,
-                   css::uno::RuntimeException            );
+        virtual css::uno::Any SAL_CALL getByName(const ::rtl::OUString& sItem);
 
-        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
 
-        virtual sal_Bool SAL_CALL hasByName(const ::rtl::OUString& sItem)
-            throw (css::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasByName(const ::rtl::OUString& sItem);
 
-        virtual css::uno::Type SAL_CALL getElementType()
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Type SAL_CALL getElementType();
 
-        virtual sal_Bool SAL_CALL hasElements()
-            throw (css::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasElements();
 
         //---------------------------------------
         // XContainerQuery
@@ -293,23 +271,18 @@ class BaseContainer : public BaseLock
         // must be implemented really by derived class ...
         // We implement return of an empty result here only!
         // But we show an assertion :-)
-        virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createSubSetEnumerationByQuery(const ::rtl::OUString& sQuery)
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createSubSetEnumerationByQuery(const ::rtl::OUString& sQuery);
 
-        virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createSubSetEnumerationByProperties(const css::uno::Sequence< css::beans::NamedValue >& lProperties)
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createSubSetEnumerationByProperties(const css::uno::Sequence< css::beans::NamedValue >& lProperties);
 
         //---------------------------------------
         // XFlushable
 
-        virtual void SAL_CALL flush()
-            throw (css::uno::RuntimeException);
+        virtual void SAL_CALL flush();
 
-        virtual void SAL_CALL addFlushListener(const css::uno::Reference< css::util::XFlushListener >& xListener)
-            throw (css::uno::RuntimeException);
+        virtual void SAL_CALL addFlushListener(const css::uno::Reference< css::util::XFlushListener >& xListener);
 
-        virtual void SAL_CALL removeFlushListener(const css::uno::Reference< css::util::XFlushListener >& xListener)
-            throw (css::uno::RuntimeException);
+        virtual void SAL_CALL removeFlushListener(const css::uno::Reference< css::util::XFlushListener >& xListener);
 };
 
     } // namespace config

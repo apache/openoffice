@@ -59,14 +59,14 @@ OUString BiffDetector_getImplementationName()
     return CREATE_OUSTRING( "com.sun.star.comp.oox.xls.BiffDetector" );
 }
 
-Reference< XInterface > SAL_CALL BiffDetector_createInstance( const Reference< XComponentContext >& rxContext ) throw( Exception )
+Reference< XInterface > SAL_CALL BiffDetector_createInstance( const Reference< XComponentContext >& rxContext )
 {
     return static_cast< ::cppu::OWeakObject* >( new BiffDetector( rxContext ) );
 }
 
 // ============================================================================
 
-BiffDetector::BiffDetector( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+BiffDetector::BiffDetector( const Reference< XComponentContext >& rxContext ) :
     mxContext( rxContext, UNO_SET_THROW )
 {
 }
@@ -176,12 +176,12 @@ BiffDetector::~BiffDetector()
 
 // com.sun.star.lang.XServiceInfo interface -----------------------------------
 
-OUString SAL_CALL BiffDetector::getImplementationName() throw( RuntimeException )
+OUString SAL_CALL BiffDetector::getImplementationName()
 {
     return BiffDetector_getImplementationName();
 }
 
-sal_Bool SAL_CALL BiffDetector::supportsService( const OUString& rService ) throw( RuntimeException )
+sal_Bool SAL_CALL BiffDetector::supportsService( const OUString& rService )
 {
     const Sequence< OUString > aServices = BiffDetector_getSupportedServiceNames();
     const OUString* pArray = aServices.getConstArray();
@@ -189,14 +189,14 @@ sal_Bool SAL_CALL BiffDetector::supportsService( const OUString& rService ) thro
     return ::std::find( pArray, pArrayEnd, rService ) != pArrayEnd;
 }
 
-Sequence< OUString > SAL_CALL BiffDetector::getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL BiffDetector::getSupportedServiceNames()
 {
     return BiffDetector_getSupportedServiceNames();
 }
 
 // com.sun.star.document.XExtendedFilterDetect interface ----------------------
 
-OUString SAL_CALL BiffDetector::detect( Sequence< PropertyValue >& rDescriptor ) throw( RuntimeException )
+OUString SAL_CALL BiffDetector::detect( Sequence< PropertyValue >& rDescriptor )
 {
     OUString aTypeName;
 

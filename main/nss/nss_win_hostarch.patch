@@ -1,0 +1,33 @@
+--- misc/nss-3.39/nspr/configure
++++ misc/build/nss-3.39/nspr/configure
+@@ -7300,15 +7300,27 @@
+             if test -z "$GNU_CC" -a "$MSC_VER" -ge "1700"; then
+                                                 CFLAGS="$CFLAGS -arch:IA32"
+             fi
+ 	fi
+         ;;
+     x86_64)
+-	    $as_echo "#define _AMD64_ 1" >>confdefs.h
+-
+-	    USE_64=1
++	    if test -z "$USE_64"; then
++		# config.guess reports the HOST, and every Windows build host is
++		# x86_64 now, so reaching this case says nothing about what is
++		# being BUILT.  Without --enable-64bit a 32-bit product was asked
++		# for, and defining _AMD64_ for one is not merely cosmetic: the
++		# Windows 10 SDK selects the Interlocked* declarations on these
++		# macros, so an x86 compile with _AMD64_ set gets no declaration
++		# at all, calls them as cdecl, and fails to link.
++		$as_echo "#define _X86_ 1" >>confdefs.h
++
++	    else
++		$as_echo "#define _AMD64_ 1" >>confdefs.h
++
++		USE_64=1
++	    fi
+ 	    ;;
+     ia64)
+ 	    $as_echo "#define _IA64_ 1" >>confdefs.h
+ 
+ 	    USE_64=1
+ 	    ;;

@@ -145,9 +145,7 @@ private:
     bool storeData( const com::sun::star::uno::Reference<
                         com::sun::star::io::XInputStream >& xData,
                     const com::sun::star::uno::Reference<
-                        com::sun::star::ucb::XCommandEnvironment >& xEnv )
-        throw ( ::com::sun::star::ucb::CommandFailedException,
-                ::com::sun::star::task::DocumentPasswordRequest );
+                        com::sun::star::ucb::XCommandEnvironment >& xEnv );
     bool renameData( const com::sun::star::uno::Reference<
                         com::sun::star::ucb::XContentIdentifier >& xOldId,
                      const com::sun::star::uno::Reference<
@@ -176,31 +174,26 @@ private:
             const ::com::sun::star::uno::Sequence<
                     ::com::sun::star::beans::PropertyValue >& rValues,
             const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
     com::sun::star::uno::Any
     open( const ::com::sun::star::ucb::OpenCommandArgument2& rArg,
           const ::com::sun::star::uno::Reference<
-            ::com::sun::star::ucb::XCommandEnvironment >& xEnv )
-        throw( ::com::sun::star::uno::Exception );
+            ::com::sun::star::ucb::XCommandEnvironment >& xEnv );
 
     void insert( const ::com::sun::star::uno::Reference<
                     ::com::sun::star::io::XInputStream >& xData,
                  sal_Int32 nNameClashResolve,
                  const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
     void destroy( sal_Bool bDeletePhysical,
                   const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
     void transfer( const ::com::sun::star::ucb::TransferInfo& rInfo,
                    const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
     static ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRow >
     getPropertyValues( const ::com::sun::star::uno::Reference<
@@ -223,25 +216,19 @@ private:
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >
     getInputStream( const ::com::sun::star::uno::Reference<
                         ::com::sun::star::ucb::XCommandEnvironment > &
-                            xEnv )
-        throw ( ::com::sun::star::ucb::CommandFailedException,
-                ::com::sun::star::task::DocumentPasswordRequest );
+                            xEnv );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >
     getTruncatedOutputStream(
         const ::com::sun::star::uno::Reference<
-            ::com::sun::star::ucb::XCommandEnvironment > & xEnv )
-        throw ( ::com::sun::star::ucb::CommandFailedException,
-                ::com::sun::star::task::DocumentPasswordRequest );
+            ::com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XContent >
     queryChildContent( const rtl::OUString & rRelativeChildUri );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >
     getStream( const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv )
-        throw ( ::com::sun::star::ucb::CommandFailedException,
-                ::com::sun::star::task::DocumentPasswordRequest );
+                    ::com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
 public:
     // Create existing content. Fail, if not already exists.
@@ -271,33 +258,25 @@ public:
 
     // XServiceInfo
     virtual ::rtl::OUString SAL_CALL
-    getImplementationName()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getImplementationName();
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getSupportedServiceNames();
 
     // XContent
     virtual rtl::OUString SAL_CALL
-    getContentType()
-        throw( com::sun::star::uno::RuntimeException );
+    getContentType();
     virtual com::sun::star::uno::Reference<
                 com::sun::star::ucb::XContentIdentifier > SAL_CALL
-    getIdentifier()
-        throw( com::sun::star::uno::RuntimeException );
+    getIdentifier();
 
     // XCommandProcessor
     virtual com::sun::star::uno::Any SAL_CALL
     execute( const com::sun::star::ucb::Command& aCommand,
              sal_Int32 CommandId,
              const com::sun::star::uno::Reference<
-                com::sun::star::ucb::XCommandEnvironment >& Environment )
-        throw( com::sun::star::uno::Exception,
-               com::sun::star::ucb::CommandAbortedException,
-               com::sun::star::uno::RuntimeException );
+                com::sun::star::ucb::XCommandEnvironment >& Environment );
     virtual void SAL_CALL
-    abort( sal_Int32 CommandId )
-        throw( com::sun::star::uno::RuntimeException );
+    abort( sal_Int32 CommandId );
 
     //////////////////////////////////////////////////////////////////////
     // Additional interfaces
@@ -306,12 +285,10 @@ public:
     // XContentCreator
     virtual com::sun::star::uno::Sequence<
                 com::sun::star::ucb::ContentInfo > SAL_CALL
-    queryCreatableContentsInfo()
-        throw( com::sun::star::uno::RuntimeException );
+    queryCreatableContentsInfo();
     virtual com::sun::star::uno::Reference<
                 com::sun::star::ucb::XContent > SAL_CALL
-    createNewContent( const com::sun::star::ucb::ContentInfo& Info )
-        throw( com::sun::star::uno::RuntimeException );
+    createNewContent( const com::sun::star::ucb::ContentInfo& Info );
 
     //////////////////////////////////////////////////////////////////////
     // Non-interface methods.

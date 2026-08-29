@@ -92,6 +92,7 @@
 
 #include <algorithm>
 #include <functional>
+#include <iterator>
 
 using namespace ::com::sun::star;
 using namespace ::comphelper;
@@ -442,11 +443,11 @@ public:
     Sequence< PropertyValue >   getValues() const { return m_aValues; }
 
 // XInteractionSupplyParameters
-    virtual void SAL_CALL setParameters( const Sequence< PropertyValue >& _rValues ) throw(RuntimeException);
+    virtual void SAL_CALL setParameters( const Sequence< PropertyValue >& _rValues );
 };
 
 //------------------------------------------------------------------
-void SAL_CALL OParameterContinuation::setParameters( const Sequence< PropertyValue >& _rValues ) throw(RuntimeException)
+void SAL_CALL OParameterContinuation::setParameters( const Sequence< PropertyValue >& _rValues )
 {
     m_aValues = _rValues;
 }
@@ -481,14 +482,14 @@ public:
     }
 
     virtual ::rtl::OUString GetComponentServiceName() {return ::rtl::OUString::createFromAscii("Edit");}
-    virtual void SAL_CALL createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer ) throw( RuntimeException );
+    virtual void SAL_CALL createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer );
 
 protected:
     virtual void ImplSetPeerProperty( const ::rtl::OUString& rPropName, const Any& rVal );
 };
 
 //------------------------------------------------------------------------------
-void FmXAutoControl::createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer ) throw( RuntimeException )
+void FmXAutoControl::createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer )
 {
     UnoControl::createPeer( rxToolkit, rParentPeer );
 
@@ -661,7 +662,7 @@ void SAL_CALL FormController::release() throw ()
 }
 
 //------------------------------------------------------------------
-Any SAL_CALL FormController::queryInterface( const Type& _rType ) throw(RuntimeException)
+Any SAL_CALL FormController::queryInterface( const Type& _rType )
 {
     Any aRet = FormController_BASE::queryInterface( _rType );
     if ( !aRet.hasValue() )
@@ -672,7 +673,7 @@ Any SAL_CALL FormController::queryInterface( const Type& _rType ) throw(RuntimeE
 }
 
 //------------------------------------------------------------------------------
-Sequence< sal_Int8 > SAL_CALL FormController::getImplementationId() throw( RuntimeException )
+Sequence< sal_Int8 > SAL_CALL FormController::getImplementationId()
 {
     static ::cppu::OImplementationId* pId = NULL;
 	if  ( !pId )
@@ -688,7 +689,7 @@ Sequence< sal_Int8 > SAL_CALL FormController::getImplementationId() throw( Runti
 }
 
 //------------------------------------------------------------------------------
-Sequence< Type > SAL_CALL FormController::getTypes(  ) throw(RuntimeException)
+Sequence< Type > SAL_CALL FormController::getTypes(  )
 {
     return comphelper::concatSequences(
         FormController_BASE::getTypes(),
@@ -698,7 +699,7 @@ Sequence< Type > SAL_CALL FormController::getTypes(  ) throw(RuntimeException)
 
 // XServiceInfo
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::supportsService(const ::rtl::OUString& ServiceName) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::supportsService(const ::rtl::OUString& ServiceName)
 {
     Sequence< ::rtl::OUString> aSNL(getSupportedServiceNames());
     const ::rtl::OUString * pArray = aSNL.getConstArray();
@@ -709,13 +710,13 @@ sal_Bool SAL_CALL FormController::supportsService(const ::rtl::OUString& Service
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL FormController::getImplementationName() throw( RuntimeException )
+::rtl::OUString SAL_CALL FormController::getImplementationName()
 {
     return ::rtl::OUString::createFromAscii( "org.openoffice.comp.svx.FormController" );
 }
 
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString> SAL_CALL FormController::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< ::rtl::OUString> SAL_CALL FormController::getSupportedServiceNames(void)
 {
     // service names which are supported only, but cannot be used to created an
     // instance at a service factory
@@ -728,13 +729,13 @@ Sequence< ::rtl::OUString> SAL_CALL FormController::getSupportedServiceNames(voi
 }
 
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::approveReset(const EventObject& /*rEvent*/) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::approveReset(const EventObject& /*rEvent*/)
 {
     return sal_True;
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::resetted(const EventObject& rEvent) throw( RuntimeException )
+void SAL_CALL FormController::resetted(const EventObject& rEvent)
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     if (getCurrentControl().is() &&  (getCurrentControl()->getModel() == rEvent.Source))
@@ -818,14 +819,12 @@ void FormController::impl_setTextOnAllFilter_throw()
 //------------------------------------------------------------------------------
 sal_Bool FormController::convertFastPropertyValue( Any & /*rConvertedValue*/, Any & /*rOldValue*/,
                                             sal_Int32 /*nHandle*/, const Any& /*rValue*/ )
-                throw( IllegalArgumentException )
 {
     return sal_False;
 }
 
 //------------------------------------------------------------------------------
 void FormController::setFastPropertyValue_NoBroadcast( sal_Int32 /*nHandle*/, const Any& /*rValue*/ )
-                         throw( Exception )
 {
 }
 
@@ -912,7 +911,7 @@ void FormController::getFastPropertyValue( Any& rValue, sal_Int32 nHandle ) cons
 }
 
 //------------------------------------------------------------------------------
-Reference< XPropertySetInfo >  FormController::getPropertySetInfo() throw( RuntimeException )
+Reference< XPropertySetInfo >  FormController::getPropertySetInfo()
 {
     static Reference< XPropertySetInfo >  xInfo( createPropertySetInfo( getInfoHelper() ) );
     return xInfo;
@@ -947,19 +946,19 @@ void FormController::fillProperties(
 
 // XFilterController
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addFilterControllerListener( const Reference< XFilterControllerListener >& _Listener ) throw( RuntimeException )
+void SAL_CALL FormController::addFilterControllerListener( const Reference< XFilterControllerListener >& _Listener )
 {
     m_aFilterListeners.addInterface( _Listener );
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeFilterControllerListener( const Reference< XFilterControllerListener >& _Listener ) throw( RuntimeException )
+void SAL_CALL FormController::removeFilterControllerListener( const Reference< XFilterControllerListener >& _Listener )
 {
     m_aFilterListeners.removeInterface( _Listener );
 }
 
 //------------------------------------------------------------------------------
-::sal_Int32 SAL_CALL FormController::getFilterComponents() throw( ::com::sun::star::uno::RuntimeException )
+::sal_Int32 SAL_CALL FormController::getFilterComponents()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -968,7 +967,7 @@ void SAL_CALL FormController::removeFilterControllerListener( const Reference< X
 }
 
 //------------------------------------------------------------------------------
-::sal_Int32 SAL_CALL FormController::getDisjunctiveTerms() throw( ::com::sun::star::uno::RuntimeException )
+::sal_Int32 SAL_CALL FormController::getDisjunctiveTerms()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -977,7 +976,7 @@ void SAL_CALL FormController::removeFilterControllerListener( const Reference< X
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::setPredicateExpression( ::sal_Int32 _Component, ::sal_Int32 _Term, const ::rtl::OUString& _PredicateExpression ) throw( RuntimeException, IndexOutOfBoundsException )
+void SAL_CALL FormController::setPredicateExpression( ::sal_Int32 _Component, ::sal_Int32 _Term, const ::rtl::OUString& _PredicateExpression )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -996,7 +995,7 @@ void SAL_CALL FormController::setPredicateExpression( ::sal_Int32 _Component, ::
 }
 
 //------------------------------------------------------------------------------
-Reference< XControl > FormController::getFilterComponent( ::sal_Int32 _Component ) throw( RuntimeException, IndexOutOfBoundsException )
+Reference< XControl > FormController::getFilterComponent( ::sal_Int32 _Component )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -1008,7 +1007,7 @@ Reference< XControl > FormController::getFilterComponent( ::sal_Int32 _Component
 }
 
 //------------------------------------------------------------------------------
-Sequence< Sequence< ::rtl::OUString > > FormController::getPredicateExpressions() throw( RuntimeException )
+Sequence< Sequence< ::rtl::OUString > > FormController::getPredicateExpressions()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -1041,7 +1040,7 @@ Sequence< Sequence< ::rtl::OUString > > FormController::getPredicateExpressions(
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeDisjunctiveTerm( ::sal_Int32 _Term ) throw (IndexOutOfBoundsException, RuntimeException)
+void SAL_CALL FormController::removeDisjunctiveTerm( ::sal_Int32 _Term )
 {
     // SYNCHRONIZED -->
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
@@ -1082,7 +1081,7 @@ void SAL_CALL FormController::removeDisjunctiveTerm( ::sal_Int32 _Term ) throw (
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::appendEmptyDisjunctiveTerm() throw (RuntimeException)
+void SAL_CALL FormController::appendEmptyDisjunctiveTerm()
 {
     // SYNCHRONIZED -->
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
@@ -1093,7 +1092,7 @@ void SAL_CALL FormController::appendEmptyDisjunctiveTerm() throw (RuntimeExcepti
 }
 
 //------------------------------------------------------------------------------
-::sal_Int32 SAL_CALL FormController::getActiveTerm() throw (RuntimeException)
+::sal_Int32 SAL_CALL FormController::getActiveTerm()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -1102,7 +1101,7 @@ void SAL_CALL FormController::appendEmptyDisjunctiveTerm() throw (RuntimeExcepti
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::setActiveTerm( ::sal_Int32 _ActiveTerm ) throw (IndexOutOfBoundsException, RuntimeException)
+void SAL_CALL FormController::setActiveTerm( ::sal_Int32 _ActiveTerm )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -1119,14 +1118,14 @@ void SAL_CALL FormController::setActiveTerm( ::sal_Int32 _ActiveTerm ) throw (In
 
 // XElementAccess
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::hasElements(void) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::hasElements(void)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     return !m_aChilds.empty();
 }
 
 //------------------------------------------------------------------------------
-Type SAL_CALL  FormController::getElementType(void) throw( RuntimeException )
+Type SAL_CALL  FormController::getElementType(void)
 {
     return ::getCppuType((const Reference< XFormController>*)0);
 
@@ -1134,7 +1133,7 @@ Type SAL_CALL  FormController::getElementType(void) throw( RuntimeException )
 
 // XEnumerationAccess
 //------------------------------------------------------------------------------
-Reference< XEnumeration > SAL_CALL  FormController::createEnumeration(void) throw( RuntimeException )
+Reference< XEnumeration > SAL_CALL  FormController::createEnumeration(void)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     return new ::comphelper::OEnumerationByIndex(this);
@@ -1142,14 +1141,14 @@ Reference< XEnumeration > SAL_CALL  FormController::createEnumeration(void) thro
 
 // XIndexAccess
 //------------------------------------------------------------------------------
-sal_Int32 SAL_CALL FormController::getCount(void) throw( RuntimeException )
+sal_Int32 SAL_CALL FormController::getCount(void)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     return m_aChilds.size();
 }
 
 //------------------------------------------------------------------------------
-Any SAL_CALL FormController::getByIndex(sal_Int32 Index) throw( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
+Any SAL_CALL FormController::getByIndex(sal_Int32 Index)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (Index < 0 ||
@@ -1161,7 +1160,7 @@ Any SAL_CALL FormController::getByIndex(sal_Int32 Index) throw( IndexOutOfBounds
 
 //  EventListener
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::disposing(const EventObject& e) throw( RuntimeException )
+void SAL_CALL FormController::disposing(const EventObject& e)
 {
     // Ist der Container disposed worden
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -1290,7 +1289,7 @@ namespace
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::propertyChange(const PropertyChangeEvent& evt) throw( RuntimeException )
+void SAL_CALL FormController::propertyChange(const PropertyChangeEvent& evt)
 {
     OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
     if ( evt.PropertyName == FM_PROP_BOUNDFIELD )
@@ -1501,7 +1500,7 @@ IMPL_LINK(FormController, OnToggleAutoFields, void*, EMPTYARG)
 
 // XTextListener
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::textChanged(const TextEvent& e) throw( RuntimeException )
+void SAL_CALL FormController::textChanged(const TextEvent& e)
 {
     // SYNCHRONIZED -->
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
@@ -1558,7 +1557,7 @@ void SAL_CALL FormController::textChanged(const TextEvent& e) throw( RuntimeExce
 
 // XItemListener
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::itemStateChanged(const ItemEvent& /*rEvent*/) throw( RuntimeException )
+void SAL_CALL FormController::itemStateChanged(const ItemEvent& /*rEvent*/)
 {
     OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
     impl_onModify();
@@ -1566,7 +1565,7 @@ void SAL_CALL FormController::itemStateChanged(const ItemEvent& /*rEvent*/) thro
 
 // XModificationBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addModifyListener(const Reference< XModifyListener > & l) throw( RuntimeException )
+void SAL_CALL FormController::addModifyListener(const Reference< XModifyListener > & l)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -1574,7 +1573,7 @@ void SAL_CALL FormController::addModifyListener(const Reference< XModifyListener
 }
 
 //------------------------------------------------------------------------------
-void FormController::removeModifyListener(const Reference< XModifyListener > & l) throw( RuntimeException )
+void FormController::removeModifyListener(const Reference< XModifyListener > & l)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -1583,7 +1582,7 @@ void FormController::removeModifyListener(const Reference< XModifyListener > & l
 
 // XModificationListener
 //------------------------------------------------------------------------------
-void FormController::modified( const EventObject& _rEvent ) throw( RuntimeException )
+void FormController::modified( const EventObject& _rEvent )
 {
     OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
 
@@ -1676,7 +1675,7 @@ sal_Bool FormController::determineLockState() const
 
 //  FocusListener
 //------------------------------------------------------------------------------
-void FormController::focusGained(const FocusEvent& e) throw( RuntimeException )
+void FormController::focusGained(const FocusEvent& e)
 {
     // SYNCHRONIZED -->
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
@@ -1833,7 +1832,7 @@ IMPL_LINK( FormController, OnDeactivated, void*, /**/ )
 }
 
 //------------------------------------------------------------------------------
-void FormController::focusLost(const FocusEvent& e) throw( RuntimeException )
+void FormController::focusLost(const FocusEvent& e)
 {
     OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
 
@@ -1850,31 +1849,31 @@ void FormController::focusLost(const FocusEvent& e) throw( RuntimeException )
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL FormController::mousePressed( const awt::MouseEvent& /*_rEvent*/ ) throw (RuntimeException)
+void SAL_CALL FormController::mousePressed( const awt::MouseEvent& /*_rEvent*/ )
 {
     // not interested in
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL FormController::mouseReleased( const awt::MouseEvent& /*_rEvent*/ ) throw (RuntimeException)
+void SAL_CALL FormController::mouseReleased( const awt::MouseEvent& /*_rEvent*/ )
 {
     // not interested in
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL FormController::mouseEntered( const awt::MouseEvent& _rEvent ) throw (RuntimeException)
+void SAL_CALL FormController::mouseEntered( const awt::MouseEvent& _rEvent )
 {
     m_pControlBorderManager->mouseEntered( _rEvent.Source );
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL FormController::mouseExited( const awt::MouseEvent& _rEvent ) throw (RuntimeException)
+void SAL_CALL FormController::mouseExited( const awt::MouseEvent& _rEvent )
 {
     m_pControlBorderManager->mouseExited( _rEvent.Source );
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL FormController::componentValidityChanged( const EventObject& _rSource ) throw (RuntimeException)
+void SAL_CALL FormController::componentValidityChanged( const EventObject& _rSource )
 {
     Reference< XControl > xControl( findControl( m_aControls, Reference< XControlModel >( _rSource.Source, UNO_QUERY ), sal_False, sal_False ) );
     Reference< XValidatableFormComponent > xValidatable( _rSource.Source, UNO_QUERY );
@@ -1886,7 +1885,7 @@ void SAL_CALL FormController::componentValidityChanged( const EventObject& _rSou
 }
 
 //--------------------------------------------------------------------
-void FormController::setModel(const Reference< XTabControllerModel > & Model) throw( RuntimeException )
+void FormController::setModel(const Reference< XTabControllerModel > & Model)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -1999,7 +1998,7 @@ void FormController::setModel(const Reference< XTabControllerModel > & Model) th
 }
 
 //------------------------------------------------------------------------------
-Reference< XTabControllerModel >  FormController::getModel() throw( RuntimeException )
+Reference< XTabControllerModel >  FormController::getModel()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2067,7 +2066,7 @@ void FormController::removeFromEventAttacher(const Reference< XControl > & xCont
 }
 
 //------------------------------------------------------------------------------
-void FormController::setContainer(const Reference< XControlContainer > & xContainer) throw( RuntimeException )
+void FormController::setContainer(const Reference< XControlContainer > & xContainer)
 {
     OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
     Reference< XTabControllerModel >  xTabModel(getModel());
@@ -2152,7 +2151,7 @@ void FormController::setContainer(const Reference< XControlContainer > & xContai
 }
 
 //------------------------------------------------------------------------------
-Reference< XControlContainer >  FormController::getContainer() throw( RuntimeException )
+Reference< XControlContainer >  FormController::getContainer()
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2164,7 +2163,7 @@ Reference< XControlContainer >  FormController::getContainer() throw( RuntimeExc
 }
 
 //------------------------------------------------------------------------------
-Sequence< Reference< XControl > > FormController::getControls(void) throw( RuntimeException )
+Sequence< Reference< XControl > > FormController::getControls(void)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2204,7 +2203,7 @@ Sequence< Reference< XControl > > FormController::getControls(void) throw( Runti
 }
 
 //------------------------------------------------------------------------------
-void FormController::autoTabOrder() throw( RuntimeException )
+void FormController::autoTabOrder()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2215,7 +2214,7 @@ void FormController::autoTabOrder() throw( RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void FormController::activateTabOrder() throw( RuntimeException )
+void FormController::activateTabOrder()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2605,7 +2604,7 @@ void FormController::removeControl(const Reference< XControl > & xControl)
 
 // XLoadListener
 //------------------------------------------------------------------------------
-void FormController::loaded(const EventObject& rEvent) throw( RuntimeException )
+void FormController::loaded(const EventObject& rEvent)
 {
 	OSL_ENSURE( rEvent.Source == m_xModelAsIndex, "FormController::loaded: where did this come from?" );
 
@@ -2692,7 +2691,7 @@ IMPL_LINK(FormController, OnLoad, void*, EMPTYARG)
 }
 
 //------------------------------------------------------------------------------
-void FormController::unloaded(const EventObject& /*rEvent*/) throw( RuntimeException )
+void FormController::unloaded(const EventObject& /*rEvent*/)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2701,7 +2700,7 @@ void FormController::unloaded(const EventObject& /*rEvent*/) throw( RuntimeExcep
 }
 
 //------------------------------------------------------------------------------
-void FormController::reloading(const EventObject& /*aEvent*/) throw( RuntimeException )
+void FormController::reloading(const EventObject& /*aEvent*/)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2713,7 +2712,7 @@ void FormController::reloading(const EventObject& /*aEvent*/) throw( RuntimeExce
 }
 
 //------------------------------------------------------------------------------
-void FormController::reloaded(const EventObject& aEvent) throw( RuntimeException )
+void FormController::reloaded(const EventObject& aEvent)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2722,7 +2721,7 @@ void FormController::reloaded(const EventObject& aEvent) throw( RuntimeException
 }
 
 //------------------------------------------------------------------------------
-void FormController::unloading(const EventObject& /*aEvent*/) throw( RuntimeException )
+void FormController::unloading(const EventObject& /*aEvent*/)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2731,7 +2730,7 @@ void FormController::unloading(const EventObject& /*aEvent*/) throw( RuntimeExce
 }
 
 //------------------------------------------------------------------------------
-void FormController::unload() throw( RuntimeException )
+void FormController::unload()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2840,7 +2839,7 @@ void FormController::stopFormListening( const Reference< XPropertySet >& _rxForm
 
 // com::sun::star::sdbc::XRowSetListener
 //------------------------------------------------------------------------------
-void FormController::cursorMoved(const EventObject& /*event*/) throw( RuntimeException )
+void FormController::cursorMoved(const EventObject& /*event*/)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2861,12 +2860,12 @@ void FormController::cursorMoved(const EventObject& /*event*/) throw( RuntimeExc
 }
 
 //------------------------------------------------------------------------------
-void FormController::rowChanged(const EventObject& /*event*/) throw( RuntimeException )
+void FormController::rowChanged(const EventObject& /*event*/)
 {
     // not interested in ...
 }
 //------------------------------------------------------------------------------
-void FormController::rowSetChanged(const EventObject& /*event*/) throw( RuntimeException )
+void FormController::rowSetChanged(const EventObject& /*event*/)
 {
     // not interested in ...
 }
@@ -2874,7 +2873,7 @@ void FormController::rowSetChanged(const EventObject& /*event*/) throw( RuntimeE
 
 // XContainerListener
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::elementInserted(const ContainerEvent& evt) throw( RuntimeException )
+void SAL_CALL FormController::elementInserted(const ContainerEvent& evt)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2920,7 +2919,7 @@ void SAL_CALL FormController::elementInserted(const ContainerEvent& evt) throw( 
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::elementReplaced(const ContainerEvent& evt) throw( RuntimeException )
+void SAL_CALL FormController::elementReplaced(const ContainerEvent& evt)
 {
     // simulate an elementRemoved
     ContainerEvent aRemoveEvent( evt );
@@ -2935,7 +2934,7 @@ void SAL_CALL FormController::elementReplaced(const ContainerEvent& evt) throw( 
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::elementRemoved(const ContainerEvent& evt) throw( RuntimeException )
+void SAL_CALL FormController::elementRemoved(const ContainerEvent& evt)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2981,7 +2980,7 @@ Reference< XControl >  FormController::isInList(const Reference< XWindowPeer > &
 }
 
 //------------------------------------------------------------------------------
-void FormController::activateFirst() throw( RuntimeException )
+void FormController::activateFirst()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -2992,7 +2991,7 @@ void FormController::activateFirst() throw( RuntimeException )
 }
 
 //------------------------------------------------------------------------------
-void FormController::activateLast() throw( RuntimeException )
+void FormController::activateLast()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3004,7 +3003,7 @@ void FormController::activateLast() throw( RuntimeException )
 
 // XFormController
 //------------------------------------------------------------------------------
-Reference< XFormOperations > SAL_CALL FormController::getFormOperations() throw (RuntimeException)
+Reference< XFormOperations > SAL_CALL FormController::getFormOperations()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3013,7 +3012,7 @@ Reference< XFormOperations > SAL_CALL FormController::getFormOperations() throw 
 }
 
 //------------------------------------------------------------------------------
-Reference< XControl> SAL_CALL FormController::getCurrentControl(void) throw( RuntimeException )
+Reference< XControl> SAL_CALL FormController::getCurrentControl(void)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3021,14 +3020,14 @@ Reference< XControl> SAL_CALL FormController::getCurrentControl(void) throw( Run
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addActivateListener(const Reference< XFormControllerListener > & l) throw( RuntimeException )
+void SAL_CALL FormController::addActivateListener(const Reference< XFormControllerListener > & l)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
 	m_aActivateListeners.addInterface(l);
 }
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeActivateListener(const Reference< XFormControllerListener > & l) throw( RuntimeException )
+void SAL_CALL FormController::removeActivateListener(const Reference< XFormControllerListener > & l)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3036,7 +3035,7 @@ void SAL_CALL FormController::removeActivateListener(const Reference< XFormContr
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addChildController( const Reference< XFormController >& _ChildController ) throw( RuntimeException, IllegalArgumentException )
+void SAL_CALL FormController::addChildController( const Reference< XFormController >& _ChildController )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3074,7 +3073,7 @@ void SAL_CALL FormController::addChildController( const Reference< XFormControll
 }
 
 //------------------------------------------------------------------------------
-Reference< XFormControllerContext > SAL_CALL FormController::getContext() throw (RuntimeException)
+Reference< XFormControllerContext > SAL_CALL FormController::getContext()
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3082,7 +3081,7 @@ Reference< XFormControllerContext > SAL_CALL FormController::getContext() throw 
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::setContext( const Reference< XFormControllerContext >& _context ) throw (RuntimeException)
+void SAL_CALL FormController::setContext( const Reference< XFormControllerContext >& _context )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3090,7 +3089,7 @@ void SAL_CALL FormController::setContext( const Reference< XFormControllerContex
 }
 
 //------------------------------------------------------------------------------
-Reference< XInteractionHandler > SAL_CALL FormController::getInteractionHandler() throw (RuntimeException)
+Reference< XInteractionHandler > SAL_CALL FormController::getInteractionHandler()
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3098,7 +3097,7 @@ Reference< XInteractionHandler > SAL_CALL FormController::getInteractionHandler(
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::setInteractionHandler( const Reference< XInteractionHandler >& _interactionHandler ) throw (RuntimeException)
+void SAL_CALL FormController::setInteractionHandler( const Reference< XInteractionHandler >& _interactionHandler )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3508,7 +3507,7 @@ void FormController::stopFiltering()
 
 // XModeSelector
 //------------------------------------------------------------------------------
-void FormController::setMode(const ::rtl::OUString& Mode) throw( NoSupportException, RuntimeException )
+void FormController::setMode(const ::rtl::OUString& Mode)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3536,7 +3535,7 @@ void FormController::setMode(const ::rtl::OUString& Mode) throw( NoSupportExcept
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL FormController::getMode(void) throw( RuntimeException )
+::rtl::OUString SAL_CALL FormController::getMode(void)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3545,7 +3544,7 @@ void FormController::setMode(const ::rtl::OUString& Mode) throw( NoSupportExcept
 }
 
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL FormController::getSupportedModes(void) throw( RuntimeException )
+Sequence< ::rtl::OUString > SAL_CALL FormController::getSupportedModes(void)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3562,7 +3561,7 @@ Sequence< ::rtl::OUString > SAL_CALL FormController::getSupportedModes(void) thr
 }
 
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::supportsMode(const ::rtl::OUString& Mode) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::supportsMode(const ::rtl::OUString& Mode)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3726,7 +3725,7 @@ namespace
 
 // XRowSetApproveListener
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::approveRowChange(const RowChangeEvent& _rEvent) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::approveRowChange(const RowChangeEvent& _rEvent)
 {
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3814,7 +3813,7 @@ sal_Bool SAL_CALL FormController::approveRowChange(const RowChangeEvent& _rEvent
 }
 
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::approveCursorMove(const EventObject& event) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::approveCursorMove(const EventObject& event)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3831,7 +3830,7 @@ sal_Bool SAL_CALL FormController::approveCursorMove(const EventObject& event) th
 }
 
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::approveRowSetChange(const EventObject& event) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::approveRowSetChange(const EventObject& event)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3849,7 +3848,7 @@ sal_Bool SAL_CALL FormController::approveRowSetChange(const EventObject& event) 
 
 // XRowSetApproveBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addRowSetApproveListener(const Reference< XRowSetApproveListener > & _rxListener) throw( RuntimeException )
+void SAL_CALL FormController::addRowSetApproveListener(const Reference< XRowSetApproveListener > & _rxListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3858,7 +3857,7 @@ void SAL_CALL FormController::addRowSetApproveListener(const Reference< XRowSetA
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeRowSetApproveListener(const Reference< XRowSetApproveListener > & _rxListener) throw( RuntimeException )
+void SAL_CALL FormController::removeRowSetApproveListener(const Reference< XRowSetApproveListener > & _rxListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3868,7 +3867,7 @@ void SAL_CALL FormController::removeRowSetApproveListener(const Reference< XRowS
 
 // XErrorListener
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::errorOccured(const SQLErrorEvent& aEvent) throw( RuntimeException )
+void SAL_CALL FormController::errorOccured(const SQLErrorEvent& aEvent)
 {
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3889,7 +3888,7 @@ void SAL_CALL FormController::errorOccured(const SQLErrorEvent& aEvent) throw( R
 
 // XErrorBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addSQLErrorListener(const Reference< XSQLErrorListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::addSQLErrorListener(const Reference< XSQLErrorListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3898,7 +3897,7 @@ void SAL_CALL FormController::addSQLErrorListener(const Reference< XSQLErrorList
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeSQLErrorListener(const Reference< XSQLErrorListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::removeSQLErrorListener(const Reference< XSQLErrorListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3908,7 +3907,7 @@ void SAL_CALL FormController::removeSQLErrorListener(const Reference< XSQLErrorL
 
 // XDatabaseParameterBroadcaster2
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addDatabaseParameterListener(const Reference< XDatabaseParameterListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::addDatabaseParameterListener(const Reference< XDatabaseParameterListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3917,7 +3916,7 @@ void SAL_CALL FormController::addDatabaseParameterListener(const Reference< XDat
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeDatabaseParameterListener(const Reference< XDatabaseParameterListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::removeDatabaseParameterListener(const Reference< XDatabaseParameterListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -3927,20 +3926,20 @@ void SAL_CALL FormController::removeDatabaseParameterListener(const Reference< X
 
 // XDatabaseParameterBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addParameterListener(const Reference< XDatabaseParameterListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::addParameterListener(const Reference< XDatabaseParameterListener > & aListener)
 {
     FormController::addDatabaseParameterListener( aListener );
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeParameterListener(const Reference< XDatabaseParameterListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::removeParameterListener(const Reference< XDatabaseParameterListener > & aListener)
 {
     FormController::removeDatabaseParameterListener( aListener );
 }
 
 // XDatabaseParameterListener
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::approveParameter(const DatabaseParameterEvent& aEvent) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::approveParameter(const DatabaseParameterEvent& aEvent)
 {
     ::vos::OGuard aSolarGuard(Application::GetSolarMutex());
     ::osl::MutexGuard aGuard( m_aMutex );
@@ -4018,7 +4017,7 @@ sal_Bool SAL_CALL FormController::approveParameter(const DatabaseParameterEvent&
 
 // XConfirmDeleteBroadcaster
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addConfirmDeleteListener(const Reference< XConfirmDeleteListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::addConfirmDeleteListener(const Reference< XConfirmDeleteListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -4027,7 +4026,7 @@ void SAL_CALL FormController::addConfirmDeleteListener(const Reference< XConfirm
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeConfirmDeleteListener(const Reference< XConfirmDeleteListener > & aListener) throw( RuntimeException )
+void SAL_CALL FormController::removeConfirmDeleteListener(const Reference< XConfirmDeleteListener > & aListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -4037,7 +4036,7 @@ void SAL_CALL FormController::removeConfirmDeleteListener(const Reference< XConf
 
 // XConfirmDeleteListener
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL FormController::confirmDelete(const RowChangeEvent& aEvent) throw( RuntimeException )
+sal_Bool SAL_CALL FormController::confirmDelete(const RowChangeEvent& aEvent)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     impl_checkDisposed_throw();
@@ -4099,7 +4098,7 @@ sal_Bool SAL_CALL FormController::confirmDelete(const RowChangeEvent& aEvent) th
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::invalidateFeatures( const Sequence< ::sal_Int16 >& _Features ) throw (RuntimeException)
+void SAL_CALL FormController::invalidateFeatures( const Sequence< ::sal_Int16 >& _Features )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     // for now, just copy the ids of the features, because ....
@@ -4113,7 +4112,7 @@ void SAL_CALL FormController::invalidateFeatures( const Sequence< ::sal_Int16 >&
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::invalidateAllFeatures(  ) throw (RuntimeException)
+void SAL_CALL FormController::invalidateAllFeatures(  )
 {
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
 
@@ -4134,7 +4133,6 @@ void SAL_CALL FormController::invalidateAllFeatures(  ) throw (RuntimeException)
 Reference< XDispatch >
 FormController::interceptedQueryDispatch( const URL& aURL,
                                             const ::rtl::OUString& /*aTargetFrameName*/, sal_Int32 /*nSearchFlags*/)
-                                            throw( RuntimeException )
 {
     OSL_ENSURE( !impl_isDisposed_nofail(), "FormController: already disposed!" );
     Reference< XDispatch >  xReturn;
@@ -4173,7 +4171,7 @@ FormController::interceptedQueryDispatch( const URL& aURL,
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::dispatch( const URL& _rURL, const Sequence< PropertyValue >& _rArgs ) throw (RuntimeException)
+void SAL_CALL FormController::dispatch( const URL& _rURL, const Sequence< PropertyValue >& _rArgs )
 {
     if ( _rArgs.getLength() != 1 )
     {
@@ -4201,7 +4199,7 @@ void SAL_CALL FormController::dispatch( const URL& _rURL, const Sequence< Proper
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::addStatusListener( const Reference< XStatusListener >& _rxListener, const URL& _rURL ) throw (RuntimeException)
+void SAL_CALL FormController::addStatusListener( const Reference< XStatusListener >& _rxListener, const URL& _rURL )
 {
     if (_rURL.Complete == FMURL_CONFIRM_DELETION)
 	{
@@ -4219,19 +4217,19 @@ void SAL_CALL FormController::addStatusListener( const Reference< XStatusListene
 }
 
 //------------------------------------------------------------------------------
-Reference< XInterface > SAL_CALL FormController::getParent() throw( RuntimeException )
+Reference< XInterface > SAL_CALL FormController::getParent()
 {
     return m_xParent;
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::setParent( const Reference< XInterface >& Parent) throw( NoSupportException, RuntimeException )
+void SAL_CALL FormController::setParent( const Reference< XInterface >& Parent)
 {
     m_xParent = Parent;
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::removeStatusListener( const Reference< XStatusListener >& /*_rxListener*/, const URL& _rURL ) throw (RuntimeException)
+void SAL_CALL FormController::removeStatusListener( const Reference< XStatusListener >& /*_rxListener*/, const URL& _rURL )
 {
     (void)_rURL;
 	OSL_ENSURE(_rURL.Complete == FMURL_CONFIRM_DELETION, "FormController::removeStatusListener: invalid (unsupported) URL!");
@@ -4276,7 +4274,7 @@ bool FormController::ensureInteractionHandler()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FormController::handle( const Reference< XInteractionRequest >& _rRequest ) throw (RuntimeException)
+void SAL_CALL FormController::handle( const Reference< XInteractionRequest >& _rRequest )
 {
     if ( !ensureInteractionHandler() )
         return;
@@ -4325,7 +4323,7 @@ void FormController::implInvalidateCurrentControlDependentFeatures()
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL FormController::columnChanged( const EventObject& /*_event*/ ) throw (RuntimeException)
+void SAL_CALL FormController::columnChanged( const EventObject& /*_event*/ )
 {
     implInvalidateCurrentControlDependentFeatures();
 }

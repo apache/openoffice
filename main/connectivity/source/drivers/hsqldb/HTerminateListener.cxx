@@ -39,19 +39,16 @@ namespace connectivity
 
 // XEventListener
 void SAL_CALL OConnectionController::disposing( const EventObject& /*Source*/ )
-throw( RuntimeException )
 {
 }
 
 // XTerminateListener
 void SAL_CALL OConnectionController::queryTermination( const EventObject& /*aEvent*/ )
-throw( TerminationVetoException, RuntimeException )
 {
     m_pDriver->flushConnections();
 }
 
 void SAL_CALL OConnectionController::notifyTermination( const EventObject& /*aEvent*/ )
-throw( RuntimeException )
 {
     m_pDriver->shutdownConnections();
 }

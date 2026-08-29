@@ -98,20 +98,20 @@ namespace framework
         }
 
         // XUndoManagerListener
-        virtual void SAL_CALL undoActionAdded( const UndoManagerEvent& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL actionUndone( const UndoManagerEvent& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL actionRedone( const UndoManagerEvent& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL allActionsCleared( const EventObject& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL redoActionsCleared( const EventObject& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL resetAll( const EventObject& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL enteredContext( const UndoManagerEvent& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL enteredHiddenContext( const UndoManagerEvent& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL leftContext( const UndoManagerEvent& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL leftHiddenContext( const UndoManagerEvent& i_event ) throw (RuntimeException);
-        virtual void SAL_CALL cancelledContext( const UndoManagerEvent& i_event ) throw (RuntimeException);
+        virtual void SAL_CALL undoActionAdded( const UndoManagerEvent& i_event );
+        virtual void SAL_CALL actionUndone( const UndoManagerEvent& i_event );
+        virtual void SAL_CALL actionRedone( const UndoManagerEvent& i_event );
+        virtual void SAL_CALL allActionsCleared( const EventObject& i_event );
+        virtual void SAL_CALL redoActionsCleared( const EventObject& i_event );
+        virtual void SAL_CALL resetAll( const EventObject& i_event );
+        virtual void SAL_CALL enteredContext( const UndoManagerEvent& i_event );
+        virtual void SAL_CALL enteredHiddenContext( const UndoManagerEvent& i_event );
+        virtual void SAL_CALL leftContext( const UndoManagerEvent& i_event );
+        virtual void SAL_CALL leftHiddenContext( const UndoManagerEvent& i_event );
+        virtual void SAL_CALL cancelledContext( const UndoManagerEvent& i_event );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const EventObject& i_event ) throw (RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& i_event );
 
     private:
         Reference< XUndoManager > const m_xUndoManager;
@@ -120,84 +120,84 @@ namespace framework
     };
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::undoActionAdded( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::undoActionAdded( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         // not interested in
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::actionUndone( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::actionUndone( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         // not interested in
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::actionRedone( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::actionRedone( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         // not interested in
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::allActionsCleared( const EventObject& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::allActionsCleared( const EventObject& i_event )
     {
         (void)i_event;
         // not interested in
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::redoActionsCleared( const EventObject& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::redoActionsCleared( const EventObject& i_event )
     {
         (void)i_event;
         // not interested in
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::resetAll( const EventObject& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::resetAll( const EventObject& i_event )
     {
         (void)i_event;
         m_nRelativeContextDepth = 0;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::enteredContext( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::enteredContext( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         osl_incrementInterlockedCount( &m_nRelativeContextDepth );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::enteredHiddenContext( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::enteredHiddenContext( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         osl_incrementInterlockedCount( &m_nRelativeContextDepth );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::leftContext( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::leftContext( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         osl_decrementInterlockedCount( &m_nRelativeContextDepth );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::leftHiddenContext( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::leftHiddenContext( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         osl_decrementInterlockedCount( &m_nRelativeContextDepth );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::cancelledContext( const UndoManagerEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::cancelledContext( const UndoManagerEvent& i_event )
     {
         (void)i_event;
         osl_decrementInterlockedCount( &m_nRelativeContextDepth );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManagerContextListener::disposing( const EventObject& i_event ) throw (RuntimeException)
+    void SAL_CALL UndoManagerContextListener::disposing( const EventObject& i_event )
     {
         (void)i_event;
         m_documentDisposed = true;

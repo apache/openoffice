@@ -51,7 +51,6 @@ WinSysMailProvider::~WinSysMailProvider()
 
 Reference<XMailClient> SAL_CALL
 WinSysMailProvider::queryMailClient()
-throw (RuntimeException)
 {
     /* We just try to load the MAPI dll as a test
        if a mail client is available */
@@ -69,7 +68,6 @@ throw (RuntimeException)
 
 OUString SAL_CALL
 WinSysMailProvider::getImplementationName()
-throw(RuntimeException)
 {
     return getImplementationName_static();
 }
@@ -77,7 +75,6 @@ throw(RuntimeException)
 sal_Bool SAL_CALL
 WinSysMailProvider::supportsService(
     const OUString& ServiceName )
-throw(RuntimeException)
 {
     Sequence <OUString> SupportedServicesNames = getSupportedServiceNames_static();
 
@@ -90,7 +87,6 @@ throw(RuntimeException)
 
 Sequence< OUString > SAL_CALL
 WinSysMailProvider::getSupportedServiceNames()
-throw( RuntimeException )
 {
     return getSupportedServiceNames_static();
 }

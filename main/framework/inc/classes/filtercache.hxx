@@ -302,39 +302,30 @@ class FilterCache   :   private ThreadHelpBase
 
         sal_Bool addFilter    ( const ::rtl::OUString&                                 sName       ,
                                 const css::uno::Sequence< css::beans::PropertyValue >& lProperties ,
-                                      sal_Bool                                         bException  ) throw(css::container::ElementExistException  ,
-                                                                                                           css::registry::InvalidRegistryException);
+                                      sal_Bool                                         bException  );
         sal_Bool replaceFilter( const ::rtl::OUString&                                 sName       ,
                                 const css::uno::Sequence< css::beans::PropertyValue >& lProperties ,
-                                      sal_Bool                                         bException  ) throw(css::container::NoSuchElementException  ,
-                                                                                                           css::registry::InvalidRegistryException);
+                                      sal_Bool                                         bException  );
         sal_Bool removeFilter ( const ::rtl::OUString&                                 sName       ,
-                                      sal_Bool                                         bException  ) throw(css::container::NoSuchElementException  ,
-                                                                                                           css::registry::InvalidRegistryException);
+                                      sal_Bool                                         bException  );
 
         sal_Bool addType      ( const ::rtl::OUString&                                 sName       ,
                                 const css::uno::Sequence< css::beans::PropertyValue >& lProperties ,
-                                      sal_Bool                                         bException  ) throw(css::container::ElementExistException  ,
-                                                                                                           css::registry::InvalidRegistryException);
+                                      sal_Bool                                         bException  );
         sal_Bool replaceType  ( const ::rtl::OUString&                                 sName       ,
                                 const css::uno::Sequence< css::beans::PropertyValue >& lProperties ,
-                                      sal_Bool                                         bException  ) throw(css::container::NoSuchElementException  ,
-                                                                                                           css::registry::InvalidRegistryException);
+                                      sal_Bool                                         bException  );
         sal_Bool removeType   ( const ::rtl::OUString&                                 sName       ,
-                                      sal_Bool                                         bException  ) throw(css::container::NoSuchElementException  ,
-                                                                                                           css::registry::InvalidRegistryException);
+                                      sal_Bool                                         bException  );
 
         sal_Bool addDetector    ( const ::rtl::OUString&                                 sName       ,
                                   const css::uno::Sequence< css::beans::PropertyValue >& lProperties ,
-                                        sal_Bool                                         bException  ) throw(css::container::ElementExistException  ,
-                                                                                                             css::registry::InvalidRegistryException);
+                                        sal_Bool                                         bException  );
         sal_Bool replaceDetector( const ::rtl::OUString&                                 sName       ,
                                   const css::uno::Sequence< css::beans::PropertyValue >& lProperties ,
-                                        sal_Bool                                         bException  ) throw(css::container::NoSuchElementException  ,
-                                                                                                             css::registry::InvalidRegistryException);
+                                        sal_Bool                                         bException  );
         sal_Bool removeDetector ( const ::rtl::OUString&                                 sName       ,
-                                        sal_Bool                                         bException  ) throw(css::container::NoSuchElementException  ,
-                                                                                                             css::registry::InvalidRegistryException);
+                                        sal_Bool                                         bException  );
 
         sal_Bool validateAndRepair();
         sal_Bool validateAndRepairTypes();

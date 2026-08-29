@@ -90,28 +90,24 @@ public:
 
 							// XHeaderFooterContent
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText > SAL_CALL
-							getLeftText() throw(::com::sun::star::uno::RuntimeException);
+							getLeftText();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText > SAL_CALL
-							getCenterText() throw(::com::sun::star::uno::RuntimeException);
+							getCenterText();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText > SAL_CALL
-							getRightText() throw(::com::sun::star::uno::RuntimeException);
+							getRightText();
 
 							// XUnoTunnel
 	virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence<
-									sal_Int8 >& aIdentifier )
-								throw(::com::sun::star::uno::RuntimeException);
+									sal_Int8 >& aIdentifier );
 
 	static const com::sun::star::uno::Sequence<sal_Int8>& getUnoTunnelId();
 	static ScHeaderFooterContentObj* getImplementation( const com::sun::star::uno::Reference<
 									com::sun::star::sheet::XHeaderFooterContent> xObj );
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 };
 
 
@@ -172,70 +168,56 @@ public:
 									::com::sun::star::text::XTextRange >& xRange,
 								const ::com::sun::star::uno::Reference<
 									::com::sun::star::text::XTextContent >& xContent,
-								sal_Bool bAbsorb )
-									throw(::com::sun::star::lang::IllegalArgumentException,
-									::com::sun::star::uno::RuntimeException);
+								sal_Bool bAbsorb );
 	virtual void SAL_CALL	removeTextContent( const ::com::sun::star::uno::Reference<
-								::com::sun::star::text::XTextContent >& xContent )
-									throw(::com::sun::star::container::NoSuchElementException,
-											::com::sun::star::uno::RuntimeException);
+								::com::sun::star::text::XTextContent >& xContent );
 
 							// XSimpleText
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextCursor > SAL_CALL
-							createTextCursor() throw(::com::sun::star::uno::RuntimeException);
+							createTextCursor();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextCursor > SAL_CALL
 							createTextCursorByRange( const ::com::sun::star::uno::Reference<
-										::com::sun::star::text::XTextRange >& aTextPosition )
-									throw(::com::sun::star::uno::RuntimeException);
+										::com::sun::star::text::XTextRange >& aTextPosition );
 	virtual void SAL_CALL	insertString( const ::com::sun::star::uno::Reference<
 										::com::sun::star::text::XTextRange >& xRange,
-										const ::rtl::OUString& aString, sal_Bool bAbsorb )
-									throw(::com::sun::star::uno::RuntimeException);
+										const ::rtl::OUString& aString, sal_Bool bAbsorb );
 	virtual void SAL_CALL	insertControlCharacter( const ::com::sun::star::uno::Reference<
 										::com::sun::star::text::XTextRange >& xRange,
-										sal_Int16 nControlCharacter, sal_Bool bAbsorb )
-									throw(::com::sun::star::lang::IllegalArgumentException,
-										::com::sun::star::uno::RuntimeException);
+										sal_Int16 nControlCharacter, sal_Bool bAbsorb );
 
 							// XTextRange
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText > SAL_CALL
-							getText() throw(::com::sun::star::uno::RuntimeException);
+							getText();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getStart() throw(::com::sun::star::uno::RuntimeException);
+							getStart();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getEnd() throw(::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getString() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setString( const ::rtl::OUString& aString )
-									throw(::com::sun::star::uno::RuntimeException);
+							getEnd();
+	virtual ::rtl::OUString SAL_CALL getString();
+	virtual void SAL_CALL	setString( const ::rtl::OUString& aString );
 
 							// XTextRangeMover
 	virtual void SAL_CALL	moveTextRange( const ::com::sun::star::uno::Reference<
 										::com::sun::star::text::XTextRange >& xRange,
-										sal_Int16 nParagraphs )
-									throw(::com::sun::star::uno::RuntimeException);
+										sal_Int16 nParagraphs );
 
 							// XEnumerationAccess
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL
-							createEnumeration() throw(::com::sun::star::uno::RuntimeException);
+							createEnumeration();
 
 							// XElementAccess
-	virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+	virtual sal_Bool SAL_CALL hasElements();
 
 							// XTextFieldsSupplier
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumerationAccess > SAL_CALL
-							getTextFields() throw(::com::sun::star::uno::RuntimeException);
+							getTextFields();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL
-							getTextFieldMasters() throw(::com::sun::star::uno::RuntimeException);
+							getTextFieldMasters();
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 };
 
 
@@ -256,16 +238,15 @@ public:
 
 							// SvxUnoTextCursor methods reimplemented here:
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText > SAL_CALL
-							getText() throw(::com::sun::star::uno::RuntimeException);
+							getText();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getStart() throw(::com::sun::star::uno::RuntimeException);
+							getStart();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getEnd() throw(::com::sun::star::uno::RuntimeException);
+							getEnd();
 
 							// XUnoTunnel
 	virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence<
-									sal_Int8 >& aIdentifier )
-								throw(::com::sun::star::uno::RuntimeException);
+									sal_Int8 >& aIdentifier );
 
 	static const com::sun::star::uno::Sequence<sal_Int8>& getUnoTunnelId();
 	static ScCellTextCursor* getImplementation( const com::sun::star::uno::Reference<
@@ -284,16 +265,15 @@ public:
 
 							// SvxUnoTextCursor methods reimplemented here:
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText > SAL_CALL
-							getText() throw(::com::sun::star::uno::RuntimeException);
+							getText();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getStart() throw(::com::sun::star::uno::RuntimeException);
+							getStart();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getEnd() throw(::com::sun::star::uno::RuntimeException);
+							getEnd();
 
 							// XUnoTunnel
 	virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence<
-									sal_Int8 >& aIdentifier )
-								throw(::com::sun::star::uno::RuntimeException);
+									sal_Int8 >& aIdentifier );
 
 	static const com::sun::star::uno::Sequence<sal_Int8>& getUnoTunnelId();
 	static ScHeaderFooterTextCursor* getImplementation( const com::sun::star::uno::Reference<
@@ -314,16 +294,15 @@ public:
 
 							// SvxUnoTextCursor methods reimplemented here:
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText > SAL_CALL
-							getText() throw(::com::sun::star::uno::RuntimeException);
+							getText();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getStart() throw(::com::sun::star::uno::RuntimeException);
+							getStart();
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange > SAL_CALL
-							getEnd() throw(::com::sun::star::uno::RuntimeException);
+							getEnd();
 
                             // XUnoTunnel
     virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence<
-                                    sal_Int8 >& aIdentifier )
-                                throw(::com::sun::star::uno::RuntimeException);
+                                    sal_Int8 >& aIdentifier );
 
     static const com::sun::star::uno::Sequence<sal_Int8>& getUnoTunnelId();
     static ScDrawTextCursor* getImplementation( const com::sun::star::uno::Reference<

@@ -195,7 +195,6 @@ OUString SfxApplicationDialogLibraryContainer::impl_getStaticImplementationName(
 
 Reference< XInterface > SAL_CALL SfxApplicationDialogLibraryContainer::impl_createInstance
     ( const Reference< XMultiServiceFactory >& )
-        throw( Exception )
 {
 	SFX_APP()->GetBasicManager();
     Reference< XInterface > xRet =
@@ -238,7 +237,6 @@ OUString SfxApplicationScriptLibraryContainer::impl_getStaticImplementationName(
 
 Reference< XInterface > SAL_CALL SfxApplicationScriptLibraryContainer::impl_createInstance
     ( const Reference< XMultiServiceFactory >& )
-        throw( Exception )
 {
 	SFX_APP()->GetBasicManager();
     Reference< XInterface > xRet =

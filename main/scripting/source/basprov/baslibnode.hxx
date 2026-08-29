@@ -66,14 +66,10 @@ namespace basprov
         virtual ~BasicLibraryNodeImpl();
 
         // XBrowseNode
-        virtual ::rtl::OUString SAL_CALL getName(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode > > SAL_CALL getChildNodes(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL hasChildNodes(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Int16 SAL_CALL getType(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getName(  );
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode > > SAL_CALL getChildNodes(  );
+        virtual sal_Bool SAL_CALL hasChildNodes(  );
+        virtual sal_Int16 SAL_CALL getType(  );
     };
 
 //.........................................................................

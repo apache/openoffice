@@ -95,52 +95,38 @@ public:
     virtual void SAL_CALL replaceByName(
 		const ::rtl::OUString& rName,				 /// API name of event
 		const ::com::sun::star::uno::Any& rElement ) /// event (PropertyValues)
-			throw(
-				::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException);
+			;
 
 	// XNameAccess (via XNameReplace)
 	/// calls getByName(sal_uInt16)
     virtual ::com::sun::star::uno::Any SAL_CALL getByName(
 		const ::rtl::OUString& rName ) 	/// API name of event
-			throw(
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException);
+			;
 
 	// XNameAxcess (via XNameReplace)
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-														getElementNames()
-		throw(::com::sun::star::uno::RuntimeException);
+														getElementNames();
 
 	// XNameAccess (via XNameReplace)
     virtual sal_Bool SAL_CALL hasByName(
-		const ::rtl::OUString& rName )
-			throw(::com::sun::star::uno::RuntimeException);
+		const ::rtl::OUString& rName );
 
 	// XElementAccess (via XNameReplace)
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
 
 	// XElementAccess (via XNameReplace)
-    virtual sal_Bool SAL_CALL hasElements()
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasElements();
 
 	// XServiceInfo
 	/// must be implemented in subclass
-	virtual rtl::OUString SAL_CALL getImplementationName(void)
-		throw( ::com::sun::star::uno::RuntimeException ) = 0;
+	virtual rtl::OUString SAL_CALL getImplementationName(void) = 0;
 
 	// XServiceInfo
-	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName)
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
 
 	// XServiceInfo
 	virtual ::com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-		getSupportedServiceNames(void)
-			throw( ::com::sun::star::uno::RuntimeException );
+		getSupportedServiceNames(void);
 
 protected:
 
@@ -148,20 +134,12 @@ protected:
     virtual void replaceByName(
 		const sal_uInt16 nEvent,		/// item ID of event
 		const SvxMacro& rMacro)		/// event (will be copied)
-			throw(
-				::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException) = 0;
+			 = 0;
 
 	/// Must be implemented in subclass.
     virtual void getByName(
 		SvxMacro& rMacro,
-		const sal_uInt16 nEvent )
-			throw(
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException) = 0;
+		const sal_uInt16 nEvent ) = 0;
 
 	/// convert an API event name to the event ID as used by SvxMacroItem
 	sal_uInt16 mapNameToEventID(const ::rtl::OUString& rName) const;
@@ -180,9 +158,7 @@ protected:
 	/// create macro from PropertyValues (in an Any)
 	void getMacroFromAny(
 		SvxMacro& aMacro,		// reference to be filled by Any
-		const ::com::sun::star::uno::Any& rAny)
-			throw (
-				::com::sun::star::lang::IllegalArgumentException);
+		const ::com::sun::star::uno::Any& rAny);
 
 };
 
@@ -223,20 +199,13 @@ protected:
     virtual void replaceByName(
 		const sal_uInt16 nEvent,		/// item ID of event
 		const SvxMacro& rMacro)		/// event (will be copied)
-			throw(
-				::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException);
+			;
 
     using SvBaseEventDescriptor::getByName;
     virtual void getByName(
 		SvxMacro& rMacros,			/// macro to be filled with values
 		const sal_uInt16 nEvent ) 		/// item ID of event
-			throw(
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException);
+			;
 
 
 	/// Get the SvxMacroItem from the parent.
@@ -270,8 +239,7 @@ public:
 	virtual ~SvDetachedEventDescriptor();
 
 	//XServiceInfo
-	virtual rtl::OUString SAL_CALL getImplementationName(void)
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getImplementationName(void);
 
 protected:
 
@@ -281,20 +249,13 @@ protected:
     virtual void replaceByName(
 		const sal_uInt16 nEvent,		/// item ID of event
 		const SvxMacro& rMacro)		/// event (will be copied)
-			throw(
-				::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException);
+			;
 
     using SvBaseEventDescriptor::getByName;
     virtual void getByName(
 		SvxMacro& rMacro,			/// macro to be filled
 		const sal_uInt16 nEvent ) 		/// item ID of event
-			throw(
-				::com::sun::star::container::NoSuchElementException,
-				::com::sun::star::lang::WrappedTargetException,
-				::com::sun::star::uno::RuntimeException);
+			;
 
 	/// do we have an event?
 	/// return sal_True: we have a macro for the event
@@ -303,8 +264,7 @@ protected:
     using SvBaseEventDescriptor::hasByName;
     virtual sal_Bool hasByName(
 		const sal_uInt16 nEvent ) const		/// item ID of event
- 			throw(
-				::com::sun::star::lang::IllegalArgumentException);
+ 			;
 
 };
 

@@ -59,14 +59,12 @@ DataSource::~DataSource()
 
 // ____ XDataSource ____
 Sequence< Reference< chart2::data::XLabeledDataSequence > > SAL_CALL DataSource::getDataSequences()
-    throw (uno::RuntimeException)
 {
     return m_aDataSeq;
 }
 
 // ____ XDataSink ____
 void SAL_CALL DataSource::setData( const Sequence< Reference< chart2::data::XLabeledDataSequence > >& aData )
-    throw (uno::RuntimeException)
 {
     m_aDataSeq = aData;
 }

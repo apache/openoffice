@@ -125,7 +125,7 @@ Sequence< sal_Int8 > ODbaseIndex::getUnoTunnelImplementationId()
 
 // XUnoTunnel
 //------------------------------------------------------------------
-sal_Int64 ODbaseIndex::getSomething( const Sequence< sal_Int8 > & rId ) throw (RuntimeException)
+sal_Int64 ODbaseIndex::getSomething( const Sequence< sal_Int8 > & rId )
 {
 	return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
 				? reinterpret_cast< sal_Int64 >( this )

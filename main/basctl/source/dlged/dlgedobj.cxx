@@ -503,7 +503,7 @@ void DlgEdObj::PositionAndSizeChange( const beans::PropertyChangeEvent& evt )
 
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdObj::NameChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdObj::NameChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt )
 {
 	// get old name
 	::rtl::OUString aOldName;
@@ -596,7 +596,7 @@ void DlgEdObj::UpdateStep()
 
 //----------------------------------------------------------------------------
 
-void DlgEdObj::TabIndexChange( const beans::PropertyChangeEvent& evt ) throw (RuntimeException)
+void DlgEdObj::TabIndexChange( const beans::PropertyChangeEvent& evt )
 {
     DlgEdForm* pForm = GetDlgEdForm();
     if ( pForm )
@@ -1234,7 +1234,7 @@ void DlgEdObj::EndListening(sal_Bool bRemoveListener)
 
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdObj::_propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdObj::_propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt )
 {
 	if (isListening())
 	{
@@ -1291,7 +1291,7 @@ void SAL_CALL DlgEdObj::_propertyChange( const  ::com::sun::star::beans::Propert
 
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdObj::_elementInserted(const ::com::sun::star::container::ContainerEvent& ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdObj::_elementInserted(const ::com::sun::star::container::ContainerEvent& )
 {
 	if (isListening())
 	{
@@ -1309,7 +1309,7 @@ void SAL_CALL DlgEdObj::_elementInserted(const ::com::sun::star::container::Cont
 
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdObj::_elementReplaced(const ::com::sun::star::container::ContainerEvent& ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdObj::_elementReplaced(const ::com::sun::star::container::ContainerEvent& )
 {
 	if (isListening())
 	{
@@ -1327,7 +1327,7 @@ void SAL_CALL DlgEdObj::_elementReplaced(const ::com::sun::star::container::Cont
 
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdObj::_elementRemoved(const ::com::sun::star::container::ContainerEvent& ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdObj::_elementRemoved(const ::com::sun::star::container::ContainerEvent& )
 {
 	if (isListening())
 	{

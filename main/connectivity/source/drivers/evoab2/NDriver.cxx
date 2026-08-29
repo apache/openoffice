@@ -87,7 +87,7 @@ void OEvoabDriver::disposing()
 
 // static ServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString OEvoabDriver::getImplementationName_Static(  ) throw(RuntimeException)
+rtl::OUString OEvoabDriver::getImplementationName_Static(  )
 {
 	return rtl::OUString::createFromAscii(EVOAB_DRIVER_IMPL_NAME);
 	// this name is referenced in the configuration and in the evoab.xml
@@ -95,7 +95,7 @@ rtl::OUString OEvoabDriver::getImplementationName_Static(  ) throw(RuntimeExcept
 }
 
 //------------------------------------------------------------------
-Sequence< ::rtl::OUString > OEvoabDriver::getSupportedServiceNames_Static(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > OEvoabDriver::getSupportedServiceNames_Static(  )
 {
 	// which service is supported
 	// for more information @see com.sun.star.sdbc.Driver
@@ -104,12 +104,12 @@ Sequence< ::rtl::OUString > OEvoabDriver::getSupportedServiceNames_Static(  ) th
 	return aSNS;
 }
 //------------------------------------------------------------------
-::rtl::OUString SAL_CALL OEvoabDriver::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OEvoabDriver::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 //------------------------------------------------------------------
-sal_Bool SAL_CALL OEvoabDriver::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL OEvoabDriver::supportsService( const ::rtl::OUString& _rServiceName )
 {
     Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -120,18 +120,18 @@ sal_Bool SAL_CALL OEvoabDriver::supportsService( const ::rtl::OUString& _rServic
 	return pSupported != pEnd;
 }
 //------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OEvoabDriver::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OEvoabDriver::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }
 
 //------------------------------------------------------------------
-::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >  SAL_CALL connectivity::evoab::OEvoabDriver_CreateInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory) throw( ::com::sun::star::uno::Exception )
+::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >  SAL_CALL connectivity::evoab::OEvoabDriver_CreateInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory)
 {
 	return *(new OEvoabDriver(_rxFactory));
 }
 // --------------------------------------------------------------------------------
-Reference< XConnection > SAL_CALL OEvoabDriver::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info ) throw(SQLException, RuntimeException)
+Reference< XConnection > SAL_CALL OEvoabDriver::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (ODriver_BASE::rBHelper.bDisposed)
@@ -149,13 +149,12 @@ Reference< XConnection > SAL_CALL OEvoabDriver::connect( const ::rtl::OUString& 
 }
 // --------------------------------------------------------------------------------
 sal_Bool SAL_CALL OEvoabDriver::acceptsURL( const ::rtl::OUString& url )
-	throw(SQLException, RuntimeException)
 {
 	return acceptsURL_Stat(url);
 }
 
 // --------------------------------------------------------------------------------
-Sequence< DriverPropertyInfo > SAL_CALL OEvoabDriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ ) throw(SQLException, RuntimeException)
+Sequence< DriverPropertyInfo > SAL_CALL OEvoabDriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ )
 {
 	if ( ! acceptsURL(url) )
     {
@@ -169,12 +168,12 @@ Sequence< DriverPropertyInfo > SAL_CALL OEvoabDriver::getPropertyInfo( const ::r
 }
 
 // --------------------------------------------------------------------------------
-sal_Int32 SAL_CALL OEvoabDriver::getMajorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL OEvoabDriver::getMajorVersion(  )
 {
 	return 1;
 }
 // --------------------------------------------------------------------------------
-sal_Int32 SAL_CALL OEvoabDriver::getMinorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL OEvoabDriver::getMinorVersion(  )
 {
 	return 0;
 }

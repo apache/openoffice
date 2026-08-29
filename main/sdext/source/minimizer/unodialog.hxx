@@ -75,7 +75,7 @@ protected:
     sal_Bool isHighContrast();
     void centerDialog();
 
-	com::sun::star::uno::Reference< com::sun::star::awt::XWindowPeer > createWindowPeer() throw ( com::sun::star::uno::Exception );
+	com::sun::star::uno::Reference< com::sun::star::awt::XWindowPeer > createWindowPeer();
 
 	com::sun::star::uno::Reference< com::sun::star::uno::XInterface > insertControlModel( const rtl::OUString& rServiceName, const rtl::OUString& rName,
 		const com::sun::star::uno::Sequence< rtl::OUString >& rPropertyNames, const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& rPropertyValues );

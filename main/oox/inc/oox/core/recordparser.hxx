@@ -56,10 +56,7 @@ public:
 
     void                setFragmentHandler( const ::rtl::Reference< FragmentHandler >& rxHandler );
 
-    void                parseStream( const RecordInputSource& rInputSource )
-                            throw(  ::com::sun::star::xml::sax::SAXException,
-                                    ::com::sun::star::io::IOException,
-                                    ::com::sun::star::uno::RuntimeException );
+    void                parseStream( const RecordInputSource& rInputSource );
 
     inline const RecordInputSource& getInputSource() const { return maSource; }
 

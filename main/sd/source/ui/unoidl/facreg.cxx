@@ -48,158 +48,121 @@ using namespace com::sun::star;
 // Forward declarations of the factories.
 
 extern uno::Reference< uno::XInterface > SAL_CALL SdDrawingDocument_createInstance( const uno::Reference< lang::XMultiServiceFactory > & _rxFactory, const sal_uInt64 _nCreationFlags );
-extern OUString SdDrawingDocument_getImplementationName() throw( uno::RuntimeException );
-extern uno::Sequence< OUString > SAL_CALL SdDrawingDocument_getSupportedServiceNames() throw( uno::RuntimeException );
+extern OUString SdDrawingDocument_getImplementationName();
+extern uno::Sequence< OUString > SAL_CALL SdDrawingDocument_getSupportedServiceNames();
 
 extern uno::Reference< uno::XInterface > SAL_CALL SdPresentationDocument_createInstance( const uno::Reference< lang::XMultiServiceFactory > & _rxFactory, const sal_uInt64 _nCreationFlags );
-extern OUString SdPresentationDocument_getImplementationName() throw( uno::RuntimeException );
-extern uno::Sequence< OUString > SAL_CALL SdPresentationDocument_getSupportedServiceNames() throw( uno::RuntimeException );
+extern OUString SdPresentationDocument_getImplementationName();
+extern uno::Sequence< OUString > SAL_CALL SdPresentationDocument_getSupportedServiceNames();
 
 extern uno::Reference< uno::XInterface > SAL_CALL SdHtmlOptionsDialog_CreateInstance( const uno::Reference< lang::XMultiServiceFactory > & _rxFactory );
-extern OUString SdHtmlOptionsDialog_getImplementationName() throw( uno::RuntimeException );
-extern uno::Sequence< OUString > SAL_CALL SdHtmlOptionsDialog_getSupportedServiceNames() throw( uno::RuntimeException );
+extern OUString SdHtmlOptionsDialog_getImplementationName();
+extern uno::Sequence< OUString > SAL_CALL SdHtmlOptionsDialog_getSupportedServiceNames();
 
 extern uno::Reference< uno::XInterface > SAL_CALL SdUnoModule_createInstance( const uno::Reference< lang::XMultiServiceFactory > & _rxFactory );
-extern OUString SdUnoModule_getImplementationName() throw( uno::RuntimeException );
-extern uno::Sequence< OUString > SAL_CALL SdUnoModule_getSupportedServiceNames() throw( uno::RuntimeException );
+extern OUString SdUnoModule_getImplementationName();
+extern uno::Sequence< OUString > SAL_CALL SdUnoModule_getSupportedServiceNames();
 
 namespace sd
 {
 extern uno::Reference< uno::XInterface > SAL_CALL RandomNode_createInstance( const uno::Reference< lang::XMultiServiceFactory > & _rxFactory );
-extern OUString RandomNode__getImplementationName() throw( uno::RuntimeException );
-extern uno::Sequence< OUString > SAL_CALL RandomNode_getSupportedServiceNames() throw( uno::RuntimeException );
+extern OUString RandomNode__getImplementationName();
+extern uno::Sequence< OUString > SAL_CALL RandomNode_getSupportedServiceNames();
 
 extern uno::Reference< uno::XInterface > SAL_CALL SlideLayoutController_createInstance( const uno::Reference< lang::XMultiServiceFactory > & _rxFactory );
-extern OUString SlideLayoutController_getImplementationName() throw( uno::RuntimeException );
-extern uno::Sequence< OUString >  SlideLayoutController_getSupportedServiceNames() throw( uno::RuntimeException );
+extern OUString SlideLayoutController_getImplementationName();
+extern uno::Sequence< OUString >  SlideLayoutController_getSupportedServiceNames();
 
 extern uno::Reference< uno::XInterface > SAL_CALL InsertSlideController_createInstance( const uno::Reference< lang::XMultiServiceFactory > & _rxFactory );
-extern OUString InsertSlideController_getImplementationName() throw( uno::RuntimeException );
-extern uno::Sequence< OUString >  InsertSlideController_getSupportedServiceNames() throw( uno::RuntimeException );
+extern OUString InsertSlideController_getImplementationName();
+extern uno::Sequence< OUString >  InsertSlideController_getSupportedServiceNames();
 }
 
 namespace sd { namespace framework {
 
 extern uno::Reference<uno::XInterface> SAL_CALL Configuration_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString Configuration_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL Configuration_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString Configuration_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL Configuration_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL ConfigurationController_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString ConfigurationController_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL ConfigurationController_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString ConfigurationController_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL ConfigurationController_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL ModuleController_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString ModuleController_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL ModuleController_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString ModuleController_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL ModuleController_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL BasicPaneFactory_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString BasicPaneFactory_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL BasicPaneFactory_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString BasicPaneFactory_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL BasicPaneFactory_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL BasicToolBarFactory_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString BasicToolBarFactory_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL BasicToolBarFactory_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString BasicToolBarFactory_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL BasicToolBarFactory_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL BasicViewFactory_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString BasicViewFactory_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL BasicViewFactory_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString BasicViewFactory_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL BasicViewFactory_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL ResourceId_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString ResourceId_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL ResourceId_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString ResourceId_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL ResourceId_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL PresentationFactoryProvider_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString PresentationFactoryProvider_getImplementationName(void)
-    throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL PresentationFactoryProvider_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString PresentationFactoryProvider_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL PresentationFactoryProvider_getSupportedServiceNames (void);
 } }
 
 namespace sd { namespace sidebar {
 
 extern uno::Reference<uno::XInterface> SAL_CALL PanelFactory_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString PanelFactory_getImplementationName(void) throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL PanelFactory_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString PanelFactory_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL PanelFactory_getSupportedServiceNames (void);
 
 } }
 
 namespace sd { namespace presenter {
 extern uno::Reference<uno::XInterface> SAL_CALL SlideRenderer_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString SlideRenderer_getImplementationName(void)
-    throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL SlideRenderer_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString SlideRenderer_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL SlideRenderer_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL PresenterCanvas_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString PresenterCanvas_getImplementationName(void)
-    throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL PresenterCanvas_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString PresenterCanvas_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL PresenterCanvas_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL PresenterTextViewService_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString PresenterTextViewService_getImplementationName(void)
-    throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL PresenterTextViewService_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString PresenterTextViewService_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL PresenterTextViewService_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL PresenterHelperService_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString PresenterHelperService_getImplementationName(void)
-    throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL PresenterHelperService_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString PresenterHelperService_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL PresenterHelperService_getSupportedServiceNames (void);
 
 extern uno::Reference<uno::XInterface> SAL_CALL PresenterPreviewCache_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString PresenterPreviewCache_getImplementationName(void)
-    throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL PresenterPreviewCache_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString PresenterPreviewCache_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL PresenterPreviewCache_getSupportedServiceNames (void);
 } }
 
 
 namespace sd { namespace slidesorter {
 extern uno::Reference<uno::XInterface> SAL_CALL SlideSorterService_createInstance(
-    const uno::Reference<uno::XComponentContext>& rxContext)
-    throw(uno::Exception);
-extern OUString SlideSorterService_getImplementationName(void)
-    throw (uno::RuntimeException);
-extern uno::Sequence<OUString> SAL_CALL SlideSorterService_getSupportedServiceNames (void)
-    throw (uno::RuntimeException);
+    const uno::Reference<uno::XComponentContext>& rxContext);
+extern OUString SlideSorterService_getImplementationName(void);
+extern uno::Sequence<OUString> SAL_CALL SlideSorterService_getSupportedServiceNames (void);
 } }
 
 using namespace ::sd;

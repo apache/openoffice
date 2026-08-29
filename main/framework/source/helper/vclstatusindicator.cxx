@@ -79,7 +79,6 @@ VCLStatusIndicator::~VCLStatusIndicator()
 //-----------------------------------------------
 void SAL_CALL VCLStatusIndicator::start(const ::rtl::OUString& sText ,
                                               sal_Int32        nRange)
-    throw(css::uno::RuntimeException)
 {
     // SAFE -> ----------------------------------
     ReadGuard aReadLock(m_aLock);
@@ -119,7 +118,6 @@ void SAL_CALL VCLStatusIndicator::start(const ::rtl::OUString& sText ,
 
 //-----------------------------------------------
 void SAL_CALL VCLStatusIndicator::reset()
-    throw(css::uno::RuntimeException)
 {
     // SOLAR SAFE -> ----------------------------
     ::vos::OClearableGuard aSolarLock(Application::GetSolarMutex());
@@ -134,7 +132,6 @@ void SAL_CALL VCLStatusIndicator::reset()
 
 //-----------------------------------------------
 void SAL_CALL VCLStatusIndicator::end()
-    throw(css::uno::RuntimeException)
 {
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);
@@ -160,7 +157,6 @@ void SAL_CALL VCLStatusIndicator::end()
 
 //-----------------------------------------------
 void SAL_CALL VCLStatusIndicator::setText(const ::rtl::OUString& sText)
-    throw(css::uno::RuntimeException)
 {
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);
@@ -178,7 +174,6 @@ void SAL_CALL VCLStatusIndicator::setText(const ::rtl::OUString& sText)
 
 //-----------------------------------------------
 void SAL_CALL VCLStatusIndicator::setValue(sal_Int32 nValue)
-    throw(css::uno::RuntimeException)
 {
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);

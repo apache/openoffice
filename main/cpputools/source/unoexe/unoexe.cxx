@@ -152,7 +152,6 @@ static const char arUsingText[] =
 //--------------------------------------------------------------------------------------------------
 static sal_Bool readOption( OUString * pValue, const sal_Char * pOpt,
 							sal_Int32 * pnIndex, const OUString & aArg)
-	throw (RuntimeException)
 {
 	const OUString dash = OUString(RTL_CONSTASCII_USTRINGPARAM("-"));
 	if(aArg.indexOf(dash) != 0)
@@ -238,7 +237,6 @@ void createInstance(
 	Reference< T > & rxOut,
 	const Reference< XComponentContext > & xContext,
 	const OUString & rServiceName )
-	throw (Exception)
 {
     Reference< XMultiComponentFactory > xMgr( xContext->getServiceManager() );
 	Reference< XInterface > x( xMgr->createInstanceWithContext( rServiceName, xContext ) );
@@ -313,7 +311,6 @@ void createInstance(
 static Reference< XSimpleRegistry > nestRegistries(
 	const Reference< XSimpleRegistry > & xReadWrite,
 	const Reference< XSimpleRegistry > & xReadOnly )
-	throw (Exception)
 {
 	Reference< XSimpleRegistry > xReg( createNestedRegistry() );
     if (! xReg.is())
@@ -338,7 +335,6 @@ static Reference< XSimpleRegistry > nestRegistries(
 static Reference< XSimpleRegistry > openRegistry(
 	const OUString & rURL,
 	sal_Bool bReadOnly, sal_Bool bCreate )
-	throw (Exception)
 {
 	Reference< XSimpleRegistry > xNewReg( createSimpleRegistry() );
     if (! xNewReg.is())
@@ -372,7 +368,6 @@ static Reference< XSimpleRegistry > openRegistry(
 static Reference< XInterface > loadComponent(
 	const Reference< XComponentContext > & xContext,
 	const OUString & rImplName, const OUString & rLocation )
-	throw (Exception)
 {
 	// determine loader to be used
 	sal_Int32 nDot = rLocation.lastIndexOf( '.' );
@@ -476,7 +471,7 @@ class OInstanceProvider
 
 	OUString						  _aInstanceName;
 
-	inline Reference< XInterface > createInstance() throw (Exception);
+	inline Reference< XInterface > createInstance();
 
 public:
 	OInstanceProvider( const Reference< XComponentContext > & xContext,
@@ -493,12 +488,10 @@ public:
 		{}
 
 	// XInstanceProvider
-	virtual Reference< XInterface > SAL_CALL getInstance( const OUString & rName )
-		throw (NoSuchElementException, RuntimeException);
+	virtual Reference< XInterface > SAL_CALL getInstance( const OUString & rName );
 };
 //__________________________________________________________________________________________________
 inline Reference< XInterface > OInstanceProvider::createInstance()
-	throw (Exception)
 {
 	Reference< XInterface > xRet;
 	if (_aImplName.getLength()) // manually via loader
@@ -515,7 +508,6 @@ inline Reference< XInterface > OInstanceProvider::createInstance()
 }
 //__________________________________________________________________________________________________
 Reference< XInterface > OInstanceProvider::getInstance( const OUString & rName )
-	throw (NoSuchElementException, RuntimeException)
 {
 	try
 	{
@@ -568,15 +560,13 @@ struct ODisposingListener : public WeakImplHelper1< XEventListener >
 	Condition cDisposed;
 
 	// XEventListener
-	virtual void SAL_CALL disposing( const EventObject & rEvt )
-		throw (RuntimeException);
+	virtual void SAL_CALL disposing( const EventObject & rEvt );
 
 	//----------------------------------------------------------------------------------------------
 	static void waitFor( const Reference< XComponent > & xComp );
 };
 //__________________________________________________________________________________________________
 void ODisposingListener::disposing( const EventObject & )
-	throw (RuntimeException)
 {
 	cDisposed.set();
 }

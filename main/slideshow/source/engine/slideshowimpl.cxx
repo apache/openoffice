@@ -293,52 +293,39 @@ public:
 
 private:
     // XSlideShow:
-    virtual sal_Bool SAL_CALL nextEffect() throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL previousEffect() throw (uno::RuntimeException);
+    virtual sal_Bool SAL_CALL nextEffect();
+    virtual sal_Bool SAL_CALL previousEffect();
     virtual sal_Bool SAL_CALL startShapeActivity(
-        uno::Reference<drawing::XShape> const& xShape )
-        throw (uno::RuntimeException);
+        uno::Reference<drawing::XShape> const& xShape );
     virtual sal_Bool SAL_CALL stopShapeActivity(
-        uno::Reference<drawing::XShape> const& xShape )
-        throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL pause( sal_Bool bPauseShow )
-        throw (uno::RuntimeException);
-    virtual uno::Reference<drawing::XDrawPage> SAL_CALL getCurrentSlide()
-        throw (uno::RuntimeException);
+        uno::Reference<drawing::XShape> const& xShape );
+    virtual sal_Bool SAL_CALL pause( sal_Bool bPauseShow );
+    virtual uno::Reference<drawing::XDrawPage> SAL_CALL getCurrentSlide();
     virtual void SAL_CALL displaySlide(
         uno::Reference<drawing::XDrawPage> const& xSlide,
         uno::Reference<drawing::XDrawPagesSupplier> const& xDrawPages,
         uno::Reference<animations::XAnimationNode> const& xRootNode,
-        uno::Sequence<beans::PropertyValue> const& rProperties )
-        throw (uno::RuntimeException);
-    virtual void SAL_CALL registerUserPaintPolygons( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xDocFactory ) throw (::com::sun::star::uno::RuntimeException);
+        uno::Sequence<beans::PropertyValue> const& rProperties );
+    virtual void SAL_CALL registerUserPaintPolygons( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xDocFactory );
     virtual sal_Bool SAL_CALL setProperty(
-        beans::PropertyValue const& rProperty ) throw (uno::RuntimeException);
+        beans::PropertyValue const& rProperty );
     virtual sal_Bool SAL_CALL addView(
-        uno::Reference<presentation::XSlideShowView> const& xView )
-        throw (uno::RuntimeException);
+        uno::Reference<presentation::XSlideShowView> const& xView );
     virtual sal_Bool SAL_CALL removeView(
-        uno::Reference<presentation::XSlideShowView> const& xView )
-        throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL update( double & nNextTimeout )
-        throw (uno::RuntimeException);
+        uno::Reference<presentation::XSlideShowView> const& xView );
+    virtual sal_Bool SAL_CALL update( double & nNextTimeout );
     virtual void SAL_CALL addSlideShowListener(
-        uno::Reference<presentation::XSlideShowListener> const& xListener )
-        throw (uno::RuntimeException);
+        uno::Reference<presentation::XSlideShowListener> const& xListener );
     virtual void SAL_CALL removeSlideShowListener(
-        uno::Reference<presentation::XSlideShowListener> const& xListener )
-        throw (uno::RuntimeException);
+        uno::Reference<presentation::XSlideShowListener> const& xListener );
     virtual void SAL_CALL addShapeEventListener(
         uno::Reference<presentation::XShapeEventListener> const& xListener,
-        uno::Reference<drawing::XShape> const& xShape )
-        throw (uno::RuntimeException);
+        uno::Reference<drawing::XShape> const& xShape );
     virtual void SAL_CALL removeShapeEventListener(
         uno::Reference<presentation::XShapeEventListener> const& xListener,
-        uno::Reference<drawing::XShape> const& xShape )
-        throw (uno::RuntimeException);
+        uno::Reference<drawing::XShape> const& xShape );
     virtual void SAL_CALL setShapeCursor(
-        uno::Reference<drawing::XShape> const& xShape, sal_Int16 nPointerShape )
-        throw (uno::RuntimeException);
+        uno::Reference<drawing::XShape> const& xShape, sal_Int16 nPointerShape );
 
 
     // CursorManager
@@ -1096,7 +1083,6 @@ void SlideShowImpl::displaySlide(
     uno::Reference<drawing::XDrawPagesSupplier> const& xDrawPages,
     uno::Reference<animations::XAnimationNode> const& xRootNode,
     uno::Sequence<beans::PropertyValue> const& rProperties )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1253,7 +1239,7 @@ void SlideShowImpl::redisplayCurrentSlide (void)
         boost::mem_fn( &presentation::XSlideShowListener::slideTransitionStarted ) );
 }
 
-sal_Bool SlideShowImpl::nextEffect() throw (uno::RuntimeException)
+sal_Bool SlideShowImpl::nextEffect()
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1270,7 +1256,7 @@ sal_Bool SlideShowImpl::nextEffect() throw (uno::RuntimeException)
 }
 
 
-sal_Bool SlideShowImpl::previousEffect() throw (uno::RuntimeException)
+sal_Bool SlideShowImpl::previousEffect()
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1315,7 +1301,6 @@ void SlideShowImpl::rewindEffectToPreviousSlide (void)
 
 sal_Bool SlideShowImpl::startShapeActivity(
     uno::Reference<drawing::XShape> const& /*xShape*/ )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1329,7 +1314,6 @@ sal_Bool SlideShowImpl::startShapeActivity(
 
 sal_Bool SlideShowImpl::stopShapeActivity(
     uno::Reference<drawing::XShape> const& /*xShape*/ )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1342,7 +1326,6 @@ sal_Bool SlideShowImpl::stopShapeActivity(
 }
 
 sal_Bool SlideShowImpl::pause( sal_Bool bPauseShow )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1365,7 +1348,6 @@ sal_Bool SlideShowImpl::pause( sal_Bool bPauseShow )
 }
 
 uno::Reference<drawing::XDrawPage> SlideShowImpl::getCurrentSlide()
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1383,7 +1365,6 @@ uno::Reference<drawing::XDrawPage> SlideShowImpl::getCurrentSlide()
 
 sal_Bool SlideShowImpl::addView(
     uno::Reference<presentation::XSlideShowView> const& xView )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1431,7 +1412,6 @@ sal_Bool SlideShowImpl::addView(
 
 sal_Bool SlideShowImpl::removeView(
     uno::Reference<presentation::XSlideShowView> const& xView )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1452,7 +1432,7 @@ sal_Bool SlideShowImpl::removeView(
     return true;
 }
 
-void SlideShowImpl::registerUserPaintPolygons( const uno::Reference< lang::XMultiServiceFactory >& xDocFactory ) throw (uno::RuntimeException)
+void SlideShowImpl::registerUserPaintPolygons( const uno::Reference< lang::XMultiServiceFactory >& xDocFactory )
 {
     // Retrieve Polygons if user ends presentation by context menu
     if (mpCurrentSlide)
@@ -1578,7 +1558,6 @@ void SlideShowImpl::registerUserPaintPolygons( const uno::Reference< lang::XMult
 }
 
 sal_Bool SlideShowImpl::setProperty( beans::PropertyValue const& rProperty )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1861,7 +1840,6 @@ sal_Bool SlideShowImpl::setProperty( beans::PropertyValue const& rProperty )
 
 void SlideShowImpl::addSlideShowListener(
     uno::Reference<presentation::XSlideShowListener> const& xListener )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1874,7 +1852,6 @@ void SlideShowImpl::addSlideShowListener(
 
 void SlideShowImpl::removeSlideShowListener(
     uno::Reference<presentation::XSlideShowListener> const& xListener )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1885,7 +1862,6 @@ void SlideShowImpl::removeSlideShowListener(
 void SlideShowImpl::addShapeEventListener(
     uno::Reference<presentation::XShapeEventListener> const& xListener,
     uno::Reference<drawing::XShape> const& xShape )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1918,7 +1894,6 @@ void SlideShowImpl::addShapeEventListener(
 void SlideShowImpl::removeShapeEventListener(
     uno::Reference<presentation::XShapeEventListener> const& xListener,
     uno::Reference<drawing::XShape> const& xShape )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1945,7 +1920,6 @@ void SlideShowImpl::removeShapeEventListener(
 
 void SlideShowImpl::setShapeCursor(
     uno::Reference<drawing::XShape> const& xShape, sal_Int16 nPointerShape )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -2014,7 +1988,6 @@ void SlideShowImpl::resetCursor()
 }
 
 sal_Bool SlideShowImpl::update( double & nNextTimeout )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 

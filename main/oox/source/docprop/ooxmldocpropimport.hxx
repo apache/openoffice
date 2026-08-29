@@ -45,15 +45,14 @@ public:
                             const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     // XOOXMLDocumentPropertiesImporter
     virtual void SAL_CALL importProperties(
                             const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& rxSource,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::document::XDocumentProperties >& rxDocumentProperties )
-                        throw (::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::Exception);
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::document::XDocumentProperties >& rxDocumentProperties );
 
 private:
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > mxContext;

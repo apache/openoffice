@@ -70,7 +70,7 @@ namespace connectivity
 				);
 
 			//XInterface
-			virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+			virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 			virtual void SAL_CALL acquire() throw();
             virtual void SAL_CALL release() throw();
 			// ::cppu::OComponentHelper
@@ -97,7 +97,7 @@ namespace connectivity
 			sal_Bool isReadOnly() const { return !m_bWriteable; }
 				// m_pFileStream && !m_pFileStream->IsWritable(); }
 			// com::sun::star::lang::XUnoTunnel
-			virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+			virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 			static ::com::sun::star::uno::Sequence< sal_Int8 > getUnoTunnelImplementationId();
 
 

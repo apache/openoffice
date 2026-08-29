@@ -91,12 +91,12 @@ public:
     VCLSession();
     virtual ~VCLSession();
 
-    virtual void SAL_CALL addSessionManagerListener( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException );
-    virtual void SAL_CALL removeSessionManagerListener( const css::uno::Reference< XSessionManagerListener>& xListener ) throw( RuntimeException );
-    virtual void SAL_CALL queryInteraction( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException );
-    virtual void SAL_CALL interactionDone( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException );
-    virtual void SAL_CALL saveDone( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException );
-    virtual sal_Bool SAL_CALL cancelShutdown() throw( RuntimeException );
+    virtual void SAL_CALL addSessionManagerListener( const css::uno::Reference< XSessionManagerListener >& xListener );
+    virtual void SAL_CALL removeSessionManagerListener( const css::uno::Reference< XSessionManagerListener>& xListener );
+    virtual void SAL_CALL queryInteraction( const css::uno::Reference< XSessionManagerListener >& xListener );
+    virtual void SAL_CALL interactionDone( const css::uno::Reference< XSessionManagerListener >& xListener );
+    virtual void SAL_CALL saveDone( const css::uno::Reference< XSessionManagerListener >& xListener );
+    virtual sal_Bool SAL_CALL cancelShutdown();
 };
 
 VCLSession* VCLSession::pOneInstance = NULL;
@@ -251,14 +251,14 @@ void VCLSession::SalSessionEventProc( SalSessionEvent* pEvent )
     }
 }
 
-void SAL_CALL VCLSession::addSessionManagerListener( const css::uno::Reference<XSessionManagerListener>& xListener ) throw( RuntimeException )
+void SAL_CALL VCLSession::addSessionManagerListener( const css::uno::Reference<XSessionManagerListener>& xListener )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
     m_aListeners.push_back( Listener( xListener ) );
 }
 
-void SAL_CALL VCLSession::removeSessionManagerListener( const css::uno::Reference<XSessionManagerListener>& xListener ) throw( RuntimeException )
+void SAL_CALL VCLSession::removeSessionManagerListener( const css::uno::Reference<XSessionManagerListener>& xListener )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
@@ -275,7 +275,7 @@ void SAL_CALL VCLSession::removeSessionManagerListener( const css::uno::Referenc
     }
 }
 
-void SAL_CALL VCLSession::queryInteraction( const css::uno::Reference<XSessionManagerListener>& xListener ) throw( RuntimeException )
+void SAL_CALL VCLSession::queryInteraction( const css::uno::Reference<XSessionManagerListener>& xListener )
 {
     if( m_bInteractionGranted )
     {
@@ -302,7 +302,7 @@ void SAL_CALL VCLSession::queryInteraction( const css::uno::Reference<XSessionMa
     }
 }
 
-void SAL_CALL VCLSession::interactionDone( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException )
+void SAL_CALL VCLSession::interactionDone( const css::uno::Reference< XSessionManagerListener >& xListener )
 {
     osl::MutexGuard aGuard( m_aMutex );
     int nRequested = 0, nDone = 0;
@@ -325,7 +325,7 @@ void SAL_CALL VCLSession::interactionDone( const css::uno::Reference< XSessionMa
     }
 }
 
-void SAL_CALL VCLSession::saveDone( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException )
+void SAL_CALL VCLSession::saveDone( const css::uno::Reference< XSessionManagerListener >& xListener )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
@@ -346,7 +346,7 @@ void SAL_CALL VCLSession::saveDone( const css::uno::Reference< XSessionManagerLi
     }
 }
 
-sal_Bool SAL_CALL VCLSession::cancelShutdown() throw( RuntimeException )
+sal_Bool SAL_CALL VCLSession::cancelShutdown()
 {
     return m_pSession ? (sal_Bool)m_pSession->cancelShutdown() : sal_False;
 }

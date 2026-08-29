@@ -157,56 +157,33 @@ public:
 	sal_Bool ParsePackageRawStream();
 
 	void setZipEntryOnLoading( const ZipEntry &rInEntry);
-    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getRawData()
-		throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getRawData();
 
 	static const ::com::sun::star::uno::Sequence < sal_Int8 >& static_getImplementationId();
 
 	// XActiveDataSink
-    virtual void SAL_CALL setInputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aStream )
-		throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getInputStream(  )
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setInputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aStream );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getInputStream(  );
 
 	// XDataSinkEncrSupport
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getDataStream()
-		throw ( ::com::sun::star::packages::WrongPasswordException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getRawStream()
-		throw ( ::com::sun::star::packages::NoEncryptionException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getDataStream();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getRawStream();
     virtual void SAL_CALL setDataStream(
-					const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aStream )
-		throw ( ::com::sun::star::io::IOException,
-				::com::sun::star::uno::RuntimeException );
+					const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aStream );
     virtual void SAL_CALL setRawStream(
-					const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aStream )
-		throw ( ::com::sun::star::packages::EncryptionNotAllowedException,
-				::com::sun::star::packages::NoRawFormatException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getPlainRawStream()
-		throw ( ::com::sun::star::io::IOException,
-				::com::sun::star::uno::RuntimeException );
+					const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aStream );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getPlainRawStream();
 
 	// XUnoTunnel
-    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 
 	// XPropertySet
-    virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue );
+    virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 };
 #endif

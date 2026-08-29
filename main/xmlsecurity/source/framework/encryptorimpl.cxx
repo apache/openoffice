@@ -91,7 +91,6 @@ bool EncryptorImpl::checkReady() const
 }
 
 void EncryptorImpl::notifyResultListener() const
-	throw (cssu::Exception, cssu::RuntimeException)
 /****** DecryptorImpl/notifyResultListener ***********************************
  *
  *   NAME
@@ -127,7 +126,6 @@ void EncryptorImpl::notifyResultListener() const
 void EncryptorImpl::startEngine( const cssu::Reference<
 	cssxc::XXMLEncryptionTemplate >&
 	xEncryptionTemplate)
-    	throw (cssu::Exception, cssu::RuntimeException)
 /****** EncryptorImpl/startEngine ********************************************
  *
  *   NAME
@@ -183,7 +181,6 @@ void EncryptorImpl::startEngine( const cssu::Reference<
 
 /* XReferenceCollector */
 void SAL_CALL EncryptorImpl::setReferenceCount(sal_Int32)
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	/*
 	 * dummp method, because there is only one reference in
@@ -193,27 +190,23 @@ void SAL_CALL EncryptorImpl::setReferenceCount(sal_Int32)
 }
 
 void SAL_CALL EncryptorImpl::setReferenceId( sal_Int32 id )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	m_nReferenceId = id;
 }
 
 /* XEncryptionResultBroadcaster */
 void SAL_CALL EncryptorImpl::addEncryptionResultListener( const cssu::Reference< cssxc::sax::XEncryptionResultListener >& listener )
-    	throw (cssu::Exception, cssu::RuntimeException)
 {
 	m_xResultListener = listener;
 	tryToPerform();
 }
 
 void SAL_CALL EncryptorImpl::removeEncryptionResultListener( const cssu::Reference< cssxc::sax::XEncryptionResultListener >&)
-    	throw (cssu::RuntimeException)
 {
 }
 
 /* XInitialization */
 void SAL_CALL EncryptorImpl::initialize( const cssu::Sequence< cssu::Any >& aArguments )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	OSL_ASSERT(aArguments.getLength() == 5);
 
@@ -230,19 +223,16 @@ void SAL_CALL EncryptorImpl::initialize( const cssu::Sequence< cssu::Any >& aArg
 
 
 rtl::OUString EncryptorImpl_getImplementationName ()
-	throw (cssu::RuntimeException)
 {
 	return rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
 sal_Bool SAL_CALL EncryptorImpl_supportsService( const rtl::OUString& ServiceName )
-	throw (cssu::RuntimeException)
 {
 	return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ));
 }
 
 cssu::Sequence< rtl::OUString > SAL_CALL EncryptorImpl_getSupportedServiceNames(  )
-	throw (cssu::RuntimeException)
 {
 	cssu::Sequence < rtl::OUString > aRet(1);
 	rtl::OUString* pArray = aRet.getArray();
@@ -253,24 +243,20 @@ cssu::Sequence< rtl::OUString > SAL_CALL EncryptorImpl_getSupportedServiceNames(
 
 cssu::Reference< cssu::XInterface > SAL_CALL EncryptorImpl_createInstance(
 	const cssu::Reference< cssl::XMultiServiceFactory >& rSMgr)
-	throw( cssu::Exception )
 {
 	return (cppu::OWeakObject*) new EncryptorImpl(rSMgr);
 }
 
 /* XServiceInfo */
 rtl::OUString SAL_CALL EncryptorImpl::getImplementationName(  )
-	throw (cssu::RuntimeException)
 {
 	return EncryptorImpl_getImplementationName();
 }
 sal_Bool SAL_CALL EncryptorImpl::supportsService( const rtl::OUString& rServiceName )
-	throw (cssu::RuntimeException)
 {
 	return EncryptorImpl_supportsService( rServiceName );
 }
 cssu::Sequence< rtl::OUString > SAL_CALL EncryptorImpl::getSupportedServiceNames(  )
-	throw (cssu::RuntimeException)
 {
 	return EncryptorImpl_getSupportedServiceNames();
 }

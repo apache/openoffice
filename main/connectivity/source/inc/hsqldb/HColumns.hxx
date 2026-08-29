@@ -58,7 +58,7 @@ namespace connectivity
             OHSQLColumn(sal_Bool _bCase);
 			virtual void construct();
 
-			virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+			virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 		};
 	}
 }

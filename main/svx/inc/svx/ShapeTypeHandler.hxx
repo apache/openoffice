@@ -169,8 +169,7 @@ public:
 
 	///	get the accessible base name for an object
 	static ::rtl::OUString CreateAccessibleBaseName (
-		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& rxShape)
-			throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& rxShape);
 
 protected:
     // Declare default constructor, copy constructor, destructor, and

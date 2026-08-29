@@ -61,7 +61,9 @@ PATCH_FILES=\
    xmlsec1-nssmangleciphers.patch \
    xmlsec1-noverify.patch \
    xmlsec1-mingw32.patch \
-   xmlsec1-mingw-keymgr-mscrypto.patch
+   xmlsec1-mingw-keymgr-mscrypto.patch \
+   xmlsec1-nowin98.patch \
+   xmlsec1-ucrt-snprintf.patch
 
 .IF "$(GUI)"=="OS2"
 PATCH_FILES+=xmlsec1-os2.patch
@@ -113,7 +115,14 @@ CONFIGURE_FLAGS=crypto=$(CRYPTOLIB) debug=yes xslt=no iconv=no static=no include
 .ELSE
 CONFIGURE_FLAGS=crypto=$(CRYPTOLIB) xslt=no iconv=no static=no include=$(BASEINC) lib=$(BASELIB)
 .ENDIF
+# /OPT:NOWIN98 was removed from link.exe after VS2008 and is now LNK1117.
+# Switched off only for the UCRT toolset, so a VC9 build keeps the exact
+# link command line it has always had.
+.IF "$(COMEX)" == "14"
+BUILD_ACTION=nmake WIN98COMPAT=0
+.ELSE
 BUILD_ACTION=nmake
+.ENDIF
 BUILD_DIR=$(CONFIGURE_DIR)
 .ENDIF
 .ELSE

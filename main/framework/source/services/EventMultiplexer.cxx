@@ -58,7 +58,6 @@ EventMultiplexer::~EventMultiplexer (void)
 void SAL_CALL EventMultiplexer::addEventListener (
     const cssu::Reference<css::util::XEventListener>& rxListener,
     const cssu::Reference<cssu::XInterface>& rxEventFocus)
-    throw(cssu::RuntimeException,cssl::IllegalArgumentException)
 {
     if ( ! rxListener.is())
         throw css::lang::IllegalArgumentException(A2S("can not add an empty reference"), static_cast<XWeak*>(this), 0);
@@ -92,7 +91,6 @@ void SAL_CALL EventMultiplexer::addEventListener (
 void SAL_CALL EventMultiplexer::removeEventListener (
     const cssu::Reference<css::util::XEventListener>& rxListener,
     const cssu::Reference<cssu::XInterface>& rxEventFocus)
-    throw(cssu::RuntimeException,cssl::IllegalArgumentException)
 {
     if ( ! rxListener.is())
         throw cssl::IllegalArgumentException(A2S("can not remove an empty reference"), static_cast<XWeak*>(this), 0);
@@ -113,7 +111,6 @@ void SAL_CALL EventMultiplexer::removeEventListener (
 
 void SAL_CALL EventMultiplexer::removeAllEventListeners (
     const cssu::Reference<css::util::XEventListener>& rxListener)
-    throw(cssu::RuntimeException,cssl::IllegalArgumentException)
 {
     if ( ! rxListener.is())
         throw cssl::IllegalArgumentException(A2S("can not remove an empty reference"), static_cast<XWeak*>(this), 0);
@@ -137,7 +134,6 @@ void SAL_CALL EventMultiplexer::removeAllEventListeners (
 void SAL_CALL EventMultiplexer::broadcastEvent (
     const cssl::EventObject& rEventObject,
     const cssu::Reference<cssu::XInterface>& rxEventFocus)
-    throw(cssu::RuntimeException)
 {
     BroadcastEventToSingleContainer(rEventObject, rxEventFocus);
     if (rxEventFocus.is())
@@ -174,7 +170,6 @@ void EventMultiplexer::BroadcastEventToSingleContainer (
 // XSingleComponentFactory
 cssu::Reference<cssu::XInterface> SAL_CALL EventMultiplexer::createInstanceWithContext (
     const cssu::Reference<cssu::XComponentContext>& rxContext)
-    throw (cssu::Exception, cssu::RuntimeException)
 {
     return cssu::Reference<cssu::XInterface>();
 }
@@ -185,7 +180,6 @@ cssu::Reference<cssu::XInterface> SAL_CALL EventMultiplexer::createInstanceWithC
 cssu::Reference<cssu::XInterface > SAL_CALL EventMultiplexer::createInstanceWithArgumentsAndContext (
     const cssu::Sequence<cssu::Any>& rArguments,
     const cssu::Reference<cssu::XComponentContext>& rxContext)
-    throw (cssu::Exception, cssu::RuntimeException)
 {
     return cssu::Reference<cssu::XInterface>();
 }
@@ -196,7 +190,6 @@ cssu::Reference<cssu::XInterface > SAL_CALL EventMultiplexer::createInstanceWith
 // XServiceInfo
 
 ::rtl::OUString SAL_CALL EventMultiplexer::getImplementationName (void)
-    throw(cssu::RuntimeException)
 {
     return impl_getStaticImplementationName();
 }
@@ -207,7 +200,6 @@ cssu::Reference<cssu::XInterface > SAL_CALL EventMultiplexer::createInstanceWith
 
 sal_Bool SAL_CALL EventMultiplexer::supportsService (
     const ::rtl::OUString& rsServiceName)
-    throw (cssu::RuntimeException)
 {
     return ::comphelper::findValue(static_GetSupportedServiceNames(), rsServiceName, sal_True).getLength() != 0;
 }
@@ -216,7 +208,6 @@ sal_Bool SAL_CALL EventMultiplexer::supportsService (
 
 
 cssu::Sequence<OUString> SAL_CALL EventMultiplexer::getSupportedServiceNames (void)
-    throw (cssu::RuntimeException)
 {
     return static_GetSupportedServiceNames();
 }
@@ -260,7 +251,6 @@ cssu::Reference<cssu::XInterface> EventMultiplexer::impl_createFactory (
 
 cssu::Reference<cssu::XInterface> SAL_CALL EventMultiplexer::static_CreateInstance (
     const cssu::Reference<cssu::XComponentContext>& rxComponentContext)
-    throw (cssu::Exception)
 {
     EventMultiplexer* pObject = new EventMultiplexer(rxComponentContext);
     cssu::Reference<cssu::XInterface> xService (static_cast<XWeak*>(pObject), cssu::UNO_QUERY);

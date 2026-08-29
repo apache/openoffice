@@ -45,7 +45,7 @@ getAsConst( rtl::OUString rString )
 }
 
 static accessibility::XAccessibleImage*
-    getImage( AtkImage *pImage ) throw (uno::RuntimeException)
+    getImage( AtkImage *pImage )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pImage );
     if( pWrap )

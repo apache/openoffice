@@ -41,38 +41,38 @@ protected:
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();
     sal_Int32 convertLineStartEndNameToArrowheadStyle( rtl::OUString sLineName );
-    rtl::OUString convertArrowheadStyleToLineStartEndName( sal_Int32 nArrowheadStyle ) throw (css::uno::RuntimeException);
+    rtl::OUString convertArrowheadStyleToLineStartEndName( sal_Int32 nArrowheadStyle );
     sal_Int32 calculateArrowheadSize();
 public:
     ScVbaLineFormat( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::drawing::XShape > xShape );
 
     // Attributes
-    virtual sal_Int32 SAL_CALL getBeginArrowheadStyle() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setBeginArrowheadStyle( sal_Int32 _beginarrowheadstyle ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getBeginArrowheadLength() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setBeginArrowheadLength( sal_Int32 _beginarrowheadlength ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getBeginArrowheadWidth() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setBeginArrowheadWidth( sal_Int32 _beginarrowheadwidth ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getEndArrowheadStylel() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEndArrowheadStylel( sal_Int32 _endarrowheadstylel ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getEndArrowheadLength() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEndArrowheadLength( sal_Int32 _endarrowheadlength ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getEndArrowheadWidth() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEndArrowheadWidth( sal_Int32 _endarrowheadwidth ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getWeight() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setWeight( double _weight ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( sal_Bool _visible ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getTransparency() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTransparency( double _transparency ) throw (css::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getStyle() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setStyle( sal_Int16 _style ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getDashStyle() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setDashStyle( sal_Int32 _dashstyle ) throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getBeginArrowheadStyle();
+    virtual void SAL_CALL setBeginArrowheadStyle( sal_Int32 _beginarrowheadstyle );
+    virtual sal_Int32 SAL_CALL getBeginArrowheadLength();
+    virtual void SAL_CALL setBeginArrowheadLength( sal_Int32 _beginarrowheadlength );
+    virtual sal_Int32 SAL_CALL getBeginArrowheadWidth();
+    virtual void SAL_CALL setBeginArrowheadWidth( sal_Int32 _beginarrowheadwidth );
+    virtual sal_Int32 SAL_CALL getEndArrowheadStylel();
+    virtual void SAL_CALL setEndArrowheadStylel( sal_Int32 _endarrowheadstylel );
+    virtual sal_Int32 SAL_CALL getEndArrowheadLength();
+    virtual void SAL_CALL setEndArrowheadLength( sal_Int32 _endarrowheadlength );
+    virtual sal_Int32 SAL_CALL getEndArrowheadWidth();
+    virtual void SAL_CALL setEndArrowheadWidth( sal_Int32 _endarrowheadwidth );
+    virtual double SAL_CALL getWeight();
+    virtual void SAL_CALL setWeight( double _weight );
+    virtual sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( sal_Bool _visible );
+    virtual double SAL_CALL getTransparency();
+    virtual void SAL_CALL setTransparency( double _transparency );
+    virtual sal_Int16 SAL_CALL getStyle();
+    virtual void SAL_CALL setStyle( sal_Int16 _style );
+    virtual sal_Int32 SAL_CALL getDashStyle();
+    virtual void SAL_CALL setDashStyle( sal_Int32 _dashstyle );
 
     // Methods
-    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL BackColor() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL ForeColor() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL BackColor();
+    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL ForeColor();
 };
 
 #endif//SC_VBA_XLINEFORMAT_HXX

@@ -94,15 +94,13 @@ namespace {
         // XConfigurationChangeListener
 
         virtual void SAL_CALL notifyConfigurationChange (
-            const com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent)
-            throw (com::sun::star::uno::RuntimeException);
+            const com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent);
 
 
         // XEventListener
 
         virtual void SAL_CALL disposing (
-            const com::sun::star::lang::EventObject& rEvent)
-            throw (com::sun::star::uno::RuntimeException);
+            const com::sun::star::lang::EventObject& rEvent);
 
     private:
         Reference<drawing::framework::XConfigurationController> mxConfigurationController;
@@ -362,7 +360,6 @@ void PresenterWindowManager::SetPaneBorderPainter (
 //----- XWindowListener -------------------------------------------------------
 
 void SAL_CALL PresenterWindowManager::windowResized (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     if (rEvent.Source == mxParentWindow)
@@ -386,7 +383,6 @@ void SAL_CALL PresenterWindowManager::windowResized (const awt::WindowEvent& rEv
 
 
 void SAL_CALL PresenterWindowManager::windowMoved (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     if (rEvent.Source != mxParentWindow)
@@ -403,7 +399,6 @@ void SAL_CALL PresenterWindowManager::windowMoved (const awt::WindowEvent& rEven
 
 
 void SAL_CALL PresenterWindowManager::windowShown (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -412,7 +407,6 @@ void SAL_CALL PresenterWindowManager::windowShown (const lang::EventObject& rEve
 
 
 void SAL_CALL PresenterWindowManager::windowHidden (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -423,7 +417,6 @@ void SAL_CALL PresenterWindowManager::windowHidden (const lang::EventObject& rEv
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterWindowManager::windowPaint (const awt::PaintEvent& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -459,7 +452,6 @@ void SAL_CALL PresenterWindowManager::windowPaint (const awt::PaintEvent& rEvent
 //----- XMouseListener --------------------------------------------------------
 
 void SAL_CALL PresenterWindowManager::mousePressed (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     mbIsMouseClickPending = true;
@@ -469,7 +461,6 @@ void SAL_CALL PresenterWindowManager::mousePressed (const css::awt::MouseEvent& 
 
 
 void SAL_CALL PresenterWindowManager::mouseReleased (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
 #ifndef ENABLE_PANE_RESIZING
     if (mbIsMouseClickPending)
@@ -486,7 +477,6 @@ void SAL_CALL PresenterWindowManager::mouseReleased (const css::awt::MouseEvent&
 
 
 void SAL_CALL PresenterWindowManager::mouseEntered (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     mbIsMouseClickPending = false;
@@ -496,7 +486,6 @@ void SAL_CALL PresenterWindowManager::mouseEntered (const css::awt::MouseEvent& 
 
 
 void SAL_CALL PresenterWindowManager::mouseExited (const css::awt::MouseEvent& rEvent)
-    throw(css::uno::RuntimeException)
 {
     (void)rEvent;
     mbIsMouseClickPending = false;
@@ -508,7 +497,6 @@ void SAL_CALL PresenterWindowManager::mouseExited (const css::awt::MouseEvent& r
 //----- XFocusListener --------------------------------------------------------
 
 void SAL_CALL PresenterWindowManager::focusGained (const css::awt::FocusEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     (void)rEvent;
@@ -520,7 +508,6 @@ void SAL_CALL PresenterWindowManager::focusGained (const css::awt::FocusEvent& r
 
 
 void SAL_CALL PresenterWindowManager::focusLost (const css::awt::FocusEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
     (void)rEvent;
@@ -532,7 +519,6 @@ void SAL_CALL PresenterWindowManager::focusLost (const css::awt::FocusEvent& rEv
 //----- XEventListener --------------------------------------------------------
 
 void SAL_CALL PresenterWindowManager::disposing (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Source == mxParentWindow)
         mxParentWindow = NULL;
@@ -1487,7 +1473,6 @@ void PresenterWindowManager::Update (void)
 
 
 void PresenterWindowManager::ThrowIfDisposed (void) const
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{
@@ -1604,7 +1589,6 @@ void SAL_CALL ModeChangeAnimationStarter::disposing (void)
 
 void SAL_CALL ModeChangeAnimationStarter::notifyConfigurationChange (
     const com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent)
-    throw (com::sun::star::uno::RuntimeException)
 {
     (void)rEvent;
 
@@ -1623,7 +1607,6 @@ void SAL_CALL ModeChangeAnimationStarter::notifyConfigurationChange (
 
 void SAL_CALL ModeChangeAnimationStarter::disposing (
     const com::sun::star::lang::EventObject& rEvent)
-    throw (com::sun::star::uno::RuntimeException)
 {
     if (rEvent.Source == mxConfigurationController)
         mxConfigurationController = NULL;

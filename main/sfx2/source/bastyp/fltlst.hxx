@@ -54,9 +54,9 @@ class SfxFilterListener : public ::cppu::WeakImplHelper1< ::com::sun::star::util
     // uno interface
     public:
         // XRefreshListener
-        virtual void SAL_CALL refreshed( const ::com::sun::star::lang::EventObject& aSource ) throw( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL refreshed( const ::com::sun::star::lang::EventObject& aSource );
         // XEventListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aSource ) throw( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aSource );
 
 };  // SfxFilterListener
 

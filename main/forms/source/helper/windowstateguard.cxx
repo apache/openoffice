@@ -77,17 +77,17 @@ namespace frm
 
     protected:
         // XWindowListener2
-        virtual void SAL_CALL windowEnabled( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowDisabled( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL windowEnabled( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowDisabled( const ::com::sun::star::lang::EventObject& e );
 
         // XWindowListener
-        virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e );
+        virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e );
+        virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& e );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     private:
         /** ensures that the window's Enabled state matches what is described at the model
@@ -151,43 +151,43 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL WindowStateGuard_Impl::windowEnabled( const EventObject& /*e*/ ) throw (RuntimeException)
+    void SAL_CALL WindowStateGuard_Impl::windowEnabled( const EventObject& /*e*/ )
     {
         impl_ensureEnabledState_nothrow_nolck();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL WindowStateGuard_Impl::windowDisabled( const EventObject& /*e*/ ) throw (RuntimeException)
+    void SAL_CALL WindowStateGuard_Impl::windowDisabled( const EventObject& /*e*/ )
     {
         impl_ensureEnabledState_nothrow_nolck();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL WindowStateGuard_Impl::windowResized( const WindowEvent& /*e*/ ) throw (RuntimeException)
+    void SAL_CALL WindowStateGuard_Impl::windowResized( const WindowEvent& /*e*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL WindowStateGuard_Impl::windowMoved( const WindowEvent& /*e*/ ) throw (RuntimeException)
+    void SAL_CALL WindowStateGuard_Impl::windowMoved( const WindowEvent& /*e*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL WindowStateGuard_Impl::windowShown( const EventObject& /*e*/ ) throw (RuntimeException)
+    void SAL_CALL WindowStateGuard_Impl::windowShown( const EventObject& /*e*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL WindowStateGuard_Impl::windowHidden( const EventObject& /*e*/ ) throw (RuntimeException)
+    void SAL_CALL WindowStateGuard_Impl::windowHidden( const EventObject& /*e*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL WindowStateGuard_Impl::disposing( const EventObject& Source ) throw (RuntimeException)
+    void SAL_CALL WindowStateGuard_Impl::disposing( const EventObject& Source )
     {
         OSL_ENSURE( Source.Source == m_xWindow, "WindowStateGuard_Impl::disposing: where does this come from?" );
         (void)Source;

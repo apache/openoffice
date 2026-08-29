@@ -244,8 +244,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        LoadEnv(const css::uno::Reference< css::lang::XMultiServiceFactory >& xSMGR)
-            throw(LoadEnvException, css::uno::RuntimeException);
+        LoadEnv(const css::uno::Reference< css::lang::XMultiServiceFactory >& xSMGR);
 
         //_______________________________________
 
@@ -262,10 +261,7 @@ class LoadEnv : private ThreadHelpBase
                                                                                  const ::rtl::OUString&                                        sURL   ,
                                                                                  const ::rtl::OUString&                                        sTarget,
                                                                                        sal_Int32                                               nFlags ,
-                                                                                 const css::uno::Sequence< css::beans::PropertyValue >&        lArgs  )
-            throw(css::lang::IllegalArgumentException,
-                  css::io::IOException               ,
-                  css::uno::RuntimeException         );
+                                                                                 const css::uno::Sequence< css::beans::PropertyValue >&        lArgs  );
 
         //_______________________________________
 
@@ -324,8 +320,7 @@ class LoadEnv : private ThreadHelpBase
                                        const ::rtl::OUString&                                           sTarget         ,
                                              sal_Int32                                                  nSearchFlags    ,
                                              EFeature                                                   eFeature        = E_NO_FEATURE         ,
-                                             EContentType                                               eContentType    = E_UNSUPPORTED_CONTENT)
-            throw(LoadEnvException, css::uno::RuntimeException);
+                                             EContentType                                               eContentType    = E_UNSUPPORTED_CONTENT);
 
         //_______________________________________
 
@@ -349,8 +344,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        virtual void startLoading()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        virtual void startLoading();
 
         //_______________________________________
 
@@ -374,13 +368,11 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        virtual sal_Bool waitWhileLoading(sal_uInt32 nTimeout = 0)
-            throw(LoadEnvException, css::uno::RuntimeException);
+        virtual sal_Bool waitWhileLoading(sal_uInt32 nTimeout = 0);
 
         //_______________________________________
         /** TODO document me ... */
-        virtual void cancelLoading()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        virtual void cancelLoading();
 
         //_______________________________________
         /** TODO document me ... */
@@ -480,8 +472,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        void impl_reactForLoadingState()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        void impl_reactForLoadingState();
 
     //___________________________________________
     // private helper
@@ -506,8 +497,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        void impl_detectTypeAndFilter()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        void impl_detectTypeAndFilter();
 
         //_______________________________________
 
@@ -521,8 +511,7 @@ class LoadEnv : private ThreadHelpBase
 
             @attention  Internally we update the member m_lMediaDescriptor!
          */
-        ::rtl::OUString impl_askUserForTypeAndFilterIfAllowed()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        ::rtl::OUString impl_askUserForTypeAndFilterIfAllowed();
 
         //_______________________________________
 
@@ -544,8 +533,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        sal_Bool impl_handleContent()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        sal_Bool impl_handleContent();
 
         //_______________________________________
 
@@ -565,8 +553,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        sal_Bool impl_loadContent()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        sal_Bool impl_loadContent();
 
         //_______________________________________
 
@@ -593,8 +580,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        css::uno::Reference< css::frame::XFrame > impl_searchAlreadyLoaded()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        css::uno::Reference< css::frame::XFrame > impl_searchAlreadyLoaded();
 
         //_______________________________________
 
@@ -626,8 +612,7 @@ class LoadEnv : private ThreadHelpBase
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
          */
-        css::uno::Reference< css::frame::XFrame > impl_searchRecycleTarget()
-            throw(LoadEnvException, css::uno::RuntimeException);
+        css::uno::Reference< css::frame::XFrame > impl_searchRecycleTarget();
 
         //_______________________________________
 

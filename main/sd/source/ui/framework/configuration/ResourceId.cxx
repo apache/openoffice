@@ -57,7 +57,7 @@ Reference<XInterface> SAL_CALL ResourceId_createInstance (
 
 
 
-::rtl::OUString ResourceId_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString ResourceId_getImplementationName (void)
 {
     return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.Draw.framework.ResourceId"));
@@ -67,7 +67,6 @@ Reference<XInterface> SAL_CALL ResourceId_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL ResourceId_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.framework.ResourceId"));
@@ -177,7 +176,6 @@ ResourceId::~ResourceId (void)
 
 OUString SAL_CALL
     ResourceId::getResourceURL (void)
-    throw(com::sun::star::uno::RuntimeException)
 {
     if (!maResourceURLs.empty())
         return maResourceURLs[0];
@@ -190,7 +188,6 @@ OUString SAL_CALL
 
 util::URL SAL_CALL
     ResourceId::getFullResourceURL (void)
- throw(com::sun::star::uno::RuntimeException)
 {
     if (mpURL.get() != NULL)
         return *mpURL;
@@ -215,7 +212,6 @@ util::URL SAL_CALL
 
 sal_Bool SAL_CALL
     ResourceId::hasAnchor (void)
-    throw (RuntimeException)
 {
     return maResourceURLs.size()>1;
 }
@@ -225,7 +221,6 @@ sal_Bool SAL_CALL
 
 Reference<XResourceId> SAL_CALL
     ResourceId::getAnchor (void)
-    throw (RuntimeException)
 {
     ::rtl::Reference<ResourceId> rResourceId (new ResourceId());
     const sal_Int32 nAnchorCount (maResourceURLs.size()-1);
@@ -243,7 +238,6 @@ Reference<XResourceId> SAL_CALL
 
 Sequence<OUString> SAL_CALL
     ResourceId::getAnchorURLs (void)
-    throw (RuntimeException)
 {
     const sal_Int32 nAnchorCount (maResourceURLs.size() - 1);
     if (nAnchorCount > 0)
@@ -262,7 +256,6 @@ Sequence<OUString> SAL_CALL
 
 OUString SAL_CALL
     ResourceId::getResourceTypePrefix (void)
-    throw (RuntimeException)
 {
     if (!maResourceURLs.empty() )
     {
@@ -287,7 +280,6 @@ OUString SAL_CALL
 
 sal_Int16 SAL_CALL
     ResourceId::compareTo (const Reference<XResourceId>& rxResourceId)
-    throw (RuntimeException)
 {
     sal_Int16 nResult (0);
 
@@ -422,7 +414,6 @@ sal_Bool SAL_CALL
     ResourceId::isBoundTo (
         const Reference<XResourceId>& rxResourceId,
         AnchorBindingMode eMode)
-    throw (RuntimeException)
 {
     if ( ! rxResourceId.is())
     {
@@ -453,7 +444,6 @@ sal_Bool SAL_CALL
     ResourceId::isBoundToURL (
         const OUString& rsAnchorURL,
         AnchorBindingMode eMode)
-    throw (RuntimeException)
 {
     return IsBoundToAnchor(&rsAnchorURL, NULL, eMode);
 }
@@ -463,7 +453,6 @@ sal_Bool SAL_CALL
 
 Reference<XResourceId> SAL_CALL
     ResourceId::clone (void)
-    throw(RuntimeException)
 {
     return new ResourceId(maResourceURLs);
 }
@@ -474,7 +463,6 @@ Reference<XResourceId> SAL_CALL
 //----- XInitialization -------------------------------------------------------
 
 void SAL_CALL ResourceId::initialize (const Sequence<Any>& aArguments)
-    throw (RuntimeException)
 {
     sal_uInt32 nCount (aArguments.getLength());
     for (sal_uInt32 nIndex=0; nIndex<nCount; ++nIndex)

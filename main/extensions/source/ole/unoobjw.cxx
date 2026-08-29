@@ -496,7 +496,6 @@ Any SAL_CALL InterfaceOleWrapper_Impl::createBridge(const Any& modelDepObject,
 								const Sequence<sal_Int8>& /*ProcessId*/,
 								sal_Int16 sourceModelType,
 								sal_Int16 destModelType)
-			throw (IllegalArgumentException, RuntimeException)
 {
 
 	Any retAny;
@@ -527,7 +526,6 @@ Any SAL_CALL InterfaceOleWrapper_Impl::createBridge(const Any& modelDepObject,
 
 // XInitialization --------------------------------------------------
 void SAL_CALL InterfaceOleWrapper_Impl::initialize( const Sequence< Any >& aArguments )
-		throw(Exception, RuntimeException)
 {
 	switch( aArguments.getLength() )
 	{

@@ -73,7 +73,7 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	Sequence<sal_Int8> SAL_CALL OControlFontDialog::getImplementationId(  ) throw(RuntimeException)
+	Sequence<sal_Int8> SAL_CALL OControlFontDialog::getImplementationId(  )
 	{
 		static ::cppu::OImplementationId aId;
 		return aId.getImplementationId();
@@ -86,25 +86,25 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OControlFontDialog::getImplementationName() throw(RuntimeException)
+	::rtl::OUString SAL_CALL OControlFontDialog::getImplementationName()
 	{
 		return getImplementationName_static();
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString OControlFontDialog::getImplementationName_static() throw(RuntimeException)
+	::rtl::OUString OControlFontDialog::getImplementationName_static()
 	{
 		return ::rtl::OUString::createFromAscii("org.openoffice.comp.form.ui.OControlFontDialog");
 	}
 
 	//---------------------------------------------------------------------
-	::comphelper::StringSequence SAL_CALL OControlFontDialog::getSupportedServiceNames() throw(RuntimeException)
+	::comphelper::StringSequence SAL_CALL OControlFontDialog::getSupportedServiceNames()
 	{
 		return getSupportedServiceNames_static();
 	}
 
 	//---------------------------------------------------------------------
-	::comphelper::StringSequence OControlFontDialog::getSupportedServiceNames_static() throw(RuntimeException)
+	::comphelper::StringSequence OControlFontDialog::getSupportedServiceNames_static()
 	{
 		::comphelper::StringSequence aSupported(1);
 		aSupported.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.form.ControlFontDialog");
@@ -112,7 +112,7 @@ namespace pcr
 	}
 
 	//---------------------------------------------------------------------
-	Reference<XPropertySetInfo>  SAL_CALL OControlFontDialog::getPropertySetInfo() throw(RuntimeException)
+	Reference<XPropertySetInfo>  SAL_CALL OControlFontDialog::getPropertySetInfo()
 	{
 		Reference<XPropertySetInfo>  xInfo( createPropertySetInfo( getInfoHelper() ) );
 		return xInfo;

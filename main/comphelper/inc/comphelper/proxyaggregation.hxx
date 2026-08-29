@@ -106,8 +106,8 @@ namespace comphelper
 		);
 
 		// XInterface and XTypeProvider
-		::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType ) throw (::com::sun::star::uno::RuntimeException);
-		::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw (::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType );
+		::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
 
 	private:
 		OProxyAggregation( );										// never implemented
@@ -145,7 +145,7 @@ namespace comphelper
 		using OProxyAggregation::getORB;
 
 		// XInterface
-		::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& _rType ) throw (::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& _rType );
 
 		// XTypeProvider
 		DECLARE_XTYPEPROVIDER( )
@@ -165,10 +165,10 @@ namespace comphelper
 		);
 
 	    // XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		// XComponent
-		virtual void SAL_CALL dispose() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispose();
 
 	private:
 		COMPHELPER_DLLPRIVATE OComponentProxyAggregationHelper( );													// never implemented
@@ -199,13 +199,13 @@ namespace comphelper
 		DECLARE_XTYPEPROVIDER()
 
 		// OComponentHelper
-		virtual void SAL_CALL disposing()  throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing();
 
 	    // XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& _rSource ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& _rSource );
 
 		// XComponent/OComponentProxyAggregationHelper
-		virtual void SAL_CALL dispose() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispose();
 
 	protected:
 		// be called from within the dtor of derived classes

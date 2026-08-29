@@ -144,20 +144,20 @@ void SvxTbxCtlCustomShapes::Select( sal_Bool /*bMod1*/ )
 }
 
 
-::sal_Bool SAL_CALL SvxTbxCtlCustomShapes::opensSubToolbar() throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL SvxTbxCtlCustomShapes::opensSubToolbar()
 {
 	// We control a sub-toolbar therefor, we have to return true.
 	return sal_True;
 }
 
-::rtl::OUString SAL_CALL SvxTbxCtlCustomShapes::getSubToolbarName() throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL SvxTbxCtlCustomShapes::getSubToolbarName()
 {
 	// Provide the controlled sub-toolbar name, so we are notified whenever
 	// this toolbar executes a function.
 	return m_aSubTbName;
 }
 
-void SAL_CALL SvxTbxCtlCustomShapes::functionSelected( const ::rtl::OUString& rCommand ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SvxTbxCtlCustomShapes::functionSelected( const ::rtl::OUString& rCommand )
 {
 	// remind the new command
 	m_aCommand = rCommand;
@@ -176,7 +176,7 @@ void SAL_CALL SvxTbxCtlCustomShapes::functionSelected( const ::rtl::OUString& rC
 	}
 }
 
-void SAL_CALL SvxTbxCtlCustomShapes::updateImage(  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SvxTbxCtlCustomShapes::updateImage(  )
 {
 	// We should update the button image of our parent (toolbar).
 	// Use the stored command to set the correct current image.

@@ -60,33 +60,31 @@ public:
 protected:
 	CWinClipbImpl( const ::rtl::OUString& aClipboardName, CWinClipboard* theWinClipboard );
 
-	::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getContents(  )
-		throw( ::com::sun::star::uno::RuntimeException );
+	::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getContents(  );
 
 	void SAL_CALL setContents(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& xTransferable,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardOwner >& xClipboardOwner )
-		throw( ::com::sun::star::uno::RuntimeException );
+		const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboardOwner >& xClipboardOwner );
 
-    ::rtl::OUString SAL_CALL getName(  ) throw( ::com::sun::star::uno::RuntimeException );
+    ::rtl::OUString SAL_CALL getName(  );
 
 	//------------------------------------------------
 	// XClipboardEx
 	//------------------------------------------------
 
-	sal_Int8 SAL_CALL getRenderingCapabilities(  ) throw( ::com::sun::star::uno::RuntimeException );
+	sal_Int8 SAL_CALL getRenderingCapabilities(  );
 
 	//------------------------------------------------
 	// XFlushableClipboard
 	//------------------------------------------------
 
-	void SAL_CALL flushClipboard( ) throw( com::sun::star::uno::RuntimeException );
+	void SAL_CALL flushClipboard( );
 
 	//------------------------------------------------
 	// XComponent
 	//------------------------------------------------
 
-	void SAL_CALL dispose( ) throw( ::com::sun::star::uno::RuntimeException );
+	void SAL_CALL dispose( );
 
 	//------------------------------------------------
 	// member functions

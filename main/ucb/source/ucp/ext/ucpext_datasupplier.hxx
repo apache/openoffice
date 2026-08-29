@@ -70,7 +70,7 @@ namespace ucb { namespace ucp { namespace ext
 
 	    virtual void close();
 
-	    virtual void validate() throw( com::sun::star::ucb::ResultSetException );
+	    virtual void validate();
 
     private:
         ::boost::scoped_ptr< DataSupplier_Impl >    m_pImpl;

@@ -497,7 +497,6 @@ OUString AllPermission::toString() const SAL_THROW( () )
 //__________________________________________________________________________________________________
 PermissionCollection::PermissionCollection(
     Sequence< Any > const & permissions, PermissionCollection const & addition )
-    SAL_THROW( (RuntimeException) )
     : m_head( addition.m_head )
 {
     Any const * perms = permissions.getConstArray();
@@ -581,7 +580,6 @@ static void demanded_diag(
 //--------------------------------------------------------------------------------------------------
 static void throwAccessControlException(
     Permission const & perm, Any const & demanded_perm )
-    SAL_THROW( (security::AccessControlException) )
 {
     OUStringBuffer buf( 48 );
     buf.appendAscii( RTL_CONSTASCII_STRINGPARAM("access denied: ") );
@@ -591,7 +589,6 @@ static void throwAccessControlException(
 }
 //==================================================================================================
 void PermissionCollection::checkPermission( Any const & perm ) const
-    SAL_THROW( (RuntimeException) )
 {
     Type const & demanded_type = perm.getValueType();
 

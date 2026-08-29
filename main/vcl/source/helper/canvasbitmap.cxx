@@ -439,20 +439,20 @@ VclCanvasBitmap::~VclCanvasBitmap()
 }
 
 // XBitmap
-geometry::IntegerSize2D SAL_CALL VclCanvasBitmap::getSize() throw (uno::RuntimeException)
+geometry::IntegerSize2D SAL_CALL VclCanvasBitmap::getSize()
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     return integerSize2DFromSize( m_aBitmap.GetSizePixel() );
 }
 
-::sal_Bool SAL_CALL VclCanvasBitmap::hasAlpha() throw (uno::RuntimeException)
+::sal_Bool SAL_CALL VclCanvasBitmap::hasAlpha()
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     return m_aBmpEx.IsTransparent();
 }
 
 uno::Reference< rendering::XBitmap > SAL_CALL VclCanvasBitmap::getScaledBitmap( const geometry::RealSize2D& newSize,
-                                                                                sal_Bool beFast ) throw (uno::RuntimeException)
+                                                                                sal_Bool beFast )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -463,9 +463,7 @@ uno::Reference< rendering::XBitmap > SAL_CALL VclCanvasBitmap::getScaledBitmap( 
 
 // XIntegerReadOnlyBitmap
 uno::Sequence< sal_Int8 > SAL_CALL VclCanvasBitmap::getData( rendering::IntegerBitmapLayout& 	 bitmapLayout,
-                                                             const geometry::IntegerRectangle2D& rect ) throw( lang::IndexOutOfBoundsException,
-                                                                                                               rendering::VolatileContentDestroyedException,
-                                                                                                               uno::RuntimeException)
+                                                             const geometry::IntegerRectangle2D& rect )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -568,9 +566,7 @@ uno::Sequence< sal_Int8 > SAL_CALL VclCanvasBitmap::getData( rendering::IntegerB
 }
 
 uno::Sequence< sal_Int8 > SAL_CALL VclCanvasBitmap::getPixel( rendering::IntegerBitmapLayout&	bitmapLayout,
-                                                              const geometry::IntegerPoint2D&	pos ) throw (lang::IndexOutOfBoundsException,
-                                                                                                             rendering::VolatileContentDestroyedException,
-                                                                                                             uno::RuntimeException)
+                                                              const geometry::IntegerPoint2D&	pos )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -636,7 +632,7 @@ uno::Sequence< sal_Int8 > SAL_CALL VclCanvasBitmap::getPixel( rendering::Integer
     return aRet;
 }
 
-uno::Reference< rendering::XBitmapPalette > SAL_CALL VclCanvasBitmap::getPalette() throw (uno::RuntimeException)
+uno::Reference< rendering::XBitmapPalette > SAL_CALL VclCanvasBitmap::getPalette()
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -647,7 +643,7 @@ uno::Reference< rendering::XBitmapPalette > SAL_CALL VclCanvasBitmap::getPalette
     return aRet;
 }
 
-rendering::IntegerBitmapLayout SAL_CALL VclCanvasBitmap::getMemoryLayout() throw (uno::RuntimeException)
+rendering::IntegerBitmapLayout SAL_CALL VclCanvasBitmap::getMemoryLayout()
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -664,7 +660,7 @@ rendering::IntegerBitmapLayout SAL_CALL VclCanvasBitmap::getMemoryLayout() throw
     return aLayout;
 }
 
-sal_Int32 SAL_CALL VclCanvasBitmap::getNumberOfEntries() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL VclCanvasBitmap::getNumberOfEntries()
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -674,7 +670,7 @@ sal_Int32 SAL_CALL VclCanvasBitmap::getNumberOfEntries() throw (uno::RuntimeExce
     return m_pBmpAcc->HasPalette() ? m_pBmpAcc->GetPaletteEntryCount() : 0 ;
 }
 
-sal_Bool SAL_CALL VclCanvasBitmap::getIndex( uno::Sequence< double >& o_entry, sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+sal_Bool SAL_CALL VclCanvasBitmap::getIndex( uno::Sequence< double >& o_entry, sal_Int32 nIndex )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -695,7 +691,7 @@ sal_Bool SAL_CALL VclCanvasBitmap::getIndex( uno::Sequence< double >& o_entry, s
     return sal_True; // no palette transparency here.
 }
 
-sal_Bool SAL_CALL VclCanvasBitmap::setIndex( const uno::Sequence< double >&, sal_Bool, sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, lang::IllegalArgumentException, uno::RuntimeException)
+sal_Bool SAL_CALL VclCanvasBitmap::setIndex( const uno::Sequence< double >&, sal_Bool, sal_Int32 nIndex )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -722,36 +718,36 @@ namespace
     };
 }
 
-uno::Reference< rendering::XColorSpace > SAL_CALL VclCanvasBitmap::getColorSpace(  ) throw (uno::RuntimeException)
+uno::Reference< rendering::XColorSpace > SAL_CALL VclCanvasBitmap::getColorSpace(  )
 {
     // this is the method from XBitmapPalette. Return palette color
     // space here
     return PaletteColorSpaceHolder::get();
 }
 
-sal_Int8 SAL_CALL VclCanvasBitmap::getType(  ) throw (uno::RuntimeException)
+sal_Int8 SAL_CALL VclCanvasBitmap::getType(  )
 {
     return rendering::ColorSpaceType::RGB;
 }
 
-uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::getComponentTags(  ) throw (uno::RuntimeException)
+uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::getComponentTags(  )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     return m_aComponentTags;
 }
 
-sal_Int8 SAL_CALL VclCanvasBitmap::getRenderingIntent(  ) throw (uno::RuntimeException)
+sal_Int8 SAL_CALL VclCanvasBitmap::getRenderingIntent(  )
 {
     return rendering::RenderingIntent::PERCEPTUAL;
 }
 
-uno::Sequence< ::beans::PropertyValue > SAL_CALL VclCanvasBitmap::getProperties(  ) throw (uno::RuntimeException)
+uno::Sequence< ::beans::PropertyValue > SAL_CALL VclCanvasBitmap::getProperties(  )
 {
     return uno::Sequence< ::beans::PropertyValue >();
 }
 
 uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertColorSpace( const uno::Sequence< double >& deviceColor,
-                                                                     const uno::Reference< ::rendering::XColorSpace >& targetColorSpace ) throw (uno::RuntimeException)
+                                                                     const uno::Reference< ::rendering::XColorSpace >& targetColorSpace )
 {
     // TODO(P3): if we know anything about target
     // colorspace, this can be greatly sped up
@@ -760,7 +756,7 @@ uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertColorSpace( const uno::
     return targetColorSpace->convertFromARGB(aIntermediate);
 }
 
-uno::Sequence<rendering::RGBColor> SAL_CALL VclCanvasBitmap::convertToRGB( const uno::Sequence< double >& deviceColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence<rendering::RGBColor> SAL_CALL VclCanvasBitmap::convertToRGB( const uno::Sequence< double >& deviceColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -809,7 +805,7 @@ uno::Sequence<rendering::RGBColor> SAL_CALL VclCanvasBitmap::convertToRGB( const
     return aRes;
 }
 
-uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertToARGB( const uno::Sequence< double >& deviceColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertToARGB( const uno::Sequence< double >& deviceColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -862,7 +858,7 @@ uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertToARGB( con
     return aRes;
 }
 
-uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertToPARGB( const uno::Sequence< double >& deviceColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertToPARGB( const uno::Sequence< double >& deviceColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -915,7 +911,7 @@ uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertToPARGB( co
     return aRes;
 }
 
-uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromRGB( const uno::Sequence<rendering::RGBColor>& rgbColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromRGB( const uno::Sequence<rendering::RGBColor>& rgbColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -955,7 +951,7 @@ uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromRGB( const uno::Seq
     return aRes;
 }
 
-uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -995,7 +991,7 @@ uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromARGB( const uno::Se
     return aRes;
 }
 
-uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromPARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromPARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1037,26 +1033,26 @@ uno::Sequence< double > SAL_CALL VclCanvasBitmap::convertFromPARGB( const uno::S
     return aRes;
 }
 
-sal_Int32 SAL_CALL VclCanvasBitmap::getBitsPerPixel(  ) throw (uno::RuntimeException)
+sal_Int32 SAL_CALL VclCanvasBitmap::getBitsPerPixel(  )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     return m_nBitsPerOutputPixel;
 }
 
-uno::Sequence< ::sal_Int32 > SAL_CALL VclCanvasBitmap::getComponentBitCounts(  ) throw (uno::RuntimeException)
+uno::Sequence< ::sal_Int32 > SAL_CALL VclCanvasBitmap::getComponentBitCounts(  )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     return m_aComponentBitCounts;
 }
 
-sal_Int8 SAL_CALL VclCanvasBitmap::getEndianness(  ) throw (uno::RuntimeException)
+sal_Int8 SAL_CALL VclCanvasBitmap::getEndianness(  )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     return m_nEndianness;
 }
 
 uno::Sequence<double> SAL_CALL VclCanvasBitmap::convertFromIntegerColorSpace( const uno::Sequence< ::sal_Int8 >& deviceColor,
-                                                                              const uno::Reference< ::rendering::XColorSpace >& targetColorSpace ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+                                                                              const uno::Reference< ::rendering::XColorSpace >& targetColorSpace )
 {
     if( dynamic_cast<VclCanvasBitmap*>(targetColorSpace.get()) )
     {
@@ -1120,7 +1116,7 @@ uno::Sequence<double> SAL_CALL VclCanvasBitmap::convertFromIntegerColorSpace( co
 }
 
 uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertToIntegerColorSpace( const uno::Sequence< ::sal_Int8 >& deviceColor,
-                                                                                  const uno::Reference< ::rendering::XIntegerBitmapColorSpace >& targetColorSpace ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+                                                                                  const uno::Reference< ::rendering::XIntegerBitmapColorSpace >& targetColorSpace )
 {
     if( dynamic_cast<VclCanvasBitmap*>(targetColorSpace.get()) )
     {
@@ -1137,7 +1133,7 @@ uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertToIntegerColorSpace
     }
 }
 
-uno::Sequence<rendering::RGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToRGB( const uno::Sequence< ::sal_Int8 >& deviceColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence<rendering::RGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToRGB( const uno::Sequence< ::sal_Int8 >& deviceColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1189,7 +1185,7 @@ uno::Sequence<rendering::RGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToRGB
     return aRes;
 }
 
-uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToARGB( const uno::Sequence< ::sal_Int8 >& deviceColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToARGB( const uno::Sequence< ::sal_Int8 >& deviceColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1244,7 +1240,7 @@ uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToAR
     return aRes;
 }
 
-uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToPARGB( const uno::Sequence< ::sal_Int8 >& deviceColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToPARGB( const uno::Sequence< ::sal_Int8 >& deviceColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1300,7 +1296,7 @@ uno::Sequence<rendering::ARGBColor> SAL_CALL VclCanvasBitmap::convertIntegerToPA
     return aRes;
 }
 
-uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromRGB( const uno::Sequence<rendering::RGBColor>& rgbColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromRGB( const uno::Sequence<rendering::RGBColor>& rgbColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1349,7 +1345,7 @@ uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromRGB( con
     return aRes;
 }
 
-uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1398,7 +1394,7 @@ uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromARGB( co
     return aRes;
 }
 
-uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromPARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor ) throw (lang::IllegalArgumentException,uno::RuntimeException)
+uno::Sequence< ::sal_Int8 > SAL_CALL VclCanvasBitmap::convertIntegerFromPARGB( const uno::Sequence<rendering::ARGBColor>& rgbColor )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 

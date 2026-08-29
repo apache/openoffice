@@ -82,7 +82,7 @@ namespace svt
     }
 
 	//------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL ToolPanelDeckPeer::dispose() throw(RuntimeException)
+    void SAL_CALL ToolPanelDeckPeer::dispose()
     {
         {
             ::vos::OGuard aSolarGuard( GetMutex() );

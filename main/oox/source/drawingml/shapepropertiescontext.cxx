@@ -55,7 +55,7 @@ ShapePropertiesContext::ShapePropertiesContext( ContextHandler& rParent, Shape& 
 
 // --------------------------------------------------------------------
 
-Reference< XFastContextHandler > ShapePropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > ShapePropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 

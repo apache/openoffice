@@ -197,19 +197,16 @@ ReadMenuDocumentHandlerBase::~ReadMenuDocumentHandlerBase()
 
 void SAL_CALL ReadMenuDocumentHandlerBase::ignorableWhitespace(
 	const ::rtl::OUString& )
-throw( SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL ReadMenuDocumentHandlerBase::processingInstruction(
 	const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-throw( SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL ReadMenuDocumentHandlerBase::setDocumentLocator(
 	const Reference< XLocator > &xLocator)
-throw(	SAXException, RuntimeException )
 {
 	m_xLocator = xLocator;
 }
@@ -273,13 +270,11 @@ OReadMenuDocumentHandler::~OReadMenuDocumentHandler()
 
 
 void SAL_CALL OReadMenuDocumentHandler::startDocument(void)
-	throw ( SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuDocumentHandler::endDocument(void)
-	throw( SAXException, RuntimeException )
 {
 	if ( m_nElementDepth > 0 )
 	{
@@ -292,7 +287,6 @@ void SAL_CALL OReadMenuDocumentHandler::endDocument(void)
 
 void SAL_CALL OReadMenuDocumentHandler::startElement(
 	const ::rtl::OUString& aName, const Reference< XAttributeList > &xAttrList )
-throw( SAXException, RuntimeException )
 {
 	if ( m_bMenuBarMode )
 	{
@@ -313,13 +307,11 @@ throw( SAXException, RuntimeException )
 
 
 void SAL_CALL OReadMenuDocumentHandler::characters(const rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuDocumentHandler::endElement( const ::rtl::OUString& aName )
-	throw( SAXException, RuntimeException )
 {
 	if ( m_bMenuBarMode )
 	{
@@ -370,20 +362,17 @@ OReadMenuBarHandler::~OReadMenuBarHandler()
 
 
 void SAL_CALL OReadMenuBarHandler::startDocument(void)
-	throw ( SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuBarHandler::endDocument(void)
-	throw( SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuBarHandler::startElement(
 	const ::rtl::OUString& rName, const Reference< XAttributeList > &xAttrList )
-throw( SAXException, RuntimeException )
 {
 	if ( m_bMenuMode )
 	{
@@ -474,13 +463,11 @@ throw( SAXException, RuntimeException )
 
 
 void SAL_CALL OReadMenuBarHandler::characters(const rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 
 void OReadMenuBarHandler::endElement( const ::rtl::OUString& aName )
-	throw( SAXException, RuntimeException )
 {
 	if ( m_bMenuMode )
 	{
@@ -523,20 +510,17 @@ OReadMenuHandler::~OReadMenuHandler()
 
 
 void SAL_CALL OReadMenuHandler::startDocument(void)
-	throw ( SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuHandler::endDocument(void)
-	throw( SAXException, RuntimeException)
 {
 }
 
 
 void SAL_CALL OReadMenuHandler::startElement(
 	const ::rtl::OUString& aName, const Reference< XAttributeList > &xAttrList )
-throw( SAXException, RuntimeException )
 {
 	if ( m_bMenuPopupMode )
 	{
@@ -560,13 +544,11 @@ throw( SAXException, RuntimeException )
 
 
 void SAL_CALL OReadMenuHandler::characters(const rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuHandler::endElement( const ::rtl::OUString& aName )
-	throw( SAXException, RuntimeException )
 {
 	if ( m_bMenuPopupMode )
 	{
@@ -610,19 +592,16 @@ OReadMenuPopupHandler::~OReadMenuPopupHandler()
 
 
 void SAL_CALL OReadMenuPopupHandler::startDocument(void)
-	throw ( SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuPopupHandler::endDocument(void)
-	throw( SAXException, RuntimeException)
 {
 }
 
 void SAL_CALL OReadMenuPopupHandler::startElement(
 	const ::rtl::OUString& rName, const Reference< XAttributeList > &xAttrList )
-throw( SAXException, RuntimeException )
 {
 	++m_nElementDepth;
 
@@ -769,13 +748,11 @@ throw( SAXException, RuntimeException )
 
 
 void SAL_CALL OReadMenuPopupHandler::characters(const rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadMenuPopupHandler::endElement( const ::rtl::OUString& aName )
-	throw( SAXException, RuntimeException )
 {
 	--m_nElementDepth;
 	if ( m_bMenuMode )
@@ -842,7 +819,6 @@ OWriteMenuDocumentHandler::~OWriteMenuDocumentHandler()
 
 
 void OWriteMenuDocumentHandler::WriteMenuDocument()
-throw ( SAXException, RuntimeException )
 {
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > rList( (XAttributeList *) pList , UNO_QUERY );
@@ -878,7 +854,6 @@ throw ( SAXException, RuntimeException )
 
 
 void OWriteMenuDocumentHandler::WriteMenu( const Reference< XIndexAccess >& rMenuContainer )
-throw ( SAXException, RuntimeException )
 {
 	sal_Int32	nItemCount = rMenuContainer->getCount();
 	sal_Bool	bSeparator = sal_False;

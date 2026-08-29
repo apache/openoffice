@@ -60,11 +60,9 @@ public:
 
 	// XMeaning
     virtual ::rtl::OUString SAL_CALL
-		getMeaning()
-			throw(::com::sun::star::uno::RuntimeException);
+		getMeaning();
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-		querySynonyms()
-            throw(::com::sun::star::uno::RuntimeException) = 0;
+		querySynonyms() = 0;
 
 	// non-interface specific functions
 	const ::rtl::OUString &	getLookUpText() const		{ return aLookUpText; }

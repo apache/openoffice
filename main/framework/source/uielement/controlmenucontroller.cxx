@@ -265,7 +265,7 @@ void ControlMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& rP
 }
 
 // XEventListener
-void SAL_CALL ControlMenuController::disposing( const EventObject& ) throw ( RuntimeException )
+void SAL_CALL ControlMenuController::disposing( const EventObject& )
 {
     Reference< css::awt::XMenuListener > xHolder(( OWeakObject *)this, UNO_QUERY );
 
@@ -281,7 +281,7 @@ void SAL_CALL ControlMenuController::disposing( const EventObject& ) throw ( Run
 }
 
 // XStatusListener
-void SAL_CALL ControlMenuController::statusChanged( const FeatureStateEvent& Event ) throw ( RuntimeException )
+void SAL_CALL ControlMenuController::statusChanged( const FeatureStateEvent& Event )
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
 
@@ -346,7 +346,7 @@ void ControlMenuController::impl_select(const Reference< XDispatch >& /*_xDispat
     }
 }
 
-void SAL_CALL ControlMenuController::itemActivated( const css::awt::MenuEvent& ) throw (RuntimeException)
+void SAL_CALL ControlMenuController::itemActivated( const css::awt::MenuEvent& )
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
 
@@ -399,7 +399,7 @@ void ControlMenuController::impl_setPopupMenu()
     } // if ( m_pResPopupMenu == 0 )
 }
 
-void SAL_CALL ControlMenuController::updatePopupMenu() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ControlMenuController::updatePopupMenu()
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
 
@@ -429,7 +429,7 @@ void SAL_CALL ControlMenuController::updatePopupMenu() throw (::com::sun::star::
 }
 
 // XInitialization
-void SAL_CALL ControlMenuController::initialize( const Sequence< Any >& aArguments ) throw ( Exception, RuntimeException )
+void SAL_CALL ControlMenuController::initialize( const Sequence< Any >& aArguments )
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
 	svt::PopupMenuControllerBase::initialize(aArguments);

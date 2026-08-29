@@ -123,7 +123,7 @@ public:
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
 			SAL_CALL Create(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >&);
 
-	virtual ::rtl::OUString SAL_CALL detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor );
 };
 // -------------------------------------------------------------------------
 DBTypeDetection::DBTypeDetection(const Reference< XMultiServiceFactory >& _rxFactory)
@@ -131,7 +131,7 @@ DBTypeDetection::DBTypeDetection(const Reference< XMultiServiceFactory >& _rxFac
 {
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL DBTypeDetection::detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL DBTypeDetection::detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor )
 {
 	try
 	{
@@ -266,7 +266,7 @@ public:
 	// XLoader
 	virtual void SAL_CALL load(	const Reference< XFrame > & _rFrame, const ::rtl::OUString& _rURL,
 								const Sequence< PropertyValue >& _rArgs,
-								const Reference< XLoadEventListener > & _rListener) throw(::com::sun::star::uno::RuntimeException);
+								const Reference< XLoadEventListener > & _rListener);
 	virtual void SAL_CALL cancel(void) throw();
 
 private:
@@ -412,7 +412,7 @@ sal_Bool DBContentLoader::impl_executeNewDatabaseWizard( Reference< XModel >& _r
 // -----------------------------------------------------------------------
 void SAL_CALL DBContentLoader::load(const Reference< XFrame > & rFrame, const ::rtl::OUString& _rURL,
 		const Sequence< PropertyValue >& rArgs,
-		const Reference< XLoadEventListener > & rListener) throw(::com::sun::star::uno::RuntimeException)
+		const Reference< XLoadEventListener > & rListener)
 {
 	// first check if preview is true, if so return with out creating a controller. Preview is not supported
     ::comphelper::NamedValueCollection aMediaDesc( rArgs );

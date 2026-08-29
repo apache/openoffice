@@ -59,7 +59,6 @@ AccessiblePresentationGraphicShape::~AccessiblePresentationGraphicShape (void)
 
 ::rtl::OUString SAL_CALL
     AccessiblePresentationGraphicShape::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("AccessiblePresentationGraphicShape"));
 }
@@ -70,7 +69,6 @@ AccessiblePresentationGraphicShape::~AccessiblePresentationGraphicShape (void)
 ///	Set this object's name if is different to the current name.
 ::rtl::OUString
     AccessiblePresentationGraphicShape::CreateAccessibleBaseName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::rtl::OUString sName;
 
@@ -96,7 +94,6 @@ AccessiblePresentationGraphicShape::~AccessiblePresentationGraphicShape (void)
 
 ::rtl::OUString
     AccessiblePresentationGraphicShape::CreateAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     //    return createAccessibleName ();
     DescriptionGenerator aDG (mxShape);
@@ -120,7 +117,6 @@ AccessiblePresentationGraphicShape::~AccessiblePresentationGraphicShape (void)
     return aDG();
 }
 sal_Int16 SAL_CALL AccessiblePresentationGraphicShape::getAccessibleRole ()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 
 	return  AccessibleRole::GRAPHIC ;

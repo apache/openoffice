@@ -1,0 +1,51 @@
+--- misc/xmlsec1-1.2.14/apps/cmdline.c
++++ misc/build/xmlsec1-1.2.14/apps/cmdline.c
+@@ -6,9 +6,13 @@
+  * See Copyright for the status of this software.
+  * 
+  * Copyright (C) 2002-2003 Aleksey Sanin <aleksey@aleksey.com>
+  */
+-#if defined(_MSC_VER)
++/*  A C runtime from VS2015 onwards supplies a conforming snprintf of its
++    own, and refuses to be compiled with the name taken as a macro
++    (C1189).  Older runtimes, which is every one this shim was written
++    for, keep it. */
++#if defined(_MSC_VER) && (_MSC_VER < 1900)
+ #define snprintf _snprintf
+ #endif
+ 
+ #include <stdio.h>
+--- misc/xmlsec1-1.2.14/apps/crypto.c
++++ misc/build/xmlsec1-1.2.14/apps/crypto.c
+@@ -6,9 +6,13 @@
+  * See Copyright for the status of this software.
+  * 
+  * Copyright (C) 2002-2003 Aleksey Sanin <aleksey@aleksey.com>
+  */
+-#if defined(_MSC_VER)
++/*  A C runtime from VS2015 onwards supplies a conforming snprintf of its
++    own, and refuses to be compiled with the name taken as a macro
++    (C1189).  Older runtimes, which is every one this shim was written
++    for, keep it. */
++#if defined(_MSC_VER) && (_MSC_VER < 1900)
+ #define snprintf _snprintf
+ #endif
+ 
+ #include <string.h>
+--- misc/xmlsec1-1.2.14/apps/xmlsec.c
++++ misc/build/xmlsec1-1.2.14/apps/xmlsec.c
+@@ -8,9 +8,13 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <time.h>
+ 
+-#if defined(_MSC_VER)
++/*  A C runtime from VS2015 onwards supplies a conforming snprintf of its
++    own, and refuses to be compiled with the name taken as a macro
++    (C1189).  Older runtimes, which is every one this shim was written
++    for, keep it. */
++#if defined(_MSC_VER) && (_MSC_VER < 1900)
+ #define snprintf _snprintf
+ #endif
+ 
+ #include <libxml/tree.h>

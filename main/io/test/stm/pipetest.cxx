@@ -109,19 +109,16 @@ public: // implementation names
 	static OUString 				getImplementationName_Static() throw();
 
 public:
-    virtual void SAL_CALL testInvariant(const OUString& TestName, const Reference < XInterface >& TestObject)
-		throw  ( IllegalArgumentException, RuntimeException) ;
+    virtual void SAL_CALL testInvariant(const OUString& TestName, const Reference < XInterface >& TestObject) ;
 
     virtual sal_Int32 SAL_CALL test(	const OUString& TestName,
 										const Reference < XInterface >& TestObject,
-										sal_Int32 hTestHandle)
-		throw  (	IllegalArgumentException,
-					RuntimeException);
+										sal_Int32 hTestHandle);
 
-    virtual sal_Bool SAL_CALL testPassed(void) 								throw  (	RuntimeException) ;
-    virtual Sequence< OUString > SAL_CALL getErrors(void) 				throw  (RuntimeException) ;
-    virtual Sequence< Any > SAL_CALL getErrorExceptions(void) 		throw  (RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getWarnings(void) 				throw  (RuntimeException);
+    virtual sal_Bool SAL_CALL testPassed(void) ;
+    virtual Sequence< OUString > SAL_CALL getErrors(void) ;
+    virtual Sequence< Any > SAL_CALL getErrorExceptions(void);
+	virtual Sequence< OUString > SAL_CALL getWarnings(void);
 
 private:
 	void testSimple( const Reference < XInterface > & );
@@ -150,8 +147,6 @@ OPipeTest::~OPipeTest()
 
 
 void OPipeTest::testInvariant( const OUString& TestName, const Reference < XInterface >& TestObject )
-	throw  (	IllegalArgumentException,
-				RuntimeException)
 {
 	Reference< XServiceInfo > info( TestObject, UNO_QUERY );
 	ERROR_ASSERT( info.is() , "XServiceInfo not supported !" );
@@ -169,7 +164,6 @@ sal_Int32 OPipeTest::test(
 	const OUString& TestName,
 	const Reference < XInterface >& TestObject,
 	sal_Int32 hTestHandle)
-	throw  (	IllegalArgumentException, RuntimeException)
 {
 	if( OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.io.Pipe") ) == TestName )  {
 		try
@@ -213,25 +207,25 @@ sal_Int32 OPipeTest::test(
 
 
 
-sal_Bool OPipeTest::testPassed(void) 		throw  (RuntimeException)
+sal_Bool OPipeTest::testPassed(void)
 {
 	return m_seqErrors.getLength() == 0;
 }
 
 
-Sequence< OUString > OPipeTest::getErrors(void)		throw  (RuntimeException)
+Sequence< OUString > OPipeTest::getErrors(void)
 {
 	return m_seqErrors;
 }
 
 
-Sequence< Any > OPipeTest::getErrorExceptions(void) 					throw  (RuntimeException)
+Sequence< Any > OPipeTest::getErrorExceptions(void)
 {
 	return m_seqExceptions;
 }
 
 
-Sequence< OUString > OPipeTest::getWarnings(void) 						throw  (RuntimeException)
+Sequence< OUString > OPipeTest::getWarnings(void)
 {
 	return m_seqWarnings;
 }
@@ -407,7 +401,7 @@ void OPipeTest::testMultithreading( const Reference < XInterface > &r )
 *
 *
 **/
-Reference < XInterface > SAL_CALL OPipeTest_CreateInstance( const Reference< XMultiServiceFactory>  & rSMgr ) throw (Exception)
+Reference < XInterface > SAL_CALL OPipeTest_CreateInstance( const Reference< XMultiServiceFactory>  & rSMgr )
 {
 	OPipeTest *p = new OPipeTest( rSMgr );
 	Reference< XInterface > x ( SAL_STATIC_CAST( OWeakObject * , p ) );

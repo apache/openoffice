@@ -68,10 +68,10 @@ namespace rptui
 						,sal_Bool _bReverse = sal_False);
 
 		// ::com::sun::star::beans::XPropertyChangeListener
-		virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt ) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt );
 
 		// ::com::sun::star::lang::XEventListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& _rSource ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& _rSource );
 
         /** stop the listening mode.
          */

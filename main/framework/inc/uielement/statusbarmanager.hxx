@@ -69,20 +69,20 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
         StatusBar* GetStatusBar() const;
 
         // XFrameActionListener
-		virtual void SAL_CALL frameAction( const com::sun::star::frame::FrameActionEvent& Action ) throw ( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL frameAction( const com::sun::star::frame::FrameActionEvent& Action );
 
         // XEventListener
-		virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source );
 
         // XUIConfigurationListener
-        virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event );
+        virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event );
+        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event );
 
         // XComponent
-        void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
-        void SAL_CALL addEventListener( const com::sun::star::uno::Reference< XEventListener >& xListener ) throw( com::sun::star::uno::RuntimeException );
-        void SAL_CALL removeEventListener( const com::sun::star::uno::Reference< XEventListener >& xListener ) throw( com::sun::star::uno::RuntimeException );
+        void SAL_CALL dispose();
+        void SAL_CALL addEventListener( const com::sun::star::uno::Reference< XEventListener >& xListener );
+        void SAL_CALL removeEventListener( const com::sun::star::uno::Reference< XEventListener >& xListener );
 
         void FillStatusBar( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& rStatusBarData );
 

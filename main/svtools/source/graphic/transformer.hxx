@@ -49,8 +49,7 @@ class GraphicTransformer : public GraphicTransformer_UnoImplHelper1
 	// XGraphicTransformer
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic > SAL_CALL colorChange(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic >& rGraphic,
-			sal_Int32 nColorFrom, sal_Int8 nTolerance, sal_Int32 nColorTo, sal_Int8 nAlphaTo )
-				throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+			sal_Int32 nColorFrom, sal_Int8 nTolerance, sal_Int32 nColorTo, sal_Int8 nAlphaTo );
 
 };
 

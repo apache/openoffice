@@ -85,7 +85,6 @@ XTYPEPROVIDER_IMPL_2( ContentIdentifier,
 
 // virtual
 OUString SAL_CALL ContentIdentifier::getContentIdentifier()
-    throw( RuntimeException )
 {
     return m_aContentId;
 }
@@ -93,7 +92,6 @@ OUString SAL_CALL ContentIdentifier::getContentIdentifier()
 //=========================================================================
 // virtual
 OUString SAL_CALL ContentIdentifier::getContentProviderScheme()
-    throw( RuntimeException )
 {
     if ( !m_aProviderScheme.getLength() && m_aContentId.getLength() )
     {

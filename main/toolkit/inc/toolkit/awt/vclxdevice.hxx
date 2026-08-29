@@ -76,37 +76,37 @@ public:
 	sal_Bool                IsCreatedWithToolkit() const;
 
 	// ::com::sun::star::uno::XInterface
-    ::com::sun::star::uno::Any					SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Any					SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 	void										SAL_CALL acquire() throw()	{ OWeakObject::acquire(); }
 	void										SAL_CALL release() throw()	{ OWeakObject::release(); }
 
 	// ::com::sun::star::lang::XUnoTunnel
 	static const ::com::sun::star::uno::Sequence< sal_Int8 >&	GetUnoTunnelId() throw();
 	static VCLXDevice*											GetImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rxIFace ) throw();
-	sal_Int64													SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+	sal_Int64													SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier );
 
 	// ::com::sun::star::lang::XTypeProvider
-	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >	SAL_CALL getTypes() throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Sequence< sal_Int8 >						SAL_CALL getImplementationId() throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >	SAL_CALL getTypes();
+	::com::sun::star::uno::Sequence< sal_Int8 >						SAL_CALL getImplementationId();
 
 	// ::com::sun::star::awt::XDevice,
-	::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >	SAL_CALL createGraphics(  ) throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice >		SAL_CALL createDevice( sal_Int32 nWidth, sal_Int32 nHeight ) throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::awt::DeviceInfo										SAL_CALL getInfo() throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Sequence< ::com::sun::star::awt::FontDescriptor > SAL_CALL getFontDescriptors(  ) throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont >		SAL_CALL getFont( const ::com::sun::star::awt::FontDescriptor& aDescriptor ) throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Reference< ::com::sun::star::awt::XBitmap >		SAL_CALL createBitmap( sal_Int32 nX, sal_Int32 nY, sal_Int32 nWidth, sal_Int32 nHeight ) throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Reference< ::com::sun::star::awt::XDisplayBitmap > SAL_CALL createDisplayBitmap( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XBitmap >& Bitmap ) throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >	SAL_CALL createGraphics(  );
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice >		SAL_CALL createDevice( sal_Int32 nWidth, sal_Int32 nHeight );
+	::com::sun::star::awt::DeviceInfo										SAL_CALL getInfo();
+	::com::sun::star::uno::Sequence< ::com::sun::star::awt::FontDescriptor > SAL_CALL getFontDescriptors(  );
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont >		SAL_CALL getFont( const ::com::sun::star::awt::FontDescriptor& aDescriptor );
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XBitmap >		SAL_CALL createBitmap( sal_Int32 nX, sal_Int32 nY, sal_Int32 nWidth, sal_Int32 nHeight );
+	::com::sun::star::uno::Reference< ::com::sun::star::awt::XDisplayBitmap > SAL_CALL createDisplayBitmap( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XBitmap >& Bitmap );
 
     // ::com::sun::star::awt::XTextConstraints
     // ::sal_Int32 SAL_CALL getTextWidth( const ::rtl::OUString& Text ) throw (::com::sun::star::uno::RuntimeException);
     // ::sal_Int32 SAL_CALL getTextHeight(  ) throw (::com::sun::star::uno::RuntimeException);
 
     // ::com::sun::star::awt::XUnitConversion
-    ::com::sun::star::awt::Point SAL_CALL convertPointToLogic( const ::com::sun::star::awt::Point& aPoint, ::sal_Int16 TargetUnit ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    ::com::sun::star::awt::Point SAL_CALL convertPointToPixel( const ::com::sun::star::awt::Point& aPoint, ::sal_Int16 SourceUnit ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    ::com::sun::star::awt::Size SAL_CALL convertSizeToLogic( const ::com::sun::star::awt::Size& aSize, ::sal_Int16 TargetUnit ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    ::com::sun::star::awt::Size SAL_CALL convertSizeToPixel( const ::com::sun::star::awt::Size& aSize, ::sal_Int16 SourceUnit ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::awt::Point SAL_CALL convertPointToLogic( const ::com::sun::star::awt::Point& aPoint, ::sal_Int16 TargetUnit );
+    ::com::sun::star::awt::Point SAL_CALL convertPointToPixel( const ::com::sun::star::awt::Point& aPoint, ::sal_Int16 SourceUnit );
+    ::com::sun::star::awt::Size SAL_CALL convertSizeToLogic( const ::com::sun::star::awt::Size& aSize, ::sal_Int16 TargetUnit );
+    ::com::sun::star::awt::Size SAL_CALL convertSizeToPixel( const ::com::sun::star::awt::Size& aSize, ::sal_Int16 SourceUnit );
 
 
 };

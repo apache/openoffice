@@ -55,8 +55,7 @@ public:
 		createDAVSession( const ::rtl::OUString & inUri,
 						  const ::com::sun::star::uno::Reference<
 	   						::com::sun::star::lang::XMultiServiceFactory >&
-                                rxSMgr )
-            throw( DAVException );
+                                rxSMgr );
 
     ::uno::Reference< ::lang::XMultiServiceFactory > getServiceFactory() {	return m_xMSF; }
 private:

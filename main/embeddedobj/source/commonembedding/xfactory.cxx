@@ -69,11 +69,6 @@ uno::Reference< uno::XInterface > SAL_CALL OOoEmbeddedObjectFactory::createInsta
 																	const ::rtl::OUString& sEntName,
 																	const uno::Sequence< beans::PropertyValue >& aMediaDescr,
 																	const uno::Sequence< beans::PropertyValue >& lObjArgs )
-	throw ( lang::IllegalArgumentException,
-			container::NoSuchElementException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException)
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OOoEmbeddedObjectFactory::createInstanceInitFromEntry" );
 
@@ -178,10 +173,6 @@ uno::Reference< uno::XInterface > SAL_CALL OOoEmbeddedObjectFactory::createInsta
 		const ::rtl::OUString& sEntName,
 		const uno::Sequence< beans::PropertyValue >& aMediaDescr,
 		const uno::Sequence< beans::PropertyValue >& lObjArgs )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException)
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OOoEmbeddedObjectFactory::createInstanceInitFromMediaDescriptor" );
 
@@ -243,10 +234,6 @@ uno::Reference< uno::XInterface > SAL_CALL OOoEmbeddedObjectFactory::createInsta
 											const uno::Reference< embed::XStorage >& xStorage,
 											const ::rtl::OUString& sEntName,
 											const uno::Sequence< beans::PropertyValue >& lObjArgs )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException)
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OOoEmbeddedObjectFactory::createInstanceInitNew" );
 
@@ -296,10 +283,6 @@ uno::Reference< uno::XInterface > SAL_CALL OOoEmbeddedObjectFactory::createInsta
 			sal_Int32 nEntryConnectionMode,
 			const uno::Sequence< beans::PropertyValue >& lArguments,
 			const uno::Sequence< beans::PropertyValue >& lObjArgs )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OOoEmbeddedObjectFactory::createInstanceUserInit" );
 
@@ -356,10 +339,6 @@ uno::Reference< uno::XInterface > SAL_CALL OOoEmbeddedObjectFactory::createInsta
 											const ::rtl::OUString& /*sEntName*/,
 											const uno::Sequence< beans::PropertyValue >& aMediaDescr,
 											const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OOoEmbeddedObjectFactory::createInstanceLink" );
 
@@ -412,10 +391,6 @@ uno::Reference< uno::XInterface > SAL_CALL OOoEmbeddedObjectFactory::createInsta
 												const ::rtl::OUString& sEntName,
 												const uno::Sequence< beans::PropertyValue >& lArguments,
 												const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OOoEmbeddedObjectFactory::createInstanceLinkUserInit" );
 
@@ -472,14 +447,12 @@ uno::Reference< uno::XInterface > SAL_CALL OOoEmbeddedObjectFactory::createInsta
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL OOoEmbeddedObjectFactory::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL OOoEmbeddedObjectFactory::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -492,7 +465,6 @@ sal_Bool SAL_CALL OOoEmbeddedObjectFactory::supportsService( const ::rtl::OUStri
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OOoEmbeddedObjectFactory::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }
@@ -528,10 +500,6 @@ uno::Reference< uno::XInterface > SAL_CALL OOoSpecialEmbeddedObjectFactory::crea
 			sal_Int32 /*nEntryConnectionMode*/,
 			const uno::Sequence< beans::PropertyValue >& /*lArguments*/,
 			const uno::Sequence< beans::PropertyValue >& /*lObjArgs*/ )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException )
 {
 	uno::Sequence< beans::NamedValue > aObject = m_aConfigHelper.GetObjectPropsByClassID( aClassID );
 	if ( !aObject.getLength() )
@@ -547,14 +515,12 @@ uno::Reference< uno::XInterface > SAL_CALL OOoSpecialEmbeddedObjectFactory::crea
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL OOoSpecialEmbeddedObjectFactory::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL OOoSpecialEmbeddedObjectFactory::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -567,7 +533,6 @@ sal_Bool SAL_CALL OOoSpecialEmbeddedObjectFactory::supportsService( const ::rtl:
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OOoSpecialEmbeddedObjectFactory::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }

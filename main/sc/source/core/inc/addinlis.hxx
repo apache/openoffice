@@ -73,20 +73,15 @@ public:
 
 
 							// XResultListener
-	virtual void SAL_CALL	modified( const ::com::sun::star::sheet::ResultEvent& aEvent )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	modified( const ::com::sun::star::sheet::ResultEvent& aEvent );
 
 							// XEventListener
-	virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& Source )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& Source );
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 };
 
 

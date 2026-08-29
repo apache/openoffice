@@ -29,7 +29,7 @@
 // - ScannerManager -
 // ------------------
 
-REF( XInterface ) SAL_CALL ScannerManager_CreateInstance( const REF( com::sun::star::lang::XMultiServiceFactory )& /*rxFactory*/ ) throw ( Exception )
+REF( XInterface ) SAL_CALL ScannerManager_CreateInstance( const REF( com::sun::star::lang::XMultiServiceFactory )& /*rxFactory*/ )
 {
 	return *( new ScannerManager() );
 }
@@ -51,7 +51,7 @@ ScannerManager::~ScannerManager()
 
 // -----------------------------------------------------------------------------
 
-ANY SAL_CALL ScannerManager::queryInterface( const Type& rType ) throw( RuntimeException )
+ANY SAL_CALL ScannerManager::queryInterface( const Type& rType )
 {
 	const ANY aRet( cppu::queryInterface( rType,
 										  static_cast< XScannerManager* >( this ),

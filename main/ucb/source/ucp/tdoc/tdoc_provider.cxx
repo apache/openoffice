@@ -125,7 +125,6 @@ ONE_INSTANCE_SERVICE_FACTORY_IMPL( ContentProvider );
 uno::Reference< ucb::XContent > SAL_CALL
 ContentProvider::queryContent(
         const uno::Reference< ucb::XContentIdentifier >& Identifier )
-    throw( ucb::IllegalIdentifierException, uno::RuntimeException )
 {
     Uri aUri( Identifier->getContentIdentifier() );
     if ( !aUri.isValid() )
@@ -163,7 +162,6 @@ ContentProvider::queryContent(
 uno::Reference< ucb::XContent > SAL_CALL
 ContentProvider::createDocumentContent(
         const uno::Reference< frame::XModel >& Model )
-    throw ( lang::IllegalArgumentException, uno::RuntimeException )
 {
     // model -> id -> content identifier -> queryContent
     if ( m_xDocsMgr.is() )
@@ -403,7 +401,6 @@ ContentProvider::queryStorageClone( const rtl::OUString & rUri ) const
 uno::Reference< io::XInputStream >
 ContentProvider::queryInputStream( const rtl::OUString & rUri,
                                    const rtl::OUString & rPassword ) const
-    throw ( packages::WrongPasswordException )
 {
     if ( m_xStgElemFac.is() )
     {
@@ -441,7 +438,6 @@ uno::Reference< io::XOutputStream >
 ContentProvider::queryOutputStream( const rtl::OUString & rUri,
                                     const rtl::OUString & rPassword,
                                     bool bTruncate ) const
-    throw ( packages::WrongPasswordException )
 {
     if ( m_xStgElemFac.is() )
     {
@@ -481,7 +477,6 @@ uno::Reference< io::XStream >
 ContentProvider::queryStream( const rtl::OUString & rUri,
                               const rtl::OUString & rPassword,
                               bool bTruncate ) const
-    throw ( packages::WrongPasswordException )
 {
     if ( m_xStgElemFac.is() )
     {

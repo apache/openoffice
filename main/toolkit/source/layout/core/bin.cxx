@@ -38,7 +38,6 @@ Bin::Bin() : Container()
 
 void SAL_CALL
 Bin::addChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
-    throw (uno::RuntimeException, awt::MaxChildrenException)
 {
     if ( mxChild.is() )
         throw awt::MaxChildrenException();
@@ -52,7 +51,6 @@ Bin::addChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
 
 void SAL_CALL
 Bin::removeChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
-    throw (uno::RuntimeException)
 {
     if ( xChild == mxChild )
     {
@@ -64,14 +62,12 @@ Bin::removeChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
 
 uno::Sequence< uno::Reference< awt::XLayoutConstrains > > SAL_CALL
 Bin::getChildren()
-    throw (uno::RuntimeException)
 {
     return getSingleChild (mxChild);
 }
 
 void SAL_CALL
 Bin::allocateArea( const awt::Rectangle &rArea )
-    throw (uno::RuntimeException)
 {
     maAllocation = rArea;
     if ( mxChild.is() )
@@ -80,7 +76,6 @@ Bin::allocateArea( const awt::Rectangle &rArea )
 
 awt::Size SAL_CALL
 Bin::getMinimumSize()
-    throw(uno::RuntimeException)
 {
     if ( mxChild.is() )
         return maRequisition = maChildRequisition = mxChild->getMinimumSize();
@@ -89,14 +84,12 @@ Bin::getMinimumSize()
 
 uno::Reference< beans::XPropertySet > SAL_CALL
 Bin::getChildProperties( const uno::Reference< awt::XLayoutConstrains >& )
-    throw (uno::RuntimeException)
 {
     return uno::Reference< beans::XPropertySet >();
 }
 
 sal_Bool SAL_CALL
 Bin::hasHeightForWidth()
-    throw(uno::RuntimeException)
 {
     uno::Reference< awt::XLayoutContainer > xChildCont( mxChild, uno::UNO_QUERY );
     if ( xChildCont.is() )
@@ -106,7 +99,6 @@ Bin::hasHeightForWidth()
 
 sal_Int32 SAL_CALL
 Bin::getHeightForWidth( sal_Int32 nWidth )
-    throw(uno::RuntimeException)
 {
     uno::Reference< awt::XLayoutContainer > xChildCont( mxChild, uno::UNO_QUERY );
     if ( xChildCont.is() )
@@ -137,7 +129,6 @@ Align::Align() : Bin()
 
 void SAL_CALL
 Align::allocateArea( const awt::Rectangle &rArea )
-    throw (uno::RuntimeException)
 {
     maAllocation = rArea;
     if ( !mxChild.is() )
@@ -183,7 +174,6 @@ MinSize::emptyVisible ()
 }
 
 awt::Size SAL_CALL MinSize::getMinimumSize()
-    throw(uno::RuntimeException)
 {
     Bin::getMinimumSize();
     maRequisition.Width = SAL_MAX( maRequisition.Width, mnMinWidth );

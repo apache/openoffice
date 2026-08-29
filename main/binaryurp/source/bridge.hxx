@@ -175,27 +175,21 @@ private:
     virtual ~Bridge();
 
     virtual com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
-    SAL_CALL getInstance(rtl::OUString const & sInstanceName)
-        throw (com::sun::star::uno::RuntimeException);
+    SAL_CALL getInstance(rtl::OUString const & sInstanceName);
 
-    virtual rtl::OUString SAL_CALL getName()
-        throw (com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getName();
 
-    virtual rtl::OUString SAL_CALL getDescription()
-        throw (com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getDescription();
 
-    virtual void SAL_CALL dispose()
-        throw (com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
 
     virtual void SAL_CALL addEventListener(
         com::sun::star::uno::Reference< com::sun::star::lang::XEventListener >
-            const & xListener)
-        throw (com::sun::star::uno::RuntimeException);
+            const & xListener);
 
     virtual void SAL_CALL removeEventListener(
         com::sun::star::uno::Reference< com::sun::star::lang::XEventListener >
-            const & aListener)
-        throw (com::sun::star::uno::RuntimeException);
+            const & aListener);
 
     // Only called from reader_ thread:
     void sendCommitChangeRequest();

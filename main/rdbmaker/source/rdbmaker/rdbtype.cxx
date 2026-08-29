@@ -61,7 +61,6 @@ sal_Bool produceDependedTypes(const OString& typeName,
 							  FileStream& o,
 							  RegistryKey& regKey,
 							  StringSet& filterTypes)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_True;
 
@@ -110,7 +109,6 @@ sal_Bool produceType(const OString& typeName,
 					 RegistryKey& regKey,
 					 StringSet& filterTypes,
                      sal_Bool bDepend)
-	throw( CannotDumpException )
 {
 	if (typeDependencies.isGenerated(typeName) )
 		return sal_True;

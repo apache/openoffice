@@ -172,7 +172,7 @@ OPropertyArrayAggregationHelper::PropertyOrigin OPropertyArrayAggregationHelper:
 }
 
 //------------------------------------------------------------------
-Property OPropertyArrayAggregationHelper::getPropertyByName( const ::rtl::OUString& _rPropertyName ) throw( UnknownPropertyException )
+Property OPropertyArrayAggregationHelper::getPropertyByName( const ::rtl::OUString& _rPropertyName )
 {
 	const Property* pProperty = findPropertyByName( _rPropertyName );
 
@@ -383,7 +383,7 @@ namespace internal
         bool    isResponsibleFor( sal_Int32 _nHandle );
 
         /// actually forwards a property value to the aggregate
-        void    doForward( sal_Int32 _nHandle, const Any& _rValue ) throw ( Exception );
+        void    doForward( sal_Int32 _nHandle, const Any& _rValue );
 
         sal_Int32 getCurrentlyForwardedProperty( ) const { return m_nCurrentlyForwarding; }
     };
@@ -413,7 +413,7 @@ namespace internal
     }
 
     //--------------------------------------------------------------------------
-    void PropertyForwarder::doForward( sal_Int32 _nHandle, const Any& _rValue ) throw ( Exception )
+    void PropertyForwarder::doForward( sal_Int32 _nHandle, const Any& _rValue )
     {
         OSL_ENSURE( m_rAggregationHelper.m_xAggregateSet.is(), "PropertyForwarder::doForward: no property set!" );
         if ( m_rAggregationHelper.m_xAggregateSet.is() )
@@ -460,7 +460,7 @@ OPropertySetAggregationHelper::~OPropertySetAggregationHelper()
 }
 
 //------------------------------------------------------------------------------
- ::com::sun::star::uno::Any SAL_CALL OPropertySetAggregationHelper::queryInterface(const  ::com::sun::star::uno::Type& _rType) throw( ::com::sun::star::uno::RuntimeException)
+ ::com::sun::star::uno::Any SAL_CALL OPropertySetAggregationHelper::queryInterface(const  ::com::sun::star::uno::Type& _rType)
 {
 	 ::com::sun::star::uno::Any aReturn = OPropertyStateHelper::queryInterface(_rType);
 
@@ -491,7 +491,7 @@ void OPropertySetAggregationHelper::disposing()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OPropertySetAggregationHelper::disposing(const  ::com::sun::star::lang::EventObject& _rSource) throw ( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OPropertySetAggregationHelper::disposing(const  ::com::sun::star::lang::EventObject& _rSource)
 {
 	OSL_ENSURE(m_xAggregateSet.is(), "OPropertySetAggregationHelper::disposing : don't have an aggregate anymore !");
 	if (_rSource.Source == m_xAggregateSet)
@@ -499,7 +499,7 @@ void SAL_CALL OPropertySetAggregationHelper::disposing(const  ::com::sun::star::
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OPropertySetAggregationHelper::propertiesChange(const  ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent>& _rEvents) throw( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OPropertySetAggregationHelper::propertiesChange(const  ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent>& _rEvents)
 {
 	OSL_ENSURE(m_xAggregateSet.is(), "OPropertySetAggregationHelper::propertiesChange : have no aggregate !");
 
@@ -551,7 +551,7 @@ void SAL_CALL OPropertySetAggregationHelper::propertiesChange(const  ::com::sun:
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OPropertySetAggregationHelper::vetoableChange(const  ::com::sun::star::beans::PropertyChangeEvent& _rEvent) throw( ::com::sun::star::beans::PropertyVetoException,  ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OPropertySetAggregationHelper::vetoableChange(const  ::com::sun::star::beans::PropertyChangeEvent& _rEvent)
 {
 	OSL_ENSURE(m_xAggregateSet.is(), "OPropertySetAggregationHelper::vetoableChange : have no aggregate !");
 
@@ -563,7 +563,6 @@ void SAL_CALL OPropertySetAggregationHelper::vetoableChange(const  ::com::sun::s
 
 //------------------------------------------------------------------------------
 void OPropertySetAggregationHelper::setAggregation(const  ::com::sun::star::uno::Reference<  ::com::sun::star::uno::XInterface >& _rxDelegate)
-		throw(  ::com::sun::star::lang::IllegalArgumentException )
 {
 	osl::MutexGuard aGuard(rBHelper.rMutex);
 
@@ -603,7 +602,6 @@ void OPropertySetAggregationHelper::startListening()
 //------------------------------------------------------------------------------
 void SAL_CALL OPropertySetAggregationHelper::addVetoableChangeListener(const ::rtl::OUString& _rPropertyName,
 																	   const  ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener>& _rxListener)
-																	   throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::lang::WrappedTargetException,  ::com::sun::star::uno::RuntimeException)
 {
 	OPropertySetHelper::addVetoableChangeListener(_rPropertyName, _rxListener);
 	if (!m_bListening)
@@ -613,7 +611,6 @@ void SAL_CALL OPropertySetAggregationHelper::addVetoableChangeListener(const ::r
 //------------------------------------------------------------------------------
 void SAL_CALL OPropertySetAggregationHelper::addPropertyChangeListener(const ::rtl::OUString& _rPropertyName,
 																	   const  ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener>& _rxListener)
-																	   throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::lang::WrappedTargetException,  ::com::sun::star::uno::RuntimeException)
 {
 	OPropertySetHelper::addPropertyChangeListener(_rPropertyName, _rxListener);
 	if (!m_bListening)
@@ -623,7 +620,6 @@ void SAL_CALL OPropertySetAggregationHelper::addPropertyChangeListener(const ::r
 //------------------------------------------------------------------------------
 void SAL_CALL OPropertySetAggregationHelper::addPropertiesChangeListener(const  ::com::sun::star::uno::Sequence< ::rtl::OUString >& _rPropertyNames,
 																		 const  ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener>& _rxListener)
-																		 throw( ::com::sun::star::uno::RuntimeException)
 {
 	OPropertySetHelper::addPropertiesChangeListener(_rPropertyNames, _rxListener);
 	if (!m_bListening)
@@ -650,9 +646,6 @@ sal_Int32 OPropertySetAggregationHelper::getOriginalHandle(sal_Int32 nHandle) co
 
 //------------------------------------------------------------------------------
 void SAL_CALL OPropertySetAggregationHelper::setFastPropertyValue(sal_Int32 _nHandle, const  ::com::sun::star::uno::Any& _rValue)
-		throw(	 ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::beans::PropertyVetoException,
-				 ::com::sun::star::lang::IllegalArgumentException,  ::com::sun::star::lang::WrappedTargetException,
-				 ::com::sun::star::uno::RuntimeException)
 {
 	OPropertyArrayAggregationHelper& rPH = static_cast< OPropertyArrayAggregationHelper& >( getInfoHelper() );
 	::rtl::OUString aPropName;
@@ -692,9 +685,6 @@ void OPropertySetAggregationHelper::getFastPropertyValue( ::com::sun::star::uno:
 
 //------------------------------------------------------------------------------
  ::com::sun::star::uno::Any SAL_CALL OPropertySetAggregationHelper::getFastPropertyValue(sal_Int32 nHandle)
-		throw(	 ::com::sun::star::beans::UnknownPropertyException,
-				 ::com::sun::star::lang::WrappedTargetException,
-				 ::com::sun::star::uno::RuntimeException)
 {
 	OPropertyArrayAggregationHelper& rPH = static_cast< OPropertyArrayAggregationHelper& >( getInfoHelper() );
 	::rtl::OUString aPropName;
@@ -717,7 +707,6 @@ void OPropertySetAggregationHelper::getFastPropertyValue( ::com::sun::star::uno:
 //------------------------------------------------------------------------------
 void SAL_CALL OPropertySetAggregationHelper::setPropertyValues(
 		const Sequence< ::rtl::OUString >& _rPropertyNames, const Sequence< Any >& _rValues )
-	throw ( PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException )
 {
 	OSL_ENSURE( !rBHelper.bInDispose, "OPropertySetAggregationHelper::setPropertyValues : do not use within the dispose call !");
 	OSL_ENSURE( !rBHelper.bDisposed, "OPropertySetAggregationHelper::setPropertyValues : object is disposed" );
@@ -904,7 +893,6 @@ void SAL_CALL OPropertySetAggregationHelper::setPropertyValues(
 // XPropertyState
 //------------------------------------------------------------------------------
  ::com::sun::star::beans::PropertyState SAL_CALL OPropertySetAggregationHelper::getPropertyState(const ::rtl::OUString& _rPropertyName)
-			throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::uno::RuntimeException)
 {
 	OPropertyArrayAggregationHelper& rPH = static_cast< OPropertyArrayAggregationHelper& >( getInfoHelper() );
 	sal_Int32 nHandle = rPH.getHandleByName( _rPropertyName );
@@ -929,7 +917,6 @@ void SAL_CALL OPropertySetAggregationHelper::setPropertyValues(
 
 //------------------------------------------------------------------------------
 void SAL_CALL OPropertySetAggregationHelper::setPropertyToDefault(const ::rtl::OUString& _rPropertyName)
-		throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::uno::RuntimeException)
 {
 	OPropertyArrayAggregationHelper& rPH = static_cast< OPropertyArrayAggregationHelper& >( getInfoHelper() );
 	sal_Int32 nHandle = rPH.getHandleByName(_rPropertyName);
@@ -962,7 +949,6 @@ void SAL_CALL OPropertySetAggregationHelper::setPropertyToDefault(const ::rtl::O
 
 //------------------------------------------------------------------------------
  ::com::sun::star::uno::Any SAL_CALL OPropertySetAggregationHelper::getPropertyDefault(const ::rtl::OUString& aPropertyName)
-		throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::lang::WrappedTargetException,  ::com::sun::star::uno::RuntimeException)
 {
 	OPropertyArrayAggregationHelper& rPH = static_cast< OPropertyArrayAggregationHelper& >( getInfoHelper() );
 	sal_Int32 nHandle = rPH.getHandleByName( aPropertyName );
@@ -984,7 +970,7 @@ void SAL_CALL OPropertySetAggregationHelper::setPropertyToDefault(const ::rtl::O
 }
 
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL OPropertySetAggregationHelper::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue ) throw(IllegalArgumentException)
+sal_Bool SAL_CALL OPropertySetAggregationHelper::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue )
 {
     sal_Bool bModified = sal_False;
 
@@ -1005,7 +991,7 @@ sal_Bool SAL_CALL OPropertySetAggregationHelper::convertFastPropertyValue( Any& 
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OPropertySetAggregationHelper::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw ( Exception )
+void SAL_CALL OPropertySetAggregationHelper::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
 {
     OSL_ENSURE( m_pForwarder->isResponsibleFor( _nHandle ), "OPropertySetAggregationHelper::setFastPropertyValue_NoBroadcast: this is no forwarded property - did you use declareForwardedProperty for it?" );
     if ( m_pForwarder->isResponsibleFor( _nHandle ) )

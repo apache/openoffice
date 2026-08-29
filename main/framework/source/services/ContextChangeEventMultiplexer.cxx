@@ -93,7 +93,6 @@ void SAL_CALL ContextChangeEventMultiplexer::disposing (void)
 void SAL_CALL ContextChangeEventMultiplexer::addContextChangeEventListener (
     const cssu::Reference<css::ui::XContextChangeEventListener>& rxListener,
     const cssu::Reference<cssu::XInterface>& rxEventFocus)
-    throw(cssu::RuntimeException,cssl::IllegalArgumentException)
 {
     if ( ! rxListener.is())
         throw css::lang::IllegalArgumentException(
@@ -133,7 +132,6 @@ void SAL_CALL ContextChangeEventMultiplexer::addContextChangeEventListener (
 void SAL_CALL ContextChangeEventMultiplexer::removeContextChangeEventListener (
     const cssu::Reference<css::ui::XContextChangeEventListener>& rxListener,
     const cssu::Reference<cssu::XInterface>& rxEventFocus)
-    throw(cssu::RuntimeException,cssl::IllegalArgumentException)
 {
     if ( ! rxListener.is())
         throw cssl::IllegalArgumentException(
@@ -162,7 +160,6 @@ void SAL_CALL ContextChangeEventMultiplexer::removeContextChangeEventListener (
 
 void SAL_CALL ContextChangeEventMultiplexer::removeAllContextChangeEventListeners (
     const cssu::Reference<css::ui::XContextChangeEventListener>& rxListener)
-    throw(cssu::RuntimeException,cssl::IllegalArgumentException)
 {
     if ( ! rxListener.is())
         throw cssl::IllegalArgumentException(
@@ -193,7 +190,6 @@ void SAL_CALL ContextChangeEventMultiplexer::removeAllContextChangeEventListener
 void SAL_CALL ContextChangeEventMultiplexer::broadcastContextChangeEvent (
     const css::ui::ContextChangeEventObject& rEventObject,
     const cssu::Reference<cssu::XInterface>& rxEventFocus)
-    throw(cssu::RuntimeException)
 {
     // Remember the current context.
     if (rxEventFocus.is())
@@ -269,7 +265,6 @@ ContextChangeEventMultiplexer::FocusDescriptor* ContextChangeEventMultiplexer::G
 
 cssu::Reference<cssu::XInterface> SAL_CALL ContextChangeEventMultiplexer::createInstanceWithContext (
     const cssu::Reference<cssu::XComponentContext>& rxContext)
-    throw (cssu::Exception, cssu::RuntimeException)
 {
     (void)rxContext;
     return cssu::Reference<cssu::XInterface>();
@@ -281,7 +276,6 @@ cssu::Reference<cssu::XInterface> SAL_CALL ContextChangeEventMultiplexer::create
 cssu::Reference<cssu::XInterface > SAL_CALL ContextChangeEventMultiplexer::createInstanceWithArgumentsAndContext (
     const cssu::Sequence<cssu::Any>& rArguments,
     const cssu::Reference<cssu::XComponentContext>& rxContext)
-    throw (cssu::Exception, cssu::RuntimeException)
 {
     (void)rArguments;
     (void)rxContext;
@@ -294,7 +288,6 @@ cssu::Reference<cssu::XInterface > SAL_CALL ContextChangeEventMultiplexer::creat
 // XServiceInfo
 
 ::rtl::OUString SAL_CALL ContextChangeEventMultiplexer::getImplementationName (void)
-    throw(cssu::RuntimeException)
 {
     return impl_getStaticImplementationName();
 }
@@ -305,7 +298,6 @@ cssu::Reference<cssu::XInterface > SAL_CALL ContextChangeEventMultiplexer::creat
 
 sal_Bool SAL_CALL ContextChangeEventMultiplexer::supportsService (
     const ::rtl::OUString& rsServiceName)
-    throw (cssu::RuntimeException)
 {
     return ::comphelper::findValue(static_GetSupportedServiceNames(), rsServiceName, sal_True).getLength() != 0;
 }
@@ -314,7 +306,6 @@ sal_Bool SAL_CALL ContextChangeEventMultiplexer::supportsService (
 
 
 cssu::Sequence<OUString> SAL_CALL ContextChangeEventMultiplexer::getSupportedServiceNames (void)
-    throw (cssu::RuntimeException)
 {
     return static_GetSupportedServiceNames();
 }
@@ -324,7 +315,6 @@ cssu::Sequence<OUString> SAL_CALL ContextChangeEventMultiplexer::getSupportedSer
 
 void SAL_CALL ContextChangeEventMultiplexer::disposing (
     const css::lang::EventObject& rEvent)
-    throw (cssu::RuntimeException)
 {
     ListenerMap::iterator iDescriptor (maListeners.find(rEvent.Source));
 
@@ -379,7 +369,6 @@ cssu::Reference<cssu::XInterface> ContextChangeEventMultiplexer::impl_createFact
 
 cssu::Reference<cssu::XInterface> SAL_CALL ContextChangeEventMultiplexer::static_CreateInstance (
     const cssu::Reference<cssu::XComponentContext>& rxComponentContext)
-    throw (cssu::Exception)
 {
     ContextChangeEventMultiplexer* pObject = new ContextChangeEventMultiplexer(rxComponentContext);
     cssu::Reference<cssu::XInterface> xService (static_cast<XWeak*>(pObject), cssu::UNO_QUERY);

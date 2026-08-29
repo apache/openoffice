@@ -147,14 +147,14 @@ public:
     SAL_DLLPRIVATE void ReleaseShell_Impl();
     SAL_DLLPRIVATE void BorderWidthsChanged_Impl();
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::task::XStatusIndicator > SAL_CALL getStatusIndicator(  ) throw (::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Reference< ::com::sun::star::task::XStatusIndicator > SAL_CALL getStatusIndicator(  );
 
 	//____________________________________________________________________________________________________
 	//	XController2
 	//____________________________________________________________________________________________________
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL getComponentWindow() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getViewControllerName() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCreationArguments() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL getComponentWindow();
+    virtual ::rtl::OUString SAL_CALL getViewControllerName();
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCreationArguments();
 
 	//____________________________________________________________________________________________________
 	//	XController
@@ -173,7 +173,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL attachFrame( const REFERENCE< XFRAME >& xFrame ) throw( RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL attachFrame( const REFERENCE< XFRAME >& xFrame ) ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -188,7 +188,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual sal_Bool SAL_CALL attachModel( const REFERENCE< XMODEL >& xModel ) throw( RUNTIMEEXCEPTION ) ;
+	virtual sal_Bool SAL_CALL attachModel( const REFERENCE< XMODEL >& xModel ) ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -203,7 +203,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual sal_Bool SAL_CALL suspend( sal_Bool bSuspend ) throw( RUNTIMEEXCEPTION ) ;
+	virtual sal_Bool SAL_CALL suspend( sal_Bool bSuspend ) ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -218,7 +218,7 @@ public:
 		@onerror	-
 	*/
 
-	ANY SAL_CALL getViewData() throw( RUNTIMEEXCEPTION ) ;
+	ANY SAL_CALL getViewData() ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -233,7 +233,7 @@ public:
 		@onerror	-
 	*/
 
-	void SAL_CALL restoreViewData( const ANY& aValue ) throw( RUNTIMEEXCEPTION ) ;
+	void SAL_CALL restoreViewData( const ANY& aValue ) ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -248,7 +248,7 @@ public:
 		@onerror	-
 	*/
 
-	REFERENCE< XFRAME > SAL_CALL getFrame() throw( RUNTIMEEXCEPTION ) ;
+	REFERENCE< XFRAME > SAL_CALL getFrame() ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -263,7 +263,7 @@ public:
 		@onerror	-
 	*/
 
-	REFERENCE< XMODEL > SAL_CALL getModel() throw( RUNTIMEEXCEPTION ) ;
+	REFERENCE< XMODEL > SAL_CALL getModel() ;
 
 	//____________________________________________________________________________________________________
 	//	XDispatchProvider
@@ -284,7 +284,7 @@ public:
 
 	virtual REFERENCE< XDISPATCH > SAL_CALL queryDispatch(	const	UNOURL &			aURL			,
 															const	OUSTRING &			sTargetFrameName,
-																	FrameSearchFlags	eSearchFlags	) throw( RUNTIMEEXCEPTION ) ;
+																	FrameSearchFlags	eSearchFlags	) ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -299,16 +299,16 @@ public:
 		@onerror	-
 	*/
 
-	virtual ::com::sun::star::uno::Sequence< REFERENCE< XDISPATCH > > SAL_CALL queryDispatches( const ::com::sun::star::uno::Sequence< DISPATCHDESCRIPTOR >& seqDescriptor ) throw( RUNTIMEEXCEPTION ) ;
+	virtual ::com::sun::star::uno::Sequence< REFERENCE< XDISPATCH > > SAL_CALL queryDispatches( const ::com::sun::star::uno::Sequence< DISPATCHDESCRIPTOR >& seqDescriptor ) ;
 
 	//____________________________________________________________________________________________________
 	//	XControllerBorder
 	//____________________________________________________________________________________________________
 
-    virtual ::com::sun::star::frame::BorderWidths SAL_CALL getBorder() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addBorderResizeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XBorderResizeListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeBorderResizeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XBorderResizeListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL queryBorderedArea( const ::com::sun::star::awt::Rectangle& aPreliminaryRectangle ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::frame::BorderWidths SAL_CALL getBorder();
+    virtual void SAL_CALL addBorderResizeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XBorderResizeListener >& xListener );
+    virtual void SAL_CALL removeBorderResizeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XBorderResizeListener >& xListener );
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL queryBorderedArea( const ::com::sun::star::awt::Rectangle& aPreliminaryRectangle );
 
 	//____________________________________________________________________________________________________
 	//	XComponent
@@ -327,7 +327,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL dispose() throw( RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL dispose() ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -342,7 +342,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL addEventListener( const REFERENCE< XEVENTLISTENER >& aListener ) throw( RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL addEventListener( const REFERENCE< XEVENTLISTENER >& aListener ) ;
 
 	/**___________________________________________________________________________________________________
 		@short		-
@@ -357,28 +357,28 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL removeEventListener( const REFERENCE< XEVENTLISTENER >& aListener ) throw( RUNTIMEEXCEPTION ) ;
-    virtual void SAL_CALL registerContextMenuInterceptor( const REFERENCE< XCONTEXTMENUINTERCEPTOR >& xInterceptor ) throw( RUNTIMEEXCEPTION );
-    virtual void SAL_CALL releaseContextMenuInterceptor( const REFERENCE< XCONTEXTMENUINTERCEPTOR >& xInterceptor ) throw( RUNTIMEEXCEPTION );
+	virtual void SAL_CALL removeEventListener( const REFERENCE< XEVENTLISTENER >& aListener ) ;
+    virtual void SAL_CALL registerContextMenuInterceptor( const REFERENCE< XCONTEXTMENUINTERCEPTOR >& xInterceptor );
+    virtual void SAL_CALL releaseContextMenuInterceptor( const REFERENCE< XCONTEXTMENUINTERCEPTOR >& xInterceptor );
 
-    virtual void SAL_CALL addKeyHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XKeyHandler >& xHandler ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeKeyHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XKeyHandler >& xHandler ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addMouseClickHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseClickHandler >& xHandler ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeMouseClickHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseClickHandler >& xHandler ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addKeyHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XKeyHandler >& xHandler );
+    virtual void SAL_CALL removeKeyHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XKeyHandler >& xHandler );
+    virtual void SAL_CALL addMouseClickHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseClickHandler >& xHandler );
+    virtual void SAL_CALL removeMouseClickHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMouseClickHandler >& xHandler );
 
 	//____________________________________________________________________________________________________
 	//	XDispatchInformationProvider
 	//____________________________________________________________________________________________________
-    virtual ::com::sun::star::uno::Sequence< sal_Int16 > SAL_CALL getSupportedCommandGroups() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::frame::DispatchInformation > SAL_CALL getConfigurableDispatchInformation( sal_Int16 nCommandGroup ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< sal_Int16 > SAL_CALL getSupportedCommandGroups();
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::frame::DispatchInformation > SAL_CALL getConfigurableDispatchInformation( sal_Int16 nCommandGroup );
 
     // css::frame::XTitle
-    virtual ::rtl::OUString SAL_CALL getTitle(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setTitle( const ::rtl::OUString& sTitle ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getTitle(  );
+    virtual void SAL_CALL setTitle( const ::rtl::OUString& sTitle );
 
     // css::frame::XTitleChangeBroadcaster
-    virtual void SAL_CALL addTitleChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XTitleChangeListener >& xListener )     throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeTitleChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XTitleChangeListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addTitleChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XTitleChangeListener >& xListener );
+    virtual void SAL_CALL removeTitleChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XTitleChangeListener >& xListener );
 
 //#if 0 // _SOLAR__PRIVATE
     // FIXME: TL needs this in sw/source/ui/uno/unotxdoc.cxx now;

@@ -165,7 +165,7 @@ bool AccessibleCell::operator== (const AccessibleCell& rAccessibleCell)
 // XInterface
 //-----------------------------------------------------------------------------
 
-Any SAL_CALL AccessibleCell::queryInterface( const Type& aType ) throw (RuntimeException)
+Any SAL_CALL AccessibleCell::queryInterface( const Type& aType )
 {
 	return AccessibleCellBase::queryInterface( aType );
 }
@@ -190,7 +190,7 @@ void SAL_CALL AccessibleCell::release(  ) throw ()
 
 /** The children of this cell come from the paragraphs of text.
 */
-sal_Int32 SAL_CALL AccessibleCell::getAccessibleChildCount() throw (::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL AccessibleCell::getAccessibleChildCount()
 {
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
     ThrowIfDisposed ();
@@ -202,7 +202,7 @@ sal_Int32 SAL_CALL AccessibleCell::getAccessibleChildCount() throw (::com::sun::
 /** Forward the request to the shape.  Return the requested shape or throw
     an exception for a wrong index.
 */
-Reference<XAccessible> SAL_CALL AccessibleCell::getAccessibleChild (sal_Int32 nIndex) throw (IndexOutOfBoundsException, RuntimeException)
+Reference<XAccessible> SAL_CALL AccessibleCell::getAccessibleChild (sal_Int32 nIndex)
 {
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
     ThrowIfDisposed ();
@@ -219,7 +219,7 @@ Reference<XAccessible> SAL_CALL AccessibleCell::getAccessibleChild (sal_Int32 nI
 		SHOWING
 		VISIBLE
 */
-Reference<XAccessibleStateSet> SAL_CALL AccessibleCell::getAccessibleStateSet (void) throw (RuntimeException)
+Reference<XAccessibleStateSet> SAL_CALL AccessibleCell::getAccessibleStateSet (void)
 {
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
     ::osl::MutexGuard aGuard (maMutex);
@@ -290,7 +290,7 @@ Reference<XAccessibleStateSet> SAL_CALL AccessibleCell::getAccessibleStateSet (v
 // XAccessibleComponent
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL AccessibleCell::containsPoint( const ::com::sun::star::awt::Point& aPoint) throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL AccessibleCell::containsPoint( const ::com::sun::star::awt::Point& aPoint)
 {
 	return AccessibleComponentBase::containsPoint( aPoint );
 }
@@ -303,7 +303,7 @@ sal_Bool SAL_CALL AccessibleCell::containsPoint( const ::com::sun::star::awt::Po
     the already instantiated children and only if no match is found
     instantiate the remaining ones.
 */
-Reference<XAccessible > SAL_CALL  AccessibleCell::getAccessibleAtPoint ( const ::com::sun::star::awt::Point& aPoint) throw(RuntimeException)
+Reference<XAccessible > SAL_CALL  AccessibleCell::getAccessibleAtPoint ( const ::com::sun::star::awt::Point& aPoint)
 {
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
     ::osl::MutexGuard aGuard (maMutex);
@@ -334,7 +334,7 @@ Reference<XAccessible > SAL_CALL  AccessibleCell::getAccessibleAtPoint ( const :
 
 // --------------------------------------------------------------------
 
-::com::sun::star::awt::Rectangle SAL_CALL AccessibleCell::getBounds(void) throw(RuntimeException)
+::com::sun::star::awt::Rectangle SAL_CALL AccessibleCell::getBounds(void)
 {
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
     ::osl::MutexGuard aGuard (maMutex);
@@ -381,7 +381,7 @@ Reference<XAccessible > SAL_CALL  AccessibleCell::getAccessibleAtPoint ( const :
 
 // --------------------------------------------------------------------
 
-::com::sun::star::awt::Point SAL_CALL AccessibleCell::getLocation(void) throw (RuntimeException)
+::com::sun::star::awt::Point SAL_CALL AccessibleCell::getLocation(void)
 {
     ThrowIfDisposed ();
 	::com::sun::star::awt::Rectangle aBoundingBox(getBounds());
@@ -390,7 +390,7 @@ Reference<XAccessible > SAL_CALL  AccessibleCell::getAccessibleAtPoint ( const :
 
 // --------------------------------------------------------------------
 
-::com::sun::star::awt::Point SAL_CALL AccessibleCell::getLocationOnScreen(void) throw(RuntimeException)
+::com::sun::star::awt::Point SAL_CALL AccessibleCell::getLocationOnScreen(void)
 {
     ThrowIfDisposed ();
 
@@ -415,7 +415,7 @@ Reference<XAccessible > SAL_CALL  AccessibleCell::getAccessibleAtPoint ( const :
 
 // --------------------------------------------------------------------
 
-awt::Size SAL_CALL AccessibleCell::getSize (void) throw (RuntimeException)
+awt::Size SAL_CALL AccessibleCell::getSize (void)
 {
     ThrowIfDisposed ();
     awt::Rectangle aBoundingBox (getBounds());
@@ -424,28 +424,28 @@ awt::Size SAL_CALL AccessibleCell::getSize (void) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL AccessibleCell::addFocusListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFocusListener >& xListener) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL AccessibleCell::addFocusListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFocusListener >& xListener)
 {
 	AccessibleComponentBase::addFocusListener( xListener );
 }
 
 // --------------------------------------------------------------------
 
-void SAL_CALL AccessibleCell::removeFocusListener (const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFocusListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL AccessibleCell::removeFocusListener (const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFocusListener >& xListener )
 {
 	AccessibleComponentBase::removeFocusListener( xListener );
 }
 
 // --------------------------------------------------------------------
 
-void SAL_CALL AccessibleCell::grabFocus (void) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL AccessibleCell::grabFocus (void)
 {
 	AccessibleComponentBase::grabFocus();
 }
 
 // --------------------------------------------------------------------
 
-sal_Int32 SAL_CALL AccessibleCell::getForeground(void) throw (RuntimeException)
+sal_Int32 SAL_CALL AccessibleCell::getForeground(void)
 {
     ThrowIfDisposed ();
     sal_Int32 nColor (0x0ffffffL);
@@ -456,7 +456,7 @@ sal_Int32 SAL_CALL AccessibleCell::getForeground(void) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-sal_Int32 SAL_CALL AccessibleCell::getBackground (void) throw (RuntimeException)
+sal_Int32 SAL_CALL AccessibleCell::getBackground (void)
 {
     ThrowIfDisposed ();
     sal_Int32 nColor (0L);
@@ -469,7 +469,7 @@ sal_Int32 SAL_CALL AccessibleCell::getBackground (void) throw (RuntimeException)
 // XAccessibleExtendedComponent
 // --------------------------------------------------------------------
 
-::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL AccessibleCell::getFont (void) throw (::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL AccessibleCell::getFont (void)
 {
 //todo
 	return AccessibleComponentBase::getFont();
@@ -477,14 +477,14 @@ sal_Int32 SAL_CALL AccessibleCell::getBackground (void) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL AccessibleCell::getTitledBorderText (void) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL AccessibleCell::getTitledBorderText (void)
 {
 	return AccessibleComponentBase::getTitledBorderText();
 }
 
 // --------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL AccessibleCell::getToolTipText (void) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL AccessibleCell::getToolTipText (void)
 {
 	return AccessibleComponentBase::getToolTipText();
 }
@@ -493,7 +493,7 @@ sal_Int32 SAL_CALL AccessibleCell::getBackground (void) throw (RuntimeException)
 // XAccessibleEventBroadcaster
 // --------------------------------------------------------------------
 
-void SAL_CALL AccessibleCell::addEventListener( const Reference<XAccessibleEventListener >& rxListener)  throw (RuntimeException)
+void SAL_CALL AccessibleCell::addEventListener( const Reference<XAccessibleEventListener >& rxListener)
 {
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
     ::osl::MutexGuard aGuard (maMutex);
@@ -513,7 +513,7 @@ void SAL_CALL AccessibleCell::addEventListener( const Reference<XAccessibleEvent
 
 // --------------------------------------------------------------------
 
-void SAL_CALL AccessibleCell::removeEventListener( const Reference<XAccessibleEventListener >& rxListener) throw (RuntimeException)
+void SAL_CALL AccessibleCell::removeEventListener( const Reference<XAccessibleEventListener >& rxListener)
 {
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
     AccessibleContextBase::removeEventListener(rxListener);
@@ -525,14 +525,14 @@ void SAL_CALL AccessibleCell::removeEventListener( const Reference<XAccessibleEv
 // XServiceInfo
 // --------------------------------------------------------------------
 
-OUString SAL_CALL AccessibleCell::getImplementationName(void) throw (RuntimeException)
+OUString SAL_CALL AccessibleCell::getImplementationName(void)
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM("AccessibleCell"));
 }
 
 // --------------------------------------------------------------------
 
-Sequence<OUString> SAL_CALL AccessibleCell::getSupportedServiceNames(void) throw (RuntimeException)
+Sequence<OUString> SAL_CALL AccessibleCell::getSupportedServiceNames(void)
 {
     ThrowIfDisposed ();
 
@@ -594,7 +594,7 @@ void AccessibleCell::disposing (void)
     AccessibleContextBase::dispose ();
 }
 
-sal_Int32 SAL_CALL AccessibleCell::getAccessibleIndexInParent (void) throw (RuntimeException)
+sal_Int32 SAL_CALL AccessibleCell::getAccessibleIndexInParent (void)
 {
     ThrowIfDisposed ();
     return mnIndexInParent;
@@ -640,7 +640,7 @@ sdr::table::CellRef AccessibleCell::getCellRef()
     aBuf.append( OUString::valueOf(nRow+1) );
     return aBuf.makeStringAndClear();
 }
-::rtl::OUString SAL_CALL AccessibleCell::getAccessibleName (void) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL AccessibleCell::getAccessibleName (void)
 {
     ThrowIfDisposed ();
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());

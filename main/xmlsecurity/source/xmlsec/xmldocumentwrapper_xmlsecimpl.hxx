@@ -104,20 +104,17 @@ private:
 	void sendStartElement(
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& xHandler,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& xHandler2,
-		const xmlNodePtr pNode) const
-		throw (com::sun::star::xml::sax::SAXException);
+		const xmlNodePtr pNode) const;
 
 	void sendEndElement(
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& xHandler,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& xHandler2,
-		const xmlNodePtr pNode) const
-		throw (com::sun::star::xml::sax::SAXException);
+		const xmlNodePtr pNode) const;
 
 	void sendNode(
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& xHandler,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& xHandler2,
-		const xmlNodePtr pNode) const
-		throw (com::sun::star::xml::sax::SAXException);
+		const xmlNodePtr pNode) const;
 
 	rtl::OString getNodeQName(const xmlNodePtr pNode) const;
 
@@ -140,26 +137,20 @@ public:
 
 	/* com::sun::star::xml::wrapper::XXMLDocumentWrapper */
 	virtual com::sun::star::uno::Reference<
-		com::sun::star::xml::wrapper::XXMLElementWrapper > SAL_CALL getCurrentElement(  )
-		throw (com::sun::star::uno::RuntimeException);
+		com::sun::star::xml::wrapper::XXMLElementWrapper > SAL_CALL getCurrentElement(  );
 
 	virtual void SAL_CALL setCurrentElement( const com::sun::star::uno::Reference<
-		com::sun::star::xml::wrapper::XXMLElementWrapper >& element )
-		throw (com::sun::star::uno::RuntimeException);
+		com::sun::star::xml::wrapper::XXMLElementWrapper >& element );
 
-	virtual void SAL_CALL removeCurrentElement(  )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL removeCurrentElement(  );
 
 	virtual sal_Bool SAL_CALL isCurrent( const com::sun::star::uno::Reference<
-		com::sun::star::xml::wrapper::XXMLElementWrapper >& node )
-		throw (com::sun::star::uno::RuntimeException);
+		com::sun::star::xml::wrapper::XXMLElementWrapper >& node );
 
-	virtual sal_Bool SAL_CALL isCurrentElementEmpty(  )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL isCurrentElementEmpty(  );
 
 	virtual rtl::OUString SAL_CALL getNodeName( const com::sun::star::uno::Reference<
-		com::sun::star::xml::wrapper::XXMLElementWrapper >& node )
-		throw (com::sun::star::uno::RuntimeException);
+		com::sun::star::xml::wrapper::XXMLElementWrapper >& node );
 
 	virtual void SAL_CALL clearUselessData(
 		const com::sun::star::uno::Reference<
@@ -167,12 +158,10 @@ public:
 		const com::sun::star::uno::Sequence< com::sun::star::uno::Reference<
 			com::sun::star::xml::wrapper::XXMLElementWrapper > >& reservedDescendants,
 		const com::sun::star::uno::Reference<
-			com::sun::star::xml::wrapper::XXMLElementWrapper >& stopAtNode )
-		throw (com::sun::star::uno::RuntimeException);
+			com::sun::star::xml::wrapper::XXMLElementWrapper >& stopAtNode );
 
 	virtual void SAL_CALL collapse( const com::sun::star::uno::Reference<
-		com::sun::star::xml::wrapper::XXMLElementWrapper >& node )
-		throw (com::sun::star::uno::RuntimeException);
+		com::sun::star::xml::wrapper::XXMLElementWrapper >& node );
 
 	virtual void SAL_CALL generateSAXEvents(
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& handler,
@@ -180,100 +169,74 @@ public:
 		const com::sun::star::uno::Reference<
 			com::sun::star::xml::wrapper::XXMLElementWrapper >& startNode,
 		const com::sun::star::uno::Reference<
-			com::sun::star::xml::wrapper::XXMLElementWrapper >& endNode )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+			com::sun::star::xml::wrapper::XXMLElementWrapper >& endNode );
 
 	virtual void SAL_CALL getTree(
-		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& handler )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& handler );
 
 	virtual void SAL_CALL rebuildIDLink(
-		const com::sun::star::uno::Reference< com::sun::star::xml::wrapper::XXMLElementWrapper >& node )
-		throw (com::sun::star::uno::RuntimeException);
+		const com::sun::star::uno::Reference< com::sun::star::xml::wrapper::XXMLElementWrapper >& node );
 
 	/* com::sun::star::xml::sax::XDocumentHandler */
-	virtual void SAL_CALL startDocument(  )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL startDocument(  );
 
-	virtual void SAL_CALL endDocument(  )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL endDocument(  );
 
 	virtual void SAL_CALL startElement(
 		const rtl::OUString& aName,
-		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttribs )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttribs );
 
-	virtual void SAL_CALL endElement( const rtl::OUString& aName )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL endElement( const rtl::OUString& aName );
 
-	virtual void SAL_CALL characters( const rtl::OUString& aChars )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL characters( const rtl::OUString& aChars );
 
-	virtual void SAL_CALL ignorableWhitespace( const rtl::OUString& aWhitespaces )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL ignorableWhitespace( const rtl::OUString& aWhitespaces );
 
-	virtual void SAL_CALL processingInstruction( const rtl::OUString& aTarget, const rtl::OUString& aData )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL processingInstruction( const rtl::OUString& aTarget, const rtl::OUString& aData );
 
-	virtual void SAL_CALL setDocumentLocator( const com::sun::star::uno::Reference< com::sun::star::xml::sax::XLocator >& xLocator )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setDocumentLocator( const com::sun::star::uno::Reference< com::sun::star::xml::sax::XLocator >& xLocator );
 
 	/* com::sun::star::xml::csax::XCompressedDocumentHandler */
-	virtual void SAL_CALL _startDocument(  )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL _startDocument(  );
 
-	virtual void SAL_CALL _endDocument(  )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL _endDocument(  );
 
 	virtual void SAL_CALL _startElement(
 		const rtl::OUString& aName,
 		const com::sun::star::uno::Sequence<
-			com::sun::star::xml::csax::XMLAttribute >& aAttributes )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+			com::sun::star::xml::csax::XMLAttribute >& aAttributes );
 
-	virtual void SAL_CALL _endElement( const rtl::OUString& aName )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL _endElement( const rtl::OUString& aName );
 
-	virtual void SAL_CALL _characters( const rtl::OUString& aChars )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL _characters( const rtl::OUString& aChars );
 
-	virtual void SAL_CALL _ignorableWhitespace( const rtl::OUString& aWhitespaces )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL _ignorableWhitespace( const rtl::OUString& aWhitespaces );
 
-	virtual void SAL_CALL _processingInstruction( const rtl::OUString& aTarget, const rtl::OUString& aData )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL _processingInstruction( const rtl::OUString& aTarget, const rtl::OUString& aData );
 
 	virtual void SAL_CALL _setDocumentLocator(
 		sal_Int32 columnNumber,
 		sal_Int32 lineNumber,
 		const rtl::OUString& publicId,
-		const rtl::OUString& systemId )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException);
+		const rtl::OUString& systemId );
 
 	/* com::sun::star::lang::XServiceInfo */
-	virtual rtl::OUString SAL_CALL getImplementationName(  )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual rtl::OUString SAL_CALL getImplementationName(  );
 
-	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName );
 
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 };
 
-rtl::OUString XMLDocumentWrapper_XmlSecImpl_getImplementationName()
-	throw ( com::sun::star::uno::RuntimeException );
+rtl::OUString XMLDocumentWrapper_XmlSecImpl_getImplementationName();
 
-sal_Bool SAL_CALL XMLDocumentWrapper_XmlSecImpl_supportsService( const rtl::OUString& ServiceName )
-	throw ( com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL XMLDocumentWrapper_XmlSecImpl_supportsService( const rtl::OUString& ServiceName );
 
 com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-	XMLDocumentWrapper_XmlSecImpl_getSupportedServiceNames(  )
-	throw ( com::sun::star::uno::RuntimeException );
+	XMLDocumentWrapper_XmlSecImpl_getSupportedServiceNames(  );
 
 com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
 SAL_CALL XMLDocumentWrapper_XmlSecImpl_createInstance(
-	const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > & rSMgr)
-	throw ( com::sun::star::uno::Exception );
+	const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 
 #endif

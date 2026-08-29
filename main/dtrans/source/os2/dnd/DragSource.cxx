@@ -66,14 +66,15 @@ DragSource::~DragSource()
 // aArguments contains a machine id
 //
 void SAL_CALL DragSource::initialize( const Sequence< Any >& aArguments )
-throw(Exception, RuntimeException)
 {
     if (aArguments.getLength() < 2) {
         throw Exception(OUString(RTL_CONSTASCII_USTRINGPARAM("DragSource::initialize: Not enough parameter.")),
                         static_cast<OWeakObject*>(this));
     }
 
-    m_hWnd = *(HWND*)aArguments[1].getValue();
+    sal_uInt64 nWindowHandle = 0;
+    aArguments[1] >>= nWindowHandle;
+    m_hWnd = (HWND)(sal_uIntPtr) nWindowHandle;
     debug_printf("DragSource::initialize hwnd %x", m_hWnd);
     // init done in DropTarget, window is already subclassed
     SetWindowDragSourcePtr( m_hWnd, this);
@@ -87,13 +88,11 @@ void SAL_CALL DragSource::disposing()
 
 // XDragSource
 sal_Bool SAL_CALL DragSource::isDragImageSupported(  )
-throw(RuntimeException)
 {
     return 0;
 }
 
 sal_Int32 SAL_CALL DragSource::getDefaultCursor( sal_Int8 /*dragAction*/ )
-throw( IllegalArgumentException, RuntimeException)
 {
     return 0;
 }
@@ -107,7 +106,7 @@ void SAL_CALL DragSource::startDrag(
     sal_Int32 /* cursor */,
     sal_Int32 /* image */,
     const Reference<XTransferable >& trans,
-    const Reference<XDragSourceListener >& listener ) throw( RuntimeException)
+    const Reference<XDragSourceListener >& listener )
 {
     debug_printf("DragSource::startDrag hwnd %x, sourceActions %d",
                  m_hWnd, sourceActions);
@@ -176,23 +175,19 @@ void SAL_CALL DragSource::startDrag(
 
 // XDragSourceContext
 sal_Int32 SAL_CALL DragSource::getCurrentCursor(  )
-throw( RuntimeException)
 {
     return 0;
 }
 
 void SAL_CALL DragSource::setCursor( sal_Int32 /*cursorId*/ )
-throw( RuntimeException)
 {
 }
 
 void SAL_CALL DragSource::setImage( sal_Int32 /*imageId*/ )
-throw( RuntimeException)
 {
 }
 
 void SAL_CALL DragSource::transferablesFlavorsChanged(  )
-throw( RuntimeException)
 {
 }
 
@@ -200,19 +195,19 @@ throw( RuntimeException)
 //
 // XServiceInfo
 //
-OUString SAL_CALL DragSource::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL DragSource::getImplementationName(  )
 {
     return OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDSOURCE_IMPL_NAME));
 }
 
-sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName )
 {
     if( ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDSOURCE_SERVICE_NAME ))))
         return sal_True;
     return sal_False;
 }
 
-Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames(  )
 {
     OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDSOURCE_SERVICE_NAME))};
     return Sequence<OUString>(names, 1);

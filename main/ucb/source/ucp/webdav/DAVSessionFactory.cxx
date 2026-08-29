@@ -38,7 +38,6 @@ DAVSessionFactory::~DAVSessionFactory()
 rtl::Reference< DAVSession > DAVSessionFactory::createDAVSession(
 				const ::rtl::OUString & inUri,
 				const uno::Reference< lang::XMultiServiceFactory > & rxSMgr )
-    throw( DAVException )
 {
     m_xMSF = rxSMgr;
 

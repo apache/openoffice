@@ -127,14 +127,12 @@ FormattedString::~FormattedString()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL FormattedString::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new FormattedString( *this ));
 }
 
 // ____ XFormattedString ____
 ::rtl::OUString SAL_CALL FormattedString::getString()
-    throw (uno::RuntimeException)
 {
     // /--
     MutexGuard aGuard( GetMutex());
@@ -143,7 +141,6 @@ uno::Reference< util::XCloneable > SAL_CALL FormattedString::createClone()
 }
 
 void SAL_CALL FormattedString::setString( const ::rtl::OUString& String )
-    throw (uno::RuntimeException)
 {
     {
         MutexGuard aGuard( GetMutex());
@@ -156,7 +153,6 @@ void SAL_CALL FormattedString::setString( const ::rtl::OUString& String )
 
 // ____ XModifyBroadcaster ____
 void SAL_CALL FormattedString::addModifyListener( const uno::Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -170,7 +166,6 @@ void SAL_CALL FormattedString::addModifyListener( const uno::Reference< util::XM
 }
 
 void SAL_CALL FormattedString::removeModifyListener( const uno::Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -185,14 +180,12 @@ void SAL_CALL FormattedString::removeModifyListener( const uno::Reference< util:
 
 // ____ XModifyListener ____
 void SAL_CALL FormattedString::modified( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
     m_xModifyEventForwarder->modified( aEvent );
 }
 
 // ____ XEventListener (base of XModifyListener) ____
 void SAL_CALL FormattedString::disposing( const lang::EventObject& /* Source */ )
-    throw (uno::RuntimeException)
 {
     // nothing
 }
@@ -222,7 +215,6 @@ Sequence< OUString > FormattedString::getSupportedServiceNames_Static()
 
 // ____ OPropertySet ____
 uno::Any FormattedString::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticFormattedStringDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -240,7 +232,6 @@ uno::Any FormattedString::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL FormattedString::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticFormattedStringInfo::get();
 }

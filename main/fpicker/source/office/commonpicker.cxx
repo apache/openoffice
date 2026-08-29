@@ -97,7 +97,7 @@ namespace svt
 	//---------------------------------------------------------------------
 	// XComponent related methods
 	//---------------------------------------------------------------------
-	void OCommonPicker::checkAlive() const SAL_THROW( (DisposedException) )
+	void OCommonPicker::checkAlive() const
 	{
 		if ( GetBroadcastHelper().bInDispose || GetBroadcastHelper().bDisposed )
 			throw DisposedException();
@@ -145,7 +145,7 @@ namespace svt
 	//---------------------------------------------------------------------
 	// XEventListener
 	//---------------------------------------------------------------------
-	void SAL_CALL OCommonPicker::disposing( const EventObject& _rSource ) throw (RuntimeException)
+	void SAL_CALL OCommonPicker::disposing( const EventObject& _rSource )
 	{
 		::vos::OGuard aGuard( Application::GetSolarMutex() );
 		sal_Bool bDialogDying = _rSource.Source == m_xWindow;
@@ -185,13 +185,13 @@ namespace svt
 	}
 
 	//---------------------------------------------------------------------
-	Reference< XPropertySetInfo > SAL_CALL OCommonPicker::getPropertySetInfo(  ) throw(RuntimeException)
+	Reference< XPropertySetInfo > SAL_CALL OCommonPicker::getPropertySetInfo(  )
 	{
 		return ::cppu::OPropertySetHelper::createPropertySetInfo( getInfoHelper() );
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OCommonPicker::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw (Exception)
+	void SAL_CALL OCommonPicker::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
 	{
 		OPropertyContainer::setFastPropertyValue_NoBroadcast( _nHandle, _rValue );
 
@@ -254,7 +254,7 @@ namespace svt
 	//---------------------------------------------------------------------
 	// XControlAccess functions
 	//---------------------------------------------------------------------
-	void SAL_CALL OCommonPicker::setControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty, const Any& aValue ) throw (IllegalArgumentException, RuntimeException)
+	void SAL_CALL OCommonPicker::setControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty, const Any& aValue )
 	{
 		checkAlive();
 
@@ -267,7 +267,7 @@ namespace svt
 	}
 
 	//---------------------------------------------------------------------
-	Any SAL_CALL OCommonPicker::getControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty ) throw (IllegalArgumentException, RuntimeException)
+	Any SAL_CALL OCommonPicker::getControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty )
 	{
 		checkAlive();
 
@@ -284,7 +284,7 @@ namespace svt
 	//---------------------------------------------------------------------
 	// XControlInformation functions
 	//---------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL OCommonPicker::getSupportedControls(  ) throw (RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL OCommonPicker::getSupportedControls(  )
 	{
 		checkAlive();
 
@@ -299,7 +299,7 @@ namespace svt
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool SAL_CALL OCommonPicker::isControlSupported( const ::rtl::OUString& aControlName ) throw (RuntimeException)
+	sal_Bool SAL_CALL OCommonPicker::isControlSupported( const ::rtl::OUString& aControlName )
 	{
 		checkAlive();
 
@@ -314,7 +314,7 @@ namespace svt
 	}
 
 	//---------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL OCommonPicker::getSupportedControlProperties( const ::rtl::OUString& aControlName ) throw (IllegalArgumentException, RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL OCommonPicker::getSupportedControlProperties( const ::rtl::OUString& aControlName )
 	{
 		checkAlive();
 
@@ -329,7 +329,7 @@ namespace svt
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool SAL_CALL OCommonPicker::isControlPropertySupported( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty ) throw (IllegalArgumentException, RuntimeException)
+	sal_Bool SAL_CALL OCommonPicker::isControlPropertySupported( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty )
 	{
 		checkAlive();
 
@@ -346,14 +346,14 @@ namespace svt
 	//---------------------------------------------------------------------
 	// XExecutableDialog functions
 	//---------------------------------------------------------------------
-	void SAL_CALL OCommonPicker::setTitle( const rtl::OUString& _rTitle ) throw( RuntimeException )
+	void SAL_CALL OCommonPicker::setTitle( const rtl::OUString& _rTitle )
 	{
 		::vos::OGuard aGuard( Application::GetSolarMutex() );
 		m_aTitle = _rTitle;
 	}
 
 	//---------------------------------------------------------------------
-	sal_Int16 OCommonPicker::execute() throw (RuntimeException)
+	sal_Int16 OCommonPicker::execute()
 	{
 		::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -375,7 +375,7 @@ namespace svt
 	//---------------------------------------------------------------------
 	// XCancellable functions
 	//---------------------------------------------------------------------
-	void SAL_CALL OCommonPicker::cancel(  ) throw (RuntimeException)
+	void SAL_CALL OCommonPicker::cancel(  )
 	{
 		{
 			::osl::MutexGuard aGuard( m_aMutex );
@@ -422,7 +422,6 @@ namespace svt
 	// XInitialization functions
 	//------------------------------------------------------------------------------------
 	void SAL_CALL OCommonPicker::initialize( const Sequence< Any >& _rArguments )
-		throw ( Exception, RuntimeException )
 	{
 		checkAlive();
 
@@ -482,7 +481,7 @@ namespace svt
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool OCommonPicker::implHandleInitializationArgument( const ::rtl::OUString& _rName, const Any& _rValue ) SAL_THROW( ( Exception, RuntimeException ) )
+	sal_Bool OCommonPicker::implHandleInitializationArgument( const ::rtl::OUString& _rName, const Any& _rValue )
 	{
 		sal_Bool bKnown = sal_True;
 		if ( _rName.equalsAscii( "ParentWindow" ) )

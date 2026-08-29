@@ -90,11 +90,9 @@ namespace connectivity
 			// OPropertySetHelper
 			::cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
 			sal_Bool SAL_CALL convertFastPropertyValue(Any & rConvertedValue, Any & rOldValue,
-															   sal_Int32 nHandle, const Any& rValue)
-												throw (::com::sun::star::lang::IllegalArgumentException);
+															   sal_Int32 nHandle, const Any& rValue);
 
-			void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue)
-												throw(::com::sun::star::uno::Exception);
+			void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue);
 
 			void SAL_CALL getFastPropertyValue(Any& rValue, sal_Int32 nHandle) const;
 			virtual ~OCommonStatement();
@@ -115,48 +113,40 @@ namespace connectivity
 			void SAL_CALL acquire() 			throw();
 
 			// XInterface
-			Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & rType)
-												throw(RuntimeException);
+			Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & rType);
 
 			//XTypeProvider
-			::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
-												throw(RuntimeException);
+			::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
 
 			// XPropertySet
-			::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo()
-												throw(RuntimeException);
+			::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
 
 			// XStatement
-			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery(const OUString& sql)
-												throw(SQLException, RuntimeException);
+			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery(const OUString& sql);
 
-			sal_Int32 SAL_CALL executeUpdate(const OUString& sql)
-												throw(SQLException, RuntimeException);
+			sal_Int32 SAL_CALL executeUpdate(const OUString& sql);
 
-			sal_Bool SAL_CALL execute( const OUString& sql )
-												throw(SQLException, RuntimeException);
+			sal_Bool SAL_CALL execute( const OUString& sql );
 
-			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection()
-												throw(SQLException, RuntimeException);
+			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection();
 
 			// XWarningsSupplier
-			Any SAL_CALL getWarnings() 		throw(SQLException, RuntimeException);
+			Any SAL_CALL getWarnings();
 
-			void SAL_CALL clearWarnings() 		throw(SQLException, RuntimeException);
+			void SAL_CALL clearWarnings();
 
 			// XCancellable
-			void SAL_CALL cancel() 				throw(RuntimeException);
+			void SAL_CALL cancel();
 
 			// XCloseable
-			void SAL_CALL close() 				throw(SQLException, RuntimeException);
+			void SAL_CALL close();
 
 			// XMultipleResults
-			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getResultSet()
-												throw(SQLException, RuntimeException);
+			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getResultSet();
 
-			sal_Int32 SAL_CALL getUpdateCount() throw(SQLException, RuntimeException);
+			sal_Int32 SAL_CALL getUpdateCount();
 
-			sal_Bool SAL_CALL getMoreResults()	throw(SQLException, RuntimeException);
+			sal_Bool SAL_CALL getMoreResults();
 
 			// other methods
 			OConnection* getOwnConnection() const { return m_pConnection;}
@@ -179,20 +169,17 @@ namespace connectivity
 			OStatement(OConnection* _pConnection, sql::Statement *_cppStatement) : OCommonStatement(_pConnection, _cppStatement) {}
 			DECLARE_SERVICE_INFO();
 
-			Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType )
-												throw(RuntimeException);
+			Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 
 			void SAL_CALL acquire() 			throw();
 			void SAL_CALL release() 			throw();
 
 			// XBatchExecution
-			void SAL_CALL addBatch(const OUString& sql)
-												throw(SQLException, RuntimeException);
+			void SAL_CALL addBatch(const OUString& sql);
 
-			void SAL_CALL clearBatch()			throw(SQLException, RuntimeException);
+			void SAL_CALL clearBatch();
 
-			::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch()
-												throw(SQLException, RuntimeException);
+			::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch();
 
 		};
 	}

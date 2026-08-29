@@ -84,7 +84,7 @@ ScAddInResult::~ScAddInResult()
 
 // XVolatileResult
 
-void SAL_CALL ScAddInResult::addResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL ScAddInResult::addResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener )
 {
 	uno::Reference<sheet::XResultListener> *pObj = new uno::Reference<sheet::XResultListener>( aListener );
 	aListeners.Insert( pObj, aListeners.Count() );
@@ -97,7 +97,7 @@ void SAL_CALL ScAddInResult::addResultListener( const ::com::sun::star::uno::Ref
 	}
 }
 
-void SAL_CALL ScAddInResult::removeResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL ScAddInResult::removeResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener )
 {
 	acquire();
 

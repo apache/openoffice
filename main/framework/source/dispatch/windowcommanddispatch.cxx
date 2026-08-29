@@ -82,7 +82,6 @@ WindowCommandDispatch::~WindowCommandDispatch()
 
 //-----------------------------------------------
 void SAL_CALL WindowCommandDispatch::disposing(const css::lang::EventObject& /*aSource*/)
-    throw (css::uno::RuntimeException)
 {
     // We hold our window weak ... so there is no need to clear it's reference here.
     // The window and we will die by ref count automatically.

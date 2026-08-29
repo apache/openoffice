@@ -150,7 +150,7 @@ HyperLinkContext::~HyperLinkContext()
 }
 
 Reference< XFastContextHandler > HyperLinkContext::createFastChildContext(
-        ::sal_Int32 aElement, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+        ::sal_Int32 aElement, const Reference< XFastAttributeList >& xAttribs )
 {
     Reference< XFastContextHandler > xRet;
     switch( aElement )

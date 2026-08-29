@@ -203,7 +203,6 @@ void FilterCache::load(EFillState eRequired,
 	sal_Bool
 #endif
 )
-    throw(css::uno::Exception)
 {
     // SAFE -> ----------------------------------
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -283,7 +282,6 @@ void FilterCache::load(EFillState eRequired,
 	28.10.2003 09:50
 -----------------------------------------------*/
 sal_Bool FilterCache::isFillState(FilterCache::EFillState eState) const
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -297,7 +295,6 @@ sal_Bool FilterCache::isFillState(FilterCache::EFillState eState) const
 OUStringList FilterCache::getMatchingItemsByProps(      EItemType  eType  ,
                                                   const CacheItem& lIProps,
                                                   const CacheItem& lEProps) const
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -334,7 +331,6 @@ OUStringList FilterCache::getMatchingItemsByProps(      EItemType  eType  ,
 	02.07.2003 09:32
 -----------------------------------------------*/
 sal_Bool FilterCache::hasItems(EItemType eType) const
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -352,7 +348,6 @@ sal_Bool FilterCache::hasItems(EItemType eType) const
 	02.07.2003 11:48
 -----------------------------------------------*/
 OUStringList FilterCache::getItemNames(EItemType eType) const
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -378,7 +373,6 @@ OUStringList FilterCache::getItemNames(EItemType eType) const
 -----------------------------------------------*/
 sal_Bool FilterCache::hasItem(      EItemType        eType,
                               const ::rtl::OUString& sItem)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -413,7 +407,6 @@ sal_Bool FilterCache::hasItem(      EItemType        eType,
 -----------------------------------------------*/
 CacheItem FilterCache::getItem(      EItemType        eType,
                                const ::rtl::OUString& sItem)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -470,7 +463,6 @@ CacheItem FilterCache::getItem(      EItemType        eType,
 -----------------------------------------------*/
 void FilterCache::removeItem(      EItemType        eType,
                              const ::rtl::OUString& sItem)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -494,7 +486,6 @@ void FilterCache::removeItem(      EItemType        eType,
 void FilterCache::setItem(      EItemType        eType ,
                           const ::rtl::OUString& sItem ,
                           const CacheItem&       aValue)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -522,7 +513,6 @@ void FilterCache::setItem(      EItemType        eType ,
 //-----------------------------------------------
 void FilterCache::refreshItem(      EItemType        eType,
                               const ::rtl::OUString& sItem)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -535,7 +525,6 @@ void FilterCache::refreshItem(      EItemType        eType,
 void FilterCache::addStatePropsToItem(      EItemType        eType,
                                       const ::rtl::OUString& sItem,
                                             CacheItem&       rItem)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -631,7 +620,6 @@ void FilterCache::addStatePropsToItem(      EItemType        eType,
 	05.03.2004 10:36
 -----------------------------------------------*/
 void FilterCache::removeStatePropsFromItem(CacheItem& rItem)
-    throw(css::uno::Exception)
 {
 	CacheItem::iterator pIt;
 	pIt = rItem.find(PROPNAME_FINALIZED);
@@ -646,7 +634,6 @@ void FilterCache::removeStatePropsFromItem(CacheItem& rItem)
 	02.07.2003 09:17
 -----------------------------------------------*/
 void FilterCache::flush()
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -688,7 +675,6 @@ void FilterCache::impl_flushByList(const css::uno::Reference< css::container::XN
                                          EItemType                                           eType ,
                                    const CacheItemList&                                      rCache,
                                    const OUStringList&                                       lItems)
-    throw(css::uno::Exception)
 {
     css::uno::Reference< css::container::XNameContainer >   xAddRemoveSet = css::uno::Reference< css::container::XNameContainer >  (xSet, css::uno::UNO_QUERY);
     css::uno::Reference< css::container::XNameReplace >     xReplaceeSet  = css::uno::Reference< css::container::XNameReplace >    (xSet, css::uno::UNO_QUERY);
@@ -749,7 +735,6 @@ void FilterCache::impl_flushByList(const css::uno::Reference< css::container::XN
 -----------------------------------------------*/
 void FilterCache::detectFlatForURL(const css::util::URL& aURL      ,
                                          FlatDetection&  rFlatTypes) const
-    throw(css::uno::Exception)
 {
     // extract extension from URL, so it can be used directly as key into our hash map!
     // Note further: It must be converted to lower case, because the optimize hash
@@ -816,7 +801,6 @@ void FilterCache::detectFlatForURL(const css::util::URL& aURL      ,
 	03.11.2003 08:38
 -----------------------------------------------*/
 CacheItemList& FilterCache::impl_getItemList(EItemType eType) const
-    throw(css::uno::Exception)
 {
     // SAFE -> ----------------------------------
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -840,7 +824,6 @@ CacheItemList& FilterCache::impl_getItemList(EItemType eType) const
 	21.10.2003 13:20
 -----------------------------------------------*/
 css::uno::Reference< css::uno::XInterface > FilterCache::impl_openConfig(EConfigProvider eProvider)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -1035,7 +1018,6 @@ css::uno::Reference< css::uno::XInterface > FilterCache::impl_createConfigAccess
 	24.10.2003 10:03
 -----------------------------------------------*/
 void FilterCache::impl_validateAndOptimize()
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -1345,7 +1327,6 @@ void FilterCache::impl_validateAndOptimize()
 -----------------------------------------------*/
 void FilterCache::impl_addItem2FlushList(      EItemType        eType,
                                          const ::rtl::OUString& sItem)
-    throw(css::uno::Exception)
 {
     OUStringList* pList = 0;
     switch(eType)
@@ -1384,7 +1365,6 @@ void FilterCache::impl_addItem2FlushList(      EItemType        eType,
 FilterCache::EItemFlushState FilterCache::impl_specifyFlushOperation(const css::uno::Reference< css::container::XNameAccess >& xSet ,
                                                                      const CacheItemList&                                      rList,
                                                                      const ::rtl::OUString&                                    sItem)
-    throw(css::uno::Exception)
 {
     sal_Bool bExistsInConfigLayer = xSet->hasByName(sItem);
     sal_Bool bExistsInMemory      = (rList.find(sItem) != rList.end());
@@ -1413,7 +1393,6 @@ FilterCache::EItemFlushState FilterCache::impl_specifyFlushOperation(const css::
 void FilterCache::impl_resolveItem4TypeRegistration(      CacheItemList*   pList,
                                                     const ::rtl::OUString& sItem,
                                                     const ::rtl::OUString& sType)
-    throw(css::uno::Exception)
 {
     CacheItem& rItem = (*pList)[sItem];
     // In case it's a new created entry (automatically done by the hash_map index operator!)
@@ -1433,7 +1412,6 @@ void FilterCache::impl_resolveItem4TypeRegistration(      CacheItemList*   pList
 	28.10.2003 09:18
 -----------------------------------------------*/
 void FilterCache::impl_load(EFillState eRequiredState)
-    throw(css::uno::Exception)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -1543,7 +1521,6 @@ void FilterCache::impl_loadSet(const css::uno::Reference< css::container::XNameA
                                      EItemType                                           eType  ,
                                      EReadOption                                         eOption,
                                      CacheItemList*                                      pCache )
-    throw(css::uno::Exception)
 {
     // get access to the right configuration set
     ::rtl::OUString sSetName;
@@ -1662,7 +1639,6 @@ void FilterCache::impl_loadSet(const css::uno::Reference< css::container::XNameA
 -----------------------------------------------*/
 void FilterCache::impl_readPatchUINames(const css::uno::Reference< css::container::XNameAccess >& xNode,
                                               CacheItem&                                          rItem)
-    throw(css::uno::Exception)
 {
     static ::rtl::OUString PRODUCTNAME_VAR      = ::rtl::OUString::createFromAscii("%productname%");
     static ::rtl::OUString FORMATNAME_VAR       = ::rtl::OUString::createFromAscii("%oooxmlformatname%"  );
@@ -1755,7 +1731,6 @@ void FilterCache::impl_readPatchUINames(const css::uno::Reference< css::containe
 -----------------------------------------------*/
 void FilterCache::impl_savePatchUINames(const css::uno::Reference< css::container::XNameReplace >& xNode,
                                         const CacheItem&                                           rItem)
-    throw(css::uno::Exception)
 {
     css::uno::Reference< css::container::XNameContainer > xAdd  (xNode, css::uno::UNO_QUERY);
     css::uno::Reference< css::container::XNameAccess >    xCheck(xNode, css::uno::UNO_QUERY);
@@ -1785,7 +1760,6 @@ CacheItem FilterCache::impl_loadItem(const css::uno::Reference< css::container::
                                            EItemType                                           eType  ,
                                      const ::rtl::OUString&                                    sItem  ,
                                            EReadOption                                         eOption)
-    throw(css::uno::Exception)
 {
     // try to get an API object, which points directly to the
     // requested item. If it fail an exception should occur and
@@ -1909,7 +1883,6 @@ CacheItem FilterCache::impl_loadItem(const css::uno::Reference< css::container::
 -----------------------------------------------*/
 CacheItemList::iterator FilterCache::impl_loadItemOnDemand(      EItemType        eType,
                                                            const ::rtl::OUString& sItem)
-    throw(css::uno::Exception)
 {
     CacheItemList*                              pList   = 0;
     css::uno::Reference< css::uno::XInterface > xConfig    ;
@@ -1992,7 +1965,6 @@ CacheItemList::iterator FilterCache::impl_loadItemOnDemand(      EItemType      
 void FilterCache::impl_saveItem(const css::uno::Reference< css::container::XNameReplace >& xItem,
                                       EItemType                                            eType,
                                 const CacheItem&                                           aItem)
-    throw(css::uno::Exception)
 {
     CacheItem::const_iterator pIt;
     switch(eType)
@@ -2341,7 +2313,6 @@ void FilterCache::impl_interpretDataVal4Filter(const ::rtl::OUString& sValue,
          That would be usefully to guarantee a consistent cache.
 -----------------------------------------------*/
 void FilterCache::impl_readOldFormat()
-    throw(css::uno::Exception)
 {
     static ::rtl::OUString TYPES_SET  = ::rtl::OUString::createFromAscii("Types"  );
     static ::rtl::OUString FILTER_SET = ::rtl::OUString::createFromAscii("Filters");
@@ -2392,7 +2363,6 @@ void FilterCache::impl_readOldFormat()
 CacheItem FilterCache::impl_readOldItem(const css::uno::Reference< css::container::XNameAccess >& xSet ,
                                               EItemType                                           eType,
                                         const ::rtl::OUString&                                    sItem)
-    throw(css::uno::Exception)
 {
     css::uno::Reference< css::container::XNameAccess > xItem;
     xSet->getByName(sItem) >>= xItem;

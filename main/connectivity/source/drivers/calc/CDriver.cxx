@@ -42,12 +42,12 @@ using namespace ::com::sun::star::lang;
 //------------------------------------------------------------------------------
 // static ServiceInfo
 
-rtl::OUString ODriver::getImplementationName_Static(  ) throw(RuntimeException)
+rtl::OUString ODriver::getImplementationName_Static(  )
 {
 	return rtl::OUString::createFromAscii("com.sun.star.comp.sdbc.calc.ODriver");
 }
 
-::rtl::OUString SAL_CALL ODriver::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL ODriver::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
@@ -58,13 +58,13 @@ rtl::OUString ODriver::getImplementationName_Static(  ) throw(RuntimeException)
 
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 	connectivity::calc::ODriver_CreateInstance(const ::com::sun::star::uno::Reference<
-		::com::sun::star::lang::XMultiServiceFactory >& _rxFactory) throw( ::com::sun::star::uno::Exception )
+		::com::sun::star::lang::XMultiServiceFactory >& _rxFactory)
 {
 	return *(new ODriver(_rxFactory));
 }
 
 Reference< XConnection > SAL_CALL ODriver::connect( const ::rtl::OUString& url,
-	const Sequence< PropertyValue >& info ) throw(SQLException, RuntimeException)
+	const Sequence< PropertyValue >& info )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (ODriver_BASE::rBHelper.bDisposed)
@@ -82,12 +82,11 @@ Reference< XConnection > SAL_CALL ODriver::connect( const ::rtl::OUString& url,
 }
 
 sal_Bool SAL_CALL ODriver::acceptsURL( const ::rtl::OUString& url )
-                throw(SQLException, RuntimeException)
 {
 	return url.compareTo(::rtl::OUString::createFromAscii("sdbc:calc:"),10) == 0;
 }
 
-Sequence< DriverPropertyInfo > SAL_CALL ODriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ ) throw(SQLException, RuntimeException)
+Sequence< DriverPropertyInfo > SAL_CALL ODriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/ )
 {
 	if ( !acceptsURL(url) )
     {

@@ -111,112 +111,84 @@ public:
 	//----- XAccessible -------------------------------------------------------
 
 	virtual cssu::Reference<cssa::XAccessibleContext> SAL_CALL
-		getAccessibleContext (void)
-		throw (cssu::RuntimeException);
+		getAccessibleContext (void);
 
 
 	//----- XAccessibleContext ------------------------------------------------
 
-	virtual sal_Int32 SAL_CALL getAccessibleChildCount (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getAccessibleChildCount (void);
 
 	virtual cssu::Reference< cssa::XAccessible> SAL_CALL
-		getAccessibleChild (sal_Int32 nIndex)
-		throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+		getAccessibleChild (sal_Int32 nIndex);
 
-	virtual cssu::Reference< cssa::XAccessible> SAL_CALL getAccessibleParent (void)
-		throw (cssu::RuntimeException);
+	virtual cssu::Reference< cssa::XAccessible> SAL_CALL getAccessibleParent (void);
 
-	virtual	sal_Int32 SAL_CALL getAccessibleIndexInParent (void)
-		throw (cssu::RuntimeException);
+	virtual	sal_Int32 SAL_CALL getAccessibleIndexInParent (void);
 
-	virtual sal_Int16 SAL_CALL getAccessibleRole (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int16 SAL_CALL getAccessibleRole (void);
 
-	virtual ::rtl::OUString SAL_CALL getAccessibleDescription (void)
-		throw (cssu::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getAccessibleDescription (void);
 
-	virtual ::rtl::OUString SAL_CALL getAccessibleName (void)
-		throw (cssu::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getAccessibleName (void);
 
 	virtual cssu::Reference<cssa::XAccessibleRelationSet> SAL_CALL
-		getAccessibleRelationSet (void)
-		throw (cssu::RuntimeException);
+		getAccessibleRelationSet (void);
 
 	virtual cssu::Reference<cssa::XAccessibleStateSet> SAL_CALL
-		getAccessibleStateSet (void)
-		throw (cssu::RuntimeException);
+		getAccessibleStateSet (void);
 
-	virtual css::lang::Locale SAL_CALL getLocale (void)
-		throw (cssu::RuntimeException,
-			cssa::IllegalAccessibleComponentStateException);
+	virtual css::lang::Locale SAL_CALL getLocale (void);
 
 
 	//----- XAccessibleComponent ----------------------------------------------
 
 	virtual sal_Bool SAL_CALL containsPoint (
-		const css::awt::Point& aPoint)
-		throw (cssu::RuntimeException);
+		const css::awt::Point& aPoint);
 
 	virtual cssu::Reference<cssa::XAccessible> SAL_CALL
 		getAccessibleAtPoint (
-			const css::awt::Point& aPoint)
-		throw (cssu::RuntimeException);
+			const css::awt::Point& aPoint);
 
-	virtual css::awt::Rectangle SAL_CALL getBounds (void)
-		throw (cssu::RuntimeException);
+	virtual css::awt::Rectangle SAL_CALL getBounds (void);
 
-	virtual css::awt::Point SAL_CALL getLocation (void)
-		throw (cssu::RuntimeException);
+	virtual css::awt::Point SAL_CALL getLocation (void);
 
-	virtual css::awt::Point SAL_CALL getLocationOnScreen (void)
-		throw (cssu::RuntimeException);
+	virtual css::awt::Point SAL_CALL getLocationOnScreen (void);
 
-	virtual css::awt::Size SAL_CALL getSize (void)
-		throw (cssu::RuntimeException);
+	virtual css::awt::Size SAL_CALL getSize (void);
 
-	virtual void SAL_CALL grabFocus (void)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL grabFocus (void);
 
-	virtual sal_Int32 SAL_CALL getForeground (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getForeground (void);
 
-	virtual sal_Int32 SAL_CALL getBackground (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getBackground (void);
 
 
 	//----- XAccessibleEventBroadcaster ---------------------------------------
 
 	virtual void SAL_CALL addEventListener (
-			const cssu::Reference<cssa::XAccessibleEventListener>& rxListener)
-		throw (cssu::RuntimeException);
+			const cssu::Reference<cssa::XAccessibleEventListener>& rxListener);
 
 	virtual void SAL_CALL removeEventListener (
-			const cssu::Reference<cssa::XAccessibleEventListener>& rxListener)
-		throw (cssu::RuntimeException);
+			const cssu::Reference<cssa::XAccessibleEventListener>& rxListener);
 
 	using PresenterAccessibleObjectInterfaceBase::addEventListener;
 	using PresenterAccessibleObjectInterfaceBase::removeEventListener;
 
 	//----- XWindowListener ---------------------------------------------------
 
-	virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent);
 
-	virtual void SAL_CALL windowMoved (const css::awt::WindowEvent& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL windowMoved (const css::awt::WindowEvent& rEvent);
 
-	virtual void SAL_CALL windowShown (const css::lang::EventObject& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL windowShown (const css::lang::EventObject& rEvent);
 
-	virtual void SAL_CALL windowHidden (const css::lang::EventObject& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL windowHidden (const css::lang::EventObject& rEvent);
 
 
 	//----- XEventListener ----------------------------------------------------
 
-	virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
-		throw (cssu::RuntimeException);
+	virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent);
 
 
 protected:
@@ -241,8 +213,7 @@ protected:
 
 	sal_Bool IsDisposed (void) const;
 
-	void ThrowIfDisposed (void) const
-		throw (css::lang::DisposedException);
+	void ThrowIfDisposed (void) const;
 
 	enum ExceptionType { ET_Runtime, ET_Disposed, ET_IndexOutOfBounds };
 	void ThrowException (const sal_Char* pMessage, const ExceptionType eExceptionType) const;
@@ -271,17 +242,13 @@ public:
 
 	//----- XAccessibleStateSet -----------------------------------------------
 
-	virtual sal_Bool SAL_CALL isEmpty (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Bool SAL_CALL isEmpty (void);
 
-	virtual sal_Bool SAL_CALL contains (sal_Int16 nState)
-		throw (cssu::RuntimeException);
+	virtual sal_Bool SAL_CALL contains (sal_Int16 nState);
 
-	virtual sal_Bool SAL_CALL containsAll (const cssu::Sequence<sal_Int16>& rStateSet)
-		throw (cssu::RuntimeException);
+	virtual sal_Bool SAL_CALL containsAll (const cssu::Sequence<sal_Int16>& rStateSet);
 
-	virtual cssu::Sequence<sal_Int16> SAL_CALL getStates (void)
-		throw (cssu::RuntimeException);
+	virtual cssu::Sequence<sal_Int16> SAL_CALL getStates (void);
 
 private:
 	const sal_Int32 mnStateSet;
@@ -313,17 +280,13 @@ public:
 
 	//----- XAccessibleRelationSet --------------------------------------------
 
-	virtual sal_Int32 SAL_CALL getRelationCount (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getRelationCount (void);
 
-	virtual AccessibleRelation SAL_CALL getRelation (sal_Int32 nIndex)
-		throw (cssu::RuntimeException, css::lang::IndexOutOfBoundsException);
+	virtual AccessibleRelation SAL_CALL getRelation (sal_Int32 nIndex);
 
-	virtual sal_Bool SAL_CALL containsRelation (sal_Int16 nRelationType)
-		throw (cssu::RuntimeException);
+	virtual sal_Bool SAL_CALL containsRelation (sal_Int16 nRelationType);
 
-	virtual AccessibleRelation SAL_CALL getRelationByType (sal_Int16 nRelationType)
-		throw (cssu::RuntimeException);
+	virtual AccessibleRelation SAL_CALL getRelationByType (sal_Int16 nRelationType);
 
 private:
 	::std::vector<AccessibleRelation> maRelations;
@@ -361,79 +324,55 @@ public:
 	//----- XAccessibleContext ------------------------------------------------
 
 	virtual cssu::Reference<cssa::XAccessibleRelationSet> SAL_CALL
-		getAccessibleRelationSet (void)
-		throw (cssu::RuntimeException);
+		getAccessibleRelationSet (void);
 
 
 	//----- XAccessibleText ---------------------------------------------------
 
-	virtual sal_Int32 SAL_CALL getCaretPosition (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getCaretPosition (void);
 
-	virtual sal_Bool SAL_CALL setCaretPosition (sal_Int32 nIndex)
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+	virtual sal_Bool SAL_CALL setCaretPosition (sal_Int32 nIndex);
 
-	virtual sal_Unicode SAL_CALL getCharacter (sal_Int32 nIndex)
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+	virtual sal_Unicode SAL_CALL getCharacter (sal_Int32 nIndex);
 
 	virtual cssu::Sequence<css::beans::PropertyValue> SAL_CALL
 		getCharacterAttributes (
 			::sal_Int32 nIndex,
-			const cssu::Sequence<rtl::OUString>& rRequestedAttributes)
-		throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+			const cssu::Sequence<rtl::OUString>& rRequestedAttributes);
 
-	virtual css::awt::Rectangle SAL_CALL getCharacterBounds (sal_Int32 nIndex)
-		throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+	virtual css::awt::Rectangle SAL_CALL getCharacterBounds (sal_Int32 nIndex);
 
-	virtual sal_Int32 SAL_CALL getCharacterCount (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getCharacterCount (void);
 
-	virtual sal_Int32 SAL_CALL getIndexAtPoint (const css::awt::Point& rPoint)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getIndexAtPoint (const css::awt::Point& rPoint);
 
-	virtual ::rtl::OUString SAL_CALL getSelectedText (void)
-		throw (cssu::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getSelectedText (void);
 
-	virtual sal_Int32 SAL_CALL getSelectionStart (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getSelectionStart (void);
 
-	virtual sal_Int32 SAL_CALL getSelectionEnd (void)
-		throw (cssu::RuntimeException);
+	virtual sal_Int32 SAL_CALL getSelectionEnd (void);
 
-	virtual sal_Bool SAL_CALL setSelection (sal_Int32 nStartIndex, sal_Int32 nEndIndex)
-		throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+	virtual sal_Bool SAL_CALL setSelection (sal_Int32 nStartIndex, sal_Int32 nEndIndex);
 
-	virtual ::rtl::OUString SAL_CALL getText (void)
-		throw (cssu::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getText (void);
 
 	virtual ::rtl::OUString SAL_CALL getTextRange (
 		sal_Int32 nStartIndex,
-		sal_Int32 nEndIndex)
-		throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+		sal_Int32 nEndIndex);
 
 	virtual cssa::TextSegment SAL_CALL getTextAtIndex (
 		sal_Int32 nIndex,
-		sal_Int16 nTextType)
-		throw (css::lang::IndexOutOfBoundsException,
-			css::lang::IllegalArgumentException,
-			cssu::RuntimeException);
+		sal_Int16 nTextType);
 
 	virtual cssa::TextSegment SAL_CALL getTextBeforeIndex (
 		sal_Int32 nIndex,
-		sal_Int16 nTextType)
-		throw (css::lang::IndexOutOfBoundsException,
-			css::lang::IllegalArgumentException,
-			cssu::RuntimeException);
+		sal_Int16 nTextType);
 
 	virtual cssa::TextSegment SAL_CALL getTextBehindIndex (
 		sal_Int32 nIndex,
-		sal_Int16 nTextType)
-		throw (css::lang::IndexOutOfBoundsException,
-			css::lang::IllegalArgumentException,
-			cssu::RuntimeException);
+		sal_Int16 nTextType);
 
-	virtual ::sal_Bool SAL_CALL copyText (sal_Int32 nStartIndex, sal_Int32 nEndIndex)
-		throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException);
+	virtual ::sal_Bool SAL_CALL copyText (sal_Int32 nStartIndex, sal_Int32 nEndIndex);
 
 
 protected:
@@ -816,7 +755,6 @@ void SAL_CALL PresenterAccessible::disposing (void)
 //----- XAccessible -----------------------------------------------------------
 
 Reference<XAccessibleContext> SAL_CALL PresenterAccessible::getAccessibleContext (void)
-	throw (cssu::RuntimeException)
 {
 	if ( ! mpAccessibleConsole.is())
 	{
@@ -844,7 +782,6 @@ Reference<XAccessibleContext> SAL_CALL PresenterAccessible::getAccessibleContext
 //----- XFocusListener ----------------------------------------------------
 
 void SAL_CALL PresenterAccessible::focusGained (const css::awt::FocusEvent& rEvent)
-		throw (cssu::RuntimeException)
 {
 	(void)rEvent;
 
@@ -860,7 +797,6 @@ void SAL_CALL PresenterAccessible::focusGained (const css::awt::FocusEvent& rEve
 
 
 void SAL_CALL PresenterAccessible::focusLost (const css::awt::FocusEvent& rEvent)
-	throw (cssu::RuntimeException)
 {
 	(void)rEvent;
 
@@ -877,7 +813,6 @@ void SAL_CALL PresenterAccessible::focusLost (const css::awt::FocusEvent& rEvent
 //----- XEventListener ----------------------------------------------------
 
 void SAL_CALL PresenterAccessible::disposing (const css::lang::EventObject& rEvent)
-	throw (cssu::RuntimeException)
 {
 	if (rEvent.Source == mxMainWindow)
 		mxMainWindow = NULL;
@@ -889,7 +824,6 @@ void SAL_CALL PresenterAccessible::disposing (const css::lang::EventObject& rEve
 //----- XInitialize -----------------------------------------------------------
 
 void SAL_CALL PresenterAccessible::initialize (const cssu::Sequence<cssu::Any>& rArguments)
-	throw (cssu::RuntimeException)
 {
 	if (rArguments.getLength() >= 1)
 	{
@@ -990,7 +924,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::disposing (void)
 
 Reference<XAccessibleContext> SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleContext (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1003,7 +936,6 @@ Reference<XAccessibleContext> SAL_CALL
 //----- XAccessibleContext ------------------------------------------------
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleObject::getAccessibleChildCount (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1017,7 +949,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleObject::getAccessibleChildCoun
 
 Reference<XAccessible> SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleChild (sal_Int32 nIndex)
-	throw (lang::IndexOutOfBoundsException, RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1032,7 +963,6 @@ Reference<XAccessible> SAL_CALL
 
 Reference<XAccessible> SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleParent (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1044,7 +974,6 @@ Reference<XAccessible> SAL_CALL
 
 sal_Int32 SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleIndexInParent (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1069,7 +998,6 @@ sal_Int32 SAL_CALL
 
 sal_Int16 SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleRole (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1081,7 +1009,6 @@ sal_Int16 SAL_CALL
 
 OUString SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleDescription (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1093,7 +1020,6 @@ OUString SAL_CALL
 
 OUString SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleName (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1105,7 +1031,6 @@ OUString SAL_CALL
 
 Reference<XAccessibleRelationSet> SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleRelationSet (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1117,7 +1042,6 @@ Reference<XAccessibleRelationSet> SAL_CALL
 
 Reference<XAccessibleStateSet> SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleStateSet (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1129,8 +1053,6 @@ Reference<XAccessibleStateSet> SAL_CALL
 
 lang::Locale SAL_CALL
 	PresenterAccessible::AccessibleObject::getLocale (void)
-	throw (RuntimeException,
-		IllegalAccessibleComponentStateException)
 {
 	ThrowIfDisposed();
 
@@ -1150,7 +1072,6 @@ lang::Locale SAL_CALL
 
 sal_Bool SAL_CALL PresenterAccessible::AccessibleObject::containsPoint (
 	const awt::Point& rPoint)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1171,7 +1092,6 @@ sal_Bool SAL_CALL PresenterAccessible::AccessibleObject::containsPoint (
 
 Reference<XAccessible> SAL_CALL
 	PresenterAccessible::AccessibleObject::getAccessibleAtPoint (const awt::Point& rPoint)
-	throw (RuntimeException)
 {
 	(void)rPoint;
 	ThrowIfDisposed();
@@ -1183,7 +1103,6 @@ Reference<XAccessible> SAL_CALL
 
 
 awt::Rectangle SAL_CALL PresenterAccessible::AccessibleObject::getBounds (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1199,7 +1118,6 @@ awt::Rectangle SAL_CALL PresenterAccessible::AccessibleObject::getBounds (void)
 
 
 awt::Point SAL_CALL PresenterAccessible::AccessibleObject::getLocation (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1212,7 +1130,6 @@ awt::Point SAL_CALL PresenterAccessible::AccessibleObject::getLocation (void)
 
 
 awt::Point SAL_CALL PresenterAccessible::AccessibleObject::getLocationOnScreen (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1228,7 +1145,6 @@ awt::Point SAL_CALL PresenterAccessible::AccessibleObject::getLocationOnScreen (
 
 
 awt::Size SAL_CALL PresenterAccessible::AccessibleObject::getSize (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1241,7 +1157,6 @@ awt::Size SAL_CALL PresenterAccessible::AccessibleObject::getSize (void)
 
 
 void SAL_CALL PresenterAccessible::AccessibleObject::grabFocus (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 	if (mxBorderWindow.is())
@@ -1254,7 +1169,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::grabFocus (void)
 
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleObject::getForeground (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1265,7 +1179,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleObject::getForeground (void)
 
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleObject::getBackground (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1279,7 +1192,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleObject::getBackground (void)
 
 void SAL_CALL PresenterAccessible::AccessibleObject::addEventListener (
 	const Reference<XAccessibleEventListener>& rxListener)
-	throw (RuntimeException)
 {
 	if (rxListener.is())
 	{
@@ -1302,7 +1214,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::addEventListener (
 
 void SAL_CALL PresenterAccessible::AccessibleObject::removeEventListener (
 	const Reference<XAccessibleEventListener>& rxListener)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 	if (rxListener.is())
@@ -1320,7 +1231,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::removeEventListener (
 
 void SAL_CALL PresenterAccessible::AccessibleObject::windowResized (
 	const css::awt::WindowEvent& rEvent)
-	throw (cssu::RuntimeException)
 {
 	(void)rEvent;
 
@@ -1332,7 +1242,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::windowResized (
 
 void SAL_CALL PresenterAccessible::AccessibleObject::windowMoved (
 	const css::awt::WindowEvent& rEvent)
-	throw (cssu::RuntimeException)
 {
 	(void)rEvent;
 
@@ -1344,7 +1253,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::windowMoved (
 
 void SAL_CALL PresenterAccessible::AccessibleObject::windowShown (
 	const css::lang::EventObject& rEvent)
-	throw (cssu::RuntimeException)
 {
 	(void)rEvent;
 	UpdateStateSet();
@@ -1355,7 +1263,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::windowShown (
 
 void SAL_CALL PresenterAccessible::AccessibleObject::windowHidden (
 	const css::lang::EventObject& rEvent)
-	throw (cssu::RuntimeException)
 {
 	(void)rEvent;
 	UpdateStateSet();
@@ -1367,7 +1274,6 @@ void SAL_CALL PresenterAccessible::AccessibleObject::windowHidden (
 //----- XEventListener --------------------------------------------------------
 
 void SAL_CALL PresenterAccessible::AccessibleObject::disposing (const css::lang::EventObject& rEvent)
-	throw (cssu::RuntimeException)
 {
 	if (rEvent.Source == mxContentWindow)
 	{
@@ -1594,7 +1500,6 @@ sal_Bool PresenterAccessible::AccessibleObject::IsDisposed (void) const
 
 
 void PresenterAccessible::AccessibleObject::ThrowIfDisposed (void) const
-	throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 		ThrowException("object has already been disposed", ET_Disposed);
@@ -1660,7 +1565,6 @@ sal_uInt32 AccessibleStateSet::GetStateMask (const sal_Int16 nState)
 //----- XAccessibleStateSet ---------------------------------------------------
 
 sal_Bool SAL_CALL AccessibleStateSet::isEmpty (void)
-	throw (cssu::RuntimeException)
 {
 	return mnStateSet==0;
 }
@@ -1669,7 +1573,6 @@ sal_Bool SAL_CALL AccessibleStateSet::isEmpty (void)
 
 
 sal_Bool SAL_CALL AccessibleStateSet::contains (sal_Int16 nState)
-	throw (cssu::RuntimeException)
 {
 	return (mnStateSet & GetStateMask(nState)) != 0;
 }
@@ -1678,7 +1581,6 @@ sal_Bool SAL_CALL AccessibleStateSet::contains (sal_Int16 nState)
 
 
 sal_Bool SAL_CALL AccessibleStateSet::containsAll (const cssu::Sequence<sal_Int16>& rStateSet)
-	throw (cssu::RuntimeException)
 {
 	for (sal_Int32 nIndex=0,nCount=rStateSet.getLength(); nIndex<nCount; ++nIndex)
 	{
@@ -1692,7 +1594,6 @@ sal_Bool SAL_CALL AccessibleStateSet::containsAll (const cssu::Sequence<sal_Int1
 
 
 cssu::Sequence<sal_Int16> SAL_CALL AccessibleStateSet::getStates (void)
-	throw (cssu::RuntimeException)
 {
 	::std::vector<sal_Int16> aStates;
 	aStates.reserve(sizeof(mnStateSet)*8);
@@ -1739,7 +1640,6 @@ void AccessibleRelationSet::AddRelation (
 //----- XAccessibleRelationSet ------------------------------------------------
 
 sal_Int32 SAL_CALL AccessibleRelationSet::getRelationCount (void)
-	throw (cssu::RuntimeException)
 {
 	return maRelations.size();
 }
@@ -1748,7 +1648,6 @@ sal_Int32 SAL_CALL AccessibleRelationSet::getRelationCount (void)
 
 
 AccessibleRelation SAL_CALL AccessibleRelationSet::getRelation (sal_Int32 nIndex)
-	throw (cssu::RuntimeException, css::lang::IndexOutOfBoundsException)
 {
 	if (nIndex<0 && sal_uInt32(nIndex)>=maRelations.size())
 		return AccessibleRelation();
@@ -1760,7 +1659,6 @@ AccessibleRelation SAL_CALL AccessibleRelationSet::getRelation (sal_Int32 nIndex
 
 
 sal_Bool SAL_CALL AccessibleRelationSet::containsRelation (sal_Int16 nRelationType)
-	throw (cssu::RuntimeException)
 {
 	for (::std::vector<AccessibleRelation>::const_iterator iRelation(maRelations.begin());
 		 iRelation!=maRelations.end();
@@ -1776,7 +1674,6 @@ sal_Bool SAL_CALL AccessibleRelationSet::containsRelation (sal_Int16 nRelationTy
 
 
 AccessibleRelation SAL_CALL AccessibleRelationSet::getRelationByType (sal_Int16 nRelationType)
-	throw (cssu::RuntimeException)
 {
 	for (::std::vector<AccessibleRelation>::const_iterator iRelation(maRelations.begin());
 		 iRelation!=maRelations.end();
@@ -1819,7 +1716,6 @@ PresenterAccessible::AccessibleParagraph::~AccessibleParagraph (void)
 
 Reference<XAccessibleRelationSet> SAL_CALL
 	PresenterAccessible::AccessibleParagraph::getAccessibleRelationSet (void)
-	throw (RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1853,7 +1749,6 @@ Reference<XAccessibleRelationSet> SAL_CALL
 //----- XAccessibleText -------------------------------------------------------
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getCaretPosition (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1868,7 +1763,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getCaretPosition (v
 
 
 sal_Bool SAL_CALL PresenterAccessible::AccessibleParagraph::setCaretPosition (sal_Int32 nIndex)
-	throw (::com::sun::star::lang::IndexOutOfBoundsException, cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1885,7 +1779,6 @@ sal_Bool SAL_CALL PresenterAccessible::AccessibleParagraph::setCaretPosition (sa
 
 
 sal_Unicode SAL_CALL PresenterAccessible::AccessibleParagraph::getCharacter (sal_Int32 nIndex)
-	throw (::com::sun::star::lang::IndexOutOfBoundsException, cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1908,7 +1801,6 @@ Sequence<css::beans::PropertyValue> SAL_CALL
 	PresenterAccessible::AccessibleParagraph::getCharacterAttributes (
 		::sal_Int32 nIndex,
 		const cssu::Sequence<rtl::OUString>& rRequestedAttributes)
-	throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1936,7 +1828,6 @@ Sequence<css::beans::PropertyValue> SAL_CALL
 
 awt::Rectangle SAL_CALL PresenterAccessible::AccessibleParagraph::getCharacterBounds (
 	sal_Int32 nIndex)
-	throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1966,7 +1857,6 @@ awt::Rectangle SAL_CALL PresenterAccessible::AccessibleParagraph::getCharacterBo
 
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getCharacterCount (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1982,7 +1872,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getCharacterCount (
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getIndexAtPoint (
 	const css::awt::Point& rPoint)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -1997,7 +1886,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getIndexAtPoint (
 
 
 ::rtl::OUString SAL_CALL PresenterAccessible::AccessibleParagraph::getSelectedText (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2008,7 +1896,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getIndexAtPoint (
 
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getSelectionStart (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2019,7 +1906,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getSelectionStart (
 
 
 sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getSelectionEnd (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2032,7 +1918,6 @@ sal_Int32 SAL_CALL PresenterAccessible::AccessibleParagraph::getSelectionEnd (vo
 sal_Bool SAL_CALL PresenterAccessible::AccessibleParagraph::setSelection (
 	sal_Int32 nStartIndex,
 	sal_Int32 nEndIndex)
-	throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException)
 {
 	(void)nEndIndex;
 	ThrowIfDisposed();
@@ -2044,7 +1929,6 @@ sal_Bool SAL_CALL PresenterAccessible::AccessibleParagraph::setSelection (
 
 
 ::rtl::OUString SAL_CALL PresenterAccessible::AccessibleParagraph::getText (void)
-	throw (cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2061,7 +1945,6 @@ sal_Bool SAL_CALL PresenterAccessible::AccessibleParagraph::setSelection (
 ::rtl::OUString SAL_CALL PresenterAccessible::AccessibleParagraph::getTextRange (
 	sal_Int32 nLocalStartIndex,
 	sal_Int32 nLocalEndIndex)
-	throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2082,9 +1965,6 @@ sal_Bool SAL_CALL PresenterAccessible::AccessibleParagraph::setSelection (
 TextSegment SAL_CALL PresenterAccessible::AccessibleParagraph::getTextAtIndex (
 	sal_Int32 nLocalCharacterIndex,
 	sal_Int16 nTextType)
-	throw (css::lang::IndexOutOfBoundsException,
-		css::lang::IllegalArgumentException,
-		cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2101,9 +1981,6 @@ TextSegment SAL_CALL PresenterAccessible::AccessibleParagraph::getTextAtIndex (
 TextSegment SAL_CALL PresenterAccessible::AccessibleParagraph::getTextBeforeIndex (
 	sal_Int32 nLocalCharacterIndex,
 	sal_Int16 nTextType)
-	throw (css::lang::IndexOutOfBoundsException,
-		   css::lang::IllegalArgumentException,
-		   cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2120,9 +1997,6 @@ TextSegment SAL_CALL PresenterAccessible::AccessibleParagraph::getTextBeforeInde
 TextSegment SAL_CALL PresenterAccessible::AccessibleParagraph::getTextBehindIndex (
 	sal_Int32 nLocalCharacterIndex,
 	sal_Int16 nTextType)
-	throw (css::lang::IndexOutOfBoundsException,
-		   css::lang::IllegalArgumentException,
-		   cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 
@@ -2139,7 +2013,6 @@ TextSegment SAL_CALL PresenterAccessible::AccessibleParagraph::getTextBehindInde
 sal_Bool SAL_CALL PresenterAccessible::AccessibleParagraph::copyText (
 	sal_Int32 nStartIndex,
 	sal_Int32 nEndIndex)
-	throw (css::lang::IndexOutOfBoundsException, cssu::RuntimeException)
 {
 	ThrowIfDisposed();
 

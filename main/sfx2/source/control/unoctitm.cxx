@@ -124,7 +124,7 @@ void SfxUnoControllerItem::UnBind()
 	ReleaseDispatch();
 }
 
-void SAL_CALL SfxUnoControllerItem::statusChanged(const ::com::sun::star::frame::FeatureStateEvent& rEvent) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxUnoControllerItem::statusChanged(const ::com::sun::star::frame::FeatureStateEvent& rEvent)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	DBG_ASSERT( pCtrlItem, "dispatch implementation didn't respect our previous removeStatusListener call!" );
@@ -182,7 +182,7 @@ void SAL_CALL SfxUnoControllerItem::statusChanged(const ::com::sun::star::frame:
 	}
 }
 
-void  SAL_CALL SfxUnoControllerItem::disposing( const ::com::sun::star::lang::EventObject& ) throw ( ::com::sun::star::uno::RuntimeException )
+void  SAL_CALL SfxUnoControllerItem::disposing( const ::com::sun::star::lang::EventObject& )
 {
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >  aRef( (::cppu::OWeakObject*)this, ::com::sun::star::uno::UNO_QUERY );
 	ReleaseDispatch();
@@ -282,14 +282,14 @@ void SfxStatusDispatcher::ReleaseAll()
 	aListeners.disposeAndClear( aObject );
 }
 
-void SAL_CALL SfxStatusDispatcher::dispatch( const ::com::sun::star::util::URL&, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxStatusDispatcher::dispatch( const ::com::sun::star::util::URL&, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& )
 {
 }
 
 void SAL_CALL SfxStatusDispatcher::dispatchWithNotification(
     const ::com::sun::star::util::URL&,
     const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >&,
-    const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& ) throw( ::com::sun::star::uno::RuntimeException )
+    const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& )
 {
 }
 
@@ -302,7 +302,7 @@ SfxStatusDispatcher::SfxStatusDispatcher()
 {
 }
 
-void SAL_CALL SfxStatusDispatcher::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxStatusDispatcher::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL)
 {
 	aListeners.addInterface( aURL.Complete, aListener );
 	if ( aURL.Complete.compareToAscii(".uno:LifeTime")==0 )
@@ -316,7 +316,7 @@ void SAL_CALL SfxStatusDispatcher::addStatusListener(const ::com::sun::star::uno
 	}
 }
 
-void SAL_CALL SfxStatusDispatcher::removeStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxStatusDispatcher::removeStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL )
 {
 	aListeners.removeInterface( aURL.Complete, aListener );
 }
@@ -327,7 +327,7 @@ SFX_IMPL_XTYPEPROVIDER_2( SfxOfficeDispatch, ::com::sun::star::frame::XNotifying
 
 //-------------------------------------------------------------------------
 // XUnoTunnel
-sal_Int64 SAL_CALL SfxOfficeDispatch::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL SfxOfficeDispatch::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
 {
     if ( aIdentifier == impl_getStaticIdentifier() )
         return sal::static_int_cast< sal_Int64 >( reinterpret_cast< sal_IntPtr >( this ));
@@ -394,7 +394,7 @@ const ::com::sun::star::uno::Sequence< sal_Int8 >& SfxOfficeDispatch::impl_getSt
 }
 
 
-void SAL_CALL SfxOfficeDispatch::dispatch( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxOfficeDispatch::dispatch( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs )
 {
     // ControllerItem is the Impl class
     if ( pControllerItem )
@@ -415,7 +415,7 @@ void SAL_CALL SfxOfficeDispatch::dispatch( const ::com::sun::star::util::URL& aU
 
 void SAL_CALL SfxOfficeDispatch::dispatchWithNotification( const ::com::sun::star::util::URL& aURL,
         const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs,
-        const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& rListener ) throw( ::com::sun::star::uno::RuntimeException )
+        const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& rListener )
 {
     // ControllerItem is the Impl class
     if ( pControllerItem )
@@ -429,7 +429,7 @@ void SAL_CALL SfxOfficeDispatch::dispatchWithNotification( const ::com::sun::sta
     }
 }
 
-void SAL_CALL SfxOfficeDispatch::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxOfficeDispatch::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL)
 {
     GetListeners().addInterface( aURL.Complete, aListener );
     if ( pControllerItem )
@@ -661,7 +661,7 @@ rtl::OUString SfxDispatchController_Impl::getSlaveCommand( const ::com::sun::sta
 
 void SAL_CALL SfxDispatchController_Impl::dispatch( const ::com::sun::star::util::URL& aURL,
         const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs,
-        const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& rListener ) throw( ::com::sun::star::uno::RuntimeException )
+        const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& rListener )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     if (
@@ -865,7 +865,7 @@ SfxDispatcher* SfxDispatchController_Impl::GetDispatcher()
     return pDispatcher;
 }
 
-void SAL_CALL SfxDispatchController_Impl::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxDispatchController_Impl::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & aListener, const ::com::sun::star::util::URL& aURL)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     if ( !pDispatch )

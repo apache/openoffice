@@ -95,7 +95,7 @@ SbPropertyValues::~SbPropertyValues()
 
 //----------------------------------------------------------------------------
 
-Reference< XPropertySetInfo > SbPropertyValues::getPropertySetInfo(void) throw( RuntimeException )
+Reference< XPropertySetInfo > SbPropertyValues::getPropertySetInfo(void)
 {
 	// create on demand?
 	if ( !_xInfo.is() )
@@ -123,11 +123,6 @@ sal_Int32 SbPropertyValues::GetIndex_Impl( const ::rtl::OUString &rPropName ) co
 void SbPropertyValues::setPropertyValue(
 					const ::rtl::OUString& aPropertyName,
 					const Any& aValue)
-                    throw (::com::sun::star::beans::UnknownPropertyException,
-                    ::com::sun::star::beans::PropertyVetoException,
-                    ::com::sun::star::lang::IllegalArgumentException,
-                    ::com::sun::star::lang::WrappedTargetException,
-                    ::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nIndex = GetIndex_Impl( aPropertyName );
 	PropertyValue *pPropVal = _aPropVals.GetObject(
@@ -139,9 +134,6 @@ void SbPropertyValues::setPropertyValue(
 
 Any SbPropertyValues::getPropertyValue(
 					const ::rtl::OUString& aPropertyName)
-		            throw(::com::sun::star::beans::UnknownPropertyException,
-    				::com::sun::star::lang::WrappedTargetException,
-	    			::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nIndex = GetIndex_Impl( aPropertyName );
 	if ( nIndex != USHRT_MAX )
@@ -192,7 +184,7 @@ void SbPropertyValues::removeVetoableChangeListener(
 
 //----------------------------------------------------------------------------
 
-Sequence< PropertyValue > SbPropertyValues::getPropertyValues(void) throw (::com::sun::star::uno::RuntimeException)
+Sequence< PropertyValue > SbPropertyValues::getPropertyValues(void)
 {
 	Sequence<PropertyValue> aRet( _aPropVals.Count());
 	for ( sal_uInt16 n = 0; n < _aPropVals.Count(); ++n )
@@ -203,11 +195,6 @@ Sequence< PropertyValue > SbPropertyValues::getPropertyValues(void) throw (::com
 //----------------------------------------------------------------------------
 
 void SbPropertyValues::setPropertyValues(const Sequence< PropertyValue >& rPropertyValues )
-                     throw (::com::sun::star::beans::UnknownPropertyException,
-                     ::com::sun::star::beans::PropertyVetoException,
-                     ::com::sun::star::lang::IllegalArgumentException,
-                     ::com::sun::star::lang::WrappedTargetException,
-                     ::com::sun::star::uno::RuntimeException)
 {
 	if ( _aPropVals.Count() )
 		throw PropertyExistException();
@@ -242,7 +229,7 @@ Sequence< Property > PropertySetInfoImpl::getProperties(void) throw()
 	return _aProps;
 }
 
-Property PropertySetInfoImpl::getPropertyByName(const ::rtl::OUString& Name) throw( RuntimeException )
+Property PropertySetInfoImpl::getPropertyByName(const ::rtl::OUString& Name)
 {
 	sal_Int32 nIndex = GetIndex_Impl( Name );
 	if( USHRT_MAX != nIndex )
@@ -250,7 +237,7 @@ Property PropertySetInfoImpl::getPropertyByName(const ::rtl::OUString& Name) thr
 	return Property();
 }
 
-sal_Bool PropertySetInfoImpl::hasPropertyByName(const ::rtl::OUString& Name) throw( RuntimeException )
+sal_Bool PropertySetInfoImpl::hasPropertyByName(const ::rtl::OUString& Name)
 {
 	sal_Int32 nIndex = GetIndex_Impl( Name );
 	return USHRT_MAX != nIndex;
@@ -287,19 +274,17 @@ SbPropertySetInfo::~SbPropertySetInfo()
 
 //-------------------------------------------------------------------------
 
-Sequence< Property > SbPropertySetInfo::getProperties(void) throw( RuntimeException )
+Sequence< Property > SbPropertySetInfo::getProperties(void)
 {
 	return aImpl.getProperties();
 }
 
 Property SbPropertySetInfo::getPropertyByName(const ::rtl::OUString& Name)
-	throw( RuntimeException )
 {
 	return aImpl.getPropertyByName( Name );
 }
 
 sal_Bool SbPropertySetInfo::hasPropertyByName(const ::rtl::OUString& Name)
-	throw( RuntimeException )
 {
 	return aImpl.hasPropertyByName( Name );
 }
@@ -321,8 +306,6 @@ SbPropertyContainer::~SbPropertyContainer()
 void SbPropertyContainer::addProperty(const ::rtl::OUString& Name,
 									  sal_Int16 Attributes,
 									  const Any& DefaultValue)
-	throw(  PropertyExistException, IllegalTypeException,
-			IllegalArgumentException, RuntimeException )
 {
     (void)Name;
     (void)Attributes;
@@ -331,7 +314,6 @@ void SbPropertyContainer::addProperty(const ::rtl::OUString& Name,
 
 //----------------------------------------------------------------------------
 void SbPropertyContainer::removeProperty(const ::rtl::OUString& Name)
-	throw( UnknownPropertyException, RuntimeException )
 {
     (void)Name;
 }
@@ -344,13 +326,11 @@ Sequence< Property > SbPropertyContainer::getProperties(void) throw ()
 }
 
 Property SbPropertyContainer::getPropertyByName(const ::rtl::OUString& Name)
-	throw( RuntimeException )
 {
 	return aImpl.getPropertyByName( Name );
 }
 
 sal_Bool SbPropertyContainer::hasPropertyByName(const ::rtl::OUString& Name)
-	throw( RuntimeException )
 {
 	return aImpl.hasPropertyByName( Name );
 }

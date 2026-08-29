@@ -96,8 +96,7 @@ public:
        if different calls to this member function use different, incompatible
        type managers
      */
-    void add(rtl::OString const & name, TypeManager const & manager)
-        throw( CannotDumpException );
+    void add(rtl::OString const & name, TypeManager const & manager);
 
     /**
        Gives access to the resultant exception hierarchy.

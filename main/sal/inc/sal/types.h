@@ -388,6 +388,12 @@ typedef struct _sal_Sequence
 
 	SAL_THROW()			 should be used for all C++ functions, e.g. SAL_THROW( () )
 	SAL_THROW_EXTERN_C() should be used for all C functions
+
+	Only the EMPTY specification is written any more.  A specification naming
+	types has been removed from the whole tree: C++17 deletes it from the
+	language, and MSVC has never enforced one -- it only compares it against the
+	one the compiler invents for a destructor, which is where it did real damage.
+	The empty one earns its keep: MSVC implements it as __declspec(nothrow).
 */
 #ifdef __cplusplus
 #if defined(__GNUC__) || defined(__SUNPRO_CC) || defined(__sgi)

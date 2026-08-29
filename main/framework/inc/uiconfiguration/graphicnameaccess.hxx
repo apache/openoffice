@@ -46,19 +46,13 @@ namespace framework
             void addElement( const rtl::OUString& rName, const ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic >& rElement );
 
             // XNameAccess
-		    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
-			    throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException,
-				    ::com::sun::star::uno::RuntimeException);
-		    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-			    throw(::com::sun::star::uno::RuntimeException);
-		    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-			    throw(::com::sun::star::uno::RuntimeException);
+		    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+		    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+		    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
 		    // XElementAccess
-		    virtual sal_Bool SAL_CALL hasElements()
-			    throw(::com::sun::star::uno::RuntimeException);
-		    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  )
-			    throw(::com::sun::star::uno::RuntimeException);
+		    virtual sal_Bool SAL_CALL hasElements();
+		    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
 
         private:
             typedef BaseHash< ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic > > NameGraphicHashMap;

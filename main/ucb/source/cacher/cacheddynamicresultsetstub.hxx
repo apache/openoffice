@@ -107,8 +107,7 @@ public:
 		com::sun::star::ucb::XDynamicResultSet > SAL_CALL
 	createCachedDynamicResultSetStub(
 				const com::sun::star::uno::Reference<
-					com::sun::star::ucb::XDynamicResultSet > & Source )
-				throw( com::sun::star::uno::RuntimeException );
+					com::sun::star::ucb::XDynamicResultSet > & Source );
 
 
 	virtual void SAL_CALL connectToCache(
@@ -120,12 +119,7 @@ public:
 						com::sun::star::ucb::NumberedSortingInfo > & SortingInfo
 				, const com::sun::star::uno::Reference<
 						com::sun::star::ucb::XAnyCompareFactory > & CompareFactory
-				)
-				throw (
-				  com::sun::star::ucb::ListenerAlreadySetException
-				, com::sun::star::ucb::AlreadyInitializedException
-				, com::sun::star::uno::RuntimeException
-				 );
+				);
 };
 
 #endif

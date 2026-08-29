@@ -45,14 +45,14 @@ public:
 	ScVbaPageBreak( const css::uno::Reference< ov::XHelperInterface >& xParent,
                     const css::uno::Reference< css::uno::XComponentContext >& xContext,
             		css::uno::Reference< css::beans::XPropertySet >& xProps,
-                    css::sheet::TablePageBreakData aTablePageBreakData) throw (css::uno::RuntimeException);
+                    css::sheet::TablePageBreakData aTablePageBreakData);
 	virtual ~ScVbaPageBreak(){}
 
-	virtual sal_Int32 SAL_CALL getType( ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setType(sal_Int32 type) throw (css::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getType( );
+    virtual void SAL_CALL setType(sal_Int32 type);
 
-    virtual void SAL_CALL Delete() throw ( css::script::BasicErrorException, css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::excel::XRange> SAL_CALL Location() throw ( css::script::BasicErrorException, css::uno::RuntimeException);
+    virtual void SAL_CALL Delete();
+    virtual css::uno::Reference< ov::excel::XRange> SAL_CALL Location();
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
@@ -68,7 +68,7 @@ public:
 	ScVbaHPageBreak( const css::uno::Reference< ov::XHelperInterface >& xParent,
                     const css::uno::Reference< css::uno::XComponentContext >& xContext,
             		css::uno::Reference< css::beans::XPropertySet >& xProps,
-                    css::sheet::TablePageBreakData aTablePageBreakData) throw (css::uno::RuntimeException):
+                    css::sheet::TablePageBreakData aTablePageBreakData):
               ScVbaHPageBreak_BASE( xParent,xContext,xProps,aTablePageBreakData ){}
 
 	virtual ~ScVbaHPageBreak(){}
@@ -87,7 +87,7 @@ public:
 	ScVbaVPageBreak( const css::uno::Reference< ov::XHelperInterface >& xParent,
 					 const css::uno::Reference< css::uno::XComponentContext >& xContext,
 					 css::uno::Reference< css::beans::XPropertySet >& xProps,
-					 css::sheet::TablePageBreakData aTablePageBreakData) throw (css::uno::RuntimeException);
+					 css::sheet::TablePageBreakData aTablePageBreakData);
 
 	virtual ~ScVbaVPageBreak();
 

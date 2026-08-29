@@ -36,17 +36,17 @@ private:
     css::uno::Reference< css::beans::XPropertySet > mxPageProps;
 
 public:
-	SwVbaSection( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::frame::XModel >& xModel, const css::uno::Reference< css::beans::XPropertySet >& xProps ) throw ( css::uno::RuntimeException );
+	SwVbaSection( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::frame::XModel >& xModel, const css::uno::Reference< css::beans::XPropertySet >& xProps );
 	virtual ~SwVbaSection();
 
     // Attributes
-    virtual ::sal_Bool SAL_CALL getProtectedForForms() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setProtectedForForms( ::sal_Bool _protectedforforms ) throw (css::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL getProtectedForForms();
+    virtual void SAL_CALL setProtectedForForms( ::sal_Bool _protectedforforms );
 
     // Methods
-    virtual css::uno::Any SAL_CALL Headers(  ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Footers(  ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL PageSetup(  ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL Headers(  );
+    virtual css::uno::Any SAL_CALL Footers(  );
+    virtual css::uno::Any SAL_CALL PageSetup(  );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

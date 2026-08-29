@@ -144,9 +144,9 @@ namespace xmloff
             virtual ~OMergedPropertySetInfo();
 
             // XPropertySetInfo
-            virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > SAL_CALL getProperties(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName( const ::rtl::OUString& aName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL hasPropertyByName( const ::rtl::OUString& Name ) throw (::com::sun::star::uno::RuntimeException);
+            virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > SAL_CALL getProperties(  );
+            virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName( const ::rtl::OUString& aName );
+            virtual ::sal_Bool SAL_CALL hasPropertyByName( const ::rtl::OUString& Name );
         };
 
         //----------------------------------------------------------------
@@ -162,7 +162,7 @@ namespace xmloff
         }
 
         //----------------------------------------------------------------
-        Sequence< Property > SAL_CALL OMergedPropertySetInfo::getProperties(  ) throw (RuntimeException)
+        Sequence< Property > SAL_CALL OMergedPropertySetInfo::getProperties(  )
         {
             // add a "ParaAdjust" property to the master properties
             Sequence< Property > aProperties;
@@ -177,7 +177,7 @@ namespace xmloff
         }
 
         //----------------------------------------------------------------
-        Property SAL_CALL OMergedPropertySetInfo::getPropertyByName( const ::rtl::OUString& aName ) throw (UnknownPropertyException, RuntimeException)
+        Property SAL_CALL OMergedPropertySetInfo::getPropertyByName( const ::rtl::OUString& aName )
         {
             if ( aName == getParaAlignProperty() )
                 return Property( getParaAlignProperty(), -1,
@@ -190,7 +190,7 @@ namespace xmloff
         }
 
         //----------------------------------------------------------------
-        ::sal_Bool SAL_CALL OMergedPropertySetInfo::hasPropertyByName( const ::rtl::OUString& Name ) throw (RuntimeException)
+        ::sal_Bool SAL_CALL OMergedPropertySetInfo::hasPropertyByName( const ::rtl::OUString& Name )
         {
             if ( Name == getParaAlignProperty() )
                 return sal_True;
@@ -219,7 +219,7 @@ namespace xmloff
     }
 
     //--------------------------------------------------------------------
-    Reference< XPropertySetInfo > SAL_CALL OGridColumnPropertyTranslator::getPropertySetInfo(  ) throw (RuntimeException)
+    Reference< XPropertySetInfo > SAL_CALL OGridColumnPropertyTranslator::getPropertySetInfo(  )
     {
         Reference< XPropertySetInfo > xColumnPropInfo;
         if ( m_xGridColumn.is() )
@@ -228,7 +228,7 @@ namespace xmloff
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& aValue ) throw (UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& aValue )
     {
         // we implement this by delegating it to setPropertyValues, which is to ignore unknown properties. On the other hand, our
         // contract requires us to throw a UnknownPropertyException for unknown properties, so check this first.
@@ -242,7 +242,7 @@ namespace xmloff
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL OGridColumnPropertyTranslator::getPropertyValue( const ::rtl::OUString& PropertyName ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    Any SAL_CALL OGridColumnPropertyTranslator::getPropertyValue( const ::rtl::OUString& PropertyName )
     {
         Sequence< ::rtl::OUString > aNames( &PropertyName, 1 );
         Sequence< Any > aValues = getPropertyValues( aNames );
@@ -253,31 +253,31 @@ namespace xmloff
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::addPropertyChangeListener( const ::rtl::OUString&, const Reference< XPropertyChangeListener >& ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::addPropertyChangeListener( const ::rtl::OUString&, const Reference< XPropertyChangeListener >& )
     {
         OSL_ENSURE( sal_False, "OGridColumnPropertyTranslator::addPropertyChangeListener: not implemented - this should not be needed!" );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::removePropertyChangeListener( const ::rtl::OUString&, const Reference< XPropertyChangeListener >& ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::removePropertyChangeListener( const ::rtl::OUString&, const Reference< XPropertyChangeListener >& )
     {
         OSL_ENSURE( sal_False, "OGridColumnPropertyTranslator::removePropertyChangeListener: not implemented - this should not be needed!" );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::addVetoableChangeListener( const ::rtl::OUString&, const Reference< XVetoableChangeListener >& ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::addVetoableChangeListener( const ::rtl::OUString&, const Reference< XVetoableChangeListener >& )
     {
         OSL_ENSURE( sal_False, "OGridColumnPropertyTranslator::addVetoableChangeListener: not implemented - this should not be needed!" );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::removeVetoableChangeListener( const ::rtl::OUString&, const Reference< XVetoableChangeListener >& ) throw (UnknownPropertyException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::removeVetoableChangeListener( const ::rtl::OUString&, const Reference< XVetoableChangeListener >& )
     {
         OSL_ENSURE( sal_False, "OGridColumnPropertyTranslator::removeVetoableChangeListener: not implemented - this should not be needed!" );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::setPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames, const Sequence< Any >& aValues ) throw (PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::setPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames, const Sequence< Any >& aValues )
     {
         if ( !m_xGridColumn.is() )
             return;
@@ -299,7 +299,7 @@ namespace xmloff
     }
 
     //--------------------------------------------------------------------
-    Sequence< Any > SAL_CALL OGridColumnPropertyTranslator::getPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames ) throw (RuntimeException)
+    Sequence< Any > SAL_CALL OGridColumnPropertyTranslator::getPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames )
     {
         Sequence< Any > aValues( aPropertyNames.getLength() );
         if ( !m_xGridColumn.is() )
@@ -318,19 +318,19 @@ namespace xmloff
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::addPropertiesChangeListener( const Sequence< ::rtl::OUString >&, const Reference< XPropertiesChangeListener >& ) throw (RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::addPropertiesChangeListener( const Sequence< ::rtl::OUString >&, const Reference< XPropertiesChangeListener >& )
     {
         OSL_ENSURE( sal_False, "OGridColumnPropertyTranslator::addPropertiesChangeListener: not implemented - this should not be needed!" );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::removePropertiesChangeListener( const Reference< XPropertiesChangeListener >& ) throw (RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::removePropertiesChangeListener( const Reference< XPropertiesChangeListener >& )
     {
         OSL_ENSURE( sal_False, "OGridColumnPropertyTranslator::removePropertiesChangeListener: not implemented - this should not be needed!" );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OGridColumnPropertyTranslator::firePropertiesChangeEvent( const Sequence< ::rtl::OUString >&, const Reference< XPropertiesChangeListener >& ) throw (RuntimeException)
+    void SAL_CALL OGridColumnPropertyTranslator::firePropertiesChangeEvent( const Sequence< ::rtl::OUString >&, const Reference< XPropertiesChangeListener >& )
     {
         OSL_ENSURE( sal_False, "OGridColumnPropertyTranslator::firePropertiesChangeEvent: not implemented - this should not be needed!" );
     }

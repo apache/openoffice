@@ -41,9 +41,9 @@ namespace sd {
 					::com::sun::star::lang::XServiceInfo >( aMutex ) {}
 
 		// XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
-		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException) = 0;
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException) = 0;
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) = 0;
+		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) = 0;
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) = 0;
 	};
 
 }

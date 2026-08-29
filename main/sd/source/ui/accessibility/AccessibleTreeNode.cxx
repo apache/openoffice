@@ -144,7 +144,6 @@ void SAL_CALL AccessibleTreeNode::disposing (void)
 
 Reference<XAccessibleContext > SAL_CALL
     AccessibleTreeNode::getAccessibleContext (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
     return this;
@@ -156,7 +155,6 @@ Reference<XAccessibleContext > SAL_CALL
 //=====  XAccessibleContext  ==================================================
 
 sal_Int32 SAL_CALL AccessibleTreeNode::getAccessibleChildCount (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard (Application::GetSolarMutex());
@@ -168,7 +166,6 @@ sal_Int32 SAL_CALL AccessibleTreeNode::getAccessibleChildCount (void)
 
 Reference<XAccessible > SAL_CALL
     AccessibleTreeNode::getAccessibleChild (sal_Int32 nIndex)
-    throw (lang::IndexOutOfBoundsException, RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard (Application::GetSolarMutex());
@@ -189,7 +186,6 @@ Reference<XAccessible > SAL_CALL
 
 
 Reference<XAccessible > SAL_CALL AccessibleTreeNode::getAccessibleParent (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard (Application::GetSolarMutex());
@@ -200,7 +196,6 @@ Reference<XAccessible > SAL_CALL AccessibleTreeNode::getAccessibleParent (void)
 
 
 sal_Int32 SAL_CALL AccessibleTreeNode::getAccessibleIndexInParent (void)
-    throw (uno::RuntimeException)
 {
     OSL_ASSERT(getAccessibleParent().is());
     ThrowIfDisposed();
@@ -228,7 +223,6 @@ sal_Int32 SAL_CALL AccessibleTreeNode::getAccessibleIndexInParent (void)
 
 
 sal_Int16 SAL_CALL AccessibleTreeNode::getAccessibleRole (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     return meRole;
@@ -238,7 +232,6 @@ sal_Int16 SAL_CALL AccessibleTreeNode::getAccessibleRole (void)
 
 
 ::rtl::OUString SAL_CALL AccessibleTreeNode::getAccessibleDescription (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     return msDescription;
@@ -248,7 +241,6 @@ sal_Int16 SAL_CALL AccessibleTreeNode::getAccessibleRole (void)
 
 
 ::rtl::OUString SAL_CALL AccessibleTreeNode::getAccessibleName (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     return msName;
@@ -259,7 +251,6 @@ sal_Int16 SAL_CALL AccessibleTreeNode::getAccessibleRole (void)
 
 Reference<XAccessibleRelationSet> SAL_CALL
     AccessibleTreeNode::getAccessibleRelationSet (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     return Reference<XAccessibleRelationSet>();
@@ -270,7 +261,6 @@ Reference<XAccessibleRelationSet> SAL_CALL
 
 Reference<XAccessibleStateSet > SAL_CALL
     AccessibleTreeNode::getAccessibleStateSet (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard (Application::GetSolarMutex());
@@ -326,8 +316,6 @@ void AccessibleTreeNode::UpdateState(
 
 
 lang::Locale SAL_CALL AccessibleTreeNode::getLocale (void)
-    throw (IllegalAccessibleComponentStateException,
-        RuntimeException)
 {
     ThrowIfDisposed ();
     Reference<XAccessibleContext> xParentContext;
@@ -347,7 +335,6 @@ lang::Locale SAL_CALL AccessibleTreeNode::getLocale (void)
 
 void SAL_CALL AccessibleTreeNode::addEventListener(
     const Reference<XAccessibleEventListener >& rxListener)
-    throw (RuntimeException)
 {
 	if (rxListener.is())
     {
@@ -373,7 +360,6 @@ void SAL_CALL AccessibleTreeNode::addEventListener(
 
 void SAL_CALL AccessibleTreeNode::removeEventListener(
     const Reference<XAccessibleEventListener >& rxListener)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 	if (rxListener.is())
@@ -402,7 +388,6 @@ void SAL_CALL AccessibleTreeNode::removeEventListener(
 //===== XAccessibleComponent ==================================================
 
 sal_Bool SAL_CALL AccessibleTreeNode::containsPoint (const awt::Point& aPoint)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     const awt::Rectangle aBBox (getBounds());
@@ -417,7 +402,6 @@ sal_Bool SAL_CALL AccessibleTreeNode::containsPoint (const awt::Point& aPoint)
 
 Reference<XAccessible> SAL_CALL
     AccessibleTreeNode::getAccessibleAtPoint (const awt::Point& aPoint)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     Reference<XAccessible> xChildAtPoint;
@@ -449,7 +433,6 @@ Reference<XAccessible> SAL_CALL
 
 
 awt::Rectangle SAL_CALL AccessibleTreeNode::getBounds (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -488,7 +471,6 @@ awt::Rectangle SAL_CALL AccessibleTreeNode::getBounds (void)
 
 
 awt::Point SAL_CALL AccessibleTreeNode::getLocation (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     const awt::Rectangle aBBox (getBounds());
@@ -502,7 +484,6 @@ awt::Point SAL_CALL AccessibleTreeNode::getLocation (void)
     and our own relative location.
 */
 awt::Point SAL_CALL AccessibleTreeNode::getLocationOnScreen()
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard( Application::GetSolarMutex() );
@@ -523,7 +504,6 @@ awt::Point SAL_CALL AccessibleTreeNode::getLocationOnScreen()
 
 
 awt::Size SAL_CALL AccessibleTreeNode::getSize (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     const awt::Rectangle aBBox (getBounds());
@@ -534,7 +514,6 @@ awt::Size SAL_CALL AccessibleTreeNode::getSize (void)
 
 
 void SAL_CALL AccessibleTreeNode::grabFocus (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard (Application::GetSolarMutex());
@@ -547,7 +526,6 @@ void SAL_CALL AccessibleTreeNode::grabFocus (void)
 
 
 sal_Int32 SAL_CALL AccessibleTreeNode::getForeground (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 	svtools::ColorConfig aColorConfig;
@@ -559,7 +537,6 @@ sal_Int32 SAL_CALL AccessibleTreeNode::getForeground (void)
 
 
 sal_Int32 SAL_CALL AccessibleTreeNode::getBackground (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     sal_uInt32 nColor = Application::GetSettings().GetStyleSettings().GetWindowColor().GetColor();
@@ -573,7 +550,6 @@ sal_Int32 SAL_CALL AccessibleTreeNode::getBackground (void)
 
 ::rtl::OUString SAL_CALL
    	AccessibleTreeNode::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM("AccessibleTreeNode"));
 }
@@ -583,7 +559,6 @@ sal_Int32 SAL_CALL AccessibleTreeNode::getBackground (void)
 
 sal_Bool SAL_CALL
  	AccessibleTreeNode::supportsService (const OUString& sServiceName)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -602,7 +577,6 @@ sal_Bool SAL_CALL
 
 uno::Sequence< ::rtl::OUString> SAL_CALL
    	AccessibleTreeNode::getSupportedServiceNames (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 	static const OUString sServiceNames[2] = {
@@ -618,7 +592,6 @@ uno::Sequence< ::rtl::OUString> SAL_CALL
 
 
 void AccessibleTreeNode::ThrowIfDisposed (void)
-    throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

@@ -87,12 +87,12 @@ namespace dbtools
 									const ::rtl::OUString& rString,
 									sal_Int32 nKey,
 									sal_Int16 nFieldType,
-									sal_Int16 nKeyType) throw(::com::sun::star::lang::IllegalArgumentException);
+									sal_Int16 nKeyType);
 
 		static void setValue(const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XColumnUpdate>& xVariant,
 							 const ::com::sun::star::util::Date& rNullDate,
 							 const double& rValue,
-							 sal_Int16 nKeyType) throw(::com::sun::star::lang::IllegalArgumentException);
+							 sal_Int16 nKeyType);
 
 		static double getValue( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XColumn>& xVariant, const ::com::sun::star::util::Date& rNullDate );
 
@@ -178,8 +178,7 @@ namespace dbtools
             const ::rtl::OUString& _rSource,
             ::rtl::OString&  _rDest,
             rtl_TextEncoding _eEncoding
-        )
-            SAL_THROW((::com::sun::star::sdbc::SQLException));
+        );
 
         /** converts a Unicode string into a 8-bit string, using the given encoding
 
@@ -209,8 +208,7 @@ namespace dbtools
             ::rtl::OString&  _rDest,
             sal_Int32 _nMaxLen,
             rtl_TextEncoding _eEncoding
-       )
-            SAL_THROW((::com::sun::star::sdbc::SQLException));
+       );
 	};
 
 //.........................................................................

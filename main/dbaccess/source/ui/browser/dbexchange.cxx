@@ -223,7 +223,7 @@ namespace dbaui
 	}
 
 	// -----------------------------------------------------------------------------
-	void SAL_CALL ODataClipboard::disposing( const ::com::sun::star::lang::EventObject& i_rSource ) throw (::com::sun::star::uno::RuntimeException)
+	void SAL_CALL ODataClipboard::disposing( const ::com::sun::star::lang::EventObject& i_rSource )
 	{
         ODataAccessDescriptor& rDescriptor( getDescriptor() );
 

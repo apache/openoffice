@@ -50,7 +50,6 @@ TableStyleContext::~TableStyleContext()
 
 uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
 TableStyleContext::createFastChildContext( ::sal_Int32 aElementToken, const uno::Reference< xml::sax::XFastAttributeList >& /* xAttribs */ )
-	throw ( xml::sax::SAXException, uno::RuntimeException)
 {
 	uno::Reference< xml::sax::XFastContextHandler > xRet;
 

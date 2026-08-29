@@ -54,7 +54,7 @@ protected:
     css::uno::Reference< css::uno::XInterface > m_xControl;
     css::uno::Reference< css::frame::XModel > m_xModel;
 
-    virtual css::uno::Reference< css::awt::XWindowPeer > getWindowPeer() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::awt::XWindowPeer > getWindowPeer();
 public:
     ScVbaControl( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext,
                     const css::uno::Reference< css::uno::XInterface >& xControl, const css::uno::Reference< css::frame::XModel >& xModel, ov::AbstractGeometryAttributes* pHelper );
@@ -63,36 +63,36 @@ public:
     // the heap
     void setGeometryHelper( ov::AbstractGeometryAttributes* pHelper );
     // XControl
-    virtual sal_Bool SAL_CALL getEnabled() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEnabled( sal_Bool _enabled ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( sal_Bool _visible ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getHeight() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setHeight( double _height ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getWidth() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setWidth( double _width ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getLeft() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLeft( double _left ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getTop() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTop( double _top ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL SetFocus(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL Move( double Left, double Top, const ::com::sun::star::uno::Any& Width, const ::com::sun::star::uno::Any& Height ) throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL getEnabled();
+    virtual void SAL_CALL setEnabled( sal_Bool _enabled );
+    virtual sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( sal_Bool _visible );
+    virtual double SAL_CALL getHeight();
+    virtual void SAL_CALL setHeight( double _height );
+    virtual double SAL_CALL getWidth();
+    virtual void SAL_CALL setWidth( double _width );
+    virtual double SAL_CALL getLeft();
+    virtual void SAL_CALL setLeft( double _left );
+    virtual double SAL_CALL getTop();
+    virtual void SAL_CALL setTop( double _top );
+    virtual void SAL_CALL SetFocus(  );
+    virtual void SAL_CALL Move( double Left, double Top, const ::com::sun::star::uno::Any& Width, const ::com::sun::star::uno::Any& Height );
 
-    virtual css::uno::Reference< css::uno::XInterface > SAL_CALL getObject() throw (css::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getControlSource() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setControlSource( const rtl::OUString& _controlsource ) throw (css::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getRowSource() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setRowSource( const rtl::OUString& _rowsource ) throw (css::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setName( const rtl::OUString& _name ) throw (css::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getControlTipText() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setControlTipText( const rtl::OUString& ) throw (css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getTag() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTag( const ::rtl::OUString& aTag ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getTabIndex() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTabIndex( sal_Int32 nTabIndex ) throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::uno::XInterface > SAL_CALL getObject();
+    virtual rtl::OUString SAL_CALL getControlSource();
+    virtual void SAL_CALL setControlSource( const rtl::OUString& _controlsource );
+    virtual rtl::OUString SAL_CALL getRowSource();
+    virtual void SAL_CALL setRowSource( const rtl::OUString& _rowsource );
+    virtual rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const rtl::OUString& _name );
+    virtual rtl::OUString SAL_CALL getControlTipText();
+    virtual void SAL_CALL setControlTipText( const rtl::OUString& );
+    virtual ::rtl::OUString SAL_CALL getTag();
+    virtual void SAL_CALL setTag( const ::rtl::OUString& aTag );
+    virtual sal_Int32 SAL_CALL getTabIndex();
+    virtual void SAL_CALL setTabIndex( sal_Int32 nTabIndex );
     //remove resource because ooo.vba.excel.XControl is a wrapper of com.sun.star.drawing.XControlShape
-    virtual void removeResouce() throw( css::uno::RuntimeException );
+    virtual void removeResouce();
     //XHelperInterface
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();
@@ -105,14 +105,14 @@ public:
     static css::uno::Reference< ov::msforms::XControl > createShapeControl(
         const css::uno::Reference< css::uno::XComponentContext >& xContext,
         const css::uno::Reference< css::drawing::XControlShape >& xControlShape,
-        const css::uno::Reference< css::frame::XModel >& xModel ) throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::frame::XModel >& xModel );
 
     static css::uno::Reference< ov::msforms::XControl > createUserformControl(
         const css::uno::Reference< css::uno::XComponentContext >& xContext,
         const css::uno::Reference< css::awt::XControl >& xControl,
         const css::uno::Reference< css::awt::XControl >& xDialog,
         const css::uno::Reference< css::frame::XModel >& xModel,
-        double fOffsetX, double fOffsetY ) throw (css::uno::RuntimeException);
+        double fOffsetX, double fOffsetY );
 
 private:
     ScVbaControlFactory();

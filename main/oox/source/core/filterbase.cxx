@@ -152,9 +152,9 @@ struct FilterBaseImpl
     Reference< XStatusIndicator >       mxStatusIndicator;
     Reference< XInteractionHandler >    mxInteractionHandler;
 
-    explicit            FilterBaseImpl( const Reference< XComponentContext >& rxContext ) throw( RuntimeException );
+    explicit            FilterBaseImpl( const Reference< XComponentContext >& rxContext );
 
-    void                setDocumentModel( const Reference< XComponent >& rxComponent ) throw( IllegalArgumentException );
+    void                setDocumentModel( const Reference< XComponent >& rxComponent );
 
     void                initializeFilter();
     void                finalizeFilter();
@@ -162,7 +162,7 @@ struct FilterBaseImpl
 
 // ----------------------------------------------------------------------------
 
-FilterBaseImpl::FilterBaseImpl( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+FilterBaseImpl::FilterBaseImpl( const Reference< XComponentContext >& rxContext ) :
     meDirection( FILTERDIRECTION_UNKNOWN ),
     mxComponentContext( rxContext, UNO_SET_THROW ),
     mxComponentFactory( rxContext->getServiceManager(), UNO_SET_THROW ),
@@ -170,7 +170,7 @@ FilterBaseImpl::FilterBaseImpl( const Reference< XComponentContext >& rxContext 
 {
 }
 
-void FilterBaseImpl::setDocumentModel( const Reference< XComponent >& rxComponent ) throw( IllegalArgumentException )
+void FilterBaseImpl::setDocumentModel( const Reference< XComponent >& rxComponent )
 {
     try
     {
@@ -211,7 +211,7 @@ void FilterBaseImpl::finalizeFilter()
 
 // ============================================================================
 
-FilterBase::FilterBase( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+FilterBase::FilterBase( const Reference< XComponentContext >& rxContext ) :
     mxImpl( new FilterBaseImpl( rxContext ) )
 {
 }
@@ -437,19 +437,19 @@ bool FilterBase::importBinaryData( StreamDataSequence& orDataSeq, const OUString
 
 // com.sun.star.lang.XServiceInfo interface -----------------------------------
 
-OUString SAL_CALL FilterBase::getImplementationName() throw( RuntimeException )
+OUString SAL_CALL FilterBase::getImplementationName()
 {
     return implGetImplementationName();
 }
 
-sal_Bool SAL_CALL FilterBase::supportsService( const OUString& rServiceName ) throw( RuntimeException )
+sal_Bool SAL_CALL FilterBase::supportsService( const OUString& rServiceName )
 {
     return
         (rServiceName == CREATE_OUSTRING( "com.sun.star.document.ImportFilter" )) ||
         (rServiceName == CREATE_OUSTRING( "com.sun.star.document.ExportFilter" ));
 }
 
-Sequence< OUString > SAL_CALL FilterBase::getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL FilterBase::getSupportedServiceNames()
 {
     Sequence< OUString > aServiceNames( 2 );
     aServiceNames[ 0 ] = CREATE_OUSTRING( "com.sun.star.document.ImportFilter" );
@@ -459,7 +459,7 @@ Sequence< OUString > SAL_CALL FilterBase::getSupportedServiceNames() throw( Runt
 
 // com.sun.star.lang.XInitialization interface --------------------------------
 
-void SAL_CALL FilterBase::initialize( const Sequence< Any >& rArgs ) throw( Exception, RuntimeException )
+void SAL_CALL FilterBase::initialize( const Sequence< Any >& rArgs )
 {
     if( rArgs.getLength() >= 2 ) try
     {
@@ -472,7 +472,7 @@ void SAL_CALL FilterBase::initialize( const Sequence< Any >& rArgs ) throw( Exce
 
 // com.sun.star.document.XImporter interface ----------------------------------
 
-void SAL_CALL FilterBase::setTargetDocument( const Reference< XComponent >& rxDocument ) throw( IllegalArgumentException, RuntimeException )
+void SAL_CALL FilterBase::setTargetDocument( const Reference< XComponent >& rxDocument )
 {
     mxImpl->setDocumentModel( rxDocument );
     mxImpl->meDirection = FILTERDIRECTION_IMPORT;
@@ -480,7 +480,7 @@ void SAL_CALL FilterBase::setTargetDocument( const Reference< XComponent >& rxDo
 
 // com.sun.star.document.XExporter interface ----------------------------------
 
-void SAL_CALL FilterBase::setSourceDocument( const Reference< XComponent >& rxDocument ) throw( IllegalArgumentException, RuntimeException )
+void SAL_CALL FilterBase::setSourceDocument( const Reference< XComponent >& rxDocument )
 {
     mxImpl->setDocumentModel( rxDocument );
     mxImpl->meDirection = FILTERDIRECTION_EXPORT;
@@ -488,7 +488,7 @@ void SAL_CALL FilterBase::setSourceDocument( const Reference< XComponent >& rxDo
 
 // com.sun.star.document.XFilter interface ------------------------------------
 
-sal_Bool SAL_CALL FilterBase::filter( const Sequence< PropertyValue >& rMediaDescSeq ) throw( RuntimeException )
+sal_Bool SAL_CALL FilterBase::filter( const Sequence< PropertyValue >& rMediaDescSeq )
 {
     if( !mxImpl->mxModel.is() || !mxImpl->mxModelFactory.is() || (mxImpl->meDirection == FILTERDIRECTION_UNKNOWN) )
         throw RuntimeException();
@@ -523,7 +523,7 @@ sal_Bool SAL_CALL FilterBase::filter( const Sequence< PropertyValue >& rMediaDes
     return bRet;
 }
 
-void SAL_CALL FilterBase::cancel() throw( RuntimeException )
+void SAL_CALL FilterBase::cancel()
 {
 }
 

@@ -203,7 +203,7 @@ Sequence<Type> OFormattedControl::_getTypes()
 }
 
 //------------------------------------------------------------------
-Any SAL_CALL OFormattedControl::queryAggregation(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL OFormattedControl::queryAggregation(const Type& _rType)
 {
 	Any aReturn = OBoundControl::queryAggregation(_rType);
 	if (!aReturn.hasValue())
@@ -248,13 +248,13 @@ OFormattedControl::~OFormattedControl()
 
 // XKeyListener
 //------------------------------------------------------------------------------
-void OFormattedControl::disposing(const EventObject& _rSource) throw(RuntimeException)
+void OFormattedControl::disposing(const EventObject& _rSource)
 {
 	OBoundControl::disposing(_rSource);
 }
 
 //------------------------------------------------------------------------------
-void OFormattedControl::keyPressed(const ::com::sun::star::awt::KeyEvent& e) throw ( ::com::sun::star::uno::RuntimeException)
+void OFormattedControl::keyPressed(const ::com::sun::star::awt::KeyEvent& e)
 {
 	if( e.KeyCode != KEY_RETURN || e.Modifiers != 0 )
 		return;
@@ -307,7 +307,7 @@ void OFormattedControl::keyPressed(const ::com::sun::star::awt::KeyEvent& e) thr
 }
 
 //------------------------------------------------------------------------------
-void OFormattedControl::keyReleased(const ::com::sun::star::awt::KeyEvent& /*e*/) throw ( ::com::sun::star::uno::RuntimeException)
+void OFormattedControl::keyReleased(const ::com::sun::star::awt::KeyEvent& /*e*/)
 {
 }
 
@@ -336,7 +336,7 @@ StringSequence	OFormattedControl::getSupportedServiceNames() throw()
 }
 
 //------------------------------------------------------------------------------
-void OFormattedControl::setDesignMode(sal_Bool bOn) throw ( ::com::sun::star::uno::RuntimeException)
+void OFormattedControl::setDesignMode(sal_Bool bOn)
 {
 	OBoundControl::setDesignMode(bOn);
 }
@@ -430,7 +430,7 @@ StringSequence OFormattedModel::getSupportedServiceNames() throw()
 
 // XAggregation
 //------------------------------------------------------------------------------
-Any SAL_CALL OFormattedModel::queryAggregation(const Type& _rType) throw(RuntimeException)
+Any SAL_CALL OFormattedModel::queryAggregation(const Type& _rType)
 {
 	Any aReturn = OEditBaseModel::queryAggregation( _rType );
 	return aReturn.hasValue() ? aReturn : OErrorBroadcaster::queryInterface( _rType );
@@ -448,7 +448,7 @@ Sequence< Type > OFormattedModel::_getTypes()
 
 // XPersistObject
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OFormattedModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OFormattedModel::getServiceName()
 {
 	return ::rtl::OUString(FRM_COMPONENT_EDIT);
 }
@@ -492,14 +492,13 @@ void OFormattedModel::getFastPropertyValue(Any& rValue, sal_Int32 nHandle) const
 }
 
 //------------------------------------------------------------------------------
-void OFormattedModel::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue) throw ( ::com::sun::star::uno::Exception)
+void OFormattedModel::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue)
 {
 	OEditBaseModel::setFastPropertyValue_NoBroadcast(nHandle, rValue);
 }
 
 //------------------------------------------------------------------------------
 sal_Bool OFormattedModel::convertFastPropertyValue(Any& rConvertedValue, Any& rOldValue, sal_Int32 nHandle, const Any& rValue)
-														throw( IllegalArgumentException )
 {
 	return OEditBaseModel::convertFastPropertyValue(rConvertedValue, rOldValue, nHandle, rValue);
 }
@@ -519,7 +518,7 @@ void OFormattedModel::setPropertyToDefaultByHandle(sal_Int32 nHandle)
 }
 
 //------------------------------------------------------------------------------
-void OFormattedModel::setPropertyToDefault(const ::rtl::OUString& aPropertyName) throw( com::sun::star::beans::UnknownPropertyException, RuntimeException )
+void OFormattedModel::setPropertyToDefault(const ::rtl::OUString& aPropertyName)
 {
 	OPropertyArrayAggregationHelper& rPH = m_aPropertyBagHelper.getInfoHelper();
 	sal_Int32 nHandle = rPH.getHandleByName( aPropertyName );
@@ -543,7 +542,7 @@ Any OFormattedModel::getPropertyDefaultByHandle( sal_Int32 nHandle ) const
 }
 
 //------------------------------------------------------------------------------
-Any SAL_CALL OFormattedModel::getPropertyDefault( const ::rtl::OUString& aPropertyName ) throw( com::sun::star::beans::UnknownPropertyException, RuntimeException )
+Any SAL_CALL OFormattedModel::getPropertyDefault( const ::rtl::OUString& aPropertyName )
 {
 	OPropertyArrayAggregationHelper& rPH = m_aPropertyBagHelper.getInfoHelper();
 	sal_Int32 nHandle = rPH.getHandleByName( aPropertyName );
@@ -555,7 +554,7 @@ Any SAL_CALL OFormattedModel::getPropertyDefault( const ::rtl::OUString& aProper
 }
 
 //------------------------------------------------------------------------------
-void OFormattedModel::_propertyChanged( const com::sun::star::beans::PropertyChangeEvent& evt ) throw(RuntimeException)
+void OFormattedModel::_propertyChanged( const com::sun::star::beans::PropertyChangeEvent& evt )
 {
     // TODO: check how this works with external bindings
 
@@ -676,7 +675,7 @@ Reference< XNumberFormatsSupplier > OFormattedModel::calcDefaultFormatsSupplier(
 
 // XBoundComponent
 //------------------------------------------------------------------------------
-void OFormattedModel::loaded(const EventObject& rEvent) throw ( ::com::sun::star::uno::RuntimeException)
+void OFormattedModel::loaded(const EventObject& rEvent)
 {
 	// HACK : our onConnectedDbColumn accesses our NumberFormatter which locks the solar mutex (as it doesn't have
 	// an own one). To prevent deadlocks with other threads which may request a property from us in an
@@ -808,7 +807,7 @@ void OFormattedModel::onDisconnectedDbColumn()
 }
 
 //------------------------------------------------------------------------------
-void OFormattedModel::write(const Reference<XObjectOutputStream>& _rxOutStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void OFormattedModel::write(const Reference<XObjectOutputStream>& _rxOutStream)
 {
 	OEditBaseModel::write(_rxOutStream);
 	_rxOutStream->writeShort(0x0003);
@@ -913,7 +912,7 @@ void OFormattedModel::write(const Reference<XObjectOutputStream>& _rxOutStream) 
 }
 
 //------------------------------------------------------------------------------
-void OFormattedModel::read(const Reference<XObjectInputStream>& _rxInStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void OFormattedModel::read(const Reference<XObjectInputStream>& _rxInStream)
 {
 	OEditBaseModel::read(_rxInStream);
 	sal_uInt16 nVersion = _rxInStream->readShort();

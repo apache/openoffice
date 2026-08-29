@@ -123,7 +123,6 @@ void addFactories(
     OUString const & bootstrapPath,
     Reference< lang::XMultiComponentFactory > const & xMgr,
     Reference< registry::XRegistryKey > const & xKey )
-    SAL_THROW( (Exception) )
 {
     Reference< container::XSet > xSet( xMgr, UNO_QUERY );
     OSL_ASSERT( xSet.is() );
@@ -179,15 +178,13 @@ void addFactories(
 
 // private forward decl
 Reference< lang::XMultiComponentFactory > bootstrapInitialSF(
-    OUString const & rBootstrapPath )
-    SAL_THROW( (Exception) );
+    OUString const & rBootstrapPath );
 
 Reference< XComponentContext > bootstrapInitialContext(
     Reference< lang::XMultiComponentFactory > const & xSF,
     Reference< registry::XSimpleRegistry > const & types_xRegistry,
     Reference< registry::XSimpleRegistry > const & services_xRegistry,
-    OUString const & rBootstrapPath, Bootstrap const & bootstrap )
-    SAL_THROW( (Exception) );
+    OUString const & rBootstrapPath, Bootstrap const & bootstrap );
 
 Reference< XComponentContext > SAL_CALL createInitialCfgComponentContext(
     ContextEntry_Init const * pEntries, sal_Int32 nEntries,
@@ -278,7 +275,6 @@ Reference< registry::XSimpleRegistry > nestRegistries(
     const OUString & write_rdb,
     sal_Bool forceWrite_rdb,
     sal_Bool bFallenBack )
-    SAL_THROW((Exception))
 {
     sal_Int32 index;
     Reference< registry::XSimpleRegistry > lastRegistry;
@@ -377,7 +373,6 @@ Reference< registry::XSimpleRegistry > nestRegistries(
 Reference< XComponentContext >
 SAL_CALL defaultBootstrap_InitialComponentContext(
     Bootstrap const & bootstrap )
-    SAL_THROW( (Exception) )
 {
     primeWeakMap();
 
@@ -463,7 +458,6 @@ SAL_CALL defaultBootstrap_InitialComponentContext(
 Reference< XComponentContext >
 SAL_CALL defaultBootstrap_InitialComponentContext(
     OUString const & iniFile )
-    SAL_THROW( (Exception) )
 {
     Bootstrap bootstrap( iniFile );
     if (bootstrap.getHandle() == 0)
@@ -473,7 +467,6 @@ SAL_CALL defaultBootstrap_InitialComponentContext(
 
 Reference< XComponentContext >
 SAL_CALL defaultBootstrap_InitialComponentContext()
-    SAL_THROW( (Exception) )
 {
     return defaultBootstrap_InitialComponentContext( get_unorc() );
 }

@@ -1,0 +1,15 @@
+--- misc/redland-1.0.17/src/win32_rdf_config.h
++++ misc/build/redland-1.0.17/src/win32_rdf_config.h
+@@ -45,7 +45,12 @@
+ /* MS names for these functions */
+ // next line breaks build on wntmsci12
+ //#define vsnprintf _vsnprintf
++#if !defined(_MSC_VER) || (_MSC_VER < 1900)
++/*  The UCRT -- VS2015 and every toolset since -- declares a real, conforming
++    snprintf.  Defining the name away here rewrites that declaration as it is
++    being parsed, so the shim has to stop at the runtime that gained one. */
+ #define snprintf _snprintf
++#endif
+ #define access _access
+ #define stricmp _stricmp
+ #define strnicmp _strnicmp

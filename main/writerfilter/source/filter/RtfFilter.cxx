@@ -42,7 +42,6 @@ RtfFilter::~RtfFilter()
 }
 
 sal_Bool RtfFilter::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor )
-	throw (uno::RuntimeException)
 {
 	OSL_TRACE("%s", OSL_THIS_FUNC);
 	if( m_xSrcDoc.is() )
@@ -74,54 +73,52 @@ sal_Bool RtfFilter::filter( const uno::Sequence< beans::PropertyValue >& aDescri
 	return sal_False;
 }
 
-void RtfFilter::cancel(  ) throw (uno::RuntimeException)
+void RtfFilter::cancel(  )
 {
 }
 
 void RtfFilter::setSourceDocument( const uno::Reference< lang::XComponent >& xDoc )
-	throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	m_xSrcDoc = xDoc;
 }
 
 void RtfFilter::setTargetDocument( const uno::Reference< lang::XComponent >& xDoc )
-	throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
 	m_xDstDoc = xDoc;
 }
 
-void RtfFilter::initialize( const uno::Sequence< uno::Any >& /*aArguments*/ ) throw (uno::Exception, uno::RuntimeException)
+void RtfFilter::initialize( const uno::Sequence< uno::Any >& /*aArguments*/ )
 {
 	// The DOCX exporter here extracts 'type' of the filter, i.e. 'Word' or
 	// 'Word Template' but we don't need it for RTF.
 }
 
-OUString RtfFilter::getImplementationName(  ) throw (uno::RuntimeException)
+OUString RtfFilter::getImplementationName(  )
 {
 	return RtfFilter_getImplementationName();
 }
 
 #define SERVICE_NAME1 "com.sun.star.document.ImportFilter"
 #define SERVICE_NAME2 "com.sun.star.document.ExportFilter"
-sal_Bool RtfFilter::supportsService( const OUString& rServiceName ) throw (uno::RuntimeException)
+sal_Bool RtfFilter::supportsService( const OUString& rServiceName )
 {
 	return (rServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME1 ) ) ||
 			rServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME2 ) ));
 }
 
-uno::Sequence< OUString > RtfFilter::getSupportedServiceNames(  ) throw (uno::RuntimeException)
+uno::Sequence< OUString > RtfFilter::getSupportedServiceNames(  )
 {
 	return RtfFilter_getSupportedServiceNames();
 }
 
 /* Helpers, used by shared lib exports. */
 
-OUString RtfFilter_getImplementationName () throw (uno::RuntimeException)
+OUString RtfFilter_getImplementationName ()
 {
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.comp.Writer.RtfFilter" ) );
 }
 
-uno::Sequence< OUString > RtfFilter_getSupportedServiceNames(  ) throw (uno::RuntimeException)
+uno::Sequence< OUString > RtfFilter_getSupportedServiceNames(  )
 {
 	uno::Sequence < OUString > aRet(2);
 	OUString* pArray = aRet.getArray();
@@ -133,7 +130,6 @@ uno::Sequence< OUString > RtfFilter_getSupportedServiceNames(  ) throw (uno::Run
 #undef SERVICE_NAME2
 
 uno::Reference< uno::XInterface > RtfFilter_createInstance( const uno::Reference< uno::XComponentContext >& xContext)
-				throw( uno::Exception )
 {
 	return (cppu::OWeakObject*) new RtfFilter( xContext );
 }

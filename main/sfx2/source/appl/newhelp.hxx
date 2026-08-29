@@ -62,8 +62,8 @@ private:
 public:
 	OpenStatusListener_Impl() : m_bFinished( sal_False ), m_bSuccess( sal_False ) {}
 
-    virtual void SAL_CALL   dispatchFinished( const ::com::sun::star::frame::DispatchResultEvent& Event ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL   dispatchFinished( const ::com::sun::star::frame::DispatchResultEvent& Event );
+    virtual void SAL_CALL	disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	inline sal_Bool			IsFinished() const { return m_bFinished; }
 	inline sal_Bool			IsSuccessful() const { return m_bSuccess; }

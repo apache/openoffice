@@ -107,7 +107,6 @@ WallFloorWrapper::~WallFloorWrapper()
 
 // ____ XComponent ____
 void SAL_CALL WallFloorWrapper::dispose()
-    throw (uno::RuntimeException)
 {
     Reference< uno::XInterface > xSource( static_cast< ::cppu::OWeakObject* >( this ) );
     m_aEventListenerContainer.disposeAndClear( lang::EventObject( xSource ) );
@@ -120,14 +119,12 @@ void SAL_CALL WallFloorWrapper::dispose()
 
 void SAL_CALL WallFloorWrapper::addEventListener(
     const Reference< lang::XEventListener >& xListener )
-    throw (uno::RuntimeException)
 {
 	m_aEventListenerContainer.addInterface( xListener );
 }
 
 void SAL_CALL WallFloorWrapper::removeEventListener(
     const Reference< lang::XEventListener >& aListener )
-    throw (uno::RuntimeException)
 {
 	m_aEventListenerContainer.removeInterface( aListener );
 }

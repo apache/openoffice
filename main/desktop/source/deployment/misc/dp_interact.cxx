@@ -57,11 +57,10 @@ public:
     // XInterface
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
-    virtual Any SAL_CALL queryInterface( Type const & type )
-        throw (RuntimeException);
+    virtual Any SAL_CALL queryInterface( Type const & type );
 
     // XInteractionContinuation
-    virtual void SAL_CALL select() throw (RuntimeException);
+    virtual void SAL_CALL select();
 };
 
 // XInterface
@@ -79,7 +78,6 @@ void InteractionContinuationImpl::release() throw ()
 
 //______________________________________________________________________________
 Any InteractionContinuationImpl::queryInterface( Type const & type )
-    throw (RuntimeException)
 {
     if (type.isAssignableFrom( m_type )) {
         Reference<task::XInteractionContinuation> xThis(this);
@@ -91,7 +89,7 @@ Any InteractionContinuationImpl::queryInterface( Type const & type )
 
 // XInteractionContinuation
 //______________________________________________________________________________
-void InteractionContinuationImpl::select() throw (RuntimeException)
+void InteractionContinuationImpl::select()
 {
     *m_pselect = true;
 }
@@ -112,22 +110,21 @@ public:
         {}
 
     // XInteractionRequest
-    virtual Any SAL_CALL getRequest()
-        throw (RuntimeException);
+    virtual Any SAL_CALL getRequest();
     virtual Sequence< Reference<task::XInteractionContinuation> >
-    SAL_CALL getContinuations() throw (RuntimeException);
+    SAL_CALL getContinuations();
 };
 
 // XInteractionRequest
 //______________________________________________________________________________
-Any InteractionRequest::getRequest() throw (RuntimeException)
+Any InteractionRequest::getRequest()
 {
     return m_request;
 }
 
 //______________________________________________________________________________
 Sequence< Reference< task::XInteractionContinuation > >
-InteractionRequest::getContinuations() throw (RuntimeException)
+InteractionRequest::getContinuations()
 {
     return m_conts;
 }
@@ -170,7 +167,7 @@ bool interactContinuation( Any const & request,
 
 // XAbortChannel
 //______________________________________________________________________________
-void AbortChannel::sendAbort() throw (RuntimeException)
+void AbortChannel::sendAbort()
 {
     m_aborted = true;
     if (m_xNext.is())

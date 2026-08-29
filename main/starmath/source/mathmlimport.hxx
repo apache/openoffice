@@ -98,15 +98,13 @@ public:
     virtual ~SmXMLImport() throw ();
 
     // XServiceInfo (override parent method)
-    ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
+    ::rtl::OUString SAL_CALL getImplementationName();
 
     // XUnoTunnel
-    sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw(::com::sun::star::uno::RuntimeException);
+    sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId );
     static const ::com::sun::star::uno::Sequence< sal_Int8 > & getUnoTunnelId() throw();
 
-    void SAL_CALL endDocument(void)
-        throw( ::com::sun::star::xml::sax::SAXException,
-        ::com::sun::star::uno::RuntimeException );
+    void SAL_CALL endDocument(void);
 
     SvXMLImportContext *CreateContext(sal_uInt16 nPrefix,
         const rtl::OUString &rLocalName,

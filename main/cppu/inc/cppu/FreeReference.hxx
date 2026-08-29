@@ -84,27 +84,27 @@ namespace cppu
 			clear();
 		}
 
-		cssuno::Environment getEnv() const throw (cssuno::RuntimeException)
+		cssuno::Environment getEnv() const
 		{
 			return m_env;
 		}
 
-        cssuno::Reference<T> get() const throw (cssuno::RuntimeException)
+        cssuno::Reference<T> get() const
         {
             return cssuno::Reference<T>(cppu::mapIn(m_pObject, m_env), SAL_NO_ACQUIRE);
         }
 
-        operator cssuno::Reference<T> () const throw (cssuno::RuntimeException)
+        operator cssuno::Reference<T> () const
         {
             return get();
         }
 
-        cssuno::Reference<T> operator -> () const throw (cssuno::RuntimeException)
+        cssuno::Reference<T> operator -> () const
         {
             return get();
         }
 
-        bool is() const throw (cssuno::RuntimeException)
+        bool is() const
         {
             return m_pObject != NULL;
         }

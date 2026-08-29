@@ -63,7 +63,6 @@ class RecentFilesStringLength : public ::cppu::WeakImplHelper1< ::com::sun::star
 
 		// XStringWidth
 		sal_Int32 SAL_CALL queryStringWidth( const ::rtl::OUString& aString )
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			return aString.getLength();
 		}
@@ -280,7 +279,7 @@ void RecentFilesMenuController::executeEntry( sal_Int32 nIndex )
 }
 
 // XEventListener
-void SAL_CALL RecentFilesMenuController::disposing( const EventObject& ) throw ( RuntimeException )
+void SAL_CALL RecentFilesMenuController::disposing( const EventObject& )
 {
 	Reference< css::awt::XMenuListener > xHolder(( OWeakObject *)this, UNO_QUERY );
 
@@ -295,13 +294,13 @@ void SAL_CALL RecentFilesMenuController::disposing( const EventObject& ) throw (
 }
 
 // XStatusListener
-void SAL_CALL RecentFilesMenuController::statusChanged( const FeatureStateEvent& Event ) throw ( RuntimeException )
+void SAL_CALL RecentFilesMenuController::statusChanged( const FeatureStateEvent& Event )
 {
 	osl::MutexGuard aLock( m_aMutex );
 	m_bDisabled = !Event.IsEnabled;
 }
 
-void SAL_CALL RecentFilesMenuController::itemSelected( const css::awt::MenuEvent& rEvent ) throw (RuntimeException)
+void SAL_CALL RecentFilesMenuController::itemSelected( const css::awt::MenuEvent& rEvent )
 {
 	Reference< css::awt::XPopupMenu > xPopupMenu;
 
@@ -324,7 +323,7 @@ void SAL_CALL RecentFilesMenuController::itemSelected( const css::awt::MenuEvent
 	}
 }
 
-void SAL_CALL RecentFilesMenuController::itemActivated( const css::awt::MenuEvent& ) throw (RuntimeException)
+void SAL_CALL RecentFilesMenuController::itemActivated( const css::awt::MenuEvent& )
 {
 	osl::MutexGuard aLock( m_aMutex );
 	impl_setPopupMenu();
@@ -342,7 +341,6 @@ Reference< XDispatch > SAL_CALL RecentFilesMenuController::queryDispatch(
 	const URL& aURL,
 	const ::rtl::OUString& /*sTarget*/,
 	sal_Int32 /*nFlags*/ )
-throw( RuntimeException )
 {
 	osl::MutexGuard aLock( m_aMutex );
 
@@ -358,7 +356,6 @@ throw( RuntimeException )
 void SAL_CALL RecentFilesMenuController::dispatch(
 	const URL& aURL,
 	const Sequence< PropertyValue >& /*seqProperties*/ )
-throw( RuntimeException )
 {
 	osl::MutexGuard aLock( m_aMutex );
 

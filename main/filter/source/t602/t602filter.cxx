@@ -143,7 +143,6 @@ T602ImportFilter::~T602ImportFilter()
 
 // XExtendedTypeDetection
 ::rtl::OUString T602ImportFilter::detect( Sequence<PropertyValue>& Descriptor)
-    throw(RuntimeException)
 {
 	// checks for filter or type name would be necessary in case we want to use the filter also for "602" files
 	// without the magic bytes at the beginning; I leave the code as comment in case of
@@ -183,21 +182,18 @@ T602ImportFilter::~T602ImportFilter()
 
 // XFilter
 sal_Bool SAL_CALL T602ImportFilter::filter( const Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-	throw (RuntimeException)
 {
 	return importImpl ( aDescriptor );
 }
 
 // XImporter
 void SAL_CALL T602ImportFilter::setTargetDocument( const Reference< ::com::sun::star::lang::XComponent >& xDoc )
-	throw (::com::sun::star::lang::IllegalArgumentException, RuntimeException)
 {
 	mxDoc = xDoc;
 }
 
 // XInitialization
 void SAL_CALL T602ImportFilter::initialize( const Sequence< Any >& aArguments )
-    throw (Exception, RuntimeException)
 {
     Sequence < PropertyValue > aAnySeq;
     sal_Int32 nLength = aArguments.getLength();
@@ -250,7 +246,6 @@ void T602ImportFilter::inschr(unsigned char ch)
 }
 
 sal_Bool SAL_CALL T602ImportFilter::importImpl( const Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-    throw (RuntimeException)
 {
     Reset602();
 
@@ -860,19 +855,16 @@ void T602ImportFilter::Read602()
 
 // XServiceInfo
 OUString SAL_CALL T602ImportFilter::getImplementationName(  )
-    throw (RuntimeException)
 {
     return T602ImportFilter_getImplementationName();
 }
 
 sal_Bool SAL_CALL T602ImportFilter::supportsService( const OUString& rServiceName )
-    throw (RuntimeException)
 {
     return T602ImportFilter_supportsService( rServiceName );
 }
 
 Sequence< OUString > SAL_CALL T602ImportFilter::getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     return T602ImportFilter_getSupportedServiceNames();
 }
@@ -880,7 +872,6 @@ Sequence< OUString > SAL_CALL T602ImportFilter::getSupportedServiceNames(  )
 #define IMPLEMENTATION_NAME "com.sun.star.comp.Writer.T602ImportFilter"
 
 OUString T602ImportFilter_getImplementationName ()
-    throw (RuntimeException)
 {
     return OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
@@ -888,14 +879,12 @@ OUString T602ImportFilter_getImplementationName ()
 #define SERVICE_NAME1 "com.sun.star.document.ImportFilter"
 #define SERVICE_NAME2 "com.sun.star.document.ExtendedTypeDetection"
 sal_Bool SAL_CALL T602ImportFilter_supportsService( const OUString& ServiceName )
-    throw (RuntimeException)
 {
     return (ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME1 ) ) ||
         ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME2 ) ) );
 }
 
 Sequence< OUString > SAL_CALL T602ImportFilter_getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     Sequence < OUString > aRet(2);
     OUString* pArray = aRet.getArray();
@@ -908,7 +897,6 @@ Sequence< OUString > SAL_CALL T602ImportFilter_getSupportedServiceNames(  )
 #undef IMPLEMENTATION_NAME
 
 Reference< XInterface > SAL_CALL T602ImportFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
-    throw( Exception )
 {
     return (cppu::OWeakObject*) new T602ImportFilter( rSMgr );
 }
@@ -946,14 +934,12 @@ T602ImportFilterDialog::~T602ImportFilterDialog()
 // XLocalizable
 
 void SAL_CALL T602ImportFilterDialog::setLocale( const Locale& eLocale )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	meLocale = eLocale;
 	initLocale();
 }
 
 Locale SAL_CALL T602ImportFilterDialog::getLocale()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return meLocale;
 }
@@ -1177,12 +1163,10 @@ ResMgr* T602ImportFilterDialog::getResMgr()
 }
 
 void SAL_CALL T602ImportFilterDialog::setTitle( const ::rtl::OUString& )
-            throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
 sal_Int16 SAL_CALL T602ImportFilterDialog::execute()
-            throw (::com::sun::star::uno::RuntimeException)
 {
     if (OptionsDlg())
 		return com::sun::star::ui::dialogs::ExecutableDialogResults::OK;
@@ -1196,33 +1180,28 @@ rtl::OUString T602ImportFilterDialog::getResStr( sal_Int16 resid )
 	return sStr;
 }
 
-uno::Sequence<beans::PropertyValue> SAL_CALL T602ImportFilterDialog::getPropertyValues() throw(uno::RuntimeException)
+uno::Sequence<beans::PropertyValue> SAL_CALL T602ImportFilterDialog::getPropertyValues()
 {
 	return uno::Sequence<beans::PropertyValue>();
 }
 
 void SAL_CALL T602ImportFilterDialog::setPropertyValues( const uno::Sequence<beans::PropertyValue>& )
-					throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-							lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
 }
 
 
 // XServiceInfo
 OUString SAL_CALL T602ImportFilterDialog::getImplementationName(  )
-    throw (RuntimeException)
 {
     return T602ImportFilterDialog_getImplementationName();
 }
 
 sal_Bool SAL_CALL T602ImportFilterDialog::supportsService( const OUString& rServiceName )
-    throw (RuntimeException)
 {
     return T602ImportFilterDialog_supportsService( rServiceName );
 }
 
 Sequence< OUString > SAL_CALL T602ImportFilterDialog::getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     return T602ImportFilterDialog_getSupportedServiceNames();
 }
@@ -1230,20 +1209,17 @@ Sequence< OUString > SAL_CALL T602ImportFilterDialog::getSupportedServiceNames( 
 #define IMPLEMENTATION_NAME "com.sun.star.comp.Writer.T602ImportFilterDialog"
 
 OUString T602ImportFilterDialog_getImplementationName ()
-    throw (RuntimeException)
 {
     return OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
 #define SERVICE_NAME "com.sun.star.ui.dialogs.FilterOptionsDialog"
 sal_Bool SAL_CALL T602ImportFilterDialog_supportsService( const OUString& ServiceName )
-    throw (RuntimeException)
 {
     return ( ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) ) );
 }
 
 Sequence< OUString > SAL_CALL T602ImportFilterDialog_getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -1253,7 +1229,6 @@ Sequence< OUString > SAL_CALL T602ImportFilterDialog_getSupportedServiceNames(  
 #undef SERVICE_NAME
 
 Reference< XInterface > SAL_CALL T602ImportFilterDialog_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
-    throw( Exception )
 {
     return (cppu::OWeakObject*) new T602ImportFilterDialog( rSMgr );
 }

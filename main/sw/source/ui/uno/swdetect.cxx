@@ -88,7 +88,7 @@ SwFilterDetect::~SwFilterDetect()
 {
 }
 
-::rtl::OUString SAL_CALL SwFilterDetect::detect( uno::Sequence< beans::PropertyValue >& lDescriptor ) throw( uno::RuntimeException )
+::rtl::OUString SAL_CALL SwFilterDetect::detect( uno::Sequence< beans::PropertyValue >& lDescriptor )
 {
     REFERENCE< XInputStream > xStream;
     REFERENCE< XContent > xContent;
@@ -433,13 +433,13 @@ SwFilterDetect::~SwFilterDetect()
 SFX_IMPL_SINGLEFACTORY( SwFilterDetect )
 
 /* XServiceInfo */
-UNOOUSTRING SAL_CALL SwFilterDetect::getImplementationName() throw( UNORUNTIMEEXCEPTION )
+UNOOUSTRING SAL_CALL SwFilterDetect::getImplementationName()
 {
     return impl_getStaticImplementationName();
 }
                                                                                                                                 \
 /* XServiceInfo */
-sal_Bool SAL_CALL SwFilterDetect::supportsService( const UNOOUSTRING& sServiceName ) throw( UNORUNTIMEEXCEPTION )
+sal_Bool SAL_CALL SwFilterDetect::supportsService( const UNOOUSTRING& sServiceName )
 {
     UNOSEQUENCE< UNOOUSTRING >  seqServiceNames =   getSupportedServiceNames();
     const UNOOUSTRING*          pArray          =   seqServiceNames.getConstArray();
@@ -454,7 +454,7 @@ sal_Bool SAL_CALL SwFilterDetect::supportsService( const UNOOUSTRING& sServiceNa
 }
 
 /* XServiceInfo */
-UNOSEQUENCE< UNOOUSTRING > SAL_CALL SwFilterDetect::getSupportedServiceNames() throw( UNORUNTIMEEXCEPTION )
+UNOSEQUENCE< UNOOUSTRING > SAL_CALL SwFilterDetect::getSupportedServiceNames()
 {
     return impl_getStaticSupportedServiceNames();
 }
@@ -477,7 +477,7 @@ UNOOUSTRING SwFilterDetect::impl_getStaticImplementationName()
 }
 
 /* Helper for registry */
-UNOREFERENCE< UNOXINTERFACE > SAL_CALL SwFilterDetect::impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager ) throw( UNOEXCEPTION )
+UNOREFERENCE< UNOXINTERFACE > SAL_CALL SwFilterDetect::impl_createInstance( const UNOREFERENCE< UNOXMULTISERVICEFACTORY >& xServiceManager )
 {
     return UNOREFERENCE< UNOXINTERFACE >( *new SwFilterDetect( xServiceManager ) );
 }

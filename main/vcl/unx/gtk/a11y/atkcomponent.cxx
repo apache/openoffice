@@ -35,7 +35,7 @@
 using namespace ::com::sun::star;
 
 static accessibility::XAccessibleComponent*
-    getComponent( AtkComponent *pComponent ) throw (uno::RuntimeException)
+    getComponent( AtkComponent *pComponent )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pComponent );
     if( pWrap )

@@ -163,19 +163,19 @@ namespace svgio
 #endif
         }
 
-        void SvgDocHdl::startDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::startDocument(  )
         {
             OSL_ENSURE(!mpTarget, "Already a target at document start (!)");
             OSL_ENSURE(!maCssContents.size(), "SvgDocHdl startDocument with active css style stack entry (!)");
         }
 
-        void SvgDocHdl::endDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::endDocument(  )
         {
             OSL_ENSURE(!mpTarget, "Still a target at document end (!)");
             OSL_ENSURE(!maCssContents.size(), "SvgDocHdl endDocument with active css style stack entry (!)");
         }
 
-        void SvgDocHdl::startElement( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs ) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::startElement( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs )
         {
             if(aName.getLength())
             {
@@ -405,7 +405,7 @@ namespace svgio
             }
         }
 
-        void SvgDocHdl::endElement( const ::rtl::OUString& aName ) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::endElement( const ::rtl::OUString& aName )
         {
             if(aName.getLength())
             {
@@ -538,7 +538,7 @@ namespace svgio
             }
         }
 
-        void SvgDocHdl::characters( const ::rtl::OUString& aChars ) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::characters( const ::rtl::OUString& aChars )
         {
             const sal_uInt32 nLength(aChars.getLength());
 
@@ -613,15 +613,15 @@ namespace svgio
             }
         }
 
-        void SvgDocHdl::ignorableWhitespace(const ::rtl::OUString& /*aWhitespaces*/) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::ignorableWhitespace(const ::rtl::OUString& /*aWhitespaces*/)
         {
         }
 
-        void SvgDocHdl::processingInstruction(const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::processingInstruction(const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/)
         {
         }
 
-        void SvgDocHdl::setDocumentLocator(const uno::Reference< xml::sax::XLocator >& /*xLocator*/) throw (xml::sax::SAXException, uno::RuntimeException)
+        void SvgDocHdl::setDocumentLocator(const uno::Reference< xml::sax::XLocator >& /*xLocator*/)
         {
         }
     } // end of namespace svgreader

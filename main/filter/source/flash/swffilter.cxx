@@ -85,12 +85,12 @@ public:
 	}
 
     // stario::XOutputStream
-    virtual void SAL_CALL writeBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL flush(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL closeOutput(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL writeBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData );
+    virtual void SAL_CALL flush(  );
+    virtual void SAL_CALL closeOutput(  );
 };
 
-void SAL_CALL OslOutputStreamWrapper::writeBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OslOutputStreamWrapper::writeBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData )
 {
     sal_uInt64 uBytesToWrite = aData.getLength();
     sal_uInt64 uBytesWritten = 0;
@@ -124,11 +124,11 @@ void SAL_CALL OslOutputStreamWrapper::writeBytes( const ::com::sun::star::uno::S
     }
 }
 
-void SAL_CALL OslOutputStreamWrapper::flush(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OslOutputStreamWrapper::flush(  )
 {
 }
 
-void SAL_CALL OslOutputStreamWrapper::closeOutput(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OslOutputStreamWrapper::closeOutput(  )
 {
     osl::File::RC eRC = mrFile.close();
 
@@ -171,23 +171,23 @@ public:
 	FlashExportFilter( const Reference< XMultiServiceFactory > &rxMSF);
 
 	// XFilter
-    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& aDescriptor ) throw(RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& aDescriptor );
 
     sal_Bool ExportAsMultipleFiles( const Sequence< PropertyValue >& aDescriptor );
     sal_Bool ExportAsSingleFile( const Sequence< PropertyValue >& aDescriptor );
 
-    virtual void SAL_CALL cancel( ) throw (RuntimeException);
+    virtual void SAL_CALL cancel( );
 
 	// XExporter
-    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc ) throw(IllegalArgumentException, RuntimeException);
+    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// XServiceInfo
-    virtual OUString SAL_CALL getImplementationName() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()  throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 };
 
 // -----------------------------------------------------------------------------
@@ -250,7 +250,6 @@ TYPE findPropertyValue(const Sequence< PropertyValue >& aPropertySequence, const
 }
 
 sal_Bool SAL_CALL FlashExportFilter::filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-	throw (RuntimeException)
 {
 	mxStatusIndicator = findPropertyValue<Reference<XStatusIndicator> >(aDescriptor, "StatusIndicator", mxStatusIndicator);
 
@@ -509,7 +508,6 @@ sal_Bool FlashExportFilter::ExportAsSingleFile(const Sequence< PropertyValue >& 
 // -----------------------------------------------------------------------------
 
 void SAL_CALL FlashExportFilter::cancel(  )
-	throw (RuntimeException)
 {
 }
 
@@ -517,7 +515,6 @@ void SAL_CALL FlashExportFilter::cancel(  )
 
 // XExporter
 void SAL_CALL FlashExportFilter::setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-	throw (::com::sun::star::lang::IllegalArgumentException, RuntimeException)
 {
 	mxDoc = xDoc;
 }
@@ -526,14 +523,12 @@ void SAL_CALL FlashExportFilter::setSourceDocument( const ::com::sun::star::uno:
 
 // XInitialization
 void SAL_CALL FlashExportFilter::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& /* aArguments */ )
-	throw (Exception, RuntimeException)
 {
 }
 
 // -----------------------------------------------------------------------------
 
 OUString FlashExportFilter_getImplementationName ()
-	throw (RuntimeException)
 {
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.comp.Impress.FlashExportFilter" ) );
 }
@@ -543,7 +538,6 @@ OUString FlashExportFilter_getImplementationName ()
 #define SERVICE_NAME "com.sun.star.document.ExportFilter"
 
 sal_Bool SAL_CALL FlashExportFilter_supportsService( const OUString& ServiceName )
-	throw (RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
 }
@@ -551,7 +545,6 @@ sal_Bool SAL_CALL FlashExportFilter_supportsService( const OUString& ServiceName
 // -----------------------------------------------------------------------------
 
 Sequence< OUString > SAL_CALL FlashExportFilter_getSupportedServiceNames(  )
-	throw (RuntimeException)
 {
 	Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -563,7 +556,6 @@ Sequence< OUString > SAL_CALL FlashExportFilter_getSupportedServiceNames(  )
 // -----------------------------------------------------------------------------
 
 Reference< XInterface > SAL_CALL FlashExportFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*) new FlashExportFilter( rSMgr );
 }
@@ -572,7 +564,6 @@ Reference< XInterface > SAL_CALL FlashExportFilter_createInstance( const Referen
 
 // XServiceInfo
 OUString SAL_CALL FlashExportFilter::getImplementationName(  )
-	throw (RuntimeException)
 {
 	return FlashExportFilter_getImplementationName();
 }
@@ -580,7 +571,6 @@ OUString SAL_CALL FlashExportFilter::getImplementationName(  )
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL FlashExportFilter::supportsService( const OUString& rServiceName )
-	throw (RuntimeException)
 {
     return FlashExportFilter_supportsService( rServiceName );
 }
@@ -588,7 +578,6 @@ sal_Bool SAL_CALL FlashExportFilter::supportsService( const OUString& rServiceNa
 // -----------------------------------------------------------------------------
 
 ::com::sun::star::uno::Sequence< OUString > SAL_CALL FlashExportFilter::getSupportedServiceNames(  )
-	throw (RuntimeException)
 {
     return FlashExportFilter_getSupportedServiceNames();
 }

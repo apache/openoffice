@@ -92,7 +92,6 @@ SEInitializer_NssImpl::~SEInitializer_NssImpl()
 /* XSEInitializer */
 cssu::Reference< cssxc::XXMLSecurityContext > SAL_CALL
     SEInitializer_NssImpl::createSecurityContext( const ::rtl::OUString& )
-    throw (cssu::RuntimeException)
 {
     CERTCertDBHandle    *pCertHandle = NULL ;
 
@@ -133,7 +132,6 @@ cssu::Reference< cssxc::XXMLSecurityContext > SAL_CALL
 }
 
 void SAL_CALL SEInitializer_NssImpl::freeSecurityContext( const cssu::Reference< cssxc::XXMLSecurityContext >& )
-    throw (cssu::RuntimeException)
 {
     /*
      * because the security context will free all its content when it
@@ -145,20 +143,17 @@ void SAL_CALL SEInitializer_NssImpl::freeSecurityContext( const cssu::Reference<
 }
 
 rtl::OUString SEInitializer_NssImpl_getImplementationName ()
-    throw (cssu::RuntimeException)
 {
 
     return rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
 sal_Bool SAL_CALL SEInitializer_NssImpl_supportsService( const rtl::OUString& ServiceName )
-    throw (cssu::RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SE_SERVICE_NAME )) || ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( NSS_SERVICE_NAME ));
 }
 
 cssu::Sequence< rtl::OUString > SAL_CALL SEInitializer_NssImpl_getSupportedServiceNames(  )
-    throw (cssu::RuntimeException)
 {
     cssu::Sequence < rtl::OUString > aRet(2);
     rtl::OUString* pArray = aRet.getArray();
@@ -168,24 +163,20 @@ cssu::Sequence< rtl::OUString > SAL_CALL SEInitializer_NssImpl_getSupportedServi
 }
 
 cssu::Reference< cssu::XInterface > SAL_CALL SEInitializer_NssImpl_createInstance( const cssu::Reference< cssl::XMultiServiceFactory > & rSMgr)
-    throw( cssu::Exception )
 {
     return (cppu::OWeakObject*) new SEInitializer_NssImpl(rSMgr);
 }
 
 /* XServiceInfo */
 rtl::OUString SAL_CALL SEInitializer_NssImpl::getImplementationName(  )
-    throw (cssu::RuntimeException)
 {
     return SEInitializer_NssImpl_getImplementationName();
 }
 sal_Bool SAL_CALL SEInitializer_NssImpl::supportsService( const rtl::OUString& rServiceName )
-    throw (cssu::RuntimeException)
 {
     return SEInitializer_NssImpl_supportsService( rServiceName );
 }
 cssu::Sequence< rtl::OUString > SAL_CALL SEInitializer_NssImpl::getSupportedServiceNames(  )
-    throw (cssu::RuntimeException)
 {
     return SEInitializer_NssImpl_getSupportedServiceNames();
 }

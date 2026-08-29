@@ -40,6 +40,7 @@
 
 #include <map>
 #include <algorithm>
+#include <iterator>
 
 #include <com/sun/star/chart2/XTitled.hpp>
 #include <com/sun/star/chart2/XCoordinateSystemContainer.hpp>

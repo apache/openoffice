@@ -51,12 +51,10 @@ public:
 	VCLXAccessibleDropDownComboBox (VCLXWindow* pVCLXindow);
 
 	// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName (void);
     // Return drop down combo box specific services.
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames (void);
 
 protected:
 	virtual ~VCLXAccessibleDropDownComboBox (void);

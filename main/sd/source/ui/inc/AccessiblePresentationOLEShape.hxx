@@ -44,22 +44,19 @@ public:
 	/**	Returns an identifier for the implementation of this object.
 	 */
 	virtual ::rtl::OUString SAL_CALL
-		getImplementationName (void)
-		throw (::com::sun::star::uno::RuntimeException);
+		getImplementationName (void);
 
 	// ===== internal ========================================================
 
 	//	Create a name string that contains the accessible name.
 	virtual ::rtl::OUString
-		CreateAccessibleBaseName ()
-		throw (::com::sun::star::uno::RuntimeException);
+		CreateAccessibleBaseName ();
 
 	//	Create a description string that contains the accessible description.
 	virtual ::rtl::OUString
-		CreateAccessibleDescription ()
-		throw (::com::sun::star::uno::RuntimeException);
+		CreateAccessibleDescription ();
 	//	Return this object's role.
-	virtual sal_Int16 SAL_CALL getAccessibleRole () throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int16 SAL_CALL getAccessibleRole ();
 };
 
 } // end of namespace accessibility

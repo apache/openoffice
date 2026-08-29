@@ -74,8 +74,6 @@ sal_Int32 lcl_GetEventFromName( const rtl::OUString& aName )
 // XNameReplace
 
 void SAL_CALL ScSheetEventsObj::replaceByName( const rtl::OUString& aName, const uno::Any& aElement )
-    throw(lang::IllegalArgumentException, container::NoSuchElementException,
-          lang::WrappedTargetException, uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     if (!mpDocShell)
@@ -127,7 +125,6 @@ void SAL_CALL ScSheetEventsObj::replaceByName( const rtl::OUString& aName, const
 // XNameAccess
 
 uno::Any SAL_CALL ScSheetEventsObj::getByName( const rtl::OUString& aName )
-    throw(container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     sal_Int32 nEvent = lcl_GetEventFromName(aName);
@@ -158,7 +155,7 @@ uno::Any SAL_CALL ScSheetEventsObj::getByName( const rtl::OUString& aName )
     return aRet;
 }
 
-uno::Sequence<rtl::OUString> SAL_CALL ScSheetEventsObj::getElementNames() throw(uno::RuntimeException)
+uno::Sequence<rtl::OUString> SAL_CALL ScSheetEventsObj::getElementNames()
 {
     ScUnoGuard aGuard;
     uno::Sequence<rtl::OUString> aNames(SC_SHEETEVENT_COUNT);
@@ -167,7 +164,7 @@ uno::Sequence<rtl::OUString> SAL_CALL ScSheetEventsObj::getElementNames() throw(
     return aNames;
 }
 
-sal_Bool SAL_CALL ScSheetEventsObj::hasByName( const ::rtl::OUString& aName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScSheetEventsObj::hasByName( const ::rtl::OUString& aName )
 {
     ScUnoGuard aGuard;
     sal_Int32 nEvent = lcl_GetEventFromName(aName);
@@ -176,13 +173,13 @@ sal_Bool SAL_CALL ScSheetEventsObj::hasByName( const ::rtl::OUString& aName ) th
 
 // XElementAccess
 
-uno::Type SAL_CALL ScSheetEventsObj::getElementType() throw(uno::RuntimeException)
+uno::Type SAL_CALL ScSheetEventsObj::getElementType()
 {
     ScUnoGuard aGuard;
     return getCppuType((uno::Sequence<beans::PropertyValue>*)0);
 }
 
-sal_Bool SAL_CALL ScSheetEventsObj::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScSheetEventsObj::hasElements()
 {
     ScUnoGuard aGuard;
     if (mpDocShell)

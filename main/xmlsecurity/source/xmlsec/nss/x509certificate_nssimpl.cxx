@@ -72,7 +72,7 @@ X509Certificate_NssImpl :: ~X509Certificate_NssImpl() {
 }
 
 //Methods from XCertificate
-sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::star::uno::RuntimeException) {
+sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() {
 	if( m_pCert != NULL ) {
 		if( m_pCert->version.len > 0 ) {
 			return ( char )*( m_pCert->version.data ) ;
@@ -83,7 +83,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getSerialNumber() throw ( ::com::sun::star::uno::RuntimeException) {
+::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getSerialNumber() {
 	if( m_pCert != NULL && m_pCert->serialNumber.len > 0 ) {
 		Sequence< sal_Int8 > serial( m_pCert->serialNumber.len ) ;
 		for( unsigned int i = 0 ; i < m_pCert->serialNumber.len ; i ++ )
@@ -95,7 +95,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::rtl::OUString SAL_CALL X509Certificate_NssImpl :: getIssuerName() throw ( ::com::sun::star::uno::RuntimeException) {
+::rtl::OUString SAL_CALL X509Certificate_NssImpl :: getIssuerName() {
 	if( m_pCert != NULL ) {
 		return OUString(m_pCert->issuerName , PL_strlen(m_pCert->issuerName) , RTL_TEXTENCODING_UTF8) ;
 	} else {
@@ -103,7 +103,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::rtl::OUString SAL_CALL X509Certificate_NssImpl :: getSubjectName() throw ( ::com::sun::star::uno::RuntimeException) {
+::rtl::OUString SAL_CALL X509Certificate_NssImpl :: getSubjectName() {
 	if( m_pCert != NULL ) {
 		return OUString(m_pCert->subjectName , PL_strlen(m_pCert->subjectName) , RTL_TEXTENCODING_UTF8);
 	} else {
@@ -111,7 +111,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::com::sun::star::util::DateTime SAL_CALL X509Certificate_NssImpl :: getNotValidBefore() throw ( ::com::sun::star::uno::RuntimeException) {
+::com::sun::star::util::DateTime SAL_CALL X509Certificate_NssImpl :: getNotValidBefore() {
 	if( m_pCert != NULL ) {
 		SECStatus rv ;
 		PRTime notBefore ;
@@ -140,7 +140,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::com::sun::star::util::DateTime SAL_CALL X509Certificate_NssImpl :: getNotValidAfter() throw ( ::com::sun::star::uno::RuntimeException) {
+::com::sun::star::util::DateTime SAL_CALL X509Certificate_NssImpl :: getNotValidAfter() {
 	if( m_pCert != NULL ) {
 		SECStatus rv ;
 		PRTime notAfter ;
@@ -169,7 +169,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getIssuerUniqueID() throw ( ::com::sun::star::uno::RuntimeException) {
+::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getIssuerUniqueID() {
 	if( m_pCert != NULL && m_pCert->issuerID.len > 0 ) {
 		Sequence< sal_Int8 > issuerUid( m_pCert->issuerID.len ) ;
 		for( unsigned int i = 0 ; i < m_pCert->issuerID.len ; i ++ )
@@ -181,7 +181,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getSubjectUniqueID() throw ( ::com::sun::star::uno::RuntimeException) {
+::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getSubjectUniqueID() {
 	if( m_pCert != NULL && m_pCert->subjectID.len > 0 ) {
 		Sequence< sal_Int8 > subjectUid( m_pCert->subjectID.len ) ;
 		for( unsigned int i = 0 ; i < m_pCert->subjectID.len ; i ++ )
@@ -193,7 +193,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificateExtension > > SAL_CALL X509Certificate_NssImpl :: getExtensions() throw ( ::com::sun::star::uno::RuntimeException) {
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificateExtension > > SAL_CALL X509Certificate_NssImpl :: getExtensions() {
 	if( m_pCert != NULL && m_pCert->extensions != NULL ) {
 		CERTCertExtension** extns ;
 		CertificateExtension_XmlSecImpl* pExtn ;
@@ -235,7 +235,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 	}
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificateExtension > SAL_CALL X509Certificate_NssImpl :: findCertificateExtension( const ::com::sun::star::uno::Sequence< sal_Int8 >& oid ) throw (::com::sun::star::uno::RuntimeException) {
+::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificateExtension > SAL_CALL X509Certificate_NssImpl :: findCertificateExtension( const ::com::sun::star::uno::Sequence< sal_Int8 >& oid ) {
 	if( m_pCert != NULL && m_pCert->extensions != NULL ) {
 		CertificateExtension_XmlSecImpl* pExtn ;
 		CERTCertExtension** extns ;
@@ -269,7 +269,7 @@ sal_Int16 SAL_CALL X509Certificate_NssImpl :: getVersion() throw ( ::com::sun::s
 }
 
 
-::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getEncoded() throw ( ::com::sun::star::uno::RuntimeException) {
+::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl :: getEncoded() {
 	if( m_pCert != NULL && m_pCert->derCert.len > 0 ) {
 		Sequence< sal_Int8 > rawCert( m_pCert->derCert.len ) ;
 
@@ -302,7 +302,7 @@ const CERTCertificate* X509Certificate_NssImpl :: getNssCert() const {
 	}
 }
 
-void X509Certificate_NssImpl :: setRawCert( Sequence< sal_Int8 > rawCert ) throw ( ::com::sun::star::uno::RuntimeException) {
+void X509Certificate_NssImpl :: setRawCert( Sequence< sal_Int8 > rawCert ) {
 	CERTCertificate* cert ;
 	SECItem certItem ;
 
@@ -322,7 +322,7 @@ void X509Certificate_NssImpl :: setRawCert( Sequence< sal_Int8 > rawCert ) throw
 }
 
 /* XUnoTunnel */
-sal_Int64 SAL_CALL X509Certificate_NssImpl :: getSomething( const Sequence< sal_Int8 >& aIdentifier ) throw( RuntimeException ) {
+sal_Int64 SAL_CALL X509Certificate_NssImpl :: getSomething( const Sequence< sal_Int8 >& aIdentifier ) {
 	if( aIdentifier.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), aIdentifier.getConstArray(), 16 ) ) {
 		return sal::static_int_cast<sal_Int64>(reinterpret_cast<sal_uIntPtr>(this));
 	}
@@ -395,7 +395,6 @@ X509Certificate_NssImpl* X509Certificate_NssImpl :: getImplementation( const Ref
 }
 
 ::rtl::OUString SAL_CALL X509Certificate_NssImpl::getSubjectPublicKeyAlgorithm()
-	throw ( ::com::sun::star::uno::RuntimeException)
 {
 	if( m_pCert != NULL )
 	{
@@ -408,7 +407,6 @@ X509Certificate_NssImpl* X509Certificate_NssImpl :: getImplementation( const Ref
 }
 
 ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl::getSubjectPublicKeyValue()
-	throw ( ::com::sun::star::uno::RuntimeException)
 {
 	if( m_pCert != NULL )
 	{
@@ -431,7 +429,6 @@ X509Certificate_NssImpl* X509Certificate_NssImpl :: getImplementation( const Ref
 }
 
 ::rtl::OUString SAL_CALL X509Certificate_NssImpl::getSignatureAlgorithm()
-	throw ( ::com::sun::star::uno::RuntimeException)
 {
 	if( m_pCert != NULL )
 	{
@@ -444,19 +441,16 @@ X509Certificate_NssImpl* X509Certificate_NssImpl :: getImplementation( const Ref
 }
 
 ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl::getSHA1Thumbprint()
-	throw ( ::com::sun::star::uno::RuntimeException)
 {
 	return getThumbprint(m_pCert, SEC_OID_SHA1);
 }
 
 ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL X509Certificate_NssImpl::getMD5Thumbprint()
-	throw ( ::com::sun::star::uno::RuntimeException)
 {
 	return getThumbprint(m_pCert, SEC_OID_MD5);
 }
 
 sal_Int32 SAL_CALL X509Certificate_NssImpl::getCertificateUsage(  )
-	throw ( ::com::sun::star::uno::RuntimeException)
 {
 	SECStatus rv;
 	SECItem tmpitem;

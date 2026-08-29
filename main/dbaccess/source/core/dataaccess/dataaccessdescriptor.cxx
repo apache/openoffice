@@ -98,16 +98,16 @@ namespace dbaccess
         DECLARE_XTYPEPROVIDER()
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     protected:
         ~DataAccessDescriptor();
 
     protected:
 	    // XPropertySet
-	    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo() throw(RuntimeException);
+	    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo();
 	    virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 
 	    // OPropertyArrayUsageHelper
@@ -195,13 +195,13 @@ namespace dbaccess
     IMPLEMENT_FORWARD_XTYPEPROVIDER2( DataAccessDescriptor, DataAccessDescriptor_TypeBase, DataAccessDescriptor_PropertyBase );
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL DataAccessDescriptor::getImplementationName() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL DataAccessDescriptor::getImplementationName()
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.dba.DataAccessDescriptor" ) );
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DataAccessDescriptor::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL DataAccessDescriptor::supportsService( const ::rtl::OUString& rServiceName )
     {
         Sequence< ::rtl::OUString > aServices( getSupportedServiceNames() );
         const ::rtl::OUString* pStart = aServices.getConstArray();
@@ -210,7 +210,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL DataAccessDescriptor::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL DataAccessDescriptor::getSupportedServiceNames(  )
     {
         Sequence< ::rtl::OUString > aServices(1);
         aServices[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.sdb.DataAccessDescriptor" ) );
@@ -218,7 +218,7 @@ namespace dbaccess
     }
 
     //-------------------------------------------------------------------------
-    Reference< XPropertySetInfo > SAL_CALL DataAccessDescriptor::getPropertySetInfo() throw(RuntimeException)
+    Reference< XPropertySetInfo > SAL_CALL DataAccessDescriptor::getPropertySetInfo()
     {
 	    Reference< XPropertySetInfo > xInfo( createPropertySetInfo( getInfoHelper() ) );
 	    return xInfo;
@@ -248,18 +248,18 @@ namespace dbaccess
     {
     public:
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // XServiceInfo - static versions
-        static Sequence< ::rtl::OUString >  getSupportedServiceNames_static(void) throw( RuntimeException );
-        static ::rtl::OUString              getImplementationName_static(void) throw( RuntimeException );
+        static Sequence< ::rtl::OUString >  getSupportedServiceNames_static(void);
+        static ::rtl::OUString              getImplementationName_static(void);
         static Reference< XInterface >      Create(const Reference< XComponentContext >& _rxContext);
         static ::rtl::OUString              getSingletonName_static();
 
         // XDataAccessDescriptorFactory
-        virtual Reference< XPropertySet > SAL_CALL createDataAccessDescriptor(  ) throw (RuntimeException);
+        virtual Reference< XPropertySet > SAL_CALL createDataAccessDescriptor(  );
 
     protected:
         DataAccessDescriptorFactory( const Reference< XComponentContext >& _rxContext );
@@ -287,7 +287,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > DataAccessDescriptorFactory::getSupportedServiceNames_static() throw( RuntimeException )
+    Sequence< ::rtl::OUString > DataAccessDescriptorFactory::getSupportedServiceNames_static()
     {
         Sequence< ::rtl::OUString > aServices(1);
         aServices[0] = getSingletonName_static();
@@ -295,7 +295,7 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString DataAccessDescriptorFactory::getImplementationName_static() throw( RuntimeException )
+    ::rtl::OUString DataAccessDescriptorFactory::getImplementationName_static()
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.dba.DataAccessDescriptorFactory" ) );
     }
@@ -307,13 +307,13 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL DataAccessDescriptorFactory::getImplementationName() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL DataAccessDescriptorFactory::getImplementationName()
     {
         return getImplementationName_static();
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DataAccessDescriptorFactory::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL DataAccessDescriptorFactory::supportsService( const ::rtl::OUString& rServiceName )
     {
         Sequence< ::rtl::OUString > aServices( getSupportedServiceNames_static() );
         const ::rtl::OUString* pStart = aServices.getConstArray();
@@ -322,13 +322,13 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL DataAccessDescriptorFactory::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL DataAccessDescriptorFactory::getSupportedServiceNames(  )
     {
         return getSupportedServiceNames_static();
     }
 
     //--------------------------------------------------------------------
-    Reference< XPropertySet > SAL_CALL DataAccessDescriptorFactory::createDataAccessDescriptor(  ) throw (RuntimeException)
+    Reference< XPropertySet > SAL_CALL DataAccessDescriptorFactory::createDataAccessDescriptor(  )
     {
         return new DataAccessDescriptor( m_aContext );
     }

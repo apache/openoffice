@@ -1063,33 +1063,33 @@ void SvtPathOptions::SetPath( SvtPathOptions::Pathes ePath, const String& rNewPa
 
 class PathService : public ::cppu::WeakImplHelper2< ::com::sun::star::frame::XConfigManager, ::com::sun::star::lang::XServiceInfo >
 {
-    virtual ::rtl::OUString	SAL_CALL	getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL			supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString	SAL_CALL	getImplementationName(  );
+    virtual sal_Bool SAL_CALL			supportsService( const ::rtl::OUString& ServiceName );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-										getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL	substituteVariables( const ::rtl::OUString& sText ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL				addPropertyChangeListener( const ::rtl::OUString& sKeyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL				removePropertyChangeListener( const ::rtl::OUString& sKeyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL				flush(  ) throw(::com::sun::star::uno::RuntimeException);
+										getSupportedServiceNames(  );
+    virtual ::rtl::OUString SAL_CALL	substituteVariables( const ::rtl::OUString& sText );
+    virtual void SAL_CALL				addPropertyChangeListener( const ::rtl::OUString& sKeyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
+    virtual void SAL_CALL				removePropertyChangeListener( const ::rtl::OUString& sKeyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
+    virtual void SAL_CALL				flush(  );
 };
 
 // class PathService -----------------------------------------------------
 
-void SAL_CALL PathService::addPropertyChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& ) throw(::com::sun::star::uno::RuntimeException) {}
-void SAL_CALL PathService::removePropertyChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& ) throw(::com::sun::star::uno::RuntimeException) {}
-void SAL_CALL PathService::flush(  ) throw(::com::sun::star::uno::RuntimeException) {}
+void SAL_CALL PathService::addPropertyChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& ) {}
+void SAL_CALL PathService::removePropertyChangeListener( const ::rtl::OUString&, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& ) {}
+void SAL_CALL PathService::flush(  ) {}
 
-::rtl::OUString SAL_CALL PathService::substituteVariables( const ::rtl::OUString& sText ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL PathService::substituteVariables( const ::rtl::OUString& sText )
 {
     return SvtPathOptions().SubstituteVariable( sText );
 }
 
-::rtl::OUString SAL_CALL PathService::getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL PathService::getImplementationName(  )
 {
     return OUString::createFromAscii("com.sun.star.comp.unotools.PathService");
 }
 
-sal_Bool SAL_CALL PathService::supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL PathService::supportsService( const ::rtl::OUString& ServiceName )
 {
     if ( ServiceName.compareToAscii("com.sun.star.config.SpecialConfigManager") == COMPARE_EQUAL )
         return sal_True;
@@ -1097,7 +1097,7 @@ sal_Bool SAL_CALL PathService::supportsService( const ::rtl::OUString& ServiceNa
         return sal_False;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL PathService::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL PathService::getSupportedServiceNames(  )
 {
     Sequence< OUString > aRet(1);
     *aRet.getArray() = OUString::createFromAscii("com.sun.star.config.SpecialConfigManager");

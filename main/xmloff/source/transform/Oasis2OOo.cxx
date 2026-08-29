@@ -2029,7 +2029,6 @@ const Sequence< sal_Int8 > & Oasis2OOoTransformer::getUnoTunnelId() throw()
 
 // XUnoTunnel
 sal_Int64 SAL_CALL Oasis2OOoTransformer::getSomething( const Sequence< sal_Int8 >& rId )
-	throw(RuntimeException)
 {
     if( rId.getLength() == 16
         && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -2045,19 +2044,16 @@ sal_Int64 SAL_CALL Oasis2OOoTransformer::getSomething( const Sequence< sal_Int8 
 
 // XServiceInfo
 OUString SAL_CALL Oasis2OOoTransformer::getImplementationName()
-    throw(RuntimeException)
 {
 	return Oasis2OOoTransformer_getImplementationName();
 }
 
 sal_Bool SAL_CALL Oasis2OOoTransformer::supportsService( const OUString& )
-	throw(RuntimeException)
 {
     return sal_False;
 }
 
 Sequence< OUString > SAL_CALL Oasis2OOoTransformer::getSupportedServiceNames(  )
-	throw(RuntimeException)
 {
     Sequence<OUString> aSeq(0);
     return aSeq;
@@ -2081,7 +2077,6 @@ Sequence< OUString > SAL_CALL Oasis2OOoTransformer_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL Oasis2OOoTransformer_createInstance(
 		const Reference< XMultiServiceFactory > &)
-	throw( Exception )
 {
 	OSL_TRACE("Creating Oasis2OOoTransformer");
 	return (cppu::OWeakObject*)new Oasis2OOoTransformer;

@@ -64,24 +64,24 @@ namespace connectivity
 
 	{
 
-        sal_Int32 getQueryTimeOut()             throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        sal_Int32 getMaxFieldSize()             throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        sal_Int32 getMaxRows()                  throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        sal_Int32 getResultSetConcurrency()		throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        sal_Int32 getResultSetType()            throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        sal_Int32 getFetchDirection()           throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        sal_Int32 getFetchSize()                throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        ::rtl::OUString getCursorName()         throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+        sal_Int32 getQueryTimeOut();
+        sal_Int32 getMaxFieldSize();
+        sal_Int32 getMaxRows();
+        sal_Int32 getResultSetConcurrency();
+        sal_Int32 getResultSetType();
+        sal_Int32 getFetchDirection();
+        sal_Int32 getFetchSize();
+        ::rtl::OUString getCursorName();
 
-        void setQueryTimeOut(sal_Int32 _par0)                   throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setMaxFieldSize(sal_Int32 _par0)                   throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setMaxRows(sal_Int32 _par0)                                throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setResultSetConcurrency(sal_Int32 _par0)   throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setResultSetType(sal_Int32 _par0)                  throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setFetchDirection(sal_Int32 _par0)                 throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setFetchSize(sal_Int32 _par0)                              throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setCursorName(const ::rtl::OUString &_par0) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-        void setEscapeProcessing(sal_Bool _par0) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+        void setQueryTimeOut(sal_Int32 _par0);
+        void setMaxFieldSize(sal_Int32 _par0);
+        void setMaxRows(sal_Int32 _par0);
+        void setResultSetConcurrency(sal_Int32 _par0);
+        void setResultSetType(sal_Int32 _par0);
+        void setFetchDirection(sal_Int32 _par0);
+        void setFetchSize(sal_Int32 _par0);
+        void setCursorName(const ::rtl::OUString &_par0);
+        void setEscapeProcessing(sal_Bool _par0);
 
 	protected:
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XStatement>		m_xGeneratedStatement;
@@ -108,12 +108,12 @@ namespace connectivity
                                     ::com::sun::star::uno::Any & rOldValue,
                                     sal_Int32 nHandle,
                                     const ::com::sun::star::uno::Any& rValue
-                                )   throw (::com::sun::star::lang::IllegalArgumentException);
+                                );
 
         virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
                                     sal_Int32 nHandle,
                                     const ::com::sun::star::uno::Any& rValue
-                                )   throw (::com::sun::star::uno::Exception);
+                                );
 
         virtual void SAL_CALL getFastPropertyValue(
                                     ::com::sun::star::uno::Any& rValue,
@@ -140,30 +140,30 @@ namespace connectivity
 		// XInterface
 		virtual void SAL_CALL acquire() throw();
 		virtual void SAL_CALL release() throw();
-		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 		//XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
 
 		// XPropertySet
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 		// XStatement
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException) ;
-		virtual sal_Int32 SAL_CALL executeUpdate( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException) ;
-		virtual sal_Bool SAL_CALL execute( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException) ;
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException) ;
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery( const ::rtl::OUString& sql ) ;
+		virtual sal_Int32 SAL_CALL executeUpdate( const ::rtl::OUString& sql ) ;
+		virtual sal_Bool SAL_CALL execute( const ::rtl::OUString& sql ) ;
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection(  ) ;
 		// XWarningsSupplier
-		virtual ::com::sun::star::uno::Any SAL_CALL getWarnings(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL clearWarnings(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL getWarnings(  );
+		virtual void SAL_CALL clearWarnings(  );
 		// XCancellable
-		virtual void SAL_CALL cancel(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL cancel(  );
 		// XCloseable
-		virtual void SAL_CALL close(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL close(  );
 		// XMultipleResults
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getResultSet(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-		virtual sal_Int32 SAL_CALL getUpdateCount(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL getMoreResults(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getResultSet(  );
+		virtual sal_Int32 SAL_CALL getUpdateCount(  );
+		virtual sal_Bool SAL_CALL getMoreResults(  );
 		//XGeneratedResultSet
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getGeneratedValues(  ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getGeneratedValues(  );
 
     public:
         using ::cppu::OPropertySetHelper::getFastPropertyValue;
@@ -202,13 +202,13 @@ namespace connectivity
 		// ein Konstruktor, der fuer das Returnen des Objektes benoetigt wird:
 		java_sql_Statement( JNIEnv * pEnv, java_sql_Connection& _rCon ) : OStatement_BASE2( pEnv, _rCon){};
 
-		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 		virtual void SAL_CALL acquire() throw();
 		virtual void SAL_CALL release() throw();
 		// XBatchExecution
-		virtual void SAL_CALL addBatch( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL clearBatch(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL addBatch( const ::rtl::OUString& sql );
+		virtual void SAL_CALL clearBatch(  );
+		virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch(  );
 	};
 }
 #endif // _CONNECTIVITY_JAVA_SQL_STATEMENT_HXX_

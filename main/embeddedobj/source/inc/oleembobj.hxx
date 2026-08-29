@@ -197,12 +197,10 @@ class OleEmbeddedObject : public ::cppu::WeakImplHelper5
 protected:
 
 	::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > TryToGetAcceptableFormat_Impl(
-									const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xStream )
-		throw ( ::com::sun::star::uno::Exception );
+									const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xStream );
 
 	::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > GetNewFilledTempStream_Impl(
-									const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xInStream )
-		throw( ::com::sun::star::io::IOException );
+									const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xInStream );
 #ifdef WNT
 	void SwitchComponentToRunningState_Impl();
 #endif
@@ -237,26 +235,21 @@ protected:
 							const ::rtl::OUString& sEntName,
 							const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArguments,
 							const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs,
-							sal_Bool bSaveAs )
-		throw ( ::com::sun::star::uno::Exception );
+							sal_Bool bSaveAs );
 #ifdef WNT
-	void StoreObjectToStream( ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream > xOutStream )
-		throw ( ::com::sun::star::uno::Exception );
+	void StoreObjectToStream( ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream > xOutStream );
 #endif
 	void InsertVisualCache_Impl(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xTargetStream,
-			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xCachedVisualRepresentation )
-		throw ( ::com::sun::star::uno::Exception );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xCachedVisualRepresentation );
 
-	void RemoveVisualCache_Impl( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xTargetStream )
-		throw ( ::com::sun::star::uno::Exception );
+	void RemoveVisualCache_Impl( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xTargetStream );
 
 	void SetVisReplInStream( sal_Bool bExists );
 	sal_Bool HasVisReplInStream();
 
 	::com::sun::star::embed::VisualRepresentation GetVisualRepresentationInNativeFormat_Impl(
-					const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > xCachedVisRepr )
-		throw ( ::com::sun::star::uno::Exception );
+					const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > xCachedVisRepr );
 
 	::com::sun::star::uno::Reference< ::com::sun::star::io::XStream > TryToRetrieveCachedVisualRepresentation_Impl(
 					const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xStream,
@@ -308,80 +301,39 @@ public:
 
 // XEmbeddedObject
 
-    virtual void SAL_CALL changeState( sal_Int32 nNewState )
-		throw ( ::com::sun::star::embed::UnreachableStateException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL changeState( sal_Int32 nNewState );
 
-    virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL getReachableStates()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL getReachableStates();
 
-    virtual sal_Int32 SAL_CALL getCurrentState()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL getCurrentState();
 
-    virtual void SAL_CALL doVerb( sal_Int32 nVerbID )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::embed::UnreachableStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL doVerb( sal_Int32 nVerbID );
 
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::embed::VerbDescriptor > SAL_CALL getSupportedVerbs()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::embed::VerbDescriptor > SAL_CALL getSupportedVerbs();
 
     virtual void SAL_CALL setClientSite(
-				const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XEmbeddedClient >& xClient )
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XEmbeddedClient >& xClient );
 
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::embed::XEmbeddedClient > SAL_CALL getClientSite()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::embed::XEmbeddedClient > SAL_CALL getClientSite();
 
-    virtual void SAL_CALL update()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL update();
 
-    virtual void SAL_CALL setUpdateMode( sal_Int32 nMode )
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL setUpdateMode( sal_Int32 nMode );
 
-    virtual sal_Int64 SAL_CALL getStatus( sal_Int64 nAspect )
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual sal_Int64 SAL_CALL getStatus( sal_Int64 nAspect );
 
-    virtual void SAL_CALL setContainerName( const ::rtl::OUString& sName )
-		throw ( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL setContainerName( const ::rtl::OUString& sName );
 
 
 // XVisualObject
 
-    virtual void SAL_CALL setVisualAreaSize( sal_Int64 nAspect, const ::com::sun::star::awt::Size& aSize )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL setVisualAreaSize( sal_Int64 nAspect, const ::com::sun::star::awt::Size& aSize );
 
-    virtual ::com::sun::star::awt::Size SAL_CALL getVisualAreaSize( sal_Int64 nAspect )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::awt::Size SAL_CALL getVisualAreaSize( sal_Int64 nAspect );
 
-    virtual ::com::sun::star::embed::VisualRepresentation SAL_CALL getPreferredVisualRepresentation( ::sal_Int64 nAspect )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::embed::VisualRepresentation SAL_CALL getPreferredVisualRepresentation( ::sal_Int64 nAspect );
 
-    virtual sal_Int32 SAL_CALL getMapUnit( sal_Int64 nAspect )
-		throw ( ::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getMapUnit( sal_Int64 nAspect );
 
 
 // XEmbedPersist
@@ -391,150 +343,88 @@ public:
 					const ::rtl::OUString& sEntName,
 					sal_Int32 nEntryConnectionMode,
 					const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArguments,
-					const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+					const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs );
 
-    virtual void SAL_CALL storeToEntry( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage, const ::rtl::OUString& sEntName, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArguments, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL storeToEntry( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage, const ::rtl::OUString& sEntName, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArguments, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs );
 
     virtual void SAL_CALL storeAsEntry(
 				const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage,
 				const ::rtl::OUString& sEntName,
 				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArguments,
-				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs );
 
-    virtual void SAL_CALL saveCompleted( sal_Bool bUseNew )
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL saveCompleted( sal_Bool bUseNew );
 
-    virtual sal_Bool SAL_CALL hasEntry()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL hasEntry();
 
-    virtual ::rtl::OUString SAL_CALL getEntryName()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getEntryName();
 
 // XLinkageSupport
 
 	virtual void SAL_CALL breakLink( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage,
-									 const ::rtl::OUString& sEntName )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+									 const ::rtl::OUString& sEntName );
 
-    virtual sal_Bool SAL_CALL isLink()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isLink();
 
-    virtual ::rtl::OUString SAL_CALL getLinkURL()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getLinkURL();
 
 // XCommonEmbedPersist
-    virtual void SAL_CALL storeOwn()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL storeOwn();
 
-    virtual sal_Bool SAL_CALL isReadonly()
-		throw ( ::com::sun::star::embed::WrongStateException,
-				::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL isReadonly();
 
     virtual void SAL_CALL reload(
 				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArguments,
-				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::embed::WrongStateException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lObjArgs );
 
 // XClassifiedObject
 
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getClassID()
-		throw ( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getClassID();
 
-    virtual ::rtl::OUString SAL_CALL getClassName()
-		throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getClassName();
 
     virtual void SAL_CALL setClassInfo(
-				const ::com::sun::star::uno::Sequence< sal_Int8 >& aClassID, const ::rtl::OUString& aClassName )
-		throw ( ::com::sun::star::lang::NoSupportException,
-				::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Sequence< sal_Int8 >& aClassID, const ::rtl::OUString& aClassName );
 
 // XStateChangeBroadcaster
-    virtual void SAL_CALL addStateChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStateChangeListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeStateChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStateChangeListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addStateChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStateChangeListener >& xListener );
+    virtual void SAL_CALL removeStateChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStateChangeListener >& xListener );
 
 
 // XComponentSupplier
 
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseable > SAL_CALL getComponent()
-		throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseable > SAL_CALL getComponent();
 
 // XCloseable
 
-    virtual void SAL_CALL close( sal_Bool DeliverOwnership )
-		throw ( ::com::sun::star::util::CloseVetoException,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL close( sal_Bool DeliverOwnership );
 
     virtual void SAL_CALL addCloseListener(
-				const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener )
-		throw ( ::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener );
 
     virtual void SAL_CALL removeCloseListener(
-				const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener )
-		throw ( ::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener );
 
 // XEventBroadcaster
     virtual void SAL_CALL addEventListener(
-				const ::com::sun::star::uno::Reference< ::com::sun::star::document::XEventListener >& Listener )
-		throw ( ::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Reference< ::com::sun::star::document::XEventListener >& Listener );
 
     virtual void SAL_CALL removeEventListener(
-				const ::com::sun::star::uno::Reference< ::com::sun::star::document::XEventListener >& Listener )
-		throw ( ::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Reference< ::com::sun::star::document::XEventListener >& Listener );
 
 // XInplaceObject ( only for wrapping scenario here )
 
     virtual void SAL_CALL setObjectRectangles( const ::com::sun::star::awt::Rectangle& aPosRect,
-                                          const ::com::sun::star::awt::Rectangle& aClipRect )
-        throw ( ::com::sun::star::embed::WrongStateException,
-                ::com::sun::star::uno::Exception,
-                ::com::sun::star::uno::RuntimeException );
+                                          const ::com::sun::star::awt::Rectangle& aClipRect );
 
-    virtual void SAL_CALL enableModeless( sal_Bool bEnable )
-        throw ( ::com::sun::star::embed::WrongStateException,
-                ::com::sun::star::uno::Exception,
-                ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL enableModeless( sal_Bool bEnable );
 
     virtual void SAL_CALL translateAccelerators(
-                    const ::com::sun::star::uno::Sequence< ::com::sun::star::awt::KeyEvent >& aKeys )
-        throw ( ::com::sun::star::embed::WrongStateException,
-                ::com::sun::star::uno::RuntimeException );
+                    const ::com::sun::star::uno::Sequence< ::com::sun::star::awt::KeyEvent >& aKeys );
 
     // XChild ( only for wrapping scenario here )
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  );
+    virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent );
 
 };
 

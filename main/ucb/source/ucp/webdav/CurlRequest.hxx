@@ -58,28 +58,28 @@ public:
     ~CurlRequest();
 
     // Request setup methods:
-    void addHeader( const rtl::OString &name, const rtl::OString &value ) throw (DAVException);
+    void addHeader( const rtl::OString &name, const rtl::OString &value );
     void setRequestBody( const char *body, size_t size );
     bool isChunkedEncoding() { return useChunkedEncoding; }
     void setChunkedEncoding( bool isChunkedEncoding ) { useChunkedEncoding = isChunkedEncoding; }
     void saveResponseBodyTo( const com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > & xOutputStream );
     void setProvideCredentialsCallback(
-        bool (*provideCredsCallback)(long statusCode, void *userdata) throw (DAVException),
+        bool (*provideCredsCallback)(long statusCode, void *userdata),
         void *credsUserdata );
 
     // Requests
-    CURLcode copy( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode delete_( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode get( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode head( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode lock( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode mkcol( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode move( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode post( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode propfind( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode proppatch( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode put( CurlUri uri, rtl::OUString path ) throw(DAVException);
-    CURLcode unlock( CurlUri uri, rtl::OUString path ) throw(DAVException);
+    CURLcode copy( CurlUri uri, rtl::OUString path );
+    CURLcode delete_( CurlUri uri, rtl::OUString path );
+    CURLcode get( CurlUri uri, rtl::OUString path );
+    CURLcode head( CurlUri uri, rtl::OUString path );
+    CURLcode lock( CurlUri uri, rtl::OUString path );
+    CURLcode mkcol( CurlUri uri, rtl::OUString path );
+    CURLcode move( CurlUri uri, rtl::OUString path );
+    CURLcode post( CurlUri uri, rtl::OUString path );
+    CURLcode propfind( CurlUri uri, rtl::OUString path );
+    CURLcode proppatch( CurlUri uri, rtl::OUString path );
+    CURLcode put( CurlUri uri, rtl::OUString path );
+    CURLcode unlock( CurlUri uri, rtl::OUString path );
 
     // Response methods:
     int getStatusCode() { return statusCode; }
@@ -91,8 +91,8 @@ public:
 
 private:
     CurlRequest( const CurlRequest &curlRequest ); // No copy constructor.
-    void setURI( CurlUri uri, rtl::OUString path ) throw (DAVException);
-    CURLcode perform() throw (DAVException);
+    void setURI( CurlUri uri, rtl::OUString path );
+    CURLcode perform();
 
     static int Curl_SeekCallback(void *userp, curl_off_t offset, int origin);
 
@@ -114,7 +114,7 @@ private:
     size_t requestBodyOffset;
     size_t requestBodySize;
     bool useChunkedEncoding;
-    bool (*provideCredentialsCallback)( long statusCode, void *userdata ) throw (DAVException);
+    bool (*provideCredentialsCallback)( long statusCode, void *userdata );
     void *provideCredentialsUserdata;
 
     // Response values:

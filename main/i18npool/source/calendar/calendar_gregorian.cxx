@@ -191,7 +191,7 @@ Calendar_hanja::Calendar_hanja()
 }
 
 OUString SAL_CALL
-Calendar_hanja::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16 nameType ) throw(RuntimeException)
+Calendar_hanja::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16 nameType )
 {
         if ( displayIndex == CalendarDisplayIndex::AM_PM ) {
             // Am/Pm string for Korean Hanja calendar will refer to Japanese locale
@@ -206,7 +206,7 @@ Calendar_hanja::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16
 }
 
 void SAL_CALL
-Calendar_hanja::loadCalendar( const OUString& /*uniqueID*/, const com::sun::star::lang::Locale& rLocale ) throw(RuntimeException)
+Calendar_hanja::loadCalendar( const OUString& /*uniqueID*/, const com::sun::star::lang::Locale& rLocale )
 {
         // Since this class could be called by service name 'hanja_yoil', we have to
         // rename uniqueID to get right calendar defined in locale data.
@@ -245,7 +245,7 @@ Calendar_buddhist::Calendar_buddhist() : Calendar_gregorian(buddhist_eraArray)
 }
 
 void SAL_CALL
-Calendar_gregorian::loadCalendar( const OUString& uniqueID, const com::sun::star::lang::Locale& rLocale ) throw(RuntimeException)
+Calendar_gregorian::loadCalendar( const OUString& uniqueID, const com::sun::star::lang::Locale& rLocale )
 {
         // init. fieldValue[]
         getValue();
@@ -278,19 +278,19 @@ Calendar_gregorian::loadCalendar( const OUString& uniqueID, const com::sun::star
 
 
 com::sun::star::i18n::Calendar SAL_CALL
-Calendar_gregorian::getLoadedCalendar() throw(RuntimeException)
+Calendar_gregorian::getLoadedCalendar()
 {
         return aCalendar;
 }
 
 OUString SAL_CALL
-Calendar_gregorian::getUniqueID() throw(RuntimeException)
+Calendar_gregorian::getUniqueID()
 {
         return aCalendar.Name;
 }
 
 void SAL_CALL
-Calendar_gregorian::setDateTime( double timeInDays ) throw(RuntimeException)
+Calendar_gregorian::setDateTime( double timeInDays )
 {
         UErrorCode status;
         body->setTime(timeInDays * U_MILLIS_PER_DAY, status = U_ZERO_ERROR);
@@ -299,7 +299,7 @@ Calendar_gregorian::setDateTime( double timeInDays ) throw(RuntimeException)
 }
 
 double SAL_CALL
-Calendar_gregorian::getDateTime() throw(RuntimeException)
+Calendar_gregorian::getDateTime()
 {
         if (fieldSet) {
             setValue();
@@ -313,7 +313,7 @@ Calendar_gregorian::getDateTime() throw(RuntimeException)
 
 // map field value from gregorian calendar to other calendar, it can be overwritten by derived class.
 // By using eraArray, it can take care Japanese and Taiwan ROC calendar.
-void Calendar_gregorian::mapFromGregorian() throw(RuntimeException)
+void Calendar_gregorian::mapFromGregorian()
 {
         if (eraArray) {
             sal_Int16 e, y, m, d;
@@ -341,7 +341,7 @@ void Calendar_gregorian::mapFromGregorian() throw(RuntimeException)
 #define FIELDS  ((1 << CalendarFieldIndex::ERA) | (1 << CalendarFieldIndex::YEAR))
 // map field value from other calendar to gregorian calendar, it can be overwritten by derived class.
 // By using eraArray, it can take care Japanese and Taiwan ROC calendar.
-void Calendar_gregorian::mapToGregorian() throw(RuntimeException)
+void Calendar_gregorian::mapToGregorian()
 {
         if (eraArray && (fieldSet & FIELDS)) {
             sal_Int16 y, e = fieldValue[CalendarFieldIndex::ERA];
@@ -356,7 +356,7 @@ void Calendar_gregorian::mapToGregorian() throw(RuntimeException)
         }
 }
 
-static UCalendarDateFields fieldNameConverter(sal_Int16 fieldIndex) throw(RuntimeException)
+static UCalendarDateFields fieldNameConverter(sal_Int16 fieldIndex)
 {
         UCalendarDateFields f;
 
@@ -382,7 +382,7 @@ static UCalendarDateFields fieldNameConverter(sal_Int16 fieldIndex) throw(Runtim
 }
 
 void SAL_CALL
-Calendar_gregorian::setValue( sal_Int16 fieldIndex, sal_Int16 value ) throw(RuntimeException)
+Calendar_gregorian::setValue( sal_Int16 fieldIndex, sal_Int16 value )
 {
     if (fieldIndex < 0 || FIELD_INDEX_COUNT <= fieldIndex)
         throw ERROR;
@@ -423,7 +423,7 @@ bool Calendar_gregorian::getDSTOffset( sal_Int32 & o_nOffset ) const
             CalendarFieldIndex::DST_OFFSET_SECOND_MILLIS);
 }
 
-void Calendar_gregorian::submitFields() throw(com::sun::star::uno::RuntimeException)
+void Calendar_gregorian::submitFields()
 {
     for (sal_Int16 fieldIndex = 0; fieldIndex < FIELD_INDEX_COUNT; fieldIndex++)
     {
@@ -452,7 +452,6 @@ void Calendar_gregorian::submitFields() throw(com::sun::star::uno::RuntimeExcept
 void Calendar_gregorian::submitValues( sal_Int32 nYear,
         sal_Int32 nMonth, sal_Int32 nDay, sal_Int32 nHour, sal_Int32 nMinute,
         sal_Int32 nSecond, sal_Int32 nMilliSecond, sal_Int32 nZone, sal_Int32 nDST )
-            throw(com::sun::star::uno::RuntimeException)
 {
     submitFields();
     if (nYear >= 0)
@@ -487,7 +486,7 @@ static void lcl_setCombinedOffsetFieldValues( sal_Int32 nValue,
         static_cast<sal_Int16>( nMillis);
 }
 
-void Calendar_gregorian::setValue() throw(RuntimeException)
+void Calendar_gregorian::setValue()
 {
         // Correct DST glitch, see also localtime/gmtime conversion pitfalls at
         // http://www.erack.de/download/timetest.c
@@ -701,7 +700,7 @@ void Calendar_gregorian::setValue() throw(RuntimeException)
 #endif
 }
 
-void Calendar_gregorian::getValue() throw(RuntimeException)
+void Calendar_gregorian::getValue()
 {
     DUMP_ICU_CAL_MSG(("%s\n","getValue()"));
     DUMP_I18N_CAL_MSG(("%s\n","getValue()"));
@@ -745,7 +744,7 @@ void Calendar_gregorian::getValue() throw(RuntimeException)
 }
 
 sal_Int16 SAL_CALL
-Calendar_gregorian::getValue( sal_Int16 fieldIndex ) throw(RuntimeException)
+Calendar_gregorian::getValue( sal_Int16 fieldIndex )
 {
     if (fieldIndex < 0 || FIELD_INDEX_COUNT <= fieldIndex)
         throw ERROR;
@@ -759,7 +758,7 @@ Calendar_gregorian::getValue( sal_Int16 fieldIndex ) throw(RuntimeException)
 }
 
 void SAL_CALL
-Calendar_gregorian::addValue( sal_Int16 fieldIndex, sal_Int32 value ) throw(RuntimeException)
+Calendar_gregorian::addValue( sal_Int16 fieldIndex, sal_Int32 value )
 {
         // since ZONE and DST could not be add, we don't need to convert value here
         UErrorCode status;
@@ -769,7 +768,7 @@ Calendar_gregorian::addValue( sal_Int16 fieldIndex, sal_Int32 value ) throw(Runt
 }
 
 sal_Bool SAL_CALL
-Calendar_gregorian::isValid() throw(RuntimeException)
+Calendar_gregorian::isValid()
 {
         if (fieldSet) {
             sal_Int32 tmp = fieldSet;
@@ -859,7 +858,7 @@ static sal_Int32 SAL_CALL DisplayCode2FieldIndex(sal_Int32 nCalendarDisplayCode)
 }
 
 sal_Int16 SAL_CALL
-Calendar_gregorian::getFirstDayOfWeek() throw(RuntimeException)
+Calendar_gregorian::getFirstDayOfWeek()
 {
     // UCAL_SUNDAY == 1, Weekdays::SUNDAY == 0 => offset -1
     // Check for underflow just in case we're called "out of sync".
@@ -870,54 +869,53 @@ Calendar_gregorian::getFirstDayOfWeek() throw(RuntimeException)
 
 void SAL_CALL
 Calendar_gregorian::setFirstDayOfWeek( sal_Int16 day )
-throw(RuntimeException)
 {
     // Weekdays::SUNDAY == 0, UCAL_SUNDAY == 1 => offset +1
     body->setFirstDayOfWeek( static_cast<UCalendarDaysOfWeek>( day + 1));
 }
 
 void SAL_CALL
-Calendar_gregorian::setMinimumNumberOfDaysForFirstWeek( sal_Int16 days ) throw(RuntimeException)
+Calendar_gregorian::setMinimumNumberOfDaysForFirstWeek( sal_Int16 days )
 {
         aCalendar.MinimumNumberOfDaysForFirstWeek = days;
         body->setMinimalDaysInFirstWeek( static_cast<uint8_t>( days));
 }
 
 sal_Int16 SAL_CALL
-Calendar_gregorian::getMinimumNumberOfDaysForFirstWeek() throw(RuntimeException)
+Calendar_gregorian::getMinimumNumberOfDaysForFirstWeek()
 {
         return aCalendar.MinimumNumberOfDaysForFirstWeek;
 }
 
 sal_Int16 SAL_CALL
-Calendar_gregorian::getNumberOfMonthsInYear() throw(RuntimeException)
+Calendar_gregorian::getNumberOfMonthsInYear()
 {
         return (sal_Int16) aCalendar.Months.getLength();
 }
 
 
 sal_Int16 SAL_CALL
-Calendar_gregorian::getNumberOfDaysInWeek() throw(RuntimeException)
+Calendar_gregorian::getNumberOfDaysInWeek()
 {
         return (sal_Int16) aCalendar.Days.getLength();
 }
 
 
 Sequence< CalendarItem > SAL_CALL
-Calendar_gregorian::getMonths() throw(RuntimeException)
+Calendar_gregorian::getMonths()
 {
         return aCalendar.Months;
 }
 
 
 Sequence< CalendarItem > SAL_CALL
-Calendar_gregorian::getDays() throw(RuntimeException)
+Calendar_gregorian::getDays()
 {
         return aCalendar.Days;
 }
 
 OUString SAL_CALL
-Calendar_gregorian::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16 nameType ) throw(RuntimeException)
+Calendar_gregorian::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16 nameType )
 {
         OUString aStr;
 
@@ -956,7 +954,6 @@ Calendar_gregorian::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_I
 // Methods in XExtendedCalendar
 OUString SAL_CALL
 Calendar_gregorian::getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativeNumberMode )
-        throw (RuntimeException)
 {
     sal_Int16 value = getValue(sal::static_int_cast<sal_Int16>( DisplayCode2FieldIndex(nCalendarDisplayCode) ));
     OUString aOUStr;
@@ -1059,7 +1056,6 @@ Calendar_gregorian::getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 
 // Methods in XExtendedCalendar
 OUString SAL_CALL
 Calendar_buddhist::getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativeNumberMode )
-        throw (RuntimeException)
 {
     // make year and era in different order for year before and after 0.
     if ((nCalendarDisplayCode == CalendarDisplayCode::LONG_YEAR_AND_ERA ||
@@ -1076,19 +1072,19 @@ Calendar_buddhist::getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 n
 }
 
 OUString SAL_CALL
-Calendar_gregorian::getImplementationName(void) throw( RuntimeException )
+Calendar_gregorian::getImplementationName(void)
 {
         return OUString::createFromAscii(cCalendar);
 }
 
 sal_Bool SAL_CALL
-Calendar_gregorian::supportsService(const rtl::OUString& rServiceName) throw( RuntimeException )
+Calendar_gregorian::supportsService(const rtl::OUString& rServiceName)
 {
         return !rServiceName.compareToAscii(cCalendar);
 }
 
 Sequence< OUString > SAL_CALL
-Calendar_gregorian::getSupportedServiceNames(void) throw( RuntimeException )
+Calendar_gregorian::getSupportedServiceNames(void)
 {
         Sequence< OUString > aRet(1);
         aRet[0] = OUString::createFromAscii(cCalendar);

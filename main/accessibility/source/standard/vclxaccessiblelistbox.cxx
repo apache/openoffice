@@ -84,7 +84,6 @@ void VCLXAccessibleListBox::ProcessWindowEvent (const VclWindowEvent& rVclWindow
 //=====  XServiceInfo  ========================================================
 
 ::rtl::OUString VCLXAccessibleListBox::getImplementationName (void)
-	throw (RuntimeException)
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.comp.toolkit.AccessibleListBox");
 }
@@ -93,7 +92,6 @@ void VCLXAccessibleListBox::ProcessWindowEvent (const VclWindowEvent& rVclWindow
 
 
 Sequence< ::rtl::OUString > VCLXAccessibleListBox::getSupportedServiceNames (void)
-	throw (RuntimeException)
 {
 	Sequence< ::rtl::OUString > aNames = VCLXAccessibleBox::getSupportedServiceNames();
 	sal_Int32 nLength = aNames.getLength();

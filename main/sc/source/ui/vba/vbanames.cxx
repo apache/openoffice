@@ -44,9 +44,9 @@ class NamesEnumeration : public EnumerationHelperImpl
 	uno::WeakReference< XHelperInterface > m_xParent;
 	uno::Reference< sheet::XNamedRanges > m_xNames;
 public:
-    NamesEnumeration( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration,  const uno::Reference< frame::XModel >& xModel , const uno::Reference< sheet::XNamedRanges >& xNames ) throw ( uno::RuntimeException ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), m_xModel( xModel ), m_xParent( xParent ), m_xNames( xNames ) {}
+    NamesEnumeration( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration,  const uno::Reference< frame::XModel >& xModel , const uno::Reference< sheet::XNamedRanges >& xNames ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), m_xModel( xModel ), m_xParent( xParent ), m_xNames( xNames ) {}
 
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL nextElement(  )
 	{
 		uno::Reference< sheet::XNamedRange > xNamed( m_xEnumeration->nextElement(), uno::UNO_QUERY_THROW );
 		return uno::makeAny( uno::Reference< excel::XName > ( new ScVbaName( m_xParent, m_xContext, xNamed ,m_xNames , m_xModel ) ) );
@@ -94,7 +94,7 @@ ScVbaNames::Add( const css::uno::Any& Name ,
                                         const css::uno::Any& /*RefersToLocal*/,
                                         const css::uno::Any& /*CategoryLocal*/,
                                         const css::uno::Any& RefersToR1C1,
-                                        const css::uno::Any& RefersToR1C1Local ) throw (css::uno::RuntimeException)
+                                        const css::uno::Any& RefersToR1C1Local )
 {
 	rtl::OUString sName;
 	uno::Reference< excel::XRange > xRange;
@@ -162,13 +162,13 @@ ScVbaNames::Add( const css::uno::Any& Name ,
 
 // XEnumerationAccess
 css::uno::Type
-ScVbaNames::getElementType() throw( css::uno::RuntimeException )
+ScVbaNames::getElementType()
 {
 	return ov::excel::XName::static_type(0);
 }
 
 uno::Reference< container::XEnumeration >
-ScVbaNames::createEnumeration() throw (uno::RuntimeException)
+ScVbaNames::createEnumeration()
 {
 	uno::Reference< container::XEnumerationAccess > xEnumAccess( mxNames, uno::UNO_QUERY_THROW );
 	return new NamesEnumeration( getParent(), mxContext, xEnumAccess->createEnumeration(), mxModel , mxNames );

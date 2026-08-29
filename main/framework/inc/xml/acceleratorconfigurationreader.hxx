@@ -159,39 +159,23 @@ class AcceleratorConfigurationReader : public  css::xml::sax::XDocumentHandler
 
         //---------------------------------------
 		// XDocumentHandler
-		virtual void SAL_CALL startDocument()
-			throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+		virtual void SAL_CALL startDocument();
 
-		virtual void SAL_CALL endDocument()
-			throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+		virtual void SAL_CALL endDocument();
 
 		virtual void SAL_CALL startElement(const ::rtl::OUString&                                      sElement      ,
-			                               const css::uno::Reference< css::xml::sax::XAttributeList >& xAttributeList)
-			throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+			                               const css::uno::Reference< css::xml::sax::XAttributeList >& xAttributeList);
 
-		virtual void SAL_CALL endElement(const ::rtl::OUString& sElement)
-            throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+		virtual void SAL_CALL endElement(const ::rtl::OUString& sElement);
 
-		virtual void SAL_CALL characters(const ::rtl::OUString& sChars)
-			throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+		virtual void SAL_CALL characters(const ::rtl::OUString& sChars);
 
-		virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& sWhitespaces)
-			throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+		virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& sWhitespaces);
 
 		virtual void SAL_CALL processingInstruction(const ::rtl::OUString& sTarget,
-                                                    const ::rtl::OUString& sData  )
-			throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+                                                    const ::rtl::OUString& sData  );
 
-		virtual void SAL_CALL setDocumentLocator(const css::uno::Reference< css::xml::sax::XLocator >& xLocator)
-			throw(css::xml::sax::SAXException,
-                  css::uno::RuntimeException );
+		virtual void SAL_CALL setDocumentLocator(const css::uno::Reference< css::xml::sax::XLocator >& xLocator);
 
     //-------------------------------------------
     // helper

@@ -131,8 +131,8 @@ public:
 class XMLVersionListPersistence : public ::cppu::WeakImplHelper1< ::com::sun::star::document::XDocumentRevisionListPersistence >
 {
 public:
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::util::RevisionTag > SAL_CALL load( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::io::IOException, ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL store( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage, const ::com::sun::star::uno::Sequence< ::com::sun::star::util::RevisionTag >& List ) throw (::com::sun::star::io::IOException, ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::util::RevisionTag > SAL_CALL load( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage );
+    virtual void SAL_CALL store( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage, const ::com::sun::star::uno::Sequence< ::com::sun::star::util::RevisionTag >& List );
 };
 
 ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
@@ -145,7 +145,6 @@ public:
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
     XMLVersionListPersistence_createInstance(
 		const ::com::sun::star::uno::Reference<
-			::com::sun::star::lang::XMultiServiceFactory > & )
-	throw( ::com::sun::star::uno::Exception );
+			::com::sun::star::lang::XMultiServiceFactory > & );
 
 #endif

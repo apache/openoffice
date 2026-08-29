@@ -41,15 +41,12 @@ public:
 	virtual ~PolarCoordinateSystem();
 
     // ____ XCoordinateSystem ____
-    virtual ::rtl::OUString SAL_CALL getCoordinateSystemType()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getViewServiceName()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getCoordinateSystemType();
+    virtual ::rtl::OUString SAL_CALL getViewServiceName();
 
     // ____ XCloneable ____
     virtual ::com::sun::star::uno::Reference<
-            ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     // ____ XServiceInfo ____
     APPHELPER_XSERVICEINFO_DECL()

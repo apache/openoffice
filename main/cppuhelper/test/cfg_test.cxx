@@ -90,12 +90,12 @@ public:
     ServiceImpl0( Reference< XComponentContext > const & xContext ) SAL_THROW( () );
 
     // XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& rArgs ) throw (Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& rArgs );
 
 	// XServiceInfo
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw (RuntimeException);
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
+	virtual OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
 };
 //__________________________________________________________________________________________________
 ServiceImpl0::ServiceImpl0( Reference< XComponentContext > const & xContext ) SAL_THROW( () )
@@ -122,7 +122,6 @@ ServiceImpl0::ServiceImpl0( Reference< XComponentContext > const & xContext ) SA
 // XInitialization
 //__________________________________________________________________________________________________
 void ServiceImpl0::initialize( const Sequence< Any >& rArgs )
-    throw (Exception, RuntimeException)
 {
     // check args
     OUString val;
@@ -137,19 +136,16 @@ void ServiceImpl0::initialize( const Sequence< Any >& rArgs )
 // XServiceInfo
 //__________________________________________________________________________________________________
 OUString ServiceImpl0::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return impl0_getImplementationName();
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > ServiceImpl0::getSupportedServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return impl0_getSupportedServiceNames();
 }
 //__________________________________________________________________________________________________
 sal_Bool ServiceImpl0::supportsService( const OUString & rServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	const Sequence< OUString > & rSNL = getSupportedServiceNames();
 	const OUString * pArray = rSNL.getConstArray();
@@ -170,18 +166,16 @@ public:
         {}
 
     // XServiceInfo
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException);
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
+	virtual OUString SAL_CALL getImplementationName();
 };
 //__________________________________________________________________________________________________
 OUString ServiceImpl1::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return impl1_getImplementationName();
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > ServiceImpl1::getSupportedServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return impl1_getSupportedServiceNames();
 }
@@ -189,14 +183,12 @@ Sequence< OUString > ServiceImpl1::getSupportedServiceNames()
 //==================================================================================================
 static Reference< XInterface > SAL_CALL ServiceImpl0_create(
     Reference< XComponentContext > const & xContext )
-	SAL_THROW( (Exception) )
 {
 	return (OWeakObject *)new ServiceImpl0( xContext );
 }
 //==================================================================================================
 static Reference< XInterface > SAL_CALL ServiceImpl1_create(
     Reference< XComponentContext > const & xContext )
-	SAL_THROW( (Exception) )
 {
 	return (OWeakObject *)new ServiceImpl1( xContext );
 }

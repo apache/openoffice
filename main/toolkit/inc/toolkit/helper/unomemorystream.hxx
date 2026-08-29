@@ -49,17 +49,23 @@ protected:
 public:
 	UnoMemoryStream( sal_uInt32 nInitSize = 0x3FFF, sal_uInt32 nResize = 0x3FFFF );
 
+	/*	throw() states what SvStream already promises, and is what a C++11
+		compiler would deduce for this destructor anyway.  Under C++03 -- where a
+		destructor carries no implicit specification -- it is the only thing that
+		says so. */
+	~UnoMemoryStream() SAL_THROW( () ) {}	// body is what the compiler generated
+
 	// ::com::sun::star::uno::XInterface
-    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 	void						SAL_CALL acquire() throw()	{ OWeakObject::acquire(); }
 	void						SAL_CALL release() throw()	{ OWeakObject::release(); }
 
 	// ::com::sun::star::io::XInputStream
-    sal_Int32		SAL_CALL readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    sal_Int32		SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    void			SAL_CALL skipBytes( sal_Int32 nBytesToSkip ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    sal_Int32		SAL_CALL available(  ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    void			SAL_CALL closeInput(  ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+    sal_Int32		SAL_CALL readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead );
+    sal_Int32		SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead );
+    void			SAL_CALL skipBytes( sal_Int32 nBytesToSkip );
+    sal_Int32		SAL_CALL available(  );
+    void			SAL_CALL closeInput(  );
 };
 
 

@@ -269,8 +269,8 @@ public:
                                  ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext> const & xComponentContext );
 
     // XExecutableDialog
-	virtual void SAL_CALL         setTitle( rtl::OUString const & title ) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual sal_Int16 SAL_CALL    execute() throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL         setTitle( rtl::OUString const & title );
+	virtual sal_Int16 SAL_CALL    execute();
 };
 
 } // namespace dp_gui

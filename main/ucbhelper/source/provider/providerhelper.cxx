@@ -152,7 +152,6 @@ XTYPEPROVIDER_IMPL_3( ContentProviderImplHelper,
 // virtual
 sal_Bool SAL_CALL ContentProviderImplHelper::supportsService(
 											const rtl::OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
 	uno::Sequence< rtl::OUString > aSNL = getSupportedServiceNames();
 	const rtl::OUString* pArray = aSNL.getConstArray();
@@ -175,7 +174,6 @@ sal_Bool SAL_CALL ContentProviderImplHelper::supportsService(
 sal_Int32 SAL_CALL ContentProviderImplHelper::compareContentIds(
         const uno::Reference< com::sun::star::ucb::XContentIdentifier >& Id1,
         const uno::Reference< com::sun::star::ucb::XContentIdentifier >& Id2 )
-	throw( uno::RuntimeException )
 {
 	// Simply do a string compare.
 

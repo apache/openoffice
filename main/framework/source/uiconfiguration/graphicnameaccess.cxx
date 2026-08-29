@@ -55,9 +55,6 @@ void GraphicNameAccess::addElement( const rtl::OUString& rName, const uno::Refer
 
 // XNameAccess
 uno::Any SAL_CALL GraphicNameAccess::getByName( const ::rtl::OUString& aName )
-throw( container::NoSuchElementException,
-       lang::WrappedTargetException,
-	   uno::RuntimeException)
 {
     NameGraphicHashMap::const_iterator pIter = m_aNameToElementMap.find( aName );
     if ( pIter != m_aNameToElementMap.end() )
@@ -67,7 +64,6 @@ throw( container::NoSuchElementException,
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL GraphicNameAccess::getElementNames()
-throw(::com::sun::star::uno::RuntimeException)
 {
     if ( m_aSeq.getLength() == 0 )
     {
@@ -86,7 +82,6 @@ throw(::com::sun::star::uno::RuntimeException)
 }
 
 sal_Bool SAL_CALL GraphicNameAccess::hasByName( const ::rtl::OUString& aName )
-throw(::com::sun::star::uno::RuntimeException)
 {
     NameGraphicHashMap::const_iterator pIter = m_aNameToElementMap.find( aName );
     return ( pIter != m_aNameToElementMap.end() );
@@ -94,13 +89,11 @@ throw(::com::sun::star::uno::RuntimeException)
 
 // XElementAccess
 sal_Bool SAL_CALL GraphicNameAccess::hasElements()
-throw( uno::RuntimeException )
 {
     return ( !m_aNameToElementMap.empty() );
 }
 
 uno::Type SAL_CALL GraphicNameAccess::getElementType()
-throw( uno::RuntimeException )
 {
     return ::getCppuType( (const uno::Reference< graphic::XGraphic > *)NULL );
 }

@@ -229,7 +229,6 @@ void SAL_CALL PresenterHelpView::disposing (void)
 //----- lang::XEventListener --------------------------------------------------
 
 void SAL_CALL PresenterHelpView::disposing (const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if (rEventObject.Source == mxCanvas)
     {
@@ -248,7 +247,6 @@ void SAL_CALL PresenterHelpView::disposing (const lang::EventObject& rEventObjec
 //----- XWindowListener -------------------------------------------------------
 
 void SAL_CALL PresenterHelpView::windowResized (const awt::WindowEvent& rEvent)
-    throw (uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -259,7 +257,6 @@ void SAL_CALL PresenterHelpView::windowResized (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterHelpView::windowMoved (const awt::WindowEvent& rEvent)
-    throw (uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -269,7 +266,6 @@ void SAL_CALL PresenterHelpView::windowMoved (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterHelpView::windowShown (const lang::EventObject& rEvent)
-    throw (uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -280,7 +276,6 @@ void SAL_CALL PresenterHelpView::windowShown (const lang::EventObject& rEvent)
 
 
 void SAL_CALL PresenterHelpView::windowHidden (const lang::EventObject& rEvent)
-    throw (uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -292,7 +287,6 @@ void SAL_CALL PresenterHelpView::windowHidden (const lang::EventObject& rEvent)
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterHelpView::windowPaint (const css::awt::PaintEvent& rEvent)
-    throw (RuntimeException)
 {
     Paint(rEvent.UpdateRect);
 }
@@ -494,7 +488,6 @@ void PresenterHelpView::CheckFontSize (void)
 //----- XResourceId -----------------------------------------------------------
 
 Reference<XResourceId> SAL_CALL PresenterHelpView::getResourceId (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     return mxViewId;
@@ -504,7 +497,6 @@ Reference<XResourceId> SAL_CALL PresenterHelpView::getResourceId (void)
 
 
 sal_Bool SAL_CALL PresenterHelpView::isAnchorOnly (void)
-    throw (RuntimeException)
 {
     return false;
 }
@@ -556,7 +548,6 @@ void PresenterHelpView::Resize (void)
 
 
 void PresenterHelpView::ThrowIfDisposed (void)
-    throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

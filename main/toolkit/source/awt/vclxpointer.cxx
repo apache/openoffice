@@ -41,7 +41,7 @@ VCLXPointer::~VCLXPointer()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXPointer::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXPointer::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XPointer*, this ),
@@ -58,14 +58,14 @@ IMPL_XTYPEPROVIDER_START( VCLXPointer )
 	getCppuType( ( ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPointer>* ) NULL )
 IMPL_XTYPEPROVIDER_END
 
-void VCLXPointer::setType( sal_Int32 nType ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXPointer::setType( sal_Int32 nType )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	maPointer = Pointer( (PointerStyle)nType );
 }
 
-sal_Int32 VCLXPointer::getType() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXPointer::getType()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 

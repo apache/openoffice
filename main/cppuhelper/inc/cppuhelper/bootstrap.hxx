@@ -87,8 +87,7 @@ CPPUHELPER_DLLPUBLIC
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > SAL_CALL
 bootstrap_InitialComponentContext(
     ::com::sun::star::uno::Reference< ::com::sun::star::registry::XSimpleRegistry > const & xRegistry,
-    ::rtl::OUString const & rBootstrapPath = ::rtl::OUString() )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+    ::rtl::OUString const & rBootstrapPath = ::rtl::OUString() );
 
 
 /** Bootstraps an initial component context with service manager upon default types and
@@ -112,7 +111,7 @@ bootstrap_InitialComponentContext(
 */
 CPPUHELPER_DLLPUBLIC
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > SAL_CALL
-defaultBootstrap_InitialComponentContext() SAL_THROW( (::com::sun::star::uno::Exception) );
+defaultBootstrap_InitialComponentContext();
 
 
 /** Bootstraps an initial component context with service manager upon default types and
@@ -137,7 +136,7 @@ defaultBootstrap_InitialComponentContext() SAL_THROW( (::com::sun::star::uno::Ex
 */
 CPPUHELPER_DLLPUBLIC
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > SAL_CALL
-defaultBootstrap_InitialComponentContext(const ::rtl::OUString & iniFile) SAL_THROW( (::com::sun::star::uno::Exception) );
+defaultBootstrap_InitialComponentContext(const ::rtl::OUString & iniFile);
 
 /**
  * An exception indicating a bootstrap error.

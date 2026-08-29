@@ -82,8 +82,7 @@ public:
 		m_xLockBytes(pTheLockBytes), m_nPosition(0), m_bDone(false) {}
 
 	virtual com::sun::star::uno::Any SAL_CALL
-	queryInterface(const com::sun::star::uno::Type & rType)
-		throw (com::sun::star::uno::RuntimeException);
+	queryInterface(const com::sun::star::uno::Type & rType);
 
 	virtual void SAL_CALL acquire() throw();
 
@@ -91,40 +90,23 @@ public:
 
     virtual sal_Int32 SAL_CALL
 	readBytes(com::sun::star::uno::Sequence< sal_Int8 > & rData,
-			  sal_Int32 nBytesToRead)
-		throw (com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+			  sal_Int32 nBytesToRead);
 
     virtual sal_Int32 SAL_CALL
 	readSomeBytes(com::sun::star::uno::Sequence< sal_Int8 > & rData,
-				  sal_Int32 nMaxBytesToRead)
-		throw (com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+				  sal_Int32 nMaxBytesToRead);
 
-    virtual void SAL_CALL skipBytes(sal_Int32 nBytesToSkip)
-		throw (com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL skipBytes(sal_Int32 nBytesToSkip);
 
-    virtual sal_Int32 SAL_CALL available()
-		throw (com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL available();
 
-    virtual void SAL_CALL closeInput()
-		throw (com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL closeInput();
 
-    virtual void SAL_CALL seek(sal_Int64 nLocation)
-		throw (com::sun::star::lang::IllegalArgumentException,
-			   com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL seek(sal_Int64 nLocation);
 
-    virtual sal_Int64 SAL_CALL getPosition()
-		throw (com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getPosition();
 
-    virtual sal_Int64 SAL_CALL getLength()
-		throw (com::sun::star::io::IOException,
-			   com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getLength();
 };
 
 #endif // SVTOOLS_STRMADPT_HXX

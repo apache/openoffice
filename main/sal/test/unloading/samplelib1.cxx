@@ -68,9 +68,9 @@ OUString m_serviceName;
 public:
 	TestService( OUString implName, OUString serviceName);
 	~TestService();
-	virtual OUString SAL_CALL getImplementationName(  )  throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw (RuntimeException);
-    virtual Sequence<OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+	virtual OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence<OUString > SAL_CALL getSupportedServiceNames(  );
 };
 
 TestService::TestService( OUString implName, OUString serviceName):
@@ -84,15 +84,15 @@ TestService::~TestService()
 	globalModuleCount.modCnt.release( &globalModuleCount.modCnt);
 }
 
-OUString SAL_CALL TestService::getImplementationName(  )  throw (RuntimeException)
+OUString SAL_CALL TestService::getImplementationName(  )
 {
 	return m_implName;
 }
-sal_Bool SAL_CALL TestService::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL TestService::supportsService( const OUString& ServiceName )
 {
 	return ServiceName.equals( m_serviceName);
 }
-Sequence<OUString > SAL_CALL TestService::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence<OUString > SAL_CALL TestService::getSupportedServiceNames(  )
 {
 	return Sequence<OUString>( &m_serviceName, 1);
 }
@@ -100,28 +100,24 @@ Sequence<OUString > SAL_CALL TestService::getSupportedServiceNames(  ) throw (Ru
 
 // Creator functions for Services -------------------------------------------------
 static Reference<XInterface> SAL_CALL test1_createInstance(const Reference<XMultiServiceFactory> & rSMgr)
-		throw (RuntimeException)
 {
 	return Reference<XInterface>( static_cast<XWeak*>( new TestService(
 		OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLNAME1)),
 		OUString( RTL_CONSTASCII_USTRINGPARAM( SERVICENAME1)) )), UNO_QUERY);
 }
 static Reference<XInterface> SAL_CALL test2_createInstance(const Reference<XMultiServiceFactory> & rSMgr)
-		throw (RuntimeException)
 {
 	return Reference<XInterface>( static_cast<XWeak*>( new TestService(
 		OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLNAME2)),
 		OUString( RTL_CONSTASCII_USTRINGPARAM( SERVICENAME2)) )), UNO_QUERY);
 }
 static Reference<XInterface> SAL_CALL test3_createInstance(const Reference<XMultiServiceFactory> & rSMgr)
-		throw (RuntimeException)
 {
 	return Reference<XInterface>( static_cast<XWeak*>( new TestService(
 		OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLNAME3)),
 		OUString( RTL_CONSTASCII_USTRINGPARAM( SERVICENAME3)) )), UNO_QUERY);
 }
 static Reference<XInterface> SAL_CALL test4_createInstance(const Reference<XMultiServiceFactory> & rSMgr)
-		throw (RuntimeException)
 {
 	return Reference<XInterface>( static_cast<XWeak*>( new TestService(
 		OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLNAME4)),

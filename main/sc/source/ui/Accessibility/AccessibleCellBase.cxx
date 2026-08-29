@@ -84,7 +84,6 @@ ScAccessibleCellBase::~ScAccessibleCellBase()
 	//=====  XAccessibleComponent  ============================================
 
 sal_Bool SAL_CALL ScAccessibleCellBase::isVisible(  )
-		throw (uno::RuntimeException)
 {
  	ScUnoGuard aGuard;
     IsObjectValid();
@@ -104,7 +103,6 @@ sal_Bool SAL_CALL ScAccessibleCellBase::isVisible(  )
 }
 
 sal_Int32 SAL_CALL ScAccessibleCellBase::getForeground()
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -144,7 +142,6 @@ sal_Int32 SAL_CALL ScAccessibleCellBase::getForeground()
 }
 
 sal_Int32 SAL_CALL ScAccessibleCellBase::getBackground()
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -188,7 +185,6 @@ sal_Int32 SAL_CALL ScAccessibleCellBase::getBackground()
 	//=====  XInterface  =====================================================
 
 uno::Any SAL_CALL ScAccessibleCellBase::queryInterface( uno::Type const & rType )
-	throw (uno::RuntimeException)
 {
 	uno::Any aAny (ScAccessibleCellBaseImpl::queryInterface(rType));
 	return aAny.hasValue() ? aAny : ScAccessibleContextBase::queryInterface(rType);
@@ -210,7 +206,6 @@ void SAL_CALL ScAccessibleCellBase::release()
 
 sal_Int32
 	ScAccessibleCellBase::getAccessibleIndexInParent(void)
-        throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -219,7 +214,6 @@ sal_Int32
 
 ::rtl::OUString SAL_CALL
     ScAccessibleCellBase::createAccessibleDescription(void)
-    throw (uno::RuntimeException)
 {
 	rtl::OUString sDescription = String(ScResId(STR_ACC_CELL_DESCR));
 
@@ -228,7 +222,6 @@ sal_Int32
 
 ::rtl::OUString SAL_CALL
     ScAccessibleCellBase::createAccessibleName(void)
-    throw (uno::RuntimeException)
 {
 	String sAddress;
 	// Document not needed, because only the cell address, but not the tablename is needed
@@ -245,7 +238,6 @@ sal_Int32
 
 uno::Any SAL_CALL
 	ScAccessibleCellBase::getCurrentValue(  )
-	throw (uno::RuntimeException)
 {
  	ScUnoGuard aGuard;
     IsObjectValid();
@@ -261,7 +253,6 @@ uno::Any SAL_CALL
 
 sal_Bool SAL_CALL
 	ScAccessibleCellBase::setCurrentValue( const uno::Any& aNumber )
-	throw (uno::RuntimeException)
 {
  	ScUnoGuard aGuard;
     IsObjectValid();
@@ -287,7 +278,6 @@ sal_Bool SAL_CALL
 
 uno::Any SAL_CALL
 	ScAccessibleCellBase::getMaximumValue(  )
-	throw (uno::RuntimeException)
 {
 	uno::Any aAny;
 	aAny <<= DBL_MAX;
@@ -297,7 +287,6 @@ uno::Any SAL_CALL
 
 uno::Any SAL_CALL
 	ScAccessibleCellBase::getMinimumValue(  )
-	throw (uno::RuntimeException)
 {
 	uno::Any aAny;
 	aAny <<= -DBL_MAX;
@@ -308,7 +297,6 @@ uno::Any SAL_CALL
 	//=====  XServiceInfo  ====================================================
 
 ::rtl::OUString SAL_CALL ScAccessibleCellBase::getImplementationName(void)
-        throw (uno::RuntimeException)
 {
 	return rtl::OUString(RTL_CONSTASCII_USTRINGPARAM ("ScAccessibleCellBase"));
 }
@@ -316,14 +304,12 @@ uno::Any SAL_CALL
 	//=====  XTypeProvider  ===================================================
 
 uno::Sequence< uno::Type > SAL_CALL ScAccessibleCellBase::getTypes()
-		throw (uno::RuntimeException)
 {
 	return comphelper::concatSequences(ScAccessibleCellBaseImpl::getTypes(), ScAccessibleContextBase::getTypes());
 }
 
 uno::Sequence<sal_Int8> SAL_CALL
 	ScAccessibleCellBase::getImplementationId(void)
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -345,7 +331,6 @@ sal_Bool ScAccessibleCellBase::IsEditable(
 	return bEditable;
 }
 ::rtl::OUString SAL_CALL ScAccessibleCellBase::GetNote(void)
-								throw (::com::sun::star::uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -394,7 +379,6 @@ sal_Bool ScAccessibleCellBase::IsEditable(
 #include <com/sun/star/table/ShadowFormat.hpp>
 #endif
 ::rtl::OUString SAL_CALL ScAccessibleCellBase::getShadowAttrs(void)
-										throw (::com::sun::star::uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	IsObjectValid();
@@ -477,7 +461,6 @@ sal_Bool ScAccessibleCellBase::IsEditable(
 #include <com/sun/star/table/BorderLine.hpp>
 #endif
 ::rtl::OUString SAL_CALL ScAccessibleCellBase::getBorderAttrs(void)
-										throw (::com::sun::star::uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	IsObjectValid();
@@ -627,7 +610,6 @@ sal_Bool ScAccessibleCellBase::IsEditable(
 //end of cell attributes
 
 ::rtl::OUString SAL_CALL ScAccessibleCellBase::GetAllDisplayNote(void)
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	::rtl::OUString strNote;
 	String strTrackText;

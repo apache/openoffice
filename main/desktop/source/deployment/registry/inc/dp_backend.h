@@ -129,141 +129,77 @@ public:
               m_smallIcon(smallIcon), m_smallIcon_HC(smallIcon_HC)
             {}
         // XPackageTypeInfo
-        virtual ::rtl::OUString SAL_CALL getMediaType()
-            throw (css::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getDescription()
-            throw (css::deployment::ExtensionRemovedException,
-                   css::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getShortDescription()
-            throw (css::deployment::ExtensionRemovedException,
-                   css::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getFileFilter()
-            throw (css::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getMediaType();
+        virtual ::rtl::OUString SAL_CALL getDescription();
+        virtual ::rtl::OUString SAL_CALL getShortDescription();
+        virtual ::rtl::OUString SAL_CALL getFileFilter();
         virtual css::uno::Any SAL_CALL getIcon( sal_Bool highContrast,
-                                                sal_Bool smallIcon )
-            throw (css::uno::RuntimeException);
+                                                sal_Bool smallIcon );
     };
 
     // XComponent
-    virtual void SAL_CALL dispose() throw (css::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
     virtual void SAL_CALL addEventListener(
-        css::uno::Reference<css::lang::XEventListener> const & xListener )
-        throw (css::uno::RuntimeException);
+        css::uno::Reference<css::lang::XEventListener> const & xListener );
     virtual void SAL_CALL removeEventListener(
-        css::uno::Reference<css::lang::XEventListener> const & xListener )
-        throw (css::uno::RuntimeException);
+        css::uno::Reference<css::lang::XEventListener> const & xListener );
 
     // XModifyBroadcaster
     virtual void SAL_CALL addModifyListener(
-        css::uno::Reference<css::util::XModifyListener> const & xListener )
-        throw (css::uno::RuntimeException);
+        css::uno::Reference<css::util::XModifyListener> const & xListener );
     virtual void SAL_CALL removeModifyListener(
-        css::uno::Reference<css::util::XModifyListener> const & xListener )
-        throw (css::uno::RuntimeException);
+        css::uno::Reference<css::util::XModifyListener> const & xListener );
 
     // XPackage
     virtual css::uno::Reference<css::task::XAbortChannel> SAL_CALL
-    createAbortChannel() throw (css::uno::RuntimeException);
+    createAbortChannel();
     virtual css::beans::Optional< css::beans::Ambiguous<sal_Bool> >
     SAL_CALL isRegistered(
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
-        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::DeploymentException,
-               css::ucb::CommandFailedException,
-               css::ucb::CommandAbortedException,
-               css::uno::RuntimeException);
+        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv );
 
     virtual ::sal_Int32 SAL_CALL checkPrerequisites(
 		const css::uno::Reference< css::task::XAbortChannel >& xAbortChannel,
 		const css::uno::Reference< css::ucb::XCommandEnvironment >& xCmdEnv,
-        sal_Bool noLicenseChecking)
-		throw (css::deployment::DeploymentException,
-               css::deployment::ExtensionRemovedException,
-               css::ucb::CommandFailedException,
-               css::ucb::CommandAbortedException,
-               css::uno::RuntimeException);
+        sal_Bool noLicenseChecking);
 
     virtual ::sal_Bool SAL_CALL checkDependencies(
-		const css::uno::Reference< css::ucb::XCommandEnvironment >& xCmdEnv )
-		throw (css::deployment::DeploymentException,
-               css::deployment::ExtensionRemovedException,
-               css::ucb::CommandFailedException,
-               css::uno::RuntimeException);
+		const css::uno::Reference< css::ucb::XCommandEnvironment >& xCmdEnv );
 
     virtual void SAL_CALL registerPackage(
         sal_Bool startup,
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
-        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::DeploymentException,
-               css::deployment::ExtensionRemovedException,
-               css::ucb::CommandFailedException,
-               css::ucb::CommandAbortedException,
-               css::lang::IllegalArgumentException, css::uno::RuntimeException);
+        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv );
     virtual void SAL_CALL revokePackage(
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
-        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::DeploymentException,
-               css::ucb::CommandFailedException,
-               css::ucb::CommandAbortedException,
-               css::lang::IllegalArgumentException,
-               css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isBundle()
-        throw (css::uno::RuntimeException);
+        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv );
+    virtual sal_Bool SAL_CALL isBundle();
     virtual css::uno::Sequence< css::uno::Reference<css::deployment::XPackage> >
     SAL_CALL getBundle(
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
-        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::DeploymentException,
-               css::ucb::CommandFailedException,
-               css::ucb::CommandAbortedException,
-               css::lang::IllegalArgumentException,
-               css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getName()
-        throw (css::uno::RuntimeException);
-    virtual css::beans::Optional< ::rtl::OUString > SAL_CALL getIdentifier()
-        throw (css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getVersion()
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getURL()
-        throw (css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getDisplayName()
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getDescription()
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getLicenseText()
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
+        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv );
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual css::beans::Optional< ::rtl::OUString > SAL_CALL getIdentifier();
+    virtual ::rtl::OUString SAL_CALL getVersion();
+    virtual ::rtl::OUString SAL_CALL getURL();
+    virtual ::rtl::OUString SAL_CALL getDisplayName();
+    virtual ::rtl::OUString SAL_CALL getDescription();
+    virtual ::rtl::OUString SAL_CALL getLicenseText();
     virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getUpdateInformationURLs()
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
-    virtual css::beans::StringPair SAL_CALL getPublisherInfo()
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
+    getUpdateInformationURLs();
+    virtual css::beans::StringPair SAL_CALL getPublisherInfo();
     virtual css::uno::Reference< css::graphic::XGraphic > SAL_CALL
-    getIcon( sal_Bool bHighContrast )
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
+    getIcon( sal_Bool bHighContrast );
     virtual css::uno::Reference<css::deployment::XPackageTypeInfo> SAL_CALL
-    getPackageType() throw (css::uno::RuntimeException);
+    getPackageType();
     virtual void SAL_CALL exportTo(
         ::rtl::OUString const & destFolderURL,
         ::rtl::OUString const & newTitle,
         sal_Int32 nameClashAction,
-        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::ExtensionRemovedException,
-               css::ucb::CommandFailedException,
-               css::ucb::CommandAbortedException, css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getRepositoryName()
-        throw (css::uno::RuntimeException);
-    virtual css::beans::Optional< ::rtl::OUString > SAL_CALL getRegistrationDataURL()
-        throw (css::deployment::ExtensionRemovedException,
-               css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isRemoved()
-        throw (css::uno::RuntimeException);
+        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv );
+    virtual ::rtl::OUString SAL_CALL getRepositoryName();
+    virtual css::beans::Optional< ::rtl::OUString > SAL_CALL getRegistrationDataURL();
+    virtual sal_Bool SAL_CALL isRemoved();
 
 };
 
@@ -369,18 +305,13 @@ public:
     inline ::rtl::OUString getContext() const {return m_context; }
 
     // XEventListener
-    virtual void SAL_CALL disposing( css::lang::EventObject const & evt )
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing( css::lang::EventObject const & evt );
 
     // XPackageRegistry
     virtual css::uno::Reference<css::deployment::XPackage> SAL_CALL bindPackage(
         ::rtl::OUString const & url, ::rtl::OUString const & mediaType,
         sal_Bool bRemoved, ::rtl::OUString const & identifier,
-        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::DeploymentException,
-               css::deployment::InvalidRemovedParameterException,
-               css::ucb::CommandFailedException,
-               css::lang::IllegalArgumentException, css::uno::RuntimeException);
+        css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv );
 
 //     virtual void SAL_CALL packageRemoved(
 //         ::rtl::OUString const & url, ::rtl::OUString const & mediaType)

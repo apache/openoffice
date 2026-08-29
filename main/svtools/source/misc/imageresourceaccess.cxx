@@ -67,13 +67,13 @@ namespace svt
 
     protected:
         // XStream
-        virtual Reference< XInputStream > SAL_CALL getInputStream(  ) throw (RuntimeException);
-        virtual Reference< XOutputStream > SAL_CALL getOutputStream(  ) throw (RuntimeException);
+        virtual Reference< XInputStream > SAL_CALL getInputStream(  );
+        virtual Reference< XOutputStream > SAL_CALL getOutputStream(  );
 
         // XSeekable
-        virtual void SAL_CALL seek( ::sal_Int64 location ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Int64 SAL_CALL getPosition(  ) throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Int64 SAL_CALL getLength(  ) throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL seek( ::sal_Int64 location );
+        virtual ::sal_Int64 SAL_CALL getPosition(  );
+        virtual ::sal_Int64 SAL_CALL getLength(  );
     };
 
 	//--------------------------------------------------------------------
@@ -88,19 +88,19 @@ namespace svt
     }
 
     //--------------------------------------------------------------------
-    Reference< XInputStream > SAL_CALL StreamSupplier::getInputStream(  ) throw (RuntimeException)
+    Reference< XInputStream > SAL_CALL StreamSupplier::getInputStream(  )
     {
         return m_xInput;
     }
 
     //--------------------------------------------------------------------
-    Reference< XOutputStream > SAL_CALL StreamSupplier::getOutputStream(  ) throw (RuntimeException)
+    Reference< XOutputStream > SAL_CALL StreamSupplier::getOutputStream(  )
     {
         return m_xOutput;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL StreamSupplier::seek( ::sal_Int64 location ) throw (IllegalArgumentException, IOException, RuntimeException)
+    void SAL_CALL StreamSupplier::seek( ::sal_Int64 location )
     {
         if ( !m_xSeekable.is() )
             throw NotConnectedException();
@@ -109,7 +109,7 @@ namespace svt
     }
 
     //--------------------------------------------------------------------
-    ::sal_Int64 SAL_CALL StreamSupplier::getPosition(  ) throw (IOException, RuntimeException)
+    ::sal_Int64 SAL_CALL StreamSupplier::getPosition(  )
     {
         if ( !m_xSeekable.is() )
             throw NotConnectedException();
@@ -118,7 +118,7 @@ namespace svt
     }
 
     //--------------------------------------------------------------------
-    ::sal_Int64 SAL_CALL StreamSupplier::getLength(  ) throw (IOException, RuntimeException)
+    ::sal_Int64 SAL_CALL StreamSupplier::getLength(  )
     {
         if ( !m_xSeekable.is() )
             throw NotConnectedException();

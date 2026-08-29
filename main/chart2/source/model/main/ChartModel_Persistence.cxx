@@ -211,9 +211,6 @@ Reference< document::XFilter > ChartModel::impl_createFilter(
 //-----------------------------------------------------------------
 
 void SAL_CALL ChartModel::storeSelf( const Sequence< beans::PropertyValue >& rMediaDescriptor )
-    throw (lang::IllegalArgumentException,
-           io::IOException,
-           uno::RuntimeException)
 {
     // only some parameters are allowed (see also SfxBaseModel)
     // "VersionComment", "Author", "InteractionHandler", "StatusIndicator"
@@ -226,28 +223,23 @@ void SAL_CALL ChartModel::storeSelf( const Sequence< beans::PropertyValue >& rMe
 // frame::XStorable (base of XStorable2)
 //-----------------------------------------------------------------
 sal_Bool SAL_CALL ChartModel::hasLocation()
-    throw(uno::RuntimeException)
 {
 	//@todo guard
 	return !m_aResource.isEmpty();
 }
 
 ::rtl::OUString SAL_CALL ChartModel::getLocation()
-    throw(uno::RuntimeException)
 {
 	return impl_g_getLocation();
 }
 
 sal_Bool SAL_CALL ChartModel::isReadonly()
-    throw(uno::RuntimeException)
 {
 	//@todo guard
 	return m_bReadOnly;
 }
 
 void SAL_CALL ChartModel::store()
-    throw(io::IOException,
-          uno::RuntimeException)
 {
 	apphelper::LifeTimeGuard aGuard(m_aLifeTimeManager);
 	if(!aGuard.startApiCall(sal_True)) //start LongLastingCall
@@ -270,7 +262,6 @@ void SAL_CALL ChartModel::store()
 void SAL_CALL ChartModel::storeAsURL(
     const ::rtl::OUString& rURL,
     const uno::Sequence< beans::PropertyValue >& rMediaDescriptor )
-    throw(io::IOException, uno::RuntimeException)
 {
 	apphelper::LifeTimeGuard aGuard(m_aLifeTimeManager);
 	if(!aGuard.startApiCall(sal_True)) //start LongLastingCall
@@ -296,8 +287,6 @@ void SAL_CALL ChartModel::storeAsURL(
 void SAL_CALL ChartModel::storeToURL(
     const ::rtl::OUString& rURL,
     const uno::Sequence< beans::PropertyValue >& rMediaDescriptor )
-    throw(io::IOException,
-          uno::RuntimeException)
 {
 	apphelper::LifeTimeGuard aGuard(m_aLifeTimeManager);
 	if(!aGuard.startApiCall(sal_True)) //start LongLastingCall
@@ -399,10 +388,6 @@ void ChartModel::impl_store(
 // frame::XLoadable
 //-----------------------------------------------------------------
 void SAL_CALL ChartModel::initNew()
-    throw (frame::DoubleInitializationException,
-           io::IOException,
-           uno::Exception,
-           uno::RuntimeException)
 {
     lockControllers();
     createInternalDataProvider( sal_False );
@@ -506,10 +491,6 @@ void SAL_CALL ChartModel::initNew()
 
 void SAL_CALL ChartModel::load(
     const Sequence< beans::PropertyValue >& rMediaDescriptor )
-    throw (frame::DoubleInitializationException,
-           io::IOException,
-           uno::Exception,
-           uno::RuntimeException)
 {
     Reference< embed::XStorage > xStorage;
     OUString aURL;
@@ -674,7 +655,6 @@ void ChartModel::impl_loadGraphics(
 // util::XModifiable
 //-----------------------------------------------------------------
 void SAL_CALL ChartModel::impl_notifyModifiedListeners()
-    throw( uno::RuntimeException)
 {
     {
         MutexGuard aGuard( m_aModelMutex );
@@ -700,15 +680,12 @@ void SAL_CALL ChartModel::impl_notifyModifiedListeners()
 }
 
 sal_Bool SAL_CALL ChartModel::isModified()
-    throw(uno::RuntimeException)
 {
 	//@todo guard
 	return m_bModified;
 }
 
 void SAL_CALL ChartModel::setModified( sal_Bool bModified )
-    throw(beans::PropertyVetoException,
-          uno::RuntimeException)
 {
     apphelper::LifeTimeGuard aGuard(m_aLifeTimeManager);
 	if(!aGuard.startApiCall())//@todo ? is this a long lasting call??
@@ -731,7 +708,6 @@ void SAL_CALL ChartModel::setModified( sal_Bool bModified )
 //-----------------------------------------------------------------
 void SAL_CALL ChartModel::addModifyListener(
     const uno::Reference< util::XModifyListener >& xListener )
-    throw(uno::RuntimeException)
 {
 	if( m_aLifeTimeManager.impl_isDisposedOrClosed() )
 		return; //behave passive if already disposed or closed
@@ -742,7 +718,6 @@ void SAL_CALL ChartModel::addModifyListener(
 
 void SAL_CALL ChartModel::removeModifyListener(
     const uno::Reference< util::XModifyListener >& xListener )
-    throw(uno::RuntimeException)
 {
 	if( m_aLifeTimeManager.impl_isDisposedOrClosed(false) )
 		return; //behave passive if already disposed or closed
@@ -755,7 +730,6 @@ void SAL_CALL ChartModel::removeModifyListener(
 // util::XModifyListener
 //-----------------------------------------------------------------
 void SAL_CALL ChartModel::modified( const lang::EventObject& )
-    throw (uno::RuntimeException)
 {
     if( m_nInLoad == 0 )
         setModified( sal_True );
@@ -765,7 +739,6 @@ void SAL_CALL ChartModel::modified( const lang::EventObject& )
 // lang::XEventListener (base of util::XModifyListener)
 //-----------------------------------------------------------------
 void SAL_CALL ChartModel::disposing( const lang::EventObject& )
-    throw (uno::RuntimeException)
 {
     // child was disposed -- should not happen from outside
 }
@@ -777,11 +750,6 @@ void SAL_CALL ChartModel::disposing( const lang::EventObject& )
 void SAL_CALL ChartModel::loadFromStorage(
     const Reference< embed::XStorage >& xStorage,
     const Sequence< beans::PropertyValue >& rMediaDescriptor )
-    throw (lang::IllegalArgumentException,
-           frame::DoubleInitializationException,
-           io::IOException,
-           uno::Exception,
-           uno::RuntimeException)
 {
     attachResource( OUString(), rMediaDescriptor );
     impl_load( rMediaDescriptor, xStorage );
@@ -790,34 +758,22 @@ void SAL_CALL ChartModel::loadFromStorage(
 void SAL_CALL ChartModel::storeToStorage(
     const Reference< embed::XStorage >& xStorage,
     const Sequence< beans::PropertyValue >& rMediaDescriptor )
-    throw (lang::IllegalArgumentException,
-           io::IOException,
-           uno::Exception,
-           uno::RuntimeException)
 {
     impl_store( rMediaDescriptor, xStorage );
 }
 
 void SAL_CALL ChartModel::switchToStorage( const Reference< embed::XStorage >& xStorage )
-    throw (lang::IllegalArgumentException,
-           io::IOException,
-           uno::Exception,
-           uno::RuntimeException)
 {
     m_xStorage = xStorage;
     impl_notifyStorageChangeListeners();
 }
 
 Reference< embed::XStorage > SAL_CALL ChartModel::getDocumentStorage()
-    throw (io::IOException,
-           uno::Exception,
-           uno::RuntimeException)
 {
     return m_xStorage;
 }
 
 void SAL_CALL ChartModel::impl_notifyStorageChangeListeners()
-    throw( uno::RuntimeException)
 {
     ::cppu::OInterfaceContainerHelper* pIC = m_aLifeTimeManager.m_aListenerContainer
           .getContainer( ::getCppuType((const uno::Reference< document::XStorageChangeListener >*)0) );
@@ -834,7 +790,6 @@ void SAL_CALL ChartModel::impl_notifyStorageChangeListeners()
 }
 
 void SAL_CALL ChartModel::addStorageChangeListener( const Reference< document::XStorageChangeListener >& xListener )
-    throw (uno::RuntimeException)
 {
 	if( m_aLifeTimeManager.impl_isDisposedOrClosed() )
 		return; //behave passive if already disposed or closed
@@ -844,7 +799,6 @@ void SAL_CALL ChartModel::addStorageChangeListener( const Reference< document::X
 }
 
 void SAL_CALL ChartModel::removeStorageChangeListener( const Reference< document::XStorageChangeListener >& xListener )
-    throw (uno::RuntimeException)
 {
 	if( m_aLifeTimeManager.impl_isDisposedOrClosed(false) )
 		return; //behave passive if already disposed or closed

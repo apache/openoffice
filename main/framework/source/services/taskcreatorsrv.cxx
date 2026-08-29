@@ -118,16 +118,12 @@ TaskCreatorService::~TaskCreatorService()
 
 //-----------------------------------------------
 css::uno::Reference< css::uno::XInterface > SAL_CALL TaskCreatorService::createInstance()
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     return createInstanceWithArguments(css::uno::Sequence< css::uno::Any >());
 }
 
 //-----------------------------------------------
 css::uno::Reference< css::uno::XInterface > SAL_CALL TaskCreatorService::createInstanceWithArguments(const css::uno::Sequence< css::uno::Any >& lArguments)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     static ::rtl::OUString     DEFAULTVAL_FRAMENAME                     = ::rtl::OUString();
     static sal_Bool            DEFAULTVAL_MAKEVISIBLE                   = sal_False;

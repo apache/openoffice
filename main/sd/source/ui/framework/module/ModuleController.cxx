@@ -86,7 +86,7 @@ Reference<XInterface> SAL_CALL ModuleController_createInstance (
 
 
 
-::rtl::OUString ModuleController_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString ModuleController_getImplementationName (void)
 {
     return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.Draw.framework.module.ModuleController"));
@@ -96,7 +96,6 @@ Reference<XInterface> SAL_CALL ModuleController_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL ModuleController_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.framework.ModuleController"));
@@ -282,7 +281,6 @@ void ModuleController::ProcessStartupService (const ::std::vector<Any>& rValues)
 //----- XModuleController -----------------------------------------------------
 
 void SAL_CALL ModuleController::requestResource (const OUString& rsResourceURL)
-    throw (RuntimeException)
 {
     ResourceToFactoryMap::const_iterator iFactory (mpResourceToFactoryMap->find(rsResourceURL));
     if (iFactory != mpResourceToFactoryMap->end())
@@ -330,7 +328,6 @@ void SAL_CALL ModuleController::requestResource (const OUString& rsResourceURL)
 //----- XInitialization -------------------------------------------------------
 
 void SAL_CALL ModuleController::initialize (const Sequence<Any>& aArguments)
-    throw (Exception, RuntimeException)
 {
     if (aArguments.getLength() > 0)
     {

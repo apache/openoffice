@@ -36,7 +36,7 @@ namespace connectivity
 	protected:
         virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > createDescriptor();
-        virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+        virtual void impl_refresh();
 	public:
 		OKeyColumnsHelper(	OTableKeyHelper* _pKey,
 						::osl::Mutex& _rMutex,

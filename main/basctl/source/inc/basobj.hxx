@@ -77,8 +77,7 @@ namespace BasicIDE
 	// new methods for modules
 
 	::rtl::OUString		GetModule(
-		const ScriptDocument& rDocument, const String& rLibName, const String& rModName )
-		throw( ::com::sun::star::container::NoSuchElementException );
+		const ScriptDocument& rDocument, const String& rLibName, const String& rModName );
 
     /** renames a module
 
@@ -94,8 +93,7 @@ namespace BasicIDE
         sal_Bool bChooseOnly, const ::rtl::OUString& rMacroDesc );
 
 	::com::sun::star::uno::Sequence< ::rtl::OUString > GetMethodNames(
-		const ScriptDocument& rDocument, const String& rLibName, const String& rModName )
-		throw( ::com::sun::star::container::NoSuchElementException );
+		const ScriptDocument& rDocument, const String& rLibName, const String& rModName );
 
 	sal_Bool					HasMethod(
 		const ScriptDocument& rDocument, const String& rLibName, const String& rModName, const String& rMethName );
@@ -103,16 +101,14 @@ namespace BasicIDE
 	// new methods for dialogs
 
 	::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStreamProvider > GetDialog(
-		const ScriptDocument& rDocument, const String& rLibName, const String& rDlgName )
-		throw( ::com::sun::star::container::NoSuchElementException );
+		const ScriptDocument& rDocument, const String& rLibName, const String& rDlgName );
 
     /** renames a dialog
 
         Will show an error message when renaming fails because the new name is already used.
     */
 	bool                 RenameDialog(
-		Window* pErrorParent, const ScriptDocument& rDocument, const String& rLibName, const String& rOldName, const String& rNewName )
-		throw( ::com::sun::star::container::ElementExistException, ::com::sun::star::container::NoSuchElementException );
+		Window* pErrorParent, const ScriptDocument& rDocument, const String& rLibName, const String& rOldName, const String& rNewName );
 
 	bool                 RemoveDialog(
 		const ScriptDocument& rDocument, const String& rLibName, const String& rDlgName );

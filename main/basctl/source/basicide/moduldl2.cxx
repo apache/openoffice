@@ -88,7 +88,7 @@ class DummyInteractionHandler  : public HandlerImpl_BASE
 public:
     DummyInteractionHandler( const Reference< task::XInteractionHandler >& xHandler ) : m_xHandler( xHandler ){}
 
-    virtual void SAL_CALL handle( const Reference< task::XInteractionRequest >& rRequest ) throw (::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL handle( const Reference< task::XInteractionRequest >& rRequest )
     {
         if ( m_xHandler.is() )
         {
@@ -1238,20 +1238,16 @@ public:
 	{}
 
     // Methods
-    virtual Reference< task::XInteractionHandler > SAL_CALL getInteractionHandler()
-		throw(RuntimeException);
-    virtual Reference< XProgressHandler > SAL_CALL getProgressHandler()
-		throw(RuntimeException);
+    virtual Reference< task::XInteractionHandler > SAL_CALL getInteractionHandler();
+    virtual Reference< XProgressHandler > SAL_CALL getProgressHandler();
 };
 
 Reference< task::XInteractionHandler > OLibCommandEnvironment::getInteractionHandler()
-	throw(RuntimeException)
 {
 	return mxInteraction;
 }
 
 Reference< XProgressHandler > OLibCommandEnvironment::getProgressHandler()
-	throw(RuntimeException)
 {
 	Reference< XProgressHandler > xRet;
 	return xRet;

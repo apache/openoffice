@@ -25,7 +25,7 @@ using namespace ::com::sun::star;
 using namespace ::ooo::vba;
 
 void
-ScVbaOutline::ShowLevels( const uno::Any& RowLevels, const uno::Any& ColumnLevels ) throw (uno::RuntimeException)
+ScVbaOutline::ShowLevels( const uno::Any& RowLevels, const uno::Any& ColumnLevels )
 {
 	sal_Int16 nLevel = 0;
 	if (mxOutline.is())

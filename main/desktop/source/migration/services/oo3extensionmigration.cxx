@@ -381,14 +381,14 @@ bool OO3ExtensionMigration::migrateExtension( const ::rtl::OUString& sSourceDir 
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-::rtl::OUString OO3ExtensionMigration::getImplementationName() throw (RuntimeException)
+::rtl::OUString OO3ExtensionMigration::getImplementationName()
 {
     return OO3ExtensionMigration_getImplementationName();
 }
 
 // -----------------------------------------------------------------------------
 
-sal_Bool OO3ExtensionMigration::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+sal_Bool OO3ExtensionMigration::supportsService( const ::rtl::OUString& rServiceName )
 {
     Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
     const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -401,7 +401,7 @@ sal_Bool OO3ExtensionMigration::supportsService( const ::rtl::OUString& rService
 
 // -----------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > OO3ExtensionMigration::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > OO3ExtensionMigration::getSupportedServiceNames()
 {
     return OO3ExtensionMigration_getSupportedServiceNames();
 }
@@ -410,7 +410,7 @@ Sequence< ::rtl::OUString > OO3ExtensionMigration::getSupportedServiceNames() th
 // XInitialization
 // -----------------------------------------------------------------------------
 
-void OO3ExtensionMigration::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+void OO3ExtensionMigration::initialize( const Sequence< Any >& aArguments )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -462,7 +462,6 @@ TStringVectorPtr getContent( const ::rtl::OUString& rBaseURL )
 }
 
 Any OO3ExtensionMigration::execute( const Sequence< beans::NamedValue >& )
-    throw (lang::IllegalArgumentException, Exception, RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -504,14 +503,12 @@ TmpRepositoryCommandEnv::~TmpRepositoryCommandEnv()
 // XCommandEnvironment
 //______________________________________________________________________________
 uno::Reference< task::XInteractionHandler > TmpRepositoryCommandEnv::getInteractionHandler()
-throw ( uno::RuntimeException )
 {
     return this;
 }
 
 //______________________________________________________________________________
 uno::Reference< ucb::XProgressHandler > TmpRepositoryCommandEnv::getProgressHandler()
-throw ( uno::RuntimeException )
 {
     return this;
 }
@@ -519,7 +516,6 @@ throw ( uno::RuntimeException )
 // XInteractionHandler
 void TmpRepositoryCommandEnv::handle(
     uno::Reference< task::XInteractionRequest> const & xRequest )
-    throw ( uno::RuntimeException )
 {
     uno::Any request( xRequest->getRequest() );
     OSL_ASSERT( request.getValueTypeClass() == uno::TypeClass_EXCEPTION );
@@ -567,17 +563,15 @@ void TmpRepositoryCommandEnv::handle(
 
 // XProgressHandler
 void TmpRepositoryCommandEnv::push( uno::Any const & /*Status*/ )
-throw (uno::RuntimeException)
 {
 }
 
 
 void TmpRepositoryCommandEnv::update( uno::Any const & /*Status */)
-throw (uno::RuntimeException)
 {
 }
 
-void TmpRepositoryCommandEnv::pop() throw (uno::RuntimeException)
+void TmpRepositoryCommandEnv::pop()
 {
 }
 

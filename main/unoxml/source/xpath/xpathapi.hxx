@@ -95,54 +95,43 @@ namespace XPath
                 rSMgr);
 
         // XServiceInfo
-        virtual OUString SAL_CALL getImplementationName()
-            throw (RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName)
-            throw (RuntimeException);
-        virtual Sequence< OUString > SAL_CALL getSupportedServiceNames ()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getImplementationName();
+        virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+        virtual Sequence< OUString > SAL_CALL getSupportedServiceNames ();
 
 
         // --- XXPathAPI ---
 
-        virtual void SAL_CALL registerNS(const OUString& aPrefix, const OUString& aURI)
-            throw (RuntimeException);
+        virtual void SAL_CALL registerNS(const OUString& aPrefix, const OUString& aURI);
 
-        virtual void SAL_CALL unregisterNS(const OUString& aPrefix, const OUString& aURI)
-            throw (RuntimeException);
+        virtual void SAL_CALL unregisterNS(const OUString& aPrefix, const OUString& aURI);
 
         /**
         Use an XPath string to select a nodelist.
         */
-        virtual Reference< XNodeList > SAL_CALL selectNodeList(const Reference< XNode >& contextNode, const OUString& str)
-            throw (RuntimeException, XPathException);
+        virtual Reference< XNodeList > SAL_CALL selectNodeList(const Reference< XNode >& contextNode, const OUString& str);
 
         /**
         Use an XPath string to select a nodelist.
         */
-        virtual Reference< XNodeList > SAL_CALL selectNodeListNS(const Reference< XNode >& contextNode, const OUString& str, const Reference< XNode >&  namespaceNode)
-            throw (RuntimeException, XPathException);
+        virtual Reference< XNodeList > SAL_CALL selectNodeListNS(const Reference< XNode >& contextNode, const OUString& str, const Reference< XNode >&  namespaceNode);
 
         /**
         Use an XPath string to select a single node.
         */
-        virtual Reference< XNode > SAL_CALL selectSingleNode(const Reference< XNode >& contextNode, const OUString& str)
-            throw (RuntimeException, XPathException);
+        virtual Reference< XNode > SAL_CALL selectSingleNode(const Reference< XNode >& contextNode, const OUString& str);
 
         /**
         Use an XPath string to select a single node.
         */
-        virtual Reference< XNode > SAL_CALL selectSingleNodeNS(const Reference< XNode >& contextNode, const OUString& str, const Reference< XNode >&  namespaceNode)
-            throw (RuntimeException, XPathException);
+        virtual Reference< XNode > SAL_CALL selectSingleNodeNS(const Reference< XNode >& contextNode, const OUString& str, const Reference< XNode >&  namespaceNode);
 
-        virtual Reference< XXPathObject > SAL_CALL eval(const Reference< XNode >& contextNode, const OUString& str)
-            throw (RuntimeException, XPathException);
+        virtual Reference< XXPathObject > SAL_CALL eval(const Reference< XNode >& contextNode, const OUString& str);
 
-        virtual Reference< XXPathObject > SAL_CALL evalNS(const Reference< XNode >& contextNode, const OUString& str, const Reference< XNode >&  namespaceNode)
-            throw (RuntimeException, XPathException);
+        virtual Reference< XXPathObject > SAL_CALL evalNS(const Reference< XNode >& contextNode, const OUString& str, const Reference< XNode >&  namespaceNode);
 
-        virtual void SAL_CALL registerExtension(const OUString& aName) throw (RuntimeException);
-        virtual void SAL_CALL registerExtensionInstance(const Reference< XXPathExtension>& aExtension) throw (RuntimeException);
+        virtual void SAL_CALL registerExtension(const OUString& aName);
+        virtual void SAL_CALL registerExtensionInstance(const Reference< XXPathExtension>& aExtension);
 
     };
 }

@@ -51,7 +51,6 @@ executeErrorDialog(
     rtl::OUString const & rContext,
     rtl::OUString const & rMessage,
     WinBits nButtonMask)
-    SAL_THROW((uno::RuntimeException))
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -143,7 +142,6 @@ UUIInteractionHelper::handleErrorHandlerRequest(
     bool bObtainErrorStringOnly,
     bool & bHasErrorString,
     rtl::OUString & rErrorString)
-        SAL_THROW((uno::RuntimeException))
 {
     if (bObtainErrorStringOnly)
     {

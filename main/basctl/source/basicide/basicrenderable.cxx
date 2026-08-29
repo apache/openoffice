@@ -101,7 +101,7 @@ Printer* BasicRenderable::getPrinter()
 
 sal_Int32 SAL_CALL BasicRenderable::getRendererCount (
         const Any&, const Sequence<beans::PropertyValue >& i_xOptions
-        ) throw (lang::IllegalArgumentException, RuntimeException)
+        )
 {
     processProperties( i_xOptions );
 
@@ -131,7 +131,7 @@ sal_Int32 SAL_CALL BasicRenderable::getRendererCount (
 
 Sequence<beans::PropertyValue> SAL_CALL BasicRenderable::getRenderer (
         sal_Int32, const Any&, const Sequence<beans::PropertyValue>& i_xOptions
-        ) throw (lang::IllegalArgumentException, RuntimeException)
+        )
 {
     processProperties( i_xOptions );
 
@@ -159,7 +159,7 @@ Sequence<beans::PropertyValue> SAL_CALL BasicRenderable::getRenderer (
 void SAL_CALL BasicRenderable::render (
         sal_Int32 nRenderer, const Any&,
         const Sequence<beans::PropertyValue>& i_xOptions
-        ) throw (lang::IllegalArgumentException, RuntimeException)
+        )
 {
     processProperties( i_xOptions );
 

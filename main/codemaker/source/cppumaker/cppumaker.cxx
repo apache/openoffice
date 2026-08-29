@@ -68,7 +68,6 @@ void produceAllTypes(RegistryKey& rTypeKey, bool bIsExtraType,
                          codemaker::GeneratedTypeSet & generated,
 						 CppuOptions* pOptions,
 						 sal_Bool bFullScope)
-	throw( CannotDumpException )
 {
     OString typeName = typeMgr.getTypeName(rTypeKey);
 
@@ -109,7 +108,6 @@ void produceAllTypes(const OString& typeName,
                      codemaker::GeneratedTypeSet & generated,
                      CppuOptions* pOptions,
                      sal_Bool bFullScope)
-	throw( CannotDumpException )
 {
     produce(typeName, typeMgr, generated, pOptions);
 

@@ -124,21 +124,18 @@ namespace connectivity
 			sal_Bool	m_bUseOldDateFormat;
 
 
-			void		buildTypeInfo() throw(SQLException);
+			void		buildTypeInfo();
 		public:
-			OUString getMysqlVariable(const char *varname)
-																throw(SQLException, RuntimeException);
+			OUString getMysqlVariable(const char *varname);
 
-			sal_Int32 getMysqlVersion()
-																throw(SQLException, RuntimeException);
+			sal_Int32 getMysqlVersion();
 
-			virtual void construct(const OUString& url,const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& info)
-																throw(SQLException);
+			virtual void construct(const OUString& url,const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& info);
 
 			OConnection(MysqlCDriver& _rDriver, sql::Driver * cppDriver);
 			virtual ~OConnection();
 
-			void closeAllStatements ()							throw(SQLException);
+			void closeAllStatements ();
 
 
 			rtl_TextEncoding getConnectionEncoding() { return m_settings.encoding; }
@@ -153,67 +150,46 @@ namespace connectivity
 			// XServiceInfo
 			DECLARE_SERVICE_INFO();
 			// XConnection
-			my_XStatementRef SAL_CALL createStatement()
-																throw(SQLException, RuntimeException);
+			my_XStatementRef SAL_CALL createStatement();
 
-			my_XPreparedStatementRef SAL_CALL prepareStatement(const OUString& sql)
-																throw(SQLException, RuntimeException);
+			my_XPreparedStatementRef SAL_CALL prepareStatement(const OUString& sql);
 
-			my_XPreparedStatementRef SAL_CALL prepareCall(const OUString& sql)
-																throw(SQLException, RuntimeException);
+			my_XPreparedStatementRef SAL_CALL prepareCall(const OUString& sql);
 
-			OUString SAL_CALL nativeSQL(const OUString& sql)
-																throw(SQLException, RuntimeException);
+			OUString SAL_CALL nativeSQL(const OUString& sql);
 
-			void SAL_CALL setAutoCommit(sal_Bool autoCommit)
-																throw(SQLException, RuntimeException);
+			void SAL_CALL setAutoCommit(sal_Bool autoCommit);
 
-			sal_Bool SAL_CALL getAutoCommit()
-																throw(SQLException, RuntimeException);
+			sal_Bool SAL_CALL getAutoCommit();
 
-			void SAL_CALL commit()
-																throw(SQLException, RuntimeException);
+			void SAL_CALL commit();
 
-			void SAL_CALL rollback()
-																throw(SQLException, RuntimeException);
+			void SAL_CALL rollback();
 
-			sal_Bool SAL_CALL isClosed()
-																throw(SQLException, RuntimeException);
+			sal_Bool SAL_CALL isClosed();
 
-			my_XDatabaseMetaDataRef SAL_CALL getMetaData()
-																throw(SQLException, RuntimeException);
+			my_XDatabaseMetaDataRef SAL_CALL getMetaData();
 
-			void SAL_CALL setReadOnly(sal_Bool readOnly)
-																throw(SQLException, RuntimeException);
+			void SAL_CALL setReadOnly(sal_Bool readOnly);
 
-			sal_Bool SAL_CALL isReadOnly()
-																throw(SQLException, RuntimeException);
+			sal_Bool SAL_CALL isReadOnly();
 
-			void SAL_CALL setCatalog(const OUString& catalog)
-																throw(SQLException, RuntimeException);
+			void SAL_CALL setCatalog(const OUString& catalog);
 
-			OUString SAL_CALL getCatalog()
-																throw(SQLException, RuntimeException);
+			OUString SAL_CALL getCatalog();
 
-			void SAL_CALL setTransactionIsolation(sal_Int32 level)
-																throw(SQLException, RuntimeException);
+			void SAL_CALL setTransactionIsolation(sal_Int32 level);
 
-			sal_Int32 SAL_CALL getTransactionIsolation()
-																throw(SQLException, RuntimeException);
+			sal_Int32 SAL_CALL getTransactionIsolation();
 
-			my_XNameAccessRef SAL_CALL getTypeMap()
-																throw(SQLException, RuntimeException);
+			my_XNameAccessRef SAL_CALL getTypeMap();
 
-			void SAL_CALL setTypeMap(const my_XNameAccessRef& typeMap)
-																throw(SQLException, RuntimeException);
+			void SAL_CALL setTypeMap(const my_XNameAccessRef& typeMap);
 			// XCloseable
-			void SAL_CALL close()
-																throw(SQLException, RuntimeException);
+			void SAL_CALL close();
 			// XWarningsSupplier
-			::com::sun::star::uno::Any SAL_CALL getWarnings()
-																throw(SQLException, RuntimeException);
-			void SAL_CALL clearWarnings()
-																throw(SQLException, RuntimeException);
+			::com::sun::star::uno::Any SAL_CALL getWarnings();
+			void SAL_CALL clearWarnings();
 
             // TODO: Not used
 			//sal_Int32 sdbcColumnType(OUString typeName);

@@ -90,7 +90,6 @@ Box_Base::AddChild (uno::Reference <awt::XLayoutConstrains> const& xChild)
 
 void SAL_CALL
 Box_Base::addChild (uno::Reference <awt::XLayoutConstrains> const& xChild)
-    throw (uno::RuntimeException, awt::MaxChildrenException)
 {
     if (xChild.is ())
     {
@@ -117,7 +116,6 @@ Box_Base::removeChildData( std::list< ChildData* >& lst, css::uno::Reference< cs
 
 void SAL_CALL
 Box_Base::removeChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
-    throw (uno::RuntimeException)
 {
     if ( ChildData* p = removeChildData( maChildren, xChild ) )
     {
@@ -133,7 +131,6 @@ Box_Base::removeChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
 
 uno::Sequence< uno::Reference < awt::XLayoutConstrains > > SAL_CALL
 Box_Base::getChildren()
-    throw (uno::RuntimeException)
 {
     uno::Sequence< uno::Reference< awt::XLayoutConstrains > > children( maChildren.size() );
     unsigned int index = 0;
@@ -146,7 +143,6 @@ Box_Base::getChildren()
 
 uno::Reference< beans::XPropertySet > SAL_CALL
 Box_Base::getChildProperties( const uno::Reference< awt::XLayoutConstrains >& xChild )
-    throw (uno::RuntimeException)
 {
 
     for ( std::list< ChildData * >::iterator it = maChildren.begin();

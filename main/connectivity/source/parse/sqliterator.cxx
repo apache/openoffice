@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_dbtools.hxx"
+#include <iterator>
 #include "connectivity/sqliterator.hxx"
 #include "connectivity/sdbcx/VTable.hxx"
 #include <connectivity/sqlparse.hxx>

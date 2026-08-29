@@ -49,7 +49,7 @@ Reference<XInterface> SAL_CALL BasicToolBarFactory_createInstance (
 
 
 
-::rtl::OUString BasicToolBarFactory_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString BasicToolBarFactory_getImplementationName (void)
 {
     return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.Draw.framework.BasicToolBarFactory"));
@@ -59,7 +59,6 @@ Reference<XInterface> SAL_CALL BasicToolBarFactory_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL BasicToolBarFactory_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.framework.BasicToolBarFactory"));
@@ -119,7 +118,6 @@ void BasicToolBarFactory::Shutdown (void)
 //----- XInitialization -------------------------------------------------------
 
 void SAL_CALL BasicToolBarFactory::initialize (const Sequence<Any>& aArguments)
-    throw (Exception, RuntimeException)
 {
     if (aArguments.getLength() > 0)
     {
@@ -175,7 +173,6 @@ void SAL_CALL BasicToolBarFactory::initialize (const Sequence<Any>& aArguments)
 
 void SAL_CALL BasicToolBarFactory::disposing (
     const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if (rEventObject.Source == mxConfigurationController)
         mxConfigurationController = NULL;
@@ -188,7 +185,6 @@ void SAL_CALL BasicToolBarFactory::disposing (
 
 Reference<XResource> SAL_CALL BasicToolBarFactory::createResource (
     const Reference<XResourceId>& rxToolBarId)
-    throw (RuntimeException, IllegalArgumentException, WrappedTargetException)
 {
     ThrowIfDisposed();
 
@@ -211,7 +207,6 @@ Reference<XResource> SAL_CALL BasicToolBarFactory::createResource (
 
 void SAL_CALL BasicToolBarFactory::releaseResource (
     const Reference<XResource>& rxToolBar)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -224,7 +219,6 @@ void SAL_CALL BasicToolBarFactory::releaseResource (
 
 
 void BasicToolBarFactory::ThrowIfDisposed (void) const
-    throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

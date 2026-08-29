@@ -213,7 +213,7 @@ void HeaderMenuController::fillPopupMenu( const Reference< ::com::sun::star::fra
 }
 
 // XEventListener
-void SAL_CALL HeaderMenuController::disposing( const EventObject& ) throw ( RuntimeException )
+void SAL_CALL HeaderMenuController::disposing( const EventObject& )
 {
     Reference< css::awt::XMenuListener > xHolder(( OWeakObject *)this, UNO_QUERY );
 
@@ -228,7 +228,7 @@ void SAL_CALL HeaderMenuController::disposing( const EventObject& ) throw ( Runt
 }
 
 // XStatusListener
-void SAL_CALL HeaderMenuController::statusChanged( const FeatureStateEvent& Event ) throw ( RuntimeException )
+void SAL_CALL HeaderMenuController::statusChanged( const FeatureStateEvent& Event )
 {
     Reference< com::sun::star::frame::XModel > xModel;
 
@@ -252,7 +252,7 @@ void HeaderMenuController::impl_select(const Reference< XDispatch >& _xDispatch,
 		_xDispatch->dispatch( aTargetURL, aArgs );
 }
 
-void SAL_CALL HeaderMenuController::updatePopupMenu() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL HeaderMenuController::updatePopupMenu()
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
 

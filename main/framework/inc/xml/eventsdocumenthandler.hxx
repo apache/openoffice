@@ -84,41 +84,25 @@ class FWE_DLLPUBLIC OReadEventsDocumentHandler :	private ThreadHelpBase,	// Stru
 
 
 		// XDocumentHandler
-		virtual void SAL_CALL startDocument(void)
-		throw (	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL startDocument(void);
 
-		virtual void SAL_CALL endDocument(void)
-		throw(	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL endDocument(void);
 
 		virtual void SAL_CALL startElement(
 			const rtl::OUString& aName,
-			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > &xAttribs)
-		throw(	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > &xAttribs);
 
-		virtual void SAL_CALL endElement(const rtl::OUString& aName)
-		throw(	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL endElement(const rtl::OUString& aName);
 
-		virtual void SAL_CALL characters(const rtl::OUString& aChars)
-		throw(	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL characters(const rtl::OUString& aChars);
 
-		virtual void SAL_CALL ignorableWhitespace(const rtl::OUString& aWhitespaces)
-		throw(	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL ignorableWhitespace(const rtl::OUString& aWhitespaces);
 
 		virtual void SAL_CALL processingInstruction(const rtl::OUString& aTarget,
-													const rtl::OUString& aData)
-		throw(	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+													const rtl::OUString& aData);
 
 		virtual void SAL_CALL setDocumentLocator(
-			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator > &xLocator)
-		throw(	::com::sun::star::xml::sax::SAXException,
-				::com::sun::star::uno::RuntimeException );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator > &xLocator);
 
     protected:
         virtual ~OReadEventsDocumentHandler();
@@ -154,16 +138,12 @@ class FWE_DLLPUBLIC OWriteEventsDocumentHandler : private ThreadHelpBase // Stru
 			::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler > );
 		virtual ~OWriteEventsDocumentHandler();
 
-		void WriteEventsDocument() throw
-			( ::com::sun::star::xml::sax::SAXException,
-			  ::com::sun::star::uno::RuntimeException );
+		void WriteEventsDocument();
 
 	protected:
 		virtual void WriteEvent(
 				const ::rtl::OUString& aEventName,
-				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aPropertyValue ) throw
-			( ::com::sun::star::xml::sax::SAXException,
-			  ::com::sun::star::uno::RuntimeException );
+				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aPropertyValue );
 
 		const EventsConfig&																	m_aItems;
 		::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler >	m_xWriteDocumentHandler;

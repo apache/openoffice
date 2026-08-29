@@ -1379,6 +1379,36 @@ my ($allvariableshashref,
         $installer::globals::ziplistname,
         $installer::globals::product,
         $loggingdir);
+
+# openoffice.lst has no architecture dimension -- its Globals and product blocks are
+# shared by every platform -- so a 64 bit Windows build has to say so from here, where
+# the output path is known.  Setting 64BITPRODUCT in the .lst would make the Linux and
+# 32 bit Windows builds claim to be 64 bit too.
+#
+# This turns on machinery that already exists and has simply never been switched on:
+#   msiglobal.pm    summary Template becomes x64 instead of Intel
+#   msiglobal.pm    prepare_64bit_database(): RegLocator +16, VersionNT -> VersionNT64
+#   component.pm    Component Attributes +256 (msidbComponentAttributes64bit)
+#   registry.pm     a Reg64 table for entries styled X64 / X64_ONLY
+#
+# and PROGRAMFILESFOLDERNAME feeds directory.pm's existing
+# overwrite_programfilesfolder(), without which a package marked x64 would still
+# install into "Program Files (x86)".
+#
+# An explicit value in the .lst always wins, so this stays an override rather than a
+# policy.
+if ( $installer::globals::iswin64build )
+{
+    if ( ! exists($allvariableshashref->{'64BITPRODUCT'}) )
+    {
+        $allvariableshashref->{'64BITPRODUCT'} = 1;
+    }
+    if ( ! exists($allvariableshashref->{'PROGRAMFILESFOLDERNAME'}) )
+    {
+        $allvariableshashref->{'PROGRAMFILESFOLDERNAME'} = "ProgramFiles64Folder";
+    }
+}
+
 $installer::logger::Lang->printf("variables:\n");
 foreach my $key (sort keys %$allvariableshashref)
 {

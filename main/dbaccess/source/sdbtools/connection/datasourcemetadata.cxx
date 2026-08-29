@@ -76,7 +76,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DataSourceMetaData::supportsQueriesInFrom(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL DataSourceMetaData::supportsQueriesInFrom(  )
     {
         EntryGuard aGuard( *this );
         ::dbtools::DatabaseMetaData aMeta( getConnection() );

@@ -29,6 +29,7 @@
 #include <algorithm>
 #include <map>
 #include <set>
+#include <iterator>
 #include <hintids.hxx>
 #include <string.h>             // memcpy()
 #include <osl/endian.h>

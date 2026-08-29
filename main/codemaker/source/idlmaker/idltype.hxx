@@ -69,9 +69,9 @@ public:
 
 	virtual ~IdlType();
 
-	virtual sal_Bool dump(IdlOptions* pOptions) throw( CannotDumpException );
-	virtual sal_Bool dumpDependedTypes(IdlOptions* pOptions)  throw( CannotDumpException );
-	virtual sal_Bool dumpHFile(FileStream& o) throw( CannotDumpException ) = 0;
+	virtual sal_Bool dump(IdlOptions* pOptions);
+	virtual sal_Bool dumpDependedTypes(IdlOptions* pOptions);
+	virtual sal_Bool dumpHFile(FileStream& o) = 0;
 
 	virtual ::rtl::OString dumpHeaderDefine(FileStream& o, sal_Char* prefix );
 	virtual void dumpDefaultHIncludes(FileStream& o);
@@ -81,8 +81,7 @@ public:
 
 	virtual void dumpNameSpace(FileStream& o, sal_Bool bOpen = sal_True, sal_Bool bFull = sal_False, const ::rtl::OString& type="");
 
-	virtual void dumpType(FileStream& o, const ::rtl::OString& type)
-					throw( CannotDumpException );
+	virtual void dumpType(FileStream& o, const ::rtl::OString& type);
 	::rtl::OString	getBaseType(const ::rtl::OString& type);
 	void	dumpIdlGetType(FileStream& o, const ::rtl::OString& type, sal_Bool bDecl=sal_False, IdlTypeDecl eDeclFlag=CPPUTYPEDECL_ALLTYPES);
 	BASETYPE isBaseType(const ::rtl::OString& type);
@@ -123,7 +122,7 @@ public:
 
 	virtual ~InterfaceType();
 
-	sal_Bool	dumpHFile(FileStream& o) throw( CannotDumpException );
+	sal_Bool	dumpHFile(FileStream& o);
 
 	void		dumpAttributes(FileStream& o);
 	void		dumpMethods(FileStream& o);
@@ -150,8 +149,8 @@ public:
 
 	virtual ~ModuleType();
 
-	virtual sal_Bool 	dump(IdlOptions* pOptions) throw( CannotDumpException );
-	sal_Bool			dumpHFile(FileStream& o) throw( CannotDumpException );
+	virtual sal_Bool 	dump(IdlOptions* pOptions);
+	sal_Bool			dumpHFile(FileStream& o);
 	sal_Bool			hasConstants();
 };
 
@@ -165,7 +164,7 @@ public:
 
 	virtual ~ConstantsType();
 
-	virtual sal_Bool 	dump(IdlOptions* pOptions) throw( CannotDumpException );
+	virtual sal_Bool 	dump(IdlOptions* pOptions);
 };
 
 class StructureType : public IdlType
@@ -178,7 +177,7 @@ public:
 
 	virtual ~StructureType();
 
-	sal_Bool	dumpHFile(FileStream& o) throw( CannotDumpException );
+	sal_Bool	dumpHFile(FileStream& o);
 
 	void		dumpSuperMember(FileStream& o, const ::rtl::OString& super);
 };
@@ -193,7 +192,7 @@ public:
 
 	virtual ~ExceptionType();
 
-	sal_Bool	dumpHFile(FileStream& o) throw( CannotDumpException );
+	sal_Bool	dumpHFile(FileStream& o);
 
 	void		dumpSuperMember(FileStream& o, const ::rtl::OString& super);
 };
@@ -208,7 +207,7 @@ public:
 
 	virtual ~EnumType();
 
-	sal_Bool	dumpHFile(FileStream& o) throw( CannotDumpException );
+	sal_Bool	dumpHFile(FileStream& o);
 };
 
 class TypeDefType : public IdlType
@@ -221,15 +220,14 @@ public:
 
 	virtual ~TypeDefType();
 
-	sal_Bool	dumpHFile(FileStream& o) throw( CannotDumpException );
+	sal_Bool	dumpHFile(FileStream& o);
 };
 
 
 sal_Bool produceType(const ::rtl::OString& typeName,
 					 TypeManager& typeMgr,
 					 TypeDependency& typeDependencies,
-					 IdlOptions* pOptions)
-				 throw( CannotDumpException );
+					 IdlOptions* pOptions);
 
 /**
  * This function returns a C++ scoped name, represents the namespace

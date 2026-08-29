@@ -114,7 +114,6 @@ void SAL_CALL DropTarget::disposing()
 }
 
 void SAL_CALL DropTarget::initialize( const Sequence< Any >& aArguments )
-		throw(Exception, RuntimeException)
 {
 	// The window must be registered for Dnd by RegisterDragDrop. We must ensure
 	// that RegisterDragDrop is called from an STA ( OleInitialize) thread.
@@ -135,7 +134,9 @@ void SAL_CALL DropTarget::initialize( const Sequence< Any >& aArguments )
 	if( aArguments.getLength() > 0)
 	{
 		// Get the window handle from aArgument. It is needed for RegisterDragDrop.
-		m_hWnd= *(HWND*)aArguments[0].getValue();
+		sal_uInt64 nWindowHandle= 0;
+		aArguments[0] >>= nWindowHandle;
+		m_hWnd= (HWND)(sal_uIntPtr) nWindowHandle;
 		OSL_ASSERT( IsWindow( m_hWnd) );
 
 		// Obtain the id of the thread that created the window
@@ -259,19 +260,19 @@ DWORD WINAPI DndTargetOleSTAFunc(LPVOID pParams)
 
 
 // XServiceInfo
-OUString SAL_CALL DropTarget::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL DropTarget::getImplementationName(  )
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_IMPL_NAME));
 }
 // XServiceInfo
-sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName )
 {
 	if( ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_SERVICE_NAME ))))
 		return sal_True;
 	return sal_False;
 }
 
-Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  )
 {
 	OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_SERVICE_NAME))};
 	return Sequence<OUString>(names, 1);
@@ -280,36 +281,34 @@ Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  ) throw (Ru
 
 // XDropTarget ----------------------------------------------------------------
 void SAL_CALL DropTarget::addDropTargetListener( const Reference< XDropTargetListener >& dtl )
-		throw(RuntimeException)
 {
 	rBHelper.addListener( ::getCppuType( &dtl ), dtl );
 }
 
 void SAL_CALL DropTarget::removeDropTargetListener( const Reference< XDropTargetListener >& dtl )
-		throw(RuntimeException)
 {
 	rBHelper.removeListener( ::getCppuType( &dtl ), dtl );
 }
 
-sal_Bool SAL_CALL DropTarget::isActive(  ) throw(RuntimeException)
+sal_Bool SAL_CALL DropTarget::isActive(  )
 {
 	return m_bActive; //m_bDropTargetRegistered;
 }
 
 
-void SAL_CALL DropTarget::setActive( sal_Bool _b ) throw(RuntimeException)
+void SAL_CALL DropTarget::setActive( sal_Bool _b )
 {
 	MutexGuard g(m_mutex);
 	m_bActive= _b;
 }
 
 
-sal_Int8 SAL_CALL DropTarget::getDefaultActions(  ) throw(RuntimeException)
+sal_Int8 SAL_CALL DropTarget::getDefaultActions(  )
 {
 	return m_nDefaultActions;
 }
 
-void SAL_CALL DropTarget::setDefaultActions( sal_Int8 actions ) throw(RuntimeException)
+void SAL_CALL DropTarget::setDefaultActions( sal_Int8 actions )
 {
 	OSL_ENSURE( actions < 8, "No valid default actions");
 	m_nDefaultActions= actions;

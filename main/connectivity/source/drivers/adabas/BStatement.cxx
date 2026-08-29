@@ -64,7 +64,7 @@ void OAdabasStatement::setResultSetType(sal_Int32 /*_par0*/)
     ::dbtools::throwFeatureNotImplementedException( "PreparedStatement:ResultSetType", *this );
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OAdabasStatement::execute( const ::rtl::OUString& sql ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasStatement::execute( const ::rtl::OUString& sql )
 {
 	m_aSelectColumns = m_pOwnConnection->createSelectColumns(sql);
 	return OAdabasStatement_BASE::execute(sql);

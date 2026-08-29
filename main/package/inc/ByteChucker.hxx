@@ -46,11 +46,9 @@ public:
 	ByteChucker (com::sun::star::uno::Reference<com::sun::star::io::XOutputStream> xOstream);
 	~ByteChucker();
 
-    void WriteBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData )
-		throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+    void WriteBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData );
 
-    sal_Int64 GetPosition()
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+    sal_Int64 GetPosition();
 
 	ByteChucker& operator << (sal_Int8 nInt8);
 	ByteChucker& operator << (sal_Int16 nInt16);

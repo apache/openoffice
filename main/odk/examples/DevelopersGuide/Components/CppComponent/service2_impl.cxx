@@ -77,25 +77,18 @@ public:
 
     // XInitialization will be called upon
     // createInstanceWithArguments[AndContext]()
-    virtual void SAL_CALL initialize( Sequence< Any > const & args )
-        throw (Exception);
+    virtual void SAL_CALL initialize( Sequence< Any > const & args );
     // XSomething
-    virtual OUString SAL_CALL methodOne( OUString const & str )
-        throw (RuntimeException);
-    virtual OUString SAL_CALL methodTwo( )
-        throw (RuntimeException);
+    virtual OUString SAL_CALL methodOne( OUString const & str );
+    virtual OUString SAL_CALL methodTwo( );
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName()
-        throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName )
-        throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 };
 
 // XInitialization implementation
 void MyService2Impl::initialize( Sequence< Any > const & args )
-    throw (Exception)
 {
     if (args.getLength() != 1)
     {
@@ -119,7 +112,6 @@ void MyService2Impl::initialize( Sequence< Any > const & args )
 
 // XSomething implementation
 OUString MyService2Impl::methodOne( OUString const & str )
-    throw (RuntimeException)
 {
     m_sData = str;
     return OUString( RTL_CONSTASCII_USTRINGPARAM(
@@ -127,7 +119,6 @@ OUString MyService2Impl::methodOne( OUString const & str )
 }
 
 OUString MyService2Impl::methodTwo( )
-    throw (RuntimeException)
 {
     return OUString( RTL_CONSTASCII_USTRINGPARAM(
         "called methodTwo() of MyService2 implementation: ") ) + m_sData;
@@ -135,7 +126,6 @@ OUString MyService2Impl::methodTwo( )
 
 // XServiceInfo implementation
 OUString MyService2Impl::getImplementationName()
-    throw (RuntimeException)
 {
     // unique implementation name
     return OUString( RTL_CONSTASCII_USTRINGPARAM(
@@ -143,7 +133,6 @@ OUString MyService2Impl::getImplementationName()
 }
 
 sal_Bool MyService2Impl::supportsService( OUString const & serviceName )
-    throw (RuntimeException)
 {
     // this object only supports one service, so the test is simple
     return serviceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM(
@@ -151,7 +140,6 @@ sal_Bool MyService2Impl::supportsService( OUString const & serviceName )
 }
 
 Sequence< OUString > MyService2Impl::getSupportedServiceNames()
-    throw (RuntimeException)
 {
     return getSupportedServiceNames_MyService2Impl();
 }

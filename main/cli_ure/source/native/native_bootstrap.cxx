@@ -251,6 +251,12 @@ extern "C" FARPROC WINAPI delayLoadHook(
 }
 
 ExternC
+#if defined(_MSC_VER) && _MSC_VER >= 1900
+// A modern delayimp.h declares this hook const unless
+// DELAYIMP_INSECURE_WRITABLE_HOOKS is defined, and the definition has to
+// agree with the declaration.  VC9's is writable, so it keeps the old form.
+const
+#endif
 PfnDliHook   __pfnDliFailureHook2 = delayLoadHook;
 
 namespace uno
@@ -267,7 +273,7 @@ namespace util
     The default value contain the path to the office program dir. No separate URE
     anymore.
 */
-public __sealed __gc class Bootstrap
+public ref class Bootstrap sealed
 {
     inline Bootstrap() {}
 
@@ -277,7 +283,7 @@ public:
 
         @see cppuhelper/bootstrap.hxx:defaultBootstrap_InitialComponentContext()
     */
-    static ::unoidl::com::sun::star::uno::XComponentContext *
+    static ::unoidl::com::sun::star::uno::XComponentContext ^
         defaultBootstrap_InitialComponentContext();
 
     /** Bootstraps the initial component context from a native UNO installation.
@@ -290,37 +296,37 @@ public:
 
         @see cppuhelper/bootstrap.hxx:defaultBootstrap_InitialComponentContext()
     */
-    static ::unoidl::com::sun::star::uno::XComponentContext *
+    static ::unoidl::com::sun::star::uno::XComponentContext ^
         defaultBootstrap_InitialComponentContext(
-            ::System::String * ini_file,
-            ::System::Collections::IDictionaryEnumerator *
+            ::System::String ^ ini_file,
+            ::System::Collections::IDictionaryEnumerator ^
               bootstrap_parameters );
 
     /** Bootstraps the initial component context from a native UNO installation.
 
     @see cppuhelper/bootstrap.hxx:bootstrap()
      */
-    static ::unoidl::com::sun::star::uno::XComponentContext *
+    static ::unoidl::com::sun::star::uno::XComponentContext ^
     bootstrap();
 };
 
 //______________________________________________________________________________
-::unoidl::com::sun::star::uno::XComponentContext *
+::unoidl::com::sun::star::uno::XComponentContext ^
 Bootstrap::defaultBootstrap_InitialComponentContext(
-    ::System::String * ini_file,
-    ::System::Collections::IDictionaryEnumerator * bootstrap_parameters )
+    ::System::String ^ ini_file,
+    ::System::Collections::IDictionaryEnumerator ^ bootstrap_parameters )
 {
-    if (0 != bootstrap_parameters)
+    if (nullptr != bootstrap_parameters)
     {
         bootstrap_parameters->Reset();
         while (bootstrap_parameters->MoveNext())
         {
             OUString key(
-                String_to_ustring( __try_cast< ::System::String * >(
-                                       bootstrap_parameters->get_Key() ) ) );
+                String_to_ustring( safe_cast< ::System::String ^ >(
+                                       bootstrap_parameters->Key ) ) );
             OUString value(
-                String_to_ustring( __try_cast< ::System::String * >(
-                                       bootstrap_parameters->get_Value() ) ) );
+                String_to_ustring( safe_cast< ::System::String ^ >(
+                                       bootstrap_parameters->Value ) ) );
 
             ::rtl::Bootstrap::set( key, value );
         }
@@ -328,31 +334,31 @@ Bootstrap::defaultBootstrap_InitialComponentContext(
 
     // bootstrap native UNO
     Reference< XComponentContext > xContext;
-    if (0 == ini_file)
+    if (nullptr == ini_file)
     {
         xContext = ::cppu::defaultBootstrap_InitialComponentContext();
     }
     else
     {
         xContext = ::cppu::defaultBootstrap_InitialComponentContext(
-            String_to_ustring( __try_cast< ::System::String * >( ini_file ) ) );
+            String_to_ustring( safe_cast< ::System::String ^ >( ini_file ) ) );
     }
 
-    return __try_cast< ::unoidl::com::sun::star::uno::XComponentContext * >(
+    return safe_cast< ::unoidl::com::sun::star::uno::XComponentContext ^ >(
         to_cli( xContext ) );
 }
 
 //______________________________________________________________________________
-::unoidl::com::sun::star::uno::XComponentContext *
+::unoidl::com::sun::star::uno::XComponentContext ^
 Bootstrap::defaultBootstrap_InitialComponentContext()
 {
-    return defaultBootstrap_InitialComponentContext( 0, 0 );
+    return defaultBootstrap_InitialComponentContext( nullptr, nullptr );
 }
 
-::unoidl::com::sun::star::uno::XComponentContext * Bootstrap::bootstrap()
+::unoidl::com::sun::star::uno::XComponentContext ^ Bootstrap::bootstrap()
 {
     Reference<XComponentContext> xContext = ::cppu::bootstrap();
-    return __try_cast< ::unoidl::com::sun::star::uno::XComponentContext * >(
+    return safe_cast< ::unoidl::com::sun::star::uno::XComponentContext ^ >(
         to_cli( xContext ) );
 
 }

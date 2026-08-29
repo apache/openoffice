@@ -165,23 +165,19 @@ class SortedResultSet:
 
 private:
 
-	long				FindPos( SortListData *pEntry, long nStart, long nEnd )
-							throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	long				FindPos( SortListData *pEntry, long nStart, long nEnd );
 	long				Compare( SortListData *pOne,
-								 SortListData *pTwo )
-							throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+								 SortListData *pTwo );
 	void				BuildSortInfo( REFERENCE< XRESULTSET > aResult,
 									   const SEQUENCE < NUMBERED_SORTINGINFO > &xSortInfo,
 									   const REFERENCE< XANYCOMPAREFACTORY > &xCompFac );
 	long				CompareImpl( REFERENCE < XRESULTSET > xResultOne,
 									 REFERENCE < XRESULTSET > xResultTwo,
 									 long nIndexOne, long nIndexTwo,
-									 SortInfo* pSortInfo )
-							throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+									 SortInfo* pSortInfo );
 	long				CompareImpl( REFERENCE < XRESULTSET > xResultOne,
 									 REFERENCE < XRESULTSET > xResultTwo,
-									 long nIndexOne, long nIndexTwo )
-							throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+									 long nIndexOne, long nIndexTwo );
 	void				PropertyChanged( const PROPERTYCHANGEEVENT& rEvt );
 
 public:
@@ -218,233 +214,168 @@ public:
 
 	// XComponent
 	virtual void SAL_CALL
-	dispose() throw( RUNTIME_EXCEPTION );
+	dispose();
 
     virtual void SAL_CALL
-	addEventListener( const REFERENCE< XEVENTLISTENER >& Listener )
-		throw( RUNTIME_EXCEPTION );
+	addEventListener( const REFERENCE< XEVENTLISTENER >& Listener );
 
     virtual void SAL_CALL
-	removeEventListener( const REFERENCE< XEVENTLISTENER >& Listener )
-		throw( RUNTIME_EXCEPTION );
+	removeEventListener( const REFERENCE< XEVENTLISTENER >& Listener );
 
 	// XContentAccess
     virtual rtl::OUString SAL_CALL
-	queryContentIdentifierString()
-		throw( RUNTIME_EXCEPTION );
+	queryContentIdentifierString();
     virtual REFERENCE<
 				com::sun::star::ucb::XContentIdentifier > SAL_CALL
-	queryContentIdentifier()
-		throw( RUNTIME_EXCEPTION );
+	queryContentIdentifier();
     virtual REFERENCE<
 				com::sun::star::ucb::XContent > SAL_CALL
-	queryContent()
-		throw( RUNTIME_EXCEPTION );
+	queryContent();
 
 	// XResultSet
     virtual sal_Bool SAL_CALL
-	next()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	next();
     virtual sal_Bool SAL_CALL
-	isBeforeFirst()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	isBeforeFirst();
     virtual sal_Bool SAL_CALL
-	isAfterLast()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	isAfterLast();
     virtual sal_Bool SAL_CALL
-	isFirst()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	isFirst();
     virtual sal_Bool SAL_CALL
-	isLast()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	isLast();
     virtual void SAL_CALL
-	beforeFirst()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	beforeFirst();
     virtual void SAL_CALL
-	afterLast()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	afterLast();
     virtual sal_Bool SAL_CALL
-	first()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	first();
     virtual sal_Bool SAL_CALL
-	last()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	last();
     virtual sal_Int32 SAL_CALL
-	getRow()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getRow();
     virtual sal_Bool SAL_CALL
-	absolute( sal_Int32 row )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	absolute( sal_Int32 row );
     virtual sal_Bool SAL_CALL
-	relative( sal_Int32 rows )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	relative( sal_Int32 rows );
     virtual sal_Bool SAL_CALL
-	previous()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	previous();
     virtual void SAL_CALL
-	refreshRow()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	refreshRow();
     virtual sal_Bool SAL_CALL
-	rowUpdated()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	rowUpdated();
     virtual sal_Bool SAL_CALL
-	rowInserted()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	rowInserted();
     virtual sal_Bool SAL_CALL
-	rowDeleted()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	rowDeleted();
     virtual REFERENCE<
 				com::sun::star::uno::XInterface > SAL_CALL
-	getStatement()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getStatement();
 
 	// XRow
     virtual sal_Bool SAL_CALL
-	wasNull() throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	wasNull();
 
     virtual rtl::OUString SAL_CALL
-	getString( sal_Int32 columnIndex )
-	throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getString( sal_Int32 columnIndex );
 
     virtual sal_Bool SAL_CALL
-	getBoolean( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getBoolean( sal_Int32 columnIndex );
 
 	virtual sal_Int8 SAL_CALL
-	getByte( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getByte( sal_Int32 columnIndex );
 
 	virtual sal_Int16 SAL_CALL
-	getShort( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getShort( sal_Int32 columnIndex );
 
 	virtual sal_Int32 SAL_CALL
-	getInt( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getInt( sal_Int32 columnIndex );
 
 	virtual sal_Int64 SAL_CALL
-	getLong( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getLong( sal_Int32 columnIndex );
 
 	virtual float SAL_CALL
-	getFloat( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getFloat( sal_Int32 columnIndex );
 
 	virtual double SAL_CALL
-	getDouble( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getDouble( sal_Int32 columnIndex );
 
 	virtual com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL
-	getBytes( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getBytes( sal_Int32 columnIndex );
 
 	virtual com::sun::star::util::Date SAL_CALL
-	getDate( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getDate( sal_Int32 columnIndex );
 
 	virtual com::sun::star::util::Time SAL_CALL
-	getTime( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getTime( sal_Int32 columnIndex );
 
 	virtual com::sun::star::util::DateTime SAL_CALL
-	getTimestamp( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getTimestamp( sal_Int32 columnIndex );
 
 	virtual REFERENCE<
 				com::sun::star::io::XInputStream > SAL_CALL
-	getBinaryStream( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getBinaryStream( sal_Int32 columnIndex );
 
 	virtual REFERENCE<
 				com::sun::star::io::XInputStream > SAL_CALL
-	getCharacterStream( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getCharacterStream( sal_Int32 columnIndex );
 
 	virtual com::sun::star::uno::Any SAL_CALL
 	getObject( sal_Int32 columnIndex,
 			   const REFERENCE<
-			   	com::sun::star::container::XNameAccess >& typeMap )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+			   	com::sun::star::container::XNameAccess >& typeMap );
     virtual REFERENCE<
 				com::sun::star::sdbc::XRef > SAL_CALL
-	getRef( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getRef( sal_Int32 columnIndex );
     virtual REFERENCE<
 				com::sun::star::sdbc::XBlob > SAL_CALL
-	getBlob( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getBlob( sal_Int32 columnIndex );
     virtual REFERENCE<
 				com::sun::star::sdbc::XClob > SAL_CALL
-	getClob( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getClob( sal_Int32 columnIndex );
     virtual REFERENCE<
 				com::sun::star::sdbc::XArray > SAL_CALL
-	getArray( sal_Int32 columnIndex )
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getArray( sal_Int32 columnIndex );
 
 	// XCloseable
     virtual void SAL_CALL
-	close()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	close();
 
 	// XResultSetMetaDataSupplier
 	virtual REFERENCE< XRESULTSETMETADATA > SAL_CALL
-	getMetaData()
-		throw( SQLEXCEPTION, RUNTIME_EXCEPTION );
+	getMetaData();
 
 
 	// XPropertySet
     virtual REFERENCE<
 				com::sun::star::beans::XPropertySetInfo > SAL_CALL
-	getPropertySetInfo()
-		throw( RUNTIME_EXCEPTION );
+	getPropertySetInfo();
 
     virtual void SAL_CALL
 	setPropertyValue( const rtl::OUString& PropertyName,
-					  const com::sun::star::uno::Any& Value )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::beans::PropertyVetoException,
-			   com::sun::star::lang::IllegalArgumentException,
-			   com::sun::star::lang::WrappedTargetException,
-			   RUNTIME_EXCEPTION );
+					  const com::sun::star::uno::Any& Value );
 
     virtual com::sun::star::uno::Any SAL_CALL
-	getPropertyValue( const rtl::OUString& PropertyName )
-		throw( com::sun::star::beans::UnknownPropertyException,
-		com::sun::star::lang::WrappedTargetException,
-		RUNTIME_EXCEPTION );
+	getPropertyValue( const rtl::OUString& PropertyName );
 
     virtual void SAL_CALL
 	addPropertyChangeListener( const rtl::OUString& PropertyName,
 							   const REFERENCE<
-							   		com::sun::star::beans::XPropertyChangeListener >& Listener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   RUNTIME_EXCEPTION );
+							   		com::sun::star::beans::XPropertyChangeListener >& Listener );
 
     virtual void SAL_CALL
 	removePropertyChangeListener( const rtl::OUString& PropertyName,
 								  const REFERENCE<
-								  	com::sun::star::beans::XPropertyChangeListener >& Listener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   RUNTIME_EXCEPTION );
+								  	com::sun::star::beans::XPropertyChangeListener >& Listener );
 
     virtual void SAL_CALL
 	addVetoableChangeListener( const rtl::OUString& PropertyName,
 							   const REFERENCE<
-							   		com::sun::star::beans::XVetoableChangeListener >& Listener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   RUNTIME_EXCEPTION );
+							   		com::sun::star::beans::XVetoableChangeListener >& Listener );
 
     virtual void SAL_CALL
 	removeVetoableChangeListener( const rtl::OUString& PropertyName,
 								  const REFERENCE<
-								  	com::sun::star::beans::XVetoableChangeListener >& aListener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   RUNTIME_EXCEPTION );
+								  	com::sun::star::beans::XVetoableChangeListener >& aListener );
 };
 
 #endif

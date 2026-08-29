@@ -58,7 +58,7 @@ OUserSettingsDialog::OUserSettingsDialog(const Reference< XMultiServiceFactory >
 {
 }
 //-------------------------------------------------------------------------
-Sequence<sal_Int8> SAL_CALL OUserSettingsDialog::getImplementationId(  ) throw(RuntimeException)
+Sequence<sal_Int8> SAL_CALL OUserSettingsDialog::getImplementationId(  )
 {
 	static ::cppu::OImplementationId aId;
 	return aId.getImplementationId();
@@ -71,25 +71,25 @@ Reference< XInterface > SAL_CALL OUserSettingsDialog::Create(const Reference< XM
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OUserSettingsDialog::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL OUserSettingsDialog::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString OUserSettingsDialog::getImplementationName_Static() throw(RuntimeException)
+::rtl::OUString OUserSettingsDialog::getImplementationName_Static()
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("org.openoffice.comp.dbu.OUserSettingsDialog"));
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL OUserSettingsDialog::getSupportedServiceNames() throw(RuntimeException)
+::comphelper::StringSequence SAL_CALL OUserSettingsDialog::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence OUserSettingsDialog::getSupportedServiceNames_Static() throw(RuntimeException)
+::comphelper::StringSequence OUserSettingsDialog::getSupportedServiceNames_Static()
 {
 	::comphelper::StringSequence aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.UserAdministrationDialog"));
@@ -97,7 +97,7 @@ Reference< XInterface > SAL_CALL OUserSettingsDialog::Create(const Reference< XM
 }
 
 //-------------------------------------------------------------------------
-Reference<XPropertySetInfo>  SAL_CALL OUserSettingsDialog::getPropertySetInfo() throw(RuntimeException)
+Reference<XPropertySetInfo>  SAL_CALL OUserSettingsDialog::getPropertySetInfo()
 {
 	Reference<XPropertySetInfo>  xInfo( createPropertySetInfo( getInfoHelper() ) );
 	return xInfo;

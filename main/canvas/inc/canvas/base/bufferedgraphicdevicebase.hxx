@@ -108,14 +108,13 @@ namespace canvas
         }
 
         // XGraphicDevice
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBufferController > SAL_CALL getBufferController(  ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBufferController > SAL_CALL getBufferController(  )
         {
             return this;
         }
 
         // XBufferController
-        virtual ::sal_Int32 SAL_CALL createBuffers( ::sal_Int32 nBuffers ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                  ::com::sun::star::uno::RuntimeException)
+        virtual ::sal_Int32 SAL_CALL createBuffers( ::sal_Int32 nBuffers )
         {
             tools::verifyRange( nBuffers, (sal_Int32)1 );
 
@@ -124,21 +123,21 @@ namespace canvas
             return BaseType::maDeviceHelper.createBuffers( nBuffers );
         }
 
-        virtual void SAL_CALL destroyBuffers(  ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL destroyBuffers(  )
         {
             MutexType aGuard( BaseType::m_aMutex );
 
             BaseType::maDeviceHelper.destroyBuffers();
         }
 
-        virtual ::sal_Bool SAL_CALL showBuffer( ::sal_Bool bUpdateAll ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::sal_Bool SAL_CALL showBuffer( ::sal_Bool bUpdateAll )
         {
             MutexType aGuard( BaseType::m_aMutex );
 
             return BaseType::maDeviceHelper.showBuffer( mbIsVisible, bUpdateAll );
         }
 
-        virtual ::sal_Bool SAL_CALL switchBuffer( ::sal_Bool bUpdateAll ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::sal_Bool SAL_CALL switchBuffer( ::sal_Bool bUpdateAll )
         {
             MutexType aGuard( BaseType::m_aMutex );
 
@@ -239,7 +238,7 @@ namespace canvas
         }
 
         // XWindowListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
@@ -247,24 +246,24 @@ namespace canvas
                 mxWindow.clear();
         }
 
-        virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL windowResized( const ::com::sun::star::awt::WindowEvent& e )
         {
             boundsChanged( e );
         }
 
-        virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e )
         {
             boundsChanged( e );
         }
 
-        virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
             mbIsVisible = true;
         }
 
-        virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 

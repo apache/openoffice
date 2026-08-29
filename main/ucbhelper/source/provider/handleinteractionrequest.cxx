@@ -52,7 +52,6 @@ namespace {
 void
 handle(uno::Reference< task::XInteractionRequest > const & rRequest,
        uno::Reference< ucb::XCommandEnvironment > const & rEnvironment)
-    SAL_THROW((uno::Exception))
 {
     OSL_ENSURE(rRequest.is(), "specification violation");
     uno::Reference< task::XInteractionHandler > xHandler;
@@ -72,7 +71,6 @@ handleInteractionRequest(
     rtl::Reference< ucbhelper::SimpleInteractionRequest > const & rRequest,
     uno::Reference< ucb::XCommandEnvironment > const & rEnvironment,
     bool bThrowOnAbort)
-    SAL_THROW((uno::Exception))
 {
     handle(rRequest.get(), rEnvironment);
     sal_Int32 nResponse = rRequest->getResponse();
@@ -97,7 +95,6 @@ handleInteractionRequest(
     rtl::Reference< ucbhelper::SimpleAuthenticationRequest > const & rRequest,
     uno::Reference< ucb::XCommandEnvironment > const & rEnvironment,
     bool bThrowOnAbort)
-    SAL_THROW((uno::Exception))
 {
     handle(rRequest.get(), rEnvironment);
     rtl::Reference< ucbhelper::InteractionContinuation >
@@ -137,7 +134,6 @@ handleInteractionRequest(
     rtl::Reference< ucbhelper::SimpleCertificateValidationRequest > const & rRequest,
     uno::Reference< ucb::XCommandEnvironment > const & rEnvironment,
     bool bThrowOnAbort)
-    SAL_THROW((uno::Exception))
 {
     handle(rRequest.get(), rEnvironment);
     sal_Int32 nResponse = rRequest->getResponse();

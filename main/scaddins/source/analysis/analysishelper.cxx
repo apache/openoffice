@@ -194,7 +194,6 @@ sal_Int32 DateToDays( sal_uInt16 nDay, sal_uInt16 nMonth, sal_uInt16 nYear )
  */
 
 void DaysToDate( sal_Int32 nDays, sal_uInt16& rDay, sal_uInt16& rMonth, sal_uInt16& rYear )
-    throw( lang::IllegalArgumentException )
 {
     if( nDays < 0 )
         throw lang::IllegalArgumentException();
@@ -248,7 +247,7 @@ void DaysToDate( sal_Int32 nDays, sal_uInt16& rDay, sal_uInt16& rMonth, sal_uInt
  *
  */
 
-sal_Int32 GetNullDate( constREFXPS& xOpt ) THROWDEF_RTE
+sal_Int32 GetNullDate( constREFXPS& xOpt )
 {
 	if( xOpt.is() )
 	{
@@ -335,7 +334,7 @@ sal_Int32 GetDaysInYears( sal_uInt16 nYear1, sal_uInt16 nYear2 )
 
 
 void GetDiffParam( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDate, sal_Int32 nMode,
-	sal_uInt16& rYears, sal_Int32& rDayDiffPart, sal_Int32& rDaysInYear ) THROWDEF_RTE_IAE
+	sal_uInt16& rYears, sal_Int32& rDayDiffPart, sal_Int32& rDaysInYear )
 {
 	if( nStartDate > nEndDate )
 	{
@@ -407,7 +406,7 @@ void GetDiffParam( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDate
 
 
 sal_Int32 GetDiffDate( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDate, sal_Int32 nMode,
-	sal_Int32* pOptDaysIn1stYear ) THROWDEF_RTE_IAE
+	sal_Int32* pOptDaysIn1stYear )
 {
 	sal_Bool	bNeg = nStartDate > nEndDate;
 
@@ -478,7 +477,7 @@ sal_Int32 GetDiffDate( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEnd
 }
 
 
-double GetYearDiff( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDate, sal_Int32 nMode ) THROWDEF_RTE_IAE
+double GetYearDiff( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDate, sal_Int32 nMode )
 {
 	sal_Int32	nDays1stYear;
 	sal_Int32	nTotalDays = GetDiffDate( nNullDate, nStartDate, nEndDate, nMode, &nDays1stYear );
@@ -487,7 +486,7 @@ double GetYearDiff( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDat
 }
 
 
-sal_Int32 GetDaysInYear( sal_Int32 nNullDate, sal_Int32 nDate, sal_Int32 nMode ) THROWDEF_RTE_IAE
+sal_Int32 GetDaysInYear( sal_Int32 nNullDate, sal_Int32 nDate, sal_Int32 nMode )
 {
 	switch( nMode )
 	{
@@ -510,7 +509,7 @@ sal_Int32 GetDaysInYear( sal_Int32 nNullDate, sal_Int32 nDate, sal_Int32 nMode )
 }
 
 
-double GetYearFrac( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDate, sal_Int32 nMode ) THROWDEF_RTE_IAE
+double GetYearFrac( sal_Int32 nNullDate, sal_Int32 nStartDate, sal_Int32 nEndDate, sal_Int32 nMode )
 {
 	if( nStartDate == nEndDate )
 		return 0.0;		// nothing to do...
@@ -560,7 +559,7 @@ double GetGcd( double f1, double f2 )
 }
 
 
-double ConvertToDec( const STRING& aStr, sal_uInt16 nBase, sal_uInt16 nCharLim ) THROWDEF_RTE_IAE
+double ConvertToDec( const STRING& aStr, sal_uInt16 nBase, sal_uInt16 nCharLim )
 {
 	if ( nBase < 2 || nBase > 36 )
 		THROW_IAE;
@@ -627,7 +626,7 @@ static inline sal_Char GetMaxChar( sal_uInt16 nBase )
 
 
 STRING ConvertFromDec( double fNum, double fMin, double fMax, sal_uInt16 nBase,
-    sal_Int32 nPlaces, sal_Int32 nMaxPlaces, sal_Bool bUsePlaces ) THROWDEF_RTE_IAE
+    sal_Int32 nPlaces, sal_Int32 nMaxPlaces, sal_Bool bUsePlaces )
 {
     fNum = ::rtl::math::approxFloor( fNum );
     fMin = ::rtl::math::approxFloor( fMin );
@@ -890,7 +889,7 @@ STRING GetString( double f, sal_Bool bLeadingSign, sal_uInt16 nMaxDig )
 
 
 double GetAmordegrc( sal_Int32 nNullDate, double fCost, sal_Int32 nDate, sal_Int32 nFirstPer,
-	double fRestVal, double fPer, double fRate, sal_Int32 nBase ) THROWDEF_RTE_IAE
+	double fRestVal, double fPer, double fRate, sal_Int32 nBase )
 {
 	if( nBase == 2 )
 		THROW_IAE;
@@ -938,7 +937,7 @@ double GetAmordegrc( sal_Int32 nNullDate, double fCost, sal_Int32 nDate, sal_Int
 
 
 double GetAmorlinc( sal_Int32 nNullDate, double fCost, sal_Int32 nDate, sal_Int32 nFirstPer,
-	double fRestVal, double fPer, double fRate, sal_Int32 nBase ) THROWDEF_RTE_IAE
+	double fRestVal, double fPer, double fRate, sal_Int32 nBase )
 {
 	if( nBase == 2 )
 		THROW_IAE;
@@ -961,7 +960,7 @@ double GetAmorlinc( sal_Int32 nNullDate, double fCost, sal_Int32 nDate, sal_Int3
 
 
 double GetDuration( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, double fCoup,
-	double fYield, sal_Int32 nFreq, sal_Int32 nBase ) THROWDEF_RTE_IAE
+	double fYield, sal_Int32 nFreq, sal_Int32 nBase )
 {
 	double			fYearfrac = GetYearFrac( nNullDate, nSettle, nMat, nBase );
 	double			fNumOfCoups = GetCoupnum( nNullDate, nSettle, nMat, nFreq, nBase );
@@ -994,7 +993,7 @@ double GetDuration( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, doub
 
 
 double GetYieldmat( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nIssue,
-	double fRate, double fPrice, sal_Int32 nBase ) THROWDEF_RTE_IAE
+	double fRate, double fPrice, sal_Int32 nBase )
 {
 	double		fIssMat = GetYearFrac( nNullDate, nIssue, nMat, nBase );
 	double		fIssSet = GetYearFrac( nNullDate, nIssue, nSettle, nBase );
@@ -1011,7 +1010,7 @@ double GetYieldmat( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_
 
 double GetOddfprice( sal_Int32 /*nNullDate*/, sal_Int32 /*nSettle*/, sal_Int32 /*nMat*/, sal_Int32 /*nIssue*/,
 	sal_Int32 /*nFirstCoup*/, double /*fRate*/, double /*fYield*/, double /*fRedemp*/, sal_Int32 /*nFreq*/,
-	sal_Int32 /*nBase*/ ) THROWDEF_RTE_IAE
+	sal_Int32 /*nBase*/ )
 {
     THROW_RTE;  // #87380#
 /*
@@ -1083,7 +1082,7 @@ double GetOddfprice( sal_Int32 /*nNullDate*/, sal_Int32 /*nSettle*/, sal_Int32 /
 
 
 double getYield_( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, double fCoup, double fPrice,
-					double fRedemp, sal_Int32 nFreq, sal_Int32 nBase ) THROWDEF_RTE_IAE
+					double fRedemp, sal_Int32 nFreq, sal_Int32 nBase )
 {
 	double		fRate = fCoup;
 	double		fPriceN = 0.0;
@@ -1135,7 +1134,7 @@ double getYield_( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, double
 
 
 double getPrice_( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, double fRate, double fYield,
-					double fRedemp, sal_Int32 nFreq, sal_Int32 nBase ) THROWDEF_RTE_IAE
+					double fRedemp, sal_Int32 nFreq, sal_Int32 nBase )
 {
 	double		fFreq = nFreq;
 
@@ -1159,7 +1158,7 @@ double getPrice_( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, double
 
 double GetOddfyield( sal_Int32 /*nNullDate*/, sal_Int32 /*nSettle*/, sal_Int32 /*nMat*/, sal_Int32 /*nIssue*/,
 	sal_Int32 /*nFirstCoup*/, double /*fRate*/, double /*fPrice*/, double /*fRedemp*/, sal_Int32 /*nFreq*/,
-	sal_Int32 /*nBase*/ ) THROWDEF_RTE_IAE
+	sal_Int32 /*nBase*/ )
 {
     THROW_RTE;  // #87380#
 /*
@@ -1216,7 +1215,7 @@ double GetOddfyield( sal_Int32 /*nNullDate*/, sal_Int32 /*nSettle*/, sal_Int32 /
 
 
 double GetOddlprice( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nLastCoup,
-	double fRate, double fYield, double fRedemp, sal_Int32 nFreq, sal_Int32 nBase ) THROWDEF_RTE_IAE
+	double fRate, double fYield, double fRedemp, sal_Int32 nFreq, sal_Int32 nBase )
 {
 	double		fFreq = double( nFreq );
 	double		fDCi = GetYearFrac( nNullDate, nLastCoup, nMat, nBase ) * fFreq;
@@ -1232,7 +1231,7 @@ double GetOddlprice( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal
 
 
 double GetOddlyield( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nLastCoup,
-	double fRate, double fPrice, double fRedemp, sal_Int32 nFreq, sal_Int32 nBase ) THROWDEF_RTE_IAE
+	double fRate, double fPrice, double fRedemp, sal_Int32 nFreq, sal_Int32 nBase )
 {
 	double		fFreq = double( nFreq );
 	double		fDCi = GetYearFrac( nNullDate, nLastCoup, nMat, nBase ) * fFreq;
@@ -1308,7 +1307,6 @@ double GetZw( double fZins, double fZzr, double fRmz, double fBw, sal_Int32 nF )
 //-------
 // COUPPCD: find last coupon date before settlement (can be equal to settlement)
 void lcl_GetCouppcd( ScaDate& rDate, const ScaDate& rSettle, const ScaDate& rMat, sal_Int32 nFreq )
-    throw( lang::IllegalArgumentException )
 {
     rDate = rMat;
     rDate.setYear( rSettle.getYear() );
@@ -1319,7 +1317,6 @@ void lcl_GetCouppcd( ScaDate& rDate, const ScaDate& rSettle, const ScaDate& rMat
 }
 
 double GetCouppcd( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nFreq, sal_Int32 nBase )
-	THROWDEF_RTE_IAE
 {
 	if( nSettle >= nMat || CHK_Freq )
 		THROW_IAE;
@@ -1333,7 +1330,6 @@ double GetCouppcd( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_I
 //-------
 // COUPNCD: find first coupon date after settlement (is never equal to settlement)
 void lcl_GetCoupncd( ScaDate& rDate, const ScaDate& rSettle, const ScaDate& rMat, sal_Int32 nFreq )
-    throw( lang::IllegalArgumentException )
 {
     rDate = rMat;
     rDate.setYear( rSettle.getYear() );
@@ -1344,7 +1340,6 @@ void lcl_GetCoupncd( ScaDate& rDate, const ScaDate& rSettle, const ScaDate& rMat
 }
 
 double GetCoupncd( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nFreq, sal_Int32 nBase )
-	THROWDEF_RTE_IAE
 {
 	if( nSettle >= nMat || CHK_Freq )
 		THROW_IAE;
@@ -1358,7 +1353,6 @@ double GetCoupncd( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_I
 //-------
 // COUPDAYBS: get day count: coupon date before settlement <-> settlement
 double GetCoupdaybs( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nFreq, sal_Int32 nBase )
-	THROWDEF_RTE_IAE
 {
     if( nSettle >= nMat || CHK_Freq )
 		THROW_IAE;
@@ -1373,7 +1367,6 @@ double GetCoupdaybs( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal
 //-------
 // COUPDAYSNC: get day count: settlement <-> coupon date after settlement
 double GetCoupdaysnc( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nFreq, sal_Int32 nBase )
-	THROWDEF_RTE_IAE
 {
 	if( nSettle >= nMat || CHK_Freq )
 		THROW_IAE;
@@ -1392,7 +1385,6 @@ double GetCoupdaysnc( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sa
 //-------
 // COUPDAYS: get day count: coupon date before settlement <-> coupon date after settlement
 double GetCoupdays( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nFreq, sal_Int32 nBase )
-	THROWDEF_RTE_IAE
 {
 	if( nSettle >= nMat || CHK_Freq )
 		THROW_IAE;
@@ -1412,7 +1404,6 @@ double GetCoupdays( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_
 //-------
 // COUPNUM: get count of coupon dates
 double GetCoupnum( sal_Int32 nNullDate, sal_Int32 nSettle, sal_Int32 nMat, sal_Int32 nFreq, sal_Int32 nBase )
-    THROWDEF_RTE_IAE
 {
     if( nSettle >= nMat || CHK_Freq )
 		THROW_IAE;
@@ -1633,7 +1624,7 @@ void SortedIndividualInt32List::Insert( sal_Int32 nDay, sal_Int32 nNullDate, sal
 
 
 void SortedIndividualInt32List::Insert(
-        double fDay, sal_Int32 nNullDate, sal_Bool bInsertOnWeekend ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        double fDay, sal_Int32 nNullDate, sal_Bool bInsertOnWeekend )
 {
     if( (fDay < -2147483648.0) || (fDay > 2147483649.0) )
         throw lang::IllegalArgumentException();
@@ -1667,7 +1658,7 @@ void SortedIndividualInt32List::InsertHolidayList(
         const ScaAnyConverter& rAnyConv,
         const uno::Any& rHolAny,
         sal_Int32 nNullDate,
-        sal_Bool bInsertOnWeekend ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        sal_Bool bInsertOnWeekend )
 {
     double fDay;
     if( rAnyConv.getDouble( fDay, rHolAny ) )
@@ -1680,7 +1671,7 @@ void SortedIndividualInt32List::InsertHolidayList(
         const uno::Reference< beans::XPropertySet >& xOptions,
         const uno::Any& rHolAny,
         sal_Int32 nNullDate,
-        sal_Bool bInsertOnWeekend ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        sal_Bool bInsertOnWeekend )
 {
     rAnyConv.init( xOptions );
     if( rHolAny.getValueTypeClass() == uno::TypeClass_SEQUENCE )
@@ -1717,7 +1708,7 @@ ScaDoubleList::~ScaDoubleList()
 
 
 void ScaDoubleList::Append(
-        const uno::Sequence< uno::Sequence< double > >& rValueSeq ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        const uno::Sequence< uno::Sequence< double > >& rValueSeq )
 {
     const uno::Sequence< double >* pSeqArray = rValueSeq.getConstArray();
     for( sal_Int32 nIndex1 = 0; nIndex1 < rValueSeq.getLength(); nIndex1++ )
@@ -1731,7 +1722,7 @@ void ScaDoubleList::Append(
 
 
 void ScaDoubleList::Append(
-        const uno::Sequence< uno::Sequence< sal_Int32 > >& rValueSeq ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        const uno::Sequence< uno::Sequence< sal_Int32 > >& rValueSeq )
 {
     const uno::Sequence< sal_Int32 >* pSeqArray = rValueSeq.getConstArray();
     for( sal_Int32 nIndex1 = 0; nIndex1 < rValueSeq.getLength(); nIndex1++ )
@@ -1748,7 +1739,7 @@ void ScaDoubleList::Append(
 void ScaDoubleList::Append(
         const ScaAnyConverter& rAnyConv,
         const uno::Any& rAny,
-        sal_Bool bIgnoreEmpty ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        sal_Bool bIgnoreEmpty )
 {
     if( rAny.getValueTypeClass() == uno::TypeClass_SEQUENCE )
         Append( rAnyConv, *static_cast< const uno::Sequence< uno::Sequence< uno::Any > >* >( rAny.getValue() ), bIgnoreEmpty );
@@ -1766,7 +1757,7 @@ void ScaDoubleList::Append(
 void ScaDoubleList::Append(
         const ScaAnyConverter& rAnyConv,
         const uno::Sequence< uno::Any >& rAnySeq,
-        sal_Bool bIgnoreEmpty ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        sal_Bool bIgnoreEmpty )
 {
     const uno::Any* pArray = rAnySeq.getConstArray();
     for( sal_Int32 nIndex = 0; nIndex < rAnySeq.getLength(); nIndex++ )
@@ -1777,7 +1768,7 @@ void ScaDoubleList::Append(
 void ScaDoubleList::Append(
         const ScaAnyConverter& rAnyConv,
         const uno::Sequence< uno::Sequence< uno::Any > >& rAnySeq,
-        sal_Bool bIgnoreEmpty ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        sal_Bool bIgnoreEmpty )
 {
     const uno::Sequence< uno::Any >* pArray = rAnySeq.getConstArray();
     for( sal_Int32 nIndex = 0; nIndex < rAnySeq.getLength(); nIndex++ )
@@ -1790,14 +1781,14 @@ void ScaDoubleList::Append(
         ScaAnyConverter& rAnyConv,
         const uno::Reference< beans::XPropertySet >& xOpt,
         const uno::Sequence< uno::Any >& rAnySeq,
-        sal_Bool bIgnoreEmpty ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        sal_Bool bIgnoreEmpty )
 {
     rAnyConv.init( xOpt );
     Append( rAnyConv, rAnySeq, bIgnoreEmpty );
 }
 
 
-sal_Bool ScaDoubleList::CheckInsert( double ) const throw( uno::RuntimeException, lang::IllegalArgumentException )
+sal_Bool ScaDoubleList::CheckInsert( double ) const
 {
 	return sal_True;
 }
@@ -1806,7 +1797,7 @@ sal_Bool ScaDoubleList::CheckInsert( double ) const throw( uno::RuntimeException
 
 //-----------------------------------------------------------------------------
 
-sal_Bool ScaDoubleListGT0::CheckInsert( double fValue ) const throw( uno::RuntimeException, lang::IllegalArgumentException )
+sal_Bool ScaDoubleListGT0::CheckInsert( double fValue ) const
 {
     if( fValue < 0.0 )
         throw lang::IllegalArgumentException();
@@ -1817,7 +1808,7 @@ sal_Bool ScaDoubleListGT0::CheckInsert( double fValue ) const throw( uno::Runtim
 
 //-----------------------------------------------------------------------------
 
-sal_Bool ScaDoubleListGE0::CheckInsert( double fValue ) const throw( uno::RuntimeException, lang::IllegalArgumentException )
+sal_Bool ScaDoubleListGE0::CheckInsert( double fValue ) const
 {
     if( fValue < 0.0 )
         throw lang::IllegalArgumentException();
@@ -1828,7 +1819,7 @@ sal_Bool ScaDoubleListGE0::CheckInsert( double fValue ) const throw( uno::Runtim
 
 //-----------------------------------------------------------------------------
 
-Complex::Complex( const STRING& rStr ) THROWDEF_RTE_IAE
+Complex::Complex( const STRING& rStr )
 {
 	if( !ParseString( rStr, *this ) )
 		THROW_IAE;
@@ -1904,7 +1895,7 @@ sal_Bool Complex::ParseString( const STRING& rStr, Complex& rCompl )
 }
 
 
-STRING Complex::GetString() const THROWDEF_RTE_IAE
+STRING Complex::GetString() const
 {
     static const String aI( 'i' );
     static const String aJ( 'j' );
@@ -1938,7 +1929,7 @@ STRING Complex::GetString() const THROWDEF_RTE_IAE
 }
 
 
-double Complex::Arg( void ) const THROWDEF_RTE_IAE
+double Complex::Arg( void ) const
 {
 	if( Num.real() == 0.0 && Num.imag() == 0.0 )
 		THROW_IAE;
@@ -1949,7 +1940,7 @@ double Complex::Arg( void ) const THROWDEF_RTE_IAE
 }
 
 
-void Complex::Power( double fPower ) THROWDEF_RTE_IAE
+void Complex::Power( double fPower )
 {
 	if( Num.real() == 0.0 && Num.imag() == 0.0 )
 	{
@@ -1973,7 +1964,7 @@ void Complex::Sqrt( void )
 }
 
 
-void Complex::Sin( void ) THROWDEF_RTE_IAE
+void Complex::Sin( void )
 {
     double r = Num.real();
     if( !::rtl::math::isValidArcArg( r ) )
@@ -1983,7 +1974,7 @@ void Complex::Sin( void ) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Cos( void ) THROWDEF_RTE_IAE
+void Complex::Cos( void )
 {
 	double r = Num.real();
 	if( !::rtl::math::isValidArcArg( r ) )
@@ -1993,7 +1984,7 @@ void Complex::Cos( void ) THROWDEF_RTE_IAE
 
 }
 
-void Complex::Div( const Complex& z ) THROWDEF_RTE_IAE
+void Complex::Div( const Complex& z )
 {
 	if( z.Num.real() == 0 && z.Num.imag() == 0 )
 		THROW_IAE;
@@ -2010,7 +2001,7 @@ void Complex::Exp( void )
 }
 
 
-void Complex::Ln( void ) THROWDEF_RTE_IAE
+void Complex::Ln( void )
 {
 	double r = Num.real(), i = Num.imag() ;
 	if( r == 0.0 && i == 0.0 )
@@ -2020,21 +2011,21 @@ void Complex::Ln( void ) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Log10( void ) THROWDEF_RTE_IAE
+void Complex::Log10( void )
 {
 	Ln();
 	Mult( 0.434294481903251828 );	// * log10( e )
 }
 
 
-void Complex::Log2( void ) THROWDEF_RTE_IAE
+void Complex::Log2( void )
 {
 	Ln();
 	Mult( 1.442695040888963407 );	// * log2( e )
 }
 
 
-void Complex::Tan(void) THROWDEF_RTE_IAE
+void Complex::Tan(void)
 {
     double r = Num.real(), i = Num.imag() ;
     if ( i )
@@ -2051,7 +2042,7 @@ void Complex::Tan(void) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Sec( void ) THROWDEF_RTE_IAE
+void Complex::Sec( void )
 {
 
     Cos();
@@ -2059,7 +2050,7 @@ void Complex::Sec( void ) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Csc( void ) THROWDEF_RTE_IAE
+void Complex::Csc( void )
 {
 
     Sin();
@@ -2067,7 +2058,7 @@ void Complex::Csc( void ) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Cot(void) THROWDEF_RTE_IAE
+void Complex::Cot(void)
 {
 
     Tan();
@@ -2075,7 +2066,7 @@ void Complex::Cot(void) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Sinh( void ) THROWDEF_RTE_IAE
+void Complex::Sinh( void )
 {
     double r = Num.real();
     if( !::rtl::math::isValidArcArg( r ) )
@@ -2085,7 +2076,7 @@ void Complex::Sinh( void ) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Cosh( void ) THROWDEF_RTE_IAE
+void Complex::Cosh( void )
 {
     double r = Num.real();
     if( !::rtl::math::isValidArcArg( r ) )
@@ -2095,7 +2086,7 @@ void Complex::Cosh( void ) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Sech(void) THROWDEF_RTE_IAE
+void Complex::Sech(void)
 {
 
     Cosh();
@@ -2103,7 +2094,7 @@ void Complex::Sech(void) THROWDEF_RTE_IAE
 }
 
 
-void Complex::Csch(void) THROWDEF_RTE_IAE
+void Complex::Csch(void)
 {
 
     Sinh();
@@ -2118,7 +2109,7 @@ ComplexList::~ComplexList()
 }
 
 
-void ComplexList::Append( const SEQSEQ( STRING )& r, ComplListAppendHandl eAH ) THROWDEF_RTE_IAE
+void ComplexList::Append( const SEQSEQ( STRING )& r, ComplListAppendHandl eAH )
 {
 	sal_Int32	n1, n2;
 	sal_Int32	nE1 = r.getLength();
@@ -2146,7 +2137,7 @@ void ComplexList::Append( const SEQSEQ( STRING )& r, ComplListAppendHandl eAH ) 
 }
 
 
-void ComplexList::Append( const SEQ( ANY )& aMultPars, ComplListAppendHandl eAH ) THROWDEF_RTE_IAE
+void ComplexList::Append( const SEQ( ANY )& aMultPars, ComplListAppendHandl eAH )
 {
 	sal_Int32		nEle = aMultPars.getLength();
 	sal_Bool		bEmpty0 = eAH == AH_EmpyAs0;
@@ -2312,7 +2303,7 @@ sal_Int16 ConvertData::GetMatchingLevel( const STRING& rRef ) const
 
 
 double ConvertData::Convert(
-	double f, const ConvertData& r, sal_Int16 nLevFrom, sal_Int16 nLevTo ) const THROWDEF_RTE_IAE
+	double f, const ConvertData& r, sal_Int16 nLevFrom, sal_Int16 nLevTo ) const
 {
 	if( Class() != r.Class() )
 		THROW_IAE;
@@ -2365,7 +2356,7 @@ ConvertDataLinear::~ConvertDataLinear()
 }
 
 double ConvertDataLinear::Convert(
-	double f, const ConvertData& r, sal_Int16 nLevFrom, sal_Int16 nLevTo ) const THROWDEF_RTE_IAE
+	double f, const ConvertData& r, sal_Int16 nLevFrom, sal_Int16 nLevTo ) const
 {
 	if( Class() != r.Class() )
 		THROW_IAE;
@@ -2591,7 +2582,7 @@ ConvertDataList::~ConvertDataList()
 }
 
 
-double ConvertDataList::Convert( double fVal, const STRING& rFrom, const STRING& rTo ) THROWDEF_RTE_IAE
+double ConvertDataList::Convert( double fVal, const STRING& rFrom, const STRING& rTo )
 {
 // This will not catch illegal units
 //   if( rFrom == rTo )
@@ -2749,7 +2740,7 @@ sal_Int32 ScaDate::getDaysInYearRange( sal_uInt16 nFrom, sal_uInt16 nTo ) const
     return b30Days ? ((nTo - nFrom + 1) * 360) : ::GetDaysInYears( nFrom, nTo );
 }
 
-void ScaDate::doAddYears( sal_Int32 nYearCount ) throw( lang::IllegalArgumentException )
+void ScaDate::doAddYears( sal_Int32 nYearCount )
 {
     sal_Int32 nNewYear = nYearCount + nYear;
     if( (nNewYear < 0) || (nNewYear > 0x7FFF) )
@@ -2757,7 +2748,7 @@ void ScaDate::doAddYears( sal_Int32 nYearCount ) throw( lang::IllegalArgumentExc
     nYear = static_cast< sal_uInt16 >( nNewYear );
 }
 
-void ScaDate::addMonths( sal_Int32 nMonthCount ) throw( lang::IllegalArgumentException )
+void ScaDate::addMonths( sal_Int32 nMonthCount )
 {
     sal_Int32 nNewMonth = nMonthCount + nMonth;
     if( nNewMonth > 12 )
@@ -2783,7 +2774,7 @@ sal_Int32 ScaDate::getDate( sal_Int32 nNullDate ) const
     return ::DateToDays( nRealDay, nMonth, nYear ) - nNullDate;
 }
 
-sal_Int32 ScaDate::getDiff( const ScaDate& rFrom, const ScaDate& rTo ) throw( lang::IllegalArgumentException )
+sal_Int32 ScaDate::getDiff( const ScaDate& rFrom, const ScaDate& rTo )
 {
     if( rFrom > rTo )
         return getDiff( rTo, rFrom );
@@ -2872,7 +2863,7 @@ ScaAnyConverter::~ScaAnyConverter()
 {
 }
 
-void ScaAnyConverter::init( const uno::Reference< beans::XPropertySet >& xPropSet ) throw( uno::RuntimeException )
+void ScaAnyConverter::init( const uno::Reference< beans::XPropertySet >& xPropSet )
 {
     // try to get default number format
     bHasValidFormat = sal_False;
@@ -2896,7 +2887,7 @@ void ScaAnyConverter::init( const uno::Reference< beans::XPropertySet >& xPropSe
     }
 }
 
-double ScaAnyConverter::convertToDouble( const OUString& rString ) const throw( lang::IllegalArgumentException )
+double ScaAnyConverter::convertToDouble( const OUString& rString ) const
 {
     double fValue = 0.0;
     if( bHasValidFormat )
@@ -2923,7 +2914,7 @@ double ScaAnyConverter::convertToDouble( const OUString& rString ) const throw( 
 
 sal_Bool ScaAnyConverter::getDouble(
         double& rfResult,
-        const uno::Any& rAny ) const throw( lang::IllegalArgumentException )
+        const uno::Any& rAny ) const
 {
     rfResult = 0.0;
     sal_Bool bContainsVal = sal_True;
@@ -2953,7 +2944,7 @@ sal_Bool ScaAnyConverter::getDouble(
 sal_Bool ScaAnyConverter::getDouble(
         double& rfResult,
         const uno::Reference< beans::XPropertySet >& xPropSet,
-        const uno::Any& rAny ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        const uno::Any& rAny )
 {
     init( xPropSet );
     return getDouble( rfResult, rAny );
@@ -2962,7 +2953,7 @@ sal_Bool ScaAnyConverter::getDouble(
 double ScaAnyConverter::getDouble(
         const uno::Reference< beans::XPropertySet >& xPropSet,
         const uno::Any& rAny,
-        double fDefault ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        double fDefault )
 {
     double fResult;
     if( !getDouble( fResult, xPropSet, rAny ) )
@@ -2973,7 +2964,7 @@ double ScaAnyConverter::getDouble(
 sal_Bool ScaAnyConverter::getInt32(
         sal_Int32& rnResult,
         const uno::Reference< beans::XPropertySet >& xPropSet,
-        const uno::Any& rAny ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        const uno::Any& rAny )
 {
     double fResult;
     sal_Bool bContainsVal = getDouble( fResult, xPropSet, rAny );
@@ -2987,7 +2978,7 @@ sal_Bool ScaAnyConverter::getInt32(
 sal_Int32 ScaAnyConverter::getInt32(
         const uno::Reference< beans::XPropertySet >& xPropSet,
         const uno::Any& rAny,
-        sal_Int32 nDefault ) throw( uno::RuntimeException, lang::IllegalArgumentException )
+        sal_Int32 nDefault )
 {
     sal_Int32 nResult;
     if( !getInt32( nResult, xPropSet, rAny ) )

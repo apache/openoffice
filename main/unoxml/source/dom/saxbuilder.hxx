@@ -97,47 +97,30 @@ namespace DOM
         CSAXDocumentBuilder(const Reference< XMultiServiceFactory >& mgr);
 
         // XServiceInfo
-        virtual OUString SAL_CALL getImplementationName()
-            throw (RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName)
-            throw (RuntimeException);
-        virtual Sequence< OUString > SAL_CALL getSupportedServiceNames ()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getImplementationName();
+        virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+        virtual Sequence< OUString > SAL_CALL getSupportedServiceNames ();
 
         // XDocumentHandler
-        virtual void SAL_CALL startDocument()
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
-        virtual void SAL_CALL endDocument()
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
+        virtual void SAL_CALL startDocument();
+        virtual void SAL_CALL endDocument();
         virtual void SAL_CALL startElement( const OUString& aName,
-             const Reference< XAttributeList >& xAttribs )
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
-        virtual void SAL_CALL endElement( const OUString& aName )
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
-        virtual void SAL_CALL characters( const OUString& aChars )
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
-        virtual void SAL_CALL ignorableWhitespace( const OUString& aWhitespaces )
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
+             const Reference< XAttributeList >& xAttribs );
+        virtual void SAL_CALL endElement( const OUString& aName );
+        virtual void SAL_CALL characters( const OUString& aChars );
+        virtual void SAL_CALL ignorableWhitespace( const OUString& aWhitespaces );
         virtual void SAL_CALL processingInstruction( const OUString& aTarget,
-             const OUString& aData )
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
-        virtual void SAL_CALL setDocumentLocator( const Reference< XLocator >& xLocator )
-            throw( RuntimeException, com::sun::star::xml::sax::SAXException );
+             const OUString& aData );
+        virtual void SAL_CALL setDocumentLocator( const Reference< XLocator >& xLocator );
 
 
         // XSAXDocumentBuilder
-        virtual SAXDocumentBuilderState SAL_CALL getState()
-            throw (RuntimeException);
-        virtual void SAL_CALL reset()
-            throw (RuntimeException);
-        virtual Reference< XDocument > SAL_CALL getDocument()
-            throw (RuntimeException);
-        virtual Reference< XDocumentFragment > SAL_CALL getDocumentFragment()
-            throw (RuntimeException);
-        virtual void SAL_CALL startDocumentFragment(const Reference< XDocument >& ownerDoc)
-            throw (RuntimeException);
-        virtual void SAL_CALL endDocumentFragment()
-            throw (RuntimeException);
+        virtual SAXDocumentBuilderState SAL_CALL getState();
+        virtual void SAL_CALL reset();
+        virtual Reference< XDocument > SAL_CALL getDocument();
+        virtual Reference< XDocumentFragment > SAL_CALL getDocumentFragment();
+        virtual void SAL_CALL startDocumentFragment(const Reference< XDocument >& ownerDoc);
+        virtual void SAL_CALL endDocumentFragment();
 
 
     };

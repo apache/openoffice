@@ -58,8 +58,6 @@ inline sal_Int32 SequenceInputStream::avail()
 // com::sun::star::io::XInputStream
 //------------------------------------------------------------------
 sal_Int32 SAL_CALL SequenceInputStream::readBytes( Sequence<sal_Int8>& aData, sal_Int32 nBytesToRead )
-	throw(NotConnectedException, BufferSizeExceededException,
-		  IOException, RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -80,8 +78,6 @@ sal_Int32 SAL_CALL SequenceInputStream::readBytes( Sequence<sal_Int8>& aData, sa
 
 //------------------------------------------------------------------
 sal_Int32 SAL_CALL SequenceInputStream::readSomeBytes( Sequence<sal_Int8>& aData, sal_Int32 nMaxBytesToRead )
-	throw(NotConnectedException, BufferSizeExceededException,
-		  IOException, RuntimeException)
 {
 	// all data is available at once
 	return readBytes(aData, nMaxBytesToRead);
@@ -89,8 +85,6 @@ sal_Int32 SAL_CALL SequenceInputStream::readSomeBytes( Sequence<sal_Int8>& aData
 
 //------------------------------------------------------------------
 void SAL_CALL SequenceInputStream::skipBytes( sal_Int32 nBytesToSkip )
-	throw(NotConnectedException, BufferSizeExceededException,
-		  IOException, RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -107,7 +101,6 @@ void SAL_CALL SequenceInputStream::skipBytes( sal_Int32 nBytesToSkip )
 
 //------------------------------------------------------------------
 sal_Int32 SAL_CALL SequenceInputStream::available(  )
-	throw(NotConnectedException, IOException, RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -116,7 +109,6 @@ sal_Int32 SAL_CALL SequenceInputStream::available(  )
 
 //------------------------------------------------------------------
 void SAL_CALL SequenceInputStream::closeInput(  )
-	throw(NotConnectedException, IOException, RuntimeException)
 {
 	if (m_nPos == -1)
 		throw NotConnectedException(::rtl::OUString(), *this);
@@ -124,19 +116,19 @@ void SAL_CALL SequenceInputStream::closeInput(  )
 	m_nPos = -1;
 }
 
-void SAL_CALL SequenceInputStream::seek( sal_Int64 location ) throw (IllegalArgumentException, IOException, RuntimeException)
+void SAL_CALL SequenceInputStream::seek( sal_Int64 location )
 {
     if ( location > m_aData.getLength() || location < 0 || location > SAL_MAX_INT32 )
         throw IllegalArgumentException();
     m_nPos = (sal_Int32) location;
 }
 
-sal_Int64 SAL_CALL SequenceInputStream::getPosition() throw (IOException, RuntimeException)
+sal_Int64 SAL_CALL SequenceInputStream::getPosition()
 {
     return m_nPos;
 }
 
-sal_Int64 SAL_CALL SequenceInputStream::getLength(  ) throw (IOException, RuntimeException)
+sal_Int64 SAL_CALL SequenceInputStream::getLength(  )
 {
     return m_aData.getLength();
 }
@@ -162,7 +154,7 @@ OSequenceOutputStream::OSequenceOutputStream(Sequence< sal_Int8 >& _rSeq, double
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OSequenceOutputStream::writeBytes( const Sequence< sal_Int8 >& _rData ) throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
+void SAL_CALL OSequenceOutputStream::writeBytes( const Sequence< sal_Int8 >& _rData )
 {
 	MutexGuard aGuard(m_aMutex);
 	if (!m_bConnected)
@@ -213,7 +205,7 @@ void SAL_CALL OSequenceOutputStream::writeBytes( const Sequence< sal_Int8 >& _rD
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OSequenceOutputStream::flush(  ) throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
+void SAL_CALL OSequenceOutputStream::flush(  )
 {
 	MutexGuard aGuard(m_aMutex);
 	if (!m_bConnected)
@@ -224,7 +216,7 @@ void SAL_CALL OSequenceOutputStream::flush(  ) throw(NotConnectedException, Buff
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL OSequenceOutputStream::closeOutput(  ) throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
+void SAL_CALL OSequenceOutputStream::closeOutput(  )
 {
 	MutexGuard aGuard(m_aMutex);
 	if (!m_bConnected)

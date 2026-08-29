@@ -244,19 +244,15 @@ class StatusIndicatorFactory : public  css::lang::XTypeProvider
 
         //---------------------------------------
         // XInitialization
-        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments)
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments);
 
         //---------------------------------------
         // XStatusIndicatorFactory
-	    virtual css::uno::Reference< css::task::XStatusIndicator > SAL_CALL createStatusIndicator()
-            throw(css::uno::RuntimeException);
+	    virtual css::uno::Reference< css::task::XStatusIndicator > SAL_CALL createStatusIndicator();
 
         //---------------------------------------
         // XUpdatable
-        virtual void SAL_CALL update()
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL update();
 
         //---------------------------------------
         // similar (XStatusIndicator)

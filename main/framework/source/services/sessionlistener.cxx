@@ -205,12 +205,11 @@ void SessionListener::QuitSessionQuietly()
     }
 }
 
-void SAL_CALL SessionListener::disposing(const com::sun::star::lang::EventObject&) throw (RuntimeException)
+void SAL_CALL SessionListener::disposing(const com::sun::star::lang::EventObject&)
 {
 }
 
 void SAL_CALL SessionListener::initialize(const Sequence< Any >& args)
-    throw (RuntimeException)
 {
 
     OUString aSMgr = OUString::createFromAscii("com.sun.star.frame.SessionManagerClient");
@@ -241,7 +240,6 @@ void SAL_CALL SessionListener::initialize(const Sequence< Any >& args)
 }
 
 void SAL_CALL SessionListener::statusChanged(const FeatureStateEvent& event)
-    throw (css::uno::RuntimeException)
 {
    if (event.FeatureURL.Complete.equalsAscii("vnd.sun.star.autorecovery:/doSessionRestore"))
     {
@@ -262,7 +260,6 @@ void SAL_CALL SessionListener::statusChanged(const FeatureStateEvent& event)
 
 
 sal_Bool SAL_CALL SessionListener::doRestore()
-    throw (RuntimeException)
 {
     ResetableGuard aGuard(m_aLock);
     m_bRestored = sal_False;
@@ -288,7 +285,6 @@ sal_Bool SAL_CALL SessionListener::doRestore()
 
 
 void SAL_CALL SessionListener::doSave( sal_Bool bShutdown, sal_Bool /*bCancelable*/ )
-    throw (RuntimeException)
 {
     if (bShutdown)
     {
@@ -304,7 +300,6 @@ void SAL_CALL SessionListener::doSave( sal_Bool bShutdown, sal_Bool /*bCancelabl
 }
 
 void SAL_CALL SessionListener::approveInteraction( sal_Bool bInteractionGranted )
-    throw (RuntimeException)
 {
     // do AutoSave as the first step
     ResetableGuard aGuard(m_aLock);
@@ -345,14 +340,12 @@ void SAL_CALL SessionListener::approveInteraction( sal_Bool bInteractionGranted 
 }
 
 void SessionListener::shutdownCanceled()
-    throw (RuntimeException)
 {
     // set the state back
     m_bSessionStoreRequested = sal_False; // there is no need to protect it with mutex
 }
 
 void SessionListener::doQuit()
-    throw (RuntimeException)
 {
     if ( m_bSessionStoreRequested && !m_bTerminated )
     {

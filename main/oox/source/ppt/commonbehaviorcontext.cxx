@@ -65,7 +65,6 @@ namespace oox { namespace ppt {
 
 
 	void SAL_CALL CommonBehaviorContext::endFastElement( sal_Int32 aElement )
-		throw ( SAXException, RuntimeException)
 	{
 		switch( aElement )
 		{
@@ -122,7 +121,6 @@ namespace oox { namespace ppt {
 
 
 	void CommonBehaviorContext::characters( const OUString& aChars )
-		throw( SAXException, RuntimeException )
 	{
 		if( mbIsInAttrName )
 		{
@@ -133,7 +131,6 @@ namespace oox { namespace ppt {
 
 	Reference< XFastContextHandler > SAL_CALL CommonBehaviorContext::createFastChildContext( ::sal_Int32 aElementToken,
 																																													 const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 	{
 		Reference< XFastContextHandler > xRet;
 

@@ -289,7 +289,6 @@ IMPL_LINK( TabWindow, Deactivate, TabControl*, pTabControl )
 //---------------------------------------------------------------------------------------------------------
 
 void SAL_CALL TabWindow::initialize( const css::uno::Sequence< css::uno::Any >& aArguments )
-throw (css::uno::Exception, css::uno::RuntimeException)
 {
     const rtl::OUString aTopWindowArgName( RTL_CONSTASCII_USTRINGPARAM( "TopWindow" ));
     const rtl::OUString aSizeArgName( RTL_CONSTASCII_USTRINGPARAM( "Size" ));
@@ -445,7 +444,7 @@ throw (css::uno::Exception, css::uno::RuntimeException)
 //---------------------------------------------------------------------------------------------------------
 //	XComponent
 //---------------------------------------------------------------------------------------------------------
-void SAL_CALL TabWindow::dispose() throw (css::uno::RuntimeException)
+void SAL_CALL TabWindow::dispose()
 {
     // Send message to all listener and forget her references.
     css::uno::Reference< css::lang::XComponent > xThis(
@@ -485,7 +484,6 @@ void SAL_CALL TabWindow::dispose() throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL TabWindow::addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
-throw (css::uno::RuntimeException)
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	ResetableGuard aLock( m_aLock );
@@ -498,7 +496,6 @@ throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL TabWindow::removeEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
-throw (css::uno::RuntimeException)
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	ResetableGuard aLock( m_aLock );
@@ -514,7 +511,6 @@ throw (css::uno::RuntimeException)
 // XEventListener
 //---------------------------------------------------------------------------------------------------------
 void SAL_CALL TabWindow::disposing( const css::lang::EventObject& )
-throw( css::uno::RuntimeException )
 {
 }
 
@@ -522,18 +518,15 @@ throw( css::uno::RuntimeException )
 // XWindowListener
 //---------------------------------------------------------------------------------------------------------
 void SAL_CALL TabWindow::windowResized( const css::awt::WindowEvent& )
-throw( css::uno::RuntimeException )
 {
     implts_LayoutWindows();
 }
 
 void SAL_CALL TabWindow::windowMoved( const css::awt::WindowEvent& )
-throw( css::uno::RuntimeException )
 {
 }
 
 void SAL_CALL TabWindow::windowShown( const css::lang::EventObject& )
-throw( css::uno::RuntimeException )
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	ResetableGuard aLock( m_aLock );
@@ -551,7 +544,6 @@ throw( css::uno::RuntimeException )
 }
 
 void SAL_CALL TabWindow::windowHidden( const css::lang::EventObject& )
-throw( css::uno::RuntimeException )
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	ResetableGuard aLock( m_aLock );
@@ -571,12 +563,10 @@ throw( css::uno::RuntimeException )
 // XTopWindowListener
 //---------------------------------------------------------------------------------------------------------
 void SAL_CALL TabWindow::windowOpened( const css::lang::EventObject& )
-throw (css::uno::RuntimeException)
 {
 }
 
 void SAL_CALL TabWindow::windowClosing( const css::lang::EventObject& )
-throw (css::uno::RuntimeException)
 {
     css::uno::Reference< css::lang::XComponent > xComponent( (OWeakObject *)this, css::uno::UNO_QUERY );
     if ( xComponent.is() )
@@ -584,27 +574,22 @@ throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL TabWindow::windowClosed( const css::lang::EventObject& )
-throw (css::uno::RuntimeException)
 {
 }
 
 void SAL_CALL TabWindow::windowMinimized( const css::lang::EventObject& )
-throw (css::uno::RuntimeException)
 {
 }
 
 void SAL_CALL TabWindow::windowNormalized( const css::lang::EventObject& )
-throw (css::uno::RuntimeException)
 {
 }
 
 void SAL_CALL TabWindow::windowActivated( const css::lang::EventObject& )
-throw (css::uno::RuntimeException)
 {
 }
 
 void SAL_CALL TabWindow::windowDeactivated( const css::lang::EventObject& )
-throw (css::uno::RuntimeException)
 {
 }
 
@@ -613,7 +598,6 @@ throw (css::uno::RuntimeException)
 //---------------------------------------------------------------------------------------------------------
 
 ::sal_Int32 SAL_CALL TabWindow::insertTab()
-throw (css::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
@@ -636,7 +620,6 @@ throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL TabWindow::removeTab( ::sal_Int32 ID )
-throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
@@ -669,7 +652,6 @@ throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 }
 
 void SAL_CALL TabWindow::setTabProps( ::sal_Int32 ID, const css::uno::Sequence< css::beans::NamedValue >& Properties )
-throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
@@ -715,7 +697,6 @@ throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 }
 
 css::uno::Sequence< css::beans::NamedValue > SAL_CALL TabWindow::getTabProps( ::sal_Int32 ID )
-throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
@@ -750,7 +731,6 @@ throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 }
 
 void SAL_CALL TabWindow::activateTab( ::sal_Int32 ID )
-throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
@@ -783,7 +763,6 @@ throw (css::lang::IndexOutOfBoundsException, css::uno::RuntimeException)
 }
 
 ::sal_Int32 SAL_CALL TabWindow::getActiveTabID()
-throw (css::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
@@ -807,7 +786,6 @@ throw (css::uno::RuntimeException)
 
 void SAL_CALL TabWindow::addTabListener(
     const css::uno::Reference< css::awt::XTabListener >& xListener )
-throw (css::uno::RuntimeException)
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	ResetableGuard aLock( m_aLock );
@@ -821,7 +799,6 @@ throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL TabWindow::removeTabListener( const css::uno::Reference< css::awt::XTabListener >& xListener )
-throw (css::uno::RuntimeException)
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	ResetableGuard aLock( m_aLock );
@@ -843,7 +820,6 @@ sal_Bool SAL_CALL TabWindow::convertFastPropertyValue( css::uno::Any&       aCon
 													   css::uno::Any&       aOldValue       ,
                                                        sal_Int32			nHandle         ,
 													   const css::uno::Any& aValue             )
-throw( css::lang::IllegalArgumentException )
 {
 	//	Initialize state with sal_False !!!
 	//	(Handle can be invalid)
@@ -874,7 +850,6 @@ throw( css::lang::IllegalArgumentException )
 
 void SAL_CALL TabWindow::setFastPropertyValue_NoBroadcast( sal_Int32,
                                                            const css::uno::Any&)
-throw( css::uno::Exception )
 {
 }
 
@@ -919,7 +894,6 @@ void SAL_CALL TabWindow::getFastPropertyValue( css::uno::Any& aValue ,
 }
 
 css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL TabWindow::getPropertySetInfo()
-throw ( css::uno::RuntimeException )
 {
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't need to use a mutex at every call!

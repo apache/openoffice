@@ -104,26 +104,26 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XPropertySetInfo > SAL_CALL SpinningProgressControlModel::getPropertySetInfo(  ) throw(RuntimeException)
+    Reference< XPropertySetInfo > SAL_CALL SpinningProgressControlModel::getPropertySetInfo(  )
     {
         static Reference< XPropertySetInfo > xInfo( createPropertySetInfo( getInfoHelper() ) );
         return xInfo;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL SpinningProgressControlModel::getServiceName() throw(RuntimeException)
+    ::rtl::OUString SAL_CALL SpinningProgressControlModel::getServiceName()
     {
         return ::rtl::OUString::createFromAscii( szServiceName_SpinningProgressControlModel );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL SpinningProgressControlModel::getImplementationName(  ) throw(RuntimeException)
+    ::rtl::OUString SAL_CALL SpinningProgressControlModel::getImplementationName(  )
     {
         return ::rtl::OUString::createFromAscii( "org.openoffice.comp.toolkit.SpinningProgressControlModel" );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL SpinningProgressControlModel::getSupportedServiceNames() throw(RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL SpinningProgressControlModel::getSupportedServiceNames()
     {
         Sequence< ::rtl::OUString > aServiceNames(3);
         aServiceNames[0] = ::rtl::OUString::createFromAscii( szServiceName_SpinningProgressControlModel );

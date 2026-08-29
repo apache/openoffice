@@ -38,6 +38,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+// clock() is used below; VC9's headers happened to drag <time.h> in
+// transitively, a modern toolchain's do not.  Declared where it is used.
+#include <time.h>
 #include <tools/debug.hxx>
 #include <tools/list.hxx>
 #include "comdep.hxx"

@@ -37,7 +37,7 @@ using ::rtl::OUString;
 // ============================================================================
 
 VbaProjectFilterBase::VbaProjectFilterBase( const Reference< XComponentContext >& rxContext,
-        const OUString& rAppName, const OUString& rStorageName ) throw( RuntimeException ) :
+        const OUString& rAppName, const OUString& rStorageName ) :
     BinaryFilterBase( rxContext ),
     maAppName( rAppName ),
     maStorageName( rStorageName )
@@ -79,14 +79,14 @@ Sequence< OUString > SAL_CALL WordVbaProjectFilter_getSupportedServiceNames() th
 }
 
 Reference< XInterface > SAL_CALL WordVbaProjectFilter_createInstance(
-        const Reference< XComponentContext >& rxContext ) throw( Exception )
+        const Reference< XComponentContext >& rxContext )
 {
     return static_cast< ::cppu::OWeakObject* >( new WordVbaProjectFilter( rxContext ) );
 }
 
 // ----------------------------------------------------------------------------
 
-WordVbaProjectFilter::WordVbaProjectFilter( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+WordVbaProjectFilter::WordVbaProjectFilter( const Reference< XComponentContext >& rxContext ) :
     VbaProjectFilterBase( rxContext, CREATE_OUSTRING( "Writer" ), CREATE_OUSTRING( "Macros" ) )
 {
 }

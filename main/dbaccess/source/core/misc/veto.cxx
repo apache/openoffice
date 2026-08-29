@@ -57,13 +57,13 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL Veto::getReason() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL Veto::getReason()
     {
         return m_sReason;
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL Veto::getDetails() throw (RuntimeException)
+    Any SAL_CALL Veto::getDetails()
     {
         return m_aDetails;
     }

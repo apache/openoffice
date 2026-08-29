@@ -116,7 +116,6 @@ CFilePicker::CFilePicker( const uno::Reference<lang::XMultiServiceFactory>& xSer
 //------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::addFilePickerListener(const uno::Reference<XFilePickerListener>& xListener)
-	throw(uno::RuntimeException)
 {
 	if ( rBHelper.bDisposed )
 		throw lang::DisposedException(
@@ -132,7 +131,6 @@ void SAL_CALL CFilePicker::addFilePickerListener(const uno::Reference<XFilePicke
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::removeFilePickerListener(const uno::Reference<XFilePickerListener>& xListener )
-	throw(uno::RuntimeException)
 {
 	if ( rBHelper.bDisposed )
 		throw lang::DisposedException(
@@ -146,7 +144,7 @@ void SAL_CALL CFilePicker::removeFilePickerListener(const uno::Reference<XFilePi
 // XEventListener
 // -------------------------------------------------
 
-void SAL_CALL CFilePicker::disposing(const lang::EventObject& aEvent) throw(uno::RuntimeException)
+void SAL_CALL CFilePicker::disposing(const lang::EventObject& aEvent)
 {
 	uno::Reference<XFilePickerListener> xFilePickerListener(aEvent.Source, ::com::sun::star::uno::UNO_QUERY);
 
@@ -283,7 +281,7 @@ void CFilePicker::resumeEventNotification()
 // XFilePicker functions
 //------------------------------------------------------------------------------------
 
-void SAL_CALL CFilePicker::setMultiSelectionMode(sal_Bool bMode) throw(uno::RuntimeException)
+void SAL_CALL CFilePicker::setMultiSelectionMode(sal_Bool bMode)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -294,7 +292,7 @@ void SAL_CALL CFilePicker::setMultiSelectionMode(sal_Bool bMode) throw(uno::Runt
 //
 //-----------------------------------------------------------------------------------------
 
-void SAL_CALL CFilePicker::setTitle(const rtl::OUString& aTitle) throw(uno::RuntimeException)
+void SAL_CALL CFilePicker::setTitle(const rtl::OUString& aTitle)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -306,7 +304,6 @@ void SAL_CALL CFilePicker::setTitle(const rtl::OUString& aTitle) throw(uno::Runt
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::appendFilter(const rtl::OUString& aTitle, const rtl::OUString& aFilter)
-	throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -318,7 +315,6 @@ void SAL_CALL CFilePicker::appendFilter(const rtl::OUString& aTitle, const rtl::
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::setCurrentFilter(const rtl::OUString& aTitle)
-	throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -329,7 +325,7 @@ void SAL_CALL CFilePicker::setCurrentFilter(const rtl::OUString& aTitle)
 //
 //-----------------------------------------------------------------------------------------
 
-rtl::OUString SAL_CALL CFilePicker::getCurrentFilter() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL CFilePicker::getCurrentFilter()
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -341,7 +337,6 @@ rtl::OUString SAL_CALL CFilePicker::getCurrentFilter() throw(uno::RuntimeExcepti
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::appendFilterGroup(const rtl::OUString& sGroupTitle, const uno::Sequence<beans::StringPair>& aFilters)
-	throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -353,7 +348,6 @@ void SAL_CALL CFilePicker::appendFilterGroup(const rtl::OUString& sGroupTitle, c
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::setDefaultName(const rtl::OUString& aName)
-	throw(uno::RuntimeException)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -365,7 +359,6 @@ void SAL_CALL CFilePicker::setDefaultName(const rtl::OUString& aName)
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::setDisplayDirectory(const rtl::OUString& aDirectory)
-	throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -376,7 +369,7 @@ void SAL_CALL CFilePicker::setDisplayDirectory(const rtl::OUString& aDirectory)
 //
 //-----------------------------------------------------------------------------------------
 
-rtl::OUString SAL_CALL CFilePicker::getDisplayDirectory() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL CFilePicker::getDisplayDirectory()
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -387,7 +380,7 @@ rtl::OUString SAL_CALL CFilePicker::getDisplayDirectory() throw(uno::RuntimeExce
 //
 //-----------------------------------------------------------------------------------------
 
-uno::Sequence<rtl::OUString> SAL_CALL CFilePicker::getFiles() throw(uno::RuntimeException)
+uno::Sequence<rtl::OUString> SAL_CALL CFilePicker::getFiles()
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -397,7 +390,7 @@ uno::Sequence<rtl::OUString> SAL_CALL CFilePicker::getFiles() throw(uno::Runtime
 //-----------------------------------------------------------------------------------------
 //
 //-----------------------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > SAL_CALL CFilePicker::getSelectedFiles() throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL CFilePicker::getSelectedFiles()
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 	osl::MutexGuard aGuard(m_aMutex);
@@ -438,7 +431,7 @@ uno::Sequence< ::rtl::OUString > SAL_CALL CFilePicker::getSelectedFiles() throw 
 //
 //-----------------------------------------------------------------------------------------
 
-sal_Int16 SAL_CALL CFilePicker::execute() throw(uno::RuntimeException)
+sal_Int16 SAL_CALL CFilePicker::execute()
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 
@@ -471,7 +464,6 @@ sal_Int16 SAL_CALL CFilePicker::execute() throw(uno::RuntimeException)
 //------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::setValue(sal_Int16 aControlId, sal_Int16 aControlAction, const uno::Any& aValue)
-	throw(uno::RuntimeException)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 
@@ -484,7 +476,6 @@ void SAL_CALL CFilePicker::setValue(sal_Int16 aControlId, sal_Int16 aControlActi
 //-----------------------------------------------------------------------------------------
 
 uno::Any SAL_CALL CFilePicker::getValue(sal_Int16 aControlId, sal_Int16 aControlAction)
-	throw(uno::RuntimeException)
 {
 	OSL_ASSERT(0 != m_pImpl.get());
 
@@ -497,7 +488,6 @@ uno::Any SAL_CALL CFilePicker::getValue(sal_Int16 aControlId, sal_Int16 aControl
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::enableControl(sal_Int16 aControlId, sal_Bool bEnable)
-throw(uno::RuntimeException)
 {
 	OSL_ASSERT( 0 != m_pImpl.get( ) );
 
@@ -510,7 +500,6 @@ throw(uno::RuntimeException)
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::setLabel(sal_Int16 aControlId, const ::rtl::OUString& aLabel)
-	throw (uno::RuntimeException)
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -523,7 +512,6 @@ void SAL_CALL CFilePicker::setLabel(sal_Int16 aControlId, const ::rtl::OUString&
 //-----------------------------------------------------------------------------------------
 
 rtl::OUString SAL_CALL CFilePicker::getLabel(sal_Int16 aControlId)
-	throw (uno::RuntimeException)
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -535,7 +523,7 @@ rtl::OUString SAL_CALL CFilePicker::getLabel(sal_Int16 aControlId)
 //
 //------------------------------------------------------------------------------------
 
-uno::Sequence<sal_Int16> SAL_CALL CFilePicker::getSupportedImageFormats() throw (uno::RuntimeException)
+uno::Sequence<sal_Int16> SAL_CALL CFilePicker::getSupportedImageFormats()
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -547,7 +535,7 @@ uno::Sequence<sal_Int16> SAL_CALL CFilePicker::getSupportedImageFormats() throw 
 //
 //------------------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL CFilePicker::getTargetColorDepth() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL CFilePicker::getTargetColorDepth()
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -559,7 +547,7 @@ sal_Int32 SAL_CALL CFilePicker::getTargetColorDepth() throw (uno::RuntimeExcepti
 //
 //------------------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL CFilePicker::getAvailableWidth() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL CFilePicker::getAvailableWidth()
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -571,7 +559,7 @@ sal_Int32 SAL_CALL CFilePicker::getAvailableWidth() throw (uno::RuntimeException
 //
 //------------------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL CFilePicker::getAvailableHeight() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL CFilePicker::getAvailableHeight()
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -584,7 +572,6 @@ sal_Int32 SAL_CALL CFilePicker::getAvailableHeight() throw (uno::RuntimeExceptio
 //------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::setImage(sal_Int16 aImageFormat, const uno::Any& aImage)
-	throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -596,7 +583,7 @@ void SAL_CALL CFilePicker::setImage(sal_Int16 aImageFormat, const uno::Any& aIma
 //
 //------------------------------------------------------------------------------------
 
-sal_Bool SAL_CALL CFilePicker::setShowState(sal_Bool bShowState) throw (uno::RuntimeException)
+sal_Bool SAL_CALL CFilePicker::setShowState(sal_Bool bShowState)
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -608,7 +595,7 @@ sal_Bool SAL_CALL CFilePicker::setShowState(sal_Bool bShowState) throw (uno::Run
 //
 //------------------------------------------------------------------------------------
 
-sal_Bool SAL_CALL CFilePicker::getShowState() throw (uno::RuntimeException)
+sal_Bool SAL_CALL CFilePicker::getShowState()
 {
     OSL_ASSERT(0 != m_pImpl.get());
 
@@ -621,7 +608,6 @@ sal_Bool SAL_CALL CFilePicker::getShowState() throw (uno::RuntimeException)
 //------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::initialize(const uno::Sequence<uno::Any>& aArguments)
-	throw( uno::Exception, uno::RuntimeException)
 {
 	// parameter checking
 	uno::Any aAny;
@@ -750,7 +736,6 @@ void SAL_CALL CFilePicker::initialize(const uno::Sequence<uno::Any>& aArguments)
 //------------------------------------------------------------------------------------
 
 void SAL_CALL CFilePicker::cancel()
-	throw(uno::RuntimeException)
 {
     OSL_ASSERT(m_pImpl.get());
 
@@ -763,7 +748,6 @@ void SAL_CALL CFilePicker::cancel()
 // -------------------------------------------------
 
 rtl::OUString SAL_CALL CFilePicker::getImplementationName()
-	throw(uno::RuntimeException)
 {
 	return rtl::OUString::createFromAscii(FILE_PICKER_IMPL_NAME);
 }
@@ -773,7 +757,6 @@ rtl::OUString SAL_CALL CFilePicker::getImplementationName()
 // -------------------------------------------------
 
 sal_Bool SAL_CALL CFilePicker::supportsService(const rtl::OUString& ServiceName)
-	throw(uno::RuntimeException )
 {
 	uno::Sequence <rtl::OUString> SupportedServicesNames = FilePicker_getSupportedServiceNames();
 
@@ -789,7 +772,6 @@ sal_Bool SAL_CALL CFilePicker::supportsService(const rtl::OUString& ServiceName)
 // -------------------------------------------------
 
 uno::Sequence<rtl::OUString> SAL_CALL CFilePicker::getSupportedServiceNames()
-	throw(uno::RuntimeException)
 {
 	return FilePicker_getSupportedServiceNames();
 }

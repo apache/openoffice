@@ -193,7 +193,6 @@ ComboboxToolbarController::~ComboboxToolbarController()
 // ------------------------------------------------------------------
 
 void SAL_CALL ComboboxToolbarController::dispose()
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 

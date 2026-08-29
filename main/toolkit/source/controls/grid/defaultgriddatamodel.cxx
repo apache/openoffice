@@ -94,14 +94,14 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL DefaultGridDataModel::getRowCount() throw (::com::sun::star::uno::RuntimeException)
+    ::sal_Int32 SAL_CALL DefaultGridDataModel::getRowCount()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 	    return impl_getRowCount_nolck();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-	::sal_Int32 SAL_CALL DefaultGridDataModel::getColumnCount() throw (::com::sun::star::uno::RuntimeException)
+	::sal_Int32 SAL_CALL DefaultGridDataModel::getColumnCount()
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return m_nColumnCount;
@@ -147,21 +147,21 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Any SAL_CALL DefaultGridDataModel::getCellData( ::sal_Int32 i_column, ::sal_Int32 i_row ) throw (RuntimeException, IndexOutOfBoundsException)
+    Any SAL_CALL DefaultGridDataModel::getCellData( ::sal_Int32 i_column, ::sal_Int32 i_row )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return impl_getCellData_throw( i_column, i_row ).first;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Any SAL_CALL DefaultGridDataModel::getCellToolTip( ::sal_Int32 i_column, ::sal_Int32 i_row ) throw (RuntimeException, IndexOutOfBoundsException)
+    Any SAL_CALL DefaultGridDataModel::getCellToolTip( ::sal_Int32 i_column, ::sal_Int32 i_row )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         return impl_getCellData_throw( i_column, i_row ).second;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Any SAL_CALL DefaultGridDataModel::getRowHeading( ::sal_Int32 i_row ) throw (RuntimeException, IndexOutOfBoundsException)
+    Any SAL_CALL DefaultGridDataModel::getRowHeading( ::sal_Int32 i_row )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -172,7 +172,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< Any > SAL_CALL DefaultGridDataModel::getRowData( ::sal_Int32 i_rowIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+    Sequence< Any > SAL_CALL DefaultGridDataModel::getRowData( ::sal_Int32 i_rowIndex )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -203,19 +203,19 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::addRow( const Any& i_heading, const Sequence< Any >& i_data ) throw (RuntimeException)
+    void SAL_CALL DefaultGridDataModel::addRow( const Any& i_heading, const Sequence< Any >& i_data )
     {
         insertRow( getRowCount(), i_heading, i_data );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::addRows( const Sequence< Any >& i_headings, const Sequence< Sequence< Any > >& i_data ) throw (IllegalArgumentException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::addRows( const Sequence< Any >& i_headings, const Sequence< Sequence< Any > >& i_data )
     {
         insertRows( getRowCount(), i_headings, i_data );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::insertRow( ::sal_Int32 i_index, const Any& i_heading, const Sequence< Any >& i_data ) throw (RuntimeException, IndexOutOfBoundsException)
+    void SAL_CALL DefaultGridDataModel::insertRow( ::sal_Int32 i_index, const Any& i_heading, const Sequence< Any >& i_data )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -238,7 +238,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::insertRows( ::sal_Int32 i_index, const Sequence< Any>& i_headings, const Sequence< Sequence< Any > >& i_data ) throw (IllegalArgumentException, IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::insertRows( ::sal_Int32 i_index, const Sequence< Any>& i_headings, const Sequence< Sequence< Any > >& i_data )
     {
         if ( i_headings.getLength() != i_data.getLength() )
             throw IllegalArgumentException( ::rtl::OUString(), *this, -1 );
@@ -277,7 +277,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::removeRow( ::sal_Int32 i_rowIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::removeRow( ::sal_Int32 i_rowIndex )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -295,7 +295,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::removeAllRows(  ) throw (RuntimeException)
+    void SAL_CALL DefaultGridDataModel::removeAllRows(  )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -310,7 +310,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::updateCellData( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::updateCellData( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -324,7 +324,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::updateRowData( const Sequence< ::sal_Int32 >& i_columnIndexes, ::sal_Int32 i_rowIndex, const Sequence< Any >& i_values ) throw (IndexOutOfBoundsException, IllegalArgumentException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::updateRowData( const Sequence< ::sal_Int32 >& i_columnIndexes, ::sal_Int32 i_rowIndex, const Sequence< Any >& i_values )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -364,7 +364,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::updateRowHeading( ::sal_Int32 i_rowIndex, const Any& i_heading ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::updateRowHeading( ::sal_Int32 i_rowIndex, const Any& i_heading )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -381,14 +381,14 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::updateCellToolTip( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::updateCellToolTip( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         impl_getCellDataAccess_throw( i_columnIndex, i_rowIndex ).second = i_value;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::updateRowToolTip( ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL DefaultGridDataModel::updateRowToolTip( ::sal_Int32 i_rowIndex, const Any& i_value )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
 
@@ -398,13 +398,13 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::addGridDataListener( const Reference< grid::XGridDataListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL DefaultGridDataModel::addGridDataListener( const Reference< grid::XGridDataListener >& i_listener )
     {
 	    rBHelper.addListener( XGridDataListener::static_type(), i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DefaultGridDataModel::removeGridDataListener( const Reference< grid::XGridDataListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL DefaultGridDataModel::removeGridDataListener( const Reference< grid::XGridDataListener >& i_listener )
     {
 	    rBHelper.removeListener( XGridDataListener::static_type(), i_listener );
     }
@@ -427,20 +427,20 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL DefaultGridDataModel::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL DefaultGridDataModel::getImplementationName(  )
     {
         static const ::rtl::OUString aImplName( RTL_CONSTASCII_USTRINGPARAM( "toolkit.DefaultGridDataModel" ) );
 	    return aImplName;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    sal_Bool SAL_CALL DefaultGridDataModel::supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException)
+    sal_Bool SAL_CALL DefaultGridDataModel::supportsService( const ::rtl::OUString& ServiceName )
     {
 	    return ServiceName.equalsAscii( szServiceName_DefaultGridDataModel );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL DefaultGridDataModel::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL DefaultGridDataModel::getSupportedServiceNames(  )
     {
 	    static const ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( szServiceName_DefaultGridDataModel ) );
 	    static const Sequence< ::rtl::OUString > aSeq( &aServiceName, 1 );
@@ -448,7 +448,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XCloneable > SAL_CALL DefaultGridDataModel::createClone(  ) throw (RuntimeException)
+    Reference< XCloneable > SAL_CALL DefaultGridDataModel::createClone(  )
     {
         return new DefaultGridDataModel( *this );
     }

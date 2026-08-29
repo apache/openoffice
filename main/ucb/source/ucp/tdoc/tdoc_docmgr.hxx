@@ -96,18 +96,14 @@ namespace tdoc_ucp {
             // util::XCloseListener
             virtual void SAL_CALL queryClosing(
                     const ::com::sun::star::lang::EventObject& Source,
-                    ::sal_Bool GetsOwnership )
-                throw (::com::sun::star::util::CloseVetoException,
-                       ::com::sun::star::uno::RuntimeException);
+                    ::sal_Bool GetsOwnership );
 
             virtual void SAL_CALL notifyClosing(
-                    const ::com::sun::star::lang::EventObject& Source )
-                throw (::com::sun::star::uno::RuntimeException);
+                    const ::com::sun::star::lang::EventObject& Source );
 
             // lang::XEventListener (base of util::XCloseListener)
             virtual void SAL_CALL disposing(
-                    const com::sun::star::lang::EventObject & Source )
-                throw ( com::sun::star::uno::RuntimeException );
+                    const com::sun::star::lang::EventObject & Source );
         private:
             OfficeDocumentsManager * m_pManager;
         };
@@ -123,13 +119,11 @@ namespace tdoc_ucp {
 
         // document::XEventListener
         virtual void SAL_CALL notifyEvent(
-                const com::sun::star::document::EventObject & Event )
-            throw ( com::sun::star::uno::RuntimeException );
+                const com::sun::star::document::EventObject & Event );
 
         // lang::XEventListener (base of document::XEventListener)
         virtual void SAL_CALL disposing(
-                const com::sun::star::lang::EventObject & Source )
-            throw ( com::sun::star::uno::RuntimeException );
+                const com::sun::star::lang::EventObject & Source );
 
         // Non-interface
         com::sun::star::uno::Reference< com::sun::star::embed::XStorage >

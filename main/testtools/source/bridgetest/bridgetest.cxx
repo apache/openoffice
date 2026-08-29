@@ -120,12 +120,12 @@ public:
     }
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw (RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
+	virtual OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 	// XMain
-    virtual sal_Int32 SAL_CALL run( const Sequence< OUString > & rArgs ) throw (RuntimeException);
+    virtual sal_Int32 SAL_CALL run( const Sequence< OUString > & rArgs );
 };
 
 //==================================================================================================
@@ -321,7 +321,6 @@ public:
 	void SAL_CALL callRecursivly(
 		const ::com::sun::star::uno::Reference< XRecursiveCall >& xCall,
 		sal_Int32 nToCall )
-		throw(::com::sun::star::uno::RuntimeException)
 		{
 			MutexGuard guard( m_mutex );
 			if( nToCall )
@@ -1191,7 +1190,6 @@ inline bool makeSurrogate(
 
 //==================================================================================================
 sal_Int32 TestBridgeImpl::run( const Sequence< OUString > & rArgs )
-	throw (RuntimeException)
 {
     bool bRet = false;
     try
@@ -1299,13 +1297,11 @@ sal_Int32 TestBridgeImpl::run( const Sequence< OUString > & rArgs )
 // XServiceInfo
 //__________________________________________________________________________________________________
 OUString TestBridgeImpl::getImplementationName()
-	throw (RuntimeException)
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME) );
 }
 //__________________________________________________________________________________________________
 sal_Bool TestBridgeImpl::supportsService( const OUString & rServiceName )
-	throw (RuntimeException)
 {
 	const Sequence< OUString > & rSNL = getSupportedServiceNames();
 	const OUString * pArray = rSNL.getConstArray();
@@ -1318,7 +1314,6 @@ sal_Bool TestBridgeImpl::supportsService( const OUString & rServiceName )
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > TestBridgeImpl::getSupportedServiceNames()
-	throw (RuntimeException)
 {
 	return bridge_test::getSupportedServiceNames();
 }

@@ -77,34 +77,29 @@ public:
     virtual css::uno::Reference<css::drawing::framework::XResource>
         SAL_CALL createResource (
             const css::uno::Reference<
-                css::drawing::framework::XResourceId>& rxViewId)
-        throw (css::uno::RuntimeException, css::lang::IllegalArgumentException, css::lang::WrappedTargetException);
+                css::drawing::framework::XResourceId>& rxViewId);
 
     virtual void SAL_CALL releaseResource (
-        const css::uno::Reference<css::drawing::framework::XResource>& xView)
-        throw(css::uno::RuntimeException);
+        const css::uno::Reference<css::drawing::framework::XResource>& xView);
 
 
     // XConfigurationChangeListener
 
     virtual void SAL_CALL notifyConfigurationChange (
-        const css::drawing::framework::ConfigurationChangeEvent& rEvent)
-        throw (css::uno::RuntimeException);
+        const css::drawing::framework::ConfigurationChangeEvent& rEvent);
 
 
     // lang::XEventListener
 
     virtual void SAL_CALL disposing (
-        const css::lang::EventObject& rEventObject)
-        throw (css::uno::RuntimeException);
+        const css::lang::EventObject& rEventObject);
 
 private:
     css::uno::Reference<css::drawing::framework::XConfigurationController>
         mxConfigurationController;
     css::uno::Reference<css::frame::XController> mxController;
 
-    void ThrowIfDisposed (void) const
-        throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } } // end of namespace sd::framework

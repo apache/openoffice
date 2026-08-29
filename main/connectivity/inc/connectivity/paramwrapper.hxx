@@ -99,12 +99,12 @@ namespace param
         DECLARE_XTYPEPROVIDER()
 
         // XPropertySet
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo() throw( ::com::sun::star::uno::RuntimeException );
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
         virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 
         // OPropertySetHelper
-        virtual sal_Bool SAL_CALL convertFastPropertyValue( ::com::sun::star::uno::Any& rConvertedValue, ::com::sun::star::uno::Any& rOldValue, sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue) throw( ::com::sun::star::lang::IllegalArgumentException );
-        virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue ) throw( ::com::sun::star::uno::Exception );
+        virtual sal_Bool SAL_CALL convertFastPropertyValue( ::com::sun::star::uno::Any& rConvertedValue, ::com::sun::star::uno::Any& rOldValue, sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue);
+        virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
         virtual void SAL_CALL getFastPropertyValue( ::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
 
         // pseudo-XComponent
@@ -159,15 +159,15 @@ namespace param
         ParameterWrapperContainer( const ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XSingleSelectQueryAnalyzer >& _rxComposer );
 
         // ::com::sun::star::container::XElementAccess
-        virtual ::com::sun::star::uno::Type SAL_CALL getElementType() throw( ::com::sun::star::uno::RuntimeException );
-        virtual sal_Bool SAL_CALL hasElements() throw( ::com::sun::star::uno::RuntimeException );
+        virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+        virtual sal_Bool SAL_CALL hasElements();
 
         // ::com::sun::star::container::XEnumerationAccess
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createEnumeration() throw( ::com::sun::star::uno::RuntimeException );
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createEnumeration();
 
         // ::com::sun::star::container::XIndexAccess
-        virtual sal_Int32 SAL_CALL getCount() throw( ::com::sun::star::uno::RuntimeException );
-        virtual ::com::sun::star::uno::Any SAL_CALL getByIndex(sal_Int32 _rIndex) throw( ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException );
+        virtual sal_Int32 SAL_CALL getCount();
+        virtual ::com::sun::star::uno::Any SAL_CALL getByIndex(sal_Int32 _rIndex);
 
     public:
         const Parameters& getParameters() { return m_aParameters; }

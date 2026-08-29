@@ -129,6 +129,7 @@ BEGIN
 	$ismacosx = 0;
 	$isos2 = 0;
 	$iswindowsbuild = 0;
+	$iswin64build = 0;
 	$islinuxbuild = 0;
 	$islinuxrpmbuild = 0;
 	$islinuxdebbuild = 0;

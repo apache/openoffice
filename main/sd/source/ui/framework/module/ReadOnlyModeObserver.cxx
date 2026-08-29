@@ -164,7 +164,6 @@ bool ReadOnlyModeObserver::ConnectToDispatch (void)
 
 
 void ReadOnlyModeObserver::statusChanged (const frame::FeatureStateEvent& rEvent)
-    throw (RuntimeException)
 {
     ::cppu::OInterfaceContainerHelper* pIterator
           = mpBroadcaster->getContainer(getCppuType((Reference<frame::XStatusListener>*)NULL));
@@ -181,7 +180,6 @@ void ReadOnlyModeObserver::statusChanged (const frame::FeatureStateEvent& rEvent
 
 void SAL_CALL ReadOnlyModeObserver::disposing (
     const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Source == mxConfigurationController)
         mxConfigurationController = NULL;
@@ -196,7 +194,6 @@ void SAL_CALL ReadOnlyModeObserver::disposing (
 
 void SAL_CALL ReadOnlyModeObserver::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Type.equals(FrameworkHelper::msConfigurationUpdateStartEvent))
     {

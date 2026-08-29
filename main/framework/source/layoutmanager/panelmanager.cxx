@@ -137,39 +137,32 @@ bool PanelManager::destroyDockingWindow( const ::rtl::OUString& /*rResourceName*
 //  XDockableWindowListener
 //---------------------------------------------------------------------------------------------------------
 void SAL_CALL PanelManager::startDocking( const awt::DockingEvent& )
-throw (uno::RuntimeException)
 {
 }
 
 awt::DockingData SAL_CALL PanelManager::docking( const awt::DockingEvent& )
-throw (uno::RuntimeException)
 {
     return awt::DockingData();
 }
 
 void SAL_CALL PanelManager::endDocking( const awt::EndDockingEvent& )
-throw (uno::RuntimeException)
 {
 }
 
 sal_Bool SAL_CALL PanelManager::prepareToggleFloatingMode( const lang::EventObject& )
-throw (uno::RuntimeException)
 {
     return false;
 }
 
 void SAL_CALL PanelManager::toggleFloatingMode( const lang::EventObject& )
-throw (uno::RuntimeException)
 {
 }
 
 void SAL_CALL PanelManager::closed( const lang::EventObject& )
-throw (uno::RuntimeException)
 {
 }
 
 void SAL_CALL PanelManager::endPopupMode( const awt::EndPopupModeEvent& )
-throw (uno::RuntimeException)
 {
 }
 

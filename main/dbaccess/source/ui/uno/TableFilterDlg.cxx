@@ -58,7 +58,7 @@ OTableFilterDialog::OTableFilterDialog(const Reference< XMultiServiceFactory >& 
 {
 }
 //-------------------------------------------------------------------------
-Sequence<sal_Int8> SAL_CALL OTableFilterDialog::getImplementationId(  ) throw(RuntimeException)
+Sequence<sal_Int8> SAL_CALL OTableFilterDialog::getImplementationId(  )
 {
 	static ::cppu::OImplementationId aId;
 	return aId.getImplementationId();
@@ -71,25 +71,25 @@ Reference< XInterface > SAL_CALL OTableFilterDialog::Create(const Reference< XMu
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OTableFilterDialog::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL OTableFilterDialog::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString OTableFilterDialog::getImplementationName_Static() throw(RuntimeException)
+::rtl::OUString OTableFilterDialog::getImplementationName_Static()
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("org.openoffice.comp.dbu.OTableFilterDialog"));
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL OTableFilterDialog::getSupportedServiceNames() throw(RuntimeException)
+::comphelper::StringSequence SAL_CALL OTableFilterDialog::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence OTableFilterDialog::getSupportedServiceNames_Static() throw(RuntimeException)
+::comphelper::StringSequence OTableFilterDialog::getSupportedServiceNames_Static()
 {
 	::comphelper::StringSequence aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.TableFilterDialog"));
@@ -97,7 +97,7 @@ Reference< XInterface > SAL_CALL OTableFilterDialog::Create(const Reference< XMu
 }
 
 //-------------------------------------------------------------------------
-Reference<XPropertySetInfo>  SAL_CALL OTableFilterDialog::getPropertySetInfo() throw(RuntimeException)
+Reference<XPropertySetInfo>  SAL_CALL OTableFilterDialog::getPropertySetInfo()
 {
 	Reference<XPropertySetInfo>  xInfo( createPropertySetInfo( getInfoHelper() ) );
 	return xInfo;

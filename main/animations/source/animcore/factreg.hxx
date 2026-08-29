@@ -27,7 +27,7 @@ namespace animcore {
 extern rtl_StandardModuleCount g_moduleCount;
 
 #define DECL_NODE_FACTORY(N)\
-extern ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL createInstance_##N( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & rSMgr ) throw (::com::sun::star::uno::Exception);\
+extern ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL createInstance_##N( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & rSMgr );\
 extern ::rtl::OUString getImplementationName_##N();\
 extern ::com::sun::star::uno::Sequence< ::rtl::OUString> getSupportedServiceNames_##N(void)
 

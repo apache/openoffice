@@ -119,7 +119,6 @@ InputSequenceChecker_hi::checkInputSequence(const OUString& Text,
                                             sal_Int32       nStartPos,
                                             sal_Unicode     inputChar,
                                             sal_Int16       inputCheckMode)
-  throw(com::sun::star::uno::RuntimeException)
 {
 	sal_Unicode currentChar = Text[nStartPos];
   sal_uInt16  ch1 = getCharType(inputChar);
@@ -133,7 +132,6 @@ InputSequenceChecker_hi::correctInputSequence(OUString& Text,
                                             sal_Int32       nStartPos,
                                             sal_Unicode     inputChar,
                                             sal_Int16       inputCheckMode)
-  throw(com::sun::star::uno::RuntimeException)
 {
     if (checkInputSequence(Text, nStartPos, inputChar, inputCheckMode))
         Text = Text.replaceAt(++nStartPos, 0, OUString(inputChar));

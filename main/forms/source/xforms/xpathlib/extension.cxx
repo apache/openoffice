@@ -60,7 +60,7 @@ Sequence< ::rtl::OUString > SAL_CALL CLibxml2XFormsExtension::getSupportedServic
     return aSequence;
 }
 
-Libxml2ExtensionHandle SAL_CALL CLibxml2XFormsExtension::getLibxml2ExtensionHandle() throw (RuntimeException)
+Libxml2ExtensionHandle SAL_CALL CLibxml2XFormsExtension::getLibxml2ExtensionHandle()
 {
     Libxml2ExtensionHandle aHandle;
     aHandle.functionLookupFunction = reinterpret_cast< sal_Int64 >( &xforms_lookupFunc );
@@ -70,7 +70,7 @@ Libxml2ExtensionHandle SAL_CALL CLibxml2XFormsExtension::getLibxml2ExtensionHand
     return aHandle;
 }
 
-void SAL_CALL CLibxml2XFormsExtension::initialize(const Sequence< Any >& aSequence) throw (RuntimeException)
+void SAL_CALL CLibxml2XFormsExtension::initialize(const Sequence< Any >& aSequence)
 {
     NamedValue aValue;
     for (sal_Int32 i = 0; i < aSequence.getLength(); i++)

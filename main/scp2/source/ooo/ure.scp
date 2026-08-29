@@ -402,7 +402,7 @@ File gid_File_Dl_LogUnoUno
     Styles = (PACKED, VERSION_INDEPENDENT_COMP_ID);
 End
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 File gid_File_Dl_Cli_Uno
     TXT_FILE_BODY;
     Dir = SCP2_URE_DL_DIR;
@@ -412,7 +412,7 @@ File gid_File_Dl_Cli_Uno
 End
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Cli_Ure_Assembly
     TXT_FILE_BODY;
@@ -431,7 +431,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Policy_Cli_Ure_Assembly
     TXT_FILE_BODY;
@@ -450,7 +450,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC 
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Policy_Cli_Ure_Config
     TXT_FILE_BODY;
@@ -462,7 +462,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Cli_Basetypes_Assembly
     TXT_FILE_BODY;
@@ -481,7 +481,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Policy_Cli_Basetypes_Assembly
     TXT_FILE_BODY;
@@ -499,7 +499,7 @@ File gid_File_Dl_Policy_Cli_Basetypes_Assembly
 End
 
 #endif
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Policy_Cli_Basetypes_Config
     TXT_FILE_BODY;
@@ -512,7 +512,7 @@ End
 #endif
 
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Cli_Uretypes_Assembly
     TXT_FILE_BODY;
@@ -531,7 +531,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Policy_Cli_Uretypes_Assembly
     TXT_FILE_BODY;
@@ -550,7 +550,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC 
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Dl_Policy_Cli_Uretypes_Config
     TXT_FILE_BODY;
@@ -562,7 +562,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Lib_Cli_Cppuhelper_Assembly
     TXT_FILE_BODY;
@@ -581,7 +581,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Lib_Policy_Cli_Cppuhelper_Assembly
     TXT_FILE_BODY;
@@ -600,7 +600,7 @@ End
 
 #endif
 
-#if defined WNT && defined _MSC
+#if defined WNT && defined _MSC && !defined DISABLE_CLI
 
 File gid_File_Lib_Policy_Cli_Cppuhelper_Config
     TXT_FILE_BODY;

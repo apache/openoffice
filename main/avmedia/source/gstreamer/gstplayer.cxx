@@ -269,7 +269,6 @@ Player* Player::create( const ::rtl::OUString& rURL )
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::start()
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     if( implInitPlayer() && !isPlaying() )
@@ -280,7 +279,6 @@ void SAL_CALL Player::start()
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::stop()
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     if( implInitPlayer() && isPlaying() )
@@ -291,7 +289,6 @@ void SAL_CALL Player::stop()
 
 // ------------------------------------------------------------------------------
 sal_Bool SAL_CALL Player::isPlaying()
-     throw( uno::RuntimeException )
 {
     GstState aState = GST_STATE_NULL;
     ::osl::MutexGuard aGuard(m_aMutex);
@@ -305,7 +302,6 @@ sal_Bool SAL_CALL Player::isPlaying()
 
 // ------------------------------------------------------------------------------
 double SAL_CALL Player::getDuration()
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     gint64 nDuration = 0;
@@ -324,7 +320,6 @@ double SAL_CALL Player::getDuration()
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::setMediaTime( double fTime )
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     if( implInitPlayer() )
@@ -339,7 +334,6 @@ void SAL_CALL Player::setMediaTime( double fTime )
 
 // ------------------------------------------------------------------------------
 double SAL_CALL Player::getMediaTime()
-     throw( uno::RuntimeException )
 {
     double fRet = 0.0;
     ::osl::MutexGuard aGuard(m_aMutex);
@@ -359,7 +353,6 @@ double SAL_CALL Player::getMediaTime()
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::setStopTime( double /* fTime */ )
-     throw( uno::RuntimeException )
 {
     OSL_TRACE( "GStreamer method avmedia::gst::Player::setStopTime needs to be implemented" );
 
@@ -374,7 +367,6 @@ void SAL_CALL Player::setStopTime( double /* fTime */ )
 
 // ------------------------------------------------------------------------------
 double SAL_CALL Player::getStopTime()
-     throw( uno::RuntimeException )
 {
     /*
         Currently no need for implementation since higher levels of code don't set a stop time ATM
@@ -386,7 +378,6 @@ double SAL_CALL Player::getStopTime()
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::setRate( double /* fRate */ )
-     throw( uno::RuntimeException )
 {
     OSL_TRACE( "GStreamer method avmedia::gst::Player::setRate needs to be implemented" );
 
@@ -397,7 +388,6 @@ void SAL_CALL Player::setRate( double /* fRate */ )
 
 // ------------------------------------------------------------------------------
 double SAL_CALL Player::getRate()
-     throw( uno::RuntimeException )
 {
     /*
         Currently no need for implementation since higher levels of code don't set a different rate than 1 ATM
@@ -409,7 +399,6 @@ double SAL_CALL Player::getRate()
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::setPlaybackLoop( sal_Bool bSet )
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     if (bSet)
@@ -424,7 +413,6 @@ void SAL_CALL Player::setPlaybackLoop( sal_Bool bSet )
 
 // ------------------------------------------------------------------------------
 sal_Bool SAL_CALL Player::isPlaybackLoop()
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     return( g_atomic_int_get( &mnLooping ) > 0 );
@@ -432,7 +420,6 @@ sal_Bool SAL_CALL Player::isPlaybackLoop()
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::setMute( sal_Bool bSet )
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     if( implInitPlayer() && ( bSet != isMute() ) )
@@ -450,7 +437,6 @@ void SAL_CALL Player::setMute( sal_Bool bSet )
 
 // ------------------------------------------------------------------------------
 sal_Bool SAL_CALL Player::isMute()
-     throw( uno::RuntimeException )
 {
     gdouble fGstVolume = 1.0;
     ::osl::MutexGuard aGuard(m_aMutex);
@@ -465,7 +451,6 @@ sal_Bool SAL_CALL Player::isMute()
 
 // ------------------------------------------------------------------------------
 void SAL_CALL Player::setVolumeDB( sal_Int16 nVolumeDB )
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     if( implInitPlayer() )
@@ -484,7 +469,6 @@ void SAL_CALL Player::setVolumeDB( sal_Int16 nVolumeDB )
 
 // ------------------------------------------------------------------------------
 sal_Int16 SAL_CALL Player::getVolumeDB()
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     return( static_cast< sal_Int16 >( g_atomic_int_get( &mnVolumeDB ) ) );
@@ -492,7 +476,6 @@ sal_Int16 SAL_CALL Player::getVolumeDB()
 
 // ------------------------------------------------------------------------------
 awt::Size SAL_CALL Player::getPreferredPlayerWindowSize()
-     throw( uno::RuntimeException )
 {
     awt::Size aSize( 0, 0 );
     ::osl::MutexGuard aGuard(m_aMutex);
@@ -518,7 +501,6 @@ awt::Size SAL_CALL Player::getPreferredPlayerWindowSize()
 // ------------------------------------------------------------------------------
 uno::Reference< ::media::XPlayerWindow > SAL_CALL Player::createPlayerWindow(
     const uno::Sequence< uno::Any >& rArguments )
-     throw( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     uno::Reference< ::media::XPlayerWindow > xRet;
@@ -567,7 +549,6 @@ uno::Reference< ::media::XPlayerWindow > SAL_CALL Player::createPlayerWindow(
 
 // ------------------------------------------------------------------------------
 uno::Reference< media::XFrameGrabber > SAL_CALL Player::createFrameGrabber()
-     throw( ::com::sun::star::uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     FrameGrabber* pFrameGrabber = NULL;
@@ -596,21 +577,18 @@ void SAL_CALL Player::disposing()
 
 // ------------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL Player::getImplementationName()
-     throw( uno::RuntimeException )
 {
     return( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_GSTREAMER_PLAYER_IMPLEMENTATIONNAME ) ) );
 }
 
 // ------------------------------------------------------------------------------
 sal_Bool SAL_CALL Player::supportsService( const ::rtl::OUString& ServiceName )
-     throw( uno::RuntimeException )
 {
     return( ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( AVMEDIA_GSTREAMER_PLAYER_SERVICENAME ) ) );
 }
 
 // ------------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL Player::getSupportedServiceNames()
-     throw( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString > aRet( 1 );
     aRet[ 0 ] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_GSTREAMER_PLAYER_SERVICENAME ) );

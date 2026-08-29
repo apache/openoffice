@@ -94,7 +94,6 @@ void SimpleReferenceComponent::disposing()
 }
 
 void * SimpleReferenceComponent::operator new(std::size_t nSize)
-    SAL_THROW((std::bad_alloc))
 {
     return ::operator new(nSize);
 }

@@ -90,7 +90,7 @@ namespace frm
         void        disposing( );
 
         // prevent method hiding
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException) = 0;
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) = 0;
 
         /** helper for implementing convertFastPropertyValue( StringItemList )
 
@@ -101,8 +101,7 @@ namespace frm
                         ::com::sun::star::uno::Any& _rConvertedValue,
                         ::com::sun::star::uno::Any& _rOldValue,
                         const ::com::sun::star::uno::Any& _rValue
-                    )
-                    SAL_THROW( ( ::com::sun::star::lang::IllegalArgumentException ) );
+                    );
 
         /** helper for implementing setFastPropertyValueNoBroadcast
 
@@ -140,19 +139,19 @@ namespace frm
 
     private:
         // XListEntrySink
-        virtual void SAL_CALL setListEntrySource( const ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntrySource >& _rxSource ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntrySource > SAL_CALL getListEntrySource(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL setListEntrySource( const ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntrySource >& _rxSource );
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::binding::XListEntrySource > SAL_CALL getListEntrySource(  );
 
         // XListEntryListener
-        virtual void SAL_CALL entryChanged( const ::com::sun::star::form::binding::ListEntryEvent& _rSource ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL entryRangeInserted( const ::com::sun::star::form::binding::ListEntryEvent& _rSource ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL entryRangeRemoved( const ::com::sun::star::form::binding::ListEntryEvent& _rSource ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL allEntriesChanged( const ::com::sun::star::lang::EventObject& _rSource ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL entryChanged( const ::com::sun::star::form::binding::ListEntryEvent& _rSource );
+        virtual void SAL_CALL entryRangeInserted( const ::com::sun::star::form::binding::ListEntryEvent& _rSource );
+        virtual void SAL_CALL entryRangeRemoved( const ::com::sun::star::form::binding::ListEntryEvent& _rSource );
+        virtual void SAL_CALL allEntriesChanged( const ::com::sun::star::lang::EventObject& _rSource );
 
         // XRefreshable
-        virtual void SAL_CALL refresh() throw(::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL addRefreshListener(const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener>& _rxListener) throw(::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeRefreshListener(const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener>& _rxListener) throw(::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL refresh();
+        virtual void SAL_CALL addRefreshListener(const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener>& _rxListener);
+        virtual void SAL_CALL removeRefreshListener(const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener>& _rxListener);
 
     private:
         /** disconnects from the active external list source, if present

@@ -483,9 +483,6 @@ shell::associate( const rtl::OUString& aUnqPath,
                   const rtl::OUString& PropertyName,
                   const uno::Any& DefaultValue,
                   const sal_Int16 Attributes )
-    throw( beans::PropertyExistException,
-           beans::IllegalTypeException,
-           uno::RuntimeException )
 {
     MyProperty newProperty( false,
                             PropertyName,
@@ -525,9 +522,6 @@ shell::associate( const rtl::OUString& aUnqPath,
 void SAL_CALL
 shell::deassociate( const rtl::OUString& aUnqPath,
             const rtl::OUString& PropertyName )
-  throw( beans::UnknownPropertyException,
-     beans::NotRemoveableException,
-     uno::RuntimeException )
 {
     MyProperty oldProperty( PropertyName );
 

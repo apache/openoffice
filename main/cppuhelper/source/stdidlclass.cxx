@@ -62,48 +62,46 @@ public:
 				) SAL_THROW( () );
 
 	// XInterface
-	Any					SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType )
-		throw(::com::sun::star::uno::RuntimeException);
+	Any					SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 
 	void 				SAL_CALL acquire() throw() 	 { OWeakObject::acquire(); }
 	void 				SAL_CALL release() throw()	 { OWeakObject::release(); }
 
 	// XIdlClassProvider
-    Sequence< Reference < XIdlClass > > SAL_CALL getIdlClasses(void)
-		throw (RuntimeException);
+    Sequence< Reference < XIdlClass > > SAL_CALL getIdlClasses(void);
 
     // XIdlClass
-    virtual Sequence< Reference< XIdlClass > > SAL_CALL getClasses(  ) throw(RuntimeException)
+    virtual Sequence< Reference< XIdlClass > > SAL_CALL getClasses(  )
     									{ return Sequence < Reference < XIdlClass > > (); }
-    virtual Reference< XIdlClass > SAL_CALL getClass( const ::rtl::OUString& ) throw(RuntimeException)
+    virtual Reference< XIdlClass > SAL_CALL getClass( const ::rtl::OUString& )
     									{ return Reference < XIdlClass > (); }
-    virtual sal_Bool SAL_CALL equals( const Reference< XIdlClass >& Type ) throw(RuntimeException)
+    virtual sal_Bool SAL_CALL equals( const Reference< XIdlClass >& Type )
     									{ return getName() == Type->getName(); }
-    virtual sal_Bool SAL_CALL isAssignableFrom( const Reference< XIdlClass >& xType ) throw(RuntimeException)
+    virtual sal_Bool SAL_CALL isAssignableFrom( const Reference< XIdlClass >& xType )
     									{ return equals( xType ); }
-    virtual TypeClass SAL_CALL getTypeClass(  ) throw(RuntimeException)
+    virtual TypeClass SAL_CALL getTypeClass(  )
     									{ return TypeClass_UNKNOWN; }
-    virtual OUString SAL_CALL getName(  ) throw(RuntimeException)
+    virtual OUString SAL_CALL getName(  )
     									{ return m_sImplementationName; }
-    virtual Uik SAL_CALL getUik(  ) throw(RuntimeException)
+    virtual Uik SAL_CALL getUik(  )
     									{ return Uik(); }
-    virtual Sequence< Reference< XIdlClass > > SAL_CALL getSuperclasses(  ) throw(RuntimeException)
+    virtual Sequence< Reference< XIdlClass > > SAL_CALL getSuperclasses(  )
     									{ return m_seqSuperClasses; }
-    virtual Sequence< Reference< XIdlClass > > SAL_CALL getInterfaces(  ) throw(RuntimeException);
+    virtual Sequence< Reference< XIdlClass > > SAL_CALL getInterfaces(  );
 
-    virtual Reference< XIdlClass > SAL_CALL getComponentType(  ) throw(RuntimeException)
+    virtual Reference< XIdlClass > SAL_CALL getComponentType(  )
     									{ return Reference < XIdlClass > (); }
-    virtual Reference< XIdlField > SAL_CALL getField( const ::rtl::OUString& ) throw(RuntimeException)
+    virtual Reference< XIdlField > SAL_CALL getField( const ::rtl::OUString& )
     									{ return Reference < XIdlField > (); }
-    virtual Sequence< Reference< XIdlField > > SAL_CALL getFields(  ) throw(RuntimeException)
+    virtual Sequence< Reference< XIdlField > > SAL_CALL getFields(  )
     									{ return Sequence< Reference < XIdlField > > (); }
-    virtual Reference< XIdlMethod > SAL_CALL getMethod( const ::rtl::OUString& ) throw(RuntimeException)
+    virtual Reference< XIdlMethod > SAL_CALL getMethod( const ::rtl::OUString& )
     									{ return Reference < XIdlMethod > (); }
-    virtual Sequence< Reference< XIdlMethod > > SAL_CALL getMethods(  ) throw(RuntimeException)
+    virtual Sequence< Reference< XIdlMethod > > SAL_CALL getMethods(  )
     									{ return Sequence < Reference < XIdlMethod > > (); }
-    virtual Reference< XIdlArray > SAL_CALL getArray(  ) throw(RuntimeException)
+    virtual Reference< XIdlArray > SAL_CALL getArray(  )
     									{ return Reference < XIdlArray > (); }
-    virtual void SAL_CALL createObject( Any& ) throw(RuntimeException) {}
+    virtual void SAL_CALL createObject( Any& ) {}
 
 private:
 	OUString 								m_sImplementationName;
@@ -112,11 +110,10 @@ private:
 	Reference < XMultiServiceFactory >		m_rSMgr;
 
     Reference< XIdlReflection > m_xCorefl;
-    Reference< XIdlReflection > const & get_corefl() SAL_THROW( (RuntimeException) );
+    Reference< XIdlReflection > const & get_corefl();
 };
 
 Reference< XIdlReflection > const & OStdIdlClass::get_corefl()
-    SAL_THROW( (RuntimeException) )
 {
     if (! m_xCorefl.is())
     {
@@ -174,7 +171,6 @@ OStdIdlClass::OStdIdlClass(
 }
 
 Any SAL_CALL OStdIdlClass::queryInterface( const Type & rType )
-	 throw(::com::sun::star::uno::RuntimeException)
 {
 	Any aRet( ::cppu::queryInterface(
 		rType, static_cast< XIdlClass * >( this ), static_cast< XIdlClassProvider * >( this ) ) );
@@ -183,7 +179,7 @@ Any SAL_CALL OStdIdlClass::queryInterface( const Type & rType )
 }
 
 
-Sequence< Reference< XIdlClass > > SAL_CALL OStdIdlClass::getInterfaces(  ) throw(RuntimeException)
+Sequence< Reference< XIdlClass > > SAL_CALL OStdIdlClass::getInterfaces(  )
 {
 	int nMax = m_seqSupportedInterface.getLength();
 
@@ -205,7 +201,6 @@ Sequence< Reference< XIdlClass > > SAL_CALL OStdIdlClass::getInterfaces(  ) thro
 
 // XIdlClassProvider
 Sequence< Reference < XIdlClass > > SAL_CALL OStdIdlClass::getIdlClasses(void)
-	throw (RuntimeException)
 {
 	// weak reference to cache the standard class
     static WeakReference< XIdlClass >	weakRef;

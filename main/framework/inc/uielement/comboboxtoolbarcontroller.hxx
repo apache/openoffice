@@ -68,7 +68,7 @@ class ComboboxToolbarController : public IComboBoxListener,
         virtual ~ComboboxToolbarController();
 
         // XComponent
-        virtual void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL dispose();
 
         // IComboBoxListener
         virtual void Select();

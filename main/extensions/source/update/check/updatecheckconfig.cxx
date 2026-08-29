@@ -534,7 +534,7 @@ UpdateCheckConfig::getImplName()
 //------------------------------------------------------------------------------
 
 uno::Type SAL_CALL
-UpdateCheckConfig::getElementType() throw (uno::RuntimeException)
+UpdateCheckConfig::getElementType()
 {
     return m_xContainer->getElementType();
 }
@@ -542,7 +542,7 @@ UpdateCheckConfig::getElementType() throw (uno::RuntimeException)
 //------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL
-UpdateCheckConfig::hasElements() throw (uno::RuntimeException)
+UpdateCheckConfig::hasElements()
 {
     return m_xContainer->hasElements();
 }
@@ -551,7 +551,6 @@ UpdateCheckConfig::hasElements() throw (uno::RuntimeException)
 
 uno::Any SAL_CALL
 UpdateCheckConfig::getByName( const ::rtl::OUString& aName )
-    throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
     uno::Any aValue = m_xContainer->getByName( aName );
 
@@ -571,7 +570,7 @@ UpdateCheckConfig::getByName( const ::rtl::OUString& aName )
 //------------------------------------------------------------------------------
 
 uno::Sequence< ::rtl::OUString > SAL_CALL
-UpdateCheckConfig::getElementNames(  ) throw (uno::RuntimeException)
+UpdateCheckConfig::getElementNames(  )
 {
     return m_xContainer->getElementNames();
 }
@@ -579,7 +578,7 @@ UpdateCheckConfig::getElementNames(  ) throw (uno::RuntimeException)
 //------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL
-UpdateCheckConfig::hasByName( const ::rtl::OUString& aName ) throw (uno::RuntimeException)
+UpdateCheckConfig::hasByName( const ::rtl::OUString& aName )
 {
     return m_xContainer->hasByName( aName );
 }
@@ -588,8 +587,6 @@ UpdateCheckConfig::hasByName( const ::rtl::OUString& aName ) throw (uno::Runtime
 
 void SAL_CALL
 UpdateCheckConfig::replaceByName( const ::rtl::OUString& aName, const uno::Any& aElement )
-    throw (lang::IllegalArgumentException, container::NoSuchElementException,
-           lang::WrappedTargetException, uno::RuntimeException)
 {
     return m_xContainer->replaceByName( aName, aElement );
 }
@@ -599,7 +596,6 @@ UpdateCheckConfig::replaceByName( const ::rtl::OUString& aName, const uno::Any& 
 
 void SAL_CALL
 UpdateCheckConfig::commitChanges()
-    throw (lang::WrappedTargetException, uno::RuntimeException)
 {
     uno::Reference< util::XChangesBatch > xChangesBatch(m_xContainer, uno::UNO_QUERY);
     if( xChangesBatch.is() && xChangesBatch->hasPendingChanges() )
@@ -649,7 +645,7 @@ UpdateCheckConfig::commitChanges()
 //------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL
-UpdateCheckConfig::hasPendingChanges(  ) throw (uno::RuntimeException)
+UpdateCheckConfig::hasPendingChanges(  )
 {
     uno::Reference< util::XChangesBatch > xChangesBatch(m_xContainer, uno::UNO_QUERY);
     if( xChangesBatch.is() )
@@ -661,7 +657,7 @@ UpdateCheckConfig::hasPendingChanges(  ) throw (uno::RuntimeException)
 //------------------------------------------------------------------------------
 
 uno::Sequence< util::ElementChange > SAL_CALL
-UpdateCheckConfig::getPendingChanges(  ) throw (uno::RuntimeException)
+UpdateCheckConfig::getPendingChanges(  )
 {
     uno::Reference< util::XChangesBatch > xChangesBatch(m_xContainer, uno::UNO_QUERY);
     if( xChangesBatch.is() )
@@ -775,7 +771,7 @@ bool UpdateCheckConfig::isVersionGreater( const rtl::OUString& rVersion1,
 //------------------------------------------------------------------------------
 
 rtl::OUString SAL_CALL
-UpdateCheckConfig::getImplementationName() throw (uno::RuntimeException)
+UpdateCheckConfig::getImplementationName()
 {
 	return getImplName();
 }
@@ -784,7 +780,6 @@ UpdateCheckConfig::getImplementationName() throw (uno::RuntimeException)
 
 sal_Bool SAL_CALL
 UpdateCheckConfig::supportsService(rtl::OUString const & serviceName)
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< rtl::OUString > aServiceNameList = getServiceNames();
 
@@ -798,7 +793,7 @@ UpdateCheckConfig::supportsService(rtl::OUString const & serviceName)
 //------------------------------------------------------------------------------
 
 uno::Sequence< rtl::OUString > SAL_CALL
-UpdateCheckConfig::getSupportedServiceNames() throw (uno::RuntimeException)
+UpdateCheckConfig::getSupportedServiceNames()
 {
 	return getServiceNames();
 }

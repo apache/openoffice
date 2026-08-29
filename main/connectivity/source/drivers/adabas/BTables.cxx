@@ -82,7 +82,7 @@ sdbcx::ObjectType OTables::createObject(const ::rtl::OUString& _rName)
 	return xRet;
 }
 // -------------------------------------------------------------------------
-void OTables::impl_refresh(  ) throw(RuntimeException)
+void OTables::impl_refresh(  )
 {
 	static_cast<OAdabasCatalog&>(m_rParent).refreshTables();
 }
@@ -105,7 +105,7 @@ sdbcx::ObjectType OTables::appendObject( const ::rtl::OUString& _rForName, const
     return createObject( _rForName );
 }
 // -------------------------------------------------------------------------
-void OTables::setComments(const Reference< XPropertySet >& descriptor ) throw(SQLException, RuntimeException)
+void OTables::setComments(const Reference< XPropertySet >& descriptor )
 {
 	::rtl::OUString aSql	= ::rtl::OUString::createFromAscii("CREATE TABLE ");
 	::rtl::OUString aQuote	= static_cast<OAdabasCatalog&>(m_rParent).getConnection()->getMetaData()->getIdentifierQuoteString(  );

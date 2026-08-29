@@ -465,7 +465,6 @@ uno::Sequence< OUString > SAL_CALL SmXMLImport_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLImport_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-    throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLImport(IMPORT_ALL);
@@ -489,7 +488,6 @@ throw()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLImportMeta_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLImport( IMPORT_META );
@@ -513,7 +511,6 @@ uno::Sequence< OUString > SAL_CALL SmXMLImportSettings_getSupportedServiceNames(
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLImportSettings_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-    throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLImport( IMPORT_SETTINGS );
@@ -525,7 +522,6 @@ uno::Reference< uno::XInterface > SAL_CALL SmXMLImportSettings_createInstance(
 // XServiceInfo
 // override empty method from parent class
 rtl::OUString SAL_CALL SmXMLImport::getImplementationName()
-    throw(uno::RuntimeException)
 {
     OUString aTxt;
     switch( getImportFlags() )
@@ -547,7 +543,6 @@ rtl::OUString SAL_CALL SmXMLImport::getImplementationName()
 
 sal_Int64 SAL_CALL SmXMLImport::getSomething(
     const uno::Sequence< sal_Int8 >&rId )
-throw(uno::RuntimeException)
 {
     if ( rId.getLength() == 16 &&
         0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -558,7 +553,6 @@ throw(uno::RuntimeException)
 }
 
 void SmXMLImport::endDocument(void)
-    throw(xml::sax::SAXException, uno::RuntimeException)
 {
     //Set the resulted tree into the SmDocShell where it belongs
     SmNode *pTree;

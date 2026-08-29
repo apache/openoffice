@@ -56,14 +56,12 @@ SwAccessibleGraphic::~SwAccessibleGraphic()
 }
 
 OUString SAL_CALL SwAccessibleGraphic::getImplementationName()
-        throw( RuntimeException )
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM(sImplementationName));
 }
 
 sal_Bool SAL_CALL SwAccessibleGraphic::supportsService(
 		const ::rtl::OUString& sTestServiceName)
-    throw (uno::RuntimeException)
 {
 	return sTestServiceName.equalsAsciiL( sServiceName,
 										  sizeof(sServiceName)-1 ) ||
@@ -72,7 +70,6 @@ sal_Bool SAL_CALL SwAccessibleGraphic::supportsService(
 }
 
 Sequence< OUString > SAL_CALL SwAccessibleGraphic::getSupportedServiceNames()
-        throw( uno::RuntimeException )
 {
 	Sequence< OUString > aRet(2);
 	OUString* pArray = aRet.getArray();
@@ -82,7 +79,6 @@ Sequence< OUString > SAL_CALL SwAccessibleGraphic::getSupportedServiceNames()
 }
 
 Sequence< sal_Int8 > SAL_CALL SwAccessibleGraphic::getImplementationId()
-		throw(RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static Sequence< sal_Int8 > aId( 16 );
@@ -96,7 +92,6 @@ Sequence< sal_Int8 > SAL_CALL SwAccessibleGraphic::getImplementationId()
 }
 //	Return this object's role.
 sal_Int16 SAL_CALL SwAccessibleGraphic::getAccessibleRole (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 		SwFmtURL aURL( ((SwLayoutFrm*)GetFrm())->GetFmt()->GetURL() );
 

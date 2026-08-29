@@ -597,14 +597,12 @@ SwAccessibleContext::~SwAccessibleContext()
 
 uno::Reference< XAccessibleContext > SAL_CALL
 	SwAccessibleContext::getAccessibleContext( void )
-        throw (uno::RuntimeException)
 {
 	uno::Reference < XAccessibleContext > xRet( this );
 	return xRet;
 }
 
 sal_Int32 SAL_CALL SwAccessibleContext::getAccessibleChildCount( void )
-        throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -618,7 +616,6 @@ sal_Int32 SAL_CALL SwAccessibleContext::getAccessibleChildCount( void )
 
 uno::Reference< XAccessible> SAL_CALL
 	SwAccessibleContext::getAccessibleChild( sal_Int32 nIndex )
-        throw (uno::RuntimeException, lang::IndexOutOfBoundsException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -684,7 +681,6 @@ uno::Reference< XAccessible> SAL_CALL
 }
 
 uno::Reference< XAccessible> SAL_CALL SwAccessibleContext::getAccessibleParent (void)
-        throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -709,7 +705,6 @@ uno::Reference< XAccessible> SAL_CALL SwAccessibleContext::getAccessibleParent (
 }
 
 sal_Int32 SAL_CALL SwAccessibleContext::getAccessibleIndexInParent (void)
-        throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -732,27 +727,23 @@ sal_Int32 SAL_CALL SwAccessibleContext::getAccessibleIndexInParent (void)
 }
 
 sal_Int16 SAL_CALL SwAccessibleContext::getAccessibleRole (void)
-        throw (uno::RuntimeException)
 {
 	return nRole;
 }
 
 OUString SAL_CALL SwAccessibleContext::getAccessibleDescription (void)
-        throw (uno::RuntimeException)
 {
 	ASSERT( sal_False, "description needs to be overloaded" );
 	THROW_RUNTIME_EXCEPTION( XAccessibleContext, "internal error (method must be overloaded)" );
 }
 
 OUString SAL_CALL SwAccessibleContext::getAccessibleName (void)
-        throw (uno::RuntimeException)
 {
 	return sName;
 }
 
 uno::Reference< XAccessibleRelationSet> SAL_CALL
 	SwAccessibleContext::getAccessibleRelationSet (void)
-        throw (uno::RuntimeException)
 {
 	// by default there are no relations
 	uno::Reference< XAccessibleRelationSet> xRet( new utl::AccessibleRelationSetHelper() );
@@ -761,7 +752,6 @@ uno::Reference< XAccessibleRelationSet> SAL_CALL
 
 uno::Reference<XAccessibleStateSet> SAL_CALL
 	SwAccessibleContext::getAccessibleStateSet (void)
-        throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -780,7 +770,6 @@ uno::Reference<XAccessibleStateSet> SAL_CALL
 }
 
 lang::Locale SAL_CALL SwAccessibleContext::getLocale (void)
-		throw (IllegalAccessibleComponentStateException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -790,7 +779,6 @@ lang::Locale SAL_CALL SwAccessibleContext::getLocale (void)
 
 void SAL_CALL SwAccessibleContext::addEventListener(
 			const uno::Reference< XAccessibleEventListener >& xListener )
-		throw (uno::RuntimeException)
 {
 	DBG_MSG( "accessible event listener added" )
 
@@ -805,7 +793,6 @@ void SAL_CALL SwAccessibleContext::addEventListener(
 
 void SAL_CALL SwAccessibleContext::removeEventListener(
 			const uno::Reference< XAccessibleEventListener >& xListener )
-		throw (uno::RuntimeException)
 {
 	DBG_MSG( "accessible event listener removed" )
 
@@ -839,7 +826,6 @@ static sal_Bool lcl_PointInRectangle(const awt::Point & aPoint,
 
 sal_Bool SAL_CALL SwAccessibleContext::containsPoint(
 			const awt::Point& aPoint )
-		throw (uno::RuntimeException)
 {
     awt::Rectangle aPixBounds = getBoundsImpl(sal_True);
     aPixBounds.X = 0;
@@ -850,7 +836,6 @@ sal_Bool SAL_CALL SwAccessibleContext::containsPoint(
 
 uno::Reference< XAccessible > SAL_CALL SwAccessibleContext::getAccessibleAtPoint(
 				const awt::Point& aPoint )
-		throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -907,7 +892,6 @@ uno::Reference< XAccessible > SAL_CALL SwAccessibleContext::getAccessibleAtPoint
    false: Use absolute mode.
 */
 awt::Rectangle SAL_CALL SwAccessibleContext::getBoundsImpl(sal_Bool bRelative)
-		throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -952,13 +936,11 @@ awt::Rectangle SAL_CALL SwAccessibleContext::getBoundsImpl(sal_Bool bRelative)
 
 
 awt::Rectangle SAL_CALL SwAccessibleContext::getBounds()
-		throw (uno::RuntimeException)
 {
     return getBoundsImpl(sal_True);
 }
 
 awt::Point SAL_CALL SwAccessibleContext::getLocation()
-    throw (uno::RuntimeException)
 {
     awt::Rectangle aRect = getBoundsImpl(sal_True);
     awt::Point aPoint(aRect.X, aRect.Y);
@@ -969,7 +951,6 @@ awt::Point SAL_CALL SwAccessibleContext::getLocation()
 
 
 awt::Point SAL_CALL SwAccessibleContext::getLocationOnScreen()
-		throw (uno::RuntimeException)
 {
     awt::Rectangle aRect = getBoundsImpl(sal_False);
 
@@ -984,7 +965,6 @@ awt::Point SAL_CALL SwAccessibleContext::getLocationOnScreen()
 
 
 awt::Size SAL_CALL SwAccessibleContext::getSize()
-		throw (uno::RuntimeException)
 {
     awt::Rectangle aRect = getBoundsImpl(sal_False);
 	awt::Size aSize( aRect.Width, aRect.Height );
@@ -993,7 +973,6 @@ awt::Size SAL_CALL SwAccessibleContext::getSize()
 }
 
 void SAL_CALL SwAccessibleContext::grabFocus()
-		throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -1035,27 +1014,23 @@ void SAL_CALL SwAccessibleContext::grabFocus()
 
 
 uno::Any SAL_CALL SwAccessibleContext::getAccessibleKeyBinding()
-		throw (uno::RuntimeException)
 {
 	// There are no key bindings
 	return uno::Any();
 }
 
 sal_Int32 SAL_CALL SwAccessibleContext::getForeground()
-		throw (uno::RuntimeException)
 {
 	return COL_BLACK;
 }
 
 sal_Int32 SAL_CALL SwAccessibleContext::getBackground()
-		throw (uno::RuntimeException)
 {
 	return COL_WHITE;
 }
 
 
 OUString SAL_CALL SwAccessibleContext::getImplementationName()
-        throw( uno::RuntimeException )
 {
 	ASSERT( sal_False, "implementation name needs to be overloaded" );
 
@@ -1064,14 +1039,12 @@ OUString SAL_CALL SwAccessibleContext::getImplementationName()
 
 sal_Bool SAL_CALL
     SwAccessibleContext::supportsService (const ::rtl::OUString& )
-        throw (uno::RuntimeException)
 {
 	ASSERT( sal_False, "supports service needs to be overloaded" );
 	THROW_RUNTIME_EXCEPTION( lang::XServiceInfo, "supports service needs to be overloaded" )
 }
 
 uno::Sequence< OUString > SAL_CALL SwAccessibleContext::getSupportedServiceNames()
-		throw( uno::RuntimeException )
 {
 	ASSERT( sal_False, "supported services names needs to be overloaded" );
 	THROW_RUNTIME_EXCEPTION( lang::XServiceInfo, "supported services needs to be overloaded" )

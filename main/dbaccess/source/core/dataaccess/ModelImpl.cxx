@@ -157,23 +157,23 @@ public:
     void dispose();
 
     // XDocumentSubStorageSupplier
-    virtual Reference< XStorage > SAL_CALL getDocumentSubStorage( const ::rtl::OUString& aStorageName, ::sal_Int32 _nMode ) throw (RuntimeException);
-    virtual Sequence< ::rtl::OUString > SAL_CALL getDocumentSubStoragesNames(  ) throw (IOException, RuntimeException);
+    virtual Reference< XStorage > SAL_CALL getDocumentSubStorage( const ::rtl::OUString& aStorageName, ::sal_Int32 _nMode );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getDocumentSubStoragesNames(  );
 
     // XTransactionListener
-    virtual void SAL_CALL preCommit( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL commited( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL preRevert( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL reverted( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL preCommit( const ::com::sun::star::lang::EventObject& aEvent );
+    virtual void SAL_CALL commited( const ::com::sun::star::lang::EventObject& aEvent );
+    virtual void SAL_CALL preRevert( const ::com::sun::star::lang::EventObject& aEvent );
+    virtual void SAL_CALL reverted( const ::com::sun::star::lang::EventObject& aEvent );
 
     // XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     /// disposes all storages managed by this instance
     void disposeStorages();
 
     /// disposes all known sub storages
-    void commitStorages() SAL_THROW(( IOException, RuntimeException ));
+    void commitStorages();
 
     /// commits the dedicated "database" storage
     bool commitEmbeddedStorage( bool _bPreventRootCommits );
@@ -283,7 +283,7 @@ void DocumentStorageAccess::disposeStorages()
 }
 
 //--------------------------------------------------------------------------
-void DocumentStorageAccess::commitStorages() SAL_THROW(( IOException, RuntimeException ))
+void DocumentStorageAccess::commitStorages()
 {
     try
     {
@@ -328,7 +328,7 @@ bool DocumentStorageAccess::commitEmbeddedStorage( bool _bPreventRootCommits )
 }
 
 //--------------------------------------------------------------------------
-Reference< XStorage > SAL_CALL DocumentStorageAccess::getDocumentSubStorage( const ::rtl::OUString& aStorageName, ::sal_Int32 _nDesiredMode ) throw (RuntimeException)
+Reference< XStorage > SAL_CALL DocumentStorageAccess::getDocumentSubStorage( const ::rtl::OUString& aStorageName, ::sal_Int32 _nDesiredMode )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     NamedStorages::iterator pos = m_aExposedStorages.find( aStorageName );
@@ -342,7 +342,7 @@ Reference< XStorage > SAL_CALL DocumentStorageAccess::getDocumentSubStorage( con
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL DocumentStorageAccess::getDocumentSubStoragesNames(  ) throw (IOException, RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL DocumentStorageAccess::getDocumentSubStoragesNames(  )
 {
     Reference< XStorage > xRootStor( m_pModelImplementation->getRootStorage() );
     if ( !xRootStor.is() )
@@ -363,13 +363,13 @@ Sequence< ::rtl::OUString > SAL_CALL DocumentStorageAccess::getDocumentSubStorag
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL DocumentStorageAccess::preCommit( const css::lang::EventObject& /*aEvent*/ ) throw (Exception, RuntimeException)
+void SAL_CALL DocumentStorageAccess::preCommit( const css::lang::EventObject& /*aEvent*/ )
 {
 	// not interested in
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL DocumentStorageAccess::commited( const css::lang::EventObject& aEvent ) throw (RuntimeException)
+void SAL_CALL DocumentStorageAccess::commited( const css::lang::EventObject& aEvent )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -393,19 +393,19 @@ void SAL_CALL DocumentStorageAccess::commited( const css::lang::EventObject& aEv
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL DocumentStorageAccess::preRevert( const css::lang::EventObject& /*aEvent*/ ) throw (Exception, RuntimeException)
+void SAL_CALL DocumentStorageAccess::preRevert( const css::lang::EventObject& /*aEvent*/ )
 {
 	// not interested in
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL DocumentStorageAccess::reverted( const css::lang::EventObject& /*aEvent*/ ) throw (RuntimeException)
+void SAL_CALL DocumentStorageAccess::reverted( const css::lang::EventObject& /*aEvent*/ )
 {
 	// not interested in
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL DocumentStorageAccess::disposing( const css::lang::EventObject& Source ) throw ( RuntimeException )
+void SAL_CALL DocumentStorageAccess::disposing( const css::lang::EventObject& Source )
 {
     OSL_ENSURE( Reference< XStorage >( Source.Source, UNO_QUERY ).is(), "DocumentStorageAccess::disposing: No storage? What's this?" );
 
@@ -681,7 +681,7 @@ void ODatabaseModelImpl::reset()
     }
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseModelImpl::disposing( const ::com::sun::star::lang::EventObject& Source ) throw(RuntimeException)
+void SAL_CALL ODatabaseModelImpl::disposing( const ::com::sun::star::lang::EventObject& Source )
 {
 	Reference<XConnection> xCon(Source.Source,UNO_QUERY);
 	if ( xCon.is() )
@@ -1078,7 +1078,7 @@ oslInterlockedCount SAL_CALL ODatabaseModelImpl::release()
 	return m_refCount;
 }
 // -----------------------------------------------------------------------------
-void ODatabaseModelImpl::commitStorages() SAL_THROW(( IOException, RuntimeException ))
+void ODatabaseModelImpl::commitStorages()
 {
     getDocumentStorageAccess()->commitStorages();
 }

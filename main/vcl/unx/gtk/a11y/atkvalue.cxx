@@ -34,7 +34,7 @@
 using namespace ::com::sun::star;
 
 static accessibility::XAccessibleValue*
-    getValue( AtkValue *pValue ) throw (uno::RuntimeException)
+    getValue( AtkValue *pValue )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pValue );
     if( pWrap )

@@ -68,14 +68,14 @@ namespace pcr
         }
 
         // XTabControllerModel
-        virtual void SAL_CALL setControlModels(const Sequence< Reference< XControlModel > >& rModels) throw( RuntimeException ) {m_aModels = rModels;}
-        virtual Sequence< Reference< XControlModel > > SAL_CALL getControlModels(void) throw( RuntimeException ) {return m_aModels;}
-        virtual void SAL_CALL setGroup(const Sequence< Reference< XControlModel > >& /*Group*/, const ::rtl::OUString& /*GroupName*/) throw( RuntimeException ) {}
-        virtual sal_Int32 SAL_CALL getGroupCount(void) throw( RuntimeException ) {return 0;}
-        virtual void SAL_CALL getGroup(sal_Int32 /*nGroup*/, Sequence< Reference< XControlModel > >& /*Group*/, ::rtl::OUString& /*Name*/) throw( RuntimeException ) {}
-        virtual void SAL_CALL getGroupByName(const ::rtl::OUString& /*Name*/, Sequence< Reference< XControlModel > >& /*Group*/) throw( RuntimeException ) {}
-        virtual sal_Bool SAL_CALL getGroupControl(void) throw( RuntimeException ){return sal_False;} ;
-        virtual void SAL_CALL setGroupControl(sal_Bool /*GroupControl*/) throw( RuntimeException ){};
+        virtual void SAL_CALL setControlModels(const Sequence< Reference< XControlModel > >& rModels) {m_aModels = rModels;}
+        virtual Sequence< Reference< XControlModel > > SAL_CALL getControlModels(void) {return m_aModels;}
+        virtual void SAL_CALL setGroup(const Sequence< Reference< XControlModel > >& /*Group*/, const ::rtl::OUString& /*GroupName*/) {}
+        virtual sal_Int32 SAL_CALL getGroupCount(void) {return 0;}
+        virtual void SAL_CALL getGroup(sal_Int32 /*nGroup*/, Sequence< Reference< XControlModel > >& /*Group*/, ::rtl::OUString& /*Name*/) {}
+        virtual void SAL_CALL getGroupByName(const ::rtl::OUString& /*Name*/, Sequence< Reference< XControlModel > >& /*Group*/) {}
+        virtual sal_Bool SAL_CALL getGroupControl(void){return sal_False;} ;
+        virtual void SAL_CALL setGroupControl(sal_Bool /*GroupControl*/){};
     };
 
     //========================================================================

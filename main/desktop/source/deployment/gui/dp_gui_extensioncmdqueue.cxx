@@ -129,7 +129,7 @@ class ProgressCmdEnv
 
     void updateProgress();
 
-    void update_( uno::Any const & Status ) throw ( uno::RuntimeException );
+    void update_( uno::Any const & Status );
 
 public:
     virtual ~ProgressCmdEnv();
@@ -162,21 +162,16 @@ public:
     inline void setWarnUser( bool bNewVal ) { m_bWarnUser = bNewVal; }
 
     // XCommandEnvironment
-    virtual uno::Reference< task::XInteractionHandler > SAL_CALL getInteractionHandler()
-        throw ( uno::RuntimeException );
-    virtual uno::Reference< ucb::XProgressHandler > SAL_CALL getProgressHandler()
-        throw ( uno::RuntimeException );
+    virtual uno::Reference< task::XInteractionHandler > SAL_CALL getInteractionHandler();
+    virtual uno::Reference< ucb::XProgressHandler > SAL_CALL getProgressHandler();
 
     // XInteractionHandler
-    virtual void SAL_CALL handle( uno::Reference< task::XInteractionRequest > const & xRequest )
-        throw ( uno::RuntimeException );
+    virtual void SAL_CALL handle( uno::Reference< task::XInteractionRequest > const & xRequest );
 
     // XProgressHandler
-    virtual void SAL_CALL push( uno::Any const & Status )
-        throw ( uno::RuntimeException );
-    virtual void SAL_CALL update( uno::Any const & Status )
-        throw ( uno::RuntimeException );
-    virtual void SAL_CALL pop() throw ( uno::RuntimeException );
+    virtual void SAL_CALL push( uno::Any const & Status );
+    virtual void SAL_CALL update( uno::Any const & Status );
+    virtual void SAL_CALL pop();
 };
 
 //------------------------------------------------------------------------------
@@ -335,14 +330,12 @@ ProgressCmdEnv::~ProgressCmdEnv()
 // XCommandEnvironment
 //------------------------------------------------------------------------------
 uno::Reference< task::XInteractionHandler > ProgressCmdEnv::getInteractionHandler()
-    throw ( uno::RuntimeException )
 {
     return this;
 }
 
 //------------------------------------------------------------------------------
 uno::Reference< ucb::XProgressHandler > ProgressCmdEnv::getProgressHandler()
-    throw ( uno::RuntimeException )
 {
     return this;
 }
@@ -387,7 +380,6 @@ void solar_errorBox( DialogHelper * pDialogHelper, OUString const & rMsg, bool b
 //------------------------------------------------------------------------------
 
 void ProgressCmdEnv::handle( uno::Reference< task::XInteractionRequest > const & xRequest )
-    throw ( uno::RuntimeException )
 {
     uno::Any request( xRequest->getRequest() );
     OSL_ASSERT( request.getValueTypeClass() == uno::TypeClass_EXCEPTION );
@@ -555,14 +547,12 @@ void ProgressCmdEnv::handle( uno::Reference< task::XInteractionRequest > const &
 // XProgressHandler
 //------------------------------------------------------------------------------
 void ProgressCmdEnv::push( uno::Any const & rStatus )
-    throw( uno::RuntimeException )
 {
     update_( rStatus );
 }
 
 //------------------------------------------------------------------------------
 void ProgressCmdEnv::update_( uno::Any const & rStatus )
-    throw( uno::RuntimeException )
 {
     OUString text;
     if ( rStatus.hasValue() && !( rStatus >>= text) )
@@ -581,14 +571,12 @@ void ProgressCmdEnv::update_( uno::Any const & rStatus )
 
 //------------------------------------------------------------------------------
 void ProgressCmdEnv::update( uno::Any const & rStatus )
-    throw( uno::RuntimeException )
 {
     update_( rStatus );
 }
 
 //------------------------------------------------------------------------------
 void ProgressCmdEnv::pop()
-    throw( uno::RuntimeException )
 {
     update_( uno::Any() ); // no message
 }

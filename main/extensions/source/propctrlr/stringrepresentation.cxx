@@ -84,16 +84,16 @@ public:
     explicit StringRepresentation(uno::Reference< uno::XComponentContext > const & context);
 
     // lang::XServiceInfo:
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString & ServiceName) throw (uno::RuntimeException);
-    virtual uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString & ServiceName);
+    virtual uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     // inspection::XStringRepresentation:
-    virtual ::rtl::OUString SAL_CALL convertToControlValue(const uno::Any & PropertyValue) throw (uno::RuntimeException, uno::Exception);
-    virtual uno::Any SAL_CALL convertToPropertyValue(const ::rtl::OUString & ControlValue, const uno::Type & ControlValueType) throw (uno::RuntimeException, uno::Exception);
+    virtual ::rtl::OUString SAL_CALL convertToControlValue(const uno::Any & PropertyValue);
+    virtual uno::Any SAL_CALL convertToPropertyValue(const ::rtl::OUString & ControlValue, const uno::Type & ControlValueType);
 
     // lang::XInitialization:
-    virtual void SAL_CALL initialize(const uno::Sequence< uno::Any > & aArguments) throw (uno::RuntimeException, uno::Exception);
+    virtual void SAL_CALL initialize(const uno::Sequence< uno::Any > & aArguments);
 
 private:
     StringRepresentation(StringRepresentation &); // not defined
@@ -155,23 +155,23 @@ StringRepresentation::StringRepresentation(uno::Reference< uno::XComponentContex
 {}
 
 // com.sun.star.uno.XServiceInfo:
-::rtl::OUString  SAL_CALL StringRepresentation::getImplementationName() throw (uno::RuntimeException)
+::rtl::OUString  SAL_CALL StringRepresentation::getImplementationName()
 {
     return comp_StringRepresentation::_getImplementationName();
 }
 
-::sal_Bool SAL_CALL StringRepresentation::supportsService(::rtl::OUString const & serviceName) throw (uno::RuntimeException)
+::sal_Bool SAL_CALL StringRepresentation::supportsService(::rtl::OUString const & serviceName)
 {
     return ::comphelper::existsValue(serviceName,comp_StringRepresentation::_getSupportedServiceNames());
 }
 
-uno::Sequence< ::rtl::OUString >  SAL_CALL StringRepresentation::getSupportedServiceNames() throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString >  SAL_CALL StringRepresentation::getSupportedServiceNames()
 {
     return comp_StringRepresentation::_getSupportedServiceNames();
 }
 
 // inspection::XStringRepresentation:
-::rtl::OUString SAL_CALL StringRepresentation::convertToControlValue(const uno::Any & PropertyValue) throw (uno::RuntimeException, uno::Exception)
+::rtl::OUString SAL_CALL StringRepresentation::convertToControlValue(const uno::Any & PropertyValue)
 {
     ::rtl::OUString sReturn;
     if ( !convertGenericValueToString( PropertyValue, sReturn ) )
@@ -191,7 +191,7 @@ uno::Sequence< ::rtl::OUString >  SAL_CALL StringRepresentation::getSupportedSer
     return sReturn;
 }
 
-uno::Any SAL_CALL StringRepresentation::convertToPropertyValue(const ::rtl::OUString & ControlValue, const uno::Type & ControlValueType) throw (uno::RuntimeException, uno::Exception)
+uno::Any SAL_CALL StringRepresentation::convertToPropertyValue(const ::rtl::OUString & ControlValue, const uno::Type & ControlValueType)
 {
     uno::Any aReturn;
 
@@ -237,7 +237,7 @@ uno::Any SAL_CALL StringRepresentation::convertToPropertyValue(const ::rtl::OUSt
 }
 
 // lang::XInitialization:
-void SAL_CALL StringRepresentation::initialize(const uno::Sequence< uno::Any > & aArguments) throw (uno::RuntimeException, uno::Exception)
+void SAL_CALL StringRepresentation::initialize(const uno::Sequence< uno::Any > & aArguments)
 {
     sal_Int32 nLength = aArguments.getLength();
     if ( nLength )
@@ -627,7 +627,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL _getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL _create(
     const uno::Reference< uno::XComponentContext > & context)
-        SAL_THROW((uno::Exception))
 {
     return static_cast< ::cppu::OWeakObject * >(new pcr::StringRepresentation(context));
 }

@@ -52,7 +52,7 @@ SwXRedlines::~SwXRedlines()
 {
 }
 
-sal_Int32 SwXRedlines::getCount(  ) throw(uno::RuntimeException)
+sal_Int32 SwXRedlines::getCount(  )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	if(!IsValid())
@@ -62,7 +62,6 @@ sal_Int32 SwXRedlines::getCount(  ) throw(uno::RuntimeException)
 }
 
 uno::Any SwXRedlines::getByIndex(sal_Int32 nIndex)
-	throw( lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	if(!IsValid())
@@ -80,7 +79,6 @@ uno::Any SwXRedlines::getByIndex(sal_Int32 nIndex)
 }
 
 uno::Reference< container::XEnumeration >  SwXRedlines::createEnumeration(void)
-	throw( uno::RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	if(!IsValid())
@@ -88,12 +86,12 @@ uno::Reference< container::XEnumeration >  SwXRedlines::createEnumeration(void)
 	return uno::Reference< container::XEnumeration >(new SwXRedlineEnumeration(*GetDoc()));
 }
 
-uno::Type SwXRedlines::getElementType(  ) throw(uno::RuntimeException)
+uno::Type SwXRedlines::getElementType(  )
 {
 	return ::getCppuType((uno::Reference<beans::XPropertySet>*)0);
 }
 
-sal_Bool SwXRedlines::hasElements(  ) throw(uno::RuntimeException)
+sal_Bool SwXRedlines::hasElements(  )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	if(!IsValid())
@@ -102,20 +100,18 @@ sal_Bool SwXRedlines::hasElements(  ) throw(uno::RuntimeException)
 	return rRedTbl.Count() > 0;
 }
 
-OUString SwXRedlines::getImplementationName(void) throw( uno::RuntimeException )
+OUString SwXRedlines::getImplementationName(void)
 {
 	return C2U("SwXRedlines");
 }
 
 sal_Bool SwXRedlines::supportsService(const rtl::OUString& /*ServiceName*/)
-	throw( uno::RuntimeException )
 {
 	DBG_ERROR("not implemented");
 	return sal_False;
 }
 
 uno::Sequence< OUString > SwXRedlines::getSupportedServiceNames(void)
-	throw( uno::RuntimeException )
 {
 	DBG_ERROR("not implemented");
 	return uno::Sequence< OUString >();
@@ -148,7 +144,7 @@ SwXRedlineEnumeration::~SwXRedlineEnumeration()
 {
 }
 
-sal_Bool SwXRedlineEnumeration::hasMoreElements(void) throw( uno::RuntimeException )
+sal_Bool SwXRedlineEnumeration::hasMoreElements(void)
 {
 	if(!pDoc)
 		throw uno::RuntimeException();
@@ -156,7 +152,6 @@ sal_Bool SwXRedlineEnumeration::hasMoreElements(void) throw( uno::RuntimeExcepti
 }
 
 uno::Any SwXRedlineEnumeration::nextElement(void)
-	throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException )
 {
 	if(!pDoc)
 		throw uno::RuntimeException();
@@ -169,17 +164,17 @@ uno::Any SwXRedlineEnumeration::nextElement(void)
 	return aRet;
 }
 
-rtl::OUString SwXRedlineEnumeration::getImplementationName(void) throw( uno::RuntimeException )
+rtl::OUString SwXRedlineEnumeration::getImplementationName(void)
 {
 	return C2U("SwXRedlineEnumeration");
 }
 
-sal_Bool SwXRedlineEnumeration::supportsService(const rtl::OUString& /*ServiceName*/) throw( uno::RuntimeException )
+sal_Bool SwXRedlineEnumeration::supportsService(const rtl::OUString& /*ServiceName*/)
 {
 	return sal_False;
 }
 
-uno::Sequence< OUString > SwXRedlineEnumeration::getSupportedServiceNames(void) throw( uno::RuntimeException )
+uno::Sequence< OUString > SwXRedlineEnumeration::getSupportedServiceNames(void)
 {
 	return uno::Sequence< OUString >();
 }

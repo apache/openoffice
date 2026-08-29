@@ -72,13 +72,13 @@ public:
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames() = 0;
 
 	// XHelperInterface Methods
-	virtual ::sal_Int32 SAL_CALL getCreator() throw (css::script::BasicErrorException, css::uno::RuntimeException)
+	virtual ::sal_Int32 SAL_CALL getCreator()
 	{
 		return 0x53756E4F;
 	}
-	virtual css::uno::Reference< ov::XHelperInterface > SAL_CALL getParent(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException) { return mxParent; }
+	virtual css::uno::Reference< ov::XHelperInterface > SAL_CALL getParent(  ) { return mxParent; }
 
-	virtual css::uno::Any SAL_CALL Application(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException) {
+	virtual css::uno::Any SAL_CALL Application(  ) {
             // The application could certainly be passed around in the context - seems
             // to make sense
             css::uno::Reference< css::container::XNameAccess > xNameAccess( mxContext, css::uno::UNO_QUERY_THROW );
@@ -86,8 +86,8 @@ public:
 	}
 
 	// XServiceInfo Methods
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (css::uno::RuntimeException) { return getServiceImplName(); }
-	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (css::uno::RuntimeException)
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) { return getServiceImplName(); }
+	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
 	{
 		css::uno::Sequence< rtl::OUString > sServices = getSupportedServiceNames();
 		const rtl::OUString* pStart = sServices.getConstArray();
@@ -97,7 +97,7 @@ public:
 				return sal_True;
 		return sal_False;
 	}
-	virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (css::uno::RuntimeException)
+	virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
 	{
 		css::uno::Sequence< rtl::OUString > aNames = getServiceNames();
 		return aNames;

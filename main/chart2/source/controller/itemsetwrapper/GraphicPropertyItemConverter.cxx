@@ -260,7 +260,6 @@ bool GraphicPropertyItemConverter::GetItemProperty( tWhichIdType nWhichId, tProp
 
 void GraphicPropertyItemConverter::FillSpecialItem(
     sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const
-    throw( uno::Exception )
 {
 //     if( m_eGraphicObjectType == LINE_DATA_POINT ||
 //         m_eGraphicObjectType == LINE_PROPERTIES )
@@ -467,7 +466,6 @@ void GraphicPropertyItemConverter::FillSpecialItem(
 
 bool GraphicPropertyItemConverter::ApplySpecialItem(
     sal_uInt16 nWhichId, const SfxItemSet & rItemSet )
-    throw( uno::Exception )
 {
     bool bChanged = false;
     uno::Any aValue;

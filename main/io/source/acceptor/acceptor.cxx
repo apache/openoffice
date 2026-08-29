@@ -60,12 +60,8 @@ namespace io_acceptor
 		virtual ~OAcceptor();
 	public:
 		// Methods
-		virtual Reference< XConnection > SAL_CALL accept( const OUString& sConnectionDescription )
-			throw( AlreadyAcceptingException,
-				   ConnectionSetupException,
-				   IllegalArgumentException,
-				   RuntimeException);
-		virtual void SAL_CALL stopAccepting(  ) throw( RuntimeException);
+		virtual Reference< XConnection > SAL_CALL accept( const OUString& sConnectionDescription );
+		virtual void SAL_CALL stopAccepting(  );
 
 	public: // XServiceInfo
                 virtual OUString              SAL_CALL getImplementationName() throw();
@@ -110,7 +106,7 @@ namespace io_acceptor
 
 	struct BeingInAccept
 	{
-		BeingInAccept( sal_Bool *pFlag,const OUString & sConnectionDescription  ) throw( AlreadyAcceptingException)
+		BeingInAccept( sal_Bool *pFlag,const OUString & sConnectionDescription  )
 			: m_pFlag( pFlag )
 			{
   				if( *m_pFlag )
@@ -129,10 +125,6 @@ namespace io_acceptor
 	};
 
 	Reference< XConnection > OAcceptor::accept( const OUString &sConnectionDescription )
-		throw( AlreadyAcceptingException,
-			   ConnectionSetupException,
-			   IllegalArgumentException,
-			   RuntimeException)
 	{
 		OSL_TRACE(
             "acceptor %s\n",
@@ -265,7 +257,7 @@ namespace io_acceptor
 		return r;
 	}
 
-	void SAL_CALL OAcceptor::stopAccepting(  ) throw( RuntimeException)
+	void SAL_CALL OAcceptor::stopAccepting(  )
 	{
 		MutexGuard guard( m_mutex );
 

@@ -36,18 +36,14 @@ public:
 	BreakIterator_CJK();
 
 	Boundary SAL_CALL nextWord( const rtl::OUString& Text, sal_Int32 nStartPos,
-		    const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType)
-		    throw(com::sun::star::uno::RuntimeException);
+		    const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType);
 	Boundary SAL_CALL previousWord( const rtl::OUString& Text, sal_Int32 nStartPos,
-		    const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType)
-		    throw(com::sun::star::uno::RuntimeException);
+		    const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType);
 	Boundary SAL_CALL getWordBoundary( const rtl::OUString& Text, sal_Int32 nPos,
-		    const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType, sal_Bool bDirection )
-		    throw(com::sun::star::uno::RuntimeException);
+		    const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType, sal_Bool bDirection );
 	LineBreakResults SAL_CALL getLineBreak( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int32 nMinBreakPos,
-		const LineBreakHyphenationOptions& hOptions, const LineBreakUserOptions& bOptions )
-		throw(com::sun::star::uno::RuntimeException);
+		const LineBreakHyphenationOptions& hOptions, const LineBreakUserOptions& bOptions );
 
 protected:
 	xdictionary *dict;

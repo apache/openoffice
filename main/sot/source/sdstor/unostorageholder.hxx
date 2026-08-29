@@ -51,22 +51,15 @@ public:
 
 	::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage > GetDuplicateStorage() { return m_xStorage; }
 
-    virtual void SAL_CALL preCommit( const ::com::sun::star::lang::EventObject& aEvent )
-		throw ( ::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL preCommit( const ::com::sun::star::lang::EventObject& aEvent );
 
-    virtual void SAL_CALL commited( const ::com::sun::star::lang::EventObject& aEvent )
-		throw ( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL commited( const ::com::sun::star::lang::EventObject& aEvent );
 
-    virtual void SAL_CALL preRevert( const ::com::sun::star::lang::EventObject& aEvent )
-		throw ( ::com::sun::star::uno::Exception,
-				::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL preRevert( const ::com::sun::star::lang::EventObject& aEvent );
 
-    virtual void SAL_CALL reverted( const ::com::sun::star::lang::EventObject& aEvent )
-		throw ( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL reverted( const ::com::sun::star::lang::EventObject& aEvent );
 
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-		throw ( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 };
 
 #endif

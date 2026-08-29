@@ -220,7 +220,6 @@ void WeakComponentImplHelperBase::disposing()
 }
 //__________________________________________________________________________________________________
 Any WeakComponentImplHelperBase::queryInterface( Type const & rType )
-    throw (RuntimeException)
 {
     if (rType == ::getCppuType( (Reference< lang::XComponent > const *)0 ))
     {
@@ -261,7 +260,6 @@ void WeakComponentImplHelperBase::release()
 }
 //__________________________________________________________________________________________________
 void WeakComponentImplHelperBase::dispose()
-    throw (RuntimeException)
 {
     ClearableMutexGuard aGuard( rBHelper.rMutex );
     if (!rBHelper.bDisposed && !rBHelper.bInDispose)
@@ -306,7 +304,6 @@ void WeakComponentImplHelperBase::dispose()
 //__________________________________________________________________________________________________
 void WeakComponentImplHelperBase::addEventListener(
     Reference< lang::XEventListener > const & xListener )
-    throw (RuntimeException)
 {
     ClearableMutexGuard aGuard( rBHelper.rMutex );
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
@@ -323,7 +320,6 @@ void WeakComponentImplHelperBase::addEventListener(
 //__________________________________________________________________________________________________
 void WeakComponentImplHelperBase::removeEventListener(
     Reference< lang::XEventListener > const & xListener )
-    throw (RuntimeException)
 {
     rBHelper.removeListener( ::getCppuType( &xListener ), xListener );
 }
@@ -346,13 +342,11 @@ void WeakAggComponentImplHelperBase::disposing()
 }
 //__________________________________________________________________________________________________
 Any WeakAggComponentImplHelperBase::queryInterface( Type const & rType )
-    throw (RuntimeException)
 {
     return OWeakAggObject::queryInterface( rType );
 }
 //__________________________________________________________________________________________________
 Any WeakAggComponentImplHelperBase::queryAggregation( Type const & rType )
-    throw (RuntimeException)
 {
     if (rType == ::getCppuType( (Reference< lang::XComponent > const *)0 ))
     {
@@ -397,7 +391,6 @@ void WeakAggComponentImplHelperBase::release()
 }
 //__________________________________________________________________________________________________
 void WeakAggComponentImplHelperBase::dispose()
-    throw (RuntimeException)
 {
     ClearableMutexGuard aGuard( rBHelper.rMutex );
     if (!rBHelper.bDisposed && !rBHelper.bInDispose)
@@ -442,7 +435,6 @@ void WeakAggComponentImplHelperBase::dispose()
 //__________________________________________________________________________________________________
 void WeakAggComponentImplHelperBase::addEventListener(
     Reference< lang::XEventListener > const & xListener )
-    throw (RuntimeException)
 {
     ClearableMutexGuard aGuard( rBHelper.rMutex );
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
@@ -459,7 +451,6 @@ void WeakAggComponentImplHelperBase::addEventListener(
 //__________________________________________________________________________________________________
 void WeakAggComponentImplHelperBase::removeEventListener(
     Reference< lang::XEventListener > const & xListener )
-    throw (RuntimeException)
 {
     rBHelper.removeListener( ::getCppuType( &xListener ), xListener );
 }

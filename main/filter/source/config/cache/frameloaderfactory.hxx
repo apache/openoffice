@@ -80,17 +80,12 @@ class FrameLoaderFactory : public ::cppu::ImplInheritanceHelper1< BaseContainer 
         //---------------------------------------
         // XMultiServiceFactory
 
-        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance(const ::rtl::OUString& sLoader)
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance(const ::rtl::OUString& sLoader);
 
         virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstanceWithArguments(const ::rtl::OUString&                     sLoader   ,
-                                                                                                 const css::uno::Sequence< css::uno::Any >& lArguments)
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+                                                                                                 const css::uno::Sequence< css::uno::Any >& lArguments);
 
-        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getAvailableServiceNames()
-            throw(css::uno::RuntimeException);
+        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getAvailableServiceNames();
 
     //-------------------------------------------
     // static uno helper!

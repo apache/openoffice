@@ -61,50 +61,29 @@ public:
     // XPropertySet
 
     virtual css::uno::Reference<css::beans::XPropertySetInfo>
-        SAL_CALL getPropertySetInfo (void)
-        throw(css::uno::RuntimeException);
+        SAL_CALL getPropertySetInfo (void);
 
     virtual void SAL_CALL setPropertyValue (
         const rtl::OUString& rsPropertyName,
-        const css::uno::Any& rsPropertyValue)
-        throw(css::beans::UnknownPropertyException,
-            css::beans::PropertyVetoException,
-            css::lang::IllegalArgumentException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+        const css::uno::Any& rsPropertyValue);
 
-    virtual css::uno::Any SAL_CALL getPropertyValue (const rtl::OUString& rsPropertyName)
-        throw(css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getPropertyValue (const rtl::OUString& rsPropertyName);
 
     virtual void SAL_CALL addPropertyChangeListener (
         const rtl::OUString& rsPropertyName,
-        const css::uno::Reference<css::beans::XPropertyChangeListener>& rxListener)
-        throw(css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+        const css::uno::Reference<css::beans::XPropertyChangeListener>& rxListener);
 
     virtual void SAL_CALL removePropertyChangeListener (
         const rtl::OUString& rsPropertyName,
-        const css::uno::Reference<css::beans::XPropertyChangeListener>& rxListener)
-        throw(css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+        const css::uno::Reference<css::beans::XPropertyChangeListener>& rxListener);
 
     virtual void SAL_CALL addVetoableChangeListener (
         const rtl::OUString& rsPropertyName,
-        const css::uno::Reference<css::beans::XVetoableChangeListener>& rxListener)
-        throw(css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+        const css::uno::Reference<css::beans::XVetoableChangeListener>& rxListener);
 
     virtual void SAL_CALL removeVetoableChangeListener (
         const rtl::OUString& rsPropertyName,
-        const css::uno::Reference<css::beans::XVetoableChangeListener>& rxListener)
-        throw(css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException);
+        const css::uno::Reference<css::beans::XVetoableChangeListener>& rxListener);
 
 protected:
     /** Return the requested property value.
@@ -137,8 +116,7 @@ private:
     /** This method throws a DisposedException when the object has already been
         disposed.
     */
-    void ThrowIfDisposed (void)
-        throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void);
 };
 
 } } // end of namespace ::sd::tools

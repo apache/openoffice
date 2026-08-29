@@ -36,15 +36,15 @@ class ScVbaLabel : public LabelImpl_BASE
 public:
     ScVbaLabel( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::uno::XInterface >& xControl, const css::uno::Reference< css::frame::XModel >& xModel, ov::AbstractGeometryAttributes* pGeomHelper  );
    // Attributes
-    virtual css::uno::Any SAL_CALL getValue() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setValue( const css::uno::Any& _value ) throw (css::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getCaption() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setCaption( const rtl::OUString& _caption ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::msforms::XNewFont > SAL_CALL getFont() throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getValue();
+    virtual void SAL_CALL setValue( const css::uno::Any& _value );
+    virtual rtl::OUString SAL_CALL getCaption();
+    virtual void SAL_CALL setCaption( const rtl::OUString& _caption );
+    virtual css::uno::Reference< ov::msforms::XNewFont > SAL_CALL getFont();
     //XHelperInterface
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();
     // XDefaultProperty
-    rtl::OUString SAL_CALL getDefaultPropertyName(  ) throw (css::uno::RuntimeException) { return ::rtl::OUString::createFromAscii("Value"); }
+    rtl::OUString SAL_CALL getDefaultPropertyName(  ) { return ::rtl::OUString::createFromAscii("Value"); }
 };
 #endif //SC_VBA_LABEL_HXX

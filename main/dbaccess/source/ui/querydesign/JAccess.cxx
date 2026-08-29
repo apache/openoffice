@@ -61,12 +61,12 @@ namespace dbaui
 	{
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OJoinDesignViewAccess::getImplementationName() throw(RuntimeException)
+	::rtl::OUString SAL_CALL OJoinDesignViewAccess::getImplementationName()
 	{
 		return getImplementationName_Static();
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString OJoinDesignViewAccess::getImplementationName_Static(void) throw( RuntimeException )
+	::rtl::OUString OJoinDesignViewAccess::getImplementationName_Static(void)
 	{
 		return ::rtl::OUString::createFromAscii("org.openoffice.comp.dbu.JoinViewAccessibility");
 	}
@@ -78,7 +78,7 @@ namespace dbaui
     }
 	// -----------------------------------------------------------------------------
 	// XAccessibleContext
-	sal_Int32 SAL_CALL OJoinDesignViewAccess::getAccessibleChildCount(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL OJoinDesignViewAccess::getAccessibleChildCount(  )
 	{
 		// TODO may be this will change to only visible windows
 		// this is the same assumption mt implements
@@ -89,7 +89,7 @@ namespace dbaui
 		return nChildCount;
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL OJoinDesignViewAccess::getAccessibleChild( sal_Int32 i ) throw (IndexOutOfBoundsException,RuntimeException)
+	Reference< XAccessible > SAL_CALL OJoinDesignViewAccess::getAccessibleChild( sal_Int32 i )
 	{
 		Reference< XAccessible > aRet;
 		::osl::MutexGuard aGuard( m_aMutex  );
@@ -117,12 +117,12 @@ namespace dbaui
 		return m_pTableView && !m_pTableView->getDesignView()->getController().isReadOnly();
 	}
 	// -----------------------------------------------------------------------------
-	sal_Int16 SAL_CALL OJoinDesignViewAccess::getAccessibleRole(  ) throw (RuntimeException)
+	sal_Int16 SAL_CALL OJoinDesignViewAccess::getAccessibleRole(  )
 	{
 		return AccessibleRole::VIEW_PORT;
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessibleContext > SAL_CALL OJoinDesignViewAccess::getAccessibleContext(  ) throw (::com::sun::star::uno::RuntimeException)
+	Reference< XAccessibleContext > SAL_CALL OJoinDesignViewAccess::getAccessibleContext(  )
 	{
 		return this;
 	}

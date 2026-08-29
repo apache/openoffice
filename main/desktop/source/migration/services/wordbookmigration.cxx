@@ -235,14 +235,14 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
     // XServiceInfo
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString WordbookMigration::getImplementationName() throw (RuntimeException)
+    ::rtl::OUString WordbookMigration::getImplementationName()
     {
         return WordbookMigration_getImplementationName();
     }
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool WordbookMigration::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+    sal_Bool WordbookMigration::supportsService( const ::rtl::OUString& rServiceName )
     {
 	    Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	    const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -255,7 +255,7 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
 
     // -----------------------------------------------------------------------------
 
-    Sequence< ::rtl::OUString > WordbookMigration::getSupportedServiceNames() throw (RuntimeException)
+    Sequence< ::rtl::OUString > WordbookMigration::getSupportedServiceNames()
     {
         return WordbookMigration_getSupportedServiceNames();
     }
@@ -264,7 +264,7 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
     // XInitialization
     // -----------------------------------------------------------------------------
 
-    void WordbookMigration::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+    void WordbookMigration::initialize( const Sequence< Any >& aArguments )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -291,7 +291,6 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
     // -----------------------------------------------------------------------------
 
     Any WordbookMigration::execute( const Sequence< beans::NamedValue >& )
-        throw (lang::IllegalArgumentException, Exception, RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 

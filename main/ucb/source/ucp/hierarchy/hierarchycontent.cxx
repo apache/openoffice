@@ -191,7 +191,6 @@ void SAL_CALL HierarchyContent::release()
 //=========================================================================
 // virtual
 uno::Any SAL_CALL HierarchyContent::queryInterface( const uno::Type & rType )
-    throw ( uno::RuntimeException )
 {
     uno::Any aRet = ContentImplHelper::queryInterface( rType );
 
@@ -222,7 +221,6 @@ XTYPEPROVIDER_COMMON_IMPL( HierarchyContent );
 //=========================================================================
 // virtual
 uno::Sequence< uno::Type > SAL_CALL HierarchyContent::getTypes()
-    throw( uno::RuntimeException )
 {
     cppu::OTypeCollection * pCollection = 0;
 
@@ -303,7 +301,6 @@ uno::Sequence< uno::Type > SAL_CALL HierarchyContent::getTypes()
 
 // virtual
 rtl::OUString SAL_CALL HierarchyContent::getImplementationName()
-    throw( uno::RuntimeException )
 {
     return rtl::OUString::createFromAscii(
                             "com.sun.star.comp.ucb.HierarchyContent" );
@@ -313,7 +310,6 @@ rtl::OUString SAL_CALL HierarchyContent::getImplementationName()
 // virtual
 uno::Sequence< rtl::OUString > SAL_CALL
 HierarchyContent::getSupportedServiceNames()
-    throw( uno::RuntimeException )
 {
     uno::Sequence< rtl::OUString > aSNS( 1 );
 
@@ -338,7 +334,6 @@ HierarchyContent::getSupportedServiceNames()
 
 // virtual
 rtl::OUString SAL_CALL HierarchyContent::getContentType()
-    throw( uno::RuntimeException )
 {
     return m_aProps.getContentType();
 }
@@ -347,7 +342,6 @@ rtl::OUString SAL_CALL HierarchyContent::getContentType()
 // virtual
 uno::Reference< ucb::XContentIdentifier > SAL_CALL
 HierarchyContent::getIdentifier()
-    throw( uno::RuntimeException )
 {
     // Transient?
     if ( m_eState == TRANSIENT )
@@ -370,9 +364,6 @@ uno::Any SAL_CALL HierarchyContent::execute(
         const ucb::Command& aCommand,
         sal_Int32 /*CommandId*/,
         const uno::Reference< ucb::XCommandEnvironment >& Environment )
-    throw( uno::Exception,
-           ucb::CommandAbortedException,
-           uno::RuntimeException )
 {
     uno::Any aRet;
 
@@ -609,7 +600,6 @@ uno::Any SAL_CALL HierarchyContent::execute(
 //=========================================================================
 // virtual
 void SAL_CALL HierarchyContent::abort( sal_Int32 /*CommandId*/ )
-    throw( uno::RuntimeException )
 {
     // @@@ Generally, no action takes much time...
 }
@@ -623,7 +613,6 @@ void SAL_CALL HierarchyContent::abort( sal_Int32 /*CommandId*/ )
 // virtual
 uno::Sequence< ucb::ContentInfo > SAL_CALL
 HierarchyContent::queryCreatableContentsInfo()
-    throw( uno::RuntimeException )
 {
     return m_aProps.getCreatableContentsInfo();
 }
@@ -632,7 +621,6 @@ HierarchyContent::queryCreatableContentsInfo()
 // virtual
 uno::Reference< ucb::XContent > SAL_CALL
 HierarchyContent::createNewContent( const ucb::ContentInfo& Info )
-    throw( uno::RuntimeException )
 {
     if ( isFolder() )
     {
@@ -1137,7 +1125,6 @@ uno::Reference< sdbc::XRow > HierarchyContent::getPropertyValues(
 uno::Sequence< uno::Any > HierarchyContent::setPropertyValues(
         const uno::Sequence< beans::PropertyValue >& rValues,
         const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -1462,7 +1449,6 @@ uno::Sequence< uno::Any > HierarchyContent::setPropertyValues(
 void HierarchyContent::insert( sal_Int32 nNameClashResolve,
                                const uno::Reference<
                                     ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -1612,7 +1598,6 @@ void HierarchyContent::insert( sal_Int32 nNameClashResolve,
 void HierarchyContent::destroy( sal_Bool bDeletePhysical,
                                 const uno::Reference<
                                     ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     // @@@ take care about bDeletePhysical -> trashcan support
 
@@ -1671,7 +1656,6 @@ void HierarchyContent::destroy( sal_Bool bDeletePhysical,
 void HierarchyContent::transfer(
             const ucb::TransferInfo& rInfo,
             const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 

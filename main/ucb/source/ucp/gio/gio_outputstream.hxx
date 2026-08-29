@@ -49,29 +49,17 @@ public:
     virtual ~OutputStream();
 
     // XInterface
-    virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type )
-            throw( ::com::sun::star::uno::RuntimeException );
+    virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type );
     virtual void SAL_CALL acquire( void ) throw () { OWeakObject::acquire(); }
     virtual void SAL_CALL release( void ) throw() { OWeakObject::release(); }
 
     // XOutputStream
-   virtual void SAL_CALL writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData )
-           throw( com::sun::star::io::NotConnectedException,
-                  com::sun::star::io::BufferSizeExceededException,
-                  com::sun::star::io::IOException,
-                  com::sun::star::uno::RuntimeException);
+   virtual void SAL_CALL writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData );
 
-   virtual void SAL_CALL flush( void )
-           throw( com::sun::star::io::NotConnectedException,
-                  com::sun::star::io::BufferSizeExceededException,
-                  com::sun::star::io::IOException,
-                  com::sun::star::uno::RuntimeException);
+   virtual void SAL_CALL flush( void );
 
 
-    virtual void SAL_CALL closeOutput( void )
-           throw( com::sun::star::io::NotConnectedException,
-                  com::sun::star::io::IOException,
-                  com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL closeOutput( void );
 };
 
 } // namespace gio

@@ -175,7 +175,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType );
 
 	/**_______________________________________________________________________________________________________
 		@short		increment refcount
@@ -327,7 +327,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL disposing(const UNO3_EVENTOBJECT& aSource) throw( UNO3_RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL disposing(const UNO3_EVENTOBJECT& aSource) ;
 
 	//________________________________________________________________________________________________________
 	//	XFocusListener
@@ -347,7 +347,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL focusGained(const UNO3_FOCUSEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL focusGained(const UNO3_FOCUSEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -363,7 +363,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL focusLost(const UNO3_FOCUSEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL focusLost(const UNO3_FOCUSEVENT& aEvent ) ;
 
 	//________________________________________________________________________________________________________
 	//	XWindowListener
@@ -383,7 +383,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowResized(const UNO3_WINDOWEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowResized(const UNO3_WINDOWEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -399,7 +399,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowMoved(const UNO3_WINDOWEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowMoved(const UNO3_WINDOWEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -415,7 +415,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowShown(const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowShown(const UNO3_EVENTOBJECT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -431,7 +431,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowHidden(const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowHidden(const UNO3_EVENTOBJECT& aEvent ) ;
 
 	//________________________________________________________________________________________________________
 	//	XKeyListener
@@ -451,7 +451,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL keyPressed( const UNO3_KEYEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL keyPressed( const UNO3_KEYEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -467,7 +467,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL keyReleased( const UNO3_KEYEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL keyReleased( const UNO3_KEYEVENT& aEvent ) ;
 
 	//________________________________________________________________________________________________________
 	//	XMouseListener
@@ -487,7 +487,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL mousePressed(const UNO3_MOUSEEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL mousePressed(const UNO3_MOUSEEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -503,7 +503,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL mouseReleased(const UNO3_MOUSEEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL mouseReleased(const UNO3_MOUSEEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -519,7 +519,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL mouseEntered(const UNO3_MOUSEEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL mouseEntered(const UNO3_MOUSEEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -535,7 +535,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL mouseExited(const UNO3_MOUSEEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL mouseExited(const UNO3_MOUSEEVENT& aEvent ) ;
 
 	//________________________________________________________________________________________________________
 	//	XMouseMotionListener
@@ -555,7 +555,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL mouseDragged(const UNO3_MOUSEEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL mouseDragged(const UNO3_MOUSEEVENT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -571,7 +571,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL mouseMoved(const UNO3_MOUSEEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL mouseMoved(const UNO3_MOUSEEVENT& aEvent ) ;
 
 	//________________________________________________________________________________________________________
 	//	XPaintListener
@@ -591,7 +591,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowPaint(const UNO3_PAINTEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowPaint(const UNO3_PAINTEVENT& aEvent ) ;
 
 	//________________________________________________________________________________________________________
 	//	XTopWindowListener
@@ -611,7 +611,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL windowOpened( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL windowOpened( const UNO3_EVENTOBJECT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -627,7 +627,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL windowClosing( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL windowClosing( const UNO3_EVENTOBJECT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -643,7 +643,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowClosed( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowClosed( const UNO3_EVENTOBJECT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -659,7 +659,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL windowMinimized( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL windowMinimized( const UNO3_EVENTOBJECT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -675,7 +675,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL windowNormalized( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+	virtual void SAL_CALL windowNormalized( const UNO3_EVENTOBJECT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -691,7 +691,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowActivated( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowActivated( const UNO3_EVENTOBJECT& aEvent ) ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -707,7 +707,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowDeactivated( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION ) ;
+    virtual void SAL_CALL windowDeactivated( const UNO3_EVENTOBJECT& aEvent ) ;
 
 //____________________________________________________________________________________________________________
 //	protected methods

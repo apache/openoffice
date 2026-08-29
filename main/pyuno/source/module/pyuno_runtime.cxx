@@ -120,7 +120,6 @@ static PyTypeObject RuntimeImpl_Type =
   Runtime implementation
  -----------------------------------------------------------------------*/
 static void getRuntimeImpl( PyRef & globalDict, PyRef &runtimeImpl )
-    throw ( com::sun::star::uno::RuntimeException )
 {
     PyThreadState * state = PyThreadState_Get();
     if( ! state )
@@ -140,7 +139,7 @@ static void getRuntimeImpl( PyRef & globalDict, PyRef &runtimeImpl )
     runtimeImpl = PyDict_GetItemString( globalDict.get() , "pyuno_runtime" );
 }
 
-static PyRef importUnoModule( ) throw ( RuntimeException )
+static PyRef importUnoModule( )
 {
     PyRef globalDict = PyRef( PyModule_GetDict(PyImport_AddModule(const_cast< char * >("__main__"))));
     // import the uno module
@@ -231,7 +230,6 @@ static void readLoggingConfig( sal_Int32 *pLevel, FILE **ppFile )
  RuntimeImpl implementations
  *-------------------------------------------------------------------*/
 PyRef stRuntimeImpl::create( const Reference< XComponentContext > &ctx )
-    throw( com::sun::star::uno::RuntimeException )
 {
     RuntimeImpl *me = PyObject_New (RuntimeImpl, &RuntimeImpl_Type);
     if( ! me )
@@ -320,7 +318,6 @@ void  stRuntimeImpl::del(PyObject* self)
 
 
 void Runtime::initialize( const Reference< XComponentContext > & ctx )
-    throw ( RuntimeException )
 {
     PyRef globalDict, runtime;
     getRuntimeImpl( globalDict , runtime );
@@ -338,7 +335,7 @@ void Runtime::initialize( const Reference< XComponentContext > & ctx )
 }
 
 
-bool Runtime::isInitialized() throw ( RuntimeException )
+bool Runtime::isInitialized()
 {
     PyRef globalDict, runtime;
     getRuntimeImpl( globalDict , runtime );
@@ -346,7 +343,7 @@ bool Runtime::isInitialized() throw ( RuntimeException )
     return runtime.is() && impl->cargo->valid;
 }
 
-void Runtime::finalize() throw (RuntimeException)
+void Runtime::finalize()
 {
     PyRef globalDict, runtime;
     getRuntimeImpl( globalDict , runtime );
@@ -363,7 +360,7 @@ void Runtime::finalize() throw (RuntimeException)
     impl->cargo->xTypeConverter.clear();
 }
 
-Runtime::Runtime() throw(  RuntimeException )
+Runtime::Runtime()
     : impl( 0 )
 {
     PyRef globalDict, runtime;
@@ -400,9 +397,6 @@ Runtime & Runtime::operator = ( const Runtime & r )
 }
 
 PyRef Runtime::any2PyObject (const Any &a ) const
-    throw ( com::sun::star::script::CannotConvertException,
-            com::sun::star::lang::IllegalArgumentException,
-            RuntimeException)
 {
     if( ! impl->cargo->valid )
     {
@@ -644,7 +638,6 @@ static Sequence< Type > invokeGetTypes( const Runtime & r , PyObject * o )
 }
 
 Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) const
-    throw ( com::sun::star::uno::RuntimeException )
 {
     if( ! impl->cargo->valid )
     {
@@ -973,7 +966,6 @@ static const char *ensureUnlimitedLifetime( const char *str )
 
 
 PyThreadAttach::PyThreadAttach( PyInterpreterState *interp)
-    throw ( com::sun::star::uno::RuntimeException )
 {
     tstate = PyThreadState_New( interp );
     if( !tstate  )
@@ -1003,7 +995,7 @@ PyThreadAttach::~PyThreadAttach()
 
 }
 
-PyThreadDetach::PyThreadDetach() throw ( com::sun::star::uno::RuntimeException )
+PyThreadDetach::PyThreadDetach()
 {
     tstate = PyThreadState_Get();
     PyObject *value =

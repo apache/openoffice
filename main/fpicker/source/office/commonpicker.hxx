@@ -124,14 +124,14 @@ namespace svt
 		//------------------------------------------------------------------------------------
 		// XEventListner
 		//------------------------------------------------------------------------------------
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		//------------------------------------------------------------------------------------
 		// property set related methods
 		//------------------------------------------------------------------------------------
 
 		// XPropertySet pure methods
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 		// OPropertySetHelper pure methods
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 		// OPropertyArrayUsageHelper pure methods
@@ -139,43 +139,43 @@ namespace svt
 
 		// OPropertySetHelper overridden methods
 		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
-				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue ) throw (::com::sun::star::uno::Exception);
+				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue );
 
 		//------------------------------------------------------------------------------------
 		// XExecutableDialog functions
 		//------------------------------------------------------------------------------------
-		virtual void SAL_CALL 			setTitle( const ::rtl::OUString& _rTitle ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual sal_Int16 SAL_CALL 		execute() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL 			setTitle( const ::rtl::OUString& _rTitle );
+		virtual sal_Int16 SAL_CALL 		execute();
 
 		//------------------------------------------------------------------------------------
 		// XControlAccess functions
 		//------------------------------------------------------------------------------------
-		virtual void SAL_CALL setControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty, const ::com::sun::star::uno::Any& aValue ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Any SAL_CALL getControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL setControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty, const ::com::sun::star::uno::Any& aValue );
+		virtual ::com::sun::star::uno::Any SAL_CALL getControlProperty( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty );
 
 		//------------------------------------------------------------------------------------
 		// XControlInformation functions
 		//------------------------------------------------------------------------------------
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedControls(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL isControlSupported( const ::rtl::OUString& aControlName ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedControlProperties( const ::rtl::OUString& aControlName ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL isControlPropertySupported( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedControls(  );
+		virtual sal_Bool SAL_CALL isControlSupported( const ::rtl::OUString& aControlName );
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedControlProperties( const ::rtl::OUString& aControlName );
+		virtual sal_Bool SAL_CALL isControlPropertySupported( const ::rtl::OUString& aControlName, const ::rtl::OUString& aControlProperty );
 
 		//------------------------------------------------------------------------------------
 		// XCancellable functions
 		//------------------------------------------------------------------------------------
-		virtual void SAL_CALL cancel(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL cancel(  );
 
 		//------------------------------------------------------------------------------------
 		// XInitialization functions
 		//------------------------------------------------------------------------------------
 
-		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw ( ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 		//------------------------------------------------------------------------------------
 		// misc
 		//------------------------------------------------------------------------------------
-		void checkAlive() const SAL_THROW( (::com::sun::star::lang::DisposedException) );
+		void checkAlive() const;
 
         void prepareDialog();
 
@@ -189,8 +189,7 @@ namespace svt
 		virtual	sal_Bool	implHandleInitializationArgument(
 								const ::rtl::OUString& _rName,
 								const ::com::sun::star::uno::Any& _rValue
-							)
-							SAL_THROW( ( ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException ) );
+							);
 
 	private:
 		void		stopWindowListening();

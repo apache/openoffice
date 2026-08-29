@@ -56,12 +56,12 @@ public:
 	AttributeListImpl( const AttributeListImpl & );
 
 public:
-    virtual sal_Int16 SAL_CALL getLength(void) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString  SAL_CALL getNameByIndex(sal_Int16 i) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString  SAL_CALL getTypeByIndex(sal_Int16 i) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString  SAL_CALL getTypeByName(const ::rtl::OUString& aName) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString  SAL_CALL getValueByIndex(sal_Int16 i) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString  SAL_CALL getValueByName(const ::rtl::OUString& aName) throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int16 SAL_CALL getLength(void);
+    virtual ::rtl::OUString  SAL_CALL getNameByIndex(sal_Int16 i);
+    virtual ::rtl::OUString  SAL_CALL getTypeByIndex(sal_Int16 i);
+    virtual ::rtl::OUString  SAL_CALL getTypeByName(const ::rtl::OUString& aName);
+    virtual ::rtl::OUString  SAL_CALL getValueByIndex(sal_Int16 i);
+    virtual ::rtl::OUString  SAL_CALL getValueByName(const ::rtl::OUString& aName);
 
 public:
 	void addAttribute( const ::rtl::OUString &sName , const ::rtl::OUString &sType , const ::rtl::OUString &sValue );
@@ -98,7 +98,7 @@ struct AttributeListImpl_impl
 
 
 
-sal_Int16 SAL_CALL AttributeListImpl::getLength(void) throw (RuntimeException)
+sal_Int16 SAL_CALL AttributeListImpl::getLength(void)
 {
 	return sal::static_int_cast< sal_Int16 >(m_pImpl->vecAttribute.size());
 }
@@ -111,7 +111,7 @@ AttributeListImpl::AttributeListImpl( const AttributeListImpl &r ) :
 	*m_pImpl = *(r.m_pImpl);
 }
 
-OUString AttributeListImpl::getNameByIndex(sal_Int16 i) throw (RuntimeException)
+OUString AttributeListImpl::getNameByIndex(sal_Int16 i)
 {
 	if( i < sal::static_int_cast<sal_Int16>(m_pImpl->vecAttribute.size()) ) {
 		return m_pImpl->vecAttribute[i].sName;
@@ -120,7 +120,7 @@ OUString AttributeListImpl::getNameByIndex(sal_Int16 i) throw (RuntimeException)
 }
 
 
-OUString AttributeListImpl::getTypeByIndex(sal_Int16 i) throw (RuntimeException)
+OUString AttributeListImpl::getTypeByIndex(sal_Int16 i)
 {
 	if( i < sal::static_int_cast<sal_Int16>(m_pImpl->vecAttribute.size()) ) {
 		return m_pImpl->vecAttribute[i].sType;
@@ -128,7 +128,7 @@ OUString AttributeListImpl::getTypeByIndex(sal_Int16 i) throw (RuntimeException)
 	return OUString();
 }
 
-OUString AttributeListImpl::getValueByIndex(sal_Int16 i) throw (RuntimeException)
+OUString AttributeListImpl::getValueByIndex(sal_Int16 i)
 {
 	if( i < sal::static_int_cast<sal_Int16>(m_pImpl->vecAttribute.size()) ) {
 		return m_pImpl->vecAttribute[i].sValue;
@@ -137,7 +137,7 @@ OUString AttributeListImpl::getValueByIndex(sal_Int16 i) throw (RuntimeException
 
 }
 
-OUString AttributeListImpl::getTypeByName( const OUString& sName ) throw (RuntimeException)
+OUString AttributeListImpl::getTypeByName( const OUString& sName )
 {
 	::std::vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -149,7 +149,7 @@ OUString AttributeListImpl::getTypeByName( const OUString& sName ) throw (Runtim
 	return OUString();
 }
 
-OUString AttributeListImpl::getValueByName(const OUString& sName) throw (RuntimeException)
+OUString AttributeListImpl::getValueByName(const OUString& sName)
 {
 	::std::vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -192,7 +192,7 @@ void AttributeListImpl::clear()
 
 // ------------------------------------------------------------------
 
-Any SAL_CALL OReadAccelatorDocumentHandler::queryInterface( const Type & rType ) throw( RuntimeException )
+Any SAL_CALL OReadAccelatorDocumentHandler::queryInterface( const Type & rType )
 {
 	Any a = ::cppu::queryInterface( rType ,SAL_STATIC_CAST( XDocumentHandler*, this ));
 	if ( a.hasValue() )
@@ -203,19 +203,16 @@ Any SAL_CALL OReadAccelatorDocumentHandler::queryInterface( const Type & rType )
 
 void SAL_CALL OReadAccelatorDocumentHandler::ignorableWhitespace(
 	const OUString& )
-throw( SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadAccelatorDocumentHandler::processingInstruction(
 	const OUString&, const OUString& )
-throw( SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadAccelatorDocumentHandler::setDocumentLocator(
 	const Reference< XLocator > &xLocator)
-throw(	SAXException, RuntimeException )
 {
 	m_xLocator = xLocator;
 }
@@ -233,12 +230,10 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadAccelatorDocumentHandler::startDocument(void)
-	throw ( SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadAccelatorDocumentHandler::endDocument(void)
-	throw( SAXException, RuntimeException )
 {
 	if ( m_nElementDepth > 0 )
 	{
@@ -251,7 +246,6 @@ void SAL_CALL OReadAccelatorDocumentHandler::endDocument(void)
 
 void SAL_CALL OReadAccelatorDocumentHandler::startElement(
 	const OUString& aElementName, const Reference< XAttributeList > &xAttrList )
-throw( SAXException, RuntimeException )
 {
 	m_nElementDepth++;
 
@@ -310,13 +304,11 @@ throw( SAXException, RuntimeException )
 
 
 void SAL_CALL OReadAccelatorDocumentHandler::characters(const rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 
 void SAL_CALL OReadAccelatorDocumentHandler::endElement( const OUString& aName )
-	throw( SAXException, RuntimeException )
 {
 	m_nElementDepth--;
 
@@ -362,7 +354,6 @@ OWriteAccelatorDocumentHandler::~OWriteAccelatorDocumentHandler()
 }
 
 void OWriteAccelatorDocumentHandler::WriteAcceleratorDocument()
-	throw ( SAXException, RuntimeException )
 {
 	AttributeListImpl* pList = new AttributeListImpl;
 	Reference< XAttributeList > rList( (XAttributeList *)pList , UNO_QUERY );
@@ -381,7 +372,6 @@ void OWriteAccelatorDocumentHandler::WriteAcceleratorDocument()
 
 void OWriteAccelatorDocumentHandler::WriteAcceleratorItem(
 	const SvtAcceleratorConfigItem& aAcceleratorItem )
-	throw( SAXException, RuntimeException )
 {
 	AttributeListImpl* pAcceleratorAttributes = new AttributeListImpl;
 	Reference< XAttributeList > xAcceleratorAttrList( (XAttributeList *)pAcceleratorAttributes , UNO_QUERY );

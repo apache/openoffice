@@ -60,7 +60,7 @@ namespace svt
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL OFilePickerInteractionHandler::handle( const Reference< XInteractionRequest >& _rxRequest ) throw (RuntimeException)
+	void SAL_CALL OFilePickerInteractionHandler::handle( const Reference< XInteractionRequest >& _rxRequest )
 	{
         if (!_rxRequest.is())
             return;

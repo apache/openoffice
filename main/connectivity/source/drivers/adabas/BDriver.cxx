@@ -244,12 +244,12 @@ void ODriver::disposing()
 
 // static ServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString ODriver::getImplementationName_Static(  ) throw(RuntimeException)
+rtl::OUString ODriver::getImplementationName_Static(  )
 {
     return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.sdbcx.adabas.ODriver"));
 }
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > ODriver::getSupportedServiceNames_Static(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > ODriver::getSupportedServiceNames_Static(  )
 {
 	Sequence< ::rtl::OUString > aSNS( 2 );
     aSNS[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdbc.Driver"));
@@ -257,13 +257,13 @@ Sequence< ::rtl::OUString > ODriver::getSupportedServiceNames_Static(  ) throw (
 	return aSNS;
 }
 //------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODriver::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL ODriver::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------
-sal_Bool SAL_CALL ODriver::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL ODriver::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	const Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -274,12 +274,12 @@ sal_Bool SAL_CALL ODriver::supportsService( const ::rtl::OUString& _rServiceName
 	return pSupported != pEnd;
 }
 //------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL ODriver::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL ODriver::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }
 //------------------------------------------------------------------
-Any SAL_CALL ODriver::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL ODriver::queryInterface( const Type & rType )
 {
 	Any aRet = ::cppu::queryInterface(rType, static_cast<XDataDefinitionSupplier*>(this));
     if ( !aRet.hasValue() )
@@ -287,12 +287,12 @@ Any SAL_CALL ODriver::queryInterface( const Type & rType ) throw(RuntimeExceptio
 	return aRet.hasValue() ? aRet : ODriver_BASE2::queryInterface(rType);
 }
 //------------------------------------------------------------------
-Reference< XInterface >  SAL_CALL ODriver_CreateInstance(const Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFac) throw( Exception )
+Reference< XInterface >  SAL_CALL ODriver_CreateInstance(const Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFac)
 {
 	return *(new ODriver(_rxFac));
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODriver::disposing( const EventObject& Source ) throw(RuntimeException)
+void SAL_CALL ODriver::disposing( const EventObject& Source )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -315,7 +315,7 @@ void SAL_CALL ODriver::disposing( const EventObject& Source ) throw(RuntimeExcep
 	}
 }
 // --------------------------------------------------------------------------------
-Reference< XConnection > SAL_CALL ODriver::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info ) throw(SQLException, RuntimeException)
+Reference< XConnection > SAL_CALL ODriver::connect( const ::rtl::OUString& url, const Sequence< PropertyValue >& info )
 {
 	if ( ! acceptsURL(url) )
 		return NULL;
@@ -385,12 +385,11 @@ sal_Bool ODriver::getDBName(const ::rtl::OUString& _rName,::rtl::OUString& sDBNa
 }
 // --------------------------------------------------------------------------------
 sal_Bool SAL_CALL ODriver::acceptsURL( const ::rtl::OUString& url )
-		throw(SQLException, RuntimeException)
 {
 	return (!url.compareTo(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sdbc:adabas:")),12));
 }
 // --------------------------------------------------------------------------------
-Sequence< DriverPropertyInfo > SAL_CALL ODriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/) throw(SQLException, RuntimeException)
+Sequence< DriverPropertyInfo > SAL_CALL ODriver::getPropertyInfo( const ::rtl::OUString& url, const Sequence< PropertyValue >& /*info*/)
 {
 	if ( acceptsURL(url) )
 	{
@@ -440,18 +439,18 @@ Sequence< DriverPropertyInfo > SAL_CALL ODriver::getPropertyInfo( const ::rtl::O
 	return Sequence< DriverPropertyInfo >();
 }
 // --------------------------------------------------------------------------------
-sal_Int32 SAL_CALL ODriver::getMajorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL ODriver::getMajorVersion(  )
 {
 	return 1;
 }
 // --------------------------------------------------------------------------------
-sal_Int32 SAL_CALL ODriver::getMinorVersion(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL ODriver::getMinorVersion(  )
 {
 	return 0;
 }
 // -----------------------------------------------------------------------------
 // XCreateCatalog
-void SAL_CALL ODriver::createCatalog( const Sequence< PropertyValue >& info ) throw(SQLException, ElementExistException, RuntimeException)
+void SAL_CALL ODriver::createCatalog( const Sequence< PropertyValue >& info )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (ODriver_BASE::rBHelper.bDisposed)
@@ -496,7 +495,7 @@ void SAL_CALL ODriver::createCatalog( const Sequence< PropertyValue >& info ) th
 }
 // -----------------------------------------------------------------------------
 // XDropCatalog
-void SAL_CALL ODriver::dropCatalog( const ::rtl::OUString& /*catalogName*/, const Sequence< PropertyValue >& /*info*/ ) throw(SQLException, NoSuchElementException, RuntimeException)
+void SAL_CALL ODriver::dropCatalog( const ::rtl::OUString& /*catalogName*/, const Sequence< PropertyValue >& /*info*/ )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (ODriver_BASE::rBHelper.bDisposed)
@@ -532,7 +531,7 @@ SQLHANDLE ODriver::EnvironmentHandle(::rtl::OUString &_rPath)
 }
 // --------------------------------------------------------------------------------
 // XDataDefinitionSupplier
-Reference< XTablesSupplier > SAL_CALL ODriver::getDataDefinitionByConnection( const Reference< ::com::sun::star::sdbc::XConnection >& connection ) throw(::com::sun::star::sdbc::SQLException, RuntimeException)
+Reference< XTablesSupplier > SAL_CALL ODriver::getDataDefinitionByConnection( const Reference< ::com::sun::star::sdbc::XConnection >& connection )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (ODriver_BASE::rBHelper.bDisposed)
@@ -562,7 +561,7 @@ Reference< XTablesSupplier > SAL_CALL ODriver::getDataDefinitionByConnection( co
 }
 
 // --------------------------------------------------------------------------------
-Reference< XTablesSupplier > SAL_CALL ODriver::getDataDefinitionByURL( const ::rtl::OUString& url, const Sequence< PropertyValue >& info ) throw(::com::sun::star::sdbc::SQLException, RuntimeException)
+Reference< XTablesSupplier > SAL_CALL ODriver::getDataDefinitionByURL( const ::rtl::OUString& url, const Sequence< PropertyValue >& info )
 {
 	if ( ! acceptsURL(url) )
     {

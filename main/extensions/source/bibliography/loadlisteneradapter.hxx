@@ -56,7 +56,7 @@ namespace bib
 		virtual ~OComponentListener();
 
 		// XEventListener equivalents
-		virtual void _disposing( const ::com::sun::star::lang::EventObject& _rSource ) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void _disposing( const ::com::sun::star::lang::EventObject& _rSource );
 
 	protected:
 		void setAdapter( OComponentAdapterBase* _pAdapter );
@@ -115,7 +115,7 @@ namespace bib
 
 	protected:
 	// XEventListener
-		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source ) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source );
 	};
 
 	//=====================================================================
@@ -163,14 +163,14 @@ namespace bib
 
 	protected:
 	// XEventListener
-		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& _rSource ) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& _rSource );
 
 	// XLoadListener
-		virtual void SAL_CALL loaded( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL unloading( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL unloaded( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL reloading( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL reloaded( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL loaded( const ::com::sun::star::lang::EventObject& aEvent );
+		virtual void SAL_CALL unloading( const ::com::sun::star::lang::EventObject& aEvent );
+		virtual void SAL_CALL unloaded( const ::com::sun::star::lang::EventObject& aEvent );
+		virtual void SAL_CALL reloading( const ::com::sun::star::lang::EventObject& aEvent );
+		virtual void SAL_CALL reloaded( const ::com::sun::star::lang::EventObject& aEvent );
 	};
 
 //.........................................................................

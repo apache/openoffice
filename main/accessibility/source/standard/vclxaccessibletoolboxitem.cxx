@@ -254,7 +254,7 @@ void VCLXAccessibleToolBoxItem::ToggleEnableState()
 	NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[1], aNewValue[1] );
 }
 // -----------------------------------------------------------------------------
-awt::Rectangle SAL_CALL VCLXAccessibleToolBoxItem::implGetBounds(  ) throw (RuntimeException)
+awt::Rectangle SAL_CALL VCLXAccessibleToolBoxItem::implGetBounds(  )
 {
 	awt::Rectangle aRect;
 	if ( m_pToolBox )
@@ -282,7 +282,7 @@ void VCLXAccessibleToolBoxItem::implGetSelection( sal_Int32& nStartIndex, sal_In
 // XInterface
 // -----------------------------------------------------------------------------
 IMPLEMENT_FORWARD_REFCOUNT( VCLXAccessibleToolBoxItem, AccessibleTextHelper_BASE )
-Any SAL_CALL VCLXAccessibleToolBoxItem::queryInterface( const Type& _rType ) throw (RuntimeException)
+Any SAL_CALL VCLXAccessibleToolBoxItem::queryInterface( const Type& _rType )
 {
 	// --> PB 2004-09-03 #i33611# - toolbox buttons without text don't support XAccessibleText
 	if ( _rType == ::getCppuType( ( const Reference< XAccessibleText >* ) 0 )
@@ -310,12 +310,12 @@ void SAL_CALL VCLXAccessibleToolBoxItem::disposing()
 // -----------------------------------------------------------------------------
 // XServiceInfo
 // -----------------------------------------------------------------------------
-::rtl::OUString VCLXAccessibleToolBoxItem::getImplementationName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleToolBoxItem::getImplementationName()
 {
 	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleToolBoxItem" );
 }
 // -----------------------------------------------------------------------------
-sal_Bool VCLXAccessibleToolBoxItem::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+sal_Bool VCLXAccessibleToolBoxItem::supportsService( const ::rtl::OUString& rServiceName )
 {
 	Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -326,7 +326,7 @@ sal_Bool VCLXAccessibleToolBoxItem::supportsService( const ::rtl::OUString& rSer
 	return pNames != pEnd;
 }
 // -----------------------------------------------------------------------------
-Sequence< ::rtl::OUString > VCLXAccessibleToolBoxItem::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleToolBoxItem::getSupportedServiceNames()
 {
 	Sequence< ::rtl::OUString > aNames(4);
 	aNames[0] = ::rtl::OUString::createFromAscii( "com.sun.star.accessibility.AccessibleContext" );
@@ -338,21 +338,21 @@ Sequence< ::rtl::OUString > VCLXAccessibleToolBoxItem::getSupportedServiceNames(
 // -----------------------------------------------------------------------------
 // XAccessible
 // -----------------------------------------------------------------------------
-Reference< XAccessibleContext > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleContext(  ) throw (RuntimeException)
+Reference< XAccessibleContext > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleContext(  )
 {
 	return this;
 }
 // -----------------------------------------------------------------------------
 // XAccessibleContext
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleChildCount(  ) throw (RuntimeException)
+sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleChildCount(  )
 {
 	OContextEntryGuard aGuard( this );
 
 	return m_xChild.is() ? 1 : 0;
 }
 // -----------------------------------------------------------------------------
-Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleChild( sal_Int32 i ) throw (RuntimeException,  com::sun::star::lang::IndexOutOfBoundsException)
+Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleChild( sal_Int32 i )
 {
 	OContextEntryGuard aGuard( this );
 
@@ -363,28 +363,28 @@ Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleChild(
 	return m_xChild;
 }
 // -----------------------------------------------------------------------------
-Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleParent(  ) throw (RuntimeException)
+Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleParent(  )
 {
 	OContextEntryGuard aGuard( this );
 
 	return m_pToolBox->GetAccessible();
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleIndexInParent(  ) throw (RuntimeException)
+sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleIndexInParent(  )
 {
 	OContextEntryGuard aGuard( this );
 
 	return m_nIndexInParent;
 }
 // -----------------------------------------------------------------------------
-sal_Int16 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleRole(  ) throw (RuntimeException)
+sal_Int16 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleRole(  )
 {
 	OContextEntryGuard aGuard( this );
 
 	return m_nRole;
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleDescription(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleDescription(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -403,7 +403,7 @@ sal_Int16 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleRole(  ) throw (Runti
 	}
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleName(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleName(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -411,7 +411,7 @@ sal_Int16 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleRole(  ) throw (Runti
 	return GetText( true );
 }
 // -----------------------------------------------------------------------------
-Reference< XAccessibleRelationSet > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleRelationSet(  ) throw (RuntimeException)
+Reference< XAccessibleRelationSet > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleRelationSet(  )
 {
 	OContextEntryGuard aGuard( this );
 
@@ -420,7 +420,7 @@ Reference< XAccessibleRelationSet > SAL_CALL VCLXAccessibleToolBoxItem::getAcces
 	return xSet;
 }
 // -----------------------------------------------------------------------------
-Reference< XAccessibleStateSet > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleStateSet(  ) throw (RuntimeException)
+Reference< XAccessibleStateSet > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleStateSet(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -454,12 +454,12 @@ Reference< XAccessibleStateSet > SAL_CALL VCLXAccessibleToolBoxItem::getAccessib
 // -----------------------------------------------------------------------------
 // XAccessibleText
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getCaretPosition() throw (RuntimeException)
+sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getCaretPosition()
 {
 	return -1;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setCaretPosition( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setCaretPosition( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -469,7 +469,7 @@ sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setCaretPosition( sal_Int32 nIndex 
 	return sal_False;
 }
 // -----------------------------------------------------------------------------
-Sequence< PropertyValue > SAL_CALL VCLXAccessibleToolBoxItem::getCharacterAttributes( sal_Int32 nIndex, const Sequence< ::rtl::OUString >& ) throw (IndexOutOfBoundsException, RuntimeException)
+Sequence< PropertyValue > SAL_CALL VCLXAccessibleToolBoxItem::getCharacterAttributes( sal_Int32 nIndex, const Sequence< ::rtl::OUString >& )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -481,7 +481,7 @@ Sequence< PropertyValue > SAL_CALL VCLXAccessibleToolBoxItem::getCharacterAttrib
 	return Sequence< PropertyValue >();
 }
 // -----------------------------------------------------------------------------
-awt::Rectangle SAL_CALL VCLXAccessibleToolBoxItem::getCharacterBounds( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+awt::Rectangle SAL_CALL VCLXAccessibleToolBoxItem::getCharacterBounds( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -502,7 +502,7 @@ awt::Rectangle SAL_CALL VCLXAccessibleToolBoxItem::getCharacterBounds( sal_Int32
 	return aBounds;
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getIndexAtPoint( const awt::Point& aPoint ) throw (RuntimeException)
+sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getIndexAtPoint( const awt::Point& aPoint )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -521,7 +521,7 @@ sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getIndexAtPoint( const awt::Point&
 	return nIndex;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -531,7 +531,7 @@ sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setSelection( sal_Int32 nStartIndex
 	return sal_False;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -566,12 +566,12 @@ sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::copyText( sal_Int32 nStartIndex, sa
 // -----------------------------------------------------------------------------
 // XAccessibleComponent
 // -----------------------------------------------------------------------------
-Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleAtPoint( const awt::Point& ) throw (RuntimeException)
+Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleAtPoint( const awt::Point& )
 {
 	return Reference< XAccessible >();
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL VCLXAccessibleToolBoxItem::grabFocus(  ) throw (RuntimeException)
+void SAL_CALL VCLXAccessibleToolBoxItem::grabFocus(  )
 {
 	Reference< XAccessible > xParent(getAccessibleParent());
 
@@ -586,7 +586,7 @@ void SAL_CALL VCLXAccessibleToolBoxItem::grabFocus(  ) throw (RuntimeException)
 	}
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getForeground(  ) throw (RuntimeException)
+sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getForeground(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -597,7 +597,7 @@ sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getForeground(  ) throw (RuntimeEx
 	return nColor;
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getBackground(  ) throw (RuntimeException)
+sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getBackground(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -610,17 +610,17 @@ sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getBackground(  ) throw (RuntimeEx
 // -----------------------------------------------------------------------------
 // XAccessibleExtendedComponent
 // -----------------------------------------------------------------------------
-Reference< awt::XFont > SAL_CALL VCLXAccessibleToolBoxItem::getFont(	) throw (RuntimeException)
+Reference< awt::XFont > SAL_CALL VCLXAccessibleToolBoxItem::getFont(	)
 {
 	return uno::Reference< awt::XFont >();
 }
 // -----------------------------------------------------------------------------
-awt::FontDescriptor SAL_CALL VCLXAccessibleToolBoxItem::getFontMetrics( const Reference< awt::XFont >& xFont ) throw (RuntimeException)
+awt::FontDescriptor SAL_CALL VCLXAccessibleToolBoxItem::getFontMetrics( const Reference< awt::XFont >& xFont )
 {
 	return xFont->getFontDescriptor();
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getTitledBorderText(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getTitledBorderText(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -631,7 +631,7 @@ awt::FontDescriptor SAL_CALL VCLXAccessibleToolBoxItem::getFontMetrics( const Re
 	return sRet;
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getToolTipText(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL VCLXAccessibleToolBoxItem::getToolTipText(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -651,13 +651,13 @@ awt::FontDescriptor SAL_CALL VCLXAccessibleToolBoxItem::getFontMetrics( const Re
 // -----------------------------------------------------------------------------
 // XAccessibleAction
 // -----------------------------------------------------------------------------
-sal_Int32 VCLXAccessibleToolBoxItem::getAccessibleActionCount( ) throw (RuntimeException)
+sal_Int32 VCLXAccessibleToolBoxItem::getAccessibleActionCount( )
 {
 	// only one action -> "Click"
 	return 1;
 }
 // -----------------------------------------------------------------------------
-sal_Bool VCLXAccessibleToolBoxItem::doAccessibleAction ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool VCLXAccessibleToolBoxItem::doAccessibleAction ( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -670,7 +670,7 @@ sal_Bool VCLXAccessibleToolBoxItem::doAccessibleAction ( sal_Int32 nIndex ) thro
 	return sal_True;
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString VCLXAccessibleToolBoxItem::getAccessibleActionDescription ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+::rtl::OUString VCLXAccessibleToolBoxItem::getAccessibleActionDescription ( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -680,7 +680,7 @@ sal_Bool VCLXAccessibleToolBoxItem::doAccessibleAction ( sal_Int32 nIndex ) thro
 	return ::rtl::OUString( TK_RES_STRING( RID_STR_ACC_ACTION_CLICK ) );
 }
 // -----------------------------------------------------------------------------
-Reference< XAccessibleKeyBinding > VCLXAccessibleToolBoxItem::getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessibleKeyBinding > VCLXAccessibleToolBoxItem::getAccessibleActionKeyBinding( sal_Int32 nIndex )
 {
 	OContextEntryGuard aGuard( this );
 
@@ -692,7 +692,7 @@ Reference< XAccessibleKeyBinding > VCLXAccessibleToolBoxItem::getAccessibleActio
 // -----------------------------------------------------------------------------
 // XAccessibleValue
 // -----------------------------------------------------------------------------
-Any VCLXAccessibleToolBoxItem::getCurrentValue(  ) throw (RuntimeException)
+Any VCLXAccessibleToolBoxItem::getCurrentValue(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -705,7 +705,7 @@ Any VCLXAccessibleToolBoxItem::getCurrentValue(  ) throw (RuntimeException)
 	return aValue;
 }
 // -----------------------------------------------------------------------------
-sal_Bool VCLXAccessibleToolBoxItem::setCurrentValue( const Any& aNumber ) throw (RuntimeException)
+sal_Bool VCLXAccessibleToolBoxItem::setCurrentValue( const Any& aNumber )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -728,12 +728,12 @@ sal_Bool VCLXAccessibleToolBoxItem::setCurrentValue( const Any& aNumber ) throw 
 	return bReturn;
 }
 // -----------------------------------------------------------------------------
-Any VCLXAccessibleToolBoxItem::getMaximumValue(  ) throw (RuntimeException)
+Any VCLXAccessibleToolBoxItem::getMaximumValue(  )
 {
 	return makeAny((sal_Int32)1);
 }
 // -----------------------------------------------------------------------------
-Any VCLXAccessibleToolBoxItem::getMinimumValue(  ) throw (RuntimeException)
+Any VCLXAccessibleToolBoxItem::getMinimumValue(  )
 {
 	return makeAny((sal_Int32)0);
 }
