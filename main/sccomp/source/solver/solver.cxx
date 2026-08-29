@@ -332,14 +332,16 @@ void SAL_CALL SolverComponent::solve()
             aCellsHash[aCellAddr].reserve( nVariables + 1 );            // constraints: right hand side
     }
 
-    // set all variables to zero
-    //! store old values?
-    //! use old values as initial values?
-    std::vector<table::CellAddress>::const_iterator aVarIter;
-    for ( aVarIter = aVariableCells.begin(); aVarIter != aVariableCells.end(); ++aVarIter )
+    // Save the current values of the changing cells for use as a possible
+    // initial solution, then reset the cells to zero for model construction.
+    std::vector<double> aInitValues(nVariables);
+    for (nVar = 0; nVar < nVariables; ++nVar)
     {
-        lcl_SetValue( mxDoc, *aVarIter, 0.0 );
+        // read current value of the variable cell and store as initial value
+        aInitValues[nVar] = lcl_GetValue( mxDoc, aVariableCells[nVar] );
+        lcl_SetValue( mxDoc, aVariableCells[nVar], 0.0 );
     }
+    std::vector<table::CellAddress>::const_iterator aVarIter;
 
     // read initial values from all dependent cells
     ScSolverCellHashMap::iterator aCellsIter;
@@ -546,6 +548,19 @@ void SAL_CALL SolverComponent::solve()
                     NULL, NULL, NULL );
     nResult = CoinLoadInteger( hProb, pColType );
 
+    // Supply the current variable values as a possible initial solution.
+    // Pass the spreadsheet values unchanged; CoinMP/CBC is responsible for
+    // validating the supplied initial solution.
+    if ( nResult == SOLV_CALL_SUCCESS && !aInitValues.empty() )
+    {
+        int nLoadRc = CoinLoadInitValues( hProb, aInitValues.data() );
+        if ( nLoadRc != SOLV_CALL_SUCCESS )
+        {
+            // Non-fatal: initial values are an optimization hint only; proceed without them.
+            OSL_TRACE("CoinLoadInitValues failed: %d\n", nLoadRc);
+        }
+    }
+
     delete[] pColType;
     delete[] pMatrixIndex;
     delete[] pMatrix;
@@ -569,7 +584,7 @@ void SAL_CALL SolverComponent::solve()
     {
         // report invalid model
 
-	maStatus = lcl_GetResourceString( RID_ERROR_INVALIDMODEL );
+       maStatus = lcl_GetResourceString( RID_ERROR_INVALIDMODEL );
         CoinUnloadProblem(hProb);
         return;
     }
