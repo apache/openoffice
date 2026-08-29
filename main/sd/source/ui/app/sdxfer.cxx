@@ -792,7 +792,7 @@ void SdTransferable::SetPageBookmarks( const List& rPageBookmarks, sal_Bool bPer
 
 // -----------------------------------------------------------------------------
 
-sal_Int64 SAL_CALL SdTransferable::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw( ::com::sun::star::uno::RuntimeException )
+sal_Int64 SAL_CALL SdTransferable::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId )
 {
 	sal_Int64 nRet;
 

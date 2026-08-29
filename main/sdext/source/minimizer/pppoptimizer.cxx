@@ -63,7 +63,6 @@ PPPOptimizer::~PPPOptimizer()
 // -----------------------------------------------------------------------------
 
 void SAL_CALL PPPOptimizer::initialize( const Sequence< Any >& aArguments )
-	throw ( Exception, RuntimeException )
 {
     OSL_TRACE("PPPOptimizer::initialize");
 	if( aArguments.getLength() != 1 )
@@ -80,19 +79,16 @@ void SAL_CALL PPPOptimizer::initialize( const Sequence< Any >& aArguments )
 // -----------------------------------------------------------------------------
 
 OUString SAL_CALL PPPOptimizer::getImplementationName()
-	throw ( RuntimeException )
 {
 	return PPPOptimizer_getImplementationName();
 }
 
 sal_Bool SAL_CALL PPPOptimizer::supportsService( const OUString& rServiceName )
-	throw ( RuntimeException )
 {
     return rServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( SERVICE_NAME ) );
 }
 
 Sequence< OUString > SAL_CALL PPPOptimizer::getSupportedServiceNames()
-	throw ( RuntimeException )
 {
     return PPPOptimizer_getSupportedServiceNames();
 }
@@ -102,7 +98,7 @@ Sequence< OUString > SAL_CALL PPPOptimizer::getSupportedServiceNames()
 // -----------------------------------------------------------------------------
 
 Reference< com::sun::star::frame::XDispatch > SAL_CALL PPPOptimizer::queryDispatch(
-	const URL& aURL, const ::rtl::OUString& /* aTargetFrameName */, sal_Int32 /* nSearchFlags */ ) throw( RuntimeException )
+	const URL& aURL, const ::rtl::OUString& /* aTargetFrameName */, sal_Int32 /* nSearchFlags */ )
 {
 	Reference < XDispatch > xRet;
     if ( aURL.Protocol.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM(
@@ -117,7 +113,7 @@ Reference< com::sun::star::frame::XDispatch > SAL_CALL PPPOptimizer::queryDispat
 //------------------------------------------------------------------------------
 
 Sequence< Reference< com::sun::star::frame::XDispatch > > SAL_CALL PPPOptimizer::queryDispatches(
-	const Sequence< com::sun::star::frame::DispatchDescriptor >& aDescripts ) throw( RuntimeException )
+	const Sequence< com::sun::star::frame::DispatchDescriptor >& aDescripts )
 {
 	Sequence< Reference< com::sun::star::frame::XDispatch> > aReturn( aDescripts.getLength() );
 	Reference< com::sun::star::frame::XDispatch>* pReturn = aReturn.getArray();
@@ -134,7 +130,6 @@ Sequence< Reference< com::sun::star::frame::XDispatch > > SAL_CALL PPPOptimizer:
 // -----------------------------------------------------------------------------
 
 void SAL_CALL PPPOptimizer::dispatch( const URL& rURL, const Sequence< PropertyValue >& lArguments )
-    throw( RuntimeException )
 {
     OSL_TRACE("PPPOptimizer::dispatch");
 	if ( mxController.is() && rURL.Protocol.equalsAsciiL(
@@ -161,7 +156,6 @@ void SAL_CALL PPPOptimizer::dispatch( const URL& rURL, const Sequence< PropertyV
 
 //===============================================
 void SAL_CALL PPPOptimizer::addStatusListener( const Reference< XStatusListener >&, const URL& )
-	throw( RuntimeException )
 {
     // TODO
     OSL_ENSURE( sal_False, "PPPOptimizer::addStatusListener()\nNot implemented yet!" );
@@ -169,7 +163,6 @@ void SAL_CALL PPPOptimizer::addStatusListener( const Reference< XStatusListener 
 
 //===============================================
 void SAL_CALL PPPOptimizer::removeStatusListener( const Reference< XStatusListener >&, const URL& )
-    throw( RuntimeException )
 {
     // TODO
     OSL_ENSURE( sal_False, "PPPOptimizer::removeStatusListener()\nNot implemented yet!" );
@@ -208,7 +201,6 @@ Sequence< OUString > PPPOptimizer_getSupportedServiceNames()
 }
 
 Reference< XInterface > PPPOptimizer_createInstance( const Reference< XComponentContext > & rSMgr )
-	throw( Exception )
 {
 	return (cppu::OWeakObject*) new PPPOptimizer( rSMgr );
 }

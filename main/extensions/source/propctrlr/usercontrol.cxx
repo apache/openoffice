@@ -103,7 +103,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------
-	void SAL_CALL OFormatSampleControl::setValue( const Any& _rValue ) throw (IllegalTypeException, RuntimeException)
+	void SAL_CALL OFormatSampleControl::setValue( const Any& _rValue )
 	{
         sal_Int32 nFormatKey = 0;
         if ( _rValue >>= nFormatKey )
@@ -161,7 +161,7 @@ namespace pcr
         return nValue;
     }
 	//------------------------------------------------------------------
-	Any SAL_CALL OFormatSampleControl::getValue() throw (RuntimeException)
+	Any SAL_CALL OFormatSampleControl::getValue()
 	{
         Any aPropValue;
 		if ( getTypedControlWindow()->GetText().Len() )
@@ -170,7 +170,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------
-    Type SAL_CALL OFormatSampleControl::getValueType() throw (RuntimeException)
+    Type SAL_CALL OFormatSampleControl::getValueType()
     {
         return ::getCppuType( static_cast< sal_Int32* >( NULL ) );
     }
@@ -197,7 +197,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------
-	void SAL_CALL OFormattedNumericControl::setValue( const Any& _rValue ) throw (IllegalTypeException, RuntimeException)
+	void SAL_CALL OFormattedNumericControl::setValue( const Any& _rValue )
 	{
         double nValue( 0 );
         if ( _rValue >>= nValue )
@@ -207,7 +207,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------
-	Any SAL_CALL OFormattedNumericControl::getValue() throw (RuntimeException)
+	Any SAL_CALL OFormattedNumericControl::getValue()
 	{
         Any aPropValue;
 		if ( getTypedControlWindow()->GetText().Len() )
@@ -216,7 +216,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------
-    Type SAL_CALL OFormattedNumericControl::getValueType() throw (RuntimeException)
+    Type SAL_CALL OFormattedNumericControl::getValueType()
     {
         return ::getCppuType( static_cast< double* >( NULL ) );
     }
@@ -288,7 +288,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------
-	void SAL_CALL OFileUrlControl::setValue( const Any& _rValue ) throw (IllegalTypeException, RuntimeException)
+	void SAL_CALL OFileUrlControl::setValue( const Any& _rValue )
     {
         ::rtl::OUString sURL;
         if ( ( _rValue >>= sURL ) )
@@ -303,7 +303,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------
-	Any SAL_CALL OFileUrlControl::getValue() throw (RuntimeException)
+	Any SAL_CALL OFileUrlControl::getValue()
     {
         Any aPropValue;
         if ( getTypedControlWindow()->GetText().Len() )
@@ -312,7 +312,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------
-    Type SAL_CALL OFileUrlControl::getValueType() throw (RuntimeException)
+    Type SAL_CALL OFileUrlControl::getValueType()
     {
         return ::getCppuType( static_cast< ::rtl::OUString* >( NULL ) );
     }
@@ -335,7 +335,7 @@ namespace pcr
     }
 
 	//------------------------------------------------------------------
-    ::sal_Int16 SAL_CALL OTimeDurationControl::getControlType() throw (::com::sun::star::uno::RuntimeException)
+    ::sal_Int16 SAL_CALL OTimeDurationControl::getControlType()
     {
         // don't use the base class'es method, it would claim we're a standard control, which
         // we in fact aren't

@@ -31,6 +31,17 @@
 #pragma warning(disable:4273)		// inconsistent dll linkage
 #endif
 
+/*	uwinapi implements C99 snprintf/vsnprintf because VC9's CRT has neither.
+	A CRT from VS2015 onwards supplies both itself, and defining ours on top of
+	its declarations is a redefinition with different linkage (C2375) -- the
+	same conflict systools/win32/snprintf.h avoids for the DECLARATIONS, here
+	for the DEFINITIONS. On such a runtime this file therefore contributes
+	nothing and the CRT's own implementations are used; on every runtime the
+	XP-era targets build against it is unchanged. Nothing is lost by leaving it
+	out: these symbols are exported only by Uwinapi.def (x86), never by
+	Uwinapi64.def, which exports SHCreateItemFromParsingName alone. */
+#if !defined(_MSC_VER) || (_MSC_VER < 1900)
+
 #if (defined(_MSC_VER) && (_MSC_VER < 1300)) || (defined(__MINGW32_VERSION) && ((__MINGW32_MAJOR_VERSION < 3)||((__MINGW32_MAJOR_VERSION == 3)&&(__MINGW32_MINOR_VERSION < 18))))
 
 /*	The non-debug versions of _vscprintf/_scprintf are just calls
@@ -137,3 +148,5 @@ _SNPRINTF_DLLIMPORT int __cdecl sntprintf( _TCHAR *buffer, size_t count, const _
 
 	return retval;
 }
+
+#endif /* CRT without a conforming snprintf */

@@ -38,19 +38,19 @@ ScVbaSpinButton::ScVbaSpinButton(  const css::uno::Reference< ov::XHelperInterfa
 
 // Attributes
 uno::Any SAL_CALL
-ScVbaSpinButton::getValue() throw (css::uno::RuntimeException)
+ScVbaSpinButton::getValue()
 {
     return  m_xProps->getPropertyValue( SPINVALUE );
 }
 
 void SAL_CALL
-ScVbaSpinButton::setValue( const uno::Any& _value ) throw (::com::sun::star::uno::RuntimeException)
+ScVbaSpinButton::setValue( const uno::Any& _value )
 {
     m_xProps->setPropertyValue( SPINVALUE, _value );
 }
 
 ::sal_Int32 SAL_CALL
-ScVbaSpinButton::getMax() throw (uno::RuntimeException)
+ScVbaSpinButton::getMax()
 {
     sal_Int32 nMax = 0;
     m_xProps->getPropertyValue( SPINMAX ) >>= nMax;
@@ -58,13 +58,13 @@ ScVbaSpinButton::getMax() throw (uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaSpinButton::setMax( sal_Int32 nVal ) throw (uno::RuntimeException)
+ScVbaSpinButton::setMax( sal_Int32 nVal )
 {
     m_xProps->setPropertyValue( SPINMAX, uno::makeAny( nVal ) );
 }
 
 ::sal_Int32 SAL_CALL
-ScVbaSpinButton::getMin() throw (uno::RuntimeException)
+ScVbaSpinButton::getMin()
 {
     sal_Int32 nVal = 0;
     m_xProps->getPropertyValue( SPINMIN ) >>= nVal;
@@ -72,7 +72,7 @@ ScVbaSpinButton::getMin() throw (uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaSpinButton::setMin( sal_Int32 nVal ) throw (uno::RuntimeException)
+ScVbaSpinButton::setMin( sal_Int32 nVal )
 {
     m_xProps->setPropertyValue( SPINMIN, uno::makeAny( nVal ) );
 }

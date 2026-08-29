@@ -1,0 +1,70 @@
+--- misc/CoinMP-1.8.4/CoinMP/MSVisualStudio/v10/CoinMP.sln
++++ misc/build/CoinMP-1.8.4/CoinMP/MSVisualStudio/v10/CoinMP.sln
+@@ -2,15 +2,15 @@
+ Microsoft Visual Studio Solution File, Format Version 11.00
+ # Visual Studio 2010
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libClp", "..\..\..\Clp\MSVisualStudio\v9\libClp\libClp.vcxproj", "{4F8F7D1C-3A9E-444D-8EE9-77F33FA05994}"
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libClp", "..\..\..\Clp\MSVisualStudio\v10\libClp\libClp.vcxproj", "{4F8F7D1C-3A9E-444D-8EE9-77F33FA05994}"
+ EndProject
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCoinUtils", "..\..\..\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcxproj", "{C4867F15-438D-4FF8-8388-62FBAAA9786C}"
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCoinUtils", "..\..\..\CoinUtils\MSVisualStudio\v10\libCoinUtils\libCoinUtils.vcxproj", "{C4867F15-438D-4FF8-8388-62FBAAA9786C}"
+ EndProject
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCgl", "..\..\..\Cgl\MSVisualStudio\v9\libCgl\libCgl.vcxproj", "{DBEA3904-F0B8-408A-9E1A-6497FEBE8C42}"
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCgl", "..\..\..\Cgl\MSVisualStudio\v10\libCgl\libCgl.vcxproj", "{DBEA3904-F0B8-408A-9E1A-6497FEBE8C42}"
+ EndProject
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCbc", "..\..\..\Cbc\MSVisualStudio\v9\libCbc\libCbc.vcxproj", "{363BA154-FEC9-4E1E-BC23-93CEC58AB785}"
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCbc", "..\..\..\Cbc\MSVisualStudio\v10\libCbc\libCbc.vcxproj", "{363BA154-FEC9-4E1E-BC23-93CEC58AB785}"
+ EndProject
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libOsi", "..\..\..\Osi\MSVisualStudio\v9\libOsi\libOsi.vcxproj", "{7D98E2CB-876E-4F75-9F71-77D3FE87E149}"
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libOsi", "..\..\..\Osi\MSVisualStudio\v10\libOsi\libOsi.vcxproj", "{7D98E2CB-876E-4F75-9F71-77D3FE87E149}"
+ EndProject
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libOsiClp", "..\..\..\Clp\MSVisualStudio\v9\libOsiClp\libOsiClp.vcxproj", "{02D45875-A8CF-41B9-990B-3699C0ECFE10}"
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libOsiClp", "..\..\..\Clp\MSVisualStudio\v10\libOsiClp\libOsiClp.vcxproj", "{02D45875-A8CF-41B9-990B-3699C0ECFE10}"
+ EndProject
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoinMP", "CoinMP\CoinMP.vcxproj", "{175F0674-F0B9-479C-9C9D-76969C06D794}"
+@@ -18,5 +18,5 @@
+ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unitTest", "unitTest\unitTest.vcxproj", "{9F2D36EA-6D9E-42CB-A648-BCC0CB3E68E6}"
+ EndProject
+-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCbcSolver", "..\..\..\Cbc\MSVisualStudio\v9\libCbcSolver\libCbcSolver.vcxproj", "{71DA4595-E8A7-4B21-A00A-D96D29D11E3E}"
++Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCbcSolver", "..\..\..\Cbc\MSVisualStudio\v10\libCbcSolver\libCbcSolver.vcxproj", "{71DA4595-E8A7-4B21-A00A-D96D29D11E3E}"
+ EndProject
+ Global
+--- misc/CoinMP-1.8.4/CoinMP/MSVisualStudio/v10/CoinMP/CoinMP.vcxproj
++++ misc/build/CoinMP-1.8.4/CoinMP/MSVisualStudio/v10/CoinMP/CoinMP.vcxproj
+@@ -199,29 +199,29 @@
+   </ItemGroup>
+   <ItemGroup>
+-    <ProjectReference Include="..\..\..\..\Cbc\MSVisualStudio\v9\libCbcSolver\libCbcSolver.vcxproj">
++    <ProjectReference Include="..\..\..\..\Cbc\MSVisualStudio\v10\libCbcSolver\libCbcSolver.vcxproj">
+       <Project>{71da4595-e8a7-4b21-a00a-d96d29d11e3e}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+     </ProjectReference>
+-    <ProjectReference Include="..\..\..\..\Cbc\MSVisualStudio\v9\libCbc\libCbc.vcxproj">
++    <ProjectReference Include="..\..\..\..\Cbc\MSVisualStudio\v10\libCbc\libCbc.vcxproj">
+       <Project>{363ba154-fec9-4e1e-bc23-93cec58ab785}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+     </ProjectReference>
+-    <ProjectReference Include="..\..\..\..\Cgl\MSVisualStudio\v9\libCgl\libCgl.vcxproj">
++    <ProjectReference Include="..\..\..\..\Cgl\MSVisualStudio\v10\libCgl\libCgl.vcxproj">
+       <Project>{dbea3904-f0b8-408a-9e1a-6497febe8c42}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+     </ProjectReference>
+-    <ProjectReference Include="..\..\..\..\Clp\MSVisualStudio\v9\libClp\libClp.vcxproj">
++    <ProjectReference Include="..\..\..\..\Clp\MSVisualStudio\v10\libClp\libClp.vcxproj">
+       <Project>{4f8f7d1c-3a9e-444d-8ee9-77f33fa05994}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+     </ProjectReference>
+-    <ProjectReference Include="..\..\..\..\Clp\MSVisualStudio\v9\libOsiClp\libOsiClp.vcxproj">
++    <ProjectReference Include="..\..\..\..\Clp\MSVisualStudio\v10\libOsiClp\libOsiClp.vcxproj">
+       <Project>{02d45875-a8cf-41b9-990b-3699c0ecfe10}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+     </ProjectReference>
+-    <ProjectReference Include="..\..\..\..\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcxproj">
++    <ProjectReference Include="..\..\..\..\CoinUtils\MSVisualStudio\v10\libCoinUtils\libCoinUtils.vcxproj">
+       <Project>{c4867f15-438d-4ff8-8388-62fbaaa9786c}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+     </ProjectReference>
+-    <ProjectReference Include="..\..\..\..\Osi\MSVisualStudio\v9\libOsi\libOsi.vcxproj">
++    <ProjectReference Include="..\..\..\..\Osi\MSVisualStudio\v10\libOsi\libOsi.vcxproj">
+       <Project>{7d98e2cb-876e-4f75-9f71-77d3fe87e149}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

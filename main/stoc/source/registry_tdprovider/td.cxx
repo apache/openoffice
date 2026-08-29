@@ -60,13 +60,11 @@ TypeDescriptionImpl::~TypeDescriptionImpl()
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass TypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _eTypeClass;
 }
 //__________________________________________________________________________________________________
 OUString TypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aName;
 }

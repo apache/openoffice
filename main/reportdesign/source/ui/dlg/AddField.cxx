@@ -274,7 +274,7 @@ long OAddFieldWindow::PreNotify( NotifyEvent& _rNEvt )
 	return FloatingWindow::PreNotify( _rNEvt );
 }
 //-----------------------------------------------------------------------
-void OAddFieldWindow::_propertyChanged( const beans::PropertyChangeEvent& _evt ) throw( uno::RuntimeException )
+void OAddFieldWindow::_propertyChanged( const beans::PropertyChangeEvent& _evt )
 {
     OSL_ENSURE( _evt.Source == m_xRowSet, "OAddFieldWindow::_propertyChanged: where did this come from?" );
 	(void)_evt;
@@ -459,7 +459,7 @@ void OAddFieldWindow::fillDescriptor(SvLBoxEntry* _pSelected,::svx::ODataAccessD
     }
 }
 // -----------------------------------------------------------------------------
-void OAddFieldWindow::_elementInserted( const container::ContainerEvent& _rEvent )  throw(::com::sun::star::uno::RuntimeException)
+void OAddFieldWindow::_elementInserted( const container::ContainerEvent& _rEvent )
 {
     if ( m_pListBox.get() )
     {
@@ -478,7 +478,7 @@ void OAddFieldWindow::_elementInserted( const container::ContainerEvent& _rEvent
     }
 }
 // -----------------------------------------------------------------------------
-void OAddFieldWindow::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void OAddFieldWindow::_elementRemoved( const container::ContainerEvent& /*_rEvent*/ )
 {
     if ( m_pListBox.get() )
     {
@@ -488,7 +488,7 @@ void OAddFieldWindow::_elementRemoved( const container::ContainerEvent& /*_rEven
     }
 }
 // -----------------------------------------------------------------------------
-void OAddFieldWindow::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ ) throw(::com::sun::star::uno::RuntimeException)
+void OAddFieldWindow::_elementReplaced( const container::ContainerEvent& /*_rEvent*/ )
 {
 }
 // -----------------------------------------------------------------------------

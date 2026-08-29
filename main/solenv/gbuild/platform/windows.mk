@@ -189,6 +189,66 @@ gb_STDLIBS := \
     msvcrt \
     oldnames \
 
+# Compiler flags that must NOT reach makedepend.  gbuild hands the same flag
+# list to the compiler and to makedepend, and makedepend is an X11-era tool
+# that parses the list itself rather than ignoring what it does not know.
+# Empty by default, so a VC9 build passes exactly what it passed before.
+gb_MakeDepend_FILTEROUT :=
+
+# The UCRT compiler generation -- COMEX 14, i.e. VS2015 (cl 19.00) and every
+# toolset since.  This mirrors solenv/inc/wntmsc14.mk, which carries the same
+# delta for the dmake half of the build.  The two have to agree: a module built
+# by one links against libraries built by the other.  See that file for the
+# reasoning behind each of these.
+ifeq ($(COMEX),14)
+
+# C++14, not 17.  std::tr1 -- which boost/tr1 and the stlport shims name
+# directly -- is only present while _HAS_CXX17 is 0; the tree is still full of
+# empty exception specifications, which C++20 removes; and <hash_map> and
+# <hash_set> become a hard #error under C++17.  /std:c++03 is not an escape,
+# a modern cl rejects it outright (D9002).
+gb_CXXFLAGS += -std:c++14
+
+# ...and makedepend must never see it.  -s is one of makedepend's OWN options
+# -- the start delimiter it writes above the dependencies, which has to begin
+# with '#'.  It reads -std:c++14 as that option with an illegal value, prints
+#
+#     makedepend.exe: error:  -s flag's value should start with '#'.
+#
+# and exits before scanning anything.  The .d file is still created and still
+# holds its target line, so make is happy and the build succeeds -- but it
+# lists no prerequisites at all, and every header change stops triggering a
+# rebuild.  Nothing about that is visible from a clean build, which is why it
+# is called out at this length.
+gb_MakeDepend_FILTEROUT += -std:%
+
+# Without this MSVC reports __cplusplus as 199711L whatever /std: says, and
+# the shims in main/stlport/systemstl branch on that value.
+gb_CXXFLAGS += -Zc:__cplusplus
+
+# The two halves of the old snprintf shim are not symmetric.  The UCRT
+# declares a real snprintf and refuses to compile with the name taken (C1189);
+# it has never declared snwprintf, because the wide C99 name has never existed
+# in any MSVC CRT.  So one half is dropped and the other kept.
+gb_CFLAGS += -Dsnwprintf=_snwprintf
+gb_CXXFLAGS += -Dsnwprintf=_snwprintf
+
+# stdext::hash_map and stdext::hash_set are deprecated to the point of a hard
+# #error.  These are the stdext containers, not std::unordered_map, so
+# replacing them is a refactor and not a build fix.
+gb_CFLAGS += -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
+gb_CXXFLAGS += -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
+
+# Warnings a modern cl adds in volume, every one of them a report about old
+# code: C4996 deprecated CRT and POSIX names, C4577 noexcept without an
+# exception handling mode (this build passes -EHa, which is one, but the
+# warning fires on the empty specifications anyway), C5040 an exception
+# specification on a function pointer type.
+gb_CFLAGS += -wd4996
+gb_CXXFLAGS += -wd4996 -wd4577 -wd5040
+
+endif
+
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
 gb_CFLAGS_WERROR := -WX
 gb_CXXFLAGS_WERROR := -WX
@@ -300,7 +360,7 @@ ifeq ($(gb_FULLDEPS),$(true))
 define gb_Object__command_deponcompile
 $(call gb_Helper_abbreviate_dirs_native,\
 	$(OUTDIR)/bin/makedepend$(gb_Executable_EXT) \
-		$(filter-out -DPRECOMPILED_HEADERS,$(4)) $(5) \
+		$(filter-out -DPRECOMPILED_HEADERS $(gb_MakeDepend_FILTEROUT),$(4)) $(filter-out $(gb_MakeDepend_FILTEROUT),$(5)) \
 		-I$(dir $(3)) \
 		$(filter-out -I$(COMPATH)% %/pch -I$(JAVA_HOME)%,$(6)) \
 		$(3) \
@@ -366,7 +426,7 @@ ifeq ($(gb_FULLDEPS),$(true))
 define gb_PrecompiledHeader__command_deponcompile
 $(call gb_Helper_abbreviate_dirs_native,\
 	$(OUTDIR)/bin/makedepend$(gb_Executable_EXT) \
-		$(4) $(5) \
+		$(filter-out $(gb_MakeDepend_FILTEROUT),$(4) $(5)) \
 		-I$(dir $(3)) \
 		$(filter-out -I$(COMPATH)% -I$(JAVA_HOME)%,$(6)) \
 		$(3) \
@@ -408,7 +468,7 @@ ifeq ($(gb_FULLDEPS),$(true))
 define gb_NoexPrecompiledHeader__command_deponcompile
 $(call gb_Helper_abbreviate_dirs_native,\
 	$(OUTDIR)/bin/makedepend$(gb_Executable_EXT) \
-		$(4) $(5) \
+		$(filter-out $(gb_MakeDepend_FILTEROUT),$(4) $(5)) \
 		-I$(dir $(3)) \
 		$(filter-out -I$(COMPATH)% -I$(JAVA_HOME)%,$(6)) \
 		$(3) \
@@ -536,6 +596,21 @@ gb_Library_PLAINLIBS_NONE += \
 	winspool \
 	ws2_32 \
 	wsock32
+
+# The CRT split in three when the UCRT arrived: msvcrt.lib is the startup and
+# import library, vcruntime.lib the compiler runtime, ucrt.lib the C library
+# proper.  This build links -NODEFAULTLIB, so the /DEFAULTLIB directives cl
+# emits are ignored and every part has to be named -- but gbuild refuses to
+# link a library it has not been told about, so they are registered here
+# first.  Both statements sit together because doing only one of them fails
+# late and confusingly ("Cannot link against library/libraries ...").
+ifeq ($(COMEX),14)
+gb_Library_PLAINLIBS_NONE += \
+	ucrt \
+	vcruntime
+
+gb_STDLIBS += vcruntime ucrt
+endif
 
 gb_Library_LAYER := \
 	$(foreach lib,$(gb_Library_OOOLIBS),$(lib):OOO) \
@@ -691,8 +766,20 @@ $(call gb_LinkTarget_set_auxtargets,$(2),\
 	$(call gb_LinkTarget_get_target,$(2)).manifest \
 )
 
+# VC9 linked an external <exe>.manifest beside every executable, because the
+# CRT it used was a side-by-side assembly that had to be named there.  The UCRT
+# is not an assembly, so a modern link emits no manifest at all -- and
+# delivering an auxiliary target that was never produced fails the build with
+# "cp: cannot stat ...xml2cmp.exe.manifest".  The link rule itself already
+# copes, embedding a manifest only "if [ -f ... ]"; only this delivery list
+# assumed one.
+ifeq ($(COMEX),14)
+$(call gb_Executable_get_target,$(1)) \
+$(call gb_Executable_get_clean_target,$(1)) : AUXTARGETS :=
+else
 $(call gb_Executable_get_target,$(1)) \
 $(call gb_Executable_get_clean_target,$(1)) : AUXTARGETS := $(call gb_Executable_get_target,$(1)).manifest
+endif
 
 $(call gb_LinkTarget_get_target,$(2)) \
 $(call gb_LinkTarget_get_headers_target,$(2)) : PDBFILE = $(call gb_LinkTarget_get_pdbfile,$(2))

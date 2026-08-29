@@ -76,19 +76,19 @@ private:
 protected:
 
 	// XFilter
-    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor ) throw(RuntimeException);
-    virtual void SAL_CALL cancel( ) throw (RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor );
+    virtual void SAL_CALL cancel( );
 
 	// XExporter
-    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc ) throw(IllegalArgumentException, RuntimeException);
+    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// XServiceInfo
-    virtual OUString SAL_CALL getImplementationName() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()  throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 public:
 
@@ -98,23 +98,19 @@ public:
 
 // -----------------------------------------------------------------------------
 
-OUString PDFFilter_getImplementationName ()
-	throw ( RuntimeException );
+OUString PDFFilter_getImplementationName ();
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL PDFFilter_supportsService( const OUString& ServiceName )
-	throw ( RuntimeException );
+sal_Bool SAL_CALL PDFFilter_supportsService( const OUString& ServiceName );
 
 // -----------------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL PDFFilter_getSupportedServiceNames(  )
-	throw ( RuntimeException );
+Sequence< OUString > SAL_CALL PDFFilter_getSupportedServiceNames(  );
 
 // -----------------------------------------------------------------------------
 
 Reference< XInterface >
-SAL_CALL PDFFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
-	throw ( Exception );
+SAL_CALL PDFFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr);
 
 #endif // PDFFILTER_HXX

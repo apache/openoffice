@@ -56,7 +56,6 @@ namespace comphelper {
 
 // -----------------------------------
 uno::Sequence< uno::Sequence< beans::StringPair > > SAL_CALL OFOPXMLHelper::ReadRelationsInfoSequence( const uno::Reference< io::XInputStream >& xInStream, const ::rtl::OUString aStreamName, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	::rtl::OUString aStringID = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "_rels/" ) );
 	aStringID += aStreamName;
@@ -65,7 +64,6 @@ uno::Sequence< uno::Sequence< beans::StringPair > > SAL_CALL OFOPXMLHelper::Read
 
 // -----------------------------------
 uno::Sequence< uno::Sequence< beans::StringPair > > SAL_CALL OFOPXMLHelper::ReadContentTypeSequence( const uno::Reference< io::XInputStream >& xInStream, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	::rtl::OUString aStringID = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "[Content_Types].xml" ) );
 	return ReadSequence_Impl( xInStream, aStringID, CONTENTTYPE_FORMAT, xFactory );
@@ -73,7 +71,6 @@ uno::Sequence< uno::Sequence< beans::StringPair > > SAL_CALL OFOPXMLHelper::Read
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::WriteRelationsInfoSequence( const uno::Reference< io::XOutputStream >& xOutStream, const uno::Sequence< uno::Sequence< beans::StringPair > >& aSequence, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	if ( !xOutStream.is() )
 		throw uno::RuntimeException();
@@ -138,7 +135,6 @@ void SAL_CALL OFOPXMLHelper::WriteRelationsInfoSequence( const uno::Reference< i
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::WriteContentSequence( const uno::Reference< io::XOutputStream >& xOutStream, const uno::Sequence< beans::StringPair >& aDefaultsSequence, const uno::Sequence< beans::StringPair >& aOverridesSequence, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	if ( !xOutStream.is() )
 		throw uno::RuntimeException();
@@ -205,7 +201,6 @@ void SAL_CALL OFOPXMLHelper::WriteContentSequence( const uno::Reference< io::XOu
 
 // -----------------------------------
 uno::Sequence< uno::Sequence< beans::StringPair > > SAL_CALL OFOPXMLHelper::ReadSequence_Impl( const uno::Reference< io::XInputStream >& xInStream, const ::rtl::OUString& aStringID, sal_uInt16 nFormat, const uno::Reference< lang::XMultiServiceFactory > xFactory )
-	throw( uno::Exception )
 {
 	if ( !xFactory.is() || !xInStream.is() || nFormat > FORMAT_MAX_ID )
 		throw uno::RuntimeException();
@@ -260,19 +255,16 @@ uno::Sequence< uno::Sequence< beans::StringPair > > OFOPXMLHelper::GetParsingRes
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::startDocument()
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::endDocument()
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::startElement( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs )
-		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	if ( m_nFormat == RELATIONINFO_FORMAT )
 	{
@@ -420,7 +412,6 @@ void SAL_CALL OFOPXMLHelper::startElement( const ::rtl::OUString& aName, const u
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::endElement( const ::rtl::OUString& aName )
-	throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	if ( m_nFormat == RELATIONINFO_FORMAT || m_nFormat == CONTENTTYPE_FORMAT )
 	{
@@ -437,25 +428,21 @@ void SAL_CALL OFOPXMLHelper::endElement( const ::rtl::OUString& aName )
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::characters( const ::rtl::OUString& /*aChars*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::ignorableWhitespace( const ::rtl::OUString& /*aWhitespaces*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::processingInstruction( const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 // -----------------------------------
 void SAL_CALL OFOPXMLHelper::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /*xLocator*/ )
-		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 

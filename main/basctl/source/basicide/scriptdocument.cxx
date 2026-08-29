@@ -89,6 +89,7 @@
 #include <algorithm>
 #include <functional>
 #include <set>
+#include <iterator>
 
 //........................................................................
 namespace basctl
@@ -290,8 +291,7 @@ namespace basctl
         bool        allowMacros() const;
 
         Reference< XNameContainer >
-                    getLibrary( LibraryContainerType _eType, const ::rtl::OUString& _rLibName, bool _bLoadLibrary ) const
-                        SAL_THROW((NoSuchElementException));
+                    getLibrary( LibraryContainerType _eType, const ::rtl::OUString& _rLibName, bool _bLoadLibrary ) const;
         bool        hasLibrary( LibraryContainerType _eType, const ::rtl::OUString& _rLibName ) const;
         Reference< XNameContainer >
                     getOrCreateLibrary( LibraryContainerType _eType, const ::rtl::OUString& _rLibName ) const;
@@ -486,7 +486,6 @@ namespace basctl
 
     //--------------------------------------------------------------------
     Reference< XNameContainer > ScriptDocument_Impl::getLibrary( LibraryContainerType _eType, const ::rtl::OUString& _rLibName, bool _bLoadLibrary ) const
-        SAL_THROW((NoSuchElementException))
     {
         OSL_ENSURE( isValid(), "ScriptDocument_Impl::getLibrary: invalid state!" );
 
@@ -1283,7 +1282,6 @@ namespace basctl
 
     //--------------------------------------------------------------------
     Reference< XNameContainer > ScriptDocument::getLibrary( LibraryContainerType _eType, const ::rtl::OUString& _rLibName, bool _bLoadLibrary ) const
-        SAL_THROW((NoSuchElementException))
     {
         return m_pImpl->getLibrary( _eType, _rLibName, _bLoadLibrary );
     }

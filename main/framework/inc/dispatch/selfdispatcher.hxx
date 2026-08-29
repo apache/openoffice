@@ -84,7 +84,7 @@ class SelfDispatcher   :   // -interfaces  ... are supported by our BaseDispatch
                                                     const css::uno::Reference< css::frame::XFrame >&              xTarget    );
 		//	XDispatch
         virtual void SAL_CALL dispatch            ( const css::util::URL&                                         aURL       ,
-                                                    const css::uno::Sequence< css::beans::PropertyValue >&        lArguments ) throw( css::uno::RuntimeException );
+                                                    const css::uno::Sequence< css::beans::PropertyValue >&        lArguments );
 
     //-------------------------------------------------------------------------------------------------------------
     //  protected methods

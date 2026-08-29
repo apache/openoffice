@@ -58,7 +58,6 @@ IdlType::~IdlType()
 }
 
 sal_Bool IdlType::dump(IdlOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -112,7 +111,6 @@ sal_Bool IdlType::dump(IdlOptions* pOptions)
 	return ret;
 }
 sal_Bool IdlType::dumpDependedTypes(IdlOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_True;
 
@@ -396,7 +394,6 @@ sal_uInt32 IdlType::getInheritedMemberCount()
 
 
 void IdlType::dumpType(FileStream& o, const OString& type )
-	throw( CannotDumpException )
 {
 	OString sType(checkRealBaseType(type, sal_True));
 	sal_uInt32 index = sType.lastIndexOf(']');
@@ -763,7 +760,6 @@ InterfaceType::~InterfaceType()
 }
 
 sal_Bool InterfaceType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "IDL"));
 	o << "\n";
@@ -1036,7 +1032,6 @@ ModuleType::~ModuleType()
 }
 
 sal_Bool ModuleType::dump(IdlOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -1099,7 +1094,6 @@ sal_Bool ModuleType::dump(IdlOptions* pOptions)
 }
 
 sal_Bool ModuleType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "IDL"));
 	o << "\n";
@@ -1173,7 +1167,6 @@ ConstantsType::~ConstantsType()
 }
 
 sal_Bool ConstantsType::dump(IdlOptions* pOptions)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -1244,7 +1237,6 @@ StructureType::~StructureType()
 }
 
 sal_Bool StructureType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "IDL"));
 	o << "\n";
@@ -1360,7 +1352,6 @@ ExceptionType::~ExceptionType()
 }
 
 sal_Bool ExceptionType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "IDL"));
 	o << "\n";
@@ -1480,7 +1471,6 @@ EnumType::~EnumType()
 }
 
 sal_Bool EnumType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "IDL"));
 	o << "\n";
@@ -1557,7 +1547,6 @@ TypeDefType::~TypeDefType()
 }
 
 sal_Bool TypeDefType::dumpHFile(FileStream& o)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "IDL"));
 	o << "\n";
@@ -1588,7 +1577,6 @@ sal_Bool produceType(const OString& typeName,
 					 TypeManager& typeMgr,
 					 TypeDependency& typeDependencies,
 					 IdlOptions* pOptions)
-	throw( CannotDumpException )
 {
 	if (typeDependencies.isGenerated(typeName))
 		return sal_True;

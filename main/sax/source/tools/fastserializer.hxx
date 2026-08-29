@@ -53,31 +53,22 @@ public:
 	static ::rtl::OUString 				                        getImplementationName_Static();
 
 	// XFastSerializer
-	virtual void SAL_CALL startDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL startFastElement( ::sal_Int32 Element, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs )
-		throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL startUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs )
-		throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endFastElement( ::sal_Int32 Element )
-		throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name )
-		throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL singleFastElement( ::sal_Int32 Element, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs )
-		throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL singleUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs )
-		throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL characters( const ::rtl::OUString& aChars )
-		throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setOutputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutputStream )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setFastTokenHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastTokenHandler >& xFastTokenHandler )
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL startDocument(  );
+    virtual void SAL_CALL endDocument(  );
+    virtual void SAL_CALL startFastElement( ::sal_Int32 Element, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs );
+    virtual void SAL_CALL startUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs );
+    virtual void SAL_CALL endFastElement( ::sal_Int32 Element );
+    virtual void SAL_CALL endUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name );
+    virtual void SAL_CALL singleFastElement( ::sal_Int32 Element, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs );
+    virtual void SAL_CALL singleUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs );
+    virtual void SAL_CALL characters( const ::rtl::OUString& aChars );
+    virtual void SAL_CALL setOutputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutputStream );
+    virtual void SAL_CALL setFastTokenHandler( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastTokenHandler >& xFastTokenHandler );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw ( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw ( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw ( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// C++ helpers
     virtual void SAL_CALL writeId( ::sal_Int32 Element );
@@ -149,7 +140,7 @@ protected:
 
         The latter in the case that we are inside a mark().
      */
-    void writeBytes( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& aData ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+    void writeBytes( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& aData );
 };
 
 } // namespace sax_fastparser

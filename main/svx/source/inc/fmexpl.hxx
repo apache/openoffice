@@ -317,16 +317,16 @@ namespace svxform
 		OFormComponentObserver( ::svxform::NavigatorTreeModel* pModel );
 
 	// XEventListenerListener
-		virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
 	// ::com::sun::star::beans::XPropertyChangeListener
-		virtual void SAL_CALL propertyChange(const ::com::sun::star::beans::PropertyChangeEvent& evt) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL propertyChange(const ::com::sun::star::beans::PropertyChangeEvent& evt);
 
 	// ::com::sun::star::container::XContainerListener
 
-		virtual void SAL_CALL elementInserted(const  ::com::sun::star::container::ContainerEvent& rEvent) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL elementReplaced(const  ::com::sun::star::container::ContainerEvent& rEvent) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL elementRemoved(const  ::com::sun::star::container::ContainerEvent& rEvent) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL elementInserted(const  ::com::sun::star::container::ContainerEvent& rEvent);
+		virtual void SAL_CALL elementReplaced(const  ::com::sun::star::container::ContainerEvent& rEvent);
+		virtual void SAL_CALL elementRemoved(const  ::com::sun::star::container::ContainerEvent& rEvent);
 
 		void Lock() { m_nLocks++; }
 		void UnLock() { m_nLocks--; }

@@ -54,10 +54,10 @@ namespace comphelper
 		OContainerListener(::osl::Mutex& _rMutex);
 		virtual ~OContainerListener();
 
-		virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void _elementRemoved( const ::com::sun::star::container::ContainerEvent& _Event ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void _disposing(const ::com::sun::star::lang::EventObject& _rSource) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void _elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent );
+		virtual void _elementRemoved( const ::com::sun::star::container::ContainerEvent& _Event );
+		virtual void _elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent );
+		virtual void _disposing(const ::com::sun::star::lang::EventObject& _rSource);
 
 	protected:
 		void setAdapter(OContainerListenerAdapter* _pAdapter);
@@ -84,12 +84,12 @@ namespace comphelper
 			const  ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainer >& _rxContainer);
 
 		// XEventListener
-		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source ) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source );
 
 		// XContainerListener
-		virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event ) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event );
+		virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event );
+		virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
 
 		// locking the multiplexer
 		void		lock();

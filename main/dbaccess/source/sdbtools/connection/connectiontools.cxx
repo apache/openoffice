@@ -92,27 +92,27 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    Reference< XTableName > SAL_CALL ConnectionTools::createTableName() throw (RuntimeException)
+    Reference< XTableName > SAL_CALL ConnectionTools::createTableName()
     {
         EntryGuard aGuard( *this );
         return new TableName( getContext(), getConnection() );
     }
 
     //--------------------------------------------------------------------
-    Reference< XObjectNames > SAL_CALL ConnectionTools::getObjectNames() throw (RuntimeException)
+    Reference< XObjectNames > SAL_CALL ConnectionTools::getObjectNames()
     {
         EntryGuard aGuard( *this );
         return new ObjectNames( getContext(), getConnection() );
     }
 
     //--------------------------------------------------------------------
-    Reference< XDataSourceMetaData > SAL_CALL ConnectionTools::getDataSourceMetaData() throw (RuntimeException)
+    Reference< XDataSourceMetaData > SAL_CALL ConnectionTools::getDataSourceMetaData()
     {
         EntryGuard aGuard( *this );
         return new DataSourceMetaData( getContext(), getConnection() );
     }
     //--------------------------------------------------------------------
-    Reference< container::XNameAccess > SAL_CALL ConnectionTools::getFieldsByCommandDescriptor( ::sal_Int32 commandType, const ::rtl::OUString& command, Reference< lang::XComponent >& keepFieldsAlive ) throw (sdbc::SQLException, RuntimeException)
+    Reference< container::XNameAccess > SAL_CALL ConnectionTools::getFieldsByCommandDescriptor( ::sal_Int32 commandType, const ::rtl::OUString& command, Reference< lang::XComponent >& keepFieldsAlive )
     {
         EntryGuard aGuard( *this );
         ::dbtools::SQLExceptionInfo aErrorInfo;
@@ -122,7 +122,7 @@ namespace sdbtools
         return xRet;
     }
     //--------------------------------------------------------------------
-    Reference< sdb::XSingleSelectQueryComposer > SAL_CALL ConnectionTools::getComposer( ::sal_Int32 commandType, const ::rtl::OUString& command ) throw (::com::sun::star::uno::RuntimeException)
+    Reference< sdb::XSingleSelectQueryComposer > SAL_CALL ConnectionTools::getComposer( ::sal_Int32 commandType, const ::rtl::OUString& command )
     {
         EntryGuard aGuard( *this );
         dbtools::StatementComposer aComposer(getConnection(), command, commandType, sal_True );
@@ -131,13 +131,13 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL ConnectionTools::getImplementationName() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL ConnectionTools::getImplementationName()
     {
         return getImplementationName_static();
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL ConnectionTools::supportsService(const ::rtl::OUString & _ServiceName) throw (RuntimeException)
+    ::sal_Bool SAL_CALL ConnectionTools::supportsService(const ::rtl::OUString & _ServiceName)
     {
         Sequence< ::rtl::OUString > aSupported( getSupportedServiceNames() );
         const ::rtl::OUString* begin = aSupported.getConstArray();
@@ -146,7 +146,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL ConnectionTools::getSupportedServiceNames() throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL ConnectionTools::getSupportedServiceNames()
     {
         return getSupportedServiceNames_static();
     }
@@ -172,7 +172,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ConnectionTools::initialize(const Sequence< Any > & _rArguments) throw (RuntimeException, Exception)
+    void SAL_CALL ConnectionTools::initialize(const Sequence< Any > & _rArguments)
     {
         ::osl::MutexGuard aGuard( getMutex() );
 

@@ -128,32 +128,32 @@ public:
 							}
 
 	//XNameAccess
-	virtual Any SAL_CALL getByName(const rtl::OUString& aName) throw ( NoSuchElementException, WrappedTargetException, RuntimeException );
-	virtual Sequence< rtl::OUString > SAL_CALL getElementNames(void) throw ( RuntimeException );
-	virtual sal_Bool SAL_CALL hasByName(const rtl::OUString& aName) throw ( RuntimeException );
+	virtual Any SAL_CALL getByName(const rtl::OUString& aName);
+	virtual Sequence< rtl::OUString > SAL_CALL getElementNames(void);
+	virtual sal_Bool SAL_CALL hasByName(const rtl::OUString& aName);
 
 	//XElementAccess
-	virtual Type  SAL_CALL getElementType(void) throw ( RuntimeException );
-	virtual sal_Bool SAL_CALL hasElements(void) throw ( RuntimeException );
+	virtual Type  SAL_CALL getElementType(void);
+	virtual sal_Bool SAL_CALL hasElements(void);
 
 	//XPropertySet
-	virtual Reference< XPropertySetInfo >  SAL_CALL getPropertySetInfo(void) throw ( RuntimeException );
-	virtual void SAL_CALL setPropertyValue(const rtl::OUString& PropertyName, const Any& aValue) throw( UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException );
-	virtual Any SAL_CALL getPropertyValue(const rtl::OUString& PropertyName) throw ( UnknownPropertyException, WrappedTargetException, RuntimeException );
-	virtual void SAL_CALL addPropertyChangeListener(const rtl::OUString& PropertyName, const Reference< XPropertyChangeListener > & aListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
-	virtual void SAL_CALL removePropertyChangeListener(const rtl::OUString& PropertyName, const Reference< XPropertyChangeListener > & aListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
-	virtual void SAL_CALL addVetoableChangeListener(const rtl::OUString& PropertyName, const Reference< XVetoableChangeListener > & aListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
-	virtual void SAL_CALL removeVetoableChangeListener(const rtl::OUString& PropertyName, const Reference< XVetoableChangeListener > & aListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
+	virtual Reference< XPropertySetInfo >  SAL_CALL getPropertySetInfo(void);
+	virtual void SAL_CALL setPropertyValue(const rtl::OUString& PropertyName, const Any& aValue);
+	virtual Any SAL_CALL getPropertyValue(const rtl::OUString& PropertyName);
+	virtual void SAL_CALL addPropertyChangeListener(const rtl::OUString& PropertyName, const Reference< XPropertyChangeListener > & aListener);
+	virtual void SAL_CALL removePropertyChangeListener(const rtl::OUString& PropertyName, const Reference< XPropertyChangeListener > & aListener);
+	virtual void SAL_CALL addVetoableChangeListener(const rtl::OUString& PropertyName, const Reference< XVetoableChangeListener > & aListener);
+	virtual void SAL_CALL removeVetoableChangeListener(const rtl::OUString& PropertyName, const Reference< XVetoableChangeListener > & aListener);
 
 	static Sequence<rtl::OUString>	SAL_CALL getSupportedServiceNames_Static(void) throw(  );
 
-	friend	Reference< XInterface > 	SAL_CALL BibliographyLoader_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw( Exception );
+	friend	Reference< XInterface > 	SAL_CALL BibliographyLoader_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 
 	// XLoader
 	virtual void			SAL_CALL load(const Reference< XFrame > & aFrame, const rtl::OUString& aURL,
 								const Sequence< PropertyValue >& aArgs,
-								const Reference< XLoadEventListener > & aListener) throw (::com::sun::star::uno::RuntimeException);
-	virtual void			SAL_CALL cancel(void) throw (::com::sun::star::uno::RuntimeException);
+								const Reference< XLoadEventListener > & aListener);
+	virtual void			SAL_CALL cancel(void);
 };
 
 BibliographyLoader::BibliographyLoader() :
@@ -172,7 +172,7 @@ BibliographyLoader::~BibliographyLoader()
 }
 
 
-Reference< XInterface >  SAL_CALL BibliographyLoader_CreateInstance( const Reference< XMultiServiceFactory >  & /*rSMgr*/ ) throw( Exception )
+Reference< XInterface >  SAL_CALL BibliographyLoader_CreateInstance( const Reference< XMultiServiceFactory >  & /*rSMgr*/ )
 {
 	return *(new BibliographyLoader);
 }
@@ -243,7 +243,7 @@ extern "C"
 
 }
 // -----------------------------------------------------------------------
-void BibliographyLoader::cancel(void) throw (::com::sun::star::uno::RuntimeException)
+void BibliographyLoader::cancel(void)
 {
 	//!
 	//!
@@ -252,7 +252,7 @@ void BibliographyLoader::cancel(void) throw (::com::sun::star::uno::RuntimeExcep
 // -----------------------------------------------------------------------
 void BibliographyLoader::load(const Reference< XFrame > & rFrame, const rtl::OUString& rURL,
 		const Sequence< PropertyValue >& rArgs,
-		const Reference< XLoadEventListener > & rListener) throw (::com::sun::star::uno::RuntimeException)
+		const Reference< XLoadEventListener > & rListener)
 {
 	//!
 
@@ -510,8 +510,7 @@ rtl::OUString lcl_AddProperty(Reference< XNameAccess >  xColumns,
 	return uRet;
 }
 //-----------------------------------------------------------------------------
-Any BibliographyLoader::getByName(const rtl::OUString& rName) throw
-						( NoSuchElementException, WrappedTargetException, RuntimeException )
+Any BibliographyLoader::getByName(const rtl::OUString& rName)
 {
 	Any aRet;
 	try
@@ -567,7 +566,7 @@ Any BibliographyLoader::getByName(const rtl::OUString& rName) throw
 /*-- 17.11.99 12:51:39---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-Sequence< rtl::OUString > BibliographyLoader::getElementNames(void) throw ( RuntimeException )
+Sequence< rtl::OUString > BibliographyLoader::getElementNames(void)
 {
 	Sequence< rtl::OUString > aRet(10);
 	int nRealNameCount = 0;
@@ -604,7 +603,7 @@ Sequence< rtl::OUString > BibliographyLoader::getElementNames(void) throw ( Runt
 /*-- 17.11.99 12:51:39---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool BibliographyLoader::hasByName(const rtl::OUString& rName) throw ( RuntimeException )
+sal_Bool BibliographyLoader::hasByName(const rtl::OUString& rName)
 {
 	sal_Bool bRet = sal_False;
 	try
@@ -635,14 +634,14 @@ sal_Bool BibliographyLoader::hasByName(const rtl::OUString& rName) throw ( Runti
 /*-- 17.11.99 12:51:39---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-Type  BibliographyLoader::getElementType(void) throw ( RuntimeException )
+Type  BibliographyLoader::getElementType(void)
 {
 	return ::getCppuType((Sequence<PropertyValue>*)0);
 }
 /*-- 17.11.99 12:51:40---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool BibliographyLoader::hasElements(void) throw ( RuntimeException )
+sal_Bool BibliographyLoader::hasElements(void)
 {
 	Reference< XResultSet >  xCursor = GetDataCursor();
 	Reference< XNameAccess >  xColumns = GetDataColumns();
@@ -652,8 +651,7 @@ sal_Bool BibliographyLoader::hasElements(void) throw ( RuntimeException )
 /*-- 07.12.99 14:28:39---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-Reference< XPropertySetInfo >  BibliographyLoader::getPropertySetInfo(void) throw
-											( RuntimeException )
+Reference< XPropertySetInfo >  BibliographyLoader::getPropertySetInfo(void)
 {
     static SfxItemPropertyMapEntry aBibProps_Impl[] =
 	{
@@ -669,8 +667,6 @@ Reference< XPropertySetInfo >  BibliographyLoader::getPropertySetInfo(void) thro
   -----------------------------------------------------------------------*/
 void BibliographyLoader::setPropertyValue(const rtl::OUString& /*PropertyName*/,
 										const Any& /*aValue*/)
-	throw( UnknownPropertyException, PropertyVetoException,
-		IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
 	throw UnknownPropertyException();
 	//no changeable properties
@@ -679,7 +675,6 @@ void BibliographyLoader::setPropertyValue(const rtl::OUString& /*PropertyName*/,
 
   -----------------------------------------------------------------------*/
 Any BibliographyLoader::getPropertyValue(const rtl::OUString& rPropertyName)
-	throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 	Any aRet;
 	static const sal_uInt16 aInternalMapping[] =
@@ -737,7 +732,6 @@ Any BibliographyLoader::getPropertyValue(const rtl::OUString& rPropertyName)
   -----------------------------------------------------------------------*/
 void BibliographyLoader::addPropertyChangeListener(
 		const rtl::OUString& /*PropertyName*/, const Reference< XPropertyChangeListener > & /*aListener*/)
-		throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 	//no bound properties
 }
@@ -746,7 +740,6 @@ void BibliographyLoader::addPropertyChangeListener(
   -----------------------------------------------------------------------*/
 void BibliographyLoader::removePropertyChangeListener(
 		const rtl::OUString& /*PropertyName*/, const Reference< XPropertyChangeListener > & /*aListener*/)
-		throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 	//no bound properties
 }
@@ -755,7 +748,6 @@ void BibliographyLoader::removePropertyChangeListener(
   -----------------------------------------------------------------------*/
 void BibliographyLoader::addVetoableChangeListener(
 	const rtl::OUString& /*PropertyName*/, const Reference< XVetoableChangeListener > & /*aListener*/)
-	throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 	//no vetoable properties
 }
@@ -764,7 +756,6 @@ void BibliographyLoader::addVetoableChangeListener(
   -----------------------------------------------------------------------*/
 void BibliographyLoader::removeVetoableChangeListener(
 	const rtl::OUString& /*PropertyName*/, const Reference< XVetoableChangeListener > & /*aListener*/)
-	throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 	//no vetoable properties
 }

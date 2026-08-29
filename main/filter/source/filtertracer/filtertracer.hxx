@@ -145,38 +145,31 @@ public:
     virtual void SAL_CALL	release() throw();
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const SEQ( NMSP_UNO::Any )& aArguments )
-		throw ( NMSP_UNO::Exception, NMSP_UNO::RuntimeException );
+    virtual void SAL_CALL initialize( const SEQ( NMSP_UNO::Any )& aArguments );
 
 	// XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName()
-		throw ( NMSP_UNO::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& rServiceName )
-		throw ( NMSP_UNO::RuntimeException );
-    virtual SEQ( rtl::OUString ) SAL_CALL getSupportedServiceNames()
-		throw ( NMSP_UNO::RuntimeException );
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& rServiceName );
+    virtual SEQ( rtl::OUString ) SAL_CALL getSupportedServiceNames();
 
 	// XLogger
-    virtual REF( NMSP_LOGGING::XLogger ) SAL_CALL getLogger( const rtl::OUString& rName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getLevel() throw (::com::sun::star::uno::RuntimeException);
-	virtual rtl::OUString SAL_CALL getName() throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL isLoggable( sal_Int32 nLevel ) throw (::com::sun::star::uno::RuntimeException);
+    virtual REF( NMSP_LOGGING::XLogger ) SAL_CALL getLogger( const rtl::OUString& rName );
+    virtual sal_Int32 SAL_CALL getLevel();
+	virtual rtl::OUString SAL_CALL getName();
+	virtual sal_Bool SAL_CALL isLoggable( sal_Int32 nLevel );
 	virtual void SAL_CALL logp( sal_Int32 nLevel, const rtl::OUString& rSourceClass,
-					const rtl::OUString& rSourceMethod, const rtl::OUString& rMessage ) throw (::com::sun::star::uno::RuntimeException);
+					const rtl::OUString& rSourceMethod, const rtl::OUString& rMessage );
 
 	// XTextSearch
-	virtual void SAL_CALL setOptions( const NMSP_UTIL::SearchOptions& ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setOptions( const NMSP_UTIL::SearchOptions& );
 	virtual NMSP_UTIL::SearchResult SAL_CALL searchForward( const rtl::OUString& rSearchStr,
-		sal_Int32 nStartPos, sal_Int32 nEndPos ) throw (::com::sun::star::uno::RuntimeException);
+		sal_Int32 nStartPos, sal_Int32 nEndPos );
 	virtual NMSP_UTIL::SearchResult SAL_CALL searchBackward( const rtl::OUString& rSearchStr,
-		sal_Int32 nStartPos, sal_Int32 nEndPos ) throw (::com::sun::star::uno::RuntimeException);
+		sal_Int32 nStartPos, sal_Int32 nEndPos );
 };
 
-rtl::OUString FilterTracer_getImplementationName()
-	throw ( NMSP_UNO::RuntimeException );
-sal_Bool SAL_CALL FilterTracer_supportsService( const rtl::OUString& rServiceName )
-	throw( NMSP_UNO::RuntimeException );
-SEQ( rtl::OUString ) SAL_CALL FilterTracer_getSupportedServiceNames()
-	throw( NMSP_UNO::RuntimeException );
+rtl::OUString FilterTracer_getImplementationName();
+sal_Bool SAL_CALL FilterTracer_supportsService( const rtl::OUString& rServiceName );
+SEQ( rtl::OUString ) SAL_CALL FilterTracer_getSupportedServiceNames();
 
 #endif

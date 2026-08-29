@@ -110,24 +110,20 @@ public:
     static ::rtl::OUString getImplementationName_static (void);
     static css::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static (void);
     static css::uno::Reference<css::uno::XInterface> Create(
-        const css::uno::Reference<css::uno::XComponentContext>& rxContext)
-        SAL_THROW((css::uno::Exception));
+        const css::uno::Reference<css::uno::XComponentContext>& rxContext);
 
-    virtual void SAL_CALL disposing (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing (void);
 
 
     // XResourceFactory
 
     virtual css::uno::Reference<css::drawing::framework::XResource>
         SAL_CALL createResource (
-            const css::uno::Reference<css::drawing::framework::XResourceId>& rxViewId)
-        throw (css::uno::RuntimeException);
+            const css::uno::Reference<css::drawing::framework::XResourceId>& rxViewId);
 
     virtual void SAL_CALL
         releaseResource (
-            const css::uno::Reference<css::drawing::framework::XResource>& rxPane)
-        throw (css::uno::RuntimeException);
+            const css::uno::Reference<css::drawing::framework::XResource>& rxPane);
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
@@ -174,7 +170,7 @@ private:
         const css::uno::Reference<css::drawing::framework::XResourceId>& rxViewId,
         const css::uno::Reference<css::drawing::framework::XPane>& rxAnchorPane);
 
-    void ThrowIfDisposed (void) const throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } }

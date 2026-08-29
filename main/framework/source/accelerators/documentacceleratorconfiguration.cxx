@@ -130,8 +130,6 @@ DocumentAcceleratorConfiguration::~DocumentAcceleratorConfiguration()
 
 //-----------------------------------------------
 void SAL_CALL DocumentAcceleratorConfiguration::initialize(const css::uno::Sequence< css::uno::Any >& lArguments)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);
@@ -149,7 +147,6 @@ void SAL_CALL DocumentAcceleratorConfiguration::initialize(const css::uno::Seque
 
 //-----------------------------------------------
 void SAL_CALL DocumentAcceleratorConfiguration::setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage)
-	throw(css::uno::RuntimeException)
 {
 	// Attention! xStorage must be accepted too, if it's NULL !
 
@@ -169,7 +166,6 @@ void SAL_CALL DocumentAcceleratorConfiguration::setStorage(const css::uno::Refer
 
 //-----------------------------------------------
 sal_Bool SAL_CALL DocumentAcceleratorConfiguration::hasStorage()
-	throw(css::uno::RuntimeException)
 {
 	// SAFE -> ----------------------------------
 	ReadGuard aReadLock(m_aLock);

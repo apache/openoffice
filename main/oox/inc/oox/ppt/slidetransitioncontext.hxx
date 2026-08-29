@@ -39,11 +39,10 @@ namespace oox { namespace ppt {
             PropertyMap & aProperties ) throw();
 		virtual ~SlideTransitionContext() throw();
 
-    virtual void SAL_CALL endFastElement( sal_Int32 aElement ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL endFastElement( sal_Int32 aElement );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
 		createFastChildContext( ::sal_Int32 Element,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs )
-			throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& Attribs );
 
 	private:
         PropertyMap&                    maSlideProperties;

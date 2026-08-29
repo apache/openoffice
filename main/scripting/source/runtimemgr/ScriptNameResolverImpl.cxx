@@ -99,7 +99,6 @@ ScriptNameResolverImpl::~ScriptNameResolverImpl()
 //*************************************************************************
 Reference< storage::XScriptInfo > ScriptNameResolverImpl::resolve(
 const ::rtl::OUString & scriptURI, Any& invocationCtx )
-throw ( lang::IllegalArgumentException, script::CannotConvertException, RuntimeException )
 {
 
     Reference< storage::XScriptInfo > resolvedName;
@@ -372,7 +371,6 @@ throw ( lang::IllegalArgumentException, script::CannotConvertException, RuntimeE
 //*************************************************************************
 OUString SAL_CALL
 ScriptNameResolverImpl::getImplementationName( )
-throw( RuntimeException )
 {
     return nrs_implName;
 }
@@ -380,7 +378,6 @@ throw( RuntimeException )
 //*************************************************************************
 sal_Bool SAL_CALL
 ScriptNameResolverImpl::supportsService( const OUString& serviceName )
-throw( RuntimeException )
 {
     OUString const * pNames = nrs_serviceNames.getConstArray();
     for ( sal_Int32 nPos = nrs_serviceNames.getLength(); nPos--; )
@@ -399,7 +396,6 @@ Reference< storage::XScriptInfo >
 ScriptNameResolverImpl::resolveURIFromStorageID
 ( sal_Int32 sid, const ::rtl::OUString & docURI,
   const ::rtl::OUString& scriptURI )
-SAL_THROW ( ( lang::IllegalArgumentException, css::security::AccessControlException, RuntimeException ) )
 {
     Reference< storage::XScriptInfo > resolvedScriptInfo;
     scripting_constants::ScriptingConstantsPool& scriptingConstantsPool =
@@ -490,7 +486,7 @@ SAL_THROW ( ( lang::IllegalArgumentException, css::security::AccessControlExcept
 Reference< storage::XScriptInfoAccess >
 
 ScriptNameResolverImpl::getStorageInstance( sal_Int32 sid,
-const ::rtl::OUString & permissionURI ) SAL_THROW ( ( RuntimeException, css::security::AccessControlException, lang::IllegalArgumentException ) )
+const ::rtl::OUString & permissionURI )
 {
     Reference< storage::XScriptInfoAccess > xScriptInfoAccess;
     try
@@ -542,7 +538,6 @@ const ::rtl::OUString & permissionURI ) SAL_THROW ( ( RuntimeException, css::sec
 //*************************************************************************
 OUString
 ScriptNameResolverImpl::getFilesysURL( const OUString & scriptURI )
-throw( lang::IllegalArgumentException )
 {
         OUString filePath;
         OUString fileName;
@@ -594,7 +589,6 @@ throw( lang::IllegalArgumentException )
 //*************************************************************************
 Sequence<OUString> SAL_CALL
 ScriptNameResolverImpl::getSupportedServiceNames( )
-throw( RuntimeException )
 {
     return nrs_serviceNames;
 }
@@ -602,7 +596,6 @@ throw( RuntimeException )
 //*************************************************************************
 Reference< XInterface > SAL_CALL scriptnri_create(
     Reference< XComponentContext > const & xComponentContext )
-SAL_THROW( ( Exception ) )
 {
     return ( cppu::OWeakObject * ) new ScriptNameResolverImpl( xComponentContext );
 }

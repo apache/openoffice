@@ -97,7 +97,6 @@ css::uno::Reference< css::task::XInteractionContinuation > InterceptedInteractio
     18.03.2004 10:03
 -----------------------------------------------*/
 void SAL_CALL InterceptedInteraction::handle(const css::uno::Reference< css::task::XInteractionRequest >& xRequest)
-    throw(css::uno::RuntimeException)
 {
     impl_handleDefault(xRequest);
 }

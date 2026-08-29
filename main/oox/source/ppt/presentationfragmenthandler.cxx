@@ -73,7 +73,7 @@ PresentationFragmentHandler::~PresentationFragmentHandler() throw()
 {
 
 }
-void PresentationFragmentHandler::startDocument() throw (SAXException, RuntimeException)
+void PresentationFragmentHandler::startDocument()
 {
 }
 
@@ -137,7 +137,7 @@ void ResolveTextFields( XmlFilterBase& rFilter )
 	}
 }
 
-void PresentationFragmentHandler::endDocument() throw (SAXException, RuntimeException)
+void PresentationFragmentHandler::endDocument()
 {
 	// todo: localized progress bar text
 	const Reference< task::XStatusIndicator >& rxStatusIndicator( getFilter().getStatusIndicator() );
@@ -308,7 +308,7 @@ void PresentationFragmentHandler::endDocument() throw (SAXException, RuntimeExce
 }
 
 // CT_Presentation
-Reference< XFastContextHandler > PresentationFragmentHandler::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > PresentationFragmentHandler::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 	switch( aElementToken )

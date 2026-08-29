@@ -45,7 +45,6 @@ Seekable::~Seekable( void )
 }
 
 void SAL_CALL Seekable::truncate( void )
-    throw( io::IOException, uno::RuntimeException )
 {
     if (!mpStream)
         throw io::NotConnectedException();
@@ -60,7 +59,6 @@ void SAL_CALL Seekable::truncate( void )
 }
 
 void SAL_CALL Seekable::seek( sal_Int64 location )
-    throw( lang::IllegalArgumentException, io::IOException, uno::RuntimeException )
 {
     if (!mpStream)
         throw io::NotConnectedException();
@@ -74,7 +72,7 @@ void SAL_CALL Seekable::seek( sal_Int64 location )
         convertToException(pError, static_cast< cppu::OWeakObject * >(this));
 }
 
-sal_Int64 SAL_CALL Seekable::getPosition() throw( io::IOException, uno::RuntimeException )
+sal_Int64 SAL_CALL Seekable::getPosition()
 {
     if (!mpStream)
         throw io::NotConnectedException();
@@ -82,7 +80,7 @@ sal_Int64 SAL_CALL Seekable::getPosition() throw( io::IOException, uno::RuntimeE
     return g_seekable_tell(mpStream);
 }
 
-sal_Int64 SAL_CALL Seekable::getLength() throw( io::IOException, uno::RuntimeException )
+sal_Int64 SAL_CALL Seekable::getLength()
 {
     if (!mpStream)
         throw io::NotConnectedException();
@@ -122,7 +120,7 @@ sal_Int64 SAL_CALL Seekable::getLength() throw( io::IOException, uno::RuntimeExc
     return nSize;
 }
 
-uno::Any Seekable::queryInterface( const uno::Type &type ) throw( uno::RuntimeException )
+uno::Any Seekable::queryInterface( const uno::Type &type )
 {
     uno::Any aRet = ::cppu::queryInterface ( type,
         static_cast< XSeekable * >( this ) );

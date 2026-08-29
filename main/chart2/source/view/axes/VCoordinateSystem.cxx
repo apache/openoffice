@@ -106,7 +106,6 @@ void VCoordinateSystem::initPlottingTargets(  const Reference< drawing::XShapes 
 	   , const Reference< drawing::XShapes >& xFinalTarget
 	   , const Reference< lang::XMultiServiceFactory >& xShapeFactory
        , Reference< drawing::XShapes >& xLogicTargetForSeriesBehindAxis )
-	        throw (uno::RuntimeException)
 {
     DBG_ASSERT(xLogicTarget.is()&&xFinalTarget.is()&&xShapeFactory.is(),"no proper initialization parameters");
 	//is only allowed to be called once

@@ -156,7 +156,7 @@ void ONumericModel::describeFixedProperties( Sequence< Property >& _rProps ) con
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ONumericModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ONumericModel::getServiceName()
 {
 	return FRM_COMPONENT_NUMERICFIELD;	// old (non-sun) name for compatibility !
 }

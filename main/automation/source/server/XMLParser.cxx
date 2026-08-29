@@ -57,15 +57,15 @@ public:
 	~SVInputStream(){ delete pStream; pStream=NULL; }
 
 	// Methods XInputStream
-	virtual sal_Int32 SAL_CALL readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL available(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL closeInput(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead );
+	virtual sal_Int32 SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead );
+	virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip );
+	virtual sal_Int32 SAL_CALL available(  );
+	virtual void SAL_CALL closeInput(  );
 };
 
 
-sal_Int32 SAL_CALL SVInputStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL SVInputStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
 {
 	aData.realloc( nBytesToRead  );
 	sal_Int32 nRead = pStream->Read( aData.getArray(), nBytesToRead );
@@ -73,18 +73,18 @@ sal_Int32 SAL_CALL SVInputStream::readBytes( ::com::sun::star::uno::Sequence< sa
 	return nRead;
 }
 
-sal_Int32 SAL_CALL SVInputStream::readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL SVInputStream::readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
 {
 	return readBytes( aData, nMaxBytesToRead );
 }
 
-void SAL_CALL SVInputStream::skipBytes( sal_Int32 nBytesToSkip ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SVInputStream::skipBytes( sal_Int32 nBytesToSkip )
 {
 	if ( nBytesToSkip > 0 )
 		pStream->SeekRel( nBytesToSkip );
 }
 
-sal_Int32 SAL_CALL SVInputStream::available(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL SVInputStream::available(  )
 {
 	sal_uLong nCurrent = pStream->Tell();
 	sal_uLong nSize = pStream->Seek( STREAM_SEEK_TO_END );
@@ -93,7 +93,7 @@ sal_Int32 SAL_CALL SVInputStream::available(  ) throw (::com::sun::star::io::Not
 	return nAvailable;
 }
 
-void SAL_CALL SVInputStream::closeInput(  ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SVInputStream::closeInput(  )
 {
 //	pStream->Close(); // automatically done in destructor
 	delete pStream;
@@ -224,19 +224,19 @@ public:
 	String GetErrors(){ return aErrors; }
 
 	// Methods XErrorHandler
-	virtual void SAL_CALL error( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL fatalError( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL warning( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL error( const ::com::sun::star::uno::Any& aSAXParseException );
+	virtual void SAL_CALL fatalError( const ::com::sun::star::uno::Any& aSAXParseException );
+	virtual void SAL_CALL warning( const ::com::sun::star::uno::Any& aSAXParseException );
 
 	// Methods XDocumentHandler
-	virtual void SAL_CALL startDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL endElement( const ::rtl::OUString& aName ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL characters( const ::rtl::OUString& aChars ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL startDocument(  );
+	virtual void SAL_CALL endDocument(  );
+	virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs );
+	virtual void SAL_CALL endElement( const ::rtl::OUString& aName );
+	virtual void SAL_CALL characters( const ::rtl::OUString& aChars );
+	virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces );
+	virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData );
+	virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator );
 };
 
 
@@ -317,48 +317,48 @@ void SAXParser::AddToList( const sal_Char* cuType, const ::com::sun::star::uno::
 }
 
 // Methods XErrorHandler
-void SAL_CALL SAXParser::error( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SAXParser::error( const ::com::sun::star::uno::Any& aSAXParseException )
 {
 	AddToList( "error", aSAXParseException );
 }
 
-void SAL_CALL SAXParser::fatalError( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SAXParser::fatalError( const ::com::sun::star::uno::Any& aSAXParseException )
 {
 	AddToList( "fatal error", aSAXParseException );
 }
 
-void SAL_CALL SAXParser::warning( const ::com::sun::star::uno::Any& aSAXParseException ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SAXParser::warning( const ::com::sun::star::uno::Any& aSAXParseException )
 {
 	AddToList( "warning", aSAXParseException );
 }
 
 
 // Methods XDocumentHandler
-void SAXParser::startDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::startDocument(  )
 {
 	xTreeRoot = new ElementNode( CUniString("/"), Reference < XAttributeList > (NULL) );
 	xCurrentNode = xTreeRoot;
 	Touch();
 }
 
-void SAXParser::endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::endDocument(  )
 {
 }
 
-void SAXParser::startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs )
 {
 	NodeRef xNewNode = new ElementNode ( String(aName), xAttribs );
 	((ElementNode*)(&xCurrentNode))->AppendNode( xNewNode );
 	xCurrentNode = xNewNode;
 }
 
-void SAXParser::endElement( const ::rtl::OUString& aName ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::endElement( const ::rtl::OUString& aName )
 {
 	(void) aName; /* avoid warning about unused parameter */
 	xCurrentNode = xCurrentNode->GetParent();
 }
 
-void SAXParser::characters( const ::rtl::OUString& aChars ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::characters( const ::rtl::OUString& aChars )
 {
 	if ( aAction == COLLECT_DATA_IGNORE_WHITESPACE )
 	{   // check for whitespace
@@ -376,18 +376,18 @@ void SAXParser::characters( const ::rtl::OUString& aChars ) throw (::com::sun::s
 	((ElementNode*)(&xCurrentNode))->AppendNode( xNewNode );
 }
 
-void SAXParser::ignorableWhitespace( const ::rtl::OUString& aWhitespaces ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::ignorableWhitespace( const ::rtl::OUString& aWhitespaces )
 {
 	(void) aWhitespaces; /* avoid warning about unused parameter */
 }
 
-void SAXParser::processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData )
 {
 	(void) aTarget; /* avoid warning about unused parameter */
 	(void) aData; /* avoid warning about unused parameter */
 }
 
-void SAXParser::setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAXParser::setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator )
 {
 	(void) xLocator; /* avoid warning about unused parameter */
 #if OSL_DEBUG_LEVEL > 1

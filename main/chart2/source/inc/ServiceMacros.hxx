@@ -42,13 +42,13 @@ namespace apphelper
 #define APPHELPER_XSERVICEINFO_DECL()													\
     virtual ::rtl::OUString SAL_CALL										\
 		getImplementationName()                                             \
-			throw( ::com::sun::star::uno::RuntimeException );               \
+			;               \
     virtual sal_Bool SAL_CALL                                               \
 		supportsService( const ::rtl::OUString& ServiceName )             	\
-			throw( ::com::sun::star::uno::RuntimeException );               \
+			;               \
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL     \
 		getSupportedServiceNames()                                          \
-			throw( ::com::sun::star::uno::RuntimeException );               \
+			;               \
 																			\
 	static ::rtl::OUString getImplementationName_Static();                  \
     static ::com::sun::star::uno::Sequence< ::rtl::OUString >               \
@@ -62,7 +62,6 @@ namespace apphelper
 
 #define APPHELPER_XSERVICEINFO_IMPL( Class, ImplName )								\
 ::rtl::OUString SAL_CALL Class::getImplementationName()						\
-	throw( ::com::sun::star::uno::RuntimeException )                       	\
 {                                                                           \
 	return getImplementationName_Static();                                  \
 }                                                                           \
@@ -74,7 +73,6 @@ namespace apphelper
 																			\
 sal_Bool SAL_CALL                                                           \
 Class::supportsService(	const ::rtl::OUString& ServiceName )                \
-	throw( ::com::sun::star::uno::RuntimeException )                        \
 {                                                                           \
 	::com::sun::star::uno::Sequence< ::rtl::OUString > aSNL =               \
 										getSupportedServiceNames();         \
@@ -90,7 +88,6 @@ Class::supportsService(	const ::rtl::OUString& ServiceName )                \
 																			\
 ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL                 \
 Class::getSupportedServiceNames()                                           \
-	throw( ::com::sun::star::uno::RuntimeException )                        \
 {                                                                           \
 	return getSupportedServiceNames_Static();                               \
 }
@@ -109,7 +106,6 @@ static ::com::sun::star::uno::Reference<									\
 							::com::sun::star::uno::XInterface > SAL_CALL	\
 	create( ::com::sun::star::uno::Reference<								\
 			   ::com::sun::star::uno::XComponentContext > const & xContext) \
-	throw(::com::sun::star::uno::Exception)									\
 {																			\
 	return (::cppu::OWeakObject *)new Class( xContext );					\
 }
@@ -127,7 +123,6 @@ static ::com::sun::star::uno::Reference<									\
  */
 #define APPHELPER_GETIMPLEMENTATIONID_IMPL(Class) \
 ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL Class::getImplementationId() \
-    throw (::com::sun::star::uno::RuntimeException) \
 { \
 	static ::com::sun::star::uno::Sequence< sal_Int8 > aId; \
 	if( aId.getLength() == 0 ) \

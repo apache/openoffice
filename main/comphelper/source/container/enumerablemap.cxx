@@ -202,31 +202,31 @@ namespace comphelper
 		virtual ~EnumerableMap();
 
 		// XInitialization
-		virtual void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException);
+		virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 		// XEnumerableMap
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createKeyEnumeration( ::sal_Bool _Isolated ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createValueEnumeration( ::sal_Bool _Isolated ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createElementEnumeration( ::sal_Bool _Isolated ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createKeyEnumeration( ::sal_Bool _Isolated );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createValueEnumeration( ::sal_Bool _Isolated );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL createElementEnumeration( ::sal_Bool _Isolated );
 
 		// XMap
-		virtual Type SAL_CALL getKeyType() throw (RuntimeException);
-		virtual Type SAL_CALL getValueType() throw (RuntimeException);
-		virtual void SAL_CALL clear(  ) throw (NoSupportException, RuntimeException);
-		virtual ::sal_Bool SAL_CALL containsKey( const Any& _key ) throw (IllegalTypeException, IllegalArgumentException, RuntimeException);
-		virtual ::sal_Bool SAL_CALL containsValue( const Any& _value ) throw (IllegalTypeException, IllegalArgumentException, RuntimeException);
-		virtual Any SAL_CALL get( const Any& _key ) throw (IllegalTypeException, IllegalArgumentException, NoSuchElementException, RuntimeException);
-		virtual Any SAL_CALL put( const Any& _key, const Any& _value ) throw (NoSupportException, IllegalTypeException, IllegalArgumentException, RuntimeException);
-		virtual Any SAL_CALL remove( const Any& _key ) throw (NoSupportException, IllegalTypeException, IllegalArgumentException, NoSuchElementException, RuntimeException);
+		virtual Type SAL_CALL getKeyType();
+		virtual Type SAL_CALL getValueType();
+		virtual void SAL_CALL clear(  );
+		virtual ::sal_Bool SAL_CALL containsKey( const Any& _key );
+		virtual ::sal_Bool SAL_CALL containsValue( const Any& _value );
+		virtual Any SAL_CALL get( const Any& _key );
+		virtual Any SAL_CALL put( const Any& _key, const Any& _value );
+		virtual Any SAL_CALL remove( const Any& _key );
 
 		// XElementAccess (base of XMap)
-		virtual Type SAL_CALL getElementType() throw (RuntimeException);
-		virtual ::sal_Bool SAL_CALL hasElements() throw (RuntimeException);
+		virtual Type SAL_CALL getElementType();
+		virtual ::sal_Bool SAL_CALL hasElements();
 
 		// XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException);
-		virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+		virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	public:
 		// XServiceInfo, static version (used for component registration)
@@ -329,8 +329,8 @@ namespace comphelper
 		}
 
 		// XEnumeration
-		virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (RuntimeException);
-		virtual Any SAL_CALL nextElement(  ) throw (NoSuchElementException, WrappedTargetException, RuntimeException);
+		virtual ::sal_Bool SAL_CALL hasMoreElements(  );
+		virtual Any SAL_CALL nextElement(  );
 
 	protected:
 		virtual ~MapEnumeration()
@@ -372,7 +372,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL EnumerableMap::initialize( const Sequence< Any >& _arguments ) throw (Exception, RuntimeException)
+	void SAL_CALL EnumerableMap::initialize( const Sequence< Any >& _arguments )
 	{
 		ComponentMethodGuard aGuard( *this, ComponentMethodGuard::WithoutInit );
 		if ( impl_isInitialized_nothrow() )
@@ -554,42 +554,42 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XEnumeration > SAL_CALL EnumerableMap::createKeyEnumeration( ::sal_Bool _Isolated ) throw (NoSupportException, RuntimeException)
+	Reference< XEnumeration > SAL_CALL EnumerableMap::createKeyEnumeration( ::sal_Bool _Isolated )
 	{
 		ComponentMethodGuard aGuard( *this );
 		return new MapEnumeration( *this, m_aData, getBroadcastHelper(), eKeys, _Isolated );
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XEnumeration > SAL_CALL EnumerableMap::createValueEnumeration( ::sal_Bool _Isolated ) throw (NoSupportException, RuntimeException)
+	Reference< XEnumeration > SAL_CALL EnumerableMap::createValueEnumeration( ::sal_Bool _Isolated )
 	{
 		ComponentMethodGuard aGuard( *this );
 		return new MapEnumeration( *this, m_aData, getBroadcastHelper(), eValues, _Isolated );
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XEnumeration > SAL_CALL EnumerableMap::createElementEnumeration( ::sal_Bool _Isolated ) throw (NoSupportException, RuntimeException)
+	Reference< XEnumeration > SAL_CALL EnumerableMap::createElementEnumeration( ::sal_Bool _Isolated )
 	{
 		ComponentMethodGuard aGuard( *this );
 		return new MapEnumeration( *this, m_aData, getBroadcastHelper(), eBoth, _Isolated );
 	}
 
 	//--------------------------------------------------------------------
-	Type SAL_CALL EnumerableMap::getKeyType() throw (RuntimeException)
+	Type SAL_CALL EnumerableMap::getKeyType()
 	{
 		ComponentMethodGuard aGuard( *this );
 		return m_aData.m_aKeyType;
 	}
 
 	//--------------------------------------------------------------------
-	Type SAL_CALL EnumerableMap::getValueType() throw (RuntimeException)
+	Type SAL_CALL EnumerableMap::getValueType()
 	{
 		ComponentMethodGuard aGuard( *this );
 		return m_aData.m_aValueType;
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL EnumerableMap::clear(  ) throw (NoSupportException, RuntimeException)
+	void SAL_CALL EnumerableMap::clear(  )
 	{
 		ComponentMethodGuard aGuard( *this );
 		impl_checkMutable_throw();
@@ -600,7 +600,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	::sal_Bool SAL_CALL EnumerableMap::containsKey( const Any& _key ) throw (IllegalTypeException, IllegalArgumentException, RuntimeException)
+	::sal_Bool SAL_CALL EnumerableMap::containsKey( const Any& _key )
 	{
 		ComponentMethodGuard aGuard( *this );
 		impl_checkKey_throw( _key );
@@ -610,7 +610,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	::sal_Bool SAL_CALL EnumerableMap::containsValue( const Any& _value ) throw (IllegalTypeException, IllegalArgumentException, RuntimeException)
+	::sal_Bool SAL_CALL EnumerableMap::containsValue( const Any& _value )
 	{
 		ComponentMethodGuard aGuard( *this );
 		impl_checkValue_throw( _value );
@@ -627,7 +627,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	Any SAL_CALL EnumerableMap::get( const Any& _key ) throw (IllegalTypeException, IllegalArgumentException, NoSuchElementException, RuntimeException)
+	Any SAL_CALL EnumerableMap::get( const Any& _key )
 	{
 		ComponentMethodGuard aGuard( *this );
 		impl_checkKey_throw( _key );
@@ -640,7 +640,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	Any SAL_CALL EnumerableMap::put( const Any& _key, const Any& _value ) throw (NoSupportException, IllegalTypeException, IllegalArgumentException, RuntimeException)
+	Any SAL_CALL EnumerableMap::put( const Any& _key, const Any& _value )
 	{
 		ComponentMethodGuard aGuard( *this );
 		impl_checkMutable_throw();
@@ -666,7 +666,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	Any SAL_CALL EnumerableMap::remove( const Any& _key ) throw (NoSupportException, IllegalTypeException, IllegalArgumentException, NoSuchElementException, RuntimeException)
+	Any SAL_CALL EnumerableMap::remove( const Any& _key )
 	{
 		ComponentMethodGuard aGuard( *this );
 		impl_checkMutable_throw();
@@ -687,26 +687,26 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	Type SAL_CALL EnumerableMap::getElementType() throw (RuntimeException)
+	Type SAL_CALL EnumerableMap::getElementType()
 	{
 		return ::cppu::UnoType< Pair< Any, Any > >::get();
 	}
 
 	//--------------------------------------------------------------------
-	::sal_Bool SAL_CALL EnumerableMap::hasElements() throw (RuntimeException)
+	::sal_Bool SAL_CALL EnumerableMap::hasElements()
 	{
 		ComponentMethodGuard aGuard( *this );
 		return m_aData.m_pValues->empty();
 	}
 
 	//--------------------------------------------------------------------
-	::rtl::OUString SAL_CALL EnumerableMap::getImplementationName(  ) throw (RuntimeException)
+	::rtl::OUString SAL_CALL EnumerableMap::getImplementationName(  )
 	{
 		return getImplementationName_static();
 	}
 
 	//--------------------------------------------------------------------
-	::sal_Bool SAL_CALL EnumerableMap::supportsService( const ::rtl::OUString& _serviceName ) throw (RuntimeException)
+	::sal_Bool SAL_CALL EnumerableMap::supportsService( const ::rtl::OUString& _serviceName )
 	{
 		Sequence< ::rtl::OUString > aServices( getSupportedServiceNames() );
 		for ( sal_Int32 i=0; i<aServices.getLength(); ++i )
@@ -716,7 +716,7 @@ namespace comphelper
 	}
 
 	//--------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL EnumerableMap::getSupportedServiceNames(  ) throw (RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL EnumerableMap::getSupportedServiceNames(  )
 	{
 		return getSupportedServiceNames_static();
 	}
@@ -781,14 +781,14 @@ namespace comphelper
 	//= MapEnumeration - implementation
 	//====================================================================
 	//--------------------------------------------------------------------
-	::sal_Bool SAL_CALL MapEnumeration::hasMoreElements(  ) throw (RuntimeException)
+	::sal_Bool SAL_CALL MapEnumeration::hasMoreElements(  )
 	{
 		ComponentMethodGuard aGuard( *this );
 		return m_aEnumerator.hasMoreElements();
 	}
 
 	//--------------------------------------------------------------------
-	Any SAL_CALL MapEnumeration::nextElement(  ) throw (NoSuchElementException, WrappedTargetException, RuntimeException)
+	Any SAL_CALL MapEnumeration::nextElement(  )
 	{
 		ComponentMethodGuard aGuard( *this );
 		return m_aEnumerator.nextElement();

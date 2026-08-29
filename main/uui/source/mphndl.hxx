@@ -47,37 +47,31 @@ public:
 				      com::sun::star::lang::XMultiServiceFactory > const & );
 
     virtual com::sun::star::uno::Any SAL_CALL
-	queryInterface(com::sun::star::uno::Type const & rType)
-		throw (com::sun::star::uno::RuntimeException);
+	queryInterface(com::sun::star::uno::Type const & rType);
 
-    virtual void SAL_CALL acquire()
-		throw (com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL acquire();
 
-    virtual void SAL_CALL release()
-		throw (com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL release();
 
-    virtual rtl::OUString SAL_CALL getImplementationName()
-		throw (com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
 
     virtual sal_Bool SAL_CALL supportsService(rtl::OUString const &
-											      rServiceName)
-		throw (com::sun::star::uno::RuntimeException);
+											      rServiceName);
 
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-	getSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);
+	getSupportedServiceNames();
 
     virtual
 	com::sun::star::uno::Sequence< com::sun::star::uno::Type > SAL_CALL
-	getTypes() throw (com::sun::star::uno::RuntimeException);
+	getTypes();
 
     virtual com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL
-	getImplementationId() throw (com::sun::star::uno::RuntimeException);
+	getImplementationId();
 
     virtual void SAL_CALL
 	handle(com::sun::star::uno::Reference<
 		           com::sun::star::task::XInteractionRequest > const &
-		       rRequest)
-		throw (com::sun::star::uno::RuntimeException);
+		       rRequest);
 
 	static com::sun::star::uno::Sequence< rtl::OUString >
 	getSupportedServiceNames_static();

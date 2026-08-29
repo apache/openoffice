@@ -69,13 +69,13 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL CellBindingPropertyHandler::getImplementationName_static(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL CellBindingPropertyHandler::getImplementationName_static(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.extensions.CellBindingPropertyHandler" ) );
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL CellBindingPropertyHandler::getSupportedServiceNames_static(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL CellBindingPropertyHandler::getSupportedServiceNames_static(  )
     {
         Sequence< ::rtl::OUString > aSupported( 1 );
         aSupported[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.form.inspection.CellBindingPropertyHandler" ) );
@@ -100,7 +100,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL CellBindingPropertyHandler::getActuatingProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL CellBindingPropertyHandler::getActuatingProperties( )
     {
         Sequence< ::rtl::OUString > aInterestingProperties( 3 );
         aInterestingProperties[0] = PROPERTY_LIST_CELL_RANGE;
@@ -110,7 +110,7 @@ namespace pcr
     }
 
 	//--------------------------------------------------------------------
-    void SAL_CALL CellBindingPropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool _bFirstTimeInit ) throw (NullPointerException, RuntimeException)
+    void SAL_CALL CellBindingPropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool _bFirstTimeInit )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nActuatingPropId( impl_getPropertyId_throw( _rActuatingPropertyName ) );
@@ -238,7 +238,7 @@ namespace pcr
     }
 
 	//--------------------------------------------------------------------
-    Any SAL_CALL CellBindingPropertyHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL CellBindingPropertyHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId( impl_getPropertyId_throw( _rPropertyName ) );
@@ -284,7 +284,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL CellBindingPropertyHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) throw (UnknownPropertyException, RuntimeException)
+    void SAL_CALL CellBindingPropertyHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId( impl_getPropertyId_throw( _rPropertyName ) );
@@ -356,7 +356,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL CellBindingPropertyHandler::convertToPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rControlValue ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL CellBindingPropertyHandler::convertToPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rControlValue )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         Any aPropertyValue;
@@ -405,7 +405,7 @@ namespace pcr
 
     //--------------------------------------------------------------------
     Any SAL_CALL CellBindingPropertyHandler::convertToControlValue( const ::rtl::OUString& _rPropertyName,
-        const Any& _rPropertyValue, const Type& /*_rControlValueType*/ ) throw (UnknownPropertyException, RuntimeException)
+        const Any& _rPropertyValue, const Type& /*_rControlValueType*/ )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         Any aControlValue;

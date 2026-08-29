@@ -155,9 +155,7 @@ namespace dbtools
 		const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory,
 		sal_Bool _bSetAsActiveConnection
-	)	SAL_THROW ( ( ::com::sun::star::sdbc::SQLException
-                    , ::com::sun::star::lang::WrappedTargetException
-                    , ::com::sun::star::uno::RuntimeException ) );
+	);
 
     /** ensures that a row set has a valid ActiveConnection, if possible
 
@@ -186,13 +184,11 @@ namespace dbtools
 		const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory,
         bool _bUseAutoConnectionDisposer
-	)	SAL_THROW ( ( ::com::sun::star::sdbc::SQLException
-                    , ::com::sun::star::lang::WrappedTargetException
-                    , ::com::sun::star::uno::RuntimeException ) );
+	);
 
 	/** returns the connection the RowSet is currently working with (which is the ActiveConnection property)
 	*/
-	OOO_DLLPUBLIC_DBTOOLS ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> getConnection(const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet) throw (::com::sun::star::uno::RuntimeException);
+	OOO_DLLPUBLIC_DBTOOLS ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> getConnection(const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet);
 	OOO_DLLPUBLIC_DBTOOLS ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> getConnection(
 			const ::rtl::OUString& _rsTitleOrPath,
 			const ::rtl::OUString& _rsUser,
@@ -203,8 +199,7 @@ namespace dbtools
 			const ::rtl::OUString& _rDataSourceName,
 			const ::rtl::OUString& _rUser,
 			const ::rtl::OUString& _rPwd,
-			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory)
-		SAL_THROW ( (::com::sun::star::sdbc::SQLException) );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory);
 
 
     /** determines whether the given component is part of a document which is an embedded database
@@ -442,7 +437,7 @@ namespace dbtools
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory,
             sal_Bool _bUseRowSetFilter = sal_True,
             sal_Bool _bUseRowSetOrder = sal_True
-    )   SAL_THROW( ( ::com::sun::star::sdbc::SQLException ) );
+    );
 
 	/** create an <type scope="com::sun::star::sdb">XSingleSelectQueryComposer</type> which represents
         the current settings (Command/CommandType/Filter/Order) of the given rowset.
@@ -594,7 +589,7 @@ namespace dbtools
     OOO_DLLPUBLIC_DBTOOLS
 	sal_Bool implUpdateObject(	const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowUpdate >& _rxUpdatedObject,
 								const sal_Int32 _nColumnIndex,
-								const ::com::sun::star::uno::Any& _rValue)	SAL_THROW	(	(	::com::sun::star::sdbc::SQLException,	::com::sun::star::uno::RuntimeException)	);
+								const ::com::sun::star::uno::Any& _rValue);
 
 
 
@@ -622,7 +617,7 @@ namespace dbtools
 							sal_Int32 parameterIndex,
 							const ::com::sun::star::uno::Any& x,
 							sal_Int32 sqlType,
-							sal_Int32 scale=0) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+							sal_Int32 scale=0);
 
 	/** call the appropriate set method for the specific sql type @see com::sun::star::sdbc::DataType
 		@param	_xParams		the parameters where to set the value
@@ -636,7 +631,7 @@ namespace dbtools
 							sal_Int32 parameterIndex,
 							const ::connectivity::ORowSetValue& x,
 							sal_Int32 sqlType,
-							sal_Int32 scale=0) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+							sal_Int32 scale=0);
 
 
 	/** implements <method scope="com.sun.star.sdb">XParameters::setObject</method>
@@ -654,7 +649,7 @@ namespace dbtools
     OOO_DLLPUBLIC_DBTOOLS
 	sal_Bool implSetObject(	const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XParameters>& _rxParameters,
 							const sal_Int32 _nColumnIndex,
-							const ::com::sun::star::uno::Any& _rValue) SAL_THROW ( ( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException ) );
+							const ::com::sun::star::uno::Any& _rValue);
 
 	/** creates the standard sql create table statement without the key part.
 		@param	descriptor

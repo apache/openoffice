@@ -40,8 +40,7 @@ namespace func_provider
 ScriptImpl::ScriptImpl(
     const Reference< beans::XPropertySet > & scriptingContext,
     const Reference< runtime::XScriptInvocation > & runtimeMgr,
-    const ::rtl::OUString& scriptURI )
-throw ( RuntimeException ) :
+    const ::rtl::OUString& scriptURI ) :
         m_XScriptingContext( scriptingContext, UNO_SET_THROW ),
         m_RunTimeManager( runtimeMgr, UNO_SET_THROW ),
         m_ScriptURI( scriptURI )
@@ -59,8 +58,6 @@ ScriptImpl::~ScriptImpl()
 Any SAL_CALL
 ScriptImpl::invoke( const Sequence< Any >& aParams,
                       Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam )
-throw ( lang::IllegalArgumentException, script::CannotConvertException,
-        reflection::InvocationTargetException, RuntimeException )
 {
     OSL_TRACE( "<ScriptImpl::invoke>" );
     Any result;

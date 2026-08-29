@@ -304,7 +304,7 @@ String2Long( uno::Any& rAny, const gchar * value )
 /*****************************************************************************/
 
 static accessibility::XAccessibleComponent*
-    getComponent( AtkText *pText ) throw (uno::RuntimeException)
+    getComponent( AtkText *pText )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pText );
     if( pWrap )

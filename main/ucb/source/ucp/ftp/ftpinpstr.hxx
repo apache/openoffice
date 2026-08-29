@@ -70,60 +70,35 @@ namespace ftp {
 
 		virtual sal_Int32 SAL_CALL
 		readBytes(css::uno::Sequence< sal_Int8 >& aData,
-				  sal_Int32 nBytesToRead)
-			throw( css::io::NotConnectedException,
-				   css::io::BufferSizeExceededException,
-				   css::io::IOException,
-				   css::uno::RuntimeException);
+				  sal_Int32 nBytesToRead);
 
 		virtual sal_Int32 SAL_CALL
 		readSomeBytes(css::uno::Sequence< sal_Int8 >& aData,
-					  sal_Int32 nMaxBytesToRead )
-			throw( css::io::NotConnectedException,
-				   css::io::BufferSizeExceededException,
-				   css::io::IOException,
-				   css::uno::RuntimeException);
+					  sal_Int32 nMaxBytesToRead );
 
 		virtual void SAL_CALL
-		skipBytes(sal_Int32 nBytesToSkip)
-			throw(css::io::NotConnectedException,
-				  css::io::BufferSizeExceededException,
-				  css::io::IOException,
-				  css::uno::RuntimeException );
+		skipBytes(sal_Int32 nBytesToSkip);
 
 		virtual sal_Int32 SAL_CALL
-		available(void)
-			throw(css::io::NotConnectedException,
-				  css::io::IOException,
-				  css::uno::RuntimeException );
+		available(void);
 
 		virtual void SAL_CALL
-		closeInput(void)
-			throw(css::io::NotConnectedException,
-				  css::io::IOException,
-				  css::uno::RuntimeException);
+		closeInput(void);
 
 
 		/** XSeekable
 		 */
 
 		virtual void SAL_CALL
-		seek(sal_Int64 location)
-			throw(css::lang::IllegalArgumentException,
-				  css::io::IOException,
-				  css::uno::RuntimeException);
+		seek(sal_Int64 location);
 
 
 		virtual sal_Int64 SAL_CALL
-		getPosition(void)
-			throw(css::io::IOException,
-				  css::uno::RuntimeException);
+		getPosition(void);
 
 
 		virtual sal_Int64 SAL_CALL
-		getLength(void)
-			throw(css::io::IOException,
-				  css::uno::RuntimeException);
+		getLength(void);
 
         // additional
 

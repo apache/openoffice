@@ -134,18 +134,15 @@ private:
                     ::com::sun::star::io::XInputStream > & xInputStream,
                  sal_Bool bReplaceExisting,
                  const com::sun::star::uno::Reference<
-                    com::sun::star::ucb::XCommandEnvironment >& xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    com::sun::star::ucb::XCommandEnvironment >& xEnv );
 
     // Command "transfer"
     void transfer( const ::com::sun::star::ucb::TransferInfo & rArgs,
                const com::sun::star::uno::Reference<
-                    com::sun::star::ucb::XCommandEnvironment >& xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    com::sun::star::ucb::XCommandEnvironment >& xEnv );
 
     // Command "delete"
-    void destroy( sal_Bool bDeletePhysical )
-        throw( ::com::sun::star::uno::Exception );
+    void destroy( sal_Bool bDeletePhysical );
 
     // "open" helpers
     void    copyData( ::com::sun::star::uno::Reference<
@@ -156,13 +153,11 @@ private:
     ::com::sun::star::uno::Reference<
         ::com::sun::star::io::XInputStream >
         createTempStream(  const ::com::sun::star::uno::Reference<
-                    com::sun::star::ucb::XCommandEnvironment >& xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    com::sun::star::ucb::XCommandEnvironment >& xEnv );
     ::com::sun::star::uno::Reference<
         ::com::sun::star::io::XInputStream >
         createInputStream(  const ::com::sun::star::uno::Reference<
-                    com::sun::star::ucb::XCommandEnvironment >& xEnv )
-        throw( ::com::sun::star::uno::Exception );
+                    com::sun::star::ucb::XCommandEnvironment >& xEnv );
             sal_Bool feedSink( ::com::sun::star::uno::Reference<
                 ::com::sun::star::uno::XInterface> aSink,
                const ::com::sun::star::uno::Reference<
@@ -174,8 +169,7 @@ private:
     void cancelCommandExecution(const GnomeVFSResult result,
                     const ::com::sun::star::uno::Reference<
                     com::sun::star::ucb::XCommandEnvironment > & xEnv,
-                    sal_Bool bWrite = sal_False )
-        throw( ::com::sun::star::uno::Exception );
+                    sal_Bool bWrite = sal_False );
 
 
 public:
@@ -193,15 +187,13 @@ public:
          ::com::sun::star::lang::XMultiServiceFactory >& rxSMgr,
          ContentProvider                                *pProvider,
          const ::com::sun::star::uno::Reference<
-         ::com::sun::star::ucb::XContentIdentifier >&    Identifier)
-            throw ( ::com::sun::star::ucb::ContentCreationException );
+         ::com::sun::star::ucb::XContentIdentifier >&    Identifier);
     Content( const ::com::sun::star::uno::Reference<
          ::com::sun::star::lang::XMultiServiceFactory >& rxSMgr,
          ContentProvider                                *pProvider,
          const ::com::sun::star::uno::Reference<
          ::com::sun::star::ucb::XContentIdentifier >&    Identifier,
-         sal_Bool                                        isFolder)
-            throw ( ::com::sun::star::ucb::ContentCreationException );
+         sal_Bool                                        isFolder);
     virtual ~Content();
 
     // XInterface
@@ -211,29 +203,22 @@ public:
     XTYPEPROVIDER_DECL()
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw( ::com::sun::star::uno::RuntimeException );
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-        throw( ::com::sun::star::uno::RuntimeException );
+    getSupportedServiceNames();
 
     // XContent
     virtual rtl::OUString SAL_CALL
-    getContentType()
-        throw( com::sun::star::uno::RuntimeException );
+    getContentType();
 
     // XCommandProcessor
     virtual com::sun::star::uno::Any SAL_CALL
     execute( const com::sun::star::ucb::Command& aCommand,
          sal_Int32 CommandId,
          const com::sun::star::uno::Reference<
-         com::sun::star::ucb::XCommandEnvironment >& xEnv )
-        throw( com::sun::star::uno::Exception,
-               com::sun::star::ucb::CommandAbortedException,
-               com::sun::star::uno::RuntimeException );
+         com::sun::star::ucb::XCommandEnvironment >& xEnv );
     virtual void SAL_CALL
-    abort( sal_Int32 CommandId )
-        throw( com::sun::star::uno::RuntimeException );
+    abort( sal_Int32 CommandId );
 
     //////////////////////////////////////////////////////////////////////
     // Additional interfaces
@@ -242,19 +227,16 @@ public:
     // XContentCreator
     virtual com::sun::star::uno::Sequence<
         com::sun::star::ucb::ContentInfo > SAL_CALL
-    queryCreatableContentsInfo()
-        throw( com::sun::star::uno::RuntimeException );
+    queryCreatableContentsInfo();
     virtual com::sun::star::uno::Reference<
         com::sun::star::ucb::XContent > SAL_CALL
-    createNewContent( const com::sun::star::ucb::ContentInfo& Info )
-        throw( com::sun::star::uno::RuntimeException );
+    createNewContent( const com::sun::star::ucb::ContentInfo& Info );
 
 
     com::sun::star::uno::Sequence< com::sun::star::ucb::ContentInfo >
     queryCreatableContentsInfo(
         const com::sun::star::uno::Reference<
-            com::sun::star::ucb::XCommandEnvironment >& xEnv)
-        throw( com::sun::star::uno::RuntimeException );
+            com::sun::star::ucb::XCommandEnvironment >& xEnv);
 };
 
 }

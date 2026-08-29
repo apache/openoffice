@@ -103,29 +103,24 @@ class ConfigurationAccess_UICategory : // Order is necessary for right initializ
         virtual                   ~ConfigurationAccess_UICategory();
 
         // XNameAccess
-        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
-            throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
 
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
 
-        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
         // XElementAccess
-        virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
 
-        virtual sal_Bool SAL_CALL hasElements()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasElements();
 
         // container.XContainerListener
-        virtual void SAL_CALL     elementInserted( const ContainerEvent& aEvent ) throw(RuntimeException);
-        virtual void SAL_CALL     elementRemoved ( const ContainerEvent& aEvent ) throw(RuntimeException);
-        virtual void SAL_CALL     elementReplaced( const ContainerEvent& aEvent ) throw(RuntimeException);
+        virtual void SAL_CALL     elementInserted( const ContainerEvent& aEvent );
+        virtual void SAL_CALL     elementRemoved ( const ContainerEvent& aEvent );
+        virtual void SAL_CALL     elementReplaced( const ContainerEvent& aEvent );
 
         // lang.XEventListener
-        virtual void SAL_CALL disposing( const EventObject& aEvent ) throw(RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& aEvent );
 
     protected:
         Any                       getUINameFromID( const rtl::OUString& rId );
@@ -184,7 +179,6 @@ ConfigurationAccess_UICategory::~ConfigurationAccess_UICategory()
 
 // XNameAccess
 Any SAL_CALL ConfigurationAccess_UICategory::getByName( const ::rtl::OUString& rId )
-throw ( NoSuchElementException, WrappedTargetException, RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::getByName" );
     ResetableGuard aLock( m_aLock );
@@ -205,14 +199,12 @@ throw ( NoSuchElementException, WrappedTargetException, RuntimeException)
 }
 
 Sequence< ::rtl::OUString > SAL_CALL ConfigurationAccess_UICategory::getElementNames()
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::getElementNames" );
     return getAllIds();
 }
 
 sal_Bool SAL_CALL ConfigurationAccess_UICategory::hasByName( const ::rtl::OUString& rId )
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::hasByName" );
     return getByName( rId ).hasValue();
@@ -220,14 +212,12 @@ throw (::com::sun::star::uno::RuntimeException)
 
 // XElementAccess
 Type SAL_CALL ConfigurationAccess_UICategory::getElementType()
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::getElementType" );
     return( ::getCppuType( (const rtl::OUString*)NULL ) );
 }
 
 sal_Bool SAL_CALL ConfigurationAccess_UICategory::hasElements()
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::hasElements" );
     // There must be global categories!
@@ -402,23 +392,23 @@ sal_Bool ConfigurationAccess_UICategory::initializeConfigAccess()
 }
 
 // container.XContainerListener
-void SAL_CALL ConfigurationAccess_UICategory::elementInserted( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICategory::elementInserted( const ContainerEvent& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::elementInserted" );
 }
 
-void SAL_CALL ConfigurationAccess_UICategory::elementRemoved ( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICategory::elementRemoved ( const ContainerEvent& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::elementRemoved " );
 }
 
-void SAL_CALL ConfigurationAccess_UICategory::elementReplaced( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICategory::elementReplaced( const ContainerEvent& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::elementReplaced" );
 }
 
 // lang.XEventListener
-void SAL_CALL ConfigurationAccess_UICategory::disposing( const EventObject& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICategory::disposing( const EventObject& aEvent )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ConfigurationAccess_UICategory::disposing" );
     // SAFE

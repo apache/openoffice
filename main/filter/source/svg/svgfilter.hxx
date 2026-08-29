@@ -259,10 +259,10 @@ private:
 	Link								maOldFieldHdl;
 
 #ifdef SOLAR_JAVA
-    sal_Bool                            implImport( const Sequence< PropertyValue >& rDescriptor ) throw (RuntimeException);
+    sal_Bool                            implImport( const Sequence< PropertyValue >& rDescriptor );
 #endif
 
-    sal_Bool                            implExport( const Sequence< PropertyValue >& rDescriptor ) throw (RuntimeException);
+    sal_Bool                            implExport( const Sequence< PropertyValue >& rDescriptor );
     Reference< XDocumentHandler >       implCreateExportDocumentHandler( const Reference< XOutputStream >& rxOStm );
 
 	sal_Bool							implGenerateMetaData( const Reference< XDrawPages >& rxMasterPages,
@@ -298,24 +298,24 @@ private:
 protected:
 
 	// XFilter
-    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor ) throw(RuntimeException);
-    virtual void SAL_CALL cancel( ) throw (RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor );
+    virtual void SAL_CALL cancel( );
 
 #ifdef SOLAR_JAVA
 	// XImporter
-    virtual void SAL_CALL setTargetDocument( const Reference< XComponent >& xDoc ) throw(IllegalArgumentException, RuntimeException);
+    virtual void SAL_CALL setTargetDocument( const Reference< XComponent >& xDoc );
 #endif
 
 	// XExporter
-    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc ) throw(IllegalArgumentException, RuntimeException);
+    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()  throw(RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 public:
 
@@ -325,23 +325,19 @@ public:
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString SVGFilter_getImplementationName ()
-	throw ( ::com::sun::star::uno::RuntimeException );
+::rtl::OUString SVGFilter_getImplementationName ();
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL SVGFilter_supportsService( const ::rtl::OUString& ServiceName )
-	throw ( ::com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL SVGFilter_supportsService( const ::rtl::OUString& ServiceName );
 
 // -----------------------------------------------------------------------------
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGFilter_getSupportedServiceNames(  )
-	throw ( ::com::sun::star::uno::RuntimeException );
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGFilter_getSupportedServiceNames(  );
 
 // -----------------------------------------------------------------------------
 
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
-SAL_CALL SVGFilter_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr)
-	throw ( ::com::sun::star::uno::Exception );
+SAL_CALL SVGFilter_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 
 #endif // SVGFILTER_HXX

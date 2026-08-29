@@ -56,7 +56,7 @@ IndexEntrySupplier_asian::~IndexEntrySupplier_asian()
 
 OUString SAL_CALL
 IndexEntrySupplier_asian::getIndexCharacter( const OUString& rIndexEntry,
-    const Locale& rLocale, const OUString& rAlgorithm ) throw (RuntimeException)
+    const Locale& rLocale, const OUString& rAlgorithm )
 {
     sal_Int32 i=0;
     sal_uInt32 ch = rIndexEntry.iterateCodePoints(&i, 0);
@@ -85,7 +85,7 @@ IndexEntrySupplier_asian::getIndexCharacter( const OUString& rIndexEntry,
 
 OUString SAL_CALL
 IndexEntrySupplier_asian::getIndexKey( const OUString& rIndexEntry,
-    const OUString& rPhoneticEntry, const Locale& rLocale) throw (RuntimeException)
+    const OUString& rPhoneticEntry, const Locale& rLocale)
 {
     return getIndexCharacter(getEntry(rIndexEntry, rPhoneticEntry, rLocale), rLocale, aAlgorithm);
 }
@@ -94,7 +94,6 @@ sal_Int16 SAL_CALL
 IndexEntrySupplier_asian::compareIndexEntry(
 	const OUString& rIndexEntry1, const OUString& rPhoneticEntry1, const Locale& rLocale1,
 	const OUString& rIndexEntry2, const OUString& rPhoneticEntry2, const Locale& rLocale2 )
-	throw (RuntimeException)
 {
     sal_Int32 result = collator->compareString(getEntry(rIndexEntry1, rPhoneticEntry1, rLocale1),
                                     getEntry(rIndexEntry2, rPhoneticEntry2, rLocale2));
@@ -110,7 +109,7 @@ IndexEntrySupplier_asian::compareIndexEntry(
 
 OUString SAL_CALL
 IndexEntrySupplier_asian::getPhoneticCandidate( const OUString& rIndexEntry,
-        const Locale& rLocale ) throw (RuntimeException)
+        const Locale& rLocale )
 {
     if (hModule) {
         sal_uInt16 **(*func)(sal_Int16*)=NULL;

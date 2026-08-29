@@ -85,7 +85,7 @@ namespace toolkit
     IMPLEMENT_FORWARD_XTYPEPROVIDER2( VCLXSpinButton, VCLXWindow, VCLXSpinButton_Base )
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::dispose( ) throw(RuntimeException)
+    void SAL_CALL VCLXSpinButton::dispose( )
     {
         {
 	        ::vos::OGuard aGuard( GetMutex() );
@@ -99,14 +99,14 @@ namespace toolkit
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::addAdjustmentListener( const Reference< XAdjustmentListener >& listener ) throw (RuntimeException)
+    void SAL_CALL VCLXSpinButton::addAdjustmentListener( const Reference< XAdjustmentListener >& listener )
     {
         if ( listener.is() )
             maAdjustmentListeners.addInterface( listener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::removeAdjustmentListener( const Reference< XAdjustmentListener >& listener ) throw (RuntimeException)
+    void SAL_CALL VCLXSpinButton::removeAdjustmentListener( const Reference< XAdjustmentListener >& listener )
     {
         if ( listener.is() )
             maAdjustmentListeners.removeInterface( listener );
@@ -142,13 +142,13 @@ namespace toolkit
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::setValue( sal_Int32 n ) throw (RuntimeException)
+    void SAL_CALL VCLXSpinButton::setValue( sal_Int32 n )
     {
         lcl_setSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::SetValue, n );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::setValues( sal_Int32 minValue, sal_Int32 maxValue, sal_Int32 currentValue ) throw (RuntimeException)
+    void SAL_CALL VCLXSpinButton::setValues( sal_Int32 minValue, sal_Int32 maxValue, sal_Int32 currentValue )
     {
         ::vos::OGuard aGuard( GetMutex() );
 
@@ -158,49 +158,49 @@ namespace toolkit
     }
 
     //--------------------------------------------------------------------
-    sal_Int32 SAL_CALL VCLXSpinButton::getValue(  ) throw (RuntimeException)
+    sal_Int32 SAL_CALL VCLXSpinButton::getValue(  )
     {
         return lcl_getSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::GetValue );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::setMinimum( sal_Int32 minValue ) throw (RuntimeException)
+    void SAL_CALL VCLXSpinButton::setMinimum( sal_Int32 minValue )
     {
         lcl_setSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::SetRangeMin, minValue );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::setMaximum( sal_Int32 maxValue ) throw (RuntimeException)
+    void SAL_CALL VCLXSpinButton::setMaximum( sal_Int32 maxValue )
     {
         lcl_setSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::SetRangeMax, maxValue );
     }
 
     //--------------------------------------------------------------------
-    sal_Int32 SAL_CALL VCLXSpinButton::getMinimum(  ) throw (RuntimeException)
+    sal_Int32 SAL_CALL VCLXSpinButton::getMinimum(  )
     {
         return lcl_getSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::GetRangeMin );
     }
 
     //--------------------------------------------------------------------
-    sal_Int32 SAL_CALL VCLXSpinButton::getMaximum(  ) throw (RuntimeException)
+    sal_Int32 SAL_CALL VCLXSpinButton::getMaximum(  )
     {
         return lcl_getSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::GetRangeMax );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::setSpinIncrement( sal_Int32 spinIncrement ) throw (RuntimeException)
+    void SAL_CALL VCLXSpinButton::setSpinIncrement( sal_Int32 spinIncrement )
     {
         lcl_setSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::SetValueStep, spinIncrement );
     }
 
     //--------------------------------------------------------------------
-    sal_Int32 SAL_CALL VCLXSpinButton::getSpinIncrement(  ) throw (RuntimeException)
+    sal_Int32 SAL_CALL VCLXSpinButton::getSpinIncrement(  )
     {
         return lcl_getSpinButtonValue( GetMutex(), GetWindow(), &SpinButton::GetValueStep );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::setOrientation( sal_Int32 orientation ) throw (NoSupportException, RuntimeException)
+    void SAL_CALL VCLXSpinButton::setOrientation( sal_Int32 orientation )
     {
         ::vos::OGuard aGuard( GetMutex() );
 
@@ -208,7 +208,7 @@ namespace toolkit
     }
 
     //--------------------------------------------------------------------
-    sal_Int32 SAL_CALL VCLXSpinButton::getOrientation(  ) throw (RuntimeException)
+    sal_Int32 SAL_CALL VCLXSpinButton::getOrientation(  )
     {
         return  ( 0 != ( GetWindow()->GetStyle() & WB_HSCROLL ) )
             ?   ScrollBarOrientation::HORIZONTAL
@@ -248,7 +248,7 @@ namespace toolkit
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL VCLXSpinButton::setProperty( const ::rtl::OUString& PropertyName, const Any& Value ) throw(RuntimeException)
+    void SAL_CALL VCLXSpinButton::setProperty( const ::rtl::OUString& PropertyName, const Any& Value )
     {
 	    ::vos::OGuard aGuard( GetMutex() );
 
@@ -298,7 +298,7 @@ namespace toolkit
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL VCLXSpinButton::getProperty( const ::rtl::OUString& PropertyName ) throw(RuntimeException)
+    Any SAL_CALL VCLXSpinButton::getProperty( const ::rtl::OUString& PropertyName )
     {
 	    ::vos::OGuard aGuard( GetMutex() );
 

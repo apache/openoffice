@@ -175,9 +175,6 @@ String SfxFilter::GetTypeFromStorage( const SotStorage& rStg )
 
 String SfxFilter::GetTypeFromStorage( const com::sun::star::uno::Reference< com::sun::star::embed::XStorage >& xStorage, sal_Bool bTemplate,
 										String* pFilterName )
-		throw ( beans::UnknownPropertyException,
-				lang::WrappedTargetException,
-				uno::RuntimeException )
 {
     SfxFilterMatcher aMatcher;
 	const char* pType=0;

@@ -84,24 +84,19 @@ public:
 	// XDataFormatTranslator
 	//------------------------------------------------
 
-	virtual ::com::sun::star::uno::Any SAL_CALL getSystemDataTypeFromDataFlavor( const ::com::sun::star::datatransfer::DataFlavor& aDataFlavor )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getSystemDataTypeFromDataFlavor( const ::com::sun::star::datatransfer::DataFlavor& aDataFlavor );
 
-    virtual ::com::sun::star::datatransfer::DataFlavor SAL_CALL getDataFlavorFromSystemDataType( const ::com::sun::star::uno::Any& aSysDataType )
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::datatransfer::DataFlavor SAL_CALL getDataFlavorFromSystemDataType( const ::com::sun::star::uno::Any& aSysDataType );
 
 	//------------------------------------------------
 	// XServiceInfo
 	//------------------------------------------------
 
-	virtual ::rtl::OUString SAL_CALL getImplementationName(	 )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(	 );
 
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 private:
 	void SAL_CALL initTranslationTable( );

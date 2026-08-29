@@ -91,7 +91,6 @@ OneToOneMappingTable_t ignoreIterationMark_ja_JP_mappingTable[] = {
 
 OUString SAL_CALL
 ignoreIterationMark_ja_JP::folding( const OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, Sequence< sal_Int32 >& offset )
-  throw(RuntimeException)
 {
     oneToOneMapping aTable(ignoreIterationMark_ja_JP_mappingTable, sizeof(ignoreIterationMark_ja_JP_mappingTable));
 

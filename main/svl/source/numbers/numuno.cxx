@@ -99,7 +99,6 @@ void SvNumberFormatsSupplierObj::SettingsChanged()
 // XNumberFormatsSupplier
 
 uno::Reference<beans::XPropertySet> SAL_CALL SvNumberFormatsSupplierObj::getNumberFormatSettings()
-										throw(uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( pImpl->aMutex );
 
@@ -107,7 +106,6 @@ uno::Reference<beans::XPropertySet> SAL_CALL SvNumberFormatsSupplierObj::getNumb
 }
 
 uno::Reference<util::XNumberFormats> SAL_CALL SvNumberFormatsSupplierObj::getNumberFormats()
-										throw(uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( pImpl->aMutex );
 
@@ -117,7 +115,7 @@ uno::Reference<util::XNumberFormats> SAL_CALL SvNumberFormatsSupplierObj::getNum
 // XUnoTunnel
 
 sal_Int64 SAL_CALL SvNumberFormatsSupplierObj::getSomething(
-				const uno::Sequence<sal_Int8 >& rId ) throw(uno::RuntimeException)
+				const uno::Sequence<sal_Int8 >& rId )
 {
 	if ( rId.getLength() == 16 &&
           0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),

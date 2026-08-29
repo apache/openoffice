@@ -287,7 +287,7 @@ OGroupManager::~OGroupManager()
 
 // XPropertyChangeListener
 //------------------------------------------------------------------
-void OGroupManager::disposing(const EventObject& evt) throw( RuntimeException )
+void OGroupManager::disposing(const EventObject& evt)
 {
 	Reference<XContainer>  xContainer(evt.Source, UNO_QUERY);
 	if (xContainer.get() == m_xContainer.get())
@@ -338,7 +338,7 @@ void OGroupManager::removeFromGroupMap(const ::rtl::OUString& _sGroupName,const 
 		_xSet->removePropertyChangeListener( PROPERTY_TABINDEX, this );
 }
 //------------------------------------------------------------------
-void SAL_CALL OGroupManager::propertyChange(const PropertyChangeEvent& evt) throw ( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OGroupManager::propertyChange(const PropertyChangeEvent& evt)
 {
 	Reference<XPropertySet>  xSet(evt.Source, UNO_QUERY);
 
@@ -357,7 +357,7 @@ void SAL_CALL OGroupManager::propertyChange(const PropertyChangeEvent& evt) thro
 
 // XContainerListener
 //------------------------------------------------------------------
-void SAL_CALL OGroupManager::elementInserted(const ContainerEvent& Event) throw ( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OGroupManager::elementInserted(const ContainerEvent& Event)
 {
 	Reference< XPropertySet > xProps;
 	Event.Element >>= xProps;
@@ -366,7 +366,7 @@ void SAL_CALL OGroupManager::elementInserted(const ContainerEvent& Event) throw 
 }
 
 //------------------------------------------------------------------
-void SAL_CALL OGroupManager::elementRemoved(const ContainerEvent& Event) throw ( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OGroupManager::elementRemoved(const ContainerEvent& Event)
 {
 	Reference<XPropertySet> xProps;
 	Event.Element >>= xProps;
@@ -375,7 +375,7 @@ void SAL_CALL OGroupManager::elementRemoved(const ContainerEvent& Event) throw (
 }
 
 //------------------------------------------------------------------
-void SAL_CALL OGroupManager::elementReplaced(const ContainerEvent& Event) throw ( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OGroupManager::elementReplaced(const ContainerEvent& Event)
 {
 	Reference<XPropertySet> xProps;
 	Event.ReplacedElement >>= xProps;

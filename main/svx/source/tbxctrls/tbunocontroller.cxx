@@ -260,7 +260,6 @@ FontHeightToolBoxControl::~FontHeightToolBoxControl()
 
 // XInterface
 ::com::sun::star::uno::Any SAL_CALL FontHeightToolBoxControl::queryInterface( const ::com::sun::star::uno::Type& aType )
-throw (::com::sun::star::uno::RuntimeException)
 {
     uno::Any a = ToolboxController::queryInterface( aType );
     if ( a.hasValue() )
@@ -281,7 +280,6 @@ void SAL_CALL FontHeightToolBoxControl::release() throw ()
 
 // XServiceInfo
 sal_Bool SAL_CALL FontHeightToolBoxControl::supportsService( const ::rtl::OUString& ServiceName )
-throw(uno::RuntimeException)
 {
     const uno::Sequence< ::rtl::OUString > aSNL( getSupportedServiceNames() );
     const ::rtl::OUString * pArray = aSNL.getConstArray();
@@ -294,13 +292,11 @@ throw(uno::RuntimeException)
 }
 
 ::rtl::OUString SAL_CALL FontHeightToolBoxControl::getImplementationName()
-throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL FontHeightToolBoxControl::getSupportedServiceNames(  )
-throw( uno::RuntimeException )
 {
     return getSupportedServiceNames_Static();
 }
@@ -315,7 +311,6 @@ throw()
 
 // XComponent
 void SAL_CALL FontHeightToolBoxControl::dispose()
-throw (uno::RuntimeException)
 {
     svt::ToolboxController::dispose();
 
@@ -327,7 +322,6 @@ throw (uno::RuntimeException)
 // XStatusListener
 void SAL_CALL FontHeightToolBoxControl::statusChanged(
     const frame::FeatureStateEvent& rEvent )
-throw ( uno::RuntimeException )
 {
     if ( m_pBox )
     {
@@ -356,29 +350,24 @@ throw ( uno::RuntimeException )
 
 // XToolbarController
 void SAL_CALL FontHeightToolBoxControl::execute( sal_Int16 /*KeyModifier*/ )
-throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
 void SAL_CALL FontHeightToolBoxControl::click()
-throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
 void SAL_CALL FontHeightToolBoxControl::doubleClick()
-throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
 uno::Reference< awt::XWindow > SAL_CALL FontHeightToolBoxControl::createPopupWindow()
-throw (::com::sun::star::uno::RuntimeException)
 {
     return uno::Reference< awt::XWindow >();
 }
 
 uno::Reference< awt::XWindow > SAL_CALL FontHeightToolBoxControl::createItemWindow(
     const uno::Reference< awt::XWindow >& Parent )
-    throw (::com::sun::star::uno::RuntimeException)
 {
     uno::Reference< awt::XWindow > xItemWindow;
     uno::Reference< awt::XWindow > xParent( Parent );

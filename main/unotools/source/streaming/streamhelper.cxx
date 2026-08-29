@@ -43,7 +43,6 @@ void SAL_CALL OInputStreamHelper::release() throw ()
 
 //------------------------------------------------------------------------------
 sal_Int32 SAL_CALL OInputStreamHelper::readBytes(staruno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead)
-	throw(stario::NotConnectedException, stario::BufferSizeExceededException, stario::IOException, staruno::RuntimeException)
 {
 	if (!m_xLockBytes.Is())
 		throw stario::NotConnectedException(::rtl::OUString(), static_cast<staruno::XWeak*>(this));
@@ -69,7 +68,7 @@ sal_Int32 SAL_CALL OInputStreamHelper::readBytes(staruno::Sequence< sal_Int8 >& 
 	return nRead;
 }
 
-void SAL_CALL OInputStreamHelper::seek( sal_Int64 location ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OInputStreamHelper::seek( sal_Int64 location )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
     // cast is truncating, but position would be truncated as soon as
@@ -77,12 +76,12 @@ void SAL_CALL OInputStreamHelper::seek( sal_Int64 location ) throw(::com::sun::s
     m_nActPos = sal::static_int_cast<sal_uInt32>(location);
 }
 
-sal_Int64 SAL_CALL OInputStreamHelper::getPosition(  ) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL OInputStreamHelper::getPosition(  )
 {
     return m_nActPos;
 }
 
-sal_Int64 SAL_CALL OInputStreamHelper::getLength(  ) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL OInputStreamHelper::getLength(  )
 {
 	if (!m_xLockBytes.Is())
         return 0;
@@ -96,7 +95,6 @@ sal_Int64 SAL_CALL OInputStreamHelper::getLength(  ) throw(::com::sun::star::io:
 //------------------------------------------------------------------------------
 sal_Int32 SAL_CALL OInputStreamHelper::readSomeBytes(staruno::Sequence< sal_Int8 >& aData,
 													 sal_Int32 nMaxBytesToRead)
-	throw (stario::NotConnectedException, stario::BufferSizeExceededException, stario::IOException, staruno::RuntimeException)
 {
 	// read all data desired
 	return readBytes(aData, nMaxBytesToRead);
@@ -104,7 +102,6 @@ sal_Int32 SAL_CALL OInputStreamHelper::readSomeBytes(staruno::Sequence< sal_Int8
 
 //------------------------------------------------------------------------------
 void SAL_CALL OInputStreamHelper::skipBytes(sal_Int32 nBytesToSkip)
-	throw (stario::NotConnectedException, stario::BufferSizeExceededException, stario::IOException, staruno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (!m_xLockBytes.Is())
@@ -118,7 +115,6 @@ void SAL_CALL OInputStreamHelper::skipBytes(sal_Int32 nBytesToSkip)
 
 //------------------------------------------------------------------------------
 sal_Int32 SAL_CALL OInputStreamHelper::available()
-	throw (stario::NotConnectedException, stario::IOException, staruno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (!m_xLockBytes.Is())
@@ -129,7 +125,6 @@ sal_Int32 SAL_CALL OInputStreamHelper::available()
 
 //------------------------------------------------------------------------------
 void SAL_CALL OInputStreamHelper::closeInput()
-	throw (stario::NotConnectedException, stario::IOException, staruno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (!m_xLockBytes.Is())
@@ -153,7 +148,6 @@ void SAL_CALL OOutputStreamHelper::release() throw ()
 // stario::XOutputStream
 //------------------------------------------------------------------------------
 void SAL_CALL OOutputStreamHelper::writeBytes(const staruno::Sequence< sal_Int8 >& aData)
-	throw (stario::NotConnectedException, stario::BufferSizeExceededException, stario::IOException, staruno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (!m_xLockBytes.Is())
@@ -173,7 +167,6 @@ void SAL_CALL OOutputStreamHelper::writeBytes(const staruno::Sequence< sal_Int8 
 
 //------------------------------------------------------------------
 void SAL_CALL OOutputStreamHelper::flush()
-	throw (stario::NotConnectedException, stario::BufferSizeExceededException, stario::IOException, staruno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (!m_xLockBytes.Is())
@@ -186,7 +179,6 @@ void SAL_CALL OOutputStreamHelper::flush()
 
 //------------------------------------------------------------------
 void SAL_CALL OOutputStreamHelper::closeOutput(  )
-	throw(stario::NotConnectedException, stario::BufferSizeExceededException, stario::IOException, staruno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (!m_xLockBytes.Is())

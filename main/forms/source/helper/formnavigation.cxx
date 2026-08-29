@@ -65,7 +65,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL OFormNavigationHelper::dispose( ) throw( RuntimeException )
+    void SAL_CALL OFormNavigationHelper::dispose( )
     {
         m_pFeatureInterception->dispose();
         disconnectDispatchers();
@@ -90,21 +90,21 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL OFormNavigationHelper::registerDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor ) throw (RuntimeException)
+    void SAL_CALL OFormNavigationHelper::registerDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor )
     {
         m_pFeatureInterception->registerDispatchProviderInterceptor( _rxInterceptor );
         interceptorsChanged();
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL OFormNavigationHelper::releaseDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor ) throw (RuntimeException)
+    void SAL_CALL OFormNavigationHelper::releaseDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor )
     {
         m_pFeatureInterception->releaseDispatchProviderInterceptor( _rxInterceptor );
         interceptorsChanged();
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL OFormNavigationHelper::statusChanged( const FeatureStateEvent& _rState ) throw (RuntimeException)
+    void SAL_CALL OFormNavigationHelper::statusChanged( const FeatureStateEvent& _rState )
     {
         for (   FeatureMap::iterator aFeature = m_aSupportedFeatures.begin();
                 aFeature != m_aSupportedFeatures.end();
@@ -132,7 +132,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL OFormNavigationHelper::disposing( const EventObject& _rSource ) throw (RuntimeException)
+    void SAL_CALL OFormNavigationHelper::disposing( const EventObject& _rSource )
     {
         // was it one of our external dispatchers?
 	    if ( m_nConnectedFeatures )

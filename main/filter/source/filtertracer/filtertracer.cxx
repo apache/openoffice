@@ -32,17 +32,14 @@
 // ----------------
 
 rtl::OUString FilterTracer_getImplementationName()
-	throw( NMSP_UNO::RuntimeException )
 {
 	return B2UCONST( "com.sun.star.util.FilterTracer" );
 }
 sal_Bool SAL_CALL FilterTracer_supportsService( const rtl::OUString& ServiceName )
-	throw( NMSP_UNO::RuntimeException )
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "com.sun.star.util.logging.Logger" ) );
 }
 SEQ( rtl::OUString ) SAL_CALL FilterTracer_getSupportedServiceNames()
-	throw( NMSP_UNO::RuntimeException )
 {
 	SEQ( rtl::OUString ) aRet(1);
     rtl::OUString* pArray = aRet.getArray();
@@ -101,7 +98,6 @@ sal_Bool FilterTracer::ImplFilter( const rtl::OUString& rFilter, const rtl::OUSt
 
 // XInitialization
 void SAL_CALL FilterTracer::initialize( const SEQ( NMSP_UNO::Any )& aArguments )
-	throw ( NMSP_UNO::Exception, NMSP_UNO::RuntimeException )
 {
 	sal_Int32 i;
 	SEQ( NMSP_BEANS::PropertyValue ) aParameter;
@@ -145,17 +141,14 @@ void SAL_CALL FilterTracer::initialize( const SEQ( NMSP_UNO::Any )& aArguments )
 
 // XServiceInfo
 rtl::OUString SAL_CALL FilterTracer::getImplementationName()
-	throw( NMSP_UNO::RuntimeException )
 {
 	return FilterTracer_getImplementationName();
 }
 sal_Bool SAL_CALL FilterTracer::supportsService( const rtl::OUString& rServiceName )
-	throw( NMSP_UNO::RuntimeException )
 {
     return FilterTracer_supportsService( rServiceName );
 }
 SEQ( rtl::OUString ) SAL_CALL FilterTracer::getSupportedServiceNames()
-	throw ( NMSP_UNO::RuntimeException )
 {
     return FilterTracer_getSupportedServiceNames();
 }
@@ -164,28 +157,25 @@ SEQ( rtl::OUString ) SAL_CALL FilterTracer::getSupportedServiceNames()
 
 // XLogger
 REF( NMSP_LOGGING::XLogger ) SAL_CALL  FilterTracer::getLogger( const rtl::OUString& /* rName */ )
-     throw (::com::sun::star::uno::RuntimeException)
 {
 	REF( NMSP_LOGGING::XLogger ) xLog( this );
 	return xLog;
 }
-sal_Int32 SAL_CALL FilterTracer::getLevel() throw (::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL FilterTracer::getLevel()
 {
 	return mnLogLevel;
 }
-rtl::OUString SAL_CALL FilterTracer::getName() throw (::com::sun::star::uno::RuntimeException)
+rtl::OUString SAL_CALL FilterTracer::getName()
 {
 	rtl::OUString aName;
 	return aName;
 }
 sal_Bool SAL_CALL FilterTracer::isLoggable( sal_Int32 nLevel )
-     throw (::com::sun::star::uno::RuntimeException)
 {
 	return mnLogLevel <= nLevel;
 }
 void SAL_CALL FilterTracer::logp( sal_Int32 /* nLevel */, const rtl::OUString& rSourceClass,
 		const rtl::OUString& rSourceMethod, const rtl::OUString& rMessage )
-     throw (::com::sun::star::uno::RuntimeException)
 {
 	if ( mxOutputStream.is() || mxDocumentHandler.is() )
 	{
@@ -222,7 +212,6 @@ void SAL_CALL FilterTracer::logp( sal_Int32 /* nLevel */, const rtl::OUString& r
 
 // XTextSearch
 void SAL_CALL  FilterTracer::setOptions( const NMSP_UTIL::SearchOptions& rSearchOptions )
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	maSearchOptions = rSearchOptions;
 }
@@ -230,7 +219,7 @@ void SAL_CALL  FilterTracer::setOptions( const NMSP_UTIL::SearchOptions& rSearch
 // -----------------------------------------------------------------------------
 
 NMSP_UTIL::SearchResult SAL_CALL FilterTracer::searchForward( const rtl::OUString& rSearchStr,
-		sal_Int32 nStartPos, sal_Int32 nEndPos ) throw (::com::sun::star::uno::RuntimeException)
+		sal_Int32 nStartPos, sal_Int32 nEndPos )
 {
 	NMSP_UTIL::SearchResult nSearchResult;
 	if ( mxTextSearch.is() )
@@ -241,7 +230,7 @@ NMSP_UTIL::SearchResult SAL_CALL FilterTracer::searchForward( const rtl::OUStrin
 // -----------------------------------------------------------------------------
 
 NMSP_UTIL::SearchResult SAL_CALL FilterTracer::searchBackward( const rtl::OUString& rSearchStr,
-		sal_Int32 nStartPos, sal_Int32 nEndPos ) throw (::com::sun::star::uno::RuntimeException)
+		sal_Int32 nStartPos, sal_Int32 nEndPos )
 {
 	NMSP_UTIL::SearchResult nSearchResult;
 	if ( mxTextSearch.is() )

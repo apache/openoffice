@@ -46,20 +46,15 @@ protected:
     explicit CandleStickChartType( const CandleStickChartType & rOther );
 
     // ____ XChartType ____
-    virtual ::rtl::OUString SAL_CALL getChartType()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getChartType();
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedMandatoryRoles()
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedMandatoryRoles();
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedOptionalRoles()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getRoleOfSequenceForSeriesLabel()
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedOptionalRoles();
+    virtual ::rtl::OUString SAL_CALL getRoleOfSequenceForSeriesLabel();
 
     // ____ OPropertySet ____
-    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const
-        throw(::com::sun::star::beans::UnknownPropertyException);
+    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const;
 
     // ____ OPropertySet ____
 	virtual ::cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
@@ -67,17 +62,14 @@ protected:
     // ____ OPropertySet ____
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast
         ( sal_Int32 nHandle,
-          const ::com::sun::star::uno::Any& rValue )
-		throw (::com::sun::star::uno::Exception);
+          const ::com::sun::star::uno::Any& rValue );
 
     // ____ XPropertySet ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+        getPropertySetInfo();
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 };
 
 } //  namespace chart

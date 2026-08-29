@@ -348,7 +348,6 @@ Reference< XInterface > SAL_CALL loadSharedLibComponentFactory(
     OUString const & rImplName,
     Reference< lang::XMultiServiceFactory > const & xMgr,
     Reference< registry::XRegistryKey > const & xKey )
-    SAL_THROW( (loader::CannotActivateFactoryException) )
 {
     OUString aModulePath( makeComponentPath( rLibName, rPath ) );
     if (! checkAccessPath( &aModulePath ))
@@ -494,7 +493,6 @@ void SAL_CALL writeSharedLibComponentInfo(
     OUString const & rLibName, OUString const & rPath,
     Reference< lang::XMultiServiceFactory > const & xMgr,
     Reference< registry::XRegistryKey > const & xKey )
-    SAL_THROW( (registry::CannotRegisterImplementationException) )
 {
     OUString aModulePath( makeComponentPath( rLibName, rPath ) );
 

@@ -361,7 +361,6 @@ void OCommonEmbeddedObject::PostEvent_Impl( const ::rtl::OUString& aEventName,
 
 //------------------------------------------------------
 uno::Any SAL_CALL OCommonEmbeddedObject::queryInterface( const uno::Type& rType )
-        throw( uno::RuntimeException )
 {
     uno::Any aReturn;
 
@@ -409,7 +408,6 @@ void SAL_CALL OCommonEmbeddedObject::release()
 
 //------------------------------------------------------
 uno::Sequence< uno::Type > SAL_CALL OCommonEmbeddedObject::getTypes()
-        throw( uno::RuntimeException )
 {
     static ::cppu::OTypeCollection* pTypeCollection = NULL;
 
@@ -451,7 +449,6 @@ uno::Sequence< uno::Type > SAL_CALL OCommonEmbeddedObject::getTypes()
 
 //------------------------------------------------------
 uno::Sequence< sal_Int8 > SAL_CALL OCommonEmbeddedObject::getImplementationId()
-        throw( uno::RuntimeException )
 {
     static ::cppu::OImplementationId* pID = NULL ;
 
@@ -470,7 +467,6 @@ uno::Sequence< sal_Int8 > SAL_CALL OCommonEmbeddedObject::getImplementationId()
 
 //------------------------------------------------------
 uno::Sequence< sal_Int8 > SAL_CALL OCommonEmbeddedObject::getClassID()
-        throw ( uno::RuntimeException )
 {
     if ( m_bDisposed )
         throw lang::DisposedException();
@@ -480,7 +476,6 @@ uno::Sequence< sal_Int8 > SAL_CALL OCommonEmbeddedObject::getClassID()
 
 //------------------------------------------------------
 ::rtl::OUString SAL_CALL OCommonEmbeddedObject::getClassName()
-        throw ( uno::RuntimeException )
 {
     if ( m_bDisposed )
         throw lang::DisposedException();
@@ -491,8 +486,6 @@ uno::Sequence< sal_Int8 > SAL_CALL OCommonEmbeddedObject::getClassID()
 //------------------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::setClassInfo(
                 const uno::Sequence< sal_Int8 >& /*aClassID*/, const ::rtl::OUString& /*aClassName*/ )
-        throw ( lang::NoSupportException,
-                uno::RuntimeException )
 {
     // the object class info can not be changed explicitly
     throw lang::NoSupportException(); //TODO:
@@ -500,7 +493,6 @@ void SAL_CALL OCommonEmbeddedObject::setClassInfo(
 
 //------------------------------------------------------
 uno::Reference< util::XCloseable > SAL_CALL OCommonEmbeddedObject::getComponent()
-        throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -524,7 +516,6 @@ uno::Reference< util::XCloseable > SAL_CALL OCommonEmbeddedObject::getComponent(
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::addStateChangeListener( const uno::Reference< embed::XStateChangeListener >& xListener )
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -540,7 +531,6 @@ void SAL_CALL OCommonEmbeddedObject::addStateChangeListener( const uno::Referenc
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::removeStateChangeListener(
                     const uno::Reference< embed::XStateChangeListener >& xListener )
-    throw (uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_pInterfaceContainer )
@@ -550,8 +540,6 @@ void SAL_CALL OCommonEmbeddedObject::removeStateChangeListener(
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::close( sal_Bool bDeliverOwnership )
-    throw ( util::CloseVetoException,
-            uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bClosed )
@@ -655,7 +643,6 @@ void SAL_CALL OCommonEmbeddedObject::close( sal_Bool bDeliverOwnership )
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::addCloseListener( const uno::Reference< util::XCloseListener >& xListener )
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -669,7 +656,6 @@ void SAL_CALL OCommonEmbeddedObject::addCloseListener( const uno::Reference< uti
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::removeCloseListener( const uno::Reference< util::XCloseListener >& xListener )
-    throw (uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_pInterfaceContainer )
@@ -679,7 +665,6 @@ void SAL_CALL OCommonEmbeddedObject::removeCloseListener( const uno::Reference< 
 
 //------------------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::addEventListener( const uno::Reference< document::XEventListener >& xListener )
-        throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -693,7 +678,6 @@ void SAL_CALL OCommonEmbeddedObject::addEventListener( const uno::Reference< doc
 
 //------------------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::removeEventListener( const uno::Reference< document::XEventListener >& xListener )
-        throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_pInterfaceContainer )

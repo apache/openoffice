@@ -28,6 +28,7 @@
 
 #include <algorithm>
 #include <functional>
+#include <iterator>
 #include <com/sun/star/beans/XFastPropertySet.hpp>
 
 using namespace ::com::sun::star;

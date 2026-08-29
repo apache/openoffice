@@ -54,9 +54,7 @@ public:
      */
     virtual css::uno::Sequence< css::uno::Reference< dcsssf::storage::XScriptInfo > >
         SAL_CALL getImplementations(
-            const ::rtl::OUString& queryURI )
-        throw ( css::lang::IllegalArgumentException,
-            css::uno::RuntimeException );
+            const ::rtl::OUString& queryURI );
     //=========================================================================
     /**
      * Get the all logical names stored in this storage
@@ -65,13 +63,12 @@ public:
      *      The logical names
      */
     virtual css::uno::Sequence< ::rtl::OUString >
-        SAL_CALL getScriptLogicalNames()
-        throw ( css::lang::IllegalArgumentException, css::uno::RuntimeException );
+        SAL_CALL getScriptLogicalNames();
 private:
     StorageBridge( const css::uno::Reference< css::uno::XComponentContext >& xContext,
         sal_Int32 sid );
 
-    void initStorage() throw ( css::uno::RuntimeException );
+    void initStorage();
     css::uno::Reference< css::uno::XComponentContext > m_xContext;
     css::uno::Reference< dcsssf::storage::XScriptInfoAccess > m_xScriptInfoAccess;
     sal_Int32 m_sid;

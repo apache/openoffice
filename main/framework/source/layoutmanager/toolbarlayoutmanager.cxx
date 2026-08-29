@@ -104,7 +104,7 @@ void SAL_CALL ToolbarLayoutManager::release() throw()
     OWeakObject::release();
 }
 
-uno::Any SAL_CALL ToolbarLayoutManager::queryInterface( const uno::Type & rType ) throw( uno::RuntimeException )
+uno::Any SAL_CALL ToolbarLayoutManager::queryInterface( const uno::Type & rType )
 {
     uno::Any a = ::cppu::queryInterface( rType,
         SAL_STATIC_CAST( awt::XDockableWindowListener*, this ),
@@ -117,7 +117,7 @@ uno::Any SAL_CALL ToolbarLayoutManager::queryInterface( const uno::Type & rType 
     return OWeakObject::queryInterface( rType );
 }
 
-void SAL_CALL ToolbarLayoutManager::disposing( const lang::EventObject& aEvent ) throw( uno::RuntimeException )
+void SAL_CALL ToolbarLayoutManager::disposing( const lang::EventObject& aEvent )
 {
     if ( aEvent.Source == m_xFrame )
     {
@@ -3361,7 +3361,6 @@ void ToolbarLayoutManager::implts_renumberRowColumnData(
 //  XWindowListener
 //---------------------------------------------------------------------------------------------------------
 void SAL_CALL ToolbarLayoutManager::windowResized( const awt::WindowEvent& aEvent )
-throw( uno::RuntimeException )
 {
     WriteGuard aWriteLock( m_aLock );
     bool bLocked( m_bDockingInProgress );
@@ -3411,17 +3410,14 @@ throw( uno::RuntimeException )
 }
 
 void SAL_CALL ToolbarLayoutManager::windowMoved( const awt::WindowEvent& /*aEvent*/ )
-throw( uno::RuntimeException )
 {
 }
 
 void SAL_CALL ToolbarLayoutManager::windowShown( const lang::EventObject& /*aEvent*/ )
-throw( uno::RuntimeException )
 {
 }
 
 void SAL_CALL ToolbarLayoutManager::windowHidden( const lang::EventObject& /*aEvent*/ )
-throw( uno::RuntimeException )
 {
 }
 
@@ -3429,7 +3425,6 @@ throw( uno::RuntimeException )
 //  XDockableWindowListener
 //---------------------------------------------------------------------------------------------------------
 void SAL_CALL ToolbarLayoutManager::startDocking( const awt::DockingEvent& e )
-throw (uno::RuntimeException)
 {
     bool bWinFound( false );
 
@@ -3483,7 +3478,6 @@ throw (uno::RuntimeException)
 }
 
 awt::DockingData SAL_CALL ToolbarLayoutManager::docking( const awt::DockingEvent& e )
-throw (uno::RuntimeException)
 {
     const sal_Int32 MAGNETIC_DISTANCE_UNDOCK = 25;
     const sal_Int32 MAGNETIC_DISTANCE_DOCK   = 20;
@@ -3659,7 +3653,6 @@ throw (uno::RuntimeException)
 }
 
 void SAL_CALL ToolbarLayoutManager::endDocking( const awt::EndDockingEvent& e )
-throw (uno::RuntimeException)
 {
     bool bDockingInProgress( false );
     bool bStartDockFloated( false );
@@ -3755,7 +3748,6 @@ throw (uno::RuntimeException)
 }
 
 sal_Bool SAL_CALL ToolbarLayoutManager::prepareToggleFloatingMode( const lang::EventObject& e )
-throw (uno::RuntimeException)
 {
     ReadGuard aReadLock( m_aLock );
     bool bDockingInProgress = m_bDockingInProgress;
@@ -3797,7 +3789,6 @@ throw (uno::RuntimeException)
 }
 
 void SAL_CALL ToolbarLayoutManager::toggleFloatingMode( const lang::EventObject& e )
-throw (uno::RuntimeException)
 {
     UIElement aUIDockingElement;
 
@@ -3928,7 +3919,6 @@ throw (uno::RuntimeException)
 }
 
 void SAL_CALL ToolbarLayoutManager::closed( const lang::EventObject& e )
-throw (uno::RuntimeException)
 {
     rtl::OUString aName;
     UIElement     aUIElement;
@@ -3967,7 +3957,6 @@ throw (uno::RuntimeException)
 }
 
 void SAL_CALL ToolbarLayoutManager::endPopupMode( const awt::EndPopupModeEvent& /*e*/ )
-throw (uno::RuntimeException)
 {
 }
 
@@ -3975,7 +3964,6 @@ throw (uno::RuntimeException)
 //  XUIConfigurationListener
 //---------------------------------------------------------------------------------------------------------
 void SAL_CALL ToolbarLayoutManager::elementInserted( const ui::ConfigurationEvent& rEvent )
-throw (uno::RuntimeException)
 {
     UIElement aUIElement = implts_findToolbar( rEvent.ResourceURL );
 
@@ -4033,7 +4021,6 @@ throw (uno::RuntimeException)
 }
 
 void SAL_CALL ToolbarLayoutManager::elementRemoved( const ui::ConfigurationEvent& rEvent )
-throw (uno::RuntimeException)
 {
     ReadGuard aReadLock( m_aLock );
     uno::Reference< awt::XWindow > xContainerWindow( m_xContainerWindow, uno::UNO_QUERY );
@@ -4081,7 +4068,6 @@ throw (uno::RuntimeException)
 }
 
 void SAL_CALL ToolbarLayoutManager::elementReplaced( const ui::ConfigurationEvent& rEvent )
-throw (uno::RuntimeException)
 {
     UIElement aUIElement = implts_findToolbar( rEvent.ResourceURL );
 

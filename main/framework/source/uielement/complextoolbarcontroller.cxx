@@ -99,7 +99,6 @@ ComplexToolbarController::~ComplexToolbarController()
 // ------------------------------------------------------------------
 
 void SAL_CALL ComplexToolbarController::dispose()
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 
@@ -123,7 +122,6 @@ Sequence<PropertyValue> ComplexToolbarController::getExecuteArgs(sal_Int16 KeyMo
 }
 // -----------------------------------------------------------------------------
 void SAL_CALL ComplexToolbarController::execute( sal_Int16 KeyModifier )
-throw ( RuntimeException )
 {
     Reference< XDispatch >       xDispatch;
     Reference< XURLTransformer > xURLTransformer;
@@ -170,7 +168,6 @@ throw ( RuntimeException )
 // ------------------------------------------------------------------
 
 void ComplexToolbarController::statusChanged( const FeatureStateEvent& Event )
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 

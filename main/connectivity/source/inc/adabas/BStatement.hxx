@@ -49,7 +49,7 @@ namespace connectivity
 				,m_pOwnConnection(_pConnection)
 			{}
 
-			virtual sal_Bool SAL_CALL execute( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+			virtual sal_Bool SAL_CALL execute( const ::rtl::OUString& sql );
 		};
 	}
 }

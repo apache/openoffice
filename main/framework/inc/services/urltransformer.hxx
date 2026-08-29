@@ -139,7 +139,7 @@ class URLTransformer	:	public ::cppu::WeakImplHelper2< ::com::sun::star::util::X
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual sal_Bool SAL_CALL parseStrict( css::util::URL& aURL ) throw( css::uno::RuntimeException );
+    	virtual sal_Bool SAL_CALL parseStrict( css::util::URL& aURL );
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -154,7 +154,7 @@ class URLTransformer	:	public ::cppu::WeakImplHelper2< ::com::sun::star::util::X
 		*//*-*****************************************************************************************************/
 
     	virtual sal_Bool SAL_CALL parseSmart(			css::util::URL&		aURL			,
-												const	::rtl::OUString&	sSmartProtocol	) throw( css::uno::RuntimeException );
+												const	::rtl::OUString&	sSmartProtocol	);
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -168,7 +168,7 @@ class URLTransformer	:	public ::cppu::WeakImplHelper2< ::com::sun::star::util::X
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual sal_Bool SAL_CALL assemble( css::util::URL& aURL ) throw( css::uno::RuntimeException );
+    	virtual sal_Bool SAL_CALL assemble( css::util::URL& aURL );
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -183,7 +183,7 @@ class URLTransformer	:	public ::cppu::WeakImplHelper2< ::com::sun::star::util::X
 		*//*-*****************************************************************************************************/
 
     	virtual ::rtl::OUString SAL_CALL getPresentation(	const	css::util::URL&		aURL			,
-																	sal_Bool			bWithPassword	) throw( css::uno::RuntimeException );
+																	sal_Bool			bWithPassword	);
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

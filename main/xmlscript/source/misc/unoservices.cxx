@@ -39,32 +39,27 @@ namespace xmlscript
     Sequence< OUString > SAL_CALL getSupportedServiceNames_DocumentHandlerImpl();
     OUString SAL_CALL getImplementationName_DocumentHandlerImpl();
     Reference< XInterface > SAL_CALL create_DocumentHandlerImpl(
-        Reference< XComponentContext > const & xContext )
-            SAL_THROW( (Exception) );
+        Reference< XComponentContext > const & xContext );
 
     Sequence< OUString > SAL_CALL getSupportedServiceNames_XMLBasicExporter();
     OUString SAL_CALL getImplementationName_XMLBasicExporter();
     Reference< XInterface > SAL_CALL create_XMLBasicExporter(
-        Reference< XComponentContext > const & xContext )
-            SAL_THROW( (Exception) );
+        Reference< XComponentContext > const & xContext );
 
     Sequence< OUString > SAL_CALL getSupportedServiceNames_XMLOasisBasicExporter();
     OUString SAL_CALL getImplementationName_XMLOasisBasicExporter();
     Reference< XInterface > SAL_CALL create_XMLOasisBasicExporter(
-        Reference< XComponentContext > const & xContext )
-            SAL_THROW( (Exception) );
+        Reference< XComponentContext > const & xContext );
 
     Sequence< OUString > SAL_CALL getSupportedServiceNames_XMLBasicImporter();
     OUString SAL_CALL getImplementationName_XMLBasicImporter();
     Reference< XInterface > SAL_CALL create_XMLBasicImporter(
-        Reference< XComponentContext > const & xContext )
-            SAL_THROW( (Exception) );
+        Reference< XComponentContext > const & xContext );
 
     Sequence< OUString > SAL_CALL getSupportedServiceNames_XMLOasisBasicImporter();
     OUString SAL_CALL getImplementationName_XMLOasisBasicImporter();
     Reference< XInterface > SAL_CALL create_XMLOasisBasicImporter(
-        Reference< XComponentContext > const & xContext )
-            SAL_THROW( (Exception) );
+        Reference< XComponentContext > const & xContext );
 
     // -----------------------------------------------------------------------------
 

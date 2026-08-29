@@ -692,24 +692,24 @@ namespace sdr { namespace contact {
         ~ViewObjectContactOfUnoControl_Impl();
 
         // XEventListener
-        virtual void SAL_CALL disposing( const EventObject& Source ) throw(RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& Source );
 
         // XWindowListener
-        virtual void SAL_CALL windowResized( const WindowEvent& e ) throw(RuntimeException);
-        virtual void SAL_CALL windowMoved( const WindowEvent& e ) throw(RuntimeException);
-        virtual void SAL_CALL windowShown( const EventObject& e ) throw(RuntimeException);
-        virtual void SAL_CALL windowHidden( const EventObject& e ) throw(RuntimeException);
+        virtual void SAL_CALL windowResized( const WindowEvent& e );
+        virtual void SAL_CALL windowMoved( const WindowEvent& e );
+        virtual void SAL_CALL windowShown( const EventObject& e );
+        virtual void SAL_CALL windowHidden( const EventObject& e );
 
         // XPropertyChangeListener
-        virtual void SAL_CALL propertyChange( const PropertyChangeEvent& evt ) throw(RuntimeException);
+        virtual void SAL_CALL propertyChange( const PropertyChangeEvent& evt );
 
         // XModeChangeListener
-        virtual void SAL_CALL modeChanged( const ModeChangeEvent& _rSource ) throw (RuntimeException);
+        virtual void SAL_CALL modeChanged( const ModeChangeEvent& _rSource );
 
         // XContainerListener
-        virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event );
+        virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event );
+        virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
 
     private:
         /** retrieves the SdrPageView which our associated SdrPageViewWindow belongs to
@@ -1429,7 +1429,7 @@ namespace sdr { namespace contact {
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::disposing( const EventObject& Source ) throw(RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::disposing( const EventObject& Source )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
             // some code below - in particular our disposal - might trigger actions which require the
@@ -1456,33 +1456,33 @@ namespace sdr { namespace contact {
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowResized( const WindowEvent& /*e*/ ) throw(RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowResized( const WindowEvent& /*e*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowMoved( const WindowEvent& /*e*/ ) throw(RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowMoved( const WindowEvent& /*e*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowShown( const EventObject& /*e*/ ) throw(RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowShown( const EventObject& /*e*/ )
     {
         VOCGuard aGuard( *this );
         m_bControlIsVisible = true;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowHidden( const EventObject& /*e*/ ) throw(RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::windowHidden( const EventObject& /*e*/ )
     {
         VOCGuard aGuard( *this );
         m_bControlIsVisible = false;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::propertyChange( const PropertyChangeEvent& /*_rEvent*/ ) throw(RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::propertyChange( const PropertyChangeEvent& /*_rEvent*/ )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
             // (re)painting might require VCL operations, which need the SolarMutex
@@ -1504,7 +1504,7 @@ namespace sdr { namespace contact {
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::modeChanged( const ModeChangeEvent& _rSource ) throw (RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::modeChanged( const ModeChangeEvent& _rSource )
     {
         VOCGuard aGuard( *this );
 
@@ -1528,13 +1528,13 @@ namespace sdr { namespace contact {
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::elementInserted( const ContainerEvent& /*_Event*/ ) throw (RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::elementInserted( const ContainerEvent& /*_Event*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::elementRemoved( const ContainerEvent& Event ) throw (RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::elementRemoved( const ContainerEvent& Event )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
             // some code below - in particular our disposal - might trigger actions which require the
@@ -1550,7 +1550,7 @@ namespace sdr { namespace contact {
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ViewObjectContactOfUnoControl_Impl::elementReplaced( const ContainerEvent& Event ) throw (RuntimeException)
+    void SAL_CALL ViewObjectContactOfUnoControl_Impl::elementReplaced( const ContainerEvent& Event )
     {
         VOCGuard aGuard( *this );
         DBG_ASSERT( Event.Source == m_xContainer, "ViewObjectContactOfUnoControl_Impl::elementReplaced: where did this come from?" );

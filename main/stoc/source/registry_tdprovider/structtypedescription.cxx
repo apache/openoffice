@@ -62,37 +62,33 @@ StructTypeDescription::~StructTypeDescription()
 {}
 
 css::uno::TypeClass StructTypeDescription::getTypeClass()
-    throw (css::uno::RuntimeException)
 {
     return m_base->getTypeClass();
 }
 
 rtl::OUString StructTypeDescription::getName()
-    throw (css::uno::RuntimeException)
 {
     return m_base->getName();
 }
 
 css::uno::Reference< css::reflection::XTypeDescription >
-StructTypeDescription::getBaseType() throw (css::uno::RuntimeException)
+StructTypeDescription::getBaseType()
 {
     return m_base->getBaseType();
 }
 
 css::uno::Sequence< css::uno::Reference< css::reflection::XTypeDescription > >
-StructTypeDescription::getMemberTypes() throw (css::uno::RuntimeException)
+StructTypeDescription::getMemberTypes()
 {
     return m_base->getMemberTypes();
 }
 
 css::uno::Sequence< rtl::OUString > StructTypeDescription::getMemberNames()
-    throw (css::uno::RuntimeException)
 {
     return m_base->getMemberNames();
 }
 
 css::uno::Sequence< rtl::OUString > StructTypeDescription::getTypeParameters()
-    throw (css::uno::RuntimeException)
 {
     try {
         typereg::Reader reader(
@@ -123,13 +119,13 @@ css::uno::Sequence< rtl::OUString > StructTypeDescription::getTypeParameters()
 }
 
 css::uno::Sequence< css::uno::Reference< css::reflection::XTypeDescription > >
-StructTypeDescription::getTypeArguments() throw (css::uno::RuntimeException)
+StructTypeDescription::getTypeArguments()
 {
     return css::uno::Sequence<
         css::uno::Reference< css::reflection::XTypeDescription > >();
 }
 
-sal_Bool StructTypeDescription::isPublished() throw (css::uno::RuntimeException)
+sal_Bool StructTypeDescription::isPublished()
 {
     return m_base->isPublished();
 }

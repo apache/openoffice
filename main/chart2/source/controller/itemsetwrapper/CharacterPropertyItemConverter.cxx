@@ -126,7 +126,6 @@ bool CharacterPropertyItemConverter::GetItemProperty( tWhichIdType nWhichId, tPr
 
 void CharacterPropertyItemConverter::FillSpecialItem(
     sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const
-    throw( uno::Exception )
 {
     switch( nWhichId )
     {
@@ -328,7 +327,6 @@ void CharacterPropertyItemConverter::FillSpecialItem(
 
 bool CharacterPropertyItemConverter::ApplySpecialItem(
     sal_uInt16 nWhichId, const SfxItemSet & rItemSet )
-    throw( uno::Exception )
 {
     bool bChanged = false;
     uno::Any aValue;

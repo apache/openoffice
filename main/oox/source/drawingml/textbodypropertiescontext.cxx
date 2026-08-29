@@ -137,13 +137,13 @@ TextBodyPropertiesContext::TextBodyPropertiesContext( ContextHandler& rParent,
 
 // --------------------------------------------------------------------
 
-void TextBodyPropertiesContext::endFastElement( sal_Int32 ) throw (SAXException, RuntimeException)
+void TextBodyPropertiesContext::endFastElement( sal_Int32 )
 {
 }
 
 // --------------------------------------------------------------------
 
-Reference< XFastContextHandler > TextBodyPropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& /*xAttributes*/) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > TextBodyPropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& /*xAttributes*/)
 {
 	Reference< XFastContextHandler > xRet;
 	switch( aElementToken )

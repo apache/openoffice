@@ -56,7 +56,6 @@ LayoutFragmentHandler::~LayoutFragmentHandler()
 }
 
 Reference< XFastContextHandler > LayoutFragmentHandler::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
-	throw (SAXException, RuntimeException)
 {
     Reference< XFastContextHandler > xRet = getFastContextHandler();
 	switch( aElementToken )
@@ -74,7 +73,6 @@ Reference< XFastContextHandler > LayoutFragmentHandler::createFastChildContext( 
 }
 
 void SAL_CALL LayoutFragmentHandler::endDocument()
-	throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
 {
 }
 

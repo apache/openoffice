@@ -89,7 +89,7 @@ namespace dbmm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ProgressCapture::start( const ::rtl::OUString& _rText, ::sal_Int32 _nRange ) throw (RuntimeException)
+    void SAL_CALL ProgressCapture::start( const ::rtl::OUString& _rText, ::sal_Int32 _nRange )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
         if ( !m_pData->bDisposed )
@@ -97,7 +97,7 @@ namespace dbmm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ProgressCapture::end(  ) throw (RuntimeException)
+    void SAL_CALL ProgressCapture::end(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
         if ( !m_pData->bDisposed )
@@ -105,7 +105,7 @@ namespace dbmm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ProgressCapture::setText( const ::rtl::OUString& _rText ) throw (RuntimeException)
+    void SAL_CALL ProgressCapture::setText( const ::rtl::OUString& _rText )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
         if ( !m_pData->bDisposed )
@@ -113,7 +113,7 @@ namespace dbmm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ProgressCapture::setValue( ::sal_Int32 _nValue ) throw (RuntimeException)
+    void SAL_CALL ProgressCapture::setValue( ::sal_Int32 _nValue )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
         if ( !m_pData->bDisposed )
@@ -121,7 +121,7 @@ namespace dbmm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ProgressCapture::reset(  ) throw (RuntimeException)
+    void SAL_CALL ProgressCapture::reset(  )
     {
         OSL_ENSURE( false, "ProgressCapture::reset: not implemented!" );
     }

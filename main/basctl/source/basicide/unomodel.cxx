@@ -51,7 +51,7 @@ SIDEModel::~SIDEModel()
 {
 }
 
-uno::Any SAL_CALL SIDEModel::queryInterface( const uno::Type& rType ) throw(uno::RuntimeException)
+uno::Any SAL_CALL SIDEModel::queryInterface( const uno::Type& rType )
 {
     uno::Any aRet =  ::cppu::queryInterface ( rType,
 									// OWeakObject interfaces
@@ -75,7 +75,7 @@ void SAL_CALL SIDEModel::release() throw()
 	OWeakObject::release();
 }
 
-uno::Sequence< uno::Type > SAL_CALL SIDEModel::getTypes(  ) throw(uno::RuntimeException)
+uno::Sequence< uno::Type > SAL_CALL SIDEModel::getTypes(  )
 {
     uno::Sequence< uno::Type > aTypes = SfxBaseModel::getTypes();
     sal_Int32 nLen = aTypes.getLength();
@@ -86,7 +86,7 @@ uno::Sequence< uno::Type > SAL_CALL SIDEModel::getTypes(  ) throw(uno::RuntimeEx
     return aTypes;
 }
 
-OUString SIDEModel::getImplementationName(void) throw( uno::RuntimeException )
+OUString SIDEModel::getImplementationName(void)
 {
 	return getImplementationName_Static();
 }
@@ -96,11 +96,11 @@ OUString SIDEModel::getImplementationName(void) throw( uno::RuntimeException )
 	return rtl::OUString::createFromAscii("com.sun.star.comp.basic.BasicIDE");
 }
 
-sal_Bool SIDEModel::supportsService(const OUString& rServiceName) throw( uno::RuntimeException )
+sal_Bool SIDEModel::supportsService(const OUString& rServiceName)
 {
 	return rServiceName == ::rtl::OUString::createFromAscii("com.sun.star.script.BasicIDE");
 }
-uno::Sequence< OUString > SIDEModel::getSupportedServiceNames(void) throw( uno::RuntimeException )
+uno::Sequence< OUString > SIDEModel::getSupportedServiceNames(void)
 {
 	return getSupportedServiceNames_Static();
 }
@@ -114,7 +114,7 @@ uno::Sequence< OUString > SIDEModel::getSupportedServiceNames_Static(void)
 }
 
 uno::Reference< uno::XInterface > SAL_CALL SIDEModel_createInstance(
-				const uno::Reference< uno::XComponentContext > & ) throw( uno::Exception )
+				const uno::Reference< uno::XComponentContext > & )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	BasicIDEDLL::Init();

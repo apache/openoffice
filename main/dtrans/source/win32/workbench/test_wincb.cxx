@@ -107,20 +107,20 @@ public:
 	// XClipboardListener
 	//-------------------------------------------------
 
-	virtual void SAL_CALL disposing( const EventObject& Source ) throw(RuntimeException);
-	virtual void SAL_CALL changedContents( const ClipboardEvent& event ) throw( RuntimeException );
+	virtual void SAL_CALL disposing( const EventObject& Source );
+	virtual void SAL_CALL changedContents( const ClipboardEvent& event );
 };
 
 CClipboardListener::~CClipboardListener( )
 {
 }
 
-void SAL_CALL CClipboardListener::disposing( const EventObject& Source ) throw(RuntimeException)
+void SAL_CALL CClipboardListener::disposing( const EventObject& Source )
 {
 
 }
 
-void SAL_CALL CClipboardListener::changedContents( const ClipboardEvent& event ) throw( RuntimeException )
+void SAL_CALL CClipboardListener::changedContents( const ClipboardEvent& event )
 {
 	//MessageBox( NULL, TEXT("Clipboard content changed"), TEXT("Info"), MB_OK | MB_ICONINFORMATION );
 }
@@ -138,19 +138,17 @@ public:
 	// XTransferable
 	//-------------------------------------------------
 
-	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor )
-		throw(UnsupportedFlavorException, IOException, RuntimeException);
+	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor );
 
-    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  ) throw(RuntimeException);
+    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  );
 
-	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor ) throw(RuntimeException);
+	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor );
 
 	//-------------------------------------------------
 	// XClipboardOwner
 	//-------------------------------------------------
 
-	virtual void SAL_CALL lostOwnership( const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans )
-		throw(RuntimeException);
+	virtual void SAL_CALL lostOwnership( const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans );
 
 private:
 	Sequence< DataFlavor > m_FlavorList;
@@ -181,7 +179,6 @@ CTransferable::CTransferable( ) :
 //----------------------------------------------------------------
 
 Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
-	throw(UnsupportedFlavorException, IOException, RuntimeException)
 {
 	Any anyData;
 
@@ -213,7 +210,6 @@ Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
 //----------------------------------------------------------------
 
 Sequence< DataFlavor > SAL_CALL CTransferable::getTransferDataFlavors(  )
-	throw(RuntimeException)
 {
 	return m_FlavorList;
 }
@@ -223,7 +219,6 @@ Sequence< DataFlavor > SAL_CALL CTransferable::getTransferDataFlavors(  )
 //----------------------------------------------------------------
 
 sal_Bool SAL_CALL CTransferable::isDataFlavorSupported( const DataFlavor& aFlavor )
-	throw(RuntimeException)
 {
 	sal_Int32 nLength = m_FlavorList.getLength( );
 
@@ -240,7 +235,6 @@ sal_Bool SAL_CALL CTransferable::isDataFlavorSupported( const DataFlavor& aFlavo
 
 void SAL_CALL CTransferable::lostOwnership(
 	const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans )
-	throw(RuntimeException)
 {
 	//MessageBox( NULL, TEXT("No longer clipboard owner"), TEXT("Info"), MB_OK | MB_ICONINFORMATION );
 }

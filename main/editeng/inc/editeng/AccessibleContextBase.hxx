@@ -111,8 +111,7 @@ public:
     */
     void SetAccessibleDescription (
         const ::rtl::OUString& rsDescription,
-        StringOrigin eDescriptionOrigin)
-        throw (::com::sun::star::uno::RuntimeException);
+        StringOrigin eDescriptionOrigin);
 
     /** Set a new description and, provided that the new name differs from
         the old one, broadcast an accessibility event.
@@ -125,8 +124,7 @@ public:
     */
     void SetAccessibleName (
         const ::rtl::OUString& rsName,
-        StringOrigin eNameOrigin)
-        throw (::com::sun::star::uno::RuntimeException);
+        StringOrigin eNameOrigin);
 
     /** Set the specified state (turn it on) and send events to all
         listeners to inform them of the change.
@@ -171,8 +169,7 @@ public:
     */
     virtual void SetRelationSet (
         const ::com::sun::star::uno::Reference<
-        ::com::sun::star::accessibility::XAccessibleRelationSet>& rxRelationSet)
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::accessibility::XAccessibleRelationSet>& rxRelationSet);
 
 
 	//=====  XAccessible  =====================================================
@@ -180,64 +177,54 @@ public:
     ///	Return the XAccessibleContext.
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessibleContext> SAL_CALL
-    	getAccessibleContext (void) throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleContext (void);
 
 
 	//=====  XAccessibleContext  ==============================================
 
     ///	Return the number of currently visible children.
     virtual sal_Int32 SAL_CALL
-    	getAccessibleChildCount (void) throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleChildCount (void);
 
     ///	Return the specified child or throw exception.
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-    	getAccessibleChild (sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    	getAccessibleChild (sal_Int32 nIndex);
 
     ///	Return a reference to the parent.
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-    	getAccessibleParent (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleParent (void);
 
     ///	Return this objects index among the parents children.
 	virtual	sal_Int32 SAL_CALL
-    	getAccessibleIndexInParent (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleIndexInParent (void);
 
     ///	Return this object's role.
 	virtual sal_Int16 SAL_CALL
-    	getAccessibleRole (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleRole (void);
 
     ///	Return this object's description.
 	virtual ::rtl::OUString SAL_CALL
-    	getAccessibleDescription (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleDescription (void);
 
     ///	Return the object's current name.
 	virtual ::rtl::OUString SAL_CALL
-    	getAccessibleName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleName (void);
 
 	///	Return NULL to indicate that an empty relation set.
 	virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessibleRelationSet> SAL_CALL
-    	getAccessibleRelationSet (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleRelationSet (void);
 
     ///	Return the set of current states.
 	virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessibleStateSet> SAL_CALL
-    	getAccessibleStateSet (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleStateSet (void);
 
 	/**	Return the parents locale or throw exception if this object has no
     	parent yet/anymore.
     */
 	virtual ::com::sun::star::lang::Locale SAL_CALL
-    	getLocale (void)
-		throw (::com::sun::star::uno::RuntimeException,
-			::com::sun::star::accessibility::IllegalAccessibleComponentStateException);
+    	getLocale (void);
 
     //=====  XComponent  ========================================================
 
@@ -249,14 +236,12 @@ public:
     virtual void SAL_CALL
         addEventListener (
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::accessibility::XAccessibleEventListener >& xListener)
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::accessibility::XAccessibleEventListener >& xListener);
 
     virtual void SAL_CALL
         removeEventListener (
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::accessibility::XAccessibleEventListener >& xListener)
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::accessibility::XAccessibleEventListener >& xListener);
 
 
 	//=====  XServiceInfo  ====================================================
@@ -264,21 +249,18 @@ public:
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName (void);
 
     /**	Return whether the specified service is supported by this class.
     */
     virtual sal_Bool SAL_CALL
-    	supportsService (const ::rtl::OUString& sServiceName)
-        throw (::com::sun::star::uno::RuntimeException);
+    	supportsService (const ::rtl::OUString& sServiceName);
 
     /** Returns a list of all supported services.  In this case that is just
     	the AccessibleContext service.
     */
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-    	getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getSupportedServiceNames (void);
 
 
 	//=====  XTypeProvider  ===================================================
@@ -286,14 +268,12 @@ public:
     /**	Returns a sequence of all supported interfaces.
     */
 	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
-		getTypes (void)
-        throw (::com::sun::star::uno::RuntimeException);
+		getTypes (void);
 
     /**	Returns a implementation id.
     */
     virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL
-        getImplementationId (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getImplementationId (void);
 
 protected:
     /** The state set.
@@ -316,8 +296,7 @@ protected:
             The returned string is a unique (among the accessible object's
             siblings) name.
     */
-	virtual ::rtl::OUString CreateAccessibleName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString CreateAccessibleName (void);
 
     /**	Create the accessible object's descriptive string.  May be called
         more than once.
@@ -325,8 +304,7 @@ protected:
             Descriptive string.  Not necessarily unique.
     */
 	virtual ::rtl::OUString
-    	CreateAccessibleDescription (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleDescription (void);
 
     void FireEvent (const ::com::sun::star::accessibility::AccessibleEventObject& aEvent);
 
@@ -335,8 +313,7 @@ protected:
         DisposedException is thrown to inform the (indirect) caller of the
         foul deed.
     */
-    void ThrowIfDisposed (void)
-        throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void);
 
     /** Check whether or not the object has been disposed (or is in the
         state of being disposed).

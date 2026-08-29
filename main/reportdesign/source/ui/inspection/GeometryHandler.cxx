@@ -21,6 +21,7 @@
 
 
 #include "precompiled_rptui.hxx"
+#include <iterator>
 #include "GeometryHandler.hxx"
 
 #include <comphelper/sequence.hxx>
@@ -247,31 +248,31 @@ GeometryHandler::~GeometryHandler()
     DBG_DTOR(rpt_GeometryHandler,NULL);
 }
 //------------------------------------------------------------------------
-::rtl::OUString SAL_CALL GeometryHandler::getImplementationName(  ) throw(uno::RuntimeException)
+::rtl::OUString SAL_CALL GeometryHandler::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------------
-sal_Bool SAL_CALL GeometryHandler::supportsService( const ::rtl::OUString& ServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL GeometryHandler::supportsService( const ::rtl::OUString& ServiceName )
 {
 	return ::comphelper::existsValue(ServiceName,getSupportedServiceNames_static());
 }
 
 //------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getSupportedServiceNames(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_static();
 }
 
 //------------------------------------------------------------------------
-::rtl::OUString GeometryHandler::getImplementationName_Static(  ) throw(uno::RuntimeException)
+::rtl::OUString GeometryHandler::getImplementationName_Static(  )
 {
     return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.report.GeometryHandler"));
 }
 
 //------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > GeometryHandler::getSupportedServiceNames_static(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > GeometryHandler::getSupportedServiceNames_static(  )
 {
 	uno::Sequence< ::rtl::OUString > aSupported(1);
     aSupported[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.report.inspection.GeometryHandler"));
@@ -303,12 +304,12 @@ void SAL_CALL GeometryHandler::disposing()
     catch(uno::Exception&)
     {}
 }
-void SAL_CALL GeometryHandler::addEventListener(const uno::Reference< lang::XEventListener > & xListener) throw (uno::RuntimeException)
+void SAL_CALL GeometryHandler::addEventListener(const uno::Reference< lang::XEventListener > & xListener)
 {
     m_xFormComponentHandler->addEventListener(xListener);
 }
 
-void SAL_CALL GeometryHandler::removeEventListener(const uno::Reference< lang::XEventListener > & aListener) throw (uno::RuntimeException)
+void SAL_CALL GeometryHandler::removeEventListener(const uno::Reference< lang::XEventListener > & aListener)
 {
     m_xFormComponentHandler->removeEventListener(aListener);
 }
@@ -316,7 +317,7 @@ void SAL_CALL GeometryHandler::removeEventListener(const uno::Reference< lang::X
 // inspection::XPropertyHandler:
 
 /********************************************************************************/
-void SAL_CALL GeometryHandler::inspect( const uno::Reference< uno::XInterface > & _rxInspectee ) throw (uno::RuntimeException, lang::NullPointerException)
+void SAL_CALL GeometryHandler::inspect( const uno::Reference< uno::XInterface > & _rxInspectee )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     m_sScope = m_sDefaultFunction = ::rtl::OUString();
@@ -361,7 +362,7 @@ void SAL_CALL GeometryHandler::inspect( const uno::Reference< uno::XInterface > 
     m_xFormComponentHandler->inspect(m_xReportComponent);
 }
 
-uno::Any SAL_CALL GeometryHandler::getPropertyValue(const ::rtl::OUString & PropertyName) throw (uno::RuntimeException, beans::UnknownPropertyException)
+uno::Any SAL_CALL GeometryHandler::getPropertyValue(const ::rtl::OUString & PropertyName)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     uno::Any aPropertyValue;
@@ -455,7 +456,7 @@ uno::Any SAL_CALL GeometryHandler::getPropertyValue(const ::rtl::OUString & Prop
     return aPropertyValue;
 }
 
-void SAL_CALL GeometryHandler::setPropertyValue(const ::rtl::OUString & PropertyName, const uno::Any & Value) throw (uno::RuntimeException, beans::UnknownPropertyException)
+void SAL_CALL GeometryHandler::setPropertyValue(const ::rtl::OUString & PropertyName, const uno::Any & Value)
 {
     ::osl::ResettableMutexGuard aGuard( m_aMutex );
     uno::Any aNewValue = Value;
@@ -669,7 +670,7 @@ void SAL_CALL GeometryHandler::setPropertyValue(const ::rtl::OUString & Property
 }
 
 // -----------------------------------------------------------------------------
-beans::PropertyState SAL_CALL GeometryHandler::getPropertyState(const ::rtl::OUString & PropertyName) throw (uno::RuntimeException, beans::UnknownPropertyException)
+beans::PropertyState SAL_CALL GeometryHandler::getPropertyState(const ::rtl::OUString & PropertyName)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     return m_xFormComponentHandler->getPropertyState(PropertyName);
@@ -709,7 +710,7 @@ void GeometryHandler::implCreateListLikeControl(
 }
 // -----------------------------------------------------------------------------
 
-inspection::LineDescriptor SAL_CALL GeometryHandler::describePropertyLine(const ::rtl::OUString & PropertyName, const uno::Reference< inspection::XPropertyControlFactory > & _xControlFactory) throw (beans::UnknownPropertyException, lang::NullPointerException,uno::RuntimeException)
+inspection::LineDescriptor SAL_CALL GeometryHandler::describePropertyLine(const ::rtl::OUString & PropertyName, const uno::Reference< inspection::XPropertyControlFactory > & _xControlFactory)
 {
     inspection::LineDescriptor aOut;
     const sal_Int32 nId = m_pInfoService->getPropertyId(PropertyName);
@@ -948,7 +949,7 @@ uno::Any GeometryHandler::getConstantValue(sal_Bool _bToControlValue,sal_uInt16 
     }
 }
 
-uno::Any SAL_CALL GeometryHandler::convertToPropertyValue(const ::rtl::OUString & PropertyName, const uno::Any & _rControlValue) throw (uno::RuntimeException, beans::UnknownPropertyException)
+uno::Any SAL_CALL GeometryHandler::convertToPropertyValue(const ::rtl::OUString & PropertyName, const uno::Any & _rControlValue)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     uno::Any aPropertyValue( _rControlValue );
@@ -1105,7 +1106,7 @@ uno::Any SAL_CALL GeometryHandler::convertToPropertyValue(const ::rtl::OUString 
     return aPropertyValue;
 }
 
-uno::Any SAL_CALL GeometryHandler::convertToControlValue(const ::rtl::OUString & PropertyName, const uno::Any & _rPropertyValue, const uno::Type & _rControlValueType) throw (uno::RuntimeException, beans::UnknownPropertyException)
+uno::Any SAL_CALL GeometryHandler::convertToControlValue(const ::rtl::OUString & PropertyName, const uno::Any & _rPropertyValue, const uno::Type & _rControlValueType)
 {
     uno::Any aControlValue( _rPropertyValue );
     if ( !aControlValue.hasValue() )
@@ -1249,14 +1250,14 @@ uno::Any SAL_CALL GeometryHandler::convertToControlValue(const ::rtl::OUString &
     }
     return aControlValue;
 }
-void SAL_CALL GeometryHandler::addPropertyChangeListener(const uno::Reference< beans::XPropertyChangeListener > & _rxListener) throw (uno::RuntimeException, lang::NullPointerException)
+void SAL_CALL GeometryHandler::addPropertyChangeListener(const uno::Reference< beans::XPropertyChangeListener > & _rxListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     m_aPropertyListeners.addListener( _rxListener );
     m_xFormComponentHandler->addPropertyChangeListener(_rxListener);
 }
 
-void SAL_CALL GeometryHandler::removePropertyChangeListener(const uno::Reference< beans::XPropertyChangeListener > & _rxListener) throw (uno::RuntimeException)
+void SAL_CALL GeometryHandler::removePropertyChangeListener(const uno::Reference< beans::XPropertyChangeListener > & _rxListener)
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     m_aPropertyListeners.removeListener( _rxListener );
@@ -1264,7 +1265,7 @@ void SAL_CALL GeometryHandler::removePropertyChangeListener(const uno::Reference
 }
 // -----------------------------------------------------------------------------
 //--------------------------------------------------------------------------
-uno::Sequence< beans::Property > SAL_CALL GeometryHandler::getSupportedProperties() throw (uno::RuntimeException)
+uno::Sequence< beans::Property > SAL_CALL GeometryHandler::getSupportedProperties()
 {
     ::std::vector< beans::Property > aNewProps;
     aNewProps.reserve(20); // only a guess
@@ -1342,7 +1343,7 @@ uno::Sequence< beans::Property > SAL_CALL GeometryHandler::getSupportedPropertie
     return uno::Sequence< beans::Property > (&(*aNewProps.begin()),aNewProps.size());
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getSupersededProperties() throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getSupersededProperties()
 {
     uno::Sequence< ::rtl::OUString > aRet;
     const uno::Reference<report::XReportDefinition> xReport(m_xReportComponent,uno::UNO_QUERY);
@@ -1359,7 +1360,7 @@ uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getSupersededProperti
     return aRet;
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getActuatingProperties() throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getActuatingProperties()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -1373,12 +1374,12 @@ uno::Sequence< ::rtl::OUString > SAL_CALL GeometryHandler::getActuatingPropertie
     return ::comphelper::concatSequences(m_xFormComponentHandler->getActuatingProperties(),aSeq);
 }
 
-::sal_Bool SAL_CALL GeometryHandler::isComposable(const ::rtl::OUString & _rPropertyName) throw (uno::RuntimeException, beans::UnknownPropertyException)
+::sal_Bool SAL_CALL GeometryHandler::isComposable(const ::rtl::OUString & _rPropertyName)
 {
     return m_pInfoService->isComposable( _rPropertyName, m_xFormComponentHandler );
 }
 
-inspection::InteractiveSelectionResult SAL_CALL GeometryHandler::onInteractivePropertySelection(const ::rtl::OUString & PropertyName, ::sal_Bool Primary, uno::Any & _rData, const uno::Reference< inspection::XObjectInspectorUI > & _rxInspectorUI) throw (uno::RuntimeException, beans::UnknownPropertyException, lang::NullPointerException)
+inspection::InteractiveSelectionResult SAL_CALL GeometryHandler::onInteractivePropertySelection(const ::rtl::OUString & PropertyName, ::sal_Bool Primary, uno::Any & _rData, const uno::Reference< inspection::XObjectInspectorUI > & _rxInspectorUI)
 {
     if ( !_rxInspectorUI.is() )
         throw lang::NullPointerException();
@@ -1460,7 +1461,7 @@ inspection::InteractiveSelectionResult SAL_CALL GeometryHandler::onInteractivePr
     return m_xFormComponentHandler->onInteractivePropertySelection(PropertyName, Primary, _rData, _rxInspectorUI);
 }
 
-void SAL_CALL GeometryHandler::actuatingPropertyChanged(const ::rtl::OUString & ActuatingPropertyName, const uno::Any & NewValue, const uno::Any & OldValue, const uno::Reference< inspection::XObjectInspectorUI > & _rxInspectorUI, ::sal_Bool _bFirstTimeInit) throw (uno::RuntimeException, lang::NullPointerException)
+void SAL_CALL GeometryHandler::actuatingPropertyChanged(const ::rtl::OUString & ActuatingPropertyName, const uno::Any & NewValue, const uno::Any & OldValue, const uno::Reference< inspection::XObjectInspectorUI > & _rxInspectorUI, ::sal_Bool _bFirstTimeInit)
 {
     if ( !_rxInspectorUI.is() )
         throw lang::NullPointerException();
@@ -1543,7 +1544,7 @@ void SAL_CALL GeometryHandler::actuatingPropertyChanged(const ::rtl::OUString & 
     }
 }
 
-::sal_Bool SAL_CALL GeometryHandler::suspend(::sal_Bool Suspend) throw (uno::RuntimeException)
+::sal_Bool SAL_CALL GeometryHandler::suspend(::sal_Bool Suspend)
 {
     return m_xFormComponentHandler->suspend(Suspend);
 }
@@ -2205,11 +2206,11 @@ sal_uInt32 GeometryHandler::impl_getDataFieldType_throw(const ::rtl::OUString& _
 }
 // -----------------------------------------------------------------------------
 // XEventListener
-void SAL_CALL GeometryHandler::disposing(const lang::EventObject& ) throw( uno::RuntimeException )
+void SAL_CALL GeometryHandler::disposing(const lang::EventObject& )
 {
 }
 // XPropertyChangeListener
-void SAL_CALL GeometryHandler::propertyChange(const beans::PropertyChangeEvent& /*evt*/) throw(uno::RuntimeException)
+void SAL_CALL GeometryHandler::propertyChange(const beans::PropertyChangeEvent& /*evt*/)
 {
     ::osl::ResettableMutexGuard aGuard( m_aMutex );
     if ( !m_bIn )

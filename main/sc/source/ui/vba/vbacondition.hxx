@@ -37,14 +37,14 @@ protected:
 public:
 	ScVbaCondition(  const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::sheet::XSheetCondition >& _xSheetCondition );
 
-	static css::sheet::ConditionOperator retrieveAPIOperator( const css::uno::Any& _aOperator) throw ( css::script::BasicErrorException );
+	static css::sheet::ConditionOperator retrieveAPIOperator( const css::uno::Any& _aOperator);
 
-	virtual rtl::OUString SAL_CALL Formula1( ) throw ( css::script::BasicErrorException, css::uno::RuntimeException );
-	virtual rtl::OUString SAL_CALL Formula2( ) throw ( css::script::BasicErrorException, css::uno::RuntimeException );
-	virtual void setFormula1( const css::uno::Any& _aFormula1) throw ( css::script::BasicErrorException );
-	virtual void setFormula2( const css::uno::Any& _aFormula2) throw ( css::script::BasicErrorException );
-	virtual sal_Int32 Operator(sal_Bool _bIncludeFormulaValue) throw ( css::script::BasicErrorException );
-	virtual sal_Int32 SAL_CALL Operator() throw ( css::script::BasicErrorException, css::uno::RuntimeException ) = 0;
+	virtual rtl::OUString SAL_CALL Formula1( );
+	virtual rtl::OUString SAL_CALL Formula2( );
+	virtual void setFormula1( const css::uno::Any& _aFormula1);
+	virtual void setFormula2( const css::uno::Any& _aFormula2);
+	virtual sal_Int32 Operator(sal_Bool _bIncludeFormulaValue);
+	virtual sal_Int32 SAL_CALL Operator() = 0;
 
 };
 #endif

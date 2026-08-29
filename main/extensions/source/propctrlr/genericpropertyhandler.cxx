@@ -227,10 +227,10 @@ namespace pcr
         ~UrlClickHandler();
 
         // XActionListener
-        virtual void SAL_CALL actionPerformed( const ActionEvent& rEvent ) throw (RuntimeException);
+        virtual void SAL_CALL actionPerformed( const ActionEvent& rEvent );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const EventObject& Source ) throw (RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& Source );
 
     protected:
         void impl_dispatch_throw( const ::rtl::OUString& _rURL );
@@ -262,7 +262,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL UrlClickHandler::actionPerformed( const ActionEvent& rEvent ) throw (RuntimeException)
+    void SAL_CALL UrlClickHandler::actionPerformed( const ActionEvent& rEvent )
     {
         Reference< XPropertyControl > xControl( rEvent.Source, UNO_QUERY_THROW );
         Any aControlValue( xControl->getValue() );
@@ -278,7 +278,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL UrlClickHandler::disposing( const EventObject& /*Source*/ ) throw (RuntimeException)
+    void SAL_CALL UrlClickHandler::disposing( const EventObject& /*Source*/ )
     {
         // not interested in
     }
@@ -326,32 +326,32 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL GenericPropertyHandler::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL GenericPropertyHandler::getImplementationName(  )
     {
         return getImplementationName_static();
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL GenericPropertyHandler::supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL GenericPropertyHandler::supportsService( const ::rtl::OUString& ServiceName )
     {
         StlSyntaxSequence< ::rtl::OUString > aAllServices( getSupportedServiceNames() );
         return ::std::find( aAllServices.begin(), aAllServices.end(), ServiceName ) != aAllServices.end();
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getSupportedServiceNames(  )
     {
         return getSupportedServiceNames_static();
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL GenericPropertyHandler::getImplementationName_static(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL GenericPropertyHandler::getImplementationName_static(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.extensions.GenericPropertyHandler" ) );
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getSupportedServiceNames_static(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getSupportedServiceNames_static(  )
     {
         Sequence< ::rtl::OUString > aSupported( 1 );
         aSupported[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.inspection.GenericPropertyHandler" ) );
@@ -365,7 +365,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL GenericPropertyHandler::inspect( const Reference< XInterface >& _rxIntrospectee ) throw (RuntimeException, NullPointerException)
+    void SAL_CALL GenericPropertyHandler::inspect( const Reference< XInterface >& _rxIntrospectee )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -405,7 +405,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL GenericPropertyHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL GenericPropertyHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !m_xComponent.is() )
@@ -415,7 +415,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL GenericPropertyHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) throw (UnknownPropertyException, RuntimeException)
+    void SAL_CALL GenericPropertyHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !m_xComponent.is() )
@@ -434,7 +434,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL GenericPropertyHandler::convertToPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rControlValue ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL GenericPropertyHandler::convertToPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rControlValue )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         const_cast< GenericPropertyHandler* >( this )->impl_ensurePropertyMap();
@@ -461,7 +461,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL GenericPropertyHandler::convertToControlValue( const ::rtl::OUString& _rPropertyName, const Any& _rPropertyValue, const Type& _rControlValueType ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL GenericPropertyHandler::convertToControlValue( const ::rtl::OUString& _rPropertyName, const Any& _rPropertyValue, const Type& _rControlValueType )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         const_cast< GenericPropertyHandler* >( this )->impl_ensurePropertyMap();
@@ -485,7 +485,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    PropertyState SAL_CALL GenericPropertyHandler::getPropertyState( const ::rtl::OUString& _rPropertyName ) throw (UnknownPropertyException, RuntimeException)
+    PropertyState SAL_CALL GenericPropertyHandler::getPropertyState( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyState eState = PropertyState_DIRECT_VALUE;
@@ -495,7 +495,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL GenericPropertyHandler::addPropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL GenericPropertyHandler::addPropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener )
     {
         if ( !_rxListener.is() )
             throw NullPointerException();
@@ -516,7 +516,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL GenericPropertyHandler::removePropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL GenericPropertyHandler::removePropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( m_xComponent.is() )
@@ -602,7 +602,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< Property > SAL_CALL GenericPropertyHandler::getSupportedProperties() throw (RuntimeException)
+    Sequence< Property > SAL_CALL GenericPropertyHandler::getSupportedProperties()
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         const_cast< GenericPropertyHandler* >( this )->impl_ensurePropertyMap();
@@ -614,7 +614,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getSupersededProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getSupersededProperties( )
     {
         // no superseded properties at all. This handler offers the very basic PropertyHandler
         // functionality, so it's much more likely that other handlers want to supersede
@@ -623,7 +623,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getActuatingProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL GenericPropertyHandler::getActuatingProperties( )
     {
         // This basic PropertyHandler implementation is too dumb^Wgeneric to know
         // anything about property dependencies
@@ -633,7 +633,6 @@ namespace pcr
     //--------------------------------------------------------------------
     LineDescriptor SAL_CALL GenericPropertyHandler::describePropertyLine( const ::rtl::OUString& _rPropertyName,
         const Reference< XPropertyControlFactory >& _rxControlFactory )
-        throw (UnknownPropertyException, NullPointerException, RuntimeException)
     {
         if ( !_rxControlFactory.is() )
             throw NullPointerException();
@@ -681,26 +680,26 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL GenericPropertyHandler::isComposable( const ::rtl::OUString& /*_rPropertyName*/ ) throw (UnknownPropertyException, RuntimeException)
+    ::sal_Bool SAL_CALL GenericPropertyHandler::isComposable( const ::rtl::OUString& /*_rPropertyName*/ )
     {
         return sal_False;
     }
 
     //--------------------------------------------------------------------
-    InteractiveSelectionResult SAL_CALL GenericPropertyHandler::onInteractivePropertySelection( const ::rtl::OUString& /*_rPropertyName*/, sal_Bool /*_bPrimary*/, Any& /*_rData*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/ ) throw (UnknownPropertyException, NullPointerException, RuntimeException)
+    InteractiveSelectionResult SAL_CALL GenericPropertyHandler::onInteractivePropertySelection( const ::rtl::OUString& /*_rPropertyName*/, sal_Bool /*_bPrimary*/, Any& /*_rData*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/ )
     {
         DBG_ERROR( "GenericPropertyHandler::onInteractivePropertySelection: I'm too dumb to know anything about property browse buttons!" );
         return InteractiveSelectionResult_Cancelled;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL GenericPropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& /*_rActuatingPropertyName*/, const Any& /*_rNewValue*/, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/, sal_Bool /*_bFirstTimeInit*/ ) throw (NullPointerException, RuntimeException)
+    void SAL_CALL GenericPropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& /*_rActuatingPropertyName*/, const Any& /*_rNewValue*/, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/, sal_Bool /*_bFirstTimeInit*/ )
     {
         DBG_ERROR( "GenericPropertyHandler::actuatingPropertyChanged: no no no, I did not register for any actuating properties!" );
     }
 
     //--------------------------------------------------------------------
-    sal_Bool SAL_CALL GenericPropertyHandler::suspend( sal_Bool /*_bSuspend*/ ) throw (RuntimeException)
+    sal_Bool SAL_CALL GenericPropertyHandler::suspend( sal_Bool /*_bSuspend*/ )
     {
         return sal_True;
     }

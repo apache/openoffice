@@ -39,66 +39,51 @@ public:
 	virtual					~ScCellCursorObj();
 
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-								const ::com::sun::star::uno::Type & rType )
-									throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::uno::Type & rType );
 	virtual void SAL_CALL	acquire() throw();
 	virtual void SAL_CALL	release() throw();
 
 							// XSheetCellCursor
-	virtual void SAL_CALL	collapseToCurrentRegion() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	collapseToCurrentArray() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	collapseToMergedArea() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	expandToEntireColumns() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	expandToEntireRows() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	collapseToSize( sal_Int32 nColumns, sal_Int32 nRows )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	collapseToCurrentRegion();
+	virtual void SAL_CALL	collapseToCurrentArray();
+	virtual void SAL_CALL	collapseToMergedArea();
+	virtual void SAL_CALL	expandToEntireColumns();
+	virtual void SAL_CALL	expandToEntireRows();
+	virtual void SAL_CALL	collapseToSize( sal_Int32 nColumns, sal_Int32 nRows );
 
 							// XUsedAreaCursor
-	virtual void SAL_CALL	gotoStartOfUsedArea( sal_Bool bExpand )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	gotoEndOfUsedArea( sal_Bool bExpand )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	gotoStartOfUsedArea( sal_Bool bExpand );
+	virtual void SAL_CALL	gotoEndOfUsedArea( sal_Bool bExpand );
 
 							// XCellCursor
-	virtual void SAL_CALL	gotoStart() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	gotoEnd() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	gotoNext() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	gotoPrevious() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	gotoOffset( sal_Int32 nColumnOffset, sal_Int32 nRowOffset )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	gotoStart();
+	virtual void SAL_CALL	gotoEnd();
+	virtual void SAL_CALL	gotoNext();
+	virtual void SAL_CALL	gotoPrevious();
+	virtual void SAL_CALL	gotoOffset( sal_Int32 nColumnOffset, sal_Int32 nRowOffset );
 
 							// XSheetCellRange
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XSpreadsheet > SAL_CALL
-							getSpreadsheet() throw(::com::sun::star::uno::RuntimeException);
+							getSpreadsheet();
 
 							// XCellRange
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::table::XCell > SAL_CALL
-							getCellByPosition( sal_Int32 nColumn, sal_Int32 nRow )
-								throw(::com::sun::star::lang::IndexOutOfBoundsException,
-									::com::sun::star::uno::RuntimeException);
+							getCellByPosition( sal_Int32 nColumn, sal_Int32 nRow );
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange > SAL_CALL
 							getCellRangeByPosition( sal_Int32 nLeft, sal_Int32 nTop,
-								sal_Int32 nRight, sal_Int32 nBottom )
-									throw(::com::sun::star::lang::IndexOutOfBoundsException,
-										::com::sun::star::uno::RuntimeException);
+								sal_Int32 nRight, sal_Int32 nBottom );
     using ScCellRangeObj::getCellRangeByName;
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange > SAL_CALL
-							getCellRangeByName( const ::rtl::OUString& aRange )
-								throw(::com::sun::star::uno::RuntimeException);
+							getCellRangeByName( const ::rtl::OUString& aRange );
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 							// XTypeProvider
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 };
 
 

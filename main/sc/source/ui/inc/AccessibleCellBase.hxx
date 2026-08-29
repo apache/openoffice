@@ -55,8 +55,7 @@ public:
 	///=====  XInterface  =====================================================
 
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-		::com::sun::star::uno::Type const & rType )
-		throw (::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Type const & rType );
 
 	virtual void SAL_CALL acquire() throw ();
 
@@ -64,72 +63,59 @@ public:
 
 	///=====  XAccessibleComponent  ============================================
 
-    virtual sal_Bool SAL_CALL isVisible(  )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isVisible(  );
 
-    virtual sal_Int32 SAL_CALL getForeground(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getForeground(  );
 
-    virtual sal_Int32 SAL_CALL getBackground(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getBackground(  );
 
     ///=====  XAccessibleContext  ==============================================
 
     ///	Return this objects index among the parents children.
 	virtual	sal_Int32 SAL_CALL
-    	getAccessibleIndexInParent(void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleIndexInParent(void);
 
 protected:
     ///	Return this object's description.
 	virtual ::rtl::OUString SAL_CALL
-    	createAccessibleDescription(void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	createAccessibleDescription(void);
 
     ///	Return the object's current name.
 	virtual ::rtl::OUString SAL_CALL
-    	createAccessibleName(void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	createAccessibleName(void);
 
 public:
 	///=====  XAccessibleValue  ================================================
 
     virtual ::com::sun::star::uno::Any SAL_CALL
-		getCurrentValue(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		getCurrentValue(  );
 
     virtual sal_Bool SAL_CALL
-		setCurrentValue( const ::com::sun::star::uno::Any& aNumber )
-		throw (::com::sun::star::uno::RuntimeException);
+		setCurrentValue( const ::com::sun::star::uno::Any& aNumber );
 
     virtual ::com::sun::star::uno::Any SAL_CALL
-		getMaximumValue(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		getMaximumValue(  );
 
     virtual ::com::sun::star::uno::Any SAL_CALL
-		getMinimumValue(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		getMinimumValue(  );
 
 	///=====  XServiceInfo  ====================================================
 
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName(void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName(void);
 
 	///=====  XTypeProvider  ===================================================
 
 	/// returns the possible types
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL
-		getTypes()
-		throw (::com::sun::star::uno::RuntimeException);
+		getTypes();
 
 	/**	Returns a implementation id.
     */
     virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL
-        getImplementationId(void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getImplementationId(void);
 
 protected:
 	ScAddress maCellAddress;
@@ -143,15 +129,11 @@ private:
 		const com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleStateSet>& rxParentStates);
 protected:
-	virtual ::rtl::OUString SAL_CALL GetNote(void)
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL GetNote(void);
 
-	virtual ::rtl::OUString SAL_CALL GetAllDisplayNote(void)
-        throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getShadowAttrs(void)
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getBorderAttrs(void)
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL GetAllDisplayNote(void);
+	virtual ::rtl::OUString SAL_CALL getShadowAttrs(void);
+	virtual ::rtl::OUString SAL_CALL getBorderAttrs(void);
 public:
 	const ScAddress& GetCellAddress() const { return maCellAddress; }
 	sal_Bool IsCellInChangeTrack(const ScAddress &cell,Color *pColCellBoder);

@@ -79,7 +79,6 @@ const sal_uInt16 NUMBER_STORAGE_INITIALIZE_ARGS = 3;
 //*************************************************************************
 ScriptStorage::ScriptStorage( const Reference <
                               XComponentContext > & xContext )
-throw ( RuntimeException )
         : m_xContext( xContext, UNO_SET_THROW ), m_bInitialised( false )
 {
     OSL_TRACE( "< ScriptStorage ctor called >\n" );
@@ -149,7 +148,6 @@ ScriptStorage::~ScriptStorage() SAL_THROW( () )
 //*************************************************************************
 void
 ScriptStorage::initialize( const Sequence <Any> & args )
-throw ( RuntimeException, Exception )
 {
     OSL_TRACE( "Entering ScriptStorage::initialize\n" );
 
@@ -247,7 +245,6 @@ throw ( RuntimeException, Exception )
 
 void
 ScriptStorage::create()
-throw ( RuntimeException, Exception )
 {
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
     try
@@ -408,7 +405,6 @@ throw ( RuntimeException, Exception )
 // logicalName = the filename without the extension
 void
 ScriptStorage::createForFilesystem( const OUString & fileExtension )
-throw ( RuntimeException, Exception )
 {
     // need to decode as file urls are encoded
     OUString xStringUri = ::rtl::Uri::decode( m_stringUri,
@@ -521,7 +517,6 @@ ScriptStorage::updateMaps( const Datas_vec & vScriptDatas )
 // XScriptStorageExport::save
 void
 ScriptStorage::save()
-throw ( RuntimeException )
 {
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
     Reference< io::XActiveDataSource > xSource;
@@ -616,7 +611,6 @@ throw ( RuntimeException )
 //*************************************************************************
 void
 ScriptStorage::refresh()
-throw (RuntimeException)
 {
     OSL_TRACE("** => ScriptStorage: in refresh()\n");
 
@@ -660,7 +654,6 @@ ScriptStorage::writeMetadataHeader(
 //*************************************************************************
 Sequence< ::rtl::OUString >
 ScriptStorage::getScriptLogicalNames()
-throw ( RuntimeException )
 {
     Sequence< ::rtl::OUString  > results;
     // comment out the rest, and ultimately remove method
@@ -706,8 +699,6 @@ throw ( RuntimeException )
 //*************************************************************************
 Sequence< Reference< storage::XScriptInfo > >
 ScriptStorage::getImplementations( const ::rtl::OUString & queryURI )
-throw ( lang::IllegalArgumentException,
-        RuntimeException )
 {
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
 // format is script:://[function_name]?language=[language]&location=[location]
@@ -772,7 +763,7 @@ throw ( lang::IllegalArgumentException,
 
 //*************************************************************************
 Sequence< Reference< storage::XScriptInfo > > SAL_CALL
-ScriptStorage::getAllImplementations() throw ( RuntimeException )
+ScriptStorage::getAllImplementations()
 {
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
     Sequence< Reference< storage::XScriptInfo > > results;
@@ -810,14 +801,12 @@ ScriptStorage::getAllImplementations() throw ( RuntimeException )
 
 //*************************************************************************
 OUString SAL_CALL ScriptStorage::getImplementationName( )
-throw( RuntimeException )
 {
     return ss_implName;
 }
 
 //*************************************************************************
 sal_Bool SAL_CALL ScriptStorage::supportsService( const OUString& serviceName )
-throw( RuntimeException )
 {
     OUString const * pNames = ss_serviceNames.getConstArray();
     for ( sal_Int32 nPos = ss_serviceNames.getLength(); nPos--; )
@@ -832,7 +821,6 @@ throw( RuntimeException )
 
 //*************************************************************************
 Sequence<OUString> SAL_CALL ScriptStorage::getSupportedServiceNames( )
-throw( RuntimeException )
 {
     return ss_serviceNames;
 }

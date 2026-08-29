@@ -67,19 +67,19 @@ public:
     AccessibleControlShape* SAL_CALL GetLabeledByControlShape();
 protected:
 	//---  XAccessible  ----------------------------------------
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext> SAL_CALL getAccessibleContext( ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext> SAL_CALL getAccessibleContext( );
 
 	//---  XAccessibleComponent  -------------------------------
     /// forward the focus to the contained control(in alive mode)
-    virtual void SAL_CALL grabFocus( ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL grabFocus( );
 
 	//---  XAccessibleContext  ---------------------------------
-    virtual sal_Int32 SAL_CALL getAccessibleChildCount( ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i ) throw(::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getAccessibleChildCount( );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  );
 
 	//---  XServiceInfo  ---------------------------------------
-	virtual ::rtl::OUString SAL_CALL getImplementationName( ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName( );
 
 	//---  XInterface  -----------------------------------------
 	DECLARE_XINTERFACE( )
@@ -88,27 +88,27 @@ protected:
 	DECLARE_XTYPEPROVIDER( )
 
     //---  XPropertyChangeListener  ----------------------------
-    virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& _rEvent );
 
     //---  XComponent  -----------------------------------------
     virtual void SAL_CALL disposing( );
 
     //---  XEventListener  -------------------------------------
-    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
     //---  XModeChangeListener  --------------------------------
-	virtual void SAL_CALL modeChanged( const ::com::sun::star::util::ModeChangeEvent& _rSource ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL modeChanged( const ::com::sun::star::util::ModeChangeEvent& _rSource );
 
     //---  XAccessibleEventListener ----------------------------
-	virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent );
 
     //---  document::XEventListener ----------------------------
     using AccessibleShape::notifyEvent;
 
     // XVclContainerListener
-    virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event );
+    virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event );
+    virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
 
 protected:
     /** Initialize a new shape.  See the documentation of the base' constructor
@@ -118,20 +118,17 @@ protected:
 
     ///	Create a name string that contains the accessible name.
 	virtual ::rtl::OUString
-    	CreateAccessibleBaseName( )
-        throw(::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleBaseName( );
 
     /**	Create a unique name string that contains the accessible name.  The
         name consists of the base name and the index.
     */
 	virtual ::rtl::OUString
-    	CreateAccessibleName( )
-        throw(::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleName( );
 
     ///	Create a description string that contains the accessible description.
 	virtual ::rtl::OUString
-    	CreateAccessibleDescription( )
-        throw(::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleDescription( );
 
 #ifdef DBG_UTIL
     /// Set the specified state

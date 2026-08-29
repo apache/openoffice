@@ -93,25 +93,19 @@ public:
     // XInitialization
 
     virtual void SAL_CALL initialize(
-        const css::uno::Sequence<css::uno::Any>& aArguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        const css::uno::Sequence<css::uno::Any>& aArguments);
 
 
     // XUIElementFactory
 
     cssu::Reference<css::ui::XUIElement> SAL_CALL createUIElement (
         const ::rtl::OUString& rsResourceURL,
-        const ::cssu::Sequence<css::beans::PropertyValue>& rArguments)
-        throw(
-            css::container::NoSuchElementException,
-            css::lang::IllegalArgumentException,
-            cssu::RuntimeException);
+        const ::cssu::Sequence<css::beans::PropertyValue>& rArguments);
 
 
     // XEventListener
 
-    virtual void SAL_CALL disposing (const ::css::lang::EventObject& rEvent)
-        throw(cssu::RuntimeException);
+    virtual void SAL_CALL disposing (const ::css::lang::EventObject& rEvent);
 };
 
 

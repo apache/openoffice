@@ -87,7 +87,6 @@ CurlSession::CurlSession(
         const rtl::Reference< DAVSessionFactory > & rSessionFactory,
         const rtl::OUString& inUri,
         const ucbhelper::InternetProxyDecider & rProxyDecider )
-    throw ( DAVException )
     : DAVSession( rSessionFactory )
     , m_aMutex()
     , m_aContext( m_xFactory->getServiceFactory() )
@@ -188,7 +187,6 @@ CurlSession::~CurlSession( )
 
 // -------------------------------------------------------------------
 void CurlSession::Init( const DAVRequestEnvironment & rEnv )
-  throw ( DAVException )
 {
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
     m_aEnv = rEnv;
@@ -197,7 +195,6 @@ void CurlSession::Init( const DAVRequestEnvironment & rEnv )
 
 // -------------------------------------------------------------------
 void CurlSession::Init()
-    throw ( DAVException )
 {
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
 
@@ -618,13 +615,13 @@ int CurlSession::verifyCertificateChain (
     return X509_V_ERR_CERT_REJECTED;
 }
 
-bool CurlSession::Curl_ProvideCredentials( long statusCode, void *userdata ) throw (DAVException)
+bool CurlSession::Curl_ProvideCredentials( long statusCode, void *userdata )
 {
     CredentialsData *credentialsData = (CredentialsData*)userdata;
     return credentialsData->session->provideCredentials( credentialsData->env, credentialsData->request, statusCode );
 }
 
-bool CurlSession::provideCredentials( const DAVRequestEnvironment &env, CurlRequest &request, long statusCode ) throw (DAVException)
+bool CurlSession::provideCredentials( const DAVRequestEnvironment &env, CurlRequest &request, long statusCode )
 {
     DAVAuthListener * pListener = env.m_xAuthListener.get();
     if ( !pListener )
@@ -721,7 +718,6 @@ bool CurlSession::provideCredentials( const DAVRequestEnvironment &env, CurlRequ
 }
 
 void CurlSession::addEnvironmentRequestHeaders( CurlRequest &curlRequest, const DAVRequestEnvironment &env )
-    throw ( DAVException )
 {
     bool bHasUserAgent( false );
     DAVRequestHeaders::const_iterator aHeaderIter( env.m_aRequestHeaders.begin() );
@@ -751,7 +747,6 @@ void CurlSession::addEnvironmentRequestHeaders( CurlRequest &curlRequest, const 
 }
 
 void CurlSession::processResponse( CurlRequest &curlRequest, CURLcode curlCode )
-    throw( DAVException )
 {
     long statusCode = 0;
     CURLcode curlRes;
@@ -939,7 +934,6 @@ void CurlSession::PROPFIND( const rtl::OUString & inPath,
                             const std::vector< rtl::OUString > & inPropNames,
                             std::vector< DAVResource > & ioResources,
                             const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "PROPFIND line $1$", (sal_Int32)__LINE__ );
 
@@ -962,7 +956,6 @@ void CurlSession::PROPFIND( const rtl::OUString & inPath,
                             const Depth inDepth,
                             std::vector< DAVResourceInfo > & ioResInfo,
                             const DAVRequestEnvironment & rEnv )
-    throw( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "PROPFIND line $1$", (sal_Int32)__LINE__ );
 
@@ -984,7 +977,6 @@ void CurlSession::PROPFIND( const rtl::OUString & inPath,
 void CurlSession::PROPPATCH( const rtl::OUString & inPath,
                              const std::vector< ProppatchValue > & inValues,
                              const DAVRequestEnvironment & rEnv )
-    throw( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "PROPPATCH line $1$", (sal_Int32)__LINE__ );
 
@@ -1030,7 +1022,6 @@ void CurlSession::HEAD( const ::rtl::OUString & inPath,
                         const std::vector< ::rtl::OUString > & inHeaderNames,
                         DAVResource & ioResource,
                         const DAVRequestEnvironment & rEnv )
-    throw( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "HEAD line $1$", (sal_Int32)__LINE__ );
 
@@ -1058,7 +1049,6 @@ void CurlSession::HEAD( const ::rtl::OUString & inPath,
 uno::Reference< io::XInputStream >
 CurlSession::GET( const rtl::OUString & inPath,
                   const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "GET line $1$", (sal_Int32)__LINE__ );
 
@@ -1084,7 +1074,6 @@ CurlSession::GET( const rtl::OUString & inPath,
 void CurlSession::GET( const rtl::OUString & inPath,
                        uno::Reference< io::XOutputStream > & ioOutputStream,
                        const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "GET line $1$", (sal_Int32)__LINE__ );
 
@@ -1111,7 +1100,6 @@ CurlSession::GET( const rtl::OUString & inPath,
                   const std::vector< ::rtl::OUString > & inHeaderNames,
                   DAVResource & ioResource,
                   const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "GET line $1$", (sal_Int32)__LINE__ );
 
@@ -1141,7 +1129,6 @@ void CurlSession::GET( const rtl::OUString & inPath,
                        const std::vector< ::rtl::OUString > & inHeaderNames,
                        DAVResource & ioResource,
                        const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "GET line $1$", (sal_Int32)__LINE__ );
 
@@ -1167,7 +1154,6 @@ void CurlSession::GET( const rtl::OUString & inPath,
 void CurlSession::PUT( const rtl::OUString & inPath,
                        const uno::Reference< io::XInputStream > & inInputStream,
                        const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "PUT line $1$", (sal_Int32)__LINE__ );
 
@@ -1214,7 +1200,6 @@ CurlSession::POST( const rtl::OUString & inPath,
                    const rtl::OUString & rReferer,
                    const uno::Reference< io::XInputStream > & inInputStream,
                    const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "POST line $1$", (sal_Int32)__LINE__ );
 
@@ -1267,7 +1252,6 @@ void CurlSession::POST( const rtl::OUString & inPath,
                         const uno::Reference< io::XInputStream > & inInputStream,
                         uno::Reference< io::XOutputStream > & oOutputStream,
                         const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "POST line $1$", (sal_Int32)__LINE__ );
 
@@ -1316,7 +1300,6 @@ void CurlSession::POST( const rtl::OUString & inPath,
 // -------------------------------------------------------------------
 void CurlSession::MKCOL( const rtl::OUString & inPath,
                          const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "MKCOL line $1$", (sal_Int32)__LINE__ );
 
@@ -1355,7 +1338,6 @@ void CurlSession::COPY( const rtl::OUString & inSourceURL,
                         const rtl::OUString & inDestinationURL,
                         const DAVRequestEnvironment & rEnv,
                         sal_Bool inOverWrite )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "COPY line $1$", (sal_Int32)__LINE__ );
 
@@ -1397,7 +1379,6 @@ void CurlSession::MOVE( const rtl::OUString & inSourceURL,
                         const rtl::OUString & inDestinationURL,
                         const DAVRequestEnvironment & rEnv,
                         sal_Bool inOverWrite )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "MOVE line $1$", (sal_Int32)__LINE__ );
 
@@ -1437,7 +1418,6 @@ void CurlSession::MOVE( const rtl::OUString & inSourceURL,
 // -------------------------------------------------------------------
 void CurlSession::DESTROY( const rtl::OUString & inPath,
                            const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "DESTROY line $1$", (sal_Int32)__LINE__ );
 
@@ -1506,7 +1486,6 @@ namespace
 void CurlSession::LOCK( const ::rtl::OUString & inPath,
                         ucb::Lock & inLock,
                         const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "LOCK line $1$", (sal_Int32)__LINE__ );
 
@@ -1586,7 +1565,6 @@ void CurlSession::LOCK( const ::rtl::OUString & inPath,
 sal_Int64 CurlSession::LOCK( const ::rtl::OUString & /*inPath*/,
                              sal_Int64 nTimeout,
                              const DAVRequestEnvironment & /*rEnv*/ )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "LOCK line $1$", (sal_Int32)__LINE__ );
 
@@ -1695,7 +1673,6 @@ bool CurlSession::LOCK( CurlLock * pLock,
 // -------------------------------------------------------------------
 void CurlSession::UNLOCK( const ::rtl::OUString & inPath,
                           const DAVRequestEnvironment & rEnv )
-    throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "UNLOCK line $1$", (sal_Int32)__LINE__ );
 
@@ -1753,7 +1730,6 @@ bool CurlSession::UNLOCK( CurlLock * pLock )
 
 // -------------------------------------------------------------------
 void CurlSession::abort()
-    throw ( DAVException )
 {
     // 11.11.09 (tkr): The following code lines causing crashes if
     // closing a ongoing connection. It turned out that this existing

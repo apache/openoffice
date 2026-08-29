@@ -81,13 +81,11 @@ public:
  	// XCommandEnvironemnt
 	virtual com::sun::star::uno::Reference<
 				com::sun::star::task::XInteractionHandler > SAL_CALL
-	getInteractionHandler()
-		throw ( com::sun::star::uno::RuntimeException );
+	getInteractionHandler();
 
 	virtual com::sun::star::uno::Reference<
 				com::sun::star::ucb::XProgressHandler > SAL_CALL
-	getProgressHandler()
-		throw ( com::sun::star::uno::RuntimeException );
+	getProgressHandler();
 };
 
 } /* namespace ucbhelper */

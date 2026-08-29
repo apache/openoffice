@@ -125,8 +125,6 @@ namespace stoc_connector {
 	}
 
 	sal_Int32 SocketConnection::read( Sequence < sal_Int8 > & aReadBytes , sal_Int32 nBytesToRead )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		if( ! m_nStatus )
 		{
@@ -171,8 +169,6 @@ namespace stoc_connector {
 	}
 
 	void SocketConnection::write( const Sequence < sal_Int8 > &seq )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		if( ! m_nStatus )
 		{
@@ -207,15 +203,11 @@ namespace stoc_connector {
 	}
 
 	void SocketConnection::flush( )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 
 	}
 
 	void SocketConnection::close()
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 			// ensure that close is called only once
 		if( 1 == osl_incrementInterlockedCount( (&m_nStatus) ) )
@@ -226,7 +218,6 @@ namespace stoc_connector {
 	}
 
 	OUString SocketConnection::getDescription()
-			throw( ::com::sun::star::uno::RuntimeException)
 	{
 		return m_sDescription;
 	}
@@ -234,14 +225,14 @@ namespace stoc_connector {
 
 
 	// XConnectionBroadcaster
-	void SAL_CALL SocketConnection::addStreamListener(const Reference<XStreamListener> & aListener) throw(RuntimeException)
+	void SAL_CALL SocketConnection::addStreamListener(const Reference<XStreamListener> & aListener)
 	{
 		MutexGuard guard(_mutex);
 
 		_listeners.insert(aListener);
 	}
 
-	void SAL_CALL SocketConnection::removeStreamListener(const Reference<XStreamListener> & aListener) throw(RuntimeException)
+	void SAL_CALL SocketConnection::removeStreamListener(const Reference<XStreamListener> & aListener)
 	{
 		MutexGuard guard(_mutex);
 

@@ -157,15 +157,15 @@ namespace
             };
 
             // XTerminateListener
-            virtual void SAL_CALL queryTermination(const EventObject&) throw(RuntimeException)
+            virtual void SAL_CALL queryTermination(const EventObject&)
                 { };
-            virtual void SAL_CALL notifyTermination(const EventObject&) throw(RuntimeException)
+            virtual void SAL_CALL notifyTermination(const EventObject&)
             {
                 m_Thread->stop();
                 m_Thread->join();
             };
             // XEventListener
-            virtual void SAL_CALL disposing(const EventObject&) throw(RuntimeException)
+            virtual void SAL_CALL disposing(const EventObject&)
             {
                 m_Thread->stop();
                 m_Thread->join();
@@ -194,7 +194,6 @@ namespace oooimprovement
     void SAL_CALL OnLogRotateJob::executeAsync(
         const Sequence<NamedValue>&,
         const Reference<XJobListener>& listener)
-        throw(RuntimeException)
     {
         Reference<XDesktop> xDesktop(
             m_ServiceFactory->createInstance(OUString::createFromAscii("com.sun.star.frame.Desktop")),
@@ -205,7 +204,7 @@ namespace oooimprovement
         listener->jobFinished(Reference<XAsyncJob>(this), result);
     }
 
-    sal_Bool SAL_CALL OnLogRotateJob::supportsService(const OUString& service_name) throw(RuntimeException)
+    sal_Bool SAL_CALL OnLogRotateJob::supportsService(const OUString& service_name)
     {
         const Sequence<OUString> service_names(getSupportedServiceNames());
         for (sal_Int32 idx = service_names.getLength()-1; idx>=0; --idx)
@@ -213,10 +212,10 @@ namespace oooimprovement
         return sal_False;
     }
 
-    OUString SAL_CALL OnLogRotateJob::getImplementationName() throw(RuntimeException)
+    OUString SAL_CALL OnLogRotateJob::getImplementationName()
     { return getImplementationName_static(); }
 
-    Sequence<OUString> SAL_CALL OnLogRotateJob::getSupportedServiceNames() throw(RuntimeException)
+    Sequence<OUString> SAL_CALL OnLogRotateJob::getSupportedServiceNames()
     { return getSupportedServiceNames_static(); }
 
     OUString SAL_CALL OnLogRotateJob::getImplementationName_static()

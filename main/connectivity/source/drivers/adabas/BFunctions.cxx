@@ -111,7 +111,7 @@ sal_Bool LoadLibrary_ADABAS(::rtl::OUString &_rPath)
 	::rtl::OUString sTemp(RTL_CONSTASCII_USTRINGPARAM("DBROOT"));
 	if ( osl_getEnvironment(sTemp.pData,&pPath) == osl_Process_E_None && pPath )
 	{
-		
+
 #if defined(UNX)
 		_rPath = ::rtl::OUString(pPath);
 		_rPath += ::rtl::OUString::createFromAscii("/lib/");

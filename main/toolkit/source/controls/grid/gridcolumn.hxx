@@ -52,43 +52,43 @@ public:
 	virtual ~GridColumn();
 
 	// ::com::sun::star::awt::grid::XGridColumn
-	virtual ::com::sun::star::uno::Any SAL_CALL getIdentifier() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setIdentifier(const ::com::sun::star::uno::Any & value) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL getColumnWidth() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setColumnWidth(::sal_Int32 the_value) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL getMaxWidth() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setMaxWidth(::sal_Int32 the_value) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL getMinWidth() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setMinWidth(::sal_Int32 the_value) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL getResizeable() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setResizeable(::sal_Bool the_value) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getFlexibility() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setFlexibility( ::sal_Int32 _flexibility ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getTitle() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setTitle(const ::rtl::OUString & value) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getHelpText() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setHelpText(const ::rtl::OUString & value) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getIndex() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getDataColumnIndex() throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDataColumnIndex( ::sal_Int32 i_dataColumnIndex ) throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::style::HorizontalAlignment SAL_CALL getHorizontalAlign() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setHorizontalAlign(::com::sun::star::style::HorizontalAlignment align) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addGridColumnListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::grid::XGridColumnListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeGridColumnListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::grid::XGridColumnListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getIdentifier();
+	virtual void SAL_CALL setIdentifier(const ::com::sun::star::uno::Any & value);
+	virtual ::sal_Int32 SAL_CALL getColumnWidth();
+	virtual void SAL_CALL setColumnWidth(::sal_Int32 the_value);
+	virtual ::sal_Int32 SAL_CALL getMaxWidth();
+	virtual void SAL_CALL setMaxWidth(::sal_Int32 the_value);
+	virtual ::sal_Int32 SAL_CALL getMinWidth();
+	virtual void SAL_CALL setMinWidth(::sal_Int32 the_value);
+	virtual ::sal_Bool SAL_CALL getResizeable();
+	virtual void SAL_CALL setResizeable(::sal_Bool the_value);
+    virtual ::sal_Int32 SAL_CALL getFlexibility();
+    virtual void SAL_CALL setFlexibility( ::sal_Int32 _flexibility );
+	virtual ::rtl::OUString SAL_CALL getTitle();
+	virtual void SAL_CALL setTitle(const ::rtl::OUString & value);
+	virtual ::rtl::OUString SAL_CALL getHelpText();
+	virtual void SAL_CALL setHelpText(const ::rtl::OUString & value);
+    virtual ::sal_Int32 SAL_CALL getIndex();
+    virtual ::sal_Int32 SAL_CALL getDataColumnIndex();
+    virtual void SAL_CALL setDataColumnIndex( ::sal_Int32 i_dataColumnIndex );
+	virtual ::com::sun::star::style::HorizontalAlignment SAL_CALL getHorizontalAlign();
+	virtual void SAL_CALL setHorizontalAlign(::com::sun::star::style::HorizontalAlignment align);
+    virtual void SAL_CALL addGridColumnListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::grid::XGridColumnListener >& xListener );
+	virtual void SAL_CALL removeGridColumnListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::grid::XGridColumnListener >& xListener );
 
     // OComponentHelper
     virtual void SAL_CALL disposing();
 
     // XCloneable (base of XGridColumn)
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  );
 
     // XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     // XUnoTunnel and friends
-    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& i_identifier ) throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& i_identifier );
 	static ::com::sun::star::uno::Sequence< sal_Int8 > getUnoTunnelId() throw();
 	static GridColumn* getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& i_component );
 

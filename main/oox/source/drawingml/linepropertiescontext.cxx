@@ -52,7 +52,7 @@ LinePropertiesContext::~LinePropertiesContext()
 {
 }
 
-Reference< XFastContextHandler > LinePropertiesContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > LinePropertiesContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs )
 {
     Reference< XFastContextHandler > xRet;
     AttributeList aAttribs( xAttribs );

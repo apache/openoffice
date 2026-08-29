@@ -48,7 +48,6 @@ WrappedTextRotationProperty::~WrappedTextRotationProperty()
 }
 
 beans::PropertyState WrappedTextRotationProperty::getPropertyState( const uno::Reference< beans::XPropertyState >& xInnerPropertyState ) const
-                        throw (beans::UnknownPropertyException, uno::RuntimeException)
 {
     if( m_bDirectState )
         return beans::PropertyState_DIRECT_VALUE;

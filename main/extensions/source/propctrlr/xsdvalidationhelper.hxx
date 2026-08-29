@@ -116,18 +116,17 @@ namespace pcr
         /** retrieves the data type repository associated with the current model
         */
         ::com::sun::star::uno::Reference< ::com::sun::star::xforms::XDataTypeRepository >
-                getDataTypeRepository() const SAL_THROW((::com::sun::star::uno::Exception));
+                getDataTypeRepository() const;
 
         /** retrieves the data type repository associated with any model
         */
         ::com::sun::star::uno::Reference< ::com::sun::star::xforms::XDataTypeRepository >
-                getDataTypeRepository( const ::rtl::OUString& _rModelName ) const SAL_THROW((::com::sun::star::uno::Exception));
+                getDataTypeRepository( const ::rtl::OUString& _rModelName ) const;
 
         /** retrieves the data type object for the given name
         */
         ::com::sun::star::uno::Reference< ::com::sun::star::xsd::XDataType >
-            getDataType( const ::rtl::OUString& _rName ) const
-                SAL_THROW((::com::sun::star::uno::Exception));
+            getDataType( const ::rtl::OUString& _rName ) const;
 
         /** retrieves the name of the basic data type which has the given class, in the given repository
         */

@@ -46,7 +46,7 @@ DlgEdPropListenerImpl::~DlgEdPropListenerImpl()
 // XEventListener
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdPropListenerImpl::disposing( const ::com::sun::star::lang::EventObject& ) throw( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdPropListenerImpl::disposing( const ::com::sun::star::lang::EventObject& )
 {
 	/*
 	// disconnect the listener
@@ -60,7 +60,7 @@ void SAL_CALL DlgEdPropListenerImpl::disposing( const ::com::sun::star::lang::Ev
 // XPropertyChangeListener
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdPropListenerImpl::propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdPropListenerImpl::propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt )
 {
 	pDlgEdObj->_propertyChange( evt );
 }
@@ -87,7 +87,7 @@ DlgEdEvtContListenerImpl::~DlgEdEvtContListenerImpl()
 // XEventListener
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdEvtContListenerImpl::disposing( const  ::com::sun::star::lang::EventObject& ) throw( ::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdEvtContListenerImpl::disposing( const  ::com::sun::star::lang::EventObject& )
 {
 	/*
 	// disconnect the listener
@@ -101,21 +101,21 @@ void SAL_CALL DlgEdEvtContListenerImpl::disposing( const  ::com::sun::star::lang
 // XContainerListener
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdEvtContListenerImpl::elementInserted(const ::com::sun::star::container::ContainerEvent& Event) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdEvtContListenerImpl::elementInserted(const ::com::sun::star::container::ContainerEvent& Event)
 {
 	pDlgEdObj->_elementInserted( Event );
 }
 
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdEvtContListenerImpl::elementReplaced(const ::com::sun::star::container::ContainerEvent& Event) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdEvtContListenerImpl::elementReplaced(const ::com::sun::star::container::ContainerEvent& Event)
 {
 	pDlgEdObj->_elementReplaced( Event );
 }
 
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdEvtContListenerImpl::elementRemoved(const ::com::sun::star::container::ContainerEvent& Event) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL DlgEdEvtContListenerImpl::elementRemoved(const ::com::sun::star::container::ContainerEvent& Event)
 {
 	pDlgEdObj->_elementRemoved( Event );
 }

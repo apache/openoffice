@@ -56,8 +56,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
 private:
     GradientFillProperties& mrGradientProps;
@@ -77,8 +76,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
 private:
     PatternFillProperties& mrPatternProps;
@@ -101,8 +99,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
 private:
     BlipFillProperties& mrBlipProps;
@@ -124,8 +121,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
 private:
     BlipFillProperties& mrBlipProps;
@@ -145,8 +141,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
 private:
     BlipFillProperties& mrBlipProps;
@@ -167,8 +162,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
     static ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler >
                         createFillContext(

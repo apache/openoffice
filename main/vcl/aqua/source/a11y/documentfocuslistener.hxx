@@ -46,44 +46,41 @@ public:
 
     void attachRecursive(
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& xAccessible
-    ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    );
 
     void attachRecursive(
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& xAccessible,
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext >& xContext
-    ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    );
 
     void attachRecursive(
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& xAccessible,
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext >& xContext,
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet >& xStateSet
-    ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    );
 
     void detachRecursive(
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& xAccessible
-    ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    );
 
     void detachRecursive(
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& xAccessible,
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext >& xContext
-    ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    );
 
     void detachRecursive(
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& xAccessible,
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext >& xContext,
         const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet >& xStateSet
-    ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    );
 
-    static ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > getAccessible(const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    static ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > getAccessible(const ::com::sun::star::lang::EventObject& aEvent );
 
     // XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     // XAccessibleEventListener
-    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent )
-		throw( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent );
 
 private:
     std::set< ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > > m_aRefList;

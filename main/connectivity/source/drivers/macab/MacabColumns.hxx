@@ -37,7 +37,7 @@ namespace connectivity
 			MacabTable*	m_pTable;
 
 			virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-			virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+			virtual void impl_refresh();
 
 		public:
 			MacabColumns(	MacabTable* _pTable,

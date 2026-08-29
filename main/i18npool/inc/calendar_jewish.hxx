@@ -38,11 +38,11 @@ public:
 	Calendar_jewish();
 
 	// Methods in XExtendedCalendar
-	virtual rtl::OUString SAL_CALL getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativeNumberMode ) throw (com::sun::star::uno::RuntimeException);
+	virtual rtl::OUString SAL_CALL getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativeNumberMode );
 
 protected:
-	void mapToGregorian() throw(com::sun::star::uno::RuntimeException);
-	void mapFromGregorian() throw(com::sun::star::uno::RuntimeException);
+	void mapToGregorian();
+	void mapFromGregorian();
 };
 
 } } } }

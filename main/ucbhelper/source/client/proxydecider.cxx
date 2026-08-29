@@ -157,12 +157,10 @@ public:
                                           sal_Int32 nPort ) const;
 
     // XChangesListener
-    virtual void SAL_CALL changesOccurred( const util::ChangesEvent& Event )
-        throw( uno::RuntimeException );
+    virtual void SAL_CALL changesOccurred( const util::ChangesEvent& Event );
 
     // XEventListener ( base of XChangesLisetenr )
-    virtual void SAL_CALL disposing( const lang::EventObject& Source )
-        throw( uno::RuntimeException );
+    virtual void SAL_CALL disposing( const lang::EventObject& Source );
 
 private:
     void setNoProxyList( const rtl::OUString & rNoProxyList );
@@ -578,7 +576,6 @@ const InternetProxyServer & InternetProxyDecider_Impl::getProxy(
 // virtual
 void SAL_CALL InternetProxyDecider_Impl::changesOccurred(
                                         const util::ChangesEvent& Event )
-    throw( uno::RuntimeException )
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
@@ -690,7 +687,6 @@ void SAL_CALL InternetProxyDecider_Impl::changesOccurred(
 //=========================================================================
 // virtual
 void SAL_CALL InternetProxyDecider_Impl::disposing(const lang::EventObject&)
-    throw( uno::RuntimeException )
 {
     if ( m_xNotifier.is() )
     {

@@ -80,8 +80,7 @@ Reference< XXMLEncryptionTemplate >
 SAL_CALL XMLEncryption_NssImpl :: encrypt(
 	const Reference< XXMLEncryptionTemplate >& aTemplate ,
 	const Reference< XSecurityEnvironment >& aEnvironment
-) throw( com::sun::star::xml::crypto::XMLEncryptionException,
-		 com::sun::star::uno::SecurityException )
+)
 {
 	xmlSecKeysMngrPtr pMngr = NULL ;
 	xmlSecEncCtxPtr pEncCtx = NULL ;
@@ -256,8 +255,7 @@ Reference< XXMLEncryptionTemplate >
 SAL_CALL XMLEncryption_NssImpl :: decrypt(
 	const Reference< XXMLEncryptionTemplate >& aTemplate ,
 	const Reference< XXMLSecurityContext >& aSecurityCtx
-) throw( com::sun::star::xml::crypto::XMLEncryptionException ,
-		 com::sun::star::uno::SecurityException) {
+) {
 	xmlSecKeysMngrPtr pMngr = NULL ;
 	xmlSecEncCtxPtr pEncCtx = NULL ;
 	xmlNodePtr pEncryptedData = NULL ;
@@ -371,17 +369,17 @@ SAL_CALL XMLEncryption_NssImpl :: decrypt(
 }
 
 /* XInitialization */
-void SAL_CALL XMLEncryption_NssImpl :: initialize( const Sequence< Any >& /*aArguments*/ ) throw( Exception, RuntimeException ) {
+void SAL_CALL XMLEncryption_NssImpl :: initialize( const Sequence< Any >& /*aArguments*/ ) {
 	// TBD
 } ;
 
 /* XServiceInfo */
-OUString SAL_CALL XMLEncryption_NssImpl :: getImplementationName() throw( RuntimeException ) {
+OUString SAL_CALL XMLEncryption_NssImpl :: getImplementationName() {
 	return impl_getImplementationName() ;
 }
 
 /* XServiceInfo */
-sal_Bool SAL_CALL XMLEncryption_NssImpl :: supportsService( const OUString& serviceName) throw( RuntimeException ) {
+sal_Bool SAL_CALL XMLEncryption_NssImpl :: supportsService( const OUString& serviceName) {
 	Sequence< OUString > seqServiceNames = getSupportedServiceNames() ;
 	const OUString* pArray = seqServiceNames.getConstArray() ;
 	for( sal_Int32 i = 0 ; i < seqServiceNames.getLength() ; i ++ ) {
@@ -392,7 +390,7 @@ sal_Bool SAL_CALL XMLEncryption_NssImpl :: supportsService( const OUString& serv
 }
 
 /* XServiceInfo */
-Sequence< OUString > SAL_CALL XMLEncryption_NssImpl :: getSupportedServiceNames() throw( RuntimeException ) {
+Sequence< OUString > SAL_CALL XMLEncryption_NssImpl :: getSupportedServiceNames() {
 	return impl_getSupportedServiceNames() ;
 }
 
@@ -404,12 +402,12 @@ Sequence< OUString > XMLEncryption_NssImpl :: impl_getSupportedServiceNames() {
 	return seqServiceNames ;
 }
 
-OUString XMLEncryption_NssImpl :: impl_getImplementationName() throw( RuntimeException ) {
+OUString XMLEncryption_NssImpl :: impl_getImplementationName() {
 	return OUString::createFromAscii( "com.sun.star.xml.security.bridge.xmlsec.XMLEncryption_NssImpl" ) ;
 }
 
 //Helper for registry
-Reference< XInterface > SAL_CALL XMLEncryption_NssImpl :: impl_createInstance( const Reference< XMultiServiceFactory >& aServiceManager ) throw( RuntimeException ) {
+Reference< XInterface > SAL_CALL XMLEncryption_NssImpl :: impl_createInstance( const Reference< XMultiServiceFactory >& aServiceManager ) {
 	return Reference< XInterface >( *new XMLEncryption_NssImpl( aServiceManager ) ) ;
 }
 

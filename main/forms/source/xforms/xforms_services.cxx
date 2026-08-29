@@ -53,14 +53,12 @@ namespace frm
 
 Reference<XInterface> Model_CreateInstance(
     const Reference<XMultiServiceFactory>& )
-    throw( RuntimeException )
 {
     return static_cast<XPropertySet*>( new xforms::Model );
 }
 
 Reference<XInterface> XForms_CreateInstance(
     const Reference<XMultiServiceFactory>& )
-    throw( RuntimeException )
 {
     return static_cast<XNameContainer*>( new NameContainer<Reference<XPropertySet> >() );
 }

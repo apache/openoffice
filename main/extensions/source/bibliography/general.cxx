@@ -99,12 +99,12 @@ public:
 	BibPosListener(BibGeneralPage* pParent);
 
 	//XPositioningListener
-	virtual void SAL_CALL cursorMoved(const lang::EventObject& event) throw( uno::RuntimeException );
-	virtual void SAL_CALL rowChanged(const lang::EventObject& /*event*/) throw( uno::RuntimeException ){ /* not interested in */ }
-	virtual void SAL_CALL rowSetChanged(const lang::EventObject& /*event*/) throw( uno::RuntimeException ){ /* not interested in */ }
+	virtual void SAL_CALL cursorMoved(const lang::EventObject& event);
+	virtual void SAL_CALL rowChanged(const lang::EventObject& /*event*/){ /* not interested in */ }
+	virtual void SAL_CALL rowSetChanged(const lang::EventObject& /*event*/){ /* not interested in */ }
 
 	//XEventListener
-	virtual void SAL_CALL disposing(const lang::EventObject& Source) throw( uno::RuntimeException );
+	virtual void SAL_CALL disposing(const lang::EventObject& Source);
 
 };
 /* -----------------------------04.01.00 10:57--------------------------------
@@ -117,7 +117,7 @@ BibPosListener::BibPosListener(BibGeneralPage* pParent) :
 /* -----------------------------04.01.00 10:57--------------------------------
 
  ---------------------------------------------------------------------------*/
-void BibPosListener::cursorMoved(const lang::EventObject& /*aEvent*/) throw( uno::RuntimeException )
+void BibPosListener::cursorMoved(const lang::EventObject& /*aEvent*/)
 {
 	try
 	{
@@ -192,7 +192,7 @@ void BibPosListener::cursorMoved(const lang::EventObject& /*aEvent*/) throw( uno
 /* -----------------------------04.01.00 11:28--------------------------------
 
  ---------------------------------------------------------------------------*/
-void BibPosListener::disposing(const lang::EventObject& /*Source*/) throw( uno::RuntimeException )
+void BibPosListener::disposing(const lang::EventObject& /*Source*/)
 {
 }
 
@@ -760,7 +760,7 @@ IMPL_LINK(BibGeneralPage, ScrollHdl, ScrollBar*, pScroll)
 	return 0;
 }
 
-void BibGeneralPage::focusGained(const awt::FocusEvent& rEvent) throw( uno::RuntimeException )
+void BibGeneralPage::focusGained(const awt::FocusEvent& rEvent)
 {
 	Reference<awt::XWindow> xCtrWin(rEvent.Source, UNO_QUERY );
 	if(xCtrWin.is())
@@ -796,12 +796,12 @@ void BibGeneralPage::focusGained(const awt::FocusEvent& rEvent) throw( uno::Runt
 	}
 }
 
-void BibGeneralPage::focusLost(const awt::FocusEvent& ) throw( uno::RuntimeException )
+void BibGeneralPage::focusLost(const awt::FocusEvent& )
 {
 	CommitActiveControl();
 }
 
-void BibGeneralPage::disposing(const lang::EventObject& /*Source*/) throw( uno::RuntimeException )
+void BibGeneralPage::disposing(const lang::EventObject& /*Source*/)
 {
 }
 

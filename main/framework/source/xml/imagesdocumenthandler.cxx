@@ -169,12 +169,10 @@ OReadImagesDocumentHandler::~OReadImagesDocumentHandler()
 
 // XDocumentHandler
 void SAL_CALL OReadImagesDocumentHandler::startDocument(void)
-throw (	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadImagesDocumentHandler::endDocument(void)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -189,7 +187,6 @@ throw(	SAXException, RuntimeException )
 
 void SAL_CALL OReadImagesDocumentHandler::startElement(
 	const ::rtl::OUString& aName, const Reference< XAttributeList > &xAttribs )
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -522,7 +519,6 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadImagesDocumentHandler::endElement(const ::rtl::OUString& aName)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -581,24 +577,20 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadImagesDocumentHandler::characters(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadImagesDocumentHandler::ignorableWhitespace(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadImagesDocumentHandler::processingInstruction(
 	const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadImagesDocumentHandler::setDocumentLocator(
 	const Reference< XLocator > &xLocator)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -645,8 +637,7 @@ OWriteImagesDocumentHandler::~OWriteImagesDocumentHandler()
 {
 }
 
-void OWriteImagesDocumentHandler::WriteImagesDocument() throw
-( SAXException, RuntimeException )
+void OWriteImagesDocumentHandler::WriteImagesDocument()
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -700,8 +691,7 @@ void OWriteImagesDocumentHandler::WriteImagesDocument() throw
 //	protected member functions
 //_________________________________________________________________________________________________________________
 
-void OWriteImagesDocumentHandler::WriteImageList( const ImageListItemDescriptor* pImageList ) throw
-( SAXException, RuntimeException )
+void OWriteImagesDocumentHandler::WriteImageList( const ImageListItemDescriptor* pImageList )
 {
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );
@@ -770,8 +760,7 @@ void OWriteImagesDocumentHandler::WriteImageList( const ImageListItemDescriptor*
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 }
 
-void OWriteImagesDocumentHandler::WriteImage( const ImageItemDescriptor* pImage ) throw
-( SAXException, RuntimeException )
+void OWriteImagesDocumentHandler::WriteImage( const ImageItemDescriptor* pImage )
 {
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );
@@ -791,8 +780,7 @@ void OWriteImagesDocumentHandler::WriteImage( const ImageItemDescriptor* pImage 
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 }
 
-void OWriteImagesDocumentHandler::WriteExternalImageList( const ExternalImageItemListDescriptor* pExternalImageList ) throw
-( SAXException, RuntimeException )
+void OWriteImagesDocumentHandler::WriteExternalImageList( const ExternalImageItemListDescriptor* pExternalImageList )
 {
 	m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_EXTERNALIMAGES )), m_xEmptyList );
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
@@ -808,8 +796,7 @@ void OWriteImagesDocumentHandler::WriteExternalImageList( const ExternalImageIte
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 }
 
-void OWriteImagesDocumentHandler::WriteExternalImage( const ExternalImageItemDescriptor* pExternalImage ) throw
-( SAXException, RuntimeException )
+void OWriteImagesDocumentHandler::WriteExternalImage( const ExternalImageItemDescriptor* pExternalImage )
 {
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );

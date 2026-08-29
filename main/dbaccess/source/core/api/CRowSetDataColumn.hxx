@@ -61,7 +61,7 @@ namespace dbaccess
 
 
 		// com::sun::star::lang::XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 		// comphelper::OPropertyArrayUsageHelper
 		virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
 
@@ -71,9 +71,9 @@ namespace dbaccess
 		virtual sal_Bool SAL_CALL convertFastPropertyValue( ::com::sun::star::uno::Any & rConvertedValue,
 															::com::sun::star::uno::Any & rOldValue,
 															sal_Int32 nHandle,
-															const ::com::sun::star::uno::Any& rValue ) throw (::com::sun::star::lang::IllegalArgumentException);
+															const ::com::sun::star::uno::Any& rValue );
 		virtual void SAL_CALL getFastPropertyValue( ::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
-		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const ::com::sun::star::uno::Any& rValue )throw (::com::sun::star::uno::Exception);
+		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const ::com::sun::star::uno::Any& rValue );
 
 		virtual void fireValueChange(const ::connectivity::ORowSetValue& _rOldValue);
     protected:
@@ -89,7 +89,7 @@ namespace dbaccess
 		::vos::ORef< ::connectivity::OSQLColumns> m_aColumns;
 	protected:
 		virtual connectivity::sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-		virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+		virtual void impl_refresh();
 	public:
 		ORowSetDataColumns(
 						sal_Bool _bCase,

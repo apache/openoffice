@@ -50,17 +50,15 @@ protected:
     DECLARE_XTYPEPROVIDER()
 
     // XComponent
-    void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL dispose();
 
     // ::com::sun::star::awt::XLayoutContainer
-    virtual void SAL_CALL allocateArea( const ::com::sun::star::awt::Rectangle &rArea )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Size SAL_CALL getMinimumSize()
-        throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL allocateArea( const ::com::sun::star::awt::Rectangle &rArea );
+    virtual ::com::sun::star::awt::Size SAL_CALL getMinimumSize();
 
     // VclWindowPeer
-    virtual void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value );
+    virtual ::com::sun::star::uno::Any SAL_CALL getProperty( const ::rtl::OUString& PropertyName );
 
     // VCLXWindow
     void ProcessWindowEvent( const VclWindowEvent& _rVclWindowEvent );

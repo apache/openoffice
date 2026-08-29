@@ -60,51 +60,27 @@ public:
 
 // XPropertySet implementation
     virtual css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw ( css::uno::RuntimeException );
+        getPropertySetInfo();
     virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName,
-        const css::uno::Any& aValue )
-        throw ( css::beans::UnknownPropertyException,
-            css::beans::PropertyVetoException,
-            css::lang::IllegalArgumentException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName )
-        throw ( css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException );
+        const css::uno::Any& aValue );
+    virtual css::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName );
     virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName,
-        const css::uno::Reference< css::beans::XPropertyChangeListener >& xListener )
-        throw ( css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException );
+        const css::uno::Reference< css::beans::XPropertyChangeListener >& xListener );
     virtual void SAL_CALL removePropertyChangeListener(
         const ::rtl::OUString& aPropertyName,
-        const css::uno::Reference< css::beans::XPropertyChangeListener >& aListener )
-        throw ( css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException );
+        const css::uno::Reference< css::beans::XPropertyChangeListener >& aListener );
     virtual void SAL_CALL addVetoableChangeListener(
         const ::rtl::OUString& PropertyName,
-        const css::uno::Reference< css::beans::XVetoableChangeListener >& aListener )
-        throw ( css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException );
+        const css::uno::Reference< css::beans::XVetoableChangeListener >& aListener );
     virtual void SAL_CALL removeVetoableChangeListener(
         const ::rtl::OUString& PropertyName,
-        const css::uno::Reference< css::beans::XVetoableChangeListener >& aListener )
-        throw ( css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException );
+        const css::uno::Reference< css::beans::XVetoableChangeListener >& aListener );
 
 private:
     friend class ScriptInfo;
 
     css::uno::Reference< css::uno::XComponentContext > m_xContext;
-    void PropertySetImpl::privateSetPropertyValue( const ::rtl::OUString& aPropertyName, const Any& aValue )
-    throw ( beans::UnknownPropertyException, beans::PropertyVetoException,
-            lang::IllegalArgumentException, lang::WrappedTargetException,
-            RuntimeException );
+    void PropertySetImpl::privateSetPropertyValue( const ::rtl::OUString& aPropertyName, const Any& aValue );
 
     osl::Mutex m_mutex;
     PropertySet_hash m_propertyMap;
@@ -121,16 +97,12 @@ PropertySetImpl::~PropertySetImpl()
 }
 
 Reference< beans::XPropertySetInfo > SAL_CALL PropertySetImpl::getPropertySetInfo( )
-    throw ( RuntimeException )
 {
     return Reference< beans::XPropertySetInfo > (); // Not supported
 }
 
 void SAL_CALL PropertySetImpl::setPropertyValue( const ::rtl::OUString& aPropertyName,
     const Any& aValue )
-    throw ( beans::UnknownPropertyException, beans::PropertyVetoException,
-            lang::IllegalArgumentException, lang::WrappedTargetException,
-            RuntimeException )
 {
     throw RuntimeException(
         OUSTR( "PropertySetImpl::setPropertyValue: method not supported. Read-only PropertySet" ),
@@ -139,9 +111,6 @@ void SAL_CALL PropertySetImpl::setPropertyValue( const ::rtl::OUString& aPropert
 
 void PropertySetImpl::privateSetPropertyValue( const ::rtl::OUString& aPropertyName,
     const Any& aValue )
-    throw ( beans::UnknownPropertyException, beans::PropertyVetoException,
-            lang::IllegalArgumentException, lang::WrappedTargetException,
-            RuntimeException )
 {
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
     m_propertyMap[ aPropertyName ] = aValue;
@@ -149,8 +118,6 @@ void PropertySetImpl::privateSetPropertyValue( const ::rtl::OUString& aPropertyN
 
 //*************************************************************************
 Any SAL_CALL PropertySetImpl::getPropertyValue( const ::rtl::OUString& PropertyName )
-    throw ( beans::UnknownPropertyException,
-            lang::WrappedTargetException, RuntimeException )
 {
     if ( m_propertyMap.find( PropertyName ) == m_propertyMap.end() )
     {
@@ -171,8 +138,6 @@ Any SAL_CALL PropertySetImpl::getPropertyValue( const ::rtl::OUString& PropertyN
 void SAL_CALL PropertySetImpl::addPropertyChangeListener(
     const ::rtl::OUString& aPropertyName,
     const Reference< beans::XPropertyChangeListener >& xListener )
-    throw ( beans::UnknownPropertyException, lang::WrappedTargetException,
-            RuntimeException )
 {
     throw RuntimeException(
         OUSTR( "PropertySetImpl::addPropertyChangeListener: method not supported" ),
@@ -183,8 +148,6 @@ void SAL_CALL PropertySetImpl::addPropertyChangeListener(
 void SAL_CALL PropertySetImpl::removePropertyChangeListener(
     const ::rtl::OUString& aPropertyName,
     const Reference< beans::XPropertyChangeListener >& aListener )
-    throw ( beans::UnknownPropertyException, lang::WrappedTargetException,
-            RuntimeException )
 {
     throw RuntimeException(
         OUSTR( "PropertySetImpl::removePropertyChangeListener: method not supported" ),
@@ -195,8 +158,6 @@ void SAL_CALL PropertySetImpl::removePropertyChangeListener(
 void SAL_CALL PropertySetImpl::addVetoableChangeListener(
     const ::rtl::OUString& PropertyName,
     const Reference< beans::XVetoableChangeListener >& aListener )
-    throw ( beans::UnknownPropertyException, lang::WrappedTargetException,
-            RuntimeException )
 {
     throw RuntimeException(
         OUSTR( "PropertySetImpl::addVetoableChangeListener: method not supported" ),
@@ -207,8 +168,6 @@ void SAL_CALL PropertySetImpl::addVetoableChangeListener(
 void SAL_CALL PropertySetImpl::removeVetoableChangeListener(
     const ::rtl::OUString& PropertyName,
     const Reference< beans::XVetoableChangeListener >& aListener )
-    throw ( beans::UnknownPropertyException, lang::WrappedTargetException,
-            RuntimeException )
 {
     throw RuntimeException(
         OUSTR( "PropertySetImpl::removeVetoableChangeListener: method not supported" ),
@@ -229,14 +188,14 @@ ScriptInfo::~ScriptInfo()
     OSL_TRACE( "< ScriptInfo dtor called >\n" );
 }
 //*************************************************************************
-OUString SAL_CALL ScriptInfo::getLogicalName(  ) throw ( RuntimeException )
+OUString SAL_CALL ScriptInfo::getLogicalName(  )
 {
     OSL_TRACE( "ScriptInfo::getLogicalName() " );
     return m_scriptData.logicalname;
 }
 
 //*************************************************************************
-OUString SAL_CALL ScriptInfo::getDescription(  ) throw ( RuntimeException )
+OUString SAL_CALL ScriptInfo::getDescription(  )
 {
     OUString rs_desc;
     // TDB need to determine locale here, hardcoded at the moment
@@ -256,28 +215,27 @@ OUString SAL_CALL ScriptInfo::getDescription(  ) throw ( RuntimeException )
 }
 
 //*************************************************************************
-OUString SAL_CALL ScriptInfo::getLanguage(  ) throw ( RuntimeException )
+OUString SAL_CALL ScriptInfo::getLanguage(  )
 {
     OSL_TRACE( "ScriptInfo::getLanguage() " );
     return m_scriptData.language;
 }
 
 //*************************************************************************
-OUString SAL_CALL ScriptInfo::getFunctionName(  ) throw ( RuntimeException )
+OUString SAL_CALL ScriptInfo::getFunctionName(  )
 {
     OSL_TRACE( "ScriptInfo::getFunctionName() " );
     return m_scriptData.functionname;
 }
 
 //*************************************************************************
-OUString SAL_CALL ScriptInfo::getParcelURI(  ) throw ( RuntimeException )
+OUString SAL_CALL ScriptInfo::getParcelURI(  )
 {
     return m_scriptData.parcelURI;
 }
 
 //*************************************************************************
 Reference< beans::XPropertySet > SAL_CALL ScriptInfo::getLanguageProperties(  )
-    throw ( RuntimeException )
 {
     PropertySetImpl* propSetImpl = new PropertySetImpl();
     Reference< beans::XPropertySet > xPropSet = propSetImpl;
@@ -306,7 +264,6 @@ Reference< beans::XPropertySet > SAL_CALL ScriptInfo::getLanguageProperties(  )
 }
 //*************************************************************************
 css::uno::Sequence< ::rtl::OUString > SAL_CALL ScriptInfo::getFileSetNames()
-throw ( css::uno::RuntimeException )
 {
     OSL_TRACE("ScriptInfo::getFileSetNames");
     Sequence< OUString > results;
@@ -331,7 +288,6 @@ throw ( css::uno::RuntimeException )
 //*************************************************************************
 css::uno::Sequence< ::rtl::OUString > SAL_CALL
 ScriptInfo::getFilesInFileSet( const ::rtl::OUString & fileSetName )
-throw ( css::uno::RuntimeException )
 {
     Sequence< OUString > results;
     filesets_map::iterator fsm_it = m_scriptData.filesets.find( fileSetName );

@@ -69,34 +69,20 @@ public:
             text currently.
      */
     virtual void SAL_CALL initialize(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-        throw (::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
     // ____ XAccessibleContext ____
-    virtual ::sal_Int32 SAL_CALL getAccessibleChildCount()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getAccessibleChildCount();
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild(
-        ::sal_Int32 i )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getAccessibleIndexInParent()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int16 SAL_CALL getAccessibleRole()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getAccessibleDescription()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getAccessibleName()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet > SAL_CALL getAccessibleStateSet()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale()
-        throw (::com::sun::star::accessibility::IllegalAccessibleComponentStateException,
-               ::com::sun::star::uno::RuntimeException);
+        ::sal_Int32 i );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent();
+    virtual ::sal_Int32 SAL_CALL getAccessibleIndexInParent();
+    virtual ::sal_Int16 SAL_CALL getAccessibleRole();
+    virtual ::rtl::OUString SAL_CALL getAccessibleDescription();
+    virtual ::rtl::OUString SAL_CALL getAccessibleName();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet > SAL_CALL getAccessibleStateSet();
+    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale();
 
 private:
     ::accessibility::AccessibleTextHelper * m_pTextHelper;

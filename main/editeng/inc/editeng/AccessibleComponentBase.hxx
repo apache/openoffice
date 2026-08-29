@@ -58,83 +58,68 @@ public:
         inside this object.
     */
     virtual sal_Bool SAL_CALL containsPoint (
-        const ::com::sun::star::awt::Point& aPoint)
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::awt::Point& aPoint);
 
     /** The default implementation returns an empty reference.
     */
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
         getAccessibleAtPoint (
-            const ::com::sun::star::awt::Point& aPoint)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::awt::Point& aPoint);
 
     /** The default implementation returns an empty rectangle.
     */
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void);
 
     /** The default implementation uses the result of
         <member>getBounds</member> to determine the location.
     */
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void);
 
     /** The default implementation returns an empty position, i.e. the
     * result of the default constructor of <type>com::sun::star::awt::Point</type>.
     */
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void);
 
     /** The default implementation uses the result of
         <member>getBounds</member> to determine the size.
     */
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void);
 
     /** The default implementation ignores this call.
     */
     virtual void SAL_CALL addFocusListener (
         const ::com::sun::star::uno::Reference<
-        ::com::sun::star::awt::XFocusListener >& xListener)
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::awt::XFocusListener >& xListener);
 
     /** The default implementation ignores this call.
     */
     virtual void SAL_CALL removeFocusListener (const ::com::sun::star::uno::Reference<
-        ::com::sun::star::awt::XFocusListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::awt::XFocusListener >& xListener );
 
     /** The default implementation does nothing.
     */
-    virtual void SAL_CALL grabFocus (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL grabFocus (void);
 
     /** Returns black as the default foreground color.
     */
-    virtual sal_Int32 SAL_CALL getForeground (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getForeground (void);
 
     /** Returns white as the default background color.
     */
-    virtual sal_Int32 SAL_CALL getBackground (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getBackground (void);
 
     //=====  XAccessibleExtendedComponent  ====================================
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL
-        getFont (void)
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getTitledBorderText (void)
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getToolTipText (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getFont (void);
+    virtual ::rtl::OUString SAL_CALL getTitledBorderText (void);
+    virtual ::rtl::OUString SAL_CALL getToolTipText (void);
 
 
     //=====  XTypeProvider  ===================================================
 
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
-        getTypes (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getTypes (void);
 
 };
 

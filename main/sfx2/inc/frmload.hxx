@@ -69,8 +69,8 @@ public:
 	//----------------------------------------------------------------------------------
 	// XSynchronousFrameLoader
 	//----------------------------------------------------------------------------------
-    virtual sal_Bool SAL_CALL load( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _rArgs, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& _rxFrame ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL cancel() throw( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL load( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _rArgs, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& _rxFrame );
+    virtual void SAL_CALL cancel();
 
 protected:
     virtual                 ~SfxFrameLoader_Impl();

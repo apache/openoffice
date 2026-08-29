@@ -49,28 +49,20 @@ class OReadAccelatorDocumentHandler : public ::com::sun::star::xml::sax::XDocume
 		virtual void SAL_CALL release() throw()
 			{ OWeakObject::release(); }
 		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-			const ::com::sun::star::uno::Type & rType ) throw( ::com::sun::star::uno::RuntimeException );
+			const ::com::sun::star::uno::Type & rType );
 
 		// XDocumentHandler
-		virtual void SAL_CALL startDocument(void)
-			throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL endDocument(void)
-			throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL startDocument(void);
+		virtual void SAL_CALL endDocument(void);
 		virtual void SAL_CALL startElement(
 			const ::rtl::OUString& aName,
-			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > &xAttribs )
-			throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL endElement(const ::rtl::OUString& aName) throw
-			( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL characters(const ::rtl::OUString& aChars)
-			throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& aWhitespaces)
-			throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData )
-			throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > &xAttribs );
+		virtual void SAL_CALL endElement(const ::rtl::OUString& aName);
+		virtual void SAL_CALL characters(const ::rtl::OUString& aChars);
+		virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& aWhitespaces);
+		virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData );
 		virtual void SAL_CALL setDocumentLocator(
-			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator > &xLocator)
-			throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator > &xLocator);
 
 	private:
 		::rtl::OUString getErrorLineString();
@@ -91,10 +83,10 @@ class OWriteAccelatorDocumentHandler
 			::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler > );
 		virtual ~OWriteAccelatorDocumentHandler();
 
-		void WriteAcceleratorDocument() throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+		void WriteAcceleratorDocument();
 
 	private:
-		void WriteAcceleratorItem( const SvtAcceleratorConfigItem& aAcceleratorItem ) throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+		void WriteAcceleratorItem( const SvtAcceleratorConfigItem& aAcceleratorItem );
 
 		::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler > m_xWriteDocumentHandler;
 		::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > m_xEmptyList;

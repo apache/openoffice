@@ -74,8 +74,7 @@ protected:
 	EncryptionEngine( );
 	virtual ~EncryptionEngine(){};
 
-	virtual void tryToPerform( )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void tryToPerform( );
 	virtual void clearUp( ) const;
 	virtual bool checkReady() const;
 
@@ -86,13 +85,11 @@ protected:
 	 */
 	virtual void startEngine( const com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XXMLEncryptionTemplate >&)
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException)
 		{};
 
 public:
 	/* XBlockerMonitor */
-	virtual void SAL_CALL setBlockerId( sal_Int32 id )
-    		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setBlockerId( sal_Int32 id );
 };
 
 #endif

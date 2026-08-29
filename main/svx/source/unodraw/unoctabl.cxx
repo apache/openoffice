@@ -51,9 +51,9 @@ public:
 	virtual	~SvxUnoColorTable() throw();
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw( uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const  OUString& ServiceName ) throw( uno::RuntimeException);
-    virtual uno::Sequence<  OUString > SAL_CALL getSupportedServiceNames(  ) throw( uno::RuntimeException);
+    virtual OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const  OUString& ServiceName );
+    virtual uno::Sequence<  OUString > SAL_CALL getSupportedServiceNames(  );
 
     static OUString getImplementationName_Static() throw()
 	{
@@ -63,22 +63,22 @@ public:
     static uno::Sequence< OUString >  getSupportedServiceNames_Static(void) throw();
 
 	// XNameContainer
-	virtual void SAL_CALL insertByName( const  OUString& aName, const  uno::Any& aElement ) throw( lang::IllegalArgumentException, container::ElementExistException, lang::WrappedTargetException, uno::RuntimeException);
-	virtual void SAL_CALL removeByName( const  OUString& Name ) throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
+	virtual void SAL_CALL insertByName( const  OUString& aName, const  uno::Any& aElement );
+	virtual void SAL_CALL removeByName( const  OUString& Name );
 
 	// XNameReplace
-    virtual void SAL_CALL replaceByName( const  OUString& aName, const  uno::Any& aElement ) throw( lang::IllegalArgumentException, container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual void SAL_CALL replaceByName( const  OUString& aName, const  uno::Any& aElement );
 
 	// XNameAccess
-    virtual uno::Any SAL_CALL getByName( const  OUString& aName ) throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual uno::Any SAL_CALL getByName( const  OUString& aName );
 
-    virtual uno::Sequence<  OUString > SAL_CALL getElementNames(  ) throw( uno::RuntimeException);
+    virtual uno::Sequence<  OUString > SAL_CALL getElementNames(  );
 
-    virtual sal_Bool SAL_CALL hasByName( const  OUString& aName ) throw( uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasByName( const  OUString& aName );
 
 	// XElementAccess
-    virtual uno::Type SAL_CALL getElementType(  ) throw( uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  ) throw( uno::RuntimeException);
+    virtual uno::Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
 };
 
 SvxUnoColorTable::SvxUnoColorTable() throw()
@@ -90,7 +90,7 @@ SvxUnoColorTable::~SvxUnoColorTable() throw()
 {
 }
 
-sal_Bool SAL_CALL SvxUnoColorTable::supportsService( const  OUString& ServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SvxUnoColorTable::supportsService( const  OUString& ServiceName )
 {
     uno::Sequence< OUString > aSNL( getSupportedServiceNames() );
     const OUString * pArray = aSNL.getConstArray();
@@ -102,13 +102,12 @@ sal_Bool SAL_CALL SvxUnoColorTable::supportsService( const  OUString& ServiceNam
     return sal_False;
 }
 
-OUString SAL_CALL SvxUnoColorTable::getImplementationName() throw( uno::RuntimeException )
+OUString SAL_CALL SvxUnoColorTable::getImplementationName()
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM("SvxUnoColorTable") );
 }
 
 uno::Sequence< OUString > SAL_CALL SvxUnoColorTable::getSupportedServiceNames(  )
-	throw( uno::RuntimeException )
 {
     return getSupportedServiceNames_Static();
 }
@@ -122,7 +121,6 @@ uno::Sequence< OUString > SvxUnoColorTable::getSupportedServiceNames_Static(void
 
 // XNameContainer
 void SAL_CALL SvxUnoColorTable::insertByName( const OUString& aName, const uno::Any& aElement )
-	throw( lang::IllegalArgumentException, container::ElementExistException, lang::WrappedTargetException, uno::RuntimeException )
 {
 	if( hasByName( aName ) )
 		throw container::ElementExistException();
@@ -136,7 +134,6 @@ void SAL_CALL SvxUnoColorTable::insertByName( const OUString& aName, const uno::
 }
 
 void SAL_CALL SvxUnoColorTable::removeByName( const OUString& Name )
-	throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	long nIndex = maTable->GetIndex(Name);
 	if( nIndex == -1 )
@@ -147,7 +144,6 @@ void SAL_CALL SvxUnoColorTable::removeByName( const OUString& Name )
 
 // XNameReplace
 void SAL_CALL SvxUnoColorTable::replaceByName( const OUString& aName, const uno::Any& aElement )
-	throw( lang::IllegalArgumentException, container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException )
 {
 	sal_Int32 nColor = 0;
 	if( !(aElement >>= nColor) )
@@ -163,7 +159,6 @@ void SAL_CALL SvxUnoColorTable::replaceByName( const OUString& aName, const uno:
 
 // XNameAccess
 uno::Any SAL_CALL SvxUnoColorTable::getByName( const  OUString& aName )
-	throw( container::NoSuchElementException,  lang::WrappedTargetException, uno::RuntimeException)
 {
 	long nIndex = maTable->GetIndex(aName);
 	if( nIndex == -1 )
@@ -174,7 +169,6 @@ uno::Any SAL_CALL SvxUnoColorTable::getByName( const  OUString& aName )
 }
 
 uno::Sequence< OUString > SAL_CALL SvxUnoColorTable::getElementNames(  )
-	throw( uno::RuntimeException )
 {
 	const long nCount = maTable->Count();
 
@@ -191,7 +185,6 @@ uno::Sequence< OUString > SAL_CALL SvxUnoColorTable::getElementNames(  )
 }
 
 sal_Bool SAL_CALL SvxUnoColorTable::hasByName( const OUString& aName )
-	throw( uno::RuntimeException )
 {
 	long nIndex = maTable->GetIndex( aName );
 	return nIndex != -1;
@@ -199,13 +192,11 @@ sal_Bool SAL_CALL SvxUnoColorTable::hasByName( const OUString& aName )
 
 // XElementAccess
 uno::Type SAL_CALL SvxUnoColorTable::getElementType(  )
-	throw( uno::RuntimeException )
 {
 	return ::getCppuType((const sal_Int32*)0);
 }
 
 sal_Bool SAL_CALL SvxUnoColorTable::hasElements(  )
-	throw( uno::RuntimeException )
 {
 	return maTable->Count() != 0;
 }
@@ -213,11 +204,11 @@ sal_Bool SAL_CALL SvxUnoColorTable::hasElements(  )
 /**
  * Create a colortable
  */
-uno::Reference< uno::XInterface > SAL_CALL SvxUnoColorTable_createInstance(const uno::Reference< lang::XMultiServiceFactory > & ) throw(uno::Exception)
+uno::Reference< uno::XInterface > SAL_CALL SvxUnoColorTable_createInstance(const uno::Reference< lang::XMultiServiceFactory > & )
 {
 	return *new SvxUnoColorTable();
 }
-uno::Reference< uno::XInterface > SAL_CALL create_EnhancedCustomShapeEngine( const uno::Reference< lang::XMultiServiceFactory >& rxFact ) throw(uno::Exception)
+uno::Reference< uno::XInterface > SAL_CALL create_EnhancedCustomShapeEngine( const uno::Reference< lang::XMultiServiceFactory >& rxFact )
 {
 	return *new EnhancedCustomShapeEngine( rxFact );
 }

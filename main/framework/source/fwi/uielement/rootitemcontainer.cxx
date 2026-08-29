@@ -214,7 +214,7 @@ Reference< XIndexAccess > RootItemContainer::deepCopyContainer( const Reference<
 }
 
 // XUnoTunnel
-sal_Int64 RootItemContainer::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int64 RootItemContainer::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier )
 {
     if( ( rIdentifier.getLength() == 16 ) && ( 0 == rtl_compareMemory( RootItemContainer::GetUnoTunnelId().getConstArray(), rIdentifier.getConstArray(), 16 ) ) )
         return sal::static_int_cast< sal_Int64 >( reinterpret_cast< sal_IntPtr >( this ));
@@ -246,7 +246,6 @@ RootItemContainer* RootItemContainer::GetImplementation( const ::com::sun::star:
 
 // XElementAccess
 sal_Bool SAL_CALL RootItemContainer::hasElements()
-throw ( RuntimeException )
 {
     ShareGuard aLock( m_aShareMutex );
     return ( !m_aItemVector.empty() );
@@ -254,14 +253,12 @@ throw ( RuntimeException )
 
 // XIndexAccess
 sal_Int32 SAL_CALL RootItemContainer::getCount()
-throw ( RuntimeException )
 {
     ShareGuard aLock( m_aShareMutex );
     return m_aItemVector.size();
 }
 
 Any SAL_CALL RootItemContainer::getByIndex( sal_Int32 Index )
-throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
     ShareGuard aLock( m_aShareMutex );
     if ( sal_Int32( m_aItemVector.size()) > Index )
@@ -272,7 +269,6 @@ throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 
 // XIndexContainer
 void SAL_CALL RootItemContainer::insertByIndex( sal_Int32 Index, const Any& aItem )
-throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
     Sequence< PropertyValue > aSeq;
     if ( aItem >>= aSeq )
@@ -295,7 +291,6 @@ throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetExcept
 }
 
 void SAL_CALL RootItemContainer::removeByIndex( sal_Int32 Index )
-throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
     ShareGuard aLock( m_aShareMutex );
 	if ( (sal_Int32)m_aItemVector.size() > Index )
@@ -309,7 +304,6 @@ throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 }
 
 void SAL_CALL RootItemContainer::replaceByIndex( sal_Int32 Index, const Any& aItem )
-throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
     Sequence< PropertyValue > aSeq;
     if ( aItem >>= aSeq )
@@ -326,13 +320,11 @@ throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetExcept
 }
 
 Reference< XInterface > SAL_CALL RootItemContainer::createInstanceWithContext( const Reference< XComponentContext >& )
-throw ( Exception, RuntimeException)
 {
     return (OWeakObject *)(new ItemContainer( m_aShareMutex ));
 }
 
 Reference< XInterface > SAL_CALL RootItemContainer::createInstanceWithArgumentsAndContext( const Sequence< Any >&, const Reference< XComponentContext >& )
-throw (Exception, RuntimeException)
 {
     return (OWeakObject *)(new ItemContainer( m_aShareMutex ));
 }
@@ -342,7 +334,6 @@ sal_Bool SAL_CALL RootItemContainer::convertFastPropertyValue( Any&       aConve
                                                                Any&       aOldValue       ,
                                                                sal_Int32  nHandle         ,
                                                                const Any& aValue             )
-throw( com::sun::star::lang::IllegalArgumentException )
 {
 	//	Initialize state with sal_False !!!
 	//	(Handle can be invalid)
@@ -365,7 +356,6 @@ throw( com::sun::star::lang::IllegalArgumentException )
 
 void SAL_CALL RootItemContainer::setFastPropertyValue_NoBroadcast( sal_Int32               nHandle ,
                                                                    const com::sun::star::uno::Any&    aValue  )
-throw( com::sun::star::uno::Exception )
 {
     switch( nHandle )
 	{
@@ -413,7 +403,6 @@ void SAL_CALL RootItemContainer::getFastPropertyValue( com::sun::star::uno::Any&
 }
 
 com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL RootItemContainer::getPropertySetInfo()
-throw (::com::sun::star::uno::RuntimeException)
 {
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't must use a mutex at every call!

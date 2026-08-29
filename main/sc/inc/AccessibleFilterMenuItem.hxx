@@ -47,43 +47,34 @@ public:
 
 	// XAccessibleContext
 
-    virtual sal_Int32 SAL_CALL getAccessibleChildCount()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getAccessibleChildCount();
 
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-    	getAccessibleChild(sal_Int32 nIndex)
-            throw (::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IndexOutOfBoundsException);
+    	getAccessibleChild(sal_Int32 nIndex);
 
 	virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessibleStateSet> SAL_CALL
-    	getAccessibleStateSet()
-            throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleStateSet();
 
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
 
     // XAccessibleAction
 
-    virtual ::sal_Int32 SAL_CALL getAccessibleActionCount()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getAccessibleActionCount();
 
-    virtual ::sal_Bool SAL_CALL doAccessibleAction(sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL doAccessibleAction(sal_Int32 nIndex);
 
-    virtual ::rtl::OUString SAL_CALL getAccessibleActionDescription(sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getAccessibleActionDescription(sal_Int32 nIndex);
 
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessibleKeyBinding > SAL_CALL
-        getAccessibleActionKeyBinding(sal_Int32 nIndex)
-            throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+        getAccessibleActionKeyBinding(sal_Int32 nIndex);
 
     // XInterface
 
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-		::com::sun::star::uno::Type const & rType )
-		    throw (::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Type const & rType );
 
 	virtual void SAL_CALL acquire() throw ();
 	virtual void SAL_CALL release() throw ();
@@ -94,11 +85,9 @@ public:
 
 protected:
 
-	virtual Rectangle GetBoundingBoxOnScreen() const
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual Rectangle GetBoundingBoxOnScreen() const;
 
-	virtual Rectangle GetBoundingBox() const
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual Rectangle GetBoundingBox() const;
 
 private:
     bool isSelected() const;

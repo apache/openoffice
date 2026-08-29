@@ -67,14 +67,15 @@ DropTarget::~DropTarget()
 }
 
 void SAL_CALL DropTarget::initialize(const Sequence< Any >& aArguments)
-throw(Exception)
 {
     if (aArguments.getLength() < 2) {
         throw RuntimeException(OUString(RTL_CONSTASCII_USTRINGPARAM("DropTarget::initialize: Cannot install window event handler")),
                                static_cast<OWeakObject*>(this));
     }
 
-    m_hWnd = *(HWND*) aArguments[0].getValue();
+    sal_uInt64 nWindowHandle = 0;
+    aArguments[0] >>= nWindowHandle;
+    m_hWnd = (HWND)(sal_uIntPtr) nWindowHandle;
     debug_printf("DropTarget::initialize hwnd %x", m_hWnd);
 
     // subclass window to allow intercepting D&D messages
@@ -96,38 +97,36 @@ void SAL_CALL DropTarget::disposing()
 }
 
 void SAL_CALL DropTarget::addDropTargetListener(const uno::Reference<XDropTargetListener>& dtl)
-throw(RuntimeException)
 {
     debug_printf("DropTarget::addDropTargetListener hwnd %x", m_hWnd);
     rBHelper.addListener(::getCppuType(&dtl), dtl);
 }
 
 void SAL_CALL DropTarget::removeDropTargetListener(const uno::Reference<XDropTargetListener>& dtl)
-throw(RuntimeException)
 {
     debug_printf("DropTarget::removeDropTargetListener hwnd %x", m_hWnd);
     rBHelper.removeListener(::getCppuType(&dtl), dtl);
 }
 
-sal_Bool SAL_CALL DropTarget::isActive(  ) throw(RuntimeException)
+sal_Bool SAL_CALL DropTarget::isActive(  )
 {
     debug_printf("DropTarget::isActive %d", mbActive);
     return mbActive;
 }
 
-void SAL_CALL DropTarget::setActive(sal_Bool active) throw(RuntimeException)
+void SAL_CALL DropTarget::setActive(sal_Bool active)
 {
     debug_printf("DropTarget::setActive %d", active);
     mbActive = active;
 }
 
-sal_Int8 SAL_CALL DropTarget::getDefaultActions() throw(RuntimeException)
+sal_Int8 SAL_CALL DropTarget::getDefaultActions()
 {
     debug_printf("DropTarget::getDefaultActions %d", mDefaultActions);
     return mDefaultActions;
 }
 
-void SAL_CALL DropTarget::setDefaultActions(sal_Int8 actions) throw(RuntimeException)
+void SAL_CALL DropTarget::setDefaultActions(sal_Int8 actions)
 {
     OSL_ENSURE( actions < 8, "No valid default actions");
     mDefaultActions= actions;
@@ -144,13 +143,13 @@ void SAL_CALL DropTarget::setDefaultActions(sal_Int8 actions) throw(RuntimeExcep
 // Only one listener which visible area is affected is allowed to call on
 // XDropTargetDragContext
 
-void SAL_CALL DropTarget::acceptDrag(sal_Int8 dragOperation) throw (RuntimeException)
+void SAL_CALL DropTarget::acceptDrag(sal_Int8 dragOperation)
 {
     debug_printf("DropTarget::acceptDrag hwnd %x, dragOperation  %d", m_hWnd, dragOperation);
     mSelectedDropAction = dragOperation;
 }
 
-void SAL_CALL DropTarget::rejectDrag() throw (RuntimeException)
+void SAL_CALL DropTarget::rejectDrag()
 {
     debug_printf("DropTarget::rejectDrag hwnd %x", m_hWnd);
     mSelectedDropAction = ACTION_NONE;
@@ -170,19 +169,19 @@ void SAL_CALL DropTarget::rejectDrag() throw (RuntimeException)
 // to throw an InvalidDNDOperationException, meaning that a Drag is not currently performed.
 // return sal_False results in throwing a InvalidDNDOperationException in the caller.
 //
-void SAL_CALL DropTarget::acceptDrop(sal_Int8 dropOperation) throw( RuntimeException)
+void SAL_CALL DropTarget::acceptDrop(sal_Int8 dropOperation)
 {
     debug_printf("DropTarget::acceptDrop hwnd %x, dragOperation  %d", m_hWnd, dropOperation);
     mSelectedDropAction = dropOperation;
 }
 
-void SAL_CALL DropTarget::rejectDrop() throw (RuntimeException)
+void SAL_CALL DropTarget::rejectDrop()
 {
     debug_printf("DropTarget::rejectDrop hwnd %x", m_hWnd);
     mSelectedDropAction = ACTION_NONE;
 }
 
-void SAL_CALL DropTarget::dropComplete(sal_Bool success) throw (RuntimeException)
+void SAL_CALL DropTarget::dropComplete(sal_Bool success)
 {
     debug_printf("DropTarget::dropComplete hwnd %x", m_hWnd);
 
@@ -206,17 +205,17 @@ void SAL_CALL DropTarget::dropComplete(sal_Bool success) throw (RuntimeException
 //
 // XServiceInfo
 //
-OUString SAL_CALL DropTarget::getImplementationName() throw (RuntimeException)
+OUString SAL_CALL DropTarget::getImplementationName()
 {
     return OUString(RTL_CONSTASCII_USTRINGPARAM(OS2_DNDTARGET_IMPL_NAME));
 }
 
-sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName )
 {
     return ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM( OS2_DNDTARGET_SERVICE_NAME)));
 }
 
-Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  )
 {
     OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM( OS2_DNDTARGET_SERVICE_NAME))};
     return Sequence<OUString>(names, 1);

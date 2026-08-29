@@ -36,14 +36,14 @@ class ScVbaStyles: public ScVbaStyles_BASE
 	css::uno::Reference< css::lang::XMultiServiceFactory > mxMSF;
 	css::uno::Reference< css::container::XNameContainer > mxNameContainerCellStyles;
 public:
-	ScVbaStyles( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::frame::XModel >& xModel ) throw ( css::script::BasicErrorException );
-	css::uno::Sequence< rtl::OUString > getStyleNames() throw ( css::uno::RuntimeException );
-	void Delete(const rtl::OUString _sStyleName) throw ( css::script::BasicErrorException );
+	ScVbaStyles( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::frame::XModel >& xModel );
+	css::uno::Sequence< rtl::OUString > getStyleNames();
+	void Delete(const rtl::OUString _sStyleName);
 	// XStyles
-	 virtual css::uno::Reference< ov::excel::XStyle > SAL_CALL Add( const ::rtl::OUString& Name, const css::uno::Any& BasedOn ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
+	 virtual css::uno::Reference< ov::excel::XStyle > SAL_CALL Add( const ::rtl::OUString& Name, const css::uno::Any& BasedOn );
 	// XEnumerationAccess
-	virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+	virtual css::uno::Type SAL_CALL getElementType();
+	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 	virtual css::uno::Any createCollectionObject(const css::uno::Any&);
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

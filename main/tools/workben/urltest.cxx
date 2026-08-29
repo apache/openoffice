@@ -212,7 +212,6 @@ class StringWidth: public cppu::WeakImplHelper1< star::util::XStringWidth >
 {
 public:
     virtual sal_Int32 SAL_CALL queryStringWidth(rtl::OUString const & rString)
-        throw (star::uno::RuntimeException)
     {
         return rString.getLength();
     }

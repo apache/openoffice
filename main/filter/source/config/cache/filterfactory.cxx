@@ -113,8 +113,6 @@ FilterFactory::~FilterFactory()
     16.07.2003 13:43
 -----------------------------------------------*/
 css::uno::Reference< css::uno::XInterface > SAL_CALL FilterFactory::createInstance(const ::rtl::OUString& sFilter)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     return createInstanceWithArguments(sFilter, css::uno::Sequence< css::uno::Any >());
 }
@@ -124,8 +122,6 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL FilterFactory::createInstan
 -----------------------------------------------*/
 css::uno::Reference< css::uno::XInterface > SAL_CALL FilterFactory::createInstanceWithArguments(const ::rtl::OUString&                     sFilter   ,
                                                                                                 const css::uno::Sequence< css::uno::Any >& lArguments)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -205,7 +201,6 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL FilterFactory::createInstan
     18.02.2004 14:21
 -----------------------------------------------*/
 css::uno::Sequence< ::rtl::OUString > SAL_CALL FilterFactory::getAvailableServiceNames()
-    throw(css::uno::RuntimeException)
 {
     /* Attention: Instead of getElementNames() this method have to return only filter names,
                   which can be created as UNO Services really. That's why we search for filters,
@@ -234,7 +229,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL FilterFactory::getAvailableServic
     11.03.2004 08:37
 -----------------------------------------------*/
 css::uno::Reference< css::container::XEnumeration > SAL_CALL FilterFactory::createSubSetEnumerationByQuery(const ::rtl::OUString& sQuery)
-    throw (css::uno::RuntimeException)
 {
     // reject old deprecated queries ...
     if (sQuery.matchAsciiL("_filterquery_",13,0))

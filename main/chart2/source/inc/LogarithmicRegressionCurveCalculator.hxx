@@ -44,20 +44,15 @@ private:
     // ____ XRegressionCurveCalculator ____
     virtual void SAL_CALL recalculateRegression(
         const ::com::sun::star::uno::Sequence< double >& aXValues,
-        const ::com::sun::star::uno::Sequence< double >& aYValues )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL getCurveValue( double x )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< double >& aYValues );
+    virtual double SAL_CALL getCurveValue( double x );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealPoint2D > SAL_CALL getCurveValues(
         double min,
         double max,
         ::sal_Int32 nPointCount,
         const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XScaling >& xScalingX,
         const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XScaling >& xScalingY,
-        ::sal_Bool bMaySkipPointsInCalculation )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        ::sal_Bool bMaySkipPointsInCalculation );
 
     // formula is: f(x) = m_fSlope * log( x ) + m_fIntercept
     double m_fSlope;

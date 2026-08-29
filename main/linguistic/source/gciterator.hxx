@@ -167,30 +167,30 @@ public:
     virtual ~GrammarCheckingIterator();
 
     // XProofreadingIterator
-    virtual void SAL_CALL startProofreading( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xDocument, const ::com::sun::star::uno::Reference< ::com::sun::star::text::XFlatParagraphIteratorProvider >& xIteratorProvider ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::linguistic2::ProofreadingResult SAL_CALL checkSentenceAtPosition( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xDocument, const ::com::sun::star::uno::Reference< ::com::sun::star::text::XFlatParagraph >& xFlatParagraph, const ::rtl::OUString& aText, const ::com::sun::star::lang::Locale& aLocale, ::sal_Int32 nStartOfSentencePosition, ::sal_Int32 nSuggestedBehindEndOfSentencePosition, ::sal_Int32 nErrorPositionInParagraph ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL resetIgnoreRules(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isProofreading( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xDocument ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL startProofreading( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xDocument, const ::com::sun::star::uno::Reference< ::com::sun::star::text::XFlatParagraphIteratorProvider >& xIteratorProvider );
+    virtual ::com::sun::star::linguistic2::ProofreadingResult SAL_CALL checkSentenceAtPosition( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xDocument, const ::com::sun::star::uno::Reference< ::com::sun::star::text::XFlatParagraph >& xFlatParagraph, const ::rtl::OUString& aText, const ::com::sun::star::lang::Locale& aLocale, ::sal_Int32 nStartOfSentencePosition, ::sal_Int32 nSuggestedBehindEndOfSentencePosition, ::sal_Int32 nErrorPositionInParagraph );
+    virtual void SAL_CALL resetIgnoreRules(  );
+    virtual ::sal_Bool SAL_CALL isProofreading( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xDocument );
 
     // XLinguServiceEventListener
-    virtual void SAL_CALL processLinguServiceEvent( const ::com::sun::star::linguistic2::LinguServiceEvent& aLngSvcEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL processLinguServiceEvent( const ::com::sun::star::linguistic2::LinguServiceEvent& aLngSvcEvent );
 
     // XLinguServiceEventBroadcaster
-    virtual ::sal_Bool SAL_CALL addLinguServiceEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XLinguServiceEventListener >& xLstnr ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL removeLinguServiceEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XLinguServiceEventListener >& xLstnr ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL addLinguServiceEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XLinguServiceEventListener >& xLstnr );
+    virtual ::sal_Bool SAL_CALL removeLinguServiceEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XLinguServiceEventListener >& xLstnr );
 
     // XComponent
-    virtual void SAL_CALL dispose(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose(  );
+    virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+    virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
     // XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     // LinguDispatcher
     virtual void SetServiceList( const ::com::sun::star::lang::Locale &rLocale, const ::com::sun::star::uno::Sequence< rtl::OUString > &rSvcImplNames );

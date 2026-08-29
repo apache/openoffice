@@ -363,7 +363,7 @@ namespace ucb { namespace ucp { namespace ext
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void DataSupplier::validate() throw( ResultSetException )
+    void DataSupplier::validate()
     {
     }
 

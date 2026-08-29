@@ -169,7 +169,7 @@ sal_Bool ConvertBufferToFormat( void* pBuf,
 								const ::rtl::OUString& aFormatShortName,
 								uno::Any& aResult );
 
-::rtl::OUString GetNewTempFileURL_Impl( const uno::Reference< lang::XMultiServiceFactory >& xFactory ) throw( io::IOException );
+::rtl::OUString GetNewTempFileURL_Impl( const uno::Reference< lang::XMultiServiceFactory >& xFactory );
 
 typedef ::std::vector< FORMATETC* > FormatEtcList;
 
@@ -1448,8 +1448,6 @@ void OleComponent::OnClose_Impl()
 // XCloseable
 //----------------------------------------------
 void SAL_CALL OleComponent::close( sal_Bool bDeliverOwnership )
-	throw ( util::CloseVetoException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1502,7 +1500,6 @@ void SAL_CALL OleComponent::close( sal_Bool bDeliverOwnership )
 
 //----------------------------------------------
 void SAL_CALL OleComponent::addCloseListener( const uno::Reference< util::XCloseListener >& xListener )
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1516,7 +1513,6 @@ void SAL_CALL OleComponent::addCloseListener( const uno::Reference< util::XClose
 
 //----------------------------------------------
 void SAL_CALL OleComponent::removeCloseListener( const uno::Reference< util::XCloseListener >& xListener )
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1530,9 +1526,6 @@ void SAL_CALL OleComponent::removeCloseListener( const uno::Reference< util::XCl
 // XTransferable
 //----------------------------------------------
 uno::Any SAL_CALL OleComponent::getTransferData( const datatransfer::DataFlavor& aFlavor )
-	throw ( datatransfer::UnsupportedFlavorException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1636,7 +1629,6 @@ uno::Any SAL_CALL OleComponent::getTransferData( const datatransfer::DataFlavor&
 
 //----------------------------------------------
 uno::Sequence< datatransfer::DataFlavor > SAL_CALL OleComponent::getTransferDataFlavors()
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1652,7 +1644,6 @@ uno::Sequence< datatransfer::DataFlavor > SAL_CALL OleComponent::getTransferData
 
 //----------------------------------------------
 sal_Bool SAL_CALL OleComponent::isDataFlavorSupported( const datatransfer::DataFlavor& aFlavor )
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1673,7 +1664,7 @@ sal_Bool SAL_CALL OleComponent::isDataFlavorSupported( const datatransfer::DataF
 	return sal_False;
 }
 
-void SAL_CALL OleComponent::dispose() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL OleComponent::dispose()
 {
     try
     {
@@ -1685,7 +1676,6 @@ void SAL_CALL OleComponent::dispose() throw (::com::sun::star::uno::RuntimeExcep
 }
 
 void SAL_CALL OleComponent::addEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1699,7 +1689,6 @@ void SAL_CALL OleComponent::addEventListener( const uno::Reference< lang::XEvent
 
 //----------------------------------------------
 void SAL_CALL OleComponent::removeEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1710,7 +1699,7 @@ void SAL_CALL OleComponent::removeEventListener( const uno::Reference< lang::XEv
 												xListener );
 }
 
-sal_Int64 SAL_CALL OleComponent::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL OleComponent::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
 {
     try
     {
@@ -1743,13 +1732,12 @@ sal_Int64 SAL_CALL OleComponent::getSomething( const ::com::sun::star::uno::Sequ
     return 0;
 }
 
-sal_Bool SAL_CALL OleComponent::isModified() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL OleComponent::isModified()
 {
     return m_bModified;
 }
 
 void SAL_CALL OleComponent::setModified( sal_Bool bModified )
-        throw (::com::sun::star::beans::PropertyVetoException, ::com::sun::star::uno::RuntimeException)
 {
     m_bModified = bModified;
 
@@ -1776,7 +1764,7 @@ void SAL_CALL OleComponent::setModified( sal_Bool bModified )
 	}
 }
 
-void SAL_CALL OleComponent::addModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL OleComponent::addModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1788,7 +1776,7 @@ void SAL_CALL OleComponent::addModifyListener( const com::sun::star::uno::Refere
     m_pInterfaceContainer->addInterface( ::getCppuType( ( const uno::Reference< util::XModifyListener >* )0 ), xListener );
 }
 
-void SAL_CALL OleComponent::removeModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL OleComponent::removeModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )

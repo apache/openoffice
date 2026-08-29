@@ -53,14 +53,14 @@ namespace toolkit
 	    UnoControlModel*	Clone() const { return new UnoSpinButtonModel( *this ); }
 
 	    // XMultiPropertySet
-        ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
 	    // XPersistObject
-        ::rtl::OUString SAL_CALL getServiceName() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getServiceName();
 
 	    // XServiceInfo
-        ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getImplementationName(  );
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
     };
 
     //====================================================================
@@ -82,36 +82,36 @@ namespace toolkit
 	    ::rtl::OUString				GetComponentServiceName();
 
         DECLARE_UNO3_AGG_DEFAULTS( UnoSpinButtonControl, UnoControlBase );
-        ::com::sun::star::uno::Any	SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Any	SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType );
 
-        void SAL_CALL createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit >& Toolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& Parent ) throw(::com::sun::star::uno::RuntimeException);
-        void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException) { UnoControlBase::disposing( Source ); }
-        void SAL_CALL dispose(  ) throw(::com::sun::star::uno::RuntimeException);
+        void SAL_CALL createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit >& Toolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& Parent );
+        void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) { UnoControlBase::disposing( Source ); }
+        void SAL_CALL dispose(  );
 
         // XTypeProvider
         DECLARE_XTYPEPROVIDER()
 
 	    // XAdjustmentListener
-        void SAL_CALL adjustmentValueChanged( const ::com::sun::star::awt::AdjustmentEvent& rEvent ) throw(::com::sun::star::uno::RuntimeException);
+        void SAL_CALL adjustmentValueChanged( const ::com::sun::star::awt::AdjustmentEvent& rEvent );
 
 	    // XSpinValue
-        virtual void SAL_CALL addAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener >& listener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener >& listener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setValue( sal_Int32 value ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setValues( sal_Int32 minValue, sal_Int32 maxValue, sal_Int32 currentValue ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Int32 SAL_CALL getValue(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setMinimum( sal_Int32 minValue ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setMaximum( sal_Int32 maxValue ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Int32 SAL_CALL getMinimum(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Int32 SAL_CALL getMaximum(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setSpinIncrement( sal_Int32 spinIncrement ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Int32 SAL_CALL getSpinIncrement(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setOrientation( sal_Int32 orientation ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-        virtual sal_Int32 SAL_CALL getOrientation(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL addAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener >& listener );
+        virtual void SAL_CALL removeAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener >& listener );
+        virtual void SAL_CALL setValue( sal_Int32 value );
+        virtual void SAL_CALL setValues( sal_Int32 minValue, sal_Int32 maxValue, sal_Int32 currentValue );
+        virtual sal_Int32 SAL_CALL getValue(  );
+        virtual void SAL_CALL setMinimum( sal_Int32 minValue );
+        virtual void SAL_CALL setMaximum( sal_Int32 maxValue );
+        virtual sal_Int32 SAL_CALL getMinimum(  );
+        virtual sal_Int32 SAL_CALL getMaximum(  );
+        virtual void SAL_CALL setSpinIncrement( sal_Int32 spinIncrement );
+        virtual sal_Int32 SAL_CALL getSpinIncrement(  );
+        virtual void SAL_CALL setOrientation( sal_Int32 orientation );
+        virtual sal_Int32 SAL_CALL getOrientation(  );
 
 	    // XServiceInfo
-        ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getImplementationName(  );
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
     };
 
 

@@ -69,16 +69,14 @@ namespace {
 class Service: public cppu::WeakImplHelper1< css::lang::XMain > {
 public:
     virtual sal_Int32 SAL_CALL
-    run(css::uno::Sequence< rtl::OUString > const & arguments)
-        throw (css::uno::RuntimeException);
+    run(css::uno::Sequence< rtl::OUString > const & arguments);
 
     static rtl::OUString getImplementationName();
 
     static css::uno::Sequence< rtl::OUString > getSupportedServiceNames();
 
     static css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance(
-        css::uno::Reference< css::uno::XComponentContext > const & context)
-        throw (css::uno::Exception);
+        css::uno::Reference< css::uno::XComponentContext > const & context);
 
 private:
     explicit Service(
@@ -125,7 +123,6 @@ template< typename T > void assertEqual(T const & value, T const & argument) {
 }
 
 sal_Int32 Service::run(css::uno::Sequence< rtl::OUString > const &)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Reference< css::lang::XMultiComponentFactory > factory(
         m_context->getServiceManager());
@@ -872,7 +869,6 @@ css::uno::Sequence< rtl::OUString > Service::getSupportedServiceNames() {
 
 css::uno::Reference< css::uno::XInterface > Service::createInstance(
     css::uno::Reference< css::uno::XComponentContext > const & context)
-    throw (css::uno::Exception)
 {
     return static_cast< cppu::OWeakObject * >(new Service(context));
 }

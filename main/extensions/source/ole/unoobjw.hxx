@@ -181,11 +181,10 @@ public:
 	virtual Any SAL_CALL createBridge(const Any& modelDepObject,
 								const Sequence<sal_Int8>& ProcessId,
 								sal_Int16 sourceModelType,
-								sal_Int16 destModelType)
-			throw (IllegalArgumentException, RuntimeException);
+								sal_Int16 destModelType);
 
 	//XInitialization -----------------------------------------------------
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// IUnoObjectWrapper
 	STDMETHOD( getWrapperXInterface)( Reference<XInterface>* pXInt);

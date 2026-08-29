@@ -56,17 +56,14 @@
 // ---------------------------
 
 rtl::OUString EnhancedCustomShapeEngine_getImplementationName()
-	throw( NMSP_UNO::RuntimeException )
 {
 	return B2UCONST( "com.sun.star.drawing.EnhancedCustomShapeEngine" );
 }
 sal_Bool SAL_CALL EnhancedCustomShapeEngine_supportsService( const rtl::OUString& ServiceName )
-	throw( NMSP_UNO::RuntimeException )
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "com.sun.star.drawing.CustomShapeEngine" ) );
 }
 SEQ( rtl::OUString ) SAL_CALL EnhancedCustomShapeEngine_getSupportedServiceNames()
-	throw( NMSP_UNO::RuntimeException )
 {
 	SEQ( rtl::OUString ) aRet(1);
     rtl::OUString* pArray = aRet.getArray();
@@ -99,7 +96,6 @@ void SAL_CALL EnhancedCustomShapeEngine::release() throw()
 // XInitialization ------------------------------------------------------------
 
 void SAL_CALL EnhancedCustomShapeEngine::initialize( const SEQ( NMSP_UNO::Any )& aArguments )
-	throw ( NMSP_UNO::Exception, NMSP_UNO::RuntimeException )
 {
 	sal_Int32 i;
 	SEQ( NMSP_BEANS::PropertyValue ) aParameter;
@@ -121,17 +117,14 @@ void SAL_CALL EnhancedCustomShapeEngine::initialize( const SEQ( NMSP_UNO::Any )&
 // XServiceInfo ---------------------------------------------------------------
 
 rtl::OUString SAL_CALL EnhancedCustomShapeEngine::getImplementationName()
-	throw( NMSP_UNO::RuntimeException )
 {
 	return EnhancedCustomShapeEngine_getImplementationName();
 }
 sal_Bool SAL_CALL EnhancedCustomShapeEngine::supportsService( const rtl::OUString& rServiceName )
-	throw( NMSP_UNO::RuntimeException )
 {
     return EnhancedCustomShapeEngine_supportsService( rServiceName );
 }
 SEQ( rtl::OUString ) SAL_CALL EnhancedCustomShapeEngine::getSupportedServiceNames()
-	throw ( NMSP_UNO::RuntimeException )
 {
     return EnhancedCustomShapeEngine_getSupportedServiceNames();
 }
@@ -258,7 +251,6 @@ void SetTemporary( ::com::sun::star::uno::Reference< ::com::sun::star::drawing::
 }
 
 REF( com::sun::star::drawing::XShape ) SAL_CALL EnhancedCustomShapeEngine::render()
-	throw ( NMSP_UNO::RuntimeException )
 {
 	REF( com::sun::star::drawing::XShape ) xShape;
 	SdrObject* pSdrObjCustomShape( GetSdrObjectFromXShape( mxShape ) );
@@ -350,7 +342,6 @@ REF( com::sun::star::drawing::XShape ) SAL_CALL EnhancedCustomShapeEngine::rende
 }
 
 com::sun::star::awt::Rectangle SAL_CALL EnhancedCustomShapeEngine::getTextBounds()
-	throw ( NMSP_UNO::RuntimeException )
 {
 	com::sun::star::awt::Rectangle aTextRect;
 	SdrObject* pSdrObjCustomShape( GetSdrObjectFromXShape( mxShape ) );
@@ -371,7 +362,6 @@ com::sun::star::awt::Rectangle SAL_CALL EnhancedCustomShapeEngine::getTextBounds
 }
 
 com::sun::star::drawing::PolyPolygonBezierCoords SAL_CALL EnhancedCustomShapeEngine::getLineGeometry()
-	throw ( NMSP_UNO::RuntimeException )
 {
 	com::sun::star::drawing::PolyPolygonBezierCoords aPolyPolygonBezierCoords;
 	SdrObject* pSdrObjCustomShape( GetSdrObjectFromXShape( mxShape ) );
@@ -451,7 +441,6 @@ com::sun::star::drawing::PolyPolygonBezierCoords SAL_CALL EnhancedCustomShapeEng
 }
 
 SEQ( REF( com::sun::star::drawing::XCustomShapeHandle ) ) SAL_CALL EnhancedCustomShapeEngine::getInteraction()
-	throw ( NMSP_UNO::RuntimeException )
 {
 	sal_uInt32 i, nHdlCount = 0;
 	SdrObject* pSdrObjCustomShape = GetSdrObjectFromXShape( mxShape );

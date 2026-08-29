@@ -140,7 +140,7 @@ public:
 	virtual void SAL_CALL release() throw();
 
 	// XEventListener
-	virtual void SAL_CALL disposing( const EventObject & rEvt ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const EventObject & rEvt );
 };
 
 EventListenerImpl::~EventListenerImpl()
@@ -181,28 +181,28 @@ public:
 	virtual ~ManagerImpl();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any > & args ) throw (Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any > & args );
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw(::com::sun::star::uno::RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 	// XElementAccess
-    virtual Type SAL_CALL getElementType() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
+    virtual Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
 	// XEnumerationAccess
-    virtual Reference< XEnumeration > SAL_CALL createEnumeration() throw(::com::sun::star::uno::RuntimeException);
+    virtual Reference< XEnumeration > SAL_CALL createEnumeration();
 
 	// XSet
-    virtual sal_Bool SAL_CALL has( const Any & rElement ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL insert( const Any & rElement ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL remove( const Any & rElement ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL has( const Any & rElement );
+    virtual void SAL_CALL insert( const Any & rElement );
+    virtual void SAL_CALL remove( const Any & rElement );
 
 	// XHierarchicalNameAccess
-	virtual Any SAL_CALL getByHierarchicalName( const OUString & rName ) throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasByHierarchicalName( const OUString & rName ) throw(::com::sun::star::uno::RuntimeException);
+	virtual Any SAL_CALL getByHierarchicalName( const OUString & rName );
+	virtual sal_Bool SAL_CALL hasByHierarchicalName( const OUString & rName );
 
     // XTypeDescriptionEnumerationAccess
     virtual ::com::sun::star::uno::Reference<
@@ -211,10 +211,7 @@ public:
         const ::rtl::OUString& moduleName,
         const ::com::sun::star::uno::Sequence<
             ::com::sun::star::uno::TypeClass >& types,
-        ::com::sun::star::reflection::TypeDescriptionSearchDepth depth )
-            throw ( ::com::sun::star::reflection::NoSuchTypeNameException,
-                    ::com::sun::star::reflection::InvalidTypeNameException,
-                    ::com::sun::star::uno::RuntimeException );
+        ::com::sun::star::reflection::TypeDescriptionSearchDepth depth );
 };
 
 //==================================================================================================
@@ -229,8 +226,8 @@ public:
 	virtual ~EnumerationImpl();
 
 	// XEnumeration
-	virtual sal_Bool SAL_CALL hasMoreElements() throw(::com::sun::star::uno::RuntimeException);
-	virtual Any SAL_CALL nextElement() throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasMoreElements();
+	virtual Any SAL_CALL nextElement();
 };
 
 //##################################################################################################
@@ -250,7 +247,6 @@ void EventListenerImpl::release() throw()
 // XEventListener
 //__________________________________________________________________________________________________
 void EventListenerImpl::disposing( const EventObject & rEvt )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     _pMgr->remove( makeAny( rEvt.Source ) );
 }
@@ -273,14 +269,12 @@ EnumerationImpl::~EnumerationImpl()
 // XEnumeration
 //__________________________________________________________________________________________________
 sal_Bool EnumerationImpl::hasMoreElements()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( _pMgr->_aComponentMutex );
 	return (_nPos < _pMgr->_aProviders.size());
 }
 //__________________________________________________________________________________________________
 Any EnumerationImpl::nextElement()
-	throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( _pMgr->_aComponentMutex );
 	if (_nPos >= _pMgr->_aProviders.size())
@@ -328,7 +322,6 @@ void ManagerImpl::disposing()
 //__________________________________________________________________________________________________
 void ManagerImpl::initialize(
     const Sequence< Any > & args )
-    throw (Exception, RuntimeException)
 {
 	// additional providers
     Any const * pProviders = args.getConstArray();
@@ -356,13 +349,11 @@ void ManagerImpl::initialize(
 // XServiceInfo
 //__________________________________________________________________________________________________
 OUString ManagerImpl::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return stoc_bootstrap::tdmgr_getImplementationName();
 }
 //__________________________________________________________________________________________________
 sal_Bool ManagerImpl::supportsService( const OUString & rServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	const Sequence< OUString > & rSNL = getSupportedServiceNames();
 	const OUString * pArray = rSNL.getConstArray();
@@ -375,7 +366,6 @@ sal_Bool ManagerImpl::supportsService( const OUString & rServiceName )
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > ManagerImpl::getSupportedServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return stoc_bootstrap::tdmgr_getSupportedServiceNames();
 }
@@ -383,13 +373,11 @@ Sequence< OUString > ManagerImpl::getSupportedServiceNames()
 // XElementAccess
 //__________________________________________________________________________________________________
 Type ManagerImpl::getElementType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return ::getCppuType( (const Reference< XHierarchicalNameAccess > *)0 );
 }
 //__________________________________________________________________________________________________
 sal_Bool ManagerImpl::hasElements()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( _aComponentMutex );
 	return (_aProviders.size() > 0);
@@ -398,7 +386,6 @@ sal_Bool ManagerImpl::hasElements()
 // XEnumerationAccess
 //__________________________________________________________________________________________________
 Reference< XEnumeration > ManagerImpl::createEnumeration()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return new EnumerationImpl( this );
 }
@@ -406,7 +393,6 @@ Reference< XEnumeration > ManagerImpl::createEnumeration()
 // XSet
 //__________________________________________________________________________________________________
 sal_Bool SAL_CALL ManagerImpl::has( const Any & rElement )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Reference< XHierarchicalNameAccess > xElem;
 	if (rElement >>= xElem)
@@ -419,7 +405,6 @@ sal_Bool SAL_CALL ManagerImpl::has( const Any & rElement )
 
 //__________________________________________________________________________________________________
 void SAL_CALL ManagerImpl::insert( const Any & rElement )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException, ::com::sun::star::uno::RuntimeException)
 {
 	Reference< XHierarchicalNameAccess > xElem;
 	if (! (rElement >>= xElem) || !xElem.is())
@@ -530,7 +515,6 @@ void SAL_CALL ManagerImpl::insert( const Any & rElement )
 }
 //__________________________________________________________________________________________________
 void SAL_CALL ManagerImpl::remove( const Any & rElement )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException)
 {
 	if (!rBHelper.bDisposed && !rBHelper.bInDispose)
 	{
@@ -566,9 +550,6 @@ ManagerImpl::createTypeDescriptionEnumeration(
         const OUString & moduleName,
         const Sequence< TypeClass > & types,
         TypeDescriptionSearchDepth depth )
-    throw ( NoSuchTypeNameException,
-            InvalidTypeNameException,
-            RuntimeException )
 {
     MutexGuard aGuard( _aComponentMutex );
 
@@ -614,20 +595,18 @@ public:
 		{}
 
 	// XTypeDescription
-	virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-	virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+	virtual TypeClass SAL_CALL getTypeClass();
+	virtual OUString SAL_CALL getName();
 };
 
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass SimpleTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _eTC;
 }
 //__________________________________________________________________________________________________
 OUString SimpleTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aName;
 }
@@ -644,23 +623,21 @@ public:
 		{}
 
 	// XTypeDescription
-	virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-	virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+	virtual TypeClass SAL_CALL getTypeClass();
+	virtual OUString SAL_CALL getName();
 
 	// XIndirectTypeDescription
-    virtual Reference< XTypeDescription > SAL_CALL getReferencedType() throw(::com::sun::star::uno::RuntimeException);
+    virtual Reference< XTypeDescription > SAL_CALL getReferencedType();
 };
 
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass SequenceTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return TypeClass_SEQUENCE;
 }
 //__________________________________________________________________________________________________
 OUString SequenceTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return (OUString( RTL_CONSTASCII_USTRINGPARAM("[]") ) + _xElementTD->getName());
 }
@@ -668,7 +645,6 @@ OUString SequenceTypeDescriptionImpl::getName()
 // XIndirectTypeDescription
 //__________________________________________________________________________________________________
 Reference< XTypeDescription > SequenceTypeDescriptionImpl::getReferencedType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _xElementTD;
 }
@@ -697,13 +673,13 @@ public:
 	virtual ~ArrayTypeDescriptionImpl() {}
 
 	// XTypeDescription
-	virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
-	virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+	virtual TypeClass SAL_CALL getTypeClass();
+	virtual OUString SAL_CALL getName();
 
 	// XArrayTypeDescription
-    virtual Reference< XTypeDescription > SAL_CALL getType() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getNumberOfDimensions() throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< sal_Int32 > SAL_CALL getDimensions() throw(::com::sun::star::uno::RuntimeException);
+    virtual Reference< XTypeDescription > SAL_CALL getType();
+    virtual sal_Int32 SAL_CALL getNumberOfDimensions();
+    virtual Sequence< sal_Int32 > SAL_CALL getDimensions();
 };
 //__________________________________________________________________________________________________
 static sal_Int32 unicodeToInteger( sal_Int8 base, const sal_Unicode *s )
@@ -765,13 +741,11 @@ void ArrayTypeDescriptionImpl::initDimensions(const OUString& rSDimensions)
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass ArrayTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return TypeClass_ARRAY;
 }
 //__________________________________________________________________________________________________
 OUString ArrayTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return (_xElementTD->getName() + _sDimensions);
 }
@@ -779,21 +753,18 @@ OUString ArrayTypeDescriptionImpl::getName()
 // XArrayTypeDescription
 //__________________________________________________________________________________________________
 Reference< XTypeDescription > ArrayTypeDescriptionImpl::getType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _xElementTD;
 }
 
 //__________________________________________________________________________________________________
 sal_Int32 ArrayTypeDescriptionImpl::getNumberOfDimensions()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _nDimensions;
 }
 
 //__________________________________________________________________________________________________
 Sequence< sal_Int32 > ArrayTypeDescriptionImpl::getDimensions()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _seqDimensions;
 }
@@ -888,28 +859,24 @@ public:
         Reference< XStructTypeDescription > const & structType,
         std::vector< Reference< XTypeDescription > > const & arguments);
 
-    virtual TypeClass SAL_CALL getTypeClass() throw (RuntimeException)
+    virtual TypeClass SAL_CALL getTypeClass()
     { return TypeClass_STRUCT; }
 
-    virtual OUString SAL_CALL getName() throw (RuntimeException);
+    virtual OUString SAL_CALL getName();
 
     virtual Reference< XTypeDescription > SAL_CALL getBaseType()
-        throw (RuntimeException)
     { return m_struct->getBaseType(); }
 
-    virtual Sequence< Reference< XTypeDescription > > SAL_CALL getMemberTypes()
-        throw (RuntimeException);
+    virtual Sequence< Reference< XTypeDescription > > SAL_CALL getMemberTypes();
 
     virtual Sequence< OUString > SAL_CALL getMemberNames()
-        throw (RuntimeException)
     { return m_struct->getMemberNames(); }
 
     virtual Sequence< OUString > SAL_CALL getTypeParameters()
-        throw (RuntimeException)
     { return Sequence< OUString >(); }
 
     virtual Sequence< Reference< XTypeDescription > > SAL_CALL
-    getTypeArguments() throw (RuntimeException)
+    getTypeArguments()
     { return m_arguments; }
 
 private:
@@ -930,7 +897,7 @@ InstantiatedStruct::InstantiatedStruct(
     }
 }
 
-OUString InstantiatedStruct::getName() throw (RuntimeException) {
+OUString InstantiatedStruct::getName() {
     OUStringBuffer buf(m_struct->getName());
     buf.append(static_cast< sal_Unicode >('<'));
     for (sal_Int32 i = 0; i < m_arguments.getLength(); ++i) {
@@ -944,7 +911,6 @@ OUString InstantiatedStruct::getName() throw (RuntimeException) {
 }
 
 Sequence< Reference< XTypeDescription > > InstantiatedStruct::getMemberTypes()
-    throw (RuntimeException)
 {
     Sequence< Reference< XTypeDescription > > types(m_struct->getMemberTypes());
     for (sal_Int32 i = 0; i < types.getLength(); ++i) {
@@ -1023,7 +989,6 @@ Reference< XTypeDescription > ManagerImpl::getInstantiatedStruct(
 // XHierarchicalNameAccess
 //__________________________________________________________________________________________________
 Any ManagerImpl::getByHierarchicalName( const OUString & rName )
-	throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException)
 {
 	Any aRet;
 	if (_bCaching)
@@ -1123,7 +1088,6 @@ Any ManagerImpl::getByHierarchicalName( const OUString & rName )
 }
 //__________________________________________________________________________________________________
 sal_Bool ManagerImpl::hasByHierarchicalName( const OUString & rName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	try
 	{
@@ -1141,7 +1105,6 @@ namespace stoc_bootstrap
 //==================================================================================================
 Reference< XInterface > SAL_CALL ManagerImpl_create(
     Reference< XComponentContext > const & xContext )
-	SAL_THROW( (::com::sun::star::uno::Exception) )
 {
     sal_Int32 nCacheSize = CACHE_SIZE;
     if (xContext.is()) {

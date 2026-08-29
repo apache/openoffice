@@ -139,7 +139,7 @@ CDIBPreview::~CDIBPreview( )
 //
 //-------------------------------
 
-sal_Int32 SAL_CALL CDIBPreview::getTargetColorDepth() throw (RuntimeException)
+sal_Int32 SAL_CALL CDIBPreview::getTargetColorDepth()
 {
 	HDC hdc = GetDC(m_Hwnd);
 	int clrRes = 0;
@@ -154,7 +154,7 @@ sal_Int32 SAL_CALL CDIBPreview::getTargetColorDepth() throw (RuntimeException)
 //
 //-------------------------------
 
-sal_Int32 SAL_CALL CDIBPreview::getAvailableWidth() throw (RuntimeException)
+sal_Int32 SAL_CALL CDIBPreview::getAvailableWidth()
 {
 	RECT rect;
 	bool bRet = GetClientRect(m_Hwnd,&rect);
@@ -171,7 +171,7 @@ sal_Int32 SAL_CALL CDIBPreview::getAvailableWidth() throw (RuntimeException)
 //
 //-------------------------------
 
-sal_Int32 SAL_CALL CDIBPreview::getAvailableHeight() throw (RuntimeException)
+sal_Int32 SAL_CALL CDIBPreview::getAvailableHeight()
 {
 	RECT rect;
 	bool bRet = GetClientRect(m_Hwnd,&rect);
@@ -189,7 +189,6 @@ sal_Int32 SAL_CALL CDIBPreview::getAvailableHeight() throw (RuntimeException)
 //-------------------------------
 
 void SAL_CALL CDIBPreview::setImage(sal_Int16 aImageFormat, const Any& aImage)
-	throw (IllegalArgumentException, RuntimeException)
 {
 	PreviewBase::setImage(aImageFormat,aImage);
 
@@ -211,7 +210,7 @@ void SAL_CALL CDIBPreview::setImage(sal_Int16 aImageFormat, const Any& aImage)
 //
 //-------------------------------
 
-sal_Bool SAL_CALL CDIBPreview::setShowState(sal_Bool bShowState) throw (RuntimeException)
+sal_Bool SAL_CALL CDIBPreview::setShowState(sal_Bool bShowState)
 {
 	PreviewBase::setShowState(bShowState);
 	ShowWindow(m_Hwnd, m_bShowState ? SW_SHOW : SW_HIDE);
@@ -222,7 +221,7 @@ sal_Bool SAL_CALL CDIBPreview::setShowState(sal_Bool bShowState) throw (RuntimeE
 //
 //-------------------------------
 
-sal_Bool SAL_CALL CDIBPreview::getShowState() throw (RuntimeException)
+sal_Bool SAL_CALL CDIBPreview::getShowState()
 {
 	return (sal_Bool)IsWindowVisible(m_Hwnd);
 }

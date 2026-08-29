@@ -47,17 +47,13 @@ public:
   DragSourceContext(DragSource* pSource);
   ~DragSourceContext();
 
-  virtual sal_Int32 SAL_CALL getCurrentCursor(  )
-	throw( com::sun::star::uno::RuntimeException);
+  virtual sal_Int32 SAL_CALL getCurrentCursor(  );
 
-  virtual void SAL_CALL setCursor( sal_Int32 cursorId )
-	throw( com::sun::star::uno::RuntimeException);
+  virtual void SAL_CALL setCursor( sal_Int32 cursorId );
 
-  virtual void SAL_CALL setImage( sal_Int32 imageId )
-	throw( com::sun::star::uno::RuntimeException);
+  virtual void SAL_CALL setImage( sal_Int32 imageId );
 
-  virtual void SAL_CALL transferablesFlavorsChanged(  )
-	throw( com::sun::star::uno::RuntimeException);
+  virtual void SAL_CALL transferablesFlavorsChanged(  );
 
 private:
   DragSource* m_pDragSource;

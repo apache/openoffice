@@ -233,9 +233,7 @@ public:
     void main(std::vector<std::string> &args,
               std::string* pExtensionPath = NULL,
               std::string* pDestination = NULL,
-              const rtl::OUString* pOfficeHelpPath = NULL )
-
-            throw( HelpProcessingException );
+              const rtl::OUString* pOfficeHelpPath = NULL );
 
     HelpLinker()
         : init(true)
@@ -266,7 +264,7 @@ private:
     bool init;
     IndexerPreProcessor* m_pIndexerPreProcessor;
     void initIndexerPreProcessor();
-    void link() throw( HelpProcessingException );
+    void link();
     void addBookmark( FILE* pFile_DBHelp, std::string thishid,
         const std::string& fileB, const std::string& anchorB,
         const std::string& jarfileB, const std::string& titleB );
@@ -348,7 +346,7 @@ void HelpLinker::initIndexerPreProcessor()
 /**
 *
 */
-void HelpLinker::link() throw( HelpProcessingException )
+void HelpLinker::link()
 {
     bool bIndexForExtension = true;
 
@@ -631,7 +629,6 @@ void HelpLinker::link() throw( HelpProcessingException )
 void HelpLinker::main( std::vector<std::string> &args,
                        std::string* pExtensionPath, std::string* pDestination,
                        const rtl::OUString* pOfficeHelpPath )
-    throw( HelpProcessingException )
 {
     bExtensionMode = false;
     helpFiles.clear();

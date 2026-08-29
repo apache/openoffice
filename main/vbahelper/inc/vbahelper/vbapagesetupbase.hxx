@@ -40,24 +40,24 @@ protected:
     sal_Int32 mnOrientPortrait;
 
 	VbaPageSetupBase( const css::uno::Reference< ov::XHelperInterface >& xParent,
-                    const css::uno::Reference< css::uno::XComponentContext >& xContext ) throw (css::uno::RuntimeException);
+                    const css::uno::Reference< css::uno::XComponentContext >& xContext );
 public:
 	virtual ~VbaPageSetupBase(){}
 
     // Attribute
-	virtual double SAL_CALL getTopMargin() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setTopMargin( double margin ) throw (css::uno::RuntimeException);
-	virtual double SAL_CALL getBottomMargin() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setBottomMargin( double margin ) throw (css::uno::RuntimeException);
-	virtual double SAL_CALL getRightMargin() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setRightMargin( double margin ) throw (css::uno::RuntimeException);
-	virtual double SAL_CALL getLeftMargin() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setLeftMargin( double margin ) throw (css::uno::RuntimeException);
-	virtual double SAL_CALL getHeaderMargin() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setHeaderMargin( double margin ) throw (css::uno::RuntimeException);
-	virtual double SAL_CALL getFooterMargin() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setFooterMargin( double margin ) throw (css::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getOrientation() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setOrientation( sal_Int32 orientation ) throw (css::uno::RuntimeException);
+	virtual double SAL_CALL getTopMargin();
+	virtual void SAL_CALL setTopMargin( double margin );
+	virtual double SAL_CALL getBottomMargin();
+	virtual void SAL_CALL setBottomMargin( double margin );
+	virtual double SAL_CALL getRightMargin();
+	virtual void SAL_CALL setRightMargin( double margin );
+	virtual double SAL_CALL getLeftMargin();
+	virtual void SAL_CALL setLeftMargin( double margin );
+	virtual double SAL_CALL getHeaderMargin();
+	virtual void SAL_CALL setHeaderMargin( double margin );
+	virtual double SAL_CALL getFooterMargin();
+	virtual void SAL_CALL setFooterMargin( double margin );
+	virtual sal_Int32 SAL_CALL getOrientation();
+	virtual void SAL_CALL setOrientation( sal_Int32 orientation );
 };
 #endif

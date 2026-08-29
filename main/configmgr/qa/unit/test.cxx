@@ -222,12 +222,10 @@ protected:
     Test const & test_;
 
 private:
-    virtual void SAL_CALL disposing(css::lang::EventObject const &)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing(css::lang::EventObject const &);
 
     virtual void SAL_CALL propertyChange(
-        css::beans::PropertyChangeEvent const &)
-        throw (css::uno::RuntimeException);
+        css::beans::PropertyChangeEvent const &);
 
     int count_;
     bool * destroyed_;
@@ -260,14 +258,12 @@ RecursiveTest::~RecursiveTest() {
 }
 
 void RecursiveTest::disposing(css::lang::EventObject const & Source)
-    throw (css::uno::RuntimeException)
 {
     ASSERT_TRUE(properties_.is() && Source.Source == properties_);
     properties_.clear();
 }
 
 void RecursiveTest::propertyChange(css::beans::PropertyChangeEvent const & evt)
-    throw (css::uno::RuntimeException)
 {
     ASSERT_TRUE(
         evt.Source == properties_ &&

@@ -269,7 +269,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::enterUndoContext( const ::rtl::OUString& i_title ) throw (RuntimeException)
+    void SAL_CALL DocumentUndoManager::enterUndoContext( const ::rtl::OUString& i_title )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -279,7 +279,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::enterHiddenUndoContext(  ) throw (EmptyUndoStackException, RuntimeException)
+    void SAL_CALL DocumentUndoManager::enterHiddenUndoContext(  )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -289,7 +289,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::leaveUndoContext(  ) throw (InvalidStateException, RuntimeException)
+    void SAL_CALL DocumentUndoManager::leaveUndoContext(  )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -299,7 +299,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::addUndoAction( const Reference< XUndoAction >& i_action ) throw (RuntimeException, IllegalArgumentException)
+    void SAL_CALL DocumentUndoManager::addUndoAction( const Reference< XUndoAction >& i_action )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -309,7 +309,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::undo(  ) throw (EmptyUndoStackException, UndoContextNotClosedException, UndoFailedException, RuntimeException)
+    void SAL_CALL DocumentUndoManager::undo(  )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -319,7 +319,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::redo(  ) throw (EmptyUndoStackException, UndoContextNotClosedException, UndoFailedException, RuntimeException)
+    void SAL_CALL DocumentUndoManager::redo(  )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -329,49 +329,49 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DocumentUndoManager::isUndoPossible(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL DocumentUndoManager::isUndoPossible(  )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.isUndoPossible();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DocumentUndoManager::isRedoPossible(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL DocumentUndoManager::isRedoPossible(  )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.isRedoPossible();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL DocumentUndoManager::getCurrentUndoActionTitle(  ) throw (EmptyUndoStackException, RuntimeException)
+    ::rtl::OUString SAL_CALL DocumentUndoManager::getCurrentUndoActionTitle(  )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.getCurrentUndoActionTitle();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL DocumentUndoManager::getCurrentRedoActionTitle(  ) throw (EmptyUndoStackException, RuntimeException)
+    ::rtl::OUString SAL_CALL DocumentUndoManager::getCurrentRedoActionTitle(  )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.getCurrentRedoActionTitle();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL DocumentUndoManager::getAllUndoActionTitles(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL DocumentUndoManager::getAllUndoActionTitles(  )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.getAllUndoActionTitles();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL DocumentUndoManager::getAllRedoActionTitles(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL DocumentUndoManager::getAllRedoActionTitles(  )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.getAllRedoActionTitles();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::clear(  ) throw (UndoContextNotClosedException, RuntimeException)
+    void SAL_CALL DocumentUndoManager::clear(  )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -381,7 +381,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::clearRedo(  ) throw (UndoContextNotClosedException, RuntimeException)
+    void SAL_CALL DocumentUndoManager::clearRedo(  )
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -391,7 +391,7 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::reset() throw (RuntimeException)
+    void SAL_CALL DocumentUndoManager::reset()
     {
         // SYNCHRONIZED --->
         UndoManagerGuard aGuard( *this );
@@ -401,49 +401,49 @@ namespace sfx2
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::lock(  ) throw (RuntimeException)
+    void SAL_CALL DocumentUndoManager::lock(  )
     {
         UndoManagerGuard aGuard( *this );
         m_pImpl->aUndoHelper.lock();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::unlock(  ) throw (RuntimeException, NotLockedException)
+    void SAL_CALL DocumentUndoManager::unlock(  )
     {
         UndoManagerGuard aGuard( *this );
         m_pImpl->aUndoHelper.unlock();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DocumentUndoManager::isLocked(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL DocumentUndoManager::isLocked(  )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.isLocked();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::addUndoManagerListener( const Reference< XUndoManagerListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL DocumentUndoManager::addUndoManagerListener( const Reference< XUndoManagerListener >& i_listener )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.addUndoManagerListener( i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::removeUndoManagerListener( const Reference< XUndoManagerListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL DocumentUndoManager::removeUndoManagerListener( const Reference< XUndoManagerListener >& i_listener )
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.removeUndoManagerListener( i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XInterface > SAL_CALL DocumentUndoManager::getParent(  ) throw (RuntimeException)
+    Reference< XInterface > SAL_CALL DocumentUndoManager::getParent(  )
     {
         UndoManagerGuard aGuard( *this );
         return static_cast< XModel* >( &getBaseModel() );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL DocumentUndoManager::setParent( const Reference< XInterface >& i_parent ) throw (NoSupportException, RuntimeException)
+    void SAL_CALL DocumentUndoManager::setParent( const Reference< XInterface >& i_parent )
     {
         (void)i_parent;
         throw NoSupportException( ::rtl::OUString(), m_pImpl->getThis() );

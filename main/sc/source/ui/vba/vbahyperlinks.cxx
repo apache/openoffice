@@ -38,7 +38,7 @@ using ::rtl::OUString;
 namespace {
 
 /** Returns true, if every range of rxInner is contained in any range of rScOuter. */
-bool lclContains( const ScRangeList& rScOuter, const uno::Reference< excel::XRange >& rxInner ) throw (uno::RuntimeException)
+bool lclContains( const ScRangeList& rScOuter, const uno::Reference< excel::XRange >& rxInner )
 {
     const ScRangeList& rScInner = ScVbaRange::getScRangeList( rxInner );
     if( (rScInner.Count() == 0) || (rScOuter.Count() == 0) )
@@ -58,11 +58,11 @@ struct EqualAnchorFunctor
     uno::Reference< excel::XRange > mxAnchorRange;
     uno::Reference< msforms::XShape > mxAnchorShape;
     sal_Int32 mnType;
-    EqualAnchorFunctor( const uno::Reference< excel::XHyperlink >& rxHlink ) throw (uno::RuntimeException);
-    bool operator()( const uno::Reference< excel::XHyperlink >& rxHlink ) const throw (uno::RuntimeException);
+    EqualAnchorFunctor( const uno::Reference< excel::XHyperlink >& rxHlink );
+    bool operator()( const uno::Reference< excel::XHyperlink >& rxHlink ) const;
 };
 
-EqualAnchorFunctor::EqualAnchorFunctor( const uno::Reference< excel::XHyperlink >& rxHlink ) throw (uno::RuntimeException) :
+EqualAnchorFunctor::EqualAnchorFunctor( const uno::Reference< excel::XHyperlink >& rxHlink ) :
     mnType( rxHlink->getType() )
 {
     switch( mnType )
@@ -79,7 +79,7 @@ EqualAnchorFunctor::EqualAnchorFunctor( const uno::Reference< excel::XHyperlink 
     }
 }
 
-bool EqualAnchorFunctor::operator()( const uno::Reference< excel::XHyperlink >& rxHlink ) const throw (uno::RuntimeException)
+bool EqualAnchorFunctor::operator()( const uno::Reference< excel::XHyperlink >& rxHlink ) const
 {
     sal_Int32 nType = rxHlink->getType();
     if( nType != mnType )
@@ -114,21 +114,21 @@ namespace vba_detail {
 class ScVbaHlinkContainer : public ::cppu::WeakImplHelper1< container::XIndexAccess >
 {
 public:
-    explicit ScVbaHlinkContainer() throw (uno::RuntimeException);
-    explicit ScVbaHlinkContainer( const ScVbaHlinkContainerRef& rxSheetContainer, const ScRangeList& rScRanges ) throw (uno::RuntimeException);
+    explicit ScVbaHlinkContainer();
+    explicit ScVbaHlinkContainer( const ScVbaHlinkContainerRef& rxSheetContainer, const ScRangeList& rScRanges );
     virtual ~ScVbaHlinkContainer();
 
     /** Inserts the passed hyperlink into the collection. Will remove a
         Hyperlink object with the same anchor as the passed Hyperlink object. */
-    void insertHyperlink( const uno::Reference< excel::XHyperlink >& rxHlink ) throw (uno::RuntimeException);
+    void insertHyperlink( const uno::Reference< excel::XHyperlink >& rxHlink );
 
     // XIndexAccess
-    virtual sal_Int32 SAL_CALL getCount() throw (uno::RuntimeException);
-    virtual uno::Any SAL_CALL getByIndex( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getCount();
+    virtual uno::Any SAL_CALL getByIndex( sal_Int32 nIndex );
 
     // XElementAccess
-    virtual uno::Type SAL_CALL getElementType() throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements() throw (uno::RuntimeException);
+    virtual uno::Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
 private:
     typedef ::std::vector< uno::Reference< excel::XHyperlink > > HyperlinkVector;
@@ -137,13 +137,13 @@ private:
 
 // ----------------------------------------------------------------------------
 
-ScVbaHlinkContainer::ScVbaHlinkContainer() throw (uno::RuntimeException)
+ScVbaHlinkContainer::ScVbaHlinkContainer()
 {
     // TODO FIXME: fill with existing hyperlinks
 }
 
 ScVbaHlinkContainer::ScVbaHlinkContainer( const ScVbaHlinkContainerRef& rxSheetContainer,
-        const ScRangeList& rScRanges ) throw (uno::RuntimeException)
+        const ScRangeList& rScRanges )
 {
     for( sal_Int32 nIndex = 0, nCount = rxSheetContainer->getCount(); nIndex < nCount; ++nIndex )
     {
@@ -158,7 +158,7 @@ ScVbaHlinkContainer::~ScVbaHlinkContainer()
 {
 }
 
-void ScVbaHlinkContainer::insertHyperlink( const uno::Reference< excel::XHyperlink >& rxHlink ) throw (uno::RuntimeException)
+void ScVbaHlinkContainer::insertHyperlink( const uno::Reference< excel::XHyperlink >& rxHlink )
 {
     HyperlinkVector::iterator aIt = ::std::find_if( maHlinks.begin(), maHlinks.end(), EqualAnchorFunctor( rxHlink ) );
     if( aIt == maHlinks.end() )
@@ -167,25 +167,24 @@ void ScVbaHlinkContainer::insertHyperlink( const uno::Reference< excel::XHyperli
         *aIt = rxHlink;
 }
 
-sal_Int32 SAL_CALL ScVbaHlinkContainer::getCount() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaHlinkContainer::getCount()
 {
     return static_cast< sal_Int32 >( maHlinks.size() );
 }
 
 uno::Any SAL_CALL ScVbaHlinkContainer::getByIndex( sal_Int32 nIndex )
-        throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
 {
     if( (0 <= nIndex) && (nIndex < getCount()) )
         return uno::Any( maHlinks[ static_cast< size_t >( nIndex ) ] );
     throw lang::IndexOutOfBoundsException();
 }
 
-uno::Type SAL_CALL ScVbaHlinkContainer::getElementType() throw (uno::RuntimeException)
+uno::Type SAL_CALL ScVbaHlinkContainer::getElementType()
 {
     return excel::XHyperlink::static_type( 0 );
 }
 
-sal_Bool SAL_CALL ScVbaHlinkContainer::hasElements() throw (uno::RuntimeException)
+sal_Bool SAL_CALL ScVbaHlinkContainer::hasElements()
 {
     return !maHlinks.empty();
 }
@@ -206,7 +205,7 @@ ScVbaHlinkContainerMember::~ScVbaHlinkContainerMember()
 // ============================================================================
 
 ScVbaHyperlinks::ScVbaHyperlinks( const uno::Reference< XHelperInterface >& rxParent,
-        const uno::Reference< uno::XComponentContext >& rxContext ) throw (uno::RuntimeException) :
+        const uno::Reference< uno::XComponentContext >& rxContext ) :
     vba_detail::ScVbaHlinkContainerMember( new vba_detail::ScVbaHlinkContainer ),
     ScVbaHyperlinks_BASE( rxParent, rxContext, uno::Reference< container::XIndexAccess >( mxContainer.get() ) )
 {
@@ -214,7 +213,7 @@ ScVbaHyperlinks::ScVbaHyperlinks( const uno::Reference< XHelperInterface >& rxPa
 
 ScVbaHyperlinks::ScVbaHyperlinks( const uno::Reference< XHelperInterface >& rxParent,
         const uno::Reference< uno::XComponentContext >& rxContext,
-        const ScVbaHyperlinksRef& rxSheetHlinks, const ScRangeList& rScRanges ) throw (uno::RuntimeException) :
+        const ScVbaHyperlinksRef& rxSheetHlinks, const ScRangeList& rScRanges ) :
     vba_detail::ScVbaHlinkContainerMember( new vba_detail::ScVbaHlinkContainer( rxSheetHlinks->mxContainer, rScRanges ) ),
     ScVbaHyperlinks_BASE( rxParent, rxContext, uno::Reference< container::XIndexAccess >( mxContainer.get() ) ),
     mxSheetHlinks( rxSheetHlinks )
@@ -229,7 +228,7 @@ ScVbaHyperlinks::~ScVbaHyperlinks()
 
 uno::Reference< excel::XHyperlink > SAL_CALL ScVbaHyperlinks::Add(
     const uno::Any& rAnchor, const uno::Any& rAddress, const uno::Any& rSubAddress,
-    const uno::Any& rScreenTip, const uno::Any& rTextToDisplay ) throw (uno::RuntimeException)
+    const uno::Any& rScreenTip, const uno::Any& rTextToDisplay )
 {
     /*  If this Hyperlinks object has been created from a Range object, the
         call to Add() is passed to the Hyperlinks object of the parent
@@ -254,7 +253,7 @@ uno::Reference< excel::XHyperlink > SAL_CALL ScVbaHyperlinks::Add(
     return xHlink;
 }
 
-void SAL_CALL ScVbaHyperlinks::Delete() throw (uno::RuntimeException)
+void SAL_CALL ScVbaHyperlinks::Delete()
 {
     // FIXME not implemented
     throw uno::RuntimeException();
@@ -262,14 +261,14 @@ void SAL_CALL ScVbaHyperlinks::Delete() throw (uno::RuntimeException)
 
 // XEnumerationAccess ---------------------------------------------------------
 
-uno::Reference< container::XEnumeration > SAL_CALL ScVbaHyperlinks::createEnumeration() throw (uno::RuntimeException)
+uno::Reference< container::XEnumeration > SAL_CALL ScVbaHyperlinks::createEnumeration()
 {
     return new SimpleIndexAccessToEnumeration( m_xIndexAccess );
 }
 
 // XElementAccess -------------------------------------------------------------
 
-uno::Type SAL_CALL ScVbaHyperlinks::getElementType() throw (uno::RuntimeException)
+uno::Type SAL_CALL ScVbaHyperlinks::getElementType()
 {
     return excel::XHyperlink::static_type( 0 );
 }

@@ -202,7 +202,7 @@ void OCurrencyModel::describeFixedProperties( Sequence< Property >& _rProps ) co
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OCurrencyModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OCurrencyModel::getServiceName()
 {
 	return FRM_COMPONENT_CURRENCYFIELD;	// old (non-sun) name for compatibility !
 }

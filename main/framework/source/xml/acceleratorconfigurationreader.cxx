@@ -96,15 +96,11 @@ AcceleratorConfigurationReader::~AcceleratorConfigurationReader()
 
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::startDocument()
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
 }
 
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::endDocument()
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
     // The xml file seems to be corrupted.
     // Because we found no end-tags... at least for
@@ -121,8 +117,6 @@ void SAL_CALL AcceleratorConfigurationReader::endDocument()
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::startElement(const ::rtl::OUString&                                      sElement      ,
                                                            const css::uno::Reference< css::xml::sax::XAttributeList >& xAttributeList)
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
     EXMLElement eElement = AcceleratorConfigurationReader::implst_classifyElement(sElement);
 
@@ -216,8 +210,6 @@ void SAL_CALL AcceleratorConfigurationReader::startElement(const ::rtl::OUString
 
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::endElement(const ::rtl::OUString& sElement)
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
     EXMLElement eElement = AcceleratorConfigurationReader::implst_classifyElement(sElement);
 
@@ -240,30 +232,22 @@ void SAL_CALL AcceleratorConfigurationReader::endElement(const ::rtl::OUString& 
 
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::characters(const ::rtl::OUString&)
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
 }
 
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::ignorableWhitespace(const ::rtl::OUString&)
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
 }
 
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::processingInstruction(const ::rtl::OUString& /*sTarget*/,
                                                                     const ::rtl::OUString& /*sData*/ )
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
 }
 
 //-----------------------------------------------
 void SAL_CALL AcceleratorConfigurationReader::setDocumentLocator(const css::uno::Reference< css::xml::sax::XLocator >& xLocator)
-    throw(css::xml::sax::SAXException,
-          css::uno::RuntimeException )
 {
     m_xLocator = xLocator;
 }

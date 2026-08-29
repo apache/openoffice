@@ -65,7 +65,6 @@ ManifestWriter::~ManifestWriter()
 
 // XManifestWriter methods
 void SAL_CALL ManifestWriter::writeManifestSequence( const Reference< XOutputStream >& rStream, const Sequence< Sequence< PropertyValue > >& rSequence )
-		throw (RuntimeException)
 {
 	OUString sSaxWriter ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.xml.sax.Writer" ) );
 	Reference < XActiveDataSource > xSource ( xFactory->createInstance ( sSaxWriter ), UNO_QUERY );
@@ -107,18 +106,15 @@ Sequence < OUString > ManifestWriter::static_getSupportedServiceNames()
 }
 
 OUString ManifestWriter::getImplementationName()
-	throw (RuntimeException)
 {
 	return static_getImplementationName();
 }
 
 sal_Bool SAL_CALL ManifestWriter::supportsService(OUString const & rServiceName)
-	throw (RuntimeException)
 {
 	return static_supportsService ( rServiceName );
 }
 Sequence < OUString > ManifestWriter::getSupportedServiceNames()
-	throw (RuntimeException)
 {
 	return static_getSupportedServiceNames();
 }

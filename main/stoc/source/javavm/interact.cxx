@@ -46,7 +46,7 @@ class AbortContinuation:
 public:
     inline AbortContinuation() {}
 
-    virtual inline void SAL_CALL select() throw (css::uno::RuntimeException) {}
+    virtual inline void SAL_CALL select() {}
 
 private:
     AbortContinuation(AbortContinuation &); // not implemented
@@ -63,7 +63,7 @@ class InteractionRequest::RetryContinuation:
 public:
     inline RetryContinuation(): m_bSelected(false) {}
 
-    virtual void SAL_CALL select() throw (css::uno::RuntimeException);
+    virtual void SAL_CALL select();
 
     bool isSelected() const;
 
@@ -78,7 +78,6 @@ private:
 };
 
 void SAL_CALL InteractionRequest::RetryContinuation::select()
-    throw (css::uno::RuntimeException)
 {
     osl::MutexGuard aGuard(m_aMutex);
     m_bSelected = true;
@@ -100,14 +99,12 @@ InteractionRequest::InteractionRequest(css::uno::Any const & rRequest):
 }
 
 css::uno::Any SAL_CALL InteractionRequest::getRequest()
-    throw (css::uno::RuntimeException)
 {
     return m_aRequest;
 }
 
 css::uno::Sequence< css::uno::Reference< css::task::XInteractionContinuation > >
 SAL_CALL InteractionRequest::getContinuations()
-    throw (css::uno::RuntimeException)
 {
     return m_aContinuations;
 }

@@ -117,7 +117,6 @@ uno::Reference< awt::XWindow > ProgressBarWrapper::getStatusBar() const
 
 // wrapped methods of ::com::sun::star::task::XStatusIndicator
 void ProgressBarWrapper::start( const ::rtl::OUString& Text, ::sal_Int32 Range )
-throw (uno::RuntimeException)
 {
     uno::Reference< awt::XWindow > xWindow;
     sal_Int32                      nValue( 0 );
@@ -157,7 +156,6 @@ throw (uno::RuntimeException)
 }
 
 void ProgressBarWrapper::end()
-throw (uno::RuntimeException)
 {
     uno::Reference< awt::XWindow > xWindow;
 
@@ -186,7 +184,6 @@ throw (uno::RuntimeException)
 }
 
 void ProgressBarWrapper::setText( const ::rtl::OUString& Text )
-throw (uno::RuntimeException)
 {
     uno::Reference< awt::XWindow > xWindow;
     sal_Int32 nValue( 0 );
@@ -224,7 +221,6 @@ throw (uno::RuntimeException)
 }
 
 void ProgressBarWrapper::setValue( ::sal_Int32 nValue )
-throw (uno::RuntimeException)
 {
     uno::Reference< awt::XWindow > xWindow;
     rtl::OUString aText;
@@ -270,7 +266,6 @@ throw (uno::RuntimeException)
 }
 
 void ProgressBarWrapper::reset()
-throw (uno::RuntimeException)
 {
     setText( rtl::OUString() );
     setValue( 0 );
@@ -278,21 +273,18 @@ throw (uno::RuntimeException)
 
 // XInitialization
 void SAL_CALL ProgressBarWrapper::initialize( const uno::Sequence< uno::Any >& )
-throw (uno::Exception, uno::RuntimeException)
 {
     // dummy - do nothing
 }
 
 // XUpdatable
 void SAL_CALL ProgressBarWrapper::update()
-throw (uno::RuntimeException)
 {
     // dummy - do nothing
 }
 
 // XComponent
 void SAL_CALL ProgressBarWrapper::dispose()
-throw (uno::RuntimeException)
 {
     uno::Reference< lang::XComponent > xThis(
         static_cast< cppu::OWeakObject* >(this),
@@ -330,7 +322,6 @@ throw (uno::RuntimeException)
 
 // XUIElement
 uno::Reference< uno::XInterface > SAL_CALL ProgressBarWrapper::getRealInterface()
-throw (uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     // Ready for multithreading

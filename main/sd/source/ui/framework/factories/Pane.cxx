@@ -94,7 +94,6 @@ void Pane::SetWindow (::Window* pWindow)
 //----- XPane -----------------------------------------------------------------
 
 Reference<awt::XWindow> SAL_CALL Pane::getWindow (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -105,7 +104,6 @@ Reference<awt::XWindow> SAL_CALL Pane::getWindow (void)
 
 
 Reference<rendering::XCanvas> SAL_CALL Pane::getCanvas (void)
-    throw (RuntimeException)
 {
     ::osl::MutexGuard aGuard (maMutex);
     ThrowIfDisposed();
@@ -122,7 +120,6 @@ Reference<rendering::XCanvas> SAL_CALL Pane::getCanvas (void)
 //----- XPane2 ----------------------------------------------------------------
 
 sal_Bool SAL_CALL Pane::isVisible (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -137,7 +134,6 @@ sal_Bool SAL_CALL Pane::isVisible (void)
 
 
 void SAL_CALL Pane::setVisible (sal_Bool bIsVisible)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -150,7 +146,6 @@ void SAL_CALL Pane::setVisible (sal_Bool bIsVisible)
 
 
 Reference<accessibility::XAccessible> SAL_CALL Pane::getAccessible (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     ::Window* pWindow = GetWindow();
@@ -165,7 +160,6 @@ Reference<accessibility::XAccessible> SAL_CALL Pane::getAccessible (void)
 
 void SAL_CALL Pane::setAccessible (
     const Reference<accessibility::XAccessible>& rxAccessible)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     ::Window* pWindow = GetWindow();
@@ -179,7 +173,6 @@ void SAL_CALL Pane::setAccessible (
 //----- XResource -------------------------------------------------------------
 
 Reference<XResourceId> SAL_CALL Pane::getResourceId (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -190,7 +183,6 @@ Reference<XResourceId> SAL_CALL Pane::getResourceId (void)
 
 
 sal_Bool SAL_CALL Pane::isAnchorOnly (void)
-    throw (RuntimeException)
 {
     return true;
 }
@@ -220,7 +212,6 @@ const Sequence<sal_Int8>& Pane::getUnoTunnelId (void)
 
 
 sal_Int64 SAL_CALL Pane::getSomething (const Sequence<sal_Int8>& rId)
-    throw (RuntimeException)
 {
     sal_Int64 nResult = 0;
 
@@ -239,7 +230,6 @@ sal_Int64 SAL_CALL Pane::getSomething (const Sequence<sal_Int8>& rId)
 //-----------------------------------------------------------------------------
 
 Reference<rendering::XCanvas> Pane::CreateCanvas (void)
-    throw (RuntimeException)
 {
     Reference<rendering::XCanvas> xCanvas;
 
@@ -258,7 +248,6 @@ Reference<rendering::XCanvas> Pane::CreateCanvas (void)
 
 
 void Pane::ThrowIfDisposed (void) const
-    throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

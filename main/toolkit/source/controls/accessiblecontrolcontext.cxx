@@ -67,7 +67,7 @@ namespace toolkit
 		// (order matters: the first is the class name, the second is the class doing the ref counting)
 
 	//--------------------------------------------------------------------
-	void OAccessibleControlContext::Init( const Reference< XAccessible >& _rxCreator ) SAL_THROW( ( Exception ) )
+	void OAccessibleControlContext::Init( const Reference< XAccessible >& _rxCreator )
 	{
 		OContextEntryGuard aGuard( this );
 
@@ -105,7 +105,7 @@ namespace toolkit
 	}
 
 	//--------------------------------------------------------------------
-	void OAccessibleControlContext::startModelListening( ) SAL_THROW( ( Exception ) )
+	void OAccessibleControlContext::startModelListening( )
 	{
 		Reference< XComponent > xModelComp( m_xControlModel, UNO_QUERY );
 		OSL_ENSURE( xModelComp.is(), "OAccessibleControlContext::startModelListening: invalid model!" );
@@ -114,7 +114,7 @@ namespace toolkit
 	}
 
 	//--------------------------------------------------------------------
-	void OAccessibleControlContext::stopModelListening( ) SAL_THROW( ( Exception ) )
+	void OAccessibleControlContext::stopModelListening( )
 	{
 		Reference< XComponent > xModelComp( m_xControlModel, UNO_QUERY );
 		OSL_ENSURE( xModelComp.is(), "OAccessibleControlContext::stopModelListening: invalid model!" );
@@ -123,21 +123,21 @@ namespace toolkit
 	}
 
 	//--------------------------------------------------------------------
-	sal_Int32 SAL_CALL OAccessibleControlContext::getAccessibleChildCount(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL OAccessibleControlContext::getAccessibleChildCount(  )
 	{
 		// we do not have children
 		return 0;
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL OAccessibleControlContext::getAccessibleChild( sal_Int32 ) throw (IndexOutOfBoundsException, RuntimeException)
+	Reference< XAccessible > SAL_CALL OAccessibleControlContext::getAccessibleChild( sal_Int32 )
 	{
 		// we do not have children
 		throw IndexOutOfBoundsException();
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL OAccessibleControlContext::getAccessibleParent(  ) throw (RuntimeException)
+	Reference< XAccessible > SAL_CALL OAccessibleControlContext::getAccessibleParent(  )
 	{
 		OContextEntryGuard aGuard( this );
 		OSL_ENSURE( implGetForeignControlledParent().is(), "OAccessibleControlContext::getAccessibleParent: somebody forgot to set a parent!" );
@@ -147,33 +147,33 @@ namespace toolkit
 	}
 
 	//--------------------------------------------------------------------
-	sal_Int16 SAL_CALL OAccessibleControlContext::getAccessibleRole(  ) throw (RuntimeException)
+	sal_Int16 SAL_CALL OAccessibleControlContext::getAccessibleRole(  )
 	{
 		return AccessibleRole::SHAPE;
 	}
 
 	//--------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OAccessibleControlContext::getAccessibleDescription(  ) throw (RuntimeException)
+	::rtl::OUString SAL_CALL OAccessibleControlContext::getAccessibleDescription(  )
 	{
 		OContextEntryGuard aGuard( this );
 		return getModelStringProperty( "HelpText" );
 	}
 
 	//--------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OAccessibleControlContext::getAccessibleName(  ) throw (RuntimeException)
+	::rtl::OUString SAL_CALL OAccessibleControlContext::getAccessibleName(  )
 	{
 		OContextEntryGuard aGuard( this );
 		return getModelStringProperty( "Name" );
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XAccessibleRelationSet > SAL_CALL OAccessibleControlContext::getAccessibleRelationSet(  ) throw (RuntimeException)
+	Reference< XAccessibleRelationSet > SAL_CALL OAccessibleControlContext::getAccessibleRelationSet(  )
 	{
 		return NULL;
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XAccessibleStateSet > SAL_CALL OAccessibleControlContext::getAccessibleStateSet(  ) throw (RuntimeException)
+	Reference< XAccessibleStateSet > SAL_CALL OAccessibleControlContext::getAccessibleStateSet(  )
 	{
 		::osl::MutexGuard aGuard( GetMutex() );
 			// no OContextEntryGuard here, as we do not want to throw an exception in case we're not alive anymore
@@ -197,7 +197,7 @@ namespace toolkit
     #if OSL_DEBUG_LEVEL > 0
     _rSource
     #endif
-    ) throw ( RuntimeException )
+    )
 	{
 		OSL_ENSURE( Reference< XPropertySet >( _rSource.Source, UNO_QUERY ).get() == m_xControlModel.get(),
 			"OAccessibleControlContext::disposing: where did this come from?" );
@@ -245,7 +245,7 @@ namespace toolkit
 	}
 
 	//--------------------------------------------------------------------
-	awt::Rectangle SAL_CALL OAccessibleControlContext::implGetBounds(  ) throw (RuntimeException)
+	awt::Rectangle SAL_CALL OAccessibleControlContext::implGetBounds(  )
 	{
 		::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 			// want to do some VCL stuff here ...
@@ -305,27 +305,27 @@ namespace toolkit
 	}
 
 	//--------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL OAccessibleControlContext::getAccessibleAtPoint( const awt::Point& /* _rPoint */ ) throw (RuntimeException)
+	Reference< XAccessible > SAL_CALL OAccessibleControlContext::getAccessibleAtPoint( const awt::Point& /* _rPoint */ )
 	{
 		// no children at all
 		return NULL;
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL OAccessibleControlContext::grabFocus(  ) throw (RuntimeException)
+	void SAL_CALL OAccessibleControlContext::grabFocus(  )
 	{
 		OSL_ENSURE( sal_False, "OAccessibleControlContext::grabFocus: !isFocusTraversable, but grabFocus!" );
 	}
 
 	//--------------------------------------------------------------------
-	Any SAL_CALL OAccessibleControlContext::getAccessibleKeyBinding(  ) throw (RuntimeException)
+	Any SAL_CALL OAccessibleControlContext::getAccessibleKeyBinding(  )
 	{
 		// we do not have any key bindings to activate a UNO control in design mode
 		return Any();
 	}
 
 	//--------------------------------------------------------------------
-	sal_Int32 SAL_CALL OAccessibleControlContext::getForeground(  ) throw (::com::sun::star::uno::RuntimeException)
+	sal_Int32 SAL_CALL OAccessibleControlContext::getForeground(  )
 	{
 		::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 			// want to do some VCL stuff here ...
@@ -351,7 +351,7 @@ namespace toolkit
 	}
 
 	//--------------------------------------------------------------------
-	sal_Int32 SAL_CALL OAccessibleControlContext::getBackground(  ) throw (::com::sun::star::uno::RuntimeException)
+	sal_Int32 SAL_CALL OAccessibleControlContext::getBackground(  )
 	{
 		::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 			// want to do some VCL stuff here ...

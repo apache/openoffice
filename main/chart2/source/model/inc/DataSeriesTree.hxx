@@ -54,19 +54,13 @@ protected:
 
     // ____ XDataSeriesTreeParent ____
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeriesTreeNode > >
-        SAL_CALL getChildren()
-        throw (::com::sun::star::uno::RuntimeException);
+        SAL_CALL getChildren();
     virtual void SAL_CALL setChildren(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeriesTreeNode > >& aNewChildren )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeriesTreeNode > >& aNewChildren );
     virtual void SAL_CALL addChild(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeriesTreeNode >& aNode )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeriesTreeNode >& aNode );
     virtual void SAL_CALL removeChild(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeriesTreeNode >& aNode )
-        throw (::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeriesTreeNode >& aNode );
 
     // ____ XDataSeriesTreeNode ____
 

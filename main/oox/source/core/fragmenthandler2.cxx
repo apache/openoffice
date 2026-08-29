@@ -47,12 +47,12 @@ FragmentHandler2::~FragmentHandler2()
 
 // com.sun.star.xml.sax.XFastDocumentHandler interface --------------------
 
-void SAL_CALL FragmentHandler2::startDocument() throw( SAXException, RuntimeException )
+void SAL_CALL FragmentHandler2::startDocument()
 {
     initializeImport();
 }
 
-void SAL_CALL FragmentHandler2::endDocument() throw( SAXException, RuntimeException )
+void SAL_CALL FragmentHandler2::endDocument()
 {
     finalizeImport();
 }
@@ -60,23 +60,23 @@ void SAL_CALL FragmentHandler2::endDocument() throw( SAXException, RuntimeExcept
 // com.sun.star.xml.sax.XFastContextHandler interface -------------------------
 
 Reference< XFastContextHandler > SAL_CALL FragmentHandler2::createFastChildContext(
-        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs ) throw( SAXException, RuntimeException )
+        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
 {
     return implCreateChildContext( nElement, rxAttribs );
 }
 
 void SAL_CALL FragmentHandler2::startFastElement(
-        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs ) throw( SAXException, RuntimeException )
+        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
 {
     implStartElement( nElement, rxAttribs );
 }
 
-void SAL_CALL FragmentHandler2::characters( const OUString& rChars ) throw( SAXException, RuntimeException )
+void SAL_CALL FragmentHandler2::characters( const OUString& rChars )
 {
     implCharacters( rChars );
 }
 
-void SAL_CALL FragmentHandler2::endFastElement( sal_Int32 nElement ) throw( SAXException, RuntimeException )
+void SAL_CALL FragmentHandler2::endFastElement( sal_Int32 nElement )
 {
     implEndElement( nElement );
 }

@@ -43,7 +43,7 @@ namespace connectivity
 		using ::com::sun::star::uno::Exception;
 		using ::com::sun::star::uno::Reference;
 		using ::com::sun::star::uno::Sequence;
-		Reference< ::com::sun::star::uno::XInterface > SAL_CALL MysqlCDriver_CreateInstance(const Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory) throw(Exception);
+		Reference< ::com::sun::star::uno::XInterface > SAL_CALL MysqlCDriver_CreateInstance(const Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory);
 
 		typedef ::cppu::WeakComponentImplHelper2<	::com::sun::star::sdbc::XDriver,
 													::com::sun::star::lang::XServiceInfo > ODriver_BASE;
@@ -68,24 +68,22 @@ namespace connectivity
 			// OComponentHelper
 			void SAL_CALL disposing(void);
 			// XInterface
-			static OUString getImplementationName_Static()					throw(RuntimeException);
-			static Sequence< OUString > getSupportedServiceNames_Static()	throw(RuntimeException);
+			static OUString getImplementationName_Static();
+			static Sequence< OUString > getSupportedServiceNames_Static();
 
 			// XServiceInfo
-			OUString SAL_CALL getImplementationName()						throw(RuntimeException);
-			sal_Bool SAL_CALL supportsService(const OUString& ServiceName)	throw(RuntimeException);
-			Sequence< OUString > SAL_CALL getSupportedServiceNames()		throw(RuntimeException);
+			OUString SAL_CALL getImplementationName();
+			sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+			Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 			// XDriver
-			Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connect(const OUString& url, const Sequence< ::com::sun::star::beans::PropertyValue >& info)
-																			throw(SQLException, RuntimeException);
+			Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connect(const OUString& url, const Sequence< ::com::sun::star::beans::PropertyValue >& info);
 
-			sal_Bool SAL_CALL acceptsURL(const OUString& url) throw(SQLException, RuntimeException);
-			Sequence< ::com::sun::star::sdbc::DriverPropertyInfo > SAL_CALL getPropertyInfo(const OUString& url, const Sequence< ::com::sun::star::beans::PropertyValue >& info)
-																			throw(SQLException, RuntimeException);
+			sal_Bool SAL_CALL acceptsURL(const OUString& url);
+			Sequence< ::com::sun::star::sdbc::DriverPropertyInfo > SAL_CALL getPropertyInfo(const OUString& url, const Sequence< ::com::sun::star::beans::PropertyValue >& info);
 
-			sal_Int32 SAL_CALL getMajorVersion()							throw(RuntimeException);
-			sal_Int32 SAL_CALL getMinorVersion()							throw(RuntimeException);
+			sal_Int32 SAL_CALL getMajorVersion();
+			sal_Int32 SAL_CALL getMinorVersion();
 
             inline Reference< ::com::sun::star::lang::XMultiServiceFactory > getFactory() const { return m_xFactory; }
 

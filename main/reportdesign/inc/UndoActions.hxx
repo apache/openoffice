@@ -210,8 +210,8 @@ namespace rptui
 		virtual void Redo();
 
 	protected:
-		virtual void    implReInsert( ) SAL_THROW( ( ::com::sun::star::uno::Exception ) );
-		virtual void    implReRemove( ) SAL_THROW( ( ::com::sun::star::uno::Exception ) );
+		virtual void    implReInsert( );
+		virtual void    implReRemove( );
 	};
 
     //==================================================================
@@ -232,8 +232,8 @@ namespace rptui
                             ,sal_uInt16 _nCommentId);
 
 	protected:
-		virtual void    implReInsert( ) SAL_THROW( ( ::com::sun::star::uno::Exception ) );
-		virtual void    implReRemove( ) SAL_THROW( ( ::com::sun::star::uno::Exception ) );
+		virtual void    implReInsert( );
+		virtual void    implReRemove( );
 	};
 
     //==================================================================
@@ -254,8 +254,8 @@ namespace rptui
                             ,sal_uInt16 _nCommentId);
 
 	protected:
-		virtual void    implReInsert( ) SAL_THROW( ( ::com::sun::star::uno::Exception ) );
-		virtual void    implReRemove( ) SAL_THROW( ( ::com::sun::star::uno::Exception ) );
+		virtual void    implReInsert( );
+		virtual void    implReRemove( );
 	};
 
     ///==================================================================

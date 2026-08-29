@@ -175,7 +175,6 @@ ScatterChartType::~ScatterChartType()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL ScatterChartType::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new ScatterChartType( *this ));
 }
@@ -184,8 +183,6 @@ uno::Reference< util::XCloneable > SAL_CALL ScatterChartType::createClone()
 // ____ XChartType ____
 Reference< chart2::XCoordinateSystem > SAL_CALL
     ScatterChartType::createCoordinateSystem( ::sal_Int32 DimensionCount )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     Reference< chart2::XCoordinateSystem > xResult(
         new CartesianCoordinateSystem(
@@ -216,13 +213,11 @@ Reference< chart2::XCoordinateSystem > SAL_CALL
 }
 
 ::rtl::OUString SAL_CALL ScatterChartType::getChartType()
-    throw (uno::RuntimeException)
 {
     return CHART2_SERVICE_NAME_CHARTTYPE_SCATTER;
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL ScatterChartType::getSupportedMandatoryRoles()
-    throw (uno::RuntimeException)
 {
     static uno::Sequence< ::rtl::OUString > aMandRolesSeq;
 
@@ -238,7 +233,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL ScatterChartType::getSupportedMandator
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL ScatterChartType::getSupportedOptionalRoles()
-    throw (uno::RuntimeException)
 {
     static uno::Sequence< ::rtl::OUString > aOptRolesSeq;
 
@@ -255,7 +249,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL ScatterChartType::getSupportedOptional
 
 // ____ OPropertySet ____
 uno::Any ScatterChartType::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticScatterChartTypeDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -272,7 +265,6 @@ uno::Any ScatterChartType::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL ScatterChartType::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticScatterChartTypeInfo::get();
 }

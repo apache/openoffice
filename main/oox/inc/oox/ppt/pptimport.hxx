@@ -41,8 +41,7 @@ class PowerPointImport : public oox::core::XmlFilterBase
 {
 public:
 
-	PowerPointImport( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext )
-        throw( ::com::sun::star::uno::RuntimeException );
+	PowerPointImport( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext );
 	virtual ~PowerPointImport();
 
     // from FilterBase

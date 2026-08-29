@@ -72,7 +72,6 @@ Sequence<OUString> PresenterPaneBorderManager::getSupportedServiceNames_static (
 
 
 Reference<XInterface> PresenterPaneBorderManager::Create (const Reference<uno::XComponentContext>& rxContext)
-    SAL_THROW((css::uno::Exception))
 {
     return Reference<XInterface>(static_cast<XWeak*>(
         new PresenterPaneBorderManager(rxContext, NULL)));
@@ -245,7 +244,6 @@ PresenterPaneBorderManager::BorderElement
 //----- XInitialization -------------------------------------------------------
 
 void SAL_CALL PresenterPaneBorderManager::initialize (const Sequence<Any>& rArguments)
-    throw (Exception, RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -288,7 +286,6 @@ void SAL_CALL PresenterPaneBorderManager::initialize (const Sequence<Any>& rArgu
 //----- XMouseListener --------------------------------------------------------
 
 void SAL_CALL PresenterPaneBorderManager::mousePressed (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
 	::osl::MutexGuard aGuard (::osl::Mutex::getGlobalMutex());
@@ -319,7 +316,6 @@ void SAL_CALL PresenterPaneBorderManager::mousePressed (const css::awt::MouseEve
 
 
 void SAL_CALL PresenterPaneBorderManager::mouseReleased (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -335,7 +331,6 @@ void SAL_CALL PresenterPaneBorderManager::mouseReleased (const css::awt::MouseEv
 
 
 void SAL_CALL PresenterPaneBorderManager::mouseEntered (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -344,7 +339,6 @@ void SAL_CALL PresenterPaneBorderManager::mouseEntered (const css::awt::MouseEve
 
 
 void SAL_CALL PresenterPaneBorderManager::mouseExited (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -362,7 +356,6 @@ void SAL_CALL PresenterPaneBorderManager::mouseExited (const css::awt::MouseEven
 //----- XMouseMotionListener --------------------------------------------------
 
 void SAL_CALL PresenterPaneBorderManager::mouseMoved (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
 	::osl::MutexGuard aGuard (::osl::Mutex::getGlobalMutex());
@@ -426,7 +419,6 @@ void SAL_CALL PresenterPaneBorderManager::mouseMoved (const css::awt::MouseEvent
 
 
 void SAL_CALL PresenterPaneBorderManager::mouseDragged (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
 	::osl::MutexGuard aGuard (::osl::Mutex::getGlobalMutex());
@@ -523,7 +515,6 @@ void SAL_CALL PresenterPaneBorderManager::mouseDragged (const css::awt::MouseEve
 //----- lang::XEventListener --------------------------------------------------
 
 void SAL_CALL PresenterPaneBorderManager::disposing (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     WindowList::iterator iDescriptor;
     for (iDescriptor=maWindowList.begin(); iDescriptor!=maWindowList.end(); ++iDescriptor)
@@ -559,7 +550,6 @@ void PresenterPaneBorderManager::ReleaseMouse (const Reference<awt::XWindow>& rx
 
 
 void PresenterPaneBorderManager::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

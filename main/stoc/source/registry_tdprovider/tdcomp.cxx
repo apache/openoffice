@@ -42,13 +42,11 @@ CompoundTypeDescriptionImpl::~CompoundTypeDescriptionImpl()
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass CompoundTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _eTypeClass;
 }
 //__________________________________________________________________________________________________
 OUString CompoundTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aName;
 }
@@ -56,7 +54,6 @@ OUString CompoundTypeDescriptionImpl::getName()
 // XCompoundTypeDescription
 //__________________________________________________________________________________________________
 Reference< XTypeDescription > CompoundTypeDescriptionImpl::getBaseType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (!_xBaseTD.is() && _aBaseType.getLength())
 	{
@@ -87,10 +84,10 @@ class TypeParameter: public WeakImplHelper1< XTypeDescription > {
 public:
     explicit TypeParameter(OUString const & name): m_name(name) {}
 
-    virtual TypeClass SAL_CALL getTypeClass() throw (RuntimeException)
+    virtual TypeClass SAL_CALL getTypeClass()
     { return TypeClass_UNKNOWN; }
 
-    virtual OUString SAL_CALL getName() throw (RuntimeException)
+    virtual OUString SAL_CALL getName()
     { return m_name; }
 
 private:
@@ -100,7 +97,6 @@ private:
 }
 
 Sequence< Reference< XTypeDescription > > CompoundTypeDescriptionImpl::getMemberTypes()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (! _pMembers)
 	{
@@ -147,7 +143,6 @@ Sequence< Reference< XTypeDescription > > CompoundTypeDescriptionImpl::getMember
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > CompoundTypeDescriptionImpl::getMemberNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (! _pMemberNames)
 	{

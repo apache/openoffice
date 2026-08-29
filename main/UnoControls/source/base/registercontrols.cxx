@@ -82,7 +82,7 @@ using namespace ::com::sun::star::registry						;
 //******************************************************************************************************************************
 #define	CREATEINSTANCE(CLASS)																												\
 																																			\
-	static Reference< XInterface > SAL_CALL CLASS##_createInstance ( const Reference< XMultiServiceFactory >& rServiceManager ) throw ( Exception )	\
+	static Reference< XInterface > SAL_CALL CLASS##_createInstance ( const Reference< XMultiServiceFactory >& rServiceManager )	\
 	{																																		\
 		AS_DBG_OUT ( "\tCREATEINSTANCE():\tOK\n" )																							\
 		return Reference< XInterface >( *(OWeakObject*)(new CLASS( rServiceManager )) );													\

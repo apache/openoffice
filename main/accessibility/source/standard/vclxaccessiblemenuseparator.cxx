@@ -53,14 +53,14 @@ VCLXAccessibleMenuSeparator::~VCLXAccessibleMenuSeparator()
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleMenuSeparator::getImplementationName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleMenuSeparator::getImplementationName()
 {
 	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleMenuSeparator" );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > VCLXAccessibleMenuSeparator::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleMenuSeparator::getSupportedServiceNames()
 {
 	Sequence< ::rtl::OUString > aNames(1);
 	aNames[0] = ::rtl::OUString::createFromAscii( "com.sun.star.awt.AccessibleMenuSeparator" );
@@ -71,7 +71,7 @@ Sequence< ::rtl::OUString > VCLXAccessibleMenuSeparator::getSupportedServiceName
 // XAccessibleContext
 // -----------------------------------------------------------------------------
 
-sal_Int16 VCLXAccessibleMenuSeparator::getAccessibleRole(  ) throw (RuntimeException)
+sal_Int16 VCLXAccessibleMenuSeparator::getAccessibleRole(  )
 {
 	OExternalLockGuard aGuard( this );
 

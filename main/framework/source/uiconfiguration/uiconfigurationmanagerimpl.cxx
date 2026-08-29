@@ -745,7 +745,7 @@ UIConfigurationManagerImpl::~UIConfigurationManagerImpl()
 }
 
 // XComponent
-void UIConfigurationManagerImpl::dispose() throw (::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::dispose()
 {
     css::lang::EventObject aEvent( m_xOwner );
     m_aListenerContainer.disposeAndClear( aEvent );
@@ -773,7 +773,7 @@ void UIConfigurationManagerImpl::dispose() throw (::com::sun::star::uno::Runtime
     }
 }
 
-void UIConfigurationManagerImpl::addEventListener( const Reference< XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::addEventListener( const Reference< XEventListener >& xListener )
 {
     {
         ResetableGuard aGuard( m_aLock );
@@ -786,14 +786,14 @@ void UIConfigurationManagerImpl::addEventListener( const Reference< XEventListen
     m_aListenerContainer.addInterface( ::getCppuType( ( const Reference< XEventListener >* ) NULL ), xListener );
 }
 
-void UIConfigurationManagerImpl::removeEventListener( const Reference< XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::removeEventListener( const Reference< XEventListener >& xListener )
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     m_aListenerContainer.removeInterface( ::getCppuType( ( const Reference< XEventListener >* ) NULL ), xListener );
 }
 
 // XInitialization
-void UIConfigurationManagerImpl::initialize( const Sequence< Any >& aArguments ) throw ( Exception, RuntimeException )
+void UIConfigurationManagerImpl::initialize( const Sequence< Any >& aArguments )
 {
     ResetableGuard aLock( m_aLock );
 
@@ -849,7 +849,7 @@ void UIConfigurationManagerImpl::initialize( const Sequence< Any >& aArguments )
 }
 
 // XUIConfiguration
-void UIConfigurationManagerImpl::addConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::addConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
 {
     {
         ResetableGuard aGuard( m_aLock );
@@ -862,7 +862,7 @@ void UIConfigurationManagerImpl::addConfigurationListener( const Reference< ::co
     m_aListenerContainer.addInterface( ::getCppuType( ( const Reference< XUIConfigurationListener >* ) NULL ), xListener );
 }
 
-void UIConfigurationManagerImpl::removeConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::removeConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     m_aListenerContainer.removeInterface( ::getCppuType( ( const Reference< XUIConfigurationListener >* ) NULL ), xListener );
@@ -870,7 +870,7 @@ void UIConfigurationManagerImpl::removeConfigurationListener( const Reference< :
 
 
 // XUIConfigurationManager
-void UIConfigurationManagerImpl::reset() throw (::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::reset()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -957,7 +957,6 @@ void UIConfigurationManagerImpl::reset() throw (::com::sun::star::uno::RuntimeEx
 }
 
 Sequence< Sequence< PropertyValue > > UIConfigurationManagerImpl::getUIElementsInfo( sal_Int16 ElementType )
-throw ( IllegalArgumentException, RuntimeException )
 {
     if (( ElementType < 0 ) || ( ElementType >= ::com::sun::star::ui::UIElementType::COUNT ))
         throw IllegalArgumentException();
@@ -996,7 +995,7 @@ throw ( IllegalArgumentException, RuntimeException )
     return aElementInfoSeq;
 }
 
-Reference< XIndexContainer > UIConfigurationManagerImpl::createSettings() throw (::com::sun::star::uno::RuntimeException)
+Reference< XIndexContainer > UIConfigurationManagerImpl::createSettings()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1008,7 +1007,6 @@ Reference< XIndexContainer > UIConfigurationManagerImpl::createSettings() throw 
 }
 
 sal_Bool UIConfigurationManagerImpl::hasSettings( const ::rtl::OUString& ResourceURL )
-throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1031,7 +1029,6 @@ throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::
 }
 
 Reference< XIndexAccess > UIConfigurationManagerImpl::getSettings( const ::rtl::OUString& ResourceURL, sal_Bool bWriteable )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1060,7 +1057,6 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 void UIConfigurationManagerImpl::replaceSettings( const ::rtl::OUString& ResourceURL, const Reference< ::com::sun::star::container::XIndexAccess >& aNewData )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1168,7 +1164,6 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 void UIConfigurationManagerImpl::removeSettings( const ::rtl::OUString& ResourceURL )
-throw ( NoSuchElementException, IllegalArgumentException, IllegalAccessException, RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1245,7 +1240,6 @@ throw ( NoSuchElementException, IllegalArgumentException, IllegalAccessException
 }
 
 void UIConfigurationManagerImpl::insertSettings( const ::rtl::OUString& NewResourceURL, const Reference< XIndexAccess >& aNewData )
-throw ( ElementExistException, IllegalArgumentException, IllegalAccessException, RuntimeException )
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( NewResourceURL );
 
@@ -1321,7 +1315,7 @@ throw ( ElementExistException, IllegalArgumentException, IllegalAccessException,
     }
 }
 
-Reference< XInterface > UIConfigurationManagerImpl::getImageManager() throw (::com::sun::star::uno::RuntimeException)
+Reference< XInterface > UIConfigurationManagerImpl::getImageManager()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1361,7 +1355,7 @@ Reference< XInterface > UIConfigurationManagerImpl::getImageManager() throw (::c
 //    return Reference< XInterface >();
 }
 
-Reference< XInterface > UIConfigurationManagerImpl::getShortCutManager() throw (::com::sun::star::uno::RuntimeException)
+Reference< XInterface > UIConfigurationManagerImpl::getShortCutManager()
 {
     ResetableGuard aGuard( m_aLock );
     if ( !m_bUseDefault && m_xAccConfig.is())
@@ -1401,12 +1395,12 @@ Reference< XInterface > UIConfigurationManagerImpl::getShortCutManager() throw (
     return xManager;
 }
 
-Reference< XInterface > UIConfigurationManagerImpl::getEventsManager() throw (::com::sun::star::uno::RuntimeException)
+Reference< XInterface > UIConfigurationManagerImpl::getEventsManager()
 {
     return Reference< XInterface >();
 }
 // XUIConfigurationStorage
-void UIConfigurationManagerImpl::setStorage( const Reference< XStorage >& Storage ) throw (::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::setStorage( const Reference< XStorage >& Storage )
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1485,7 +1479,7 @@ void UIConfigurationManagerImpl::setStorage( const Reference< XStorage >& Storag
     impl_Initialize();
 }
 // -----------------------------------------------------------------------------
-sal_Bool UIConfigurationManagerImpl::hasStorage() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool UIConfigurationManagerImpl::hasStorage()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1497,7 +1491,6 @@ sal_Bool UIConfigurationManagerImpl::hasStorage() throw (::com::sun::star::uno::
 
 // XUIConfigurationManagerImpl
 sal_Bool UIConfigurationManagerImpl::isDefaultSettings( const ::rtl::OUString& ResourceURL )
-throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1520,7 +1513,6 @@ throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::
 }
 
 Reference< XIndexAccess > UIConfigurationManagerImpl::getDefaultSettings( const ::rtl::OUString& ResourceURL )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1553,7 +1545,7 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 // XUIConfigurationPersistence
-void UIConfigurationManagerImpl::reload() throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::reload()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1592,7 +1584,7 @@ void UIConfigurationManagerImpl::reload() throw (::com::sun::star::uno::Exceptio
     }
 }
 
-void UIConfigurationManagerImpl::store() throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::store()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1625,7 +1617,7 @@ void UIConfigurationManagerImpl::store() throw (::com::sun::star::uno::Exception
     }
 }
 
-void UIConfigurationManagerImpl::storeToStorage( const Reference< XStorage >& Storage ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void UIConfigurationManagerImpl::storeToStorage( const Reference< XStorage >& Storage )
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1658,14 +1650,14 @@ void UIConfigurationManagerImpl::storeToStorage( const Reference< XStorage >& St
     }
 }
 
-sal_Bool UIConfigurationManagerImpl::isModified() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool UIConfigurationManagerImpl::isModified()
 {
     ResetableGuard aGuard( m_aLock );
 
     return m_bModified;
 }
 
-sal_Bool UIConfigurationManagerImpl::isReadOnly() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool UIConfigurationManagerImpl::isReadOnly()
 {
     ResetableGuard aGuard( m_aLock );
 

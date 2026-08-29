@@ -217,12 +217,10 @@ OReadToolBoxDocumentHandler::~OReadToolBoxDocumentHandler()
 
 // XDocumentHandler
 void SAL_CALL OReadToolBoxDocumentHandler::startDocument(void)
-throw (	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadToolBoxDocumentHandler::endDocument(void)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -237,7 +235,6 @@ throw(	SAXException, RuntimeException )
 
 void SAL_CALL OReadToolBoxDocumentHandler::startElement(
 	const ::rtl::OUString& aName, const Reference< XAttributeList > &xAttribs )
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -554,7 +551,6 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadToolBoxDocumentHandler::endElement(const ::rtl::OUString& aName)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -635,24 +631,20 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadToolBoxDocumentHandler::characters(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadToolBoxDocumentHandler::ignorableWhitespace(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadToolBoxDocumentHandler::processingInstruction(
 	const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadToolBoxDocumentHandler::setDocumentLocator(
 	const Reference< XLocator > &xLocator)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -697,8 +689,7 @@ OWriteToolBoxDocumentHandler::~OWriteToolBoxDocumentHandler()
 {
 }
 
-void OWriteToolBoxDocumentHandler::WriteToolBoxDocument() throw
-( SAXException, RuntimeException )
+void OWriteToolBoxDocumentHandler::WriteToolBoxDocument()
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -792,7 +783,6 @@ void OWriteToolBoxDocumentHandler::WriteToolBoxItem(
 	sal_Int16	nStyle,
 	sal_Int16	nWidth,
 	sal_Bool	bVisible )
-throw ( SAXException, RuntimeException )
 {
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );
@@ -866,8 +856,7 @@ throw ( SAXException, RuntimeException )
 	m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_TOOLBARITEM )) );
 }
 
-void OWriteToolBoxDocumentHandler::WriteToolBoxSpace() throw
-( SAXException, RuntimeException )
+void OWriteToolBoxDocumentHandler::WriteToolBoxSpace()
 {
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 	m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_TOOLBARSPACE )), m_xEmptyList );
@@ -875,8 +864,7 @@ void OWriteToolBoxDocumentHandler::WriteToolBoxSpace() throw
 	m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_TOOLBARSPACE )) );
 }
 
-void OWriteToolBoxDocumentHandler::WriteToolBoxBreak() throw
-( SAXException, RuntimeException )
+void OWriteToolBoxDocumentHandler::WriteToolBoxBreak()
 {
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 	m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_TOOLBARBREAK )), m_xEmptyList );
@@ -884,8 +872,7 @@ void OWriteToolBoxDocumentHandler::WriteToolBoxBreak() throw
 	m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_TOOLBARBREAK )) );
 }
 
-void OWriteToolBoxDocumentHandler::WriteToolBoxSeparator() throw
-( SAXException, RuntimeException )
+void OWriteToolBoxDocumentHandler::WriteToolBoxSeparator()
 {
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 	m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_TOOLBARSEPARATOR )), m_xEmptyList );

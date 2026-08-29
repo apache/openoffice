@@ -111,7 +111,7 @@ namespace oox { namespace ppt {
 		}
 	}
 
-	Reference< XFastContextHandler > SAL_CALL CondContext::createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw ( SAXException, RuntimeException )
+	Reference< XFastContextHandler > SAL_CALL CondContext::createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 	{
 		Reference< XFastContextHandler > xRet;
 
@@ -182,7 +182,7 @@ namespace oox { namespace ppt {
 	{
 	}
 
-	Reference< XFastContextHandler > CondListContext::createFastChildContext( ::sal_Int32 aElement, const Reference< XFastAttributeList >& xAttribs ) throw ( SAXException, RuntimeException )
+	Reference< XFastContextHandler > CondListContext::createFastChildContext( ::sal_Int32 aElement, const Reference< XFastAttributeList >& xAttribs )
 	{
 		Reference< XFastContextHandler > xRet;
 

@@ -85,13 +85,13 @@ namespace sfx2
         );
 
         // XSingleServiceFactory
-        virtual Reference< XInterface > SAL_CALL createInstance(  ) throw (Exception, RuntimeException);
-        virtual Reference< XInterface > SAL_CALL createInstanceWithArguments( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException);
+        virtual Reference< XInterface > SAL_CALL createInstance(  );
+        virtual Reference< XInterface > SAL_CALL createInstanceWithArguments( const Sequence< Any >& aArguments );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     protected:
         virtual ~SfxModelFactory();
@@ -132,7 +132,7 @@ namespace sfx2
     }
 
     //--------------------------------------------------------------------
-    Reference< XInterface > SAL_CALL SfxModelFactory::createInstance(  ) throw (Exception, RuntimeException)
+    Reference< XInterface > SAL_CALL SfxModelFactory::createInstance(  )
     {
         return createInstanceWithArguments( Sequence< Any >() );
     }
@@ -163,7 +163,7 @@ namespace sfx2
     }
 
     //--------------------------------------------------------------------
-    Reference< XInterface > SAL_CALL SfxModelFactory::createInstanceWithArguments( const Sequence< Any >& _rArguments ) throw (Exception, RuntimeException)
+    Reference< XInterface > SAL_CALL SfxModelFactory::createInstanceWithArguments( const Sequence< Any >& _rArguments )
     {
         ::comphelper::NamedValueCollection aArgs( _rArguments );
         const sal_Bool bEmbeddedObject = aArgs.getOrDefault( "EmbeddedObject", sal_False );
@@ -201,13 +201,13 @@ namespace sfx2
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL SfxModelFactory::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL SfxModelFactory::getImplementationName(  )
     {
         return m_sImplementationName;
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL SfxModelFactory::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL SfxModelFactory::supportsService( const ::rtl::OUString& _rServiceName )
     {
         return ::std::find(
             m_aServiceNames.getConstArray(),
@@ -217,7 +217,7 @@ namespace sfx2
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL SfxModelFactory::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL SfxModelFactory::getSupportedServiceNames(  )
     {
         return m_aServiceNames;
     }

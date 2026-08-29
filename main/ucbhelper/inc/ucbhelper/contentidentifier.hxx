@@ -64,8 +64,7 @@ public:
 
 	// XInterface
     virtual com::sun::star::uno::Any SAL_CALL
-	queryInterface( const com::sun::star::uno::Type & rType )
-		throw( com::sun::star::uno::RuntimeException );
+	queryInterface( const com::sun::star::uno::Type & rType );
     virtual void SAL_CALL
 	acquire() throw();
     virtual void SAL_CALL
@@ -73,19 +72,15 @@ public:
 
 	// XTypeProvider
     virtual com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL
-	getImplementationId()
-		throw( com::sun::star::uno::RuntimeException );
+	getImplementationId();
     virtual com::sun::star::uno::Sequence< com::sun::star::uno::Type > SAL_CALL
-	getTypes()
-		throw( com::sun::star::uno::RuntimeException );
+	getTypes();
 
 	// XContentIdentifier
     virtual rtl::OUString SAL_CALL
-	getContentIdentifier()
-		throw( com::sun::star::uno::RuntimeException );
+	getContentIdentifier();
     virtual rtl::OUString SAL_CALL
-	getContentProviderScheme()
-		throw( com::sun::star::uno::RuntimeException );
+	getContentProviderScheme();
 
 private:
 	ContentIdentifier_Impl* m_pImpl;

@@ -100,10 +100,8 @@ public:
 
     // XPackageRegistry
     virtual Sequence< Reference<deployment::XPackageTypeInfo> > SAL_CALL
-    getSupportedPackageTypes() throw (RuntimeException);
-    virtual void SAL_CALL packageRemoved(OUString const & url, OUString const & mediaType)
-        throw (deployment::DeploymentException,
-               uno::RuntimeException);
+    getSupportedPackageTypes();
+    virtual void SAL_CALL packageRemoved(OUString const & url, OUString const & mediaType);
 
     using PackageRegistryBackend::disposing;
 };
@@ -150,15 +148,13 @@ bool BackendImpl::hasActiveEntry(OUString const & url)
 
 // XPackageRegistry
 Sequence< Reference<deployment::XPackageTypeInfo> >
-BackendImpl::getSupportedPackageTypes() throw (RuntimeException)
+BackendImpl::getSupportedPackageTypes()
 {
     return Sequence<Reference<deployment::XPackageTypeInfo> >(
         & m_xExecutableTypeInfo, 1);
 }
 
 void BackendImpl::packageRemoved(OUString const & url, OUString const & /*mediaType*/)
-        throw (deployment::DeploymentException,
-               uno::RuntimeException)
 {
     if (m_backendDb.get())
         m_backendDb->removeEntry(url);

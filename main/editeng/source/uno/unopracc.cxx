@@ -63,20 +63,19 @@ SvxAccessibleTextPropertySet::~SvxAccessibleTextPropertySet() throw()
 {
 }
 
-uno::Reference< text::XText > SAL_CALL SvxAccessibleTextPropertySet::getText() throw (uno::RuntimeException)
+uno::Reference< text::XText > SAL_CALL SvxAccessibleTextPropertySet::getText()
 {
   // TODO (empty?)
   return uno::Reference< text::XText > ();
 }
 
-uno::Any SAL_CALL SvxAccessibleTextPropertySet::queryAggregation( const uno::Type & ) throw(uno::RuntimeException)
+uno::Any SAL_CALL SvxAccessibleTextPropertySet::queryAggregation( const uno::Type & )
 {
   // TODO (empty?)
   return uno::Any();
 }
 
 uno::Any SAL_CALL SvxAccessibleTextPropertySet::queryInterface( const uno::Type & rType )
-	throw(uno::RuntimeException)
 {
 	return OWeakObject::queryInterface(rType);
 }
@@ -94,7 +93,7 @@ void SAL_CALL SvxAccessibleTextPropertySet::release()
 }
 
 // XTypeProvider
-uno::Sequence< uno::Type > SAL_CALL SvxAccessibleTextPropertySet::getTypes() throw ( uno::RuntimeException )
+uno::Sequence< uno::Type > SAL_CALL SvxAccessibleTextPropertySet::getTypes()
 {
 	static ::cppu::OTypeCollection* pTypeCollection = NULL ;
 
@@ -123,7 +122,6 @@ uno::Sequence< uno::Type > SAL_CALL SvxAccessibleTextPropertySet::getTypes() thr
 }
 
 uno::Sequence< sal_Int8 > SAL_CALL SvxAccessibleTextPropertySet::getImplementationId()
-	throw (uno::RuntimeException)
 {
 	static uno::Sequence< sal_Int8 > aId;
 	if( aId.getLength() == 0 )
@@ -135,12 +133,12 @@ uno::Sequence< sal_Int8 > SAL_CALL SvxAccessibleTextPropertySet::getImplementati
 }
 
 // XServiceInfo
-::rtl::OUString SAL_CALL SAL_CALL SvxAccessibleTextPropertySet::getImplementationName (void) throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL SAL_CALL SvxAccessibleTextPropertySet::getImplementationName (void)
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM ("SvxAccessibleTextPropertySet"));
 }
 
-sal_Bool SAL_CALL SvxAccessibleTextPropertySet::supportsService (const ::rtl::OUString& sServiceName) throw (uno::RuntimeException)
+sal_Bool SAL_CALL SvxAccessibleTextPropertySet::supportsService (const ::rtl::OUString& sServiceName)
 {
     //  Iterate over all supported service names and return true if on of them
     //  matches the given name.
@@ -152,14 +150,14 @@ sal_Bool SAL_CALL SvxAccessibleTextPropertySet::supportsService (const ::rtl::OU
     return sal_False;
 }
 
-uno::Sequence< ::rtl::OUString> SAL_CALL SvxAccessibleTextPropertySet::getSupportedServiceNames (void) throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString> SAL_CALL SvxAccessibleTextPropertySet::getSupportedServiceNames (void)
 {
     // TODO
 	return SvxUnoTextRangeBase::getSupportedServiceNames();
 }
 
 // XServiceName
-::rtl::OUString SAL_CALL SvxAccessibleTextPropertySet::getServiceName() throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL SvxAccessibleTextPropertySet::getServiceName()
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.beans.PropertyValue"));
 }

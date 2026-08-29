@@ -88,100 +88,60 @@ public:
     CConfigFilter(const strings_v* include,  const strings_v* exclude);
 
     // XInitialization
-    virtual void SAL_CALL initialize(const NS_UNO::Sequence< NS_UNO::Any >& seqArgs)
-        throw (NS_UNO::Exception);
+    virtual void SAL_CALL initialize(const NS_UNO::Sequence< NS_UNO::Any >& seqArgs);
 
     // XLayer
     virtual void SAL_CALL readData(
-        const NS_UNO::Reference< NS_CSS::configuration::backend::XLayerHandler >& layerHandler)
-        throw (NS_CSS::lang::NullPointerException, NS_CSS::lang::WrappedTargetException,
-               NS_CSS::configuration::backend::MalformedDataException);
+        const NS_UNO::Reference< NS_CSS::configuration::backend::XLayerHandler >& layerHandler);
 
     // XLayerHandler
-    virtual void SAL_CALL startLayer()
-        throw(::com::sun::star::lang::WrappedTargetException);
+    virtual void SAL_CALL startLayer();
 
-    virtual void SAL_CALL endLayer()
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+    virtual void SAL_CALL endLayer();
 
     virtual void SAL_CALL overrideNode(
             const rtl::OUString& aName,
             sal_Int16 aAttributes,
-            sal_Bool bClear)
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            sal_Bool bClear);
 
     virtual void SAL_CALL addOrReplaceNode(
             const rtl::OUString& aName,
-            sal_Int16 aAttributes)
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            sal_Int16 aAttributes);
 
     virtual void SAL_CALL  addOrReplaceNodeFromTemplate(
             const rtl::OUString& aName,
             const NS_CSS::configuration::backend::TemplateIdentifier& aTemplate,
-            sal_Int16 aAttributes )
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            sal_Int16 aAttributes );
 
-    virtual void SAL_CALL  endNode()
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+    virtual void SAL_CALL  endNode();
 
     virtual void SAL_CALL  dropNode(
-            const rtl::OUString& aName )
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            const rtl::OUString& aName );
 
     virtual void SAL_CALL  overrideProperty(
             const rtl::OUString& aName,
             sal_Int16 aAttributes,
             const NS_UNO::Type& aType,
-            sal_Bool bClear )
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            sal_Bool bClear );
 
     virtual void SAL_CALL  setPropertyValue(
-            const NS_UNO::Any& aValue )
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            const NS_UNO::Any& aValue );
 
     virtual void SAL_CALL setPropertyValueForLocale(
             const NS_UNO::Any& aValue,
-            const rtl::OUString& aLocale )
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            const rtl::OUString& aLocale );
 
-    virtual void SAL_CALL  endProperty()
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+    virtual void SAL_CALL  endProperty();
 
     virtual void SAL_CALL  addProperty(
             const rtl::OUString& aName,
             sal_Int16 aAttributes,
-            const NS_UNO::Type& aType )
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            const NS_UNO::Type& aType );
 
     virtual void SAL_CALL  addPropertyWithValue(
             const rtl::OUString& aName,
             sal_Int16 aAttributes,
-            const NS_UNO::Any& aValue )
-        throw(
-            ::com::sun::star::configuration::backend::MalformedDataException,
-            ::com::sun::star::lang::WrappedTargetException );
+            const NS_UNO::Any& aValue );
 
 };
 

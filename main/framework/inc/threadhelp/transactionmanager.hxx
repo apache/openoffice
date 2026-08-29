@@ -88,15 +88,15 @@ class FWI_DLLPUBLIC TransactionManager : public  ITransactionManager
         virtual void               setWorkingMode               ( EWorkingMode eMode                           );
         virtual EWorkingMode       getWorkingMode               (                                              ) const;
         virtual sal_Bool           isCallRejected               ( ERejectReason& eReason                       ) const;
-        virtual void               registerTransaction          ( EExceptionMode eMode, ERejectReason& eReason ) throw( css::uno::RuntimeException, css::lang::DisposedException );
-        virtual void               unregisterTransaction        (                                              ) throw( css::uno::RuntimeException, css::lang::DisposedException );
+        virtual void               registerTransaction          ( EExceptionMode eMode, ERejectReason& eReason );
+        virtual void               unregisterTransaction        (                                              );
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	private methods
 	//-------------------------------------------------------------------------------------------------------------
 	private:
 
-        void impl_throwExceptions( EExceptionMode eMode, ERejectReason eReason ) const throw( css::uno::RuntimeException, css::lang::DisposedException );
+        void impl_throwExceptions( EExceptionMode eMode, ERejectReason eReason ) const;
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	private member

@@ -100,6 +100,7 @@ my ( $oldPATH, $SRC_ROOT, $SO_HOME, $JAVA_HOME, $JDK, $JAVAFLAGS, $OOO_SHELL,
      $PATH, $SOLAREXTRAINC, $SOLAREXTRALIB, $SOLARLIB,
      $SOLARINC, $LOCALINI, $FRAMEWORKSHOME, $COMEX, $PERL,
      $COMP_ENV, $ILIB, $JAVAHOME, $PSDK_HOME, $DIRECTXSDK_LIB, $USE_NEW_SDK, $FRAME_HOME,
+     $MSBUILD_PATH, $VCTOOLSET, $WINDOWS_SDK_VERSION,
      $USE_DIRECTX5, $ATL_LIB, $ATL_LIB_X64, $HAVE_ATLTHUNK, $ATL_INCLUDE, $MFC_LIB, $MFC_INCLUDE, $TMPDIR,
      $COMMON_BUILD_TOOLS, $WIN_GREP, $WIN_FIND, $WIN_LS,
      $WIN_GNUCOPY, $WIN_TOUCH, $MOZILLABUILD,
@@ -705,9 +706,17 @@ elsif ( $platform =~ m/cygwin/ )
   else # The MSVC section starts here
   {
       $COMPATH        = PathFormat('@COMPATH@');
-      $CXX_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/cl.exe');
-      $LINK_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/link.exe');
-      $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/lib.exe');
+      if ( "@MSVC_MODERN@" ne "" ) {
+          my $x64_bin = -d '@COMPATH@/bin/Hostx64' ? 'bin/Hostx64/x64'
+                                                  : 'bin/Hostx86/x64';
+          $CXX_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/cl.exe');
+          $LINK_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/link.exe');
+          $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/'.$x64_bin.'/lib.exe');
+      } else {
+          $CXX_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/cl.exe');
+          $LINK_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/link.exe');
+          $LIBMGR_X64_BINARY = PathFormat('@COMPATH@/bin/amd64/lib.exe');
+      }
       $COMEX          = '@COMEX@';
       if ( "@COMEX@" eq "10" ) { # .NET 2003 needs M1310
           $CVER        = "M1310";
@@ -716,6 +725,13 @@ elsif ( $platform =~ m/cygwin/ )
 	      $CVER        = "M1400";
 	  } elsif ( "@COMEX@" eq "12" ) {
 	      $CVER        = "M1500";
+	  } elsif ( "@COMEX@" eq "14" ) {
+	      # The UCRT generation: VS2015 (_MSC_VER 1900) and everything
+	      # since.  M1900 is the floor, not the exact toolset -- source
+	      # that needs to tell VS2019 from VS2022 does not exist here,
+	      # and source that needs to tell either from VC9 tests _MSC_VER
+	      # directly.
+	      $CVER        = "M1900";
 	  } else {                   # Unsupported
 	      die "Unsupported value for COMEX variable.\n";
 	  }
@@ -1091,13 +1107,36 @@ if ($platform =~ m/cygwin|os2/)
    if ( "@COM@" eq "MSC" )
    {  $ILIB       .=    $wps.$SOLARVER.$ds.$INPATH.$LIB.
                         $wps.$JAVA_HOME.$LIB;
-      if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+      if ( "@MSVC_MODERN@" ne "" ) {
+          my $sdk_lib = $PSDK_HOME.$LIB.$ds.'@WINDOWS_SDK_VERSION@';
+          my $arch;
+          if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+              $arch = "x86";
+          } elsif ( $CPUNAME eq "X86_64" ) {
+              $arch = "x64";
+          } else {
+              print "Unsupported Windows CPU: $CPUNAME\n";
+              exit 1;
+          }
+          # ucrt before um: both ship a few of the same names and the CRT's
+          # copy is the one that matches the headers on INCLUDE.
+          # The .NET Framework SDK keeps its x86 import libraries directly in
+          # lib/ and the x64 ones in lib/x64 -- there is no lib/x86, so this
+          # cannot simply reuse $arch.  Without the suffix an x64 climaker.exe
+          # links the x86 mscoree.lib and dies LNK2001 on _CorExeMain.
+          my $frame_lib = $FRAME_HOME.$LIB;
+          $frame_lib .= $ds."x64" if ( $arch eq "x64" );
+          $ILIB   .=    $wps.$sdk_lib.$ds."ucrt".$ds.$arch.
+                        $wps.$sdk_lib.$ds."um".$ds.$arch.
+                        $wps.$frame_lib.
+                        $wps.$COMPATH.$LIB.$ds.$arch;
+      } elsif ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
           $ILIB   .=    $wps.$PSDK_HOME.$LIB.
                         $wps.$FRAME_HOME.$LIB.
                         $wps.$COMPATH.$LIB;
       } elsif ( $CPUNAME eq "X86_64" ) {
           $ILIB   .=    $wps.$PSDK_HOME.$LIB.$ds."x64".
-                        $wps.$FRAME_HOME.$LIB.
+                        $wps.$FRAME_HOME.$LIB.$ds."x64".
                         $wps.$COMPATH.$LIB.$ds."amd64";
       } else {
           print "Unsupported Windows CPU: $CPUNAME\n";
@@ -1189,11 +1228,24 @@ elsif ($platform =~ m/cygwin/)
 	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."client" ) {
 		  $PATH .= $ps.CygFormat($JAVA_HOME).$ds."jre".$ds."bin".$ds."client";
 	  }
+	  # A 64 bit HotSpot JDK ships only jre/bin/server -- there is no client
+	  # VM -- so without this no JVM directory reaches PATH at all on x64.
+	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."server" ) {
+		  $PATH .= $ps.CygFormat($JAVA_HOME).$ds."jre".$ds."bin".$ds."server";
+	  }
    }
 
    # Add path to compiler
    if ( "@COM@" eq "MSC" ) {
-       if ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64") && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
+       if ( "@MSVC_MODERN@" ne "" ) {
+           # bin/ is split by host and then by target.  The host half has to
+           # match what configure picked, or the compiler on PATH is not the
+           # one whose version was measured.
+           my $host = -d '@COMPATH@/bin/Hostx64' ? "Hostx64" : "Hostx86";
+           my $target = ( ( $CPUNAME eq "X86_64" ) && ( "@BUILD_WIN64@" eq "TRUE" ) )
+                        ? "x64" : "x86";
+           $tmppath = CygFormat($COMPATH).$BIN.$ds.$host.$ds.$target;
+       } elsif ( ( $CPUNAME eq "INTEL" ) || ( ( $CPUNAME eq "X86_64") && ( "@BUILD_WIN64@" ne "TRUE" ) ) ) {
            $tmppath = CygFormat($COMPATH).$BIN;
        } elsif ( $CPUNAME eq "X86_64" ) {
            $tmppath = CygFormat($COMPATH).$BIN.$ds."amd64";
@@ -1204,10 +1256,15 @@ elsif ($platform =~ m/cygwin/)
        $tmppath =~ s/^\/\//\//;
        $PATH .= $ps.$tmppath;
 
-       $tmppath = CygFormat($MSPDB_PATH);
-	   # for .NET to find mspdb71.dll (needed by CL.EXE C/C++ Compiler)
-	   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
-		   $PATH .= $ps.$tmppath;
+	   # for .NET to find mspdb71.dll (needed by CL.EXE C/C++ Compiler).
+	   # A modern toolset keeps its mspdb next to cl.exe, so configure never
+	   # looks for one and MSPDB_PATH is empty -- adding CygFormat("") here
+	   # would put a bare "/" on PATH.
+	   if ( $MSPDB_PATH ne "" ) {
+	       $tmppath = CygFormat($MSPDB_PATH);
+	       if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
+		       $PATH .= $ps.$tmppath;
+	       }
 	   }
 	   if ( ( $COMEX ge "10" ) ) {
 		   # .NET needs midl.exe
@@ -1220,10 +1277,16 @@ elsif ($platform =~ m/cygwin/)
 		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/ ) {
 			   $PATH .= $ps.$tmppath;
 		   }
-		   # Native installer needs some files if the Windows Installer SDK
-               $tmppath = CygFormat($PSDK_HOME);
-		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath\/bin)(?:[:]|\Z)/i ) {
-			   $PATH .= $ps.$tmppath.$BIN;
+		   # rc.exe, mt.exe and the Windows Installer tools.  On the
+		   # Windows 10 SDK they all live in bin/<version>/<arch>; on the
+		   # old Platform SDK they are directly in bin/.
+		   if ( "@MSVC_MODERN@" ne "" ) {
+		       $tmppath = CygFormat(PathFormat('@WINDOWS_SDK_BINDIR@'));
+		   } else {
+		       $tmppath = CygFormat($PSDK_HOME).$BIN;
+		   }
+		   if ( $PATH !~ /(?:[:]|\A)(?:$tmppath)(?:[:]|\Z)/i ) {
+			   $PATH .= $ps.$tmppath;
 		   }
 	   }
    } else { # Mingw is different
@@ -1332,6 +1395,11 @@ elsif ($platform =~ m/os2/)
 	  }
 	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."client" ) {
 		  $PATH .= $ps.$JAVA_HOME.$ds."jre".$ds."bin".$ds."client";
+	  }
+	  # A 64 bit HotSpot JDK ships only jre/bin/server -- there is no client
+	  # VM -- so without this no JVM directory reaches PATH at all on x64.
+	  if ( -d $JAVA_HOME.$ds."jre".$ds."bin".$ds."server" ) {
+		  $PATH .= $ps.$JAVA_HOME.$ds."jre".$ds."bin".$ds."server";
 	  }
    }
 
@@ -1479,8 +1547,17 @@ elsif ($platform =~ m/cygwin/)
                         $I.'$JAVA_HOME'.$ds."include";
    # Mingw is different
    if ( "@COM@" eq "MSC" )
-   {  $SOLARINC       .= $I.'$PSDK_HOME'.$INCLUDE.
+   {  if ( "@MSVC_MODERN@" ne "" ) {
+          my $sdk_inc = '$PSDK_HOME'.$INCLUDE.$ds.'@WINDOWS_SDK_VERSION@';
+          $SOLARINC   .= $I.'$COMPATH'.$ds."include".
+                         $I.$sdk_inc.$ds."ucrt".
+                         $I.$sdk_inc.$ds."um".
+                         $I.$sdk_inc.$ds."shared".
+                         $I.$sdk_inc.$ds."winrt";
+      } else {
+          $SOLARINC   .= $I.'$PSDK_HOME'.$INCLUDE.
                          $I.'$COMPATH'.$ds."include";
+      }
       if ( '@ENABLE_DIRECTX@' ne "" ) {
           $SOLARINC   .= $I.PathFormat('@DIRECTXSDK_HOME@').$INCLUDE;
           if ( '@COMEX@' eq "10" ) {
@@ -1797,6 +1874,18 @@ ToFile( "Variable values.",  $empty,             "c" );
 if ( $platform =~ m/cygwin/ )
 {  ToFile( "CYGWIN_PATH",       $CYGWIN_PATH,       "e" );
    ToFile( "PSDK_HOME",         $PSDK_HOME,         "e" );
+   # Platform SDK v7.0, which a modern SDK does not replace.  It supplies
+   # mscoree.lib for the .NET parts and rebase.exe for postprocess, neither
+   # of which is in the Windows 10 SDK.  See win10-msvc/README.md.
+   ToFile( "FRAME_HOME",        $FRAME_HOME,        "e" );
+   # The CLI binding cannot be built by a UCRT-generation compiler, and the
+   # bundled Python needs an already-installed one to build with.  Both are
+   # decided by configure and read by several unrelated modules.
+   ToFile( "DISABLE_CLI",       "@DISABLE_CLI@",    "e" );
+   ToFile( "HOST_PYTHON",       "@HOST_PYTHON@",    "e" );
+   ToFile( "MSBUILD_PATH",      "@MSBUILD_PATH@",   "e" );
+   ToFile( "VCTOOLSET",         "@VCTOOLSET@",      "e" );
+   ToFile( "WINDOWS_SDK_VERSION", "@WINDOWS_SDK_VERSION@", "e" );
    ToFile( "WINDOWS_VISTA_PSDK","@WINDOWS_VISTA_PSDK@","e" );
    ToFile( "DIRECTXSDK_LIB",    $DIRECTXSDK_LIB,    "e" );
    ToFile( "USE_DIRECTX5",      $USE_DIRECTX5,      "e" );
@@ -1911,6 +2000,7 @@ ToFile( "GRAPHITE_LIBS",     "@GRAPHITE_LIBS@",     "e");
 ToFile( "GRAPHITE_CFLAGS",   "@GRAPHITE_CFLAGS@",   "e");
 ToFile( "VC_STANDARD",       "@VC_STANDARD@",      "e" );
 ToFile( "BUILD_X64",         "@BUILD_X64@",      "e" );
+ToFile( "BUILD_WIN64",       "@BUILD_WIN64@",    "e" );
 ToFile( "ENABLE_CATEGORY_B", "@ENABLE_CATEGORY_B@", "e");
 ToFile( "BUNDLED_EXTENSION_BLOBS", "@BUNDLED_EXTENSION_BLOBS@", "e");
 ToFile( "BUNDLED_PREREG_EXTENSIONS", "@BUNDLED_PREREG_EXTENSIONS@", "e");

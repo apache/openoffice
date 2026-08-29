@@ -53,7 +53,6 @@ ExponentialRegressionCurveCalculator::~ExponentialRegressionCurveCalculator()
 void SAL_CALL ExponentialRegressionCurveCalculator::recalculateRegression(
     const uno::Sequence< double >& aXValues,
     const uno::Sequence< double >& aYValues )
-    throw (uno::RuntimeException)
 {
     RegressionCalculationHelper::tDoubleVectorPair aValues(
         RegressionCalculationHelper::cleanup(
@@ -99,8 +98,6 @@ void SAL_CALL ExponentialRegressionCurveCalculator::recalculateRegression(
 }
 
 double SAL_CALL ExponentialRegressionCurveCalculator::getCurveValue( double x )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     double fResult;
     ::rtl::math::setNan( & fResult );
@@ -119,8 +116,6 @@ uno::Sequence< geometry::RealPoint2D > SAL_CALL ExponentialRegressionCurveCalcul
     const uno::Reference< chart2::XScaling >& xScalingX,
     const uno::Reference< chart2::XScaling >& xScalingY,
     ::sal_Bool bMaySkipPointsInCalculation )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     if( bMaySkipPointsInCalculation &&
         isLinearScaling( xScalingX ) &&

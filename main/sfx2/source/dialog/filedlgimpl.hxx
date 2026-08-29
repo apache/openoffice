@@ -163,17 +163,17 @@ namespace sfx2
 
 	public:
 		// XFilePickerListener methods
-		virtual void SAL_CALL				fileSelectionChanged( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL				directoryChanged( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual ::rtl::OUString SAL_CALL	helpRequested( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL				controlStateChanged( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL				dialogSizeChanged() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL				fileSelectionChanged( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent );
+		virtual void SAL_CALL				directoryChanged( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent );
+		virtual ::rtl::OUString SAL_CALL	helpRequested( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent );
+		virtual void SAL_CALL				controlStateChanged( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent );
+		virtual void SAL_CALL				dialogSizeChanged();
 
         // XDialogClosedListener methods
-        virtual void SAL_CALL               dialogClosed( const ::com::sun::star::ui::dialogs::DialogClosedEvent& _rEvent ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL               dialogClosed( const ::com::sun::star::ui::dialogs::DialogClosedEvent& _rEvent );
 
         // XEventListener methods
-		virtual void SAL_CALL		disposing( const ::com::sun::star::lang::EventObject& Source ) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL		disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		// handle XFilePickerListener events
 		void					handleFileSelectionChanged( const ::com::sun::star::ui::dialogs::FilePickerEvent& aEvent );

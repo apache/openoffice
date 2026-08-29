@@ -73,11 +73,10 @@ public:
                        const staruno::Sequence< ::rtl::OUString >&             _aNames  );
     virtual ~OEnumerationByName();
 
-	virtual sal_Bool SAL_CALL hasMoreElements(  ) throw(staruno::RuntimeException);
-    virtual staruno::Any SAL_CALL nextElement(  )
-		throw(starcontainer::NoSuchElementException, starlang::WrappedTargetException, staruno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasMoreElements(  );
+    virtual staruno::Any SAL_CALL nextElement(  );
 
-    virtual void SAL_CALL disposing(const starlang::EventObject& aEvent) throw(staruno::RuntimeException);
+    virtual void SAL_CALL disposing(const starlang::EventObject& aEvent);
 
 private:
     COMPHELPER_DLLPRIVATE void impl_startDisposeListening();
@@ -102,11 +101,10 @@ public:
     OEnumerationByIndex(const staruno::Reference< starcontainer::XIndexAccess >& _rxAccess);
     virtual ~OEnumerationByIndex();
 
-	virtual sal_Bool SAL_CALL hasMoreElements(  ) throw(staruno::RuntimeException);
-    virtual staruno::Any SAL_CALL nextElement(  )
-		throw(starcontainer::NoSuchElementException, starlang::WrappedTargetException, staruno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasMoreElements(  );
+    virtual staruno::Any SAL_CALL nextElement(  );
 
-    virtual void SAL_CALL disposing(const starlang::EventObject& aEvent) throw(staruno::RuntimeException);
+    virtual void SAL_CALL disposing(const starlang::EventObject& aEvent);
 
 private:
     COMPHELPER_DLLPRIVATE void impl_startDisposeListening();
@@ -130,9 +128,8 @@ public:
     OAnyEnumeration(const staruno::Sequence< staruno::Any >& lItems);
     virtual ~OAnyEnumeration();
 
-	virtual sal_Bool SAL_CALL hasMoreElements(  ) throw(staruno::RuntimeException);
-    virtual staruno::Any SAL_CALL nextElement(  )
-		throw(starcontainer::NoSuchElementException, starlang::WrappedTargetException, staruno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasMoreElements(  );
+    virtual staruno::Any SAL_CALL nextElement(  );
 
 };
 

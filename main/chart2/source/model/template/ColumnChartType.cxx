@@ -148,21 +148,18 @@ ColumnChartType::~ColumnChartType()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL ColumnChartType::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new ColumnChartType( *this ));
 }
 
 // ____ XChartType ____
 ::rtl::OUString SAL_CALL ColumnChartType::getChartType()
-    throw (uno::RuntimeException)
 {
     return CHART2_SERVICE_NAME_CHARTTYPE_COLUMN;
 }
 
 // ____ OPropertySet ____
 uno::Any ColumnChartType::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticColumnChartTypeDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -178,7 +175,6 @@ uno::Any ColumnChartType::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL ColumnChartType::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticColumnChartTypeInfo::get();
 }

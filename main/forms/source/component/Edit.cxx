@@ -84,7 +84,7 @@ Sequence<Type> OEditControl::_getTypes()
 }
 
 //------------------------------------------------------------------------------
-Any SAL_CALL OEditControl::queryAggregation(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL OEditControl::queryAggregation(const Type& _rType)
 {
 	Any aReturn = OBoundControl::queryAggregation(_rType);
 	if (!aReturn.hasValue())
@@ -131,13 +131,13 @@ OEditControl::~OEditControl()
 
 // XChangeBroadcaster
 //------------------------------------------------------------------------------
-void OEditControl::addChangeListener(const Reference<XChangeListener>& l) throw ( ::com::sun::star::uno::RuntimeException)
+void OEditControl::addChangeListener(const Reference<XChangeListener>& l)
 {
 	m_aChangeListeners.addInterface( l );
 }
 
 //------------------------------------------------------------------------------
-void OEditControl::removeChangeListener(const Reference<XChangeListener>& l) throw ( ::com::sun::star::uno::RuntimeException)
+void OEditControl::removeChangeListener(const Reference<XChangeListener>& l)
 {
 	m_aChangeListeners.removeInterface( l );
 }
@@ -166,14 +166,14 @@ StringSequence	OEditControl::getSupportedServiceNames() throw()
 
 // XEventListener
 //------------------------------------------------------------------------------
-void OEditControl::disposing(const EventObject& Source) throw( RuntimeException )
+void OEditControl::disposing(const EventObject& Source)
 {
 	OBoundControl::disposing(Source);
 }
 
 // XFocusListener
 //------------------------------------------------------------------------------
-void OEditControl::focusGained( const FocusEvent& /*e*/ ) throw ( ::com::sun::star::uno::RuntimeException)
+void OEditControl::focusGained( const FocusEvent& /*e*/ )
 {
 	Reference<XPropertySet>  xSet(getModel(), UNO_QUERY);
 	if (xSet.is())
@@ -181,7 +181,7 @@ void OEditControl::focusGained( const FocusEvent& /*e*/ ) throw ( ::com::sun::st
 }
 
 //------------------------------------------------------------------------------
-void OEditControl::focusLost( const FocusEvent& /*e*/ ) throw ( ::com::sun::star::uno::RuntimeException)
+void OEditControl::focusLost( const FocusEvent& /*e*/ )
 {
 	Reference<XPropertySet>  xSet(getModel(), UNO_QUERY);
 	if (xSet.is())
@@ -198,7 +198,7 @@ void OEditControl::focusLost( const FocusEvent& /*e*/ ) throw ( ::com::sun::star
 
 // XKeyListener
 //------------------------------------------------------------------------------
-void OEditControl::keyPressed(const ::com::sun::star::awt::KeyEvent& e) throw ( ::com::sun::star::uno::RuntimeException)
+void OEditControl::keyPressed(const ::com::sun::star::awt::KeyEvent& e)
 {
 	if( e.KeyCode != KEY_RETURN || e.Modifiers != 0 )
 		return;
@@ -255,7 +255,7 @@ void OEditControl::keyPressed(const ::com::sun::star::awt::KeyEvent& e) throw ( 
 }
 
 //------------------------------------------------------------------------------
-void OEditControl::keyReleased(const ::com::sun::star::awt::KeyEvent& /*e*/) throw ( ::com::sun::star::uno::RuntimeException)
+void OEditControl::keyReleased(const ::com::sun::star::awt::KeyEvent& /*e*/)
 {
 }
 
@@ -273,7 +273,7 @@ IMPL_LINK(OEditControl, OnKeyPressed, void*, /*EMPTYARG*/)
 }
 
 //------------------------------------------------------------------
-void SAL_CALL OEditControl::createPeer( const Reference< XToolkit>& _rxToolkit, const Reference< XWindowPeer>& _rxParent ) throw ( RuntimeException )
+void SAL_CALL OEditControl::createPeer( const Reference< XToolkit>& _rxToolkit, const Reference< XWindowPeer>& _rxParent )
 {
 	OBoundControl::createPeer(_rxToolkit, _rxParent);
 }
@@ -344,7 +344,7 @@ void OEditModel::disposing()
 
 // XPersistObject
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OEditModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OEditModel::getServiceName()
 {
 	return FRM_COMPONENT_EDIT;	// old (non-sun) name for compatibility !
 }
@@ -428,7 +428,7 @@ bool OEditModel::implActsAsRichText( ) const
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OEditModel::reset(  ) throw(RuntimeException)
+void SAL_CALL OEditModel::reset(  )
 {
     // no reset if we currently act as rich text control
     if ( implActsAsRichText() )
@@ -547,7 +547,7 @@ void OEditModel::readAggregate( const Reference< XObjectInputStream >& _rxInStre
 }
 
 //------------------------------------------------------------------------------
-void OEditModel::write(const Reference<XObjectOutputStream>& _rxOutStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void OEditModel::write(const Reference<XObjectOutputStream>& _rxOutStream)
 {
 	Any aCurrentText;
 	sal_Int16 nOldTextLen = 0;
@@ -578,7 +578,7 @@ void OEditModel::write(const Reference<XObjectOutputStream>& _rxOutStream) throw
 }
 
 //------------------------------------------------------------------------------
-void OEditModel::read(const Reference<XObjectInputStream>& _rxInStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void OEditModel::read(const Reference<XObjectInputStream>& _rxInStream)
 {
 	OEditBaseModel::read(_rxInStream);
 

@@ -1830,7 +1830,6 @@ SvxStyleToolBoxControl::~SvxStyleToolBoxControl()
 
 // -----------------------------------------------------------------------
 void SAL_CALL SvxStyleToolBoxControl::initialize( const Sequence< Any >& aArguments )
-throw ( Exception, RuntimeException)
 {
     SfxToolBoxControl::initialize( aArguments );
 
@@ -1854,7 +1853,6 @@ throw ( Exception, RuntimeException)
 
 // XComponent
 void SAL_CALL SvxStyleToolBoxControl::dispose()
-throw (::com::sun::star::uno::RuntimeException)
 {
     SfxToolBoxControl::dispose();
 
@@ -1880,7 +1878,7 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 // -----------------------------------------------------------------------
-void SAL_CALL SvxStyleToolBoxControl::update() throw (RuntimeException)
+void SAL_CALL SvxStyleToolBoxControl::update()
 {
     // Do nothing, we will start binding our listener when we are visible.
     // See link SvxStyleToolBoxControl::VisibilityNotification.

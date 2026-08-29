@@ -208,12 +208,10 @@ OReadStatusBarDocumentHandler::~OReadStatusBarDocumentHandler()
 
 // XDocumentHandler
 void SAL_CALL OReadStatusBarDocumentHandler::startDocument(void)
-throw (	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadStatusBarDocumentHandler::endDocument(void)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -228,7 +226,6 @@ throw(	SAXException, RuntimeException )
 
 void SAL_CALL OReadStatusBarDocumentHandler::startElement(
 	const ::rtl::OUString& aName, const Reference< XAttributeList > &xAttribs )
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -427,7 +424,6 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadStatusBarDocumentHandler::endElement(const ::rtl::OUString& aName)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -469,24 +465,20 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadStatusBarDocumentHandler::characters(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadStatusBarDocumentHandler::ignorableWhitespace(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadStatusBarDocumentHandler::processingInstruction(
 	const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadStatusBarDocumentHandler::setDocumentLocator(
 	const Reference< XLocator > &xLocator)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -531,8 +523,7 @@ OWriteStatusBarDocumentHandler::~OWriteStatusBarDocumentHandler()
 {
 }
 
-void OWriteStatusBarDocumentHandler::WriteStatusBarDocument() throw
-( SAXException, RuntimeException )
+void OWriteStatusBarDocumentHandler::WriteStatusBarDocument()
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -604,7 +595,6 @@ void OWriteStatusBarDocumentHandler::WriteStatusBarItem(
 	sal_Int16				nOffset,
 	sal_Int16				nStyle,
 	sal_Int16				nWidth )
-throw ( SAXException, RuntimeException )
 {
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );

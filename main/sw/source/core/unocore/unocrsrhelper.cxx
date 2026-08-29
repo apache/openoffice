@@ -804,7 +804,7 @@ void resetCrsrPropertyValue(const SfxItemPropertySimpleEntry& rEntry, SwPaM& rPa
 void InsertFile(SwUnoCrsr* pUnoCrsr,
     const String& rURL,
     const uno::Sequence< beans::PropertyValue >& rOptions
-    ) throw( lang::IllegalArgumentException, io::IOException, uno::RuntimeException )
+    )
 {
 	SfxMedium* pMed = 0;
 	SwDoc* pDoc = pUnoCrsr->GetDoc();
@@ -1024,7 +1024,6 @@ sal_Bool DocInsertStringSplitCR(
 void makeRedline( SwPaM& rPaM,
     const ::rtl::OUString& rRedlineType,
     const uno::Sequence< beans::PropertyValue >& rRedlineProperties )
-        throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     IDocumentRedlineAccess* pRedlineAccess = rPaM.GetDoc();
 

@@ -37,20 +37,20 @@ public:
         const css::uno::Reference< ov::XHelperInterface >& xParent,
         const css::uno::Reference< css::uno::XComponentContext >& xContext,
         const css::uno::Reference< css::frame::XModel >& xModel,
-        const css::uno::Reference< css::sheet::XViewPane > xViewPane ) throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::sheet::XViewPane > xViewPane );
 
     css::uno::Reference< css::sheet::XViewPane > getViewPane() { return m_xViewPane; }
 
     // XPane attributes
-    virtual sal_Int32 SAL_CALL getScrollColumn() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setScrollColumn( sal_Int32 _scrollcolumn ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getScrollRow() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setScrollRow( sal_Int32 _scrollrow ) throw (css::uno::RuntimeException);
- 	virtual css::uno::Reference< ov::excel::XRange > SAL_CALL getVisibleRange() throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getScrollColumn();
+    virtual void SAL_CALL setScrollColumn( sal_Int32 _scrollcolumn );
+    virtual sal_Int32 SAL_CALL getScrollRow();
+    virtual void SAL_CALL setScrollRow( sal_Int32 _scrollrow );
+ 	virtual css::uno::Reference< ov::excel::XRange > SAL_CALL getVisibleRange();
 
     // XPane methods
-    virtual void SAL_CALL SmallScroll( const css::uno::Any& Down, const css::uno::Any& Up, const css::uno::Any& ToRight, const css::uno::Any& ToLeft ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL LargeScroll( const css::uno::Any& Down, const css::uno::Any& Up, const css::uno::Any& ToRight, const css::uno::Any& ToLeft ) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL SmallScroll( const css::uno::Any& Down, const css::uno::Any& Up, const css::uno::Any& ToRight, const css::uno::Any& ToLeft );
+    virtual void SAL_CALL LargeScroll( const css::uno::Any& Down, const css::uno::Any& Up, const css::uno::Any& ToRight, const css::uno::Any& ToLeft );
 
 	// XHelperInterface
     VBAHELPER_DECL_XHELPERINTERFACE

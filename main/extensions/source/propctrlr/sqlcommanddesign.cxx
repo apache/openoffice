@@ -130,7 +130,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SQLCommandDesigner::propertyChange( const PropertyChangeEvent& Event ) throw (RuntimeException)
+    void SAL_CALL SQLCommandDesigner::propertyChange( const PropertyChangeEvent& Event )
     {
         OSL_ENSURE( m_xDesigner.is() && ( Event.Source == m_xDesigner ), "SQLCommandDesigner::propertyChange: where did this come from?" );
 
@@ -161,7 +161,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SQLCommandDesigner::disposing( const EventObject& Source ) throw (RuntimeException)
+    void SAL_CALL SQLCommandDesigner::disposing( const EventObject& Source )
     {
         if ( m_xDesigner.is() && ( Source.Source == m_xDesigner ) )
         {

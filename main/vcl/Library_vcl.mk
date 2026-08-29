@@ -520,8 +520,12 @@ $(eval $(call gb_Library_add_ldflags,vcl,\
 ))
 endif
 ifeq ($(CPUNAME),X86_64)
+# LibMain is WINAPI (__stdcall): x86 decorates it LibMain@12; x64 has no
+# stdcall @N decoration at all, so the entry symbol is the undecorated
+# LibMain -- not LibMain@16.  (vcl/util/makefile.mk, the dmake path, already
+# gets this right; this is the gbuild half.)
 $(eval $(call gb_Library_add_ldflags,vcl,\
-	/ENTRY:LibMain@16 \
+	/ENTRY:LibMain \
 ))
 endif
 endif

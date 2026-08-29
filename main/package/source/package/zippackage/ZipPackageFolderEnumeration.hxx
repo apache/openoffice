@@ -47,18 +47,13 @@ public:
 	virtual ~ZipPackageFolderEnumeration( void );
 
 	// XEnumeration
-    virtual sal_Bool SAL_CALL hasMoreElements(  )
-		throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL nextElement(  )
-		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasMoreElements(  );
+    virtual ::com::sun::star::uno::Any SAL_CALL nextElement(  );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 };
 #endif

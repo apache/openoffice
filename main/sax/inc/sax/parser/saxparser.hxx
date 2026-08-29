@@ -103,7 +103,7 @@ public:
 	const rtl::OUString& GetSystemId() const;
 
 	/** starts parsing of the source xml stream provided in the given sax InputSource */
-	virtual void parseStream( const ::com::sun::star::xml::sax::InputSource& rInputSource ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual void parseStream( const ::com::sun::star::xml::sax::InputSource& rInputSource );
 
 	/** is called once when parsing of the xml stream starts */
 	virtual void StartDocument();

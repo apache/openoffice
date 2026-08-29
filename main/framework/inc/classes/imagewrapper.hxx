@@ -51,12 +51,12 @@ class FWE_DLLPUBLIC ImageWrapper : public ThreadHelpBase							,	// Struct for r
 		static ::com::sun::star::uno::Sequence< sal_Int8 > GetUnoTunnelId();
 
 		// XBitmap
-		virtual ::com::sun::star::awt::Size SAL_CALL getSize() throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getDIB() throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getMaskDIB() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::awt::Size SAL_CALL getSize();
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getDIB();
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getMaskDIB();
 
 		// XUnoTunnel
-		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw (::com::sun::star::uno::RuntimeException);
+		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 
 	private:
 		Image	m_aImage;

@@ -242,7 +242,6 @@ void Access::clearListeners() throw() {
 }
 
 css::uno::Any Access::queryInterface(css::uno::Type const & aType)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Any res(OWeakObject::queryInterface(aType));
     if (res.hasValue()) {
@@ -843,7 +842,6 @@ Access::ModifiedChild::ModifiedChild(
 {}
 
 css::uno::Sequence< css::uno::Type > Access::getTypes()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -892,7 +890,6 @@ css::uno::Sequence< css::uno::Type > Access::getTypes()
 }
 
 css::uno::Sequence< sal_Int8 > Access::getImplementationId()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -900,7 +897,7 @@ css::uno::Sequence< sal_Int8 > Access::getImplementationId()
     return css::uno::Sequence< sal_Int8 >();
 }
 
-rtl::OUString Access::getImplementationName() throw (css::uno::RuntimeException)
+rtl::OUString Access::getImplementationName()
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -910,7 +907,6 @@ rtl::OUString Access::getImplementationName() throw (css::uno::RuntimeException)
 }
 
 sal_Bool Access::supportsService(rtl::OUString const & ServiceName)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -925,7 +921,6 @@ sal_Bool Access::supportsService(rtl::OUString const & ServiceName)
 }
 
 css::uno::Sequence< rtl::OUString > Access::getSupportedServiceNames()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -988,7 +983,7 @@ css::uno::Sequence< rtl::OUString > Access::getSupportedServiceNames()
     return services.getAsConstList();
 }
 
-void Access::dispose() throw (css::uno::RuntimeException) {
+void Access::dispose() {
     OSL_ASSERT(thisIs(IS_ANY));
     Broadcaster bc;
     {
@@ -1013,7 +1008,6 @@ void Access::dispose() throw (css::uno::RuntimeException) {
 
 void Access::addEventListener(
     css::uno::Reference< css::lang::XEventListener > const & xListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     {
@@ -1037,7 +1031,6 @@ void Access::addEventListener(
 
 void Access::removeEventListener(
     css::uno::Reference< css::lang::XEventListener > const & aListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1048,7 +1041,7 @@ void Access::removeEventListener(
     }
 }
 
-css::uno::Type Access::getElementType() throw (css::uno::RuntimeException) {
+css::uno::Type Access::getElementType() {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
     checkLocalizedPropertyAccess();
@@ -1072,7 +1065,7 @@ css::uno::Type Access::getElementType() throw (css::uno::RuntimeException) {
     }
 }
 
-sal_Bool Access::hasElements() throw (css::uno::RuntimeException) {
+sal_Bool Access::hasElements() {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
     checkLocalizedPropertyAccess();
@@ -1080,9 +1073,6 @@ sal_Bool Access::hasElements() throw (css::uno::RuntimeException) {
 }
 
 css::uno::Any Access::getByName(rtl::OUString const & aName)
-    throw (
-        css::container::NoSuchElementException,
-        css::lang::WrappedTargetException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1096,7 +1086,6 @@ css::uno::Any Access::getByName(rtl::OUString const & aName)
 }
 
 css::uno::Sequence< rtl::OUString > Access::getElementNames()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1113,7 +1102,6 @@ css::uno::Sequence< rtl::OUString > Access::getElementNames()
 }
 
 sal_Bool Access::hasByName(rtl::OUString const & aName)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1122,7 +1110,6 @@ sal_Bool Access::hasByName(rtl::OUString const & aName)
 }
 
 css::uno::Any Access::getByHierarchicalName(rtl::OUString const & aName)
-    throw (css::container::NoSuchElementException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1136,7 +1123,6 @@ css::uno::Any Access::getByHierarchicalName(rtl::OUString const & aName)
 }
 
 sal_Bool Access::hasByHierarchicalName(rtl::OUString const & aName)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1146,7 +1132,6 @@ sal_Bool Access::hasByHierarchicalName(rtl::OUString const & aName)
 
 void Access::addContainerListener(
     css::uno::Reference< css::container::XContainerListener > const & xListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     {
@@ -1170,7 +1155,6 @@ void Access::addContainerListener(
 
 void Access::removeContainerListener(
     css::uno::Reference< css::container::XContainerListener > const & xListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1182,7 +1166,6 @@ void Access::removeContainerListener(
 }
 
 rtl::OUString Access::getExactName(rtl::OUString const & aApproximateName)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1191,7 +1174,6 @@ rtl::OUString Access::getExactName(rtl::OUString const & aApproximateName)
 }
 
 css::uno::Sequence< css::beans::Property > Access::getProperties()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1207,7 +1189,6 @@ css::uno::Sequence< css::beans::Property > Access::getProperties()
 }
 
 css::beans::Property Access::getPropertyByName(rtl::OUString const & aName)
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1220,14 +1201,13 @@ css::beans::Property Access::getPropertyByName(rtl::OUString const & aName)
 }
 
 sal_Bool Access::hasPropertyByName(rtl::OUString const & Name)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
     return getChild(Name).is();
 }
 
-rtl::OUString Access::getHierarchicalName() throw (css::uno::RuntimeException) {
+rtl::OUString Access::getHierarchicalName() {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
     checkLocalizedPropertyAccess();
@@ -1248,9 +1228,6 @@ rtl::OUString Access::getHierarchicalName() throw (css::uno::RuntimeException) {
 
 rtl::OUString Access::composeHierarchicalName(
     rtl::OUString const & aRelativeName)
-    throw (
-        css::lang::IllegalArgumentException, css::lang::NoSupportException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1271,7 +1248,7 @@ rtl::OUString Access::composeHierarchicalName(
     return path.makeStringAndClear();
 }
 
-rtl::OUString Access::getName() throw (css::uno::RuntimeException) {
+rtl::OUString Access::getName() {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
     checkLocalizedPropertyAccess();
@@ -1279,7 +1256,6 @@ rtl::OUString Access::getName() throw (css::uno::RuntimeException) {
 }
 
 void Access::setName(rtl::OUString const & aName)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_ANY));
     Broadcaster bc;
@@ -1345,7 +1321,7 @@ void Access::setName(rtl::OUString const & aName)
     bc.send();
 }
 
-css::beans::Property Access::getAsProperty() throw (css::uno::RuntimeException)
+css::beans::Property Access::getAsProperty()
 {
     OSL_ASSERT(thisIs(IS_ANY));
     osl::MutexGuard g(lock);
@@ -1354,7 +1330,6 @@ css::beans::Property Access::getAsProperty() throw (css::uno::RuntimeException)
 }
 
 css::uno::Reference< css::beans::XPropertySetInfo > Access::getPropertySetInfo()
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     return this;
@@ -1362,10 +1337,6 @@ css::uno::Reference< css::beans::XPropertySetInfo > Access::getPropertySetInfo()
 
 void Access::setPropertyValue(
     rtl::OUString const & aPropertyName, css::uno::Any const & aValue)
-    throw (
-        css::beans::UnknownPropertyException, css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     Broadcaster bc;
@@ -1389,9 +1360,6 @@ void Access::setPropertyValue(
 }
 
 css::uno::Any Access::getPropertyValue(rtl::OUString const & PropertyName)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1407,9 +1375,6 @@ void Access::addPropertyChangeListener(
     rtl::OUString const & aPropertyName,
     css::uno::Reference< css::beans::XPropertyChangeListener > const &
         xListener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     {
@@ -1435,9 +1400,6 @@ void Access::removePropertyChangeListener(
     rtl::OUString const & aPropertyName,
     css::uno::Reference< css::beans::XPropertyChangeListener > const &
         aListener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1459,9 +1421,6 @@ void Access::addVetoableChangeListener(
     rtl::OUString const & PropertyName,
     css::uno::Reference< css::beans::XVetoableChangeListener > const &
         aListener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     {
@@ -1488,9 +1447,6 @@ void Access::removeVetoableChangeListener(
     rtl::OUString const & PropertyName,
     css::uno::Reference< css::beans::XVetoableChangeListener > const &
         aListener)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1511,9 +1467,6 @@ void Access::removeVetoableChangeListener(
 void Access::setPropertyValues(
     css::uno::Sequence< rtl::OUString > const & aPropertyNames,
     css::uno::Sequence< css::uno::Any > const & aValues)
-    throw (
-        css::beans::PropertyVetoException, css::lang::IllegalArgumentException,
-        css::lang::WrappedTargetException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     Broadcaster bc;
@@ -1552,7 +1505,6 @@ void Access::setPropertyValues(
 
 css::uno::Sequence< css::uno::Any > Access::getPropertyValues(
     css::uno::Sequence< rtl::OUString > const & aPropertyNames)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1576,7 +1528,6 @@ void Access::addPropertiesChangeListener(
     css::uno::Sequence< rtl::OUString > const &,
     css::uno::Reference< css::beans::XPropertiesChangeListener > const &
         xListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     {
@@ -1600,7 +1551,6 @@ void Access::addPropertiesChangeListener(
 void Access::removePropertiesChangeListener(
     css::uno::Reference< css::beans::XPropertiesChangeListener > const &
         xListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1615,7 +1565,6 @@ void Access::firePropertiesChangeEvent(
     css::uno::Sequence< rtl::OUString > const & aPropertyNames,
     css::uno::Reference< css::beans::XPropertiesChangeListener > const &
         xListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     css::uno::Sequence< css::beans::PropertyChangeEvent > events(
@@ -1630,7 +1579,7 @@ void Access::firePropertiesChangeEvent(
 }
 
 css::uno::Reference< css::beans::XHierarchicalPropertySetInfo >
-Access::getHierarchicalPropertySetInfo() throw (css::uno::RuntimeException) {
+Access::getHierarchicalPropertySetInfo() {
     OSL_ASSERT(thisIs(IS_GROUP));
     return this;
 }
@@ -1638,10 +1587,6 @@ Access::getHierarchicalPropertySetInfo() throw (css::uno::RuntimeException) {
 void Access::setHierarchicalPropertyValue(
     rtl::OUString const & aHierarchicalPropertyName,
     css::uno::Any const & aValue)
-    throw (
-        css::beans::UnknownPropertyException, css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     Broadcaster bc;
@@ -1672,10 +1617,6 @@ void Access::setHierarchicalPropertyValue(
 
 css::uno::Any Access::getHierarchicalPropertyValue(
     rtl::OUString const & aHierarchicalPropertyName)
-    throw (
-        css::beans::UnknownPropertyException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1691,9 +1632,6 @@ css::uno::Any Access::getHierarchicalPropertyValue(
 void Access::setHierarchicalPropertyValues(
     css::uno::Sequence< rtl::OUString > const & aHierarchicalPropertyNames,
     css::uno::Sequence< css::uno::Any > const & Values)
-    throw (
-        css::beans::PropertyVetoException, css::lang::IllegalArgumentException,
-        css::lang::WrappedTargetException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     Broadcaster bc;
@@ -1737,9 +1675,6 @@ void Access::setHierarchicalPropertyValues(
 
 css::uno::Sequence< css::uno::Any > Access::getHierarchicalPropertyValues(
     css::uno::Sequence< rtl::OUString > const & aHierarchicalPropertyNames)
-    throw (
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1763,7 +1698,6 @@ css::uno::Sequence< css::uno::Any > Access::getHierarchicalPropertyValues(
 
 css::beans::Property Access::getPropertyByHierarchicalName(
     rtl::OUString const & aHierarchicalName)
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1777,7 +1711,6 @@ css::beans::Property Access::getPropertyByHierarchicalName(
 
 sal_Bool Access::hasPropertyByHierarchicalName(
     rtl::OUString const & aHierarchicalName)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_GROUP));
     osl::MutexGuard g(lock);
@@ -1786,10 +1719,6 @@ sal_Bool Access::hasPropertyByHierarchicalName(
 
 void Access::replaceByName(
     rtl::OUString const & aName, css::uno::Any const & aElement)
-    throw (
-        css::lang::IllegalArgumentException,
-        css::container::NoSuchElementException,
-        css::lang::WrappedTargetException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_UPDATE));
     Broadcaster bc;
@@ -1830,10 +1759,6 @@ void Access::replaceByName(
 
 void Access::insertByName(
     rtl::OUString const & aName, css::uno::Any const & aElement)
-    throw (
-        css::lang::IllegalArgumentException,
-        css::container::ElementExistException,
-        css::lang::WrappedTargetException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_EXTENSIBLE|IS_UPDATE));
     Broadcaster bc;
@@ -1881,9 +1806,6 @@ void Access::insertByName(
 }
 
 void Access::removeByName(rtl::OUString const & aName)
-    throw (
-        css::container::NoSuchElementException,
-        css::lang::WrappedTargetException, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_EXTENSIBLE|IS_UPDATE));
     Broadcaster bc;
@@ -1918,7 +1840,6 @@ void Access::removeByName(rtl::OUString const & aName)
 }
 
 css::uno::Reference< css::uno::XInterface > Access::createInstance()
-    throw (css::uno::Exception, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_SET|IS_UPDATE));
     rtl::OUString tmplName(
@@ -1939,7 +1860,6 @@ css::uno::Reference< css::uno::XInterface > Access::createInstance()
 
 css::uno::Reference< css::uno::XInterface > Access::createInstanceWithArguments(
     css::uno::Sequence< css::uno::Any > const & aArguments)
-    throw (css::uno::Exception, css::uno::RuntimeException)
 {
     OSL_ASSERT(thisIs(IS_SET|IS_UPDATE));
     if (aArguments.getLength() != 0) {

@@ -90,7 +90,6 @@ Content::Content(
     const uno::Reference< lang::XMultiServiceFactory >& rxSMgr,
     ContentProvider* pProvider,
     const uno::Reference< ucb::XContentIdentifier >& Identifier)
-        throw ( ucb::ContentCreationException )
     : ContentImplHelper( rxSMgr, pProvider, Identifier ),
       m_pProvider( pProvider ), mpFile (NULL), mpInfo( NULL ), mbTransient(false)
 {
@@ -104,7 +103,6 @@ Content::Content(
     ContentProvider* pProvider,
     const uno::Reference< ucb::XContentIdentifier >& Identifier,
     sal_Bool bIsFolder)
-        throw ( ucb::ContentCreationException )
     : ContentImplHelper( rxSMgr, pProvider, Identifier ),
       m_pProvider( pProvider ), mpFile (NULL), mpInfo( NULL ), mbTransient(true)
 {
@@ -135,14 +133,13 @@ rtl::OUString Content::getParentURL()
 }
 
 void SAL_CALL Content::abort( sal_Int32 /*CommandId*/ )
-       throw( uno::RuntimeException )
 {
     //TODO
     //stick a map from each CommandId to a new GCancellable and propagate
     //it throughout the g_file_* calls
 }
 
-rtl::OUString SAL_CALL Content::getContentType() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL Content::getContentType()
 {
     return isFolder(uno::Reference< ucb::XCommandEnvironment >())
         ? rtl::OUString::createFromAscii( GIO_FOLDER_TYPE )
@@ -831,7 +828,6 @@ sal_Bool Content::feedSink( uno::Reference< uno::XInterface > xSink,
 
 uno::Any Content::open(const ucb::OpenCommandArgument2 & rOpenCommand,
     const uno::Reference< ucb::XCommandEnvironment > & xEnv )
-    throw( uno::Exception )
 {
     bool bIsFolder = isFolder(xEnv);
 
@@ -902,9 +898,6 @@ uno::Any SAL_CALL Content::execute(
         const ucb::Command& aCommand,
         sal_Int32 /*CommandId*/,
         const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-    throw( uno::Exception,
-           ucb::CommandAbortedException,
-           uno::RuntimeException )
 {
 #ifdef DEBUG
     fprintf(stderr, "Content::execute %s\n", rtl::OUStringToOString(aCommand.Name, RTL_TEXTENCODING_UTF8).getStr());
@@ -995,7 +988,6 @@ uno::Any SAL_CALL Content::execute(
 }
 
 void Content::destroy( sal_Bool bDeletePhysical )
-    throw( uno::Exception )
 {
     uno::Reference< ucb::XContent > xThis = this;
 
@@ -1016,7 +1008,6 @@ void Content::destroy( sal_Bool bDeletePhysical )
 
 void Content::insert(const uno::Reference< io::XInputStream > &xInputStream,
     sal_Bool bReplaceExisting, const uno::Reference< ucb::XCommandEnvironment > &xEnv )
-        throw( uno::Exception )
 {
     GError *pError = NULL;
     GFileInfo *pInfo = getGFileInfo(xEnv);
@@ -1063,7 +1054,6 @@ void Content::insert(const uno::Reference< io::XInputStream > &xInputStream,
 }
 
 void Content::transfer( const ucb::TransferInfo& aTransferInfo, const uno::Reference< ucb::XCommandEnvironment >& xEnv )
-    throw( uno::Exception )
 {
     rtl::OUString sDest = m_xIdentifier->getContentIdentifier();
     if (aTransferInfo.NewTitle.getLength())
@@ -1088,7 +1078,6 @@ void Content::transfer( const ucb::TransferInfo& aTransferInfo, const uno::Refer
 
 uno::Sequence< ucb::ContentInfo > Content::queryCreatableContentsInfo(
     const uno::Reference< ucb::XCommandEnvironment >& xEnv)
-            throw( uno::RuntimeException )
 {
     if ( isFolder( xEnv ) )
     {
@@ -1122,14 +1111,12 @@ uno::Sequence< ucb::ContentInfo > Content::queryCreatableContentsInfo(
 }
 
 uno::Sequence< ucb::ContentInfo > SAL_CALL Content::queryCreatableContentsInfo()
-            throw( uno::RuntimeException )
 {
     return queryCreatableContentsInfo( uno::Reference< ucb::XCommandEnvironment >() );
 }
 
 uno::Reference< ucb::XContent >
     SAL_CALL Content::createNewContent( const ucb::ContentInfo& Info )
-        throw( uno::RuntimeException )
 {
     bool create_document;
     const char *name;
@@ -1171,7 +1158,6 @@ uno::Reference< ucb::XContent >
 }
 
 uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
-    throw( uno::RuntimeException )
 {
     if ( isFolder( uno::Reference< ucb::XCommandEnvironment >() ) )
     {
@@ -1308,19 +1294,18 @@ void SAL_CALL Content::release() throw()
     ContentImplHelper::release();
 }
 
-uno::Any SAL_CALL Content::queryInterface( const uno::Type & rType ) throw ( uno::RuntimeException )
+uno::Any SAL_CALL Content::queryInterface( const uno::Type & rType )
 {
     uno::Any aRet = cppu::queryInterface( rType, static_cast< ucb::XContentCreator * >( this ) );
     return aRet.hasValue() ? aRet : ContentImplHelper::queryInterface(rType);
 }
 
-rtl::OUString SAL_CALL Content::getImplementationName() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL Content::getImplementationName()
 {
        return rtl::OUString::createFromAscii("com.sun.star.comp.GIOContent" );
 }
 
 uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
-       throw( uno::RuntimeException )
 {
        uno::Sequence< rtl::OUString > aSNS( 1 );
        aSNS.getArray()[ 0 ] = rtl::OUString::createFromAscii("com.sun.star.ucb.GIOContent" );

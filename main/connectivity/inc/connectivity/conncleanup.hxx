@@ -63,15 +63,15 @@ namespace dbtools
 
 	protected:
 		// XPropertyChangeListener
-		virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& _rEvent ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& _rEvent );
 
 		// XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& _rSource ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& _rSource );
 
 		// XRowSetListener
-		virtual void SAL_CALL cursorMoved( const ::com::sun::star::lang::EventObject& event ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL rowChanged( const ::com::sun::star::lang::EventObject& event ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL rowSetChanged( const ::com::sun::star::lang::EventObject& event ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL cursorMoved( const ::com::sun::star::lang::EventObject& event );
+		virtual void SAL_CALL rowChanged( const ::com::sun::star::lang::EventObject& event );
+		virtual void SAL_CALL rowSetChanged( const ::com::sun::star::lang::EventObject& event );
 
 	private:
 		void clearConnection();

@@ -178,11 +178,10 @@ class PathSettings : public  css::lang::XTypeProvider             ,
 		DECLARE_XSERVICEINFO
 
         // css::util::XChangesListener
-        virtual void SAL_CALL changesOccurred(const css::util::ChangesEvent& aEvent) throw (css::uno::RuntimeException);
+        virtual void SAL_CALL changesOccurred(const css::util::ChangesEvent& aEvent);
 
         // css::lang::XEventListener
-        virtual void SAL_CALL disposing(const css::lang::EventObject& aSource)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing(const css::lang::EventObject& aSource);
 
 		using ::cppu::OPropertySetHelper::disposing;
 
@@ -271,14 +270,14 @@ class PathSettings : public  css::lang::XTypeProvider             ,
         virtual sal_Bool                                            SAL_CALL convertFastPropertyValue        (       css::uno::Any&  aConvertedValue ,
                                                                                                                      css::uno::Any&  aOldValue       ,
                                                                                                                      sal_Int32       nHandle         ,
-                                                                                                               const css::uno::Any&  aValue          ) throw(css::lang::IllegalArgumentException);
+                                                                                                               const css::uno::Any&  aValue          );
 		virtual void                                                SAL_CALL setFastPropertyValue_NoBroadcast(       sal_Int32       nHandle         ,
-                                                                                                               const css::uno::Any&  aValue          ) throw(css::uno::Exception);
+                                                                                                               const css::uno::Any&  aValue          );
 		using cppu::OPropertySetHelper::getFastPropertyValue;
         virtual void                                                SAL_CALL getFastPropertyValue            (       css::uno::Any&  aValue          ,
                                                                                                                      sal_Int32       nHandle         ) const;
         virtual ::cppu::IPropertyArrayHelper&                       SAL_CALL getInfoHelper                   (                                       );
-        virtual css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo              (                                       ) throw(::com::sun::star::uno::RuntimeException);
+        virtual css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo              (                                       );
 
         /** factory methods to guarantee right (but on demand) initialized members ... */
         css::uno::Reference< css::util::XStringSubstitution > fa_getSubstitution();

@@ -152,7 +152,6 @@ ImageButtonToolbarController::~ImageButtonToolbarController()
 // ------------------------------------------------------------------
 
 void SAL_CALL ImageButtonToolbarController::dispose()
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
     ComplexToolbarController::dispose();

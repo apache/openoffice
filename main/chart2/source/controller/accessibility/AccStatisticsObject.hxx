@@ -49,10 +49,10 @@ public:
     virtual ~AccStatisticsObject();
 
     // ________ XAccessibleContext ________
-    virtual ::rtl::OUString SAL_CALL getAccessibleName() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getAccessibleName();
 
     // ________ XServiceInfo ________
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
 private:
     //const StatisticsObjectType    m_eType;

@@ -79,16 +79,13 @@ public:
 
     static EmbedEventListener_Impl* Create( EmbeddedObjectRef* );
 
-    virtual void SAL_CALL changingState( const lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState )
-									throw (embed::WrongStateException, uno::RuntimeException);
-    virtual void SAL_CALL stateChanged( const lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState )
-									throw (uno::RuntimeException);
-    virtual void SAL_CALL queryClosing( const lang::EventObject& Source, ::sal_Bool GetsOwnership )
-                                    throw (util::CloseVetoException, uno::RuntimeException);
-    virtual void SAL_CALL notifyClosing( const lang::EventObject& Source ) throw (uno::RuntimeException);
-    virtual void SAL_CALL notifyEvent( const document::EventObject& aEvent ) throw( uno::RuntimeException );
-    virtual void SAL_CALL disposing( const lang::EventObject& aEvent ) throw( uno::RuntimeException );
-    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL changingState( const lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState );
+    virtual void SAL_CALL stateChanged( const lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState );
+    virtual void SAL_CALL queryClosing( const lang::EventObject& Source, ::sal_Bool GetsOwnership );
+    virtual void SAL_CALL notifyClosing( const lang::EventObject& Source );
+    virtual void SAL_CALL notifyEvent( const document::EventObject& aEvent );
+    virtual void SAL_CALL disposing( const lang::EventObject& aEvent );
+    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
 };
 
 EmbedEventListener_Impl* EmbedEventListener_Impl::Create( EmbeddedObjectRef* p )
@@ -125,15 +122,12 @@ EmbedEventListener_Impl* EmbedEventListener_Impl::Create( EmbeddedObjectRef* p )
 void SAL_CALL EmbedEventListener_Impl::changingState( const lang::EventObject&,
 													::sal_Int32,
 													::sal_Int32 )
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 }
 
 void SAL_CALL EmbedEventListener_Impl::stateChanged( const lang::EventObject&,
 													::sal_Int32 nOldState,
 													::sal_Int32 nNewState )
-	throw ( uno::RuntimeException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
     nState = nNewState;
@@ -169,7 +163,7 @@ void SAL_CALL EmbedEventListener_Impl::stateChanged( const lang::EventObject&,
     }
 }
 
-void SAL_CALL EmbedEventListener_Impl::modified( const lang::EventObject& ) throw (uno::RuntimeException)
+void SAL_CALL EmbedEventListener_Impl::modified( const lang::EventObject& )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
     if ( pObject && pObject->GetViewAspect() != embed::Aspects::MSOLE_ICON )
@@ -190,7 +184,7 @@ void SAL_CALL EmbedEventListener_Impl::modified( const lang::EventObject& ) thro
     }
 }
 
-void SAL_CALL EmbedEventListener_Impl::notifyEvent( const document::EventObject& aEvent ) throw( uno::RuntimeException )
+void SAL_CALL EmbedEventListener_Impl::notifyEvent( const document::EventObject& aEvent )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -210,7 +204,6 @@ void SAL_CALL EmbedEventListener_Impl::notifyEvent( const document::EventObject&
 }
 
 void SAL_CALL EmbedEventListener_Impl::queryClosing( const lang::EventObject& Source, ::sal_Bool )
-        throw ( util::CloseVetoException, uno::RuntimeException)
 {
     // An embedded object can be shared between several objects (f.e. for undo purposes)
     // the object will not be closed before the last "customer" is destroyed
@@ -219,7 +212,7 @@ void SAL_CALL EmbedEventListener_Impl::queryClosing( const lang::EventObject& So
         throw util::CloseVetoException();
 }
 
-void SAL_CALL EmbedEventListener_Impl::notifyClosing( const lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL EmbedEventListener_Impl::notifyClosing( const lang::EventObject& Source )
 {
     if ( pObject && Source.Source == pObject->GetObject() )
     {
@@ -228,7 +221,7 @@ void SAL_CALL EmbedEventListener_Impl::notifyClosing( const lang::EventObject& S
     }
 }
 
-void SAL_CALL EmbedEventListener_Impl::disposing( const lang::EventObject& aEvent ) throw( uno::RuntimeException )
+void SAL_CALL EmbedEventListener_Impl::disposing( const lang::EventObject& aEvent )
 {
     if ( pObject && aEvent.Source == pObject->GetObject() )
     {
@@ -887,7 +880,6 @@ void EmbeddedObjectRef::SetGraphicToContainer( const Graphic& rGraphic,
 }
 
 sal_Bool EmbeddedObjectRef::ObjectIsModified( const uno::Reference< embed::XEmbeddedObject >& xObj )
-	throw( uno::Exception )
 {
 	sal_Bool bResult = sal_False;
 

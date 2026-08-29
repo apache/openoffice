@@ -96,7 +96,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OReferenceValueComponent::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw (Exception)
+    void SAL_CALL OReferenceValueComponent::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
     {
         switch ( _nHandle )
         {
@@ -125,7 +125,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    sal_Bool SAL_CALL OReferenceValueComponent::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue ) throw (IllegalArgumentException)
+    sal_Bool SAL_CALL OReferenceValueComponent::convertFastPropertyValue( Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue )
     {
         sal_Bool bModified = sal_False;
 	    switch ( _nHandle )

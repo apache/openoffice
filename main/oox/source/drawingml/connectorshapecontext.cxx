@@ -53,7 +53,7 @@ ConnectorShapeContext::~ConnectorShapeContext()
 {
 }
 
-Reference< XFastContextHandler > ConnectorShapeContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > ConnectorShapeContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 

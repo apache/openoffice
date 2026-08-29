@@ -81,30 +81,24 @@ public:
 
 protected:
     // ____ OPropertySet ____
-    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const
-        throw(::com::sun::star::beans::UnknownPropertyException);
+    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const;
 
     // ____ OPropertySet ____
 	virtual ::cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
 
     // ____ XPropertySet ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+        getPropertySetInfo();
 
     // ____ XRegressionCurve ____
     virtual ::com::sun::star::uno::Reference<
-            ::com::sun::star::chart2::XRegressionCurveCalculator > SAL_CALL getCalculator()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getEquationProperties()
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::chart2::XRegressionCurveCalculator > SAL_CALL getCalculator();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getEquationProperties();
     virtual void SAL_CALL setEquationProperties(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xEquationProperties )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xEquationProperties );
 
     // ____ XServiceName ____
-    virtual ::rtl::OUString SAL_CALL getServiceName()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getServiceName();
 
     // ____ XCloneable ____
     // not implemented here
@@ -113,21 +107,17 @@ protected:
 
     // ____ XModifyBroadcaster ____
     virtual void SAL_CALL addModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
     virtual void SAL_CALL removeModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
     // ____ XModifyListener ____
     virtual void SAL_CALL modified(
-        const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& aEvent );
 
     // ____ XEventListener (base of XModifyListener) ____
     virtual void SAL_CALL disposing(
-        const ::com::sun::star::lang::EventObject& Source )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& Source );
 
     using ::cppu::OPropertySetHelper::disposing;
 
@@ -160,8 +150,7 @@ public:
     virtual ~MeanValueRegressionCurve();
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
@@ -180,8 +169,7 @@ public:
     virtual ~LinearRegressionCurve();
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
@@ -200,8 +188,7 @@ public:
     virtual ~LogarithmicRegressionCurve();
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
@@ -220,8 +207,7 @@ public:
     virtual ~ExponentialRegressionCurve();
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()
@@ -240,8 +226,7 @@ public:
     virtual ~PotentialRegressionCurve();
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     /// XServiceInfo declarations
     APPHELPER_XSERVICEINFO_DECL()

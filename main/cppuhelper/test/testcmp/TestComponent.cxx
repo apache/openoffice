@@ -67,8 +67,7 @@ class TestComponent: public cppu::WeakImplHelper1<lang::XServiceInfo>
 public:
 	static uno::Reference<uno::XInterface> create(
 		uno::Reference<uno::XComponentContext> const & xCtx
-    )
-	SAL_THROW((uno::Exception));
+    );
 
 
 	static uno::Sequence<rtl::OUString> SAL_CALL getSupportedServiceNames_Static();
@@ -76,16 +75,14 @@ public:
 	explicit TestComponent(uno::Reference<uno::XComponentContext> const & xCtx);
 	virtual ~TestComponent();
 
-	uno::Any SAL_CALL queryInterface(uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException);
+	uno::Any SAL_CALL queryInterface(uno::Type const & rType );
 	void SAL_CALL release() throw ();
 	void SAL_CALL acquire() throw ();
 
 	// lang::XServiceInfo
-	virtual rtl::OUString SAL_CALL getImplementationName() throw (uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName)
-		throw (uno::RuntimeException);
-	virtual uno::Sequence<rtl::OUString> SAL_CALL getSupportedServiceNames()
-		throw (uno::RuntimeException);
+	virtual rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName);
+	virtual uno::Sequence<rtl::OUString> SAL_CALL getSupportedServiceNames();
 
 protected:
 	uno::Reference<uno::XComponentContext> m_xComponentContext;
@@ -95,7 +92,6 @@ protected:
 uno::Reference<uno::XInterface> SAL_CALL TestComponent::create(
 	uno::Reference<uno::XComponentContext> const & xCtx
 )
-	SAL_THROW((uno::Exception))
 {
 	try
 	{
@@ -129,7 +125,6 @@ TestComponent::~TestComponent()
 }
 
 rtl::OUString SAL_CALL TestComponent::getImplementationName()
-	throw (uno::RuntimeException)
 {
 	return m_implName;
 }
@@ -144,13 +139,12 @@ void SAL_CALL TestComponent::release() throw ()
 	cppu::WeakImplHelper1<lang::XServiceInfo>::release();
 }
 
-uno::Any SAL_CALL TestComponent::queryInterface(uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException)
+uno::Any SAL_CALL TestComponent::queryInterface(uno::Type const & rType )
 {
 	return cppu::WeakImplHelper1<lang::XServiceInfo>::queryInterface(rType);
 }
 
 sal_Bool SAL_CALL TestComponent::supportsService(rtl::OUString const & ServiceName)
-	throw (uno::RuntimeException)
 {
 	uno::Sequence<rtl::OUString> serviceNames = getSupportedServiceNames_Static();
 
@@ -164,7 +158,6 @@ sal_Bool SAL_CALL TestComponent::supportsService(rtl::OUString const & ServiceNa
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL TestComponent::getSupportedServiceNames()
-	throw (uno::RuntimeException)
 {
 	return getSupportedServiceNames_Static();
 }

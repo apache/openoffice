@@ -309,19 +309,19 @@ TransferableHelper::TerminateListener::~TerminateListener()
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::TerminateListener::disposing( const EventObject& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::TerminateListener::disposing( const EventObject& )
 {
 }
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::TerminateListener::queryTermination( const EventObject& ) throw( TerminationVetoException, RuntimeException )
+void SAL_CALL TransferableHelper::TerminateListener::queryTermination( const EventObject& )
 {
 }
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::TerminateListener::notifyTermination( const EventObject& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::TerminateListener::notifyTermination( const EventObject& )
 {
 	mrParent.ImplFlush();
 }
@@ -346,7 +346,7 @@ TransferableHelper::~TransferableHelper()
 
 // -----------------------------------------------------------------------------
 
-Any SAL_CALL TransferableHelper::getTransferData( const DataFlavor& rFlavor ) throw( UnsupportedFlavorException, IOException, RuntimeException )
+Any SAL_CALL TransferableHelper::getTransferData( const DataFlavor& rFlavor )
 {
 	if( !maAny.hasValue() || !mpFormats->size() || ( maLastFormat != rFlavor.MimeType ) )
 	{
@@ -495,7 +495,7 @@ Any SAL_CALL TransferableHelper::getTransferData( const DataFlavor& rFlavor ) th
 
 // -----------------------------------------------------------------------------
 
-Sequence< DataFlavor > SAL_CALL TransferableHelper::getTransferDataFlavors() throw( RuntimeException )
+Sequence< DataFlavor > SAL_CALL TransferableHelper::getTransferDataFlavors()
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -522,7 +522,7 @@ Sequence< DataFlavor > SAL_CALL TransferableHelper::getTransferDataFlavors() thr
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL TransferableHelper::isDataFlavorSupported( const DataFlavor& rFlavor ) throw( RuntimeException )
+sal_Bool SAL_CALL TransferableHelper::isDataFlavorSupported( const DataFlavor& rFlavor )
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	sal_Bool			bRet = sal_False;
@@ -554,7 +554,7 @@ sal_Bool SAL_CALL TransferableHelper::isDataFlavorSupported( const DataFlavor& r
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::lostOwnership( const Reference< XClipboard >&, const Reference< XTransferable >& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::lostOwnership( const Reference< XClipboard >&, const Reference< XTransferable >& )
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -584,13 +584,13 @@ void SAL_CALL TransferableHelper::lostOwnership( const Reference< XClipboard >&,
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::disposing( const EventObject& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::disposing( const EventObject& )
 {
 }
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::dragDropEnd( const DragSourceDropEvent& rDSDE ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::dragDropEnd( const DragSourceDropEvent& rDSDE )
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -606,31 +606,31 @@ void SAL_CALL TransferableHelper::dragDropEnd( const DragSourceDropEvent& rDSDE 
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::dragEnter( const DragSourceDragEvent& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::dragEnter( const DragSourceDragEvent& )
 {
 }
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::dragExit( const DragSourceEvent& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::dragExit( const DragSourceEvent& )
 {
 }
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::dragOver( const DragSourceDragEvent& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::dragOver( const DragSourceDragEvent& )
 {
 }
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableHelper::dropActionChanged( const DragSourceDragEvent& ) throw( RuntimeException )
+void SAL_CALL TransferableHelper::dropActionChanged( const DragSourceDragEvent& )
 {
 }
 
 // -----------------------------------------------------------------------------
 
-sal_Int64 SAL_CALL TransferableHelper::getSomething( const Sequence< sal_Int8 >& rId ) throw( RuntimeException )
+sal_Int64 SAL_CALL TransferableHelper::getSomething( const Sequence< sal_Int8 >& rId )
 {
     sal_Int64 nRet;
 
@@ -1300,10 +1300,10 @@ private:
 
 protected:
 	// XClipboardListener
-    virtual void SAL_CALL changedContents( const clipboard::ClipboardEvent& event ) throw (RuntimeException);
+    virtual void SAL_CALL changedContents( const clipboard::ClipboardEvent& event );
 
     // XEventListener
-    virtual void SAL_CALL disposing( const EventObject& Source ) throw (RuntimeException);
+    virtual void SAL_CALL disposing( const EventObject& Source );
 
 public:
     TransferableClipboardNotifier( const Reference< XClipboard >& _rxClipboard, TransferableDataHelper& _rListener, ::osl::Mutex& _rMutex );
@@ -1338,7 +1338,7 @@ TransferableClipboardNotifier::TransferableClipboardNotifier( const Reference< X
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableClipboardNotifier::changedContents( const clipboard::ClipboardEvent& event ) throw (RuntimeException)
+void SAL_CALL TransferableClipboardNotifier::changedContents( const clipboard::ClipboardEvent& event )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
         // the SolarMutex here is necessary, since
@@ -1352,7 +1352,7 @@ void SAL_CALL TransferableClipboardNotifier::changedContents( const clipboard::C
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL TransferableClipboardNotifier::disposing( const EventObject& ) throw (RuntimeException)
+void SAL_CALL TransferableClipboardNotifier::disposing( const EventObject& )
 {
     // clipboard is being disposed. Hmm. Okay, become disfunctional myself.
 	dispose();

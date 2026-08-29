@@ -73,8 +73,7 @@ public:
         @return
             Returns the number of relations or zero if there are none.
 	*/
-    virtual sal_Int32 SAL_CALL getRelationCount(  )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getRelationCount(  );
 
 	/** Returns the relation of this relation set that is specified by
         the given index.
@@ -90,9 +89,7 @@ public:
 
 	*/
     virtual ::com::sun::star::accessibility::AccessibleRelation SAL_CALL
-		getRelation( sal_Int32 nIndex )
-			throw (::com::sun::star::lang::IndexOutOfBoundsException,
-					::com::sun::star::uno::RuntimeException);
+		getRelation( sal_Int32 nIndex );
 
 	/** Tests whether the relation set contains a relation matching the
         specified key.
@@ -106,8 +103,7 @@ public:
             Returns <TRUE/> if there is a (at least one) relation of the
             given type and <FALSE/> if there is no such relation in the set.
 	*/
-    virtual sal_Bool SAL_CALL containsRelation( sal_Int16 aRelationType )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL containsRelation( sal_Int16 aRelationType );
 
 	/** Retrieve and return the relation with the given relation type.
 
@@ -121,26 +117,22 @@ public:
             type INVALID is returned.
 	*/
     virtual ::com::sun::star::accessibility::AccessibleRelation SAL_CALL
-		getRelationByType( sal_Int16 aRelationType )
-			throw (::com::sun::star::uno::RuntimeException);
+		getRelationByType( sal_Int16 aRelationType );
 
 	void AddRelation(
-		const ::com::sun::star::accessibility::AccessibleRelation& rRelation)
-			throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::accessibility::AccessibleRelation& rRelation);
 
 	//=====  XTypeProvider  ===================================================
 
     /**	Returns a sequence of all supported interfaces.
     */
 	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
-		getTypes (void)
-        throw (::com::sun::star::uno::RuntimeException);
+		getTypes (void);
 
     /**	Returns a implementation id.
     */
     virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL
-        getImplementationId (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getImplementationId (void);
 
 protected:
 	///	Mutex guarding this object.

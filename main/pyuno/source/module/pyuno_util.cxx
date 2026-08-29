@@ -85,7 +85,6 @@ OUString pyString2ustring( PyObject *pystr )
 }
 
 PyRef getObjectFromUnoModule( const Runtime &runtime, const char * func )
-    throw ( RuntimeException )
 {
     PyRef object(PyDict_GetItemString( runtime.getImpl()->cargo->getUnoModule().get(), (char*)func ) );
     if( !object.is() )

@@ -39,8 +39,6 @@ using namespace ::com::sun::star::uno;
 namespace io_stm {
 
 void MemFIFO::write( const Sequence< sal_Int8 > &seq )
-	throw ( IFIFO_OutOfMemoryException,
-			IFIFO_OutOfBoundsException )
 {
 	try
 	{
@@ -56,7 +54,7 @@ void MemFIFO::write( const Sequence< sal_Int8 > &seq )
 	}
 }
 
-void MemFIFO::read( Sequence<sal_Int8> &seq , sal_Int32 nBufferLen ) throw (IFIFO_OutOfBoundsException)
+void MemFIFO::read( Sequence<sal_Int8> &seq , sal_Int32 nBufferLen )
 {
 	try
 	{
@@ -69,7 +67,7 @@ void MemFIFO::read( Sequence<sal_Int8> &seq , sal_Int32 nBufferLen ) throw (IFIF
 	}
 }
 
-void MemFIFO::skip( sal_Int32 nBytesToSkip ) throw ( IFIFO_OutOfBoundsException )
+void MemFIFO::skip( sal_Int32 nBytesToSkip )
 {
 	try
 	{
@@ -98,7 +96,7 @@ MemRingBuffer::~MemRingBuffer()
 	}
 }
 
-void MemRingBuffer::resizeBuffer( sal_Int32 nMinSize ) throw( IRingBuffer_OutOfMemoryException)
+void MemRingBuffer::resizeBuffer( sal_Int32 nMinSize )
 {
 	sal_Int32 nNewLen = 1;
 
@@ -127,7 +125,6 @@ void MemRingBuffer::resizeBuffer( sal_Int32 nMinSize ) throw( IRingBuffer_OutOfM
 
 
 void MemRingBuffer::readAt( sal_Int32 nPos, Sequence<sal_Int8> &seq , sal_Int32 nBytesToRead ) const
-														throw(IRingBuffer_OutOfBoundsException)
 {
 	if( nPos + nBytesToRead > m_nOccupiedBuffer ) {
 		throw IRingBuffer_OutOfBoundsException();
@@ -152,8 +149,6 @@ void MemRingBuffer::readAt( sal_Int32 nPos, Sequence<sal_Int8> &seq , sal_Int32 
 
 
 void MemRingBuffer::writeAt( sal_Int32 nPos, const Sequence<sal_Int8> &seq )
-														throw (IRingBuffer_OutOfBoundsException,
-																IRingBuffer_OutOfMemoryException )
 {
 	checkInvariants();
 	sal_Int32 nLen = seq.getLength();
@@ -193,7 +188,7 @@ sal_Int32 MemRingBuffer::getSize()  const throw()
 	return m_nOccupiedBuffer;
 }
 
-void MemRingBuffer::forgetFromStart( sal_Int32 nBytesToForget ) throw (IRingBuffer_OutOfBoundsException)
+void MemRingBuffer::forgetFromStart( sal_Int32 nBytesToForget )
 {
 	checkInvariants();
 	if( nBytesToForget > m_nOccupiedBuffer ) {
@@ -208,7 +203,7 @@ void MemRingBuffer::forgetFromStart( sal_Int32 nBytesToForget ) throw (IRingBuff
 }
 
 
-void MemRingBuffer::forgetFromEnd( sal_Int32 nBytesToForget ) throw (IRingBuffer_OutOfBoundsException)
+void MemRingBuffer::forgetFromEnd( sal_Int32 nBytesToForget )
 {
 	checkInvariants();
 	if( nBytesToForget > m_nOccupiedBuffer ) {

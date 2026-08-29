@@ -60,7 +60,7 @@ public:
     inline sal_Bool     isSelected() const { return mbSelected; }
     inline void         reset() { mbSelected = false; }
 
-    virtual void SAL_CALL select() throw( RuntimeException ) { mbSelected = true; }
+    virtual void SAL_CALL select() { mbSelected = true; }
 
 private:
     sal_Bool            mbSelected;
@@ -76,16 +76,16 @@ public:
     inline sal_Bool     isSelected() const { return mbSelected; }
     inline void         reset() { mbSelected = sal_False; }
 
-    virtual void SAL_CALL select() throw( RuntimeException ) { mbSelected = sal_True; }
+    virtual void SAL_CALL select() { mbSelected = sal_True; }
 
-    virtual void SAL_CALL setPassword( const OUString& rPass ) throw( RuntimeException ) { maPassword = rPass; }
-    virtual OUString SAL_CALL getPassword() throw( RuntimeException ) { return maPassword; }
+    virtual void SAL_CALL setPassword( const OUString& rPass ) { maPassword = rPass; }
+    virtual OUString SAL_CALL getPassword() { return maPassword; }
 
-    virtual void SAL_CALL setPasswordToModify( const OUString& rPass ) throw( RuntimeException ) { maModifyPassword = rPass; }
-    virtual OUString SAL_CALL getPasswordToModify() throw( RuntimeException ) { return maModifyPassword; }
+    virtual void SAL_CALL setPasswordToModify( const OUString& rPass ) { maModifyPassword = rPass; }
+    virtual OUString SAL_CALL getPasswordToModify() { return maModifyPassword; }
 
-    virtual void SAL_CALL setRecommendReadOnly( sal_Bool bReadOnly ) throw( RuntimeException ) { mbReadOnly = bReadOnly; }
-    virtual sal_Bool SAL_CALL getRecommendReadOnly() throw( RuntimeException ) { return mbReadOnly; }
+    virtual void SAL_CALL setRecommendReadOnly( sal_Bool bReadOnly ) { mbReadOnly = bReadOnly; }
+    virtual sal_Bool SAL_CALL getRecommendReadOnly() { return mbReadOnly; }
 
 private:
     OUString            maPassword;
@@ -113,7 +113,7 @@ SimplePasswordRequest::~SimplePasswordRequest()
 {
 }
 
-/*uno::*/Any SAL_CALL SimplePasswordRequest::queryInterface( const /*uno::*/Type& rType ) throw (RuntimeException)
+/*uno::*/Any SAL_CALL SimplePasswordRequest::queryInterface( const /*uno::*/Type& rType )
 {
     return ::cppu::queryInterface ( rType,
             // OWeakObject interfaces
@@ -148,12 +148,12 @@ OUString SimplePasswordRequest::getPassword() const
     return mpPassword->getPassword();
 }
 
-Any SAL_CALL SimplePasswordRequest::getRequest() throw( RuntimeException )
+Any SAL_CALL SimplePasswordRequest::getRequest()
 {
     return maRequest;
 }
 
-Sequence< Reference< XInteractionContinuation > > SAL_CALL SimplePasswordRequest::getContinuations() throw( RuntimeException )
+Sequence< Reference< XInteractionContinuation > > SAL_CALL SimplePasswordRequest::getContinuations()
 {
     return maContinuations;
 }
@@ -194,7 +194,7 @@ DocPasswordRequest::~DocPasswordRequest()
 {
 }
 
-/*uno::*/Any SAL_CALL DocPasswordRequest::queryInterface( const /*uno::*/Type& rType ) throw (RuntimeException)
+/*uno::*/Any SAL_CALL DocPasswordRequest::queryInterface( const /*uno::*/Type& rType )
 {
     return ::cppu::queryInterface ( rType,
             // OWeakObject interfaces
@@ -239,12 +239,12 @@ sal_Bool DocPasswordRequest::getRecommendReadOnly() const
     return mpPassword->getRecommendReadOnly();
 }
 
-Any SAL_CALL DocPasswordRequest::getRequest() throw( RuntimeException )
+Any SAL_CALL DocPasswordRequest::getRequest()
 {
     return maRequest;
 }
 
-Sequence< Reference< XInteractionContinuation > > SAL_CALL DocPasswordRequest::getContinuations() throw( RuntimeException )
+Sequence< Reference< XInteractionContinuation > > SAL_CALL DocPasswordRequest::getContinuations()
 {
     return maContinuations;
 }

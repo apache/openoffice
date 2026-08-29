@@ -23,6 +23,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_charttools.hxx"
+#include <iterator>
 #include "DiagramHelper.hxx"
 #include "LegendHelper.hxx"
 #include "PropertyHelper.hxx"

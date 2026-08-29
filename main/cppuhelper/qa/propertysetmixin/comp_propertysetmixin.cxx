@@ -75,25 +75,22 @@ public:
             css::uno::Sequence< rtl::OUString >())
     {}
 
-    virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type)
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type);
 
     virtual void SAL_CALL acquire() throw () { OWeakObject::acquire(); }
 
     virtual void SAL_CALL release() throw () { OWeakObject::release(); }
 
-    virtual void SAL_CALL dispose() throw (css::uno::RuntimeException) {
+    virtual void SAL_CALL dispose() {
         cppu::PropertySetMixin< css::lang::XComponent >::dispose();
     }
 
     virtual void SAL_CALL addEventListener(
         css::uno::Reference< css::lang::XEventListener > const &)
-        throw (css::uno::RuntimeException)
     {}
 
     virtual void SAL_CALL removeEventListener(
         css::uno::Reference< css::lang::XEventListener > const &)
-        throw (css::uno::RuntimeException)
     {}
 
 private:
@@ -104,7 +101,6 @@ private:
 };
 
 css::uno::Any Empty1::queryInterface(css::uno::Type const & type)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Any a(OWeakObject::queryInterface(type));
     if (a.hasValue()) {
@@ -133,25 +129,22 @@ public:
             css::uno::Sequence< rtl::OUString >())
     {}
 
-    virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type)
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type);
 
     virtual void SAL_CALL acquire() throw () { OWeakObject::acquire(); }
 
     virtual void SAL_CALL release() throw () { OWeakObject::release(); }
 
-    virtual void SAL_CALL dispose() throw (css::uno::RuntimeException) {
+    virtual void SAL_CALL dispose() {
         cppu::PropertySetMixin< css::lang::XComponent >::dispose();
     }
 
     virtual void SAL_CALL addEventListener(
         css::uno::Reference< css::lang::XEventListener > const &)
-        throw (css::uno::RuntimeException)
     {}
 
     virtual void SAL_CALL removeEventListener(
         css::uno::Reference< css::lang::XEventListener > const &)
-        throw (css::uno::RuntimeException)
     {}
 
 private:
@@ -162,7 +155,6 @@ private:
 };
 
 css::uno::Any Empty2::queryInterface(css::uno::Type const & type)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Any a(OWeakObject::queryInterface(type));
     if (a.hasValue()) {
@@ -204,48 +196,33 @@ public:
             false)
     {}
 
-    virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type)
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type);
 
     virtual void SAL_CALL acquire() throw () { OWeakObject::acquire(); }
 
     virtual void SAL_CALL release() throw () { OWeakObject::release(); }
 
-    virtual sal_Int32 SAL_CALL getFirst() throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getFirst();
 
-    virtual void SAL_CALL setFirst(sal_Int32 value)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL setFirst(sal_Int32 value);
 
     virtual
     css::beans::Ambiguous<
         css::beans::Defaulted< css::beans::Optional< sal_Int32 > > >
-    SAL_CALL getSecond()
-        throw (
-            css::beans::UnknownPropertyException, css::uno::RuntimeException);
+    SAL_CALL getSecond();
 
     virtual void SAL_CALL setSecond(
         css::beans::Ambiguous<
         css::beans::Defaulted< css::beans::Optional< ::sal_Int32 > > > const &
-        value)
-        throw (
-            css::beans::PropertyVetoException,
-            css::beans::UnknownPropertyException, css::uno::RuntimeException);
+        value);
 
-    virtual sal_Int32 SAL_CALL getThird()
-        throw (
-            css::beans::UnknownPropertyException, css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getThird();
 
-    virtual void SAL_CALL setThird(sal_Int32 value)
-        throw (
-            css::beans::UnknownPropertyException, css::uno::RuntimeException);
+    virtual void SAL_CALL setThird(sal_Int32 value);
 
-    virtual sal_Int32 SAL_CALL getFourth()
-        throw (
-            css::beans::UnknownPropertyException, css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getFourth();
 
-    virtual void SAL_CALL setFourth(sal_Int32 value)
-        throw (
-            css::beans::UnknownPropertyException, css::uno::RuntimeException);
+    virtual void SAL_CALL setFourth(sal_Int32 value);
 
 private:
     Full(Full &); // not defined
@@ -260,7 +237,6 @@ private:
 };
 
 css::uno::Any Full::queryInterface(css::uno::Type const & type)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Any a(OWeakObject::queryInterface(type));
     if (a.hasValue()) {
@@ -276,12 +252,12 @@ css::uno::Any Full::queryInterface(css::uno::Type const & type)
                type));
 }
 
-sal_Int32 Full::getFirst() throw (css::uno::RuntimeException) {
+sal_Int32 Full::getFirst() {
     osl::MutexGuard g(m_mutex);
     return m_a1;
 }
 
-void Full::setFirst(sal_Int32 value) throw (css::uno::RuntimeException) {
+void Full::setFirst(sal_Int32 value) {
     prepareSet(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("First")), css::uno::Any(),
         css::uno::Any(), 0);
@@ -292,7 +268,6 @@ void Full::setFirst(sal_Int32 value) throw (css::uno::RuntimeException) {
 css::beans::Ambiguous<
     css::beans::Defaulted< css::beans::Optional< sal_Int32 > > >
 Full::getSecond()
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     osl::MutexGuard g(m_mutex);
     return m_a2;
@@ -302,9 +277,6 @@ void Full::setSecond(
     css::beans::Ambiguous<
     css::beans::Defaulted< css::beans::Optional< ::sal_Int32 > > > const &
     value)
-    throw (
-        css::beans::PropertyVetoException, css::beans::UnknownPropertyException,
-        css::uno::RuntimeException)
 {
     css::uno::Any v;
     if (value.Value.Value.IsPresent) {
@@ -322,7 +294,6 @@ void Full::setSecond(
 }
 
 sal_Int32 Full::getThird()
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     throw css::beans::UnknownPropertyException(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Third")),
@@ -330,7 +301,6 @@ sal_Int32 Full::getThird()
 }
 
 void Full::setThird(sal_Int32)
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     throw css::beans::UnknownPropertyException(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Third")),
@@ -338,7 +308,6 @@ void Full::setThird(sal_Int32)
 }
 
 sal_Int32 Full::getFourth()
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     throw css::beans::UnknownPropertyException(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Fourth")),
@@ -346,7 +315,6 @@ sal_Int32 Full::getFourth()
 }
 
 void Full::setFourth(sal_Int32)
-    throw (css::beans::UnknownPropertyException, css::uno::RuntimeException)
 {
     throw css::beans::UnknownPropertyException(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Fourth")),
@@ -363,15 +331,13 @@ public:
         m_context(context) {}
 
     virtual css::uno::Reference< css::lang::XComponent > SAL_CALL getEmpty1()
-        throw (css::uno::RuntimeException)
     { return new Empty1(m_context); }
 
     virtual css::uno::Reference< css::lang::XComponent > SAL_CALL getEmpty2()
-        throw (css::uno::RuntimeException)
     { return new Empty2(m_context); }
 
     virtual css::uno::Reference< test::cppuhelper::propertysetmixin::XTest3 >
-    SAL_CALL getFull() throw (css::uno::RuntimeException)
+    SAL_CALL getFull()
     { return new Full(m_context); }
 
 private:
@@ -385,7 +351,6 @@ private:
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL create(
     css::uno::Reference< css::uno::XComponentContext > const & context)
-    SAL_THROW((css::uno::Exception))
 {
     return static_cast< cppu::OWeakObject * >(new Supplier(context));
 }

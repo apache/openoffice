@@ -92,12 +92,10 @@ class ModuleAcceleratorConfiguration : public XCUBasedAcceleratorConfiguration
         DECLARE_XSERVICEINFO
 
         // XInitialization
-        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments)
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual void SAL_CALL initialize(const css::uno::Sequence< css::uno::Any >& lArguments);
 
         // XComponent
-        virtual  void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
+        virtual  void SAL_CALL dispose();
 
     //______________________________________
     // helper

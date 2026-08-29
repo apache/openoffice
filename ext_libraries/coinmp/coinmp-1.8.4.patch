@@ -1,6 +1,7 @@
---- misc/CoinMP-1.7.6/Cbc/configure	2013-12-17 21:33:48.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Cbc/configure	2014-02-01 02:02:10.574696821 -0300
-@@ -9151,7 +9151,7 @@ if test -z "$aix_libpath"; then aix_libp
+diff -ru misc/CoinMP-1.8.4/Cbc/configure misc/build/CoinMP-1.8.4/Cbc/configure
+--- misc/CoinMP-1.8.4/Cbc/configure	2026-08-21 07:21:46.169068900 +0200
++++ misc/build/CoinMP-1.8.4/Cbc/configure	2026-08-21 07:21:49.853246400 +0200
+@@ -9103,7 +9103,7 @@
        hardcode_shlibpath_var=no
        ;;
  
@@ -9,7 +10,7 @@
        ld_shlibs=no
        ;;
  
-@@ -9167,7 +9167,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -9119,7 +9119,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -18,7 +19,7 @@
        archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct=yes
        hardcode_minus_L=yes
-@@ -9763,7 +9763,7 @@ dgux*)
+@@ -9715,7 +9715,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -27,7 +28,7 @@
    dynamic_linker=no
    ;;
  
-@@ -9786,7 +9786,7 @@ freebsd* | dragonfly*)
+@@ -9738,7 +9738,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -36,7 +37,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -9804,7 +9804,7 @@ freebsd* | dragonfly*)
+@@ -9756,7 +9756,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -45,7 +46,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -12238,7 +12238,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -12190,7 +12190,7 @@
  	;;
      esac
      ;;
@@ -54,7 +55,7 @@
      # C++ shared libraries reported to be fairly broken before switch to ELF
      ld_shlibs_CXX=no
      ;;
-@@ -13723,7 +13723,7 @@ dgux*)
+@@ -13675,7 +13675,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -63,7 +64,7 @@
    dynamic_linker=no
    ;;
  
-@@ -13746,7 +13746,7 @@ freebsd* | dragonfly*)
+@@ -13698,7 +13698,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -72,7 +73,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -13764,7 +13764,7 @@ freebsd* | dragonfly*)
+@@ -13716,7 +13716,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -81,7 +82,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -15698,7 +15698,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15650,7 +15650,7 @@
        hardcode_shlibpath_var_F77=no
        ;;
  
@@ -90,7 +91,7 @@
        ld_shlibs_F77=no
        ;;
  
-@@ -15714,7 +15714,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15666,7 +15666,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -99,7 +100,7 @@
        archive_cmds_F77='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_F77=yes
        hardcode_minus_L_F77=yes
-@@ -16310,7 +16310,7 @@ dgux*)
+@@ -16262,7 +16262,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -108,7 +109,7 @@
    dynamic_linker=no
    ;;
  
-@@ -16333,7 +16333,7 @@ freebsd* | dragonfly*)
+@@ -16285,7 +16285,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -117,7 +118,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -16351,7 +16351,7 @@ freebsd* | dragonfly*)
+@@ -16303,7 +16303,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -126,7 +127,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -18297,7 +18297,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18249,7 +18249,7 @@
        hardcode_shlibpath_var_GCJ=no
        ;;
  
@@ -135,7 +136,7 @@
        ld_shlibs_GCJ=no
        ;;
  
-@@ -18313,7 +18313,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18265,7 +18265,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -144,7 +145,7 @@
        archive_cmds_GCJ='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_GCJ=yes
        hardcode_minus_L_GCJ=yes
-@@ -18909,7 +18909,7 @@ dgux*)
+@@ -18861,7 +18861,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -153,7 +154,7 @@
    dynamic_linker=no
    ;;
  
-@@ -18932,7 +18932,7 @@ freebsd* | dragonfly*)
+@@ -18884,7 +18884,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -162,7 +163,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -18950,7 +18950,7 @@ freebsd* | dragonfly*)
+@@ -18902,7 +18902,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -171,9 +172,10 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
---- misc/CoinMP-1.7.6/Cbc/ltmain.sh	2010-06-13 14:52:10.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Cbc/ltmain.sh	2014-02-01 02:02:10.563696910 -0300
-@@ -3186,12 +3186,12 @@ EOF
+diff -ru misc/CoinMP-1.8.4/Cbc/ltmain.sh misc/build/CoinMP-1.8.4/Cbc/ltmain.sh
+--- misc/CoinMP-1.8.4/Cbc/ltmain.sh	2026-08-21 07:21:46.574029800 +0200
++++ misc/build/CoinMP-1.8.4/Cbc/ltmain.sh	2026-08-21 07:21:50.008195800 +0200
+@@ -3186,12 +3186,12 @@
  	  # which has an extra 1 added just for fun
  	  #
  	  case $version_type in
@@ -188,7 +190,7 @@
  	    current="$number_major"
  	    revision="$number_minor"
  	    age="0"
-@@ -3267,8 +3267,8 @@ EOF
+@@ -3267,8 +3267,8 @@
  	  ;;
  
  	freebsd-elf)
@@ -199,9 +201,10 @@
  	  ;;
  
  	irix | nonstopux)
---- misc/CoinMP-1.7.6/Cbc/src/CbcSolver.cpp	2013-04-17 07:02:33.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Cbc/src/CbcSolver.cpp	2014-02-01 02:02:10.561696926 -0300
-@@ -1709,10 +1709,6 @@ int CbcMain1 (int argc, const char *argv
+diff -ru misc/CoinMP-1.8.4/Cbc/src/CbcSolver.cpp misc/build/CoinMP-1.8.4/Cbc/src/CbcSolver.cpp
+--- misc/CoinMP-1.8.4/Cbc/src/CbcSolver.cpp	2026-08-21 07:21:46.472950100 +0200
++++ misc/build/CoinMP-1.8.4/Cbc/src/CbcSolver.cpp	2026-08-21 07:21:50.042502900 +0200
+@@ -1877,10 +1877,6 @@
  	    }
  	    sprintf(generalPrint + strlen(generalPrint),
  		    "Build Date: %s \n", __DATE__);
@@ -212,9 +215,10 @@
              generalMessageHandler->message(CLP_GENERAL, generalMessages)
              << generalPrint
              << CoinMessageEol;
---- misc/CoinMP-1.7.6/Cgl/configure	2013-12-17 20:54:48.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Cgl/configure	2014-02-01 02:02:10.579696781 -0300
-@@ -9121,7 +9121,7 @@ if test -z "$aix_libpath"; then aix_libp
+diff -ru misc/CoinMP-1.8.4/Cgl/configure misc/build/CoinMP-1.8.4/Cgl/configure
+--- misc/CoinMP-1.8.4/Cgl/configure	2026-08-21 07:21:47.449038900 +0200
++++ misc/build/CoinMP-1.8.4/Cgl/configure	2026-08-21 07:21:50.059230700 +0200
+@@ -9069,7 +9069,7 @@
        hardcode_shlibpath_var=no
        ;;
  
@@ -223,7 +227,7 @@
        ld_shlibs=no
        ;;
  
-@@ -9137,7 +9137,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -9085,7 +9085,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -232,7 +236,7 @@
        archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct=yes
        hardcode_minus_L=yes
-@@ -9733,7 +9733,7 @@ dgux*)
+@@ -9681,7 +9681,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -241,7 +245,7 @@
    dynamic_linker=no
    ;;
  
-@@ -9756,7 +9756,7 @@ freebsd* | dragonfly*)
+@@ -9704,7 +9704,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -250,7 +254,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -9774,7 +9774,7 @@ freebsd* | dragonfly*)
+@@ -9722,7 +9722,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -259,7 +263,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -12208,7 +12208,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -12156,7 +12156,7 @@
  	;;
      esac
      ;;
@@ -268,7 +272,7 @@
      # C++ shared libraries reported to be fairly broken before switch to ELF
      ld_shlibs_CXX=no
      ;;
-@@ -13693,7 +13693,7 @@ dgux*)
+@@ -13641,7 +13641,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -277,7 +281,7 @@
    dynamic_linker=no
    ;;
  
-@@ -13716,7 +13716,7 @@ freebsd* | dragonfly*)
+@@ -13664,7 +13664,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -286,7 +290,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -13734,7 +13734,7 @@ freebsd* | dragonfly*)
+@@ -13682,7 +13682,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -295,7 +299,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -15668,7 +15668,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15616,7 +15616,7 @@
        hardcode_shlibpath_var_F77=no
        ;;
  
@@ -304,7 +308,7 @@
        ld_shlibs_F77=no
        ;;
  
-@@ -15684,7 +15684,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15632,7 +15632,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -313,7 +317,7 @@
        archive_cmds_F77='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_F77=yes
        hardcode_minus_L_F77=yes
-@@ -16280,7 +16280,7 @@ dgux*)
+@@ -16228,7 +16228,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -322,7 +326,7 @@
    dynamic_linker=no
    ;;
  
-@@ -16303,7 +16303,7 @@ freebsd* | dragonfly*)
+@@ -16251,7 +16251,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -331,7 +335,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -16321,7 +16321,7 @@ freebsd* | dragonfly*)
+@@ -16269,7 +16269,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -340,7 +344,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -18267,7 +18267,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18215,7 +18215,7 @@
        hardcode_shlibpath_var_GCJ=no
        ;;
  
@@ -349,7 +353,7 @@
        ld_shlibs_GCJ=no
        ;;
  
-@@ -18283,7 +18283,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18231,7 +18231,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -358,7 +362,7 @@
        archive_cmds_GCJ='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_GCJ=yes
        hardcode_minus_L_GCJ=yes
-@@ -18879,7 +18879,7 @@ dgux*)
+@@ -18827,7 +18827,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -367,7 +371,7 @@
    dynamic_linker=no
    ;;
  
-@@ -18902,7 +18902,7 @@ freebsd* | dragonfly*)
+@@ -18850,7 +18850,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -376,7 +380,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -18920,7 +18920,7 @@ freebsd* | dragonfly*)
+@@ -18868,7 +18868,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -385,9 +389,10 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
---- misc/CoinMP-1.7.6/Cgl/ltmain.sh	2010-06-13 14:52:57.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Cgl/ltmain.sh	2014-02-01 02:02:10.564696901 -0300
-@@ -3186,12 +3186,12 @@ EOF
+diff -ru misc/CoinMP-1.8.4/Cgl/ltmain.sh misc/build/CoinMP-1.8.4/Cgl/ltmain.sh
+--- misc/CoinMP-1.8.4/Cgl/ltmain.sh	2026-08-21 07:21:47.456037500 +0200
++++ misc/build/CoinMP-1.8.4/Cgl/ltmain.sh	2026-08-21 07:21:50.292745700 +0200
+@@ -3186,12 +3186,12 @@
  	  # which has an extra 1 added just for fun
  	  #
  	  case $version_type in
@@ -402,7 +407,7 @@
  	    current="$number_major"
  	    revision="$number_minor"
  	    age="0"
-@@ -3267,8 +3267,8 @@ EOF
+@@ -3267,8 +3267,8 @@
  	  ;;
  
  	freebsd-elf)
@@ -413,9 +418,10 @@
  	  ;;
  
  	irix | nonstopux)
---- misc/CoinMP-1.7.6/Clp/configure	2013-12-17 19:17:18.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Clp/configure	2014-02-01 02:02:10.583696749 -0300
-@@ -9148,7 +9148,7 @@ if test -z "$aix_libpath"; then aix_libp
+diff -ru misc/CoinMP-1.8.4/Clp/configure misc/build/CoinMP-1.8.4/Clp/configure
+--- misc/CoinMP-1.8.4/Clp/configure	2026-08-21 07:21:45.724004400 +0200
++++ misc/build/CoinMP-1.8.4/Clp/configure	2026-08-21 07:21:50.326108400 +0200
+@@ -9099,7 +9099,7 @@
        hardcode_shlibpath_var=no
        ;;
  
@@ -424,7 +430,7 @@
        ld_shlibs=no
        ;;
  
-@@ -9164,7 +9164,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -9115,7 +9115,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -433,7 +439,7 @@
        archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct=yes
        hardcode_minus_L=yes
-@@ -9760,7 +9760,7 @@ dgux*)
+@@ -9711,7 +9711,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -442,7 +448,7 @@
    dynamic_linker=no
    ;;
  
-@@ -9783,7 +9783,7 @@ freebsd* | dragonfly*)
+@@ -9734,7 +9734,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -451,7 +457,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -9801,7 +9801,7 @@ freebsd* | dragonfly*)
+@@ -9752,7 +9752,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -460,7 +466,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -12235,7 +12235,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -12186,7 +12186,7 @@
  	;;
      esac
      ;;
@@ -469,7 +475,7 @@
      # C++ shared libraries reported to be fairly broken before switch to ELF
      ld_shlibs_CXX=no
      ;;
-@@ -13720,7 +13720,7 @@ dgux*)
+@@ -13671,7 +13671,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -478,7 +484,7 @@
    dynamic_linker=no
    ;;
  
-@@ -13743,7 +13743,7 @@ freebsd* | dragonfly*)
+@@ -13694,7 +13694,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -487,7 +493,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -13761,7 +13761,7 @@ freebsd* | dragonfly*)
+@@ -13712,7 +13712,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -496,7 +502,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -15695,7 +15695,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15646,7 +15646,7 @@
        hardcode_shlibpath_var_F77=no
        ;;
  
@@ -505,7 +511,7 @@
        ld_shlibs_F77=no
        ;;
  
-@@ -15711,7 +15711,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15662,7 +15662,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -514,7 +520,7 @@
        archive_cmds_F77='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_F77=yes
        hardcode_minus_L_F77=yes
-@@ -16307,7 +16307,7 @@ dgux*)
+@@ -16258,7 +16258,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -523,7 +529,7 @@
    dynamic_linker=no
    ;;
  
-@@ -16330,7 +16330,7 @@ freebsd* | dragonfly*)
+@@ -16281,7 +16281,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -532,7 +538,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -16348,7 +16348,7 @@ freebsd* | dragonfly*)
+@@ -16299,7 +16299,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -541,7 +547,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -18294,7 +18294,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18245,7 +18245,7 @@
        hardcode_shlibpath_var_GCJ=no
        ;;
  
@@ -550,7 +556,7 @@
        ld_shlibs_GCJ=no
        ;;
  
-@@ -18310,7 +18310,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18261,7 +18261,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -559,7 +565,7 @@
        archive_cmds_GCJ='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_GCJ=yes
        hardcode_minus_L_GCJ=yes
-@@ -18906,7 +18906,7 @@ dgux*)
+@@ -18857,7 +18857,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -568,7 +574,7 @@
    dynamic_linker=no
    ;;
  
-@@ -18929,7 +18929,7 @@ freebsd* | dragonfly*)
+@@ -18880,7 +18880,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -577,7 +583,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -18947,7 +18947,7 @@ freebsd* | dragonfly*)
+@@ -18898,7 +18898,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -586,9 +592,10 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
---- misc/CoinMP-1.7.6/Clp/ltmain.sh	2010-06-13 14:53:25.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Clp/ltmain.sh	2014-02-01 02:02:10.566696885 -0300
-@@ -3186,12 +3186,12 @@ EOF
+diff -ru misc/CoinMP-1.8.4/Clp/ltmain.sh misc/build/CoinMP-1.8.4/Clp/ltmain.sh
+--- misc/CoinMP-1.8.4/Clp/ltmain.sh	2026-08-21 07:21:45.732572600 +0200
++++ misc/build/CoinMP-1.8.4/Clp/ltmain.sh	2026-08-21 07:21:50.478544200 +0200
+@@ -3186,12 +3186,12 @@
  	  # which has an extra 1 added just for fun
  	  #
  	  case $version_type in
@@ -603,7 +610,7 @@
  	    current="$number_major"
  	    revision="$number_minor"
  	    age="0"
-@@ -3267,8 +3267,8 @@ EOF
+@@ -3267,8 +3267,8 @@
  	  ;;
  
  	freebsd-elf)
@@ -614,9 +621,10 @@
  	  ;;
  
  	irix | nonstopux)
---- misc/CoinMP-1.7.6/CoinMP/configure	2013-12-19 12:56:13.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/CoinMP/configure	2014-02-01 02:02:10.586696725 -0300
-@@ -9090,7 +9090,7 @@ if test -z "$aix_libpath"; then aix_libp
+diff -ru misc/CoinMP-1.8.4/CoinMP/configure misc/build/CoinMP-1.8.4/CoinMP/configure
+--- misc/CoinMP-1.8.4/CoinMP/configure	2026-08-21 07:21:46.723348400 +0200
++++ misc/build/CoinMP-1.8.4/CoinMP/configure	2026-08-21 07:21:50.509624700 +0200
+@@ -9038,7 +9038,7 @@
        hardcode_shlibpath_var=no
        ;;
  
@@ -625,7 +633,7 @@
        ld_shlibs=no
        ;;
  
-@@ -9106,7 +9106,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -9054,7 +9054,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -634,7 +642,7 @@
        archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct=yes
        hardcode_minus_L=yes
-@@ -9702,7 +9702,7 @@ dgux*)
+@@ -9650,7 +9650,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -643,7 +651,7 @@
    dynamic_linker=no
    ;;
  
-@@ -9725,7 +9725,7 @@ freebsd* | dragonfly*)
+@@ -9673,7 +9673,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -652,7 +660,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -9743,7 +9743,7 @@ freebsd* | dragonfly*)
+@@ -9691,7 +9691,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -661,7 +669,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -12177,7 +12177,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -12125,7 +12125,7 @@
  	;;
      esac
      ;;
@@ -670,7 +678,7 @@
      # C++ shared libraries reported to be fairly broken before switch to ELF
      ld_shlibs_CXX=no
      ;;
-@@ -13662,7 +13662,7 @@ dgux*)
+@@ -13610,7 +13610,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -679,7 +687,7 @@
    dynamic_linker=no
    ;;
  
-@@ -13685,7 +13685,7 @@ freebsd* | dragonfly*)
+@@ -13633,7 +13633,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -688,7 +696,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -13703,7 +13703,7 @@ freebsd* | dragonfly*)
+@@ -13651,7 +13651,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -697,7 +705,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -15637,7 +15637,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15585,7 +15585,7 @@
        hardcode_shlibpath_var_F77=no
        ;;
  
@@ -706,7 +714,7 @@
        ld_shlibs_F77=no
        ;;
  
-@@ -15653,7 +15653,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15601,7 +15601,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -715,7 +723,7 @@
        archive_cmds_F77='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_F77=yes
        hardcode_minus_L_F77=yes
-@@ -16249,7 +16249,7 @@ dgux*)
+@@ -16197,7 +16197,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -724,7 +732,7 @@
    dynamic_linker=no
    ;;
  
-@@ -16272,7 +16272,7 @@ freebsd* | dragonfly*)
+@@ -16220,7 +16220,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -733,7 +741,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -16290,7 +16290,7 @@ freebsd* | dragonfly*)
+@@ -16238,7 +16238,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -742,7 +750,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -18236,7 +18236,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18184,7 +18184,7 @@
        hardcode_shlibpath_var_GCJ=no
        ;;
  
@@ -751,7 +759,7 @@
        ld_shlibs_GCJ=no
        ;;
  
-@@ -18252,7 +18252,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18200,7 +18200,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -760,7 +768,7 @@
        archive_cmds_GCJ='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_GCJ=yes
        hardcode_minus_L_GCJ=yes
-@@ -18848,7 +18848,7 @@ dgux*)
+@@ -18796,7 +18796,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -769,7 +777,7 @@
    dynamic_linker=no
    ;;
  
-@@ -18871,7 +18871,7 @@ freebsd* | dragonfly*)
+@@ -18819,7 +18819,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -778,7 +786,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -18889,7 +18889,7 @@ freebsd* | dragonfly*)
+@@ -18837,7 +18837,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -787,9 +795,10 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
---- misc/CoinMP-1.7.6/CoinMP/ltmain.sh	2011-08-07 12:09:46.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/CoinMP/ltmain.sh	2014-02-01 02:02:10.567696878 -0300
-@@ -3186,12 +3186,12 @@ EOF
+diff -ru misc/CoinMP-1.8.4/CoinMP/ltmain.sh misc/build/CoinMP-1.8.4/CoinMP/ltmain.sh
+--- misc/CoinMP-1.8.4/CoinMP/ltmain.sh	2026-08-21 07:21:46.755096500 +0200
++++ misc/build/CoinMP-1.8.4/CoinMP/ltmain.sh	2026-08-21 07:21:50.605938000 +0200
+@@ -3186,12 +3186,12 @@
  	  # which has an extra 1 added just for fun
  	  #
  	  case $version_type in
@@ -804,7 +813,7 @@
  	    current="$number_major"
  	    revision="$number_minor"
  	    age="0"
-@@ -3267,8 +3267,8 @@ EOF
+@@ -3267,8 +3267,8 @@
  	  ;;
  
  	freebsd-elf)
@@ -815,9 +824,10 @@
  	  ;;
  
  	irix | nonstopux)
---- misc/CoinMP-1.7.6/CoinUtils/configure	2013-12-17 18:22:26.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/CoinUtils/configure	2014-02-01 02:02:10.592696677 -0300
-@@ -10533,7 +10533,7 @@ if test -z "$aix_libpath"; then aix_libp
+diff -ru misc/CoinMP-1.8.4/CoinUtils/configure misc/build/CoinMP-1.8.4/CoinUtils/configure
+--- misc/CoinMP-1.8.4/CoinUtils/configure	2026-08-21 07:21:47.421023200 +0200
++++ misc/build/CoinMP-1.8.4/CoinUtils/configure	2026-08-21 07:21:50.642368300 +0200
+@@ -10471,7 +10471,7 @@
        hardcode_shlibpath_var=no
        ;;
  
@@ -826,7 +836,7 @@
        ld_shlibs=no
        ;;
  
-@@ -10549,7 +10549,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -10487,7 +10487,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -835,7 +845,7 @@
        archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct=yes
        hardcode_minus_L=yes
-@@ -11145,7 +11145,7 @@ dgux*)
+@@ -11083,7 +11083,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -844,7 +854,7 @@
    dynamic_linker=no
    ;;
  
-@@ -11168,7 +11168,7 @@ freebsd* | dragonfly*)
+@@ -11106,7 +11106,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -853,7 +863,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -11186,7 +11186,7 @@ freebsd* | dragonfly*)
+@@ -11124,7 +11124,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -862,7 +872,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -13692,7 +13692,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -13630,7 +13630,7 @@
  	;;
      esac
      ;;
@@ -871,7 +881,7 @@
      # C++ shared libraries reported to be fairly broken before switch to ELF
      ld_shlibs_CXX=no
      ;;
-@@ -15177,7 +15177,7 @@ dgux*)
+@@ -15115,7 +15115,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -880,7 +890,7 @@
    dynamic_linker=no
    ;;
  
-@@ -15200,7 +15200,7 @@ freebsd* | dragonfly*)
+@@ -15138,7 +15138,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -889,7 +899,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -15218,7 +15218,7 @@ freebsd* | dragonfly*)
+@@ -15156,7 +15156,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -898,7 +908,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -17152,7 +17152,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -17090,7 +17090,7 @@
        hardcode_shlibpath_var_F77=no
        ;;
  
@@ -907,7 +917,7 @@
        ld_shlibs_F77=no
        ;;
  
-@@ -17168,7 +17168,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -17106,7 +17106,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -916,7 +926,7 @@
        archive_cmds_F77='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_F77=yes
        hardcode_minus_L_F77=yes
-@@ -17764,7 +17764,7 @@ dgux*)
+@@ -17702,7 +17702,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -925,7 +935,7 @@
    dynamic_linker=no
    ;;
  
-@@ -17787,7 +17787,7 @@ freebsd* | dragonfly*)
+@@ -17725,7 +17725,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -934,7 +944,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -17805,7 +17805,7 @@ freebsd* | dragonfly*)
+@@ -17743,7 +17743,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -943,7 +953,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -19767,7 +19767,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -19705,7 +19705,7 @@
        hardcode_shlibpath_var_GCJ=no
        ;;
  
@@ -952,7 +962,7 @@
        ld_shlibs_GCJ=no
        ;;
  
-@@ -19783,7 +19783,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -19721,7 +19721,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -961,7 +971,7 @@
        archive_cmds_GCJ='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_GCJ=yes
        hardcode_minus_L_GCJ=yes
-@@ -20379,7 +20379,7 @@ dgux*)
+@@ -20317,7 +20317,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -970,7 +980,7 @@
    dynamic_linker=no
    ;;
  
-@@ -20402,7 +20402,7 @@ freebsd* | dragonfly*)
+@@ -20340,7 +20340,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -979,7 +989,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -20420,7 +20420,7 @@ freebsd* | dragonfly*)
+@@ -20358,7 +20358,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -988,9 +998,10 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
---- misc/CoinMP-1.7.6/CoinUtils/ltmain.sh	2010-06-13 14:53:51.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/CoinUtils/ltmain.sh	2014-02-01 02:02:10.568696869 -0300
-@@ -3186,12 +3186,12 @@ EOF
+diff -ru misc/CoinMP-1.8.4/CoinUtils/ltmain.sh misc/build/CoinMP-1.8.4/CoinUtils/ltmain.sh
+--- misc/CoinMP-1.8.4/CoinUtils/ltmain.sh	2026-08-21 07:21:47.370618400 +0200
++++ misc/build/CoinMP-1.8.4/CoinUtils/ltmain.sh	2026-08-21 07:21:50.776568600 +0200
+@@ -3186,12 +3186,12 @@
  	  # which has an extra 1 added just for fun
  	  #
  	  case $version_type in
@@ -1005,7 +1016,7 @@
  	    current="$number_major"
  	    revision="$number_minor"
  	    age="0"
-@@ -3267,8 +3267,8 @@ EOF
+@@ -3267,8 +3267,8 @@
  	  ;;
  
  	freebsd-elf)
@@ -1016,9 +1027,10 @@
  	  ;;
  
  	irix | nonstopux)
---- misc/CoinMP-1.7.6/Osi/configure	2013-12-17 18:46:39.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Osi/configure	2014-02-01 02:02:10.596696644 -0300
-@@ -9119,7 +9119,7 @@ if test -z "$aix_libpath"; then aix_libp
+diff -ru misc/CoinMP-1.8.4/Osi/configure misc/build/CoinMP-1.8.4/Osi/configure
+--- misc/CoinMP-1.8.4/Osi/configure	2026-08-21 07:21:47.143449500 +0200
++++ misc/build/CoinMP-1.8.4/Osi/configure	2026-08-21 07:21:50.810293800 +0200
+@@ -9067,7 +9067,7 @@
        hardcode_shlibpath_var=no
        ;;
  
@@ -1027,7 +1039,7 @@
        ld_shlibs=no
        ;;
  
-@@ -9135,7 +9135,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -9083,7 +9083,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -1036,7 +1048,7 @@
        archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct=yes
        hardcode_minus_L=yes
-@@ -9731,7 +9731,7 @@ dgux*)
+@@ -9679,7 +9679,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -1045,7 +1057,7 @@
    dynamic_linker=no
    ;;
  
-@@ -9754,7 +9754,7 @@ freebsd* | dragonfly*)
+@@ -9702,7 +9702,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -1054,7 +1066,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -9772,7 +9772,7 @@ freebsd* | dragonfly*)
+@@ -9720,7 +9720,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -1063,7 +1075,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -12206,7 +12206,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -12154,7 +12154,7 @@
  	;;
      esac
      ;;
@@ -1072,7 +1084,7 @@
      # C++ shared libraries reported to be fairly broken before switch to ELF
      ld_shlibs_CXX=no
      ;;
-@@ -13691,7 +13691,7 @@ dgux*)
+@@ -13639,7 +13639,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -1081,7 +1093,7 @@
    dynamic_linker=no
    ;;
  
-@@ -13714,7 +13714,7 @@ freebsd* | dragonfly*)
+@@ -13662,7 +13662,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -1090,7 +1102,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -13732,7 +13732,7 @@ freebsd* | dragonfly*)
+@@ -13680,7 +13680,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -1099,7 +1111,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -15666,7 +15666,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15614,7 +15614,7 @@
        hardcode_shlibpath_var_F77=no
        ;;
  
@@ -1108,7 +1120,7 @@
        ld_shlibs_F77=no
        ;;
  
-@@ -15682,7 +15682,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -15630,7 +15630,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -1117,7 +1129,7 @@
        archive_cmds_F77='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_F77=yes
        hardcode_minus_L_F77=yes
-@@ -16278,7 +16278,7 @@ dgux*)
+@@ -16226,7 +16226,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -1126,7 +1138,7 @@
    dynamic_linker=no
    ;;
  
-@@ -16301,7 +16301,7 @@ freebsd* | dragonfly*)
+@@ -16249,7 +16249,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -1135,7 +1147,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -16319,7 +16319,7 @@ freebsd* | dragonfly*)
+@@ -16267,7 +16267,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -1144,7 +1156,7 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
-@@ -18265,7 +18265,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18213,7 +18213,7 @@
        hardcode_shlibpath_var_GCJ=no
        ;;
  
@@ -1153,7 +1165,7 @@
        ld_shlibs_GCJ=no
        ;;
  
-@@ -18281,7 +18281,7 @@ if test -z "$aix_libpath"; then aix_libp
+@@ -18229,7 +18229,7 @@
        ;;
  
      # Unfortunately, older versions of FreeBSD 2 do not have this feature.
@@ -1162,7 +1174,7 @@
        archive_cmds_GCJ='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
        hardcode_direct_GCJ=yes
        hardcode_minus_L_GCJ=yes
-@@ -18877,7 +18877,7 @@ dgux*)
+@@ -18825,7 +18825,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    ;;
  
@@ -1171,7 +1183,7 @@
    dynamic_linker=no
    ;;
  
-@@ -18900,7 +18900,7 @@ freebsd* | dragonfly*)
+@@ -18848,7 +18848,7 @@
      objformat=`/usr/bin/objformat`
    else
      case $host_os in
@@ -1180,7 +1192,7 @@
      *) objformat=elf ;;
      esac
    fi
-@@ -18918,7 +18918,7 @@ freebsd* | dragonfly*)
+@@ -18866,7 +18866,7 @@
    esac
    shlibpath_var=LD_LIBRARY_PATH
    case $host_os in
@@ -1189,9 +1201,10 @@
      shlibpath_overrides_runpath=yes
      ;;
    freebsd3.[01]* | freebsdelf3.[01]*)
---- misc/CoinMP-1.7.6/Osi/ltmain.sh	2010-06-13 14:59:18.000000000 -0300
-+++ misc/build/CoinMP-1.7.6/Osi/ltmain.sh	2014-02-01 02:02:10.569696861 -0300
-@@ -3186,12 +3186,12 @@ EOF
+diff -ru misc/CoinMP-1.8.4/Osi/ltmain.sh misc/build/CoinMP-1.8.4/Osi/ltmain.sh
+--- misc/CoinMP-1.8.4/Osi/ltmain.sh	2026-08-21 07:21:47.137444800 +0200
++++ misc/build/CoinMP-1.8.4/Osi/ltmain.sh	2026-08-21 07:21:50.962755500 +0200
+@@ -3186,12 +3186,12 @@
  	  # which has an extra 1 added just for fun
  	  #
  	  case $version_type in
@@ -1206,7 +1219,7 @@
  	    current="$number_major"
  	    revision="$number_minor"
  	    age="0"
-@@ -3267,8 +3267,8 @@ EOF
+@@ -3267,8 +3267,8 @@
  	  ;;
  
  	freebsd-elf)

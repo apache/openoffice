@@ -162,7 +162,6 @@ PathSettings::~PathSettings()
 
 //-----------------------------------------------------------------------------
 void SAL_CALL PathSettings::changesOccurred(const css::util::ChangesEvent& aEvent)
-    throw (css::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "PathSettings::changesOccurred" );
 	/*
@@ -199,7 +198,6 @@ void SAL_CALL PathSettings::changesOccurred(const css::util::ChangesEvent& aEven
 
 //-----------------------------------------------------------------------------
 void SAL_CALL PathSettings::disposing(const css::lang::EventObject& aSource)
-    throw(css::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "PathSettings::disposing" );
     // SAFE ->
@@ -1045,7 +1043,6 @@ sal_Bool SAL_CALL PathSettings::convertFastPropertyValue(      css::uno::Any& aC
                                                                css::uno::Any& aOldValue      ,
                                                                sal_Int32      nHandle        ,
                                                          const css::uno::Any& aValue         )
-    throw(css::lang::IllegalArgumentException)
 {
     // throws NoSuchElementException !
     css::uno::Any aCurrentVal = impl_getPathValue(nHandle);
@@ -1060,7 +1057,6 @@ sal_Bool SAL_CALL PathSettings::convertFastPropertyValue(      css::uno::Any& aC
 //-----------------------------------------------------------------------------
 void SAL_CALL PathSettings::setFastPropertyValue_NoBroadcast(      sal_Int32      nHandle,
                                                              const css::uno::Any& aValue )
-    throw(css::uno::Exception)
 {
     // throws NoSuchElement- and IllegalArgumentException !
     impl_setPathValue(nHandle, aValue);
@@ -1081,7 +1077,6 @@ void SAL_CALL PathSettings::getFastPropertyValue(css::uno::Any& aValue ,
 
 //-----------------------------------------------------------------------------
 css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL PathSettings::getPropertySetInfo()
-    throw(css::uno::RuntimeException)
 {
     return css::uno::Reference< css::beans::XPropertySetInfo >(createPropertySetInfo(getInfoHelper()));
 }

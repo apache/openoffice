@@ -82,14 +82,14 @@ public:
 	void init( sal_Int16 nPresetClass );
 
 	// XInitialization
-    void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException);
+    void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
     // XChild
-    Reference< XInterface > SAL_CALL getParent(  ) throw (RuntimeException);
-    void SAL_CALL setParent( const Reference< XInterface >& Parent ) throw (NoSupportException, RuntimeException);
+    Reference< XInterface > SAL_CALL getParent(  );
+    void SAL_CALL setParent( const Reference< XInterface >& Parent );
 
     // XCloneable
-    virtual Reference< XCloneable > SAL_CALL createClone() throw (RuntimeException);
+    virtual Reference< XCloneable > SAL_CALL createClone();
 
 	// XServiceInfo
     OUString SAL_CALL getImplementationName() throw();
@@ -97,49 +97,49 @@ public:
     sal_Bool SAL_CALL supportsService(const OUString& ServiceName) throw();
 
     // XAnimationNode
-    ::sal_Int16 SAL_CALL getType() throw (RuntimeException);
-    Any SAL_CALL getBegin() throw (RuntimeException);
-    void SAL_CALL setBegin( const Any& _begin ) throw (RuntimeException);
-    Any SAL_CALL getDuration() throw (RuntimeException);
-    void SAL_CALL setDuration( const Any& _duration ) throw (RuntimeException);
-    Any SAL_CALL getEnd() throw (RuntimeException);
-    void SAL_CALL setEnd( const Any& _end ) throw (RuntimeException);
-    Any SAL_CALL getEndSync() throw (RuntimeException);
-    void SAL_CALL setEndSync( const Any& _endsync ) throw (RuntimeException);
-    Any SAL_CALL getRepeatCount() throw (RuntimeException);
-    void SAL_CALL setRepeatCount( const Any& _repeatcount ) throw (RuntimeException);
-    Any SAL_CALL getRepeatDuration() throw (RuntimeException);
-    void SAL_CALL setRepeatDuration( const Any& _repeatduration ) throw (RuntimeException);
-    ::sal_Int16 SAL_CALL getFill() throw (RuntimeException);
-    void SAL_CALL setFill( ::sal_Int16 _fill ) throw (RuntimeException);
-    ::sal_Int16 SAL_CALL getFillDefault() throw (RuntimeException);
-    void SAL_CALL setFillDefault( ::sal_Int16 _filldefault ) throw (RuntimeException);
-    ::sal_Int16 SAL_CALL getRestart() throw (RuntimeException);
-    void SAL_CALL setRestart( ::sal_Int16 _restart ) throw (RuntimeException);
-    ::sal_Int16 SAL_CALL getRestartDefault() throw (RuntimeException);
-	void SAL_CALL setRestartDefault( ::sal_Int16 _restartdefault ) throw (RuntimeException);
-    double SAL_CALL getAcceleration() throw (RuntimeException);
-    void SAL_CALL setAcceleration( double _acceleration ) throw (RuntimeException);
-    double SAL_CALL getDecelerate() throw (RuntimeException);
-    void SAL_CALL setDecelerate( double _decelerate ) throw (RuntimeException);
-    ::sal_Bool SAL_CALL getAutoReverse() throw (RuntimeException);
-    void SAL_CALL setAutoReverse( ::sal_Bool _autoreverse ) throw (RuntimeException);
-    Sequence< NamedValue > SAL_CALL getUserData() throw (RuntimeException);
-    void SAL_CALL setUserData( const Sequence< NamedValue >& _userdata ) throw (RuntimeException);
+    ::sal_Int16 SAL_CALL getType();
+    Any SAL_CALL getBegin();
+    void SAL_CALL setBegin( const Any& _begin );
+    Any SAL_CALL getDuration();
+    void SAL_CALL setDuration( const Any& _duration );
+    Any SAL_CALL getEnd();
+    void SAL_CALL setEnd( const Any& _end );
+    Any SAL_CALL getEndSync();
+    void SAL_CALL setEndSync( const Any& _endsync );
+    Any SAL_CALL getRepeatCount();
+    void SAL_CALL setRepeatCount( const Any& _repeatcount );
+    Any SAL_CALL getRepeatDuration();
+    void SAL_CALL setRepeatDuration( const Any& _repeatduration );
+    ::sal_Int16 SAL_CALL getFill();
+    void SAL_CALL setFill( ::sal_Int16 _fill );
+    ::sal_Int16 SAL_CALL getFillDefault();
+    void SAL_CALL setFillDefault( ::sal_Int16 _filldefault );
+    ::sal_Int16 SAL_CALL getRestart();
+    void SAL_CALL setRestart( ::sal_Int16 _restart );
+    ::sal_Int16 SAL_CALL getRestartDefault();
+	void SAL_CALL setRestartDefault( ::sal_Int16 _restartdefault );
+    double SAL_CALL getAcceleration();
+    void SAL_CALL setAcceleration( double _acceleration );
+    double SAL_CALL getDecelerate();
+    void SAL_CALL setDecelerate( double _decelerate );
+    ::sal_Bool SAL_CALL getAutoReverse();
+    void SAL_CALL setAutoReverse( ::sal_Bool _autoreverse );
+    Sequence< NamedValue > SAL_CALL getUserData();
+    void SAL_CALL setUserData( const Sequence< NamedValue >& _userdata );
 
 	// XElementAccess
-	virtual Type SAL_CALL getElementType() throw (RuntimeException);
-	virtual sal_Bool SAL_CALL hasElements() throw (RuntimeException);
+	virtual Type SAL_CALL getElementType();
+	virtual sal_Bool SAL_CALL hasElements();
 
 	// XEnumerationAccess
-    virtual Reference< XEnumeration > SAL_CALL createEnumeration() throw (RuntimeException);
+    virtual Reference< XEnumeration > SAL_CALL createEnumeration();
 
     // XTimeContainer
-    Reference< XAnimationNode > SAL_CALL insertBefore( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >& refChild ) throw (IllegalArgumentException, NoSuchElementException, ElementExistException, WrappedTargetException, RuntimeException);
-    Reference< XAnimationNode > SAL_CALL insertAfter( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >& refChild ) throw (IllegalArgumentException, NoSuchElementException, ElementExistException, WrappedTargetException, RuntimeException);
-    Reference< XAnimationNode > SAL_CALL replaceChild( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >& oldChild ) throw (IllegalArgumentException, NoSuchElementException, ElementExistException, WrappedTargetException, RuntimeException);
-    Reference< XAnimationNode > SAL_CALL removeChild( const Reference< XAnimationNode >& oldChild ) throw (IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException);
-    Reference< XAnimationNode > SAL_CALL appendChild( const Reference< XAnimationNode >& newChild ) throw (IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException);
+    Reference< XAnimationNode > SAL_CALL insertBefore( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >& refChild );
+    Reference< XAnimationNode > SAL_CALL insertAfter( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >& refChild );
+    Reference< XAnimationNode > SAL_CALL replaceChild( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >& oldChild );
+    Reference< XAnimationNode > SAL_CALL removeChild( const Reference< XAnimationNode >& oldChild );
+    Reference< XAnimationNode > SAL_CALL appendChild( const Reference< XAnimationNode >& newChild );
 
 private:
 	// our first, last and only protection from mutli-threads!
@@ -180,14 +180,14 @@ Reference< XInterface > SAL_CALL RandomNode_createInstance( const Reference< XMu
 
 // --------------------------------------------------------------------
 
-OUString RandomNode__getImplementationName() throw( RuntimeException )
+OUString RandomNode__getImplementationName()
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "sd::RandomAnimationNode" ) );
 }
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL RandomNode_getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL RandomNode_getSupportedServiceNames()
 {
 //	static const OUString aSN1( OUString::createFromAscii( pSN1 ) );
 	static const OUString aSN2( OUString::createFromAscii( pSN2 ) );
@@ -247,7 +247,7 @@ void RandomAnimationNode::init( sal_Int16 nPresetClass )
 // --------------------------------------------------------------------
 
 // XInitialization
-void SAL_CALL RandomAnimationNode::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+void SAL_CALL RandomAnimationNode::initialize( const Sequence< Any >& aArguments )
 {
 	if( aArguments.getLength() != 1 )
 		throw IllegalArgumentException();
@@ -269,7 +269,7 @@ void SAL_CALL RandomAnimationNode::initialize( const Sequence< Any >& aArguments
 // --------------------------------------------------------------------
 
 // XAnimationNode
-sal_Int16 SAL_CALL RandomAnimationNode::getType() throw (RuntimeException)
+sal_Int16 SAL_CALL RandomAnimationNode::getType()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return ::com::sun::star::animations::AnimationNodeType::PAR;
@@ -278,7 +278,7 @@ sal_Int16 SAL_CALL RandomAnimationNode::getType() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-Any SAL_CALL RandomAnimationNode::getBegin() throw (RuntimeException)
+Any SAL_CALL RandomAnimationNode::getBegin()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return maBegin;
@@ -287,7 +287,7 @@ Any SAL_CALL RandomAnimationNode::getBegin() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setBegin( const Any& _begin ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setBegin( const Any& _begin )
 {
 	Guard< Mutex > aGuard( maMutex );
 	maBegin = _begin;
@@ -296,7 +296,7 @@ void SAL_CALL RandomAnimationNode::setBegin( const Any& _begin ) throw (RuntimeE
 // --------------------------------------------------------------------
 
 // XAnimationNode
-Any SAL_CALL RandomAnimationNode::getDuration() throw (RuntimeException)
+Any SAL_CALL RandomAnimationNode::getDuration()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return maDuration;
@@ -305,7 +305,7 @@ Any SAL_CALL RandomAnimationNode::getDuration() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setDuration( const Any& _duration ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setDuration( const Any& _duration )
 {
 	Guard< Mutex > aGuard( maMutex );
 	maDuration = _duration;
@@ -314,7 +314,7 @@ void SAL_CALL RandomAnimationNode::setDuration( const Any& _duration ) throw (Ru
 // --------------------------------------------------------------------
 
 // XAnimationNode
-Any SAL_CALL RandomAnimationNode::getEnd() throw (RuntimeException)
+Any SAL_CALL RandomAnimationNode::getEnd()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return maEnd;
@@ -323,7 +323,7 @@ Any SAL_CALL RandomAnimationNode::getEnd() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setEnd( const Any& _end ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setEnd( const Any& _end )
 {
 	Guard< Mutex > aGuard( maMutex );
 	maEnd = _end;
@@ -332,7 +332,7 @@ void SAL_CALL RandomAnimationNode::setEnd( const Any& _end ) throw (RuntimeExcep
 // --------------------------------------------------------------------
 
 // XAnimationNode
-Any SAL_CALL RandomAnimationNode::getEndSync() throw (RuntimeException)
+Any SAL_CALL RandomAnimationNode::getEndSync()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return maEndSync;
@@ -341,7 +341,7 @@ Any SAL_CALL RandomAnimationNode::getEndSync() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setEndSync( const Any& _endsync ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setEndSync( const Any& _endsync )
 {
 	Guard< Mutex > aGuard( maMutex );
 	maEndSync = _endsync;
@@ -350,7 +350,7 @@ void SAL_CALL RandomAnimationNode::setEndSync( const Any& _endsync ) throw (Runt
 // --------------------------------------------------------------------
 
 // XAnimationNode
-Any SAL_CALL RandomAnimationNode::getRepeatCount() throw (RuntimeException)
+Any SAL_CALL RandomAnimationNode::getRepeatCount()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return maRepeatCount;
@@ -359,7 +359,7 @@ Any SAL_CALL RandomAnimationNode::getRepeatCount() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setRepeatCount( const Any& _repeatcount ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setRepeatCount( const Any& _repeatcount )
 {
 	Guard< Mutex > aGuard( maMutex );
 	maRepeatCount = _repeatcount;
@@ -368,7 +368,7 @@ void SAL_CALL RandomAnimationNode::setRepeatCount( const Any& _repeatcount ) thr
 // --------------------------------------------------------------------
 
 // XAnimationNode
-Any SAL_CALL RandomAnimationNode::getRepeatDuration() throw (RuntimeException)
+Any SAL_CALL RandomAnimationNode::getRepeatDuration()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return maRepeatDuration;
@@ -377,7 +377,7 @@ Any SAL_CALL RandomAnimationNode::getRepeatDuration() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setRepeatDuration( const Any& _repeatduration ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setRepeatDuration( const Any& _repeatduration )
 {
 	Guard< Mutex > aGuard( maMutex );
 	maRepeatDuration = _repeatduration;
@@ -386,7 +386,7 @@ void SAL_CALL RandomAnimationNode::setRepeatDuration( const Any& _repeatduration
 // --------------------------------------------------------------------
 
 // XAnimationNode
-sal_Int16 SAL_CALL RandomAnimationNode::getFill() throw (RuntimeException)
+sal_Int16 SAL_CALL RandomAnimationNode::getFill()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mnFill;
@@ -395,7 +395,7 @@ sal_Int16 SAL_CALL RandomAnimationNode::getFill() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setFill( sal_Int16 _fill ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setFill( sal_Int16 _fill )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mnFill = _fill;
@@ -404,7 +404,7 @@ void SAL_CALL RandomAnimationNode::setFill( sal_Int16 _fill ) throw (RuntimeExce
 // --------------------------------------------------------------------
 
 // XAnimationNode
-sal_Int16 SAL_CALL RandomAnimationNode::getFillDefault() throw (RuntimeException)
+sal_Int16 SAL_CALL RandomAnimationNode::getFillDefault()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mnFillDefault;
@@ -413,7 +413,7 @@ sal_Int16 SAL_CALL RandomAnimationNode::getFillDefault() throw (RuntimeException
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setFillDefault( sal_Int16 _filldefault ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setFillDefault( sal_Int16 _filldefault )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mnFillDefault = _filldefault;
@@ -422,7 +422,7 @@ void SAL_CALL RandomAnimationNode::setFillDefault( sal_Int16 _filldefault ) thro
 // --------------------------------------------------------------------
 
 // XAnimationNode
-sal_Int16 SAL_CALL RandomAnimationNode::getRestart() throw (RuntimeException)
+sal_Int16 SAL_CALL RandomAnimationNode::getRestart()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mnRestart;
@@ -431,7 +431,7 @@ sal_Int16 SAL_CALL RandomAnimationNode::getRestart() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setRestart( sal_Int16 _restart ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setRestart( sal_Int16 _restart )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mnRestart = _restart;
@@ -440,7 +440,7 @@ void SAL_CALL RandomAnimationNode::setRestart( sal_Int16 _restart ) throw (Runti
 // --------------------------------------------------------------------
 
 // XAnimationNode
-sal_Int16 SAL_CALL RandomAnimationNode::getRestartDefault() throw (RuntimeException)
+sal_Int16 SAL_CALL RandomAnimationNode::getRestartDefault()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mnRestartDefault;
@@ -449,7 +449,7 @@ sal_Int16 SAL_CALL RandomAnimationNode::getRestartDefault() throw (RuntimeExcept
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setRestartDefault( sal_Int16 _restartdefault ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setRestartDefault( sal_Int16 _restartdefault )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mnRestartDefault = _restartdefault;
@@ -458,7 +458,7 @@ void SAL_CALL RandomAnimationNode::setRestartDefault( sal_Int16 _restartdefault 
 // --------------------------------------------------------------------
 
 // XAnimationNode
-double SAL_CALL RandomAnimationNode::getAcceleration() throw (RuntimeException)
+double SAL_CALL RandomAnimationNode::getAcceleration()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mfAcceleration;
@@ -467,7 +467,7 @@ double SAL_CALL RandomAnimationNode::getAcceleration() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setAcceleration( double _acceleration ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setAcceleration( double _acceleration )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mfAcceleration = _acceleration;
@@ -476,7 +476,7 @@ void SAL_CALL RandomAnimationNode::setAcceleration( double _acceleration ) throw
 // --------------------------------------------------------------------
 
 // XAnimationNode
-double SAL_CALL RandomAnimationNode::getDecelerate() throw (RuntimeException)
+double SAL_CALL RandomAnimationNode::getDecelerate()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mfDecelerate;
@@ -485,7 +485,7 @@ double SAL_CALL RandomAnimationNode::getDecelerate() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setDecelerate( double _decelerate ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setDecelerate( double _decelerate )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mfDecelerate = _decelerate;
@@ -494,7 +494,7 @@ void SAL_CALL RandomAnimationNode::setDecelerate( double _decelerate ) throw (Ru
 // --------------------------------------------------------------------
 
 // XAnimationNode
-sal_Bool SAL_CALL RandomAnimationNode::getAutoReverse() throw (RuntimeException)
+sal_Bool SAL_CALL RandomAnimationNode::getAutoReverse()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mbAutoReverse;
@@ -503,7 +503,7 @@ sal_Bool SAL_CALL RandomAnimationNode::getAutoReverse() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XAnimationNode
-void SAL_CALL RandomAnimationNode::setAutoReverse( sal_Bool _autoreverse ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setAutoReverse( sal_Bool _autoreverse )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mbAutoReverse = _autoreverse;
@@ -511,7 +511,7 @@ void SAL_CALL RandomAnimationNode::setAutoReverse( sal_Bool _autoreverse ) throw
 
 // --------------------------------------------------------------------
 
-Sequence< NamedValue > SAL_CALL RandomAnimationNode::getUserData() throw (RuntimeException)
+Sequence< NamedValue > SAL_CALL RandomAnimationNode::getUserData()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return maUserData;
@@ -519,7 +519,7 @@ Sequence< NamedValue > SAL_CALL RandomAnimationNode::getUserData() throw (Runtim
 
 // --------------------------------------------------------------------
 
-void SAL_CALL RandomAnimationNode::setUserData( const Sequence< NamedValue >& _userdata ) throw (RuntimeException)
+void SAL_CALL RandomAnimationNode::setUserData( const Sequence< NamedValue >& _userdata )
 {
 	Guard< Mutex > aGuard( maMutex );
 	maUserData = _userdata;
@@ -528,7 +528,7 @@ void SAL_CALL RandomAnimationNode::setUserData( const Sequence< NamedValue >& _u
 // --------------------------------------------------------------------
 
 // XChild
-Reference< XInterface > SAL_CALL RandomAnimationNode::getParent() throw (RuntimeException)
+Reference< XInterface > SAL_CALL RandomAnimationNode::getParent()
 {
 	Guard< Mutex > aGuard( maMutex );
 	return mxParent;
@@ -537,7 +537,7 @@ Reference< XInterface > SAL_CALL RandomAnimationNode::getParent() throw (Runtime
 // --------------------------------------------------------------------
 
 // XChild
-void SAL_CALL RandomAnimationNode::setParent( const Reference< XInterface >& Parent ) throw (NoSupportException, RuntimeException)
+void SAL_CALL RandomAnimationNode::setParent( const Reference< XInterface >& Parent )
 {
 	Guard< Mutex > aGuard( maMutex );
 	mxParent = Parent;
@@ -546,7 +546,7 @@ void SAL_CALL RandomAnimationNode::setParent( const Reference< XInterface >& Par
 // --------------------------------------------------------------------
 
 // XCloneable
-Reference< XCloneable > SAL_CALL RandomAnimationNode::createClone() throw (RuntimeException)
+Reference< XCloneable > SAL_CALL RandomAnimationNode::createClone()
 {
 	Reference< XCloneable > xNewNode( new RandomAnimationNode( *this ) );
 	return xNewNode;
@@ -555,7 +555,7 @@ Reference< XCloneable > SAL_CALL RandomAnimationNode::createClone() throw (Runti
 // --------------------------------------------------------------------
 
 // XElementAccess
-Type SAL_CALL RandomAnimationNode::getElementType() throw (RuntimeException)
+Type SAL_CALL RandomAnimationNode::getElementType()
 {
 	return ::getCppuType((const Reference< XAnimationNode >*)0);
 }
@@ -563,7 +563,7 @@ Type SAL_CALL RandomAnimationNode::getElementType() throw (RuntimeException)
 // --------------------------------------------------------------------
 
 // XElementAccess
-sal_Bool SAL_CALL RandomAnimationNode::hasElements() throw (RuntimeException)
+sal_Bool SAL_CALL RandomAnimationNode::hasElements()
 {
 	return sal_True;
 }
@@ -572,7 +572,6 @@ sal_Bool SAL_CALL RandomAnimationNode::hasElements() throw (RuntimeException)
 
 // XEnumerationAccess
 Reference< XEnumeration > SAL_CALL RandomAnimationNode::createEnumeration()
-	throw (RuntimeException)
 {
 	Guard< Mutex > aGuard( maMutex );
 
@@ -625,7 +624,6 @@ Reference< XEnumeration > SAL_CALL RandomAnimationNode::createEnumeration()
 
 // XTimeContainer
 Reference< XAnimationNode > SAL_CALL RandomAnimationNode::insertBefore( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >&  )
-	throw (IllegalArgumentException, NoSuchElementException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	return appendChild( newChild );
 }
@@ -634,7 +632,6 @@ Reference< XAnimationNode > SAL_CALL RandomAnimationNode::insertBefore( const Re
 
 // XTimeContainer
 Reference< XAnimationNode > SAL_CALL RandomAnimationNode::insertAfter( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >&  )
-	throw (IllegalArgumentException, NoSuchElementException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	return appendChild( newChild );
 }
@@ -643,7 +640,6 @@ Reference< XAnimationNode > SAL_CALL RandomAnimationNode::insertAfter( const Ref
 
 // XTimeContainer
 Reference< XAnimationNode > SAL_CALL RandomAnimationNode::replaceChild( const Reference< XAnimationNode >& newChild, const Reference< XAnimationNode >&  )
-	throw( IllegalArgumentException, NoSuchElementException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	return appendChild( newChild );
 }
@@ -652,7 +648,6 @@ Reference< XAnimationNode > SAL_CALL RandomAnimationNode::replaceChild( const Re
 
 // XTimeContainer
 Reference< XAnimationNode > SAL_CALL RandomAnimationNode::removeChild( const Reference< XAnimationNode >& oldChild )
-	throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	return oldChild;
 }
@@ -661,7 +656,6 @@ Reference< XAnimationNode > SAL_CALL RandomAnimationNode::removeChild( const Ref
 
 // XTimeContainer
 Reference< XAnimationNode > SAL_CALL RandomAnimationNode::appendChild( const Reference< XAnimationNode >& newChild )
-	throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	Reference< XAnimate > xAnimate( newChild, UNO_QUERY );
 	if( xAnimate.is() )

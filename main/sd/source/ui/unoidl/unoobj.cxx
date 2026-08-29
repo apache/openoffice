@@ -336,13 +336,11 @@ void SdXShape::dispose()
 
 // XInterface
 uno::Any SAL_CALL SdXShape::queryAggregation( const uno::Type & rType )
-	throw(uno::RuntimeException)
 {
 	return mpShape->queryAggregation( rType );
 }
 
 uno::Any SAL_CALL SdXShape::queryInterface( const uno::Type & rType )
-	throw(uno::RuntimeException)
 {
 	return mpShape->queryInterface( rType );
 }
@@ -372,7 +370,6 @@ sal_Bool SdXShape::queryAggregation( const com::sun::star::uno::Type & rType, co
 }
 
 uno::Sequence< uno::Type > SAL_CALL SdXShape::getTypes()
-	throw (uno::RuntimeException)
 {
 	if( mpModel && !mpModel->IsImpressDocument() )
 	{
@@ -402,7 +399,7 @@ uno::Sequence< uno::Type > SAL_CALL SdXShape::getTypes()
 }
 
 // XPropertyState
-beans::PropertyState SAL_CALL SdXShape::getPropertyState( const OUString& PropertyName ) throw( beans::UnknownPropertyException, uno::RuntimeException)
+beans::PropertyState SAL_CALL SdXShape::getPropertyState( const OUString& PropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -420,7 +417,7 @@ beans::PropertyState SAL_CALL SdXShape::getPropertyState( const OUString& Proper
 	}
 }
 
-void SAL_CALL SdXShape::setPropertyToDefault( const OUString& PropertyName ) throw( beans::UnknownPropertyException, uno::RuntimeException)
+void SAL_CALL SdXShape::setPropertyToDefault( const OUString& PropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -434,7 +431,7 @@ void SAL_CALL SdXShape::setPropertyToDefault( const OUString& PropertyName ) thr
 	}
 }
 
-uno::Any SAL_CALL SdXShape::getPropertyDefault( const OUString& aPropertyName ) throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
+uno::Any SAL_CALL SdXShape::getPropertyDefault( const OUString& aPropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -461,7 +458,6 @@ uno::Any SAL_CALL SdXShape::getPropertyDefault( const OUString& aPropertyName ) 
 
 //XPropertySet
 ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL SdXShape::getPropertySetInfo()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	sal_uIntPtr nObjId = (sal_uIntPtr)mpShape->getPropertyMapEntries();
 	SfxExtItemPropertySetInfo* pInfo = NULL;
@@ -489,7 +485,6 @@ uno::Any SAL_CALL SdXShape::getPropertyDefault( const OUString& aPropertyName ) 
 }
 
 void SAL_CALL SdXShape::setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue )
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -738,7 +733,6 @@ void SAL_CALL SdXShape::setPropertyValue( const ::rtl::OUString& aPropertyName, 
 }
 
 ::com::sun::star::uno::Any SAL_CALL SdXShape::getPropertyValue( const ::rtl::OUString& PropertyName )
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -903,7 +897,7 @@ SdAnimationInfo* SdXShape::GetAnimationInfo( sal_Bool bCreate ) const throw()
 	return pInfo;
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL SdXShape::getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL SdXShape::getSupportedServiceNames()
 {
 	uno::Sequence< OUString > aSeq( mpShape->_getSupportedServiceNames() );
 
@@ -1073,7 +1067,7 @@ void SdXShape::SetMasterDepend( sal_Bool bDepend ) throw()
 	}
 }
 
-void SdXShape::SetStyleSheet( const uno::Any& rAny ) throw( lang::IllegalArgumentException )
+void SdXShape::SetStyleSheet( const uno::Any& rAny )
 {
 	SdrObject* pObj = mpShape->GetSdrObject();
 	if( pObj == NULL )
@@ -1102,7 +1096,7 @@ void SdXShape::SetStyleSheet( const uno::Any& rAny ) throw( lang::IllegalArgumen
 	}
 }
 
-uno::Any SdXShape::GetStyleSheet() const throw( beans::UnknownPropertyException  )
+uno::Any SdXShape::GetStyleSheet() const
 {
 	SdrObject* pObj = mpShape->GetSdrObject();
 	if( pObj == NULL )
@@ -1143,25 +1137,25 @@ public:
 	SdUnoEventsAccess( SdXShape* pShape ) throw();
 
     // XNameReplace
-    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement );
 
     // XNameAccess
-    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  );
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     // XElementAccess
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 };
 
 // XEventsSupplier
-uno::Reference< container::XNameReplace > SAL_CALL SdXShape::getEvents(  ) throw(::com::sun::star::uno::RuntimeException)
+uno::Reference< container::XNameReplace > SAL_CALL SdXShape::getEvents(  )
 {
 	return new SdUnoEventsAccess( this );
 }
@@ -1211,7 +1205,6 @@ static void clearEventsInAnimationInfo( SdAnimationInfo* pInfo )
 
 // XNameReplace
 void SAL_CALL SdUnoEventsAccess::replaceByName( const OUString& aName, const uno::Any& aElement )
-	throw(lang::IllegalArgumentException, container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	if( mpShape == NULL || aName != maStrOnClick )
 		throw container::NoSuchElementException();
@@ -1484,7 +1477,6 @@ void SAL_CALL SdUnoEventsAccess::replaceByName( const OUString& aName, const uno
 
 // XNameAccess
 uno::Any SAL_CALL SdUnoEventsAccess::getByName( const OUString& aName )
-	throw(container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	if( mpShape == NULL || aName != maStrOnClick )
 		throw container::NoSuchElementException();
@@ -1696,45 +1688,39 @@ uno::Any SAL_CALL SdUnoEventsAccess::getByName( const OUString& aName )
 }
 
 uno::Sequence< OUString > SAL_CALL SdUnoEventsAccess::getElementNames(  )
-	throw(uno::RuntimeException)
 {
 	uno::Sequence< OUString > aStr( &maStrOnClick, 1 );
 	return aStr;
 }
 
 sal_Bool SAL_CALL SdUnoEventsAccess::hasByName( const OUString& aName )
-	throw(uno::RuntimeException)
 {
 	return aName == maStrOnClick;
 }
 
 // XElementAccess
 uno::Type SAL_CALL SdUnoEventsAccess::getElementType(  )
-	throw(uno::RuntimeException)
 {
 	return *SEQTYPE(::getCppuType((const uno::Sequence< beans::PropertyValue >*)0));
 }
 
-sal_Bool SAL_CALL SdUnoEventsAccess::hasElements(  ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SdUnoEventsAccess::hasElements(  )
 {
 	return sal_True;
 }
 
 // XServiceInfo
 OUString SAL_CALL SdUnoEventsAccess::getImplementationName(  )
-	throw(uno::RuntimeException)
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SdUnoEventsAccess" ) );
 }
 
 sal_Bool SAL_CALL SdUnoEventsAccess::supportsService( const OUString& ServiceName )
-	throw(uno::RuntimeException)
 {
 	return ServiceName == maStrServiceName;
 }
 
 uno::Sequence< OUString > SAL_CALL SdUnoEventsAccess::getSupportedServiceNames(  )
-	throw(uno::RuntimeException)
 {
 	uno::Sequence< OUString > aStr( &maStrServiceName, 1 );
 	return aStr;

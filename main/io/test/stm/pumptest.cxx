@@ -78,19 +78,16 @@ public: // implementation names
 	static OUString 				getImplementationName_Static() throw();
 
 public:
-    virtual void SAL_CALL testInvariant(const OUString& TestName, const Reference < XInterface >& TestObject)
-		throw  ( IllegalArgumentException, RuntimeException) ;
+    virtual void SAL_CALL testInvariant(const OUString& TestName, const Reference < XInterface >& TestObject) ;
 
     virtual sal_Int32 SAL_CALL test(	const OUString& TestName,
 										const Reference < XInterface >& TestObject,
-										sal_Int32 hTestHandle)
-		throw  (	IllegalArgumentException,
-					RuntimeException);
+										sal_Int32 hTestHandle);
 
-    virtual sal_Bool SAL_CALL testPassed(void) 								throw  (	RuntimeException) ;
-    virtual Sequence< OUString > SAL_CALL getErrors(void) 				throw  (RuntimeException) ;
-    virtual Sequence< Any > SAL_CALL getErrorExceptions(void) 		throw  (RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getWarnings(void) 				throw  (RuntimeException);
+    virtual sal_Bool SAL_CALL testPassed(void) ;
+    virtual Sequence< OUString > SAL_CALL getErrors(void) ;
+    virtual Sequence< Any > SAL_CALL getErrorExceptions(void);
+	virtual Sequence< OUString > SAL_CALL getWarnings(void);
 
 private:
 	void testSimple( const Reference < XInterface > & );
@@ -120,8 +117,6 @@ OPumpTest::~OPumpTest()
 
 
 void OPumpTest::testInvariant( const OUString& TestName, const Reference < XInterface >& TestObject )
-	throw  (	IllegalArgumentException,
-				RuntimeException)
 {
 	Reference< XServiceInfo > info( TestObject, UNO_QUERY );
   	ERROR_ASSERT( info.is() , "XServiceInfo not supported !" );
@@ -146,7 +141,6 @@ sal_Int32 OPumpTest::test(
 	const OUString& TestName,
 	const Reference < XInterface >& TestObject,
 	sal_Int32 hTestHandle)
-	throw  (	IllegalArgumentException, RuntimeException)
 {
 	if( OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.io.Pump") ) == TestName )  {
 		try
@@ -197,25 +191,25 @@ sal_Int32 OPumpTest::test(
 
 
 
-sal_Bool OPumpTest::testPassed(void) 		throw  (RuntimeException)
+sal_Bool OPumpTest::testPassed(void)
 {
 	return m_seqErrors.getLength() == 0;
 }
 
 
-Sequence< OUString > OPumpTest::getErrors(void)		throw  (RuntimeException)
+Sequence< OUString > OPumpTest::getErrors(void)
 {
 	return m_seqErrors;
 }
 
 
-Sequence< Any > OPumpTest::getErrorExceptions(void) 					throw  (RuntimeException)
+Sequence< Any > OPumpTest::getErrorExceptions(void)
 {
 	return m_seqExceptions;
 }
 
 
-Sequence< OUString > OPumpTest::getWarnings(void) 						throw  (RuntimeException)
+Sequence< OUString > OPumpTest::getWarnings(void)
 {
 	return m_seqWarnings;
 }
@@ -248,29 +242,28 @@ public:
                      m_bDisposed( sal_False )
     {}
 
-    virtual void SAL_CALL disposing( const EventObject &obj  ) throw (::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL disposing( const EventObject &obj  )
     {
         m_bDisposed = sal_True;
 //         printf( "disposing called\n");
     }
 
-    virtual void SAL_CALL started(  ) throw (::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL started(  )
     {
         m_bStarted = sal_True;
 //         printf( "started called\n");
     }
-    virtual void SAL_CALL closed(  ) throw (::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL closed(  )
     {
         m_bClosed = sal_True;
 //         printf( "closed called\n");
     }
-    virtual void SAL_CALL terminated(  ) throw (::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL terminated(  )
     {
         m_bTerminated = sal_True;
 //         printf( "terminated called\n");
     }
     virtual void SAL_CALL error( const ::com::sun::star::uno::Any& aException )
-        throw (::com::sun::star::uno::RuntimeException)
     {
         m_bError = sal_True;
         Exception e;
@@ -422,7 +415,7 @@ void OPumpTest::testWrongUsage( const Reference< XInterface > &r )
     mywait();
 }
 
-Reference< XInterface > SAL_CALL OPumpTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw( Exception )
+Reference< XInterface > SAL_CALL OPumpTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr )
 {
 	return *new OPumpTest( rSMgr );
 }

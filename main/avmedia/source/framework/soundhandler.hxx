@@ -108,22 +108,22 @@ class SoundHandler  :   // interfaces
 		//---------------------------------------------------------------------------------------------------------
         //  XInterface, XTypeProvider, XServiceInfo
 		//---------------------------------------------------------------------------------------------------------
-        virtual css::uno::Any  SAL_CALL queryInterface( const css::uno::Type& aType   ) throw( css::uno::RuntimeException );
+        virtual css::uno::Any  SAL_CALL queryInterface( const css::uno::Type& aType   );
         virtual void SAL_CALL acquire() throw();
         virtual void SAL_CALL release() throw();
-        virtual css::uno::Sequence< css::uno::Type >  SAL_CALL getTypes () throw( css::uno::RuntimeException );
-        virtual css::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw( css::uno::RuntimeException );
+        virtual css::uno::Sequence< css::uno::Type >  SAL_CALL getTypes ();
+        virtual css::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 
     /* interface XServiceInfo */
-       virtual ::rtl::OUString                                        SAL_CALL getImplementationName              (                                                                               ) throw( css::uno::RuntimeException );
-       virtual sal_Bool                                               SAL_CALL supportsService                    ( const ::rtl::OUString&                                        sServiceName    ) throw( css::uno::RuntimeException );
-       virtual css::uno::Sequence< ::rtl::OUString >                  SAL_CALL getSupportedServiceNames           (                                                                               ) throw( css::uno::RuntimeException );
+       virtual ::rtl::OUString                                        SAL_CALL getImplementationName              (                                                                               );
+       virtual sal_Bool                                               SAL_CALL supportsService                    ( const ::rtl::OUString&                                        sServiceName    );
+       virtual css::uno::Sequence< ::rtl::OUString >                  SAL_CALL getSupportedServiceNames           (                                                                               );
     /* Helper for XServiceInfo */
        static css::uno::Sequence< ::rtl::OUString >                   SAL_CALL impl_getStaticSupportedServiceNames(                                                                               );
        static ::rtl::OUString                                         SAL_CALL impl_getStaticImplementationName   (                                                                               );
     /* Helper for registry */
-       static css::uno::Reference< css::uno::XInterface >             SAL_CALL impl_createInstance                ( const css::uno::Reference< css::uno::XComponentContext >& xContext ) throw( css::uno::Exception );
+       static css::uno::Reference< css::uno::XInterface >             SAL_CALL impl_createInstance                ( const css::uno::Reference< css::uno::XComponentContext >& xContext );
     /* Helper for initialization of service by using own reference! */
        virtual void                                                   SAL_CALL impl_initService                   (                                                                               );
 
@@ -132,23 +132,23 @@ class SoundHandler  :   // interfaces
         //---------------------------------------------------------------------------------------------------------
         virtual void SAL_CALL dispatchWithNotification(const css::util::URL&                                             aURL      ,
                                                        const css::uno::Sequence< css::beans::PropertyValue >&            lArguments,
-                                                       const css::uno::Reference< css::frame::XDispatchResultListener >& xListener ) throw(css::uno::RuntimeException);
+                                                       const css::uno::Reference< css::frame::XDispatchResultListener >& xListener );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XDispatch
 		//---------------------------------------------------------------------------------------------------------
         virtual void SAL_CALL dispatch              (   const   css::util::URL&                                     aURL        ,
-                                                        const   css::uno::Sequence< css::beans::PropertyValue >&    lArguments  ) throw( css::uno::RuntimeException );
+                                                        const   css::uno::Sequence< css::beans::PropertyValue >&    lArguments  );
         // not supported !
         virtual void SAL_CALL addStatusListener     (   const   css::uno::Reference< css::frame::XStatusListener >& /*xListener*/   ,
-                                                        const   css::util::URL&                                     /*aURL*/        ) throw( css::uno::RuntimeException ) {};
+                                                        const   css::util::URL&                                     /*aURL*/        ) {};
         virtual void SAL_CALL removeStatusListener  (   const   css::uno::Reference< css::frame::XStatusListener >& /*xListener*/   ,
-                                                        const   css::util::URL&                                     /*aURL*/        ) throw( css::uno::RuntimeException ) {};
+                                                        const   css::util::URL&                                     /*aURL*/        ) {};
 
 		//---------------------------------------------------------------------------------------------------------
         //  XExtendedFilterDetection
 		//---------------------------------------------------------------------------------------------------------
-        virtual ::rtl::OUString SAL_CALL detect     (           css::uno::Sequence< css::beans::PropertyValue >&    lDescriptor ) throw( css::uno::RuntimeException );
+        virtual ::rtl::OUString SAL_CALL detect     (           css::uno::Sequence< css::beans::PropertyValue >&    lDescriptor );
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

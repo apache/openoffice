@@ -67,9 +67,9 @@ namespace pcr
         OFormatSampleControl( Window* pParent, WinBits nWinStyle );
 
         // XPropertyControl
-        virtual ::com::sun::star::uno::Any SAL_CALL getValue() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& _value ) throw (::com::sun::star::beans::IllegalTypeException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Type SAL_CALL getValueType() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getValue();
+        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& _value );
+        virtual ::com::sun::star::uno::Type SAL_CALL getValueType();
 
         inline void SetFormatSupplier( const SvNumberFormatsSupplierObj* _pSupplier )
         {
@@ -110,9 +110,9 @@ namespace pcr
         OFormattedNumericControl( Window* pParent, WinBits nWinStyle = WB_TABSTOP);
 
         // XPropertyControl
-        virtual ::com::sun::star::uno::Any SAL_CALL getValue() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& _value ) throw (::com::sun::star::beans::IllegalTypeException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Type SAL_CALL getValueType() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getValue();
+        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& _value );
+        virtual ::com::sun::star::uno::Type SAL_CALL getValueType();
 
         void SetFormatDescription( const FormatDescription& rDesc );
 
@@ -136,9 +136,9 @@ namespace pcr
         OFileUrlControl( Window* pParent, WinBits nWinStyle );
 
         // XPropertyControl
-        virtual ::com::sun::star::uno::Any SAL_CALL getValue() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& _value ) throw (::com::sun::star::beans::IllegalTypeException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Type SAL_CALL getValueType() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getValue();
+        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& _value );
+        virtual ::com::sun::star::uno::Type SAL_CALL getValueType();
 
     protected:
         ~OFileUrlControl();
@@ -154,7 +154,7 @@ namespace pcr
         ~OTimeDurationControl();
 
         // XPropertyControl
-        ::sal_Int16 SAL_CALL getControlType() throw (::com::sun::star::uno::RuntimeException);
+        ::sal_Int16 SAL_CALL getControlType();
 
     private:
         DECL_LINK( OnCustomConvert, MetricField* );

@@ -67,37 +67,28 @@ public:
 	/* XXMLElementWrapper */
 
 	/* com::sun::star::lang::XUnoTunnel */
-	virtual sal_Int64 SAL_CALL getSomething( const com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
-		throw (com::sun::star::uno::RuntimeException);
-	static com::sun::star::uno::Sequence < sal_Int8 > getUnoTunnelImplementationId( void )
-		throw(com::sun::star::uno::RuntimeException);
+	virtual sal_Int64 SAL_CALL getSomething( const com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
+	static com::sun::star::uno::Sequence < sal_Int8 > getUnoTunnelImplementationId( void );
 
 	/* com::sun::star::lang::XServiceInfo */
-	virtual rtl::OUString SAL_CALL getImplementationName(  )
-		throw (com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName )
-		throw (com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual rtl::OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName );
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 public:
 	xmlNodePtr getNativeElement( ) const;
 	void setNativeElement(const xmlNodePtr pNode);
 };
 
-rtl::OUString XMLElementWrapper_XmlSecImpl_getImplementationName()
-	throw ( com::sun::star::uno::RuntimeException );
+rtl::OUString XMLElementWrapper_XmlSecImpl_getImplementationName();
 
-sal_Bool SAL_CALL XMLElementWrapper_XmlSecImpl_supportsService( const rtl::OUString& ServiceName )
-	throw ( com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL XMLElementWrapper_XmlSecImpl_supportsService( const rtl::OUString& ServiceName );
 
-com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL XMLElementWrapper_XmlSecImpl_getSupportedServiceNames(  )
-	throw ( com::sun::star::uno::RuntimeException );
+com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL XMLElementWrapper_XmlSecImpl_getSupportedServiceNames(  );
 
 com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
 SAL_CALL XMLElementWrapper_XmlSecImpl_createInstance(
 	const com::sun::star::uno::Reference<
-		com::sun::star::lang::XMultiServiceFactory > & rSMgr)
-	throw ( com::sun::star::uno::Exception );
+		com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 
 #endif

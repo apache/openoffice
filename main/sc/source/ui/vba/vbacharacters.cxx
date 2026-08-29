@@ -29,7 +29,7 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-ScVbaCharacters::ScVbaCharacters( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const ScVbaPalette& dPalette, const uno::Reference< text::XSimpleText>& xRange,const css::uno::Any& Start, const css::uno::Any& Length, sal_Bool Replace  ) throw ( css::lang::IllegalArgumentException ) : ScVbaCharacters_BASE( xParent, xContext ), m_xSimpleText(xRange), m_aPalette( dPalette),  nLength(-1), nStart(1), bReplace( Replace )
+ScVbaCharacters::ScVbaCharacters( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const ScVbaPalette& dPalette, const uno::Reference< text::XSimpleText>& xRange,const css::uno::Any& Start, const css::uno::Any& Length, sal_Bool Replace  ) : ScVbaCharacters_BASE( xParent, xContext ), m_xSimpleText(xRange), m_aPalette( dPalette),  nLength(-1), nStart(1), bReplace( Replace )
 {
 	Start >>= nStart;
 	if ( nStart < 1 )
@@ -54,41 +54,41 @@ ScVbaCharacters::ScVbaCharacters( const uno::Reference< XHelperInterface >& xPar
 }
 
 ::rtl::OUString SAL_CALL
-ScVbaCharacters::getCaption() throw (css::uno::RuntimeException)
+ScVbaCharacters::getCaption()
 {
 	return m_xTextRange->getString();
 }
 void SAL_CALL
-ScVbaCharacters::setCaption( const ::rtl::OUString& _caption ) throw (css::uno::RuntimeException)
+ScVbaCharacters::setCaption( const ::rtl::OUString& _caption )
 {
 	m_xTextRange->setString( _caption );
 
 }
 
 ::sal_Int32 SAL_CALL
-ScVbaCharacters::getCount() throw (css::uno::RuntimeException)
+ScVbaCharacters::getCount()
 {
 	return getCaption().getLength();
 }
 
 ::rtl::OUString SAL_CALL
-ScVbaCharacters::getText() throw (css::uno::RuntimeException)
+ScVbaCharacters::getText()
 {
 	return getCaption();
 }
 void SAL_CALL
-ScVbaCharacters::setText( const ::rtl::OUString& _text ) throw (css::uno::RuntimeException)
+ScVbaCharacters::setText( const ::rtl::OUString& _text )
 {
 	setCaption( _text );
 }
 uno::Reference< excel::XFont > SAL_CALL
-ScVbaCharacters::getFont() throw (css::uno::RuntimeException)
+ScVbaCharacters::getFont()
 {
 	uno::Reference< beans::XPropertySet > xProps( m_xTextRange, uno::UNO_QUERY_THROW );
 	return uno::Reference< excel::XFont >( new ScVbaFont( this, mxContext, m_aPalette, xProps ) );
 }
 void SAL_CALL
-ScVbaCharacters::setFont( const uno::Reference< excel::XFont >& /*_font*/ ) throw (css::uno::RuntimeException)
+ScVbaCharacters::setFont( const uno::Reference< excel::XFont >& /*_font*/ )
 {
 	// #TODO #FIXME needs implementation, or can't be done?
 	throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Not Implemented") ), uno::Reference< XInterface >() );
@@ -97,13 +97,13 @@ ScVbaCharacters::setFont( const uno::Reference< excel::XFont >& /*_font*/ ) thro
 
 // Methods
 void SAL_CALL
-ScVbaCharacters::Insert( const ::rtl::OUString& String ) throw (css::uno::RuntimeException)
+ScVbaCharacters::Insert( const ::rtl::OUString& String )
 {
 	m_xSimpleText->insertString( m_xTextRange, String, bReplace );
 }
 
 void SAL_CALL
-ScVbaCharacters::Delete(  ) throw (css::uno::RuntimeException)
+ScVbaCharacters::Delete(  )
 {
 	// #FIXME #TODO is this a bit suspect?, I wonder should the contents
 	// of the cell be deleted from the parent ( range )

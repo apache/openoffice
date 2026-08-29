@@ -33,12 +33,10 @@ ZipPackageSink::~ZipPackageSink(void)
 {
 }
 void SAL_CALL ZipPackageSink::setInputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aStream )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	xStream = aStream;
 }
 ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL ZipPackageSink::getInputStream(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return xStream;
 }

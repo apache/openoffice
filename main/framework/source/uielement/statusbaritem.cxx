@@ -96,21 +96,18 @@ void SAL_CALL StatusbarItem::disposing()
 }
 
 OUString SAL_CALL StatusbarItem::getCommand()
-throw (RuntimeException)
 {
     osl::MutexGuard aGuard( m_aMutex );
     return m_aCommand;
 }
 
 ::sal_uInt16 SAL_CALL StatusbarItem::getItemId()
-throw (RuntimeException)
 {
     osl::MutexGuard aGuard( m_aMutex );
     return m_nId;
 }
 
 ::sal_uInt32 SAL_CALL StatusbarItem::getWidth()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -121,14 +118,12 @@ throw (RuntimeException)
 }
 
 ::sal_uInt16 SAL_CALL StatusbarItem::getStyle()
-throw (RuntimeException)
 {
     osl::MutexGuard aGuard( m_aMutex );
     return m_nStyle;
 }
 
 ::sal_Int32 SAL_CALL StatusbarItem::getOffset()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -139,7 +134,6 @@ throw (RuntimeException)
 }
 
 ::com::sun::star::awt::Rectangle SAL_CALL StatusbarItem::getItemRect()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -157,7 +151,6 @@ throw (RuntimeException)
 }
 
 OUString SAL_CALL StatusbarItem::getText()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -168,7 +161,6 @@ throw (RuntimeException)
 }
 
 void SAL_CALL StatusbarItem::setText( const OUString& rText )
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -177,7 +169,6 @@ throw (RuntimeException)
 }
 
 OUString SAL_CALL StatusbarItem::getHelpText()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -188,7 +179,6 @@ throw (RuntimeException)
 }
 
 void SAL_CALL StatusbarItem::setHelpText( const OUString& rHelpText )
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -197,7 +187,6 @@ throw (RuntimeException)
 }
 
 OUString SAL_CALL StatusbarItem::getQuickHelpText()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -208,7 +197,6 @@ throw (RuntimeException)
 }
 
 void SAL_CALL StatusbarItem::setQuickHelpText( const OUString& rQuickHelpText )
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -217,7 +205,6 @@ throw (RuntimeException)
 }
 
 OUString SAL_CALL StatusbarItem::getAccessibleName()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -228,7 +215,6 @@ throw (RuntimeException)
 }
 
 void SAL_CALL StatusbarItem::setAccessibleName( const OUString& rAccessibleName )
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -237,7 +223,6 @@ throw (RuntimeException)
 }
 
 ::sal_Bool SAL_CALL StatusbarItem::getVisible()
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -248,7 +233,6 @@ throw (RuntimeException)
 }
 
 void SAL_CALL StatusbarItem::setVisible( ::sal_Bool bVisible )
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );
@@ -265,7 +249,6 @@ throw (RuntimeException)
 }
 
 void SAL_CALL StatusbarItem::repaint(  )
-throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     osl::MutexGuard aGuard( m_aMutex );

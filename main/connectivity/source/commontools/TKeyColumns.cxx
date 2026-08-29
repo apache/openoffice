@@ -132,7 +132,7 @@ Reference< XPropertySet > OKeyColumnsHelper::createDescriptor()
 	return new OKeyColumn(isCaseSensitive());
 }
 // -------------------------------------------------------------------------
-void OKeyColumnsHelper::impl_refresh() throw(::com::sun::star::uno::RuntimeException)
+void OKeyColumnsHelper::impl_refresh()
 {
 	m_pKey->refreshColumns();
 }

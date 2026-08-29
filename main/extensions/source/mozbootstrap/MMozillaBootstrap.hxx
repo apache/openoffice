@@ -57,34 +57,34 @@ namespace connectivity
             // OComponentHelper
             virtual void SAL_CALL disposing(void);
             // XInterface
-            static ::rtl::OUString getImplementationName_Static(  ) throw(::com::sun::star::uno::RuntimeException);
-            static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw (::com::sun::star::uno::RuntimeException);
+            static ::rtl::OUString getImplementationName_Static(  );
+            static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  );
 
             // XServiceInfo
-            virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+            virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+            virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+            virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
             // XMozillaBootstrap
 
             // XProfileDiscover
-            virtual ::sal_Int32 SAL_CALL getProfileCount( ::com::sun::star::mozilla::MozillaProductType product) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Int32 SAL_CALL getProfileList( ::com::sun::star::mozilla::MozillaProductType product, ::com::sun::star::uno::Sequence< ::rtl::OUString >& list ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::rtl::OUString SAL_CALL getDefaultProfile( ::com::sun::star::mozilla::MozillaProductType product ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::rtl::OUString SAL_CALL getProfilePath( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL isProfileLocked( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL getProfileExists( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException);
+            virtual ::sal_Int32 SAL_CALL getProfileCount( ::com::sun::star::mozilla::MozillaProductType product);
+            virtual ::sal_Int32 SAL_CALL getProfileList( ::com::sun::star::mozilla::MozillaProductType product, ::com::sun::star::uno::Sequence< ::rtl::OUString >& list );
+            virtual ::rtl::OUString SAL_CALL getDefaultProfile( ::com::sun::star::mozilla::MozillaProductType product );
+            virtual ::rtl::OUString SAL_CALL getProfilePath( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName );
+            virtual ::sal_Bool SAL_CALL isProfileLocked( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName );
+            virtual ::sal_Bool SAL_CALL getProfileExists( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName );
 
             // XProfileManager
-            virtual ::sal_Int32 SAL_CALL bootupProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Int32 SAL_CALL shutdownProfile(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::mozilla::MozillaProductType SAL_CALL getCurrentProduct(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::rtl::OUString SAL_CALL getCurrentProfile(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL isCurrentProfileLocked(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::rtl::OUString SAL_CALL setCurrentProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName ) throw (::com::sun::star::uno::RuntimeException);
+            virtual ::sal_Int32 SAL_CALL bootupProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName );
+            virtual ::sal_Int32 SAL_CALL shutdownProfile(  );
+            virtual ::com::sun::star::mozilla::MozillaProductType SAL_CALL getCurrentProduct(  );
+            virtual ::rtl::OUString SAL_CALL getCurrentProfile(  );
+            virtual ::sal_Bool SAL_CALL isCurrentProfileLocked(  );
+            virtual ::rtl::OUString SAL_CALL setCurrentProfile( ::com::sun::star::mozilla::MozillaProductType product, const ::rtl::OUString& profileName );
 
             // XProxyRunner
-            virtual ::sal_Int32 SAL_CALL Run( const ::com::sun::star::uno::Reference< ::com::sun::star::mozilla::XCodeProxy >& aCode ) throw (::com::sun::star::uno::RuntimeException);
+            virtual ::sal_Int32 SAL_CALL Run( const ::com::sun::star::uno::Reference< ::com::sun::star::mozilla::XCodeProxy >& aCode );
 
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >
                         & getMSFactory(void) const { return m_xMSFactory; }

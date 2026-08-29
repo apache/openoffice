@@ -63,42 +63,41 @@ public:
     SwXFlatParagraph( SwTxtNode& rTxtNode, rtl::OUString aExpandText, const ModelToViewHelper::ConversionMap* pConversionMap );
     virtual ~SwXFlatParagraph();
 
-    virtual 	::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw(::com::sun::star::uno::RuntimeException);
+    virtual 	::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
     virtual void SAL_CALL acquire(  ) throw();
     virtual void SAL_CALL release(  ) throw();
 
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
+    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 
     // text::XTextMarkup:
-    virtual css::uno::Reference< css::container::XStringKeyMap > SAL_CALL getMarkupInfoContainer() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::container::XStringKeyMap > SAL_CALL getMarkupInfoContainer();
 
     virtual void SAL_CALL commitStringMarkup(::sal_Int32 nType, const ::rtl::OUString & aIdentifier, ::sal_Int32 nStart, ::sal_Int32 nLength,
-		                           const css::uno::Reference< css::container::XStringKeyMap > & xMarkupInfoContainer) throw (css::uno::RuntimeException);
+		                           const css::uno::Reference< css::container::XStringKeyMap > & xMarkupInfoContainer);
 
     virtual void SAL_CALL commitTextRangeMarkup(::sal_Int32 nType, const ::rtl::OUString & aIdentifier, const ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextRange> & xRange,
-                                                const css::uno::Reference< css::container::XStringKeyMap > & xMarkupInfoContainer) throw (css::uno::RuntimeException);
+                                                const css::uno::Reference< css::container::XStringKeyMap > & xMarkupInfoContainer);
 
 
 
     // text::XFlatParagraph:
-    virtual ::rtl::OUString SAL_CALL getText() throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isModified() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setChecked(::sal_Int32 nType, ::sal_Bool bVal) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isChecked(::sal_Int32 nType) throw (css::uno::RuntimeException);
-    virtual css::lang::Locale SAL_CALL getLanguageOfText(::sal_Int32 nPos, ::sal_Int32 nLen) throw (css::uno::RuntimeException, css::lang::IllegalArgumentException);
-    virtual css::lang::Locale SAL_CALL getPrimaryLanguageOfText(::sal_Int32 nPos, ::sal_Int32 nLen) throw (css::uno::RuntimeException, css::lang::IllegalArgumentException);
-    virtual void SAL_CALL changeText(::sal_Int32 nPos, ::sal_Int32 nLen, const ::rtl::OUString & aNewText, const css::uno::Sequence< css::beans::PropertyValue > & aAttributes) throw (css::uno::RuntimeException, css::lang::IllegalArgumentException);
-    virtual void SAL_CALL changeAttributes(::sal_Int32 nPos, ::sal_Int32 nLen, const css::uno::Sequence< css::beans::PropertyValue > & aAttributes) throw (css::uno::RuntimeException, css::lang::IllegalArgumentException);
-    virtual css::uno::Sequence< ::sal_Int32 > SAL_CALL getLanguagePortions() throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getText();
+    virtual ::sal_Bool SAL_CALL isModified();
+    virtual void SAL_CALL setChecked(::sal_Int32 nType, ::sal_Bool bVal);
+    virtual ::sal_Bool SAL_CALL isChecked(::sal_Int32 nType);
+    virtual css::lang::Locale SAL_CALL getLanguageOfText(::sal_Int32 nPos, ::sal_Int32 nLen);
+    virtual css::lang::Locale SAL_CALL getPrimaryLanguageOfText(::sal_Int32 nPos, ::sal_Int32 nLen);
+    virtual void SAL_CALL changeText(::sal_Int32 nPos, ::sal_Int32 nLen, const ::rtl::OUString & aNewText, const css::uno::Sequence< css::beans::PropertyValue > & aAttributes);
+    virtual void SAL_CALL changeAttributes(::sal_Int32 nPos, ::sal_Int32 nLen, const css::uno::Sequence< css::beans::PropertyValue > & aAttributes);
+    virtual css::uno::Sequence< ::sal_Int32 > SAL_CALL getLanguagePortions();
 
     const SwTxtNode* getTxtNode() const;
 
     static const css::uno::Sequence< sal_Int8 >& getUnoTunnelId();
 
     // XUnoTunnel
-    virtual sal_Int64 SAL_CALL getSomething(const css::uno::Sequence< sal_Int8 >& rId)
-        throw (css::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getSomething(const css::uno::Sequence< sal_Int8 >& rId);
 
 private:
     SwXFlatParagraph( const SwXFlatParagraph & ); // not defined
@@ -123,11 +122,11 @@ public:
     virtual ~SwXFlatParagraphIterator();
 
     // text::XFlatParagraphIterator:
-    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getFirstPara() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getNextPara() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getLastPara() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getParaBefore(const css::uno::Reference< css::text::XFlatParagraph > & xPara) throw (css::uno::RuntimeException, css::lang::IllegalArgumentException);
-    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getParaAfter(const css::uno::Reference< css::text::XFlatParagraph > & xPara) throw (css::uno::RuntimeException, css::lang::IllegalArgumentException);
+    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getFirstPara();
+    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getNextPara();
+    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getLastPara();
+    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getParaBefore(const css::uno::Reference< css::text::XFlatParagraph > & xPara);
+    virtual css::uno::Reference< css::text::XFlatParagraph > SAL_CALL getParaAfter(const css::uno::Reference< css::text::XFlatParagraph > & xPara);
 
 protected:
     // SwClient

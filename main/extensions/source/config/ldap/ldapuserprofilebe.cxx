@@ -189,10 +189,6 @@ bool LdapUserProfileBe::getLdapStringParam(
 //------------------------------------------------------------------------------
 void LdapUserProfileBe::setPropertyValue(
     rtl::OUString const &, css::uno::Any const &)
-    throw (
-        css::beans::UnknownPropertyException, css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     throw css::lang::IllegalArgumentException(
         rtl::OUString(
@@ -202,9 +198,6 @@ void LdapUserProfileBe::setPropertyValue(
 
 css::uno::Any LdapUserProfileBe::getPropertyValue(
     rtl::OUString const & PropertyName)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     for (sal_Int32 i = 0;;) {
         sal_Int32 j = PropertyName.indexOf(',', i);
@@ -236,7 +229,6 @@ rtl::OUString SAL_CALL LdapUserProfileBe::getLdapUserProfileBeName(void) {
 //------------------------------------------------------------------------------
 
 rtl::OUString SAL_CALL LdapUserProfileBe::getImplementationName(void)
-    throw (uno::RuntimeException)
 {
     return getLdapUserProfileBeName() ;
 }
@@ -251,7 +243,6 @@ uno::Sequence<rtl::OUString> SAL_CALL LdapUserProfileBe::getLdapUserProfileBeSer
 //------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL LdapUserProfileBe::supportsService(const rtl::OUString& aServiceName)
-    throw (uno::RuntimeException)
 {
     uno::Sequence< rtl::OUString > const svc = getLdapUserProfileBeServiceNames();
 
@@ -265,7 +256,6 @@ sal_Bool SAL_CALL LdapUserProfileBe::supportsService(const rtl::OUString& aServi
 
 uno::Sequence<rtl::OUString>
 SAL_CALL LdapUserProfileBe::getSupportedServiceNames(void)
-    throw (uno::RuntimeException)
 {
     return getLdapUserProfileBeServiceNames() ;
 }

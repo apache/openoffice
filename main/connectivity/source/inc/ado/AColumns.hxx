@@ -41,7 +41,7 @@ namespace connectivity
 			OConnection*	m_pConnection;
 
             virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-            virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+            virtual void impl_refresh();
             virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > createDescriptor();
             virtual sdbcx::ObjectType appendObject( const ::rtl::OUString& _rForName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& descriptor );
 			virtual void dropObject(sal_Int32 _nPos,const ::rtl::OUString _sElementName);

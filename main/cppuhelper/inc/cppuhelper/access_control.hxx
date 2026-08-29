@@ -45,22 +45,19 @@ public:
     */
     AccessControl(
         ::com::sun::star::uno::Reference<
-            ::com::sun::star::uno::XComponentContext > const & xContext )
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+            ::com::sun::star::uno::XComponentContext > const & xContext );
     /** Ctor.
 
         @param xController access controller
     */
     AccessControl(
         ::com::sun::star::uno::Reference<
-            ::com::sun::star::security::XAccessController > const & xController )
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+            ::com::sun::star::security::XAccessController > const & xController );
     /** Copy ctor.
 
         @param another object
     */
-    AccessControl( ::cppu::AccessControl const & ac )
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    AccessControl( ::cppu::AccessControl const & ac );
 
     /** Clears the access controller reference being used.
     */
@@ -90,8 +87,7 @@ public:
         @param name name of permission
     */
     void SAL_CALL checkRuntimePermission(
-        ::rtl::OUString const & name )
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+        ::rtl::OUString const & name );
 
     /** A com.sun.star.io.FilePermission represents access to a file or directory.
         A FilePermission consists of a file url and a set of actions valid for that pathname.
@@ -101,8 +97,7 @@ public:
     */
     void SAL_CALL checkFilePermission(
         ::rtl::OUString const & url,
-        ::rtl::OUString const & actions )
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+        ::rtl::OUString const & actions );
 
     /** A com.sun.star.connection.SocketPermission represents access to a network via sockets.
         A SocketPermission consists of a host specification and a set of "actions"
@@ -113,8 +108,7 @@ public:
     */
     void SAL_CALL checkSocketPermission(
         ::rtl::OUString const & host,
-        ::rtl::OUString const & actions )
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+        ::rtl::OUString const & actions );
 };
 
 }

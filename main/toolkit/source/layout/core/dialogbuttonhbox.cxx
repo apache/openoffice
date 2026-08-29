@@ -91,7 +91,6 @@ DialogButtonHBox::setOrdering( rtl::OUString const& ordering )
 
 void
 DialogButtonHBox::addChild( uno::Reference< awt::XLayoutConstrains > const& xChild )
-    throw ( uno::RuntimeException, awt::MaxChildrenException )
 {
     if ( !xChild.is() )
         return;
@@ -145,7 +144,6 @@ DialogButtonHBox::orderChildren()
 
 void SAL_CALL
 DialogButtonHBox::removeChild( uno::Reference< awt::XLayoutConstrains > const& xChild )
-    throw ( uno::RuntimeException)
 {
     if ( !xChild.is ())
         return;

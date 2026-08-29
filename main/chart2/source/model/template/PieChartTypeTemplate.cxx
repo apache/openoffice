@@ -183,7 +183,6 @@ PieChartTypeTemplate::~PieChartTypeTemplate()
 
 // ____ OPropertySet ____
 uno::Any PieChartTypeTemplate::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticPieChartTypeTemplateDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -199,7 +198,6 @@ uno::Any PieChartTypeTemplate::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL PieChartTypeTemplate::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticPieChartTypeTemplateInfo::get();
 }
@@ -326,7 +324,6 @@ void PieChartTypeTemplate::createChartTypes(
 sal_Bool SAL_CALL PieChartTypeTemplate::matchesTemplate(
     const uno::Reference< chart2::XDiagram >& xDiagram,
     sal_Bool bAdaptProperties )
-    throw (uno::RuntimeException)
 {
     sal_Bool bResult = ChartTypeTemplate::matchesTemplate( xDiagram, bAdaptProperties );
 
@@ -437,7 +434,6 @@ Reference< chart2::XChartType > PieChartTypeTemplate::getChartTypeForIndex( sal_
 
 Reference< chart2::XChartType > SAL_CALL PieChartTypeTemplate::getChartTypeForNewSeries(
         const uno::Sequence< Reference< chart2::XChartType > >& aFormerlyUsedChartTypes )
-    throw (uno::RuntimeException)
 {
     Reference< chart2::XChartType > xResult;
 
@@ -469,7 +465,6 @@ void SAL_CALL PieChartTypeTemplate::applyStyle(
     ::sal_Int32 nChartTypeIndex,
     ::sal_Int32 nSeriesIndex,
     ::sal_Int32 nSeriesCount )
-    throw (uno::RuntimeException)
 {
     ChartTypeTemplate::applyStyle( xSeries, nChartTypeIndex, nSeriesIndex, nSeriesCount );
 
@@ -557,7 +552,6 @@ void SAL_CALL PieChartTypeTemplate::applyStyle(
 
 
 void SAL_CALL PieChartTypeTemplate::resetStyles( const Reference< chart2::XDiagram >& xDiagram )
-    throw (uno::RuntimeException)
 {
     // reset axes and grids
     Reference< chart2::XCoordinateSystemContainer > xCooSysCnt( xDiagram, uno::UNO_QUERY );

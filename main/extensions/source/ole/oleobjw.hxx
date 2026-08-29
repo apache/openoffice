@@ -90,28 +90,19 @@ public:
 	~IUnknownWrapper_Impl();
 
     //XInterface
-	Any SAL_CALL queryInterface(const Type& t)
-        throw (RuntimeException);
+	Any SAL_CALL queryInterface(const Type& t);
 
 	// XInvokation
-	virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection(  )
-        throw(RuntimeException);
+	virtual Reference< XIntrospectionAccess > SAL_CALL getIntrospection(  );
     virtual Any SAL_CALL invoke( const OUString& aFunctionName,
                                  const Sequence< Any >& aParams,
                                  Sequence< sal_Int16 >& aOutParamIndex,
-                                 Sequence< Any >& aOutParam )
-        throw(IllegalArgumentException, CannotConvertException,
-              InvocationTargetException, RuntimeException);
+                                 Sequence< Any >& aOutParam );
     virtual void SAL_CALL setValue( const OUString& aPropertyName,
-                                    const Any& aValue )
-        throw(UnknownPropertyException, CannotConvertException,
-              InvocationTargetException, RuntimeException);
-    virtual Any SAL_CALL getValue( const OUString& aPropertyName )
-        throw(UnknownPropertyException, RuntimeException);
-    virtual sal_Bool SAL_CALL hasMethod( const OUString& aName )
-        throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasProperty( const OUString& aName )
-        throw(RuntimeException);
+                                    const Any& aValue );
+    virtual Any SAL_CALL getValue( const OUString& aPropertyName );
+    virtual sal_Bool SAL_CALL hasMethod( const OUString& aName );
+    virtual sal_Bool SAL_CALL hasProperty( const OUString& aName );
 
 	// XBridgeSupplier2
 	// This interface is implemented to provide a safe way to obtain the original
@@ -121,22 +112,20 @@ public:
 	virtual Any SAL_CALL createBridge( const Any& modelDepObject,
                                        const Sequence< sal_Int8 >& aProcessId,
                                        sal_Int16 sourceModelType,
-                                       sal_Int16 destModelType )
-        throw(IllegalArgumentException, RuntimeException);
+                                       sal_Int16 destModelType );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments )
-        throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
     // XDefaultProperty
-    virtual ::rtl::OUString SAL_CALL getDefaultPropertyName(  ) throw (::com::sun::star::uno::RuntimeException) { return m_sDefaultMember; }
+    virtual ::rtl::OUString SAL_CALL getDefaultPropertyName(  ) { return m_sDefaultMember; }
 
     // XDefaultMethod
-    virtual ::rtl::OUString SAL_CALL getDefaultMethodName(  ) throw (::com::sun::star::uno::RuntimeException) { return m_sDefaultMember; }
+    virtual ::rtl::OUString SAL_CALL getDefaultMethodName(  ) { return m_sDefaultMember; }
 
     // XDirectInvocation
-    virtual ::com::sun::star::uno::Any SAL_CALL directInvoke( const ::rtl::OUString& aName, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aParams ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::script::CannotConvertException, ::com::sun::star::reflection::InvocationTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasMember( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL directInvoke( const ::rtl::OUString& aName, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aParams );
+    virtual ::sal_Bool SAL_CALL hasMember( const ::rtl::OUString& aName );
 
 protected:
 	// ----------------------------------------------------------------------------

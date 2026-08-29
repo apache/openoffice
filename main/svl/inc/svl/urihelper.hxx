@@ -223,8 +223,7 @@ removePassword(UniString const & rURI,
 	conventions, or FSysStyle(0) if these cannot be determined.
  */
 SVL_DLLPUBLIC INetURLObject::FSysStyle queryFSysStyle(UniString const & rFileUrl,
-										bool bAddConvenienceStyles = true)
-	throw (com::sun::star::uno::RuntimeException);
+										bool bAddConvenienceStyles = true);
 
 }
 

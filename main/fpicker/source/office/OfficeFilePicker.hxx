@@ -109,82 +109,82 @@ public:
 	//------------------------------------------------------------------------------------
 	// XExecutableDialog functions
 	//------------------------------------------------------------------------------------
-	virtual void SAL_CALL setTitle( const ::rtl::OUString& _rTitle ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int16 SAL_CALL execute(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setTitle( const ::rtl::OUString& _rTitle );
+	virtual sal_Int16 SAL_CALL execute(  );
 
     //------------------------------------------------------------------------------------
     // XAsynchronousExecutableDialog functions
     //------------------------------------------------------------------------------------
-    virtual void SAL_CALL setDialogTitle( const ::rtl::OUString& _rTitle ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL startExecuteModal( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XDialogClosedListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setDialogTitle( const ::rtl::OUString& _rTitle );
+    virtual void SAL_CALL startExecuteModal( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XDialogClosedListener >& xListener );
 
 	//------------------------------------------------------------------------------------
 	// XFilePicker functions
 	//------------------------------------------------------------------------------------
 
-	virtual void SAL_CALL 			setMultiSelectionMode( sal_Bool bMode ) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL			setDefaultName( const ::rtl::OUString& aName ) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL			setDisplayDirectory( const ::rtl::OUString& aDirectory ) throw( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL	getDisplayDirectory() throw( ::com::sun::star::uno::RuntimeException );
-	virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getFiles() throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL 			setMultiSelectionMode( sal_Bool bMode );
+	virtual void SAL_CALL			setDefaultName( const ::rtl::OUString& aName );
+	virtual void SAL_CALL			setDisplayDirectory( const ::rtl::OUString& aDirectory );
+	virtual ::rtl::OUString SAL_CALL	getDisplayDirectory();
+	virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getFiles();
 
     //------------------------------------------------------------------------------------
 	// XFilePickerControlAccess functions
 	//------------------------------------------------------------------------------------
 
-	virtual void SAL_CALL			setValue( sal_Int16 ElementID, sal_Int16 ControlAction, const com::sun::star::uno::Any& value ) throw( ::com::sun::star::uno::RuntimeException );
-	virtual com::sun::star::uno::Any SAL_CALL			getValue( sal_Int16 ElementID, sal_Int16 ControlAction ) throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL			setLabel( sal_Int16 ElementID, const ::rtl::OUString& aValue ) throw ( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL	getLabel( sal_Int16 ElementID ) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL			enableControl( sal_Int16 ElementID, sal_Bool bEnable ) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL			setValue( sal_Int16 ElementID, sal_Int16 ControlAction, const com::sun::star::uno::Any& value );
+	virtual com::sun::star::uno::Any SAL_CALL			getValue( sal_Int16 ElementID, sal_Int16 ControlAction );
+    virtual void SAL_CALL			setLabel( sal_Int16 ElementID, const ::rtl::OUString& aValue );
+    virtual ::rtl::OUString SAL_CALL	getLabel( sal_Int16 ElementID );
+	virtual void SAL_CALL			enableControl( sal_Int16 ElementID, sal_Bool bEnable );
 
 	//------------------------------------------------------------------------------------
 	// XFilePickerNotifier functions
 	//------------------------------------------------------------------------------------
 
-    virtual void SAL_CALL           addFilePickerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XFilePickerListener >& xListener ) throw ( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL           removeFilePickerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XFilePickerListener >& xListener ) throw ( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL           addFilePickerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XFilePickerListener >& xListener );
+    virtual void SAL_CALL           removeFilePickerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XFilePickerListener >& xListener );
 
 	//------------------------------------------------------------------------------------
 	// XFilePreview functions
 	//------------------------------------------------------------------------------------
 
-    virtual com::sun::star::uno::Sequence< sal_Int16 > SAL_CALL getSupportedImageFormats() throw ( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Int32 SAL_CALL      getTargetColorDepth() throw ( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Int32 SAL_CALL      getAvailableWidth() throw ( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Int32 SAL_CALL      getAvailableHeight() throw ( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL           setImage( sal_Int16 aImageFormat, const com::sun::star::uno::Any& aImage ) throw ( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL       setShowState( sal_Bool bShowState ) throw ( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL       getShowState() throw ( ::com::sun::star::uno::RuntimeException );
+    virtual com::sun::star::uno::Sequence< sal_Int16 > SAL_CALL getSupportedImageFormats();
+    virtual sal_Int32 SAL_CALL      getTargetColorDepth();
+    virtual sal_Int32 SAL_CALL      getAvailableWidth();
+    virtual sal_Int32 SAL_CALL      getAvailableHeight();
+    virtual void SAL_CALL           setImage( sal_Int16 aImageFormat, const com::sun::star::uno::Any& aImage );
+    virtual sal_Bool SAL_CALL       setShowState( sal_Bool bShowState );
+    virtual sal_Bool SAL_CALL       getShowState();
 
 	//------------------------------------------------------------------------------------
 	// XFilterManager functions
 	//------------------------------------------------------------------------------------
 
-	virtual void SAL_CALL 			appendFilter( const ::rtl::OUString& aTitle, const ::rtl::OUString& aFilter ) throw( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL			setCurrentFilter( const ::rtl::OUString& aTitle ) throw( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL	getCurrentFilter() throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL 			appendFilter( const ::rtl::OUString& aTitle, const ::rtl::OUString& aFilter );
+	virtual void SAL_CALL			setCurrentFilter( const ::rtl::OUString& aTitle );
+	virtual ::rtl::OUString SAL_CALL	getCurrentFilter();
 
 	//------------------------------------------------------------------------------------
 	// XFilterGroupManager functions
 	//------------------------------------------------------------------------------------
-    virtual void SAL_CALL			appendFilterGroup( const ::rtl::OUString& sGroupTitle, const com::sun::star::uno::Sequence< com::sun::star::beans::StringPair >& aFilters ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL			appendFilterGroup( const ::rtl::OUString& sGroupTitle, const com::sun::star::uno::Sequence< com::sun::star::beans::StringPair >& aFilters );
 
 	//------------------------------------------------------------------------------------
 	// XInitialization functions
 	//------------------------------------------------------------------------------------
 
-    virtual void SAL_CALL			initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments ) throw ( com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL			initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments );
 
 	//------------------------------------------------------------------------------------
 	// XServiceInfo functions
 	//------------------------------------------------------------------------------------
 
 	/* XServiceInfo */
-    virtual ::rtl::OUString SAL_CALL	getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL		supportsService( const ::rtl::OUString& sServiceName ) throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL	getImplementationName();
+    virtual sal_Bool SAL_CALL		supportsService( const ::rtl::OUString& sServiceName );
     virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-									getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );
+									getSupportedServiceNames();
 
 	/* Helper for XServiceInfo */
 	static com::sun::star::uno::Sequence< ::rtl::OUString >
@@ -193,8 +193,7 @@ public:
 
     /* Helper for registry */
 	static ::com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL impl_createInstance (
-		const ::com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext )
-		throw( com::sun::star::uno::Exception );
+		const ::com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext );
 
 protected:
 	//------------------------------------------------------------------------------------
@@ -205,8 +204,7 @@ protected:
 	virtual	sal_Bool		implHandleInitializationArgument(
 								const ::rtl::OUString& _rName,
 								const ::com::sun::star::uno::Any& _rValue
-							)
-							SAL_THROW( ( ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException ) );
+							);
 
 private:
 	WinBits				getWinBits( WinBits& rExtraBits );

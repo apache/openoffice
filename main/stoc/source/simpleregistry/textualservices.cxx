@@ -443,130 +443,75 @@ private:
         STATE_IMPLEMENTATION_SINGLETON, STATE_SERVICES, STATE_SERVICE,
         STATE_SINGLETONS, STATE_SINGLETON, STATE_REGISTEREDBY };
 
-    virtual rtl::OUString SAL_CALL getKeyName()
-        throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getKeyName();
 
-    virtual sal_Bool SAL_CALL isReadOnly() throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isReadOnly();
 
-    virtual sal_Bool SAL_CALL isValid() throw(css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isValid();
 
     virtual css::registry::RegistryKeyType SAL_CALL getKeyType(
-        rtl::OUString const & rKeyName)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & rKeyName);
 
-    virtual css::registry::RegistryValueType SAL_CALL getValueType() throw(
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual css::registry::RegistryValueType SAL_CALL getValueType();
 
-    virtual sal_Int32 SAL_CALL getLongValue() throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getLongValue();
 
-    virtual void SAL_CALL setLongValue(sal_Int32 value) throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual void SAL_CALL setLongValue(sal_Int32 value);
 
-    virtual css::uno::Sequence< sal_Int32 > SAL_CALL getLongListValue() throw(
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< sal_Int32 > SAL_CALL getLongListValue();
 
     virtual void SAL_CALL setLongListValue(
-        com::sun::star::uno::Sequence< sal_Int32 > const & seqValue)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        com::sun::star::uno::Sequence< sal_Int32 > const & seqValue);
 
-    virtual rtl::OUString SAL_CALL getAsciiValue() throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getAsciiValue();
 
-    virtual void SAL_CALL setAsciiValue(rtl::OUString const & value) throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual void SAL_CALL setAsciiValue(rtl::OUString const & value);
 
-    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getAsciiListValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getAsciiListValue();
 
     virtual void SAL_CALL setAsciiListValue(
-        css::uno::Sequence< rtl::OUString > const & seqValue)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        css::uno::Sequence< rtl::OUString > const & seqValue);
 
-    virtual rtl::OUString SAL_CALL getStringValue() throw(
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getStringValue();
 
-    virtual void SAL_CALL setStringValue(rtl::OUString const & value) throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual void SAL_CALL setStringValue(rtl::OUString const & value);
 
-    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getStringListValue()
-        throw (
-            css::registry::InvalidRegistryException,
-            css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getStringListValue();
 
     virtual void SAL_CALL setStringListValue(
-        css::uno::Sequence< rtl::OUString > const & seqValue)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        css::uno::Sequence< rtl::OUString > const & seqValue);
 
-    virtual css::uno::Sequence< sal_Int8 > SAL_CALL getBinaryValue() throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< sal_Int8 > SAL_CALL getBinaryValue();
 
     virtual void SAL_CALL setBinaryValue(
-        css::uno::Sequence< sal_Int8 > const & value)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        css::uno::Sequence< sal_Int8 > const & value);
 
     virtual css::uno::Reference< css::registry::XRegistryKey > SAL_CALL openKey(
-        rtl::OUString const & aKeyName)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & aKeyName);
 
     virtual css::uno::Reference< css::registry::XRegistryKey > SAL_CALL
-    createKey(rtl::OUString const & aKeyName) throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    createKey(rtl::OUString const & aKeyName);
 
-    virtual void SAL_CALL closeKey() throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual void SAL_CALL closeKey();
 
-    virtual void SAL_CALL deleteKey(rtl::OUString const & rKeyName) throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual void SAL_CALL deleteKey(rtl::OUString const & rKeyName);
 
     virtual
     css::uno::Sequence< css::uno::Reference< css::registry::XRegistryKey > >
-    SAL_CALL openKeys() throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    SAL_CALL openKeys();
 
-    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getKeyNames() throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual css::uno::Sequence< rtl::OUString > SAL_CALL getKeyNames();
 
     virtual sal_Bool SAL_CALL createLink(
-        rtl::OUString const & aLinkName, rtl::OUString const & aLinkTarget)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & aLinkName, rtl::OUString const & aLinkTarget);
 
-    virtual void SAL_CALL deleteLink(rtl::OUString const & rLinkName) throw (
-        css::registry::InvalidRegistryException, css::uno::RuntimeException);
+    virtual void SAL_CALL deleteLink(rtl::OUString const & rLinkName);
 
     virtual rtl::OUString SAL_CALL getLinkTarget(
-        rtl::OUString const & rLinkName)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & rLinkName);
 
     virtual rtl::OUString SAL_CALL getResolvedName(
-        rtl::OUString const & aKeyName)
-        throw (
-            css::registry::InvalidRegistryException,
-            css::uno::RuntimeException);
+        rtl::OUString const & aKeyName);
 
     bool find(
         rtl::OUString const & relative, std::vector< rtl::OUString > * path,
@@ -578,22 +523,20 @@ private:
     std::vector< rtl::OUString > path_;
 };
 
-rtl::OUString Key::getKeyName() throw (css::uno::RuntimeException) {
+rtl::OUString Key::getKeyName() {
     return pathToString(path_);
 }
 
 sal_Bool Key::isReadOnly()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     return true;
 }
 
-sal_Bool Key::isValid() throw(css::uno::RuntimeException) {
+sal_Bool Key::isValid() {
     return true;
 }
 
 css::registry::RegistryKeyType Key::getKeyType(rtl::OUString const & rKeyName)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     if (!find(rtl::OUString(), 0, 0, 0)) {
         throw css::registry::InvalidRegistryException(
@@ -605,7 +548,6 @@ css::registry::RegistryKeyType Key::getKeyType(rtl::OUString const & rKeyName)
 }
 
 css::registry::RegistryValueType Key::getValueType()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     css::registry::RegistryValueType type =
         css::registry::RegistryValueType_NOT_DEFINED;
@@ -613,9 +555,7 @@ css::registry::RegistryValueType Key::getValueType()
     return type;
 }
 
-sal_Int32 Key::getLongValue() throw (
-    css::registry::InvalidRegistryException,
-    css::registry::InvalidValueException, css::uno::RuntimeException)
+sal_Int32 Key::getLongValue()
 {
     throw css::registry::InvalidValueException(
         rtl::OUString(
@@ -626,7 +566,6 @@ sal_Int32 Key::getLongValue() throw (
 }
 
 void Key::setLongValue(sal_Int32)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -636,9 +575,7 @@ void Key::setLongValue(sal_Int32)
         static_cast< OWeakObject * >(this));
 }
 
-css::uno::Sequence< sal_Int32 > Key::getLongListValue() throw (
-    css::registry::InvalidRegistryException,
-    css::registry::InvalidValueException, css::uno::RuntimeException)
+css::uno::Sequence< sal_Int32 > Key::getLongListValue()
 {
     throw css::registry::InvalidValueException(
         rtl::OUString(
@@ -649,7 +586,6 @@ css::uno::Sequence< sal_Int32 > Key::getLongListValue() throw (
 }
 
 void Key::setLongListValue(css::uno::Sequence< sal_Int32 > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -659,9 +595,7 @@ void Key::setLongListValue(css::uno::Sequence< sal_Int32 > const &)
         static_cast< OWeakObject * >(this));
 }
 
-rtl::OUString Key::getAsciiValue() throw (
-    css::registry::InvalidRegistryException,
-    css::registry::InvalidValueException, css::uno::RuntimeException)
+rtl::OUString Key::getAsciiValue()
 {
     State state = STATE_ROOT;
     OSL_VERIFY(find(rtl::OUString(), 0, &state, 0));
@@ -681,7 +615,6 @@ rtl::OUString Key::getAsciiValue() throw (
 }
 
 void Key::setAsciiValue(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -691,9 +624,7 @@ void Key::setAsciiValue(rtl::OUString const &)
         static_cast< OWeakObject * >(this));
 }
 
-css::uno::Sequence< rtl::OUString > Key::getAsciiListValue() throw (
-    css::registry::InvalidRegistryException,
-    css::registry::InvalidValueException, css::uno::RuntimeException)
+css::uno::Sequence< rtl::OUString > Key::getAsciiListValue()
 {
     State state = STATE_ROOT;
     OSL_VERIFY(find(rtl::OUString(), 0, &state, 0));
@@ -733,7 +664,6 @@ css::uno::Sequence< rtl::OUString > Key::getAsciiListValue() throw (
 }
 
 void Key::setAsciiListValue(css::uno::Sequence< rtl::OUString > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -743,9 +673,7 @@ void Key::setAsciiListValue(css::uno::Sequence< rtl::OUString > const &)
         static_cast< OWeakObject * >(this));
 }
 
-rtl::OUString Key::getStringValue() throw (
-    css::registry::InvalidRegistryException,
-    css::registry::InvalidValueException, css::uno::RuntimeException)
+rtl::OUString Key::getStringValue()
 {
     State state = STATE_ROOT;
     OSL_VERIFY(find(rtl::OUString(), 0, &state, 0));
@@ -773,7 +701,6 @@ rtl::OUString Key::getStringValue() throw (
 }
 
 void Key::setStringValue(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -783,9 +710,7 @@ void Key::setStringValue(rtl::OUString const &)
         static_cast< OWeakObject * >(this));
 }
 
-css::uno::Sequence< rtl::OUString > Key::getStringListValue() throw (
-    css::registry::InvalidRegistryException,
-    css::registry::InvalidValueException, css::uno::RuntimeException)
+css::uno::Sequence< rtl::OUString > Key::getStringListValue()
 {
     throw css::registry::InvalidValueException(
         rtl::OUString(
@@ -796,7 +721,6 @@ css::uno::Sequence< rtl::OUString > Key::getStringListValue() throw (
 }
 
 void Key::setStringListValue(css::uno::Sequence< rtl::OUString > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -807,9 +731,6 @@ void Key::setStringListValue(css::uno::Sequence< rtl::OUString > const &)
 }
 
 css::uno::Sequence< sal_Int8 > Key::getBinaryValue()
-    throw (
-        css::registry::InvalidRegistryException,
-        css::registry::InvalidValueException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidValueException(
         rtl::OUString(
@@ -820,7 +741,6 @@ css::uno::Sequence< sal_Int8 > Key::getBinaryValue()
 }
 
 void Key::setBinaryValue(css::uno::Sequence< sal_Int8 > const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -832,7 +752,6 @@ void Key::setBinaryValue(css::uno::Sequence< sal_Int8 > const &)
 
 css::uno::Reference< css::registry::XRegistryKey > Key::openKey(
     rtl::OUString const & aKeyName)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     std::vector< rtl::OUString > path;
     if (!find(aKeyName, &path, 0, 0)) {
@@ -843,7 +762,6 @@ css::uno::Reference< css::registry::XRegistryKey > Key::openKey(
 
 css::uno::Reference< css::registry::XRegistryKey > Key::createKey(
     rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -854,11 +772,9 @@ css::uno::Reference< css::registry::XRegistryKey > Key::createKey(
 }
 
 void Key::closeKey()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {}
 
 void Key::deleteKey(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -870,7 +786,6 @@ void Key::deleteKey(rtl::OUString const &)
 
 css::uno::Sequence< css::uno::Reference< css::registry::XRegistryKey > >
 Key::openKeys()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     css::uno::Sequence< rtl::OUString > names(getChildren());
     css::uno::Sequence< css::uno::Reference< css::registry::XRegistryKey > >
@@ -883,7 +798,6 @@ Key::openKeys()
 }
 
 css::uno::Sequence< rtl::OUString > Key::getKeyNames()
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     css::uno::Sequence< rtl::OUString > names(getChildren());
     rtl::OUString prefix(pathToString(path_));
@@ -895,7 +809,6 @@ css::uno::Sequence< rtl::OUString > Key::getKeyNames()
 }
 
 sal_Bool Key::createLink(rtl::OUString const &, rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -906,7 +819,6 @@ sal_Bool Key::createLink(rtl::OUString const &, rtl::OUString const &)
 }
 
 void Key::deleteLink(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -917,7 +829,6 @@ void Key::deleteLink(rtl::OUString const &)
 }
 
 rtl::OUString Key::getLinkTarget(rtl::OUString const &)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     throw css::registry::InvalidRegistryException(
         rtl::OUString(
@@ -928,7 +839,6 @@ rtl::OUString Key::getLinkTarget(rtl::OUString const &)
 }
 
 rtl::OUString Key::getResolvedName(rtl::OUString const & aKeyName)
-    throw (css::registry::InvalidRegistryException, css::uno::RuntimeException)
 {
     std::vector< rtl::OUString > path;
     find(aKeyName, &path, 0, 0);

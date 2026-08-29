@@ -128,51 +128,37 @@ public:
 	AccessibleShape (
         const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape>& rxShape, const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible>& rxParent, const AccessibleShapeTreeInfo& rShapeTreeInfo, sal_Int32 nIndex = -1);
 	 //Solution: Overwrite the object's current name.
-    virtual ::rtl::OUString SAL_CALL  	getAccessibleName (void) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL  	getAccessibleDescription() throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet> SAL_CALL getAccessibleRelationSet (void) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL  	getAccessibleName (void);
+    virtual ::rtl::OUString SAL_CALL  	getAccessibleDescription();
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet> SAL_CALL getAccessibleRelationSet (void);
 //=====  XAccessibleSelection  ============================================
 
 	virtual void SAL_CALL selectAccessibleChild(
-		sal_Int32 nChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException );
+		sal_Int32 nChildIndex );
 
 	virtual sal_Bool SAL_CALL isAccessibleChildSelected(
-		sal_Int32 nChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException );
+		sal_Int32 nChildIndex );
 
-	virtual void SAL_CALL clearAccessibleSelection(  )
-		throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL clearAccessibleSelection(  );
 
-	virtual void SAL_CALL selectAllAccessibleChildren(  )
-		throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL selectAllAccessibleChildren(  );
 
-	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  )
-		throw ( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  );
 
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild(
-		sal_Int32 nSelectedChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException);
+		sal_Int32 nSelectedChildIndex );
 
 	virtual void SAL_CALL deselectAccessibleChild(
-		sal_Int32 nSelectedChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException );
+		sal_Int32 nSelectedChildIndex );
 
 	// ====== XAccessibleExtendedAttributes =====================================
-	virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes()
-	throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
+	virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() ;
 	///	Return this object's role.
-	virtual sal_Int16 SAL_CALL getAccessibleRole (void) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int16 SAL_CALL getAccessibleRole (void);
     //=====  XAccessibleGroupPosition  =========================================
     virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL
-        getGroupPosition( const ::com::sun::star::uno::Any& rAny )
-        throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getObjectLink( const ::com::sun::star::uno::Any& accoject )
-        throw (::com::sun::star::uno::RuntimeException);
+        getGroupPosition( const ::com::sun::star::uno::Any& rAny );
+	virtual ::rtl::OUString SAL_CALL getObjectLink( const ::com::sun::star::uno::Any& accoject );
     /** The destructor releases its children manager and text engine if
         still existent.  These are responsible to send appropriate events.
     */
@@ -237,8 +223,7 @@ public:
 
     ///	Return the number of currently visible children.
     virtual sal_Int32 SAL_CALL
-    	getAccessibleChildCount (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleChildCount (void);
 
     /**	Return the specified child.
         @param nIndex
@@ -251,45 +236,35 @@ public:
     */
     virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible> SAL_CALL
-    	getAccessibleChild (sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    	getAccessibleChild (sal_Int32 nIndex);
 
 
     ///	Return the set of current states.
 	virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessibleStateSet> SAL_CALL
-    	getAccessibleStateSet (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleStateSet (void);
 
 	///	Return this objects index among the parents children.
 	virtual	sal_Int32 SAL_CALL
-    	getAccessibleIndexInParent (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleIndexInParent (void);
 
     //=====  XAccessibleComponent  ============================================
 
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
-        getAccessibleAtPoint (const ::com::sun::star::awt::Point& aPoint)
-        throw (::com::sun::star::uno::RuntimeException);
+        getAccessibleAtPoint (const ::com::sun::star::awt::Point& aPoint);
 
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void);
 
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void);
 
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void);
 
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void);
 
-    virtual sal_Int32 SAL_CALL getForeground (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getForeground (void);
 
-    virtual sal_Int32 SAL_CALL getBackground (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getBackground (void);
 
 
 
@@ -309,8 +284,7 @@ public:
     virtual void SAL_CALL
         addEventListener (
             const ::com::sun::star::uno::Reference<
-            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener)
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener);
 
     /** This call is forwarded to a) the base class and b) to the
         accessible edit engine if it is present.
@@ -322,15 +296,13 @@ public:
     virtual void SAL_CALL
         removeEventListener (
             const ::com::sun::star::uno::Reference<
-            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener)
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener);
 
 
     //=====  XInterface  ======================================================
 
     virtual com::sun::star::uno::Any SAL_CALL
-        queryInterface (const com::sun::star::uno::Type & rType)
-        throw (::com::sun::star::uno::RuntimeException);
+        queryInterface (const com::sun::star::uno::Type & rType);
 
     virtual void SAL_CALL
         acquire (void)
@@ -346,18 +318,15 @@ public:
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName (void)
-	    throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName (void);
 
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-        getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames (void);
 
     //=====  XTypeProvider  ===================================================
 
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
-        getTypes (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getTypes (void);
 
     //=====  IAccessibleViewForwarderListener  ================================
     virtual void ViewForwarderChanged (ChangeType aChangeType,
@@ -369,47 +338,43 @@ public:
         remains functional when this happens.
     */
     virtual void SAL_CALL
-        disposing (const ::com::sun::star::lang::EventObject& Source)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const ::com::sun::star::lang::EventObject& Source);
 
     //=====  document::XEventListener  ========================================
 
     virtual void SAL_CALL
-        notifyEvent (const ::com::sun::star::document::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        notifyEvent (const ::com::sun::star::document::EventObject& rEventObject);
 
 
     //===== XUnoTunnel ========================================================
 
     static const ::com::sun::star::uno::Sequence< sal_Int8 >&	getUnoTunnelImplementationId() throw();
 	static AccessibleShape*										getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxIFace ) throw();
-	sal_Int64													SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& _rIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+	sal_Int64													SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& _rIdentifier );
 
 	//===== XAccessibleHypertext ========================================================
-    virtual sal_Int32 SAL_CALL getHyperLinkCount() 	throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getHyperLinkCount();
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleHyperlink >
-		SAL_CALL getHyperLink( sal_Int32 nLinkIndex )
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getHyperLinkIndex( sal_Int32 nCharIndex )
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+		SAL_CALL getHyperLink( sal_Int32 nLinkIndex );
+    virtual sal_Int32 SAL_CALL getHyperLinkIndex( sal_Int32 nCharIndex );
 	//=====  XAccesibleText  ==================================================
-		virtual sal_Int32 SAL_CALL getCaretPosition(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL setCaretPosition( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual sal_Unicode SAL_CALL getCharacter( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);//Shen Zhen Jie changed sal_Unicode to sal_uInt32; change back to sal_Unicode
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::awt::Rectangle SAL_CALL getCharacterBounds( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual sal_Int32 SAL_CALL getCharacterCount(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Int32 SAL_CALL getIndexAtPoint( const ::com::sun::star::awt::Point& aPoint ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getSelectedText(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Int32 SAL_CALL getSelectionStart(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Int32 SAL_CALL getSelectionEnd(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getText(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getTextRange( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL getCaretPosition(  );
+		virtual sal_Bool SAL_CALL setCaretPosition( sal_Int32 nIndex );
+		virtual sal_Unicode SAL_CALL getCharacter( sal_Int32 nIndex );//Shen Zhen Jie changed sal_Unicode to sal_uInt32; change back to sal_Unicode
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes );
+		virtual ::com::sun::star::awt::Rectangle SAL_CALL getCharacterBounds( sal_Int32 nIndex );
+		virtual sal_Int32 SAL_CALL getCharacterCount(  );
+		virtual sal_Int32 SAL_CALL getIndexAtPoint( const ::com::sun::star::awt::Point& aPoint );
+		virtual ::rtl::OUString SAL_CALL getSelectedText(  );
+		virtual sal_Int32 SAL_CALL getSelectionStart(  );
+		virtual sal_Int32 SAL_CALL getSelectionEnd(  );
+		virtual sal_Bool SAL_CALL setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex );
+		virtual ::rtl::OUString SAL_CALL getText(  );
+		virtual ::rtl::OUString SAL_CALL getTextRange( sal_Int32 nStartIndex, sal_Int32 nEndIndex );
+		virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType );
+		virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType );
+		virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType );
+		virtual sal_Bool SAL_CALL copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex );
 
     //===== Misc ========================================================
 
@@ -463,23 +428,19 @@ protected:
     /**	Create a base name string that contains the accessible name.
     */
 	virtual ::rtl::OUString
-    	CreateAccessibleBaseName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleBaseName (void);
 
     /**	Create a unique name string that contains the accessible name.  The
         name consists of the base name and the index.
     */
 	virtual ::rtl::OUString
-    	CreateAccessibleName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleName (void);
 
     ///	Create a description string that contains the accessible description.
 	virtual ::rtl::OUString
-    	CreateAccessibleDescription (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleDescription (void);
 	virtual ::rtl::OUString
-       GetFullAccessibleName(AccessibleShape *shape)
-       throw (::com::sun::star::uno::RuntimeException);
+       GetFullAccessibleName(AccessibleShape *shape);
     virtual::rtl::OUString GetStyle();
 	void UpdateDocumentAllSelState(::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleStateSet > &xStateSet);

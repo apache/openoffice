@@ -711,14 +711,11 @@ private:
     virtual bool isSoundEnabled (void) const;
 
     // XEventListener:
-    virtual void SAL_CALL disposing( lang::EventObject const& evt )
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL disposing( lang::EventObject const& evt );
     // XModifyListener:
-    virtual void SAL_CALL modified( const lang::EventObject& aEvent )
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL modified( const lang::EventObject& aEvent );
     // XPaintListener:
-    virtual void SAL_CALL windowPaint( const awt::PaintEvent& e )
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL windowPaint( const awt::PaintEvent& e );
 
     // WeakComponentImplHelperBase:
     virtual void SAL_CALL disposing();
@@ -1014,7 +1011,6 @@ void SlideView::_dispose()
 
 // XEventListener
 void SlideView::disposing( lang::EventObject const& evt )
-    throw (uno::RuntimeException)
 {
     (void)evt;
 
@@ -1032,7 +1028,6 @@ void SlideView::disposing( lang::EventObject const& evt )
 
 // XModifyListener
 void SlideView::modified( const lang::EventObject& /*aEvent*/ )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard const guard( m_aMutex );
 
@@ -1083,7 +1078,6 @@ void SlideView::modified( const lang::EventObject& /*aEvent*/ )
 
 // XPaintListener
 void SlideView::windowPaint( const awt::PaintEvent& /*e*/ )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard aGuard( m_aMutex );
 

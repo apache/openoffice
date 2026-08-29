@@ -26,4 +26,3 @@ $(eval $(call gb_Package_add_file,officecfg_misc,pck/oo-org-map.properties,regis
 $(eval $(call gb_Package_add_file,officecfg_misc,pck/oo-common.ldif,registry/schema/oo-common.ldif))
 $(eval $(call gb_Package_add_file,officecfg_misc,pck/oo-common-ad.ldf,registry/schema/oo-common-ad.ldf))
 $(eval $(call gb_Package_add_file,officecfg_misc,pck/oo-common.conf,registry/schema/oo-common.conf))
-

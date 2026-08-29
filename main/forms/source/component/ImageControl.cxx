@@ -219,7 +219,7 @@ StringSequence	OImageControlModel::getSupportedServiceNames() throw()
 }
 
 //------------------------------------------------------------------------------
-Any SAL_CALL OImageControlModel::queryAggregation(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL OImageControlModel::queryAggregation(const Type& _rType)
 {
     // order matters: we want to "override" the XImageProducer interface of the aggregate with out
     // own XImageProducer interface, thus we need to query OImageControlModel_Base first
@@ -261,7 +261,7 @@ void OImageControlModel::getFastPropertyValue(Any& rValue, sal_Int32 nHandle) co
 }
 
 //------------------------------------------------------------------------------
-void OImageControlModel::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue) throw ( ::com::sun::star::uno::Exception)
+void OImageControlModel::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue)
 {
 	switch (nHandle)
 	{
@@ -320,7 +320,6 @@ void OImageControlModel::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, con
 
 //------------------------------------------------------------------------------
 sal_Bool OImageControlModel::convertFastPropertyValue(Any& rConvertedValue, Any& rOldValue, sal_Int32 nHandle, const Any& rValue)
-								throw( IllegalArgumentException )
 {
 	switch (nHandle)
 	{
@@ -363,13 +362,13 @@ void OImageControlModel::describeAggregateProperties( Sequence< Property >& /* [
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString OImageControlModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString OImageControlModel::getServiceName()
 {
 	return FRM_COMPONENT_IMAGECONTROL;	// old (non-sun) name for compatibility !
 }
 
 //------------------------------------------------------------------------------
-void OImageControlModel::write(const Reference<XObjectOutputStream>& _rxOutStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void OImageControlModel::write(const Reference<XObjectOutputStream>& _rxOutStream)
 {
 	// Basisklasse
 	OBoundControlModel::write(_rxOutStream);
@@ -383,7 +382,7 @@ void OImageControlModel::write(const Reference<XObjectOutputStream>& _rxOutStrea
 }
 
 //------------------------------------------------------------------------------
-void OImageControlModel::read(const Reference<XObjectInputStream>& _rxInStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void OImageControlModel::read(const Reference<XObjectInputStream>& _rxInStream)
 {
 	OBoundControlModel::read(_rxInStream);
 
@@ -661,25 +660,25 @@ void OImageControlModel::resetNoBroadcast()
 }
 
 //--------------------------------------------------------------------
-Reference< XImageProducer > SAL_CALL OImageControlModel::getImageProducer() throw ( RuntimeException)
+Reference< XImageProducer > SAL_CALL OImageControlModel::getImageProducer()
 {
     return this;
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL OImageControlModel::addConsumer( const Reference< XImageConsumer >& _rxConsumer ) throw (RuntimeException)
+void SAL_CALL OImageControlModel::addConsumer( const Reference< XImageConsumer >& _rxConsumer )
 {
     GetImageProducer()->addConsumer( _rxConsumer );
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL OImageControlModel::removeConsumer( const Reference< XImageConsumer >& _rxConsumer ) throw (RuntimeException)
+void SAL_CALL OImageControlModel::removeConsumer( const Reference< XImageConsumer >& _rxConsumer )
 {
     GetImageProducer()->removeConsumer( _rxConsumer );
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL OImageControlModel::startProduction(  ) throw (RuntimeException)
+void SAL_CALL OImageControlModel::startProduction(  )
 {
     GetImageProducer()->startProduction();
 }
@@ -737,7 +736,7 @@ OImageControlControl::OImageControlControl(const Reference<XMultiServiceFactory>
 }
 
 //------------------------------------------------------------------------------
-Any SAL_CALL OImageControlControl::queryAggregation(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL OImageControlControl::queryAggregation(const Type& _rType)
 {
     Any aReturn = OBoundControl::queryAggregation( _rType );
     if ( !aReturn.hasValue() )
@@ -762,13 +761,13 @@ StringSequence	OImageControlControl::getSupportedServiceNames() throw()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OImageControlControl::addModifyListener( const Reference< XModifyListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL OImageControlControl::addModifyListener( const Reference< XModifyListener >& _Listener )
 {
     m_aModifyListeners.addInterface( _Listener );
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OImageControlControl::removeModifyListener( const Reference< XModifyListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL OImageControlControl::removeModifyListener( const Reference< XModifyListener >& _Listener )
 {
     m_aModifyListeners.removeInterface( _Listener );
 }
@@ -783,7 +782,7 @@ void SAL_CALL OImageControlControl::disposing()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OImageControlControl::disposing( const EventObject& _Event ) throw(RuntimeException)
+void SAL_CALL OImageControlControl::disposing( const EventObject& _Event )
 {
     OBoundControl::disposing( _Event );
 }
@@ -899,7 +898,7 @@ bool OImageControlControl::impl_isEmptyGraphics_nothrow() const
 
 // MouseListener
 //------------------------------------------------------------------------------
-void OImageControlControl::mousePressed(const ::com::sun::star::awt::MouseEvent& e) throw ( ::com::sun::star::uno::RuntimeException)
+void OImageControlControl::mousePressed(const ::com::sun::star::awt::MouseEvent& e)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -999,17 +998,17 @@ void OImageControlControl::mousePressed(const ::com::sun::star::awt::MouseEvent&
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OImageControlControl::mouseReleased(const awt::MouseEvent& /*e*/) throw ( RuntimeException )
+void SAL_CALL OImageControlControl::mouseReleased(const awt::MouseEvent& /*e*/)
 {
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OImageControlControl::mouseEntered(const awt::MouseEvent& /*e*/) throw ( RuntimeException )
+void SAL_CALL OImageControlControl::mouseEntered(const awt::MouseEvent& /*e*/)
 {
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OImageControlControl::mouseExited(const awt::MouseEvent& /*e*/) throw ( RuntimeException )
+void SAL_CALL OImageControlControl::mouseExited(const awt::MouseEvent& /*e*/)
 {
 }
 

@@ -143,7 +143,6 @@ bool PasswordContainerHelper::handleAuthenticationRequest(
         xSupplyAuthentication,
     rtl::OUString const & rURL,
     uno::Reference< task::XInteractionHandler > const & xIH )
-        SAL_THROW((uno::RuntimeException))
 {
     // Is continuation even a XInteractionSupplyAuthentication2, which
     // is derived from XInteractionSupplyAuthentication?
@@ -256,7 +255,6 @@ bool PasswordContainerHelper::addRecord(
     uno::Sequence< rtl::OUString > const & rPasswords,
     uno::Reference< task::XInteractionHandler > const & xIH,
     bool bPersist )
-        SAL_THROW((uno::RuntimeException))
 {
     try
     {
@@ -332,7 +330,6 @@ PasswordContainerInteractionHandler::~PasswordContainerInteractionHandler()
 // virtual
 ::rtl::OUString SAL_CALL
 PasswordContainerInteractionHandler::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return getImplementationName_Static();
 }
@@ -342,7 +339,6 @@ PasswordContainerInteractionHandler::getImplementationName()
 sal_Bool SAL_CALL
 PasswordContainerInteractionHandler::supportsService(
         const ::rtl::OUString& ServiceName )
-    throw ( uno::RuntimeException )
 {
     uno::Sequence< rtl::OUString > aSNL = getSupportedServiceNames();
     const rtl::OUString * pArray = aSNL.getConstArray();
@@ -358,7 +354,6 @@ PasswordContainerInteractionHandler::supportsService(
 // virtual
 uno::Sequence< ::rtl::OUString > SAL_CALL
 PasswordContainerInteractionHandler::getSupportedServiceNames()
-    throw ( uno::RuntimeException )
 {
     return getSupportedServiceNames_Static();
 }
@@ -394,7 +389,6 @@ PasswordContainerInteractionHandler::getSupportedServiceNames_Static()
 void SAL_CALL
 PasswordContainerInteractionHandler::handle(
         const uno::Reference< task::XInteractionRequest >& rRequest )
-    throw ( uno::RuntimeException )
 {
     if ( !rRequest.is() )
         return;
@@ -453,7 +447,6 @@ PasswordContainerInteractionHandler::handle(
 static uno::Reference< uno::XInterface > SAL_CALL
 PasswordContainerInteractionHandler_CreateInstance(
         const uno::Reference< lang::XMultiServiceFactory> & rSMgr )
-    throw( uno::Exception )
 {
     lang::XServiceInfo * pX = static_cast< lang::XServiceInfo * >(
         new PasswordContainerInteractionHandler( rSMgr ) );

@@ -148,7 +148,7 @@ void FmRecordCountListener::DisConnect()
 }
 
 //------------------------------------------------------------------------
-void SAL_CALL FmRecordCountListener::disposing(const ::com::sun::star::lang::EventObject& /*Source*/) throw( RuntimeException )
+void SAL_CALL FmRecordCountListener::disposing(const ::com::sun::star::lang::EventObject& /*Source*/)
 {
     DBG_ASSERT(m_xListening.is(), "FmRecordCountListener::disposing should never have been called without a propset !");
     DisConnect();
@@ -166,7 +166,7 @@ void FmRecordCountListener::NotifyCurrentCount()
 }
 
 //------------------------------------------------------------------------
-void FmRecordCountListener::propertyChange(const  ::com::sun::star::beans::PropertyChangeEvent& /*evt*/) throw(::com::sun::star::uno::RuntimeException)
+void FmRecordCountListener::propertyChange(const  ::com::sun::star::beans::PropertyChangeEvent& /*evt*/)
 {
     NotifyCurrentCount();
 }

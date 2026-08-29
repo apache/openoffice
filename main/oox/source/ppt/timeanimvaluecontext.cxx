@@ -47,7 +47,6 @@ namespace oox { namespace ppt {
 
 
 	void SAL_CALL TimeAnimValueListContext::endFastElement( sal_Int32 aElement )
-		throw ( SAXException, RuntimeException)
 	{
 		if( aElement == PPT_TOKEN( tav ) )
 		{
@@ -58,7 +57,6 @@ namespace oox { namespace ppt {
 
 	Reference< XFastContextHandler > SAL_CALL TimeAnimValueListContext::createFastChildContext( ::sal_Int32 aElementToken,
 																																															const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 	{
 		Reference< XFastContextHandler > xRet;
 

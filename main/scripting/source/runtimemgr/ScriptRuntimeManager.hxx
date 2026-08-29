@@ -59,12 +59,9 @@ public:
 
 
     // XServiceInfo implementation
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     /**
      * implements XScriptInvocation, invokes the script named in scriptURI
@@ -105,11 +102,7 @@ public:
         const css::uno::Any& invocationCtx,
         const css::uno::Sequence< css::uno::Any >& aParams,
         css::uno::Sequence< sal_Int16 >& aOutParamIndex,
-        css::uno::Sequence< css::uno::Any >& aOutParam )
-        throw ( css::lang::IllegalArgumentException,
-                css::script::CannotConvertException,
-                css::reflection::InvocationTargetException,
-                css::uno::RuntimeException );
+        css::uno::Sequence< css::uno::Any >& aOutParam );
 
     /**
      * implements  XScriptNameResolver, attempts to resolve the script URI
@@ -125,16 +118,12 @@ public:
      */
     virtual css::uno::Reference< dcsssf::storage::XScriptInfo > SAL_CALL resolve(
         const ::rtl::OUString& scriptUri,
-        css::uno::Any& invocationCtx )
-        throw( css::lang::IllegalArgumentException, css::script::CannotConvertException,
-           css::uno::RuntimeException );
+        css::uno::Any& invocationCtx );
 
 private:
     css::uno::Reference< dcsssf::runtime::XScriptInvocation > SAL_CALL getScriptRuntime(
-        const css::uno::Reference< css::uno::XInterface > & scriptInfo )
-        throw( css::uno::RuntimeException );
-    css::uno::Reference< dcsssf::runtime::XScriptNameResolver > SAL_CALL getScriptNameResolver()
-        throw( css::uno::RuntimeException );
+        const css::uno::Reference< css::uno::XInterface > & scriptInfo );
+    css::uno::Reference< dcsssf::runtime::XScriptNameResolver > SAL_CALL getScriptNameResolver();
 
     css::uno::Reference< css::uno::XComponentContext > m_xContext;
     css::uno::Reference< css::lang::XMultiComponentFactory > m_xMgr;

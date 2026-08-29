@@ -59,13 +59,13 @@ public:
 	~ExampleComponent1Impl();
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
     static Sequence< OUString > SAL_CALL getSupportedServiceNames_Static(  );
 
 	// XSimpleRegistry
-    virtual OUString SAL_CALL getMessage() throw(RuntimeException);
+    virtual OUString SAL_CALL getMessage();
 
 protected:
 	Mutex		m_mutex;
@@ -86,7 +86,6 @@ ExampleComponent1Impl::~ExampleComponent1Impl()
 
 //*************************************************************************
 OUString SAL_CALL ExampleComponent1Impl::getImplementationName(  )
-	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME1) );
@@ -94,7 +93,6 @@ OUString SAL_CALL ExampleComponent1Impl::getImplementationName(  )
 
 //*************************************************************************
 sal_Bool SAL_CALL ExampleComponent1Impl::supportsService( const OUString& ServiceName )
-	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	Sequence< OUString > aSNL = getSupportedServiceNames();
@@ -107,7 +105,6 @@ sal_Bool SAL_CALL ExampleComponent1Impl::supportsService( const OUString& Servic
 
 //*************************************************************************
 Sequence<OUString> SAL_CALL ExampleComponent1Impl::getSupportedServiceNames(  )
-	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return getSupportedServiceNames_Static();
@@ -121,7 +118,7 @@ Sequence<OUString> SAL_CALL ExampleComponent1Impl::getSupportedServiceNames_Stat
 }
 
 //*************************************************************************
-OUString SAL_CALL ExampleComponent1Impl::getMessage() throw(RuntimeException)
+OUString SAL_CALL ExampleComponent1Impl::getMessage()
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return OUString::createFromAscii("Lalelu nur der Mann im Mond schaut zu ...");

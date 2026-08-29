@@ -42,7 +42,6 @@ DropTargetListener::~DropTargetListener()
 }
 
 void SAL_CALL DropTargetListener::disposing( const EventObject& Source )
-		throw(RuntimeException)
 {
 
 }
@@ -50,7 +49,6 @@ void SAL_CALL DropTargetListener::disposing( const EventObject& Source )
 
 
 void SAL_CALL DropTargetListener::drop( const DropTargetDropEvent& e )
-	throw(RuntimeException)
 {
 //	e.Context->dropComplete( sal_True);
 //	e.Context->acceptDrop( ACTION_COPY);
@@ -71,7 +69,6 @@ void SAL_CALL DropTargetListener::drop( const DropTargetDropEvent& e )
 }
 
 void SAL_CALL DropTargetListener::dragEnter( const DropTargetDragEnterEvent& dtde )
-	 throw(RuntimeException)
 {
 	//If one drags something that is not moveable
 	if( !(dtde.SourceActions & dtde.DropAction) )
@@ -82,18 +79,15 @@ void SAL_CALL DropTargetListener::dragEnter( const DropTargetDragEnterEvent& dtd
 }
 
 void SAL_CALL DropTargetListener::dragExit( const DropTargetEvent& dte )
-	 throw(RuntimeException)
 {
 }
 
 void SAL_CALL DropTargetListener::dragOver( const DropTargetDragEvent& dtde )
-	 throw(RuntimeException)
 {
 	if( !(dtde.SourceActions & dtde.DropAction) )
 		dtde.Context->acceptDrag( ACTION_COPY);
 }
 
 void SAL_CALL DropTargetListener::dropActionChanged( const DropTargetDragEvent& dtde )
-	throw(RuntimeException)
 {
 }

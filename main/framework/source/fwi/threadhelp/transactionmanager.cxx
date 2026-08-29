@@ -219,7 +219,7 @@ EWorkingMode TransactionManager::getWorkingMode() const
 
     @onerror    -
 *//*-*****************************************************************************************************/
-void  TransactionManager::registerTransaction( EExceptionMode eMode, ERejectReason& eReason ) throw( css::uno::RuntimeException, css::lang::DisposedException )
+void  TransactionManager::registerTransaction( EExceptionMode eMode, ERejectReason& eReason )
 {
     // Look for rejected calls first.
     // If call was refused we throw some exceptions or do nothing!
@@ -261,7 +261,7 @@ void  TransactionManager::registerTransaction( EExceptionMode eMode, ERejectReas
 
     @onerror    -
 *//*-*****************************************************************************************************/
-void  TransactionManager::unregisterTransaction() throw( css::uno::RuntimeException, css::lang::DisposedException )
+void  TransactionManager::unregisterTransaction()
 {
     // This call could not rejected!
     // Safe access to internal member.
@@ -331,7 +331,7 @@ sal_Bool  TransactionManager::isCallRejected( ERejectReason& eReason ) const
 
     @onerror    -
 *//*-*****************************************************************************************************/
-void TransactionManager::impl_throwExceptions( EExceptionMode eMode, ERejectReason eReason ) const throw( css::uno::RuntimeException, css::lang::DisposedException )
+void TransactionManager::impl_throwExceptions( EExceptionMode eMode, ERejectReason eReason ) const
 {
     if( eMode != E_NOEXCEPTIONS )
     {

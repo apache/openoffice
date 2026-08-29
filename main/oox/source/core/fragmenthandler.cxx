@@ -63,56 +63,56 @@ FragmentHandler::~FragmentHandler()
 
 // com.sun.star.xml.sax.XFastDocumentHandler interface ------------------------
 
-void FragmentHandler::startDocument() throw( SAXException, RuntimeException )
+void FragmentHandler::startDocument()
 {
 }
 
-void FragmentHandler::endDocument() throw( SAXException, RuntimeException )
+void FragmentHandler::endDocument()
 {
 }
 
-void FragmentHandler::setDocumentLocator( const Reference< XLocator >& rxLocator ) throw( SAXException, RuntimeException )
+void FragmentHandler::setDocumentLocator( const Reference< XLocator >& rxLocator )
 {
     implSetLocator( rxLocator );
 }
 
 // com.sun.star.xml.sax.XFastContextHandler interface -------------------------
 
-void FragmentHandler::startFastElement( sal_Int32, const Reference< XFastAttributeList >& ) throw( SAXException, RuntimeException )
+void FragmentHandler::startFastElement( sal_Int32, const Reference< XFastAttributeList >& )
 {
 }
 
-void FragmentHandler::startUnknownElement( const OUString&, const OUString&, const Reference< XFastAttributeList >& ) throw( SAXException, RuntimeException )
+void FragmentHandler::startUnknownElement( const OUString&, const OUString&, const Reference< XFastAttributeList >& )
 {
 }
 
-void FragmentHandler::endFastElement( sal_Int32 ) throw( SAXException, RuntimeException )
+void FragmentHandler::endFastElement( sal_Int32 )
 {
 }
 
-void FragmentHandler::endUnknownElement( const OUString&, const OUString& ) throw( SAXException, RuntimeException )
+void FragmentHandler::endUnknownElement( const OUString&, const OUString& )
 {
 }
 
-Reference< XFastContextHandler > FragmentHandler::createFastChildContext( sal_Int32, const Reference< XFastAttributeList >& ) throw( SAXException, RuntimeException )
-{
-    return 0;
-}
-
-Reference< XFastContextHandler > FragmentHandler::createUnknownChildContext( const OUString&, const OUString&, const Reference< XFastAttributeList >& ) throw( SAXException, RuntimeException )
+Reference< XFastContextHandler > FragmentHandler::createFastChildContext( sal_Int32, const Reference< XFastAttributeList >& )
 {
     return 0;
 }
 
-void FragmentHandler::characters( const OUString& ) throw( SAXException, RuntimeException )
+Reference< XFastContextHandler > FragmentHandler::createUnknownChildContext( const OUString&, const OUString&, const Reference< XFastAttributeList >& )
+{
+    return 0;
+}
+
+void FragmentHandler::characters( const OUString& )
 {
 }
 
-void FragmentHandler::ignorableWhitespace( const OUString& ) throw( SAXException, RuntimeException )
+void FragmentHandler::ignorableWhitespace( const OUString& )
 {
 }
 
-void FragmentHandler::processingInstruction( const OUString&, const OUString& ) throw( SAXException, RuntimeException )
+void FragmentHandler::processingInstruction( const OUString&, const OUString& )
 {
 }
 

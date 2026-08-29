@@ -59,37 +59,28 @@ public:
     // XEventMultiplexer
     virtual void SAL_CALL addEventListener (
         const cssu::Reference<css::util::XEventListener>& rxListener,
-        const cssu::Reference<cssu::XInterface>& rxEventFocus)
-        throw(cssu::RuntimeException, cssl::IllegalArgumentException);
+        const cssu::Reference<cssu::XInterface>& rxEventFocus);
     virtual void SAL_CALL removeEventListener (
         const cssu::Reference<css::util::XEventListener>& rxListener,
-        const cssu::Reference<cssu::XInterface>& rxEventFocus)
-        throw(cssu::RuntimeException, cssl::IllegalArgumentException);
+        const cssu::Reference<cssu::XInterface>& rxEventFocus);
     virtual void SAL_CALL removeAllEventListeners (
-        const cssu::Reference<css::util::XEventListener>& rxListener)
-        throw(cssu::RuntimeException, cssl::IllegalArgumentException);
+        const cssu::Reference<css::util::XEventListener>& rxListener);
     virtual void SAL_CALL broadcastEvent (
         const cssl::EventObject& rEventObject,
-        const cssu::Reference<cssu::XInterface>& rxEventFocus)
-        throw(cssu::RuntimeException);
+        const cssu::Reference<cssu::XInterface>& rxEventFocus);
 
     // XSingleComponentFactory
     virtual cssu::Reference<cssu::XInterface> SAL_CALL createInstanceWithContext (
-        const cssu::Reference<cssu::XComponentContext>& rxContext)
-        throw (cssu::Exception, cssu::RuntimeException);
+        const cssu::Reference<cssu::XComponentContext>& rxContext);
     virtual cssu::Reference<cssu::XInterface > SAL_CALL createInstanceWithArgumentsAndContext (
         const cssu::Sequence<cssu::Any>& rArguments,
-        const cssu::Reference<cssu::XComponentContext>& rxContext)
-        throw (cssu::Exception, cssu::RuntimeException);
+        const cssu::Reference<cssu::XComponentContext>& rxContext);
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName (void)
-        throw (cssu::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName (void);
     virtual sal_Bool SAL_CALL supportsService  (
-        const ::rtl::OUString& rsServiceName)
-        throw (cssu::RuntimeException);
-    virtual cssu::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames (void)
-        throw (cssu::RuntimeException);
+        const ::rtl::OUString& rsServiceName);
+    virtual cssu::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames (void);
 
     static ::rtl::OUString SAL_CALL impl_getStaticImplementationName (void);
     static cssu::Reference<cssu::XInterface> SAL_CALL impl_createFactory (
@@ -112,8 +103,7 @@ private:
 
     static cssu::Sequence< ::rtl::OUString > SAL_CALL static_GetSupportedServiceNames (void);
     static cssu::Reference<cssu::XInterface> SAL_CALL static_CreateInstance (
-        const cssu::Reference<cssu::XComponentContext>& rxComponentContext)
-        throw (cssu::Exception);
+        const cssu::Reference<cssu::XComponentContext>& rxComponentContext);
 };
 
 } // end of namespace framework

@@ -160,20 +160,20 @@ namespace svx
 		virtual ~GraphicExporter();
 
 		// XFilter
-		virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& aDescriptor ) throw(RuntimeException);
-		virtual void SAL_CALL cancel(  ) throw(RuntimeException);
+		virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& aDescriptor );
+		virtual void SAL_CALL cancel(  );
 
 		// XExporter
-		virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc ) throw(IllegalArgumentException, RuntimeException);
+		virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc );
 
 		// XServiceInfo
-		virtual OUString SAL_CALL getImplementationName(  ) throw(RuntimeException);
-		virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-		virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw(RuntimeException);
+		virtual OUString SAL_CALL getImplementationName(  );
+		virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+		virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
 
 		// XMimeTypeInfo
-		virtual sal_Bool SAL_CALL supportsMimeType( const ::rtl::OUString& MimeTypeName ) throw (RuntimeException);
-		virtual Sequence< OUString > SAL_CALL getSupportedMimeTypeNames(  ) throw (RuntimeException);
+		virtual sal_Bool SAL_CALL supportsMimeType( const ::rtl::OUString& MimeTypeName );
+		virtual Sequence< OUString > SAL_CALL getSupportedMimeTypeNames(  );
 
 		VirtualDevice* CreatePageVDev( SdrPage* pPage, sal_uIntPtr nWidthPixel, sal_uIntPtr nHeightPixel ) const;
 
@@ -196,7 +196,6 @@ namespace svx
 	};
 
 	SVX_DLLPUBLIC Reference< XInterface > SAL_CALL GraphicExporter_createInstance(const Reference< XMultiServiceFactory > & )
-		throw( Exception )
 	{
 		return (XWeak*)new GraphicExporter();
 	}
@@ -1058,7 +1057,6 @@ bool GraphicExporter::GetGraphic( ExportSettings& rSettings, Graphic& aGraphic, 
 
 // XFilter
 sal_Bool SAL_CALL GraphicExporter::filter( const Sequence< PropertyValue >& aDescriptor )
-	throw(RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1139,7 +1137,6 @@ sal_Bool SAL_CALL GraphicExporter::filter( const Sequence< PropertyValue >& aDes
 }
 
 void SAL_CALL GraphicExporter::cancel()
-	throw(RuntimeException)
 {
 }
 
@@ -1147,7 +1144,6 @@ void SAL_CALL GraphicExporter::cancel()
 
 /** the source 'document' could be a XDrawPage, a XShape or a generic XShapes */
 void SAL_CALL GraphicExporter::setSourceDocument( const Reference< lang::XComponent >& xComponent )
-	throw(IllegalArgumentException, RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1254,13 +1250,11 @@ void SAL_CALL GraphicExporter::setSourceDocument( const Reference< lang::XCompon
 
 // XServiceInfo
 OUString SAL_CALL GraphicExporter::getImplementationName(  )
-	throw(RuntimeException)
 {
 	return GraphicExporter_getImplementationName();
 }
 
 sal_Bool SAL_CALL GraphicExporter::supportsService( const OUString& ServiceName )
-	throw(RuntimeException)
 {
 	Sequence< OUString > aSeq( GraphicExporter_getSupportedServiceNames() );
 	sal_Int32 nArgs = aSeq.getLength();
@@ -1273,13 +1267,12 @@ sal_Bool SAL_CALL GraphicExporter::supportsService( const OUString& ServiceName 
 }
 
 Sequence< OUString > SAL_CALL GraphicExporter::getSupportedServiceNames(  )
-	throw(RuntimeException)
 {
 	return GraphicExporter_getSupportedServiceNames();
 }
 
 // XMimeTypeInfo
-sal_Bool SAL_CALL GraphicExporter::supportsMimeType( const OUString& MimeTypeName ) throw (RuntimeException)
+sal_Bool SAL_CALL GraphicExporter::supportsMimeType( const OUString& MimeTypeName )
 {
 	const String aMimeTypeName( MimeTypeName );
 
@@ -1297,7 +1290,7 @@ sal_Bool SAL_CALL GraphicExporter::supportsMimeType( const OUString& MimeTypeNam
 	return sal_False;
 }
 
-Sequence< OUString > SAL_CALL GraphicExporter::getSupportedMimeTypeNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL GraphicExporter::getSupportedMimeTypeNames(  )
 {
 	GraphicFilter*	pFilter = GraphicFilter::GetGraphicFilter();
 	sal_uInt16 nCount = pFilter->GetExportFormatCount();

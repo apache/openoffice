@@ -61,7 +61,7 @@ PDFIHybridAdaptor::PDFIHybridAdaptor( const uno::Reference< uno::XComponentConte
 }
 
 // XFilter
-sal_Bool SAL_CALL PDFIHybridAdaptor::filter( const uno::Sequence< beans::PropertyValue >& rFilterData ) throw( uno::RuntimeException )
+sal_Bool SAL_CALL PDFIHybridAdaptor::filter( const uno::Sequence< beans::PropertyValue >& rFilterData )
 {
     sal_Bool bRet = sal_False;
     if( m_xModel.is() )
@@ -205,7 +205,7 @@ void SAL_CALL PDFIHybridAdaptor::cancel() throw()
 }
 
 //XImporter
-void SAL_CALL PDFIHybridAdaptor::setTargetDocument( const uno::Reference< lang::XComponent >& xDocument ) throw( lang::IllegalArgumentException )
+void SAL_CALL PDFIHybridAdaptor::setTargetDocument( const uno::Reference< lang::XComponent >& xDocument )
 {
     OSL_TRACE( "PDFIAdaptor::setTargetDocument\n" );
     m_xModel = uno::Reference< frame::XModel >( xDocument, uno::UNO_QUERY );
@@ -276,7 +276,7 @@ bool PDFIRawAdaptor::odfConvert( const rtl::OUString&                          r
 // XImportFilter
 sal_Bool SAL_CALL PDFIRawAdaptor::importer( const uno::Sequence< beans::PropertyValue >&        rSourceData,
                                             const uno::Reference< xml::sax::XDocumentHandler >& rHdl,
-                                            const uno::Sequence< rtl::OUString >&               /*rUserData*/ ) throw( uno::RuntimeException )
+                                            const uno::Sequence< rtl::OUString >&               /*rUserData*/ )
 {
     // get the InputStream carrying the PDF content
     uno::Reference< io::XInputStream > xInput;
@@ -314,7 +314,7 @@ sal_Bool SAL_CALL PDFIRawAdaptor::importer( const uno::Sequence< beans::Property
 }
 
 //XImporter
-void SAL_CALL PDFIRawAdaptor::setTargetDocument( const uno::Reference< lang::XComponent >& xDocument ) throw( lang::IllegalArgumentException )
+void SAL_CALL PDFIRawAdaptor::setTargetDocument( const uno::Reference< lang::XComponent >& xDocument )
 {
     OSL_TRACE( "PDFIAdaptor::setTargetDocument\n" );
     m_xModel = uno::Reference< frame::XModel >( xDocument, uno::UNO_QUERY );

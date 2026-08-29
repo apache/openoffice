@@ -102,12 +102,10 @@ SalGtkFolderPicker::SalGtkFolderPicker( const uno::Reference<lang::XMultiService
 // -------------------------------------------------
 
 void SAL_CALL SalGtkFolderPicker::disposing( const lang::EventObject& )
-	throw( uno::RuntimeException )
 {
 }
 
 void SAL_CALL SalGtkFolderPicker::setDisplayDirectory( const rtl::OUString& aDirectory )
-	throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
     OSL_ASSERT( m_pDialog != NULL );
 
@@ -124,7 +122,7 @@ void SAL_CALL SalGtkFolderPicker::setDisplayDirectory( const rtl::OUString& aDir
         aTxt.getStr() );
 }
 
-rtl::OUString SAL_CALL SalGtkFolderPicker::getDisplayDirectory() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL SalGtkFolderPicker::getDisplayDirectory()
 {
     OSL_ASSERT( m_pDialog != NULL );
 
@@ -138,13 +136,12 @@ rtl::OUString SAL_CALL SalGtkFolderPicker::getDisplayDirectory() throw( uno::Run
     return aCurrentFolderName;
 }
 
-rtl::OUString SAL_CALL SalGtkFolderPicker::getDirectory() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL SalGtkFolderPicker::getDirectory()
 {
 	return getDisplayDirectory();
 }
 
 void SAL_CALL SalGtkFolderPicker::setDescription( const rtl::OUString& rDescription )
-	throw( uno::RuntimeException )
 {
 	::rtl::OString aDescription = OUStringToOString( rDescription, RTL_TEXTENCODING_UTF8 );
 }
@@ -155,7 +152,7 @@ void SAL_CALL SalGtkFolderPicker::setDescription( const rtl::OUString& rDescript
 // XExecutableDialog functions
 //-----------------------------------------------------------------------------------------
 
-void SAL_CALL SalGtkFolderPicker::setTitle( const rtl::OUString& aTitle ) throw( uno::RuntimeException )
+void SAL_CALL SalGtkFolderPicker::setTitle( const rtl::OUString& aTitle )
 {
     OSL_ASSERT( m_pDialog != NULL );
 
@@ -165,7 +162,7 @@ void SAL_CALL SalGtkFolderPicker::setTitle( const rtl::OUString& aTitle ) throw(
     gtk_window_set_title( GTK_WINDOW( m_pDialog ), aWindowTitle.getStr() );
 }
 
-sal_Int16 SAL_CALL SalGtkFolderPicker::execute() throw( uno::RuntimeException )
+sal_Int16 SAL_CALL SalGtkFolderPicker::execute()
 {
 	OSL_TRACE( "1: HERE WE ARE\n");
 	OSL_ASSERT( m_pDialog != NULL );
@@ -198,7 +195,7 @@ sal_Int16 SAL_CALL SalGtkFolderPicker::execute() throw( uno::RuntimeException )
 // XCancellable
 //------------------------------------------------------------------------------------
 
-void SAL_CALL SalGtkFolderPicker::cancel() throw( uno::RuntimeException )
+void SAL_CALL SalGtkFolderPicker::cancel()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -210,7 +207,6 @@ void SAL_CALL SalGtkFolderPicker::cancel() throw( uno::RuntimeException )
 // -------------------------------------------------
 
 rtl::OUString SAL_CALL SalGtkFolderPicker::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return rtl::OUString::createFromAscii( FOLDER_PICKER_IMPL_NAME );
 }
@@ -220,7 +216,6 @@ rtl::OUString SAL_CALL SalGtkFolderPicker::getImplementationName()
 // -------------------------------------------------
 
 sal_Bool SAL_CALL SalGtkFolderPicker::supportsService( const rtl::OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
 	uno::Sequence <rtl::OUString> SupportedServicesNames = FolderPicker_getSupportedServiceNames();
 
@@ -236,7 +231,6 @@ sal_Bool SAL_CALL SalGtkFolderPicker::supportsService( const rtl::OUString& Serv
 // -------------------------------------------------
 
 uno::Sequence<rtl::OUString> SAL_CALL SalGtkFolderPicker::getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	return FolderPicker_getSupportedServiceNames();
 }

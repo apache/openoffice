@@ -114,7 +114,6 @@ void SAL_CALL Content::release() throw()
 //=========================================================================
 // virtual
 uno::Any SAL_CALL Content::queryInterface( const uno::Type & rType )
-    throw ( uno::RuntimeException )
 {
     uno::Any aRet;
 
@@ -138,7 +137,6 @@ XTYPEPROVIDER_COMMON_IMPL( Content );
 //=========================================================================
 // virtual
 uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
-    throw( uno::RuntimeException )
 {
 	// @@@ Add own interfaces.
 
@@ -175,7 +173,6 @@ uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
 
 // virtual
 rtl::OUString SAL_CALL Content::getImplementationName()
-    throw( uno::RuntimeException )
 {
     // @@@ Adjust implementation name. Keep the prefix "com.sun.star.comp."!
     return rtl::OUString::createFromAscii( "com.sun.star.comp.odma.Content" );
@@ -184,7 +181,6 @@ rtl::OUString SAL_CALL Content::getImplementationName()
 //=========================================================================
 // virtual
 uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
-    throw( uno::RuntimeException )
 {
 	// @@@ Adjust macro name.
     uno::Sequence< rtl::OUString > aSNS( 1 );
@@ -201,7 +197,6 @@ uno::Sequence< rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
 
 // virtual
 rtl::OUString SAL_CALL Content::getContentType()
-    throw( uno::RuntimeException )
 {
 	// @@@ Adjust macro name ( def in odma_provider.hxx ).
     return rtl::OUString::createFromAscii( ODMA_CONTENT_TYPE );
@@ -218,9 +213,6 @@ uno::Any SAL_CALL Content::execute(
         const ucb::Command& aCommand,
         sal_Int32 /*CommandId*/,
         const uno::Reference< ucb::XCommandEnvironment >& Environment )
-    throw( uno::Exception,
-           ucb::CommandAbortedException,
-           uno::RuntimeException )
 {
     uno::Any aRet;
 
@@ -599,7 +591,6 @@ uno::Any SAL_CALL Content::execute(
 //=========================================================================
 // virtual
 void SAL_CALL Content::abort( sal_Int32 /*CommandId*/ )
-    throw( uno::RuntimeException )
 {
 	// @@@ Implement logic to abort running commands, if this makes
 	//     sense for your content.
@@ -1043,7 +1034,6 @@ void Content::insert(
         const uno::Reference< io::XInputStream > & xInputStream,
         sal_Bool bReplaceExisting,
         const uno::Reference< ucb::XCommandEnvironment >& Environment )
-    throw( uno::Exception )
 {
 	osl::ClearableGuard< osl::Mutex > aGuard( m_aMutex );
 
@@ -1106,7 +1096,6 @@ void Content::insert(
 #if 0
 //=========================================================================
 void Content::destroy( sal_Bool bDeletePhysical )
-    throw( uno::Exception )
 {
 	// @@@ take care about bDeletePhysical -> trashcan support
 
@@ -1144,7 +1133,7 @@ void Content::changePropertyValue(const beans::PropertyValue& _rValue,
 								  ::rtl::OUString& _rsMemberValue,
 								  sal_Int32& _rnChanged,
 								  uno::Sequence< uno::Any >& _rRet,
-								  uno::Sequence< beans::PropertyChangeEvent >& _rChanges) throw (beans::IllegalTypeException)
+								  uno::Sequence< beans::PropertyChangeEvent >& _rChanges)
 {
     rtl::OUString sNewValue;
 	sal_Bool bError = sal_False;

@@ -90,133 +90,96 @@ public:
     APPHELPER_XSERVICEINFO_DECL()
 
     // ____ XComponent ____
-    virtual void SAL_CALL dispose()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
     virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference<
-                                            ::com::sun::star::lang::XEventListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+                                            ::com::sun::star::lang::XEventListener >& xListener );
     virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference<
-                                               ::com::sun::star::lang::XEventListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+                                               ::com::sun::star::lang::XEventListener >& aListener );
 
     // ____ XDiagram ____
-    virtual ::rtl::OUString SAL_CALL getDiagramType()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getDiagramType();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getDataRowProperties( sal_Int32 nRow )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getDataRowProperties( sal_Int32 nRow );
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getDataPointProperties( sal_Int32 nCol, sal_Int32 nRow )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getDataPointProperties( sal_Int32 nCol, sal_Int32 nRow );
 
     // ____ XShape (base of XDiagram) ____
-    virtual ::com::sun::star::awt::Point SAL_CALL getPosition()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setPosition( const ::com::sun::star::awt::Point& aPosition )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setSize( const ::com::sun::star::awt::Size& aSize )
-        throw (::com::sun::star::beans::PropertyVetoException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Point SAL_CALL getPosition();
+    virtual void SAL_CALL setPosition( const ::com::sun::star::awt::Point& aPosition );
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize();
+    virtual void SAL_CALL setSize( const ::com::sun::star::awt::Size& aSize );
 
     // ____ XShapeDescriptor (base of XShape) ____
-    virtual ::rtl::OUString SAL_CALL getShapeType()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getShapeType();
 
     // ____ XAxisSupplier ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::chart::XAxis > SAL_CALL getAxis( sal_Int32 nDimensionIndex )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::chart::XAxis > SAL_CALL getAxis( sal_Int32 nDimensionIndex );
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::chart::XAxis > SAL_CALL getSecondaryAxis( sal_Int32 nDimensionIndex )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::chart::XAxis > SAL_CALL getSecondaryAxis( sal_Int32 nDimensionIndex );
 
     // ____ XAxisZSupplier ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::drawing::XShape > SAL_CALL getZAxisTitle()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::drawing::XShape > SAL_CALL getZAxisTitle();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getZMainGrid()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getZMainGrid();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getZHelpGrid()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getZHelpGrid();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getZAxis()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getZAxis();
 
     // ____ XTwoAxisXSupplier ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getSecondaryXAxis()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getSecondaryXAxis();
 
     // ____ XAxisXSupplier (base of XTwoAxisXSupplier) ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::drawing::XShape > SAL_CALL getXAxisTitle()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::drawing::XShape > SAL_CALL getXAxisTitle();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getXAxis()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getXAxis();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getXMainGrid()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getXMainGrid();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getXHelpGrid()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getXHelpGrid();
 
     // ____ XTwoAxisYSupplier ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getSecondaryYAxis()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getSecondaryYAxis();
 
     // ____ XAxisYSupplier (base of XTwoAxisYSupplier) ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::drawing::XShape > SAL_CALL getYAxisTitle()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::drawing::XShape > SAL_CALL getYAxisTitle();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getYAxis()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getYAxis();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getYHelpGrid()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getYHelpGrid();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getYMainGrid()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getYMainGrid();
 
    // ____ XSecondAxisTitleSupplier ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::drawing::XShape > SAL_CALL getSecondXAxisTitle()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::drawing::XShape > SAL_CALL getSecondXAxisTitle();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::drawing::XShape > SAL_CALL getSecondYAxisTitle()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::drawing::XShape > SAL_CALL getSecondYAxisTitle();
 
     // ____ XStatisticDisplay ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getUpBar()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getUpBar();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getDownBar()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getDownBar();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getMinMaxLine()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getMinMaxLine();
 
     // ____ X3DDisplay ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getWall()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getWall();
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::beans::XPropertySet > SAL_CALL getFloor()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::beans::XPropertySet > SAL_CALL getFloor();
 
     // ____ X3DDefaultSetter ____
-    virtual void SAL_CALL set3DSettingsToDefault() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDefaultRotation() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDefaultIllumination() throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL set3DSettingsToDefault();
+    virtual void SAL_CALL setDefaultRotation();
+    virtual void SAL_CALL setDefaultIllumination();
 
 //     // ____ XEventListener ____
 //     virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
@@ -224,23 +187,21 @@ public:
 
     // ____ XDiagramPositioning ____
 
-    virtual void SAL_CALL setAutomaticDiagramPositioning(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isAutomaticDiagramPositioning(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDiagramPositionExcludingAxes( const ::com::sun::star::awt::Rectangle& PositionRect ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isExcludingDiagramPositioning(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL calculateDiagramPositionExcludingAxes(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDiagramPositionIncludingAxes( const ::com::sun::star::awt::Rectangle& PositionRect ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL calculateDiagramPositionIncludingAxes(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDiagramPositionIncludingAxesAndAxisTitles( const ::com::sun::star::awt::Rectangle& PositionRect ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL calculateDiagramPositionIncludingAxesAndAxisTitles(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setAutomaticDiagramPositioning(  );
+    virtual ::sal_Bool SAL_CALL isAutomaticDiagramPositioning(  );
+    virtual void SAL_CALL setDiagramPositionExcludingAxes( const ::com::sun::star::awt::Rectangle& PositionRect );
+    virtual ::sal_Bool SAL_CALL isExcludingDiagramPositioning(  );
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL calculateDiagramPositionExcludingAxes(  );
+    virtual void SAL_CALL setDiagramPositionIncludingAxes( const ::com::sun::star::awt::Rectangle& PositionRect );
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL calculateDiagramPositionIncludingAxes(  );
+    virtual void SAL_CALL setDiagramPositionIncludingAxesAndAxisTitles( const ::com::sun::star::awt::Rectangle& PositionRect );
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL calculateDiagramPositionIncludingAxesAndAxisTitles(  );
 
     // ____ XDiagramProvider ____
     virtual ::com::sun::star::uno::Reference<
-            ::com::sun::star::chart2::XDiagram > SAL_CALL getDiagram()
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::chart2::XDiagram > SAL_CALL getDiagram();
     virtual void SAL_CALL setDiagram( const ::com::sun::star::uno::Reference<
-                                      ::com::sun::star::chart2::XDiagram >& xDiagram )
-        throw (::com::sun::star::uno::RuntimeException);
+                                      ::com::sun::star::chart2::XDiagram >& xDiagram );
 
 protected:
     // ____ WrappedPropertySet ____

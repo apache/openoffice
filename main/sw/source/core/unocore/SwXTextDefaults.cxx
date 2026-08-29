@@ -67,7 +67,6 @@ SwXTextDefaults::~SwXTextDefaults ()
 
 
 uno::Reference< XPropertySetInfo > SAL_CALL SwXTextDefaults::getPropertySetInfo(  )
-		throw(RuntimeException)
 {
     static uno::Reference < XPropertySetInfo > xRef = m_pPropSet->getPropertySetInfo();
     return xRef;
@@ -75,7 +74,6 @@ uno::Reference< XPropertySetInfo > SAL_CALL SwXTextDefaults::getPropertySetInfo(
 
 
 void SAL_CALL SwXTextDefaults::setPropertyValue( const OUString& rPropertyName, const Any& aValue )
-		throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
     vos::OGuard aGuard( Application::GetSolarMutex());
     if (!m_pDoc)
@@ -141,7 +139,6 @@ void SAL_CALL SwXTextDefaults::setPropertyValue( const OUString& rPropertyName, 
 
 
 Any SAL_CALL SwXTextDefaults::getPropertyValue( const OUString& rPropertyName )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
     vos::OGuard aGuard( Application::GetSolarMutex());
     if (!m_pDoc)
@@ -157,28 +154,24 @@ Any SAL_CALL SwXTextDefaults::getPropertyValue( const OUString& rPropertyName )
 
 
 void SAL_CALL SwXTextDefaults::addPropertyChangeListener( const OUString& /*rPropertyName*/, const uno::Reference< XPropertyChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
     DBG_WARNING ( "not implemented" );
 }
 
 
 void SAL_CALL SwXTextDefaults::removePropertyChangeListener( const OUString& /*rPropertyName*/, const uno::Reference< XPropertyChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
     DBG_WARNING ( "not implemented" );
 }
 
 
 void SAL_CALL SwXTextDefaults::addVetoableChangeListener( const OUString& /*rPropertyName*/, const uno::Reference< XVetoableChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
     DBG_WARNING ( "not implemented" );
 }
 
 
 void SAL_CALL SwXTextDefaults::removeVetoableChangeListener( const OUString& /*rPropertyName*/, const uno::Reference< XVetoableChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
     DBG_WARNING ( "not implemented" );
 }
@@ -186,7 +179,6 @@ void SAL_CALL SwXTextDefaults::removeVetoableChangeListener( const OUString& /*r
 
 // XPropertyState
 PropertyState SAL_CALL SwXTextDefaults::getPropertyState( const OUString& rPropertyName )
-        throw(UnknownPropertyException, RuntimeException)
 {
     vos::OGuard aGuard( Application::GetSolarMutex());
     PropertyState eRet = PropertyState_DIRECT_VALUE;
@@ -204,7 +196,6 @@ PropertyState SAL_CALL SwXTextDefaults::getPropertyState( const OUString& rPrope
 
 
 Sequence< PropertyState > SAL_CALL SwXTextDefaults::getPropertyStates( const Sequence< OUString >& rPropertyNames )
-        throw(UnknownPropertyException, RuntimeException)
 {
     const sal_Int32 nCount = rPropertyNames.getLength();
     const OUString * pNames = rPropertyNames.getConstArray();
@@ -219,7 +210,6 @@ Sequence< PropertyState > SAL_CALL SwXTextDefaults::getPropertyStates( const Seq
 
 
 void SAL_CALL SwXTextDefaults::setPropertyToDefault( const OUString& rPropertyName )
-        throw(UnknownPropertyException, RuntimeException)
 {
     if (!m_pDoc)
         throw RuntimeException();
@@ -234,7 +224,6 @@ void SAL_CALL SwXTextDefaults::setPropertyToDefault( const OUString& rPropertyNa
 
 
 Any SAL_CALL SwXTextDefaults::getPropertyDefault( const OUString& rPropertyName )
-        throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
     if (!m_pDoc)
         throw RuntimeException();
@@ -250,14 +239,12 @@ Any SAL_CALL SwXTextDefaults::getPropertyDefault( const OUString& rPropertyName 
 
 
 rtl::OUString SAL_CALL SwXTextDefaults::getImplementationName(  )
-    throw (RuntimeException)
 {
     return C2U("SwXTextDefaults");
 }
 
 
 sal_Bool SAL_CALL SwXTextDefaults::supportsService( const ::rtl::OUString& rServiceName )
-    throw (RuntimeException)
 {
     return  rServiceName == C2U("com.sun.star.text.Defaults") ||
             rServiceName == C2U("com.sun.star.style.CharacterProperties") ||
@@ -270,7 +257,6 @@ sal_Bool SAL_CALL SwXTextDefaults::supportsService( const ::rtl::OUString& rServ
 
 
 uno::Sequence< ::rtl::OUString > SAL_CALL SwXTextDefaults::getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     uno::Sequence< OUString > aRet(7);
 	OUString* pArr = aRet.getArray();

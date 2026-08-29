@@ -41,26 +41,23 @@ public:
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName (void);
 
     /**	Return whether the specified service is supported by this class.
     */
     virtual sal_Bool SAL_CALL
-    	supportsService (const ::rtl::OUString& sServiceName)
-        throw (::com::sun::star::uno::RuntimeException);
+    	supportsService (const ::rtl::OUString& sServiceName);
 
     /** Returns a list of all supported services.  In this case that is just
     	the AccessibleContext service.
     */
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-    	getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getSupportedServiceNames (void);
 
 	//=====  XTypeProvider  ====================================================
-    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 	///	Return this object's role.
-	virtual sal_Int16 SAL_CALL getAccessibleRole (void) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int16 SAL_CALL getAccessibleRole (void);
 };
 
 

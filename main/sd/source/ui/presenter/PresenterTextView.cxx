@@ -66,7 +66,7 @@ Reference<XInterface> SAL_CALL PresenterTextViewService_createInstance (
 
 
 
-::rtl::OUString PresenterTextViewService_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString PresenterTextViewService_getImplementationName (void)
 {
     return OUString::createFromAscii("com.sun.star.comp.Draw.PresenterTextView");
 }
@@ -75,7 +75,6 @@ Reference<XInterface> SAL_CALL PresenterTextViewService_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL PresenterTextViewService_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.PresenterTextView"));
@@ -165,7 +164,6 @@ void SAL_CALL PresenterTextView::disposing (void)
 //----- XInitialization -------------------------------------------------------
 
 void SAL_CALL PresenterTextView::initialize (const Sequence<Any>& rArguments)
-    throw (Exception, RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -279,7 +277,6 @@ Any PresenterTextView::SetPropertyValue (
 
 
 void PresenterTextView::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (PresenterTextViewInterfaceBase::rBHelper.bDisposed
         || PresenterTextViewInterfaceBase::rBHelper.bInDispose

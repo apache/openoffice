@@ -45,30 +45,30 @@ namespace rptui
 	using namespace ::com::sun::star::frame;
 	using namespace ::com::sun::star::util;
 
-::rtl::OUString SAL_CALL OStatusbarController::getImplementationName() throw( RuntimeException )
+::rtl::OUString SAL_CALL OStatusbarController::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString OStatusbarController::getImplementationName_Static() throw( RuntimeException )
+::rtl::OUString OStatusbarController::getImplementationName_Static()
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.report.comp.StatusbarController"));
 }
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString> OStatusbarController::getSupportedServiceNames_Static(void) throw( RuntimeException )
+Sequence< ::rtl::OUString> OStatusbarController::getSupportedServiceNames_Static(void)
 {
 	Sequence< ::rtl::OUString> aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.frame.StatusbarController"));
 	return aSupported;
 }
 // -----------------------------------------------------------------------------
-::sal_Bool SAL_CALL OStatusbarController::supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException)
+::sal_Bool SAL_CALL OStatusbarController::supportsService( const ::rtl::OUString& ServiceName )
 {
     return ::comphelper::existsValue(ServiceName,getSupportedServiceNames_Static());
 }
 //-------------------------------------------------------------------------
-Sequence< ::rtl::OUString> SAL_CALL OStatusbarController::getSupportedServiceNames() throw(RuntimeException)
+Sequence< ::rtl::OUString> SAL_CALL OStatusbarController::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
@@ -86,7 +86,7 @@ OStatusbarController::OStatusbarController(const Reference< XMultiServiceFactory
     m_xServiceManager = _rxORB;
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OStatusbarController::initialize( const Sequence< Any >& _rArguments ) throw (Exception, RuntimeException)
+void SAL_CALL OStatusbarController::initialize( const Sequence< Any >& _rArguments )
 {
 	StatusbarController::initialize(_rArguments);
 	vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
@@ -131,7 +131,7 @@ void SAL_CALL OStatusbarController::initialize( const Sequence< Any >& _rArgumen
     }
 }
 // XStatusListener
-void SAL_CALL OStatusbarController::statusChanged( const FeatureStateEvent& _aEvent)throw ( RuntimeException )
+void SAL_CALL OStatusbarController::statusChanged( const FeatureStateEvent& _aEvent)
 {
     ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     ::osl::MutexGuard aGuard(m_aMutex);
@@ -162,17 +162,17 @@ void SAL_CALL OStatusbarController::statusChanged( const FeatureStateEvent& _aEv
 }
 
 // XStatusbarController
-::sal_Bool SAL_CALL OStatusbarController::mouseButtonDown(const ::com::sun::star::awt::MouseEvent& _aEvent)throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL OStatusbarController::mouseButtonDown(const ::com::sun::star::awt::MouseEvent& _aEvent)
 {
     return m_rController.is() && m_rController->mouseButtonDown(_aEvent);
 }
 
-::sal_Bool SAL_CALL OStatusbarController::mouseMove(    const ::com::sun::star::awt::MouseEvent& _aEvent)throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL OStatusbarController::mouseMove(    const ::com::sun::star::awt::MouseEvent& _aEvent)
 {
     return m_rController.is() && m_rController->mouseMove(_aEvent);
 }
 
-::sal_Bool SAL_CALL OStatusbarController::mouseButtonUp(    const ::com::sun::star::awt::MouseEvent& _aEvent)throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL OStatusbarController::mouseButtonUp(    const ::com::sun::star::awt::MouseEvent& _aEvent)
 {
     return m_rController.is() && m_rController->mouseButtonUp(_aEvent);
 }
@@ -182,7 +182,6 @@ void SAL_CALL OStatusbarController::command(
     ::sal_Int32 nCommand,
     ::sal_Bool bMouseEvent,
     const ::com::sun::star::uno::Any& aData )
-throw (::com::sun::star::uno::RuntimeException)
 {
     if ( m_rController.is() )
         m_rController->command( aPos, nCommand, bMouseEvent, aData );
@@ -192,7 +191,6 @@ void SAL_CALL OStatusbarController::paint(
     const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >& xGraphics,
     const ::com::sun::star::awt::Rectangle& rOutputRectangle,
     ::sal_Int32 nStyle )
-throw (::com::sun::star::uno::RuntimeException)
 {
     if ( m_rController.is() )
         m_rController->paint( xGraphics, rOutputRectangle, nStyle );
@@ -200,7 +198,6 @@ throw (::com::sun::star::uno::RuntimeException)
 
 void SAL_CALL OStatusbarController::click(
     const ::com::sun::star::awt::Point& aPos )
-throw (::com::sun::star::uno::RuntimeException)
 {
     if ( m_rController.is() )
         m_rController->click( aPos );
@@ -208,13 +205,12 @@ throw (::com::sun::star::uno::RuntimeException)
 
 void SAL_CALL OStatusbarController::doubleClick(
     const ::com::sun::star::awt::Point& aPos )
-throw (::com::sun::star::uno::RuntimeException)
 {
     if ( m_rController.is() )
         m_rController->doubleClick( aPos );
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OStatusbarController::update() throw ( RuntimeException )
+void SAL_CALL OStatusbarController::update()
 {
     ::svt::StatusbarController::update();
     if ( m_rController.is() )
@@ -222,7 +218,7 @@ void SAL_CALL OStatusbarController::update() throw ( RuntimeException )
 }
 // -----------------------------------------------------------------------------
 // XComponent
-void SAL_CALL OStatusbarController::dispose() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL OStatusbarController::dispose()
 {
     if ( m_rController.is() )
         ::comphelper::disposeComponent( m_rController );

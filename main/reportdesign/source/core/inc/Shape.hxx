@@ -89,22 +89,22 @@ namespace reportdesign
 
 		DECLARE_XINTERFACE( )
 		// ::com::sun::star::lang::XServiceInfo
-		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
-		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
-		static ::rtl::OUString getImplementationName_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
+		static ::rtl::OUString getImplementationName_Static(void);
         static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 			create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 		// com::sun::star::beans::XPropertySet
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
+		virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue );
+		virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName );
+		virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
+		virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener );
+		virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
+		virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
 
 		// XReportComponent
         REPORTCOMPONENT_HEADER()
@@ -112,18 +112,18 @@ namespace reportdesign
         // XShape
         SHAPE_HEADER()
 
-        virtual ::rtl::OUString SAL_CALL getCustomShapeEngine() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setCustomShapeEngine( const ::rtl::OUString& _customshapeengine ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getCustomShapeData() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setCustomShapeData( const ::rtl::OUString& _customshapedata ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCustomShapeGeometry() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setCustomShapeGeometry( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _customshapegeometry ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getCustomShapeEngine();
+        virtual void SAL_CALL setCustomShapeEngine( const ::rtl::OUString& _customshapeengine );
+        virtual ::rtl::OUString SAL_CALL getCustomShapeData();
+        virtual void SAL_CALL setCustomShapeData( const ::rtl::OUString& _customshapedata );
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getCustomShapeGeometry();
+        virtual void SAL_CALL setCustomShapeGeometry( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _customshapegeometry );
 
-        virtual ::sal_Bool SAL_CALL getOpaque() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setOpaque( ::sal_Bool _opaque ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Bool SAL_CALL getOpaque();
+        virtual void SAL_CALL setOpaque( ::sal_Bool _opaque );
 
         // XShapeDescriptor
-        virtual ::rtl::OUString SAL_CALL getShapeType(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getShapeType(  );
 
 		// XReportControlModel
 		REPORTCONTROLMODEL_HEADER()
@@ -131,47 +131,47 @@ namespace reportdesign
         // XReportControlFormat
         REPORTCONTROLFORMAT_HEADER()
 		// XShape
-        virtual ::sal_Int32 SAL_CALL getZOrder() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setZOrder( ::sal_Int32 _zorder ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::drawing::HomogenMatrix3 SAL_CALL getTransformation() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setTransformation( const ::com::sun::star::drawing::HomogenMatrix3& _transformation ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Int32 SAL_CALL getZOrder();
+        virtual void SAL_CALL setZOrder( ::sal_Int32 _zorder );
+        virtual ::com::sun::star::drawing::HomogenMatrix3 SAL_CALL getTransformation();
+        virtual void SAL_CALL setTransformation( const ::com::sun::star::drawing::HomogenMatrix3& _transformation );
 
 		// XCloneable
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  );
 
 		// XComponent
-		virtual void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw(::com::sun::star::uno::RuntimeException)
+		virtual void SAL_CALL dispose();
+		virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener)
 		{
 			cppu::WeakComponentImplHelperBase::addEventListener(aListener);
 		}
-		virtual void SAL_CALL removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw(::com::sun::star::uno::RuntimeException)
+		virtual void SAL_CALL removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener)
 		{
 			cppu::WeakComponentImplHelperBase::removeEventListener(aListener);
 		}
 
 		// XChild
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  );
+		virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent );
 
         // XContainer
-		virtual void SAL_CALL addContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removeContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL addContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener );
+		virtual void SAL_CALL removeContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener >& xListener );
 
 		// XElementAccess
-		virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+		virtual ::sal_Bool SAL_CALL hasElements(  );
 
 		// XIndexReplace
-		virtual void SAL_CALL replaceByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL replaceByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element );
 
 		// XIndexContainer
-		virtual void SAL_CALL insertByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removeByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL insertByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element );
+		virtual void SAL_CALL removeByIndex( ::sal_Int32 Index );
 
 		// XIndexAccess
-		virtual ::sal_Int32 SAL_CALL getCount(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual ::sal_Int32 SAL_CALL getCount(  );
+		virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index );
 	};
 }
 #endif //RPT_SHAPE_HXX

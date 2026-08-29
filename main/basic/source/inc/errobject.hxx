@@ -42,7 +42,6 @@ public:
 	static SbxVariableRef getErrObject();
 	static com::sun::star::uno::Reference< ooo::vba::XErrObject > getUnoErrObject();
 
-	void setNumberAndDescription( ::sal_Int32 _number, const ::rtl::OUString& _description )
-		throw (com::sun::star::uno::RuntimeException);
+	void setNumberAndDescription( ::sal_Int32 _number, const ::rtl::OUString& _description );
 };
 #endif

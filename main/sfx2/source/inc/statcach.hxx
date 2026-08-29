@@ -64,8 +64,8 @@ public:
 
 	SFX_DECL_XINTERFACE_XTYPEPROVIDER
 
-	virtual void SAL_CALL			statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL			disposing( const ::com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL			statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
+	virtual void SAL_CALL			disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	void					Release();
 	const ::com::sun::star::frame::FeatureStateEvent& GetStatus() const;

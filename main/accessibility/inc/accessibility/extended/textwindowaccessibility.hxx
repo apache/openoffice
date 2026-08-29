@@ -187,201 +187,138 @@ protected:
 
 private:
     virtual ::css::uno::Reference< ::css::accessibility::XAccessibleContext >
-    SAL_CALL getAccessibleContext() throw (::css::uno::RuntimeException);
+    SAL_CALL getAccessibleContext();
 
-    virtual ::sal_Int32 SAL_CALL getAccessibleChildCount()
-        throw (::css::uno::RuntimeException);
-
-    virtual ::css::uno::Reference< ::css::accessibility::XAccessible > SAL_CALL
-    getAccessibleChild(::sal_Int32 i)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getAccessibleChildCount();
 
     virtual ::css::uno::Reference< ::css::accessibility::XAccessible > SAL_CALL
-    getAccessibleParent() throw (::css::uno::RuntimeException);
+    getAccessibleChild(::sal_Int32 i);
 
-    virtual ::sal_Int32 SAL_CALL getAccessibleIndexInParent()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::uno::Reference< ::css::accessibility::XAccessible > SAL_CALL
+    getAccessibleParent();
 
-    virtual ::sal_Int16 SAL_CALL getAccessibleRole()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getAccessibleIndexInParent();
 
-    virtual ::rtl::OUString SAL_CALL getAccessibleDescription()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int16 SAL_CALL getAccessibleRole();
 
-    virtual ::rtl::OUString SAL_CALL getAccessibleName()
-        throw (::css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getAccessibleDescription();
+
+    virtual ::rtl::OUString SAL_CALL getAccessibleName();
 
     virtual
     ::css::uno::Reference< ::css::accessibility::XAccessibleRelationSet >
-    SAL_CALL getAccessibleRelationSet() throw (::css::uno::RuntimeException);
+    SAL_CALL getAccessibleRelationSet();
 
     virtual
     ::css::uno::Reference< ::css::accessibility::XAccessibleStateSet > SAL_CALL
-    getAccessibleStateSet() throw (::css::uno::RuntimeException);
+    getAccessibleStateSet();
 
-    virtual ::css::lang::Locale SAL_CALL getLocale()
-        throw (::css::accessibility::IllegalAccessibleComponentStateException,
-               ::css::uno::RuntimeException);
+    virtual ::css::lang::Locale SAL_CALL getLocale();
 
-    virtual ::sal_Bool SAL_CALL containsPoint(::css::awt::Point const & rPoint)
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL containsPoint(::css::awt::Point const & rPoint);
 
     virtual ::css::uno::Reference< ::css::accessibility::XAccessible > SAL_CALL
-    getAccessibleAtPoint(::css::awt::Point const & rPoint)
-        throw (::css::uno::RuntimeException);
+    getAccessibleAtPoint(::css::awt::Point const & rPoint);
 
-    virtual ::css::awt::Rectangle SAL_CALL getBounds()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::awt::Rectangle SAL_CALL getBounds();
 
-    virtual ::css::awt::Point SAL_CALL getLocation()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::awt::Point SAL_CALL getLocation();
 
-    virtual ::css::awt::Point SAL_CALL getLocationOnScreen()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::awt::Point SAL_CALL getLocationOnScreen();
 
-    virtual ::css::awt::Size SAL_CALL getSize()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::awt::Size SAL_CALL getSize();
 
-    virtual void SAL_CALL grabFocus() throw (::css::uno::RuntimeException);
+    virtual void SAL_CALL grabFocus();
 
-    virtual ::css::uno::Any SAL_CALL getAccessibleKeyBinding()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::uno::Any SAL_CALL getAccessibleKeyBinding();
 
-    virtual ::css::util::Color SAL_CALL getForeground()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::util::Color SAL_CALL getForeground();
 
-    virtual ::css::util::Color SAL_CALL getBackground()
-        throw (::css::uno::RuntimeException);
+    virtual ::css::util::Color SAL_CALL getBackground();
 
-    virtual ::sal_Int32 SAL_CALL getCaretPosition()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getCaretPosition();
 
-    virtual ::sal_Bool SAL_CALL setCaretPosition(::sal_Int32 nIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL setCaretPosition(::sal_Int32 nIndex);
 
-    virtual ::sal_Unicode SAL_CALL getCharacter(::sal_Int32 nIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    virtual ::sal_Unicode SAL_CALL getCharacter(::sal_Int32 nIndex);
 
     virtual ::css::uno::Sequence< ::css::beans::PropertyValue > SAL_CALL
-    getCharacterAttributes(::sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes )
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    getCharacterAttributes(::sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes );
 
     virtual ::css::awt::Rectangle SAL_CALL
-    getCharacterBounds(::sal_Int32 nIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    getCharacterBounds(::sal_Int32 nIndex);
 
-    virtual ::sal_Int32 SAL_CALL getCharacterCount()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getCharacterCount();
 
     virtual ::sal_Int32 SAL_CALL
-    getIndexAtPoint(::css::awt::Point const & rPoint)
-        throw (::css::uno::RuntimeException);
+    getIndexAtPoint(::css::awt::Point const & rPoint);
 
-    virtual ::rtl::OUString SAL_CALL getSelectedText()
-        throw (::css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getSelectedText();
 
-    virtual ::sal_Int32 SAL_CALL getSelectionStart()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getSelectionStart();
 
-    virtual ::sal_Int32 SAL_CALL getSelectionEnd()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getSelectionEnd();
 
     virtual ::sal_Bool SAL_CALL setSelection(::sal_Int32 nStartIndex,
-                                             ::sal_Int32 nEndIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+                                             ::sal_Int32 nEndIndex);
 
-    virtual ::rtl::OUString SAL_CALL getText()
-        throw (::css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getText();
 
     virtual ::rtl::OUString SAL_CALL getTextRange(::sal_Int32 nStartIndex,
-                                                  ::sal_Int32 nEndIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+                                                  ::sal_Int32 nEndIndex);
 
-    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType );
+    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType );
+    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType );
 
     virtual ::sal_Bool SAL_CALL copyText(::sal_Int32 nStartIndex,
-                                         ::sal_Int32 nEndIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+                                         ::sal_Int32 nEndIndex);
 
     virtual ::sal_Bool SAL_CALL cutText(::sal_Int32 nStartIndex,
-                                        ::sal_Int32 nEndIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+                                        ::sal_Int32 nEndIndex);
 
-    virtual ::sal_Bool SAL_CALL pasteText(::sal_Int32 nIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL pasteText(::sal_Int32 nIndex);
 
     virtual ::sal_Bool SAL_CALL deleteText(::sal_Int32 nStartIndex,
-                                           ::sal_Int32 nEndIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+                                           ::sal_Int32 nEndIndex);
 
     virtual ::sal_Bool SAL_CALL insertText(::rtl::OUString const & rText,
-                                           ::sal_Int32 nIndex)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+                                           ::sal_Int32 nIndex);
 
     virtual ::sal_Bool SAL_CALL replaceText(
         ::sal_Int32 nStartIndex, ::sal_Int32 nEndIndex,
-        ::rtl::OUString const & rReplacement)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+        ::rtl::OUString const & rReplacement);
 
     virtual ::sal_Bool SAL_CALL setAttributes(
         ::sal_Int32 nStartIndex, ::sal_Int32 nEndIndex,
         ::css::uno::Sequence< ::css::beans::PropertyValue > const &
-        rAttributeSet)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+        rAttributeSet);
 
-    virtual ::sal_Bool SAL_CALL setText(::rtl::OUString const & rText)
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL setText(::rtl::OUString const & rText);
 
     virtual ::css::uno::Sequence< ::css::beans::PropertyValue > SAL_CALL
-    getDefaultAttributes(const ::css::uno::Sequence< ::rtl::OUString >& RequestedAttributes)
-        throw (::css::uno::RuntimeException);
+    getDefaultAttributes(const ::css::uno::Sequence< ::rtl::OUString >& RequestedAttributes);
 
     virtual ::css::uno::Sequence< ::css::beans::PropertyValue > SAL_CALL
-    getRunAttributes(::sal_Int32 Index, const ::css::uno::Sequence< ::rtl::OUString >& RequestedAttributes)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    getRunAttributes(::sal_Int32 Index, const ::css::uno::Sequence< ::rtl::OUString >& RequestedAttributes);
 
-    virtual ::sal_Int32 SAL_CALL getLineNumberAtIndex( ::sal_Int32 nIndex )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getLineNumberAtIndex( ::sal_Int32 nIndex );
 
-    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtLineNumber( ::sal_Int32 nLineNo )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtLineNumber( ::sal_Int32 nLineNo );
 
-    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtLineWithCaret(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::accessibility::TextSegment SAL_CALL getTextAtLineWithCaret(  );
 
-    virtual ::sal_Int32 SAL_CALL getNumberOfLineWithCaret(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getNumberOfLineWithCaret(  );
 
     using cppu::WeakAggComponentImplHelperBase::addEventListener;
     virtual void SAL_CALL addEventListener(
         ::css::uno::Reference<
-        ::css::accessibility::XAccessibleEventListener > const & rListener)
-        throw (::css::uno::RuntimeException);
+        ::css::accessibility::XAccessibleEventListener > const & rListener);
 
     using cppu::WeakAggComponentImplHelperBase::removeEventListener;
     virtual void SAL_CALL removeEventListener(
         ::css::uno::Reference<
-        ::css::accessibility::XAccessibleEventListener > const & rListener)
-        throw (::css::uno::RuntimeException);
+        ::css::accessibility::XAccessibleEventListener > const & rListener);
 
     virtual void SAL_CALL disposing();
 
@@ -579,20 +516,15 @@ protected:
 	virtual void ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent );
 
 private:
-    virtual ::sal_Int32 SAL_CALL getAccessibleChildCount()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getAccessibleChildCount();
 
     virtual ::css::uno::Reference< ::css::accessibility::XAccessible >
-    SAL_CALL getAccessibleChild(::sal_Int32 i)
-        throw (::css::lang::IndexOutOfBoundsException,
-               ::css::uno::RuntimeException);
+    SAL_CALL getAccessibleChild(::sal_Int32 i);
 
-    virtual ::sal_Int16 SAL_CALL getAccessibleRole()
-        throw (::css::uno::RuntimeException);
+    virtual ::sal_Int16 SAL_CALL getAccessibleRole();
 
     virtual ::css::uno::Reference< ::css::accessibility::XAccessible >
-    SAL_CALL getAccessibleAtPoint(::css::awt::Point const & rPoint)
-        throw (::css::uno::RuntimeException);
+    SAL_CALL getAccessibleAtPoint(::css::awt::Point const & rPoint);
     virtual void	FillAccessibleStateSet( utl::AccessibleStateSetHelper& rStateSet );
    virtual void	FillAccessibleRelationSet( utl::AccessibleRelationSetHelper& rRelationSet );
     // ??? Will be called with both the external (Solar) and internal mutex

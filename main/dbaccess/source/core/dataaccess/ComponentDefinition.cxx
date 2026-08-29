@@ -88,13 +88,13 @@ protected:
 public:
     OColumnPropertyListener(OComponentDefinition* _pComponent) : m_pComponent(_pComponent){}
     // XPropertyChangeListener
-	virtual void SAL_CALL propertyChange( const PropertyChangeEvent& /*_rEvent*/ ) throw (RuntimeException)
+	virtual void SAL_CALL propertyChange( const PropertyChangeEvent& /*_rEvent*/ )
     {
         if ( m_pComponent )
             m_pComponent->notifyDataSourceModified();
     }
 	// XEventListener
-	virtual void SAL_CALL disposing( const EventObject& /*_rSource*/ ) throw (RuntimeException)
+	virtual void SAL_CALL disposing( const EventObject& /*_rSource*/ )
     {
     }
     void clear() { m_pComponent = NULL; }
@@ -174,19 +174,19 @@ IMPLEMENT_IMPLEMENTATION_ID(OComponentDefinition);
 IMPLEMENT_GETTYPES3(OComponentDefinition,ODataSettings,OContentHelper,OComponentDefinition_BASE);
 IMPLEMENT_FORWARD_XINTERFACE3( OComponentDefinition,OContentHelper,ODataSettings,OComponentDefinition_BASE)
 //--------------------------------------------------------------------------
-::rtl::OUString OComponentDefinition::getImplementationName_static(  ) throw(RuntimeException)
+::rtl::OUString OComponentDefinition::getImplementationName_static(  )
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.dba.OComponentDefinition"));
 }
 
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OComponentDefinition::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OComponentDefinition::getImplementationName(  )
 {
 	return getImplementationName_static();
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > OComponentDefinition::getSupportedServiceNames_static(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > OComponentDefinition::getSupportedServiceNames_static(  )
 {
 	Sequence< ::rtl::OUString > aServices(2);
 	aServices.getArray()[0] = SERVICE_SDB_TABLEDEFINITION;
@@ -196,7 +196,7 @@ Sequence< ::rtl::OUString > OComponentDefinition::getSupportedServiceNames_stati
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OComponentDefinition::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OComponentDefinition::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_static();
 }
@@ -228,7 +228,7 @@ IPropertyArrayHelper* OComponentDefinition::createArrayHelper( ) const
 	return new OPropertyArrayHelper(aProps);
 }
 //--------------------------------------------------------------------------
-Reference< XPropertySetInfo > SAL_CALL OComponentDefinition::getPropertySetInfo(  ) throw(RuntimeException)
+Reference< XPropertySetInfo > SAL_CALL OComponentDefinition::getPropertySetInfo(  )
 {
 	Reference<XPropertySetInfo> xInfo( createPropertySetInfo( getInfoHelper() ) );
 	return xInfo;
@@ -243,7 +243,7 @@ Reference< XPropertySetInfo > SAL_CALL OComponentDefinition::getPropertySetInfo(
 }
 
 // -----------------------------------------------------------------------------
-Reference< XNameAccess> OComponentDefinition::getColumns() throw (RuntimeException)
+Reference< XNameAccess> OComponentDefinition::getColumns()
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	::connectivity::checkDisposed(OContentHelper::rBHelper.bDisposed);
@@ -285,7 +285,7 @@ Reference< XPropertySet > OComponentDefinition::createColumnDescriptor()
 	return new OTableColumnDescriptor( true );
 }
 // -----------------------------------------------------------------------------
-void OComponentDefinition::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const Any& rValue) throw (Exception)
+void OComponentDefinition::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const Any& rValue)
 {
 	ODataSettings::setFastPropertyValue_NoBroadcast(nHandle,rValue);
 	notifyDataSourceModified();

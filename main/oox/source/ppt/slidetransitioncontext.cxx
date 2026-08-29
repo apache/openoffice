@@ -73,7 +73,7 @@ SlideTransitionContext::~SlideTransitionContext() throw()
 
 }
 
-Reference< XFastContextHandler > SlideTransitionContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > SlideTransitionContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -179,7 +179,7 @@ Reference< XFastContextHandler > SlideTransitionContext::createFastChildContext(
 	return xRet;
 }
 
-void SlideTransitionContext::endFastElement( sal_Int32 aElement ) throw (::com::sun::star::xml::sax::SAXException, RuntimeException)
+void SlideTransitionContext::endFastElement( sal_Int32 aElement )
 {
 	if( aElement == (PPT_TOKEN( transition )) )
 	{

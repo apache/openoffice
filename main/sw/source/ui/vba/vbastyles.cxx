@@ -194,16 +194,16 @@ public:
     }
     uno::Reference< container::XNameContainer > getCurrentStyleFamily(){ return mxCurrentStyleFamily; }
 	// XElementAccess
-	virtual uno::Type SAL_CALL getElementType(  ) throw (uno::RuntimeException) { return  style::XStyle::static_type(0); }
-	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException) { return getCount() > 0; }
+	virtual uno::Type SAL_CALL getElementType(  ) { return  style::XStyle::static_type(0); }
+	virtual ::sal_Bool SAL_CALL hasElements(  ) { return getCount() > 0; }
 	// XNameAcess
-	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
 	{
 		if ( !hasByName(aName) )
 			throw container::NoSuchElementException();
 		return cachePos;
 	}
-	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (uno::RuntimeException)
+	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  )
 	{
 		uno::Sequence< rtl::OUString > sNames( getCount() );
 		rtl::OUString* pString = sNames.getArray();
@@ -220,7 +220,7 @@ public:
         }
 		return sNames;
 	}
-	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
 	{
         uno::Sequence< rtl::OUString > aStyleTypes = getStyleTypes();
         for( sal_Int32 i = 0; i < aStyleTypes.getLength(); i++ )
@@ -237,7 +237,7 @@ public:
 	}
 
 	// XIndexAccess
-	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException)
+	virtual ::sal_Int32 SAL_CALL getCount(  )
     {
         uno::Sequence< rtl::OUString > aStyleTypes = getStyleTypes();
         sal_Int32 nCount = 0;
@@ -248,7 +248,7 @@ public:
         }
         return nCount;
     }
-	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException )
+	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index )
 	{
 		if ( Index < 0 || Index >= getCount() )
 			throw lang::IndexOutOfBoundsException();
@@ -270,14 +270,14 @@ public:
 		throw lang::IndexOutOfBoundsException();
 	}
 	// XEnumerationAccess
-	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration(  ) throw (uno::RuntimeException)
+	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration(  )
 	{
         // FIXME:
         throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Not implemented") ), uno::Reference< uno::XInterface >() );
 	}
 };
 
-SwVbaStyles::SwVbaStyles( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xModel ) throw ( script::BasicErrorException ) : SwVbaStyles_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( new StyleCollectionHelper( xModel )  ) ), mxModel( xModel )
+SwVbaStyles::SwVbaStyles( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xModel ) : SwVbaStyles_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( new StyleCollectionHelper( xModel )  ) ), mxModel( xModel )
 {
     mxMSF.set( mxModel, uno::UNO_QUERY_THROW );
 }
@@ -290,19 +290,19 @@ SwVbaStyles::createCollectionObject(const uno::Any& aObject)
 }
 
 uno::Type SAL_CALL
-SwVbaStyles::getElementType() throw (uno::RuntimeException)
+SwVbaStyles::getElementType()
 {
 	return word::XStyle::static_type(0);
 }
 
 uno::Reference< container::XEnumeration > SAL_CALL
-SwVbaStyles::createEnumeration() throw (uno::RuntimeException)
+SwVbaStyles::createEnumeration()
 {
     throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Not implemented") ), uno::Reference< uno::XInterface >() );
 }
 
 uno::Any SAL_CALL
-SwVbaStyles::Item( const uno::Any& Index1, const uno::Any& Index2 ) throw (uno::RuntimeException)
+SwVbaStyles::Item( const uno::Any& Index1, const uno::Any& Index2 )
 {
     //handle WdBuiltinStyle
     sal_Int32 nIndex = 0;

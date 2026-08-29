@@ -87,7 +87,7 @@ CFolderPicker::CFolderPicker( const Reference< XMultiServiceFactory >& xServiceM
 //
 //-----------------------------------------------------------------------------------------
 
-void SAL_CALL CFolderPicker::setTitle( const OUString& aTitle ) throw( RuntimeException )
+void SAL_CALL CFolderPicker::setTitle( const OUString& aTitle )
 {
 	OSL_ASSERT( m_pFolderPickerImpl.get( ) );
 	MutexGuard aGuard( m_aMutex );
@@ -99,7 +99,6 @@ void SAL_CALL CFolderPicker::setTitle( const OUString& aTitle ) throw( RuntimeEx
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL CFolderPicker::setDisplayDirectory( const OUString& aDirectory )
-	throw( IllegalArgumentException, RuntimeException )
 {
 	OSL_ASSERT( m_pFolderPickerImpl.get( ) );
 	MutexGuard aGuard( m_aMutex );
@@ -111,7 +110,6 @@ void SAL_CALL CFolderPicker::setDisplayDirectory( const OUString& aDirectory )
 //-----------------------------------------------------------------------------------------
 
 OUString SAL_CALL CFolderPicker::getDisplayDirectory( )
-	throw( RuntimeException )
 {
 	OSL_ASSERT( m_pFolderPickerImpl.get( ) );
 	MutexGuard aGuard( m_aMutex );
@@ -122,7 +120,7 @@ OUString SAL_CALL CFolderPicker::getDisplayDirectory( )
 //
 //-----------------------------------------------------------------------------------------
 
-OUString SAL_CALL CFolderPicker::getDirectory( ) throw( RuntimeException )
+OUString SAL_CALL CFolderPicker::getDirectory( )
 {
     OSL_ASSERT( m_pFolderPickerImpl.get( ) );
 	MutexGuard aGuard( m_aMutex );
@@ -133,7 +131,7 @@ OUString SAL_CALL CFolderPicker::getDirectory( ) throw( RuntimeException )
 //
 //-----------------------------------------------------------------------------------------
 
-void SAL_CALL CFolderPicker::setDescription( const OUString& aDescription ) throw( RuntimeException )
+void SAL_CALL CFolderPicker::setDescription( const OUString& aDescription )
 {
     OSL_ASSERT( m_pFolderPickerImpl.get( ) );
     MutexGuard aGuard( m_aMutex );
@@ -145,7 +143,6 @@ void SAL_CALL CFolderPicker::setDescription( const OUString& aDescription ) thro
 //-----------------------------------------------------------------------------------------
 
 sal_Int16 SAL_CALL CFolderPicker::execute( )
-	throw( RuntimeException )
 {
 	OSL_ASSERT( m_pFolderPickerImpl.get( ) );
 
@@ -161,7 +158,6 @@ sal_Int16 SAL_CALL CFolderPicker::execute( )
 // -------------------------------------------------
 
 OUString SAL_CALL CFolderPicker::getImplementationName(  )
-	throw( RuntimeException )
 {
 	return OUString::createFromAscii( FOLDERPICKER_IMPL_NAME );
 }
@@ -171,7 +167,6 @@ OUString SAL_CALL CFolderPicker::getImplementationName(  )
 // -------------------------------------------------
 
 sal_Bool SAL_CALL CFolderPicker::supportsService( const OUString& ServiceName )
-	throw( RuntimeException )
 {
 	Sequence < OUString > SupportedServicesNames = FolderPicker_getSupportedServiceNames();
 
@@ -187,7 +182,6 @@ sal_Bool SAL_CALL CFolderPicker::supportsService( const OUString& ServiceName )
 // -------------------------------------------------
 
 Sequence< OUString > SAL_CALL CFolderPicker::getSupportedServiceNames(	 )
-	throw( RuntimeException )
 {
 	return FolderPicker_getSupportedServiceNames();
 }
@@ -197,7 +191,6 @@ Sequence< OUString > SAL_CALL CFolderPicker::getSupportedServiceNames(	 )
 // -------------------------------------------------
 
 void SAL_CALL CFolderPicker::cancel( )
-	throw(RuntimeException)
 {
     OSL_ASSERT( m_pFolderPickerImpl.get( ) );
     MutexGuard aGuard( m_aMutex );

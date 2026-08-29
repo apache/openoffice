@@ -85,7 +85,6 @@ public:
         m_xStream(rxStream) {};
 
     virtual sal_Int32 SAL_CALL readBytes(uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead)
-        throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
         {
             sal_Int32 n = m_xStream->readBytes(aData, nBytesToRead);
             if ( n )
@@ -93,7 +92,6 @@ public:
             return n;
         };
     virtual sal_Int32 SAL_CALL readSomeBytes(uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead)
-        throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
         {
             sal_Int32 n = m_xStream->readSomeBytes(aData, nMaxBytesToRead);
             if ( n )
@@ -101,13 +99,10 @@ public:
             return n;
         };
     virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip )
-        throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
         { m_xStream->skipBytes(nBytesToSkip); };
     virtual sal_Int32 SAL_CALL available()
-        throw (io::NotConnectedException, io::IOException, uno::RuntimeException)
         { return m_xStream->available(); };
     virtual void SAL_CALL closeInput( )
-        throw (io::NotConnectedException, io::IOException, uno::RuntimeException)
         {};
 };
 
@@ -127,10 +122,8 @@ public:
 
     inline operator uno::Reference< io::XActiveDataSink > () { return this; };
 
-    virtual uno::Reference< io::XInputStream > SAL_CALL getInputStream()
-        throw (uno::RuntimeException) { return m_xStream; };
-    virtual void SAL_CALL setInputStream( uno::Reference< io::XInputStream > const & rStream )
-        throw (uno::RuntimeException) { m_xStream = rStream; };
+    virtual uno::Reference< io::XInputStream > SAL_CALL getInputStream() { return m_xStream; };
+    virtual void SAL_CALL setInputStream( uno::Reference< io::XInputStream > const & rStream ) { m_xStream = rStream; };
 };
 
 //------------------------------------------------------------------------------
@@ -155,40 +148,32 @@ public:
     getUpdateInformation(
         uno::Sequence< rtl::OUString > const & repositories,
         rtl::OUString const & extensionId
-    ) throw (uno::Exception, uno::RuntimeException);
+    );
 
-    virtual void SAL_CALL cancel()
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL cancel();
 
     virtual void SAL_CALL setInteractionHandler(
-        uno::Reference< task::XInteractionHandler > const & handler )
-        throw (uno::RuntimeException);
+        uno::Reference< task::XInteractionHandler > const & handler );
 
     virtual uno::Reference< container::XEnumeration > SAL_CALL
     getUpdateInformationEnumeration(
         uno::Sequence< rtl::OUString > const & repositories,
         rtl::OUString const & extensionId
-    ) throw (uno::Exception, uno::RuntimeException);
+    );
 
     // XCommandEnvironment
-    virtual uno::Reference< task::XInteractionHandler > SAL_CALL getInteractionHandler()
-        throw ( uno::RuntimeException );
+    virtual uno::Reference< task::XInteractionHandler > SAL_CALL getInteractionHandler();
 
-    virtual uno::Reference< ucb::XProgressHandler > SAL_CALL getProgressHandler()
-        throw ( uno::RuntimeException ) { return  uno::Reference< ucb::XProgressHandler >(); };
+    virtual uno::Reference< ucb::XProgressHandler > SAL_CALL getProgressHandler() { return  uno::Reference< ucb::XProgressHandler >(); };
 
     // XWebDAVCommandEnvironment
     virtual uno::Sequence< beans::StringPair > SAL_CALL getUserRequestHeaders(
-        const rtl::OUString&,  ucb::WebDAVHTTPMethod )
-        throw ( uno::RuntimeException ) { return m_aRequestHeaderList; };
+        const rtl::OUString&,  ucb::WebDAVHTTPMethod ) { return m_aRequestHeaderList; };
 
     // XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName)
-        throw (uno::RuntimeException);
-    virtual uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw (uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName);
+    virtual uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 protected:
 
@@ -243,8 +228,8 @@ public:
     virtual ~UpdateInformationEnumeration() {};
 
     // XEnumeration
-    sal_Bool SAL_CALL hasMoreElements() throw (uno::RuntimeException) { return m_nCount < m_nNodes; };
-    uno::Any SAL_CALL nextElement() throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+    sal_Bool SAL_CALL hasMoreElements() { return m_nCount < m_nNodes; };
+    uno::Any SAL_CALL nextElement()
     {
         OSL_ASSERT( m_xNodeList.is() );
         OSL_ASSERT( m_xUpdateInformationProvider.is() );
@@ -303,8 +288,8 @@ public:
     virtual ~SingleUpdateInformationEnumeration() {};
 
     // XEnumeration
-    sal_Bool SAL_CALL hasMoreElements() throw (uno::RuntimeException) { return 0 == m_nCount; };
-    uno::Any SAL_CALL nextElement() throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+    sal_Bool SAL_CALL hasMoreElements() { return 0 == m_nCount; };
+    uno::Any SAL_CALL nextElement()
     {
         if( m_nCount > 0 )
             throw container::NoSuchElementException(rtl::OUString::valueOf(m_nCount), *this);
@@ -602,7 +587,7 @@ uno::Reference< container::XEnumeration > SAL_CALL
 UpdateInformationProvider::getUpdateInformationEnumeration(
     uno::Sequence< rtl::OUString > const & repositories,
     rtl::OUString const & extensionId
-) throw (uno::Exception, uno::RuntimeException)
+)
 {
     OSL_ASSERT(m_xDocumentBuilder.is());
 
@@ -672,7 +657,7 @@ uno::Sequence< uno::Reference< xml::dom::XElement > > SAL_CALL
 UpdateInformationProvider::getUpdateInformation(
     uno::Sequence< rtl::OUString > const & repositories,
     rtl::OUString const & extensionId
-) throw (uno::Exception, uno::RuntimeException)
+)
 {
     uno::Reference< container::XEnumeration > xEnumeration(
         getUpdateInformationEnumeration(repositories, extensionId)
@@ -714,7 +699,7 @@ UpdateInformationProvider::getUpdateInformation(
 //------------------------------------------------------------------------------
 
 void SAL_CALL
-UpdateInformationProvider::cancel() throw (uno::RuntimeException)
+UpdateInformationProvider::cancel()
 {
     m_bCancelled.set();
 
@@ -728,7 +713,6 @@ UpdateInformationProvider::cancel() throw (uno::RuntimeException)
 void SAL_CALL
 UpdateInformationProvider::setInteractionHandler(
         uno::Reference< task::XInteractionHandler > const & handler )
-    throw (uno::RuntimeException)
 {
     osl::MutexGuard aGuard(m_aMutex);
     m_xInteractionHandler = handler;
@@ -738,7 +722,6 @@ UpdateInformationProvider::setInteractionHandler(
 
 uno::Reference< task::XInteractionHandler > SAL_CALL
 UpdateInformationProvider::getInteractionHandler()
-    throw ( uno::RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
@@ -787,7 +770,7 @@ UpdateInformationProvider::getImplName()
 //------------------------------------------------------------------------------
 
 rtl::OUString SAL_CALL
-UpdateInformationProvider::getImplementationName() throw (uno::RuntimeException)
+UpdateInformationProvider::getImplementationName()
 {
     return getImplName();
 }
@@ -795,7 +778,7 @@ UpdateInformationProvider::getImplementationName() throw (uno::RuntimeException)
 //------------------------------------------------------------------------------
 
 uno::Sequence< rtl::OUString > SAL_CALL
-UpdateInformationProvider::getSupportedServiceNames() throw (uno::RuntimeException)
+UpdateInformationProvider::getSupportedServiceNames()
 {
     return getServiceNames();
 }
@@ -803,7 +786,7 @@ UpdateInformationProvider::getSupportedServiceNames() throw (uno::RuntimeExcepti
 //------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL
-UpdateInformationProvider::supportsService( rtl::OUString const & serviceName ) throw (uno::RuntimeException)
+UpdateInformationProvider::supportsService( rtl::OUString const & serviceName )
 {
     uno::Sequence< rtl::OUString > aServiceNameList = getServiceNames();
 

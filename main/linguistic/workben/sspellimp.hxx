@@ -90,54 +90,41 @@ public:
 
 	// XSupportedLocales (for XSpellChecker)
     virtual Sequence< Locale > SAL_CALL
-		getLocales()
-			throw(RuntimeException);
+		getLocales();
     virtual sal_Bool SAL_CALL
-		hasLocale( const Locale& rLocale )
-			throw(RuntimeException);
+		hasLocale( const Locale& rLocale );
 
 	// XSpellChecker
     virtual sal_Bool SAL_CALL
 		isValid( const OUString& rWord, const Locale& rLocale,
-				const PropertyValues& rProperties )
-			throw(IllegalArgumentException,
-				  RuntimeException);
+				const PropertyValues& rProperties );
     virtual Reference< XSpellAlternatives > SAL_CALL
 		spell( const OUString& rWord, const Locale& rLocale,
-				const PropertyValues& rProperties )
-			throw(IllegalArgumentException,
-				  RuntimeException);
+				const PropertyValues& rProperties );
 
     // XLinguServiceEventBroadcaster
     virtual sal_Bool SAL_CALL
 		addLinguServiceEventListener(
-			const Reference< XLinguServiceEventListener >& rxLstnr )
-			throw(RuntimeException);
+			const Reference< XLinguServiceEventListener >& rxLstnr );
     virtual sal_Bool SAL_CALL
 		removeLinguServiceEventListener(
-			const Reference< XLinguServiceEventListener >& rxLstnr )
-			throw(RuntimeException);
+			const Reference< XLinguServiceEventListener >& rxLstnr );
 
 	// XServiceDisplayName
     virtual OUString SAL_CALL
-		getServiceDisplayName( const Locale& rLocale )
-			throw(RuntimeException);
+		getServiceDisplayName( const Locale& rLocale );
 
 	// XInitialization
     virtual void SAL_CALL
-		initialize( const Sequence< Any >& rArguments )
-			throw(Exception, RuntimeException);
+		initialize( const Sequence< Any >& rArguments );
 
 	// XComponent
 	virtual void SAL_CALL
-		dispose()
-			throw(RuntimeException);
+		dispose();
     virtual void SAL_CALL
-		addEventListener( const Reference< XEventListener >& rxListener )
-			throw(RuntimeException);
+		addEventListener( const Reference< XEventListener >& rxListener );
     virtual void SAL_CALL
-		removeEventListener( const Reference< XEventListener >& rxListener )
-			throw(RuntimeException);
+		removeEventListener( const Reference< XEventListener >& rxListener );
 
 	////////////////////////////////////////////////////////////
 	// Service specific part
@@ -145,14 +132,11 @@ public:
 
 	// XServiceInfo
     virtual OUString SAL_CALL
-		getImplementationName()
-			throw(RuntimeException);
+		getImplementationName();
     virtual sal_Bool SAL_CALL
-		supportsService( const OUString& rServiceName )
-			throw(RuntimeException);
+		supportsService( const OUString& rServiceName );
     virtual Sequence< OUString > SAL_CALL
-		getSupportedServiceNames()
-			throw(RuntimeException);
+		getSupportedServiceNames();
 
 
 	static inline OUString

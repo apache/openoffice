@@ -44,14 +44,12 @@ ModuleTypeDescriptionImpl::~ModuleTypeDescriptionImpl()
 //__________________________________________________________________________________________________
 // virtual
 TypeClass ModuleTypeDescriptionImpl::getTypeClass()
-    throw( RuntimeException )
 {
     return TypeClass_MODULE;
 }
 //__________________________________________________________________________________________________
 // virtual
 OUString ModuleTypeDescriptionImpl::getName()
-    throw( RuntimeException )
 {
 	return _aName;
 }
@@ -61,7 +59,6 @@ OUString ModuleTypeDescriptionImpl::getName()
 // virtual
 Sequence< Reference< XTypeDescription > > SAL_CALL
 ModuleTypeDescriptionImpl::getMembers()
-    throw ( RuntimeException )
 {
     if ( !_pMembers )
     {

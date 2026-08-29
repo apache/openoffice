@@ -24,7 +24,7 @@
 #include <MNSINIParser.hxx>
 #include <rtl/byteseq.hxx>
 
-IniParser::IniParser(OUString const & rIniName) throw(com::sun::star::io::IOException )
+IniParser::IniParser(OUString const & rIniName)
 {
     OUString iniUrl;
     if (osl_File_E_None != osl_getFileURLFromSystemPath(rIniName.pData, &iniUrl.pData))

@@ -35,10 +35,17 @@ USE_DEFFILE = TRUE
 .INCLUDE : $(PRJ)$/util$/makefile.pmk
 
 
-.IF "$(COM)" == "MSC"
+# BUILD_FOR_CLI rather than COM == MSC, which is what every other makefile in
+# this module already tests.  makefile.pmk sets it only when COM is MSC, so on
+# VC9 the two conditions select the same thing -- but this one also follows the
+# module being switched off, which COM == MSC cannot.
+.IF "$(BUILD_FOR_CLI)" != ""
 # When compiling for CLR, disable "warning C4339: use of undefined type detected
 # in CLR meta-data - use of this type may lead to a runtime exception":
 .IF "$(CCNUMVER)" <= "001399999999"
+CFLAGSCXX += -clr -AI $(DLLDEST) -AI $(SOLARBINDIR) -wd4339
+.ELIF "$(COMEX)"=="14"
+# /clr:oldSyntax went away after VS2015; these sources are C++/CLI now.
 CFLAGSCXX += -clr -AI $(DLLDEST) -AI $(SOLARBINDIR) -wd4339
 .ELSE
 CFLAGSCXX += -clr:oldSyntax -AI $(DLLDEST) -AI $(SOLARBINDIR) -wd4339

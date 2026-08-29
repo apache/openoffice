@@ -130,12 +130,12 @@ namespace dbaui
         // ---------------------------------------------------------------
         // UNO interface overridables
 		// XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		// ::com::sun::star::lang::XComponent
 		virtual void	SAL_CALL disposing();
 		// ::com::sun::star::frame::XController
-		virtual sal_Bool SAL_CALL suspend(sal_Bool bSuspend) throw( ::com::sun::star::uno::RuntimeException );
+		virtual sal_Bool SAL_CALL suspend(sal_Bool bSuspend);
 
 
         // ---------------------------------------------------------------

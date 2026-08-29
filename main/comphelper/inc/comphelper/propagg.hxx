@@ -132,8 +132,7 @@ public:
 	/// inherited from IPropertyArrayHelper
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property> SAL_CALL getProperties();
 	/// inherited from IPropertyArrayHelper
-	virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName(const ::rtl::OUString& _rPropertyName)
-								throw(::com::sun::star::beans::UnknownPropertyException);
+	virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName(const ::rtl::OUString& _rPropertyName);
 
 	/// inherited from IPropertyArrayHelper
 	virtual sal_Bool  SAL_CALL hasPropertyByName(const ::rtl::OUString& _rPropertyName) ;
@@ -212,33 +211,33 @@ protected:
 public:
 	OPropertySetAggregationHelper( ::cppu::OBroadcastHelper& rBHelper );
 
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type& aType) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type& aType);
 
 // XEventListener
-	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
 // XFastPropertySet
-    virtual void SAL_CALL setFastPropertyValue(sal_Int32 nHandle, const ::com::sun::star::uno::Any& aValue) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue(sal_Int32 nHandle) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setFastPropertyValue(sal_Int32 nHandle, const ::com::sun::star::uno::Any& aValue);
+    virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue(sal_Int32 nHandle);
 
 // XPropertySet
-	virtual void SAL_CALL			addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL			addVetoableChangeListener(const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL			addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener);
+	virtual void SAL_CALL			addVetoableChangeListener(const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener);
 
 // XPropertiesChangeListener
-	virtual void SAL_CALL propertiesChange(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent >& evt) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL propertiesChange(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent >& evt);
 
 // XVetoableChangeListener
-	virtual void SAL_CALL vetoableChange(const ::com::sun::star::beans::PropertyChangeEvent& aEvent) throw(::com::sun::star::beans::PropertyVetoException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL vetoableChange(const ::com::sun::star::beans::PropertyChangeEvent& aEvent);
 
 // XMultiPropertySet
-	virtual void SAL_CALL	setPropertyValues(const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Values) throw(::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	addPropertiesChangeListener(const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& xListener) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	setPropertyValues(const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Values);
+	virtual void SAL_CALL	addPropertiesChangeListener(const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& xListener);
 
 // XPropertyState
-	virtual ::com::sun::star::beans::PropertyState SAL_CALL	getPropertyState(const ::rtl::OUString& PropertyName) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL                                   setPropertyToDefault(const ::rtl::OUString& PropertyName) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL				getPropertyDefault(const ::rtl::OUString& aPropertyName) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::beans::PropertyState SAL_CALL	getPropertyState(const ::rtl::OUString& PropertyName);
+    virtual void SAL_CALL                                   setPropertyToDefault(const ::rtl::OUString& PropertyName);
+	virtual ::com::sun::star::uno::Any SAL_CALL				getPropertyDefault(const ::rtl::OUString& aPropertyName);
 
 // OPropertySetHelper
 	/** still waiting to be overwritten ...
@@ -249,12 +248,12 @@ public:
     /** only implemented for "forwarded" properties, every other property must be handled
         in the derivee, and will assert if passed herein
     */
-	virtual sal_Bool SAL_CALL convertFastPropertyValue( ::com::sun::star::uno::Any& _rConvertedValue, ::com::sun::star::uno::Any& _rOldValue, sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue ) throw(::com::sun::star::lang::IllegalArgumentException);
+	virtual sal_Bool SAL_CALL convertFastPropertyValue( ::com::sun::star::uno::Any& _rConvertedValue, ::com::sun::star::uno::Any& _rOldValue, sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue );
 
     /** only implemented for "forwarded" properties, every other property must be handled
         in the derivee, and will assert if passed herein
     */
-	virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue ) throw ( ::com::sun::star::uno::Exception );
+	virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue );
 
 protected:
 	~OPropertySetAggregationHelper();
@@ -313,7 +312,7 @@ protected:
     virtual void SAL_CALL forwardedPropertyValue( sal_Int32 _nHandle, bool _bSuccess );
 
 	/// must be called before aggregation, if aggregation is used
-	void setAggregation(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >&) throw( ::com::sun::star::lang::IllegalArgumentException );
+	void setAggregation(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >&);
 	void startListening();
 };
 

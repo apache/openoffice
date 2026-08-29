@@ -91,8 +91,6 @@ typedef std::list< UnresolvedListItem > UnresolvedList;
 void parseXcsFile(
     rtl::OUString const & url, int layer, Data & data, Partial const * partial,
     Modifications * modifications, Additions * additions)
-    SAL_THROW((
-        css::container::NoSuchElementException, css::uno::RuntimeException))
 {
     OSL_ASSERT(partial == 0 && modifications == 0 && additions == 0);
     (void) partial; (void) modifications; (void) additions;
@@ -104,8 +102,6 @@ void parseXcsFile(
 void parseXcuFile(
     rtl::OUString const & url, int layer, Data & data, Partial const * partial,
     Modifications * modifications, Additions * additions)
-    SAL_THROW((
-        css::container::NoSuchElementException, css::uno::RuntimeException))
 {
     OSL_VERIFY(
         rtl::Reference< ParseManager >(

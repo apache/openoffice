@@ -97,7 +97,6 @@ public:
     }
 
     virtual void SAL_CALL disposing (const com::sun::star::lang::EventObject& rEvent)
-        throw(RuntimeException)
     {
         if (rEvent.Source == Reference<XInterface>(static_cast<XWeak*>(mpObserver.get())))
         {
@@ -112,7 +111,6 @@ public:
     }
 
     virtual void SAL_CALL statusChanged (const com::sun::star::frame::FeatureStateEvent& rEvent)
-        throw(RuntimeException)
     {
         bool bReadWrite (true);
         if (rEvent.IsEnabled)

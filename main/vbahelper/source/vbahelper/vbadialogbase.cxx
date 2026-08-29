@@ -28,7 +28,7 @@ using namespace ::com::sun::star;
 
 // fails silently
 void
-VbaDialogBase::Show() throw(uno::RuntimeException)
+VbaDialogBase::Show()
 {
 	rtl::OUString aURL;
 	if ( m_xModel.is() )

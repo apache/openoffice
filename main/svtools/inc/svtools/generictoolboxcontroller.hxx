@@ -47,13 +47,13 @@ class SVT_DLLPUBLIC GenericToolboxController : public svt::ToolboxController
         virtual ~GenericToolboxController();
 
         // XComponent
-        virtual void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL dispose();
 
         // XToolbarController
-        virtual void SAL_CALL execute( sal_Int16 KeyModifier ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL execute( sal_Int16 KeyModifier );
 
         // XStatusListener
-		virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
          DECL_STATIC_LINK( GenericToolboxController, ExecuteHdl_Impl, ExecuteInfo* );
 

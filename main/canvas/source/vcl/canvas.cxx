@@ -138,7 +138,7 @@ namespace vclcanvas
         CanvasBaseT::disposing();
     }
 
-    ::rtl::OUString SAL_CALL Canvas::getServiceName(  ) throw (::com::sun::star::uno::RuntimeException)
+    ::rtl::OUString SAL_CALL Canvas::getServiceName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( CANVAS_SERVICE_NAME ) );
     }

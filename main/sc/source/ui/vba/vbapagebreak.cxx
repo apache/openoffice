@@ -30,7 +30,7 @@ template< typename Ifc1 >
 ScVbaPageBreak<Ifc1>::ScVbaPageBreak( const uno::Reference< XHelperInterface >& xParent,
                     const uno::Reference< uno::XComponentContext >& xContext,
             		uno::Reference< beans::XPropertySet >& xProps,
-                    sheet::TablePageBreakData aTablePageBreakData) throw (uno::RuntimeException):
+                    sheet::TablePageBreakData aTablePageBreakData):
             ScVbaPageBreak_BASE( xParent, xContext ),
             mxRowColPropertySet( xProps ),
             maTablePageBreakData( aTablePageBreakData )
@@ -38,7 +38,7 @@ ScVbaPageBreak<Ifc1>::ScVbaPageBreak( const uno::Reference< XHelperInterface >& 
 }
 
 template< typename Ifc1 >
-sal_Int32 ScVbaPageBreak<Ifc1>::getType() throw (uno::RuntimeException)
+sal_Int32 ScVbaPageBreak<Ifc1>::getType()
 {
     uno::Any aValue = mxRowColPropertySet->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "IsStartOfNewPage" )));
     sal_Bool hasPageBreak = sal_False;
@@ -54,7 +54,7 @@ sal_Int32 ScVbaPageBreak<Ifc1>::getType() throw (uno::RuntimeException)
 }
 
 template< typename Ifc1 >
-void ScVbaPageBreak<Ifc1>::setType(sal_Int32 type) throw (uno::RuntimeException)
+void ScVbaPageBreak<Ifc1>::setType(sal_Int32 type)
 {
     if( (type != excel::XlPageBreak::xlPageBreakNone) &&
         (type != excel::XlPageBreak::xlPageBreakManual) &&
@@ -77,13 +77,13 @@ void ScVbaPageBreak<Ifc1>::setType(sal_Int32 type) throw (uno::RuntimeException)
 }
 
 template< typename Ifc1 >
-void ScVbaPageBreak<Ifc1>::Delete() throw ( script::BasicErrorException, uno::RuntimeException)
+void ScVbaPageBreak<Ifc1>::Delete()
 {
     mxRowColPropertySet->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "IsStartOfNewPage" )), uno::makeAny(sal_False));
 }
 
 template< typename Ifc1 >
-uno::Reference< excel::XRange> ScVbaPageBreak<Ifc1>::Location() throw ( script::BasicErrorException, uno::RuntimeException)
+uno::Reference< excel::XRange> ScVbaPageBreak<Ifc1>::Location()
 {
     uno::Reference< table::XCellRange > xRange( mxRowColPropertySet, uno::UNO_QUERY_THROW );
     return new ScVbaRange( ScVbaPageBreak_BASE::getParent(), ScVbaPageBreak_BASE::mxContext, xRange);
@@ -138,7 +138,7 @@ template class ScVbaPageBreak< excel::XVPageBreak >;
 ScVbaVPageBreak::ScVbaVPageBreak( const css::uno::Reference< ov::XHelperInterface >& xParent,
 								  const css::uno::Reference< css::uno::XComponentContext >& xContext,
 								  css::uno::Reference< css::beans::XPropertySet >& xProps,
-								  css::sheet::TablePageBreakData aTablePageBreakData ) throw ( css::uno::RuntimeException )
+								  css::sheet::TablePageBreakData aTablePageBreakData )
 :   ScVbaVPageBreak_BASE( xParent, xContext, xProps, aTablePageBreakData )
 {
 }

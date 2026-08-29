@@ -70,60 +70,42 @@ protected:
 
     // ____ XChartType ____
     // still abstract ! implement !
-    virtual ::rtl::OUString SAL_CALL getChartType()
-        throw (::com::sun::star::uno::RuntimeException) = 0;
+    virtual ::rtl::OUString SAL_CALL getChartType() = 0;
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XCoordinateSystem > SAL_CALL
-        createCoordinateSystem( ::sal_Int32 DimensionCount )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        createCoordinateSystem( ::sal_Int32 DimensionCount );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedMandatoryRoles()
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedMandatoryRoles();
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedOptionalRoles()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getRoleOfSequenceForSeriesLabel()
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedOptionalRoles();
+    virtual ::rtl::OUString SAL_CALL getRoleOfSequenceForSeriesLabel();
 
     // ____ XDataSeriesContainer ____
     virtual void SAL_CALL addDataSeries(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries >& aDataSeries )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries >& aDataSeries );
     virtual void SAL_CALL removeDataSeries(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries >& aDataSeries )
-        throw (::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries > > SAL_CALL getDataSeries()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries >& aDataSeries );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries > > SAL_CALL getDataSeries();
     virtual void SAL_CALL setDataSeries(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries > >& aDataSeries )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries > >& aDataSeries );
 
     // ____ XModifyBroadcaster ____
     virtual void SAL_CALL addModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
     virtual void SAL_CALL removeModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
     // ____ XModifyListener ____
     virtual void SAL_CALL modified(
-        const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& aEvent );
 
     // ____ XEventListener (base of XModifyListener) ____
     virtual void SAL_CALL disposing(
-        const ::com::sun::star::lang::EventObject& Source )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& Source );
 
     void fireModifyEvent();
 
     // ____ OPropertySet ____
-    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const
-        throw(::com::sun::star::beans::UnknownPropertyException);
+    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const;
     virtual ::cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
 
     virtual void firePropertyChangeEvent();
@@ -131,8 +113,7 @@ protected:
 
     // ____ XPropertySet ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+        getPropertySetInfo();
 
 // 	virtual sal_Bool SAL_CALL convertFastPropertyValue
 //         ( ::com::sun::star::uno::Any & rConvertedValue,

@@ -348,7 +348,7 @@ void OGenericUnoController::impl_initialize()
 {
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::initialize( const Sequence< Any >& aArguments ) throw(Exception, RuntimeException)
+void SAL_CALL OGenericUnoController::initialize( const Sequence< Any >& aArguments )
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( getMutex() );
@@ -439,14 +439,14 @@ void OGenericUnoController::stopFrameListening( const Reference< XFrame >& _rxFr
 }
 
 // -------------------------------------------------------------------------
-void OGenericUnoController::disposing(const EventObject& Source) throw( RuntimeException )
+void OGenericUnoController::disposing(const EventObject& Source)
 {
 	// our frame ?
 	if ( Source.Source == getFrame() )
 		stopFrameListening( getFrame() );
 }
 //------------------------------------------------------------------------
-void OGenericUnoController::modified(const EventObject& aEvent) throw( RuntimeException )
+void OGenericUnoController::modified(const EventObject& aEvent)
 {
 	::osl::MutexGuard aGuard( getMutex() );
 	if ( !isDataSourceReadOnly() )
@@ -461,19 +461,19 @@ void OGenericUnoController::modified(const EventObject& aEvent) throw( RuntimeEx
 	InvalidateFeature(ID_BROWSER_UNDO);
 }
 // -----------------------------------------------------------------------
-Reference< XWindow > SAL_CALL OGenericUnoController::getComponentWindow() throw (RuntimeException)
+Reference< XWindow > SAL_CALL OGenericUnoController::getComponentWindow()
 {
 	return VCLUnoHelper::GetInterface( getView() );
 }
 
 // -----------------------------------------------------------------------
-::rtl::OUString SAL_CALL OGenericUnoController::getViewControllerName() throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OGenericUnoController::getViewControllerName()
 {
     return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Default" ) );
 }
 
 // -----------------------------------------------------------------------
-Sequence< PropertyValue > SAL_CALL OGenericUnoController::getCreationArguments() throw (RuntimeException)
+Sequence< PropertyValue > SAL_CALL OGenericUnoController::getCreationArguments()
 {
     // currently we do not support any creation args, so anything passed to XModel2::createViewController would be
     // lost, so we can equally return an empty sequence here
@@ -481,7 +481,7 @@ Sequence< PropertyValue > SAL_CALL OGenericUnoController::getCreationArguments()
 }
 
 // -----------------------------------------------------------------------
-void OGenericUnoController::attachFrame( const Reference< XFrame >& _rxFrame ) throw( RuntimeException )
+void OGenericUnoController::attachFrame( const Reference< XFrame >& _rxFrame )
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( getMutex() );
@@ -762,7 +762,7 @@ void OGenericUnoController::InvalidateAll_Impl()
 }
 
 // -----------------------------------------------------------------------
-Reference< XDispatch >	OGenericUnoController::queryDispatch(const URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags) throw( RuntimeException )
+Reference< XDispatch >	OGenericUnoController::queryDispatch(const URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags)
 {
 	Reference< XDispatch > xReturn;
 
@@ -790,7 +790,7 @@ Reference< XDispatch >	OGenericUnoController::queryDispatch(const URL& aURL, con
 }
 
 // -----------------------------------------------------------------------
-Sequence< Reference< XDispatch > > OGenericUnoController::queryDispatches(const Sequence< DispatchDescriptor >& aDescripts) throw( RuntimeException )
+Sequence< Reference< XDispatch > > OGenericUnoController::queryDispatches(const Sequence< DispatchDescriptor >& aDescripts)
 {
 	Sequence< Reference< XDispatch > > aReturn;
 	sal_Int32 nLen = aDescripts.getLength();
@@ -811,31 +811,31 @@ Sequence< Reference< XDispatch > > OGenericUnoController::queryDispatches(const 
 }
 
 // -----------------------------------------------------------------------
-Reference< XDispatchProvider >	OGenericUnoController::getSlaveDispatchProvider(void) throw( RuntimeException )
+Reference< XDispatchProvider >	OGenericUnoController::getSlaveDispatchProvider(void)
 {
 	return m_xSlaveDispatcher;
 }
 
 // -----------------------------------------------------------------------
-void OGenericUnoController::setSlaveDispatchProvider(const Reference< XDispatchProvider > & _xNewProvider) throw( RuntimeException )
+void OGenericUnoController::setSlaveDispatchProvider(const Reference< XDispatchProvider > & _xNewProvider)
 {
 	m_xSlaveDispatcher = _xNewProvider;
 }
 
 // -----------------------------------------------------------------------
-Reference< XDispatchProvider >	OGenericUnoController::getMasterDispatchProvider(void) throw( RuntimeException )
+Reference< XDispatchProvider >	OGenericUnoController::getMasterDispatchProvider(void)
 {
 	return m_xMasterDispatcher;
 }
 
 // -----------------------------------------------------------------------
-void OGenericUnoController::setMasterDispatchProvider(const Reference< XDispatchProvider > & _xNewProvider) throw( RuntimeException )
+void OGenericUnoController::setMasterDispatchProvider(const Reference< XDispatchProvider > & _xNewProvider)
 {
 	m_xMasterDispatcher = _xNewProvider;
 }
 
 // -----------------------------------------------------------------------
-void OGenericUnoController::dispatch(const URL& _aURL, const Sequence< PropertyValue >& aArgs) throw(RuntimeException)
+void OGenericUnoController::dispatch(const URL& _aURL, const Sequence< PropertyValue >& aArgs)
 {
     ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     // Since the fix for #123967#, the SolarMutex is not locked anymore when the framework calls into
@@ -856,7 +856,7 @@ void OGenericUnoController::dispatch(const URL& _aURL, const Sequence< PropertyV
 }
 
 // -----------------------------------------------------------------------
-void OGenericUnoController::addStatusListener(const Reference< XStatusListener > & aListener, const URL& _rURL) throw(RuntimeException)
+void OGenericUnoController::addStatusListener(const Reference< XStatusListener > & aListener, const URL& _rURL)
 {
     // parse the ULR now and here, this saves later parsing in each notification round
     URL aParsedURL( _rURL );
@@ -872,7 +872,7 @@ void OGenericUnoController::addStatusListener(const Reference< XStatusListener >
 }
 
 // -----------------------------------------------------------------------
-void OGenericUnoController::removeStatusListener(const Reference< XStatusListener > & aListener, const URL& _rURL) throw(RuntimeException)
+void OGenericUnoController::removeStatusListener(const Reference< XStatusListener > & aListener, const URL& _rURL)
 {
 	DispatchIterator iterSearch = m_arrStatusListener.begin();
 
@@ -967,21 +967,21 @@ void OGenericUnoController::disposing()
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::addEventListener( const Reference< XEventListener >& xListener ) throw (RuntimeException)
+void SAL_CALL OGenericUnoController::addEventListener( const Reference< XEventListener >& xListener )
 {
     // disambiguate
     OGenericUnoController_Base::WeakComponentImplHelperBase::addEventListener( xListener );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::removeEventListener( const Reference< XEventListener >& xListener ) throw (RuntimeException)
+void SAL_CALL OGenericUnoController::removeEventListener( const Reference< XEventListener >& xListener )
 {
     // disambiguate
     OGenericUnoController_Base::WeakComponentImplHelperBase::removeEventListener( xListener );
 }
 
 //------------------------------------------------------------------------------
-void OGenericUnoController::frameAction(const FrameActionEvent& aEvent) throw( RuntimeException )
+void OGenericUnoController::frameAction(const FrameActionEvent& aEvent)
 {
     ::osl::MutexGuard aGuard( getMutex() );
     if ( aEvent.Frame == m_aCurrentFrame.getFrame() )
@@ -1089,7 +1089,7 @@ bool OGenericUnoController::isUserDefinedFeature( const ::rtl::OUString& _rFeatu
 }
 
 //-------------------------------------------------------------------------
-sal_Bool SAL_CALL OGenericUnoController::supportsService(const ::rtl::OUString& ServiceName) throw(RuntimeException)
+sal_Bool SAL_CALL OGenericUnoController::supportsService(const ::rtl::OUString& ServiceName)
 {
 	Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 
@@ -1210,30 +1210,30 @@ IMPL_LINK(OGenericUnoController, OnAsyncCloseTask, void*, EMPTYARG)
 	return 0L;
 }
 // -----------------------------------------------------------------------------
-Any SAL_CALL OGenericUnoController::getViewData(void) throw( RuntimeException )
+Any SAL_CALL OGenericUnoController::getViewData(void)
 {
 	return Any();
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::restoreViewData(const Any& /*Data*/) throw( RuntimeException )
+void SAL_CALL OGenericUnoController::restoreViewData(const Any& /*Data*/)
 {
 }
 
 // -----------------------------------------------------------------------------
-Reference< XModel > SAL_CALL OGenericUnoController::getModel(void) throw( RuntimeException )
+Reference< XModel > SAL_CALL OGenericUnoController::getModel(void)
 {
     return Reference< XModel >();
 }
 
 // -----------------------------------------------------------------------------
-Reference< XFrame > SAL_CALL OGenericUnoController::getFrame(void) throw( RuntimeException )
+Reference< XFrame > SAL_CALL OGenericUnoController::getFrame(void)
 {
     ::osl::MutexGuard aGuard( getMutex() );
     return m_aCurrentFrame.getFrame();
 }
 
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OGenericUnoController::attachModel(const Reference< XModel > & /*xModel*/) throw( RuntimeException )
+sal_Bool SAL_CALL OGenericUnoController::attachModel(const Reference< XModel > & /*xModel*/)
 {
     OSL_ENSURE( false, "OGenericUnoController::attachModel: not supported!" );
     return sal_False;
@@ -1471,7 +1471,6 @@ Reference< XTitle > OGenericUnoController::impl_getTitleHelper_throw()
 //=============================================================================
 // XTitle
 ::rtl::OUString SAL_CALL OGenericUnoController::getTitle()
-    throw (RuntimeException)
 {
     ::osl::MutexGuard aGuard( getMutex() );
     if ( m_bExternalTitle )
@@ -1482,7 +1481,6 @@ Reference< XTitle > OGenericUnoController::impl_getTitleHelper_throw()
 //=============================================================================
 // XTitle
 void SAL_CALL OGenericUnoController::setTitle(const ::rtl::OUString& sTitle)
-    throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( getMutex() );
@@ -1493,7 +1491,6 @@ void SAL_CALL OGenericUnoController::setTitle(const ::rtl::OUString& sTitle)
 //=============================================================================
 // XTitleChangeBroadcaster
 void SAL_CALL OGenericUnoController::addTitleChangeListener(const Reference< XTitleChangeListener >& xListener)
-    throw (RuntimeException)
 {
     Reference< XTitleChangeBroadcaster > xBroadcaster(impl_getTitleHelper_throw(), UNO_QUERY);
     if (xBroadcaster.is ())
@@ -1502,7 +1499,6 @@ void SAL_CALL OGenericUnoController::addTitleChangeListener(const Reference< XTi
 
 // -----------------------------------------------------------------------------
 void SAL_CALL OGenericUnoController::removeTitleChangeListener(const Reference< XTitleChangeListener >& xListener)
-    throw (RuntimeException)
 {
     Reference< XTitleChangeBroadcaster > xBroadcaster(impl_getTitleHelper_throw(), UNO_QUERY);
     if (xBroadcaster.is ())
@@ -1512,27 +1508,27 @@ void SAL_CALL OGenericUnoController::removeTitleChangeListener(const Reference< 
 // =============================================================================
 // XUserInputInterception
 // -----------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::addKeyHandler( const Reference< XKeyHandler >& _rxHandler ) throw (RuntimeException)
+void SAL_CALL OGenericUnoController::addKeyHandler( const Reference< XKeyHandler >& _rxHandler )
 {
     if ( _rxHandler.is() )
         m_pData->m_aUserInputInterception.addKeyHandler( _rxHandler );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::removeKeyHandler( const Reference< XKeyHandler >& _rxHandler ) throw (RuntimeException)
+void SAL_CALL OGenericUnoController::removeKeyHandler( const Reference< XKeyHandler >& _rxHandler )
 {
     m_pData->m_aUserInputInterception.removeKeyHandler( _rxHandler );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::addMouseClickHandler( const Reference< XMouseClickHandler >& _rxHandler ) throw (RuntimeException)
+void SAL_CALL OGenericUnoController::addMouseClickHandler( const Reference< XMouseClickHandler >& _rxHandler )
 {
     if ( _rxHandler.is() )
         m_pData->m_aUserInputInterception.addMouseClickHandler( _rxHandler );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OGenericUnoController::removeMouseClickHandler( const Reference< XMouseClickHandler >& _rxHandler ) throw (RuntimeException)
+void SAL_CALL OGenericUnoController::removeMouseClickHandler( const Reference< XMouseClickHandler >& _rxHandler )
 {
     m_pData->m_aUserInputInterception.removeMouseClickHandler( _rxHandler );
 }
@@ -1592,7 +1588,7 @@ sal_Bool OGenericUnoController::isDataSourceReadOnly() const
 }
 
 // -----------------------------------------------------------------------------
-Reference< XController > OGenericUnoController::getXController() throw( RuntimeException )
+Reference< XController > OGenericUnoController::getXController()
 {
     return this;
 }
@@ -1624,7 +1620,7 @@ sal_Bool OGenericUnoController::isCommandEnabled( const ::rtl::OUString& _rCompl
 }
 
 // -----------------------------------------------------------------------------
-Sequence< ::sal_Int16 > SAL_CALL OGenericUnoController::getSupportedCommandGroups() throw (RuntimeException)
+Sequence< ::sal_Int16 > SAL_CALL OGenericUnoController::getSupportedCommandGroups()
 {
     CommandHashMap aCmdHashMap;
 	for (   SupportedFeatures::const_iterator aIter = m_aSupportedFeatures.begin();
@@ -1645,7 +1641,7 @@ Sequence< ::sal_Int16 > SAL_CALL OGenericUnoController::getSupportedCommandGroup
 }
 
 // -----------------------------------------------------------------------------
-Sequence< DispatchInformation > SAL_CALL OGenericUnoController::getConfigurableDispatchInformation( ::sal_Int16 CommandGroup ) throw (RuntimeException)
+Sequence< DispatchInformation > SAL_CALL OGenericUnoController::getConfigurableDispatchInformation( ::sal_Int16 CommandGroup )
 {
     DispatchInfoList    aInformationList;
     DispatchInformation aDispatchInfo;
@@ -1684,7 +1680,7 @@ void OGenericUnoController::fillSupportedFeatures()
 }
 
 
-void SAL_CALL OGenericUnoController::dispose() throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL OGenericUnoController::dispose()
 {
 	::vos::OGuard aSolarGuard(Application::GetSolarMutex());
 	OGenericUnoController_Base::dispose();

@@ -64,8 +64,7 @@ public:
     static com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
     SAL_CALL static_create(
         com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >
-            const & xContext)
-        SAL_THROW((com::sun::star::uno::Exception));
+            const & xContext);
 
     static rtl::OUString SAL_CALL static_getImplementationName();
 
@@ -86,14 +85,12 @@ private:
 
     virtual ~BridgeFactory();
 
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
 
-    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName)
-        throw (com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName);
 
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);
+    getSupportedServiceNames();
 
     virtual com::sun::star::uno::Reference< com::sun::star::bridge::XBridge >
     SAL_CALL createBridge(
@@ -102,21 +99,16 @@ private:
             com::sun::star::connection::XConnection > const & aConnection,
         com::sun::star::uno::Reference<
             com::sun::star::bridge::XInstanceProvider > const &
-                anInstanceProvider)
-        throw (
-            com::sun::star::bridge::BridgeExistsException,
-            com::sun::star::lang::IllegalArgumentException,
-            com::sun::star::uno::RuntimeException);
+                anInstanceProvider);
 
     virtual com::sun::star::uno::Reference< com::sun::star::bridge::XBridge >
     SAL_CALL getBridge(
-        rtl::OUString const & sName)
-        throw (com::sun::star::uno::RuntimeException);
+        rtl::OUString const & sName);
 
     virtual
     com::sun::star::uno::Sequence<
         com::sun::star::uno::Reference< com::sun::star::bridge::XBridge > >
-    SAL_CALL getExistingBridges() throw (com::sun::star::uno::RuntimeException);
+    SAL_CALL getExistingBridges();
 
     typedef
         std::list<

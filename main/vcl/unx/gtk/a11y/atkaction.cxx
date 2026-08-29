@@ -53,7 +53,7 @@ getAsConst( const rtl::OString& rString )
 }
 
 static accessibility::XAccessibleAction*
-        getAction( AtkAction *action ) throw (uno::RuntimeException)
+        getAction( AtkAction *action )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( action );
 

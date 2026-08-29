@@ -318,11 +318,11 @@ public:
 private:
     /// check whether object is live, and throw suitable exception if not
     /// (to be used be API methods before acting on the object)
-    void checkLive() throw( RuntimeException_t );
+    void checkLive();
 
     /// check whether binding has a model, and throw exception if not
     /// (to be used be API methods before acting on the object)
-    void checkModel() throw( RuntimeException_t );
+    void checkModel();
 
     /// determine whether object is live
     /// live: has model, and model has been initialized
@@ -392,21 +392,13 @@ public:
 
 public:
 
-    virtual Sequence_Type_t SAL_CALL getSupportedValueTypes()
-        throw( RuntimeException_t );
+    virtual Sequence_Type_t SAL_CALL getSupportedValueTypes();
 
-    virtual sal_Bool SAL_CALL supportsType( const Type_t& aType )
-        throw( RuntimeException_t );
+    virtual sal_Bool SAL_CALL supportsType( const Type_t& aType );
 
-    virtual Any_t SAL_CALL getValue( const Type_t& aType )
-        throw( IncompatibleTypesException_t,
-               RuntimeException_t );
+    virtual Any_t SAL_CALL getValue( const Type_t& aType );
 
-    virtual void SAL_CALL setValue( const Any_t& aValue )
-        throw( IncompatibleTypesException_t,
-               InvalidBindingStateException_t,
-               NoSupportException_t,
-               RuntimeException_t );
+    virtual void SAL_CALL setValue( const Any_t& aValue );
 
 
 
@@ -414,23 +406,15 @@ public:
     // XListEntry Source
     //
 
-    virtual sal_Int32 SAL_CALL getListEntryCount()
-        throw( RuntimeException_t );
+    virtual sal_Int32 SAL_CALL getListEntryCount();
 
-    virtual rtl::OUString SAL_CALL getListEntry( sal_Int32 nPosition )
-        throw( IndexOutOfBoundsException_t,
-               RuntimeException_t );
+    virtual rtl::OUString SAL_CALL getListEntry( sal_Int32 nPosition );
 
-    virtual StringSequence_t SAL_CALL getAllListEntries()
-        throw( RuntimeException_t );
+    virtual StringSequence_t SAL_CALL getAllListEntries();
 
-    virtual void SAL_CALL addListEntryListener( const XListEntryListener_t& )
-        throw( NullPointerException_t,
-               RuntimeException_t );
+    virtual void SAL_CALL addListEntryListener( const XListEntryListener_t& );
 
-    virtual void SAL_CALL removeListEntryListener( const XListEntryListener_t&)
-        throw( NullPointerException_t,
-               RuntimeException_t );
+    virtual void SAL_CALL removeListEntryListener( const XListEntryListener_t&);
 
 
 
@@ -439,22 +423,16 @@ public:
     //
 
     virtual sal_Bool SAL_CALL isValid(
-        const Any_t& )
-        throw( RuntimeException_t );
+        const Any_t& );
 
     virtual rtl::OUString SAL_CALL explainInvalid(
-        const Any_t& )
-        throw( RuntimeException_t );
+        const Any_t& );
 
     virtual void SAL_CALL addValidityConstraintListener(
-        const XValidityConstraintListener_t& xListener )
-        throw( NullPointerException_t,
-               RuntimeException_t );
+        const XValidityConstraintListener_t& xListener );
 
     virtual void SAL_CALL removeValidityConstraintListener(
-        const XValidityConstraintListener_t& xListener )
-        throw( NullPointerException_t,
-               RuntimeException_t );
+        const XValidityConstraintListener_t& xListener );
 
 
     //
@@ -465,12 +443,10 @@ public:
 public:
 
     virtual void SAL_CALL addModifyListener(
-        const XModifyListener_t& xListener )
-        throw( RuntimeException_t );
+        const XModifyListener_t& xListener );
 
     virtual void SAL_CALL removeModifyListener(
-        const XModifyListener_t& xListener )
-        throw( RuntimeException_t );
+        const XModifyListener_t& xListener );
 
 
 
@@ -482,11 +458,9 @@ public:
 
 public:
 
-    virtual rtl::OUString SAL_CALL getName()
-        throw( RuntimeException_t );
+    virtual rtl::OUString SAL_CALL getName();
 
-    virtual void SAL_CALL setName( const rtl::OUString& )
-        throw( RuntimeException_t );
+    virtual void SAL_CALL setName( const rtl::OUString& );
 
 
 
@@ -496,8 +470,7 @@ public:
     //
 
     virtual void SAL_CALL handleEvent(
-        const XEvent_t& xEvent )
-        throw( RuntimeException_t );
+        const XEvent_t& xEvent );
 
 
 
@@ -505,16 +478,14 @@ public:
     // XUnoTunnel
     //
 
-    virtual sal_Int64 SAL_CALL getSomething( const IntSequence_t& )
-        throw( RuntimeException_t );
+    virtual sal_Int64 SAL_CALL getSomething( const IntSequence_t& );
 
 
     //
     // XCloneable
     //
 
-    virtual XCloneable_t SAL_CALL createClone()
-        throw( RuntimeException_t );
+    virtual XCloneable_t SAL_CALL createClone();
 };
 
 

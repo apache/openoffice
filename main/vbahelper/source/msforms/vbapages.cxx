@@ -25,12 +25,12 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-ScVbaPages::ScVbaPages( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XIndexAccess >& xPages ) throw( lang::IllegalArgumentException ) : ScVbaPages_BASE( xParent, xContext, xPages )
+ScVbaPages::ScVbaPages( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XIndexAccess >& xPages ) : ScVbaPages_BASE( xParent, xContext, xPages )
 {
 }
 
 uno::Type SAL_CALL
-ScVbaPages::getElementType() throw (uno::RuntimeException)
+ScVbaPages::getElementType()
 {
 	// return msforms::XPage::static_type(0);
 	return uno::XInterface::static_type(0);
@@ -50,7 +50,7 @@ ScVbaPages::getServiceImplName()
 }
 
 uno::Reference< container::XEnumeration > SAL_CALL
-ScVbaPages::createEnumeration() throw (uno::RuntimeException)
+ScVbaPages::createEnumeration()
 {
 	return uno::Reference< container::XEnumeration >();
 }

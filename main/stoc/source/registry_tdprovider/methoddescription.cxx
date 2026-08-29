@@ -60,23 +60,22 @@ public:
 
     virtual ~Parameter() {}
 
-    virtual rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException)
+    virtual rtl::OUString SAL_CALL getName()
     { return m_name; }
 
     virtual css::uno::Reference< css::reflection::XTypeDescription > SAL_CALL
-    getType() throw (css::uno::RuntimeException);
+    getType();
 
-    virtual sal_Bool SAL_CALL isIn() throw (css::uno::RuntimeException)
+    virtual sal_Bool SAL_CALL isIn()
     { return (m_mode & RT_PARAM_IN) != 0; }
 
-    virtual sal_Bool SAL_CALL isOut() throw (css::uno::RuntimeException)
+    virtual sal_Bool SAL_CALL isOut()
     { return (m_mode & RT_PARAM_OUT) != 0; }
 
-    virtual sal_Int32 SAL_CALL getPosition() throw (css::uno::RuntimeException)
+    virtual sal_Int32 SAL_CALL getPosition()
     { return m_position; }
 
     virtual sal_Bool SAL_CALL isRestParameter()
-        throw (css::uno::RuntimeException)
     { return (m_mode & RT_PARAM_REST) != 0; }
 
 private:
@@ -91,7 +90,6 @@ private:
 };
 
 css::uno::Reference< css::reflection::XTypeDescription > Parameter::getType()
-    throw (css::uno::RuntimeException)
 {
     try {
         return css::uno::Reference< css::reflection::XTypeDescription >(

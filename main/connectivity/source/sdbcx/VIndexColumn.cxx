@@ -31,14 +31,14 @@ using namespace connectivity::sdbcx;
 using namespace ::com::sun::star::beans;
 using namespace ::com::sun::star::uno;
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OIndexColumn::getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OIndexColumn::getImplementationName(  )
 {
 	if(isNew())
 		return ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.VIndexColumnDescriptor");
 	return ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.VIndexColumn");
 }
 // -----------------------------------------------------------------------------
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL OIndexColumn::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL OIndexColumn::getSupportedServiceNames(  )
 {
 	::com::sun::star::uno::Sequence< ::rtl::OUString > aSupported(1);
 	if(isNew())
@@ -49,7 +49,7 @@ using namespace ::com::sun::star::uno;
 	return aSupported;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OIndexColumn::supportsService( const ::rtl::OUString& _rServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL OIndexColumn::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();

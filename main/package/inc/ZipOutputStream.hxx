@@ -68,37 +68,25 @@ public:
 	~ZipOutputStream();
 
 	// rawWrite to support a direct write to the output stream
-    void SAL_CALL rawWrite( ::com::sun::star::uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL rawCloseEntry(  )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+    void SAL_CALL rawWrite( ::com::sun::star::uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength );
+    void SAL_CALL rawCloseEntry(  );
 
 	// XZipOutputStream interfaces
-    void SAL_CALL setMethod( sal_Int32 nNewMethod )
-		throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL setLevel( sal_Int32 nNewLevel )
-		throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL setMethod( sal_Int32 nNewMethod );
+    void SAL_CALL setLevel( sal_Int32 nNewLevel );
     void SAL_CALL putNextEntry( ZipEntry& rEntry,
             ZipPackageStream* pStream,
-			sal_Bool bEncrypt = sal_False )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL closeEntry(  )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL write( const ::com::sun::star::uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL finish(  )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+			sal_Bool bEncrypt = sal_False );
+    void SAL_CALL closeEntry(  );
+    void SAL_CALL write( const ::com::sun::star::uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength );
+    void SAL_CALL finish(  );
     static sal_uInt32 getCurrentDosTime ( );
 protected:
 	void doDeflate();
-	void writeEND(sal_uInt32 nOffset, sal_uInt32 nLength)
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	void writeCEN( const ZipEntry &rEntry )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	void writeEXT( const ZipEntry &rEntry )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	sal_Int32 writeLOC( const ZipEntry &rEntry )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	void writeEND(sal_uInt32 nOffset, sal_uInt32 nLength);
+	void writeCEN( const ZipEntry &rEntry );
+	void writeEXT( const ZipEntry &rEntry );
+	sal_Int32 writeLOC( const ZipEntry &rEntry );
 };
 
 #endif

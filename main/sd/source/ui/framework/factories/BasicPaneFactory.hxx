@@ -85,35 +85,30 @@ public:
     // XInitialization
 
     virtual void SAL_CALL initialize(
-        const css::uno::Sequence<css::uno::Any>& aArguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        const css::uno::Sequence<css::uno::Any>& aArguments);
 
 
     // XResourceFactory
 
     virtual css::uno::Reference<css::drawing::framework::XResource>
         SAL_CALL createResource (
-            const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId)
-        throw (css::uno::RuntimeException, css::lang::IllegalArgumentException, css::lang::WrappedTargetException);
+            const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId);
 
     virtual void SAL_CALL
         releaseResource (
-            const css::uno::Reference<css::drawing::framework::XResource>& rxPane)
-        throw (css::uno::RuntimeException);
+            const css::uno::Reference<css::drawing::framework::XResource>& rxPane);
 
 
     // XConfigurationChangeListener
 
     virtual void SAL_CALL notifyConfigurationChange (
-        const css::drawing::framework::ConfigurationChangeEvent& rEvent)
-        throw (css::uno::RuntimeException);
+        const css::drawing::framework::ConfigurationChangeEvent& rEvent);
 
 
     // lang::XEventListener
 
     virtual void SAL_CALL disposing (
-        const css::lang::EventObject& rEventObject)
-        throw (css::uno::RuntimeException);
+        const css::lang::EventObject& rEventObject);
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
@@ -154,8 +149,7 @@ private:
                 css::drawing::framework::XResourceId>& rxPaneId,
             const PaneDescriptor& rDescriptor);
 
-    void ThrowIfDisposed (void) const
-        throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } } // end of namespace sd::framework

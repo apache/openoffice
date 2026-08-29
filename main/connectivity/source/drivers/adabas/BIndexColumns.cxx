@@ -105,7 +105,7 @@ Reference< XPropertySet > OIndexColumns::createDescriptor()
 	return new OIndexColumn(sal_True);
 }
 // -----------------------------------------------------------------------------
-void OIndexColumns::impl_refresh() throw(::com::sun::star::uno::RuntimeException)
+void OIndexColumns::impl_refresh()
 {
 	m_pIndex->refreshColumns();
 }

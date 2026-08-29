@@ -54,7 +54,7 @@ public:
 		, const ::com::sun::star::uno::Reference<
                 ::com::sun::star::lang::XMultiServiceFactory >& xFactory
         , const rtl::OUString& rCID
-                ) throw (::com::sun::star::uno::RuntimeException );
+                );
 
     virtual void setTransformationSceneToScreen( const ::com::sun::star::drawing::HomogenMatrix& rMatrix );
 
@@ -62,8 +62,7 @@ public:
 
     virtual void setExplicitScaleAndIncrement(
             const ExplicitScaleData& rScale
-          , const ExplicitIncrementData& rIncrement )
-                throw (::com::sun::star::uno::RuntimeException);
+          , const ExplicitIncrementData& rIncrement );
 
     virtual void initAxisLabelProperties(
                     const ::com::sun::star::awt::Size& rFontReferenceSize

@@ -97,9 +97,7 @@ protected:
 	void SAL_CALL impl_init();
 	void SAL_CALL impl_deinit();
 	void SAL_CALL
-	impl_EnsureNotDisposed()
-		throw( com::sun::star::lang::DisposedException,
-			   com::sun::star::uno::RuntimeException );
+	impl_EnsureNotDisposed();
 
 	virtual void SAL_CALL
 	impl_InitResultSetOne( const com::sun::star::uno::Reference<
@@ -121,66 +119,51 @@ public:
 	//-----------------------------------------------------------------
 	// XInterface
 	virtual com::sun::star::uno::Any SAL_CALL
-	queryInterface( const com::sun::star::uno::Type & rType )
-		throw( com::sun::star::uno::RuntimeException );
+	queryInterface( const com::sun::star::uno::Type & rType );
 
 	//-----------------------------------------------------------------
     // XDynamicResultSet
 	virtual com::sun::star::uno::Reference< com::sun::star::sdbc::XResultSet > SAL_CALL
-	getStaticResultSet()
-		throw( com::sun::star::ucb::ListenerAlreadySetException
-		, com::sun::star::uno::RuntimeException );
+	getStaticResultSet();
 
 	virtual void SAL_CALL
 	setListener( const com::sun::star::uno::Reference<
-		com::sun::star::ucb::XDynamicResultSetListener > & Listener )
-		throw( com::sun::star::ucb::ListenerAlreadySetException
-			, com::sun::star::uno::RuntimeException );
+		com::sun::star::ucb::XDynamicResultSetListener > & Listener );
 
 	virtual void SAL_CALL
 	connectToCache( const com::sun::star::uno::Reference<
-		com::sun::star::ucb::XDynamicResultSet > & xCache )
-		throw( com::sun::star::ucb::ListenerAlreadySetException
-			, com::sun::star::ucb::AlreadyInitializedException
-			, com::sun::star::ucb::ServiceNotFoundException
-			, com::sun::star::uno::RuntimeException );
+		com::sun::star::ucb::XDynamicResultSet > & xCache );
 
 	virtual sal_Int16 SAL_CALL
-	getCapabilities() throw( com::sun::star::uno::RuntimeException );
+	getCapabilities();
 
 	//-----------------------------------------------------------------
 	// XComponent ( base of XDynamicResultSet )
 	virtual void SAL_CALL
-	dispose() throw( com::sun::star::uno::RuntimeException );
+	dispose();
 
     virtual void SAL_CALL
 	addEventListener( const com::sun::star::uno::Reference<
-		com::sun::star::lang::XEventListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+		com::sun::star::lang::XEventListener >& Listener );
 
     virtual void SAL_CALL
 	removeEventListener( const com::sun::star::uno::Reference<
-		com::sun::star::lang::XEventListener >& Listener )
-			throw( com::sun::star::uno::RuntimeException );
+		com::sun::star::lang::XEventListener >& Listener );
 
 	//-----------------------------------------------------------------
     // XSourceInitialization
 
 	virtual void SAL_CALL
 	setSource(	const com::sun::star::uno::Reference<
-		com::sun::star::uno::XInterface > & Source )
-		 throw( com::sun::star::ucb::AlreadyInitializedException
-				, com::sun::star::uno::RuntimeException );
+		com::sun::star::uno::XInterface > & Source );
 
 	//-----------------------------------------------------------------
 	// own methods:
     virtual void SAL_CALL
-	impl_disposing( const com::sun::star::lang::EventObject& Source )
-		throw( com::sun::star::uno::RuntimeException );
+	impl_disposing( const com::sun::star::lang::EventObject& Source );
 
 	virtual void SAL_CALL
-	impl_notify( const ::com::sun::star::ucb::ListEvent& Changes )
-		throw( com::sun::star::uno::RuntimeException );
+	impl_notify( const ::com::sun::star::ucb::ListEvent& Changes );
 };
 
 //=========================================================================
@@ -207,13 +190,11 @@ public:
 	// XEventListener ( base of XDynamicResultSetListener )
 	//-----------------------------------------------------------------
     virtual void SAL_CALL
-	disposing( const com::sun::star::lang::EventObject& Source )
-		throw( com::sun::star::uno::RuntimeException );
+	disposing( const com::sun::star::lang::EventObject& Source );
 	//-----------------------------------------------------------------
 	// XDynamicResultSetListener
     virtual void SAL_CALL
-	notify( const ::com::sun::star::ucb::ListEvent& Changes )
-		throw( com::sun::star::uno::RuntimeException );
+	notify( const ::com::sun::star::ucb::ListEvent& Changes );
 
 	//-----------------------------------------------------------------
 	// own methods:

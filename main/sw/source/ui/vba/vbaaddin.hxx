@@ -37,16 +37,16 @@ private:
     sal_Bool mbInstalled;
 
 public:
-	SwVbaAddin( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const rtl::OUString& rFileURL, sal_Bool bAutoload ) throw ( css::uno::RuntimeException );
+	SwVbaAddin( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const rtl::OUString& rFileURL, sal_Bool bAutoload );
 	virtual ~SwVbaAddin();
 
     // Attributes
-    virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setName( const rtl::OUString& _name ) throw (css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getPath() throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getAutoload() throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getInstalled() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setInstalled( ::sal_Bool _installed ) throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const rtl::OUString& _name );
+    virtual ::rtl::OUString SAL_CALL getPath();
+    virtual ::sal_Bool SAL_CALL getAutoload();
+    virtual ::sal_Bool SAL_CALL getInstalled();
+    virtual void SAL_CALL setInstalled( ::sal_Bool _installed );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

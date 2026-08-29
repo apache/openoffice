@@ -541,7 +541,6 @@ const Sequence< sal_Int8 > & SwXMLImport::getUnoTunnelId() throw()
 }
 
 sal_Int64 SAL_CALL SwXMLImport::getSomething( const Sequence< sal_Int8 >& rId )
-	throw(RuntimeException)
 {
     if( rId.getLength() == 16
         && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -565,7 +564,6 @@ OTextCursorHelper *lcl_xml_GetSwXTextCursor( const Reference < XTextCursor >& rT
 }
 
 void SwXMLImport::startDocument( void )
-	throw( xml::sax::SAXException, uno::RuntimeException )
 {
     // delegate to parent
     SvXMLImport::startDocument();
@@ -781,7 +779,6 @@ void SwXMLImport::startDocument( void )
 }
 
 void SwXMLImport::endDocument( void )
-	throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	DBG_ASSERT( GetModel().is(), "model missing; maybe startDocument wasn't called?" );
 	if( !GetModel().is() )
@@ -1547,7 +1544,6 @@ void SwXMLImport::SetDocumentSpecificSettings(
 
 void SwXMLImport::initialize(
 	const Sequence<Any>& aArguments )
-	throw( uno::Exception, uno::RuntimeException)
 {
 	// delegate to super class
 	SvXMLImport::initialize(aArguments);
@@ -1600,7 +1596,6 @@ uno::Sequence< OUString > SAL_CALL SwXMLImport_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SwXMLImport_createInstance(
 		const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-	throw( uno::Exception )
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new SwXMLImport(IMPORT_ALL);
@@ -1623,7 +1618,6 @@ uno::Sequence< OUString > SAL_CALL SwXMLImportStyles_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SwXMLImportStyles_createInstance(
 		const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-	throw( uno::Exception )
 {
 	// #110680#
 	//return (cppu::OWeakObject*)new SwXMLImport(
@@ -1651,7 +1645,6 @@ uno::Sequence< OUString > SAL_CALL SwXMLImportContent_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SwXMLImportContent_createInstance(
 		const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-	throw( uno::Exception )
 {
 	// #110680#
 	//return (cppu::OWeakObject*)new SwXMLImport(
@@ -1679,7 +1672,6 @@ uno::Sequence< OUString > SAL_CALL SwXMLImportMeta_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SwXMLImportMeta_createInstance(
 		const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-	throw( uno::Exception )
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new SwXMLImport( IMPORT_META );
@@ -1702,7 +1694,6 @@ uno::Sequence< OUString > SAL_CALL SwXMLImportSettings_getSupportedServiceNames(
 
 uno::Reference< uno::XInterface > SAL_CALL SwXMLImportSettings_createInstance(
 		const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-	throw( uno::Exception )
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new SwXMLImport( IMPORT_SETTINGS );
@@ -1713,7 +1704,6 @@ uno::Reference< uno::XInterface > SAL_CALL SwXMLImportSettings_createInstance(
 // XServiceInfo
 // override empty method from parent class
 OUString SAL_CALL SwXMLImport::getImplementationName()
-    throw(RuntimeException)
 {
     switch( getImportFlags() )
     {

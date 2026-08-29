@@ -86,31 +86,24 @@ namespace chelp
 
 		// XServiceInfo
 		virtual ::rtl::OUString SAL_CALL
-		getImplementationName()
-			throw( ::com::sun::star::uno::RuntimeException );
+		getImplementationName();
 
 		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-		getSupportedServiceNames()
-			throw( ::com::sun::star::uno::RuntimeException );
+		getSupportedServiceNames();
 
 		// XContent
 		virtual rtl::OUString SAL_CALL
-		getContentType()
-			throw( com::sun::star::uno::RuntimeException );
+		getContentType();
 
 		// XCommandProcessor
 		virtual com::sun::star::uno::Any SAL_CALL
 		execute( const com::sun::star::ucb::Command& aCommand,
 				 sal_Int32 CommandId,
 				 const com::sun::star::uno::Reference<
-				 com::sun::star::ucb::XCommandEnvironment >& Environment )
-			throw( com::sun::star::uno::Exception,
-				   com::sun::star::ucb::CommandAbortedException,
-				   com::sun::star::uno::RuntimeException );
+				 com::sun::star::ucb::XCommandEnvironment >& Environment );
 
 		virtual void SAL_CALL
-		abort( sal_Int32 CommandId )
-			throw( com::sun::star::uno::RuntimeException );
+		abort( sal_Int32 CommandId );
 
 
 	private:

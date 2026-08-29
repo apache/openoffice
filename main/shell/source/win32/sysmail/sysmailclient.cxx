@@ -208,7 +208,6 @@ namespace /* private */
 
 
 Reference<XMailMessage> SAL_CALL WinSysMailClient::createMailMessage()
-    throw (RuntimeException)
 {
     return Reference<XMailMessage>( new WinSysMailMsg() );
 }
@@ -304,7 +303,6 @@ void WinSysMailClient::assembleCommandLine(
 void SAL_CALL WinSysMailClient::sendMailMessage(
     const Reference<XMailMessage>& xMailMessage,
     sal_Int32 aFlag)
-    throw (IllegalArgumentException, Exception, RuntimeException)
 {
     validateParameter(xMailMessage, aFlag);
 

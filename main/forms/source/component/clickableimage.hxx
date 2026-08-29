@@ -98,41 +98,40 @@ namespace frm
 
 	    // UNO Anbindung
 	    DECLARE_UNO3_AGG_DEFAULTS(OClickableImageBaseModel, OControlModel);
-	    virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType) throw(::com::sun::star::uno::RuntimeException);
+	    virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType);
 
     protected:
         // OComponentHelper
 	    virtual void SAL_CALL disposing();
 
         // ::com::sun::star::form::XImageProducerSupplier
-	    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageProducer> SAL_CALL getImageProducer() throw (::com::sun::star::uno::RuntimeException) { return m_xProducer; }
+	    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageProducer> SAL_CALL getImageProducer() { return m_xProducer; }
 
         // OPropertySetHelper
 	    virtual void SAL_CALL getFastPropertyValue(::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
-	    virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue) throw (::com::sun::star::uno::Exception);
+	    virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue);
 
-	    virtual sal_Bool SAL_CALL convertFastPropertyValue(::com::sun::star::uno::Any& rConvertedValue, ::com::sun::star::uno::Any& rOldValue, sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-		    throw(::com::sun::star::lang::IllegalArgumentException);
+	    virtual sal_Bool SAL_CALL convertFastPropertyValue(::com::sun::star::uno::Any& rConvertedValue, ::com::sun::star::uno::Any& rOldValue, sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 
         using ::cppu::OPropertySetHelper::getFastPropertyValue;
 
         // OPropertyChangeListener
-	    virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent&) throw(::com::sun::star::uno::RuntimeException);
+	    virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent&);
 
         // XPropertyState
 	    virtual ::com::sun::star::uno::Any getPropertyDefaultByHandle( sal_Int32 nHandle ) const;
 
         // XImageProducer
-        virtual void SAL_CALL addConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& xConsumer ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& xConsumer ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL startProduction(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL addConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& xConsumer );
+        virtual void SAL_CALL removeConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& xConsumer );
+        virtual void SAL_CALL startProduction(  );
 
         // XSubmissionSupplier
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmission > SAL_CALL getSubmission() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setSubmission( const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmission >& _submission ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmission > SAL_CALL getSubmission();
+        virtual void SAL_CALL setSubmission( const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmission >& _submission );
 
         // XServiceInfo
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // XEventListener
         using OControlModel::disposing;
@@ -196,13 +195,13 @@ namespace frm
 	    ::rtl::OUString m_aActionCommand;
 
         // XSubmission
-        virtual void SAL_CALL submit(  ) throw (::com::sun::star::util::VetoException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL submitWithInteraction( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& aHandler ) throw (::com::sun::star::util::VetoException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL addSubmissionVetoListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeSubmissionVetoListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL submit(  );
+        virtual void SAL_CALL submitWithInteraction( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& aHandler );
+        virtual void SAL_CALL addSubmissionVetoListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener );
+        virtual void SAL_CALL removeSubmissionVetoListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::submission::XSubmissionVetoListener >& listener );
 
         // XServiceInfo
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // XEventListener
         using OControl::disposing;
@@ -216,20 +215,18 @@ namespace frm
     protected:
         // UNO Anbindung
 	    DECLARE_UNO3_AGG_DEFAULTS(OClickableImageBaseControl, OControl);
-	    virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType) throw(::com::sun::star::uno::RuntimeException);
+	    virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType);
 
         // OComponentHelper
 	    virtual void SAL_CALL disposing();
 
         // ::com::sun::star::form::XApproveActionBroadcaster
-	    virtual void SAL_CALL addApproveActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XApproveActionListener>& _rxListener)
-		    throw(::com::sun::star::uno::RuntimeException);
-	    virtual void SAL_CALL removeApproveActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XApproveActionListener>& _rxListener)
-		    throw(::com::sun::star::uno::RuntimeException);
+	    virtual void SAL_CALL addApproveActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XApproveActionListener>& _rxListener);
+	    virtual void SAL_CALL removeApproveActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XApproveActionListener>& _rxListener);
 
         // XDispatchProviderInterception
-        virtual void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
+        virtual void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
 
     protected:
 	    virtual void actionPerformed_Impl( sal_Bool bNotifyListener, const ::com::sun::star::awt::MouseEvent& rEvt );
@@ -251,7 +248,7 @@ namespace frm
         void implSubmit(
             const ::com::sun::star::awt::MouseEvent& _rEvent,
             const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& aHandler
-        ) SAL_THROW((com::sun::star::util::VetoException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException));
+        );
     };
 
     //==================================================================

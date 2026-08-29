@@ -116,20 +116,15 @@ class StatusIndicator : public  css::lang::XTypeProvider
         //---------------------------------------
         // XStatusIndicator
         virtual void SAL_CALL start(const ::rtl::OUString& sText ,
-                                          sal_Int32        nRange)
-            throw(css::uno::RuntimeException);
+                                          sal_Int32        nRange);
 
-        virtual void SAL_CALL end()
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL end();
 
-        virtual void SAL_CALL reset()
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL reset();
 
-        virtual void SAL_CALL setText(const ::rtl::OUString& sText)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL setText(const ::rtl::OUString& sText);
 
-        virtual void SAL_CALL setValue(sal_Int32 nValue)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL setValue(sal_Int32 nValue);
 
 }; // class StatusIndicator
 

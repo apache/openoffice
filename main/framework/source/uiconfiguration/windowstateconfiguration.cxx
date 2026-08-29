@@ -154,40 +154,32 @@ class ConfigurationAccess_WindowState : // interfaces
         FWK_DECLARE_XTYPEPROVIDER
 
         // XNameAccess
-        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
-            throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
 
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
 
-        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
         // XNameContainer
-        virtual void SAL_CALL removeByName( const ::rtl::OUString& sName )
-            throw(css::container::NoSuchElementException, css::lang::WrappedTargetException, css::uno::RuntimeException );
+        virtual void SAL_CALL removeByName( const ::rtl::OUString& sName );
 
-        virtual void SAL_CALL insertByName( const ::rtl::OUString& sName, const css::uno::Any&   aPropertySet )
-            throw(css::lang::IllegalArgumentException, css::container::ElementExistException, css::lang::WrappedTargetException, css::uno::RuntimeException );
+        virtual void SAL_CALL insertByName( const ::rtl::OUString& sName, const css::uno::Any&   aPropertySet );
 
         // XNameReplace
-        virtual void SAL_CALL replaceByName( const ::rtl::OUString& sName, const css::uno::Any& aPropertySet )
-            throw(css::lang::IllegalArgumentException, css::container::NoSuchElementException, css::lang::WrappedTargetException, css::uno::RuntimeException );
+        virtual void SAL_CALL replaceByName( const ::rtl::OUString& sName, const css::uno::Any& aPropertySet );
 
         // XElementAccess
-        virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
 
-        virtual sal_Bool SAL_CALL hasElements()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasElements();
 
         // container.XContainerListener
-        virtual void SAL_CALL     elementInserted( const ContainerEvent& aEvent ) throw(RuntimeException);
-        virtual void SAL_CALL     elementRemoved ( const ContainerEvent& aEvent ) throw(RuntimeException);
-        virtual void SAL_CALL     elementReplaced( const ContainerEvent& aEvent ) throw(RuntimeException);
+        virtual void SAL_CALL     elementInserted( const ContainerEvent& aEvent );
+        virtual void SAL_CALL     elementRemoved ( const ContainerEvent& aEvent );
+        virtual void SAL_CALL     elementReplaced( const ContainerEvent& aEvent );
 
         // lang.XEventListener
-        virtual void SAL_CALL disposing( const EventObject& aEvent ) throw(RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& aEvent );
 
     protected:
         enum WindowStateMask
@@ -321,7 +313,6 @@ ConfigurationAccess_WindowState::~ConfigurationAccess_WindowState()
 
 // XNameAccess
 Any SAL_CALL ConfigurationAccess_WindowState::getByName( const ::rtl::OUString& rResourceURL )
-throw ( NoSuchElementException, WrappedTargetException, RuntimeException)
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -340,7 +331,6 @@ throw ( NoSuchElementException, WrappedTargetException, RuntimeException)
 }
 
 Sequence< ::rtl::OUString > SAL_CALL ConfigurationAccess_WindowState::getElementNames()
-throw ( RuntimeException )
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -358,7 +348,6 @@ throw ( RuntimeException )
 }
 
 sal_Bool SAL_CALL ConfigurationAccess_WindowState::hasByName( const ::rtl::OUString& rResourceURL )
-throw (::com::sun::star::uno::RuntimeException)
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -378,13 +367,11 @@ throw (::com::sun::star::uno::RuntimeException)
 
 // XElementAccess
 Type SAL_CALL ConfigurationAccess_WindowState::getElementType()
-throw ( RuntimeException )
 {
     return( ::getCppuType( (const Sequence< PropertyValue >*)NULL ) );
 }
 
 sal_Bool SAL_CALL ConfigurationAccess_WindowState::hasElements()
-throw ( RuntimeException )
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -403,7 +390,6 @@ throw ( RuntimeException )
 
 // XNameContainer
 void SAL_CALL ConfigurationAccess_WindowState::removeByName( const ::rtl::OUString& rResourceURL )
-throw( NoSuchElementException, WrappedTargetException, RuntimeException )
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -438,7 +424,6 @@ throw( NoSuchElementException, WrappedTargetException, RuntimeException )
 }
 
 void SAL_CALL ConfigurationAccess_WindowState::insertByName( const ::rtl::OUString& rResourceURL, const css::uno::Any& aPropertySet )
-throw( IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException )
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -503,7 +488,6 @@ throw( IllegalArgumentException, ElementExistException, WrappedTargetException, 
 
 // XNameReplace
 void SAL_CALL ConfigurationAccess_WindowState::replaceByName( const ::rtl::OUString& rResourceURL, const css::uno::Any& aPropertySet )
-throw( IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException )
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -574,23 +558,23 @@ throw( IllegalArgumentException, NoSuchElementException, WrappedTargetException,
 }
 
 // container.XContainerListener
-void SAL_CALL ConfigurationAccess_WindowState::elementInserted( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_WindowState::elementInserted( const ContainerEvent& )
 {
     // do nothing - next time someone wants to retrieve this node we will find it in the configuration
 }
 
-void SAL_CALL ConfigurationAccess_WindowState::elementRemoved ( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_WindowState::elementRemoved ( const ContainerEvent& )
 {
     //
 }
 
-void SAL_CALL ConfigurationAccess_WindowState::elementReplaced( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_WindowState::elementReplaced( const ContainerEvent& )
 {
     //
 }
 
 // lang.XEventListener
-void SAL_CALL ConfigurationAccess_WindowState::disposing( const EventObject& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_WindowState::disposing( const EventObject& aEvent )
 {
     // SAFE
     // remove our reference to the config access
@@ -1413,7 +1397,6 @@ WindowStateConfiguration::~WindowStateConfiguration()
 }
 
 Any SAL_CALL WindowStateConfiguration::getByName( const ::rtl::OUString& aModuleIdentifier )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
 
@@ -1445,7 +1428,6 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 Sequence< ::rtl::OUString > SAL_CALL WindowStateConfiguration::getElementNames()
-throw (::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
 
@@ -1463,7 +1445,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 sal_Bool SAL_CALL WindowStateConfiguration::hasByName( const ::rtl::OUString& aName )
-throw (::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
 
@@ -1473,13 +1454,11 @@ throw (::com::sun::star::uno::RuntimeException)
 
 // XElementAccess
 Type SAL_CALL WindowStateConfiguration::getElementType()
-throw (::com::sun::star::uno::RuntimeException)
 {
     return( ::getCppuType( (const Reference< XNameAccess >*)NULL ) );
 }
 
 sal_Bool SAL_CALL WindowStateConfiguration::hasElements()
-throw (::com::sun::star::uno::RuntimeException)
 {
     // We always have at least one module. So it is valid to return true!
     return sal_True;

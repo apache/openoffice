@@ -68,16 +68,16 @@ namespace framework
 		    DECLARE_XSERVICEINFO
 
             // XPopupMenuController
-            virtual void SAL_CALL updatePopupMenu() throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL updatePopupMenu();
 
             // XInitialization
-            virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 		    // XStatusListener
-		    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+		    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
 		    // XEventListener
-		    virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
+		    virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source );
 
 		private:
             virtual void impl_setPopupMenu();

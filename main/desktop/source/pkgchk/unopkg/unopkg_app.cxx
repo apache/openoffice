@@ -138,18 +138,15 @@ public:
         : m_rDialogClosedCondition( rDialogClosedCondition ) {}
 
     // XEventListener (base of XDialogClosedListener)
-    virtual void SAL_CALL disposing( lang::EventObject const & Source )
-        throw (RuntimeException);
+    virtual void SAL_CALL disposing( lang::EventObject const & Source );
 
     // XDialogClosedListener
     virtual void SAL_CALL dialogClosed(
-        ui::dialogs::DialogClosedEvent const & aEvent )
-        throw (RuntimeException);
+        ui::dialogs::DialogClosedEvent const & aEvent );
 };
 
 // XEventListener (base of XDialogClosedListener)
 void DialogClosedListenerImpl::disposing( lang::EventObject const & )
-    throw (RuntimeException)
 {
     // nothing to do
 }
@@ -157,7 +154,6 @@ void DialogClosedListenerImpl::disposing( lang::EventObject const & )
 // XDialogClosedListener
 void DialogClosedListenerImpl::dialogClosed(
     ui::dialogs::DialogClosedEvent const & )
-    throw (RuntimeException)
 {
     m_rDialogClosedCondition.set();
 }

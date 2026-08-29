@@ -81,7 +81,7 @@ namespace rptui
 		virtual void		Resize();
 
 		// OPropertyChangeListener
-		virtual void	_propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void	_propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent);
 	public:
 		OReportSection(OSectionWindow* _pParent,const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection >& _xSection);
 		virtual ~OReportSection();

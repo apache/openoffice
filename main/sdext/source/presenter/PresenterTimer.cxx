@@ -29,6 +29,7 @@
 #include <boost/function.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <set>
+#include <iterator>
 
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
@@ -61,7 +62,7 @@ typedef ::boost::shared_ptr<TimerTask> SharedTimerTask;
 class TimerTaskComparator
 {
 public:
-    bool operator() (const SharedTimerTask& rpTask1, const SharedTimerTask& rpTask2)
+    bool operator() (const SharedTimerTask& rpTask1, const SharedTimerTask& rpTask2) const
     {
         return rpTask1->maDueTime.Seconds < rpTask2->maDueTime.Seconds
             || (rpTask1->maDueTime.Seconds == rpTask2->maDueTime.Seconds
@@ -612,7 +613,6 @@ void PresenterClockTimer::CheckCurrentTime (const TimeValue& rCurrentTime)
 //----- XCallback -------------------------------------------------------------
 
 void SAL_CALL PresenterClockTimer::notify (const css::uno::Any& rUserData)
-    throw (css::uno::RuntimeException)
 {
     (void)rUserData;
 

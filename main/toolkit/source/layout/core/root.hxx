@@ -99,22 +99,22 @@ public:
     }
 
     // get XLayoutContainer
-    virtual css::uno::Reference< css::awt::XLayoutContainer > SAL_CALL getLayoutContainer() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::awt::XLayoutContainer > SAL_CALL getLayoutContainer();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments ) throw (css::uno::Exception, css::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments );
 
     // XNameAccess
-    virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (css::container::NoSuchElementException, css::lang::WrappedTargetException, css::uno::RuntimeException);
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames() throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (css::uno::RuntimeException);
-    virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements() throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
+    virtual css::uno::Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
     // XComponent
-    virtual void SAL_CALL dispose() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL removeEventListener( const css::uno::Reference< css::lang::XEventListener >& aListener ) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
+    virtual void SAL_CALL addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener );
+    virtual void SAL_CALL removeEventListener( const css::uno::Reference< css::lang::XEventListener >& aListener );
 
     // generator
     virtual LayoutWidget *create( rtl::OUString id, const rtl::OUString unoName, long attrbs, css::uno::Reference< css::awt::XLayoutContainer > xParent );

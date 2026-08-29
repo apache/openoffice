@@ -44,9 +44,7 @@
 #include <vector>
 #include <algorithm>
 
-#include <boost/math/special_functions/atanh.hpp>
-#include <boost/math/special_functions/expm1.hpp>
-#include <boost/math/special_functions/log1p.hpp>
+#include <cmath>
 
 using ::std::vector;
 using namespace formula;
@@ -857,8 +855,8 @@ double ScInterpreter::GetBeta(double fAlpha, double fBeta)
     fLanczos *= sqrt((fABgm/(fA+fgm))/(fB+fgm));
     double fTempA = fB/(fA+fgm); // (fA+fgm)/fABgm = 1 / ( 1 + fB/(fA+fgm))
     double fTempB = fA/(fB+fgm);
-    double fResult = exp(-fA * ::boost::math::log1p(fTempA)
-                            -fB * ::boost::math::log1p(fTempB)-fgm);
+    double fResult = exp(-fA * std::log1p(fTempA)
+                            -fB * std::log1p(fTempB)-fgm);
     fResult *= fLanczos;
     return fResult;
 }
@@ -886,8 +884,8 @@ double ScInterpreter::GetLogBeta(double fAlpha, double fBeta)
     fLogLanczos += 0.5*(log(fABgm)-log(fA+fgm)-log(fB+fgm));
     double fTempA = fB/(fA+fgm); // (fA+fgm)/fABgm = 1 / ( 1 + fB/(fA+fgm))
     double fTempB = fA/(fB+fgm);
-    double fResult = -fA * ::boost::math::log1p(fTempA)
-                        -fB * ::boost::math::log1p(fTempB)-fgm;
+    double fResult = -fA * std::log1p(fTempA)
+                        -fB * std::log1p(fTempB)-fgm;
     fResult += fLogLanczos;
     return fResult;
 }
@@ -908,7 +906,7 @@ double ScInterpreter::GetBetaDistPDF(double fX, double fA, double fB)
             return HUGE_VAL;
         }
         if (fX <= 0.01)
-            return fB + fB * ::boost::math::expm1((fB-1.0) * ::boost::math::log1p(-fX));
+            return fB + fB * std::expm1((fB-1.0) * std::log1p(-fX));
         else
             return fB * pow(0.5-fX+0.5,fB-1.0);
     }
@@ -947,7 +945,7 @@ double ScInterpreter::GetBetaDistPDF(double fX, double fA, double fB)
     // normal cases; result x^(a-1)*(1-x)^(b-1)/Beta(a,b)
     const double fLogDblMax = log( ::std::numeric_limits<double>::max());
     const double fLogDblMin = log( ::std::numeric_limits<double>::min());
-    double fLogY = (fX < 0.1) ? ::boost::math::log1p(-fX) : log(0.5-fX+0.5);
+    double fLogY = (fX < 0.1) ? std::log1p(-fX) : log(0.5-fX+0.5);
     double fLogX = log(fX);
     double fAm1LogX = (fA-1.0) * fLogX;
     double fBm1LogY = (fB-1.0) * fLogY;
@@ -1028,13 +1026,13 @@ double ScInterpreter::GetBetaDist(double fXin, double fAlpha, double fBeta)
         return pow(fXin, fAlpha);
     if (fAlpha == 1.0)
     //            1.0 - pow(1.0-fX,fBeta) is not accurate enough
-        return -::boost::math::expm1(fBeta * ::boost::math::log1p(-fXin));
+        return -std::expm1(fBeta * std::log1p(-fXin));
     //FIXME: need special algorithm for fX near fP for large fA,fB
     double fResult;
     // I use always continued fraction, power series are neither
     // faster nor more accurate.
     double fY = (0.5-fXin)+0.5;
-    double flnY = ::boost::math::log1p(-fXin);
+    double flnY = std::log1p(-fXin);
     double fX = fXin;
     double flnX = log(fXin);
     double fA = fAlpha;
@@ -1145,7 +1143,7 @@ void ScInterpreter::ScFisher()
     if (fabs(fVal) >= 1.0)
         PushIllegalArgument();
     else
-        PushDouble( ::boost::math::atanh( fVal));
+        PushDouble( std::atanh( fVal));
 }
 
 void ScInterpreter::ScFisherInv()

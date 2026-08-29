@@ -35,8 +35,15 @@ $(eval $(call gb_Library_add_defs,gtest,\
 	-DGTEST_CREATE_SHARED_LIBRARY=1 \
 ))
 
+# Was the literal list "kernel32 msvcrt oldnames", which is exactly
+# gb_STDLIBS without uwinapi -- so say that instead, and the UCRT's extra CRT
+# pieces arrive here the same way they arrive everywhere else.  Without them
+# the link fails on memcpy/memset and on the POSIX names oldnames.lib
+# forwards (dup2, read, write), which moved into ucrt.lib and vcruntime.lib.
+# On VC9 gb_STDLIBS is "uwinapi kernel32 msvcrt oldnames", so this expands to
+# the identical list it had before.
 $(eval $(call gb_Library_add_linked_libs,gtest,\
-    kernel32 msvcrt oldnames \
+    $(filter-out uwinapi,$(gb_STDLIBS)) \
     $(gb_Library_STLLIBS) \
 ))
 

@@ -68,20 +68,20 @@ namespace accessibility
 		DECLARE_XTYPEPROVIDER( )
 
 		// XAccessible
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > SAL_CALL getAccessibleContext(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > SAL_CALL getAccessibleContext(  );
 
 		// XAccessibleContext
-		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getImplementationName() throw ( ::com::sun::star::uno::RuntimeException );
-        virtual ::sal_Int32 SAL_CALL getAccessibleIndexInParent(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i );
+		virtual ::rtl::OUString SAL_CALL getImplementationName();
+        virtual ::sal_Int32 SAL_CALL getAccessibleIndexInParent(  );
 
 
 		// XAccessibleValue
-		virtual ::com::sun::star::uno::Any SAL_CALL getCurrentValue(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL setCurrentValue( const ::com::sun::star::uno::Any& aNumber ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Any SAL_CALL getMaximumValue(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Any SAL_CALL getMinimumValue(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL getCurrentValue(  );
+		virtual sal_Bool SAL_CALL setCurrentValue( const ::com::sun::star::uno::Any& aNumber );
+		virtual ::com::sun::star::uno::Any SAL_CALL getMaximumValue(  );
+		virtual ::com::sun::star::uno::Any SAL_CALL getMinimumValue(  );
 
         // internal
         void        SetChecked( sal_Bool _bChecked );

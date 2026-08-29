@@ -160,8 +160,7 @@ namespace fileaccess
 
         void SAL_CALL startTask(
             sal_Int32 CommandId,
-            const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >&  xCommandEnv )
-            throw( com::sun::star::ucb::DuplicateCommandIdentifierException );
+            const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >&  xCommandEnv );
 
         sal_Int32 SAL_CALL getCommandId( void );
         void SAL_CALL abort( sal_Int32 CommandId );

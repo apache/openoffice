@@ -167,7 +167,7 @@ Sequence< sal_Int8 > OMySQLTable::getUnoTunnelImplementationId()
 
 // com::sun::star::lang::XUnoTunnel
 //------------------------------------------------------------------
-sal_Int64 OMySQLTable::getSomething( const Sequence< sal_Int8 > & rId ) throw (RuntimeException)
+sal_Int64 OMySQLTable::getSomething( const Sequence< sal_Int8 > & rId )
 {
 	return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
 				? reinterpret_cast< sal_Int64 >( this )
@@ -175,7 +175,7 @@ sal_Int64 OMySQLTable::getSomething( const Sequence< sal_Int8 > & rId ) throw (R
 }
 // -------------------------------------------------------------------------
 // XAlterTable
-void SAL_CALL OMySQLTable::alterColumnByName( const ::rtl::OUString& colName, const Reference< XPropertySet >& descriptor ) throw(SQLException, NoSuchElementException, RuntimeException)
+void SAL_CALL OMySQLTable::alterColumnByName( const ::rtl::OUString& colName, const Reference< XPropertySet >& descriptor )
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(

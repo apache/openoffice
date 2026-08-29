@@ -53,7 +53,7 @@ VCLXContainer::~VCLXContainer()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXContainer::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXContainer::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XVclContainer*, this ),
@@ -70,21 +70,21 @@ IMPL_XTYPEPROVIDER_END
 
 
 // ::com::sun::star::awt::XVclContainer
-void VCLXContainer::addVclContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XVclContainerListener >& rxListener ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXContainer::addVclContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XVclContainerListener >& rxListener )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
 	GetContainerListeners().addInterface( rxListener );
 }
 
-void VCLXContainer::removeVclContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XVclContainerListener >& rxListener ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXContainer::removeVclContainerListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XVclContainerListener >& rxListener )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
 	GetContainerListeners().removeInterface( rxListener );
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > > VCLXContainer::getWindows(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > > VCLXContainer::getWindows(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -112,7 +112,7 @@ void VCLXContainer::removeVclContainerListener( const ::com::sun::star::uno::Ref
 
 
 // ::com::sun::star::awt::XVclContainerPeer
-void VCLXContainer::enableDialogControl( sal_Bool bEnable ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXContainer::enableDialogControl( sal_Bool bEnable )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -128,7 +128,7 @@ void VCLXContainer::enableDialogControl( sal_Bool bEnable ) throw(::com::sun::st
 	}
 }
 
-void VCLXContainer::setTabOrder( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > >& Components, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Tabs, sal_Bool bGroupControl ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXContainer::setTabOrder( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > >& Components, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Tabs, sal_Bool bGroupControl )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -173,7 +173,7 @@ void VCLXContainer::setTabOrder( const ::com::sun::star::uno::Sequence< ::com::s
 	}
 }
 
-void VCLXContainer::setGroup( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > >& Components ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXContainer::setGroup( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > >& Components )
 {
 	::vos::OGuard aGuard( GetMutex() );
 

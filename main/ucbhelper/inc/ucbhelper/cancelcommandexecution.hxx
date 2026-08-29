@@ -58,8 +58,7 @@ namespace ucbhelper
 UCBHELPER_DLLPUBLIC void cancelCommandExecution( const com::sun::star::uno::Any & rException,
                              const com::sun::star::uno::Reference<
                                 com::sun::star::ucb::XCommandEnvironment > &
-                                    xEnv )
-    throw( com::sun::star::uno::Exception );
+                                    xEnv );
 
 /** Cancel the execution of a command by throwing the appropriate exception.
     If an Interaction Handler is given with the command environment and the
@@ -99,8 +98,7 @@ UCBHELPER_DLLPUBLIC void cancelCommandExecution( const com::sun::star::ucb::IOEr
                              const rtl::OUString & rMessage = rtl::OUString(),
                              const com::sun::star::uno::Reference<
                                 com::sun::star::ucb::XCommandProcessor > &
-                                    xContext = 0 )
-    throw( com::sun::star::uno::Exception );
+                                    xContext = 0 );
 }
 
 #endif // _UCBHELPER_CANCELCOMMANDEXECUTION_HXX_

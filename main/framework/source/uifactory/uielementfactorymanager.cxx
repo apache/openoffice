@@ -226,7 +226,7 @@ Sequence< Sequence< PropertyValue > > ConfigurationAccess_FactoryManager::getFac
 }
 
 // container.XContainerListener
-void SAL_CALL ConfigurationAccess_FactoryManager::elementInserted( const ContainerEvent& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_FactoryManager::elementInserted( const ContainerEvent& aEvent )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::elementInserted" );
     rtl::OUString   aType;
@@ -246,7 +246,7 @@ void SAL_CALL ConfigurationAccess_FactoryManager::elementInserted( const Contain
     }
 }
 
-void SAL_CALL ConfigurationAccess_FactoryManager::elementRemoved ( const ContainerEvent& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_FactoryManager::elementRemoved ( const ContainerEvent& aEvent )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::elementRemoved " );
     rtl::OUString   aType;
@@ -266,7 +266,7 @@ void SAL_CALL ConfigurationAccess_FactoryManager::elementRemoved ( const Contain
     }
 }
 
-void SAL_CALL ConfigurationAccess_FactoryManager::elementReplaced( const ContainerEvent& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_FactoryManager::elementReplaced( const ContainerEvent& aEvent )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::elementReplaced" );
     rtl::OUString   aType;
@@ -288,7 +288,7 @@ void SAL_CALL ConfigurationAccess_FactoryManager::elementReplaced( const Contain
 }
 
 // lang.XEventListener
-void SAL_CALL ConfigurationAccess_FactoryManager::disposing( const EventObject& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_FactoryManager::disposing( const EventObject& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::disposing" );
     // SAFE
@@ -414,7 +414,6 @@ UIElementFactoryManager::~UIElementFactoryManager()
 Reference< XUIElement > SAL_CALL UIElementFactoryManager::createUIElement(
     const ::rtl::OUString& ResourceURL,
     const Sequence< PropertyValue >& Args )
-throw ( ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::createUIElement" );
     // SAFE
@@ -463,7 +462,6 @@ throw ( ::com::sun::star::container::NoSuchElementException, ::com::sun::star::l
 
 // XUIElementFactoryRegistration
 Sequence< Sequence< PropertyValue > > SAL_CALL UIElementFactoryManager::getRegisteredFactories()
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::getRegisteredFactories" );
     // SAFE
@@ -479,7 +477,6 @@ throw ( RuntimeException )
 }
 
 Reference< XUIElementFactory > SAL_CALL UIElementFactoryManager::getFactory( const ::rtl::OUString& aResourceURL, const ::rtl::OUString& aModuleId )
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::getFactory" );
     ResetableGuard aLock( m_aLock );
@@ -507,7 +504,6 @@ throw ( RuntimeException )
 }
 
 void SAL_CALL UIElementFactoryManager::registerFactory( const ::rtl::OUString& aType, const ::rtl::OUString& aName, const ::rtl::OUString& aModuleId, const ::rtl::OUString& aFactoryImplementationName )
-throw ( ElementExistException, RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::registerFactory" );
     // SAFE
@@ -524,7 +520,6 @@ throw ( ElementExistException, RuntimeException )
 }
 
 void SAL_CALL UIElementFactoryManager::deregisterFactory( const ::rtl::OUString& aType, const ::rtl::OUString& aName, const ::rtl::OUString& aModuleId )
-throw ( NoSuchElementException, RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UIElementFactoryManager::deregisterFactory" );
     // SAFE

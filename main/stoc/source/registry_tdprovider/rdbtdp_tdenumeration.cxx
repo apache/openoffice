@@ -59,7 +59,6 @@ public:
         m_published(published) {}
 
     virtual sal_Bool SAL_CALL isPublished()
-        throw (::com::sun::star::uno::RuntimeException)
     { return m_published; }
 
 private:
@@ -87,9 +86,6 @@ TypeDescriptionEnumerationImpl::createInstance(
         const uno::Sequence< uno::TypeClass > & rTypes,
         reflection::TypeDescriptionSearchDepth eDepth,
         const RegistryKeyList & rBaseKeys )
-    throw ( reflection::NoSuchTypeNameException,
-            reflection::InvalidTypeNameException,
-            uno::RuntimeException )
 {
     if ( rModuleName.getLength() == 0 )
     {
@@ -252,7 +248,6 @@ TypeDescriptionEnumerationImpl::~TypeDescriptionEnumerationImpl()
 
 // virtual
 sal_Bool SAL_CALL TypeDescriptionEnumerationImpl::hasMoreElements()
-    throw ( uno::RuntimeException )
 {
     return queryMore();
 }
@@ -260,9 +255,6 @@ sal_Bool SAL_CALL TypeDescriptionEnumerationImpl::hasMoreElements()
 //=========================================================================
 // virtual
 uno::Any SAL_CALL TypeDescriptionEnumerationImpl::nextElement()
-    throw ( container::NoSuchElementException,
-            lang::WrappedTargetException,
-            uno::RuntimeException )
 {
     return uno::Any( uno::makeAny( nextTypeDescription() ) );
 }
@@ -276,8 +268,6 @@ uno::Any SAL_CALL TypeDescriptionEnumerationImpl::nextElement()
 // virtual
 uno::Reference< reflection::XTypeDescription > SAL_CALL
 TypeDescriptionEnumerationImpl::nextTypeDescription()
-    throw ( container::NoSuchElementException,
-            uno::RuntimeException )
 {
     uno::Reference< reflection::XTypeDescription > xTD( queryNext() );
 

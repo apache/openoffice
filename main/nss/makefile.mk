@@ -122,6 +122,11 @@ OUT2LIB= \
 MOZ_MSVCVERSION= 9
 .EXPORT : MOZ_MSVCVERSION
 PATCH_FILES+=nss_win.patch
+# NSPR's configure takes the architecture from config.guess, which reports the
+# HOST -- and every Windows build host is x86_64 now, whatever is being built.
+# Listed for both architectures on purpose: it keys on --enable-64bit, which
+# the x64 branch below already causes to be passed, so it is inert there.
+PATCH_FILES+=nss_win_hostarch.patch
 .IF "$(CPU)" == "X"
 PATCH_FILES+=nss_win64.patch
 .ENDIF

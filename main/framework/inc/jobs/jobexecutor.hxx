@@ -110,18 +110,18 @@ class JobExecutor : public  css::lang::XTypeProvider
         DECLARE_XSERVICEINFO
 
         // task.XJobExecutor
-        virtual void SAL_CALL trigger( const ::rtl::OUString& sEvent ) throw(css::uno::RuntimeException);
+        virtual void SAL_CALL trigger( const ::rtl::OUString& sEvent );
 
         // document.XEventListener
-        virtual void SAL_CALL notifyEvent( const css::document::EventObject& aEvent ) throw(css::uno::RuntimeException);
+        virtual void SAL_CALL notifyEvent( const css::document::EventObject& aEvent );
 
         // container.XContainerListener
-        virtual void SAL_CALL elementInserted( const css::container::ContainerEvent& aEvent ) throw(css::uno::RuntimeException);
-        virtual void SAL_CALL elementRemoved ( const css::container::ContainerEvent& aEvent ) throw(css::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const css::container::ContainerEvent& aEvent ) throw(css::uno::RuntimeException);
+        virtual void SAL_CALL elementInserted( const css::container::ContainerEvent& aEvent );
+        virtual void SAL_CALL elementRemoved ( const css::container::ContainerEvent& aEvent );
+        virtual void SAL_CALL elementReplaced( const css::container::ContainerEvent& aEvent );
 
         // lang.XEventListener
-        virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent );
 };
 
 } // namespace framework

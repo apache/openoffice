@@ -182,7 +182,7 @@ void ExtrusionDirectionWindow::implSetProjection( sal_Int32 nProjection, bool bE
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL ExtrusionDirectionWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL ExtrusionDirectionWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
 {
 	if( Event.FeatureURL.Main.equals( msExtrusionDirection ) )
 	{
@@ -271,7 +271,7 @@ OUString SAL_CALL ExtrusionDirectionControl_getImplementationName()
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionDirectionControl_getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL ExtrusionDirectionControl_getSupportedServiceNames()
 {
     Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.ToolbarController" ));
@@ -280,21 +280,21 @@ Sequence< OUString > SAL_CALL ExtrusionDirectionControl_getSupportedServiceNames
 
 // --------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL SAL_CALL ExtrusionDirectionControl_createInstance( const Reference< XMultiServiceFactory >& rSMgr ) throw( RuntimeException )
+Reference< XInterface > SAL_CALL SAL_CALL ExtrusionDirectionControl_createInstance( const Reference< XMultiServiceFactory >& rSMgr )
 {
 	return *new ExtrusionDirectionControl( rSMgr );
 }
 
 // --------------------------------------------------------------------
 
-OUString SAL_CALL ExtrusionDirectionControl::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL ExtrusionDirectionControl::getImplementationName(  )
 {
 	return ExtrusionDirectionControl_getImplementationName();
 }
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionDirectionControl::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL ExtrusionDirectionControl::getSupportedServiceNames(  )
 {
 	return ExtrusionDirectionControl_getSupportedServiceNames();
 }
@@ -408,7 +408,7 @@ void ExtrusionDepthWindow::implFillStrings( FieldUnit eUnit )
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL ExtrusionDepthWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL ExtrusionDepthWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
 {
 	if( Event.FeatureURL.Main.equals( msExtrusionDepth ) )
 	{
@@ -536,7 +536,7 @@ OUString SAL_CALL ExtrusionDepthController_getImplementationName()
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionDepthController_getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL ExtrusionDepthController_getSupportedServiceNames()
 {
     Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.ToolbarController" ));
@@ -545,21 +545,21 @@ Sequence< OUString > SAL_CALL ExtrusionDepthController_getSupportedServiceNames(
 
 // --------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL SAL_CALL ExtrusionDepthController_createInstance( const Reference< XMultiServiceFactory >& rSMgr ) throw( RuntimeException )
+Reference< XInterface > SAL_CALL SAL_CALL ExtrusionDepthController_createInstance( const Reference< XMultiServiceFactory >& rSMgr )
 {
 	return *new ExtrusionDepthController( rSMgr );
 }
 
 // --------------------------------------------------------------------
 
-OUString SAL_CALL ExtrusionDepthController::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL ExtrusionDepthController::getImplementationName(  )
 {
 	return ExtrusionDepthController_getImplementationName();
 }
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionDepthController::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL ExtrusionDepthController::getSupportedServiceNames(  )
 {
 	return ExtrusionDepthController_getSupportedServiceNames();
 }
@@ -689,7 +689,7 @@ void ExtrusionLightingWindow::implSetDirection( int nDirection, bool bEnabled )
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL ExtrusionLightingWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL ExtrusionLightingWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
 {
 	if( Event.FeatureURL.Main.equals( msExtrusionLightingIntensity ) )
 	{
@@ -807,7 +807,7 @@ OUString SAL_CALL ExtrusionLightingControl_getImplementationName()
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionLightingControl_getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL ExtrusionLightingControl_getSupportedServiceNames()
 {
     Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.ToolbarController" ));
@@ -816,21 +816,21 @@ Sequence< OUString > SAL_CALL ExtrusionLightingControl_getSupportedServiceNames(
 
 // --------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL SAL_CALL ExtrusionLightingControl_createInstance( const Reference< XMultiServiceFactory >& rSMgr ) throw( RuntimeException )
+Reference< XInterface > SAL_CALL SAL_CALL ExtrusionLightingControl_createInstance( const Reference< XMultiServiceFactory >& rSMgr )
 {
 	return *new ExtrusionLightingControl( rSMgr );
 }
 
 // --------------------------------------------------------------------
 
-OUString SAL_CALL ExtrusionLightingControl::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL ExtrusionLightingControl::getImplementationName(  )
 {
 	return ExtrusionLightingControl_getImplementationName();
 }
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionLightingControl::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL ExtrusionLightingControl::getSupportedServiceNames(  )
 {
 	return ExtrusionLightingControl_getSupportedServiceNames();
 }
@@ -884,7 +884,7 @@ void ExtrusionSurfaceWindow::implSetSurface( int nSurface, bool bEnabled )
 
 // -----------------------------------------------------------------------
 
-void SAL_CALL ExtrusionSurfaceWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL ExtrusionSurfaceWindow::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
 {
 	if( Event.FeatureURL.Main.equals( msExtrusionSurface ) )
 	{
@@ -948,7 +948,7 @@ OUString SAL_CALL ExtrusionSurfaceControl_getImplementationName()
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionSurfaceControl_getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString > SAL_CALL ExtrusionSurfaceControl_getSupportedServiceNames()
 {
     Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.ToolbarController" ));
@@ -957,21 +957,21 @@ Sequence< OUString > SAL_CALL ExtrusionSurfaceControl_getSupportedServiceNames()
 
 // --------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL SAL_CALL ExtrusionSurfaceControl_createInstance( const Reference< XMultiServiceFactory >& rSMgr ) throw( RuntimeException )
+Reference< XInterface > SAL_CALL SAL_CALL ExtrusionSurfaceControl_createInstance( const Reference< XMultiServiceFactory >& rSMgr )
 {
 	return *new ExtrusionSurfaceControl( rSMgr );
 }
 
 // --------------------------------------------------------------------
 
-OUString SAL_CALL ExtrusionSurfaceControl::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL ExtrusionSurfaceControl::getImplementationName(  )
 {
 	return ExtrusionSurfaceControl_getImplementationName();
 }
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL ExtrusionSurfaceControl::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL ExtrusionSurfaceControl::getSupportedServiceNames(  )
 {
 	return ExtrusionSurfaceControl_getSupportedServiceNames();
 }

@@ -77,31 +77,22 @@ namespace basprov
         virtual ~BasicProviderImpl();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-            throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XScriptProvider
         virtual ::com::sun::star::uno::Reference < ::com::sun::star::script::provider::XScript > SAL_CALL getScript(
-            const ::rtl::OUString& scriptURI )
-            throw (  ::com::sun::star::script::provider::ScriptFrameworkErrorException, ::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString& scriptURI );
 
         // XBrowseNode
-        virtual ::rtl::OUString SAL_CALL getName(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode > > SAL_CALL getChildNodes(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL hasChildNodes(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Int16 SAL_CALL getType(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getName(  );
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode > > SAL_CALL getChildNodes(  );
+        virtual sal_Bool SAL_CALL hasChildNodes(  );
+        virtual sal_Int16 SAL_CALL getType(  );
     };
 
 //.........................................................................

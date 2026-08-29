@@ -41,7 +41,6 @@ using namespace ::std;
 OOXMLStreamImpl::OOXMLStreamImpl
 (uno::Reference<uno::XComponentContext> xContext,
  uno::Reference<io::XInputStream> xStorageStream, StreamType_t nType)
-throw (uno::Exception)
 : mxContext(xContext), mxStorageStream(xStorageStream), mnStreamType(nType)
 {
     mxStorage.set
@@ -54,7 +53,6 @@ throw (uno::Exception)
 
 OOXMLStreamImpl::OOXMLStreamImpl
 (OOXMLStreamImpl & rOOXMLStream, StreamType_t nStreamType)
-throw (uno::Exception)
 : mxContext(rOOXMLStream.mxContext),
   mxStorageStream(rOOXMLStream.mxStorageStream),
   mxStorage(rOOXMLStream.mxStorage),
@@ -68,7 +66,6 @@ throw (uno::Exception)
 
 OOXMLStreamImpl::OOXMLStreamImpl
 (OOXMLStreamImpl & rOOXMLStream, const rtl::OUString & rId)
-throw (uno::Exception)
 : mxContext(rOOXMLStream.mxContext),
   mxStorageStream(rOOXMLStream.mxStorageStream),
   mxStorage(rOOXMLStream.mxStorage),
@@ -247,7 +244,7 @@ bool OOXMLStreamImpl::lcl_getTarget(uno::Reference<embed::XRelationshipAccess>
     return ::rtl::OUString();
 }
 
-void OOXMLStreamImpl::init() throw (uno::Exception)
+void OOXMLStreamImpl::init()
 {
     bool bFound = lcl_getTarget(mxRelationshipAccess,
                                 mnStreamType, msId, msTarget);

@@ -58,7 +58,6 @@ SelectionChangeHandler::~SelectionChangeHandler (void)
 
 
 void SAL_CALL SelectionChangeHandler::selectionChanged (const lang::EventObject&)
-    throw (uno::RuntimeException)
 {
     if (maSelectionChangeCallback)
     {
@@ -76,7 +75,6 @@ void SAL_CALL SelectionChangeHandler::selectionChanged (const lang::EventObject&
 
 
 void SAL_CALL SelectionChangeHandler::disposing (const lang::EventObject&)
-    throw (uno::RuntimeException)
 {
 }
 
@@ -84,7 +82,6 @@ void SAL_CALL SelectionChangeHandler::disposing (const lang::EventObject&)
 
 
 void SAL_CALL SelectionChangeHandler::disposing (void)
-    throw (uno::RuntimeException)
 {
     if (mbIsConnected)
         Disconnect();

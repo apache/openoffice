@@ -40,37 +40,31 @@ namespace xmlscript
 
 //__________________________________________________________________________________________________
 Reference< xml::input::XElement > LibElementBase::getParent()
-    throw (RuntimeException)
 {
     return static_cast< xml::input::XElement * >( _pParent );
 }
 //__________________________________________________________________________________________________
 OUString LibElementBase::getLocalName()
-    throw (RuntimeException)
 {
     return _aLocalName;
 }
 //__________________________________________________________________________________________________
 sal_Int32 LibElementBase::getUid()
-    throw (RuntimeException)
 {
     return _pImport->XMLNS_LIBRARY_UID;
 }
 //__________________________________________________________________________________________________
 Reference< xml::input::XAttributes > LibElementBase::getAttributes()
-    throw (RuntimeException)
 {
     return _xAttributes;
 }
 //__________________________________________________________________________________________________
 void LibElementBase::ignorableWhitespace(
     OUString const & /*rWhitespaces*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 void LibElementBase::characters( OUString const & /*rChars*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     // not used, all characters ignored
 }
@@ -78,20 +72,17 @@ void LibElementBase::characters( OUString const & /*rChars*/ )
 //__________________________________________________________________________________________________
 void LibElementBase::processingInstruction(
     OUString const & /*rTarget*/, OUString const & /*rData*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 
 //__________________________________________________________________________________________________
 void LibElementBase::endElement()
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 Reference< xml::input::XElement > LibElementBase::startChildElement(
     sal_Int32 /*nUid*/, OUString const & /*rLocalName*/,
     Reference< xml::input::XAttributes > const & /*xAttributes*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     throw xml::sax::SAXException(
         OUString( RTL_CONSTASCII_USTRINGPARAM("unexpected element!") ),
@@ -140,7 +131,6 @@ LibElementBase::~LibElementBase()
 //______________________________________________________________________________
 void LibraryImport::startDocument(
     Reference< xml::input::XNamespaceMapping > const & xNamespaceMapping )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     XMLNS_LIBRARY_UID = xNamespaceMapping->getUidByUri(
         OUSTR(XMLNS_LIBRARY_URI) );
@@ -149,26 +139,22 @@ void LibraryImport::startDocument(
 }
 //__________________________________________________________________________________________________
 void LibraryImport::endDocument()
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 void LibraryImport::processingInstruction(
     OUString const & /*rTarget*/, OUString const & /*rData*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 void LibraryImport::setDocumentLocator(
     Reference< xml::sax::XLocator > const & /*xLocator*/ )
-    throw (xml::sax::SAXException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 Reference< xml::input::XElement > LibraryImport::startRootElement(
     sal_Int32 nUid, OUString const & rLocalName,
     Reference< xml::input::XAttributes > const & xAttributes )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     if (XMLNS_LIBRARY_UID != nUid)
     {
@@ -226,7 +212,6 @@ LibraryImport::~LibraryImport()
 Reference< xml::input::XElement > LibrariesElement::startChildElement(
     sal_Int32 nUid, OUString const & rLocalName,
     Reference< xml::input::XAttributes > const & xAttributes )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     if (_pImport->XMLNS_LIBRARY_UID != nUid)
     {
@@ -271,7 +256,6 @@ Reference< xml::input::XElement > LibrariesElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void LibrariesElement::endElement()
-    throw (xml::sax::SAXException, RuntimeException)
 {
     sal_Int32 nLibCount = _pImport->mpLibArray->mnLibCount = (sal_Int32)mLibDescriptors.size();
     _pImport->mpLibArray->mpLibs = new LibDescriptor[ nLibCount ];
@@ -288,7 +272,6 @@ void LibrariesElement::endElement()
 Reference< xml::input::XElement > LibraryElement::startChildElement(
     sal_Int32 nUid, OUString const & rLocalName,
     Reference< xml::input::XAttributes > const & xAttributes )
-    throw (xml::sax::SAXException, RuntimeException)
 {
     if (_pImport->XMLNS_LIBRARY_UID != nUid)
     {
@@ -316,7 +299,6 @@ Reference< xml::input::XElement > LibraryElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void LibraryElement::endElement()
-    throw (xml::sax::SAXException, RuntimeException)
 {
     sal_Int32 nElementCount = mElements.size();
     Sequence< OUString > aElementNames( nElementCount );
@@ -335,7 +317,6 @@ void LibraryElement::endElement()
 
 Reference< ::com::sun::star::xml::sax::XDocumentHandler >
 SAL_CALL importLibraryContainer( LibDescriptorArray* pLibArray )
-        SAL_THROW( (Exception) )
 {
     return ::xmlscript::createDocumentHandler(
         static_cast< xml::input::XRoot * >( new LibraryImport( pLibArray ) ) );
@@ -345,7 +326,6 @@ SAL_CALL importLibraryContainer( LibDescriptorArray* pLibArray )
 
 ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler >
 SAL_CALL importLibrary( LibDescriptor& rLib )
-        SAL_THROW( (::com::sun::star::uno::Exception) )
 {
     return ::xmlscript::createDocumentHandler(
         static_cast< xml::input::XRoot * >( new LibraryImport( &rLib ) ) );

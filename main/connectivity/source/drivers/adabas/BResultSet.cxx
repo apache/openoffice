@@ -44,7 +44,7 @@ using namespace com::sun::star::util;
 // the cursor was moved with a call of SQLFetchScroll. So when this is fixed by adabas we can remove this damn thing.
 
 
-sal_Bool SAL_CALL OAdabasResultSet::next(  ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasResultSet::next(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -61,7 +61,7 @@ sal_Bool SAL_CALL OAdabasResultSet::next(  ) throw(SQLException, RuntimeExceptio
 	return m_nCurrentFetchState == SQL_SUCCESS || m_nCurrentFetchState == SQL_SUCCESS_WITH_INFO;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OAdabasResultSet::first(  ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasResultSet::first(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -88,7 +88,7 @@ sal_Bool SAL_CALL OAdabasResultSet::first(  ) throw(SQLException, RuntimeExcepti
 }
 // -------------------------------------------------------------------------
 
-sal_Bool SAL_CALL OAdabasResultSet::last(  ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasResultSet::last(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -111,7 +111,7 @@ sal_Bool SAL_CALL OAdabasResultSet::last(  ) throw(SQLException, RuntimeExceptio
 	return m_bLastRecord = (m_nCurrentFetchState == SQL_SUCCESS || m_nCurrentFetchState == SQL_SUCCESS_WITH_INFO);
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OAdabasResultSet::absolute( sal_Int32 row ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasResultSet::absolute( sal_Int32 row )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -135,7 +135,7 @@ sal_Bool SAL_CALL OAdabasResultSet::absolute( sal_Int32 row ) throw(SQLException
 	return bRet;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OAdabasResultSet::relative( sal_Int32 row ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasResultSet::relative( sal_Int32 row )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -158,7 +158,7 @@ sal_Bool SAL_CALL OAdabasResultSet::relative( sal_Int32 row ) throw(SQLException
 	return bRet;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OAdabasResultSet::previous(  ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasResultSet::previous(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -181,7 +181,7 @@ sal_Bool SAL_CALL OAdabasResultSet::previous(  ) throw(SQLException, RuntimeExce
 	return bRet;
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OAdabasResultSet::refreshRow(  ) throw(SQLException, RuntimeException)
+void SAL_CALL OAdabasResultSet::refreshRow(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);
@@ -200,7 +200,7 @@ void SAL_CALL OAdabasResultSet::refreshRow(  ) throw(SQLException, RuntimeExcept
 	OTools::ThrowException(m_pStatement->getOwnConnection(),m_nCurrentFetchState,m_aStatementHandle,SQL_HANDLE_STMT,*this);
 }
 // -----------------------------------------------------------------------------
-Reference< XResultSetMetaData > SAL_CALL OAdabasResultSet::getMetaData(  ) throw(SQLException, RuntimeException)
+Reference< XResultSetMetaData > SAL_CALL OAdabasResultSet::getMetaData(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OResultSet_BASE::rBHelper.bDisposed);

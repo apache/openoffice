@@ -93,7 +93,7 @@ ScriptingContext::~ScriptingContext()
 // XPropertySet
 // -----------------------------------------------------------------------------
 
-Reference< beans::XPropertySetInfo > ScriptingContext::getPropertySetInfo(  ) throw (RuntimeException)
+Reference< beans::XPropertySetInfo > ScriptingContext::getPropertySetInfo(  )
 {
     Reference< beans::XPropertySetInfo > xInfo( createPropertySetInfo( getInfoHelper() ) );
     return xInfo;
@@ -102,7 +102,7 @@ Reference< beans::XPropertySetInfo > ScriptingContext::getPropertySetInfo(  ) th
 // -----------------------------------------------------------------------------
 IMPLEMENT_GET_IMPLEMENTATION_ID( ScriptingContext )
 
-css::uno::Sequence< css::uno::Type > SAL_CALL ScriptingContext::getTypes(  ) throw (css::uno::RuntimeException)
+css::uno::Sequence< css::uno::Type > SAL_CALL ScriptingContext::getTypes(  )
 {
     return OPropertyContainer::getTypes();
 }

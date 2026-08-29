@@ -161,21 +161,18 @@ void ScHeaderFooterContentObj::UpdateText( sal_uInt16 nPart, EditEngine& rSource
 // XHeaderFooterContent
 
 uno::Reference<text::XText> SAL_CALL ScHeaderFooterContentObj::getLeftText()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return new ScHeaderFooterTextObj( *this, SC_HDFT_LEFT );
 }
 
 uno::Reference<text::XText> SAL_CALL ScHeaderFooterContentObj::getCenterText()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return new ScHeaderFooterTextObj( *this, SC_HDFT_CENTER );
 }
 
 uno::Reference<text::XText> SAL_CALL ScHeaderFooterContentObj::getRightText()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return new ScHeaderFooterTextObj( *this, SC_HDFT_RIGHT );
@@ -184,7 +181,7 @@ uno::Reference<text::XText> SAL_CALL ScHeaderFooterContentObj::getRightText()
 // XUnoTunnel
 
 sal_Int64 SAL_CALL ScHeaderFooterContentObj::getSomething(
-				const uno::Sequence<sal_Int8 >& rId ) throw(uno::RuntimeException)
+				const uno::Sequence<sal_Int8 >& rId )
 {
 	if ( rId.getLength() == 16 &&
           0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -363,7 +360,6 @@ const SvxUnoText& ScHeaderFooterTextObj::GetUnoText()
 // XText
 
 uno::Reference<text::XTextCursor> SAL_CALL ScHeaderFooterTextObj::createTextCursor()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return new ScHeaderFooterTextCursor( *this );
@@ -371,7 +367,6 @@ uno::Reference<text::XTextCursor> SAL_CALL ScHeaderFooterTextObj::createTextCurs
 
 uno::Reference<text::XTextCursor> SAL_CALL ScHeaderFooterTextObj::createTextCursorByRange(
 									const uno::Reference<text::XTextRange>& aTextPosition )
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -391,7 +386,7 @@ void ScHeaderFooterTextObj::FillDummyFieldData( ScHeaderFieldData& rData )	// st
 	rData.nTotalPages	= 99;
 }
 
-rtl::OUString SAL_CALL ScHeaderFooterTextObj::getString() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScHeaderFooterTextObj::getString()
 {
 	ScUnoGuard aGuard;
 	rtl::OUString aRet;
@@ -421,7 +416,7 @@ rtl::OUString SAL_CALL ScHeaderFooterTextObj::getString() throw(uno::RuntimeExce
 	return aRet;
 }
 
-void SAL_CALL ScHeaderFooterTextObj::setString( const rtl::OUString& aText ) throw(uno::RuntimeException)
+void SAL_CALL ScHeaderFooterTextObj::setString( const rtl::OUString& aText )
 {
 	ScUnoGuard aGuard;
 	String aString(aText);
@@ -435,7 +430,6 @@ void SAL_CALL ScHeaderFooterTextObj::setString( const rtl::OUString& aText ) thr
 
 void SAL_CALL ScHeaderFooterTextObj::insertString( const uno::Reference<text::XTextRange>& xRange,
 											const rtl::OUString& aString, sal_Bool bAbsorb )
-								throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -446,7 +440,6 @@ void SAL_CALL ScHeaderFooterTextObj::insertString( const uno::Reference<text::XT
 void SAL_CALL ScHeaderFooterTextObj::insertControlCharacter(
 											const uno::Reference<text::XTextRange>& xRange,
 											sal_Int16 nControlCharacter, sal_Bool bAbsorb )
-								throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -458,7 +451,6 @@ void SAL_CALL ScHeaderFooterTextObj::insertTextContent(
 											const uno::Reference<text::XTextRange >& xRange,
 											const uno::Reference<text::XTextContent >& xContent,
 											sal_Bool bAbsorb )
-								throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if ( xContent.is() && xRange.is() )
@@ -518,7 +510,6 @@ void SAL_CALL ScHeaderFooterTextObj::insertTextContent(
 
 void SAL_CALL ScHeaderFooterTextObj::removeTextContent(
 											const uno::Reference<text::XTextContent>& xContent )
-								throw(container::NoSuchElementException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if ( xContent.is() )
@@ -536,7 +527,7 @@ void SAL_CALL ScHeaderFooterTextObj::removeTextContent(
 	pUnoText->removeTextContent( xContent );
 }
 
-uno::Reference<text::XText> SAL_CALL ScHeaderFooterTextObj::getText() throw(uno::RuntimeException)
+uno::Reference<text::XText> SAL_CALL ScHeaderFooterTextObj::getText()
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -544,7 +535,7 @@ uno::Reference<text::XText> SAL_CALL ScHeaderFooterTextObj::getText() throw(uno:
 	return pUnoText->getText();
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextObj::getStart() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextObj::getStart()
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -552,7 +543,7 @@ uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextObj::getStart() thro
 	return pUnoText->getStart();
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextObj::getEnd() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextObj::getEnd()
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -563,7 +554,6 @@ uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextObj::getEnd() throw(
 // XTextFieldsSupplier
 
 uno::Reference<container::XEnumerationAccess> SAL_CALL ScHeaderFooterTextObj::getTextFields()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	// all fields
@@ -571,7 +561,6 @@ uno::Reference<container::XEnumerationAccess> SAL_CALL ScHeaderFooterTextObj::ge
 }
 
 uno::Reference<container::XNameAccess> SAL_CALL ScHeaderFooterTextObj::getTextFieldMasters()
-												throw(uno::RuntimeException)
 {
 	//	sowas gibts nicht im Calc (?)
 	return NULL;
@@ -582,7 +571,6 @@ uno::Reference<container::XNameAccess> SAL_CALL ScHeaderFooterTextObj::getTextFi
 void SAL_CALL ScHeaderFooterTextObj::moveTextRange(
 										const uno::Reference<text::XTextRange>& xRange,
 										sal_Int16 nParagraphs )
-										throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -593,7 +581,6 @@ void SAL_CALL ScHeaderFooterTextObj::moveTextRange(
 // XEnumerationAccess
 
 uno::Reference<container::XEnumeration> SAL_CALL ScHeaderFooterTextObj::createEnumeration()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -603,7 +590,7 @@ uno::Reference<container::XEnumeration> SAL_CALL ScHeaderFooterTextObj::createEn
 
 // XElementAccess
 
-uno::Type SAL_CALL ScHeaderFooterTextObj::getElementType() throw(uno::RuntimeException)
+uno::Type SAL_CALL ScHeaderFooterTextObj::getElementType()
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -611,7 +598,7 @@ uno::Type SAL_CALL ScHeaderFooterTextObj::getElementType() throw(uno::RuntimeExc
 	return pUnoText->getElementType();
 }
 
-sal_Bool SAL_CALL ScHeaderFooterTextObj::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScHeaderFooterTextObj::hasElements()
 {
 	ScUnoGuard aGuard;
 	if (!pUnoText)
@@ -642,13 +629,13 @@ ScCellTextCursor::~ScCellTextCursor() throw()
 
 // SvxUnoTextCursor methods reimplemented here to return the right objects:
 
-uno::Reference<text::XText> SAL_CALL ScCellTextCursor::getText() throw(uno::RuntimeException)
+uno::Reference<text::XText> SAL_CALL ScCellTextCursor::getText()
 {
 	ScUnoGuard aGuard;
 	return &rTextObj;
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScCellTextCursor::getStart() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScCellTextCursor::getStart()
 {
 	ScUnoGuard aGuard;
 
@@ -665,7 +652,7 @@ uno::Reference<text::XTextRange> SAL_CALL ScCellTextCursor::getStart() throw(uno
 	return xRange;
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScCellTextCursor::getEnd() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScCellTextCursor::getEnd()
 {
 	ScUnoGuard aGuard;
 
@@ -685,7 +672,7 @@ uno::Reference<text::XTextRange> SAL_CALL ScCellTextCursor::getEnd() throw(uno::
 // XUnoTunnel
 
 sal_Int64 SAL_CALL ScCellTextCursor::getSomething(
-				const uno::Sequence<sal_Int8 >& rId ) throw(uno::RuntimeException)
+				const uno::Sequence<sal_Int8 >& rId )
 {
 	if ( rId.getLength() == 16 &&
           0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -746,13 +733,13 @@ ScHeaderFooterTextCursor::~ScHeaderFooterTextCursor() throw()
 
 // SvxUnoTextCursor methods reimplemented here to return the right objects:
 
-uno::Reference<text::XText> SAL_CALL ScHeaderFooterTextCursor::getText() throw(uno::RuntimeException)
+uno::Reference<text::XText> SAL_CALL ScHeaderFooterTextCursor::getText()
 {
 	ScUnoGuard aGuard;
 	return &rTextObj;
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextCursor::getStart() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextCursor::getStart()
 {
 	ScUnoGuard aGuard;
 
@@ -769,7 +756,7 @@ uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextCursor::getStart() t
 	return xRange;
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextCursor::getEnd() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextCursor::getEnd()
 {
 	ScUnoGuard aGuard;
 
@@ -789,7 +776,7 @@ uno::Reference<text::XTextRange> SAL_CALL ScHeaderFooterTextCursor::getEnd() thr
 // XUnoTunnel
 
 sal_Int64 SAL_CALL ScHeaderFooterTextCursor::getSomething(
-				const uno::Sequence<sal_Int8 >& rId ) throw(uno::RuntimeException)
+				const uno::Sequence<sal_Int8 >& rId )
 {
 	if ( rId.getLength() == 16 &&
           0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -850,13 +837,13 @@ ScDrawTextCursor::~ScDrawTextCursor() throw()
 
 // SvxUnoTextCursor methods reimplemented here to return the right objects:
 
-uno::Reference<text::XText> SAL_CALL ScDrawTextCursor::getText() throw(uno::RuntimeException)
+uno::Reference<text::XText> SAL_CALL ScDrawTextCursor::getText()
 {
 	ScUnoGuard aGuard;
 	return xParentText;
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScDrawTextCursor::getStart() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScDrawTextCursor::getStart()
 {
 	ScUnoGuard aGuard;
 
@@ -873,7 +860,7 @@ uno::Reference<text::XTextRange> SAL_CALL ScDrawTextCursor::getStart() throw(uno
 	return xRange;
 }
 
-uno::Reference<text::XTextRange> SAL_CALL ScDrawTextCursor::getEnd() throw(uno::RuntimeException)
+uno::Reference<text::XTextRange> SAL_CALL ScDrawTextCursor::getEnd()
 {
 	ScUnoGuard aGuard;
 
@@ -893,7 +880,7 @@ uno::Reference<text::XTextRange> SAL_CALL ScDrawTextCursor::getEnd() throw(uno::
 // XUnoTunnel
 
 sal_Int64 SAL_CALL ScDrawTextCursor::getSomething(
-                const uno::Sequence<sal_Int8 >& rId ) throw(uno::RuntimeException)
+                const uno::Sequence<sal_Int8 >& rId )
 {
     if ( rId.getLength() == 16 &&
           0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),

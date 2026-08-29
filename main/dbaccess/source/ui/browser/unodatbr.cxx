@@ -191,22 +191,22 @@ void SafeRemovePropertyListener(const Reference< XPropertySet > & xSet, const ::
 		xSet->removePropertyChangeListener(rPropName, pListener);
 }
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL SbaTableQueryBrowser::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL SbaTableQueryBrowser::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL SbaTableQueryBrowser::getSupportedServiceNames() throw(RuntimeException)
+::comphelper::StringSequence SAL_CALL SbaTableQueryBrowser::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SbaTableQueryBrowser::getImplementationName_Static() throw(RuntimeException)
+::rtl::OUString SbaTableQueryBrowser::getImplementationName_Static()
 {
 	return ::rtl::OUString::createFromAscii("org.openoffice.comp.dbu.ODatasourceBrowser");
 }
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SbaTableQueryBrowser::getSupportedServiceNames_Static() throw(RuntimeException)
+::comphelper::StringSequence SbaTableQueryBrowser::getSupportedServiceNames_Static()
 {
 	::comphelper::StringSequence aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdb.DataSourceBrowser");
@@ -254,7 +254,7 @@ SbaTableQueryBrowser::~SbaTableQueryBrowser()
 }
 
 //------------------------------------------------------------------------------
-Any SAL_CALL SbaTableQueryBrowser::queryInterface(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL SbaTableQueryBrowser::queryInterface(const Type& _rType)
 {
     if ( _rType.equals( XScriptInvocationContext::static_type() ) )
     {
@@ -271,7 +271,7 @@ Any SAL_CALL SbaTableQueryBrowser::queryInterface(const Type& _rType) throw (Run
 }
 
 //------------------------------------------------------------------------------
-Sequence< Type > SAL_CALL SbaTableQueryBrowser::getTypes(  ) throw (RuntimeException)
+Sequence< Type > SAL_CALL SbaTableQueryBrowser::getTypes(  )
 {
     Sequence< Type > aTypes( ::comphelper::concatSequences(
 		SbaXDataBrowserController::getTypes(),
@@ -294,7 +294,7 @@ Sequence< Type > SAL_CALL SbaTableQueryBrowser::getTypes(  ) throw (RuntimeExcep
 }
 
 //------------------------------------------------------------------------------
-Sequence< sal_Int8 > SAL_CALL SbaTableQueryBrowser::getImplementationId(  ) throw (RuntimeException)
+Sequence< sal_Int8 > SAL_CALL SbaTableQueryBrowser::getImplementationId(  )
 {
 	static ::cppu::OImplementationId * pId = 0;
 	if (! pId)
@@ -893,7 +893,7 @@ void SbaTableQueryBrowser::transferChangedControlProperty(const ::rtl::OUString&
 }
 
 // -----------------------------------------------------------------------
-void SbaTableQueryBrowser::propertyChange(const PropertyChangeEvent& evt) throw(::com::sun::star::uno::RuntimeException)
+void SbaTableQueryBrowser::propertyChange(const PropertyChangeEvent& evt)
 {
 	SbaXDataBrowserController::propertyChange(evt);
 
@@ -1001,7 +1001,7 @@ void SbaTableQueryBrowser::propertyChange(const PropertyChangeEvent& evt) throw(
 }
 
 // -----------------------------------------------------------------------
-sal_Bool SbaTableQueryBrowser::suspend(sal_Bool bSuspend) throw( RuntimeException )
+sal_Bool SbaTableQueryBrowser::suspend(sal_Bool bSuspend)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( getMutex() );
@@ -1025,7 +1025,7 @@ sal_Bool SbaTableQueryBrowser::suspend(sal_Bool bSuspend) throw( RuntimeExceptio
 }
 
 // -------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::statusChanged( const FeatureStateEvent& _rEvent ) throw(RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::statusChanged( const FeatureStateEvent& _rEvent )
 {
 	// search the external dispatcher causing this call
 	Reference< XDispatch > xSource(_rEvent.Source, UNO_QUERY);
@@ -1395,7 +1395,7 @@ void SbaTableQueryBrowser::implCheckExternalSlot( sal_uInt16 _nId )
 }
 
 // -------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::disposing( const ::com::sun::star::lang::EventObject& _rSource ) throw(RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::disposing( const ::com::sun::star::lang::EventObject& _rSource )
 {
 	// our frame ?
 	Reference< ::com::sun::star::frame::XFrame >  xSourceFrame(_rSource.Source, UNO_QUERY);
@@ -1484,7 +1484,7 @@ void SbaTableQueryBrowser::implRemoveStatusListeners()
 }
 
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL SbaTableQueryBrowser::select( const Any& _rSelection ) throw (IllegalArgumentException, RuntimeException)
+sal_Bool SAL_CALL SbaTableQueryBrowser::select( const Any& _rSelection )
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 		// doing a lot of VCL stuff here -> lock the SolarMutex
@@ -1513,7 +1513,7 @@ sal_Bool SAL_CALL SbaTableQueryBrowser::select( const Any& _rSelection ) throw (
 }
 
 // -------------------------------------------------------------------------
-Any SAL_CALL SbaTableQueryBrowser::getSelection(  ) throw (RuntimeException)
+Any SAL_CALL SbaTableQueryBrowser::getSelection(  )
 {
 	Any aReturn;
 
@@ -1540,19 +1540,19 @@ Any SAL_CALL SbaTableQueryBrowser::getSelection(  ) throw (RuntimeException)
 }
 
 // -------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::addSelectionChangeListener( const Reference< XSelectionChangeListener >& _rxListener ) throw (RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::addSelectionChangeListener( const Reference< XSelectionChangeListener >& _rxListener )
 {
 	m_aSelectionListeners.addInterface(_rxListener);
 }
 
 // -------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::removeSelectionChangeListener( const Reference< XSelectionChangeListener >& _rxListener ) throw (RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::removeSelectionChangeListener( const Reference< XSelectionChangeListener >& _rxListener )
 {
 	m_aSelectionListeners.removeInterface(_rxListener);
 }
 
 // -------------------------------------------------------------------------
-void SbaTableQueryBrowser::attachFrame(const Reference< ::com::sun::star::frame::XFrame > & _xFrame) throw( RuntimeException )
+void SbaTableQueryBrowser::attachFrame(const Reference< ::com::sun::star::frame::XFrame > & _xFrame)
 {
 	implRemoveStatusListeners();
 
@@ -2817,7 +2817,7 @@ SvLBoxEntry* SbaTableQueryBrowser::getEntryFromContainer(const Reference<XNameAc
 }
 
 // -------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::elementInserted( const ContainerEvent& _rEvent ) throw(RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::elementInserted( const ContainerEvent& _rEvent )
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -2862,7 +2862,7 @@ sal_Bool SbaTableQueryBrowser::isCurrentlyDisplayedChanged(const String& _sName,
 			&&	m_pTreeView->getListBox().GetEntryText(m_pCurrentlyDisplayed) == _sName;
 }
 // -------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::elementRemoved( const ContainerEvent& _rEvent ) throw(RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::elementRemoved( const ContainerEvent& _rEvent )
 {
 	::vos::OGuard aSolarGuard(Application::GetSolarMutex());
 
@@ -2915,7 +2915,7 @@ void SAL_CALL SbaTableQueryBrowser::elementRemoved( const ContainerEvent& _rEven
 }
 
 // -------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::elementReplaced( const ContainerEvent& _rEvent ) throw(RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::elementReplaced( const ContainerEvent& _rEvent )
 {
 	::vos::OGuard aSolarGuard(Application::GetSolarMutex());
 
@@ -3689,7 +3689,7 @@ sal_Bool SbaTableQueryBrowser::implGetQuerySignature( ::rtl::OUString& _rCommand
 	return sal_False;
 }
 //------------------------------------------------------------------------------
-void SbaTableQueryBrowser::frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent) throw( RuntimeException )
+void SbaTableQueryBrowser::frameAction(const ::com::sun::star::frame::FrameActionEvent& aEvent)
 {
 	if (aEvent.Frame == m_xCurrentFrameParent)
 	{
@@ -3807,7 +3807,7 @@ void SbaTableQueryBrowser::postReloadForm()
 }
 
 //------------------------------------------------------------------------------
-Reference< XEmbeddedScripts > SAL_CALL SbaTableQueryBrowser::getScriptContainer() throw (RuntimeException)
+Reference< XEmbeddedScripts > SAL_CALL SbaTableQueryBrowser::getScriptContainer()
 {
     // update our database document
     Reference< XModel > xDocument;
@@ -3833,21 +3833,21 @@ Reference< XEmbeddedScripts > SAL_CALL SbaTableQueryBrowser::getScriptContainer(
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::registerContextMenuInterceptor( const Reference< XContextMenuInterceptor >& _Interceptor ) throw (RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::registerContextMenuInterceptor( const Reference< XContextMenuInterceptor >& _Interceptor )
 {
     if ( _Interceptor.is() )
         m_aContextMenuInterceptors.addInterface( _Interceptor );
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::releaseContextMenuInterceptor( const Reference< XContextMenuInterceptor >& _Interceptor ) throw (RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::releaseContextMenuInterceptor( const Reference< XContextMenuInterceptor >& _Interceptor )
 {
     if ( _Interceptor.is() )
         m_aContextMenuInterceptors.removeInterface( _Interceptor );
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::registeredDatabaseLocation( const DatabaseRegistrationEvent& _Event ) throw (RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::registeredDatabaseLocation( const DatabaseRegistrationEvent& _Event )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	implAddDatasource( _Event.Name, SharedConnection() );
@@ -3904,7 +3904,7 @@ void SbaTableQueryBrowser::impl_cleanupDataSourceEntry( const String& _rDataSour
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::revokedDatabaseLocation( const DatabaseRegistrationEvent& _Event ) throw (RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::revokedDatabaseLocation( const DatabaseRegistrationEvent& _Event )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -3915,7 +3915,7 @@ void SAL_CALL SbaTableQueryBrowser::revokedDatabaseLocation( const DatabaseRegis
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL SbaTableQueryBrowser::changedDatabaseLocation( const DatabaseRegistrationEvent& _Event ) throw (RuntimeException)
+void SAL_CALL SbaTableQueryBrowser::changedDatabaseLocation( const DatabaseRegistrationEvent& _Event )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 

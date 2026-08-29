@@ -104,16 +104,14 @@ public:
 	ZipFile( com::sun::star::uno::Reference < com::sun::star::io::XInputStream > &xInput,
 			 const com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > &xNewFactory,
 			 sal_Bool bInitialise
-			 )
-		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
+			 );
 
 	ZipFile( com::sun::star::uno::Reference < com::sun::star::io::XInputStream > &xInput,
 			 const com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > &xNewFactory,
 			 sal_Bool bInitialise,
 			 sal_Bool bForceRecover,
 			 ::com::sun::star::uno::Reference < ::com::sun::star::ucb::XProgressHandler > xProgress
-			 )
-		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
+			 );
 
 	~ZipFile();
 
@@ -124,8 +122,7 @@ public:
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bDecrypt,
-            SotMutexHolderRef aMutexHolder )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::packages::zip::ZipException, ::com::sun::star::uno::RuntimeException);
+            SotMutexHolderRef aMutexHolder );
 
 
     static ::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XDigestContext > StaticGetDigestContextForChecksum(
@@ -154,10 +151,7 @@ public:
 	static ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > StaticGetDataFromRawStream(
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xStream,
-			const ::rtl::Reference < EncryptionData > &rData )
-		throw ( ::com::sun::star::packages::WrongPasswordException,
-				::com::sun::star::packages::zip::ZipIOException,
-				::com::sun::star::uno::RuntimeException );
+			const ::rtl::Reference < EncryptionData > &rData );
 
 	static sal_Bool StaticHasValidPassword (
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory,
@@ -169,28 +163,19 @@ public:
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bDecrypt,
-            SotMutexHolderRef aMutexHolder )
-		throw(::com::sun::star::io::IOException, ::com::sun::star::packages::zip::ZipException, ::com::sun::star::uno::RuntimeException);
+            SotMutexHolderRef aMutexHolder );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getDataStream(
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bDecrypt,
-            SotMutexHolderRef aMutexHolder )
-		throw ( ::com::sun::star::packages::WrongPasswordException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::packages::zip::ZipException,
-				::com::sun::star::uno::RuntimeException );
+            SotMutexHolderRef aMutexHolder );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getWrappedRawStream(
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			const ::rtl::OUString& aMediaType,
-            SotMutexHolderRef aMutexHolder )
-		throw ( ::com::sun::star::packages::NoEncryptionException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::packages::zip::ZipException,
-				::com::sun::star::uno::RuntimeException );
+            SotMutexHolderRef aMutexHolder );
 
     ZipEnumeration * SAL_CALL entries(  );
 protected:
@@ -202,16 +187,12 @@ protected:
 	 *
 	 * @return sal_True if successful, otherwise throws exceptions.
 	 */
-	sal_Bool		readLOC ( ZipEntry &rEntry)
-		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
+	sal_Bool		readLOC ( ZipEntry &rEntry);
 	/// Decode the End of central directory record
-	sal_Int32		readCEN()
-		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
+	sal_Int32		readCEN();
 	/// Find the End of central directory record
-	sal_Int32		findEND()
-		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
-	sal_Int32 		recover()
-		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
+	sal_Int32		findEND();
+	sal_Int32 		recover();
 
 };
 

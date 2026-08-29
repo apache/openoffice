@@ -412,7 +412,6 @@ void ConvDicXMLExport::_ExportContent()
 }
 
 ::rtl::OUString SAL_CALL ConvDicXMLExport::getImplementationName()
-    throw( uno::RuntimeException )
 {
     return A2OU( "com.sun.star.lingu2.ConvDicXMLExport" );
 }
@@ -420,7 +419,6 @@ void ConvDicXMLExport::_ExportContent()
 ///////////////////////////////////////////////////////////////////////////
 
 void SAL_CALL ConvDicXMLImport::startDocument(void)
-    throw( xml::sax::SAXException, uno::RuntimeException )
 {
     // register namespace at first possible opportunity
     GetNamespaceMap().Add( A2OU( "tcd" ),
@@ -429,7 +427,6 @@ void SAL_CALL ConvDicXMLImport::startDocument(void)
 }
 
 void SAL_CALL ConvDicXMLImport::endDocument(void)
-    throw( xml::sax::SAXException, uno::RuntimeException )
 {
     SvXMLImport::endDocument();
 }
@@ -449,7 +446,6 @@ SvXMLImportContext * ConvDicXMLImport::CreateContext(
 
 
 OUString SAL_CALL ConvDicXMLImport::getImplementationName()
-    throw( uno::RuntimeException )
 {
     return A2OU( "com.sun.star.lingu2.ConvDicXMLImport" );
 }

@@ -137,7 +137,6 @@ CDataFormatTranslator::CDataFormatTranslator( const Reference< XMultiServiceFact
 //------------------------------------------------------------------------
 
 Any SAL_CALL CDataFormatTranslator::getSystemDataTypeFromDataFlavor( const DataFlavor& aDataFlavor )
-	throw( RuntimeException )
 {
 	Any aAny;
 
@@ -200,7 +199,6 @@ Any SAL_CALL CDataFormatTranslator::getSystemDataTypeFromDataFlavor( const DataF
 //------------------------------------------------------------------------
 
 DataFlavor SAL_CALL CDataFormatTranslator::getDataFlavorFromSystemDataType( const Any& aSysDataType )
-	throw( RuntimeException )
 {
 	OSL_PRECOND( aSysDataType.hasValue( ), "Empty system data type delivered" );
 
@@ -231,7 +229,6 @@ DataFlavor SAL_CALL CDataFormatTranslator::getDataFlavorFromSystemDataType( cons
 // -------------------------------------------------
 
 OUString SAL_CALL CDataFormatTranslator::getImplementationName(  )
-	throw( RuntimeException )
 {
 	return OUString::createFromAscii( IMPL_NAME );
 }
@@ -241,7 +238,6 @@ OUString SAL_CALL CDataFormatTranslator::getImplementationName(  )
 // -------------------------------------------------
 
 sal_Bool SAL_CALL CDataFormatTranslator::supportsService( const OUString& ServiceName )
-	throw( RuntimeException )
 {
 	Sequence < OUString > SupportedServicesNames = DataFormatTranslator_getSupportedServiceNames();
 
@@ -257,7 +253,6 @@ sal_Bool SAL_CALL CDataFormatTranslator::supportsService( const OUString& Servic
 // -------------------------------------------------
 
 Sequence< OUString > SAL_CALL CDataFormatTranslator::getSupportedServiceNames( )
-	throw( RuntimeException )
 {
 	return DataFormatTranslator_getSupportedServiceNames( );
 }

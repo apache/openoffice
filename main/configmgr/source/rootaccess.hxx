@@ -108,29 +108,21 @@ private:
     virtual void clearListeners() throw ();
 
     virtual com::sun::star::uno::Any SAL_CALL queryInterface(
-        com::sun::star::uno::Type const & aType)
-        throw (com::sun::star::uno::RuntimeException);
+        com::sun::star::uno::Type const & aType);
 
     virtual void SAL_CALL addChangesListener(
         com::sun::star::uno::Reference< com::sun::star::util::XChangesListener >
-            const & aListener)
-        throw (com::sun::star::uno::RuntimeException);
+            const & aListener);
 
     virtual void SAL_CALL removeChangesListener(
         com::sun::star::uno::Reference< com::sun::star::util::XChangesListener >
-            const & aListener)
-        throw (com::sun::star::uno::RuntimeException);
+            const & aListener);
 
-    virtual void SAL_CALL commitChanges()
-        throw (
-            com::sun::star::lang::WrappedTargetException,
-            com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL commitChanges();
 
-    virtual sal_Bool SAL_CALL hasPendingChanges()
-        throw (com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasPendingChanges();
 
-    virtual com::sun::star::util::ChangesSet SAL_CALL getPendingChanges()
-        throw (com::sun::star::uno::RuntimeException);
+    virtual com::sun::star::util::ChangesSet SAL_CALL getPendingChanges();
 
     typedef
         std::multiset<

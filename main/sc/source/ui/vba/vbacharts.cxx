@@ -35,7 +35,7 @@ ScVbaCharts::ScVbaCharts( const css::uno::Reference< ov::XHelperInterface >& _xP
 }
 
 uno::Any SAL_CALL
-ScVbaCharts::Add() throw (css::script::BasicErrorException, css::uno::RuntimeException)
+ScVbaCharts::Add()
 {
 	// Not implemented in the helperapi ( see ChartsImpl.java )
 	if ( true )
@@ -44,13 +44,13 @@ ScVbaCharts::Add() throw (css::script::BasicErrorException, css::uno::RuntimeExc
 }
 
 uno::Reference< excel::XChart > SAL_CALL
-ScVbaCharts::getActiveChart() throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaCharts::getActiveChart()
 {
 	return xActiveChart;
 }
 
 uno::Reference< container::XEnumeration > SAL_CALL
-ScVbaCharts::createEnumeration() throw (uno::RuntimeException)
+ScVbaCharts::createEnumeration()
 {
 	// #FIXME not implemented
 	if ( true )
@@ -61,7 +61,7 @@ ScVbaCharts::createEnumeration() throw (uno::RuntimeException)
 // #FIXME #TODO this method shouldn't appear in this class directly
 // a XIndexAccess/XNameAccess wrapper should be passed to the base class instead
 ::sal_Int32 SAL_CALL
-ScVbaCharts::getCount() throw (uno::RuntimeException)
+ScVbaCharts::getCount()
 {
 	sal_Int32 ncount = 0;
 	try

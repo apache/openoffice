@@ -78,7 +78,6 @@ OneToOneMappingTable_t IandE[] = {
 
 OUString SAL_CALL
 ignoreIandEfollowedByYa_ja_JP::folding( const OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, Sequence< sal_Int32 >& offset )
-  throw(RuntimeException)
 {
     // Create a string buffer which can hold nCount + 1 characters.
     // The reference count is 0 now.

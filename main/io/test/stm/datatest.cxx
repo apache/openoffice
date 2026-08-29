@@ -83,20 +83,16 @@ public:
 		{}
 
 public:
-    virtual void SAL_CALL testInvariant(const OUString& TestName, const Reference < XInterface >& TestObject)
-		throw (	IllegalArgumentException,
-					RuntimeException);
+    virtual void SAL_CALL testInvariant(const OUString& TestName, const Reference < XInterface >& TestObject);
 
     virtual sal_Int32 SAL_CALL test(	const OUString& TestName,
 										const Reference < XInterface >& TestObject,
-										sal_Int32 hTestHandle)
-		throw (	IllegalArgumentException,
-				RuntimeException);
+										sal_Int32 hTestHandle);
 
-    virtual sal_Bool SAL_CALL testPassed(void) 								throw (	RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getErrors(void) 				throw (RuntimeException);
-    virtual Sequence< Any > SAL_CALL getErrorExceptions(void) 		throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getWarnings(void) 				throw (RuntimeException);
+    virtual sal_Bool SAL_CALL testPassed(void);
+    virtual Sequence< OUString > SAL_CALL getErrors(void);
+    virtual Sequence< Any > SAL_CALL getErrorExceptions(void);
+    virtual Sequence< OUString > SAL_CALL getWarnings(void);
 
 private:
 	void testSimple( const Reference < XDataInputStream > & , const Reference < XDataOutputStream > &);
@@ -115,8 +111,6 @@ protected:
 void ODataStreamTest::testInvariant(
 	const OUString& TestName,
 	const Reference < XInterface >& TestObject )
-	throw (	IllegalArgumentException,
-			RuntimeException)
 {
 	if( OUString::createFromAscii("com.sun.star.io.DataInputStream") == TestName ) {
 		Reference < XConnectable > connect( TestObject , UNO_QUERY );
@@ -159,8 +153,6 @@ sal_Int32 ODataStreamTest::test(
 	const OUString& TestName,
 	const Reference < XInterface >& TestObject,
 	sal_Int32 hTestHandle)
-	throw (	IllegalArgumentException,
-			RuntimeException)
 {
 	if( OUString::createFromAscii("com.sun.star.io.DataInputStream") == TestName ||
 		OUString::createFromAscii("com.sun.star.io.DataOutputStream") == TestName )  {
@@ -236,25 +228,25 @@ sal_Int32 ODataStreamTest::test(
 
 
 
-sal_Bool ODataStreamTest::testPassed(void) 										throw (RuntimeException)
+sal_Bool ODataStreamTest::testPassed(void)
 {
 	return m_seqErrors.getLength() == 0;
 }
 
 
-Sequence< OUString > ODataStreamTest::getErrors(void) 							throw (RuntimeException)
+Sequence< OUString > ODataStreamTest::getErrors(void)
 {
 	return m_seqErrors;
 }
 
 
-Sequence< Any > ODataStreamTest::getErrorExceptions(void) 					throw (RuntimeException)
+Sequence< Any > ODataStreamTest::getErrorExceptions(void)
 {
 	return m_seqExceptions;
 }
 
 
-Sequence< OUString > ODataStreamTest::getWarnings(void) 						throw (RuntimeException)
+Sequence< OUString > ODataStreamTest::getWarnings(void)
 {
 	return m_seqWarnings;
 }
@@ -344,7 +336,7 @@ void ODataStreamTest::testSimple( 	const Reference < XDataInputStream > &rInput,
 *
 *
 **/
-Reference < XInterface > SAL_CALL ODataStreamTest_CreateInstance( const Reference < XMultiServiceFactory > & rSMgr ) throw(Exception)
+Reference < XInterface > SAL_CALL ODataStreamTest_CreateInstance( const Reference < XMultiServiceFactory > & rSMgr )
 {
 	ODataStreamTest *p = new ODataStreamTest( rSMgr );
 	return Reference < XInterface > ( SAL_STATIC_CAST( OWeakObject * , p ) );
@@ -407,53 +399,30 @@ public:
 
 
 public:
-    virtual OUString SAL_CALL getServiceName(void)  throw (RuntimeException);
-    virtual void SAL_CALL write( const Reference< XObjectOutputStream >& OutStream )
-		throw (IOException, RuntimeException);
-    virtual void SAL_CALL read(const Reference< XObjectInputStream >& InStream)
-		throw (IOException, RuntimeException);
+    virtual OUString SAL_CALL getServiceName(void);
+    virtual void SAL_CALL write( const Reference< XObjectOutputStream >& OutStream );
+    virtual void SAL_CALL read(const Reference< XObjectInputStream >& InStream);
 
 public:
 
-    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo(void)
-		throw (RuntimeException);
+    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo(void);
 
-	virtual void SAL_CALL setPropertyValue(const OUString& aPropertyName, const Any& aValue)
-		throw (	UnknownPropertyException,
-				PropertyVetoException,
-				IllegalArgumentException,
-				WrappedTargetException,
-				RuntimeException);
-    virtual Any SAL_CALL getPropertyValue(const OUString& PropertyName)
-		throw (	UnknownPropertyException,
-				WrappedTargetException,
-				RuntimeException);
+	virtual void SAL_CALL setPropertyValue(const OUString& aPropertyName, const Any& aValue);
+    virtual Any SAL_CALL getPropertyValue(const OUString& PropertyName);
     virtual void SAL_CALL addPropertyChangeListener(
 		const OUString& aPropertyName,
-		const Reference < XPropertyChangeListener > & xListener)
-		throw (	UnknownPropertyException,
-				WrappedTargetException,
-				RuntimeException);
+		const Reference < XPropertyChangeListener > & xListener);
 
 	virtual void SAL_CALL removePropertyChangeListener(
 		const OUString& aPropertyName,
-		const Reference< XPropertyChangeListener > & aListener)
-		throw (	UnknownPropertyException,
-				WrappedTargetException,
-				RuntimeException);
+		const Reference< XPropertyChangeListener > & aListener);
     virtual void SAL_CALL addVetoableChangeListener(
 		const OUString& PropertyName,
-		const Reference< XVetoableChangeListener > & aListener)
-		throw (	UnknownPropertyException,
-				WrappedTargetException,
-				RuntimeException);
+		const Reference< XVetoableChangeListener > & aListener);
 
     virtual void SAL_CALL removeVetoableChangeListener(
 		const OUString& PropertyName,
-		const Reference<  XVetoableChangeListener >& aListener)
-		throw (	UnknownPropertyException,
-				WrappedTargetException,
-				RuntimeException);
+		const Reference<  XVetoableChangeListener >& aListener);
 
 public:
 	sal_Int32	m_l;
@@ -470,7 +439,6 @@ public:
 
 
 Reference <XPropertySetInfo > MyPersistObject::getPropertySetInfo(void)
-	throw (RuntimeException)
 {
 	return Reference< XPropertySetInfo >();
 }
@@ -478,11 +446,6 @@ Reference <XPropertySetInfo > MyPersistObject::getPropertySetInfo(void)
 void MyPersistObject::setPropertyValue(
 	const OUString& aPropertyName,
 	const Any& aValue)
-	throw (	UnknownPropertyException,
-			PropertyVetoException,
-			IllegalArgumentException,
-			WrappedTargetException,
-			RuntimeException)
 {
 	if( 0 == aPropertyName.compareToAscii("long")  ) {
 		aValue >>= m_l;
@@ -519,9 +482,6 @@ void MyPersistObject::setPropertyValue(
 
 
 Any MyPersistObject::getPropertyValue(const OUString& aPropertyName)
-	throw (	UnknownPropertyException,
-			WrappedTargetException,
-			RuntimeException)
 {
 	Any aValue;
 	if( 0 == aPropertyName.compareToAscii("long" )  ) {
@@ -556,9 +516,6 @@ Any MyPersistObject::getPropertyValue(const OUString& aPropertyName)
 void MyPersistObject::addPropertyChangeListener(
 	const OUString& aPropertyName,
 	const Reference< XPropertyChangeListener > & xListener)
-	throw (	UnknownPropertyException,
-			WrappedTargetException,
-			RuntimeException)
 {
 
 }
@@ -566,9 +523,6 @@ void MyPersistObject::addPropertyChangeListener(
 void MyPersistObject::removePropertyChangeListener(
 	const OUString& aPropertyName,
 	const Reference < XPropertyChangeListener > & aListener)
-	throw (	UnknownPropertyException,
-			WrappedTargetException,
-			RuntimeException)
 {
 }
 
@@ -576,9 +530,6 @@ void MyPersistObject::removePropertyChangeListener(
 void MyPersistObject::addVetoableChangeListener(
 	const OUString& PropertyName,
 	const Reference <XVetoableChangeListener >& aListener)
-	throw (	UnknownPropertyException,
-			WrappedTargetException,
-			RuntimeException)
 {
 
 }
@@ -586,9 +537,6 @@ void MyPersistObject::addVetoableChangeListener(
 void MyPersistObject::removeVetoableChangeListener(
 	const OUString& PropertyName,
 	const Reference < XVetoableChangeListener > & aListener)
-	throw (	UnknownPropertyException,
-			WrappedTargetException,
-			RuntimeException)
 {
 
 }
@@ -596,13 +544,12 @@ void MyPersistObject::removeVetoableChangeListener(
 
 
 
-OUString MyPersistObject::getServiceName() throw (RuntimeException)
+OUString MyPersistObject::getServiceName()
 {
 	return m_sServiceName;
 }
 
 void MyPersistObject::write( const Reference< XObjectOutputStream >  & rOut )
-	throw (IOException,RuntimeException)
 {
 	rOut->writeLong( m_l);
 	rOut->writeFloat( m_f );
@@ -616,7 +563,6 @@ void MyPersistObject::write( const Reference< XObjectOutputStream >  & rOut )
 
 
 void MyPersistObject::read( const Reference< XObjectInputStream > & rIn )
-	throw (IOException, RuntimeException)
 {
 	m_l = rIn->readLong();
 	m_f = rIn->readFloat();
@@ -630,7 +576,6 @@ void MyPersistObject::read( const Reference< XObjectInputStream > & rIn )
 
 Reference < XInterface > SAL_CALL OMyPersistObject_CreateInstance(
 	const Reference < XMultiServiceFactory > & rSMgr )
-	throw(Exception)
 {
 	MyPersistObject *p = new MyPersistObject( );
 	return Reference < XInterface > ( SAL_STATIC_CAST( OWeakObject * , p ) );
@@ -664,16 +609,12 @@ public:
 
 public:
     virtual void SAL_CALL testInvariant(const OUString& TestName,
-							   const Reference < XInterface >& TestObject)
-		throw (	IllegalArgumentException,
-				RuntimeException);
+							   const Reference < XInterface >& TestObject);
 
     virtual sal_Int32 SAL_CALL test(
 		const OUString& TestName,
 		const Reference < XInterface >& TestObject,
-		sal_Int32 hTestHandle)
-		throw (	IllegalArgumentException,
-				RuntimeException);
+		sal_Int32 hTestHandle);
 
 
 private:
@@ -686,7 +627,6 @@ private:
 
 void OObjectStreamTest::testInvariant( const OUString& TestName,
 									   const Reference < XInterface >& TestObject )
-	throw (	IllegalArgumentException, RuntimeException)
 {
 
 	if( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.io.ObjectInputStream" ) )
@@ -721,8 +661,6 @@ void OObjectStreamTest::testInvariant( const OUString& TestName,
 sal_Int32 OObjectStreamTest::test(	const OUString& TestName,
     					const Reference < XInterface >& TestObject,
     					sal_Int32 hTestHandle)
-	throw (	IllegalArgumentException,
-			RuntimeException)
 {
 	if( 0 == TestName.compareToAscii("com.sun.star.io.ObjectInputStream") ||
 		0 == TestName.compareToAscii("com.sun.star.io.ObjectOutputStream" ) )  {
@@ -1083,7 +1021,7 @@ void OObjectStreamTest::testObject( 	const Reference<  XObjectOutputStream >  &r
 }
 
 
-Reference < XInterface > SAL_CALL OObjectStreamTest_CreateInstance( const Reference < XMultiServiceFactory > & rSMgr ) throw(Exception)
+Reference < XInterface > SAL_CALL OObjectStreamTest_CreateInstance( const Reference < XMultiServiceFactory > & rSMgr )
 {
 	OObjectStreamTest *p = new OObjectStreamTest( rSMgr );
 	return Reference < XInterface > ( SAL_STATIC_CAST( OWeakObject * , p ) );

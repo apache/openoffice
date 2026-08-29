@@ -138,7 +138,6 @@ SalAquaFilePicker::~SalAquaFilePicker()
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SalAquaFilePicker::addFilePickerListener( const uno::Reference<XFilePickerListener>& xListener )
-    throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -149,7 +148,6 @@ void SAL_CALL SalAquaFilePicker::addFilePickerListener( const uno::Reference<XFi
 }
 
 void SAL_CALL SalAquaFilePicker::removeFilePickerListener( const uno::Reference<XFilePickerListener>& )
-    throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -163,7 +161,7 @@ void SAL_CALL SalAquaFilePicker::removeFilePickerListener( const uno::Reference<
 //-----------------------------------------------------------------------------------------
 // XExecutableDialog functions
 //-----------------------------------------------------------------------------------------
-void SAL_CALL SalAquaFilePicker::setTitle( const rtl::OUString& aTitle ) throw( uno::RuntimeException )
+void SAL_CALL SalAquaFilePicker::setTitle( const rtl::OUString& aTitle )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__, "title", aTitle);
 
@@ -173,7 +171,7 @@ void SAL_CALL SalAquaFilePicker::setTitle( const rtl::OUString& aTitle ) throw( 
     DBG_PRINT_EXIT(CLASS_NAME, __func__);
 }
 
-sal_Int16 SAL_CALL SalAquaFilePicker::execute() throw( uno::RuntimeException )
+sal_Int16 SAL_CALL SalAquaFilePicker::execute()
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -258,7 +256,7 @@ sal_Int16 SAL_CALL SalAquaFilePicker::execute() throw( uno::RuntimeException )
 // XFilePicker functions
 //-----------------------------------------------------------------------------------------
 
-void SAL_CALL SalAquaFilePicker::setMultiSelectionMode( sal_Bool bMode ) throw( uno::RuntimeException )
+void SAL_CALL SalAquaFilePicker::setMultiSelectionMode( sal_Bool bMode )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__, "multiSelectable?", bMode);
 
@@ -273,7 +271,6 @@ void SAL_CALL SalAquaFilePicker::setMultiSelectionMode( sal_Bool bMode ) throw( 
 }
 
 void SAL_CALL SalAquaFilePicker::setDefaultName( const rtl::OUString& aName )
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__, "name", aName);
 
@@ -285,7 +282,6 @@ throw( uno::RuntimeException )
 }
 
 void SAL_CALL SalAquaFilePicker::setDisplayDirectory( const rtl::OUString& rDirectory )
-throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__, "directory", rDirectory);
 
@@ -296,7 +292,7 @@ throw( lang::IllegalArgumentException, uno::RuntimeException )
     DBG_PRINT_EXIT(CLASS_NAME, __func__);
 }
 
-rtl::OUString SAL_CALL SalAquaFilePicker::getDisplayDirectory() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL SalAquaFilePicker::getDisplayDirectory()
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -306,7 +302,7 @@ rtl::OUString SAL_CALL SalAquaFilePicker::getDisplayDirectory() throw( uno::Runt
     return retVal;
 }
 
-uno::Sequence<rtl::OUString> SAL_CALL SalAquaFilePicker::getFiles() throw( uno::RuntimeException )
+uno::Sequence<rtl::OUString> SAL_CALL SalAquaFilePicker::getFiles()
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -367,7 +363,6 @@ uno::Sequence<rtl::OUString> SAL_CALL SalAquaFilePicker::getFiles() throw( uno::
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL SalAquaFilePicker::appendFilter( const rtl::OUString& aTitle, const rtl::OUString& aFilter )
-throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -381,7 +376,6 @@ throw( lang::IllegalArgumentException, uno::RuntimeException )
 }
 
 void SAL_CALL SalAquaFilePicker::setCurrentFilter( const rtl::OUString& aTitle )
-throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
     OSL_TRACE( "Setting current filter to %s",
@@ -398,7 +392,7 @@ throw( lang::IllegalArgumentException, uno::RuntimeException )
     DBG_PRINT_EXIT(CLASS_NAME, __func__);
 }
 
-rtl::OUString SAL_CALL SalAquaFilePicker::getCurrentFilter() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL SalAquaFilePicker::getCurrentFilter()
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
@@ -415,7 +409,6 @@ rtl::OUString SAL_CALL SalAquaFilePicker::getCurrentFilter() throw( uno::Runtime
 //-----------------------------------------------------------------------------------------
 
 void SAL_CALL SalAquaFilePicker::appendFilterGroup( const rtl::OUString& sGroupTitle, const uno::Sequence<beans::StringPair>& aFilters )
-throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
@@ -432,7 +425,6 @@ throw( lang::IllegalArgumentException, uno::RuntimeException )
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SalAquaFilePicker::setValue( sal_Int16 nControlId, sal_Int16 nControlAction, const uno::Any& rValue )
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -448,7 +440,6 @@ throw( uno::RuntimeException )
 }
 
 uno::Any SAL_CALL SalAquaFilePicker::getValue( sal_Int16 nControlId, sal_Int16 nControlAction )
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -459,7 +450,6 @@ throw( uno::RuntimeException )
 }
 
 void SAL_CALL SalAquaFilePicker::enableControl( sal_Int16 nControlId, sal_Bool bEnable )
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -469,7 +459,6 @@ throw( uno::RuntimeException )
 }
 
 void SAL_CALL SalAquaFilePicker::setLabel( sal_Int16 nControlId, const ::rtl::OUString& aLabel )
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -482,7 +471,6 @@ throw( uno::RuntimeException )
 }
 
 rtl::OUString SAL_CALL SalAquaFilePicker::getLabel( sal_Int16 nControlId )
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
     DBG_PRINT_EXIT(CLASS_NAME, __func__);
@@ -496,7 +484,6 @@ throw( uno::RuntimeException )
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SalAquaFilePicker::initialize( const uno::Sequence<uno::Any>& aArguments )
-throw( uno::Exception, uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__, "arguments size", aArguments.getLength());
 
@@ -582,7 +569,7 @@ throw( uno::Exception, uno::RuntimeException )
 // XCancellable
 //------------------------------------------------------------------------------------
 
-void SAL_CALL SalAquaFilePicker::cancel() throw( uno::RuntimeException )
+void SAL_CALL SalAquaFilePicker::cancel()
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -600,7 +587,7 @@ void SAL_CALL SalAquaFilePicker::cancel() throw( uno::RuntimeException )
 // XEventListener
 //------------------------------------------------
 
-void SAL_CALL SalAquaFilePicker::disposing( const lang::EventObject& aEvent ) throw( uno::RuntimeException )
+void SAL_CALL SalAquaFilePicker::disposing( const lang::EventObject& aEvent )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -620,7 +607,6 @@ void SAL_CALL SalAquaFilePicker::disposing( const lang::EventObject& aEvent ) th
 // -------------------------------------------------
 
 rtl::OUString SAL_CALL SalAquaFilePicker::getImplementationName()
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
 
@@ -632,7 +618,6 @@ throw( uno::RuntimeException )
 }
 
 sal_Bool SAL_CALL SalAquaFilePicker::supportsService( const rtl::OUString& sServiceName )
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__, "service name", sServiceName);
 
@@ -653,7 +638,6 @@ throw( uno::RuntimeException )
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL SalAquaFilePicker::getSupportedServiceNames()
-throw( uno::RuntimeException )
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
     DBG_PRINT_EXIT(CLASS_NAME, __func__);

@@ -272,13 +272,13 @@ Reference< XInterface > SAL_CALL SbaXGridControl::Create(const Reference<XMultiS
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString SbaXGridControl::getImplementationName_Static() throw( RuntimeException )
+::rtl::OUString SbaXGridControl::getImplementationName_Static()
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.comp.dbu.SbaXGridControl");
 }
 
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString> SbaXGridControl::getSupportedServiceNames_Static(void) throw( RuntimeException )
+Sequence< ::rtl::OUString> SbaXGridControl::getSupportedServiceNames_Static(void)
 {
 	Sequence< ::rtl::OUString> aSupported(3);
 	aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.form.control.InteractionGridControl");
@@ -326,14 +326,14 @@ FmXGridPeer* SbaXGridControl::imp_CreatePeer(Window* pParent)
 }
 
 //------------------------------------------------------------------------------
-Any	SAL_CALL SbaXGridControl::queryInterface(const Type& _rType) throw (RuntimeException)
+Any	SAL_CALL SbaXGridControl::queryInterface(const Type& _rType)
 {
 	Any aRet = FmXGridControl::queryInterface(_rType);
 	return aRet.hasValue() ? aRet : ::cppu::queryInterface(_rType,(::com::sun::star::frame::XDispatch*)this);
 }
 
 //------------------------------------------------------------------------------
-Sequence< Type > SAL_CALL SbaXGridControl::getTypes(  ) throw (RuntimeException)
+Sequence< Type > SAL_CALL SbaXGridControl::getTypes(  )
 {
 	Sequence< Type > aTypes = FmXGridControl::getTypes();
 
@@ -345,7 +345,7 @@ Sequence< Type > SAL_CALL SbaXGridControl::getTypes(  ) throw (RuntimeException)
 }
 
 //------------------------------------------------------------------------------
-Sequence< sal_Int8 > SAL_CALL SbaXGridControl::getImplementationId(  ) throw (RuntimeException)
+Sequence< sal_Int8 > SAL_CALL SbaXGridControl::getImplementationId(  )
 {
 	static ::cppu::OImplementationId * pId = 0;
 	if (! pId)
@@ -361,7 +361,7 @@ Sequence< sal_Int8 > SAL_CALL SbaXGridControl::getImplementationId(  ) throw (Ru
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridControl::createPeer(const Reference< ::com::sun::star::awt::XToolkit > & rToolkit, const Reference< ::com::sun::star::awt::XWindowPeer > & rParentPeer) throw( RuntimeException )
+void SAL_CALL SbaXGridControl::createPeer(const Reference< ::com::sun::star::awt::XToolkit > & rToolkit, const Reference< ::com::sun::star::awt::XWindowPeer > & rParentPeer)
 {
 	FmXGridControl::createPeer(rToolkit, rParentPeer);
 
@@ -385,14 +385,14 @@ void SAL_CALL SbaXGridControl::createPeer(const Reference< ::com::sun::star::awt
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridControl::dispatch(const ::com::sun::star::util::URL& aURL, const Sequence< PropertyValue >& aArgs) throw( RuntimeException )
+void SAL_CALL SbaXGridControl::dispatch(const ::com::sun::star::util::URL& aURL, const Sequence< PropertyValue >& aArgs)
 {
 	Reference< ::com::sun::star::frame::XDispatch >  xDisp(getPeer(), UNO_QUERY);
 	if (xDisp.is())
 		xDisp->dispatch(aURL, aArgs);
 }
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridControl::addStatusListener( const Reference< XStatusListener > & _rxListener, const URL& _rURL ) throw( RuntimeException )
+void SAL_CALL SbaXGridControl::addStatusListener( const Reference< XStatusListener > & _rxListener, const URL& _rURL )
 {
 	::osl::MutexGuard aGuard( GetMutex() );
 	if ( _rxListener.is() )
@@ -421,7 +421,7 @@ void SAL_CALL SbaXGridControl::addStatusListener( const Reference< XStatusListen
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridControl::removeStatusListener(const Reference< ::com::sun::star::frame::XStatusListener > & _rxListener, const ::com::sun::star::util::URL& _rURL) throw( RuntimeException )
+void SAL_CALL SbaXGridControl::removeStatusListener(const Reference< ::com::sun::star::frame::XStatusListener > & _rxListener, const ::com::sun::star::util::URL& _rURL)
 {
 	::osl::MutexGuard aGuard( GetMutex() );
 
@@ -441,7 +441,7 @@ void SAL_CALL SbaXGridControl::removeStatusListener(const Reference< ::com::sun:
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridControl::dispose(void) throw( RuntimeException )
+void SAL_CALL SbaXGridControl::dispose(void)
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -483,7 +483,7 @@ SbaXGridPeer::~SbaXGridPeer()
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridPeer::dispose(void) throw( RuntimeException )
+void SAL_CALL SbaXGridPeer::dispose(void)
 {
 	EventObject aEvt(*this);
 
@@ -526,7 +526,7 @@ void SbaXGridPeer::NotifyStatusChanged(const ::com::sun::star::util::URL& _rUrl,
 }
 
 //------------------------------------------------------------------------------
-Any	SAL_CALL SbaXGridPeer::queryInterface(const Type& _rType) throw (RuntimeException)
+Any	SAL_CALL SbaXGridPeer::queryInterface(const Type& _rType)
 {
 	Any aRet = ::cppu::queryInterface(_rType,(::com::sun::star::frame::XDispatch*)this);
 	if(aRet.hasValue())
@@ -535,7 +535,7 @@ Any	SAL_CALL SbaXGridPeer::queryInterface(const Type& _rType) throw (RuntimeExce
 }
 
 //---------------------------------------------------------------------------------------
-Reference< ::com::sun::star::frame::XDispatch >  SAL_CALL SbaXGridPeer::queryDispatch(const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags) throw( RuntimeException )
+Reference< ::com::sun::star::frame::XDispatch >  SAL_CALL SbaXGridPeer::queryDispatch(const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags)
 {
 	if	(	(aURL.Complete.equals(::rtl::OUString::createFromAscii(".uno:GridSlots/BrowserAttribs")))
 		||	(aURL.Complete.equals(::rtl::OUString::createFromAscii(".uno:GridSlots/RowHeight")))
@@ -589,7 +589,7 @@ SbaXGridPeer::DispatchType SbaXGridPeer::classifyDispatchURL( const URL& _rURL )
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridPeer::dispatch(const URL& aURL, const Sequence< PropertyValue >& aArgs) throw( RuntimeException )
+void SAL_CALL SbaXGridPeer::dispatch(const URL& aURL, const Sequence< PropertyValue >& aArgs)
 {
 	SbaGridControl* pGrid = (SbaGridControl*)GetWindow();
 	if (!pGrid)
@@ -688,7 +688,7 @@ void SAL_CALL SbaXGridPeer::dispatch(const URL& aURL, const Sequence< PropertyVa
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridPeer::addStatusListener(const Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL) throw( RuntimeException )
+void SAL_CALL SbaXGridPeer::addStatusListener(const Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL)
 {
 	::cppu::OInterfaceContainerHelper* pCont = m_aStatusListeners.getContainer(aURL);
 	if (!pCont)
@@ -699,7 +699,7 @@ void SAL_CALL SbaXGridPeer::addStatusListener(const Reference< ::com::sun::star:
 }
 
 //---------------------------------------------------------------------------------------
-void SAL_CALL SbaXGridPeer::removeStatusListener(const Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL) throw( RuntimeException )
+void SAL_CALL SbaXGridPeer::removeStatusListener(const Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL)
 {
 	::cppu::OInterfaceContainerHelper* pCont = m_aStatusListeners.getContainer(aURL);
 	if ( pCont )
@@ -724,7 +724,7 @@ const Sequence< sal_Int8 > & SbaXGridPeer::getUnoTunnelId()
 }
 
 //---------------------------------------------------------------------------------------
-Sequence< Type > SAL_CALL SbaXGridPeer::getTypes() throw (RuntimeException)
+Sequence< Type > SAL_CALL SbaXGridPeer::getTypes()
 {
 	Sequence< Type > aTypes = FmXGridPeer::getTypes();
 	sal_Int32 nOldLen = aTypes.getLength();
@@ -736,7 +736,7 @@ Sequence< Type > SAL_CALL SbaXGridPeer::getTypes() throw (RuntimeException)
 
 // return implementation specific data
 //------------------------------------------------------------------
-sal_Int64 SAL_CALL SbaXGridPeer::getSomething( const Sequence< sal_Int8 > & rId ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL SbaXGridPeer::getSomething( const Sequence< sal_Int8 > & rId )
 {
 	if( rId.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),  rId.getConstArray(), 16 ) )
 		return reinterpret_cast< sal_Int64 >( this );

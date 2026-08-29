@@ -121,7 +121,7 @@ namespace comphelper
 		}
 
 		// XEventListener overridables
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	protected:
 		// OComponentHelper overridables
@@ -169,7 +169,7 @@ namespace comphelper
 
 	//---------------------------------------------------------------------
 	template< class BROADCASTER, class LISTENER >
-	void SAL_CALL OWeakListenerAdapter< BROADCASTER, LISTENER >::disposing( const ::com::sun::star::lang::EventObject& _rSource ) throw (::com::sun::star::uno::RuntimeException)
+	void SAL_CALL OWeakListenerAdapter< BROADCASTER, LISTENER >::disposing( const ::com::sun::star::lang::EventObject& _rSource )
 	{
 		::com::sun::star::uno::Reference< LISTENER > xListener( getListener() );
 		if ( xListener.is() )

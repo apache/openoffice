@@ -94,7 +94,6 @@ XTYPEPROVIDER_IMPL_2( PropertySetInfo,
 
 // virtual
 uno::Sequence< beans::Property > SAL_CALL PropertySetInfo::getProperties()
-	throw( uno::RuntimeException )
 {
 	if ( !m_pProps )
 	{
@@ -160,7 +159,6 @@ uno::Sequence< beans::Property > SAL_CALL PropertySetInfo::getProperties()
 // virtual
 beans::Property SAL_CALL PropertySetInfo::getPropertyByName(
         const rtl::OUString& aName )
-	throw( beans::UnknownPropertyException, uno::RuntimeException )
 {
 	beans::Property aProp;
 	if ( queryProperty( aName, aProp ) )
@@ -173,7 +171,6 @@ beans::Property SAL_CALL PropertySetInfo::getPropertyByName(
 // virtual
 sal_Bool SAL_CALL PropertySetInfo::hasPropertyByName(
         const rtl::OUString& Name )
-	throw( uno::RuntimeException )
 {
 	beans::Property aProp;
 	return queryProperty( Name, aProp );
@@ -270,7 +267,6 @@ XTYPEPROVIDER_IMPL_2( CommandProcessorInfo,
 // virtual
 uno::Sequence< com::sun::star::ucb::CommandInfo > SAL_CALL
 CommandProcessorInfo::getCommands()
-	throw( uno::RuntimeException )
 {
 	if ( !m_pCommands )
 	{
@@ -309,8 +305,6 @@ CommandProcessorInfo::getCommands()
 com::sun::star::ucb::CommandInfo SAL_CALL
 CommandProcessorInfo::getCommandInfoByName(
         const rtl::OUString& Name )
-	throw( com::sun::star::ucb::UnsupportedCommandException,
-           uno::RuntimeException )
 {
 	com::sun::star::ucb::CommandInfo aInfo;
 	if ( queryCommand( Name, aInfo ) )
@@ -323,8 +317,6 @@ CommandProcessorInfo::getCommandInfoByName(
 // virtual
 com::sun::star::ucb::CommandInfo SAL_CALL
 CommandProcessorInfo::getCommandInfoByHandle( sal_Int32 Handle )
-	throw( com::sun::star::ucb::UnsupportedCommandException,
-           uno::RuntimeException )
 {
 	com::sun::star::ucb::CommandInfo aInfo;
 	if ( queryCommand( Handle, aInfo ) )
@@ -337,7 +329,6 @@ CommandProcessorInfo::getCommandInfoByHandle( sal_Int32 Handle )
 // virtual
 sal_Bool SAL_CALL CommandProcessorInfo::hasCommandByName(
        const rtl::OUString& Name )
-	throw( uno::RuntimeException )
 {
 	com::sun::star::ucb::CommandInfo aInfo;
 	return queryCommand( Name, aInfo );
@@ -346,7 +337,6 @@ sal_Bool SAL_CALL CommandProcessorInfo::hasCommandByName(
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL CommandProcessorInfo::hasCommandByHandle( sal_Int32 Handle )
-	throw( uno::RuntimeException )
 {
 	com::sun::star::ucb::CommandInfo aInfo;
 	return queryCommand( Handle, aInfo );

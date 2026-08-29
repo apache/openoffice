@@ -75,7 +75,7 @@ Reference< XOutputStream > createStreamToFile( const OUString sFile )
 /*-
  * Helper : get service manager and context
  */
-Reference< XMultiComponentFactory > serviceManager( Reference< XComponentContext >& xContext , OUString sUnoUrl , OUString sRdbUrl ) throw( RuntimeException , Exception )
+Reference< XMultiComponentFactory > serviceManager( Reference< XComponentContext >& xContext , OUString sUnoUrl , OUString sRdbUrl )
 {
 	Reference< XMultiComponentFactory > xLocalServiceManager = NULL ;
 	Reference< XComponentContext > xLocalComponentContext = NULL ;

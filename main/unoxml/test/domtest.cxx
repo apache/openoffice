@@ -104,17 +104,17 @@ struct ErrorHandler
     ErrorHandler() : mnErrCount(0), mnFatalCount(0), mnWarnCount(0)
     {}
 
-    virtual void SAL_CALL error( const uno::Any& ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL error( const uno::Any& )
     {
         ++mnErrCount;
     }
 
-    virtual void SAL_CALL fatalError( const uno::Any& ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL fatalError( const uno::Any& )
     {
         ++mnFatalCount;
     }
 
-    virtual void SAL_CALL warning( const uno::Any& ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL warning( const uno::Any& )
     {
         ++mnWarnCount;
     }
@@ -124,48 +124,48 @@ struct DocumentHandler
     : public ::cppu::WeakImplHelper1< xml::sax::XFastDocumentHandler >
 {
     // XFastContextHandler
-    virtual void SAL_CALL startFastElement( ::sal_Int32 Element, const uno::Reference< xml::sax::XFastAttributeList >& Attribs ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL startFastElement( ::sal_Int32 Element, const uno::Reference< xml::sax::XFastAttributeList >& Attribs )
     {
         OSL_TRACE("Seen element: %c with namespace 0x%x",
                   Element & 0xFFFF, Element & 0xFFFF0000);
     }
 
-    virtual void SAL_CALL startUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const uno::Reference< xml::sax::XFastAttributeList >& Attribs ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL startUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const uno::Reference< xml::sax::XFastAttributeList >& Attribs )
     {
     }
 
-    virtual void SAL_CALL endFastElement( ::sal_Int32 Element ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL endFastElement( ::sal_Int32 Element )
     {
     }
 
-    virtual void SAL_CALL endUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL endUnknownElement( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name )
     {
     }
 
-    virtual uno::Reference< xml::sax::XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 Element, const uno::Reference< xml::sax::XFastAttributeList >& Attribs ) throw (xml::sax::SAXException, uno::RuntimeException)
-    {
-        return this;
-    }
-
-    virtual uno::Reference< xml::sax::XFastContextHandler > SAL_CALL createUnknownChildContext( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const uno::Reference< xml::sax::XFastAttributeList >& Attribs ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual uno::Reference< xml::sax::XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 Element, const uno::Reference< xml::sax::XFastAttributeList >& Attribs )
     {
         return this;
     }
 
-    virtual void SAL_CALL characters( const ::rtl::OUString& aChars ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual uno::Reference< xml::sax::XFastContextHandler > SAL_CALL createUnknownChildContext( const ::rtl::OUString& Namespace, const ::rtl::OUString& Name, const uno::Reference< xml::sax::XFastAttributeList >& Attribs )
+    {
+        return this;
+    }
+
+    virtual void SAL_CALL characters( const ::rtl::OUString& aChars )
     {
     }
 
     // XFastDocumentHandler
-    virtual void SAL_CALL startDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL startDocument(  )
     {
     }
 
-    virtual void SAL_CALL endDocument(  ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL endDocument(  )
     {
     }
 
-    virtual void SAL_CALL setDocumentLocator( const uno::Reference< xml::sax::XLocator >& xLocator ) throw (xml::sax::SAXException, uno::RuntimeException)
+    virtual void SAL_CALL setDocumentLocator( const uno::Reference< xml::sax::XLocator >& xLocator )
     {
     }
 };
@@ -173,25 +173,25 @@ struct DocumentHandler
 struct TokenHandler
     : public ::cppu::WeakImplHelper1< xml::sax::XFastTokenHandler >
 {
-    virtual ::sal_Int32 SAL_CALL getToken( const ::rtl::OUString& Identifier ) throw (uno::RuntimeException)
+    virtual ::sal_Int32 SAL_CALL getToken( const ::rtl::OUString& Identifier )
     {
         EXPECT_TRUE( false ) << "TokenHandler::getToken() unexpected call";
         return -1;
     }
 
-    virtual ::rtl::OUString SAL_CALL getIdentifier( ::sal_Int32 Token ) throw (uno::RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getIdentifier( ::sal_Int32 Token )
     {
         EXPECT_TRUE( false ) << "TokenHandler::getIdentifier() unexpected call";
         return rtl::OUString();
     }
 
-    virtual ::sal_Int32 SAL_CALL getTokenFromUTF8( const uno::Sequence< ::sal_Int8 >& Identifier ) throw (uno::RuntimeException)
+    virtual ::sal_Int32 SAL_CALL getTokenFromUTF8( const uno::Sequence< ::sal_Int8 >& Identifier )
     {
         OSL_TRACE("getTokenFromUTF8() %s", (const char*)Identifier.getConstArray());
         return Identifier.getLength() ? Identifier[0] : 0;
     }
 
-    virtual uno::Sequence< ::sal_Int8 > SAL_CALL getUTF8Identifier( ::sal_Int32 Token ) throw (uno::RuntimeException)
+    virtual uno::Sequence< ::sal_Int8 > SAL_CALL getUTF8Identifier( ::sal_Int32 Token )
     {
         EXPECT_TRUE( false) << "TokenHandler::getUTF8Identifier() unexpected call";
         return uno::Sequence<sal_Int8>();

@@ -39,6 +39,10 @@
 
 #include <typeinfo>
 
+// std::back_inserter lives in <iterator>.  VC9's headers pulled it in
+// transitively, a modern one does not.
+#include <iterator>
+
 using namespace ::com::sun::star;
 using ::rtl::OUString;
 using ::rtl::OUStringToOString;

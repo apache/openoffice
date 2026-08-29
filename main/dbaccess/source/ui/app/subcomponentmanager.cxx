@@ -363,7 +363,7 @@ namespace dbaui
     }
 
 	//------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SubComponentManager::propertyChange( const PropertyChangeEvent& i_rEvent ) throw (RuntimeException)
+    void SAL_CALL SubComponentManager::propertyChange( const PropertyChangeEvent& i_rEvent )
     {
         if ( i_rEvent.PropertyName != PROPERTY_NAME )
             // by definition, it's allowed to broadcast more than what we've registered for
@@ -394,7 +394,7 @@ namespace dbaui
     }
 
 	//------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SubComponentManager::disposing( const EventObject& _rSource ) throw (RuntimeException)
+    void SAL_CALL SubComponentManager::disposing( const EventObject& _rSource )
     {
         ::osl::ClearableMutexGuard aGuard( m_pData->getMutex() );
 

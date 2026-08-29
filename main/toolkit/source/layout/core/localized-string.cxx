@@ -46,7 +46,6 @@ void LocalizedString::ImplGetPropertyIds( std::list< sal_uInt16 > &ids )
 
 // XInterface
 uno::Any LocalizedString::queryInterface( uno::Type const& rType )
-    throw(uno::RuntimeException)
 {
     uno::Any aRet = ::cppu::queryInterface( rType,
                                             SAL_STATIC_CAST( awt::XFixedText*, this ) );
@@ -54,7 +53,6 @@ uno::Any LocalizedString::queryInterface( uno::Type const& rType )
 }
 
 void LocalizedString::setText( OUString const& s )
-    throw(uno::RuntimeException)
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -63,7 +61,6 @@ void LocalizedString::setText( OUString const& s )
 }
 
 OUString LocalizedString::getText()
-    throw(uno::RuntimeException)
 {
     ::vos::OGuard aGuard( GetMutex() );
 

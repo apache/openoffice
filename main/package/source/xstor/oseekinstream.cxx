@@ -62,7 +62,6 @@ OInputSeekStream::~OInputSeekStream()
 }
 
 uno::Sequence< uno::Type > SAL_CALL OInputSeekStream::getTypes()
-		throw ( uno::RuntimeException )
 {
 	static ::cppu::OTypeCollection* pTypeCollection = NULL ;
 
@@ -84,7 +83,6 @@ uno::Sequence< uno::Type > SAL_CALL OInputSeekStream::getTypes()
 }
 
 uno::Any SAL_CALL OInputSeekStream::queryInterface( const uno::Type& rType )
-		throw( uno::RuntimeException )
 {
 	// Attention:
 	//	Don't use mutex or guard in this method!!! Is a method of XInterface.
@@ -114,9 +112,6 @@ void SAL_CALL OInputSeekStream::release()
 
 
 void SAL_CALL OInputSeekStream::seek( sal_Int64 location )
-		throw ( lang::IllegalArgumentException,
-				io::IOException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_rMutexRef->GetMutex() );
 	if ( m_bDisposed )
@@ -135,8 +130,6 @@ void SAL_CALL OInputSeekStream::seek( sal_Int64 location )
 }
 
 sal_Int64 SAL_CALL OInputSeekStream::getPosition()
-		throw ( io::IOException,
-				uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_rMutexRef->GetMutex() );
 	if ( m_bDisposed )
@@ -155,8 +148,6 @@ sal_Int64 SAL_CALL OInputSeekStream::getPosition()
 }
 
 sal_Int64 SAL_CALL OInputSeekStream::getLength()
-		throw ( io::IOException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_rMutexRef->GetMutex() );
 	if ( m_bDisposed )

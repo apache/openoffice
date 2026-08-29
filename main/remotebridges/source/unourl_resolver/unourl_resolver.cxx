@@ -98,13 +98,12 @@ public:
 	virtual ~ResolverImpl();
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw(::com::sun::star::uno::RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 	// XUnoUrlResolver
-    virtual Reference< XInterface > SAL_CALL resolve( const OUString & rUnoUrl )
-		throw (NoConnectException, ConnectionSetupException, RuntimeException);
+    virtual Reference< XInterface > SAL_CALL resolve( const OUString & rUnoUrl );
 };
 
 //##################################################################################################
@@ -125,13 +124,11 @@ ResolverImpl::~ResolverImpl()
 // XServiceInfo
 //__________________________________________________________________________________________________
 OUString ResolverImpl::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return resolver_getImplementationName();
 }
 //__________________________________________________________________________________________________
 sal_Bool ResolverImpl::supportsService( const OUString & rServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	const Sequence< OUString > & rSNL = getSupportedServiceNames();
 	const OUString * pArray = rSNL.getConstArray();
@@ -144,7 +141,6 @@ sal_Bool ResolverImpl::supportsService( const OUString & rServiceName )
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > ResolverImpl::getSupportedServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return resolver_getSupportedServiceNames();
 }
@@ -152,7 +148,6 @@ Sequence< OUString > ResolverImpl::getSupportedServiceNames()
 // XUnoUrlResolver
 //__________________________________________________________________________________________________
 Reference< XInterface > ResolverImpl::resolve( const OUString & rUnoUrl )
-	throw (NoConnectException, ConnectionSetupException, RuntimeException)
 {
     OUString aProtocolDescr;
     OUString aConnectDescr;

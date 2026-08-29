@@ -96,11 +96,11 @@ namespace ucb { namespace ucp { namespace ext
 	    virtual ~Content();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	    // XContent
-        virtual rtl::OUString SAL_CALL getContentType() throw( com::sun::star::uno::RuntimeException );
+        virtual rtl::OUString SAL_CALL getContentType();
 
 	    // XCommandProcessor
         virtual com::sun::star::uno::Any SAL_CALL
@@ -108,18 +108,12 @@ namespace ucb { namespace ucp { namespace ext
                     const com::sun::star::ucb::Command& aCommand,
 			        sal_Int32 CommandId,
 			        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& Environment
-                )
-                throw   (   ::com::sun::star::uno::Exception
-                        ,   ::com::sun::star::ucb::CommandAbortedException
-                        ,   ::com::sun::star::uno::RuntimeException
-                        );
+                );
 
         virtual void SAL_CALL
                 abort(
                     sal_Int32 CommandId
-                )
-                throw   (   ::com::sun::star::uno::RuntimeException
-                        );
+                );
 
     private:
 	    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > getProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XCommandEnvironment >& i_rEnv );

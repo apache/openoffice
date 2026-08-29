@@ -45,8 +45,6 @@ Linear3DTransformation::~Linear3DTransformation()
 // ____ XTransformation ____
 Sequence< double > SAL_CALL Linear3DTransformation::transform(
                         const Sequence< double >& rSourceValues )
-    throw (RuntimeException,
-           lang::IllegalArgumentException)
 {
     double fX = rSourceValues[0];
     double fY = rSourceValues[1];
@@ -88,13 +86,11 @@ Sequence< double > SAL_CALL Linear3DTransformation::transform(
 }
 
 sal_Int32 SAL_CALL Linear3DTransformation::getSourceDimension()
-    throw (RuntimeException)
 {
     return 3;
 }
 
 sal_Int32 SAL_CALL Linear3DTransformation::getTargetDimension()
-    throw (RuntimeException)
 {
     return 3;
 }

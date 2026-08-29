@@ -77,7 +77,7 @@ Reference<XInterface> SAL_CALL SidebarFactory_createInstance (
 
 
 
-::rtl::OUString SidebarFactory_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString SidebarFactory_getImplementationName (void)
 {
     return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("org.openoffice.comp.Draw.framework.SidebarFactory"));
@@ -87,7 +87,6 @@ Reference<XInterface> SAL_CALL SidebarFactory_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL SidebarFactory_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.framework.SidebarFactory"));
@@ -125,7 +124,6 @@ void SAL_CALL SidebarFactory::disposing (void)
 // XInitialization
 
 void SAL_CALL SidebarFactory::initialize (const Sequence<Any>& aArguments)
-    throw (Exception, RuntimeException)
 {
 }
 
@@ -137,10 +135,6 @@ void SAL_CALL SidebarFactory::initialize (const Sequence<Any>& aArguments)
 Reference<ui::XUIElement> SAL_CALL SidebarFactory::createUIElement (
     const ::rtl::OUString& rsUIElementResourceURL,
     const ::cssu::Sequence<css::beans::PropertyValue>& rArguments)
-    throw(
-        css::container::NoSuchElementException,
-        css::lang::IllegalArgumentException,
-        cssu::RuntimeException)
 {
     // Process arguments.
     const ::comphelper::NamedValueCollection aArguments (rArguments);
@@ -223,7 +217,6 @@ Reference<ui::XUIElement> SAL_CALL SidebarFactory::createUIElement (
 
 
 void SAL_CALL SidebarFactory::disposing (const ::css::lang::EventObject& rEvent)
-    throw(cssu::RuntimeException)
 {
     /*
     if (mpImplementation

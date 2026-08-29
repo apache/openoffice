@@ -96,7 +96,7 @@ sdbcx::ObjectType OViews::createObject(const ::rtl::OUString& _rName)
 	return xRet;
 }
 // -------------------------------------------------------------------------
-void OViews::impl_refresh(  ) throw(RuntimeException)
+void OViews::impl_refresh(  )
 {
 	static_cast<OAdabasCatalog&>(m_rParent).refreshTables();
 }

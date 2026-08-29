@@ -101,13 +101,11 @@ public:
     //
 
     virtual com::sun::star::uno::Type SAL_CALL getElementType()
-        throw( com::sun::star::uno::RuntimeException )
     {
         return getCppuType( static_cast<T*>( NULL ) );
     }
 
     virtual sal_Bool SAL_CALL hasElements()
-        throw( com::sun::star::uno::RuntimeException )
     {
         return hasItems();
     }
@@ -119,9 +117,6 @@ public:
 
     virtual com::sun::star::uno::Any SAL_CALL getByName(
         const rtl::OUString& rName )
-        throw( com::sun::star::container::NoSuchElementException,
-               com::sun::star::lang::WrappedTargetException,
-               com::sun::star::uno::RuntimeException )
     {
         typename map_t::const_iterator aIter = findItem( rName );
         if( aIter == maItems.end() )
@@ -131,7 +126,6 @@ public:
     }
 
     virtual com::sun::star::uno::Sequence<rtl::OUString> SAL_CALL getElementNames()
-        throw( com::sun::star::uno::RuntimeException )
     {
         com::sun::star::uno::Sequence<rtl::OUString> aSequence( maItems.size() );
         typename map_t::const_iterator aIter = maItems.begin();
@@ -149,7 +143,6 @@ public:
 
     virtual sal_Bool SAL_CALL hasByName(
         const rtl::OUString& rName )
-        throw( com::sun::star::uno::RuntimeException )
     {
         return hasItem( rName );
     }
@@ -162,10 +155,6 @@ public:
     virtual void SAL_CALL replaceByName(
         const rtl::OUString& rName,
         const com::sun::star::uno::Any& aElement )
-        throw( com::sun::star::lang::IllegalArgumentException,
-               com::sun::star::container::NoSuchElementException,
-               com::sun::star::lang::WrappedTargetException,
-               com::sun::star::uno::RuntimeException)
     {
         T aItem;
         if( aElement >>= aItem )
@@ -185,10 +174,6 @@ public:
     virtual void SAL_CALL insertByName(
         const rtl::OUString& rName,
         const com::sun::star::uno::Any& aElement )
-        throw( com::sun::star::lang::IllegalArgumentException,
-               com::sun::star::container::ElementExistException,
-               com::sun::star::lang::WrappedTargetException,
-               com::sun::star::uno::RuntimeException )
     {
         T aItem;
         if( aElement >>= aItem )
@@ -202,9 +187,6 @@ public:
 
     virtual void SAL_CALL removeByName(
         const rtl::OUString& rName )
-        throw( com::sun::star::container::NoSuchElementException,
-               com::sun::star::lang::WrappedTargetException,
-               com::sun::star::uno::RuntimeException)
     {
         if( hasByName( rName ) )
             remove( rName );

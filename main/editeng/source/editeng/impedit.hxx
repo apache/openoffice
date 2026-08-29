@@ -251,12 +251,12 @@ private:
 protected:
 
     // DragAndDropClient
-    void dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& dge ) throw (::com::sun::star::uno::RuntimeException);
-    void dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
-    void drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
-    void dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& dtdee ) throw (::com::sun::star::uno::RuntimeException);
-    void dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& dte ) throw (::com::sun::star::uno::RuntimeException);
-    void dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
+    void dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& dge );
+    void dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& dsde );
+    void drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& dtde );
+    void dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& dtdee );
+    void dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& dte );
+    void dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde );
 
 	void ShowDDCursor( const Rectangle& rRect );
 	void HideDDCursor();

@@ -97,7 +97,6 @@ Table::createChildProps( Box_Base::ChildData *pData )
 
 void SAL_CALL
 Table::addChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
-    throw( uno::RuntimeException, awt::MaxChildrenException )
 {
     if ( xChild.is() )
     {
@@ -108,7 +107,7 @@ Table::addChild( const uno::Reference< awt::XLayoutConstrains >& xChild )
 }
 
 awt::Size SAL_CALL
-Table::getMinimumSize() throw( uno::RuntimeException )
+Table::getMinimumSize()
 {
     int nRowsLen = 0;
 
@@ -251,7 +250,6 @@ Table::getMinimumSize() throw( uno::RuntimeException )
 
 void SAL_CALL
 Table::allocateArea( const awt::Rectangle &rArea )
-    throw( uno::RuntimeException )
 {
     maAllocation = rArea;
     if ( maCols.size() == 0 || maRows.size() == 0 )

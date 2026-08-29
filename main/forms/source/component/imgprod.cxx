@@ -209,7 +209,7 @@ ImageProducer::~ImageProducer()
 // ------------------------------------------------------------
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any ImageProducer::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any ImageProducer::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::lang::XInitialization*, this ),
@@ -219,7 +219,7 @@ ImageProducer::~ImageProducer()
 
 // ------------------------------------------------------------
 
-void ImageProducer::addConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& rxConsumer ) throw(::com::sun::star::uno::RuntimeException)
+void ImageProducer::addConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& rxConsumer )
 {
 	DBG_ASSERT( rxConsumer.is(), "::AddConsumer(...): No consumer referenced!" );
 	if( rxConsumer.is() )
@@ -228,7 +228,7 @@ void ImageProducer::addConsumer( const ::com::sun::star::uno::Reference< ::com::
 
 // ------------------------------------------------------------
 
-void ImageProducer::removeConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& rxConsumer ) throw(::com::sun::star::uno::RuntimeException)
+void ImageProducer::removeConsumer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XImageConsumer >& rxConsumer )
 {
 	for( sal_uInt32 n = maConsList.Count(); n; )
 	{
@@ -302,7 +302,7 @@ void ImageProducer::NewDataAvailable()
 
 // ------------------------------------------------------------
 
-void ImageProducer::startProduction() throw(::com::sun::star::uno::RuntimeException)
+void ImageProducer::startProduction()
 {
 	if( maConsList.Count() || maDoneHdl.IsSet() )
 	{
@@ -596,7 +596,7 @@ void ImageProducer::ImplUpdateConsumer( const Graphic& rGraphic )
 	}
 }
 
-void ImageProducer::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void ImageProducer::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
 {
 	if ( aArguments.getLength() == 1 )
 	{

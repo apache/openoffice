@@ -59,17 +59,17 @@ namespace nullcanvas
 #define IMPLEMENTATION_NAME "NullCanvas.CanvasBitmap"
 #define SERVICE_NAME "com.sun.star.rendering.CanvasBitmap"
 
-    ::rtl::OUString SAL_CALL CanvasBitmap::getImplementationName(  ) throw (uno::RuntimeException)
+    ::rtl::OUString SAL_CALL CanvasBitmap::getImplementationName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLEMENTATION_NAME ) );
     }
 
-    sal_Bool SAL_CALL CanvasBitmap::supportsService( const ::rtl::OUString& ServiceName ) throw (uno::RuntimeException)
+    sal_Bool SAL_CALL CanvasBitmap::supportsService( const ::rtl::OUString& ServiceName )
     {
         return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
     }
 
-    uno::Sequence< ::rtl::OUString > SAL_CALL CanvasBitmap::getSupportedServiceNames(  ) throw (uno::RuntimeException)
+    uno::Sequence< ::rtl::OUString > SAL_CALL CanvasBitmap::getSupportedServiceNames(  )
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );

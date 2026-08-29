@@ -64,18 +64,14 @@ public:
     void AddChild( const css::uno::Reference< css::awt::XLayoutConstrains >& Child);
 
     // css::awt::XLayoutContainer
-    virtual void SAL_CALL addChild( const css::uno::Reference< css::awt::XLayoutConstrains >& Child)
-        throw (css::uno::RuntimeException, css::awt::MaxChildrenException);
-    virtual void SAL_CALL removeChild( const css::uno::Reference< css::awt::XLayoutConstrains >& Child )
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL addChild( const css::uno::Reference< css::awt::XLayoutConstrains >& Child);
+    virtual void SAL_CALL removeChild( const css::uno::Reference< css::awt::XLayoutConstrains >& Child );
 
     virtual css::uno::Sequence< css::uno::Reference
-                                < css::awt::XLayoutConstrains > > SAL_CALL getChildren()
-        throw (css::uno::RuntimeException);
+                                < css::awt::XLayoutConstrains > > SAL_CALL getChildren();
 
     virtual css::uno::Reference< css::beans::XPropertySet > SAL_CALL getChildProperties(
-        const css::uno::Reference< css::awt::XLayoutConstrains >& Child )
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::awt::XLayoutConstrains >& Child );
 };
 
 } //  namespace layoutimpl

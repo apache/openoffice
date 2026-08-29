@@ -116,20 +116,19 @@ public:
 	~DllComponentLoader();
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	// XImplementationLoader
-    virtual Reference<XInterface> SAL_CALL activate( const OUString& implementationName, const OUString& implementationLoaderUrl, const OUString& locationUrl, const Reference<XRegistryKey>& xKey ) throw(CannotActivateFactoryException, RuntimeException);
-    virtual sal_Bool SAL_CALL writeRegistryInfo( const Reference<XRegistryKey>& xKey, const OUString& implementationLoaderUrl, const OUString& locationUrl ) throw(CannotRegisterImplementationException, RuntimeException);
+    virtual Reference<XInterface> SAL_CALL activate( const OUString& implementationName, const OUString& implementationLoaderUrl, const OUString& locationUrl, const Reference<XRegistryKey>& xKey );
+    virtual sal_Bool SAL_CALL writeRegistryInfo( const Reference<XRegistryKey>& xKey, const OUString& implementationLoaderUrl, const OUString& locationUrl );
 
 private:
-    OUString expand_url( OUString const & url )
-        SAL_THROW( (RuntimeException) );
+    OUString expand_url( OUString const & url );
 
 	Reference<XMultiServiceFactory> m_xSMgr;
 };
@@ -149,14 +148,12 @@ DllComponentLoader::~DllComponentLoader()
 
 //*************************************************************************
 OUString SAL_CALL DllComponentLoader::getImplementationName(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return stoc_bootstrap::loader_getImplementationName();
 }
 
 //*************************************************************************
 sal_Bool SAL_CALL DllComponentLoader::supportsService( const OUString& ServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Sequence< OUString > aSNL = getSupportedServiceNames();
 	const OUString * pArray = aSNL.getArray();
@@ -168,14 +165,12 @@ sal_Bool SAL_CALL DllComponentLoader::supportsService( const OUString& ServiceNa
 
 //*************************************************************************
 Sequence<OUString> SAL_CALL DllComponentLoader::getSupportedServiceNames(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return stoc_bootstrap::loader_getSupportedServiceNames();
 }
 
 //*************************************************************************
 void DllComponentLoader::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	OSL_ENSURE( 0, "dllcomponentloader::initialize should not be called !" );
 //  	if( aArgs.getLength() != 1 )
@@ -200,7 +195,6 @@ void DllComponentLoader::initialize( const ::com::sun::star::uno::Sequence< ::co
 
 //==================================================================================================
 OUString DllComponentLoader::expand_url( OUString const & url )
-    SAL_THROW( (RuntimeException) )
 {
     try
     {
@@ -216,8 +210,6 @@ OUString DllComponentLoader::expand_url( OUString const & url )
 Reference<XInterface> SAL_CALL DllComponentLoader::activate(
 	const OUString & rImplName, const OUString &, const OUString & rLibName,
 	const Reference< XRegistryKey > & xKey )
-
-	throw(CannotActivateFactoryException, RuntimeException)
 {
 	return loadSharedLibComponentFactory(
         expand_url( rLibName ), OUString(), rImplName, m_xSMgr, xKey );
@@ -227,8 +219,6 @@ Reference<XInterface> SAL_CALL DllComponentLoader::activate(
 //*************************************************************************
 sal_Bool SAL_CALL DllComponentLoader::writeRegistryInfo(
 	const Reference< XRegistryKey > & xKey, const OUString &, const OUString & rLibName )
-
-	throw(CannotRegisterImplementationException, RuntimeException)
 {
 	writeSharedLibComponentInfo(
         expand_url( rLibName ), OUString(), m_xSMgr, xKey );
@@ -239,7 +229,7 @@ sal_Bool SAL_CALL DllComponentLoader::writeRegistryInfo(
 namespace stoc_bootstrap
 {
 //*************************************************************************
-Reference<XInterface> SAL_CALL DllComponentLoader_CreateInstance( const Reference<XComponentContext> & xCtx ) throw(Exception)
+Reference<XInterface> SAL_CALL DllComponentLoader_CreateInstance( const Reference<XComponentContext> & xCtx )
 {
 	Reference<XInterface> xRet;
 

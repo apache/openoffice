@@ -127,31 +127,31 @@ public:
     virtual ~ConvDic();
 
     // XConversionDictionary
-    virtual ::rtl::OUString SAL_CALL getName(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getConversionType(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setActive( sal_Bool bActivate ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isActive(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL clear(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getConversions( const ::rtl::OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength, ::com::sun::star::linguistic2::ConversionDirection eDirection, sal_Int32 nTextConversionOptions ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getConversionEntries( ::com::sun::star::linguistic2::ConversionDirection eDirection ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addEntry( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeEntry( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getMaxCharCount( ::com::sun::star::linguistic2::ConversionDirection eDirection ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName(  );
+    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  );
+    virtual sal_Int16 SAL_CALL getConversionType(  );
+    virtual void SAL_CALL setActive( sal_Bool bActivate );
+    virtual sal_Bool SAL_CALL isActive(  );
+    virtual void SAL_CALL clear(  );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getConversions( const ::rtl::OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength, ::com::sun::star::linguistic2::ConversionDirection eDirection, sal_Int32 nTextConversionOptions );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getConversionEntries( ::com::sun::star::linguistic2::ConversionDirection eDirection );
+    virtual void SAL_CALL addEntry( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText );
+    virtual void SAL_CALL removeEntry( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText );
+    virtual sal_Int16 SAL_CALL getMaxCharCount( ::com::sun::star::linguistic2::ConversionDirection eDirection );
 
     // XConversionPropertyType
-    virtual void SAL_CALL setPropertyType( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText, ::sal_Int16 nPropertyType ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int16 SAL_CALL getPropertyType( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setPropertyType( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText, ::sal_Int16 nPropertyType );
+    virtual ::sal_Int16 SAL_CALL getPropertyType( const ::rtl::OUString& aLeftText, const ::rtl::OUString& aRightText );
 
     // XFlushable
-    virtual void SAL_CALL flush(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL flush(  );
+    virtual void SAL_CALL addFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l );
+    virtual void SAL_CALL removeFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 
     static inline ::rtl::OUString

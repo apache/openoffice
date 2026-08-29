@@ -83,25 +83,21 @@ public:
     static ::rtl::OUString getImplementationName_static (void);
     static css::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static (void);
     static css::uno::Reference<css::uno::XInterface> Create(
-        const css::uno::Reference<css::uno::XComponentContext>& rxContext)
-        SAL_THROW((css::uno::Exception));
+        const css::uno::Reference<css::uno::XComponentContext>& rxContext);
 
-    virtual void SAL_CALL disposing (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing (void);
 
     // XResourceFactory
 
     virtual css::uno::Reference<css::drawing::framework::XResource>
         SAL_CALL createResource (
             const ::com::sun::star::uno::Reference<
-                com::sun::star::drawing::framework::XResourceId>& rxPaneId)
-        throw (::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException);
+                com::sun::star::drawing::framework::XResourceId>& rxPaneId);
 
     virtual void SAL_CALL
         releaseResource (
             const ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XResource>&
-                rxPane)
-        throw (::com::sun::star::uno::RuntimeException);
+                rxPane);
 
 private:
     css::uno::WeakReference<css::uno::XComponentContext> mxComponentContextWeak;
@@ -127,7 +123,7 @@ private:
         const css::uno::Reference<css::drawing::framework::XPane>& rxParentPane,
         const bool bIsSpritePane);
 
-    void ThrowIfDisposed (void) const throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 } }

@@ -62,26 +62,20 @@ bool x86_64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef 
             return true;
         case typelib_TypeClass_STRUCT:
         case typelib_TypeClass_EXCEPTION:
-            {
-                typelib_TypeDescription * pTypeDescr = 0;
-                TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
-
-                /* A struct is returned in a register only when its size is
-                 * 1/2/4/8 bytes; otherwise (here: > 8) it is returned via a
-                 * hidden pointer (in memory).  This logic was inverted, which
-                 * corrupted struct/exception return marshalling on x64 — e.g.
-                 * getAllExtensions returning nested Sequences (ref 0c2e3065a0). */
-                if ( pTypeDescr->nSize > 8 )
-                {
-                    TYPELIB_DANGER_RELEASE( pTypeDescr );
-                    return true;
-                }
-                else
-                {
-                    TYPELIB_DANGER_RELEASE( pTypeDescr );
-                    return false;
-                }
-            }
+            /* MSVC returns a class/struct in RAX only when it is a POD of
+             * 1/2/4/8 bytes.  Every UNO struct cppumaker emits has
+             * user-declared constructors, which makes it non-trivial, so MSVC
+             * always returns one through a hidden pointer -- regardless of
+             * size.  Verified by disassembling cppobj.uno.dll: echoOneByte
+             * (1 byte), echoTwoFloats (8) and echoBigStruct (64) are all
+             * (rcx=this, rdx=hidden return, r8=&arg), writing the result
+             * through [rdx] and returning it in rax.
+             *
+             * Sizing this on nSize > 8 left every <=8-byte struct return one
+             * argument short: the bridge passed (this, &arg) where the callee
+             * expected (this, retptr, &arg), so r8 held garbage and the first
+             * such call -- echoTwoFloats -- took an access violation. */
+            return true;
 
         default:
 #if OSL_DEBUG_LEVEL > 1

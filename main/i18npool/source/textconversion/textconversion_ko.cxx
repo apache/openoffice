@@ -202,7 +202,6 @@ static Sequence< OUString >& operator += (Sequence< OUString > &rSeq1, Sequence<
 TextConversionResult SAL_CALL
 TextConversion_ko::getConversions( const OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength,
     const Locale& aLocale, sal_Int16 nConversionType, sal_Int32 nConversionOptions)
-    throw(  RuntimeException, IllegalArgumentException, NoSupportException )
 {
     TextConversionResult result;
     Sequence <OUString> candidates;
@@ -292,7 +291,6 @@ TextConversion_ko::getConversions( const OUString& aText, sal_Int32 nStartPos, s
 OUString SAL_CALL
 TextConversion_ko::getConversion( const OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength,
     const Locale& aLocale, sal_Int16 nConversionType, sal_Int32 nConversionOptions)
-    throw(  RuntimeException, IllegalArgumentException, NoSupportException )
 {
     sal_Int32 length = aText.getLength() - nStartPos;
 
@@ -326,7 +324,6 @@ TextConversion_ko::getConversion( const OUString& aText, sal_Int32 nStartPos, sa
 OUString SAL_CALL
 TextConversion_ko::getConversionWithOffset( const OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength,
     const Locale& rLocale, sal_Int16 nConversionType, sal_Int32 nConversionOptions, Sequence<sal_Int32>& offset)
-    throw(  RuntimeException, IllegalArgumentException, NoSupportException )
 {
     offset.realloc(0);
     return getConversion(aText, nStartPos, nLength, rLocale, nConversionType, nConversionOptions);
@@ -334,7 +331,6 @@ TextConversion_ko::getConversionWithOffset( const OUString& aText, sal_Int32 nSt
 
 sal_Bool SAL_CALL
 TextConversion_ko::interactiveConversion( const Locale& /*rLocale*/, sal_Int16 /*nTextConversionType*/, sal_Int32 /*nTextConversionOptions*/ )
-    throw(  RuntimeException, IllegalArgumentException, NoSupportException )
 {
     return sal_True;
 }

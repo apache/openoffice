@@ -158,12 +158,10 @@ OReadEventsDocumentHandler::~OReadEventsDocumentHandler()
 
 // XDocumentHandler
 void SAL_CALL OReadEventsDocumentHandler::startDocument(void)
-throw (	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadEventsDocumentHandler::endDocument(void)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -178,7 +176,6 @@ throw(	SAXException, RuntimeException )
 
 void SAL_CALL OReadEventsDocumentHandler::startElement(
 	const ::rtl::OUString& aName, const Reference< XAttributeList > &xAttribs )
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -334,7 +331,6 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadEventsDocumentHandler::endElement(const ::rtl::OUString& aName)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -376,24 +372,20 @@ throw(	SAXException, RuntimeException )
 }
 
 void SAL_CALL OReadEventsDocumentHandler::characters(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadEventsDocumentHandler::ignorableWhitespace(const ::rtl::OUString&)
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadEventsDocumentHandler::processingInstruction(
 	const ::rtl::OUString& /*aTarget*/, const ::rtl::OUString& /*aData*/ )
-throw(	SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL OReadEventsDocumentHandler::setDocumentLocator(
 	const Reference< XLocator > &xLocator)
-throw(	SAXException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -438,8 +430,7 @@ OWriteEventsDocumentHandler::~OWriteEventsDocumentHandler()
 {
 }
 
-void OWriteEventsDocumentHandler::WriteEventsDocument() throw
-( SAXException, RuntimeException )
+void OWriteEventsDocumentHandler::WriteEventsDocument()
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -485,8 +476,7 @@ void OWriteEventsDocumentHandler::WriteEventsDocument() throw
 //	protected member functions
 //_________________________________________________________________________________________________________________
 
-void OWriteEventsDocumentHandler::WriteEvent( const ::rtl::OUString& aEventName, const Sequence< PropertyValue >& aPropertyValues ) throw
-( SAXException, RuntimeException )
+void OWriteEventsDocumentHandler::WriteEvent( const ::rtl::OUString& aEventName, const Sequence< PropertyValue >& aPropertyValues )
 {
 	if ( aPropertyValues.getLength() > 0 )
 	{

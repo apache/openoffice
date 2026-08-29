@@ -52,8 +52,7 @@ public:
     virtual void setTransformationSceneToScreen( const ::com::sun::star::drawing::HomogenMatrix& rMatrix );
     virtual void setExplicitScaleAndIncrement(
             const ExplicitScaleData& rScale
-          , const ExplicitIncrementData& rIncrement )
-                throw (::com::sun::star::uno::RuntimeException);
+          , const ExplicitIncrementData& rIncrement );
     void set3DWallPositions( CuboidPlanePosition eLeftWallPos, CuboidPlanePosition eBackWallPos, CuboidPlanePosition eBottomPos );
 
     virtual TickFactory* createTickFactory();

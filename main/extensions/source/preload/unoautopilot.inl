@@ -40,7 +40,7 @@ OUnoAutoPilot<TYPE, SERVICEINFO>::OUnoAutoPilot(const ::com::sun::star::uno::Ref
 
 //---------------------------------------------------------------------
 template <class TYPE, class SERVICEINFO>
-::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getImplementationId(  )
 {
 	static ::cppu::OImplementationId aId;
 	return aId.getImplementationId();
@@ -55,35 +55,35 @@ template <class TYPE, class SERVICEINFO>
 
 //---------------------------------------------------------------------
 template <class TYPE, class SERVICEINFO>
-::rtl::OUString SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getImplementationName() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //---------------------------------------------------------------------
 template <class TYPE, class SERVICEINFO>
-::rtl::OUString OUnoAutoPilot<TYPE, SERVICEINFO>::getImplementationName_Static() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString OUnoAutoPilot<TYPE, SERVICEINFO>::getImplementationName_Static()
 {
 	return SERVICEINFO().getImplementationName();
 }
 
 //---------------------------------------------------------------------
 template <class TYPE, class SERVICEINFO>
-::comphelper::StringSequence SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException)
+::comphelper::StringSequence SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 
 //---------------------------------------------------------------------
 template <class TYPE, class SERVICEINFO>
-::comphelper::StringSequence OUnoAutoPilot<TYPE, SERVICEINFO>::getSupportedServiceNames_Static() throw(::com::sun::star::uno::RuntimeException)
+::comphelper::StringSequence OUnoAutoPilot<TYPE, SERVICEINFO>::getSupportedServiceNames_Static()
 {
 	return SERVICEINFO().getServiceNames();
 }
 
 //---------------------------------------------------------------------
 template <class TYPE, class SERVICEINFO>
-::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getPropertySetInfo() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL OUnoAutoPilot<TYPE, SERVICEINFO>::getPropertySetInfo()
 {
 	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  xInfo( createPropertySetInfo( getInfoHelper() ) );
 	return xInfo;

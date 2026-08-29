@@ -62,6 +62,7 @@ char const* const* SunInfo::getRuntimePaths(int * size)
     static char const* ar[]= {
 #if defined(WNT)
         "/bin/client/jvm.dll",
+        "/bin/server/jvm.dll",   // 64 bit HotSpot ships only this one
         "/bin/hotspot/jvm.dll",
         "/bin/classic/jvm.dll",
         "/bin/jrockit/jvm.dll"

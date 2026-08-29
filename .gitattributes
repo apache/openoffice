@@ -1,0 +1,13 @@
+# Patch files must never be end-of-line normalised.
+#
+# A patch is compared against its target byte for byte -- tg_ext.mk applies
+# these with `patch --binary' on Windows -- so a patch whose context lines came
+# from a CRLF file has to keep them.  Without this, git converts on the way in
+# or out depending on core.autocrlf, and the patch then fails to apply on some
+# machines and not others, which is a miserable thing to debug.
+#
+# ext_libraries/coinmp/coinmp-1.8.4-v10-sln-paths.patch is the case that
+# prompted this: it patches a Visual Studio .sln, which is CRLF throughout.
+# Existing patches are LF-only, so marking them changes none of their bytes.
+*.patch -text
+*.diff  -text

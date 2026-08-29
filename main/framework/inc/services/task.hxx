@@ -148,7 +148,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual sal_Bool SAL_CALL close() throw( css::uno::RuntimeException );
+		virtual sal_Bool SAL_CALL close();
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -164,7 +164,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL tileWindows() throw( css::uno::RuntimeException );
+    	virtual void SAL_CALL tileWindows();
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -180,7 +180,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL arrangeWindowsVertical() throw( css::uno::RuntimeException );
+    	virtual void SAL_CALL arrangeWindowsVertical();
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -196,7 +196,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL arrangeWindowsHorizontal() throw( css::uno::RuntimeException );
+    	virtual void SAL_CALL arrangeWindowsHorizontal();
 
 		//---------------------------------------------------------------------------------------------------------
 		//	 XComponent
@@ -217,19 +217,19 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL dispose() throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL dispose()
 		{
 			Frame::dispose();
 		}
 
 		/*-*******************************************************************************************************/
-    	virtual void SAL_CALL addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener ) throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
 		{
 			Frame::addEventListener( xListener );
 		}
 
 		/*-*******************************************************************************************************/
-    	virtual void SAL_CALL removeEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener ) throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL removeEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
 		{
 			Frame::removeEventListener( xListener );
 		}
@@ -253,89 +253,89 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL initialize( const css::uno::Reference< css::awt::XWindow >& xWindow ) throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL initialize( const css::uno::Reference< css::awt::XWindow >& xWindow )
 		{
 			Frame::initialize( xWindow );
 		}
 
-    	virtual css::uno::Reference< css::awt::XWindow > SAL_CALL getContainerWindow() throw( css::uno::RuntimeException )
+    	virtual css::uno::Reference< css::awt::XWindow > SAL_CALL getContainerWindow()
 		{
 			return Frame::getContainerWindow();
 		}
 
-    	virtual void SAL_CALL setCreator( const css::uno::Reference< css::frame::XFramesSupplier >& xCreator ) throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL setCreator( const css::uno::Reference< css::frame::XFramesSupplier >& xCreator )
 		{
 			Frame::setCreator( xCreator );
 		}
 
-    	virtual css::uno::Reference< css::frame::XFramesSupplier > SAL_CALL getCreator() throw( css::uno::RuntimeException )
+    	virtual css::uno::Reference< css::frame::XFramesSupplier > SAL_CALL getCreator()
 		{
 			return Frame::getCreator();
 		}
 
-    	virtual ::rtl::OUString SAL_CALL getName() throw( css::uno::RuntimeException )
+    	virtual ::rtl::OUString SAL_CALL getName()
 		{
 			return Frame::getName();
 		}
 
-    	virtual void SAL_CALL setName( const ::rtl::OUString& sName ) throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL setName( const ::rtl::OUString& sName )
 		{
 			Frame::setName( sName );
 		}
 
-    	virtual sal_Bool SAL_CALL isTop() throw( css::uno::RuntimeException )
+    	virtual sal_Bool SAL_CALL isTop()
 		{
 			return Frame::isTop();
 		}
 
-    	virtual void SAL_CALL activate() throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL activate()
 		{
 			Frame::activate();
 		}
 
-    	virtual void SAL_CALL deactivate() throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL deactivate()
 		{
 			Frame::deactivate();
 		}
 
-    	virtual sal_Bool SAL_CALL isActive() throw( css::uno::RuntimeException )
+    	virtual sal_Bool SAL_CALL isActive()
 		{
 			return Frame::isActive();
 		}
 
     	virtual sal_Bool SAL_CALL setComponent(	const	css::uno::Reference< css::awt::XWindow >&		xComponentWindow	,
-												const	css::uno::Reference< css::frame::XController >&	xController			) throw( css::uno::RuntimeException )
+												const	css::uno::Reference< css::frame::XController >&	xController			)
 		{
 			return Frame::setComponent( xComponentWindow, xController );
 		}
 
-    	virtual css::uno::Reference< css::awt::XWindow > SAL_CALL getComponentWindow() throw( css::uno::RuntimeException )
+    	virtual css::uno::Reference< css::awt::XWindow > SAL_CALL getComponentWindow()
 		{
 			return Frame::getComponentWindow();
 		}
 
-    	virtual css::uno::Reference< css::frame::XController > SAL_CALL getController() throw( css::uno::RuntimeException )
+    	virtual css::uno::Reference< css::frame::XController > SAL_CALL getController()
 		{
 			return Frame::getController();
 		}
 
-    	virtual void SAL_CALL contextChanged() throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL contextChanged()
 		{
 			Frame::contextChanged();
 		}
 
-    	virtual void SAL_CALL addFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener ) throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL addFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener )
 		{
 			Frame::addFrameActionListener( xListener );
 		}
 
-    	virtual void SAL_CALL removeFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener ) throw( css::uno::RuntimeException )
+    	virtual void SAL_CALL removeFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener )
 		{
 			Frame::removeFrameActionListener( xListener );
 		}
 
     	virtual css::uno::Reference< css::frame::XFrame > SAL_CALL findFrame(	const	::rtl::OUString&	sTargetFrameName	,
-													   									sal_Int32			nSearchFlags		) throw( css::uno::RuntimeException );
+													   									sal_Int32			nSearchFlags		);
 
 		//---------------------------------------------------------------------------------------------------------
 		//	 XTopWindowListener
@@ -356,7 +356,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual void SAL_CALL windowClosing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+		virtual void SAL_CALL windowClosing( const css::lang::EventObject& aEvent );
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -373,7 +373,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual void SAL_CALL windowActivated( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+		virtual void SAL_CALL windowActivated( const css::lang::EventObject& aEvent );
 
 		/*-****************************************************************************************************//**
 			@short		-
@@ -390,7 +390,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-    	virtual void SAL_CALL windowDeactivated( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+    	virtual void SAL_CALL windowDeactivated( const css::lang::EventObject& aEvent );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	 XEventListener
@@ -411,7 +411,7 @@ class Task  :   public css::frame::XTask    ,   // => XFrame => XComponent
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-	    virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+	    virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent );
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

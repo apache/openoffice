@@ -109,18 +109,14 @@ public:
     virtual ~FilterHelper();
 
     //XFilterManager delegates
-    void SAL_CALL appendFilter( const ::rtl::OUString& aTitle, const ::rtl::OUString& aFilter )
-        throw( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
+    void SAL_CALL appendFilter( const ::rtl::OUString& aTitle, const ::rtl::OUString& aFilter );
 
-    void SAL_CALL setCurrentFilter( const ::rtl::OUString& aTitle )
-        throw( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
+    void SAL_CALL setCurrentFilter( const ::rtl::OUString& aTitle );
 
-    ::rtl::OUString SAL_CALL getCurrentFilter(  )
-        throw( ::com::sun::star::uno::RuntimeException );
+    ::rtl::OUString SAL_CALL getCurrentFilter(  );
 
     //XFilterGroupManager delegates
-    void SAL_CALL appendFilterGroup( const ::rtl::OUString& sGroupTitle, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::StringPair >& aFilters )
-        throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    void SAL_CALL appendFilterGroup( const ::rtl::OUString& sGroupTitle, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::StringPair >& aFilters );
 
 
     //accessor

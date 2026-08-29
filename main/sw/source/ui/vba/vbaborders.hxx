@@ -35,21 +35,21 @@ class VbaPalette;
 class SwVbaBorders : public SwVbaBorders_BASE
 {
 	// XEnumerationAccess
-	virtual css::uno::Any getItemByIntIndex( const sal_Int32 nIndex ) throw (css::uno::RuntimeException);
+	virtual css::uno::Any getItemByIntIndex( const sal_Int32 nIndex );
 	css::uno::Reference< css::beans::XPropertySet > m_xProps;
 public:
 	SwVbaBorders( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::table::XCellRange >& xRange, VbaPalette& rPalette );
 	virtual ~SwVbaBorders() {}
 
 	// XEnumerationAccess
-	virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+	virtual css::uno::Type SAL_CALL getElementType();
+	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
 	// SwVbaCollectionBaseImpl
 	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );
 
-	virtual sal_Bool SAL_CALL getShadow() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setShadow( sal_Bool _shadow ) throw (css::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL getShadow();
+	virtual void SAL_CALL setShadow( sal_Bool _shadow );
 
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

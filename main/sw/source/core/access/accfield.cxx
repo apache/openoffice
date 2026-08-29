@@ -80,14 +80,12 @@ SwAccessibleField::SwAccessibleField( SwField *pSwFld,SwAccessibleParagraph *p,s
 
 uno::Reference< XAccessibleContext > SAL_CALL
 	SwAccessibleField::getAccessibleContext( void )
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	uno::Reference < XAccessibleContext > xRet( this );
 	return xRet;
 }
 
 sal_Int32 SAL_CALL SwAccessibleField::getAccessibleChildCount( void )
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	return 0;
@@ -95,15 +93,12 @@ sal_Int32 SAL_CALL SwAccessibleField::getAccessibleChildCount( void )
 
 uno::Reference< XAccessible> SAL_CALL
 	SwAccessibleField::getAccessibleChild( long )
-        throw (::com::sun::star::uno::RuntimeException,
-				::com::sun::star::lang::IndexOutOfBoundsException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	return uno::Reference< XAccessible >();
 }
 
 uno::Reference< XAccessible> SAL_CALL SwAccessibleField::getAccessibleParent (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -112,20 +107,17 @@ uno::Reference< XAccessible> SAL_CALL SwAccessibleField::getAccessibleParent (vo
 }
 
 sal_Int32 SAL_CALL SwAccessibleField::getAccessibleIndexInParent (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	return 0;
 }
 
 sal_Int16 SAL_CALL SwAccessibleField::getAccessibleRole (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	return m_nRole;
 }
 
 rtl::OUString SAL_CALL SwAccessibleField::getAccessibleDescription (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	ASSERT( sal_False, "description needs to be overloaded" );
 	//THROW_RUNTIME_EXCEPTION( XAccessibleContext, "internal error (method must be overloaded)" );
@@ -133,28 +125,24 @@ rtl::OUString SAL_CALL SwAccessibleField::getAccessibleDescription (void)
 }
 
 rtl::OUString SAL_CALL SwAccessibleField::getAccessibleName (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	return rtl::OUString();
 }
 
 uno::Reference< XAccessibleRelationSet> SAL_CALL
 	SwAccessibleField::getAccessibleRelationSet (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	return NULL;
 }
 
 uno::Reference<XAccessibleStateSet> SAL_CALL
 	SwAccessibleField::getAccessibleStateSet (void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	return uno::Reference<XAccessibleStateSet>();
 }
 
 com::sun::star::lang::Locale SAL_CALL SwAccessibleField::getLocale (void)
-		throw (::com::sun::star::accessibility::IllegalAccessibleComponentStateException, ::com::sun::star::uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -176,7 +164,6 @@ static sal_Bool lcl_PointInRectangle(const awt::Point & aPoint,
 
 sal_Bool SAL_CALL SwAccessibleField::containsPoint(
 			const ::com::sun::star::awt::Point& aPoint )
-		throw (RuntimeException)
 {
     awt::Rectangle aPixBounds = getBoundsImpl(sal_True);
     aPixBounds.X = 0;
@@ -187,7 +174,6 @@ sal_Bool SAL_CALL SwAccessibleField::containsPoint(
 
 uno::Reference< XAccessible > SAL_CALL SwAccessibleField::getAccessibleAtPoint(
 				const awt::Point& aPoint )
-		throw (RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -221,20 +207,17 @@ uno::Reference< XAccessible > SAL_CALL SwAccessibleField::getAccessibleAtPoint(
    false: Use absolute mode.
 */
 awt::Rectangle SAL_CALL SwAccessibleField::getBoundsImpl( sal_Bool )
-		throw (RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	return awt::Rectangle();
 }
 
 awt::Rectangle SAL_CALL SwAccessibleField::getBounds()
-		throw (RuntimeException)
 {
     return getBoundsImpl(sal_True);
 }
 
 awt::Point SAL_CALL SwAccessibleField::getLocation()
-    throw (RuntimeException)
 {
     awt::Rectangle aRect = getBoundsImpl(sal_True);
     awt::Point aPoint(aRect.X, aRect.Y);
@@ -244,7 +227,6 @@ awt::Point SAL_CALL SwAccessibleField::getLocation()
 
 
 awt::Point SAL_CALL SwAccessibleField::getLocationOnScreen()
-		throw (RuntimeException)
 {
     awt::Rectangle aRect = getBoundsImpl(sal_False);
     //Point aPixPos = m_xPara->getLocationOnScreen();
@@ -253,7 +235,6 @@ awt::Point SAL_CALL SwAccessibleField::getLocationOnScreen()
 
 
 awt::Size SAL_CALL SwAccessibleField::getSize()
-		throw (RuntimeException)
 {
     awt::Rectangle aRect = getBoundsImpl(sal_False);
 	awt::Size aSize( aRect.Width, aRect.Height );
@@ -262,7 +243,6 @@ awt::Size SAL_CALL SwAccessibleField::getSize()
 }
 
 void SAL_CALL SwAccessibleField::grabFocus()
-		throw (RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	return;
@@ -270,19 +250,16 @@ void SAL_CALL SwAccessibleField::grabFocus()
 
 
 sal_Int32 SAL_CALL SwAccessibleField::getForeground()
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	return 0;
 }
 
 sal_Int32 SAL_CALL SwAccessibleField::getBackground()
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	return 0xffffff;
 }
 ::com::sun::star::uno::Any SAL_CALL SwAccessibleField::queryInterface(
         const ::com::sun::star::uno::Type& rType )
-        throw (::com::sun::star::uno::RuntimeException)
 {
 	Any aRet;
     if ( rType == ::getCppuType((uno::Reference<XAccessibleContext> *)0) )
@@ -312,7 +289,6 @@ void SAL_CALL SwAccessibleField::release(  ) throw ()
 
 void SAL_CALL SwAccessibleField::addEventListener(
 			const Reference< XAccessibleEventListener >& xListener )
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	//DBG_MSG( "accessible event listener added" )
 
@@ -327,7 +303,6 @@ void SAL_CALL SwAccessibleField::addEventListener(
 
 void SAL_CALL SwAccessibleField::removeEventListener(
 			const Reference< XAccessibleEventListener >& xListener )
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	//DBG_MSG( "accessible event listener removed" )
 

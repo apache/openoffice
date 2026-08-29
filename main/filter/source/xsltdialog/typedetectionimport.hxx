@@ -72,22 +72,14 @@ public:
 
 	static void doImport( com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& xMSF, com::sun::star::uno::Reference < com::sun::star::io::XInputStream > xOS, XMLFilterVector& rFilters );
 
-    virtual void SAL_CALL startDocument(  )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endDocument(  )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL endElement( const ::rtl::OUString& aName )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL characters( const ::rtl::OUString& aChars )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator )
-		throw(::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL startDocument(  );
+    virtual void SAL_CALL endDocument(  );
+    virtual void SAL_CALL startElement( const ::rtl::OUString& aName, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttribs );
+    virtual void SAL_CALL endElement( const ::rtl::OUString& aName );
+    virtual void SAL_CALL characters( const ::rtl::OUString& aChars );
+    virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString& aWhitespaces );
+    virtual void SAL_CALL processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData );
+    virtual void SAL_CALL setDocumentLocator( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& xLocator );
 
 private:
 	void fillFilterVector(  XMLFilterVector& rFilters );

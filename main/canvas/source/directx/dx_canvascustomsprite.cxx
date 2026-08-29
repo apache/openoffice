@@ -92,17 +92,17 @@ namespace dxcanvas
 #define IMPLEMENTATION_NAME "DXCanvas.CanvasCustomSprite"
 #define SERVICE_NAME "com.sun.star.rendering.CanvasCustomSprite"
 
-    ::rtl::OUString SAL_CALL CanvasCustomSprite::getImplementationName() throw( uno::RuntimeException )
+    ::rtl::OUString SAL_CALL CanvasCustomSprite::getImplementationName()
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLEMENTATION_NAME ) );
     }
 
-    sal_Bool SAL_CALL CanvasCustomSprite::supportsService( const ::rtl::OUString& ServiceName ) throw( uno::RuntimeException )
+    sal_Bool SAL_CALL CanvasCustomSprite::supportsService( const ::rtl::OUString& ServiceName )
     {
         return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
     }
 
-    uno::Sequence< ::rtl::OUString > SAL_CALL CanvasCustomSprite::getSupportedServiceNames()  throw( uno::RuntimeException )
+    uno::Sequence< ::rtl::OUString > SAL_CALL CanvasCustomSprite::getSupportedServiceNames()
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );

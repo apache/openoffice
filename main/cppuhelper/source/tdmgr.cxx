@@ -735,12 +735,10 @@ public:
 		{}
 
 	// XEventListener
-	virtual void SAL_CALL disposing( lang::EventObject const & rEvt )
-        throw (RuntimeException);
+	virtual void SAL_CALL disposing( lang::EventObject const & rEvt );
 };
 //__________________________________________________________________________________________________
 void EventListenerImpl::disposing( lang::EventObject const & rEvt )
-    throw (RuntimeException)
 {
     if (rEvt.Source != m_xTDMgr) {
         OSL_ASSERT(false);

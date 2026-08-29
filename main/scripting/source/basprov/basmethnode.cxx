@@ -123,7 +123,7 @@ namespace basprov
     // XBrowseNode
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString BasicMethodNodeImpl::getName(  ) throw (RuntimeException)
+    ::rtl::OUString BasicMethodNodeImpl::getName(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -136,7 +136,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    Sequence< Reference< browse::XBrowseNode > > BasicMethodNodeImpl::getChildNodes(  ) throw (RuntimeException)
+    Sequence< Reference< browse::XBrowseNode > > BasicMethodNodeImpl::getChildNodes(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -145,7 +145,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool BasicMethodNodeImpl::hasChildNodes(  ) throw (RuntimeException)
+    sal_Bool BasicMethodNodeImpl::hasChildNodes(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -154,7 +154,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Int16 BasicMethodNodeImpl::getType(  ) throw (RuntimeException)
+    sal_Int16 BasicMethodNodeImpl::getType(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -185,7 +185,7 @@ namespace basprov
     // XPropertySet
     // -----------------------------------------------------------------------------
 
-    Reference< XPropertySetInfo > BasicMethodNodeImpl::getPropertySetInfo(  ) throw (RuntimeException)
+    Reference< XPropertySetInfo > BasicMethodNodeImpl::getPropertySetInfo(  )
     {
         Reference< XPropertySetInfo > xInfo( createPropertySetInfo( getInfoHelper() ) );
         return xInfo;
@@ -195,7 +195,7 @@ namespace basprov
     // XInvocation
     // -----------------------------------------------------------------------------
 
-    Reference< XIntrospectionAccess > BasicMethodNodeImpl::getIntrospection(  ) throw (RuntimeException)
+    Reference< XIntrospectionAccess > BasicMethodNodeImpl::getIntrospection(  )
     {
         return Reference< XIntrospectionAccess >();
     }
@@ -204,8 +204,6 @@ namespace basprov
 
     Any BasicMethodNodeImpl::invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams,
         Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam )
-        throw (IllegalArgumentException, script::CannotConvertException,
-               reflection::InvocationTargetException, RuntimeException)
     {
 		(void)aParams;
 		(void)aOutParamIndex;
@@ -305,8 +303,6 @@ namespace basprov
     // -----------------------------------------------------------------------------
 
     void BasicMethodNodeImpl::setValue( const ::rtl::OUString& aPropertyName, const Any& aValue )
-        throw (UnknownPropertyException, script::CannotConvertException,
-               reflection::InvocationTargetException, RuntimeException)
     {
 		(void)aPropertyName;
 		(void)aValue;
@@ -318,7 +314,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    Any BasicMethodNodeImpl::getValue( const ::rtl::OUString& aPropertyName ) throw (UnknownPropertyException, RuntimeException)
+    Any BasicMethodNodeImpl::getValue( const ::rtl::OUString& aPropertyName )
     {
 		(void)aPropertyName;
 
@@ -329,7 +325,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool BasicMethodNodeImpl::hasMethod( const ::rtl::OUString& aName ) throw (RuntimeException)
+    sal_Bool BasicMethodNodeImpl::hasMethod( const ::rtl::OUString& aName )
     {
         sal_Bool bReturn = sal_False;
         if ( aName == BASPROV_PROPERTY_EDITABLE )
@@ -340,7 +336,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool BasicMethodNodeImpl::hasProperty( const ::rtl::OUString& aName ) throw (RuntimeException)
+    sal_Bool BasicMethodNodeImpl::hasProperty( const ::rtl::OUString& aName )
     {
 		(void)aName;
 

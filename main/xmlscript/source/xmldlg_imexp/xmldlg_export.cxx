@@ -1091,7 +1091,6 @@ extern StringTriple const * const g_pEventTranslations;
 
 //__________________________________________________________________________________________________
 void ElementDescriptor::readEvents()
-    SAL_THROW( (Exception) )
 {
     Reference< script::XScriptEventsSupplier > xSupplier( _xProps, UNO_QUERY );
     if (xSupplier.is())
@@ -1353,7 +1352,6 @@ void StyleBag::dump( Reference< xml::sax::XExtendedDocumentHandler > const & xOu
 void SAL_CALL exportDialogModel(
     Reference< xml::sax::XExtendedDocumentHandler > const & xOut,
     Reference< container::XNameContainer > const & xDialogModel )
-    SAL_THROW( (Exception) )
 {
     StyleBag all_styles;
     ::std::vector< Reference< xml::sax::XAttributeList > > all_elements;

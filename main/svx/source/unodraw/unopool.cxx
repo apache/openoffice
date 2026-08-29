@@ -107,7 +107,6 @@ SfxItemPool* SvxUnoDrawPool::getModelPool( sal_Bool bReadOnly ) throw()
 }
 
 void SvxUnoDrawPool::getAny( SfxItemPool* pPool, const comphelper::PropertyMapEntry* pEntry, uno::Any& rValue )
-	throw(beans::UnknownPropertyException)
 {
 	switch( pEntry->mnHandle )
 	{
@@ -162,7 +161,6 @@ void SvxUnoDrawPool::getAny( SfxItemPool* pPool, const comphelper::PropertyMapEn
 }
 
 void SvxUnoDrawPool::putAny( SfxItemPool* pPool, const comphelper::PropertyMapEntry* pEntry, const uno::Any& rValue )
-	throw(beans::UnknownPropertyException, lang::IllegalArgumentException)
 {
 	uno::Any aValue( rValue );
 
@@ -213,7 +211,6 @@ void SvxUnoDrawPool::putAny( SfxItemPool* pPool, const comphelper::PropertyMapEn
 }
 
 void SvxUnoDrawPool::_setPropertyValues( const comphelper::PropertyMapEntry** ppEntries, const uno::Any* pValues )
-	throw(beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException )
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -228,7 +225,6 @@ void SvxUnoDrawPool::_setPropertyValues( const comphelper::PropertyMapEntry** pp
 }
 
 void SvxUnoDrawPool::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, uno::Any* pValue )
-	throw(beans::UnknownPropertyException, lang::WrappedTargetException )
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -243,7 +239,6 @@ void SvxUnoDrawPool::_getPropertyValues( const comphelper::PropertyMapEntry** pp
 }
 
 void SvxUnoDrawPool::_getPropertyStates( const comphelper::PropertyMapEntry** ppEntries, beans::PropertyState* pStates )
-	throw(beans::UnknownPropertyException )
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -306,7 +301,6 @@ void SvxUnoDrawPool::_getPropertyStates( const comphelper::PropertyMapEntry** pp
 }
 
 void SvxUnoDrawPool::_setPropertyToDefault( const comphelper::PropertyMapEntry* pEntry )
-	throw(beans::UnknownPropertyException )
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -325,7 +319,6 @@ void SvxUnoDrawPool::_setPropertyToDefault( const comphelper::PropertyMapEntry* 
 }
 
 uno::Any SvxUnoDrawPool::_getPropertyDefault( const comphelper::PropertyMapEntry* pEntry )
-	throw(beans::UnknownPropertyException, lang::WrappedTargetException )
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -343,13 +336,11 @@ uno::Any SvxUnoDrawPool::_getPropertyDefault( const comphelper::PropertyMapEntry
 // XInterface
 
 uno::Any SAL_CALL SvxUnoDrawPool::queryInterface( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
 }
 
 uno::Any SAL_CALL SvxUnoDrawPool::queryAggregation( const uno::Type & rType )
-	throw(uno::RuntimeException)
 {
 	uno::Any aAny;
 
@@ -380,7 +371,6 @@ void SAL_CALL SvxUnoDrawPool::release() throw ( )
 }
 
 uno::Sequence< uno::Type > SAL_CALL SvxUnoDrawPool::getTypes()
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< uno::Type > aTypes( 6 );
 	uno::Type* pTypes = aTypes.getArray();
@@ -396,7 +386,6 @@ uno::Sequence< uno::Type > SAL_CALL SvxUnoDrawPool::getTypes()
 }
 
 uno::Sequence< sal_Int8 > SAL_CALL SvxUnoDrawPool::getImplementationId()
-	throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -411,7 +400,7 @@ uno::Sequence< sal_Int8 > SAL_CALL SvxUnoDrawPool::getImplementationId()
 
 // XServiceInfo
 
-sal_Bool SAL_CALL SvxUnoDrawPool::supportsService( const  OUString& ServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SvxUnoDrawPool::supportsService( const  OUString& ServiceName )
 {
     uno::Sequence< OUString > aSNL( getSupportedServiceNames() );
     const OUString * pArray = aSNL.getConstArray();
@@ -423,13 +412,12 @@ sal_Bool SAL_CALL SvxUnoDrawPool::supportsService( const  OUString& ServiceName 
     return sal_False;
 }
 
-OUString SAL_CALL SvxUnoDrawPool::getImplementationName() throw( uno::RuntimeException )
+OUString SAL_CALL SvxUnoDrawPool::getImplementationName()
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM("SvxUnoDrawPool") );
 }
 
 uno::Sequence< OUString > SAL_CALL SvxUnoDrawPool::getSupportedServiceNames(  )
-	throw( uno::RuntimeException )
 {
     uno::Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.drawing.Defaults" ));

@@ -50,7 +50,6 @@ registerAtUcb(
 	rtl::OUString const & rArguments,
 	rtl::OUString const & rTemplate,
 	ContentProviderRegistrationInfo * pInfo)
-	throw (uno::RuntimeException)
 {
 	OSL_ENSURE(rServiceFactory.is(),
 			   "ucb::registerAtUcb(): No service factory");

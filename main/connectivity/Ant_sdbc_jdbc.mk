@@ -26,4 +26,3 @@ $(eval $(call gb_Ant_Ant,sdbc_jdbc,$(SRCDIR)/connectivity/java/sdbc_jdbc/build.x
 $(eval $(call gb_Ant_set_componentfile,sdbc_jdbc,connectivity/java/sdbc_jdbc/jdbc,OOO))
 
 # vim: set noet sw=4 ts=4:
-

@@ -1,0 +1,187 @@
+#**************************************************************
+#
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#
+#**************************************************************
+
+# mk file for $(COMEX) == 14 -- the UCRT compiler generation, i.e. VS2015
+# (cl 19.00) and every toolset since.
+#
+# This is included at the END of wntmsci11.mk (x86) and wntmscx.mk (x64), so
+# it holds ONLY what differs from VC9 and nothing the two generations share.
+# Two things follow from that shape and both are deliberate:
+#
+#   * a VC9 build is byte-identical.  Nothing here is reached at COMEX 12 --
+#     there is no condition inside this file, because the file itself is the
+#     condition.
+#
+#   * the two architectures cannot drift.  Every line below is either
+#     architecture-neutral or branches on $(CPU) in one place, rather than
+#     being written out twice.
+
+# --- C++ dialect ---------------------------------------------------------
+
+# C++14, not 17.  Three things in this tree depend on the dialect and all
+# three say 14:
+#
+#   * std::tr1.  The MSVC standard library still ships it, but only while
+#     _HAS_CXX17 is 0 -- and boost/tr1 and the shims in main/stlport reach for
+#     std::tr1 by name.
+#   * the empty exception specification.  throw() is deprecated in C++17 and
+#     removed in C++20, and there are still thousands of them here; migrating
+#     them to noexcept is a separate change.
+#   * <hash_map> and <hash_set>, which a modern MSVC turns into a hard #error
+#     under C++17.
+#
+# There is no /std:c++03 to fall back to -- a modern cl rejects it outright
+# (D9002) -- so C++14 is the floor whether or not it is chosen.
+CFLAGSCXX+=-std:c++14
+
+# Report the real __cplusplus.  Without this MSVC reports 199711L whatever
+# /std: says, and the shims in main/stlport/systemstl branch on
+# __cplusplus >= 201103L to decide whether <hash_map> can forward to
+# <unordered_map>.  Left off, they take the pre-C++11 branch and reach for
+# boost/tr1 instead.
+CFLAGSCXX+=-Zc:__cplusplus
+
+# --- the CRT -------------------------------------------------------------
+
+# The two halves of the old snprintf shim are NOT symmetric, which is easy to
+# get wrong in either direction:
+#
+#   * snprintf -- the UCRT declares a real, conforming one.  Defining the name
+#     away would be a redefinition with different linkage that it refuses to
+#     compile (C1189), so the shim is dropped.
+#     sal/inc/systools/win32/snprintf.h drops its own declarations on the same
+#     condition, and so does uwinapi's implementation of them.
+#   * snwprintf -- the UCRT declares no such thing.  The wide C99 name has
+#     never existed in any MSVC CRT; only _snwprintf does.  So this half stays,
+#     and the bare calls in svx's sendreportw32.cxx and framework's
+#     spinfieldtoolbarcontroller.cxx keep compiling.
+CDEFS+=-Dsnwprintf=_snwprintf
+
+# stdext::hash_map and stdext::hash_set are deprecated to the point of a hard
+# #error.  The tree reaches them through the stlport shims in a great many
+# places; these are the stdext containers, not std::unordered_map, so
+# replacing them is a refactor and not a build fix.
+CDEFS+=-D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
+
+# The CRT split in three when the UCRT arrived: a startup/import library, the
+# compiler runtime, and the C library proper.  Normally cl emits /DEFAULTLIB
+# directives naming all three -- but this build links with -NODEFAULTLIB, so
+# anything not named here is not linked.  The first of the three is already in
+# LIBCMT from the base file; these are the other two.
+#
+# They MUST follow the same static/dynamic choice the base file made, or the
+# link mixes the two models: a module setting DYNAMIC_CRT= (sal's kill is the
+# one that does) gets libcmt.lib and then fails on __except_handler4, which
+# lives in libvcruntime.lib and not in the import library of the same name.
+# Named as well as appended, because appending only reaches a module that lets
+# LIBCMT alone.  embedserv's in-process server REPLACES it outright -- it wants
+# the static CRT whatever the rest of the build is doing -- and an append made
+# before that assignment is simply lost.  Such a module names the matching
+# variable instead, which is empty on VC9 and so changes nothing there.
+LIBCRTEXTRA_DYNAMIC=vcruntime.lib ucrt.lib
+LIBCRTEXTRA_STATIC=libvcruntime.lib libucrt.lib
+
+.IF "$(DYNAMIC_CRT)"!=""
+LIBCMT+=$(LIBCRTEXTRA_DYNAMIC)
+.ELSE
+LIBCMT+=$(LIBCRTEXTRA_STATIC)
+.ENDIF
+
+# --- what the modern toolchain removed -----------------------------------
+
+# -Yd (write debug info into every object that uses the precompiled header)
+# was removed after VC9.  -Z7 alone already does what this build wants, which
+# is debug information inside the object rather than in a separate .pdb that
+# every compile would have to serialise on.
+CFLAGSENABLESYMBOLS=-Z7
+
+# ATL and MFC are deliberately NOT set here.  configure already computes
+# ATL_INCLUDE / ATL_LIB / ATL_LIB_X64 / MFC_INCLUDE / MFC_LIB, honours
+# --with-atl-include-dir and friends, and then VALIDATES the result by looking
+# for atlbase.h and atls.lib -- and it exports them, which is why the base
+# file assigns them with *= (only if unset) rather than plainly.  Assigning
+# them here would override both configure's checked value and the user's
+# explicit flag with a guess.
+#
+# The guess would often be wrong, too: the "C++ ATL" component is a separate
+# Visual Studio install option, so a BuildTools installation frequently has no
+# atlmfc directory under the toolset at all.  Builds that need ATL point at
+# whichever copy they have -- commonly the WinDDK one -- through the configure
+# options, and that keeps working here unchanged.
+
+# --- warnings ------------------------------------------------------------
+
+# The base warning list was written against VC9 and is kept as it is; these
+# are the ones a modern cl adds in volume, and each is a report about old
+# code rather than about a defect this build introduced:
+#
+#   C4996 -- "was declared deprecated".  The tree calls the POSIX and
+#            non-secure CRT names throughout.  _CRT_SECURE_NO_DEPRECATE and
+#            _CRT_NONSTDC_NO_DEPRECATE, already set in the base file, silence
+#            most but not all of them.
+#   C4577 -- "noexcept used with no exception handling mode specified".  This
+#            build compiles with -EHa, which does specify one; the warning
+#            fires anyway on the empty specifications the tree is still full
+#            of.
+#   C5040 -- an exception specification on a function pointer type is
+#            non-standard.  Same population, same reason.
+CFLAGSWARNCXX+=-wd4996 -wd4577 -wd5040
+CFLAGSWARNCC+=-wd4996
+CFLAGSWALLCC=$(CFLAGSWARNCC)
+CFLAGSWALLCXX=$(CFLAGSWARNCXX)
+
+# --- subsystem version ---------------------------------------------------
+
+# /SUBSYSTEM:WINDOWS takes an optional version and the base files pass it
+# without one, so the value is whatever the linker happens to default to.  That
+# default is NOT stable across toolsets: VC9 emitted a 5.x subsystem, every
+# toolset from VS2015 on emits 6.00.  The same makefile line therefore silently
+# changed what these binaries claim about themselves, and that is not cosmetic
+# -- Windows reads the subsystem version to pick which drag-and-drop
+# implementation a process gets.
+#
+# At 6.00 a drop target is resolved through the brokered path in ole32
+# (CDragOperation::GetDropTarget -> PrivDragDrop -> SDDInfo::SDDInfo ->
+# UnmarshalFromEndpointProperty).  Every drop into this office dies there with
+# E_INVALIDARG before any of our own code runs: RegisterDragDrop succeeds and
+# the frame carries both the OleDropTargetInterface and OleEndPointID window
+# properties, yet IDropTarget::DragEnter is never called and the pointer stays
+# "unavailable" -- which is the whole of the "cannot drag anything into the
+# office" report.  Below 6.00 the classic path is used and drops work.
+#
+# Measured, not inferred: patching these four bytes and nothing else in one
+# soffice.exe flips it.  At 6.00 PrivDragDrop returns 0x80070057 and the cursor
+# is IDC_NO; at 5.02 it returns S_OK and the drop is offered and accepted.
+#
+# So pin it, per architecture, to the lowest version its linker accepts -- the
+# same neighbourhood the office shipped in for its whole VC9 life.  Note this
+# restores the classic path rather than making our drop targets work with the
+# brokered one; why they are rejected there is a separate, still unexplained
+# incompatibility.  The version only matters on the executable, since that is
+# what the loader reads for the process, but both flags are set so the pair
+# cannot drift apart.
+.IF "$(CPU)" == "X"
+LINKFLAGSAPPGUI=/SUBSYSTEM:WINDOWS,5.02
+LINKFLAGSSHLGUI=/SUBSYSTEM:WINDOWS,5.02 /DLL
+.ELSE
+LINKFLAGSAPPGUI=/SUBSYSTEM:WINDOWS,5.01
+LINKFLAGSSHLGUI=/SUBSYSTEM:WINDOWS,5.01 /DLL
+.ENDIF

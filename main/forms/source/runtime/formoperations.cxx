@@ -148,13 +148,13 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString FormOperations::getImplementationName_Static(  ) throw(RuntimeException)
+    ::rtl::OUString FormOperations::getImplementationName_Static(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.forms.FormOperations" ) );
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > FormOperations::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+    Sequence< ::rtl::OUString > FormOperations::getSupportedServiceNames_Static(  )
     {
         Sequence< ::rtl::OUString > aNames(1);
         aNames[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.form.runtime.FormOperations" ) );
@@ -168,7 +168,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::initialize( const Sequence< Any >& _arguments ) throw (Exception, RuntimeException)
+    void SAL_CALL FormOperations::initialize( const Sequence< Any >& _arguments )
     {
         if ( m_bConstructed )
             throw AlreadyInitializedException();
@@ -190,13 +190,13 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL FormOperations::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL FormOperations::getImplementationName(  )
     {
         return getImplementationName_Static();
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL FormOperations::supportsService( const ::rtl::OUString& _ServiceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL FormOperations::supportsService( const ::rtl::OUString& _ServiceName )
     {
         Sequence< ::rtl::OUString > aSupportedServiceNames( getSupportedServiceNames() );
         const ::rtl::OUString* pBegin = aSupportedServiceNames.getConstArray();
@@ -205,48 +205,48 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL FormOperations::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL FormOperations::getSupportedServiceNames(  )
     {
         return getSupportedServiceNames_Static();
     }
 
     //--------------------------------------------------------------------
-    Reference< XRowSet > SAL_CALL FormOperations::getCursor() throw (RuntimeException)
+    Reference< XRowSet > SAL_CALL FormOperations::getCursor()
     {
         MethodGuard aGuard( *this );
         return m_xCursor;
     }
 
     //--------------------------------------------------------------------
-    Reference< XResultSetUpdate > SAL_CALL FormOperations::getUpdateCursor() throw (RuntimeException)
+    Reference< XResultSetUpdate > SAL_CALL FormOperations::getUpdateCursor()
     {
         MethodGuard aGuard( *this );
         return m_xUpdateCursor;
     }
 
     //--------------------------------------------------------------------
-    Reference< XFormController > SAL_CALL FormOperations::getController() throw (RuntimeException)
+    Reference< XFormController > SAL_CALL FormOperations::getController()
     {
         MethodGuard aGuard( *this );
         return m_xController;
     }
 
     //--------------------------------------------------------------------
-    Reference< XFeatureInvalidation > SAL_CALL FormOperations::getFeatureInvalidation() throw (RuntimeException)
+    Reference< XFeatureInvalidation > SAL_CALL FormOperations::getFeatureInvalidation()
     {
         MethodGuard aGuard( *this );
         return m_xFeatureInvalidation;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::setFeatureInvalidation( const Reference< XFeatureInvalidation > & _rxFeatureInvalidation ) throw (RuntimeException)
+    void SAL_CALL FormOperations::setFeatureInvalidation( const Reference< XFeatureInvalidation > & _rxFeatureInvalidation )
     {
         MethodGuard aGuard( *this );
         m_xFeatureInvalidation = _rxFeatureInvalidation;
     }
 
     //--------------------------------------------------------------------
-    FeatureState SAL_CALL FormOperations::getState( ::sal_Int16 _nFeature ) throw (RuntimeException)
+    FeatureState SAL_CALL FormOperations::getState( ::sal_Int16 _nFeature )
     {
         MethodGuard aGuard( *this );
 
@@ -429,7 +429,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL FormOperations::isEnabled( ::sal_Int16 _nFeature ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL FormOperations::isEnabled( ::sal_Int16 _nFeature )
     {
         MethodGuard aGuard( *this );
 
@@ -463,7 +463,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::execute( ::sal_Int16 _nFeature ) throw (RuntimeException, IllegalArgumentException, SQLException, WrappedTargetException)
+    void SAL_CALL FormOperations::execute( ::sal_Int16 _nFeature )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
         MethodGuard aGuard( *this );
@@ -730,7 +730,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::executeWithArguments( ::sal_Int16 _nFeature, const Sequence< NamedValue >& _rArguments ) throw (RuntimeException, IllegalArgumentException, SQLException, WrappedTargetException)
+    void SAL_CALL FormOperations::executeWithArguments( ::sal_Int16 _nFeature, const Sequence< NamedValue >& _rArguments )
     {
         if ( !lcl_requiresArguments( _nFeature ) )
         {
@@ -787,7 +787,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL FormOperations::commitCurrentRecord( ::sal_Bool& _out_rRecordInserted ) throw (RuntimeException, SQLException)
+    ::sal_Bool SAL_CALL FormOperations::commitCurrentRecord( ::sal_Bool& _out_rRecordInserted )
     {
         MethodGuard aGuard( *this );
         _out_rRecordInserted = sal_False;
@@ -822,7 +822,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL FormOperations::commitCurrentControl() throw (RuntimeException, SQLException)
+    ::sal_Bool SAL_CALL FormOperations::commitCurrentControl()
     {
         MethodGuard aGuard( *this );
         return impl_commitCurrentControl_throw();
@@ -871,7 +871,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL FormOperations::isInsertionRow() throw (RuntimeException, WrappedTargetException)
+    ::sal_Bool SAL_CALL FormOperations::isInsertionRow()
     {
         sal_Bool bIs = sal_False;
         try
@@ -887,7 +887,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL FormOperations::isModifiedRow() throw (RuntimeException, WrappedTargetException)
+    ::sal_Bool SAL_CALL FormOperations::isModifiedRow()
     {
         sal_Bool bIs = sal_False;
         try
@@ -903,7 +903,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::cursorMoved( const EventObject& /*_Event*/ ) throw (RuntimeException)
+    void SAL_CALL FormOperations::cursorMoved( const EventObject& /*_Event*/ )
     {
         MethodGuard aGuard( *this );
 	    m_bActiveControlModified = sal_False;
@@ -912,19 +912,19 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::rowChanged( const EventObject& /*_Event*/ ) throw (RuntimeException)
+    void SAL_CALL FormOperations::rowChanged( const EventObject& /*_Event*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::rowSetChanged( const EventObject& /*_Event*/ ) throw (RuntimeException)
+    void SAL_CALL FormOperations::rowSetChanged( const EventObject& /*_Event*/ )
     {
         // not interested in
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::modified( const EventObject& /*_Source*/ ) throw( RuntimeException )
+    void SAL_CALL FormOperations::modified( const EventObject& /*_Source*/ )
     {
         MethodGuard aGuard( *this );
 
@@ -937,7 +937,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::propertyChange( const PropertyChangeEvent& _rEvent ) throw (RuntimeException)
+    void SAL_CALL FormOperations::propertyChange( const PropertyChangeEvent& _rEvent )
     {
         MethodGuard aGuard( *this );
 
@@ -985,7 +985,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormOperations::disposing( const EventObject& /*_Source*/ ) throw (RuntimeException)
+    void SAL_CALL FormOperations::disposing( const EventObject& /*_Source*/ )
     {
         // TODO: should we react on this? Or is this the responsibility of our owner to dispose us?
     }

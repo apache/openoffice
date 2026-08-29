@@ -117,14 +117,13 @@ AccFrameSelector::~AccFrameSelector()
 // ----------------------------------------------------------------------------
 
 Reference< XAccessibleContext > AccFrameSelector::getAccessibleContext(  )
-    throw (RuntimeException)
 {
     return this;
 }
 
 // ----------------------------------------------------------------------------
 
-sal_Int32 AccFrameSelector::getAccessibleChildCount(  ) throw (RuntimeException)
+sal_Int32 AccFrameSelector::getAccessibleChildCount(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -134,7 +133,6 @@ sal_Int32 AccFrameSelector::getAccessibleChildCount(  ) throw (RuntimeException)
 // ----------------------------------------------------------------------------
 
 Reference< XAccessible > AccFrameSelector::getAccessibleChild( sal_Int32 i )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -149,7 +147,6 @@ Reference< XAccessible > AccFrameSelector::getAccessibleChild( sal_Int32 i )
 // ----------------------------------------------------------------------------
 
 Reference< XAccessible > AccFrameSelector::getAccessibleParent(  )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -164,7 +161,6 @@ Reference< XAccessible > AccFrameSelector::getAccessibleParent(  )
 // ----------------------------------------------------------------------------
 
 sal_Int32 AccFrameSelector::getAccessibleIndexInParent(  )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -188,7 +184,7 @@ sal_Int32 AccFrameSelector::getAccessibleIndexInParent(  )
 
 // ----------------------------------------------------------------------------
 
-sal_Int16 AccFrameSelector::getAccessibleRole(  ) throw (RuntimeException)
+sal_Int16 AccFrameSelector::getAccessibleRole(  )
 {
     // return AccessibleRole::OPTION_PANE;
 	return meBorder == FRAMEBORDER_NONE ? AccessibleRole::OPTION_PANE : AccessibleRole::CHECK_BOX;
@@ -197,7 +193,6 @@ sal_Int16 AccFrameSelector::getAccessibleRole(  ) throw (RuntimeException)
 // ----------------------------------------------------------------------------
 
 OUString AccFrameSelector::getAccessibleDescription(  )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -207,7 +202,6 @@ OUString AccFrameSelector::getAccessibleDescription(  )
 // ----------------------------------------------------------------------------
 
 OUString AccFrameSelector::getAccessibleName(  )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -217,7 +211,6 @@ OUString AccFrameSelector::getAccessibleName(  )
 // ----------------------------------------------------------------------------
 
 Reference< XAccessibleRelationSet > AccFrameSelector::getAccessibleRelationSet(  )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -264,7 +257,6 @@ Reference< XAccessibleRelationSet > AccFrameSelector::getAccessibleRelationSet( 
 // ----------------------------------------------------------------------------
 
 Reference< XAccessibleStateSet > AccFrameSelector::getAccessibleStateSet(  )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     utl::AccessibleStateSetHelper* pStateSetHelper = new utl::AccessibleStateSetHelper;
@@ -310,7 +302,6 @@ Reference< XAccessibleStateSet > AccFrameSelector::getAccessibleStateSet(  )
 // ----------------------------------------------------------------------------
 
 Locale AccFrameSelector::getLocale(  )
-    throw (IllegalAccessibleComponentStateException, RuntimeException)
 {
     Locale aRet;
     SvxLanguageToLocale( aRet, Application::GetSettings().GetUILanguage() );
@@ -321,7 +312,6 @@ Locale AccFrameSelector::getLocale(  )
 
 void AccFrameSelector::addPropertyChangeListener(
     const Reference< XPropertyChangeListener >& xListener )
-        throw (RuntimeException)
 {
     maPropertyListeners.addInterface( xListener );
 }
@@ -329,7 +319,6 @@ void AccFrameSelector::addPropertyChangeListener(
 // ----------------------------------------------------------------------------
 
 void AccFrameSelector::removePropertyChangeListener( const Reference< XPropertyChangeListener >& xListener )
-    throw (RuntimeException)
 {
     maPropertyListeners.removeInterface( xListener );
 }
@@ -337,7 +326,6 @@ void AccFrameSelector::removePropertyChangeListener( const Reference< XPropertyC
 // ----------------------------------------------------------------------------
 
 sal_Bool AccFrameSelector::containsPoint( const AwtPoint& aPt )
-    throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -349,7 +337,6 @@ sal_Bool AccFrameSelector::containsPoint( const AwtPoint& aPt )
 
 Reference< XAccessible > AccFrameSelector::getAccessibleAtPoint(
     const AwtPoint& aPt )
-        throw (RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -357,7 +344,7 @@ Reference< XAccessible > AccFrameSelector::getAccessibleAtPoint(
     return mpFrameSel->GetChildAccessible( Point( aPt.X, aPt.Y ) );
 }
 
-AwtRectangle AccFrameSelector::getBounds(  ) throw (RuntimeException)
+AwtRectangle AccFrameSelector::getBounds(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -384,7 +371,7 @@ AwtRectangle AccFrameSelector::getBounds(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-AwtPoint AccFrameSelector::getLocation(  ) throw (RuntimeException)
+AwtPoint AccFrameSelector::getLocation(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -404,7 +391,7 @@ AwtPoint AccFrameSelector::getLocation(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-AwtPoint AccFrameSelector::getLocationOnScreen(  ) throw (RuntimeException)
+AwtPoint AccFrameSelector::getLocationOnScreen(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -425,7 +412,7 @@ AwtPoint AccFrameSelector::getLocationOnScreen(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-AwtSize AccFrameSelector::getSize(  ) throw (RuntimeException)
+AwtSize AccFrameSelector::getSize(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -445,7 +432,7 @@ AwtSize AccFrameSelector::getSize(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-sal_Bool AccFrameSelector::isShowing(  ) throw (RuntimeException)
+sal_Bool AccFrameSelector::isShowing(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -454,7 +441,7 @@ sal_Bool AccFrameSelector::isShowing(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-sal_Bool AccFrameSelector::isVisible(  ) throw (RuntimeException)
+sal_Bool AccFrameSelector::isVisible(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -463,7 +450,7 @@ sal_Bool AccFrameSelector::isVisible(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-sal_Bool AccFrameSelector::isFocusTraversable(  ) throw (RuntimeException)
+sal_Bool AccFrameSelector::isFocusTraversable(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -472,21 +459,21 @@ sal_Bool AccFrameSelector::isFocusTraversable(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-void AccFrameSelector::addFocusListener( const Reference< XFocusListener >& xListener ) throw (RuntimeException)
+void AccFrameSelector::addFocusListener( const Reference< XFocusListener >& xListener )
 {
     maFocusListeners.addInterface( xListener );
 }
 
 // ----------------------------------------------------------------------------
 
-void AccFrameSelector::removeFocusListener( const Reference< XFocusListener >& xListener ) throw (RuntimeException)
+void AccFrameSelector::removeFocusListener( const Reference< XFocusListener >& xListener )
 {
     maFocusListeners.removeInterface( xListener );
 }
 
 // ----------------------------------------------------------------------------
 
-void AccFrameSelector::grabFocus(  ) throw (RuntimeException)
+void AccFrameSelector::grabFocus(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     IsValid();
@@ -495,7 +482,7 @@ void AccFrameSelector::grabFocus(  ) throw (RuntimeException)
 
 // ----------------------------------------------------------------------------
 
-Any AccFrameSelector::getAccessibleKeyBinding(  ) throw (RuntimeException)
+Any AccFrameSelector::getAccessibleKeyBinding(  )
 {
     Any aRet;
     vos::OGuard aGuard(Application::GetSolarMutex());
@@ -533,7 +520,6 @@ Any AccFrameSelector::getAccessibleKeyBinding(  ) throw (RuntimeException)
 // ----------------------------------------------------------------------------
 
 sal_Int32 AccFrameSelector::getForeground(  )
-        throw (RuntimeException)
 {
     Any aRet;
     vos::OGuard aGuard(Application::GetSolarMutex());
@@ -544,7 +530,6 @@ sal_Int32 AccFrameSelector::getForeground(  )
 // ----------------------------------------------------------------------------
 
 sal_Int32 AccFrameSelector::getBackground(  )
-        throw (RuntimeException)
 {
     Any aRet;
     vos::OGuard aGuard(Application::GetSolarMutex());
@@ -554,7 +539,7 @@ sal_Int32 AccFrameSelector::getBackground(  )
 
 // ----------------------------------------------------------------------------
 
-void AccFrameSelector::addEventListener( const Reference< XAccessibleEventListener >& xListener ) throw (RuntimeException)
+void AccFrameSelector::addEventListener( const Reference< XAccessibleEventListener >& xListener )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -570,7 +555,7 @@ void AccFrameSelector::addEventListener( const Reference< XAccessibleEventListen
 
 // ----------------------------------------------------------------------------
 
-void AccFrameSelector::removeEventListener( const Reference< XAccessibleEventListener >& xListener ) throw (RuntimeException)
+void AccFrameSelector::removeEventListener( const Reference< XAccessibleEventListener >& xListener )
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -589,7 +574,7 @@ void AccFrameSelector::removeEventListener( const Reference< XAccessibleEventLis
 
 // ----------------------------------------------------------------------------
 
-OUString AccFrameSelector::getImplementationName(  ) throw (RuntimeException)
+OUString AccFrameSelector::getImplementationName(  )
 {
     return OUString::createFromAscii("AccFrameSelector");
 }
@@ -601,7 +586,6 @@ const sal_Char sAccessibleContext[]   = "AccessibleContext";
 const sal_Char sAccessibleComponent[] = "AccessibleComponent";
 
 sal_Bool AccFrameSelector::supportsService( const OUString& rServiceName )
-    throw (RuntimeException)
 {
     return  rServiceName.equalsAsciiL( sAccessible         , sizeof(sAccessible         )-1 ) ||
             rServiceName.equalsAsciiL( sAccessibleContext  , sizeof(sAccessibleContext  )-1 ) ||
@@ -611,7 +595,6 @@ sal_Bool AccFrameSelector::supportsService( const OUString& rServiceName )
 // ----------------------------------------------------------------------------
 
 Sequence< OUString > AccFrameSelector::getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     Sequence< OUString > aRet(3);
 	OUString* pArray = aRet.getArray();
@@ -623,7 +606,7 @@ Sequence< OUString > AccFrameSelector::getSupportedServiceNames(  )
 
 // ----------------------------------------------------------------------------
 
-void AccFrameSelector::IsValid() throw (RuntimeException)
+void AccFrameSelector::IsValid()
 {
     if(!mpFrameSel)
         throw RuntimeException();

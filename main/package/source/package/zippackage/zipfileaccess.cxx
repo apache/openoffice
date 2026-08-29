@@ -171,8 +171,6 @@ sal_Bool OZipFileAccess::StringGoodForPattern_Impl( const ::rtl::OUString& aStri
 // XInitialization
 // ----------------------------------------------------------------
 void SAL_CALL OZipFileAccess::initialize( const uno::Sequence< uno::Any >& aArguments )
-	throw ( uno::Exception,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -233,9 +231,6 @@ void SAL_CALL OZipFileAccess::initialize( const uno::Sequence< uno::Any >& aArgu
 // XNameAccess
 // ----------------------------------------------------------------
 uno::Any SAL_CALL OZipFileAccess::getByName( const ::rtl::OUString& aName )
-	throw ( container::NoSuchElementException,
-			lang::WrappedTargetException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -262,7 +257,6 @@ uno::Any SAL_CALL OZipFileAccess::getByName( const ::rtl::OUString& aName )
 
 // ----------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OZipFileAccess::getElementNames()
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -297,7 +291,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OZipFileAccess::getElementNames()
 
 // ----------------------------------------------------------------
 sal_Bool SAL_CALL OZipFileAccess::hasByName( const ::rtl::OUString& aName )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -314,7 +307,6 @@ sal_Bool SAL_CALL OZipFileAccess::hasByName( const ::rtl::OUString& aName )
 
 // ----------------------------------------------------------------
 uno::Type SAL_CALL OZipFileAccess::getElementType()
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -329,7 +321,6 @@ uno::Type SAL_CALL OZipFileAccess::getElementType()
 
 // ----------------------------------------------------------------
 sal_Bool SAL_CALL OZipFileAccess::hasElements()
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -345,9 +336,6 @@ sal_Bool SAL_CALL OZipFileAccess::hasElements()
 // XZipFileAccess
 // ----------------------------------------------------------------
 uno::Reference< io::XInputStream > SAL_CALL OZipFileAccess::getStreamByPattern( const ::rtl::OUString& aPatternString )
-	throw ( container::NoSuchElementException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -381,7 +369,6 @@ uno::Reference< io::XInputStream > SAL_CALL OZipFileAccess::getStreamByPattern( 
 // XComponent
 // ----------------------------------------------------------------
 void SAL_CALL OZipFileAccess::dispose()
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -413,7 +400,6 @@ void SAL_CALL OZipFileAccess::dispose()
 
 // ----------------------------------------------------------------
 void SAL_CALL OZipFileAccess::addEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -427,7 +413,6 @@ void SAL_CALL OZipFileAccess::addEventListener( const uno::Reference< lang::XEve
 
 // ----------------------------------------------------------------
 void SAL_CALL OZipFileAccess::removeEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
 
@@ -462,14 +447,12 @@ uno::Reference< uno::XInterface > SAL_CALL OZipFileAccess::impl_staticCreateSelf
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL OZipFileAccess::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL OZipFileAccess::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -482,7 +465,6 @@ sal_Bool SAL_CALL OZipFileAccess::supportsService( const ::rtl::OUString& Servic
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OZipFileAccess::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }

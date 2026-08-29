@@ -82,7 +82,6 @@ uno::Reference< lang::XSingleServiceFactory > SAL_CALL OwnSubFilterService::impl
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL OwnSubFilterService::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor )
-	throw (uno::RuntimeException)
 {
 	if ( !m_pObjectShell )
 		throw uno::RuntimeException();
@@ -92,7 +91,6 @@ sal_Bool SAL_CALL OwnSubFilterService::filter( const uno::Sequence< beans::Prope
 
 //-------------------------------------------------------------------------
 void SAL_CALL OwnSubFilterService::cancel()
-	throw (uno::RuntimeException)
 {
 	// not implemented
 }
@@ -102,7 +100,6 @@ void SAL_CALL OwnSubFilterService::cancel()
 
 //-------------------------------------------------------------------------
 void SAL_CALL OwnSubFilterService::initialize( const uno::Sequence< uno::Any >& aArguments )
-	throw (uno::Exception, uno::RuntimeException)
 {
 	if ( !m_xFactory.is() )
 		throw uno::RuntimeException();
@@ -132,14 +129,12 @@ void SAL_CALL OwnSubFilterService::initialize( const uno::Sequence< uno::Any >& 
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL OwnSubFilterService::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_getStaticImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL OwnSubFilterService::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_getStaticSupportedServiceNames();
 
@@ -152,7 +147,6 @@ sal_Bool SAL_CALL OwnSubFilterService::supportsService( const ::rtl::OUString& S
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OwnSubFilterService::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_getStaticSupportedServiceNames();
 }

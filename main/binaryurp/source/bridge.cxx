@@ -794,7 +794,7 @@ Bridge::~Bridge() {
 }
 
 css::uno::Reference< css::uno::XInterface > Bridge::getInstance(
-    rtl::OUString const & sInstanceName) throw (css::uno::RuntimeException)
+    rtl::OUString const & sInstanceName)
 {
     if ( sInstanceName.isEmpty() ) {
         throw css::uno::RuntimeException(
@@ -839,18 +839,18 @@ css::uno::Reference< css::uno::XInterface > Bridge::getInstance(
         css::uno::UNO_REF_NO_ACQUIRE);
 }
 
-rtl::OUString Bridge::getName() throw (css::uno::RuntimeException) {
+rtl::OUString Bridge::getName() {
     return name_;
 }
 
-rtl::OUString Bridge::getDescription() throw (css::uno::RuntimeException) {
+rtl::OUString Bridge::getDescription() {
     rtl::OUStringBuffer b(name_);
     b.append(sal_Unicode(':'));
     b.append(connection_->getDescription());
     return b.makeStringAndClear();
 }
 
-void Bridge::dispose() throw (css::uno::RuntimeException) {
+void Bridge::dispose() {
     terminate();
     // OOo expects dispose to not return while there are still remote calls in
     // progress; an external protocol must ensure that dispose is not called
@@ -861,7 +861,6 @@ void Bridge::dispose() throw (css::uno::RuntimeException) {
 
 void Bridge::addEventListener(
     css::uno::Reference< css::lang::XEventListener > const & xListener)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(xListener.is());
     {
@@ -877,7 +876,6 @@ void Bridge::addEventListener(
 
 void Bridge::removeEventListener(
     css::uno::Reference< css::lang::XEventListener > const & aListener)
-    throw (css::uno::RuntimeException)
 {
     osl::MutexGuard g(mutex_);
     Listeners::iterator i(

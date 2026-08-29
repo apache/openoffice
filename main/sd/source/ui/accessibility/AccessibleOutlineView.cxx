@@ -132,7 +132,6 @@ void AccessibleOutlineView::ViewForwarderChanged (ChangeType aChangeType,
 
 sal_Int32 SAL_CALL
     AccessibleOutlineView::getAccessibleChildCount (void)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -143,7 +142,6 @@ sal_Int32 SAL_CALL
 
 uno::Reference<XAccessible> SAL_CALL
     AccessibleOutlineView::getAccessibleChild (sal_Int32 nIndex)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
     // Forward request to children manager.
@@ -153,7 +151,6 @@ uno::Reference<XAccessible> SAL_CALL
 #include <drawdoc.hxx>
 ::rtl::OUString SAL_CALL
 	AccessibleOutlineView::getAccessibleName(void)
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	::rtl::OUString sName = String( SdResId(SID_SD_A11Y_D_PRESENTATION) );
 	::sd::View* pSdView = static_cast< ::sd::View* >( maShapeTreeInfo.GetSdrView() );
@@ -181,7 +178,7 @@ uno::Reference<XAccessible> SAL_CALL
 }
 //=====  XAccessibleEventBroadcaster  ========================================
 
-void SAL_CALL AccessibleOutlineView::addEventListener( const uno::Reference< XAccessibleEventListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL AccessibleOutlineView::addEventListener( const uno::Reference< XAccessibleEventListener >& xListener )
 {
     // delegate listener handling to children manager.
     if ( ! IsDisposed())
@@ -189,7 +186,7 @@ void SAL_CALL AccessibleOutlineView::addEventListener( const uno::Reference< XAc
 	AccessibleContextBase::addEventListener(xListener);
 }
 
-void SAL_CALL AccessibleOutlineView::removeEventListener( const uno::Reference< XAccessibleEventListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL AccessibleOutlineView::removeEventListener( const uno::Reference< XAccessibleEventListener >& xListener )
 {
     // forward
     if ( ! IsDisposed())
@@ -201,7 +198,6 @@ void SAL_CALL AccessibleOutlineView::removeEventListener( const uno::Reference< 
 
 ::rtl::OUString SAL_CALL
     AccessibleOutlineView::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("AccessibleOutlineView"));
 }
@@ -211,7 +207,6 @@ void SAL_CALL AccessibleOutlineView::removeEventListener( const uno::Reference< 
 
 void SAL_CALL
     AccessibleOutlineView::disposing (const lang::EventObject& rEventObject)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     AccessibleDocumentViewBase::disposing (rEventObject);
 }
@@ -252,7 +247,6 @@ void SAL_CALL AccessibleOutlineView::disposing (void)
 
 void SAL_CALL
     AccessibleOutlineView::propertyChange (const beans::PropertyChangeEvent& rEventObject)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
 
@@ -287,7 +281,6 @@ void SAL_CALL
 ///	Create a name for this view.
 ::rtl::OUString
     AccessibleOutlineView::CreateAccessibleName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -300,7 +293,6 @@ void SAL_CALL
 */
 ::rtl::OUString
     AccessibleOutlineView::CreateAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

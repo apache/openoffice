@@ -77,18 +77,18 @@ public:
 	void display( const OUString& rURL );
 
 	// XTreeExpansionListener
-    virtual void SAL_CALL requestChildNodes( const TreeExpansionEvent& Event ) throw (RuntimeException);
-    virtual void SAL_CALL treeExpanding( const TreeExpansionEvent& Event ) throw (ExpandVetoException, RuntimeException);
-    virtual void SAL_CALL treeCollapsing( const TreeExpansionEvent& Event ) throw (ExpandVetoException, RuntimeException);
-    virtual void SAL_CALL treeExpanded( const TreeExpansionEvent& Event ) throw (RuntimeException);
-    virtual void SAL_CALL treeCollapsed( const TreeExpansionEvent& Event ) throw (RuntimeException);
+    virtual void SAL_CALL requestChildNodes( const TreeExpansionEvent& Event );
+    virtual void SAL_CALL treeExpanding( const TreeExpansionEvent& Event );
+    virtual void SAL_CALL treeCollapsing( const TreeExpansionEvent& Event );
+    virtual void SAL_CALL treeExpanded( const TreeExpansionEvent& Event );
+    virtual void SAL_CALL treeCollapsed( const TreeExpansionEvent& Event );
 
 	// XTreeEditListener
-    virtual void SAL_CALL nodeEditing( const Reference< XTreeNode >& Node ) throw (VetoException, RuntimeException);
-    virtual void SAL_CALL nodeEdited( const Reference< XTreeNode >& Node, const OUString& NewText ) throw (RuntimeException);
+    virtual void SAL_CALL nodeEditing( const Reference< XTreeNode >& Node );
+    virtual void SAL_CALL nodeEdited( const Reference< XTreeNode >& Node, const OUString& NewText );
 
 	// XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	Reference< XMultiComponentFactory > mxMultiComponentFactoryServer;
 	Reference< XComponentContext > mxComponentContext;
@@ -238,7 +238,7 @@ void DirectoryTree::fillNode( const Reference< XMutableTreeNode >& xNode )
 }
 
 // XTreeExpansionListener
-void SAL_CALL DirectoryTree::requestChildNodes( const TreeExpansionEvent& rEvent ) throw (RuntimeException)
+void SAL_CALL DirectoryTree::requestChildNodes( const TreeExpansionEvent& rEvent )
 {
 	if( rEvent.Node.is() && rEvent.Node->hasChildsOnDemand() )
 	{
@@ -251,19 +251,19 @@ void SAL_CALL DirectoryTree::requestChildNodes( const TreeExpansionEvent& rEvent
 	}
 }
 
-void SAL_CALL DirectoryTree::treeExpanding( const TreeExpansionEvent& /*rEvent*/ ) throw (ExpandVetoException, RuntimeException)
+void SAL_CALL DirectoryTree::treeExpanding( const TreeExpansionEvent& /*rEvent*/ )
 {
 }
 
-void SAL_CALL DirectoryTree::treeCollapsing( const TreeExpansionEvent&  ) throw (ExpandVetoException, RuntimeException)
+void SAL_CALL DirectoryTree::treeCollapsing( const TreeExpansionEvent&  )
 {
 }
 
-void SAL_CALL DirectoryTree::treeExpanded( const TreeExpansionEvent&  ) throw (RuntimeException)
+void SAL_CALL DirectoryTree::treeExpanded( const TreeExpansionEvent&  )
 {
 }
 
-void SAL_CALL DirectoryTree::treeCollapsed( const TreeExpansionEvent& /*rEvent*/ ) throw (RuntimeException)
+void SAL_CALL DirectoryTree::treeCollapsed( const TreeExpansionEvent& /*rEvent*/ )
 {
 /*
 	if( rEvent.Node != mxTreeDataModel->getRoot() )
@@ -280,16 +280,16 @@ void SAL_CALL DirectoryTree::treeCollapsed( const TreeExpansionEvent& /*rEvent*/
 }
 
 // XTreeEditListener
-void SAL_CALL DirectoryTree::nodeEditing( const Reference< XTreeNode >&  ) throw (VetoException, RuntimeException)
+void SAL_CALL DirectoryTree::nodeEditing( const Reference< XTreeNode >&  )
 {
 }
 
-void SAL_CALL DirectoryTree::nodeEdited( const Reference< XTreeNode >& , const OUString&  ) throw (RuntimeException)
+void SAL_CALL DirectoryTree::nodeEdited( const Reference< XTreeNode >& , const OUString&  )
 {
 }
 
 // XEventListener
-void SAL_CALL DirectoryTree::disposing( const ::com::sun::star::lang::EventObject&  ) throw (RuntimeException)
+void SAL_CALL DirectoryTree::disposing( const ::com::sun::star::lang::EventObject&  )
 {
 }
 

@@ -132,14 +132,14 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER2( VCLXAccessibleButton, VCLXAccessibleTextCompon
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleButton::getImplementationName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleButton::getImplementationName()
 {
 	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleButton" );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > VCLXAccessibleButton::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleButton::getSupportedServiceNames()
 {
 	Sequence< ::rtl::OUString > aNames(1);
 	aNames[0] = ::rtl::OUString::createFromAscii( "com.sun.star.awt.AccessibleButton" );
@@ -150,7 +150,7 @@ Sequence< ::rtl::OUString > VCLXAccessibleButton::getSupportedServiceNames() thr
 // XAccessibleContext
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleButton::getAccessibleName(  ) throw (RuntimeException)
+::rtl::OUString VCLXAccessibleButton::getAccessibleName(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -195,7 +195,7 @@ Sequence< ::rtl::OUString > VCLXAccessibleButton::getSupportedServiceNames() thr
 // XAccessibleAction
 // -----------------------------------------------------------------------------
 
-sal_Int32 VCLXAccessibleButton::getAccessibleActionCount( ) throw (RuntimeException)
+sal_Int32 VCLXAccessibleButton::getAccessibleActionCount( )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -204,7 +204,7 @@ sal_Int32 VCLXAccessibleButton::getAccessibleActionCount( ) throw (RuntimeExcept
 
 // -----------------------------------------------------------------------------
 
-sal_Bool VCLXAccessibleButton::doAccessibleAction ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool VCLXAccessibleButton::doAccessibleAction ( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -220,7 +220,7 @@ sal_Bool VCLXAccessibleButton::doAccessibleAction ( sal_Int32 nIndex ) throw (In
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleButton::getAccessibleActionDescription ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+::rtl::OUString VCLXAccessibleButton::getAccessibleActionDescription ( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -232,7 +232,7 @@ sal_Bool VCLXAccessibleButton::doAccessibleAction ( sal_Int32 nIndex ) throw (In
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleKeyBinding > VCLXAccessibleButton::getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessibleKeyBinding > VCLXAccessibleButton::getAccessibleActionKeyBinding( sal_Int32 nIndex )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -273,7 +273,7 @@ Reference< XAccessibleKeyBinding > VCLXAccessibleButton::getAccessibleActionKeyB
 // XAccessibleValue
 // -----------------------------------------------------------------------------
 
-Any VCLXAccessibleButton::getCurrentValue(  ) throw (RuntimeException)
+Any VCLXAccessibleButton::getCurrentValue(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -288,7 +288,7 @@ Any VCLXAccessibleButton::getCurrentValue(  ) throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-sal_Bool VCLXAccessibleButton::setCurrentValue( const Any& aNumber ) throw (RuntimeException)
+sal_Bool VCLXAccessibleButton::setCurrentValue( const Any& aNumber )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -314,7 +314,7 @@ sal_Bool VCLXAccessibleButton::setCurrentValue( const Any& aNumber ) throw (Runt
 
 // -----------------------------------------------------------------------------
 
-Any VCLXAccessibleButton::getMaximumValue(  ) throw (RuntimeException)
+Any VCLXAccessibleButton::getMaximumValue(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -326,7 +326,7 @@ Any VCLXAccessibleButton::getMaximumValue(  ) throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-Any VCLXAccessibleButton::getMinimumValue(  ) throw (RuntimeException)
+Any VCLXAccessibleButton::getMinimumValue(  )
 {
 	OExternalLockGuard aGuard( this );
 

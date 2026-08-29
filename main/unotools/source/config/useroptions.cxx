@@ -69,9 +69,9 @@ class SvtUserConfigChangeListener_Impl : public cppu::WeakImplHelper1
         ~SvtUserConfigChangeListener_Impl();
 
     //XChangesListener
-    virtual void SAL_CALL changesOccurred( const util::ChangesEvent& Event ) throw(RuntimeException);
+    virtual void SAL_CALL changesOccurred( const util::ChangesEvent& Event );
     //XEventListener
-    virtual void SAL_CALL disposing( const lang::EventObject& Source ) throw(RuntimeException);
+    virtual void SAL_CALL disposing( const lang::EventObject& Source );
 };
 
 class SvtUserOptions_Impl : public utl::ConfigurationBroadcaster
@@ -157,7 +157,7 @@ SvtUserConfigChangeListener_Impl::~SvtUserConfigChangeListener_Impl()
 /*-- 16.06.2009 14:22:56---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SvtUserConfigChangeListener_Impl::changesOccurred( const util::ChangesEvent& rEvent ) throw(RuntimeException)
+void SvtUserConfigChangeListener_Impl::changesOccurred( const util::ChangesEvent& rEvent )
 {
     if(rEvent.Changes.getLength())
         m_rParent.Notify();
@@ -165,7 +165,7 @@ void SvtUserConfigChangeListener_Impl::changesOccurred( const util::ChangesEvent
 /*-- 16.06.2009 14:22:56---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SvtUserConfigChangeListener_Impl::disposing( const lang::EventObject& rSource ) throw(RuntimeException)
+void SvtUserConfigChangeListener_Impl::disposing( const lang::EventObject& rSource )
 {
     try
     {

@@ -142,13 +142,13 @@ public:
 	DECLARE_XTYPEPROVIDER()
 
 	// XServiceInfo
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName ) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName );
 
 	// XAccessible
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > SAL_CALL getAccessibleContext(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > SAL_CALL getAccessibleContext(  );
 
 	// XAccessibleContext
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet > SAL_CALL getAccessibleStateSet(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet > SAL_CALL getAccessibleStateSet(  );
 };
 
 #endif // ACCESSIBILITY_STANDARD_ACCESSIBLEMENUBASECOMPONENT_HXX

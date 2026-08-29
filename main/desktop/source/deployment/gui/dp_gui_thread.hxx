@@ -52,7 +52,7 @@ public:
 
     using osl::Thread::join;
 
-    static void * operator new(std::size_t size) throw (std::bad_alloc);
+    static void * operator new(std::size_t size);
 
     static void operator delete(void * p) throw ();
 

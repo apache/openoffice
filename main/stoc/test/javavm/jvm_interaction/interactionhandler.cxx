@@ -72,16 +72,15 @@ using namespace com::sun::star::task;
 
 class Context: public WeakImplHelper1<XCurrentContext>
 {
-    virtual Any SAL_CALL getValueByName( const OUString& Name ) throw (RuntimeException);
+    virtual Any SAL_CALL getValueByName( const OUString& Name );
 };
 
 class InteractionHandler: public WeakImplHelper1<XInteractionHandler>
 {
-    virtual void SAL_CALL handle( const Reference< XInteractionRequest >& Request )
-        throw (RuntimeException);
+    virtual void SAL_CALL handle( const Reference< XInteractionRequest >& Request );
 };
 
-Any SAL_CALL Context::getValueByName( const OUString& Name) throw (RuntimeException)
+Any SAL_CALL Context::getValueByName( const OUString& Name)
 {
     Any retVal;
     if( Name.equals( OUSTR(INTERACTION_HANDLER_NAME)))
@@ -94,7 +93,6 @@ Any SAL_CALL Context::getValueByName( const OUString& Name) throw (RuntimeExcept
 }
 
 void SAL_CALL InteractionHandler::handle( const Reference< XInteractionRequest >& Request )
-        throw (RuntimeException)
 {
     Any anyExc= Request->getRequest();
     Sequence<Reference< XInteractionContinuation> >seqCont= Request->getContinuations();

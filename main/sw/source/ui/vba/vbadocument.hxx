@@ -45,29 +45,29 @@ public:
 	virtual ~SwVbaDocument();
 
     // XDocument
-    virtual css::uno::Reference< ooo::vba::word::XRange > SAL_CALL getContent() throw ( css::uno::RuntimeException );
-    virtual css::uno::Reference< ooo::vba::word::XRange > SAL_CALL Range( const css::uno::Any& rStart, const css::uno::Any& rEnd ) throw ( css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL BuiltInDocumentProperties( const css::uno::Any& index ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL CustomDocumentProperties( const css::uno::Any& index ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Bookmarks( const css::uno::Any& rIndex ) throw ( css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL Variables( const css::uno::Any& rIndex ) throw ( css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL getAttachedTemplate() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setAttachedTemplate( const css::uno::Any& _attachedtemplate ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Paragraphs( const css::uno::Any& rIndex ) throw ( css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL Styles( const css::uno::Any& rIndex ) throw ( css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL Tables( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Fields( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Shapes( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Sections( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-	virtual void SAL_CALL Activate() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL PageSetup() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< ooo::vba::word::XRange > SAL_CALL getContent();
+    virtual css::uno::Reference< ooo::vba::word::XRange > SAL_CALL Range( const css::uno::Any& rStart, const css::uno::Any& rEnd );
+    virtual css::uno::Any SAL_CALL BuiltInDocumentProperties( const css::uno::Any& index );
+    virtual css::uno::Any SAL_CALL CustomDocumentProperties( const css::uno::Any& index );
+    virtual css::uno::Any SAL_CALL Bookmarks( const css::uno::Any& rIndex );
+    virtual css::uno::Any SAL_CALL Variables( const css::uno::Any& rIndex );
+    virtual css::uno::Any SAL_CALL getAttachedTemplate();
+    virtual void SAL_CALL setAttachedTemplate( const css::uno::Any& _attachedtemplate );
+    virtual css::uno::Any SAL_CALL Paragraphs( const css::uno::Any& rIndex );
+    virtual css::uno::Any SAL_CALL Styles( const css::uno::Any& rIndex );
+    virtual css::uno::Any SAL_CALL Tables( const css::uno::Any& aIndex );
+    virtual css::uno::Any SAL_CALL Fields( const css::uno::Any& aIndex );
+    virtual css::uno::Any SAL_CALL Shapes( const css::uno::Any& aIndex );
+    virtual css::uno::Any SAL_CALL Sections( const css::uno::Any& aIndex );
+	virtual void SAL_CALL Activate();
+    virtual css::uno::Any SAL_CALL PageSetup();
 	// XInvocation
-	virtual css::uno::Reference< css::beans::XIntrospectionAccess > SAL_CALL getIntrospection(  ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL invoke( const ::rtl::OUString& aFunctionName, const css::uno::Sequence< css::uno::Any >& aParams, css::uno::Sequence< ::sal_Int16 >& aOutParamIndex, css::uno::Sequence< css::uno::Any >& aOutParam ) throw (css::lang::IllegalArgumentException, css::script::CannotConvertException, css::reflection::InvocationTargetException, css::uno::RuntimeException);
-	virtual void SAL_CALL setValue( const ::rtl::OUString& aPropertyName, const css::uno::Any& aValue ) throw (css::beans::UnknownPropertyException, css::script::CannotConvertException, css::reflection::InvocationTargetException, css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getValue( const ::rtl::OUString& aPropertyName ) throw (css::beans::UnknownPropertyException, css::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL hasMethod( const ::rtl::OUString& aName ) throw (css::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL hasProperty( const ::rtl::OUString& aName ) throw (css::uno::RuntimeException);
+	virtual css::uno::Reference< css::beans::XIntrospectionAccess > SAL_CALL getIntrospection(  );
+	virtual css::uno::Any SAL_CALL invoke( const ::rtl::OUString& aFunctionName, const css::uno::Sequence< css::uno::Any >& aParams, css::uno::Sequence< ::sal_Int16 >& aOutParamIndex, css::uno::Sequence< css::uno::Any >& aOutParam );
+	virtual void SAL_CALL setValue( const ::rtl::OUString& aPropertyName, const css::uno::Any& aValue );
+	virtual css::uno::Any SAL_CALL getValue( const ::rtl::OUString& aPropertyName );
+	virtual ::sal_Bool SAL_CALL hasMethod( const ::rtl::OUString& aName );
+	virtual ::sal_Bool SAL_CALL hasProperty( const ::rtl::OUString& aName );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

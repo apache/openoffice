@@ -205,7 +205,6 @@ StatusBar* StatusBarManager::GetStatusBar() const
 }
 
 void StatusBarManager::frameAction( const frame::FrameActionEvent& Action )
-throw ( uno::RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::frameAction" );
     ResetableGuard aGuard( m_aLock );
@@ -213,7 +212,7 @@ throw ( uno::RuntimeException )
         UpdateControllers();
 }
 
-void SAL_CALL StatusBarManager::disposing( const lang::EventObject& Source ) throw ( uno::RuntimeException )
+void SAL_CALL StatusBarManager::disposing( const lang::EventObject& Source )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::disposing" );
     {
@@ -234,7 +233,7 @@ void SAL_CALL StatusBarManager::disposing( const lang::EventObject& Source ) thr
 }
 
 // XComponent
-void SAL_CALL StatusBarManager::dispose() throw( uno::RuntimeException )
+void SAL_CALL StatusBarManager::dispose()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::dispose" );
     uno::Reference< lang::XComponent > xThis(
@@ -282,7 +281,7 @@ void SAL_CALL StatusBarManager::dispose() throw( uno::RuntimeException )
     }
 }
 
-void SAL_CALL StatusBarManager::addEventListener( const uno::Reference< lang::XEventListener >& xListener ) throw( uno::RuntimeException )
+void SAL_CALL StatusBarManager::addEventListener( const uno::Reference< lang::XEventListener >& xListener )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::addEventListener" );
     ResetableGuard aGuard( m_aLock );
@@ -295,7 +294,7 @@ void SAL_CALL StatusBarManager::addEventListener( const uno::Reference< lang::XE
         ( const uno::Reference< lang::XEventListener >* ) NULL ), xListener );
 }
 
-void SAL_CALL StatusBarManager::removeEventListener( const uno::Reference< lang::XEventListener >& xListener ) throw( uno::RuntimeException )
+void SAL_CALL StatusBarManager::removeEventListener( const uno::Reference< lang::XEventListener >& xListener )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::removeEventListener" );
     m_aListenerContainer.removeInterface( ::getCppuType(
@@ -303,7 +302,7 @@ void SAL_CALL StatusBarManager::removeEventListener( const uno::Reference< lang:
 }
 
 // XUIConfigurationListener
-void SAL_CALL StatusBarManager::elementInserted( const css::ui::ConfigurationEvent& ) throw ( uno::RuntimeException )
+void SAL_CALL StatusBarManager::elementInserted( const css::ui::ConfigurationEvent& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::elementInserted" );
     ResetableGuard aGuard( m_aLock );
@@ -312,7 +311,7 @@ void SAL_CALL StatusBarManager::elementInserted( const css::ui::ConfigurationEve
         return;
 }
 
-void SAL_CALL StatusBarManager::elementRemoved( const css::ui::ConfigurationEvent& ) throw ( uno::RuntimeException )
+void SAL_CALL StatusBarManager::elementRemoved( const css::ui::ConfigurationEvent& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::elementRemoved" );
     ResetableGuard aGuard( m_aLock );
@@ -321,7 +320,7 @@ void SAL_CALL StatusBarManager::elementRemoved( const css::ui::ConfigurationEven
         return;
 }
 
-void SAL_CALL StatusBarManager::elementReplaced( const css::ui::ConfigurationEvent& ) throw ( uno::RuntimeException )
+void SAL_CALL StatusBarManager::elementReplaced( const css::ui::ConfigurationEvent& )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarManager::elementReplaced" );
     ResetableGuard aGuard( m_aLock );

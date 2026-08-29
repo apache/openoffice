@@ -64,18 +64,14 @@ public:
 
     //----- XPane -------------------------------------------------------------
 
-    virtual sal_Bool SAL_CALL isVisible (void)
-        throw (cssu::RuntimeException);
+    virtual sal_Bool SAL_CALL isVisible (void);
 
-    virtual void SAL_CALL setVisible (sal_Bool bIsVisible)
-        throw (cssu::RuntimeException);
+    virtual void SAL_CALL setVisible (sal_Bool bIsVisible);
 
-    virtual cssu::Reference<css::accessibility::XAccessible> SAL_CALL getAccessible (void)
-        throw (cssu::RuntimeException);
+    virtual cssu::Reference<css::accessibility::XAccessible> SAL_CALL getAccessible (void);
 
     virtual void SAL_CALL setAccessible (
-        const cssu::Reference<css::accessibility::XAccessible>& rxAccessible)
-        throw (cssu::RuntimeException);
+        const cssu::Reference<css::accessibility::XAccessible>& rxAccessible);
 
 
     //-------------------------------------------------------------------------
@@ -84,8 +80,7 @@ public:
 
 protected:
     virtual ::com::sun::star::uno::Reference<com::sun::star::rendering::XCanvas>
-        CreateCanvas (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        CreateCanvas (void);
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;

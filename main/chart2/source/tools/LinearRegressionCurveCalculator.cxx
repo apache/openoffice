@@ -53,7 +53,6 @@ LinearRegressionCurveCalculator::~LinearRegressionCurveCalculator()
 void SAL_CALL LinearRegressionCurveCalculator::recalculateRegression(
     const uno::Sequence< double >& aXValues,
     const uno::Sequence< double >& aYValues )
-    throw (uno::RuntimeException)
 {
     RegressionCalculationHelper::tDoubleVectorPair aValues(
         RegressionCalculationHelper::cleanup(
@@ -89,8 +88,6 @@ void SAL_CALL LinearRegressionCurveCalculator::recalculateRegression(
 }
 
 double SAL_CALL LinearRegressionCurveCalculator::getCurveValue( double x )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     double fResult;
     ::rtl::math::setNan( & fResult );
@@ -109,8 +106,6 @@ uno::Sequence< geometry::RealPoint2D > SAL_CALL LinearRegressionCurveCalculator:
     const uno::Reference< chart2::XScaling >& xScalingX,
     const uno::Reference< chart2::XScaling >& xScalingY,
     ::sal_Bool bMaySkipPointsInCalculation )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     if( bMaySkipPointsInCalculation &&
         isLinearScaling( xScalingX ) &&

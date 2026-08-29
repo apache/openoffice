@@ -56,224 +56,224 @@ namespace svxform
 	}
 
 	// Reference< XPropertySet>
-	Reference< XPropertySetInfo> DataColumn::getPropertySetInfo() const throw( RuntimeException )
+	Reference< XPropertySetInfo> DataColumn::getPropertySetInfo() const
 	{
 		return m_xPropertySet->getPropertySetInfo();
 	}
 
-	void DataColumn::setPropertyValue(const ::rtl::OUString& aPropertyName, const Any& aValue) throw( UnknownPropertyException,  PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException )
+	void DataColumn::setPropertyValue(const ::rtl::OUString& aPropertyName, const Any& aValue)
 	{
 		m_xPropertySet->setPropertyValue(aPropertyName, aValue);
 	}
 
-	Any DataColumn::getPropertyValue(const ::rtl::OUString& PropertyName) const throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
+	Any DataColumn::getPropertyValue(const ::rtl::OUString& PropertyName) const
 	{
 		return m_xPropertySet->getPropertyValue(PropertyName);
 	}
 
-	void DataColumn::addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener>& xListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
+	void DataColumn::addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener>& xListener)
 	{
 		m_xPropertySet->addPropertyChangeListener(aPropertyName, xListener);
 	}
 
-	void DataColumn::removePropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener>& aListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
+	void DataColumn::removePropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference< XPropertyChangeListener>& aListener)
 	{
 		m_xPropertySet->removePropertyChangeListener(aPropertyName, aListener);
 	}
 
-	void DataColumn::addVetoableChangeListener(const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener>& aListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
+	void DataColumn::addVetoableChangeListener(const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener>& aListener)
 	{
 		m_xPropertySet->addVetoableChangeListener(PropertyName, aListener);
 	}
 
-	void DataColumn::removeVetoableChangeListener(const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener>& aListener) throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
+	void DataColumn::removeVetoableChangeListener(const ::rtl::OUString& PropertyName, const Reference< XVetoableChangeListener>& aListener)
 	{
 		m_xPropertySet->removeVetoableChangeListener(PropertyName, aListener);
 	}
 
 	// XColumn
-	sal_Bool DataColumn::wasNull() throw( SQLException, RuntimeException )
+	sal_Bool DataColumn::wasNull()
 	{
 		return m_xColumn->wasNull();
 	}
 
-	::rtl::OUString DataColumn::getString() throw( SQLException, RuntimeException )
+	::rtl::OUString DataColumn::getString()
 	{
 		return m_xColumn->getString();
 	}
 
-	sal_Bool DataColumn::getBoolean() throw( SQLException, RuntimeException )
+	sal_Bool DataColumn::getBoolean()
 	{
 		return m_xColumn->getBoolean();
 	}
 
-	sal_Int8 DataColumn::getByte() throw( SQLException, RuntimeException )
+	sal_Int8 DataColumn::getByte()
 	{
 		return m_xColumn->getByte();
 	}
 
-	sal_Int16 DataColumn::getShort() throw( SQLException, RuntimeException )
+	sal_Int16 DataColumn::getShort()
 	{
 		return m_xColumn->getShort();
 	}
 
-	sal_Int32 DataColumn::getInt() throw( SQLException, RuntimeException )
+	sal_Int32 DataColumn::getInt()
 	{
 		return m_xColumn->getInt();
 	}
 
-	sal_Int64 DataColumn::getLong() throw( SQLException, RuntimeException )
+	sal_Int64 DataColumn::getLong()
 	{
 		return m_xColumn->getLong();
 	}
 
-	float DataColumn::getFloat() throw( SQLException, RuntimeException )
+	float DataColumn::getFloat()
 	{
 		return m_xColumn->getFloat();
 	}
 
-	double DataColumn::getDouble() throw( SQLException, RuntimeException )
+	double DataColumn::getDouble()
 	{
 		return m_xColumn->getDouble();
 	}
 
-	Sequence< sal_Int8 > DataColumn::getBytes() throw( SQLException, RuntimeException )
+	Sequence< sal_Int8 > DataColumn::getBytes()
 	{
 		return m_xColumn->getBytes();
 	}
 
-	com::sun::star::util::Date DataColumn::getDate() throw( SQLException, RuntimeException )
+	com::sun::star::util::Date DataColumn::getDate()
 	{
 		return m_xColumn->getDate();
 	}
 
-	com::sun::star::util::Time DataColumn::getTime() throw( SQLException, RuntimeException )
+	com::sun::star::util::Time DataColumn::getTime()
 	{
 		return m_xColumn->getTime();
 	}
 
-	com::sun::star::util::DateTime DataColumn::getTimestamp() throw( SQLException, RuntimeException )
+	com::sun::star::util::DateTime DataColumn::getTimestamp()
 	{
 		return m_xColumn->getTimestamp();
 	}
 
-	Reference< XInputStream> DataColumn::getBinaryStream() throw( SQLException, RuntimeException )
+	Reference< XInputStream> DataColumn::getBinaryStream()
 	{
 		return m_xColumn->getBinaryStream();
 	}
 
-	Reference< XInputStream> DataColumn::getCharacterStream() throw( SQLException, RuntimeException )
+	Reference< XInputStream> DataColumn::getCharacterStream()
 	{
 		return m_xColumn->getCharacterStream();
 	}
 
-	Any DataColumn::getObject(const Reference< XNameAccess>& typeMap) throw( SQLException, RuntimeException )
+	Any DataColumn::getObject(const Reference< XNameAccess>& typeMap)
 	{
 		return m_xColumn->getObject(typeMap);
 	}
 
-	Reference< XRef> DataColumn::getRef() throw( SQLException, RuntimeException )
+	Reference< XRef> DataColumn::getRef()
 	{
 		return m_xColumn->getRef();
 	}
 
-	Reference< XBlob> DataColumn::getBlob() throw( SQLException, RuntimeException )
+	Reference< XBlob> DataColumn::getBlob()
 	{
 		return m_xColumn->getBlob();
 	}
 
-	Reference< XClob> DataColumn::getClob() throw( SQLException, RuntimeException )
+	Reference< XClob> DataColumn::getClob()
 	{
 		return m_xColumn->getClob();
 	}
 
-	Reference< XArray> DataColumn::getArray() throw( SQLException, RuntimeException )
+	Reference< XArray> DataColumn::getArray()
 	{
 		return m_xColumn->getArray();
 	}
 
 	// XColumnUpdate
-	void DataColumn::updateNull() throw( SQLException, RuntimeException )
+	void DataColumn::updateNull()
 	{
 		m_xColumnUpdate->updateNull();
 	}
 
-	void DataColumn::updateBoolean(sal_Bool x) throw( SQLException, RuntimeException )
+	void DataColumn::updateBoolean(sal_Bool x)
 	{
 		m_xColumnUpdate->updateBoolean(x);
 	}
 
-	void DataColumn::updateByte(sal_Int8 x) throw( SQLException, RuntimeException )
+	void DataColumn::updateByte(sal_Int8 x)
 	{
 		m_xColumnUpdate->updateByte(x);
 	}
 
-	void DataColumn::updateShort(sal_Int16 x) throw( SQLException, RuntimeException )
+	void DataColumn::updateShort(sal_Int16 x)
 	{
 		m_xColumnUpdate->updateShort(x);
 	}
 
-	void DataColumn::updateInt(sal_Int32 x) throw( SQLException, RuntimeException )
+	void DataColumn::updateInt(sal_Int32 x)
 	{
 		m_xColumnUpdate->updateInt(x);
 	}
 
-	void DataColumn::updateLong(sal_Int64 x) throw( SQLException, RuntimeException )
+	void DataColumn::updateLong(sal_Int64 x)
 	{
 		m_xColumnUpdate->updateLong(x);
 	}
 
-	void DataColumn::updateFloat(float x) throw( SQLException, RuntimeException )
+	void DataColumn::updateFloat(float x)
 	{
 		m_xColumnUpdate->updateFloat(x);
 	}
 
-	void DataColumn::updateDouble(double x) throw( SQLException, RuntimeException )
+	void DataColumn::updateDouble(double x)
 	{
 		m_xColumnUpdate->updateDouble(x);
 	}
 
-	void DataColumn::updateString(const ::rtl::OUString& x) throw( SQLException, RuntimeException )
+	void DataColumn::updateString(const ::rtl::OUString& x)
 	{
 		m_xColumnUpdate->updateString(x);
 	}
 
-	void DataColumn::updateBytes(const Sequence< sal_Int8 >& x) throw( SQLException, RuntimeException )
+	void DataColumn::updateBytes(const Sequence< sal_Int8 >& x)
 	{
 		m_xColumnUpdate->updateBytes(x);
 	}
 
-	void DataColumn::updateDate(const com::sun::star::util::Date& x) throw( SQLException, RuntimeException )
+	void DataColumn::updateDate(const com::sun::star::util::Date& x)
 	{
 		m_xColumnUpdate->updateDate(x);
 	}
 
-	void DataColumn::updateTime(const com::sun::star::util::Time& x) throw( SQLException, RuntimeException )
+	void DataColumn::updateTime(const com::sun::star::util::Time& x)
 	{
 		m_xColumnUpdate->updateTime(x);
 	}
 
-	void DataColumn::updateTimestamp(const com::sun::star::util::DateTime& x) throw( SQLException, RuntimeException )
+	void DataColumn::updateTimestamp(const com::sun::star::util::DateTime& x)
 	{
 		m_xColumnUpdate->updateTimestamp(x);
 	}
 
-	void DataColumn::updateBinaryStream(const Reference< XInputStream>& x, sal_Int32 length) throw( SQLException, RuntimeException )
+	void DataColumn::updateBinaryStream(const Reference< XInputStream>& x, sal_Int32 length)
 	{
 		m_xColumnUpdate->updateBinaryStream(x, length);
 	}
 
-	void DataColumn::updateCharacterStream(const Reference< XInputStream>& x, sal_Int32 length) throw( SQLException, RuntimeException )
+	void DataColumn::updateCharacterStream(const Reference< XInputStream>& x, sal_Int32 length)
 	{
 		m_xColumnUpdate->updateCharacterStream(x, length);
 	}
 
-	void DataColumn::updateObject(const Any& x) throw( SQLException, RuntimeException )
+	void DataColumn::updateObject(const Any& x)
 	{
 		m_xColumnUpdate->updateObject(x);
 	}
 
-	void DataColumn::updateNumericObject(const Any& x, sal_Int32 scale) throw( SQLException, RuntimeException )
+	void DataColumn::updateNumericObject(const Any& x, sal_Int32 scale)
 	{
 		m_xColumnUpdate->updateNumericObject(x, scale);
 	}

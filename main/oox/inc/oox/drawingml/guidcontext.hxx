@@ -33,7 +33,7 @@ namespace oox { namespace drawingml {
 
 	public:
 		GuidContext( ::oox::core::ContextHandler& rParent, rtl::OUString& rGuidId );
-		virtual void SAL_CALL characters( const ::rtl::OUString& aChars ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL characters( const ::rtl::OUString& aChars );
 
 	private:
 

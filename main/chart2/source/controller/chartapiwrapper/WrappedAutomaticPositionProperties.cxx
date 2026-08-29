@@ -48,12 +48,9 @@ public:
     WrappedAutomaticPositionProperty();
     virtual ~WrappedAutomaticPositionProperty();
 
-    virtual void setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                                    throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException);
-    virtual Any getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                                    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
-    virtual Any getPropertyDefault( const Reference< beans::XPropertyState >& xInnerPropertyState ) const
-                                    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual void setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const;
+    virtual Any getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const;
+    virtual Any getPropertyDefault( const Reference< beans::XPropertyState >& xInnerPropertyState ) const;
 };
 
 WrappedAutomaticPositionProperty::WrappedAutomaticPositionProperty()
@@ -65,7 +62,6 @@ WrappedAutomaticPositionProperty::~WrappedAutomaticPositionProperty()
 }
 
 void WrappedAutomaticPositionProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     if( xInnerPropertySet.is() )
     {
@@ -90,7 +86,6 @@ void WrappedAutomaticPositionProperty::setPropertyValue( const Any& rOuterValue,
 }
 
 Any WrappedAutomaticPositionProperty::getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet( getPropertyDefault( Reference< beans::XPropertyState >( xInnerPropertySet, uno::UNO_QUERY ) ) );
     if( xInnerPropertySet.is() )
@@ -103,7 +98,6 @@ Any WrappedAutomaticPositionProperty::getPropertyValue( const Reference< beans::
 }
 
 Any WrappedAutomaticPositionProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     aRet <<= false;

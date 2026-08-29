@@ -87,22 +87,22 @@ namespace dbaccess
 		DECLARE_XINTERFACE( )
 
 	    // com::sun::star::lang::XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 	    // ::com::sun::star::lang::XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 		// ::com::sun::star::container::XChild
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  );
+		virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent );
 
 	    // ::comphelper::OPropertyArrayUsageHelper
 		virtual ::cppu::IPropertyArrayHelper* createArrayHelper() const;
 
 	    // ::cppu::OPropertySetHelper
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
-		virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue ) throw (::com::sun::star::uno::Exception);
+		virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 
     private:
         void    impl_registerProperties();
@@ -125,10 +125,10 @@ namespace dbaccess
 		OTableColumn(const ::rtl::OUString& _rName);
 
 	    // XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 	    // XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
 
 	    // OPropertyArrayUsageHelper
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
@@ -166,10 +166,10 @@ namespace dbaccess
         );
 
 	    // XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 	    // XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
 
 	    // *Property*
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
@@ -214,15 +214,13 @@ namespace dbaccess
 								::com::sun::star::uno::Any & rConvertedValue,
 								::com::sun::star::uno::Any & rOldValue,
 								sal_Int32 nHandle,
-								const ::com::sun::star::uno::Any& rValue )
-									throw (::com::sun::star::lang::IllegalArgumentException);
+								const ::com::sun::star::uno::Any& rValue );
 		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
 									sal_Int32 nHandle,
 									const ::com::sun::star::uno::Any& rValue
-													 )
-													 throw (::com::sun::star::uno::Exception);
+													 );
 
-		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 
     protected:
         ::rtl::OUString impl_getPropertyNameFromHandle( const sal_Int32 _nHandle ) const;
@@ -249,11 +247,11 @@ namespace dbaccess
             const bool _bPureWrap, const bool _bIsDescriptor );
 
 	// com::sun::star::lang::XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 	// ::com::sun::star::lang::XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// OIdPropertyArrayUsageHelper
 		virtual ::cppu::IPropertyArrayHelper* createArrayHelper(sal_Int32 nId) const;
@@ -268,13 +266,11 @@ namespace dbaccess
 								::com::sun::star::uno::Any & rConvertedValue,
 								::com::sun::star::uno::Any & rOldValue,
 								sal_Int32 nHandle,
-								const ::com::sun::star::uno::Any& rValue )
-									throw (::com::sun::star::lang::IllegalArgumentException);
+								const ::com::sun::star::uno::Any& rValue );
 		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
 									sal_Int32 nHandle,
 									const ::com::sun::star::uno::Any& rValue
-													 )
-													 throw (::com::sun::star::uno::Exception);
+													 );
 
     protected:
         using OColumnWrapper::getFastPropertyValue;
@@ -299,11 +295,11 @@ namespace dbaccess
 							 const bool _bPureWrap );
 
 	// ::com::sun::star::lang::XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 	// ::com::sun::star::lang::XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// OIdPropertyArrayUsageHelper
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();

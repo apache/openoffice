@@ -43,8 +43,8 @@ class CollectionEnumeration : public ::cppu::WeakImplHelper1< container::XEnumer
 {
 public:
     explicit CollectionEnumeration( const ::rtl::Reference< CollectionBase >& rxCollection );
-    virtual sal_Bool SAL_CALL hasMoreElements() throw (uno::RuntimeException);
-    virtual uno::Any SAL_CALL nextElement() throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasMoreElements();
+    virtual uno::Any SAL_CALL nextElement();
 
 private:
     ::rtl::Reference< CollectionBase > mxCollection;
@@ -57,12 +57,12 @@ CollectionEnumeration::CollectionEnumeration( const ::rtl::Reference< Collection
 {
 }
 
-sal_Bool SAL_CALL CollectionEnumeration::hasMoreElements() throw (uno::RuntimeException)
+sal_Bool SAL_CALL CollectionEnumeration::hasMoreElements()
 {
     return mnCurrIndex <= mxCollection->getCount();
 }
 
-uno::Any SAL_CALL CollectionEnumeration::nextElement() throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+uno::Any SAL_CALL CollectionEnumeration::nextElement()
 {
     if( hasMoreElements() )
         return mxCollection->getItemByIndex( mnCurrIndex++ );
@@ -85,15 +85,15 @@ public:
     explicit SequenceToContainer( const ::std::vector< uno::Reference< container::XNamed > >& rElements, const uno::Type& rElementType );
     explicit SequenceToContainer( const ::std::vector< beans::NamedValue >& rElements, const uno::Type& rElementType );
     // XIndexAccess
-    virtual sal_Int32 SAL_CALL getCount() throw (uno::RuntimeException);
-    virtual uno::Any SAL_CALL getByIndex( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getCount();
+    virtual uno::Any SAL_CALL getByIndex( sal_Int32 nIndex );
     // XNameAccess
-    virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& rName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
-    virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames() throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& rName ) throw (uno::RuntimeException);
+    virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& rName );
+    virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& rName );
     // XElementAccess
-    virtual uno::Type SAL_CALL getElementType() throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements() throw (uno::RuntimeException);
+    virtual uno::Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
 private:
     typedef uno::Sequence< ::rtl::OUString > ElementNameSequence;
@@ -139,19 +139,19 @@ SequenceToContainer::SequenceToContainer( const ::std::vector< beans::NamedValue
     }
 }
 
-sal_Int32 SAL_CALL SequenceToContainer::getCount() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL SequenceToContainer::getCount()
 {
     return static_cast< sal_Int32 >( maElements.size() );
 }
 
-uno::Any SAL_CALL SequenceToContainer::getByIndex( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
+uno::Any SAL_CALL SequenceToContainer::getByIndex( sal_Int32 nIndex )
 {
     if( (0 <= nIndex) && (nIndex < getCount()) )
         return maElements[ static_cast< size_t >( nIndex ) ];
     throw lang::IndexOutOfBoundsException();
 }
 
-uno::Any SAL_CALL SequenceToContainer::getByName( const ::rtl::OUString& rName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+uno::Any SAL_CALL SequenceToContainer::getByName( const ::rtl::OUString& rName )
 {
     ElementMap::iterator aIt = maElementMap.find( rName );
     if( aIt != maElementMap.end() )
@@ -159,22 +159,22 @@ uno::Any SAL_CALL SequenceToContainer::getByName( const ::rtl::OUString& rName )
     throw container::NoSuchElementException();
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL SequenceToContainer::getElementNames() throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL SequenceToContainer::getElementNames()
 {
     return maElementNames;
 }
 
-sal_Bool SAL_CALL SequenceToContainer::hasByName( const ::rtl::OUString& rName ) throw (uno::RuntimeException)
+sal_Bool SAL_CALL SequenceToContainer::hasByName( const ::rtl::OUString& rName )
 {
     return maElementMap.count( rName ) > 0;
 }
 
-uno::Type SAL_CALL SequenceToContainer::getElementType() throw (uno::RuntimeException)
+uno::Type SAL_CALL SequenceToContainer::getElementType()
 {
     return maElementType;
 }
 
-sal_Bool SAL_CALL SequenceToContainer::hasElements() throw (uno::RuntimeException)
+sal_Bool SAL_CALL SequenceToContainer::hasElements()
 {
     return !maElements.empty();
 }
@@ -189,7 +189,7 @@ CollectionBase::CollectionBase( const uno::Type& rElementType ) :
 {
 }
 
-sal_Int32 SAL_CALL CollectionBase::getCount() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL CollectionBase::getCount()
 {
     if( mxIndexAccess.is() )
         return mxIndexAccess->getCount();
@@ -198,17 +198,17 @@ sal_Int32 SAL_CALL CollectionBase::getCount() throw (uno::RuntimeException)
     throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "No element container set." ) ), 0 );
 }
 
-uno::Reference< container::XEnumeration > SAL_CALL CollectionBase::createEnumeration() throw (uno::RuntimeException)
+uno::Reference< container::XEnumeration > SAL_CALL CollectionBase::createEnumeration()
 {
     return new CollectionEnumeration( this );
 }
 
-uno::Type SAL_CALL CollectionBase::getElementType() throw (uno::RuntimeException)
+uno::Type SAL_CALL CollectionBase::getElementType()
 {
     return maElementType;
 }
 
-sal_Bool SAL_CALL CollectionBase::hasElements() throw (uno::RuntimeException)
+sal_Bool SAL_CALL CollectionBase::hasElements()
 {
     if( mxIndexAccess.is() )
         return mxIndexAccess->hasElements();
@@ -217,7 +217,7 @@ sal_Bool SAL_CALL CollectionBase::hasElements() throw (uno::RuntimeException)
     throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "No element container set." ) ), 0 );
 }
 
-::rtl::OUString SAL_CALL CollectionBase::getDefaultMethodName() throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL CollectionBase::getDefaultMethodName()
 {
     static ::rtl::OUString saDefMethodName( RTL_CONSTASCII_USTRINGPARAM( "Item" ) );
     return saDefMethodName;
@@ -227,7 +227,7 @@ sal_Bool SAL_CALL CollectionBase::hasElements() throw (uno::RuntimeException)
 
 void CollectionBase::initContainer(
         const uno::Reference< container::XElementAccess >& rxElementAccess,
-        ContainerType eContainerType ) throw (uno::RuntimeException)
+        ContainerType eContainerType )
 {
     mxIndexAccess.set( rxElementAccess, uno::UNO_QUERY );
     mxNameAccess.set( rxElementAccess, uno::UNO_QUERY );
@@ -242,19 +242,19 @@ void CollectionBase::initContainer(
     }
 }
 
-void CollectionBase::initElements( const ::std::vector< uno::Reference< container::XNamed > >& rElements, ContainerType eContainerType ) throw (uno::RuntimeException)
+void CollectionBase::initElements( const ::std::vector< uno::Reference< container::XNamed > >& rElements, ContainerType eContainerType )
 {
     // SequenceToContainer derives twice from XElementAccess, need to resolve ambiguity
     initContainer( static_cast< container::XIndexAccess* >( new SequenceToContainer( rElements, maElementType ) ), eContainerType );
 }
 
-void CollectionBase::initElements( const ::std::vector< beans::NamedValue >& rElements, ContainerType eContainerType ) throw (uno::RuntimeException)
+void CollectionBase::initElements( const ::std::vector< beans::NamedValue >& rElements, ContainerType eContainerType )
 {
     // SequenceToContainer derives twice from XElementAccess, need to resolve ambiguity
     initContainer( static_cast< container::XIndexAccess* >( new SequenceToContainer( rElements, maElementType ) ), eContainerType );
 }
 
-uno::Any CollectionBase::createCollectionItem( const uno::Any& rElement, const uno::Any& rIndex ) throw (css::uno::RuntimeException)
+uno::Any CollectionBase::createCollectionItem( const uno::Any& rElement, const uno::Any& rIndex )
 {
     uno::Any aItem = mbConvertOnDemand ? implCreateCollectionItem( rElement, rIndex ) : rElement;
     if( aItem.hasValue() )
@@ -262,7 +262,7 @@ uno::Any CollectionBase::createCollectionItem( const uno::Any& rElement, const u
     throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Invalid item." ) ), 0 );
 }
 
-uno::Any CollectionBase::getItemByIndex( sal_Int32 nIndex ) throw (uno::RuntimeException)
+uno::Any CollectionBase::getItemByIndex( sal_Int32 nIndex )
 {
     if( mxIndexAccess.is() )
     {
@@ -282,7 +282,7 @@ uno::Any CollectionBase::getItemByIndex( sal_Int32 nIndex ) throw (uno::RuntimeE
     throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "No element container set." ) ), 0 );
 }
 
-uno::Any CollectionBase::getItemByName( const ::rtl::OUString& rName ) throw (uno::RuntimeException)
+uno::Any CollectionBase::getItemByName( const ::rtl::OUString& rName )
 {
     if( mxNameAccess.is() )
     {
@@ -306,7 +306,7 @@ uno::Any CollectionBase::getItemByName( const ::rtl::OUString& rName ) throw (un
     throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "No element container set." ) ), 0 );
 }
 
-uno::Any CollectionBase::getAnyItemOrThis( const uno::Any& rIndex ) throw (uno::RuntimeException)
+uno::Any CollectionBase::getAnyItemOrThis( const uno::Any& rIndex )
 {
     if( !rIndex.hasValue() )
         return uno::Any( uno::Reference< XCollectionBase >( this ) );
@@ -318,7 +318,7 @@ uno::Any CollectionBase::getAnyItemOrThis( const uno::Any& rIndex ) throw (uno::
 
 // protected ------------------------------------------------------------------
 
-uno::Any CollectionBase::implCreateCollectionItem( const uno::Any& /*rElement*/, const uno::Any& /*rIndex*/ ) throw (uno::RuntimeException)
+uno::Any CollectionBase::implCreateCollectionItem( const uno::Any& /*rElement*/, const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Creation of VBA implementation object not implemented." ) ), 0 );
 }

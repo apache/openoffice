@@ -42,8 +42,8 @@ public:
 	virtual ~SwVbaVariables() {}
 
 	// XEnumerationAccess
-	virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+	virtual css::uno::Type SAL_CALL getElementType();
+	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
 	// SwVbaVariables_BASE
 	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );
@@ -51,7 +51,7 @@ public:
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();
 
 	// XVariables
-	virtual css::uno::Any SAL_CALL Add( const rtl::OUString& rName, const css::uno::Any& rValue ) throw (css::uno::RuntimeException);
+	virtual css::uno::Any SAL_CALL Add( const rtl::OUString& rName, const css::uno::Any& rValue );
 };
 
 #endif /* SW_VBA_VARIABLES_HXX */

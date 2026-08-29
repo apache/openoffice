@@ -67,29 +67,20 @@ public:
     virtual ::com::sun::star::awt::Size getCurrentSizeForReference();
 
     // ____ XShape ____
-    virtual ::com::sun::star::awt::Point SAL_CALL getPosition()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setPosition( const ::com::sun::star::awt::Point& aPosition )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setSize( const ::com::sun::star::awt::Size& aSize )
-        throw (::com::sun::star::beans::PropertyVetoException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Point SAL_CALL getPosition();
+    virtual void SAL_CALL setPosition( const ::com::sun::star::awt::Point& aPosition );
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize();
+    virtual void SAL_CALL setSize( const ::com::sun::star::awt::Size& aSize );
 
     // ____ XShapeDescriptor (base of XShape) ____
-    virtual ::rtl::OUString SAL_CALL getShapeType()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getShapeType();
 
     // ____ XComponent ____
-    virtual void SAL_CALL dispose()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
     virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference<
-                                            ::com::sun::star::lang::XEventListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+                                            ::com::sun::star::lang::XEventListener >& xListener );
     virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference<
-                                               ::com::sun::star::lang::XEventListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+                                               ::com::sun::star::lang::XEventListener >& aListener );
 
 protected:
     // ____ WrappedPropertySet ____

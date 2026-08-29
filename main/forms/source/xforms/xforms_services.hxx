@@ -33,16 +33,13 @@ namespace frm
 {
     com::sun::star::uno::Reference<com::sun::star::uno::XInterface>
     SAL_CALL Binding_CreateInstance(
-        const com::sun::star::uno::Reference<com::sun::star::lang::XMultiServiceFactory>& _rxFactory)
-        throw( com::sun::star::uno::RuntimeException );
+        const com::sun::star::uno::Reference<com::sun::star::lang::XMultiServiceFactory>& _rxFactory);
 
     com::sun::star::uno::Reference<com::sun::star::uno::XInterface>
     SAL_CALL Model_CreateInstance(
-        const com::sun::star::uno::Reference<com::sun::star::lang::XMultiServiceFactory>& _rxFactory)
-        throw( com::sun::star::uno::RuntimeException );
+        const com::sun::star::uno::Reference<com::sun::star::lang::XMultiServiceFactory>& _rxFactory);
 
     com::sun::star::uno::Reference<com::sun::star::uno::XInterface>
     SAL_CALL XForms_CreateInstance(
-        const com::sun::star::uno::Reference<com::sun::star::lang::XMultiServiceFactory>& _rxFactory)
-        throw( com::sun::star::uno::RuntimeException );
+        const com::sun::star::uno::Reference<com::sun::star::lang::XMultiServiceFactory>& _rxFactory);
 }

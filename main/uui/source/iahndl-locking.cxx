@@ -64,7 +64,6 @@ handleLockedDocumentRequest_(
     uno::Sequence< uno::Reference< task::XInteractionContinuation > > const &
         rContinuations,
     sal_uInt16 nMode )
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Reference< task::XInteractionApprove > xApprove;
     uno::Reference< task::XInteractionDisapprove > xDisapprove;
@@ -156,7 +155,6 @@ handleChangedByOthersRequest_(
     Window * pParent,
     uno::Sequence< uno::Reference< task::XInteractionContinuation > > const &
         rContinuations )
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Reference< task::XInteractionApprove > xApprove;
     uno::Reference< task::XInteractionAbort > xAbort;
@@ -195,7 +193,6 @@ handleLockFileIgnoreRequest_(
     Window * pParent,
     uno::Sequence< uno::Reference< task::XInteractionContinuation > > const &
         rContinuations )
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Reference< task::XInteractionApprove > xApprove;
     uno::Reference< task::XInteractionAbort > xAbort;
@@ -234,7 +231,6 @@ handleLockFileIgnoreRequest_(
 bool
 UUIInteractionHelper::handleLockedDocumentRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((::com::sun::star::uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 
@@ -278,7 +274,6 @@ UUIInteractionHelper::handleLockedDocumentRequest(
 bool
 UUIInteractionHelper::handleChangedByOthersRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 
@@ -295,7 +290,6 @@ UUIInteractionHelper::handleChangedByOthersRequest(
 bool
 UUIInteractionHelper::handleLockFileIgnoreRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 
