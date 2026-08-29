@@ -2099,7 +2099,7 @@ void Complex::Sech(void) THROWDEF_RTE_IAE
 {
 
     Cosh();
-    Num = 1.0 / Num;  
+    Num = 1.0 / Num;
 }
 
 
