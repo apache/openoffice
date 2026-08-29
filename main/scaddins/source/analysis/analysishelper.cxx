@@ -1934,10 +1934,7 @@ double Complex::Arg( void ) const
 	if( Num.real() == 0.0 && Num.imag() == 0.0 )
 		THROW_IAE;
 
-	double	phi = acos( Num.real() / Abs() );
-
-	if( Num.imag() < 0.0 )
-		phi = -phi;
+	double	phi = std::atan2(Num.imag(), Num.real());
 
 	return phi;
 }
@@ -1956,68 +1953,34 @@ void Complex::Power( double fPower )
 			THROW_IAE;
 	}
 
-	double		p, phi;
-
-	p = Abs();
-
-	phi = acos( Num.real() / p );
-	if( Num.imag() < 0.0 )
-		phi = -phi;
-
-	p = pow( p, fPower );
-	phi *= fPower;
-
-	Num = double_complex (cos( phi ) * p, sin( phi ) * p);
+	Num = std::pow(Num , fPower);
 }
 
 
 void Complex::Sqrt( void )
 {
-	static const double	fMultConst = 0.7071067811865475;	// ...2440084436210485 = 1/sqrt(2)
-	double	p = Abs();
-	double	i_ = sqrt( p - Num.real() ) * fMultConst;
 
-	Num = double_complex (sqrt( p + Num.real() ) * fMultConst, ( Num.imag() < 0.0 )? -i_ : i_);
+	Num = std::sqrt(Num);
 }
 
 
 void Complex::Sin( void )
 {
-    double r = Num.real(), i = Num.imag() ;
+    double r = Num.real();
     if( !::rtl::math::isValidArcArg( r ) )
 		THROW_IAE;
 
-	if( i )
-	{
-		double	r_;
-
-		r_ = sin( r ) * cosh( i );
-		i = cos( r ) * sinh( i );
-		r = r_;
-	}
-	else
-		r = sin( r );
-    Num = double_complex ( r, i );
+    Num = std::sin( Num );
 }
 
 
 void Complex::Cos( void )
 {
-	double r = Num.real(), i = Num.imag() ;
+	double r = Num.real();
 	if( !::rtl::math::isValidArcArg( r ) )
 		THROW_IAE;
 
-	if( i )
-	{
-		double		r_;
-
-		r_ = cos( r ) * cosh( i );
-		i = -( sin( r ) * sinh( i ) );
-		r = r_;
-	}
-	else
-		r = cos( r );
-	Num = double_complex ( r, i );
+	Num = std::cos ( Num );
 
 }
 
@@ -2026,23 +1989,15 @@ void Complex::Div( const Complex& z )
 	if( z.Num.real() == 0 && z.Num.imag() == 0 )
 		THROW_IAE;
 
-	double	a1 = Num.real();
-	double	a2 = z.Num.real();
-	double	b1 = Num.imag();
-	double	b2 = z.Num.imag();
+	Num /= z.Num;
 
-	double	f = 1.0 / ( a2 * a2 + b2 * b2 );
-
-	Num = f * double_complex ( a1 * a2 + b1 * b2 ,  a2 * b1 - a1 * b2 );
-
-    if( !c ) c = z.c;
 }
 
 
 void Complex::Exp( void )
 {
-	double	fE = exp( Num.real() );
-	Num = fE * double_complex ( cos( Num.imag() ), sin( Num.imag() ) );
+
+	Num = std::exp( Num );
 }
 
 
@@ -2052,16 +2007,7 @@ void Complex::Ln( void )
 	if( r == 0.0 && i == 0.0 )
 		THROW_IAE;
 
-	double		fAbs = Abs();
-	sal_Bool	bNegi = i < 0.0;
-
-	i = acos( r / fAbs );
-
-	if( bNegi )
-		i = -i;
-
-	r = log( fAbs );
-	Num = double_complex ( r, i );
+	Num = std::log ( Num );
 }
 
 
@@ -2086,168 +2032,73 @@ void Complex::Tan(void)
     {
         if( !::rtl::math::isValidArcArg( 2.0 * r ) )
             THROW_IAE;
-        double fScale =1.0 / ( cos( 2.0 * r ) + cosh( 2.0 * i ));
-        r = sin( 2.0 * r ) * fScale;
-        i = sinh( 2.0 * i ) * fScale;
     }
     else
     {
         if( !::rtl::math::isValidArcArg( r ) )
             THROW_IAE;
-        r = tan( r );
     }
-    Num = double_complex ( r, i );
+    Num = std::tan ( Num );
 }
 
 
 void Complex::Sec( void )
 {
-    double r = Num.real(), i = Num.imag() ;
-    if( i )
-    {
-        if( !::rtl::math::isValidArcArg( 2 * r ) )
-            THROW_IAE;
-        double fScale = 1.0 / (cosh( 2.0 * i) + cos ( 2.0 * r));
-        double  r_;
-        r_ = 2.0 * cos( r ) * cosh( i ) * fScale;
-        i = 2.0 * sin( r ) * sinh( i ) * fScale;
-        r = r_;
-    }
-    else
-    {
-        if( !::rtl::math::isValidArcArg( r ) )
-            THROW_IAE;
-        r = 1.0 / cos( r );
-    }
-    Num = double_complex ( r, i );
+
+    Cos();
+    Num = 1.0 / Num;
 }
 
 
 void Complex::Csc( void )
 {
-    double r = Num.real(), i = Num.imag() ;
-    if( i )
-    {
-        if( !::rtl::math::isValidArcArg( 2 * r ) )
-            THROW_IAE;
-        double fScale = 1.0 / (cosh( 2.0 * i) - cos ( 2.0 * r));
-        double  r_;
-        r_ = 2.0 * sin( r ) * cosh( i ) * fScale;
-        i = -2.0 * cos( r ) * sinh( i ) * fScale;
-        r = r_;
-    }
-    else
-    {
-        if( !::rtl::math::isValidArcArg( r ) )
-            THROW_IAE;
-        r = 1.0 / sin( r );
-    }
-    Num = double_complex ( r, i );
+
+    Sin();
+    Num = 1.0 / Num;
 }
 
 
 void Complex::Cot(void)
 {
-    double r = Num.real(), i = Num.imag() ;
-    if ( i )
-    {
-        if( !::rtl::math::isValidArcArg( 2.0 * r ) )
-            THROW_IAE;
-        double fScale =1.0 / ( cosh( 2.0 * i ) - cos( 2.0 * r ) );
-        r = sin( 2.0 * r ) * fScale;
-        i = - ( sinh( 2.0 * i ) * fScale );
-    }
-    else
-    {
-        if( !::rtl::math::isValidArcArg( r ) )
-            THROW_IAE;
-        r = 1.0 / tan( r );
-    }
-    Num = double_complex ( r, i );
+
+    Tan();
+    Num = 1.0 / Num;
 }
 
 
 void Complex::Sinh( void )
 {
-    double r = Num.real(), i = Num.imag() ;
+    double r = Num.real();
     if( !::rtl::math::isValidArcArg( r ) )
         THROW_IAE;
 
-    if( i )
-    {
-        double	r_;
-        r_ = sinh( r ) * cos( i );
-		i = cosh( r ) * sin( i );
-		r = r_;
-	}
-	else
-		r = sinh( r );
-    Num = double_complex ( r, i );
+    Num = std::sinh( Num );
 }
 
 
 void Complex::Cosh( void )
 {
-    double r = Num.real(), i = Num.imag() ;
+    double r = Num.real();
     if( !::rtl::math::isValidArcArg( r ) )
         THROW_IAE;
 
-    if( i )
-    {
-        double	r_;
-        r_ = cosh( r ) * cos( i );
-		i = sinh( r ) * sin( i );
-		r = r_;
-	}
-	else
-		r = cosh( r );
-    Num = double_complex ( r, i );
+    Num = std::cosh( Num );
 }
 
 
 void Complex::Sech(void)
 {
-    double r = Num.real(), i = Num.imag() ;
-    if ( i )
-    {
-        if( !::rtl::math::isValidArcArg( 2.0 * r ) )
-            THROW_IAE;
-        double fScale =1.0 / ( cosh( 2.0 * r ) + cos( 2.0 * i ));
-        double r_;
-		r_ = 2.0 * cosh( r ) * cos( i ) * fScale;
-		i = - (2.0 * sinh( r ) * sin( i ) * fScale );
-        r = r_ ;
-    }
-    else
-    {
-        if( !::rtl::math::isValidArcArg( r ) )
-            THROW_IAE;
-        r = 1.0 / cosh( r );
-    }
-    Num = double_complex ( r, i );
+
+    Cosh();
+    Num = 1.0 / Num;
 }
 
 
 void Complex::Csch(void)
 {
-    double r = Num.real(), i = Num.imag() ;
-    if ( i )
-    {
-        if( !::rtl::math::isValidArcArg( 2.0 * r ) )
-            THROW_IAE;
-        double fScale =1.0 / ( cosh( 2.0 * r ) - cos( 2.0 * i ));
-        double r_;
-		r_ = 2.0 * sinh( r ) * cos( i ) * fScale;
-		i = - ( 2.0 * cosh( r ) * sin( i ) * fScale );
-        r = r_ ;
-    }
-    else
-    {
-        if( !::rtl::math::isValidArcArg( r ) )
-            THROW_IAE;
-        r = 1.0 / sinh( r );
-    }
-    Num = double_complex ( r, i );
+
+    Sinh();
+    Num = 1.0 / Num;
 }
 
 

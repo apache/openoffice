@@ -52,6 +52,7 @@ String RID_PROPERTY_NONLINEARTEST
 {
     Text [ en-US ] = "Run strict linearity checks";
 };
+
 String RID_ERROR_NONLINEAR
 {
     Text [ en-US ] = "The model seems nonlinear (see options).";
@@ -68,7 +69,23 @@ String RID_ERROR_UNBOUNDED
 {
     Text [ en-US ] = "The model is unbounded.";
 };
-String RID_ERROR_TIMEOUT
+String RID_ERROR_ITERATIONLIMIT
 {
-    Text [ en-US ] = "The time limit was reached.";
+    Text [ en-US ] = "Iteration limit reached.";
+};
+String RID_ERROR_SOLVERERROR
+{
+    Text [ en-US ] = "Numerical solver error.";
+};
+String RID_ERROR_USERSTOP
+{
+    Text [ en-US ] = "User/callback cancellation.";
+};
+String RID_ERROR_UNKNOWN
+{
+    Text [ en-US ] = "Unrecognized status.";
+};
+String RID_ERROR_INVALIDMODEL
+{
+    Text [ en-US ] = "Invalid internal generated model.";
 };

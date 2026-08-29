@@ -565,6 +565,14 @@ void SAL_CALL SolverComponent::solve()
     // solve model
 
     nResult = CoinCheckProblem( hProb );
+    if (nResult != SOLV_CALL_SUCCESS)
+    {
+        // report invalid model
+
+	maStatus = lcl_GetResourceString( RID_ERROR_INVALIDMODEL );
+        CoinUnloadProblem(hProb);
+        return;
+    }
     nResult = CoinOptimizeProblem( hProb, 0 );
 
     mbSuccess = ( nResult == SOLV_CALL_SUCCESS );
@@ -583,8 +591,15 @@ void SAL_CALL SolverComponent::solve()
             maStatus = lcl_GetResourceString( RID_ERROR_INFEASIBLE );
         else if ( nSolutionStatus == 2 )
             maStatus = lcl_GetResourceString( RID_ERROR_UNBOUNDED );
-        // TODO: detect timeout condition and report as RID_ERROR_TIMEOUT
-        // (currently reported as infeasible)
+	else if ( nSolutionStatus == 3 )
+            maStatus = lcl_GetResourceString(  RID_ERROR_ITERATIONLIMIT );
+	else if ( nSolutionStatus == 4 )
+            maStatus = lcl_GetResourceString( RID_ERROR_SOLVERERROR );
+        else if ( nSolutionStatus == 5 )
+            maStatus = lcl_GetResourceString( RID_ERROR_USERSTOP );
+	else if ( nSolutionStatus >= 6 )
+            maStatus = lcl_GetResourceString( RID_ERROR_UNKNOWN );
+
     }
 
     CoinUnloadProblem( hProb );

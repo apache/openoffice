@@ -72,9 +72,7 @@
 #include "doubleref.hxx"
 #include "queryparam.hxx"
 
-#include <boost/math/special_functions/acosh.hpp>
-#include <boost/math/special_functions/asinh.hpp>
-#include <boost/math/special_functions/atanh.hpp>
+#include <cmath>
 
 #define SC_DOUBLE_MAXVALUE  1.7e307
 
@@ -1811,7 +1809,7 @@ void ScInterpreter::ScCotHyp()
 void ScInterpreter::ScArcSinHyp()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScArcSinHyp" );
-    PushDouble( ::boost::math::asinh( GetDouble()));
+    PushDouble( std::asinh( GetDouble()));
 }
 
 void ScInterpreter::ScArcCosHyp()
@@ -1821,7 +1819,7 @@ void ScInterpreter::ScArcCosHyp()
     if (fVal < 1.0)
         PushIllegalArgument();
     else
-        PushDouble( ::boost::math::acosh( fVal));
+        PushDouble( std::acosh( fVal));
 }
 
 void ScInterpreter::ScArcTanHyp()
@@ -1831,7 +1829,7 @@ void ScInterpreter::ScArcTanHyp()
     if (fabs(fVal) >= 1.0)
         PushIllegalArgument();
     else
-        PushDouble( ::boost::math::atanh( fVal));
+        PushDouble( std::atanh( fVal));
 }
 
 
