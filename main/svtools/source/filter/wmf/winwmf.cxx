@@ -898,6 +898,10 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 													          >> aPt.Y()
 													          >> nStringLen;
 
+										        // AllocBuffer takes an xub_StrLen
+										        if ( nStringLen >= STRING_MAXLEN )
+											        break;
+
 										        if ( ( static_cast< sal_uInt64 >( nStringLen ) * sizeof( sal_Unicode ) ) < ( nEscLen - aMemoryStream.Tell() ) )
 										        {
 											        sal_Unicode* pBuf = aString.AllocBuffer( (xub_StrLen)nStringLen );
@@ -905,6 +909,9 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 												        aMemoryStream >> pBuf[ i ];
 											        aMemoryStream >> nDXCount;
 											        if ( ( static_cast< sal_uInt64 >( nDXCount ) * sizeof( sal_Int32 ) ) >= ( nEscLen - aMemoryStream.Tell() ) )
+												        nDXCount = 0;
+											        // one advance per character; ignore a shorter array
+											        if ( nDXCount && ( nDXCount < nStringLen ) )
 												        nDXCount = 0;
 											        if ( nDXCount )
 												        pDXAry = new sal_Int32[ nDXCount ];
