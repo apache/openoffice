@@ -147,3 +147,41 @@ CFLAGSWARNCXX+=-wd4996 -wd4577 -wd5040
 CFLAGSWARNCC+=-wd4996
 CFLAGSWALLCC=$(CFLAGSWARNCC)
 CFLAGSWALLCXX=$(CFLAGSWARNCXX)
+
+# --- subsystem version ---------------------------------------------------
+
+# /SUBSYSTEM:WINDOWS takes an optional version and the base files pass it
+# without one, so the value is whatever the linker happens to default to.  That
+# default is NOT stable across toolsets: VC9 emitted a 5.x subsystem, every
+# toolset from VS2015 on emits 6.00.  The same makefile line therefore silently
+# changed what these binaries claim about themselves, and that is not cosmetic
+# -- Windows reads the subsystem version to pick which drag-and-drop
+# implementation a process gets.
+#
+# At 6.00 a drop target is resolved through the brokered path in ole32
+# (CDragOperation::GetDropTarget -> PrivDragDrop -> SDDInfo::SDDInfo ->
+# UnmarshalFromEndpointProperty).  Every drop into this office dies there with
+# E_INVALIDARG before any of our own code runs: RegisterDragDrop succeeds and
+# the frame carries both the OleDropTargetInterface and OleEndPointID window
+# properties, yet IDropTarget::DragEnter is never called and the pointer stays
+# "unavailable" -- which is the whole of the "cannot drag anything into the
+# office" report.  Below 6.00 the classic path is used and drops work.
+#
+# Measured, not inferred: patching these four bytes and nothing else in one
+# soffice.exe flips it.  At 6.00 PrivDragDrop returns 0x80070057 and the cursor
+# is IDC_NO; at 5.02 it returns S_OK and the drop is offered and accepted.
+#
+# So pin it, per architecture, to the lowest version its linker accepts -- the
+# same neighbourhood the office shipped in for its whole VC9 life.  Note this
+# restores the classic path rather than making our drop targets work with the
+# brokered one; why they are rejected there is a separate, still unexplained
+# incompatibility.  The version only matters on the executable, since that is
+# what the loader reads for the process, but both flags are set so the pair
+# cannot drift apart.
+.IF "$(CPU)" == "X"
+LINKFLAGSAPPGUI=/SUBSYSTEM:WINDOWS,5.02
+LINKFLAGSSHLGUI=/SUBSYSTEM:WINDOWS,5.02 /DLL
+.ELSE
+LINKFLAGSAPPGUI=/SUBSYSTEM:WINDOWS,5.01
+LINKFLAGSSHLGUI=/SUBSYSTEM:WINDOWS,5.01 /DLL
+.ENDIF
