@@ -145,8 +145,16 @@ SHL1STDLIBS=\
 MINGWSSTDOBJ=
 MINGWSSTDENDOBJ=
 .ELSE
+# unicows.lib is the Microsoft Layer for Unicode, and only the x86 build wraps
+# anything from it: on x64 SLOFILES carries none of the MSLU thunks and the
+# export list is uwinapi64.dxp alone.  The SDK ships the import library for
+# x86 only, so naming it here breaks the x64 link with LNK1181.
+.IF "$(CPUNAME)"=="INTEL"
 SHL1STDLIBS=\
 		unicows.lib
+.ELSE
+SHL1STDLIBS=
+.ENDIF
 .ENDIF
 
 SHL1STDLIBS+=\
