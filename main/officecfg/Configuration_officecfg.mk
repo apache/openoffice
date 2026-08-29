@@ -268,4 +268,3 @@ $(call gb_Configuration_add_localized_datas,registry,officecfg/registry/data,\
 	org/openoffice/Office/UI/WriterCommands.xcu \
 	org/openoffice/Office/UI/GenericCategories.xcu \
 )
-

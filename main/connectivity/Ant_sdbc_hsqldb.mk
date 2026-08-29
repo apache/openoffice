@@ -25,4 +25,3 @@ $(eval $(call gb_Ant_Ant,sdbc_hsqldb,$(SRCDIR)/connectivity/java/sdbc_hsqldb/bui
 
 
 # vim: set noet sw=4 ts=4:
-
