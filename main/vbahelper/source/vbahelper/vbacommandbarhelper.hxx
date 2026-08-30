@@ -64,35 +64,35 @@ private:
     css::uno::Reference< css::container::XNameAccess > m_xWindowState;
     rtl::OUString maModuleId;
 
-    void Init() throw (css::uno::RuntimeException);
-    sal_Bool hasToolbar( const rtl::OUString& sResourceUrl, const rtl::OUString& sName )  throw (css::uno::RuntimeException);
+    void Init();
+    sal_Bool hasToolbar( const rtl::OUString& sResourceUrl, const rtl::OUString& sName );
 public:
-    VbaCommandBarHelper( const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::frame::XModel >& xModel ) throw( css::uno::RuntimeException );
+    VbaCommandBarHelper( const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::frame::XModel >& xModel );
 
     css::uno::Reference< css::frame::XModel > getModel() { return mxModel; }
 
-    css::uno::Reference< css::ui::XUIConfigurationManager > getDocCfgManager() throw (css::uno::RuntimeException)
+    css::uno::Reference< css::ui::XUIConfigurationManager > getDocCfgManager()
     {
         return m_xDocCfgMgr;
     }
-    css::uno::Reference< css::ui::XUIConfigurationManager > getAppCfgManager() throw (css::uno::RuntimeException)
+    css::uno::Reference< css::ui::XUIConfigurationManager > getAppCfgManager()
     {
         return m_xAppCfgMgr;
     }
-    css::uno::Reference< css::container::XNameAccess > getPersistentWindowState() throw (css::uno::RuntimeException)
+    css::uno::Reference< css::container::XNameAccess > getPersistentWindowState()
     {
         return m_xWindowState;
     }
-    sal_Bool persistChanges() throw (css::uno::RuntimeException);
-    css::uno::Reference< css::container::XIndexAccess > getSettings( const rtl::OUString& sResourceUrl ) throw (css::uno::RuntimeException);
-    void removeSettings( const rtl::OUString& sResourceUrl ) throw (css::uno::RuntimeException);
-    void ApplyChange( const rtl::OUString& sResourceUrl, const css::uno::Reference< css::container::XIndexAccess >& xSettings, sal_Bool bTemporary = sal_True ) throw (css::uno::RuntimeException);
+    sal_Bool persistChanges();
+    css::uno::Reference< css::container::XIndexAccess > getSettings( const rtl::OUString& sResourceUrl );
+    void removeSettings( const rtl::OUString& sResourceUrl );
+    void ApplyChange( const rtl::OUString& sResourceUrl, const css::uno::Reference< css::container::XIndexAccess >& xSettings, sal_Bool bTemporary = sal_True );
 
-    css::uno::Reference< css::frame::XLayoutManager > getLayoutManager() throw (css::uno::RuntimeException);
+    css::uno::Reference< css::frame::XLayoutManager > getLayoutManager();
 
     const rtl::OUString getModuleId(){ return maModuleId; }
-    rtl::OUString findToolbarByName( const css::uno::Reference< css::container::XNameAccess >& xNameAccess, const rtl::OUString& sName ) throw (css::uno::RuntimeException);
-    static sal_Int32 findControlByName( const css::uno::Reference< css::container::XIndexAccess >& xIndexAccess, const rtl::OUString& sName, bool bMenu = false ) throw (css::uno::RuntimeException);
+    rtl::OUString findToolbarByName( const css::uno::Reference< css::container::XNameAccess >& xNameAccess, const rtl::OUString& sName );
+    static sal_Int32 findControlByName( const css::uno::Reference< css::container::XIndexAccess >& xIndexAccess, const rtl::OUString& sName, bool bMenu = false );
     static rtl::OUString generateCustomURL();
 };
 

@@ -76,7 +76,6 @@ sal_Bool CorbaType::isNestedTypeByName(const ::rtl::OString& type)
 }
 
 sal_Bool CorbaType::dump(CorbaOptions* pOptions, FileStream& o, TypeSet* allreadyDumped)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -86,7 +85,6 @@ sal_Bool CorbaType::dump(CorbaOptions* pOptions, FileStream& o, TypeSet* allread
 }
 
 sal_Bool CorbaType::dumpDependedTypes(CorbaOptions* pOptions, FileStream& o, TypeSet* allreadyDumped)
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_True;
 
@@ -122,7 +120,6 @@ sal_Bool CorbaType::dumpDependedTypes(CorbaOptions* pOptions, FileStream& o, Typ
 }
 
 sal_Bool CorbaType::dumpConversionFunctions(FileStream& o, TypeSet* allreadyDumped)
-	throw( CannotDumpException )
 {
 	if (m_typeName.lastIndexOf(']') < 0)
 	{
@@ -566,7 +563,6 @@ OString	CorbaType::getTypeClass(const OString& type, sal_Bool bCStyle)
 }
 
 OString CorbaType::printUnoType(const OString& type, sal_Bool bConst, sal_Bool bRef, sal_Bool bNative)
-	throw( CannotDumpException )
 {
 	OStringBuffer ret(1024);
 	OString sType(checkRealBaseType(type, sal_True));
@@ -622,14 +618,12 @@ OString CorbaType::printUnoType(const OString& type, sal_Bool bConst, sal_Bool b
 
 void CorbaType::dumpUnoType(FileStream& o, const OString& type,
 			sal_Bool bConst, sal_Bool bRef, sal_Bool bNative)
-	throw( CannotDumpException )
 {
 	OString ret = printUnoType(type, bConst, bRef, bNative);
 	o << ret;
 }
 
 OString CorbaType::printCorbaType(const OString& type, sal_Bool bConst, sal_Bool bRef)
-	throw( CannotDumpException )
 {
 	OStringBuffer ret(1024);
 
@@ -795,7 +789,6 @@ sal_Bool CorbaType::isArray(const OString& type)
 }
 
 OString CorbaType::printCorbaParameter(const OString& type, sal_Bool bOut)
-	throw( CannotDumpException )
 {
 	OStringBuffer ret(1024);
 
@@ -856,7 +849,6 @@ OString CorbaType::printCorbaParameter(const OString& type, sal_Bool bOut)
 
 void CorbaType::dumpCorbaType(FileStream& o, const OString& type,
 			sal_Bool bConst, sal_Bool bRef)
-	throw( CannotDumpException )
 {
 	OString ret = printCorbaType(type, bConst, bRef);
 	o << ret;
@@ -2071,7 +2063,6 @@ void ModuleType::dumpFunctions(FileStream& o)
 };
 
 sal_Bool ModuleType::dumpConversionFunctions(FileStream& o, TypeSet* allreadyDumped)
-	throw( CannotDumpException )
 {
 	sal_Bool bSpecialDefine = sal_True;
 
@@ -2605,7 +2596,6 @@ sal_Bool produceType(const OString& typeName,
 						CorbaOptions* pOptions,
 						FileStream& o, TypeSet* allreadyDumped,
 						TypeSet* generatedConversions)
-	throw( CannotDumpException )
 {
 	sal_Bool bNewTypeSet = (allreadyDumped == NULL);
 	sal_Bool ret = sal_True;

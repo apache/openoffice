@@ -273,7 +273,6 @@ void OHierarchyElement_Impl::TestForClosing()
 
 //-----------------------------------------------
 void SAL_CALL OHierarchyElement_Impl::disposing( const lang::EventObject& Source )
-		throw ( uno::RuntimeException )
 {
 	uno::Sequence< embed::XStorage > aStoragesToCommit;
 
@@ -322,13 +321,11 @@ void OHierarchyElement_Impl::RemoveElement( const ::rtl::Reference< OHierarchyEl
 // XTransactionListener
 //-----------------------------------------------
 void SAL_CALL OHierarchyElement_Impl::preCommit( const ::com::sun::star::lang::EventObject& /*aEvent*/ )
-	throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 }
 
 //-----------------------------------------------
 void SAL_CALL OHierarchyElement_Impl::commited( const ::com::sun::star::lang::EventObject& /*aEvent*/ )
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	try
 	{
@@ -345,12 +342,10 @@ void SAL_CALL OHierarchyElement_Impl::commited( const ::com::sun::star::lang::Ev
 
 //-----------------------------------------------
 void SAL_CALL OHierarchyElement_Impl::preRevert( const ::com::sun::star::lang::EventObject& /*aEvent*/ )
-	throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 }
 
 //-----------------------------------------------
 void SAL_CALL OHierarchyElement_Impl::reverted( const ::com::sun::star::lang::EventObject& /*aEvent*/ )
-	throw (::com::sun::star::uno::RuntimeException)
 {
 }

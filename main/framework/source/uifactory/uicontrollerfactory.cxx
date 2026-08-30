@@ -77,7 +77,6 @@ UIControllerFactory::~UIControllerFactory()
 Reference< XInterface > SAL_CALL UIControllerFactory::createInstanceWithContext(
     const ::rtl::OUString& aServiceSpecifier,
     const Reference< XComponentContext >& )
-throw (Exception, RuntimeException)
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -100,7 +99,6 @@ Reference< XInterface > SAL_CALL UIControllerFactory::createInstanceWithArgument
     const ::rtl::OUString&                  ServiceSpecifier,
     const Sequence< Any >&                  Arguments,
     const Reference< XComponentContext >& )
-throw (Exception, RuntimeException)
 {
     const rtl::OUString aPropModuleName( RTL_CONSTASCII_USTRINGPARAM( "ModuleIdentifier" ));
     const rtl::OUString aPropValueName( RTL_CONSTASCII_USTRINGPARAM( "Value" ));
@@ -166,7 +164,6 @@ throw (Exception, RuntimeException)
 }
 
 Sequence< ::rtl::OUString > SAL_CALL UIControllerFactory::getAvailableServiceNames()
-throw (RuntimeException)
 {
     return Sequence< ::rtl::OUString >();
 }
@@ -175,7 +172,6 @@ throw (RuntimeException)
 sal_Bool SAL_CALL UIControllerFactory::hasController(
     const ::rtl::OUString& aCommandURL,
     const rtl::OUString& aModuleName )
-throw (::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
 
@@ -192,7 +188,6 @@ void SAL_CALL UIControllerFactory::registerController(
     const ::rtl::OUString& aCommandURL,
     const ::rtl::OUString& aModuleName,
     const ::rtl::OUString& aControllerImplementationName )
-throw (RuntimeException)
 {
     // SAFE
     ResetableGuard aLock( m_aLock );
@@ -210,7 +205,6 @@ throw (RuntimeException)
 void SAL_CALL UIControllerFactory::deregisterController(
     const ::rtl::OUString& aCommandURL,
     const rtl::OUString& aModuleName )
-throw (RuntimeException)
 {
     // SAFE
     ResetableGuard aLock( m_aLock );

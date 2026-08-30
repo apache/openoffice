@@ -74,7 +74,7 @@ namespace canvas
 
         // XIntegerBitmap
         virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getData( ::com::sun::star::rendering::IntegerBitmapLayout& 	bitmapLayout,
-                                                                              const ::com::sun::star::geometry::IntegerRectangle2D& rect ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::rendering::VolatileContentDestroyedException, ::com::sun::star::uno::RuntimeException)
+                                                                              const ::com::sun::star::geometry::IntegerRectangle2D& rect )
         {
             tools::verifyArgs(rect,
                               BOOST_CURRENT_FUNCTION,
@@ -89,7 +89,7 @@ namespace canvas
 
         virtual void SAL_CALL setData( const ::com::sun::star::uno::Sequence< sal_Int8 >& 	   data,
                                        const ::com::sun::star::rendering::IntegerBitmapLayout& bitmapLayout,
-                                       const ::com::sun::star::geometry::IntegerRectangle2D&   rect ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+                                       const ::com::sun::star::geometry::IntegerRectangle2D&   rect )
         {
             tools::verifyArgs(bitmapLayout, rect,
                               BOOST_CURRENT_FUNCTION,
@@ -106,7 +106,7 @@ namespace canvas
 
         virtual void SAL_CALL setPixel( const ::com::sun::star::uno::Sequence< sal_Int8 >& 		color,
                                         const ::com::sun::star::rendering::IntegerBitmapLayout& bitmapLayout,
-                                        const ::com::sun::star::geometry::IntegerPoint2D& 		pos ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+                                        const ::com::sun::star::geometry::IntegerPoint2D& 		pos )
         {
             tools::verifyArgs(bitmapLayout, pos,
                               BOOST_CURRENT_FUNCTION,
@@ -122,7 +122,7 @@ namespace canvas
         }
 
         virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getPixel( ::com::sun::star::rendering::IntegerBitmapLayout& bitmapLayout,
-                                                                               const ::com::sun::star::geometry::IntegerPoint2D& pos ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::rendering::VolatileContentDestroyedException, ::com::sun::star::uno::RuntimeException)
+                                                                               const ::com::sun::star::geometry::IntegerPoint2D& pos )
         {
             tools::verifyArgs(pos,
                               BOOST_CURRENT_FUNCTION,
@@ -135,7 +135,7 @@ namespace canvas
                                                       pos );
         }
 
-        virtual ::com::sun::star::rendering::IntegerBitmapLayout SAL_CALL getMemoryLayout(  ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::rendering::IntegerBitmapLayout SAL_CALL getMemoryLayout(  )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 

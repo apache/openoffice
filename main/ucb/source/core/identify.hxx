@@ -50,10 +50,8 @@ public:
 	XTYPEPROVIDER_DECL()
 
 	// XContentIdentifier
-    virtual rtl::OUString SAL_CALL getContentIdentifier()
-		throw( com::sun::star::uno::RuntimeException );
-    virtual rtl::OUString SAL_CALL getContentProviderScheme()
-		throw( com::sun::star::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getContentIdentifier();
+    virtual rtl::OUString SAL_CALL getContentProviderScheme();
 
 private:
 	com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > m_xSMgr;

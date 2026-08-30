@@ -66,32 +66,32 @@ public:
 		const css::uno::Reference< css::uno::XComponentContext >& xContext,
 		const css::uno::Reference< css::container::XIndexAccess >& xPalette,
 		const css::uno::Reference< css::beans::XPropertySet >& xPropertySet,
-		bool bFormControl = false ) throw ( css::uno::RuntimeException );
+		bool bFormControl = false );
 	virtual ~VbaFontBase();// {}
 
 	// Attributes
-	virtual css::uno::Any SAL_CALL getSize() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setSize( const css::uno::Any& _size ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getColorIndex() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setColorIndex( const css::uno::Any& _colorindex ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getBold() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setBold( const css::uno::Any& _bold ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getUnderline() throw (css::uno::RuntimeException) = 0;
-	virtual void SAL_CALL setUnderline( const css::uno::Any& _underline ) throw (css::uno::RuntimeException) = 0;
-	virtual css::uno::Any SAL_CALL getStrikethrough() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setStrikethrough( const css::uno::Any& _strikethrough ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getShadow() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setShadow( const css::uno::Any& _shadow ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getItalic() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setItalic( const css::uno::Any& _italic ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getSubscript() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setSubscript( const css::uno::Any& _subscript ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getSuperscript() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setSuperscript( const css::uno::Any& _superscript ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getName() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setName( const css::uno::Any& _name ) throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL getColor() throw (css::uno::RuntimeException) ;
-	virtual void SAL_CALL setColor( const css::uno::Any& _color ) throw (css::uno::RuntimeException) ;
+	virtual css::uno::Any SAL_CALL getSize();
+	virtual void SAL_CALL setSize( const css::uno::Any& _size );
+	virtual css::uno::Any SAL_CALL getColorIndex();
+	virtual void SAL_CALL setColorIndex( const css::uno::Any& _colorindex );
+	virtual css::uno::Any SAL_CALL getBold();
+	virtual void SAL_CALL setBold( const css::uno::Any& _bold );
+	virtual css::uno::Any SAL_CALL getUnderline() = 0;
+	virtual void SAL_CALL setUnderline( const css::uno::Any& _underline ) = 0;
+	virtual css::uno::Any SAL_CALL getStrikethrough();
+	virtual void SAL_CALL setStrikethrough( const css::uno::Any& _strikethrough );
+	virtual css::uno::Any SAL_CALL getShadow();
+	virtual void SAL_CALL setShadow( const css::uno::Any& _shadow );
+	virtual css::uno::Any SAL_CALL getItalic();
+	virtual void SAL_CALL setItalic( const css::uno::Any& _italic );
+	virtual css::uno::Any SAL_CALL getSubscript();
+	virtual void SAL_CALL setSubscript( const css::uno::Any& _subscript );
+	virtual css::uno::Any SAL_CALL getSuperscript();
+	virtual void SAL_CALL setSuperscript( const css::uno::Any& _superscript );
+	virtual css::uno::Any SAL_CALL getName();
+	virtual void SAL_CALL setName( const css::uno::Any& _name );
+	virtual css::uno::Any SAL_CALL getColor() ;
+	virtual void SAL_CALL setColor( const css::uno::Any& _color ) ;
 };
 
 #endif

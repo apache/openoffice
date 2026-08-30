@@ -47,44 +47,44 @@ ScVbaFrame::ScVbaFrame(
 
 // XFrame attributes
 
-rtl::OUString SAL_CALL ScVbaFrame::getCaption() throw (css::uno::RuntimeException)
+rtl::OUString SAL_CALL ScVbaFrame::getCaption()
 {
     rtl::OUString Label;
     m_xProps->getPropertyValue( LABEL ) >>= Label;
     return Label;
 }
 
-void SAL_CALL ScVbaFrame::setCaption( const rtl::OUString& _caption ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ScVbaFrame::setCaption( const rtl::OUString& _caption )
 {
     m_xProps->setPropertyValue( LABEL, uno::makeAny( _caption ) );
 }
 
-sal_Int32 SAL_CALL ScVbaFrame::getSpecialEffect() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaFrame::getSpecialEffect()
 {
     return msforms::fmSpecialEffect::fmSpecialEffectEtched;
 }
 
-void SAL_CALL ScVbaFrame::setSpecialEffect( sal_Int32 /*nSpecialEffect*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaFrame::setSpecialEffect( sal_Int32 /*nSpecialEffect*/ )
 {
 }
 
-sal_Int32 SAL_CALL ScVbaFrame::getBorderStyle() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaFrame::getBorderStyle()
 {
     return msforms::fmBorderStyle::fmBorderStyleNone;
 }
 
-void SAL_CALL ScVbaFrame::setBorderStyle( sal_Int32 /*nBorderStyle*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaFrame::setBorderStyle( sal_Int32 /*nBorderStyle*/ )
 {
 }
 
-uno::Reference< msforms::XNewFont > SAL_CALL ScVbaFrame::getFont() throw (uno::RuntimeException)
+uno::Reference< msforms::XNewFont > SAL_CALL ScVbaFrame::getFont()
 {
     return new VbaNewFont( this, mxContext, m_xProps );
 }
 
 // XFrame methods
 
-uno::Any SAL_CALL ScVbaFrame::Controls( const uno::Any& rIndex ) throw (uno::RuntimeException)
+uno::Any SAL_CALL ScVbaFrame::Controls( const uno::Any& rIndex )
 {
     // horizontal anchor of frame children is inside border line (add one unit to compensate border line width)
     double fOffsetX = mpGeometryHelper->getOffsetX() + getLeft() + 1.0;

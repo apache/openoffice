@@ -95,58 +95,58 @@ namespace reportdesign
 
 		DECLARE_XINTERFACE( )
         // ::com::sun::star::lang::XServiceInfo
-		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
-		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
 
 		// com::sun::star::beans::XPropertySet
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
+		virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue );
+		virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName );
+		virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
+		virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener );
+		virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
+		virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener );
 
 		// XGroup
-		virtual ::sal_Bool SAL_CALL getSortAscending() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setSortAscending( ::sal_Bool _sortascending ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Bool SAL_CALL getHeaderOn() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setHeaderOn( ::sal_Bool _headeron ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Bool SAL_CALL getFooterOn() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setFooterOn( ::sal_Bool _footeron ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection > SAL_CALL getHeader() throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection > SAL_CALL getFooter() throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Int16 SAL_CALL getGroupOn() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setGroupOn( ::sal_Int16 _groupon ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Int32 SAL_CALL getGroupInterval() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setGroupInterval( ::sal_Int32 _groupinterval ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Int16 SAL_CALL getKeepTogether() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setKeepTogether( ::sal_Int16 _keeptogether ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XGroups > SAL_CALL getGroups() throw (::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getExpression() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setExpression( const ::rtl::OUString& _expression ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Bool SAL_CALL getStartNewColumn() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setStartNewColumn( ::sal_Bool _startnewcolumn ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::sal_Bool SAL_CALL getResetPageNumber() throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setResetPageNumber( ::sal_Bool _resetpagenumber ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL getSortAscending();
+		virtual void SAL_CALL setSortAscending( ::sal_Bool _sortascending );
+		virtual ::sal_Bool SAL_CALL getHeaderOn();
+		virtual void SAL_CALL setHeaderOn( ::sal_Bool _headeron );
+		virtual ::sal_Bool SAL_CALL getFooterOn();
+		virtual void SAL_CALL setFooterOn( ::sal_Bool _footeron );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection > SAL_CALL getHeader();
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection > SAL_CALL getFooter();
+		virtual ::sal_Int16 SAL_CALL getGroupOn();
+		virtual void SAL_CALL setGroupOn( ::sal_Int16 _groupon );
+		virtual ::sal_Int32 SAL_CALL getGroupInterval();
+		virtual void SAL_CALL setGroupInterval( ::sal_Int32 _groupinterval );
+		virtual ::sal_Int16 SAL_CALL getKeepTogether();
+		virtual void SAL_CALL setKeepTogether( ::sal_Int16 _keeptogether );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XGroups > SAL_CALL getGroups();
+		virtual ::rtl::OUString SAL_CALL getExpression();
+		virtual void SAL_CALL setExpression( const ::rtl::OUString& _expression );
+		virtual ::sal_Bool SAL_CALL getStartNewColumn();
+		virtual void SAL_CALL setStartNewColumn( ::sal_Bool _startnewcolumn );
+		virtual ::sal_Bool SAL_CALL getResetPageNumber();
+		virtual void SAL_CALL setResetPageNumber( ::sal_Bool _resetpagenumber );
 
         //XFunctionsSupplier
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XFunctions > SAL_CALL getFunctions() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::report::XFunctions > SAL_CALL getFunctions();
 
 		// XChild
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent(  );
+		virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent );
 
         // XComponent
-		virtual void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw(::com::sun::star::uno::RuntimeException)
+		virtual void SAL_CALL dispose();
+		virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener)
 		{
 			cppu::WeakComponentImplHelperBase::addEventListener(aListener);
 		}
-		virtual void SAL_CALL removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw(::com::sun::star::uno::RuntimeException)
+		virtual void SAL_CALL removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener)
 		{
 			cppu::WeakComponentImplHelperBase::removeEventListener(aListener);
 		}

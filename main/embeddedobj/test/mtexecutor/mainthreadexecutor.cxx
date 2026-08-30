@@ -54,9 +54,6 @@ uno::Reference< uno::XInterface > SAL_CALL MainThreadExecutor::impl_staticCreate
 
 //-------------------------------------------------------------------------
 uno::Any SAL_CALL MainThreadExecutor::execute( const uno::Sequence< beans::NamedValue >& aArguments )
-	throw ( lang::IllegalArgumentException,
-			uno::Exception,
-			uno::RuntimeException )
 {
 	uno::Reference< task::XJob > xJob;
 	uno::Sequence< beans::NamedValue > aValues;
@@ -93,14 +90,12 @@ IMPL_STATIC_LINK( MainThreadExecutor, worker, MainThreadExecutorRequest*, pThrea
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL MainThreadExecutor::getImplementationName()
-		throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL MainThreadExecutor::supportsService( const ::rtl::OUString& ServiceName )
-		throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -113,7 +108,6 @@ sal_Bool SAL_CALL MainThreadExecutor::supportsService( const ::rtl::OUString& Se
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL MainThreadExecutor::getSupportedServiceNames()
-		throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }

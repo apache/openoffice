@@ -55,7 +55,6 @@ namespace oox { namespace ppt {
 	}
 
 	void SAL_CALL AnimVariantContext::endFastElement( sal_Int32 aElement )
-		throw ( SAXException, RuntimeException)
 	{
 		if( ( aElement == mnElement ) && maColor.isUsed() )
 		{
@@ -67,7 +66,6 @@ namespace oox { namespace ppt {
 	Reference< XFastContextHandler >
 	SAL_CALL AnimVariantContext::createFastChildContext( ::sal_Int32 aElementToken,
                              const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 	{
 		Reference< XFastContextHandler > xRet;
 		AttributeList attribs(xAttribs);

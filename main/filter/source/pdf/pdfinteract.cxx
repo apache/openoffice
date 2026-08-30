@@ -47,13 +47,11 @@ PDFInteractionHandler::~PDFInteractionHandler()
 
 
 void SAL_CALL PDFInteractionHandler::handle( const Reference< task::XInteractionRequest >& i_xRequest )
-	throw (RuntimeException)
 {
     handleInteractionRequest( i_xRequest );
 }
 
 sal_Bool SAL_CALL PDFInteractionHandler::handleInteractionRequest( const Reference< task::XInteractionRequest >& i_xRequest )
-	throw (RuntimeException)
 {
     sal_Bool bHandled = sal_False;
 
@@ -75,7 +73,6 @@ sal_Bool SAL_CALL PDFInteractionHandler::handleInteractionRequest( const Referen
 // -----------------------------------------------------------------------------
 
 OUString PDFInteractionHandler_getImplementationName ()
-	throw (RuntimeException)
 {
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.comp.PDF.PDFExportInteractionHandler" ) );
 }
@@ -85,14 +82,13 @@ OUString PDFInteractionHandler_getImplementationName ()
 #define SERVICE_NAME "com.sun.star.filter.pdfexport.PDFExportInteractionHandler"
 
 sal_Bool SAL_CALL PDFInteractionHandler_supportsService( const OUString& ServiceName )
-	throw (RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL PDFInteractionHandler_getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL PDFInteractionHandler_getSupportedServiceNames(  )
 {
 	Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -104,7 +100,7 @@ Sequence< OUString > SAL_CALL PDFInteractionHandler_getSupportedServiceNames(  )
 
 // -----------------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL PDFInteractionHandler_createInstance( const Reference< XMultiServiceFactory > & rSMgr) throw( Exception )
+Reference< XInterface > SAL_CALL PDFInteractionHandler_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
 {
 	return (cppu::OWeakObject*) new PDFInteractionHandler( rSMgr );
 }
@@ -112,7 +108,6 @@ Reference< XInterface > SAL_CALL PDFInteractionHandler_createInstance( const Ref
 // -----------------------------------------------------------------------------
 
 OUString SAL_CALL PDFInteractionHandler::getImplementationName()
-	throw (RuntimeException)
 {
 	return PDFInteractionHandler_getImplementationName();
 }
@@ -120,14 +115,13 @@ OUString SAL_CALL PDFInteractionHandler::getImplementationName()
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL PDFInteractionHandler::supportsService( const OUString& rServiceName )
-	throw (RuntimeException)
 {
     return PDFInteractionHandler_supportsService( rServiceName );
 }
 
 // -----------------------------------------------------------------------------
 
-::com::sun::star::uno::Sequence< OUString > SAL_CALL PDFInteractionHandler::getSupportedServiceNames(  ) throw (RuntimeException)
+::com::sun::star::uno::Sequence< OUString > SAL_CALL PDFInteractionHandler::getSupportedServiceNames(  )
 {
     return PDFInteractionHandler_getSupportedServiceNames();
 }

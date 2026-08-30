@@ -157,8 +157,7 @@ protected:
 
         The default implementation does nothing except showing an assertion
      */
-    virtual void FillSpecialItem( sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const
-        throw( ::com::sun::star::uno::Exception );
+    virtual void FillSpecialItem( sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const;
 
     /** for items that can not be mapped directly to a property.
 
@@ -169,8 +168,7 @@ protected:
 
         @return true if the item changed a property, false otherwise.
      */
-    virtual bool ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet & rItemSet )
-        throw( ::com::sun::star::uno::Exception );
+    virtual bool ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet & rItemSet );
 
     // ________
 

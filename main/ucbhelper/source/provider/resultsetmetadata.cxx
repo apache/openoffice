@@ -146,7 +146,6 @@ XTYPEPROVIDER_IMPL_2( ResultSetMetaData,
 
 // virtual
 sal_Int32 SAL_CALL ResultSetMetaData::getColumnCount()
-	throw( SQLException, RuntimeException )
 {
 	return m_aProps.getLength();
 }
@@ -154,7 +153,6 @@ sal_Int32 SAL_CALL ResultSetMetaData::getColumnCount()
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isAutoIncrement( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Checks whether column is automatically numbered, which makes it
@@ -170,7 +168,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isAutoIncrement( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isCaseSensitive( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	if ( ( column < 1 ) || ( column > m_aProps.getLength() ) )
 		return sal_False;
@@ -181,7 +178,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isCaseSensitive( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isSearchable( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Checks whether the value stored in column can be used in a
@@ -197,7 +193,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isSearchable( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isCurrency( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Checks whether column is a cash value.
@@ -212,7 +207,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isCurrency( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Int32 SAL_CALL ResultSetMetaData::isNullable( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Checks whether a NULL can be stored in column.
@@ -228,7 +222,6 @@ sal_Int32 SAL_CALL ResultSetMetaData::isNullable( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isSigned( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Checks whether the value stored in column is a signed number.
@@ -243,7 +236,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isSigned( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Int32 SAL_CALL ResultSetMetaData::getColumnDisplaySize( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the normal maximum width in characters for column.
@@ -258,7 +250,6 @@ sal_Int32 SAL_CALL ResultSetMetaData::getColumnDisplaySize( sal_Int32 column )
 //=========================================================================
 // virtual
 OUString SAL_CALL ResultSetMetaData::getColumnLabel( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the suggested column title for column, to be used in print-
@@ -278,7 +269,6 @@ OUString SAL_CALL ResultSetMetaData::getColumnLabel( sal_Int32 column )
 //=========================================================================
 // virtual
 OUString SAL_CALL ResultSetMetaData::getColumnName( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the name of column.
@@ -293,7 +283,6 @@ OUString SAL_CALL ResultSetMetaData::getColumnName( sal_Int32 column )
 //=========================================================================
 // virtual
 OUString SAL_CALL ResultSetMetaData::getSchemaName( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the schema name for the table from which column of this
@@ -311,7 +300,6 @@ OUString SAL_CALL ResultSetMetaData::getSchemaName( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Int32 SAL_CALL ResultSetMetaData::getPrecision( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		For number types, getprecision gets the number of decimal digits
@@ -330,7 +318,6 @@ sal_Int32 SAL_CALL ResultSetMetaData::getPrecision( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Int32 SAL_CALL ResultSetMetaData::getScale( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the number of digits to the right of the decimal point for
@@ -346,7 +333,6 @@ sal_Int32 SAL_CALL ResultSetMetaData::getScale( sal_Int32 column )
 //=========================================================================
 // virtual
 OUString SAL_CALL ResultSetMetaData::getTableName( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the name of the table from which column of this result set
@@ -364,7 +350,6 @@ OUString SAL_CALL ResultSetMetaData::getTableName( sal_Int32 column )
 //=========================================================================
 // virtual
 OUString SAL_CALL ResultSetMetaData::getCatalogName( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the catalog name for the table from which column of this
@@ -382,7 +367,6 @@ OUString SAL_CALL ResultSetMetaData::getCatalogName( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Int32 SAL_CALL ResultSetMetaData::getColumnType( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the JDBC type for the value stored in column. ... The STRUCT
@@ -519,7 +503,6 @@ sal_Int32 SAL_CALL ResultSetMetaData::getColumnType( sal_Int32 column )
 //=========================================================================
 // virtual
 OUString SAL_CALL ResultSetMetaData::getColumnTypeName( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	/*
 		Gets the type name used by this particular data source for the
@@ -537,7 +520,6 @@ OUString SAL_CALL ResultSetMetaData::getColumnTypeName( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isReadOnly( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	if ( m_pImpl->m_bGlobalReadOnlyValue )
 		return m_bReadOnly;
@@ -553,7 +535,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isReadOnly( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isWritable( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	if ( m_pImpl->m_bGlobalReadOnlyValue )
 		return !m_bReadOnly;
@@ -567,7 +548,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isWritable( sal_Int32 column )
 //=========================================================================
 // virtual
 sal_Bool SAL_CALL ResultSetMetaData::isDefinitelyWritable( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
 	if ( m_pImpl->m_bGlobalReadOnlyValue )
 		return !m_bReadOnly;
@@ -581,7 +561,6 @@ sal_Bool SAL_CALL ResultSetMetaData::isDefinitelyWritable( sal_Int32 column )
 //=========================================================================
 // virtual
 OUString SAL_CALL ResultSetMetaData::getColumnServiceName( sal_Int32 column )
-	throw( SQLException, RuntimeException )
 {
     /*
 	  	Returns the fully-qualified name of the service whose instances

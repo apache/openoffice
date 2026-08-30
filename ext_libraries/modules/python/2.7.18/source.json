@@ -1,13 +1,16 @@
 {
-    "url": "https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz",
-    "integrity": "sha256-2jCA47SI9kij16RWDd7olShMM4CxHW3nXtuYZSa5qBQ=",
-    "strip_prefix": "Python-2.7.18",
-    "overlay": {
-        "MODULE.bazel": "sha256-xlj90p6/lw2wir7wVOfypN7VivhHqwkIfA3JXUVWGlQ=",
-        "BUILD.bazel":  "sha256-TuUk4olhyqKhfLW8rcTVAprUfd6xP0h44wMd8cIfEPc=",
-        "PC/config.c":  "sha256-D68dVYB5dzuXQAIM5FCwxx4wSMLDJ/5LXCYWqbInHB8=",
-        "PC/pyconfig.h": "sha256-yE8wW//MgHp8iKC5Y8Kpp3pAP43qrMzqd2WaRjtTXNQ="
-    },
-    "patches": {},
-    "patch_strip": 0
+  "url": "https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz",
+  "integrity": "sha256-2jCA47SI9kij16RWDd7olShMM4CxHW3nXtuYZSa5qBQ=",
+  "strip_prefix": "Python-2.7.18",
+  "overlay": {
+    "MODULE.bazel": "sha256-xlj90p6/lw2wir7wVOfypN7VivhHqwkIfA3JXUVWGlQ=",
+    "BUILD.bazel": "sha256-7xLYte+t7HsC88GcquXTj7etN3/tVxXxw6D32bzoRuM=",
+    "PC/config.c": "sha256-D68dVYB5dzuXQAIM5FCwxx4wSMLDJ/5LXCYWqbInHB8=",
+    "PC/pyconfig.h": "sha256-yE8wW//MgHp8iKC5Y8Kpp3pAP43qrMzqd2WaRjtTXNQ=",
+    "Modules/timemodule.c": "sha256-eStT7HuE3kv92zk2Qjz9mS1Ybi022eEHXdEJephLtgc=",
+    "Include/fileobject.h": "sha256-VrsDB1yY3QYK3F85V2Jq/lebHGNdN/XUO2+iE2YeZ6g=",
+    "Modules/posixmodule.c": "sha256-2L54AXKzzA8+w3ud1n3wPwgM6mepG5hkHBbp8Qqa0fY="
+  },
+  "patches": {},
+  "patch_strip": 0
 }

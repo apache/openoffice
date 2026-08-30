@@ -175,7 +175,6 @@ IMPL_LINK( FocusWindowWaitCursor, DestroyedLink, VclWindowEvent*, pEvent )
 }
 
 sal_Bool SAL_CALL PDFFilter::filter( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
     FocusWindowWaitCursor aCur;
 
@@ -186,14 +185,13 @@ sal_Bool SAL_CALL PDFFilter::filter( const Sequence< PropertyValue >& rDescripto
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL PDFFilter::cancel( ) throw (RuntimeException)
+void SAL_CALL PDFFilter::cancel( )
 {
 }
 
 // -----------------------------------------------------------------------------
 
 void SAL_CALL PDFFilter::setSourceDocument( const Reference< XComponent >& xDoc )
-	throw (IllegalArgumentException, RuntimeException)
 {
 	mxSrcDoc = xDoc;
 }
@@ -201,14 +199,12 @@ void SAL_CALL PDFFilter::setSourceDocument( const Reference< XComponent >& xDoc 
 // -----------------------------------------------------------------------------
 
 void SAL_CALL PDFFilter::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& )
-	throw (Exception, RuntimeException)
 {
 }
 
 // -----------------------------------------------------------------------------
 
 OUString PDFFilter_getImplementationName ()
-	throw (RuntimeException)
 {
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.comp.PDF.PDFFilter" ) );
 }
@@ -218,14 +214,13 @@ OUString PDFFilter_getImplementationName ()
 #define SERVICE_NAME "com.sun.star.document.PDFFilter"
 
 sal_Bool SAL_CALL PDFFilter_supportsService( const OUString& ServiceName )
-	throw (RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL PDFFilter_getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL PDFFilter_getSupportedServiceNames(  )
 {
 	Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -237,7 +232,7 @@ Sequence< OUString > SAL_CALL PDFFilter_getSupportedServiceNames(  ) throw (Runt
 
 // -----------------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL PDFFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr) throw( Exception )
+Reference< XInterface > SAL_CALL PDFFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
 {
 	return (cppu::OWeakObject*) new PDFFilter( rSMgr );
 }
@@ -245,7 +240,6 @@ Reference< XInterface > SAL_CALL PDFFilter_createInstance( const Reference< XMul
 // -----------------------------------------------------------------------------
 
 OUString SAL_CALL PDFFilter::getImplementationName()
-	throw (RuntimeException)
 {
 	return PDFFilter_getImplementationName();
 }
@@ -253,14 +247,13 @@ OUString SAL_CALL PDFFilter::getImplementationName()
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL PDFFilter::supportsService( const OUString& rServiceName )
-	throw (RuntimeException)
 {
     return PDFFilter_supportsService( rServiceName );
 }
 
 // -----------------------------------------------------------------------------
 
-::com::sun::star::uno::Sequence< OUString > SAL_CALL PDFFilter::getSupportedServiceNames(  ) throw (RuntimeException)
+::com::sun::star::uno::Sequence< OUString > SAL_CALL PDFFilter::getSupportedServiceNames(  )
 {
     return PDFFilter_getSupportedServiceNames();
 }

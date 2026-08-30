@@ -47,33 +47,33 @@ public:
         const css::uno::Reference< css::uno::XComponentContext >& xContext,
         const ScVbaPalette& dPalette,
         const css::uno::Reference< css::beans::XPropertySet >& xPropertySet,
-        ScCellRangeObj* pRangeObj = 0, bool bFormControl = false ) throw ( css::uno::RuntimeException );
+        ScCellRangeObj* pRangeObj = 0, bool bFormControl = false );
 	virtual ~ScVbaFont();// {}
 
 	// Attributes
-    virtual css::uno::Any SAL_CALL getSize() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getStandardFontSize() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setStandardFontSize( const css::uno::Any& _standardfontsize ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getStandardFont() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setStandardFont( const css::uno::Any& _standardfont ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getFontStyle() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setFontStyle( const css::uno::Any& _fontstyle ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getColorIndex() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setColorIndex( const css::uno::Any& _colorindex ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getBold() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getUnderline() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setUnderline( const css::uno::Any& _underline ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getStrikethrough() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getShadow() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getItalic() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getSubscript() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setSubscript( const css::uno::Any& _subscript ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getSuperscript() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setSuperscript( const css::uno::Any& _superscript ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL getColor() throw (css::uno::RuntimeException) ;
-    virtual css::uno::Any SAL_CALL getOutlineFont() throw (css::uno::RuntimeException) ;
-    virtual void SAL_CALL setOutlineFont( const css::uno::Any& _outlinefont ) throw (css::uno::RuntimeException) ;
+    virtual css::uno::Any SAL_CALL getSize();
+    virtual css::uno::Any SAL_CALL getStandardFontSize();
+    virtual void SAL_CALL setStandardFontSize( const css::uno::Any& _standardfontsize );
+    virtual css::uno::Any SAL_CALL getStandardFont();
+    virtual void SAL_CALL setStandardFont( const css::uno::Any& _standardfont );
+    virtual css::uno::Any SAL_CALL getFontStyle();
+    virtual void SAL_CALL setFontStyle( const css::uno::Any& _fontstyle );
+    virtual css::uno::Any SAL_CALL getColorIndex();
+    virtual void SAL_CALL setColorIndex( const css::uno::Any& _colorindex );
+    virtual css::uno::Any SAL_CALL getBold();
+    virtual css::uno::Any SAL_CALL getUnderline();
+    virtual void SAL_CALL setUnderline( const css::uno::Any& _underline );
+    virtual css::uno::Any SAL_CALL getStrikethrough();
+    virtual css::uno::Any SAL_CALL getShadow();
+    virtual css::uno::Any SAL_CALL getItalic();
+    virtual css::uno::Any SAL_CALL getSubscript();
+    virtual void SAL_CALL setSubscript( const css::uno::Any& _subscript );
+    virtual css::uno::Any SAL_CALL getSuperscript();
+    virtual void SAL_CALL setSuperscript( const css::uno::Any& _superscript );
+    virtual css::uno::Any SAL_CALL getName();
+    virtual css::uno::Any SAL_CALL getColor() ;
+    virtual css::uno::Any SAL_CALL getOutlineFont() ;
+    virtual void SAL_CALL setOutlineFont( const css::uno::Any& _outlinefont ) ;
     // XHelperInterface
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();

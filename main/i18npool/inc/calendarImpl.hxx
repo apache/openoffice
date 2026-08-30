@@ -56,34 +56,34 @@ public:
 
 
     // Methods
-    virtual void SAL_CALL loadDefaultCalendar(const com::sun::star::lang::Locale& rLocale) throw(com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL loadCalendar(const rtl::OUString& uniqueID, const com::sun::star::lang::Locale& rLocale) throw(com::sun::star::uno::RuntimeException);
-    virtual Calendar SAL_CALL getLoadedCalendar() throw(com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence < rtl::OUString > SAL_CALL getAllCalendars(const com::sun::star::lang::Locale& rLocale) throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getUniqueID() throw(com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDateTime(double nTimeInDays) throw(com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL getDateTime() throw(com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setValue( sal_Int16 nFieldIndex, sal_Int16 nValue ) throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getValue(sal_Int16 nFieldIndex) throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isValid() throw (com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addValue(sal_Int16 nFieldIndex, sal_Int32 nAmount) throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getFirstDayOfWeek() throw(com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setFirstDayOfWeek(sal_Int16 nDay) throw(com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setMinimumNumberOfDaysForFirstWeek(sal_Int16 nDays) throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getMinimumNumberOfDaysForFirstWeek() throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getNumberOfMonthsInYear() throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getNumberOfDaysInWeek() throw(com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence < CalendarItem > SAL_CALL getMonths() throw(com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence < CalendarItem > SAL_CALL getDays() throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getDisplayName(sal_Int16 nCalendarDisplayIndex, sal_Int16 nIdx, sal_Int16 nNameType) throw(com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL loadDefaultCalendar(const com::sun::star::lang::Locale& rLocale);
+    virtual void SAL_CALL loadCalendar(const rtl::OUString& uniqueID, const com::sun::star::lang::Locale& rLocale);
+    virtual Calendar SAL_CALL getLoadedCalendar();
+    virtual com::sun::star::uno::Sequence < rtl::OUString > SAL_CALL getAllCalendars(const com::sun::star::lang::Locale& rLocale);
+    virtual rtl::OUString SAL_CALL getUniqueID();
+    virtual void SAL_CALL setDateTime(double nTimeInDays);
+    virtual double SAL_CALL getDateTime();
+    virtual void SAL_CALL setValue( sal_Int16 nFieldIndex, sal_Int16 nValue );
+    virtual sal_Int16 SAL_CALL getValue(sal_Int16 nFieldIndex);
+    virtual sal_Bool SAL_CALL isValid();
+    virtual void SAL_CALL addValue(sal_Int16 nFieldIndex, sal_Int32 nAmount);
+    virtual sal_Int16 SAL_CALL getFirstDayOfWeek();
+    virtual void SAL_CALL setFirstDayOfWeek(sal_Int16 nDay);
+    virtual void SAL_CALL setMinimumNumberOfDaysForFirstWeek(sal_Int16 nDays);
+    virtual sal_Int16 SAL_CALL getMinimumNumberOfDaysForFirstWeek();
+    virtual sal_Int16 SAL_CALL getNumberOfMonthsInYear();
+    virtual sal_Int16 SAL_CALL getNumberOfDaysInWeek();
+    virtual com::sun::star::uno::Sequence < CalendarItem > SAL_CALL getMonths();
+    virtual com::sun::star::uno::Sequence < CalendarItem > SAL_CALL getDays();
+    virtual rtl::OUString SAL_CALL getDisplayName(sal_Int16 nCalendarDisplayIndex, sal_Int16 nIdx, sal_Int16 nNameType);
 
     // Methods in XExtendedCalendar
-    virtual rtl::OUString SAL_CALL getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativeNumberMode ) throw (com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativeNumberMode );
 
     //XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName() throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) throw(com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence < rtl::OUString > SAL_CALL getSupportedServiceNames() throw(com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+    virtual com::sun::star::uno::Sequence < rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 private:
     struct lookupTableItem {

@@ -87,7 +87,6 @@ bool GalleryItem::isValid() const
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL GalleryItem::queryAggregation( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
 	uno::Any aAny;
 
@@ -112,7 +111,6 @@ uno::Any SAL_CALL GalleryItem::queryAggregation( const uno::Type & rType )
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL GalleryItem::queryInterface( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
 }
@@ -156,7 +154,6 @@ uno::Sequence< ::rtl::OUString > GalleryItem::getSupportedServiceNames_Static()
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL GalleryItem::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
 }
@@ -164,7 +161,6 @@ uno::Sequence< ::rtl::OUString > GalleryItem::getSupportedServiceNames_Static()
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL GalleryItem::supportsService( const ::rtl::OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString >	aSNL( getSupportedServiceNames() );
     const ::rtl::OUString*				pArray = aSNL.getConstArray();
@@ -179,7 +175,6 @@ sal_Bool SAL_CALL GalleryItem::supportsService( const ::rtl::OUString& ServiceNa
 // ------------------------------------------------------------------------------
 
 uno::Sequence< ::rtl::OUString > SAL_CALL GalleryItem::getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	return getSupportedServiceNames_Static();
 }
@@ -187,7 +182,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL GalleryItem::getSupportedServiceNames(
 // ------------------------------------------------------------------------------
 
 uno::Sequence< uno::Type > SAL_CALL GalleryItem::getTypes()
-	throw(uno::RuntimeException)
 {
 	uno::Sequence< uno::Type >	aTypes( 6 );
 	uno::Type* 					pTypes = aTypes.getArray();
@@ -205,7 +199,6 @@ uno::Sequence< uno::Type > SAL_CALL GalleryItem::getTypes()
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL GalleryItem::getImplementationId()
-	throw(uno::RuntimeException)
 {
 	const vos::OGuard 					aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
@@ -222,7 +215,6 @@ uno::Sequence< sal_Int8 > SAL_CALL GalleryItem::getImplementationId()
 // ------------------------------------------------------------------------------
 
 sal_Int8 SAL_CALL GalleryItem::getType()
-	throw (uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	sal_Int8 			nRet = gallery::GalleryItemType::EMPTY;
@@ -288,10 +280,6 @@ sal_Int8 SAL_CALL GalleryItem::getType()
 // ------------------------------------------------------------------------------
 
 void GalleryItem::_setPropertyValues( const comphelper::PropertyMapEntry** ppEntries, const uno::Any* pValues )
-	throw( beans::UnknownPropertyException,
-		   beans::PropertyVetoException,
-		   lang::IllegalArgumentException,
-		   lang::WrappedTargetException )
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -335,8 +323,6 @@ void GalleryItem::_setPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 // ------------------------------------------------------------------------------
 
 void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, uno::Any* pValue )
-	throw( beans::UnknownPropertyException,
-		   lang::WrappedTargetException )
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

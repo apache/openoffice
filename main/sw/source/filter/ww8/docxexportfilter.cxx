@@ -110,7 +110,7 @@ uno::Sequence< OUString > SAL_CALL DocxExport_getSupportedServiceNames() throw()
 	return aSeq;
 }
 
-uno::Reference< uno::XInterface > SAL_CALL DocxExport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+uno::Reference< uno::XInterface > SAL_CALL DocxExport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
 	return (cppu::OWeakObject*) new DocxExportFilter( rSMgr );
 }

@@ -173,7 +173,6 @@ EditToolbarController::~EditToolbarController()
 // ------------------------------------------------------------------
 
 void SAL_CALL EditToolbarController::dispose()
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 

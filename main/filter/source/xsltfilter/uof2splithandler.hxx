@@ -66,24 +66,18 @@ public :
 	~UOF2SplitHandler();
 
 	// XDocumentHandler
-    virtual void SAL_CALL startDocument() throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL endDocument() throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL startElement(const ::rtl::OUString& qName , const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& attriblist)
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL endElement(const ::rtl::OUString& qName )
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL characters(const ::rtl::OUString& rStr )
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& str)
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL processingInstruction(const ::rtl::OUString& str, const ::rtl::OUString& str2)
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setDocumentLocator(const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& doclocator)
-        throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL startDocument();
+    virtual void SAL_CALL endDocument();
+	virtual void SAL_CALL startElement(const ::rtl::OUString& qName , const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& attriblist);
+	virtual void SAL_CALL endElement(const ::rtl::OUString& qName );
+	virtual void SAL_CALL characters(const ::rtl::OUString& rStr );
+	virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& str);
+	virtual void SAL_CALL processingInstruction(const ::rtl::OUString& str, const ::rtl::OUString& str2);
+	virtual void SAL_CALL setDocumentLocator(const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator >& doclocator);
 
 private :
 	void _Init();
-	void Write( ::rtl::OUString & rOutFile , sal_Bool bStart ) throw( ::com::sun::star::uno::RuntimeException );
+	void Write( ::rtl::OUString & rOutFile , sal_Bool bStart );
 	void namespaceMap( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& attriblist );
 
 private :

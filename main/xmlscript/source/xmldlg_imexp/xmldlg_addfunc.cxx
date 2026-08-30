@@ -53,12 +53,10 @@ public:
 		{}
 
 	// XInputStreamProvider
-    virtual Reference< io::XInputStream > SAL_CALL createInputStream()
-		throw (RuntimeException);
+    virtual Reference< io::XInputStream > SAL_CALL createInputStream();
 };
 //__________________________________________________________________________________________________
 Reference< io::XInputStream > InputStreamProvider::createInputStream()
-	throw (RuntimeException)
 {
 	return ::xmlscript::createInputStream( _bytes );
 }
@@ -67,7 +65,6 @@ Reference< io::XInputStream > InputStreamProvider::createInputStream()
 Reference< io::XInputStreamProvider > SAL_CALL exportDialogModel(
     Reference< container::XNameContainer > const & xDialogModel,
     Reference< XComponentContext > const & xContext )
-	SAL_THROW( (Exception) )
 {
 	Reference< lang::XMultiComponentFactory > xSMgr( xContext->getServiceManager() );
 	if (! xSMgr.is())
@@ -101,7 +98,6 @@ void SAL_CALL importDialogModel(
 	Reference< io::XInputStream > xInput,
 	Reference< container::XNameContainer > const & xDialogModel,
     Reference< XComponentContext > const & xContext )
-	SAL_THROW( (Exception) )
 {
 	Reference< lang::XMultiComponentFactory > xSMgr( xContext->getServiceManager() );
 	if (! xSMgr.is())

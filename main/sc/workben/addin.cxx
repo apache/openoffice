@@ -340,24 +340,24 @@ void ScTestAddIn::setLocale(const lang::Locale& eLocale) THROWS( (UsrSystemExcep
 //			   UStringToString(aFuncLoc.Country, CHARSET_SYSTEM) );
 }
 
-::com::sun::star::lang::Locale SAL_CALL ScTestAddIn::getLocale(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::lang::Locale SAL_CALL ScTestAddIn::getLocale(  )
 {
 	return aFuncLoc;
 }
 
 // XTestAddIn
 
-sal_Int32 SAL_CALL ScTestAddIn::countParams( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArgs ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL ScTestAddIn::countParams( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArgs )
 {
 	return aArgs.getLength();
 }
 
-double SAL_CALL ScTestAddIn::addOne( double fValue ) throw(::com::sun::star::uno::RuntimeException)
+double SAL_CALL ScTestAddIn::addOne( double fValue )
 {
 	return fValue + 1.0;
 }
 
-::rtl::OUString SAL_CALL ScTestAddIn::repeatStr( const ::rtl::OUString& aStr, sal_Int32 nCount ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ScTestAddIn::repeatStr( const ::rtl::OUString& aStr, sal_Int32 nCount )
 {
 	String aRet;
 	String aStrStr = OUStringToString( aStr, CHARSET_SYSTEM );
@@ -367,7 +367,7 @@ double SAL_CALL ScTestAddIn::addOne( double fValue ) throw(::com::sun::star::uno
 	return StringToOUString( aRet, CHARSET_SYSTEM );
 }
 
-::rtl::OUString SAL_CALL ScTestAddIn::getDateString( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xCaller, double fValue ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ScTestAddIn::getDateString( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xCaller, double fValue )
 {
 	uno::Any aDateAny = xCaller->getPropertyValue( L"NullDate" );
 //!	if ( aDateAny.getReflection()->equals( *Date_getReflection() ) )
@@ -395,7 +395,7 @@ double SAL_CALL ScTestAddIn::addOne( double fValue ) throw(::com::sun::star::uno
 	return L"**ERROR**";
 }
 
-sal_Int32 SAL_CALL ScTestAddIn::getColorValue( const ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange >& xRange ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL ScTestAddIn::getColorValue( const ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange >& xRange )
 {
 	uno::Reference<beans::XPropertySet> xProp( xRange, uno::UNO_QUERY );
 	if (xProp.is())
@@ -437,7 +437,7 @@ INT32 lcl_GetLongElement( const uno::Sequence< uno::Sequence<INT32> >& aMatrix, 
 	return 0.0;		// error
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > > SAL_CALL ScTestAddIn::transpose( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > >& aMatrix ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > > SAL_CALL ScTestAddIn::transpose( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > >& aMatrix )
 {
 	long nRowCount = aMatrix.getLength();
 	long nColCount = 0;
@@ -457,7 +457,7 @@ INT32 lcl_GetLongElement( const uno::Sequence< uno::Sequence<INT32> >& aMatrix, 
 	return aRet;
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > > SAL_CALL ScTestAddIn::transposeInt( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > >& aMatrix ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > > SAL_CALL ScTestAddIn::transposeInt( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > >& aMatrix )
 {
 	long nRowCount = aMatrix.getLength();
 	long nColCount = 0;
@@ -477,7 +477,7 @@ INT32 lcl_GetLongElement( const uno::Sequence< uno::Sequence<INT32> >& aMatrix, 
 	return aRet;
 }
 
-::rtl::OUString SAL_CALL ScTestAddIn::repeatMultiple( sal_Int32 nCount, const ::com::sun::star::uno::Any& aFirst, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aFollow ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ScTestAddIn::repeatMultiple( sal_Int32 nCount, const ::com::sun::star::uno::Any& aFirst, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aFollow )
 {
 	String aSeparator;
 	if ( !aFirst.hasValue() )	// not specified
@@ -513,7 +513,7 @@ INT32 lcl_GetLongElement( const uno::Sequence< uno::Sequence<INT32> >& aMatrix, 
 	return StringToOUString(aRet, CHARSET_SYSTEM);
 }
 
-::com::sun::star::uno::Any SAL_CALL ScTestAddIn::getStrOrVal( sal_Int32 nFlag ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any SAL_CALL ScTestAddIn::getStrOrVal( sal_Int32 nFlag )
 {
 	uno::Any aRet;
 
@@ -541,7 +541,7 @@ INT32 lcl_GetLongElement( const uno::Sequence< uno::Sequence<INT32> >& aMatrix, 
 	return aRet;
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::sheet::XVolatileResult > SAL_CALL ScTestAddIn::callAsync( const ::rtl::OUString& aString ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::sheet::XVolatileResult > SAL_CALL ScTestAddIn::callAsync( const ::rtl::OUString& aString )
 {
 	String aStr = OUStringToString( aString, CHARSET_SYSTEM );
 	char c = (char) aStr;
@@ -562,25 +562,25 @@ INT32 lcl_GetLongElement( const uno::Sequence< uno::Sequence<INT32> >& aMatrix, 
 
 // XServiceName
 
-::rtl::OUString SAL_CALL ScTestAddIn::getServiceName(  ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ScTestAddIn::getServiceName(  )
 {
 	return SCTESTADDIN_SERVICE;		// name of specific AddIn service
 }
 
 // XServiceInfo
 
-::rtl::OUString SAL_CALL ScTestAddIn::getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ScTestAddIn::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 
-sal_Bool SAL_CALL ScTestAddIn::supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL ScTestAddIn::supportsService( const ::rtl::OUString& ServiceName )
 {
 	return ServiceName == SCADDIN_SERVICE ||
 			ServiceName == SCTESTADDIN_SERVICE;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL ScTestAddIn::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL ScTestAddIn::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }

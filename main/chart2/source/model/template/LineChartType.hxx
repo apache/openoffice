@@ -47,22 +47,18 @@ protected:
     explicit LineChartType( const LineChartType & rOther );
 
     // ____ XChartType ____
-    virtual ::rtl::OUString SAL_CALL getChartType()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getChartType();
 
     // ____ OPropertySet ____
-    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const
-        throw(::com::sun::star::beans::UnknownPropertyException);
+    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const;
     virtual ::cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
 
     // ____ XPropertySet ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+        getPropertySetInfo();
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 };
 
 } //  namespace chart

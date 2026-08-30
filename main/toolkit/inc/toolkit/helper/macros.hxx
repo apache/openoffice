@@ -27,7 +27,7 @@
 // -------------------------------------------------------------------------------------
 
 #define IMPL_XUNOTUNNEL( ClassName ) \
-sal_Int64 ClassName::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) throw(::com::sun::star::uno::RuntimeException) \
+sal_Int64 ClassName::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) \
 { \
 	if( ( rIdentifier.getLength() == 16 ) && ( 0 == rtl_compareMemory( ClassName::GetUnoTunnelId().getConstArray(), rIdentifier.getConstArray(), 16 ) ) ) \
 	{ \
@@ -57,7 +57,7 @@ ClassName* ClassName::GetImplementation( const ::com::sun::star::uno::Reference<
 }
 
 #define IMPL_XUNOTUNNEL2( ClassName, BaseClass ) \
-sal_Int64 ClassName::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) throw(::com::sun::star::uno::RuntimeException) \
+sal_Int64 ClassName::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) \
 { \
 	if( ( rIdentifier.getLength() == 16 ) && ( 0 == rtl_compareMemory( ClassName::GetUnoTunnelId().getConstArray(), rIdentifier.getConstArray(), 16 ) ) ) \
 	{ \
@@ -89,7 +89,7 @@ ClassName* ClassName::GetImplementation( const ::com::sun::star::uno::Reference<
 // -------------------------------------------------------------------------------------
 
 #define IMPL_IMPLEMENTATION_ID( ClassName )	\
-::com::sun::star::uno::Sequence< sal_Int8 > ClassName::getImplementationId() throw(::com::sun::star::uno::RuntimeException) \
+::com::sun::star::uno::Sequence< sal_Int8 > ClassName::getImplementationId() \
 { \
 	static ::cppu::OImplementationId* pId = NULL; \
 	if( !pId ) \
@@ -106,7 +106,7 @@ ClassName* ClassName::GetImplementation( const ::com::sun::star::uno::Reference<
 
 #define IMPL_XTYPEPROVIDER_START( ClassName )	\
 IMPL_IMPLEMENTATION_ID( ClassName ) \
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > ClassName::getTypes() throw(::com::sun::star::uno::RuntimeException) \
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > ClassName::getTypes() \
 { \
 	static ::cppu::OTypeCollection* pCollection = NULL; \
 	if( !pCollection ) \
@@ -134,10 +134,10 @@ class ClassName : public ListenerMultiplexerBase, public InterfaceName \
 { \
 public: \
 	ClassName( ::cppu::OWeakObject& rSource ); \
-    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException); \
+    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ); \
 	void						SAL_CALL acquire() throw()	{ ListenerMultiplexerBase::acquire(); } \
 	void						SAL_CALL release() throw()	{ ListenerMultiplexerBase::release(); } \
-    void						SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+    void						SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 // -------------------------------------------------------------------------------------
 
@@ -146,10 +146,10 @@ class TOOLKIT_DLLPUBLIC ClassName : public ListenerMultiplexerBase, public Inter
 { \
 public: \
 	ClassName( ::cppu::OWeakObject& rSource ); \
-    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException); \
+    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ); \
 	void						SAL_CALL acquire() throw()	{ ListenerMultiplexerBase::acquire(); } \
 	void						SAL_CALL release() throw()	{ ListenerMultiplexerBase::release(); } \
-    void						SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+    void						SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 // -------------------------------------------------------------------------------------
 
@@ -163,14 +163,14 @@ ClassName::ClassName( ::cppu::OWeakObject& rSource ) \
 	: ListenerMultiplexerBase( rSource ) \
 { \
 } \
-::com::sun::star::uno::Any ClassName::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException) \
+::com::sun::star::uno::Any ClassName::queryInterface( const ::com::sun::star::uno::Type & rType ) \
 { \
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType, \
 										SAL_STATIC_CAST( ::com::sun::star::lang::XEventListener*, this ), \
 										SAL_STATIC_CAST( InterfaceName*, this ) ); \
 	return (aRet.hasValue() ? aRet : ListenerMultiplexerBase::queryInterface( rType )); \
 } \
-void ClassName::disposing( const ::com::sun::star::lang::EventObject& ) throw(::com::sun::star::uno::RuntimeException) \
+void ClassName::disposing( const ::com::sun::star::lang::EventObject& ) \
 { \
 }
 
@@ -212,17 +212,17 @@ void ClassName::disposing( const ::com::sun::star::lang::EventObject& ) throw(::
 }
 
 #define IMPL_LISTENERMULTIPLEXER_LISTENERMETHOD_EXCEPTION( ClassName, InterfaceName, MethodName, EventType, Exception ) \
-void ClassName::MethodName( const EventType& evt ) throw(::com::sun::star::uno::RuntimeException, Exception) \
+void ClassName::MethodName( const EventType& evt ) \
 IMPL_LISTENERMULTIPLEXER_LISTENERMETHOD_BODY( ClassName, InterfaceName, MethodName, EventType )
 
 #define IMPL_LISTENERMULTIPLEXER_LISTENERMETHOD( ClassName, InterfaceName, MethodName, EventType ) \
-void ClassName::MethodName( const EventType& evt ) throw(::com::sun::star::uno::RuntimeException) \
+void ClassName::MethodName( const EventType& evt ) \
 IMPL_LISTENERMULTIPLEXER_LISTENERMETHOD_BODY( ClassName, InterfaceName, MethodName, EventType )
 
 // -------------------------------------------------------------------------------------
 
 #define DECLIMPL_SUPPORTS_SERVICE( ) \
-    sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName ) throw(::com::sun::star::uno::RuntimeException) \
+    sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName ) \
 	{ \
 		::com::sun::star::uno::Sequence< ::rtl::OUString > aServiceNames( getSupportedServiceNames() ); \
 		const ::rtl::OUString* pSupported = aServiceNames.getConstArray(); \
@@ -236,8 +236,8 @@ IMPL_LISTENERMULTIPLEXER_LISTENERMETHOD_BODY( ClassName, InterfaceName, MethodNa
 // -------------------------------------------------------------------------------------
 
 #define DECLIMPL_SERVICEINFO_DERIVED( ImplName, BaseClass, ServiceName ) \
-	::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException) { return ::rtl::OUString::createFromAscii( "stardiv.Toolkit." #ImplName ); } \
-    ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException)	\
+	::rtl::OUString SAL_CALL getImplementationName(  ) { return ::rtl::OUString::createFromAscii( "stardiv.Toolkit." #ImplName ); } \
+    ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()	\
 							{ \
 								::com::sun::star::uno::Sequence< ::rtl::OUString > aNames = BaseClass::getSupportedServiceNames( ); \
 								aNames.realloc( aNames.getLength() + 1 ); \
@@ -248,8 +248,8 @@ IMPL_LISTENERMULTIPLEXER_LISTENERMETHOD_BODY( ClassName, InterfaceName, MethodNa
 // -------------------------------------------------------------------------------------
 
 #define DECLIMPL_SERVICEINFO( ImplName, ServiceName ) \
-	::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException) { return ::rtl::OUString::createFromAscii( "stardiv.Toolkit." #ImplName ); } \
-    ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException)	\
+	::rtl::OUString SAL_CALL getImplementationName(  ) { return ::rtl::OUString::createFromAscii( "stardiv.Toolkit." #ImplName ); } \
+    ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()	\
 							{ \
 								::com::sun::star::uno::Sequence< ::rtl::OUString > aNames( 1 ); \
 								aNames[ 0 ] = ::rtl::OUString::createFromAscii( ServiceName ); \

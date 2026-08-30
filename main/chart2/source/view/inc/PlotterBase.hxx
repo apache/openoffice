@@ -58,7 +58,7 @@ public:
 		, const ::com::sun::star::uno::Reference<
                 ::com::sun::star::lang::XMultiServiceFactory >& xFactory
         , const rtl::OUString& rCID
-                ) throw (::com::sun::star::uno::RuntimeException );
+                );
 
     virtual void setScales( const ::std::vector< ExplicitScaleData >& rScales, bool bSwapXAndYAxis );
 

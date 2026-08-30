@@ -364,7 +364,6 @@ bool OTransferable::renderComplete( PDRAGTRANSFER pdxfer)
 }
 
 Any SAL_CALL OTransferable::getTransferData( const DataFlavor& df)
-throw(UnsupportedFlavorException, IOException, RuntimeException)
 {
     OUString m_aData;
     char * pszText = 0;
@@ -438,7 +437,6 @@ throw(UnsupportedFlavorException, IOException, RuntimeException)
 // -----------------------------------------------------------------------
 
 Sequence< DataFlavor > SAL_CALL OTransferable::getTransferDataFlavors(  )
-throw(RuntimeException)
 {
     return m_aFlavorList;
 }
@@ -446,7 +444,6 @@ throw(RuntimeException)
 // -----------------------------------------------------------------------
 
 sal_Bool SAL_CALL OTransferable::isDataFlavorSupported( const DataFlavor& )
-throw(RuntimeException)
 {
     return sal_True;
 }

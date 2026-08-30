@@ -10,7 +10,6 @@ _DEFINES = [
     "SHAREDLIB", "_DLL_",
     "TOOLS_DLLIMPLEMENTATION",
     "VCFL",
-    "snprintf=_snprintf",
     "Z_PREFIX",
     "SYSTEM_ZLIB",
     # ImpContentMixLessCompare is a heterogeneous comparator (ImpContent vs sal_uInt64).
@@ -250,7 +249,6 @@ gtest_test(
     defines = [
         "WNT", "GUI", "WIN32",
         "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-        "snprintf=_snprintf",
     ],
     deps = [
         ":tools_headers",

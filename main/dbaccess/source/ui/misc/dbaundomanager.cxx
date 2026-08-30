@@ -230,35 +230,35 @@ namespace dbaui
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::enterUndoContext( const ::rtl::OUString& i_title ) throw (RuntimeException)
+    void SAL_CALL UndoManager::enterUndoContext( const ::rtl::OUString& i_title )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.enterUndoContext( i_title, aGuard );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::enterHiddenUndoContext(  ) throw (EmptyUndoStackException, RuntimeException)
+    void SAL_CALL UndoManager::enterHiddenUndoContext(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.enterHiddenUndoContext( aGuard );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::leaveUndoContext(  ) throw (InvalidStateException, RuntimeException)
+    void SAL_CALL UndoManager::leaveUndoContext(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.leaveUndoContext( aGuard );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::addUndoAction( const Reference< XUndoAction >& i_action ) throw (IllegalArgumentException, RuntimeException)
+    void SAL_CALL UndoManager::addUndoAction( const Reference< XUndoAction >& i_action )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.addUndoAction( i_action, aGuard );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::undo(  ) throw (EmptyUndoStackException, UndoContextNotClosedException, UndoFailedException, RuntimeException)
+    void SAL_CALL UndoManager::undo(  )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
             // (all our UndoActions work directly on VCL code, usually, so ...)
@@ -267,7 +267,7 @@ namespace dbaui
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::redo(  ) throw (EmptyUndoStackException, UndoContextNotClosedException, UndoFailedException, RuntimeException)
+    void SAL_CALL UndoManager::redo(  )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
             // (all our UndoActions work directly on VCL code, usually, so ...)
@@ -276,112 +276,112 @@ namespace dbaui
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL UndoManager::isUndoPossible(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL UndoManager::isUndoPossible(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return m_pImpl->aUndoHelper.isUndoPossible();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL UndoManager::isRedoPossible(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL UndoManager::isRedoPossible(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return m_pImpl->aUndoHelper.isRedoPossible();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL UndoManager::getCurrentUndoActionTitle(  ) throw (EmptyUndoStackException, RuntimeException)
+    ::rtl::OUString SAL_CALL UndoManager::getCurrentUndoActionTitle(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return m_pImpl->aUndoHelper.getCurrentUndoActionTitle();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL UndoManager::getCurrentRedoActionTitle(  ) throw (EmptyUndoStackException, RuntimeException)
+    ::rtl::OUString SAL_CALL UndoManager::getCurrentRedoActionTitle(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return m_pImpl->aUndoHelper.getCurrentRedoActionTitle();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL UndoManager::getAllUndoActionTitles(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL UndoManager::getAllUndoActionTitles(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return m_pImpl->aUndoHelper.getAllUndoActionTitles();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL UndoManager::getAllRedoActionTitles(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL UndoManager::getAllRedoActionTitles(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return m_pImpl->aUndoHelper.getAllRedoActionTitles();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::clear(  ) throw (UndoContextNotClosedException, RuntimeException)
+    void SAL_CALL UndoManager::clear(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.clear( aGuard );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::clearRedo(  ) throw (UndoContextNotClosedException, RuntimeException)
+    void SAL_CALL UndoManager::clearRedo(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.clearRedo( aGuard );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::reset(  ) throw (RuntimeException)
+    void SAL_CALL UndoManager::reset(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.reset( aGuard );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::addUndoManagerListener( const Reference< XUndoManagerListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL UndoManager::addUndoManagerListener( const Reference< XUndoManagerListener >& i_listener )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.addUndoManagerListener( i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::removeUndoManagerListener( const Reference< XUndoManagerListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL UndoManager::removeUndoManagerListener( const Reference< XUndoManagerListener >& i_listener )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.removeUndoManagerListener( i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::lock(  ) throw (RuntimeException)
+    void SAL_CALL UndoManager::lock(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.lock();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::unlock(  ) throw (NotLockedException, RuntimeException)
+    void SAL_CALL UndoManager::unlock(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         m_pImpl->aUndoHelper.unlock();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL UndoManager::isLocked(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL UndoManager::isLocked(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return m_pImpl->aUndoHelper.isLocked();
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XInterface > SAL_CALL UndoManager::getParent(  ) throw (RuntimeException)
+    Reference< XInterface > SAL_CALL UndoManager::getParent(  )
     {
         UndoManagerMethodGuard aGuard( *m_pImpl );
         return *&m_pImpl->rParent;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL UndoManager::setParent( const Reference< XInterface >& i_parent ) throw (NoSupportException, RuntimeException)
+    void SAL_CALL UndoManager::setParent( const Reference< XInterface >& i_parent )
     {
         (void)i_parent;
         throw NoSupportException( ::rtl::OUString(), m_pImpl->getThis() );

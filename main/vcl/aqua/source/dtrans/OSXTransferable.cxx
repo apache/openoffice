@@ -76,7 +76,6 @@ OSXTransferable::~OSXTransferable()
 
 
 Any SAL_CALL OSXTransferable::getTransferData( const DataFlavor& aFlavor )
-  throw( UnsupportedFlavorException, IOException, RuntimeException )
 {
   if (!isValidFlavor(aFlavor) || !isDataFlavorSupported(aFlavor))
 	{
@@ -119,14 +118,12 @@ bool OSXTransferable::isUnicodeText(const DataFlavor& flavor)
 
 
 Sequence< DataFlavor > SAL_CALL OSXTransferable::getTransferDataFlavors(  )
-	throw( RuntimeException )
 {
   return mFlavorList;
 }
 
 
 sal_Bool SAL_CALL OSXTransferable::isDataFlavorSupported(const DataFlavor& aFlavor)
-	throw( RuntimeException )
 {
 	for (sal_Int32 i = 0; i < mFlavorList.getLength(); i++)
 	  if (compareDataFlavors(aFlavor, mFlavorList[i]))

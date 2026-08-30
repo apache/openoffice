@@ -69,35 +69,28 @@ class FWI_DLLPUBLIC ItemContainer :   public ::cppu::WeakImplHelper1< ::com::sun
 	    // XUnoTunnel
 	    static const ::com::sun::star::uno::Sequence< sal_Int8 >&	GetUnoTunnelId() throw();
 	    static ItemContainer*								        GetImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rxIFace ) throw();
-	    sal_Int64													SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+	    sal_Int64													SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier );
 
         // XIndexContainer
-		virtual void SAL_CALL insertByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element )
-			throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL insertByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element );
 
-		virtual void SAL_CALL removeByIndex( sal_Int32 Index )
-			throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL removeByIndex( sal_Int32 Index );
 
 		// XIndexReplace
-		virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element )
-			throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element );
 
 		// XIndexAccess
-		virtual sal_Int32 SAL_CALL getCount()
-			throw (::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL getCount();
 
-		virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index )
-			throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index );
 
 		// XElementAccess
 		virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-			throw (::com::sun::star::uno::RuntimeException)
 		{
 			return ::getCppuType((com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >*)0);
 		}
 
-		virtual sal_Bool SAL_CALL hasElements()
-			throw (::com::sun::star::uno::RuntimeException);
+		virtual sal_Bool SAL_CALL hasElements();
 
     private:
         ItemContainer();

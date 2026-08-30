@@ -64,8 +64,7 @@ class ItemHolder2 : private ItemHolderMutexBase
     // uno interface
     public:
 
-        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent);
 
     //...........................................
     // helper

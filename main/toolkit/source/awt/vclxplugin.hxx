@@ -48,10 +48,9 @@ protected:
     ~VCLXPlugin();
 
     // XComponent
-    void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL dispose();
 
-    virtual ::com::sun::star::awt::Size SAL_CALL getMinimumSize()
-        throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Size SAL_CALL getMinimumSize();
 
 private:
     VCLXPlugin( VCLXPlugin const & );

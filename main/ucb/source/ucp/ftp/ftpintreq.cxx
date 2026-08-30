@@ -62,7 +62,6 @@ XInteractionApproveImpl::release( void )
 
 Any SAL_CALL
 XInteractionApproveImpl::queryInterface( const Type& rType )
-    throw( RuntimeException )
 {
     Any aRet = cppu::queryInterface(
         rType,
@@ -82,7 +81,6 @@ XTYPEPROVIDER_IMPL_2( XInteractionApproveImpl,
 
 
 void SAL_CALL XInteractionApproveImpl::select()
-    throw (RuntimeException)
 {
     m_bSelected = true;
 }
@@ -121,7 +119,6 @@ XInteractionDisapproveImpl::release( void )
 
 Any SAL_CALL
 XInteractionDisapproveImpl::queryInterface( const Type& rType )
-    throw( RuntimeException )
 {
     Any aRet = cppu::queryInterface(
         rType,
@@ -141,7 +138,6 @@ XTYPEPROVIDER_IMPL_2( XInteractionDisapproveImpl,
 
 
 void SAL_CALL XInteractionDisapproveImpl::select()
-    throw (RuntimeException)
 
 {
     m_bSelected = true;
@@ -181,7 +177,6 @@ XInteractionRequestImpl::release( void )
 
 Any SAL_CALL
 XInteractionRequestImpl::queryInterface( const Type& rType )
-    throw( RuntimeException )
 {
     Any aRet = cppu::queryInterface(
         rType,
@@ -201,7 +196,6 @@ XTYPEPROVIDER_IMPL_2( XInteractionRequestImpl,
 
 
 Any SAL_CALL XInteractionRequestImpl::getRequest(  )
-    throw (RuntimeException)
 {
     Any aAny;
     UnsupportedNameClashException excep;
@@ -213,7 +207,6 @@ Any SAL_CALL XInteractionRequestImpl::getRequest(  )
 
 Sequence<Reference<XInteractionContinuation > > SAL_CALL
 XInteractionRequestImpl::getContinuations(  )
-    throw (RuntimeException)
 {
     return m_aSeq;
 }

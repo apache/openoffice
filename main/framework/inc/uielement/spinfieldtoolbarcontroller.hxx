@@ -72,7 +72,7 @@ class SpinfieldToolbarController : public ISpinfieldListener,
         virtual ~SpinfieldToolbarController();
 
         // XComponent
-        virtual void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL dispose();
 
         // ISpinfieldListener
 	    virtual void Up();

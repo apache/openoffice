@@ -17,7 +17,6 @@ _DEFINES = [
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "SHAREDLIB", "_DLL_",
     "OOO_DLLIMPLEMENTATION_TEST",
-    "snprintf=_snprintf",
 ]
 
 # ── public test/ API headers (test/officeconnection.hxx, etc.) ────────
@@ -152,7 +151,6 @@ gtest_test(
         "WNT",
         "GUI",
         "WIN32",
-        "snprintf=_snprintf",
     ],
     deps = [
         ":test_headers",

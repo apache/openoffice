@@ -35,7 +35,7 @@ namespace connectivity
     ParameterSubstitution::ParameterSubstitution(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& _rxContext ) : m_xContext(_rxContext)
     {
     }
-    void SAL_CALL ParameterSubstitution::initialize( const uno::Sequence< uno::Any >& _aArguments ) throw (uno::Exception, uno::RuntimeException)
+    void SAL_CALL ParameterSubstitution::initialize( const uno::Sequence< uno::Any >& _aArguments )
     {
         ::osl::MutexGuard aGuard(m_aMutex);
         comphelper::SequenceAsHashMap aArgs(_aArguments);
@@ -44,17 +44,17 @@ namespace connectivity
         m_xConnection = xConnection;
     }
     //------------------------------------------------------------------------------
-	rtl::OUString ParameterSubstitution::getImplementationName_Static(  ) throw(RuntimeException)
+	rtl::OUString ParameterSubstitution::getImplementationName_Static(  )
 	{
 		return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("org.openoffice.comp.helper.ParameterSubstitution"));
 	}
 	//------------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL ParameterSubstitution::getImplementationName(  ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL ParameterSubstitution::getImplementationName(  )
 	{
 		return getImplementationName_Static();
 	}
 	//------------------------------------------------------------------
-	sal_Bool SAL_CALL ParameterSubstitution::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+	sal_Bool SAL_CALL ParameterSubstitution::supportsService( const ::rtl::OUString& _rServiceName )
 	{
 		Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 		const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -65,12 +65,12 @@ namespace connectivity
 		return pSupported != pEnd;
 	}
 	//------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL ParameterSubstitution::getSupportedServiceNames(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL ParameterSubstitution::getSupportedServiceNames(  )
 	{
 		return getSupportedServiceNames_Static();
 	}
     //------------------------------------------------------------------
-    Sequence< ::rtl::OUString > ParameterSubstitution::getSupportedServiceNames_Static(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > ParameterSubstitution::getSupportedServiceNames_Static(  )
 	{
 		Sequence< ::rtl::OUString > aSNS( 1 );
 		aSNS[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdb.ParameterSubstitution");
@@ -83,7 +83,7 @@ namespace connectivity
         return *(new ParameterSubstitution(_xContext));
     }
 	//------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL ParameterSubstitution::substituteVariables( const ::rtl::OUString& _sText, ::sal_Bool /*bSubstRequired*/ ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException)
+    ::rtl::OUString SAL_CALL ParameterSubstitution::substituteVariables( const ::rtl::OUString& _sText, ::sal_Bool /*bSubstRequired*/ )
     {
         ::rtl::OUString sRet = _sText;
         uno::Reference< sdbc::XConnection > xConnection = m_xConnection;
@@ -111,12 +111,12 @@ namespace connectivity
         return sRet;
     }
 	//------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL ParameterSubstitution::reSubstituteVariables( const ::rtl::OUString& _sText ) throw (::com::sun::star::uno::RuntimeException)
+    ::rtl::OUString SAL_CALL ParameterSubstitution::reSubstituteVariables( const ::rtl::OUString& _sText )
     {
         return _sText;
     }
 	//------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL ParameterSubstitution::getSubstituteVariableValue( const ::rtl::OUString& /*variable*/ ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException)
+    ::rtl::OUString SAL_CALL ParameterSubstitution::getSubstituteVariableValue( const ::rtl::OUString& /*variable*/ )
     {
         throw container::NoSuchElementException();
     }

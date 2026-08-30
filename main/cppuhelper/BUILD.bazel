@@ -12,7 +12,6 @@ load("//main/postprocess:postprocess.bzl", "services_rdb")
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",
-    "/Dsnprintf=_snprintf",
     "/wd4061", "/wd4063", "/wd4127",
     "/Imain/cppuhelper/inc/pch",
     "/Imain/cppuhelper/source",

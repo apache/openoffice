@@ -99,11 +99,9 @@ public:
 	// XSupportedLocales
     virtual ::com::sun::star::uno::Sequence<
 			::com::sun::star::lang::Locale > SAL_CALL
-		getLocales()
-			throw(::com::sun::star::uno::RuntimeException);
+		getLocales();
     virtual sal_Bool SAL_CALL
-		hasLocale( const ::com::sun::star::lang::Locale& aLocale )
-			throw(::com::sun::star::uno::RuntimeException);
+		hasLocale( const ::com::sun::star::lang::Locale& aLocale );
 
 	// XHyphenator
     virtual ::com::sun::star::uno::Reference<
@@ -111,25 +109,19 @@ public:
 		hyphenate( const ::rtl::OUString& aWord,
 				const ::com::sun::star::lang::Locale& aLocale,
 				sal_Int16 nMaxLeading,
-				const ::com::sun::star::beans::PropertyValues& aProperties )
-			throw(::com::sun::star::lang::IllegalArgumentException,
-				  ::com::sun::star::uno::RuntimeException);
+				const ::com::sun::star::beans::PropertyValues& aProperties );
     virtual ::com::sun::star::uno::Reference<
 			::com::sun::star::linguistic2::XHyphenatedWord > SAL_CALL
 		queryAlternativeSpelling( const ::rtl::OUString& aWord,
 				const ::com::sun::star::lang::Locale& aLocale,
 				sal_Int16 nIndex,
-				const ::com::sun::star::beans::PropertyValues& aProperties )
-			throw(::com::sun::star::lang::IllegalArgumentException,
-				  ::com::sun::star::uno::RuntimeException);
+				const ::com::sun::star::beans::PropertyValues& aProperties );
     virtual ::com::sun::star::uno::Reference<
 			::com::sun::star::linguistic2::XPossibleHyphens > SAL_CALL
 		createPossibleHyphens(
 				const ::rtl::OUString& aWord,
 				const ::com::sun::star::lang::Locale& aLocale,
-				const ::com::sun::star::beans::PropertyValues& aProperties )
-			throw(::com::sun::star::lang::IllegalArgumentException,
-				  ::com::sun::star::uno::RuntimeException);
+				const ::com::sun::star::beans::PropertyValues& aProperties );
 
 	// LinguDispatcher
 	virtual void

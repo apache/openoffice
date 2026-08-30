@@ -736,7 +736,7 @@ void OAccessibleMenuBaseComponent::disposing()
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-sal_Bool OAccessibleMenuBaseComponent::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+sal_Bool OAccessibleMenuBaseComponent::supportsService( const ::rtl::OUString& rServiceName )
 {
 	Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -751,7 +751,7 @@ sal_Bool OAccessibleMenuBaseComponent::supportsService( const ::rtl::OUString& r
 // XAccessible
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleContext > OAccessibleMenuBaseComponent::getAccessibleContext(  ) throw (RuntimeException)
+Reference< XAccessibleContext > OAccessibleMenuBaseComponent::getAccessibleContext(  )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -762,7 +762,7 @@ Reference< XAccessibleContext > OAccessibleMenuBaseComponent::getAccessibleConte
 // XAccessibleContext
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleStateSet > OAccessibleMenuBaseComponent::getAccessibleStateSet(  ) throw (RuntimeException)
+Reference< XAccessibleStateSet > OAccessibleMenuBaseComponent::getAccessibleStateSet(  )
 {
 	OExternalLockGuard aGuard( this );
 

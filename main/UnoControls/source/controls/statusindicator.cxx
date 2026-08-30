@@ -98,7 +98,7 @@ StatusIndicator::~StatusIndicator()
 //	XInterface
 //____________________________________________________________________________________________________________
 
-Any SAL_CALL StatusIndicator::queryInterface( const Type& rType ) throw( RuntimeException )
+Any SAL_CALL StatusIndicator::queryInterface( const Type& rType )
 {
 	// Attention:
 	//	Don't use mutex or guard in this method!!! Is a method of XInterface.
@@ -149,7 +149,7 @@ void SAL_CALL StatusIndicator::release() throw()
 //	XTypeProvider
 //____________________________________________________________________________________________________________
 
-Sequence< Type > SAL_CALL StatusIndicator::getTypes() throw( RuntimeException )
+Sequence< Type > SAL_CALL StatusIndicator::getTypes()
 {
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't must use a mutex at every call!
@@ -181,7 +181,7 @@ Sequence< Type > SAL_CALL StatusIndicator::getTypes() throw( RuntimeException )
 //	XAggregation
 //____________________________________________________________________________________________________________
 
-Any SAL_CALL StatusIndicator::queryAggregation( const Type& aType ) throw( RuntimeException )
+Any SAL_CALL StatusIndicator::queryAggregation( const Type& aType )
 {
 	// Ask for my own supported interfaces ...
 	// Attention: XTypeProvider and XInterface are supported by OComponentHelper!
@@ -205,7 +205,7 @@ Any SAL_CALL StatusIndicator::queryAggregation( const Type& aType ) throw( Runti
 //	XStatusIndicator
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::start( const OUString& sText, sal_Int32 nRange ) throw( RuntimeException )
+void SAL_CALL StatusIndicator::start( const OUString& sText, sal_Int32 nRange )
 {
 	// Ready for multithreading
 	MutexGuard aGuard( m_aMutex );
@@ -221,7 +221,7 @@ void SAL_CALL StatusIndicator::start( const OUString& sText, sal_Int32 nRange ) 
 //	XStatusIndicator
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::end() throw( RuntimeException )
+void SAL_CALL StatusIndicator::end()
 {
 	// Ready for multithreading
 	MutexGuard aGuard( m_aMutex );
@@ -236,7 +236,7 @@ void SAL_CALL StatusIndicator::end() throw( RuntimeException )
 //	XStatusIndicator
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::setText( const OUString& sText ) throw( RuntimeException )
+void SAL_CALL StatusIndicator::setText( const OUString& sText )
 {
 	// Ready for multithreading
 	MutexGuard aGuard( m_aMutex );
@@ -249,7 +249,7 @@ void SAL_CALL StatusIndicator::setText( const OUString& sText ) throw( RuntimeEx
 //	XStatusIndicator
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::setValue( sal_Int32 nValue ) throw( RuntimeException )
+void SAL_CALL StatusIndicator::setValue( sal_Int32 nValue )
 {
 	// Ready for multithreading
 	MutexGuard aGuard( m_aMutex );
@@ -262,7 +262,7 @@ void SAL_CALL StatusIndicator::setValue( sal_Int32 nValue ) throw( RuntimeExcept
 //	XStatusIndicator
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::reset() throw( RuntimeException )
+void SAL_CALL StatusIndicator::reset()
 {
 	// Ready for multithreading
 	MutexGuard aGuard( m_aMutex );
@@ -277,7 +277,7 @@ void SAL_CALL StatusIndicator::reset() throw( RuntimeException )
 //	XLayoutConstrains
 //____________________________________________________________________________________________________________
 
-Size SAL_CALL StatusIndicator::getMinimumSize () throw( RuntimeException )
+Size SAL_CALL StatusIndicator::getMinimumSize ()
 {
 	return Size (DEFAULT_WIDTH, DEFAULT_HEIGHT) ;
 }
@@ -286,7 +286,7 @@ Size SAL_CALL StatusIndicator::getMinimumSize () throw( RuntimeException )
 //	XLayoutConstrains
 //____________________________________________________________________________________________________________
 
-Size SAL_CALL StatusIndicator::getPreferredSize () throw( RuntimeException )
+Size SAL_CALL StatusIndicator::getPreferredSize ()
 {
 	// Ready for multithreading
 	ClearableMutexGuard aGuard ( m_aMutex ) ;
@@ -319,7 +319,7 @@ Size SAL_CALL StatusIndicator::getPreferredSize () throw( RuntimeException )
 //	XLayoutConstrains
 //____________________________________________________________________________________________________________
 
-Size SAL_CALL StatusIndicator::calcAdjustedSize ( const Size& /*rNewSize*/ ) throw( RuntimeException )
+Size SAL_CALL StatusIndicator::calcAdjustedSize ( const Size& /*rNewSize*/ )
 {
 	return getPreferredSize () ;
 }
@@ -328,7 +328,7 @@ Size SAL_CALL StatusIndicator::calcAdjustedSize ( const Size& /*rNewSize*/ ) thr
 //	XControl
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::createPeer ( const Reference< XToolkit > & rToolkit, const Reference< XWindowPeer > & rParent	) throw( RuntimeException )
+void SAL_CALL StatusIndicator::createPeer ( const Reference< XToolkit > & rToolkit, const Reference< XWindowPeer > & rParent	)
 {
 	if( getPeer().is() == sal_False )
 	{
@@ -346,7 +346,7 @@ void SAL_CALL StatusIndicator::createPeer ( const Reference< XToolkit > & rToolk
 //	XControl
 //____________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL StatusIndicator::setModel ( const Reference< XControlModel > & /*rModel*/ ) throw( RuntimeException )
+sal_Bool SAL_CALL StatusIndicator::setModel ( const Reference< XControlModel > & /*rModel*/ )
 {
 	// We have no model.
 	return sal_False ;
@@ -356,7 +356,7 @@ sal_Bool SAL_CALL StatusIndicator::setModel ( const Reference< XControlModel > &
 //	XControl
 //____________________________________________________________________________________________________________
 
-Reference< XControlModel > SAL_CALL StatusIndicator::getModel () throw( RuntimeException )
+Reference< XControlModel > SAL_CALL StatusIndicator::getModel ()
 {
 	// We have no model.
 	// return (XControlModel*)this ;
@@ -367,7 +367,7 @@ Reference< XControlModel > SAL_CALL StatusIndicator::getModel () throw( RuntimeE
 //	XComponent
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::dispose () throw( RuntimeException )
+void SAL_CALL StatusIndicator::dispose ()
 {
 	// Ready for multithreading
 	MutexGuard aGuard ( m_aMutex ) ;
@@ -390,7 +390,7 @@ void SAL_CALL StatusIndicator::dispose () throw( RuntimeException )
 //	XWindow
 //____________________________________________________________________________________________________________
 
-void SAL_CALL StatusIndicator::setPosSize ( sal_Int32 nX, sal_Int32 nY, sal_Int32 nWidth, sal_Int32 nHeight, sal_Int16 nFlags ) throw( RuntimeException )
+void SAL_CALL StatusIndicator::setPosSize ( sal_Int32 nX, sal_Int32 nY, sal_Int32 nWidth, sal_Int32 nHeight, sal_Int16 nFlags )
 {
 	Rectangle	aBasePosSize = getPosSize () ;
 	BaseContainerControl::setPosSize (nX, nY, nWidth, nHeight, nFlags) ;

@@ -57,7 +57,7 @@ jclass java_sql_Blob::getMyClass() const
 	return theClass;
 }
 
-sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL java_sql_Blob::length(  )
 {
 	jlong out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
@@ -74,7 +74,7 @@ sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLEx
 	} //t.pEnv
 	return (sal_Int64)out;
 }
-::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL java_sql_Blob::getBytes( sal_Int64 pos, sal_Int32 count ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL java_sql_Blob::getBytes( sal_Int64 pos, sal_Int32 count )
 {
 
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
@@ -100,7 +100,7 @@ sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLEx
 	return 	aSeq;
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL java_sql_Blob::getBinaryStream(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL java_sql_Blob::getBinaryStream(  )
 {
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
     static jmethodID mID(NULL);
@@ -109,7 +109,7 @@ sal_Int64 SAL_CALL java_sql_Blob::length(  ) throw(::com::sun::star::sdbc::SQLEx
 	return out==0 ? 0 : new java_io_InputStream( t.pEnv, out );
 }
 
-sal_Int64 SAL_CALL java_sql_Blob::position( const ::com::sun::star::uno::Sequence< sal_Int8 >& pattern, sal_Int64 start ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL java_sql_Blob::position( const ::com::sun::star::uno::Sequence< sal_Int8 >& pattern, sal_Int64 start )
 {
 	jlong out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
@@ -131,7 +131,7 @@ sal_Int64 SAL_CALL java_sql_Blob::position( const ::com::sun::star::uno::Sequenc
 	return (sal_Int64)out;
 }
 
-sal_Int64 SAL_CALL java_sql_Blob::positionOfBlob( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XBlob >& /*pattern*/, sal_Int64 /*start*/ ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL java_sql_Blob::positionOfBlob( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XBlob >& /*pattern*/, sal_Int64 /*start*/ )
 {
     ::dbtools::throwFeatureNotImplementedException( "XBlob::positionOfBlob", *this );
     // this was put here in CWS warnings01. The previous implementation was defective, as it did ignore

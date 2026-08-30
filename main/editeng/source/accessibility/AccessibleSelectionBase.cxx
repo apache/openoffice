@@ -48,7 +48,7 @@ namespace accessibility
 
 	//--------------------------------------------------------------------
 
-    void SAL_CALL AccessibleSelectionBase::selectAccessibleChild( sal_Int32 nChildIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    void SAL_CALL AccessibleSelectionBase::selectAccessibleChild( sal_Int32 nChildIndex )
 	{
 		::osl::MutexGuard aGuard( implGetMutex() );
         OCommonAccessibleSelection::selectAccessibleChild( nChildIndex );
@@ -56,7 +56,7 @@ namespace accessibility
 
 	//--------------------------------------------------------------------
 
-	sal_Bool SAL_CALL AccessibleSelectionBase::isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+	sal_Bool SAL_CALL AccessibleSelectionBase::isAccessibleChildSelected( sal_Int32 nChildIndex )
 	{
 		::osl::MutexGuard aGuard( implGetMutex() );
         return( OCommonAccessibleSelection::isAccessibleChildSelected( nChildIndex ) );
@@ -64,7 +64,7 @@ namespace accessibility
 
 	//--------------------------------------------------------------------
 
-	void SAL_CALL AccessibleSelectionBase::clearAccessibleSelection(  ) throw (uno::RuntimeException)
+	void SAL_CALL AccessibleSelectionBase::clearAccessibleSelection(  )
     {
 		::osl::MutexGuard aGuard( implGetMutex() );
         OCommonAccessibleSelection::clearAccessibleSelection();
@@ -72,7 +72,7 @@ namespace accessibility
 
 	//--------------------------------------------------------------------
 
-	void SAL_CALL AccessibleSelectionBase::selectAllAccessibleChildren(  ) throw (uno::RuntimeException)
+	void SAL_CALL AccessibleSelectionBase::selectAllAccessibleChildren(  )
     {
 		::osl::MutexGuard aGuard( implGetMutex() );
         OCommonAccessibleSelection::selectAllAccessibleChildren();
@@ -80,7 +80,7 @@ namespace accessibility
 
 	//--------------------------------------------------------------------
 
-	sal_Int32 SAL_CALL AccessibleSelectionBase::getSelectedAccessibleChildCount(  ) throw (uno::RuntimeException)
+	sal_Int32 SAL_CALL AccessibleSelectionBase::getSelectedAccessibleChildCount(  )
     {
 		::osl::MutexGuard aGuard( implGetMutex() );
         return( OCommonAccessibleSelection::getSelectedAccessibleChildCount() );
@@ -88,7 +88,7 @@ namespace accessibility
 
 	//--------------------------------------------------------------------
 
-	uno::Reference< XAccessible > SAL_CALL AccessibleSelectionBase::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+	uno::Reference< XAccessible > SAL_CALL AccessibleSelectionBase::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
     {
 		::osl::MutexGuard aGuard( implGetMutex() );
         return( OCommonAccessibleSelection::getSelectedAccessibleChild( nSelectedChildIndex ) );
@@ -96,7 +96,7 @@ namespace accessibility
 
 	//--------------------------------------------------------------------
 
-	void SAL_CALL AccessibleSelectionBase::deselectAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+	void SAL_CALL AccessibleSelectionBase::deselectAccessibleChild( sal_Int32 nSelectedChildIndex )
     {
 		::osl::MutexGuard aGuard( implGetMutex() );
         OCommonAccessibleSelection::deselectAccessibleChild( nSelectedChildIndex );

@@ -100,7 +100,7 @@ Reference<XInterface> SAL_CALL BasicPaneFactory_createInstance (
 
 
 
-::rtl::OUString BasicPaneFactory_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString BasicPaneFactory_getImplementationName (void)
 {
     return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.Draw.framework.BasicPaneFactory"));
@@ -110,7 +110,6 @@ Reference<XInterface> SAL_CALL BasicPaneFactory_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL BasicPaneFactory_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(
         ::rtl::OUString::createFromAscii("com.sun.star.drawing.framework.BasicPaneFactory"));
@@ -175,7 +174,6 @@ void SAL_CALL BasicPaneFactory::disposing (void)
 
 
 void SAL_CALL BasicPaneFactory::initialize (const Sequence<Any>& aArguments)
-    throw (Exception, RuntimeException)
 {
     if (aArguments.getLength() > 0)
     {
@@ -261,7 +259,6 @@ void SAL_CALL BasicPaneFactory::initialize (const Sequence<Any>& aArguments)
 
 Reference<XResource> SAL_CALL BasicPaneFactory::createResource (
     const Reference<XResourceId>& rxPaneId)
-    throw (RuntimeException, IllegalArgumentException, WrappedTargetException)
 {
     ThrowIfDisposed();
 
@@ -332,7 +329,6 @@ Reference<XResource> SAL_CALL BasicPaneFactory::createResource (
 
 void SAL_CALL BasicPaneFactory::releaseResource (
     const Reference<XResource>& rxPane)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -390,7 +386,6 @@ void SAL_CALL BasicPaneFactory::releaseResource (
 
 void SAL_CALL BasicPaneFactory::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     sal_Int32 nEventType = 0;
     rEvent.UserData >>= nEventType;
@@ -434,7 +429,6 @@ void SAL_CALL BasicPaneFactory::notifyConfigurationChange (
 
 void SAL_CALL BasicPaneFactory::disposing (
     const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if (mxConfigurationControllerWeak == rEventObject.Source)
     {
@@ -537,7 +531,6 @@ Reference<XResource> BasicPaneFactory::CreateChildWindowPane (
 }
 
 void BasicPaneFactory::ThrowIfDisposed (void) const
-    throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

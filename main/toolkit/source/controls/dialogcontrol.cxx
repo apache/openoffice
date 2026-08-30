@@ -117,7 +117,7 @@ UnoControlModel* UnoControlDialogModel::Clone() const
 }
 
 
-::rtl::OUString UnoControlDialogModel::getServiceName( ) throw(RuntimeException)
+::rtl::OUString UnoControlDialogModel::getServiceName( )
 {
 	return ::rtl::OUString::createFromAscii( szServiceName_UnoControlDialogModel );
 }
@@ -150,7 +150,7 @@ Any UnoControlDialogModel::ImplGetDefaultValue( sal_uInt16 nPropId ) const
 }
 
 // XMultiPropertySet
-Reference< XPropertySetInfo > UnoControlDialogModel::getPropertySetInfo(  ) throw(RuntimeException)
+Reference< XPropertySetInfo > UnoControlDialogModel::getPropertySetInfo(  )
 {
 	static Reference< XPropertySetInfo > xInfo( createPropertySetInfo( getInfoHelper() ) );
 	return xInfo;
@@ -184,7 +184,7 @@ UnoDialogControl::~UnoDialogControl()
         return ::rtl::OUString::createFromAscii( "TabPage" );
 }
 
-void UnoDialogControl::dispose() throw(RuntimeException)
+void UnoDialogControl::dispose()
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -196,12 +196,11 @@ void UnoDialogControl::dispose() throw(RuntimeException)
 
 void SAL_CALL UnoDialogControl::disposing(
     const EventObject& Source )
-throw(RuntimeException)
 {
 	ControlContainerBase::disposing( Source );
 }
 
-sal_Bool UnoDialogControl::setModel( const Reference< XControlModel >& rxModel ) throw(RuntimeException)
+sal_Bool UnoDialogControl::setModel( const Reference< XControlModel >& rxModel )
 {
         // #Can we move all the Resource stuff to the ControlContainerBase ?
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
@@ -210,7 +209,7 @@ sal_Bool UnoDialogControl::setModel( const Reference< XControlModel >& rxModel )
 	return bRet;
 }
 
-void UnoDialogControl::createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer ) throw(RuntimeException)
+void UnoDialogControl::createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer )
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -262,7 +261,7 @@ void UnoDialogControl::PrepareWindowDescriptor( ::com::sun::star::awt::WindowDes
     }
 }
 
-void UnoDialogControl::addTopWindowListener( const Reference< XTopWindowListener >& rxListener ) throw (RuntimeException)
+void UnoDialogControl::addTopWindowListener( const Reference< XTopWindowListener >& rxListener )
 {
 	maTopWindowListeners.addInterface( rxListener );
 	if( getPeer().is() && maTopWindowListeners.getLength() == 1 )
@@ -272,7 +271,7 @@ void UnoDialogControl::addTopWindowListener( const Reference< XTopWindowListener
 	}
 }
 
-void UnoDialogControl::removeTopWindowListener( const Reference< XTopWindowListener >& rxListener ) throw (RuntimeException)
+void UnoDialogControl::removeTopWindowListener( const Reference< XTopWindowListener >& rxListener )
 {
 	if( getPeer().is() && maTopWindowListeners.getLength() == 1 )
 	{
@@ -282,7 +281,7 @@ void UnoDialogControl::removeTopWindowListener( const Reference< XTopWindowListe
 	maTopWindowListeners.removeInterface( rxListener );
 }
 
-void UnoDialogControl::toFront(  ) throw (RuntimeException)
+void UnoDialogControl::toFront(  )
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	if ( getPeer().is() )
@@ -293,7 +292,7 @@ void UnoDialogControl::toFront(  ) throw (RuntimeException)
 	}
 }
 
-void UnoDialogControl::toBack(  ) throw (RuntimeException)
+void UnoDialogControl::toBack(  )
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	if ( getPeer().is() )
@@ -304,7 +303,7 @@ void UnoDialogControl::toBack(  ) throw (RuntimeException)
 	}
 }
 
-void UnoDialogControl::setMenuBar( const Reference< XMenuBar >& rxMenuBar ) throw (RuntimeException)
+void UnoDialogControl::setMenuBar( const Reference< XMenuBar >& rxMenuBar )
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	mxMenuBar = rxMenuBar;
@@ -322,7 +321,6 @@ static ::Size ImplMapPixelToAppFont( OutputDevice* pOutDev, const ::Size& aSize 
 }
 // ::com::sun::star::awt::XWindowListener
 void SAL_CALL UnoDialogControl::windowResized( const ::com::sun::star::awt::WindowEvent& e )
-throw (::com::sun::star::uno::RuntimeException)
 {
     OutputDevice*pOutDev = Application::GetDefaultDevice();
 	DBG_ASSERT( pOutDev, "Missing Default Device!" );
@@ -363,7 +361,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 void SAL_CALL UnoDialogControl::windowMoved( const ::com::sun::star::awt::WindowEvent& e )
-throw (::com::sun::star::uno::RuntimeException)
 {
 	OutputDevice*pOutDev = Application::GetDefaultDevice();
 	DBG_ASSERT( pOutDev, "Missing Default Device!" );
@@ -389,31 +386,31 @@ throw (::com::sun::star::uno::RuntimeException)
 	}
 }
 
-void SAL_CALL UnoDialogControl::windowShown( const EventObject& e ) throw (RuntimeException)
+void SAL_CALL UnoDialogControl::windowShown( const EventObject& e )
 {
     (void)e;
 }
 
-void SAL_CALL UnoDialogControl::windowHidden( const EventObject& e ) throw (RuntimeException)
+void SAL_CALL UnoDialogControl::windowHidden( const EventObject& e )
 {
     (void)e;
 }
 
-void SAL_CALL UnoDialogControl::endDialog( ::sal_Int32 i_result ) throw (RuntimeException)
+void SAL_CALL UnoDialogControl::endDialog( ::sal_Int32 i_result )
 {
     Reference< XDialog2 > xPeerDialog( getPeer(), UNO_QUERY );
     if ( xPeerDialog.is() )
         xPeerDialog->endDialog( i_result );
 }
 
-void SAL_CALL UnoDialogControl::setHelpId( const rtl::OUString& i_id ) throw (RuntimeException)
+void SAL_CALL UnoDialogControl::setHelpId( const rtl::OUString& i_id )
 {
     Reference< XDialog2 > xPeerDialog( getPeer(), UNO_QUERY );
     if ( xPeerDialog.is() )
         xPeerDialog->setHelpId( i_id );
 }
 
-void UnoDialogControl::setTitle( const ::rtl::OUString& Title ) throw(RuntimeException)
+void UnoDialogControl::setTitle( const ::rtl::OUString& Title )
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	Any aAny;
@@ -421,13 +418,13 @@ void UnoDialogControl::setTitle( const ::rtl::OUString& Title ) throw(RuntimeExc
 	ImplSetPropertyValue( GetPropertyName( BASEPROPERTY_TITLE ), aAny, sal_True );
 }
 
-::rtl::OUString UnoDialogControl::getTitle() throw(RuntimeException)
+::rtl::OUString UnoDialogControl::getTitle()
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return ImplGetPropertyValue_UString( BASEPROPERTY_TITLE );
 }
 
-sal_Int16 UnoDialogControl::execute() throw(RuntimeException)
+sal_Int16 UnoDialogControl::execute()
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	sal_Int16 nDone = -1;
@@ -444,7 +441,7 @@ sal_Int16 UnoDialogControl::execute() throw(RuntimeException)
 	return nDone;
 }
 
-void UnoDialogControl::endExecute() throw(RuntimeException)
+void UnoDialogControl::endExecute()
 {
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	if ( getPeer().is() )
@@ -461,12 +458,11 @@ void UnoDialogControl::endExecute() throw(RuntimeException)
 // XModifyListener
 void SAL_CALL UnoDialogControl::modified(
     const lang::EventObject& /*rEvent*/ )
-throw (RuntimeException)
 {
     ImplUpdateResourceResolver();
 }
 
-void UnoDialogControl::ImplModelPropertiesChanged( const Sequence< PropertyChangeEvent >& rEvents ) throw(RuntimeException)
+void UnoDialogControl::ImplModelPropertiesChanged( const Sequence< PropertyChangeEvent >& rEvents )
 {
     sal_Int32 nLen = rEvents.getLength();
 	for( sal_Int32 i = 0; i < nLen; i++ )

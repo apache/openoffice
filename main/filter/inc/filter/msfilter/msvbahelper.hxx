@@ -67,30 +67,26 @@ public:
     // com.sun.star.lang.XServiceInfo interface -------------------------------
 
     virtual ::rtl::OUString SAL_CALL
-                        getImplementationName() throw (::com::sun::star::uno::RuntimeException);
+                        getImplementationName();
 
     virtual sal_Bool SAL_CALL
-                        supportsService( const ::rtl::OUString& rService )
-                            throw (::com::sun::star::uno::RuntimeException);
+                        supportsService( const ::rtl::OUString& rService );
 
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-                        getSupportedServiceNames() throw (::com::sun::star::uno::RuntimeException);
+                        getSupportedServiceNames();
 
     // com.sun.star.lang.XInitialization interface ----------------------------
 
     virtual void SAL_CALL initialize(
-                            const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& rArgs )
-                            throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+                            const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& rArgs );
 
     // com.sun.star.script.vba.XVBAMacroResolver interface --------------------
 
     virtual ::rtl::OUString SAL_CALL
-                        resolveVBAMacroToScriptURL( const ::rtl::OUString& rVBAMacroName )
-                            throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+                        resolveVBAMacroToScriptURL( const ::rtl::OUString& rVBAMacroName );
 
     virtual ::rtl::OUString SAL_CALL
-                        resolveScriptURLtoVBAMacro( const ::rtl::OUString& rScriptURL )
-                            throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+                        resolveScriptURLtoVBAMacro( const ::rtl::OUString& rScriptURL );
 
 private:
     ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > mxModel;

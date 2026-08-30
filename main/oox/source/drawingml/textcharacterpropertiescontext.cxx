@@ -96,13 +96,13 @@ TextCharacterPropertiesContext::~TextCharacterPropertiesContext()
 
 // --------------------------------------------------------------------
 
-void TextCharacterPropertiesContext::endFastElement( sal_Int32 ) throw (SAXException, RuntimeException)
+void TextCharacterPropertiesContext::endFastElement( sal_Int32 )
 {
 }
 
 // --------------------------------------------------------------------
 
-Reference< XFastContextHandler > TextCharacterPropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttributes ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > TextCharacterPropertiesContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttributes )
 {
     AttributeList aAttribs( xAttributes );
 	Reference< XFastContextHandler > xRet;

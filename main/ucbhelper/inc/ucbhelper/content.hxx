@@ -100,17 +100,11 @@ class UCBHELPER_DLLPUBLIC Content
 protected:
     ::com::sun::star::uno::Any createCursorAny( const ::com::sun::star::uno::Sequence<
                                                 rtl::OUString >& rPropertyNames,
-                                                ResultSetInclude eMode )
-            throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                                ResultSetInclude eMode );
 
     ::com::sun::star::uno::Any createCursorAny( const ::com::sun::star::uno::Sequence<
                                                 sal_Int32 >& rPropertyHandles,
-                                                ResultSetInclude eMode )
-            throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                                ResultSetInclude eMode );
 
 public:
     /**
@@ -129,9 +123,7 @@ public:
       */
     Content( const rtl::OUString& rURL,
              const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment >& rEnv )
-        throw ( ::com::sun::star::ucb::ContentCreationException,
-                ::com::sun::star::uno::RuntimeException );
+                    ::com::sun::star::ucb::XCommandEnvironment >& rEnv );
     /**
       * Constructor.
       *
@@ -144,9 +136,7 @@ public:
     Content( const ::com::sun::star::uno::Reference<
                     ::com::sun::star::ucb::XContentIdentifier >& rId,
              const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment >& rEnv )
-        throw ( ::com::sun::star::ucb::ContentCreationException,
-                ::com::sun::star::uno::RuntimeException );
+                    ::com::sun::star::ucb::XCommandEnvironment >& rEnv );
     /**
       * Constructor.
       *
@@ -159,9 +149,7 @@ public:
     Content( const ::com::sun::star::uno::Reference<
                     ::com::sun::star::ucb::XContent >& rContent,
              const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::ucb::XCommandEnvironment >& rEnv )
-        throw ( ::com::sun::star::ucb::ContentCreationException,
-                ::com::sun::star::uno::RuntimeException );
+                    ::com::sun::star::ucb::XCommandEnvironment >& rEnv );
     /**
       * Copy Constructor.
       *
@@ -301,10 +289,7 @@ public:
       *         to obtain meta data of the commands supported by this content.
       */
     ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XCommandInfo >
-    getCommands()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    getCommands();
     /**
       * This methods provides access to meta data of the properties supported
       * by this content.
@@ -314,10 +299,7 @@ public:
       */
     ::com::sun::star::uno::Reference<
         ::com::sun::star::beans::XPropertySetInfo >
-    getProperties()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    getProperties();
 
     //////////////////////////////////////////////////////////////////////
     // Access to property value(s).
@@ -331,10 +313,7 @@ public:
       * @return the property value.
       */
     ::com::sun::star::uno::Any
-    getPropertyValue( const rtl::OUString& rPropertyName )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    getPropertyValue( const rtl::OUString& rPropertyName );
     /**
       * This method can be used to read a single property value.
       *
@@ -343,10 +322,7 @@ public:
       * @return the property value.
       */
     ::com::sun::star::uno::Any
-    getPropertyValue( sal_Int32 nPropertyHandle )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    getPropertyValue( sal_Int32 nPropertyHandle );
     /**
       * This method can be used to set a single property value.
       *
@@ -373,10 +349,7 @@ public:
       */
     ::com::sun::star::uno::Any
     setPropertyValue( const rtl::OUString& rPropertyName,
-                      const ::com::sun::star::uno::Any& rValue )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                      const ::com::sun::star::uno::Any& rValue );
     /**
       * This method can be used to set a single property value.
       *
@@ -403,10 +376,7 @@ public:
       */
     ::com::sun::star::uno::Any
     setPropertyValue( const sal_Int32 nPropertyHandle,
-                      const ::com::sun::star::uno::Any& rValue )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                      const ::com::sun::star::uno::Any& rValue );
     /**
       * This method can be used to read multiple property values.
       *
@@ -416,10 +386,7 @@ public:
       */
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >
     getPropertyValues( const ::com::sun::star::uno::Sequence<
-                                rtl::OUString >& rPropertyNames )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                rtl::OUString >& rPropertyNames );
     /**
       * This method can be used to read multiple property values.
       *
@@ -430,10 +397,7 @@ public:
       */
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >
     getPropertyValues( const ::com::sun::star::uno::Sequence<
-                                sal_Int32 >& nPropertyHandles )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                sal_Int32 >& nPropertyHandles );
     /**
       * This method can be used to read multiple property values.
       *
@@ -443,10 +407,7 @@ public:
       */
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRow >
     getPropertyValuesInterface( const ::com::sun::star::uno::Sequence<
-                                rtl::OUString >& rPropertyNames )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                rtl::OUString >& rPropertyNames );
     /**
       * This method can be used to read multiple property values.
       *
@@ -457,10 +418,7 @@ public:
       */
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRow >
     getPropertyValuesInterface( const ::com::sun::star::uno::Sequence<
-                                sal_Int32 >& nPropertyHandles )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                sal_Int32 >& nPropertyHandles );
     /**
       * This method can be used to set multiple property values.
       *
@@ -495,10 +453,7 @@ public:
     setPropertyValues( const ::com::sun::star::uno::Sequence<
                                 rtl::OUString >& rPropertyNames,
                        const ::com::sun::star::uno::Sequence<
-                                    ::com::sun::star::uno::Any >& rValues )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                    ::com::sun::star::uno::Any >& rValues );
     /**
       * This method can be used to set multiple property values.
       *
@@ -533,10 +488,7 @@ public:
     setPropertyValues( const ::com::sun::star::uno::Sequence<
                                 sal_Int32 >& nPropertyHandles,
                        const ::com::sun::star::uno::Sequence<
-                                    ::com::sun::star::uno::Any >& rValues )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                                    ::com::sun::star::uno::Any >& rValues );
 
     //////////////////////////////////////////////////////////////////////
     // General command execution.
@@ -554,10 +506,7 @@ public:
       */
     ::com::sun::star::uno::Any
     executeCommand( const rtl::OUString& rCommandName,
-                    const ::com::sun::star::uno::Any& rCommandArgument )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                    const ::com::sun::star::uno::Any& rCommandArgument );
     ::com::sun::star::uno::Any
     /**
       * This method can be used to execute any command supported by the
@@ -570,10 +519,7 @@ public:
       * @return the result of the command according to its specification.
       */
     executeCommand( sal_Int32 nCommandHandle,
-                    const ::com::sun::star::uno::Any& rCommandArgument )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                    const ::com::sun::star::uno::Any& rCommandArgument );
     /**
       * This method can be used to abort the command currently executed by
       * a content. Note that a content can only process one command per
@@ -605,10 +551,7 @@ public:
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >
     createCursor( const ::com::sun::star::uno::Sequence<
                                 rtl::OUString >& rPropertyNames,
-                  ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                  ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS );
     /**
       * This methods gives access to the children of a folder content.
       * Additionally, the result set returned provides efficient access to
@@ -627,10 +570,7 @@ public:
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >
     createCursor( const ::com::sun::star::uno::Sequence<
                                 sal_Int32 >& rPropertyHandles,
-                  ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                  ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS );
     /**
       * This methods gives access to the children of a folder content.
       * Additionally, the result set returned provides efficient access to
@@ -650,10 +590,7 @@ public:
     createDynamicCursor( const ::com::sun::star::uno::Sequence<
                          rtl::OUString >& rPropertyNames,
                          ResultSetInclude eMode
-                            = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                            = INCLUDE_FOLDERS_AND_DOCUMENTS );
     /**
       * This methods gives access to the children of a folder content.
       * Additionally, the result set returned provides efficient access to
@@ -673,46 +610,31 @@ public:
     createDynamicCursor( const ::com::sun::star::uno::Sequence<
                          sal_Int32 >& rPropertyHandles,
                          ResultSetInclude eMode
-                            = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                            = INCLUDE_FOLDERS_AND_DOCUMENTS );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XDynamicResultSet >
     createSortedDynamicCursor( const ::com::sun::star::uno::Sequence< rtl::OUString >& rPropertyNames,
                                const ::com::sun::star::uno::Sequence< ::com::sun::star::ucb::NumberedSortingInfo >& rSortInfo,
                                ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XAnyCompareFactory > rAnyCompareFactory,
-                               ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                               ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XDynamicResultSet >
     createSortedDynamicCursor( const ::com::sun::star::uno::Sequence< sal_Int32 >& rPropertyHandles,
                                const ::com::sun::star::uno::Sequence< ::com::sun::star::ucb::NumberedSortingInfo >& rSortInfo,
                                ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XAnyCompareFactory > rAnyCompareFactory,
-                               ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                               ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >
     createSortedCursor( const ::com::sun::star::uno::Sequence< rtl::OUString >& rPropertyNames,
                         const ::com::sun::star::uno::Sequence< ::com::sun::star::ucb::NumberedSortingInfo >& rSortInfo,
                         ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XAnyCompareFactory > rAnyCompareFactory,
-                        ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                        ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS );
 
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >
     createSortedCursor( const ::com::sun::star::uno::Sequence< sal_Int32 >& rPropertyHandles,
                                const ::com::sun::star::uno::Sequence< ::com::sun::star::ucb::NumberedSortingInfo >& rSortInfo,
                                ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XAnyCompareFactory > rAnyCompareFactory,
-                               ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                               ResultSetInclude eMode = INCLUDE_FOLDERS_AND_DOCUMENTS );
 
     /**
       * This methods gives read access to the content stream of a content (i.e
@@ -723,10 +645,7 @@ public:
       *         be used to read the content's data.
       */
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >
-    openStream()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    openStream();
     /**
       * This methods gives read access to the content stream of a content (i.e
       * the content of a file located at the local file system).
@@ -737,10 +656,7 @@ public:
       *         be used to read the content's data.
       */
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >
-    openStreamNoLock()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    openStreamNoLock();
 
     /**
       * This methods gives read/write access to the content stream of a content (i.e
@@ -751,10 +667,7 @@ public:
       *         be used to read/write the content's data.
       */
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >
-    openWriteableStream()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    openWriteableStream();
     /**
       * This methods gives read/write access to the content stream of a content (i.e
       * the content of a file located at the local file system).
@@ -765,10 +678,7 @@ public:
       *         be used to read/write the content's data.
       */
     ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >
-    openWriteableStreamNoLock()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    openWriteableStreamNoLock();
 
     /**
       * This methods gives read access to the content stream of a content (i.e
@@ -780,10 +690,7 @@ public:
       */
     sal_Bool
     openStream( const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::io::XActiveDataSink >& rSink )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                    ::com::sun::star::io::XActiveDataSink >& rSink );
     /**
       * This methods gives read access to the content stream of a content (i.e
       * the content of a file located at the local file system).
@@ -794,10 +701,7 @@ public:
       */
     sal_Bool
     openStream( const ::com::sun::star::uno::Reference<
-                    ::com::sun::star::io::XOutputStream >& rStream )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                    ::com::sun::star::io::XOutputStream >& rStream );
     /**
       * This methods gives write access to the content stream of a content (i.e
       * the content of a file located at the local file system).
@@ -811,10 +715,7 @@ public:
     void
     writeStream( const ::com::sun::star::uno::Reference<
                             ::com::sun::star::io::XInputStream >& rStream,
-                 sal_Bool bReplaceExisting )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                 sal_Bool bReplaceExisting );
 
     /**
       * This method returns the different types of contents this content
@@ -824,10 +725,7 @@ public:
       *         created by this content.
       */
     ::com::sun::star::uno::Sequence< ::com::sun::star::ucb::ContentInfo >
-    queryCreatableContentsInfo()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    queryCreatableContentsInfo();
 
     /**
       * This method creates, initializes and inserts ( commits ) a new content
@@ -858,10 +756,7 @@ public:
                         rtl::OUString >& rPropertyNames,
                       const ::com::sun::star::uno::Sequence<
                         ::com::sun::star::uno::Any >& rPropertyValues,
-                      Content& rNewContent )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                      Content& rNewContent );
     /**
       * This method creates, initializes and inserts ( commits ) a new content
       * (i.e. it could be used to create a new file system folder).
@@ -891,10 +786,7 @@ public:
                         sal_Int32 >& nPropertyHandles,
                       const ::com::sun::star::uno::Sequence<
                         ::com::sun::star::uno::Any >& rPropertyValues,
-                      Content& rNewContent )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                      Content& rNewContent );
     /**
       * This method creates, initializes and inserts (commits) a new content
       * inside this (the target folder) content. For example, it can be used to
@@ -929,10 +821,7 @@ public:
                         ::com::sun::star::uno::Any >& rPropertyValues,
                       const ::com::sun::star::uno::Reference<
                                 ::com::sun::star::io::XInputStream >& rStream,
-                      Content& rNewContent )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                      Content& rNewContent );
     /**
       * This method creates, initializes and inserts (commits) a new content
       * inside this (the target folder) content. For example, it can be used to
@@ -967,10 +856,7 @@ public:
                         ::com::sun::star::uno::Any >& rPropertyValues,
                       const ::com::sun::star::uno::Reference<
                                 ::com::sun::star::io::XInputStream >& rStream,
-                      Content& rNewContent )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                      Content& rNewContent );
     /**
       * This method transfers (copies/moves) a content. It creates a new
       * resource inside this (the target folder) content.
@@ -998,10 +884,7 @@ public:
     transferContent( const Content& rSourceContent,
                      InsertOperation eOperation,
                      const ::rtl::OUString & rTitle,
-                     const sal_Int32 nNameClashAction )
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+                     const sal_Int32 nNameClashAction );
 
     //////////////////////////////////////////////////////////////////////
     // Required properties.
@@ -1014,10 +897,7 @@ public:
       *         UCB contents). false, otherwise.
       */
     sal_Bool
-    isFolder()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    isFolder();
     /**
       * This method returns the value of the content's property "IsDocument".
       *
@@ -1025,30 +905,21 @@ public:
       *         false, otherwise.
       */
     sal_Bool
-    isDocument()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+    isDocument();
     //->i126305
     /** lock the resource
       *
       *
       */
     void
-      lock()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+      lock();
 
     /** ulock the resource
       *
       *
       */
     void
-      unlock()
-        throw( ::com::sun::star::ucb::CommandAbortedException,
-               ::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::uno::Exception );
+      unlock();
     //<-i126305
 };
 

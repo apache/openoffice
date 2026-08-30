@@ -106,7 +106,6 @@ void PreventDuplicateInteraction::useDefaultUUIHandler()
 
 //_________________________________________________________________________________________________________________
 css::uno::Any SAL_CALL PreventDuplicateInteraction::queryInterface( const css::uno::Type& aType )
-    throw (css::uno::RuntimeException)
 {
     if ( aType.equals( XInteractionHandler2::static_type() ) )
     {
@@ -121,7 +120,6 @@ css::uno::Any SAL_CALL PreventDuplicateInteraction::queryInterface( const css::u
 //_________________________________________________________________________________________________________________
 
 void SAL_CALL PreventDuplicateInteraction::handle(const css::uno::Reference< css::task::XInteractionRequest >& xRequest)
-    throw(css::uno::RuntimeException)
 {
     css::uno::Any aRequest  = xRequest->getRequest();
     sal_Bool      bHandleIt = sal_True;
@@ -177,7 +175,6 @@ void SAL_CALL PreventDuplicateInteraction::handle(const css::uno::Reference< css
 //_________________________________________________________________________________________________________________
 
 ::sal_Bool SAL_CALL PreventDuplicateInteraction::handleInteractionRequest( const css::uno::Reference< css::task::XInteractionRequest >& xRequest )
-            throw (css::uno::RuntimeException)
 {
     css::uno::Any aRequest  = xRequest->getRequest();
     sal_Bool      bHandleIt = sal_True;

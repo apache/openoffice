@@ -27,6 +27,7 @@
 #include <tools/rtti.hxx>
 #include <svl/svarray.hxx>
 
+
 class SfxListener;
 class SfxHint;
 

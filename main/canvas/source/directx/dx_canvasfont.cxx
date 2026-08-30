@@ -87,14 +87,14 @@ namespace dxcanvas
 
     uno::Reference< rendering::XTextLayout > SAL_CALL CanvasFont::createTextLayout( const rendering::StringContext& aText,
                                                                                     sal_Int8 						nDirection,
-                                                                                    sal_Int64 						nRandomSeed ) throw (uno::RuntimeException)
+                                                                                    sal_Int64 						nRandomSeed )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
         return new TextLayout( aText, nDirection, nRandomSeed, ImplRef( this ) );
     }
 
-    uno::Sequence< double > SAL_CALL CanvasFont::getAvailableSizes(  ) throw (uno::RuntimeException)
+    uno::Sequence< double > SAL_CALL CanvasFont::getAvailableSizes(  )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -102,7 +102,7 @@ namespace dxcanvas
         return uno::Sequence< double >();
     }
 
-    uno::Sequence< beans::PropertyValue > SAL_CALL CanvasFont::getExtraFontProperties(  ) throw (uno::RuntimeException)
+    uno::Sequence< beans::PropertyValue > SAL_CALL CanvasFont::getExtraFontProperties(  )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -110,14 +110,14 @@ namespace dxcanvas
         return uno::Sequence< beans::PropertyValue >();
     }
 
-    rendering::FontRequest SAL_CALL CanvasFont::getFontRequest(  ) throw (uno::RuntimeException)
+    rendering::FontRequest SAL_CALL CanvasFont::getFontRequest(  )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
         return maFontRequest;
     }
 
-    rendering::FontMetrics SAL_CALL CanvasFont::getFontMetrics(  ) throw (uno::RuntimeException)
+    rendering::FontMetrics SAL_CALL CanvasFont::getFontMetrics(  )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -128,17 +128,17 @@ namespace dxcanvas
 #define SERVICE_NAME "com.sun.star.rendering.CanvasFont"
 #define IMPLEMENTATION_NAME "DXCanvas::CanvasFont"
 
-    ::rtl::OUString SAL_CALL CanvasFont::getImplementationName() throw( uno::RuntimeException )
+    ::rtl::OUString SAL_CALL CanvasFont::getImplementationName()
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLEMENTATION_NAME ) );
     }
 
-    sal_Bool SAL_CALL CanvasFont::supportsService( const ::rtl::OUString& ServiceName ) throw( uno::RuntimeException )
+    sal_Bool SAL_CALL CanvasFont::supportsService( const ::rtl::OUString& ServiceName )
     {
         return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
     }
 
-    uno::Sequence< ::rtl::OUString > SAL_CALL CanvasFont::getSupportedServiceNames()  throw( uno::RuntimeException )
+    uno::Sequence< ::rtl::OUString > SAL_CALL CanvasFont::getSupportedServiceNames()
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );

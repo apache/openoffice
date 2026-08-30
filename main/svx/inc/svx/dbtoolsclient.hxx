@@ -107,21 +107,19 @@ namespace svxform
 			const ::rtl::OUString& _rUser,
 			const ::rtl::OUString& _rPwd,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory
-		) const SAL_THROW ( (::com::sun::star::sdbc::SQLException) );
+		) const;
 
 		// ------------------------------------------------
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> connectRowset(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet,
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory,
 			sal_Bool _bSetAsActiveConnection
-		) const SAL_THROW ( ( ::com::sun::star::sdbc::SQLException
-                            , ::com::sun::star::lang::WrappedTargetException
-                            , ::com::sun::star::uno::RuntimeException) );
+		) const;
 
 		// ------------------------------------------------
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> getRowSetConnection(
 				const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet)
-				const SAL_THROW ( (::com::sun::star::uno::RuntimeException) );
+				const;
 
 		// ------------------------------------------------
 		void TransferFormComponentProperties(

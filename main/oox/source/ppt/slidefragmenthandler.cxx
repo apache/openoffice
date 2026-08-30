@@ -70,7 +70,7 @@ SlideFragmentHandler::~SlideFragmentHandler() throw()
     mpSlidePersistPtr->getDrawing()->convertAndInsert();
 }
 
-Reference< XFastContextHandler > SlideFragmentHandler::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > SlideFragmentHandler::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
     AttributeList aAttribs( xAttribs );
@@ -190,7 +190,7 @@ Reference< XFastContextHandler > SlideFragmentHandler::createFastChildContext( s
 	return xRet;
 }
 
-void SAL_CALL SlideFragmentHandler::endDocument(  ) throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlideFragmentHandler::endDocument(  )
 {
 	try
 	{

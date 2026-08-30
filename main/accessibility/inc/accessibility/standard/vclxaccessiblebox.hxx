@@ -74,7 +74,7 @@ public:
 
 	virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleContext > SAL_CALL
-			getAccessibleContext(  ) throw (::com::sun::star::uno::RuntimeException);
+			getAccessibleContext(  );
 
     // XAccessibleContext
 
@@ -82,49 +82,38 @@ public:
         actual list.  The text field is not provided for non drop down list
         boxes.
     */
-    sal_Int32 SAL_CALL getAccessibleChildCount (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    sal_Int32 SAL_CALL getAccessibleChildCount (void);
     /** For drop down list boxes the text field is a not editable
         <type>VCLXAccessibleTextField</type>, for combo boxes it is an
         editable <type>VLCAccessibleEdit</type>.
     */
     ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-        getAccessibleChild (sal_Int32 i)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+        getAccessibleChild (sal_Int32 i);
     /** The role is always <const
         scope="com::sun::star::accessibility">AccessibleRole::COMBO_BOX</const>.
     */
-	sal_Int16 SAL_CALL getAccessibleRole (void)
-        throw (::com::sun::star::uno::RuntimeException);
+	sal_Int16 SAL_CALL getAccessibleRole (void);
 
-    sal_Int32 SAL_CALL getAccessibleIndexInParent (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    sal_Int32 SAL_CALL getAccessibleIndexInParent (void);
 
 	// XAccessibleAction
 
     /** There is one action for drop down boxes and none for others.
     */
-    virtual sal_Int32 SAL_CALL getAccessibleActionCount (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getAccessibleActionCount (void);
     /** The action for drop down boxes lets the user toggle the visibility of the
         popup menu.
     */
-    virtual sal_Bool SAL_CALL doAccessibleAction (sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-            ::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL doAccessibleAction (sal_Int32 nIndex);
     /** The returned string is associated with resource
         <const>RID_STR_ACC_ACTION_TOGGLEPOPUP</const>.
     */
-    virtual ::rtl::OUString SAL_CALL getAccessibleActionDescription (sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-            ::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getAccessibleActionDescription (sal_Int32 nIndex);
     /** No keybinding returned so far.
     */
 	virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleKeyBinding > SAL_CALL
-			getAccessibleActionKeyBinding( sal_Int32 nIndex )
-				throw (::com::sun::star::lang::IndexOutOfBoundsException,
-					   ::com::sun::star::uno::RuntimeException);
+			getAccessibleActionKeyBinding( sal_Int32 nIndex );
 
 	// XComponent
 
@@ -135,18 +124,14 @@ public:
 
 	//=====  XAccessibleValue  ================================================
 
-    virtual ::com::sun::star::uno::Any SAL_CALL getCurrentValue( )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getCurrentValue( );
 
     virtual sal_Bool SAL_CALL setCurrentValue(
-        const ::com::sun::star::uno::Any& aNumber )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Any& aNumber );
 
-    virtual ::com::sun::star::uno::Any SAL_CALL getMaximumValue(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getMaximumValue(  );
 
-    virtual ::com::sun::star::uno::Any SAL_CALL getMinimumValue(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getMinimumValue(  );
 	bool IsDropDownBox() {return m_bIsDropDownBox;};
 	BoxType GetBoxType() { return m_aBoxType;};
 protected:

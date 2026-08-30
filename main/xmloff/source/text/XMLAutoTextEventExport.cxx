@@ -109,7 +109,6 @@ XMLAutoTextEventExport::~XMLAutoTextEventExport()
 
 void XMLAutoTextEventExport::initialize(
 	const Sequence<Any> & rArguments )
-		throw(uno::Exception, uno::RuntimeException)
 {
 	if (rArguments.getLength() > 1)
 	{
@@ -262,7 +261,6 @@ OUString SAL_CALL XMLAutoTextEventExport_getImplementationName() throw()
 
 Reference< XInterface > SAL_CALL XMLAutoTextEventExport_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new XMLAutoTextEventExport;
@@ -287,7 +285,6 @@ OUString SAL_CALL XMLAutoTextEventExportOOO_getImplementationName() throw()
 
 Reference< XInterface > SAL_CALL XMLAutoTextEventExportOOO_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new XMLAutoTextEventExport;

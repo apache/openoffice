@@ -94,16 +94,16 @@ public:
 							{ return m_xLockBytes; }
 
 	// XActiveDataControl.
-    virtual void SAL_CALL   addListener ( const Reference<XStreamListener> &/*rxListener*/) throw(RuntimeException) {}
-    virtual void SAL_CALL   removeListener ( const Reference<XStreamListener> &/*rxListener*/) throw(RuntimeException) {}
-    virtual void SAL_CALL   start (void) throw(RuntimeException) {}
-    virtual void SAL_CALL   terminate (void) throw(RuntimeException)
+    virtual void SAL_CALL   addListener ( const Reference<XStreamListener> &/*rxListener*/) {}
+    virtual void SAL_CALL   removeListener ( const Reference<XStreamListener> &/*rxListener*/) {}
+    virtual void SAL_CALL   start (void) {}
+    virtual void SAL_CALL   terminate (void)
                             { m_xLockBytes->terminate_Impl(); }
 
 	// XActiveDataSink.
-    virtual void SAL_CALL   setInputStream ( const Reference<XInputStream> &rxInputStream) throw(RuntimeException)
+    virtual void SAL_CALL   setInputStream ( const Reference<XInputStream> &rxInputStream)
                             { m_xLockBytes->setInputStream_Impl (rxInputStream); }
-    virtual Reference<XInputStream> SAL_CALL getInputStream (void) throw(RuntimeException)
+    virtual Reference<XInputStream> SAL_CALL getInputStream (void)
                             { return m_xLockBytes->getInputStream_Impl(); }
 };
 
@@ -122,16 +122,16 @@ public:
                             {}
 
 	// XActiveDataControl.
-    virtual void SAL_CALL   addListener ( const Reference<XStreamListener> &/*rxListener*/) throw(RuntimeException) {}
-    virtual void SAL_CALL   removeListener ( const Reference<XStreamListener> &/*rxListener*/) throw(RuntimeException) {}
-    virtual void SAL_CALL   start (void) throw(RuntimeException) {}
-    virtual void SAL_CALL   terminate (void) throw(RuntimeException)
+    virtual void SAL_CALL   addListener ( const Reference<XStreamListener> &/*rxListener*/) {}
+    virtual void SAL_CALL   removeListener ( const Reference<XStreamListener> &/*rxListener*/) {}
+    virtual void SAL_CALL   start (void) {}
+    virtual void SAL_CALL   terminate (void)
                             { m_xLockBytes->terminate_Impl(); }
 
     // XActiveDataStreamer
-    virtual void SAL_CALL   setStream( const Reference< XStream >& aStream ) throw(RuntimeException)
+    virtual void SAL_CALL   setStream( const Reference< XStream >& aStream )
                             { m_xStream = aStream; m_xLockBytes->setStream_Impl( aStream ); }
-    virtual Reference< XStream > SAL_CALL getStream() throw(RuntimeException)
+    virtual Reference< XStream > SAL_CALL getStream()
                             { return m_xStream; }
 };
 
@@ -147,9 +147,9 @@ public:
                                 : m_aProgress( rLink )
                             {}
     // XProgressHandler
-    virtual void SAL_CALL   push(const Any & /*rStatus*/) throw (RuntimeException) {}
-    virtual void SAL_CALL   pop() throw (RuntimeException) {}
-    virtual void SAL_CALL   update(const Any & /*rStatus*/) throw (RuntimeException)
+    virtual void SAL_CALL   push(const Any & /*rStatus*/) {}
+    virtual void SAL_CALL   pop() {}
+    virtual void SAL_CALL   update(const Any & /*rStatus*/)
                             { if ( m_aProgress.IsSet() ) m_aProgress.Call( 0 ); }
 };
 
@@ -169,10 +169,10 @@ public:
                             {}
 
 
-    virtual Reference<XInteractionHandler> SAL_CALL getInteractionHandler() throw (RuntimeException)
+    virtual Reference<XInteractionHandler> SAL_CALL getInteractionHandler()
 	{ return m_xInteractionHandler; }
 
-    virtual Reference<XProgressHandler> SAL_CALL    getProgressHandler() throw (RuntimeException)
+    virtual Reference<XProgressHandler> SAL_CALL    getProgressHandler()
 	{ return m_xProgressHandler; }
 };
 
@@ -189,11 +189,11 @@ public:
                                 : m_xLockBytes( rRef )
                             {}
 
-    virtual void SAL_CALL   disposing ( const EventObject &/*rEvent*/) throw(RuntimeException) {}
-    virtual void SAL_CALL   propertiesChange ( const Sequence<PropertyChangeEvent> &rEvent) throw(RuntimeException);
+    virtual void SAL_CALL   disposing ( const EventObject &/*rEvent*/) {}
+    virtual void SAL_CALL   propertiesChange ( const Sequence<PropertyChangeEvent> &rEvent);
 };
 
-void SAL_CALL UcbPropertiesChangeListener_Impl::propertiesChange ( const Sequence<PropertyChangeEvent> &rEvent) throw(RuntimeException)
+void SAL_CALL UcbPropertiesChangeListener_Impl::propertiesChange ( const Sequence<PropertyChangeEvent> &rEvent)
 {
 	sal_Int32 i, n = rEvent.getLength();
 	for (i = 0; i < n; i++)
@@ -263,11 +263,7 @@ public:
 		Reference < XInteractionHandler >& xInteract,
 		Reference < XProgressHandler >& xProgress,
 		const Command& rArg
-    )
-        throw(
-            ContentCreationException,
-            RuntimeException
-        );
+    );
 
 	~Moderator();
 
@@ -413,16 +409,11 @@ public:
     virtual void SAL_CALL
     setStream(
         const Reference< XStream >& aStream
-    )
-        throw(
-            RuntimeException
-        );
+    );
 
     virtual Reference<XStream> SAL_CALL
     getStream (
         void
-    ) throw(
-        RuntimeException
     )
     {
         osl::MutexGuard aGuard(m_aMutex);
@@ -453,16 +444,11 @@ public:
     virtual void SAL_CALL
     setInputStream (
         const Reference<XInputStream> &rxInputStream
-    )
-        throw(
-            RuntimeException
-        );
+    );
 
     virtual Reference<XInputStream> SAL_CALL
     getInputStream (
         void
-    ) throw(
-        RuntimeException
     )
     {
         osl::MutexGuard aGuard(m_aMutex);
@@ -494,9 +480,6 @@ void SAL_CALL
 ModeratorsActiveDataSink::setInputStream (
     const Reference<XInputStream> &rxInputStream
 )
-    throw(
-        RuntimeException
-    )
 {
     m_aModerator.setInputStream(rxInputStream);
     osl::MutexGuard aGuard(m_aMutex);
@@ -521,9 +504,6 @@ void SAL_CALL
 ModeratorsActiveDataStreamer::setStream (
     const Reference<XStream> &rxStream
 )
-    throw(
-        RuntimeException
-    )
 {
     m_aModerator.setStream(rxStream);
     osl::MutexGuard aGuard(m_aMutex);
@@ -542,8 +522,7 @@ public:
 	~ModeratorsInteractionHandler();
 
 	virtual void SAL_CALL
-	handle( const Reference<XInteractionRequest >& Request )
-		throw (RuntimeException);
+	handle( const Reference<XInteractionRequest >& Request );
 
 private:
 
@@ -560,15 +539,11 @@ public:
 
 	~ModeratorsProgressHandler();
 
-	virtual void SAL_CALL push( const Any& Status )
-		throw (
-			RuntimeException);
+	virtual void SAL_CALL push( const Any& Status );
 
-    virtual void SAL_CALL update( const Any& Status )
-		throw (RuntimeException);
+    virtual void SAL_CALL update( const Any& Status );
 
-    virtual void SAL_CALL pop(  )
-		throw (RuntimeException);
+    virtual void SAL_CALL pop(  );
 
 
 private:
@@ -588,22 +563,18 @@ ModeratorsProgressHandler::~ModeratorsProgressHandler()
 
 
 void SAL_CALL ModeratorsProgressHandler::push( const Any& Status )
-	throw (
-		RuntimeException)
 {
 	m_aModerator.push(Status);
 }
 
 
 void SAL_CALL ModeratorsProgressHandler::update( const Any& Status )
-	throw (RuntimeException)
 {
 	m_aModerator.update(Status);
 }
 
 
 void SAL_CALL ModeratorsProgressHandler::pop(  )
-	throw (RuntimeException)
 {
 	m_aModerator.pop();
 }
@@ -627,9 +598,6 @@ void SAL_CALL
 ModeratorsInteractionHandler::handle(
 	const Reference<XInteractionRequest >& Request
 )
-	throw (
-		RuntimeException
-	)
 {
 	// wakes up the mainthread
 	m_aModerator.handle(Request);
@@ -644,10 +612,6 @@ Moderator::Moderator(
 	Reference < XProgressHandler >& xProgress,
 	const Command& rArg
 )
-    throw(
-        ::com::sun::star::ucb::ContentCreationException,
-        ::com::sun::star::uno::RuntimeException
-    )
 	: m_aMutex(),
 
       m_aRes(m_aMutex,*this),

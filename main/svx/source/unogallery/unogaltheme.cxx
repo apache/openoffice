@@ -101,7 +101,6 @@ uno::Sequence< ::rtl::OUString > GalleryTheme::getSupportedServiceNames_Static()
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL GalleryTheme::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
 }
@@ -109,7 +108,6 @@ uno::Sequence< ::rtl::OUString > GalleryTheme::getSupportedServiceNames_Static()
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL GalleryTheme::supportsService( const ::rtl::OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString >	aSNL( getSupportedServiceNames() );
     const ::rtl::OUString*				pArray = aSNL.getConstArray();
@@ -124,7 +122,6 @@ sal_Bool SAL_CALL GalleryTheme::supportsService( const ::rtl::OUString& ServiceN
 // ------------------------------------------------------------------------------
 
 uno::Sequence< ::rtl::OUString > SAL_CALL GalleryTheme::getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	return getSupportedServiceNames_Static();
 }
@@ -132,7 +129,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL GalleryTheme::getSupportedServiceNames
 // ------------------------------------------------------------------------------
 
 uno::Sequence< uno::Type > SAL_CALL GalleryTheme::getTypes()
-	throw(uno::RuntimeException)
 {
 	uno::Sequence< uno::Type >	aTypes( 5 );
 	uno::Type* 					pTypes = aTypes.getArray();
@@ -149,7 +145,6 @@ uno::Sequence< uno::Type > SAL_CALL GalleryTheme::getTypes()
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL GalleryTheme::getImplementationId()
-	throw(uno::RuntimeException)
 {
 	const vos::OGuard 					aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
@@ -166,7 +161,6 @@ uno::Sequence< sal_Int8 > SAL_CALL GalleryTheme::getImplementationId()
 // ------------------------------------------------------------------------------
 
 uno::Type SAL_CALL GalleryTheme::getElementType()
-	throw (uno::RuntimeException)
 {
 	return ::getCppuType( (const uno::Reference< gallery::XGalleryItem >*) 0);
 }
@@ -174,7 +168,6 @@ uno::Type SAL_CALL GalleryTheme::getElementType()
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL GalleryTheme::hasElements()
-	throw (uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -184,7 +177,6 @@ sal_Bool SAL_CALL GalleryTheme::hasElements()
 // ------------------------------------------------------------------------------
 
 sal_Int32 SAL_CALL GalleryTheme::getCount()
-	throw (uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -194,7 +186,6 @@ sal_Int32 SAL_CALL GalleryTheme::getCount()
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL GalleryTheme::getByIndex( ::sal_Int32 nIndex )
-	throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	uno::Any 			aRet;
@@ -220,7 +211,6 @@ uno::Any SAL_CALL GalleryTheme::getByIndex( ::sal_Int32 nIndex )
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL GalleryTheme::getName(  )
-	throw (uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	::rtl::OUString 	aRet;
@@ -234,7 +224,6 @@ uno::Any SAL_CALL GalleryTheme::getByIndex( ::sal_Int32 nIndex )
 // ------------------------------------------------------------------------------
 
 void SAL_CALL GalleryTheme::update(  )
-	throw (uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -249,7 +238,6 @@ void SAL_CALL GalleryTheme::update(  )
 
 ::sal_Int32 SAL_CALL GalleryTheme::insertURLByIndex(
 	const ::rtl::OUString& rURL, ::sal_Int32 nIndex )
-	throw (lang::WrappedTargetException, uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	sal_Int32			nRet = -1;
@@ -282,7 +270,6 @@ void SAL_CALL GalleryTheme::update(  )
 
 ::sal_Int32 SAL_CALL GalleryTheme::insertGraphicByIndex(
 	const uno::Reference< graphic::XGraphic >& rxGraphic, sal_Int32 nIndex )
-	throw (lang::WrappedTargetException, uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	sal_Int32 			nRet = -1;
@@ -310,7 +297,6 @@ void SAL_CALL GalleryTheme::update(  )
 
 ::sal_Int32 SAL_CALL GalleryTheme::insertDrawingByIndex(
 	const uno::Reference< lang::XComponent >& Drawing, sal_Int32 nIndex )
-	throw (lang::WrappedTargetException, uno::RuntimeException)
 {
     const ::vos::OGuard aGuard( Application::GetSolarMutex() );
     sal_Int32           nRet = -1;
@@ -362,7 +348,6 @@ void SAL_CALL GalleryTheme::update(  )
 // ------------------------------------------------------------------------------
 
 void SAL_CALL GalleryTheme::removeByIndex( sal_Int32 nIndex )
-	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

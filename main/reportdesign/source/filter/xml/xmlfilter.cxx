@@ -311,12 +311,12 @@ uno::Reference< uno::XInterface > ORptImportHelper::create(uno::Reference< uno::
 	return static_cast< XServiceInfo* >(new ORptFilter(Reference< XMultiServiceFactory >(xContext->getServiceManager(),UNO_QUERY),IMPORT_SETTINGS ));
 }
 //---------------------------------------------------------------------
-::rtl::OUString ORptImportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+::rtl::OUString ORptImportHelper::getImplementationName_Static(  )
 {
 	return ::rtl::OUString(SERVICE_SETTINGSIMPORTER);
 }
 //---------------------------------------------------------------------
-Sequence< ::rtl::OUString > ORptImportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > ORptImportHelper::getSupportedServiceNames_Static(  )
 {
 	Sequence< ::rtl::OUString > aSupported(1);
 	aSupported[0] = SERVICE_IMPORTFILTER;
@@ -329,12 +329,12 @@ Reference< XInterface > ORptContentImportHelper::create(const Reference< XCompon
 		IMPORT_FONTDECLS ));
 }
 //---------------------------------------------------------------------
-::rtl::OUString ORptContentImportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+::rtl::OUString ORptContentImportHelper::getImplementationName_Static(  )
 {
 	return ::rtl::OUString(SERVICE_CONTENTIMPORTER);
 }
 //---------------------------------------------------------------------
-Sequence< ::rtl::OUString > ORptContentImportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > ORptContentImportHelper::getSupportedServiceNames_Static(  )
 {
 	Sequence< ::rtl::OUString > aSupported(1);
 	aSupported[0] = SERVICE_IMPORTFILTER;
@@ -349,12 +349,12 @@ Reference< XInterface > ORptStylesImportHelper::create(Reference< XComponentCont
 		IMPORT_FONTDECLS ));
 }
 //---------------------------------------------------------------------
-::rtl::OUString ORptStylesImportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+::rtl::OUString ORptStylesImportHelper::getImplementationName_Static(  )
 {
 	return ::rtl::OUString(SERVICE_STYLESIMPORTER);
 }
 //---------------------------------------------------------------------
-Sequence< ::rtl::OUString > ORptStylesImportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > ORptStylesImportHelper::getSupportedServiceNames_Static(  )
 {
 	Sequence< ::rtl::OUString > aSupported(1);
 	aSupported[0] = SERVICE_IMPORTFILTER;
@@ -368,12 +368,12 @@ Reference< XInterface > ORptMetaImportHelper::create(Reference< XComponentContex
     	IMPORT_META));
 }
 //---------------------------------------------------------------------
-::rtl::OUString ORptMetaImportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+::rtl::OUString ORptMetaImportHelper::getImplementationName_Static(  )
 {
 	return ::rtl::OUString(SERVICE_METAIMPORTER);
 }
 //---------------------------------------------------------------------
-Sequence< ::rtl::OUString > ORptMetaImportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > ORptMetaImportHelper::getSupportedServiceNames_Static(  )
 {
 	Sequence< ::rtl::OUString > aSupported(1);
 	aSupported[0] = SERVICE_IMPORTFILTER;
@@ -418,18 +418,18 @@ uno::Reference< XInterface > ORptFilter::create(uno::Reference< XComponentContex
 }
 
 // -----------------------------------------------------------------------------
-::rtl::OUString ORptFilter::getImplementationName_Static(  ) throw(uno::RuntimeException)
+::rtl::OUString ORptFilter::getImplementationName_Static(  )
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.report.OReportFilter"));
 }
 
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ORptFilter::getImplementationName(  ) throw(uno::RuntimeException)
+::rtl::OUString SAL_CALL ORptFilter::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 //--------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > ORptFilter::getSupportedServiceNames_Static(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > ORptFilter::getSupportedServiceNames_Static(  )
 {
 	uno::Sequence< ::rtl::OUString > aServices(1);
 	aServices.getArray()[0] = SERVICE_IMPORTFILTER;
@@ -438,18 +438,17 @@ uno::Sequence< ::rtl::OUString > ORptFilter::getSupportedServiceNames_Static(  )
 }
 
 //--------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > SAL_CALL ORptFilter::getSupportedServiceNames(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL ORptFilter::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL ORptFilter::supportsService(const ::rtl::OUString& ServiceName) throw( uno::RuntimeException )
+sal_Bool SAL_CALL ORptFilter::supportsService(const ::rtl::OUString& ServiceName)
 {
     return ::comphelper::existsValue(ServiceName,getSupportedServiceNames_Static());
 }
 // -----------------------------------------------------------------------------
 sal_Bool SAL_CALL ORptFilter::filter( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
     Window*     pFocusWindow = Application::GetFocusWindow();
     sal_Bool    bRet = sal_False;
@@ -467,7 +466,6 @@ sal_Bool SAL_CALL ORptFilter::filter( const Sequence< PropertyValue >& rDescript
 }
 // -----------------------------------------------------------------------------
 sal_Bool ORptFilter::implImport( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
     ::rtl::OUString                     sFileName;
 	uno::Reference< embed::XStorage >	xStorage;
@@ -1055,7 +1053,6 @@ void ORptFilter::FinishStyles()
 }
 // -----------------------------------------------------------------------------
 void SAL_CALL ORptFilter::startDocument( void )
-	throw( xml::sax::SAXException, uno::RuntimeException )
 {
     m_xReportDefinition.set(GetModel(),UNO_QUERY_THROW);
 	OSL_ENSURE(m_xReportDefinition.is(),"ReportDefinition is NULL!");
@@ -1069,7 +1066,6 @@ void SAL_CALL ORptFilter::startDocument( void )
 }
 // -----------------------------------------------------------------------------
 void ORptFilter::endDocument( void )
-	throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	DBG_ASSERT( GetModel().is(), "model missing; maybe startDocument wasn't called?" );
 	if( !GetModel().is() )

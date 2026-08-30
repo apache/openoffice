@@ -167,14 +167,12 @@ protected:
 public:
     virtual ::com::sun::star::uno::Any
         SAL_CALL queryInterface( ::com::sun::star::uno::Type const& rType )
-        throw (::com::sun::star::uno::RuntimeException)
         { return ::cppu::ImplHelper_query( rType, cd::get(), this ); }
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >
-        SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException)
+        SAL_CALL getTypes()
         { return ::cppu::ImplHelper_getTypes( cd::get() ); }
     virtual ::com::sun::star::uno::Sequence<sal_Int8>
         SAL_CALL getImplementationId()
-        throw (::com::sun::star::uno::RuntimeException)
         { return ::cppu::ImplHelper_getImplementationId( cd::get() ); }
 };
 
@@ -211,7 +209,6 @@ class SAL_NO_VTABLE BOOST_PP_CAT(WeakImplHelper,
 public:
     virtual ::com::sun::star::uno::Any
         SAL_CALL queryInterface( ::com::sun::star::uno::Type const& rType )
-        throw (::com::sun::star::uno::RuntimeException)
     {
         return ::cppu::WeakImplHelper_query(
             rType, cd::get(), this, static_cast<OWeakObject *>(this) );
@@ -221,11 +218,10 @@ public:
     virtual void SAL_CALL release() throw ()
         { OWeakObject::release(); }
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >
-        SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException)
+        SAL_CALL getTypes()
         { return ::cppu::WeakImplHelper_getTypes( cd::get() ); }
     virtual ::com::sun::star::uno::Sequence<sal_Int8>
         SAL_CALL getImplementationId()
-        throw (::com::sun::star::uno::RuntimeException)
         { return ::cppu::ImplHelper_getImplementationId( cd::get() ); }
 };
 
@@ -288,7 +284,6 @@ protected:
 public:
     virtual ::com::sun::star::uno::Any
         SAL_CALL queryInterface( ::com::sun::star::uno::Type const& rType )
-        throw (::com::sun::star::uno::RuntimeException)
     {
         ::com::sun::star::uno::Any const aRet(
             ::cppu::ImplHelper_queryNoXInterface( rType, cd::get(), this ) );
@@ -301,14 +296,13 @@ public:
     virtual void SAL_CALL release() throw ()
         { BaseClass::release(); }
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >
-        SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException)
+        SAL_CALL getTypes()
     {
         return ::cppu::ImplInhHelper_getTypes(
             cd::get(), BaseClass::getTypes() );
     }
     virtual ::com::sun::star::uno::Sequence<sal_Int8>
         SAL_CALL getImplementationId()
-        throw (::com::sun::star::uno::RuntimeException)
         { return ::cppu::ImplHelper_getImplementationId( cd::get() ); }
 };
 
@@ -359,7 +353,6 @@ public:
 
     virtual ::com::sun::star::uno::Any
         SAL_CALL queryInterface( ::com::sun::star::uno::Type const& rType )
-        throw (::com::sun::star::uno::RuntimeException)
     {
         return ::cppu::WeakComponentImplHelper_query(
             rType, cd::get(), this,
@@ -370,24 +363,22 @@ public:
     virtual void SAL_CALL release() throw ()
         { WeakComponentImplHelperBase::release(); }
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >
-        SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException)
+        SAL_CALL getTypes()
         { return ::cppu::WeakComponentImplHelper_getTypes( cd::get() ); }
     virtual ::com::sun::star::uno::Sequence<sal_Int8>
         SAL_CALL getImplementationId()
-        throw (::com::sun::star::uno::RuntimeException)
         { return ::cppu::ImplHelper_getImplementationId( cd::get() ); }
 
     // implement XComponent directly avoiding ambiguities:
     virtual void SAL_CALL dispose()
-        throw (::com::sun::star::uno::RuntimeException)
         { WeakComponentImplHelperBase::dispose(); }
     virtual void SAL_CALL addEventListener(
         ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener>
-        const & xListener ) throw (::com::sun::star::uno::RuntimeException)
+        const & xListener )
         { WeakComponentImplHelperBase::addEventListener( xListener ); }
     virtual void SAL_CALL removeEventListener(
         ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener>
-        const & xListener ) throw (::com::sun::star::uno::RuntimeException)
+        const & xListener )
         { WeakComponentImplHelperBase::removeEventListener( xListener ); }
 };
 

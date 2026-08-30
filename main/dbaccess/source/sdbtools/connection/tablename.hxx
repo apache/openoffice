@@ -76,17 +76,17 @@ namespace sdbtools
         );
 
         // XTableName
-        virtual ::rtl::OUString SAL_CALL getCatalogName() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setCatalogName( const ::rtl::OUString& _catalogname ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getSchemaName() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setSchemaName( const ::rtl::OUString& _schemaname ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getTableName() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setTableName( const ::rtl::OUString& _tablename ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getNameForSelect() throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getTable() throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setTable( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _table ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getComposedName( ::sal_Int32 Type, ::sal_Bool _Quote ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setComposedName( const ::rtl::OUString& ComposedName, ::sal_Int32 Type ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getCatalogName();
+        virtual void SAL_CALL setCatalogName( const ::rtl::OUString& _catalogname );
+        virtual ::rtl::OUString SAL_CALL getSchemaName();
+        virtual void SAL_CALL setSchemaName( const ::rtl::OUString& _schemaname );
+        virtual ::rtl::OUString SAL_CALL getTableName();
+        virtual void SAL_CALL setTableName( const ::rtl::OUString& _tablename );
+        virtual ::rtl::OUString SAL_CALL getNameForSelect();
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getTable();
+        virtual void SAL_CALL setTable( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& _table );
+        virtual ::rtl::OUString SAL_CALL getComposedName( ::sal_Int32 Type, ::sal_Bool _Quote );
+        virtual void SAL_CALL setComposedName( const ::rtl::OUString& ComposedName, ::sal_Int32 Type );
 
     protected:
         virtual ~TableName();

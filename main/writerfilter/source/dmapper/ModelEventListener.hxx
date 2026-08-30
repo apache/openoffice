@@ -38,8 +38,8 @@ public:
     ModelEventListener();
     ~ModelEventListener();
 
-    virtual void SAL_CALL notifyEvent( const ::com::sun::star::document::EventObject& Event ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL notifyEvent( const ::com::sun::star::document::EventObject& Event );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 };
 }//namespace writerfilter

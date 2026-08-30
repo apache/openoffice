@@ -90,30 +90,30 @@ namespace dbaui
 
 		// UNO
 		DECLARE_UNO3_DEFAULTS(SbaXGridControl, FmXGridControl);
-		virtual ::com::sun::star::uno::Any	SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any	SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType);
 
 		// XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 
 		// ::com::sun::star::lang::XServiceInfo
 		::rtl::OUString SAL_CALL getImplementationName() throw();
 		virtual ::comphelper::StringSequence SAL_CALL getSupportedServiceNames() throw();
 		// need by registration
-		static ::rtl::OUString getImplementationName_Static() throw( ::com::sun::star::uno::RuntimeException );
-		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+		static ::rtl::OUString getImplementationName_Static();
+		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
 		static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
 				SAL_CALL Create(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >&);
 
 		// ::com::sun::star::frame::XDispatch
-		virtual void SAL_CALL dispatch(const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL removeStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispatch(const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs);
+		virtual void SAL_CALL addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL);
+		virtual void SAL_CALL removeStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL);
 
 		// ::com::sun::star::lang::XComponent
-		virtual void SAL_CALL dispose(void) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispose(void);
 
-		virtual void SAL_CALL createPeer(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit > & rToolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > & rParentPeer) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL createPeer(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit > & rToolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > & rParentPeer);
 
 	protected:
 		virtual FmXGridPeer*	imp_CreatePeer(Window* pParent);
@@ -136,24 +136,24 @@ namespace dbaui
 		// UNO
 		virtual void SAL_CALL  acquire() throw() { FmXGridPeer::acquire(); }
 		virtual void SAL_CALL release() throw() { FmXGridPeer::release(); }
-		virtual ::com::sun::star::uno::Any	SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any	SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType);
 
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
 
 		static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId();
-		sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 > & rId ) throw (::com::sun::star::uno::RuntimeException);
+		sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 > & rId );
 		static SbaXGridPeer* getImplementation(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface>& _rxIFace);
 
 		// ::com::sun::star::frame::XDispatch
-		virtual void SAL_CALL dispatch(const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL removeStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispatch(const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs);
+		virtual void SAL_CALL addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL);
+		virtual void SAL_CALL removeStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > & xControl, const ::com::sun::star::util::URL& aURL);
 
 		// ::com::sun::star::frame::XDispatchProvider
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch >  SAL_CALL queryDispatch(const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags) throw( ::com::sun::star::uno::RuntimeException );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch >  SAL_CALL queryDispatch(const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags);
 
 		// ::com::sun::star::lang::XComponent
-		virtual void SAL_CALL dispose(void) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispose(void);
 
 	protected:
 		virtual FmGridControl*	imp_CreateControl(Window* pParent, WinBits nStyle);

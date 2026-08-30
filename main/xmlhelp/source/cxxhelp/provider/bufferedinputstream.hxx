@@ -49,8 +49,7 @@ namespace chelp {
 		~BufferedInputStream();
 
 		virtual com::sun::star::uno::Any SAL_CALL
-		queryInterface( const com::sun::star::uno::Type& rType )
-			throw( com::sun::star::uno::RuntimeException );
+		queryInterface( const com::sun::star::uno::Type& rType );
 
 		virtual void SAL_CALL acquire( void ) throw();
 
@@ -58,47 +57,22 @@ namespace chelp {
 
 
 		virtual sal_Int32 SAL_CALL readBytes( com::sun::star::uno::Sequence< sal_Int8 >& aData,
-											  sal_Int32 nBytesToRead )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+											  sal_Int32 nBytesToRead );
 
 		virtual sal_Int32 SAL_CALL readSomeBytes( com::sun::star::uno::Sequence< sal_Int8 >& aData,
-												  sal_Int32 nMaxBytesToRead )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+												  sal_Int32 nMaxBytesToRead );
 
-		virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip );
 
-		virtual sal_Int32 SAL_CALL available( void )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual sal_Int32 SAL_CALL available( void );
 
-		virtual void SAL_CALL closeInput( void )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL closeInput( void );
 
-		virtual void SAL_CALL seek( sal_Int64 location )
-			throw( com::sun::star::lang::IllegalArgumentException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL seek( sal_Int64 location );
 
-		virtual sal_Int64 SAL_CALL getPosition( void )
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual sal_Int64 SAL_CALL getPosition( void );
 
-		virtual sal_Int64 SAL_CALL getLength( void )
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual sal_Int64 SAL_CALL getLength( void );
 	};
 
 

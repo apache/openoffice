@@ -83,10 +83,10 @@ namespace basctl
         DocumentEventNotifier_Impl( DocumentEventListener& _rListener, const Reference< XModel >& _rxDocument );
 
         // document::XEventListener
-        virtual void SAL_CALL notifyEvent( const EventObject& Event ) throw (RuntimeException);
+        virtual void SAL_CALL notifyEvent( const EventObject& Event );
 
         // lang::XEventListener
-        virtual void SAL_CALL disposing( const csslang::EventObject& Event ) throw (RuntimeException);
+        virtual void SAL_CALL disposing( const csslang::EventObject& Event );
 
         // ComponentHelper
         virtual void SAL_CALL disposing();
@@ -131,7 +131,7 @@ namespace basctl
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DocumentEventNotifier_Impl::notifyEvent( const EventObject& _rEvent ) throw (RuntimeException)
+    void SAL_CALL DocumentEventNotifier_Impl::notifyEvent( const EventObject& _rEvent )
     {
         ::osl::ClearableMutexGuard aGuard( m_aMutex );
 
@@ -185,7 +185,7 @@ namespace basctl
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL DocumentEventNotifier_Impl::disposing( const csslang::EventObject& /*Event*/ ) throw (RuntimeException)
+    void SAL_CALL DocumentEventNotifier_Impl::disposing( const csslang::EventObject& /*Event*/ )
     {
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
         ::osl::MutexGuard aGuard( m_aMutex );

@@ -52,7 +52,7 @@ class ImageButtonToolbarController : public ComplexToolbarController
         virtual ~ImageButtonToolbarController();
 
         // XComponent
-        virtual void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL dispose();
 
     protected:
         virtual void executeControlCommand( const ::com::sun::star::frame::ControlCommand& rControlCommand );

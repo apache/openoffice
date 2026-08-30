@@ -59,19 +59,19 @@ public:
 	PlaceWareExportFilter( const Reference< XMultiServiceFactory > &rxMSF);
 
 	// XFilter
-    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& aDescriptor ) throw(RuntimeException);
-    virtual void SAL_CALL cancel( ) throw (RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& aDescriptor );
+    virtual void SAL_CALL cancel( );
 
 	// XExporter
-    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc ) throw(IllegalArgumentException, RuntimeException);
+    virtual void SAL_CALL setSourceDocument( const Reference< XComponent >& xDoc );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// XServiceInfo
-    virtual OUString SAL_CALL getImplementationName() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()  throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 };
 
 // -----------------------------------------------------------------------------
@@ -84,7 +84,6 @@ PlaceWareExportFilter::PlaceWareExportFilter(const Reference< XMultiServiceFacto
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL PlaceWareExportFilter::filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-	throw (RuntimeException)
 {
 	sal_Int32 nLength = aDescriptor.getLength();
 	const PropertyValue * pValue = aDescriptor.getConstArray();
@@ -124,7 +123,6 @@ sal_Bool SAL_CALL PlaceWareExportFilter::filter( const ::com::sun::star::uno::Se
 // -----------------------------------------------------------------------------
 
 void SAL_CALL PlaceWareExportFilter::cancel(  )
-	throw (RuntimeException)
 {
 }
 
@@ -132,7 +130,6 @@ void SAL_CALL PlaceWareExportFilter::cancel(  )
 
 // XExporter
 void SAL_CALL PlaceWareExportFilter::setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-	throw (::com::sun::star::lang::IllegalArgumentException, RuntimeException)
 {
 	mxDoc = xDoc;
 }
@@ -141,14 +138,12 @@ void SAL_CALL PlaceWareExportFilter::setSourceDocument( const ::com::sun::star::
 
 // XInitialization
 void SAL_CALL PlaceWareExportFilter::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& /* aArguments */ )
-	throw (Exception, RuntimeException)
 {
 }
 
 // -----------------------------------------------------------------------------
 
 OUString PlaceWareExportFilter_getImplementationName ()
-	throw (RuntimeException)
 {
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.comp.Impress.PlaceWareExportFilter" ) );
 }
@@ -158,7 +153,6 @@ OUString PlaceWareExportFilter_getImplementationName ()
 #define SERVICE_NAME "com.sun.star.document.ExportFilter"
 
 sal_Bool SAL_CALL PlaceWareExportFilter_supportsService( const OUString& ServiceName )
-	throw (RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
 }
@@ -166,7 +160,6 @@ sal_Bool SAL_CALL PlaceWareExportFilter_supportsService( const OUString& Service
 // -----------------------------------------------------------------------------
 
 Sequence< OUString > SAL_CALL PlaceWareExportFilter_getSupportedServiceNames(  )
-	throw (RuntimeException)
 {
 	Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -178,7 +171,6 @@ Sequence< OUString > SAL_CALL PlaceWareExportFilter_getSupportedServiceNames(  )
 // -----------------------------------------------------------------------------
 
 Reference< XInterface > SAL_CALL PlaceWareExportFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*) new PlaceWareExportFilter( rSMgr );
 }
@@ -187,7 +179,6 @@ Reference< XInterface > SAL_CALL PlaceWareExportFilter_createInstance( const Ref
 
 // XServiceInfo
 OUString SAL_CALL PlaceWareExportFilter::getImplementationName(  )
-	throw (RuntimeException)
 {
 	return PlaceWareExportFilter_getImplementationName();
 }
@@ -195,7 +186,6 @@ OUString SAL_CALL PlaceWareExportFilter::getImplementationName(  )
 // -----------------------------------------------------------------------------
 
 sal_Bool SAL_CALL PlaceWareExportFilter::supportsService( const OUString& rServiceName )
-	throw (RuntimeException)
 {
     return PlaceWareExportFilter_supportsService( rServiceName );
 }
@@ -203,7 +193,6 @@ sal_Bool SAL_CALL PlaceWareExportFilter::supportsService( const OUString& rServi
 // -----------------------------------------------------------------------------
 
 ::com::sun::star::uno::Sequence< OUString > SAL_CALL PlaceWareExportFilter::getSupportedServiceNames(  )
-	throw (RuntimeException)
 {
     return PlaceWareExportFilter_getSupportedServiceNames();
 }

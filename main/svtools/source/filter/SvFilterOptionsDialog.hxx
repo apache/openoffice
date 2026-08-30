@@ -65,34 +65,23 @@ public:
     virtual void SAL_CALL release() throw();
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any > & aArguments )
-		throw ( com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any > & aArguments );
 
 	// XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName()
-		throw ( com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName )
-		throw ( com::sun::star::uno::RuntimeException );
-    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames()
-		throw ( com::sun::star::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName );
+    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 	// XPropertyAccess
-    virtual com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getPropertyValues()
-        throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL setPropertyValues( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > & aProps )
-        throw ( ::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException,
-                ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getPropertyValues();
+    virtual void SAL_CALL setPropertyValues( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > & aProps );
 
 	// XExecuteDialog
-    virtual sal_Int16 SAL_CALL execute()
-        throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL setTitle( const ::rtl::OUString& aTitle )
-        throw ( ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int16 SAL_CALL execute();
+    virtual void SAL_CALL setTitle( const ::rtl::OUString& aTitle );
 
 	// XExporter
-    virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-		throw ( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 
 };
 

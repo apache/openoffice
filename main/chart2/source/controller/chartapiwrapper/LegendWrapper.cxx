@@ -68,10 +68,8 @@ public:
     WrappedLegendAlignmentProperty();
     virtual ~WrappedLegendAlignmentProperty();
 
-    virtual void setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                                    throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException);
-    virtual Any getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                                    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual void setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const;
+    virtual Any getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const;
 
 protected:
     virtual Any convertInnerToOuterValue( const Any& rInnerValue ) const;
@@ -87,7 +85,6 @@ WrappedLegendAlignmentProperty::~WrappedLegendAlignmentProperty()
 }
 
 Any WrappedLegendAlignmentProperty::getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     if( xInnerPropertySet.is() )
@@ -108,7 +105,6 @@ Any WrappedLegendAlignmentProperty::getPropertyValue( const Reference< beans::XP
 }
 
 void WrappedLegendAlignmentProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     if(xInnerPropertySet.is())
     {
@@ -304,13 +300,11 @@ LegendWrapper::~LegendWrapper()
 
 // ____ XShape ____
 awt::Point SAL_CALL LegendWrapper::getPosition()
-    throw (uno::RuntimeException)
 {
     return m_spChart2ModelContact->GetLegendPosition();
 }
 
 void SAL_CALL LegendWrapper::setPosition( const awt::Point& aPosition )
-    throw (uno::RuntimeException)
 {
     Reference< beans::XPropertySet > xProp( this->getInnerPropertySet() );
     if( xProp.is() )
@@ -326,14 +320,11 @@ void SAL_CALL LegendWrapper::setPosition( const awt::Point& aPosition )
 }
 
 awt::Size SAL_CALL LegendWrapper::getSize()
-    throw (uno::RuntimeException)
 {
     return m_spChart2ModelContact->GetLegendSize();
 }
 
 void SAL_CALL LegendWrapper::setSize( const awt::Size& aSize )
-    throw (beans::PropertyVetoException,
-           uno::RuntimeException)
 {
     Reference< beans::XPropertySet > xProp( this->getInnerPropertySet() );
     if( xProp.is() )
@@ -351,14 +342,12 @@ void SAL_CALL LegendWrapper::setSize( const awt::Size& aSize )
 
 // ____ XShapeDescriptor (base of XShape) ____
 ::rtl::OUString SAL_CALL LegendWrapper::getShapeType()
-    throw (uno::RuntimeException)
 {
     return C2U( "com.sun.star.chart.ChartLegend" );
 }
 
 // ____ XComponent ____
 void SAL_CALL LegendWrapper::dispose()
-    throw (uno::RuntimeException)
 {
     Reference< uno::XInterface > xSource( static_cast< ::cppu::OWeakObject* >( this ) );
     m_aEventListenerContainer.disposeAndClear( lang::EventObject( xSource ) );
@@ -371,14 +360,12 @@ void SAL_CALL LegendWrapper::dispose()
 
 void SAL_CALL LegendWrapper::addEventListener(
     const Reference< lang::XEventListener >& xListener )
-    throw (uno::RuntimeException)
 {
 	m_aEventListenerContainer.addInterface( xListener );
 }
 
 void SAL_CALL LegendWrapper::removeEventListener(
     const Reference< lang::XEventListener >& aListener )
-    throw (uno::RuntimeException)
 {
 	m_aEventListenerContainer.removeInterface( aListener );
 }

@@ -65,8 +65,7 @@ public:
 
     virtual void SAL_CALL execute (
         const ::com::sun::star::uno::Reference<
-            com::sun::star::drawing::framework::XConfiguration>& rxConfiguration)
-        throw (::com::sun::star::uno::RuntimeException);
+            com::sun::star::drawing::framework::XConfiguration>& rxConfiguration);
 
 
     // XNamed
@@ -74,14 +73,12 @@ public:
     /** Return a human readable string representation.  This is used for
         debugging purposes.
     */
-    virtual ::rtl::OUString SAL_CALL getName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName (void);
 
     /** This call is ignored because the XNamed interface is (mis)used to
         give access to a human readable name for debugging purposes.
     */
-    virtual void SAL_CALL setName (const ::rtl::OUString& rName)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setName (const ::rtl::OUString& rName);
 };
 
 } } // end of namespace sd::framework

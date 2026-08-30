@@ -63,10 +63,10 @@ namespace comphelper
 
 		// ................................................................
 		// XPropertyState
-		virtual ::com::sun::star::beans::PropertyState SAL_CALL getPropertyState( const ::rtl::OUString& PropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyState > SAL_CALL getPropertyStates( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL setPropertyToDefault( const ::rtl::OUString& PropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Any SAL_CALL getPropertyDefault( const ::rtl::OUString& aPropertyName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::beans::PropertyState SAL_CALL getPropertyState( const ::rtl::OUString& PropertyName );
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyState > SAL_CALL getPropertyStates( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyName );
+		virtual void SAL_CALL setPropertyToDefault( const ::rtl::OUString& PropertyName );
+		virtual ::com::sun::star::uno::Any SAL_CALL getPropertyDefault( const ::rtl::OUString& aPropertyName );
 
 		// ................................................................
 		// own overridables
@@ -97,7 +97,7 @@ namespace comphelper
 
 	protected:
 		// XInterface
-		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& _rType ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& _rType );
 		// XTypeProvider
 		DECLARE_XTYPEPROVIDER( )
 
@@ -106,7 +106,7 @@ namespace comphelper
 
             @throw UnknownPropertyException if the given name is not a registered property
         */
-		sal_Int32	getHandleForName( const ::rtl::OUString& _rPropertyName ) SAL_THROW( ( ::com::sun::star::beans::UnknownPropertyException ) );
+		sal_Int32	getHandleForName( const ::rtl::OUString& _rPropertyName );
 	};
 
 //.........................................................................

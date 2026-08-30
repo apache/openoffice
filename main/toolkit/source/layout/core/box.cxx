@@ -157,7 +157,7 @@ Box::calculateSize( long nWidth )
 }
 
 awt::Size SAL_CALL
-Box::getMinimumSize() throw(uno::RuntimeException)
+Box::getMinimumSize()
 {
     maRequisition = calculateSize();
     return maRequisition;
@@ -165,14 +165,12 @@ Box::getMinimumSize() throw(uno::RuntimeException)
 
 sal_Bool SAL_CALL
 Box::hasHeightForWidth()
-    throw(uno::RuntimeException)
 {
     return mbHasFlowChildren;
 }
 
 sal_Int32 SAL_CALL
 Box::getHeightForWidth( sal_Int32 nWidth )
-    throw(uno::RuntimeException)
 {
     if ( hasHeightForWidth() )
         return calculateSize( nWidth ).Height;
@@ -181,7 +179,6 @@ Box::getHeightForWidth( sal_Int32 nWidth )
 
 void SAL_CALL
 Box::allocateArea( const awt::Rectangle &newArea )
-    throw (uno::RuntimeException)
 {
     maAllocation = newArea;
     int nVisibleChildren = 0, nExpandChildren = 0;

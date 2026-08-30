@@ -39,7 +39,7 @@ using ::rtl::OUStringBuffer;
 // ============================================================================
 
 ScVbaHyperlink::ScVbaHyperlink( const uno::Sequence< uno::Any >& rArgs,
-        const uno::Reference< uno::XComponentContext >& rxContext ) throw (lang::IllegalArgumentException) :
+        const uno::Reference< uno::XComponentContext >& rxContext ) :
     HyperlinkImpl_BASE( getXSomethingFromArgs< XHelperInterface >( rArgs, 0 ), rxContext ),
     mxCell( getXSomethingFromArgs< table::XCell >( rArgs, 1, false ) ),
     mnType( office::MsoHyperlinkType::msoHyperlinkRange )
@@ -52,7 +52,7 @@ ScVbaHyperlink::ScVbaHyperlink( const uno::Sequence< uno::Any >& rArgs,
 ScVbaHyperlink::ScVbaHyperlink( const uno::Reference< XHelperInterface >& rxAnchor,
         const uno::Reference< uno::XComponentContext >& rxContext,
         const uno::Any& rAddress, const uno::Any& rSubAddress,
-        const uno::Any& rScreenTip, const uno::Any& rTextToDisplay ) throw (uno::RuntimeException) :
+        const uno::Any& rScreenTip, const uno::Any& rTextToDisplay ) :
     HyperlinkImpl_BASE( rxAnchor, rxContext ) // parent of Hyperlink is the anchor object
 {
     // extract parameters, Address must not be empty
@@ -110,52 +110,52 @@ ScVbaHyperlink::~ScVbaHyperlink()
 {
 }
 
-OUString ScVbaHyperlink::getName() throw (uno::RuntimeException)
+OUString ScVbaHyperlink::getName()
 {
     // it seems this attribute is same as TextToDisplay
     return getTextToDisplay();
 }
 
-void ScVbaHyperlink::setName( const OUString& rName ) throw (uno::RuntimeException)
+void ScVbaHyperlink::setName( const OUString& rName )
 {
     setTextToDisplay( rName );
 }
 
-OUString ScVbaHyperlink::getAddress() throw (uno::RuntimeException)
+OUString ScVbaHyperlink::getAddress()
 {
     return getUrlComponents().first;
 }
 
-void ScVbaHyperlink::setAddress( const OUString& rAddress ) throw (uno::RuntimeException)
+void ScVbaHyperlink::setAddress( const OUString& rAddress )
 {
     UrlComponents aUrlComp = getUrlComponents();
     aUrlComp.first = rAddress;
     setUrlComponents( aUrlComp );
 }
 
-OUString ScVbaHyperlink::getSubAddress() throw (uno::RuntimeException)
+OUString ScVbaHyperlink::getSubAddress()
 {
     return getUrlComponents().second;
 }
 
-void ScVbaHyperlink::setSubAddress( const OUString& rSubAddress ) throw (uno::RuntimeException)
+void ScVbaHyperlink::setSubAddress( const OUString& rSubAddress )
 {
     UrlComponents aUrlComp = getUrlComponents();
     aUrlComp.second = rSubAddress;
     setUrlComponents( aUrlComp );
 }
 
-OUString SAL_CALL ScVbaHyperlink::getScreenTip() throw (uno::RuntimeException)
+OUString SAL_CALL ScVbaHyperlink::getScreenTip()
 {
     return maScreenTip;
 }
 
-void SAL_CALL ScVbaHyperlink::setScreenTip( const OUString& rScreenTip ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaHyperlink::setScreenTip( const OUString& rScreenTip )
 {
     maScreenTip = rScreenTip;
 }
 
-OUString ScVbaHyperlink::getTextToDisplay() throw (uno::RuntimeException)
+OUString ScVbaHyperlink::getTextToDisplay()
 {
     ensureTextField();
     OUString aTextToDisplay;
@@ -163,18 +163,18 @@ OUString ScVbaHyperlink::getTextToDisplay() throw (uno::RuntimeException)
     return aTextToDisplay;
 }
 
-void ScVbaHyperlink::setTextToDisplay( const OUString& rTextToDisplay ) throw (uno::RuntimeException)
+void ScVbaHyperlink::setTextToDisplay( const OUString& rTextToDisplay )
 {
     ensureTextField();
     mxTextField->setPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM( "Representation" ) ), uno::Any( rTextToDisplay ) );
 }
 
-sal_Int32 SAL_CALL ScVbaHyperlink::getType() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaHyperlink::getType()
 {
     return mnType;
 }
 
-uno::Reference< excel::XRange > SAL_CALL ScVbaHyperlink::getRange() throw (uno::RuntimeException)
+uno::Reference< excel::XRange > SAL_CALL ScVbaHyperlink::getRange()
 {
     if( mnType == office::MsoHyperlinkType::msoHyperlinkRange )
     {
@@ -193,7 +193,7 @@ uno::Reference< excel::XRange > SAL_CALL ScVbaHyperlink::getRange() throw (uno::
     throw uno::RuntimeException();
 }
 
-uno::Reference< msforms::XShape > SAL_CALL ScVbaHyperlink::getShape() throw (uno::RuntimeException)
+uno::Reference< msforms::XShape > SAL_CALL ScVbaHyperlink::getShape()
 {
     // error if called at a range Hyperlink object
     return uno::Reference< msforms::XShape >( getParent(), uno::UNO_QUERY_THROW );
@@ -203,13 +203,13 @@ VBAHELPER_IMPL_XHELPERINTERFACE( ScVbaHyperlink, "ooo.vba.excel.Hyperlink" )
 
 // private --------------------------------------------------------------------
 
-void ScVbaHyperlink::ensureTextField() throw (uno::RuntimeException)
+void ScVbaHyperlink::ensureTextField()
 {
     if( !mxTextField.is() )
         throw uno::RuntimeException();
 }
 
-ScVbaHyperlink::UrlComponents ScVbaHyperlink::getUrlComponents() throw (uno::RuntimeException)
+ScVbaHyperlink::UrlComponents ScVbaHyperlink::getUrlComponents()
 {
     ensureTextField();
     OUString aUrl;
@@ -220,7 +220,7 @@ ScVbaHyperlink::UrlComponents ScVbaHyperlink::getUrlComponents() throw (uno::Run
     return UrlComponents( aUrl.copy( 0, nHashPos ), aUrl.copy( nHashPos + 1 ) );
 }
 
-void ScVbaHyperlink::setUrlComponents( const UrlComponents& rUrlComp ) throw (uno::RuntimeException)
+void ScVbaHyperlink::setUrlComponents( const UrlComponents& rUrlComp )
 {
     ensureTextField();
     OUStringBuffer aUrl( rUrlComp.first );

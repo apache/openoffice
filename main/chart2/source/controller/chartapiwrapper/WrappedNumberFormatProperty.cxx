@@ -59,7 +59,6 @@ WrappedNumberFormatProperty::~WrappedNumberFormatProperty()
 }
 
 void WrappedNumberFormatProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Int32 nFormat = 0;
     if( ! (rOuterValue >>= nFormat) )
@@ -81,7 +80,6 @@ void WrappedNumberFormatProperty::setPropertyValue( const Any& rOuterValue, cons
 }
 
 Any WrappedNumberFormatProperty::getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     if( !xInnerPropertySet.is() )
     {
@@ -106,7 +104,6 @@ Any WrappedNumberFormatProperty::getPropertyValue( const Reference< beans::XProp
 }
 
 Any WrappedNumberFormatProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     return uno::makeAny( sal_Int32( 0 ) );
 }
@@ -135,7 +132,6 @@ WrappedLinkNumberFormatProperty::~WrappedLinkNumberFormatProperty()
 }
 
 void WrappedLinkNumberFormatProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     if( !xInnerPropertySet.is() )
     {
@@ -171,7 +167,6 @@ void WrappedLinkNumberFormatProperty::setPropertyValue( const Any& rOuterValue, 
 }
 
 Any WrappedLinkNumberFormatProperty::getPropertyValue( const Reference< beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     if( !xInnerPropertySet.is() )
     {
@@ -183,7 +178,6 @@ Any WrappedLinkNumberFormatProperty::getPropertyValue( const Reference< beans::X
 }
 
 Any WrappedLinkNumberFormatProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     bool bLink = true;
     return uno::makeAny( bLink );

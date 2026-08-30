@@ -374,8 +374,7 @@ private:
                                         ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xPropertySet );
     ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >
                                     FindOrCreateFieldMaster( const sal_Char* pFieldMasterService,
-                                                            const ::rtl::OUString& rFieldMasterName )
-                                                                throw(::com::sun::star::uno::Exception);
+                                                            const ::rtl::OUString& rFieldMasterName );
     ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >       GetDocumentSettings();
 
 public:

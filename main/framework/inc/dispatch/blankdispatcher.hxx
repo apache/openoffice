@@ -83,7 +83,7 @@ class BlankDispatcher   :   // -interfaces  ... are supported by our BaseDispatc
                                                     sal_Bool bIsDefaultDispatcher    );
 		//	XDispatch
         virtual void SAL_CALL dispatch            ( const css::util::URL&                                         aURL        ,
-                                                    const css::uno::Sequence< css::beans::PropertyValue >&        lArguments  ) throw( css::uno::RuntimeException );
+                                                    const css::uno::Sequence< css::beans::PropertyValue >&        lArguments  );
 
     //-------------------------------------------------------------------------------------------------------------
     //  protected methods

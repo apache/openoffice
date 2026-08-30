@@ -39,14 +39,14 @@ namespace connectivity
 			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData >	m_xMetaData;
 
 			virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-			virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+			virtual void impl_refresh();
 		public:
 			OTables(const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData >& _rMetaData,::cppu::OWeakObject& _rParent, ::osl::Mutex& _rMutex,
 				const TStringVector &_rVector) : sdbcx::OCollection(_rParent,_rMetaData->supportsMixedCaseQuotedIdentifiers(),_rMutex,_rVector)
 				,m_xMetaData(_rMetaData)
 			{}
 
-			virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+			virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 
 			// only the name is identical to ::cppu::OComponentHelper
 			virtual void SAL_CALL disposing(void);

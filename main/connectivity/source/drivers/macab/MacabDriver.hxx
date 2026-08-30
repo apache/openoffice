@@ -134,11 +134,11 @@ namespace connectivity
             MacabImplModule               m_aImplModule;
 
         public:
-            static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL Create(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory) throw( ::com::sun::star::uno::Exception );
+            static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL Create(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory);
 
             // XServiceInfo - static versions
-            static ::rtl::OUString getImplementationName_Static(  ) throw(::com::sun::star::uno::RuntimeException);
-            static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw (::com::sun::star::uno::RuntimeException);
+            static ::rtl::OUString getImplementationName_Static(  );
+            static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  );
 
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >&
                     getMSFactory() const { return m_xMSFactory; }
@@ -158,23 +158,23 @@ namespace connectivity
 			virtual void SAL_CALL disposing(void);
 
 			// XServiceInfo
-			virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-			virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-			virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+			virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+			virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+			virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 			// XDriver
-			virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connect( const ::rtl::OUString& url, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& info ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			virtual sal_Bool SAL_CALL acceptsURL( const ::rtl::OUString& url ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sdbc::DriverPropertyInfo > SAL_CALL getPropertyInfo( const ::rtl::OUString& url, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& info ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			virtual sal_Int32 SAL_CALL getMajorVersion() throw(::com::sun::star::uno::RuntimeException);
-			virtual sal_Int32 SAL_CALL getMinorVersion() throw(::com::sun::star::uno::RuntimeException);
+			virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connect( const ::rtl::OUString& url, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& info );
+			virtual sal_Bool SAL_CALL acceptsURL( const ::rtl::OUString& url );
+			virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sdbc::DriverPropertyInfo > SAL_CALL getPropertyInfo( const ::rtl::OUString& url, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& info );
+			virtual sal_Int32 SAL_CALL getMajorVersion();
+			virtual sal_Int32 SAL_CALL getMinorVersion();
 
             // XTerminateListener
-            virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& Event ) throw (::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& Event ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& Event );
+            virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& Event );
 
             // XEventListener
-            virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
         private:
             /** shuts down the library which contains the real implementations

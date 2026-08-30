@@ -71,7 +71,6 @@ inline rtl::OUString getURLStringPart( const CURLU *curlUrl, CURLUPart part, uns
 }
 
 CurlUri::CurlUri( const CURLU * inUri )
-    throw ( DAVException )
     : mURI()
     , mScheme()
     , mUserName()
@@ -103,7 +102,6 @@ CurlUri::CurlUri( const CURLU * inUri )
 }
 
 CurlUri::CurlUri( const rtl::OUString & inUri )
-    throw ( DAVException )
     : mCurlUri( 0 )
     , mURI()
     , mScheme()
@@ -159,7 +157,6 @@ CurlUri::CurlUri( const rtl::OUString & inUri )
 }
 
 CurlUri::CurlUri( const CurlUri &curlUri )
-    throw ( DAVException )
     : mURI()
     , mScheme()
     , mUserName()

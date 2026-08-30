@@ -38,7 +38,7 @@ using ::rtl::OUString;
 
 // ============================================================================
 
-BinaryFilterBase::BinaryFilterBase( const Reference< XComponentContext >& rxContext ) throw( RuntimeException ) :
+BinaryFilterBase::BinaryFilterBase( const Reference< XComponentContext >& rxContext ) :
     FilterBase( rxContext )
 {
 }

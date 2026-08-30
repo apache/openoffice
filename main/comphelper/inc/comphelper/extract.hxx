@@ -79,7 +79,6 @@ inline sal_Bool SAL_CALL enum2int( sal_Int32 & rnEnum, const ::com::sun::star::u
  */
 template< typename E >
 inline void SAL_CALL any2enum( E & eRet, const ::com::sun::star::uno::Any & rAny )
-	throw( ::com::sun::star::lang::IllegalArgumentException )
 {
 	// check for type save enum
 	if (! (rAny >>= eRet))
@@ -130,7 +129,6 @@ inline sal_Bool SAL_CALL extractInterface(
  *
  */
 inline sal_Bool SAL_CALL any2bool( const ::com::sun::star::uno::Any & rAny )
-	throw( ::com::sun::star::lang::IllegalArgumentException )
 {
 	sal_Bool sValue;
 	if ( rAny >>= sValue)

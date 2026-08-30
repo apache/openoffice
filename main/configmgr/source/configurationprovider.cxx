@@ -113,55 +113,45 @@ private:
     virtual void SAL_CALL disposing() { flushModifications(); }
 
     virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException)
     { return configuration_provider::getImplementationName(); }
 
     virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName)
-        throw (css::uno::RuntimeException)
     { return ServiceName == getSupportedServiceNames()[0]; } //TODO
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException)
+    getSupportedServiceNames()
     { return configuration_provider::getSupportedServiceNames(); }
 
     virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance(
-        rtl::OUString const & aServiceSpecifier)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        rtl::OUString const & aServiceSpecifier);
 
     virtual css::uno::Reference< css::uno::XInterface > SAL_CALL
     createInstanceWithArguments(
         rtl::OUString const & ServiceSpecifier,
-        css::uno::Sequence< css::uno::Any > const & Arguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        css::uno::Sequence< css::uno::Any > const & Arguments);
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getAvailableServiceNames() throw (css::uno::RuntimeException);
+    getAvailableServiceNames();
 
-    virtual void SAL_CALL refresh() throw (css::uno::RuntimeException);
+    virtual void SAL_CALL refresh();
 
     virtual void SAL_CALL addRefreshListener(
-        css::uno::Reference< css::util::XRefreshListener > const & l)
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::util::XRefreshListener > const & l);
 
     virtual void SAL_CALL removeRefreshListener(
-        css::uno::Reference< css::util::XRefreshListener > const & l)
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::util::XRefreshListener > const & l);
 
-    virtual void SAL_CALL flush() throw (css::uno::RuntimeException);
+    virtual void SAL_CALL flush();
 
     virtual void SAL_CALL addFlushListener(
-        css::uno::Reference< css::util::XFlushListener > const & l)
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::util::XFlushListener > const & l);
 
     virtual void SAL_CALL removeFlushListener(
-        css::uno::Reference< css::util::XFlushListener > const & l)
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::util::XFlushListener > const & l);
 
-    virtual void SAL_CALL setLocale(css::lang::Locale const & eLocale)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL setLocale(css::lang::Locale const & eLocale);
 
-    virtual css::lang::Locale SAL_CALL getLocale()
-        throw (css::uno::RuntimeException);
+    virtual css::lang::Locale SAL_CALL getLocale();
 
     void flushModifications() const;
 
@@ -171,7 +161,6 @@ private:
 
 css::uno::Reference< css::uno::XInterface > Service::createInstance(
     rtl::OUString const & aServiceSpecifier)
-    throw (css::uno::Exception, css::uno::RuntimeException)
 {
     return createInstanceWithArguments(
         aServiceSpecifier, css::uno::Sequence< css::uno::Any >());
@@ -181,7 +170,6 @@ css::uno::Reference< css::uno::XInterface >
 Service::createInstanceWithArguments(
     rtl::OUString const & ServiceSpecifier,
     css::uno::Sequence< css::uno::Any > const & Arguments)
-    throw (css::uno::Exception, css::uno::RuntimeException)
 {
     rtl::OUString nodepath;
     rtl::OUString locale;
@@ -288,7 +276,6 @@ Service::createInstanceWithArguments(
 }
 
 css::uno::Sequence< rtl::OUString > Service::getAvailableServiceNames()
-    throw (css::uno::RuntimeException)
 {
     css::uno::Sequence< rtl::OUString > names(2);
     names[0] = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(accessServiceName));
@@ -297,7 +284,7 @@ css::uno::Sequence< rtl::OUString > Service::getAvailableServiceNames()
     return names;
 }
 
-void Service::refresh() throw (css::uno::RuntimeException) {
+void Service::refresh() {
     //TODO
     cppu::OInterfaceContainerHelper * cont = rBHelper.getContainer(
         cppu::UnoType< css::util::XRefreshListener >::get());
@@ -309,7 +296,6 @@ void Service::refresh() throw (css::uno::RuntimeException) {
 
 void Service::addRefreshListener(
     css::uno::Reference< css::util::XRefreshListener > const & l)
-    throw (css::uno::RuntimeException)
 {
     rBHelper.addListener(
         cppu::UnoType< css::util::XRefreshListener >::get(), l);
@@ -317,13 +303,12 @@ void Service::addRefreshListener(
 
 void Service::removeRefreshListener(
     css::uno::Reference< css::util::XRefreshListener > const & l)
-    throw (css::uno::RuntimeException)
 {
     rBHelper.removeListener(
         cppu::UnoType< css::util::XRefreshListener >::get(), l);
 }
 
-void Service::flush() throw (css::uno::RuntimeException) {
+void Service::flush() {
     flushModifications();
     cppu::OInterfaceContainerHelper * cont = rBHelper.getContainer(
         cppu::UnoType< css::util::XFlushListener >::get());
@@ -335,28 +320,25 @@ void Service::flush() throw (css::uno::RuntimeException) {
 
 void Service::addFlushListener(
     css::uno::Reference< css::util::XFlushListener > const & l)
-    throw (css::uno::RuntimeException)
 {
     rBHelper.addListener(cppu::UnoType< css::util::XFlushListener >::get(), l);
 }
 
 void Service::removeFlushListener(
     css::uno::Reference< css::util::XFlushListener > const & l)
-    throw (css::uno::RuntimeException)
 {
     rBHelper.removeListener(
         cppu::UnoType< css::util::XFlushListener >::get(), l);
 }
 
 void Service::setLocale(css::lang::Locale const & eLocale)
-    throw (css::uno::RuntimeException)
 {
     osl::MutexGuard guard(lock);
     locale_ = comphelper::Locale(
         eLocale.Language, eLocale.Country, eLocale.Variant).toISO();
 }
 
-css::lang::Locale Service::getLocale() throw (css::uno::RuntimeException) {
+css::lang::Locale Service::getLocale() {
     osl::MutexGuard guard(lock);
     css::lang::Locale loc;
     if (locale_.equalsAsciiL(RTL_CONSTASCII_STRINGPARAM("*"))) {
@@ -400,31 +382,26 @@ private:
 
     virtual css::uno::Reference< css::uno::XInterface > SAL_CALL
     createInstanceWithContext(
-        css::uno::Reference< css::uno::XComponentContext > const & Context)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        css::uno::Reference< css::uno::XComponentContext > const & Context);
 
     virtual css::uno::Reference< css::uno::XInterface > SAL_CALL
     createInstanceWithArgumentsAndContext(
         css::uno::Sequence< css::uno::Any > const & Arguments,
-        css::uno::Reference< css::uno::XComponentContext > const & Context)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        css::uno::Reference< css::uno::XComponentContext > const & Context);
 
     virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException)
     { return configuration_provider::getImplementationName(); }
 
     virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName)
-        throw (css::uno::RuntimeException)
     { return ServiceName == getSupportedServiceNames()[0]; } //TODO
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException)
+    getSupportedServiceNames()
     { return configuration_provider::getSupportedServiceNames(); }
 };
 
 css::uno::Reference< css::uno::XInterface > Factory::createInstanceWithContext(
     css::uno::Reference< css::uno::XComponentContext > const & Context)
-    throw (css::uno::Exception, css::uno::RuntimeException)
 {
     return createInstanceWithArgumentsAndContext(
         css::uno::Sequence< css::uno::Any >(), Context);
@@ -434,7 +411,6 @@ css::uno::Reference< css::uno::XInterface >
 Factory::createInstanceWithArgumentsAndContext(
     css::uno::Sequence< css::uno::Any > const & Arguments,
     css::uno::Reference< css::uno::XComponentContext > const & Context)
-    throw (css::uno::Exception, css::uno::RuntimeException)
 {
     if (Arguments.getLength() == 0) {
         css::uno::Reference< css::uno::XInterface > instance;

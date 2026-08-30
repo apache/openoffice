@@ -152,7 +152,6 @@ void SAL_CALL Acceptor::run()
 
 // XInitialize
 void SAL_CALL Acceptor::initialize( const Sequence<Any>& aArguments )
-	throw( Exception )
 {
 	// prevent multiple initialization
 	ClearableMutexGuard	aGuard(	m_aMutex );
@@ -212,7 +211,6 @@ OUString Acceptor::impl_getImplementationName()
 	return OUString::createFromAscii( implementationName );
 }
 OUString SAL_CALL Acceptor::getImplementationName()
-	throw (RuntimeException)
 {
 	return Acceptor::impl_getImplementationName();
 }
@@ -226,12 +224,10 @@ Sequence<OUString> Acceptor::impl_getSupportedServiceNames()
 	return aSequence;
 }
 Sequence<OUString> SAL_CALL Acceptor::getSupportedServiceNames()
-	throw (RuntimeException)
 {
 	return Acceptor::impl_getSupportedServiceNames();
 }
 sal_Bool SAL_CALL Acceptor::supportsService( const OUString&)
-	throw (RuntimeException)
 {
 	return sal_False;
 }
@@ -258,7 +254,6 @@ AccInstanceProvider::~AccInstanceProvider()
 }
 
 Reference<XInterface> SAL_CALL AccInstanceProvider::getInstance (const OUString& aName )
-        throw ( NoSuchElementException )
 {
 
 	Reference<XInterface> rInstance;

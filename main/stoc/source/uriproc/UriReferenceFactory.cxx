@@ -140,71 +140,54 @@ public:
     {}
 
     virtual rtl::OUString SAL_CALL getUriReference()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getUriReference(); }
 
     virtual sal_Bool SAL_CALL isAbsolute()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.isAbsolute(); }
 
     virtual rtl::OUString SAL_CALL getScheme()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getScheme(); }
 
     virtual rtl::OUString SAL_CALL getSchemeSpecificPart()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getSchemeSpecificPart(); }
 
     virtual sal_Bool SAL_CALL isHierarchical()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.isHierarchical(); }
 
     virtual sal_Bool SAL_CALL hasAuthority()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.hasAuthority(); }
 
     virtual rtl::OUString SAL_CALL getAuthority()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getAuthority(); }
 
     virtual rtl::OUString SAL_CALL getPath()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getPath(); }
 
     virtual sal_Bool SAL_CALL hasRelativePath()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.hasRelativePath(); }
 
     virtual sal_Int32 SAL_CALL getPathSegmentCount()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getPathSegmentCount(); }
 
     virtual rtl::OUString SAL_CALL getPathSegment(sal_Int32 index)
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getPathSegment(index); }
 
     virtual sal_Bool SAL_CALL hasQuery()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.hasQuery(); }
 
     virtual rtl::OUString SAL_CALL getQuery()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getQuery(); }
 
     virtual sal_Bool SAL_CALL hasFragment()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.hasFragment(); }
 
     virtual rtl::OUString SAL_CALL getFragment()
-        throw (com::sun::star::uno::RuntimeException)
     { return m_base.getFragment(); }
 
     virtual void SAL_CALL setFragment(rtl::OUString const & fragment)
-        throw (com::sun::star::uno::RuntimeException)
     { m_base.setFragment(fragment); }
 
     virtual void SAL_CALL clearFragment()
-        throw (com::sun::star::uno::RuntimeException)
     { m_base.clearFragment(); }
 
 private:
@@ -305,26 +288,22 @@ public:
         css::uno::Reference< css::uno::XComponentContext > const & context):
         m_context(context) {}
 
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
 
-    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName)
-        throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName);
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException);
+    getSupportedServiceNames();
 
     virtual css::uno::Reference< css::uri::XUriReference > SAL_CALL
-    parse(rtl::OUString const & uriReference)
-        throw (css::uno::RuntimeException);
+    parse(rtl::OUString const & uriReference);
 
     virtual css::uno::Reference< css::uri::XUriReference > SAL_CALL
     makeAbsolute(
         css::uno::Reference< css::uri::XUriReference > const & baseUriReference,
         css::uno::Reference< css::uri::XUriReference > const & uriReference,
         sal_Bool processSpecialBaseSegments,
-        css::uri::RelativeUriExcessParentSegments excessParentSegments)
-        throw (css::uno::RuntimeException);
+        css::uri::RelativeUriExcessParentSegments excessParentSegments);
 
     virtual css::uno::Reference< css::uri::XUriReference > SAL_CALL
     makeRelative(
@@ -332,8 +311,7 @@ public:
         css::uno::Reference< css::uri::XUriReference > const & uriReference,
         sal_Bool preferAuthorityOverRelativePath,
         sal_Bool preferAbsoluteOverRelativePath,
-        sal_Bool encodeRetainedSpecialSegments)
-        throw (css::uno::RuntimeException);
+        sal_Bool encodeRetainedSpecialSegments);
 
 private:
     Factory(Factory &); // not implemented
@@ -349,26 +327,23 @@ private:
 };
 
 rtl::OUString Factory::getImplementationName()
-    throw (css::uno::RuntimeException)
 {
     return stoc_services::UriReferenceFactory::getImplementationName();
 }
 
 sal_Bool Factory::supportsService(rtl::OUString const & serviceName)
-    throw (css::uno::RuntimeException)
 {
     return stoc::uriproc::supportsService(
         getSupportedServiceNames(), serviceName);
 }
 
 css::uno::Sequence< rtl::OUString > Factory::getSupportedServiceNames()
-    throw (css::uno::RuntimeException)
 {
     return stoc_services::UriReferenceFactory::getSupportedServiceNames();
 }
 
 css::uno::Reference< css::uri::XUriReference > Factory::parse(
-    rtl::OUString const & uriReference) throw (css::uno::RuntimeException)
+    rtl::OUString const & uriReference)
 {
     sal_Int32 fragment = uriReference.indexOf('#');
     if (fragment == -1) {
@@ -451,7 +426,6 @@ css::uno::Reference< css::uri::XUriReference > Factory::makeAbsolute(
     css::uno::Reference< css::uri::XUriReference > const & uriReference,
     sal_Bool processSpecialBaseSegments,
     css::uri::RelativeUriExcessParentSegments excessParentSegments)
-    throw (css::uno::RuntimeException)
 {
     if (!baseUriReference.is() || !baseUriReference->isAbsolute()
         || !baseUriReference->isHierarchical() || !uriReference.is()) {
@@ -567,7 +541,6 @@ css::uno::Reference< css::uri::XUriReference > Factory::makeRelative(
     sal_Bool preferAuthorityOverRelativePath,
     sal_Bool preferAbsoluteOverRelativePath,
     sal_Bool encodeRetainedSpecialSegments)
-    throw (css::uno::RuntimeException)
 {
     if (!baseUriReference.is() || !baseUriReference->isAbsolute()
         || !baseUriReference->isHierarchical() || !uriReference.is()) {
@@ -695,7 +668,6 @@ namespace stoc_services { namespace UriReferenceFactory {
 
 css::uno::Reference< css::uno::XInterface > create(
     css::uno::Reference< css::uno::XComponentContext > const & context)
-    SAL_THROW((css::uno::Exception))
 {
     try {
         return static_cast< cppu::OWeakObject * >(new Factory(context));

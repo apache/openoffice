@@ -98,28 +98,28 @@ class SfxTerminateListener_Impl : public ::cppu::WeakImplHelper2< XTerminateList
 public:
 
     // XTerminateListener
-    virtual void SAL_CALL queryTermination( const EventObject& aEvent ) throw( TerminationVetoException, RuntimeException );
-    virtual void SAL_CALL notifyTermination( const EventObject& aEvent ) throw( RuntimeException );
-    virtual void SAL_CALL disposing( const EventObject& Source ) throw( RuntimeException );
+    virtual void SAL_CALL queryTermination( const EventObject& aEvent );
+    virtual void SAL_CALL notifyTermination( const EventObject& aEvent );
+    virtual void SAL_CALL disposing( const EventObject& Source );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& sServiceName ) throw (RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& sServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 };
 
-void SAL_CALL SfxTerminateListener_Impl::disposing( const EventObject& ) throw( RuntimeException )
+void SAL_CALL SfxTerminateListener_Impl::disposing( const EventObject& )
 {
 }
 
-void SAL_CALL SfxTerminateListener_Impl::queryTermination( const EventObject& ) throw(TerminationVetoException, RuntimeException )
+void SAL_CALL SfxTerminateListener_Impl::queryTermination( const EventObject& )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     if ( !SFX_APP()->QueryExit_Impl() )
         throw TerminationVetoException();
 }
 
-void SAL_CALL SfxTerminateListener_Impl::notifyTermination( const EventObject& aEvent ) throw(RuntimeException )
+void SAL_CALL SfxTerminateListener_Impl::notifyTermination( const EventObject& aEvent )
 {
     static ::rtl::OUString SERVICE_GLOBALEVENTBROADCASTER = ::rtl::OUString::createFromAscii("com.sun.star.frame.GlobalEventBroadcaster");
     static ::rtl::OUString EVENT_QUIT_APP                 = ::rtl::OUString::createFromAscii("OnCloseApp");
@@ -149,13 +149,13 @@ void SAL_CALL SfxTerminateListener_Impl::notifyTermination( const EventObject& a
 	Application::Quit();
 }
 
-::rtl::OUString SAL_CALL SfxTerminateListener_Impl::getImplementationName() throw (RuntimeException)
+::rtl::OUString SAL_CALL SfxTerminateListener_Impl::getImplementationName()
 {
     static const ::rtl::OUString IMPLNAME = ::rtl::OUString::createFromAscii("com.sun.star.comp.sfx2.SfxTerminateListener");
     return IMPLNAME;
 }
 
-::sal_Bool SAL_CALL SfxTerminateListener_Impl::supportsService( const ::rtl::OUString& sServiceName ) throw (RuntimeException)
+::sal_Bool SAL_CALL SfxTerminateListener_Impl::supportsService( const ::rtl::OUString& sServiceName )
 {
     Sequence< ::rtl::OUString > lNames  = getSupportedServiceNames();
     ::sal_Int32                 c       = lNames.getLength();
@@ -170,7 +170,7 @@ void SAL_CALL SfxTerminateListener_Impl::notifyTermination( const EventObject& a
     return sal_False;
 }
 
-Sequence< ::rtl::OUString > SAL_CALL SfxTerminateListener_Impl::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL SfxTerminateListener_Impl::getSupportedServiceNames()
 {
     // Note: That service  does not really exists .-)
     // But this implementation is not thought to be registered really within our service.rdb.

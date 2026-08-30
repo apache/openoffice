@@ -35,7 +35,7 @@ namespace accessibility
 {
 	namespace
 	{
-		void checkIndex_Impl( sal_Int32 _nIndex, const ::rtl::OUString& _sText ) throw (::com::sun::star::lang::IndexOutOfBoundsException)
+		void checkIndex_Impl( sal_Int32 _nIndex, const ::rtl::OUString& _sText )
 		{
 			if ( _nIndex >= _sText.getLength() )
 				throw ::com::sun::star::lang::IndexOutOfBoundsException();
@@ -108,7 +108,6 @@ namespace accessibility
 	/** Queries for a new interface. */
 	::com::sun::star::uno::Any SAL_CALL AccessibleBrowseBoxTableCell::queryInterface(
 			const ::com::sun::star::uno::Type& rType )
-		throw ( ::com::sun::star::uno::RuntimeException )
 	{
 		Any aRet = AccessibleBrowseBoxCell::queryInterface(rType);
 		if ( !aRet.hasValue() )
@@ -128,7 +127,7 @@ namespace accessibility
 		AccessibleBrowseBoxCell::release();
 	}
 
-	::com::sun::star::awt::Rectangle SAL_CALL AccessibleBrowseBoxTableCell::getCharacterBounds( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+	::com::sun::star::awt::Rectangle SAL_CALL AccessibleBrowseBoxTableCell::getCharacterBounds( sal_Int32 nIndex )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
@@ -147,7 +146,7 @@ namespace accessibility
 		return aRect;
 	}
 
-	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getIndexAtPoint( const ::com::sun::star::awt::Point& _aPoint ) throw (RuntimeException)
+	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getIndexAtPoint( const ::com::sun::star::awt::Point& _aPoint )
 	{
 		//! TODO CTL bidi
 		// DBG_ASSERT(0,"Need to be done by base class!");
@@ -162,14 +161,12 @@ namespace accessibility
 			The name of this class.
 	*/
 	::rtl::OUString SAL_CALL AccessibleBrowseBoxTableCell::getImplementationName()
-		throw ( ::com::sun::star::uno::RuntimeException )
 	{
 		return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.svtools.AccessibleBrowseBoxTableCell" ) );
 	}
 
 	/** @return  The count of visible children. */
 	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getAccessibleChildCount()
-		throw ( ::com::sun::star::uno::RuntimeException )
 	{
 		return 0;
 	}
@@ -178,8 +175,6 @@ namespace accessibility
 	::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessible > SAL_CALL
 		AccessibleBrowseBoxTableCell::getAccessibleChild( sal_Int32 )
-			throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-					::com::sun::star::uno::RuntimeException )
 	{
 		throw ::com::sun::star::lang::IndexOutOfBoundsException();
 	}
@@ -214,7 +209,7 @@ namespace accessibility
 	// XAccessible ------------------------------------------------------------
 
 	/** @return  The XAccessibleContext interface of this object. */
-	Reference< XAccessibleContext > SAL_CALL AccessibleBrowseBoxTableCell::getAccessibleContext() throw ( RuntimeException )
+	Reference< XAccessibleContext > SAL_CALL AccessibleBrowseBoxTableCell::getAccessibleContext()
 	{
 		ensureIsAlive();
 		return this;
@@ -223,7 +218,6 @@ namespace accessibility
 	// XAccessibleContext -----------------------------------------------------
 
 	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getAccessibleIndexInParent()
-			throw ( ::com::sun::star::uno::RuntimeException )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
@@ -232,11 +226,11 @@ namespace accessibility
         return /*BBINDEX_FIRSTCONTROL*/ m_nOffset + ( getRowPos() * mpBrowseBox->GetColumnCount() ) + getColumnPos();
 	}
 
-	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getCaretPosition(  ) throw (::com::sun::star::uno::RuntimeException)
+	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getCaretPosition(  )
 	{
 		return -1;
 	}
-	sal_Bool SAL_CALL AccessibleBrowseBoxTableCell::setCaretPosition ( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+	sal_Bool SAL_CALL AccessibleBrowseBoxTableCell::setCaretPosition ( sal_Int32 nIndex )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
@@ -246,13 +240,13 @@ namespace accessibility
 
 		return sal_False;
 	}
-	sal_Unicode SAL_CALL AccessibleBrowseBoxTableCell::getCharacter( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+	sal_Unicode SAL_CALL AccessibleBrowseBoxTableCell::getCharacter( sal_Int32 nIndex )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getCharacter( nIndex );
 	}
-	::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL AccessibleBrowseBoxTableCell::getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+	::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL AccessibleBrowseBoxTableCell::getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
@@ -264,32 +258,32 @@ namespace accessibility
 
 		return ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >();
 	}
-	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getCharacterCount(  ) throw (::com::sun::star::uno::RuntimeException)
+	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getCharacterCount(  )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getCharacterCount(  );
 	}
 
-	::rtl::OUString SAL_CALL AccessibleBrowseBoxTableCell::getSelectedText(  ) throw (::com::sun::star::uno::RuntimeException)
+	::rtl::OUString SAL_CALL AccessibleBrowseBoxTableCell::getSelectedText(  )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getSelectedText(  );
 	}
-	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getSelectionStart(  ) throw (::com::sun::star::uno::RuntimeException)
+	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getSelectionStart(  )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getSelectionStart(  );
 	}
-	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getSelectionEnd(  ) throw (::com::sun::star::uno::RuntimeException)
+	sal_Int32 SAL_CALL AccessibleBrowseBoxTableCell::getSelectionEnd(  )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getSelectionEnd(  );
 	}
-	sal_Bool SAL_CALL AccessibleBrowseBoxTableCell::setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+	sal_Bool SAL_CALL AccessibleBrowseBoxTableCell::setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
@@ -298,37 +292,37 @@ namespace accessibility
 
 		return sal_False;
 	}
-	::rtl::OUString SAL_CALL AccessibleBrowseBoxTableCell::getText(  ) throw (::com::sun::star::uno::RuntimeException)
+	::rtl::OUString SAL_CALL AccessibleBrowseBoxTableCell::getText(  )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getText(  );
 	}
-	::rtl::OUString SAL_CALL AccessibleBrowseBoxTableCell::getTextRange( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+	::rtl::OUString SAL_CALL AccessibleBrowseBoxTableCell::getTextRange( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getTextRange( nStartIndex, nEndIndex );
 	}
-    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleBrowseBoxTableCell::getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleBrowseBoxTableCell::getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getTextAtIndex( nIndex ,aTextType);
 	}
-    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleBrowseBoxTableCell::getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleBrowseBoxTableCell::getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getTextBeforeIndex( nIndex ,aTextType);
 	}
-    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleBrowseBoxTableCell::getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleBrowseBoxTableCell::getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
 		return OCommonAccessibleText::getTextBehindIndex( nIndex ,aTextType);
 	}
-	sal_Bool SAL_CALL AccessibleBrowseBoxTableCell::copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+	sal_Bool SAL_CALL AccessibleBrowseBoxTableCell::copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
 	{
 		BBSolarGuard aSolarGuard;
 		::osl::MutexGuard aGuard( getOslMutex() );
@@ -339,7 +333,7 @@ namespace accessibility
 		//!!! don't know how to put a string into the clipboard
 		return sal_False;
 	}
-	void AccessibleBrowseBoxTableCell::disposing( const EventObject& _rSource ) throw (RuntimeException)
+	void AccessibleBrowseBoxTableCell::disposing( const EventObject& _rSource )
 	{
         	if ( _rSource.Source == mxParent )
         	{

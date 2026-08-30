@@ -312,7 +312,6 @@ void PresenterNotesView::SetSlide (const Reference<drawing::XDrawPage>& rxNotesP
 //-----  lang::XEventListener -------------------------------------------------
 
 void SAL_CALL PresenterNotesView::disposing (const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     if (rEventObject.Source == mxParentWindow)
         mxParentWindow = NULL;
@@ -324,7 +323,6 @@ void SAL_CALL PresenterNotesView::disposing (const lang::EventObject& rEventObje
 //----- XWindowListener -------------------------------------------------------
 
 void SAL_CALL PresenterNotesView::windowResized (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     Layout();
@@ -334,7 +332,6 @@ void SAL_CALL PresenterNotesView::windowResized (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterNotesView::windowMoved (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -343,7 +340,6 @@ void SAL_CALL PresenterNotesView::windowMoved (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterNotesView::windowShown (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -352,7 +348,6 @@ void SAL_CALL PresenterNotesView::windowShown (const lang::EventObject& rEvent)
 
 
 void SAL_CALL PresenterNotesView::windowHidden (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -363,7 +358,6 @@ void SAL_CALL PresenterNotesView::windowHidden (const lang::EventObject& rEvent)
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterNotesView::windowPaint (const awt::PaintEvent& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -380,7 +374,6 @@ void SAL_CALL PresenterNotesView::windowPaint (const awt::PaintEvent& rEvent)
 //----- XResourceId -----------------------------------------------------------
 
 Reference<XResourceId> SAL_CALL PresenterNotesView::getResourceId (void)
-    throw (RuntimeException)
 {
     return mxViewId;
 }
@@ -389,7 +382,6 @@ Reference<XResourceId> SAL_CALL PresenterNotesView::getResourceId (void)
 
 
 sal_Bool SAL_CALL PresenterNotesView::isAnchorOnly (void)
-    throw (RuntimeException)
 {
     return false;
 }
@@ -400,7 +392,6 @@ sal_Bool SAL_CALL PresenterNotesView::isAnchorOnly (void)
 //----- XDrawView -------------------------------------------------------------
 
 void SAL_CALL PresenterNotesView::setCurrentPage (const Reference<drawing::XDrawPage>& rxSlide)
-    throw (RuntimeException)
 {
     // Get the associated notes page.
     mxCurrentNotesPage = NULL;
@@ -421,7 +412,6 @@ void SAL_CALL PresenterNotesView::setCurrentPage (const Reference<drawing::XDraw
 
 
 Reference<drawing::XDrawPage> SAL_CALL PresenterNotesView::getCurrentPage (void)
-    throw (RuntimeException)
 {
     return NULL;
 }
@@ -432,7 +422,6 @@ Reference<drawing::XDrawPage> SAL_CALL PresenterNotesView::getCurrentPage (void)
 //----- XKeyListener ----------------------------------------------------------
 
 void SAL_CALL PresenterNotesView::keyPressed (const awt::KeyEvent& rEvent)
-    throw (RuntimeException)
 {
     switch (rEvent.KeyCode)
     {
@@ -477,7 +466,6 @@ void SAL_CALL PresenterNotesView::keyPressed (const awt::KeyEvent& rEvent)
 
 
 void SAL_CALL PresenterNotesView::keyReleased (const awt::KeyEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -787,7 +775,6 @@ void PresenterNotesView::UpdateScrollBar (void)
 
 
 void PresenterNotesView::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

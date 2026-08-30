@@ -79,44 +79,44 @@ namespace framework
             ~UIConfigurationManagerImpl();
 
             // XComponent
-            void dispose() throw (::com::sun::star::uno::RuntimeException);
-            void addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-            void removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+            void dispose();
+            void addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+            void removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
             // XInitialization
-            void initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+            void initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
             // XUIConfiguration
-            void addConfigurationListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
-            void removeConfigurationListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
+            void addConfigurationListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& Listener );
+            void removeConfigurationListener( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& Listener );
 
             // XUIConfigurationManager
-            void reset() throw (::com::sun::star::uno::RuntimeException);
-            ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > > getUIElementsInfo( sal_Int16 ElementType ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-            ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer > createSettings(  ) throw (::com::sun::star::uno::RuntimeException);
-            sal_Bool hasSettings( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-            ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess > getSettings( const ::rtl::OUString& ResourceURL, sal_Bool bWriteable ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-            void replaceSettings( const ::rtl::OUString& ResourceURL, const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& aNewData ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException);
-            void removeSettings( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException);
-            void insertSettings( const ::rtl::OUString& NewResourceURL, const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& aNewData ) throw (::com::sun::star::container::ElementExistException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException);
-            ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > getImageManager() throw (::com::sun::star::uno::RuntimeException);
-            ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > getShortCutManager() throw (::com::sun::star::uno::RuntimeException);
-            ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > getEventsManager() throw (::com::sun::star::uno::RuntimeException);
+            void reset();
+            ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > > getUIElementsInfo( sal_Int16 ElementType );
+            ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer > createSettings(  );
+            sal_Bool hasSettings( const ::rtl::OUString& ResourceURL );
+            ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess > getSettings( const ::rtl::OUString& ResourceURL, sal_Bool bWriteable );
+            void replaceSettings( const ::rtl::OUString& ResourceURL, const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& aNewData );
+            void removeSettings( const ::rtl::OUString& ResourceURL );
+            void insertSettings( const ::rtl::OUString& NewResourceURL, const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& aNewData );
+            ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > getImageManager();
+            ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > getShortCutManager();
+            ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > getEventsManager();
 
             // XUIConfigurationManagerImpl
-            sal_Bool isDefaultSettings( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-            ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess > getDefaultSettings( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+            sal_Bool isDefaultSettings( const ::rtl::OUString& ResourceURL );
+            ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess > getDefaultSettings( const ::rtl::OUString& ResourceURL );
 
             // XUIConfigurationPersistence
-            void reload() throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-            void store() throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-            void storeToStorage( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-            sal_Bool isModified() throw (::com::sun::star::uno::RuntimeException);
-            sal_Bool isReadOnly() throw (::com::sun::star::uno::RuntimeException);
+            void reload();
+            void store();
+            void storeToStorage( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage );
+            sal_Bool isModified();
+            sal_Bool isReadOnly();
 
             // XUIConfigurationStorage
-            void setStorage( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage ) throw (::com::sun::star::uno::RuntimeException);
-            sal_Bool hasStorage() throw (::com::sun::star::uno::RuntimeException);
+            void setStorage( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage );
+            sal_Bool hasStorage();
 
             enum Layer
             {

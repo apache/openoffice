@@ -60,27 +60,27 @@ public:
     virtual ~VCLXTopWindow_Base();
 
     // XInterface equivalents
-    ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
     // XTypeProvider equivalents
-    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
 
     // ::com::sun::star::awt::XSystemDependentWindowPeer
-    ::com::sun::star::uno::Any SAL_CALL getWindowHandle( const ::com::sun::star::uno::Sequence< sal_Int8 >& ProcessId, sal_Int16 SystemType ) throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Any SAL_CALL getWindowHandle( const ::com::sun::star::uno::Sequence< sal_Int8 >& ProcessId, sal_Int16 SystemType );
 
     // ::com::sun::star::awt::XTopWindow
-    void SAL_CALL addTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener ) throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL removeTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener ) throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL toFront() throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL toBack() throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL setMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMenuBar >& xMenu ) throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL addTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener );
+    void SAL_CALL removeTopWindowListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindowListener >& rxListener );
+    void SAL_CALL toFront();
+    void SAL_CALL toBack();
+    void SAL_CALL setMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XMenuBar >& xMenu );
 
     // XTopWindow2
-    virtual ::sal_Bool SAL_CALL getIsMaximized() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setIsMaximized( ::sal_Bool _ismaximized ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getIsMinimized() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setIsMinimized( ::sal_Bool _isminimized ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getDisplay() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setDisplay( ::sal_Int32 _display ) throw (::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IndexOutOfBoundsException);
+    virtual ::sal_Bool SAL_CALL getIsMaximized();
+    virtual void SAL_CALL setIsMaximized( ::sal_Bool _ismaximized );
+    virtual ::sal_Bool SAL_CALL getIsMinimized();
+    virtual void SAL_CALL setIsMinimized( ::sal_Bool _isminimized );
+    virtual ::sal_Int32 SAL_CALL getDisplay();
+    virtual void SAL_CALL setDisplay( ::sal_Int32 _display );
 };
 
 //	----------------------------------------------------
@@ -100,13 +100,13 @@ public:
 	~VCLXTopWindow();
 
 	// ::com::sun::star::uno::XInterface
-    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 	void						SAL_CALL acquire() throw()	{ OWeakObject::acquire(); }
 	void						SAL_CALL release() throw()	{ OWeakObject::release(); }
 
 	// ::com::sun::star::lang::XTypeProvider
-	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >	SAL_CALL getTypes() throw(::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Sequence< sal_Int8 >						SAL_CALL getImplementationId() throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >	SAL_CALL getTypes();
+	::com::sun::star::uno::Sequence< sal_Int8 >						SAL_CALL getImplementationId();
 
     static void     ImplGetPropertyIds( std::list< sal_uInt16 > &aIds );
     virtual void    GetPropertyIds( std::list< sal_uInt16 > &aIds ) { return ImplGetPropertyIds( aIds ); }

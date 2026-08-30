@@ -99,78 +99,54 @@ public:
 protected:
     // ____ XPropertySet ____
     /// @see ::com::sun::star::beans::XPropertySet
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
     /// @see ::comphelper::OPropertySetHelper
 	virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
     /// @see ::comphelper::OPropertyArrayUsageHelper
 	virtual ::cppu::IPropertyArrayHelper* createArrayHelper() const;
 
     // ____ XDataSequence ____
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > SAL_CALL getData()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getSourceRangeRepresentation()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > SAL_CALL getData();
+    virtual ::rtl::OUString SAL_CALL getSourceRangeRepresentation();
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL generateLabel(
-        ::com::sun::star::chart2::data::LabelOrigin nLabelOrigin )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getNumberFormatKeyByIndex( ::sal_Int32 nIndex )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::chart2::data::LabelOrigin nLabelOrigin );
+    virtual ::sal_Int32 SAL_CALL getNumberFormatKeyByIndex( ::sal_Int32 nIndex );
 
     // ____ XNumericalDataSequence ____
     /// @see ::com::sun::star::chart::data::XNumericalDataSequence
-    virtual ::com::sun::star::uno::Sequence< double > SAL_CALL getNumericalData() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< double > SAL_CALL getNumericalData();
 
     // ____ XTextualDataSequence ____
     /// @see ::com::sun::star::chart::data::XTextualDataSequence
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getTextualData() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getTextualData();
 
     // ____ XIndexReplace ____
-    virtual void SAL_CALL replaceByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL replaceByIndex( ::sal_Int32 Index, const ::com::sun::star::uno::Any& Element );
 
     // ____ XIndexAccess (base of XIndexReplace) ____
-    virtual ::sal_Int32 SAL_CALL getCount()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getCount();
+    virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( ::sal_Int32 Index );
 
     // ____ XElementAccess (base of XIndexAccess) ____
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasElements()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+    virtual ::sal_Bool SAL_CALL hasElements();
 
     // ____ XNamed (for setting a new range representation) ____
-    virtual ::rtl::OUString SAL_CALL getName()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setName( const ::rtl::OUString& aName )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const ::rtl::OUString& aName );
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     // ____ XModifiable ____
-    virtual ::sal_Bool SAL_CALL isModified()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setModified( ::sal_Bool bModified )
-        throw (::com::sun::star::beans::PropertyVetoException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL isModified();
+    virtual void SAL_CALL setModified( ::sal_Bool bModified );
 
     // ____ XModifyBroadcaster (base of XModifiable) ____
     virtual void SAL_CALL addModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
     virtual void SAL_CALL removeModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
     void fireModifyEvent();
 

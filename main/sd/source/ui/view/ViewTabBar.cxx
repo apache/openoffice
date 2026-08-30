@@ -280,7 +280,6 @@ void ViewTabBar::disposing (void)
 
 void SAL_CALL  ViewTabBar::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Type.equals(FrameworkHelper::msResourceActivationEvent)
         && rEvent.ResourceId->getResourceURL().match(FrameworkHelper::msViewURLPrefix)
@@ -297,7 +296,6 @@ void SAL_CALL  ViewTabBar::notifyConfigurationChange (
 
 void SAL_CALL ViewTabBar::disposing(
     const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if (rEvent.Source == mxConfigurationController)
     {
@@ -314,7 +312,6 @@ void SAL_CALL ViewTabBar::disposing(
 void SAL_CALL ViewTabBar::addTabBarButtonAfter (
     const TabBarButton& rButton,
     const TabBarButton& rAnchor)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     const ::vos::OGuard aSolarGuard (Application::GetSolarMutex());
     AddTabBarButton(rButton, rAnchor);
@@ -324,7 +321,6 @@ void SAL_CALL ViewTabBar::addTabBarButtonAfter (
 
 
 void SAL_CALL ViewTabBar::appendTabBarButton (const TabBarButton& rButton)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     const ::vos::OGuard aSolarGuard (Application::GetSolarMutex());
     AddTabBarButton(rButton);
@@ -333,7 +329,6 @@ void SAL_CALL ViewTabBar::appendTabBarButton (const TabBarButton& rButton)
 
 
 void SAL_CALL ViewTabBar::removeTabBarButton (const TabBarButton& rButton)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     const ::vos::OGuard aSolarGuard (Application::GetSolarMutex());
     RemoveTabBarButton(rButton);
@@ -343,7 +338,6 @@ void SAL_CALL ViewTabBar::removeTabBarButton (const TabBarButton& rButton)
 
 
 sal_Bool SAL_CALL ViewTabBar::hasTabBarButton (const TabBarButton& rButton)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     const ::vos::OGuard aSolarGuard (Application::GetSolarMutex());
     return HasTabBarButton(rButton);
@@ -353,7 +347,6 @@ sal_Bool SAL_CALL ViewTabBar::hasTabBarButton (const TabBarButton& rButton)
 
 
 Sequence<TabBarButton> SAL_CALL ViewTabBar::getTabBarButtons (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     const ::vos::OGuard aSolarGuard (Application::GetSolarMutex());
     return GetTabBarButtons();
@@ -365,7 +358,6 @@ Sequence<TabBarButton> SAL_CALL ViewTabBar::getTabBarButtons (void)
 //----- XResource -------------------------------------------------------------
 
 Reference<XResourceId> SAL_CALL ViewTabBar::getResourceId (void)
-    throw (RuntimeException)
 {
     return mxViewTabBarId;
 }
@@ -374,7 +366,6 @@ Reference<XResourceId> SAL_CALL ViewTabBar::getResourceId (void)
 
 
 sal_Bool SAL_CALL ViewTabBar::isAnchorOnly (void)
-    throw (RuntimeException)
 {
     return false;
 }
@@ -404,7 +395,6 @@ const Sequence<sal_Int8>& ViewTabBar::getUnoTunnelId (void)
 
 
 sal_Int64 SAL_CALL ViewTabBar::getSomething (const Sequence<sal_Int8>& rId)
-    throw (RuntimeException)
 {
     sal_Int64 nResult = 0;
 

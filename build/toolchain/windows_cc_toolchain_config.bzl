@@ -826,6 +826,22 @@ def _impl(ctx):
             # Symbols/PDBs/-Od are unaffected.  Makes the per-module
             # /D_HAS_ITERATOR_DEBUGGING=0 copies redundant.
             "/D_HAS_ITERATOR_DEBUGGING=0",
+            # "the compiler is MSVC".  Upstream sets this for EVERY translation
+            # unit — solenv/inc/settings.mk:878,
+            #   CDEFS= -D$(OS) -D$(GUI) -D$(GVER) -D$(COM) -D$(CVER) …
+            # where $(COM) is MSC — and this toolchain already borrows two other
+            # defines from that same line ($(CPUNAME) via arch_defines, and
+            # CPPU_ENV).  $(COM) was the one that got missed, so MSC was set in
+            # only 10 module BUILD files and three modules that TEST it did not
+            # get it: tools, vcl and svl silently took the non-Windows branch.
+            # The live consequence was tools/source/fsys/dirent.cxx building temp
+            # filenames from clock()+getpid() instead of GetTickCount()+_getpid();
+            # it is also the only reason the modern toolchain ever needed <time.h>
+            # there, since with MSC defined Windows never compiles that line.
+            # Hardcoded rather than an attribute because it identifies the
+            # COMPILER, and all toolchains sharing this config rule are MSVC —
+            # unlike arch_defines (per target CPU) or crt_defines (per CRT).
+            "/DMSC",
             "/bigobj",
             "/Zm500",
             "/EHsc",
@@ -846,6 +862,20 @@ def _impl(ctx):
         # wntmsci11.mk/wntmscx.mk), which keeps WIN32 on both arches.
         for arch_def in ctx.attr.arch_defines:
             default_compile_flags_list.append("/D" + arch_def)
+
+        # CRT-shim defines, injected the same way and for the same reason: they
+        # are a property of the C RUNTIME, not of any module.  VS2008's MSVCRT
+        # exports only _snprintf/_snwprintf, so the whole tree is compiled with
+        # snprintf mapped onto them — 134 identical copies across 91 BUILD files.
+        # A modern UCRT declares the real, standard snprintf, and stdio.h refuses
+        # to be compiled with the name taken:
+        #   fatal error C1189: Macro definition of snprintf conflicts with
+        #                      Standard Library function declaration
+        # So this cannot stay in the modules — a module BUILD cannot know which
+        # CRT it is being compiled against, while the toolchain is exactly the
+        # thing that does.  VC9 sets it; the modern toolchain leaves it empty.
+        for crt_def in ctx.attr.crt_defines:
+            default_compile_flags_list.append("/D" + crt_def)
 
         # MASM flags differ by arch: the x86 ml.exe takes /c /coff /Cx (/Cx keeps
         # PUBLIC symbol case, /coff emits COFF).  The x64 ml64.exe REJECTS both
@@ -1837,6 +1867,9 @@ cc_toolchain_config = rule(
         "abi_libc_version": attr.string(),
         "abi_version": attr.string(),
         "arch_defines": attr.string_list(default = []),
+        # CRT-shim defines (see the loop that consumes this).  Empty by default so
+        # a toolchain on a standards-conforming CRT gets nothing.
+        "crt_defines": attr.string_list(default = []),
         "archiver_flags": attr.string_list(default = []),
         "all_compile_flags": attr.string_list(),
         "compiler": attr.string(),

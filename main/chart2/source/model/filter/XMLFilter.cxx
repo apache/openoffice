@@ -258,7 +258,6 @@ XMLFilter::~XMLFilter()
 // ____ XFilter ____
 sal_Bool SAL_CALL XMLFilter::filter(
     const Sequence< beans::PropertyValue >& aDescriptor )
-    throw (uno::RuntimeException)
 {
     bool bResult = false;
 
@@ -297,7 +296,6 @@ sal_Bool SAL_CALL XMLFilter::filter(
 }
 
 void SAL_CALL XMLFilter::cancel()
-    throw (uno::RuntimeException)
 {
     // if mutex is locked set "cancel state"
     // note: is currently ignored in filter-method
@@ -310,8 +308,6 @@ void SAL_CALL XMLFilter::cancel()
 // ____ XImporter ____
 void SAL_CALL XMLFilter::setTargetDocument(
     const Reference< lang::XComponent >& Document )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     OSL_ENSURE( ! m_xSourceDoc.is(), "Setting target doc while source doc is set" );
@@ -323,8 +319,6 @@ void SAL_CALL XMLFilter::setTargetDocument(
 // ____ XExporter ____
 void SAL_CALL XMLFilter::setSourceDocument(
     const Reference< lang::XComponent >& Document )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     MutexGuard aGuard( m_aMutex );
     OSL_ENSURE( ! m_xTargetDoc.is(), "Setting source doc while target doc is set" );

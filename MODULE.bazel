@@ -100,8 +100,9 @@ http_file(
     downloaded_file_path = "junit-4.10.jar",
 )
 
-register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
-register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x86_def")
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x64_def")
+register_toolchains("//build/toolchain:aoo_msvc_vs2019_x64_def")
 
 # Arch-neutral host JDK RUNTIME toolchain.  Registered in the root module so it
 # outranks rules_java's cpu-pinned remote-JDK runtime toolchains; it matches EVERY
@@ -123,9 +124,15 @@ register_toolchains("//build/toolchain/java:host_jdk_runtime_toolchain")
 #     this, x86 `bazel test` fails "no matching default_test_toolchain_type").  Only the
 #     test-run action lands here — cc/exec-tool actions need a cc toolchain, which is
 #     exec_compatible_with x86_64 only, so they never select winXP-x86.
+#   win10-x64 is here for the same test-toolchain reason and MUST be LAST: its cpu+os
+#     are identical to winXP-x64, so putting it any earlier would hand it exec-tool
+#     actions on the winXP configs too.  Last, it is only ever reached by a target
+#     whose platform carries //build/constraints:win10 — i.e. a win10-x64 test — which
+#     is exactly the case the other two cannot serve.
 register_execution_platforms(
     "//build/platforms:winXP-x64",
     "//build/platforms:winXP-x86",
+    "//build/platforms:win10-x64",
 )
 # Use preinstalled pkg-config instead of building it from source (building it
 # from source requires gettext_runtime whose BUILD uses a removed cc_import builtin).

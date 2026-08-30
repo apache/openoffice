@@ -291,12 +291,9 @@ public:
 */
 
     // Methods of XPropertySetInfo
-    virtual Sequence< Property > SAL_CALL getProperties(  )
-		throw(RuntimeException);
-    virtual Property SAL_CALL getPropertyByName( const OUString& aName )
-		throw(UnknownPropertyException, RuntimeException);
-    virtual sal_Bool SAL_CALL hasPropertyByName( const OUString& Name )
-		throw(RuntimeException);
+    virtual Sequence< Property > SAL_CALL getProperties(  );
+    virtual Property SAL_CALL getPropertyByName( const OUString& aName );
+    virtual sal_Bool SAL_CALL hasPropertyByName( const OUString& Name );
     //virtual Sequence< Property > SAL_CALL getProperties(void) throw( RuntimeException );
     //virtual Property SAL_CALL getPropertyByName(const OUString& Name) throw( RuntimeException );
     //virtual sal_Bool SAL_CALL hasPropertyByName(const OUString& Name) throw( RuntimeException );
@@ -327,7 +324,6 @@ sal_Bool ImplPropertySetInfo::queryInterface( Uik aUik, Reference<XInterface> & 
 */
 
 Sequence< Property > ImplPropertySetInfo::getProperties(void)
-	throw( RuntimeException )
 {
 	static Sequence<Property> * pSeq = NULL;
 
@@ -363,7 +359,6 @@ Sequence< Property > ImplPropertySetInfo::getProperties(void)
 }
 
 Property ImplPropertySetInfo::getPropertyByName(const OUString& Name)
-	throw( UnknownPropertyException, RuntimeException )
 {
 	Sequence<Property> aSeq = getProperties();
 	const Property * pAry = aSeq.getConstArray();
@@ -378,7 +373,6 @@ Property ImplPropertySetInfo::getPropertyByName(const OUString& Name)
 }
 
 sal_Bool ImplPropertySetInfo::hasPropertyByName(const OUString& Name)
-	throw( RuntimeException )
 {
 	Sequence<Property> aSeq = getProperties();
 	const Property * pAry = aSeq.getConstArray();
@@ -470,23 +464,16 @@ public:
 
 	// Trotz virtual inline, um Schreibarbeit zu sparen (nur fuer Testzwecke)
 	// XPropertySet
-    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo(  )
-		throw(RuntimeException);
-    virtual void SAL_CALL setPropertyValue( const OUString& aPropertyName, const Any& aValue )
-		throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException);
-    virtual Any SAL_CALL getPropertyValue( const OUString& PropertyName )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException);
+    virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
+    virtual void SAL_CALL setPropertyValue( const OUString& aPropertyName, const Any& aValue );
+    virtual Any SAL_CALL getPropertyValue( const OUString& PropertyName );
     virtual void SAL_CALL addPropertyChangeListener( const OUString& /*aPropertyName*/, const Reference< XPropertyChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 			{}
     virtual void SAL_CALL removePropertyChangeListener( const OUString& /*aPropertyName*/, const Reference< XPropertyChangeListener >& /*aListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 			{}
     virtual void SAL_CALL addVetoableChangeListener( const OUString& /*PropertyName*/, const Reference< XVetoableChangeListener >& /*aListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 			{}
     virtual void SAL_CALL removeVetoableChangeListener( const OUString& /*PropertyName*/, const Reference< XVetoableChangeListener >& /*aListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 			{}
 
 	/*
@@ -504,87 +491,78 @@ public:
 
 	// XIntroTest-Methoden
     // Attributes
-    virtual OUString SAL_CALL getObjectName() throw(RuntimeException)
+    virtual OUString SAL_CALL getObjectName()
 		{ return m_ObjectName; }
-    virtual void SAL_CALL setObjectName( const OUString& _objectname ) throw(RuntimeException)
+    virtual void SAL_CALL setObjectName( const OUString& _objectname )
 		{ m_ObjectName = _objectname; }
-    virtual OUString SAL_CALL getFirstName()
-		throw(RuntimeException);
-    virtual OUString SAL_CALL getLastName() throw(RuntimeException)
+    virtual OUString SAL_CALL getFirstName();
+    virtual OUString SAL_CALL getLastName()
 		{ return OUString( OUString::createFromAscii("Meyer") ); }
-    virtual sal_Int16 SAL_CALL getAge() throw(RuntimeException)
+    virtual sal_Int16 SAL_CALL getAge()
 		{ return m_nMarkusAge; }
-    virtual sal_Int16 SAL_CALL getChildrenCount() throw(RuntimeException)
+    virtual sal_Int16 SAL_CALL getChildrenCount()
 		{ return m_nMarkusChildrenCount; }
-    virtual void SAL_CALL setChildrenCount( sal_Int16 _childrencount ) throw(RuntimeException)
+    virtual void SAL_CALL setChildrenCount( sal_Int16 _childrencount )
 		{ m_nMarkusChildrenCount = _childrencount; }
-    virtual Property SAL_CALL getFirstStruct() throw(RuntimeException)
+    virtual Property SAL_CALL getFirstStruct()
 		{ return m_aFirstStruct; }
-    virtual void SAL_CALL setFirstStruct( const Property& _firststruct ) throw(RuntimeException)
+    virtual void SAL_CALL setFirstStruct( const Property& _firststruct )
 		{ m_aFirstStruct = _firststruct; }
-    virtual PropertyValue SAL_CALL getSecondStruct() throw(RuntimeException)
+    virtual PropertyValue SAL_CALL getSecondStruct()
 		{ return m_aSecondStruct; }
-    virtual void SAL_CALL setSecondStruct( const PropertyValue& _secondstruct ) throw(RuntimeException)
+    virtual void SAL_CALL setSecondStruct( const PropertyValue& _secondstruct )
 		{ m_aSecondStruct = _secondstruct; }
 
     // Methods
-    virtual void SAL_CALL writeln( const OUString& Text )
-		throw(RuntimeException);
-    virtual sal_Int32 SAL_CALL getDroenk(  ) throw(RuntimeException)
+    virtual void SAL_CALL writeln( const OUString& Text );
+    virtual sal_Int32 SAL_CALL getDroenk(  )
 		{ return m_lDroenk; }
-    virtual Reference< ::ModuleA::XIntroTest > SAL_CALL getIntroTest(  ) throw(RuntimeException);
-    virtual sal_Int32 SAL_CALL getUps( sal_Int32 l ) throw(RuntimeException)
+    virtual Reference< ::ModuleA::XIntroTest > SAL_CALL getIntroTest(  );
+    virtual sal_Int32 SAL_CALL getUps( sal_Int32 l )
 		{ return 2*l; }
-    virtual void SAL_CALL setDroenk( sal_Int32 l ) throw(RuntimeException)
+    virtual void SAL_CALL setDroenk( sal_Int32 l )
 		{ m_lDroenk = l; }
-    virtual sal_Int16 SAL_CALL getBla(  ) throw(RuntimeException)
+    virtual sal_Int16 SAL_CALL getBla(  )
 		{ return m_nBla; }
-    virtual void SAL_CALL setBla( sal_Int32 n ) throw(RuntimeException)
+    virtual void SAL_CALL setBla( sal_Int32 n )
 		{ m_nBla = (sal_Int16)n; }
-    virtual sal_Int16 SAL_CALL getBlub(  ) throw(RuntimeException)
+    virtual sal_Int16 SAL_CALL getBlub(  )
 		{ return m_nBlub; }
-    virtual void SAL_CALL setBlub( sal_Int16 n ) throw(RuntimeException)
+    virtual void SAL_CALL setBlub( sal_Int16 n )
 		{ m_nBlub = n; }
-    virtual sal_Int16 SAL_CALL getGulp(  ) throw(RuntimeException)
+    virtual sal_Int16 SAL_CALL getGulp(  )
 		{ return m_nGulp; }
-    virtual sal_Int16 SAL_CALL setGulp( sal_Int16 n ) throw(RuntimeException)
+    virtual sal_Int16 SAL_CALL setGulp( sal_Int16 n )
 		{ m_nGulp = n; return 1; }
-    virtual TypeClass SAL_CALL getTypeClass( sal_Int16 /*n*/ ) throw(RuntimeException)
+    virtual TypeClass SAL_CALL getTypeClass( sal_Int16 /*n*/ )
 		{ return eTypeClass; }
-    virtual void SAL_CALL setTypeClass( TypeClass t, double /*d1*/, double /*d2*/ ) throw(RuntimeException)
+    virtual void SAL_CALL setTypeClass( TypeClass t, double /*d1*/, double /*d2*/ )
 		{ eTypeClass = t; }
-    virtual Sequence< OUString > SAL_CALL getStrings(  ) throw(RuntimeException)
+    virtual Sequence< OUString > SAL_CALL getStrings(  )
 		{ return aStringSeq; }
-    virtual void SAL_CALL setStrings( const Sequence< OUString >& Strings ) throw(RuntimeException)
+    virtual void SAL_CALL setStrings( const Sequence< OUString >& Strings )
 		{ aStringSeq = Strings; }
-    virtual void SAL_CALL setStringsPerMethod( const Sequence< OUString >& Strings, sal_Int16 /*n*/ ) throw(RuntimeException)
+    virtual void SAL_CALL setStringsPerMethod( const Sequence< OUString >& Strings, sal_Int16 /*n*/ )
 		{ aStringSeq = Strings; }
-    virtual Sequence< Sequence< Sequence< sal_Int16 > > > SAL_CALL getMultiSequence(  ) throw(RuntimeException)
+    virtual Sequence< Sequence< Sequence< sal_Int16 > > > SAL_CALL getMultiSequence(  )
 		{ return aMultSeq; }
-    virtual void SAL_CALL setMultiSequence( const Sequence< Sequence< Sequence< sal_Int16 > > >& Seq ) throw(RuntimeException)
+    virtual void SAL_CALL setMultiSequence( const Sequence< Sequence< Sequence< sal_Int16 > > >& Seq )
 		{ aMultSeq = Seq; }
-    virtual void SAL_CALL addPropertiesChangeListener( const Sequence< OUString >& PropertyNames, const Reference< XPropertiesChangeListener >& Listener )
-		throw(RuntimeException);
-    virtual void SAL_CALL removePropertiesChangeListener( const Reference< XPropertiesChangeListener >& Listener )
-		throw(RuntimeException);
+    virtual void SAL_CALL addPropertiesChangeListener( const Sequence< OUString >& PropertyNames, const Reference< XPropertiesChangeListener >& Listener );
+    virtual void SAL_CALL removePropertiesChangeListener( const Reference< XPropertiesChangeListener >& Listener );
 
 
     // Methods of XElementAccess
-    virtual Type SAL_CALL getElementType(  )
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  )
-		throw(RuntimeException);
+    virtual Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
     //virtual XIdlClassRef getElementType(void) constTHROWS( (UsrSystemException) );
     //virtual BOOL hasElements(void) const THROWS( (UsrSystemException) );
 
 	// XNameAccess-Methoden
     // Methods
-    virtual Any SAL_CALL getByName( const OUString& aName )
-		throw(NoSuchElementException, WrappedTargetException, RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getElementNames(  )
-		throw(RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const OUString& aName )
-		throw(RuntimeException);
+    virtual Any SAL_CALL getByName( const OUString& aName );
+    virtual Sequence< OUString > SAL_CALL getElementNames(  );
+    virtual sal_Bool SAL_CALL hasByName( const OUString& aName );
     //virtual Any getByName(const UString& Name) const
 		//THROWS( (NoSuchElementException, WrappedTargetException, UsrSystemException) );
     //virtual Sequence<UString> getElementNames(void) const THROWS( (UsrSystemException) );
@@ -592,10 +570,8 @@ public:
 
 	// XIndexAccess-Methoden
     // Methods
-    virtual sal_Int32 SAL_CALL getCount(  )
-		throw(RuntimeException);
-    virtual Any SAL_CALL getByIndex( sal_Int32 Index )
-		throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException);
+    virtual sal_Int32 SAL_CALL getCount(  );
+    virtual Any SAL_CALL getByIndex( sal_Int32 Index );
     //virtual INT32 getCount(void) const THROWS( (UsrSystemException) );
     //virtual Any getByIndex(INT32 Index) const
 		//THROWS( (IndexOutOfBoundsException, WrappedTargetException, UsrSystemException) );
@@ -690,7 +666,6 @@ XIdlClassRef ImplIntroTest::getIdlClass()
 */
 
 Reference< XPropertySetInfo > ImplIntroTest::getPropertySetInfo()
-	throw(RuntimeException)
 {
 	static ImplPropertySetInfo aInfo( mxMgr );
 	// Alle Objekt haben die gleichen Properties, deshalb kann
@@ -703,7 +678,6 @@ Reference< XPropertySetInfo > ImplIntroTest::getPropertySetInfo()
 }
 
 void ImplIntroTest::setPropertyValue( const OUString& aPropertyName, const Any& aValue )
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
 //void ImplIntroTest::setPropertyValue( const UString& aPropertyName, const Any& aValue )
 //	THROWS( (UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, UsrSystemException) )
 {
@@ -741,7 +715,6 @@ void ImplIntroTest::setPropertyValue( const OUString& aPropertyName, const Any& 
 }
 
 Any ImplIntroTest::getPropertyValue( const OUString& PropertyName )
-	throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 //Any ImplIntroTest::getPropertyValue(const UString& aPropertyName) const
 	//THROWS( (UnknownPropertyException, WrappedTargetException, UsrSystemException) )
 {
@@ -757,13 +730,11 @@ Any ImplIntroTest::getPropertyValue( const OUString& PropertyName )
 }
 
 OUString ImplIntroTest::getFirstName(void)
-	throw(RuntimeException)
 {
 	return OUString( OUString::createFromAscii("Markus") );
 }
 
 void ImplIntroTest::writeln( const OUString& Text )
-	throw(RuntimeException)
 {
 	OString aStr( Text.getStr(), Text.getLength(), RTL_TEXTENCODING_ASCII_US );
 
@@ -780,7 +751,6 @@ void ImplIntroTest::writeln( const OUString& Text )
 }
 
 Reference< XIntroTest > ImplIntroTest::getIntroTest()
-	throw(RuntimeException)
 //XIntroTestRef ImplIntroTest::getIntroTest(void) THROWS( (UsrSystemException) )
 {
 	if( !m_xIntroTest.is() )
@@ -790,7 +760,6 @@ Reference< XIntroTest > ImplIntroTest::getIntroTest()
 
 // Methoden von XElementAccess
 Type ImplIntroTest::getElementType(  )
-	throw(RuntimeException)
 //XIdlClassRef ImplIntroTest::getElementType(void) const THROWS( (UsrSystemException) )
 {
 	// TODO
@@ -801,7 +770,6 @@ Type ImplIntroTest::getElementType(  )
 }
 
 sal_Bool ImplIntroTest::hasElements(  )
-	throw(RuntimeException)
 //BOOL ImplIntroTest::hasElements(void) const THROWS( (UsrSystemException) )
 {
 	return sal_True;
@@ -824,7 +792,6 @@ sal_Int32 getIndexForName( const OUString& ItemName )
 
 
 Any ImplIntroTest::getByName( const OUString& aName )
-	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 //Any ImplIntroTest::getByName(const UString& Name) const
 	//THROWS( (NoSuchElementException, WrappedTargetException, UsrSystemException) )
 {
@@ -856,7 +823,6 @@ Any ImplIntroTest::getByName( const OUString& aName )
 }
 
 Sequence< OUString > ImplIntroTest::getElementNames(  )
-	throw(RuntimeException)
 //Sequence<UString> ImplIntroTest::getElementNames(void) const THROWS( (UsrSystemException) )
 {
 	Sequence<OUString> aStrSeq( DEFAULT_NAME_ACCESS_COUNT );
@@ -872,7 +838,6 @@ Sequence< OUString > ImplIntroTest::getElementNames(  )
 }
 
 sal_Bool ImplIntroTest::hasByName( const OUString& aName )
-	throw(RuntimeException)
 //BOOL ImplIntroTest::hasByName(const UString& Name) const THROWS( (UsrSystemException) )
 {
 	return ( getIndexForName( aName ) != -1 );
@@ -880,14 +845,12 @@ sal_Bool ImplIntroTest::hasByName( const OUString& aName )
 
 // XIndexAccess-Methoden
 sal_Int32 ImplIntroTest::getCount(  )
-	throw(RuntimeException)
 //sal_Int32 ImplIntroTest::getCount(void) const THROWS( (UsrSystemException) )
 {
 	return iIndexAccessCount;
 }
 
 Any ImplIntroTest::getByIndex( sal_Int32 Index )
-	throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
 //Any ImplIntroTest::getByIndex( sal_Int32 Index ) const
 	//THROWS( (IndexOutOfBoundsException, WrappedTargetException, UsrSystemException) )
 {
@@ -915,7 +878,6 @@ Any ImplIntroTest::getByIndex( sal_Int32 Index )
 
 void ImplIntroTest::addPropertiesChangeListener( const Sequence< OUString >& /*PropertyNames*/,
 												 const Reference< XPropertiesChangeListener >& /*Listener*/ )
-		throw(RuntimeException)
 //void ImplIntroTest::addPropertiesChangeListener
 //(const Sequence< UString >& PropertyNames, const XPropertiesChangeListenerRef& Listener)
 	//THROWS( (UsrSystemException) )
@@ -924,7 +886,6 @@ void ImplIntroTest::addPropertiesChangeListener( const Sequence< OUString >& /*P
 
 void ImplIntroTest::removePropertiesChangeListener
 ( const Reference< XPropertiesChangeListener >& /*Listener*/ )
-		throw(RuntimeException)
 //void ImplIntroTest::removePropertiesChangeListener(const XPropertiesChangeListenerRef& Listener)
 	//THROWS( (UsrSystemException) )
 {

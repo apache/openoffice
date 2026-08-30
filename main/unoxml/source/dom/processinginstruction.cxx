@@ -51,7 +51,7 @@ namespace DOM
     The content of this processing instruction.
     */
     OUString SAL_CALL
-    CProcessingInstruction::getData() throw (RuntimeException)
+    CProcessingInstruction::getData()
     {
         ::osl::MutexGuard const g(m_rMutex);
 
@@ -72,7 +72,7 @@ namespace DOM
     The target of this processing instruction.
     */
     OUString SAL_CALL
-    CProcessingInstruction::getTarget() throw (RuntimeException)
+    CProcessingInstruction::getTarget()
     {
         ::osl::MutexGuard const g(m_rMutex);
 
@@ -93,7 +93,6 @@ namespace DOM
     The content of this processing instruction.
     */
     void SAL_CALL CProcessingInstruction::setData(OUString const& rData)
-        throw (RuntimeException, DOMException)
     {
         ::osl::MutexGuard const g(m_rMutex);
 
@@ -110,7 +109,7 @@ namespace DOM
     }
 
     OUString SAL_CALL
-    CProcessingInstruction::getNodeName() throw (RuntimeException)
+    CProcessingInstruction::getNodeName()
     {
         ::osl::MutexGuard const g(m_rMutex);
 
@@ -125,14 +124,12 @@ namespace DOM
     }
 
     OUString SAL_CALL CProcessingInstruction::getNodeValue()
-        throw (RuntimeException)
     {
         return getData();
     }
 
     void SAL_CALL
     CProcessingInstruction::setNodeValue(OUString const& rNodeValue)
-        throw (RuntimeException, DOMException)
     {
         return setData(rNodeValue);
     }

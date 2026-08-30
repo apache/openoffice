@@ -58,7 +58,7 @@ public:
     void redraw (bool resize=false);
 
     // XFocusListener
-    virtual void SAL_CALL disposing (css::lang::EventObject const&) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing (css::lang::EventObject const&);
 };
 
 class ControlImpl : public WindowImpl
@@ -78,9 +78,9 @@ public:
     virtual void UpdateListening (Link const& link);
 
     // XFocusListener
-    virtual void SAL_CALL disposing (css::lang::EventObject const&) throw (css::uno::RuntimeException);
-    void SAL_CALL focusGained (css::awt::FocusEvent const& e) throw (css::uno::RuntimeException);
-    void SAL_CALL focusLost (css::awt::FocusEvent const& e) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing (css::lang::EventObject const&);
+    void SAL_CALL focusGained (css::awt::FocusEvent const& e);
+    void SAL_CALL focusLost (css::awt::FocusEvent const& e);
 };
 
 inline WindowImpl *Window::getImpl() const{ return (static_cast< WindowImpl * >( mpImpl )); }

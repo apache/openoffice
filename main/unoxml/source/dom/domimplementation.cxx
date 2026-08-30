@@ -52,7 +52,6 @@ namespace DOM
            OUString const& /*rNamespaceURI*/,
            OUString const& /*rQualifiedName*/,
            Reference< XDocumentType > const& /*xDoctype*/)
-        throw (RuntimeException)
     {
         OSL_ENSURE(false,
             "CDOMImplementation::createDocument: not implemented (#i113683#)");
@@ -65,7 +64,6 @@ namespace DOM
     Reference< XDocumentType > SAL_CALL CDOMImplementation::createDocumentType(
             OUString const& /*rQualifiedName*/,
             OUString const& /*rPublicId*/, OUString const& /*rSystemId*/)
-        throw (RuntimeException)
     {
         OSL_ENSURE(false, "CDOMImplementation::createDocumentType: "
                 "not implemented (#i113683#)");
@@ -77,7 +75,6 @@ namespace DOM
     */
     sal_Bool SAL_CALL
     CDOMImplementation::hasFeature(OUString const& /*feature*/, OUString const& /*ver*/)
-        throw (RuntimeException)
     {
         OSL_ENSURE(false,
             "CDOMImplementation::hasFeature: not implemented (#i113683#)");

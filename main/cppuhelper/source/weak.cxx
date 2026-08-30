@@ -62,17 +62,17 @@ public:
 		{}
 
 	// XInterface
-	Any SAL_CALL		queryInterface( const Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+	Any SAL_CALL		queryInterface( const Type & rType );
 	void SAL_CALL		acquire() throw();
 	void SAL_CALL		release() throw();
 
 	// XAdapter
-	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL queryAdapted() throw(::com::sun::star::uno::RuntimeException);
-	void SAL_CALL addReference( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XReference >& xRef ) throw(::com::sun::star::uno::RuntimeException);
-	void SAL_CALL removeReference( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XReference >& xRef ) throw(::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL queryAdapted();
+	void SAL_CALL addReference( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XReference >& xRef );
+	void SAL_CALL removeReference( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XReference >& xRef );
 
 	// Called from the weak object if the reference count goes to zero.
-	void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+	void SAL_CALL dispose();
 
 private:
 	OWeakConnectionPoint(OWeakConnectionPoint &); // not defined
@@ -90,7 +90,6 @@ private:
 
 // XInterface
 Any SAL_CALL OWeakConnectionPoint::queryInterface( const Type & rType )
-	throw(com::sun::star::uno::RuntimeException)
 {
 	return ::cppu::queryInterface(
 		rType, static_cast< XAdapter * >( this ), static_cast< XInterface * >( this ) );
@@ -109,7 +108,7 @@ void SAL_CALL OWeakConnectionPoint::release() throw()
 		delete this;
 }
 
-void SAL_CALL OWeakConnectionPoint::dispose() throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL OWeakConnectionPoint::dispose()
 {
 	Any ex;
 	OInterfaceIteratorHelper aIt( m_aReferences );
@@ -132,7 +131,7 @@ void SAL_CALL OWeakConnectionPoint::dispose() throw(::com::sun::star::uno::Runti
 }
 
 // XInterface
-Reference< XInterface > SAL_CALL OWeakConnectionPoint::queryAdapted() throw(::com::sun::star::uno::RuntimeException)
+Reference< XInterface > SAL_CALL OWeakConnectionPoint::queryAdapted()
 {
 	Reference< XInterface > ret;
 
@@ -161,14 +160,12 @@ Reference< XInterface > SAL_CALL OWeakConnectionPoint::queryAdapted() throw(::co
 
 // XInterface
 void SAL_CALL OWeakConnectionPoint::addReference(const Reference< XReference >& rRef)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	m_aReferences.addInterface( (const Reference< XInterface > &)rRef );
 }
 
 // XInterface
 void SAL_CALL OWeakConnectionPoint::removeReference(const Reference< XReference >& rRef)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	m_aReferences.removeInterface( (const Reference< XInterface > &)rRef );
 }
@@ -188,7 +185,7 @@ OWeakObject::OWeakObject() SAL_THROW( () )
 #endif
 
 // XInterface
-Any SAL_CALL OWeakObject::queryInterface( const Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+Any SAL_CALL OWeakObject::queryInterface( const Type & rType )
 {
 	return ::cppu::queryInterface(
 		rType,
@@ -232,13 +229,12 @@ void OWeakObject::disposeWeakConnectionPoint()
 	}
 }
 
-OWeakObject::~OWeakObject() SAL_THROW( (RuntimeException) )
+OWeakObject::~OWeakObject()
 {
 }
 
 // XWeak
 Reference< XAdapter > SAL_CALL OWeakObject::queryAdapter()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	if (!m_pWeakConnectionPoint)
 	{
@@ -258,7 +254,7 @@ Reference< XAdapter > SAL_CALL OWeakObject::queryAdapter()
 //------------------------------------------------------------------------
 //-- OWeakAggObject ----------------------------------------------------
 //------------------------------------------------------------------------
-OWeakAggObject::~OWeakAggObject() SAL_THROW( (RuntimeException) )
+OWeakAggObject::~OWeakAggObject()
 {
 }
 
@@ -283,7 +279,7 @@ void OWeakAggObject::release() throw()
 }
 
 // XInterface
-Any OWeakAggObject::queryInterface( const Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+Any OWeakAggObject::queryInterface( const Type & rType )
 {
 	Reference< XInterface > x( xDelegator ); // harden ref
 	return (x.is() ? x->queryInterface( rType ) : queryAggregation( rType ));
@@ -300,7 +296,7 @@ Any OWeakAggObject::queryInterface( const Type & rType ) throw(::com::sun::star:
 }
 
 // XAggregation
-Any OWeakAggObject::queryAggregation( const Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+Any OWeakAggObject::queryAggregation( const Type & rType )
 {
 	return ::cppu::queryInterface(
 		rType,
@@ -310,7 +306,7 @@ Any OWeakAggObject::queryAggregation( const Type & rType ) throw(::com::sun::sta
 }
 
 // XAggregation
-void OWeakAggObject::setDelegator( const Reference<XInterface > & rDelegator ) throw(::com::sun::star::uno::RuntimeException)
+void OWeakAggObject::setDelegator( const Reference<XInterface > & rDelegator )
 {
 	xDelegator = rDelegator;
 }
@@ -341,12 +337,12 @@ public:
 	virtual ~OWeakRefListener() SAL_THROW( () );
 
 	// XInterface
-	Any SAL_CALL queryInterface( const Type & rType ) throw(RuntimeException);
+	Any SAL_CALL queryInterface( const Type & rType );
 	void SAL_CALL acquire() throw();
 	void SAL_CALL release() throw();
 
 	// XReference
-	void SAL_CALL 	dispose() throw(::com::sun::star::uno::RuntimeException);
+	void SAL_CALL 	dispose();
 
 	// The reference counter.
 	oslInterlockedCount			m_aRefCount;
@@ -409,7 +405,7 @@ OWeakRefListener::~OWeakRefListener() SAL_THROW( () )
 }
 
 // XInterface
-Any SAL_CALL OWeakRefListener::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL OWeakRefListener::queryInterface( const Type & rType )
 {
 	return ::cppu::queryInterface(
 		rType, static_cast< XReference * >( this ), static_cast< XInterface * >( this ) );
@@ -429,7 +425,6 @@ void SAL_CALL OWeakRefListener::release() throw()
 }
 
 void SAL_CALL OWeakRefListener::dispose()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Reference< XAdapter > xAdp;
 	{

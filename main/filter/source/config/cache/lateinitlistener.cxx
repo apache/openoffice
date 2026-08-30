@@ -74,7 +74,6 @@ LateInitListener::~LateInitListener()
     14.08.2003 08:45
 -----------------------------------------------*/
 void SAL_CALL LateInitListener::notifyEvent(const css::document::EventObject& aEvent)
-    throw(css::uno::RuntimeException)
 {
     // wait for events, which indicates finished open of the first document
     if (
@@ -113,7 +112,6 @@ void SAL_CALL LateInitListener::notifyEvent(const css::document::EventObject& aE
     14.08.2003 07:48
 -----------------------------------------------*/
 void SAL_CALL LateInitListener::disposing(const css::lang::EventObject& /* aEvent */ )
-    throw(css::uno::RuntimeException)
 {
     // ???
     // Normally it should never be called. Because we cancel our listener connection

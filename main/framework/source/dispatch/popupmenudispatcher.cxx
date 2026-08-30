@@ -161,7 +161,6 @@ DEFINE_INIT_SERVICE(PopupMenuDispatcher,
 //*****************************************************************************************************************
 void SAL_CALL PopupMenuDispatcher::initialize(
     const css::uno::Sequence< css::uno::Any >& lArguments )
-throw( css::uno::Exception, css::uno::RuntimeException)
 {
     css::uno::Reference< css::frame::XFrame > xFrame;
 
@@ -194,7 +193,6 @@ SAL_CALL PopupMenuDispatcher::queryDispatch(
     const css::util::URL&  rURL    ,
     const ::rtl::OUString& sTarget ,
     sal_Int32              nFlags  )
-throw( css::uno::RuntimeException )
 {
     css::uno::Reference< css::frame::XDispatch > xDispatch;
 
@@ -256,7 +254,6 @@ throw( css::uno::RuntimeException )
 css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL
 PopupMenuDispatcher::queryDispatches(
     const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor )
-throw( css::uno::RuntimeException )
 {
     sal_Int32 nCount = lDescriptor.getLength();
     css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > lDispatcher( nCount );
@@ -277,7 +274,6 @@ void
 SAL_CALL PopupMenuDispatcher::dispatch(
     const URL&                        /*aURL*/            ,
 	const Sequence< PropertyValue >&  /*seqProperties*/	)
-throw( RuntimeException )
 {
 }
 
@@ -288,7 +284,6 @@ void
 SAL_CALL PopupMenuDispatcher::addStatusListener(
     const uno::Reference< XStatusListener >& xControl,
 	const URL&							aURL	)
-throw( RuntimeException )
 {
 	// Ready for multithreading
 	ResetableGuard aGuard( m_aLock );
@@ -304,7 +299,6 @@ void
 SAL_CALL PopupMenuDispatcher::removeStatusListener(
     const uno::Reference< XStatusListener >& xControl,
 	const URL&							aURL	)
-throw( RuntimeException )
 {
 	// Ready for multithreading
 	ResetableGuard aGuard( m_aLock );
@@ -320,7 +314,6 @@ throw( RuntimeException )
 void
 SAL_CALL PopupMenuDispatcher::frameAction(
     const FrameActionEvent& aEvent )
-throw ( RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
 
@@ -336,7 +329,7 @@ throw ( RuntimeException )
 //	 XEventListener
 //*****************************************************************************************************************
 void
-SAL_CALL PopupMenuDispatcher::disposing( const EventObject& ) throw( RuntimeException )
+SAL_CALL PopupMenuDispatcher::disposing( const EventObject& )
 {
 	// Ready for multithreading
 	ResetableGuard aGuard( m_aLock );

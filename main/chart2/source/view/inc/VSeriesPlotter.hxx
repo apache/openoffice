@@ -169,8 +169,7 @@ public:
     )
     */
 
-    virtual void addSecondaryValueScale( const ExplicitScaleData& rScale, sal_Int32 nAxisIndex )
-                throw (::com::sun::star::uno::RuntimeException);
+    virtual void addSecondaryValueScale( const ExplicitScaleData& rScale, sal_Int32 nAxisIndex );
 
     //-------------------------------------------------------------------------
 	// MinimumAndMaximumSupplier

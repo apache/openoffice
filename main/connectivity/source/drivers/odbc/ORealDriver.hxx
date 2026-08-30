@@ -39,8 +39,7 @@ namespace connectivity { namespace odbc {
 com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
 ODBCDriver_CreateInstance(
     com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >
-        const & factory)
-    throw (com::sun::star::uno::Exception);
+        const & factory);
 
 } }
 

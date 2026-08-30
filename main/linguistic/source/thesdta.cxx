@@ -60,7 +60,7 @@ ThesaurusMeaning::~ThesaurusMeaning()
 }
 
 OUString SAL_CALL
-        ThesaurusMeaning::getMeaning() throw(RuntimeException)
+        ThesaurusMeaning::getMeaning()
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return aText;

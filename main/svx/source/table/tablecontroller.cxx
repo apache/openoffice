@@ -92,10 +92,10 @@ public:
 		: mpController( pController ) {}
 
 	// XModifyListener
-    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
 
     // XEventListener
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	SvxTableController* mpController;
 };
@@ -104,7 +104,7 @@ public:
 // XModifyListener
 // --------------------------------------------------------------------
 
-void SAL_CALL SvxTableControllerModifyListener::modified( const ::com::sun::star::lang::EventObject&  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SvxTableControllerModifyListener::modified( const ::com::sun::star::lang::EventObject&  )
 {
 	if( mpController )
 		mpController->onTableModified();
@@ -114,7 +114,7 @@ void SAL_CALL SvxTableControllerModifyListener::modified( const ::com::sun::star
 // XEventListener
 // --------------------------------------------------------------------
 
-void SAL_CALL SvxTableControllerModifyListener::disposing( const ::com::sun::star::lang::EventObject&  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SvxTableControllerModifyListener::disposing( const ::com::sun::star::lang::EventObject&  )
 {
 	mpController = 0;
 }

@@ -147,8 +147,7 @@ protected:
 	const static sal_Int32 UNIQUE_NUMBER_NEEDS_INITIALISATION = -1;
 
 	// Checks read only status and throws exception if it's true
-	void implCheckReadOnly( const sal_Char* pExceptionMsg )
-		throw (::com::sun::star::lang::NoSupportException);
+	void implCheckReadOnly( const sal_Char* pExceptionMsg );
 
 	// Return the context's MultiComponentFactory
 	::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiComponentFactory >
@@ -156,28 +155,24 @@ protected:
 
 	// Returns the LocalItem for a given locale, if it exists, otherwise NULL
 	// This method compares the locales exactly, no closest match search is performed
-	LocaleItem* getItemForLocale( const ::com::sun::star::lang::Locale& locale, sal_Bool bException )
-		throw (::com::sun::star::lang::IllegalArgumentException);
+	LocaleItem* getItemForLocale( const ::com::sun::star::lang::Locale& locale, sal_Bool bException );
 
 	// Returns the LocalItem for a given locale, if it exists, otherwise NULL
 	// This method performs a closest match search, at least the language must match
 	LocaleItem* getClosestMatchItemForLocale( const ::com::sun::star::lang::Locale& locale );
 	void implSetCurrentLocale( const ::com::sun::star::lang::Locale& locale,
-		sal_Bool FindClosestMatch, sal_Bool bUseDefaultIfNoMatch )
-			throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+		sal_Bool FindClosestMatch, sal_Bool bUseDefaultIfNoMatch );
 
 	void implModified( void );
 	void implNotifyListeners( void );
 
 	//=== Impl methods for ...ForLocale methods ===
-    ::rtl::OUString SAL_CALL implResolveString( const ::rtl::OUString& ResourceID, LocaleItem* pLocaleItem )
-		throw (::com::sun::star::resource::MissingResourceException);
+    ::rtl::OUString SAL_CALL implResolveString( const ::rtl::OUString& ResourceID, LocaleItem* pLocaleItem );
     ::sal_Bool implHasEntryForId( const ::rtl::OUString& ResourceID, LocaleItem* pLocaleItem );
 	::com::sun::star::uno::Sequence< ::rtl::OUString > implGetResourceIDs( LocaleItem* pLocaleItem );
 	void implSetString( const ::rtl::OUString& ResourceID,
 		const ::rtl::OUString& Str, LocaleItem* pLocaleItem );
-    void implRemoveId( const ::rtl::OUString& ResourceID, LocaleItem* pLocaleItem )
-		throw (::com::sun::star::resource::MissingResourceException);
+    void implRemoveId( const ::rtl::OUString& ResourceID, LocaleItem* pLocaleItem );
 
 	// Method to load a locale if necessary, returns true if loading was
 	// successful. Default implementation in base class just returns true.
@@ -191,72 +186,41 @@ public:
     virtual ~StringResourceImpl();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// XModifyBroadcaster
-	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
+	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
  	// XStringResourceResolver
-	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID );
     virtual ::rtl::OUString SAL_CALL resolveStringForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw ( ::com::sun::star::resource::MissingResourceException,
-					::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID );
     virtual ::sal_Bool SAL_CALL hasEntryForIdAndLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDsForLocale
-		( const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		( const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  );
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  );
 
 	// XStringResourceManager
-	virtual ::sal_Bool SAL_CALL isReadOnly()
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str )
-		throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isReadOnly();
+	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch );
+	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str );
     virtual void SAL_CALL setStringForLocale( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID );
     virtual void SAL_CALL removeIdForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-				   ::com::sun::star::lang::NoSupportException);
-	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::container::ElementExistException, ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  )
-		throw (::com::sun::star::lang::NoSupportException,
-			   ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  );
  };
 
 typedef ::cppu::ImplInheritanceHelper1<
@@ -273,8 +237,7 @@ protected:
 	::rtl::OUString																m_aComment;
 
     void SAL_CALL implInitializeCommonParameters
-		( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	// Scan locale properties files
 	virtual void implScanLocales( void );
@@ -307,24 +270,21 @@ protected:
 		const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage,
 		bool bUsedForStore,
 		bool bStoreAll
-	)
-	throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	);
 
 	void implKillRemovedLocaleFiles
 	(
 		const ::rtl::OUString& Location,
 		const ::rtl::OUString& aNameBase,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XSimpleFileAccess >& xFileAccess
-	)
-	throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	);
 
 	void implKillChangedDefaultFiles
 	(
 		const ::rtl::OUString& Location,
 		const ::rtl::OUString& aNameBase,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::ucb::XSimpleFileAccess >& xFileAccess
-	)
-	throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	);
 
 	void implStoreAtLocation
 	(
@@ -335,8 +295,7 @@ protected:
 		bool bUsedForStore,
 		bool bStoreAll,
 		bool bKillAll = false
-	)
-	throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	);
 
 public:
     StringResourcePersistenceImpl(
@@ -344,94 +303,54 @@ public:
     virtual ~StringResourcePersistenceImpl();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// XModifyBroadcaster
-	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
+	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
  	// XStringResourceResolver
-	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID );
     virtual ::rtl::OUString SAL_CALL resolveStringForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw ( ::com::sun::star::resource::MissingResourceException,
-					::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID );
     virtual ::sal_Bool SAL_CALL hasEntryForIdAndLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDsForLocale
-		( const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		( const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  );
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  );
 
 	// XStringResourceManager
-	virtual ::sal_Bool SAL_CALL isReadOnly()
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str )
-		throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isReadOnly();
+	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch );
+	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str );
     virtual void SAL_CALL setStringForLocale( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID );
     virtual void SAL_CALL removeIdForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-				   ::com::sun::star::lang::NoSupportException);
-	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::container::ElementExistException, ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  )
-		throw (::com::sun::star::lang::NoSupportException,
-			   ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  );
 
 	// XStringResourcePersistence
-    virtual void SAL_CALL store(  )
-		throw (::com::sun::star::lang::NoSupportException,
-			   ::com::sun::star::uno::Exception,
-			   ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isModified(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setComment( const ::rtl::OUString& Comment )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL store(  );
+    virtual ::sal_Bool SAL_CALL isModified(  );
+    virtual void SAL_CALL setComment( const ::rtl::OUString& Comment );
 	virtual void SAL_CALL storeToStorage
 		( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage,
-		  const ::rtl::OUString& NameBase, const ::rtl::OUString& Comment )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		  const ::rtl::OUString& NameBase, const ::rtl::OUString& Comment );
     virtual void SAL_CALL storeToURL( const ::rtl::OUString& URL, const ::rtl::OUString& NameBase,
 		const ::rtl::OUString& Comment,	const ::com::sun::star::uno::Reference
-		< ::com::sun::star::task::XInteractionHandler >& Handler )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL exportBinary(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL importBinary( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& Data )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+		< ::com::sun::star::task::XInteractionHandler >& Handler );
+    virtual ::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL exportBinary(  );
+    virtual void SAL_CALL importBinary( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& Data );
 };
 
 
@@ -454,106 +373,63 @@ public:
     virtual ~StringResourceWithStorageImpl();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     // XInitialization
-    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-        throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	// XModifyBroadcaster
-	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
+	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
  	// XStringResourceResolver
-	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID );
     virtual ::rtl::OUString SAL_CALL resolveStringForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw ( ::com::sun::star::resource::MissingResourceException,
-					::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID );
     virtual ::sal_Bool SAL_CALL hasEntryForIdAndLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDsForLocale
-		( const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		( const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  );
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  );
 
 	// XStringResourceManager
-	virtual ::sal_Bool SAL_CALL isReadOnly()
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str )
-		throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isReadOnly();
+	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch );
+	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str );
     virtual void SAL_CALL setStringForLocale( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID );
     virtual void SAL_CALL removeIdForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-				   ::com::sun::star::lang::NoSupportException);
-	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::container::ElementExistException, ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  )
-		throw (::com::sun::star::lang::NoSupportException,
-			   ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  );
 
 	// XStringResourcePersistence
-    virtual void SAL_CALL store(  )
-		throw (::com::sun::star::lang::NoSupportException,
-			   ::com::sun::star::uno::Exception,
-			   ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isModified(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setComment( const ::rtl::OUString& Comment )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL store(  );
+    virtual ::sal_Bool SAL_CALL isModified(  );
+    virtual void SAL_CALL setComment( const ::rtl::OUString& Comment );
     virtual void SAL_CALL storeToStorage
 		( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage,
-		  const ::rtl::OUString& NameBase, const ::rtl::OUString& Comment )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		  const ::rtl::OUString& NameBase, const ::rtl::OUString& Comment );
     virtual void SAL_CALL storeToURL( const ::rtl::OUString& URL, const ::rtl::OUString& NameBase,
 		const ::rtl::OUString& Comment, const ::com::sun::star::uno::Reference
-		< ::com::sun::star::task::XInteractionHandler >& Handler )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL exportBinary(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL importBinary( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& Data )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+		< ::com::sun::star::task::XInteractionHandler >& Handler );
+    virtual ::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL exportBinary(  );
+    virtual void SAL_CALL importBinary( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& Data );
 
 	// XStringResourceWithStorage
     virtual void SAL_CALL storeAsStorage
-		( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage );
     virtual void SAL_CALL setStorage
-		( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage )
-			throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+		( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage );
 };
 
 
@@ -580,104 +456,61 @@ public:
     virtual ~StringResourceWithLocationImpl();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     // XInitialization
-    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-        throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	// XModifyBroadcaster
-	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
+	virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
  	// XStringResourceResolver
-	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL resolveString( const ::rtl::OUString& ResourceID );
     virtual ::rtl::OUString SAL_CALL resolveStringForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw ( ::com::sun::star::resource::MissingResourceException,
-					::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Bool SAL_CALL hasEntryForId( const ::rtl::OUString& ResourceID );
     virtual ::sal_Bool SAL_CALL hasEntryForIdAndLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDs(  );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getResourceIDsForLocale
-		( const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		( const ::com::sun::star::lang::Locale& locale );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getCurrentLocale(  );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getDefaultLocale(  );
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales(  );
 
 	// XStringResourceManager
-	virtual ::sal_Bool SAL_CALL isReadOnly()
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str )
-		throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL isReadOnly();
+	virtual void SAL_CALL setCurrentLocale( const ::com::sun::star::lang::Locale& locale, ::sal_Bool FindClosestMatch );
+	virtual void SAL_CALL setDefaultLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual void SAL_CALL setString( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str );
     virtual void SAL_CALL setStringForLocale( const ::rtl::OUString& ResourceID, const ::rtl::OUString& Str,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID )
-		throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeId( const ::rtl::OUString& ResourceID );
     virtual void SAL_CALL removeIdForLocale( const ::rtl::OUString& ResourceID,
-		const ::com::sun::star::lang::Locale& locale )
-			throw (::com::sun::star::resource::MissingResourceException, ::com::sun::star::uno::RuntimeException,
-				   ::com::sun::star::lang::NoSupportException);
-	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::container::ElementExistException, ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException,
-		       ::com::sun::star::lang::NoSupportException);
-    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  )
-		throw (::com::sun::star::lang::NoSupportException,
-			   ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL newLocale( const ::com::sun::star::lang::Locale& locale );
+	virtual void SAL_CALL removeLocale( const ::com::sun::star::lang::Locale& locale );
+    virtual ::sal_Int32 SAL_CALL getUniqueNumericId(  );
 
 	// XStringResourcePersistence
-    virtual void SAL_CALL store(  )
-		throw (::com::sun::star::lang::NoSupportException,
-			   ::com::sun::star::uno::Exception,
-			   ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isModified(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setComment( const ::rtl::OUString& Comment )
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL store(  );
+    virtual ::sal_Bool SAL_CALL isModified(  );
+    virtual void SAL_CALL setComment( const ::rtl::OUString& Comment );
     virtual void SAL_CALL storeToStorage
 		( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& Storage,
-		  const ::rtl::OUString& NameBase, const ::rtl::OUString& Comment )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		  const ::rtl::OUString& NameBase, const ::rtl::OUString& Comment );
     virtual void SAL_CALL storeToURL( const ::rtl::OUString& URL, const ::rtl::OUString& NameBase,
 		const ::rtl::OUString& Comment, const ::com::sun::star::uno::Reference
-		< ::com::sun::star::task::XInteractionHandler >& Handler )
-			throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL exportBinary(  )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL importBinary( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& Data )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+		< ::com::sun::star::task::XInteractionHandler >& Handler );
+    virtual ::com::sun::star::uno::Sequence< ::sal_Int8 > SAL_CALL exportBinary(  );
+    virtual void SAL_CALL importBinary( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& Data );
 
 	// XStringResourceWithLocation
-    virtual void SAL_CALL storeAsURL( const ::rtl::OUString& URL )
-		throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setURL( const ::rtl::OUString& URL )
-		throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL storeAsURL( const ::rtl::OUString& URL );
+    virtual void SAL_CALL setURL( const ::rtl::OUString& URL );
 };
 
 //.........................................................................

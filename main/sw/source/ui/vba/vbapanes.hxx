@@ -41,8 +41,8 @@ public:
 	virtual ~SwVbaPanes() {}
 
 	// XEnumerationAccess
-	virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+	virtual css::uno::Type SAL_CALL getElementType();
+	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
 	// SwVbaPanes_BASE
 	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );

@@ -60,24 +60,24 @@ public:
     explicit FinalThreadManager(com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > const & context);
 
     // ::com::sun::star::lang::XServiceInfo:
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString & ServiceName) throw (com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString & ServiceName);
+    virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     // ::com::sun::star::util::XJobManager:
-    virtual void SAL_CALL registerJob(const com::sun::star::uno::Reference< com::sun::star::util::XCancellable > & Job) throw (com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL releaseJob(const com::sun::star::uno::Reference< com::sun::star::util::XCancellable > & Job) throw (com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL cancelAllJobs() throw (com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL registerJob(const com::sun::star::uno::Reference< com::sun::star::util::XCancellable > & Job);
+    virtual void SAL_CALL releaseJob(const com::sun::star::uno::Reference< com::sun::star::util::XCancellable > & Job);
+    virtual void SAL_CALL cancelAllJobs();
 
     // ::com::sun::star::frame::XTerminateListener2
-    virtual void SAL_CALL cancelTermination( const ::com::sun::star::lang::EventObject& Event ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL cancelTermination( const ::com::sun::star::lang::EventObject& Event );
 
     // ::com::sun::star::frame::XTerminateListener (inherited via com::sun::star::frame::XTerminateListener2)
-    virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& Event ) throw (::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& Event ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& Event );
+    virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& Event );
 
     // ::com::sun:star::lang::XEventListener (inherited via com::sun::star::frame::XTerminateListener)
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 private:
     FinalThreadManager(FinalThreadManager &); // not defined

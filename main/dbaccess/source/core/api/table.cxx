@@ -80,7 +80,7 @@ ODBTable::ODBTable(connectivity::sdbcx::OCollection* _pTables
 		,const ::rtl::OUString& _rName
 		,const ::rtl::OUString& _rType
 		,const ::rtl::OUString& _rDesc
-		,const Reference< XNameAccess >& _xColumnDefinitions) throw(SQLException)
+		,const Reference< XNameAccess >& _xColumnDefinitions)
 	:OTable_Base(_pTables,_rxConn,_rxConn->getMetaData().is() && _rxConn->getMetaData()->supportsMixedCaseQuotedIdentifiers(), _rName, _rType, _rDesc, _rSchema, _rCatalog )
 	,m_xColumnDefinitions(_xColumnDefinitions)
 	,m_nPrivileges(0)
@@ -97,7 +97,6 @@ ODBTable::ODBTable(connectivity::sdbcx::OCollection* _pTables
 // -----------------------------------------------------------------------------
 ODBTable::ODBTable(connectivity::sdbcx::OCollection* _pTables
 				   ,const Reference< XConnection >& _rxConn)
-				throw(SQLException)
 	:OTable_Base(_pTables,_rxConn, _rxConn->getMetaData().is() && _rxConn->getMetaData()->supportsMixedCaseQuotedIdentifiers())
 	,m_nPrivileges(-1)
 {
@@ -153,7 +152,7 @@ void ODBTable::columnDropped(const ::rtl::OUString& _sName)
 	}
 }
 //--------------------------------------------------------------------------
-Sequence< sal_Int8 > ODBTable::getImplementationId() throw (RuntimeException)
+Sequence< sal_Int8 > ODBTable::getImplementationId()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ODBTable::getImplementationId" );
 	static OImplementationId * pId = 0;
@@ -287,7 +286,7 @@ void ODBTable::construct()
 // XServiceInfo
 IMPLEMENT_SERVICE_INFO1(ODBTable, "com.sun.star.sdb.dbaccess.ODBTable", SERVICE_SDBCX_TABLE)
 // -------------------------------------------------------------------------
-Any SAL_CALL ODBTable::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL ODBTable::queryInterface( const Type & rType )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ODBTable::getInfoHelper" );
 	if(rType == getCppuType( (Reference<XRename>*)0) && !getRenameService().is() )
@@ -297,7 +296,7 @@ Any SAL_CALL ODBTable::queryInterface( const Type & rType ) throw(RuntimeExcepti
 	return OTable_Base::queryInterface( rType);
 }
 // -------------------------------------------------------------------------
-Sequence< Type > SAL_CALL ODBTable::getTypes(  ) throw(RuntimeException)
+Sequence< Type > SAL_CALL ODBTable::getTypes(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ODBTable::getTypes" );
 	Type aRenameType = getCppuType( (Reference<XRename>*)0);
@@ -320,7 +319,7 @@ Sequence< Type > SAL_CALL ODBTable::getTypes(  ) throw(RuntimeException)
 }
 // XRename,
 //------------------------------------------------------------------------------
-void SAL_CALL ODBTable::rename( const ::rtl::OUString& _rNewName ) throw(SQLException, ElementExistException, RuntimeException)
+void SAL_CALL ODBTable::rename( const ::rtl::OUString& _rNewName )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ODBTable::rename" );
     ::osl::MutexGuard aGuard(m_aMutex);
@@ -335,7 +334,7 @@ void SAL_CALL ODBTable::rename( const ::rtl::OUString& _rNewName ) throw(SQLExce
 
 // XAlterTable,
 //------------------------------------------------------------------------------
-void SAL_CALL ODBTable::alterColumnByName( const ::rtl::OUString& _rName, const Reference< XPropertySet >& _rxDescriptor ) throw(SQLException, NoSuchElementException, RuntimeException)
+void SAL_CALL ODBTable::alterColumnByName( const ::rtl::OUString& _rName, const Reference< XPropertySet >& _rxDescriptor )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ODBTable::alterColumnByName" );
 	::osl::MutexGuard aGuard(m_aMutex);
@@ -351,7 +350,7 @@ void SAL_CALL ODBTable::alterColumnByName( const ::rtl::OUString& _rName, const 
 	m_pColumns->refresh();
 }
 // -----------------------------------------------------------------------------
-sal_Int64 SAL_CALL ODBTable::getSomething( const Sequence< sal_Int8 >& rId ) throw(RuntimeException)
+sal_Int64 SAL_CALL ODBTable::getSomething( const Sequence< sal_Int8 >& rId )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ODBTable::getSomething" );
 	sal_Int64 nRet(0);

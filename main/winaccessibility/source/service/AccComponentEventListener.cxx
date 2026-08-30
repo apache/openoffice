@@ -47,7 +47,6 @@ AccComponentEventListener::~AccComponentEventListener()
  * @param	AccessibleEventObject	the event object which contains information about event
  */
 void  AccComponentEventListener::notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent )
-throw (::com::sun::star::uno::RuntimeException)
 {
     switch (aEvent.EventId)
     {

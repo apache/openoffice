@@ -1406,7 +1406,6 @@ cssu::Any SAL_CALL XSecController::getFastPropertyValue(
  */
 
 void SAL_CALL XSecController::blockingStatusChanged( sal_Bool isBlocking )
-	throw (cssu::RuntimeException)
 {
 	/*
 	showMessageBox( rtl::OUString::createFromAscii((isBlocking?
@@ -1421,7 +1420,6 @@ void SAL_CALL XSecController::blockingStatusChanged( sal_Bool isBlocking )
 
 void SAL_CALL XSecController::collectionStatusChanged(
 	sal_Bool isInsideCollectedElement )
-	throw (cssu::RuntimeException)
 {
 	/*
 	showMessageBox(	rtl::OUString::createFromAscii((isInsideCollectedElement?
@@ -1435,7 +1433,6 @@ void SAL_CALL XSecController::collectionStatusChanged(
 }
 
 void SAL_CALL XSecController::bufferStatusChanged( sal_Bool /*isBufferEmpty*/)
-	throw (cssu::RuntimeException)
 {
 	/*
 	showMessageBox(	rtl::OUString::createFromAscii((isBufferEmpty?
@@ -1449,7 +1446,6 @@ void SAL_CALL XSecController::bufferStatusChanged( sal_Bool /*isBufferEmpty*/)
  * XSignatureCreationResultListener
  */
 void SAL_CALL XSecController::signatureCreated( sal_Int32 securityId, com::sun::star::xml::crypto::SecurityOperationStatus nResult )
-		throw (com::sun::star::uno::RuntimeException)
 {
 	int index = findSignatureInfor(securityId);
 	DBG_ASSERT( index != -1, "Signature Not Found!" );
@@ -1473,7 +1469,6 @@ void SAL_CALL XSecController::signatureCreated( sal_Int32 securityId, com::sun::
  * XSignatureVerifyResultListener
  */
 void SAL_CALL XSecController::signatureVerified( sal_Int32 securityId, com::sun::star::xml::crypto::SecurityOperationStatus nResult )
-		throw (com::sun::star::uno::RuntimeException)
 {
 	int index = findSignatureInfor(securityId);
 	DBG_ASSERT( index != -1, "Signature Not Found!" );

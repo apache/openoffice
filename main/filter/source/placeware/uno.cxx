@@ -38,10 +38,10 @@ using namespace ::com::sun::star::lang;
 using namespace ::com::sun::star::registry;
 
 namespace pwp {
-extern OUString PlaceWareExportFilter_getImplementationName() throw ( RuntimeException );
-extern sal_Bool SAL_CALL PlaceWareExportFilter_supportsService( const OUString& ServiceName ) throw ( RuntimeException );
-extern Sequence< OUString > SAL_CALL PlaceWareExportFilter_getSupportedServiceNames()  throw ( RuntimeException );
-extern Reference< XInterface > SAL_CALL PlaceWareExportFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr) throw ( Exception );
+extern OUString PlaceWareExportFilter_getImplementationName();
+extern sal_Bool SAL_CALL PlaceWareExportFilter_supportsService( const OUString& ServiceName );
+extern Sequence< OUString > SAL_CALL PlaceWareExportFilter_getSupportedServiceNames();
+extern Reference< XInterface > SAL_CALL PlaceWareExportFilter_createInstance( const Reference< XMultiServiceFactory > & rSMgr);
 }
 
 using namespace ::pwp;

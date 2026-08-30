@@ -57,36 +57,29 @@ public:
 
 protected:
     // ____ OPropertySet ____
-    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const
-        throw(::com::sun::star::beans::UnknownPropertyException);
+    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const;
     virtual ::cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
 
     // ____ XPropertySet ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+        getPropertySetInfo();
 
     // ____ XChartTypeTemplate ____
-    virtual sal_Bool SAL_CALL supportsCategories()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL supportsCategories();
     virtual sal_Bool SAL_CALL matchesTemplate(
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::chart2::XDiagram >& xDiagram,
-        sal_Bool bAdaptProperties )
-        throw (::com::sun::star::uno::RuntimeException);
+        sal_Bool bAdaptProperties );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartType > SAL_CALL
         getChartTypeForNewSeries( const ::com::sun::star::uno::Sequence<
             ::com::sun::star::uno::Reference<
-                ::com::sun::star::chart2::XChartType > >& aFormerlyUsedChartTypes )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataInterpreter > SAL_CALL getDataInterpreter()
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::chart2::XChartType > >& aFormerlyUsedChartTypes );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataInterpreter > SAL_CALL getDataInterpreter();
     virtual void SAL_CALL applyStyle(
         const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries >& xSeries,
         ::sal_Int32 nChartTypeGroupIndex,
         ::sal_Int32 nSeriesIndex,
-        ::sal_Int32 nSeriesCount )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::sal_Int32 nSeriesCount );
 
     // ____ ChartTypeTemplate ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartType >

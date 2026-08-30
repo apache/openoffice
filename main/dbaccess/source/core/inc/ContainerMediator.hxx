@@ -91,10 +91,10 @@ namespace dbaccess
             ContainerType _eType
        );
 
-		virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& _rEvent );
+		virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& _rEvent );
+		virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& _rEvent );
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		void notifyElementCreated(const ::rtl::OUString& _sElementName
 								,const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet>& _xElement);

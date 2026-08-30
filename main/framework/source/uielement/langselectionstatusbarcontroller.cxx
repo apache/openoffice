@@ -102,7 +102,6 @@ LangSelectionStatusbarController::LangSelectionStatusbarController( const uno::R
 }
 
 void SAL_CALL LangSelectionStatusbarController::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "LangSelectionStatusbarController::initialize" );
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
@@ -117,7 +116,6 @@ throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException
 
 void LangSelectionStatusbarController::LangMenu(
     const ::com::sun::star::awt::Point& aPos )
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "LangSelectionStatusbarController::LangMenu" );
 	if (!m_bShowMenu)
@@ -262,7 +260,6 @@ void SAL_CALL LangSelectionStatusbarController::command(
     ::sal_Int32 nCommand,
     ::sal_Bool /*bMouseEvent*/,
     const ::com::sun::star::uno::Any& /*aData*/ )
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "LangSelectionStatusbarController::command" );
 	if ( nCommand & ::awt::Command::CONTEXTMENU )
@@ -273,7 +270,6 @@ throw (::com::sun::star::uno::RuntimeException)
 
 void SAL_CALL LangSelectionStatusbarController::click(
     const ::com::sun::star::awt::Point& aPos )
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "LangSelectionStatusbarController::click" );
     LangMenu( aPos );
@@ -281,7 +277,6 @@ throw (::com::sun::star::uno::RuntimeException)
 
 // XStatusListener
 void SAL_CALL LangSelectionStatusbarController::statusChanged( const FeatureStateEvent& Event )
-throw ( RuntimeException )
 {
     // This function will be called when observed data changes,
     // for example the selection or keyboard language.

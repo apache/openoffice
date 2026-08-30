@@ -51,21 +51,18 @@ public:
 	// XMimeContentType
 	//-------------------------------------------
 
-	virtual ::rtl::OUString SAL_CALL getMediaType(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getMediaSubtype(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getFullMediaType(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getMediaType(  );
+    virtual ::rtl::OUString SAL_CALL getMediaSubtype(  );
+    virtual ::rtl::OUString SAL_CALL getFullMediaType(  );
 
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getParameters(  )
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getParameters(  );
 
-    virtual sal_Bool SAL_CALL hasParameter( const ::rtl::OUString& aName )
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasParameter( const ::rtl::OUString& aName );
 
-	virtual ::rtl::OUString SAL_CALL getParameterValue( const ::rtl::OUString& aName )
-		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getParameterValue( const ::rtl::OUString& aName );
 
 private:
-	void SAL_CALL init( const rtl::OUString& aCntType ) throw( com::sun::star::lang::IllegalArgumentException );
+	void SAL_CALL init( const rtl::OUString& aCntType );
 	void SAL_CALL getSym( void );
 	void SAL_CALL acceptSym( const rtl::OUString& pSymTlb );
 	void SAL_CALL skipSpaces( void );

@@ -74,13 +74,11 @@ private:
 	com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XXMLSecurityContext > m_xXMLSecurityContext;
 
-	virtual void notifyResultListener() const
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+	virtual void notifyResultListener() const;
 	virtual bool checkReady() const;
 	virtual void startEngine( const com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XXMLEncryptionTemplate >&
-		xEncryptionTemplate)
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+		xEncryptionTemplate);
 
 public:
 	explicit DecryptorImpl( const com::sun::star::uno::Reference<
@@ -91,41 +89,31 @@ public:
 	virtual void SAL_CALL addDecryptionResultListener(
 		const com::sun::star::uno::Reference<
 			com::sun::star::xml::crypto::sax::XDecryptionResultListener >&
-			listener )
-    		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+			listener );
     	virtual void SAL_CALL removeDecryptionResultListener(
     		const com::sun::star::uno::Reference<
     			com::sun::star::xml::crypto::sax::XDecryptionResultListener >&
-    			listener )
-    		throw (com::sun::star::uno::RuntimeException);
+    			listener );
 
 	/* XInitialization */
 	virtual void SAL_CALL initialize(
-		const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments )
-		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
+		const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments );
 
 	/* XServiceInfo */
-	virtual rtl::OUString SAL_CALL getImplementationName(  )
-		throw (com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName )
-		throw (com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual rtl::OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName );
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 };
 
-rtl::OUString DecryptorImpl_getImplementationName()
-	throw ( com::sun::star::uno::RuntimeException );
+rtl::OUString DecryptorImpl_getImplementationName();
 
-sal_Bool SAL_CALL DecryptorImpl_supportsService( const rtl::OUString& ServiceName )
-	throw ( com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL DecryptorImpl_supportsService( const rtl::OUString& ServiceName );
 
-com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL DecryptorImpl_getSupportedServiceNames(  )
-	throw ( com::sun::star::uno::RuntimeException );
+com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL DecryptorImpl_getSupportedServiceNames(  );
 
 com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
 SAL_CALL DecryptorImpl_createInstance(
 	const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >&
-		rSMgr)
-	throw ( com::sun::star::uno::Exception );
+		rSMgr);
 
 #endif

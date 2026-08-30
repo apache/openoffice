@@ -189,20 +189,16 @@ private:
 							com::sun::star::frame::XController >& xController );
 
 	com::sun::star::uno::Reference< com::sun::star::frame::XController >
-		impl_getCurrentController()
-							throw( com::sun::star::uno::RuntimeException);
+		impl_getCurrentController();
 
 	void SAL_CALL
-		impl_notifyModifiedListeners()
-							throw( com::sun::star::uno::RuntimeException);
+		impl_notifyModifiedListeners();
     void SAL_CALL
-        impl_notifyCloseListeners()
-		                    throw( com::sun::star::uno::RuntimeException);
+        impl_notifyCloseListeners();
     void SAL_CALL
-        impl_notifyStorageChangeListeners()
-                            throw(::com::sun::star::uno::RuntimeException);
+        impl_notifyStorageChangeListeners();
 
-    void impl_killInternalData() throw( com::sun::star::util::CloseVetoException );
+    void impl_killInternalData();
 
     void impl_store(
         const ::com::sun::star::uno::Sequence<
@@ -248,8 +244,7 @@ public:
     //-----------------------------------------------------------------
 	// ::com::sun::star::lang::XInitialization
 	//-----------------------------------------------------------------
-    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-                throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::frame::XModel (required interface)
@@ -258,356 +253,255 @@ public:
     virtual sal_Bool SAL_CALL
 		attachResource( const ::rtl::OUString& rURL
 							, const ::com::sun::star::uno::Sequence<
-							::com::sun::star::beans::PropertyValue >& rMediaDescriptor )
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::beans::PropertyValue >& rMediaDescriptor );
 
     virtual ::rtl::OUString SAL_CALL
-		getURL()			throw (::com::sun::star::uno::RuntimeException);
+		getURL();
 
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL
-		getArgs()			throw (::com::sun::star::uno::RuntimeException);
+		getArgs();
 
     virtual void SAL_CALL
 		connectController( const ::com::sun::star::uno::Reference<
-							::com::sun::star::frame::XController >& xController )
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::frame::XController >& xController );
 
     virtual void SAL_CALL
 		disconnectController( const ::com::sun::star::uno::Reference<
-							::com::sun::star::frame::XController >& xController )
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::frame::XController >& xController );
 
     virtual void SAL_CALL
-		lockControllers()	throw (::com::sun::star::uno::RuntimeException);
+		lockControllers();
 
     virtual void SAL_CALL
-		unlockControllers() throw (::com::sun::star::uno::RuntimeException);
+		unlockControllers();
 
     virtual sal_Bool SAL_CALL
-		hasControllersLocked()
-							throw (::com::sun::star::uno::RuntimeException);
+		hasControllersLocked();
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XController > SAL_CALL
-		getCurrentController()
-							throw (::com::sun::star::uno::RuntimeException);
+		getCurrentController();
 
     virtual void SAL_CALL
 		setCurrentController( const ::com::sun::star::uno::Reference<
-							::com::sun::star::frame::XController >& xController )
-							throw (::com::sun::star::container::NoSuchElementException
-							, ::com::sun::star::uno::RuntimeException);
+							::com::sun::star::frame::XController >& xController );
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
-		getCurrentSelection()
-							throw (::com::sun::star::uno::RuntimeException);
+		getCurrentSelection();
 
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::lang::XComponent (base of XModel)
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
-		dispose()			throw (::com::sun::star::uno::RuntimeException);
+		dispose();
 
 	virtual void SAL_CALL
 		addEventListener( const ::com::sun::star::uno::Reference<
-						  ::com::sun::star::lang::XEventListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+						  ::com::sun::star::lang::XEventListener > & xListener );
 
 	virtual void SAL_CALL
 		removeEventListener( const ::com::sun::star::uno::Reference<
-						  ::com::sun::star::lang::XEventListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+						  ::com::sun::star::lang::XEventListener > & xListener );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::util::XCloseable
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
-		close( sal_Bool bDeliverOwnership )
-                            throw(::com::sun::star::util::CloseVetoException,
-                                  ::com::sun::star::uno::RuntimeException);
+		close( sal_Bool bDeliverOwnership );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::util::XCloseBroadcaster (base of XCloseable)
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
 		addCloseListener( const ::com::sun::star::uno::Reference<
-							::com::sun::star::util::XCloseListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::util::XCloseListener > & xListener );
 
 	virtual void SAL_CALL
 		removeCloseListener( const ::com::sun::star::uno::Reference<
-							::com::sun::star::util::XCloseListener > & xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::util::XCloseListener > & xListener );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::frame::XStorable2 (extension of XStorable)
 	//-----------------------------------------------------------------
     virtual void SAL_CALL storeSelf(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescriptor )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescriptor );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::frame::XStorable (required interface)
 	//-----------------------------------------------------------------
 	virtual sal_Bool SAL_CALL
-		hasLocation()		throw (::com::sun::star::uno::RuntimeException);
+		hasLocation();
 
     virtual ::rtl::OUString SAL_CALL
-		getLocation()		throw (::com::sun::star::uno::RuntimeException);
+		getLocation();
 
     virtual sal_Bool SAL_CALL
-		isReadonly()		throw (::com::sun::star::uno::RuntimeException);
+		isReadonly();
 
     virtual void SAL_CALL
-		store()				throw (::com::sun::star::io::IOException
-							, ::com::sun::star::uno::RuntimeException);
+		store();
 
     virtual void SAL_CALL
 		storeAsURL( const ::rtl::OUString& rURL
 							, const ::com::sun::star::uno::Sequence<
-							::com::sun::star::beans::PropertyValue >& rMediaDescriptor )
-							throw (::com::sun::star::io::IOException
-							, ::com::sun::star::uno::RuntimeException);
+							::com::sun::star::beans::PropertyValue >& rMediaDescriptor );
 
     virtual void SAL_CALL
 		storeToURL( const ::rtl::OUString& rURL
 							, const ::com::sun::star::uno::Sequence<
-							::com::sun::star::beans::PropertyValue >& rMediaDescriptor )
-							throw (::com::sun::star::io::IOException
-							, ::com::sun::star::uno::RuntimeException);
+							::com::sun::star::beans::PropertyValue >& rMediaDescriptor );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::util::XModifiable (required interface)
 	//-----------------------------------------------------------------
 	virtual sal_Bool SAL_CALL
-		isModified()		throw (::com::sun::star::uno::RuntimeException);
+		isModified();
 
     virtual void SAL_CALL
-		setModified( sal_Bool bModified )
-							throw (::com::sun::star::beans::PropertyVetoException
-							, ::com::sun::star::uno::RuntimeException);
+		setModified( sal_Bool bModified );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::util::XModifyBroadcaster (base of XModifiable)
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
 		addModifyListener( const ::com::sun::star::uno::Reference<
-							::com::sun::star::util::XModifyListener >& xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::util::XModifyListener >& xListener );
 
     virtual void SAL_CALL
 		removeModifyListener( const ::com::sun::star::uno::Reference<
-							::com::sun::star::util::XModifyListener >& xListener )
-							throw (::com::sun::star::uno::RuntimeException);
+							::com::sun::star::util::XModifyListener >& xListener );
 
     // ____ XModifyListener ____
     virtual void SAL_CALL modified(
-        const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& aEvent );
 
     // ____ XEventListener (base of XModifyListener) ____
     virtual void SAL_CALL disposing(
-        const ::com::sun::star::lang::EventObject& Source )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& Source );
 
     // ____ datatransferable::XTransferable ____
     virtual ::com::sun::star::uno::Any SAL_CALL getTransferData(
-        const ::com::sun::star::datatransfer::DataFlavor& aFlavor )
-        throw (::com::sun::star::datatransfer::UnsupportedFlavorException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::datatransfer::DataFlavor > SAL_CALL getTransferDataFlavors()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::datatransfer::DataFlavor > SAL_CALL getTransferDataFlavors();
     virtual ::sal_Bool SAL_CALL isDataFlavorSupported(
-        const ::com::sun::star::datatransfer::DataFlavor& aFlavor )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
 
 	//-----------------------------------------------------------------
     // lang::XTypeProvider (overloaded method of WeakImplHelper)
 	//-----------------------------------------------------------------
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL
-        getTypes() throw (::com::sun::star::uno::RuntimeException);
+        getTypes();
 
     // ____ document::XDocumentPropertiesSupplier ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::document::XDocumentProperties > SAL_CALL
-        getDocumentProperties(  ) throw (::com::sun::star::uno::RuntimeException);
+        getDocumentProperties(  );
 
     // ____ document::XUndoManagerSupplier ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::document::XUndoManager > SAL_CALL
-        getUndoManager(  ) throw (::com::sun::star::uno::RuntimeException);
+        getUndoManager(  );
 
 	//-----------------------------------------------------------------
 	// ::com::sun::star::chart2::XChartDocument
 	//-----------------------------------------------------------------
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::chart2::XDiagram > SAL_CALL
-        getFirstDiagram()       throw (::com::sun::star::uno::RuntimeException);
+        getFirstDiagram();
     virtual void SAL_CALL setFirstDiagram(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDiagram >& xDiagram )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDiagram >& xDiagram );
     virtual void SAL_CALL
-        createInternalDataProvider( sal_Bool bCloneExistingData )
-            throw (::com::sun::star::util::CloseVetoException,
-                   ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasInternalDataProvider()
-        throw (::com::sun::star::uno::RuntimeException);
+        createInternalDataProvider( sal_Bool bCloneExistingData );
+    virtual ::sal_Bool SAL_CALL hasInternalDataProvider();
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataProvider > SAL_CALL
-        getDataProvider()
-            throw (::com::sun::star::uno::RuntimeException);
+        getDataProvider();
     virtual void SAL_CALL
         setChartTypeManager( const ::com::sun::star::uno::Reference<
-                             ::com::sun::star::chart2::XChartTypeManager >& xNewManager )
-            throw (::com::sun::star::uno::RuntimeException);
+                             ::com::sun::star::chart2::XChartTypeManager >& xNewManager );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartTypeManager > SAL_CALL
-        getChartTypeManager()
-            throw (::com::sun::star::uno::RuntimeException);
+        getChartTypeManager();
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL
-        getPageBackground()
-            throw (::com::sun::star::uno::RuntimeException);
+        getPageBackground();
 
     // ____ XDataReceiver (public API) ____
     virtual void SAL_CALL
         attachDataProvider( const ::com::sun::star::uno::Reference<
-                            ::com::sun::star::chart2::data::XDataProvider >& xProvider )
-            throw (::com::sun::star::uno::RuntimeException);
+                            ::com::sun::star::chart2::data::XDataProvider >& xProvider );
     virtual void SAL_CALL setArguments(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArguments )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getUsedRangeRepresentations()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSource > SAL_CALL getUsedData()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArguments );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getUsedRangeRepresentations();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSource > SAL_CALL getUsedData();
     virtual void SAL_CALL attachNumberFormatsSupplier( const ::com::sun::star::uno::Reference<
-        ::com::sun::star::util::XNumberFormatsSupplier >& xSupplier )
-            throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XRangeHighlighter > SAL_CALL getRangeHighlighter()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::util::XNumberFormatsSupplier >& xSupplier );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XRangeHighlighter > SAL_CALL getRangeHighlighter();
 
     // ____ XTitled ____
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::chart2::XTitle > SAL_CALL getTitleObject()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::chart2::XTitle > SAL_CALL getTitleObject();
     virtual void SAL_CALL setTitleObject( const ::com::sun::star::uno::Reference<
-                                          ::com::sun::star::chart2::XTitle >& Title )
-        throw (::com::sun::star::uno::RuntimeException);
+                                          ::com::sun::star::chart2::XTitle >& Title );
 
     // ____ XInterface (for old API wrapper) ____
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
 
     // ____ XLoadable ____
-    virtual void SAL_CALL initNew()
-        throw (::com::sun::star::frame::DoubleInitializationException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initNew();
     virtual void SAL_CALL load( const ::com::sun::star::uno::Sequence<
-                                ::com::sun::star::beans::PropertyValue >& rMediaDescriptor )
-        throw (::com::sun::star::frame::DoubleInitializationException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+                                ::com::sun::star::beans::PropertyValue >& rMediaDescriptor );
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     // ____ XVisualObject ____
     virtual void SAL_CALL setVisualAreaSize(
         ::sal_Int64 nAspect,
-        const ::com::sun::star::awt::Size& aSize )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::embed::WrongStateException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::awt::Size& aSize );
     virtual ::com::sun::star::awt::Size SAL_CALL getVisualAreaSize(
-        ::sal_Int64 nAspect )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::embed::WrongStateException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        ::sal_Int64 nAspect );
     virtual ::com::sun::star::embed::VisualRepresentation SAL_CALL getPreferredVisualRepresentation(
-        ::sal_Int64 nAspect )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::embed::WrongStateException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        ::sal_Int64 nAspect );
     virtual ::sal_Int32 SAL_CALL getMapUnit(
-        ::sal_Int64 nAspect )
-        throw (::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        ::sal_Int64 nAspect );
 
     // ____ XMultiServiceFactory ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
-        createInstance( const ::rtl::OUString& aServiceSpecifier )
-            throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        createInstance( const ::rtl::OUString& aServiceSpecifier );
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
         createInstanceWithArguments( const ::rtl::OUString& ServiceSpecifier
-                                   , const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Arguments )
-            throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+                                   , const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Arguments );
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getAvailableServiceNames() throw (::com::sun::star::uno::RuntimeException);
+        getAvailableServiceNames();
 
     // ____ XStorageBasedDocument ____
     virtual void SAL_CALL loadFromStorage(
         const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage,
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescriptor )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::frame::DoubleInitializationException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescriptor );
     virtual void SAL_CALL storeToStorage(
         const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage,
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescriptor )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rMediaDescriptor );
     virtual void SAL_CALL switchToStorage(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage > SAL_CALL getDocumentStorage()
-        throw (::com::sun::star::io::IOException,
-               ::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& xStorage );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage > SAL_CALL getDocumentStorage();
     virtual void SAL_CALL addStorageChangeListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::document::XStorageChangeListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::document::XStorageChangeListener >& xListener );
     virtual void SAL_CALL removeStorageChangeListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::document::XStorageChangeListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::document::XStorageChangeListener >& xListener );
 
 	// for SvNumberFormatsSupplierObj
     // ____ XUnoTunnel ___
-    virtual ::sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& aIdentifier )
-            throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< ::sal_Int8 >& aIdentifier );
 
     // ____ XNumberFormatsSupplier ____
     virtual ::com::sun::star::uno::Reference<
-                ::com::sun::star::beans::XPropertySet > SAL_CALL getNumberFormatSettings()
-            throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::beans::XPropertySet > SAL_CALL getNumberFormatSettings();
     virtual ::com::sun::star::uno::Reference<
-                ::com::sun::star::util::XNumberFormats > SAL_CALL getNumberFormats()
-            throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::util::XNumberFormats > SAL_CALL getNumberFormats();
 
     // ____ XChild ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent();
     virtual void SAL_CALL setParent(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent )
-        throw (::com::sun::star::lang::NoSupportException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Parent );
 
     // ____ XDataSource ____ allows access to the currently used data and data ranges
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XLabeledDataSequence > > SAL_CALL getDataSequences()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XLabeledDataSequence > > SAL_CALL getDataSequences();
 };
 
 }  // namespace chart

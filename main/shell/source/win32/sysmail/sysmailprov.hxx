@@ -46,18 +46,14 @@ namespace shell
         ~WinSysMailProvider( );
 
         // XSystemMailProvider
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailClient > SAL_CALL queryMailClient(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::system::XMailClient > SAL_CALL queryMailClient(  );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
 
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-            throw(::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         static com::sun::star::uno::Reference< com::sun::star::uno::XInterface > Create( const com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xContext);
         static rtl::OUString getImplementationName_static();

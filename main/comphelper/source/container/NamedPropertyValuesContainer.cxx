@@ -49,37 +49,25 @@ public:
 	virtual ~NamedPropertyValuesContainer() throw();
 
 	// XNameContainer
-	virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement )
-		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException,
-		::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeByName( const ::rtl::OUString& Name )
-		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException,
-			::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement );
+	virtual void SAL_CALL removeByName( const ::rtl::OUString& Name );
 
 	// XNameReplace
-	virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement )
-		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException,
-			::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement );
 
 	// XNameAccess
-	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
-		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException,
-			::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  )
-		throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  );
+	virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
 	// XElementAccess
-	virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  )
-		throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasElements(  )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+	virtual sal_Bool SAL_CALL hasElements(  );
 
 	//XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// XServiceInfo - static versions (used for component registration)
 	static ::rtl::OUString SAL_CALL getImplementationName_static();
@@ -100,8 +88,6 @@ NamedPropertyValuesContainer::~NamedPropertyValuesContainer() throw()
 
 // XNameContainer
 void SAL_CALL NamedPropertyValuesContainer::insertByName( const rtl::OUString& aName, const uno::Any& aElement )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException,
-		::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	if( maProperties.find( aName ) != maProperties.end() )
 		throw container::ElementExistException();
@@ -114,8 +100,6 @@ void SAL_CALL NamedPropertyValuesContainer::insertByName( const rtl::OUString& a
 }
 
 void SAL_CALL NamedPropertyValuesContainer::removeByName( const ::rtl::OUString& Name )
-	throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException,
-		::com::sun::star::uno::RuntimeException)
 {
 	NamedPropertyValues::iterator aIter = maProperties.find( Name );
 	if( aIter == maProperties.end() )
@@ -126,8 +110,6 @@ void SAL_CALL NamedPropertyValuesContainer::removeByName( const ::rtl::OUString&
 
 // XNameReplace
 void SAL_CALL NamedPropertyValuesContainer::replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException,
-		::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	NamedPropertyValues::iterator aIter = maProperties.find( aName );
 	if( aIter == maProperties.end() )
@@ -142,8 +124,6 @@ void SAL_CALL NamedPropertyValuesContainer::replaceByName( const ::rtl::OUString
 
 // XNameAccess
 ::com::sun::star::uno::Any SAL_CALL NamedPropertyValuesContainer::getByName( const ::rtl::OUString& aName )
-	throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException,
-		::com::sun::star::uno::RuntimeException)
 {
 	NamedPropertyValues::iterator aIter = maProperties.find( aName );
 	if( aIter == maProperties.end() )
@@ -157,7 +137,6 @@ void SAL_CALL NamedPropertyValuesContainer::replaceByName( const ::rtl::OUString
 }
 
 ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL NamedPropertyValuesContainer::getElementNames(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	NamedPropertyValues::iterator aIter = maProperties.begin();
 	const NamedPropertyValues::iterator aEnd = maProperties.end();
@@ -174,7 +153,6 @@ void SAL_CALL NamedPropertyValuesContainer::replaceByName( const ::rtl::OUString
 }
 
 sal_Bool SAL_CALL NamedPropertyValuesContainer::hasByName( const ::rtl::OUString& aName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	NamedPropertyValues::iterator aIter = maProperties.find( aName );
 	return aIter != maProperties.end();
@@ -182,19 +160,17 @@ sal_Bool SAL_CALL NamedPropertyValuesContainer::hasByName( const ::rtl::OUString
 
 // XElementAccess
 ::com::sun::star::uno::Type SAL_CALL NamedPropertyValuesContainer::getElementType(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return ::getCppuType((uno::Sequence<beans::PropertyValue> *)0);
 }
 
 sal_Bool SAL_CALL NamedPropertyValuesContainer::hasElements(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return !maProperties.empty();
 }
 
 //XServiceInfo
-::rtl::OUString SAL_CALL NamedPropertyValuesContainer::getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL NamedPropertyValuesContainer::getImplementationName(  )
 {
 	return getImplementationName_static();
 }
@@ -204,13 +180,13 @@ sal_Bool SAL_CALL NamedPropertyValuesContainer::hasElements(  )
 	return rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "NamedPropertyValuesContainer" ) );
 }
 
-sal_Bool SAL_CALL NamedPropertyValuesContainer::supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL NamedPropertyValuesContainer::supportsService( const ::rtl::OUString& ServiceName )
 {
 	rtl::OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.document.NamedPropertyValues" ) );
 	return aServiceName == ServiceName;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL NamedPropertyValuesContainer::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL NamedPropertyValuesContainer::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_static();
 }

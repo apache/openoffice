@@ -288,14 +288,14 @@ void VCLXAccessibleStatusBar::disposing()
 // XServiceInfo
 // -----------------------------------------------------------------------------
 
-::rtl::OUString VCLXAccessibleStatusBar::getImplementationName() throw (RuntimeException)
+::rtl::OUString VCLXAccessibleStatusBar::getImplementationName()
 {
 	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleStatusBar" );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > VCLXAccessibleStatusBar::getSupportedServiceNames() throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleStatusBar::getSupportedServiceNames()
 {
 	Sequence< ::rtl::OUString > aNames(1);
 	aNames[0] = ::rtl::OUString::createFromAscii( "com.sun.star.awt.AccessibleStatusBar" );
@@ -306,7 +306,7 @@ Sequence< ::rtl::OUString > VCLXAccessibleStatusBar::getSupportedServiceNames() 
 // XAccessibleContext
 // -----------------------------------------------------------------------------
 
-sal_Int32 VCLXAccessibleStatusBar::getAccessibleChildCount() throw (RuntimeException)
+sal_Int32 VCLXAccessibleStatusBar::getAccessibleChildCount()
 {
 	OExternalLockGuard aGuard( this );
 
@@ -315,7 +315,7 @@ sal_Int32 VCLXAccessibleStatusBar::getAccessibleChildCount() throw (RuntimeExcep
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessible > VCLXAccessibleStatusBar::getAccessibleChild( sal_Int32 i ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessible > VCLXAccessibleStatusBar::getAccessibleChild( sal_Int32 i )
 {
 	OExternalLockGuard aGuard( this );
 
@@ -343,7 +343,7 @@ Reference< XAccessible > VCLXAccessibleStatusBar::getAccessibleChild( sal_Int32 
 // XAccessibleComponent
 // -----------------------------------------------------------------------------
 
-Reference< XAccessible > VCLXAccessibleStatusBar::getAccessibleAtPoint( const awt::Point& rPoint ) throw (RuntimeException)
+Reference< XAccessible > VCLXAccessibleStatusBar::getAccessibleAtPoint( const awt::Point& rPoint )
 {
 	OExternalLockGuard aGuard( this );
 

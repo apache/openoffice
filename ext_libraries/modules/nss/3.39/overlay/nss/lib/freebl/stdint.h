@@ -1,4 +1,22 @@
 /* stdint.h shim for MSVC 2008 (which predates C99 stdint.h) */
+
+/* A modern MSVC ships a real <stdint.h>, and this shim is not merely redundant
+ * there -- it is harmful.  nss/lib/freebl is on the include path ahead of the
+ * system directories, so it captures every <stdint.h>, including the one the
+ * UCRT's own <inttypes.h> asks for.  freebl/verified/kremlib_base.h includes
+ * <inttypes.h> from _MSC_VER >= 1800 on and then uses UINT64_C(), which this
+ * shim does not define; in C that becomes an implicit function declaration and
+ * fails at link time as an unresolved UINT64_C.
+ *
+ * The real header cannot be reached by name from here -- this file would find
+ * itself.  The escape is the same one main/stlport/systemstl uses for the same
+ * problem: a path that only resolves from inside the toolset's own include
+ * directory, and from nowhere else on the search path.
+ */
+#if defined(_MSC_VER) && _MSC_VER >= 1900
+#include <../include/stdint.h>
+#else
+
 #ifndef _STDINT_H_SHIM_
 #define _STDINT_H_SHIM_
 
@@ -65,3 +83,5 @@ typedef __int64          intmax_t;
 
 #endif /* _MSC_VER */
 #endif /* _STDINT_H_SHIM_ */
+
+#endif /* _MSC_VER >= 1900 */

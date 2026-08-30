@@ -56,27 +56,18 @@ public:
         const ::com::sun::star::uno::Sequence<
             ::com::sun::star::uno::TypeClass > & rTypes,
         ::com::sun::star::reflection::TypeDescriptionSearchDepth eDepth,
-        const RegistryKeyList & rBaseKeys )
-            throw ( ::com::sun::star::reflection::NoSuchTypeNameException,
-                    ::com::sun::star::reflection::InvalidTypeNameException,
-                    ::com::sun::star::uno::RuntimeException );
+        const RegistryKeyList & rBaseKeys );
 
     virtual ~TypeDescriptionEnumerationImpl();
 
     // XEnumeration (base of XTypeDescriptionEnumeration)
-    virtual sal_Bool SAL_CALL hasMoreElements()
-        throw ( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Any SAL_CALL nextElement()
-        throw ( ::com::sun::star::container::NoSuchElementException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL hasMoreElements();
+    virtual ::com::sun::star::uno::Any SAL_CALL nextElement();
 
     // XTypeDescriptionEnumeration
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::reflection::XTypeDescription > SAL_CALL
-    nextTypeDescription()
-        throw ( ::com::sun::star::container::NoSuchElementException,
-                ::com::sun::star::uno::RuntimeException );
+    nextTypeDescription();
 
 private:
     // Note: keys must be open (XRegistryKey->openKey(...)).

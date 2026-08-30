@@ -64,21 +64,21 @@ namespace cppu
         inline WeakComponentImplHelper3( ::osl::Mutex & rMutex ) throw ()
             : WeakComponentImplHelperBase( rMutex )
             {}
-        virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType )
             { return WeakComponentImplHelper_query( rType, cd::get(), this, (WeakComponentImplHelperBase *)this ); }
         virtual void SAL_CALL acquire() throw ()
             { WeakComponentImplHelperBase::acquire(); }
         virtual void SAL_CALL release() throw ()
             { WeakComponentImplHelperBase::release(); }
-        virtual void SAL_CALL dispose()throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL dispose()
             { WeakComponentImplHelperBase::dispose(); }
-        virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & xListener)throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & xListener)
             { WeakComponentImplHelperBase::addEventListener(xListener); }
-        virtual void SAL_CALL removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & xListener)throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & xListener)
             { WeakComponentImplHelperBase::removeEventListener(xListener); }
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
             { return WeakComponentImplHelper_getTypes( cd::get() ); }
-        virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
             { return ImplHelper_getImplementationId( cd::get() ); }
     };
 
@@ -115,17 +115,17 @@ namespace cppu
         inline WeakAggComponentImplHelper3( ::osl::Mutex & rMutex ) throw ()
             : WeakAggComponentImplHelperBase( rMutex )
             {}
-        virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( ::com::sun::star::uno::Type const & rType )
             { return WeakAggComponentImplHelperBase::queryInterface( rType ); }
-        virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( ::com::sun::star::uno::Type const & rType )
             { return WeakAggComponentImplHelper_queryAgg( rType, cd::get(), this, (WeakAggComponentImplHelperBase *)this ); }
         virtual void SAL_CALL acquire() throw ()
             { WeakAggComponentImplHelperBase::acquire(); }
         virtual void SAL_CALL release() throw ()
             { WeakAggComponentImplHelperBase::release(); }
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
             { return WeakAggComponentImplHelper_getTypes( cd::get() ); }
-        virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
             { return ImplHelper_getImplementationId( cd::get() ); }
     };
 }

@@ -61,7 +61,7 @@ namespace dbaccess
 		::vos::ORef< ::connectivity::OSQLColumns>	m_aColumns;
 	protected:
 		virtual connectivity::sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-		virtual void impl_refresh() throw(RuntimeException) {}
+		virtual void impl_refresh() {}
 		virtual Reference< XPropertySet > createDescriptor()
 		{
 			return NULL;
@@ -96,7 +96,7 @@ namespace dbaccess
 		OSQLTables	m_aTables;
 	protected:
 		virtual connectivity::sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-		virtual void impl_refresh() throw(RuntimeException) {}
+		virtual void impl_refresh() {}
 		virtual Reference< XPropertySet > createDescriptor()
 		{
 			return NULL;

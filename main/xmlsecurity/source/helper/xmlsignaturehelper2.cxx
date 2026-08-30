@@ -56,14 +56,12 @@ void ImplXMLSignatureListener::setNextHandler(
 }
 
 void SAL_CALL ImplXMLSignatureListener::signatureCreated( sal_Int32 securityId, com::sun::star::xml::crypto::SecurityOperationStatus nResult )
-		throw (com::sun::star::uno::RuntimeException)
 {
     XMLSignatureCreationResult aResult( securityId, nResult );
     maCreationResultListenerListener.Call( &aResult );
 }
 
 void SAL_CALL ImplXMLSignatureListener::signatureVerified( sal_Int32 securityId, com::sun::star::xml::crypto::SecurityOperationStatus nResult )
-		throw (com::sun::star::uno::RuntimeException)
 {
     XMLSignatureVerifyResult aResult( securityId, nResult );
     maVerifyResultListenerListener.Call( &aResult );
@@ -73,7 +71,6 @@ void SAL_CALL ImplXMLSignatureListener::signatureVerified( sal_Int32 securityId,
 // XDocumentHandler
 // ---------------------------------------------------------------------------------
 void SAL_CALL ImplXMLSignatureListener::startDocument(  )
-	throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -82,7 +79,6 @@ void SAL_CALL ImplXMLSignatureListener::startDocument(  )
 }
 
 void SAL_CALL ImplXMLSignatureListener::endDocument(  )
-	throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -91,7 +87,6 @@ void SAL_CALL ImplXMLSignatureListener::endDocument(  )
 }
 
 void SAL_CALL ImplXMLSignatureListener::startElement( const rtl::OUString& aName, const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttribs )
-		throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if ( aName == rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Signature")) )
 	{
@@ -105,7 +100,6 @@ void SAL_CALL ImplXMLSignatureListener::startElement( const rtl::OUString& aName
 }
 
 void SAL_CALL ImplXMLSignatureListener::endElement( const rtl::OUString& aName )
-	throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -114,7 +108,6 @@ void SAL_CALL ImplXMLSignatureListener::endElement( const rtl::OUString& aName )
 }
 
 void SAL_CALL ImplXMLSignatureListener::characters( const rtl::OUString& aChars )
-	throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -123,7 +116,6 @@ void SAL_CALL ImplXMLSignatureListener::characters( const rtl::OUString& aChars 
 }
 
 void SAL_CALL ImplXMLSignatureListener::ignorableWhitespace( const rtl::OUString& aWhitespaces )
-	throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -132,7 +124,6 @@ void SAL_CALL ImplXMLSignatureListener::ignorableWhitespace( const rtl::OUString
 }
 
 void SAL_CALL ImplXMLSignatureListener::processingInstruction( const rtl::OUString& aTarget, const rtl::OUString& aData )
-	throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -141,7 +132,6 @@ void SAL_CALL ImplXMLSignatureListener::processingInstruction( const rtl::OUStri
 }
 
 void SAL_CALL ImplXMLSignatureListener::setDocumentLocator( const com::sun::star::uno::Reference< com::sun::star::xml::sax::XLocator >& xLocator )
-	throw (com::sun::star::xml::sax::SAXException, com::sun::star::uno::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -164,12 +154,10 @@ UriBindingHelper::UriBindingHelper( const com::sun::star::uno::Reference < com::
 
 
 void SAL_CALL UriBindingHelper::setUriBinding( const rtl::OUString& /*uri*/, const uno::Reference< io::XInputStream >&)
-    throw (uno::Exception, uno::RuntimeException)
 {
 }
 
 uno::Reference< io::XInputStream > SAL_CALL UriBindingHelper::getUriBinding( const rtl::OUString& uri )
-	throw (uno::Exception, uno::RuntimeException)
 {
     uno::Reference< io::XInputStream > xInputStream;
     if ( mxStorage.is() )

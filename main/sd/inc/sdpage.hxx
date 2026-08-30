@@ -318,10 +318,10 @@ public:
 	void getAlienAttributes( com::sun::star::uno::Any& rAttributes );
 
 	/** returns the main animation node */
-	::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode > getAnimationNode() throw (::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode > getAnimationNode();
 
 	/** sets the main animation node */
-	void setAnimationNode( ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& xNode ) throw (::com::sun::star::uno::RuntimeException);
+	void setAnimationNode( ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >& xNode );
 
 	/** returns a helper class to manipulate effects inside the main sequence */
 	boost::shared_ptr< sd::MainSequence > getMainSequence();

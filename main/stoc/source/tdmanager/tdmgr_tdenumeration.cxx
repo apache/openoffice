@@ -71,7 +71,6 @@ TypeDescriptionEnumerationImpl::~TypeDescriptionEnumerationImpl()
 
 // virtual
 sal_Bool SAL_CALL TypeDescriptionEnumerationImpl::hasMoreElements()
-    throw ( uno::RuntimeException )
 {
     uno::Reference< reflection::XTypeDescriptionEnumeration > xEnum
         = queryCurrentChildEnumeration();
@@ -84,9 +83,6 @@ sal_Bool SAL_CALL TypeDescriptionEnumerationImpl::hasMoreElements()
 //=========================================================================
 // virtual
 uno::Any SAL_CALL TypeDescriptionEnumerationImpl::nextElement()
-    throw ( container::NoSuchElementException,
-            lang::WrappedTargetException,
-            uno::RuntimeException )
 {
     uno::Reference< reflection::XTypeDescriptionEnumeration > xEnum
         = queryCurrentChildEnumeration();
@@ -108,8 +104,6 @@ uno::Any SAL_CALL TypeDescriptionEnumerationImpl::nextElement()
 // virtual
 uno::Reference< reflection::XTypeDescription > SAL_CALL
 TypeDescriptionEnumerationImpl::nextTypeDescription()
-    throw ( container::NoSuchElementException,
-            uno::RuntimeException )
 {
     uno::Reference< reflection::XTypeDescriptionEnumeration > xEnum
         = queryCurrentChildEnumeration();

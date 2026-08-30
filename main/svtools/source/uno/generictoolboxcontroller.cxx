@@ -85,7 +85,6 @@ GenericToolboxController::~GenericToolboxController()
 }
 
 void SAL_CALL GenericToolboxController::dispose()
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 
@@ -96,7 +95,6 @@ throw ( RuntimeException )
 }
 
 void SAL_CALL GenericToolboxController::execute( sal_Int16 /*KeyModifier*/ )
-throw ( RuntimeException )
 {
     Reference< XDispatch >       xDispatch;
     Reference< XURLTransformer > xURLTransformer;
@@ -142,7 +140,6 @@ throw ( RuntimeException )
 }
 
 void GenericToolboxController::statusChanged( const FeatureStateEvent& Event )
-throw ( RuntimeException )
 {
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 

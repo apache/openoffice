@@ -123,7 +123,6 @@ bool RegressionCurveItemConverter::GetItemProperty(
 
 bool RegressionCurveItemConverter::ApplySpecialItem(
     sal_uInt16 nWhichId, const SfxItemSet & rItemSet )
-    throw( uno::Exception )
 {
     uno::Reference< chart2::XRegressionCurve > xCurve( GetPropertySet(), uno::UNO_QUERY );
     bool bChanged = false;
@@ -214,7 +213,6 @@ bool RegressionCurveItemConverter::ApplySpecialItem(
 
 void RegressionCurveItemConverter::FillSpecialItem(
     sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const
-    throw( uno::Exception )
 {
     uno::Reference< chart2::XRegressionCurve > xCurve( GetPropertySet(), uno::UNO_QUERY );
 

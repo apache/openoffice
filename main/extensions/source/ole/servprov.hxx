@@ -39,16 +39,11 @@ using namespace std;
 
 namespace ole_adapter
 {
-Reference< XInterface> SAL_CALL ConverterProvider_CreateInstance(	const Reference<XMultiServiceFactory> & xSMgr)
-							throw( Exception);
-Reference< XInterface> SAL_CALL ConverterProvider_CreateInstance2(	const Reference<XMultiServiceFactory> & xSMgr)
-							throw( Exception);
-Reference< XInterface> SAL_CALL ConverterProvider_CreateInstanceVar1(	const Reference<XMultiServiceFactory> & xSMgr)
-							throw( Exception);
-Reference<XInterface> SAL_CALL OleClient_CreateInstance( const Reference<XMultiServiceFactory> & xSMgr)
-							throw( Exception);
-Reference<XInterface> SAL_CALL OleServer_CreateInstance( const Reference<XMultiServiceFactory> & xSMgr)
-							throw( Exception);
+Reference< XInterface> SAL_CALL ConverterProvider_CreateInstance(	const Reference<XMultiServiceFactory> & xSMgr);
+Reference< XInterface> SAL_CALL ConverterProvider_CreateInstance2(	const Reference<XMultiServiceFactory> & xSMgr);
+Reference< XInterface> SAL_CALL ConverterProvider_CreateInstanceVar1(	const Reference<XMultiServiceFactory> & xSMgr);
+Reference<XInterface> SAL_CALL OleClient_CreateInstance( const Reference<XMultiServiceFactory> & xSMgr);
+Reference<XInterface> SAL_CALL OleServer_CreateInstance( const Reference<XMultiServiceFactory> & xSMgr);
 /*****************************************************************************
 
 	class declaration IClassFactoryWrapper
@@ -187,11 +182,10 @@ public:
 	virtual Any SAL_CALL createBridge(const Any& modelDepObject,
 								const Sequence<sal_Int8>& ProcessId,
 								sal_Int16 sourceModelType,
-								sal_Int16 destModelType)
-			throw (IllegalArgumentException, RuntimeException);
+								sal_Int16 destModelType);
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments ) throw(Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// Abstract struct UnoConversionUtilities
 	virtual Reference< XInterface > createUnoWrapperInstance();
@@ -218,9 +212,9 @@ public:
 	~OleClient_Impl();
 
 	// XMultiServiceFactory
-	virtual Reference<XInterface> SAL_CALL createInstance(const OUString& ServiceSpecifier) throw( Exception, RuntimeException);
-    virtual Reference<XInterface> SAL_CALL createInstanceWithArguments(const OUString& ServiceSpecifier, const Sequence< Any >& Arguments) throw (Exception, RuntimeException);
-	Sequence< OUString >	SAL_CALL getAvailableServiceNames() throw (RuntimeException);
+	virtual Reference<XInterface> SAL_CALL createInstance(const OUString& ServiceSpecifier);
+    virtual Reference<XInterface> SAL_CALL createInstanceWithArguments(const OUString& ServiceSpecifier, const Sequence< Any >& Arguments);
+	Sequence< OUString >	SAL_CALL getAvailableServiceNames();
 
 	// Abstract struct UnoConversionUtilities
 	virtual Reference< XInterface > createUnoWrapperInstance();
@@ -250,13 +244,13 @@ public:
 	~OleServer_Impl();
 
 	// XInterface
-    virtual Any SAL_CALL queryInterface( const Type& aType ) throw(RuntimeException);
+    virtual Any SAL_CALL queryInterface( const Type& aType );
     virtual void SAL_CALL acquire(  ) throw ();
     virtual void SAL_CALL release(  ) throw ();
 
 	// XTypeProvider
-    virtual Sequence< Type > SAL_CALL getTypes( ) throw(RuntimeException);
-    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw(RuntimeException);
+    virtual Sequence< Type > SAL_CALL getTypes( );
+    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 protected:
 

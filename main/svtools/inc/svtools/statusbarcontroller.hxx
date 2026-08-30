@@ -70,40 +70,40 @@ class SVT_DLLPUBLIC StatusbarController :
         ::Rectangle getControlRect() const;
 
         // XInterface
-		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
 		virtual void SAL_CALL acquire() throw ();
 		virtual void SAL_CALL release() throw ();
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XUpdatable
-        virtual void SAL_CALL update() throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL update();
 
         // XComponent
-        virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL dispose();
+        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
         // XEventListener
-		virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source );
 
         // XStatusListener
-		virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
         // XStatusbarController
-        virtual ::sal_Bool SAL_CALL mouseButtonDown( const ::com::sun::star::awt::MouseEvent& aMouseEvent ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL mouseMove( const ::com::sun::star::awt::MouseEvent& aMouseEvent ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL mouseButtonUp( const ::com::sun::star::awt::MouseEvent& aMouseEvent ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Bool SAL_CALL mouseButtonDown( const ::com::sun::star::awt::MouseEvent& aMouseEvent );
+        virtual ::sal_Bool SAL_CALL mouseMove( const ::com::sun::star::awt::MouseEvent& aMouseEvent );
+        virtual ::sal_Bool SAL_CALL mouseButtonUp( const ::com::sun::star::awt::MouseEvent& aMouseEvent );
         virtual void SAL_CALL command( const ::com::sun::star::awt::Point& aPos,
                                        ::sal_Int32 nCommand,
                                        ::sal_Bool bMouseEvent,
-                                       const ::com::sun::star::uno::Any& aData ) throw (::com::sun::star::uno::RuntimeException);
+                                       const ::com::sun::star::uno::Any& aData );
         virtual void SAL_CALL paint( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >& xGraphics,
                                      const ::com::sun::star::awt::Rectangle& rOutputRectangle,
-                                     ::sal_Int32 nStyle ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL click( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL doubleClick( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
+                                     ::sal_Int32 nStyle );
+        virtual void SAL_CALL click( const ::com::sun::star::awt::Point& aPos );
+        virtual void SAL_CALL doubleClick( const ::com::sun::star::awt::Point& aPos );
 
     protected:
         struct Listener

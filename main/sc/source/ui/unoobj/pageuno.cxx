@@ -52,20 +52,17 @@ uno::Reference<drawing::XShape > ScPageObj::_CreateShape( SdrObject *pObj ) cons
 }
 
 ::rtl::OUString SAL_CALL ScPageObj::getImplementationName()
-								throw(uno::RuntimeException)
 {
     return rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ScPageObj"));
 }
 
 sal_Bool SAL_CALL ScPageObj::supportsService( const rtl::OUString& rServiceName )
-													throw(uno::RuntimeException)
 {
 	String aServiceStr(rServiceName);
 	return aServiceStr.EqualsAscii( "com.sun.star.sheet.SpreadsheetDrawPage" );
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL ScPageObj::getSupportedServiceNames()
-													throw(uno::RuntimeException)
 {
 	uno::Sequence<rtl::OUString> aRet(1);
 	rtl::OUString* pArray = aRet.getArray();

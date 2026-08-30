@@ -55,11 +55,11 @@ namespace dbmm
         void    dispose();
 
         // XStatusIndicator
-        virtual void SAL_CALL start( const ::rtl::OUString& Text, ::sal_Int32 Range ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL end(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setText( const ::rtl::OUString& Text ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setValue( ::sal_Int32 Value ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL reset(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL start( const ::rtl::OUString& Text, ::sal_Int32 Range );
+        virtual void SAL_CALL end(  );
+        virtual void SAL_CALL setText( const ::rtl::OUString& Text );
+        virtual void SAL_CALL setValue( ::sal_Int32 Value );
+        virtual void SAL_CALL reset(  );
 
     protected:
         virtual ~ProgressCapture();

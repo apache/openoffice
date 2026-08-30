@@ -54,23 +54,17 @@ public:
 
 	// XInputStream
     virtual sal_Int32 SAL_CALL readBytes(
-		Sequence< sal_Int8 > & rData, sal_Int32 nBytesToRead )
-		throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, RuntimeException);
+		Sequence< sal_Int8 > & rData, sal_Int32 nBytesToRead );
 	virtual sal_Int32 SAL_CALL readSomeBytes(
-		Sequence< sal_Int8 > & rData, sal_Int32 nMaxBytesToRead )
-		throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, RuntimeException);
+		Sequence< sal_Int8 > & rData, sal_Int32 nMaxBytesToRead );
     virtual void SAL_CALL skipBytes(
-		sal_Int32 nBytesToSkip )
-		throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, RuntimeException);
-    virtual sal_Int32 SAL_CALL available()
-		throw (io::NotConnectedException, io::IOException, RuntimeException);
-    virtual void SAL_CALL closeInput()
-		throw (io::NotConnectedException, io::IOException, RuntimeException);
+		sal_Int32 nBytesToSkip );
+    virtual sal_Int32 SAL_CALL available();
+    virtual void SAL_CALL closeInput();
 };
 //__________________________________________________________________________________________________
 sal_Int32 BSeqInputStream::readBytes(
 	Sequence< sal_Int8 > & rData, sal_Int32 nBytesToRead )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, RuntimeException)
 {
 	nBytesToRead = ((nBytesToRead > _seq.getLength() - _nPos)
 					? _seq.getLength() - _nPos
@@ -84,25 +78,21 @@ sal_Int32 BSeqInputStream::readBytes(
 //__________________________________________________________________________________________________
 sal_Int32 BSeqInputStream::readSomeBytes(
 	Sequence< sal_Int8 > & rData, sal_Int32 nMaxBytesToRead )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, RuntimeException)
 {
 	return readBytes( rData, nMaxBytesToRead );
 }
 //__________________________________________________________________________________________________
 void BSeqInputStream::skipBytes(
 	sal_Int32 /*nBytesToSkip*/ )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 sal_Int32 BSeqInputStream::available()
-	throw (io::NotConnectedException, io::IOException, RuntimeException)
 {
 	return (_seq.getLength() - _nPos);
 }
 //__________________________________________________________________________________________________
 void BSeqInputStream::closeInput()
-	throw (io::NotConnectedException, io::IOException, RuntimeException)
 {
 }
 
@@ -122,16 +112,12 @@ public:
 
 	// XOutputStream
     virtual void SAL_CALL writeBytes(
-		Sequence< sal_Int8 > const & rData )
-		throw (io::NotConnectedException, io::BufferSizeExceededException, RuntimeException);
-    virtual void SAL_CALL flush()
-		throw (io::NotConnectedException, io::BufferSizeExceededException, RuntimeException);
-    virtual void SAL_CALL closeOutput()
-		throw (io::NotConnectedException, io::BufferSizeExceededException, RuntimeException);
+		Sequence< sal_Int8 > const & rData );
+    virtual void SAL_CALL flush();
+    virtual void SAL_CALL closeOutput();
 };
 //__________________________________________________________________________________________________
 void BSeqOutputStream::writeBytes( Sequence< sal_Int8 > const & rData )
-	throw (io::NotConnectedException, io::BufferSizeExceededException, RuntimeException)
 {
 	sal_Int32 nPos = _seq->getLength();
 	_seq->realloc( nPos + rData.getLength() );
@@ -141,12 +127,10 @@ void BSeqOutputStream::writeBytes( Sequence< sal_Int8 > const & rData )
 }
 //__________________________________________________________________________________________________
 void BSeqOutputStream::flush()
-	throw (io::NotConnectedException, io::BufferSizeExceededException, RuntimeException)
 {
 }
 //__________________________________________________________________________________________________
 void BSeqOutputStream::closeOutput()
-	throw (io::NotConnectedException, io::BufferSizeExceededException, RuntimeException)
 {
 }
 

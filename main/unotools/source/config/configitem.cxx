@@ -96,10 +96,10 @@ namespace utl{
 			~ConfigChangeListener_Impl();
 
 		//XChangesListener
-    	virtual void SAL_CALL changesOccurred( const ChangesEvent& Event ) throw(RuntimeException);
+    	virtual void SAL_CALL changesOccurred( const ChangesEvent& Event );
 
 		//XEventListener
-    	virtual void SAL_CALL disposing( const EventObject& Source ) throw(RuntimeException);
+    	virtual void SAL_CALL disposing( const EventObject& Source );
 	};
 /* -----------------------------12.02.01 11:38--------------------------------
 
@@ -192,7 +192,7 @@ sal_Bool lcl_Find(
 	return sal_False;
 }
 //-----------------------------------------------------------------------------
-void ConfigChangeListener_Impl::changesOccurred( const ChangesEvent& rEvent ) throw(RuntimeException)
+void ConfigChangeListener_Impl::changesOccurred( const ChangesEvent& rEvent )
 {
 	const ElementChange* pElementChanges = rEvent.Changes.getConstArray();
 
@@ -223,7 +223,7 @@ void ConfigChangeListener_Impl::changesOccurred( const ChangesEvent& rEvent ) th
 /* -----------------------------29.08.00 16:34--------------------------------
 
  ---------------------------------------------------------------------------*/
-void ConfigChangeListener_Impl::disposing( const EventObject& /*rSource*/ ) throw(RuntimeException)
+void ConfigChangeListener_Impl::disposing( const EventObject& /*rSource*/ )
 {
 	pParent->RemoveChangesListener();
 }

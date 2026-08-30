@@ -43,7 +43,6 @@ ZipPackageBuffer::~ZipPackageBuffer(void)
 }
 
 sal_Int32 SAL_CALL ZipPackageBuffer::readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 	if (nBytesToRead < 0)
 		throw BufferSizeExceededException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), *this );
@@ -58,12 +57,10 @@ sal_Int32 SAL_CALL ZipPackageBuffer::readBytes( Sequence< sal_Int8 >& aData, sal
 }
 
 sal_Int32 SAL_CALL ZipPackageBuffer::readSomeBytes( Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 	return readBytes(aData, nMaxBytesToRead);
 }
 void SAL_CALL ZipPackageBuffer::skipBytes( sal_Int32 nBytesToSkip )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 	if (nBytesToSkip < 0)
 		throw BufferSizeExceededException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), *this );
@@ -74,16 +71,13 @@ void SAL_CALL ZipPackageBuffer::skipBytes( sal_Int32 nBytesToSkip )
 	m_nCurrent+=nBytesToSkip;
 }
 sal_Int32 SAL_CALL ZipPackageBuffer::available(  )
-		throw(NotConnectedException, IOException, RuntimeException)
 {
 	return static_cast < sal_Int32 > (m_nEnd - m_nCurrent);
 }
 void SAL_CALL ZipPackageBuffer::closeInput(  )
-		throw(NotConnectedException, IOException, RuntimeException)
 {
 }
 void SAL_CALL ZipPackageBuffer::writeBytes( const Sequence< sal_Int8 >& aData )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 	sal_Int64 nDataLen = aData.getLength(), nCombined = m_nEnd + nDataLen;
 
@@ -106,27 +100,22 @@ void SAL_CALL ZipPackageBuffer::writeBytes( const Sequence< sal_Int8 >& aData )
 		m_nEnd = m_nCurrent;
 }
 void SAL_CALL ZipPackageBuffer::flush(  )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 }
 void SAL_CALL ZipPackageBuffer::closeOutput(  )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 }
 void SAL_CALL ZipPackageBuffer::seek( sal_Int64 location )
-		throw( IllegalArgumentException, IOException, RuntimeException)
 {
 	if ( location > m_nEnd || location < 0 )
 		throw IllegalArgumentException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >(), 1 );
 	m_nCurrent = location;
 }
 sal_Int64 SAL_CALL ZipPackageBuffer::getPosition(  )
-		throw(IOException, RuntimeException)
 {
 	return m_nCurrent;
 }
 sal_Int64 SAL_CALL ZipPackageBuffer::getLength(  )
-		throw(IOException, RuntimeException)
 {
 	return m_nEnd;
 }

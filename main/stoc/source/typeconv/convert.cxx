@@ -286,27 +286,21 @@ class TypeConverter_Impl : public WeakImplHelper2< XTypeConverter, XServiceInfo 
 {
 	// ...misc helpers...
 	sal_Int64 toHyper(
-        const Any& rAny, sal_Int64 min = SAL_INT64_MIN, sal_uInt64 max = SAL_UINT64_MAX )
-		throw( CannotConvertException );
-	double toDouble( const Any& rAny, double min = -DBL_MAX, double max = DBL_MAX ) const
-		throw( CannotConvertException );
+        const Any& rAny, sal_Int64 min = SAL_INT64_MIN, sal_uInt64 max = SAL_UINT64_MAX );
+	double toDouble( const Any& rAny, double min = -DBL_MAX, double max = DBL_MAX ) const;
 
 public:
 	TypeConverter_Impl();
 	virtual ~TypeConverter_Impl();
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw( RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName)
-        throw( RuntimeException );
-    virtual  Sequence< OUString > SAL_CALL getSupportedServiceNames(void)
-        throw( RuntimeException );
+	virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+    virtual  Sequence< OUString > SAL_CALL getSupportedServiceNames(void);
 
 	// XTypeConverter
-    virtual Any SAL_CALL convertTo( const Any& aFrom, const Type& DestinationType )
-        throw( IllegalArgumentException, CannotConvertException, RuntimeException);
-    virtual Any SAL_CALL convertToSimpleType( const Any& aFrom, TypeClass aDestinationType )
-        throw( IllegalArgumentException, CannotConvertException, RuntimeException);
+    virtual Any SAL_CALL convertTo( const Any& aFrom, const Type& DestinationType );
+    virtual Any SAL_CALL convertToSimpleType( const Any& aFrom, TypeClass aDestinationType );
 };
 
 TypeConverter_Impl::TypeConverter_Impl()
@@ -320,13 +314,13 @@ TypeConverter_Impl::~TypeConverter_Impl()
 }
 
 // XServiceInfo
-OUString TypeConverter_Impl::getImplementationName() throw( RuntimeException )
+OUString TypeConverter_Impl::getImplementationName()
 {
 	return stoc_services::tcv_getImplementationName();
 }
 
 // XServiceInfo
-sal_Bool TypeConverter_Impl::supportsService(const OUString& ServiceName) throw( RuntimeException )
+sal_Bool TypeConverter_Impl::supportsService(const OUString& ServiceName)
 {
 	Sequence< OUString > aSNL = getSupportedServiceNames();
 	const OUString * pArray = aSNL.getConstArray();
@@ -337,14 +331,13 @@ sal_Bool TypeConverter_Impl::supportsService(const OUString& ServiceName) throw(
 }
 
 // XServiceInfo
-Sequence< OUString > TypeConverter_Impl::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< OUString > TypeConverter_Impl::getSupportedServiceNames(void)
 {
 	return stoc_services::tcv_getSupportedServiceNames();
 }
 
 //--------------------------------------------------------------------------------------------------
 sal_Int64 TypeConverter_Impl::toHyper( const Any& rAny, sal_Int64 min, sal_uInt64 max )
-	throw( CannotConvertException )
 {
 	sal_Int64 nRet;
 	TypeClass aDestinationClass = rAny.getValueTypeClass();
@@ -459,7 +452,6 @@ sal_Int64 TypeConverter_Impl::toHyper( const Any& rAny, sal_Int64 min, sal_uInt6
 
 //--------------------------------------------------------------------------------------------------
 double TypeConverter_Impl::toDouble( const Any& rAny, double min, double max ) const
-	throw( CannotConvertException )
 {
 	double fRet;
 	TypeClass aDestinationClass = rAny.getValueTypeClass();
@@ -540,7 +532,6 @@ double TypeConverter_Impl::toDouble( const Any& rAny, double min, double max ) c
 
 //--------------------------------------------------------------------------------------------------
 Any SAL_CALL TypeConverter_Impl::convertTo( const Any& rVal, const Type& aDestType )
-	throw( IllegalArgumentException, CannotConvertException, RuntimeException)
 {
 	Type aSourceType = rVal.getValueType();
 	if (aSourceType == aDestType)
@@ -736,7 +727,6 @@ Any SAL_CALL TypeConverter_Impl::convertTo( const Any& rVal, const Type& aDestTy
 
 //--------------------------------------------------------------------------------------------------
 Any TypeConverter_Impl::convertToSimpleType( const Any& rVal, TypeClass aDestinationClass )
-	throw( IllegalArgumentException, CannotConvertException, RuntimeException )
 {
 	switch (aDestinationClass)
 	{
@@ -950,7 +940,6 @@ namespace stoc_services
 //*************************************************************************
 Reference< XInterface > SAL_CALL TypeConverter_Impl_CreateInstance(
 	const Reference< XComponentContext > & )
-	throw( RuntimeException )
 {
 	static Reference< XInterface > s_ref( (OWeakObject *) new stoc_tcv::TypeConverter_Impl() );
 	return s_ref;

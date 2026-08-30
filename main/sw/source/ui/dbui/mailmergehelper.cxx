@@ -667,14 +667,14 @@ SwAuthenticator::~SwAuthenticator()
 /*-- 21.05.2004 10:36:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-OUString SwAuthenticator::getUserName( ) throw (RuntimeException)
+OUString SwAuthenticator::getUserName( )
 {
     return m_aUserName;
 }
 /*-- 21.05.2004 10:36:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-OUString SwAuthenticator::getPassword(  ) throw (RuntimeException)
+OUString SwAuthenticator::getPassword(  )
 {
     if(m_aUserName.getLength() && !m_aPassword.getLength() && m_pParentWindow)
     {
@@ -707,7 +707,6 @@ SwConnectionContext::~SwConnectionContext()
 
   -----------------------------------------------------------------------*/
 uno::Any SwConnectionContext::getValueByName( const ::rtl::OUString& rName )
-                                                throw (uno::RuntimeException)
 {
     uno::Any aRet;
     if( !rName.compareToAscii( "ServerName" ))
@@ -728,7 +727,6 @@ SwConnectionListener::~SwConnectionListener()
 
   -----------------------------------------------------------------------*/
 void SwConnectionListener::connected(const lang::EventObject& /*aEvent*/)
-    throw (uno::RuntimeException)
 {
     //OSL_ENSURE(false, "Connection opened");
 }
@@ -736,7 +734,6 @@ void SwConnectionListener::connected(const lang::EventObject& /*aEvent*/)
 
   -----------------------------------------------------------------------*/
 void SwConnectionListener::disconnected(const lang::EventObject& /*aEvent*/)
-    throw (uno::RuntimeException)
 {
     //OSL_ENSURE(false, "Connection closed");
 }
@@ -744,7 +741,6 @@ void SwConnectionListener::disconnected(const lang::EventObject& /*aEvent*/)
 
   -----------------------------------------------------------------------*/
 void SwConnectionListener::disposing(const lang::EventObject& /*aEvent*/)
-    throw(uno::RuntimeException)
 {
 }
 /*-- 21.05.2004 10:17:22---------------------------------------------------
@@ -792,8 +788,6 @@ SwMailTransferable::~SwMailTransferable()
 
   -----------------------------------------------------------------------*/
 uno::Any SwMailTransferable::getTransferData( const datatransfer::DataFlavor& /*aFlavor*/ )
-                            throw (datatransfer::UnsupportedFlavorException,
-                            io::IOException, uno::RuntimeException)
 {
     uno::Any aRet;
     if( m_bIsBody )
@@ -819,7 +813,6 @@ uno::Any SwMailTransferable::getTransferData( const datatransfer::DataFlavor& /*
 
   -----------------------------------------------------------------------*/
 uno::Sequence< datatransfer::DataFlavor > SwMailTransferable::getTransferDataFlavors(  )
-                            throw (uno::RuntimeException)
 {
     uno::Sequence< datatransfer::DataFlavor > aRet(1);
     aRet[0].MimeType = m_aMimeType;
@@ -839,14 +832,13 @@ uno::Sequence< datatransfer::DataFlavor > SwMailTransferable::getTransferDataFla
   -----------------------------------------------------------------------*/
 sal_Bool SwMailTransferable::isDataFlavorSupported(
             const datatransfer::DataFlavor& aFlavor )
-                            throw (uno::RuntimeException)
 {
     return (aFlavor.MimeType == ::rtl::OUString(m_aMimeType));
 }
 /*-- 28.04.2004 09:52:05---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< beans::XPropertySetInfo > SwMailTransferable::getPropertySetInfo(  ) throw(uno::RuntimeException)
+uno::Reference< beans::XPropertySetInfo > SwMailTransferable::getPropertySetInfo(  )
 {
     return uno::Reference< beans::XPropertySetInfo >();
 }
@@ -854,15 +846,12 @@ uno::Reference< beans::XPropertySetInfo > SwMailTransferable::getPropertySetInfo
 
   -----------------------------------------------------------------------*/
 void SwMailTransferable::setPropertyValue( const ::rtl::OUString& , const uno::Any& )
-    throw(beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException,
-          lang::WrappedTargetException, uno::RuntimeException)
 {
 }
 /*-- 28.04.2004 09:52:05---------------------------------------------------
 
   -----------------------------------------------------------------------*/
 uno::Any SwMailTransferable::getPropertyValue( const ::rtl::OUString& rPropertyName )
-    throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     uno::Any aRet;
     if( rPropertyName.equalsAscii( "URL" ) )
@@ -874,7 +863,6 @@ uno::Any SwMailTransferable::getPropertyValue( const ::rtl::OUString& rPropertyN
   -----------------------------------------------------------------------*/
 void SwMailTransferable::addPropertyChangeListener(
     const ::rtl::OUString&, const uno::Reference< beans::XPropertyChangeListener >&  )
-    throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 }
 /*-- 28.04.2004 09:52:05---------------------------------------------------
@@ -883,7 +871,6 @@ void SwMailTransferable::addPropertyChangeListener(
 void SwMailTransferable::removePropertyChangeListener(
     const ::rtl::OUString&,
     const uno::Reference< beans::XPropertyChangeListener >& )
-    throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 }
 /*-- 28.04.2004 09:52:05---------------------------------------------------
@@ -892,7 +879,6 @@ void SwMailTransferable::removePropertyChangeListener(
 void SwMailTransferable::addVetoableChangeListener(
     const ::rtl::OUString&,
     const uno::Reference< beans::XVetoableChangeListener >& )
-    throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 }
 /*-- 28.04.2004 09:52:05---------------------------------------------------
@@ -901,7 +887,6 @@ void SwMailTransferable::addVetoableChangeListener(
 void SwMailTransferable::removeVetoableChangeListener(
     const ::rtl::OUString& ,
     const uno::Reference< beans::XVetoableChangeListener >&  )
-        throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 }
 
@@ -921,49 +906,49 @@ SwMailMessage::~SwMailMessage()
 /*-- 02.07.2007 16:00:07---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-::rtl::OUString SwMailMessage::getSenderName() throw (uno::RuntimeException)
+::rtl::OUString SwMailMessage::getSenderName()
 {
     return m_sSenderName;
 }
 /*-- 22.06.2004 16:46:06---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-::rtl::OUString SwMailMessage::getSenderAddress() throw (uno::RuntimeException)
+::rtl::OUString SwMailMessage::getSenderAddress()
 {
     return m_sSenderAddress;
 }
 /*-- 22.06.2004 16:46:06---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-::rtl::OUString SwMailMessage::getReplyToAddress() throw (uno::RuntimeException)
+::rtl::OUString SwMailMessage::getReplyToAddress()
 {
     return m_sReplyToAddress;
 }
 /*-- 22.06.2004 16:46:07---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwMailMessage::setReplyToAddress( const ::rtl::OUString& _replytoaddress ) throw (uno::RuntimeException)
+void SwMailMessage::setReplyToAddress( const ::rtl::OUString& _replytoaddress )
 {
     m_sReplyToAddress = _replytoaddress;
 }
 /*-- 22.06.2004 16:46:07---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-::rtl::OUString SwMailMessage::getSubject() throw (uno::RuntimeException)
+::rtl::OUString SwMailMessage::getSubject()
 {
     return m_sSubject;
 }
 /*-- 22.06.2004 16:46:07---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwMailMessage::setSubject( const ::rtl::OUString& _subject ) throw (uno::RuntimeException)
+void SwMailMessage::setSubject( const ::rtl::OUString& _subject )
 {
     m_sSubject = _subject;
 }
 /*-- 13.07.2004 09:57:18---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< datatransfer::XTransferable > SwMailMessage::getBody() throw (uno::RuntimeException)
+uno::Reference< datatransfer::XTransferable > SwMailMessage::getBody()
 {
     return m_xBody;
 }
@@ -972,7 +957,6 @@ uno::Reference< datatransfer::XTransferable > SwMailMessage::getBody() throw (un
   -----------------------------------------------------------------------*/
 void SwMailMessage::setBody(
         const uno::Reference< datatransfer::XTransferable >& rBody )
-                                                throw (uno::RuntimeException)
 {
     m_xBody = rBody;
 }
@@ -980,7 +964,6 @@ void SwMailMessage::setBody(
 
   -----------------------------------------------------------------------*/
 void  SwMailMessage::addRecipient( const ::rtl::OUString& rRecipientAddress )
-        throw (uno::RuntimeException)
 {
     m_aRecipients.realloc(m_aRecipients.getLength() + 1);
     m_aRecipients[m_aRecipients.getLength() - 1] = rRecipientAddress;
@@ -989,7 +972,6 @@ void  SwMailMessage::addRecipient( const ::rtl::OUString& rRecipientAddress )
 
   -----------------------------------------------------------------------*/
 void  SwMailMessage::addCcRecipient( const ::rtl::OUString& rRecipientAddress )
-        throw (uno::RuntimeException)
 {
     m_aCcRecipients.realloc(m_aCcRecipients.getLength() + 1);
     m_aCcRecipients[m_aCcRecipients.getLength() - 1] = rRecipientAddress;
@@ -998,7 +980,7 @@ void  SwMailMessage::addCcRecipient( const ::rtl::OUString& rRecipientAddress )
 /*-- 22.06.2004 16:46:09---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void  SwMailMessage::addBccRecipient( const ::rtl::OUString& rRecipientAddress ) throw (uno::RuntimeException)
+void  SwMailMessage::addBccRecipient( const ::rtl::OUString& rRecipientAddress )
 {
     m_aBccRecipients.realloc(m_aBccRecipients.getLength() + 1);
     m_aBccRecipients[m_aBccRecipients.getLength() - 1] = rRecipientAddress;
@@ -1006,21 +988,21 @@ void  SwMailMessage::addBccRecipient( const ::rtl::OUString& rRecipientAddress )
 /*-- 22.06.2004 16:46:09---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Sequence< ::rtl::OUString > SwMailMessage::getRecipients(  ) throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SwMailMessage::getRecipients(  )
 {
     return m_aRecipients;
 }
 /*-- 22.06.2004 16:46:10---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Sequence< ::rtl::OUString > SwMailMessage::getCcRecipients(  ) throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SwMailMessage::getCcRecipients(  )
 {
     return m_aCcRecipients;
 }
 /*-- 22.06.2004 16:46:10---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Sequence< ::rtl::OUString > SwMailMessage::getBccRecipients(  ) throw (uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SwMailMessage::getBccRecipients(  )
 {
     return m_aBccRecipients;
 }
@@ -1028,7 +1010,6 @@ uno::Sequence< ::rtl::OUString > SwMailMessage::getBccRecipients(  ) throw (uno:
 
   -----------------------------------------------------------------------*/
 void SwMailMessage::addAttachment( const mail::MailAttachment& rMailAttachment )
-            throw (uno::RuntimeException)
 {
     m_aAttachments.realloc(m_aAttachments.getLength() + 1);
     m_aAttachments[m_aAttachments.getLength() - 1] = rMailAttachment;
@@ -1037,7 +1018,6 @@ void SwMailMessage::addAttachment( const mail::MailAttachment& rMailAttachment )
 
   -----------------------------------------------------------------------*/
 uno::Sequence< mail::MailAttachment > SwMailMessage::getAttachments(  )
-                                            throw (uno::RuntimeException)
 {
     return m_aAttachments;
 }

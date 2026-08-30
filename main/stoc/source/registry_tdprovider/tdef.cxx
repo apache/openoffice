@@ -35,13 +35,11 @@ TypedefTypeDescriptionImpl::~TypedefTypeDescriptionImpl()
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass TypedefTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return TypeClass_TYPEDEF;
 }
 //__________________________________________________________________________________________________
 OUString TypedefTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aName;
 }
@@ -49,7 +47,6 @@ OUString TypedefTypeDescriptionImpl::getName()
 // XIndirectTypeDescription
 //__________________________________________________________________________________________________
 Reference< XTypeDescription > TypedefTypeDescriptionImpl::getReferencedType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (!_xRefTD.is() && _aRefName.getLength())
 	{

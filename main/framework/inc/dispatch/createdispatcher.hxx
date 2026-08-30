@@ -90,7 +90,7 @@ class CreateDispatcher  :   // -interfaces  ... are supported by our BaseDispatc
                                                     const rtl::OUString&                                          sName       );
 		//	XDispatch
         virtual void SAL_CALL dispatch            ( const css::util::URL&                                         aURL        ,
-                                                    const css::uno::Sequence< css::beans::PropertyValue >&        lArguments  ) throw( css::uno::RuntimeException );
+                                                    const css::uno::Sequence< css::beans::PropertyValue >&        lArguments  );
 
     //-------------------------------------------------------------------------------------------------------------
     //  protected methods

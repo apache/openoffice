@@ -52,7 +52,6 @@ CookieList::~CookieList() SAL_THROW(())
 
 void
 executeCookieDialog(Window * pParent, CntHTTPCookieRequest & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     try
     {
@@ -78,7 +77,6 @@ handleCookiesRequest_(
     ucb::HandleCookiesRequest const & rRequest,
     uno::Sequence< uno::Reference< task::XInteractionContinuation > > const &
         rContinuations)
-    SAL_THROW((uno::RuntimeException))
 {
     CookieList aCookies;
     for (sal_Int32 i = 0; i < rRequest.Cookies.getLength(); ++i)
@@ -188,7 +186,6 @@ handleCookiesRequest_(
 bool
 UUIInteractionHelper::handleCookiesRequest(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    SAL_THROW((uno::RuntimeException))
 {
     uno::Any aAnyRequest(rRequest->getRequest());
 

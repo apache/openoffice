@@ -48,11 +48,11 @@ namespace DOM
         }
     }
 
-    OUString SAL_CALL CDocumentFragment::getNodeName()throw (RuntimeException)
+    OUString SAL_CALL CDocumentFragment::getNodeName()
     {
         return OUString::createFromAscii("#document-fragment");
     }
-    OUString SAL_CALL CDocumentFragment::getNodeValue() throw (RuntimeException)
+    OUString SAL_CALL CDocumentFragment::getNodeValue()
     {
         return OUString();
     }

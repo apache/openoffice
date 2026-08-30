@@ -3,9 +3,57 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 # STLport system-STL compatibility shim.
 # Provides extensionless headers like <hash_set>, <hash_map> etc. that
 # map SGI/STLport extensions to C++11/TR1 equivalents for MSVC.
+#
+# The headers fall into two groups, and the split between them is what makes a
+# modern toolchain possible at all:
+#
+#   systemstl/       Always on the include path. Two kinds live here:
+#                    <hash_map> <hash_set> <slist> are GENUINE EXTENSIONS -- no
+#                    standard header has those names, nothing is shadowed, and
+#                    each tests __cplusplus >= 201103L BEFORE _MSC_VER, so with
+#                    /Zc:__cplusplus they resolve to the standard <unordered_map>
+#                    / <unordered_set> / <forward_list> unaided.
+#                    <functional> and <vector> DO shadow standard headers, but
+#                    they cannot be dropped on a modern toolchain because they
+#                    also DECLARE things: the SGI emulation block (std::select1st,
+#                    select2nd, identity, project2nd, compose1, unary_compose --
+#                    used by ~40 files) and std::bit_vector + std_bitset_count().
+#                    Each therefore grew a _MSC_VER >= 1900 branch reaching the
+#                    real header at <../include/…>, which resolves against the
+#                    toolset's own include directory and nowhere else on the
+#                    search path.
+#
+#   systemstl/vc9/   <list> <map> <set> <numeric> -- PURE FORWARDERS. They shadow
+#                    a standard header and add nothing, so on a modern toolchain
+#                    they are simply kept off the include path and the real
+#                    headers are used directly. Their MSVC branch reaches the real
+#                    header with `#include <../../VC/include/list>`, a path
+#                    relative to VC9's OWN include directory, which a modern
+#                    toolset does not have (C1083).
+#
+# Why the paths and not #include_next: #include_next is the portable escape from
+# a shadowing header and MSVC does not have it, so a shim on the include path can
+# only reach what it shadows through a path that resolves elsewhere. A plain
+# #include <vector> from inside <vector> is swallowed by the shim's own guard.
+#
+# The proper fix, when someone wants it, is to stop shadowing at all: move the
+# SGI emulation into a normally-named header and update the ~40 files that rely
+# on getting it from <functional>. That is a refactor with upstream value; this
+# is the change that keeps both toolchains building today.
 cc_library(
     name = "stlport",
-    hdrs = glob(["systemstl/*", "systemstlguards/*.h"]),
-    includes = ["systemstl", "systemstlguards"],
+    hdrs = glob([
+        "systemstl/*",
+        "systemstl/vc9/*",
+        "systemstlguards/*.h",
+    ]),
+    includes = [
+        "systemstl",
+        "systemstlguards",
+    ] + select({
+        # The pure forwarders are VC9-only; see above.
+        "//build/constraints:is_win10": [],
+        "//conditions:default": ["systemstl/vc9"],
+    }),
     visibility = ["//visibility:public"],
 )

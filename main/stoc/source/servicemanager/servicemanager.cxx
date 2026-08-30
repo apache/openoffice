@@ -301,10 +301,8 @@ public:
 		{ g_moduleCount.modCnt.release( &g_moduleCount.modCnt ); }
 
 	// XEnumeration
-    sal_Bool SAL_CALL hasMoreElements()
-		throw(::com::sun::star::uno::RuntimeException);
-    Any SAL_CALL nextElement()
-		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    sal_Bool SAL_CALL hasMoreElements();
+    Any SAL_CALL nextElement();
 private:
 	Mutex								aMutex;
 	Sequence< Reference<XInterface > >	aFactories;
@@ -312,7 +310,7 @@ private:
 };
 
 // XEnumeration
-sal_Bool ServiceEnumeration_Impl::hasMoreElements() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool ServiceEnumeration_Impl::hasMoreElements()
 {
 	MutexGuard aGuard( aMutex );
 	return nIt != aFactories.getLength();
@@ -320,7 +318,6 @@ sal_Bool ServiceEnumeration_Impl::hasMoreElements() throw(::com::sun::star::uno:
 
 // XEnumeration
 Any ServiceEnumeration_Impl::nextElement()
-	throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( aMutex );
 	if( nIt == aFactories.getLength() )
@@ -340,22 +337,17 @@ public:
         {}
 
     // XPropertySetInfo impl
-    virtual Sequence< beans::Property > SAL_CALL getProperties()
-        throw (RuntimeException);
-    virtual beans::Property SAL_CALL getPropertyByName( OUString const & name )
-        throw (beans::UnknownPropertyException, RuntimeException);
-    virtual sal_Bool SAL_CALL hasPropertyByName( OUString const & name )
-        throw (RuntimeException);
+    virtual Sequence< beans::Property > SAL_CALL getProperties();
+    virtual beans::Property SAL_CALL getPropertyByName( OUString const & name );
+    virtual sal_Bool SAL_CALL hasPropertyByName( OUString const & name );
 };
 //__________________________________________________________________________________________________
 Sequence< beans::Property > PropertySetInfo_Impl::getProperties()
-    throw (RuntimeException)
 {
     return m_properties;
 }
 //__________________________________________________________________________________________________
 beans::Property PropertySetInfo_Impl::getPropertyByName( OUString const & name )
-    throw (beans::UnknownPropertyException, RuntimeException)
 {
     beans::Property const * p = m_properties.getConstArray();
     for ( sal_Int32 nPos = m_properties.getLength(); nPos--; )
@@ -368,7 +360,6 @@ beans::Property PropertySetInfo_Impl::getPropertyByName( OUString const & name )
 }
 //__________________________________________________________________________________________________
 sal_Bool PropertySetInfo_Impl::hasPropertyByName( OUString const & name )
-    throw (RuntimeException)
 {
     beans::Property const * p = m_properties.getConstArray();
     for ( sal_Int32 nPos = m_properties.getLength(); nPos--; )
@@ -395,10 +386,8 @@ public:
 	virtual ~ImplementationEnumeration_Impl();
 
 	// XEnumeration
-    virtual sal_Bool SAL_CALL hasMoreElements()
- 		throw(::com::sun::star::uno::RuntimeException);
-    virtual Any SAL_CALL nextElement()
-		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasMoreElements();
+    virtual Any SAL_CALL nextElement();
 
 private:
 	Mutex							aMutex;
@@ -415,7 +404,6 @@ ImplementationEnumeration_Impl::~ImplementationEnumeration_Impl()
 
 // XEnumeration
 sal_Bool ImplementationEnumeration_Impl::hasMoreElements()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( aMutex );
 	return aIt != aImplementationMap.end();
@@ -423,7 +411,6 @@ sal_Bool ImplementationEnumeration_Impl::hasMoreElements()
 
 // XEnumeration
 Any ImplementationEnumeration_Impl::nextElement()
-	throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( aMutex );
 	if( aIt == aImplementationMap.end() )
@@ -486,11 +473,10 @@ public:
 		{}
 
 	// XEventListener
-    virtual void SAL_CALL disposing(const EventObject & rEvt ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing(const EventObject & rEvt );
 };
 
 void OServiceManager_Listener::disposing(const EventObject & rEvt )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Reference<XSet > x( xSMgr );
 	if( x.is() )
@@ -538,82 +524,70 @@ public:
 	virtual ~OServiceManager();
 
     // XUnoTunnel
-    sal_Int64 SAL_CALL getSomething( Sequence< sal_Int8 > const & id )
-        throw (RuntimeException);
+    sal_Int64 SAL_CALL getSomething( Sequence< sal_Int8 > const & id );
 
     // XInitialization
-    void SAL_CALL initialize( Sequence< Any > const & args )
-        throw (Exception);
+    void SAL_CALL initialize( Sequence< Any > const & args );
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-	static OUString getImplementationName_Static() throw(::com::sun::star::uno::RuntimeException)
+	virtual OUString SAL_CALL getImplementationName();
+	static OUString getImplementationName_Static()
 		{ return stoc_bootstrap::smgr_getImplementationName(); }
-    virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName) throw(::com::sun::star::uno::RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
     // XMultiComponentFactory
     virtual Reference< XInterface > SAL_CALL createInstanceWithContext(
-        OUString const & rServiceSpecifier, Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException);
+        OUString const & rServiceSpecifier, Reference< XComponentContext > const & xContext );
     virtual Reference< XInterface > SAL_CALL createInstanceWithArgumentsAndContext(
         OUString const & rServiceSpecifier,
         Sequence< Any > const & rArguments,
-        Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException);
+        Reference< XComponentContext > const & xContext );
 //      virtual Sequence< OUString > SAL_CALL getAvailableServiceNames()
 //          throw (RuntimeException);
 
 	// XMultiServiceFactory
-	virtual Sequence< OUString > SAL_CALL getAvailableServiceNames() throw(::com::sun::star::uno::RuntimeException);
-    virtual Reference<XInterface > SAL_CALL createInstance(const OUString &) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual Reference<XInterface > SAL_CALL createInstanceWithArguments(const OUString &, const Sequence<Any >& Arguments) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	virtual Sequence< OUString > SAL_CALL getAvailableServiceNames();
+    virtual Reference<XInterface > SAL_CALL createInstance(const OUString &);
+    virtual Reference<XInterface > SAL_CALL createInstanceWithArguments(const OUString &, const Sequence<Any >& Arguments);
 
 	// The same as the getAvailableServiceNames, but only unique names
 	Sequence< OUString > getUniqueAvailableServiceNames(
         HashSet_OWString & aNameSet );
 
 	// XElementAccess
-    virtual Type SAL_CALL getElementType() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
+    virtual Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 
 	// XEnumerationAccess
-	virtual Reference<XEnumeration > SAL_CALL createEnumeration() throw(::com::sun::star::uno::RuntimeException);
+	virtual Reference<XEnumeration > SAL_CALL createEnumeration();
 
 	// XSet
-	virtual sal_Bool SAL_CALL has( const Any & Element ) throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL insert( const Any & Element ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL remove( const Any & Element ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL has( const Any & Element );
+	virtual void SAL_CALL insert( const Any & Element );
+	virtual void SAL_CALL remove( const Any & Element );
 
 	// XContentEnumerationAccess
 	//Sequence< OUString >			getAvailableServiceNames() throw( (Exception) );
-	virtual Reference<XEnumeration > SAL_CALL createContentEnumeration(const OUString& aServiceName) throw(::com::sun::star::uno::RuntimeException);
+	virtual Reference<XEnumeration > SAL_CALL createContentEnumeration(const OUString& aServiceName);
 	virtual Reference<XEnumeration > SAL_CALL createContentEnumeration(
-        const OUString& aServiceName, Reference< XComponentContext > const & xContext )
-        throw(::com::sun::star::uno::RuntimeException);
+        const OUString& aServiceName, Reference< XComponentContext > const & xContext );
 
 	// XComponent
-	virtual void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL dispose();
 
 	// XPropertySet
-    Reference<XPropertySetInfo > SAL_CALL getPropertySetInfo()
-		throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL setPropertyValue(const OUString& PropertyName, const Any& aValue)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    Any SAL_CALL getPropertyValue(const OUString& PropertyName)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL addPropertyChangeListener(const OUString& PropertyName, const Reference<XPropertyChangeListener >& aListener)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL removePropertyChangeListener(const OUString& PropertyName, const Reference<XPropertyChangeListener >& aListener)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL addVetoableChangeListener(const OUString& PropertyName, const Reference<XVetoableChangeListener >& aListener)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    void SAL_CALL removeVetoableChangeListener(const OUString& PropertyName, const Reference<XVetoableChangeListener >& aListener)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    Reference<XPropertySetInfo > SAL_CALL getPropertySetInfo();
+    void SAL_CALL setPropertyValue(const OUString& PropertyName, const Any& aValue);
+    Any SAL_CALL getPropertyValue(const OUString& PropertyName);
+    void SAL_CALL addPropertyChangeListener(const OUString& PropertyName, const Reference<XPropertyChangeListener >& aListener);
+    void SAL_CALL removePropertyChangeListener(const OUString& PropertyName, const Reference<XPropertyChangeListener >& aListener);
+    void SAL_CALL addVetoableChangeListener(const OUString& PropertyName, const Reference<XVetoableChangeListener >& aListener);
+    void SAL_CALL removeVetoableChangeListener(const OUString& PropertyName, const Reference<XVetoableChangeListener >& aListener);
 
 protected:
-    inline bool is_disposed() const SAL_THROW( (lang::DisposedException) );
-    inline void check_undisposed() const SAL_THROW( (lang::DisposedException) );
+    inline bool is_disposed() const;
+    inline void check_undisposed() const;
     virtual void SAL_CALL disposing();
 
 	sal_Bool haveFactoryWithThisImplementation(const OUString& aImplName);
@@ -649,7 +623,6 @@ private:
 
 //______________________________________________________________________________
 inline bool OServiceManager::is_disposed() const
-    SAL_THROW( (lang::DisposedException) )
 {
     // ought to be guarded by m_mutex:
     return (m_bInDisposing || rBHelper.bDisposed);
@@ -657,7 +630,6 @@ inline bool OServiceManager::is_disposed() const
 
 //______________________________________________________________________________
 inline void OServiceManager::check_undisposed() const
-    SAL_THROW( (lang::DisposedException) )
 {
     if (is_disposed())
     {
@@ -675,7 +647,7 @@ class OServiceManagerWrapper : public OServiceManagerMutex, public t_OServiceMan
 {
     Reference< XComponentContext > m_xContext;
     OServiceManager * m_root;
-    inline OServiceManager * getRoot() SAL_THROW( (RuntimeException) )
+    inline OServiceManager * getRoot()
     {
         if (! m_root)
         {
@@ -691,98 +663,87 @@ protected:
 
 public:
     OServiceManagerWrapper(
-        Reference< XComponentContext > const & xContext )
-        SAL_THROW( (RuntimeException) );
+        Reference< XComponentContext > const & xContext );
     virtual ~OServiceManagerWrapper() SAL_THROW( () );
 
     // XUnoTunnel
-    sal_Int64 SAL_CALL getSomething( Sequence< sal_Int8 > const & id ) throw (RuntimeException)
+    sal_Int64 SAL_CALL getSomething( Sequence< sal_Int8 > const & id )
         { return getRoot()->getSomething( id ); }
 
     // XInitialization
-    void SAL_CALL initialize( Sequence< Any > const & args ) throw (Exception)
+    void SAL_CALL initialize( Sequence< Any > const & args )
         { getRoot()->initialize( args ); }
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException)
+	virtual OUString SAL_CALL getImplementationName()
         { return getRoot()->getImplementationName(); }
-    virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName) throw (RuntimeException)
+    virtual sal_Bool SAL_CALL supportsService(const OUString& ServiceName)
         { return getRoot()->supportsService( ServiceName ); }
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException)
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
         { return getRoot()->getSupportedServiceNames(); }
 
     // XMultiComponentFactory
     virtual Reference< XInterface > SAL_CALL createInstanceWithContext(
         OUString const & rServiceSpecifier, Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException)
         { return getRoot()->createInstanceWithContext( rServiceSpecifier, xContext ); }
     virtual Reference< XInterface > SAL_CALL createInstanceWithArgumentsAndContext(
         OUString const & rServiceSpecifier,
         Sequence< Any > const & rArguments,
         Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException)
         { return getRoot()->createInstanceWithArgumentsAndContext( rServiceSpecifier, rArguments, xContext ); }
 //      virtual Sequence< OUString > SAL_CALL getAvailableServiceNames()
 //          throw (RuntimeException);
 
 	// XMultiServiceFactory
-	virtual Sequence< OUString > SAL_CALL getAvailableServiceNames() throw (RuntimeException)
+	virtual Sequence< OUString > SAL_CALL getAvailableServiceNames()
         { return getRoot()->getAvailableServiceNames(); }
-    virtual Reference<XInterface > SAL_CALL createInstance(const OUString & name) throw (Exception)
+    virtual Reference<XInterface > SAL_CALL createInstance(const OUString & name)
         { return getRoot()->createInstanceWithContext( name, m_xContext ); }
-    virtual Reference<XInterface > SAL_CALL createInstanceWithArguments(const OUString & name, const Sequence<Any >& Arguments) throw (Exception)
+    virtual Reference<XInterface > SAL_CALL createInstanceWithArguments(const OUString & name, const Sequence<Any >& Arguments)
         { return getRoot()->createInstanceWithArgumentsAndContext( name, Arguments, m_xContext ); }
 
 	// XElementAccess
-    virtual Type SAL_CALL getElementType() throw (RuntimeException)
+    virtual Type SAL_CALL getElementType()
         { return getRoot()->getElementType(); }
-    virtual sal_Bool SAL_CALL hasElements() throw (RuntimeException)
+    virtual sal_Bool SAL_CALL hasElements()
         { return getRoot()->hasElements(); }
 
 	// XEnumerationAccess
-	virtual Reference<XEnumeration > SAL_CALL createEnumeration() throw (RuntimeException)
+	virtual Reference<XEnumeration > SAL_CALL createEnumeration()
         { return getRoot()->createEnumeration(); }
 
 	// XSet
-	virtual sal_Bool SAL_CALL has( const Any & Element ) throw (RuntimeException)
+	virtual sal_Bool SAL_CALL has( const Any & Element )
         { return getRoot()->has( Element ); }
-	virtual void SAL_CALL insert( const Any & Element ) throw (lang::IllegalArgumentException, container::ElementExistException, RuntimeException)
+	virtual void SAL_CALL insert( const Any & Element )
         { getRoot()->insert( Element ); }
-	virtual void SAL_CALL remove( const Any & Element ) throw (lang::IllegalArgumentException, container::NoSuchElementException, RuntimeException)
+	virtual void SAL_CALL remove( const Any & Element )
         { getRoot()->remove( Element ); }
 
 	// XContentEnumerationAccess
 	//Sequence< OUString >			getAvailableServiceNames() throw( (Exception) );
-	virtual Reference<XEnumeration > SAL_CALL createContentEnumeration(const OUString& aServiceName) throw (RuntimeException)
+	virtual Reference<XEnumeration > SAL_CALL createContentEnumeration(const OUString& aServiceName)
         { return getRoot()->createContentEnumeration( aServiceName, m_xContext ); }
 
 	// XPropertySet
-    Reference<XPropertySetInfo > SAL_CALL getPropertySetInfo() throw (RuntimeException)
+    Reference<XPropertySetInfo > SAL_CALL getPropertySetInfo()
         { return getRoot()->getPropertySetInfo(); }
 
-    void SAL_CALL setPropertyValue(const OUString& PropertyName, const Any& aValue)
-		throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, RuntimeException);
-    Any SAL_CALL getPropertyValue(const OUString& PropertyName)
-		throw (beans::UnknownPropertyException, lang::WrappedTargetException, RuntimeException);
+    void SAL_CALL setPropertyValue(const OUString& PropertyName, const Any& aValue);
+    Any SAL_CALL getPropertyValue(const OUString& PropertyName);
 
     void SAL_CALL addPropertyChangeListener(const OUString& PropertyName, const Reference<XPropertyChangeListener >& aListener)
-		throw (beans::UnknownPropertyException, lang::WrappedTargetException, RuntimeException)
         { getRoot()->addPropertyChangeListener( PropertyName, aListener ); }
     void SAL_CALL removePropertyChangeListener(const OUString& PropertyName, const Reference<XPropertyChangeListener >& aListener)
-		throw (beans::UnknownPropertyException, lang::WrappedTargetException, RuntimeException)
         { getRoot()->removePropertyChangeListener( PropertyName, aListener ); }
     void SAL_CALL addVetoableChangeListener(const OUString& PropertyName, const Reference<XVetoableChangeListener >& aListener)
-		throw (beans::UnknownPropertyException, lang::WrappedTargetException, RuntimeException)
         { getRoot()->addVetoableChangeListener( PropertyName, aListener ); }
     void SAL_CALL removeVetoableChangeListener(const OUString& PropertyName, const Reference<XVetoableChangeListener >& aListener)
-		throw (beans::UnknownPropertyException, lang::WrappedTargetException, RuntimeException)
         { getRoot()->removeVetoableChangeListener( PropertyName, aListener ); }
 };
 //__________________________________________________________________________________________________
 void SAL_CALL OServiceManagerWrapper::setPropertyValue(
     const OUString& PropertyName, const Any& aValue )
-    throw (beans::UnknownPropertyException, beans::PropertyVetoException,
-           lang::IllegalArgumentException, lang::WrappedTargetException, RuntimeException)
 {
     if (PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("DefaultContext") ))
     {
@@ -807,7 +768,6 @@ void SAL_CALL OServiceManagerWrapper::setPropertyValue(
 //__________________________________________________________________________________________________
 Any SAL_CALL OServiceManagerWrapper::getPropertyValue(
     const OUString& PropertyName )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, RuntimeException)
 {
     if (PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("DefaultContext") ))
 	{
@@ -848,7 +808,6 @@ OServiceManagerWrapper::~OServiceManagerWrapper() SAL_THROW( () )
 //__________________________________________________________________________________________________
 OServiceManagerWrapper::OServiceManagerWrapper(
     Reference< XComponentContext > const & xContext )
-    SAL_THROW( (RuntimeException) )
     : t_OServiceManager_impl( m_mutex )
     , m_xContext( xContext )
     , m_root( 0 )
@@ -882,7 +841,6 @@ OServiceManagerWrapper::OServiceManagerWrapper(
 
 // XUnoTunnel
 sal_Int64 OServiceManager::getSomething( Sequence< sal_Int8 > const & id )
-    throw (RuntimeException)
 {
     check_undisposed();
     if (id == smgr_getImplementationId())
@@ -1012,7 +970,6 @@ void OServiceManager::onUnloadingNotify()
 
 // XComponent
 void OServiceManager::dispose()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     if (rBHelper.bDisposed || rBHelper.bInDispose)
         return;
@@ -1072,7 +1029,6 @@ void OServiceManager::disposing()
 
 // XPropertySet
 Reference<XPropertySetInfo > OServiceManager::getPropertySetInfo()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
     if (! m_xPropertyInfo.is())
@@ -1093,7 +1049,6 @@ Reference<XPropertySetInfo > OServiceManager::getPropertySetInfo()
 
 void OServiceManager::setPropertyValue(
     const OUString& PropertyName, const Any& aValue )
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
     if (PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("DefaultContext") ))
@@ -1120,7 +1075,6 @@ void OServiceManager::setPropertyValue(
 }
 
 Any OServiceManager::getPropertyValue(const OUString& PropertyName)
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
     if (PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("DefaultContext") ))
@@ -1142,7 +1096,6 @@ Any OServiceManager::getPropertyValue(const OUString& PropertyName)
 
 void OServiceManager::addPropertyChangeListener(
     const OUString&, const Reference<XPropertyChangeListener >&)
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	throw UnknownPropertyException();
@@ -1150,7 +1103,6 @@ void OServiceManager::addPropertyChangeListener(
 
 void OServiceManager::removePropertyChangeListener(
     const OUString&, const Reference<XPropertyChangeListener >&)
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	throw UnknownPropertyException();
@@ -1158,7 +1110,6 @@ void OServiceManager::removePropertyChangeListener(
 
 void OServiceManager::addVetoableChangeListener(
     const OUString&, const Reference<XVetoableChangeListener >&)
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	throw UnknownPropertyException();
@@ -1166,7 +1117,6 @@ void OServiceManager::addVetoableChangeListener(
 
 void OServiceManager::removeVetoableChangeListener(
     const OUString&, const Reference<XVetoableChangeListener >&)
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	throw UnknownPropertyException();
@@ -1213,7 +1163,6 @@ Sequence< OUString > OServiceManager::getUniqueAvailableServiceNames(
 Reference< XInterface > OServiceManager::createInstanceWithContext(
     OUString const & rServiceSpecifier,
     Reference< XComponentContext > const & xContext )
-    throw (Exception, RuntimeException)
 {
     check_undisposed();
 #if OSL_DEBUG_LEVEL > 0
@@ -1277,7 +1226,6 @@ Reference< XInterface > OServiceManager::createInstanceWithArgumentsAndContext(
     OUString const & rServiceSpecifier,
     Sequence< Any > const & rArguments,
     Reference< XComponentContext > const & xContext )
-    throw (Exception, RuntimeException)
 {
     check_undisposed();
 #if OSL_DEBUG_LEVEL > 0
@@ -1339,7 +1287,6 @@ Reference< XInterface > OServiceManager::createInstanceWithArgumentsAndContext(
 
 // XMultiServiceFactory, XMultiComponentFactory, XContentEnumeration
 Sequence< OUString > OServiceManager::getAvailableServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	// all names
@@ -1350,7 +1297,6 @@ Sequence< OUString > OServiceManager::getAvailableServiceNames()
 // XMultibleServiceFactory
 Reference<XInterface > OServiceManager::createInstance(
     const OUString& rServiceSpecifier )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     return createInstanceWithContext(
         rServiceSpecifier, m_xContext );
@@ -1360,7 +1306,6 @@ Reference<XInterface > OServiceManager::createInstance(
 Reference<XInterface > OServiceManager::createInstanceWithArguments(
 	const OUString& rServiceSpecifier,
 	const Sequence<Any >& rArguments )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     return createInstanceWithArgumentsAndContext(
         rServiceSpecifier, rArguments, m_xContext );
@@ -1368,7 +1313,6 @@ Reference<XInterface > OServiceManager::createInstanceWithArguments(
 
 // XInitialization
 void OServiceManager::initialize( Sequence< Any > const & )
-    throw (Exception)
 {
     check_undisposed();
     OSL_ENSURE( 0, "not impl!" );
@@ -1376,7 +1320,6 @@ void OServiceManager::initialize( Sequence< Any > const & )
 
 // XServiceInfo
 OUString OServiceManager::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	return getImplementationName_Static();
@@ -1384,7 +1327,6 @@ OUString OServiceManager::getImplementationName()
 
 // XServiceInfo
 sal_Bool OServiceManager::supportsService(const OUString& ServiceName)
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	Sequence< OUString > aSNL = getSupportedServiceNames();
@@ -1397,7 +1339,6 @@ sal_Bool OServiceManager::supportsService(const OUString& ServiceName)
 
 // XServiceInfo
 Sequence< OUString > OServiceManager::getSupportedServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
     return stoc_bootstrap::smgr_getSupportedServiceNames();
@@ -1445,7 +1386,6 @@ Sequence< Reference< XInterface > > OServiceManager::queryServiceFactories(
 // XContentEnumerationAccess
 Reference<XEnumeration > OServiceManager::createContentEnumeration(
     const OUString& aServiceName, Reference< XComponentContext > const & xContext )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
     Sequence< Reference< XInterface > > factories(
@@ -1457,13 +1397,12 @@ Reference<XEnumeration > OServiceManager::createContentEnumeration(
 }
 Reference<XEnumeration > OServiceManager::createContentEnumeration(
     const OUString& aServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     return createContentEnumeration( aServiceName, m_xContext );
 }
 
 // XEnumeration
-Reference<XEnumeration > OServiceManager::createEnumeration() throw(::com::sun::star::uno::RuntimeException)
+Reference<XEnumeration > OServiceManager::createEnumeration()
 {
     check_undisposed();
 	MutexGuard aGuard( m_mutex );
@@ -1472,7 +1411,6 @@ Reference<XEnumeration > OServiceManager::createEnumeration() throw(::com::sun::
 
 // XElementAccess
 Type OServiceManager::getElementType()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	return ::getCppuType( (const Reference< XInterface > *)0 );
@@ -1480,7 +1418,6 @@ Type OServiceManager::getElementType()
 
 // XElementAccess
 sal_Bool OServiceManager::hasElements()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	MutexGuard aGuard( m_mutex );
@@ -1489,7 +1426,6 @@ sal_Bool OServiceManager::hasElements()
 
 // XSet
 sal_Bool OServiceManager::has( const Any & Element )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	if( Element.getValueTypeClass() == TypeClass_INTERFACE )
@@ -1512,7 +1448,6 @@ sal_Bool OServiceManager::has( const Any & Element )
 
 // XSet
 void OServiceManager::insert( const Any & Element )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	if( Element.getValueTypeClass() != TypeClass_INTERFACE )
@@ -1568,9 +1503,6 @@ sal_Bool OServiceManager::haveFactoryWithThisImplementation(const OUString& aImp
 
 // XSet
 void OServiceManager::remove( const Any & Element )
-     throw(::com::sun::star::lang::IllegalArgumentException,
-		   ::com::sun::star::container::NoSuchElementException,
-		   ::com::sun::star::uno::RuntimeException)
 {
     if (is_disposed())
         return;
@@ -1665,33 +1597,29 @@ public:
 	virtual ~ORegistryServiceManager();
 
 	// XInitialization
-    void SAL_CALL initialize(const Sequence< Any >& Arguments)
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    void SAL_CALL initialize(const Sequence< Any >& Arguments);
 
 	// XServiceInfo
-	OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException)
+	OUString SAL_CALL getImplementationName()
 		{ return stoc_bootstrap::regsmgr_getImplementationName(); }
 
-    Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+    Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 	// XMultiServiceFactory
-	Sequence< OUString > SAL_CALL getAvailableServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	Sequence< OUString > SAL_CALL getAvailableServiceNames();
 
 	// XContentEnumerationAccess
 	//Sequence< OUString >			getAvailableServiceNames() throw( (Exception) );
-	Reference<XEnumeration > SAL_CALL createContentEnumeration(const OUString& aServiceName) throw(::com::sun::star::uno::RuntimeException);
+	Reference<XEnumeration > SAL_CALL createContentEnumeration(const OUString& aServiceName);
 	virtual Reference<XEnumeration > SAL_CALL createContentEnumeration(
-        const OUString& aServiceName, Reference< XComponentContext > const & xContext )
-        throw(::com::sun::star::uno::RuntimeException);
+        const OUString& aServiceName, Reference< XComponentContext > const & xContext );
 
 	// XComponent
-	void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+	void SAL_CALL dispose();
 
     // OServiceManager
-    Reference<XPropertySetInfo > SAL_CALL getPropertySetInfo()
-        throw(::com::sun::star::uno::RuntimeException);
-    Any SAL_CALL getPropertyValue(const OUString& PropertyName)
-        throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    Reference<XPropertySetInfo > SAL_CALL getPropertySetInfo();
+    Any SAL_CALL getPropertyValue(const OUString& PropertyName);
 
 protected:
 	//OServiceManager
@@ -1736,7 +1664,6 @@ ORegistryServiceManager::~ORegistryServiceManager()
 
 // XComponent
 void ORegistryServiceManager::dispose()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     if (rBHelper.bDisposed || rBHelper.bInDispose)
         return;
@@ -1876,7 +1803,6 @@ void ORegistryServiceManager::fillAllNamesFromRegistry( HashSet_OWString & rSet 
 
 // XInitialization
 void ORegistryServiceManager::initialize(const Sequence< Any >& Arguments)
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	MutexGuard aGuard( m_mutex );
@@ -1894,7 +1820,6 @@ void ORegistryServiceManager::initialize(const Sequence< Any >& Arguments)
 
 // XMultiServiceFactory, XContentEnumeration
 Sequence< OUString > ORegistryServiceManager::getAvailableServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	MutexGuard aGuard( m_mutex );
@@ -1909,7 +1834,6 @@ Sequence< OUString > ORegistryServiceManager::getAvailableServiceNames()
 
 // XServiceInfo
 Sequence< OUString > ORegistryServiceManager::getSupportedServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
     return stoc_bootstrap::regsmgr_getSupportedServiceNames();
@@ -1939,7 +1863,6 @@ Sequence< Reference< XInterface > > ORegistryServiceManager::queryServiceFactori
 // XContentEnumerationAccess
 Reference<XEnumeration > ORegistryServiceManager::createContentEnumeration(
     const OUString& aServiceName, Reference< XComponentContext > const & xContext )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	MutexGuard aGuard( ((ORegistryServiceManager *)this)->m_mutex );
@@ -1961,14 +1884,12 @@ Reference<XEnumeration > ORegistryServiceManager::createContentEnumeration(
 }
 Reference<XEnumeration > ORegistryServiceManager::createContentEnumeration(
     const OUString& aServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     return createContentEnumeration( aServiceName, m_xContext );
 }
 
 // OServiceManager
 Reference<XPropertySetInfo > ORegistryServiceManager::getPropertySetInfo()
-	throw(::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
     if (! m_xPropertyInfo.is())
@@ -1991,7 +1912,6 @@ Reference<XPropertySetInfo > ORegistryServiceManager::getPropertySetInfo()
 }
 
 Any ORegistryServiceManager::getPropertyValue(const OUString& PropertyName)
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     check_undisposed();
 	if (PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("Registry") ))
@@ -2038,7 +1958,6 @@ Reference<XInterface > SAL_CALL OServiceManager_CreateInstance(
  */
 Reference<XInterface > SAL_CALL ORegistryServiceManager_CreateInstance(
     const Reference< XComponentContext > & xContext )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	return Reference<XInterface >(
         SAL_STATIC_CAST(
@@ -2048,7 +1967,6 @@ Reference<XInterface > SAL_CALL ORegistryServiceManager_CreateInstance(
 
 Reference<XInterface > SAL_CALL OServiceManagerWrapper_CreateInstance(
     const Reference< XComponentContext > & xContext )
-	throw (Exception)
 {
     return (OWeakObject *)new stoc_smgr::OServiceManagerWrapper( xContext );
 }

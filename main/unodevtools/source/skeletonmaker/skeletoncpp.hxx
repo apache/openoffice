@@ -73,13 +73,6 @@ void printMethodParameters(std::ostream & o,
                            bool withtype);
 
 
-void printExceptionSpecification(std::ostream & o,
-                                 ProgramOptions const & options,
-                                 TypeManager const & manager,
-                                 typereg::Reader const & reader,
-                                 sal_uInt16 method);
-
-
 void printMethods(std::ostream & o,
                   ProgramOptions const & options, TypeManager const & manager,
                   typereg::Reader const & reader,

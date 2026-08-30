@@ -86,7 +86,6 @@ void raisePyExceptionWithAny( const com::sun::star::uno::Any &anyExc )
 
 
 static PyRef createClass( const OUString & name, const Runtime &runtime )
-    throw ( RuntimeException )
 {
     // assuming that this is never deleted !
     // note I don't have the knowledge how to initialize these type objects correctly !

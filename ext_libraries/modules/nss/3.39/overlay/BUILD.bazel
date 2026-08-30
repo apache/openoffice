@@ -43,6 +43,14 @@ WIN_COPTS = [
 # copts must use full execroot-relative paths instead.
 _R = "external/nss+"
 
+# Every header in the tree, declared so that editing one invalidates the compiles
+# that read it.  These targets reach their headers through copts /I rather than
+# includes=, which means Bazel does not see the headers at all: it cannot tell a
+# header changed, so it keeps the stale .obj files and relinks them.  That is how
+# the freebl/stdint.h overlay fix first appeared not to work -- the same latent
+# bug the python27 overlay had.
+_ALL_HDRS = glob(["nspr/**/*.h", "nss/**/*.h"], allow_empty = True)
+
 NSPR_INCLUDES = [
     "/I" + _R + "/nspr/pr/src",
     "/I" + _R + "/nspr/pr/include",
@@ -214,7 +222,7 @@ cc_binary(
         "nspr/pr/src/md/windows/w32rng.c",
         "nspr/pr/src/md/windows/w32shm.c",
         "nspr/pr/src/md/windows/win32_errors.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + NSPR_INCLUDES,
     defines = WIN_DEFINES + ["_NSPR_BUILD_"],
     linkshared = True,
@@ -232,7 +240,7 @@ cc_binary(
         "nspr/lib/ds/plarena.c",
         "nspr/lib/ds/plhash.c",
         "nspr/lib/ds/plvrsion.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + PLDS4_INCLUDES,
     defines = WIN_DEFINES + ["_NSPR_BUILD_"],
     linkshared = True,
@@ -262,7 +270,7 @@ cc_binary(
         "nspr/lib/libc/src/strpbrk.c",
         "nspr/lib/libc/src/strstr.c",
         "nspr/lib/libc/src/strtok.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + PLC4_INCLUDES,
     defines = WIN_DEFINES + ["_NSPR_BUILD_"],
     linkshared = True,
@@ -307,7 +315,7 @@ cc_binary(
         "nss/lib/util/utf8.c",
         "nss/lib/util/utilmod.c",
         "nss/lib/util/utilpars.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + NSSUTIL_INCLUDES,
     defines = WIN_DEFINES + ["NSSUTIL_BUILD", "USE_UTIL_DIRECTLY"],
     linkshared = True,
@@ -406,7 +414,7 @@ cc_binary(
         "nss/lib/freebl/shvfy.c",
         # stubs.c is POSIX-only (unistd.h/dlfcn.h); not needed on Windows
         "nss/lib/freebl/ldvector.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + FREEBL_INCLUDES,
     defines = WIN_DEFINES + [
         "FREEBL_LOWHASH",
@@ -448,7 +456,7 @@ filegroup(name = "freebl3_implib", srcs = [":freebl3"], output_group = "interfac
 
 cc_library(
     name = "freebl_loader",
-    srcs = ["nss/lib/freebl/loader.c"],
+    srcs = ["nss/lib/freebl/loader.c"] + _ALL_HDRS,
     copts = WIN_COPTS + FREEBL_INCLUDES,
     defines = WIN_DEFINES + [
         "FREEBL_LOWHASH",
@@ -485,7 +493,7 @@ cc_binary(
         "nss/lib/softoken/tlsprf.c",
         # bundled SQLite3
         "nss/lib/sqlite/sqlite3.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + SOFTOKN_INCLUDES + [
         "/Zm500",  # SQLite3 is large; raise compiler heap limit
     ],
@@ -705,7 +713,7 @@ cc_binary(
         "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_primhash.c",
         "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_rwlock.c",
         "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_string.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + NSS3_INCLUDES,
     defines = WIN_DEFINES + [
         "NSS_BUILD",
@@ -780,7 +788,7 @@ cc_binary(
         "nss/lib/pkcs12/p12local.c",
         "nss/lib/pkcs12/p12plcy.c",
         "nss/lib/pkcs12/p12tmpl.c",
-    ],
+    ] + _ALL_HDRS,
     copts = WIN_COPTS + SMIME_INCLUDES,
     defines = WIN_DEFINES + [
         "USE_UTIL_DIRECTLY",

@@ -53,7 +53,7 @@ sdbcx::ObjectType OKeys::createObject(const ::rtl::OUString& _rName)
 	return new OAdoKey(isCaseSensitive(),m_pConnection,m_aCollection.GetItem(_rName));
 }
 // -------------------------------------------------------------------------
-void OKeys::impl_refresh() throw(RuntimeException)
+void OKeys::impl_refresh()
 {
 	m_aCollection.Refresh();
 }

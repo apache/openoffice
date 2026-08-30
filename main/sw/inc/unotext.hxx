@@ -75,9 +75,7 @@ private:
                 ::com::sun::star::text::XTextRange > & xRange,
             SwPaM const & rPam);
     virtual bool CheckForOwnMemberMeta(
-            const SwPaM & rPam, const bool bAbsorb)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+            const SwPaM & rPam, const bool bAbsorb);
 
 protected:
 
@@ -99,101 +97,68 @@ public:
 
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextCursor >
-        CreateCursor()
-        throw (::com::sun::star::uno::RuntimeException);
+        CreateCursor();
 
 
     // XInterface
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-            const ::com::sun::star::uno::Type& rType)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Type& rType);
 
     // XTypeProvider
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >
-        SAL_CALL getTypes()
-        throw (::com::sun::star::uno::RuntimeException);
+        SAL_CALL getTypes();
 
     static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId();
 
     // XUnoTunnel
     virtual sal_Int64 SAL_CALL getSomething(
-            const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Sequence< sal_Int8 >& rIdentifier);
 
     // XPropertySet
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+        getPropertySetInfo();
     virtual void SAL_CALL setPropertyValue(
             const ::rtl::OUString& rPropertyName,
-            const ::com::sun::star::uno::Any& rValue)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::beans::PropertyVetoException,
-                ::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Any& rValue);
     virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue(
-            const ::rtl::OUString& rPropertyName)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString& rPropertyName);
     virtual void SAL_CALL addPropertyChangeListener(
             const ::rtl::OUString& rPropertyName,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::beans::XPropertyChangeListener >& xListener)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::beans::XPropertyChangeListener >& xListener);
     virtual void SAL_CALL removePropertyChangeListener(
             const ::rtl::OUString& rPropertyName,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::beans::XPropertyChangeListener >& xListener)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::beans::XPropertyChangeListener >& xListener);
     virtual void SAL_CALL addVetoableChangeListener(
             const ::rtl::OUString& rPropertyName,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::beans::XVetoableChangeListener >& xListener)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::beans::XVetoableChangeListener >& xListener);
     virtual void SAL_CALL removeVetoableChangeListener(
             const ::rtl::OUString& rPropertyName,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::beans::XVetoableChangeListener >& xListener)
-        throw (::com::sun::star::beans::UnknownPropertyException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::beans::XVetoableChangeListener >& xListener);
 
     // XTextRange
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::text::XText >
-        SAL_CALL getText()
-        throw (::com::sun::star::uno::RuntimeException);
+        SAL_CALL getText();
     virtual ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextRange > SAL_CALL getStart()
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextRange > SAL_CALL getStart();
     virtual ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextRange > SAL_CALL getEnd()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getString()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setString(const ::rtl::OUString& rString)
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextRange > SAL_CALL getEnd();
+    virtual ::rtl::OUString SAL_CALL getString();
+    virtual void SAL_CALL setString(const ::rtl::OUString& rString);
 
     // XSimpleText
     virtual void SAL_CALL insertString(
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextRange > & xRange,
-            const ::rtl::OUString& aString, sal_Bool bAbsorb)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::rtl::OUString& aString, sal_Bool bAbsorb);
     virtual void SAL_CALL insertControlCharacter(
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextRange > & xRange,
-            sal_Int16 nControlCharacter, sal_Bool bAbsorb)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+            sal_Int16 nControlCharacter, sal_Bool bAbsorb);
 
     // XText
     virtual void SAL_CALL insertTextContent(
@@ -201,14 +166,10 @@ public:
                 ::com::sun::star::text::XTextRange > & xRange,
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextContent > & xContent,
-            sal_Bool bAbsorb)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::uno::RuntimeException);
+            sal_Bool bAbsorb);
     virtual void SAL_CALL removeTextContent(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextContent > & xContent)
-        throw (::com::sun::star::container::NoSuchElementException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextContent > & xContent);
 
     // XParagraphAppend
     virtual ::com::sun::star::uno::Reference<
@@ -216,17 +177,13 @@ public:
         appendParagraph(
             const ::com::sun::star::uno::Sequence<
                     ::com::sun::star::beans::PropertyValue >&
-                rCharacterAndParagraphProperties)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                rCharacterAndParagraphProperties);
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextRange > SAL_CALL
         finishParagraph(
             const ::com::sun::star::uno::Sequence<
                     ::com::sun::star::beans::PropertyValue >&
-                rCharacterAndParagraphProperties)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                rCharacterAndParagraphProperties);
 
     // XTextPortionAppend
     virtual ::com::sun::star::uno::Reference<
@@ -235,9 +192,7 @@ public:
             const ::rtl::OUString& rText,
             const ::com::sun::star::uno::Sequence<
                     ::com::sun::star::beans::PropertyValue >&
-                rCharacterAndParagraphProperties)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                rCharacterAndParagraphProperties);
 
     // XTextContentAppend
     virtual ::com::sun::star::uno::Reference<
@@ -247,9 +202,7 @@ public:
                 ::com::sun::star::text::XTextContent >& xTextContent,
             const ::com::sun::star::uno::Sequence<
                     ::com::sun::star::beans::PropertyValue >&
-                rCharacterAndParagraphProperties)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                rCharacterAndParagraphProperties);
 
     // XTextConvert
     virtual ::com::sun::star::uno::Reference<
@@ -260,9 +213,7 @@ public:
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextRange >& xEnd,
             const ::com::sun::star::uno::Sequence<
-                ::com::sun::star::beans::PropertyValue >& xFrameProperties)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::beans::PropertyValue >& xFrameProperties);
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextTable > SAL_CALL
         convertToTable(
@@ -283,59 +234,44 @@ public:
                 rRowProperties,
            ::com::sun::star::uno::Sequence<
                 ::com::sun::star::beans::PropertyValue > const&
-                rTableProperties)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                rTableProperties);
 
     // XTextCopy
     virtual void SAL_CALL copyText(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextCopy >& xSource )
-        throw (::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextCopy >& xSource );
 
     // XTextRangeCompare
     sal_Int16 SAL_CALL compareRegionStarts(
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextRange >& xR1,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextRange >& xR2)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextRange >& xR2);
     sal_Int16 SAL_CALL compareRegionEnds(
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextRange >& xR1,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextRange >& xR2)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextRange >& xR2);
 
     // XRelativeTextContentInsert
     virtual void SAL_CALL insertTextContentBefore(
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextContent>& xNewContent,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextContent>& xSuccessor)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextContent>& xSuccessor);
     virtual void SAL_CALL insertTextContentAfter(
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::text::XTextContent>& xNewContent,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextContent>& xPredecessor)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextContent>& xPredecessor);
 
     // XRelativeTextContentRemove
     virtual void SAL_CALL removeTextContentBefore(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextContent>& xSuccessor)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextContent>& xSuccessor);
     virtual void SAL_CALL removeTextContentAfter(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::text::XTextContent>& xPredecessor)
-        throw (::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::uno::RuntimeException);
+                ::com::sun::star::text::XTextContent>& xPredecessor);
 };
 
 #endif // SW_UNOTEXT_HXX

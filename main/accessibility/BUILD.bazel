@@ -13,7 +13,6 @@ _DEFINES = [
 
 _COPTS = [
     "/Zc:wchar_t-",
-    "/Dsnprintf=_snprintf",
     "/wd4996",
     "/Imain/accessibility/inc",
     "/Imain/accessibility/inc/pch",

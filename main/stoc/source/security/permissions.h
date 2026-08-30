@@ -84,13 +84,11 @@ public:
         {}
     PermissionCollection(
         ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > const & permissions,
-        PermissionCollection const & addition = PermissionCollection() )
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+        PermissionCollection const & addition = PermissionCollection() );
 #ifdef __DIAGNOSE
     ::com::sun::star::uno::Sequence< ::rtl::OUString > toStrings() const SAL_THROW( () );
 #endif
-    void checkPermission( ::com::sun::star::uno::Any const & perm ) const
-        SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    void checkPermission( ::com::sun::star::uno::Any const & perm ) const;
 };
 
 }

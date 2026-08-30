@@ -65,7 +65,7 @@ UriAbbreviation::UriAbbreviation(css::uno::Reference< css::uno::XComponentContex
 }
 
 // ::com::sun::star::util::XStringAbbreviation:
-::rtl::OUString SAL_CALL UriAbbreviation::abbreviateString(const css::uno::Reference< css::util::XStringWidth > & xStringWidth, ::sal_Int32 nWidth, const ::rtl::OUString & aString) throw (css::uno::RuntimeException)
+::rtl::OUString SAL_CALL UriAbbreviation::abbreviateString(const css::uno::Reference< css::util::XStringWidth > & xStringWidth, ::sal_Int32 nWidth, const ::rtl::OUString & aString)
 {
     ::rtl::OUString aResult( aString );
     if ( xStringWidth.is() )

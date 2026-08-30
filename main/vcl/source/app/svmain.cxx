@@ -255,14 +255,13 @@ public:
         : m_xNextContext( ctx ) {}
 
     // XCurrentContext
-    virtual com::sun::star::uno::Any SAL_CALL getValueByName( const rtl::OUString& Name )
-            throw (com::sun::star::uno::RuntimeException);
+    virtual com::sun::star::uno::Any SAL_CALL getValueByName( const rtl::OUString& Name );
 
 private:
     com::sun::star::uno::Reference< com::sun::star::uno::XCurrentContext > m_xNextContext;
 };
 
-Any SAL_CALL DesktopEnvironmentContext::getValueByName( const rtl::OUString& Name) throw (RuntimeException)
+Any SAL_CALL DesktopEnvironmentContext::getValueByName( const rtl::OUString& Name)
 {
     Any retVal;
 

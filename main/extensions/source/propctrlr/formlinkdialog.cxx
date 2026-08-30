@@ -452,7 +452,7 @@ namespace pcr
     }
 
     //------------------------------------------------------------------------
-    void FormLinkDialog::ensureFormConnection( const Reference< XPropertySet >& _rxFormProps, Reference< XConnection >& /* [out] */ _rxConnection ) const SAL_THROW(( Exception ))
+    void FormLinkDialog::ensureFormConnection( const Reference< XPropertySet >& _rxFormProps, Reference< XConnection >& /* [out] */ _rxConnection ) const
     {
         OSL_PRECOND( _rxFormProps.is(), "FormLinkDialog::ensureFormConnection: invalid form!" );
         if ( !_rxFormProps.is() )
@@ -465,7 +465,7 @@ namespace pcr
     }
 
     //------------------------------------------------------------------------
-    void FormLinkDialog::getConnectionMetaData( const Reference< XPropertySet >& _rxFormProps, Reference< XDatabaseMetaData >& /* [out] */ _rxMeta ) const SAL_THROW(( Exception ))
+    void FormLinkDialog::getConnectionMetaData( const Reference< XPropertySet >& _rxFormProps, Reference< XDatabaseMetaData >& /* [out] */ _rxMeta ) const
     {
         if ( _rxFormProps.is() )
         {

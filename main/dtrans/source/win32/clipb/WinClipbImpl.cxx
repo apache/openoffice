@@ -103,7 +103,7 @@ CWinClipbImpl::~CWinClipbImpl( )
 // getContent
 //------------------------------------------------------------------------
 
-Reference< XTransferable > SAL_CALL CWinClipbImpl::getContents( ) throw( RuntimeException )
+Reference< XTransferable > SAL_CALL CWinClipbImpl::getContents( )
 {
     // use the shotcut or create a transferable from
     // system clipboard
@@ -146,7 +146,6 @@ Reference< XTransferable > SAL_CALL CWinClipbImpl::getContents( ) throw( Runtime
 void SAL_CALL CWinClipbImpl::setContents(
 	const Reference< XTransferable >& xTransferable,
 	const Reference< XClipboardOwner >& xClipboardOwner )
-	throw( RuntimeException )
 {
 	CDTransObjFactory objFactory;
 	IDataObjectPtr    pIDataObj;
@@ -173,7 +172,7 @@ void SAL_CALL CWinClipbImpl::setContents(
 //
 //------------------------------------------------------------------------
 
-OUString SAL_CALL CWinClipbImpl::getName(  ) throw( RuntimeException )
+OUString SAL_CALL CWinClipbImpl::getName(  )
 {
 	return m_itsName;
 }
@@ -182,7 +181,7 @@ OUString SAL_CALL CWinClipbImpl::getName(  ) throw( RuntimeException )
 //
 //------------------------------------------------------------------------
 
-sal_Int8 SAL_CALL CWinClipbImpl::getRenderingCapabilities(  ) throw( RuntimeException )
+sal_Int8 SAL_CALL CWinClipbImpl::getRenderingCapabilities(  )
 {
 	return ( Delayed | Persistant );
 }
@@ -191,7 +190,7 @@ sal_Int8 SAL_CALL CWinClipbImpl::getRenderingCapabilities(  ) throw( RuntimeExce
 //
 //------------------------------------------------------------------------
 
-void SAL_CALL CWinClipbImpl::flushClipboard( ) throw( RuntimeException )
+void SAL_CALL CWinClipbImpl::flushClipboard( )
 {
     // sollte eigentlich hier stehen: ClearableMutexGuard aGuard( m_ClipContentMutex );
     // geht aber nicht, da FlushClipboard zurückruft und das DataObject
@@ -230,7 +229,7 @@ void SAL_CALL CWinClipbImpl::unregisterClipboardViewer( )
 //
 //------------------------------------------------------------------------
 
-void SAL_CALL CWinClipbImpl::dispose() throw( RuntimeException )
+void SAL_CALL CWinClipbImpl::dispose()
 {
 	OSL_ENSURE( !m_pCurrentClipContent, "Clipboard was not flushed before shutdown!" );
 }

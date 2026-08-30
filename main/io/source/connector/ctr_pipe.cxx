@@ -54,8 +54,6 @@ namespace stoc_connector {
 	}
 
 	sal_Int32 PipeConnection::read( Sequence < sal_Int8 > & aReadBytes , sal_Int32 nBytesToRead )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		if( ! m_nStatus )
 		{
@@ -71,8 +69,6 @@ namespace stoc_connector {
 	}
 
 	void PipeConnection::write( const Sequence < sal_Int8 > &seq )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		if( ! m_nStatus )
 		{
@@ -87,15 +83,11 @@ namespace stoc_connector {
 	}
 
 	void PipeConnection::flush( )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 
 	}
 
 	void PipeConnection::close()
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		// ensure that close is called only once
 		if(1 == osl_incrementInterlockedCount( (&m_nStatus) ) )
@@ -105,7 +97,6 @@ namespace stoc_connector {
 	}
 
 	OUString PipeConnection::getDescription()
-			throw( ::com::sun::star::uno::RuntimeException)
 	{
 		return m_sDescription;
 	}

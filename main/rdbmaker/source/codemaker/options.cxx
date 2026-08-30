@@ -45,7 +45,6 @@ sal_Bool Options::isValid(const OString& option)
 }
 
 const OString Options::getOption(const OString& option)
-	throw( IllegalArgument )
 {
 	if (m_options.count(option) > 0)
 	{

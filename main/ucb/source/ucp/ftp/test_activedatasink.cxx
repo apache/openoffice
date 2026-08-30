@@ -40,7 +40,7 @@ using namespace com::sun::star::uno;
 using namespace com::sun::star::io;
 
 
-Any SAL_CALL Test_ActiveDataSink::queryInterface( const Type& rType ) throw( RuntimeException ) {
+Any SAL_CALL Test_ActiveDataSink::queryInterface( const Type& rType ) {
 	Any aRet = ::cppu::queryInterface(rType,
 									  SAL_STATIC_CAST( XActiveDataSink*,this ));
 

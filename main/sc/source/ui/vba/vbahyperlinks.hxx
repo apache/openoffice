@@ -108,28 +108,27 @@ class ScVbaHyperlinks : private vba_detail::ScVbaHlinkContainerMember, public Sc
 public:
     explicit ScVbaHyperlinks(
         const css::uno::Reference< ov::XHelperInterface >& rxParent,
-        const css::uno::Reference< css::uno::XComponentContext >& rxContext ) throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::uno::XComponentContext >& rxContext );
 
     explicit ScVbaHyperlinks(
         const css::uno::Reference< ov::XHelperInterface >& rxParent,
         const css::uno::Reference< css::uno::XComponentContext >& rxContext,
-        const ScVbaHyperlinksRef& rxSheetHlinks, const ScRangeList& rScRanges ) throw (css::uno::RuntimeException);
+        const ScVbaHyperlinksRef& rxSheetHlinks, const ScRangeList& rScRanges );
 
     virtual ~ScVbaHyperlinks();
 
     // XHyperlinks
     virtual css::uno::Reference< ov::excel::XHyperlink > SAL_CALL Add(
         const css::uno::Any& rAnchor, const css::uno::Any& rAddress, const css::uno::Any& rSubAddress,
-        const css::uno::Any& rScreenTip, const css::uno::Any& rTextToDisplay )
-            throw (css::uno::RuntimeException);
+        const css::uno::Any& rScreenTip, const css::uno::Any& rTextToDisplay );
 
-    virtual void SAL_CALL Delete() throw (css::uno::RuntimeException);
+    virtual void SAL_CALL Delete();
 
     // XEnumerationAccess
-    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
     // XElementAccess
-    virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
+    virtual css::uno::Type SAL_CALL getElementType();
 
     // ScVbaCollectionBase
     virtual css::uno::Any createCollectionObject( const css::uno::Any& rSource );

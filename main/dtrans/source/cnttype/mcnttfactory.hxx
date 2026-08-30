@@ -55,21 +55,17 @@ public:
 	// XMimeContentTypeFactory
 	//------------------------------------------------
 
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XMimeContentType > SAL_CALL createMimeContentType( const ::rtl::OUString& aContentType )
-		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XMimeContentType > SAL_CALL createMimeContentType( const ::rtl::OUString& aContentType );
 
 	//------------------------------------------------
 	// XServiceInfo
 	//------------------------------------------------
 
-	virtual ::rtl::OUString SAL_CALL getImplementationName(	 )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(	 );
 
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 private:
 	::osl::Mutex																	       m_aMutex;

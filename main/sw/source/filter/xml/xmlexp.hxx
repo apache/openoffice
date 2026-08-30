@@ -169,11 +169,10 @@ public:
 
 	// XUnoTunnel
 	static const ::com::sun::star::uno::Sequence< sal_Int8 > & getUnoTunnelId() throw();
-    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 
     // XServiceInfo (override parent method)
-    ::rtl::OUString SAL_CALL getImplementationName()
-        throw( ::com::sun::star::uno::RuntimeException );
+    ::rtl::OUString SAL_CALL getImplementationName();
 };
 
 inline const SvXMLUnitConverter& SwXMLExport::GetTwipUnitConverter() const

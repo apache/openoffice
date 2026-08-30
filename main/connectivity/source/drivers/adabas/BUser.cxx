@@ -109,7 +109,7 @@ cppu::IPropertyArrayHelper & OUserExtend::getInfoHelper()
 }
 typedef connectivity::sdbcx::OUser_BASE OUser_BASE_RBHELPER;
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL OAdabasUser::getPrivileges( const ::rtl::OUString& objName, sal_Int32 objType ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OAdabasUser::getPrivileges( const ::rtl::OUString& objName, sal_Int32 objType )
 {
     if ( objType != PrivilegeObject::TABLE )
         return 0;
@@ -122,7 +122,7 @@ sal_Int32 SAL_CALL OAdabasUser::getPrivileges( const ::rtl::OUString& objName, s
 	return nRights;
 }
 // -----------------------------------------------------------------------------
-void OAdabasUser::getAnyTablePrivileges(const ::rtl::OUString& objName, sal_Int32& nRights,sal_Int32& nRightsWithGrant) throw(SQLException, RuntimeException)
+void OAdabasUser::getAnyTablePrivileges(const ::rtl::OUString& objName, sal_Int32& nRights,sal_Int32& nRightsWithGrant)
 {
 	nRightsWithGrant = nRights = 0;
 	// first we need to create the sql stmt to select the privs
@@ -175,7 +175,7 @@ void OAdabasUser::getAnyTablePrivileges(const ::rtl::OUString& objName, sal_Int3
 	}
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OAdabasUser::getGrantablePrivileges( const ::rtl::OUString& objName, sal_Int32 objType ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OAdabasUser::getGrantablePrivileges( const ::rtl::OUString& objName, sal_Int32 objType )
 {
     if ( objType != PrivilegeObject::TABLE )
         return 0;
@@ -188,7 +188,7 @@ sal_Int32 SAL_CALL OAdabasUser::getGrantablePrivileges( const ::rtl::OUString& o
 	return nRightsWithGrant;
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OAdabasUser::grantPrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges ) throw(SQLException, RuntimeException)
+void SAL_CALL OAdabasUser::grantPrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges )
 {
     if ( objType != PrivilegeObject::TABLE )
         m_pConnection->throwGenericSQLException(STR_PRIVILEGE_NOT_GRANTED,*this);
@@ -213,7 +213,7 @@ void SAL_CALL OAdabasUser::grantPrivileges( const ::rtl::OUString& objName, sal_
 	}
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OAdabasUser::revokePrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges ) throw(SQLException, RuntimeException)
+void SAL_CALL OAdabasUser::revokePrivileges( const ::rtl::OUString& objName, sal_Int32 objType, sal_Int32 objPrivileges )
 {
     if ( objType != PrivilegeObject::TABLE )
         m_pConnection->throwGenericSQLException(STR_PRIVILEGE_NOT_REVOKED,*this);
@@ -240,7 +240,7 @@ void SAL_CALL OAdabasUser::revokePrivileges( const ::rtl::OUString& objName, sal
 }
 // -----------------------------------------------------------------------------
 // XUser
-void SAL_CALL OAdabasUser::changePassword( const ::rtl::OUString& objPassword, const ::rtl::OUString& newPassword ) throw(SQLException, RuntimeException)
+void SAL_CALL OAdabasUser::changePassword( const ::rtl::OUString& objPassword, const ::rtl::OUString& newPassword )
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OUser_BASE_RBHELPER::rBHelper.bDisposed);

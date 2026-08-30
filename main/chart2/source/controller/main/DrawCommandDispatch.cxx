@@ -246,7 +246,6 @@ void DrawCommandDispatch::disposing()
 
 // XEventListener
 void DrawCommandDispatch::disposing( const lang::EventObject& /* Source */ )
-    throw (uno::RuntimeException)
 {
 }
 

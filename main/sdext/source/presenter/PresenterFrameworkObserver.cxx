@@ -162,7 +162,6 @@ void PresenterFrameworkObserver::Shutdown (void)
 
 
 void SAL_CALL PresenterFrameworkObserver::disposing (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if ( ! rEvent.Source.is())
         return;
@@ -180,7 +179,6 @@ void SAL_CALL PresenterFrameworkObserver::disposing (const lang::EventObject& rE
 
 void SAL_CALL PresenterFrameworkObserver::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     bool bDispose(false);
 

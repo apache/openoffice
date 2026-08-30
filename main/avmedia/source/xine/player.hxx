@@ -47,29 +47,29 @@ public:
     bool                create( const ::rtl::OUString& rURL );
 
     // XPlayer
-    virtual void SAL_CALL start(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL stop(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isPlaying(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL getDuration(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setMediaTime( double fTime ) throw (::com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL getMediaTime(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setStopTime( double fTime ) throw (::com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL getStopTime(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setRate( double fRate ) throw (::com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL getRate(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setPlaybackLoop( sal_Bool bSet ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isPlaybackLoop(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setMute( sal_Bool bSet ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isMute(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setVolumeDB( sal_Int16 nVolumeDB ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getVolumeDB(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Size SAL_CALL getPreferredPlayerWindowSize(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayerWindow > SAL_CALL createPlayerWindow( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::media::XFrameGrabber > SAL_CALL createFrameGrabber(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL start(  );
+    virtual void SAL_CALL stop(  );
+    virtual sal_Bool SAL_CALL isPlaying(  );
+    virtual double SAL_CALL getDuration(  );
+    virtual void SAL_CALL setMediaTime( double fTime );
+    virtual double SAL_CALL getMediaTime(  );
+    virtual void SAL_CALL setStopTime( double fTime );
+    virtual double SAL_CALL getStopTime(  );
+    virtual void SAL_CALL setRate( double fRate );
+    virtual double SAL_CALL getRate(  );
+    virtual void SAL_CALL setPlaybackLoop( sal_Bool bSet );
+    virtual sal_Bool SAL_CALL isPlaybackLoop(  );
+    virtual void SAL_CALL setMute( sal_Bool bSet );
+    virtual sal_Bool SAL_CALL isMute(  );
+    virtual void SAL_CALL setVolumeDB( sal_Int16 nVolumeDB );
+    virtual sal_Int16 SAL_CALL getVolumeDB(  );
+    virtual ::com::sun::star::awt::Size SAL_CALL getPreferredPlayerWindowSize(  );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayerWindow > SAL_CALL createPlayerWindow( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::media::XFrameGrabber > SAL_CALL createFrameGrabber(  );
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 private:
 };

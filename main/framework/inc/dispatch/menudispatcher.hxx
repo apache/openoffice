@@ -161,7 +161,7 @@ class MenuDispatcher   :   // interfaces
 		*//*-*****************************************************************************************************/
 
 		virtual void SAL_CALL dispatch(	const	css::util::URL&										aURL			,
-										const	css::uno::Sequence< css::beans::PropertyValue >&	seqProperties	) throw( css::uno::RuntimeException );
+										const	css::uno::Sequence< css::beans::PropertyValue >&	seqProperties	);
 
 		/*-****************************************************************************************************//**
 			@short      add listener for state events
@@ -178,7 +178,7 @@ class MenuDispatcher   :   // interfaces
 		*//*-*****************************************************************************************************/
 
 		virtual void SAL_CALL addStatusListener(	const	css::uno::Reference< css::frame::XStatusListener >&	xControl,
-													const	css::util::URL&										aURL	) throw( css::uno::RuntimeException );
+													const	css::util::URL&										aURL	);
 
 		/*-****************************************************************************************************//**
 			@short      remove listener for state events
@@ -195,14 +195,14 @@ class MenuDispatcher   :   // interfaces
 		*//*-*****************************************************************************************************/
 
     	virtual void SAL_CALL removeStatusListener(	const	css::uno::Reference< css::frame::XStatusListener >&	xControl,
-													const	css::util::URL&										aURL	) throw( css::uno::RuntimeException );
+													const	css::util::URL&										aURL	);
 
 
 		//---------------------------------------------------------------------------------------------------------
 		//	 XFrameActionListener
 		//---------------------------------------------------------------------------------------------------------
 
-		virtual void SAL_CALL frameAction( const css::frame::FrameActionEvent& aEvent ) throw ( css::uno::RuntimeException );
+		virtual void SAL_CALL frameAction( const css::frame::FrameActionEvent& aEvent );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	 XEventListener
@@ -220,7 +220,7 @@ class MenuDispatcher   :   // interfaces
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		void SAL_CALL disposing( const EVENTOBJECT& aEvent ) throw( css::uno::RuntimeException );
+		void SAL_CALL disposing( const EVENTOBJECT& aEvent );
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

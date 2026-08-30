@@ -97,7 +97,7 @@ namespace dbaui
     }
 
 	// -----------------------------------------------------------------------------
-	void SAL_CALL OSingleDocumentController::disposing( const EventObject& i_event ) throw( RuntimeException )
+	void SAL_CALL OSingleDocumentController::disposing( const EventObject& i_event )
     {
         // simply disambiguate
         OSingleDocumentController_Base::disposing( i_event );
@@ -130,7 +130,7 @@ namespace dbaui
 	}
 
     // -----------------------------------------------------------------------------
-    Reference< XUndoManager > SAL_CALL OSingleDocumentController::getUndoManager(  ) throw (RuntimeException)
+    Reference< XUndoManager > SAL_CALL OSingleDocumentController::getUndoManager(  )
     {
         return m_pData->m_pUndoManager.get();
     }

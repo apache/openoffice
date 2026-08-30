@@ -123,9 +123,6 @@ ModuleManager::~ModuleManager()
     10.12.2003 11:02
 -----------------------------------------------*/
 ::rtl::OUString SAL_CALL ModuleManager::identify(const css::uno::Reference< css::uno::XInterface >& xModule)
-    throw(css::lang::IllegalArgumentException,
-          css::frame::UnknownModuleException,
-          css::uno::RuntimeException         )
 {
     // valid parameter?
     css::uno::Reference< css::frame::XFrame >      xFrame     (xModule, css::uno::UNO_QUERY);
@@ -182,10 +179,6 @@ ModuleManager::~ModuleManager()
 -----------------------------------------------*/
 void SAL_CALL ModuleManager::replaceByName(const ::rtl::OUString& sName ,
                                            const css::uno::Any&   aValue)
-    throw (css::lang::IllegalArgumentException   ,
-           css::container::NoSuchElementException,
-           css::lang::WrappedTargetException     ,
-           css::uno::RuntimeException            )
 {
     ::comphelper::SequenceAsHashMap lProps(aValue);
     if (lProps.empty() )
@@ -242,9 +235,6 @@ void SAL_CALL ModuleManager::replaceByName(const ::rtl::OUString& sName ,
     10.12.2003 12:05
 -----------------------------------------------*/
 css::uno::Any SAL_CALL ModuleManager::getByName(const ::rtl::OUString& sName)
-    throw(css::container::NoSuchElementException,
-          css::lang::WrappedTargetException     ,
-          css::uno::RuntimeException            )
 {
     // get access to the element
     css::uno::Reference< css::container::XNameAccess > xCFG = implts_getConfig();
@@ -277,7 +267,6 @@ css::uno::Any SAL_CALL ModuleManager::getByName(const ::rtl::OUString& sName)
     10.12.2003 11:58
 -----------------------------------------------*/
 css::uno::Sequence< ::rtl::OUString > SAL_CALL ModuleManager::getElementNames()
-    throw(css::uno::RuntimeException)
 {
     css::uno::Reference< css::container::XNameAccess > xCFG = implts_getConfig();
     return xCFG->getElementNames();
@@ -287,7 +276,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL ModuleManager::getElementNames()
     10.12.2003 11:57
 -----------------------------------------------*/
 sal_Bool SAL_CALL ModuleManager::hasByName(const ::rtl::OUString& sName)
-    throw(css::uno::RuntimeException)
 {
     css::uno::Reference< css::container::XNameAccess > xCFG = implts_getConfig();
     return xCFG->hasByName(sName);
@@ -297,7 +285,6 @@ sal_Bool SAL_CALL ModuleManager::hasByName(const ::rtl::OUString& sName)
     10.12.2003 11:35
 -----------------------------------------------*/
 css::uno::Type SAL_CALL ModuleManager::getElementType()
-    throw(css::uno::RuntimeException)
 {
     return ::getCppuType((const css::uno::Sequence< css::beans::PropertyValue >*)0);
 }
@@ -306,7 +293,6 @@ css::uno::Type SAL_CALL ModuleManager::getElementType()
     10.12.2003 11:56
 -----------------------------------------------*/
 sal_Bool SAL_CALL ModuleManager::hasElements()
-    throw(css::uno::RuntimeException)
 {
     css::uno::Reference< css::container::XNameAccess > xCFG = implts_getConfig();
     return xCFG->hasElements();
@@ -316,7 +302,6 @@ sal_Bool SAL_CALL ModuleManager::hasElements()
     07.03.2007 12:55
 -----------------------------------------------*/
 css::uno::Reference< css::container::XEnumeration > SAL_CALL ModuleManager::createSubSetEnumerationByQuery(const ::rtl::OUString&)
-    throw(css::uno::RuntimeException)
 {
     return css::uno::Reference< css::container::XEnumeration >();
 }
@@ -325,7 +310,6 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL ModuleManager::crea
     07.03.2007 12:55
 -----------------------------------------------*/
 css::uno::Reference< css::container::XEnumeration > SAL_CALL ModuleManager::createSubSetEnumerationByProperties(const css::uno::Sequence< css::beans::NamedValue >& lProperties)
-    throw(css::uno::RuntimeException)
 {
     ::comphelper::SequenceAsHashMap                 lSearchProps (lProperties);
     css::uno::Sequence< ::rtl::OUString >           lModules     = getElementNames();
@@ -356,7 +340,6 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL ModuleManager::crea
     14.12.2003 09:45
 -----------------------------------------------*/
 css::uno::Reference< css::container::XNameAccess > ModuleManager::implts_getConfig()
-    throw(css::uno::RuntimeException)
 {
     // SAFE -> ----------------------------------
     ReadGuard aReadLock(m_aLock);

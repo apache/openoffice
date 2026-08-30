@@ -53,7 +53,7 @@ public:
     virtual ~AccEventListener();
 
     //AccessibleEventListener
-    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent );
 
     //for name changed event
     virtual void SAL_CALL handleNameChangedEvent(Any name);
@@ -75,8 +75,8 @@ public:
     virtual void SAL_CALL handleVisibleDataChangedEvent();
 
     //for interface
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
     //get the accessible role of pAccessible

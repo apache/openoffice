@@ -367,8 +367,7 @@ class FilterCache : public BaseLock
                         is already full filled!
          */
         virtual void load(EFillState eRequired ,
-                          sal_Bool   bByThread = sal_False)
-            throw(css::uno::Exception);
+                          sal_Bool   bByThread = sal_False);
 
         //---------------------------------------
 
@@ -383,8 +382,7 @@ class FilterCache : public BaseLock
             @return     sal_True if the required fill state exists for this cache; FALSE
                         otherwise.
          */
-        virtual sal_Bool isFillState(EFillState eRequired) const
-            throw(css::uno::Exception);
+        virtual sal_Bool isFillState(EFillState eRequired) const;
 
         //---------------------------------------
 
@@ -421,8 +419,7 @@ class FilterCache : public BaseLock
          */
         virtual OUStringList getMatchingItemsByProps(      EItemType  eType                ,
                                                      const CacheItem& lIProps              ,
-                                                     const CacheItem& lEProps = CacheItem()) const
-            throw(css::uno::Exception);
+                                                     const CacheItem& lEProps = CacheItem()) const;
 
         //---------------------------------------
 
@@ -447,8 +444,7 @@ class FilterCache : public BaseLock
                         if some input parameter are wrong or the cache itself is not valid
                         any longer, because any operation before damage it.
          */
-        virtual sal_Bool hasItems(EItemType eType) const
-            throw(css::uno::Exception);
+        virtual sal_Bool hasItems(EItemType eType) const;
 
         //---------------------------------------
 
@@ -472,8 +468,7 @@ class FilterCache : public BaseLock
                         if some input parameter are wrong or the cache itself is not valid
                         any longer, because any operation before damage it.
          */
-        virtual OUStringList getItemNames(EItemType eType) const
-            throw(css::uno::Exception);
+        virtual OUStringList getItemNames(EItemType eType) const;
 
         //---------------------------------------
 
@@ -497,8 +492,7 @@ class FilterCache : public BaseLock
                         any longer, because any operation before damage it.
          */
         virtual sal_Bool hasItem(      EItemType        eType,
-                                 const ::rtl::OUString& sItem)
-            throw(css::uno::Exception);
+                                 const ::rtl::OUString& sItem);
 
         //---------------------------------------
 
@@ -527,16 +521,14 @@ class FilterCache : public BaseLock
                         any longer, because any operation before damage it.
          */
         virtual CacheItem getItem(      EItemType        eType,
-                                  const ::rtl::OUString& sItem)
-            throw(css::uno::Exception);
+                                  const ::rtl::OUString& sItem);
 
         //---------------------------------------
 
         /** TODO document me ...
          */
         virtual void removeItem(      EItemType        eType,
-                                const ::rtl::OUString& sItem)
-            throw(css::uno::Exception);
+                                const ::rtl::OUString& sItem);
 
         //---------------------------------------
 
@@ -544,16 +536,14 @@ class FilterCache : public BaseLock
          */
         virtual void setItem(      EItemType        eType ,
                              const ::rtl::OUString& sItem ,
-                             const CacheItem&       aValue)
-            throw(css::uno::Exception);
+                             const CacheItem&       aValue);
 
         //---------------------------------------
 
         /** TODO document me ...
          */
         virtual void refreshItem(      EItemType        eType,
-                                 const ::rtl::OUString& sItem)
-            throw(css::uno::Exception);
+                                 const ::rtl::OUString& sItem);
 
         //---------------------------------------
 
@@ -594,15 +584,13 @@ class FilterCache : public BaseLock
          */
         virtual void addStatePropsToItem(      EItemType        eType,
                                          const ::rtl::OUString& sItem,
-                                               CacheItem&       rItem)
-            throw(css::uno::Exception);
+                                               CacheItem&       rItem);
 
         //---------------------------------------
 
         /** TODO document me
          */
-        virtual void removeStatePropsFromItem(CacheItem& aValue)
-            throw(css::uno::Exception);
+        virtual void removeStatePropsFromItem(CacheItem& aValue);
 
         //---------------------------------------
 
@@ -615,8 +603,7 @@ class FilterCache : public BaseLock
                         if the cache itself is not valid
                         any longer, because any operation before damage it.
          */
-        virtual void flush()
-            throw(css::uno::Exception);
+        virtual void flush();
 
         //---------------------------------------
 
@@ -647,8 +634,7 @@ class FilterCache : public BaseLock
                         any longer, because any operation before damage it.
          */
         virtual void detectFlatForURL(const css::util::URL& aURL      ,
-                                            FlatDetection&  rFlatTypes) const
-            throw(css::uno::Exception);
+                                            FlatDetection&  rFlatTypes) const;
 
     //-------------------------------------------
     // private helper
@@ -670,8 +656,7 @@ class FilterCache : public BaseLock
             @throw      [css::uno::Exception]
                         if the required list does not exist.
          */
-        CacheItemList& impl_getItemList(EItemType eType) const
-            throw(css::uno::Exception);
+        CacheItemList& impl_getItemList(EItemType eType) const;
 
         //---------------------------------------
 
@@ -692,8 +677,7 @@ class FilterCache : public BaseLock
                         all necessary listener connections will be established
                         too. So this cache will be informed about outside updates.
          */
-        css::uno::Reference< css::uno::XInterface > impl_openConfig(EConfigProvider eProvide)
-            throw(css::uno::Exception);
+        css::uno::Reference< css::uno::XInterface > impl_openConfig(EConfigProvider eProvide);
 
         //---------------------------------------
 
@@ -754,8 +738,7 @@ class FilterCache : public BaseLock
             @param      eRequiredState
                         indicates, which fill state this cache should have afterwards.
          */
-        void impl_load(EFillState eRequiredState)
-            throw(css::uno::Exception);
+        void impl_load(EFillState eRequiredState);
 
         //---------------------------------------
 
@@ -775,8 +758,7 @@ class FilterCache : public BaseLock
             @throw      [css::uno::Exception]
                         if cache is invalid and could not be repaired.
          */
-        void impl_validateAndOptimize()
-            throw(css::uno::Exception);
+        void impl_validateAndOptimize();
 
         //---------------------------------------
 
@@ -806,8 +788,7 @@ class FilterCache : public BaseLock
          */
         void impl_resolveItem4TypeRegistration(      CacheItemList*   pList,
                                                const ::rtl::OUString& sItem,
-                                               const ::rtl::OUString& sType)
-            throw(css::uno::Exception);
+                                               const ::rtl::OUString& sType);
 
     //-------------------------------------------
     // static helper
@@ -844,8 +825,7 @@ class FilterCache : public BaseLock
         void impl_loadSet(const css::uno::Reference< css::container::XNameAccess >& xConfig,
                                 EItemType                                           eType  ,
                                 EReadOption                                         eOption,
-                                CacheItemList*                                      pCache )
-            throw(css::uno::Exception);
+                                CacheItemList*                                      pCache );
 
         //---------------------------------------
 
@@ -874,8 +854,7 @@ class FilterCache : public BaseLock
         CacheItem impl_loadItem(const css::uno::Reference< css::container::XNameAccess >& xSet   ,
                                       EItemType                                           eType  ,
                                 const ::rtl::OUString&                                    sItem  ,
-                                      EReadOption                                         eOption)
-            throw(css::uno::Exception);
+                                      EReadOption                                         eOption);
 
         //---------------------------------------
 
@@ -905,23 +884,20 @@ class FilterCache : public BaseLock
                     if an unrecoverable error occurs inside this operation.
          */
         CacheItemList::iterator impl_loadItemOnDemand(      EItemType        eType,
-                                                      const ::rtl::OUString& sItem)
-            throw(css::uno::Exception);
+                                                      const ::rtl::OUString& sItem);
 
         //---------------------------------------
 
         /** TODO */
         void impl_saveItem(const css::uno::Reference< css::container::XNameReplace >& xSet  ,
                                  EItemType                                            eType ,
-                           const CacheItem&                                           aValue)
-            throw(css::uno::Exception);
+                           const CacheItem&                                           aValue);
 
         //---------------------------------------
 
         /** TODO */
         void impl_addItem2FlushList(      EItemType        eType,
-                                    const ::rtl::OUString& sItem)
-            throw(css::uno::Exception);
+                                    const ::rtl::OUString& sItem);
 
 
         //---------------------------------------
@@ -930,8 +906,7 @@ class FilterCache : public BaseLock
         void impl_flushByList(const css::uno::Reference< css::container::XNameAccess >& xSet  ,
                                     EItemType                                           eType ,
                               const CacheItemList&                                      rCache,
-                              const OUStringList&                                       lItems)
-            throw(css::uno::Exception);
+                              const OUStringList&                                       lItems);
 
         //---------------------------------------
 
@@ -964,36 +939,31 @@ class FilterCache : public BaseLock
          */
         EItemFlushState impl_specifyFlushOperation(const css::uno::Reference< css::container::XNameAccess >& xSet ,
                                                    const CacheItemList&                                      rList,
-                                                   const ::rtl::OUString&                                    sItem)
-            throw(css::uno::Exception);
+                                                   const ::rtl::OUString&                                    sItem);
 
         //---------------------------------------
 
         /** TODO */
         void impl_readPatchUINames(const css::uno::Reference< css::container::XNameAccess >& xNode,
-                                         CacheItem&                                          rItem)
-            throw(css::uno::Exception);
+                                         CacheItem&                                          rItem);
 
         //---------------------------------------
 
         /** TODO */
         void impl_savePatchUINames(const css::uno::Reference< css::container::XNameReplace >& xNode,
-                                   const CacheItem&                                           rItem)
-            throw(css::uno::Exception);
+                                   const CacheItem&                                           rItem);
 
         //---------------------------------------
 
         /** TODO */
-        void impl_readOldFormat()
-            throw(css::uno::Exception);
+        void impl_readOldFormat();
 
         //---------------------------------------
 
         /** TODO */
         CacheItem impl_readOldItem(const css::uno::Reference< css::container::XNameAccess >& xSet ,
                                          EItemType                                           eType,
-                                   const ::rtl::OUString&                                    sItem)
-            throw(css::uno::Exception);
+                                   const ::rtl::OUString&                                    sItem);
 
         //---------------------------------------
 

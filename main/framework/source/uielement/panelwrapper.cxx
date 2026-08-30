@@ -92,13 +92,12 @@ void SAL_CALL PanelWrapper::release() throw()
 }
 
 uno::Any SAL_CALL PanelWrapper::queryInterface( const uno::Type & rType )
-throw( ::com::sun::star::uno::RuntimeException )
 {
 	return UIElementWrapperBase::queryInterface( rType );
 }
 
 // XComponent
-void SAL_CALL PanelWrapper::dispose() throw ( RuntimeException )
+void SAL_CALL PanelWrapper::dispose()
 {
     Reference< XComponent > xThis( static_cast< OWeakObject* >(this), UNO_QUERY );
     Reference< XMultiServiceFactory > xSMGR( m_xServiceManager );
@@ -137,7 +136,7 @@ void SAL_CALL PanelWrapper::dispose() throw ( RuntimeException )
 }
 
 // XInitialization
-void SAL_CALL PanelWrapper::initialize( const Sequence< Any >& aArguments ) throw ( Exception, RuntimeException )
+void SAL_CALL PanelWrapper::initialize( const Sequence< Any >& aArguments )
 {
     ResetableGuard aLock( m_aLock );
 
@@ -193,13 +192,13 @@ void SAL_CALL PanelWrapper::initialize( const Sequence< Any >& aArguments ) thro
 }
 
 // XEventListener
-void SAL_CALL PanelWrapper::disposing( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL PanelWrapper::disposing( const ::com::sun::star::lang::EventObject& )
 {
     // nothing todo
 }
 
 // XUpdatable
-void SAL_CALL PanelWrapper::update() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL PanelWrapper::update()
 {
     ResetableGuard aLock( m_aLock );
 
@@ -208,13 +207,13 @@ void SAL_CALL PanelWrapper::update() throw (::com::sun::star::uno::RuntimeExcept
 }
 
 // XUIElement interface
-Reference< XInterface > SAL_CALL PanelWrapper::getRealInterface(  ) throw (::com::sun::star::uno::RuntimeException)
+Reference< XInterface > SAL_CALL PanelWrapper::getRealInterface(  )
 {
     ResetableGuard aLock( m_aLock );
     return m_xPanelWindow;
 }
 
-void SAL_CALL PanelWrapper::setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const com::sun::star::uno::Any&  aValue ) throw( com::sun::star::uno::Exception )
+void SAL_CALL PanelWrapper::setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const com::sun::star::uno::Any&  aValue )
 {
     ResetableGuard aLock( m_aLock );
     sal_Bool bNoClose( m_bNoClose );

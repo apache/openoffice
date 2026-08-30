@@ -54,33 +54,33 @@ namespace abp
 
 	public:
 		// XInterface (disambiguation)
-		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
 		virtual void SAL_CALL acquire(  ) throw ();
 		virtual void SAL_CALL release(  ) throw ();
 
 		// XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
+		virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL getImplementationId(  );
 
 		// XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-		virtual ::comphelper::StringSequence SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName();
+		virtual ::comphelper::StringSequence SAL_CALL getSupportedServiceNames();
 
 		// XServiceInfo - static methods
-		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
-		static ::rtl::OUString getImplementationName_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
+		static ::rtl::OUString getImplementationName_Static(void);
 		static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
 				SAL_CALL Create(const ::com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >&);
 
 		// XPropertySet
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo() throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo();
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 
 		// OPropertyArrayUsageHelper
 		virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
 
 		// XJob
-        virtual ::com::sun::star::uno::Any SAL_CALL execute( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& lArgs ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL execute( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& lArgs );
 
         using OABSPilotUno_DBase::execute;
 	protected:

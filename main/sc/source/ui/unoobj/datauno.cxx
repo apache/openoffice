@@ -526,7 +526,7 @@ ScSubTotalFieldObj::~ScSubTotalFieldObj()
 
 // XSubTotalField
 
-sal_Int32 SAL_CALL ScSubTotalFieldObj::getGroupColumn() throw(uno::RuntimeException)
+sal_Int32 SAL_CALL ScSubTotalFieldObj::getGroupColumn()
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -535,7 +535,7 @@ sal_Int32 SAL_CALL ScSubTotalFieldObj::getGroupColumn() throw(uno::RuntimeExcept
 	return aParam.nField[nPos];
 }
 
-void SAL_CALL ScSubTotalFieldObj::setGroupColumn( sal_Int32 nGroupColumn ) throw(uno::RuntimeException)
+void SAL_CALL ScSubTotalFieldObj::setGroupColumn( sal_Int32 nGroupColumn )
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -547,7 +547,6 @@ void SAL_CALL ScSubTotalFieldObj::setGroupColumn( sal_Int32 nGroupColumn ) throw
 }
 
 uno::Sequence<sheet::SubTotalColumn> SAL_CALL ScSubTotalFieldObj::getSubTotalColumns()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -567,7 +566,6 @@ uno::Sequence<sheet::SubTotalColumn> SAL_CALL ScSubTotalFieldObj::getSubTotalCol
 
 void SAL_CALL ScSubTotalFieldObj::setSubTotalColumns(
 							const uno::Sequence<sheet::SubTotalColumn>& aSubTotalColumns )
-									throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -634,7 +632,7 @@ ScSubTotalFieldObj* ScSubTotalDescriptorBase::GetObjectByIndex_Impl(sal_uInt16 n
 	return NULL;
 }
 
-void SAL_CALL ScSubTotalDescriptorBase::clear() throw(uno::RuntimeException)
+void SAL_CALL ScSubTotalDescriptorBase::clear()
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -650,7 +648,7 @@ void SAL_CALL ScSubTotalDescriptorBase::clear() throw(uno::RuntimeException)
 
 void SAL_CALL ScSubTotalDescriptorBase::addNew(
 						const uno::Sequence<sheet::SubTotalColumn>& aSubTotalColumns,
-						sal_Int32 nGroupColumn ) throw(uno::RuntimeException)
+						sal_Int32 nGroupColumn )
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -702,7 +700,6 @@ void SAL_CALL ScSubTotalDescriptorBase::addNew(
 // XEnumerationAccess
 
 uno::Reference<container::XEnumeration> SAL_CALL ScSubTotalDescriptorBase::createEnumeration()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     return new ScIndexEnumeration(this, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sheet.SubTotalFieldsEnumeration")));
@@ -710,7 +707,7 @@ uno::Reference<container::XEnumeration> SAL_CALL ScSubTotalDescriptorBase::creat
 
 // XIndexAccess
 
-sal_Int32 SAL_CALL ScSubTotalDescriptorBase::getCount() throw(uno::RuntimeException)
+sal_Int32 SAL_CALL ScSubTotalDescriptorBase::getCount()
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -723,8 +720,6 @@ sal_Int32 SAL_CALL ScSubTotalDescriptorBase::getCount() throw(uno::RuntimeExcept
 }
 
 uno::Any SAL_CALL ScSubTotalDescriptorBase::getByIndex( sal_Int32 nIndex )
-							throw(lang::IndexOutOfBoundsException,
-									lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<sheet::XSubTotalField> xField(GetObjectByIndex_Impl((sal_uInt16)nIndex));
@@ -735,13 +730,13 @@ uno::Any SAL_CALL ScSubTotalDescriptorBase::getByIndex( sal_Int32 nIndex )
 //    return uno::Any();
 }
 
-uno::Type SAL_CALL ScSubTotalDescriptorBase::getElementType() throw(uno::RuntimeException)
+uno::Type SAL_CALL ScSubTotalDescriptorBase::getElementType()
 {
 	ScUnoGuard aGuard;
 	return getCppuType((uno::Reference<sheet::XSubTotalField>*)0);
 }
 
-sal_Bool SAL_CALL ScSubTotalDescriptorBase::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScSubTotalDescriptorBase::hasElements()
 {
 	ScUnoGuard aGuard;
 	return ( getCount() != 0 );
@@ -750,7 +745,6 @@ sal_Bool SAL_CALL ScSubTotalDescriptorBase::hasElements() throw(uno::RuntimeExce
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScSubTotalDescriptorBase::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	static uno::Reference<beans::XPropertySetInfo> aRef(
@@ -760,9 +754,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScSubTotalDescriptorBase::getPr
 
 void SAL_CALL ScSubTotalDescriptorBase::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -803,8 +794,6 @@ void SAL_CALL ScSubTotalDescriptorBase::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScSubTotalDescriptorBase::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScSubTotalParam aParam;
@@ -840,7 +829,7 @@ SC_IMPL_DUMMY_PROPERTY_LISTENER( ScSubTotalDescriptorBase )
 // XUnoTunnel
 
 sal_Int64 SAL_CALL ScSubTotalDescriptorBase::getSomething(
-				const uno::Sequence<sal_Int8 >& rId ) throw(uno::RuntimeException)
+				const uno::Sequence<sal_Int8 >& rId )
 {
 	if ( rId.getLength() == 16 &&
           0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -948,21 +937,19 @@ void ScConsolidationDescriptor::SetParam( const ScConsolidateParam& rNew )
 
 // XConsolidationDescriptor
 
-sheet::GeneralFunction SAL_CALL ScConsolidationDescriptor::getFunction() throw(uno::RuntimeException)
+sheet::GeneralFunction SAL_CALL ScConsolidationDescriptor::getFunction()
 {
 	ScUnoGuard aGuard;
 	return ScDataUnoConversion::SubTotalToGeneral(aParam.eFunction);
 }
 
 void SAL_CALL ScConsolidationDescriptor::setFunction( sheet::GeneralFunction nFunction )
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	aParam.eFunction = ScDataUnoConversion::GeneralToSubTotal(nFunction);
 }
 
 uno::Sequence<table::CellRangeAddress> SAL_CALL ScConsolidationDescriptor::getSources()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_uInt16 nCount = aParam.nDataAreaCount;
@@ -989,7 +976,6 @@ uno::Sequence<table::CellRangeAddress> SAL_CALL ScConsolidationDescriptor::getSo
 
 void SAL_CALL ScConsolidationDescriptor::setSources(
 					const uno::Sequence<table::CellRangeAddress>& aSources )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_uInt16 nCount = (sal_uInt16)aSources.getLength();
@@ -1014,7 +1000,6 @@ void SAL_CALL ScConsolidationDescriptor::setSources(
 }
 
 table::CellAddress SAL_CALL ScConsolidationDescriptor::getStartOutputPosition()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	table::CellAddress aPos;
@@ -1026,7 +1011,6 @@ table::CellAddress SAL_CALL ScConsolidationDescriptor::getStartOutputPosition()
 
 void SAL_CALL ScConsolidationDescriptor::setStartOutputPosition(
 								const table::CellAddress& aStartOutputPosition )
-									throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	aParam.nCol = (SCCOL)aStartOutputPosition.Column;
@@ -1034,40 +1018,37 @@ void SAL_CALL ScConsolidationDescriptor::setStartOutputPosition(
 	aParam.nTab = aStartOutputPosition.Sheet;
 }
 
-sal_Bool SAL_CALL ScConsolidationDescriptor::getUseColumnHeaders() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScConsolidationDescriptor::getUseColumnHeaders()
 {
 	ScUnoGuard aGuard;
 	return aParam.bByCol;
 }
 
 void SAL_CALL ScConsolidationDescriptor::setUseColumnHeaders( sal_Bool bUseColumnHeaders )
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	aParam.bByCol = bUseColumnHeaders;
 }
 
-sal_Bool SAL_CALL ScConsolidationDescriptor::getUseRowHeaders() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScConsolidationDescriptor::getUseRowHeaders()
 {
 	ScUnoGuard aGuard;
 	return aParam.bByRow;
 }
 
 void SAL_CALL ScConsolidationDescriptor::setUseRowHeaders( sal_Bool bUseRowHeaders )
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	aParam.bByRow = bUseRowHeaders;
 }
 
-sal_Bool SAL_CALL ScConsolidationDescriptor::getInsertLinks() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScConsolidationDescriptor::getInsertLinks()
 {
 	ScUnoGuard aGuard;
 	return aParam.bReferenceData;
 }
 
 void SAL_CALL ScConsolidationDescriptor::setInsertLinks( sal_Bool bInsertLinks )
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	aParam.bReferenceData = bInsertLinks;
@@ -1104,7 +1085,6 @@ void ScFilterDescriptorBase::Notify( SfxBroadcaster&, const SfxHint& rHint )
 // XSheetFilterDescriptor and XSheetFilterDescriptor2
 
 uno::Sequence<sheet::TableFilterField> SAL_CALL ScFilterDescriptorBase::getFilterFields()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScQueryParam aParam;
@@ -1173,7 +1153,6 @@ uno::Sequence<sheet::TableFilterField> SAL_CALL ScFilterDescriptorBase::getFilte
 }
 
 uno::Sequence<sheet::TableFilterField2> SAL_CALL ScFilterDescriptorBase::getFilterFields2()
-throw(uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     ScQueryParam aParam;
@@ -1248,7 +1227,6 @@ throw(uno::RuntimeException)
 
 void SAL_CALL ScFilterDescriptorBase::setFilterFields(
 				const uno::Sequence<sheet::TableFilterField>& aFilterFields )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScQueryParam aParam;
@@ -1322,7 +1300,6 @@ void SAL_CALL ScFilterDescriptorBase::setFilterFields(
 
 void SAL_CALL ScFilterDescriptorBase::setFilterFields2(
     const uno::Sequence<sheet::TableFilterField2>& aFilterFields )
-    throw(uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     ScQueryParam aParam;
@@ -1405,7 +1382,6 @@ void SAL_CALL ScFilterDescriptorBase::setFilterFields2(
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScFilterDescriptorBase::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	static uno::Reference<beans::XPropertySetInfo> aRef(
@@ -1415,9 +1391,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScFilterDescriptorBase::getProp
 
 void SAL_CALL ScFilterDescriptorBase::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScQueryParam aParam;
@@ -1466,8 +1439,6 @@ void SAL_CALL ScFilterDescriptorBase::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScFilterDescriptorBase::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScQueryParam aParam;
@@ -1660,14 +1631,13 @@ ScDBData* ScDatabaseRangeObj::GetDBData_Impl() const
 
 // XNamed
 
-rtl::OUString SAL_CALL ScDatabaseRangeObj::getName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScDatabaseRangeObj::getName()
 {
 	ScUnoGuard aGuard;
 	return aName;
 }
 
 void SAL_CALL ScDatabaseRangeObj::setName( const rtl::OUString& aNewName )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	if (pDocShell)
@@ -1682,7 +1652,7 @@ void SAL_CALL ScDatabaseRangeObj::setName( const rtl::OUString& aNewName )
 
 // XDatabaseRange
 
-table::CellRangeAddress SAL_CALL ScDatabaseRangeObj::getDataArea() throw(uno::RuntimeException)
+table::CellRangeAddress SAL_CALL ScDatabaseRangeObj::getDataArea()
 {
 	ScUnoGuard aGuard;
 	table::CellRangeAddress aAddress;
@@ -1701,7 +1671,6 @@ table::CellRangeAddress SAL_CALL ScDatabaseRangeObj::getDataArea() throw(uno::Ru
 }
 
 void SAL_CALL ScDatabaseRangeObj::setDataArea( const table::CellRangeAddress& aDataArea )
-					    							throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScDBData* pData = GetDBData_Impl();
@@ -1717,7 +1686,6 @@ void SAL_CALL ScDatabaseRangeObj::setDataArea( const table::CellRangeAddress& aD
 }
 
 uno::Sequence<beans::PropertyValue> SAL_CALL ScDatabaseRangeObj::getSortDescriptor()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScSortParam aParam;
@@ -1789,7 +1757,6 @@ void ScDatabaseRangeObj::SetQueryParam(const ScQueryParam& rQueryParam)
 }
 
 uno::Reference<sheet::XSheetFilterDescriptor> SAL_CALL ScDatabaseRangeObj::getFilterDescriptor()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return new ScRangeFilterDescriptor(pDocShell, this);
@@ -1849,14 +1816,12 @@ void ScDatabaseRangeObj::SetSubTotalParam(const ScSubTotalParam& rSubTotalParam)
 }
 
 uno::Reference<sheet::XSubTotalDescriptor> SAL_CALL ScDatabaseRangeObj::getSubTotalDescriptor()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	return new ScRangeSubTotalDescriptor(this);
 }
 
 uno::Sequence<beans::PropertyValue> SAL_CALL ScDatabaseRangeObj::getImportDescriptor()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScImportParam aParam;
@@ -1871,7 +1836,7 @@ uno::Sequence<beans::PropertyValue> SAL_CALL ScDatabaseRangeObj::getImportDescri
 
 // XRefreshable
 
-void SAL_CALL ScDatabaseRangeObj::refresh() throw(uno::RuntimeException)
+void SAL_CALL ScDatabaseRangeObj::refresh()
 {
 	ScUnoGuard aGuard;
 	ScDBData* pData = GetDBData_Impl();
@@ -1900,7 +1865,6 @@ void SAL_CALL ScDatabaseRangeObj::refresh() throw(uno::RuntimeException)
 
 void SAL_CALL ScDatabaseRangeObj::addRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<util::XRefreshListener>* pObj =
@@ -1914,7 +1878,6 @@ void SAL_CALL ScDatabaseRangeObj::addRefreshListener(
 
 void SAL_CALL ScDatabaseRangeObj::removeRefreshListener(
 								const uno::Reference<util::XRefreshListener >& xListener )
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_uInt16 nCount = aRefreshListeners.Count();
@@ -1942,7 +1905,6 @@ void ScDatabaseRangeObj::Refreshed_Impl()
 // XCellRangeSource
 
 uno::Reference<table::XCellRange> SAL_CALL ScDatabaseRangeObj::getReferredCells()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScRange aRange;
@@ -1963,7 +1925,6 @@ uno::Reference<table::XCellRange> SAL_CALL ScDatabaseRangeObj::getReferredCells(
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScDatabaseRangeObj::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	static uno::Reference<beans::XPropertySetInfo> aRef(
@@ -1973,9 +1934,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScDatabaseRangeObj::getProperty
 
 void SAL_CALL ScDatabaseRangeObj::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	ScDBData* pData = GetDBData_Impl();
@@ -2065,8 +2023,6 @@ void SAL_CALL ScDatabaseRangeObj::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScDatabaseRangeObj::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Any aRet;
@@ -2140,13 +2096,12 @@ SC_IMPL_DUMMY_PROPERTY_LISTENER( ScDatabaseRangeObj )
 
 // XServiceInfo
 
-rtl::OUString SAL_CALL ScDatabaseRangeObj::getImplementationName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScDatabaseRangeObj::getImplementationName()
 {
 	return rtl::OUString::createFromAscii( "ScDatabaseRangeObj" );
 }
 
 sal_Bool SAL_CALL ScDatabaseRangeObj::supportsService( const rtl::OUString& rServiceName )
-													throw(uno::RuntimeException)
 {
 	String aServiceStr( rServiceName );
 	return aServiceStr.EqualsAscii( SCDATABASERANGEOBJ_SERVICE ) ||
@@ -2154,7 +2109,6 @@ sal_Bool SAL_CALL ScDatabaseRangeObj::supportsService( const rtl::OUString& rSer
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL ScDatabaseRangeObj::getSupportedServiceNames()
-													throw(uno::RuntimeException)
 {
 	uno::Sequence<rtl::OUString> aRet(2);
 	rtl::OUString* pArray = aRet.getArray();
@@ -2214,7 +2168,6 @@ ScDatabaseRangeObj* ScDatabaseRangesObj::GetObjectByName_Impl(const rtl::OUStrin
 
 void SAL_CALL ScDatabaseRangesObj::addNewByName( const rtl::OUString& aName,
 										const table::CellRangeAddress& aRange )
-										throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_Bool bDone = sal_False;
@@ -2232,7 +2185,6 @@ void SAL_CALL ScDatabaseRangesObj::addNewByName( const rtl::OUString& aName,
 }
 
 void SAL_CALL ScDatabaseRangesObj::removeByName( const rtl::OUString& aName )
-										throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	sal_Bool bDone = sal_False;
@@ -2249,7 +2201,6 @@ void SAL_CALL ScDatabaseRangesObj::removeByName( const rtl::OUString& aName )
 // XEnumerationAccess
 
 uno::Reference<container::XEnumeration> SAL_CALL ScDatabaseRangesObj::createEnumeration()
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     return new ScIndexEnumeration(this, rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sheet.DatabaseRangesEnumeration")));
@@ -2257,7 +2208,7 @@ uno::Reference<container::XEnumeration> SAL_CALL ScDatabaseRangesObj::createEnum
 
 // XIndexAccess
 
-sal_Int32 SAL_CALL ScDatabaseRangesObj::getCount() throw(uno::RuntimeException)
+sal_Int32 SAL_CALL ScDatabaseRangesObj::getCount()
 {
 	ScUnoGuard aGuard;
 
@@ -2273,8 +2224,6 @@ sal_Int32 SAL_CALL ScDatabaseRangesObj::getCount() throw(uno::RuntimeException)
 }
 
 uno::Any SAL_CALL ScDatabaseRangesObj::getByIndex( sal_Int32 nIndex )
-							throw(lang::IndexOutOfBoundsException,
-									lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<sheet::XDatabaseRange> xRange(GetObjectByIndex_Impl((sal_uInt16)nIndex));
@@ -2285,13 +2234,13 @@ uno::Any SAL_CALL ScDatabaseRangesObj::getByIndex( sal_Int32 nIndex )
 //    return uno::Any();
 }
 
-uno::Type SAL_CALL ScDatabaseRangesObj::getElementType() throw(uno::RuntimeException)
+uno::Type SAL_CALL ScDatabaseRangesObj::getElementType()
 {
 	ScUnoGuard aGuard;
 	return getCppuType((uno::Reference<sheet::XDatabaseRange>*)0);
 }
 
-sal_Bool SAL_CALL ScDatabaseRangesObj::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScDatabaseRangesObj::hasElements()
 {
 	ScUnoGuard aGuard;
 	return ( getCount() != 0 );
@@ -2300,8 +2249,6 @@ sal_Bool SAL_CALL ScDatabaseRangesObj::hasElements() throw(uno::RuntimeException
 // XNameAccess
 
 uno::Any SAL_CALL ScDatabaseRangesObj::getByName( const rtl::OUString& aName )
-			throw(container::NoSuchElementException,
-					lang::WrappedTargetException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<sheet::XDatabaseRange> xRange(GetObjectByName_Impl(aName));
@@ -2313,7 +2260,6 @@ uno::Any SAL_CALL ScDatabaseRangesObj::getByName( const rtl::OUString& aName )
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL ScDatabaseRangesObj::getElementNames()
-												throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -2338,7 +2284,6 @@ uno::Sequence<rtl::OUString> SAL_CALL ScDatabaseRangesObj::getElementNames()
 }
 
 sal_Bool SAL_CALL ScDatabaseRangesObj::hasByName( const rtl::OUString& aName )
-										throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 

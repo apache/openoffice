@@ -57,7 +57,7 @@ SwView* getView( const uno::Reference< frame::XModel>& xModel )
     return pDocShell? pDocShell->GetView() : 0;
 }
 
-uno::Reference< text::XTextViewCursor > getXTextViewCursor( const uno::Reference< frame::XModel >& xModel ) throw (uno::RuntimeException)
+uno::Reference< text::XTextViewCursor > getXTextViewCursor( const uno::Reference< frame::XModel >& xModel )
 {
     uno::Reference< frame::XController > xController = xModel->getCurrentController();
     uno::Reference< text::XTextViewCursorSupplier > xTextViewCursorSupp( xController, uno::UNO_QUERY_THROW );
@@ -65,7 +65,7 @@ uno::Reference< text::XTextViewCursor > getXTextViewCursor( const uno::Reference
     return xTextViewCursor;
 }
 
-uno::Reference< style::XStyle > getCurrentPageStyle( const uno::Reference< frame::XModel >& xModel ) throw (uno::RuntimeException)
+uno::Reference< style::XStyle > getCurrentPageStyle( const uno::Reference< frame::XModel >& xModel )
 {
     uno::Reference< beans::XPropertySet > xCursorProps( getXTextViewCursor( xModel ), uno::UNO_QUERY_THROW );
     rtl::OUString aPageStyleName;
@@ -78,7 +78,7 @@ uno::Reference< style::XStyle > getCurrentPageStyle( const uno::Reference< frame
     return xStyle;
 }
 
-sal_Int32 getPageCount( const uno::Reference< frame::XModel>& xModel ) throw (uno::RuntimeException)
+sal_Int32 getPageCount( const uno::Reference< frame::XModel>& xModel )
 {
     SwDocShell* pDocShell = getDocShell( xModel );
     ViewShell* pViewSh = pDocShell ? pDocShell->GetDoc()->GetCurrentViewShell() : 0;

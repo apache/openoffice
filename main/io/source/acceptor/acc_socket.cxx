@@ -79,26 +79,15 @@ namespace io_acceptor {
 		~SocketConnection();
 
 		virtual sal_Int32 SAL_CALL read( ::com::sun::star::uno::Sequence< sal_Int8 >& aReadBytes,
-										 sal_Int32 nBytesToRead )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL write( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL flush(  ) throw(
-			::com::sun::star::io::IOException,
-			::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL close(  )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getDescription(  )
-			throw(::com::sun::star::uno::RuntimeException);
+										 sal_Int32 nBytesToRead );
+		virtual void SAL_CALL write( const ::com::sun::star::uno::Sequence< sal_Int8 >& aData );
+		virtual void SAL_CALL flush(  );
+		virtual void SAL_CALL close(  );
+		virtual ::rtl::OUString SAL_CALL getDescription(  );
 
 		// XConnectionBroadcaster
-		virtual void SAL_CALL addStreamListener(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener>& aListener)
-			throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removeStreamListener(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener>& aListener)
-			throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL addStreamListener(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener>& aListener);
+		virtual void SAL_CALL removeStreamListener(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener>& aListener);
 
 	public:
 		void completeConnectionString();
@@ -199,8 +188,6 @@ namespace io_acceptor {
 	}
 
 	sal_Int32 SocketConnection::read( Sequence < sal_Int8 > & aReadBytes , sal_Int32 nBytesToRead )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		if( ! m_nStatus )
 		{
@@ -247,8 +234,6 @@ namespace io_acceptor {
 	}
 
 	void SocketConnection::write( const Sequence < sal_Int8 > &seq )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		if( ! m_nStatus )
 		{
@@ -283,15 +268,11 @@ namespace io_acceptor {
 	}
 
 	void SocketConnection::flush( )
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 
 	}
 
 	void SocketConnection::close()
-			throw(::com::sun::star::io::IOException,
-				  ::com::sun::star::uno::RuntimeException)
 	{
 		// ensure close is called only once
 		if(  1 == osl_incrementInterlockedCount( (&m_nStatus) ) )
@@ -302,21 +283,20 @@ namespace io_acceptor {
 	}
 
 	OUString SocketConnection::getDescription()
-			throw( ::com::sun::star::uno::RuntimeException)
 	{
 		return m_sDescription;
 	}
 
 
 	// XConnectionBroadcaster
-	void SAL_CALL SocketConnection::addStreamListener(const Reference<XStreamListener> & aListener) throw(RuntimeException)
+	void SAL_CALL SocketConnection::addStreamListener(const Reference<XStreamListener> & aListener)
 	{
 		MutexGuard guard(_mutex);
 
 		_listeners.insert(aListener);
 	}
 
-	void SAL_CALL SocketConnection::removeStreamListener(const Reference<XStreamListener> & aListener) throw(RuntimeException)
+	void SAL_CALL SocketConnection::removeStreamListener(const Reference<XStreamListener> & aListener)
 	{
 		MutexGuard guard(_mutex);
 

@@ -40,12 +40,9 @@ public:
 							_CreateShape( SdrObject *pObj ) const throw();
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& rServiceName )
-        throw(com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence<rtl::OUString> SAL_CALL getSupportedServiceNames()
-        throw(com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& rServiceName );
+    virtual com::sun::star::uno::Sequence<rtl::OUString> SAL_CALL getSupportedServiceNames();
 };
 
 #endif

@@ -396,7 +396,6 @@ SmXMLExport::SmXMLExport(
 
 sal_Int64 SAL_CALL SmXMLExport::getSomething(
     const uno::Sequence< sal_Int8 >& rId )
-throw(uno::RuntimeException)
 {
     if ( rId.getLength() == 16 &&
         0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -437,7 +436,6 @@ uno::Sequence< OUString > SAL_CALL SmXMLExport_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLExport_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-    throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLExport( EXPORT_ALL );
@@ -464,7 +462,6 @@ uno::Sequence< OUString > SAL_CALL SmXMLExportMetaOOO_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLExportMetaOOO_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLExport( EXPORT_META );
@@ -488,7 +485,6 @@ throw()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLExportMeta_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLExport( EXPORT_META );
@@ -512,7 +508,6 @@ throw()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLExportSettingsOOO_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLExport( EXPORT_SETTINGS );
@@ -536,7 +531,6 @@ throw()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLExportSettings_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLExport( EXPORT_SETTINGS );
@@ -560,7 +554,6 @@ uno::Sequence< OUString > SAL_CALL SmXMLExportContent_getSupportedServiceNames()
 
 uno::Reference< uno::XInterface > SAL_CALL SmXMLExportContent_createInstance(
     const uno::Reference< lang::XMultiServiceFactory > & rSMgr)
-throw( uno::Exception )
 {
     // #110680#
     // return (cppu::OWeakObject*)new SmXMLExport( EXPORT_CONTENT );
@@ -574,7 +567,6 @@ throw( uno::Exception )
 // XServiceInfo
 // override empty method from parent class
 rtl::OUString SAL_CALL SmXMLExport::getImplementationName()
-throw(uno::RuntimeException)
 {
     OUString aTxt;
     switch( getExportFlags() )

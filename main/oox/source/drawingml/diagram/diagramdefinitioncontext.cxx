@@ -59,7 +59,6 @@ DiagramDefinitionContext::~DiagramDefinitionContext()
 }
 
 void SAL_CALL DiagramDefinitionContext::endFastElement( ::sal_Int32 )
-	throw (SAXException, RuntimeException)
 {
 
 }
@@ -68,7 +67,6 @@ void SAL_CALL DiagramDefinitionContext::endFastElement( ::sal_Int32 )
 Reference< XFastContextHandler > SAL_CALL
 DiagramDefinitionContext::createFastChildContext( ::sal_Int32 aElement,
 												  const Reference< XFastAttributeList >& xAttribs )
-	throw (SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 

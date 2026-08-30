@@ -208,8 +208,8 @@ namespace FORMS_MODULE_NAMESPACE
     //= OMultiInstanceAutoRegistration or OOneInstanceAutoRegistration
     //==========================================================================
     #define DECLARE_SERVICE_REGISTRATION( classname ) \
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException); \
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException); \
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  ); \
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ); \
         \
         static  ::rtl::OUString SAL_CALL getImplementationName_Static(); \
         static  ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_Static(); \
@@ -220,10 +220,10 @@ namespace FORMS_MODULE_NAMESPACE
 
     #define IMPLEMENT_SERVICE_REGISTRATION_BASE( classname, baseclass ) \
         \
-        ::rtl::OUString SAL_CALL classname::getImplementationName(  ) throw ( RuntimeException ) \
+        ::rtl::OUString SAL_CALL classname::getImplementationName(  ) \
         { return getImplementationName_Static(); } \
         \
-        Sequence< ::rtl::OUString > SAL_CALL classname::getSupportedServiceNames(  ) throw (RuntimeException) \
+        Sequence< ::rtl::OUString > SAL_CALL classname::getSupportedServiceNames(  ) \
         { \
             return ::comphelper::concatSequences( \
                 getAggregateServiceNames(), \

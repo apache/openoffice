@@ -43,10 +43,7 @@ class Parser;
 class ParseManager: public salhelper::SimpleReferenceObject {
 public:
     ParseManager(
-        rtl::OUString const & url, rtl::Reference< Parser > const & parser)
-        SAL_THROW((
-            com::sun::star::container::NoSuchElementException,
-            com::sun::star::uno::RuntimeException));
+        rtl::OUString const & url, rtl::Reference< Parser > const & parser);
 
     bool parse();
 

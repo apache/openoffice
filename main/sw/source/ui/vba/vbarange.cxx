@@ -38,18 +38,18 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-SwVbaRange::SwVbaRange( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< text::XTextDocument >& rTextDocument, const uno::Reference< text::XTextRange >& rStart, sal_Bool _bMaySpanEndOfDocument ) throw (uno::RuntimeException) : SwVbaRange_BASE( rParent, rContext ), mxTextDocument( rTextDocument ), mbMaySpanEndOfDocument( _bMaySpanEndOfDocument )
+SwVbaRange::SwVbaRange( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< text::XTextDocument >& rTextDocument, const uno::Reference< text::XTextRange >& rStart, sal_Bool _bMaySpanEndOfDocument ) : SwVbaRange_BASE( rParent, rContext ), mxTextDocument( rTextDocument ), mbMaySpanEndOfDocument( _bMaySpanEndOfDocument )
 {
     uno::Reference< text::XTextRange > xEnd;
     initialize( rStart, xEnd );
 }
 
-SwVbaRange::SwVbaRange( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< text::XTextDocument >& rTextDocument, const uno::Reference< text::XTextRange >& rStart, const uno::Reference< text::XTextRange >& rEnd, sal_Bool _bMaySpanEndOfDocument ) throw (uno::RuntimeException) : SwVbaRange_BASE( rParent, rContext ), mxTextDocument( rTextDocument ), mbMaySpanEndOfDocument( _bMaySpanEndOfDocument )
+SwVbaRange::SwVbaRange( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< text::XTextDocument >& rTextDocument, const uno::Reference< text::XTextRange >& rStart, const uno::Reference< text::XTextRange >& rEnd, sal_Bool _bMaySpanEndOfDocument ) : SwVbaRange_BASE( rParent, rContext ), mxTextDocument( rTextDocument ), mbMaySpanEndOfDocument( _bMaySpanEndOfDocument )
 {
     initialize( rStart, rEnd );
 }
 
-SwVbaRange::SwVbaRange( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< text::XTextDocument >& rTextDocument, const uno::Reference< text::XTextRange >& rStart, const uno::Reference< text::XTextRange >& rEnd, const uno::Reference< text::XText >& rText, sal_Bool _bMaySpanEndOfDocument ) throw (uno::RuntimeException) : SwVbaRange_BASE( rParent, rContext ),mxTextDocument( rTextDocument ), mxText( rText ), mbMaySpanEndOfDocument( _bMaySpanEndOfDocument )
+SwVbaRange::SwVbaRange( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const uno::Reference< text::XTextDocument >& rTextDocument, const uno::Reference< text::XTextRange >& rStart, const uno::Reference< text::XTextRange >& rEnd, const uno::Reference< text::XText >& rText, sal_Bool _bMaySpanEndOfDocument ) : SwVbaRange_BASE( rParent, rContext ),mxTextDocument( rTextDocument ), mxText( rText ), mbMaySpanEndOfDocument( _bMaySpanEndOfDocument )
 {
     initialize( rStart, rEnd );
 }
@@ -58,7 +58,7 @@ SwVbaRange::~SwVbaRange()
 {
 }
 
-void SwVbaRange::initialize( const uno::Reference< text::XTextRange >& rStart, const uno::Reference< text::XTextRange >& rEnd ) throw (uno::RuntimeException)
+void SwVbaRange::initialize( const uno::Reference< text::XTextRange >& rStart, const uno::Reference< text::XTextRange >& rEnd )
 {
     if( !mxText.is() )
     {
@@ -75,13 +75,13 @@ void SwVbaRange::initialize( const uno::Reference< text::XTextRange >& rStart, c
 }
 
 uno::Reference< text::XTextRange > SAL_CALL
-SwVbaRange::getXTextRange() throw (uno::RuntimeException)
+SwVbaRange::getXTextRange()
 {
     uno::Reference< text::XTextRange > xTextRange( mxTextCursor, uno::UNO_QUERY_THROW );
     return xTextRange;
 }
 #ifdef TOMORROW
-void SwVbaRange::setXTextRange( const uno::Reference< text::XTextRange >& xRange ) throw (uno::RuntimeException)
+void SwVbaRange::setXTextRange( const uno::Reference< text::XTextRange >& xRange )
 {
     mxTextCursor->gotoRange( xRange->getStart(), sal_False );
     mxTextCursor->gotoRange( xRange->getEnd(), sal_True );
@@ -93,7 +93,7 @@ void SwVbaRange::setXTextRange( const uno::Reference< text::XTextRange >& xRange
 * @return
 */
 rtl::OUString SAL_CALL
-SwVbaRange::getText() throw ( uno::RuntimeException )
+SwVbaRange::getText()
 {
     rtl::OUString aText = mxTextCursor->getString();
     sal_Int32 nLen = aText.getLength();
@@ -122,7 +122,7 @@ SwVbaRange::getText() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-SwVbaRange::setText( const rtl::OUString& rText ) throw ( uno::RuntimeException )
+SwVbaRange::setText( const rtl::OUString& rText )
 {
     if( rText.indexOf( '\n' )  != -1 )
     {
@@ -138,7 +138,7 @@ SwVbaRange::setText( const rtl::OUString& rText ) throw ( uno::RuntimeException 
 }
 
 // FIXME: test is not pass
-void SAL_CALL SwVbaRange::InsertBreak( const uno::Any& _breakType ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaRange::InsertBreak( const uno::Any& _breakType )
 {
     // default type is wdPageBreak;
     sal_Int32 nBreakType = word::WdBreakType::wdPageBreak;
@@ -182,7 +182,7 @@ void SAL_CALL SwVbaRange::InsertBreak( const uno::Any& _breakType ) throw (uno::
 }
 
 void SAL_CALL
-SwVbaRange::Select() throw ( uno::RuntimeException )
+SwVbaRange::Select()
 {
     uno::Reference< frame::XModel > xModel( mxTextDocument, uno::UNO_QUERY_THROW );
     uno::Reference< text::XTextViewCursor > xTextViewCursor = word::getXTextViewCursor( xModel );
@@ -191,14 +191,14 @@ SwVbaRange::Select() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-SwVbaRange::InsertParagraph() throw ( uno::RuntimeException )
+SwVbaRange::InsertParagraph()
 {
     mxTextCursor->setString( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("") ) );
     InsertParagraphBefore();
 }
 
 void SAL_CALL
-SwVbaRange::InsertParagraphBefore() throw ( uno::RuntimeException )
+SwVbaRange::InsertParagraphBefore()
 {
     uno::Reference< text::XTextRange > xTextRange = mxTextCursor->getStart();
     mxText->insertControlCharacter( xTextRange, text::ControlCharacter::PARAGRAPH_BREAK, sal_True );
@@ -206,27 +206,27 @@ SwVbaRange::InsertParagraphBefore() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-SwVbaRange::InsertParagraphAfter() throw ( uno::RuntimeException )
+SwVbaRange::InsertParagraphAfter()
 {
     uno::Reference< text::XTextRange > xTextRange = mxTextCursor->getEnd();
     mxText->insertControlCharacter( xTextRange, text::ControlCharacter::PARAGRAPH_BREAK, sal_True );
 }
 
 uno::Reference< word::XParagraphFormat > SAL_CALL
-SwVbaRange::getParagraphFormat() throw ( uno::RuntimeException )
+SwVbaRange::getParagraphFormat()
 {
     uno::Reference< beans::XPropertySet > xParaProps( mxTextCursor, uno::UNO_QUERY_THROW );
     return uno::Reference< word::XParagraphFormat >( new SwVbaParagraphFormat( this, mxContext, mxTextDocument, xParaProps ) );
 }
 
 void SAL_CALL
-SwVbaRange::setParagraphFormat( const uno::Reference< word::XParagraphFormat >& /*rParagraphFormat*/ ) throw ( uno::RuntimeException )
+SwVbaRange::setParagraphFormat( const uno::Reference< word::XParagraphFormat >& /*rParagraphFormat*/ )
 {
     throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Not implemented") ), uno::Reference< uno::XInterface >() );
 }
 
 uno::Reference< word::XStyle > SAL_CALL
-SwVbaRange::getStyle() throw ( uno::RuntimeException )
+SwVbaRange::getStyle()
 {
     rtl::OUString aStyleName;
     rtl::OUString aStyleType;
@@ -250,33 +250,33 @@ SwVbaRange::getStyle() throw ( uno::RuntimeException )
 }
 
 void SAL_CALL
-SwVbaRange::setStyle( const uno::Reference< word::XStyle >& rStyle ) throw ( uno::RuntimeException )
+SwVbaRange::setStyle( const uno::Reference< word::XStyle >& rStyle )
 {
     uno::Reference< beans::XPropertySet > xParaProps( mxTextCursor, uno::UNO_QUERY_THROW );
     SwVbaStyle::setStyle( xParaProps, rStyle );
 }
 
 uno::Reference< word::XFont > SAL_CALL
-SwVbaRange::getFont() throw ( uno::RuntimeException )
+SwVbaRange::getFont()
 {
     VbaPalette aColors;
     return new SwVbaFont( mxParent, mxContext, aColors.getPalette(), uno::Reference< beans::XPropertySet >( getXTextRange(), uno::UNO_QUERY_THROW ) );
 }
 
-::sal_Int32 SAL_CALL SwVbaRange::getLanguageID() throw (uno::RuntimeException)
+::sal_Int32 SAL_CALL SwVbaRange::getLanguageID()
 {
     uno::Reference< beans::XPropertySet > xParaProps( mxTextCursor, uno::UNO_QUERY_THROW );
     return SwVbaStyle::getLanguageID( xParaProps );
 }
 
-void SAL_CALL SwVbaRange::setLanguageID( ::sal_Int32 _languageid ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaRange::setLanguageID( ::sal_Int32 _languageid )
 {
     uno::Reference< beans::XPropertySet > xParaProps( mxTextCursor, uno::UNO_QUERY_THROW );
     SwVbaStyle::setLanguageID( xParaProps, _languageid );
 }
 
 uno::Any SAL_CALL
-SwVbaRange::PageSetup( ) throw (uno::RuntimeException)
+SwVbaRange::PageSetup( )
 {
     uno::Reference< beans::XPropertySet > xParaProps( mxTextCursor, uno::UNO_QUERY_THROW );
     uno::Reference< frame::XModel > xModel( mxTextDocument, uno::UNO_QUERY_THROW );
@@ -289,13 +289,13 @@ SwVbaRange::PageSetup( ) throw (uno::RuntimeException)
     return uno::makeAny( uno::Reference< word::XPageSetup >( new SwVbaPageSetup( this, mxContext, xModel, xPageProps ) ) );
 }
 
-::sal_Int32 SAL_CALL SwVbaRange::getStart() throw (uno::RuntimeException)
+::sal_Int32 SAL_CALL SwVbaRange::getStart()
 {
     uno::Reference< text::XText > xText = mxTextDocument->getText();
     return SwVbaRangeHelper::getPosition( xText, mxTextCursor->getStart() );
 }
 
-void SAL_CALL SwVbaRange::setStart( ::sal_Int32 _start ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaRange::setStart( ::sal_Int32 _start )
 {
     uno::Reference< text::XText > xText = mxTextDocument->getText();
     uno::Reference< text::XTextRange > xStart = SwVbaRangeHelper::getRangeByPosition( xText, _start );
@@ -305,13 +305,13 @@ void SAL_CALL SwVbaRange::setStart( ::sal_Int32 _start ) throw (uno::RuntimeExce
     mxTextCursor->gotoRange( xEnd, sal_True );
 }
 
-::sal_Int32 SAL_CALL SwVbaRange::getEnd() throw (uno::RuntimeException)
+::sal_Int32 SAL_CALL SwVbaRange::getEnd()
 {
     uno::Reference< text::XText > xText = mxTextDocument->getText();
     return SwVbaRangeHelper::getPosition( xText, mxTextCursor->getEnd() );
 }
 
-void SAL_CALL SwVbaRange::setEnd( ::sal_Int32 _end ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaRange::setEnd( ::sal_Int32 _end )
 {
     uno::Reference< text::XText > xText = mxTextDocument->getText();
     uno::Reference< text::XTextRange > xEnd = SwVbaRangeHelper::getRangeByPosition( xText, _end );

@@ -65,7 +65,6 @@ void Graphic::init( const ::Graphic& rGraphic )
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL Graphic::queryAggregation( const uno::Type& rType )
-	throw( uno::RuntimeException )
 {
 	uno::Any aAny;
 	if( rType == ::getCppuType((const uno::Reference< graphic::XGraphic >*)0) )
@@ -83,7 +82,6 @@ uno::Any SAL_CALL Graphic::queryAggregation( const uno::Type& rType )
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL Graphic::queryInterface( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
     ::com::sun::star::uno::Any aReturn = ::unographic::GraphicDescriptor::queryInterface( rType );
     if ( !aReturn.hasValue() )
@@ -109,7 +107,6 @@ void SAL_CALL Graphic::release() throw()
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL Graphic::getImplementationId_Static()
-	throw(uno::RuntimeException)
 {
 	vos::OGuard 						aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
@@ -146,7 +143,6 @@ uno::Sequence< ::rtl::OUString > Graphic::getSupportedServiceNames_Static()
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL Graphic::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
 }
@@ -154,7 +150,6 @@ uno::Sequence< ::rtl::OUString > Graphic::getSupportedServiceNames_Static()
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL Graphic::supportsService( const ::rtl::OUString& rServiceName )
-	throw( uno::RuntimeException )
 {
 	if( ::unographic::GraphicDescriptor::supportsService( rServiceName ) )
 		return true;
@@ -174,7 +169,6 @@ sal_Bool SAL_CALL Graphic::supportsService( const ::rtl::OUString& rServiceName 
 // ------------------------------------------------------------------------------
 
 uno::Sequence< ::rtl::OUString > SAL_CALL Graphic::getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > 	aRet( ::unographic::GraphicDescriptor::getSupportedServiceNames() );
 	uno::Sequence< ::rtl::OUString > 	aNew( getSupportedServiceNames_Static() );
@@ -191,7 +185,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL Graphic::getSupportedServiceNames()
 // ------------------------------------------------------------------------------
 
 uno::Sequence< uno::Type > SAL_CALL Graphic::getTypes()
-	throw(uno::RuntimeException)
 {
 	uno::Sequence< uno::Type >	aRet( ::unographic::GraphicDescriptor::getTypes() );
 	sal_Int32 					nOldCount = aRet.getLength();
@@ -206,7 +199,6 @@ uno::Sequence< uno::Type > SAL_CALL Graphic::getTypes()
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL Graphic::getImplementationId()
-	throw(uno::RuntimeException)
 {
 	return getImplementationId_Static();
 }
@@ -214,7 +206,6 @@ uno::Sequence< sal_Int8 > SAL_CALL Graphic::getImplementationId()
 // ------------------------------------------------------------------------------
 
 ::sal_Int8 SAL_CALL Graphic::getType()
- 	throw (uno::RuntimeException)
 {
 	::sal_Int8 cRet = graphic::GraphicType::EMPTY;
 
@@ -228,7 +219,7 @@ uno::Sequence< sal_Int8 > SAL_CALL Graphic::getImplementationId()
 // XBitmap
 //----------------------------------------------------------------------
 
-awt::Size SAL_CALL Graphic::getSize(  ) throw (uno::RuntimeException)
+awt::Size SAL_CALL Graphic::getSize(  )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -241,7 +232,7 @@ awt::Size SAL_CALL Graphic::getSize(  ) throw (uno::RuntimeException)
 
 //----------------------------------------------------------------------
 
-uno::Sequence< ::sal_Int8 > SAL_CALL Graphic::getDIB(  ) throw (uno::RuntimeException)
+uno::Sequence< ::sal_Int8 > SAL_CALL Graphic::getDIB(  )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -260,7 +251,7 @@ uno::Sequence< ::sal_Int8 > SAL_CALL Graphic::getDIB(  ) throw (uno::RuntimeExce
 
 //----------------------------------------------------------------------
 
-uno::Sequence< ::sal_Int8 > SAL_CALL Graphic::getMaskDIB(  ) throw (uno::RuntimeException)
+uno::Sequence< ::sal_Int8 > SAL_CALL Graphic::getMaskDIB(  )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -287,7 +278,6 @@ const ::Graphic* Graphic::getImplementation( const uno::Reference< uno::XInterfa
 
 //----------------------------------------------------------------------
 sal_Int64 SAL_CALL Graphic::getSomething( const uno::Sequence< sal_Int8 >& rId )
-	throw( uno::RuntimeException )
 {
 	return( ( rId.getLength() == 16 && 0 == rtl_compareMemory( getImplementationId().getConstArray(), rId.getConstArray(), 16 ) ) ?
 			reinterpret_cast< sal_Int64 >( mpGraphic ) :

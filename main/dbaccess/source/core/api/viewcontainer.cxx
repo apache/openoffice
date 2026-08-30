@@ -218,7 +218,7 @@ void OViewContainer::dropObject(sal_Int32 _nPos,const ::rtl::OUString _sElementN
     }
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OViewContainer::elementInserted( const ContainerEvent& Event ) throw (RuntimeException)
+void SAL_CALL OViewContainer::elementInserted( const ContainerEvent& Event )
 {
 	::osl::MutexGuard aGuard(m_rMutex);
 	::rtl::OUString sName;
@@ -235,7 +235,7 @@ void SAL_CALL OViewContainer::elementInserted( const ContainerEvent& Event ) thr
 	}
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OViewContainer::elementRemoved( const ContainerEvent& Event ) throw (RuntimeException)
+void SAL_CALL OViewContainer::elementRemoved( const ContainerEvent& Event )
 {
     ::osl::MutexGuard aGuard(m_rMutex);
 	::rtl::OUString sName;
@@ -255,11 +255,11 @@ void SAL_CALL OViewContainer::elementRemoved( const ContainerEvent& Event ) thro
 	}
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OViewContainer::disposing( const ::com::sun::star::lang::EventObject& /*Source*/ ) throw (RuntimeException)
+void SAL_CALL OViewContainer::disposing( const ::com::sun::star::lang::EventObject& /*Source*/ )
 {
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OViewContainer::elementReplaced( const ContainerEvent& /*Event*/ ) throw (RuntimeException)
+void SAL_CALL OViewContainer::elementReplaced( const ContainerEvent& /*Event*/ )
 {
 }
 // -----------------------------------------------------------------------------

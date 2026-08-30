@@ -68,7 +68,7 @@ public:
 
 	}
 
-	virtual sal_Int16 SAL_CALL compare( const Any& any1, const Any& any2 ) throw(RuntimeException);
+	virtual sal_Int16 SAL_CALL compare( const Any& any1, const Any& any2 );
 };
 
 //=============================================================================
@@ -84,16 +84,15 @@ public:
     {}
 
 	// XAnyCompareFactory
-	virtual Reference< XAnyCompare > SAL_CALL createAnyCompareByName ( const OUString& aPropertyName ) throw(::com::sun::star::uno::RuntimeException);
+	virtual Reference< XAnyCompare > SAL_CALL createAnyCompareByName ( const OUString& aPropertyName );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments )
-			throw ( Exception, RuntimeException );
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName(  ) throw(RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw(RuntimeException);
+	virtual OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
 
     // XServiceInfo - static versions (used for component registration)
     static ::rtl::OUString SAL_CALL getImplementationName_static();
@@ -103,7 +102,7 @@ public:
 
 //===========================================================================================
 
-sal_Int16 SAL_CALL AnyCompare::compare( const Any& any1, const Any& any2 ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 SAL_CALL AnyCompare::compare( const Any& any1, const Any& any2 )
 {
 	sal_Int16 aResult = 0;
 
@@ -123,7 +122,7 @@ sal_Int16 SAL_CALL AnyCompare::compare( const Any& any1, const Any& any2 ) throw
 
 //===========================================================================================
 
-Reference< XAnyCompare > SAL_CALL AnyCompareFactory::createAnyCompareByName( const OUString& aPropertyName ) throw(::com::sun::star::uno::RuntimeException)
+Reference< XAnyCompare > SAL_CALL AnyCompareFactory::createAnyCompareByName( const OUString& aPropertyName )
 {
 	// for now only OUString properties compare is implemented
 	// so no check for the property name is done
@@ -134,7 +133,7 @@ Reference< XAnyCompare > SAL_CALL AnyCompareFactory::createAnyCompareByName( con
 	return Reference< XAnyCompare >();
 }
 
-void SAL_CALL AnyCompareFactory::initialize( const Sequence< Any >& aArguments ) throw ( Exception, RuntimeException )
+void SAL_CALL AnyCompareFactory::initialize( const Sequence< Any >& aArguments )
 {
 	if( aArguments.getLength() )
 	{
@@ -147,7 +146,7 @@ void SAL_CALL AnyCompareFactory::initialize( const Sequence< Any >& aArguments )
 
 }
 
-OUString SAL_CALL AnyCompareFactory::getImplementationName(  ) throw( RuntimeException )
+OUString SAL_CALL AnyCompareFactory::getImplementationName(  )
 {
 	return getImplementationName_static();
 }
@@ -157,13 +156,13 @@ OUString SAL_CALL AnyCompareFactory::getImplementationName_static(  )
 	return rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "AnyCompareFactory" ) );
 }
 
-sal_Bool SAL_CALL AnyCompareFactory::supportsService( const OUString& ServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL AnyCompareFactory::supportsService( const OUString& ServiceName )
 {
 	rtl::OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.ucb.AnyCompareFactory" ) );
 	return aServiceName == ServiceName;
 }
 
-Sequence< OUString > SAL_CALL AnyCompareFactory::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< OUString > SAL_CALL AnyCompareFactory::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_static();
 }

@@ -104,7 +104,6 @@ XTYPEPROVIDER_IMPL_2( XPropertySetInfo_impl,
 Any SAL_CALL
 XPropertySetInfo_impl::queryInterface(
 				     const Type& rType )
-  throw( RuntimeException )
 {
   Any aRet = cppu::queryInterface( rType,
                     SAL_STATIC_CAST( lang::XTypeProvider*,this),
@@ -116,8 +115,6 @@ XPropertySetInfo_impl::queryInterface(
 beans::Property SAL_CALL
 XPropertySetInfo_impl::getPropertyByName(
 					 const rtl::OUString& aName )
-  throw( beans::UnknownPropertyException,
-	 RuntimeException)
 {
   for( sal_Int32 i = 0; i < m_seq.getLength(); ++i )
     if( m_seq[i].Name == aName ) return m_seq[i];
@@ -130,7 +127,6 @@ XPropertySetInfo_impl::getPropertyByName(
 Sequence< beans::Property > SAL_CALL
 XPropertySetInfo_impl::getProperties(
 				    void )
-  throw( RuntimeException )
 {
   return m_seq;
 }
@@ -139,7 +135,6 @@ XPropertySetInfo_impl::getProperties(
 sal_Bool SAL_CALL
 XPropertySetInfo_impl::hasPropertyByName(
 					 const rtl::OUString& aName )
-  throw( RuntimeException )
 {
   for( sal_Int32 i = 0; i < m_seq.getLength(); ++i )
     if( m_seq[i].Name == aName ) return true;

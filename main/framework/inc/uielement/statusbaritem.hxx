@@ -49,25 +49,25 @@ public:
     void SAL_CALL disposing();
 
     // com::sun::star::ui::XStatusbarItem Attributes
-    virtual ::rtl::OUString SAL_CALL getCommand() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_uInt16 SAL_CALL getItemId() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_uInt32 SAL_CALL getWidth() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_uInt16 SAL_CALL getStyle() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getOffset() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getItemRect() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getText() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setText( const rtl::OUString& rText ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getHelpText() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setHelpText( const rtl::OUString& rHelpText ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getQuickHelpText() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setQuickHelpText( const rtl::OUString& rQuickHelpText ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getAccessibleName() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setAccessibleName( const rtl::OUString& rAccessibleName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getVisible() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( sal_Bool bVisible ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getCommand();
+    virtual ::sal_uInt16 SAL_CALL getItemId();
+    virtual ::sal_uInt32 SAL_CALL getWidth();
+    virtual ::sal_uInt16 SAL_CALL getStyle();
+    virtual ::sal_Int32 SAL_CALL getOffset();
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getItemRect();
+    virtual ::rtl::OUString SAL_CALL getText();
+    virtual void SAL_CALL setText( const rtl::OUString& rText );
+    virtual ::rtl::OUString SAL_CALL getHelpText();
+    virtual void SAL_CALL setHelpText( const rtl::OUString& rHelpText );
+    virtual ::rtl::OUString SAL_CALL getQuickHelpText();
+    virtual void SAL_CALL setQuickHelpText( const rtl::OUString& rQuickHelpText );
+    virtual ::rtl::OUString SAL_CALL getAccessibleName();
+    virtual void SAL_CALL setAccessibleName( const rtl::OUString& rAccessibleName );
+    virtual ::sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( sal_Bool bVisible );
 
     // com::sun::star::ui::XStatusbarItem Methods
-    virtual void SAL_CALL repaint(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL repaint(  );
 
 private:
     StatusBar              *m_pStatusBar;

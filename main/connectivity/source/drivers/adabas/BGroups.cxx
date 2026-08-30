@@ -46,7 +46,7 @@ sdbcx::ObjectType OGroups::createObject(const ::rtl::OUString& _rName)
 	return new OAdabasGroup(m_pConnection,_rName);
 }
 // -------------------------------------------------------------------------
-void OGroups::impl_refresh() throw(RuntimeException)
+void OGroups::impl_refresh()
 {
 	m_pParent->refreshGroups();
 }

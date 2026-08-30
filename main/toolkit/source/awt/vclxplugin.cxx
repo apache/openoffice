@@ -47,7 +47,7 @@ VCLXPlugin::~VCLXPlugin()
 {
 }
 
-void SAL_CALL VCLXPlugin::dispose() throw(uno::RuntimeException)
+void SAL_CALL VCLXPlugin::dispose()
 {
     {
         ::vos::OGuard aGuard( GetMutex() );
@@ -65,7 +65,6 @@ void VCLXPlugin::SetPlugin( ::Control *p )
 }
 
 awt::Size SAL_CALL VCLXPlugin::getMinimumSize()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     ::vos::OClearableGuard aGuard( GetMutex() );
     if ( mpPlugin )

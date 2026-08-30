@@ -101,19 +101,19 @@ ExportDocumentHandler::~ExportDocumentHandler()
 IMPLEMENT_GET_IMPLEMENTATION_ID(ExportDocumentHandler)
 IMPLEMENT_FORWARD_REFCOUNT( ExportDocumentHandler, ExportDocumentHandler_BASE )
 //------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ExportDocumentHandler::getImplementationName(  ) throw(uno::RuntimeException)
+::rtl::OUString SAL_CALL ExportDocumentHandler::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------------
-sal_Bool SAL_CALL ExportDocumentHandler::supportsService( const ::rtl::OUString& ServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL ExportDocumentHandler::supportsService( const ::rtl::OUString& ServiceName )
 {
 	return ::comphelper::existsValue(ServiceName,getSupportedServiceNames_static());
 }
 
 //------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > SAL_CALL ExportDocumentHandler::getSupportedServiceNames(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL ExportDocumentHandler::getSupportedServiceNames(  )
 {
     uno::Sequence< ::rtl::OUString > aSupported;
 	if ( m_xServiceInfo.is() )
@@ -122,13 +122,13 @@ uno::Sequence< ::rtl::OUString > SAL_CALL ExportDocumentHandler::getSupportedSer
 }
 
 //------------------------------------------------------------------------
-::rtl::OUString ExportDocumentHandler::getImplementationName_Static(  ) throw(uno::RuntimeException)
+::rtl::OUString ExportDocumentHandler::getImplementationName_Static(  )
 {
     return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.report.ExportDocumentHandler"));
 }
 
 //------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > ExportDocumentHandler::getSupportedServiceNames_static(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > ExportDocumentHandler::getSupportedServiceNames_static(  )
 {
 	uno::Sequence< ::rtl::OUString > aSupported(1);
     aSupported[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.report.ExportDocumentHandler"));
@@ -141,17 +141,17 @@ uno::Reference< uno::XInterface > SAL_CALL ExportDocumentHandler::create( const 
 	return *(new ExportDocumentHandler( _rxContext ));
 }
 // xml::sax::XDocumentHandler:
-void SAL_CALL ExportDocumentHandler::startDocument() throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::startDocument()
 {
     m_xDelegatee->startDocument();
 }
 
-void SAL_CALL ExportDocumentHandler::endDocument() throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::endDocument()
 {
     m_xDelegatee->endDocument();
 }
 
-void SAL_CALL ExportDocumentHandler::startElement(const ::rtl::OUString & _sName, const uno::Reference< xml::sax::XAttributeList > & xAttribs) throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::startElement(const ::rtl::OUString & _sName, const uno::Reference< xml::sax::XAttributeList > & xAttribs)
 {
     bool bExport = true;
     if ( _sName.equalsAscii("office:chart") )
@@ -250,7 +250,7 @@ void SAL_CALL ExportDocumentHandler::startElement(const ::rtl::OUString & _sName
         m_xDelegatee->startElement(_sName,xAttribs);
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ExportDocumentHandler::endElement(const ::rtl::OUString & _sName) throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::endElement(const ::rtl::OUString & _sName)
 {
     bool bExport = true;
     ::rtl::OUString sNewName = _sName;
@@ -283,7 +283,7 @@ void SAL_CALL ExportDocumentHandler::endElement(const ::rtl::OUString & _sName) 
         m_xDelegatee->endElement(sNewName);
 }
 
-void SAL_CALL ExportDocumentHandler::characters(const ::rtl::OUString & aChars) throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::characters(const ::rtl::OUString & aChars)
 {
     if ( !(m_bTableRowsStarted || m_bFirstRowExported) )
     {
@@ -296,21 +296,21 @@ void SAL_CALL ExportDocumentHandler::characters(const ::rtl::OUString & aChars) 
 	}
 }
 
-void SAL_CALL ExportDocumentHandler::ignorableWhitespace(const ::rtl::OUString & aWhitespaces) throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::ignorableWhitespace(const ::rtl::OUString & aWhitespaces)
 {
     m_xDelegatee->ignorableWhitespace(aWhitespaces);
 }
 
-void SAL_CALL ExportDocumentHandler::processingInstruction(const ::rtl::OUString & aTarget, const ::rtl::OUString & aData) throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::processingInstruction(const ::rtl::OUString & aTarget, const ::rtl::OUString & aData)
 {
     m_xDelegatee->processingInstruction(aTarget,aData);
 }
 
-void SAL_CALL ExportDocumentHandler::setDocumentLocator(const uno::Reference< xml::sax::XLocator > & xLocator) throw (uno::RuntimeException, xml::sax::SAXException)
+void SAL_CALL ExportDocumentHandler::setDocumentLocator(const uno::Reference< xml::sax::XLocator > & xLocator)
 {
     m_xDelegatee->setDocumentLocator(xLocator);
 }
-void SAL_CALL ExportDocumentHandler::initialize( const uno::Sequence< uno::Any >& _aArguments ) throw (uno::Exception, uno::RuntimeException)
+void SAL_CALL ExportDocumentHandler::initialize( const uno::Sequence< uno::Any >& _aArguments )
 {
     ::osl::MutexGuard aGuard(m_aMutex);
     comphelper::SequenceAsHashMap aArgs(_aArguments);
@@ -358,13 +358,13 @@ void SAL_CALL ExportDocumentHandler::initialize( const uno::Sequence< uno::Any >
     }
 }
 // --------------------------------------------------------------------------------
-uno::Any SAL_CALL ExportDocumentHandler::queryInterface( const uno::Type& _rType ) throw (uno::RuntimeException)
+uno::Any SAL_CALL ExportDocumentHandler::queryInterface( const uno::Type& _rType )
 {
 	uno::Any aReturn = ExportDocumentHandler_BASE::queryInterface(_rType);
 	return aReturn.hasValue() ? aReturn : (m_xProxy.is() ? m_xProxy->queryAggregation(_rType) : aReturn);
 }
 // --------------------------------------------------------------------------------
-uno::Sequence< uno::Type > SAL_CALL ExportDocumentHandler::getTypes(  ) throw (uno::RuntimeException)
+uno::Sequence< uno::Type > SAL_CALL ExportDocumentHandler::getTypes(  )
 {
     if ( m_xTypeProvider.is() )
 	    return ::comphelper::concatSequences(

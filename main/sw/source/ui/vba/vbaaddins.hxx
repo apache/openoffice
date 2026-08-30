@@ -32,12 +32,12 @@ typedef CollTestImplHelper< ooo::vba::word::XAddins > SwVbaAddins_BASE;
 class SwVbaAddins : public SwVbaAddins_BASE
 {
 public:
-	SwVbaAddins( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext ) throw (css::uno::RuntimeException);
+	SwVbaAddins( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext );
 	virtual ~SwVbaAddins() {}
 
 	// XEnumerationAccess
-	virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+	virtual css::uno::Type SAL_CALL getElementType();
+	virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
 
 	// SwVbaAddins_BASE
 	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );

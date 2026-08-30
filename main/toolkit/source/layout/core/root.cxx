@@ -105,8 +105,6 @@ void LayoutRoot::error( OUString const& message )
 
 // XInitialization
 void SAL_CALL LayoutRoot::initialize( const uno::Sequence< uno::Any >& aArguments )
-    throw ( uno::Exception,
-            uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( maMutex );
 
@@ -191,7 +189,7 @@ void SAL_CALL LayoutRoot::initialize( const uno::Sequence< uno::Any >& aArgument
 }
 
 // XLayoutContainer
-uno::Reference< awt::XLayoutContainer > LayoutRoot::getLayoutContainer() throw (uno::RuntimeException)
+uno::Reference< awt::XLayoutContainer > LayoutRoot::getLayoutContainer()
 {
     return uno::Reference< awt::XLayoutContainer >();
 }
@@ -205,9 +203,6 @@ void LayoutRoot::addItem( const OUString &rName,
 
 // XNameAccess
 uno::Any SAL_CALL LayoutRoot::getByName( const OUString &rName )
-    throw ( container::NoSuchElementException,
-            lang::WrappedTargetException,
-            uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( maMutex );
     if ( mbDisposed )
@@ -221,7 +216,6 @@ uno::Any SAL_CALL LayoutRoot::getByName( const OUString &rName )
 }
 
 sal_Bool SAL_CALL LayoutRoot::hasByName( const OUString &rName )
-    throw (uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard( maMutex );
     if ( mbDisposed ) throw lang::DisposedException();
@@ -231,7 +225,6 @@ sal_Bool SAL_CALL LayoutRoot::hasByName( const OUString &rName )
 }
 
 uno::Sequence< OUString > SAL_CALL LayoutRoot::getElementNames()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( maMutex );
     if ( mbDisposed ) throw lang::DisposedException();
@@ -247,13 +240,11 @@ uno::Sequence< OUString > SAL_CALL LayoutRoot::getElementNames()
 }
 
 uno::Type SAL_CALL LayoutRoot::getElementType()
-    throw ( uno::RuntimeException )
 {
     return getCppuType( ( const uno::Reference< awt::XLayoutConstrains >* )NULL );
 }
 
 sal_Bool SAL_CALL LayoutRoot::hasElements()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( maMutex );
 
@@ -264,7 +255,6 @@ sal_Bool SAL_CALL LayoutRoot::hasElements()
 
 // XComponent
 void SAL_CALL LayoutRoot::dispose()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( maMutex );
 
@@ -284,7 +274,6 @@ void SAL_CALL LayoutRoot::dispose()
 }
 
 void SAL_CALL LayoutRoot::addEventListener( const uno::Reference< lang::XEventListener >& xListener )
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( maMutex );
 
@@ -296,7 +285,6 @@ void SAL_CALL LayoutRoot::addEventListener( const uno::Reference< lang::XEventLi
 }
 
 void SAL_CALL LayoutRoot::removeEventListener( const uno::Reference< lang::XEventListener >& xListener )
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( maMutex );
 

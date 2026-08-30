@@ -41,7 +41,6 @@ using namespace ::com::sun::star;
 
 uno::Reference<uno::XInterface> SAL_CALL EmbedServer_createInstance(
     const uno::Reference<lang::XMultiServiceFactory> & xSMgr)
-throw (uno::Exception)
 {
 	uno::Reference<uno::XInterface > xService = *new EmbedServer_Impl( xSMgr );
 	return xService;

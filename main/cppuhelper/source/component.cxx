@@ -47,15 +47,15 @@ OComponentHelper::OComponentHelper( Mutex & rMutex ) SAL_THROW( () )
 	: rBHelper( rMutex )
 {
 }
-OComponentHelper::~OComponentHelper() SAL_THROW( (RuntimeException) )
+OComponentHelper::~OComponentHelper()
 {
 }
 
-Any OComponentHelper::queryInterface( Type const & rType ) throw (RuntimeException)
+Any OComponentHelper::queryInterface( Type const & rType )
 {
     return OWeakAggObject::queryInterface( rType );
 }
-Any OComponentHelper::queryAggregation( Type const & rType ) throw (RuntimeException)
+Any OComponentHelper::queryAggregation( Type const & rType )
 {
     if (rType == ::getCppuType( (Reference< lang::XComponent > const *)0 ))
     {
@@ -116,7 +116,7 @@ void OComponentHelper::release() throw()
 	OWeakAggObject::release();
 }
 
-Sequence< Type > OComponentHelper::getTypes() throw (RuntimeException)
+Sequence< Type > OComponentHelper::getTypes()
 {
 	static OTypeCollection * s_pTypes = 0;
 	if (! s_pTypes)
@@ -142,7 +142,6 @@ void OComponentHelper::disposing()
 
 // XComponent
 void OComponentHelper::dispose()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	// An frequently programming error is to release the last
 	// reference to this object in the disposing message.
@@ -217,7 +216,6 @@ void OComponentHelper::dispose()
 // XComponent
 void OComponentHelper::addEventListener(
 	const Reference<XEventListener > & rxListener )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	ClearableMutexGuard aGuard( rBHelper.rMutex );
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
@@ -235,7 +233,6 @@ void OComponentHelper::addEventListener(
 // XComponent
 void OComponentHelper::removeEventListener(
 	const Reference<XEventListener > & rxListener )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	rBHelper.removeListener( ::getCppuType( &rxListener ) , rxListener );
 }

@@ -78,6 +78,45 @@ bool contains(std::string const & haystack, char const * needle)
     return haystack.find(needle) != std::string::npos;
 }
 
+// True if the generated text carries a DYNAMIC exception specification -
+// `throw (<type list>)` or the `SAL_THROW((<type list>))` spelling, which the
+// component helper used to emit on _create().  Both are the construct C++17
+// removed, and both were swept out of the tree by the throw-spec change.
+//
+// Deliberately NOT a plain search for "throw (": the EMPTY `throw ()` that the
+// class definition puts on acquire()/release(), and the matching
+// `SAL_THROW(())`, are a DIFFERENT construct -- MSVC honours it, C++17 keeps it
+// as a deprecated spelling of noexcept, and migrating it is a separate change.
+// A test that rejected those too would fail the moment a property-helper
+// component is generated.
+bool hasExceptionSpec(std::string const & s)
+{
+    static char const * const spellings[] = { "throw", "SAL_THROW" };
+    for (int k = 0; k != 2; ++k) {
+        std::string const kw(spellings[k]);
+        for (std::string::size_type i = s.find(kw); i != std::string::npos;
+             i = s.find(kw, i + 1))
+        {
+            std::string::size_type j = s.find_first_not_of(' ', i + kw.size());
+            if (j == std::string::npos || s[j] != '(') {
+                continue;           // a throw STATEMENT, not a specification
+            }
+            j = s.find_first_not_of(' ', j + 1);
+            // SAL_THROW takes the list in a SECOND pair of parentheses
+            if (k == 1) {
+                if (j == std::string::npos || s[j] != '(') {
+                    continue;
+                }
+                j = s.find_first_not_of(' ', j + 1);
+            }
+            if (j != std::string::npos && s[j] != ')') {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 // Reading the registry once for the whole suite rather than per test.
 class SkeletonMakerTest : public ::testing::Test
 {
@@ -171,7 +210,10 @@ TEST_F(SkeletonMakerTest, DumpCppInterface)
     // and the default is the long namespace form.
     EXPECT_TRUE(contains(s, "::rtl::OUString")) << s;
     EXPECT_TRUE(contains(s, "Sequence< ::rtl::OUString >")) << s;
-    EXPECT_TRUE(contains(s, "::com::sun::star::uno::RuntimeException")) << s;
+    EXPECT_TRUE(contains(s, "::com::sun::star::uno::Sequence")) << s;
+    // No dynamic exception specification: C++17 removed the construct, so the
+    // generator must not hand one to somebody starting a new component.
+    EXPECT_FALSE(hasExceptionSpec(s)) << s;
 }
 
 // 2. -sn/--shortnames swaps the namespace form, and must do so everywhere:
@@ -224,6 +266,7 @@ TEST_F(SkeletonMakerTest, ComponentCppInterface)
     EXPECT_TRUE(contains(s, "WeakImplHelper1")) << s;
     EXPECT_TRUE(contains(s, "XInitialization")) << s;
     EXPECT_TRUE(contains(s, "SAL_CALL initialize")) << s;
+    EXPECT_FALSE(hasExceptionSpec(s)) << s;
     EXPECT_FALSE(contains(s, "component_getFactory")) << s;
 }
 
@@ -246,6 +289,9 @@ TEST_F(SkeletonMakerTest, ComponentCppServiceHasFactory)
     EXPECT_TRUE(contains(s, "component_getFactory")) << s;
     EXPECT_TRUE(contains(s, "component_getImplementationEnvironment")) << s;
     EXPECT_TRUE(contains(s, "_getSupportedServiceNames")) << s;
+    // The widest reach into cppcompskeleton the suite has: XServiceInfo bodies,
+    // the class definition and the component entry points all in one file.
+    EXPECT_FALSE(hasExceptionSpec(s)) << s;
 }
 
 // 6. The Java component writer, including the package-to-directory split that

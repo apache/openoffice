@@ -55,29 +55,23 @@ public:
         css::uno::Reference< css::uno::XComponentContext > const & xComponentContext );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw ( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
     virtual sal_Bool SAL_CALL
-        supportsService( ::rtl::OUString const & serviceName )
-            throw ( css::uno::RuntimeException );
+        supportsService( ::rtl::OUString const & serviceName );
 
     virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames()
-            throw ( css::uno::RuntimeException );
+        getSupportedServiceNames();
 
     // XBrowseNodeFactory
     virtual css::uno::Reference< css::script::browse::XBrowseNode > SAL_CALL
-        createView( sal_Int16 viewType )
-            throw ( css::uno::RuntimeException );
+        createView( sal_Int16 viewType );
     private:
     css::uno::Reference< css::script::browse::XBrowseNode >
-        getSelectorHierarchy()
-            throw ( css::uno::RuntimeException );
+        getSelectorHierarchy();
 
     css::uno::Reference< css::script::browse::XBrowseNode >
-        getOrganizerHierarchy()
-            throw ( css::uno::RuntimeException );
+        getOrganizerHierarchy();
 };
 
 

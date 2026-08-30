@@ -48,20 +48,20 @@ namespace framework
 		    DECLARE_XSERVICEINFO
 
 		    // XStatusListener
-		    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+		    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
             // XMenuListener
-            virtual void SAL_CALL itemSelected( const ::com::sun::star::awt::MenuEvent& rEvent ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL itemActivated( const ::com::sun::star::awt::MenuEvent& rEvent ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL itemSelected( const ::com::sun::star::awt::MenuEvent& rEvent );
+            virtual void SAL_CALL itemActivated( const ::com::sun::star::awt::MenuEvent& rEvent );
 
             // XDispatchProvider
-            virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > SAL_CALL queryDispatch( const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& sTarget, sal_Int32 nFlags ) throw( ::com::sun::star::uno::RuntimeException );
+            virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > SAL_CALL queryDispatch( const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& sTarget, sal_Int32 nFlags );
 
             // XDispatch
-		    virtual void SAL_CALL dispatch(	const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& seqProperties ) throw( ::com::sun::star::uno::RuntimeException );
+		    virtual void SAL_CALL dispatch(	const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& seqProperties );
 
             // XEventListener
-		    virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
+		    virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source );
 
             DECL_STATIC_LINK( RecentFilesMenuController, ExecuteHdl_Impl, LoadRecentFile* );
 

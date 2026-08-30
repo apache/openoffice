@@ -157,21 +157,21 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SubComponentLoader::windowResized( const WindowEvent& i_rEvent ) throw (RuntimeException)
+    void SAL_CALL SubComponentLoader::windowResized( const WindowEvent& i_rEvent )
     {
         // not interested in
         (void)i_rEvent;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SubComponentLoader::windowMoved( const WindowEvent& i_rEvent ) throw (RuntimeException)
+    void SAL_CALL SubComponentLoader::windowMoved( const WindowEvent& i_rEvent )
     {
         // not interested in
         (void)i_rEvent;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SubComponentLoader::windowShown( const EventObject& i_rEvent ) throw (RuntimeException)
+    void SAL_CALL SubComponentLoader::windowShown( const EventObject& i_rEvent )
     {
         (void)i_rEvent;
 
@@ -180,14 +180,14 @@ namespace dbaccess
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SubComponentLoader::windowHidden( const EventObject& i_rEvent ) throw (RuntimeException)
+    void SAL_CALL SubComponentLoader::windowHidden( const EventObject& i_rEvent )
     {
         // not interested in
         (void)i_rEvent;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SubComponentLoader::disposing( const EventObject& i_rEvent ) throw (RuntimeException)
+    void SAL_CALL SubComponentLoader::disposing( const EventObject& i_rEvent )
     {
         // not interested in
         (void)i_rEvent;

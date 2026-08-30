@@ -631,7 +631,6 @@ sal_Bool MediaDescriptor::impl_addInputStream( sal_Bool bLockFile )
 	25.03.2004 12:38
 -----------------------------------------------*/
 sal_Bool MediaDescriptor::impl_openStreamWithPostData( const css::uno::Reference< css::io::XInputStream >& _rxPostData )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if ( !_rxPostData.is() )
 		throw css::lang::IllegalArgumentException(
@@ -706,7 +705,6 @@ sal_Bool MediaDescriptor::impl_openStreamWithPostData( const css::uno::Reference
 	25.03.2004 12:29
 -----------------------------------------------*/
 sal_Bool MediaDescriptor::impl_openStreamWithURL( const ::rtl::OUString& sURL, sal_Bool bLockFile )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	// prepare the environment
 	css::uno::Reference< css::task::XInteractionHandler > xOrgInteraction = getUnpackedValueOrDefault(

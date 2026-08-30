@@ -78,11 +78,20 @@ extern "C" {
 
 
 
+/*	A C runtime from VS2015 onwards supplies a conforming snprintf of its own.
+	Declaring these alongside it is a redefinition with different linkage
+	(C2375), so on such a runtime the declarations are simply left out and the
+	CRT's own are used. Older runtimes, which is every one the XP-era targets
+	build against, keep the declarations exactly as before. */
+#if !defined(_MSC_VER) || (_MSC_VER < 1900)
+
 /* UNICODE version */
 _SNPRINTF_DLLIMPORT int __cdecl snwprintf( wchar_t *buffer, size_t count, const wchar_t *format, ... );
 
 /* SBCS and MBCS version */
 _SNPRINTF_DLLIMPORT int __cdecl snprintf( char *buffer, size_t count, const char *format, ... );
+
+#endif
 
 /* Conflict with STL_port inline implementation */
 #if 0

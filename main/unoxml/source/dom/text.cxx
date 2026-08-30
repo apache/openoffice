@@ -57,13 +57,12 @@ namespace DOM
         }
     }
 
-    OUString SAL_CALL CText::getNodeName() throw (RuntimeException)
+    OUString SAL_CALL CText::getNodeName()
     {
         return OUString::createFromAscii("#text");
     }
 
     Reference< XText > SAL_CALL CText::splitText(sal_Int32 /*offset*/)
-         throw (RuntimeException)
     {
         OSL_ENSURE(false, "CText::splitText: not implemented (#i113683#)");
         return Reference< XText >(this);

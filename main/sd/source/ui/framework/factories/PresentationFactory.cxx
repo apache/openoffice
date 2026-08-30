@@ -61,8 +61,7 @@ public:
     // XInitialization
 
     virtual void SAL_CALL initialize(
-        const ::com::sun::star::uno::Sequence<com::sun::star::uno::Any>& aArguments)
-        throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence<com::sun::star::uno::Any>& aArguments);
 };
 
 
@@ -85,10 +84,10 @@ public:
 
     // XView
 
-    virtual Reference<XResourceId> SAL_CALL getResourceId (void) throw (RuntimeException)
+    virtual Reference<XResourceId> SAL_CALL getResourceId (void)
     { return mxResourceId; };
 
-    virtual sal_Bool SAL_CALL isAnchorOnly (void) throw (RuntimeException)
+    virtual sal_Bool SAL_CALL isAnchorOnly (void)
     { return false; }
 
 
@@ -112,7 +111,7 @@ Reference<XInterface> SAL_CALL PresentationFactoryProvider_createInstance (
 
 
 
-::rtl::OUString PresentationFactoryProvider_getImplementationName (void) throw(RuntimeException)
+::rtl::OUString PresentationFactoryProvider_getImplementationName (void)
 {
     return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(
         "com.sun.star.comp.Draw.framework.PresentationFactoryProvider"));
@@ -122,7 +121,6 @@ Reference<XInterface> SAL_CALL PresentationFactoryProvider_createInstance (
 
 
 Sequence<rtl::OUString> SAL_CALL PresentationFactoryProvider_getSupportedServiceNames (void)
-    throw (RuntimeException)
 {
 	static const ::rtl::OUString sServiceName(RTL_CONSTASCII_USTRINGPARAM(
         "com.sun.star.drawing.framework.PresentationFactoryProvider"));
@@ -178,7 +176,6 @@ void SAL_CALL PresentationFactory::disposing (void)
 
 Reference<XResource> SAL_CALL PresentationFactory::createResource (
     const Reference<XResourceId>& rxViewId)
-    throw (RuntimeException, IllegalArgumentException, WrappedTargetException)
 {
     ThrowIfDisposed();
 
@@ -194,7 +191,6 @@ Reference<XResource> SAL_CALL PresentationFactory::createResource (
 
 void SAL_CALL PresentationFactory::releaseResource (
     const Reference<XResource>& rxView)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     (void)rxView;
@@ -220,7 +216,6 @@ void SAL_CALL PresentationFactory::releaseResource (
 
 void SAL_CALL PresentationFactory::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -232,7 +227,6 @@ void SAL_CALL PresentationFactory::notifyConfigurationChange (
 
 void SAL_CALL PresentationFactory::disposing (
     const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     (void)rEventObject;
 }
@@ -244,7 +238,6 @@ void SAL_CALL PresentationFactory::disposing (
 //-----------------------------------------------------------------------------
 
 void PresentationFactory::ThrowIfDisposed (void) const
-    throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{
@@ -289,7 +282,6 @@ void PresentationFactoryProvider::disposing (void)
 
 void SAL_CALL PresentationFactoryProvider::initialize(
     const Sequence<Any>& aArguments)
-    throw (Exception, RuntimeException)
 {
     if (aArguments.getLength() > 0)
     {

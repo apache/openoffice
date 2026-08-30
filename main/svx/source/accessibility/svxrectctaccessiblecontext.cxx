@@ -201,21 +201,21 @@ SvxRectCtlAccessibleContext::~SvxRectCtlAccessibleContext()
 
 //=====  XAccessible  =========================================================
 
-Reference< XAccessibleContext > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleContext( void ) throw( RuntimeException )
+Reference< XAccessibleContext > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleContext( void )
 {
 	return this;
 }
 
 //=====  XAccessibleComponent  ================================================
 
-sal_Bool SAL_CALL SvxRectCtlAccessibleContext::containsPoint( const awt::Point& rPoint ) throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlAccessibleContext::containsPoint( const awt::Point& rPoint )
 {
 	// no guard -> done in getBounds()
 //	return GetBoundingBox().IsInside( VCLPoint( rPoint ) );
 	return Rectangle( Point( 0, 0 ), GetBoundingBox().GetSize() ).IsInside( VCLPoint( rPoint ) );
 }
 
-Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleAtPoint( const awt::Point& rPoint ) throw( RuntimeException )
+Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleAtPoint( const awt::Point& rPoint )
 {
 	::osl::MutexGuard			aGuard( m_aMutex );
 
@@ -231,36 +231,36 @@ Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleAtPo
 	return xRet;
 }
 
-awt::Rectangle SAL_CALL SvxRectCtlAccessibleContext::getBounds() throw( RuntimeException )
+awt::Rectangle SAL_CALL SvxRectCtlAccessibleContext::getBounds()
 {
 	// no guard -> done in GetBoundingBox()
 	return AWTRectangle( GetBoundingBox() );
 }
 
-awt::Point SAL_CALL SvxRectCtlAccessibleContext::getLocation() throw( RuntimeException )
+awt::Point SAL_CALL SvxRectCtlAccessibleContext::getLocation()
 {
 	// no guard -> done in GetBoundingBox()
 	return AWTPoint( GetBoundingBox().TopLeft() );
 }
 
-awt::Point SAL_CALL SvxRectCtlAccessibleContext::getLocationOnScreen() throw( RuntimeException )
+awt::Point SAL_CALL SvxRectCtlAccessibleContext::getLocationOnScreen()
 {
 	// no guard -> done in GetBoundingBoxOnScreen()
 	return AWTPoint( GetBoundingBoxOnScreen().TopLeft() );
 }
 
-awt::Size SAL_CALL SvxRectCtlAccessibleContext::getSize() throw( RuntimeException )
+awt::Size SAL_CALL SvxRectCtlAccessibleContext::getSize()
 {
 	// no guard -> done in GetBoundingBox()
 	return AWTSize( GetBoundingBox().GetSize() );
 }
 
-sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isShowing() throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isShowing()
 {
 	return sal_True;
 }
 
-sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isVisible() throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isVisible()
 {
 	::osl::MutexGuard			aGuard( m_aMutex );
 
@@ -269,14 +269,14 @@ sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isVisible() throw( RuntimeExcepti
 	return mpRepr->IsVisible();
 }
 
-sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isFocusTraversable() throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isFocusTraversable()
 {
 	return sal_True;
 }
 
 //=====  XAccessibleContext  ==================================================
 
-sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleChildCount( void ) throw( RuntimeException )
+sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleChildCount( void )
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
 
@@ -286,7 +286,6 @@ sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleChildCount( void ) 
 }
 
 Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleChild( sal_Int32 nIndex )
-	throw( RuntimeException, lang::IndexOutOfBoundsException )
 {
 	checkChildIndex( nIndex );
 
@@ -327,12 +326,12 @@ Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleChil
 	return xChild;
 }
 
-Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleParent( void ) throw( RuntimeException )
+Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleParent( void )
 {
 	return mxParent;
 }
 
-sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleIndexInParent( void ) throw( RuntimeException )
+sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleIndexInParent( void )
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
 	//	Use a simple but slow solution for now.  Optimize later.
@@ -358,19 +357,19 @@ sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleIndexInParent( void
    return -1;
 }
 
-sal_Int16 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleRole( void ) throw( RuntimeException )
+sal_Int16 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleRole( void )
 {
 	//return AccessibleRole::GROUP_BOX;
 	return AccessibleRole::PANEL;
 }
 
-::rtl::OUString SAL_CALL SvxRectCtlAccessibleContext::getAccessibleDescription( void ) throw( RuntimeException )
+::rtl::OUString SAL_CALL SvxRectCtlAccessibleContext::getAccessibleDescription( void )
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
 	return msDescription +::rtl::OUString::createFromAscii(" Please use arrow key to selection.");
 }
 
-::rtl::OUString SAL_CALL SvxRectCtlAccessibleContext::getAccessibleName( void ) throw( RuntimeException )
+::rtl::OUString SAL_CALL SvxRectCtlAccessibleContext::getAccessibleName( void )
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
 	return msName;
@@ -379,7 +378,7 @@ sal_Int16 SAL_CALL SvxRectCtlAccessibleContext::getAccessibleRole( void ) throw(
 /**	Return empty reference to indicate that the relation set is not
 	supported.
 */
-Reference< XAccessibleRelationSet > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleRelationSet( void ) throw( RuntimeException )
+Reference< XAccessibleRelationSet > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleRelationSet( void )
 {
 	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
 	uno::Reference< accessibility::XAccessibleRelationSet > xSet = pRelationSetHelper;
@@ -410,7 +409,7 @@ void SvxRectCtlAccessibleContext::FireAccessibleEvent (short nEventId, const ::c
 	const Reference< XInterface >	xSource( *this );
 	CommitChange( AccessibleEventObject( xSource, nEventId, rNew,rOld ) );
 }
-Reference< XAccessibleStateSet > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleStateSet( void ) throw( RuntimeException )
+Reference< XAccessibleStateSet > SAL_CALL SvxRectCtlAccessibleContext::getAccessibleStateSet( void )
 {
 	::osl::MutexGuard						aGuard( m_aMutex );
 	utl::AccessibleStateSetHelper*			pStateSetHelper = new utl::AccessibleStateSetHelper;
@@ -436,7 +435,7 @@ Reference< XAccessibleStateSet > SAL_CALL SvxRectCtlAccessibleContext::getAccess
 	return pStateSetHelper;
 }
 
-lang::Locale SAL_CALL SvxRectCtlAccessibleContext::getLocale( void ) throw( IllegalAccessibleComponentStateException, RuntimeException )
+lang::Locale SAL_CALL SvxRectCtlAccessibleContext::getLocale( void )
 {
 	::osl::MutexGuard							aGuard( m_aMutex );
 	if( mxParent.is() )
@@ -451,7 +450,6 @@ lang::Locale SAL_CALL SvxRectCtlAccessibleContext::getLocale( void ) throw( Ille
 }
 
 void SAL_CALL SvxRectCtlAccessibleContext::addEventListener( const Reference< XAccessibleEventListener >& xListener )
-    throw( RuntimeException )
 {
 	if (xListener.is())
     {
@@ -463,7 +461,6 @@ void SAL_CALL SvxRectCtlAccessibleContext::addEventListener( const Reference< XA
 }
 
 void SAL_CALL SvxRectCtlAccessibleContext::removeEventListener( const Reference< XAccessibleEventListener >& xListener )
-    throw( RuntimeException )
 {
 	if (xListener.is())
 	{
@@ -483,7 +480,6 @@ void SAL_CALL SvxRectCtlAccessibleContext::removeEventListener( const Reference<
 }
 
 void SAL_CALL SvxRectCtlAccessibleContext::addFocusListener( const Reference< awt::XFocusListener >& xListener )
-	throw( RuntimeException )
 {
 	if( xListener.is() )
     {
@@ -498,7 +494,6 @@ void SAL_CALL SvxRectCtlAccessibleContext::addFocusListener( const Reference< aw
 }
 
 void SAL_CALL SvxRectCtlAccessibleContext::removeFocusListener( const Reference< awt::XFocusListener >& xListener )
-	throw (RuntimeException)
 {
 	if( xListener.is() )
     {
@@ -512,7 +507,7 @@ void SAL_CALL SvxRectCtlAccessibleContext::removeFocusListener( const Reference<
     }
 }
 
-void SAL_CALL SvxRectCtlAccessibleContext::grabFocus() throw( RuntimeException )
+void SAL_CALL SvxRectCtlAccessibleContext::grabFocus()
 {
 	::vos::OGuard		aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard	aGuard( m_aMutex );
@@ -522,14 +517,13 @@ void SAL_CALL SvxRectCtlAccessibleContext::grabFocus() throw( RuntimeException )
 	mpRepr->GrabFocus();
 }
 
-Any SAL_CALL SvxRectCtlAccessibleContext::getAccessibleKeyBinding() throw( RuntimeException )
+Any SAL_CALL SvxRectCtlAccessibleContext::getAccessibleKeyBinding()
 {
 	// here is no implementation, because here are no KeyBindings for every object
 	return Any();
 }
 
 sal_Int32 SvxRectCtlAccessibleContext::getForeground(  )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard       aSolarGuard( Application::GetSolarMutex() );
     ::osl::MutexGuard   aGuard( m_aMutex );
@@ -538,7 +532,6 @@ sal_Int32 SvxRectCtlAccessibleContext::getForeground(  )
     return mpRepr->GetControlForeground().GetColor();
 }
 sal_Int32 SvxRectCtlAccessibleContext::getBackground(  )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard       aSolarGuard( Application::GetSolarMutex() );
     ::osl::MutexGuard   aGuard( m_aMutex );
@@ -549,12 +542,12 @@ sal_Int32 SvxRectCtlAccessibleContext::getBackground(  )
 
 //=====  XServiceInfo  ========================================================
 
-::rtl::OUString SAL_CALL SvxRectCtlAccessibleContext::getImplementationName( void ) throw( RuntimeException )
+::rtl::OUString SAL_CALL SvxRectCtlAccessibleContext::getImplementationName( void )
 {
 	return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.ui.SvxRectCtlAccessibleContext" ) );
 }
 
-sal_Bool SAL_CALL SvxRectCtlAccessibleContext::supportsService( const ::rtl::OUString& sServiceName ) throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlAccessibleContext::supportsService( const ::rtl::OUString& sServiceName )
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
     //  Iterate over all supported service names and return true if on of them
@@ -572,7 +565,7 @@ sal_Bool SAL_CALL SvxRectCtlAccessibleContext::supportsService( const ::rtl::OUS
     return sal_False;
 }
 
-Sequence< ::rtl::OUString > SAL_CALL SvxRectCtlAccessibleContext::getSupportedServiceNames( void ) throw( RuntimeException )
+Sequence< ::rtl::OUString > SAL_CALL SvxRectCtlAccessibleContext::getSupportedServiceNames( void )
 {
 	const ::rtl::OUString sServiceName( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.accessibility.AccessibleContext" ) );
 	return Sequence< ::rtl::OUString >( &sServiceName, 1 );
@@ -580,14 +573,14 @@ Sequence< ::rtl::OUString > SAL_CALL SvxRectCtlAccessibleContext::getSupportedSe
 
 //=====  XTypeProvider  =======================================================
 
-Sequence< sal_Int8 > SAL_CALL SvxRectCtlAccessibleContext::getImplementationId( void ) throw( RuntimeException )
+Sequence< sal_Int8 > SAL_CALL SvxRectCtlAccessibleContext::getImplementationId( void )
 {
 	return getUniqueId();
 }
 
 //=====  XAccessibleSelection =============================================
 
-void SAL_CALL SvxRectCtlAccessibleContext::selectAccessibleChild( sal_Int32 nIndex ) throw( lang::IndexOutOfBoundsException, RuntimeException )
+void SAL_CALL SvxRectCtlAccessibleContext::selectAccessibleChild( sal_Int32 nIndex )
 {
 	::vos::OGuard		aSolarGuard( Application::GetSolarMutex() );
 
@@ -606,7 +599,7 @@ void SAL_CALL SvxRectCtlAccessibleContext::selectAccessibleChild( sal_Int32 nInd
 	mpRepr->SetActualRP( pData->ePoint );
 }
 
-sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isAccessibleChildSelected( sal_Int32 nIndex ) throw( lang::IndexOutOfBoundsException, RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isAccessibleChildSelected( sal_Int32 nIndex )
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
 
@@ -615,19 +608,19 @@ sal_Bool SAL_CALL SvxRectCtlAccessibleContext::isAccessibleChildSelected( sal_In
 	return nIndex == mnSelectedChild;
 }
 
-void SAL_CALL SvxRectCtlAccessibleContext::clearAccessibleSelection() throw( RuntimeException )
+void SAL_CALL SvxRectCtlAccessibleContext::clearAccessibleSelection()
 {
 	DBG_ASSERT( sal_False, "SvxRectCtlAccessibleContext::clearAccessibleSelection() is not possible!" );
 }
 
-void SAL_CALL SvxRectCtlAccessibleContext::selectAllAccessibleChildren() throw( RuntimeException )
+void SAL_CALL SvxRectCtlAccessibleContext::selectAllAccessibleChildren()
 {
 	// guard in selectAccessibleChild()!
 
 	selectAccessibleChild( 0 );		// default per definition
 }
 
-sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getSelectedAccessibleChildCount() throw( RuntimeException )
+sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getSelectedAccessibleChildCount()
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
 
@@ -635,7 +628,6 @@ sal_Int32 SAL_CALL SvxRectCtlAccessibleContext::getSelectedAccessibleChildCount(
 }
 
 Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getSelectedAccessibleChild( sal_Int32 nIndex )
-	throw( lang::IndexOutOfBoundsException, RuntimeException )
 {
 	::osl::MutexGuard	aGuard( m_aMutex );
 
@@ -644,7 +636,7 @@ Reference< XAccessible > SAL_CALL SvxRectCtlAccessibleContext::getSelectedAccess
 	return getAccessibleChild( mnSelectedChild );
 }
 
-void SAL_CALL SvxRectCtlAccessibleContext::deselectAccessibleChild( sal_Int32 /*nIndex*/ ) throw( lang::IndexOutOfBoundsException, RuntimeException )
+void SAL_CALL SvxRectCtlAccessibleContext::deselectAccessibleChild( sal_Int32 /*nIndex*/ )
 {
 	::rtl::OUString	aMessage( RTL_CONSTASCII_USTRINGPARAM( "deselectAccessibleChild is not possible in this context" ) );
 
@@ -655,13 +647,13 @@ void SAL_CALL SvxRectCtlAccessibleContext::deselectAccessibleChild( sal_Int32 /*
 
 //=====  internals ========================================================
 
-void SvxRectCtlAccessibleContext::checkChildIndex( long nIndex ) throw( lang::IndexOutOfBoundsException )
+void SvxRectCtlAccessibleContext::checkChildIndex( long nIndex )
 {
 	if( nIndex < 0 || nIndex >= getAccessibleChildCount() )
 		throw lang::IndexOutOfBoundsException();
 }
 
-void SvxRectCtlAccessibleContext::checkChildIndexOnSelection( long nIndex ) throw( lang::IndexOutOfBoundsException )
+void SvxRectCtlAccessibleContext::checkChildIndexOnSelection( long nIndex )
 {
 	if( nIndex || mnSelectedChild == NOCHILDSELECTED )
 		// in our case only for the first (0) _selected_ child this is a valid request
@@ -810,7 +802,7 @@ void SAL_CALL SvxRectCtlAccessibleContext::disposing()
 	}
 }
 
-Rectangle SvxRectCtlAccessibleContext::GetBoundingBoxOnScreen( void ) throw( RuntimeException )
+Rectangle SvxRectCtlAccessibleContext::GetBoundingBoxOnScreen( void )
 {
 	::vos::OGuard		aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard	aGuard( m_aMutex );
@@ -820,7 +812,7 @@ Rectangle SvxRectCtlAccessibleContext::GetBoundingBoxOnScreen( void ) throw( Run
 	return Rectangle( mpRepr->GetParent()->OutputToScreenPixel( mpRepr->GetPosPixel() ), mpRepr->GetSizePixel() );
 }
 
-Rectangle SvxRectCtlAccessibleContext::GetBoundingBox( void ) throw( RuntimeException )
+Rectangle SvxRectCtlAccessibleContext::GetBoundingBox( void )
 {
 	::vos::OGuard		aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard	aGuard( m_aMutex );
@@ -845,7 +837,7 @@ Sequence< sal_Int8 > SvxRectCtlAccessibleContext::getUniqueId( void )
 	return pId->getImplementationId();
 }
 
-void SvxRectCtlAccessibleContext::ThrowExceptionIfNotAlive( void ) throw( lang::DisposedException )
+void SvxRectCtlAccessibleContext::ThrowExceptionIfNotAlive( void )
 {
 	if( IsNotAlive() )
 		throw lang::DisposedException();
@@ -892,55 +884,55 @@ SvxRectCtlChildAccessibleContext::~SvxRectCtlChildAccessibleContext()
 
 //=====  XAccessible  =========================================================
 
-Reference< XAccessibleContext> SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleContext( void ) throw( RuntimeException )
+Reference< XAccessibleContext> SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleContext( void )
 {
 	return this;
 }
 
 //=====  XAccessibleComponent  ================================================
 
-sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::containsPoint( const awt::Point& rPoint ) throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::containsPoint( const awt::Point& rPoint )
 {
 	// no guard -> done in getBounds()
 //	return GetBoundingBox().IsInside( VCLPoint( rPoint ) );
 	return Rectangle( Point( 0, 0 ), GetBoundingBox().GetSize() ).IsInside( VCLPoint( rPoint ) );
 }
 
-Reference< XAccessible > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleAtPoint( const awt::Point& /*rPoint*/ ) throw( RuntimeException )
+Reference< XAccessible > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleAtPoint( const awt::Point& /*rPoint*/ )
 {
 	return Reference< XAccessible >();
 }
 
-awt::Rectangle SAL_CALL SvxRectCtlChildAccessibleContext::getBounds() throw( RuntimeException )
+awt::Rectangle SAL_CALL SvxRectCtlChildAccessibleContext::getBounds()
 {
 	// no guard -> done in getBoundingBox()
 	return AWTRectangle( GetBoundingBox() );
 }
 
-awt::Point SAL_CALL SvxRectCtlChildAccessibleContext::getLocation() throw( RuntimeException )
+awt::Point SAL_CALL SvxRectCtlChildAccessibleContext::getLocation()
 {
 	// no guard -> done in getBoundingBox()
 	return AWTPoint( GetBoundingBox().TopLeft() );
 }
 
-awt::Point SAL_CALL SvxRectCtlChildAccessibleContext::getLocationOnScreen() throw( RuntimeException )
+awt::Point SAL_CALL SvxRectCtlChildAccessibleContext::getLocationOnScreen()
 {
 	// no guard -> done in getBoundingBoxOnScreen()
 	return AWTPoint( GetBoundingBoxOnScreen().TopLeft() );
 }
 
-awt::Size SAL_CALL SvxRectCtlChildAccessibleContext::getSize() throw( RuntimeException )
+awt::Size SAL_CALL SvxRectCtlChildAccessibleContext::getSize()
 {
 	// no guard -> done in getBoundingBox()
 	return AWTSize( GetBoundingBox().GetSize() );
 }
 
-sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::isShowing() throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::isShowing()
 {
 	return sal_True;
 }
 
-sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::isVisible() throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::isVisible()
 {
 	::osl::MutexGuard					aGuard( maMutex );
 
@@ -949,34 +941,31 @@ sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::isVisible() throw( RuntimeEx
 	return mxParent.is()? ( static_cast< SvxRectCtlAccessibleContext* >( mxParent.get() ) )->isVisible() : sal_False;
 }
 
-sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::isFocusTraversable() throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::isFocusTraversable()
 {
 	return sal_False;
 }
 
 void SAL_CALL SvxRectCtlChildAccessibleContext::addFocusListener( const Reference< awt::XFocusListener >& /*xListener*/ )
-	throw( RuntimeException )
 {
     OSL_ENSURE( false, "SvxRectCtlChildAccessibleContext::addFocusListener: not implemented" );
 }
 
 void SAL_CALL SvxRectCtlChildAccessibleContext::removeFocusListener( const Reference< awt::XFocusListener >& /*xListener*/ )
-	throw (RuntimeException)
 {
     OSL_ENSURE( false, "SvxRectCtlChildAccessibleContext::removeFocusListener: not implemented" );
 }
 
-void SAL_CALL SvxRectCtlChildAccessibleContext::grabFocus() throw( RuntimeException )
+void SAL_CALL SvxRectCtlChildAccessibleContext::grabFocus()
 {
 }
 
-Any SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleKeyBinding() throw( RuntimeException )
+Any SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleKeyBinding()
 {
 	// here is no implementation, because here are no KeyBindings for every object
 	return Any();
 }
 sal_Int32 SvxRectCtlChildAccessibleContext::getForeground(  )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard       aSolarGuard( Application::GetSolarMutex() );
     ::osl::MutexGuard   aGuard( maMutex );
@@ -984,7 +973,6 @@ sal_Int32 SvxRectCtlChildAccessibleContext::getForeground(  )
     return mrParentWindow.GetControlForeground().GetColor();
 }
 sal_Int32 SvxRectCtlChildAccessibleContext::getBackground(  )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard       aSolarGuard( Application::GetSolarMutex() );
     ::osl::MutexGuard   aGuard( maMutex );
@@ -995,38 +983,38 @@ sal_Int32 SvxRectCtlChildAccessibleContext::getBackground(  )
 
 //=====  XAccessibleContext  ==================================================
 
-sal_Int32 SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleChildCount( void ) throw( RuntimeException )
+sal_Int32 SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleChildCount( void )
 {
 	return 0;
 }
 
-Reference< XAccessible > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleChild( sal_Int32 /*nIndex*/ ) throw ( RuntimeException, lang::IndexOutOfBoundsException )
+Reference< XAccessible > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleChild( sal_Int32 /*nIndex*/ )
 {
 	throw lang::IndexOutOfBoundsException();
 }
 
-Reference< XAccessible > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleParent( void ) throw( RuntimeException )
+Reference< XAccessible > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleParent( void )
 {
 	return mxParent;
 }
 
-sal_Int32 SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleIndexInParent( void ) throw( RuntimeException )
+sal_Int32 SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleIndexInParent( void )
 {
    return mnIndexInParent;
 }
 
-sal_Int16 SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleRole( void ) throw( RuntimeException )
+sal_Int16 SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleRole( void )
 {
 	return AccessibleRole::RADIO_BUTTON;
 }
 
-::rtl::OUString SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleDescription( void ) throw( RuntimeException )
+::rtl::OUString SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleDescription( void )
 {
 	::osl::MutexGuard	aGuard( maMutex );
 	return msDescription;
 }
 
-::rtl::OUString SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleName( void ) throw( RuntimeException )
+::rtl::OUString SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleName( void )
 {
 	::osl::MutexGuard	aGuard( maMutex );
 	return msName;
@@ -1035,7 +1023,7 @@ sal_Int16 SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleRole( void ) t
 /**	Return empty reference to indicate that the relation set is not
 	supported.
 */
-Reference<XAccessibleRelationSet> SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleRelationSet( void ) throw( RuntimeException )
+Reference<XAccessibleRelationSet> SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleRelationSet( void )
 {
 	//return Reference< XAccessibleRelationSet >();
 	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
@@ -1051,7 +1039,7 @@ Reference<XAccessibleRelationSet> SAL_CALL SvxRectCtlChildAccessibleContext::get
 	return xSet;
 }
 
-Reference< XAccessibleStateSet > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleStateSet( void ) throw( RuntimeException )
+Reference< XAccessibleStateSet > SAL_CALL SvxRectCtlChildAccessibleContext::getAccessibleStateSet( void )
 {
 	::osl::MutexGuard						aGuard( maMutex );
 	utl::AccessibleStateSetHelper*			pStateSetHelper = new utl::AccessibleStateSetHelper;
@@ -1077,7 +1065,7 @@ Reference< XAccessibleStateSet > SAL_CALL SvxRectCtlChildAccessibleContext::getA
 	return pStateSetHelper;
 }
 
-lang::Locale SAL_CALL SvxRectCtlChildAccessibleContext::getLocale( void ) throw( IllegalAccessibleComponentStateException, RuntimeException )
+lang::Locale SAL_CALL SvxRectCtlChildAccessibleContext::getLocale( void )
 {
 	::osl::MutexGuard						aGuard( maMutex );
 	if( mxParent.is() )
@@ -1093,7 +1081,6 @@ lang::Locale SAL_CALL SvxRectCtlChildAccessibleContext::getLocale( void ) throw(
 }
 
 void SAL_CALL SvxRectCtlChildAccessibleContext::addEventListener( const Reference< XAccessibleEventListener >& xListener )
-    throw( RuntimeException )
 {
 	if (xListener.is())
     {
@@ -1108,7 +1095,6 @@ void SAL_CALL SvxRectCtlChildAccessibleContext::addEventListener( const Referenc
 
 
 void SAL_CALL SvxRectCtlChildAccessibleContext::removeEventListener( const Reference< XAccessibleEventListener >& xListener )
-    throw( RuntimeException )
 {
 	if (xListener.is())
 	{
@@ -1129,7 +1115,7 @@ void SAL_CALL SvxRectCtlChildAccessibleContext::removeEventListener( const Refer
 
 //=====  XAccessibleValue  ================================================
 
-Any SAL_CALL SvxRectCtlChildAccessibleContext::getCurrentValue() throw( RuntimeException )
+Any SAL_CALL SvxRectCtlChildAccessibleContext::getCurrentValue()
 {
 	ThrowExceptionIfNotAlive();
 
@@ -1138,19 +1124,19 @@ Any SAL_CALL SvxRectCtlChildAccessibleContext::getCurrentValue() throw( RuntimeE
 	return aRet;
 }
 
-sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::setCurrentValue( const Any& /*aNumber*/ ) throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::setCurrentValue( const Any& /*aNumber*/ )
 {
 	return sal_False;
 }
 
-Any SAL_CALL SvxRectCtlChildAccessibleContext::getMaximumValue() throw( RuntimeException )
+Any SAL_CALL SvxRectCtlChildAccessibleContext::getMaximumValue()
 {
 	Any	aRet;
 	aRet <<= 1.0;
 	return aRet;
 }
 
-Any SAL_CALL SvxRectCtlChildAccessibleContext::getMinimumValue() throw( RuntimeException )
+Any SAL_CALL SvxRectCtlChildAccessibleContext::getMinimumValue()
 {
 	Any	aRet;
 	aRet <<= 0.0;
@@ -1161,7 +1147,7 @@ Any SAL_CALL SvxRectCtlChildAccessibleContext::getMinimumValue() throw( RuntimeE
 // XAccessibleAction
 // -----------------------------------------------------------------------------
 
-sal_Int32 SvxRectCtlChildAccessibleContext::getAccessibleActionCount( ) throw (RuntimeException)
+sal_Int32 SvxRectCtlChildAccessibleContext::getAccessibleActionCount( )
 {
 	::osl::MutexGuard	aGuard( maMutex );
 
@@ -1170,7 +1156,7 @@ sal_Int32 SvxRectCtlChildAccessibleContext::getAccessibleActionCount( ) throw (R
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SvxRectCtlChildAccessibleContext::doAccessibleAction ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+sal_Bool SvxRectCtlChildAccessibleContext::doAccessibleAction ( sal_Int32 nIndex )
 {
 	::osl::MutexGuard	aGuard( maMutex );
 
@@ -1186,7 +1172,7 @@ sal_Bool SvxRectCtlChildAccessibleContext::doAccessibleAction ( sal_Int32 nIndex
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString SvxRectCtlChildAccessibleContext::getAccessibleActionDescription ( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+::rtl::OUString SvxRectCtlChildAccessibleContext::getAccessibleActionDescription ( sal_Int32 nIndex )
 {
 	::osl::MutexGuard	aGuard( maMutex );
 
@@ -1197,7 +1183,7 @@ sal_Bool SvxRectCtlChildAccessibleContext::doAccessibleAction ( sal_Int32 nIndex
 
 // -----------------------------------------------------------------------------
 
-Reference< XAccessibleKeyBinding > SvxRectCtlChildAccessibleContext::getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+Reference< XAccessibleKeyBinding > SvxRectCtlChildAccessibleContext::getAccessibleActionKeyBinding( sal_Int32 nIndex )
 {
     ::osl::MutexGuard	aGuard( maMutex );
 
@@ -1210,12 +1196,12 @@ Reference< XAccessibleKeyBinding > SvxRectCtlChildAccessibleContext::getAccessib
 
 //=====  XServiceInfo  ========================================================
 
-::rtl::OUString SAL_CALL SvxRectCtlChildAccessibleContext::getImplementationName( void ) throw( RuntimeException )
+::rtl::OUString SAL_CALL SvxRectCtlChildAccessibleContext::getImplementationName( void )
 {
 	return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.ui.SvxRectCtlChildAccessibleContext" ) );
 }
 
-sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::supportsService( const ::rtl::OUString& sServiceName ) throw( RuntimeException )
+sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::supportsService( const ::rtl::OUString& sServiceName )
 {
     //  Iterate over all supported service names and return true if on of them
     //  matches the given name.
@@ -1231,7 +1217,7 @@ sal_Bool SAL_CALL SvxRectCtlChildAccessibleContext::supportsService( const ::rtl
     return sal_False;
 }
 
-Sequence< ::rtl::OUString > SAL_CALL SvxRectCtlChildAccessibleContext::getSupportedServiceNames( void ) throw( RuntimeException )
+Sequence< ::rtl::OUString > SAL_CALL SvxRectCtlChildAccessibleContext::getSupportedServiceNames( void )
 {
 	const ::rtl::OUString sServiceName (RTL_CONSTASCII_USTRINGPARAM ("com.sun.star.accessibility.AccessibleContext"));
 	return Sequence< ::rtl::OUString >( &sServiceName, 1 );
@@ -1239,7 +1225,7 @@ Sequence< ::rtl::OUString > SAL_CALL SvxRectCtlChildAccessibleContext::getSuppor
 
 //=====  XTypeProvider  =======================================================
 
-Sequence< sal_Int8 > SAL_CALL SvxRectCtlChildAccessibleContext::getImplementationId( void ) throw( RuntimeException )
+Sequence< sal_Int8 > SAL_CALL SvxRectCtlChildAccessibleContext::getImplementationId( void )
 {
 	static OImplementationId*	pId = 0;
 	if( !pId )
@@ -1281,13 +1267,13 @@ void SAL_CALL SvxRectCtlChildAccessibleContext::disposing()
 	}
 }
 
-void SvxRectCtlChildAccessibleContext::ThrowExceptionIfNotAlive( void ) throw( lang::DisposedException )
+void SvxRectCtlChildAccessibleContext::ThrowExceptionIfNotAlive( void )
 {
 	if( IsNotAlive() )
 		throw lang::DisposedException();
 }
 
-Rectangle SvxRectCtlChildAccessibleContext::GetBoundingBoxOnScreen( void ) throw( RuntimeException )
+Rectangle SvxRectCtlChildAccessibleContext::GetBoundingBoxOnScreen( void )
 {
 	::osl::MutexGuard	aGuard( maMutex );
 
@@ -1297,7 +1283,7 @@ Rectangle SvxRectCtlChildAccessibleContext::GetBoundingBoxOnScreen( void ) throw
 	return Rectangle( mrParentWindow.OutputToScreenPixel( aRect.TopLeft() ), aRect.GetSize() );
 }
 
-Rectangle SvxRectCtlChildAccessibleContext::GetBoundingBox( void ) throw( RuntimeException )
+Rectangle SvxRectCtlChildAccessibleContext::GetBoundingBox( void )
 {
 	// no guard necessary, because no one changes mpBoundingBox after creating it
 	ThrowExceptionIfNotAlive();

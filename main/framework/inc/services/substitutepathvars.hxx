@@ -244,12 +244,9 @@ class SubstitutePathVariables : private ThreadHelpBase, // Struct for right init
         DECLARE_XSERVICEINFO
 
         // XStringSubstitution
-        virtual rtl::OUString SAL_CALL substituteVariables( const ::rtl::OUString& aText, sal_Bool bSubstRequired )
-            throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-        virtual rtl::OUString SAL_CALL reSubstituteVariables( const ::rtl::OUString& aText )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getSubstituteVariableValue( const ::rtl::OUString& variable )
-            throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+        virtual rtl::OUString SAL_CALL substituteVariables( const ::rtl::OUString& aText, sal_Bool bSubstRequired );
+        virtual rtl::OUString SAL_CALL reSubstituteVariables( const ::rtl::OUString& aText );
+        virtual ::rtl::OUString SAL_CALL getSubstituteVariableValue( const ::rtl::OUString& variable );
 
         protected:
             DECL_LINK( implts_ConfigurationNotify, SubstitutePathNotify* );
@@ -266,12 +263,9 @@ class SubstitutePathVariables : private ThreadHelpBase, // Struct for right init
             rtl::OUString   GetHomeVariableValue() const;
 
             // XStringSubstitution implementation methods
-            rtl::OUString impl_substituteVariable( const ::rtl::OUString& aText, bool bSustRequired )
-                throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-            rtl::OUString impl_reSubstituteVariables( const ::rtl::OUString& aText )
-                throw (::com::sun::star::uno::RuntimeException);
-            ::rtl::OUString impl_getSubstituteVariableValue( const ::rtl::OUString& variable )
-                throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+            rtl::OUString impl_substituteVariable( const ::rtl::OUString& aText, bool bSustRequired );
+            rtl::OUString impl_reSubstituteVariables( const ::rtl::OUString& aText );
+            ::rtl::OUString impl_getSubstituteVariableValue( const ::rtl::OUString& variable );
 
         private:
             class VarNameToIndexMap : public std::hash_map< ::rtl::OUString,

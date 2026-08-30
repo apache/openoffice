@@ -69,10 +69,6 @@ FTPInputStream::~FTPInputStream()
 
 sal_Int32 SAL_CALL FTPInputStream::readBytes(Sequence< sal_Int8 >& aData,
                                              sal_Int32 nBytesToRead)
-    throw(NotConnectedException,
-          BufferSizeExceededException,
-          IOException,
-          RuntimeException)
 {
     osl::MutexGuard aGuard(m_aMutex);
 
@@ -97,10 +93,6 @@ sal_Int32 SAL_CALL FTPInputStream::readBytes(Sequence< sal_Int8 >& aData,
 
 sal_Int32 SAL_CALL FTPInputStream::readSomeBytes( Sequence< sal_Int8 >& aData,
                                                   sal_Int32 nMaxBytesToRead )
-    throw( NotConnectedException,
-           BufferSizeExceededException,
-           IOException,
-           RuntimeException)
 {
     return readBytes(aData,nMaxBytesToRead);
 }
@@ -108,10 +100,6 @@ sal_Int32 SAL_CALL FTPInputStream::readSomeBytes( Sequence< sal_Int8 >& aData,
 
 
 void SAL_CALL FTPInputStream::skipBytes(sal_Int32 nBytesToSkip)
-    throw(NotConnectedException,
-          BufferSizeExceededException,
-          IOException,
-          RuntimeException)
 {
     osl::MutexGuard aGuard(m_aMutex);
     if(!m_tmpfl)
@@ -123,9 +111,6 @@ void SAL_CALL FTPInputStream::skipBytes(sal_Int32 nBytesToSkip)
 
 
 sal_Int32 SAL_CALL FTPInputStream::available(void)
-    throw(NotConnectedException,
-          IOException,
-          RuntimeException)
 {
     return sal::static_int_cast<sal_Int32>(m_nLength - getPosition());
 }
@@ -133,9 +118,6 @@ sal_Int32 SAL_CALL FTPInputStream::available(void)
 
 
 void SAL_CALL FTPInputStream::closeInput(void)
-    throw(NotConnectedException,
-          IOException,
-          RuntimeException)
 {
     osl::MutexGuard aGuard(m_aMutex);
     if(m_tmpfl)
@@ -145,9 +127,6 @@ void SAL_CALL FTPInputStream::closeInput(void)
 
 
 void SAL_CALL FTPInputStream::seek(sal_Int64 location)
-    throw( IllegalArgumentException,
-           IOException,
-           RuntimeException )
 {
     osl::MutexGuard aGuard(m_aMutex);
     if(!m_tmpfl)
@@ -161,8 +140,6 @@ void SAL_CALL FTPInputStream::seek(sal_Int64 location)
 sal_Int64 SAL_CALL
 FTPInputStream::getPosition(
     void )
-    throw( IOException,
-           RuntimeException )
 {
     osl::MutexGuard aGuard(m_aMutex);
     if(!m_tmpfl)
@@ -177,8 +154,6 @@ FTPInputStream::getPosition(
 
 sal_Int64 SAL_CALL FTPInputStream::getLength(
     void
-) throw(
-    IOException,RuntimeException
 )
 {
     return m_nLength;

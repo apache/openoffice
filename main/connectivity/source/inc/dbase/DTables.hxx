@@ -37,7 +37,7 @@ namespace connectivity
 		{
 		protected:
             virtual sdbcx::ObjectType createObject(const ::rtl::OUString& _rName);
-			virtual void impl_refresh() throw(::com::sun::star::uno::RuntimeException);
+			virtual void impl_refresh();
             virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > createDescriptor();
             virtual sdbcx::ObjectType appendObject( const ::rtl::OUString& _rForName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& descriptor );
 			virtual void dropObject(sal_Int32 _nPos,const ::rtl::OUString _sElementName);
@@ -46,7 +46,7 @@ namespace connectivity
 				const TStringVector &_rVector) : ODbaseTables_BASE(_rMetaData,_rParent,_rMutex,_rVector)
 			{}
 
-			virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+			virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 		};
 	}
 }

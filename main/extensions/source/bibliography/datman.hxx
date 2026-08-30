@@ -70,13 +70,13 @@ public:
 	void ReleaseInterceptor();
 
 	// XDispatchProvider
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > SAL_CALL queryDispatch( const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > > SAL_CALL queryDispatches( const ::com::sun::star::uno::Sequence< ::com::sun::star::frame::DispatchDescriptor >& aDescripts ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > SAL_CALL queryDispatch( const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > > SAL_CALL queryDispatches( const ::com::sun::star::uno::Sequence< ::com::sun::star::frame::DispatchDescriptor >& aDescripts );
 	// XDispatchProviderInterceptor
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > SAL_CALL getSlaveDispatchProvider(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setSlaveDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewSlaveDispatchProvider ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > SAL_CALL getMasterDispatchProvider(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setMasterDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewMasterDispatchProvider ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > SAL_CALL getSlaveDispatchProvider(  );
+    virtual void SAL_CALL setSlaveDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewSlaveDispatchProvider );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider > SAL_CALL getMasterDispatchProvider(  );
+    virtual void SAL_CALL setMasterDispatchProvider( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >& xNewMasterDispatchProvider );
 };
 
 typedef cppu::WeakComponentImplHelper2	<	::com::sun::star::beans::XPropertyChangeListener
@@ -122,12 +122,12 @@ protected:
 									createGridModel( const ::rtl::OUString& rName );
 
 		// XLoadable
-		virtual void SAL_CALL load(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL unload(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL reload(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL isLoaded(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addLoadListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XLoadListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removeLoadListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XLoadListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL load(  );
+		virtual void SAL_CALL unload(  );
+		virtual void SAL_CALL reload(  );
+		virtual sal_Bool SAL_CALL isLoaded(  );
+		virtual void SAL_CALL addLoadListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XLoadListener >& aListener );
+		virtual void SAL_CALL removeLoadListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XLoadListener >& aListener );
 
         virtual void SAL_CALL disposing();
 
@@ -136,10 +136,8 @@ public:
 		BibDataManager();
 		~BibDataManager();
 
-		virtual void				SAL_CALL propertyChange(const ::com::sun::star::beans::PropertyChangeEvent& evt)
-																throw( ::com::sun::star::uno::RuntimeException );
-		virtual void 				SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-																throw( ::com::sun::star::uno::RuntimeException );
+		virtual void				SAL_CALL propertyChange(const ::com::sun::star::beans::PropertyChangeEvent& evt);
+		virtual void 				SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 
 

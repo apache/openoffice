@@ -204,14 +204,14 @@ namespace basprov
     // XServiceInfo
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString BasicProviderImpl::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString BasicProviderImpl::getImplementationName(  )
     {
         return getImplementationName_BasicProviderImpl();
     }
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool BasicProviderImpl::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+    sal_Bool BasicProviderImpl::supportsService( const ::rtl::OUString& rServiceName )
     {
 	    Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	    const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -224,7 +224,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    Sequence< ::rtl::OUString > BasicProviderImpl::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > BasicProviderImpl::getSupportedServiceNames(  )
     {
         return getSupportedServiceNames_BasicProviderImpl();
     }
@@ -233,7 +233,7 @@ namespace basprov
     // XInitialization
     // -----------------------------------------------------------------------------
 
-    void BasicProviderImpl::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+    void BasicProviderImpl::initialize( const Sequence< Any >& aArguments )
     {
         // TODO
 
@@ -326,7 +326,6 @@ namespace basprov
     // -----------------------------------------------------------------------------
 
     Reference < provider::XScript > BasicProviderImpl::getScript( const ::rtl::OUString& scriptURI )
-        throw ( provider::ScriptFrameworkErrorException, RuntimeException)
     {
         // TODO
 
@@ -443,7 +442,7 @@ namespace basprov
     // XBrowseNode
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString BasicProviderImpl::getName(  ) throw (RuntimeException)
+    ::rtl::OUString BasicProviderImpl::getName(  )
     {
         // TODO
 
@@ -454,7 +453,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    Sequence< Reference< browse::XBrowseNode > > BasicProviderImpl::getChildNodes(  ) throw (RuntimeException)
+    Sequence< Reference< browse::XBrowseNode > > BasicProviderImpl::getChildNodes(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -512,7 +511,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool BasicProviderImpl::hasChildNodes(  ) throw (RuntimeException)
+    sal_Bool BasicProviderImpl::hasChildNodes(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -534,7 +533,7 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    sal_Int16 BasicProviderImpl::getType(  ) throw (RuntimeException)
+    sal_Int16 BasicProviderImpl::getType(  )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

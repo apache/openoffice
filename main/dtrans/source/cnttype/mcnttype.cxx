@@ -62,7 +62,7 @@ CMimeContentType::CMimeContentType( const OUString& aCntType )
 //
 //------------------------------------------------------------------------
 
-OUString SAL_CALL CMimeContentType::getMediaType( ) throw(RuntimeException)
+OUString SAL_CALL CMimeContentType::getMediaType( )
 {
 	return m_MediaType;
 }
@@ -71,7 +71,7 @@ OUString SAL_CALL CMimeContentType::getMediaType( ) throw(RuntimeException)
 //
 //------------------------------------------------------------------------
 
-OUString SAL_CALL CMimeContentType::getMediaSubtype( ) throw(RuntimeException)
+OUString SAL_CALL CMimeContentType::getMediaSubtype( )
 {
 	return m_MediaSubtype;
 }
@@ -80,7 +80,7 @@ OUString SAL_CALL CMimeContentType::getMediaSubtype( ) throw(RuntimeException)
 //
 //------------------------------------------------------------------------
 
-OUString SAL_CALL CMimeContentType::getFullMediaType( ) throw(RuntimeException)
+OUString SAL_CALL CMimeContentType::getFullMediaType( )
 {
 	return m_MediaType + OUString::createFromAscii( "/" ) + m_MediaSubtype;
 }
@@ -89,7 +89,7 @@ OUString SAL_CALL CMimeContentType::getFullMediaType( ) throw(RuntimeException)
 //
 //------------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL CMimeContentType::getParameters( ) throw(RuntimeException)
+Sequence< OUString > SAL_CALL CMimeContentType::getParameters( )
 {
 	MutexGuard aGuard( m_aMutex );
 
@@ -111,7 +111,7 @@ Sequence< OUString > SAL_CALL CMimeContentType::getParameters( ) throw(RuntimeEx
 //
 //------------------------------------------------------------------------
 
-sal_Bool SAL_CALL CMimeContentType::hasParameter( const OUString& aName ) throw(RuntimeException)
+sal_Bool SAL_CALL CMimeContentType::hasParameter( const OUString& aName )
 {
 	MutexGuard aGuard( m_aMutex );
 	return ( m_ParameterMap.end( ) != m_ParameterMap.find( aName ) );
@@ -121,7 +121,7 @@ sal_Bool SAL_CALL CMimeContentType::hasParameter( const OUString& aName ) throw(
 //
 //------------------------------------------------------------------------
 
-OUString SAL_CALL CMimeContentType::getParameterValue( const OUString& aName ) throw(NoSuchElementException, RuntimeException)
+OUString SAL_CALL CMimeContentType::getParameterValue( const OUString& aName )
 {
 	MutexGuard aGuard( m_aMutex );
 
@@ -135,7 +135,7 @@ OUString SAL_CALL CMimeContentType::getParameterValue( const OUString& aName ) t
 //
 //------------------------------------------------------------------------
 
-void SAL_CALL CMimeContentType::init( const OUString& aCntType ) throw( IllegalArgumentException )
+void SAL_CALL CMimeContentType::init( const OUString& aCntType )
 {
 	if ( !aCntType.getLength( ) )
 		throw IllegalArgumentException( );

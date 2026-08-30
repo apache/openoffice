@@ -150,8 +150,8 @@ public:
 
     void ExecutePopup( Window *pParent, const ::Point &aPos );
 
-    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent &rEvent) throw ( css::uno::RuntimeException );
-    virtual void SAL_CALL disposing( const css::lang::EventObject &rSource) throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent &rEvent);
+    virtual void SAL_CALL disposing( const css::lang::EventObject &rSource);
 };
 
 DBG_NAME(GalleryThemePopup)
@@ -195,7 +195,6 @@ GalleryThemePopup::~GalleryThemePopup()
 
 void SAL_CALL GalleryThemePopup::statusChanged(
     const css::frame::FeatureStateEvent &rEvent )
-throw ( css::uno::RuntimeException )
 {
     const OUString &rURL = rEvent.FeatureURL.Complete;
     if ( rURL.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( CMD_SID_GALLERY_ENABLE_ADDCOPY ) ) )
@@ -233,7 +232,6 @@ throw ( css::uno::RuntimeException )
 
 void SAL_CALL GalleryThemePopup::disposing(
     const css::lang::EventObject &/*rSource*/)
-throw ( css::uno::RuntimeException )
 {
 }
 

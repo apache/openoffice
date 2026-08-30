@@ -57,46 +57,37 @@ class MasterScriptProvider :
 public:
     MasterScriptProvider(
         const css::uno::Reference< css::uno::XComponentContext >
-        & xContext ) throw( css::uno::RuntimeException );
+        & xContext );
     ~MasterScriptProvider();
 
     // XServiceInfo implementation
-    virtual ::rtl::OUString SAL_CALL getImplementationName( )
-        throw( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName( );
 
     // XBrowseNode implementation
-    virtual ::rtl::OUString SAL_CALL getName()
-        throw ( css::uno::RuntimeException );
-    virtual css::uno::Sequence< css::uno::Reference< css::script::browse::XBrowseNode > > SAL_CALL getChildNodes()
-        throw ( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL hasChildNodes()
-        throw ( css::uno::RuntimeException );
-    virtual sal_Int16 SAL_CALL getType()
-        throw ( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual css::uno::Sequence< css::uno::Reference< css::script::browse::XBrowseNode > > SAL_CALL getChildNodes();
+    virtual sal_Bool SAL_CALL hasChildNodes();
+    virtual sal_Int16 SAL_CALL getType();
     // XNameContainer
-    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const css::uno::Any& aElement ) throw ( css::lang::IllegalArgumentException, css::container::ElementExistException, css::lang::WrappedTargetException, css::uno::RuntimeException);
-    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name ) throw ( css::container::NoSuchElementException, css::lang::WrappedTargetException, css::uno::RuntimeException);
+    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const css::uno::Any& aElement );
+    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name );
 
     // XNameReplace
-    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const css::uno::Any& aElement ) throw ( css::lang::IllegalArgumentException, css::container::NoSuchElementException, css::lang::WrappedTargetException, css::uno::RuntimeException);
+    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const css::uno::Any& aElement );
     // XNameAccess
-    virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw ( css::container::NoSuchElementException, css::lang::WrappedTargetException, css::uno::RuntimeException);
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw ( css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  );
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     // XElementAccess
-    virtual css::uno::Type SAL_CALL getElementType(  ) throw ( css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  ) throw ( css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames( )
-        throw( css::uno::RuntimeException );
+    virtual css::uno::Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames( );
 
     // XScriptProvider implementation
     virtual css::uno::Reference < css::script::provider::XScript > SAL_CALL
-        getScript( const ::rtl::OUString& scriptURI )
-        throw( css::script::provider::ScriptFrameworkErrorException,
-               css::uno::RuntimeException );
+        getScript( const ::rtl::OUString& scriptURI );
 
     /**
      *  XInitialise implementation
@@ -104,13 +95,12 @@ public:
      * @param args expected to contain a single ::rtl::OUString
      * containing the URI
      */
-    virtual void SAL_CALL initialize( const css::uno::Sequence < css::uno::Any > & args )
-        throw ( css::uno::Exception, css::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const css::uno::Sequence < css::uno::Any > & args );
 
     // Public method to return all Language Providers in this MasterScriptProviders
     // context.
     css::uno::Sequence< css::uno::Reference< css::script::provider::XScriptProvider > > SAL_CALL
-        getAllProviders() throw ( css::uno::RuntimeException );
+        getAllProviders();
 
     bool isPkgProvider() { return m_bIsPkgMSP; }
     css::uno::Reference< css::script::provider::XScriptProvider > getPkgProvider() { return m_xMSPPkg; }

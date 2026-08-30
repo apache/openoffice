@@ -86,17 +86,17 @@ namespace frm
         virtual ~OFormNavigationHelper();
 
 	    // XComponent
-        void SAL_CALL dispose(  ) throw( ::com::sun::star::uno::RuntimeException );
+        void SAL_CALL dispose(  );
 
         // XDispatchProviderInterception
-        virtual void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
+        virtual void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
 
         // XStatusListener
-        virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& State ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& State );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
         // IFeatureDispatcher
         virtual void            dispatch( sal_Int16 _nFeatureId ) const;

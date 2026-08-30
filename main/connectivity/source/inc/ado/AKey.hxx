@@ -41,7 +41,7 @@ namespace connectivity
 			OConnection*	m_pConnection;
 		protected:
             void fillPropertyValues();
-            virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const ::com::sun::star::uno::Any& rValue)throw (::com::sun::star::uno::Exception);
+            virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const ::com::sun::star::uno::Any& rValue);
 		public:
 			virtual void refreshColumns();
 		public:
@@ -51,7 +51,7 @@ namespace connectivity
 			OAdoKey(sal_Bool _bCase,OConnection* _pConnection);
 
 			// com::sun::star::lang::XUnoTunnel
-            virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+            virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
             static ::com::sun::star::uno::Sequence< sal_Int8 > getUnoTunnelImplementationId();
 
 			WpADOKey		getImpl() const { return m_aKey;}

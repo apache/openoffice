@@ -85,7 +85,6 @@ void ShapeController::disposing()
 
 // XEventListener
 void ShapeController::disposing( const lang::EventObject& /* Source */ )
-    throw (uno::RuntimeException)
 {
 }
 

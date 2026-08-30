@@ -56,7 +56,7 @@ public:
     virtual     ~SimplePasswordRequest();
 
     // XInterface / OWeakObject
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
     virtual void SAL_CALL acquire(  ) throw ();
     virtual void SAL_CALL release(  ) throw ();
 
@@ -67,8 +67,8 @@ public:
 
 private:
     // XInteractionRequest
-    virtual ::com::sun::star::uno::Any SAL_CALL getRequest() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations() throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL getRequest();
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations();
 
 private:
     ::com::sun::star::uno::Any      maRequest;
@@ -95,7 +95,7 @@ public:
     virtual             ~DocPasswordRequest();
 
     // XInterface / OWeakObject
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
     virtual void SAL_CALL acquire(  ) throw ();
     virtual void SAL_CALL release(  ) throw ();
 
@@ -109,8 +109,8 @@ public:
 
 private:
     // XInteractionRequest
-    virtual ::com::sun::star::uno::Any SAL_CALL getRequest() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations() throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL getRequest();
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations();
 
 private:
     ::com::sun::star::uno::Any      maRequest;

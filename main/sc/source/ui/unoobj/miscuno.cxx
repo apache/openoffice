@@ -226,14 +226,13 @@ ScIndexEnumeration::~ScIndexEnumeration()
 
 // XEnumeration
 
-sal_Bool SAL_CALL ScIndexEnumeration::hasMoreElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL ScIndexEnumeration::hasMoreElements()
 {
 	ScUnoGuard aGuard;
 	return ( nPos < xIndex->getCount() );
 }
 
-uno::Any SAL_CALL ScIndexEnumeration::nextElement() throw(container::NoSuchElementException,
-										lang::WrappedTargetException, uno::RuntimeException)
+uno::Any SAL_CALL ScIndexEnumeration::nextElement()
 {
 	ScUnoGuard aGuard;
     uno::Any aReturn;
@@ -249,20 +248,17 @@ uno::Any SAL_CALL ScIndexEnumeration::nextElement() throw(container::NoSuchEleme
 }
 
 ::rtl::OUString SAL_CALL ScIndexEnumeration::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return ::rtl::OUString::createFromAscii("ScIndexEnumeration");
 }
 
 sal_Bool SAL_CALL ScIndexEnumeration::supportsService( const ::rtl::OUString& ServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return sServiceName == ServiceName;
 }
 
 ::com::sun::star::uno::Sequence< ::rtl::OUString >
 	SAL_CALL ScIndexEnumeration::getSupportedServiceNames(void)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	::com::sun::star::uno::Sequence< ::rtl::OUString > aRet(1);
 	::rtl::OUString* pArray = aRet.getArray();
@@ -343,15 +339,12 @@ ScNameToIndexAccess::~ScNameToIndexAccess()
 
 // XIndexAccess
 
-sal_Int32 SAL_CALL ScNameToIndexAccess::getCount(  ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL ScNameToIndexAccess::getCount(  )
 {
 	return aNames.getLength();
 }
 
 ::com::sun::star::uno::Any SAL_CALL ScNameToIndexAccess::getByIndex( sal_Int32 nIndex )
-								throw(::com::sun::star::lang::IndexOutOfBoundsException,
-										::com::sun::star::lang::WrappedTargetException,
-										::com::sun::star::uno::RuntimeException)
 {
 	if ( xNameAccess.is() && nIndex >= 0 && nIndex < aNames.getLength() )
 		return xNameAccess->getByName( aNames.getConstArray()[nIndex] );
@@ -363,7 +356,6 @@ sal_Int32 SAL_CALL ScNameToIndexAccess::getCount(  ) throw(::com::sun::star::uno
 // XElementAccess
 
 ::com::sun::star::uno::Type SAL_CALL ScNameToIndexAccess::getElementType(  )
-								throw(::com::sun::star::uno::RuntimeException)
 {
 	if ( xNameAccess.is() )
 		return xNameAccess->getElementType();
@@ -371,7 +363,7 @@ sal_Int32 SAL_CALL ScNameToIndexAccess::getCount(  ) throw(::com::sun::star::uno
 		return uno::Type();
 }
 
-sal_Bool SAL_CALL ScNameToIndexAccess::hasElements(  ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL ScNameToIndexAccess::hasElements(  )
 {
 	return getCount() > 0;
 }

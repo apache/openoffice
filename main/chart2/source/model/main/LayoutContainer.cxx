@@ -51,17 +51,12 @@ LayoutContainer::~LayoutContainer()
 void SAL_CALL LayoutContainer::addConstrainedElementByIdentifier(
     const ::rtl::OUString& aIdentifier,
     const layout::Constraint& Constraint )
-    throw (layout::IllegalConstraintException,
-           lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     addElementByIdentifier( aIdentifier );
     m_aConstraints[ aIdentifier ] = Constraint;
 }
 
 void SAL_CALL LayoutContainer::addElementByIdentifier( const ::rtl::OUString& aIdentifier )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     if( ::std::find( m_aLayoutElements.begin(),
                      m_aLayoutElements.end(),
@@ -72,8 +67,6 @@ void SAL_CALL LayoutContainer::addElementByIdentifier( const ::rtl::OUString& aI
 }
 
 void SAL_CALL LayoutContainer::removeElementByIdentifier( const ::rtl::OUString& aIdentifier )
-    throw (container::NoSuchElementException,
-           uno::RuntimeException)
 {
     tLayoutElements::iterator aIt(
         ::std::find( m_aLayoutElements.begin(),
@@ -90,8 +83,6 @@ void SAL_CALL LayoutContainer::removeElementByIdentifier( const ::rtl::OUString&
 void SAL_CALL LayoutContainer::setConstraintByIdentifier(
     const ::rtl::OUString& aIdentifier,
     const layout::Constraint& Constraint )
-    throw (container::NoSuchElementException,
-           uno::RuntimeException)
 {
     if( ::std::find( m_aLayoutElements.begin(),
                      m_aLayoutElements.end(),
@@ -102,8 +93,6 @@ void SAL_CALL LayoutContainer::setConstraintByIdentifier(
 }
 
 layout::Constraint SAL_CALL LayoutContainer::getConstraintByIdentifier( const ::rtl::OUString& aIdentifier )
-    throw (container::NoSuchElementException,
-           uno::RuntimeException)
 {
     tConstraintsMap::const_iterator aIt( m_aConstraints.find( aIdentifier ));
     if( aIt == m_aConstraints.end())
@@ -113,7 +102,6 @@ layout::Constraint SAL_CALL LayoutContainer::getConstraintByIdentifier( const ::
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL LayoutContainer::getElementIdentifiers()
-    throw (uno::RuntimeException)
 {
     return ContainerHelper::ContainerToSequence( m_aLayoutElements );
 }

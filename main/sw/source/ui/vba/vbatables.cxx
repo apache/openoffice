@@ -60,11 +60,11 @@ public:
     TableEnumerationImpl(  const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xDocument, const uno::Reference< container::XIndexAccess >& xIndexAccess ) : mxParent( xParent ), mxContext( xContext ), mxDocument( xDocument ), mxIndexAccess( xIndexAccess ), mnCurIndex(0)
     {
     }
-    virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+    virtual ::sal_Bool SAL_CALL hasMoreElements(  )
     {
         return ( mnCurIndex < mxIndexAccess->getCount() );
     }
-    virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+    virtual uno::Any SAL_CALL nextElement(  )
     {
         if ( !hasMoreElements() )
             throw container::NoSuchElementException();
@@ -79,7 +79,7 @@ SwVbaTables::SwVbaTables( const uno::Reference< XHelperInterface >& xParent, con
 
 
 uno::Reference< word::XTable > SAL_CALL
-SwVbaTables::Add( const uno::Reference< word::XRange >& Range, const uno::Any& NumRows, const uno::Any& NumColumns, const uno::Any& /*DefaultTableBehavior*/, const uno::Any& /*AutoFitBehavior*/ ) throw (script::BasicErrorException, uno::RuntimeException)
+SwVbaTables::Add( const uno::Reference< word::XRange >& Range, const uno::Any& NumRows, const uno::Any& NumColumns, const uno::Any& /*DefaultTableBehavior*/, const uno::Any& /*AutoFitBehavior*/ )
 {
     sal_Int32 nCols = 0;
     sal_Int32 nRows = 0;
@@ -111,7 +111,7 @@ SwVbaTables::Add( const uno::Reference< word::XRange >& Range, const uno::Any& N
 }
 
 uno::Reference< container::XEnumeration > SAL_CALL
-SwVbaTables::createEnumeration() throw (uno::RuntimeException)
+SwVbaTables::createEnumeration()
 {
     return new TableEnumerationImpl( mxParent, mxContext, mxDocument, m_xIndexAccess );
 }
@@ -133,7 +133,7 @@ SwVbaTables::getServiceImplName()
 
 // XEnumerationAccess
 uno::Type SAL_CALL
-SwVbaTables::getElementType() throw (uno::RuntimeException)
+SwVbaTables::getElementType()
 {
     return  word::XTable::static_type(0);
 }

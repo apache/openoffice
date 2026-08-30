@@ -44,7 +44,7 @@ public:
     virtual ~AccDescendantManagerEventListener();
 
     //AccessibleEventListener
-    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent );
 
     //for selection changed event
     virtual void SAL_CALL handleSelectionChangedEvent(Any oldValue, Any newValue);

@@ -41,36 +41,29 @@ class transliteration_Ignore : public transliteration_commonclass
 {
 public:
         virtual rtl::OUString SAL_CALL
-        folding( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, com::sun::star::uno::Sequence< sal_Int32 >& offset)
-        throw(com::sun::star::uno::RuntimeException);
+        folding( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, com::sun::star::uno::Sequence< sal_Int32 >& offset);
 
         // This method is shared.
         sal_Bool SAL_CALL
         equals( const rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1, sal_Int32& nMatch1,
-            const rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2 )
-        throw(com::sun::star::uno::RuntimeException);
+            const rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2 );
 
         // This method is implemented in sub class if needed. Otherwise, the method implemented in this class will be used.
         com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-        transliterateRange( const rtl::OUString& str1, const rtl::OUString& str2 )
-        throw(com::sun::star::uno::RuntimeException);
+        transliterateRange( const rtl::OUString& str1, const rtl::OUString& str2 );
 
 
         // Methods which are shared.
-        sal_Int16 SAL_CALL getType(  ) throw(com::sun::star::uno::RuntimeException);
+        sal_Int16 SAL_CALL getType(  );
 
         rtl::OUString SAL_CALL
-        transliterate( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, com::sun::star::uno::Sequence< sal_Int32 >& offset  )
-        throw(com::sun::star::uno::RuntimeException);
+        transliterate( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, com::sun::star::uno::Sequence< sal_Int32 >& offset  );
 
         virtual sal_Unicode SAL_CALL
-        transliterateChar2Char( sal_Unicode inChar)
-        throw(com::sun::star::uno::RuntimeException,
-            com::sun::star::i18n::MultipleCharsOutputException);
+        transliterateChar2Char( sal_Unicode inChar);
 
         com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-        transliterateRange( const rtl::OUString& str1, const rtl::OUString& str2, XTransliteration& t1, XTransliteration& t2 )
-        throw(com::sun::star::uno::RuntimeException);
+        transliterateRange( const rtl::OUString& str1, const rtl::OUString& str2, XTransliteration& t1, XTransliteration& t2 );
 
 protected:
         TransFunc func;
@@ -130,7 +123,7 @@ public:\
             implementationName = "com.sun.star.i18n.Transliteration.ignore"#name;\
         };\
         rtl::OUString SAL_CALL folding( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, \
-                com::sun::star::uno::Sequence< sal_Int32 >& offset) throw(com::sun::star::uno::RuntimeException); \
+                com::sun::star::uno::Sequence< sal_Int32 >& offset); \
 };
 
 #if defined( TRANSLITERATION_KiKuFollowedBySa_ja_JP ) || defined( TRANSLITERATION_ALL )
@@ -158,14 +151,13 @@ public:\
             implementationName = "com.sun.star.i18n.Transliteration.ignore"#name;\
         };\
         rtl::OUString SAL_CALL folding( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, \
-                com::sun::star::uno::Sequence< sal_Int32 >& offset) throw(com::sun::star::uno::RuntimeException); \
+                com::sun::star::uno::Sequence< sal_Int32 >& offset); \
         using transliteration_Ignore::transliterateRange;\
         com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL transliterateRange( const rtl::OUString& str1, \
-                const rtl::OUString& str2 ) throw(com::sun::star::uno::RuntimeException); \
+                const rtl::OUString& str2 ); \
         sal_Unicode SAL_CALL \
         transliterateChar2Char( sal_Unicode inChar) \
-        throw(com::sun::star::uno::RuntimeException,\
-            com::sun::star::i18n::MultipleCharsOutputException);\
+        ;\
 };
 
 #if defined( TRANSLITERATION_Kana ) || defined( TRANSLITERATION_ALL )

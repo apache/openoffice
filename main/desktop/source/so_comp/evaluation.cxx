@@ -99,25 +99,25 @@ SOEvaluation::~SOEvaluation()
 }
 
 // XComponent
-void SAL_CALL SOEvaluation::dispose() throw ( RuntimeException )
+void SAL_CALL SOEvaluation::dispose()
 {
     EventObject aObject;
     aObject.Source = (XComponent*)this;
     m_aListeners.disposeAndClear( aObject );
 }
 
-void SAL_CALL SOEvaluation::addEventListener( const Reference< XEventListener > & aListener) throw ( RuntimeException )
+void SAL_CALL SOEvaluation::addEventListener( const Reference< XEventListener > & aListener)
 {
     m_aListeners.addInterface( aListener );
 }
 
-void SAL_CALL SOEvaluation::removeEventListener( const Reference< XEventListener > & aListener ) throw ( RuntimeException )
+void SAL_CALL SOEvaluation::removeEventListener( const Reference< XEventListener > & aListener )
 {
     m_aListeners.removeInterface( aListener );
 }
 
 // XExactName
-rtl::OUString SAL_CALL SOEvaluation::getExactName( const rtl::OUString& rApproximateName ) throw ( RuntimeException )
+rtl::OUString SAL_CALL SOEvaluation::getExactName( const rtl::OUString& rApproximateName )
 {
     // get the tabreg service for an evaluation version
     // without this service office shouldn't run at all
@@ -156,7 +156,7 @@ rtl::OUString SAL_CALL SOEvaluation::getExactName( const rtl::OUString& rApproxi
 }
 
 // XMaterialHolder
-Any SAL_CALL SOEvaluation::getMaterial() throw( RuntimeException )
+Any SAL_CALL SOEvaluation::getMaterial()
 {
 	// Time bomb implementation. Return empty Any to do nothing or
 	// provide a com::sun::star::util::Date with the time bomb date.
@@ -176,13 +176,11 @@ Any SAL_CALL SOEvaluation::getMaterial() throw( RuntimeException )
 
 // XServiceInfo
 ::rtl::OUString SAL_CALL SOEvaluation::getImplementationName()
-throw ( RuntimeException )
 {
 	return SOEvaluation::GetImplementationName();
 }
 
 sal_Bool SAL_CALL SOEvaluation::supportsService( const ::rtl::OUString& rServiceName )
-throw ( RuntimeException )
 {
 	sal_Int32 nSize = (sizeof( interfaces ) / sizeof( const char *))-1;
 
@@ -193,7 +191,6 @@ throw ( RuntimeException )
 }
 
 Sequence< ::rtl::OUString > SAL_CALL SOEvaluation::getSupportedServiceNames()
-throw ( RuntimeException )
 {
 	return SOEvaluation::GetSupportedServiceNames();
 }

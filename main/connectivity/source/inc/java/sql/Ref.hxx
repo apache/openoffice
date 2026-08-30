@@ -47,7 +47,7 @@ namespace connectivity
 		java_sql_Ref( JNIEnv * pEnv, jobject myObj );
 
 		// XRef
-		virtual ::rtl::OUString SAL_CALL getBaseTypeName(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getBaseTypeName(  );
 	};
 }
 #endif // _CONNECTIVITY_JAVA_SQL_REF_HXX_

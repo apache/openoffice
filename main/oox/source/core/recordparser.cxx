@@ -51,14 +51,14 @@ public:
     inline explicit         Locator( RecordParser* pParser ) : mpParser( pParser ) {}
 
     void                    dispose();
-    void                    checkDispose() throw( RuntimeException );
+    void                    checkDispose();
 
     // com.sun.star.sax.XLocator interface
 
-    virtual sal_Int32 SAL_CALL getColumnNumber() throw( RuntimeException );
-    virtual sal_Int32 SAL_CALL getLineNumber() throw( RuntimeException );
-    virtual OUString SAL_CALL getPublicId() throw( RuntimeException );
-    virtual OUString SAL_CALL getSystemId() throw( RuntimeException );
+    virtual sal_Int32 SAL_CALL getColumnNumber();
+    virtual sal_Int32 SAL_CALL getLineNumber();
+    virtual OUString SAL_CALL getPublicId();
+    virtual OUString SAL_CALL getSystemId();
 
 private:
     RecordParser*           mpParser;
@@ -71,29 +71,29 @@ void Locator::dispose()
     mpParser = 0;
 }
 
-void Locator::checkDispose() throw( RuntimeException )
+void Locator::checkDispose()
 {
     if( !mpParser )
         throw DisposedException();
 }
 
-sal_Int32 SAL_CALL Locator::getColumnNumber() throw( RuntimeException )
+sal_Int32 SAL_CALL Locator::getColumnNumber()
 {
     return -1;
 }
 
-sal_Int32 SAL_CALL Locator::getLineNumber() throw( RuntimeException )
+sal_Int32 SAL_CALL Locator::getLineNumber()
 {
     return -1;
 }
 
-OUString SAL_CALL Locator::getPublicId() throw( RuntimeException )
+OUString SAL_CALL Locator::getPublicId()
 {
     checkDispose();
     return mpParser->getInputSource().maPublicId;
 }
 
-OUString SAL_CALL Locator::getSystemId() throw( RuntimeException )
+OUString SAL_CALL Locator::getSystemId()
 {
     checkDispose();
     return mpParser->getInputSource().maSystemId;
@@ -248,7 +248,7 @@ void RecordParser::setFragmentHandler( const ::rtl::Reference< FragmentHandler >
     }
 }
 
-void RecordParser::parseStream( const RecordInputSource& rInputSource ) throw( SAXException, IOException, RuntimeException )
+void RecordParser::parseStream( const RecordInputSource& rInputSource )
 {
     maSource = rInputSource;
 

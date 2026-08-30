@@ -58,19 +58,15 @@ public:
 	// XTransferable
 	//------------------------------------------------------------------------
 
-	virtual ::com::sun::star::uno::Any SAL_CALL getTransferData( const ::com::sun::star::datatransfer::DataFlavor& aFlavor )
-		throw( ::com::sun::star::datatransfer::UnsupportedFlavorException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Any SAL_CALL getTransferData( const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
 
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::datatransfer::DataFlavor > SAL_CALL getTransferDataFlavors(  )
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::datatransfer::DataFlavor > SAL_CALL getTransferDataFlavors(  );
 
-	virtual sal_Bool SAL_CALL isDataFlavorSupported( const ::com::sun::star::datatransfer::DataFlavor& aFlavor )
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Bool SAL_CALL isDataFlavorSupported( const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
 	//------------------------------------------------------------------------
 	// XSystemTransferable
 	//------------------------------------------------------------------------
-	virtual ::com::sun::star::uno::Any SAL_CALL getData( const com::sun::star::uno::Sequence<sal_Int8>& aProcessId  ) throw
-	(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getData( const com::sun::star::uno::Sequence<sal_Int8>& aProcessId  );
 
 
 private:

@@ -92,7 +92,7 @@ IMPLEMENT_2_FORWARD_XINTERFACE2( VCLXTabControl, VCLXWindow, Container, VCLXTabC
 
 IMPLEMENT_FORWARD_XTYPEPROVIDER2( VCLXTabControl, VCLXWindow, VCLXTabControl_Base );
 
-void SAL_CALL VCLXTabControl::dispose( ) throw(uno::RuntimeException)
+void SAL_CALL VCLXTabControl::dispose( )
 {
     {
         ::vos::OGuard aGuard( GetMutex() );
@@ -106,20 +106,20 @@ void SAL_CALL VCLXTabControl::dispose( ) throw(uno::RuntimeException)
 }
 
 #if 0
-void SAL_CALL VCLXTabControl::addTabListener( const Reference< XTabListener >& listener ) throw (uno::RuntimeException)
+void SAL_CALL VCLXTabControl::addTabListener( const Reference< XTabListener >& listener )
 {
     if ( listener.is() )
         maTabListeners.addInterface( listener );
 }
 
-void SAL_CALL VCLXTabControl::removeTabListener( const Reference< XTabListener >& listener ) throw (uno::RuntimeException)
+void SAL_CALL VCLXTabControl::removeTabListener( const Reference< XTabListener >& listener )
 {
     if ( listener.is() )
         maTabListeners.removeInterface( listener );
 }
 #endif
 
-TabControl *VCLXTabControl::getTabControl() const throw (uno::RuntimeException)
+TabControl *VCLXTabControl::getTabControl() const
 {
     TabControl *pTabControl = static_cast< TabControl* >( GetWindow() );
     if ( pTabControl )
@@ -127,7 +127,7 @@ TabControl *VCLXTabControl::getTabControl() const throw (uno::RuntimeException)
     throw uno::RuntimeException();
 }
 
-sal_Int32 SAL_CALL VCLXTabControl::insertTab() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL VCLXTabControl::insertTab()
 {
     TabControl *pTabControl = getTabControl();
     sal_uInt16 id = sal::static_int_cast< sal_uInt16 >( mTabId++ );
@@ -137,7 +137,7 @@ sal_Int32 SAL_CALL VCLXTabControl::insertTab() throw (uno::RuntimeException)
     return id;
 }
 
-void SAL_CALL VCLXTabControl::removeTab( sal_Int32 ID ) throw (uno::RuntimeException, IndexOutOfBoundsException)
+void SAL_CALL VCLXTabControl::removeTab( sal_Int32 ID )
 {
     TabControl *pTabControl = getTabControl();
     if ( pTabControl->GetTabPage( sal::static_int_cast< sal_uInt16 >( ID ) ) == NULL )
@@ -145,7 +145,7 @@ void SAL_CALL VCLXTabControl::removeTab( sal_Int32 ID ) throw (uno::RuntimeExcep
     pTabControl->RemovePage( sal::static_int_cast< sal_uInt16 >( ID ) );
 }
 
-void SAL_CALL VCLXTabControl::activateTab( sal_Int32 ID ) throw (uno::RuntimeException, IndexOutOfBoundsException)
+void SAL_CALL VCLXTabControl::activateTab( sal_Int32 ID )
 {
     TabControl *pTabControl = getTabControl();
     if ( pTabControl->GetTabPage( sal::static_int_cast< sal_uInt16 >( ID ) ) == NULL )
@@ -153,12 +153,12 @@ void SAL_CALL VCLXTabControl::activateTab( sal_Int32 ID ) throw (uno::RuntimeExc
     pTabControl->SelectTabPage( sal::static_int_cast< sal_uInt16 >( ID ) );
 }
 
-sal_Int32 SAL_CALL VCLXTabControl::getActiveTabID() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL VCLXTabControl::getActiveTabID()
 {
     return getTabControl()->GetCurPageId( );
 }
 
-void SAL_CALL VCLXTabControl::addTabListener( const uno::Reference< awt::XTabListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL VCLXTabControl::addTabListener( const uno::Reference< awt::XTabListener >& xListener )
 {
     for ( std::list< uno::Reference
               < awt::XTabListener > >::const_iterator it
@@ -171,7 +171,7 @@ void SAL_CALL VCLXTabControl::addTabListener( const uno::Reference< awt::XTabLis
     mxTabListeners.push_back( xListener );
 }
 
-void SAL_CALL VCLXTabControl::removeTabListener( const uno::Reference< awt::XTabListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL VCLXTabControl::removeTabListener( const uno::Reference< awt::XTabListener >& xListener )
 {
     for ( std::list< uno::Reference
               < awt::XTabListener > >::iterator it
@@ -185,7 +185,7 @@ void SAL_CALL VCLXTabControl::removeTabListener( const uno::Reference< awt::XTab
     }
 }
 
-void SAL_CALL VCLXTabControl::setTabProps( sal_Int32 ID, const uno::Sequence< NamedValue >& Properties ) throw (uno::RuntimeException, IndexOutOfBoundsException)
+void SAL_CALL VCLXTabControl::setTabProps( sal_Int32 ID, const uno::Sequence< NamedValue >& Properties )
 {
     TabControl *pTabControl = getTabControl();
     if ( pTabControl->GetTabPage( sal::static_int_cast< sal_uInt16 >( ID ) ) == NULL )
@@ -205,7 +205,6 @@ void SAL_CALL VCLXTabControl::setTabProps( sal_Int32 ID, const uno::Sequence< Na
 }
 
 uno::Sequence< NamedValue > SAL_CALL VCLXTabControl::getTabProps( sal_Int32 ID )
-    throw (IndexOutOfBoundsException, uno::RuntimeException)
 {
     TabControl *pTabControl = getTabControl();
     if ( pTabControl->GetTabPage( sal::static_int_cast< sal_uInt16 >( ID ) ) == NULL )
@@ -226,7 +225,7 @@ uno::Sequence< NamedValue > SAL_CALL VCLXTabControl::getTabProps( sal_Int32 ID )
 }
 
 // TODO: draw tab border here
-void SAL_CALL VCLXTabControl::draw( sal_Int32 nX, sal_Int32 nY ) throw(uno::RuntimeException)
+void SAL_CALL VCLXTabControl::draw( sal_Int32 nX, sal_Int32 nY )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -262,14 +261,12 @@ void VCLXTabControl::AddChild (uno::Reference< awt::XLayoutConstrains > const& x
 
 void SAL_CALL VCLXTabControl::addChild(
     const uno::Reference< awt::XLayoutConstrains > &xChild )
-    throw (uno::RuntimeException, awt::MaxChildrenException)
 {
     mIdMap[ xChild ] = insertTab();
     Box_Base::addChild( xChild );
 }
 
 void SAL_CALL VCLXTabControl::removeChild( const uno::Reference< awt::XLayoutConstrains > &xChild )
-    throw (uno::RuntimeException)
 {
     removeTab( mIdMap[xChild] );
     mIdMap[ xChild ] = -1;
@@ -296,7 +293,6 @@ static void setChildrenVisible( uno::Reference < awt::XLayoutConstrains > xChild
 }
 
 void SAL_CALL VCLXTabControl::allocateArea (awt::Rectangle const &area)
-    throw (uno::RuntimeException)
 {
 #ifndef __SUNPRO_CC
     OSL_TRACE ("\n%s", __PRETTY_FUNCTION__);
@@ -421,7 +417,6 @@ void SAL_CALL VCLXTabControl::allocateArea (awt::Rectangle const &area)
 }
 
 awt::Size SAL_CALL VCLXTabControl::getMinimumSize()
-    throw(uno::RuntimeException)
 {
     awt::Size requestedSize = VCLXWindow::getMinimumSize();
     awt::Size childrenSize( 0, 0 );
@@ -523,12 +518,12 @@ void VCLXTabControl::ProcessWindowEvent( const VclWindowEvent& _rVclWindowEvent 
     }
 }
 
-void SAL_CALL VCLXTabControl::setProperty( const ::rtl::OUString& PropertyName, const uno::Any &Value ) throw(uno::RuntimeException)
+void SAL_CALL VCLXTabControl::setProperty( const ::rtl::OUString& PropertyName, const uno::Any &Value )
 {
     VCLXWindow::setProperty( PropertyName, Value );
 }
 
-uno::Any SAL_CALL VCLXTabControl::getProperty( const ::rtl::OUString& PropertyName ) throw(uno::RuntimeException)
+uno::Any SAL_CALL VCLXTabControl::getProperty( const ::rtl::OUString& PropertyName )
 {
     return VCLXWindow::getProperty( PropertyName );
 }

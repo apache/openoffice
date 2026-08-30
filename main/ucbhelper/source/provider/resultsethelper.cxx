@@ -125,7 +125,6 @@ XSERVICEINFO_NOFACTORY_IMPL_1( ResultSetImplHelper,
 
 // virtual
 void SAL_CALL ResultSetImplHelper::dispose()
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -141,7 +140,6 @@ void SAL_CALL ResultSetImplHelper::dispose()
 // virtual
 void SAL_CALL ResultSetImplHelper::addEventListener(
         const uno::Reference< lang::XEventListener >& Listener )
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -156,7 +154,6 @@ void SAL_CALL ResultSetImplHelper::addEventListener(
 // virtual
 void SAL_CALL ResultSetImplHelper::removeEventListener(
         const uno::Reference< lang::XEventListener >& Listener )
-	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -173,8 +170,6 @@ void SAL_CALL ResultSetImplHelper::removeEventListener(
 // virtual
 uno::Reference< sdbc::XResultSet > SAL_CALL
 ResultSetImplHelper::getStaticResultSet()
-	throw( com::sun::star::ucb::ListenerAlreadySetException,
-           uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -190,8 +185,6 @@ ResultSetImplHelper::getStaticResultSet()
 void SAL_CALL ResultSetImplHelper::setListener(
         const uno::Reference< com::sun::star::ucb::XDynamicResultSetListener >&
             Listener )
-	throw( com::sun::star::ucb::ListenerAlreadySetException,
-           uno::RuntimeException )
 {
 	osl::ClearableMutexGuard aGuard( m_aMutex );
 
@@ -233,7 +226,6 @@ void SAL_CALL ResultSetImplHelper::setListener(
 //=========================================================================
 // virtual
 sal_Int16 SAL_CALL ResultSetImplHelper::getCapabilities()
-	throw( uno::RuntimeException )
 {
 	// ! com::sun::star::ucb::ContentResultSetCapability::SORTED
 	return 0;
@@ -244,10 +236,6 @@ sal_Int16 SAL_CALL ResultSetImplHelper::getCapabilities()
 void SAL_CALL ResultSetImplHelper::connectToCache(
         const uno::Reference< com::sun::star::ucb::XDynamicResultSet > &
             xCache )
-	throw( com::sun::star::ucb::ListenerAlreadySetException,
-		   com::sun::star::ucb::AlreadyInitializedException,
-		   com::sun::star::ucb::ServiceNotFoundException,
-		   uno::RuntimeException )
 {
 	if ( m_xListener.is() )
 		throw com::sun::star::ucb::ListenerAlreadySetException();

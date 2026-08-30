@@ -47,8 +47,7 @@ XCR_DLLPUBLIC void SAL_CALL exportDialogModel(
 	::com::sun::star::uno::Reference<
     ::com::sun::star::xml::sax::XExtendedDocumentHandler > const & xOut,
 	::com::sun::star::uno::Reference<
-    ::com::sun::star::container::XNameContainer > const & xDialogModel )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+    ::com::sun::star::container::XNameContainer > const & xDialogModel );
 
 //==============================================================================
 XCR_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler >
@@ -56,8 +55,7 @@ SAL_CALL importDialogModel(
 	::com::sun::star::uno::Reference<
     ::com::sun::star::container::XNameContainer > const & xDialogModel,
     ::com::sun::star::uno::Reference<
-    ::com::sun::star::uno::XComponentContext > const & xContext )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+    ::com::sun::star::uno::XComponentContext > const & xContext );
 
 // additional functions for convenience
 
@@ -67,8 +65,7 @@ SAL_CALL exportDialogModel(
 	::com::sun::star::uno::Reference<
     ::com::sun::star::container::XNameContainer > const & xDialogModel,
     ::com::sun::star::uno::Reference<
-    ::com::sun::star::uno::XComponentContext > const & xContext )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+    ::com::sun::star::uno::XComponentContext > const & xContext );
 
 //==============================================================================
 XCR_DLLPUBLIC void SAL_CALL importDialogModel(
@@ -77,8 +74,7 @@ XCR_DLLPUBLIC void SAL_CALL importDialogModel(
 	::com::sun::star::uno::Reference<
     ::com::sun::star::container::XNameContainer > const & xDialogModel,
     ::com::sun::star::uno::Reference<
-    ::com::sun::star::uno::XComponentContext > const & xContext )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+    ::com::sun::star::uno::XComponentContext > const & xContext );
 
 }
 

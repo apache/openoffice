@@ -185,8 +185,7 @@ class COMPHELPER_DLLPUBLIC Locale
             @throw      MalFormedLocaleException
                         if conversion failed.
           */
-        Locale(const ::rtl::OUString& sISO)
-            throw(MalFormedLocaleException);
+        Locale(const ::rtl::OUString& sISO);
 
         //---------------------------------------
         /** @short      construct a Locale from language, country and variant.
@@ -289,8 +288,7 @@ class COMPHELPER_DLLPUBLIC Locale
             @throw      MalFormedLocaleException
                         if conversion failed.
           */
-        void fromISO(const ::rtl::OUString& sISO)
-            throw(MalFormedLocaleException);
+        void fromISO(const ::rtl::OUString& sISO);
 
         //---------------------------------------
         /** @short  converts this Locale to an ISO formatted string value.
@@ -380,8 +378,7 @@ class COMPHELPER_DLLPUBLIC Locale
                         be converted to a valid Locale Object.
          */
         static ::std::vector< ::rtl::OUString >::const_iterator getFallback(const ::std::vector< ::rtl::OUString >& lISOList     ,
-                                                                            const ::rtl::OUString&                  sReferenceISO)
-            throw(MalFormedLocaleException);
+                                                                            const ::rtl::OUString&                  sReferenceISO);
 
         //---------------------------------------
         /** @short      search for the next possible fallback locale.

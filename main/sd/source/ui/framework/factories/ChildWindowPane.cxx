@@ -204,7 +204,6 @@ void SAL_CALL ChildWindowPane::disposing (void)
 
 
 Reference<awt::XWindow> SAL_CALL ChildWindowPane::getWindow (void)
-    throw (RuntimeException)
 {
     if (mpWindow == NULL || ! mxWindow.is())
         GetWindow();
@@ -228,7 +227,6 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER2(
 //----- XEventListener --------------------------------------------------------
 
 void SAL_CALL ChildWindowPane::disposing (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 

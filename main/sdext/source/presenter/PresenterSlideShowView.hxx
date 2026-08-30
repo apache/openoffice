@@ -89,127 +89,98 @@ public:
     // XSlideShowView
 
     virtual css::uno::Reference<
-        css::rendering::XSpriteCanvas > SAL_CALL getCanvas (void)
-        throw (css::uno::RuntimeException);
+        css::rendering::XSpriteCanvas > SAL_CALL getCanvas (void);
 
-    virtual void SAL_CALL clear (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL clear (void);
 
-    virtual css::geometry::AffineMatrix2D SAL_CALL getTransformation (void)
-        throw (css::uno::RuntimeException);
+    virtual css::geometry::AffineMatrix2D SAL_CALL getTransformation (void);
 
     virtual void SAL_CALL addTransformationChangedListener(
         const css::uno::Reference<
-            css::util::XModifyListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::util::XModifyListener >& xListener);
 
     virtual void SAL_CALL removeTransformationChangedListener(
         const css::uno::Reference<
-            css::util::XModifyListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::util::XModifyListener >& xListener);
 
     virtual void SAL_CALL addPaintListener(
         const css::uno::Reference<
-            css::awt::XPaintListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::awt::XPaintListener >& xListener);
 
     virtual void SAL_CALL removePaintListener(
         const css::uno::Reference<
-            css::awt::XPaintListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::awt::XPaintListener >& xListener);
 
     virtual void SAL_CALL addMouseListener(
         const css::uno::Reference<
-            css::awt::XMouseListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::awt::XMouseListener >& xListener);
 
     virtual void SAL_CALL removeMouseListener(
         const css::uno::Reference<
-            css::awt::XMouseListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::awt::XMouseListener >& xListener);
 
     virtual void SAL_CALL addMouseMotionListener(
         const css::uno::Reference<
-            css::awt::XMouseMotionListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::awt::XMouseMotionListener >& xListener);
 
     virtual void SAL_CALL removeMouseMotionListener(
         const css::uno::Reference<
-            css::awt::XMouseMotionListener >& xListener)
-        throw (css::uno::RuntimeException);
+            css::awt::XMouseMotionListener >& xListener);
 
-    virtual void SAL_CALL setMouseCursor(::sal_Int16 nPointerShape)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL setMouseCursor(::sal_Int16 nPointerShape);
 
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  )
-	throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  );
 
     // lang::XEventListener
-    virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent);
 
 
     // XPaintListener
-    virtual void SAL_CALL windowPaint (const css::awt::PaintEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowPaint (const css::awt::PaintEvent& rEvent);
 
 
     // XMouseListener
-    virtual void SAL_CALL mousePressed (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mousePressed (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseReleased (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseReleased (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseEntered (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseEntered (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseExited (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseExited (const css::awt::MouseEvent& rEvent);
 
 
     // XMouseMotionListener
 
-    virtual void SAL_CALL mouseDragged (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseDragged (const css::awt::MouseEvent& rEvent);
 
-    virtual void SAL_CALL mouseMoved (const css::awt::MouseEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL mouseMoved (const css::awt::MouseEvent& rEvent);
 
 
     // XWindowListener
 
-    virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent);
 
-    virtual void SAL_CALL windowMoved (const css::awt::WindowEvent& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowMoved (const css::awt::WindowEvent& rEvent);
 
-    virtual void SAL_CALL windowShown (const css::lang::EventObject& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowShown (const css::lang::EventObject& rEvent);
 
-    virtual void SAL_CALL windowHidden (const css::lang::EventObject& rEvent)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL windowHidden (const css::lang::EventObject& rEvent);
 
 
     // XView
 
     virtual css::uno::Reference<css::drawing::framework::XResourceId> SAL_CALL
-        getResourceId (void)
-        throw(css::uno::RuntimeException);
+        getResourceId (void);
 
-    virtual sal_Bool SAL_CALL isAnchorOnly (void)
-        throw (com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isAnchorOnly (void);
 
 
     // XDrawView
 
     virtual void SAL_CALL setCurrentPage (
-        const css::uno::Reference<css::drawing::XDrawPage>& rxSlide)
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference<css::drawing::XDrawPage>& rxSlide);
 
-    virtual css::uno::Reference<css::drawing::XDrawPage> SAL_CALL getCurrentPage (void)
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Reference<css::drawing::XDrawPage> SAL_CALL getCurrentPage (void);
 
 
     // CachablePresenterView
@@ -284,8 +255,7 @@ private:
     /** This method throws a DisposedException when the object has already been
         disposed.
     */
-    void ThrowIfDisposed (void)
-        throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void);
 };
 
 } } // end of namespace ::sd::presenter

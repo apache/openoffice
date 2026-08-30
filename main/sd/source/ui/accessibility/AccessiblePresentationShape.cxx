@@ -62,7 +62,6 @@ AccessiblePresentationShape::~AccessiblePresentationShape (void)
 
 ::rtl::OUString SAL_CALL
     AccessiblePresentationShape::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("AccessiblePresentationShape"));
 }
@@ -73,7 +72,6 @@ AccessiblePresentationShape::~AccessiblePresentationShape (void)
 ///	Set this object's name if is different to the current name.
 ::rtl::OUString
     AccessiblePresentationShape::CreateAccessibleBaseName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::rtl::OUString sName;
 
@@ -126,7 +124,6 @@ AccessiblePresentationShape::~AccessiblePresentationShape (void)
 
 ::rtl::OUString
     AccessiblePresentationShape::CreateAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     //    return createAccessibleName ();
     ::rtl::OUString sDescription;

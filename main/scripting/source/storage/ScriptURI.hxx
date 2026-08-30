@@ -48,8 +48,7 @@ struct Uri {
 class ScriptURI
 {
 public:
-    ScriptURI( const ::rtl::OUString& scriptURI )
-        throw ( css::lang::IllegalArgumentException );
+    ScriptURI( const ::rtl::OUString& scriptURI );
     virtual ~ScriptURI()  SAL_THROW ( () );
 
     /**

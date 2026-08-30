@@ -46,14 +46,11 @@ namespace connectivity
                 OConnectionController(ODriverDelegator* _pDriver) : m_pDriver(_pDriver){}
 
 		        // XEventListener
-		        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-			        throw( ::com::sun::star::uno::RuntimeException );
+		        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		        // XTerminateListener
-		        virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& aEvent )
-			        throw( ::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException );
-		        virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& aEvent )
-			        throw( ::com::sun::star::uno::RuntimeException );
+		        virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& aEvent );
+		        virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& aEvent );
         };
     }
 //........................................................................

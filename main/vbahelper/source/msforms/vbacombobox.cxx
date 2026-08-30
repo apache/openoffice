@@ -60,13 +60,13 @@ ScVbaComboBox::ScVbaComboBox( const uno::Reference< XHelperInterface >& xParent,
 // Value, [read] e.g. getValue returns the value of ooo Text property e.g. the value in
 // the drop down
 uno::Any SAL_CALL
-ScVbaComboBox::getValue() throw (uno::RuntimeException)
+ScVbaComboBox::getValue()
 {
 	return m_xProps->getPropertyValue( sSourceName );
 }
 
 void SAL_CALL
-ScVbaComboBox::setListIndex( const uno::Any& _value ) throw (uno::RuntimeException)
+ScVbaComboBox::setListIndex( const uno::Any& _value )
 {
 	sal_Int16 nIndex = 0;
 	if( _value >>= nIndex )
@@ -82,7 +82,7 @@ ScVbaComboBox::setListIndex( const uno::Any& _value ) throw (uno::RuntimeExcepti
 }
 
 uno::Any SAL_CALL
-ScVbaComboBox::getListIndex() throw (uno::RuntimeException)
+ScVbaComboBox::getListIndex()
 {
 	uno::Sequence< rtl::OUString > sItems;
 	m_xProps->getPropertyValue( ITEMS ) >>= sItems;
@@ -109,7 +109,7 @@ ScVbaComboBox::getListIndex() throw (uno::RuntimeException)
 // Value, [write]e.g. setValue sets the value in the drop down, and if the value is one
 // of the values in the list then the selection is also set
 void SAL_CALL
-ScVbaComboBox::setValue( const uno::Any& _value ) throw (uno::RuntimeException)
+ScVbaComboBox::setValue( const uno::Any& _value )
 {
 	// booleans are converted to uppercase strings
 	m_xProps->setPropertyValue( sSourceName, uno::Any( extractStringFromAny( _value, ::rtl::OUString(), true ) ) );
@@ -118,7 +118,7 @@ ScVbaComboBox::setValue( const uno::Any& _value ) throw (uno::RuntimeException)
 // see Value
 
 ::rtl::OUString SAL_CALL
-ScVbaComboBox::getText() throw (uno::RuntimeException)
+ScVbaComboBox::getText()
 {
 	rtl::OUString result;
 	getValue() >>= result;
@@ -126,109 +126,109 @@ ScVbaComboBox::getText() throw (uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaComboBox::setText( const ::rtl::OUString& _text ) throw (uno::RuntimeException)
+ScVbaComboBox::setText( const ::rtl::OUString& _text )
 {
 	setValue( uno::makeAny( _text ) ); // seems the same
 }
 
 // Methods
 void SAL_CALL
-ScVbaComboBox::AddItem( const uno::Any& pvargItem, const uno::Any& pvargIndex ) throw (uno::RuntimeException)
+ScVbaComboBox::AddItem( const uno::Any& pvargItem, const uno::Any& pvargIndex )
 {
 	mpListHelper->AddItem( pvargItem, pvargIndex );
 }
 
 void SAL_CALL
-ScVbaComboBox::removeItem( const uno::Any& index ) throw (uno::RuntimeException)
+ScVbaComboBox::removeItem( const uno::Any& index )
 {
 	mpListHelper->removeItem( index );
 }
 
 void SAL_CALL
-ScVbaComboBox::Clear(  ) throw (uno::RuntimeException)
+ScVbaComboBox::Clear(  )
 {
 	mpListHelper->Clear();
 }
 
 void SAL_CALL
-ScVbaComboBox::setRowSource( const rtl::OUString& _rowsource ) throw (css::uno::RuntimeException)
+ScVbaComboBox::setRowSource( const rtl::OUString& _rowsource )
 {
 	ScVbaControl::setRowSource( _rowsource );
 	mpListHelper->setRowSource( _rowsource );
 }
 
 sal_Int32 SAL_CALL
-ScVbaComboBox::getListCount() throw (uno::RuntimeException)
+ScVbaComboBox::getListCount()
 {
 	return mpListHelper->getListCount();
 }
 
 uno::Any SAL_CALL
-ScVbaComboBox::List( const ::uno::Any& pvargIndex, const uno::Any& pvarColumn ) throw (uno::RuntimeException)
+ScVbaComboBox::List( const ::uno::Any& pvargIndex, const uno::Any& pvarColumn )
 {
 	return mpListHelper->List( pvargIndex, pvarColumn );
 }
 
-sal_Int32 SAL_CALL ScVbaComboBox::getStyle() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaComboBox::getStyle()
 {
 	return msforms::fmStyle::fmStyleDropDownCombo;
 }
 
-void SAL_CALL ScVbaComboBox::setStyle( sal_Int32 /*nStyle*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaComboBox::setStyle( sal_Int32 /*nStyle*/ )
 {
 }
 
-sal_Int32 SAL_CALL ScVbaComboBox::getDropButtonStyle() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaComboBox::getDropButtonStyle()
 {
 	return msforms::fmDropButtonStyle::fmDropButtonStyleArrow;
 }
 
-void SAL_CALL ScVbaComboBox::setDropButtonStyle( sal_Int32 /*nDropButtonStyle*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaComboBox::setDropButtonStyle( sal_Int32 /*nDropButtonStyle*/ )
 {
 }
 
-sal_Int32 SAL_CALL ScVbaComboBox::getDragBehavior() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaComboBox::getDragBehavior()
 {
 	return msforms::fmDragBehavior::fmDragBehaviorDisabled;
 }
 
-void SAL_CALL ScVbaComboBox::setDragBehavior( sal_Int32 /*nDragBehavior*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaComboBox::setDragBehavior( sal_Int32 /*nDragBehavior*/ )
 {
 }
 
-sal_Int32 SAL_CALL ScVbaComboBox::getEnterFieldBehavior() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaComboBox::getEnterFieldBehavior()
 {
 	return msforms::fmEnterFieldBehavior::fmEnterFieldBehaviorSelectAll;
 }
 
-void SAL_CALL ScVbaComboBox::setEnterFieldBehavior( sal_Int32 /*nEnterFieldBehavior*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaComboBox::setEnterFieldBehavior( sal_Int32 /*nEnterFieldBehavior*/ )
 {
 }
 
-sal_Int32 SAL_CALL ScVbaComboBox::getListStyle() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaComboBox::getListStyle()
 {
 	return msforms::fmListStyle::fmListStylePlain;
 }
 
-void SAL_CALL ScVbaComboBox::setListStyle( sal_Int32 /*nListStyle*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaComboBox::setListStyle( sal_Int32 /*nListStyle*/ )
 {
 }
 
-sal_Int32 SAL_CALL ScVbaComboBox::getTextAlign() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaComboBox::getTextAlign()
 {
 	return msforms::fmTextAlign::fmTextAlignLeft;
 }
 
-void SAL_CALL ScVbaComboBox::setTextAlign( sal_Int32 /*nTextAlign*/ ) throw (uno::RuntimeException)
+void SAL_CALL ScVbaComboBox::setTextAlign( sal_Int32 /*nTextAlign*/ )
 {
 }
 
-sal_Int32 SAL_CALL ScVbaComboBox::getTextLength() throw (uno::RuntimeException)
+sal_Int32 SAL_CALL ScVbaComboBox::getTextLength()
 {
 	return getText().getLength();
 }
 
-uno::Reference< msforms::XNewFont > SAL_CALL ScVbaComboBox::getFont() throw (uno::RuntimeException)
+uno::Reference< msforms::XNewFont > SAL_CALL ScVbaComboBox::getFont()
 {
 	return new VbaNewFont( this, mxContext, m_xProps );
 }

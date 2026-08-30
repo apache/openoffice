@@ -99,7 +99,7 @@ BufferedInputStream::~BufferedInputStream()
 }
 
 
-Any SAL_CALL BufferedInputStream::queryInterface( const Type& rType ) throw( RuntimeException )
+Any SAL_CALL BufferedInputStream::queryInterface( const Type& rType )
 {
 	Any aRet = ::cppu::queryInterface( rType,
 									   SAL_STATIC_CAST( XInputStream*,this ),
@@ -123,10 +123,6 @@ void SAL_CALL BufferedInputStream::release( void ) throw()
 
 
 sal_Int32 SAL_CALL BufferedInputStream::readBytes( Sequence< sal_Int8 >& aData,sal_Int32 nBytesToRead )
-	throw( NotConnectedException,
-		   BufferSizeExceededException,
-		   IOException,
-		   RuntimeException)
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -149,10 +145,6 @@ sal_Int32 SAL_CALL BufferedInputStream::readBytes( Sequence< sal_Int8 >& aData,s
 
 sal_Int32 SAL_CALL BufferedInputStream::readSomeBytes(
 	Sequence< sal_Int8 >& aData,sal_Int32 nMaxBytesToRead )
-	throw( NotConnectedException,
-		   BufferSizeExceededException,
-		   IOException,
-		   RuntimeException)
 {
 	return readBytes(aData,nMaxBytesToRead);
 }
@@ -160,10 +152,6 @@ sal_Int32 SAL_CALL BufferedInputStream::readSomeBytes(
 
 
 void SAL_CALL BufferedInputStream::skipBytes( sal_Int32 nBytesToSkip )
-	throw( NotConnectedException,
-		   BufferSizeExceededException,
-		   IOException,
-		   RuntimeException )
 {
 	try
 	{
@@ -178,9 +166,6 @@ void SAL_CALL BufferedInputStream::skipBytes( sal_Int32 nBytesToSkip )
 
 
 sal_Int32 SAL_CALL BufferedInputStream::available( void )
-	throw( NotConnectedException,
-		   IOException,
-		   RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 	return  m_nBufferSize-m_nBufferLocation;
@@ -189,17 +174,11 @@ sal_Int32 SAL_CALL BufferedInputStream::available( void )
 
 
 void SAL_CALL BufferedInputStream::closeInput( void )
-	throw( NotConnectedException,
-		   IOException,
-		   RuntimeException )
 {
 }
 
 
 void SAL_CALL BufferedInputStream::seek( sal_Int64 location )
-	throw( IllegalArgumentException,
-		   IOException,
-		   RuntimeException )
 {
 	if( 0 <= location && location < m_nBufferSize )
 	{
@@ -213,8 +192,6 @@ void SAL_CALL BufferedInputStream::seek( sal_Int64 location )
 
 
 sal_Int64 SAL_CALL BufferedInputStream::getPosition( void )
-	throw( IOException,
-		   RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 	return m_nBufferLocation;
@@ -222,7 +199,7 @@ sal_Int64 SAL_CALL BufferedInputStream::getPosition( void )
 
 
 
-sal_Int64 SAL_CALL BufferedInputStream::getLength( void ) throw( IOException,RuntimeException )
+sal_Int64 SAL_CALL BufferedInputStream::getLength( void )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 	return m_nBufferSize;

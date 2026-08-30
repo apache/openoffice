@@ -102,7 +102,6 @@ public:
     }
 
     virtual void SAL_CALL disposing(css::lang::EventObject const &)
-        throw (css::uno::RuntimeException)
     {
         osl::MutexGuard g(m_mutex);
         ASSERT_TRUE(m_count < std::numeric_limits< int >::max());
@@ -111,7 +110,6 @@ public:
 
     virtual void SAL_CALL propertyChange(
         css::beans::PropertyChangeEvent const &)
-        throw (css::uno::RuntimeException)
     { FAIL() << "BoundListener::propertyChange called"; }
 
 private:
@@ -136,7 +134,6 @@ public:
     }
 
     virtual void SAL_CALL disposing(css::lang::EventObject const &)
-        throw (css::uno::RuntimeException)
     {
         osl::MutexGuard g(m_mutex);
         ASSERT_TRUE(m_count < std::numeric_limits< int >::max());
@@ -145,7 +142,6 @@ public:
 
     virtual void SAL_CALL vetoableChange(
         css::beans::PropertyChangeEvent const &)
-        throw (css::beans::PropertyVetoException, css::uno::RuntimeException)
     { FAIL() << "VetoListener::vetoableChange called"; }
 
 private:

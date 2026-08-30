@@ -40,13 +40,13 @@ namespace sax_fastparser
 //--------------------------------------
 // the extern interface
 //---------------------------------------
-Reference< XInterface > SAL_CALL FastSaxParser_CreateInstance( const Reference< XComponentContext >  & ) throw(Exception)
+Reference< XInterface > SAL_CALL FastSaxParser_CreateInstance( const Reference< XComponentContext >  & )
 {
 	FastSaxParser *p = new FastSaxParser;
 	return Reference< XInterface > ( (OWeakObject * ) p );
 }
 
-Reference< XInterface > SAL_CALL FastSaxSerializer_CreateInstance( const Reference< XComponentContext >  & ) throw(Exception)
+Reference< XInterface > SAL_CALL FastSaxSerializer_CreateInstance( const Reference< XComponentContext >  & )
 {
 	FastSaxSerializer *p = new FastSaxSerializer;
 	return Reference< XInterface > ( (OWeakObject * ) p );

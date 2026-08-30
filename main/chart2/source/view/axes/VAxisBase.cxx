@@ -158,7 +158,6 @@ sal_Bool VAxisBase::isAnythingToDraw()
 void VAxisBase::setExplicitScaleAndIncrement(
               const ExplicitScaleData& rScale
             , const ExplicitIncrementData& rIncrement )
-            throw (uno::RuntimeException)
 {
     m_bReCreateAllTickInfos = true;
     m_aScale = rScale;

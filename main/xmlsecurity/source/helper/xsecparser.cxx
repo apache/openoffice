@@ -62,7 +62,6 @@ rtl::OUString XSecParser::getIdAttr(const cssu::Reference< cssxs::XAttributeList
  * XDocumentHandler
  */
 void SAL_CALL XSecParser::startDocument(  )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	m_bInX509IssuerName = false;
 	m_bInX509SerialNumber = false;
@@ -79,7 +78,6 @@ void SAL_CALL XSecParser::startDocument(  )
 }
 
 void SAL_CALL XSecParser::endDocument(  )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -90,7 +88,6 @@ void SAL_CALL XSecParser::endDocument(  )
 void SAL_CALL XSecParser::startElement(
 	const rtl::OUString& aName,
 	const cssu::Reference< cssxs::XAttributeList >& xAttribs )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	try
 	{
@@ -214,7 +211,6 @@ void SAL_CALL XSecParser::startElement(
 }
 
 void SAL_CALL XSecParser::endElement( const rtl::OUString& aName )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	try
 	{
@@ -296,7 +292,6 @@ void SAL_CALL XSecParser::endElement( const rtl::OUString& aName )
 }
 
 void SAL_CALL XSecParser::characters( const rtl::OUString& aChars )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	if (m_bInX509IssuerName)
 	{
@@ -336,7 +331,6 @@ void SAL_CALL XSecParser::characters( const rtl::OUString& aChars )
 }
 
 void SAL_CALL XSecParser::ignorableWhitespace( const rtl::OUString& aWhitespaces )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -345,7 +339,6 @@ void SAL_CALL XSecParser::ignorableWhitespace( const rtl::OUString& aWhitespaces
 }
 
 void SAL_CALL XSecParser::processingInstruction( const rtl::OUString& aTarget, const rtl::OUString& aData )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -354,7 +347,6 @@ void SAL_CALL XSecParser::processingInstruction( const rtl::OUString& aTarget, c
 }
 
 void SAL_CALL XSecParser::setDocumentLocator( const cssu::Reference< cssxs::XLocator >& xLocator )
-	throw (cssxs::SAXException, cssu::RuntimeException)
 {
 	if (m_xNextHandler.is())
 	{
@@ -367,7 +359,6 @@ void SAL_CALL XSecParser::setDocumentLocator( const cssu::Reference< cssxs::XLoc
  */
 void SAL_CALL XSecParser::initialize(
 	const cssu::Sequence< cssu::Any >& aArguments )
-	throw(cssu::Exception, cssu::RuntimeException)
 {
 	aArguments[0] >>= m_xNextHandler;
 }

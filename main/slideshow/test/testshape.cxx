@@ -84,30 +84,30 @@ private:
 
 
     // XShape
-    virtual ::rtl::OUString SAL_CALL getShapeType(  ) throw (uno::RuntimeException)
+    virtual ::rtl::OUString SAL_CALL getShapeType(  )
     {
         ADD_FAILURE() << "TestShape::getShapeType: unexpected method call";
         return ::rtl::OUString();
     }
 
-    virtual awt::Point SAL_CALL getPosition(  ) throw (uno::RuntimeException)
+    virtual awt::Point SAL_CALL getPosition(  )
     {
         ADD_FAILURE() << "TestShape::getPosition: unexpected method call";
         return awt::Point();
     }
 
-    virtual void SAL_CALL setPosition( const awt::Point& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL setPosition( const awt::Point& )
     {
         FAIL() << "TestShape::setPosition: unexpected method call";
     }
 
-    virtual awt::Size SAL_CALL getSize(  ) throw (uno::RuntimeException)
+    virtual awt::Size SAL_CALL getSize(  )
     {
         ADD_FAILURE() << "TestShape::getSize: unexpected method call";
         return awt::Size();
     }
 
-    virtual void SAL_CALL setSize( const awt::Size& /*aSize*/ ) throw (beans::PropertyVetoException, uno::RuntimeException)
+    virtual void SAL_CALL setSize( const awt::Size& /*aSize*/ )
     {
         FAIL() << "TestShape::setSize: unexpected method call";
     }

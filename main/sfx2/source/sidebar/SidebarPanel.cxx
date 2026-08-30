@@ -72,7 +72,6 @@ SidebarPanel::~SidebarPanel (void)
 
 
 void SAL_CALL SidebarPanel::disposing (const css::lang::EventObject& rEventObject)
-    throw(cssu::RuntimeException)
 {
     (void)rEventObject;
 }
@@ -93,7 +92,6 @@ void SAL_CALL SidebarPanel::disposing (void)
 
 
 cssu::Reference<css::rendering::XCanvas> SAL_CALL SidebarPanel::getCanvas (void)
-    throw (cssu::RuntimeException)
 {
     if ( ! mxCanvas.is())
     {
@@ -122,7 +120,6 @@ cssu::Reference<css::rendering::XCanvas> SAL_CALL SidebarPanel::getCanvas (void)
 
 
 awt::Point SAL_CALL SidebarPanel::getPositionOnScreen (void)
-    throw (cssu::RuntimeException)
 {
     awt::Point aAwtPoint;
 
@@ -144,7 +141,6 @@ awt::Point SAL_CALL SidebarPanel::getPositionOnScreen (void)
 
 
 Reference<beans::XPropertySet> SAL_CALL SidebarPanel::getThemeProperties (void)
-    throw (RuntimeException)
 {
     return Theme::GetPropertySet();
 }

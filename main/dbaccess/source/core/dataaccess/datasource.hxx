@@ -184,29 +184,29 @@ public:
         );
 
     // XContainerListener
-	virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event );
+    virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event );
+    virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
 	// ::com::sun::star::sdbcx::XTablesSupplier
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL getTables(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL getTables(  );
 
 // com::sun::star::lang::XTypeProvider
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 // com::sun::star::uno::XInterface
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
     virtual void SAL_CALL acquire() throw( );
     virtual void SAL_CALL release() throw( );
 
 // ::com::sun::star::lang::XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 // ::com::sun::star::lang::XServiceInfo - static methods
-	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static(void) throw( ::com::sun::star::uno::RuntimeException );
-	static ::rtl::OUString getImplementationName_static(void) throw( ::com::sun::star::uno::RuntimeException );
+	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static(void);
+	static ::rtl::OUString getImplementationName_static(void);
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
 		SAL_CALL Create(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >&);
 
@@ -214,9 +214,9 @@ public:
 	virtual void SAL_CALL disposing(void);
 
 // com::sun::star::beans::XPropertySet
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 	// XEventListener
-	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 // comphelper::OPropertyArrayUsageHelper
 	virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
@@ -228,43 +228,41 @@ public:
 							::com::sun::star::uno::Any & rConvertedValue,
 							::com::sun::star::uno::Any & rOldValue,
 							sal_Int32 nHandle,
-							const ::com::sun::star::uno::Any& rValue )
-								throw (::com::sun::star::lang::IllegalArgumentException);
+							const ::com::sun::star::uno::Any& rValue );
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
 								sal_Int32 nHandle,
 								const ::com::sun::star::uno::Any& rValue
-												 )
-												 throw (::com::sun::star::uno::Exception);
+												 );
 	virtual void SAL_CALL getFastPropertyValue( ::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
 
 // ::com::sun::star::sdb::XCompletedConnection
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connectWithCompletion( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& handler ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connectWithCompletion( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& handler );
 
 // ::com::sun::star::sdbc::XDataSource
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection( const ::rtl::OUString& user, const ::rtl::OUString& password ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setLoginTimeout( sal_Int32 seconds ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getLoginTimeout(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection( const ::rtl::OUString& user, const ::rtl::OUString& password );
+	virtual void SAL_CALL setLoginTimeout( sal_Int32 seconds );
+    virtual sal_Int32 SAL_CALL getLoginTimeout(  );
 
 // :: com::sun::star::sdb::XBookmarksSupplier
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL getBookmarks(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL getBookmarks(  );
 
 // :: com::sun::star::sdb::XQueryDefinitionsSupplier
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL getQueryDefinitions(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > SAL_CALL getQueryDefinitions(  );
 
 // ::com::sun::star::sdbc::XIsolatedConnection
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getIsolatedConnection( const ::rtl::OUString& user, const ::rtl::OUString& password ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getIsolatedConnectionWithCompletion( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& handler ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getIsolatedConnection( const ::rtl::OUString& user, const ::rtl::OUString& password );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getIsolatedConnectionWithCompletion( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& handler );
 
 // XFlushable
-	virtual void SAL_CALL flush(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL flush(  );
+    virtual void SAL_CALL addFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l );
+    virtual void SAL_CALL removeFlushListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XFlushListener >& l );
 
     // XFlushListener
-    virtual void SAL_CALL flushed( const ::com::sun::star::lang::EventObject& rEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL flushed( const ::com::sun::star::lang::EventObject& rEvent );
 
     // XDocumentDataSource
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XOfficeDatabaseDocument > SAL_CALL getDatabaseDocument() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdb::XOfficeDatabaseDocument > SAL_CALL getDatabaseDocument();
 
 protected:
     // ModelDependentComponent overridables
@@ -283,8 +281,8 @@ private:
 		const rtl::OUString& user, const rtl::OUString& password
 		);
 
-	::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection( const ::rtl::OUString& user, const ::rtl::OUString& password , sal_Bool _bIsolated) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-	::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connectWithCompletion( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& handler , sal_Bool _bIsolated) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection( const ::rtl::OUString& user, const ::rtl::OUString& password , sal_Bool _bIsolated);
+	::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL connectWithCompletion( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& handler , sal_Bool _bIsolated);
 
 	void clearConnections();
 

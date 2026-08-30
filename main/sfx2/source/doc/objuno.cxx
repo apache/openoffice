@@ -228,9 +228,9 @@ class MixedPropertySetInfo : public ::cppu::WeakImplHelper1< ::com::sun::star::b
 
         virtual ~MixedPropertySetInfo();
 
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > SAL_CALL getProperties(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName( const ::rtl::OUString& aName ) throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL hasPropertyByName( const ::rtl::OUString& Name ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > SAL_CALL getProperties(  );
+        virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName( const ::rtl::OUString& aName );
+        virtual ::sal_Bool SAL_CALL hasPropertyByName( const ::rtl::OUString& Name );
 };
 
 //-----------------------------------------------------------------------------
@@ -253,7 +253,6 @@ MixedPropertySetInfo::~MixedPropertySetInfo()
 //-----------------------------------------------------------------------------
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > SAL_CALL MixedPropertySetInfo::getProperties()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     ::comphelper::SequenceAsVector< ::com::sun::star::beans::Property > lProps;
 
@@ -301,8 +300,6 @@ MixedPropertySetInfo::~MixedPropertySetInfo()
 
 ::com::sun::star::beans::Property SAL_CALL MixedPropertySetInfo::getPropertyByName(
     const ::rtl::OUString& sName )
-    throw(::com::sun::star::beans::UnknownPropertyException,
-          ::com::sun::star::uno::RuntimeException          )
 {
     ::com::sun::star::beans::Property aProp;
 
@@ -317,7 +314,6 @@ MixedPropertySetInfo::~MixedPropertySetInfo()
 //-----------------------------------------------------------------------------
 
 ::sal_Bool SAL_CALL MixedPropertySetInfo::hasPropertyByName(const ::rtl::OUString& sName)
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return _aPropertyMap.hasPropertyByName( sName ) ? // "fix" prop?
         sal_True :
@@ -428,7 +424,6 @@ SfxDocumentInfoObject::~SfxDocumentInfoObject()
 // ::com::sun::star::lang::XInitialization:
 void SAL_CALL
 SfxDocumentInfoObject::initialize(const uno::Sequence< uno::Any > & aArguments)
-    throw (uno::RuntimeException, uno::Exception)
 {
     if (aArguments.getLength() >= 1) {
         uno::Any any = aArguments[0];
@@ -448,7 +443,7 @@ SfxDocumentInfoObject::initialize(const uno::Sequence< uno::Any > & aArguments)
 
 // ::com::sun::star::util::XCloneable:
 uno::Reference<util::XCloneable> SAL_CALL
-SfxDocumentInfoObject::createClone() throw (uno::RuntimeException)
+SfxDocumentInfoObject::createClone()
 {
     SfxDocumentInfoObject *pNew = new SfxDocumentInfoObject;
     uno::Reference< util::XCloneable >
@@ -462,7 +457,6 @@ SfxDocumentInfoObject::createClone() throw (uno::RuntimeException)
 // ::com::sun::star::document::XDocumentProperties:
 uno::Reference< document::XDocumentProperties > SAL_CALL
 SfxDocumentInfoObject::getDocumentProperties()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return _pImp->m_xDocProps;
 }
@@ -481,7 +475,7 @@ const SfxDocumentInfoObject& SfxDocumentInfoObject::operator=( const SfxDocument
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL SfxDocumentInfoObject::dispose() throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SfxDocumentInfoObject::dispose()
 {
 	::com::sun::star::lang::EventObject aEvent( (::cppu::OWeakObject *)this );
 	_pImp->_aDisposeContainer.disposeAndClear( aEvent );
@@ -493,20 +487,20 @@ void SAL_CALL SfxDocumentInfoObject::dispose() throw( ::com::sun::star::uno::Run
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL  SfxDocumentInfoObject::addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener)
 {
 	_pImp->_aDisposeContainer.addInterface( aListener );
 }
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL  SfxDocumentInfoObject::removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener)
 {
 	_pImp->_aDisposeContainer.removeInterface( aListener );
 }
 //-----------------------------------------------------------------------------
 
-::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL  SfxDocumentInfoObject::getPropertySetInfo()  throw( ::com::sun::star::uno::RuntimeException )
+::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL  SfxDocumentInfoObject::getPropertySetInfo()
 {
     ::osl::MutexGuard aGuard( _pImp->_aMutex );
 
@@ -520,10 +514,7 @@ void SAL_CALL  SfxDocumentInfoObject::removeEventListener(const ::com::sun::star
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::setPropertyValue(const ::rtl::OUString& aPropertyName, const uno::Any& aValue) throw (
-        uno::RuntimeException, beans::UnknownPropertyException,
-        beans::PropertyVetoException, lang::IllegalArgumentException,
-        lang::WrappedTargetException)
+void SAL_CALL  SfxDocumentInfoObject::setPropertyValue(const ::rtl::OUString& aPropertyName, const uno::Any& aValue)
 {
     const SfxItemPropertySimpleEntry* pEntry = _pImp->m_aPropertyMap.getByName( aPropertyName );
     // fix prop!
@@ -540,9 +531,7 @@ void SAL_CALL  SfxDocumentInfoObject::setPropertyValue(const ::rtl::OUString& aP
 
 //-----------------------------------------------------------------------------
 
-uno::Any  SAL_CALL  SfxDocumentInfoObject::getPropertyValue(const ::rtl::OUString& aPropertyName)  throw(
-        uno::RuntimeException, beans::UnknownPropertyException,
-        lang::WrappedTargetException)
+uno::Any  SAL_CALL  SfxDocumentInfoObject::getPropertyValue(const ::rtl::OUString& aPropertyName)
 {
     const SfxItemPropertySimpleEntry* pEntry = _pImp->m_aPropertyMap.getByName( aPropertyName );
     // fix prop!
@@ -557,7 +546,7 @@ uno::Any  SAL_CALL  SfxDocumentInfoObject::getPropertyValue(const ::rtl::OUStrin
     }
 }
 
-sal_Bool SAL_CALL SfxDocumentInfoObject::isModified() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxDocumentInfoObject::isModified()
 {
     uno::Reference<util::XModifiable> xModif(
             _pImp->m_xDocProps, uno::UNO_QUERY_THROW);
@@ -565,21 +554,20 @@ sal_Bool SAL_CALL SfxDocumentInfoObject::isModified() throw(::com::sun::star::un
 }
 
 void SAL_CALL SfxDocumentInfoObject::setModified( sal_Bool bModified )
-        throw (::com::sun::star::beans::PropertyVetoException, ::com::sun::star::uno::RuntimeException)
 {
     uno::Reference<util::XModifiable> xModif(
             _pImp->m_xDocProps, uno::UNO_QUERY_THROW);
     return xModif->setModified(bModified);
 }
 
-void SAL_CALL SfxDocumentInfoObject::addModifyListener( const uno::Reference< util::XModifyListener >& xListener) throw( uno::RuntimeException )
+void SAL_CALL SfxDocumentInfoObject::addModifyListener( const uno::Reference< util::XModifyListener >& xListener)
 {
     uno::Reference<util::XModifiable> xModif(
             _pImp->m_xDocProps, uno::UNO_QUERY_THROW);
     return xModif->addModifyListener(xListener);
 }
 
-void SAL_CALL SfxDocumentInfoObject::removeModifyListener( const uno::Reference< util::XModifyListener >& xListener) throw( uno::RuntimeException )
+void SAL_CALL SfxDocumentInfoObject::removeModifyListener( const uno::Reference< util::XModifyListener >& xListener)
 {
     uno::Reference<util::XModifiable> xModif(
             _pImp->m_xDocProps, uno::UNO_QUERY_THROW);
@@ -588,33 +576,25 @@ void SAL_CALL SfxDocumentInfoObject::removeModifyListener( const uno::Reference<
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::addPropertyChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XPropertyChangeListener > & ) throw(
-        uno::RuntimeException, beans::UnknownPropertyException,
-        lang::WrappedTargetException)
+void SAL_CALL  SfxDocumentInfoObject::addPropertyChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XPropertyChangeListener > & )
 {}
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::removePropertyChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XPropertyChangeListener > & ) throw(
-        uno::RuntimeException, beans::UnknownPropertyException,
-        lang::WrappedTargetException)
+void SAL_CALL  SfxDocumentInfoObject::removePropertyChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XPropertyChangeListener > & )
 {}
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::addVetoableChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XVetoableChangeListener > & ) throw(
-        uno::RuntimeException, beans::UnknownPropertyException,
-        lang::WrappedTargetException)
+void SAL_CALL  SfxDocumentInfoObject::addVetoableChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XVetoableChangeListener > & )
 {}
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::removeVetoableChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XVetoableChangeListener > & ) throw(
-        uno::RuntimeException, beans::UnknownPropertyException,
-        lang::WrappedTargetException)
+void SAL_CALL  SfxDocumentInfoObject::removeVetoableChangeListener(const ::rtl::OUString&, const uno::Reference< beans::XVetoableChangeListener > & )
 {}
 
-uno::Sequence< beans::PropertyValue > SAL_CALL  SfxDocumentInfoObject::getPropertyValues( void ) throw( uno::RuntimeException )
+uno::Sequence< beans::PropertyValue > SAL_CALL  SfxDocumentInfoObject::getPropertyValues( void )
 {
 	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  xInfo = getPropertySetInfo();
 	::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > aProps = xInfo->getProperties();
@@ -639,7 +619,6 @@ uno::Sequence< beans::PropertyValue > SAL_CALL  SfxDocumentInfoObject::getProper
 }
 
 void SAL_CALL  SfxDocumentInfoObject::setPropertyValues( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aProps )
-        throw( ::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException )
 {
 	const ::com::sun::star::beans::PropertyValue* pProps  = aProps.getConstArray();
 	sal_uInt32 nCount = aProps.getLength();
@@ -654,10 +633,6 @@ void SAL_CALL  SfxDocumentInfoObject::setPropertyValues( const ::com::sun::star:
 void SAL_CALL SfxDocumentInfoObject::addProperty(const ::rtl::OUString&            sName        ,
                                                        sal_Int16                   nAttributes  ,
                                                  const ::com::sun::star::uno::Any& aDefaultValue)
-    throw(::com::sun::star::beans::PropertyExistException ,
-          ::com::sun::star::beans::IllegalTypeException   ,
-          ::com::sun::star::lang::IllegalArgumentException,
-          ::com::sun::star::uno::RuntimeException         )
 {
     // clash with "fix" properties ?
     sal_Bool bFixProp = _pImp->m_aPropertyMap.getByName( sName ) != 0;
@@ -681,9 +656,6 @@ void SAL_CALL SfxDocumentInfoObject::addProperty(const ::rtl::OUString&         
 }
 
 void SAL_CALL SfxDocumentInfoObject::removeProperty(const ::rtl::OUString& sName)
-    throw(::com::sun::star::beans::UnknownPropertyException,
-          ::com::sun::star::beans::NotRemoveableException  ,
-          ::com::sun::star::uno::RuntimeException          )
 {
     // clash with "fix" properties ?
     sal_Bool bFixProp = _pImp->m_aPropertyMap.getByName( sName ) != 0;
@@ -715,10 +687,7 @@ sal_Bool equalsDateTime( const util::DateTime& D1, const util::DateTime& D2 )
            D1.Year == D2.Year;
 }
 
-void SAL_CALL  SfxDocumentInfoObject::setFastPropertyValue(sal_Int32 nHandle, const ::com::sun::star::uno::Any& aValue) throw(
-        uno::RuntimeException, beans::UnknownPropertyException,
-        beans::PropertyVetoException, lang::IllegalArgumentException,
-        lang::WrappedTargetException)
+void SAL_CALL  SfxDocumentInfoObject::setFastPropertyValue(sal_Int32 nHandle, const ::com::sun::star::uno::Any& aValue)
 {
     // Attention: Only fix properties should be provided by this method.
     // Dynamic properties has no handle in real ... because it can't be used inside multithreaded environments :-)
@@ -932,9 +901,7 @@ void SAL_CALL  SfxDocumentInfoObject::setFastPropertyValue(sal_Int32 nHandle, co
 
 //-----------------------------------------------------------------------------
 
-::com::sun::star::uno::Any SAL_CALL  SfxDocumentInfoObject::getFastPropertyValue(sal_Int32 nHandle) throw(
-        uno::RuntimeException, beans::UnknownPropertyException,
-        lang::WrappedTargetException)
+::com::sun::star::uno::Any SAL_CALL  SfxDocumentInfoObject::getFastPropertyValue(sal_Int32 nHandle)
 {
     // Attention: Only fix properties should be provided by this method.
     // Dynamic properties has no handle in real ... because it can't be used inside multithreaded environments :-)
@@ -1030,7 +997,7 @@ void SAL_CALL  SfxDocumentInfoObject::setFastPropertyValue(sal_Int32 nHandle, co
 
 //-----------------------------------------------------------------------------
 
-sal_Int16 SAL_CALL  SfxDocumentInfoObject::getUserFieldCount() throw( ::com::sun::star::uno::RuntimeException )
+sal_Int16 SAL_CALL  SfxDocumentInfoObject::getUserFieldCount()
 {
 //    uno::Reference<beans::XPropertyAccess> xPropSet(
 //        _pImp->m_xDocProps->getUserDefinedProperties(), uno::UNO_QUERY_THROW);
@@ -1040,7 +1007,7 @@ sal_Int16 SAL_CALL  SfxDocumentInfoObject::getUserFieldCount() throw( ::com::sun
 
 //-----------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL  SfxDocumentInfoObject::getUserFieldName(sal_Int16 nIndex) throw( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL  SfxDocumentInfoObject::getUserFieldName(sal_Int16 nIndex)
 {
     ::osl::MutexGuard aGuard( _pImp->_aMutex );
     if (nIndex < FOUR)
@@ -1051,7 +1018,7 @@ sal_Int16 SAL_CALL  SfxDocumentInfoObject::getUserFieldCount() throw( ::com::sun
 
 //-----------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL  SfxDocumentInfoObject::getUserFieldValue(sal_Int16 nIndex) throw( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL  SfxDocumentInfoObject::getUserFieldValue(sal_Int16 nIndex)
 {
     ::osl::MutexGuard aGuard( _pImp->_aMutex );
     if (nIndex < FOUR) {
@@ -1073,7 +1040,7 @@ sal_Int16 SAL_CALL  SfxDocumentInfoObject::getUserFieldCount() throw( ::com::sun
 
 //-----------------------------------------------------------------------------
 
-void  SAL_CALL SfxDocumentInfoObject::setUserFieldName(sal_Int16 nIndex, const ::rtl::OUString& aName ) throw( ::com::sun::star::uno::RuntimeException )
+void  SAL_CALL SfxDocumentInfoObject::setUserFieldName(sal_Int16 nIndex, const ::rtl::OUString& aName )
 {
     ::osl::ClearableMutexGuard aGuard( _pImp->_aMutex );
     if (nIndex < FOUR) // yes, four!
@@ -1123,7 +1090,7 @@ void  SAL_CALL SfxDocumentInfoObject::setUserFieldName(sal_Int16 nIndex, const :
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxDocumentInfoObject::setUserFieldValue( sal_Int16 nIndex, const ::rtl::OUString& aValue ) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL  SfxDocumentInfoObject::setUserFieldValue( sal_Int16 nIndex, const ::rtl::OUString& aValue )
 {
     ::osl::ClearableMutexGuard aGuard( _pImp->_aMutex );
     if (nIndex < FOUR) // yes, four!
@@ -1213,35 +1180,35 @@ uno::Reference< embed::XStorage > GetStorage_Impl( const ::rtl::OUString& rName,
 
 //-----------------------------------------------------------------------------
 
-sal_Int16 SAL_CALL SfxStandaloneDocumentInfoObject::getUserFieldCount() throw( ::com::sun::star::uno::RuntimeException )
+sal_Int16 SAL_CALL SfxStandaloneDocumentInfoObject::getUserFieldCount()
 {
 	return SfxDocumentInfoObject::getUserFieldCount();
 }
 
 //-----------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL  SfxStandaloneDocumentInfoObject::getUserFieldName(sal_Int16 nIndex) throw( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL  SfxStandaloneDocumentInfoObject::getUserFieldName(sal_Int16 nIndex)
 {
 	return SfxDocumentInfoObject::getUserFieldName(nIndex);
 }
 
 //-----------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL  SfxStandaloneDocumentInfoObject::getUserFieldValue(sal_Int16 nIndex) throw( ::com::sun::star::uno::RuntimeException )
+::rtl::OUString SAL_CALL  SfxStandaloneDocumentInfoObject::getUserFieldValue(sal_Int16 nIndex)
 {
 	return SfxDocumentInfoObject::getUserFieldValue(nIndex);
 }
 
 //-----------------------------------------------------------------------------
 
-void  SAL_CALL SfxStandaloneDocumentInfoObject::setUserFieldName(sal_Int16 nIndex, const ::rtl::OUString& aName ) throw( ::com::sun::star::uno::RuntimeException )
+void  SAL_CALL SfxStandaloneDocumentInfoObject::setUserFieldName(sal_Int16 nIndex, const ::rtl::OUString& aName )
 {
 	SfxDocumentInfoObject::setUserFieldName( nIndex, aName );
 }
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxStandaloneDocumentInfoObject::setUserFieldValue( sal_Int16 nIndex, const ::rtl::OUString& aValue ) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL  SfxStandaloneDocumentInfoObject::setUserFieldValue( sal_Int16 nIndex, const ::rtl::OUString& aValue )
 {
 	SfxDocumentInfoObject::setUserFieldValue( nIndex, aValue );
 }
@@ -1249,7 +1216,6 @@ void SAL_CALL  SfxStandaloneDocumentInfoObject::setUserFieldValue( sal_Int16 nIn
 //-----------------------------------------------------------------------------
 
 void SAL_CALL  SfxStandaloneDocumentInfoObject::loadFromURL(const ::rtl::OUString& aURL)
-	throw( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException )
 {
 	sal_Bool bOK = sal_False;
 
@@ -1299,7 +1265,7 @@ void SAL_CALL  SfxStandaloneDocumentInfoObject::loadFromURL(const ::rtl::OUStrin
 
 //-----------------------------------------------------------------------------
 
-void SAL_CALL  SfxStandaloneDocumentInfoObject::storeIntoURL(const ::rtl::OUString& aURL) throw( ::com::sun::star::io::IOException )
+void SAL_CALL  SfxStandaloneDocumentInfoObject::storeIntoURL(const ::rtl::OUString& aURL)
 {
 	sal_Bool bOK = sal_False;
     uno::Reference< embed::XStorage > xStorage = GetStorage_Impl( aURL, sal_True, _xFactory );

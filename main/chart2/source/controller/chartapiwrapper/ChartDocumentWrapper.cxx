@@ -284,14 +284,11 @@ public:
     WrappedDataSourceLabelsInFirstRowProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedDataSourceLabelsInFirstRowProperty();
 
-    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
     ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
@@ -311,7 +308,6 @@ WrappedDataSourceLabelsInFirstRowProperty::~WrappedDataSourceLabelsInFirstRowPro
 }
 
 void WrappedDataSourceLabelsInFirstRowProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Bool bLabelsInFirstRow = sal_True;
     if( ! (rOuterValue >>= bLabelsInFirstRow) )
@@ -344,7 +340,6 @@ void WrappedDataSourceLabelsInFirstRowProperty::setPropertyValue( const Any& rOu
 }
 
 Any WrappedDataSourceLabelsInFirstRowProperty::getPropertyValue( const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     ::rtl::OUString aRangeString;
     bool bUseColumns = true;
@@ -368,7 +363,6 @@ Any WrappedDataSourceLabelsInFirstRowProperty::getPropertyValue( const Reference
 }
 
 Any WrappedDataSourceLabelsInFirstRowProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     aRet <<= sal_True;
@@ -386,14 +380,11 @@ public:
     WrappedDataSourceLabelsInFirstColumnProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedDataSourceLabelsInFirstColumnProperty();
 
-    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
     ::boost::shared_ptr< Chart2ModelContact >   m_spChart2ModelContact;
@@ -413,7 +404,6 @@ WrappedDataSourceLabelsInFirstColumnProperty::~WrappedDataSourceLabelsInFirstCol
 }
 
 void WrappedDataSourceLabelsInFirstColumnProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Bool bLabelsInFirstRow = sal_True;
     if( ! (rOuterValue >>= bLabelsInFirstRow) )
@@ -446,7 +436,6 @@ void WrappedDataSourceLabelsInFirstColumnProperty::setPropertyValue( const Any& 
 }
 
 Any WrappedDataSourceLabelsInFirstColumnProperty::getPropertyValue( const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     ::rtl::OUString aRangeString;
     bool bUseColumns = true;
@@ -470,7 +459,6 @@ Any WrappedDataSourceLabelsInFirstColumnProperty::getPropertyValue( const Refere
 }
 
 Any WrappedDataSourceLabelsInFirstColumnProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     aRet <<= sal_True;
@@ -488,14 +476,11 @@ public:
     WrappedHasLegendProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedHasLegendProperty();
 
-    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
     ::boost::shared_ptr< Chart2ModelContact > m_spChart2ModelContact;
@@ -512,7 +497,6 @@ WrappedHasLegendProperty::~WrappedHasLegendProperty()
 }
 
 void WrappedHasLegendProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Bool bNewValue = sal_True;
     if( ! (rOuterValue >>= bNewValue) )
@@ -538,7 +522,6 @@ void WrappedHasLegendProperty::setPropertyValue( const Any& rOuterValue, const R
 }
 
 Any WrappedHasLegendProperty::getPropertyValue( const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     try
@@ -558,7 +541,6 @@ Any WrappedHasLegendProperty::getPropertyValue( const Reference< beans::XPropert
 }
 
 Any WrappedHasLegendProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     aRet <<= sal_False;
@@ -576,14 +558,11 @@ public:
     WrappedHasMainTitleProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedHasMainTitleProperty();
 
-    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
     ::boost::shared_ptr< Chart2ModelContact > m_spChart2ModelContact;
@@ -600,7 +579,6 @@ WrappedHasMainTitleProperty::~WrappedHasMainTitleProperty()
 }
 
 void WrappedHasMainTitleProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Bool bNewValue = sal_True;
     if( ! (rOuterValue >>= bNewValue) )
@@ -620,7 +598,6 @@ void WrappedHasMainTitleProperty::setPropertyValue( const Any& rOuterValue, cons
 }
 
 Any WrappedHasMainTitleProperty::getPropertyValue( const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     try
@@ -635,7 +612,6 @@ Any WrappedHasMainTitleProperty::getPropertyValue( const Reference< beans::XProp
 }
 
 Any WrappedHasMainTitleProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     aRet <<= sal_False;
@@ -653,14 +629,11 @@ public:
     WrappedHasSubTitleProperty( ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedHasSubTitleProperty();
 
-    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyValue( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const;
 
-    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const
-                        throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any getPropertyDefault( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 
 private: //member
     ::boost::shared_ptr< Chart2ModelContact > m_spChart2ModelContact;
@@ -677,7 +650,6 @@ WrappedHasSubTitleProperty::~WrappedHasSubTitleProperty()
 }
 
 void WrappedHasSubTitleProperty::setPropertyValue( const Any& rOuterValue, const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Bool bNewValue = sal_True;
     if( ! (rOuterValue >>= bNewValue) )
@@ -698,7 +670,6 @@ void WrappedHasSubTitleProperty::setPropertyValue( const Any& rOuterValue, const
 }
 
 Any WrappedHasSubTitleProperty::getPropertyValue( const Reference< beans::XPropertySet >& /*xInnerPropertySet*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     try
@@ -713,7 +684,6 @@ Any WrappedHasSubTitleProperty::getPropertyValue( const Reference< beans::XPrope
 }
 
 Any WrappedHasSubTitleProperty::getPropertyDefault( const Reference< beans::XPropertyState >& /*xInnerPropertyState*/ ) const
-                        throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet;
     aRet <<= sal_False;
@@ -738,7 +708,6 @@ ChartDocumentWrapper::~ChartDocumentWrapper()
 
 // ____ XInterface (for new interfaces) ____
 uno::Any SAL_CALL ChartDocumentWrapper::queryInterface( const uno::Type& aType )
-    throw (uno::RuntimeException)
 {
     if( m_xDelegator.is())
         // calls queryAggregation if the delegator doesn't know aType
@@ -749,7 +718,6 @@ uno::Any SAL_CALL ChartDocumentWrapper::queryInterface( const uno::Type& aType )
 
 // ____ chart::XChartDocument (old API wrapper) ____
 Reference< drawing::XShape > SAL_CALL ChartDocumentWrapper::getTitle()
-    throw (uno::RuntimeException)
 {
     if( !m_xTitle.is()  )
     {
@@ -760,7 +728,6 @@ Reference< drawing::XShape > SAL_CALL ChartDocumentWrapper::getTitle()
 }
 
 Reference< drawing::XShape > SAL_CALL ChartDocumentWrapper::getSubTitle()
-    throw (uno::RuntimeException)
 {
     if( !m_xSubTitle.is() )
     {
@@ -771,7 +738,6 @@ Reference< drawing::XShape > SAL_CALL ChartDocumentWrapper::getSubTitle()
 }
 
 Reference< drawing::XShape > SAL_CALL ChartDocumentWrapper::getLegend()
-    throw (uno::RuntimeException)
 {
     if( ! m_xLegend.is())
     {
@@ -783,7 +749,6 @@ Reference< drawing::XShape > SAL_CALL ChartDocumentWrapper::getLegend()
 }
 
 Reference< beans::XPropertySet > SAL_CALL ChartDocumentWrapper::getArea()
-    throw (uno::RuntimeException)
 {
     if( ! m_xArea.is())
     {
@@ -795,7 +760,6 @@ Reference< beans::XPropertySet > SAL_CALL ChartDocumentWrapper::getArea()
 }
 
 Reference< XDiagram > SAL_CALL ChartDocumentWrapper::getDiagram()
-    throw (uno::RuntimeException)
 {
     if( !m_xDiagram.is()  )
     {
@@ -813,7 +777,6 @@ Reference< XDiagram > SAL_CALL ChartDocumentWrapper::getDiagram()
 }
 
 void SAL_CALL ChartDocumentWrapper::setDiagram( const Reference< XDiagram >& xDiagram )
-    throw (uno::RuntimeException)
 {
     uno::Reference< util::XRefreshable > xAddIn( xDiagram, uno::UNO_QUERY );
 	if( xAddIn.is() )
@@ -846,7 +809,6 @@ void SAL_CALL ChartDocumentWrapper::setDiagram( const Reference< XDiagram >& xDi
 }
 
 Reference< XChartData > SAL_CALL ChartDocumentWrapper::getData()
-    throw (uno::RuntimeException)
 {
     if( !m_xChartData.is() )
     {
@@ -858,7 +820,6 @@ Reference< XChartData > SAL_CALL ChartDocumentWrapper::getData()
 }
 
 void SAL_CALL ChartDocumentWrapper::attachData( const Reference< XChartData >& xNewData )
-    throw (uno::RuntimeException)
 {
     if( !xNewData.is() )
         return;
@@ -873,7 +834,6 @@ void SAL_CALL ChartDocumentWrapper::attachData( const Reference< XChartData >& x
 sal_Bool SAL_CALL ChartDocumentWrapper::attachResource(
     const ::rtl::OUString& URL,
     const Sequence< beans::PropertyValue >& Arguments )
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -882,7 +842,6 @@ sal_Bool SAL_CALL ChartDocumentWrapper::attachResource(
 }
 
 ::rtl::OUString SAL_CALL ChartDocumentWrapper::getURL()
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -891,7 +850,6 @@ sal_Bool SAL_CALL ChartDocumentWrapper::attachResource(
 }
 
 Sequence< beans::PropertyValue > SAL_CALL ChartDocumentWrapper::getArgs()
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -900,7 +858,6 @@ Sequence< beans::PropertyValue > SAL_CALL ChartDocumentWrapper::getArgs()
 }
 
 void SAL_CALL ChartDocumentWrapper::connectController( const Reference< frame::XController >& Controller )
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -909,7 +866,6 @@ void SAL_CALL ChartDocumentWrapper::connectController( const Reference< frame::X
 
 void SAL_CALL ChartDocumentWrapper::disconnectController(
     const Reference< frame::XController >& Controller )
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -917,7 +873,6 @@ void SAL_CALL ChartDocumentWrapper::disconnectController(
 }
 
 void SAL_CALL ChartDocumentWrapper::lockControllers()
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -925,7 +880,6 @@ void SAL_CALL ChartDocumentWrapper::lockControllers()
 }
 
 void SAL_CALL ChartDocumentWrapper::unlockControllers()
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -933,7 +887,6 @@ void SAL_CALL ChartDocumentWrapper::unlockControllers()
 }
 
 sal_Bool SAL_CALL ChartDocumentWrapper::hasControllersLocked()
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -942,7 +895,6 @@ sal_Bool SAL_CALL ChartDocumentWrapper::hasControllersLocked()
 }
 
 Reference< frame::XController > SAL_CALL ChartDocumentWrapper::getCurrentController()
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -952,8 +904,6 @@ Reference< frame::XController > SAL_CALL ChartDocumentWrapper::getCurrentControl
 
 void SAL_CALL ChartDocumentWrapper::setCurrentController(
     const Reference< frame::XController >& Controller )
-    throw (container::NoSuchElementException,
-           uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -961,7 +911,6 @@ void SAL_CALL ChartDocumentWrapper::setCurrentController(
 }
 
 Reference< uno::XInterface > SAL_CALL ChartDocumentWrapper::getCurrentSelection()
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -972,7 +921,6 @@ Reference< uno::XInterface > SAL_CALL ChartDocumentWrapper::getCurrentSelection(
 
 // ____ XComponent ____
 void SAL_CALL ChartDocumentWrapper::dispose()
-    throw (uno::RuntimeException)
 {
     if( m_bIsDisposed )
 		throw lang::DisposedException(
@@ -1146,7 +1094,6 @@ Reference< drawing::XShapes > ChartDocumentWrapper::getAdditionalShapes() const
 }
 
 void SAL_CALL ChartDocumentWrapper::addEventListener( const Reference< lang::XEventListener >& xListener )
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -1154,7 +1101,6 @@ void SAL_CALL ChartDocumentWrapper::addEventListener( const Reference< lang::XEv
 }
 
 void SAL_CALL ChartDocumentWrapper::removeEventListener( const Reference< lang::XEventListener >& aListener )
-    throw (uno::RuntimeException)
 {
     Reference< frame::XModel > xModel( m_spChart2ModelContact->getChartModel() );
     if( xModel.is() )
@@ -1163,13 +1109,11 @@ void SAL_CALL ChartDocumentWrapper::removeEventListener( const Reference< lang::
 
 // ____ XDrawPageSupplier ____
 uno::Reference< drawing::XDrawPage > SAL_CALL ChartDocumentWrapper::getDrawPage()
-    throw (uno::RuntimeException)
 {
     return this->impl_getDrawPage();
 }
 
 uno::Reference< drawing::XDrawPage > ChartDocumentWrapper::impl_getDrawPage() const
-    throw (uno::RuntimeException)
 {
     return m_spChart2ModelContact->getDrawPage();
 }
@@ -1177,8 +1121,6 @@ uno::Reference< drawing::XDrawPage > ChartDocumentWrapper::impl_getDrawPage() co
 // ____ XMultiServiceFactory ____
 uno::Reference< uno::XInterface > SAL_CALL ChartDocumentWrapper::createInstance(
     const ::rtl::OUString& aServiceSpecifier )
-    throw (uno::Exception,
-           uno::RuntimeException)
 {
     uno::Reference< uno::XInterface > xResult;
 
@@ -1459,8 +1401,6 @@ uno::Reference< uno::XInterface > SAL_CALL ChartDocumentWrapper::createInstance(
 uno::Reference< uno::XInterface > SAL_CALL ChartDocumentWrapper::createInstanceWithArguments(
     const ::rtl::OUString& ServiceSpecifier,
     const uno::Sequence< uno::Any >& Arguments )
-    throw (uno::Exception,
-           uno::RuntimeException)
 {
     OSL_ENSURE( Arguments.getLength(), "createInstanceWithArguments: Warning: Arguments are ignored" );
     (void)(Arguments);
@@ -1469,7 +1409,6 @@ uno::Reference< uno::XInterface > SAL_CALL ChartDocumentWrapper::createInstanceW
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL ChartDocumentWrapper::getAvailableServiceNames()
-    throw (uno::RuntimeException)
 {
     tServiceNameMap & rMap = lcl_getStaticServiceNameMap();
     uno::Sequence< ::rtl::OUString > aResult( rMap.size());
@@ -1498,7 +1437,6 @@ uno::Sequence< ::rtl::OUString > SAL_CALL ChartDocumentWrapper::getAvailableServ
 // ____ XAggregation ____
 void SAL_CALL ChartDocumentWrapper::setDelegator(
     const uno::Reference< uno::XInterface >& rDelegator )
-    throw (uno::RuntimeException)
 {
     if( m_bIsDisposed )
     {
@@ -1530,7 +1468,6 @@ void SAL_CALL ChartDocumentWrapper::setDelegator(
 }
 
 uno::Any SAL_CALL ChartDocumentWrapper::queryAggregation( const uno::Type& rType )
-    throw (uno::RuntimeException)
 {
     return ChartDocumentWrapper_Base::queryInterface( rType );
 }

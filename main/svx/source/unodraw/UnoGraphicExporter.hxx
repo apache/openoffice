@@ -28,7 +28,7 @@
 
 namespace svx
 {
-	SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL GraphicExporter_createInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr) throw( ::com::sun::star::uno::Exception );
+	SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL GraphicExporter_createInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 	SVX_DLLPUBLIC ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL GraphicExporter_getSupportedServiceNames() throw();
 	SVX_DLLPUBLIC ::rtl::OUString SAL_CALL GraphicExporter_getImplementationName() throw();
 }

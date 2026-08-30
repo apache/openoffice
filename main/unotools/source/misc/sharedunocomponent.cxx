@@ -96,11 +96,11 @@ namespace utl
         virtual ~CloseableComponentImpl();
 
         // XCloseListener overridables
-        virtual void SAL_CALL queryClosing( const EventObject& Source, ::sal_Bool GetsOwnership ) throw (CloseVetoException, RuntimeException);
-        virtual void SAL_CALL notifyClosing( const EventObject& Source ) throw (RuntimeException);
+        virtual void SAL_CALL queryClosing( const EventObject& Source, ::sal_Bool GetsOwnership );
+        virtual void SAL_CALL notifyClosing( const EventObject& Source );
 
         // XEventListener overridables
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     private:
         /** starts or stops being a CloseListener at the component
@@ -183,7 +183,7 @@ namespace utl
     #ifdef DBG_UTIL
     Source
     #endif
-    , ::sal_Bool /*GetsOwnership*/ ) throw (CloseVetoException, RuntimeException)
+    , ::sal_Bool /*GetsOwnership*/ )
     {
         // as long as we live, somebody wants to keep the object alive. So, veto the
         // closing
@@ -196,7 +196,7 @@ namespace utl
     #ifdef DBG_UTIL
     Source
     #endif
-    ) throw (RuntimeException)
+    )
     {
         DBG_ASSERT( Source.Source == m_xCloseable, "CloseableComponentImpl::notifyClosing: where did this come from?" );
 
@@ -211,7 +211,7 @@ namespace utl
     #ifdef DBG_UTIL
     Source
     #endif
-    ) throw (RuntimeException)
+    )
     {
         DBG_ASSERT( Source.Source == m_xCloseable, "CloseableComponentImpl::disposing: where did this come from?" );
         DBG_ERROR( "CloseableComponentImpl::disposing: unreachable!" );

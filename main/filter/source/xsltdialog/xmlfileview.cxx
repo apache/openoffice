@@ -83,9 +83,9 @@ public:
 	XMLErrorHandler( XMLSourceFileDialog* pParent, ListBox& rListBox );
 
     // Methods
-    virtual void SAL_CALL error( const Any& aSAXParseException ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL fatalError( const Any& aSAXParseException ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL warning( const Any& aSAXParseException ) throw (SAXException, RuntimeException);
+    virtual void SAL_CALL error( const Any& aSAXParseException );
+    virtual void SAL_CALL fatalError( const Any& aSAXParseException );
+    virtual void SAL_CALL warning( const Any& aSAXParseException );
 
 private:
 	XMLSourceFileDialog*	mpParent;
@@ -99,7 +99,7 @@ XMLErrorHandler::XMLErrorHandler( XMLSourceFileDialog* pParent, ListBox& rListBo
 }
 
 // XMLErrorHandler
-void SAL_CALL XMLErrorHandler::error( const Any& aSAXParseException ) throw (SAXException, RuntimeException)
+void SAL_CALL XMLErrorHandler::error( const Any& aSAXParseException )
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -114,7 +114,7 @@ void SAL_CALL XMLErrorHandler::error( const Any& aSAXParseException ) throw (SAX
 	}
 }
 
-void SAL_CALL XMLErrorHandler::fatalError( const Any& aSAXParseException ) throw (SAXException, RuntimeException)
+void SAL_CALL XMLErrorHandler::fatalError( const Any& aSAXParseException )
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -129,7 +129,7 @@ void SAL_CALL XMLErrorHandler::fatalError( const Any& aSAXParseException ) throw
 	}
 }
 
-void SAL_CALL XMLErrorHandler::warning( const Any& /* aSAXParseException */ ) throw (SAXException, RuntimeException)
+void SAL_CALL XMLErrorHandler::warning( const Any& /* aSAXParseException */ )
 {
 /*
 	SAXParseException e;

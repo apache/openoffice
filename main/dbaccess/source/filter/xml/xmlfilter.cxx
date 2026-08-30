@@ -247,7 +247,7 @@ namespace dbaxml
         public:
             DatasourceURLListener(uno::Reference< lang::XMultiServiceFactory > const & _xFactory) : m_xFactory(_xFactory),m_aTypeCollection(_xFactory){}
             // XPropertyChangeListener
-	        virtual void SAL_CALL propertyChange( const beans::PropertyChangeEvent& _rEvent ) throw (uno::RuntimeException)
+	        virtual void SAL_CALL propertyChange( const beans::PropertyChangeEvent& _rEvent )
             {
                 ::rtl::OUString sURL;
                 _rEvent.NewValue >>= sURL;
@@ -269,7 +269,7 @@ namespace dbaxml
                 }
             }
 	        // XEventListener
-            virtual void SAL_CALL disposing( const lang::EventObject& /*_rSource*/ ) throw (uno::RuntimeException)
+            virtual void SAL_CALL disposing( const lang::EventObject& /*_rSource*/ )
             {
             }
         };
@@ -462,7 +462,6 @@ ODBFilter::~ODBFilter() throw()
 IMPLEMENT_SERVICE_INFO1_STATIC( ODBFilter, "com.sun.star.comp.sdb.DBFilter", "com.sun.star.document.ImportFilter")
 // -----------------------------------------------------------------------------
 sal_Bool SAL_CALL ODBFilter::filter( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
     uno::Reference< ::com::sun::star::awt::XWindow > xWindow;
     {
@@ -490,7 +489,6 @@ sal_Bool SAL_CALL ODBFilter::filter( const Sequence< PropertyValue >& rDescripto
 }
 // -----------------------------------------------------------------------------
 sal_Bool ODBFilter::implImport( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
     ::rtl::OUString sFileName;
     ::comphelper::NamedValueCollection aMediaDescriptor( rDescriptor );

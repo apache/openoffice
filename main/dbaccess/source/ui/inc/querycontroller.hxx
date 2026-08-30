@@ -179,26 +179,26 @@ namespace dbaui
         DECLARE_XINTERFACE( )
         DECLARE_XTYPEPROVIDER( )
 		// XPropertySet
-		virtual com::sun::star::uno::Reference<com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo() throw(com::sun::star::uno::RuntimeException);
+		virtual com::sun::star::uno::Reference<com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo();
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 
 		// XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		// ::com::sun::star::lang::XComponent
 		virtual void		SAL_CALL disposing();
 
-		virtual ::rtl::OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName();
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames();
 		// need by registration
-		static ::rtl::OUString getImplementationName_Static() throw( ::com::sun::star::uno::RuntimeException );
-		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+		static ::rtl::OUString getImplementationName_Static();
+		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
 		static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
 				SAL_CALL Create(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >&);
 
         // XController
-		virtual ::com::sun::star::uno::Any SAL_CALL getViewData(void) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL restoreViewData(const ::com::sun::star::uno::Any& Data) throw( ::com::sun::star::uno::RuntimeException );
+		virtual ::com::sun::star::uno::Any SAL_CALL getViewData(void);
+		virtual void SAL_CALL restoreViewData(const ::com::sun::star::uno::Any& Data);
 
 	private:
         virtual void    onLoadedMenu(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManager >& _xLayoutManager);
@@ -211,11 +211,11 @@ namespace dbaui
                                     ::com::sun::star::uno::Any& rOldValue,
 		                            sal_Int32 nHandle,
                                     const ::com::sun::star::uno::Any& rValue
-                                ) throw (::com::sun::star::lang::IllegalArgumentException);
+                                );
         virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
 		                            sal_Int32 nHandle,
 		                            const ::com::sun::star::uno::Any& rValue
-                                ) throw (::com::sun::star::uno::Exception );
+                                );
 	    virtual void SAL_CALL getFastPropertyValue(
 		                            ::com::sun::star::uno::Any& rValue,
 		                            sal_Int32 nHandle

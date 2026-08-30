@@ -60,47 +60,41 @@ protected:
     DECLARE_XTYPEPROVIDER()
 
     // XComponent
-    void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL dispose();
 
-    virtual void SAL_CALL draw( sal_Int32 nX, sal_Int32 nY ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL draw( sal_Int32 nX, sal_Int32 nY );
 
     // XSimpleTabController
-    virtual ::sal_Int32 SAL_CALL insertTab() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeTab( ::sal_Int32 ID ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL insertTab();
+    virtual void SAL_CALL removeTab( ::sal_Int32 ID );
 
-    virtual void SAL_CALL setTabProps( ::sal_Int32 ID, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Properties ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue > SAL_CALL getTabProps( ::sal_Int32 ID ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setTabProps( ::sal_Int32 ID, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Properties );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue > SAL_CALL getTabProps( ::sal_Int32 ID );
 
-    virtual void SAL_CALL activateTab( ::sal_Int32 ID ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getActiveTabID() throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL activateTab( ::sal_Int32 ID );
+    virtual ::sal_Int32 SAL_CALL getActiveTabID();
 
-    virtual void SAL_CALL addTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener );
+    virtual void SAL_CALL removeTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener );
 
     // ::com::sun::star::awt::XLayoutContainer
     virtual void SAL_CALL addChild(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XLayoutConstrains >& Child )
-        throw (::com::sun::star::uno::RuntimeException, ::com::sun::star::awt::MaxChildrenException);
-    virtual void SAL_CALL removeChild( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XLayoutConstrains >& Child )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XLayoutConstrains >& Child );
+    virtual void SAL_CALL removeChild( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XLayoutConstrains >& Child );
 
-    virtual void SAL_CALL allocateArea( const ::com::sun::star::awt::Rectangle &rArea )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL allocateArea( const ::com::sun::star::awt::Rectangle &rArea );
 
-    virtual ::com::sun::star::awt::Size SAL_CALL getMinimumSize()
-        throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Size SAL_CALL getMinimumSize();
 
     // unimplemented:
     virtual sal_Bool SAL_CALL hasHeightForWidth()
-        throw(css::uno::RuntimeException)
     { return false; }
     virtual sal_Int32 SAL_CALL getHeightForWidth( sal_Int32 /*nWidth*/ )
-    throw(css::uno::RuntimeException)
     { return maRequisition.Height; }
 
     // VclWindowPeer
-    virtual void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value );
+    virtual ::com::sun::star::uno::Any SAL_CALL getProperty( const ::rtl::OUString& PropertyName );
 
     // VCLXWindow
     void ProcessWindowEvent( const VclWindowEvent& _rVclWindowEvent );
@@ -128,7 +122,7 @@ protected:
     std::list< ::com::sun::star::uno::Reference
                < ::com::sun::star::awt::XTabListener > > mxTabListeners;
 
-    inline TabControl *getTabControl() const throw (::com::sun::star::uno::RuntimeException);
+    inline TabControl *getTabControl() const;
 
 private:
     VCLXTabControl( const VCLXTabControl& );            // never implemented

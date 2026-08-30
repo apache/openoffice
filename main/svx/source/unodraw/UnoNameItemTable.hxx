@@ -66,22 +66,22 @@ public:
 	virtual void Notify( SfxBroadcaster& rBC, const SfxHint& rHint ) throw ();
 
     // XServiceInfo
-    virtual sal_Bool SAL_CALL supportsService( const  rtl::OUString& ServiceName ) throw( com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL supportsService( const  rtl::OUString& ServiceName );
 
 	// XNameContainer
-	virtual void SAL_CALL insertByName( const  rtl::OUString& aName, const  com::sun::star::uno::Any& aElement ) throw( com::sun::star::lang::IllegalArgumentException, com::sun::star::container::ElementExistException, com::sun::star::lang::WrappedTargetException, com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeByName( const  rtl::OUString& Name ) throw( com::sun::star::container::NoSuchElementException, com::sun::star::lang::WrappedTargetException, com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL insertByName( const  rtl::OUString& aName, const  com::sun::star::uno::Any& aElement );
+	virtual void SAL_CALL removeByName( const  rtl::OUString& Name );
 
 	// XNameReplace
-    virtual void SAL_CALL replaceByName( const  rtl::OUString& aName, const  com::sun::star::uno::Any& aElement ) throw( com::sun::star::lang::IllegalArgumentException, com::sun::star::container::NoSuchElementException, com::sun::star::lang::WrappedTargetException, com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL replaceByName( const  rtl::OUString& aName, const  com::sun::star::uno::Any& aElement );
 
 	// XNameAccess
-    virtual com::sun::star::uno::Any SAL_CALL getByName( const  rtl::OUString& aName ) throw( com::sun::star::container::NoSuchElementException, com::sun::star::lang::WrappedTargetException, com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence<  rtl::OUString > SAL_CALL getElementNames(  ) throw( com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const  rtl::OUString& aName ) throw( com::sun::star::uno::RuntimeException);
+    virtual com::sun::star::uno::Any SAL_CALL getByName( const  rtl::OUString& aName );
+    virtual com::sun::star::uno::Sequence<  rtl::OUString > SAL_CALL getElementNames(  );
+    virtual sal_Bool SAL_CALL hasByName( const  rtl::OUString& aName );
 
 	// XElementAccess
-    virtual sal_Bool SAL_CALL hasElements(  ) throw( com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL hasElements(  );
 };
 
 #endif // _SVX_UNONAMEITEMTABLE_HXX_

@@ -92,9 +92,9 @@ namespace cairocanvas
         DECLARE_UNO3_XCOMPONENT_AGG_DEFAULTS( CanvasBitmap, CanvasBitmapBase_Base, ::cppu::WeakComponentImplHelperBase );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // SurfaceProvider
 		virtual SurfaceSharedPtr getSurface();
@@ -118,8 +118,8 @@ namespace cairocanvas
         //     1st a bool value: true - free the pixmap after used by XFreePixmap, false do nothing, the pixmap is used internally in the canvas
         //     2nd the pixmap handle
         //     3rd the pixmap depth
-        virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue(sal_Int32 nHandle)  throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setFastPropertyValue(sal_Int32, const ::com::sun::star::uno::Any&)  throw (::com::sun::star::uno::RuntimeException) {}
+        virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue(sal_Int32 nHandle);
+        virtual void SAL_CALL setFastPropertyValue(sal_Int32, const ::com::sun::star::uno::Any&) {}
 
     private:
         SurfaceProviderRef        mpSurfaceProvider;

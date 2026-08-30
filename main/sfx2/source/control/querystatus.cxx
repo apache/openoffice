@@ -62,10 +62,10 @@ class SfxQueryStatus_Impl : public ::com::sun::star::frame::XStatusListener	,
         SfxItemState QueryState( SfxPoolItem*& pPoolItem );
 
         // XEventListener
-	    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( ::com::sun::star::uno::RuntimeException );
+	    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
         // XStatusListener
-	    virtual void SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event) throw( ::com::sun::star::uno::RuntimeException );
+	    virtual void SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event);
 
     private:
         SfxQueryStatus_Impl( const SfxQueryStatus& );
@@ -105,14 +105,12 @@ SfxQueryStatus_Impl::~SfxQueryStatus_Impl()
 }
 
 void SAL_CALL SfxQueryStatus_Impl::disposing( const EventObject& )
-throw( RuntimeException )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     m_xDispatch.clear();
 }
 
 void SAL_CALL SfxQueryStatus_Impl::statusChanged( const FeatureStateEvent& rEvent)
-throw( RuntimeException )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

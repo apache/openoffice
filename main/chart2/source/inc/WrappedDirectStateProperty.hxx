@@ -38,9 +38,7 @@ public:
 	virtual ~WrappedDirectStateProperty();
 
     virtual ::com::sun::star::beans::PropertyState getPropertyState(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const
-        throw (::com::sun::star::beans::UnknownPropertyException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyState >& xInnerPropertyState ) const;
 };
 
 } //  namespace chart

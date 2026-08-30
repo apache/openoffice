@@ -54,41 +54,31 @@ public:
     virtual ~AccessibleChartShape();
 
     // ________ XServiceInfo ________
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
     // ________ XAccessibleContext ________
-    virtual sal_Int32 SAL_CALL getAccessibleChildCount()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getAccessibleChildCount();
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL
-        getAccessibleChild( sal_Int32 i )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getAccessibleRole()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getAccessibleDescription()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getAccessibleName()
-        throw (::com::sun::star::uno::RuntimeException);
+        getAccessibleChild( sal_Int32 i );
+    virtual sal_Int16 SAL_CALL getAccessibleRole();
+    virtual ::rtl::OUString SAL_CALL getAccessibleDescription();
+    virtual ::rtl::OUString SAL_CALL getAccessibleName();
 
     // ________ XAccessibleComponent ________
-    virtual sal_Bool SAL_CALL containsPoint( const ::com::sun::star::awt::Point& aPoint ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleAtPoint( const ::com::sun::star::awt::Point& aPoint ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocation() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL grabFocus() throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getForeground() throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getBackground() throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL containsPoint( const ::com::sun::star::awt::Point& aPoint );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleAtPoint( const ::com::sun::star::awt::Point& aPoint );
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds();
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocation();
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen();
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize();
+    virtual void SAL_CALL grabFocus();
+    virtual sal_Int32 SAL_CALL getForeground();
+    virtual sal_Int32 SAL_CALL getBackground();
 
     // ________ XAccessibleExtendedComponent ________
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL getFont()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getTitledBorderText()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getToolTipText()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL getFont();
+    virtual ::rtl::OUString SAL_CALL getTitledBorderText();
+    virtual ::rtl::OUString SAL_CALL getToolTipText();
 
 private:
     ::accessibility::AccessibleShape* m_pAccShape;

@@ -75,14 +75,14 @@ public:
     // ------------------------------------------------------------------------
 
     // attributes
-    virtual sal_Int32 SAL_CALL getCount() throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getCount();
     // XEnumerationAccess
-    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration();
     // XElementAccess
-    virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements() throw (css::uno::RuntimeException);
+    virtual css::uno::Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
     // XDefaultMethod
-    virtual ::rtl::OUString SAL_CALL getDefaultMethodName() throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getDefaultMethodName();
 
     // ------------------------------------------------------------------------
 
@@ -106,7 +106,7 @@ public:
      */
     void initContainer(
         const css::uno::Reference< css::container::XElementAccess >& rxElementAccess,
-        ContainerType eContainerType ) throw (css::uno::RuntimeException);
+        ContainerType eContainerType );
 
     /** Initializes this collection with copies of all elements in the passed
         temporary STL vector.
@@ -118,7 +118,7 @@ public:
      */
     void initElements(
         const ::std::vector< css::uno::Reference< css::container::XNamed > >& rElements,
-        ContainerType eContainerType ) throw (css::uno::RuntimeException);
+        ContainerType eContainerType );
 
     /** Initializes this collection with copies of all elements in the passed
         temporary STL vector.
@@ -130,7 +130,7 @@ public:
      */
     void initElements(
         const ::std::vector< css::beans::NamedValue >& rElements,
-        ContainerType eContainerType ) throw (css::uno::RuntimeException);
+        ContainerType eContainerType );
 
     /** Returns a VBA implementation object from the passed element.
 
@@ -147,21 +147,21 @@ public:
      */
     css::uno::Any createCollectionItem(
         const css::uno::Any& rElement,
-        const css::uno::Any& rIndex ) throw (css::uno::RuntimeException);
+        const css::uno::Any& rIndex );
 
     /** Returns a collection item specified by its one-based item index.
 
         @param nIndex
             The one-based index of the collection item.
     */
-    css::uno::Any getItemByIndex( sal_Int32 nIndex ) throw (css::uno::RuntimeException);
+    css::uno::Any getItemByIndex( sal_Int32 nIndex );
 
     /** Returns a collection item specified by its name.
 
         @param rName
             The name of the collection item.
     */
-    css::uno::Any getItemByName( const ::rtl::OUString& rName ) throw (css::uno::RuntimeException);
+    css::uno::Any getItemByName( const ::rtl::OUString& rName );
 
     /** Returns a collection item specified by its index or name.
 
@@ -169,7 +169,7 @@ public:
             The index or name of the collection item. May be empty, in that
             case the entire collection is returned.
     */
-    css::uno::Any getAnyItemOrThis( const css::uno::Any& rIndex ) throw (css::uno::RuntimeException);
+    css::uno::Any getAnyItemOrThis( const css::uno::Any& rIndex );
 
     /** Returns a collection item of a specific type specified by its index or
         name.
@@ -178,7 +178,7 @@ public:
             The index or name of the collection item.
     */
     template< typename XType >
-    inline css::uno::Reference< XType > getAnyItem( const css::uno::Any& rIndex ) throw (css::uno::RuntimeException)
+    inline css::uno::Reference< XType > getAnyItem( const css::uno::Any& rIndex )
         { css::uno::Any aRet; if( rIndex.hasValue() ) aRet = getAnyItemOrThis( rIndex ); return css::uno::Reference< XType >( aRet, css::uno::UNO_QUERY_THROW ); }
 
 protected:
@@ -194,7 +194,7 @@ protected:
             The index or name used to access the item. Can be used by
             implementations as a hint how to find or convert the VBA object.
      */
-    virtual css::uno::Any implCreateCollectionItem( const css::uno::Any& rElement, const css::uno::Any& rIndex ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any implCreateCollectionItem( const css::uno::Any& rElement, const css::uno::Any& rIndex );
 
 private:
     css::uno::Reference< css::container::XIndexAccess > mxIndexAccess;

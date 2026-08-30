@@ -62,14 +62,12 @@ FilledNetChartType::~FilledNetChartType()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL FilledNetChartType::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new FilledNetChartType( *this ));
 }
 
 // ____ XChartType ____
 ::rtl::OUString SAL_CALL FilledNetChartType::getChartType()
-    throw (uno::RuntimeException)
 {
     return CHART2_SERVICE_NAME_CHARTTYPE_FILLED_NET;
 }

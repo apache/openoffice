@@ -55,7 +55,7 @@ rtl::OUString ScVbaChartObject::getPersistName()
 }
 
 uno::Reference< drawing::XShape >
-ScVbaChartObject::setShape() throw ( script::BasicErrorException )
+ScVbaChartObject::setShape()
 {
 	try
 	{
@@ -84,19 +84,19 @@ ScVbaChartObject::setShape() throw ( script::BasicErrorException )
 }
 
 void SAL_CALL
-ScVbaChartObject::setName( const rtl::OUString& sName ) throw (css::uno::RuntimeException)
+ScVbaChartObject::setName( const rtl::OUString& sName )
 {
 	xNamedShape->setName(sName);
 }
 
 ::rtl::OUString SAL_CALL
-ScVbaChartObject::getName() throw (css::uno::RuntimeException)
+ScVbaChartObject::getName()
 {
 	return xNamedShape->getName();
 }
 
 void SAL_CALL
-ScVbaChartObject::Delete() throw ( css::script::BasicErrorException )
+ScVbaChartObject::Delete()
 {
 	// parent of this object is sheet
 	uno::Reference< excel::XWorksheet > xParent( getParent(), uno::UNO_QUERY_THROW );
@@ -109,7 +109,7 @@ ScVbaChartObject::Delete() throw ( css::script::BasicErrorException )
 }
 
 void
-ScVbaChartObject::Activate() throw ( script::BasicErrorException )
+ScVbaChartObject::Activate()
 {
 	try
 	{
@@ -127,7 +127,7 @@ ScVbaChartObject::Activate() throw ( script::BasicErrorException )
 }
 
 uno::Reference< excel::XChart > SAL_CALL
-ScVbaChartObject::getChart() throw (css::uno::RuntimeException)
+ScVbaChartObject::getChart()
 {
 	return new ScVbaChart( this, mxContext, xEmbeddedObjectSupplier->getEmbeddedObject(), xTableChart );
 }
@@ -158,7 +158,7 @@ ScVbaChartObject::getHeight()
 }
 
 void
-ScVbaChartObject::setHeight(double _fheight) throw ( script::BasicErrorException )
+ScVbaChartObject::setHeight(double _fheight)
 {
 	oShapeHelper->setHeight(_fheight);
 }
@@ -170,7 +170,7 @@ ScVbaChartObject::getWidth()
 }
 
 void
-ScVbaChartObject::setWidth(double _fWidth) throw ( script::BasicErrorException )
+ScVbaChartObject::setWidth(double _fWidth)
 {
 	oShapeHelper->setWidth(_fWidth);
 }
@@ -200,7 +200,7 @@ ScVbaChartObject::setTop(double _fTop)
 }
 
 uno::Reference< uno::XInterface >
-ScVbaChartObject::getUnoObject() throw (script::BasicErrorException)
+ScVbaChartObject::getUnoObject()
 {
 	return uno::Reference< uno::XInterface >( xShape, uno::UNO_QUERY );
 }

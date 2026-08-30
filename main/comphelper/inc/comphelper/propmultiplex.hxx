@@ -55,8 +55,8 @@ namespace comphelper
 			: m_pAdapter(NULL), m_rMutex(_rMutex) { }
 		virtual ~OPropertyChangeListener();
 
-		virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent) throw( ::com::sun::star::uno::RuntimeException) = 0;
-		virtual void _disposing(const ::com::sun::star::lang::EventObject& _rSource) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& _rEvent) = 0;
+		virtual void _disposing(const ::com::sun::star::lang::EventObject& _rSource);
 
 	protected:
         /** If the derivee also owns the mutex which we know as reference, then call this within your
@@ -88,10 +88,10 @@ namespace comphelper
 		OPropertyChangeMultiplexer(OPropertyChangeListener* _pListener, const  ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet>& _rxSet, sal_Bool _bAutoReleaseSet = sal_True);
 
 	// XEventListener
-		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source ) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source );
 
 	// XPropertyChangeListener
-		virtual void SAL_CALL propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt );
 
 		/// incremental lock
 		void		lock();

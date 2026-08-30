@@ -336,7 +336,7 @@ OUString SlideLayoutController_getImplementationName()
 
 // --------------------------------------------------------------------
 
-Sequence< OUString >  SlideLayoutController_getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString >  SlideLayoutController_getSupportedServiceNames()
 {
     Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.ToolbarController" ));
@@ -345,7 +345,7 @@ Sequence< OUString >  SlideLayoutController_getSupportedServiceNames() throw( Ru
 
 // --------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL SlideLayoutController_createInstance( const Reference< XMultiServiceFactory >& rSMgr ) throw( RuntimeException )
+Reference< XInterface > SAL_CALL SlideLayoutController_createInstance( const Reference< XMultiServiceFactory >& rSMgr )
 {
 	return *new SlideLayoutController( rSMgr, OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:AssignLayout" )), false );
 }
@@ -359,7 +359,7 @@ OUString InsertSlideController_getImplementationName()
 
 // --------------------------------------------------------------------
 
-Sequence< OUString >  InsertSlideController_getSupportedServiceNames() throw( RuntimeException )
+Sequence< OUString >  InsertSlideController_getSupportedServiceNames()
 {
     Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.ToolbarController" ));
@@ -368,7 +368,7 @@ Sequence< OUString >  InsertSlideController_getSupportedServiceNames() throw( Ru
 
 // --------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL InsertSlideController_createInstance( const Reference< XMultiServiceFactory >& rSMgr ) throw( RuntimeException )
+Reference< XInterface > SAL_CALL InsertSlideController_createInstance( const Reference< XMultiServiceFactory >& rSMgr )
 {
 	return *new SlideLayoutController( rSMgr, OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:InsertPage" )), true );
 }
@@ -394,7 +394,7 @@ SlideLayoutController::SlideLayoutController( const Reference< lang::XMultiServi
 // XServiceInfo
 // --------------------------------------------------------------------
 
-OUString SAL_CALL SlideLayoutController::getImplementationName() throw( RuntimeException )
+OUString SAL_CALL SlideLayoutController::getImplementationName()
 {
 	if( mbInsertPage )
 		return InsertSlideController_getImplementationName();
@@ -404,7 +404,7 @@ OUString SAL_CALL SlideLayoutController::getImplementationName() throw( RuntimeE
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL SlideLayoutController::getSupportedServiceNames(  ) throw( RuntimeException )
+Sequence< OUString > SAL_CALL SlideLayoutController::getSupportedServiceNames(  )
 {
 	if( mbInsertPage )
 		return InsertSlideController_getSupportedServiceNames();

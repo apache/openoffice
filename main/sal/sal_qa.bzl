@@ -18,7 +18,6 @@ _DEFINES = [
     "WIN32",
     "INTEL",
     "_X86_=1",
-    "snprintf=_snprintf",
 ]
 
 _COMMON_COPTS = [

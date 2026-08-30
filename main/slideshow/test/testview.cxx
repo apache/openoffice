@@ -78,12 +78,12 @@ public:
     }
 
     // XSlideShowView
-    virtual uno::Reference< rendering::XSpriteCanvas > SAL_CALL getCanvas(  ) throw (uno::RuntimeException)
+    virtual uno::Reference< rendering::XSpriteCanvas > SAL_CALL getCanvas(  )
     {
         return uno::Reference< rendering::XSpriteCanvas >();
     }
 
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  ) throw (::com::sun::star::uno::RuntimeException)
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getCanvasArea(  )
     {
         // FIXME:
         ::com::sun::star::awt::Rectangle r;
@@ -94,48 +94,48 @@ public:
         return r;
     }
 
-    virtual void SAL_CALL clear(  ) throw (uno::RuntimeException)
+    virtual void SAL_CALL clear(  )
     {
     }
 
-    virtual geometry::AffineMatrix2D SAL_CALL getTransformation(  ) throw (uno::RuntimeException)
+    virtual geometry::AffineMatrix2D SAL_CALL getTransformation(  )
     {
         return geometry::AffineMatrix2D();
     }
 
-    virtual void SAL_CALL addTransformationChangedListener( const uno::Reference< util::XModifyListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addTransformationChangedListener( const uno::Reference< util::XModifyListener >& )
     {
     }
 
-    virtual void SAL_CALL removeTransformationChangedListener( const uno::Reference< util::XModifyListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removeTransformationChangedListener( const uno::Reference< util::XModifyListener >& )
     {
     }
 
-    virtual void SAL_CALL addPaintListener( const uno::Reference< awt::XPaintListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addPaintListener( const uno::Reference< awt::XPaintListener >& )
     {
     }
 
-    virtual void SAL_CALL removePaintListener( const uno::Reference< awt::XPaintListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removePaintListener( const uno::Reference< awt::XPaintListener >& )
     {
     }
 
-    virtual void SAL_CALL addMouseListener( const uno::Reference< awt::XMouseListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addMouseListener( const uno::Reference< awt::XMouseListener >& )
     {
     }
 
-    virtual void SAL_CALL removeMouseListener( const uno::Reference< awt::XMouseListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removeMouseListener( const uno::Reference< awt::XMouseListener >& )
     {
     }
 
-    virtual void SAL_CALL addMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL addMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& )
     {
     }
 
-    virtual void SAL_CALL removeMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& ) throw (uno::RuntimeException)
+    virtual void SAL_CALL removeMouseMotionListener( const uno::Reference< awt::XMouseMotionListener >& )
     {
     }
 
-    virtual void SAL_CALL setMouseCursor( ::sal_Int16 ) throw (uno::RuntimeException)
+    virtual void SAL_CALL setMouseCursor( ::sal_Int16 )
     {
     }
 

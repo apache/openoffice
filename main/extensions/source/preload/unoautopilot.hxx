@@ -67,20 +67,20 @@ namespace preload
 
 	public:
 		// XTypeProvider
-		virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence<sal_Int8> SAL_CALL getImplementationId(  );
 
 		// XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-		virtual ::comphelper::StringSequence SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName();
+		virtual ::comphelper::StringSequence SAL_CALL getSupportedServiceNames();
 
 		// XServiceInfo - static methods
-		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
-		static ::rtl::OUString getImplementationName_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+		static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
+		static ::rtl::OUString getImplementationName_Static(void);
 		static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
 				SAL_CALL Create(const ::com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >&);
 
 		// XPropertySet
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo() throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo();
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 
 		// OPropertyArrayUsageHelper

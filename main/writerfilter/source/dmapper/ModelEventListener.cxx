@@ -46,7 +46,7 @@ ModelEventListener::~ModelEventListener()
 /*-- 22.11.2007 08:40:22---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void ModelEventListener::notifyEvent( const document::EventObject& rEvent ) throw (uno::RuntimeException)
+void ModelEventListener::notifyEvent( const document::EventObject& rEvent )
 {
     if( rEvent.EventName.equalsAscii("OnFocus"))
     {
@@ -76,7 +76,7 @@ void ModelEventListener::notifyEvent( const document::EventObject& rEvent ) thro
 /*-- 22.11.2007 08:40:22---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void ModelEventListener::disposing( const lang::EventObject& rEvent ) throw (uno::RuntimeException)
+void ModelEventListener::disposing( const lang::EventObject& rEvent )
 {
     try
     {

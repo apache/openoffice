@@ -64,8 +64,7 @@ namespace stoc_connector
 		~OConnector();
 		// Methods
 		virtual Reference< XConnection > SAL_CALL connect(
-			const OUString& sConnectionDescription )
-			throw( NoConnectException, ConnectionSetupException, RuntimeException);
+			const OUString& sConnectionDescription );
 
 	public: // XServiceInfo
                 virtual OUString              SAL_CALL getImplementationName() throw();
@@ -86,7 +85,6 @@ namespace stoc_connector
 	}
 
 	Reference< XConnection > SAL_CALL OConnector::connect( const OUString& sConnectionDescription )
-		throw( NoConnectException, ConnectionSetupException, RuntimeException)
 	{
 		OSL_TRACE(
             "connector %s\n",

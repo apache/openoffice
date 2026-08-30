@@ -108,7 +108,7 @@ public:
 	static SC_DLLPUBLIC ScTransferObj* GetOwnClipboard( Window* pUIWin );
 
 	static SfxObjectShell*	SetDrawClipDoc( sal_Bool bAnyOle );		// update ScGlobal::pDrawClipDocShellRef
-    virtual sal_Int64 SAL_CALL getSomething( const com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw( com::sun::star::uno::RuntimeException );
+    virtual sal_Int64 SAL_CALL getSomething( const com::sun::star::uno::Sequence< sal_Int8 >& rId );
     static const com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId();
 };
 

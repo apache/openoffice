@@ -114,7 +114,7 @@ public:
 
 protected:
 	// FmXChangeListener
-	virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt) throw( ::com::sun::star::uno::RuntimeException );
+	virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt);
 
 protected:
 	inline			SfxBindings&	GetBindings()		{ return SfxControllerItem::GetBindings(); }

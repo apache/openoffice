@@ -62,11 +62,9 @@ public:
 
     // XSingleComponentFactory impl
     virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstanceWithContext(
-        css::uno::Reference< css::uno::XComponentContext > const & xContext )
-        throw (css::uno::Exception);
+        css::uno::Reference< css::uno::XComponentContext > const & xContext );
     virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstanceWithArgumentsAndContext(
-        css::uno::Sequence< css::uno::Any > const & args, css::uno::Reference< css::uno::XComponentContext > const & xContext )
-        throw (css::uno::Exception);
+        css::uno::Sequence< css::uno::Any > const & args, css::uno::Reference< css::uno::XComponentContext > const & xContext );
 };
 
 void SingletonFactory::disposing()
@@ -76,7 +74,6 @@ void SingletonFactory::disposing()
 
 css::uno::Reference< css::uno::XInterface > SingletonFactory::createInstanceWithContext(
     css::uno::Reference< css::uno::XComponentContext > const & xContext )
-    throw (css::uno::Exception)
 {
     sal_Int64 handle = reinterpret_cast< sal_Int64 >( m_vm_access.get() );
     css::uno::Any arg(
@@ -94,7 +91,6 @@ css::uno::Reference< css::uno::XInterface > SingletonFactory::createInstanceWith
 
 css::uno::Reference< css::uno::XInterface > SingletonFactory::createInstanceWithArgumentsAndContext(
     css::uno::Sequence< css::uno::Any > const & args, css::uno::Reference< css::uno::XComponentContext > const & xContext )
-    throw (css::uno::Exception)
 {
     return xContext->getServiceManager()->createInstanceWithArgumentsAndContext(
         ::rtl::OUString(

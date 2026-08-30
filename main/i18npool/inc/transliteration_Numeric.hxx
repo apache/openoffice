@@ -30,28 +30,22 @@ namespace com { namespace sun { namespace star { namespace i18n {
 class transliteration_Numeric : public transliteration_commonclass {
 public:
         virtual ::rtl::OUString SAL_CALL
-        transliterate( const ::rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, ::com::sun::star::uno::Sequence< sal_Int32 >& offset )
-        throw(::com::sun::star::uno::RuntimeException);
+        transliterate( const ::rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, ::com::sun::star::uno::Sequence< sal_Int32 >& offset );
 
         virtual sal_Unicode SAL_CALL
-        transliterateChar2Char( sal_Unicode inChar)
-        throw(com::sun::star::i18n::MultipleCharsOutputException,
-                com::sun::star::uno::RuntimeException);
+        transliterateChar2Char( sal_Unicode inChar);
 
         // Methods which are shared.
-        virtual sal_Int16 SAL_CALL getType(  ) throw(::com::sun::star::uno::RuntimeException);
+        virtual sal_Int16 SAL_CALL getType(  );
 
         virtual ::rtl::OUString SAL_CALL
-        folding( const ::rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, ::com::sun::star::uno::Sequence< sal_Int32 >& offset )
-        throw(::com::sun::star::uno::RuntimeException);
+        folding( const ::rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, ::com::sun::star::uno::Sequence< sal_Int32 >& offset );
 
         virtual sal_Bool SAL_CALL
-        equals( const ::rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1, sal_Int32& nMatch1, const ::rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2 )
-        throw(::com::sun::star::uno::RuntimeException);
+        equals( const ::rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1, sal_Int32& nMatch1, const ::rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2 );
 
         virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        transliterateRange( const ::rtl::OUString& str1, const ::rtl::OUString& str2 )
-        throw(::com::sun::star::uno::RuntimeException);
+        transliterateRange( const ::rtl::OUString& str1, const ::rtl::OUString& str2 );
 protected:
         sal_Int16 nNativeNumberMode;
         sal_Int16 tableSize;
@@ -60,8 +54,7 @@ protected:
 private:
         rtl::OUString SAL_CALL
         transliterateBullet( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount,
-        com::sun::star::uno::Sequence< sal_Int32 >& offset )
-        throw(com::sun::star::uno::RuntimeException);
+        com::sun::star::uno::Sequence< sal_Int32 >& offset );
 };
 
 } } } }

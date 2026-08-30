@@ -1673,7 +1673,7 @@ SFX_IMPL_XTYPEPROVIDER_5( SfxMacroLoader, ::com::sun::star::frame::XDispatchProv
 SFX_IMPL_XSERVICEINFO( SfxMacroLoader, PROTOCOLHANDLER_SERVICENAME, "com.sun.star.comp.sfx2.SfxMacroLoader" )
 SFX_IMPL_SINGLEFACTORY( SfxMacroLoader )
 
-void SAL_CALL SfxMacroLoader::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxMacroLoader::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
 {
     Reference < XFrame > xFrame;
     if ( aArguments.getLength() )
@@ -1707,7 +1707,7 @@ SfxObjectShell* SfxMacroLoader::GetObjectShell_Impl()
 ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > SAL_CALL SfxMacroLoader::queryDispatch(
     const ::com::sun::star::util::URL&   aURL            ,
     const ::rtl::OUString&               /*sTargetFrameName*/,
-    sal_Int32                            /*nSearchFlags*/    ) throw( ::com::sun::star::uno::RuntimeException )
+    sal_Int32                            /*nSearchFlags*/    )
 {
     ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > xDispatcher;
     if(aURL.Complete.compareToAscii("macro:",6)==0)
@@ -1718,7 +1718,6 @@ SfxObjectShell* SfxMacroLoader::GetObjectShell_Impl()
 // -----------------------------------------------------------------------
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference < ::com::sun::star::frame::XDispatch > > SAL_CALL
                 SfxMacroLoader::queryDispatches( const ::com::sun::star::uno::Sequence < ::com::sun::star::frame::DispatchDescriptor >& seqDescriptor )
-                    throw( ::com::sun::star::uno::RuntimeException )
 {
     sal_Int32 nCount = seqDescriptor.getLength();
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference < ::com::sun::star::frame::XDispatch > > lDispatcher(nCount);
@@ -1774,7 +1773,6 @@ static ::rtl::OUString findReferer(const ::com::sun::star::uno::Sequence< ::com:
 void SAL_CALL SfxMacroLoader::dispatchWithNotification( const ::com::sun::star::util::URL&                                                          aURL      ,
                                                         const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >&            lArgs     ,
                                                         const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& xListener )
-              throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1798,7 +1796,7 @@ void SAL_CALL SfxMacroLoader::dispatchWithNotification( const ::com::sun::star::
 
 ::com::sun::star::uno::Any SAL_CALL SfxMacroLoader::dispatchWithReturnValue(
     const ::com::sun::star::util::URL& aURL,
-    const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArgs) throw (::com::sun::star::uno::RuntimeException)
+    const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArgs)
 {
     ::com::sun::star::uno::Any aRet;
     /*ErrCode nErr = */loadMacro( aURL.Complete, aRet, findReferer(lArgs), GetObjectShell_Impl() );
@@ -1808,7 +1806,6 @@ void SAL_CALL SfxMacroLoader::dispatchWithNotification( const ::com::sun::star::
 // -----------------------------------------------------------------------
 void SAL_CALL SfxMacroLoader::dispatch( const ::com::sun::star::util::URL&                                               aURL  ,
                                         const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArgs )
-              throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1820,7 +1817,6 @@ void SAL_CALL SfxMacroLoader::dispatch( const ::com::sun::star::util::URL&      
 void SAL_CALL SfxMacroLoader::addStatusListener(
     const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& ,
     const ::com::sun::star::util::URL&                                                    )
-              throw (::com::sun::star::uno::RuntimeException)
 {
     /* TODO
             How we can handle different listener for further coming or currently running dispatch() jobs
@@ -1832,12 +1828,10 @@ void SAL_CALL SfxMacroLoader::addStatusListener(
 void SAL_CALL SfxMacroLoader::removeStatusListener(
     const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >&,
     const ::com::sun::star::util::URL&                                                  )
-        throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
 ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::uno::Any& rRetval, const ::rtl::OUString& aReferer, SfxObjectShell* pSh )
-    throw ( ::com::sun::star::uno::RuntimeException )
 {
     SfxObjectShell* pCurrent = pSh;
     if ( !pCurrent )
@@ -1996,7 +1990,7 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
 SFX_IMPL_XSERVICEINFO( SfxAppDispatchProvider, "com.sun.star.frame.DispatchProvider", "com.sun.star.comp.sfx2.AppDispatchProvider" )                                                                \
 SFX_IMPL_SINGLEFACTORY( SfxAppDispatchProvider );
 
-void SAL_CALL SfxAppDispatchProvider::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxAppDispatchProvider::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
 {
     Reference < XFrame > xFrame;
     if ( aArguments.getLength() )
@@ -2009,7 +2003,7 @@ void SAL_CALL SfxAppDispatchProvider::initialize( const ::com::sun::star::uno::S
 Reference < XDispatch > SAL_CALL SfxAppDispatchProvider::queryDispatch(
     const ::com::sun::star::util::URL& aURL,
     const ::rtl::OUString& /*sTargetFrameName*/,
-    FrameSearchFlags /*eSearchFlags*/ ) throw( RuntimeException )
+    FrameSearchFlags /*eSearchFlags*/ )
 {
     sal_uInt16                  nId( 0 );
     sal_Bool                bMasterCommand( sal_False );
@@ -2045,7 +2039,6 @@ Reference < XDispatch > SAL_CALL SfxAppDispatchProvider::queryDispatch(
 }
 
 Sequence< Reference < XDispatch > > SAL_CALL SfxAppDispatchProvider::queryDispatches( const Sequence < DispatchDescriptor >& seqDescriptor )
-throw( RuntimeException )
 {
     sal_Int32 nCount = seqDescriptor.getLength();
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference < ::com::sun::star::frame::XDispatch > > lDispatcher(nCount);
@@ -2057,7 +2050,6 @@ throw( RuntimeException )
 }
 
 Sequence< sal_Int16 > SAL_CALL SfxAppDispatchProvider::getSupportedCommandGroups()
-throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -2090,7 +2082,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 Sequence< ::com::sun::star::frame::DispatchInformation > SAL_CALL SfxAppDispatchProvider::getConfigurableDispatchInformation( sal_Int16 nCmdGroup )
-throw (::com::sun::star::uno::RuntimeException)
 {
     std::list< ::com::sun::star::frame::DispatchInformation > aCmdList;
 
@@ -2152,10 +2143,9 @@ public:
     TestKeyHandler( const com::sun::star::uno::Reference < ::com::sun::star::lang::XMultiServiceFactory >& ){}
 
     SFX_DECL_XSERVICEINFO
-    virtual sal_Bool SAL_CALL keyPressed( const ::com::sun::star::awt::KeyEvent& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL keyReleased( const ::com::sun::star::awt::KeyEvent& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL keyPressed( const ::com::sun::star::awt::KeyEvent& aEvent );
+    virtual sal_Bool SAL_CALL keyReleased( const ::com::sun::star::awt::KeyEvent& aEvent );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source);
 };
 
 class TestMouseClickHandler: public ::cppu::WeakImplHelper2
@@ -2168,37 +2158,36 @@ public:
     TestMouseClickHandler( const com::sun::star::uno::Reference < ::com::sun::star::lang::XMultiServiceFactory >& ){}
 
     SFX_DECL_XSERVICEINFO
-    virtual sal_Bool SAL_CALL mousePressed( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL mouseReleased( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL mousePressed( const ::com::sun::star::awt::MouseEvent& e );
+    virtual sal_Bool SAL_CALL mouseReleased( const ::com::sun::star::awt::MouseEvent& e );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source);
 };
 
-sal_Bool SAL_CALL TestKeyHandler::keyPressed( const ::com::sun::star::awt::KeyEvent& aEvent ) throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL TestKeyHandler::keyPressed( const ::com::sun::star::awt::KeyEvent& aEvent )
 {
     return sal_False;
 }
 
-sal_Bool SAL_CALL TestKeyHandler::keyReleased( const ::com::sun::star::awt::KeyEvent& aEvent ) throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL TestKeyHandler::keyReleased( const ::com::sun::star::awt::KeyEvent& aEvent )
 {
     return sal_False;
 }
 
-void SAL_CALL TestKeyHandler::disposing( const ::com::sun::star::lang::EventObject& Source) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL TestKeyHandler::disposing( const ::com::sun::star::lang::EventObject& Source)
 {
 }
 
-sal_Bool SAL_CALL TestMouseClickHandler::mousePressed( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException)
-{
-    return sal_False;
-}
-
-sal_Bool SAL_CALL TestMouseClickHandler::mouseReleased( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL TestMouseClickHandler::mousePressed( const ::com::sun::star::awt::MouseEvent& e )
 {
     return sal_False;
 }
 
-void SAL_CALL TestMouseClickHandler::disposing( const ::com::sun::star::lang::EventObject& Source) throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL TestMouseClickHandler::mouseReleased( const ::com::sun::star::awt::MouseEvent& e )
+{
+    return sal_False;
+}
+
+void SAL_CALL TestMouseClickHandler::disposing( const ::com::sun::star::lang::EventObject& Source)
 {
 }
 
@@ -2291,14 +2280,12 @@ SFX2_DLLPUBLIC void* SAL_CALL component_getFactory(
 
 void SAL_CALL FilterOptionsContinuation::setFilterOptions(
                 const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rProps )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     rProperties = rProps;
 }
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL
     FilterOptionsContinuation::getFilterOptions()
-        throw (::com::sun::star::uno::RuntimeException)
 {
     return rProperties;
 }
@@ -2326,14 +2313,12 @@ RequestFilterOptions::RequestFilterOptions( ::com::sun::star::uno::Reference< ::
 }
 
 ::com::sun::star::uno::Any SAL_CALL RequestFilterOptions::getRequest()
-        throw( ::com::sun::star::uno::RuntimeException )
 {
     return m_aRequest;
 }
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > >
     SAL_CALL RequestFilterOptions::getContinuations()
-        throw( ::com::sun::star::uno::RuntimeException )
 {
     return m_lContinuations;
 }
@@ -2349,9 +2334,8 @@ class RequestPackageReparation_Impl : public ::cppu::WeakImplHelper1< ::com::sun
 public:
     RequestPackageReparation_Impl( ::rtl::OUString aName );
     sal_Bool    isApproved();
-    virtual ::com::sun::star::uno::Any SAL_CALL getRequest() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations()
-		throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL getRequest();
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations();
 };
 
 RequestPackageReparation_Impl::RequestPackageReparation_Impl( ::rtl::OUString aName )
@@ -2375,14 +2359,12 @@ sal_Bool RequestPackageReparation_Impl::isApproved()
 }
 
 ::com::sun::star::uno::Any SAL_CALL RequestPackageReparation_Impl::getRequest()
-		throw( ::com::sun::star::uno::RuntimeException )
 {
 	return m_aRequest;
 }
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > >
     SAL_CALL RequestPackageReparation_Impl::getContinuations()
-		throw( ::com::sun::star::uno::RuntimeException )
 {
 	return m_lContinuations;
 }
@@ -2418,9 +2400,8 @@ class NotifyBrokenPackage_Impl : public ::cppu::WeakImplHelper1< ::com::sun::sta
 public:
     NotifyBrokenPackage_Impl( ::rtl::OUString aName );
     sal_Bool    isAborted();
-    virtual ::com::sun::star::uno::Any SAL_CALL getRequest() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations()
-		throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL getRequest();
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations();
 };
 
 NotifyBrokenPackage_Impl::NotifyBrokenPackage_Impl( ::rtl::OUString aName )
@@ -2442,14 +2423,12 @@ sal_Bool NotifyBrokenPackage_Impl::isAborted()
 }
 
 ::com::sun::star::uno::Any SAL_CALL NotifyBrokenPackage_Impl::getRequest()
-		throw( ::com::sun::star::uno::RuntimeException )
 {
 	return m_aRequest;
 }
 
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > >
     SAL_CALL NotifyBrokenPackage_Impl::getContinuations()
-		throw( ::com::sun::star::uno::RuntimeException )
 {
 	return m_lContinuations;
 }

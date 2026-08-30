@@ -34,37 +34,31 @@ public:
 	Transliteration_caseignore();
 
 	// Methods which are shared.
-	sal_Int16 SAL_CALL getType() throw(com::sun::star::uno::RuntimeException);
+	sal_Int16 SAL_CALL getType();
 
-	void SAL_CALL loadModule( TransliterationModules modName, const com::sun::star::lang::Locale& rLocale )
-	throw(com::sun::star::uno::RuntimeException);
+	void SAL_CALL loadModule( TransliterationModules modName, const com::sun::star::lang::Locale& rLocale );
 
 	com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL transliterateRange(
-	    const rtl::OUString& str1, const rtl::OUString& str2 )
-	throw(com::sun::star::uno::RuntimeException);
+	    const rtl::OUString& str1, const rtl::OUString& str2 );
 
 	sal_Bool SAL_CALL equals(
 	    const rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1, sal_Int32& nMatch1,
-	    const rtl::OUString& src2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2)
-	throw(com::sun::star::uno::RuntimeException);
+	    const rtl::OUString& src2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2);
 
 	sal_Int32 SAL_CALL compareSubstring(
 	    const rtl::OUString& s1, sal_Int32 off1, sal_Int32 len1,
-	    const rtl::OUString& s2, sal_Int32 off2, sal_Int32 len2)
-	throw(com::sun::star::uno::RuntimeException);
+	    const rtl::OUString& s2, sal_Int32 off2, sal_Int32 len2);
 
 	sal_Int32 SAL_CALL compareString(
 	    const rtl::OUString& s1,
-	    const rtl::OUString& s2)
-	throw(com::sun::star::uno::RuntimeException);
+	    const rtl::OUString& s2);
 
 protected:
 	TransliterationModules moduleLoaded;
 private:
 	sal_Int32 SAL_CALL compare(
 	    const rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1, sal_Int32& nMatch1,
-	    const rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2)
-	throw(com::sun::star::uno::RuntimeException);
+	    const rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2);
 };
 
 } } } }

@@ -42,14 +42,12 @@ public:
 
     virtual void SAL_CALL startFastElement(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
 private:
     Color&              mrColor;
@@ -67,8 +65,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
                         createFastChildContext(
                             sal_Int32 nElement,
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
-                        throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs );
 
 private:
     Color&              mrColor;

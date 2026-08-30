@@ -94,43 +94,33 @@ public:
     XSLTFilter( const Reference< XMultiServiceFactory > &r );
 
     // XStreamListener
-    virtual void SAL_CALL error(const Any& a) throw (RuntimeException);
-    virtual void SAL_CALL closed() throw (RuntimeException);
-    virtual void SAL_CALL terminated() throw (RuntimeException);
-    virtual void SAL_CALL started() throw (RuntimeException);
-    virtual void SAL_CALL disposing(const EventObject& e) throw (RuntimeException);
+    virtual void SAL_CALL error(const Any& a);
+    virtual void SAL_CALL closed();
+    virtual void SAL_CALL terminated();
+    virtual void SAL_CALL started();
+    virtual void SAL_CALL disposing(const EventObject& e);
 
 
     // XImportFilter
     virtual sal_Bool SAL_CALL importer(
             const Sequence<PropertyValue>& aSourceData,
             const Reference<XDocumentHandler>& xHandler,
-            const Sequence<OUString>& msUserData)
-        throw(RuntimeException);
+            const Sequence<OUString>& msUserData);
 
     // XExportFilter
     virtual sal_Bool SAL_CALL exporter(
             const Sequence<PropertyValue>& aSourceData,
-            const Sequence<OUString>& msUserData)
-        throw(RuntimeException);
+            const Sequence<OUString>& msUserData);
 
     // XDocumentHandler
-    virtual void SAL_CALL startDocument()
-        throw (SAXException,RuntimeException);
-    virtual void SAL_CALL endDocument()
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL startElement(const OUString& str, const Reference<XAttributeList>& attriblist)
-        throw (SAXException,RuntimeException);
-    virtual void SAL_CALL endElement(const OUString& str)
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL characters(const OUString& str)
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL ignorableWhitespace(const OUString& str)
-        throw (SAXException, RuntimeException);
-    virtual void SAL_CALL processingInstruction(const OUString& str, const OUString& str2)
-        throw (com::sun::star::xml::sax::SAXException,RuntimeException);
-    virtual void SAL_CALL setDocumentLocator(const Reference<XLocator>& doclocator)
-        throw (SAXException,RuntimeException);
+    virtual void SAL_CALL startDocument();
+    virtual void SAL_CALL endDocument();
+    virtual void SAL_CALL startElement(const OUString& str, const Reference<XAttributeList>& attriblist);
+    virtual void SAL_CALL endElement(const OUString& str);
+    virtual void SAL_CALL characters(const OUString& str);
+    virtual void SAL_CALL ignorableWhitespace(const OUString& str);
+    virtual void SAL_CALL processingInstruction(const OUString& str, const OUString& str2);
+    virtual void SAL_CALL setDocumentLocator(const Reference<XLocator>& doclocator);
 
 private:
     // the UNO ServiceFactory
@@ -180,7 +170,7 @@ XSLTFilter::XSLTFilter( const Reference< XMultiServiceFactory > &r )
     m_cTransformed = osl_createCondition();
 }
 
-void XSLTFilter::disposing(const EventObject& ) throw (RuntimeException)
+void XSLTFilter::disposing(const EventObject& )
 {
 }
 
@@ -202,11 +192,11 @@ void XSLTFilter::disposing(const EventObject& ) throw (RuntimeException)
     return sExpandedUrl;
 }
 
-void XSLTFilter::started() throw (RuntimeException)
+void XSLTFilter::started()
 {
     osl_resetCondition(m_cTransformed);
 }
-void XSLTFilter::error(const Any& a) throw (RuntimeException)
+void XSLTFilter::error(const Any& a)
 {
     Exception e;
     if ( a >>= e)
@@ -218,11 +208,11 @@ void XSLTFilter::error(const Any& a) throw (RuntimeException)
     m_bError = sal_True;
     osl_setCondition(m_cTransformed);
 }
-void XSLTFilter::closed() throw (RuntimeException)
+void XSLTFilter::closed()
 {
     osl_setCondition(m_cTransformed);
 }
-void XSLTFilter::terminated() throw (RuntimeException)
+void XSLTFilter::terminated()
 {
     m_bTerminated = sal_True;
     osl_setCondition(m_cTransformed);
@@ -248,7 +238,6 @@ sal_Bool XSLTFilter::importer(
         const Sequence<PropertyValue>& aSourceData,
         const Reference<XDocumentHandler>& xHandler,
         const Sequence<OUString>& msUserData)
-    throw (RuntimeException)
 {
     if ( msUserData.getLength() < 5 )
         return sal_False;
@@ -387,7 +376,6 @@ bool XSLTFilter::isUOF2ExportStyleSheet( const OUString& rExportStyleSheet )
 sal_Bool XSLTFilter::exporter(
         const Sequence<PropertyValue>& aSourceData,
         const Sequence<OUString>& msUserData)
-    throw (RuntimeException)
 {
     if ( msUserData.getLength() < 6 )
         return sal_False;
@@ -525,13 +513,13 @@ sal_Bool XSLTFilter::exporter(
 // for the DocumentHandler implementation, we just proxy the
 // events to the XML writer that we created upon the output stream
 // that was provided by the XMLFilterAdapter
-void XSLTFilter::startDocument() throw (SAXException,RuntimeException){
+void XSLTFilter::startDocument(){
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->startDocument();
     m_tcontrol->start();
 }
 
-void XSLTFilter::endDocument() throw (SAXException, RuntimeException){
+void XSLTFilter::endDocument(){
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->endDocument();
 
@@ -554,7 +542,6 @@ void XSLTFilter::endDocument() throw (SAXException, RuntimeException){
 }
 
 void XSLTFilter::startElement(const OUString& str, const Reference<XAttributeList>& attriblist)
-    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
 //	SvXMLAttributeList* _attriblist=SvXMLAttributeList::getImplementation(attriblist);
@@ -562,21 +549,18 @@ void XSLTFilter::startElement(const OUString& str, const Reference<XAttributeLis
 }
 
 void XSLTFilter::endElement(const OUString& str)
-    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->endElement(str);
 }
 
 void XSLTFilter::characters(const OUString& str)
-    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->characters(str);
 }
 
 void XSLTFilter::ignorableWhitespace(const OUString& str)
-    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     if (!m_bPrettyPrint) return;
@@ -584,14 +568,12 @@ void XSLTFilter::ignorableWhitespace(const OUString& str)
 }
 
 void  XSLTFilter::processingInstruction(const OUString& str, const OUString& str2)
-    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->processingInstruction(str, str2);
 }
 
 void XSLTFilter::setDocumentLocator(const Reference<XLocator>& doclocator)
-    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->setDocumentLocator(doclocator);

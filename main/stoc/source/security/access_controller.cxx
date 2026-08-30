@@ -106,8 +106,7 @@ public:
 
     // XAccessControlContext impl
     virtual void SAL_CALL checkPermission(
-        Any const & perm )
-        throw (RuntimeException);
+        Any const & perm );
 };
 //__________________________________________________________________________________________________
 inline acc_Intersection::acc_Intersection(
@@ -140,7 +139,6 @@ inline Reference< security::XAccessControlContext > acc_Intersection::create(
 //__________________________________________________________________________________________________
 void acc_Intersection::checkPermission(
     Any const & perm )
-    throw (RuntimeException)
 {
     m_x1->checkPermission( perm );
     m_x2->checkPermission( perm );
@@ -169,8 +167,7 @@ public:
 
     // XAccessControlContext impl
     virtual void SAL_CALL checkPermission(
-        Any const & perm )
-        throw (RuntimeException);
+        Any const & perm );
 };
 //__________________________________________________________________________________________________
 inline acc_Union::acc_Union(
@@ -203,7 +200,6 @@ inline Reference< security::XAccessControlContext > acc_Union::create(
 //__________________________________________________________________________________________________
 void acc_Union::checkPermission(
     Any const & perm )
-    throw (RuntimeException)
 {
     try
     {
@@ -231,8 +227,7 @@ public:
 
     // XAccessControlContext impl
     virtual void SAL_CALL checkPermission(
-        Any const & perm )
-        throw (RuntimeException);
+        Any const & perm );
 };
 //__________________________________________________________________________________________________
 inline acc_Policy::acc_Policy(
@@ -251,7 +246,6 @@ acc_Policy::~acc_Policy()
 //__________________________________________________________________________________________________
 void acc_Policy::checkPermission(
     Any const & perm )
-    throw (RuntimeException)
 {
     m_permissions.checkPermission( perm );
 }
@@ -280,8 +274,7 @@ public:
         throw ();
 
     // XCurrentContext impl
-    virtual Any SAL_CALL getValueByName( OUString const & name )
-        throw (RuntimeException);
+    virtual Any SAL_CALL getValueByName( OUString const & name );
 };
 //__________________________________________________________________________________________________
 inline acc_CurrentContext::acc_CurrentContext(
@@ -322,7 +315,6 @@ void acc_CurrentContext::release()
 }
 //__________________________________________________________________________________________________
 Any acc_CurrentContext::getValueByName( OUString const & name )
-    throw (RuntimeException)
 {
     if (name.equals( s_acRestriction ))
     {
@@ -342,7 +334,6 @@ Any acc_CurrentContext::getValueByName( OUString const & name )
 
 //--------------------------------------------------------------------------------------------------
 static inline void dispose( Reference< XInterface > const & x )
-    SAL_THROW( (RuntimeException) )
 {
     Reference< lang::XComponent > xComp( x, UNO_QUERY );
     if (xComp.is())
@@ -353,7 +344,6 @@ static inline void dispose( Reference< XInterface > const & x )
 //--------------------------------------------------------------------------------------------------
 static inline Reference< security::XAccessControlContext > getDynamicRestriction(
     Reference< XCurrentContext > const & xContext )
-    SAL_THROW( (RuntimeException) )
 {
     if (xContext.is())
     {
@@ -406,8 +396,7 @@ class AccessController
     Reference< XComponentContext > m_xComponentContext;
 
     Reference< security::XPolicy > m_xPolicy;
-    Reference< security::XPolicy > const & getPolicy()
-        SAL_THROW( (RuntimeException) );
+    Reference< security::XPolicy > const & getPolicy();
 
     // mode
     enum Mode { OFF, ON, DYNAMIC_ONLY, SINGLE_USER, SINGLE_DEFAULT_USER } m_mode;
@@ -425,53 +414,42 @@ class AccessController
     ThreadData m_rec;
     typedef vector< pair< OUString, Any > > t_rec_vec;
     inline void clearPostPoned() SAL_THROW( () );
-    void checkAndClearPostPoned() SAL_THROW( (RuntimeException) );
+    void checkAndClearPostPoned();
 
     PermissionCollection getEffectivePermissions(
         Reference< XCurrentContext > const & xContext,
-        Any const & demanded_perm )
-        SAL_THROW( (RuntimeException) );
+        Any const & demanded_perm );
 
 protected:
     virtual void SAL_CALL disposing();
 
 public:
-    AccessController( Reference< XComponentContext > const & xComponentContext )
-        SAL_THROW( (RuntimeException) );
+    AccessController( Reference< XComponentContext > const & xComponentContext );
     virtual ~AccessController()
         SAL_THROW( () );
 
     //  XInitialization impl
     virtual void SAL_CALL initialize(
-        Sequence< Any > const & arguments )
-        throw (Exception);
+        Sequence< Any > const & arguments );
 
     // XAccessController impl
     virtual void SAL_CALL checkPermission(
-        Any const & perm )
-        throw (RuntimeException);
+        Any const & perm );
     virtual Any SAL_CALL doRestricted(
         Reference< security::XAction > const & xAction,
-        Reference< security::XAccessControlContext > const & xRestriction )
-        throw (Exception);
+        Reference< security::XAccessControlContext > const & xRestriction );
     virtual Any SAL_CALL doPrivileged(
         Reference< security::XAction > const & xAction,
-        Reference< security::XAccessControlContext > const & xRestriction )
-        throw (Exception);
-    virtual Reference< security::XAccessControlContext > SAL_CALL getContext()
-        throw (RuntimeException);
+        Reference< security::XAccessControlContext > const & xRestriction );
+    virtual Reference< security::XAccessControlContext > SAL_CALL getContext();
 
     // XServiceInfo impl
-    virtual OUString SAL_CALL getImplementationName()
-        throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName )
-        throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 };
 //__________________________________________________________________________________________________
 AccessController::AccessController( Reference< XComponentContext > const & xComponentContext )
-    SAL_THROW( (RuntimeException) )
     : t_helper( m_mutex )
     , m_xComponentContext( xComponentContext )
     , m_mode( ON ) // default
@@ -548,7 +526,6 @@ void AccessController::disposing()
 //__________________________________________________________________________________________________
 void AccessController::initialize(
     Sequence< Any > const & arguments )
-    throw (Exception)
 {
     // xxx todo: review for forking
     // portal forking hack: re-initialize for another user-id
@@ -571,7 +548,6 @@ void AccessController::initialize(
 
 //__________________________________________________________________________________________________
 Reference< security::XPolicy > const & AccessController::getPolicy()
-    SAL_THROW( (RuntimeException) )
 {
     // get policy singleton
     if (! m_xPolicy.is())
@@ -633,7 +609,7 @@ inline void AccessController::clearPostPoned() SAL_THROW( () )
     m_rec.setData( 0 );
 }
 //__________________________________________________________________________________________________
-void AccessController::checkAndClearPostPoned() SAL_THROW( (RuntimeException) )
+void AccessController::checkAndClearPostPoned()
 {
     // check postponed permissions
     auto_ptr< t_rec_vec > rec( reinterpret_cast< t_rec_vec * >( m_rec.getData() ) );
@@ -701,7 +677,6 @@ void AccessController::checkAndClearPostPoned() SAL_THROW( (RuntimeException) )
 PermissionCollection AccessController::getEffectivePermissions(
     Reference< XCurrentContext > const & xContext,
     Any const & demanded_perm )
-    SAL_THROW( (RuntimeException) )
 {
     OUString userId;
 
@@ -880,7 +855,6 @@ PermissionCollection AccessController::getEffectivePermissions(
 //__________________________________________________________________________________________________
 void AccessController::checkPermission(
     Any const & perm )
-    throw (RuntimeException)
 {
     if (rBHelper.bDisposed)
     {
@@ -910,7 +884,6 @@ void AccessController::checkPermission(
 Any AccessController::doRestricted(
     Reference< security::XAction > const & xAction,
     Reference< security::XAccessControlContext > const & xRestriction )
-    throw (Exception)
 {
     if (rBHelper.bDisposed)
     {
@@ -943,7 +916,6 @@ Any AccessController::doRestricted(
 Any AccessController::doPrivileged(
     Reference< security::XAction > const & xAction,
     Reference< security::XAccessControlContext > const & xRestriction )
-    throw (Exception)
 {
     if (rBHelper.bDisposed)
     {
@@ -978,7 +950,6 @@ Any AccessController::doPrivileged(
 }
 //__________________________________________________________________________________________________
 Reference< security::XAccessControlContext > AccessController::getContext()
-    throw (RuntimeException)
 {
     if (rBHelper.bDisposed)
     {
@@ -1002,13 +973,11 @@ Reference< security::XAccessControlContext > AccessController::getContext()
 // XServiceInfo impl
 //__________________________________________________________________________________________________
 OUString AccessController::getImplementationName()
-    throw (RuntimeException)
 {
     return s_implName;
 }
 //__________________________________________________________________________________________________
 sal_Bool AccessController::supportsService( OUString const & serviceName )
-    throw (RuntimeException)
 {
     OUString const * pNames = s_serviceNames.getConstArray();
     for ( sal_Int32 nPos = s_serviceNames.getLength(); nPos--; )
@@ -1022,7 +991,6 @@ sal_Bool AccessController::supportsService( OUString const & serviceName )
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > AccessController::getSupportedServiceNames()
-    throw (RuntimeException)
 {
     return s_serviceNames;
 }
@@ -1032,7 +1000,6 @@ namespace stoc_bootstrap {
 //--------------------------------------------------------------------------------------------------
 Reference< XInterface > SAL_CALL ac_create(
     Reference< XComponentContext > const & xComponentContext )
-    SAL_THROW( (Exception) )
 {
     return (OWeakObject *)new stoc_sec::AccessController( xComponentContext );
 }
@@ -1048,8 +1015,7 @@ OUString ac_getImplementationName() SAL_THROW( () )
 }
 //--------------------------------------------------------------------------------------------------
 Reference< XInterface > SAL_CALL filepolicy_create(
-    Reference< XComponentContext > const & xComponentContext )
-    SAL_THROW( (Exception) );
+    Reference< XComponentContext > const & xComponentContext );
 //--------------------------------------------------------------------------------------------------
 Sequence< OUString > filepolicy_getSupportedServiceNames() SAL_THROW( () );
 //--------------------------------------------------------------------------------------------------

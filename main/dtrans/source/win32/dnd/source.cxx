@@ -160,7 +160,6 @@ void DragSource::StartDragImpl(
 /** aArguments contains a machine id
 */
 void SAL_CALL DragSource::initialize( const Sequence< Any >& aArguments )
-	throw(Exception, RuntimeException)
 {
 	if( aArguments.getLength() >=2)
 		m_hAppWindow= *(HWND*)aArguments[1].getValue();
@@ -171,7 +170,6 @@ void SAL_CALL DragSource::initialize( const Sequence< Any >& aArguments )
 /** XDragSource
 */
 sal_Bool SAL_CALL DragSource::isDragImageSupported(  )
-		 throw(RuntimeException)
 {
 	return 0;
 }
@@ -180,7 +178,6 @@ sal_Bool SAL_CALL DragSource::isDragImageSupported(  )
 /**
 */
 sal_Int32 SAL_CALL DragSource::getDefaultCursor( sal_Int8 /*dragAction*/ )
-		  throw( IllegalArgumentException, RuntimeException)
 {
 	return 0;
 }
@@ -195,7 +192,7 @@ void SAL_CALL DragSource::startDrag(
 	sal_Int32 cursor,
 	sal_Int32 image,
 	const Reference<XTransferable >& trans,
-	const Reference<XDragSourceListener >& listener ) throw( RuntimeException)
+	const Reference<XDragSourceListener >& listener )
 {
 	// Allow only one running dnd operation at a time,
 	// see XDragSource documentation
@@ -332,19 +329,19 @@ dwEffect
 }
 
 // XServiceInfo
-OUString SAL_CALL DragSource::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL DragSource::getImplementationName(  )
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_IMPL_NAME));
 }
 // XServiceInfo
-sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName )
 {
 	if( ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_SERVICE_NAME ))))
 		return sal_True;
 	return sal_False;
 }
 
-Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames(  )
 {
 	OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_SERVICE_NAME))};
 

@@ -111,7 +111,7 @@ namespace pcr
     IMPLEMENT_FORWARD_XINTERFACE2( FormController, OPropertyBrowserController, FormController_PropertyBase1 )
 
 	//------------------------------------------------------------------------
-	Sequence< Type > SAL_CALL FormController::getTypes(  ) throw(RuntimeException)
+	Sequence< Type > SAL_CALL FormController::getTypes(  )
 	{
 		::cppu::OTypeCollection aTypes(
 			::getCppuType( static_cast< Reference< XPropertySet >* >(NULL) ),
@@ -125,13 +125,13 @@ namespace pcr
 	IMPLEMENT_GET_IMPLEMENTATION_ID( FormController )
 
 	//------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL FormController::getImplementationName(  ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL FormController::getImplementationName(  )
 	{
         return m_aServiceDescriptor.GetImplementationName();
 	}
 
 	//------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL FormController::getSupportedServiceNames(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL FormController::getSupportedServiceNames(  )
 	{
 		Sequence< ::rtl::OUString > aSupported( m_aServiceDescriptor.GetSupportedServiceNames() );
         aSupported.realloc( aSupported.getLength() + 1 );
@@ -140,13 +140,13 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	::rtl::OUString FormController::getImplementationName_static(  ) throw(RuntimeException)
+	::rtl::OUString FormController::getImplementationName_static(  )
 	{
 		return ::rtl::OUString::createFromAscii("org.openoffice.comp.extensions.FormController");
 	}
 
 	//------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > FormController::getSupportedServiceNames_static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > FormController::getSupportedServiceNames_static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii( "com.sun.star.form.PropertyBrowserController" );
@@ -163,7 +163,7 @@ namespace pcr
 	}
 
 	//------------------------------------------------------------------------
-	Reference< XPropertySetInfo > SAL_CALL FormController::getPropertySetInfo(  ) throw(RuntimeException)
+	Reference< XPropertySetInfo > SAL_CALL FormController::getPropertySetInfo(  )
 	{
 		return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 	}
@@ -194,7 +194,7 @@ namespace pcr
 	}
 
     //------------------------------------------------------------------------
-    sal_Bool SAL_CALL FormController::convertFastPropertyValue( Any & rConvertedValue, Any & rOldValue, sal_Int32 nHandle, const Any& rValue ) throw (IllegalArgumentException)
+    sal_Bool SAL_CALL FormController::convertFastPropertyValue( Any & rConvertedValue, Any & rOldValue, sal_Int32 nHandle, const Any& rValue )
     {
         switch ( nHandle )
         {
@@ -214,7 +214,7 @@ namespace pcr
     }
 
     //------------------------------------------------------------------------
-	void SAL_CALL FormController::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue) throw (Exception)
+	void SAL_CALL FormController::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue)
 	{
 		switch ( _nHandle )
 		{
@@ -268,13 +268,13 @@ namespace pcr
 	//= DialogController
 	//====================================================================
     //------------------------------------------------------------------------
-    ::rtl::OUString DialogController::getImplementationName_static(  ) throw(RuntimeException)
+    ::rtl::OUString DialogController::getImplementationName_static(  )
     {
 		return ::rtl::OUString::createFromAscii("org.openoffice.comp.extensions.DialogController");
     }
 
     //------------------------------------------------------------------------
-	Sequence< ::rtl::OUString > DialogController::getSupportedServiceNames_static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > DialogController::getSupportedServiceNames_static(  )
     {
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii( "com.sun.star.awt.PropertyBrowserController" );

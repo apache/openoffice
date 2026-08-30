@@ -77,13 +77,13 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER2( SvtFolderPicker, OCommonPicker, SvtFolderPicke
 //------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------
-void SAL_CALL SvtFolderPicker::setTitle( const ::rtl::OUString& _rTitle ) throw (RuntimeException)
+void SAL_CALL SvtFolderPicker::setTitle( const ::rtl::OUString& _rTitle )
 {
 	OCommonPicker::setTitle( _rTitle );
 }
 
 //------------------------------------------------------------------------------------
-sal_Int16 SAL_CALL SvtFolderPicker::execute(  ) throw (RuntimeException)
+sal_Int16 SAL_CALL SvtFolderPicker::execute(  )
 {
 	return OCommonPicker::execute();
 }
@@ -93,13 +93,13 @@ sal_Int16 SAL_CALL SvtFolderPicker::execute(  ) throw (RuntimeException)
 //------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------
-void SAL_CALL SvtFolderPicker::setDialogTitle( const ::rtl::OUString& _rTitle) throw (RuntimeException)
+void SAL_CALL SvtFolderPicker::setDialogTitle( const ::rtl::OUString& _rTitle)
 {
     setTitle( _rTitle );
 }
 
 //------------------------------------------------------------------------------------
-void SAL_CALL SvtFolderPicker::startExecuteModal( const Reference< ::com::sun::star::ui::dialogs::XDialogClosedListener >& xListener ) throw (RuntimeException)
+void SAL_CALL SvtFolderPicker::startExecuteModal( const Reference< ::com::sun::star::ui::dialogs::XDialogClosedListener >& xListener )
 {
     m_xListener = xListener;
     prepareDialog();
@@ -158,13 +158,12 @@ IMPL_LINK( SvtFolderPicker, DialogClosedHdl, Dialog*, pDlg )
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SvtFolderPicker::setDisplayDirectory( const ::rtl::OUString& aDirectory )
-    throw( IllegalArgumentException, RuntimeException )
 {
 	m_aDisplayDirectory = aDirectory;
 }
 
 //------------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL SvtFolderPicker::getDisplayDirectory() throw( RuntimeException )
+::rtl::OUString SAL_CALL SvtFolderPicker::getDisplayDirectory()
 {
 	::rtl::OUString aResult;
 
@@ -182,7 +181,7 @@ void SAL_CALL SvtFolderPicker::setDisplayDirectory( const ::rtl::OUString& aDire
 }
 
 //------------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL SvtFolderPicker::getDirectory() throw( RuntimeException )
+::rtl::OUString SAL_CALL SvtFolderPicker::getDirectory()
 {
 	::rtl::OUString aResult;
 
@@ -201,7 +200,6 @@ void SAL_CALL SvtFolderPicker::setDisplayDirectory( const ::rtl::OUString& aDire
 
 //------------------------------------------------------------------------------------
 void SAL_CALL SvtFolderPicker::setDescription( const ::rtl::OUString& aDescription )
-    throw( RuntimeException )
 {
 	m_aDescription = aDescription;
 }
@@ -211,13 +209,13 @@ void SAL_CALL SvtFolderPicker::setDescription( const ::rtl::OUString& aDescripti
 //------------------------------------------------------------------------------------
 
 /* XServiceInfo */
-::rtl::OUString SAL_CALL SvtFolderPicker::getImplementationName() throw( RuntimeException )
+::rtl::OUString SAL_CALL SvtFolderPicker::getImplementationName()
 {
 	return impl_getStaticImplementationName();
 }
 
 /* XServiceInfo */
-sal_Bool SAL_CALL SvtFolderPicker::supportsService( const ::rtl::OUString& sServiceName ) throw( RuntimeException )
+sal_Bool SAL_CALL SvtFolderPicker::supportsService( const ::rtl::OUString& sServiceName )
 {
     Sequence< ::rtl::OUString > seqServiceNames = getSupportedServiceNames();
     const ::rtl::OUString* pArray = seqServiceNames.getConstArray();
@@ -232,7 +230,7 @@ sal_Bool SAL_CALL SvtFolderPicker::supportsService( const ::rtl::OUString& sServ
 }
 
 /* XServiceInfo */
-Sequence< ::rtl::OUString > SAL_CALL SvtFolderPicker::getSupportedServiceNames() throw( RuntimeException )
+Sequence< ::rtl::OUString > SAL_CALL SvtFolderPicker::getSupportedServiceNames()
 {
 	return impl_getStaticSupportedServiceNames();
 }
@@ -253,7 +251,6 @@ Sequence< ::rtl::OUString > SvtFolderPicker::impl_getStaticSupportedServiceNames
 
 /* Helper for registry */
 Reference< XInterface > SAL_CALL SvtFolderPicker::impl_createInstance( const Reference< XComponentContext >& rxContext )
-    throw( Exception )
 {
 	Reference< XMultiServiceFactory > xServiceManager (rxContext->getServiceManager(), UNO_QUERY_THROW);
 	return Reference< XInterface >( *new SvtFolderPicker( xServiceManager ) );

@@ -87,8 +87,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
         bool extensionContainsCompiledHelp();
 
         //XPackage
-        virtual css::beans::Optional< ::rtl::OUString > SAL_CALL getRegistrationDataURL()
-            throw (deployment::ExtensionRemovedException, css::uno::RuntimeException);
+        virtual css::beans::Optional< ::rtl::OUString > SAL_CALL getRegistrationDataURL();
     };
     friend class PackageImpl;
 
@@ -122,10 +121,8 @@ public:
 
     // XPackageRegistry
     virtual Sequence< Reference<deployment::XPackageTypeInfo> > SAL_CALL
-	    getSupportedPackageTypes() throw (RuntimeException);
-    virtual void SAL_CALL packageRemoved(OUString const & url, OUString const & mediaType)
-        throw (deployment::DeploymentException,
-               uno::RuntimeException);
+	    getSupportedPackageTypes();
+    virtual void SAL_CALL packageRemoved(OUString const & url, OUString const & mediaType);
 
 };
 
@@ -161,14 +158,12 @@ BackendImpl::BackendImpl(
 // XPackageRegistry
 //______________________________________________________________________________
 Sequence< Reference<deployment::XPackageTypeInfo> >
-BackendImpl::getSupportedPackageTypes() throw (RuntimeException)
+BackendImpl::getSupportedPackageTypes()
 {
     return m_typeInfos;
 }
 
 void BackendImpl::packageRemoved(OUString const & url, OUString const & /*mediaType*/)
-        throw (deployment::DeploymentException,
-               uno::RuntimeException)
 {
     if (m_backendDb.get())
         m_backendDb->removeEntry(url);
@@ -364,8 +359,6 @@ void BackendImpl::PackageImpl::processPackage_(
 }
 
 beans::Optional< OUString > BackendImpl::PackageImpl::getRegistrationDataURL()
-    throw (deployment::ExtensionRemovedException,
-           css::uno::RuntimeException)
 {
     if (m_bRemoved)
         throw deployment::ExtensionRemovedException();

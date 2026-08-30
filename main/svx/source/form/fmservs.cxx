@@ -30,7 +30,7 @@
 
 // ------------------------------------------------------------------------
 #define DECL_SERVICE(ImplName)						\
-::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL ImplName##_NewInstance_Impl(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > &) throw( ::com::sun::star::uno::Exception );
+::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL ImplName##_NewInstance_Impl(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > &);
 
 #define REGISTER_SERVICE(ImplName, ServiceName)							\
 	sString = (ServiceName);										\

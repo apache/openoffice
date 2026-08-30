@@ -72,13 +72,13 @@ using ::std::vector;
 class StandardEncryptionInfo : public EncryptionInfo
 {
 public:
-    StandardEncryptionInfo( BinaryInputStream& rStrm ) throw ( Exception );
+    StandardEncryptionInfo( BinaryInputStream& rStrm );
     ~StandardEncryptionInfo() {}
     bool isImplemented();
-    Sequence< NamedValue > verifyPassword( const OUString& rPassword ) throw ( Exception );
-    bool verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData ) throw ( Exception );
-    bool checkEncryptionData( const sal_uInt8* pnKey, sal_uInt32 nKeySize, const sal_uInt8* pnVerifier, sal_uInt32 nVerifierSize, const sal_uInt8* pnVerifierHash, sal_uInt32 nVerifierHashSize ) throw ( Exception );
-    void decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage ) throw ( Exception );
+    Sequence< NamedValue > verifyPassword( const OUString& rPassword );
+    bool verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData );
+    bool checkEncryptionData( const sal_uInt8* pnKey, sal_uInt32 nKeySize, const sal_uInt8* pnVerifier, sal_uInt32 nVerifierSize, const sal_uInt8* pnVerifierHash, sal_uInt32 nVerifierHashSize );
+    void decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage );
 
 private:
     sal_uInt8           mpnSalt[ 16 ];
@@ -93,7 +93,7 @@ private:
     vector< sal_uInt8>  encryptionKey;
 };
 
-StandardEncryptionInfo::StandardEncryptionInfo( BinaryInputStream& rStrm ) throw ( Exception )
+StandardEncryptionInfo::StandardEncryptionInfo( BinaryInputStream& rStrm )
 {
     char msg[ 1024 ];
     rStrm >> mnFlags;
@@ -170,7 +170,7 @@ static void deriveKey( const sal_uInt8* pnHash, sal_uInt32 nHashLen, sal_uInt8* 
     memcpy( pnKeyDerived, pnX1, nRequiredKeyLen );
 }
 
-Sequence< NamedValue > StandardEncryptionInfo::verifyPassword( const OUString& rPassword ) throw ( Exception )
+Sequence< NamedValue > StandardEncryptionInfo::verifyPassword( const OUString& rPassword )
 {
     size_t nBufferSize = mnSaltSize + 2 * rPassword.getLength();
     sal_uInt8* pnBuffer = new sal_uInt8[ nBufferSize ];
@@ -225,7 +225,7 @@ Sequence< NamedValue > StandardEncryptionInfo::verifyPassword( const OUString& r
     return aResult;
 }
 
-bool StandardEncryptionInfo::verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData ) throw ( Exception )
+bool StandardEncryptionInfo::verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData )
 {
     SequenceAsHashMap aHashData( rEncryptionData );
     Sequence< sal_Int8 > aKey = aHashData.getUnpackedValueOrDefault( CREATE_OUSTRING( "AES128EncryptionKey" ), Sequence< sal_Int8 >() );
@@ -246,7 +246,7 @@ bool StandardEncryptionInfo::verifyEncryptionData( const Sequence< NamedValue >&
         return false;
 }
 
-bool StandardEncryptionInfo::checkEncryptionData( const sal_uInt8* pnKey, sal_uInt32 nKeySize, const sal_uInt8* pnVerifier, sal_uInt32 nVerifierSize, const sal_uInt8* pnVerifierHash, sal_uInt32 nVerifierHashSize ) throw ( Exception )
+bool StandardEncryptionInfo::checkEncryptionData( const sal_uInt8* pnKey, sal_uInt32 nKeySize, const sal_uInt8* pnVerifier, sal_uInt32 nVerifierSize, const sal_uInt8* pnVerifierHash, sal_uInt32 nVerifierHashSize )
 {
     bool bResult = false;
 
@@ -290,7 +290,7 @@ bool StandardEncryptionInfo::checkEncryptionData( const sal_uInt8* pnKey, sal_uI
     return bResult;
 }
 
-void StandardEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage ) throw ( Exception )
+void StandardEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage )
 {
     EVP_CIPHER_CTX *aes_ctx;
     aes_ctx = EVP_CIPHER_CTX_new();
@@ -373,12 +373,12 @@ static bool decodeBase64( OUString& base64, vector< sal_uInt8 >& bytes )
 class AgileEncryptionInfo : public EncryptionInfo
 {
 public:
-    AgileEncryptionInfo( const Reference< XComponentContext >& context, Reference< XInputStream >& inputStream ) throw ( Exception );
+    AgileEncryptionInfo( const Reference< XComponentContext >& context, Reference< XInputStream >& inputStream );
     ~AgileEncryptionInfo() {}
     bool isImplemented() { return true; } // FIXME
-    Sequence< NamedValue > verifyPassword( const OUString& rPassword ) throw ( Exception );
-    bool verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData ) throw ( Exception );
-    void decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage ) throw ( Exception );
+    Sequence< NamedValue > verifyPassword( const OUString& rPassword );
+    bool verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData );
+    void decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage );
 
 private:
     AgileKeyData keyData;
@@ -401,27 +401,27 @@ public:
     }
 
     // XFastDocumentHandler
-    virtual void SAL_CALL startDocument() throw (SAXException, RuntimeException);
-    virtual void SAL_CALL endDocument() throw (SAXException, RuntimeException);
-    virtual void SAL_CALL setDocumentLocator( const Reference< XLocator >& xLocator ) throw (SAXException, RuntimeException);
+    virtual void SAL_CALL startDocument();
+    virtual void SAL_CALL endDocument();
+    virtual void SAL_CALL setDocumentLocator( const Reference< XLocator >& xLocator );
 
     // XFastContextHandler
-    virtual void SAL_CALL startFastElement( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL startUnknownElement( const OUString& Namespace, const OUString& Name, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL endFastElement( sal_Int32 Element ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL endUnknownElement( const OUString& Namespace, const OUString& Name ) throw (SAXException, RuntimeException);
-    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 Element, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
-    virtual Reference< XFastContextHandler > SAL_CALL createUnknownChildContext( const OUString& Namespace, const OUString& Name, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL characters( const OUString& aChars ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL ignorableWhitespace( const OUString& aWhitespaces ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL processingInstruction( const OUString& aTarget, const OUString& aData ) throw (SAXException, RuntimeException);
+    virtual void SAL_CALL startFastElement( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs );
+    virtual void SAL_CALL startUnknownElement( const OUString& Namespace, const OUString& Name, const Reference< XFastAttributeList >& Attribs );
+    virtual void SAL_CALL endFastElement( sal_Int32 Element );
+    virtual void SAL_CALL endUnknownElement( const OUString& Namespace, const OUString& Name );
+    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 Element, const Reference< XFastAttributeList >& Attribs );
+    virtual Reference< XFastContextHandler > SAL_CALL createUnknownChildContext( const OUString& Namespace, const OUString& Name, const Reference< XFastAttributeList >& Attribs );
+    virtual void SAL_CALL characters( const OUString& aChars );
+    virtual void SAL_CALL ignorableWhitespace( const OUString& aWhitespaces );
+    virtual void SAL_CALL processingInstruction( const OUString& aTarget, const OUString& aData );
 
     OUString& getLastError() { return lastError; }
 
 private:
-    void parseKeyData( const AttributeList& attribs ) throw (SAXException, RuntimeException);
-    void parseDataIntegrity( const AttributeList& attribs ) throw (SAXException, RuntimeException);
-    void parseEncryptedKey( const AttributeList& attribs ) throw (SAXException, RuntimeException);
+    void parseKeyData( const AttributeList& attribs );
+    void parseDataIntegrity( const AttributeList& attribs );
+    void parseEncryptedKey( const AttributeList& attribs );
 
     vector< sal_Int32 > stack;
     OUString lastError;
@@ -431,22 +431,18 @@ private:
 };
 
 void AgileEncryptionHandler::startDocument()
-    throw ( SAXException, RuntimeException )
 {
 }
 
 void AgileEncryptionHandler::endDocument()
-    throw ( SAXException, RuntimeException )
 {
 }
 
 void AgileEncryptionHandler::setDocumentLocator( const Reference< XLocator >& )
-    throw ( SAXException, RuntimeException )
 {
 }
 
 void AgileEncryptionHandler::startFastElement( sal_Int32 nElement, const Reference< XFastAttributeList >& attribs )
-    throw( SAXException, RuntimeException )
 {
     switch ( nElement )
     {
@@ -481,52 +477,43 @@ void AgileEncryptionHandler::startFastElement( sal_Int32 nElement, const Referen
 }
 
 void AgileEncryptionHandler::startUnknownElement( const OUString&, const OUString&, const Reference< XFastAttributeList >& )
-    throw( SAXException, RuntimeException )
 {
     stack.push_back( -1 );
 }
 
 void AgileEncryptionHandler::endFastElement( sal_Int32 nElement )
-    throw( SAXException, RuntimeException )
 {
     stack.pop_back();
 }
 
 void AgileEncryptionHandler::endUnknownElement( const OUString&, const OUString& )
-    throw( SAXException, RuntimeException )
 {
     stack.pop_back();
 }
 
 Reference< XFastContextHandler > AgileEncryptionHandler::createFastChildContext( sal_Int32, const Reference< XFastAttributeList >& )
-    throw (SAXException, RuntimeException)
 {
     return this;
 }
 
 Reference< XFastContextHandler > AgileEncryptionHandler::createUnknownChildContext( const OUString&, const OUString&, const Reference< XFastAttributeList >& )
-    throw (SAXException, RuntimeException)
 {
     return this;
 }
 
 void AgileEncryptionHandler::characters( const ::rtl::OUString& rStr )
-    throw( SAXException, RuntimeException )
 {
 }
 
 void AgileEncryptionHandler::ignorableWhitespace( const ::rtl::OUString& str )
-    throw( SAXException, RuntimeException )
 {
 }
 
 void AgileEncryptionHandler::processingInstruction( const ::rtl::OUString& aTarget, const ::rtl::OUString& aData )
-    throw( SAXException, RuntimeException )
 {
 }
 
 void AgileEncryptionHandler::parseKeyData( const AttributeList& attribs )
-    throw ( SAXException, RuntimeException )
 {
     keyData.saltSize = attribs.getInteger( XML_saltSize, 0 );
     keyData.blockSize = attribs.getInteger( XML_blockSize, 0 );
@@ -542,7 +529,6 @@ void AgileEncryptionHandler::parseKeyData( const AttributeList& attribs )
 }
 
 void AgileEncryptionHandler::parseDataIntegrity( const AttributeList& attribs )
-    throw ( SAXException, RuntimeException )
 {
     OUString encryptedHmacKey = attribs.getString( XML_encryptedHmacKey, OUString() );
     if( !decodeBase64( encryptedHmacKey, dataIntegrity.encryptedHmacKey ) )
@@ -553,7 +539,6 @@ void AgileEncryptionHandler::parseDataIntegrity( const AttributeList& attribs )
 }
 
 void AgileEncryptionHandler::parseEncryptedKey( const AttributeList& attribs )
-    throw ( SAXException, RuntimeException )
 {
     passwordKeyEncryptor.spinCount = attribs.getInteger( XML_spinCount, 0 );
     passwordKeyEncryptor.saltSize = attribs.getInteger( XML_saltSize, 0 );
@@ -577,7 +562,7 @@ void AgileEncryptionHandler::parseEncryptedKey( const AttributeList& attribs )
         lastError = OUString::createFromAscii( "Failed to base64 decode the passwordKeyEncryptor.encryptedKeyValue " ) + encryptedKeyValue;
 }
 
-static sal_uInt16 readUInt16LE( Reference< XInputStream >& inputStream ) throw ( Exception )
+static sal_uInt16 readUInt16LE( Reference< XInputStream >& inputStream )
 {
     Sequence< sal_Int8 > bytes( 2 );
     sal_Int32 bytesRead = inputStream->readBytes( bytes, 2 );
@@ -586,7 +571,7 @@ static sal_uInt16 readUInt16LE( Reference< XInputStream >& inputStream ) throw (
     return (sal_uInt16) ( bytes[0] | (bytes[1] << 8) );
 }
 
-static sal_uInt32 readUInt32LE( Reference< XInputStream >& inputStream ) throw ( Exception )
+static sal_uInt32 readUInt32LE( Reference< XInputStream >& inputStream )
 {
     Sequence< sal_Int8 > bytes( 4 );
     sal_Int32 bytesRead = inputStream->readBytes( bytes, 4 );
@@ -595,7 +580,7 @@ static sal_uInt32 readUInt32LE( Reference< XInputStream >& inputStream ) throw (
     return (sal_uInt32) ( bytes[0] | (bytes[1] << 8) | (bytes[2] << 16) | (bytes[3] << 24) );
 }
 
-AgileEncryptionInfo::AgileEncryptionInfo( const Reference< XComponentContext >& context, Reference< XInputStream >& inputStream ) throw ( Exception )
+AgileEncryptionInfo::AgileEncryptionInfo( const Reference< XComponentContext >& context, Reference< XInputStream >& inputStream )
 {
     sal_uInt32 nReserved = readUInt32LE( inputStream );
     if( nReserved != 0x40 )
@@ -611,7 +596,7 @@ AgileEncryptionInfo::AgileEncryptionInfo( const Reference< XComponentContext >& 
         throw new Exception( agileEncryptionHandler->getLastError(), Reference< XInterface >() );
 }
 
-static const EVP_MD* toOpenSSLDigestAlgorithm( const OUString& hashAlgorithm  ) throw ( Exception )
+static const EVP_MD* toOpenSSLDigestAlgorithm( const OUString& hashAlgorithm  )
 {
     if( hashAlgorithm.equalsAscii( "SHA-1" ) )
         return EVP_sha1();
@@ -641,7 +626,7 @@ static const EVP_MD* toOpenSSLDigestAlgorithm( const OUString& hashAlgorithm  ) 
     throw Exception( OUString::createFromAscii( buffer ), Reference< XInterface >() );
 }
 
-static const EVP_CIPHER* toOpenSSLCipherAlgorithm( const OUString& cipherName, sal_uInt32 keyBits, const OUString &chainingMode ) throw ( Exception )
+static const EVP_CIPHER* toOpenSSLCipherAlgorithm( const OUString& cipherName, sal_uInt32 keyBits, const OUString &chainingMode )
 {
     if( cipherName.equalsAscii( "AES" ) && keyBits == 128 && chainingMode.equalsAscii( "ChainingModeCBC" ) )
         return EVP_aes_128_cbc();
@@ -685,7 +670,7 @@ static const EVP_CIPHER* toOpenSSLCipherAlgorithm( const OUString& cipherName, s
 }
 
 // Ported from Apache POI's org.apache.poi.poifs.crypt.CryptoFunctions.hashPassword().
-static vector< sal_uInt8 > hashPassword( const OUString& password, const EVP_MD *digestAlgorithm, vector< sal_uInt8 >& salt, sal_uInt32 spinCount ) throw ( Exception )
+static vector< sal_uInt8 > hashPassword( const OUString& password, const EVP_MD *digestAlgorithm, vector< sal_uInt8 >& salt, sal_uInt32 spinCount )
 {
     OpenSSLDigest digest;
     digest.initialize( digestAlgorithm );
@@ -746,7 +731,6 @@ static vector< sal_uInt8 > generateKey( const vector< sal_uInt8 >& passwordHash,
                                         const EVP_MD *digestAlgorithm,
                                         const vector< sal_uInt8 >& blockKey,
                                         sal_uInt32 keySize )
-    throw ( Exception )
 {
     OpenSSLDigest digest;
     digest.initialize( digestAlgorithm );
@@ -761,7 +745,6 @@ static vector< sal_uInt8 > generateKey( const vector< sal_uInt8 >& passwordHash,
 // Ported from Apache POI's org.apache.poi.poifs.crypt.CryptoFunctions.generateIv().
 static vector< sal_uInt8> generateIv( const vector< sal_uInt8 >& salt,
                                       sal_uInt32 blockSize )
-    throw ( Exception )
 {
     vector< sal_uInt8> iv( salt );
     toBlock36( iv, blockSize );
@@ -773,7 +756,6 @@ static vector< sal_uInt8> generateIv( const EVP_MD *digestAlgorithm,
                                       const vector< sal_uInt8 >& salt,
                                       const vector< sal_uInt8 >& blockKey,
                                       sal_uInt32 blockSize )
-    throw ( Exception )
 {
     OpenSSLDigest digest;
     digest.initialize( digestAlgorithm );
@@ -797,7 +779,6 @@ static vector< sal_uInt8 > decryptAll( const EVP_CIPHER* cipherAlgorithm,
                                        const sal_uInt8* key,
                                        const sal_uInt8* encryptedData,
                                        sal_uInt32 encryptedDataLength )
-    throw ( Exception )
 {
     OpenSSLCipher cipher;
     cipher.initialize( cipherAlgorithm, key, iv, 0 );
@@ -823,7 +804,6 @@ static vector< sal_uInt8 > hashInput( const vector< sal_uInt8 >& passwordHash,
                                       const EVP_CIPHER *decryptionAlgorithm,
                                       sal_uInt32 keySize,
                                       sal_uInt32 blockSize )
-    throw ( Exception )
 {
     vector< sal_uInt8 > intermediateKey = generateKey( passwordHash, digestAlgorithm, blockKey, keySize );
     vector< sal_uInt8> iv = generateIv( salt, blockSize );
@@ -835,7 +815,6 @@ static vector< sal_uInt8 > hashInput( const vector< sal_uInt8 >& passwordHash,
 
 // Ported from Apache POI's org.apache.poi.poifs.crypt.agile.AgileDecryptor.verifyPassword().
 Sequence< NamedValue > AgileEncryptionInfo::verifyPassword( const OUString& password )
-    throw ( Exception )
 {
     const EVP_MD *digestAlgorithm = toOpenSSLDigestAlgorithm( passwordKeyEncryptor.hashAlgorithm );
     vector< sal_uInt8 > passwordHash = hashPassword( password, digestAlgorithm, passwordKeyEncryptor.saltValue, passwordKeyEncryptor.spinCount );
@@ -896,7 +875,6 @@ Sequence< NamedValue > AgileEncryptionInfo::verifyPassword( const OUString& pass
 }
 
 bool AgileEncryptionInfo::verifyEncryptionData( const Sequence< NamedValue >& rEncryptionData )
-    throw ( Exception )
 {
     // OpenGrok shows how only main/comphelper/source/misc/docpasswordhelper.cxx calls IDocPasswordVerifier::verifyEncryptionData(),
     // and only when the password is wrong and the rMediaEncData non-empty, which presumably allows other forms of encryption
@@ -906,7 +884,6 @@ bool AgileEncryptionInfo::verifyEncryptionData( const Sequence< NamedValue >& rE
 
 // Ported from Apache POI's org.apache.poi.poifs.crypt.agile.AgileDecryptor.initCipherForBlock().
 void AgileEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage )
-    throw ( Exception )
 {
     if( encryptionKey.empty() )
         throw Exception( OUString::createFromAscii( "Encryption key not set, was the password wrong?" ), Reference< XInterface >() );
@@ -953,7 +930,6 @@ void AgileEncryptionInfo::decryptStream( BinaryXInputStream &aEncryptedPackage, 
 }
 
 EncryptionInfo* EncryptionInfo::readEncryptionInfo( const Reference< XComponentContext >& context, Reference< XInputStream >& inputStream )
-    throw ( Exception )
 {
     sal_uInt16 nVersionMajor = readUInt16LE( inputStream );
     sal_uInt16 nVersionMinor = readUInt16LE( inputStream );

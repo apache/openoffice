@@ -125,7 +125,6 @@ void SAL_CALL ScAccessibleContextBase::disposing()
 //=====  XInterface  =====================================================
 
 uno::Any SAL_CALL ScAccessibleContextBase::queryInterface( uno::Type const & rType )
-	throw (uno::RuntimeException)
 {
 	uno::Any aAny (ScAccessibleContextBaseWeakImpl::queryInterface(rType));
 	return aAny.hasValue() ? aAny : ScAccessibleContextBaseImplEvent::queryInterface(rType);
@@ -162,7 +161,6 @@ void ScAccessibleContextBase::Notify( SfxBroadcaster&, const SfxHint& rHint )
 
 uno::Reference< XAccessibleContext> SAL_CALL
     ScAccessibleContextBase::getAccessibleContext(void)
-    throw (uno::RuntimeException)
 {
 	return this;
 }
@@ -170,7 +168,6 @@ uno::Reference< XAccessibleContext> SAL_CALL
 //=====  XAccessibleComponent  ================================================
 
 sal_Bool SAL_CALL ScAccessibleContextBase::containsPoint(const awt::Point& rPoint )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -179,14 +176,12 @@ sal_Bool SAL_CALL ScAccessibleContextBase::containsPoint(const awt::Point& rPoin
 
 uno::Reference< XAccessible > SAL_CALL ScAccessibleContextBase::getAccessibleAtPoint(
         const awt::Point& /* rPoint */ )
-		throw (uno::RuntimeException)
 {
 	DBG_ERROR("not implemented");
 	return uno::Reference<XAccessible>();
 }
 
 awt::Rectangle SAL_CALL ScAccessibleContextBase::getBounds(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -194,7 +189,6 @@ awt::Rectangle SAL_CALL ScAccessibleContextBase::getBounds(  )
 }
 
 awt::Point SAL_CALL ScAccessibleContextBase::getLocation(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -202,7 +196,6 @@ awt::Point SAL_CALL ScAccessibleContextBase::getLocation(  )
 }
 
 awt::Point SAL_CALL ScAccessibleContextBase::getLocationOnScreen(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -210,7 +203,6 @@ awt::Point SAL_CALL ScAccessibleContextBase::getLocationOnScreen(  )
 }
 
 awt::Size SAL_CALL ScAccessibleContextBase::getSize(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -218,7 +210,6 @@ awt::Size SAL_CALL ScAccessibleContextBase::getSize(  )
 }
 
 sal_Bool SAL_CALL ScAccessibleContextBase::isShowing(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -237,25 +228,21 @@ sal_Bool SAL_CALL ScAccessibleContextBase::isShowing(  )
 }
 
 sal_Bool SAL_CALL ScAccessibleContextBase::isVisible(  )
-		throw (uno::RuntimeException)
 {
 	return sal_True;
 }
 
 void SAL_CALL ScAccessibleContextBase::grabFocus(  )
-		throw (uno::RuntimeException)
 {
 	DBG_ERROR("not implemented");
 }
 
 sal_Int32 SAL_CALL ScAccessibleContextBase::getForeground(  )
-        throw (uno::RuntimeException)
 {
     return COL_BLACK;
 }
 
 sal_Int32 SAL_CALL ScAccessibleContextBase::getBackground(  )
-        throw (uno::RuntimeException)
 {
     return COL_WHITE;
 }
@@ -264,7 +251,6 @@ sal_Int32 SAL_CALL ScAccessibleContextBase::getBackground(  )
 
 sal_Int32 SAL_CALL
    	ScAccessibleContextBase::getAccessibleChildCount(void)
-    throw (uno::RuntimeException)
 {
 	DBG_ERROR("should be implemented in the abrevated class");
 	return 0;
@@ -272,7 +258,6 @@ sal_Int32 SAL_CALL
 
 uno::Reference<XAccessible> SAL_CALL
     ScAccessibleContextBase::getAccessibleChild(sal_Int32 /* nIndex */)
-        throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	DBG_ERROR("should be implemented in the abrevated class");
     return uno::Reference<XAccessible>();
@@ -280,14 +265,12 @@ uno::Reference<XAccessible> SAL_CALL
 
 uno::Reference<XAccessible> SAL_CALL
    	ScAccessibleContextBase::getAccessibleParent(void)
-    throw (uno::RuntimeException)
 {
 	return mxParent;
 }
 
 sal_Int32 SAL_CALL
    	ScAccessibleContextBase::getAccessibleIndexInParent(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -321,14 +304,12 @@ sal_Int32 SAL_CALL
 
 sal_Int16 SAL_CALL
 	ScAccessibleContextBase::getAccessibleRole(void)
-    throw (uno::RuntimeException)
 {
 	return maRole;
 }
 
 ::rtl::OUString SAL_CALL
    	ScAccessibleContextBase::getAccessibleDescription(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -355,7 +336,6 @@ sal_Int16 SAL_CALL
 
 OUString SAL_CALL
    	ScAccessibleContextBase::getAccessibleName(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -382,22 +362,18 @@ OUString SAL_CALL
 
 uno::Reference<XAccessibleRelationSet> SAL_CALL
    	ScAccessibleContextBase::getAccessibleRelationSet(void)
-    throw (uno::RuntimeException)
 {
 	return new utl::AccessibleRelationSetHelper();
 }
 
 uno::Reference<XAccessibleStateSet> SAL_CALL
     	ScAccessibleContextBase::getAccessibleStateSet(void)
-    throw (uno::RuntimeException)
 {
 	return uno::Reference<XAccessibleStateSet>();
 }
 
 lang::Locale SAL_CALL
    	ScAccessibleContextBase::getLocale(void)
-	throw (IllegalAccessibleComponentStateException,
-		uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -419,7 +395,6 @@ lang::Locale SAL_CALL
 void SAL_CALL
    	ScAccessibleContextBase::addEventListener(
        	const uno::Reference<XAccessibleEventListener>& xListener)
-    throw (uno::RuntimeException)
 {
 	if (xListener.is())
     {
@@ -437,7 +412,6 @@ void SAL_CALL
 void SAL_CALL
    	ScAccessibleContextBase::removeEventListener(
 		const uno::Reference<XAccessibleEventListener>& xListener)
-    throw (uno::RuntimeException)
 {
 	if (xListener.is())
 	{
@@ -462,7 +436,6 @@ void SAL_CALL
 
 void SAL_CALL ScAccessibleContextBase::disposing(
 	const lang::EventObject& rSource )
-		throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
 	if (rSource.Source == mxParent)
@@ -471,7 +444,6 @@ void SAL_CALL ScAccessibleContextBase::disposing(
 
 void SAL_CALL ScAccessibleContextBase::notifyEvent(
         const AccessibleEventObject& /* aEvent */ )
-		throw (uno::RuntimeException)
 {
 }
 
@@ -479,14 +451,12 @@ void SAL_CALL ScAccessibleContextBase::notifyEvent(
 
 ::rtl::OUString SAL_CALL
    	ScAccessibleContextBase::getImplementationName(void)
-    throw (uno::RuntimeException)
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM ("ScAccessibleContextBase"));
 }
 
 sal_Bool SAL_CALL
  	ScAccessibleContextBase::supportsService(const OUString& sServiceName)
-    throw (uno::RuntimeException)
 {
     //  Iterate over all supported service names and return true if on of them
     //  matches the given name.
@@ -502,7 +472,6 @@ sal_Bool SAL_CALL
 
 uno::Sequence< ::rtl::OUString> SAL_CALL
    	ScAccessibleContextBase::getSupportedServiceNames(void)
-    throw (uno::RuntimeException)
 {
 	uno::Sequence<OUString> aServiceNames(2);
 	OUString* pServiceNames = aServiceNames.getArray();
@@ -518,14 +487,12 @@ uno::Sequence< ::rtl::OUString> SAL_CALL
 //=====  XTypeProvider  =======================================================
 
 uno::Sequence< uno::Type > SAL_CALL ScAccessibleContextBase::getTypes()
-		throw (uno::RuntimeException)
 {
 	return comphelper::concatSequences(ScAccessibleContextBaseWeakImpl::getTypes(), ScAccessibleContextBaseImplEvent::getTypes());
 }
 
 uno::Sequence<sal_Int8> SAL_CALL
 	ScAccessibleContextBase::getImplementationId(void)
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -542,7 +509,6 @@ uno::Sequence<sal_Int8> SAL_CALL
 
 ::rtl::OUString SAL_CALL
     ScAccessibleContextBase::createAccessibleDescription(void)
-    throw (uno::RuntimeException)
 {
 	DBG_ERROR("should be implemented in the abrevated class");
 	return rtl::OUString();
@@ -550,7 +516,6 @@ uno::Sequence<sal_Int8> SAL_CALL
 
 ::rtl::OUString SAL_CALL
     ScAccessibleContextBase::createAccessibleName(void)
-    throw (uno::RuntimeException)
 {
 	DBG_ERROR("should be implemented in the abrevated class");
 	return rtl::OUString();
@@ -602,21 +567,18 @@ void ScAccessibleContextBase::CommitFocusLost() const
 }
 
 Rectangle ScAccessibleContextBase::GetBoundingBoxOnScreen(void) const
-		throw (uno::RuntimeException)
 {
 	DBG_ERROR("not implemented");
 	return Rectangle();
 }
 
 Rectangle ScAccessibleContextBase::GetBoundingBox(void) const
-		throw (uno::RuntimeException)
 {
 	DBG_ERROR("not implemented");
 	return Rectangle();
 }
 
 void ScAccessibleContextBase::IsObjectValid() const
-        throw (lang::DisposedException)
 {
     if (rBHelper.bDisposed || rBHelper.bInDispose)
         throw lang::DisposedException();

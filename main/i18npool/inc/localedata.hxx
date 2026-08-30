@@ -77,47 +77,47 @@ public:
     LocaleData();
     ~LocaleData();
 
-	virtual LanguageCountryInfo SAL_CALL getLanguageCountryInfo( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual LocaleDataItem SAL_CALL getLocaleItem( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< Calendar > SAL_CALL getAllCalendars( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< Currency > SAL_CALL getAllCurrencies( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< Currency2 > SAL_CALL getAllCurrencies2( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< FormatElement > SAL_CALL getAllFormats( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< Implementation > SAL_CALL getCollatorImplementations( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getCollatorRuleByAlgorithm( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getTransliterations( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual ForbiddenCharacters SAL_CALL getForbiddenCharacters( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getReservedWord( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException) ;
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getBreakIteratorRules( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException) ;
-	virtual com::sun::star::uno::Sequence< com::sun::star::lang::Locale > SAL_CALL getAllInstalledLocaleNames() throw(com::sun::star::uno::RuntimeException);
+	virtual LanguageCountryInfo SAL_CALL getLanguageCountryInfo( const com::sun::star::lang::Locale& rLocale );
+	virtual LocaleDataItem SAL_CALL getLocaleItem( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< Calendar > SAL_CALL getAllCalendars( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< Currency > SAL_CALL getAllCurrencies( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< Currency2 > SAL_CALL getAllCurrencies2( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< FormatElement > SAL_CALL getAllFormats( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< Implementation > SAL_CALL getCollatorImplementations( const com::sun::star::lang::Locale& rLocale );
+    virtual rtl::OUString SAL_CALL getCollatorRuleByAlgorithm( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm );
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getTransliterations( const com::sun::star::lang::Locale& rLocale );
+	virtual ForbiddenCharacters SAL_CALL getForbiddenCharacters( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getReservedWord( const com::sun::star::lang::Locale& rLocale ) ;
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getBreakIteratorRules( const com::sun::star::lang::Locale& rLocale ) ;
+	virtual com::sun::star::uno::Sequence< com::sun::star::lang::Locale > SAL_CALL getAllInstalledLocaleNames();
 
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSearchOptions( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getCollationOptions( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< com::sun::star::uno::Sequence< beans::PropertyValue > > SAL_CALL getContinuousNumberingLevels( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< com::sun::star::uno::Reference< container::XIndexAccess > > SAL_CALL getOutlineNumberingLevels( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSearchOptions( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getCollationOptions( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< com::sun::star::uno::Sequence< beans::PropertyValue > > SAL_CALL getContinuousNumberingLevels( const com::sun::star::lang::Locale& rLocale );
+	virtual com::sun::star::uno::Sequence< com::sun::star::uno::Reference< container::XIndexAccess > > SAL_CALL getOutlineNumberingLevels( const com::sun::star::lang::Locale& rLocale );
 
     // following methods are used by indexentry service
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getIndexAlgorithm( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getDefaultIndexAlgorithm( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getIndexKeysByAlgorithm( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm ) throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getIndexModuleByAlgorithm( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm ) throw(com::sun::star::uno::RuntimeException);
-	virtual com::sun::star::uno::Sequence< UnicodeScript > SAL_CALL getUnicodeScripts( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getFollowPageWords( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasPhonetic( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isPhonetic( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm ) throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getHangingCharacters( const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getIndexAlgorithm( const com::sun::star::lang::Locale& rLocale );
+    virtual rtl::OUString SAL_CALL getDefaultIndexAlgorithm( const com::sun::star::lang::Locale& rLocale );
+    virtual rtl::OUString SAL_CALL getIndexKeysByAlgorithm( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm );
+    virtual rtl::OUString SAL_CALL getIndexModuleByAlgorithm( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm );
+	virtual com::sun::star::uno::Sequence< UnicodeScript > SAL_CALL getUnicodeScripts( const com::sun::star::lang::Locale& rLocale );
+    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getFollowPageWords( const com::sun::star::lang::Locale& rLocale );
+    virtual sal_Bool SAL_CALL hasPhonetic( const com::sun::star::lang::Locale& rLocale );
+    virtual sal_Bool SAL_CALL isPhonetic( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm );
+    virtual rtl::OUString SAL_CALL getHangingCharacters( const com::sun::star::lang::Locale& rLocale );
 
 	//XServiceInfo
-	virtual rtl::OUString SAL_CALL getImplementationName() throw( com::sun::star::uno::RuntimeException );
-	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) throw( com::sun::star::uno::RuntimeException );
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames() throw( com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 private :
 	friend sal_Bool operator ==(const com::sun::star::lang::Locale& l1, const com::sun::star::lang::Locale& l2);
 
     ::std::auto_ptr< LocaleDataLookupTableItem > cachedItem;
 
-	oslGenericFunction SAL_CALL getFunctionSymbol( const com::sun::star::lang::Locale& rLocale, const sal_Char* pFunction ) throw( com::sun::star::uno::RuntimeException );
+	oslGenericFunction SAL_CALL getFunctionSymbol( const com::sun::star::lang::Locale& rLocale, const sal_Char* pFunction );
 	oslGenericFunction SAL_CALL getFunctionSymbolByName( const rtl::OUString& localeName, const sal_Char* pFunction );
     sal_Unicode ** SAL_CALL getIndexArray(const com::sun::star::lang::Locale& rLocale, sal_Int16& indexCount);
     sal_Unicode ** SAL_CALL getIndexArrayForAlgorithm(const com::sun::star::lang::Locale& rLocale, const rtl::OUString& rAlgorithm);
@@ -127,7 +127,7 @@ private :
 		getCalendarItemByName(const rtl::OUString& name,
 		const com::sun::star::lang::Locale& rLocale,
 		const com::sun::star::uno::Sequence< com::sun::star::i18n::Calendar >& calendarsSeq,
-		sal_Int16 len, sal_Int16 item) throw( com::sun::star::uno::RuntimeException );
+		sal_Int16 len, sal_Int16 item);
 };
 
 } } } }

@@ -57,12 +57,12 @@ public:
 
 
 	// XHatchWindowFactory
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::embed::XHatchWindow > SAL_CALL createHatchWindowInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& xParent, const ::com::sun::star::awt::Rectangle& aBounds, const ::com::sun::star::awt::Size& aSize ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::embed::XHatchWindow > SAL_CALL createHatchWindowInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& xParent, const ::com::sun::star::awt::Rectangle& aBounds, const ::com::sun::star::awt::Size& aSize );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 };
 

@@ -331,14 +331,12 @@ STDMETHODIMP VistaFilePickerEventHandler::OnControlActivating(IFileDialogCustomi
 
 //-----------------------------------------------------------------------------------------
 void SAL_CALL VistaFilePickerEventHandler::addFilePickerListener( const css::uno::Reference< css::ui::dialogs::XFilePickerListener >& xListener )
-    throw( css::uno::RuntimeException )
 {
     m_lListener.addInterface(::getCppuType( (const css::uno::Reference< css::ui::dialogs::XFilePickerListener >*)NULL ), xListener);
 }
 
 //-----------------------------------------------------------------------------------------
 void SAL_CALL VistaFilePickerEventHandler::removeFilePickerListener( const css::uno::Reference< css::ui::dialogs::XFilePickerListener >& xListener )
-    throw( css::uno::RuntimeException )
 {
     m_lListener.removeInterface(::getCppuType( (const css::uno::Reference< css::ui::dialogs::XFilePickerListener >*)NULL ), xListener);
 }

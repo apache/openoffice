@@ -49,20 +49,16 @@ public:
 
     //=====  XAccessibleImage  ================================================
 
-    ::rtl::OUString SAL_CALL getAccessibleImageDescription (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    ::rtl::OUString SAL_CALL getAccessibleImageDescription (void);
 
-    sal_Int32 SAL_CALL getAccessibleImageHeight (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    sal_Int32 SAL_CALL getAccessibleImageHeight (void);
 
-    sal_Int32 SAL_CALL getAccessibleImageWidth (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    sal_Int32 SAL_CALL getAccessibleImageWidth (void);
 
     //=====  XInterface  ======================================================
 
     virtual com::sun::star::uno::Any SAL_CALL
-        queryInterface (const com::sun::star::uno::Type & rType)
-        throw (::com::sun::star::uno::RuntimeException);
+        queryInterface (const com::sun::star::uno::Type & rType);
 
     virtual void SAL_CALL
         acquire (void)
@@ -77,30 +73,25 @@ public:
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName (void)
-	    throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName (void);
 
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-        getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames (void);
 
     //=====  XTypeProvider  ===================================================
 
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
-        getTypes (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getTypes (void);
 ///	Return this object's role.
-	virtual sal_Int16 SAL_CALL getAccessibleRole (void) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int16 SAL_CALL getAccessibleRole (void);
 protected:
     ///	Create a name string that contains the accessible name.
 	virtual ::rtl::OUString
-    	CreateAccessibleBaseName ()
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleBaseName ();
 
     ///	Create a description string that contains the accessible description.
 	virtual ::rtl::OUString
-    	CreateAccessibleDescription ()
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleDescription ();
 
 private:
     /** Don't use the default constructor.  Use the public constructor that

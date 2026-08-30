@@ -53,28 +53,28 @@ private:
 protected:
 
     // XInterface
-	virtual com::sun::star::uno::Any SAL_CALL queryInterface( const com::sun::star::uno::Type& aType ) throw (com::sun::star::uno::RuntimeException);
+	virtual com::sun::star::uno::Any SAL_CALL queryInterface( const com::sun::star::uno::Type& aType );
 	virtual void SAL_CALL acquire() throw ();
 	virtual void SAL_CALL release() throw ();
 
 	// OGenericUnoDialog
-    virtual com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw(com::sun::star::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL getImplementationName() throw (com::sun::star::uno::RuntimeException);
-    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);
+    virtual com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
     virtual Dialog*	createDialog( Window* pParent );
     virtual void executedDialog( sal_Int16 nExecutionResult );
-	virtual com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo() throw(com::sun::star::uno::RuntimeException);
+	virtual com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo>  SAL_CALL getPropertySetInfo();
 	virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 	virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
 
     // XPropertyAccess
     using cppu::OPropertySetHelper::getPropertyValues;
-    virtual com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getPropertyValues(  ) throw (com::sun::star::uno::RuntimeException);
+    virtual com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL getPropertyValues(  );
     using cppu::OPropertySetHelper::setPropertyValues;
-    virtual void SAL_CALL setPropertyValues( const com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aProps ) throw (com::sun::star::beans::UnknownPropertyException, com::sun::star::beans::PropertyVetoException, com::sun::star::lang::IllegalArgumentException, com::sun::star::lang::WrappedTargetException, com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setPropertyValues( const com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aProps );
 
    	// XExporter
-    virtual void SAL_CALL setSourceDocument( const com::sun::star::uno::Reference< com::sun::star::lang::XComponent >& xDoc ) throw(com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setSourceDocument( const com::sun::star::uno::Reference< com::sun::star::lang::XComponent >& xDoc );
 
 public:
 
@@ -84,23 +84,19 @@ public:
 
 // -----------------------------------------------------------------------------
 
-::rtl::OUString SVGDialog_getImplementationName ()
-    throw ( ::com::sun::star::uno::RuntimeException );
+::rtl::OUString SVGDialog_getImplementationName ();
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL SVGDialog_supportsService( const ::rtl::OUString& ServiceName )
-    throw ( ::com::sun::star::uno::RuntimeException );
+sal_Bool SAL_CALL SVGDialog_supportsService( const ::rtl::OUString& ServiceName );
 
 // -----------------------------------------------------------------------------
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGDialog_getSupportedServiceNames(  )
-    throw ( ::com::sun::star::uno::RuntimeException );
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGDialog_getSupportedServiceNames(  );
 
 // -----------------------------------------------------------------------------
 
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >
-    SAL_CALL SVGDialog_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr)
-        throw ( ::com::sun::star::uno::Exception );
+    SAL_CALL SVGDialog_createInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 
 #endif // SVGDialog_HXX

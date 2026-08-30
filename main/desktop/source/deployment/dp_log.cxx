@@ -63,9 +63,9 @@ public:
                      Reference<XComponentContext> const & xContext );
 
     // XProgressHandler
-    virtual void SAL_CALL push( Any const & Status ) throw (RuntimeException);
-    virtual void SAL_CALL update( Any const & Status ) throw (RuntimeException);
-    virtual void SAL_CALL pop() throw (RuntimeException);
+    virtual void SAL_CALL push( Any const & Status );
+    virtual void SAL_CALL update( Any const & Status );
+    virtual void SAL_CALL pop();
 };
 
 //______________________________________________________________________________
@@ -156,7 +156,6 @@ void ProgressLogImpl::log_write( OString const & text )
 // XProgressHandler
 //______________________________________________________________________________
 void ProgressLogImpl::push( Any const & Status )
-    throw (RuntimeException)
 {
     update( Status );
     OSL_ASSERT( m_log_level >= 0 );
@@ -165,7 +164,6 @@ void ProgressLogImpl::push( Any const & Status )
 
 //______________________________________________________________________________
 void ProgressLogImpl::update( Any const & Status )
-    throw (RuntimeException)
 {
     if (! Status.hasValue())
         return;
@@ -189,7 +187,7 @@ void ProgressLogImpl::update( Any const & Status )
 }
 
 //______________________________________________________________________________
-void ProgressLogImpl::pop() throw (RuntimeException)
+void ProgressLogImpl::pop()
 {
     OSL_ASSERT( m_log_level > 0 );
     --m_log_level;

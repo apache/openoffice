@@ -68,33 +68,25 @@ public:
 
     // XComponent
     virtual void SAL_CALL
-    dispose()
-        throw ( com::sun::star::uno::RuntimeException );
+    dispose();
     virtual void SAL_CALL
     addEventListener( const com::sun::star::uno::Reference<
-                        com::sun::star::lang::XEventListener > & xListener )
-        throw ( com::sun::star::uno::RuntimeException );
+                        com::sun::star::lang::XEventListener > & xListener );
     virtual void SAL_CALL
     removeEventListener( const com::sun::star::uno::Reference<
-                            com::sun::star::lang::XEventListener > & aListener )
-        throw ( com::sun::star::uno::RuntimeException );
+                            com::sun::star::lang::XEventListener > & aListener );
 
     // XMultiServiceFactory
     virtual com::sun::star::uno::Reference<
         com::sun::star::uno::XInterface > SAL_CALL
-    createInstance( const rtl::OUString & aServiceSpecifier )
-        throw ( com::sun::star::uno::Exception,
-                com::sun::star::uno::RuntimeException );
+    createInstance( const rtl::OUString & aServiceSpecifier );
     virtual com::sun::star::uno::Reference<
         com::sun::star::uno::XInterface > SAL_CALL
     createInstanceWithArguments( const rtl::OUString & ServiceSpecifier,
                                  const com::sun::star::uno::Sequence<
-                                    com::sun::star::uno::Any > & Arguments )
-        throw ( com::sun::star::uno::Exception,
-                com::sun::star::uno::RuntimeException );
+                                    com::sun::star::uno::Any > & Arguments );
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-    getAvailableServiceNames()
-        throw ( com::sun::star::uno::RuntimeException );
+    getAvailableServiceNames();
 
 	// Non-Interface methods
 
@@ -104,9 +96,7 @@ private:
     createInstanceWithArguments( const rtl::OUString & ServiceSpecifier,
                                  const com::sun::star::uno::Sequence<
                                     com::sun::star::uno::Any > & Arguments,
-                                 bool bCheckArgs )
-        throw ( com::sun::star::uno::Exception,
-                com::sun::star::uno::RuntimeException );
+                                 bool bCheckArgs );
 
     com::sun::star::uno::Reference<
         com::sun::star::lang::XMultiServiceFactory >

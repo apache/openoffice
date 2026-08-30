@@ -49,7 +49,7 @@ CalendarImpl::~CalendarImpl()
 
 
 void SAL_CALL
-CalendarImpl::loadDefaultCalendar( const Locale& rLocale ) throw(RuntimeException)
+CalendarImpl::loadDefaultCalendar( const Locale& rLocale )
 {
     Sequence< Calendar> xC = LocaleData().getAllCalendars(rLocale);
     for (sal_Int32 i = 0; i < xC.getLength(); i++) {
@@ -62,7 +62,7 @@ CalendarImpl::loadDefaultCalendar( const Locale& rLocale ) throw(RuntimeExceptio
 }
 
 void SAL_CALL
-CalendarImpl::loadCalendar(const OUString& uniqueID, const Locale& rLocale ) throw (RuntimeException)
+CalendarImpl::loadCalendar(const OUString& uniqueID, const Locale& rLocale )
 {
     Reference < XExtendedCalendar > xOldCalendar( xCalendar );  // backup
     sal_Int32 i;
@@ -117,7 +117,7 @@ CalendarImpl::loadCalendar(const OUString& uniqueID, const Locale& rLocale ) thr
 }
 
 Calendar SAL_CALL
-CalendarImpl::getLoadedCalendar() throw(RuntimeException)
+CalendarImpl::getLoadedCalendar()
 {
     if (xCalendar.is())
         return xCalendar->getLoadedCalendar();
@@ -126,7 +126,7 @@ CalendarImpl::getLoadedCalendar() throw(RuntimeException)
 }
 
 Sequence< OUString > SAL_CALL
-CalendarImpl::getAllCalendars( const Locale& rLocale ) throw(RuntimeException)
+CalendarImpl::getAllCalendars( const Locale& rLocale )
 {
     Sequence< Calendar> xC = LocaleData().getAllCalendars(rLocale);
     sal_Int32 nLen = xC.getLength();
@@ -137,7 +137,7 @@ CalendarImpl::getAllCalendars( const Locale& rLocale ) throw(RuntimeException)
 }
 
 void SAL_CALL
-CalendarImpl::setDateTime( double timeInDays ) throw(RuntimeException)
+CalendarImpl::setDateTime( double timeInDays )
 {
     if (xCalendar.is())
         xCalendar->setDateTime( timeInDays );
@@ -146,7 +146,7 @@ CalendarImpl::setDateTime( double timeInDays ) throw(RuntimeException)
 }
 
 double SAL_CALL
-CalendarImpl::getDateTime() throw(RuntimeException)
+CalendarImpl::getDateTime()
 {
     if (xCalendar.is())
         return xCalendar->getDateTime();
@@ -155,7 +155,7 @@ CalendarImpl::getDateTime() throw(RuntimeException)
 }
 
 OUString SAL_CALL
-CalendarImpl::getUniqueID() throw(RuntimeException)
+CalendarImpl::getUniqueID()
 {
     if (xCalendar.is())
         return xCalendar->getUniqueID();
@@ -164,7 +164,7 @@ CalendarImpl::getUniqueID() throw(RuntimeException)
 }
 
 void SAL_CALL
-CalendarImpl::setValue( sal_Int16 fieldIndex, sal_Int16 value ) throw(RuntimeException)
+CalendarImpl::setValue( sal_Int16 fieldIndex, sal_Int16 value )
 {
     if (xCalendar.is())
         xCalendar->setValue( fieldIndex, value );
@@ -173,7 +173,7 @@ CalendarImpl::setValue( sal_Int16 fieldIndex, sal_Int16 value ) throw(RuntimeExc
 }
 
 sal_Int16 SAL_CALL
-CalendarImpl::getValue( sal_Int16 fieldIndex ) throw(RuntimeException)
+CalendarImpl::getValue( sal_Int16 fieldIndex )
 {
     if (xCalendar.is())
         return xCalendar->getValue( fieldIndex );
@@ -182,7 +182,7 @@ CalendarImpl::getValue( sal_Int16 fieldIndex ) throw(RuntimeException)
 }
 
 void SAL_CALL
-CalendarImpl::addValue( sal_Int16 fieldIndex, sal_Int32 amount ) throw(RuntimeException)
+CalendarImpl::addValue( sal_Int16 fieldIndex, sal_Int32 amount )
 {
     if (xCalendar.is())
         xCalendar->addValue( fieldIndex, amount);
@@ -191,7 +191,7 @@ CalendarImpl::addValue( sal_Int16 fieldIndex, sal_Int32 amount ) throw(RuntimeEx
 }
 
 sal_Int16 SAL_CALL
-CalendarImpl::getFirstDayOfWeek() throw(RuntimeException)
+CalendarImpl::getFirstDayOfWeek()
 {
     if (xCalendar.is())
         return xCalendar->getFirstDayOfWeek();
@@ -201,7 +201,6 @@ CalendarImpl::getFirstDayOfWeek() throw(RuntimeException)
 
 void SAL_CALL
 CalendarImpl::setFirstDayOfWeek( sal_Int16 day )
-throw(RuntimeException)
 {
     if (xCalendar.is())
         xCalendar->setFirstDayOfWeek(day);
@@ -210,7 +209,7 @@ throw(RuntimeException)
 }
 
 void SAL_CALL
-CalendarImpl::setMinimumNumberOfDaysForFirstWeek( sal_Int16 days ) throw(RuntimeException)
+CalendarImpl::setMinimumNumberOfDaysForFirstWeek( sal_Int16 days )
 {
     if (xCalendar.is())
         xCalendar->setMinimumNumberOfDaysForFirstWeek(days);
@@ -219,7 +218,7 @@ CalendarImpl::setMinimumNumberOfDaysForFirstWeek( sal_Int16 days ) throw(Runtime
 }
 
 sal_Int16 SAL_CALL
-CalendarImpl::getMinimumNumberOfDaysForFirstWeek() throw(RuntimeException)
+CalendarImpl::getMinimumNumberOfDaysForFirstWeek()
 {
     if (xCalendar.is())
         return xCalendar->getMinimumNumberOfDaysForFirstWeek();
@@ -229,7 +228,7 @@ CalendarImpl::getMinimumNumberOfDaysForFirstWeek() throw(RuntimeException)
 
 
 OUString SAL_CALL
-CalendarImpl::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16 nameType ) throw(RuntimeException)
+CalendarImpl::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16 nameType )
 {
     if (xCalendar.is())
         return xCalendar->getDisplayName( displayIndex, idx, nameType );
@@ -238,7 +237,7 @@ CalendarImpl::getDisplayName( sal_Int16 displayIndex, sal_Int16 idx, sal_Int16 n
 }
 
 sal_Int16 SAL_CALL
-CalendarImpl::getNumberOfMonthsInYear() throw(RuntimeException)
+CalendarImpl::getNumberOfMonthsInYear()
 {
     if (xCalendar.is())
         return xCalendar->getNumberOfMonthsInYear();
@@ -248,7 +247,7 @@ CalendarImpl::getNumberOfMonthsInYear() throw(RuntimeException)
 
 
 sal_Int16 SAL_CALL
-CalendarImpl::getNumberOfDaysInWeek() throw(RuntimeException)
+CalendarImpl::getNumberOfDaysInWeek()
 {
     if (xCalendar.is())
         return xCalendar->getNumberOfDaysInWeek();
@@ -258,7 +257,7 @@ CalendarImpl::getNumberOfDaysInWeek() throw(RuntimeException)
 
 
 Sequence< CalendarItem > SAL_CALL
-CalendarImpl::getMonths() throw(RuntimeException)
+CalendarImpl::getMonths()
 {
     if (xCalendar.is())
         return xCalendar->getMonths();
@@ -268,7 +267,7 @@ CalendarImpl::getMonths() throw(RuntimeException)
 
 
 Sequence< CalendarItem > SAL_CALL
-CalendarImpl::getDays() throw(RuntimeException)
+CalendarImpl::getDays()
 {
     if (xCalendar.is())
         return xCalendar->getDays();
@@ -278,7 +277,7 @@ CalendarImpl::getDays() throw(RuntimeException)
 
 
 sal_Bool SAL_CALL
-CalendarImpl::isValid() throw(RuntimeException)
+CalendarImpl::isValid()
 {
     if (xCalendar.is())
         return xCalendar->isValid();
@@ -288,7 +287,6 @@ CalendarImpl::isValid() throw(RuntimeException)
 
 OUString SAL_CALL
 CalendarImpl::getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativeNumberMode )
-	throw (RuntimeException)
 {
     if (xCalendar.is())
         return xCalendar->getDisplayString(nCalendarDisplayCode, nNativeNumberMode);
@@ -297,7 +295,7 @@ CalendarImpl::getDisplayString( sal_Int32 nCalendarDisplayCode, sal_Int16 nNativ
 }
 
 OUString SAL_CALL
-CalendarImpl::getImplementationName(void) throw( RuntimeException )
+CalendarImpl::getImplementationName(void)
 {
     return OUString::createFromAscii("com.sun.star.i18n.CalendarImpl");
 }
@@ -305,13 +303,13 @@ CalendarImpl::getImplementationName(void) throw( RuntimeException )
 const sal_Char cCalendar[] = "com.sun.star.i18n.LocaleCalendar";
 
 sal_Bool SAL_CALL
-CalendarImpl::supportsService(const OUString& rServiceName) throw( RuntimeException )
+CalendarImpl::supportsService(const OUString& rServiceName)
 {
     return !rServiceName.compareToAscii(cCalendar);
 }
 
 Sequence< OUString > SAL_CALL
-CalendarImpl::getSupportedServiceNames(void) throw( RuntimeException )
+CalendarImpl::getSupportedServiceNames(void)
 {
     Sequence< OUString > aRet(1);
     aRet[0] = OUString::createFromAscii(cCalendar);

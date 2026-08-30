@@ -547,7 +547,7 @@ FieldUnit VCLUnoHelper::ConvertToFieldUnit( sal_Int16 _nMeasurementUnit, sal_Int
 }
 
 
-MapUnit /* MapModeUnit */ VCLUnoHelper::ConvertToMapModeUnit(sal_Int16 /* com.sun.star.util.MeasureUnit.* */ _nMeasureUnit) throw (::com::sun::star::lang::IllegalArgumentException)
+MapUnit /* MapModeUnit */ VCLUnoHelper::ConvertToMapModeUnit(sal_Int16 /* com.sun.star.util.MeasureUnit.* */ _nMeasureUnit)
 {
     MapUnit eMode;
     switch(_nMeasureUnit)
@@ -634,7 +634,7 @@ MapUnit /* MapModeUnit */ VCLUnoHelper::ConvertToMapModeUnit(sal_Int16 /* com.su
     return eMode;
 }
 
-sal_Int16 /* com.sun.star.util.MeasureUnit.* */ VCLUnoHelper::ConvertToMeasurementUnit(MapUnit /* MapModeUnit */ _eMapModeUnit)  throw (::com::sun::star::lang::IllegalArgumentException)
+sal_Int16 /* com.sun.star.util.MeasureUnit.* */ VCLUnoHelper::ConvertToMeasurementUnit(MapUnit /* MapModeUnit */ _eMapModeUnit)
 {
     sal_Int16 nMeasureUnit = 0;
     switch (_eMapModeUnit)

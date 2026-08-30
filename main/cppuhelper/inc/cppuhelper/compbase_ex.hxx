@@ -70,20 +70,16 @@ public:
 		{}
 
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-        ::com::sun::star::uno::Type const & rType )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Type const & rType );
     virtual void SAL_CALL acquire()
         throw ();
     virtual void SAL_CALL release()
         throw ();
-    virtual void SAL_CALL dispose()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
     virtual void SAL_CALL addEventListener(
-        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener );
     virtual void SAL_CALL removeEventListener(
-        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener );
 };
 
 /** Implementation helper base class for components. Inherits from ::cppu::OWeakAggObject and
@@ -116,23 +112,18 @@ public:
 		{}
 
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-        ::com::sun::star::uno::Type const & rType )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Type const & rType );
 	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(
-        ::com::sun::star::uno::Type const & rType )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Type const & rType );
     virtual void SAL_CALL acquire()
         throw ();
     virtual void SAL_CALL release()
         throw ();
-    virtual void SAL_CALL dispose()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
     virtual void SAL_CALL addEventListener(
-        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener );
     virtual void SAL_CALL removeEventListener(
-        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > const & xListener );
 };
 
 /** WeakComponentImplHelper
@@ -143,15 +134,13 @@ CPPUHELPER_DLLPUBLIC
     ::com::sun::star::uno::Type const & rType,
     class_data * cd,
     void * that,
-    ::cppu::WeakComponentImplHelperBase * pBase )
-    SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    ::cppu::WeakComponentImplHelperBase * pBase );
 /** WeakComponentImplHelper
     @internal
 */
 CPPUHELPER_DLLPUBLIC
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL WeakComponentImplHelper_getTypes(
-    class_data * cd )
-    SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    class_data * cd );
 
 /** WeakAggComponentImplHelper
     @internal
@@ -161,15 +150,13 @@ CPPUHELPER_DLLPUBLIC
     ::com::sun::star::uno::Type const & rType,
     class_data * cd,
     void * that,
-    ::cppu::WeakAggComponentImplHelperBase * pBase )
-    SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    ::cppu::WeakAggComponentImplHelperBase * pBase );
 /** WeakAggComponentImplHelper
     @internal
 */
 CPPUHELPER_DLLPUBLIC
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL WeakAggComponentImplHelper_getTypes(
-    class_data * cd )
-    SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    class_data * cd );
 
 }
 

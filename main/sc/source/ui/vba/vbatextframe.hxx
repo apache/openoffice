@@ -32,10 +32,10 @@ typedef cppu::ImplInheritanceHelper1< VbaTextFrame, ov::excel::XTextFrame > ScVb
 class ScVbaTextFrame : public ScVbaTextFrame_BASE
 {
 public:
-	ScVbaTextFrame( css::uno::Sequence< css::uno::Any > const& aArgs, css::uno::Reference< css::uno::XComponentContext > const& xContext ) throw ( css::lang::IllegalArgumentException );
+	ScVbaTextFrame( css::uno::Sequence< css::uno::Any > const& aArgs, css::uno::Reference< css::uno::XComponentContext > const& xContext );
     virtual ~ScVbaTextFrame() {}
     // Methods
-    virtual css::uno::Any SAL_CALL Characters(  ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL Characters(  );
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

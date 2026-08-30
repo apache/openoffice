@@ -43,12 +43,12 @@ namespace DOM
         }
     }
 
-    OUString SAL_CALL CComment::getNodeName()throw (RuntimeException)
+    OUString SAL_CALL CComment::getNodeName()
     {
         return OUString::createFromAscii("#comment");
     }
 
-    OUString SAL_CALL CComment::getNodeValue() throw (RuntimeException)
+    OUString SAL_CALL CComment::getNodeValue()
     {
         return CCharacterData::getData();
     }

@@ -58,7 +58,7 @@ GraphicShapeContext::GraphicShapeContext( ContextHandler& rParent, ShapePtr pMas
 {
 }
 
-Reference< XFastContextHandler > GraphicShapeContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > GraphicShapeContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -101,7 +101,7 @@ GraphicalObjectFrameContext::GraphicalObjectFrameContext( ContextHandler& rParen
 {
 }
 
-Reference< XFastContextHandler > GraphicalObjectFrameContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > GraphicalObjectFrameContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -159,7 +159,7 @@ OleObjectGraphicDataContext::~OleObjectGraphicDataContext()
             pVmlDrawing->registerOleObject( mrOleObjectInfo );
 }
 
-Reference< XFastContextHandler > OleObjectGraphicDataContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > OleObjectGraphicDataContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs )
 {
 	Reference< XFastContextHandler > xRet;
     AttributeList aAttribs( xAttribs );
@@ -259,7 +259,6 @@ DiagramPtr DiagramGraphicDataContext::loadDiagram()
 
 
 Reference< XFastContextHandler > DiagramGraphicDataContext::createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
-	throw (SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 
@@ -296,7 +295,6 @@ ChartGraphicDataContext::ChartGraphicDataContext( ContextHandler& rParent, const
 }
 
 Reference< XFastContextHandler > ChartGraphicDataContext::createFastChildContext( ::sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
-    throw (SAXException, RuntimeException)
 {
     if( nElement == C_TOKEN( chart ) )
     {

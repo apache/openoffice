@@ -47,15 +47,15 @@ private:
 public:
     AccTopWindowListener();
     virtual ~AccTopWindowListener();
-    virtual void SAL_CALL windowOpened( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowClosing( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowClosed( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowMinimized( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowNormalized( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowActivated( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowDeactivated( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL windowOpened( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowClosing( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowClosed( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowMinimized( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowNormalized( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowActivated( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowDeactivated( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
     virtual void SAL_CALL acquire(  ) throw ();
     virtual void SAL_CALL release(  ) throw ();
     virtual void AddAllListeners(com::sun::star::accessibility::XAccessible* pAccessible,com::sun::star::accessibility::XAccessible* pParentXAcc,HWND pWND );

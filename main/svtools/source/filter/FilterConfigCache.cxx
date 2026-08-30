@@ -135,7 +135,6 @@ String FilterConfigCache::FilterConfigCacheEntry::GetShortName()
     @throws It let pass RuntimeExceptions only.
  */
 Reference< XInterface > openConfig(const char* sPackage)
-    throw(RuntimeException)
 {
     static OUString TYPEPKG( RTL_CONSTASCII_USTRINGPARAM( "types" ) );
     static OUString FILTERPKG( RTL_CONSTASCII_USTRINGPARAM( "filters" ) );

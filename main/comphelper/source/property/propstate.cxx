@@ -49,7 +49,7 @@ namespace comphelper
     //=====================================================================
 
     //---------------------------------------------------------------------
-    ::com::sun::star::uno::Any SAL_CALL OPropertyStateHelper::queryInterface(const  ::com::sun::star::uno::Type& _rType) throw( ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::uno::Any SAL_CALL OPropertyStateHelper::queryInterface(const  ::com::sun::star::uno::Type& _rType)
     {
 	    ::com::sun::star::uno::Any aReturn = OPropertySetHelper::queryInterface(_rType);
 	    // our own ifaces
@@ -60,7 +60,7 @@ namespace comphelper
     }
 
     //---------------------------------------------------------------------
-    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> OPropertyStateHelper::getTypes() throw( ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> OPropertyStateHelper::getTypes()
     {
 	    static  ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> aTypes;
 	    if (!aTypes.getLength())
@@ -92,7 +92,7 @@ namespace comphelper
 
     // XPropertyState
     //---------------------------------------------------------------------
-    ::com::sun::star::beans::PropertyState SAL_CALL OPropertyStateHelper::getPropertyState(const ::rtl::OUString& _rsName) throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::beans::PropertyState SAL_CALL OPropertyStateHelper::getPropertyState(const ::rtl::OUString& _rsName)
     {
 	    cppu::IPropertyArrayHelper& rPH = getInfoHelper();
 	    sal_Int32 nHandle = rPH.getHandleByName(_rsName);
@@ -104,7 +104,7 @@ namespace comphelper
     }
 
     //---------------------------------------------------------------------
-    void SAL_CALL OPropertyStateHelper::setPropertyToDefault(const ::rtl::OUString& _rsName) throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::uno::RuntimeException)
+    void SAL_CALL OPropertyStateHelper::setPropertyToDefault(const ::rtl::OUString& _rsName)
     {
 	    cppu::IPropertyArrayHelper& rPH = getInfoHelper();
 	    sal_Int32 nHandle = rPH.getHandleByName(_rsName);
@@ -116,7 +116,7 @@ namespace comphelper
     }
 
     //---------------------------------------------------------------------
-    ::com::sun::star::uno::Any SAL_CALL OPropertyStateHelper::getPropertyDefault(const ::rtl::OUString& _rsName) throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::lang::WrappedTargetException,  ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::uno::Any SAL_CALL OPropertyStateHelper::getPropertyDefault(const ::rtl::OUString& _rsName)
     {
 	    cppu::IPropertyArrayHelper& rPH = getInfoHelper();
 	    sal_Int32 nHandle = rPH.getHandleByName(_rsName);
@@ -128,7 +128,7 @@ namespace comphelper
     }
 
     //---------------------------------------------------------------------
-    ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyState> SAL_CALL OPropertyStateHelper::getPropertyStates(const  ::com::sun::star::uno::Sequence< ::rtl::OUString >& _rPropertyNames) throw( ::com::sun::star::beans::UnknownPropertyException,  ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyState> SAL_CALL OPropertyStateHelper::getPropertyStates(const  ::com::sun::star::uno::Sequence< ::rtl::OUString >& _rPropertyNames)
     {
 	    sal_Int32 nLen = _rPropertyNames.getLength();
 	    ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyState> aRet(nLen);
@@ -200,7 +200,7 @@ namespace comphelper
     }
 
     //---------------------------------------------------------------------
-    Sequence< Type > SAL_CALL OStatefulPropertySet::getTypes() throw(RuntimeException)
+    Sequence< Type > SAL_CALL OStatefulPropertySet::getTypes()
     {
         Sequence< Type > aOwnTypes( 2 );
         aOwnTypes[0] = XWeak::static_type();
@@ -213,7 +213,7 @@ namespace comphelper
     }
 
     //---------------------------------------------------------------------
-    Sequence< sal_Int8 > SAL_CALL OStatefulPropertySet::getImplementationId() throw(RuntimeException)
+    Sequence< sal_Int8 > SAL_CALL OStatefulPropertySet::getImplementationId()
     {
         static ::cppu::OImplementationId * pId = NULL;
         if ( !pId )
@@ -229,7 +229,7 @@ namespace comphelper
     }
 
     //---------------------------------------------------------------------
-    Any SAL_CALL OStatefulPropertySet::queryInterface( const Type& _rType ) throw(RuntimeException)
+    Any SAL_CALL OStatefulPropertySet::queryInterface( const Type& _rType )
     {
         Any aReturn = OWeakObject::queryInterface( _rType );
         if ( !aReturn.hasValue() )

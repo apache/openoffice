@@ -80,7 +80,6 @@ SwFEShell* SwAccessibleSelectionHelper::GetFEShell()
 }
 
 void SwAccessibleSelectionHelper::throwIndexOutOfBoundsException()
-        throw ( lang::IndexOutOfBoundsException )
 {
 	Reference < XAccessibleContext > xThis( &rContext );
 	Reference < XAccessibleSelection >xSelThis( xThis, UNO_QUERY );
@@ -95,8 +94,6 @@ void SwAccessibleSelectionHelper::throwIndexOutOfBoundsException()
 
 void SwAccessibleSelectionHelper::selectAccessibleChild(
     sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException,
-            RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -160,8 +157,6 @@ static sal_Bool lcl_getSelectedState(const SwAccessibleChild& aChild,
 
 sal_Bool SwAccessibleSelectionHelper::isAccessibleChildSelected(
     sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException,
-            RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -196,13 +191,11 @@ sal_Bool SwAccessibleSelectionHelper::isAccessibleChildSelected(
 }
 
 void SwAccessibleSelectionHelper::clearAccessibleSelection(  )
-    throw ( RuntimeException )
 {
     // return sal_False     // we can't deselect
 }
 
 void SwAccessibleSelectionHelper::selectAllAccessibleChildren(  )
-    throw ( RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -234,7 +227,6 @@ void SwAccessibleSelectionHelper::selectAllAccessibleChildren(  )
 }
 
 sal_Int32 SwAccessibleSelectionHelper::getSelectedAccessibleChildCount(  )
-    throw ( RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -301,8 +293,6 @@ sal_Int32 SwAccessibleSelectionHelper::getSelectedAccessibleChildCount(  )
 
 Reference<XAccessible> SwAccessibleSelectionHelper::getSelectedAccessibleChild(
     sal_Int32 nSelectedChildIndex )
-    throw ( lang::IndexOutOfBoundsException,
-            RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -397,8 +387,6 @@ Reference<XAccessible> SwAccessibleSelectionHelper::getSelectedAccessibleChild(
 // --> OD 2004-11-16 #111714# - index has to be treated as global child index.
 void SwAccessibleSelectionHelper::deselectAccessibleChild(
     sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException,
-            RuntimeException )
 {
     // return sal_False     // we can't deselect
     if( nChildIndex < 0 ||

@@ -114,7 +114,6 @@ void MasterPropertySetInfo::remove( const rtl::OUString& aName )
 }
 
 Sequence< ::Property > SAL_CALL MasterPropertySetInfo::getProperties()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nSize = maMap.size();
 	if( maProperties.getLength() != nSize )
@@ -140,7 +139,6 @@ Sequence< ::Property > SAL_CALL MasterPropertySetInfo::getProperties()
 }
 
 Property SAL_CALL MasterPropertySetInfo::getPropertyByName( const ::rtl::OUString& rName )
-	throw(::UnknownPropertyException, ::com::sun::star::uno::RuntimeException)
 {
 	PropertyDataHash::iterator aIter = maMap.find( rName );
 
@@ -160,7 +158,6 @@ Property SAL_CALL MasterPropertySetInfo::getPropertyByName( const ::rtl::OUStrin
 }
 
 sal_Bool SAL_CALL MasterPropertySetInfo::hasPropertyByName( const ::rtl::OUString& rName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return static_cast < sal_Bool > ( maMap.find ( rName ) != maMap.end() );
 }

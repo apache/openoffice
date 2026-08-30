@@ -242,7 +242,7 @@ xContext( xContext_ )
 {
 }
 
-sal_Int32 SAL_CALL XMLScanner::run( const uno::Sequence< rtl::OUString >& aArguments ) throw (uno::RuntimeException)
+sal_Int32 SAL_CALL XMLScanner::run( const uno::Sequence< rtl::OUString >& aArguments )
 {
   	uno::Sequence<uno::Any> aUcbInitSequence(2);
 	aUcbInitSequence[0] <<= rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Local"));
@@ -313,7 +313,7 @@ sal_Bool SAL_CALL XMLScanner_supportsService( const ::rtl::OUString& ServiceName
 {
 	return ServiceName.equals( rtl::OUString::createFromAscii( XMLScanner::SERVICE_NAME ) );
 }
-uno::Sequence< rtl::OUString > SAL_CALL XMLScanner_getSupportedServiceNames(  ) throw (uno::RuntimeException)
+uno::Sequence< rtl::OUString > SAL_CALL XMLScanner_getSupportedServiceNames(  )
 {
 	uno::Sequence < rtl::OUString > aRet(1);
 	rtl::OUString* pArray = aRet.getArray();
@@ -321,7 +321,7 @@ uno::Sequence< rtl::OUString > SAL_CALL XMLScanner_getSupportedServiceNames(  ) 
 	return aRet;
 }
 
-uno::Reference< uno::XInterface > SAL_CALL XMLScanner_createInstance( const uno::Reference< uno::XComponentContext > & xContext) throw( uno::Exception )
+uno::Reference< uno::XInterface > SAL_CALL XMLScanner_createInstance( const uno::Reference< uno::XComponentContext > & xContext)
 {
 	return (cppu::OWeakObject*) new XMLScanner( xContext );
 }

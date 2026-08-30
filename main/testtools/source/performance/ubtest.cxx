@@ -322,7 +322,6 @@ template< class T >
 static void createInstance( Reference< T > & rxOut,
 							const Reference< XMultiServiceFactory > & xMgr,
 							const OUString & rServiceName )
-	throw (RuntimeException)
 {
 	Reference< XInterface > x( xMgr->createInstance( rServiceName ), UNO_QUERY );
 
@@ -410,20 +409,20 @@ class TestImpl : public WeakImplHelper2< XServiceInfo, XMain >
 	Reference< XMultiServiceFactory > _xSMgr;
 
 	Reference< XInterface > _xDirect;
-	Reference< XInterface > getDirect() throw (Exception);
-	Reference< XInterface > resolveObject( const OUString & rUnoUrl ) throw (Exception);
+	Reference< XInterface > getDirect();
+	Reference< XInterface > resolveObject( const OUString & rUnoUrl );
 
 public:
 	TestImpl( const Reference< XMultiServiceFactory > & xSMgr );
 	virtual ~TestImpl();
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw (RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
+	virtual OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 	// XMain
-    virtual sal_Int32 SAL_CALL run( const Sequence< OUString > & rArgs ) throw (RuntimeException);
+    virtual sal_Int32 SAL_CALL run( const Sequence< OUString > & rArgs );
 };
 
 //##################################################################################################
@@ -447,13 +446,11 @@ static Reference< XInterface > SAL_CALL TestImpl_create( const Reference< XMulti
 // XServiceInfo
 //__________________________________________________________________________________________________
 OUString TestImpl::getImplementationName()
-	throw (RuntimeException)
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME) );
 }
 //__________________________________________________________________________________________________
 sal_Bool TestImpl::supportsService( const OUString & rServiceName )
-	throw (RuntimeException)
 {
 	const Sequence< OUString > & rSNL = getSupportedServiceNames();
 	const OUString * pArray = rSNL.getConstArray();
@@ -466,14 +463,12 @@ sal_Bool TestImpl::supportsService( const OUString & rServiceName )
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > TestImpl::getSupportedServiceNames()
-	throw (RuntimeException)
 {
 	return benchmark_test::getSupportedServiceNames();
 }
 
 //__________________________________________________________________________________________________
 Reference< XInterface > TestImpl::getDirect()
-	throw (Exception)
 {
 	if (! _xDirect.is())
 	{
@@ -493,7 +488,6 @@ Reference< XInterface > TestImpl::getDirect()
 }
 //--------------------------------------------------------------------------------------------------
 Reference< XInterface > TestImpl::resolveObject( const OUString & rUnoUrl )
-	throw (Exception)
 {
 	Reference< XUnoUrlResolver > xResolver;
 	createInstance(
@@ -568,7 +562,6 @@ typedef std::hash_map< std::string, TimingSheet > t_TimingSheetMap;
 //--------------------------------------------------------------------------------------------------
 static void benchmark(
 	TimingSheet & rSheet, const Reference< XInterface > & xInstance, sal_Int64 nLoop )
-	throw (Exception)
 {
 	Reference< XPerformanceTest > xBench( xInstance, UNO_QUERY );
 	if (! xBench.is())
@@ -963,7 +956,6 @@ const sal_Int32 nMagicNumberDirect = 34000;
 //XMain
 //__________________________________________________________________________________________________
 sal_Int32 TestImpl::run( const Sequence< OUString > & rArgs )
-	throw (RuntimeException)
 {
 	// defaults
 	FILE * stream = stderr;

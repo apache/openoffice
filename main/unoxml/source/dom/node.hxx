@@ -159,128 +159,108 @@ namespace DOM
         Adds the node newChild to the end of the list of children of this node.
         */
         virtual Reference< XNode > SAL_CALL
-            appendChild(Reference< XNode > const& xNewChild)
-            throw (RuntimeException, DOMException);
+            appendChild(Reference< XNode > const& xNewChild);
 
         /**
         Returns a duplicate of this node, i.e., serves as a generic copy
         constructor for nodes.
         */
-        virtual Reference< XNode > SAL_CALL cloneNode(sal_Bool deep)
-            throw (RuntimeException);
+        virtual Reference< XNode > SAL_CALL cloneNode(sal_Bool deep);
 
         /**
         A NamedNodeMap containing the attributes of this node
         (if it is an Element) or null otherwise.
         */
-        virtual Reference< XNamedNodeMap > SAL_CALL getAttributes()
-            throw (RuntimeException);
+        virtual Reference< XNamedNodeMap > SAL_CALL getAttributes();
 
         /**
         A NodeList that contains all children of this node.
         */
-        virtual Reference< XNodeList > SAL_CALL getChildNodes()
-            throw (RuntimeException);
+        virtual Reference< XNodeList > SAL_CALL getChildNodes();
 
         /**
         The first child of this node.
         */
-        virtual Reference< XNode > SAL_CALL getFirstChild()
-            throw (RuntimeException);
+        virtual Reference< XNode > SAL_CALL getFirstChild();
 
         /**
         The last child of this node.
         */
-        virtual Reference< XNode > SAL_CALL getLastChild()
-            throw (RuntimeException);
+        virtual Reference< XNode > SAL_CALL getLastChild();
 
         /**
         Returns the local part of the qualified name of this node.
         */
-        virtual OUString SAL_CALL getLocalName()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getLocalName();
 
         /**
         The namespace URI of this node, or null if it is unspecified.
         */
-        virtual OUString SAL_CALL getNamespaceURI()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getNamespaceURI();
 
         /**
         The node immediately following this node.
         */
-        virtual Reference< XNode > SAL_CALL getNextSibling()
-            throw (RuntimeException);
+        virtual Reference< XNode > SAL_CALL getNextSibling();
 
         /**
         The name of this node, depending on its type; see the table above.
         -- virtual implemented by actual node types
         */
-        virtual OUString SAL_CALL getNodeName()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getNodeName();
 
         /**
         A code representing the type of the underlying object, as defined above.
         */
-        virtual NodeType SAL_CALL getNodeType()
-            throw (RuntimeException);
+        virtual NodeType SAL_CALL getNodeType();
 
         /**
         The value of this node, depending on its type; see the table above.
         -- virtual implemented by actual node types
         */
-        virtual OUString SAL_CALL getNodeValue()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getNodeValue();
 
         /**
         The Document object associated with this node.
         */
-        virtual Reference< XDocument > SAL_CALL getOwnerDocument()
-            throw (RuntimeException);
+        virtual Reference< XDocument > SAL_CALL getOwnerDocument();
 
         /**
         The parent of this node.
         */
-        virtual Reference< XNode > SAL_CALL getParentNode()
-            throw (RuntimeException);
+        virtual Reference< XNode > SAL_CALL getParentNode();
 
         /**
         The namespace prefix of this node, or null if it is unspecified.
         */
-        virtual OUString SAL_CALL getPrefix()
-            throw (RuntimeException);
+        virtual OUString SAL_CALL getPrefix();
 
         /**
         The node immediately preceding this node.
         */
-        virtual Reference< XNode > SAL_CALL getPreviousSibling()
-            throw (RuntimeException);
+        virtual Reference< XNode > SAL_CALL getPreviousSibling();
 
         /**
         Returns whether this node (if it is an element) has any attributes.
         */
-        virtual sal_Bool SAL_CALL hasAttributes()
-            throw (RuntimeException);
+        virtual sal_Bool SAL_CALL hasAttributes();
 
         /**
         Returns whether this node has any children.
         */
-        virtual sal_Bool SAL_CALL hasChildNodes()
-            throw (RuntimeException);
+        virtual sal_Bool SAL_CALL hasChildNodes();
 
         /**
         Inserts the node newChild before the existing child node refChild.
         */
         virtual Reference< XNode > SAL_CALL insertBefore(
-                const Reference< XNode >& newChild, const Reference< XNode >& refChild)
-            throw (RuntimeException, DOMException);
+                const Reference< XNode >& newChild, const Reference< XNode >& refChild);
 
         /**
         Tests whether the DOM implementation implements a specific feature and
         that feature is supported by this node.
         */
-        virtual sal_Bool SAL_CALL isSupported(const OUString& feature, const OUString& ver)
-            throw (RuntimeException);
+        virtual sal_Bool SAL_CALL isSupported(const OUString& feature, const OUString& ver);
 
         /**
         Puts all Text nodes in the full depth of the sub-tree underneath this
@@ -289,55 +269,46 @@ namespace DOM
         entity references) separates Text nodes, i.e., there are neither adjacent
         Text nodes nor empty Text nodes.
         */
-        virtual void SAL_CALL normalize()
-            throw (RuntimeException);
+        virtual void SAL_CALL normalize();
 
         /**
         Removes the child node indicated by oldChild from the list of children,
         and returns it.
         */
-        virtual Reference< XNode > SAL_CALL removeChild(const Reference< XNode >& oldChild)
-            throw (RuntimeException, DOMException);
+        virtual Reference< XNode > SAL_CALL removeChild(const Reference< XNode >& oldChild);
 
         /**
         Replaces the child node oldChild with newChild in the list of children,
         and returns the oldChild node.
         */
         virtual Reference< XNode > SAL_CALL replaceChild(
-                const Reference< XNode >& newChild, const Reference< XNode >& oldChild)
-            throw (RuntimeException, DOMException);
+                const Reference< XNode >& newChild, const Reference< XNode >& oldChild);
 
         /**
         The value of this node, depending on its type; see the table above.
         */
-        virtual void SAL_CALL setNodeValue(const OUString& nodeValue)
-            throw (RuntimeException, DOMException);
+        virtual void SAL_CALL setNodeValue(const OUString& nodeValue);
 
         /**
         The namespace prefix of this node, or null if it is unspecified.
         */
-        virtual void SAL_CALL setPrefix(const OUString& prefix)
-            throw (RuntimeException, DOMException);
+        virtual void SAL_CALL setPrefix(const OUString& prefix);
 
 
         // --- XEventTarget
         virtual void SAL_CALL addEventListener(const OUString& eventType,
             const Reference< XEventListener >& listener,
-            sal_Bool useCapture)
-            throw (RuntimeException);
+            sal_Bool useCapture);
 
         virtual void SAL_CALL removeEventListener(const OUString& eventType,
             const Reference< XEventListener >& listener,
-            sal_Bool useCapture)
-            throw (RuntimeException);
+            sal_Bool useCapture);
 
-        virtual sal_Bool SAL_CALL dispatchEvent(const Reference< XEvent >& evt)
-            throw(RuntimeException, EventException);
+        virtual sal_Bool SAL_CALL dispatchEvent(const Reference< XEvent >& evt);
 
         // --- XUnoTunnel
         virtual ::sal_Int64 SAL_CALL
-            getSomething(Sequence< ::sal_Int8 > const& rId)
-            throw (RuntimeException);
+            getSomething(Sequence< ::sal_Int8 > const& rId);
     };
 
     /// eliminate redundant namespace declarations

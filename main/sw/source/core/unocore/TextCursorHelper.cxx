@@ -43,7 +43,6 @@ const uno::Sequence< sal_Int8 > & OTextCursorHelper::getUnoTunnelId()
 //XUnoTunnel
 sal_Int64 SAL_CALL OTextCursorHelper::getSomething(
 	const uno::Sequence< sal_Int8 >& rId )
-		throw(uno::RuntimeException)
 {
     if( rId.getLength() == 16
         && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),

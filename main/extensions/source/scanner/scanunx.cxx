@@ -49,7 +49,7 @@ BitmapTransporter::~BitmapTransporter()
 
 // -----------------------------------------------------------------------------
 
-ANY SAL_CALL BitmapTransporter::queryInterface( const Type& rType ) throw( RuntimeException )
+ANY SAL_CALL BitmapTransporter::queryInterface( const Type& rType )
 {
 	const ANY aRet( cppu::queryInterface( rType, static_cast< AWT::XBitmap* >( this ) ) );
 
@@ -273,7 +273,7 @@ SEQ( ScannerContext ) ScannerManager::getAvailableScanners() throw()
 
 // -----------------------------------------------------------------------------
 
-sal_Bool ScannerManager::configureScanner( ScannerContext& scanner_context ) throw( ScannerException )
+sal_Bool ScannerManager::configureScanner( ScannerContext& scanner_context )
 {
 	vos::OGuard aGuard( theSaneProtector::get() );
 	sanevec &rSanes = theSanes::get().m_aSanes;
@@ -308,7 +308,7 @@ sal_Bool ScannerManager::configureScanner( ScannerContext& scanner_context ) thr
 // -----------------------------------------------------------------------------
 
 void ScannerManager::startScan( const ScannerContext& scanner_context,
-								const REF( com::sun::star::lang::XEventListener )& listener ) throw( ScannerException )
+								const REF( com::sun::star::lang::XEventListener )& listener )
 {
 	vos::OGuard aGuard( theSaneProtector::get() );
 	sanevec &rSanes = theSanes::get().m_aSanes;
@@ -338,7 +338,7 @@ void ScannerManager::startScan( const ScannerContext& scanner_context,
 
 // -----------------------------------------------------------------------------
 
-ScanError ScannerManager::getError( const ScannerContext& scanner_context ) throw( ScannerException )
+ScanError ScannerManager::getError( const ScannerContext& scanner_context )
 {
 	vos::OGuard aGuard( theSaneProtector::get() );
 	sanevec &rSanes = theSanes::get().m_aSanes;
@@ -357,7 +357,7 @@ ScanError ScannerManager::getError( const ScannerContext& scanner_context ) thro
 
 // -----------------------------------------------------------------------------
 
-REF( AWT::XBitmap ) ScannerManager::getBitmap( const ScannerContext& scanner_context ) throw( ScannerException )
+REF( AWT::XBitmap ) ScannerManager::getBitmap( const ScannerContext& scanner_context )
 {
 	vos::OGuard aGuard( theSaneProtector::get() );
 	sanevec &rSanes = theSanes::get().m_aSanes;

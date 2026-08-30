@@ -73,105 +73,87 @@ namespace connectivity
 			void checkParameterIndex(sal_Int32 parameter);
 
 		protected:
-			void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue)
-																					throw (::com::sun::star::uno::Exception);
+			void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const Any& rValue);
 			virtual ~OPreparedStatement();
 		public:
 			DECLARE_SERVICE_INFO();
 			OPreparedStatement(OConnection* _pConnection, sql::PreparedStatement * cppPrepStmt);
 
 			//XInterface
-			Any SAL_CALL queryInterface(const Type & rType)	throw(RuntimeException);
+			Any SAL_CALL queryInterface(const Type & rType);
 			void SAL_CALL acquire() throw();
 			void SAL_CALL release() throw();
 
 			//XTypeProvider
-			::com::sun::star::uno::Sequence< Type > SAL_CALL getTypes()
-																					throw(RuntimeException);
+			::com::sun::star::uno::Sequence< Type > SAL_CALL getTypes();
 
 			// XPreparedStatement
-			Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery()	throw(SQLException, RuntimeException);
-			sal_Int32 SAL_CALL executeUpdate() throw(SQLException, RuntimeException);
-			sal_Bool SAL_CALL execute() throw(SQLException, RuntimeException);
-			Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection() throw(SQLException, RuntimeException);
+			Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery();
+			sal_Int32 SAL_CALL executeUpdate();
+			sal_Bool SAL_CALL execute();
+			Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection();
 
             // XStatement
-			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery(const OUString& sql)
-												throw(SQLException, RuntimeException);
-			sal_Int32 SAL_CALL executeUpdate(const OUString& sql)
-												throw(SQLException, RuntimeException);
-			sal_Bool SAL_CALL execute( const OUString& sql )
-												throw(SQLException, RuntimeException);
+			::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery(const OUString& sql);
+			sal_Int32 SAL_CALL executeUpdate(const OUString& sql);
+			sal_Bool SAL_CALL execute( const OUString& sql );
 
 			// XParameters
-			void SAL_CALL setNull(sal_Int32 parameter, sal_Int32 sqlType)			throw(SQLException, RuntimeException);
+			void SAL_CALL setNull(sal_Int32 parameter, sal_Int32 sqlType);
 
-			void SAL_CALL setObjectNull(sal_Int32 parameter, sal_Int32 sqlType, const OUString& typeName)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setObjectNull(sal_Int32 parameter, sal_Int32 sqlType, const OUString& typeName);
 
-			void SAL_CALL setBoolean(sal_Int32 parameter, sal_Bool x)				throw(SQLException, RuntimeException);
+			void SAL_CALL setBoolean(sal_Int32 parameter, sal_Bool x);
 
-			void SAL_CALL setByte(sal_Int32 parameter, sal_Int8 x)					throw(SQLException, RuntimeException);
+			void SAL_CALL setByte(sal_Int32 parameter, sal_Int8 x);
 
-			void SAL_CALL setShort(sal_Int32 parameter, sal_Int16 x)				throw(SQLException, RuntimeException);
+			void SAL_CALL setShort(sal_Int32 parameter, sal_Int16 x);
 
-			void SAL_CALL setInt(sal_Int32 parameter, sal_Int32 x)					throw(SQLException, RuntimeException);
+			void SAL_CALL setInt(sal_Int32 parameter, sal_Int32 x);
 
-			void SAL_CALL setLong(sal_Int32 parameter, sal_Int64 x)					throw(SQLException, RuntimeException);
+			void SAL_CALL setLong(sal_Int32 parameter, sal_Int64 x);
 
-			void SAL_CALL setFloat(sal_Int32 parameter, float x)					throw(SQLException, RuntimeException);
+			void SAL_CALL setFloat(sal_Int32 parameter, float x);
 
-			void SAL_CALL setDouble(sal_Int32 parameter, double x)					throw(SQLException, RuntimeException);
+			void SAL_CALL setDouble(sal_Int32 parameter, double x);
 
-			void SAL_CALL setString(sal_Int32 parameter, const OUString& x)			throw(SQLException, RuntimeException);
+			void SAL_CALL setString(sal_Int32 parameter, const OUString& x);
 
-			void SAL_CALL setBytes(sal_Int32 parameter, const ::com::sun::star::uno::Sequence< sal_Int8 >& x)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setBytes(sal_Int32 parameter, const ::com::sun::star::uno::Sequence< sal_Int8 >& x);
 
-			void SAL_CALL setDate(sal_Int32 parameter, const ::com::sun::star::util::Date& x)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setDate(sal_Int32 parameter, const ::com::sun::star::util::Date& x);
 
-			void SAL_CALL setTime(sal_Int32 parameter, const ::com::sun::star::util::Time& x)
-																					throw(SQLException, RuntimeException);
-			void SAL_CALL setTimestamp(sal_Int32 parameter, const ::com::sun::star::util::DateTime& x)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setTime(sal_Int32 parameter, const ::com::sun::star::util::Time& x);
+			void SAL_CALL setTimestamp(sal_Int32 parameter, const ::com::sun::star::util::DateTime& x);
 
-			void SAL_CALL setBinaryStream(sal_Int32 parameter, const Reference< ::com::sun::star::io::XInputStream >& x, sal_Int32 length)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setBinaryStream(sal_Int32 parameter, const Reference< ::com::sun::star::io::XInputStream >& x, sal_Int32 length);
 
-			void SAL_CALL setCharacterStream(sal_Int32 parameter, const Reference< ::com::sun::star::io::XInputStream >& x, sal_Int32 length)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setCharacterStream(sal_Int32 parameter, const Reference< ::com::sun::star::io::XInputStream >& x, sal_Int32 length);
 
-			void SAL_CALL setObject(sal_Int32 parameter, const Any& x)				throw(SQLException, RuntimeException);
+			void SAL_CALL setObject(sal_Int32 parameter, const Any& x);
 
-			void SAL_CALL setObjectWithInfo(sal_Int32 parameter, const Any& x, sal_Int32 targetSqlType, sal_Int32 scale)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setObjectWithInfo(sal_Int32 parameter, const Any& x, sal_Int32 targetSqlType, sal_Int32 scale);
 
-			void SAL_CALL setRef(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XRef >& x)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setRef(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XRef >& x);
 
-			void SAL_CALL setBlob(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XBlob >& x)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setBlob(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XBlob >& x);
 
-			void SAL_CALL setClob(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XClob >& x)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setClob(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XClob >& x);
 
-			void SAL_CALL setArray(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XArray >& x)
-																					throw(SQLException, RuntimeException);
+			void SAL_CALL setArray(sal_Int32 parameter, const Reference< ::com::sun::star::sdbc::XArray >& x);
 
-			void SAL_CALL clearParameters() throw(SQLException, RuntimeException);
+			void SAL_CALL clearParameters();
 
 			// XPreparedBatchExecution
-			void SAL_CALL addBatch() throw(SQLException, RuntimeException);
-			void SAL_CALL clearBatch() throw(SQLException, RuntimeException);
-			::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch()	throw(SQLException, RuntimeException);
+			void SAL_CALL addBatch();
+			void SAL_CALL clearBatch();
+			::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch();
 
 			// XCloseable
-			void SAL_CALL close() throw(SQLException, RuntimeException);
+			void SAL_CALL close();
 
 			// XResultSetMetaDataSupplier
-			Reference< ::com::sun::star::sdbc::XResultSetMetaData > SAL_CALL getMetaData()
-																					throw(SQLException, RuntimeException);
+			Reference< ::com::sun::star::sdbc::XResultSetMetaData > SAL_CALL getMetaData();
 		};
 	} /* mysqlc */
 } /* connectivity */

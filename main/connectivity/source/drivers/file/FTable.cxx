@@ -123,7 +123,7 @@ void OFileTable::refreshIndexes()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OFileTable::refreshIndexes" );
 }
 // -------------------------------------------------------------------------
-Any SAL_CALL OFileTable::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL OFileTable::queryInterface( const Type & rType )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OFileTable::queryInterface" );
 	if( rType == ::getCppuType((const Reference<XKeysSupplier>*)0) ||
@@ -164,7 +164,7 @@ Sequence< sal_Int8 > OFileTable::getUnoTunnelImplementationId()
 
 // com::sun::star::lang::XUnoTunnel
 //------------------------------------------------------------------
-sal_Int64 OFileTable::getSomething( const Sequence< sal_Int8 > & rId ) throw (RuntimeException)
+sal_Int64 OFileTable::getSomething( const Sequence< sal_Int8 > & rId )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OFileTable::getSomething" );
 	return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )

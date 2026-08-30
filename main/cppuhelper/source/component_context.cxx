@@ -274,7 +274,6 @@ static void dumpEntry( OUString const & key, Any const & value )
 #endif
 //--------------------------------------------------------------------------------------------------
 static inline void try_dispose( Reference< XInterface > const & xInstance )
-    SAL_THROW( (RuntimeException) )
 {
     Reference< lang::XComponent > xComp( xInstance, UNO_QUERY );
     if (xComp.is())
@@ -284,7 +283,6 @@ static inline void try_dispose( Reference< XInterface > const & xInstance )
 }
 //--------------------------------------------------------------------------------------------------
 static inline void try_dispose( Reference< lang::XComponent > const & xComp )
-    SAL_THROW( (RuntimeException) )
 {
     if (xComp.is())
     {
@@ -307,17 +305,14 @@ public:
     // listens at source for disposing, then disposes target
     static inline void listen(
         Reference< lang::XComponent > const & xSource,
-        Reference< lang::XComponent > const & xTarget )
-        SAL_THROW( (RuntimeException) );
+        Reference< lang::XComponent > const & xTarget );
 
-    virtual void SAL_CALL disposing( lang::EventObject const & rSource )
-        throw (RuntimeException);
+    virtual void SAL_CALL disposing( lang::EventObject const & rSource );
 };
 //__________________________________________________________________________________________________
 inline void DisposingForwarder::listen(
     Reference< lang::XComponent > const & xSource,
     Reference< lang::XComponent > const & xTarget )
-    SAL_THROW( (RuntimeException) )
 {
     if (xSource.is())
     {
@@ -326,7 +321,6 @@ inline void DisposingForwarder::listen(
 }
 //__________________________________________________________________________________________________
 void DisposingForwarder::disposing( lang::EventObject const & )
-    throw (RuntimeException)
 {
     m_xTarget->dispose();
     m_xTarget.clear();
@@ -364,8 +358,7 @@ protected:
     Reference< lang::XMultiComponentFactory > m_xSMgr;
 
 protected:
-    Any lookupMap( OUString const & rName )
-        SAL_THROW( (RuntimeException) );
+    Any lookupMap( OUString const & rName );
 
 	virtual void SAL_CALL disposing();
 public:
@@ -376,43 +369,29 @@ public:
         SAL_THROW( () );
 
     // XComponentContext
-    virtual Any SAL_CALL getValueByName( OUString const & rName )
-        throw (RuntimeException);
-    virtual Reference<lang::XMultiComponentFactory> SAL_CALL getServiceManager()
-        throw (RuntimeException);
+    virtual Any SAL_CALL getValueByName( OUString const & rName );
+    virtual Reference<lang::XMultiComponentFactory> SAL_CALL getServiceManager();
 
     // XNameContainer
     virtual void SAL_CALL insertByName(
-        OUString const & name, Any const & element )
-        throw (lang::IllegalArgumentException, container::ElementExistException,
-               lang::WrappedTargetException, RuntimeException);
-    virtual void SAL_CALL removeByName( OUString const & name )
-        throw (container::NoSuchElementException,
-               lang::WrappedTargetException, RuntimeException);
+        OUString const & name, Any const & element );
+    virtual void SAL_CALL removeByName( OUString const & name );
     // XNameReplace
     virtual void SAL_CALL replaceByName(
-        OUString const & name, Any const & element )
-        throw (lang::IllegalArgumentException,container::NoSuchElementException,
-               lang::WrappedTargetException, RuntimeException);
+        OUString const & name, Any const & element );
     // XNameAccess
-    virtual Any SAL_CALL getByName( OUString const & name )
-        throw (container::NoSuchElementException,
-               lang::WrappedTargetException, RuntimeException);
-    virtual Sequence<OUString> SAL_CALL getElementNames()
-        throw (RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( OUString const & name )
-        throw (RuntimeException);
+    virtual Any SAL_CALL getByName( OUString const & name );
+    virtual Sequence<OUString> SAL_CALL getElementNames();
+    virtual sal_Bool SAL_CALL hasByName( OUString const & name );
     // XElementAccess
-    virtual Type SAL_CALL getElementType() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements() throw (RuntimeException);
+    virtual Type SAL_CALL getElementType();
+    virtual sal_Bool SAL_CALL hasElements();
 };
 
 // XNameContainer
 //______________________________________________________________________________
 void ComponentContext::insertByName(
     OUString const & name, Any const & element )
-    throw (lang::IllegalArgumentException, container::ElementExistException,
-           lang::WrappedTargetException, RuntimeException)
 {
     t_map::mapped_type entry(
         new ContextEntry(
@@ -431,8 +410,6 @@ void ComponentContext::insertByName(
 
 //______________________________________________________________________________
 void ComponentContext::removeByName( OUString const & name )
-        throw (container::NoSuchElementException,
-               lang::WrappedTargetException, RuntimeException)
 {
     MutexGuard guard( m_mutex );
     t_map::iterator iFind( m_map.find( name ) );
@@ -449,8 +426,6 @@ void ComponentContext::removeByName( OUString const & name )
 //______________________________________________________________________________
 void ComponentContext::replaceByName(
     OUString const & name, Any const & element )
-    throw (lang::IllegalArgumentException,container::NoSuchElementException,
-           lang::WrappedTargetException, RuntimeException)
 {
     MutexGuard guard( m_mutex );
     t_map::const_iterator const iFind( m_map.find( name ) );
@@ -474,15 +449,12 @@ void ComponentContext::replaceByName(
 // XNameAccess
 //______________________________________________________________________________
 Any ComponentContext::getByName( OUString const & name )
-    throw (container::NoSuchElementException,
-           lang::WrappedTargetException, RuntimeException)
 {
     return getValueByName( name );
 }
 
 //______________________________________________________________________________
 Sequence<OUString> ComponentContext::getElementNames()
-    throw (RuntimeException)
 {
     MutexGuard guard( m_mutex );
     Sequence<OUString> ret( m_map.size() );
@@ -497,7 +469,6 @@ Sequence<OUString> ComponentContext::getElementNames()
 
 //______________________________________________________________________________
 sal_Bool ComponentContext::hasByName( OUString const & name )
-    throw (RuntimeException)
 {
     MutexGuard guard( m_mutex );
     return m_map.find( name ) != m_map.end();
@@ -505,13 +476,13 @@ sal_Bool ComponentContext::hasByName( OUString const & name )
 
 // XElementAccess
 //______________________________________________________________________________
-Type ComponentContext::getElementType() throw (RuntimeException)
+Type ComponentContext::getElementType()
 {
     return ::getVoidCppuType();
 }
 
 //______________________________________________________________________________
-sal_Bool ComponentContext::hasElements() throw (RuntimeException)
+sal_Bool ComponentContext::hasElements()
 {
     MutexGuard guard( m_mutex );
     return ! m_map.empty();
@@ -519,7 +490,6 @@ sal_Bool ComponentContext::hasElements() throw (RuntimeException)
 
 //__________________________________________________________________________________________________
 Any ComponentContext::lookupMap( OUString const & rName )
-    SAL_THROW( (RuntimeException) )
 {
 #ifdef CONTEXT_DIAG
     if (rName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("dump_maps") ))
@@ -648,7 +618,6 @@ Any ComponentContext::lookupMap( OUString const & rName )
 
 //__________________________________________________________________________________________________
 Any ComponentContext::getValueByName( OUString const & rName )
-    throw (RuntimeException)
 {
     // to determine the root context:
     if (rName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("_root") ))
@@ -668,7 +637,6 @@ Any ComponentContext::getValueByName( OUString const & rName )
 }
 //__________________________________________________________________________________________________
 Reference< lang::XMultiComponentFactory > ComponentContext::getServiceManager()
-    throw (RuntimeException)
 {
     return m_xSMgr;
 }

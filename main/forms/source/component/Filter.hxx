@@ -89,50 +89,50 @@ namespace frm
 		OFilterControl(	const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB );
 
 		DECLARE_UNO3_AGG_DEFAULTS(OFilterControl,OWeakAggObject);
-		::com::sun::star::uno::Any	SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Any	SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType );
 
 		virtual ::rtl::OUString	GetComponentServiceName();
-		virtual void SAL_CALL	createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit > & rxToolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >  & rParentPeer ) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL	createPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XToolkit > & rxToolkit, const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >  & rParentPeer );
 
 	// ::com::sun::star::lang::XComponent
-		virtual void SAL_CALL	dispose(void) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL	dispose(void);
 
 	// ::com::sun::star::awt::XTextComponent
-		virtual void			SAL_CALL addTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void			SAL_CALL removeTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void			SAL_CALL setText( const ::rtl::OUString& aText ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void			SAL_CALL insertText( const ::com::sun::star::awt::Selection& rSel, const ::rtl::OUString& aText ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual ::rtl::OUString	SAL_CALL getText() throw( ::com::sun::star::uno::RuntimeException );
-		virtual ::rtl::OUString	SAL_CALL getSelectedText() throw( ::com::sun::star::uno::RuntimeException );
-		virtual void			SAL_CALL setSelection( const ::com::sun::star::awt::Selection& aSelection ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual ::com::sun::star::awt::Selection SAL_CALL getSelection() throw( ::com::sun::star::uno::RuntimeException );
-		virtual sal_Bool		SAL_CALL isEditable() throw( ::com::sun::star::uno::RuntimeException );
-		virtual void			SAL_CALL setEditable( sal_Bool bEditable ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual void			SAL_CALL setMaxTextLen( sal_Int16 nLength ) throw( ::com::sun::star::uno::RuntimeException );
-		virtual sal_Int16		SAL_CALL getMaxTextLen() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void			SAL_CALL addTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l );
+		virtual void			SAL_CALL removeTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l );
+		virtual void			SAL_CALL setText( const ::rtl::OUString& aText );
+		virtual void			SAL_CALL insertText( const ::com::sun::star::awt::Selection& rSel, const ::rtl::OUString& aText );
+		virtual ::rtl::OUString	SAL_CALL getText();
+		virtual ::rtl::OUString	SAL_CALL getSelectedText();
+		virtual void			SAL_CALL setSelection( const ::com::sun::star::awt::Selection& aSelection );
+		virtual ::com::sun::star::awt::Selection SAL_CALL getSelection();
+		virtual sal_Bool		SAL_CALL isEditable();
+		virtual void			SAL_CALL setEditable( sal_Bool bEditable );
+		virtual void			SAL_CALL setMaxTextLen( sal_Int16 nLength );
+		virtual sal_Int16		SAL_CALL getMaxTextLen();
 
 	// ::com::sun::star::form::XBoundComponent
-		virtual void			SAL_CALL addUpdateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XUpdateListener > & /*l*/) throw( ::com::sun::star::uno::RuntimeException ) {}
-		virtual void			SAL_CALL removeUpdateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XUpdateListener > & /*l*/) throw( ::com::sun::star::uno::RuntimeException ) {}
-		virtual sal_Bool		SAL_CALL commit() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void			SAL_CALL addUpdateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XUpdateListener > & /*l*/) {}
+		virtual void			SAL_CALL removeUpdateListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XUpdateListener > & /*l*/) {}
+		virtual sal_Bool		SAL_CALL commit();
 
 	// ::com::sun::star::lang::XEventListener
-		virtual void			SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void			SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
 	// ::com::sun::star::awt::XFocusListener
-		virtual void			SAL_CALL focusGained(const ::com::sun::star::awt::FocusEvent& e) throw( ::com::sun::star::uno::RuntimeException );
-        virtual void			SAL_CALL focusLost(const ::com::sun::star::awt::FocusEvent& e) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void			SAL_CALL focusGained(const ::com::sun::star::awt::FocusEvent& e);
+        virtual void			SAL_CALL focusLost(const ::com::sun::star::awt::FocusEvent& e);
 
 	// ::com::sun::star::awt::XItemListener
-		virtual void			SAL_CALL itemStateChanged(const ::com::sun::star::awt::ItemEvent& rEvent) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void			SAL_CALL itemStateChanged(const ::com::sun::star::awt::ItemEvent& rEvent);
 
 	// ::com::sun::star::util::XInitialization
-		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 		// XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+		virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+		virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 		// com::sun::star::lang::XServiceInfo - static version
 		static	::rtl::OUString	SAL_CALL getImplementationName_Static();

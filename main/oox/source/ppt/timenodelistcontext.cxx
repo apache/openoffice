@@ -140,7 +140,6 @@ namespace oox { namespace ppt {
 			}
 
 		virtual void SAL_CALL endFastElement( sal_Int32 aElement )
-			throw ( SAXException, RuntimeException)
 			{
 				if( aElement == PPT_TOKEN( audio ) )
 				{
@@ -154,7 +153,6 @@ namespace oox { namespace ppt {
 
 		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
 																																							const Reference< XFastAttributeList >& xAttribs )
-			throw ( SAXException, RuntimeException )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -213,14 +211,12 @@ namespace oox { namespace ppt {
 			}
 
 		virtual void SAL_CALL endFastElement( sal_Int32 /*aElement*/ )
-			throw ( SAXException, RuntimeException)
 			{
 			}
 
 
 		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
 																																							const Reference< XFastAttributeList >& xAttribs )
-			throw ( SAXException, RuntimeException )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -274,7 +270,6 @@ namespace oox { namespace ppt {
 			}
 
 		virtual void SAL_CALL endFastElement( sal_Int32 aElement )
-			throw ( SAXException, RuntimeException)
 			{
 				if( aElement == PPT_TOKEN( cmd ) )
 				{
@@ -349,7 +344,6 @@ namespace oox { namespace ppt {
 
 		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
 																																							const Reference< XFastAttributeList >& xAttribs )
-			throw ( SAXException, RuntimeException )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -402,7 +396,6 @@ namespace oox { namespace ppt {
 
 		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
 																																							const Reference< XFastAttributeList >& xAttribs )
-			throw ( SAXException, RuntimeException )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -450,7 +443,6 @@ namespace oox { namespace ppt {
 
 		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
 																																							const Reference< XFastAttributeList >& xAttribs )
-			throw ( SAXException, RuntimeException )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -495,7 +487,7 @@ namespace oox { namespace ppt {
 			{
 			}
 
-		virtual void SAL_CALL endFastElement( sal_Int32 aElement ) throw ( SAXException, RuntimeException)
+		virtual void SAL_CALL endFastElement( sal_Int32 aElement )
 			{
 				//xParentNode
 				if( aElement == mnElement )
@@ -514,7 +506,7 @@ namespace oox { namespace ppt {
 			}
 
 
-		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw ( SAXException, RuntimeException )
+		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -671,7 +663,7 @@ namespace oox { namespace ppt {
 			}
 
 
-		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw ( SAXException, RuntimeException )
+		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -720,7 +712,7 @@ namespace oox { namespace ppt {
 			{
 			}
 
-		virtual void SAL_CALL endFastElement( sal_Int32 aElement ) throw ( SAXException, RuntimeException)
+		virtual void SAL_CALL endFastElement( sal_Int32 aElement )
 			{
 				if( aElement == mnElement )
 				{
@@ -741,7 +733,6 @@ namespace oox { namespace ppt {
 
 		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
 																																							const Reference< XFastAttributeList >& xAttribs )
-			throw ( SAXException, RuntimeException )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -827,7 +818,7 @@ namespace oox { namespace ppt {
 			{
 			}
 
-		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw ( SAXException, RuntimeException )
+		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -895,7 +886,6 @@ namespace oox { namespace ppt {
 
 		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
 																																							const Reference< XFastAttributeList >& xAttribs )
-			throw ( SAXException, RuntimeException )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -986,7 +976,7 @@ namespace oox { namespace ppt {
 			}
 
 
-		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw ( SAXException, RuntimeException )
+		virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 			{
 				Reference< XFastContextHandler > xRet;
 
@@ -1097,7 +1087,7 @@ namespace oox { namespace ppt {
 	}
 
 
-	Reference< XFastContextHandler > SAL_CALL TimeNodeListContext::createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+	Reference< XFastContextHandler > SAL_CALL TimeNodeListContext::createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 	{
 		Reference< XFastContextHandler > xRet;
 

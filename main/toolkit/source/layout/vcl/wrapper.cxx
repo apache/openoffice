@@ -195,7 +195,6 @@ void WindowImpl::wrapperGone ()
 }
 
 void SAL_CALL WindowImpl::disposing (lang::EventObject const&)
-    throw (uno::RuntimeException)
 {
     if (mxWindow.is ())
         mxWindow.clear ();
@@ -717,19 +716,16 @@ void ControlImpl::UpdateListening (Link const& link)
 }
 
 void SAL_CALL ControlImpl::disposing (lang::EventObject const&)
-	throw (uno::RuntimeException)
 {
 //	mxWindow.clear ();
 }
 
 void SAL_CALL ControlImpl::focusGained (awt::FocusEvent const&)
-    throw (uno::RuntimeException)
 {
     mGetFocusHdl.Call (mpWindow);
 }
 
 void SAL_CALL ControlImpl::focusLost (awt::FocusEvent const&)
-    throw (uno::RuntimeException)
 {
     mLoseFocusHdl.Call (mpWindow);
 }
@@ -1004,7 +1000,6 @@ public:
     }
 
     virtual void SAL_CALL disposing (lang::EventObject const& e)
-        throw (uno::RuntimeException)
     {
         ControlImpl::disposing (e);
         mxTabControl.clear ();
@@ -1043,29 +1038,24 @@ public:
     }
 
     void SAL_CALL activated (sal_Int32)
-        throw (uno::RuntimeException)
     {
         mActivatePageHdl.Call (mpWindow);
     }
 
     void SAL_CALL deactivated (sal_Int32)
-        throw (uno::RuntimeException)
     {
         mDeactivatePageHdl.Call (mpWindow);
     }
 
     void SAL_CALL inserted (sal_Int32)
-        throw (uno::RuntimeException)
     {
     }
 
     void SAL_CALL removed (sal_Int32)
-        throw (uno::RuntimeException)
     {
     }
 
     void SAL_CALL changed (sal_Int32, uno::Sequence <beans::NamedValue> const&)
-        throw (uno::RuntimeException)
     {
     }
 };
@@ -1297,8 +1287,7 @@ public:
 
     ~FixedTextImpl ();
 
-    virtual void SAL_CALL disposing( lang::EventObject const& e )
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL disposing( lang::EventObject const& e );
 };
 
 FixedTextImpl::~FixedTextImpl ()
@@ -1306,7 +1295,6 @@ FixedTextImpl::~FixedTextImpl ()
 }
 
 void SAL_CALL FixedTextImpl::disposing( lang::EventObject const& e )
-    throw (uno::RuntimeException)
 {
     ControlImpl::disposing (e);
     mxFixedText.clear ();
@@ -1349,7 +1337,6 @@ public:
     }
 
     virtual void SAL_CALL disposing( lang::EventObject const& e )
-        throw (uno::RuntimeException)
     {
         ControlImpl::disposing (e);
         mxProgressBar.clear ();

@@ -46,7 +46,6 @@ sal_Bool Options::isValid(const OString& option)
 }
 
 const OString Options::getOption(const OString& option)
-	throw( IllegalArgument )
 {
 	if (m_options.count(option) > 0)
 	{
@@ -63,7 +62,6 @@ const OptionMap& Options::getOptions()
 }
 
 const OString Options::getInputFile(sal_uInt16 index)
-	throw( IllegalArgument )
 {
 	if (index < m_inputFiles.size())
 	{
@@ -80,7 +78,6 @@ const StringVector& Options::getInputFiles()
 }
 
 OString Options::getExtraInputFile(sal_uInt16 index) const
-	throw( IllegalArgument )
 {
 	if (index < m_extra_input_files.size())
 	{

@@ -46,48 +46,32 @@ public:
         com::sun::star::i18n::TextConversionResult SAL_CALL
         getConversions( const ::rtl::OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength,
             const ::com::sun::star::lang::Locale& aLocale, sal_Int16 nTextConversionType,
-            sal_Int32 nTextConversionOptions )
-            throw(  com::sun::star::uno::RuntimeException,
-                    com::sun::star::lang::IllegalArgumentException,
-                    com::sun::star::lang::NoSupportException );
+            sal_Int32 nTextConversionOptions );
         rtl::OUString SAL_CALL
         getConversion( const ::rtl::OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength,
             const ::com::sun::star::lang::Locale& aLocale, sal_Int16 nTextConversionType,
-            sal_Int32 nTextConversionOptions )
-            throw(  com::sun::star::uno::RuntimeException,
-                    com::sun::star::lang::IllegalArgumentException,
-                    com::sun::star::lang::NoSupportException );
+            sal_Int32 nTextConversionOptions );
         rtl::OUString SAL_CALL
         getConversionWithOffset( const ::rtl::OUString& aText, sal_Int32 nStartPos, sal_Int32 nLength,
             const ::com::sun::star::lang::Locale& aLocale, sal_Int16 nTextConversionType,
-            sal_Int32 nTextConversionOptions, com::sun::star::uno::Sequence< sal_Int32 >& offset )
-            throw(  com::sun::star::uno::RuntimeException,
-                    com::sun::star::lang::IllegalArgumentException,
-                    com::sun::star::lang::NoSupportException );
+            sal_Int32 nTextConversionOptions, com::sun::star::uno::Sequence< sal_Int32 >& offset );
         sal_Bool SAL_CALL
         interactiveConversion( const ::com::sun::star::lang::Locale& aLocale,
-            sal_Int16 nTextConversionType, sal_Int32 nTextConversionOptions )
-            throw(  com::sun::star::uno::RuntimeException,
-                    com::sun::star::lang::IllegalArgumentException,
-                    com::sun::star::lang::NoSupportException );
+            sal_Int16 nTextConversionType, sal_Int32 nTextConversionOptions );
 
 	//XServiceInfo
 	rtl::OUString SAL_CALL
-        getImplementationName()
-            throw( com::sun::star::uno::RuntimeException );
+        getImplementationName();
 	sal_Bool SAL_CALL
-        supportsService(const rtl::OUString& ServiceName)
-            throw( com::sun::star::uno::RuntimeException );
+        supportsService(const rtl::OUString& ServiceName);
 	com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-        getSupportedServiceNames()
-            throw( com::sun::star::uno::RuntimeException );
+        getSupportedServiceNames();
 private :
 	com::sun::star::lang::Locale aLocale;
 	com::sun::star::uno::Reference < com::sun::star::i18n::XExtendedTextConversion > xTC;
 	com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > xMSF;
 
-	void SAL_CALL getLocaleSpecificTextConversion( const com::sun::star::lang::Locale& rLocale )
-            throw( com::sun::star::lang::NoSupportException );
+	void SAL_CALL getLocaleSpecificTextConversion( const com::sun::star::lang::Locale& rLocale );
 };
 
 } // i18n

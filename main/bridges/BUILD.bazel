@@ -11,7 +11,6 @@ load("//build/rules:java_run_test.bzl", "staged_java_test")
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",
-    "/Dsnprintf=_snprintf",
     # Private source directories for local headers (component.hxx, guardedarray.hxx, msci.hxx)
     "/Imain/bridges/source/cpp_uno/shared",
     "/Imain/bridges/source/cpp_uno/msvc_win32_intel",
@@ -35,7 +34,6 @@ _SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_"]
 _COPTS_X64 = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",
-    "/Dsnprintf=_snprintf",
     "/Imain/bridges/source/cpp_uno/shared",
     "/Imain/bridges/source/cpp_uno/msvc_win64_x86-64",
     "/Imain/bridges/inc/pch",
@@ -208,7 +206,6 @@ _JNI_COPTS = [
     # distinct type, so JNI calls like GetStringRegion(...,jchar*) reject
     # sal_Unicode*. /Zc:wchar_t- makes wchar_t == unsigned short == sal_Unicode.
     "/Zc:wchar_t-",
-    "/Dsnprintf=_snprintf",
     "/Imain/bridges/source/jni_uno",
     "/Imain/bridges/inc/pch",
     "/wd4061", "/wd4127",
@@ -310,7 +307,6 @@ uno_jar(
 
 _TEST_COPTS = [
     "/EHsc", "/GR", "/nologo",
-    "/Dsnprintf=_snprintf",
     "/Imain/bridges/inc/pch",  # precompiled_bridges.hxx (plain #include, not /Yu)
 ]
 
@@ -476,7 +472,7 @@ genrule(
 cc_binary(
     name = "jni_test_launcher",
     srcs = ["test/jni_test_launcher.cxx"],
-    copts = ["/EHsc", "/GR", "/nologo", "/Zc:wchar_t-", "/Dsnprintf=_snprintf"],
+    copts = ["/EHsc", "/GR", "/nologo", "/Zc:wchar_t-"],
     defines = ["WNT", "WIN32", "INTEL", "_X86_=1"],
     deps = ["@rules_java//toolchains:jni"],
     additional_linker_inputs = [":launcher_manifest_res"],
@@ -609,7 +605,6 @@ cc_binary(
     copts = [
         "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs", "/EHsc",
         "/Zc:wchar_t-",
-        "/Dsnprintf=_snprintf",
         "/Imain/bridges/inc/pch",
     ],
     defines = _SLO_DEFINES + ["SOLAR_JAVA"],

@@ -128,7 +128,7 @@ sal_Bool getBOOL(const Any& _rAny)
 }
 
 //------------------------------------------------------------------------------
-sal_Int32 getEnumAsINT32(const Any& _rAny) throw(IllegalArgumentException)
+sal_Int32 getEnumAsINT32(const Any& _rAny)
 {
 	sal_Int32 nReturn = 0;
 	if (! ::cppu::enum2int(nReturn,_rAny) )

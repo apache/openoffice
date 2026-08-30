@@ -132,7 +132,6 @@ bool RegressionEquationItemConverter::GetItemProperty( tWhichIdType nWhichId, tP
 
 bool RegressionEquationItemConverter::ApplySpecialItem(
     sal_uInt16 nWhichId, const SfxItemSet & rItemSet )
-    throw( uno::Exception )
 {
     bool bChanged = false;
 
@@ -163,7 +162,6 @@ bool RegressionEquationItemConverter::ApplySpecialItem(
 
 void RegressionEquationItemConverter::FillSpecialItem(
     sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const
-    throw( uno::Exception )
 {
     switch( nWhichId )
     {

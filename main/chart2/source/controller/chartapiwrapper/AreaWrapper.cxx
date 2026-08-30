@@ -103,40 +103,33 @@ AreaWrapper::~AreaWrapper()
 
 // ____ XShape ____
 awt::Point SAL_CALL AreaWrapper::getPosition()
-    throw (uno::RuntimeException)
 {
     return awt::Point(0,0);
 }
 
 void SAL_CALL AreaWrapper::setPosition( const awt::Point& /*aPosition*/ )
-    throw (uno::RuntimeException)
 {
     OSL_ENSURE( false, "trying to set position of chart area" );
 }
 
 awt::Size SAL_CALL AreaWrapper::getSize()
-    throw (uno::RuntimeException)
 {
     return m_spChart2ModelContact->GetPageSize();
 }
 
 void SAL_CALL AreaWrapper::setSize( const awt::Size& /*aSize*/ )
-    throw (beans::PropertyVetoException,
-           uno::RuntimeException)
 {
     OSL_ENSURE( false, "trying to set size of chart area" );
 }
 
 // ____ XShapeDescriptor (base of XShape) ____
 ::rtl::OUString SAL_CALL AreaWrapper::getShapeType()
-    throw (uno::RuntimeException)
 {
     return C2U( "com.sun.star.chart.ChartArea" );
 }
 
 // ____ XComponent ____
 void SAL_CALL AreaWrapper::dispose()
-    throw (uno::RuntimeException)
 {
     Reference< uno::XInterface > xSource( static_cast< ::cppu::OWeakObject* >( this ) );
     m_aEventListenerContainer.disposeAndClear( lang::EventObject( xSource ) );
@@ -149,14 +142,12 @@ void SAL_CALL AreaWrapper::dispose()
 
 void SAL_CALL AreaWrapper::addEventListener(
     const Reference< lang::XEventListener >& xListener )
-    throw (uno::RuntimeException)
 {
     m_aEventListenerContainer.addInterface( xListener );
 }
 
 void SAL_CALL AreaWrapper::removeEventListener(
     const Reference< lang::XEventListener >& aListener )
-    throw (uno::RuntimeException)
 {
     m_aEventListenerContainer.removeInterface( aListener );
 }

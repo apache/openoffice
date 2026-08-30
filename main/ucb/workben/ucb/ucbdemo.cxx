@@ -179,16 +179,14 @@ class TestOutputStream:
 public:
 	TestOutputStream(): m_bMore(false) {}
 
-    virtual uno::Any SAL_CALL queryInterface(const uno::Type & rType)
-    throw(uno::RuntimeException);
+    virtual uno::Any SAL_CALL queryInterface(const uno::Type & rType);
     virtual void SAL_CALL acquire() throw ()
 	{ OWeakObject::acquire(); }
 
     virtual void SAL_CALL release() throw ()
 	{ OWeakObject::release(); }
 
-    virtual void SAL_CALL writeBytes(const uno::Sequence< sal_Int8 > & rData)
-        throw(uno::RuntimeException);
+    virtual void SAL_CALL writeBytes(const uno::Sequence< sal_Int8 > & rData);
 
     virtual void SAL_CALL flush() throw() {}
 
@@ -201,7 +199,6 @@ public:
 // virtual
 uno::Any SAL_CALL
 TestOutputStream::queryInterface(const uno::Type & rType)
-    throw(uno::RuntimeException)
 {
     uno::Any aRet = cppu::queryInterface(rType,
                         static_cast< io::XOutputStream * >(this));
@@ -212,7 +209,6 @@ TestOutputStream::queryInterface(const uno::Type & rType)
 // virtual
 void SAL_CALL TestOutputStream::writeBytes(
                                     const uno::Sequence< sal_Int8 > & rData)
-    throw(uno::RuntimeException)
 {
 	sal_Int32 nLen = rData.getLength();
 	if (m_sStart.getLength() + nLen > 500)
@@ -253,8 +249,7 @@ public:
 	ProgressHandler(MessagePrinter & rThePrinter): m_rPrinter(rThePrinter) {}
 
     virtual uno::Any SAL_CALL queryInterface(
-                                const uno::Type & rType)
-        throw(uno::RuntimeException);
+                                const uno::Type & rType);
 
     virtual void SAL_CALL acquire() throw ()
 	{ OWeakObject::acquire(); }
@@ -262,13 +257,11 @@ public:
     virtual void SAL_CALL release() throw ()
 	{ OWeakObject::release(); }
 
-    virtual void SAL_CALL push(const uno::Any & rStatus)
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL push(const uno::Any & rStatus);
 
-    virtual void SAL_CALL update(const uno::Any & rStatus)
-        throw (uno::RuntimeException);
+    virtual void SAL_CALL update(const uno::Any & rStatus);
 
-    virtual void SAL_CALL pop() throw (uno::RuntimeException);
+    virtual void SAL_CALL pop();
 };
 
 rtl::OUString ProgressHandler::toString(const uno::Any & rStatus)
@@ -310,7 +303,6 @@ rtl::OUString ProgressHandler::toString(const uno::Any & rStatus)
 // virtual
 uno::Any SAL_CALL
 ProgressHandler::queryInterface( const uno::Type & rType )
-    throw(uno::RuntimeException)
 {
     uno::Any aRet = cppu::queryInterface(
 						rType,
@@ -321,7 +313,6 @@ ProgressHandler::queryInterface( const uno::Type & rType )
 //============================================================================
 // virtual
 void SAL_CALL ProgressHandler::push(const uno::Any & rStatus)
-    throw (uno::RuntimeException)
 {
     rtl::OUString sMessage = rtl::OUString::createFromAscii("Status push: ");
 	sMessage += toString(rStatus);
@@ -331,7 +322,6 @@ void SAL_CALL ProgressHandler::push(const uno::Any & rStatus)
 //============================================================================
 // virtual
 void SAL_CALL ProgressHandler::update(const uno::Any & rStatus)
-    throw (uno::RuntimeException)
 {
     rtl::OUString sMessage = rtl::OUString::createFromAscii("Status update: ");
 	sMessage += toString(rStatus);
@@ -340,7 +330,7 @@ void SAL_CALL ProgressHandler::update(const uno::Any & rStatus)
 
 //============================================================================
 // virtual
-void SAL_CALL ProgressHandler::pop() throw (uno::RuntimeException)
+void SAL_CALL ProgressHandler::pop()
 {
 	m_rPrinter.print("Status pop");
 }
@@ -523,8 +513,7 @@ public:
 
 	// XInterface
 
-    virtual uno::Any SAL_CALL queryInterface( const uno::Type & rType )
-        throw( uno::RuntimeException );
+    virtual uno::Any SAL_CALL queryInterface( const uno::Type & rType );
     virtual void SAL_CALL acquire()
         throw();
     virtual void SAL_CALL release()
@@ -534,12 +523,10 @@ public:
 
     virtual uno::Reference<task::XInteractionHandler> SAL_CALL
     getInteractionHandler()
-        throw (uno::RuntimeException)
 	{ return m_xInteractionHandler; }
 
     virtual uno::Reference<ucb::XProgressHandler> SAL_CALL
     getProgressHandler()
-        throw (uno::RuntimeException)
 	{ return m_xProgressHandler; }
  };
 
@@ -569,7 +556,6 @@ UcbTaskEnvironment::~UcbTaskEnvironment()
 // virtual
 uno::Any SAL_CALL
 UcbTaskEnvironment::queryInterface( const uno::Type & rType )
-    throw( uno::RuntimeException )
 {
     uno::Any aRet = cppu::queryInterface(
             rType, static_cast< ucb::XCommandEnvironment* >( this ) );
@@ -789,8 +775,7 @@ public:
 	void destroy();
 
 	// XInterface
-    virtual uno::Any SAL_CALL queryInterface( const uno::Type & rType )
-        throw( uno::RuntimeException );
+    virtual uno::Any SAL_CALL queryInterface( const uno::Type & rType );
     virtual void SAL_CALL
 	acquire()
         throw();
@@ -801,18 +786,15 @@ public:
 	// XEventListener
 	// ( base interface of XContentEventListener, XPropertiesChangeListener )
     virtual void SAL_CALL
-    disposing( const lang::EventObject& Source )
-        throw( uno::RuntimeException );
+    disposing( const lang::EventObject& Source );
 
 	// XContentEventListener
     virtual void SAL_CALL
-    contentEvent( const ucb::ContentEvent& evt )
-        throw( uno::RuntimeException );
+    contentEvent( const ucb::ContentEvent& evt );
 
 	// XPropertiesChangeListener
 	virtual void SAL_CALL
-    propertiesChange( const uno::Sequence< beans::PropertyChangeEvent >& evt )
-        throw( uno::RuntimeException );
+    propertiesChange( const uno::Sequence< beans::PropertyChangeEvent >& evt );
 };
 
 //-------------------------------------------------------------------------
@@ -1634,7 +1616,6 @@ void UcbContent::removeProperty( const rtl::OUString& rName )
 
 // virtual
 uno::Any SAL_CALL UcbContent::queryInterface( const uno::Type & rType )
-    throw(uno::RuntimeException)
 {
     uno::Any aRet = cppu::queryInterface(
 				rType,
@@ -1669,7 +1650,6 @@ void SAL_CALL UcbContent::release()
 
 // virtual
 void SAL_CALL UcbContent::disposing( const lang::EventObject& /*Source*/ )
-    throw( uno::RuntimeException )
 {
 	print ( "Content: disposing..." );
 }
@@ -1682,7 +1662,6 @@ void SAL_CALL UcbContent::disposing( const lang::EventObject& /*Source*/ )
 
 // virtual
 void SAL_CALL UcbContent::contentEvent( const ucb::ContentEvent& evt )
-    throw( uno::RuntimeException )
 {
 	switch ( evt.Action )
 	{
@@ -1749,7 +1728,6 @@ void SAL_CALL UcbContent::contentEvent( const ucb::ContentEvent& evt )
 // virtual
 void SAL_CALL UcbContent::propertiesChange(
                     const uno::Sequence< beans::PropertyChangeEvent >& evt )
-    throw( uno::RuntimeException )
 {
 	print( "propertiesChange..." );
 

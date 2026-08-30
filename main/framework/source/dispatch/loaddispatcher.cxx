@@ -77,7 +77,6 @@ LoadDispatcher::~LoadDispatcher()
 void SAL_CALL LoadDispatcher::dispatchWithNotification(const css::util::URL&                                             aURL      ,
                                                        const css::uno::Sequence< css::beans::PropertyValue >&            lArguments,
                                                        const css::uno::Reference< css::frame::XDispatchResultListener >& xListener )
-    throw(css::uno::RuntimeException)
 {
     impl_dispatch( aURL, lArguments, xListener );
 }
@@ -87,7 +86,6 @@ void SAL_CALL LoadDispatcher::dispatchWithNotification(const css::util::URL&    
 -----------------------------------------------*/
 void SAL_CALL LoadDispatcher::dispatch(const css::util::URL&                                  aURL      ,
                                        const css::uno::Sequence< css::beans::PropertyValue >& lArguments)
-    throw(css::uno::RuntimeException)
 {
     impl_dispatch( aURL, lArguments, css::uno::Reference< css::frame::XDispatchResultListener >() );
 }
@@ -97,7 +95,6 @@ void SAL_CALL LoadDispatcher::dispatch(const css::util::URL&                    
 -----------------------------------------------*/
 css::uno::Any SAL_CALL LoadDispatcher::dispatchWithReturnValue( const css::util::URL& rURL,
                                                                 const css::uno::Sequence< css::beans::PropertyValue >& lArguments )
-    throw( css::uno::RuntimeException )
 {
     return impl_dispatch( rURL, lArguments, css::uno::Reference< css::frame::XDispatchResultListener >());
 }
@@ -107,7 +104,6 @@ css::uno::Any SAL_CALL LoadDispatcher::dispatchWithReturnValue( const css::util:
 -----------------------------------------------*/
 void SAL_CALL LoadDispatcher::addStatusListener(const css::uno::Reference< css::frame::XStatusListener >& /*xListener*/,
                                                 const css::util::URL&                                     /*aURL*/     )
-    throw(css::uno::RuntimeException)
 {
 }
 
@@ -116,7 +112,6 @@ void SAL_CALL LoadDispatcher::addStatusListener(const css::uno::Reference< css::
 -----------------------------------------------*/
 void SAL_CALL LoadDispatcher::removeStatusListener(const css::uno::Reference< css::frame::XStatusListener >& /*xListener*/,
                                                    const css::util::URL&                                     /*aURL*/     )
-    throw(css::uno::RuntimeException)
 {
 }
 

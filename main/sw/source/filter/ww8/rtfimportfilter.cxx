@@ -52,7 +52,6 @@ RtfImportFilter::~RtfImportFilter()
 }
 
 sal_Bool RtfImportFilter::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor )
-    throw (uno::RuntimeException)
 {
     OSL_TRACE("%s", OSL_THIS_FUNC);
 
@@ -98,12 +97,11 @@ sal_Bool RtfImportFilter::filter( const uno::Sequence< beans::PropertyValue >& a
 }
 
 
-void RtfImportFilter::cancel(  ) throw (uno::RuntimeException)
+void RtfImportFilter::cancel(  )
 {
 }
 
 void RtfImportFilter::setTargetDocument( const uno::Reference< lang::XComponent >& xDoc )
-    throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
     m_xDstDoc = xDoc;
 }
@@ -124,7 +122,7 @@ uno::Sequence< OUString > SAL_CALL RtfImport_getSupportedServiceNames() throw()
     return aSeq;
 }
 
-uno::Reference< uno::XInterface > SAL_CALL RtfImport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception )
+uno::Reference< uno::XInterface > SAL_CALL RtfImport_createInstance(const uno::Reference< lang::XMultiServiceFactory > & rSMgr )
 {
     return (cppu::OWeakObject*) new RtfImportFilter( rSMgr );
 }

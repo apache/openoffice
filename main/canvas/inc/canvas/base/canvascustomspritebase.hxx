@@ -109,7 +109,7 @@ namespace canvas
         }
 
         // XCanvas: selectively override base's methods here, for opacity tracking
-        virtual void SAL_CALL clear() throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL clear()
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
@@ -122,8 +122,7 @@ namespace canvas
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCachedPrimitive > SAL_CALL
         	drawBitmap( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap >& xBitmap,
                         const ::com::sun::star::rendering::ViewState& 									viewState,
-                        const ::com::sun::star::rendering::RenderState& 								renderState ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                             ::com::sun::star::uno::RuntimeException)
+                        const ::com::sun::star::rendering::RenderState& 								renderState )
         {
             tools::verifyArgs(xBitmap, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -147,8 +146,7 @@ namespace canvas
         // functionality provided at the baseclass.
 
         // XSprite
-        virtual void SAL_CALL setAlpha( double alpha ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                              ::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL setAlpha( double alpha )
         {
             tools::verifyRange( alpha, 0.0, 1.0 );
 
@@ -159,8 +157,7 @@ namespace canvas
 
         virtual void SAL_CALL move( const ::com::sun::star::geometry::RealPoint2D& 	aNewPos,
                                     const ::com::sun::star::rendering::ViewState& 	viewState,
-                                    const ::com::sun::star::rendering::RenderState& renderState ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                         ::com::sun::star::uno::RuntimeException)
+                                    const ::com::sun::star::rendering::RenderState& renderState )
         {
             tools::verifyArgs(aNewPos, viewState, renderState,
                               BOOST_CURRENT_FUNCTION,
@@ -171,8 +168,7 @@ namespace canvas
             maSpriteHelper.move( this, aNewPos, viewState, renderState );
         }
 
-        virtual void SAL_CALL transform( const ::com::sun::star::geometry::AffineMatrix2D& aTransformation ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                    ::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL transform( const ::com::sun::star::geometry::AffineMatrix2D& aTransformation )
         {
             tools::verifyArgs(aTransformation,
                               BOOST_CURRENT_FUNCTION,
@@ -183,7 +179,7 @@ namespace canvas
             maSpriteHelper.transform( this, aTransformation );
         }
 
-        virtual void SAL_CALL clip( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& aClip ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL clip( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& aClip )
         {
             // NULL xClip explicitly allowed here (to clear clipping)
 
@@ -192,21 +188,21 @@ namespace canvas
             maSpriteHelper.clip( this, aClip );
         }
 
-        virtual void SAL_CALL setPriority( double nPriority ) throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL setPriority( double nPriority )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
             maSpriteHelper.setPriority( this, nPriority );
         }
 
-        virtual void SAL_CALL show() throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL show()
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
             maSpriteHelper.show( this );
         }
 
-        virtual void SAL_CALL hide() throw (::com::sun::star::uno::RuntimeException)
+        virtual void SAL_CALL hide()
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
@@ -215,7 +211,7 @@ namespace canvas
 
         // XCustomSprite
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCanvas > SAL_CALL
-        	getContentCanvas() throw (::com::sun::star::uno::RuntimeException)
+        	getContentCanvas()
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 

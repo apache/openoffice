@@ -49,14 +49,12 @@ namespace comphelper
 COMPHELPER_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::script::XEventAttacherManager >
 createEventAttacherManager(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XIntrospection > & rIntrospection,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr )
-	throw( ::com::sun::star::uno::Exception );
+		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr );
 
 
 COMPHELPER_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::script::XEventAttacherManager >
 createEventAttacherManager(
-		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr )
-	throw( ::com::sun::star::uno::Exception );
+		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr );
 
 }
 

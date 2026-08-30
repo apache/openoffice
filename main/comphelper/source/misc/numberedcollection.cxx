@@ -83,8 +83,6 @@ void NumberedCollection::setUntitledPrefix(const ::rtl::OUString& sPrefix)
 
 //-----------------------------------------------
 ::sal_Int32 SAL_CALL NumberedCollection::leaseNumber(const css::uno::Reference< css::uno::XInterface >& xComponent)
-    throw (css::lang::IllegalArgumentException,
-           css::uno::RuntimeException         )
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
@@ -120,8 +118,6 @@ void NumberedCollection::setUntitledPrefix(const ::rtl::OUString& sPrefix)
 
 //-----------------------------------------------
 void SAL_CALL NumberedCollection::releaseNumber(::sal_Int32 nNumber)
-    throw (css::lang::IllegalArgumentException,
-           css::uno::RuntimeException         )
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
@@ -159,8 +155,6 @@ void SAL_CALL NumberedCollection::releaseNumber(::sal_Int32 nNumber)
 
 //-----------------------------------------------
 void SAL_CALL NumberedCollection::releaseNumberForComponent(const css::uno::Reference< css::uno::XInterface >& xComponent)
-    throw (css::lang::IllegalArgumentException,
-           css::uno::RuntimeException         )
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
@@ -183,7 +177,6 @@ void SAL_CALL NumberedCollection::releaseNumberForComponent(const css::uno::Refe
 
 //-----------------------------------------------
 ::rtl::OUString SAL_CALL NumberedCollection::getUntitledPrefix()
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);

@@ -52,31 +52,24 @@ public:
     // XInitialization
     virtual void SAL_CALL
     initialize( const com::sun::star::uno::Sequence<
-                        com::sun::star::uno::Any >& aArguments )
-        throw( com::sun::star::uno::Exception,
-               com::sun::star::uno::RuntimeException );
+                        com::sun::star::uno::Any >& aArguments );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw ( com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
     virtual sal_Bool SAL_CALL
-    supportsService( const ::rtl::OUString& ServiceName )
-        throw ( com::sun::star::uno::RuntimeException );
+    supportsService( const ::rtl::OUString& ServiceName );
 
     virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-        throw ( com::sun::star::uno::RuntimeException );
+    getSupportedServiceNames();
 
     // XCommandEnvironment
     virtual com::sun::star::uno::Reference<
         com::sun::star::task::XInteractionHandler > SAL_CALL
-    getInteractionHandler()
-        throw ( com::sun::star::uno::RuntimeException );
+    getInteractionHandler();
     virtual com::sun::star::uno::Reference<
         com::sun::star::ucb::XProgressHandler > SAL_CALL
-    getProgressHandler()
-        throw ( com::sun::star::uno::RuntimeException );
+    getProgressHandler();
 
     // Non-UNO interfaces
     static rtl::OUString

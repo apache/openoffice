@@ -27,7 +27,6 @@ gtest_test(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
     ],
     deps = [
         ":o3tl",                     # o3tl/*.hxx + sal_headers + boost

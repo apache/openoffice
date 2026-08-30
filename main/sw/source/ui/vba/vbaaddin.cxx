@@ -29,7 +29,7 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-SwVbaAddin::SwVbaAddin( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const rtl::OUString& rFileURL, sal_Bool bAutoload ) throw ( uno::RuntimeException ) :
+SwVbaAddin::SwVbaAddin( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const rtl::OUString& rFileURL, sal_Bool bAutoload ) :
     SwVbaAddin_BASE( rParent, rContext ), msFileURL( rFileURL ), mbAutoload( bAutoload ), mbInstalled( bAutoload )
 {
 }
@@ -38,7 +38,7 @@ SwVbaAddin::~SwVbaAddin()
 {
 }
 
-::rtl::OUString SAL_CALL SwVbaAddin::getName() throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL SwVbaAddin::getName()
 {
     rtl::OUString sName;
     INetURLObject aURL( msFileURL );
@@ -47,30 +47,30 @@ SwVbaAddin::~SwVbaAddin()
 }
 
 void SAL_CALL
-SwVbaAddin::setName( const rtl::OUString& ) throw ( css::uno::RuntimeException )
+SwVbaAddin::setName( const rtl::OUString& )
 {
     throw uno::RuntimeException( rtl::OUString(
             RTL_CONSTASCII_USTRINGPARAM(" Fail to set name")), uno::Reference< uno::XInterface >() );
 }
 
-::rtl::OUString SAL_CALL SwVbaAddin::getPath() throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL SwVbaAddin::getPath()
 {
     INetURLObject aURL( msFileURL );
     aURL.CutLastName();
     return aURL.GetURLPath();
 }
 
-::sal_Bool SAL_CALL SwVbaAddin::getAutoload() throw (uno::RuntimeException)
+::sal_Bool SAL_CALL SwVbaAddin::getAutoload()
 {
     return mbAutoload;
 }
 
-::sal_Bool SAL_CALL SwVbaAddin::getInstalled() throw (uno::RuntimeException)
+::sal_Bool SAL_CALL SwVbaAddin::getInstalled()
 {
     return mbInstalled;
 }
 
-void SAL_CALL SwVbaAddin::setInstalled( ::sal_Bool _installed ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaAddin::setInstalled( ::sal_Bool _installed )
 {
     if( _installed != mbInstalled )
     {

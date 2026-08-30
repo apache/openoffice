@@ -77,28 +77,23 @@ private:
     virtual ~Service() {}
 
     virtual void SAL_CALL insertExtensionXcsFile(
-        sal_Bool shared, rtl::OUString const & fileUri)
-        throw (css::uno::RuntimeException);
+        sal_Bool shared, rtl::OUString const & fileUri);
 
     virtual void SAL_CALL insertExtensionXcuFile(
-        sal_Bool shared, rtl::OUString const & fileUri)
-        throw (css::uno::RuntimeException);
+        sal_Bool shared, rtl::OUString const & fileUri);
 
-    virtual void SAL_CALL removeExtensionXcuFile(rtl::OUString const & fileUri)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL removeExtensionXcuFile(rtl::OUString const & fileUri);
 
     virtual void SAL_CALL insertModificationXcuFile(
         rtl::OUString const & fileUri,
         css::uno::Sequence< rtl::OUString > const & includedPaths,
-        css::uno::Sequence< rtl::OUString > const & excludedPaths)
-        throw (css::uno::RuntimeException);
+        css::uno::Sequence< rtl::OUString > const & excludedPaths);
 
     css::uno::Reference< css::uno::XComponentContext > context_;
 };
 
 void Service::insertExtensionXcsFile(
     sal_Bool shared, rtl::OUString const & fileUri)
-    throw (css::uno::RuntimeException)
 {
     osl::MutexGuard g(lock);
     Components::getSingleton(context_).insertExtensionXcsFile(shared, fileUri);
@@ -106,7 +101,6 @@ void Service::insertExtensionXcsFile(
 
 void Service::insertExtensionXcuFile(
     sal_Bool shared, rtl::OUString const & fileUri)
-    throw (css::uno::RuntimeException)
 {
     Broadcaster bc;
     {
@@ -121,7 +115,6 @@ void Service::insertExtensionXcuFile(
 }
 
 void Service::removeExtensionXcuFile(rtl::OUString const & fileUri)
-    throw (css::uno::RuntimeException)
 {
     Broadcaster bc;
     {
@@ -139,7 +132,6 @@ void Service::insertModificationXcuFile(
     rtl::OUString const & fileUri,
     css::uno::Sequence< rtl::OUString > const & includedPaths,
     css::uno::Sequence< rtl::OUString > const & excludedPaths)
-    throw (css::uno::RuntimeException)
 {
     Broadcaster bc;
     {

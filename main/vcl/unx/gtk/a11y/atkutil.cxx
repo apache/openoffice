@@ -142,48 +142,46 @@ class DocumentFocusListener :
 public:
     void attachRecursive(
         const uno::Reference< accessibility::XAccessible >& xAccessible
-    ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException);
+    );
 
     void attachRecursive(
         const uno::Reference< accessibility::XAccessible >& xAccessible,
         const uno::Reference< accessibility::XAccessibleContext >& xContext
-    ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException);
+    );
 
     void attachRecursive(
         const uno::Reference< accessibility::XAccessible >& xAccessible,
         const uno::Reference< accessibility::XAccessibleContext >& xContext,
         const uno::Reference< accessibility::XAccessibleStateSet >& xStateSet
-    ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException);
+    );
 
     void detachRecursive(
         const uno::Reference< accessibility::XAccessible >& xAccessible
-    ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException);
+    );
 
     void detachRecursive(
         const uno::Reference< accessibility::XAccessible >& xAccessible,
         const uno::Reference< accessibility::XAccessibleContext >& xContext
-    ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException);
+    );
 
     void detachRecursive(
         const uno::Reference< accessibility::XAccessible >& xAccessible,
         const uno::Reference< accessibility::XAccessibleContext >& xContext,
         const uno::Reference< accessibility::XAccessibleStateSet >& xStateSet
-    ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException);
+    );
 
-    static uno::Reference< accessibility::XAccessible > getAccessible(const lang::EventObject& aEvent )
-        throw (lang::IndexOutOfBoundsException, uno::RuntimeException);
+    static uno::Reference< accessibility::XAccessible > getAccessible(const lang::EventObject& aEvent );
 
     // XEventListener
-    virtual void disposing( const lang::EventObject& Source ) throw (uno::RuntimeException);
+    virtual void disposing( const lang::EventObject& Source );
 
     // XAccessibleEventListener
-    virtual void notifyEvent( const accessibility::AccessibleEventObject& aEvent ) throw( uno::RuntimeException );
+    virtual void notifyEvent( const accessibility::AccessibleEventObject& aEvent );
 };
 
 /*****************************************************************************/
 
 void DocumentFocusListener::disposing( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
 //    fprintf(stderr, "In DocumentFocusListener::disposing (%p)\n", this);
 //    fprintf(stderr, "m_aRefList has %d entries\n", m_aRefList.size());
@@ -200,7 +198,6 @@ void DocumentFocusListener::disposing( const lang::EventObject& aEvent )
 /*****************************************************************************/
 
 void DocumentFocusListener::notifyEvent( const accessibility::AccessibleEventObject& aEvent )
-    throw( uno::RuntimeException )
 {
     try {
         switch( aEvent.EventId )
@@ -249,7 +246,6 @@ void DocumentFocusListener::notifyEvent( const accessibility::AccessibleEventObj
 /*****************************************************************************/
 
 uno::Reference< accessibility::XAccessible > DocumentFocusListener::getAccessible(const lang::EventObject& aEvent )
-    throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
     uno::Reference< accessibility::XAccessible > xAccessible(aEvent.Source, uno::UNO_QUERY);
 
@@ -278,7 +274,7 @@ uno::Reference< accessibility::XAccessible > DocumentFocusListener::getAccessibl
 
 void DocumentFocusListener::attachRecursive(
     const uno::Reference< accessibility::XAccessible >& xAccessible
-) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+)
 {
     uno::Reference< accessibility::XAccessibleContext > xContext =
         xAccessible->getAccessibleContext();
@@ -292,7 +288,7 @@ void DocumentFocusListener::attachRecursive(
 void DocumentFocusListener::attachRecursive(
     const uno::Reference< accessibility::XAccessible >& xAccessible,
     const uno::Reference< accessibility::XAccessibleContext >& xContext
-)  throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+)
 {
     uno::Reference< accessibility::XAccessibleStateSet > xStateSet =
         xContext->getAccessibleStateSet();
@@ -307,7 +303,7 @@ void DocumentFocusListener::attachRecursive(
     const uno::Reference< accessibility::XAccessible >& xAccessible,
     const uno::Reference< accessibility::XAccessibleContext >& xContext,
     const uno::Reference< accessibility::XAccessibleStateSet >& xStateSet
-) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+)
 {
     if( xStateSet->contains(accessibility::AccessibleStateType::FOCUSED ) )
         atk_wrapper_focus_tracker_notify_when_idle( xAccessible );
@@ -338,7 +334,7 @@ void DocumentFocusListener::attachRecursive(
 
 void DocumentFocusListener::detachRecursive(
     const uno::Reference< accessibility::XAccessible >& xAccessible
-) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+)
 {
     uno::Reference< accessibility::XAccessibleContext > xContext =
         xAccessible->getAccessibleContext();
@@ -352,7 +348,7 @@ void DocumentFocusListener::detachRecursive(
 void DocumentFocusListener::detachRecursive(
     const uno::Reference< accessibility::XAccessible >& xAccessible,
     const uno::Reference< accessibility::XAccessibleContext >& xContext
-)  throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+)
 {
     uno::Reference< accessibility::XAccessibleStateSet > xStateSet =
         xContext->getAccessibleStateSet();
@@ -367,7 +363,7 @@ void DocumentFocusListener::detachRecursive(
     const uno::Reference< accessibility::XAccessible >&,
     const uno::Reference< accessibility::XAccessibleContext >& xContext,
     const uno::Reference< accessibility::XAccessibleStateSet >& xStateSet
-) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+)
 {
     uno::Reference< accessibility::XAccessibleEventBroadcaster > xBroadcaster =
         uno::Reference< accessibility::XAccessibleEventBroadcaster >(xContext, uno::UNO_QUERY);

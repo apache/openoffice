@@ -85,20 +85,19 @@ public:
     // com::sun::star::uno::XInterface
     void SAL_CALL acquire() throw() { OWeakObject::acquire(); }
     void SAL_CALL release() throw() { OWeakObject::release(); }
-    ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 
     // cppu::OPropertySetHelper
     virtual cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
     virtual sal_Bool SAL_CALL convertFastPropertyValue( css::uno::Any &,
-                                                        css::uno::Any &, sal_Int32 nHandle, const css::uno::Any & )
-        throw(css::lang::IllegalArgumentException);
+                                                        css::uno::Any &, sal_Int32 nHandle, const css::uno::Any & );
     virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle,
-                                                            const css::uno::Any& rValue ) throw (css::uno::Exception);
+                                                            const css::uno::Any& rValue );
     using OPropertySetHelper::getFastPropertyValue;
     virtual void SAL_CALL getFastPropertyValue( css::uno::Any& rValue,
                                                 sal_Int32 nHandle ) const;
 
-    virtual css::uno::Reference <css::beans::XPropertySetInfo> SAL_CALL getPropertySetInfo () throw (css::uno::RuntimeException);
+    virtual css::uno::Reference <css::beans::XPropertySetInfo> SAL_CALL getPropertySetInfo ();
 
     struct Listener
     {

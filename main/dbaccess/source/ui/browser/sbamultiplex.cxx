@@ -36,7 +36,7 @@ using namespace dbaui;
 // XStatusListener
 IMPLEMENT_LISTENER_MULTIPLEXER_CORE(SbaXStatusMultiplexer, ::com::sun::star::frame::XStatusListener)
 
-void SAL_CALL SbaXStatusMultiplexer::statusChanged(const ::com::sun::star::frame::FeatureStateEvent& e) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SbaXStatusMultiplexer::statusChanged(const ::com::sun::star::frame::FeatureStateEvent& e)
 {
 	m_aLastKnownStatus = e;
 	m_aLastKnownStatus.Source = &m_rParent;
@@ -90,7 +90,7 @@ IMPLEMENT_PROPERTY_MULTIPLEXER(SbaXVetoableChangeMultiplexer, ::com::sun::star::
 
 // ::com::sun::star::beans::XPropertiesChangeListener
 IMPLEMENT_LISTENER_MULTIPLEXER_CORE(SbaXPropertiesChangeMultiplexer, ::com::sun::star::beans::XPropertiesChangeListener);
-void SbaXPropertiesChangeMultiplexer::propertiesChange(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent>& aEvts) throw(::com::sun::star::uno::RuntimeException)
+void SbaXPropertiesChangeMultiplexer::propertiesChange(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyChangeEvent>& aEvts)
 {
 	// the SbaXPropertiesChangeMultiplexer doesn't care about the property names a listener logs on for, it simply
 	// forwards _all_ changes to _all_ listeners

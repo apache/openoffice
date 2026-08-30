@@ -65,13 +65,13 @@ public:
 	OSimpleContentIdentifier( const OUString& rIdentifier, const OUString& rProviderScheme );
 
 	// XInterface
-	virtual Any			SAL_CALL queryInterface( const Type &type ) throw( RuntimeException );
-	virtual void 		SAL_CALL acquire() throw(RuntimeException);
-	virtual void 		SAL_CALL release() throw(RuntimeException);
+	virtual Any			SAL_CALL queryInterface( const Type &type );
+	virtual void 		SAL_CALL acquire();
+	virtual void 		SAL_CALL release();
 
 	// XContentIdentifier
-    virtual OUString 	SAL_CALL getContentIdentifier() throw(RuntimeException);
-    virtual OUString 	SAL_CALL getContentProviderScheme() throw(RuntimeException);
+    virtual OUString 	SAL_CALL getContentIdentifier();
+    virtual OUString 	SAL_CALL getContentProviderScheme();
 };
 
 
@@ -135,10 +135,10 @@ public:
 	virtual Any doCommand( const Command & crCommand ) = 0;
 
 	// XInterface
-	virtual Any			SAL_CALL queryInterface( const Type &type ) throw( RuntimeException );
+	virtual Any			SAL_CALL queryInterface( const Type &type );
 
-	virtual void SAL_CALL acquire() throw(RuntimeException);
-	virtual void SAL_CALL release() throw(RuntimeException);
+	virtual void SAL_CALL acquire();
+	virtual void SAL_CALL release();
 
 	// XContent
 	virtual void SAL_CALL addContentEventListener( const Reference< XContentEventListener >& rListener ) throw();
@@ -153,8 +153,8 @@ public:
 	virtual Reference< XCommandInfo > SAL_CALL getCommandsInfo() throw();
 
 	// XCommandInfo
-	virtual CommandInfo SAL_CALL getCommandInfoByName( const OUString& rName ) throw( UnsupportedCommandException );
-	virtual CommandInfo SAL_CALL getCommandInfoByHandle( long nHandle )	throw( UnsupportedCommandException );
+	virtual CommandInfo SAL_CALL getCommandInfoByName( const OUString& rName );
+	virtual CommandInfo SAL_CALL getCommandInfoByHandle( long nHandle );
 	virtual sal_Bool SAL_CALL hasCommandByName( const OUString& rName ) throw();
 	virtual sal_Bool SAL_CALL hasCommandByHandle( long nHandle ) throw();
 
@@ -162,7 +162,7 @@ public:
 	virtual Reference< XPropertySetInfo > SAL_CALL getPropertySetInfo() throw();
 
 	// XPropertySetInfo
-	virtual Property SAL_CALL getPropertyByName( const OUString& Name ) throw( UnknownPropertyException );
+	virtual Property SAL_CALL getPropertyByName( const OUString& Name );
 	virtual sal_Bool SAL_CALL hasPropertyByName( const OUString& Name ) throw();
 	virtual void SAL_CALL addPropertiesChangeListener( const Sequence< OUString >& Names, const Reference< XPropertiesChangeListener >& xListener ) throw();
 	virtual void SAL_CALL removePropertiesChangeListener( const Sequence< OUString >& Names, const Reference< XPropertiesChangeListener >& xListener ) throw();
@@ -230,14 +230,14 @@ public:
 	virtual ~OContentTask();
 
 	// XInterface
-	virtual Any			SAL_CALL queryInterface( const Type &type ) throw( RuntimeException );
+	virtual Any			SAL_CALL queryInterface( const Type &type );
 
-	virtual void SAL_CALL acquire() throw(RuntimeException);
-	virtual void SAL_CALL release() throw(RuntimeException);
+	virtual void SAL_CALL acquire();
+	virtual void SAL_CALL release();
 
 	// XContentTask
 	virtual void SAL_CALL start() throw();
-	virtual void SAL_CALL execute() throw( Exception );
+	virtual void SAL_CALL execute();
 	virtual void SAL_CALL abort() throw();
 	virtual ContentTaskStatus SAL_CALL getStatus() throw();
 	virtual Reference< XContentTaskEnvironment > SAL_CALL getEnvironment() throw();
@@ -264,13 +264,13 @@ public:
 	virtual void doExecute();
 
 	// XInterface
-	virtual Any			SAL_CALL queryInterface( const Type &type ) throw( RuntimeException );
-	virtual void 		SAL_CALL acquire() throw(RuntimeException);
-	virtual void 		SAL_CALL release() throw(RuntimeException);
+	virtual Any			SAL_CALL queryInterface( const Type &type );
+	virtual void 		SAL_CALL acquire();
+	virtual void 		SAL_CALL release();
 
 	// XContentTask
 	virtual void SAL_CALL start() throw();
-	virtual void SAL_CALL execute() throw( Exception );
+	virtual void SAL_CALL execute();
 	virtual void SAL_CALL abort() throw();
 	virtual ContentTaskStatus SAL_CALL getStatus() throw();
 	virtual Reference< XContentTaskEnvironment > SAL_CALL getEnvironment() throw();
@@ -304,13 +304,13 @@ public:
 	virtual void getPropertyValue( PropertyValueInfo & rProperty ) = 0;
 
 	// XInterface
-	virtual Any			SAL_CALL queryInterface( const Type &type ) throw( RuntimeException );
-	virtual void 		SAL_CALL acquire() throw(RuntimeException);
-	virtual void 		SAL_CALL release() throw(RuntimeException);
+	virtual Any			SAL_CALL queryInterface( const Type &type );
+	virtual void 		SAL_CALL acquire();
+	virtual void 		SAL_CALL release();
 
 	// XContentTask
 	virtual void SAL_CALL start() throw();
-	virtual void SAL_CALL execute() throw( Exception );
+	virtual void SAL_CALL execute();
 	virtual void SAL_CALL abort() throw();
 	virtual ContentTaskStatus SAL_CALL getStatus() throw();
 	virtual Reference< XContentTaskEnvironment > SAL_CALL getEnvironment() throw();

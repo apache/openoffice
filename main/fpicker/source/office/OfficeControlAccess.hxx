@@ -95,7 +95,7 @@ namespace svt
 										Control* _pControl, sal_Int16 _nProperty, const ::com::sun::star::uno::Any& _rValue,
 										sal_Bool _bIgnoreIllegalArgument = sal_True );
 
-		Control* implGetControl( const ::rtl::OUString& _rControlName, sal_Int16* _pId = NULL, sal_Int32* _pPropertyMask = NULL ) const SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) );
+		Control* implGetControl( const ::rtl::OUString& _rControlName, sal_Int16* _pId = NULL, sal_Int32* _pPropertyMask = NULL ) const;
 
 		/** implements the various methods for retrieving properties from controls
 

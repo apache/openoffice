@@ -1310,17 +1310,17 @@ public:
 	SvXMLImportContext* CreateContext(sal_uInt16 nPrefix, const OUString& rLocalName,	const Reference<XAttributeList>& xAttrList);
 
 	// XInterface
-    virtual Any SAL_CALL queryInterface( const Type& aType ) throw (RuntimeException);
+    virtual Any SAL_CALL queryInterface( const Type& aType );
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
 
 	// XAnimationNodeSupplier
-	Reference< XAnimationNode > SAL_CALL getAnimationNode() throw (RuntimeException);
+	Reference< XAnimationNode > SAL_CALL getAnimationNode();
 
 	// XServiceInfo
-    virtual OUString SAL_CALL getImplementationName() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 private:
 	Reference< XAnimationNode > mxRootNode;
@@ -1354,7 +1354,7 @@ AnimationsImport::~AnimationsImport() throw ()
 }
 
 // XInterface
-Any SAL_CALL AnimationsImport::queryInterface( const Type& aType ) throw (RuntimeException)
+Any SAL_CALL AnimationsImport::queryInterface( const Type& aType )
 {
     if ( aType == ::getCppuType((Reference<XAnimationNodeSupplier> *)0) )
     {
@@ -1393,7 +1393,7 @@ SvXMLImportContext *AnimationsImport::CreateContext(sal_uInt16 nPrefix, const OU
 }
 
 // XAnimationNodeSupplier
-Reference< XAnimationNode > SAL_CALL AnimationsImport::getAnimationNode() throw (RuntimeException)
+Reference< XAnimationNode > SAL_CALL AnimationsImport::getAnimationNode()
 {
 	return mxRootNode;
 }
@@ -1491,7 +1491,7 @@ OUString SAL_CALL AnimationsImport_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "xmloff::AnimationsImport" ) );
 }
 
-Reference< XInterface > SAL_CALL AnimationsImport_createInstance(const Reference< XMultiServiceFactory > & rSMgr) throw( Exception )
+Reference< XInterface > SAL_CALL AnimationsImport_createInstance(const Reference< XMultiServiceFactory > & rSMgr)
 {
 	return (cppu::OWeakObject*)new xmloff::AnimationsImport( rSMgr );
 
@@ -1500,17 +1500,17 @@ Reference< XInterface > SAL_CALL AnimationsImport_createInstance(const Reference
 namespace xmloff
 {
 
-OUString SAL_CALL AnimationsImport::getImplementationName() throw(RuntimeException)
+OUString SAL_CALL AnimationsImport::getImplementationName()
 {
 	return AnimationsImport_getImplementationName();
 }
 
-sal_Bool SAL_CALL AnimationsImport::supportsService( const OUString& ServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL AnimationsImport::supportsService( const OUString& ServiceName )
 {
 	return ServiceName.equalsAscii( "com.sun.star.comp.Xmloff.AnimationsImport" );
 }
 
-Sequence< OUString > SAL_CALL AnimationsImport::getSupportedServiceNames() throw(RuntimeException)
+Sequence< OUString > SAL_CALL AnimationsImport::getSupportedServiceNames()
 {
 	return AnimationsImport_getSupportedServiceNames();
 }

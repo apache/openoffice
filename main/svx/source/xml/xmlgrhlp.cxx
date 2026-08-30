@@ -83,11 +83,11 @@ class SvXMLGraphicInputStream : public::cppu::WeakImplHelper1< XInputStream >
 {
 private:
 
-    virtual sal_Int32	SAL_CALL	readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead) throw(NotConnectedException, BufferSizeExceededException, RuntimeException);
-	virtual sal_Int32	SAL_CALL	readSomeBytes(Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead) throw(NotConnectedException, BufferSizeExceededException, RuntimeException);
-	virtual void		SAL_CALL	skipBytes(sal_Int32 nBytesToSkip) throw(NotConnectedException, BufferSizeExceededException, RuntimeException);
-	virtual sal_Int32	SAL_CALL	available() throw(NotConnectedException, RuntimeException);
-	virtual void		SAL_CALL	closeInput() throw(NotConnectedException, RuntimeException);
+    virtual sal_Int32	SAL_CALL	readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead);
+	virtual sal_Int32	SAL_CALL	readSomeBytes(Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead);
+	virtual void		SAL_CALL	skipBytes(sal_Int32 nBytesToSkip);
+	virtual sal_Int32	SAL_CALL	available();
+	virtual void		SAL_CALL	closeInput();
 
 private:
 
@@ -174,7 +174,6 @@ SvXMLGraphicInputStream::~SvXMLGraphicInputStream()
 // -----------------------------------------------------------------------------
 
 sal_Int32 SAL_CALL SvXMLGraphicInputStream::readBytes( Sequence< sal_Int8 >& rData, sal_Int32 nBytesToRead )
-    throw( NotConnectedException, BufferSizeExceededException, RuntimeException )
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException();
@@ -185,7 +184,6 @@ sal_Int32 SAL_CALL SvXMLGraphicInputStream::readBytes( Sequence< sal_Int8 >& rDa
 // -----------------------------------------------------------------------------
 
 sal_Int32 SAL_CALL SvXMLGraphicInputStream::readSomeBytes( Sequence< sal_Int8 >& rData, sal_Int32 nMaxBytesToRead )
-    throw( NotConnectedException, BufferSizeExceededException, RuntimeException )
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException() ;
@@ -196,7 +194,6 @@ sal_Int32 SAL_CALL SvXMLGraphicInputStream::readSomeBytes( Sequence< sal_Int8 >&
 // -----------------------------------------------------------------------------
 
 void SAL_CALL SvXMLGraphicInputStream::skipBytes( sal_Int32 nBytesToSkip )
-    throw( NotConnectedException, BufferSizeExceededException, RuntimeException )
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException() ;
@@ -206,7 +203,7 @@ void SAL_CALL SvXMLGraphicInputStream::skipBytes( sal_Int32 nBytesToSkip )
 
 // -----------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL SvXMLGraphicInputStream::available() throw( NotConnectedException, RuntimeException )
+sal_Int32 SAL_CALL SvXMLGraphicInputStream::available()
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException() ;
@@ -216,7 +213,7 @@ sal_Int32 SAL_CALL SvXMLGraphicInputStream::available() throw( NotConnectedExcep
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SvXMLGraphicInputStream::closeInput() throw( NotConnectedException, RuntimeException )
+void SAL_CALL SvXMLGraphicInputStream::closeInput()
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException() ;
@@ -233,9 +230,9 @@ class SvXMLGraphicOutputStream : public::cppu::WeakImplHelper1< XOutputStream >
 private:
 
     // XOutputStream
-    virtual void SAL_CALL           writeBytes( const Sequence< sal_Int8 >& rData ) throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException );
-    virtual void SAL_CALL           flush() throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException );
-    virtual void SAL_CALL           closeOutput() throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException );
+    virtual void SAL_CALL           writeBytes( const Sequence< sal_Int8 >& rData );
+    virtual void SAL_CALL           flush();
+    virtual void SAL_CALL           closeOutput();
 
 private:
 
@@ -283,7 +280,6 @@ SvXMLGraphicOutputStream::~SvXMLGraphicOutputStream()
 // -----------------------------------------------------------------------------
 
 void SAL_CALL SvXMLGraphicOutputStream::writeBytes( const Sequence< sal_Int8 >& rData )
-    throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException() ;
@@ -294,7 +290,6 @@ void SAL_CALL SvXMLGraphicOutputStream::writeBytes( const Sequence< sal_Int8 >& 
 // -----------------------------------------------------------------------------
 
 void SAL_CALL SvXMLGraphicOutputStream::flush()
-    throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException() ;
@@ -305,7 +300,6 @@ void SAL_CALL SvXMLGraphicOutputStream::flush()
 // -----------------------------------------------------------------------------
 
 void SAL_CALL SvXMLGraphicOutputStream::closeOutput()
-    throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 {
     if( !mxStmWrapper.is() )
         throw NotConnectedException() ;
@@ -851,7 +845,6 @@ void SvXMLGraphicHelper::Destroy( SvXMLGraphicHelper* pSvXMLGraphicHelper )
 
 // XGraphicObjectResolver
 ::rtl::OUString SAL_CALL SvXMLGraphicHelper::resolveGraphicObjectURL( const ::rtl::OUString& rURL )
-	throw(uno::RuntimeException)
 {
 	::osl::MutexGuard   aGuard( maMutex );
 	const sal_Int32     nIndex = maGrfURLs.size();
@@ -897,7 +890,6 @@ void SvXMLGraphicHelper::Destroy( SvXMLGraphicHelper* pSvXMLGraphicHelper )
 
 // XBinaryStreamResolver
 Reference< XInputStream > SAL_CALL SvXMLGraphicHelper::getInputStream( const ::rtl::OUString& rURL )
-    throw( RuntimeException )
 {
     Reference< XInputStream >   xRet;
     ::rtl::OUString                    aPictureStorageName, aGraphicId;
@@ -920,7 +912,6 @@ Reference< XInputStream > SAL_CALL SvXMLGraphicHelper::getInputStream( const ::r
 // -----------------------------------------------------------------------------
 
 Reference< XOutputStream > SAL_CALL SvXMLGraphicHelper::createOutputStream()
-    throw( RuntimeException )
 {
     Reference< XOutputStream > xRet;
 
@@ -940,7 +931,6 @@ Reference< XOutputStream > SAL_CALL SvXMLGraphicHelper::createOutputStream()
 // -----------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL SvXMLGraphicHelper::resolveOutputStream( const Reference< XOutputStream >& rxBinaryStream )
-    throw( RuntimeException )
 {
     ::rtl::OUString aRet;
 
@@ -1008,29 +998,20 @@ protected:
 
     // ____ XInitialization ____
     // one argument is allowed, which is the XStorage
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments )
-        throw (Exception,
-               RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
     // ____ XGraphicObjectResolver ____
-    virtual ::rtl::OUString SAL_CALL resolveGraphicObjectURL( const ::rtl::OUString& aURL )
-        throw (RuntimeException);
+    virtual ::rtl::OUString SAL_CALL resolveGraphicObjectURL( const ::rtl::OUString& aURL );
 
     // ____ XBinaryStreamResolver ____
-    virtual Reference< io::XInputStream > SAL_CALL getInputStream( const ::rtl::OUString& aURL )
-        throw (RuntimeException);
-    virtual Reference< io::XOutputStream > SAL_CALL createOutputStream()
-        throw (RuntimeException);
-    virtual ::rtl::OUString SAL_CALL resolveOutputStream( const Reference< io::XOutputStream >& aBinaryStream )
-        throw (RuntimeException);
+    virtual Reference< io::XInputStream > SAL_CALL getInputStream( const ::rtl::OUString& aURL );
+    virtual Reference< io::XOutputStream > SAL_CALL createOutputStream();
+    virtual ::rtl::OUString SAL_CALL resolveOutputStream( const Reference< io::XOutputStream >& aBinaryStream );
 
     // ____ XServiceInfo ____
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw (RuntimeException);
-    virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-        throw (RuntimeException);
-    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 private:
     SvXMLGraphicHelperMode              m_eGraphicHelperMode;
@@ -1056,7 +1037,6 @@ void SAL_CALL SvXMLGraphicImportExportHelper::disposing()
 // ____ XInitialization ____
 void SAL_CALL SvXMLGraphicImportExportHelper::initialize(
     const Sequence< Any >& aArguments )
-    throw (Exception, RuntimeException)
 {
     Reference< embed::XStorage > xStorage;
     if( aArguments.getLength() > 0 )
@@ -1072,7 +1052,6 @@ void SAL_CALL SvXMLGraphicImportExportHelper::initialize(
 
 // ____ XGraphicObjectResolver ____
 ::rtl::OUString SAL_CALL SvXMLGraphicImportExportHelper::resolveGraphicObjectURL( const ::rtl::OUString& aURL )
-    throw (uno::RuntimeException)
 {
     return m_xGraphicObjectResolver->resolveGraphicObjectURL( aURL );
 }
@@ -1080,31 +1059,26 @@ void SAL_CALL SvXMLGraphicImportExportHelper::initialize(
 
 // ____ XBinaryStreamResolver ____
 Reference< io::XInputStream > SAL_CALL SvXMLGraphicImportExportHelper::getInputStream( const ::rtl::OUString& aURL )
-    throw (uno::RuntimeException)
 {
     return m_xBinaryStreamResolver->getInputStream( aURL );
 }
 Reference< io::XOutputStream > SAL_CALL SvXMLGraphicImportExportHelper::createOutputStream()
-    throw (uno::RuntimeException)
 {
     return m_xBinaryStreamResolver->createOutputStream();
 }
 ::rtl::OUString SAL_CALL SvXMLGraphicImportExportHelper::resolveOutputStream( const Reference< io::XOutputStream >& aBinaryStream )
-    throw (uno::RuntimeException)
 {
     return m_xBinaryStreamResolver->resolveOutputStream( aBinaryStream );
 }
 
 // ____ XServiceInfo ____
 ::rtl::OUString SAL_CALL SvXMLGraphicImportExportHelper::getImplementationName()
-    throw (uno::RuntimeException)
 {
     if( m_eGraphicHelperMode == GRAPHICHELPER_MODE_READ )
         return SvXMLGraphicImportHelper_getImplementationName();
     return SvXMLGraphicExportHelper_getImplementationName();
 }
 ::sal_Bool SAL_CALL SvXMLGraphicImportExportHelper::supportsService( const ::rtl::OUString& ServiceName )
-    throw (uno::RuntimeException)
 {
     Sequence< ::rtl::OUString > aServiceNames( getSupportedServiceNames());
     const ::rtl::OUString * pBegin = aServiceNames.getConstArray();
@@ -1112,7 +1086,6 @@ Reference< io::XOutputStream > SAL_CALL SvXMLGraphicImportExportHelper::createOu
     return (::std::find( pBegin, pEnd, ServiceName ) != pEnd);
 }
 Sequence< ::rtl::OUString > SAL_CALL SvXMLGraphicImportExportHelper::getSupportedServiceNames()
-    throw (uno::RuntimeException)
 {
     if( m_eGraphicHelperMode == GRAPHICHELPER_MODE_READ )
         return SvXMLGraphicImportHelper_getSupportedServiceNames();
@@ -1121,7 +1094,6 @@ Sequence< ::rtl::OUString > SAL_CALL SvXMLGraphicImportExportHelper::getSupporte
 
 // import
 Reference< XInterface > SAL_CALL SvXMLGraphicImportHelper_createInstance(const Reference< XMultiServiceFactory > & /* rSMgr */ )
-    throw( Exception )
 {
     return static_cast< XWeak* >( new SvXMLGraphicImportExportHelper( GRAPHICHELPER_MODE_READ ));
 }
@@ -1142,7 +1114,6 @@ Sequence< ::rtl::OUString > SAL_CALL SvXMLGraphicImportHelper_getSupportedServic
 
 // export
 Reference< XInterface > SAL_CALL SvXMLGraphicExportHelper_createInstance(const Reference< XMultiServiceFactory > & /* rSMgr */ )
-    throw( Exception )
 {
     return static_cast< XWeak* >( new SvXMLGraphicImportExportHelper( GRAPHICHELPER_MODE_WRITE ));
 }

@@ -139,7 +139,7 @@ namespace frm
     //= OListBoxModel
     //==============================================================================
     //------------------------------------------------------------------
-    InterfaceRef SAL_CALL OListBoxModel_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory) throw (RuntimeException)
+    InterfaceRef SAL_CALL OListBoxModel_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory)
     {
         return *(new OListBoxModel(_rxFactory));
     }
@@ -213,7 +213,7 @@ namespace frm
 
     // XServiceInfo
     //------------------------------------------------------------------------------
-    StringSequence SAL_CALL OListBoxModel::getSupportedServiceNames() throw(RuntimeException)
+    StringSequence SAL_CALL OListBoxModel::getSupportedServiceNames()
     {
         StringSequence aSupported = OBoundControlModel::getSupportedServiceNames();
 
@@ -236,7 +236,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    Any SAL_CALL OListBoxModel::queryAggregation(const Type& _rType) throw (RuntimeException)
+    Any SAL_CALL OListBoxModel::queryAggregation(const Type& _rType)
     {
         Any aReturn = OBoundControlModel::queryAggregation( _rType );
         if ( !aReturn.hasValue() )
@@ -290,7 +290,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    void OListBoxModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue) throw (com::sun::star::uno::Exception)
+    void OListBoxModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue)
     {
         switch (_nHandle)
         {
@@ -369,7 +369,6 @@ namespace frm
     //------------------------------------------------------------------------------
     sal_Bool OListBoxModel::convertFastPropertyValue(
         Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue)
-        throw (IllegalArgumentException)
     {
         sal_Bool bModified(sal_False);
         switch (_nHandle)
@@ -405,7 +404,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxModel::setPropertyValues( const Sequence< ::rtl::OUString >& _rPropertyNames, const Sequence< Any >& _rValues ) throw(PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
+    void SAL_CALL OListBoxModel::setPropertyValues( const Sequence< ::rtl::OUString >& _rPropertyNames, const Sequence< Any >& _rValues )
     {
         // if both SelectedItems and StringItemList are set, care for this
         // #i27024# / 2004-04-05 / fs@openoffice.org
@@ -455,7 +454,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    void OListBoxModel::_propertyChanged( const PropertyChangeEvent& i_rEvent ) throw ( RuntimeException )
+    void OListBoxModel::_propertyChanged( const PropertyChangeEvent& i_rEvent )
     {
         if ( i_rEvent.PropertyName == PROPERTY_STRINGITEMLIST )
         {
@@ -480,14 +479,13 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OListBoxModel::getServiceName() throw(RuntimeException)
+    ::rtl::OUString SAL_CALL OListBoxModel::getServiceName()
     {
         return FRM_COMPONENT_LISTBOX;   // old (non-sun) name for compatibility !
     }
 
     //------------------------------------------------------------------------------
     void SAL_CALL OListBoxModel::write(const Reference<XObjectOutputStream>& _rxOutStream)
-        throw(IOException, RuntimeException)
     {
         OBoundControlModel::write(_rxOutStream);
 
@@ -523,7 +521,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxModel::read(const Reference<XObjectInputStream>& _rxInStream) throw(IOException, RuntimeException)
+    void SAL_CALL OListBoxModel::read(const Reference<XObjectInputStream>& _rxInStream)
     {
         // Bei manchen Variblen muessen Abhaengigkeiten beruecksichtigt werden.
         // Deshalb muessen sie explizit ueber setPropertyValue() gesetzt werden.
@@ -1100,7 +1098,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxModel::disposing( const EventObject& _rSource ) throw ( RuntimeException )
+    void SAL_CALL OListBoxModel::disposing( const EventObject& _rSource )
     {
         if ( !OEntryListHelper::handleDisposing( _rSource ) )
             OBoundControlModel::disposing( _rSource );
@@ -1450,7 +1448,7 @@ namespace frm
     //==================================================================
 
     //------------------------------------------------------------------
-    InterfaceRef SAL_CALL OListBoxControl_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory) throw (RuntimeException)
+    InterfaceRef SAL_CALL OListBoxControl_CreateInstance(const Reference<XMultiServiceFactory>& _rxFactory)
     {
         return *(new OListBoxControl(_rxFactory));
     }
@@ -1465,7 +1463,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    Any SAL_CALL OListBoxControl::queryAggregation(const Type& _rType) throw (RuntimeException)
+    Any SAL_CALL OListBoxControl::queryAggregation(const Type& _rType)
     {
         Any aReturn = OListBoxControl_BASE::queryInterface( _rType );
 
@@ -1523,7 +1521,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    StringSequence SAL_CALL OListBoxControl::getSupportedServiceNames() throw(RuntimeException)
+    StringSequence SAL_CALL OListBoxControl::getSupportedServiceNames()
     {
         StringSequence aSupported = OBoundControl::getSupportedServiceNames();
         aSupported.realloc(aSupported.getLength() + 1);
@@ -1536,7 +1534,7 @@ namespace frm
 
     // XFocusListener
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::focusGained(const FocusEvent& /*_rEvent*/) throw(RuntimeException)
+    void SAL_CALL OListBoxControl::focusGained(const FocusEvent& /*_rEvent*/)
     {
         ::osl::MutexGuard aGuard(m_aMutex);
         if ( m_aChangeListeners.getLength() ) // only if there are listeners
@@ -1551,14 +1549,14 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::focusLost(const FocusEvent& /*_rEvent*/) throw(RuntimeException)
+    void SAL_CALL OListBoxControl::focusLost(const FocusEvent& /*_rEvent*/)
     {
         m_aCurrentSelection.clear();
     }
 
     // XItemListener
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::itemStateChanged(const ItemEvent& _rEvent) throw(RuntimeException)
+    void SAL_CALL OListBoxControl::itemStateChanged(const ItemEvent& _rEvent)
     {
         // forward this to our listeners
         {
@@ -1623,20 +1621,20 @@ namespace frm
 
     // XEventListener
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::disposing(const EventObject& _rSource) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::disposing(const EventObject& _rSource)
     {
         OBoundControl::disposing(_rSource);
     }
 
     // XChangeBroadcaster
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::addChangeListener(const Reference<XChangeListener>& _rxListener) throw(RuntimeException)
+    void SAL_CALL OListBoxControl::addChangeListener(const Reference<XChangeListener>& _rxListener)
     {
         m_aChangeListeners.addInterface( _rxListener );
     }
 
     //------------------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::removeChangeListener(const Reference<XChangeListener>& _rxListener) throw(RuntimeException)
+    void SAL_CALL OListBoxControl::removeChangeListener(const Reference<XChangeListener>& _rxListener)
     {
         m_aChangeListeners.removeInterface( _rxListener );
     }
@@ -1686,54 +1684,54 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::addItemListener( const Reference< XItemListener >& l ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::addItemListener( const Reference< XItemListener >& l )
     {
         m_aItemListeners.addInterface( l );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::removeItemListener( const Reference< XItemListener >& l ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::removeItemListener( const Reference< XItemListener >& l )
     {
         m_aItemListeners.removeInterface( l );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::addActionListener( const Reference< XActionListener >& l ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::addActionListener( const Reference< XActionListener >& l )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->addActionListener( l );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::removeActionListener( const Reference< XActionListener >& l ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::removeActionListener( const Reference< XActionListener >& l )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->removeActionListener( l );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::addItem( const ::rtl::OUString& aItem, ::sal_Int16 nPos ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::addItem( const ::rtl::OUString& aItem, ::sal_Int16 nPos )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->addItem( aItem, nPos );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::addItems( const Sequence< ::rtl::OUString >& aItems, ::sal_Int16 nPos ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::addItems( const Sequence< ::rtl::OUString >& aItems, ::sal_Int16 nPos )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->addItems( aItems, nPos );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::removeItems( ::sal_Int16 nPos, ::sal_Int16 nCount ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::removeItems( ::sal_Int16 nPos, ::sal_Int16 nCount )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->removeItems( nPos, nCount );
     }
 
     //--------------------------------------------------------------------
-    ::sal_Int16 SAL_CALL OListBoxControl::getItemCount(  ) throw (RuntimeException)
+    ::sal_Int16 SAL_CALL OListBoxControl::getItemCount(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getItemCount();
@@ -1741,7 +1739,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OListBoxControl::getItem( ::sal_Int16 nPos ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL OListBoxControl::getItem( ::sal_Int16 nPos )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getItem( nPos );
@@ -1749,7 +1747,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL OListBoxControl::getItems(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL OListBoxControl::getItems(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getItems();
@@ -1757,7 +1755,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::sal_Int16 SAL_CALL OListBoxControl::getSelectedItemPos(  ) throw (RuntimeException)
+    ::sal_Int16 SAL_CALL OListBoxControl::getSelectedItemPos(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getSelectedItemPos();
@@ -1765,7 +1763,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::sal_Int16 > SAL_CALL OListBoxControl::getSelectedItemsPos(  ) throw (RuntimeException)
+    Sequence< ::sal_Int16 > SAL_CALL OListBoxControl::getSelectedItemsPos(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getSelectedItemsPos();
@@ -1773,7 +1771,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OListBoxControl::getSelectedItem(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL OListBoxControl::getSelectedItem(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getSelectedItem();
@@ -1781,7 +1779,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL OListBoxControl::getSelectedItems(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL OListBoxControl::getSelectedItems(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getSelectedItems();
@@ -1789,28 +1787,28 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::selectItemPos( ::sal_Int16 nPos, ::sal_Bool bSelect ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::selectItemPos( ::sal_Int16 nPos, ::sal_Bool bSelect )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->selectItemPos( nPos, bSelect );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::selectItemsPos( const Sequence< ::sal_Int16 >& aPositions, ::sal_Bool bSelect ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::selectItemsPos( const Sequence< ::sal_Int16 >& aPositions, ::sal_Bool bSelect )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->selectItemsPos( aPositions, bSelect );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::selectItem( const ::rtl::OUString& aItem, ::sal_Bool bSelect ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::selectItem( const ::rtl::OUString& aItem, ::sal_Bool bSelect )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->selectItem( aItem, bSelect );
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL OListBoxControl::isMutipleMode(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL OListBoxControl::isMutipleMode(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->isMutipleMode();
@@ -1818,14 +1816,14 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::setMultipleMode( ::sal_Bool bMulti ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::setMultipleMode( ::sal_Bool bMulti )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->setMultipleMode( bMulti );
     }
 
     //--------------------------------------------------------------------
-    ::sal_Int16 SAL_CALL OListBoxControl::getDropDownLineCount(  ) throw (RuntimeException)
+    ::sal_Int16 SAL_CALL OListBoxControl::getDropDownLineCount(  )
     {
         if ( m_xAggregateListBox.is() )
             return m_xAggregateListBox->getDropDownLineCount();
@@ -1833,14 +1831,14 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::setDropDownLineCount( ::sal_Int16 nLines ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::setDropDownLineCount( ::sal_Int16 nLines )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->setDropDownLineCount( nLines );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OListBoxControl::makeVisible( ::sal_Int16 nEntry ) throw (RuntimeException)
+    void SAL_CALL OListBoxControl::makeVisible( ::sal_Int16 nEntry )
     {
         if ( m_xAggregateListBox.is() )
             m_xAggregateListBox->makeVisible( nEntry );

@@ -37,8 +37,6 @@ uno::Reference< com::sun::star::ucb::XContent > SAL_CALL
 ContentProvider::queryContent(
             const uno::Reference<
                     com::sun::star::ucb::XContentIdentifier >& Identifier )
-    throw( com::sun::star::ucb::IllegalIdentifierException,
-           uno::RuntimeException )
 {
 #ifdef DEBUG
     fprintf(stderr, "QueryContent: '%s'",

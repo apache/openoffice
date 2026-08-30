@@ -58,19 +58,16 @@ uno::Reference< uno::XInterface >
 }
 
 OUString SvFilterOptionsDialog_getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.svtools.SvFilterOptionsDialog" ) );
 }
 #define SERVICE_NAME "com.sun.star.ui.dialog.FilterOptionsDialog"
 sal_Bool SAL_CALL SvFilterOptionsDialog_supportsService( const OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( SERVICE_NAME ) );
 }
 
 uno::Sequence< OUString > SAL_CALL SvFilterOptionsDialog_getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	uno::Sequence< OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -110,23 +107,19 @@ void SAL_CALL SvFilterOptionsDialog::release() throw()
 
 // XInitialization
 void SAL_CALL SvFilterOptionsDialog::initialize( const uno::Sequence< uno::Any > & )
-	throw ( uno::Exception, uno::RuntimeException )
 {
 }
 
 // XServiceInfo
 OUString SAL_CALL SvFilterOptionsDialog::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return SvFilterOptionsDialog_getImplementationName();
 }
 sal_Bool SAL_CALL SvFilterOptionsDialog::supportsService( const OUString& rServiceName )
-	throw( uno::RuntimeException )
 {
     return SvFilterOptionsDialog_supportsService( rServiceName );
 }
 uno::Sequence< OUString > SAL_CALL SvFilterOptionsDialog::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
     return SvFilterOptionsDialog_getSupportedServiceNames();
 }
@@ -134,7 +127,6 @@ uno::Sequence< OUString > SAL_CALL SvFilterOptionsDialog::getSupportedServiceNam
 
 // XPropertyAccess
 uno::Sequence< beans::PropertyValue > SvFilterOptionsDialog::getPropertyValues()
-        throw ( uno::RuntimeException )
 {
 	sal_Int32 i, nCount;
 	for ( i = 0, nCount = maMediaDescriptor.getLength(); i < nCount; i++ )
@@ -152,9 +144,6 @@ uno::Sequence< beans::PropertyValue > SvFilterOptionsDialog::getPropertyValues()
 }
 
 void SvFilterOptionsDialog::setPropertyValues( const uno::Sequence< beans::PropertyValue > & aProps )
-        throw ( beans::UnknownPropertyException, beans::PropertyVetoException,
-                lang::IllegalArgumentException, lang::WrappedTargetException,
-                uno::RuntimeException )
 {
     maMediaDescriptor = aProps;
 
@@ -174,13 +163,11 @@ void SvFilterOptionsDialog::setPropertyValues( const uno::Sequence< beans::Prope
 
 // XExecutableDialog
 void SvFilterOptionsDialog::setTitle( const OUString& aTitle )
-    throw ( uno::RuntimeException )
 {
     maDialogTitle = aTitle;
 }
 
 sal_Int16 SvFilterOptionsDialog::execute()
-	throw ( uno::RuntimeException )
 {
     sal_Int16 nRet = ui::dialogs::ExecutableDialogResults::CANCEL;
 
@@ -236,7 +223,6 @@ sal_Int16 SvFilterOptionsDialog::execute()
 
 // XEmporter
 void SvFilterOptionsDialog::setSourceDocument( const uno::Reference< lang::XComponent >& xDoc )
-		throw ( lang::IllegalArgumentException, uno::RuntimeException )
 {
 	mxSourceDocument = xDoc;
 

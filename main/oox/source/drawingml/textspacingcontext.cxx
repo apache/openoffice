@@ -40,13 +40,11 @@ namespace oox { namespace drawingml {
 	}
 
     void TextSpacingContext::endFastElement( sal_Int32 /*nElement*/ )
-		throw ( SAXException, RuntimeException )
 	{
 	}
 
 	Reference< XFastContextHandler > TextSpacingContext::createFastChildContext( ::sal_Int32 aElement,
             const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 	{
 		Reference< XFastContextHandler > xRet;
 		switch( aElement )

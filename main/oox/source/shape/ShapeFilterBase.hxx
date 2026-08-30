@@ -41,8 +41,7 @@ public:
     typedef boost::shared_ptr<ShapeFilterBase> Pointer_t;
 
     explicit            ShapeFilterBase(
-                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext )
-                            throw( ::com::sun::star::uno::RuntimeException );
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext );
 
     virtual             ~ShapeFilterBase();
 

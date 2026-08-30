@@ -72,7 +72,6 @@ void CurlInputStream::AddToStream( const char * inBuf, sal_Int32 inLen )
 // queryInterface
 // -------------------------------------------------------------------
 Any CurlInputStream::queryInterface( const Type &type )
-						throw( RuntimeException )
 {
 	Any aRet = ::cppu::queryInterface( type,
 									   static_cast< XInputStream * >( this ),
@@ -86,10 +85,6 @@ Any CurlInputStream::queryInterface( const Type &type )
 // -------------------------------------------------------------------
 sal_Int32 SAL_CALL CurlInputStream::readBytes(
   ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
-		throw( ::com::sun::star::io::NotConnectedException,
-			   ::com::sun::star::io::BufferSizeExceededException,
-			   ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException )
 {
 	// Work out how much we're actually going to write
 	sal_Int32 theBytes2Read = nBytesToRead;
@@ -115,10 +110,6 @@ sal_Int32 SAL_CALL CurlInputStream::readBytes(
 // -------------------------------------------------------------------
 sal_Int32 SAL_CALL CurlInputStream::readSomeBytes(
  ::com::sun::star::uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
-        throw( ::com::sun::star::io::NotConnectedException,
-               ::com::sun::star::io::BufferSizeExceededException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::RuntimeException )
 {
 	// Warning: What should this be doing ?
 	return readBytes( aData, nMaxBytesToRead );
@@ -129,10 +120,6 @@ sal_Int32 SAL_CALL CurlInputStream::readSomeBytes(
 // Moves the current stream position forward
 // -------------------------------------------------------------------
 void SAL_CALL CurlInputStream::skipBytes( sal_Int32 nBytesToSkip )
-        throw( ::com::sun::star::io::NotConnectedException,
-               ::com::sun::star::io::BufferSizeExceededException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::RuntimeException )
 {
 	mPos += nBytesToSkip;
 	if ( mPos >= mLen )
@@ -144,9 +131,6 @@ void SAL_CALL CurlInputStream::skipBytes( sal_Int32 nBytesToSkip )
 // Returns the number of unread bytes currently remaining on the stream
 // -------------------------------------------------------------------
 sal_Int32 SAL_CALL CurlInputStream::available(  )
-        throw( ::com::sun::star::io::NotConnectedException,
-               ::com::sun::star::io::IOException,
-               ::com::sun::star::uno::RuntimeException )
 {
 	return sal::static_int_cast<sal_Int32>(mLen - mPos);
 }
@@ -155,9 +139,6 @@ sal_Int32 SAL_CALL CurlInputStream::available(  )
 // closeInput
 // -------------------------------------------------------------------
 void SAL_CALL CurlInputStream::closeInput( void )
- 		throw( ::com::sun::star::io::NotConnectedException,
-       		   ::com::sun::star::io::IOException,
-       		   ::com::sun::star::uno::RuntimeException )
 {
 }
 
@@ -165,9 +146,6 @@ void SAL_CALL CurlInputStream::closeInput( void )
 // seek
 // -------------------------------------------------------------------
 void SAL_CALL CurlInputStream::seek( sal_Int64 location )
-		throw( ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException )
 {
 	if ( location < 0 )
 		throw ::com::sun::star::lang::IllegalArgumentException();
@@ -182,8 +160,6 @@ void SAL_CALL CurlInputStream::seek( sal_Int64 location )
 // getPosition
 // -------------------------------------------------------------------
 sal_Int64 SAL_CALL CurlInputStream::getPosition()
-		throw( ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException )
 {
 	return mPos;
 }
@@ -192,8 +168,6 @@ sal_Int64 SAL_CALL CurlInputStream::getPosition()
 // getLength
 // -------------------------------------------------------------------
 sal_Int64 SAL_CALL CurlInputStream::getLength()
-		throw( ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException )
 {
 	return mLen;
 }

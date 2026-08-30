@@ -66,7 +66,7 @@ static Sequence< OUString > s_serviceNames = Sequence< OUString >( &s_serviceNam
 //*************************************************************************
 // ScriptStorageManager Constructor
 ScriptStorageManager::ScriptStorageManager( const Reference<
-        XComponentContext > & xContext ) SAL_THROW ( ( RuntimeException ) )
+        XComponentContext > & xContext )
         : m_xContext( xContext, UNO_SET_THROW ), m_count( 0 ), m_securityMgr( xContext )
 {
     OSL_TRACE( "< ScriptStorageManager ctor called >\n" );
@@ -106,7 +106,6 @@ ScriptStorageManager::setupAppStorage(
     const Reference< util::XMacroExpander > & xME,
     const OUString & storageStr,
     const OUString & appStr)
-SAL_THROW ( ( RuntimeException ) )
 {
     try
     {
@@ -135,7 +134,6 @@ ScriptStorageManager::setupAnyStorage(
     const Reference< ucb::XSimpleFileAccess > & xSFA,
     const OUString & storageStr,
     const OUString & origStringURI )
-SAL_THROW ( ( RuntimeException ) )
 {
     // Required for scope of fnc to protect all access read and writes to m_count
     ::osl::Guard< ::osl::Mutex > aGuard( m_mutex );
@@ -198,7 +196,6 @@ SAL_THROW ( () )
 sal_Int32 SAL_CALL
 ScriptStorageManager::createScriptStorage(
     const Reference< ucb::XSimpleFileAccess >& xSFA )
-throw ( RuntimeException )
 {
     OSL_TRACE( "** ==> ScriptStorageManager in createScriptingStorage\n" );
     ENSURE_OR_THROW( xSFA.is(), "ScriptStorageManager::createScriptStorage: XSimpleFileAccess is not valid" );
@@ -211,7 +208,6 @@ throw ( RuntimeException )
 sal_Int32 SAL_CALL
 ScriptStorageManager::createScriptStorageWithURI(
     const Reference< ucb::XSimpleFileAccess >& xSFA, const OUString & cStringURI )
-throw ( RuntimeException )
 {
     OSL_TRACE( "** ==> ScriptStorageManager in createScriptingStorageWithURI\n" );
     ENSURE_OR_THROW( xSFA.is(), "ScriptStorageManager::createScriptStorage: XSimpleFileAccess is not valid" );
@@ -284,7 +280,6 @@ throw ( RuntimeException )
 //*************************************************************************
 Reference < XInterface > SAL_CALL
 ScriptStorageManager::getScriptStorage( sal_Int32 scriptStorageID )
-throw( RuntimeException )
 {
     OSL_TRACE( "** ==> ScriptStorageManager in getStorageInstance\n" );
     OSL_TRACE( "** ==> request for id=%d",scriptStorageID );
@@ -306,7 +301,6 @@ throw( RuntimeException )
 //*******************************************************************
 sal_Int32 SAL_CALL
 ScriptStorageManager::getScriptStorageID( const ::rtl::OUString& origURI )
-        throw (::com::sun::star::uno::RuntimeException)
 {
     StorageId_hash::const_iterator it = m_StorageIdOrigURIHash.find( origURI );
 
@@ -347,7 +341,6 @@ ScriptStorageManager::removeScriptDocURIHashEntry( const OUString & origURI )
 //*******************************************************************
 void SAL_CALL
 ScriptStorageManager::refreshScriptStorage( const OUString & stringURI )
-throw( RuntimeException )
 {
     OSL_TRACE( "** => ScriptStorageManager in refreshScriptStorage\n" );
     OSL_TRACE( "** => refreshing URI: %s\n",
@@ -388,7 +381,6 @@ throw( RuntimeException )
 void SAL_CALL
 ScriptStorageManager::checkPermission( const OUString &
 scriptStorageURI, const OUString & permissionRequest )
-throw ( RuntimeException, lang::IllegalArgumentException, css::security::AccessControlException )
 {
     try
     {
@@ -417,7 +409,6 @@ throw ( RuntimeException, lang::IllegalArgumentException, css::security::AccessC
 //*************************************************************************
 OUString SAL_CALL
 ScriptStorageManager::getImplementationName( )
-throw( RuntimeException )
 {
     return s_implName;
 }
@@ -425,7 +416,6 @@ throw( RuntimeException )
 //*************************************************************************
 sal_Bool SAL_CALL
 ScriptStorageManager::supportsService( const OUString& serviceName )
-throw( RuntimeException )
 {
     OUString const * pNames = s_serviceNames.getConstArray();
     for ( sal_Int32 nPos = s_serviceNames.getLength(); nPos--; )
@@ -441,7 +431,6 @@ throw( RuntimeException )
 //*************************************************************************
 Sequence< OUString > SAL_CALL
 ScriptStorageManager::getSupportedServiceNames( )
-throw( RuntimeException )
 {
     return s_serviceNames;
 }
@@ -449,7 +438,6 @@ throw( RuntimeException )
 //*************************************************************************
 void SAL_CALL
 ScriptStorageManager::disposing( const ::com::sun::star::lang::EventObject& Source )
-throw ( ::com::sun::star::uno::RuntimeException )
 {
     OSL_TRACE( "ScriptStorageManager::disposing started" );
     OSL_TRACE( "event object type=%s",

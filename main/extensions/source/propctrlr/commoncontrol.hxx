@@ -134,12 +134,12 @@ namespace pcr
 
     public:
         // XPropertyControl
-        ::sal_Int16 SAL_CALL getControlType() throw (::com::sun::star::uno::RuntimeException);
-        ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext > SAL_CALL getControlContext() throw (::com::sun::star::uno::RuntimeException);
-        void SAL_CALL setControlContext( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext >& _controlcontext ) throw (::com::sun::star::uno::RuntimeException);
-        ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL getControlWindow() throw (::com::sun::star::uno::RuntimeException);
-        ::sal_Bool SAL_CALL isModified(  ) throw (::com::sun::star::uno::RuntimeException);
-        void SAL_CALL notifyModifiedValue(  ) throw (::com::sun::star::uno::RuntimeException);
+        ::sal_Int16 SAL_CALL getControlType();
+        ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext > SAL_CALL getControlContext();
+        void SAL_CALL setControlContext( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext >& _controlcontext );
+        ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL getControlWindow();
+        ::sal_Bool SAL_CALL isModified(  );
+        void SAL_CALL notifyModifiedValue(  );
 
         // XComponent
         virtual void SAL_CALL dispose();
@@ -197,12 +197,12 @@ namespace pcr
         inline CommonBehaviourControl( sal_Int16 _nControlType, Window* _pParentWindow, WinBits _nWindowStyle, bool _bDoSetHandlers = true );
 
         // XPropertyControl - delegated to ->m_aImplControl
-        inline ::sal_Int16 SAL_CALL getControlType() throw (::com::sun::star::uno::RuntimeException);
-        inline ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext > SAL_CALL getControlContext() throw (::com::sun::star::uno::RuntimeException);
-        inline void SAL_CALL setControlContext( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext >& _controlcontext ) throw (::com::sun::star::uno::RuntimeException);
-        inline ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL getControlWindow() throw (::com::sun::star::uno::RuntimeException);
-        inline ::sal_Bool SAL_CALL isModified(  ) throw (::com::sun::star::uno::RuntimeException);
-        inline void SAL_CALL notifyModifiedValue(  ) throw (::com::sun::star::uno::RuntimeException);
+        inline ::sal_Int16 SAL_CALL getControlType();
+        inline ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext > SAL_CALL getControlContext();
+        inline void SAL_CALL setControlContext( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext >& _controlcontext );
+        inline ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL getControlWindow();
+        inline ::sal_Bool SAL_CALL isModified(  );
+        inline void SAL_CALL notifyModifiedValue(  );
 
         // XComponent
         inline virtual void SAL_CALL disposing();
@@ -263,42 +263,42 @@ namespace pcr
 
     //--------------------------------------------------------------------
     template< class CONTROL_INTERFACE, class CONTROL_WINDOW >
-    inline ::sal_Int16 SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::getControlType() throw (::com::sun::star::uno::RuntimeException)
+    inline ::sal_Int16 SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::getControlType()
     {
         return m_aImplControl.getControlType();
     }
 
     //--------------------------------------------------------------------
     template< class CONTROL_INTERFACE, class CONTROL_WINDOW >
-    inline ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext > SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::getControlContext() throw (::com::sun::star::uno::RuntimeException)
+    inline ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext > SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::getControlContext()
     {
         return m_aImplControl.getControlContext();
     }
 
     //--------------------------------------------------------------------
     template< class CONTROL_INTERFACE, class CONTROL_WINDOW >
-    inline void SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::setControlContext( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext >& _controlcontext ) throw (::com::sun::star::uno::RuntimeException)
+    inline void SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::setControlContext( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControlContext >& _controlcontext )
     {
         m_aImplControl.setControlContext( _controlcontext );
     }
 
     //--------------------------------------------------------------------
     template< class CONTROL_INTERFACE, class CONTROL_WINDOW >
-    inline ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::getControlWindow() throw (::com::sun::star::uno::RuntimeException)
+    inline ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::getControlWindow()
     {
         return m_aImplControl.getControlWindow();
     }
 
     //--------------------------------------------------------------------
     template< class CONTROL_INTERFACE, class CONTROL_WINDOW >
-    inline ::sal_Bool SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::isModified(  ) throw (::com::sun::star::uno::RuntimeException)
+    inline ::sal_Bool SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::isModified(  )
     {
         return m_aImplControl.isModified();
     }
 
     //--------------------------------------------------------------------
     template< class CONTROL_INTERFACE, class CONTROL_WINDOW >
-    inline void SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::notifyModifiedValue(  ) throw (::com::sun::star::uno::RuntimeException)
+    inline void SAL_CALL CommonBehaviourControl< CONTROL_INTERFACE, CONTROL_WINDOW >::notifyModifiedValue(  )
     {
         m_aImplControl.notifyModifiedValue();
     }

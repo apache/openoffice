@@ -766,7 +766,7 @@ ModuleUIConfigurationManager::~ModuleUIConfigurationManager()
 }
 
 // XComponent
-void SAL_CALL ModuleUIConfigurationManager::dispose() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::dispose()
 {
     Reference< XComponent > xThis( static_cast< OWeakObject* >(this), UNO_QUERY );
 
@@ -802,7 +802,7 @@ void SAL_CALL ModuleUIConfigurationManager::dispose() throw (::com::sun::star::u
     }
 }
 
-void SAL_CALL ModuleUIConfigurationManager::addEventListener( const Reference< XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::addEventListener( const Reference< XEventListener >& xListener )
 {
     {
         ResetableGuard aGuard( m_aLock );
@@ -815,14 +815,14 @@ void SAL_CALL ModuleUIConfigurationManager::addEventListener( const Reference< X
     m_aListenerContainer.addInterface( ::getCppuType( ( const Reference< XEventListener >* ) NULL ), xListener );
 }
 
-void SAL_CALL ModuleUIConfigurationManager::removeEventListener( const Reference< XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::removeEventListener( const Reference< XEventListener >& xListener )
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     m_aListenerContainer.removeInterface( ::getCppuType( ( const Reference< XEventListener >* ) NULL ), xListener );
 }
 
 // XInitialization
-void SAL_CALL ModuleUIConfigurationManager::initialize( const Sequence< Any >& aArguments ) throw ( Exception, RuntimeException )
+void SAL_CALL ModuleUIConfigurationManager::initialize( const Sequence< Any >& aArguments )
 {
     ResetableGuard aLock( m_aLock );
 
@@ -879,7 +879,7 @@ void SAL_CALL ModuleUIConfigurationManager::initialize( const Sequence< Any >& a
 }
 
 // XUIConfiguration
-void SAL_CALL ModuleUIConfigurationManager::addConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::addConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
 {
     {
         ResetableGuard aGuard( m_aLock );
@@ -892,7 +892,7 @@ void SAL_CALL ModuleUIConfigurationManager::addConfigurationListener( const Refe
     m_aListenerContainer.addInterface( ::getCppuType( ( const Reference< XUIConfigurationListener >* ) NULL ), xListener );
 }
 
-void SAL_CALL ModuleUIConfigurationManager::removeConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::removeConfigurationListener( const Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     m_aListenerContainer.removeInterface( ::getCppuType( ( const Reference< XUIConfigurationListener >* ) NULL ), xListener );
@@ -900,7 +900,7 @@ void SAL_CALL ModuleUIConfigurationManager::removeConfigurationListener( const R
 
 
 // XUIConfigurationManager
-void SAL_CALL ModuleUIConfigurationManager::reset() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::reset()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -990,7 +990,6 @@ void SAL_CALL ModuleUIConfigurationManager::reset() throw (::com::sun::star::uno
 }
 
 Sequence< Sequence< PropertyValue > > SAL_CALL ModuleUIConfigurationManager::getUIElementsInfo( sal_Int16 ElementType )
-throw ( IllegalArgumentException, RuntimeException )
 {
     if (( ElementType < 0 ) || ( ElementType >= ::com::sun::star::ui::UIElementType::COUNT ))
         throw IllegalArgumentException();
@@ -1029,7 +1028,7 @@ throw ( IllegalArgumentException, RuntimeException )
     return aElementInfoSeq;
 }
 
-Reference< XIndexContainer > SAL_CALL ModuleUIConfigurationManager::createSettings() throw (::com::sun::star::uno::RuntimeException)
+Reference< XIndexContainer > SAL_CALL ModuleUIConfigurationManager::createSettings()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1041,7 +1040,6 @@ Reference< XIndexContainer > SAL_CALL ModuleUIConfigurationManager::createSettin
 }
 
 sal_Bool SAL_CALL ModuleUIConfigurationManager::hasSettings( const ::rtl::OUString& ResourceURL )
-throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1064,7 +1062,6 @@ throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::
 }
 
 Reference< XIndexAccess > SAL_CALL ModuleUIConfigurationManager::getSettings( const ::rtl::OUString& ResourceURL, sal_Bool bWriteable )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1093,7 +1090,6 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 void SAL_CALL ModuleUIConfigurationManager::replaceSettings( const ::rtl::OUString& ResourceURL, const Reference< ::com::sun::star::container::XIndexAccess >& aNewData )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IllegalAccessException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1203,7 +1199,6 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 void SAL_CALL ModuleUIConfigurationManager::removeSettings( const ::rtl::OUString& ResourceURL )
-throw ( NoSuchElementException, IllegalArgumentException, IllegalAccessException, RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1282,7 +1277,6 @@ throw ( NoSuchElementException, IllegalArgumentException, IllegalAccessException
 }
 
 void SAL_CALL ModuleUIConfigurationManager::insertSettings( const ::rtl::OUString& NewResourceURL, const Reference< XIndexAccess >& aNewData )
-throw ( ElementExistException, IllegalArgumentException, IllegalAccessException, RuntimeException )
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( NewResourceURL );
 
@@ -1344,7 +1338,7 @@ throw ( ElementExistException, IllegalArgumentException, IllegalAccessException,
     }
 }
 
-Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getImageManager() throw (::com::sun::star::uno::RuntimeException)
+Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getImageManager()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1375,7 +1369,7 @@ Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getImageManager()
     return Reference< XInterface >( m_xModuleImageManager, UNO_QUERY );
 }
 
-Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getShortCutManager() throw (::com::sun::star::uno::RuntimeException)
+Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getShortCutManager()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1404,14 +1398,13 @@ Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getShortCutManage
     return m_xModuleAcceleratorManager;
 }
 
-Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getEventsManager() throw (::com::sun::star::uno::RuntimeException)
+Reference< XInterface > SAL_CALL ModuleUIConfigurationManager::getEventsManager()
 {
     return Reference< XInterface >();
 }
 
 // XModuleUIConfigurationManager
 sal_Bool SAL_CALL ModuleUIConfigurationManager::isDefaultSettings( const ::rtl::OUString& ResourceURL )
-throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1434,7 +1427,6 @@ throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::
 }
 
 Reference< XIndexAccess > SAL_CALL ModuleUIConfigurationManager::getDefaultSettings( const ::rtl::OUString& ResourceURL )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     sal_Int16 nElementType = RetrieveTypeFromResourceURL( ResourceURL );
 
@@ -1467,7 +1459,7 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 // XUIConfigurationPersistence
-void SAL_CALL ModuleUIConfigurationManager::reload() throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::reload()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1508,7 +1500,7 @@ void SAL_CALL ModuleUIConfigurationManager::reload() throw (::com::sun::star::un
     }
 }
 
-void SAL_CALL ModuleUIConfigurationManager::store() throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::store()
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1541,7 +1533,7 @@ void SAL_CALL ModuleUIConfigurationManager::store() throw (::com::sun::star::uno
     }
 }
 
-void SAL_CALL ModuleUIConfigurationManager::storeToStorage( const Reference< XStorage >& Storage ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL ModuleUIConfigurationManager::storeToStorage( const Reference< XStorage >& Storage )
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1574,14 +1566,14 @@ void SAL_CALL ModuleUIConfigurationManager::storeToStorage( const Reference< XSt
     }
 }
 
-sal_Bool SAL_CALL ModuleUIConfigurationManager::isModified() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL ModuleUIConfigurationManager::isModified()
 {
     ResetableGuard aGuard( m_aLock );
 
     return m_bModified;
 }
 
-sal_Bool SAL_CALL ModuleUIConfigurationManager::isReadOnly() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL ModuleUIConfigurationManager::isReadOnly()
 {
     ResetableGuard aGuard( m_aLock );
 

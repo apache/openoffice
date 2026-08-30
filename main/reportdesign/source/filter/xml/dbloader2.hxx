@@ -84,15 +84,15 @@ public:
 	::com::sun::star::uno::Sequence< ::rtl::OUString > 	SAL_CALL getSupportedServiceNames(void) throw(  );
 
 	// static methods
-	static ::rtl::OUString getImplementationName_Static(void) throw( ::com::sun::star::uno::RuntimeException )
+	static ::rtl::OUString getImplementationName_Static(void)
 	{
 		return ::rtl::OUString::createFromAscii("com.sun.star.comp.report.ORptTypeDetection");
 	}
-	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
     create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 
-	virtual ::rtl::OUString SAL_CALL detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL detect( ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& Descriptor );
 };
 }
 #endif

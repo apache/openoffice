@@ -32,7 +32,6 @@
 // -------------
 
 sal_Bool SVGFilter::implImport( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
     Reference< XMultiServiceFactory >	xServiceFactory( ::comphelper::getProcessServiceFactory() ) ;
 	rtl::OUString							aTmpFileName;

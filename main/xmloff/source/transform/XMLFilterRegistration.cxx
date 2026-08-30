@@ -34,7 +34,7 @@ using namespace ::com::sun::star;
     extern ::rtl::OUString SAL_CALL classname##_getImplementationName() throw();   \
     extern uno::Sequence< ::rtl::OUString > SAL_CALL classname##_getSupportedServiceNames() throw();   \
     extern uno::Reference< uno::XInterface > SAL_CALL classname##_createInstance(   \
-	    	const uno::Reference< lang::XMultiServiceFactory > & rSMgr ) throw( uno::Exception );
+	    	const uno::Reference< lang::XMultiServiceFactory > & rSMgr );
 
 #define ENUMERATE_SERVICE( classname ) \
     { classname##_getImplementationName, classname##_getSupportedServiceNames, classname##_createInstance }

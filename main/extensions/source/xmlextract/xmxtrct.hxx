@@ -44,7 +44,7 @@ public:
 	virtual 										~XMLExtractor();
 
 	// XXMLExtractor
-    virtual REF( NMSP_IO::XInputStream ) SAL_CALL	extract( const REF( NMSP_IO::XInputStream )& rxIStm ) throw( NMSP_UNO::RuntimeException );
+    virtual REF( NMSP_IO::XInputStream ) SAL_CALL	extract( const REF( NMSP_IO::XInputStream )& rxIStm );
 };
 
 #endif

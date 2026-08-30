@@ -68,7 +68,6 @@ PPPOptimizerDialog::~PPPOptimizerDialog()
 // -----------------------------------------------------------------------------
 
 void SAL_CALL PPPOptimizerDialog::initialize( const Sequence< Any >& aArguments )
-	throw ( Exception, RuntimeException )
 {
     OSL_TRACE("PPPOptimizerDialog::initialize");
     osl::ResettableMutexGuard aGuard( m_aMutex );
@@ -131,33 +130,28 @@ void SAL_CALL PPPOptimizerDialog::initialize( const Sequence< Any >& aArguments 
 // -----------------------------------------------------------------------------
 
 OUString SAL_CALL PPPOptimizerDialog::getImplementationName()
-	throw (RuntimeException)
 {
 	return PPPOptimizerDialog_getImplementationName();
 }
 
 sal_Bool SAL_CALL PPPOptimizerDialog::supportsService( const OUString& ServiceName )
-	throw ( RuntimeException )
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( SERVICE_NAME ) );
 }
 
 Sequence< OUString > SAL_CALL PPPOptimizerDialog::getSupportedServiceNames()
-    throw (RuntimeException)
 {
 	return PPPOptimizerDialog_getSupportedServiceNames();
 }
 
 
 void SAL_CALL PPPOptimizerDialog::setTitle( const ::rtl::OUString& aTitle )
-throw (::com::sun::star::uno::RuntimeException)
 {
     osl::MutexGuard aGuard( m_aMutex );
     msTitle = aTitle;
 }
 
 ::sal_Int16 SAL_CALL PPPOptimizerDialog::execute(  )
-throw (::com::sun::star::uno::RuntimeException)
 {
     OSL_TRACE("PPPOptimizerDialog::execute");
     sal_Int16 aRet = ::com::sun::star::ui::dialogs::ExecutableDialogResults::CANCEL;
@@ -201,7 +195,6 @@ Sequence< OUString > PPPOptimizerDialog_getSupportedServiceNames()
 }
 
 Reference< XInterface > PPPOptimizerDialog_createInstance( const Reference< XComponentContext > & rSMgr)
-    throw( Exception )
 {
 	return (cppu::OWeakObject*) new PPPOptimizerDialog( rSMgr );
 }

@@ -81,7 +81,7 @@ cppu::IPropertyArrayHelper& SAL_CALL PropertySetBase::getInfoHelper()
     return *m_pProperties;
 }
 
-Reference< XPropertySetInfo > SAL_CALL PropertySetBase::getPropertySetInfo(  ) throw(RuntimeException)
+Reference< XPropertySetInfo > SAL_CALL PropertySetBase::getPropertySetInfo(  )
 {
 	return cppu::OPropertySetHelper::createPropertySetInfo( getInfoHelper() );
 }
@@ -159,7 +159,6 @@ PropertyAccessorBase& PropertySetBase::locatePropertyHandler( sal_Int32 nHandle 
 
 sal_Bool SAL_CALL PropertySetBase::convertFastPropertyValue( Any& rConvertedValue, Any& rOldValue, sal_Int32 nHandle,
 	const Any& rValue )
-    throw (IllegalArgumentException)
 {
     PropertyAccessorBase& rAccessor = locatePropertyHandler( nHandle );
     if ( !rAccessor.approveValue( rValue ) )
@@ -175,7 +174,6 @@ sal_Bool SAL_CALL PropertySetBase::convertFastPropertyValue( Any& rConvertedValu
 }
 
 void SAL_CALL PropertySetBase::setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const Any& rValue )
-    throw (Exception)
 {
     PropertyAccessorBase& rAccessor = locatePropertyHandler( nHandle );
     rAccessor.setValue( rValue );

@@ -46,23 +46,23 @@ private:
     sal_Bool        m_bTemporary;
 
 public:
-    ScVbaCommandBar( const css::uno::Reference< ov::XHelperInterface > xParent, const css::uno::Reference< css::uno::XComponentContext > xContext, VbaCommandBarHelperRef pHelper, const css::uno::Reference< css::container::XIndexAccess >& xBarSettings, const rtl::OUString& sResourceUrl, sal_Bool bIsMenu, sal_Bool bTemporary = sal_True ) throw( css::uno::RuntimeException );
+    ScVbaCommandBar( const css::uno::Reference< ov::XHelperInterface > xParent, const css::uno::Reference< css::uno::XComponentContext > xContext, VbaCommandBarHelperRef pHelper, const css::uno::Reference< css::container::XIndexAccess >& xBarSettings, const rtl::OUString& sResourceUrl, sal_Bool bIsMenu, sal_Bool bTemporary = sal_True );
 
     sal_Bool IsMenu() { return m_bIsMenu; }
 
     // Attributes
-    virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setName( const ::rtl::OUString& _name ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( ::sal_Bool _visible ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getEnabled() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEnabled( ::sal_Bool _enabled ) throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const ::rtl::OUString& _name );
+    virtual ::sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( ::sal_Bool _visible );
+    virtual ::sal_Bool SAL_CALL getEnabled();
+    virtual void SAL_CALL setEnabled( ::sal_Bool _enabled );
 
     // Methods
-    virtual void SAL_CALL Delete(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Controls( const css::uno::Any& aIndex ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL Type(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL FindControl( const css::uno::Any& aType, const css::uno::Any& aId, const css::uno::Any& aTag, const css::uno::Any& aVisible, const css::uno::Any& aRecursive ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
+    virtual void SAL_CALL Delete(  );
+    virtual css::uno::Any SAL_CALL Controls( const css::uno::Any& aIndex );
+    virtual sal_Int32 SAL_CALL Type(  );
+    virtual css::uno::Any SAL_CALL FindControl( const css::uno::Any& aType, const css::uno::Any& aId, const css::uno::Any& aTag, const css::uno::Any& aVisible, const css::uno::Any& aRecursive );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
@@ -77,21 +77,21 @@ public:
             const css::uno::Reference< ov::XHelperInterface > xParent,
             const css::uno::Reference< css::uno::XComponentContext > xContext,
             const ::rtl::OUString& rName,
-            sal_Int32 nType ) throw( css::uno::RuntimeException );
+            sal_Int32 nType );
 
     // Attributes
-    virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setName( const ::rtl::OUString& _name ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( ::sal_Bool _visible ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getEnabled() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEnabled( ::sal_Bool _enabled ) throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const ::rtl::OUString& _name );
+    virtual ::sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( ::sal_Bool _visible );
+    virtual ::sal_Bool SAL_CALL getEnabled();
+    virtual void SAL_CALL setEnabled( ::sal_Bool _enabled );
 
     // Methods
-    virtual void SAL_CALL Delete(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Controls( const css::uno::Any& aIndex ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL Type(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL FindControl( const css::uno::Any& aType, const css::uno::Any& aId, const css::uno::Any& aTag, const css::uno::Any& aVisible, const css::uno::Any& aRecursive ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
+    virtual void SAL_CALL Delete(  );
+    virtual css::uno::Any SAL_CALL Controls( const css::uno::Any& aIndex );
+    virtual sal_Int32 SAL_CALL Type(  );
+    virtual css::uno::Any SAL_CALL FindControl( const css::uno::Any& aType, const css::uno::Any& aId, const css::uno::Any& aTag, const css::uno::Any& aVisible, const css::uno::Any& aRecursive );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

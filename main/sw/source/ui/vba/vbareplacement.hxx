@@ -36,12 +36,12 @@ private:
     css::uno::Reference< css::util::XPropertyReplace> mxPropertyReplace;
 
 public:
-	SwVbaReplacement( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::util::XPropertyReplace >& xPropertyReplace ) throw ( css::uno::RuntimeException );
+	SwVbaReplacement( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::util::XPropertyReplace >& xPropertyReplace );
 	virtual ~SwVbaReplacement();
 
     // Attributes
-    virtual ::rtl::OUString SAL_CALL getText() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setText( const ::rtl::OUString& _text ) throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getText();
+    virtual void SAL_CALL setText( const ::rtl::OUString& _text );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

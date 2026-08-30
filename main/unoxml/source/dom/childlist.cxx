@@ -41,7 +41,7 @@ namespace DOM
     /**
     The number of nodes in the list.
     */
-    sal_Int32 SAL_CALL CChildList::getLength() throw (RuntimeException)
+    sal_Int32 SAL_CALL CChildList::getLength()
     {
         ::osl::MutexGuard const g(m_rMutex);
 
@@ -65,7 +65,6 @@ namespace DOM
     Returns the indexth item in the collection.
     */
     Reference< XNode > SAL_CALL CChildList::item(sal_Int32 index)
-        throw (RuntimeException)
     {
         ::osl::MutexGuard const g(m_rMutex);
 

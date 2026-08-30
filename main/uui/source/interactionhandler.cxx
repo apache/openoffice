@@ -41,14 +41,12 @@ UUIInteractionHandler::~UUIInteractionHandler()
 }
 
 rtl::OUString SAL_CALL UUIInteractionHandler::getImplementationName()
-    throw (uno::RuntimeException)
 {
     return rtl::OUString::createFromAscii(m_aImplementationName);
 }
 
 sal_Bool SAL_CALL
 UUIInteractionHandler::supportsService(rtl::OUString const & rServiceName)
-    throw (uno::RuntimeException)
 {
     uno::Sequence< rtl::OUString >
 	aNames(getSupportedServiceNames_static());
@@ -60,7 +58,6 @@ UUIInteractionHandler::supportsService(rtl::OUString const & rServiceName)
 
 uno::Sequence< rtl::OUString > SAL_CALL
 UUIInteractionHandler::getSupportedServiceNames()
-    throw (uno::RuntimeException)
 {
     return getSupportedServiceNames_static();
 }
@@ -68,7 +65,6 @@ UUIInteractionHandler::getSupportedServiceNames()
 void SAL_CALL
 UUIInteractionHandler::initialize(
     uno::Sequence< uno::Any > const & rArguments)
-    throw (uno::Exception)
 {
     delete m_pImpl;
     m_pImpl = new UUIInteractionHelper(m_xServiceFactory, rArguments);
@@ -77,7 +73,6 @@ UUIInteractionHandler::initialize(
 void SAL_CALL
 UUIInteractionHandler::handle(
     uno::Reference< task::XInteractionRequest > const & rRequest)
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -90,7 +85,7 @@ UUIInteractionHandler::handle(
 }
 
 ::sal_Bool SAL_CALL UUIInteractionHandler::handleInteractionRequest(
-    const uno::Reference< task::XInteractionRequest >& _Request ) throw ( uno::RuntimeException )
+    const uno::Reference< task::XInteractionRequest >& _Request )
 {
     try
     {
@@ -125,7 +120,6 @@ uno::Reference< uno::XInterface > SAL_CALL
 UUIInteractionHandler::createInstance(
     uno::Reference< lang::XMultiServiceFactory > const &
         rServiceFactory)
-    SAL_THROW((uno::Exception))
 {
     try
     {

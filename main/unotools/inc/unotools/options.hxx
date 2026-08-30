@@ -36,6 +36,7 @@
 	a call of the Options::NotifyListeners() method will send out notifications to all external listeners.
 */
 
+
 namespace utl {
 
     class ConfigurationBroadcaster;

@@ -46,7 +46,7 @@ public:
 
 
 	// XInterface
-	virtual ANY SAL_CALL				queryInterface( const Type & rType ) throw( RuntimeException );
+	virtual ANY SAL_CALL				queryInterface( const Type & rType );
     virtual void SAL_CALL				acquire() throw() { OWeakObject::acquire(); }
     virtual void SAL_CALL				release() throw() { OWeakObject::release(); }
 

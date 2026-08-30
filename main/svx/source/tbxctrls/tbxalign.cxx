@@ -91,13 +91,13 @@ SfxPopupWindow*	SvxTbxCtlAlign::CreatePopupWindow()
 // XSubToolbarController
 //========================================================================
 
-::sal_Bool SAL_CALL SvxTbxCtlAlign::opensSubToolbar() throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL SvxTbxCtlAlign::opensSubToolbar()
 {
     // We control a sub-toolbar therefor, we have to return true.
     return sal_True;
 }
 
-::rtl::OUString SAL_CALL SvxTbxCtlAlign::getSubToolbarName() throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL SvxTbxCtlAlign::getSubToolbarName()
 {
     // Provide the controlled sub-toolbar name, so we are notified whenever
     // this toolbar executes a function.
@@ -105,7 +105,7 @@ SfxPopupWindow*	SvxTbxCtlAlign::CreatePopupWindow()
     return m_aSubTbName;
 }
 
-void SAL_CALL SvxTbxCtlAlign::functionSelected( const ::rtl::OUString& aCommand ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SvxTbxCtlAlign::functionSelected( const ::rtl::OUString& aCommand )
 {
     // Our sub-toolbar wants to executes a function. We have to change
     // the image of our toolbar button to reflect the new function.
@@ -122,7 +122,7 @@ void SAL_CALL SvxTbxCtlAlign::functionSelected( const ::rtl::OUString& aCommand 
     }
 }
 
-void SAL_CALL SvxTbxCtlAlign::updateImage() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SvxTbxCtlAlign::updateImage()
 {
     // We should update the button image of our parent (toolbar). Use the stored
     // command to set the correct current image.

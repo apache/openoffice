@@ -318,8 +318,7 @@ public:
     MenuBarButtonJob(const rtl::Reference< UpdateCheck >& rUpdateCheck);
 
     // XJob
-    virtual uno::Any SAL_CALL execute(const uno::Sequence<beans::NamedValue>&)
-        throw (lang::IllegalArgumentException, uno::Exception);
+    virtual uno::Any SAL_CALL execute(const uno::Sequence<beans::NamedValue>&);
 
 private:
     rtl::Reference< UpdateCheck > m_aUpdateCheck;
@@ -624,7 +623,6 @@ MenuBarButtonJob::MenuBarButtonJob(const rtl::Reference< UpdateCheck >& rUpdateC
 
 uno::Any SAL_CALL
 MenuBarButtonJob::execute(const uno::Sequence<beans::NamedValue>& )
-    throw (lang::IllegalArgumentException, uno::Exception)
 {
     if ( m_aUpdateCheck->shouldShowExtUpdDlg() )
         m_aUpdateCheck->showExtensionDialog();

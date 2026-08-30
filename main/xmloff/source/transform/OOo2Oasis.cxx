@@ -1892,7 +1892,6 @@ OOo2OasisTransformer::~OOo2OasisTransformer() throw()
 }
 
 Any OOo2OasisTransformer::queryInterface( const Type& rType )
-    throw (RuntimeException)
 {
     Any aRet;
     if ( rType == ::getCppuType((Reference<XImporter> *)0) )
@@ -1916,7 +1915,6 @@ Any OOo2OasisTransformer::queryInterface( const Type& rType )
 // XImporter
 void SAL_CALL OOo2OasisTransformer::setTargetDocument(
 		const Reference< XComponent >& xDoc )
-	throw( IllegalArgumentException, RuntimeException)
 {
 	if( !GetDocHandler().is() )
 	{
@@ -1937,7 +1935,6 @@ void SAL_CALL OOo2OasisTransformer::setTargetDocument(
 // XFilter
 sal_Bool SAL_CALL OOo2OasisTransformer::filter(
 		const Sequence< PropertyValue >& aDescriptor )
-    throw ( RuntimeException)
 {
 	Reference< XFilter> xFilter( GetDocHandler(), UNO_QUERY );
 	OSL_ENSURE( xFilter.is(), "doc handler is not a filter" );
@@ -1948,7 +1945,6 @@ sal_Bool SAL_CALL OOo2OasisTransformer::filter(
 }
 
 void SAL_CALL OOo2OasisTransformer::cancel(  )
-    throw ( RuntimeException)
 {
 	Reference< XFilter> xFilter( GetDocHandler(), UNO_QUERY );
 	OSL_ENSURE( xFilter.is(), "doc handler is not a filter" );
@@ -1959,13 +1955,11 @@ void SAL_CALL OOo2OasisTransformer::cancel(  )
 // XInitialize
 void SAL_CALL OOo2OasisTransformer::initialize(
 				const Sequence< Any >& rArguments )
-	throw( Exception, RuntimeException )
 {
 	Initialize( rArguments );
 }
 
 void SAL_CALL OOo2OasisTransformer::startDocument( void )
-	throw( SAXException, RuntimeException )
 {
 	if( !GetDocHandler().is() )
 	{
@@ -1981,7 +1975,6 @@ void SAL_CALL OOo2OasisTransformer::startDocument( void )
 
 void SAL_CALL OOo2OasisTransformer::Initialize(
 				const Sequence< Any >& rArguments )
-	throw( Exception, RuntimeException )
 {
 	OSL_ENSURE( !GetDocHandler().is(), "duplication initialization" );
 
@@ -2042,7 +2035,6 @@ const Sequence< sal_Int8 > & OOo2OasisTransformer::getUnoTunnelId() throw()
 
 // XUnoTunnel
 sal_Int64 SAL_CALL OOo2OasisTransformer::getSomething( const Sequence< sal_Int8 >& rId )
-	throw(RuntimeException)
 {
     if( rId.getLength() == 16
         && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -2058,19 +2050,16 @@ sal_Int64 SAL_CALL OOo2OasisTransformer::getSomething( const Sequence< sal_Int8 
 
 // XServiceInfo
 OUString SAL_CALL OOo2OasisTransformer::getImplementationName()
-    throw(RuntimeException)
 {
 	return m_aImplName;
 }
 
 sal_Bool SAL_CALL OOo2OasisTransformer::supportsService( const OUString& )
-	throw(RuntimeException)
 {
     return sal_False;
 }
 
 Sequence< OUString > SAL_CALL OOo2OasisTransformer::getSupportedServiceNames(  )
-	throw(RuntimeException)
 {
     Sequence<OUString> aSeq(0);
     return aSeq;
@@ -2078,7 +2067,7 @@ Sequence< OUString > SAL_CALL OOo2OasisTransformer::getSupportedServiceNames(  )
 
 // XTypeProvider
 Sequence< ::com::sun::star::uno::Type > SAL_CALL
-	OOo2OasisTransformer::getTypes() throw(RuntimeException)
+	OOo2OasisTransformer::getTypes()
 {
 	Sequence< ::com::sun::star::uno::Type > aTypes(
 						XMLTransformerBase::getTypes() );
@@ -2110,7 +2099,6 @@ Sequence< OUString > SAL_CALL OOo2OasisTransformer_getSupportedServiceNames() th
 
 Reference< XInterface > SAL_CALL OOo2OasisTransformer_createInstance(
 		const Reference< XMultiServiceFactory > & )
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new OOo2OasisTransformer();
 }
@@ -2130,7 +2118,6 @@ Sequence< OUString > SAL_CALL className##_getSupportedServiceNames() throw()\
 																		\
 Reference< XInterface > SAL_CALL className##_createInstance(			\
 		const Reference< XMultiServiceFactory > & )      				\
-	throw( Exception )													\
 {																		\
 	return (cppu::OWeakObject*)new OOo2OasisTransformer( implName,		\
 										 subServiceName );				\

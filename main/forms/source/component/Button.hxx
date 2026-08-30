@@ -57,7 +57,7 @@ public:
 
     // UNO
 	DECLARE_UNO3_AGG_DEFAULTS( OButtonModel, OClickableImageBaseModel );
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType );
 
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> _getTypes();
 
@@ -66,14 +66,14 @@ public:
 	virtual StringSequence SAL_CALL getSupportedServiceNames() throw();
 
 // ::com::sun::star::io::XPersistObject
-	virtual ::rtl::OUString SAL_CALL getServiceName() throw ( ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream) throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream) throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getServiceName();
+	virtual void SAL_CALL write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream);
+	virtual void SAL_CALL read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream);
 
     // XReset
-    virtual void SAL_CALL reset(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addResetListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeResetListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL reset(  );
+    virtual void SAL_CALL addResetListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener >& aListener );
+    virtual void SAL_CALL removeResetListener( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XResetListener >& aListener );
 
     // OControlModel's property handling
 	virtual void describeFixedProperties(
@@ -82,11 +82,9 @@ public:
 
     // XPropertySet and friends
     virtual void SAL_CALL getFastPropertyValue(::com::sun::star::uno::Any& rValue, sal_Int32 nHandle) const;
-    virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-                throw (::com::sun::star::uno::Exception);
+    virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
     virtual sal_Bool SAL_CALL convertFastPropertyValue(
-                ::com::sun::star::uno::Any& _rConvertedValue, ::com::sun::star::uno::Any& _rOldValue, sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue )
-                throw (::com::sun::star::lang::IllegalArgumentException);
+                ::com::sun::star::uno::Any& _rConvertedValue, ::com::sun::star::uno::Any& _rOldValue, sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue );
     virtual ::com::sun::star::uno::Any getPropertyDefaultByHandle( sal_Int32 nHandle ) const;
 
     // OComponentHelper
@@ -143,29 +141,29 @@ public:
 
     // UNO Anbindung
 	DECLARE_UNO3_AGG_DEFAULTS(OButtonControl, OClickableImageBaseControl);
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType);
 
     // XActionListener
-	virtual void SAL_CALL actionPerformed(const ::com::sun::star::awt::ActionEvent& rEvent) throw ( ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL actionPerformed(const ::com::sun::star::awt::ActionEvent& rEvent);
 
     // XButton
-	virtual void SAL_CALL addActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener>& _rxListener) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener>& _rxListener) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setLabel(const ::rtl::OUString& Label) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setActionCommand(const ::rtl::OUString& _rCommand) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener>& _rxListener);
+    virtual void SAL_CALL removeActionListener(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener>& _rxListener);
+    virtual void SAL_CALL setLabel(const ::rtl::OUString& Label);
+    virtual void SAL_CALL setActionCommand(const ::rtl::OUString& _rCommand);
 
     // OComponentHelper
 	virtual void SAL_CALL disposing();
 
     // XPropertyChangeListener
-    virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt );
 
     // XEventListener
-    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource);
 
     // XControl
-	virtual sal_Bool SAL_CALL setModel( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& _rxModel ) throw ( ::com::sun::star::uno::RuntimeException );
-    void SAL_CALL setDesignMode(sal_Bool bOn) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL setModel( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& _rxModel );
+    void SAL_CALL setDesignMode(sal_Bool bOn);
 
 protected:
     // OFormNavigationHelper overriables
@@ -175,8 +173,8 @@ protected:
     virtual bool    isEnabled( sal_Int16 _nFeatureId ) const;
 
     // XDispatchProviderInterception disambiguaiton
-    virtual void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL registerDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
+    virtual void SAL_CALL releaseDispatchProviderInterceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProviderInterceptor >& Interceptor );
 
     // OImageControl overridables
 	virtual void    actionPerformed_Impl( sal_Bool bNotifyListener, const ::com::sun::star::awt::MouseEvent& _rEvt );

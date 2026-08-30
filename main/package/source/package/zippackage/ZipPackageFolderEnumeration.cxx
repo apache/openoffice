@@ -40,12 +40,10 @@ ZipPackageFolderEnumeration::~ZipPackageFolderEnumeration( void )
 }
 
 sal_Bool SAL_CALL ZipPackageFolderEnumeration::hasMoreElements(  )
-		throw(uno::RuntimeException)
 {
 	return (aIterator != rContents.end() );
 }
 uno::Any SAL_CALL ZipPackageFolderEnumeration::nextElement(  )
-		throw(container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	uno::Any aAny;
 	if (aIterator == rContents.end() )
@@ -56,20 +54,17 @@ uno::Any SAL_CALL ZipPackageFolderEnumeration::nextElement(  )
 }
 
 OUString ZipPackageFolderEnumeration::getImplementationName()
-	throw (uno::RuntimeException)
 {
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "ZipPackageFolderEnumeration" ) );
 }
 
 uno::Sequence< OUString > ZipPackageFolderEnumeration::getSupportedServiceNames()
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< OUString > aNames(1);
 	aNames[0] = OUString( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.packages.PackageFolderEnumeration" ) );
 	return aNames;
 }
 sal_Bool SAL_CALL ZipPackageFolderEnumeration::supportsService( OUString const & rServiceName )
-	throw (uno::RuntimeException)
 {
 	return rServiceName == getSupportedServiceNames()[0];
 }

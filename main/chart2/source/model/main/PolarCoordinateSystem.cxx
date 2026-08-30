@@ -69,20 +69,17 @@ PolarCoordinateSystem::~PolarCoordinateSystem()
 
 // ____ XCoordinateSystem ____
 ::rtl::OUString SAL_CALL PolarCoordinateSystem::getCoordinateSystemType()
-    throw (RuntimeException)
 {
     return CHART2_COOSYSTEM_POLAR_SERVICE_NAME;
 }
 
 ::rtl::OUString SAL_CALL PolarCoordinateSystem::getViewServiceName()
-    throw (RuntimeException)
 {
     return CHART2_COOSYSTEM_POLAR_VIEW_SERVICE_NAME;
 }
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL PolarCoordinateSystem::createClone()
-    throw (RuntimeException)
 {
     return Reference< util::XCloneable >( new PolarCoordinateSystem( *this ));
 }

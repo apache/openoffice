@@ -143,7 +143,6 @@ ImeStatusWindow::~ImeStatusWindow()
 }
 
 void SAL_CALL ImeStatusWindow::disposing(css::lang::EventObject const & )
-    throw (css::uno::RuntimeException)
 {
     osl::MutexGuard aGuard(m_aMutex);
     m_xConfig = 0;
@@ -152,7 +151,6 @@ void SAL_CALL ImeStatusWindow::disposing(css::lang::EventObject const & )
 
 void SAL_CALL
 ImeStatusWindow::propertyChange(css::beans::PropertyChangeEvent const & )
-    throw (css::uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     SfxApplication* pApp = SfxApplication::Get();

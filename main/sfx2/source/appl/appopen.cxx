@@ -128,21 +128,21 @@ class SfxOpenDocStatusListener_Impl : public WeakImplHelper1< XDispatchResultLis
 public:
     sal_Bool    bFinished;
     sal_Bool    bSuccess;
-    virtual void SAL_CALL   dispatchFinished( const DispatchResultEvent& Event ) throw(RuntimeException);
-    virtual void SAL_CALL   disposing( const EventObject& Source ) throw(RuntimeException);
+    virtual void SAL_CALL   dispatchFinished( const DispatchResultEvent& Event );
+    virtual void SAL_CALL   disposing( const EventObject& Source );
                             SfxOpenDocStatusListener_Impl()
                                 : bFinished( sal_False )
                                 , bSuccess( sal_False )
                             {}
 };
 
-void SAL_CALL SfxOpenDocStatusListener_Impl::dispatchFinished( const DispatchResultEvent& aEvent ) throw(RuntimeException)
+void SAL_CALL SfxOpenDocStatusListener_Impl::dispatchFinished( const DispatchResultEvent& aEvent )
 {
     bSuccess = ( aEvent.State == DispatchResultState::SUCCESS );
     bFinished = sal_True;
 }
 
-void SAL_CALL SfxOpenDocStatusListener_Impl::disposing( const EventObject& ) throw(RuntimeException)
+void SAL_CALL SfxOpenDocStatusListener_Impl::disposing( const EventObject& )
 {
 }
 

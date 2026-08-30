@@ -931,11 +931,6 @@ void SAL_CALL OCommonEmbeddedObject::setPersistentEntry(
 					sal_Int32 nEntryConnectionMode,
 					const uno::Sequence< beans::PropertyValue >& lArguments,
 					const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OCommonEmbeddedObject::setPersistentEntry" );
 
@@ -1159,11 +1154,6 @@ void SAL_CALL OCommonEmbeddedObject::storeToEntry( const uno::Reference< embed::
 							const ::rtl::OUString& sEntName,
 							const uno::Sequence< beans::PropertyValue >& lArguments,
 							const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OCommonEmbeddedObject::storeToEntry" );
 
@@ -1285,11 +1275,6 @@ void SAL_CALL OCommonEmbeddedObject::storeAsEntry( const uno::Reference< embed::
 							const ::rtl::OUString& sEntName,
 							const uno::Sequence< beans::PropertyValue >& lArguments,
 							const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OCommonEmbeddedObject::storeAsEntry" );
 
@@ -1424,9 +1409,6 @@ void SAL_CALL OCommonEmbeddedObject::storeAsEntry( const uno::Reference< embed::
 
 //------------------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::saveCompleted( sal_Bool bUseNew )
-		throw ( embed::WrongStateException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OCommonEmbeddedObject::saveCompleted" );
 
@@ -1507,8 +1489,6 @@ void SAL_CALL OCommonEmbeddedObject::saveCompleted( sal_Bool bUseNew )
 
 //------------------------------------------------------
 sal_Bool SAL_CALL OCommonEmbeddedObject::hasEntry()
-		throw ( embed::WrongStateException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1527,8 +1507,6 @@ sal_Bool SAL_CALL OCommonEmbeddedObject::hasEntry()
 
 //------------------------------------------------------
 ::rtl::OUString SAL_CALL OCommonEmbeddedObject::getEntryName()
-		throw ( embed::WrongStateException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1551,10 +1529,6 @@ sal_Bool SAL_CALL OCommonEmbeddedObject::hasEntry()
 
 //------------------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::storeOwn()
-		throw ( embed::WrongStateException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OCommonEmbeddedObject::storeOwn" );
 
@@ -1639,8 +1613,6 @@ void SAL_CALL OCommonEmbeddedObject::storeOwn()
 
 //------------------------------------------------------
 sal_Bool SAL_CALL OCommonEmbeddedObject::isReadonly()
-		throw ( embed::WrongStateException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1665,11 +1637,6 @@ sal_Bool SAL_CALL OCommonEmbeddedObject::isReadonly()
 void SAL_CALL OCommonEmbeddedObject::reload(
 				const uno::Sequence< beans::PropertyValue >& lArguments,
 				const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	// TODO: use lObjArgs
 	// for now this method is used only to switch readonly state
@@ -1789,11 +1756,6 @@ void SAL_CALL OCommonEmbeddedObject::reload(
 //------------------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::breakLink( const uno::Reference< embed::XStorage >& xStorage,
 												const ::rtl::OUString& sEntName )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	::osl::ResettableMutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1886,8 +1848,6 @@ void SAL_CALL OCommonEmbeddedObject::breakLink( const uno::Reference< embed::XSt
 
 //------------------------------------------------------
 sal_Bool SAL_CALL  OCommonEmbeddedObject::isLink()
-		throw ( embed::WrongStateException,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -1904,9 +1864,6 @@ sal_Bool SAL_CALL  OCommonEmbeddedObject::isLink()
 
 //------------------------------------------------------
 ::rtl::OUString SAL_CALL OCommonEmbeddedObject::getLinkURL()
-		throw ( embed::WrongStateException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )

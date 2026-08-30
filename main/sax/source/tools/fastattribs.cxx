@@ -87,13 +87,13 @@ void FastAttributeList::addUnknown( const OString& rName, const OString& rValue 
 }
 
 // XFastAttributeList
-sal_Bool FastAttributeList::hasAttribute( ::sal_Int32 Token ) throw (RuntimeException)
+sal_Bool FastAttributeList::hasAttribute( ::sal_Int32 Token )
 {
 	maLastIter = maAttributes.find( Token );
 	return ( maLastIter != maAttributes.end() ) ? sal_True : sal_False;
 }
 
-sal_Int32 FastAttributeList::getValueToken( ::sal_Int32 Token ) throw (SAXException, RuntimeException)
+sal_Int32 FastAttributeList::getValueToken( ::sal_Int32 Token )
 {
 	if( ( maLastIter == maAttributes.end() ) || ( ( *maLastIter ).first != Token ) )
 		maLastIter = maAttributes.find( Token );
@@ -105,7 +105,7 @@ sal_Int32 FastAttributeList::getValueToken( ::sal_Int32 Token ) throw (SAXExcept
 	return mxTokenHandler->getTokenFromUTF8( aSeq );
 }
 
-sal_Int32 FastAttributeList::getOptionalValueToken( ::sal_Int32 Token, ::sal_Int32 Default ) throw (RuntimeException)
+sal_Int32 FastAttributeList::getOptionalValueToken( ::sal_Int32 Token, ::sal_Int32 Default )
 {
 	if( ( maLastIter == maAttributes.end() ) || ( ( *maLastIter ).first != Token ) )
 		maLastIter = maAttributes.find( Token );
@@ -117,7 +117,7 @@ sal_Int32 FastAttributeList::getOptionalValueToken( ::sal_Int32 Token, ::sal_Int
 	return mxTokenHandler->getTokenFromUTF8( aSeq );
 }
 
-OUString FastAttributeList::getValue( ::sal_Int32 Token ) throw (SAXException, RuntimeException)
+OUString FastAttributeList::getValue( ::sal_Int32 Token )
 {
 	if( ( maLastIter == maAttributes.end() ) || ( ( *maLastIter ).first != Token ) )
 		maLastIter = maAttributes.find( Token );
@@ -128,7 +128,7 @@ OUString FastAttributeList::getValue( ::sal_Int32 Token ) throw (SAXException, R
 	return OStringToOUString( (*maLastIter).second, RTL_TEXTENCODING_UTF8 );
 }
 
-OUString FastAttributeList::getOptionalValue( ::sal_Int32 Token ) throw (RuntimeException)
+OUString FastAttributeList::getOptionalValue( ::sal_Int32 Token )
 {
 	if( ( maLastIter == maAttributes.end() ) || ( ( *maLastIter ).first != Token ) )
 		maLastIter = maAttributes.find( Token );
@@ -139,7 +139,7 @@ OUString FastAttributeList::getOptionalValue( ::sal_Int32 Token ) throw (Runtime
 
 	return aRet;
 }
-Sequence< Attribute > FastAttributeList::getUnknownAttributes(  ) throw (RuntimeException)
+Sequence< Attribute > FastAttributeList::getUnknownAttributes(  )
 {
 	Sequence< Attribute > aSeq( maUnknownAttributes.size() );
 	Attribute* pAttr = aSeq.getArray();
@@ -147,7 +147,7 @@ Sequence< Attribute > FastAttributeList::getUnknownAttributes(  ) throw (Runtime
         (*attrIter).FillAttribute( pAttr++ );
 	return aSeq;
 }
-Sequence< FastAttribute > FastAttributeList::getFastAttributes(  ) throw (RuntimeException)
+Sequence< FastAttribute > FastAttributeList::getFastAttributes(  )
 {
 	Sequence< FastAttribute > aSeq( maAttributes.size() );
 	FastAttribute* pAttr = aSeq.getArray();

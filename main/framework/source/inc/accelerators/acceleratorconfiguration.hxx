@@ -140,79 +140,49 @@ class XMLBasedAcceleratorConfiguration : protected ThreadHelpBase               
 		FWK_DECLARE_XTYPEPROVIDER
 
 		// XAcceleratorConfiguration
-		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getAllKeyEvents()
-			throw(css::uno::RuntimeException);
+		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getAllKeyEvents();
 
-		virtual ::rtl::OUString SAL_CALL getCommandByKeyEvent(const css::awt::KeyEvent& aKeyEvent)
-			throw(css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual ::rtl::OUString SAL_CALL getCommandByKeyEvent(const css::awt::KeyEvent& aKeyEvent);
 
 		virtual void SAL_CALL setKeyEvent(const css::awt::KeyEvent& aKeyEvent,
-			const ::rtl::OUString&    sCommand )
-			throw(css::lang::IllegalArgumentException,
-			css::uno::RuntimeException         );
+			const ::rtl::OUString&    sCommand );
 
-		virtual void SAL_CALL removeKeyEvent(const css::awt::KeyEvent& aKeyEvent)
-			throw(css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual void SAL_CALL removeKeyEvent(const css::awt::KeyEvent& aKeyEvent);
 
-		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getKeyEventsByCommand(const ::rtl::OUString& sCommand)
-			throw(css::lang::IllegalArgumentException   ,
-			css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getKeyEventsByCommand(const ::rtl::OUString& sCommand);
 
-		virtual css::uno::Sequence< css::uno::Any > SAL_CALL getPreferredKeyEventsForCommandList(const css::uno::Sequence< ::rtl::OUString >& lCommandList)
-			throw(css::lang::IllegalArgumentException   ,
-			css::uno::RuntimeException            );
+		virtual css::uno::Sequence< css::uno::Any > SAL_CALL getPreferredKeyEventsForCommandList(const css::uno::Sequence< ::rtl::OUString >& lCommandList);
 
-		virtual void SAL_CALL removeCommandFromAllKeyEvents(const ::rtl::OUString& sCommand)
-			throw(css::lang::IllegalArgumentException   ,
-			css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual void SAL_CALL removeCommandFromAllKeyEvents(const ::rtl::OUString& sCommand);
 
 		// XUIConfigurationPersistence
-		virtual void SAL_CALL reload()
-			throw(css::uno::Exception       ,
-			css::uno::RuntimeException);
+		virtual void SAL_CALL reload();
 
-		virtual void SAL_CALL store()
-			throw(css::uno::Exception       ,
-			css::uno::RuntimeException);
+		virtual void SAL_CALL store();
 
-		virtual void SAL_CALL storeToStorage(const css::uno::Reference< css::embed::XStorage >& xStorage)
-			throw(css::uno::Exception       ,
-			css::uno::RuntimeException);
+		virtual void SAL_CALL storeToStorage(const css::uno::Reference< css::embed::XStorage >& xStorage);
 
-		virtual ::sal_Bool SAL_CALL isModified()
-			throw(css::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL isModified();
 
-		virtual ::sal_Bool SAL_CALL isReadOnly()
-			throw(css::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL isReadOnly();
 
 		// XUIConfigurationStorage
-		virtual void SAL_CALL setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage);
 
-		virtual ::sal_Bool SAL_CALL hasStorage()
-			throw(css::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL hasStorage();
 
 		// XUIConfiguration
-		virtual void SAL_CALL addConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL addConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener);
 
-		virtual void SAL_CALL removeConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL removeConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener);
 
 		// XReset
 		// TODO use XPresetHandler instead if available
-		virtual void SAL_CALL reset()
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL reset();
 
-		virtual void SAL_CALL addResetListener(const css::uno::Reference< css::form::XResetListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL addResetListener(const css::uno::Reference< css::form::XResetListener >& xListener);
 
-		virtual void SAL_CALL removeResetListener(const css::uno::Reference< css::form::XResetListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL removeResetListener(const css::uno::Reference< css::form::XResetListener >& xListener);
 
 		// IStorageListener
 		virtual void changesOccured(const ::rtl::OUString& sPath);
@@ -354,92 +324,60 @@ class XCUBasedAcceleratorConfiguration : protected ThreadHelpBase               
 		FWK_DECLARE_XTYPEPROVIDER
 
 		// XAcceleratorConfiguration
-		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getAllKeyEvents()
-			throw(css::uno::RuntimeException);
+		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getAllKeyEvents();
 
-		virtual ::rtl::OUString SAL_CALL getCommandByKeyEvent(const css::awt::KeyEvent& aKeyEvent)
-			throw(css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual ::rtl::OUString SAL_CALL getCommandByKeyEvent(const css::awt::KeyEvent& aKeyEvent);
 
 		virtual void SAL_CALL setKeyEvent(const css::awt::KeyEvent& aKeyEvent,
-			const ::rtl::OUString&    sCommand )
-			throw(css::lang::IllegalArgumentException,
-			css::uno::RuntimeException         );
+			const ::rtl::OUString&    sCommand );
 
-		virtual void SAL_CALL removeKeyEvent(const css::awt::KeyEvent& aKeyEvent)
-			throw(css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual void SAL_CALL removeKeyEvent(const css::awt::KeyEvent& aKeyEvent);
 
-		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getKeyEventsByCommand(const ::rtl::OUString& sCommand)
-			throw(css::lang::IllegalArgumentException   ,
-			css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual css::uno::Sequence< css::awt::KeyEvent > SAL_CALL getKeyEventsByCommand(const ::rtl::OUString& sCommand);
 
-		virtual css::uno::Sequence< css::uno::Any > SAL_CALL getPreferredKeyEventsForCommandList(const css::uno::Sequence< ::rtl::OUString >& lCommandList)
-			throw(css::lang::IllegalArgumentException   ,
-			css::uno::RuntimeException            );
+		virtual css::uno::Sequence< css::uno::Any > SAL_CALL getPreferredKeyEventsForCommandList(const css::uno::Sequence< ::rtl::OUString >& lCommandList);
 
-		virtual void SAL_CALL removeCommandFromAllKeyEvents(const ::rtl::OUString& sCommand)
-			throw(css::lang::IllegalArgumentException   ,
-			css::container::NoSuchElementException,
-			css::uno::RuntimeException            );
+		virtual void SAL_CALL removeCommandFromAllKeyEvents(const ::rtl::OUString& sCommand);
 
 		// XUIConfigurationPersistence
-		virtual void SAL_CALL reload()
-			throw(css::uno::Exception       ,
-			css::uno::RuntimeException);
+		virtual void SAL_CALL reload();
 
-		virtual void SAL_CALL store()
-			throw(css::uno::Exception       ,
-			css::uno::RuntimeException);
+		virtual void SAL_CALL store();
 
-		virtual void SAL_CALL storeToStorage(const css::uno::Reference< css::embed::XStorage >& xStorage)
-			throw(css::uno::Exception       ,
-			css::uno::RuntimeException);
+		virtual void SAL_CALL storeToStorage(const css::uno::Reference< css::embed::XStorage >& xStorage);
 
-		virtual ::sal_Bool SAL_CALL isModified()
-			throw(css::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL isModified();
 
-		virtual ::sal_Bool SAL_CALL isReadOnly()
-			throw(css::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL isReadOnly();
 
 		// XUIConfigurationStorage
-		virtual void SAL_CALL setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage);
 
-		virtual ::sal_Bool SAL_CALL hasStorage()
-			throw(css::uno::RuntimeException);
+		virtual ::sal_Bool SAL_CALL hasStorage();
 
 		// XUIConfiguration
-		virtual void SAL_CALL addConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL addConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener);
 
-		virtual void SAL_CALL removeConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL removeConfigurationListener(const css::uno::Reference< css::ui::XUIConfigurationListener >& xListener);
 
 		// XReset
 		// TODO use XPresetHandler instead if available
-		virtual void SAL_CALL reset()
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL reset();
 
-		virtual void SAL_CALL addResetListener(const css::uno::Reference< css::form::XResetListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL addResetListener(const css::uno::Reference< css::form::XResetListener >& xListener);
 
-		virtual void SAL_CALL removeResetListener(const css::uno::Reference< css::form::XResetListener >& xListener)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL removeResetListener(const css::uno::Reference< css::form::XResetListener >& xListener);
 
 		// css.util.XChangesListener
-		virtual void SAL_CALL changesOccurred(const css::util::ChangesEvent& aEvent)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL changesOccurred(const css::util::ChangesEvent& aEvent);
 
 		// css.lang.XEventListener
-		virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent);
 
 		// XComponent
-		virtual  void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
-		virtual  void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-		virtual  void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+		virtual  void SAL_CALL dispose();
+		virtual  void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+		virtual  void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
 		//______________________________________
 		// helper for derived classes

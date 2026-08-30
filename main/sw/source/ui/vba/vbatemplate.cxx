@@ -41,13 +41,13 @@ SwVbaTemplate::~SwVbaTemplate()
 }
 
 rtl::OUString
-SwVbaTemplate::getName() throw ( css::uno::RuntimeException )
+SwVbaTemplate::getName()
 {
     return msName;
 }
 
 uno::Any SAL_CALL
-SwVbaTemplate::AutoTextEntries( const uno::Any& index ) throw (uno::RuntimeException)
+SwVbaTemplate::AutoTextEntries( const uno::Any& index )
 {
     uno::Reference< lang::XMultiServiceFactory > xMgr = comphelper::getProcessServiceFactory();
     uno::Reference< text::XAutoTextContainer > xAutoTextContainer( xMgr->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.AutoTextContainer") ) ), uno::UNO_QUERY_THROW );

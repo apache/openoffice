@@ -39,8 +39,8 @@ public:
     ScVbaTextBoxShape( const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::drawing::XShape >& xShape, const css::uno::Reference< css::drawing::XShapes >& xShapes, const css::uno::Reference< css::frame::XModel >& xModel );
 
    // Attributes
-    virtual rtl::OUString SAL_CALL getText() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setText( const rtl::OUString& _text ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::excel::XCharacters > SAL_CALL characters( const css::uno::Any& Start, const css::uno::Any& Length ) throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getText();
+    virtual void SAL_CALL setText( const rtl::OUString& _text );
+    virtual css::uno::Reference< ov::excel::XCharacters > SAL_CALL characters( const css::uno::Any& Start, const css::uno::Any& Length );
 };
 #endif //SC_VBA_TEXTBOX_HXX

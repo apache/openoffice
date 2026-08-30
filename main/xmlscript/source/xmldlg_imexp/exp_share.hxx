@@ -165,52 +165,30 @@ public:
         ::rtl::OUString const & rAttrName );
 
     //
-    void readEvents() SAL_THROW( (css::uno::Exception) );
+    void readEvents();
     //
-    void readDialogModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readButtonModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readEditModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readCheckBoxModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readRadioButtonModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readComboBoxModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readCurrencyFieldModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readDateFieldModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readFileControlModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-	void readTreeControlModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readFixedTextModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readGroupBoxModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readImageControlModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readListBoxModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readNumericFieldModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readPatternFieldModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readFormattedFieldModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readTimeFieldModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readFixedLineModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readProgressBarModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-    void readScrollBarModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
-	void readFixedHyperLinkModel( StyleBag * all_styles )
-        SAL_THROW( (css::uno::Exception) );
+    void readDialogModel( StyleBag * all_styles );
+    void readButtonModel( StyleBag * all_styles );
+    void readEditModel( StyleBag * all_styles );
+    void readCheckBoxModel( StyleBag * all_styles );
+    void readRadioButtonModel( StyleBag * all_styles );
+    void readComboBoxModel( StyleBag * all_styles );
+    void readCurrencyFieldModel( StyleBag * all_styles );
+    void readDateFieldModel( StyleBag * all_styles );
+    void readFileControlModel( StyleBag * all_styles );
+	void readTreeControlModel( StyleBag * all_styles );
+    void readFixedTextModel( StyleBag * all_styles );
+    void readGroupBoxModel( StyleBag * all_styles );
+    void readImageControlModel( StyleBag * all_styles );
+    void readListBoxModel( StyleBag * all_styles );
+    void readNumericFieldModel( StyleBag * all_styles );
+    void readPatternFieldModel( StyleBag * all_styles );
+    void readFormattedFieldModel( StyleBag * all_styles );
+    void readTimeFieldModel( StyleBag * all_styles );
+    void readFixedLineModel( StyleBag * all_styles );
+    void readProgressBarModel( StyleBag * all_styles );
+    void readScrollBarModel( StyleBag * all_styles );
+	void readFixedHyperLinkModel( StyleBag * all_styles );
 };
 
 template<typename T>

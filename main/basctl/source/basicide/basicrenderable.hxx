@@ -47,20 +47,17 @@ public:
     // XRenderable
     virtual sal_Int32 SAL_CALL getRendererCount (
         const com::sun::star::uno::Any& aSelection,
-        const com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue >& xOptions)
-        throw (com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException);
+        const com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue >& xOptions);
 
     virtual com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue> SAL_CALL getRenderer (
         sal_Int32 nRenderer,
         const com::sun::star::uno::Any& rSelection,
-        const com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue>& rxOptions)
-        throw (com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException);
+        const com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue>& rxOptions);
 
     virtual void SAL_CALL render (
         sal_Int32 nRenderer,
         const com::sun::star::uno::Any& rSelection,
-        const com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue>& rxOptions)
-        throw (com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException);
+        const com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue>& rxOptions);
 
 };
 

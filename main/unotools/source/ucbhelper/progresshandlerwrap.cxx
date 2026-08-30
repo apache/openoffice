@@ -55,7 +55,6 @@ sal_Bool getStatusFromAny_Impl( const Any& aAny, ::rtl::OUString& aText, sal_Int
 }
 
 void SAL_CALL ProgressHandlerWrap::push( const Any& Status )
-	throw( RuntimeException )
 {
 	if( !m_xStatusIndicator.is() )
 		return;
@@ -68,7 +67,6 @@ void SAL_CALL ProgressHandlerWrap::push( const Any& Status )
 }
 
 void SAL_CALL ProgressHandlerWrap::update( const Any& Status )
-	throw( RuntimeException )
 {
 	if( !m_xStatusIndicator.is() )
 		return;
@@ -84,7 +82,6 @@ void SAL_CALL ProgressHandlerWrap::update( const Any& Status )
 }
 
 void SAL_CALL ProgressHandlerWrap::pop()
-		throw( RuntimeException )
 {
 	if( m_xStatusIndicator.is() )
 		m_xStatusIndicator->end();

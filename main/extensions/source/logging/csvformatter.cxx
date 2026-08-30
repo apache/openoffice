@@ -75,7 +75,7 @@ namespace logging
     class CsvFormatter : public CsvFormatter_Base
     {
     public:
-        virtual ::rtl::OUString SAL_CALL formatMultiColumn(const Sequence< ::rtl::OUString>& column_data) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL formatMultiColumn(const Sequence< ::rtl::OUString>& column_data);
 
         // XServiceInfo - static version
         static ::rtl::OUString SAL_CALL getImplementationName_static();
@@ -87,27 +87,27 @@ namespace logging
         virtual ~CsvFormatter();
 
         // XCsvLogFormatter
-        virtual ::sal_Bool SAL_CALL getLogEventNo() throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL getLogThread() throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL getLogTimestamp() throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL getLogSource() throw (RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getColumnnames() throw (RuntimeException);
+        virtual ::sal_Bool SAL_CALL getLogEventNo();
+        virtual ::sal_Bool SAL_CALL getLogThread();
+        virtual ::sal_Bool SAL_CALL getLogTimestamp();
+        virtual ::sal_Bool SAL_CALL getLogSource();
+        virtual Sequence< ::rtl::OUString > SAL_CALL getColumnnames();
 
-        virtual void SAL_CALL setLogEventNo( ::sal_Bool log_event_no ) throw (RuntimeException);
-        virtual void SAL_CALL setLogThread( ::sal_Bool log_thread ) throw (RuntimeException);
-        virtual void SAL_CALL setLogTimestamp( ::sal_Bool log_timestamp ) throw (RuntimeException);
-        virtual void SAL_CALL setLogSource( ::sal_Bool log_source ) throw (RuntimeException);
-        virtual void SAL_CALL setColumnnames( const Sequence< ::rtl::OUString>& column_names) throw (RuntimeException);
+        virtual void SAL_CALL setLogEventNo( ::sal_Bool log_event_no );
+        virtual void SAL_CALL setLogThread( ::sal_Bool log_thread );
+        virtual void SAL_CALL setLogTimestamp( ::sal_Bool log_timestamp );
+        virtual void SAL_CALL setLogSource( ::sal_Bool log_source );
+        virtual void SAL_CALL setColumnnames( const Sequence< ::rtl::OUString>& column_names);
 
         // XLogFormatter
-        virtual ::rtl::OUString SAL_CALL getHead(  ) throw (RuntimeException);
-        virtual ::rtl::OUString SAL_CALL format( const LogRecord& Record ) throw (RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getTail(  ) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getHead(  );
+        virtual ::rtl::OUString SAL_CALL format( const LogRecord& Record );
+        virtual ::rtl::OUString SAL_CALL getTail(  );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName() throw(RuntimeException);
-        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& service_name ) throw(RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
+        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& service_name );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     private:
         ::comphelper::ComponentContext m_aContext;
@@ -187,58 +187,58 @@ namespace logging
     CsvFormatter::~CsvFormatter()
     { }
 
-    ::sal_Bool CsvFormatter::getLogEventNo() throw (RuntimeException)
+    ::sal_Bool CsvFormatter::getLogEventNo()
     {
         return m_LogEventNo;
     }
 
-    ::sal_Bool CsvFormatter::getLogThread() throw (RuntimeException)
+    ::sal_Bool CsvFormatter::getLogThread()
     {
         return m_LogThread;
     }
 
-    ::sal_Bool CsvFormatter::getLogTimestamp() throw (RuntimeException)
+    ::sal_Bool CsvFormatter::getLogTimestamp()
     {
         return m_LogTimestamp;
     }
 
-    ::sal_Bool CsvFormatter::getLogSource() throw (RuntimeException)
+    ::sal_Bool CsvFormatter::getLogSource()
     {
         return m_LogSource;
     }
 
-    Sequence< ::rtl::OUString > CsvFormatter::getColumnnames() throw (RuntimeException)
+    Sequence< ::rtl::OUString > CsvFormatter::getColumnnames()
     {
         return m_Columnnames;
     }
 
-    void CsvFormatter::setLogEventNo(::sal_Bool log_event_no) throw (RuntimeException)
+    void CsvFormatter::setLogEventNo(::sal_Bool log_event_no)
     {
         m_LogEventNo = log_event_no;
     }
 
-    void CsvFormatter::setLogThread(::sal_Bool log_thread) throw (RuntimeException)
+    void CsvFormatter::setLogThread(::sal_Bool log_thread)
     {
         m_LogThread = log_thread;
     }
 
-    void CsvFormatter::setLogTimestamp(::sal_Bool log_timestamp) throw (RuntimeException)
+    void CsvFormatter::setLogTimestamp(::sal_Bool log_timestamp)
     {
         m_LogTimestamp = log_timestamp;
     }
 
-    void CsvFormatter::setLogSource(::sal_Bool log_source) throw (RuntimeException)
+    void CsvFormatter::setLogSource(::sal_Bool log_source)
     {
         m_LogSource = log_source;
     }
 
-    void CsvFormatter::setColumnnames(const Sequence< ::rtl::OUString >& columnnames) throw (RuntimeException)
+    void CsvFormatter::setColumnnames(const Sequence< ::rtl::OUString >& columnnames)
     {
         m_Columnnames = Sequence< ::rtl::OUString>(columnnames);
         m_MultiColumn = (m_Columnnames.getLength()>1);
     }
 
-    ::rtl::OUString SAL_CALL CsvFormatter::getHead(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL CsvFormatter::getHead(  )
     {
         ::rtl::OUStringBuffer buf;
         if(m_LogEventNo)
@@ -260,7 +260,7 @@ namespace logging
         return buf.makeStringAndClear();
     }
 
-    ::rtl::OUString SAL_CALL CsvFormatter::format( const LogRecord& record ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL CsvFormatter::format( const LogRecord& record )
     {
         ::rtl::OUStringBuffer aLogEntry;
 
@@ -315,12 +315,12 @@ namespace logging
         return aLogEntry.makeStringAndClear();
     }
 
-    ::rtl::OUString SAL_CALL CsvFormatter::getTail(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL CsvFormatter::getTail(  )
     {
         return ::rtl::OUString();
     }
 
-    ::rtl::OUString SAL_CALL CsvFormatter::formatMultiColumn(const Sequence< ::rtl::OUString>& column_data) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL CsvFormatter::formatMultiColumn(const Sequence< ::rtl::OUString>& column_data)
     {
         sal_Int32 columns = column_data.getLength();
         ::rtl::OUStringBuffer buf;
@@ -333,7 +333,7 @@ namespace logging
         return buf.makeStringAndClear();
     }
 
-    ::sal_Bool SAL_CALL CsvFormatter::supportsService( const ::rtl::OUString& service_name ) throw(RuntimeException)
+    ::sal_Bool SAL_CALL CsvFormatter::supportsService( const ::rtl::OUString& service_name )
     {
         const Sequence< ::rtl::OUString > aServiceNames( getSupportedServiceNames() );
         for (   const ::rtl::OUString* pServiceNames = aServiceNames.getConstArray();
@@ -345,12 +345,12 @@ namespace logging
         return sal_False;
     }
 
-    ::rtl::OUString SAL_CALL CsvFormatter::getImplementationName() throw(RuntimeException)
+    ::rtl::OUString SAL_CALL CsvFormatter::getImplementationName()
     {
         return getImplementationName_static();
     }
 
-    Sequence< ::rtl::OUString > SAL_CALL CsvFormatter::getSupportedServiceNames() throw(RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL CsvFormatter::getSupportedServiceNames()
     {
         return getSupportedServiceNames_static();
     }

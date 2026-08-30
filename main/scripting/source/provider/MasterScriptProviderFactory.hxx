@@ -60,21 +60,17 @@ public:
         css::uno::Reference< css::uno::XComponentContext > const & xComponentContext );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw ( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
     virtual sal_Bool SAL_CALL
-        supportsService( ::rtl::OUString const & serviceName )
-            throw ( css::uno::RuntimeException );
+        supportsService( ::rtl::OUString const & serviceName );
 
     virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames()
-            throw ( css::uno::RuntimeException );
+        getSupportedServiceNames();
 
     // XScriptProviderFactory
     virtual css::uno::Reference< css::script::provider::XScriptProvider >
-	    SAL_CALL createScriptProvider( const css::uno::Any& context )
-	        throw ( css::lang::IllegalArgumentException, css::uno::RuntimeException);
+	    SAL_CALL createScriptProvider( const css::uno::Any& context );
 };
 
 

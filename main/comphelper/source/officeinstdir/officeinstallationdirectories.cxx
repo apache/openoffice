@@ -123,7 +123,6 @@ OfficeInstallationDirectories::~OfficeInstallationDirectories()
 // virtual
 rtl::OUString SAL_CALL
 OfficeInstallationDirectories::getOfficeInstallationDirectoryURL()
-    throw ( uno::RuntimeException )
 {
     initDirs();
     return rtl::OUString( *m_pOfficeBrandDir );
@@ -133,7 +132,6 @@ OfficeInstallationDirectories::getOfficeInstallationDirectoryURL()
 // virtual
 rtl::OUString SAL_CALL
 OfficeInstallationDirectories::getOfficeUserDataDirectoryURL()
-    throw ( uno::RuntimeException )
 {
     initDirs();
     return rtl::OUString( *m_pUserDir );
@@ -144,7 +142,6 @@ OfficeInstallationDirectories::getOfficeUserDataDirectoryURL()
 // virtual
 rtl::OUString SAL_CALL
 OfficeInstallationDirectories::makeRelocatableURL( const rtl::OUString& URL )
-    throw ( uno::RuntimeException )
 {
     if ( !URL.isEmpty() )
     {
@@ -191,7 +188,6 @@ OfficeInstallationDirectories::makeRelocatableURL( const rtl::OUString& URL )
 // virtual
 rtl::OUString SAL_CALL
 OfficeInstallationDirectories::makeAbsoluteURL( const rtl::OUString& URL )
-    throw ( uno::RuntimeException )
 {
     if ( !URL.isEmpty() )
     {
@@ -242,7 +238,6 @@ OfficeInstallationDirectories::makeAbsoluteURL( const rtl::OUString& URL )
 // virtual
 rtl::OUString SAL_CALL
 OfficeInstallationDirectories::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return getImplementationName_static();
 }
@@ -251,7 +246,6 @@ OfficeInstallationDirectories::getImplementationName()
 // virtual
 sal_Bool SAL_CALL
 OfficeInstallationDirectories::supportsService( const rtl::OUString& ServiceName )
-    throw ( uno::RuntimeException )
 {
     const uno::Sequence< rtl::OUString > & aNames
         = getSupportedServiceNames();
@@ -269,7 +263,6 @@ OfficeInstallationDirectories::supportsService( const rtl::OUString& ServiceName
 // virtual
 uno::Sequence< ::rtl::OUString > SAL_CALL
 OfficeInstallationDirectories::getSupportedServiceNames()
-    throw ( uno::RuntimeException )
 {
     return getSupportedServiceNames_static();
 }

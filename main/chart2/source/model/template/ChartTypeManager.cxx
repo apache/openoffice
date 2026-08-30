@@ -240,8 +240,6 @@ ChartTypeManager::~ChartTypeManager()
 // ____ XMultiServiceFactory ____
 uno::Reference< uno::XInterface > SAL_CALL ChartTypeManager::createInstance(
     const OUString& aServiceSpecifier )
-    throw (uno::Exception,
-           uno::RuntimeException)
 {
     uno::Reference< uno::XInterface > xResult;
     TemplateId nId = lcl_GetTemplateIdForService( aServiceSpecifier );
@@ -554,15 +552,12 @@ uno::Reference< uno::XInterface > SAL_CALL ChartTypeManager::createInstance(
 uno::Reference< uno::XInterface > SAL_CALL ChartTypeManager::createInstanceWithArguments(
     const OUString& ServiceSpecifier,
     const uno::Sequence< uno::Any >& /* Arguments */ )
-    throw (uno::Exception,
-           uno::RuntimeException)
 {
     OSL_ENSURE( false, "createInstanceWithArguments: No arguments supported" );
     return createInstance( ServiceSpecifier );
 }
 
 uno::Sequence< OUString > SAL_CALL ChartTypeManager::getAvailableServiceNames()
-    throw (uno::RuntimeException)
 {
     ::std::vector< OUString > aServices;
     const tTemplateMapType & rMap = lcl_DefaultChartTypeMap();

@@ -130,9 +130,6 @@ FTPURL::FTPURL(const FTPURL& r)
 
 FTPURL::FTPURL(const rtl::OUString& url,
                FTPHandleProvider* pFCP)
-    throw(
-        malformed_exception
-    )
     : m_pFCP(pFCP),
       m_aUsername(rtl::OUString::createFromAscii("anonymous")),
       m_bShowPassword(false),
@@ -148,9 +145,6 @@ FTPURL::~FTPURL()
 
 
 void FTPURL::parse(const rtl::OUString& url)
-    throw(
-        malformed_exception
-    )
 {
     rtl::OUString aPassword,aAccount;
     rtl::OString aIdent(url.getStr(),
@@ -413,7 +407,6 @@ namespace ftp {
 
 
 oslFileHandle FTPURL::open()
-    throw(curl_exception)
 {
     if(!m_aPathSegmentVec.size())
         throw curl_exception(CURLE_FTP_COULDNT_RETR_FILE);
@@ -448,9 +441,6 @@ oslFileHandle FTPURL::open()
 std::vector<FTPDirentry> FTPURL::list(
     sal_Int16 nMode
 ) const
-    throw(
-        curl_exception
-    )
 {
     CURL *curl = m_pFCP->handle();
 
@@ -535,7 +525,6 @@ std::vector<FTPDirentry> FTPURL::list(
 
 
 rtl::OUString FTPURL::net_title() const
-    throw(curl_exception)
 {
     CURL *curl = m_pFCP->handle();
 
@@ -617,7 +606,6 @@ rtl::OUString FTPURL::net_title() const
 
 
 FTPDirentry FTPURL::direntry() const
-    throw(curl_exception)
 {
     rtl::OUString nettitle = net_title();
     FTPDirentry aDirentry;
@@ -664,7 +652,6 @@ extern "C" {
 
 
 void FTPURL::insert(bool replaceExisting,void* stream) const
-    throw(curl_exception)
 {
     if(!replaceExisting) {
 //          FTPDirentry aDirentry(direntry());
@@ -697,7 +684,6 @@ void FTPURL::insert(bool replaceExisting,void* stream) const
 
 
 void FTPURL::mkdir(bool ReplaceExisting) const
-    throw(curl_exception)
 {
     rtl::OString title;
     if(m_aPathSegmentVec.size()) {
@@ -747,7 +733,6 @@ void FTPURL::mkdir(bool ReplaceExisting) const
 
 
 rtl::OUString FTPURL::ren(const rtl::OUString& NewTitle)
-    throw(curl_exception)
 {
     CURL *curl = m_pFCP->handle();
 
@@ -792,7 +777,6 @@ rtl::OUString FTPURL::ren(const rtl::OUString& NewTitle)
 
 
 void FTPURL::del() const
-    throw(curl_exception)
 {
     FTPDirentry aDirentry(direntry());
 

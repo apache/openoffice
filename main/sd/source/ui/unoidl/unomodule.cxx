@@ -38,12 +38,12 @@
 
 using namespace ::com::sun::star;
 
-::rtl::OUString SAL_CALL SdUnoModule_getImplementationName() throw( uno::RuntimeException )
+::rtl::OUString SAL_CALL SdUnoModule_getImplementationName()
 {
 	return rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.Draw.DrawingModule" ) );
 }
 
-uno::Sequence< rtl::OUString > SAL_CALL SdUnoModule_getSupportedServiceNames() throw( uno::RuntimeException )
+uno::Sequence< rtl::OUString > SAL_CALL SdUnoModule_getSupportedServiceNames()
 {
 	uno::Sequence< rtl::OUString > aSeq( 1 );
 	aSeq[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.drawing.ModuleDispatcher"));
@@ -58,7 +58,7 @@ uno::Reference< uno::XInterface > SAL_CALL SdUnoModule_createInstance(
 }
 
     // XNotifyingDispatch
-void SAL_CALL SdUnoModule::dispatchWithNotification( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SdUnoModule::dispatchWithNotification( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& xListener )
 {
     // there is no guarantee, that we are holded alive during this method!
     // May the outside dispatch container will be updated by a CONTEXT_CHANGED
@@ -90,20 +90,20 @@ void SAL_CALL SdUnoModule::dispatchWithNotification( const ::com::sun::star::uti
     }
 }
 	// XDispatch
-void SAL_CALL SdUnoModule::dispatch( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs ) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SdUnoModule::dispatch( const ::com::sun::star::util::URL& aURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs )
 {
     dispatchWithNotification(aURL, aArgs, ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >());
 }
 
-void SAL_CALL SdUnoModule::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > &, const ::com::sun::star::util::URL&) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SdUnoModule::addStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > &, const ::com::sun::star::util::URL&)
 {
 }
 
-void SAL_CALL SdUnoModule::removeStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > &, const ::com::sun::star::util::URL&) throw( ::com::sun::star::uno::RuntimeException )
+void SAL_CALL SdUnoModule::removeStatusListener(const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener > &, const ::com::sun::star::util::URL&)
 {
 }
 
-SEQUENCE< REFERENCE< XDISPATCH > > SAL_CALL SdUnoModule::queryDispatches( const SEQUENCE< DISPATCHDESCRIPTOR >& seqDescripts ) throw( ::com::sun::star::uno::RuntimeException )
+SEQUENCE< REFERENCE< XDISPATCH > > SAL_CALL SdUnoModule::queryDispatches( const SEQUENCE< DISPATCHDESCRIPTOR >& seqDescripts )
 {
     sal_Int32 nCount = seqDescripts.getLength();
     SEQUENCE< REFERENCE< XDISPATCH > > lDispatcher( nCount );
@@ -119,7 +119,7 @@ SEQUENCE< REFERENCE< XDISPATCH > > SAL_CALL SdUnoModule::queryDispatches( const 
 }
 
 // XDispatchProvider
-REFERENCE< XDISPATCH > SAL_CALL SdUnoModule::queryDispatch( const UNOURL& aURL, const OUSTRING&, sal_Int32 ) throw( RUNTIMEEXCEPTION )
+REFERENCE< XDISPATCH > SAL_CALL SdUnoModule::queryDispatch( const UNOURL& aURL, const OUSTRING&, sal_Int32 )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	SdDLL::Init();
@@ -133,12 +133,12 @@ REFERENCE< XDISPATCH > SAL_CALL SdUnoModule::queryDispatch( const UNOURL& aURL, 
 }
 
 // XServiceInfo
-::rtl::OUString SAL_CALL SdUnoModule::getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL SdUnoModule::getImplementationName(  )
 {
 	return SdUnoModule_getImplementationName();
 }
 
-sal_Bool SAL_CALL SdUnoModule::supportsService( const ::rtl::OUString& sServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SdUnoModule::supportsService( const ::rtl::OUString& sServiceName )
 {
     UNOSEQUENCE< UNOOUSTRING >  seqServiceNames =   getSupportedServiceNames();
     const UNOOUSTRING*          pArray          =   seqServiceNames.getConstArray();
@@ -152,7 +152,7 @@ sal_Bool SAL_CALL SdUnoModule::supportsService( const ::rtl::OUString& sServiceN
     return sal_False ;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SdUnoModule::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SdUnoModule::getSupportedServiceNames(  )
 {
 	return SdUnoModule_getSupportedServiceNames();
 }

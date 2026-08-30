@@ -115,15 +115,14 @@ public:
     static Reference< XInterface > getInstance(const Reference < XMultiServiceFactory >& xFactory);
 
 	// XStatusIndicator
-	virtual void SAL_CALL end() throw ( RuntimeException );
-	virtual void SAL_CALL reset() throw ( RuntimeException );
-	virtual void SAL_CALL setText(const OUString& aText) throw ( RuntimeException );
-	virtual void SAL_CALL setValue(sal_Int32 nValue) throw ( RuntimeException );
-	virtual void SAL_CALL start(const OUString& aText, sal_Int32 nRange) throw ( RuntimeException );
+	virtual void SAL_CALL end();
+	virtual void SAL_CALL reset();
+	virtual void SAL_CALL setText(const OUString& aText);
+	virtual void SAL_CALL setValue(sal_Int32 nValue);
+	virtual void SAL_CALL start(const OUString& aText, sal_Int32 nRange);
 
 	// XInitialize
-	virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any>& aArguments )
-		throw ( RuntimeException );
+	virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any>& aArguments );
 
 	// workwindow
 	virtual void Paint( const Rectangle& );

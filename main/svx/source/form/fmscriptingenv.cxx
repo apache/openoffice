@@ -92,10 +92,10 @@ namespace svxform
         FormScriptListener( const ::rtl::Reference< FormScriptingEnvironment >& _pScriptExecutor );
 
         // XScriptListener
-        virtual void SAL_CALL firing( const ScriptEvent& aEvent ) throw (RuntimeException);
-        virtual Any SAL_CALL approveFiring( const ScriptEvent& aEvent ) throw (InvocationTargetException, RuntimeException);
+        virtual void SAL_CALL firing( const ScriptEvent& aEvent );
+        virtual Any SAL_CALL approveFiring( const ScriptEvent& aEvent );
         // XEventListener
-        virtual void SAL_CALL disposing( const EventObject& Source ) throw (RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& Source );
 
         // lifetime control
         void SAL_CALL dispose();
@@ -229,7 +229,7 @@ namespace svxform
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormScriptListener::firing( const ScriptEvent& _rEvent ) throw (RuntimeException)
+    void SAL_CALL FormScriptListener::firing( const ScriptEvent& _rEvent )
     {
         ::osl::ClearableMutexGuard aGuard( m_aMutex );
        static const ::rtl::OUString vbaInterOp =
@@ -251,7 +251,7 @@ namespace svxform
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL FormScriptListener::approveFiring( const ScriptEvent& _rEvent ) throw (InvocationTargetException, RuntimeException)
+    Any SAL_CALL FormScriptListener::approveFiring( const ScriptEvent& _rEvent )
     {
         Any aResult;
 
@@ -263,7 +263,7 @@ namespace svxform
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL FormScriptListener::disposing( const EventObject& /*Source*/ ) throw (RuntimeException)
+    void SAL_CALL FormScriptListener::disposing( const EventObject& /*Source*/ )
     {
         // not interested in
     }

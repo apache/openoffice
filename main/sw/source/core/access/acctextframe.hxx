@@ -52,76 +52,59 @@ public:
     SwAccessibleTextFrame( SwAccessibleMap* pInitMap, const SwFlyFrm* pFlyFrm );
 
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-		::com::sun::star::uno::Type const & rType )
-		throw (::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Type const & rType );
 	virtual void SAL_CALL acquire() throw ();
 	virtual void SAL_CALL release() throw ();
 	//=====  XAccessibleSelection  ============================================
 	virtual void SAL_CALL selectAccessibleChild(
-		sal_Int32 nChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException );
+		sal_Int32 nChildIndex );
 
 	virtual sal_Bool SAL_CALL isAccessibleChildSelected(
-		sal_Int32 nChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException );
+		sal_Int32 nChildIndex );
 
-	virtual void SAL_CALL clearAccessibleSelection(  )
-		throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL clearAccessibleSelection(  );
 
-	virtual void SAL_CALL selectAllAccessibleChildren(  )
-		throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL selectAllAccessibleChildren(  );
 
-	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  )
-		throw ( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  );
 
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild(
-		sal_Int32 nSelectedChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException);
+		sal_Int32 nSelectedChildIndex );
 
 	virtual void SAL_CALL deselectAccessibleChild(
-		sal_Int32 nSelectedChildIndex )
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::uno::RuntimeException );
+		sal_Int32 nSelectedChildIndex );
 
 	//=====  XAccessibleContext  ==============================================
 
     // --> OD 2009-07-14 #i73249#
     /// Return the object's current name.
     virtual ::rtl::OUString SAL_CALL
-        getAccessibleName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getAccessibleName (void);
     // <--
     /// Return this object's description.
 	virtual ::rtl::OUString SAL_CALL
-    	getAccessibleDescription (void)
-        throw (com::sun::star::uno::RuntimeException);
+    	getAccessibleDescription (void);
 
 	//=====  XServiceInfo  ====================================================
 
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName (void);
 
     /**	Return whether the specified service is supported by this class.
     */
     virtual sal_Bool SAL_CALL
-    	supportsService (const ::rtl::OUString& sServiceName)
-        throw (::com::sun::star::uno::RuntimeException);
+    	supportsService (const ::rtl::OUString& sServiceName);
 
     /** Returns a list of all supported services.  In this case that is just
     	the AccessibleContext service.
     */
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-    	getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getSupportedServiceNames (void);
 
 	//====== XTypeProvider ====================================================
-    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 
 
     //=====  XAccessibleContext::getAccessibleRelationSet  ====================
@@ -140,8 +123,7 @@ public:
 
 	virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessibleRelationSet> SAL_CALL
-    	getAccessibleRelationSet (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    	getAccessibleRelationSet (void);
 };
 
 

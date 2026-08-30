@@ -100,56 +100,42 @@ public:
     ScTabViewShell*         GetViewShell() const    { return pViewShell; }
 
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-								const ::com::sun::star::uno::Type & rType )
-									throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::uno::Type & rType );
 
 	virtual void			Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 
 							// XViewPane
-	virtual sal_Int32 SAL_CALL getFirstVisibleColumn() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setFirstVisibleColumn( sal_Int32 nFirstVisibleColumn )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getFirstVisibleRow() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setFirstVisibleRow( sal_Int32 nFirstVisibleRow )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::table::CellRangeAddress SAL_CALL getVisibleRange()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getFirstVisibleColumn();
+	virtual void SAL_CALL	setFirstVisibleColumn( sal_Int32 nFirstVisibleColumn );
+	virtual sal_Int32 SAL_CALL getFirstVisibleRow();
+	virtual void SAL_CALL	setFirstVisibleRow( sal_Int32 nFirstVisibleRow );
+	virtual ::com::sun::star::table::CellRangeAddress SAL_CALL getVisibleRange();
 
 							// XCellRangeReferrer
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange > SAL_CALL
-							getReferredCells() throw(::com::sun::star::uno::RuntimeException);
+							getReferredCells();
 
                             // XFormLayerAccess
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController > SAL_CALL
                             getFormController( const ::com::sun::star::uno::Reference<
-                                ::com::sun::star::form::XForm >& Form )
-                                    throw (::com::sun::star::uno::RuntimeException);
+                                ::com::sun::star::form::XForm >& Form );
     virtual ::sal_Bool SAL_CALL
-                            isFormDesignMode(  )
-                                throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL   setFormDesignMode( ::sal_Bool DesignMode )
-                                throw (::com::sun::star::uno::RuntimeException);
+                            isFormDesignMode(  );
+    virtual void SAL_CALL   setFormDesignMode( ::sal_Bool DesignMode );
 
 							// XControlAccess
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl > SAL_CALL
 							getControl( const ::com::sun::star::uno::Reference<
-								::com::sun::star::awt::XControlModel >& xModel )
-									throw(::com::sun::star::container::NoSuchElementException,
-										::com::sun::star::uno::RuntimeException);
+								::com::sun::star::awt::XControlModel >& xModel );
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 							// XTypeProvider
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 };
 
 
@@ -162,8 +148,7 @@ public:
 	virtual					~ScViewPaneObj();
 
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-								const ::com::sun::star::uno::Type & rType )
-									throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::uno::Type & rType );
 	virtual void SAL_CALL	acquire() throw();
 	virtual void SAL_CALL	release() throw();
 };
@@ -214,8 +199,7 @@ public:
 	virtual					~ScTabViewObj();
 
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
-								const ::com::sun::star::uno::Type & rType )
-									throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::uno::Type & rType );
 	virtual void SAL_CALL	acquire() throw();
 	virtual void SAL_CALL	release() throw();
 
@@ -224,168 +208,120 @@ public:
     // bSameTabButMoved = true if the same sheet as before is activated, used after moving/copying/inserting/deleting a sheet
     void                    SheetChanged( bool bSameTabButMoved = false );
     bool                    IsMouseListening() const;
-    sal_Bool                MousePressed( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-    sal_Bool                MouseReleased( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+    sal_Bool                MousePressed( const ::com::sun::star::awt::MouseEvent& e );
+    sal_Bool                MouseReleased( const ::com::sun::star::awt::MouseEvent& e );
 
 	void					RangeSelDone( const String& rText );
 	void					RangeSelAborted( const String& rText );
 	void					RangeSelChanged( const String& rText );
 
 							// XSelectionSupplier
-	virtual sal_Bool SAL_CALL select( const ::com::sun::star::uno::Any& aSelection )
-								throw(::com::sun::star::lang::IllegalArgumentException,
-									::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL getSelection()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL select( const ::com::sun::star::uno::Any& aSelection );
+	virtual ::com::sun::star::uno::Any SAL_CALL getSelection();
 	virtual void SAL_CALL	addSelectionChangeListener( const ::com::sun::star::uno::Reference<
-								::com::sun::star::view::XSelectionChangeListener >& xListener )
-									throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::view::XSelectionChangeListener >& xListener );
 	virtual void SAL_CALL	removeSelectionChangeListener( const ::com::sun::star::uno::Reference<
-								::com::sun::star::view::XSelectionChangeListener >& xListener )
-									throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::view::XSelectionChangeListener >& xListener );
 
 	//!	XPrintable?
 
 							// XPropertySet
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >
-							SAL_CALL getPropertySetInfo()
-								throw(::com::sun::star::uno::RuntimeException);
+							SAL_CALL getPropertySetInfo();
 	virtual void SAL_CALL	setPropertyValue( const ::rtl::OUString& aPropertyName,
-									const ::com::sun::star::uno::Any& aValue )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::beans::PropertyVetoException,
-									::com::sun::star::lang::IllegalArgumentException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+									const ::com::sun::star::uno::Any& aValue );
 	virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue(
-									const ::rtl::OUString& PropertyName )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+									const ::rtl::OUString& PropertyName );
 	virtual void SAL_CALL	addPropertyChangeListener( const ::rtl::OUString& aPropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XPropertyChangeListener >& xListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XPropertyChangeListener >& xListener );
 	virtual void SAL_CALL	removePropertyChangeListener( const ::rtl::OUString& aPropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XPropertyChangeListener >& aListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XPropertyChangeListener >& aListener );
 	virtual void SAL_CALL	addVetoableChangeListener( const ::rtl::OUString& PropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XVetoableChangeListener >& aListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XVetoableChangeListener >& aListener );
 	virtual void SAL_CALL	removeVetoableChangeListener( const ::rtl::OUString& PropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XVetoableChangeListener >& aListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XVetoableChangeListener >& aListener );
 
 							// XEnumerationAccess
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL
-							createEnumeration() throw(::com::sun::star::uno::RuntimeException);
+							createEnumeration();
 
 							// XIndexAccess
-	virtual sal_Int32 SAL_CALL getCount() throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index )
-								throw(::com::sun::star::lang::IndexOutOfBoundsException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getCount();
+	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index );
 
 							// XElementAccess
-	virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+	virtual sal_Bool SAL_CALL hasElements();
 
 							// XSpreadsheetView
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XSpreadsheet > SAL_CALL
-							getActiveSheet() throw(::com::sun::star::uno::RuntimeException);
+							getActiveSheet();
 	virtual void SAL_CALL	setActiveSheet( const ::com::sun::star::uno::Reference<
-								::com::sun::star::sheet::XSpreadsheet >& xActiveSheet )
-									throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::sheet::XSpreadsheet >& xActiveSheet );
 
                             //XEnhancedMouseClickBroadcaster
 
     virtual void SAL_CALL addEnhancedMouseClickHandler( const ::com::sun::star::uno::Reference<
-                                ::com::sun::star::awt::XEnhancedMouseClickHandler >& aListener )
-                                    throw (::com::sun::star::uno::RuntimeException);
+                                ::com::sun::star::awt::XEnhancedMouseClickHandler >& aListener );
     virtual void SAL_CALL removeEnhancedMouseClickHandler( const ::com::sun::star::uno::Reference<
-                                ::com::sun::star::awt::XEnhancedMouseClickHandler >& aListener )
-                                    throw (::com::sun::star::uno::RuntimeException);
+                                ::com::sun::star::awt::XEnhancedMouseClickHandler >& aListener );
 
                             //XActivationBroadcaster
 
     virtual void SAL_CALL addActivationEventListener( const ::com::sun::star::uno::Reference<
-                                ::com::sun::star::sheet::XActivationEventListener >& aListener )
-                                    throw (::com::sun::star::uno::RuntimeException);
+                                ::com::sun::star::sheet::XActivationEventListener >& aListener );
     virtual void SAL_CALL removeActivationEventListener( const ::com::sun::star::uno::Reference<
-                                ::com::sun::star::sheet::XActivationEventListener >& aListener )
-                                    throw (::com::sun::star::uno::RuntimeException);
+                                ::com::sun::star::sheet::XActivationEventListener >& aListener );
 
 							// XViewSplitable
-	virtual sal_Bool SAL_CALL getIsWindowSplit() throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getSplitHorizontal() throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getSplitVertical() throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getSplitColumn() throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getSplitRow() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	splitAtPosition( sal_Int32 nPixelX, sal_Int32 nPixelY )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL getIsWindowSplit();
+	virtual sal_Int32 SAL_CALL getSplitHorizontal();
+	virtual sal_Int32 SAL_CALL getSplitVertical();
+	virtual sal_Int32 SAL_CALL getSplitColumn();
+	virtual sal_Int32 SAL_CALL getSplitRow();
+	virtual void SAL_CALL	splitAtPosition( sal_Int32 nPixelX, sal_Int32 nPixelY );
 
 							// XViewFreezable
-	virtual sal_Bool SAL_CALL hasFrozenPanes() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	freezeAtPosition( sal_Int32 nColumns, sal_Int32 nRows )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasFrozenPanes();
+	virtual void SAL_CALL	freezeAtPosition( sal_Int32 nColumns, sal_Int32 nRows );
 
 							// XRangeSelection
 	virtual void SAL_CALL	startRangeSelection( const ::com::sun::star::uno::Sequence<
-								::com::sun::star::beans::PropertyValue >& aArguments )
-									throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	abortRangeSelection() throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::beans::PropertyValue >& aArguments );
+	virtual void SAL_CALL	abortRangeSelection();
 	virtual void SAL_CALL	addRangeSelectionListener( const ::com::sun::star::uno::Reference<
-								::com::sun::star::sheet::XRangeSelectionListener >& aListener )
-									throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::sheet::XRangeSelectionListener >& aListener );
 	virtual void SAL_CALL	removeRangeSelectionListener( const ::com::sun::star::uno::Reference<
-								::com::sun::star::sheet::XRangeSelectionListener >& aListener )
-									throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::sheet::XRangeSelectionListener >& aListener );
 	virtual void SAL_CALL	addRangeSelectionChangeListener( const ::com::sun::star::uno::Reference<
-								::com::sun::star::sheet::XRangeSelectionChangeListener >& aListener )
-									throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::sheet::XRangeSelectionChangeListener >& aListener );
 	virtual void SAL_CALL	removeRangeSelectionChangeListener( const ::com::sun::star::uno::Reference<
-								::com::sun::star::sheet::XRangeSelectionChangeListener >& aListener )
-									throw(::com::sun::star::uno::RuntimeException);
+								::com::sun::star::sheet::XRangeSelectionChangeListener >& aListener );
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 							// XUnoTunnel
 	virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence<
-									sal_Int8 >& aIdentifier )
-								throw(::com::sun::star::uno::RuntimeException);
+									sal_Int8 >& aIdentifier );
 
 	static const com::sun::star::uno::Sequence<sal_Int8>& getUnoTunnelId();
 	static ScTabViewObj* getImplementation( const com::sun::star::uno::Reference<
 									com::sun::star::uno::XInterface> xObj );
 
 							// XTypeProvider
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
     //XTransferableSupplier
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getTransferable(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL insertTransferable( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& xTrans ) throw (::com::sun::star::datatransfer::UnsupportedFlavorException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable > SAL_CALL getTransferable(  );
+    virtual void SAL_CALL insertTransferable( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& xTrans );
 };
 
 

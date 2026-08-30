@@ -7,7 +7,6 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",
-    "/Dsnprintf=_snprintf",
     # public jvmfwk headers
     "/Imain/jvmfwk/inc",
     # pch header

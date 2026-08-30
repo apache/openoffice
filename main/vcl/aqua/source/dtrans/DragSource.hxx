@@ -87,27 +87,24 @@ public:
   virtual ~DragSource();
 
   // XInitialization
-  virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments )
-	throw(com::sun::star::uno::Exception/*, com::sun::star::uno::RuntimeException*/);
+  virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments );
 
   // XDragSource
-  virtual sal_Bool SAL_CALL isDragImageSupported(  ) throw(com::sun::star::uno::RuntimeException);
+  virtual sal_Bool SAL_CALL isDragImageSupported(  );
 
-  virtual sal_Int32 SAL_CALL getDefaultCursor(sal_Int8 dragAction)
-	throw(com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException);
+  virtual sal_Int32 SAL_CALL getDefaultCursor(sal_Int8 dragAction);
 
   virtual void SAL_CALL startDrag( const com::sun::star::datatransfer::dnd::DragGestureEvent& trigger,
 								   sal_Int8 sourceActions,
 								   sal_Int32 cursor,
 								   sal_Int32 image,
 								   const com::sun::star::uno::Reference< com::sun::star::datatransfer::XTransferable >& transferable,
-								   const com::sun::star::uno::Reference< com::sun::star::datatransfer::dnd::XDragSourceListener >& listener )
-	throw(com::sun::star::uno::RuntimeException);
+								   const com::sun::star::uno::Reference< com::sun::star::datatransfer::dnd::XDragSourceListener >& listener );
 
   // XServiceInfo
-  virtual rtl::OUString SAL_CALL getImplementationName() throw (com::sun::star::uno::RuntimeException);
-  virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) throw (com::sun::star::uno::RuntimeException);
-  virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);
+  virtual rtl::OUString SAL_CALL getImplementationName();
+  virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+  virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
   virtual void saveMouseEvent(NSEvent* theEvent);
   virtual unsigned int getSupportedDragOperations(bool isLocal) const;

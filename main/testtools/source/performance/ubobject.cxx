@@ -78,7 +78,7 @@ public:
 		{}
 
 	// XInterface
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw(::com::sun::star::uno::RuntimeException)
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType )
 	{
 		// execution time remains appr. constant any time
 		Any aRet;
@@ -105,101 +105,101 @@ public:
 		{ if (! osl_decrementInterlockedCount( &_nRef )) delete this; }
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw (RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
+	virtual OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
     // Attributes
-    virtual sal_Int32 SAL_CALL getLong_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual sal_Int32 SAL_CALL getLong_attr()
 		{ return 0; }
-    virtual void SAL_CALL setLong_attr( sal_Int32 _attributelong ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setLong_attr( sal_Int32 _attributelong )
 		{}
-    virtual sal_Int64 SAL_CALL getHyper_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual sal_Int64 SAL_CALL getHyper_attr()
 		{ return 0; }
-    virtual void SAL_CALL setHyper_attr( sal_Int64 _attributehyper ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setHyper_attr( sal_Int64 _attributehyper )
 		{}
-    virtual float SAL_CALL getFloat_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual float SAL_CALL getFloat_attr()
 		{ return 0.0; }
-    virtual void SAL_CALL setFloat_attr( float _attributefloat ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setFloat_attr( float _attributefloat )
 		{}
-    virtual double SAL_CALL getDouble_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual double SAL_CALL getDouble_attr()
 		{ return 0.0; }
-    virtual void SAL_CALL setDouble_attr( double _attributedouble ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setDouble_attr( double _attributedouble )
 		{}
-    virtual OUString SAL_CALL getString_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual OUString SAL_CALL getString_attr()
 		{ return _aDummyString; }
-    virtual void SAL_CALL setString_attr( const ::rtl::OUString& _attributestring ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setString_attr( const ::rtl::OUString& _attributestring )
 		{}
-    virtual Reference< XInterface > SAL_CALL getInterface_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual Reference< XInterface > SAL_CALL getInterface_attr()
 		{ return Reference< XInterface >(); }
-    virtual void SAL_CALL setInterface_attr( const Reference< XInterface >& _attributeinterface ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setInterface_attr( const Reference< XInterface >& _attributeinterface )
 		{}
-    virtual Any SAL_CALL getAny_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual Any SAL_CALL getAny_attr()
 		{ return _aDummyAny; }
-    virtual void SAL_CALL setAny_attr( const Any& _attributeany ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setAny_attr( const Any& _attributeany )
 		{}
-    virtual Sequence< Reference< XInterface > > SAL_CALL getSequence_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual Sequence< Reference< XInterface > > SAL_CALL getSequence_attr()
 		{ return _aDummySequence; }
-    virtual void SAL_CALL setSequence_attr( const Sequence< Reference< XInterface > >& _attributesequence ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setSequence_attr( const Sequence< Reference< XInterface > >& _attributesequence )
 		{}
-    virtual ComplexTypes SAL_CALL getStruct_attr() throw(::com::sun::star::uno::RuntimeException)
+    virtual ComplexTypes SAL_CALL getStruct_attr()
 		{ return _aDummyStruct; }
-    virtual void SAL_CALL setStruct_attr( const ::com::sun::star::test::performance::ComplexTypes& _attributestruct ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setStruct_attr( const ::com::sun::star::test::performance::ComplexTypes& _attributestruct )
 		{}
 
     // Methods
-    virtual sal_Int32 SAL_CALL getLong() throw(::com::sun::star::uno::RuntimeException)
+    virtual sal_Int32 SAL_CALL getLong()
 		{ return 0; }
-    virtual void SAL_CALL setLong( sal_Int32 _long ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setLong( sal_Int32 _long )
 		{}
-    virtual sal_Int64 SAL_CALL getHyper() throw(::com::sun::star::uno::RuntimeException)
+    virtual sal_Int64 SAL_CALL getHyper()
 		{ return 0; }
-    virtual void SAL_CALL setHyper( sal_Int64 _hyper ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setHyper( sal_Int64 _hyper )
 		{}
-    virtual float SAL_CALL getFloat() throw(::com::sun::star::uno::RuntimeException)
+    virtual float SAL_CALL getFloat()
 		{ return 0; }
-    virtual void SAL_CALL setFloat( float _float ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setFloat( float _float )
 		{}
-    virtual double SAL_CALL getDouble() throw(::com::sun::star::uno::RuntimeException)
+    virtual double SAL_CALL getDouble()
 		{ return 0; }
-    virtual void SAL_CALL setDouble( double _double ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setDouble( double _double )
 		{}
-    virtual OUString SAL_CALL getString() throw(::com::sun::star::uno::RuntimeException)
+    virtual OUString SAL_CALL getString()
 		{ return _aDummyString; }
-    virtual void SAL_CALL setString( const ::rtl::OUString& _string ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setString( const ::rtl::OUString& _string )
 		{}
-    virtual Reference< XInterface > SAL_CALL getInterface() throw(::com::sun::star::uno::RuntimeException)
+    virtual Reference< XInterface > SAL_CALL getInterface()
 		{ return Reference< XInterface >(); }
-    virtual void SAL_CALL setInterface( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _interface ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setInterface( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _interface )
 		{}
-    virtual Any SAL_CALL getAny() throw(::com::sun::star::uno::RuntimeException)
+    virtual Any SAL_CALL getAny()
 		{ return _aDummyAny; }
-    virtual void SAL_CALL setAny( const ::com::sun::star::uno::Any& _any ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setAny( const ::com::sun::star::uno::Any& _any )
 		{}
-    virtual Sequence< Reference< XInterface > > SAL_CALL getSequence() throw(::com::sun::star::uno::RuntimeException)
+    virtual Sequence< Reference< XInterface > > SAL_CALL getSequence()
 		{ return _aDummySequence; }
-    virtual void SAL_CALL setSequence( const Sequence< Reference< XInterface > >& _sequence ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setSequence( const Sequence< Reference< XInterface > >& _sequence )
 		{}
-    virtual ComplexTypes SAL_CALL getStruct() throw(::com::sun::star::uno::RuntimeException)
+    virtual ComplexTypes SAL_CALL getStruct()
 		{ return _aDummyStruct; }
-    virtual void SAL_CALL setStruct( const ::com::sun::star::test::performance::ComplexTypes& c ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL setStruct( const ::com::sun::star::test::performance::ComplexTypes& c )
 		{}
 
-    virtual void SAL_CALL async() throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL async()
 		{}
-    virtual void SAL_CALL sync() throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL sync()
 		{}
-    virtual ComplexTypes SAL_CALL complex_in( const ::com::sun::star::test::performance::ComplexTypes& aVal ) throw(::com::sun::star::uno::RuntimeException)
+    virtual ComplexTypes SAL_CALL complex_in( const ::com::sun::star::test::performance::ComplexTypes& aVal )
 		{ return aVal; }
-    virtual ComplexTypes SAL_CALL complex_inout( ::com::sun::star::test::performance::ComplexTypes& aVal ) throw(::com::sun::star::uno::RuntimeException)
+    virtual ComplexTypes SAL_CALL complex_inout( ::com::sun::star::test::performance::ComplexTypes& aVal )
 		{ return aVal; }
-    virtual void SAL_CALL complex_oneway( const ::com::sun::star::test::performance::ComplexTypes& aVal ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL complex_oneway( const ::com::sun::star::test::performance::ComplexTypes& aVal )
 		{}
-    virtual void SAL_CALL complex_noreturn( const ::com::sun::star::test::performance::ComplexTypes& aVal ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL complex_noreturn( const ::com::sun::star::test::performance::ComplexTypes& aVal )
 		{}
-    virtual Reference< XPerformanceTest > SAL_CALL createObject() throw(::com::sun::star::uno::RuntimeException)
+    virtual Reference< XPerformanceTest > SAL_CALL createObject()
 		{ return new ServiceImpl(); }
-    virtual void SAL_CALL raiseRuntimeException(  ) throw(::com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL raiseRuntimeException(  )
 		{ throw _aDummyRE; }
 };
 
@@ -208,13 +208,11 @@ public:
 // XServiceInfo
 //__________________________________________________________________________________________________
 OUString ServiceImpl::getImplementationName()
-	throw (RuntimeException)
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME) );
 }
 //__________________________________________________________________________________________________
 sal_Bool ServiceImpl::supportsService( const OUString & rServiceName )
-	throw (RuntimeException)
 {
 	const Sequence< OUString > & rSNL = getSupportedServiceNames();
 	const OUString * pArray = rSNL.getConstArray();
@@ -227,7 +225,6 @@ sal_Bool ServiceImpl::supportsService( const OUString & rServiceName )
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > ServiceImpl::getSupportedServiceNames()
-	throw (RuntimeException)
 {
 	return benchmark_object::getSupportedServiceNames();
 }

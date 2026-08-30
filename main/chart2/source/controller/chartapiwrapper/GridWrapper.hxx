@@ -69,14 +69,11 @@ public:
     APPHELPER_XSERVICEINFO_DECL()
 
     // ____ XComponent ____
-    virtual void SAL_CALL dispose()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
     virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference<
-                                            ::com::sun::star::lang::XEventListener >& xListener )
-        throw (::com::sun::star::uno::RuntimeException);
+                                            ::com::sun::star::lang::XEventListener >& xListener );
     virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference<
-                                               ::com::sun::star::lang::XEventListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+                                               ::com::sun::star::lang::XEventListener >& aListener );
 
 protected:
     // ____ WrappedPropertySet ____

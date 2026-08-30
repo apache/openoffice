@@ -117,7 +117,7 @@ namespace frm
     IMPLEMENT_FORWARD_XTYPEPROVIDER2( ONavigationBarControl, UnoControl, ONavigationBarControl_Base )
 
     //------------------------------------------------------------------
-    Any SAL_CALL ONavigationBarControl::queryAggregation( const Type& _rType ) throw ( RuntimeException )
+    Any SAL_CALL ONavigationBarControl::queryAggregation( const Type& _rType )
     {
         Any aReturn = UnoControl::queryAggregation( _rType );
 
@@ -158,7 +158,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarControl::createPeer( const Reference< XToolkit >& /*_rToolkit*/, const Reference< XWindowPeer >& _rParentPeer ) throw( RuntimeException )
+    void SAL_CALL ONavigationBarControl::createPeer( const Reference< XToolkit >& /*_rToolkit*/, const Reference< XWindowPeer >& _rParentPeer )
     {
     	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -212,13 +212,13 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    ::rtl::OUString	SAL_CALL ONavigationBarControl::getImplementationName()  throw( RuntimeException )
+    ::rtl::OUString	SAL_CALL ONavigationBarControl::getImplementationName()
     {
         return getImplementationName_Static();
     }
 
     //------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL ONavigationBarControl::getSupportedServiceNames()  throw( RuntimeException )
+    Sequence< ::rtl::OUString > SAL_CALL ONavigationBarControl::getSupportedServiceNames()
     {
         return getSupportedServiceNames_Static();
     }
@@ -245,19 +245,19 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarControl::registerDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor ) throw (RuntimeException)
+    void SAL_CALL ONavigationBarControl::registerDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor )
     {
         FORWARD_TO_PEER_1( XDispatchProviderInterception, registerDispatchProviderInterceptor, _rxInterceptor );
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarControl::releaseDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor ) throw (RuntimeException)
+    void SAL_CALL ONavigationBarControl::releaseDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor )
     {
         FORWARD_TO_PEER_1( XDispatchProviderInterception, releaseDispatchProviderInterceptor, _rxInterceptor );
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarControl::setDesignMode( sal_Bool _bOn ) throw( RuntimeException )
+    void SAL_CALL ONavigationBarControl::setDesignMode( sal_Bool _bOn )
     {
         UnoControl::setDesignMode( _bOn );
         FORWARD_TO_PEER_1( XVclWindowPeer, setDesignMode, _bOn );
@@ -322,14 +322,14 @@ namespace frm
     IMPLEMENT_FORWARD_XTYPEPROVIDER2( ONavigationBarPeer, VCLXWindow, OFormNavigationHelper )
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarPeer::dispose(  ) throw( RuntimeException )
+    void SAL_CALL ONavigationBarPeer::dispose(  )
     {
         VCLXWindow::dispose();
         OFormNavigationHelper::dispose();
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarPeer::setProperty( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) throw( RuntimeException )
+    void SAL_CALL ONavigationBarPeer::setProperty( const ::rtl::OUString& _rPropertyName, const Any& _rValue )
     {
     	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -410,7 +410,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    Any SAL_CALL ONavigationBarPeer::getProperty( const ::rtl::OUString& _rPropertyName ) throw( RuntimeException )
+    Any SAL_CALL ONavigationBarPeer::getProperty( const ::rtl::OUString& _rPropertyName )
     {
     	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -513,7 +513,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarPeer::setDesignMode( sal_Bool _bOn ) throw( RuntimeException )
+    void SAL_CALL ONavigationBarPeer::setDesignMode( sal_Bool _bOn )
     {
         VCLXWindow::setDesignMode( _bOn  );
 
@@ -525,7 +525,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------
-    void SAL_CALL ONavigationBarPeer::disposing( const EventObject& _rSource ) throw (RuntimeException)
+    void SAL_CALL ONavigationBarPeer::disposing( const EventObject& _rSource )
     {
         VCLXWindow::disposing( _rSource );
         OFormNavigationHelper::disposing( _rSource );

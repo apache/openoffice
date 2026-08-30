@@ -50,7 +50,7 @@ sdbcx::ObjectType OUsers::createObject(const ::rtl::OUString& _rName)
 	return new OAdabasUser(m_pConnection,_rName);
 }
 // -------------------------------------------------------------------------
-void OUsers::impl_refresh() throw(RuntimeException)
+void OUsers::impl_refresh()
 {
 	m_pParent->refreshUsers();
 }

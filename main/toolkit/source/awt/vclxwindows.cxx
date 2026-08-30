@@ -220,7 +220,7 @@ void VCLXGraphicControl::ImplSetNewImage()
 	pButton->SetModeImage( GetImage() );
 }
 
-void VCLXGraphicControl::setPosSize( sal_Int32 X, sal_Int32 Y, sal_Int32 Width, sal_Int32 Height, short Flags ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXGraphicControl::setPosSize( sal_Int32 X, sal_Int32 Y, sal_Int32 Width, sal_Int32 Height, short Flags )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -233,7 +233,7 @@ void VCLXGraphicControl::setPosSize( sal_Int32 X, sal_Int32 Y, sal_Int32 Width, 
 	}
 }
 
-void VCLXGraphicControl::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXGraphicControl::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -286,7 +286,7 @@ void VCLXGraphicControl::setProperty( const ::rtl::OUString& PropertyName, const
 	}
 }
 
-::com::sun::star::uno::Any VCLXGraphicControl::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXGraphicControl::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -386,7 +386,7 @@ VCLXButton::~VCLXButton()
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXButton::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::dispose()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -397,31 +397,31 @@ void VCLXButton::dispose() throw(::com::sun::star::uno::RuntimeException)
 	VCLXGraphicControl::dispose();
 }
 
-void VCLXButton::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.addInterface( l );
 }
 
-void VCLXButton::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.removeInterface( l );
 }
 
-void VCLXButton::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l  )throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.addInterface( l );
 }
 
-void VCLXButton::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.removeInterface( l );
 }
 
-void VCLXButton::setLabel( const ::rtl::OUString& rLabel ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::setLabel( const ::rtl::OUString& rLabel )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -430,14 +430,14 @@ void VCLXButton::setLabel( const ::rtl::OUString& rLabel ) throw(::com::sun::sta
 		pWindow->SetText( rLabel );
 }
 
-void VCLXButton::setActionCommand( const ::rtl::OUString& rCommand ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::setActionCommand( const ::rtl::OUString& rCommand )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
 	maActionCommand = rCommand;
 }
 
-::com::sun::star::awt::Size VCLXButton::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXButton::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -448,7 +448,7 @@ void VCLXButton::setActionCommand( const ::rtl::OUString& rCommand ) throw(::com
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXButton::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXButton::getPreferredSize(  )
 {
 	::com::sun::star::awt::Size aSz = getMinimumSize();
 	aSz.Width += 16;
@@ -456,7 +456,7 @@ void VCLXButton::setActionCommand( const ::rtl::OUString& rCommand ) throw(::com
 	return aSz;
 }
 
-::com::sun::star::awt::Size VCLXButton::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXButton::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -484,7 +484,7 @@ void VCLXButton::setActionCommand( const ::rtl::OUString& rCommand ) throw(::com
 	return AWTSize(aSz);
 }
 
-void VCLXButton::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXButton::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -529,7 +529,7 @@ void VCLXButton::setProperty( const ::rtl::OUString& PropertyName, const ::com::
 	}
 }
 
-::com::sun::star::uno::Any VCLXButton::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXButton::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -661,7 +661,7 @@ void VCLXImageControl::ImplSetNewImage()
 	pControl->SetImage( GetImage() );
 }
 
-::com::sun::star::awt::Size VCLXImageControl::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXImageControl::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -671,12 +671,12 @@ void VCLXImageControl::ImplSetNewImage()
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXImageControl::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXImageControl::getPreferredSize(  )
 {
 	return getMinimumSize();
 }
 
-::com::sun::star::awt::Size VCLXImageControl::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXImageControl::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -689,7 +689,7 @@ void VCLXImageControl::ImplSetNewImage()
 	return aSz;
 }
 
-void VCLXImageControl::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXImageControl::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -725,7 +725,7 @@ void VCLXImageControl::setProperty( const ::rtl::OUString& PropertyName, const :
 	}
 }
 
-::com::sun::star::uno::Any VCLXImageControl::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXImageControl::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -789,7 +789,7 @@ VCLXCheckBox::VCLXCheckBox() :  maActionListeners( *this ), maItemListeners( *th
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXCheckBox::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXCheckBox::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XButton*, this ),
@@ -809,7 +809,7 @@ IMPL_XTYPEPROVIDER_END
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXCheckBox::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::dispose()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -819,37 +819,37 @@ void VCLXCheckBox::dispose() throw(::com::sun::star::uno::RuntimeException)
 	VCLXGraphicControl::dispose();
 }
 
-void VCLXCheckBox::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.addInterface( l );
 }
 
-void VCLXCheckBox::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.removeInterface( l );
 }
 
-void VCLXCheckBox::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.addInterface( l );
 }
 
-void VCLXCheckBox::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.removeInterface( l );
 }
 
-void VCLXCheckBox::setActionCommand( const ::rtl::OUString& rCommand ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::setActionCommand( const ::rtl::OUString& rCommand )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionCommand = rCommand;
 }
 
-void VCLXCheckBox::setLabel( const ::rtl::OUString& rLabel ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::setLabel( const ::rtl::OUString& rLabel )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -858,7 +858,7 @@ void VCLXCheckBox::setLabel( const ::rtl::OUString& rLabel ) throw(::com::sun::s
 		pWindow->SetText( rLabel );
 }
 
-void VCLXCheckBox::setState( short n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::setState( short n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -886,7 +886,7 @@ void VCLXCheckBox::setState( short n ) throw(::com::sun::star::uno::RuntimeExcep
 	}
 }
 
-short VCLXCheckBox::getState() throw(::com::sun::star::uno::RuntimeException)
+short VCLXCheckBox::getState()
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -906,7 +906,7 @@ short VCLXCheckBox::getState() throw(::com::sun::star::uno::RuntimeException)
     return nState;
 }
 
-void VCLXCheckBox::enableTriState( sal_Bool b ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::enableTriState( sal_Bool b )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -915,7 +915,7 @@ void VCLXCheckBox::enableTriState( sal_Bool b ) throw(::com::sun::star::uno::Run
 		pCheckBox->EnableTriState( b );
 }
 
-::com::sun::star::awt::Size VCLXCheckBox::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXCheckBox::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -926,12 +926,12 @@ void VCLXCheckBox::enableTriState( sal_Bool b ) throw(::com::sun::star::uno::Run
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXCheckBox::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXCheckBox::getPreferredSize(  )
 {
 	return getMinimumSize();
 }
 
-::com::sun::star::awt::Size VCLXCheckBox::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXCheckBox::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -948,7 +948,7 @@ void VCLXCheckBox::enableTriState( sal_Bool b ) throw(::com::sun::star::uno::Run
 	return AWTSize(aSz);
 }
 
-void VCLXCheckBox::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCheckBox::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -984,7 +984,7 @@ void VCLXCheckBox::setProperty( const ::rtl::OUString& PropertyName, const ::com
 	}
 }
 
-::com::sun::star::uno::Any VCLXCheckBox::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXCheckBox::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1090,7 +1090,7 @@ VCLXRadioButton::VCLXRadioButton() : maItemListeners( *this ), maActionListeners
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXRadioButton::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXRadioButton::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XRadioButton*, this ),
@@ -1110,7 +1110,7 @@ IMPL_XTYPEPROVIDER_END
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXRadioButton::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::dispose()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1120,7 +1120,7 @@ void VCLXRadioButton::dispose() throw(::com::sun::star::uno::RuntimeException)
 	VCLXGraphicControl::dispose();
 }
 
-void VCLXRadioButton::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1162,7 +1162,7 @@ void VCLXRadioButton::setProperty( const ::rtl::OUString& PropertyName, const ::
 	}
 }
 
-::com::sun::star::uno::Any VCLXRadioButton::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXRadioButton::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1191,31 +1191,31 @@ void VCLXRadioButton::setProperty( const ::rtl::OUString& PropertyName, const ::
 	return aProp;
 }
 
-void VCLXRadioButton::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.addInterface( l );
 }
 
-void VCLXRadioButton::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.removeInterface( l );
 }
 
-void VCLXRadioButton::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.addInterface( l );
 }
 
-void VCLXRadioButton::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.removeInterface( l );
 }
 
-void VCLXRadioButton::setLabel( const ::rtl::OUString& rLabel ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::setLabel( const ::rtl::OUString& rLabel )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1224,13 +1224,13 @@ void VCLXRadioButton::setLabel( const ::rtl::OUString& rLabel ) throw(::com::sun
 		pWindow->SetText( rLabel );
 }
 
-void VCLXRadioButton::setActionCommand( const ::rtl::OUString& rCommand ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::setActionCommand( const ::rtl::OUString& rCommand )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionCommand = rCommand;
 }
 
-void VCLXRadioButton::setState( sal_Bool b ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXRadioButton::setState( sal_Bool b )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1249,7 +1249,7 @@ void VCLXRadioButton::setState( sal_Bool b ) throw(::com::sun::star::uno::Runtim
     }
 }
 
-sal_Bool VCLXRadioButton::getState() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXRadioButton::getState()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1257,7 +1257,7 @@ sal_Bool VCLXRadioButton::getState() throw(::com::sun::star::uno::RuntimeExcepti
 	return pRadioButton ? pRadioButton->IsChecked() : sal_False;
 }
 
-::com::sun::star::awt::Size VCLXRadioButton::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXRadioButton::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1268,12 +1268,12 @@ sal_Bool VCLXRadioButton::getState() throw(::com::sun::star::uno::RuntimeExcepti
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXRadioButton::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXRadioButton::getPreferredSize(  )
 {
 	return getMinimumSize();
 }
 
-::com::sun::star::awt::Size VCLXRadioButton::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXRadioButton::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1359,7 +1359,7 @@ VCLXSpinField::VCLXSpinField() : maSpinListeners( *this )
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXSpinField::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXSpinField::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XSpinField*, this ) );
@@ -1372,19 +1372,19 @@ IMPL_XTYPEPROVIDER_START( VCLXSpinField )
 	VCLXEdit::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void VCLXSpinField::addSpinListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XSpinListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXSpinField::addSpinListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XSpinListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maSpinListeners.addInterface( l );
 }
 
-void VCLXSpinField::removeSpinListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XSpinListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXSpinField::removeSpinListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XSpinListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maSpinListeners.removeInterface( l );
 }
 
-void VCLXSpinField::up() throw(::com::sun::star::uno::RuntimeException)
+void VCLXSpinField::up()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1393,7 +1393,7 @@ void VCLXSpinField::up() throw(::com::sun::star::uno::RuntimeException)
 		pSpinField->Up();
 }
 
-void VCLXSpinField::down() throw(::com::sun::star::uno::RuntimeException)
+void VCLXSpinField::down()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1402,7 +1402,7 @@ void VCLXSpinField::down() throw(::com::sun::star::uno::RuntimeException)
 		pSpinField->Down();
 }
 
-void VCLXSpinField::first() throw(::com::sun::star::uno::RuntimeException)
+void VCLXSpinField::first()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1411,7 +1411,7 @@ void VCLXSpinField::first() throw(::com::sun::star::uno::RuntimeException)
 		pSpinField->First();
 }
 
-void VCLXSpinField::last() throw(::com::sun::star::uno::RuntimeException)
+void VCLXSpinField::last()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1420,7 +1420,7 @@ void VCLXSpinField::last() throw(::com::sun::star::uno::RuntimeException)
 		pSpinField->Last();
 }
 
-void VCLXSpinField::enableRepeat( sal_Bool bRepeat ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXSpinField::enableRepeat( sal_Bool bRepeat )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1519,7 +1519,7 @@ VCLXListBox::VCLXListBox()
 {
 }
 
-void VCLXListBox::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::dispose()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1530,31 +1530,31 @@ void VCLXListBox::dispose() throw(::com::sun::star::uno::RuntimeException)
 	VCLXWindow::dispose();
 }
 
-void VCLXListBox::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.addInterface( l );
 }
 
-void VCLXListBox::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.removeInterface( l );
 }
 
-void VCLXListBox::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.addInterface( l );
 }
 
-void VCLXListBox::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.removeInterface( l );
 }
 
-void VCLXListBox::addItem( const ::rtl::OUString& aItem, sal_Int16 nPos ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::addItem( const ::rtl::OUString& aItem, sal_Int16 nPos )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1563,7 +1563,7 @@ void VCLXListBox::addItem( const ::rtl::OUString& aItem, sal_Int16 nPos ) throw(
 		pBox->InsertEntry( aItem, nPos );
 }
 
-void VCLXListBox::addItems( const ::com::sun::star::uno::Sequence< ::rtl::OUString>& aItems, sal_Int16 nPos ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::addItems( const ::com::sun::star::uno::Sequence< ::rtl::OUString>& aItems, sal_Int16 nPos )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1587,7 +1587,7 @@ void VCLXListBox::addItems( const ::com::sun::star::uno::Sequence< ::rtl::OUStri
 	}
 }
 
-void VCLXListBox::removeItems( sal_Int16 nPos, sal_Int16 nCount ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::removeItems( sal_Int16 nPos, sal_Int16 nCount )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1599,7 +1599,7 @@ void VCLXListBox::removeItems( sal_Int16 nPos, sal_Int16 nCount ) throw(::com::s
 	}
 }
 
-sal_Int16 VCLXListBox::getItemCount() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXListBox::getItemCount()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1607,7 +1607,7 @@ sal_Int16 VCLXListBox::getItemCount() throw(::com::sun::star::uno::RuntimeExcept
 	return pBox ? pBox->GetEntryCount() : 0;
 }
 
-::rtl::OUString VCLXListBox::getItem( sal_Int16 nPos ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXListBox::getItem( sal_Int16 nPos )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1618,7 +1618,7 @@ sal_Int16 VCLXListBox::getItemCount() throw(::com::sun::star::uno::RuntimeExcept
 	return aItem;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString> VCLXListBox::getItems() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString> VCLXListBox::getItems()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1637,7 +1637,7 @@ sal_Int16 VCLXListBox::getItemCount() throw(::com::sun::star::uno::RuntimeExcept
 	return aSeq;
 }
 
-sal_Int16 VCLXListBox::getSelectedItemPos() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXListBox::getSelectedItemPos()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1645,7 +1645,7 @@ sal_Int16 VCLXListBox::getSelectedItemPos() throw(::com::sun::star::uno::Runtime
 	return pBox ? pBox->GetSelectEntryPos() : 0;
 }
 
-::com::sun::star::uno::Sequence<sal_Int16> VCLXListBox::getSelectedItemsPos() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence<sal_Int16> VCLXListBox::getSelectedItemsPos()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1661,7 +1661,7 @@ sal_Int16 VCLXListBox::getSelectedItemPos() throw(::com::sun::star::uno::Runtime
 	return aSeq;
 }
 
-::rtl::OUString VCLXListBox::getSelectedItem() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXListBox::getSelectedItem()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1672,7 +1672,7 @@ sal_Int16 VCLXListBox::getSelectedItemPos() throw(::com::sun::star::uno::Runtime
 	return aItem;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString> VCLXListBox::getSelectedItems() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString> VCLXListBox::getSelectedItems()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1688,7 +1688,7 @@ sal_Int16 VCLXListBox::getSelectedItemPos() throw(::com::sun::star::uno::Runtime
 	return aSeq;
 }
 
-void VCLXListBox::selectItemPos( sal_Int16 nPos, sal_Bool bSelect ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::selectItemPos( sal_Int16 nPos, sal_Bool bSelect )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1707,7 +1707,7 @@ void VCLXListBox::selectItemPos( sal_Int16 nPos, sal_Bool bSelect ) throw(::com:
     }
 }
 
-void VCLXListBox::selectItemsPos( const ::com::sun::star::uno::Sequence<sal_Int16>& aPositions, sal_Bool bSelect ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::selectItemsPos( const ::com::sun::star::uno::Sequence<sal_Int16>& aPositions, sal_Bool bSelect )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1738,7 +1738,7 @@ void VCLXListBox::selectItemsPos( const ::com::sun::star::uno::Sequence<sal_Int1
 	}
 }
 
-void VCLXListBox::selectItem( const ::rtl::OUString& rItemText, sal_Bool bSelect ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::selectItem( const ::rtl::OUString& rItemText, sal_Bool bSelect )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1751,7 +1751,7 @@ void VCLXListBox::selectItem( const ::rtl::OUString& rItemText, sal_Bool bSelect
 }
 
 
-void VCLXListBox::setDropDownLineCount( sal_Int16 nLines ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::setDropDownLineCount( sal_Int16 nLines )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1760,7 +1760,7 @@ void VCLXListBox::setDropDownLineCount( sal_Int16 nLines ) throw(::com::sun::sta
 		pBox->SetDropDownLineCount( nLines );
 }
 
-sal_Int16 VCLXListBox::getDropDownLineCount() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXListBox::getDropDownLineCount()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1771,7 +1771,7 @@ sal_Int16 VCLXListBox::getDropDownLineCount() throw(::com::sun::star::uno::Runti
 	return nLines;
 }
 
-sal_Bool VCLXListBox::isMutipleMode() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXListBox::isMutipleMode()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1782,7 +1782,7 @@ sal_Bool VCLXListBox::isMutipleMode() throw(::com::sun::star::uno::RuntimeExcept
 	return bMulti;
 }
 
-void VCLXListBox::setMultipleMode( sal_Bool bMulti ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::setMultipleMode( sal_Bool bMulti )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1791,7 +1791,7 @@ void VCLXListBox::setMultipleMode( sal_Bool bMulti ) throw(::com::sun::star::uno
 		pBox->EnableMultiSelection( bMulti );
 }
 
-void VCLXListBox::makeVisible( sal_Int16 nEntry ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::makeVisible( sal_Int16 nEntry )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1857,7 +1857,7 @@ void VCLXListBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1934,7 +1934,7 @@ void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com:
 	}
 }
 
-::com::sun::star::uno::Any VCLXListBox::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXListBox::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1988,7 +1988,7 @@ void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com:
 	return aProp;
 }
 
-::com::sun::star::awt::Size VCLXListBox::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXListBox::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -1999,7 +1999,7 @@ void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com:
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXListBox::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXListBox::getPreferredSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2014,7 +2014,7 @@ void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com:
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXListBox::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXListBox::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2025,7 +2025,7 @@ void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com:
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXListBox::getMinimumSize( sal_Int16 nCols, sal_Int16 nLines ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXListBox::getMinimumSize( sal_Int16 nCols, sal_Int16 nLines )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2036,7 +2036,7 @@ void VCLXListBox::setProperty( const ::rtl::OUString& PropertyName, const ::com:
 	return AWTSize(aSz);
 }
 
-void VCLXListBox::getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLines ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXListBox::getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLines )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2092,7 +2092,7 @@ namespace
 		 return Image();
 	 }
 }
-void SAL_CALL VCLXListBox::listItemInserted( const ItemListEvent& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXListBox::listItemInserted( const ItemListEvent& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2107,7 +2107,7 @@ void SAL_CALL VCLXListBox::listItemInserted( const ItemListEvent& i_rEvent ) thr
         i_rEvent.ItemPosition );
 }
 
-void SAL_CALL VCLXListBox::listItemRemoved( const ItemListEvent& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXListBox::listItemRemoved( const ItemListEvent& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2120,7 +2120,7 @@ void SAL_CALL VCLXListBox::listItemRemoved( const ItemListEvent& i_rEvent ) thro
     pListBox->RemoveEntry( i_rEvent.ItemPosition );
 }
 
-void SAL_CALL VCLXListBox::listItemModified( const ItemListEvent& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXListBox::listItemModified( const ItemListEvent& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2139,7 +2139,7 @@ void SAL_CALL VCLXListBox::listItemModified( const ItemListEvent& i_rEvent ) thr
     pListBox->InsertEntry( sNewText, aNewImage, i_rEvent.ItemPosition );
 }
 
-void SAL_CALL VCLXListBox::allItemsRemoved( const EventObject& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXListBox::allItemsRemoved( const EventObject& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2151,7 +2151,7 @@ void SAL_CALL VCLXListBox::allItemsRemoved( const EventObject& i_rEvent ) throw 
     (void)i_rEvent;
 }
 
-void SAL_CALL VCLXListBox::itemListChanged( const EventObject& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXListBox::itemListChanged( const EventObject& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2185,7 +2185,7 @@ void SAL_CALL VCLXListBox::itemListChanged( const EventObject& i_rEvent ) throw 
     }
 }
 
-void SAL_CALL VCLXListBox::disposing( const EventObject& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXListBox::disposing( const EventObject& i_rEvent )
 {
     // just disambiguate
     VCLXWindow::disposing( i_rEvent );
@@ -2209,7 +2209,7 @@ VCLXMessageBox::~VCLXMessageBox()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXMessageBox::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXMessageBox::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XMessageBox*, this ) );
@@ -2222,7 +2222,7 @@ IMPL_XTYPEPROVIDER_START( VCLXMessageBox )
 	VCLXTopWindow::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void VCLXMessageBox::setCaptionText( const ::rtl::OUString& rText ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXMessageBox::setCaptionText( const ::rtl::OUString& rText )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2231,7 +2231,7 @@ void VCLXMessageBox::setCaptionText( const ::rtl::OUString& rText ) throw(::com:
 		pWindow->SetText( rText );
 }
 
-::rtl::OUString VCLXMessageBox::getCaptionText() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXMessageBox::getCaptionText()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2242,7 +2242,7 @@ void VCLXMessageBox::setCaptionText( const ::rtl::OUString& rText ) throw(::com:
 	return aText;
 }
 
-void VCLXMessageBox::setMessageText( const ::rtl::OUString& rText ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXMessageBox::setMessageText( const ::rtl::OUString& rText )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2251,7 +2251,7 @@ void VCLXMessageBox::setMessageText( const ::rtl::OUString& rText ) throw(::com:
 		pBox->SetMessText( rText );
 }
 
-::rtl::OUString VCLXMessageBox::getMessageText() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXMessageBox::getMessageText()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2262,7 +2262,7 @@ void VCLXMessageBox::setMessageText( const ::rtl::OUString& rText ) throw(::com:
 	return aText;
 }
 
-sal_Int16 VCLXMessageBox::execute() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXMessageBox::execute()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2270,7 +2270,7 @@ sal_Int16 VCLXMessageBox::execute() throw(::com::sun::star::uno::RuntimeExceptio
 	return pBox ? pBox->Execute() : 0;
 }
 
-::com::sun::star::awt::Size SAL_CALL VCLXMessageBox::getMinimumSize() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size SAL_CALL VCLXMessageBox::getMinimumSize()
 {
     ::vos::OGuard aGuard( GetMutex() );
     return ::com::sun::star::awt::Size( 250, 100 );
@@ -2296,7 +2296,7 @@ VCLXDialog::~VCLXDialog()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXDialog::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXDialog::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XDialog2*, this ),
@@ -2311,7 +2311,7 @@ IMPL_XTYPEPROVIDER_START( VCLXDialog )
 	VCLXTopWindow::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void SAL_CALL VCLXDialog::endDialog( ::sal_Int32 i_result ) throw (RuntimeException)
+void SAL_CALL VCLXDialog::endDialog( ::sal_Int32 i_result )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2320,7 +2320,7 @@ void SAL_CALL VCLXDialog::endDialog( ::sal_Int32 i_result ) throw (RuntimeExcept
         pDialog->EndDialog( i_result );
 }
 
-void SAL_CALL VCLXDialog::setHelpId( const ::rtl::OUString& rId ) throw (RuntimeException)
+void SAL_CALL VCLXDialog::setHelpId( const ::rtl::OUString& rId )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2329,7 +2329,7 @@ void SAL_CALL VCLXDialog::setHelpId( const ::rtl::OUString& rId ) throw (Runtime
         pWindow->SetHelpId( rtl::OUStringToOString( rId, RTL_TEXTENCODING_UTF8 ) );
 }
 
-void VCLXDialog::setTitle( const ::rtl::OUString& Title ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDialog::setTitle( const ::rtl::OUString& Title )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2338,7 +2338,7 @@ void VCLXDialog::setTitle( const ::rtl::OUString& Title ) throw(::com::sun::star
 		pWindow->SetText( Title );
 }
 
-::rtl::OUString VCLXDialog::getTitle() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXDialog::getTitle()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2349,7 +2349,7 @@ void VCLXDialog::setTitle( const ::rtl::OUString& Title ) throw(::com::sun::star
 	return aTitle;
 }
 
-sal_Int16 VCLXDialog::execute() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXDialog::execute()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2381,12 +2381,12 @@ sal_Int16 VCLXDialog::execute() throw(::com::sun::star::uno::RuntimeException)
 	return nRet;
 }
 
-void VCLXDialog::endExecute() throw(::com::sun::star::uno::RuntimeException)
+void VCLXDialog::endExecute()
 {
     endDialog(0);
 }
 
-void SAL_CALL VCLXDialog::draw( sal_Int32 nX, sal_Int32 nY ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL VCLXDialog::draw( sal_Int32 nX, sal_Int32 nY )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	Window* pWindow = GetWindow();
@@ -2404,7 +2404,7 @@ void SAL_CALL VCLXDialog::draw( sal_Int32 nX, sal_Int32 nY ) throw(::com::sun::s
     }
 }
 
-::com::sun::star::awt::DeviceInfo VCLXDialog::getInfo() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::DeviceInfo VCLXDialog::getInfo()
 {
 	::com::sun::star::awt::DeviceInfo aInfo = VCLXDevice::getInfo();
 
@@ -2420,7 +2420,6 @@ void SAL_CALL VCLXDialog::draw( sal_Int32 nX, sal_Int32 nY ) throw(::com::sun::s
 void SAL_CALL VCLXDialog::setProperty(
     const ::rtl::OUString& PropertyName,
     const ::com::sun::star::uno::Any& Value )
-throw(::com::sun::star::uno::RuntimeException)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2475,7 +2474,6 @@ VCLXTabPage::~VCLXTabPage()
 }
 
 ::com::sun::star::uno::Any SAL_CALL VCLXTabPage::queryInterface(const ::com::sun::star::uno::Type & rType )
-throw(::com::sun::star::uno::RuntimeException)
 {
 	return VCLXContainer::queryInterface( rType );
 }
@@ -2487,7 +2485,6 @@ IMPL_XTYPEPROVIDER_END
 
 // ::com::sun::star::awt::XView
 void SAL_CALL VCLXTabPage::draw( sal_Int32 nX, sal_Int32 nY )
-throw(::com::sun::star::uno::RuntimeException)
 {
 	::vos::OGuard aGuard( GetMutex() );
 	Window* pWindow = GetWindow();
@@ -2507,7 +2504,6 @@ throw(::com::sun::star::uno::RuntimeException)
 
 // ::com::sun::star::awt::XDevice,
 ::com::sun::star::awt::DeviceInfo SAL_CALL VCLXTabPage::getInfo()
-throw(::com::sun::star::uno::RuntimeException)
 {
 	::com::sun::star::awt::DeviceInfo aInfo = VCLXDevice::getInfo();
 	return aInfo;
@@ -2516,7 +2512,6 @@ throw(::com::sun::star::uno::RuntimeException)
 void SAL_CALL VCLXTabPage::setProperty(
     const ::rtl::OUString& PropertyName,
     const ::com::sun::star::uno::Any& Value )
-throw(::com::sun::star::uno::RuntimeException)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2583,14 +2578,14 @@ VCLXFixedHyperlink::~VCLXFixedHyperlink()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXFixedHyperlink::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXFixedHyperlink::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
                                         SAL_STATIC_CAST( ::com::sun::star::awt::XFixedHyperlink*, this ) );
 	return (aRet.hasValue() ? aRet : VCLXWindow::queryInterface( rType ));
 }
 
-void VCLXFixedHyperlink::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedHyperlink::dispose()
 {
         ::vos::OGuard aGuard( GetMutex() );
 
@@ -2654,7 +2649,7 @@ void VCLXFixedHyperlink::ProcessWindowEvent( const VclWindowEvent& rVclWindowEve
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXFixedHyperlink::setText( const ::rtl::OUString& Text ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedHyperlink::setText( const ::rtl::OUString& Text )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2663,7 +2658,7 @@ void VCLXFixedHyperlink::setText( const ::rtl::OUString& Text ) throw(::com::sun
         pBase->SetDescription( Text );
 }
 
-::rtl::OUString VCLXFixedHyperlink::getText() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXFixedHyperlink::getText()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2674,7 +2669,7 @@ void VCLXFixedHyperlink::setText( const ::rtl::OUString& Text ) throw(::com::sun
 	return aText;
 }
 
-void VCLXFixedHyperlink::setURL( const ::rtl::OUString& URL ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedHyperlink::setURL( const ::rtl::OUString& URL )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2683,7 +2678,7 @@ void VCLXFixedHyperlink::setURL( const ::rtl::OUString& URL ) throw(::com::sun::
         pBase->SetURL( URL );
 }
 
-::rtl::OUString VCLXFixedHyperlink::getURL(  ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXFixedHyperlink::getURL(  )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2694,7 +2689,7 @@ void VCLXFixedHyperlink::setURL( const ::rtl::OUString& URL ) throw(::com::sun::
     return aText;
 }
 
-void VCLXFixedHyperlink::setAlignment( short nAlign ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedHyperlink::setAlignment( short nAlign )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2715,7 +2710,7 @@ void VCLXFixedHyperlink::setAlignment( short nAlign ) throw(::com::sun::star::un
 	}
 }
 
-short VCLXFixedHyperlink::getAlignment() throw(::com::sun::star::uno::RuntimeException)
+short VCLXFixedHyperlink::getAlignment()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2734,19 +2729,19 @@ short VCLXFixedHyperlink::getAlignment() throw(::com::sun::star::uno::RuntimeExc
 	return nAlign;
 }
 
-void VCLXFixedHyperlink::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedHyperlink::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l  )
 {
         ::vos::OGuard aGuard( GetMutex() );
         maActionListeners.addInterface( l );
 }
 
-void VCLXFixedHyperlink::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedHyperlink::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
         ::vos::OGuard aGuard( GetMutex() );
         maActionListeners.removeInterface( l );
 }
 
-::com::sun::star::awt::Size VCLXFixedHyperlink::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXFixedHyperlink::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2757,12 +2752,12 @@ void VCLXFixedHyperlink::removeActionListener( const ::com::sun::star::uno::Refe
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXFixedHyperlink::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXFixedHyperlink::getPreferredSize(  )
 {
 	return getMinimumSize();
 }
 
-::com::sun::star::awt::Size VCLXFixedHyperlink::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXFixedHyperlink::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -2774,7 +2769,7 @@ void VCLXFixedHyperlink::removeActionListener( const ::com::sun::star::uno::Refe
 	return aSz;
 }
 
-void VCLXFixedHyperlink::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedHyperlink::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2808,7 +2803,7 @@ void VCLXFixedHyperlink::setProperty( const ::rtl::OUString& PropertyName, const
     }
 }
 
-::com::sun::star::uno::Any VCLXFixedHyperlink::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXFixedHyperlink::getProperty( const ::rtl::OUString& PropertyName )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2898,7 +2893,7 @@ VCLXFixedText::~VCLXFixedText()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXFixedText::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXFixedText::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
     ::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
                                         SAL_STATIC_CAST( ::com::sun::star::awt::XFixedText*, this ) );
@@ -2916,7 +2911,7 @@ IMPL_XTYPEPROVIDER_END
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXFixedText::setText( const ::rtl::OUString& Text ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedText::setText( const ::rtl::OUString& Text )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2925,7 +2920,7 @@ void VCLXFixedText::setText( const ::rtl::OUString& Text ) throw(::com::sun::sta
         pWindow->SetText( Text );
 }
 
-::rtl::OUString VCLXFixedText::getText() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXFixedText::getText()
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2936,7 +2931,7 @@ void VCLXFixedText::setText( const ::rtl::OUString& Text ) throw(::com::sun::sta
     return aText;
 }
 
-void VCLXFixedText::setAlignment( short nAlign ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFixedText::setAlignment( short nAlign )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2957,7 +2952,7 @@ void VCLXFixedText::setAlignment( short nAlign ) throw(::com::sun::star::uno::Ru
     }
 }
 
-short VCLXFixedText::getAlignment() throw(::com::sun::star::uno::RuntimeException)
+short VCLXFixedText::getAlignment()
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2976,7 +2971,7 @@ short VCLXFixedText::getAlignment() throw(::com::sun::star::uno::RuntimeExceptio
     return nAlign;
 }
 
-::com::sun::star::awt::Size VCLXFixedText::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXFixedText::getMinimumSize(  )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -2987,12 +2982,12 @@ short VCLXFixedText::getAlignment() throw(::com::sun::star::uno::RuntimeExceptio
     return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXFixedText::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXFixedText::getPreferredSize(  )
 {
     return getMinimumSize();
 }
 
-::com::sun::star::awt::Size VCLXFixedText::calcAdjustedSize( const ::com::sun::star::awt::Size& rMaxSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXFixedText::calcAdjustedSize( const ::com::sun::star::awt::Size& rMaxSize )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -3040,7 +3035,7 @@ VCLXScrollBar::VCLXScrollBar() : maAdjustmentListeners( *this )
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXScrollBar::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXScrollBar::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XScrollBar*, this ) );
@@ -3059,7 +3054,7 @@ IMPL_XTYPEPROVIDER_END
 }
 
 // ::com::sun::star::lang::XComponent
-void VCLXScrollBar::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::dispose()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3070,19 +3065,19 @@ void VCLXScrollBar::dispose() throw(::com::sun::star::uno::RuntimeException)
 }
 
 // ::com::sun::star::awt::XScrollbar
-void VCLXScrollBar::addAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::addAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maAdjustmentListeners.addInterface( l );
 }
 
-void VCLXScrollBar::removeAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::removeAdjustmentListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XAdjustmentListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maAdjustmentListeners.removeInterface( l );
 }
 
-void VCLXScrollBar::setValue( sal_Int32 n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setValue( sal_Int32 n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3091,7 +3086,7 @@ void VCLXScrollBar::setValue( sal_Int32 n ) throw(::com::sun::star::uno::Runtime
 		pScrollBar->DoScroll( n );
 }
 
-void VCLXScrollBar::setValues( sal_Int32 nValue, sal_Int32 nVisible, sal_Int32 nMax ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setValues( sal_Int32 nValue, sal_Int32 nVisible, sal_Int32 nMax )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3104,7 +3099,7 @@ void VCLXScrollBar::setValues( sal_Int32 nValue, sal_Int32 nVisible, sal_Int32 n
 	}
 }
 
-sal_Int32 VCLXScrollBar::getValue() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXScrollBar::getValue()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3112,7 +3107,7 @@ sal_Int32 VCLXScrollBar::getValue() throw(::com::sun::star::uno::RuntimeExceptio
 	return pScrollBar ? pScrollBar->GetThumbPos() : 0;
 }
 
-void VCLXScrollBar::setMaximum( sal_Int32 n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setMaximum( sal_Int32 n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3121,7 +3116,7 @@ void VCLXScrollBar::setMaximum( sal_Int32 n ) throw(::com::sun::star::uno::Runti
 		pScrollBar->SetRangeMax( n );
 }
 
-sal_Int32 VCLXScrollBar::getMaximum() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXScrollBar::getMaximum()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3129,7 +3124,7 @@ sal_Int32 VCLXScrollBar::getMaximum() throw(::com::sun::star::uno::RuntimeExcept
 	return pScrollBar ? pScrollBar->GetRangeMax() : 0;
 }
 
-void VCLXScrollBar::setMinimum( sal_Int32 n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setMinimum( sal_Int32 n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3138,7 +3133,7 @@ void VCLXScrollBar::setMinimum( sal_Int32 n ) throw(::com::sun::star::uno::Runti
 		pScrollBar->SetRangeMin( n );
 }
 
-sal_Int32 VCLXScrollBar::getMinimum() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXScrollBar::getMinimum()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3146,7 +3141,7 @@ sal_Int32 VCLXScrollBar::getMinimum() throw(::com::sun::star::uno::RuntimeExcept
 	return pScrollBar ? pScrollBar->GetRangeMin() : 0;
 }
 
-void VCLXScrollBar::setLineIncrement( sal_Int32 n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setLineIncrement( sal_Int32 n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3155,7 +3150,7 @@ void VCLXScrollBar::setLineIncrement( sal_Int32 n ) throw(::com::sun::star::uno:
 		pScrollBar->SetLineSize( n );
 }
 
-sal_Int32 VCLXScrollBar::getLineIncrement() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXScrollBar::getLineIncrement()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3163,7 +3158,7 @@ sal_Int32 VCLXScrollBar::getLineIncrement() throw(::com::sun::star::uno::Runtime
 	return pScrollBar ? pScrollBar->GetLineSize() : 0;
 }
 
-void VCLXScrollBar::setBlockIncrement( sal_Int32 n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setBlockIncrement( sal_Int32 n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3172,7 +3167,7 @@ void VCLXScrollBar::setBlockIncrement( sal_Int32 n ) throw(::com::sun::star::uno
 		pScrollBar->SetPageSize( n );
 }
 
-sal_Int32 VCLXScrollBar::getBlockIncrement() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXScrollBar::getBlockIncrement()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3180,7 +3175,7 @@ sal_Int32 VCLXScrollBar::getBlockIncrement() throw(::com::sun::star::uno::Runtim
 	return pScrollBar ? pScrollBar->GetPageSize() : 0;
 }
 
-void VCLXScrollBar::setVisibleSize( sal_Int32 n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setVisibleSize( sal_Int32 n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3189,7 +3184,7 @@ void VCLXScrollBar::setVisibleSize( sal_Int32 n ) throw(::com::sun::star::uno::R
 		pScrollBar->SetVisibleSize( n );
 }
 
-sal_Int32 VCLXScrollBar::getVisibleSize() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXScrollBar::getVisibleSize()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3197,7 +3192,7 @@ sal_Int32 VCLXScrollBar::getVisibleSize() throw(::com::sun::star::uno::RuntimeEx
 	return pScrollBar ? pScrollBar->GetVisibleSize() : 0;
 }
 
-void VCLXScrollBar::setOrientation( sal_Int32 n ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setOrientation( sal_Int32 n )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3216,7 +3211,7 @@ void VCLXScrollBar::setOrientation( sal_Int32 n ) throw(::com::sun::star::uno::R
 	}
 }
 
-sal_Int32 VCLXScrollBar::getOrientation() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXScrollBar::getOrientation()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3235,7 +3230,7 @@ sal_Int32 VCLXScrollBar::getOrientation() throw(::com::sun::star::uno::RuntimeEx
 }
 
 // ::com::sun::star::awt::VclWindowPeer
-void VCLXScrollBar::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXScrollBar::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3350,7 +3345,7 @@ void VCLXScrollBar::setProperty( const ::rtl::OUString& PropertyName, const ::co
 	}
 }
 
-::com::sun::star::uno::Any VCLXScrollBar::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXScrollBar::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3468,13 +3463,13 @@ void VCLXScrollBar::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 	}
 }
 
-::com::sun::star::awt::Size SAL_CALL VCLXScrollBar::implGetMinimumSize( Window* p ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size SAL_CALL VCLXScrollBar::implGetMinimumSize( Window* p )
 {
     long n = p->GetSettings().GetStyleSettings().GetScrollBarSize();
     return ::com::sun::star::awt::Size( n, n );
 }
 
-::com::sun::star::awt::Size SAL_CALL VCLXScrollBar::getMinimumSize() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size SAL_CALL VCLXScrollBar::getMinimumSize()
 {
 	::vos::OGuard aGuard( GetMutex() );
     return implGetMinimumSize( GetWindow() );
@@ -3525,7 +3520,7 @@ VCLXEdit::VCLXEdit() : maTextListeners( *this )
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXEdit::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXEdit::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XTextComponent*, this ),
@@ -3547,7 +3542,7 @@ IMPL_XTYPEPROVIDER_END
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXEdit::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::dispose()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3557,19 +3552,19 @@ void VCLXEdit::dispose() throw(::com::sun::star::uno::RuntimeException)
 	VCLXWindow::dispose();
 }
 
-void VCLXEdit::addTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::addTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	GetTextListeners().addInterface( l );
 }
 
-void VCLXEdit::removeTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::removeTextListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTextListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	GetTextListeners().removeInterface( l );
 }
 
-void VCLXEdit::setText( const ::rtl::OUString& aText ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::setText( const ::rtl::OUString& aText )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3586,7 +3581,7 @@ void VCLXEdit::setText( const ::rtl::OUString& aText ) throw(::com::sun::star::u
 	}
 }
 
-void VCLXEdit::insertText( const ::com::sun::star::awt::Selection& rSel, const ::rtl::OUString& aText ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::insertText( const ::com::sun::star::awt::Selection& rSel, const ::rtl::OUString& aText )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3604,7 +3599,7 @@ void VCLXEdit::insertText( const ::com::sun::star::awt::Selection& rSel, const :
 	}
 }
 
-::rtl::OUString VCLXEdit::getText() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXEdit::getText()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3615,7 +3610,7 @@ void VCLXEdit::insertText( const ::com::sun::star::awt::Selection& rSel, const :
 	return aText;
 }
 
-::rtl::OUString VCLXEdit::getSelectedText() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXEdit::getSelectedText()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3627,7 +3622,7 @@ void VCLXEdit::insertText( const ::com::sun::star::awt::Selection& rSel, const :
 
 }
 
-void VCLXEdit::setSelection( const ::com::sun::star::awt::Selection& aSelection ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::setSelection( const ::com::sun::star::awt::Selection& aSelection )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3636,7 +3631,7 @@ void VCLXEdit::setSelection( const ::com::sun::star::awt::Selection& aSelection 
 		pEdit->SetSelection( Selection( aSelection.Min, aSelection.Max ) );
 }
 
-::com::sun::star::awt::Selection VCLXEdit::getSelection() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Selection VCLXEdit::getSelection()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3647,7 +3642,7 @@ void VCLXEdit::setSelection( const ::com::sun::star::awt::Selection& aSelection 
 	return ::com::sun::star::awt::Selection( aSel.Min(), aSel.Max() );
 }
 
-sal_Bool VCLXEdit::isEditable() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXEdit::isEditable()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3655,7 +3650,7 @@ sal_Bool VCLXEdit::isEditable() throw(::com::sun::star::uno::RuntimeException)
 	return ( pEdit && !pEdit->IsReadOnly() && pEdit->IsEnabled() ) ? sal_True : sal_False;
 }
 
-void VCLXEdit::setEditable( sal_Bool bEditable ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::setEditable( sal_Bool bEditable )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3665,7 +3660,7 @@ void VCLXEdit::setEditable( sal_Bool bEditable ) throw(::com::sun::star::uno::Ru
 }
 
 
-void VCLXEdit::setMaxTextLen( sal_Int16 nLen ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::setMaxTextLen( sal_Int16 nLen )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3674,7 +3669,7 @@ void VCLXEdit::setMaxTextLen( sal_Int16 nLen ) throw(::com::sun::star::uno::Runt
 		pEdit->SetMaxTextLen( nLen );
 }
 
-sal_Int16 VCLXEdit::getMaxTextLen() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXEdit::getMaxTextLen()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3682,7 +3677,7 @@ sal_Int16 VCLXEdit::getMaxTextLen() throw(::com::sun::star::uno::RuntimeExceptio
 	return pEdit ? pEdit->GetMaxTextLen() : 0;
 }
 
-void VCLXEdit::setEchoChar( sal_Unicode cEcho ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::setEchoChar( sal_Unicode cEcho )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3691,7 +3686,7 @@ void VCLXEdit::setEchoChar( sal_Unicode cEcho ) throw(::com::sun::star::uno::Run
 		pEdit->SetEchoChar( cEcho );
 }
 
-void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3736,7 +3731,7 @@ void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::su
 	}
 }
 
-::com::sun::star::uno::Any VCLXEdit::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXEdit::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3768,7 +3763,7 @@ void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::su
 	return aProp;
 }
 
-::com::sun::star::awt::Size VCLXEdit::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXEdit::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3779,7 +3774,7 @@ void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::su
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXEdit::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXEdit::getPreferredSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3793,7 +3788,7 @@ void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::su
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXEdit::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXEdit::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3805,7 +3800,7 @@ void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::su
 	return aSz;
 }
 
-::com::sun::star::awt::Size VCLXEdit::getMinimumSize( sal_Int16 nCols, sal_Int16 ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXEdit::getMinimumSize( sal_Int16 nCols, sal_Int16 )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3821,7 +3816,7 @@ void VCLXEdit::setProperty( const ::rtl::OUString& PropertyName, const ::com::su
 	return AWTSize(aSz);
 }
 
-void VCLXEdit::getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLines ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXEdit::getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLines )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3916,7 +3911,7 @@ VCLXComboBox::~VCLXComboBox()
     return getAccessibleFactory().createAccessibleContext( this );
 }
 
-void VCLXComboBox::dispose() throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::dispose()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3928,31 +3923,31 @@ void VCLXComboBox::dispose() throw(::com::sun::star::uno::RuntimeException)
 }
 
 
-void VCLXComboBox::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.addInterface( l );
 }
 
-void VCLXComboBox::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::removeItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maItemListeners.removeInterface( l );
 }
 
-void VCLXComboBox::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::addActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.addInterface( l );
 }
 
-void VCLXComboBox::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::removeActionListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XActionListener > & l )
 {
 	::vos::OGuard aGuard( GetMutex() );
 	maActionListeners.removeInterface( l );
 }
 
-void VCLXComboBox::addItem( const ::rtl::OUString& aItem, sal_Int16 nPos ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::addItem( const ::rtl::OUString& aItem, sal_Int16 nPos )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3961,7 +3956,7 @@ void VCLXComboBox::addItem( const ::rtl::OUString& aItem, sal_Int16 nPos ) throw
 		pBox->InsertEntry( aItem, nPos );
 }
 
-void VCLXComboBox::addItems( const ::com::sun::star::uno::Sequence< ::rtl::OUString>& aItems, sal_Int16 nPos ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::addItems( const ::com::sun::star::uno::Sequence< ::rtl::OUString>& aItems, sal_Int16 nPos )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3982,7 +3977,7 @@ void VCLXComboBox::addItems( const ::com::sun::star::uno::Sequence< ::rtl::OUStr
 	}
 }
 
-void VCLXComboBox::removeItems( sal_Int16 nPos, sal_Int16 nCount ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::removeItems( sal_Int16 nPos, sal_Int16 nCount )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -3994,7 +3989,7 @@ void VCLXComboBox::removeItems( sal_Int16 nPos, sal_Int16 nCount ) throw(::com::
 	}
 }
 
-sal_Int16 VCLXComboBox::getItemCount() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXComboBox::getItemCount()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4002,7 +3997,7 @@ sal_Int16 VCLXComboBox::getItemCount() throw(::com::sun::star::uno::RuntimeExcep
 	return pBox ? pBox->GetEntryCount() : 0;
 }
 
-::rtl::OUString VCLXComboBox::getItem( sal_Int16 nPos ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXComboBox::getItem( sal_Int16 nPos )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4013,7 +4008,7 @@ sal_Int16 VCLXComboBox::getItemCount() throw(::com::sun::star::uno::RuntimeExcep
 	return aItem;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString> VCLXComboBox::getItems() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString> VCLXComboBox::getItems()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4032,7 +4027,7 @@ sal_Int16 VCLXComboBox::getItemCount() throw(::com::sun::star::uno::RuntimeExcep
 	return aSeq;
 }
 
-void VCLXComboBox::setDropDownLineCount( sal_Int16 nLines ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::setDropDownLineCount( sal_Int16 nLines )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4041,7 +4036,7 @@ void VCLXComboBox::setDropDownLineCount( sal_Int16 nLines ) throw(::com::sun::st
 		pBox->SetDropDownLineCount( nLines );
 }
 
-sal_Int16 VCLXComboBox::getDropDownLineCount() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXComboBox::getDropDownLineCount()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4052,7 +4047,7 @@ sal_Int16 VCLXComboBox::getDropDownLineCount() throw(::com::sun::star::uno::Runt
 	return nLines;
 }
 
-void VCLXComboBox::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4108,7 +4103,7 @@ void VCLXComboBox::setProperty( const ::rtl::OUString& PropertyName, const ::com
 	}
 }
 
-::com::sun::star::uno::Any VCLXComboBox::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXComboBox::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4196,7 +4191,7 @@ void VCLXComboBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 	}
 }
 
-::com::sun::star::awt::Size VCLXComboBox::getMinimumSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXComboBox::getMinimumSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4207,7 +4202,7 @@ void VCLXComboBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXComboBox::getPreferredSize(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXComboBox::getPreferredSize(  )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4222,7 +4217,7 @@ void VCLXComboBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXComboBox::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXComboBox::calcAdjustedSize( const ::com::sun::star::awt::Size& rNewSize )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4233,7 +4228,7 @@ void VCLXComboBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 	return AWTSize(aSz);
 }
 
-::com::sun::star::awt::Size VCLXComboBox::getMinimumSize( sal_Int16 nCols, sal_Int16 nLines ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Size VCLXComboBox::getMinimumSize( sal_Int16 nCols, sal_Int16 nLines )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4244,7 +4239,7 @@ void VCLXComboBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 	return AWTSize(aSz);
 }
 
-void VCLXComboBox::getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLines ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXComboBox::getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLines )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4258,7 +4253,7 @@ void VCLXComboBox::getColumnsAndLines( sal_Int16& nCols, sal_Int16& nLines ) thr
 		nLines = nL;
 	}
 }
-void SAL_CALL VCLXComboBox::listItemInserted( const ItemListEvent& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXComboBox::listItemInserted( const ItemListEvent& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4273,7 +4268,7 @@ void SAL_CALL VCLXComboBox::listItemInserted( const ItemListEvent& i_rEvent ) th
         i_rEvent.ItemPosition );
 }
 
-void SAL_CALL VCLXComboBox::listItemRemoved( const ItemListEvent& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXComboBox::listItemRemoved( const ItemListEvent& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4286,7 +4281,7 @@ void SAL_CALL VCLXComboBox::listItemRemoved( const ItemListEvent& i_rEvent ) thr
     pComboBox->RemoveEntry( i_rEvent.ItemPosition );
 }
 
-void SAL_CALL VCLXComboBox::listItemModified( const ItemListEvent& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXComboBox::listItemModified( const ItemListEvent& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4305,7 +4300,7 @@ void SAL_CALL VCLXComboBox::listItemModified( const ItemListEvent& i_rEvent ) th
     pComboBox->InsertEntry( sNewText, aNewImage, i_rEvent.ItemPosition );
 }
 
-void SAL_CALL VCLXComboBox::allItemsRemoved( const EventObject& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXComboBox::allItemsRemoved( const EventObject& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4317,7 +4312,7 @@ void SAL_CALL VCLXComboBox::allItemsRemoved( const EventObject& i_rEvent ) throw
     (void)i_rEvent;
 }
 
-void SAL_CALL VCLXComboBox::itemListChanged( const EventObject& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXComboBox::itemListChanged( const EventObject& i_rEvent )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4351,7 +4346,7 @@ void SAL_CALL VCLXComboBox::itemListChanged( const EventObject& i_rEvent ) throw
         pComboBox->InsertEntry( aLocalizationKey, lcl_getImageFromURL( aItems[i].Second ) );
     }
 }
-void SAL_CALL VCLXComboBox::disposing( const EventObject& i_rEvent ) throw (RuntimeException)
+void SAL_CALL VCLXComboBox::disposing( const EventObject& i_rEvent )
 {
     // just disambiguate
     VCLXEdit::disposing( i_rEvent );
@@ -4392,7 +4387,7 @@ sal_Bool VCLXFormattedSpinField::isStrictFormat()
 }
 
 
-void VCLXFormattedSpinField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXFormattedSpinField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4431,7 +4426,7 @@ void VCLXFormattedSpinField::setProperty( const ::rtl::OUString& PropertyName, c
 	}
 }
 
-::com::sun::star::uno::Any VCLXFormattedSpinField::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXFormattedSpinField::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4523,7 +4518,7 @@ VCLXDateField::~VCLXDateField()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXDateField::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXDateField::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XDateField*, this ) );
@@ -4536,7 +4531,7 @@ IMPL_XTYPEPROVIDER_START( VCLXDateField )
 	VCLXFormattedSpinField::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void VCLXDateField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4605,7 +4600,7 @@ void VCLXDateField::setProperty( const ::rtl::OUString& PropertyName, const ::co
 	}
 }
 
-::com::sun::star::uno::Any VCLXDateField::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXDateField::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4651,7 +4646,7 @@ void VCLXDateField::setProperty( const ::rtl::OUString& PropertyName, const ::co
 }
 
 
-void VCLXDateField::setDate( sal_Int32 nDate ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setDate( sal_Int32 nDate )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4668,7 +4663,7 @@ void VCLXDateField::setDate( sal_Int32 nDate ) throw(::com::sun::star::uno::Runt
     }
 }
 
-sal_Int32 VCLXDateField::getDate() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXDateField::getDate()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4680,7 +4675,7 @@ sal_Int32 VCLXDateField::getDate() throw(::com::sun::star::uno::RuntimeException
 	return nDate;
 }
 
-void VCLXDateField::setMin( sal_Int32 nDate ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setMin( sal_Int32 nDate )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4689,7 +4684,7 @@ void VCLXDateField::setMin( sal_Int32 nDate ) throw(::com::sun::star::uno::Runti
 		pDateField->SetMin( nDate );
 }
 
-sal_Int32 VCLXDateField::getMin() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXDateField::getMin()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4701,7 +4696,7 @@ sal_Int32 VCLXDateField::getMin() throw(::com::sun::star::uno::RuntimeException)
 	return nDate;
 }
 
-void VCLXDateField::setMax( sal_Int32 nDate ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setMax( sal_Int32 nDate )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4710,7 +4705,7 @@ void VCLXDateField::setMax( sal_Int32 nDate ) throw(::com::sun::star::uno::Runti
 		pDateField->SetMax( nDate );
 }
 
-sal_Int32 VCLXDateField::getMax() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXDateField::getMax()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4722,7 +4717,7 @@ sal_Int32 VCLXDateField::getMax() throw(::com::sun::star::uno::RuntimeException)
 	return nDate;
 }
 
-void VCLXDateField::setFirst( sal_Int32 nDate ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setFirst( sal_Int32 nDate )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4731,7 +4726,7 @@ void VCLXDateField::setFirst( sal_Int32 nDate ) throw(::com::sun::star::uno::Run
 		pDateField->SetFirst( nDate );
 }
 
-sal_Int32 VCLXDateField::getFirst() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXDateField::getFirst()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4743,7 +4738,7 @@ sal_Int32 VCLXDateField::getFirst() throw(::com::sun::star::uno::RuntimeExceptio
 	return nDate;
 }
 
-void VCLXDateField::setLast( sal_Int32 nDate ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setLast( sal_Int32 nDate )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4752,7 +4747,7 @@ void VCLXDateField::setLast( sal_Int32 nDate ) throw(::com::sun::star::uno::Runt
 		pDateField->SetLast( nDate );
 }
 
-sal_Int32 VCLXDateField::getLast() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXDateField::getLast()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4764,7 +4759,7 @@ sal_Int32 VCLXDateField::getLast() throw(::com::sun::star::uno::RuntimeException
 	return nDate;
 }
 
-void VCLXDateField::setLongFormat( sal_Bool bLong ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setLongFormat( sal_Bool bLong )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4773,7 +4768,7 @@ void VCLXDateField::setLongFormat( sal_Bool bLong ) throw(::com::sun::star::uno:
 		pDateField->SetLongFormat( bLong );
 }
 
-sal_Bool VCLXDateField::isLongFormat() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXDateField::isLongFormat()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4781,7 +4776,7 @@ sal_Bool VCLXDateField::isLongFormat() throw(::com::sun::star::uno::RuntimeExcep
 	return pDateField ? pDateField->IsLongFormat() : sal_False;
 }
 
-void VCLXDateField::setEmpty() throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setEmpty()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4798,7 +4793,7 @@ void VCLXDateField::setEmpty() throw(::com::sun::star::uno::RuntimeException)
     }
 }
 
-sal_Bool VCLXDateField::isEmpty() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXDateField::isEmpty()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4806,12 +4801,12 @@ sal_Bool VCLXDateField::isEmpty() throw(::com::sun::star::uno::RuntimeException)
 	return pDateField ? pDateField->IsEmptyDate() : sal_False;
 }
 
-void VCLXDateField::setStrictFormat( sal_Bool bStrict ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDateField::setStrictFormat( sal_Bool bStrict )
 {
 	VCLXFormattedSpinField::setStrictFormat( bStrict );
 }
 
-sal_Bool VCLXDateField::isStrictFormat() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXDateField::isStrictFormat()
 {
 	return VCLXFormattedSpinField::isStrictFormat();
 }
@@ -4875,7 +4870,7 @@ VCLXTimeField::~VCLXTimeField()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXTimeField::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXTimeField::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XTimeField*, this ) );
@@ -4888,7 +4883,7 @@ IMPL_XTYPEPROVIDER_START( VCLXTimeField )
 	VCLXFormattedSpinField::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void VCLXTimeField::setTime( sal_Int32 nTime ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setTime( sal_Int32 nTime )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4905,7 +4900,7 @@ void VCLXTimeField::setTime( sal_Int32 nTime ) throw(::com::sun::star::uno::Runt
     }
 }
 
-sal_Int32 VCLXTimeField::getTime() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXTimeField::getTime()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4917,7 +4912,7 @@ sal_Int32 VCLXTimeField::getTime() throw(::com::sun::star::uno::RuntimeException
 	return nTime;
 }
 
-void VCLXTimeField::setMin( sal_Int32 nTime ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setMin( sal_Int32 nTime )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4926,7 +4921,7 @@ void VCLXTimeField::setMin( sal_Int32 nTime ) throw(::com::sun::star::uno::Runti
 		pTimeField->SetMin( nTime );
 }
 
-sal_Int32 VCLXTimeField::getMin() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXTimeField::getMin()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4938,7 +4933,7 @@ sal_Int32 VCLXTimeField::getMin() throw(::com::sun::star::uno::RuntimeException)
 	return nTime;
 }
 
-void VCLXTimeField::setMax( sal_Int32 nTime ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setMax( sal_Int32 nTime )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4947,7 +4942,7 @@ void VCLXTimeField::setMax( sal_Int32 nTime ) throw(::com::sun::star::uno::Runti
 		pTimeField->SetMax( nTime );
 }
 
-sal_Int32 VCLXTimeField::getMax() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXTimeField::getMax()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4959,7 +4954,7 @@ sal_Int32 VCLXTimeField::getMax() throw(::com::sun::star::uno::RuntimeException)
 	return nTime;
 }
 
-void VCLXTimeField::setFirst( sal_Int32 nTime ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setFirst( sal_Int32 nTime )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4968,7 +4963,7 @@ void VCLXTimeField::setFirst( sal_Int32 nTime ) throw(::com::sun::star::uno::Run
 		pTimeField->SetFirst( nTime );
 }
 
-sal_Int32 VCLXTimeField::getFirst() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXTimeField::getFirst()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4980,7 +4975,7 @@ sal_Int32 VCLXTimeField::getFirst() throw(::com::sun::star::uno::RuntimeExceptio
 	return nTime;
 }
 
-void VCLXTimeField::setLast( sal_Int32 nTime ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setLast( sal_Int32 nTime )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -4989,7 +4984,7 @@ void VCLXTimeField::setLast( sal_Int32 nTime ) throw(::com::sun::star::uno::Runt
 		pTimeField->SetLast( nTime );
 }
 
-sal_Int32 VCLXTimeField::getLast() throw(::com::sun::star::uno::RuntimeException)
+sal_Int32 VCLXTimeField::getLast()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5001,7 +4996,7 @@ sal_Int32 VCLXTimeField::getLast() throw(::com::sun::star::uno::RuntimeException
 	return nTime;
 }
 
-void VCLXTimeField::setEmpty() throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setEmpty()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5010,7 +5005,7 @@ void VCLXTimeField::setEmpty() throw(::com::sun::star::uno::RuntimeException)
 		pTimeField->SetEmptyTime();
 }
 
-sal_Bool VCLXTimeField::isEmpty() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXTimeField::isEmpty()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5018,18 +5013,18 @@ sal_Bool VCLXTimeField::isEmpty() throw(::com::sun::star::uno::RuntimeException)
 	return pTimeField ? pTimeField->IsEmptyTime() : sal_False;
 }
 
-void VCLXTimeField::setStrictFormat( sal_Bool bStrict ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setStrictFormat( sal_Bool bStrict )
 {
 	VCLXFormattedSpinField::setStrictFormat( bStrict );
 }
 
-sal_Bool VCLXTimeField::isStrictFormat() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXTimeField::isStrictFormat()
 {
 	return VCLXFormattedSpinField::isStrictFormat();
 }
 
 
-void VCLXTimeField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXTimeField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5091,7 +5086,7 @@ void VCLXTimeField::setProperty( const ::rtl::OUString& PropertyName, const ::co
 	}
 }
 
-::com::sun::star::uno::Any VCLXTimeField::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXTimeField::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5179,7 +5174,7 @@ VCLXNumericField::~VCLXNumericField()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXNumericField::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXNumericField::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XNumericField*, this ) );
@@ -5192,7 +5187,7 @@ IMPL_XTYPEPROVIDER_START( VCLXNumericField )
 	VCLXFormattedSpinField::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void VCLXNumericField::setValue( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setValue( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5216,7 +5211,7 @@ void VCLXNumericField::setValue( double Value ) throw(::com::sun::star::uno::Run
 	}
 }
 
-double VCLXNumericField::getValue() throw(::com::sun::star::uno::RuntimeException)
+double VCLXNumericField::getValue()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5226,7 +5221,7 @@ double VCLXNumericField::getValue() throw(::com::sun::star::uno::RuntimeExceptio
 		: 0;
 }
 
-void VCLXNumericField::setMin( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setMin( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5236,7 +5231,7 @@ void VCLXNumericField::setMin( double Value ) throw(::com::sun::star::uno::Runti
 			(long)ImplCalcLongValue( Value, pNumericFormatter->GetDecimalDigits() ) );
 }
 
-double VCLXNumericField::getMin() throw(::com::sun::star::uno::RuntimeException)
+double VCLXNumericField::getMin()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5246,7 +5241,7 @@ double VCLXNumericField::getMin() throw(::com::sun::star::uno::RuntimeException)
 		: 0;
 }
 
-void VCLXNumericField::setMax( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setMax( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5256,7 +5251,7 @@ void VCLXNumericField::setMax( double Value ) throw(::com::sun::star::uno::Runti
 			(long)ImplCalcLongValue( Value, pNumericFormatter->GetDecimalDigits() ) );
 }
 
-double VCLXNumericField::getMax() throw(::com::sun::star::uno::RuntimeException)
+double VCLXNumericField::getMax()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5266,7 +5261,7 @@ double VCLXNumericField::getMax() throw(::com::sun::star::uno::RuntimeException)
 		: 0;
 }
 
-void VCLXNumericField::setFirst( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setFirst( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5276,7 +5271,7 @@ void VCLXNumericField::setFirst( double Value ) throw(::com::sun::star::uno::Run
 			(long)ImplCalcLongValue( Value, pNumericField->GetDecimalDigits() ) );
 }
 
-double VCLXNumericField::getFirst() throw(::com::sun::star::uno::RuntimeException)
+double VCLXNumericField::getFirst()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5286,7 +5281,7 @@ double VCLXNumericField::getFirst() throw(::com::sun::star::uno::RuntimeExceptio
 		: 0;
 }
 
-void VCLXNumericField::setLast( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setLast( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5296,7 +5291,7 @@ void VCLXNumericField::setLast( double Value ) throw(::com::sun::star::uno::Runt
 			(long)ImplCalcLongValue( Value, pNumericField->GetDecimalDigits() ) );
 }
 
-double VCLXNumericField::getLast() throw(::com::sun::star::uno::RuntimeException)
+double VCLXNumericField::getLast()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5306,18 +5301,18 @@ double VCLXNumericField::getLast() throw(::com::sun::star::uno::RuntimeException
 		: 0;
 }
 
-void VCLXNumericField::setStrictFormat( sal_Bool bStrict ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setStrictFormat( sal_Bool bStrict )
 {
 	VCLXFormattedSpinField::setStrictFormat( bStrict );
 }
 
-sal_Bool VCLXNumericField::isStrictFormat() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXNumericField::isStrictFormat()
 {
 	return VCLXFormattedSpinField::isStrictFormat();
 }
 
 
-void VCLXNumericField::setSpinSize( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setSpinSize( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5327,7 +5322,7 @@ void VCLXNumericField::setSpinSize( double Value ) throw(::com::sun::star::uno::
 			(long)ImplCalcLongValue( Value, pNumericField->GetDecimalDigits() ) );
 }
 
-double VCLXNumericField::getSpinSize() throw(::com::sun::star::uno::RuntimeException)
+double VCLXNumericField::getSpinSize()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5337,7 +5332,7 @@ double VCLXNumericField::getSpinSize() throw(::com::sun::star::uno::RuntimeExcep
 		: 0;
 }
 
-void VCLXNumericField::setDecimalDigits( sal_Int16 Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setDecimalDigits( sal_Int16 Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5350,7 +5345,7 @@ void VCLXNumericField::setDecimalDigits( sal_Int16 Value ) throw(::com::sun::sta
    	}
 }
 
-sal_Int16 VCLXNumericField::getDecimalDigits() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXNumericField::getDecimalDigits()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5358,7 +5353,7 @@ sal_Int16 VCLXNumericField::getDecimalDigits() throw(::com::sun::star::uno::Runt
 	return pNumericFormatter ? pNumericFormatter->GetDecimalDigits() : 0;
 }
 
-void VCLXNumericField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXNumericField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5427,7 +5422,7 @@ void VCLXNumericField::setProperty( const ::rtl::OUString& PropertyName, const :
 	}
 }
 
-::com::sun::star::uno::Any VCLXNumericField::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXNumericField::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5518,7 +5513,7 @@ VCLXMetricField::~VCLXMetricField()
 {
 }
 
-MetricFormatter *VCLXMetricField::GetMetricFormatter() throw(::com::sun::star::uno::RuntimeException)
+MetricFormatter *VCLXMetricField::GetMetricFormatter()
 {
     MetricFormatter *pFormatter = (MetricFormatter *) GetFormatter();
     if (!pFormatter)
@@ -5526,7 +5521,7 @@ MetricFormatter *VCLXMetricField::GetMetricFormatter() throw(::com::sun::star::u
     return pFormatter;
 }
 
-MetricField *VCLXMetricField::GetMetricField() throw(::com::sun::star::uno::RuntimeException)
+MetricField *VCLXMetricField::GetMetricField()
 {
     MetricField *pField = (MetricField *) GetWindow();
     if (!pField)
@@ -5535,7 +5530,7 @@ MetricField *VCLXMetricField::GetMetricField() throw(::com::sun::star::uno::Runt
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXMetricField::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXMetricField::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
     ::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
                                                               SAL_STATIC_CAST( ::com::sun::star::awt::XMetricField*, this ) );
@@ -5552,12 +5547,12 @@ IMPL_XTYPEPROVIDER_END
 #define MetricUnitUnoToVcl(a) ((FieldUnit)(a))
 
 #define METRIC_MAP_PAIR(method,parent) \
-    sal_Int64 VCLXMetricField::get##method( sal_Int16 nUnit ) throw (::com::sun::star::uno::RuntimeException) \
+    sal_Int64 VCLXMetricField::get##method( sal_Int16 nUnit ) \
     { \
         ::vos::OGuard aGuard( GetMutex() ); \
         return GetMetric##parent()->Get##method( MetricUnitUnoToVcl( nUnit ) ); \
     } \
-    void VCLXMetricField::set##method( sal_Int64 nValue, sal_Int16 nUnit ) throw (::com::sun::star::uno::RuntimeException) \
+    void VCLXMetricField::set##method( sal_Int64 nValue, sal_Int16 nUnit ) \
     { \
         ::vos::OGuard aGuard( GetMutex() ); \
         GetMetric##parent()->Set##method( nValue, MetricUnitUnoToVcl( nUnit ) ); \
@@ -5570,13 +5565,13 @@ METRIC_MAP_PAIR(Last,  Field)
 
 #undef METRIC_MAP_PAIR
 
-::sal_Int64 VCLXMetricField::getValue( ::sal_Int16 nUnit ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int64 VCLXMetricField::getValue( ::sal_Int16 nUnit )
 {
     ::vos::OGuard aGuard( GetMutex() );
     return GetMetricFormatter()->GetValue( MetricUnitUnoToVcl( nUnit ) );
 }
 
-::sal_Int64 VCLXMetricField::getCorrectedValue( ::sal_Int16 nUnit ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int64 VCLXMetricField::getCorrectedValue( ::sal_Int16 nUnit )
 {
     ::vos::OGuard aGuard( GetMutex() );
     return GetMetricFormatter()->GetCorrectedValue( MetricUnitUnoToVcl( nUnit ) );
@@ -5596,49 +5591,49 @@ void VCLXMetricField::CallListeners()
     }
 }
 
-void VCLXMetricField::setValue( ::sal_Int64 Value, ::sal_Int16 Unit ) throw (::com::sun::star::uno::RuntimeException)
+void VCLXMetricField::setValue( ::sal_Int64 Value, ::sal_Int16 Unit )
 {
     ::vos::OGuard aGuard( GetMutex() );
     GetMetricFormatter()->SetValue( Value, MetricUnitUnoToVcl( Unit ) );
     CallListeners();
 }
 
-void VCLXMetricField::setUserValue( ::sal_Int64 Value, ::sal_Int16 Unit ) throw (::com::sun::star::uno::RuntimeException)
+void VCLXMetricField::setUserValue( ::sal_Int64 Value, ::sal_Int16 Unit )
 {
     ::vos::OGuard aGuard( GetMutex() );
     GetMetricFormatter()->SetUserValue( Value, MetricUnitUnoToVcl( Unit ) );
     CallListeners();
 }
 
-void VCLXMetricField::setStrictFormat( sal_Bool bStrict ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXMetricField::setStrictFormat( sal_Bool bStrict )
 {
     VCLXFormattedSpinField::setStrictFormat( bStrict );
 }
 
-sal_Bool VCLXMetricField::isStrictFormat() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXMetricField::isStrictFormat()
 {
     return VCLXFormattedSpinField::isStrictFormat();
 }
 
-void VCLXMetricField::setSpinSize( sal_Int64 Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXMetricField::setSpinSize( sal_Int64 Value )
 {
     ::vos::OGuard aGuard( GetMutex() );
     GetMetricField()->SetSpinSize( Value );
 }
 
-sal_Int64 VCLXMetricField::getSpinSize() throw(::com::sun::star::uno::RuntimeException)
+sal_Int64 VCLXMetricField::getSpinSize()
 {
     ::vos::OGuard aGuard( GetMutex() );
     return GetMetricField()->GetSpinSize();
 }
 
-void VCLXMetricField::setDecimalDigits( sal_Int16 Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXMetricField::setDecimalDigits( sal_Int16 Value )
 {
     ::vos::OGuard aGuard( GetMutex() );
     GetMetricFormatter()->SetDecimalDigits( Value );
 }
 
-sal_Int16 VCLXMetricField::getDecimalDigits() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXMetricField::getDecimalDigits()
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -5646,7 +5641,7 @@ sal_Int16 VCLXMetricField::getDecimalDigits() throw(::com::sun::star::uno::Runti
     return pNumericFormatter ? pNumericFormatter->GetDecimalDigits() : 0;
 }
 
-void VCLXMetricField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXMetricField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -5692,7 +5687,7 @@ void VCLXMetricField::setProperty( const ::rtl::OUString& PropertyName, const ::
     }
 }
 
-::com::sun::star::uno::Any VCLXMetricField::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXMetricField::getProperty( const ::rtl::OUString& PropertyName )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -5774,7 +5769,7 @@ VCLXCurrencyField::~VCLXCurrencyField()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXCurrencyField::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXCurrencyField::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XCurrencyField*, this ) );
@@ -5787,7 +5782,7 @@ IMPL_XTYPEPROVIDER_START( VCLXCurrencyField )
 	VCLXFormattedSpinField::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void VCLXCurrencyField::setValue( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setValue( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5811,7 +5806,7 @@ void VCLXCurrencyField::setValue( double Value ) throw(::com::sun::star::uno::Ru
 	}
 }
 
-double VCLXCurrencyField::getValue() throw(::com::sun::star::uno::RuntimeException)
+double VCLXCurrencyField::getValue()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5821,7 +5816,7 @@ double VCLXCurrencyField::getValue() throw(::com::sun::star::uno::RuntimeExcepti
 		: 0;
 }
 
-void VCLXCurrencyField::setMin( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setMin( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5831,7 +5826,7 @@ void VCLXCurrencyField::setMin( double Value ) throw(::com::sun::star::uno::Runt
 			ImplCalcLongValue( Value, pCurrencyFormatter->GetDecimalDigits() ) );
 }
 
-double VCLXCurrencyField::getMin() throw(::com::sun::star::uno::RuntimeException)
+double VCLXCurrencyField::getMin()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5841,7 +5836,7 @@ double VCLXCurrencyField::getMin() throw(::com::sun::star::uno::RuntimeException
 		: 0;
 }
 
-void VCLXCurrencyField::setMax( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setMax( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5851,7 +5846,7 @@ void VCLXCurrencyField::setMax( double Value ) throw(::com::sun::star::uno::Runt
 			ImplCalcLongValue( Value, pCurrencyFormatter->GetDecimalDigits() ) );
 }
 
-double VCLXCurrencyField::getMax() throw(::com::sun::star::uno::RuntimeException)
+double VCLXCurrencyField::getMax()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5861,7 +5856,7 @@ double VCLXCurrencyField::getMax() throw(::com::sun::star::uno::RuntimeException
 		: 0;
 }
 
-void VCLXCurrencyField::setFirst( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setFirst( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5871,7 +5866,7 @@ void VCLXCurrencyField::setFirst( double Value ) throw(::com::sun::star::uno::Ru
 			ImplCalcLongValue( Value, pCurrencyField->GetDecimalDigits() ) );
 }
 
-double VCLXCurrencyField::getFirst() throw(::com::sun::star::uno::RuntimeException)
+double VCLXCurrencyField::getFirst()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5881,7 +5876,7 @@ double VCLXCurrencyField::getFirst() throw(::com::sun::star::uno::RuntimeExcepti
 		: 0;
 }
 
-void VCLXCurrencyField::setLast( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setLast( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5891,7 +5886,7 @@ void VCLXCurrencyField::setLast( double Value ) throw(::com::sun::star::uno::Run
 			ImplCalcLongValue( Value, pCurrencyField->GetDecimalDigits() ) );
 }
 
-double VCLXCurrencyField::getLast() throw(::com::sun::star::uno::RuntimeException)
+double VCLXCurrencyField::getLast()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5901,7 +5896,7 @@ double VCLXCurrencyField::getLast() throw(::com::sun::star::uno::RuntimeExceptio
 		: 0;
 }
 
-void VCLXCurrencyField::setSpinSize( double Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setSpinSize( double Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5911,7 +5906,7 @@ void VCLXCurrencyField::setSpinSize( double Value ) throw(::com::sun::star::uno:
 			ImplCalcLongValue( Value, pCurrencyField->GetDecimalDigits() ) );
 }
 
-double VCLXCurrencyField::getSpinSize() throw(::com::sun::star::uno::RuntimeException)
+double VCLXCurrencyField::getSpinSize()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5921,18 +5916,18 @@ double VCLXCurrencyField::getSpinSize() throw(::com::sun::star::uno::RuntimeExce
 		: 0;
 }
 
-void VCLXCurrencyField::setStrictFormat( sal_Bool bStrict ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setStrictFormat( sal_Bool bStrict )
 {
 	VCLXFormattedSpinField::setStrictFormat( bStrict );
 }
 
-sal_Bool VCLXCurrencyField::isStrictFormat() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXCurrencyField::isStrictFormat()
 {
 	return VCLXFormattedSpinField::isStrictFormat();
 }
 
 
-void VCLXCurrencyField::setDecimalDigits( sal_Int16 Value ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setDecimalDigits( sal_Int16 Value )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5945,7 +5940,7 @@ void VCLXCurrencyField::setDecimalDigits( sal_Int16 Value ) throw(::com::sun::st
    	}
 }
 
-sal_Int16 VCLXCurrencyField::getDecimalDigits() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXCurrencyField::getDecimalDigits()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -5953,7 +5948,7 @@ sal_Int16 VCLXCurrencyField::getDecimalDigits() throw(::com::sun::star::uno::Run
 	return pCurrencyFormatter ? pCurrencyFormatter->GetDecimalDigits() : 0;
 }
 
-void VCLXCurrencyField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXCurrencyField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -6029,7 +6024,7 @@ void VCLXCurrencyField::setProperty( const ::rtl::OUString& PropertyName, const 
 	}
 }
 
-::com::sun::star::uno::Any VCLXCurrencyField::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXCurrencyField::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -6122,7 +6117,7 @@ VCLXPatternField::~VCLXPatternField()
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any VCLXPatternField::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXPatternField::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::awt::XPatternField*, this ) );
@@ -6135,7 +6130,7 @@ IMPL_XTYPEPROVIDER_START( VCLXPatternField )
 	VCLXFormattedSpinField::getTypes()
 IMPL_XTYPEPROVIDER_END
 
-void VCLXPatternField::setMasks( const ::rtl::OUString& EditMask, const ::rtl::OUString& LiteralMask ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXPatternField::setMasks( const ::rtl::OUString& EditMask, const ::rtl::OUString& LiteralMask )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -6146,7 +6141,7 @@ void VCLXPatternField::setMasks( const ::rtl::OUString& EditMask, const ::rtl::O
 	}
 }
 
-void VCLXPatternField::getMasks( ::rtl::OUString& EditMask, ::rtl::OUString& LiteralMask ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXPatternField::getMasks( ::rtl::OUString& EditMask, ::rtl::OUString& LiteralMask )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -6158,7 +6153,7 @@ void VCLXPatternField::getMasks( ::rtl::OUString& EditMask, ::rtl::OUString& Lit
 	}
 }
 
-void VCLXPatternField::setString( const ::rtl::OUString& Str ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXPatternField::setString( const ::rtl::OUString& Str )
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -6169,7 +6164,7 @@ void VCLXPatternField::setString( const ::rtl::OUString& Str ) throw(::com::sun:
 	}
 }
 
-::rtl::OUString VCLXPatternField::getString() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXPatternField::getString()
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -6180,17 +6175,17 @@ void VCLXPatternField::setString( const ::rtl::OUString& Str ) throw(::com::sun:
 	return aString;
 }
 
-void VCLXPatternField::setStrictFormat( sal_Bool bStrict ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXPatternField::setStrictFormat( sal_Bool bStrict )
 {
 	VCLXFormattedSpinField::setStrictFormat( bStrict );
 }
 
-sal_Bool VCLXPatternField::isStrictFormat() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXPatternField::isStrictFormat()
 {
 	return VCLXFormattedSpinField::isStrictFormat();
 }
 
-void VCLXPatternField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value) throw(::com::sun::star::uno::RuntimeException)
+void VCLXPatternField::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value)
 {
 	::vos::OGuard aGuard( GetMutex() );
 
@@ -6223,7 +6218,7 @@ void VCLXPatternField::setProperty( const ::rtl::OUString& PropertyName, const :
 	}
 }
 
-::com::sun::star::uno::Any VCLXPatternField::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any VCLXPatternField::getProperty( const ::rtl::OUString& PropertyName )
 {
 	::vos::OGuard aGuard( GetMutex() );
 

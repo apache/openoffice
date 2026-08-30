@@ -49,7 +49,7 @@ Container::emptyVisible ()
 }
 
 uno::Any
-Container::queryInterface( const uno::Type & rType ) throw (uno::RuntimeException)
+Container::queryInterface( const uno::Type & rType )
 {
     uno::Any aRet = Container_Base::queryInterface( rType );
     return aRet.hasValue() ? aRet : PropHelper::queryInterface( rType );
@@ -58,7 +58,6 @@ Container::queryInterface( const uno::Type & rType ) throw (uno::RuntimeExceptio
 void
 Container::allocateChildAt( const uno::Reference< awt::XLayoutConstrains > &xChild,
                             const awt::Rectangle &rArea )
-    throw( uno::RuntimeException )
 {
     uno::Reference< awt::XLayoutContainer > xCont( xChild, uno::UNO_QUERY );
     if ( xCont.is() )

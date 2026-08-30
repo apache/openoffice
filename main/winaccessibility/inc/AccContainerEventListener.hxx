@@ -45,7 +45,7 @@ public:
     virtual ~AccContainerEventListener();
 
     //AccessibleEventListener
-    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent );
 
     //for child changed event
     virtual void SAL_CALL handleChildChangedEvent(Any oldValue, Any newValue);

@@ -54,18 +54,18 @@ public:
 	static const ::com::sun::star::uno::Sequence< sal_Int8 > & getUnoTunnelId() throw();
 
 	// XUnoTunnel
-    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 
 	// ::com::sun::star::xml::sax::XAttributeList
-	virtual sal_Int16 SAL_CALL getLength(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getNameByIndex(sal_Int16 i) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getTypeByIndex(sal_Int16 i) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getTypeByName(const ::rtl::OUString& aName) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getValueByIndex(sal_Int16 i) throw( ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL getValueByName(const ::rtl::OUString& aName) throw( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int16 SAL_CALL getLength(void);
+	virtual ::rtl::OUString SAL_CALL getNameByIndex(sal_Int16 i);
+	virtual ::rtl::OUString SAL_CALL getTypeByIndex(sal_Int16 i);
+	virtual ::rtl::OUString SAL_CALL getTypeByName(const ::rtl::OUString& aName);
+	virtual ::rtl::OUString SAL_CALL getValueByIndex(sal_Int16 i);
+	virtual ::rtl::OUString SAL_CALL getValueByName(const ::rtl::OUString& aName);
 
 	// ::com::sun::star::util::XCloneable
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()	throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
 	// methods that are not contained in any interface
 	void SetValueByIndex( sal_Int16 i, const ::rtl::OUString& rValue );

@@ -75,8 +75,6 @@ uno::Reference< uno::XInterface > SAL_CALL OPackageStructureCreator::impl_static
 //-------------------------------------------------------------------------
 void SAL_CALL OPackageStructureCreator::convertToPackage( const ::rtl::OUString& aFolderUrl,
 														  const uno::Reference< io::XOutputStream >& xTargetStream )
-		throw ( io::IOException,
-				uno::RuntimeException )
 {
 	uno::Reference< ucb::XCommandEnvironment > xComEnv;
 
@@ -171,14 +169,12 @@ void SAL_CALL OPackageStructureCreator::convertToPackage( const ::rtl::OUString&
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL OPackageStructureCreator::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_getStaticImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL OPackageStructureCreator::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_getStaticSupportedServiceNames();
 
@@ -191,7 +187,6 @@ sal_Bool SAL_CALL OPackageStructureCreator::supportsService( const ::rtl::OUStri
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OPackageStructureCreator::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_getStaticSupportedServiceNames();
 }

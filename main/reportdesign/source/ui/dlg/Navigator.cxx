@@ -136,13 +136,13 @@ class NavigatorTree :   public ::cppu::BaseMutex
         inline void setContent(const uno::Reference< uno::XInterface >& _xContent) { m_xContent = _xContent; }
     protected:
         // OPropertyChangeListener
-	    virtual void _propertyChanged(const beans::PropertyChangeEvent& _rEvent) throw( uno::RuntimeException);
+	    virtual void _propertyChanged(const beans::PropertyChangeEvent& _rEvent);
 
         // OContainerListener
-        virtual void _elementInserted( const container::ContainerEvent& _rEvent ) throw(uno::RuntimeException);
-	    virtual void _elementRemoved( const container::ContainerEvent& _Event ) throw(uno::RuntimeException);
-	    virtual void _elementReplaced( const container::ContainerEvent& _rEvent ) throw(uno::RuntimeException);
-	    virtual void _disposing(const lang::EventObject& _rSource) throw( uno::RuntimeException);
+        virtual void _elementInserted( const container::ContainerEvent& _rEvent );
+	    virtual void _elementRemoved( const container::ContainerEvent& _Event );
+	    virtual void _elementReplaced( const container::ContainerEvent& _rEvent );
+	    virtual void _disposing(const lang::EventObject& _rSource);
     };
 
     enum DROP_ACTION        { DA_SCROLLUP, DA_SCROLLDOWN, DA_EXPANDNODE };
@@ -174,10 +174,10 @@ protected:
 	virtual sal_Int8	ExecuteDrop( const ExecuteDropEvent& _rEvt );
 
     // OSelectionChangeListener
-	virtual void _disposing(const lang::EventObject& _rSource) throw( uno::RuntimeException);
+	virtual void _disposing(const lang::EventObject& _rSource);
 
     // OPropertyChangeListener
-	virtual void _propertyChanged(const beans::PropertyChangeEvent& _rEvent) throw( uno::RuntimeException);
+	virtual void _propertyChanged(const beans::PropertyChangeEvent& _rEvent);
 
     // OContainerListener Helper
     void _elementInserted( const container::ContainerEvent& _rEvent );
@@ -191,7 +191,7 @@ public:
     DECL_LINK(OnEntrySelDesel, NavigatorTree*);
     DECL_LINK( OnDropActionTimer, void* );
 
-    virtual void _selectionChanged( const lang::EventObject& aEvent ) throw (uno::RuntimeException);
+    virtual void _selectionChanged( const lang::EventObject& aEvent );
 
     // ITraverseReport
     virtual void traverseReport(const uno::Reference< report::XReportDefinition>& _xReport);
@@ -480,7 +480,7 @@ IMPL_LINK(NavigatorTree, OnEntrySelDesel, NavigatorTree*, /*pThis*/)
     return 0L;
 }
 // -----------------------------------------------------------------------------
-void NavigatorTree::_selectionChanged( const lang::EventObject& aEvent ) throw (uno::RuntimeException)
+void NavigatorTree::_selectionChanged( const lang::EventObject& aEvent )
 {
     m_pSelectionListener->lock();
     uno::Reference< view::XSelectionSupplier> xSelectionSupplier(aEvent.Source,uno::UNO_QUERY);
@@ -664,7 +664,7 @@ void NavigatorTree::traverseDetail(const uno::Reference< report::XSection>& _xSe
     traverseSection(_xSection,pParent,SID_ICON_DETAIL);
 }
 // -----------------------------------------------------------------------------
-void NavigatorTree::_propertyChanged(const beans::PropertyChangeEvent& _rEvent) throw( uno::RuntimeException)
+void NavigatorTree::_propertyChanged(const beans::PropertyChangeEvent& _rEvent)
 {
     uno::Reference< report::XReportDefinition> xReport(_rEvent.Source,uno::UNO_QUERY);
     if ( xReport.is() )
@@ -753,7 +753,7 @@ void NavigatorTree::_elementReplaced( const container::ContainerEvent& _rEvent )
     }
 }
 // -----------------------------------------------------------------------------
-void NavigatorTree::_disposing(const lang::EventObject& _rSource)throw( uno::RuntimeException)
+void NavigatorTree::_disposing(const lang::EventObject& _rSource)
 {
     removeEntry(find(_rSource.Source));
 }
@@ -820,7 +820,7 @@ NavigatorTree::UserData::~UserData()
 }
 // -----------------------------------------------------------------------------
 // OPropertyChangeListener
-void NavigatorTree::UserData::_propertyChanged(const beans::PropertyChangeEvent& _rEvent) throw( uno::RuntimeException)
+void NavigatorTree::UserData::_propertyChanged(const beans::PropertyChangeEvent& _rEvent)
 {
     SvLBoxEntry* pEntry = m_pTree->find(_rEvent.Source);
     OSL_ENSURE(pEntry,"No entry could be found! Why not!");
@@ -866,22 +866,22 @@ void NavigatorTree::UserData::_propertyChanged(const beans::PropertyChangeEvent&
     {}
 }
 // -----------------------------------------------------------------------------
-void NavigatorTree::UserData::_elementInserted( const container::ContainerEvent& _rEvent ) throw(uno::RuntimeException)
+void NavigatorTree::UserData::_elementInserted( const container::ContainerEvent& _rEvent )
 {
     m_pTree->_elementInserted( _rEvent );
 }
 // -----------------------------------------------------------------------------
-void NavigatorTree::UserData::_elementRemoved( const container::ContainerEvent& _rEvent ) throw(uno::RuntimeException)
+void NavigatorTree::UserData::_elementRemoved( const container::ContainerEvent& _rEvent )
 {
     m_pTree->_elementRemoved( _rEvent );
 }
 // -----------------------------------------------------------------------------
-void NavigatorTree::UserData::_elementReplaced( const container::ContainerEvent& _rEvent ) throw(uno::RuntimeException)
+void NavigatorTree::UserData::_elementReplaced( const container::ContainerEvent& _rEvent )
 {
     m_pTree->_elementReplaced( _rEvent );
 }
 // -----------------------------------------------------------------------------
-void NavigatorTree::UserData::_disposing(const lang::EventObject& _rSource) throw( uno::RuntimeException)
+void NavigatorTree::UserData::_disposing(const lang::EventObject& _rSource)
 {
     m_pTree->_disposing( _rSource );
 }

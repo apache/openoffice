@@ -55,7 +55,7 @@ PreviewBase::~PreviewBase()
 //
 //-------------------------------
 
-sal_Int32 SAL_CALL PreviewBase::getTargetColorDepth() throw (RuntimeException)
+sal_Int32 SAL_CALL PreviewBase::getTargetColorDepth()
 {
 	return 0;
 }
@@ -64,7 +64,7 @@ sal_Int32 SAL_CALL PreviewBase::getTargetColorDepth() throw (RuntimeException)
 //
 //-------------------------------
 
-sal_Int32 SAL_CALL PreviewBase::getAvailableWidth() throw (RuntimeException)
+sal_Int32 SAL_CALL PreviewBase::getAvailableWidth()
 {
 	return 0;
 }
@@ -73,7 +73,7 @@ sal_Int32 SAL_CALL PreviewBase::getAvailableWidth() throw (RuntimeException)
 //
 //-------------------------------
 
-sal_Int32 SAL_CALL PreviewBase::getAvailableHeight() throw (RuntimeException)
+sal_Int32 SAL_CALL PreviewBase::getAvailableHeight()
 {
 	return 0;
 }
@@ -83,7 +83,6 @@ sal_Int32 SAL_CALL PreviewBase::getAvailableHeight() throw (RuntimeException)
 //-------------------------------
 
 void SAL_CALL PreviewBase::setImage( sal_Int16 aImageFormat, const ::com::sun::star::uno::Any& aImage )
-	throw (IllegalArgumentException, RuntimeException)
 {
 	if (aImageFormat != ::com::sun::star::ui::dialogs::FilePreviewImageFormats::BITMAP)
 		throw IllegalArgumentException(
@@ -112,7 +111,7 @@ void SAL_CALL PreviewBase::getImage(sal_Int16& aImageFormat,com::sun::star::uno:
 //
 //-------------------------------
 
-sal_Bool SAL_CALL PreviewBase::setShowState( sal_Bool bShowState ) throw (RuntimeException)
+sal_Bool SAL_CALL PreviewBase::setShowState( sal_Bool bShowState )
 {
 	m_bShowState = bShowState;
 	return sal_True;
@@ -122,7 +121,7 @@ sal_Bool SAL_CALL PreviewBase::setShowState( sal_Bool bShowState ) throw (Runtim
 //
 //-------------------------------
 
-sal_Bool SAL_CALL PreviewBase::getShowState() throw (RuntimeException)
+sal_Bool SAL_CALL PreviewBase::getShowState()
 {
 	return sal_False;
 }

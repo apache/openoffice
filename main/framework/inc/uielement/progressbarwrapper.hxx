@@ -67,24 +67,24 @@ class ProgressBarWrapper : public UIElementWrapperBase
         ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > getStatusBar() const;
 
         // wrapped methods of ::com::sun::star::task::XStatusIndicator
-        void start( const ::rtl::OUString& Text, ::sal_Int32 Range ) throw (::com::sun::star::uno::RuntimeException);
-        void end() throw (::com::sun::star::uno::RuntimeException);
-        void setText( const ::rtl::OUString& Text ) throw (::com::sun::star::uno::RuntimeException);
-        void setValue( ::sal_Int32 Value ) throw (::com::sun::star::uno::RuntimeException);
-        void reset() throw (::com::sun::star::uno::RuntimeException);
+        void start( const ::rtl::OUString& Text, ::sal_Int32 Range );
+        void end();
+        void setText( const ::rtl::OUString& Text );
+        void setValue( ::sal_Int32 Value );
+        void reset();
 
         // UNO interfaces
         // XComponent
-        virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL dispose();
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XUpdatable
-        virtual void SAL_CALL update() throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL update();
 
         // XUIElement
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getRealInterface() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getRealInterface();
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	variables

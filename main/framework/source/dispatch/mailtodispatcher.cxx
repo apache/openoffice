@@ -147,7 +147,7 @@ MailToDispatcher::~MailToDispatcher()
 */
 css::uno::Reference< css::frame::XDispatch > SAL_CALL MailToDispatcher::queryDispatch( const css::util::URL&  aURL    ,
                                                                                        const ::rtl::OUString& /*sTarget*/ ,
-                                                                                             sal_Int32        /*nFlags*/  ) throw( css::uno::RuntimeException )
+                                                                                             sal_Int32        /*nFlags*/  )
 {
     css::uno::Reference< css::frame::XDispatch > xDispatcher;
     if (aURL.Complete.compareToAscii(PROTOCOL_VALUE,PROTOCOL_LENGTH)==0)
@@ -163,7 +163,7 @@ css::uno::Reference< css::frame::XDispatch > SAL_CALL MailToDispatcher::queryDis
 
     @modified   02.05.2002 15:27, as96863
 */
-css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL MailToDispatcher::queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor ) throw( css::uno::RuntimeException )
+css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL MailToDispatcher::queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor )
 {
     sal_Int32 nCount = lDescriptor.getLength();
     css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > lDispatcher( nCount );
@@ -193,7 +193,7 @@ css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL Mail
     @modified   30.04.2002 14:15, as96863
 */
 void SAL_CALL MailToDispatcher::dispatch( const css::util::URL&                                  aURL       ,
-                                          const css::uno::Sequence< css::beans::PropertyValue >& lArguments ) throw( css::uno::RuntimeException )
+                                          const css::uno::Sequence< css::beans::PropertyValue >& lArguments )
 {
     // dispatch() is an [oneway] call ... and may our user release his reference to us immediately.
     // So we should hold us self alive till this call ends.
@@ -220,7 +220,7 @@ void SAL_CALL MailToDispatcher::dispatch( const css::util::URL&                 
 */
 void SAL_CALL MailToDispatcher::dispatchWithNotification( const css::util::URL&                                             aURL      ,
                                                           const css::uno::Sequence< css::beans::PropertyValue >&            lArguments,
-                                                          const css::uno::Reference< css::frame::XDispatchResultListener >& xListener ) throw( css::uno::RuntimeException )
+                                                          const css::uno::Reference< css::frame::XDispatchResultListener >& xListener )
 {
     // This class was designed to die by reference. And if user release his reference to us immediately after calling this method
     // we can run into some problems. So we hold us self alive till this method ends.
@@ -262,7 +262,7 @@ void SAL_CALL MailToDispatcher::dispatchWithNotification( const css::util::URL& 
     @modified   30.04.2002 14:49, as96863
 */
 sal_Bool MailToDispatcher::implts_dispatch( const css::util::URL&                                  aURL       ,
-                                            const css::uno::Sequence< css::beans::PropertyValue >& /*lArguments*/ ) throw( css::uno::RuntimeException )
+                                            const css::uno::Sequence< css::beans::PropertyValue >& /*lArguments*/ )
 {
     sal_Bool bSuccess = sal_False;
 
@@ -311,7 +311,7 @@ sal_Bool MailToDispatcher::implts_dispatch( const css::util::URL&               
     @modified   30.04.2002 14:49, as96863
 */
 void SAL_CALL MailToDispatcher::addStatusListener( const css::uno::Reference< css::frame::XStatusListener >& /*xListener*/ ,
-                                                   const css::util::URL&                                     /*aURL*/      ) throw( css::uno::RuntimeException )
+                                                   const css::util::URL&                                     /*aURL*/      )
 {
     // not supported yet
 }
@@ -319,7 +319,7 @@ void SAL_CALL MailToDispatcher::addStatusListener( const css::uno::Reference< cs
 //_________________________________________________________________________________________________________________
 
 void SAL_CALL MailToDispatcher::removeStatusListener( const css::uno::Reference< css::frame::XStatusListener >& /*xListener*/ ,
-                                                      const css::util::URL&                                     /*aURL*/      ) throw( css::uno::RuntimeException )
+                                                      const css::util::URL&                                     /*aURL*/      )
 {
     // not supported yet
 }

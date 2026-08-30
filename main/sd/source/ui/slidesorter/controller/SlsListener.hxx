@@ -101,28 +101,24 @@ public:
 
     //=====  lang::XEventListener  ============================================
     virtual void SAL_CALL
-        disposing (const ::com::sun::star::lang::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const ::com::sun::star::lang::EventObject& rEventObject);
 
 
     //=====  document::XEventListener  ========================================
     virtual void SAL_CALL
         notifyEvent (
-            const ::com::sun::star::document::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::document::EventObject& rEventObject);
 
     //=====  beans::XPropertySetListener  =====================================
     virtual void SAL_CALL
         propertyChange (
-            const com::sun::star::beans::PropertyChangeEvent& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+            const com::sun::star::beans::PropertyChangeEvent& rEvent);
 
     //===== accessibility::XAccessibleEventListener  ==========================
     virtual void SAL_CALL
         notifyEvent (
             const ::com::sun::star::accessibility::AccessibleEventObject&
-            rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+            rEvent);
 
     //===== frame::XFrameActionListener  ======================================
     /** For certain actions the listener connects to a new controller of the
@@ -130,8 +126,7 @@ public:
         in the center pane is replaced by another view shell.
     */
     virtual void SAL_CALL
-        frameAction (const ::com::sun::star::frame::FrameActionEvent& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+        frameAction (const ::com::sun::star::frame::FrameActionEvent& rEvent);
 
     virtual void SAL_CALL disposing (void);
 
@@ -179,8 +174,7 @@ private:
     /** This method throws a DisposedException when the object has already been
         disposed.
     */
-    void ThrowIfDisposed (void)
-        throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void);
 
     DECL_LINK(EventMultiplexerCallback, tools::EventMultiplexerEvent*);
 };

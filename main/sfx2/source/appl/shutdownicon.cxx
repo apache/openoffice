@@ -97,16 +97,16 @@ extern "C" { static void SAL_CALL thisModule() {} }
 class SfxNotificationListener_Impl : public cppu::WeakImplHelper1< XDispatchResultListener >
 {
 public:
-    virtual void SAL_CALL dispatchFinished( const DispatchResultEvent& aEvent ) throw( RuntimeException );
-    virtual void SAL_CALL disposing( const EventObject& aEvent ) throw( RuntimeException );
+    virtual void SAL_CALL dispatchFinished( const DispatchResultEvent& aEvent );
+    virtual void SAL_CALL disposing( const EventObject& aEvent );
 };
 
-void SAL_CALL SfxNotificationListener_Impl::dispatchFinished( const DispatchResultEvent& ) throw( RuntimeException )
+void SAL_CALL SfxNotificationListener_Impl::dispatchFinished( const DispatchResultEvent& )
 {
 	ShutdownIcon::LeaveModalMode();
 }
 
-void SAL_CALL SfxNotificationListener_Impl::disposing( const EventObject& ) throw( RuntimeException )
+void SAL_CALL SfxNotificationListener_Impl::disposing( const EventObject& )
 {
 }
 
@@ -644,7 +644,7 @@ ShutdownIcon* ShutdownIcon::createInstance()
 	return pShutdownIcon;
 }
 
-void ShutdownIcon::init() throw( ::com::sun::star::uno::Exception )
+void ShutdownIcon::init()
 {
 	// access resource system and sfx only protected by solarmutex
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
@@ -672,7 +672,6 @@ void SAL_CALL ShutdownIcon::disposing()
 
 // XEventListener
 void SAL_CALL ShutdownIcon::disposing( const ::com::sun::star::lang::EventObject& )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 }
 
@@ -680,7 +679,6 @@ void SAL_CALL ShutdownIcon::disposing( const ::com::sun::star::lang::EventObject
 
 // XTerminateListener
 void SAL_CALL ShutdownIcon::queryTermination( const ::com::sun::star::lang::EventObject& )
-throw(::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException)
 {
 	::osl::ClearableMutexGuard	aGuard(	m_aMutex );
 
@@ -692,7 +690,6 @@ throw(::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::
 // ---------------------------------------------------------------------------
 
 void SAL_CALL ShutdownIcon::notifyTermination( const ::com::sun::star::lang::EventObject& )
-throw(::com::sun::star::uno::RuntimeException)
 {
 }
 
@@ -700,7 +697,6 @@ throw(::com::sun::star::uno::RuntimeException)
 // ---------------------------------------------------------------------------
 
 void SAL_CALL ShutdownIcon::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any>& aArguments )
-	throw( ::com::sun::star::uno::Exception )
 {
 	::osl::ResettableMutexGuard	aGuard(	m_aMutex );
 
@@ -940,11 +936,6 @@ static const ::sal_Int32 PROPHANDLE_TERMINATEVETOSTATE = 0;
 // XFastPropertySet
 void SAL_CALL ShutdownIcon::setFastPropertyValue(       ::sal_Int32                  nHandle,
                                                   const ::com::sun::star::uno::Any& aValue )
-    throw (::com::sun::star::beans::UnknownPropertyException,
-            ::com::sun::star::beans::PropertyVetoException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::lang::WrappedTargetException,
-            ::com::sun::star::uno::RuntimeException)
 {
     switch(nHandle)
     {
@@ -968,9 +959,6 @@ void SAL_CALL ShutdownIcon::setFastPropertyValue(       ::sal_Int32             
 
 // XFastPropertySet
 ::com::sun::star::uno::Any SAL_CALL ShutdownIcon::getFastPropertyValue( ::sal_Int32 nHandle )
-    throw (::com::sun::star::beans::UnknownPropertyException,
-            ::com::sun::star::lang::WrappedTargetException,
-            ::com::sun::star::uno::RuntimeException)
 {
     ::com::sun::star::uno::Any aValue;
     switch(nHandle)

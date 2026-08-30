@@ -77,8 +77,7 @@ namespace fileaccess {
 
 		virtual com::sun::star::uno::Any SAL_CALL
 		queryInterface(
-			const com::sun::star::uno::Type& rType )
-			throw( com::sun::star::uno::RuntimeException);
+			const com::sun::star::uno::Type& rType );
 
 		virtual void SAL_CALL
 		acquire(
@@ -99,19 +98,15 @@ namespace fileaccess {
 		// XStream
 
 		virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream > SAL_CALL
-		getInputStream(  )
-			throw( com::sun::star::uno::RuntimeException );
+		getInputStream(  );
 
 		virtual com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > SAL_CALL
-		getOutputStream(  )
-			throw( com::sun::star::uno::RuntimeException );
+		getOutputStream(  );
 
 
 		// XTruncate
 
-		virtual void SAL_CALL truncate( void )
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL truncate( void );
 
 
         // XInputStream
@@ -119,96 +114,57 @@ namespace fileaccess {
 		sal_Int32 SAL_CALL
 		readBytes(
 			com::sun::star::uno::Sequence< sal_Int8 >& aData,
-			sal_Int32 nBytesToRead )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException);
+			sal_Int32 nBytesToRead );
 
 		sal_Int32 SAL_CALL
 		readSomeBytes(
 			com::sun::star::uno::Sequence< sal_Int8 >& aData,
-			sal_Int32 nMaxBytesToRead )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException);
+			sal_Int32 nMaxBytesToRead );
 
 
 		void SAL_CALL
 		skipBytes(
-			sal_Int32 nBytesToSkip )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			sal_Int32 nBytesToSkip );
 
 		sal_Int32 SAL_CALL
 		available(
-			void )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			void );
 
 		void SAL_CALL
 		closeInput(
-			void )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			void );
 
         // XSeekable
 
 		void SAL_CALL
 		seek(
-			sal_Int64 location )
-			throw( com::sun::star::lang::IllegalArgumentException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			sal_Int64 location );
 
 		sal_Int64 SAL_CALL
 		getPosition(
-			void )
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			void );
 
 		sal_Int64 SAL_CALL
 		getLength(
-			void )
-			throw( com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			void );
 
 
         // XOutputStream
 
 		void SAL_CALL
-		writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException);
+		writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData );
 
 
 
 		void SAL_CALL
-		flush()
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::BufferSizeExceededException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException);
+		flush();
 
 
         void SAL_CALL
 		closeOutput(
-			void )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			void );
 
-        virtual void SAL_CALL waitForCompletion()
-            throw (
-                com::sun::star::io::IOException,
-                com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL waitForCompletion();
 
 	private:
 
@@ -230,10 +186,7 @@ namespace fileaccess {
 
 		void SAL_CALL
 		closeStream(
-			void )
-			throw( com::sun::star::io::NotConnectedException,
-				   com::sun::star::io::IOException,
-				   com::sun::star::uno::RuntimeException );
+			void );
 
 	};
 

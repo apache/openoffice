@@ -83,13 +83,13 @@ class PanelManager : private ThreadHelpBase // Struct for right initialization o
         //---------------------------------------------------------------------------------------------------------
 		//  XDockableWindowListener
 		//---------------------------------------------------------------------------------------------------------
-		virtual void SAL_CALL startDocking( const ::com::sun::star::awt::DockingEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::awt::DockingData SAL_CALL docking( const ::com::sun::star::awt::DockingEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL endDocking( const ::com::sun::star::awt::EndDockingEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Bool SAL_CALL prepareToggleFloatingMode( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL toggleFloatingMode( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL closed( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL endPopupMode( const ::com::sun::star::awt::EndPopupModeEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL startDocking( const ::com::sun::star::awt::DockingEvent& e );
+		virtual ::com::sun::star::awt::DockingData SAL_CALL docking( const ::com::sun::star::awt::DockingEvent& e );
+		virtual void SAL_CALL endDocking( const ::com::sun::star::awt::EndDockingEvent& e );
+		virtual sal_Bool SAL_CALL prepareToggleFloatingMode( const ::com::sun::star::lang::EventObject& e );
+		virtual void SAL_CALL toggleFloatingMode( const ::com::sun::star::lang::EventObject& e );
+		virtual void SAL_CALL closed( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL endPopupMode( const ::com::sun::star::awt::EndPopupModeEvent& e );
 
 	private:
 		Panel*                                                 m_aPanels[PANEL_COUNT];

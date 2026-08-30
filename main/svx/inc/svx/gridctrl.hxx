@@ -351,7 +351,7 @@ protected:
 	*/
 	virtual void PostExecuteRowContextMenu(sal_uInt16 nRow, const PopupMenu& rMenu, sal_uInt16 nExecutionResult);
 
-	virtual void DataSourcePropertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt) throw(::com::sun::star::uno::RuntimeException);
+	virtual void DataSourcePropertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt);
 
 	virtual void FieldValueChanged(sal_uInt16 _nId, const ::com::sun::star::beans::PropertyChangeEvent& _evt);
 	virtual void FieldListenerDisposing(sal_uInt16 _nId);

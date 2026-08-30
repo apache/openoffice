@@ -72,7 +72,6 @@ public:
 
 public:
     virtual sal_Int32 SAL_CALL readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 		{
 			nBytesToRead = (nBytesToRead > m_seq.getLength() - nPos ) ?
 				m_seq.getLength() - nPos :
@@ -84,22 +83,18 @@ public:
     virtual sal_Int32 SAL_CALL readSomeBytes(
 		::com::sun::star::uno::Sequence< sal_Int8 >& aData,
 		sal_Int32 nMaxBytesToRead )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 		{
 			return readBytes( aData, nMaxBytesToRead );
 		}
     virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 		{
 			// not implemented
 		}
     virtual sal_Int32 SAL_CALL available(  )
-		throw(NotConnectedException, IOException, RuntimeException)
 		{
 			return m_seq.getLength() - nPos;
 		}
     virtual void SAL_CALL closeInput(  )
-		throw(NotConnectedException, IOException, RuntimeException)
 		{
 			// not needed
 		}
@@ -143,7 +138,7 @@ public:
 	}
 
 public: // Error handler
-    virtual void SAL_CALL error(const Any& aSAXParseException) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL error(const Any& aSAXParseException)
     {
     	printf( "Error !\n" );
     	throw  SAXException(
@@ -151,11 +146,11 @@ public: // Error handler
 			Reference < XInterface >() ,
 			aSAXParseException );
     }
-    virtual void SAL_CALL fatalError(const Any& aSAXParseException) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL fatalError(const Any& aSAXParseException)
     {
     	printf( "Fatal Error !\n" );
     }
-    virtual void SAL_CALL warning(const Any& aSAXParseException) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL warning(const Any& aSAXParseException)
     {
     	printf( "Warning !\n" );
     }
@@ -163,7 +158,7 @@ public: // Error handler
 
 public: // ExtendedDocumentHandler
 
-    virtual void SAL_CALL startDocument(void) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL startDocument(void)
     {
 		m_iElementCount = 0;
 		m_iAttributeCount = 0;
@@ -171,7 +166,7 @@ public: // ExtendedDocumentHandler
 		m_iCharCount=0;
    		printf( "document started\n" );
     }
-    virtual void SAL_CALL endDocument(void) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL endDocument(void)
     {
 		printf( "document finished\n" );
 		printf( "(ElementCount %d),(AttributeCount %d),(WhitespaceCount %d),(CharCount %d)\n",
@@ -180,33 +175,31 @@ public: // ExtendedDocumentHandler
     }
     virtual void SAL_CALL startElement(const OUString& aName,
 							  const Reference< XAttributeList > & xAttribs)
-		throw (SAXException,RuntimeException)
 	{
     	m_iElementCount ++;
     	m_iAttributeCount += xAttribs->getLength();
     }
 
-    virtual void SAL_CALL endElement(const OUString& aName) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL endElement(const OUString& aName)
     {
 		// ignored
     }
 
-    virtual void SAL_CALL characters(const OUString& aChars) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL characters(const OUString& aChars)
     {
     	m_iCharCount += aChars.getLength();
     }
-    virtual void SAL_CALL ignorableWhitespace(const OUString& aWhitespaces) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL ignorableWhitespace(const OUString& aWhitespaces)
     {
 		m_iWhitespaceCount += aWhitespaces.getLength();
     }
 
-    virtual void SAL_CALL processingInstruction(const OUString& aTarget, const OUString& aData) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL processingInstruction(const OUString& aTarget, const OUString& aData)
     {
 		// ignored
     }
 
     virtual void SAL_CALL setDocumentLocator(const Reference< XLocator> & xLocator)
-		throw (SAXException,RuntimeException)
     {
 		// ignored
     }
@@ -214,7 +207,6 @@ public: // ExtendedDocumentHandler
     virtual InputSource SAL_CALL resolveEntity(
 		const OUString& sPublicId,
 		const OUString& sSystemId)
-		throw (SAXException,RuntimeException)
 	{
 		InputSource source;
 		source.sSystemId = sSystemId;
@@ -226,20 +218,20 @@ public: // ExtendedDocumentHandler
 		return source;
 	}
 
-    virtual void SAL_CALL startCDATA(void) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL startCDATA(void)
     {
     }
-    virtual void SAL_CALL endCDATA(void) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL endCDATA(void)
     {
     }
-    virtual void SAL_CALL comment(const OUString& sComment) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL comment(const OUString& sComment)
     {
     }
-    virtual void SAL_CALL unknown(const OUString& sString) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL unknown(const OUString& sString)
     {
     }
 
-	virtual void SAL_CALL allowLineBreak( void) throw (SAXException, RuntimeException )
+	virtual void SAL_CALL allowLineBreak( void)
 	{
 
 	}
@@ -264,12 +256,12 @@ public:
 	~AttributeListImpl();
 
 public:
-    virtual sal_Int16 SAL_CALL getLength(void) throw  (RuntimeException);
-    virtual OUString SAL_CALL getNameByIndex(sal_Int16 i) throw  (RuntimeException);
-    virtual OUString SAL_CALL getTypeByIndex(sal_Int16 i) throw  (RuntimeException);
-    virtual OUString SAL_CALL getTypeByName(const OUString& aName) throw  (RuntimeException);
-    virtual OUString SAL_CALL getValueByIndex(sal_Int16 i) throw  (RuntimeException);
-    virtual OUString SAL_CALL getValueByName(const OUString& aName) throw  (RuntimeException);
+    virtual sal_Int16 SAL_CALL getLength(void);
+    virtual OUString SAL_CALL getNameByIndex(sal_Int16 i);
+    virtual OUString SAL_CALL getTypeByIndex(sal_Int16 i);
+    virtual OUString SAL_CALL getTypeByName(const OUString& aName);
+    virtual OUString SAL_CALL getValueByIndex(sal_Int16 i);
+    virtual OUString SAL_CALL getValueByName(const OUString& aName);
 
 public:
 	void addAttribute( const OUString &sName ,
@@ -311,7 +303,7 @@ struct AttributeListImpl_impl
 
 
 
-sal_Int16 AttributeListImpl::getLength(void) throw  (RuntimeException)
+sal_Int16 AttributeListImpl::getLength(void)
 {
 	return m_pImpl->vecAttribute.size();
 }
@@ -323,7 +315,7 @@ AttributeListImpl::AttributeListImpl( const AttributeListImpl &r )
 	*m_pImpl = *(r.m_pImpl);
 }
 
-OUString AttributeListImpl::getNameByIndex(sal_Int16 i) throw  (RuntimeException)
+OUString AttributeListImpl::getNameByIndex(sal_Int16 i)
 {
 	if( i < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sName;
@@ -332,7 +324,7 @@ OUString AttributeListImpl::getNameByIndex(sal_Int16 i) throw  (RuntimeException
 }
 
 
-OUString AttributeListImpl::getTypeByIndex(sal_Int16 i) throw  (RuntimeException)
+OUString AttributeListImpl::getTypeByIndex(sal_Int16 i)
 {
 	if( i < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sType;
@@ -340,7 +332,7 @@ OUString AttributeListImpl::getTypeByIndex(sal_Int16 i) throw  (RuntimeException
 	return OUString();
 }
 
-OUString AttributeListImpl::getValueByIndex(sal_Int16 i) throw  (RuntimeException)
+OUString AttributeListImpl::getValueByIndex(sal_Int16 i)
 {
 	if( i < m_pImpl->vecAttribute.size() ) {
 		return m_pImpl->vecAttribute[i].sValue;
@@ -349,7 +341,7 @@ OUString AttributeListImpl::getValueByIndex(sal_Int16 i) throw  (RuntimeExceptio
 
 }
 
-OUString AttributeListImpl::getTypeByName( const OUString& sName ) throw  (RuntimeException)
+OUString AttributeListImpl::getTypeByName( const OUString& sName )
 {
 	vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -361,7 +353,7 @@ OUString AttributeListImpl::getTypeByName( const OUString& sName ) throw  (Runti
 	return OUString();
 }
 
-OUString AttributeListImpl::getValueByName(const OUString& sName) throw  (RuntimeException)
+OUString AttributeListImpl::getValueByName(const OUString& sName)
 {
 	vector<struct TagAttribute>::iterator ii = m_pImpl->vecAttribute.begin();
 
@@ -442,12 +434,9 @@ public:
 
 
 public:
-    virtual void SAL_CALL writeBytes(const Sequence< sal_Int8 >& aData)
-		throw  (NotConnectedException, BufferSizeExceededException, RuntimeException);
-    virtual void SAL_CALL flush(void)
-		throw  (NotConnectedException, BufferSizeExceededException, RuntimeException);
-    virtual void SAL_CALL closeOutput(void)
-		throw  (NotConnectedException, BufferSizeExceededException, RuntimeException);
+    virtual void SAL_CALL writeBytes(const Sequence< sal_Int8 >& aData);
+    virtual void SAL_CALL flush(void);
+    virtual void SAL_CALL closeOutput(void);
 private:
 	char m_pcFile[256];
 	FILE *m_f;
@@ -455,7 +444,6 @@ private:
 
 
 void OFileWriter::writeBytes(const Sequence< sal_Int8 >& aData)
-	throw  (NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	if( ! m_f ) {
 		m_f = fopen( m_pcFile , "w" );
@@ -466,13 +454,11 @@ void OFileWriter::writeBytes(const Sequence< sal_Int8 >& aData)
 
 
 void OFileWriter::flush(void)
-	throw  (NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	fflush( m_f );
 }
 
 void OFileWriter::closeOutput(void)
-	throw  (NotConnectedException, BufferSizeExceededException, RuntimeException)
 {
 	fclose( m_f );
 	m_f = 0;

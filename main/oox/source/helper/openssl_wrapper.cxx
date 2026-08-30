@@ -50,7 +50,7 @@ static int error_cb( const char *message, size_t len, void *userData )
     return 1;
 }
 
-void throwOpenSSLException( const char *prefix ) throw ( Exception )
+void throwOpenSSLException( const char *prefix )
 {
     OUStringBuffer buffer;
     buffer.appendAscii( prefix );

@@ -337,7 +337,6 @@ Reference< XConnection > getConnection_allowException(
 //------------------------------------------------------------------------------
 Reference< XConnection> getConnection_withFeedback(const ::rtl::OUString& _rDataSourceName,
 		const ::rtl::OUString& _rUser, const ::rtl::OUString& _rPwd, const Reference< XMultiServiceFactory>& _rxFactory)
-	SAL_THROW ( (SQLException) )
 {
 	Reference< XConnection > xReturn;
 	try
@@ -379,7 +378,7 @@ Reference< XConnection> getConnection(
 }
 
 //------------------------------------------------------------------------------
-Reference< XConnection> getConnection(const Reference< XRowSet>& _rxRowSet) throw (RuntimeException)
+Reference< XConnection> getConnection(const Reference< XRowSet>& _rxRowSet)
 {
 	Reference< XConnection> xReturn;
 	Reference< XPropertySet> xRowSetProps(_rxRowSet, UNO_QUERY);
@@ -394,7 +393,6 @@ Reference< XConnection> getConnection(const Reference< XRowSet>& _rxRowSet) thro
 // not needed anymore, the whole implementation can be moved into ensureRowSetConnection then)
 SharedConnection lcl_connectRowSet(const Reference< XRowSet>& _rxRowSet, const Reference< XMultiServiceFactory>& _rxFactory,
         bool _bSetAsActiveConnection, bool _bAttachAutoDisposer )
-    SAL_THROW ( ( SQLException, WrappedTargetException, RuntimeException ) )
 {
     SharedConnection xConnection;
 
@@ -508,7 +506,7 @@ SharedConnection lcl_connectRowSet(const Reference< XRowSet>& _rxRowSet, const R
 
 //------------------------------------------------------------------------------
 Reference< XConnection> connectRowset(const Reference< XRowSet>& _rxRowSet, const Reference< XMultiServiceFactory>& _rxFactory,
-	sal_Bool _bSetAsActiveConnection )	SAL_THROW ( ( SQLException, WrappedTargetException, RuntimeException ) )
+	sal_Bool _bSetAsActiveConnection )
 {
     SharedConnection xConnection = lcl_connectRowSet( _rxRowSet, _rxFactory, _bSetAsActiveConnection, true );
     return xConnection.getTyped();
@@ -516,7 +514,7 @@ Reference< XConnection> connectRowset(const Reference< XRowSet>& _rxRowSet, cons
 
 //------------------------------------------------------------------------------
 SharedConnection ensureRowSetConnection(const Reference< XRowSet>& _rxRowSet, const Reference< XMultiServiceFactory>& _rxFactory,
-    bool _bUseAutoConnectionDisposer )	SAL_THROW ( ( SQLException, WrappedTargetException, RuntimeException ) )
+    bool _bUseAutoConnectionDisposer )
 {
     return lcl_connectRowSet( _rxRowSet, _rxFactory, true, _bUseAutoConnectionDisposer );
 }
@@ -1304,7 +1302,6 @@ Reference< XDataSource> findDataSource(const Reference< XInterface >& _xParent)
 //------------------------------------------------------------------------------
 ::rtl::OUString getComposedRowSetStatement( const Reference< XPropertySet >& _rxRowSet, const Reference< XMultiServiceFactory>& _rxFactory,
                                    sal_Bool _bUseRowSetFilter, sal_Bool _bUseRowSetOrder, Reference< XSingleSelectQueryComposer >* _pxComposer )
-    SAL_THROW( ( SQLException ) )
 {
     ::rtl::OUString sStatement;
 	try
@@ -1559,7 +1556,7 @@ void showError(const SQLExceptionInfo& _rInfo,
 
 // -------------------------------------------------------------------------
 sal_Bool implUpdateObject(const Reference< XRowUpdate >& _rxUpdatedObject,
-	const sal_Int32 _nColumnIndex, const Any& _rValue) SAL_THROW ( ( SQLException, RuntimeException ) )
+	const sal_Int32 _nColumnIndex, const Any& _rValue)
 {
 	sal_Bool bSuccessfullyReRouted = sal_True;
 	switch (_rValue.getValueTypeClass())
@@ -1652,7 +1649,7 @@ sal_Bool implUpdateObject(const Reference< XRowUpdate >& _rxUpdatedObject,
 }
 // -------------------------------------------------------------------------
 sal_Bool implSetObject(	const Reference< XParameters >& _rxParameters,
-						const sal_Int32 _nColumnIndex, const Any& _rValue) SAL_THROW ( ( SQLException, RuntimeException ) )
+						const sal_Int32 _nColumnIndex, const Any& _rValue)
 {
 	sal_Bool bSuccessfullyReRouted = sal_True;
 	switch (_rValue.getValueTypeClass())
@@ -1758,24 +1755,24 @@ namespace
         OParameterWrapper(const ::std::bit_vector& _aSet,const Reference<XIndexAccess>& _xSource) : m_aSet(_aSet),m_xSource(_xSource){}
     private:
         // ::com::sun::star::container::XElementAccess
-        virtual Type SAL_CALL getElementType() throw(RuntimeException)
+        virtual Type SAL_CALL getElementType()
         {
             return m_xSource->getElementType();
         }
-		virtual sal_Bool SAL_CALL hasElements(  ) throw(RuntimeException)
+		virtual sal_Bool SAL_CALL hasElements(  )
         {
             if ( m_aSet.empty() )
                 return m_xSource->hasElements();
             return (::std::find(m_aSet.begin(),m_aSet.end(),false) != m_aSet.end());
         }
         // ::com::sun::star::container::XIndexAccess
-        virtual sal_Int32 SAL_CALL getCount(  ) throw(RuntimeException)
+        virtual sal_Int32 SAL_CALL getCount(  )
         {
             if ( m_aSet.empty() )
                 return m_xSource->getCount();
             return std_bitset_count(m_aSet.begin(),m_aSet.end(),false);
         }
-        virtual Any SAL_CALL getByIndex( sal_Int32 Index ) throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+        virtual Any SAL_CALL getByIndex( sal_Int32 Index )
         {
             if ( m_aSet.empty() )
                 return m_xSource->getByIndex(Index);
@@ -1900,7 +1897,7 @@ void setObjectWithInfo(const Reference<XParameters>& _xParams,
 					   sal_Int32 parameterIndex,
 					   const Any& x,
 					   sal_Int32 sqlType,
-					   sal_Int32 scale)  throw(SQLException, RuntimeException)
+					   sal_Int32 scale)
 {
 	ORowSetValue aVal;
 	aVal.fill(x);
@@ -1911,7 +1908,7 @@ void setObjectWithInfo(const Reference<XParameters>& _xParams,
 					   sal_Int32 parameterIndex,
 					   const ::connectivity::ORowSetValue& _rValue,
 					   sal_Int32 sqlType,
-					   sal_Int32 scale)  throw(SQLException, RuntimeException)
+					   sal_Int32 scale)
 {
 	if ( _rValue.isNull() )
 		_xParams->setNull(parameterIndex,sqlType);
@@ -2128,7 +2125,7 @@ void release(oslInterlockedCount& _refCount,
 		osl_incrementInterlockedCount( &_refCount );
 }
 
-void checkDisposed(sal_Bool _bThrow) throw ( DisposedException )
+void checkDisposed(sal_Bool _bThrow)
 {
 	if (_bThrow)
 		throw DisposedException();

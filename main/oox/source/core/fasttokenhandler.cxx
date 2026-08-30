@@ -50,7 +50,7 @@ Sequence< OUString > SAL_CALL FastTokenHandler_getSupportedServiceNames()
     return aServiceNames;
 }
 
-Reference< XInterface > SAL_CALL FastTokenHandler_createInstance( const Reference< XComponentContext >& /*rxContext*/ ) throw (Exception)
+Reference< XInterface > SAL_CALL FastTokenHandler_createInstance( const Reference< XComponentContext >& /*rxContext*/ )
 {
     return static_cast< ::cppu::OWeakObject* >( new FastTokenHandler );
 }
@@ -68,12 +68,12 @@ FastTokenHandler::~FastTokenHandler()
 
 // XServiceInfo
 
-OUString SAL_CALL FastTokenHandler::getImplementationName() throw (RuntimeException)
+OUString SAL_CALL FastTokenHandler::getImplementationName()
 {
     return FastTokenHandler_getImplementationName();
 }
 
-sal_Bool SAL_CALL FastTokenHandler::supportsService( const OUString& rServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL FastTokenHandler::supportsService( const OUString& rServiceName )
 {
     Sequence< OUString > aServiceNames = FastTokenHandler_getSupportedServiceNames();
     for( sal_Int32 nIndex = 0, nLength = aServiceNames.getLength(); nIndex < nLength; ++nIndex )
@@ -82,29 +82,29 @@ sal_Bool SAL_CALL FastTokenHandler::supportsService( const OUString& rServiceNam
     return sal_False;
 }
 
-Sequence< OUString > SAL_CALL FastTokenHandler::getSupportedServiceNames() throw (RuntimeException)
+Sequence< OUString > SAL_CALL FastTokenHandler::getSupportedServiceNames()
 {
     return FastTokenHandler_getSupportedServiceNames();
 }
 
 // XFastTokenHandler
 
-sal_Int32 FastTokenHandler::getToken( const OUString& rIdentifier ) throw( RuntimeException )
+sal_Int32 FastTokenHandler::getToken( const OUString& rIdentifier )
 {
     return mrTokenMap.getTokenFromUnicode( rIdentifier );
 }
 
-OUString FastTokenHandler::getIdentifier( sal_Int32 nToken ) throw( RuntimeException )
+OUString FastTokenHandler::getIdentifier( sal_Int32 nToken )
 {
     return mrTokenMap.getUnicodeTokenName( nToken );
 }
 
-Sequence< sal_Int8 > FastTokenHandler::getUTF8Identifier( sal_Int32 nToken ) throw( RuntimeException )
+Sequence< sal_Int8 > FastTokenHandler::getUTF8Identifier( sal_Int32 nToken )
 {
     return mrTokenMap.getUtf8TokenName( nToken );
 }
 
-sal_Int32 FastTokenHandler::getTokenFromUTF8( const Sequence< sal_Int8 >& rIdentifier ) throw( RuntimeException )
+sal_Int32 FastTokenHandler::getTokenFromUTF8( const Sequence< sal_Int8 >& rIdentifier )
 {
     return mrTokenMap.getTokenFromUtf8( rIdentifier );
 }

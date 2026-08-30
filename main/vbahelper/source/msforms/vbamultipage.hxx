@@ -47,14 +47,14 @@ public:
         const css::uno::Reference< css::awt::XControl >& xDialog );
 
    // Attributes
-    virtual sal_Int32 SAL_CALL getValue() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setValue( sal_Int32 _value ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Pages( const css::uno::Any& index ) throw (css::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getValue();
+    virtual void SAL_CALL setValue( sal_Int32 _value );
+    virtual css::uno::Any SAL_CALL Pages( const css::uno::Any& index );
 
     //XHelperInterface
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();
     // XDefaultProperty
-    rtl::OUString SAL_CALL getDefaultPropertyName(  ) throw (css::uno::RuntimeException) { return ::rtl::OUString::createFromAscii("Value"); }
+    rtl::OUString SAL_CALL getDefaultPropertyName(  ) { return ::rtl::OUString::createFromAscii("Value"); }
 };
 #endif //SC_VBA_LABEL_HXX

@@ -70,11 +70,11 @@ namespace dbaui
         }
 
         // XCloseListener
-        virtual void SAL_CALL queryClosing( const EventObject& Source, ::sal_Bool GetsOwnership ) throw (CloseVetoException, RuntimeException);
-        virtual void SAL_CALL notifyClosing( const EventObject& Source ) throw (RuntimeException);
+        virtual void SAL_CALL queryClosing( const EventObject& Source, ::sal_Bool GetsOwnership );
+        virtual void SAL_CALL notifyClosing( const EventObject& Source );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const EventObject& Source) throw (RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& Source);
 
         bool hasOwnership() const { return m_bHasOwnership; }
 
@@ -88,7 +88,7 @@ namespace dbaui
     };
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL CloseListener_Impl::queryClosing( const EventObject& i_source, ::sal_Bool i_deliverOwnership ) throw (CloseVetoException, RuntimeException)
+    void SAL_CALL CloseListener_Impl::queryClosing( const EventObject& i_source, ::sal_Bool i_deliverOwnership )
     {
         (void)i_source;
 
@@ -99,13 +99,13 @@ namespace dbaui
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL CloseListener_Impl::notifyClosing( const EventObject& i_source ) throw (RuntimeException)
+    void SAL_CALL CloseListener_Impl::notifyClosing( const EventObject& i_source )
     {
         (void)i_source;
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL CloseListener_Impl::disposing( const EventObject& i_source ) throw (RuntimeException)
+    void SAL_CALL CloseListener_Impl::disposing( const EventObject& i_source )
     {
         (void)i_source;
     }

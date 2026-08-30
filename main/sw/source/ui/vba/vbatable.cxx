@@ -34,19 +34,19 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-SwVbaTable::SwVbaTable(  const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rDocument, const  uno::Reference< css::text::XTextTable >& xTextTable) throw ( uno::RuntimeException ) : SwVbaTable_BASE( rParent, rContext ), mxTextDocument( rDocument )
+SwVbaTable::SwVbaTable(  const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rDocument, const  uno::Reference< css::text::XTextTable >& xTextTable) : SwVbaTable_BASE( rParent, rContext ), mxTextDocument( rDocument )
 {
     mxTextTable.set( xTextTable, uno::UNO_QUERY_THROW );
 }
 
 uno::Reference< word::XRange > SAL_CALL
-SwVbaTable::Range(  ) throw (script::BasicErrorException, uno::RuntimeException)
+SwVbaTable::Range(  )
 {
     return new SwVbaRange( mxParent, mxContext, mxTextDocument, mxTextTable->getAnchor() );
 }
 
 void SAL_CALL
-SwVbaTable::Select(  ) throw (script::BasicErrorException, uno::RuntimeException)
+SwVbaTable::Select(  )
 {
     uno::Reference< frame::XModel > xModel( mxTextDocument, uno::UNO_QUERY_THROW );
     uno::Reference< frame::XController > xController = xModel->getCurrentController();
@@ -64,14 +64,14 @@ SwVbaTable::Select(  ) throw (script::BasicErrorException, uno::RuntimeException
 }
 
 void SAL_CALL
-SwVbaTable::Delete(  ) throw (script::BasicErrorException, uno::RuntimeException)
+SwVbaTable::Delete(  )
 {
     uno::Reference< table::XTableRows > xRows( mxTextTable->getRows() );
     xRows->removeByIndex( 0, xRows->getCount() );
 }
 
 uno::Reference< word::XRange > SAL_CALL
-SwVbaTable::ConvertToText( const uno::Any& /*Separator*/, const uno::Any& /*NestedTables*/ ) throw (script::BasicErrorException, uno::RuntimeException)
+SwVbaTable::ConvertToText( const uno::Any& /*Separator*/, const uno::Any& /*NestedTables*/ )
 {
     // #FIXME the helper api uses the dreaded dispatch mechanism, holding off
     // implementation while I look for alternative solution
@@ -79,14 +79,14 @@ SwVbaTable::ConvertToText( const uno::Any& /*Separator*/, const uno::Any& /*Nest
 }
 
 rtl::OUString SAL_CALL
-SwVbaTable::getName() throw (uno::RuntimeException)
+SwVbaTable::getName()
 {
     uno::Reference< container::XNamed > xNamed( mxTextTable, uno::UNO_QUERY_THROW );
     return xNamed->getName();
 }
 
 uno::Any SAL_CALL
-SwVbaTable::Borders( const uno::Any& index ) throw (uno::RuntimeException)
+SwVbaTable::Borders( const uno::Any& index )
 {
     uno::Reference< table::XCellRange > aCellRange( mxTextTable, uno::UNO_QUERY_THROW );
     VbaPalette aPalette;

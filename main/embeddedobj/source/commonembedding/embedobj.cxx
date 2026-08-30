@@ -428,10 +428,6 @@ uno::Sequence< sal_Int32 > OCommonEmbeddedObject::GetIntermediateStatesSequence_
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::changeState( sal_Int32 nNewState )
-        throw ( embed::UnreachableStateException,
-                embed::WrongStateException,
-                uno::Exception,
-                uno::RuntimeException )
 {
     RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OCommonEmbeddedObject::changeState" );
 
@@ -502,8 +498,6 @@ void SAL_CALL OCommonEmbeddedObject::changeState( sal_Int32 nNewState )
 
 //----------------------------------------------
 uno::Sequence< sal_Int32 > SAL_CALL OCommonEmbeddedObject::getReachableStates()
-        throw ( embed::WrongStateException,
-                uno::RuntimeException )
 {
     if ( m_bDisposed )
         throw lang::DisposedException(); // TODO
@@ -517,8 +511,6 @@ uno::Sequence< sal_Int32 > SAL_CALL OCommonEmbeddedObject::getReachableStates()
 
 //----------------------------------------------
 sal_Int32 SAL_CALL OCommonEmbeddedObject::getCurrentState()
-        throw ( embed::WrongStateException,
-                uno::RuntimeException )
 {
     if ( m_bDisposed )
         throw lang::DisposedException(); // TODO
@@ -532,11 +524,6 @@ sal_Int32 SAL_CALL OCommonEmbeddedObject::getCurrentState()
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::doVerb( sal_Int32 nVerbID )
-        throw ( lang::IllegalArgumentException,
-                embed::WrongStateException,
-                embed::UnreachableStateException,
-                uno::Exception,
-                uno::RuntimeException )
 {
     RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) OCommonEmbeddedObject::doVerb" );
 
@@ -571,8 +558,6 @@ void SAL_CALL OCommonEmbeddedObject::doVerb( sal_Int32 nVerbID )
 
 //----------------------------------------------
 uno::Sequence< embed::VerbDescriptor > SAL_CALL OCommonEmbeddedObject::getSupportedVerbs()
-        throw ( embed::WrongStateException,
-                uno::RuntimeException )
 {
     if ( m_bDisposed )
         throw lang::DisposedException(); // TODO
@@ -587,8 +572,6 @@ uno::Sequence< embed::VerbDescriptor > SAL_CALL OCommonEmbeddedObject::getSuppor
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::setClientSite(
                 const uno::Reference< embed::XEmbeddedClient >& xClient )
-        throw ( embed::WrongStateException,
-                uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -607,8 +590,6 @@ void SAL_CALL OCommonEmbeddedObject::setClientSite(
 
 //----------------------------------------------
 uno::Reference< embed::XEmbeddedClient > SAL_CALL OCommonEmbeddedObject::getClientSite()
-        throw ( embed::WrongStateException,
-                uno::RuntimeException )
 {
     if ( m_bDisposed )
         throw lang::DisposedException(); // TODO
@@ -622,9 +603,6 @@ uno::Reference< embed::XEmbeddedClient > SAL_CALL OCommonEmbeddedObject::getClie
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::update()
-        throw ( embed::WrongStateException,
-                uno::Exception,
-                uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -640,8 +618,6 @@ void SAL_CALL OCommonEmbeddedObject::update()
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::setUpdateMode( sal_Int32 nMode )
-        throw ( embed::WrongStateException,
-                uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -659,8 +635,6 @@ void SAL_CALL OCommonEmbeddedObject::setUpdateMode( sal_Int32 nMode )
 
 //----------------------------------------------
 sal_Int64 SAL_CALL OCommonEmbeddedObject::getStatus( sal_Int64 )
-        throw ( embed::WrongStateException,
-                uno::RuntimeException )
 {
     if ( m_bDisposed )
         throw lang::DisposedException(); // TODO
@@ -670,7 +644,6 @@ sal_Int64 SAL_CALL OCommonEmbeddedObject::getStatus( sal_Int64 )
 
 //----------------------------------------------
 void SAL_CALL OCommonEmbeddedObject::setContainerName( const ::rtl::OUString& sName )
-        throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( m_bDisposed )
@@ -679,12 +652,12 @@ void SAL_CALL OCommonEmbeddedObject::setContainerName( const ::rtl::OUString& sN
     m_aContainerName = sName;
 }
 
-com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL OCommonEmbeddedObject::getParent() throw (::com::sun::star::uno::RuntimeException)
+com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL OCommonEmbeddedObject::getParent()
 {
     return m_xParent;
 }
 
-void SAL_CALL OCommonEmbeddedObject::setParent( const com::sun::star::uno::Reference< com::sun::star::uno::XInterface >& xParent ) throw (::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL OCommonEmbeddedObject::setParent( const com::sun::star::uno::Reference< com::sun::star::uno::XInterface >& xParent )
 {
     m_xParent = xParent;
     if ( m_nObjectState != -1 && m_nObjectState != embed::EmbedStates::LOADED )
@@ -696,7 +669,7 @@ void SAL_CALL OCommonEmbeddedObject::setParent( const com::sun::star::uno::Refer
 }
 
 // XDefaultSizeTransmitter
-void SAL_CALL OCommonEmbeddedObject::setDefaultSize( const ::com::sun::star::awt::Size& rSize_100TH_MM ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL OCommonEmbeddedObject::setDefaultSize( const ::com::sun::star::awt::Size& rSize_100TH_MM )
 {
     //#i103460# charts do not necessarily have an own size within ODF files, in this case they need to use the size settings from the surrounding frame, which is made available with this method
     m_aDefaultSizeForChart_In_100TH_MM = rSize_100TH_MM;

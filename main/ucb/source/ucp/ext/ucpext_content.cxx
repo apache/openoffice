@@ -186,13 +186,13 @@ namespace ucb { namespace ucp { namespace ext
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL Content::getImplementationName() throw( RuntimeException )
+    ::rtl::OUString SAL_CALL Content::getImplementationName()
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.comp.ucp.ext.Content" ) );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL Content::getSupportedServiceNames() throw( RuntimeException )
+    Sequence< ::rtl::OUString > SAL_CALL Content::getSupportedServiceNames()
     {
         Sequence< ::rtl::OUString > aServiceNames(2);
         aServiceNames[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.ucb.Content" ) );
@@ -201,7 +201,7 @@ namespace ucb { namespace ucp { namespace ext
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL Content::getContentType() throw( RuntimeException )
+    ::rtl::OUString SAL_CALL Content::getContentType()
     {
         impl_determineContentType();
         return *m_aContentType;
@@ -209,7 +209,6 @@ namespace ucb { namespace ucp { namespace ext
 
     //------------------------------------------------------------------------------------------------------------------
     Any SAL_CALL Content::execute( const Command& aCommand, sal_Int32 /* CommandId */, const Reference< XCommandEnvironment >& i_rEvironment )
-        throw( Exception, CommandAbortedException, RuntimeException )
     {
         Any aRet;
 
@@ -301,7 +300,7 @@ namespace ucb { namespace ucp { namespace ext
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL Content::abort( sal_Int32 ) throw( RuntimeException )
+    void SAL_CALL Content::abort( sal_Int32 )
     {
     }
 

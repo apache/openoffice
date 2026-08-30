@@ -1549,7 +1549,7 @@ void ImpEditView::ShowDDCursor( const Rectangle& rRect )
 	}
 }
 
-void ImpEditView::dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& rDGE ) throw (::com::sun::star::uno::RuntimeException)
+void ImpEditView::dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& rDGE )
 {
     DBG_ASSERT( !pDragAndDropInfo, "dragGestureRecognized - DragAndDropInfo exist!" );
 
@@ -1632,7 +1632,7 @@ void ImpEditView::dragGestureRecognized( const ::com::sun::star::datatransfer::d
     }
 }
 
-void ImpEditView::dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& rDSDE ) throw (::com::sun::star::uno::RuntimeException)
+void ImpEditView::dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& rDSDE )
 {
 	vos::OGuard aVclGuard( Application::GetSolarMutex() );
 
@@ -1725,7 +1725,7 @@ void ImpEditView::dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSo
 	}
 }
 
-void ImpEditView::drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& rDTDE ) throw (::com::sun::star::uno::RuntimeException)
+void ImpEditView::drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& rDTDE )
 {
 	vos::OGuard aVclGuard( Application::GetSolarMutex() );
 
@@ -1798,7 +1798,7 @@ void ImpEditView::drop( const ::com::sun::star::datatransfer::dnd::DropTargetDro
     }
 }
 
-void ImpEditView::dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& rDTDEE ) throw (::com::sun::star::uno::RuntimeException)
+void ImpEditView::dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& rDTDEE )
 {
 	vos::OGuard aVclGuard( Application::GetSolarMutex() );
 
@@ -1825,7 +1825,7 @@ void ImpEditView::dragEnter( const ::com::sun::star::datatransfer::dnd::DropTarg
     dragOver( rDTDEE );
 }
 
-void ImpEditView::dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& ) throw (::com::sun::star::uno::RuntimeException)
+void ImpEditView::dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& )
 {
 	vos::OGuard aVclGuard( Application::GetSolarMutex() );
 
@@ -1838,7 +1838,7 @@ void ImpEditView::dragExit( const ::com::sun::star::datatransfer::dnd::DropTarge
 	}
 }
 
-void ImpEditView::dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& rDTDE ) throw (::com::sun::star::uno::RuntimeException)
+void ImpEditView::dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& rDTDE )
 {
     vos::OGuard aVclGuard( Application::GetSolarMutex() );
 

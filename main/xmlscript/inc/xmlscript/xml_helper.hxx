@@ -96,18 +96,12 @@ public:
         ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler > const & xOut );
 
 	// XAttributeList
-	virtual sal_Int16 SAL_CALL getLength()
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getNameByIndex( sal_Int16 nPos )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getTypeByIndex( sal_Int16 nPos )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getTypeByName( ::rtl::OUString const & rName )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getValueByIndex( sal_Int16 nPos )
-		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getValueByName( ::rtl::OUString const & rName )
-		throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int16 SAL_CALL getLength();
+	virtual ::rtl::OUString SAL_CALL getNameByIndex( sal_Int16 nPos );
+	virtual ::rtl::OUString SAL_CALL getTypeByIndex( sal_Int16 nPos );
+	virtual ::rtl::OUString SAL_CALL getTypeByName( ::rtl::OUString const & rName );
+	virtual ::rtl::OUString SAL_CALL getValueByIndex( sal_Int16 nPos );
+	virtual ::rtl::OUString SAL_CALL getValueByName( ::rtl::OUString const & rName );
 
 protected:
 	::rtl::OUString _name;

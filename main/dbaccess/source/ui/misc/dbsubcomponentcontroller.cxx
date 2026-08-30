@@ -226,7 +226,7 @@ namespace dbaui
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL DBSubComponentController::queryInterface(const Type& _rType) throw (RuntimeException)
+    Any SAL_CALL DBSubComponentController::queryInterface(const Type& _rType)
     {
         if ( _rType.equals( XScriptInvocationContext::static_type() ) )
         {
@@ -239,7 +239,7 @@ namespace dbaui
     }
 
     //--------------------------------------------------------------------
-    Sequence< Type > SAL_CALL DBSubComponentController::getTypes(  ) throw (RuntimeException)
+    Sequence< Type > SAL_CALL DBSubComponentController::getTypes(  )
     {
         Sequence< Type > aTypes( DBSubComponentController_Base::getTypes() );
         if ( !m_pImpl->documentHasScriptSupport() )
@@ -374,7 +374,7 @@ namespace dbaui
 	}
 
 	//--------------------------------------------------------------------
-	void SAL_CALL DBSubComponentController::disposing(const EventObject& _rSource) throw( RuntimeException )
+	void SAL_CALL DBSubComponentController::disposing(const EventObject& _rSource)
 	{
         if ( _rSource.Source == getConnection() )
         {
@@ -429,7 +429,7 @@ namespace dbaui
     }
 
 	//--------------------------------------------------------------------
-	sal_Bool SAL_CALL DBSubComponentController::suspend(sal_Bool bSuspend) throw( RuntimeException )
+	sal_Bool SAL_CALL DBSubComponentController::suspend(sal_Bool bSuspend)
 	{
 		m_pImpl->m_bSuspended = bSuspend;
 		if ( !bSuspend && !isConnected() )
@@ -440,7 +440,7 @@ namespace dbaui
 	}
 
     // -----------------------------------------------------------------------------
-    sal_Bool SAL_CALL DBSubComponentController::attachModel( const Reference< XModel > & _rxModel) throw( RuntimeException )
+    sal_Bool SAL_CALL DBSubComponentController::attachModel( const Reference< XModel > & _rxModel)
     {
         if ( !_rxModel.is() )
             return sal_False;
@@ -578,7 +578,6 @@ namespace dbaui
     // -----------------------------------------------------------------------------
     // XTitle
     ::rtl::OUString SAL_CALL DBSubComponentController::getTitle()
-        throw (RuntimeException)
     {
         ::osl::MutexGuard aGuard( getMutex() );
         if ( m_bExternalTitle )
@@ -602,7 +601,7 @@ namespace dbaui
     }
 
     // -----------------------------------------------------------------------------
-    Reference< XEmbeddedScripts > SAL_CALL DBSubComponentController::getScriptContainer() throw (RuntimeException)
+    Reference< XEmbeddedScripts > SAL_CALL DBSubComponentController::getScriptContainer()
     {
         ::osl::MutexGuard aGuard( getMutex() );
         if ( !m_pImpl->documentHasScriptSupport() )
@@ -612,28 +611,28 @@ namespace dbaui
     }
 
     // -----------------------------------------------------------------------------
-    void SAL_CALL DBSubComponentController::addModifyListener( const Reference< XModifyListener >& i_Listener ) throw (RuntimeException)
+    void SAL_CALL DBSubComponentController::addModifyListener( const Reference< XModifyListener >& i_Listener )
     {
         ::osl::MutexGuard aGuard( getMutex() );
         m_pImpl->m_aModifyListeners.addInterface( i_Listener );
     }
 
     // -----------------------------------------------------------------------------
-    void SAL_CALL DBSubComponentController::removeModifyListener( const Reference< XModifyListener >& i_Listener ) throw (RuntimeException)
+    void SAL_CALL DBSubComponentController::removeModifyListener( const Reference< XModifyListener >& i_Listener )
     {
         ::osl::MutexGuard aGuard( getMutex() );
         m_pImpl->m_aModifyListeners.removeInterface( i_Listener );
     }
 
     // -----------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL DBSubComponentController::isModified(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL DBSubComponentController::isModified(  )
     {
         ::osl::MutexGuard aGuard( getMutex() );
         return impl_isModified();
     }
 
     // -----------------------------------------------------------------------------
-    void SAL_CALL DBSubComponentController::setModified( ::sal_Bool i_bModified ) throw (PropertyVetoException, RuntimeException)
+    void SAL_CALL DBSubComponentController::setModified( ::sal_Bool i_bModified )
     {
         ::osl::ClearableMutexGuard aGuard( getMutex() );
 

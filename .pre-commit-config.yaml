@@ -73,7 +73,11 @@ repos:
         name: run codespell
         description: check spelling with codespell
         args: [--ignore-words=.github/linters/codespell.txt]
-        exclude: ^extras/
+        # ext_libraries/**/overlay/ holds VERBATIM third-party sources vendored so
+        # they can be patched (the patches: mechanism is unusable -- Bazel 9.0.1
+        # drops the last entry).  Their spelling is upstream's, and "fixing" it
+        # would be gratuitous divergence in code we do not own.
+        exclude: ^(extras/|ext_libraries/.*/overlay/)
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.47.0
     hooks:

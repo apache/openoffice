@@ -91,28 +91,20 @@ class HelpAgentDispatcher : public  css::lang::XTypeProvider
 
 		// css::frame::XDispatch
 		virtual void SAL_CALL dispatch(const css::util::URL& 								  sURL ,
-									   const css::uno::Sequence< css::beans::PropertyValue >& lArgs)
-			throw(css::uno::RuntimeException);
+									   const css::uno::Sequence< css::beans::PropertyValue >& lArgs);
 		virtual void SAL_CALL addStatusListener(const css::uno::Reference< css::frame::XStatusListener >& xListener,
-											    const css::util::URL& 									  aURL     )
-			throw(css::uno::RuntimeException);
+											    const css::util::URL& 									  aURL     );
 		virtual void SAL_CALL removeStatusListener(const css::uno::Reference< css::frame::XStatusListener >& xListener,
-												   const css::util::URL& 									 aURL     )
-			throw(css::uno::RuntimeException);
+												   const css::util::URL& 									 aURL     );
 
 		// css::awt::XWindowListener
-		virtual void SAL_CALL windowResized(const css::awt::WindowEvent& aSource)
-			throw(css::uno::RuntimeException);
-		virtual void SAL_CALL windowMoved(const css::awt::WindowEvent& aSource)
-			throw(css::uno::RuntimeException);
-		virtual void SAL_CALL windowShown(const css::lang::EventObject& aSource)
-			throw(css::uno::RuntimeException);
-		virtual void SAL_CALL windowHidden(const css::lang::EventObject& aSource)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL windowResized(const css::awt::WindowEvent& aSource);
+		virtual void SAL_CALL windowMoved(const css::awt::WindowEvent& aSource);
+		virtual void SAL_CALL windowShown(const css::lang::EventObject& aSource);
+		virtual void SAL_CALL windowHidden(const css::lang::EventObject& aSource);
 
 		// css::lang::XEventListener
-		virtual void SAL_CALL disposing(const css::lang::EventObject& aSource)
-			throw(css::uno::RuntimeException);
+		virtual void SAL_CALL disposing(const css::lang::EventObject& aSource);
 
 	protected:
 

@@ -154,7 +154,6 @@ class StringLength : public ::cppu::WeakImplHelper1< ::com::sun::star::util::XSt
 
 		// XStringWidth
 		sal_Int32 SAL_CALL queryStringWidth( const ::rtl::OUString& aString )
-			throw (RuntimeException)
 		{
 			return aString.getLength();
 		}
@@ -271,7 +270,7 @@ MenuBarManager::MenuBarManager(
     Init(rFrame,pAddonPopupMenu,bDelete,bDeleteChildren,true);
 }
 
-Any SAL_CALL MenuBarManager::queryInterface( const Type & rType ) throw ( RuntimeException )
+Any SAL_CALL MenuBarManager::queryInterface( const Type & rType )
 {
 	Any a = ::cppu::queryInterface(
 				rType ,
@@ -301,7 +300,7 @@ void SAL_CALL MenuBarManager::release() throw()
 }
 
 
-Any SAL_CALL MenuBarManager::getMenuHandle( const Sequence< sal_Int8 >& /*ProcessId*/, sal_Int16 SystemType ) throw (RuntimeException)
+Any SAL_CALL MenuBarManager::getMenuHandle( const Sequence< sal_Int8 >& /*ProcessId*/, sal_Int16 SystemType )
 {
 	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::getMenuHandle" );
 	ResetableGuard aGuard( m_aLock );
@@ -380,7 +379,7 @@ void MenuBarManager::Destroy()
 }
 
 // XComponent
-void SAL_CALL MenuBarManager::dispose() throw( RuntimeException )
+void SAL_CALL MenuBarManager::dispose()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::dispose" );
     Reference< XComponent > xThis( static_cast< OWeakObject* >(this), UNO_QUERY );
@@ -432,7 +431,7 @@ void SAL_CALL MenuBarManager::dispose() throw( RuntimeException )
     }
 }
 
-void SAL_CALL MenuBarManager::addEventListener( const Reference< XEventListener >& xListener ) throw( RuntimeException )
+void SAL_CALL MenuBarManager::addEventListener( const Reference< XEventListener >& xListener )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::addEventListener" );
 	ResetableGuard aGuard( m_aLock );
@@ -444,7 +443,7 @@ void SAL_CALL MenuBarManager::addEventListener( const Reference< XEventListener 
     m_aListenerContainer.addInterface( ::getCppuType( ( const Reference< XEventListener >* ) NULL ), xListener );
 }
 
-void SAL_CALL MenuBarManager::removeEventListener( const Reference< XEventListener >& xListener ) throw( RuntimeException )
+void SAL_CALL MenuBarManager::removeEventListener( const Reference< XEventListener >& xListener )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::removeEventListener" );
 	ResetableGuard aGuard( m_aLock );
@@ -453,7 +452,6 @@ void SAL_CALL MenuBarManager::removeEventListener( const Reference< XEventListen
 }
 
 void SAL_CALL MenuBarManager::elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event )
-throw (RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::elementInserted" );
 	ResetableGuard aGuard( m_aLock );
@@ -470,14 +468,12 @@ throw (RuntimeException)
 }
 
 void SAL_CALL MenuBarManager::elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event )
-throw (RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::elementRemoved" );
 	elementInserted(Event);
 }
 
 void SAL_CALL MenuBarManager::elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event )
-throw (RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::elementReplaced" );
 	elementInserted(Event);
@@ -485,7 +481,6 @@ throw (RuntimeException)
 
 // XFrameActionListener
 void SAL_CALL MenuBarManager::frameAction( const FrameActionEvent& Action )
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::frameAction" );
     ResetableGuard aGuard( m_aLock );
@@ -507,7 +502,6 @@ throw ( RuntimeException )
 
 // XStatusListener
 void SAL_CALL MenuBarManager::statusChanged( const FeatureStateEvent& Event )
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::statusChanged" );
 	::rtl::OUString aFeatureURL = Event.FeatureURL.Complete;
@@ -726,7 +720,7 @@ void MenuBarManager::RemoveListener()
 	m_xFrame = 0;
 }
 
-void SAL_CALL MenuBarManager::disposing( const EventObject& Source ) throw ( RuntimeException )
+void SAL_CALL MenuBarManager::disposing( const EventObject& Source )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::disposing(evt)" );
     MenuItemHandler* pMenuItemDisposing = NULL;

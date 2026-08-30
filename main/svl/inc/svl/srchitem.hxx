@@ -83,7 +83,7 @@ public:
 
     SvxSearchItem( const sal_uInt16 nId );
 	SvxSearchItem( const SvxSearchItem& rItem );
-	virtual ~SvxSearchItem();
+	virtual ~SvxSearchItem() SAL_THROW( () );
 
 	virtual	sal_Bool        	 QueryValue( com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 ) const;
 	virtual	sal_Bool			 PutValue( const com::sun::star::uno::Any& rVal, sal_uInt8 nMemberId = 0 );

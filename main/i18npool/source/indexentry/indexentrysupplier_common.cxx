@@ -46,29 +46,29 @@ IndexEntrySupplier_Common::~IndexEntrySupplier_Common()
 	delete collator;
 }
 
-Sequence < lang::Locale > SAL_CALL IndexEntrySupplier_Common::getLocaleList() throw (RuntimeException)
+Sequence < lang::Locale > SAL_CALL IndexEntrySupplier_Common::getLocaleList()
 {
     throw RuntimeException();
 }
 
-Sequence < OUString > SAL_CALL IndexEntrySupplier_Common::getAlgorithmList( const lang::Locale& ) throw (RuntimeException)
+Sequence < OUString > SAL_CALL IndexEntrySupplier_Common::getAlgorithmList( const lang::Locale& )
 {
     throw RuntimeException();
 }
 
 OUString SAL_CALL IndexEntrySupplier_Common::getPhoneticCandidate( const OUString&,
-	const lang::Locale& ) throw (RuntimeException)
+	const lang::Locale& )
 {
     return OUString();
 }
 
-sal_Bool SAL_CALL IndexEntrySupplier_Common::usePhoneticEntry( const lang::Locale& ) throw (RuntimeException)
+sal_Bool SAL_CALL IndexEntrySupplier_Common::usePhoneticEntry( const lang::Locale& )
 {
     throw RuntimeException();
 }
 
 sal_Bool SAL_CALL IndexEntrySupplier_Common::loadAlgorithm( const lang::Locale& rLocale,
-	const OUString& rAlgorithm, sal_Int32 collatorOptions ) throw (RuntimeException)
+	const OUString& rAlgorithm, sal_Int32 collatorOptions )
 {
     usePhonetic = LocaleData().isPhonetic(rLocale, rAlgorithm);
     collator->loadCollatorAlgorithm(rAlgorithm, rLocale, collatorOptions);
@@ -78,7 +78,7 @@ sal_Bool SAL_CALL IndexEntrySupplier_Common::loadAlgorithm( const lang::Locale& 
 }
 
 OUString SAL_CALL IndexEntrySupplier_Common::getIndexKey( const OUString& rIndexEntry,
-	const OUString&, const lang::Locale& ) throw (RuntimeException)
+	const OUString&, const lang::Locale& )
 {
     sal_Int32 nPos=0;
     sal_uInt32 indexChar=rIndexEntry.iterateCodePoints(&nPos, 0);
@@ -88,7 +88,6 @@ OUString SAL_CALL IndexEntrySupplier_Common::getIndexKey( const OUString& rIndex
 sal_Int16 SAL_CALL IndexEntrySupplier_Common::compareIndexEntry(
 	const OUString& rIndexEntry1, const OUString&, const lang::Locale&,
 	const OUString& rIndexEntry2, const OUString&, const lang::Locale& )
-	throw (RuntimeException)
 {
     return sal::static_int_cast< sal_Int16 >(
         collator->compareString(rIndexEntry1, rIndexEntry2));
@@ -96,20 +95,20 @@ sal_Int16 SAL_CALL IndexEntrySupplier_Common::compareIndexEntry(
 }
 
 OUString SAL_CALL IndexEntrySupplier_Common::getIndexCharacter( const OUString& rIndexEntry,
-	const lang::Locale& rLocale, const OUString& ) throw (RuntimeException)
+	const lang::Locale& rLocale, const OUString& )
 {
     return getIndexKey(rIndexEntry, rIndexEntry, rLocale);
 }
 
 OUString SAL_CALL IndexEntrySupplier_Common::getIndexFollowPageWord( sal_Bool,
-	const lang::Locale& ) throw (RuntimeException)
+	const lang::Locale& )
 {
     throw RuntimeException();
 }
 
 const OUString& SAL_CALL
 IndexEntrySupplier_Common::getEntry( const OUString& IndexEntry,
-	const OUString& PhoneticEntry, const lang::Locale& rLocale ) throw (RuntimeException)
+	const OUString& PhoneticEntry, const lang::Locale& rLocale )
 {
 	// The condition for using phonetic entry is:
 	// usePhonetic is set for the algorithm;
@@ -124,19 +123,19 @@ IndexEntrySupplier_Common::getEntry( const OUString& IndexEntry,
 }
 
 OUString SAL_CALL
-IndexEntrySupplier_Common::getImplementationName() throw( RuntimeException )
+IndexEntrySupplier_Common::getImplementationName()
 {
     return OUString::createFromAscii( implementationName );
 }
 
 sal_Bool SAL_CALL
-IndexEntrySupplier_Common::supportsService(const OUString& rServiceName) throw( RuntimeException )
+IndexEntrySupplier_Common::supportsService(const OUString& rServiceName)
 {
     return rServiceName.compareToAscii(implementationName) == 0;
 }
 
 Sequence< OUString > SAL_CALL
-IndexEntrySupplier_Common::getSupportedServiceNames() throw( RuntimeException )
+IndexEntrySupplier_Common::getSupportedServiceNames()
 {
     Sequence< OUString > aRet(1);
     aRet[0] = OUString::createFromAscii( implementationName );

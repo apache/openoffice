@@ -45,49 +45,41 @@ namespace sfwk
 // XDocumentHandler
 void SAL_CALL
 ParcelDescDocHandler::startDocument()
-throw ( xml::sax::SAXException, RuntimeException )
 {
     m_bIsParsed = false;
 }
 
 void SAL_CALL
 ParcelDescDocHandler::endDocument()
-throw ( xml::sax::SAXException, RuntimeException )
 {
     m_bIsParsed = true;
 }
 
 void SAL_CALL
 ParcelDescDocHandler::characters( const OUString & )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL
 ParcelDescDocHandler::ignorableWhitespace( const OUString & )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL
 ParcelDescDocHandler::processingInstruction(
     const OUString &, const OUString & )
-        throw ( xml::sax::SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL
 ParcelDescDocHandler::setDocumentLocator(
     const Reference< xml::sax::XLocator >& )
-        throw ( xml::sax::SAXException, RuntimeException )
 {
 }
 
 void SAL_CALL
 ParcelDescDocHandler::startElement( const OUString& aName,
     const Reference< xml::sax::XAttributeList > & xAttribs )
-        throw ( xml::sax::SAXException,
-            RuntimeException )
 {
 
     dp_misc::TRACE(OUSTR("ParcelDescDocHandler::startElement() for ") +
@@ -109,7 +101,6 @@ ParcelDescDocHandler::startElement( const OUString& aName,
 }
 
 void SAL_CALL ParcelDescDocHandler::endElement( const OUString & aName )
-   throw ( xml::sax::SAXException, RuntimeException )
 {
     if ( skipIndex )
     {

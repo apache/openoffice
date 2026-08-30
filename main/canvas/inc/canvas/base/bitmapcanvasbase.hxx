@@ -76,8 +76,7 @@ namespace canvas
                                         const ::com::sun::star::rendering::RenderState& 										sourceRenderState,
                                         const ::com::sun::star::geometry::RealRectangle2D& 										destRect,
                                         const ::com::sun::star::rendering::ViewState& 											destViewState,
-                                        const ::com::sun::star::rendering::RenderState& 										destRenderState ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                         ::com::sun::star::uno::RuntimeException)
+                                        const ::com::sun::star::rendering::RenderState& 										destRenderState )
         {
             tools::verifyArgs(sourceCanvas, sourceRect, sourceViewState, sourceRenderState,
                               destRect, destViewState, destRenderState,
@@ -100,14 +99,14 @@ namespace canvas
         }
 
         // XBitmap
-        virtual ::com::sun::star::geometry::IntegerSize2D SAL_CALL getSize(  ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::geometry::IntegerSize2D SAL_CALL getSize(  )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
             return BaseType::maCanvasHelper.getSize();
         }
 
-        virtual ::sal_Bool SAL_CALL hasAlpha(  ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::sal_Bool SAL_CALL hasAlpha(  )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 
@@ -115,7 +114,7 @@ namespace canvas
         }
 
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap > SAL_CALL getScaledBitmap( const ::com::sun::star::geometry::RealSize2D& newSize,
-                                                                                                                   sal_Bool 									 beFast ) throw (::com::sun::star::uno::RuntimeException)
+                                                                                                                   sal_Bool 									 beFast )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 

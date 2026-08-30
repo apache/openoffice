@@ -42,8 +42,7 @@ class MainThreadNotificationRequest :  public cppu::WeakImplHelper1< com::sun::s
 	sal_uInt32 m_nAspect;
 
 public:
-    virtual void SAL_CALL notify (const com::sun::star::uno::Any& rUserData)
-		throw (com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL notify (const com::sun::star::uno::Any& rUserData);
     MainThreadNotificationRequest( const ::rtl::Reference< OleEmbeddedObject >& xObj, sal_uInt16 nNotificationType, sal_uInt32 nAspect = 0 );
 	~MainThreadNotificationRequest();
 };

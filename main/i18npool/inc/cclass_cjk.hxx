@@ -44,8 +44,7 @@ public:
 		sal_Int32 nStartCharFlags,
 		const rtl::OUString& userDefinedCharactersStart,
 		sal_Int32 nContCharFlags,
-		const rtl::OUString& userDefinedCharactersCont )
-		throw(com::sun::star::uno::RuntimeException);
+		const rtl::OUString& userDefinedCharactersCont );
 
 protected:
 	sal_Int32 size;

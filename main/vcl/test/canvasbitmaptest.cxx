@@ -470,15 +470,14 @@ private:
     const sal_Int32                mnBitsPerPixel;
 
     // XBitmap
-    virtual geometry::IntegerSize2D SAL_CALL getSize() throw (uno::RuntimeException) { return maSize; }
-    virtual ::sal_Bool SAL_CALL hasAlpha(  ) throw (uno::RuntimeException) { return mnBitsPerPixel != 8; }
+    virtual geometry::IntegerSize2D SAL_CALL getSize() { return maSize; }
+    virtual ::sal_Bool SAL_CALL hasAlpha(  ) { return mnBitsPerPixel != 8; }
     virtual uno::Reference< rendering::XBitmap > SAL_CALL getScaledBitmap( const geometry::RealSize2D&,
-                                                                           sal_Bool ) throw (uno::RuntimeException) { return this; }
+                                                                           sal_Bool ) { return this; }
 
     // XIntegerReadOnlyBitmap
     virtual uno::Sequence< ::sal_Int8 > SAL_CALL getData( rendering::IntegerBitmapLayout&     bitmapLayout,
-                                                          const geometry::IntegerRectangle2D& rect ) throw (lang::IndexOutOfBoundsException,
-                                                                                                            rendering::VolatileContentDestroyedException, uno::RuntimeException)
+                                                          const geometry::IntegerRectangle2D& rect )
     {
         test( rect.X1 >= 0, "X1 within bounds" );
         test( rect.Y1 >= 0, "Y1 within bounds" );
@@ -523,14 +522,13 @@ private:
     }
 
     virtual uno::Sequence< ::sal_Int8 > SAL_CALL getPixel( rendering::IntegerBitmapLayout&,
-                                                           const geometry::IntegerPoint2D&  ) throw (lang::IndexOutOfBoundsException,
-                                                                                                     rendering::VolatileContentDestroyedException, uno::RuntimeException)
+                                                           const geometry::IntegerPoint2D&  )
     {
         test(false, "Method not implemented");
         return uno::Sequence< sal_Int8 >();
     }
 
-    virtual uno::Reference< rendering::XBitmapPalette > SAL_CALL getPalette(  ) throw (uno::RuntimeException)
+    virtual uno::Reference< rendering::XBitmapPalette > SAL_CALL getPalette(  )
     {
         uno::Reference< XBitmapPalette > aRet;
         if( mnBitsPerPixel == 8 )
@@ -538,7 +536,7 @@ private:
         return aRet;
     }
 
-    virtual rendering::IntegerBitmapLayout SAL_CALL getMemoryLayout(  ) throw (uno::RuntimeException)
+    virtual rendering::IntegerBitmapLayout SAL_CALL getMemoryLayout(  )
     {
         rendering::IntegerBitmapLayout aLayout( maLayout );
 
@@ -554,7 +552,7 @@ private:
     }
 
     // XBitmapPalette
-    virtual sal_Int32 SAL_CALL getNumberOfEntries() throw (uno::RuntimeException)
+    virtual sal_Int32 SAL_CALL getNumberOfEntries()
     {
         test( getPalette().is(),
               "Got palette interface call without handing out palette?!" );
@@ -563,8 +561,7 @@ private:
     }
 
     virtual ::sal_Bool SAL_CALL getIndex( uno::Sequence< double >& entry,
-                                          ::sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException,
-                                                                      uno::RuntimeException)
+                                          ::sal_Int32 nIndex )
     {
         test( getPalette().is(),
               "Got palette interface call without handing out palette?!" );
@@ -580,9 +577,7 @@ private:
 
     virtual ::sal_Bool SAL_CALL setIndex( const uno::Sequence< double >&,
                                           ::sal_Bool,
-                                          ::sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException,
-                                                                      lang::IllegalArgumentException,
-                                                                      uno::RuntimeException)
+                                          ::sal_Int32 nIndex )
     {
         test( getPalette().is(),
               "Got palette interface call without handing out palette?!" );
@@ -600,7 +595,7 @@ private:
         }
     };
 
-    virtual uno::Reference< rendering::XColorSpace > SAL_CALL getColorSpace(  ) throw (uno::RuntimeException)
+    virtual uno::Reference< rendering::XColorSpace > SAL_CALL getColorSpace(  )
     {
         // this is the method from XBitmapPalette. Return palette color
         // space here
@@ -608,109 +603,100 @@ private:
     }
 
     // XIntegerBitmapColorSpace
-    virtual ::sal_Int8 SAL_CALL getType(  ) throw (uno::RuntimeException)
+    virtual ::sal_Int8 SAL_CALL getType(  )
     {
         return rendering::ColorSpaceType::RGB;
     }
 
-    virtual uno::Sequence< sal_Int8 > SAL_CALL getComponentTags(  ) throw (uno::RuntimeException)
+    virtual uno::Sequence< sal_Int8 > SAL_CALL getComponentTags(  )
     {
         return maComponentTags;
     }
 
-    virtual ::sal_Int8 SAL_CALL getRenderingIntent(  ) throw (uno::RuntimeException)
+    virtual ::sal_Int8 SAL_CALL getRenderingIntent(  )
     {
         return rendering::RenderingIntent::PERCEPTUAL;
     }
 
-    virtual uno::Sequence< beans::PropertyValue > SAL_CALL getProperties(  ) throw (uno::RuntimeException)
+    virtual uno::Sequence< beans::PropertyValue > SAL_CALL getProperties(  )
     {
         test(false, "Method not implemented");
         return uno::Sequence< ::beans::PropertyValue >();
     }
 
     virtual uno::Sequence< double > SAL_CALL convertColorSpace( const uno::Sequence< double >&,
-                                                                const uno::Reference< rendering::XColorSpace >& ) throw (uno::RuntimeException)
+                                                                const uno::Reference< rendering::XColorSpace >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< double >();
     }
 
-    virtual uno::Sequence< rendering::RGBColor > SAL_CALL convertToRGB( const uno::Sequence< double >& ) throw (lang::IllegalArgumentException,
-                                                                                                                uno::RuntimeException)
+    virtual uno::Sequence< rendering::RGBColor > SAL_CALL convertToRGB( const uno::Sequence< double >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< rendering::RGBColor >();
     }
 
-    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertToARGB( const uno::Sequence< double >& ) throw (lang::IllegalArgumentException,
-                                                                                                                  uno::RuntimeException)
+    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertToARGB( const uno::Sequence< double >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< rendering::ARGBColor >();
     }
 
-    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertToPARGB( const uno::Sequence< double >& ) throw (lang::IllegalArgumentException,
-                                                                                                                   uno::RuntimeException)
+    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertToPARGB( const uno::Sequence< double >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< rendering::ARGBColor >();
     }
 
-    virtual uno::Sequence< double > SAL_CALL convertFromRGB( const uno::Sequence< rendering::RGBColor >& ) throw (lang::IllegalArgumentException,
-                                                                                                                  uno::RuntimeException)
+    virtual uno::Sequence< double > SAL_CALL convertFromRGB( const uno::Sequence< rendering::RGBColor >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< double >();
     }
 
-    virtual uno::Sequence< double > SAL_CALL convertFromARGB( const uno::Sequence< rendering::ARGBColor >& ) throw (lang::IllegalArgumentException,
-                                                                                                                    uno::RuntimeException)
+    virtual uno::Sequence< double > SAL_CALL convertFromARGB( const uno::Sequence< rendering::ARGBColor >& )
     {
         test(false, "This method is not expected to be called!");
         return uno::Sequence< double >();
     }
 
-    virtual uno::Sequence< double > SAL_CALL convertFromPARGB( const uno::Sequence< rendering::ARGBColor >& ) throw (lang::IllegalArgumentException,
-                                                                                                                    uno::RuntimeException)
+    virtual uno::Sequence< double > SAL_CALL convertFromPARGB( const uno::Sequence< rendering::ARGBColor >& )
     {
         test(false, "This method is not expected to be called!");
         return uno::Sequence< double >();
     }
 
-    virtual ::sal_Int32 SAL_CALL getBitsPerPixel(  ) throw (uno::RuntimeException)
+    virtual ::sal_Int32 SAL_CALL getBitsPerPixel(  )
     {
         return mnBitsPerPixel;
     }
 
-    virtual uno::Sequence< ::sal_Int32 > SAL_CALL getComponentBitCounts(  ) throw (uno::RuntimeException)
+    virtual uno::Sequence< ::sal_Int32 > SAL_CALL getComponentBitCounts(  )
     {
         return maComponentBitCounts;
     }
 
-    virtual ::sal_Int8 SAL_CALL getEndianness(  ) throw (uno::RuntimeException)
+    virtual ::sal_Int8 SAL_CALL getEndianness(  )
     {
         return util::Endianness::LITTLE;
     }
 
     virtual uno::Sequence< double > SAL_CALL convertFromIntegerColorSpace( const uno::Sequence< ::sal_Int8 >& ,
-                                                                           const uno::Reference< rendering::XColorSpace >& ) throw (lang::IllegalArgumentException,
-                                                                                                                                    uno::RuntimeException)
+                                                                           const uno::Reference< rendering::XColorSpace >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< double >();
     }
 
     virtual uno::Sequence< ::sal_Int8 > SAL_CALL convertToIntegerColorSpace( const uno::Sequence< ::sal_Int8 >& ,
-                                                                             const uno::Reference< rendering::XIntegerBitmapColorSpace >& ) throw (lang::IllegalArgumentException,
-                                                                                                                                                   uno::RuntimeException)
+                                                                             const uno::Reference< rendering::XIntegerBitmapColorSpace >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< sal_Int8 >();
     }
 
-    virtual uno::Sequence< rendering::RGBColor > SAL_CALL convertIntegerToRGB( const uno::Sequence< ::sal_Int8 >& deviceColor ) throw (lang::IllegalArgumentException,
-                                                                                                                                       uno::RuntimeException)
+    virtual uno::Sequence< rendering::RGBColor > SAL_CALL convertIntegerToRGB( const uno::Sequence< ::sal_Int8 >& deviceColor )
     {
         const uno::Sequence< rendering::ARGBColor > aTemp( convertIntegerToARGB(deviceColor) );
         const sal_Size nLen(aTemp.getLength());
@@ -726,8 +712,7 @@ private:
         return aRes;
     }
 
-    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertIntegerToARGB( const uno::Sequence< ::sal_Int8 >& deviceColor ) throw (lang::IllegalArgumentException,
-                                                                                                                                         uno::RuntimeException)
+    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertIntegerToARGB( const uno::Sequence< ::sal_Int8 >& deviceColor )
     {
         const sal_Size  nLen( deviceColor.getLength() );
         const sal_Int32 nBytesPerPixel(mnBitsPerPixel == 8 ? 1 : 4);
@@ -763,8 +748,7 @@ private:
         return aRes;
     }
 
-    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertIntegerToPARGB( const uno::Sequence< ::sal_Int8 >& deviceColor ) throw (lang::IllegalArgumentException,
-                                                                                                                                         uno::RuntimeException)
+    virtual uno::Sequence< rendering::ARGBColor > SAL_CALL convertIntegerToPARGB( const uno::Sequence< ::sal_Int8 >& deviceColor )
     {
         const sal_Size  nLen( deviceColor.getLength() );
         const sal_Int32 nBytesPerPixel(mnBitsPerPixel == 8 ? 1 : 4);
@@ -801,22 +785,19 @@ private:
         return aRes;
     }
 
-    virtual uno::Sequence< ::sal_Int8 > SAL_CALL convertIntegerFromRGB( const uno::Sequence< rendering::RGBColor >& ) throw (lang::IllegalArgumentException,
-                                                                                                                             uno::RuntimeException)
+    virtual uno::Sequence< ::sal_Int8 > SAL_CALL convertIntegerFromRGB( const uno::Sequence< rendering::RGBColor >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< sal_Int8 >();
     }
 
-    virtual uno::Sequence< ::sal_Int8 > SAL_CALL convertIntegerFromARGB( const uno::Sequence< rendering::ARGBColor >& ) throw (lang::IllegalArgumentException,
-                                                                                                                               uno::RuntimeException)
+    virtual uno::Sequence< ::sal_Int8 > SAL_CALL convertIntegerFromARGB( const uno::Sequence< rendering::ARGBColor >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< sal_Int8 >();
     }
 
-    virtual uno::Sequence< ::sal_Int8 > SAL_CALL convertIntegerFromPARGB( const uno::Sequence< rendering::ARGBColor >& ) throw (lang::IllegalArgumentException,
-                                                                                                                                uno::RuntimeException)
+    virtual uno::Sequence< ::sal_Int8 > SAL_CALL convertIntegerFromPARGB( const uno::Sequence< rendering::ARGBColor >& )
     {
         test(false, "Method not implemented");
         return uno::Sequence< sal_Int8 >();

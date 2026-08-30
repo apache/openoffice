@@ -26,14 +26,14 @@ using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
 ::sal_Int32
-VbaDialogsBase::getCount() throw (uno::RuntimeException)
+VbaDialogsBase::getCount()
 {
 	//#TODO #FIXEME
 	return 0;
 }
 
 uno::Any
-VbaDialogsBase::Item( const uno::Any& /* &aItem */) throw (uno::RuntimeException)
+VbaDialogsBase::Item( const uno::Any& /* &aItem */)
 {
 	return uno::Any();
 }

@@ -514,21 +514,18 @@ bool Model::isValid() const
 //
 
 rtl::OUString Model::getID()
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     return msID;
 }
 
 void Model::setID( const rtl::OUString& sID )
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     msID = sID;
 }
 
 void Model::initialize()
-    throw( RuntimeException )
 {
     DBG_ASSERT( ! mbInitialized, "model already initialized" );
 
@@ -541,7 +538,6 @@ void Model::initialize()
 }
 
 void Model::rebuild()
-    throw( RuntimeException )
 {
     if( ! mbInitialized )
         initialize();
@@ -550,19 +546,16 @@ void Model::rebuild()
 }
 
 void Model::recalculate()
-    throw( RuntimeException )
 {
     rebind();
 }
 
 void Model::revalidate()
-    throw( RuntimeException )
 {
     // do nothing. We don't validate anyways!
 }
 
 void Model::refresh()
-    throw( RuntimeException )
 {
     rebind();
 }
@@ -571,9 +564,6 @@ void Model::refresh()
 void SAL_CALL Model::submitWithInteraction(
     const rtl::OUString& sID,
     const XInteractionHandler_t& _rxHandler )
-    throw( VetoException,
-           WrappedTargetException,
-           RuntimeException )
 {
     DBG_INVARIANT();
 
@@ -591,13 +581,11 @@ void SAL_CALL Model::submitWithInteraction(
 }
 
 void Model::submit( const rtl::OUString& sID )
-    throw( VetoException, WrappedTargetException, RuntimeException )
 {
     submitWithInteraction( sID, NULL );
 }
 
 Model::XDataTypeRepository_t SAL_CALL Model::getDataTypeRepository(  )
-    throw( RuntimeException )
 {
     if ( !mxDataTypes.is() )
         mxDataTypes = new ODataTypeRepository;
@@ -610,13 +598,11 @@ Model::XDataTypeRepository_t SAL_CALL Model::getDataTypeRepository(  )
 //
 
 Model::XSet_t Model::getInstances()
-    throw( RuntimeException )
 {
     return mxInstances;
 }
 
 Model::XDocument_t Model::getInstanceDocument( const rtl::OUString& rName )
-    throw( RuntimeException )
 {
     ensureAtLeastOneInstance();
     Reference<XDocument> aInstance;
@@ -628,7 +614,6 @@ Model::XDocument_t Model::getInstanceDocument( const rtl::OUString& rName )
 }
 
 Model::XDocument_t SAL_CALL Model::getDefaultInstance()
-    throw( RuntimeException )
 {
     ensureAtLeastOneInstance();
     DBG_ASSERT( mpInstances->countItems() > 0, "no instance?" );
@@ -644,14 +629,12 @@ Model::XDocument_t SAL_CALL Model::getDefaultInstance()
 //
 
 Model::XPropertySet_t SAL_CALL Model::createBinding()
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     return new Binding();
 }
 
 Model::XPropertySet_t Model::cloneBinding( const XPropertySet_t& xBinding )
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     XPropertySet_t xNewBinding = createBinding();
@@ -660,14 +643,12 @@ Model::XPropertySet_t Model::cloneBinding( const XPropertySet_t& xBinding )
 }
 
 Model::XPropertySet_t Model::getBinding( const rtl::OUString& sId )
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     return mpBindings->hasItem( sId ) ? mpBindings->getItem( sId ) : NULL;
 }
 
 Model::XSet_t Model::getBindings()
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     return mxBindings;
@@ -680,14 +661,12 @@ Model::XSet_t Model::getBindings()
 //
 
 Model::XSubmission_t Model::createSubmission()
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     return new Submission();
 }
 
 Model::XSubmission_t Model::cloneSubmission(const XPropertySet_t& xSubmission)
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     XSubmission_t xNewSubmission = createSubmission();
@@ -697,7 +676,6 @@ Model::XSubmission_t Model::cloneSubmission(const XPropertySet_t& xSubmission)
 }
 
 Model::XSubmission_t Model::getSubmission( const rtl::OUString& sId )
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     XSubmission_t xSubmission;
@@ -707,7 +685,6 @@ Model::XSubmission_t Model::getSubmission( const rtl::OUString& sId )
 }
 
 Model::XSet_t Model::getSubmissions()
-    throw( RuntimeException )
 {
     DBG_INVARIANT();
     return mxSubmissions;
@@ -756,20 +733,17 @@ void Model::initializePropertySet()
 }
 
 void Model::update()
-    throw( RuntimeException )
 {
     rebuild();
 }
 
 
 sal_Int64 Model::getSomething( const IntSequence_t& xId )
-    throw( RuntimeException )
 {
     return reinterpret_cast<sal_Int64>( ( xId == getUnoTunnelID() ) ? this : NULL );
 }
 
 Sequence<sal_Int8> Model::getImplementationId()
-    throw( RuntimeException )
 {
     return getUnoTunnelID();
 }

@@ -69,14 +69,14 @@ namespace vcl { namespace unohelper {
     }
 
 	// ::com::sun::star::uno::XInterface
-	uno::Any TextDataObject::queryInterface( const uno::Type & rType ) throw(uno::RuntimeException)
+	uno::Any TextDataObject::queryInterface( const uno::Type & rType )
 	{
 		uno::Any aRet = ::cppu::queryInterface( rType, SAL_STATIC_CAST( datatransfer::XTransferable*, this ) );
 		return (aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType ));
 	}
 
 	// ::com::sun::star::datatransfer::XTransferable
-	uno::Any TextDataObject::getTransferData( const datatransfer::DataFlavor& rFlavor ) throw(datatransfer::UnsupportedFlavorException, io::IOException, uno::RuntimeException)
+	uno::Any TextDataObject::getTransferData( const datatransfer::DataFlavor& rFlavor )
 	{
 		uno::Any aAny;
 
@@ -92,14 +92,14 @@ namespace vcl { namespace unohelper {
 		return aAny;
 	}
 
-	uno::Sequence< datatransfer::DataFlavor > TextDataObject::getTransferDataFlavors(  ) throw(uno::RuntimeException)
+	uno::Sequence< datatransfer::DataFlavor > TextDataObject::getTransferDataFlavors(  )
 	{
 		uno::Sequence< datatransfer::DataFlavor > aDataFlavors(1);
 		SotExchange::GetFormatDataFlavor( SOT_FORMAT_STRING, aDataFlavors.getArray()[0] );
 		return aDataFlavors;
 	}
 
-	sal_Bool TextDataObject::isDataFlavorSupported( const datatransfer::DataFlavor& rFlavor ) throw(uno::RuntimeException)
+	sal_Bool TextDataObject::isDataFlavorSupported( const datatransfer::DataFlavor& rFlavor )
 	{
 		sal_uLong nT = SotExchange::GetFormat( rFlavor );
 		return ( nT == SOT_FORMAT_STRING );

@@ -203,12 +203,12 @@ IMPLEMENT_FORWARD_XINTERFACE2( ODefinitionContainer,OContentHelper,ODefinitionCo
 IMPLEMENT_TYPEPROVIDER2(ODefinitionContainer,OContentHelper,ODefinitionContainer_Base);
 // XServiceInfo
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODefinitionContainer::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL ODefinitionContainer::getImplementationName(  )
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.ODefinitionContainer"));
 }
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL ODefinitionContainer::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL ODefinitionContainer::getSupportedServiceNames(  )
 {
 	Sequence< ::rtl::OUString > aReturn(2);
 	aReturn.getArray()[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.DefinitionContainer"));
@@ -218,7 +218,7 @@ Sequence< ::rtl::OUString > SAL_CALL ODefinitionContainer::getSupportedServiceNa
 
 // XNameContainer
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::insertByName( const ::rtl::OUString& _rName, const Any& aElement ) throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
+void SAL_CALL ODefinitionContainer::insertByName( const ::rtl::OUString& _rName, const Any& aElement )
 {
 	ResettableMutexGuard aGuard(m_aMutex);
 
@@ -232,7 +232,7 @@ void SAL_CALL ODefinitionContainer::insertByName( const ::rtl::OUString& _rName,
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::removeByName( const ::rtl::OUString& _rName ) throw(NoSuchElementException, WrappedTargetException, RuntimeException)
+void SAL_CALL ODefinitionContainer::removeByName( const ::rtl::OUString& _rName )
 {
 	ResettableMutexGuard aGuard(m_aMutex);
 
@@ -257,7 +257,7 @@ void SAL_CALL ODefinitionContainer::removeByName( const ::rtl::OUString& _rName 
 
 // XNameReplace
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::replaceByName( const ::rtl::OUString& _rName, const Any& aElement ) throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
+void SAL_CALL ODefinitionContainer::replaceByName( const ::rtl::OUString& _rName, const Any& aElement )
 {
 	ResettableMutexGuard aGuard(m_aMutex);
 
@@ -359,28 +359,28 @@ void ODefinitionContainer::notifyByName( ResettableMutexGuard& _rGuard, const ::
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::addContainerListener( const Reference< XContainerListener >& _rxListener ) throw(RuntimeException)
+void SAL_CALL ODefinitionContainer::addContainerListener( const Reference< XContainerListener >& _rxListener )
 {
 	if (_rxListener.is())
 		m_aContainerListeners.addInterface(_rxListener);
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::removeContainerListener( const Reference< XContainerListener >& _rxListener ) throw(RuntimeException)
+void SAL_CALL ODefinitionContainer::removeContainerListener( const Reference< XContainerListener >& _rxListener )
 {
 	if (_rxListener.is())
 		m_aContainerListeners.removeInterface(_rxListener);
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::addContainerApproveListener( const Reference< XContainerApproveListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL ODefinitionContainer::addContainerApproveListener( const Reference< XContainerApproveListener >& _Listener )
 {
     if ( _Listener.is() )
         m_aApproveListeners.addInterface( _Listener );
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::removeContainerApproveListener( const Reference< XContainerApproveListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL ODefinitionContainer::removeContainerApproveListener( const Reference< XContainerApproveListener >& _Listener )
 {
     if ( _Listener.is() )
         m_aApproveListeners.removeInterface( _Listener );
@@ -389,13 +389,13 @@ void SAL_CALL ODefinitionContainer::removeContainerApproveListener( const Refere
 
 // XElementAccess
 //--------------------------------------------------------------------------
-Type SAL_CALL ODefinitionContainer::getElementType( ) throw (RuntimeException)
+Type SAL_CALL ODefinitionContainer::getElementType( )
 {
 	return ::getCppuType( static_cast< Reference< XContent >* >(NULL) );
 }
 
 //--------------------------------------------------------------------------
-sal_Bool SAL_CALL ODefinitionContainer::hasElements( ) throw (RuntimeException)
+sal_Bool SAL_CALL ODefinitionContainer::hasElements( )
 {
 	MutexGuard aGuard(m_aMutex);
 	return !m_aDocuments.empty();
@@ -403,7 +403,7 @@ sal_Bool SAL_CALL ODefinitionContainer::hasElements( ) throw (RuntimeException)
 
 // XEnumerationAccess
 //--------------------------------------------------------------------------
-Reference< XEnumeration > SAL_CALL ODefinitionContainer::createEnumeration(  ) throw(RuntimeException)
+Reference< XEnumeration > SAL_CALL ODefinitionContainer::createEnumeration(  )
 {
 	MutexGuard aGuard(m_aMutex);
 	return new ::comphelper::OEnumerationByIndex(static_cast<XIndexAccess*>(this));
@@ -411,14 +411,14 @@ Reference< XEnumeration > SAL_CALL ODefinitionContainer::createEnumeration(  ) t
 
 //--------------------------------------------------------------------------
 // XIndexAccess
-sal_Int32 SAL_CALL ODefinitionContainer::getCount(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL ODefinitionContainer::getCount(  )
 {
 	MutexGuard aGuard(m_aMutex);
 	return m_aDocuments.size();
 }
 
 //--------------------------------------------------------------------------
-Any SAL_CALL ODefinitionContainer::getByIndex( sal_Int32 _nIndex ) throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+Any SAL_CALL ODefinitionContainer::getByIndex( sal_Int32 _nIndex )
 {
 	MutexGuard aGuard(m_aMutex);
 
@@ -439,7 +439,7 @@ Any SAL_CALL ODefinitionContainer::getByIndex( sal_Int32 _nIndex ) throw(IndexOu
 }
 
 //--------------------------------------------------------------------------
-Any SAL_CALL ODefinitionContainer::getByName( const ::rtl::OUString& _rName ) throw(NoSuchElementException, WrappedTargetException, RuntimeException)
+Any SAL_CALL ODefinitionContainer::getByName( const ::rtl::OUString& _rName )
 {
 	MutexGuard aGuard(m_aMutex);
 
@@ -447,7 +447,7 @@ Any SAL_CALL ODefinitionContainer::getByName( const ::rtl::OUString& _rName ) th
 }
 
 //--------------------------------------------------------------------------
-Reference< XContent > ODefinitionContainer::implGetByName(const ::rtl::OUString& _rName, sal_Bool _bReadIfNeccessary) throw (NoSuchElementException)
+Reference< XContent > ODefinitionContainer::implGetByName(const ::rtl::OUString& _rName, sal_Bool _bReadIfNeccessary)
 {
 	Documents::iterator aMapPos = m_aDocumentMap.find(_rName);
 	if (aMapPos == m_aDocumentMap.end())
@@ -469,7 +469,7 @@ Reference< XContent > ODefinitionContainer::implGetByName(const ::rtl::OUString&
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL ODefinitionContainer::getElementNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL ODefinitionContainer::getElementNames(  )
 {
 	MutexGuard aGuard(m_aMutex);
 
@@ -488,7 +488,7 @@ Sequence< ::rtl::OUString > SAL_CALL ODefinitionContainer::getElementNames(  ) t
 }
 
 //--------------------------------------------------------------------------
-sal_Bool SAL_CALL ODefinitionContainer::hasByName( const ::rtl::OUString& _rName ) throw(RuntimeException)
+sal_Bool SAL_CALL ODefinitionContainer::hasByName( const ::rtl::OUString& _rName )
 {
 	MutexGuard aGuard(m_aMutex);
 
@@ -496,7 +496,7 @@ sal_Bool SAL_CALL ODefinitionContainer::hasByName( const ::rtl::OUString& _rName
 }
 
 //--------------------------------------------------------------------------
-void SAL_CALL ODefinitionContainer::disposing( const EventObject& _rSource ) throw(RuntimeException)
+void SAL_CALL ODefinitionContainer::disposing( const EventObject& _rSource )
 {
 	MutexGuard aGuard(m_aMutex);
 	Reference< XContent > xSource(_rSource.Source, UNO_QUERY);
@@ -673,7 +673,7 @@ void ODefinitionContainer::approveNewObject(const ::rtl::OUString& _sName,const 
 
 // -----------------------------------------------------------------------------
 // XPropertyChangeListener
-void SAL_CALL ODefinitionContainer::propertyChange( const PropertyChangeEvent& evt ) throw (RuntimeException)
+void SAL_CALL ODefinitionContainer::propertyChange( const PropertyChangeEvent& evt )
 {
 	ClearableMutexGuard aGuard(m_aMutex);
     if(evt.PropertyName == (rtl::OUString) PROPERTY_NAME || evt.PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "Title" ) ))
@@ -699,7 +699,7 @@ void SAL_CALL ODefinitionContainer::propertyChange( const PropertyChangeEvent& e
 }
 // -----------------------------------------------------------------------------
 // XVetoableChangeListener
-void SAL_CALL ODefinitionContainer::vetoableChange( const PropertyChangeEvent& aEvent ) throw (PropertyVetoException, RuntimeException)
+void SAL_CALL ODefinitionContainer::vetoableChange( const PropertyChangeEvent& aEvent )
 {
 	MutexGuard aGuard(m_aMutex);
 

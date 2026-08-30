@@ -72,10 +72,6 @@ uno::Reference< uno::XInterface > SAL_CALL UNOEmbeddedObjectCreator::createInsta
 											const uno::Reference< embed::XStorage >& xStorage,
 											const ::rtl::OUString& sEntName,
 											const uno::Sequence< beans::PropertyValue >& lObjArgs )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException)
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) UNOEmbeddedObjectCreator::createInstanceInitNew" );
 
@@ -116,11 +112,6 @@ uno::Reference< uno::XInterface > SAL_CALL UNOEmbeddedObjectCreator::createInsta
 																	const ::rtl::OUString& sEntName,
 																	const uno::Sequence< beans::PropertyValue >& aMedDescr,
 																	const uno::Sequence< beans::PropertyValue >& lObjArgs )
-	throw ( lang::IllegalArgumentException,
-			container::NoSuchElementException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException)
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) UNOEmbeddedObjectCreator::createInstanceInitFromEntry" );
 
@@ -236,10 +227,6 @@ uno::Reference< uno::XInterface > SAL_CALL UNOEmbeddedObjectCreator::createInsta
 		const ::rtl::OUString& sEntName,
 		const uno::Sequence< beans::PropertyValue >& aMediaDescr,
 		const uno::Sequence< beans::PropertyValue >& lObjArgs )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException)
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) UNOEmbeddedObjectCreator::createInstanceInitFromMediaDescriptor" );
 
@@ -309,10 +296,6 @@ uno::Reference< uno::XInterface > SAL_CALL UNOEmbeddedObjectCreator::createInsta
 		sal_Int32 nEntryConnectionMode,
 		const uno::Sequence< beans::PropertyValue >& aArgs,
 		const uno::Sequence< beans::PropertyValue >& aObjectArgs )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::Exception,
-			uno::RuntimeException)
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) UNOEmbeddedObjectCreator::createInstanceUserInit" );
 
@@ -350,10 +333,6 @@ uno::Reference< uno::XInterface > SAL_CALL UNOEmbeddedObjectCreator::createInsta
 											const ::rtl::OUString& sEntName,
 											const uno::Sequence< beans::PropertyValue >& aMediaDescr,
 											const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) UNOEmbeddedObjectCreator::createInstanceLink" );
 
@@ -433,10 +412,6 @@ uno::Reference< uno::XInterface > SAL_CALL UNOEmbeddedObjectCreator::createInsta
 												const ::rtl::OUString& sEntName,
 												const uno::Sequence< beans::PropertyValue >& lArguments,
 												const uno::Sequence< beans::PropertyValue >& lObjArgs )
-		throw ( lang::IllegalArgumentException,
-				io::IOException,
-				uno::Exception,
-				uno::RuntimeException )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "embeddedobj (mv76033) UNOEmbeddedObjectCreator::createInstanceLinkUserInit" );
 
@@ -460,14 +435,12 @@ uno::Reference< uno::XInterface > SAL_CALL UNOEmbeddedObjectCreator::createInsta
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL UNOEmbeddedObjectCreator::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL UNOEmbeddedObjectCreator::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -480,7 +453,6 @@ sal_Bool SAL_CALL UNOEmbeddedObjectCreator::supportsService( const ::rtl::OUStri
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL UNOEmbeddedObjectCreator::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }

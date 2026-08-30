@@ -658,7 +658,6 @@ SubstitutePathVariables::~SubstitutePathVariables()
 
 // XStringSubstitution
 rtl::OUString SAL_CALL SubstitutePathVariables::substituteVariables( const ::rtl::OUString& aText, sal_Bool bSubstRequired )
-throw ( NoSuchElementException, RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "SubstitutePathVariables::substituteVariables" );
     ResetableGuard aLock( m_aLock );
@@ -666,7 +665,6 @@ throw ( NoSuchElementException, RuntimeException )
 }
 
 rtl::OUString SAL_CALL SubstitutePathVariables::reSubstituteVariables( const ::rtl::OUString& aText )
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "SubstitutePathVariables::reSubstituteVariables" );
     ResetableGuard aLock( m_aLock );
@@ -674,7 +672,6 @@ throw ( RuntimeException )
 }
 
 rtl::OUString SAL_CALL SubstitutePathVariables::getSubstituteVariableValue( const ::rtl::OUString& aVariable )
-throw ( NoSuchElementException, RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "SubstitutePathVariables::getSubstituteVariableValue" );
     ResetableGuard aLock( m_aLock );
@@ -791,7 +788,6 @@ rtl::OUString SubstitutePathVariables::GetPathVariableValue() const
 }
 
 rtl::OUString SubstitutePathVariables::impl_substituteVariable( const ::rtl::OUString& rText, bool bSubstRequired )
-throw ( NoSuchElementException, RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "SubstitutePathVariables::impl_substituteVariable" );
     // This is maximal recursive depth supported!
@@ -991,7 +987,6 @@ throw ( NoSuchElementException, RuntimeException )
 }
 
 rtl::OUString SubstitutePathVariables::impl_reSubstituteVariables( const ::rtl::OUString& rURL )
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "SubstitutePathVariables::impl_reSubstituteVariables" );
     rtl::OUString aURL;
@@ -1096,7 +1091,6 @@ throw ( RuntimeException )
 
 // This method support both request schemes "$("<varname>")" or "<varname>".
 ::rtl::OUString SubstitutePathVariables::impl_getSubstituteVariableValue( const ::rtl::OUString& rVariable )
-throw ( NoSuchElementException, RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "SubstitutePathVariables::impl_getSubstituteVariableValue" );
     rtl::OUString aVariable;

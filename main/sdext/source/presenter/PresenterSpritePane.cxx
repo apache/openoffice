@@ -79,7 +79,6 @@ void PresenterSpritePane::disposing (void)
 //----- XPane -----------------------------------------------------------------
 
 Reference<awt::XWindow> SAL_CALL PresenterSpritePane::getWindow (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     return mxContentWindow;
@@ -89,7 +88,6 @@ Reference<awt::XWindow> SAL_CALL PresenterSpritePane::getWindow (void)
 
 
 Reference<rendering::XCanvas> SAL_CALL PresenterSpritePane::getCanvas (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -105,7 +103,6 @@ Reference<rendering::XCanvas> SAL_CALL PresenterSpritePane::getCanvas (void)
 //----- XWindowListener -------------------------------------------------------
 
 void SAL_CALL PresenterSpritePane::windowResized (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     PresenterPaneBase::windowResized(rEvent);
@@ -120,7 +117,6 @@ void SAL_CALL PresenterSpritePane::windowResized (const awt::WindowEvent& rEvent
 
 
 void SAL_CALL PresenterSpritePane::windowMoved (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     PresenterPaneBase::windowMoved(rEvent);
@@ -135,7 +131,6 @@ void SAL_CALL PresenterSpritePane::windowMoved (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterSpritePane::windowShown (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     PresenterPaneBase::windowShown(rEvent);
@@ -154,7 +149,6 @@ void SAL_CALL PresenterSpritePane::windowShown (const lang::EventObject& rEvent)
 
 
 void SAL_CALL PresenterSpritePane::windowHidden (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     PresenterPaneBase::windowHidden(rEvent);
@@ -170,7 +164,6 @@ void SAL_CALL PresenterSpritePane::windowHidden (const lang::EventObject& rEvent
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterSpritePane::windowPaint (const awt::PaintEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();

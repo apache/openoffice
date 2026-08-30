@@ -100,7 +100,7 @@ namespace comphelper
 
 	protected:
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > SAL_CALL
-					getAccessibleContext(  ) throw (::com::sun::star::uno::RuntimeException);
+					getAccessibleContext(  );
 
 		::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
 					getParent() const { return m_xParentAccessible; }
@@ -192,24 +192,24 @@ namespace comphelper
 
 	protected:
 		// XInterface
-		::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& _rType ) throw (::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& _rType );
 
 		// XTypeProvider
 		DECLARE_XTYPEPROVIDER( )
 
 		// XAccessibleContext
-		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  );
 
 		// XAccessibleEventListener
-		virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent );
 
 	    // XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		// XComponent/OComponentProxyAggregationHelper
-		virtual void SAL_CALL dispose() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispose();
 
 		// own overridables
 		/** notify an accessible event which has been translated (if necessary)
@@ -220,7 +220,7 @@ namespace comphelper
 			<p>The mutex of the BroadcastHelper passed to the instance's ctor is <em>not</em> locked when calling
 			into this method</p>
 		*/
-		virtual void notifyTranslatedEvent( const ::com::sun::star::accessibility::AccessibleEventObject& _rEvent ) throw (::com::sun::star::uno::RuntimeException) = 0;
+		virtual void notifyTranslatedEvent( const ::com::sun::star::accessibility::AccessibleEventObject& _rEvent ) = 0;
 
 	protected:
 		~OAccessibleContextWrapperHelper( );
@@ -276,32 +276,32 @@ namespace comphelper
 		DECLARE_XTYPEPROVIDER( )
 
 		// XAccessibleContext
-		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Int32 SAL_CALL getAccessibleIndexInParent(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual sal_Int16 SAL_CALL getAccessibleRole(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getAccessibleDescription(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getAccessibleName(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet > SAL_CALL getAccessibleStateSet(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  ) throw (::com::sun::star::accessibility::IllegalAccessibleComponentStateException, ::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent(  );
+		virtual sal_Int32 SAL_CALL getAccessibleIndexInParent(  );
+		virtual sal_Int16 SAL_CALL getAccessibleRole(  );
+		virtual ::rtl::OUString SAL_CALL getAccessibleDescription(  );
+		virtual ::rtl::OUString SAL_CALL getAccessibleName(  );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleStateSet > SAL_CALL getAccessibleStateSet(  );
+		virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  );
 
 		// XAccessibleEventBroadcaster
         using WeakComponentImplHelperBase::addEventListener;
-		virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener );
         using WeakComponentImplHelperBase::removeEventListener;
-		virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleEventListener >& xListener );
 
 		// OAccessibleContextWrapper
-		virtual void notifyTranslatedEvent( const ::com::sun::star::accessibility::AccessibleEventObject& _rEvent ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void notifyTranslatedEvent( const ::com::sun::star::accessibility::AccessibleEventObject& _rEvent );
 
 		// XComponent/OComponentProxyAggregationHelper
-		virtual void SAL_CALL dispose() throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL dispose();
 
 		// OComponentHelper
         using OAccessibleContextWrapperHelper::disposing;
-		virtual void SAL_CALL disposing()  throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing();
 
 	protected:
 		virtual ~OAccessibleContextWrapper();
@@ -386,7 +386,7 @@ namespace comphelper
 
 	protected:
 		// XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	protected:
 		void	implTranslateChildEventValue( const ::com::sun::star::uno::Any& _rInValue, ::com::sun::star::uno::Any& _rOutValue );

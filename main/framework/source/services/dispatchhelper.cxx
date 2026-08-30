@@ -111,7 +111,6 @@ css::uno::Any SAL_CALL DispatchHelper::executeDispatch(
                                 const ::rtl::OUString&                                      sTargetFrameName  ,
                                       sal_Int32                                             nSearchFlags      ,
                                 const css::uno::Sequence< css::beans::PropertyValue >&      lArguments        )
-    throw(css::uno::RuntimeException)
 {
     css::uno::Reference< css::uno::XInterface > xTHIS(static_cast< ::cppu::OWeakObject* >(this), css::uno::UNO_QUERY);
 
@@ -188,7 +187,6 @@ css::uno::Any SAL_CALL DispatchHelper::executeDispatch(
                 describes the result of the dispatch operation
  */
 void SAL_CALL DispatchHelper::dispatchFinished( const css::frame::DispatchResultEvent& aResult )
-    throw(css::uno::RuntimeException)
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
@@ -208,7 +206,6 @@ void SAL_CALL DispatchHelper::dispatchFinished( const css::frame::DispatchResult
                 describe the source of this event and MUST be our save broadcaster!
  */
 void SAL_CALL DispatchHelper::disposing( const css::lang::EventObject& )
-    throw(css::uno::RuntimeException)
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);

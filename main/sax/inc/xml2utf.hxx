@@ -107,11 +107,7 @@ public:
 
 	// @param nMaxToRead The number of chars, that should be read. Note that this is no exact number. There
 	//                   may be returned less or more bytes than ordered.
-	sal_Int32 readAndConvert( ::com::sun::star::uno::Sequence<sal_Int8> &seq , sal_Int32 nMaxToRead )
-		throw ( ::com::sun::star::io::IOException,
-				::com::sun::star::io::NotConnectedException ,
-				::com::sun::star::io::BufferSizeExceededException ,
-				::com::sun::star::uno::RuntimeException );
+	sal_Int32 readAndConvert( ::com::sun::star::uno::Sequence<sal_Int8> &seq , sal_Int32 nMaxToRead );
 
 private:
 

@@ -224,7 +224,6 @@ gtest_test(
         "WNT",
         "GUI",
         "WIN32",
-        "snprintf=_snprintf",
     ],
     deps = [
         "//main/sal:sal_headers",

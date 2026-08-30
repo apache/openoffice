@@ -55,14 +55,11 @@ class SalGtkPicker
 		osl::Mutex m_rbHelperMtx;
 		GtkWidget  *m_pDialog;
 	protected:
-		virtual void SAL_CALL implsetTitle( const ::rtl::OUString& aTitle )
-			throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL implsetTitle( const ::rtl::OUString& aTitle );
 
-		virtual void SAL_CALL implsetDisplayDirectory( const rtl::OUString& rDirectory )
-			throw( com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL implsetDisplayDirectory( const rtl::OUString& rDirectory );
 
-		virtual rtl::OUString SAL_CALL implgetDisplayDirectory(  )
-			throw( com::sun::star::uno::RuntimeException );
+		virtual rtl::OUString SAL_CALL implgetDisplayDirectory(  );
 		static rtl::OUString uritounicode(const gchar *pIn);
 		static rtl::OString unicodetouri(const rtl::OUString &rURL);
 };
@@ -91,22 +88,14 @@ public:
 
     // XTopWindowListener
     using cppu::WeakComponentImplHelperBase::disposing;
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& )
-        throw(::com::sun::star::uno::RuntimeException) {}
-    virtual void SAL_CALL windowOpened( const ::com::sun::star::lang::EventObject& e )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL windowClosing( const ::com::sun::star::lang::EventObject& )
-        throw (::com::sun::star::uno::RuntimeException) {}
-    virtual void SAL_CALL windowClosed( const ::com::sun::star::lang::EventObject& )
-        throw (::com::sun::star::uno::RuntimeException) {}
-    virtual void SAL_CALL windowMinimized( const ::com::sun::star::lang::EventObject& )
-        throw (::com::sun::star::uno::RuntimeException) {}
-    virtual void SAL_CALL windowNormalized( const ::com::sun::star::lang::EventObject& )
-        throw (::com::sun::star::uno::RuntimeException) {}
-    virtual void SAL_CALL windowActivated( const ::com::sun::star::lang::EventObject& )
-        throw (::com::sun::star::uno::RuntimeException) {}
-    virtual void SAL_CALL windowDeactivated( const ::com::sun::star::lang::EventObject& )
-        throw (::com::sun::star::uno::RuntimeException) {}
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& ) {}
+    virtual void SAL_CALL windowOpened( const ::com::sun::star::lang::EventObject& e );
+    virtual void SAL_CALL windowClosing( const ::com::sun::star::lang::EventObject& ) {}
+    virtual void SAL_CALL windowClosed( const ::com::sun::star::lang::EventObject& ) {}
+    virtual void SAL_CALL windowMinimized( const ::com::sun::star::lang::EventObject& ) {}
+    virtual void SAL_CALL windowNormalized( const ::com::sun::star::lang::EventObject& ) {}
+    virtual void SAL_CALL windowActivated( const ::com::sun::star::lang::EventObject& ) {}
+    virtual void SAL_CALL windowDeactivated( const ::com::sun::star::lang::EventObject& ) {}
 public:
     RunDialog(GtkWidget *pDialog, ::com::sun::star::uno::Reference< ::com::sun::star::awt::XExtendedToolkit > &rToolkit);
     gint run();

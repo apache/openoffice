@@ -181,7 +181,6 @@ DragSource::~DragSource()
 
 
 void SAL_CALL DragSource::initialize(const Sequence< Any >& aArguments)
-  throw(Exception)
 {
   if (aArguments.getLength() < 2)
 	{
@@ -231,14 +230,12 @@ void SAL_CALL DragSource::initialize(const Sequence< Any >& aArguments)
 //----------------------------------------------------
 
 sal_Bool SAL_CALL DragSource::isDragImageSupported(  )
-  throw(RuntimeException)
 {
   return true;
 }
 
 
 sal_Int32 SAL_CALL DragSource::getDefaultCursor( sal_Int8 /*dragAction*/ )
-  throw( IllegalArgumentException, RuntimeException)
 {
   return 0;
 }
@@ -250,7 +247,6 @@ void SAL_CALL DragSource::startDrag(const DragGestureEvent& trigger,
 									sal_Int32 /*image*/,
 									const uno::Reference<XTransferable >& transferable,
 									const uno::Reference<XDragSourceListener >& listener )
-  throw( RuntimeException)
 {
   MutexGuard guard(m_aMutex);
 
@@ -357,19 +353,19 @@ unsigned int DragSource::getSupportedDragOperations(bool isLocal) const
 // XServiceInfo
 //################################
 
-OUString SAL_CALL DragSource::getImplementationName(  ) throw (RuntimeException)
+OUString SAL_CALL DragSource::getImplementationName(  )
 {
   return dragSource_getImplementationName();
 }
 
 
-sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName )
 {
   return ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.datatransfer.dnd.OleDragSource")));
 }
 
 
-Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames() throw (RuntimeException)
+Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames()
 {
   return dragSource_getSupportedServiceNames();
 }

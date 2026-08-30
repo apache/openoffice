@@ -36,7 +36,10 @@ constraint_value(
     constraint_setting = ":win_version",
 )
 
-# Placeholder for the planned win10 target (not yet wired to a platform/toolchain).
+# The modern target: VS2019 toolset + Windows 10 SDK.  Wired to
+# //build/platforms:win10-x64 and //build/toolchain:aoo_msvc_vs2019_x64_def, and
+# registered as an execution platform (last) so win10 TESTS resolve a test
+# toolchain -- see the exec-platform block in MODULE.bazel.
 constraint_value(
     name = "win10",
     constraint_setting = ":win_version",

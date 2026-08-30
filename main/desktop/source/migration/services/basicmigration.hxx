@@ -45,8 +45,7 @@ namespace migration
     ::rtl::OUString SAL_CALL BasicMigration_getImplementationName();
     ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL BasicMigration_getSupportedServiceNames();
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL BasicMigration_create(
-        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext )
-        SAL_THROW( (::com::sun::star::uno::Exception) );
+        ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext );
 
 
     // =============================================================================
@@ -73,22 +72,16 @@ namespace migration
         virtual ~BasicMigration();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName()
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& rServiceName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-            throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XJob
         virtual ::com::sun::star::uno::Any SAL_CALL execute(
-            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Arguments )
-            throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::Exception,
-                ::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Arguments );
     };
 
 //.........................................................................

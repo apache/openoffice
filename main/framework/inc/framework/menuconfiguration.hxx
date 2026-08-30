@@ -89,25 +89,20 @@ class FWE_DLLPUBLIC MenuConfiguration
 		virtual ~MenuConfiguration();
 
         ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess > CreateMenuBarConfigurationFromXML(
-			::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rInputStream )
-			throw ( ::com::sun::star::lang::WrappedTargetException );
+			::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rInputStream );
 
 		PopupMenu* CreateBookmarkMenu(
 				::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame,
-				const ::rtl::OUString& aURL )
-			throw ( ::com::sun::star::lang::WrappedTargetException );
+				const ::rtl::OUString& aURL );
 
 		ToolBox* CreateToolBoxFromConfiguration(
-			::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rInputStream )
-			throw ( ::com::sun::star::lang::WrappedTargetException );
+			::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rInputStream );
 
 		void StoreMenuBarConfigurationToXML( ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& rMenuBarConfiguration,
-					  ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rOutputStream )
-			throw ( ::com::sun::star::lang::WrappedTargetException );
+					  ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rOutputStream );
 
 		void StoreToolBox( ToolBox* pToolBox,
-					  ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rOutputStream )
-			throw ( ::com::sun::star::lang::WrappedTargetException );
+					  ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rOutputStream );
 
 		static sal_Bool IsPickListItemId( sal_uInt16 nId );
 		static sal_Bool IsWindowListItemId( sal_uInt16 nId );

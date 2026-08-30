@@ -78,41 +78,41 @@ namespace dbaui
 		VCLXAccessibleComponent::disposing();
 	}
 	// -----------------------------------------------------------------------------
-	Any SAL_CALL OConnectionLineAccess::queryInterface( const Type& aType ) throw (RuntimeException)
+	Any SAL_CALL OConnectionLineAccess::queryInterface( const Type& aType )
 	{
 		Any aRet(VCLXAccessibleComponent::queryInterface( aType ));
 		return aRet.hasValue() ? aRet : OConnectionLineAccess_BASE::queryInterface( aType );
 	}
 	// -----------------------------------------------------------------------------
-	Sequence< Type > SAL_CALL OConnectionLineAccess::getTypes(  ) throw (RuntimeException)
+	Sequence< Type > SAL_CALL OConnectionLineAccess::getTypes(  )
 	{
 		return ::comphelper::concatSequences(VCLXAccessibleComponent::getTypes(),OConnectionLineAccess_BASE::getTypes());
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OConnectionLineAccess::getImplementationName() throw(RuntimeException)
+	::rtl::OUString SAL_CALL OConnectionLineAccess::getImplementationName()
 	{
 		return getImplementationName_Static();
 	}
 	// -----------------------------------------------------------------------------
 	// XServiceInfo - static methods
 	// -----------------------------------------------------------------------------
-	::rtl::OUString OConnectionLineAccess::getImplementationName_Static(void) throw( RuntimeException )
+	::rtl::OUString OConnectionLineAccess::getImplementationName_Static(void)
 	{
 		return ::rtl::OUString::createFromAscii("org.openoffice.comp.dbu.ConnectionLineAccessibility");
 	}
 	// -----------------------------------------------------------------------------
 	// XAccessibleContext
-	sal_Int32 SAL_CALL OConnectionLineAccess::getAccessibleChildCount(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL OConnectionLineAccess::getAccessibleChildCount(  )
 	{
 		return 0;
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL OConnectionLineAccess::getAccessibleChild( sal_Int32 /*i*/ ) throw (RuntimeException)
+	Reference< XAccessible > SAL_CALL OConnectionLineAccess::getAccessibleChild( sal_Int32 /*i*/ )
 	{
 		return Reference< XAccessible >();
 	}
 	// -----------------------------------------------------------------------------
-	sal_Int32 SAL_CALL OConnectionLineAccess::getAccessibleIndexInParent(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL OConnectionLineAccess::getAccessibleIndexInParent(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		sal_Int32 nIndex = -1;
@@ -130,88 +130,88 @@ namespace dbaui
 		return nIndex;
 	}
 	// -----------------------------------------------------------------------------
-	sal_Int16 SAL_CALL OConnectionLineAccess::getAccessibleRole(  ) throw (RuntimeException)
+	sal_Int16 SAL_CALL OConnectionLineAccess::getAccessibleRole(  )
 	{
 		return AccessibleRole::UNKNOWN; // ? or may be an AccessibleRole::WINDOW
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OConnectionLineAccess::getAccessibleDescription(  ) throw (RuntimeException)
+	::rtl::OUString SAL_CALL OConnectionLineAccess::getAccessibleDescription(  )
 	{
 		static ::rtl::OUString sDescription(RTL_CONSTASCII_USTRINGPARAM("Relation"));
 		return sDescription;
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessibleRelationSet > SAL_CALL OConnectionLineAccess::getAccessibleRelationSet(  ) throw (RuntimeException)
+	Reference< XAccessibleRelationSet > SAL_CALL OConnectionLineAccess::getAccessibleRelationSet(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		return this;
 	}
 	// -----------------------------------------------------------------------------
 	// XAccessibleComponent
-	sal_Bool SAL_CALL OConnectionLineAccess::contains( const awt::Point& _aPoint ) throw (RuntimeException)
+	sal_Bool SAL_CALL OConnectionLineAccess::contains( const awt::Point& _aPoint )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		Point aPoint(_aPoint.X,_aPoint.Y);
 		return m_pLine ? m_pLine->CheckHit(aPoint) : sal_False;
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessible > SAL_CALL OConnectionLineAccess::getAccessibleAtPoint( const awt::Point& /*_aPoint*/ ) throw (RuntimeException)
+	Reference< XAccessible > SAL_CALL OConnectionLineAccess::getAccessibleAtPoint( const awt::Point& /*_aPoint*/ )
 	{
 		return Reference< XAccessible >();
 	}
 	// -----------------------------------------------------------------------------
-	awt::Rectangle SAL_CALL OConnectionLineAccess::getBounds(  ) throw (RuntimeException)
+	awt::Rectangle SAL_CALL OConnectionLineAccess::getBounds(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		Rectangle aRect(m_pLine ? m_pLine->GetBoundingRect() : Rectangle());
 		return awt::Rectangle(aRect.getX(),aRect.getY(),aRect.getWidth(),aRect.getHeight());
 	}
 	// -----------------------------------------------------------------------------
-	awt::Point SAL_CALL OConnectionLineAccess::getLocation(  ) throw (RuntimeException)
+	awt::Point SAL_CALL OConnectionLineAccess::getLocation(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		Point aPoint(m_pLine ? m_pLine->GetBoundingRect().TopLeft() : Point());
 		return awt::Point(aPoint.X(),aPoint.Y());
 	}
 	// -----------------------------------------------------------------------------
-	awt::Point SAL_CALL OConnectionLineAccess::getLocationOnScreen(  ) throw (RuntimeException)
+	awt::Point SAL_CALL OConnectionLineAccess::getLocationOnScreen(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		Point aPoint(m_pLine ? m_pLine->GetParent()->ScreenToOutputPixel(m_pLine->GetBoundingRect().TopLeft()) : Point());
 		return awt::Point(aPoint.X(),aPoint.Y());
 	}
 	// -----------------------------------------------------------------------------
-	awt::Size SAL_CALL OConnectionLineAccess::getSize(  ) throw (RuntimeException)
+	awt::Size SAL_CALL OConnectionLineAccess::getSize(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		Size aSize(m_pLine ? m_pLine->GetBoundingRect().GetSize() : Size());
 		return awt::Size(aSize.Width(),aSize.Height());
 	}
 	// -----------------------------------------------------------------------------
-	sal_Bool SAL_CALL OConnectionLineAccess::isShowing(  ) throw (RuntimeException)
+	sal_Bool SAL_CALL OConnectionLineAccess::isShowing(  )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		return m_pLine ? m_pLine->GetParent()->GetWindowRegionPixel().IsInside(m_pLine->GetBoundingRect()) : sal_False;
 	}
 	// -----------------------------------------------------------------------------
-	sal_Bool SAL_CALL OConnectionLineAccess::isVisible(  ) throw (RuntimeException)
+	sal_Bool SAL_CALL OConnectionLineAccess::isVisible(  )
 	{
 		return sal_True;
 	}
 	// -----------------------------------------------------------------------------
-	sal_Bool SAL_CALL OConnectionLineAccess::isFocusTraversable(  ) throw (RuntimeException)
+	sal_Bool SAL_CALL OConnectionLineAccess::isFocusTraversable(  )
 	{
 		return sal_True;
 	}
 	// -----------------------------------------------------------------------------
 	// XAccessibleRelationSet
 	// -----------------------------------------------------------------------------
-	sal_Int32 SAL_CALL OConnectionLineAccess::getRelationCount(  ) throw (RuntimeException)
+	sal_Int32 SAL_CALL OConnectionLineAccess::getRelationCount(  )
 	{
 		return 1;
 	}
 	// -----------------------------------------------------------------------------
-	AccessibleRelation SAL_CALL OConnectionLineAccess::getRelation( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+	AccessibleRelation SAL_CALL OConnectionLineAccess::getRelation( sal_Int32 nIndex )
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
 		if( nIndex < 0 || nIndex >= getRelationCount() )
@@ -227,12 +227,12 @@ namespace dbaui
 		return AccessibleRelation(AccessibleRelationType::CONTROLLED_BY,aSeq);
 	}
 	// -----------------------------------------------------------------------------
-	sal_Bool SAL_CALL OConnectionLineAccess::containsRelation( sal_Int16 aRelationType ) throw (RuntimeException)
+	sal_Bool SAL_CALL OConnectionLineAccess::containsRelation( sal_Int16 aRelationType )
 	{
 		return AccessibleRelationType::CONTROLLED_BY == aRelationType;
 	}
 	// -----------------------------------------------------------------------------
-	AccessibleRelation SAL_CALL OConnectionLineAccess::getRelationByType( sal_Int16 aRelationType ) throw (RuntimeException)
+	AccessibleRelation SAL_CALL OConnectionLineAccess::getRelationByType( sal_Int16 aRelationType )
 	{
 		if( AccessibleRelationType::CONTROLLED_BY == aRelationType )
 			return getRelation(0);
@@ -258,7 +258,7 @@ namespace dbaui
 		return m_pLine ? !m_pLine->GetParent()->getDesignView()->getController().isReadOnly() : sal_False;
 	}
 	// -----------------------------------------------------------------------------
-	Reference< XAccessibleContext > SAL_CALL OConnectionLineAccess::getAccessibleContext(  ) throw (::com::sun::star::uno::RuntimeException)
+	Reference< XAccessibleContext > SAL_CALL OConnectionLineAccess::getAccessibleContext(  )
 	{
 		return this;
 	}

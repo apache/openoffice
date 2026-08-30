@@ -99,26 +99,26 @@ public:
 	SvMacroTableEventDescriptor* mpEvents;
 
 	// overiden helpers from PropertySetHelper
-	virtual void _setPropertyValues( const PropertyMapEntry** ppEntries, const Any* pValues ) throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException );
-	virtual void _getPropertyValues( const PropertyMapEntry** ppEntries, Any* pValue ) throw(UnknownPropertyException, WrappedTargetException );
+	virtual void _setPropertyValues( const PropertyMapEntry** ppEntries, const Any* pValues );
+	virtual void _getPropertyValues( const PropertyMapEntry** ppEntries, Any* pValue );
 
 	// XInterface
-	virtual Any SAL_CALL queryAggregation( const Type & rType ) throw(RuntimeException);
-	virtual Any SAL_CALL queryInterface( const Type & rType ) throw(RuntimeException);
+	virtual Any SAL_CALL queryAggregation( const Type & rType );
+	virtual Any SAL_CALL queryInterface( const Type & rType );
 	virtual void SAL_CALL acquire() throw();
 	virtual void SAL_CALL release() throw();
 
 	// XTypeProvider
-    virtual Sequence< Type > SAL_CALL getTypes(  ) throw(RuntimeException);
-    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw(RuntimeException);
+    virtual Sequence< Type > SAL_CALL getTypes(  );
+    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 
     // XEventsSupplier
-    virtual Reference< ::com::sun::star::container::XNameReplace > SAL_CALL getEvents(  ) throw(RuntimeException);
+    virtual Reference< ::com::sun::star::container::XNameReplace > SAL_CALL getEvents(  );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw( RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( RuntimeException );
-    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw( RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 private:
 	static PropertySetInfo* createPropertySetInfo( sal_uInt16 nType );
@@ -323,13 +323,11 @@ IMapObject* SvUnoImageMapObject::createIMapObject() const
 // XInterface
 
 Any SAL_CALL SvUnoImageMapObject::queryInterface( const Type & rType )
-	throw( RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
 }
 
 Any SAL_CALL SvUnoImageMapObject::queryAggregation( const Type & rType )
-	throw(RuntimeException)
 {
 	Any aAny;
 
@@ -362,7 +360,6 @@ void SAL_CALL SvUnoImageMapObject::release() throw()
 }
 
 uno::Sequence< uno::Type > SAL_CALL SvUnoImageMapObject::getTypes()
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< uno::Type > aTypes( 7 );
 	uno::Type* pTypes = aTypes.getArray();
@@ -379,7 +376,6 @@ uno::Sequence< uno::Type > SAL_CALL SvUnoImageMapObject::getTypes()
 }
 
 uno::Sequence< sal_Int8 > SAL_CALL SvUnoImageMapObject::getImplementationId()
-	throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -394,7 +390,7 @@ uno::Sequence< sal_Int8 > SAL_CALL SvUnoImageMapObject::getImplementationId()
 
 // XServiceInfo
 
-sal_Bool SAL_CALL SvUnoImageMapObject::supportsService( const  ::rtl::OUString& ServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL SvUnoImageMapObject::supportsService( const  ::rtl::OUString& ServiceName )
 {
     const Sequence< ::rtl::OUString > aSNL( getSupportedServiceNames() );
     const ::rtl::OUString * pArray = aSNL.getConstArray();
@@ -408,7 +404,6 @@ sal_Bool SAL_CALL SvUnoImageMapObject::supportsService( const  ::rtl::OUString& 
 }
 
 Sequence< ::rtl::OUString > SAL_CALL SvUnoImageMapObject::getSupportedServiceNames()
-	throw(RuntimeException)
 {
     Sequence< ::rtl::OUString > aSNS( 2 );
     aSNS.getArray()[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.image.ImageMapObject" ));
@@ -428,7 +423,7 @@ Sequence< ::rtl::OUString > SAL_CALL SvUnoImageMapObject::getSupportedServiceNam
     return aSNS;
 }
 
-::rtl::OUString SAL_CALL SvUnoImageMapObject::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL SvUnoImageMapObject::getImplementationName()
 {
 	switch( mnType )
 	{
@@ -444,7 +439,6 @@ Sequence< ::rtl::OUString > SAL_CALL SvUnoImageMapObject::getSupportedServiceNam
 
 // overiden helpers from PropertySetHelper
 void SvUnoImageMapObject::_setPropertyValues( const PropertyMapEntry** ppEntries, const Any* pValues )
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException )
 {
 	sal_Bool bOk = sal_False;
 
@@ -496,7 +490,6 @@ void SvUnoImageMapObject::_setPropertyValues( const PropertyMapEntry** ppEntries
 }
 
 void SvUnoImageMapObject::_getPropertyValues( const PropertyMapEntry** ppEntries, Any* pValues )
-	throw(UnknownPropertyException, WrappedTargetException )
 {
 	while( *ppEntries )
 	{
@@ -544,7 +537,6 @@ void SvUnoImageMapObject::_getPropertyValues( const PropertyMapEntry** ppEntries
 
 
 Reference< XNameReplace > SAL_CALL SvUnoImageMapObject::getEvents()
-	throw( RuntimeException )
 {
 	// try weak reference first
 	Reference< XNameReplace > xEvents( mpEvents );
@@ -561,29 +553,29 @@ public:
 	virtual ~SvUnoImageMap();
 
 	sal_Bool fillImageMap( ImageMap& rMap ) const;
-	SvUnoImageMapObject* getObject( const Any& aElement ) const throw( IllegalArgumentException );
+	SvUnoImageMapObject* getObject( const Any& aElement ) const;
 
 	UNO3_GETIMPLEMENTATION_DECL( SvUnoImageMap )
 
 	// XIndexContainer
-    virtual void SAL_CALL insertByIndex( sal_Int32 Index, const Any& Element ) throw( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
-    virtual void SAL_CALL removeByIndex( sal_Int32 Index ) throw( IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
+    virtual void SAL_CALL insertByIndex( sal_Int32 Index, const Any& Element );
+    virtual void SAL_CALL removeByIndex( sal_Int32 Index );
 
     // XIndexReplace
-    virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const Any& Element ) throw( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
+    virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const Any& Element );
 
     // XIndexAccess
-    virtual sal_Int32 SAL_CALL getCount(  ) throw( RuntimeException );
-    virtual Any SAL_CALL getByIndex( sal_Int32 Index ) throw( IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
+    virtual sal_Int32 SAL_CALL getCount(  );
+    virtual Any SAL_CALL getByIndex( sal_Int32 Index );
 
     // XElementAccess
-    virtual Type SAL_CALL getElementType(  ) throw( RuntimeException );
-    virtual sal_Bool SAL_CALL hasElements(  ) throw( RuntimeException );
+    virtual Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
 
     // XSerivceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw( RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( RuntimeException );
-    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw( RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 private:
     ::rtl::OUString maName;
@@ -622,7 +614,6 @@ SvUnoImageMap::~SvUnoImageMap()
 }
 
 SvUnoImageMapObject* SvUnoImageMap::getObject( const Any& aElement ) const
-	throw( IllegalArgumentException )
 {
 	Reference< XInterface > xObject;
 	aElement >>= xObject;
@@ -636,7 +627,6 @@ SvUnoImageMapObject* SvUnoImageMap::getObject( const Any& aElement ) const
 
 // XIndexContainer
 void SAL_CALL SvUnoImageMap::insertByIndex( sal_Int32 Index, const Any& Element )
-	throw( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
 	SvUnoImageMapObject* pObject = getObject( Element );
 	const sal_Int32 nCount = maObjectList.size();
@@ -657,7 +647,7 @@ void SAL_CALL SvUnoImageMap::insertByIndex( sal_Int32 Index, const Any& Element 
 	}
 }
 
-void SAL_CALL SvUnoImageMap::removeByIndex( sal_Int32 Index ) throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+void SAL_CALL SvUnoImageMap::removeByIndex( sal_Int32 Index )
 {
 	const sal_Int32 nCount = maObjectList.size();
 	if( Index >= nCount )
@@ -680,7 +670,7 @@ void SAL_CALL SvUnoImageMap::removeByIndex( sal_Int32 Index ) throw(IndexOutOfBo
 }
 
 // XIndexReplace
-void SAL_CALL SvUnoImageMap::replaceByIndex( sal_Int32 Index, const Any& Element ) throw(IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+void SAL_CALL SvUnoImageMap::replaceByIndex( sal_Int32 Index, const Any& Element )
 {
 	SvUnoImageMapObject* pObject = getObject( Element );
 	const sal_Int32 nCount = maObjectList.size();
@@ -697,12 +687,12 @@ void SAL_CALL SvUnoImageMap::replaceByIndex( sal_Int32 Index, const Any& Element
 }
 
 // XIndexAccess
-sal_Int32 SAL_CALL SvUnoImageMap::getCount(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL SvUnoImageMap::getCount(  )
 {
 	return maObjectList.size();
 }
 
-Any SAL_CALL SvUnoImageMap::getByIndex( sal_Int32 Index ) throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+Any SAL_CALL SvUnoImageMap::getByIndex( sal_Int32 Index )
 {
 	const sal_Int32 nCount = maObjectList.size();
 	if( Index >= nCount )
@@ -717,25 +707,23 @@ Any SAL_CALL SvUnoImageMap::getByIndex( sal_Int32 Index ) throw(IndexOutOfBounds
 }
 
 // XElementAccess
-Type SAL_CALL SvUnoImageMap::getElementType(  ) throw(RuntimeException)
+Type SAL_CALL SvUnoImageMap::getElementType(  )
 {
 	return ::getCppuType((const Reference< XPropertySet >*)0);
 }
 
-sal_Bool SAL_CALL SvUnoImageMap::hasElements(  ) throw(RuntimeException)
+sal_Bool SAL_CALL SvUnoImageMap::hasElements(  )
 {
 	return maObjectList.size() != 0;
 }
 
 // XSerivceInfo
 ::rtl::OUString SAL_CALL SvUnoImageMap::getImplementationName(  )
-	throw(RuntimeException)
 {
     return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.comp.svt.SvUnoImageMap" ) );
 }
 
 sal_Bool SAL_CALL SvUnoImageMap::supportsService( const ::rtl::OUString& ServiceName )
-	throw(RuntimeException)
 {
     const Sequence< ::rtl::OUString > aSNL( getSupportedServiceNames() );
     const ::rtl::OUString * pArray = aSNL.getConstArray();
@@ -749,7 +737,6 @@ sal_Bool SAL_CALL SvUnoImageMap::supportsService( const ::rtl::OUString& Service
 }
 
 Sequence< ::rtl::OUString > SAL_CALL SvUnoImageMap::getSupportedServiceNames(  )
-	throw(RuntimeException)
 {
     const ::rtl::OUString aSN( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.image.ImageMap" ) );
     return Sequence< ::rtl::OUString >( &aSN, 1 );

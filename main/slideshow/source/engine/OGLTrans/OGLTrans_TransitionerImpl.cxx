@@ -171,12 +171,10 @@ public:
     static bool initialize( const Reference< presentation::XSlideShowView >& xView );
 
     // XTransition
-    virtual void SAL_CALL update( double nTime )
-	throw (uno::RuntimeException);
+    virtual void SAL_CALL update( double nTime );
     virtual void SAL_CALL viewChanged( const Reference< presentation::XSlideShowView >& rView,
 				       const Reference< rendering::XBitmap >& rLeavingBitmap,
-				       const Reference< rendering::XBitmap >& rEnteringBitmap )
-	throw (uno::RuntimeException);
+				       const Reference< rendering::XBitmap >& rEnteringBitmap );
 
 protected:
     void disposeContextAndWindow();
@@ -1114,7 +1112,7 @@ void OGLTransitionerImpl::GLInitSlides()
 #endif
 }
 
-void SAL_CALL OGLTransitionerImpl::update( double nTime ) throw (uno::RuntimeException)
+void SAL_CALL OGLTransitionerImpl::update( double nTime )
 {
 #ifdef DEBUG
     frame_count ++;
@@ -1171,7 +1169,6 @@ void SAL_CALL OGLTransitionerImpl::update( double nTime ) throw (uno::RuntimeExc
 void SAL_CALL OGLTransitionerImpl::viewChanged( const Reference< presentation::XSlideShowView >& rView,
 						const Reference< rendering::XBitmap >& rLeavingBitmap,
 						const Reference< rendering::XBitmap >& rEnteringBitmap )
-    throw (uno::RuntimeException)
 {
     OSL_TRACE("transitioner: view changed");
 
@@ -1336,7 +1333,7 @@ public:
     {}
 
     // XTransitionFactory
-    virtual ::sal_Bool SAL_CALL hasTransition( ::sal_Int16 transitionType, ::sal_Int16 transitionSubType ) throw (uno::RuntimeException)
+    virtual ::sal_Bool SAL_CALL hasTransition( ::sal_Int16 transitionType, ::sal_Int16 transitionSubType )
     {
         if( transitionType == animations::TransitionType::MISCSHAPEWIPE ) {
             switch( transitionSubType )
@@ -1378,7 +1375,6 @@ public:
         const uno::Reference< presentation::XSlideShowView >& view,
         const uno::Reference< rendering::XBitmap >&           leavingBitmap,
         const uno::Reference< rendering::XBitmap >&           enteringBitmap )
-	throw (uno::RuntimeException)
     {
         if( !hasTransition( transitionType, transitionSubType ) )
             return uno::Reference< presentation::XTransition >();

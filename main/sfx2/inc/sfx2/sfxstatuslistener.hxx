@@ -65,15 +65,15 @@ class SFX2_DLLPUBLIC SfxStatusListener :
         virtual void StateChanged( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
 
         // XComponent
-        virtual void SAL_CALL dispose() throw( ::com::sun::star::uno::RuntimeException );
-        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL dispose();
+        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
         // XEventListener
-	    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( ::com::sun::star::uno::RuntimeException );
+	    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
         // XStatusListener
-	    virtual void SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event) throw( ::com::sun::star::uno::RuntimeException );
+	    virtual void SAL_CALL statusChanged(const ::com::sun::star::frame::FeatureStateEvent& Event);
 
     private:
         SfxStatusListener( const SfxStatusListener& );

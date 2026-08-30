@@ -57,7 +57,6 @@ void SAL_CALL
 TaskManager::startTask(
     sal_Int32 CommandId,
     const uno::Reference< XCommandEnvironment >& xCommandEnv )
-    throw( DuplicateCommandIdentifierException )
 {
     osl::MutexGuard aGuard( m_aMutex );
     TaskMap::iterator it = m_aTaskMap.find( CommandId );

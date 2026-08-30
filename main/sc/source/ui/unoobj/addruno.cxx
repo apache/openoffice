@@ -102,7 +102,6 @@ sal_Bool ScAddressConversionObj::ParseUIString( const String& rUIString, ::formu
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScAddressConversionObj::getPropertySetInfo()
-                                                        throw(uno::RuntimeException)
 {
     ScUnoGuard aGuard;
 
@@ -137,9 +136,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScAddressConversionObj::getProp
 }
 
 void SAL_CALL ScAddressConversionObj::setPropertyValue( const rtl::OUString& aPropertyName, const uno::Any& aValue )
-                throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-                        lang::IllegalArgumentException, lang::WrappedTargetException,
-                        uno::RuntimeException)
 {
     if ( !pDocShell )
         throw uno::RuntimeException();
@@ -224,8 +220,6 @@ void SAL_CALL ScAddressConversionObj::setPropertyValue( const rtl::OUString& aPr
 }
 
 uno::Any SAL_CALL ScAddressConversionObj::getPropertyValue( const rtl::OUString& aPropertyName )
-                throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-                        uno::RuntimeException)
 {
     if ( !pDocShell )
         throw uno::RuntimeException();
@@ -297,13 +291,12 @@ SC_IMPL_DUMMY_PROPERTY_LISTENER( ScAddressConversionObj )
 
 // lang::XServiceInfo
 
-rtl::OUString SAL_CALL ScAddressConversionObj::getImplementationName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScAddressConversionObj::getImplementationName()
 {
     return rtl::OUString::createFromAscii( "ScAddressConversionObj" );
 }
 
 sal_Bool SAL_CALL ScAddressConversionObj::supportsService( const rtl::OUString& rServiceName )
-                                                    throw(uno::RuntimeException)
 {
     String aServiceStr( rServiceName );
     return aServiceStr.EqualsAscii( bIsRange ? SC_SERVICENAME_RANGEADDRESS
@@ -311,7 +304,6 @@ sal_Bool SAL_CALL ScAddressConversionObj::supportsService( const rtl::OUString& 
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL ScAddressConversionObj::getSupportedServiceNames()
-                                                    throw(uno::RuntimeException)
 {
     uno::Sequence<rtl::OUString> aRet(1);
     rtl::OUString* pArray = aRet.getArray();

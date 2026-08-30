@@ -451,16 +451,13 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         //---------------------------------------
         // css.frame.XDispatch
         virtual void SAL_CALL dispatch(const css::util::URL&                                  aURL      ,
-                                       const css::uno::Sequence< css::beans::PropertyValue >& lArguments)
-            throw(css::uno::RuntimeException);
+                                       const css::uno::Sequence< css::beans::PropertyValue >& lArguments);
 
         virtual void SAL_CALL addStatusListener(const css::uno::Reference< css::frame::XStatusListener >& xListener,
-                                                const css::util::URL&                                     aURL     )
-            throw(css::uno::RuntimeException);
+                                                const css::util::URL&                                     aURL     );
 
         virtual void SAL_CALL removeStatusListener(const css::uno::Reference< css::frame::XStatusListener >& xListener,
-                                                   const css::util::URL&                                     aURL     )
-            throw(css::uno::RuntimeException);
+                                                   const css::util::URL&                                     aURL     );
 
         //---------------------------------------
         // css.document.XEventListener
@@ -473,24 +470,20 @@ class AutoRecovery  : public  css::lang::XTypeProvider
             @param  aEvent
                     points to the new created/opened document.
          */
-        virtual void SAL_CALL notifyEvent(const css::document::EventObject& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL notifyEvent(const css::document::EventObject& aEvent);
 
         //---------------------------------------
         // css.util.XChangesListener
-        virtual void SAL_CALL changesOccurred(const css::util::ChangesEvent& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL changesOccurred(const css::util::ChangesEvent& aEvent);
 
         //---------------------------------------
         // css.util.XModifyListener
-        virtual void SAL_CALL modified(const css::lang::EventObject& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL modified(const css::lang::EventObject& aEvent);
 
         //---------------------------------------
         // css.lang.XEventListener
         using cppu::OPropertySetHelper::disposing;
-        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent);
 
     //___________________________________________
     // helper
@@ -503,20 +496,17 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 		virtual sal_Bool SAL_CALL convertFastPropertyValue(      css::uno::Any& aConvertedValue,
                                                                  css::uno::Any&	aOldValue      ,
                                                                  sal_Int32		nHandle        ,
-                                                           const css::uno::Any&	aValue         )
-            throw(css::lang::IllegalArgumentException);
+                                                           const css::uno::Any&	aValue         );
 
 		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(      sal_Int32      nHandle,
-                                                               const css::uno::Any& aValue )
-            throw(css::uno::Exception);
+                                                               const css::uno::Any& aValue );
         using cppu::OPropertySetHelper::getFastPropertyValue;
 		virtual void SAL_CALL getFastPropertyValue(css::uno::Any& aValue ,
                                                    sal_Int32      nHandle) const;
 
 		virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
 
-		virtual css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo()
-            throw(css::uno::RuntimeException);
+		virtual css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
     //___________________________________________
     // helper
 

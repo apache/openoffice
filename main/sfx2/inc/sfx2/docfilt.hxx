@@ -107,10 +107,7 @@ public:
     static String   GetTypeFromStorage( const SotStorage& rStg );
     static String   GetTypeFromStorage( const com::sun::star::uno::Reference< com::sun::star::embed::XStorage >& xStorage,
                                         sal_Bool bTemplate = sal_False,
-										String* pName=0 )
-						throw ( ::com::sun::star::beans::UnknownPropertyException,
-								::com::sun::star::lang::WrappedTargetException,
-								::com::sun::star::uno::RuntimeException );
+										String* pName=0 );
 };
 
 #endif

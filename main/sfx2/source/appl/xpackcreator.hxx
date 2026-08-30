@@ -58,12 +58,12 @@ public:
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceManager );
 
 	// XPackageStructureCreator
-    virtual void SAL_CALL convertToPackage( const ::rtl::OUString& aFolderUrl, const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xTargetStream ) throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL convertToPackage( const ::rtl::OUString& aFolderUrl, const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xTargetStream );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 };
 

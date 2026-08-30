@@ -55,8 +55,8 @@ namespace dbaccess
     public:
         Veto( const ::rtl::OUString& _rReason, const ::com::sun::star::uno::Any& _rDetails );
 
-        virtual ::rtl::OUString SAL_CALL getReason() throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Any SAL_CALL getDetails() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getReason();
+        virtual ::com::sun::star::uno::Any SAL_CALL getDetails();
 
     protected:
         ~Veto();

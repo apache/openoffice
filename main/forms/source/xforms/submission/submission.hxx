@@ -68,11 +68,11 @@ protected:
     CSS::uno::Reference< CSS::ucb::XProgressHandler >       m_aProgressHandler;
 
 public:
-    virtual CSS::uno::Reference< CSS::task::XInteractionHandler > SAL_CALL getInteractionHandler() throw (CSS::uno::RuntimeException)
+    virtual CSS::uno::Reference< CSS::task::XInteractionHandler > SAL_CALL getInteractionHandler()
     {
         return m_aInteractionHandler;
     }
-    virtual CSS::uno::Reference< CSS::ucb::XProgressHandler > SAL_CALL getProgressHandler() throw (CSS::uno::RuntimeException)
+    virtual CSS::uno::Reference< CSS::ucb::XProgressHandler > SAL_CALL getProgressHandler()
     {
         return m_aProgressHandler;
     }
@@ -91,16 +91,16 @@ public:
     CProgressHandlerHelper()
         : m_count(0)
     {}
-    virtual void SAL_CALL push( const com::sun::star::uno::Any& /*aStatus*/) throw(com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL push( const com::sun::star::uno::Any& /*aStatus*/)
     {
         m_mLock.acquire();
         m_count++;
         m_mLock.release();
     }
-    virtual void SAL_CALL update(const com::sun::star::uno::Any& /*aStatus*/) throw(com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL update(const com::sun::star::uno::Any& /*aStatus*/)
     {
     }
-    virtual void SAL_CALL pop() throw(com::sun::star::uno::RuntimeException)
+    virtual void SAL_CALL pop()
     {
         m_mLock.acquire();
         m_count--;

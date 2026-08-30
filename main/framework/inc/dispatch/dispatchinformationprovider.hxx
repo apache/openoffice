@@ -88,11 +88,9 @@ class DispatchInformationProvider : public  css::frame::XDispatchInformationProv
 
         FWK_DECLARE_XINTERFACE
 
-        virtual css::uno::Sequence< sal_Int16 > SAL_CALL getSupportedCommandGroups()
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Sequence< sal_Int16 > SAL_CALL getSupportedCommandGroups();
 
-        virtual css::uno::Sequence< css::frame::DispatchInformation > SAL_CALL getConfigurableDispatchInformation(sal_Int16 nCommandGroup)
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Sequence< css::frame::DispatchInformation > SAL_CALL getConfigurableDispatchInformation(sal_Int16 nCommandGroup);
 
     //_______________________
     // helper

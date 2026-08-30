@@ -62,27 +62,27 @@ namespace toolkit
 
     public:
         // XAnimation
-        virtual void SAL_CALL startAnimation(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL stopAnimation(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL isAnimationRunning(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL startAnimation(  );
+        virtual void SAL_CALL stopAnimation(  );
+        virtual ::sal_Bool SAL_CALL isAnimationRunning(  );
 
         // VclWindowPeer
-        virtual void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value ) throw(::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Any SAL_CALL getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value );
+        virtual ::com::sun::star::uno::Any SAL_CALL getProperty( const ::rtl::OUString& PropertyName );
 
         // XContainerListener
-        virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& Event );
+        virtual void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& Event );
+        virtual void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& Event );
 
         // XEventListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& i_event ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& i_event );
 
         // XModifyListener
-        virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& i_event ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& i_event );
 
         // XComponent
-        void SAL_CALL dispose(  ) throw(::com::sun::star::uno::RuntimeException);
+        void SAL_CALL dispose(  );
 
     protected:
         void ProcessWindowEvent( const VclWindowEvent& i_windowEvent );

@@ -98,21 +98,21 @@ namespace calc
         DECLARE_XTYPEPROVIDER()
 
         // XValueBinding
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getSupportedValueTypes(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL supportsType( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Any SAL_CALL getValue( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::form::binding::IncompatibleTypesException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& aValue ) throw (::com::sun::star::form::binding::IncompatibleTypesException, ::com::sun::star::lang::NoSupportException, ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getSupportedValueTypes(  );
+        virtual sal_Bool SAL_CALL supportsType( const ::com::sun::star::uno::Type& aType );
+        virtual ::com::sun::star::uno::Any SAL_CALL getValue( const ::com::sun::star::uno::Type& aType );
+        virtual void SAL_CALL setValue( const ::com::sun::star::uno::Any& aValue );
 
         // OComponentHelper/XComponent
         virtual void SAL_CALL disposing();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // XPropertySet
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
         // OPropertySetHelper
         virtual ::cppu::IPropertyArrayHelper& SAL_CALL getInfoHelper();
@@ -122,23 +122,20 @@ namespace calc
 		virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
 
         // XModifyBroadcaster
-        virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL addModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
+        virtual void SAL_CALL removeModifyListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
         // XModifyListener
-        virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent );
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
     private:
-        void    checkDisposed( ) const
-                    SAL_THROW( ( ::com::sun::star::lang::DisposedException ) );
-        void    checkValueType( const ::com::sun::star::uno::Type& _rType ) const
-                    SAL_THROW( ( ::com::sun::star::form::binding::IncompatibleTypesException ) );
-        void    checkInitialized()
-                    SAL_THROW( ( ::com::sun::star::uno::RuntimeException ) );
+        void    checkDisposed( ) const;
+        void    checkValueType( const ::com::sun::star::uno::Type& _rType ) const;
+        void    checkInitialized();
 
         /** notifies our modify listeners
             @precond

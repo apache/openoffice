@@ -178,75 +178,68 @@ public:
 	DECLARE_XTYPEPROVIDER()
 
 	// XComponent
-	virtual void SAL_CALL dispose() throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL dispose();
+    virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+    virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
 	// XController
-    virtual ::sal_Bool SAL_CALL suspend( ::sal_Bool Suspend ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL suspend( ::sal_Bool Suspend );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 	// XSelectionSupplier
-    virtual sal_Bool SAL_CALL select( const ::com::sun::star::uno::Any& aSelection ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getSelection(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addSelectionChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeSelectionChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener ) throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL select( const ::com::sun::star::uno::Any& aSelection );
+    virtual ::com::sun::star::uno::Any SAL_CALL getSelection(  );
+    virtual void SAL_CALL addSelectionChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener );
+    virtual void SAL_CALL removeSelectionChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::view::XSelectionChangeListener >& xListener );
 
 	// XPropertySet
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
     // XFormLayerAccess
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController > SAL_CALL getFormController( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >& Form ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL isFormDesignMode(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setFormDesignMode( ::sal_Bool DesignMode ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController > SAL_CALL getFormController( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XForm >& Form );
+    virtual ::sal_Bool SAL_CALL isFormDesignMode(  );
+    virtual void SAL_CALL setFormDesignMode( ::sal_Bool DesignMode );
 
     // XControlAccess
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl > SAL_CALL getControl( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& xModel ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl > SAL_CALL getControl( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& xModel );
 
 	// XDrawView
     virtual void SAL_CALL
         setCurrentPage (
             const ::com::sun::star::uno::Reference<
-            ::com::sun::star::drawing::XDrawPage >& xPage)
-        throw(::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::drawing::XDrawPage >& xPage);
 
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::drawing::XDrawPage > SAL_CALL
-        getCurrentPage (void)
-        throw(::com::sun::star::uno::RuntimeException);
+        getCurrentPage (void);
 
 
     // lang::XEventListener
     virtual void SAL_CALL
-        disposing (const ::com::sun::star::lang::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const ::com::sun::star::lang::EventObject& rEventObject);
 
 
     // view::XSelectionChangeListener
     virtual void  SAL_CALL
-        selectionChanged (const ::com::sun::star::lang::EventObject& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+        selectionChanged (const ::com::sun::star::lang::EventObject& rEvent);
 
 
     // XControllerManager
 
     virtual css::uno::Reference<css::drawing::framework::XConfigurationController> SAL_CALL
-        getConfigurationController (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getConfigurationController (void);
 
     virtual css::uno::Reference<css::drawing::framework::XModuleController> SAL_CALL
-        getModuleController (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getModuleController (void);
 
 
     // XUnoTunnel
 
-    virtual sal_Int64 SAL_CALL getSomething (const com::sun::star::uno::Sequence<sal_Int8>& rId)
-        throw (com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getSomething (const com::sun::star::uno::Sequence<sal_Int8>& rId);
 
 protected:
 	/** This method must return the name to index table. This table
@@ -283,22 +276,19 @@ protected:
 		::com::sun::star::uno::Any & rConvertedValue,
 		::com::sun::star::uno::Any & rOldValue,
 		sal_Int32 nHandle,
-		const ::com::sun::star::uno::Any& rValue )
-		throw (::com::sun::star::lang::IllegalArgumentException);
+		const ::com::sun::star::uno::Any& rValue );
 
 	/** The same as setFastPropertyValue, but no exception is thrown and nHandle
         is always valid. You must not broadcast the changes in this method.
 	 */
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
 		sal_Int32 nHandle,
-		const ::com::sun::star::uno::Any& rValue )
-		throw (::com::sun::star::uno::Exception);
+		const ::com::sun::star::uno::Any& rValue );
 
     /** When the called object has been disposed already this method throws
         a Disposed exception and does not return.
     */
-    void ThrowIfDisposed (void) const
-        throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 
 	using cppu::OPropertySetHelper::disposing;
 	using cppu::OPropertySetHelper::getFastPropertyValue;

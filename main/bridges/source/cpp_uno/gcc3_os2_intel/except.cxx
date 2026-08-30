@@ -58,7 +58,7 @@ static	void*	hmod;
 #ifdef TEST
 using namespace ::test;
 
-void dymmy_TestBridgeException() throw( ::test::TestBridgeException)
+void dymmy_TestBridgeException()
 {
    throw TestBridgeException();
 }

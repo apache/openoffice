@@ -72,13 +72,13 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL EditPropertyHandler::getImplementationName_static(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL EditPropertyHandler::getImplementationName_static(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.extensions.EditPropertyHandler" ) );
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL EditPropertyHandler::getSupportedServiceNames_static(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL EditPropertyHandler::getSupportedServiceNames_static(  )
     {
         Sequence< ::rtl::OUString > aSupported( 1 );
         aSupported[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.form.inspection.EditPropertyHandler" ) );
@@ -86,7 +86,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL EditPropertyHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL EditPropertyHandler::getPropertyValue( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId( impl_getPropertyId_throw( _rPropertyName ) );
@@ -142,7 +142,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL EditPropertyHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) throw (UnknownPropertyException, RuntimeException)
+    void SAL_CALL EditPropertyHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId( impl_getPropertyId_throw( _rPropertyName ) );
@@ -237,7 +237,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL EditPropertyHandler::getSupersededProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL EditPropertyHandler::getSupersededProperties( )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         ::std::vector< ::rtl::OUString > aSuperseded;
@@ -257,7 +257,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL EditPropertyHandler::getActuatingProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL EditPropertyHandler::getActuatingProperties( )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         ::std::vector< ::rtl::OUString > aInterestingActuatingProps;
@@ -268,7 +268,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL EditPropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool ) throw (NullPointerException, RuntimeException)
+    void SAL_CALL EditPropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& _rActuatingPropertyName, const Any& _rNewValue, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& _rxInspectorUI, sal_Bool )
     {
         if ( !_rxInspectorUI.is() )
             throw NullPointerException();

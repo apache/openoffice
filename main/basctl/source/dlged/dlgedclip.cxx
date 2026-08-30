@@ -82,7 +82,7 @@ sal_Bool DlgEdTransferableImpl::compareDataFlavors( const DataFlavor& lFlavor, c
 // XTransferable
 //----------------------------------------------------------------------------
 
-Any SAL_CALL DlgEdTransferableImpl::getTransferData( const DataFlavor& rFlavor ) throw(UnsupportedFlavorException, IOException, RuntimeException)
+Any SAL_CALL DlgEdTransferableImpl::getTransferData( const DataFlavor& rFlavor )
 {
     const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -105,7 +105,7 @@ Any SAL_CALL DlgEdTransferableImpl::getTransferData( const DataFlavor& rFlavor )
 
 //----------------------------------------------------------------------------
 
-Sequence< DataFlavor > SAL_CALL DlgEdTransferableImpl::getTransferDataFlavors(  ) throw(RuntimeException)
+Sequence< DataFlavor > SAL_CALL DlgEdTransferableImpl::getTransferDataFlavors(  )
 {
     const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -114,7 +114,7 @@ Sequence< DataFlavor > SAL_CALL DlgEdTransferableImpl::getTransferDataFlavors(  
 
 //----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL DlgEdTransferableImpl::isDataFlavorSupported( const DataFlavor& rFlavor ) throw(RuntimeException)
+sal_Bool SAL_CALL DlgEdTransferableImpl::isDataFlavorSupported( const DataFlavor& rFlavor )
 {
     const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -135,7 +135,7 @@ sal_Bool SAL_CALL DlgEdTransferableImpl::isDataFlavorSupported( const DataFlavor
 // XClipboardOwner
 //----------------------------------------------------------------------------
 
-void SAL_CALL DlgEdTransferableImpl::lostOwnership( const Reference< XClipboard >&, const Reference< XTransferable >& ) throw(RuntimeException)
+void SAL_CALL DlgEdTransferableImpl::lostOwnership( const Reference< XClipboard >&, const Reference< XTransferable >& )
 {
     const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

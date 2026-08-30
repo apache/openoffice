@@ -149,8 +149,7 @@ class FWE_DLLPUBLIC PreventDuplicateInteraction : private ThreadHelpBase2
 
             @threadsafe yes
         */
-        virtual void SAL_CALL handle(const css::uno::Reference< css::task::XInteractionRequest >& xRequest)
-            throw(css::uno::RuntimeException);
+        virtual void SAL_CALL handle(const css::uno::Reference< css::task::XInteractionRequest >& xRequest);
 
         //_________________________________
         /**
@@ -163,8 +162,7 @@ class FWE_DLLPUBLIC PreventDuplicateInteraction : private ThreadHelpBase2
 
             @threadsafe yes
         */
-        virtual ::sal_Bool SAL_CALL handleInteractionRequest( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Bool SAL_CALL handleInteractionRequest( const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest );
 
         //_________________________________
         /**
@@ -174,8 +172,7 @@ class FWE_DLLPUBLIC PreventDuplicateInteraction : private ThreadHelpBase2
 
             @threadsafe yes
         */
-        virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
     //_____________________________________
     // c++ interface
     public:

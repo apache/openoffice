@@ -69,7 +69,7 @@ namespace frm
 		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> _getTypes();
 
 	// XAggregation
-		virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType);
 
 	// OComponentHelper
 		virtual void SAL_CALL disposing();
@@ -79,26 +79,25 @@ namespace frm
 		virtual StringSequence SAL_CALL getSupportedServiceNames() throw();
 
 	// XPersistObject
-		virtual void SAL_CALL write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream) throw ( ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getServiceName() throw ( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream);
+		virtual void SAL_CALL read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream);
+		virtual ::rtl::OUString SAL_CALL getServiceName();
 
 	// XPropertySet
 		virtual void SAL_CALL getFastPropertyValue(::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
 		virtual sal_Bool SAL_CALL convertFastPropertyValue(::com::sun::star::uno::Any& rConvertedValue, ::com::sun::star::uno::Any& rOldValue,
-											  sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-											throw(::com::sun::star::lang::IllegalArgumentException);
-		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue) throw ( ::com::sun::star::uno::Exception);
+											  sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
+		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue);
 
 	// XLoadListener
-		virtual void SAL_CALL loaded(const ::com::sun::star::lang::EventObject& rEvent) throw ( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL loaded(const ::com::sun::star::lang::EventObject& rEvent);
 
 	// XPropertyState
 		void setPropertyToDefaultByHandle(sal_Int32 nHandle);
 		::com::sun::star::uno::Any getPropertyDefaultByHandle(sal_Int32 nHandle) const;
 
-		void SAL_CALL setPropertyToDefault(const ::rtl::OUString& aPropertyName) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
-		::com::sun::star::uno::Any SAL_CALL getPropertyDefault( const ::rtl::OUString& aPropertyName ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);
+		void SAL_CALL setPropertyToDefault(const ::rtl::OUString& aPropertyName);
+		::com::sun::star::uno::Any SAL_CALL getPropertyDefault( const ::rtl::OUString& aPropertyName );
 
         // OControlModel's property handling
 	    virtual void describeFixedProperties(
@@ -109,7 +108,7 @@ namespace frm
         ) const;
 
 	// XPropertyChangeListener
-		virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt) throw(::com::sun::star::uno::RuntimeException);
+		virtual void _propertyChanged(const ::com::sun::star::beans::PropertyChangeEvent& evt);
 
     // prevent method hiding
         using OEditBaseModel::disposing;
@@ -161,7 +160,7 @@ namespace frm
 		virtual ~OFormattedControl();
 
 		DECLARE_UNO3_AGG_DEFAULTS(OFormattedControl, OBoundControl);
-		virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation(const ::com::sun::star::uno::Type& _rType);
 
 		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> _getTypes();
 
@@ -170,14 +169,14 @@ namespace frm
 		virtual StringSequence SAL_CALL getSupportedServiceNames() throw();
 
 	// ::com::sun::star::lang::XEventListener
-		virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource) throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& _rSource);
 
 	// ::com::sun::star::awt::XKeyListener
-		virtual void SAL_CALL keyPressed(const ::com::sun::star::awt::KeyEvent& e) throw ( ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL keyReleased(const ::com::sun::star::awt::KeyEvent& e) throw ( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL keyPressed(const ::com::sun::star::awt::KeyEvent& e);
+		virtual void SAL_CALL keyReleased(const ::com::sun::star::awt::KeyEvent& e);
 
 	// ::com::sun::star::awt::XControl
-		virtual void SAL_CALL setDesignMode(sal_Bool bOn) throw ( ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL setDesignMode(sal_Bool bOn);
 
     // disambiguation
         using OBoundControl::disposing;

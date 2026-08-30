@@ -39,8 +39,7 @@ public:
 			CustomShow& rCustomShow );
 	~CustomShowContext( );
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL
-		createFastChildContext( ::sal_Int32 aElementToken, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& /*xAttribs*/ )
-			throw ( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+		createFastChildContext( ::sal_Int32 aElementToken, const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& /*xAttribs*/ );
 };
 
 CustomShowContext::CustomShowContext( ContextHandler& rParent,
@@ -59,7 +58,6 @@ CustomShowContext::~CustomShowContext( )
 
 Reference< XFastContextHandler > SAL_CALL CustomShowContext::createFastChildContext( sal_Int32 aElementToken,
 	const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 {
 	Reference< XFastContextHandler > xRet;
 	switch( aElementToken )
@@ -90,7 +88,6 @@ CustomShowListContext::~CustomShowListContext( )
 
 Reference< XFastContextHandler > SAL_CALL CustomShowListContext::createFastChildContext( sal_Int32 aElementToken,
 	const Reference< XFastAttributeList >& xAttribs )
-		throw ( SAXException, RuntimeException )
 {
 	Reference< XFastContextHandler > xRet;
 	switch( aElementToken )

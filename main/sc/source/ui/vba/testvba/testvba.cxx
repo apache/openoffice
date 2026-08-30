@@ -121,7 +121,7 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 		mxSFA.set( mxMCF->createInstanceWithContext( rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" ), mxContext), uno::UNO_QUERY_THROW );
 	}
 
-	rtl::OUString getLogLocation() throw (  beans::UnknownPropertyException,  lang::IllegalArgumentException, lang::WrappedTargetException,  uno::Exception )
+	rtl::OUString getLogLocation()
 	{
 		rtl::OUString sLogLocation;
 		Reference< XPropertySet > pathSettings( mxMCF->createInstanceWithContext( rtl::OUString::createFromAscii( "com.sun.star.comp.framework.PathSettings" ), mxContext), uno::UNO_QUERY_THROW );
@@ -129,7 +129,7 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 		sLogLocation = sLogLocation.concat( rtl::OUString::createFromAscii( "/" ) ).concat( rtl::OUString::createFromAscii( "HelperAPI-test.log" ) );
 		return sLogLocation;
 	}
-	rtl::OUString getLogLocationWithName( OUString fileName ) throw (  beans::UnknownPropertyException,  lang::IllegalArgumentException, lang::WrappedTargetException,  uno::Exception )
+	rtl::OUString getLogLocationWithName( OUString fileName )
     {
         printf("%s\n", getenv("HOME") );
     	printf("file name %s\n", rtl::OUStringToOString( fileName, RTL_TEXTENCODING_UTF8 ).getStr() );

@@ -83,7 +83,6 @@ TabWinFactory::~TabWinFactory()
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL TabWinFactory::createInstanceWithContext(
 	const css::uno::Reference< css::uno::XComponentContext >& Context )
-throw ( css::uno::Exception, css::uno::RuntimeException )
 {
 	css::uno::Sequence< css::uno::Any > aArgs;
 
@@ -92,7 +91,6 @@ throw ( css::uno::Exception, css::uno::RuntimeException )
 
 css::uno::Reference< css::uno::XInterface > SAL_CALL TabWinFactory::createInstanceWithArgumentsAndContext(
 	const css::uno::Sequence< css::uno::Any >& Arguments, const css::uno::Reference< css::uno::XComponentContext >& )
-throw ( css::uno::Exception, css::uno::RuntimeException )
 {
     const rtl::OUString aTopWindowArgName( RTL_CONSTASCII_USTRINGPARAM( "TopWindow" ));
 

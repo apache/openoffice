@@ -300,13 +300,13 @@ LicenseDialog::LicenseDialog( Sequence<Any> const& args,
 
 // XExecutableDialog
 //______________________________________________________________________________
-void LicenseDialog::setTitle( OUString const & ) throw (RuntimeException)
+void LicenseDialog::setTitle( OUString const & )
 {
 
 }
 
 //______________________________________________________________________________
-sal_Int16 LicenseDialog::execute() throw (RuntimeException)
+sal_Int16 LicenseDialog::execute()
 {
     return vcl::solarthread::syncExecute(
         boost::bind( &LicenseDialog::solar_execute, this));

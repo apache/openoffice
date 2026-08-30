@@ -246,7 +246,7 @@ void DBTypeConversion::setValue(const Reference<XColumnUpdate>& xVariant,
 								const ::rtl::OUString& rString,
 								sal_Int32 nKey,
 								sal_Int16 nFieldType,
-								sal_Int16 nKeyType) throw(::com::sun::star::lang::IllegalArgumentException)
+								sal_Int16 nKeyType)
 {
 	double fValue = 0;
 	if (rString.getLength())
@@ -319,7 +319,7 @@ void DBTypeConversion::setValue(const Reference<XColumnUpdate>& xVariant,
 void DBTypeConversion::setValue(const Reference<XColumnUpdate>& xVariant,
 								const Date& rNullDate,
 								const double& rValue,
-								sal_Int16 nKeyType) throw(::com::sun::star::lang::IllegalArgumentException)
+								sal_Int16 nKeyType)
 {
 	switch (nKeyType & ~NumberFormat::DEFINED)
 	{

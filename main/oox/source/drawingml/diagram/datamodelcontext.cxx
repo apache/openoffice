@@ -60,7 +60,6 @@ public:
     virtual Reference< XFastContextHandler > SAL_CALL
 	createFastChildContext( sal_Int32 aElementToken,
 							const Reference< XFastAttributeList >& /*xAttribs*/ )
-		throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 
@@ -93,7 +92,6 @@ public:
     virtual Reference< XFastContextHandler > SAL_CALL
 	createFastChildContext( sal_Int32 aElementToken,
 							const Reference< XFastAttributeList >& xAttribs )
-		throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 
@@ -148,7 +146,6 @@ public:
     virtual Reference< XFastContextHandler > SAL_CALL
 	createFastChildContext( sal_Int32 aElementToken,
 							const Reference< XFastAttributeList >& /*xAttribs*/ )
-		throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 
@@ -199,7 +196,6 @@ public:
     virtual Reference< XFastContextHandler > SAL_CALL
 	createFastChildContext( sal_Int32 aElementToken,
 							const Reference< XFastAttributeList >& xAttribs )
-		throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 
@@ -240,7 +236,6 @@ public:
     virtual Reference< XFastContextHandler > SAL_CALL
 	createFastChildContext( sal_Int32 aElementToken,
 							const Reference< XFastAttributeList >& xAttribs )
-		throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 
@@ -293,7 +288,6 @@ DataModelContext::~DataModelContext()
 Reference< XFastContextHandler > SAL_CALL
 DataModelContext::createFastChildContext( ::sal_Int32 aElement,
 										  const Reference< XFastAttributeList >& /*xAttribs*/ )
-	throw ( SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 

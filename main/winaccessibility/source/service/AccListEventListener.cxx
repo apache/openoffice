@@ -46,7 +46,7 @@ AccListEventListener::~AccListEventListener()
  *	Uno's event notifier when event is captured
  *	@param AccessibleEventObject	the event object which contains information about event
  */
-void  AccListEventListener::notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException)
+void  AccListEventListener::notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent )
 {
     switch (aEvent.EventId)
     {

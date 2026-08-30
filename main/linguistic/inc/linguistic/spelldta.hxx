@@ -105,15 +105,15 @@ public:
 	virtual ~SpellAlternatives();
 
 	// XSpellAlternatives
-    virtual ::rtl::OUString SAL_CALL getWord(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int16 SAL_CALL getFailureType(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Int16 SAL_CALL getAlternativesCount(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getAlternatives(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getWord(  );
+    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  );
+    virtual ::sal_Int16 SAL_CALL getFailureType(  );
+    virtual ::sal_Int16 SAL_CALL getAlternativesCount(  );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getAlternatives(  );
 
     // XSetSpellAlternatives
-    virtual void SAL_CALL setAlternatives( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aAlternatives ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setFailureType( ::sal_Int16 nFailureType ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setAlternatives( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aAlternatives );
+    virtual void SAL_CALL setFailureType( ::sal_Int16 nFailureType );
 
 	// non-interface specific functions
 	void	SetWordLanguage(const ::rtl::OUString &rWord, sal_Int16 nLang);

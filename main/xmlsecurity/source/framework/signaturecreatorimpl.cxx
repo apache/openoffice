@@ -85,7 +85,6 @@ bool SignatureCreatorImpl::checkReady() const
 }
 
 void SignatureCreatorImpl::notifyResultListener() const
-	throw (cssu::Exception, cssu::RuntimeException)
 /****** SignatureCreatorImpl/notifyResultListener *****************************
  *
  *   NAME
@@ -121,7 +120,6 @@ void SignatureCreatorImpl::notifyResultListener() const
 void SignatureCreatorImpl::startEngine(	const cssu::Reference<
 	cssxc::XXMLSignatureTemplate >&
 	xSignatureTemplate)
-    	throw (cssu::Exception, cssu::RuntimeException)
 /****** SignatureCreatorImpl/startEngine *************************************
  *
  *   NAME
@@ -206,7 +204,6 @@ void SignatureCreatorImpl::clearUp() const
 
 /* XBlockerMonitor */
 void SAL_CALL SignatureCreatorImpl::setBlockerId( sal_Int32 id )
-    	throw (cssu::Exception, cssu::RuntimeException)
 {
 	m_nIdOfBlocker = id;
 	tryToPerform();
@@ -215,7 +212,6 @@ void SAL_CALL SignatureCreatorImpl::setBlockerId( sal_Int32 id )
 /* XSignatureCreationResultBroadcaster */
 void SAL_CALL SignatureCreatorImpl::addSignatureCreationResultListener(
 	const cssu::Reference< cssxc::sax::XSignatureCreationResultListener >& listener )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	m_xResultListener = listener;
 	tryToPerform();
@@ -223,13 +219,11 @@ void SAL_CALL SignatureCreatorImpl::addSignatureCreationResultListener(
 
 void SAL_CALL SignatureCreatorImpl::removeSignatureCreationResultListener(
 	const cssu::Reference< cssxc::sax::XSignatureCreationResultListener >&)
-	throw (cssu::RuntimeException)
 {
 }
 
 /* XInitialization */
 void SAL_CALL SignatureCreatorImpl::initialize( const cssu::Sequence< cssu::Any >& aArguments )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	OSL_ASSERT(aArguments.getLength() == 5);
 
@@ -246,19 +240,16 @@ void SAL_CALL SignatureCreatorImpl::initialize( const cssu::Sequence< cssu::Any 
 
 
 rtl::OUString SignatureCreatorImpl_getImplementationName ()
-	throw (cssu::RuntimeException)
 {
 	return rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
 sal_Bool SAL_CALL SignatureCreatorImpl_supportsService( const rtl::OUString& ServiceName )
-	throw (cssu::RuntimeException)
 {
 	return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ));
 }
 
 cssu::Sequence< rtl::OUString > SAL_CALL SignatureCreatorImpl_getSupportedServiceNames(  )
-	throw (cssu::RuntimeException)
 {
 	cssu::Sequence < rtl::OUString > aRet(1);
 	rtl::OUString* pArray = aRet.getArray();
@@ -269,24 +260,20 @@ cssu::Sequence< rtl::OUString > SAL_CALL SignatureCreatorImpl_getSupportedServic
 
 cssu::Reference< cssu::XInterface > SAL_CALL SignatureCreatorImpl_createInstance(
 	const cssu::Reference< cssl::XMultiServiceFactory >& rSMgr)
-	throw( cssu::Exception )
 {
 	return (cppu::OWeakObject*) new SignatureCreatorImpl( rSMgr );
 }
 
 /* XServiceInfo */
 rtl::OUString SAL_CALL SignatureCreatorImpl::getImplementationName(  )
-	throw (cssu::RuntimeException)
 {
 	return SignatureCreatorImpl_getImplementationName();
 }
 sal_Bool SAL_CALL SignatureCreatorImpl::supportsService( const rtl::OUString& rServiceName )
-	throw (cssu::RuntimeException)
 {
 	return SignatureCreatorImpl_supportsService( rServiceName );
 }
 cssu::Sequence< rtl::OUString > SAL_CALL SignatureCreatorImpl::getSupportedServiceNames(  )
-	throw (cssu::RuntimeException)
 {
 	return SignatureCreatorImpl_getSupportedServiceNames();
 }

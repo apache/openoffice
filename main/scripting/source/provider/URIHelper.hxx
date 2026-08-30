@@ -64,40 +64,30 @@ private:
 public:
 
     ScriptingFrameworkURIHelper(
-        const css::uno::Reference< css::uno::XComponentContext >& xContext )
-            throw( css::uno::RuntimeException );
+        const css::uno::Reference< css::uno::XComponentContext >& xContext );
 
     ~ScriptingFrameworkURIHelper();
 
     virtual void SAL_CALL
-        initialize( const css::uno::Sequence < css::uno::Any > & args )
-            throw ( css::uno::Exception, css::uno::RuntimeException);
+        initialize( const css::uno::Sequence < css::uno::Any > & args );
 
     virtual ::rtl::OUString SAL_CALL
-        getRootStorageURI()
-            throw ( ::com::sun::star::uno::RuntimeException );
+        getRootStorageURI();
 
     virtual ::rtl::OUString SAL_CALL
-        getScriptURI( const ::rtl::OUString& rStorageURI )
-            throw( css::lang::IllegalArgumentException,
-                   css::uno::RuntimeException );
+        getScriptURI( const ::rtl::OUString& rStorageURI );
 
     virtual ::rtl::OUString SAL_CALL
-        getStorageURI( const ::rtl::OUString& rScriptURI )
-            throw( css::lang::IllegalArgumentException,
-                   css::uno::RuntimeException );
+        getStorageURI( const ::rtl::OUString& rScriptURI );
 
     virtual ::rtl::OUString SAL_CALL
-        getImplementationName()
-            throw( css::uno::RuntimeException );
+        getImplementationName();
 
     virtual sal_Bool SAL_CALL
-        supportsService( const ::rtl::OUString& ServiceName )
-            throw( css::uno::RuntimeException );
+        supportsService( const ::rtl::OUString& ServiceName );
 
     virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames()
-            throw( css::uno::RuntimeException );
+        getSupportedServiceNames();
 };
 
 } // namespace func_provider

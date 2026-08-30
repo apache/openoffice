@@ -47,14 +47,14 @@ namespace toolkit
         virtual UnoControlModel*    Clone() const;
 
         // XPropertySet
-        ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
         // XPersistObject
-        ::rtl::OUString SAL_CALL getServiceName() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getServiceName();
 
         // XServiceInfo
-        ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+        ::rtl::OUString SAL_CALL getImplementationName(  );
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     protected:
                                     ~SpinningProgressControlModel();

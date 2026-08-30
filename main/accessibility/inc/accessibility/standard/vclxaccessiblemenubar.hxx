@@ -54,15 +54,15 @@ public:
 	virtual ~VCLXAccessibleMenuBar();
 
 	// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName() throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 	// XAccessibleContext
-	virtual sal_Int32 SAL_CALL getAccessibleIndexInParent(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int16 SAL_CALL getAccessibleRole(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getAccessibleIndexInParent(  );
+	virtual sal_Int16 SAL_CALL getAccessibleRole(  );
 
 	// XAccessibleExtendedComponent
-	virtual sal_Int32 SAL_CALL getBackground(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getBackground(  );
 };
 
 #endif // ACCESSIBILITY_STANDARD_VCLXACCESSIBLEMENUBAR_HXX

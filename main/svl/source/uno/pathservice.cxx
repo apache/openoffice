@@ -45,20 +45,17 @@ public:
 		{}
 
     virtual OUString SAL_CALL getImplementationName()
-		throw(css::uno::RuntimeException)
 		{
 			return OUString::createFromAscii("com.sun.star.comp.svl.PathService");
 		}
 
     virtual sal_Bool SAL_CALL supportsService (
 		const OUString & rName)
-		throw(css::uno::RuntimeException)
 		{
 			return (rName.compareToAscii("com.sun.star.config.SpecialConfigManager") == 0);
 		}
 
     virtual css::uno::Sequence< OUString > SAL_CALL getSupportedServiceNames()
-		throw(css::uno::RuntimeException)
 		{
 			css::uno::Sequence< OUString > aRet(1);
 			aRet.getArray()[0] = OUString::createFromAscii("com.sun.star.config.SpecialConfigManager");
@@ -67,23 +64,19 @@ public:
 
     virtual OUString SAL_CALL substituteVariables (
 		const OUString& sText)
-		throw(css::uno::RuntimeException)
 		{
 			return m_aOptions.SubstituteVariable( sText );
 		}
 
     virtual void SAL_CALL addPropertyChangeListener (
 		const OUString &, const css::uno::Reference< css::beans::XPropertyChangeListener > &)
-		throw(css::uno::RuntimeException)
 		{}
 
     virtual void SAL_CALL removePropertyChangeListener (
 		const OUString &, const css::uno::Reference< css::beans::XPropertyChangeListener > &)
-		throw(css::uno::RuntimeException)
 		{}
 
     virtual void SAL_CALL flush()
-		throw(css::uno::RuntimeException)
 		{}
 };
 

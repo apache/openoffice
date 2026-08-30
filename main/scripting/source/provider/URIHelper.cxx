@@ -62,7 +62,6 @@ static const char TDOC_SCHEME[] = "vnd.sun.star.tdoc";
 
 ScriptingFrameworkURIHelper::ScriptingFrameworkURIHelper(
     const uno::Reference< uno::XComponentContext >& xContext)
-        throw( uno::RuntimeException )
 {
     try
     {
@@ -101,7 +100,6 @@ ScriptingFrameworkURIHelper::~ScriptingFrameworkURIHelper()
 void SAL_CALL
 ScriptingFrameworkURIHelper::initialize(
     const uno::Sequence < uno::Any >& args )
-throw ( uno::Exception, uno::RuntimeException )
 {
     if ( args.getLength() != 2 ||
          args[0].getValueType() != ::getCppuType((const OUString*)NULL) ||
@@ -232,7 +230,6 @@ ScriptingFrameworkURIHelper::getLanguagePath(const OUString& rLanguagePart)
 
 OUString SAL_CALL
 ScriptingFrameworkURIHelper::getScriptURI(const OUString& rStorageURI)
-    throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
     ::rtl::OUStringBuffer buf(120);
 
@@ -248,7 +245,6 @@ ScriptingFrameworkURIHelper::getScriptURI(const OUString& rStorageURI)
 
 OUString SAL_CALL
 ScriptingFrameworkURIHelper::getStorageURI(const OUString& rScriptURI)
-    throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
     OUString sLanguagePart;
     try
@@ -276,14 +272,12 @@ ScriptingFrameworkURIHelper::getStorageURI(const OUString& rScriptURI)
 
 OUString SAL_CALL
 ScriptingFrameworkURIHelper::getRootStorageURI()
-    throw( uno::RuntimeException )
 {
     return m_sBaseURI;
 }
 
 OUString SAL_CALL
 ScriptingFrameworkURIHelper::getImplementationName()
-    throw( uno::RuntimeException )
 {
     return OUString::createFromAscii(
         "com.sun.star.script.provider.ScriptURIHelper" );
@@ -291,7 +285,6 @@ ScriptingFrameworkURIHelper::getImplementationName()
 
 sal_Bool SAL_CALL
 ScriptingFrameworkURIHelper::supportsService( const OUString& serviceName )
-    throw( uno::RuntimeException )
 {
     OUString m_sServiceName = OUString::createFromAscii(
         "com.sun.star.script.provider.ScriptURIHelper" );
@@ -305,7 +298,6 @@ ScriptingFrameworkURIHelper::supportsService( const OUString& serviceName )
 
 uno::Sequence< ::rtl::OUString > SAL_CALL
 ScriptingFrameworkURIHelper::getSupportedServiceNames()
-    throw( uno::RuntimeException )
 {
     ::rtl::OUString serviceNameList[] = {
         ::rtl::OUString::createFromAscii(

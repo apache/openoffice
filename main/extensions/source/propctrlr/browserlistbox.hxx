@@ -86,9 +86,9 @@ namespace pcr
     class SAL_NO_VTABLE IControlContext
     {
     public:
-        virtual void SAL_CALL focusGained( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) throw (::com::sun::star::uno::RuntimeException) = 0;
-        virtual void SAL_CALL valueChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) throw (::com::sun::star::uno::RuntimeException) = 0;
-        virtual void SAL_CALL activateNextControl( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& CurrentControl ) throw (::com::sun::star::uno::RuntimeException) = 0;
+        virtual void SAL_CALL focusGained( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) = 0;
+        virtual void SAL_CALL valueChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) = 0;
+        virtual void SAL_CALL activateNextControl( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& CurrentControl ) = 0;
     };
 
     //========================================================================
@@ -174,9 +174,9 @@ namespace pcr
 
     protected:
         // IControlContext
-        virtual void SAL_CALL focusGained( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL valueChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL activateNextControl( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& CurrentControl ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL focusGained( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control );
+        virtual void SAL_CALL valueChanged( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& Control );
+        virtual void SAL_CALL activateNextControl( const ::com::sun::star::uno::Reference< ::com::sun::star::inspection::XPropertyControl >& CurrentControl );
 
         // IButtonClickListener
         void    buttonClicked( OBrowserLine* _pLine, sal_Bool _bPrimary );

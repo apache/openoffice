@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Building Apache OpenOffice with Bazel
 
 This document describes how to set up a development machine and run Bazel builds
@@ -74,6 +93,7 @@ The generated `@vs_config//:paths.bzl` exposes `VS`, `VC`, `SDK`, `MSVC_TMP`,
 ## 3. How the build is wired
 
 ### MODULE.bazel + registries
+
 Dependencies are declared in [MODULE.bazel](../MODULE.bazel) (bzlmod). Two
 registries are consulted, in order ([.bazelrc](../.bazelrc)):
 
@@ -87,12 +107,13 @@ registries are consulted, in order ([.bazelrc](../.bazelrc)):
 all match BCR's resolution.
 
 ### Toolchain (dual-arch)
+
 Two custom VS2008 (VC9) toolchains live in [build/toolchain](toolchain/) — one
 per architecture — both registered in `MODULE.bazel`:
 
 ```python
-register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")  # 32-bit x86 (default)
-register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")  # 64-bit x64 (Win64)
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x86_def")  # 32-bit x86 (default)
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x64_def")  # 64-bit x64 (Win64)
 ```
 
 Which one Bazel uses is decided by the **target platform**, not a flag. The
@@ -115,6 +136,7 @@ full rationale): `/Zc:wchar_t-`, `_HAS_ITERATOR_DEBUGGING=0` set globally, `/Z7`
 with `/Cx`.
 
 ### Where BUILD files live
+
 **`main/<package>/BUILD.bazel`** — at the *module root*, **not** under `prj/`.
 `cc_library`/`cc_binary` need `glob()` access to sources, which requires the
 BUILD file at the module root. The legacy `prj/build.lst` is still parsed by hand
@@ -122,6 +144,7 @@ to derive `deps`, and `prj/d.lst` describes the legacy delivery layout, but
 neither is the Bazel build entry point.
 
 ### Custom rules
+
 Reusable Starlark rules live in [build/rules/](rules/): the SDI compiler
 (`sdi_target.bzl`), IDL pipeline (`idl_pipeline.bzl`), resource compiler
 (`rsc_pipeline.bzl`), locale data codegen (`localedata_pipeline.bzl`), scp2
@@ -135,6 +158,7 @@ installer archives (`scp2.bzl`), RDB merge (`merge_rdb.bzl`), and image packing
 > Independent commands print to stderr; you do not need `2>&1`.
 
 ### Choosing the architecture (x86 vs x64)
+
 The default build is **32-bit x86**. To build **64-bit x64** (Win64), pass the
 `--config=winXP-x64` convenience config (defined in [.bazelrc](../.bazelrc)):
 
@@ -155,6 +179,7 @@ the Win64 build, and read `bazel-winXP-x86-bin` as `bazel-winXP-x64-bin` in the
 output paths.
 
 ### Build a single module
+
 ```bash
 bazel build //main/sal:sal
 bazel build //main/sw:sw
@@ -162,11 +187,13 @@ bazel build //main/cui:cui
 ```
 
 ### Build everything migrated
+
 ```bash
 bazel build //main/...
 ```
 
 ### Assemble a runnable install tree
+
 The [//main/staging](../main/staging/readme.md) package collects every build
 output into a real OpenOffice install layout:
 
@@ -188,11 +215,13 @@ install/
 To also stage the full Python standard library, build `//main/staging:install_all`.
 
 ### Run it
+
 ```bash
 bazel-winXP-x86-bin\main\staging\install\program\soffice.exe
 ```
 
 ### Inspect the dependency graph
+
 ```bash
 bazel query "deps(//main/sw:sw)"
 bazel cquery //main/staging:install --output=files
@@ -203,6 +232,7 @@ bazel cquery //main/staging:install --output=files
 ## 5. Optional features
 
 ### Languages / locales
+
 The default build is **en-US only** (the demo baseline). Locale flags are
 defined in [build/BUILD.bazel](BUILD.bazel) from [build/langs.bzl](langs.bzl).
 Enable additional UI languages in `user.bazelrc` or on the command line:
@@ -217,6 +247,7 @@ build --//build:lang_de=True --//build:lang_fr=True
 > [CLAUDE.md](../CLAUDE.md).
 
 ### ATL modules
+
 ATL modules need ATLMFC (VS Pro/Enterprise). On such an install, opt in:
 
 ```bash
@@ -342,9 +373,11 @@ containers passed between DLLs will read garbage.
   listed in a module's `remote_patches`. Workaround: patch via an `overlay`
   for *all* affected files and omit the `patches` section entirely.
 - **Never edit the Bazel cache by hand.** To refresh dependency resolution:
+
   ```bash
   bazel mod deps --lockfile_mode=refresh
   ```
+
   Commit `MODULE.bazel` and `MODULE.bazel.lock` together.
 - **Silent exit on bootstrap failure** — if `UserInstallation` /
   `BaseInstallation` can't be resolved, `soffice.exe` exits with no dialog.
@@ -364,4 +397,67 @@ containers passed between DLLs will read garbage.
 5. Add a `readme.md` to the module summarizing the migration.
 6. Once the build succeeds, update the **frontier** in [CLAUDE.md](../CLAUDE.md)
    and move the module into [Migrated-packages.md](../Migrated-packages.md).
+
+---
+
+## 9. Helper scripts in `build/tools/`
+
+Most files here are **build-step helpers**: a Bazel rule runs them as part of an
+action, and they are listed in `build/tools/BUILD.bazel` under `exports_files`
+so a rule can name them as a label (`make_images_zip.pl`, `fcfg_merge.pl`,
+`stage_install.pl`, …). Adding one means adding it to that list.
+
+`throwspec.py` is the exception and is **not** in `exports_files`. It is a
+**one-shot source migration tool**: no rule refers to it, it edits the source
+tree in place, and it is run by hand. It lives here because the knowledge in it
+is worth more than the script.
+
+### `throwspec.py` — C++ dynamic exception specifications
+
+```bash
+python build/tools/throwspec.py report   # classify every site, change nothing
+python build/tools/throwspec.py apply    # delete the specifications with a type list
+python build/tools/throwspec.py verify   # check a finished rewrite against HEAD
 ```
+
+It removed 72,490 `throw(X)` / `SAL_THROW( (X) )` specifications across 5,063
+files in one commit — which had to be one commit, because the specifications are
+also **generated** (`InterfaceType::dumpExceptionSpecification` in
+`main/codemaker/source/cppumaker/cpputype.cxx`), and an override carrying no
+specification is *less* restrictive than a base that has one. Stripping
+hand-written overrides while generated bases keep theirs only trades one error
+set for another.
+
+**What it is really for.** A regular expression cannot tell these apart — both
+are the token `throw`, whitespace, `(`, a name, `)`:
+
+```cpp
+void foo( int n ) throw (RuntimeException);     // specification -> delete
+if ( bad ) throw (UINT) ERROR_ALREADY_RUNNING;  // statement     -> keep
+```
+
+So the script lexes each file into code / comment / string first, then accepts a
+site as a specification only when the argument parses as a type list, the
+preceding token is `)` / `const` / `volatile`, the argument is non-empty, **and**
+the following token is one of `{ ; = : , ) #`. That last condition exists for
+exactly one site in the whole tree (`desktop/win32/source/setup/setup_main.cxx`,
+a throw statement whose operand carries a C-style cast) and every weaker rule
+gets it wrong. The rules are commented in full at the top of the file — read
+them there before changing any of them.
+
+Everything the classifier rejects is **reported, never silently skipped**; there
+were 30 such sites and all 30 want human eyes.
+
+**`verify` is the reason a change this size is reviewable.** The rewrite only
+ever deletes, so per file the counts of `{`, `}` and `;` must come out unchanged
+and `(` / `)` must drop equally. That covers a five-thousand-file diff in
+seconds. Files you also edited by hand will show up in its output — reconcile
+the list against what you touched deliberately rather than expecting it empty.
+
+**Next use.** The follow-up task migrates the *empty* specification (`throw()`,
+which MSVC implements as `__declspec(nothrow)`) to `noexcept`; those sites are
+already reported under kind `EMPTY`. Select those instead of `SPEC` and give
+`rewrite()` a substituting variant — the span bookkeeping is identical, only the
+replacement text differs. Note that `noexcept` cannot be written literally while
+VS2008 is the default toolchain; see the frontier in
+[CLAUDE.md](../CLAUDE.md).

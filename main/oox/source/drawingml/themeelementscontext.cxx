@@ -44,7 +44,7 @@ class FillStyleListContext : public ContextHandler
 {
 public:
     FillStyleListContext( ContextHandler& rParent, FillStyleList& rFillStyleList );
-    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
+    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs );
 
 private:
     FillStyleList& mrFillStyleList;
@@ -57,7 +57,6 @@ FillStyleListContext::FillStyleListContext( ContextHandler& rParent, FillStyleLi
 }
 
 Reference< XFastContextHandler > FillStyleListContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs )
-	throw (SAXException, RuntimeException)
 {
     switch( nElement )
 	{
@@ -79,7 +78,7 @@ class LineStyleListContext : public ContextHandler
 {
 public:
     LineStyleListContext( ContextHandler& rParent, LineStyleList& rLineStyleList );
-    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
+    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs );
 
 private:
     LineStyleList& mrLineStyleList;
@@ -92,7 +91,6 @@ LineStyleListContext::LineStyleListContext( ContextHandler& rParent, LineStyleLi
 }
 
 Reference< XFastContextHandler > LineStyleListContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs )
-	throw (SAXException, RuntimeException)
 {
     switch( nElement )
 	{
@@ -109,7 +107,7 @@ class EffectStyleListContext : public ContextHandler
 {
 public:
     EffectStyleListContext( ContextHandler& rParent, EffectStyleList& rEffectStyleList );
-    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
+    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs );
 
 private:
     EffectStyleList& mrEffectStyleList;
@@ -121,7 +119,7 @@ EffectStyleListContext::EffectStyleListContext( ContextHandler& rParent, EffectS
 {
 }
 
-Reference< XFastContextHandler > EffectStyleListContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& /*xAttribs*/ ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > EffectStyleListContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& /*xAttribs*/ )
 {
     switch( nElement )
 	{
@@ -139,8 +137,8 @@ class FontSchemeContext : public ContextHandler
 {
 public:
     FontSchemeContext( ContextHandler& rParent, FontScheme& rFontScheme );
-    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs ) throw (SAXException, RuntimeException);
-    virtual void SAL_CALL endFastElement( sal_Int32 nElement ) throw (SAXException, RuntimeException);
+    virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& Attribs );
+    virtual void SAL_CALL endFastElement( sal_Int32 nElement );
 
 private:
     FontScheme& mrFontScheme;
@@ -154,7 +152,6 @@ FontSchemeContext::FontSchemeContext( ContextHandler& rParent, FontScheme& rFont
 }
 
 Reference< XFastContextHandler > FontSchemeContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
-    throw (SAXException, RuntimeException)
 {
     AttributeList aAttribs( rxAttribs );
     switch( nElement )
@@ -184,7 +181,7 @@ Reference< XFastContextHandler > FontSchemeContext::createFastChildContext( sal_
     return 0;
 }
 
-void FontSchemeContext::endFastElement( sal_Int32 nElement ) throw (SAXException, RuntimeException)
+void FontSchemeContext::endFastElement( sal_Int32 nElement )
 {
     switch( nElement )
     {
@@ -203,7 +200,7 @@ ThemeElementsContext::ThemeElementsContext( ContextHandler& rParent, Theme& rThe
 {
 }
 
-Reference< XFastContextHandler > ThemeElementsContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > ThemeElementsContext::createFastChildContext( sal_Int32 nElement, const Reference< XFastAttributeList >& xAttribs )
 {
 	// CT_BaseStyles
 	Reference< XFastContextHandler > xRet;

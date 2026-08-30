@@ -52,7 +52,7 @@ using com::sun::star::uno::RuntimeException;
 namespace pyuno_loader
 {
 
-static void raiseRuntimeExceptionWhenNeeded() throw ( RuntimeException )
+static void raiseRuntimeExceptionWhenNeeded()
 {
     if( PyErr_Occurred() )
     {
@@ -68,7 +68,7 @@ static void raiseRuntimeExceptionWhenNeeded() throw ( RuntimeException )
     }
 }
 
-static PyRef getLoaderModule() throw( RuntimeException )
+static PyRef getLoaderModule()
 {
     PyRef module(
         PyImport_ImportModule( const_cast< char * >("pythonloader") ),
@@ -84,7 +84,6 @@ static PyRef getLoaderModule() throw( RuntimeException )
 }
 
 static PyRef getObjectFromLoaderModule( const char * func )
-    throw ( RuntimeException )
 {
     PyRef object( PyDict_GetItemString(getLoaderModule().get(), (char*)func ) );
     if( !object.is() )

@@ -430,7 +430,6 @@ void Axis::AllocateSubGrids()
 
 // ____ XAxis ____
 void SAL_CALL Axis::setScaleData( const chart2::ScaleData& rScaleData )
-    throw (uno::RuntimeException)
 {
     Reference< util::XModifyListener > xModifyEventForwarder;
     Reference< lang::XEventListener > xEventListener;
@@ -460,7 +459,6 @@ void SAL_CALL Axis::setScaleData( const chart2::ScaleData& rScaleData )
 }
 
 chart2::ScaleData SAL_CALL Axis::getScaleData()
-    throw (uno::RuntimeException)
 {
     // /--
     MutexGuard aGuard( m_aMutex );
@@ -469,7 +467,6 @@ chart2::ScaleData SAL_CALL Axis::getScaleData()
 }
 
 Reference< beans::XPropertySet > SAL_CALL Axis::getGridProperties()
-    throw (uno::RuntimeException)
 {
     // /--
     MutexGuard aGuard( m_aMutex );
@@ -477,7 +474,6 @@ Reference< beans::XPropertySet > SAL_CALL Axis::getGridProperties()
     // \--
 }
 Sequence< Reference< beans::XPropertySet > > SAL_CALL Axis::getSubGridProperties()
-    throw (uno::RuntimeException)
 {
     // /--
     MutexGuard aGuard( m_aMutex );
@@ -486,7 +482,6 @@ Sequence< Reference< beans::XPropertySet > > SAL_CALL Axis::getSubGridProperties
 }
 
 Sequence< Reference< beans::XPropertySet > > SAL_CALL Axis::getSubTickProperties()
-    throw (uno::RuntimeException)
 {
     OSL_ENSURE( false, "Not implemented yet" );
     return Sequence< Reference< beans::XPropertySet > >();
@@ -495,7 +490,6 @@ Sequence< Reference< beans::XPropertySet > > SAL_CALL Axis::getSubTickProperties
 
 // ____ XTitled ____
 Reference< chart2::XTitle > SAL_CALL Axis::getTitleObject()
-    throw (uno::RuntimeException)
 {
     // /--
     MutexGuard aGuard( GetMutex() );
@@ -504,7 +498,6 @@ Reference< chart2::XTitle > SAL_CALL Axis::getTitleObject()
 }
 
 void SAL_CALL Axis::setTitleObject( const Reference< chart2::XTitle >& xNewTitle )
-    throw (uno::RuntimeException)
 {
     Reference< util::XModifyListener > xModifyEventForwarder;
     Reference< chart2::XTitle > xOldTitle;
@@ -525,7 +518,6 @@ void SAL_CALL Axis::setTitleObject( const Reference< chart2::XTitle >& xNewTitle
 
 // ____ XCloneable ____
 Reference< util::XCloneable > SAL_CALL Axis::createClone()
-    throw (uno::RuntimeException)
 {
     Axis * pNewAxis( new Axis( *this ));
     // hold a reference to the clone
@@ -537,7 +529,6 @@ Reference< util::XCloneable > SAL_CALL Axis::createClone()
 
 // ____ XModifyBroadcaster ____
 void SAL_CALL Axis::addModifyListener( const Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -551,7 +542,6 @@ void SAL_CALL Axis::addModifyListener( const Reference< util::XModifyListener >&
 }
 
 void SAL_CALL Axis::removeModifyListener( const Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -566,14 +556,12 @@ void SAL_CALL Axis::removeModifyListener( const Reference< util::XModifyListener
 
 // ____ XModifyListener ____
 void SAL_CALL Axis::modified( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
     m_xModifyEventForwarder->modified( aEvent );
 }
 
 // ____ XEventListener (base of XModifyListener) ____
 void SAL_CALL Axis::disposing( const lang::EventObject& Source )
-    throw (uno::RuntimeException)
 {
     if( Source.Source == m_aScaleData.Categories )
         m_aScaleData.Categories = 0;
@@ -594,7 +582,6 @@ void Axis::fireModifyEvent()
 
 // ____ OPropertySet ____
 uno::Any Axis::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticAxisDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -610,7 +597,6 @@ uno::Any Axis::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 Reference< beans::XPropertySetInfo > SAL_CALL Axis::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticAxisInfo::get();
 }

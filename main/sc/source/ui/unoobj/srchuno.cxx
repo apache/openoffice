@@ -108,14 +108,13 @@ ScCellSearchObj::~ScCellSearchObj()
 
 // XSearchDescriptor
 
-rtl::OUString SAL_CALL ScCellSearchObj::getSearchString() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScCellSearchObj::getSearchString()
 {
 	ScUnoGuard aGuard;
 	return pSearchItem->GetSearchString();
 }
 
 void SAL_CALL ScCellSearchObj::setSearchString( const rtl::OUString& aString )
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	pSearchItem->SetSearchString( aString );
@@ -123,14 +122,13 @@ void SAL_CALL ScCellSearchObj::setSearchString( const rtl::OUString& aString )
 
 // XReplaceDescriptor
 
-rtl::OUString SAL_CALL ScCellSearchObj::getReplaceString() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScCellSearchObj::getReplaceString()
 {
 	ScUnoGuard aGuard;
 	return pSearchItem->GetReplaceString();
 }
 
 void SAL_CALL ScCellSearchObj::setReplaceString( const rtl::OUString& aReplaceString )
-													throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	pSearchItem->SetReplaceString( aReplaceString );
@@ -139,7 +137,6 @@ void SAL_CALL ScCellSearchObj::setReplaceString( const rtl::OUString& aReplaceSt
 // XPropertySet
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScCellSearchObj::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	static uno::Reference<beans::XPropertySetInfo> aRef(
@@ -149,9 +146,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScCellSearchObj::getPropertySet
 
 void SAL_CALL ScCellSearchObj::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	String aString(aPropertyName);
@@ -171,8 +165,6 @@ void SAL_CALL ScCellSearchObj::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScCellSearchObj::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	String aString(aPropertyName);
@@ -198,13 +190,12 @@ SC_IMPL_DUMMY_PROPERTY_LISTENER( ScCellSearchObj )
 
 // XServiceInfo
 
-rtl::OUString SAL_CALL ScCellSearchObj::getImplementationName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScCellSearchObj::getImplementationName()
 {
 	return rtl::OUString::createFromAscii( "ScCellSearchObj" );
 }
 
 sal_Bool SAL_CALL ScCellSearchObj::supportsService( const rtl::OUString& rServiceName )
-													throw(uno::RuntimeException)
 {
 	String aServiceStr(rServiceName);
 	return aServiceStr.EqualsAscii( SCSEARCHDESCRIPTOR_SERVICE ) ||
@@ -212,7 +203,6 @@ sal_Bool SAL_CALL ScCellSearchObj::supportsService( const rtl::OUString& rServic
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL ScCellSearchObj::getSupportedServiceNames()
-													throw(uno::RuntimeException)
 {
 	uno::Sequence<rtl::OUString> aRet(2);
 	rtl::OUString* pArray = aRet.getArray();
@@ -224,7 +214,7 @@ uno::Sequence<rtl::OUString> SAL_CALL ScCellSearchObj::getSupportedServiceNames(
 // XUnoTunnel
 
 sal_Int64 SAL_CALL ScCellSearchObj::getSomething(
-				const uno::Sequence<sal_Int8 >& rId ) throw(uno::RuntimeException)
+				const uno::Sequence<sal_Int8 >& rId )
 {
 	if ( rId.getLength() == 16 &&
           0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),

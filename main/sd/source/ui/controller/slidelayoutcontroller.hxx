@@ -37,8 +37,8 @@ public:
 	virtual ::Window* createPopupWindow( ::Window* pParent );
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 	using svt::PopupWindowController::createPopupWindow;
 private:

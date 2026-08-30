@@ -57,7 +57,6 @@ void SAL_CALL PropertySet::disposing (void)
 //----- XPropertySet ----------------------------------------------------------
 
 Reference<beans::XPropertySetInfo> SAL_CALL PropertySet::getPropertySetInfo (void)
-    throw(RuntimeException)
 {
     return NULL;
 }
@@ -68,11 +67,6 @@ Reference<beans::XPropertySetInfo> SAL_CALL PropertySet::getPropertySetInfo (voi
 void SAL_CALL PropertySet::setPropertyValue (
     const rtl::OUString& rsPropertyName,
     const css::uno::Any& rsPropertyValue)
-    throw(css::beans::UnknownPropertyException,
-        css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException,
-        css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -97,9 +91,6 @@ void SAL_CALL PropertySet::setPropertyValue (
 
 
 Any SAL_CALL PropertySet::getPropertyValue (const OUString& rsPropertyName)
-        throw(css::beans::UnknownPropertyException,
-            css::lang::WrappedTargetException,
-            css::uno::RuntimeException)
 {
     ThrowIfDisposed();
 
@@ -112,9 +103,6 @@ Any SAL_CALL PropertySet::getPropertyValue (const OUString& rsPropertyName)
 void SAL_CALL PropertySet::addPropertyChangeListener (
     const rtl::OUString& rsPropertyName,
     const css::uno::Reference<css::beans::XPropertyChangeListener>& rxListener)
-    throw(css::beans::UnknownPropertyException,
-        css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     if ( ! rxListener.is())
         throw lang::IllegalArgumentException();
@@ -134,9 +122,6 @@ void SAL_CALL PropertySet::addPropertyChangeListener (
 void SAL_CALL PropertySet::removePropertyChangeListener (
     const rtl::OUString& rsPropertyName,
     const css::uno::Reference<css::beans::XPropertyChangeListener>& rxListener)
-    throw(beans::UnknownPropertyException,
-        css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     ::std::pair<ChangeListenerContainer::iterator,ChangeListenerContainer::iterator>
         aRange (mpChangeListeners->equal_range(rsPropertyName));
@@ -165,9 +150,6 @@ void SAL_CALL PropertySet::removePropertyChangeListener (
 void SAL_CALL PropertySet::addVetoableChangeListener (
     const rtl::OUString& rsPropertyName,
     const css::uno::Reference<css::beans::XVetoableChangeListener>& rxListener)
-    throw(css::beans::UnknownPropertyException,
-        css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     // Constraint properties are not supported and thus no vetoable
     // listeners.
@@ -181,9 +163,6 @@ void SAL_CALL PropertySet::addVetoableChangeListener (
 void SAL_CALL PropertySet::removeVetoableChangeListener (
     const rtl::OUString& rsPropertyName,
     const css::uno::Reference<css::beans::XVetoableChangeListener>& rxListener)
-    throw(css::beans::UnknownPropertyException,
-        css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     // Constraint properties are not supported and thus no vetoable
     // listeners.
@@ -214,7 +193,6 @@ void PropertySet::CallListeners (
 
 
 void PropertySet::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

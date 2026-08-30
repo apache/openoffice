@@ -68,7 +68,7 @@ class IniParser
     IniSectionMap mAllSection;
 public:
     IniSectionMap * getAllSection(){return &mAllSection;};
-    IniParser(OUString const & rIniName) throw(com::sun::star::io::IOException );
+    IniParser(OUString const & rIniName);
 #if OSL_DEBUG_LEVEL > 0
     void Dump();
 #endif

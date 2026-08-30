@@ -81,8 +81,6 @@ Reference< uno::XComponentContext > ChartType::GetComponentContext() const
 // ____ XChartType ____
 Reference< chart2::XCoordinateSystem > SAL_CALL
     ChartType::createCoordinateSystem( ::sal_Int32 DimensionCount )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     Reference< chart2::XCoordinateSystem > xResult(
         new CartesianCoordinateSystem(
@@ -115,7 +113,6 @@ Reference< chart2::XCoordinateSystem > SAL_CALL
 }
 
 Sequence< OUString > SAL_CALL ChartType::getSupportedMandatoryRoles()
-    throw (uno::RuntimeException)
 {
     static Sequence< OUString > aDefaultSeq;
 
@@ -130,7 +127,6 @@ Sequence< OUString > SAL_CALL ChartType::getSupportedMandatoryRoles()
 }
 
 Sequence< OUString > SAL_CALL ChartType::getSupportedOptionalRoles()
-    throw (uno::RuntimeException)
 {
     static Sequence< OUString > aDefaultOptRolesSeq;
 
@@ -144,7 +140,6 @@ Sequence< OUString > SAL_CALL ChartType::getSupportedOptionalRoles()
 }
 
 OUString SAL_CALL ChartType::getRoleOfSequenceForSeriesLabel()
-    throw (uno::RuntimeException)
 {
     return C2U( "values-y" );
 }
@@ -162,16 +157,12 @@ void ChartType::impl_addDataSeriesWithoutNotification(
 
 // ____ XDataSeriesContainer ____
 void SAL_CALL ChartType::addDataSeries( const Reference< chart2::XDataSeries >& xDataSeries )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     impl_addDataSeriesWithoutNotification( xDataSeries );
     fireModifyEvent();
 }
 
 void SAL_CALL ChartType::removeDataSeries( const Reference< chart2::XDataSeries >& xDataSeries )
-    throw (container::NoSuchElementException,
-           uno::RuntimeException)
 {
     if( !xDataSeries.is())
         throw container::NoSuchElementException();
@@ -190,14 +181,11 @@ void SAL_CALL ChartType::removeDataSeries( const Reference< chart2::XDataSeries 
 }
 
 Sequence< Reference< chart2::XDataSeries > > SAL_CALL ChartType::getDataSeries()
-    throw (uno::RuntimeException)
 {
     return ContainerHelper::ContainerToSequence( m_aDataSeries );
 }
 
 void SAL_CALL ChartType::setDataSeries( const Sequence< Reference< chart2::XDataSeries > >& aDataSeries )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     m_bNotifyChanges = false;
     try
@@ -221,7 +209,6 @@ void SAL_CALL ChartType::setDataSeries( const Sequence< Reference< chart2::XData
 
 // ____ OPropertySet ____
 uno::Any ChartType::GetDefaultValue( sal_Int32 /* nHandle */ ) const
-    throw(beans::UnknownPropertyException)
 {
     return uno::Any();
 }
@@ -268,14 +255,12 @@ struct StaticChartTypeInfo : public rtl::StaticAggregate< uno::Reference< beans:
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL ChartType::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticChartTypeInfo::get();
 }
 
 // ____ XModifyBroadcaster ____
 void SAL_CALL ChartType::addModifyListener( const uno::Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -289,7 +274,6 @@ void SAL_CALL ChartType::addModifyListener( const uno::Reference< util::XModifyL
 }
 
 void SAL_CALL ChartType::removeModifyListener( const uno::Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -304,14 +288,12 @@ void SAL_CALL ChartType::removeModifyListener( const uno::Reference< util::XModi
 
 // ____ XModifyListener ____
 void SAL_CALL ChartType::modified( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
     m_xModifyEventForwarder->modified( aEvent );
 }
 
 // ____ XEventListener (base of XModifyListener) ____
 void SAL_CALL ChartType::disposing( const lang::EventObject& /* Source */ )
-    throw (uno::RuntimeException)
 {
     // nothing
 }

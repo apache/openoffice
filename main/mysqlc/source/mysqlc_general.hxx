@@ -37,15 +37,13 @@ namespace mysqlc_sdbc_driver
             const sal_Char* _pAsciiFeatureName,
             const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
             const ::com::sun::star::uno::Any* _pNextException = NULL
-        )
-        throw (::com::sun::star::sdbc::SQLException);
+        );
 
     void throwInvalidArgumentException(
             const sal_Char* _pAsciiFeatureName,
             const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
             const ::com::sun::star::uno::Any* _pNextException = NULL
-        )
-        throw (::com::sun::star::sdbc::SQLException);
+        );
 
 	void translateAndThrow(const ::sql::SQLException& _error, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _context, const rtl_TextEncoding encoding);
 

@@ -72,7 +72,6 @@ AccessibleGridControlHeader::~AccessibleGridControlHeader()
 
 Reference< XAccessible > SAL_CALL
 AccessibleGridControlHeader::getAccessibleChild( sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -95,7 +94,6 @@ AccessibleGridControlHeader::getAccessibleChild( sal_Int32 nChildIndex )
 }
 
 sal_Int32 SAL_CALL AccessibleGridControlHeader::getAccessibleIndexInParent()
-    throw ( uno::RuntimeException )
 {
      ensureIsAlive();
      if(m_eObjType == svt::table::TCTYPE_ROWHEADERBAR && m_aTable.HasColHeader())
@@ -108,7 +106,6 @@ sal_Int32 SAL_CALL AccessibleGridControlHeader::getAccessibleIndexInParent()
 
 Reference< XAccessible > SAL_CALL
 AccessibleGridControlHeader::getAccessibleAtPoint( const awt::Point& rPoint )
-    throw ( uno::RuntimeException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -124,14 +121,12 @@ AccessibleGridControlHeader::getAccessibleAtPoint( const awt::Point& rPoint )
 }
 
 void SAL_CALL AccessibleGridControlHeader::grabFocus()
-    throw ( uno::RuntimeException )
 {
     ensureIsAlive();
     // focus on header not supported
 }
 
 Any SAL_CALL AccessibleGridControlHeader::getAccessibleKeyBinding()
-    throw ( uno::RuntimeException )
 {
     ensureIsAlive();
     return Any();   // no special key bindings for header
@@ -140,7 +135,6 @@ Any SAL_CALL AccessibleGridControlHeader::getAccessibleKeyBinding()
 // XAccessibleTable -----------------------------------------------------------
 
 OUString SAL_CALL AccessibleGridControlHeader::getAccessibleRowDescription( sal_Int32 nRow )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -150,7 +144,6 @@ OUString SAL_CALL AccessibleGridControlHeader::getAccessibleRowDescription( sal_
 }
 
 OUString SAL_CALL AccessibleGridControlHeader::getAccessibleColumnDescription( sal_Int32 nColumn )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     TCSolarGuard aSolarGuard;
     ::osl::MutexGuard aGuard( getOslMutex() );
@@ -160,41 +153,35 @@ OUString SAL_CALL AccessibleGridControlHeader::getAccessibleColumnDescription( s
 }
 
 Reference< XAccessibleTable > SAL_CALL AccessibleGridControlHeader::getAccessibleRowHeaders()
-    throw ( uno::RuntimeException )
 {
     ensureIsAlive();
     return NULL;        // no headers in headers
 }
 
 Reference< XAccessibleTable > SAL_CALL AccessibleGridControlHeader::getAccessibleColumnHeaders()
-    throw ( uno::RuntimeException )
 {
     ensureIsAlive();
     return NULL;        // no headers in headers
 }
 //not selectable
 Sequence< sal_Int32 > SAL_CALL AccessibleGridControlHeader::getSelectedAccessibleRows()
-    throw ( uno::RuntimeException )
 {
     Sequence< sal_Int32 > aSelSeq(0);
     return aSelSeq;
 }
 //columns aren't selectable
 Sequence< sal_Int32 > SAL_CALL AccessibleGridControlHeader::getSelectedAccessibleColumns()
-    throw ( uno::RuntimeException )
 {
     Sequence< sal_Int32 > aSelSeq(0);
     return aSelSeq;
 }
 //row headers not selectable
 sal_Bool SAL_CALL AccessibleGridControlHeader::isAccessibleRowSelected( sal_Int32 /*nRow*/ )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     return sal_False;
 }
 //columns aren't selectable
 sal_Bool SAL_CALL AccessibleGridControlHeader::isAccessibleColumnSelected( sal_Int32 nColumn )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     (void)nColumn;
     return sal_False;
@@ -202,14 +189,12 @@ sal_Bool SAL_CALL AccessibleGridControlHeader::isAccessibleColumnSelected( sal_I
 //not implemented
 Reference< XAccessible > SAL_CALL AccessibleGridControlHeader::getAccessibleCellAt(
         sal_Int32 /*nRow*/, sal_Int32 /*nColumn*/ )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     return NULL;
 }
 // not selectable
 sal_Bool SAL_CALL AccessibleGridControlHeader::isAccessibleSelected(
         sal_Int32 /*nRow*/, sal_Int32 /*nColumn */)
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     return sal_False;
 }
@@ -217,13 +202,11 @@ sal_Bool SAL_CALL AccessibleGridControlHeader::isAccessibleSelected(
 // XServiceInfo ---------------------------------------------------------------
 
 OUString SAL_CALL AccessibleGridControlHeader::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.accessibility.AccessibleGridControlHeader" ) );
 }
 
 Sequence< sal_Int8 > SAL_CALL AccessibleGridControlHeader::getImplementationId()
-    throw ( uno::RuntimeException )
 {
     ::osl::MutexGuard aGuard( getOslGlobalMutex() );
     static Sequence< sal_Int8 > aId;

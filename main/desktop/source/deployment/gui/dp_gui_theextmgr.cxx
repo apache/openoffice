@@ -427,7 +427,6 @@ bool TheExtensionManager::supportsOptions( const uno::Reference< deployment::XPa
 //------------------------------------------------------------------------------
 // XEventListener
 void TheExtensionManager::disposing( lang::EventObject const & rEvt )
-    throw ( uno::RuntimeException )
 {
     bool shutDown = (rEvt.Source == m_xDesktop);
 
@@ -454,7 +453,6 @@ void TheExtensionManager::disposing( lang::EventObject const & rEvt )
 //------------------------------------------------------------------------------
 // XTerminateListener
 void TheExtensionManager::queryTermination( ::lang::EventObject const & )
-    throw ( frame::TerminationVetoException, uno::RuntimeException )
 {
     DialogHelper *pDialogHelper = getDialogHelper();
 
@@ -476,7 +474,6 @@ void TheExtensionManager::queryTermination( ::lang::EventObject const & )
 
 //------------------------------------------------------------------------------
 void TheExtensionManager::notifyTermination( ::lang::EventObject const & rEvt )
-    throw ( uno::RuntimeException )
 {
     disposing( rEvt );
 }
@@ -484,7 +481,6 @@ void TheExtensionManager::notifyTermination( ::lang::EventObject const & rEvt )
 //------------------------------------------------------------------------------
 // XModifyListener
 void TheExtensionManager::modified( ::lang::EventObject const & /*rEvt*/ )
-    throw ( uno::RuntimeException )
 {
     getDialogHelper()->prepareChecking();
     createPackageList();

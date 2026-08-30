@@ -751,7 +751,7 @@ void ImageManagerImpl::dispose()
     }
 
 }
-void ImageManagerImpl::addEventListener( const uno::Reference< XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void ImageManagerImpl::addEventListener( const uno::Reference< XEventListener >& xListener )
 {
     {
         ResetableGuard aGuard( m_aLock );
@@ -764,7 +764,7 @@ void ImageManagerImpl::addEventListener( const uno::Reference< XEventListener >&
     m_aListenerContainer.addInterface( ::getCppuType( ( const uno::Reference< XEventListener >* ) NULL ), xListener );
 }
 
-void ImageManagerImpl::removeEventListener( const uno::Reference< XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void ImageManagerImpl::removeEventListener( const uno::Reference< XEventListener >& xListener )
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     m_aListenerContainer.removeInterface( ::getCppuType( ( const uno::Reference< XEventListener >* ) NULL ), xListener );
@@ -816,7 +816,6 @@ void ImageManagerImpl::initialize( const Sequence< Any >& aArguments )
 
 // XImageManagerImpl
 void ImageManagerImpl::reset()
-throw (::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
 
@@ -846,7 +845,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 Sequence< ::rtl::OUString > ImageManagerImpl::getAllImageNames( ::sal_Int16 nImageType )
-throw (::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
 
@@ -891,7 +889,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 ::sal_Bool ImageManagerImpl::hasImage( ::sal_Int16 nImageType, const ::rtl::OUString& aCommandURL )
-throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
 
@@ -924,7 +921,6 @@ throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::
 Sequence< uno::Reference< XGraphic > > ImageManagerImpl::getImages(
     ::sal_Int16 nImageType,
     const Sequence< ::rtl::OUString >& aCommandURLSequence )
-throw ( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException )
 {
     ResetableGuard aLock( m_aLock );
 
@@ -973,9 +969,6 @@ void ImageManagerImpl::replaceImages(
     ::sal_Int16 nImageType,
     const Sequence< ::rtl::OUString >& aCommandURLSequence,
     const Sequence< uno::Reference< XGraphic > >& aGraphicsSequence )
-throw ( ::com::sun::star::lang::IllegalArgumentException,
-        ::com::sun::star::lang::IllegalAccessException,
-        ::com::sun::star::uno::RuntimeException)
 {
     CmdToXGraphicNameAccess* pInsertedImages( 0 );
     CmdToXGraphicNameAccess* pReplacedImages( 0 );
@@ -1055,9 +1048,6 @@ throw ( ::com::sun::star::lang::IllegalArgumentException,
 }
 
 void ImageManagerImpl::removeImages( ::sal_Int16 nImageType, const Sequence< ::rtl::OUString >& aCommandURLSequence )
-throw ( ::com::sun::star::lang::IllegalArgumentException,
-        ::com::sun::star::lang::IllegalAccessException,
-        ::com::sun::star::uno::RuntimeException)
 {
     CmdToXGraphicNameAccess* pRemovedImages( 0 );
     CmdToXGraphicNameAccess* pReplacedImages( 0 );
@@ -1158,10 +1148,6 @@ throw ( ::com::sun::star::lang::IllegalArgumentException,
 }
 
 void ImageManagerImpl::insertImages( ::sal_Int16 nImageType, const Sequence< ::rtl::OUString >& aCommandURLSequence, const Sequence< uno::Reference< XGraphic > >& aGraphicSequence )
-throw ( ::com::sun::star::container::ElementExistException,
-        ::com::sun::star::lang::IllegalArgumentException,
-        ::com::sun::star::lang::IllegalAccessException,
-        ::com::sun::star::uno::RuntimeException)
 {
     replaceImages(nImageType,aCommandURLSequence,aGraphicSequence);
 }
@@ -1169,8 +1155,6 @@ throw ( ::com::sun::star::container::ElementExistException,
 
 // XUIConfigurationPersistence
 void ImageManagerImpl::reload()
-throw ( ::com::sun::star::uno::Exception,
-        ::com::sun::star::uno::RuntimeException )
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1319,7 +1303,6 @@ throw ( ::com::sun::star::uno::Exception,
 }
 
 void ImageManagerImpl::store()
-throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1352,7 +1335,6 @@ throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException
 }
 
 void ImageManagerImpl::storeToStorage( const uno::Reference< XStorage >& Storage )
-throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aGuard( m_aLock );
 
@@ -1383,20 +1365,18 @@ throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException
 }
 
 sal_Bool ImageManagerImpl::isModified()
-throw (::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aGuard( m_aLock );
     return m_bModified;
 }
 
-sal_Bool ImageManagerImpl::isReadOnly() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool ImageManagerImpl::isReadOnly()
 {
     ResetableGuard aGuard( m_aLock );
     return m_bReadOnly;
 }
 // XUIConfiguration
 void ImageManagerImpl::addConfigurationListener( const uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
-throw (::com::sun::star::uno::RuntimeException)
 {
     {
         ResetableGuard aGuard( m_aLock );
@@ -1410,7 +1390,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 void ImageManagerImpl::removeConfigurationListener( const uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
-throw (::com::sun::star::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     m_aListenerContainer.removeInterface( ::getCppuType( ( const uno::Reference< XUIConfigurationListener >* ) NULL ), xListener );

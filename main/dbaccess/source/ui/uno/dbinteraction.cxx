@@ -119,13 +119,13 @@ namespace dbaui
 	}
 
 	//-------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL BasicInteractionHandler::handleInteractionRequest( const Reference< XInteractionRequest >& i_rRequest ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL BasicInteractionHandler::handleInteractionRequest( const Reference< XInteractionRequest >& i_rRequest )
     {
         return impl_handle_throw( i_rRequest );
     }
 
 	//-------------------------------------------------------------------------
-	void SAL_CALL BasicInteractionHandler::handle( const Reference< XInteractionRequest >& i_rRequest ) throw(RuntimeException)
+	void SAL_CALL BasicInteractionHandler::handle( const Reference< XInteractionRequest >& i_rRequest )
     {
         impl_handle_throw( i_rRequest );
     }

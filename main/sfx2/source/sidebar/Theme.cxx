@@ -466,7 +466,6 @@ Reference<beans::XPropertySet> Theme::GetPropertySet (void)
 }
 
 Reference<beans::XPropertySetInfo> SAL_CALL Theme::getPropertySetInfo (void)
-	throw(cssu::RuntimeException)
 {
 	return Reference<beans::XPropertySetInfo>(this);
 }
@@ -474,7 +473,6 @@ Reference<beans::XPropertySetInfo> SAL_CALL Theme::getPropertySetInfo (void)
 void SAL_CALL Theme::setPropertyValue (
 	const ::rtl::OUString& rsPropertyName,
 	const cssu::Any& rValue)
-	throw(cssu::RuntimeException)
 {
 	PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
 	if (iId == maPropertyNameToIdMap.end())
@@ -517,9 +515,6 @@ void SAL_CALL Theme::setPropertyValue (
 
 Any SAL_CALL Theme::getPropertyValue (
 	const ::rtl::OUString& rsPropertyName)
-	throw(css::beans::UnknownPropertyException,
-		css::lang::WrappedTargetException,
-		cssu::RuntimeException)
 {
 	PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
 	if (iId == maPropertyNameToIdMap.end())
@@ -537,9 +532,6 @@ Any SAL_CALL Theme::getPropertyValue (
 void SAL_CALL Theme::addPropertyChangeListener(
 	const ::rtl::OUString& rsPropertyName,
 	const cssu::Reference<css::beans::XPropertyChangeListener>& rxListener)
-	throw(css::beans::UnknownPropertyException,
-		css::lang::WrappedTargetException,
-		cssu::RuntimeException)
 {
 	ThemeItem eItem (__AnyItem);
 	if (rsPropertyName.getLength() > 0)
@@ -562,9 +554,6 @@ void SAL_CALL Theme::addPropertyChangeListener(
 void SAL_CALL Theme::removePropertyChangeListener(
 	const ::rtl::OUString& rsPropertyName,
 	const cssu::Reference<css::beans::XPropertyChangeListener>& rxListener)
-	throw(css::beans::UnknownPropertyException,
-		css::lang::WrappedTargetException,
-		cssu::RuntimeException)
 {
 	ThemeItem eItem (__AnyItem);
 	if (rsPropertyName.getLength() > 0)
@@ -597,9 +586,6 @@ void SAL_CALL Theme::removePropertyChangeListener(
 void SAL_CALL Theme::addVetoableChangeListener(
 	const ::rtl::OUString& rsPropertyName,
 	const cssu::Reference<css::beans::XVetoableChangeListener>& rxListener)
-	throw(css::beans::UnknownPropertyException,
-		css::lang::WrappedTargetException,
-		cssu::RuntimeException)
 {
 	ThemeItem eItem (__AnyItem);
 	if (rsPropertyName.getLength() > 0)
@@ -622,9 +608,6 @@ void SAL_CALL Theme::addVetoableChangeListener(
 void SAL_CALL Theme::removeVetoableChangeListener(
 	const ::rtl::OUString& rsPropertyName,
 	const cssu::Reference<css::beans::XVetoableChangeListener>& rxListener)
-	throw(css::beans::UnknownPropertyException,
-		css::lang::WrappedTargetException,
-		cssu::RuntimeException)
 {
 	ThemeItem eItem (__AnyItem);
 	if (rsPropertyName.getLength() > 0)
@@ -654,7 +637,6 @@ void SAL_CALL Theme::removeVetoableChangeListener(
 }
 
 cssu::Sequence<css::beans::Property> SAL_CALL Theme::getProperties (void)
-	throw(cssu::RuntimeException)
 {
 	::std::vector<beans::Property> aProperties;
 
@@ -679,8 +661,6 @@ cssu::Sequence<css::beans::Property> SAL_CALL Theme::getProperties (void)
 }
 
 beans::Property SAL_CALL Theme::getPropertyByName (const ::rtl::OUString& rsPropertyName)
-	throw(css::beans::UnknownPropertyException,
-		cssu::RuntimeException)
 {
 	PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
 	if (iId == maPropertyNameToIdMap.end())
@@ -700,7 +680,6 @@ beans::Property SAL_CALL Theme::getPropertyByName (const ::rtl::OUString& rsProp
 }
 
 sal_Bool SAL_CALL Theme::hasPropertyByName (const ::rtl::OUString& rsPropertyName)
-	throw(cssu::RuntimeException)
 {
 	PropertyNameToIdMap::const_iterator iId (maPropertyNameToIdMap.find(rsPropertyName));
 	if (iId == maPropertyNameToIdMap.end())

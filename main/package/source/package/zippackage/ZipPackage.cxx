@@ -143,34 +143,27 @@ class ActiveDataStreamer : public ::cppu::WeakImplHelper1< XActiveDataStreamer >
 public:
 
 	virtual uno::Reference< XStream > SAL_CALL getStream()
-			throw( RuntimeException )
 			{ return mStream; }
 
 	virtual void SAL_CALL setStream( const uno::Reference< XStream >& stream )
-			throw( RuntimeException )
 			{ mStream = stream; }
 };
 
 class DummyInputStream : public ::cppu::WeakImplHelper1< XInputStream >
 {
     virtual sal_Int32 SAL_CALL readBytes( uno::Sequence< sal_Int8 >&, sal_Int32 )
-			throw ( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 		{ return 0; }
 
     virtual sal_Int32 SAL_CALL readSomeBytes( uno::Sequence< sal_Int8 >&, sal_Int32 )
-			throw ( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 		{ return 0; }
 
     virtual void SAL_CALL skipBytes( sal_Int32 )
-			throw ( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 		{}
 
     virtual sal_Int32 SAL_CALL available()
-			throw ( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 		{ return 0; }
 
     virtual void SAL_CALL closeInput()
-			throw ( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException )
 		{}
 };
 
@@ -606,7 +599,6 @@ void ZipPackage::getZipFileContents()
 
 //--------------------------------------------------------
 void SAL_CALL ZipPackage::initialize( const uno::Sequence< Any >& aArguments )
-		throw( Exception, RuntimeException )
 {
 	RTL_LOGFILE_TRACE_AUTHOR ( "package", LOGFILE_AUTHOR, "{ ZipPackage::initialize" );
 	sal_Bool bBadZipFile = sal_False, bHaveZipFile = sal_True;
@@ -813,7 +805,6 @@ void SAL_CALL ZipPackage::initialize( const uno::Sequence< Any >& aArguments )
 
 //--------------------------------------------------------
 Any SAL_CALL ZipPackage::getByHierarchicalName( const OUString& aName )
-		throw( NoSuchElementException, RuntimeException )
 {
 	OUString sTemp, sDirName;
 	sal_Int32 nOldIndex, nIndex, nStreamIndex;
@@ -895,7 +886,6 @@ Any SAL_CALL ZipPackage::getByHierarchicalName( const OUString& aName )
 
 //--------------------------------------------------------
 sal_Bool SAL_CALL ZipPackage::hasByHierarchicalName( const OUString& aName )
-		throw( RuntimeException )
 {
 	OUString sTemp, sDirName;
 	sal_Int32 nOldIndex, nIndex, nStreamIndex;
@@ -975,14 +965,12 @@ sal_Bool SAL_CALL ZipPackage::hasByHierarchicalName( const OUString& aName )
 
 //--------------------------------------------------------
 uno::Reference< XInterface > SAL_CALL ZipPackage::createInstance()
-		throw( Exception, RuntimeException )
 {
 	uno::Reference < XInterface > xRef = *( new ZipPackageStream ( *this, m_xFactory, m_bAllowRemoveOnInsert ) );
 	return xRef;
 }
 //--------------------------------------------------------
 uno::Reference< XInterface > SAL_CALL ZipPackage::createInstanceWithArguments( const uno::Sequence< Any >& aArguments )
-		throw( Exception, RuntimeException )
 {
 	sal_Bool bArg = sal_False;
 	uno::Reference < XInterface > xRef;
@@ -1393,7 +1381,6 @@ uno::Reference< XActiveDataStreamer > ZipPackage::openOriginalForOutput()
 
 //--------------------------------------------------------
 void SAL_CALL ZipPackage::commitChanges()
-        throw( WrappedTargetException, RuntimeException )
 {
     // lock the component for the time of committing
     ::osl::MutexGuard aGuard( m_aMutexHolder->GetMutex() );
@@ -1624,13 +1611,11 @@ const uno::Sequence< sal_Int8 > ZipPackage::GetEncryptionKey()
 
 //--------------------------------------------------------
 sal_Bool SAL_CALL ZipPackage::hasPendingChanges()
-		throw( RuntimeException )
 {
 	return sal_False;
 }
 //--------------------------------------------------------
 Sequence< ElementChange > SAL_CALL ZipPackage::getPendingChanges()
-		throw( RuntimeException )
 {
 	return uno::Sequence < ElementChange > ();
 }
@@ -1666,20 +1651,17 @@ sal_Bool SAL_CALL ZipPackage::static_supportsService( OUString const & rServiceN
 
 //--------------------------------------------------------
 OUString ZipPackage::getImplementationName()
-	throw ( RuntimeException )
 {
 	return static_getImplementationName();
 }
 
 //--------------------------------------------------------
 Sequence< OUString > ZipPackage::getSupportedServiceNames()
-	throw ( RuntimeException )
 {
 	return static_getSupportedServiceNames();
 }
 //--------------------------------------------------------
 sal_Bool SAL_CALL ZipPackage::supportsService( OUString const & rServiceName )
-	throw ( RuntimeException )
 {
 	return static_supportsService ( rServiceName );
 }
@@ -1696,7 +1678,6 @@ namespace { struct lcl_ImplId : public rtl::Static< ::cppu::OImplementationId, l
 
 //--------------------------------------------------------
 Sequence< sal_Int8 > ZipPackage::getUnoTunnelImplementationId( void )
-	throw ( RuntimeException )
 {
     ::cppu::OImplementationId &rId = lcl_ImplId::get();
     return rId.getImplementationId();
@@ -1704,7 +1685,6 @@ Sequence< sal_Int8 > ZipPackage::getUnoTunnelImplementationId( void )
 
 //--------------------------------------------------------
 sal_Int64 SAL_CALL ZipPackage::getSomething( const uno::Sequence< sal_Int8 >& aIdentifier )
-	throw( RuntimeException )
 {
 	if ( aIdentifier.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelImplementationId().getConstArray(),  aIdentifier.getConstArray(), 16 ) )
 		return reinterpret_cast < sal_Int64 > ( this );
@@ -1713,14 +1693,12 @@ sal_Int64 SAL_CALL ZipPackage::getSomething( const uno::Sequence< sal_Int8 >& aI
 
 //--------------------------------------------------------
 uno::Reference< XPropertySetInfo > SAL_CALL ZipPackage::getPropertySetInfo()
-		throw( RuntimeException )
 {
 	return uno::Reference < XPropertySetInfo > ();
 }
 
 //--------------------------------------------------------
 void SAL_CALL ZipPackage::setPropertyValue( const OUString& aPropertyName, const Any& aValue )
-		throw( UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException )
 {
 	if ( m_nFormat != embed::StorageFormats::PACKAGE )
 		throw UnknownPropertyException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
@@ -1817,7 +1795,6 @@ void SAL_CALL ZipPackage::setPropertyValue( const OUString& aPropertyName, const
 
 //--------------------------------------------------------
 Any SAL_CALL ZipPackage::getPropertyValue( const OUString& PropertyName )
-		throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 	// TODO/LATER: Activate the check when zip-ucp is ready
 	// if ( m_nFormat != embed::StorageFormats::PACKAGE )
@@ -1867,21 +1844,17 @@ Any SAL_CALL ZipPackage::getPropertyValue( const OUString& PropertyName )
 }
 //--------------------------------------------------------
 void SAL_CALL ZipPackage::addPropertyChangeListener( const OUString& /*aPropertyName*/, const uno::Reference< XPropertyChangeListener >& /*xListener*/ )
-		throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 }
 //--------------------------------------------------------
 void SAL_CALL ZipPackage::removePropertyChangeListener( const OUString& /*aPropertyName*/, const uno::Reference< XPropertyChangeListener >& /*aListener*/ )
-		throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 }
 //--------------------------------------------------------
 void SAL_CALL ZipPackage::addVetoableChangeListener( const OUString& /*PropertyName*/, const uno::Reference< XVetoableChangeListener >& /*aListener*/ )
-		throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 }
 //--------------------------------------------------------
 void SAL_CALL ZipPackage::removeVetoableChangeListener( const OUString& /*PropertyName*/, const uno::Reference< XVetoableChangeListener >& /*aListener*/ )
-		throw( UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 }

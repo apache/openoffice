@@ -35,8 +35,7 @@ class SwAccessibleSelectionHelper
     /// get FE-Shell
     SwFEShell* GetFEShell();
 
-    void throwIndexOutOfBoundsException()
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException );
+    void throwIndexOutOfBoundsException();
 
 public:
 
@@ -47,29 +46,18 @@ public:
 	//=====  XAccessibleSelection  ============================================
 
     void selectAccessibleChild(
-        sal_Int32 nChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+        sal_Int32 nChildIndex );
 
     sal_Bool isAccessibleChildSelected(
-        sal_Int32 nChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
-    void clearAccessibleSelection(  )
-        throw ( ::com::sun::star::uno::RuntimeException );
-    void selectAllAccessibleChildren(  )
-        throw ( ::com::sun::star::uno::RuntimeException );
-    sal_Int32 getSelectedAccessibleChildCount(  )
-        throw ( ::com::sun::star::uno::RuntimeException );
+        sal_Int32 nChildIndex );
+    void clearAccessibleSelection(  );
+    void selectAllAccessibleChildren(  );
+    sal_Int32 getSelectedAccessibleChildCount(  );
     ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > getSelectedAccessibleChild(
-        sal_Int32 nSelectedChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException);
+        sal_Int32 nSelectedChildIndex );
     // --> OD 2004-11-16 #111714# - index has to be treated as global child index.
     void deselectAccessibleChild(
-        sal_Int32 nChildIndex )
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
-                ::com::sun::star::uno::RuntimeException );
+        sal_Int32 nChildIndex );
 };
 
 

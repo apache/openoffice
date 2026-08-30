@@ -187,14 +187,14 @@ namespace migration
     // XServiceInfo
     // -----------------------------------------------------------------------------
 
-    ::rtl::OUString BasicMigration::getImplementationName() throw (RuntimeException)
+    ::rtl::OUString BasicMigration::getImplementationName()
     {
         return BasicMigration_getImplementationName();
     }
 
     // -----------------------------------------------------------------------------
 
-    sal_Bool BasicMigration::supportsService( const ::rtl::OUString& rServiceName ) throw (RuntimeException)
+    sal_Bool BasicMigration::supportsService( const ::rtl::OUString& rServiceName )
     {
 	    Sequence< ::rtl::OUString > aNames( getSupportedServiceNames() );
 	    const ::rtl::OUString* pNames = aNames.getConstArray();
@@ -207,7 +207,7 @@ namespace migration
 
     // -----------------------------------------------------------------------------
 
-    Sequence< ::rtl::OUString > BasicMigration::getSupportedServiceNames() throw (RuntimeException)
+    Sequence< ::rtl::OUString > BasicMigration::getSupportedServiceNames()
     {
         return BasicMigration_getSupportedServiceNames();
     }
@@ -216,7 +216,7 @@ namespace migration
     // XInitialization
     // -----------------------------------------------------------------------------
 
-    void BasicMigration::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+    void BasicMigration::initialize( const Sequence< Any >& aArguments )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -243,7 +243,6 @@ namespace migration
     // -----------------------------------------------------------------------------
 
     Any BasicMigration::execute( const Sequence< beans::NamedValue >& )
-        throw (lang::IllegalArgumentException, Exception, RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 

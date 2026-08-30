@@ -136,7 +136,7 @@ public:
 	virtual					~SvXMLImportEventListener();
 
 							// XEventListener
-	virtual void SAL_CALL disposing(const lang::EventObject& rEventObject) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing(const lang::EventObject& rEventObject);
 };
 
 SvXMLImportEventListener::SvXMLImportEventListener(SvXMLImport* pTempImport)
@@ -150,7 +150,6 @@ SvXMLImportEventListener::~SvXMLImportEventListener()
 
 // XEventListener
 void SAL_CALL SvXMLImportEventListener::disposing( const lang::EventObject& )
-	throw(uno::RuntimeException)
 {
 	if (pImport)
 	{
@@ -568,7 +567,6 @@ SvXMLImport* SvXMLImport::getImplementation( uno::Reference< uno::XInterface > x
 
 // XUnoTunnel
 sal_Int64 SAL_CALL SvXMLImport::getSomething( const uno::Sequence< sal_Int8 >& rId )
-	throw( uno::RuntimeException )
 {
 	if( rId.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
 														 rId.getConstArray(), 16 ) )
@@ -579,7 +577,6 @@ sal_Int64 SAL_CALL SvXMLImport::getSomething( const uno::Sequence< sal_Int8 >& r
 }
 
 void SAL_CALL SvXMLImport::startDocument( void )
-	throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	RTL_LOGFILE_TRACE_AUTHOR( "xmloff", LOGFILE_AUTHOR, "{ SvXMLImport::startDocument" );
 
@@ -618,7 +615,6 @@ void SAL_CALL SvXMLImport::startDocument( void )
 }
 
 void SAL_CALL SvXMLImport::endDocument( void )
-	throw( xml::sax::SAXException, uno::RuntimeException)
 {
 	RTL_LOGFILE_TRACE_AUTHOR( "xmloff", LOGFILE_AUTHOR, "} SvXMLImport::startDocument" );
 
@@ -718,7 +714,6 @@ void SAL_CALL SvXMLImport::endDocument( void )
 
 void SAL_CALL SvXMLImport::startElement( const OUString& rName,
 										 const uno::Reference< xml::sax::XAttributeList >& xAttrList )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 	SvXMLNamespaceMap *pRewindMap = 0;
 
@@ -842,7 +837,6 @@ void SAL_CALL SvXMLImport::endElement( const OUString&
 rName
 #endif
 )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 	sal_uInt16 nCount = mpContexts->Count();
 	DBG_ASSERT( nCount, "SvXMLImport::endElement: no context left" );
@@ -883,7 +877,6 @@ rName
 }
 
 void SAL_CALL SvXMLImport::characters( const OUString& rChars )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 	sal_uInt16 nCount = mpContexts->Count();
 	if( nCount > 0 )
@@ -893,43 +886,37 @@ void SAL_CALL SvXMLImport::characters( const OUString& rChars )
 }
 
 void SAL_CALL SvXMLImport::ignorableWhitespace( const OUString& )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 void SAL_CALL SvXMLImport::processingInstruction( const OUString&,
 									   const OUString& )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 void SAL_CALL SvXMLImport::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& rLocator )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 	mxLocator = rLocator;
 }
 
 // XExtendedDocumentHandler
-void SAL_CALL SvXMLImport::startCDATA( void ) throw(xml::sax::SAXException, uno::RuntimeException)
+void SAL_CALL SvXMLImport::startCDATA( void )
 {
 }
 
-void SAL_CALL SvXMLImport::endCDATA( void ) throw(uno::RuntimeException)
+void SAL_CALL SvXMLImport::endCDATA( void )
 {
 }
 
 void SAL_CALL SvXMLImport::comment( const OUString& )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 void SAL_CALL SvXMLImport::allowLineBreak( void )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
 void SAL_CALL SvXMLImport::unknown( const OUString& )
-	throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
@@ -943,7 +930,6 @@ void SvXMLImport::SetStatistics(const uno::Sequence< beans::NamedValue> &)
 
 // XImporter
 void SAL_CALL SvXMLImport::setTargetDocument( const uno::Reference< lang::XComponent >& xDoc )
-	throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
 	mxModel = uno::Reference< frame::XModel >::query( xDoc );
 	if( !mxModel.is() )
@@ -964,19 +950,16 @@ void SAL_CALL SvXMLImport::setTargetDocument( const uno::Reference< lang::XCompo
 
 // XFilter
 sal_Bool SAL_CALL SvXMLImport::filter( const uno::Sequence< beans::PropertyValue >& )
-	throw (uno::RuntimeException)
 {
 	return sal_False;
 }
 
 void SAL_CALL SvXMLImport::cancel(  )
-	throw (uno::RuntimeException)
 {
 }
 
 // XInitialize
 void SAL_CALL SvXMLImport::initialize( const uno::Sequence< uno::Any >& aArguments )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	const sal_Int32 nAnyCount = aArguments.getLength();
 	const uno::Any* pAny = aArguments.getConstArray();
@@ -1082,14 +1065,12 @@ void SAL_CALL SvXMLImport::initialize( const uno::Sequence< uno::Any >& aArgumen
 
 // XServiceInfo
 OUString SAL_CALL SvXMLImport::getImplementationName()
-	throw(uno::RuntimeException)
 {
 	OUString aStr;
 	return aStr;
 }
 
 sal_Bool SAL_CALL SvXMLImport::supportsService( const OUString& rServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     return
         rServiceName.equalsAsciiL(
@@ -1101,7 +1082,6 @@ sal_Bool SAL_CALL SvXMLImport::supportsService( const OUString& rServiceName )
 }
 
 uno::Sequence< OUString > SAL_CALL SvXMLImport::getSupportedServiceNames(  )
-	throw(uno::RuntimeException)
 {
     uno::Sequence<OUString> aSeq(2);
     aSeq[0] = OUString(

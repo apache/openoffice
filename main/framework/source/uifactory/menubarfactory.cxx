@@ -104,7 +104,6 @@ MenuBarFactory::~MenuBarFactory()
 Reference< XUIElement > SAL_CALL MenuBarFactory::createUIElement(
     const ::rtl::OUString& ResourceURL,
     const Sequence< PropertyValue >& Args )
-throw ( ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException )
 {
     // SAFE
     ResetableGuard aLock( m_aLock );

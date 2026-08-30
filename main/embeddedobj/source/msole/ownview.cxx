@@ -50,10 +50,10 @@
 using namespace ::com::sun::star;
 using namespace ::comphelper;
 
-::rtl::OUString GetNewTempFileURL_Impl( const uno::Reference< lang::XMultiServiceFactory >& xFactory ) throw( io::IOException );
-::rtl::OUString GetNewFilledTempFile_Impl( const uno::Reference< io::XInputStream >& xInStream, const uno::Reference< lang::XMultiServiceFactory >& xFactory ) throw( io::IOException );
+::rtl::OUString GetNewTempFileURL_Impl( const uno::Reference< lang::XMultiServiceFactory >& xFactory );
+::rtl::OUString GetNewFilledTempFile_Impl( const uno::Reference< io::XInputStream >& xInStream, const uno::Reference< lang::XMultiServiceFactory >& xFactory );
 sal_Bool KillFile_Impl( const ::rtl::OUString& aURL, const uno::Reference< lang::XMultiServiceFactory >& xFactory );
-uno::Reference< io::XStream > TryToGetAcceptableFormat_Impl( const uno::Reference< io::XStream >& xStream, const uno::Reference< lang::XMultiServiceFactory >& xFactory ) throw ( uno::Exception );
+uno::Reference< io::XStream > TryToGetAcceptableFormat_Impl( const uno::Reference< io::XStream >& xStream, const uno::Reference< lang::XMultiServiceFactory >& xFactory );
 
 //========================================================
 // Dummy interaction handler
@@ -65,8 +65,7 @@ public:
 	DummyHandler_Impl() {}
 	~DummyHandler_Impl();
 
-	virtual void SAL_CALL handle( const uno::Reference< task::XInteractionRequest >& xRequest )
-			throw( uno::RuntimeException );
+	virtual void SAL_CALL handle( const uno::Reference< task::XInteractionRequest >& xRequest );
 };
 
 //--------------------------------------------------------
@@ -76,7 +75,6 @@ DummyHandler_Impl::~DummyHandler_Impl()
 
 //--------------------------------------------------------
 void SAL_CALL DummyHandler_Impl::handle( const uno::Reference< task::XInteractionRequest >& )
-		throw( uno::RuntimeException )
 {
 	return;
 }
@@ -595,7 +593,6 @@ void OwnView_Impl::Close()
 
 //--------------------------------------------------------
 void SAL_CALL OwnView_Impl::notifyEvent( const document::EventObject& aEvent )
-		throw ( uno::RuntimeException )
 {
 
 	uno::Reference< frame::XModel > xModel;
@@ -632,14 +629,11 @@ void SAL_CALL OwnView_Impl::notifyEvent( const document::EventObject& aEvent )
 
 //--------------------------------------------------------
 void SAL_CALL OwnView_Impl::queryClosing( const lang::EventObject&, sal_Bool )
-		throw ( util::CloseVetoException,
-				uno::RuntimeException )
 {
 }
 
 //--------------------------------------------------------
 void SAL_CALL OwnView_Impl::notifyClosing( const lang::EventObject& Source )
-		throw ( uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( Source.Source == m_xModel )
@@ -648,7 +642,6 @@ void SAL_CALL OwnView_Impl::notifyClosing( const lang::EventObject& Source )
 
 //--------------------------------------------------------
 void SAL_CALL OwnView_Impl::disposing( const lang::EventObject& Source )
-		throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( Source.Source == m_xModel )

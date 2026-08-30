@@ -68,7 +68,7 @@ Reference< XMultiServiceFactory > getProcessServiceFactory()
 	return xReturn;
 }
 
-Reference< XInterface > createProcessComponent( const ::rtl::OUString& _rServiceSpecifier ) SAL_THROW( ( RuntimeException ) )
+Reference< XInterface > createProcessComponent( const ::rtl::OUString& _rServiceSpecifier )
 {
 	Reference< XInterface > xComponent;
 
@@ -80,7 +80,7 @@ Reference< XInterface > createProcessComponent( const ::rtl::OUString& _rService
 }
 
 Reference< XInterface > createProcessComponentWithArguments( const ::rtl::OUString& _rServiceSpecifier,
-		const Sequence< Any >& _rArgs ) SAL_THROW( ( RuntimeException ) )
+		const Sequence< Any >& _rArgs )
 {
 	Reference< XInterface > xComponent;
 

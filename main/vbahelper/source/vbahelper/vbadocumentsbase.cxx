@@ -77,11 +77,11 @@ class DocumentsEnumImpl : public DocumentsEnumImpl_BASE
 	Documents::const_iterator m_it;
 
 public:
-	DocumentsEnumImpl( const uno::Reference< uno::XComponentContext >& xContext, const Documents& docs ) throw ( uno::RuntimeException ) :  m_xContext( xContext ), m_documents( docs )
+	DocumentsEnumImpl( const uno::Reference< uno::XComponentContext >& xContext, const Documents& docs ) :  m_xContext( xContext ), m_documents( docs )
 	{
 		m_it = m_documents.begin();
 	}
-	DocumentsEnumImpl( const uno::Reference< uno::XComponentContext >& xContext ) throw ( uno::RuntimeException ) :  m_xContext( xContext )
+	DocumentsEnumImpl( const uno::Reference< uno::XComponentContext >& xContext ) :  m_xContext( xContext )
 	{
 		uno::Reference< lang::XMultiComponentFactory > xSMgr(
 			m_xContext->getServiceManager(), uno::UNO_QUERY_THROW );
@@ -98,12 +98,12 @@ public:
 		m_it = m_documents.begin();
 	}
 	// XEnumeration
-	virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasMoreElements(  )
 	{
 		return m_it != m_documents.end();
 	}
 
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL nextElement(  )
 	{
 		if ( !hasMoreElements() )
 		{
@@ -131,7 +131,7 @@ class DocumentsAccessImpl : public DocumentsAccessImpl_BASE
 	NameIndexHash namesToIndices;
     VbaDocumentsBase::DOCUMENT_TYPE meDocType;
 public:
-	DocumentsAccessImpl( const uno::Reference< uno::XComponentContext >& xContext, VbaDocumentsBase::DOCUMENT_TYPE eDocType ) throw (uno::RuntimeException) :m_xContext( xContext ), meDocType( eDocType )
+	DocumentsAccessImpl( const uno::Reference< uno::XComponentContext >& xContext, VbaDocumentsBase::DOCUMENT_TYPE eDocType ) :m_xContext( xContext ), meDocType( eDocType )
 	{
 		uno::Reference< container::XEnumeration > xEnum = new DocumentsEnumImpl( m_xContext );
 		sal_Int32 nIndex=0;
@@ -152,16 +152,16 @@ public:
 	}
 
 	//XEnumerationAccess
-	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration(  ) throw (uno::RuntimeException)
+	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration(  )
 	{
 		return new DocumentsEnumImpl( m_xContext, m_documents );
 	}
 	// XIndexAccess
-	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException)
+	virtual ::sal_Int32 SAL_CALL getCount(  )
 	{
 		return m_documents.size();
 	}
-	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw ( lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index )
 	{
 		if ( Index < 0
 			|| static_cast< Documents::size_type >(Index) >= m_documents.size() )
@@ -170,18 +170,18 @@ public:
 	}
 
 	//XElementAccess
-	virtual uno::Type SAL_CALL getElementType(  ) throw (uno::RuntimeException)
+	virtual uno::Type SAL_CALL getElementType(  )
 	{
 		return frame::XModel::static_type(0);
 	}
 
-	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasElements(  )
 	{
 		return (m_documents.size() > 0);
 	}
 
 	//XNameAccess
-	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
 	{
 		NameIndexHash::const_iterator it = namesToIndices.find( aName );
 		if ( it == namesToIndices.end() )
@@ -190,7 +190,7 @@ public:
 
 	}
 
-	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (uno::RuntimeException)
+	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  )
 	{
 		uno::Sequence< ::rtl::OUString > names( namesToIndices.size() );
 		::rtl::OUString* pString = names.getArray();
@@ -201,7 +201,7 @@ public:
 		return names;
 	}
 
-	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
 	{
 		NameIndexHash::const_iterator it = namesToIndices.find( aName );
 		return (it != namesToIndices.end());
@@ -209,7 +209,7 @@ public:
 
 };
 
-VbaDocumentsBase::VbaDocumentsBase( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext >& xContext, DOCUMENT_TYPE eDocType ) throw (uno::RuntimeException) : VbaDocumentsBase_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( new DocumentsAccessImpl( xContext, eDocType ) ) ), meDocType( eDocType )
+VbaDocumentsBase::VbaDocumentsBase( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext >& xContext, DOCUMENT_TYPE eDocType ) : VbaDocumentsBase_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( new DocumentsAccessImpl( xContext, eDocType ) ) ), meDocType( eDocType )
 {
 }
 
@@ -239,7 +239,7 @@ void lclSetupComponent( const uno::Reference< lang::XComponent >& rxComponent, s
 
 } // namespace
 
-uno::Any VbaDocumentsBase::createDocument() throw (uno::RuntimeException)
+uno::Any VbaDocumentsBase::createDocument()
 {
     // #163808# determine state of Application.ScreenUpdating and Application.Interactive symbols (before new document is opened)
     uno::Reference< XApplicationBase > xApplication( Application(), uno::UNO_QUERY );
@@ -278,7 +278,7 @@ uno::Any VbaDocumentsBase::createDocument() throw (uno::RuntimeException)
     return uno::makeAny( xComponent );
 }
 
-void VbaDocumentsBase::closeDocuments() throw (uno::RuntimeException)
+void VbaDocumentsBase::closeDocuments()
 {
 // #FIXME this *MUST* be wrong documents::close surely closes ALL documents
 // in the collection, use of getCurrentDocument here is totally wrong
@@ -292,7 +292,7 @@ void VbaDocumentsBase::closeDocuments() throw (uno::RuntimeException)
 }
 
 // #TODO# #FIXME# can any of the unused params below be used?
-uno::Any VbaDocumentsBase::openDocument( const rtl::OUString& rFileName, const uno::Any& ReadOnly, const uno::Sequence< beans::PropertyValue >& rProps ) throw (uno::RuntimeException)
+uno::Any VbaDocumentsBase::openDocument( const rtl::OUString& rFileName, const uno::Any& ReadOnly, const uno::Sequence< beans::PropertyValue >& rProps )
 {
     // #163808# determine state of Application.ScreenUpdating and Application.Interactive symbols (before new document is opened)
     uno::Reference< XApplicationBase > xApplication( Application(), uno::UNO_QUERY );

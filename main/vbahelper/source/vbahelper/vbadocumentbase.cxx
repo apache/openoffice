@@ -58,7 +58,7 @@ VbaDocumentBase::VbaDocumentBase( uno::Sequence< uno::Any> const & args,
 }
 
 ::rtl::OUString
-VbaDocumentBase::getName() throw (uno::RuntimeException)
+VbaDocumentBase::getName()
 {
 	rtl::OUString sName = getModel()->getURL();
 	if ( sName.getLength() )
@@ -81,7 +81,7 @@ VbaDocumentBase::getName() throw (uno::RuntimeException)
 	return sName;
 }
 ::rtl::OUString
-VbaDocumentBase::getPath() throw (uno::RuntimeException)
+VbaDocumentBase::getPath()
 {
     INetURLObject aURL( getModel()->getURL() );
 	rtl::OUString sURL = aURL.GetMainURL( INetURLObject::DECODE_TO_IURI );
@@ -95,7 +95,7 @@ VbaDocumentBase::getPath() throw (uno::RuntimeException)
 }
 
 ::rtl::OUString
-VbaDocumentBase::getFullName() throw (uno::RuntimeException)
+VbaDocumentBase::getFullName()
 {
 	rtl::OUString sPath = getName();
 	//::osl::File::getSystemPathFromFileURL( getModel()->getURL(), sPath );
@@ -104,7 +104,7 @@ VbaDocumentBase::getFullName() throw (uno::RuntimeException)
 
 void
 VbaDocumentBase::Close( const uno::Any &rSaveArg, const uno::Any &rFileArg,
-					  const uno::Any &rRouteArg ) throw (uno::RuntimeException)
+					  const uno::Any &rRouteArg )
 {
 	sal_Bool bSaveChanges = sal_False;
 	rtl::OUString aFileName;
@@ -186,7 +186,7 @@ VbaDocumentBase::Close( const uno::Any &rSaveArg, const uno::Any &rFileArg,
 }
 
 void
-VbaDocumentBase::Protect( const uno::Any &aPassword ) throw (uno::RuntimeException)
+VbaDocumentBase::Protect( const uno::Any &aPassword )
 {
 	rtl::OUString rPassword;
 	uno::Reference< util::XProtectable > xProt( getModel(), uno::UNO_QUERY_THROW );
@@ -198,7 +198,7 @@ VbaDocumentBase::Protect( const uno::Any &aPassword ) throw (uno::RuntimeExcepti
 }
 
 void
-VbaDocumentBase::Unprotect( const uno::Any &aPassword ) throw (uno::RuntimeException)
+VbaDocumentBase::Unprotect( const uno::Any &aPassword )
 {
 	rtl::OUString rPassword;
 	uno::Reference< util::XProtectable > xProt( getModel(), uno::UNO_QUERY_THROW );
@@ -216,7 +216,7 @@ VbaDocumentBase::Unprotect( const uno::Any &aPassword ) throw (uno::RuntimeExcep
 }
 
 void
-VbaDocumentBase::setSaved( sal_Bool bSave ) throw (uno::RuntimeException)
+VbaDocumentBase::setSaved( sal_Bool bSave )
 {
     uno::Reference< util::XModifiable > xModifiable( getModel(), uno::UNO_QUERY_THROW );
     try
@@ -238,14 +238,14 @@ VbaDocumentBase::setSaved( sal_Bool bSave ) throw (uno::RuntimeException)
 }
 
 sal_Bool
-VbaDocumentBase::getSaved() throw (uno::RuntimeException)
+VbaDocumentBase::getSaved()
 {
 	uno::Reference< util::XModifiable > xModifiable( getModel(), uno::UNO_QUERY_THROW );
 	return !xModifiable->isModified();
 }
 
 void
-VbaDocumentBase::Save() throw (uno::RuntimeException)
+VbaDocumentBase::Save()
 {
 	rtl::OUString url = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(".uno:Save"));
 	uno::Reference< frame::XModel > xModel = getModel();
@@ -253,14 +253,14 @@ VbaDocumentBase::Save() throw (uno::RuntimeException)
 }
 
 void
-VbaDocumentBase::Activate() throw (uno::RuntimeException)
+VbaDocumentBase::Activate()
 {
 	uno::Reference< frame::XFrame > xFrame( getModel()->getCurrentController()->getFrame(), uno::UNO_QUERY_THROW );
 	xFrame->activate();
 }
 
 uno::Any SAL_CALL
-VbaDocumentBase::getVBProject() throw (uno::RuntimeException)
+VbaDocumentBase::getVBProject()
 {
     if( !mxVBProject.is() )	try
 	{

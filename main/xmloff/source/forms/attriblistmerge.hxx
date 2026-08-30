@@ -60,12 +60,12 @@ namespace xmloff
 		void addList(const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& _rList);
 
 		// XAttributeList
-		virtual sal_Int16 SAL_CALL getLength(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getNameByIndex( sal_Int16 i ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getTypeByIndex( sal_Int16 i ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getTypeByName( const ::rtl::OUString& aName ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getValueByIndex( sal_Int16 i ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::rtl::OUString SAL_CALL getValueByName( const ::rtl::OUString& aName ) throw(::com::sun::star::uno::RuntimeException);
+		virtual sal_Int16 SAL_CALL getLength(  );
+		virtual ::rtl::OUString SAL_CALL getNameByIndex( sal_Int16 i );
+		virtual ::rtl::OUString SAL_CALL getTypeByIndex( sal_Int16 i );
+		virtual ::rtl::OUString SAL_CALL getTypeByName( const ::rtl::OUString& aName );
+		virtual ::rtl::OUString SAL_CALL getValueByIndex( sal_Int16 i );
+		virtual ::rtl::OUString SAL_CALL getValueByName( const ::rtl::OUString& aName );
 
 	protected:
 		sal_Bool seekToIndex(sal_Int16 _nGlobalIndex, ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& _rSubList, sal_Int16& _rLocalIndex);

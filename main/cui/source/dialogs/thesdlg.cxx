@@ -331,7 +331,6 @@ uno::Sequence< uno::Reference< linguistic2::XMeaning > > SAL_CALL SvxThesaurusDi
         OUString& rTerm,
         const lang::Locale& rLocale,
         const beans::PropertyValues& rProperties )
-    throw(lang::IllegalArgumentException, uno::RuntimeException)
 {
     uno::Sequence< uno::Reference< linguistic2::XMeaning > > aMeanings(
             xThesaurus->queryMeanings( rTerm, rLocale, rProperties ) );

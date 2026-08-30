@@ -82,7 +82,7 @@ ODBTypeWizDialogSetup::ODBTypeWizDialogSetup(const Reference< XMultiServiceFacto
 		&m_bStartTableWizard, getBooleanCppuType());
 }
 //-------------------------------------------------------------------------
-Sequence<sal_Int8> SAL_CALL ODBTypeWizDialogSetup::getImplementationId(  ) throw(RuntimeException)
+Sequence<sal_Int8> SAL_CALL ODBTypeWizDialogSetup::getImplementationId(  )
 {
 	static ::cppu::OImplementationId aId;
 	return aId.getImplementationId();
@@ -96,25 +96,25 @@ Reference< XInterface > SAL_CALL ODBTypeWizDialogSetup::Create(const Reference< 
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODBTypeWizDialogSetup::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL ODBTypeWizDialogSetup::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //-------------------------------------------------------------------------
-::rtl::OUString ODBTypeWizDialogSetup::getImplementationName_Static() throw(RuntimeException)
+::rtl::OUString ODBTypeWizDialogSetup::getImplementationName_Static()
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("org.openoffice.comp.dbu.ODBTypeWizDialogSetup"));
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL ODBTypeWizDialogSetup::getSupportedServiceNames() throw(RuntimeException)
+::comphelper::StringSequence SAL_CALL ODBTypeWizDialogSetup::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence ODBTypeWizDialogSetup::getSupportedServiceNames_Static() throw(RuntimeException)
+::comphelper::StringSequence ODBTypeWizDialogSetup::getSupportedServiceNames_Static()
 {
 	::comphelper::StringSequence aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.DatabaseWizardDialog"));
@@ -122,7 +122,7 @@ Reference< XInterface > SAL_CALL ODBTypeWizDialogSetup::Create(const Reference< 
 }
 
 //-------------------------------------------------------------------------
-Reference<XPropertySetInfo>  SAL_CALL ODBTypeWizDialogSetup::getPropertySetInfo() throw(RuntimeException)
+Reference<XPropertySetInfo>  SAL_CALL ODBTypeWizDialogSetup::getPropertySetInfo()
 {
 	return createPropertySetInfo( getInfoHelper() );
 }

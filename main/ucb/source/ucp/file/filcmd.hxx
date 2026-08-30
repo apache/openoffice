@@ -50,8 +50,7 @@ namespace fileaccess {
 		// XInterface
 		virtual com::sun::star::uno::Any SAL_CALL
 		queryInterface(
-			const com::sun::star::uno::Type& aType )
-			throw( com::sun::star::uno::RuntimeException);
+			const com::sun::star::uno::Type& aType );
 
 		virtual void SAL_CALL
 		acquire(
@@ -67,30 +66,23 @@ namespace fileaccess {
 
 		virtual com::sun::star::uno::Sequence< com::sun::star::ucb::CommandInfo > SAL_CALL
 		getCommands(
-			void )
-			throw( com::sun::star::uno::RuntimeException);
+			void );
 
 		virtual com::sun::star::ucb::CommandInfo SAL_CALL
 		getCommandInfoByName(
-			const rtl::OUString& Name )
-			throw( com::sun::star::ucb::UnsupportedCommandException,
-				   com::sun::star::uno::RuntimeException);
+			const rtl::OUString& Name );
 
 		virtual com::sun::star::ucb::CommandInfo SAL_CALL
 		getCommandInfoByHandle(
-			sal_Int32 Handle )
-			throw( com::sun::star::ucb::UnsupportedCommandException,
-				   com::sun::star::uno::RuntimeException );
+			sal_Int32 Handle );
 
 		virtual sal_Bool SAL_CALL
 		hasCommandByName(
-			const rtl::OUString& Name )
-			throw( com::sun::star::uno::RuntimeException );
+			const rtl::OUString& Name );
 
 		virtual sal_Bool SAL_CALL
 		hasCommandByHandle(
-			sal_Int32 Handle )
-			throw( com::sun::star::uno::RuntimeException );
+			sal_Int32 Handle );
 
 
 	private:

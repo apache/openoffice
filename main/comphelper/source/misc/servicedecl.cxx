@@ -48,21 +48,16 @@ public:
         : m_rServiceDecl(rServiceDecl) {}
 
     // XServiceInfo:
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( rtl::OUString const& name )
-        throw (uno::RuntimeException);
-    virtual uno::Sequence<rtl::OUString> SAL_CALL getSupportedServiceNames()
-        throw (uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( rtl::OUString const& name );
+    virtual uno::Sequence<rtl::OUString> SAL_CALL getSupportedServiceNames();
     // XSingleComponentFactory:
     virtual uno::Reference<uno::XInterface> SAL_CALL createInstanceWithContext(
-        uno::Reference<uno::XComponentContext> const& xContext )
-        throw (uno::Exception);
+        uno::Reference<uno::XComponentContext> const& xContext );
     virtual uno::Reference<uno::XInterface> SAL_CALL
     createInstanceWithArgumentsAndContext(
     uno::Sequence<uno::Any> const& args,
-    uno::Reference<uno::XComponentContext> const& xContext )
-        throw (uno::Exception);
+    uno::Reference<uno::XComponentContext> const& xContext );
 
 private:
     virtual ~Factory();
@@ -76,19 +71,16 @@ ServiceDecl::Factory::~Factory()
 
 // XServiceInfo:
 rtl::OUString ServiceDecl::Factory::getImplementationName()
-    throw (uno::RuntimeException)
 {
     return m_rServiceDecl.getImplementationName();
 }
 
 sal_Bool ServiceDecl::Factory::supportsService( rtl::OUString const& name )
-    throw (uno::RuntimeException)
 {
     return m_rServiceDecl.supportsService(name);
 }
 
 uno::Sequence<rtl::OUString> ServiceDecl::Factory::getSupportedServiceNames()
-    throw (uno::RuntimeException)
 {
     return m_rServiceDecl.getSupportedServiceNames();
 }
@@ -96,7 +88,6 @@ uno::Sequence<rtl::OUString> ServiceDecl::Factory::getSupportedServiceNames()
 // XSingleComponentFactory:
 uno::Reference<uno::XInterface> ServiceDecl::Factory::createInstanceWithContext(
     uno::Reference<uno::XComponentContext> const& xContext )
-    throw (uno::Exception)
 {
     return m_rServiceDecl.m_createFunc(
         m_rServiceDecl, uno::Sequence<uno::Any>(), xContext );
@@ -106,7 +97,6 @@ uno::Reference<uno::XInterface>
 ServiceDecl::Factory::createInstanceWithArgumentsAndContext(
     uno::Sequence<uno::Any > const& args,
     uno::Reference<uno::XComponentContext> const& xContext )
-    throw (uno::Exception)
 {
     return m_rServiceDecl.m_createFunc(
         m_rServiceDecl, args, xContext );

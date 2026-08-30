@@ -129,33 +129,31 @@ UIConfigElementWrapperBase::~UIConfigElementWrapperBase()
 }
 
 // XComponent
-void SAL_CALL UIConfigElementWrapperBase::dispose() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL UIConfigElementWrapperBase::dispose()
 {
     // must be implemented by derived class
     ResetableGuard aLock( m_aLock );
     m_bDisposed = sal_True;
 }
 
-void SAL_CALL UIConfigElementWrapperBase::addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL UIConfigElementWrapperBase::addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener )
 {
     m_aListenerContainer.addInterface( ::getCppuType( ( const css::uno::Reference< css::lang::XEventListener >* ) NULL ), xListener );
 }
 
-void SAL_CALL UIConfigElementWrapperBase::removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL UIConfigElementWrapperBase::removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener )
 {
     m_aListenerContainer.removeInterface( ::getCppuType( ( const css::uno::Reference< css::lang::XEventListener >* ) NULL ), aListener );
 }
 
 // XEventListener
 void SAL_CALL UIConfigElementWrapperBase::disposing( const EventObject& )
-throw( RuntimeException )
 {
     ResetableGuard aLock( m_aLock );
     m_xConfigSource.clear();
 }
 
 void SAL_CALL UIConfigElementWrapperBase::initialize( const Sequence< Any >& aArguments )
-throw ( Exception, RuntimeException )
 {
     ResetableGuard aLock( m_aLock );
 
@@ -188,22 +186,22 @@ throw ( Exception, RuntimeException )
 }
 
 // XUpdatable
-void SAL_CALL UIConfigElementWrapperBase::update() throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL UIConfigElementWrapperBase::update()
 {
     // can be implemented by derived class
 }
 
-void SAL_CALL UIConfigElementWrapperBase::elementInserted( const ::com::sun::star::ui::ConfigurationEvent& ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL UIConfigElementWrapperBase::elementInserted( const ::com::sun::star::ui::ConfigurationEvent& )
 {
     // can be implemented by derived class
 }
 
-void SAL_CALL UIConfigElementWrapperBase::elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL UIConfigElementWrapperBase::elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& )
 {
     // can be implemented by derived class
 }
 
-void SAL_CALL UIConfigElementWrapperBase::elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL UIConfigElementWrapperBase::elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& )
 {
     // can be implemented by derived class
 }
@@ -212,7 +210,7 @@ void SAL_CALL UIConfigElementWrapperBase::elementReplaced( const ::com::sun::sta
 sal_Bool SAL_CALL UIConfigElementWrapperBase::convertFastPropertyValue( Any&       aConvertedValue ,
                                                                         Any&       aOldValue       ,
                                                                         sal_Int32  nHandle         ,
-                                                                        const Any& aValue             ) throw( com::sun::star::lang::IllegalArgumentException )
+                                                                        const Any& aValue             )
 {
 	//	Initialize state with sal_False !!!
 	//	(Handle can be invalid)
@@ -293,7 +291,7 @@ sal_Bool SAL_CALL UIConfigElementWrapperBase::convertFastPropertyValue( Any&    
 }
 
 void SAL_CALL UIConfigElementWrapperBase::setFastPropertyValue_NoBroadcast(   sal_Int32               nHandle ,
-                                                                        const com::sun::star::uno::Any&    aValue  ) throw( com::sun::star::uno::Exception )
+                                                                        const com::sun::star::uno::Any&    aValue  )
 {
     switch( nHandle )
 	{
@@ -442,7 +440,7 @@ void SAL_CALL UIConfigElementWrapperBase::getFastPropertyValue( com::sun::star::
     return(*pInfoHelper);
 }
 
-com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL UIConfigElementWrapperBase::getPropertySetInfo() throw (::com::sun::star::uno::RuntimeException)
+com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL UIConfigElementWrapperBase::getPropertySetInfo()
 {
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't must use a mutex at every call!
@@ -491,7 +489,7 @@ const com::sun::star::uno::Sequence< com::sun::star::beans::Property > UIConfigE
 	// Return static "PropertyDescriptor"
     return lPropertyDescriptor;
 }
-void SAL_CALL UIConfigElementWrapperBase::setSettings( const Reference< XIndexAccess >& xSettings ) throw ( RuntimeException )
+void SAL_CALL UIConfigElementWrapperBase::setSettings( const Reference< XIndexAccess >& xSettings )
 {
     ResetableGuard aLock( m_aLock );
 
@@ -532,7 +530,7 @@ void SAL_CALL UIConfigElementWrapperBase::setSettings( const Reference< XIndexAc
 void UIConfigElementWrapperBase::impl_fillNewData()
 {
 }
-Reference< XIndexAccess > SAL_CALL UIConfigElementWrapperBase::getSettings( sal_Bool bWriteable ) throw ( RuntimeException )
+Reference< XIndexAccess > SAL_CALL UIConfigElementWrapperBase::getSettings( sal_Bool bWriteable )
 {
     ResetableGuard aLock( m_aLock );
 
@@ -545,20 +543,20 @@ Reference< XIndexAccess > SAL_CALL UIConfigElementWrapperBase::getSettings( sal_
     return m_xConfigData;
 }
 
-Reference< XFrame > SAL_CALL UIConfigElementWrapperBase::getFrame() throw (RuntimeException)
+Reference< XFrame > SAL_CALL UIConfigElementWrapperBase::getFrame()
 {
     ResetableGuard aLock( m_aLock );
     Reference< XFrame > xFrame( m_xWeakFrame );
     return xFrame;
 }
 
-::rtl::OUString SAL_CALL UIConfigElementWrapperBase::getResourceURL() throw (RuntimeException)
+::rtl::OUString SAL_CALL UIConfigElementWrapperBase::getResourceURL()
 {
     ResetableGuard aLock( m_aLock );
     return m_aResourceURL;
 }
 
-::sal_Int16 SAL_CALL UIConfigElementWrapperBase::getType() throw (RuntimeException)
+::sal_Int16 SAL_CALL UIConfigElementWrapperBase::getType()
 {
     ResetableGuard aLock( m_aLock );
     return m_nType;

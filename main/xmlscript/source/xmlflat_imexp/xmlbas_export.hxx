@@ -65,22 +65,17 @@ namespace xmlscript
         virtual ~XMLBasicExporterBase();
 
         // XServiceInfo
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-            throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XExporter
-        virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& rxDoc )
-            throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL setSourceDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& rxDoc );
 
         // XFilter
-        virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL cancel()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor );
+        virtual void SAL_CALL cancel();
     };
 
 
@@ -96,10 +91,8 @@ namespace xmlscript
         virtual ~XMLBasicExporter();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
     };
 
 
@@ -115,10 +108,8 @@ namespace xmlscript
         virtual ~XMLOasisBasicExporter();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  )
-            throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
     };
 
 //.........................................................................

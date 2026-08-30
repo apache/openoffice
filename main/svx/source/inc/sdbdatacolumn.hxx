@@ -75,58 +75,58 @@ namespace svxform
 		}
 
 		// das normale queryInterface
-		::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& type) throw ( ::com::sun::star::uno::RuntimeException )
+		::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& type)
 		{ return m_xColumn->queryInterface(type); }
 
 		// ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet>
-		inline ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo> getPropertySetInfo() const throw( ::com::sun::star::uno::RuntimeException );
-		inline void setPropertyValue(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue) throw( ::com::sun::star::beans::UnknownPropertyException,	::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Any getPropertyValue(const ::rtl::OUString& PropertyName) const throw( ::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException );
-		inline void addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener>& xListener) throw( ::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException );
-		inline void removePropertyChangeListener(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener>& aListener) throw( ::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException );
-		inline void addVetoableChangeListener(const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener>& aListener) throw( ::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException );
-		inline void removeVetoableChangeListener(const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener>& aListener) throw( ::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException );
+		inline ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo> getPropertySetInfo() const;
+		inline void setPropertyValue(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue);
+		inline ::com::sun::star::uno::Any getPropertyValue(const ::rtl::OUString& PropertyName) const;
+		inline void addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener>& xListener);
+		inline void removePropertyChangeListener(const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener>& aListener);
+		inline void addVetoableChangeListener(const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener>& aListener);
+		inline void removeVetoableChangeListener(const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener>& aListener);
 
 		// ::com::sun::star::sdb::XColumn
-		inline sal_Bool wasNull() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::rtl::OUString getString() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline sal_Bool getBoolean() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline sal_Int8 getByte() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline sal_Int16 getShort() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline sal_Int32 getInt() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline sal_Int64 getLong() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline float getFloat() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline double getDouble() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Sequence< sal_Int8 > getBytes() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::util::Date getDate() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::util::Time getTime() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::util::DateTime  getTimestamp() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> getBinaryStream() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> getCharacterStream() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Any getObject(const ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess>& typeMap) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRef> getRef() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XBlob> getBlob() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XClob> getClob() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XArray> getArray() throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
+		inline sal_Bool wasNull();
+		inline ::rtl::OUString getString();
+		inline sal_Bool getBoolean();
+		inline sal_Int8 getByte();
+		inline sal_Int16 getShort();
+		inline sal_Int32 getInt();
+		inline sal_Int64 getLong();
+		inline float getFloat();
+		inline double getDouble();
+		inline ::com::sun::star::uno::Sequence< sal_Int8 > getBytes();
+		inline ::com::sun::star::util::Date getDate();
+		inline ::com::sun::star::util::Time getTime();
+		inline ::com::sun::star::util::DateTime  getTimestamp();
+		inline ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> getBinaryStream();
+		inline ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> getCharacterStream();
+		inline ::com::sun::star::uno::Any getObject(const ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess>& typeMap);
+		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRef> getRef();
+		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XBlob> getBlob();
+		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XClob> getClob();
+		inline ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XArray> getArray();
 
 		// XColumnUpdate
-		inline void updateNull(void) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateBoolean(sal_Bool x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateByte(sal_Int8 x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateShort(sal_Int16 x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateInt(sal_Int32 x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateLong(sal_Int64 x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateFloat(float x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateDouble(double x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateString(const ::rtl::OUString& x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateBytes(const ::com::sun::star::uno::Sequence< sal_Int8 >& x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateDate(const com::sun::star::util::Date& x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateTime(const ::com::sun::star::util::Time& x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateTimestamp(const ::com::sun::star::util::DateTime& x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateBinaryStream(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream>& x, sal_Int32 length) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateCharacterStream(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream>& x, sal_Int32 length) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateObject(const ::com::sun::star::uno::Any& x) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
-		inline void updateNumericObject(const ::com::sun::star::uno::Any& x, sal_Int32 scale) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException );
+		inline void updateNull(void);
+		inline void updateBoolean(sal_Bool x);
+		inline void updateByte(sal_Int8 x);
+		inline void updateShort(sal_Int16 x);
+		inline void updateInt(sal_Int32 x);
+		inline void updateLong(sal_Int64 x);
+		inline void updateFloat(float x);
+		inline void updateDouble(double x);
+		inline void updateString(const ::rtl::OUString& x);
+		inline void updateBytes(const ::com::sun::star::uno::Sequence< sal_Int8 >& x);
+		inline void updateDate(const com::sun::star::util::Date& x);
+		inline void updateTime(const ::com::sun::star::util::Time& x);
+		inline void updateTimestamp(const ::com::sun::star::util::DateTime& x);
+		inline void updateBinaryStream(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream>& x, sal_Int32 length);
+		inline void updateCharacterStream(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream>& x, sal_Int32 length);
+		inline void updateObject(const ::com::sun::star::uno::Any& x);
+		inline void updateNumericObject(const ::com::sun::star::uno::Any& x, sal_Int32 scale);
 	};
 
 #endif // SVX_FORM_SDBDATACOLUMN_HXX

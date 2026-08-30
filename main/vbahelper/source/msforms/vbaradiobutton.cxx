@@ -36,7 +36,7 @@ ScVbaRadioButton::ScVbaRadioButton( const uno::Reference< XHelperInterface >& xP
 
 // Attributes
 rtl::OUString SAL_CALL
-ScVbaRadioButton::getCaption() throw (css::uno::RuntimeException)
+ScVbaRadioButton::getCaption()
 {
     rtl::OUString Label;
     m_xProps->getPropertyValue( LABEL ) >>= Label;
@@ -44,13 +44,13 @@ ScVbaRadioButton::getCaption() throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaRadioButton::setCaption( const rtl::OUString& _caption ) throw (::com::sun::star::uno::RuntimeException)
+ScVbaRadioButton::setCaption( const rtl::OUString& _caption )
 {
     m_xProps->setPropertyValue( LABEL, uno::makeAny( _caption ) );
 }
 
 uno::Any SAL_CALL
-ScVbaRadioButton::getValue() throw (css::uno::RuntimeException)
+ScVbaRadioButton::getValue()
 {
     sal_Int16 nValue = -1;
     m_xProps->getPropertyValue( STATE ) >>= nValue;
@@ -64,7 +64,7 @@ ScVbaRadioButton::getValue() throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaRadioButton::setValue( const uno::Any& _value ) throw (uno::RuntimeException)
+ScVbaRadioButton::setValue( const uno::Any& _value )
 {
     sal_Int16 nValue = 0;
     sal_Bool bValue = sal_False;
@@ -81,7 +81,7 @@ ScVbaRadioButton::setValue( const uno::Any& _value ) throw (uno::RuntimeExceptio
     m_xProps->setPropertyValue( STATE, uno::makeAny( nValue ) );
 }
 
-uno::Reference< msforms::XNewFont > SAL_CALL ScVbaRadioButton::getFont() throw (uno::RuntimeException)
+uno::Reference< msforms::XNewFont > SAL_CALL ScVbaRadioButton::getFont()
 {
     return new VbaNewFont( this, mxContext, m_xProps );
 }

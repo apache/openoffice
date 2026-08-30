@@ -113,7 +113,7 @@ protected:
 	void EndPopupMode();
 
     // XStatusListener (subclasses must override this one to get the status updates
-	virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 
     void            StateChanged( StateChangedType nType );
     void            DataChanged( const DataChangedEvent& rDCEvt );

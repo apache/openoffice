@@ -91,7 +91,6 @@ public:
 	virtual Reference< XFastContextHandler > SAL_CALL
 	createFastChildContext( ::sal_Int32 aElement,
 							const Reference< XFastAttributeList >& xAttribs )
-		throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 
@@ -169,7 +168,6 @@ public:
 		}
 
 	virtual Reference< XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElement, const Reference< XFastAttributeList >& xAttribs )
-		throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 
@@ -210,7 +208,6 @@ LayoutNodeContext::~LayoutNodeContext()
 }
 
 void SAL_CALL LayoutNodeContext::endFastElement( ::sal_Int32 )
-	throw (SAXException, RuntimeException)
 {
 
 }
@@ -261,7 +258,6 @@ sal_Int32 LayoutNodeContext::tagToVarIdx( sal_Int32 aTag )
 Reference< XFastContextHandler > SAL_CALL
 LayoutNodeContext::createFastChildContext( ::sal_Int32 aElement,
 												  const Reference< XFastAttributeList >& xAttribs )
-	throw (SAXException, RuntimeException)
 {
 	Reference< XFastContextHandler > xRet;
 

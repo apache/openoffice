@@ -71,8 +71,7 @@ namespace svt
                                             const ::rtl::OUString& aName,
 											const ::rtl::OUString& aMediaType );
 
-		static sal_Bool ObjectIsModified( const NS_UNO::Reference < NS_EMBED::XEmbeddedObject >& )
-								throw( NS_UNO::Exception );
+		static sal_Bool ObjectIsModified( const NS_UNO::Reference < NS_EMBED::XEmbeddedObject >& );
 		static NS_UNO::Reference< NS_IO::XInputStream > GetGraphicReplacementStream(
 											sal_Int64 nViewAspect,
 											const NS_UNO::Reference < NS_EMBED::XEmbeddedObject >&,

@@ -63,19 +63,16 @@ public:
         css::uno::Reference< css::uno::XComponentContext > const & context):
         m_context(context) {}
 
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
 
-    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName)
-        throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName);
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException);
+    getSupportedServiceNames();
 
     virtual css::uno::Reference< css::uri::XUriReference > SAL_CALL
     createVndSunStarPkgUrlReference(
-        css::uno::Reference< css::uri::XUriReference > const & authority)
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::uri::XUriReference > const & authority);
 
 private:
     Factory(Factory &); // not implemented
@@ -87,7 +84,6 @@ private:
 };
 
 rtl::OUString Factory::getImplementationName()
-    throw (css::uno::RuntimeException)
 {
     return
         stoc_services::VndSunStarPkgUrlReferenceFactory::
@@ -95,14 +91,12 @@ rtl::OUString Factory::getImplementationName()
 }
 
 sal_Bool Factory::supportsService(rtl::OUString const & serviceName)
-    throw (css::uno::RuntimeException)
 {
     return stoc::uriproc::supportsService(
         getSupportedServiceNames(), serviceName);
 }
 
 css::uno::Sequence< rtl::OUString > Factory::getSupportedServiceNames()
-    throw (css::uno::RuntimeException)
 {
     return stoc_services::VndSunStarPkgUrlReferenceFactory::
         getSupportedServiceNames();
@@ -111,7 +105,6 @@ css::uno::Sequence< rtl::OUString > Factory::getSupportedServiceNames()
 css::uno::Reference< css::uri::XUriReference >
 Factory::createVndSunStarPkgUrlReference(
     css::uno::Reference< css::uri::XUriReference > const & authority)
-    throw (css::uno::RuntimeException)
 {
     OSL_ASSERT(authority.is());
     if (authority->isAbsolute() && !authority->hasFragment()) {
@@ -138,7 +131,6 @@ namespace stoc_services { namespace VndSunStarPkgUrlReferenceFactory
 
 css::uno::Reference< css::uno::XInterface > create(
     css::uno::Reference< css::uno::XComponentContext > const & context)
-    SAL_THROW((css::uno::Exception))
 {
     try {
         return static_cast< cppu::OWeakObject * >(new Factory(context));

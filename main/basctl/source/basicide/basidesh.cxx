@@ -126,17 +126,17 @@ public:
     }
 
     // XEventListener
-    virtual void SAL_CALL disposing( const lang::EventObject& ) throw( uno::RuntimeException ) {}
+    virtual void SAL_CALL disposing( const lang::EventObject& ) {}
 
     // XContainerListener
-    virtual void SAL_CALL elementInserted( const container::ContainerEvent& Event ) throw( uno::RuntimeException )
+    virtual void SAL_CALL elementInserted( const container::ContainerEvent& Event )
     {
         rtl::OUString sModuleName;
         if( mpShell && ( Event.Accessor >>= sModuleName ) )
             mpShell->FindBasWin( mpShell->m_aCurDocument, mpShell->m_aCurLibName, sModuleName, sal_True, sal_False );
     }
-    virtual void SAL_CALL elementReplaced( const container::ContainerEvent& ) throw( com::sun::star::uno::RuntimeException ) { }
-    virtual void SAL_CALL elementRemoved( const container::ContainerEvent& Event ) throw( com::sun::star::uno::RuntimeException )
+    virtual void SAL_CALL elementReplaced( const container::ContainerEvent& ) { }
+    virtual void SAL_CALL elementRemoved( const container::ContainerEvent& Event )
     {
         rtl::OUString sModuleName;
         if( mpShell  && ( Event.Accessor >>= sModuleName ) )

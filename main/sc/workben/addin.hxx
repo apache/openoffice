@@ -60,37 +60,37 @@ public:
 	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static();
 
 							// XAddIn
-    virtual ::rtl::OUString SAL_CALL getProgrammaticFuntionName( const ::rtl::OUString& aDisplayName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getDisplayFunctionName( const ::rtl::OUString& aProgrammaticName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getFunctionDescription( const ::rtl::OUString& aProgrammaticName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getDisplayArgumentName( const ::rtl::OUString& aProgrammaticFunctionName, sal_Int32 nArgument ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getArgumentDescription( const ::rtl::OUString& aProgrammaticFunctionName, sal_Int32 nArgument ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getProgrammaticCategoryName( const ::rtl::OUString& aProgrammaticFunctionName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getDisplayCategoryName( const ::rtl::OUString& aProgrammaticFunctionName ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getProgrammaticFuntionName( const ::rtl::OUString& aDisplayName );
+    virtual ::rtl::OUString SAL_CALL getDisplayFunctionName( const ::rtl::OUString& aProgrammaticName );
+    virtual ::rtl::OUString SAL_CALL getFunctionDescription( const ::rtl::OUString& aProgrammaticName );
+    virtual ::rtl::OUString SAL_CALL getDisplayArgumentName( const ::rtl::OUString& aProgrammaticFunctionName, sal_Int32 nArgument );
+    virtual ::rtl::OUString SAL_CALL getArgumentDescription( const ::rtl::OUString& aProgrammaticFunctionName, sal_Int32 nArgument );
+    virtual ::rtl::OUString SAL_CALL getProgrammaticCategoryName( const ::rtl::OUString& aProgrammaticFunctionName );
+    virtual ::rtl::OUString SAL_CALL getDisplayCategoryName( const ::rtl::OUString& aProgrammaticFunctionName );
 
 							// XLocalizable
-    virtual void SAL_CALL setLocale( const ::com::sun::star::lang::Locale& eLocale ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setLocale( const ::com::sun::star::lang::Locale& eLocale );
+    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  );
 
 							// XTestAddIn
-    virtual sal_Int32 SAL_CALL countParams( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArgs ) throw(::com::sun::star::uno::RuntimeException);
-    virtual double SAL_CALL addOne( double fValue ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL repeatStr( const ::rtl::OUString& aStr, sal_Int32 nCount ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getDateString( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xCaller, double fValue ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getColorValue( const ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange >& xRange ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > > SAL_CALL transpose( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > >& aMatrix ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > > SAL_CALL transposeInt( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > >& aMatrix ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XVolatileResult > SAL_CALL callAsync( const ::rtl::OUString& aString ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL repeatMultiple( sal_Int32 nCount, const ::com::sun::star::uno::Any& aFirst, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aFollow ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getStrOrVal( sal_Int32 nFlag ) throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL countParams( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArgs );
+    virtual double SAL_CALL addOne( double fValue );
+    virtual ::rtl::OUString SAL_CALL repeatStr( const ::rtl::OUString& aStr, sal_Int32 nCount );
+    virtual ::rtl::OUString SAL_CALL getDateString( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xCaller, double fValue );
+    virtual sal_Int32 SAL_CALL getColorValue( const ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange >& xRange );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > > SAL_CALL transpose( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< double > >& aMatrix );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > > SAL_CALL transposeInt( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< sal_Int32 > >& aMatrix );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XVolatileResult > SAL_CALL callAsync( const ::rtl::OUString& aString );
+    virtual ::rtl::OUString SAL_CALL repeatMultiple( sal_Int32 nCount, const ::com::sun::star::uno::Any& aFirst, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aFollow );
+    virtual ::com::sun::star::uno::Any SAL_CALL getStrOrVal( sal_Int32 nFlag );
 
 							// XServiceName
-    virtual ::rtl::OUString SAL_CALL getServiceName(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getServiceName(  );
 
 							// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 };
 
 

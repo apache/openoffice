@@ -149,13 +149,11 @@ sal_Bool SwAccessiblePage::HasCursor()
 }
 
 OUString SwAccessiblePage::getImplementationName( )
-    throw( RuntimeException )
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM(sImplementationName));
 }
 
 sal_Bool SwAccessiblePage::supportsService( const OUString& rServiceName)
-    throw( RuntimeException )
 {
 	return rServiceName.equalsAsciiL( sServiceName, sizeof(sServiceName)-1 ) ||
 	   	rServiceName.equalsAsciiL( sAccessibleServiceName,
@@ -163,7 +161,6 @@ sal_Bool SwAccessiblePage::supportsService( const OUString& rServiceName)
 }
 
 Sequence<OUString> SwAccessiblePage::getSupportedServiceNames( )
-    throw( RuntimeException )
 {
 	Sequence< OUString > aRet(2);
 	OUString* pArray = aRet.getArray();
@@ -173,7 +170,6 @@ Sequence<OUString> SwAccessiblePage::getSupportedServiceNames( )
 }
 
 Sequence< sal_Int8 > SAL_CALL SwAccessiblePage::getImplementationId()
-		throw(RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static Sequence< sal_Int8 > aId( 16 );
@@ -187,7 +183,6 @@ Sequence< sal_Int8 > SAL_CALL SwAccessiblePage::getImplementationId()
 }
 
 OUString SwAccessiblePage::getAccessibleDescription( )
-    throw( RuntimeException )
 {
     CHECK_FOR_DEFUNC( ::com::sun::star::accessibility::XAccessibleContext );
 

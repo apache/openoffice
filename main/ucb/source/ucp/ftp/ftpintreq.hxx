@@ -48,8 +48,7 @@ namespace ftp {
 
         virtual com::sun::star::uno::Any SAL_CALL
         queryInterface(
-            const com::sun::star::uno::Type& rType )
-            throw( com::sun::star::uno::RuntimeException);
+            const com::sun::star::uno::Type& rType );
 
         virtual void SAL_CALL
         acquire(
@@ -66,8 +65,7 @@ namespace ftp {
 
         XTYPEPROVIDER_DECL()
 
-        virtual void SAL_CALL select()
-            throw (com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL select();
 
         bool isSelected() const;
 
@@ -90,8 +88,7 @@ namespace ftp {
 
         virtual com::sun::star::uno::Any SAL_CALL
         queryInterface(
-            const com::sun::star::uno::Type& rType )
-            throw( com::sun::star::uno::RuntimeException);
+            const com::sun::star::uno::Type& rType );
 
         virtual void SAL_CALL
         acquire(
@@ -108,8 +105,7 @@ namespace ftp {
 
         XTYPEPROVIDER_DECL()
 
-        virtual void SAL_CALL select()
-            throw (com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL select();
 
     private:
 
@@ -129,8 +125,7 @@ namespace ftp {
 
         virtual com::sun::star::uno::Any SAL_CALL
         queryInterface(
-            const com::sun::star::uno::Type& rType )
-            throw( com::sun::star::uno::RuntimeException);
+            const com::sun::star::uno::Type& rType );
 
         virtual void SAL_CALL
         acquire(
@@ -148,14 +143,12 @@ namespace ftp {
         XTYPEPROVIDER_DECL()
 
         com::sun::star::uno::Any SAL_CALL
-        getRequest(  )
-            throw (com::sun::star::uno::RuntimeException);
+        getRequest(  );
 
         com::sun::star::uno::Sequence<
             com::sun::star::uno::Reference<
             com::sun::star::task::XInteractionContinuation > > SAL_CALL
-        getContinuations(  )
-            throw (com::sun::star::uno::RuntimeException);
+        getContinuations(  );
 
         bool approved() const;
 

@@ -45,13 +45,11 @@ ScDrawModelBroadcaster::~ScDrawModelBroadcaster()
 }
 
 void SAL_CALL ScDrawModelBroadcaster::addEventListener( const uno::Reference< document::XEventListener >& xListener )
-    throw (uno::RuntimeException)
 {
 	maEventListeners.addInterface( xListener );
 }
 
 void SAL_CALL ScDrawModelBroadcaster::removeEventListener( const uno::Reference< document::XEventListener >& xListener )
-    throw (uno::RuntimeException)
 {
 	maEventListeners.removeInterface( xListener );
 }

@@ -116,20 +116,20 @@ public:
     virtual ~ConvDicNameContainer();
 
     // XElementAccess
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
 
     // XNameAccess
-    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  );
+    virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     // XNameReplace
-    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement );
 
     // XNameContainer
-    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::ElementExistException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement );
+    virtual void SAL_CALL removeByName( const ::rtl::OUString& Name );
 
 
     // looks for conversion dictionaries with the specified extension
@@ -209,7 +209,6 @@ uno::Reference< XConversionDictionary > ConvDicNameContainer::GetByName(
 
 
 uno::Type SAL_CALL ConvDicNameContainer::getElementType(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return uno::Type( ::getCppuType( (uno::Reference< XConversionDictionary > *) 0) );
@@ -217,7 +216,6 @@ uno::Type SAL_CALL ConvDicNameContainer::getElementType(  )
 
 
 sal_Bool SAL_CALL ConvDicNameContainer::hasElements(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return aConvDics.getLength() > 0;
@@ -225,7 +223,6 @@ sal_Bool SAL_CALL ConvDicNameContainer::hasElements(  )
 
 
 uno::Any SAL_CALL ConvDicNameContainer::getByName( const OUString& rName )
-    throw (NoSuchElementException, WrappedTargetException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     uno::Reference< XConversionDictionary > xRes( GetByName( rName ) );
@@ -236,7 +233,6 @@ uno::Any SAL_CALL ConvDicNameContainer::getByName( const OUString& rName )
 
 
 uno::Sequence< OUString > SAL_CALL ConvDicNameContainer::getElementNames(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -251,7 +247,6 @@ uno::Sequence< OUString > SAL_CALL ConvDicNameContainer::getElementNames(  )
 
 
 sal_Bool SAL_CALL ConvDicNameContainer::hasByName( const OUString& rName )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return GetByName( rName ).is();
@@ -261,7 +256,6 @@ sal_Bool SAL_CALL ConvDicNameContainer::hasByName( const OUString& rName )
 void SAL_CALL ConvDicNameContainer::replaceByName(
         const OUString& rName,
         const uno::Any& rElement )
-    throw (IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -279,7 +273,6 @@ void SAL_CALL ConvDicNameContainer::replaceByName(
 void SAL_CALL ConvDicNameContainer::insertByName(
         const OUString& rName,
         const Any& rElement )
-    throw (IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -297,7 +290,6 @@ void SAL_CALL ConvDicNameContainer::insertByName(
 
 
 void SAL_CALL ConvDicNameContainer::removeByName( const OUString& rName )
-    throw (NoSuchElementException, WrappedTargetException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -481,7 +473,7 @@ ConvDicNameContainer & ConvDicList::GetNameContainer()
 }
 
 
-uno::Reference< container::XNameContainer > SAL_CALL ConvDicList::getDictionaryContainer(  ) throw (RuntimeException)
+uno::Reference< container::XNameContainer > SAL_CALL ConvDicList::getDictionaryContainer(  )
 {
     MutexGuard  aGuard( GetLinguMutex() );
     GetNameContainer();
@@ -494,7 +486,6 @@ uno::Reference< XConversionDictionary > SAL_CALL ConvDicList::addNewDictionary(
         const OUString& rName,
         const Locale& rLocale,
         sal_Int16 nConvDicType )
-    throw (NoSupportException, ElementExistException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -537,7 +528,6 @@ uno::Sequence< OUString > SAL_CALL ConvDicList::queryConversions(
         sal_Int16 nConversionDictionaryType,
         ConversionDirection eDirection,
         sal_Int32 nTextConversionOptions )
-    throw (IllegalArgumentException, NoSupportException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -588,7 +578,6 @@ sal_Int16 SAL_CALL ConvDicList::queryMaxCharCount(
         const Locale& rLocale,
         sal_Int16 nConversionDictionaryType,
         ConversionDirection eDirection )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -612,7 +601,6 @@ sal_Int16 SAL_CALL ConvDicList::queryMaxCharCount(
 
 
 void SAL_CALL ConvDicList::dispose(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     if (!bDisposing)
@@ -628,7 +616,6 @@ void SAL_CALL ConvDicList::dispose(  )
 
 void SAL_CALL ConvDicList::addEventListener(
         const uno::Reference< XEventListener >& rxListener )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     if (!bDisposing && rxListener.is())
@@ -638,7 +625,6 @@ void SAL_CALL ConvDicList::addEventListener(
 
 void SAL_CALL ConvDicList::removeEventListener(
         const uno::Reference< XEventListener >& rxListener )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     if (!bDisposing && rxListener.is())
@@ -647,7 +633,6 @@ void SAL_CALL ConvDicList::removeEventListener(
 
 
 OUString SAL_CALL ConvDicList::getImplementationName(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return getImplementationName_Static();
@@ -655,7 +640,6 @@ OUString SAL_CALL ConvDicList::getImplementationName(  )
 
 
 sal_Bool SAL_CALL ConvDicList::supportsService( const OUString& rServiceName )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return rServiceName.equalsAscii( SN_CONV_DICTIONARY_LIST );
@@ -663,7 +647,6 @@ sal_Bool SAL_CALL ConvDicList::supportsService( const OUString& rServiceName )
 
 
 uno::Sequence< OUString > SAL_CALL ConvDicList::getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return getSupportedServiceNames_Static();
@@ -683,7 +666,6 @@ uno::Sequence< OUString > ConvDicList::getSupportedServiceNames_Static()
 
 uno::Reference< uno::XInterface > SAL_CALL ConvDicList_CreateInstance(
         const uno::Reference< XMultiServiceFactory > & /*rSMgr*/ )
-    throw(Exception)
 {
     return StaticConvDicList::get();
 }

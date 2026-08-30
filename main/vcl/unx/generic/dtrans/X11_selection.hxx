@@ -96,7 +96,7 @@ namespace x11 {
 		void drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& dtde ) throw();
 
 		// XInitialization
-		virtual void		SAL_CALL initialize( const Sequence< Any >& args ) throw ( ::com::sun::star::uno::Exception );
+		virtual void		SAL_CALL initialize( const Sequence< Any >& args );
 
 		// XDropTarget
 		virtual void		SAL_CALL addDropTargetListener( const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTargetListener >& ) throw();
@@ -134,7 +134,7 @@ namespace x11 {
 							SAL_CALL getSupportedServiceNames() throw();
 
 		// XInitialization
-		virtual void		SAL_CALL initialize( const Sequence< Any >& arguments ) throw( ::com::sun::star::uno::Exception );
+		virtual void		SAL_CALL initialize( const Sequence< Any >& arguments );
 
 		// XDragSource
 		virtual sal_Bool	SAL_CALL isDragImageSupported() throw();
@@ -471,7 +471,7 @@ namespace x11 {
 		void shutdown() throw();
 
 		// XInitialization
-		virtual void		SAL_CALL initialize( const Sequence< Any >& arguments ) throw( ::com::sun::star::uno::Exception );
+		virtual void		SAL_CALL initialize( const Sequence< Any >& arguments );
 
 		// XEventHandler
 		virtual sal_Bool	SAL_CALL handleEvent( const Any& event ) throw();
@@ -493,13 +493,11 @@ namespace x11 {
 		virtual com::sun::star::uno::Reference< XInterface > getReference() throw();
 
 		// XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		// XTerminateListener
-		virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& aEvent )
-				throw( ::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException );
-		virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& aEvent )
-				throw( ::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& aEvent );
+		virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& aEvent );
 	};
 
 // ------------------------------------------------------------------------

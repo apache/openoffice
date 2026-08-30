@@ -130,27 +130,21 @@ public:
     Mutex m_mutex;
     t_ptr_map m_receiver2adapters;
 
-    FactoryImpl( Reference< XComponentContext > const & xContext )
-        SAL_THROW( (RuntimeException) );
+    FactoryImpl( Reference< XComponentContext > const & xContext );
     virtual ~FactoryImpl() SAL_THROW( () );
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName()
-        throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName )
-        throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
     // XInvocationAdapterFactory
     virtual Reference< XInterface > SAL_CALL createAdapter(
-        const Reference< script::XInvocation > & xReceiver, const Type & rType )
-        throw (RuntimeException);
+        const Reference< script::XInvocation > & xReceiver, const Type & rType );
     // XInvocationAdapterFactory2
     virtual Reference< XInterface > SAL_CALL createAdapter(
         const Reference< script::XInvocation > & xReceiver,
-        const Sequence< Type > & rTypes )
-        throw (RuntimeException);
+        const Sequence< Type > & rTypes );
 };
 struct AdapterImpl;
 //==============================================================================
@@ -197,8 +191,7 @@ struct AdapterImpl
     inline AdapterImpl(
         void * key, Reference< script::XInvocation > const & xReceiver,
         const Sequence< Type > & rTypes,
-        FactoryImpl * pFactory )
-        SAL_THROW( (RuntimeException) );
+        FactoryImpl * pFactory );
 };
 //______________________________________________________________________________
 inline AdapterImpl::~AdapterImpl()
@@ -676,7 +669,6 @@ AdapterImpl::AdapterImpl(
     void * key, Reference< script::XInvocation > const & xReceiver,
     const Sequence< Type > & rTypes,
     FactoryImpl * pFactory )
-    SAL_THROW( (RuntimeException) )
         : m_nRef( 1 ),
           m_pFactory( pFactory ),
           m_key( key )
@@ -726,7 +718,6 @@ AdapterImpl::AdapterImpl(
 
 //______________________________________________________________________________
 FactoryImpl::FactoryImpl( Reference< XComponentContext > const & xContext )
-    SAL_THROW( (RuntimeException) )
     : m_pInvokMethodTD( 0 ),
       m_pSetValueTD( 0 ),
       m_pGetValueTD( 0 ),
@@ -864,7 +855,6 @@ static inline AdapterImpl * lookup_adapter(
 Reference< XInterface > FactoryImpl::createAdapter(
     const Reference< script::XInvocation > & xReceiver,
     const Sequence< Type > & rTypes )
-    throw (RuntimeException)
 {
     Reference< XInterface > xRet;
     if (xReceiver.is() && rTypes.getLength())
@@ -924,7 +914,6 @@ Reference< XInterface > FactoryImpl::createAdapter(
 //______________________________________________________________________________
 Reference< XInterface > FactoryImpl::createAdapter(
     const Reference< script::XInvocation > & xReceiver, const Type & rType )
-    throw (RuntimeException)
 {
     return createAdapter( xReceiver, Sequence< Type >( &rType, 1 ) );
 }
@@ -932,13 +921,11 @@ Reference< XInterface > FactoryImpl::createAdapter(
 // XServiceInfo
 //______________________________________________________________________________
 OUString FactoryImpl::getImplementationName()
-    throw (RuntimeException)
 {
     return invadp_getImplementationName();
 }
 //______________________________________________________________________________
 sal_Bool FactoryImpl::supportsService( const OUString & rServiceName )
-    throw (RuntimeException)
 {
     const Sequence< OUString > & rSNL = getSupportedServiceNames();
     const OUString * pArray = rSNL.getConstArray();
@@ -951,7 +938,6 @@ sal_Bool FactoryImpl::supportsService( const OUString & rServiceName )
 }
 //______________________________________________________________________________
 Sequence< OUString > FactoryImpl::getSupportedServiceNames()
-    throw (RuntimeException)
 {
     return invadp_getSupportedServiceNames();
 }
@@ -959,7 +945,6 @@ Sequence< OUString > FactoryImpl::getSupportedServiceNames()
 //==============================================================================
 static Reference< XInterface > SAL_CALL FactoryImpl_create(
     const Reference< XComponentContext > & xContext )
-    throw (Exception)
 {
     Reference< XInterface > rRet;
     {

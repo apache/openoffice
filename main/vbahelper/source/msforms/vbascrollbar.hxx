@@ -35,16 +35,16 @@ class ScVbaScrollBar : public ScrollBarImpl_BASE
 public:
     ScVbaScrollBar( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::uno::XInterface >& xControl, const css::uno::Reference< css::frame::XModel >& xModel, ov::AbstractGeometryAttributes* pGeomHelper  );
    // Attributes
-    virtual css::uno::Any SAL_CALL getValue() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setValue( const css::uno::Any& _value ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getMax() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setMax( ::sal_Int32 _max ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getMin() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setMin( ::sal_Int32 _min ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getLargeChange() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLargeChange( ::sal_Int32 _largechange ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getSmallChange() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setSmallChange( ::sal_Int32 _smallchange ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getValue();
+    virtual void SAL_CALL setValue( const css::uno::Any& _value );
+    virtual ::sal_Int32 SAL_CALL getMax();
+    virtual void SAL_CALL setMax( ::sal_Int32 _max );
+    virtual ::sal_Int32 SAL_CALL getMin();
+    virtual void SAL_CALL setMin( ::sal_Int32 _min );
+    virtual ::sal_Int32 SAL_CALL getLargeChange();
+    virtual void SAL_CALL setLargeChange( ::sal_Int32 _largechange );
+    virtual ::sal_Int32 SAL_CALL getSmallChange();
+    virtual void SAL_CALL setSmallChange( ::sal_Int32 _smallchange );
 
 
     //XHelperInterface

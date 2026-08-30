@@ -126,7 +126,7 @@ namespace dbaui
 	IMPLEMENT_SERVICE_INFO1_STATIC(OToolboxController,"com.sun.star.sdb.ApplicationToolboxController","com.sun.star.frame.ToolboxController")
 	// -----------------------------------------------------------------------------
 	// XInterface
-	Any SAL_CALL OToolboxController::queryInterface( const Type& _rType ) throw (RuntimeException)
+	Any SAL_CALL OToolboxController::queryInterface( const Type& _rType )
 	{
 		Any aReturn = ToolboxController::queryInterface(_rType);
 		if (!aReturn.hasValue())
@@ -144,7 +144,7 @@ namespace dbaui
 		ToolboxController::release();
 	}
 	// -----------------------------------------------------------------------------
-	void SAL_CALL OToolboxController::initialize( const Sequence< Any >& _rArguments ) throw (Exception, RuntimeException)
+	void SAL_CALL OToolboxController::initialize( const Sequence< Any >& _rArguments )
 	{
 		ToolboxController::initialize(_rArguments);
 		vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
@@ -191,7 +191,7 @@ namespace dbaui
 		}
 	}
 	// -----------------------------------------------------------------------------
-	void SAL_CALL OToolboxController::statusChanged( const FeatureStateEvent& Event ) throw ( RuntimeException )
+	void SAL_CALL OToolboxController::statusChanged( const FeatureStateEvent& Event )
 	{
         vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
 		::osl::MutexGuard aGuard(m_aMutex);
@@ -272,7 +272,7 @@ namespace dbaui
         return pMenu;
     }
 	// -----------------------------------------------------------------------------
-	Reference< ::com::sun::star::awt::XWindow > SAL_CALL OToolboxController::createPopupWindow() throw (RuntimeException)
+	Reference< ::com::sun::star::awt::XWindow > SAL_CALL OToolboxController::createPopupWindow()
 	{
 		// execute the menu
 		vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );

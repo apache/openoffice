@@ -733,7 +733,6 @@ void ControllerCommandDispatch::fireStatusEvent(
 void SAL_CALL ControllerCommandDispatch::dispatch(
     const util::URL& URL,
     const Sequence< beans::PropertyValue >& Arguments )
-    throw (uno::RuntimeException)
 {
     if( commandAvailable( URL.Complete ))
         m_xDispatch->dispatch( URL, Arguments );
@@ -750,7 +749,6 @@ void SAL_CALL ControllerCommandDispatch::disposing()
 
 // ____ XEventListener (base of XModifyListener) ____
 void SAL_CALL ControllerCommandDispatch::disposing( const lang::EventObject& /* Source */ )
-    throw (uno::RuntimeException)
 {
     m_xController.clear();
     m_xDispatch.clear();
@@ -759,7 +757,6 @@ void SAL_CALL ControllerCommandDispatch::disposing( const lang::EventObject& /* 
 
 // ____ XModifyListener ____
 void SAL_CALL ControllerCommandDispatch::modified( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
     bool bUpdateCommandAvailability = false;
 
@@ -786,7 +783,6 @@ void SAL_CALL ControllerCommandDispatch::modified( const lang::EventObject& aEve
 
 // ____ XSelectionChangeListener ____
 void SAL_CALL ControllerCommandDispatch::selectionChanged( const lang::EventObject& aEvent )
-    throw (uno::RuntimeException)
 {
     // Update the "ControllerState" Struct.
     if( m_apControllerState.get() && m_xController.is())

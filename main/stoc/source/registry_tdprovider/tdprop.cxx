@@ -40,14 +40,12 @@ ConstantTypeDescriptionImpl::~ConstantTypeDescriptionImpl()
 //__________________________________________________________________________________________________
 // virtual
 TypeClass ConstantTypeDescriptionImpl::getTypeClass()
-    throw( RuntimeException )
 {
     return TypeClass_CONSTANT;
 }
 //__________________________________________________________________________________________________
 // virtual
 OUString ConstantTypeDescriptionImpl::getName()
-    throw( RuntimeException )
 {
     return _aName;
 }
@@ -56,7 +54,6 @@ OUString ConstantTypeDescriptionImpl::getName()
 //__________________________________________________________________________________________________
 // virtual
 Any SAL_CALL ConstantTypeDescriptionImpl::getConstantValue()
-    throw( RuntimeException )
 {
     return _aValue;
 }

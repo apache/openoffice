@@ -122,8 +122,8 @@ protected:
 
 	SvStream& 							mrStm;
 
-    virtual void SAL_CALL				writeBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& rData ) throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException) { mrStm.Write( rData.getConstArray(), rData.getLength() ); }
-    virtual void SAL_CALL				flush() throw (::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException) { mrStm.Flush(); }
+    virtual void SAL_CALL				writeBytes( const ::com::sun::star::uno::Sequence< sal_Int8 >& rData ) { mrStm.Write( rData.getConstArray(), rData.getLength() ); }
+    virtual void SAL_CALL				flush() { mrStm.Flush(); }
     virtual void SAL_CALL				closeOutput() throw() {}
 
 public:

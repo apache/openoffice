@@ -89,17 +89,13 @@ public:
 
 	// XService info
 	static  OUString                    impl_getImplementationName();
-    virtual OUString           SAL_CALL getImplementationName()
-		throw (RuntimeException);
+    virtual OUString           SAL_CALL getImplementationName();
 	static  Sequence<OUString>          impl_getSupportedServiceNames();
-	virtual Sequence<OUString> SAL_CALL getSupportedServiceNames()
-		throw (RuntimeException);
-	virtual sal_Bool           SAL_CALL supportsService( const OUString& aName )
-		throw (RuntimeException);
+	virtual Sequence<OUString> SAL_CALL getSupportedServiceNames();
+	virtual sal_Bool           SAL_CALL supportsService( const OUString& aName );
 
 	// XInitialize
-	virtual void SAL_CALL initialize( const Sequence<Any>& aArguments )
-		throw ( Exception );
+	virtual void SAL_CALL initialize( const Sequence<Any>& aArguments );
 
 	static  Reference<XInterface> impl_getInstance( const Reference< XMultiServiceFactory >& aFactory );
 };
@@ -116,8 +112,7 @@ public:
 	virtual ~AccInstanceProvider();
 
 	// XInstanceProvider
-    virtual Reference<XInterface> SAL_CALL getInstance (const OUString& aName )
-        throw ( NoSuchElementException );
+    virtual Reference<XInterface> SAL_CALL getInstance (const OUString& aName );
 };
 
 

@@ -128,13 +128,11 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER3( ScAccessibleCell, ScAccessibleCellBase, Access
 
 uno::Reference< XAccessible > SAL_CALL ScAccessibleCell::getAccessibleAtPoint(
 		const awt::Point& rPoint )
-		throw (uno::RuntimeException)
 {
     return AccessibleStaticTextBase::getAccessibleAtPoint(rPoint);
 }
 
 void SAL_CALL ScAccessibleCell::grabFocus(  )
-		throw (uno::RuntimeException)
 {
  	ScUnoGuard aGuard;
     IsObjectValid();
@@ -150,7 +148,6 @@ void SAL_CALL ScAccessibleCell::grabFocus(  )
 }
 
 Rectangle ScAccessibleCell::GetBoundingBoxOnScreen(void) const
-		throw (uno::RuntimeException)
 {
 	Rectangle aCellRect(GetBoundingBox());
 	if (mpViewShell)
@@ -167,7 +164,6 @@ Rectangle ScAccessibleCell::GetBoundingBoxOnScreen(void) const
 }
 
 Rectangle ScAccessibleCell::GetBoundingBox(void) const
-		throw (uno::RuntimeException)
 {
 	Rectangle aCellRect;
 	if (mpViewShell)
@@ -212,22 +208,18 @@ Rectangle ScAccessibleCell::GetBoundingBox(void) const
 
 sal_Int32 SAL_CALL
 	ScAccessibleCell::getAccessibleChildCount(void)
-    				throw (uno::RuntimeException)
 {
     return AccessibleStaticTextBase::getAccessibleChildCount();
 }
 
 uno::Reference< XAccessible > SAL_CALL
 	ScAccessibleCell::getAccessibleChild(sal_Int32 nIndex)
-        throw (uno::RuntimeException,
-		lang::IndexOutOfBoundsException)
 {
     return AccessibleStaticTextBase::getAccessibleChild(nIndex);
 }
 
 uno::Reference<XAccessibleStateSet> SAL_CALL
 	ScAccessibleCell::getAccessibleStateSet(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<XAccessibleStateSet> xParentStates;
@@ -283,7 +275,6 @@ uno::Reference<XAccessibleStateSet> SAL_CALL
 
 uno::Reference<XAccessibleRelationSet> SAL_CALL
    	ScAccessibleCell::getAccessibleRelationSet(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -300,14 +291,12 @@ uno::Reference<XAccessibleRelationSet> SAL_CALL
 	//=====  XServiceInfo  ====================================================
 
 ::rtl::OUString SAL_CALL ScAccessibleCell::getImplementationName(void)
-        throw (uno::RuntimeException)
 {
 	return rtl::OUString(RTL_CONSTASCII_USTRINGPARAM ("ScAccessibleCell"));
 }
 
 uno::Sequence< ::rtl::OUString> SAL_CALL
 	ScAccessibleCell::getSupportedServiceNames(void)
-        throw (uno::RuntimeException)
 {
 	uno::Sequence< ::rtl::OUString > aSequence = ScAccessibleContextBase::getSupportedServiceNames();
     sal_Int32 nOldSize(aSequence.getLength());
@@ -510,7 +499,6 @@ void ScAccessibleCell::AddRelation(const ScRange& rRange,
 }
 
 uno::Any SAL_CALL ScAccessibleCell::getExtendedAttributes()
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 	uno::Any strRet;
 	if (mpViewShell)
@@ -543,7 +531,7 @@ uno::Any SAL_CALL ScAccessibleCell::getExtendedAttributes()
 }
 
 // cell has its own ParaIndent property, so when calling character attributes on cell, the ParaIndent should replace the ParaLeftMargin if its value is not zero.
-uno::Sequence< beans::PropertyValue > SAL_CALL ScAccessibleCell::getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+uno::Sequence< beans::PropertyValue > SAL_CALL ScAccessibleCell::getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes )
 {
 	uno::Sequence< beans::PropertyValue > aAttribs = AccessibleStaticTextBase::getCharacterAttributes( nIndex, aRequestedAttributes );
 	beans::PropertyValue *pAttribs = aAttribs.getArray();

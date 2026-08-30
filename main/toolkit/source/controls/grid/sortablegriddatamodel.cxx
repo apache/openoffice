@@ -183,7 +183,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Any SAL_CALL SortableGridDataModel::queryInterface( const Type& aType ) throw (RuntimeException)
+    Any SAL_CALL SortableGridDataModel::queryInterface( const Type& aType )
     {
         Any aReturn( SortableGridDataModel_Base::queryInterface( aType ) );
         if ( !aReturn.hasValue() )
@@ -204,14 +204,14 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< Type > SAL_CALL SortableGridDataModel::getTypes(  ) throw (RuntimeException)
+    Sequence< Type > SAL_CALL SortableGridDataModel::getTypes(  )
     {
         return SortableGridDataModel_Base::getTypes();
         // don't expose the types got via SortableGridDataModel_PrivateBase - they're private, after all
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::sal_Int8 > SAL_CALL SortableGridDataModel::getImplementationId(  ) throw (RuntimeException)
+    Sequence< ::sal_Int8 > SAL_CALL SortableGridDataModel::getImplementationId(  )
     {
         static ::cppu::OImplementationId aId;
         return aId.getImplementationId();
@@ -229,7 +229,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::initialize( const Sequence< Any >& i_arguments ) throw (Exception, RuntimeException)
+    void SAL_CALL SortableGridDataModel::initialize( const Sequence< Any >& i_arguments )
     {
         ::comphelper::ComponentGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -287,7 +287,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::rowsInserted( const GridDataEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::rowsInserted( const GridDataEvent& i_event )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -347,7 +347,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::rowsRemoved( const GridDataEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::rowsRemoved( const GridDataEvent& i_event )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -408,7 +408,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::dataChanged( const GridDataEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::dataChanged( const GridDataEvent& i_event )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -418,7 +418,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::rowHeadingChanged( const GridDataEvent& i_event ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::rowHeadingChanged( const GridDataEvent& i_event )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -428,7 +428,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::disposing( const EventObject& i_event ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::disposing( const EventObject& i_event )
     {
         // not interested in
         OSL_UNUSED( i_event );
@@ -522,7 +522,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::sortByColumn( ::sal_Int32 i_columnIndex, ::sal_Bool i_sortAscending ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::sortByColumn( ::sal_Int32 i_columnIndex, ::sal_Bool i_sortAscending )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -565,7 +565,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::removeColumnSort(  ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::removeColumnSort(  )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -573,7 +573,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Pair< ::sal_Int32, ::sal_Bool > SAL_CALL SortableGridDataModel::getCurrentSortOrder(  ) throw (RuntimeException)
+    Pair< ::sal_Int32, ::sal_Bool > SAL_CALL SortableGridDataModel::getCurrentSortOrder(  )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -582,7 +582,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::addRow( const Any& i_heading, const Sequence< Any >& i_data ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::addRow( const Any& i_heading, const Sequence< Any >& i_data )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -593,7 +593,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::addRows( const Sequence< Any >& i_headings, const Sequence< Sequence< Any > >& i_data ) throw (IllegalArgumentException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::addRows( const Sequence< Any >& i_headings, const Sequence< Sequence< Any > >& i_data )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -604,7 +604,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::insertRow( ::sal_Int32 i_index, const Any& i_heading, const Sequence< Any >& i_data ) throw (RuntimeException, IndexOutOfBoundsException)
+    void SAL_CALL SortableGridDataModel::insertRow( ::sal_Int32 i_index, const Any& i_heading, const Sequence< Any >& i_data )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -618,7 +618,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::insertRows( ::sal_Int32 i_index, const Sequence< Any>& i_headings, const Sequence< Sequence< Any > >& i_data ) throw (IllegalArgumentException, IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::insertRows( ::sal_Int32 i_index, const Sequence< Any>& i_headings, const Sequence< Sequence< Any > >& i_data )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -632,7 +632,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::removeRow( ::sal_Int32 i_rowIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::removeRow( ::sal_Int32 i_rowIndex )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -645,7 +645,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::removeAllRows(  ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::removeAllRows(  )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -656,7 +656,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::updateCellData( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::updateCellData( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -669,7 +669,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::updateRowData( const Sequence< ::sal_Int32 >& i_columnIndexes, ::sal_Int32 i_rowIndex, const Sequence< Any >& i_values ) throw (IndexOutOfBoundsException, IllegalArgumentException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::updateRowData( const Sequence< ::sal_Int32 >& i_columnIndexes, ::sal_Int32 i_rowIndex, const Sequence< Any >& i_values )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -682,7 +682,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::updateRowHeading( ::sal_Int32 i_rowIndex, const Any& i_heading ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::updateRowHeading( ::sal_Int32 i_rowIndex, const Any& i_heading )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -695,7 +695,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::updateCellToolTip( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::updateCellToolTip( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -708,7 +708,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::updateRowToolTip( ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
+    void SAL_CALL SortableGridDataModel::updateRowToolTip( ::sal_Int32 i_rowIndex, const Any& i_value )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -721,19 +721,19 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::addGridDataListener( const Reference< XGridDataListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::addGridDataListener( const Reference< XGridDataListener >& i_listener )
     {
 	    rBHelper.addListener( XGridDataListener::static_type(), i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    void SAL_CALL SortableGridDataModel::removeGridDataListener( const Reference< XGridDataListener >& i_listener ) throw (RuntimeException)
+    void SAL_CALL SortableGridDataModel::removeGridDataListener( const Reference< XGridDataListener >& i_listener )
     {
 	    rBHelper.removeListener( XGridDataListener::static_type(), i_listener );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL SortableGridDataModel::getRowCount() throw (RuntimeException)
+    ::sal_Int32 SAL_CALL SortableGridDataModel::getRowCount()
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -744,7 +744,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL SortableGridDataModel::getColumnCount() throw (RuntimeException)
+    ::sal_Int32 SAL_CALL SortableGridDataModel::getColumnCount()
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -755,7 +755,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Any SAL_CALL SortableGridDataModel::getCellData( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+    Any SAL_CALL SortableGridDataModel::getCellData( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -768,7 +768,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Any SAL_CALL SortableGridDataModel::getCellToolTip( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+    Any SAL_CALL SortableGridDataModel::getCellToolTip( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -781,7 +781,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Any SAL_CALL SortableGridDataModel::getRowHeading( ::sal_Int32 i_rowIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+    Any SAL_CALL SortableGridDataModel::getRowHeading( ::sal_Int32 i_rowIndex )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -794,7 +794,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< Any > SAL_CALL SortableGridDataModel::getRowData( ::sal_Int32 i_rowIndex ) throw (IndexOutOfBoundsException, RuntimeException)
+    Sequence< Any > SAL_CALL SortableGridDataModel::getRowData( ::sal_Int32 i_rowIndex )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -826,7 +826,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Reference< XCloneable > SAL_CALL SortableGridDataModel::createClone(  ) throw (RuntimeException)
+    Reference< XCloneable > SAL_CALL SortableGridDataModel::createClone(  )
     {
         MethodGuard aGuard( *this, rBHelper );
         DBG_CHECK_ME();
@@ -835,13 +835,13 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL SortableGridDataModel::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL SortableGridDataModel::getImplementationName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.comp.toolkit.SortableGridDataModel" ) );
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    ::sal_Bool SAL_CALL SortableGridDataModel::supportsService( const ::rtl::OUString& i_serviceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL SortableGridDataModel::supportsService( const ::rtl::OUString& i_serviceName )
     {
         Sequence< ::rtl::OUString > const aServiceNames( getSupportedServiceNames() );
         for ( sal_Int32 i=0; i<aServiceNames.getLength(); ++i )
@@ -851,7 +851,7 @@ namespace toolkit
     }
 
     //------------------------------------------------------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL SortableGridDataModel::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL SortableGridDataModel::getSupportedServiceNames(  )
     {
         Sequence< ::rtl::OUString > aServiceNames(1);
         aServiceNames[0] = ::rtl::OUString::createFromAscii( szServiceName_SortableGridDataModel );

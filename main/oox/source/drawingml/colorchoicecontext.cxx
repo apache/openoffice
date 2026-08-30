@@ -44,7 +44,6 @@ ColorValueContext::ColorValueContext( ContextHandler& rParent, Color& rColor ) :
 }
 
 void ColorValueContext::startFastElement( sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
-	throw (SAXException, RuntimeException)
 {
     AttributeList aAttribs( rxAttribs );
     switch( nElement )
@@ -84,7 +83,7 @@ void ColorValueContext::startFastElement( sal_Int32 nElement, const Reference< X
 }
 
 Reference< XFastContextHandler > ColorValueContext::createFastChildContext(
-        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs ) throw (SAXException, RuntimeException)
+        sal_Int32 nElement, const Reference< XFastAttributeList >& rxAttribs )
 {
     AttributeList aAttribs( rxAttribs );
     switch( nElement )
@@ -134,7 +133,7 @@ ColorContext::ColorContext( ContextHandler& rParent, Color& rColor ) :
 }
 
 Reference< XFastContextHandler > ColorContext::createFastChildContext(
-        sal_Int32 nElement, const Reference< XFastAttributeList >& ) throw (SAXException, RuntimeException)
+        sal_Int32 nElement, const Reference< XFastAttributeList >& )
 {
     switch( nElement )
     {

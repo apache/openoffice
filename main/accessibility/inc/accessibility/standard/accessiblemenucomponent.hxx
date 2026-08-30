@@ -50,7 +50,7 @@ protected:
     virtual void			FillAccessibleStateSet( utl::AccessibleStateSetHelper& rStateSet );
 
 	// OCommonAccessibleComponent
-	virtual ::com::sun::star::awt::Rectangle SAL_CALL	implGetBounds(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::awt::Rectangle SAL_CALL	implGetBounds(  );
 
 public:
 	OAccessibleMenuComponent( Menu* pMenu );
@@ -63,35 +63,35 @@ public:
 	DECLARE_XTYPEPROVIDER()
 
 	// XAccessibleContext
-	virtual sal_Int32 SAL_CALL getAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int16 SAL_CALL getAccessibleRole(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getAccessibleDescription(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getAccessibleName(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  ) throw (::com::sun::star::accessibility::IllegalAccessibleComponentStateException, ::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getAccessibleChildCount(  );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent(  );
+	virtual sal_Int16 SAL_CALL getAccessibleRole(  );
+	virtual ::rtl::OUString SAL_CALL getAccessibleDescription(  );
+	virtual ::rtl::OUString SAL_CALL getAccessibleName(  );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet > SAL_CALL getAccessibleRelationSet(  );
+	virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  );
 
 	// XAccessibleComponent
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleAtPoint( const ::com::sun::star::awt::Point& aPoint ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen(	) throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL grabFocus(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getForeground(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getBackground(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleAtPoint( const ::com::sun::star::awt::Point& aPoint );
+	virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen(	);
+	virtual void SAL_CALL grabFocus(  );
+	virtual sal_Int32 SAL_CALL getForeground(  );
+	virtual sal_Int32 SAL_CALL getBackground(  );
 
 	// XAccessibleExtendedComponent
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL getFont(	) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getTitledBorderText(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getToolTipText(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XFont > SAL_CALL getFont(	);
+	virtual ::rtl::OUString SAL_CALL getTitledBorderText(  );
+	virtual ::rtl::OUString SAL_CALL getToolTipText(  );
 
 	// XAccessibleSelection
-	virtual void SAL_CALL selectAccessibleChild( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL clearAccessibleSelection(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL selectAllAccessibleChildren(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL deselectAccessibleChild( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL selectAccessibleChild( sal_Int32 nChildIndex );
+	virtual sal_Bool SAL_CALL isAccessibleChildSelected( sal_Int32 nChildIndex );
+	virtual void SAL_CALL clearAccessibleSelection(  );
+	virtual void SAL_CALL selectAllAccessibleChildren(  );
+	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex );
+	virtual void SAL_CALL deselectAccessibleChild( sal_Int32 nChildIndex );
 };
 
 #endif // ACCESSIBILITY_STANDARD_ACCESSIBLEMENUCOMPONENT_HXX

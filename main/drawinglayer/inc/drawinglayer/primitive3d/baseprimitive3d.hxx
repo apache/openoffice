@@ -120,12 +120,12 @@ namespace drawinglayer
 			/** The getDecomposition implementation for UNO API will use getDecomposition from this implementation. It
 			    will get the ViewInformation from the ViewParameters for that purpose
              */
-			virtual Primitive3DSequence SAL_CALL getDecomposition( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rViewParameters ) throw ( ::com::sun::star::uno::RuntimeException );
+			virtual Primitive3DSequence SAL_CALL getDecomposition( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rViewParameters );
 
 			/** the getRange default implementation will use getDecomposition to create the range information from merging
 			    getRange results from the single local decomposition primitives.
              */
-			virtual ::com::sun::star::geometry::RealRectangle3D SAL_CALL getRange( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rViewParameters ) throw ( ::com::sun::star::uno::RuntimeException );
+			virtual ::com::sun::star::geometry::RealRectangle3D SAL_CALL getRange( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rViewParameters );
 		};
 	} // end of namespace primitive3d
 } // end of namespace drawinglayer

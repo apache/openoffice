@@ -61,84 +61,68 @@ public:
     virtual ~ShapeContextHandler();
 
     // ::com::sun::star::lang::XServiceInfo:
-    virtual ::rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 
     virtual ::sal_Bool SAL_CALL supportsService
-    (const ::rtl::OUString & ServiceName) throw (css::uno::RuntimeException);
+    (const ::rtl::OUString & ServiceName);
 
     virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException);
+    getSupportedServiceNames();
 
     // ::com::sun::star::xml::sax::XFastContextHandler:
     virtual void SAL_CALL startFastElement
     (::sal_Int32 Element,
-     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs)
-        throw (css::uno::RuntimeException, css::xml::sax::SAXException);
+     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs);
 
     virtual void SAL_CALL startUnknownElement
     (const ::rtl::OUString & Namespace,
      const ::rtl::OUString & Name,
-     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs)
-        throw (css::uno::RuntimeException, css::xml::sax::SAXException);
+     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs);
 
-    virtual void SAL_CALL endFastElement(::sal_Int32 Element)
-        throw (css::uno::RuntimeException, css::xml::sax::SAXException);
+    virtual void SAL_CALL endFastElement(::sal_Int32 Element);
 
     virtual void SAL_CALL endUnknownElement
     (const ::rtl::OUString & Namespace,
-     const ::rtl::OUString & Name)
-        throw (css::uno::RuntimeException, css::xml::sax::SAXException);
+     const ::rtl::OUString & Name);
 
     virtual css::uno::Reference< css::xml::sax::XFastContextHandler > SAL_CALL
     createFastChildContext
     (::sal_Int32 Element,
-     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs)
-        throw (css::uno::RuntimeException, css::xml::sax::SAXException);
+     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs);
 
     virtual css::uno::Reference< css::xml::sax::XFastContextHandler > SAL_CALL
     createUnknownChildContext
     (const ::rtl::OUString & Namespace,
      const ::rtl::OUString & Name,
-     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs)
-        throw (css::uno::RuntimeException, css::xml::sax::SAXException);
+     const css::uno::Reference< css::xml::sax::XFastAttributeList > & Attribs);
 
-    virtual void SAL_CALL characters(const ::rtl::OUString & aChars)
-        throw (css::uno::RuntimeException, css::xml::sax::SAXException);
+    virtual void SAL_CALL characters(const ::rtl::OUString & aChars);
 
     // ::com::sun::star::xml::sax::XFastShapeContextHandler:
-    virtual css::uno::Reference< css::drawing::XShape > SAL_CALL getShape()
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::drawing::XShape > SAL_CALL getShape();
 
-    virtual css::uno::Reference< css::drawing::XDrawPage > SAL_CALL getDrawPage()
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::drawing::XDrawPage > SAL_CALL getDrawPage();
 
     virtual void SAL_CALL setDrawPage
-    (const css::uno::Reference< css::drawing::XDrawPage > & the_value)
-        throw (css::uno::RuntimeException);
+    (const css::uno::Reference< css::drawing::XDrawPage > & the_value);
 
-    virtual css::uno::Reference< css::frame::XModel > SAL_CALL getModel()
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::frame::XModel > SAL_CALL getModel();
 
     virtual void SAL_CALL setModel
-    (const css::uno::Reference< css::frame::XModel > & the_value)
-        throw (css::uno::RuntimeException);
+    (const css::uno::Reference< css::frame::XModel > & the_value);
 
     virtual css::uno::Reference< css::io::XInputStream > SAL_CALL
-    getInputStream() throw (css::uno::RuntimeException);
+    getInputStream();
 
     virtual void SAL_CALL setInputStream
-    (const css::uno::Reference< css::io::XInputStream > & the_value)
-        throw (css::uno::RuntimeException);
+    (const css::uno::Reference< css::io::XInputStream > & the_value);
 
-    virtual ::rtl::OUString SAL_CALL getRelationFragmentPath()
-        throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getRelationFragmentPath();
     virtual void SAL_CALL setRelationFragmentPath
-    (const ::rtl::OUString & the_value)
-        throw (css::uno::RuntimeException);
+    (const ::rtl::OUString & the_value);
 
-    virtual ::sal_Int32 SAL_CALL getStartToken() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setStartToken( ::sal_Int32 _starttoken ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getStartToken();
+    virtual void SAL_CALL setStartToken( ::sal_Int32 _starttoken );
 
 private:
     ShapeContextHandler(ShapeContextHandler &); // not defined

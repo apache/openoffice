@@ -271,13 +271,12 @@ uno::Sequence<rtl::OUString> ScFunctionAccess::getSupportedServiceNames_Static()
 
 // XServiceInfo
 
-rtl::OUString SAL_CALL ScFunctionAccess::getImplementationName() throw(uno::RuntimeException)
+rtl::OUString SAL_CALL ScFunctionAccess::getImplementationName()
 {
 	return rtl::OUString::createFromAscii( "ScFunctionAccess" );
 }
 
 sal_Bool SAL_CALL ScFunctionAccess::supportsService( const rtl::OUString& rServiceName )
-													throw(uno::RuntimeException)
 {
 	String aServiceStr(rServiceName);
 	return aServiceStr.EqualsAscii( SCFUNCTIONACCESS_SERVICE ) ||
@@ -285,7 +284,6 @@ sal_Bool SAL_CALL ScFunctionAccess::supportsService( const rtl::OUString& rServi
 }
 
 uno::Sequence<rtl::OUString> SAL_CALL ScFunctionAccess::getSupportedServiceNames()
-													throw(uno::RuntimeException)
 {
 	uno::Sequence<rtl::OUString> aRet(2);
 	rtl::OUString* pArray = aRet.getArray();
@@ -297,7 +295,6 @@ uno::Sequence<rtl::OUString> SAL_CALL ScFunctionAccess::getSupportedServiceNames
 // XPropertySet (document settings)
 
 uno::Reference<beans::XPropertySetInfo> SAL_CALL ScFunctionAccess::getPropertySetInfo()
-														throw(uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	static uno::Reference<beans::XPropertySetInfo> aRef(
@@ -307,9 +304,6 @@ uno::Reference<beans::XPropertySetInfo> SAL_CALL ScFunctionAccess::getPropertySe
 
 void SAL_CALL ScFunctionAccess::setPropertyValue(
 						const rtl::OUString& aPropertyName, const uno::Any& aValue )
-				throw(beans::UnknownPropertyException, beans::PropertyVetoException,
-						lang::IllegalArgumentException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -332,8 +326,6 @@ void SAL_CALL ScFunctionAccess::setPropertyValue(
 }
 
 uno::Any SAL_CALL ScFunctionAccess::getPropertyValue( const rtl::OUString& aPropertyName )
-				throw(beans::UnknownPropertyException, lang::WrappedTargetException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 
@@ -528,8 +520,6 @@ static void processSequences( ScDocument* pDoc, const uno::Any& rArg, ScTokenArr
 
 uno::Any SAL_CALL ScFunctionAccess::callFunction( const rtl::OUString& aName,
 							const uno::Sequence<uno::Any>& aArguments )
-				throw(container::NoSuchElementException, lang::IllegalArgumentException,
-						uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 

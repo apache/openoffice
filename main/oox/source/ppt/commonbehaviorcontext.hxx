@@ -51,18 +51,12 @@ namespace oox { namespace ppt {
 		~CommonBehaviorContext( )
 			throw( );
 
-		virtual void SAL_CALL endFastElement( sal_Int32 aElement )
-			throw ( ::com::sun::star::xml::sax::SAXException,
-							::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL endFastElement( sal_Int32 aElement );
 
-		virtual void SAL_CALL characters( const ::rtl::OUString& aChars )
-			throw ( ::com::sun::star::xml::sax::SAXException,
-							::com::sun::star::uno::RuntimeException );
+		virtual void SAL_CALL characters( const ::rtl::OUString& aChars );
 
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastContextHandler > SAL_CALL createFastChildContext( ::sal_Int32 aElementToken,
-																																																																 const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& /*xAttribs*/ )
-			throw ( ::com::sun::star::xml::sax::SAXException,
-							::com::sun::star::uno::RuntimeException );
+																																																																 const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& /*xAttribs*/ );
 
 	private:
 		bool              mbInAttrList;

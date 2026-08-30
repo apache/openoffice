@@ -130,7 +130,6 @@ BubbleChartType::~BubbleChartType()
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL BubbleChartType::createClone()
-    throw (uno::RuntimeException)
 {
     return uno::Reference< util::XCloneable >( new BubbleChartType( *this ));
 }
@@ -138,8 +137,6 @@ uno::Reference< util::XCloneable > SAL_CALL BubbleChartType::createClone()
 // ____ XChartType ____
 Reference< chart2::XCoordinateSystem > SAL_CALL
     BubbleChartType::createCoordinateSystem( ::sal_Int32 DimensionCount )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException)
 {
     Reference< chart2::XCoordinateSystem > xResult(
         new CartesianCoordinateSystem(
@@ -170,13 +167,11 @@ Reference< chart2::XCoordinateSystem > SAL_CALL
 }
 
 ::rtl::OUString SAL_CALL BubbleChartType::getChartType()
-    throw (uno::RuntimeException)
 {
     return CHART2_SERVICE_NAME_CHARTTYPE_BUBBLE;
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL BubbleChartType::getSupportedMandatoryRoles()
-    throw (uno::RuntimeException)
 {
     static uno::Sequence< ::rtl::OUString > aMandRolesSeq;
 
@@ -193,14 +188,12 @@ uno::Sequence< ::rtl::OUString > SAL_CALL BubbleChartType::getSupportedMandatory
 }
 
 OUString SAL_CALL BubbleChartType::getRoleOfSequenceForSeriesLabel()
-    throw (uno::RuntimeException)
 {
     return C2U( "values-size" );
 }
 
 // ____ OPropertySet ____
 uno::Any BubbleChartType::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticBubbleChartTypeDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -217,7 +210,6 @@ uno::Any BubbleChartType::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL BubbleChartType::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticBubbleChartTypeInfo::get();
 }

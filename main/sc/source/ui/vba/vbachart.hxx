@@ -54,15 +54,15 @@ friend class ScVbaAxis;
 
 	css::uno::Sequence< rtl::OUString > getDefaultSeriesDescriptions( sal_Int32 nCount );
 	css::uno::Sequence< css::uno::Sequence< double > > dblValues;
-	void setDefaultChartType()throw ( css::script::BasicErrorException ) ;
-	void setDiagram( const rtl::OUString& _sDiagramType) throw( css::script::BasicErrorException );
-	bool isStacked() throw ( css::uno::RuntimeException );
-	bool is100PercentStacked() throw ( css::uno::RuntimeException );
-	sal_Int32 getStackedType( sal_Int32 _nStacked, sal_Int32 _n100PercentStacked, sal_Int32 _nUnStacked ) throw ( css::uno::RuntimeException );
-	sal_Int32 getSolidType(sal_Int32 _nDeep, sal_Int32 _nVertiStacked, sal_Int32 _nVerti100PercentStacked, sal_Int32 _nVertiUnStacked, sal_Int32 _nHoriStacked, sal_Int32 _nHori100PercentStacked, sal_Int32 _nHoriUnStacked) throw ( css::script::BasicErrorException );
-	sal_Int32 getStockUpDownValue(sal_Int32 _nUpDown, sal_Int32 _nNotUpDown) throw (css::script::BasicErrorException);
-	bool hasMarkers() throw ( css::script::BasicErrorException );
-	sal_Int32 getMarkerType(sal_Int32 _nWithMarkers, sal_Int32 _nWithoutMarkers) throw ( css::script::BasicErrorException );
+	void setDefaultChartType() ;
+	void setDiagram( const rtl::OUString& _sDiagramType);
+	bool isStacked();
+	bool is100PercentStacked();
+	sal_Int32 getStackedType( sal_Int32 _nStacked, sal_Int32 _n100PercentStacked, sal_Int32 _nUnStacked );
+	sal_Int32 getSolidType(sal_Int32 _nDeep, sal_Int32 _nVertiStacked, sal_Int32 _nVerti100PercentStacked, sal_Int32 _nVertiUnStacked, sal_Int32 _nHoriStacked, sal_Int32 _nHori100PercentStacked, sal_Int32 _nHoriUnStacked);
+	sal_Int32 getStockUpDownValue(sal_Int32 _nUpDown, sal_Int32 _nNotUpDown);
+	bool hasMarkers();
+	sal_Int32 getMarkerType(sal_Int32 _nWithMarkers, sal_Int32 _nWithoutMarkers);
 	void assignDiagramAttributes();
 	void setDefaultSeriesDescriptionLabels(){}
 public:
@@ -70,37 +70,37 @@ public:
 
 	// Non-interface
 	css::uno::Reference< css::beans::XPropertySet > xDiagramPropertySet() { return mxDiagramPropertySet; }
-	bool isSeriesIndexValid(sal_Int32 _seriesindex) throw( css::script::BasicErrorException );
-	bool areIndicesValid(sal_Int32 _seriesindex, sal_Int32 _valindex) throw ( css::script::BasicErrorException );
-	void setSeriesName(sal_Int32 _index, rtl::OUString _sname) throw ( css::script::BasicErrorException );
-	sal_Int32 getSeriesIndex(rtl::OUString _sseriesname) throw ( css::script::BasicErrorException );
-	sal_Int32 getSeriesCount() throw ( css::script::BasicErrorException );
-	rtl::OUString getSeriesName(sal_Int32 _index) throw ( css::script::BasicErrorException );
-	double getValue(sal_Int32 _seriesIndex, sal_Int32 _valindex) throw ( css::script::BasicErrorException );
-	sal_Int32 getValuesCount(sal_Int32 _seriesIndex) throw ( css::script::BasicErrorException );
-	css::uno::Reference< ov::excel::XDataLabels > DataLabels( const css::uno::Reference< ov::excel::XSeries > _oSeries ) throw ( css::script::BasicErrorException );
-	bool getHasDataCaption( const css::uno::Reference< css::beans::XPropertySet >& _xPropertySet )throw ( css::script::BasicErrorException );
-	void setHasDataCaption( const css::uno::Reference< css::beans::XPropertySet >& _xPropertySet, bool _bHasDataLabels )throw ( css::script::BasicErrorException );
-	bool is3D() throw ( css::uno::RuntimeException );
-	css::uno::Reference< css::beans::XPropertySet > getAxisPropertySet(sal_Int32 _nAxisType, sal_Int32 _nAxisGroup) throw ( css::script::BasicErrorException );
+	bool isSeriesIndexValid(sal_Int32 _seriesindex);
+	bool areIndicesValid(sal_Int32 _seriesindex, sal_Int32 _valindex);
+	void setSeriesName(sal_Int32 _index, rtl::OUString _sname);
+	sal_Int32 getSeriesIndex(rtl::OUString _sseriesname);
+	sal_Int32 getSeriesCount();
+	rtl::OUString getSeriesName(sal_Int32 _index);
+	double getValue(sal_Int32 _seriesIndex, sal_Int32 _valindex);
+	sal_Int32 getValuesCount(sal_Int32 _seriesIndex);
+	css::uno::Reference< ov::excel::XDataLabels > DataLabels( const css::uno::Reference< ov::excel::XSeries > _oSeries );
+	bool getHasDataCaption( const css::uno::Reference< css::beans::XPropertySet >& _xPropertySet );
+	void setHasDataCaption( const css::uno::Reference< css::beans::XPropertySet >& _xPropertySet, bool _bHasDataLabels );
+	bool is3D();
+	css::uno::Reference< css::beans::XPropertySet > getAxisPropertySet(sal_Int32 _nAxisType, sal_Int32 _nAxisGroup);
 	// Methods
-	virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL SeriesCollection(const css::uno::Any&) throw (css::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL getChartType() throw ( css::uno::RuntimeException, css::script::BasicErrorException);
-	virtual void SAL_CALL setChartType( ::sal_Int32 _charttype ) throw ( css::uno::RuntimeException, css::script::BasicErrorException);
-	virtual void SAL_CALL Activate(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual void SAL_CALL setSourceData( const css::uno::Reference< ::ooo::vba::excel::XRange >& range, const css::uno::Any& PlotBy ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL Location(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL getLocation(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual void SAL_CALL setLocation( ::sal_Int32 where, const css::uno::Any& Name ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL getHasTitle(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual void SAL_CALL setHasTitle( ::sal_Bool bTitle ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL getHasLegend(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual void SAL_CALL setHasLegend( ::sal_Bool bLegend ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual void SAL_CALL setPlotBy( ::sal_Int32 xlRowCol ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual ::sal_Int32 SAL_CALL getPlotBy(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual css::uno::Reference< ov::excel::XChartTitle > SAL_CALL getChartTitle(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual css::uno::Any SAL_CALL Axes( const css::uno::Any& Type, const css::uno::Any& AxisGroup ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getName();
+	virtual css::uno::Any SAL_CALL SeriesCollection(const css::uno::Any&);
+	virtual ::sal_Int32 SAL_CALL getChartType();
+	virtual void SAL_CALL setChartType( ::sal_Int32 _charttype );
+	virtual void SAL_CALL Activate(  );
+	virtual void SAL_CALL setSourceData( const css::uno::Reference< ::ooo::vba::excel::XRange >& range, const css::uno::Any& PlotBy );
+	virtual ::sal_Int32 SAL_CALL Location(  );
+	virtual ::sal_Int32 SAL_CALL getLocation(  );
+	virtual void SAL_CALL setLocation( ::sal_Int32 where, const css::uno::Any& Name );
+	virtual ::sal_Bool SAL_CALL getHasTitle(  );
+	virtual void SAL_CALL setHasTitle( ::sal_Bool bTitle );
+	virtual ::sal_Bool SAL_CALL getHasLegend(  );
+	virtual void SAL_CALL setHasLegend( ::sal_Bool bLegend );
+	virtual void SAL_CALL setPlotBy( ::sal_Int32 xlRowCol );
+	virtual ::sal_Int32 SAL_CALL getPlotBy(  );
+	virtual css::uno::Reference< ov::excel::XChartTitle > SAL_CALL getChartTitle(  );
+	virtual css::uno::Any SAL_CALL Axes( const css::uno::Any& Type, const css::uno::Any& AxisGroup );
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

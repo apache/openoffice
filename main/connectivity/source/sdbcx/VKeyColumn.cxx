@@ -32,14 +32,14 @@ using namespace ::com::sun::star::beans;
 using namespace ::com::sun::star::uno;
 using namespace cppu;
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OKeyColumn::getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OKeyColumn::getImplementationName(  )
 {
 	if(isNew())
 		return ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.VKeyColumnDescriptor");
 	return ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.VKeyColumn");
 }
 // -----------------------------------------------------------------------------
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL OKeyColumn::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL OKeyColumn::getSupportedServiceNames(  )
 {
 	::com::sun::star::uno::Sequence< ::rtl::OUString > aSupported(1);
 	if(isNew())
@@ -50,7 +50,7 @@ using namespace cppu;
 	return aSupported;
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OKeyColumn::supportsService( const ::rtl::OUString& _rServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL OKeyColumn::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();

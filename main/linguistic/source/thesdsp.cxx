@@ -89,7 +89,6 @@ void ThesaurusDispatcher::ClearSvcList()
 
 Sequence< Locale > SAL_CALL
 	ThesaurusDispatcher::getLocales()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -106,7 +105,6 @@ Sequence< Locale > SAL_CALL
 
 sal_Bool SAL_CALL
     ThesaurusDispatcher::hasLocale( const Locale& rLocale )
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
     ThesSvcByLangMap_t::const_iterator aIt( aSvcMap.find( LocaleToLanguage( rLocale ) ) );
@@ -118,7 +116,6 @@ Sequence< Reference< XMeaning > > SAL_CALL
 	ThesaurusDispatcher::queryMeanings(
 			const OUString& rTerm, const Locale& rLocale,
 			const PropertyValues& rProperties )
-		throw(IllegalArgumentException, RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 

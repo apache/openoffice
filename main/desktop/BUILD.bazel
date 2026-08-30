@@ -9,10 +9,7 @@ _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK", "SHAREDLIB", "_DLL_",
-    "snprintf=_snprintf",
-    "snwprintf=_snwprintf",
     "SUPD=680",
-    "MSC",
     "ENABLE_QUICKSTART_APPLET",
 ]
 
@@ -763,8 +760,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC",
+        "SUPD=680",
     ],
     deps = ["//main/sal:sal_headers"],
     additional_linker_inputs = [
@@ -826,8 +822,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+        "SUPD=680", "UNICODE", "_UNICODE",
     ],
     deps = ["//main/tools:ooopathutils"],
     linkopts = [
@@ -853,8 +848,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+        "SUPD=680", "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -879,8 +873,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+        "SUPD=680", "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -904,8 +897,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC",
+        "SUPD=680",
     ],
     deps = [":desktop_source_hdrs"],
     linkopts = [
@@ -927,8 +919,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC",
+        "SUPD=680",
     ],
     deps = [":desktop_source_hdrs"],
     linkopts = [
@@ -949,8 +940,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC",
+        "SUPD=680",
     ],
     deps = ["//main/sal:sal_headers"],
     additional_linker_inputs = [
@@ -980,8 +970,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+        "SUPD=680", "UNICODE", "_UNICODE",
     ],
     linkopts = [
         "shell32.lib",
@@ -1004,8 +993,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+        "SUPD=680", "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -1031,8 +1019,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+        "SUPD=680", "UNICODE", "_UNICODE",
     ],
     deps = [
         "//main/tools:ooopathutils",
@@ -1057,8 +1044,7 @@ cc_binary(
     ],
     defines = [
         "WNT", "WIN32", 
-        "snprintf=_snprintf",
-        "SUPD=680", "MSC",
+        "SUPD=680",
     ],
     deps = [
         ":desktop_source_hdrs",

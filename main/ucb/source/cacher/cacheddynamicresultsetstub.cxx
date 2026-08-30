@@ -86,7 +86,6 @@ XINTERFACE_COMMON_IMPL( CachedDynamicResultSetStub )
 
 Any SAL_CALL CachedDynamicResultSetStub
 	::queryInterface( const Type&  rType )
-	throw ( RuntimeException )
 {
 	//list all interfaces inclusive baseclasses of interfaces
 
@@ -181,7 +180,6 @@ ONE_INSTANCE_SERVICE_FACTORY_IMPL( CachedDynamicResultSetStubFactory );
 Reference< XDynamicResultSet > SAL_CALL CachedDynamicResultSetStubFactory
 	::createCachedDynamicResultSetStub(
 			const Reference< XDynamicResultSet > & Source )
-			throw( RuntimeException )
 {
 	Reference< XDynamicResultSet > xRet;
 	xRet = new CachedDynamicResultSetStub( Source, m_xSMgr );
@@ -196,9 +194,6 @@ void SAL_CALL CachedDynamicResultSetStubFactory
 			, const Sequence< NumberedSortingInfo > & SortingInfo
 			, const Reference< XAnyCompareFactory > & CompareFactory
 			)
-			throw (  ListenerAlreadySetException
-			, AlreadyInitializedException
-			, RuntimeException )
 {
 	OSL_ENSURE( Source.is(), "a Source is needed" );
 	OSL_ENSURE( TargetCache.is(), "a TargetCache is needed" );

@@ -96,45 +96,45 @@ public:
 								~TplComponent();
 
 	// interface  ::com::sun::star::ucb::XContent
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >  SAL_CALL		getParent() throw ( ::com::sun::star::uno::RuntimeException )
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >  SAL_CALL		getParent()
 			{ ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >  aRef; return aRef; }
-	virtual void	    SAL_CALL				setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & Parent ) throw ( ::com::sun::star::uno::RuntimeException )
+	virtual void	    SAL_CALL				setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & Parent )
 			{}
 
 	// interface  ::com::sun::star::chaos::XURLContent
-	virtual ::rtl::OUString	  SAL_CALL				getURL()  throw ( ::com::sun::star::uno::RuntimeException )
+	virtual ::rtl::OUString	  SAL_CALL				getURL()
 			{ return maURL; }
-	virtual sal_Bool	   SAL_CALL				initialize( const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XURLContent > & aParent, const ::rtl::OUString& aURL ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Bool	   SAL_CALL				initialize( const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XURLContent > & aParent, const ::rtl::OUString& aURL );
 
 	// interface  ::com::sun::star::chaos::XCommandExecutor
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString >  SAL_CALL	 queryCommands()  throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void	   SAL_CALL				cancel( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & rCommandId ) throw ( ::com::sun::star::uno::RuntimeException )
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString >  SAL_CALL	 queryCommands();
+	virtual void	   SAL_CALL				cancel( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & rCommandId )
 			{}
 	virtual void	   SAL_CALL				execute( const ::rtl::OUString& rCommand, const ::com::sun::star::uno::Any& rArgs,
-										 const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XStatusCallback > & rCallback ) throw ( ::com::sun::star::uno::RuntimeException );
+										 const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XStatusCallback > & rCallback );
 
 	// interface  ::com::sun::star::beans::XPropertySet
-	virtual	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL	 getPropertySetInfo()  throw ( ::com::sun::star::uno::RuntimeException );
-    virtual void      SAL_CALL	           setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw ( ::com::sun::star::uno::RuntimeException );
-	virtual ::com::sun::star::uno::Any	 SAL_CALL				getPropertyValue( const ::rtl::OUString& aPropertyName )  throw ( ::com::sun::star::uno::RuntimeException );
+	virtual	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL	 getPropertySetInfo();
+    virtual void      SAL_CALL	           setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue );
+	virtual ::com::sun::star::uno::Any	 SAL_CALL				getPropertyValue( const ::rtl::OUString& aPropertyName );
 	virtual void	  SAL_CALL				addPropertyChangeListener( const ::rtl::OUString& aPropertyName,
-                                                           const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & aListener ) throw ( ::com::sun::star::uno::RuntimeException );
+                                                           const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & aListener );
 	virtual void	  SAL_CALL				removePropertyChangeListener( const ::rtl::OUString& aPropertyName,
-                                                              const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & aListener ) throw ( ::com::sun::star::uno::RuntimeException );
+                                                              const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener > & aListener );
 	virtual void	  SAL_CALL				addVetoableChangeListener( const ::rtl::OUString& aPropertyName,
-                                                           const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & aListener ) throw ( ::com::sun::star::uno::RuntimeException );
+                                                           const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & aListener );
 	virtual void	  SAL_CALL				removeVetoableChangeListener( const ::rtl::OUString& aPropertyName,
-                                                              const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & aListener ) throw ( ::com::sun::star::uno::RuntimeException );
+                                                              const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & aListener );
 	// interface  ::com::sun::star::chaos::XExplorerExchange
-	virtual ::com::sun::star::uno::Any	   SAL_CALL				createDataObject( sal_uInt16& nSourceOptions ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Any	   SAL_CALL				createDataObject( sal_uInt16& nSourceOptions );
 	virtual sal_uInt16	  SAL_CALL				insertDataObject( const ::com::sun::star::uno::Any& pSotDataObjectPtr,
 												  sal_uInt16 nUserAction,
-												  sal_uInt16 nSourceOptions ) throw ( ::com::sun::star::uno::RuntimeException );
+												  sal_uInt16 nSourceOptions );
 	virtual sal_Bool	  SAL_CALL				queryInsertDataObject( const ::com::sun::star::uno::Any& pSotDataObjectPtr,
 													   sal_uInt16 nUserAction,
 													   sal_uInt16 nSourceOptions,
 													   sal_uInt16& nResultingAction,
-													   sal_uInt16& nDefaultAction ) throw ( ::com::sun::star::uno::RuntimeException );
+													   sal_uInt16& nDefaultAction );
 
 
 	// -------------------------------------------------------------
@@ -183,29 +183,29 @@ public:
 								TplContentsComponent();
 								~TplContentsComponent();
 
-	virtual sal_Bool   SAL_CALL				initialize( const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XURLContent > & aParent, const ::rtl::OUString& aURL ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual sal_Bool   SAL_CALL				initialize( const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XURLContent > & aParent, const ::rtl::OUString& aURL );
 
 
 	// interface  ::com::sun::star::chaos::XCommandExecutor
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString >  SAL_CALL	 queryCommands()  throw ( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString >  SAL_CALL	 queryCommands();
 	virtual void		 SAL_CALL			execute( const ::rtl::OUString& rCommand, const ::com::sun::star::uno::Any& rArgs,
-										 const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XStatusCallback > & rCallback ) throw ( ::com::sun::star::uno::RuntimeException );
+										 const ::com::sun::star::uno::Reference< ::com::sun::star::chaos::XStatusCallback > & rCallback );
 
 	// interface  ::com::sun::star::beans::XPropertySet
-	virtual	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL	 getPropertySetInfo()  throw ( ::com::sun::star::uno::RuntimeException );
-	virtual ::com::sun::star::uno::Any	  SAL_CALL				getPropertyValue( const ::rtl::OUString& aPropertyName )  throw ( ::com::sun::star::uno::RuntimeException );
-	virtual void	   SAL_CALL				setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >  SAL_CALL	 getPropertySetInfo();
+	virtual ::com::sun::star::uno::Any	  SAL_CALL				getPropertyValue( const ::rtl::OUString& aPropertyName );
+	virtual void	   SAL_CALL				setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue );
 
 	// interface  ::com::sun::star::chaos::XExplorerExchange
-	virtual ::com::sun::star::uno::Any	    SAL_CALL				createDataObject( sal_uInt16& nSourceOptions ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Any	    SAL_CALL				createDataObject( sal_uInt16& nSourceOptions );
 	virtual sal_uInt16  SAL_CALL					insertDataObject( const ::com::sun::star::uno::Any& pSotDataObjectPtr,
 												  sal_uInt16 nUserAction,
-												  sal_uInt16 nSourceOptions ) throw ( ::com::sun::star::uno::RuntimeException );
+												  sal_uInt16 nSourceOptions );
 	virtual sal_Bool    SAL_CALL					queryInsertDataObject( const ::com::sun::star::uno::Any& pSotDataObjectPtr,
 													   sal_uInt16 nUserAction,
 													   sal_uInt16 nSourceOptions,
 													   sal_uInt16& nResultingAction,
-													   sal_uInt16& nDefaultAction ) throw ( ::com::sun::star::uno::RuntimeException );
+													   sal_uInt16& nDefaultAction );
 
 	// -------------------------------------------------------------
 

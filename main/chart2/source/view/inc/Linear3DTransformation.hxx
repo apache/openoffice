@@ -41,15 +41,11 @@ public:
     // ____ XTransformation ____
     /// @see ::com::sun::star::chart2::XTransformation
     virtual ::com::sun::star::uno::Sequence< double > SAL_CALL transform(
-        const ::com::sun::star::uno::Sequence< double >& rSourceValues )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< double >& rSourceValues );
     /// @see ::com::sun::star::chart2::XTransformation
-    virtual sal_Int32 SAL_CALL getSourceDimension()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getSourceDimension();
     /// @see ::com::sun::star::chart2::XTransformation
-    virtual sal_Int32 SAL_CALL getTargetDimension()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL getTargetDimension();
 
 private:
     ::com::sun::star::drawing::HomogenMatrix    m_Matrix;

@@ -71,25 +71,25 @@ class MenuBarWrapper : public UIConfigElementWrapperBase,
         void            InvalidatePopupControllerCache() { m_bRefreshPopupControllerCache = sal_True; }
 
         // XComponent
-        virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL dispose();
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XUIElement
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getRealInterface() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getRealInterface();
 
         // XUIElementSettings
-        virtual void SAL_CALL updateSettings(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL updateSettings(  );
 
         // XElementAccess
-        virtual ::com::sun::star::uno::Type SAL_CALL getElementType() throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL hasElements() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+        virtual ::sal_Bool SAL_CALL hasElements();
 
         // XNameAccess
-        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames() throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+        virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     private:
         virtual void impl_fillNewData();

@@ -75,83 +75,55 @@ public:
 								 ::com::sun::star::awt::Point& aOutPosition );
 
 	// XInitialization
-	virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-		throw( ::com::sun::star::uno::Exception,
-			   ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	// XDiagram
-    virtual ::rtl::OUString SAL_CALL getDiagramType() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getDataRowProperties( sal_Int32 nRow )
-		throw( ::com::sun::star::lang::IndexOutOfBoundsException,
-			   ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getDataPointProperties( sal_Int32 nCol, sal_Int32 nRow )
-		throw( ::com::sun::star::lang::IndexOutOfBoundsException,
-			   ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getDiagramType();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getDataRowProperties( sal_Int32 nRow );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getDataPointProperties( sal_Int32 nCol, sal_Int32 nRow );
 
 	// XShape ( ::XDiagram )
-	virtual ::com::sun::star::awt::Size SAL_CALL getSize()
-		throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setSize( const ::com::sun::star::awt::Size& )
-		throw( ::com::sun::star::beans::PropertyVetoException,
-		       ::com::sun::star::uno::RuntimeException );
-	virtual ::com::sun::star::awt::Point SAL_CALL getPosition()
-		throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setPosition( const ::com::sun::star::awt::Point& )
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::awt::Size SAL_CALL getSize();
+	virtual void SAL_CALL setSize( const ::com::sun::star::awt::Size& );
+	virtual ::com::sun::star::awt::Point SAL_CALL getPosition();
+	virtual void SAL_CALL setPosition( const ::com::sun::star::awt::Point& );
 
 	// XShapeDescriptor ( ::XShape ::XDiagram )
-    virtual rtl::OUString SAL_CALL getShapeType() throw( com::sun::star::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getShapeType();
 
 	// XAxisXSupplier
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > SAL_CALL getXAxisTitle()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getXAxis()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getXMainGrid()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getXHelpGrid()
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > SAL_CALL getXAxisTitle();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getXAxis();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getXMainGrid();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getXHelpGrid();
 
 	// XAxisYSupplier
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > SAL_CALL getYAxisTitle()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getYAxis()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getYHelpGrid()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getYMainGrid()
-		throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > SAL_CALL getYAxisTitle();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getYAxis();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getYHelpGrid();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getYMainGrid();
 
 	// XStatisticDisplay
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getUpBar()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getDownBar()
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getMinMaxLine()
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getUpBar();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getDownBar();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > SAL_CALL getMinMaxLine();
 
 	// XServiceName
-	virtual ::rtl::OUString SAL_CALL getServiceName() throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::rtl::OUString SAL_CALL getServiceName();
 
 	// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 	// XRefreshable
-	virtual void SAL_CALL refresh() throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL addRefreshListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener >& l )
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL removeRefreshListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener >& l )
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL refresh();
+    virtual void SAL_CALL addRefreshListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener >& l );
+    virtual void SAL_CALL removeRefreshListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XRefreshListener >& l );
 
 	// XLocalizable
-	virtual void SAL_CALL setLocale( const ::com::sun::star::lang::Locale& eLocale )
-		throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale()
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL setLocale( const ::com::sun::star::lang::Locale& eLocale );
+    virtual ::com::sun::star::lang::Locale SAL_CALL getLocale();
 };
 
 #endif	// _SAMPLEADDIN_HXX_

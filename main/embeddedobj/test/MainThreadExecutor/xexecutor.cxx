@@ -60,9 +60,6 @@ MainThreadExecutor_Impl::MainThreadExecutor_Impl( const uno::Reference< task::XJ
 
 //-------------------------------------------------------------------------
 uno::Any SAL_CALL UNOMainThreadExecutor::execute( const uno::Sequence< beans::NamedValue >& aArguments )
-	throw ( lang::IllegalArgumentException,
-			uno::Exception,
-			uno::RuntimeException )
 {
 	uno::Reference< task::XJob > xJob;
 
@@ -111,14 +108,12 @@ uno::Reference< uno::XInterface > SAL_CALL UNOMainThreadExecutor::impl_staticCre
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL UNOMainThreadExecutor::getImplementationName()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL UNOMainThreadExecutor::supportsService( const ::rtl::OUString& ServiceName )
-	throw ( uno::RuntimeException )
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -131,7 +126,6 @@ sal_Bool SAL_CALL UNOMainThreadExecutor::supportsService( const ::rtl::OUString&
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL UNOMainThreadExecutor::getSupportedServiceNames()
-	throw ( uno::RuntimeException )
 {
 	return impl_staticGetSupportedServiceNames();
 }

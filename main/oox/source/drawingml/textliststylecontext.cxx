@@ -47,13 +47,13 @@ TextListStyleContext::~TextListStyleContext()
 
 // --------------------------------------------------------------------
 
-void TextListStyleContext::endFastElement( sal_Int32 ) throw (SAXException, RuntimeException)
+void TextListStyleContext::endFastElement( sal_Int32 )
 {
 }
 
 // --------------------------------------------------------------------
 
-Reference< XFastContextHandler > TextListStyleContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& rxAttributes ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > TextListStyleContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& rxAttributes )
 {
 	Reference< XFastContextHandler > xRet;
 	switch( aElementToken )

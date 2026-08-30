@@ -188,7 +188,7 @@ void ODatabaseImportExport::dispose()
     m_xFormatter.clear();
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseImportExport::disposing( const EventObject& Source ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL ODatabaseImportExport::disposing( const EventObject& Source )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ODatabaseImportExport::disposing" );
 	DBG_CHKTHIS(ODatabaseImportExport,NULL);

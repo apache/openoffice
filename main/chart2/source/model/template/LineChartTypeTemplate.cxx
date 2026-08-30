@@ -176,7 +176,6 @@ LineChartTypeTemplate::~LineChartTypeTemplate()
 {}
 // ____ OPropertySet ____
 uno::Any LineChartTypeTemplate::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticLineChartTypeTemplateDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -192,7 +191,6 @@ uno::Any LineChartTypeTemplate::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 uno::Reference< beans::XPropertySetInfo > SAL_CALL LineChartTypeTemplate::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticLineChartTypeTemplateInfo::get();
 }
@@ -211,7 +209,6 @@ StackMode LineChartTypeTemplate::getStackMode( sal_Int32 /* nChartTypeIndex */ )
 sal_Bool SAL_CALL LineChartTypeTemplate::matchesTemplate(
     const uno::Reference< chart2::XDiagram >& xDiagram,
     sal_Bool bAdaptProperties )
-    throw (uno::RuntimeException)
 {
     sal_Bool bResult = ChartTypeTemplate::matchesTemplate( xDiagram, bAdaptProperties );
 
@@ -329,7 +326,6 @@ Reference< chart2::XChartType > LineChartTypeTemplate::getChartTypeForIndex( sal
 
 Reference< chart2::XChartType > SAL_CALL LineChartTypeTemplate::getChartTypeForNewSeries(
         const uno::Sequence< Reference< chart2::XChartType > >& aFormerlyUsedChartTypes )
-    throw (uno::RuntimeException)
 {
     Reference< chart2::XChartType > xResult;
 
@@ -366,7 +362,6 @@ void SAL_CALL LineChartTypeTemplate::applyStyle(
     ::sal_Int32 nChartTypeIndex,
     ::sal_Int32 nSeriesIndex,
     ::sal_Int32 nSeriesCount )
-    throw (uno::RuntimeException)
 {
     ChartTypeTemplate::applyStyle( xSeries, nChartTypeIndex, nSeriesIndex, nSeriesCount );
 

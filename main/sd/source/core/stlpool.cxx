@@ -1194,7 +1194,7 @@ void SdStyleSheetPool::RemoveStyleFamily( const SdPage* pPage )
 
 // --------------------------------------------------------------------
 
-void SdStyleSheetPool::throwIfDisposed() throw(::com::sun::star::uno::RuntimeException)
+void SdStyleSheetPool::throwIfDisposed()
 {
 	if( mpDoc == NULL )
 		throw DisposedException();
@@ -1204,7 +1204,7 @@ void SdStyleSheetPool::throwIfDisposed() throw(::com::sun::star::uno::RuntimeExc
 // XServiceInfo
 // --------------------------------------------------------------------
 
-OUString SAL_CALL SdStyleSheetPool::getImplementationName() throw(RuntimeException)
+OUString SAL_CALL SdStyleSheetPool::getImplementationName()
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM("SdStyleSheetPool") );
 }
@@ -1213,14 +1213,14 @@ OUString SAL_CALL SdStyleSheetPool::getImplementationName() throw(RuntimeExcepti
 
 static const sal_Char* gpServiceName = "com.sun.star.style.StyleFamilies";
 
-sal_Bool SAL_CALL SdStyleSheetPool::supportsService( const OUString& ServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL SdStyleSheetPool::supportsService( const OUString& ServiceName )
 {
 	return ServiceName.equalsAscii( gpServiceName );
 }
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL SdStyleSheetPool::getSupportedServiceNames() throw(RuntimeException)
+Sequence< OUString > SAL_CALL SdStyleSheetPool::getSupportedServiceNames()
 {
 	OUString aStr( OUString::createFromAscii( gpServiceName ) );
 	return Sequence< OUString >( &aStr, 1 );
@@ -1230,7 +1230,7 @@ Sequence< OUString > SAL_CALL SdStyleSheetPool::getSupportedServiceNames() throw
 // XNameAccess
 // --------------------------------------------------------------------
 
-Any SAL_CALL SdStyleSheetPool::getByName( const OUString& aName ) throw(NoSuchElementException, WrappedTargetException, RuntimeException)
+Any SAL_CALL SdStyleSheetPool::getByName( const OUString& aName )
 {
 	throwIfDisposed();
 
@@ -1254,7 +1254,7 @@ Any SAL_CALL SdStyleSheetPool::getByName( const OUString& aName ) throw(NoSuchEl
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL SdStyleSheetPool::getElementNames() throw(RuntimeException)
+Sequence< OUString > SAL_CALL SdStyleSheetPool::getElementNames()
 {
 	throwIfDisposed();
 
@@ -1275,7 +1275,7 @@ Sequence< OUString > SAL_CALL SdStyleSheetPool::getElementNames() throw(RuntimeE
 
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SdStyleSheetPool::hasByName( const OUString& aName ) throw(RuntimeException)
+sal_Bool SAL_CALL SdStyleSheetPool::hasByName( const OUString& aName )
 {
 	throwIfDisposed();
 
@@ -1301,7 +1301,7 @@ sal_Bool SAL_CALL SdStyleSheetPool::hasByName( const OUString& aName ) throw(Run
 // XElementAccess
 // --------------------------------------------------------------------
 
-Type SAL_CALL SdStyleSheetPool::getElementType() throw(RuntimeException)
+Type SAL_CALL SdStyleSheetPool::getElementType()
 {
 	throwIfDisposed();
 
@@ -1310,7 +1310,7 @@ Type SAL_CALL SdStyleSheetPool::getElementType() throw(RuntimeException)
 
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SdStyleSheetPool::hasElements() throw(RuntimeException)
+sal_Bool SAL_CALL SdStyleSheetPool::hasElements()
 {
 	return sal_True;
 }
@@ -1319,7 +1319,7 @@ sal_Bool SAL_CALL SdStyleSheetPool::hasElements() throw(RuntimeException)
 // XIndexAccess
 // --------------------------------------------------------------------
 
-sal_Int32 SAL_CALL SdStyleSheetPool::getCount() throw(RuntimeException)
+sal_Int32 SAL_CALL SdStyleSheetPool::getCount()
 {
 	throwIfDisposed();
 
@@ -1328,7 +1328,7 @@ sal_Int32 SAL_CALL SdStyleSheetPool::getCount() throw(RuntimeException)
 
 // --------------------------------------------------------------------
 
-Any SAL_CALL SdStyleSheetPool::getByIndex( sal_Int32 Index ) throw(IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
+Any SAL_CALL SdStyleSheetPool::getByIndex( sal_Int32 Index )
 {
 	switch( Index )
 	{
@@ -1359,7 +1359,7 @@ Any SAL_CALL SdStyleSheetPool::getByIndex( sal_Int32 Index ) throw(IndexOutOfBou
 // XComponent
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheetPool::dispose() throw (RuntimeException)
+void SAL_CALL SdStyleSheetPool::dispose()
 {
 	if( mpDoc )
 	{
@@ -1393,13 +1393,13 @@ void SAL_CALL SdStyleSheetPool::dispose() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheetPool::addEventListener( const Reference< XEventListener >& /*xListener*/ ) throw (RuntimeException)
+void SAL_CALL SdStyleSheetPool::addEventListener( const Reference< XEventListener >& /*xListener*/ )
 {
 }
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheetPool::removeEventListener( const Reference< XEventListener >& /*aListener*/ ) throw (RuntimeException)
+void SAL_CALL SdStyleSheetPool::removeEventListener( const Reference< XEventListener >& /*aListener*/ )
 {
 }
 

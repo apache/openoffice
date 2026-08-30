@@ -80,11 +80,11 @@ public:
     XInputStreamHelper(const sal_uInt8* buf, size_t len, bool bBmp);
     ~XInputStreamHelper();
 
-    virtual ::sal_Int32 SAL_CALL readBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nBytesToRead ) throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL readSomeBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nMaxBytesToRead ) throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException);
-    virtual void SAL_CALL skipBytes( ::sal_Int32 nBytesToSkip ) throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL available(  ) throw (io::NotConnectedException, io::IOException, uno::RuntimeException);
-    virtual void SAL_CALL closeInput(  ) throw (io::NotConnectedException, io::IOException, uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL readBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nBytesToRead );
+    virtual ::sal_Int32 SAL_CALL readSomeBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nMaxBytesToRead );
+    virtual void SAL_CALL skipBytes( ::sal_Int32 nBytesToSkip );
+    virtual ::sal_Int32 SAL_CALL available(  );
+    virtual void SAL_CALL closeInput(  );
 };
 /*-- 01.11.2006 13:56:20---------------------------------------------------
 
@@ -111,7 +111,6 @@ XInputStreamHelper::~XInputStreamHelper()
 
   -----------------------------------------------------------------------*/
 ::sal_Int32 XInputStreamHelper::readBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nBytesToRead )
-    throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
     return readSomeBytes( aData, nBytesToRead );
 }
@@ -119,7 +118,6 @@ XInputStreamHelper::~XInputStreamHelper()
 
   -----------------------------------------------------------------------*/
 ::sal_Int32 XInputStreamHelper::readSomeBytes( uno::Sequence< ::sal_Int8 >& aData, ::sal_Int32 nMaxBytesToRead )
-        throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
 {
     sal_Int32 nRet = 0;
     if( nMaxBytesToRead > 0 )
@@ -150,7 +148,7 @@ XInputStreamHelper::~XInputStreamHelper()
 /*-- 01.11.2006 13:56:21---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void XInputStreamHelper::skipBytes( ::sal_Int32 nBytesToSkip ) throw (io::NotConnectedException, io::BufferSizeExceededException, io::IOException, uno::RuntimeException)
+void XInputStreamHelper::skipBytes( ::sal_Int32 nBytesToSkip )
 {
     if( nBytesToSkip < 0 || m_nPosition + nBytesToSkip > (m_nLength + m_nHeaderLength))
         throw io::BufferSizeExceededException();
@@ -159,14 +157,14 @@ void XInputStreamHelper::skipBytes( ::sal_Int32 nBytesToSkip ) throw (io::NotCon
 /*-- 01.11.2006 13:56:22---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-::sal_Int32 XInputStreamHelper::available(  ) throw (io::NotConnectedException, io::IOException, uno::RuntimeException)
+::sal_Int32 XInputStreamHelper::available(  )
 {
     return ( m_nLength + m_nHeaderLength ) - m_nPosition;
 }
 /*-- 01.11.2006 13:56:22---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void XInputStreamHelper::closeInput(  ) throw (io::NotConnectedException, io::IOException, uno::RuntimeException)
+void XInputStreamHelper::closeInput(  )
 {
 }
 /*-- 02.11.2006 09:34:29---------------------------------------------------

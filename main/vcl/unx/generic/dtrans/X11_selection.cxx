@@ -322,7 +322,7 @@ XLIB_Cursor SelectionManager::createCursor( const char* pPointerData, const char
 	return aCursor;
 }
 
-void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::com::sun::star::uno::Exception)
+void SelectionManager::initialize( const Sequence< Any >& arguments )
 {
 	MutexGuard aGuard(m_aMutex);
 
@@ -3891,12 +3891,10 @@ sal_Bool SelectionManager::handleEvent( const Any& event ) throw()
 }
 
 void SAL_CALL SelectionManager::disposing( const ::com::sun::star::lang::EventObject& )
-	throw( ::com::sun::star::uno::RuntimeException )
 {
 }
 
 void SAL_CALL SelectionManager::queryTermination( const ::com::sun::star::lang::EventObject& )
-	throw( ::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
@@ -3906,7 +3904,6 @@ void SAL_CALL SelectionManager::queryTermination( const ::com::sun::star::lang::
  * has been called before vcl is shutdown
  */
 void SAL_CALL SelectionManager::notifyTermination( const ::com::sun::star::lang::EventObject& rEvent )
-	throw( ::com::sun::star::uno::RuntimeException )
 {
 	css::uno::Reference< XDesktop > xDesktop( rEvent.Source, UNO_QUERY );
 	if( xDesktop.is() == sal_True )
@@ -4099,7 +4096,7 @@ SelectionManagerHolder::~SelectionManagerHolder()
 
 // ------------------------------------------------------------------------
 
-void SelectionManagerHolder::initialize( const Sequence< Any >& arguments ) throw( ::com::sun::star::uno::Exception )
+void SelectionManagerHolder::initialize( const Sequence< Any >& arguments )
 {
 	OUString aDisplayName;
 

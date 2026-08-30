@@ -46,7 +46,7 @@
 #define XINTERFACE_DECL()													\
     virtual com::sun::star::uno::Any SAL_CALL                				\
 	queryInterface( const com::sun::star::uno::Type & rType )               \
-		throw( com::sun::star::uno::RuntimeException );                     \
+		;                     \
     virtual void SAL_CALL                               					\
 	acquire()                                           					\
 		throw();                                                            \
@@ -76,7 +76,6 @@ void SAL_CALL Class::release()                                              \
 #define QUERYINTERFACE_IMPL_START( Class )									\
 com::sun::star::uno::Any SAL_CALL Class::queryInterface(                    \
 								const com::sun::star::uno::Type & rType )   \
-	throw( com::sun::star::uno::RuntimeException )                          \
 {                                                                           \
 	com::sun::star::uno::Any aRet = cppu::queryInterface( rType,
 
@@ -310,10 +309,10 @@ QUERYINTERFACE_IMPL_END
 #define XTYPEPROVIDER_DECL()										  		\
     virtual com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL              \
 	getImplementationId()                                                   \
-		throw( com::sun::star::uno::RuntimeException );						\
+		;						\
     virtual com::sun::star::uno::Sequence< com::sun::star::uno::Type > SAL_CALL \
 	getTypes()         														\
-		throw( com::sun::star::uno::RuntimeException );
+		;
 
 //=========================================================================
 //
@@ -324,7 +323,6 @@ QUERYINTERFACE_IMPL_END
 #define XTYPEPROVIDER_COMMON_IMPL( Class )									\
 com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL                          \
 Class::getImplementationId()                                                \
-	throw( com::sun::star::uno::RuntimeException )                          \
 {                                                                           \
 	static cppu::OImplementationId* pId = NULL;                             \
   	if ( !pId )                                                             \
@@ -342,7 +340,6 @@ Class::getImplementationId()                                                \
 #define GETTYPES_IMPL_START( Class )										\
 com::sun::star::uno::Sequence< com::sun::star::uno::Type > SAL_CALL         \
 Class::getTypes()                                                           \
-	throw( com::sun::star::uno::RuntimeException )                          \
 {                                                                           \
 	static cppu::OTypeCollection* pCollection = NULL;						\
   	if ( !pCollection )                                                     \
@@ -585,13 +582,13 @@ GETTYPES_IMPL_END
 #define XSERVICEINFO_NOFACTORY_DECL()										\
     virtual rtl::OUString SAL_CALL											\
 	getImplementationName()                                                 \
-		throw( com::sun::star::uno::RuntimeException );                     \
+		;                     \
     virtual sal_Bool SAL_CALL                                               \
 	supportsService( const rtl::OUString& ServiceName )                   	\
-		throw( com::sun::star::uno::RuntimeException );                     \
+		;                     \
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL         \
 	getSupportedServiceNames()                                              \
-		throw( com::sun::star::uno::RuntimeException );                     \
+		;                     \
 																			\
     static rtl::OUString                                                  	\
 	getImplementationName_Static();                                         \
@@ -614,7 +611,6 @@ GETTYPES_IMPL_END
 
 #define XSERVICEINFO_COMMOM_IMPL( Class, ImplName )							\
 rtl::OUString SAL_CALL Class::getImplementationName()						\
-	throw( com::sun::star::uno::RuntimeException )                         	\
 {                                                                           \
 	return getImplementationName_Static();                                  \
 }                                                                           \
@@ -626,7 +622,6 @@ rtl::OUString Class::getImplementationName_Static()                       	\
 																			\
 sal_Bool SAL_CALL                                                           \
 Class::supportsService(	const rtl::OUString& ServiceName )                	\
-	throw( com::sun::star::uno::RuntimeException )                          \
 {                                                                           \
 	com::sun::star::uno::Sequence< rtl::OUString > aSNL =                   \
 										getSupportedServiceNames();         \
@@ -642,7 +637,6 @@ Class::supportsService(	const rtl::OUString& ServiceName )                	\
 																			\
 com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL                     \
 Class::getSupportedServiceNames()                                           \
-	throw( com::sun::star::uno::RuntimeException )                          \
 {                                                                           \
 	return getSupportedServiceNames_Static();                               \
 }
@@ -652,7 +646,6 @@ static com::sun::star::uno::Reference<										\
 								com::sun::star::uno::XInterface > SAL_CALL	\
 Class##_CreateInstance( const com::sun::star::uno::Reference<               \
 				com::sun::star::lang::XMultiServiceFactory> & rSMgr )       \
-	throw( com::sun::star::uno::Exception )                                 \
 {                                                                           \
 	com::sun::star::lang::XServiceInfo* pX =                                \
 				(com::sun::star::lang::XServiceInfo*)new Class( rSMgr );    \

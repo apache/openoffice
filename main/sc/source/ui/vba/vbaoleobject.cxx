@@ -61,82 +61,82 @@ ScVbaOLEObject::ScVbaOLEObject( const uno::Reference< XHelperInterface >& xParen
 }
 
 uno::Reference< uno::XInterface > SAL_CALL
-ScVbaOLEObject::getObject() throw (uno::RuntimeException)
+ScVbaOLEObject::getObject()
 {
     return uno::Reference< uno::XInterface >( m_xControlShape, uno::UNO_QUERY_THROW );
 }
 
 sal_Bool SAL_CALL
-ScVbaOLEObject::getEnabled() throw (uno::RuntimeException)
+ScVbaOLEObject::getEnabled()
 {
     return m_xControl->getEnabled();
 }
 
 void SAL_CALL
-ScVbaOLEObject::setEnabled( sal_Bool _enabled ) throw (uno::RuntimeException)
+ScVbaOLEObject::setEnabled( sal_Bool _enabled )
 {
     m_xControl->setEnabled( _enabled );
 }
 
 sal_Bool SAL_CALL
-ScVbaOLEObject::getVisible() throw (uno::RuntimeException)
+ScVbaOLEObject::getVisible()
 {
     OSL_TRACE("OleObject %s returning visible %s", rtl::OUStringToOString( m_xControl->getName(), RTL_TEXTENCODING_UTF8 ).getStr(), m_xControl->getVisible() ? "true" : "false" );
     return m_xControl->getVisible();
 }
 
 void SAL_CALL
-ScVbaOLEObject::setVisible( sal_Bool _visible ) throw (uno::RuntimeException)
+ScVbaOLEObject::setVisible( sal_Bool _visible )
 {
     OSL_TRACE("OleObject %s set visible %s", rtl::OUStringToOString( m_xControl->getName(), RTL_TEXTENCODING_UTF8 ).getStr(), _visible ? "true" : "false" );
     m_xControl->setVisible( _visible );
 }
 
 double SAL_CALL
-ScVbaOLEObject::getLeft() throw (uno::RuntimeException)
+ScVbaOLEObject::getLeft()
 {
     return m_xControl->getLeft();
 }
 
 void SAL_CALL
-ScVbaOLEObject::setLeft( double _left ) throw (uno::RuntimeException)
+ScVbaOLEObject::setLeft( double _left )
 {
     m_xControl->setLeft( _left );
 
 }
 
 double SAL_CALL
-ScVbaOLEObject::getTop() throw (uno::RuntimeException)
+ScVbaOLEObject::getTop()
 {
     return m_xControl->getTop();
 }
 
 void SAL_CALL
-ScVbaOLEObject::setTop( double _top ) throw (uno::RuntimeException)
+ScVbaOLEObject::setTop( double _top )
 {
     m_xControl->setTop( _top );
 }
 
 double SAL_CALL
-ScVbaOLEObject::getHeight() throw (uno::RuntimeException)
+ScVbaOLEObject::getHeight()
 {
     return m_xControl->getHeight();
 }
 
 void SAL_CALL
-ScVbaOLEObject::setHeight( double _height ) throw (uno::RuntimeException)
+ScVbaOLEObject::setHeight( double _height )
 {
     m_xControl->setHeight( _height );
 }
 
 double SAL_CALL
-ScVbaOLEObject::getWidth() throw (uno::RuntimeException)
+ScVbaOLEObject::getWidth()
 {
     return m_xControl->getWidth();
 }
 
 void SAL_CALL
-ScVbaOLEObject::setWidth( double _width ) throw (uno::RuntimeException)
+ScVbaOLEObject::setWidth( double _width )
 {
     m_xControl->setWidth( _width );
 }

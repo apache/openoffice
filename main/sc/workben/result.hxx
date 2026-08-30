@@ -62,8 +62,8 @@ public:
 //	virtual XIdlClassRef	getIdlClass(void);
 
 							// XVolatileResult
-    virtual void SAL_CALL addResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener );
+    virtual void SAL_CALL removeResultListener( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XResultListener >& aListener );
 };
 
 

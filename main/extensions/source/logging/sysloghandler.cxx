@@ -99,22 +99,22 @@ namespace logging
         virtual ~SyslogHandler();
 
         // XLogHandler
-        virtual ::rtl::OUString SAL_CALL getEncoding() throw (RuntimeException);
-        virtual void SAL_CALL setEncoding( const ::rtl::OUString& _encoding ) throw (RuntimeException);
-        virtual Reference< XLogFormatter > SAL_CALL getFormatter() throw (RuntimeException);
-        virtual void SAL_CALL setFormatter( const Reference< XLogFormatter >& _formatter ) throw (RuntimeException);
-        virtual ::sal_Int32 SAL_CALL getLevel() throw (RuntimeException);
-        virtual void SAL_CALL setLevel( ::sal_Int32 _level ) throw (RuntimeException);
-        virtual void SAL_CALL flush(  ) throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL publish( const LogRecord& Record ) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getEncoding();
+        virtual void SAL_CALL setEncoding( const ::rtl::OUString& _encoding );
+        virtual Reference< XLogFormatter > SAL_CALL getFormatter();
+        virtual void SAL_CALL setFormatter( const Reference< XLogFormatter >& _formatter );
+        virtual ::sal_Int32 SAL_CALL getLevel();
+        virtual void SAL_CALL setLevel( ::sal_Int32 _level );
+        virtual void SAL_CALL flush(  );
+        virtual ::sal_Bool SAL_CALL publish( const LogRecord& Record );
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XServiceInfo
-		virtual ::rtl::OUString SAL_CALL getImplementationName() throw(RuntimeException);
-        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw(RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName();
+        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& _rServiceName );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         // OComponentHelper
         virtual void SAL_CALL disposing();
@@ -173,7 +173,7 @@ namespace logging
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL SyslogHandler::getEncoding() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL SyslogHandler::getEncoding()
     {
         MethodGuard aGuard( *this );
         ::rtl::OUString sEncoding;
@@ -182,42 +182,42 @@ namespace logging
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SyslogHandler::setEncoding( const ::rtl::OUString& _rEncoding ) throw (RuntimeException)
+    void SAL_CALL SyslogHandler::setEncoding( const ::rtl::OUString& _rEncoding )
     {
         MethodGuard aGuard( *this );
         OSL_VERIFY( m_aHandlerHelper.setEncoding( _rEncoding ) );
     }
 
     //--------------------------------------------------------------------
-    Reference< XLogFormatter > SAL_CALL SyslogHandler::getFormatter() throw (RuntimeException)
+    Reference< XLogFormatter > SAL_CALL SyslogHandler::getFormatter()
     {
         MethodGuard aGuard( *this );
         return m_aHandlerHelper.getFormatter();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SyslogHandler::setFormatter( const Reference< XLogFormatter >& _rxFormatter ) throw (RuntimeException)
+    void SAL_CALL SyslogHandler::setFormatter( const Reference< XLogFormatter >& _rxFormatter )
     {
         MethodGuard aGuard( *this );
         m_aHandlerHelper.setFormatter( _rxFormatter );
     }
 
     //--------------------------------------------------------------------
-    ::sal_Int32 SAL_CALL SyslogHandler::getLevel() throw (RuntimeException)
+    ::sal_Int32 SAL_CALL SyslogHandler::getLevel()
     {
         MethodGuard aGuard( *this );
         return m_aHandlerHelper.getLevel();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SyslogHandler::setLevel( ::sal_Int32 _nLevel ) throw (RuntimeException)
+    void SAL_CALL SyslogHandler::setLevel( ::sal_Int32 _nLevel )
     {
         MethodGuard aGuard( *this );
         m_aHandlerHelper.setLevel( _nLevel );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SyslogHandler::flush(  ) throw (RuntimeException)
+    void SAL_CALL SyslogHandler::flush(  )
     {
         MethodGuard aGuard( *this );
         fflush( stdout );
@@ -225,7 +225,7 @@ namespace logging
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL SyslogHandler::publish( const LogRecord& _rRecord ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL SyslogHandler::publish( const LogRecord& _rRecord )
     {
         MethodGuard aGuard( *this );
 
@@ -309,7 +309,7 @@ namespace logging
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL SyslogHandler::initialize( const Sequence< Any >& _rArguments ) throw (Exception, RuntimeException)
+    void SAL_CALL SyslogHandler::initialize( const Sequence< Any >& _rArguments )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -343,13 +343,13 @@ namespace logging
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL SyslogHandler::getImplementationName() throw(RuntimeException)
+    ::rtl::OUString SAL_CALL SyslogHandler::getImplementationName()
     {
         return getImplementationName_static();
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL SyslogHandler::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+    ::sal_Bool SAL_CALL SyslogHandler::supportsService( const ::rtl::OUString& _rServiceName )
     {
         const Sequence< ::rtl::OUString > aServiceNames( getSupportedServiceNames() );
         for (   const ::rtl::OUString* pServiceNames = aServiceNames.getConstArray();
@@ -362,7 +362,7 @@ namespace logging
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL SyslogHandler::getSupportedServiceNames() throw(RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL SyslogHandler::getSupportedServiceNames()
     {
         return getSupportedServiceNames_static();
     }

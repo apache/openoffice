@@ -39,15 +39,15 @@ private:
     sal_Int32 mnIndex;
 
 public:
-	SwVbaHeaderFooter( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::frame::XModel >& xModel, const css::uno::Reference< css::beans::XPropertySet >& xProps, sal_Bool isHeader, sal_Int32 index ) throw ( css::uno::RuntimeException );
+	SwVbaHeaderFooter( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::frame::XModel >& xModel, const css::uno::Reference< css::beans::XPropertySet >& xProps, sal_Bool isHeader, sal_Int32 index );
 	virtual ~SwVbaHeaderFooter(){}
 
     // Attributes
-    virtual ::sal_Bool SAL_CALL getIsHeader() throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getLinkToPrevious() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLinkToPrevious( ::sal_Bool _linktoprevious ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ::ooo::vba::word::XRange > SAL_CALL getRange() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Shapes( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL getIsHeader();
+    virtual ::sal_Bool SAL_CALL getLinkToPrevious();
+    virtual void SAL_CALL setLinkToPrevious( ::sal_Bool _linktoprevious );
+    virtual css::uno::Reference< ::ooo::vba::word::XRange > SAL_CALL getRange();
+    virtual css::uno::Any SAL_CALL Shapes( const css::uno::Any& aIndex );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

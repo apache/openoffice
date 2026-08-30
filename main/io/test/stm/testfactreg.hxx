@@ -22,37 +22,37 @@
 
 #include <rtl/strbuf.hxx>
 
-Reference< XInterface > SAL_CALL OPipeTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw( Exception );
+Reference< XInterface > SAL_CALL OPipeTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 Sequence<OUString> OPipeTest_getSupportedServiceNames(void) throw();
 OUString     OPipeTest_getServiceName() throw();
 OUString 	OPipeTest_getImplementationName() throw();
 
-Reference< XInterface > SAL_CALL OPumpTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw( Exception );
+Reference< XInterface > SAL_CALL OPumpTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 Sequence<OUString> OPumpTest_getSupportedServiceNames(void) throw();
 OUString     OPumpTest_getServiceName() throw();
 OUString 	OPumpTest_getImplementationName() throw();
 
-Reference< XInterface > SAL_CALL ODataStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw(Exception);
+Reference< XInterface > SAL_CALL ODataStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 Sequence<OUString> ODataStreamTest_getSupportedServiceNames( int i) throw();
 OUString     ODataStreamTest_getServiceName( int i) throw();
 OUString 	ODataStreamTest_getImplementationName( int i) throw();
 
-Reference< XInterface > SAL_CALL OMarkableOutputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw(Exception);
+Reference< XInterface > SAL_CALL OMarkableOutputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 Sequence<OUString> OMarkableOutputStreamTest_getSupportedServiceNames(void) throw();
 OUString     OMarkableOutputStreamTest_getServiceName() throw();
 OUString 	OMarkableOutputStreamTest_getImplementationName() throw();
 
-Reference< XInterface > SAL_CALL OMarkableInputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw(Exception);
+Reference< XInterface > SAL_CALL OMarkableInputStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 Sequence<OUString> OMarkableInputStreamTest_getSupportedServiceNames(void) throw();
 OUString     OMarkableInputStreamTest_getServiceName() throw();
 OUString 	OMarkableInputStreamTest_getImplementationName() throw();
 
-Reference< XInterface > SAL_CALL OObjectStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw(Exception);
+Reference< XInterface > SAL_CALL OObjectStreamTest_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 Sequence<OUString> OObjectStreamTest_getSupportedServiceNames( int i) throw();
 OUString     OObjectStreamTest_getServiceName( int i) throw();
 OUString 	OObjectStreamTest_getImplementationName( int i) throw();
 
-Reference< XInterface > SAL_CALL OMyPersistObject_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) throw(Exception);
+Reference< XInterface > SAL_CALL OMyPersistObject_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr );
 Sequence<OUString> 	OMyPersistObject_getSupportedServiceNames( ) throw();
 OUString     		OMyPersistObject_getServiceName( ) throw();
 OUString 			OMyPersistObject_getImplementationName( ) throw();

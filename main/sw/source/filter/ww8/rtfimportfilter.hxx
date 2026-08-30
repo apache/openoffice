@@ -46,14 +46,11 @@ public:
     virtual ~RtfImportFilter();
 
     // XFilter
-    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL cancel(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor );
+    virtual void SAL_CALL cancel(  );
 
     // XImporter
-    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc )
-        throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 };
 
 ::rtl::OUString RtfImport_getImplementationName();
@@ -61,8 +58,7 @@ public:
     throw();
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL RtfImport_createInstance(
                                                                         const ::com::sun::star::uno::Reference<
-                                                                        com::sun::star::lang::XMultiServiceFactory > &xMSF)
-    throw( ::com::sun::star::uno::Exception );
+                                                                        com::sun::star::lang::XMultiServiceFactory > &xMSF);
 
 #define IMPL_NAME_RTFIMPORT "com.sun.star.comp.Writer.RtfImport"
 

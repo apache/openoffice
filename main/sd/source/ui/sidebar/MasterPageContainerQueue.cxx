@@ -47,7 +47,7 @@ public:
     SharedMasterPageDescriptor mpDescriptor;
     int mnPriority;
     class Compare {public:
-        bool operator() (const PreviewCreationRequest& r1,const PreviewCreationRequest& r2)
+        bool operator() (const PreviewCreationRequest& r1,const PreviewCreationRequest& r2) const
         {
             if (r1.mnPriority != r2.mnPriority)
             {

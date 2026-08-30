@@ -223,7 +223,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType );
 
 	/**_______________________________________________________________________________________________________
 		@short		increment refcount
@@ -274,7 +274,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes();
 
 	/**_______________________________________________________________________________________________________
 		@short		get implementation id
@@ -290,7 +290,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_SEQUENCE< sal_Int8 > SAL_CALL getImplementationId() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_SEQUENCE< sal_Int8 > SAL_CALL getImplementationId();
 
 	//________________________________________________________________________________________________________
 	//	XAggregation
@@ -309,7 +309,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL setDelegator( const UNO3_REFERENCE< UNO3_XINTERFACE >& xDelegator ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL setDelegator( const UNO3_REFERENCE< UNO3_XINTERFACE >& xDelegator );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -324,7 +324,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType );
 
 	//________________________________________________________________________________________________________
 	//	XServiceInfo
@@ -343,7 +343,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual sal_Bool SAL_CALL supportsService( const UNO3_OUSTRING& sServiceName ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual sal_Bool SAL_CALL supportsService( const UNO3_OUSTRING& sServiceName );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -358,7 +358,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual UNO3_OUSTRING SAL_CALL getImplementationName() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_OUSTRING SAL_CALL getImplementationName();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -373,7 +373,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual UNO3_SEQUENCE< UNO3_OUSTRING > SAL_CALL getSupportedServiceNames() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_SEQUENCE< UNO3_OUSTRING > SAL_CALL getSupportedServiceNames();
 
 	//________________________________________________________________________________________________________
 	//	XComponent
@@ -392,7 +392,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL dispose() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL dispose();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -407,7 +407,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL addEventListener( const UNO3_REFERENCE< UNO3_XEVENTLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL addEventListener( const UNO3_REFERENCE< UNO3_XEVENTLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -422,7 +422,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL removeEventListener( const UNO3_REFERENCE< UNO3_XEVENTLISTENER >& xListener	) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL removeEventListener( const UNO3_REFERENCE< UNO3_XEVENTLISTENER >& xListener	);
 
 	//________________________________________________________________________________________________________
 	//	XControl
@@ -441,7 +441,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL createPeer( const UNO3_REFERENCE< UNO3_XTOOLKIT >& xToolkit, const UNO3_REFERENCE< UNO3_XWINDOWPEER >& xParent ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL createPeer( const UNO3_REFERENCE< UNO3_XTOOLKIT >& xToolkit, const UNO3_REFERENCE< UNO3_XWINDOWPEER >& xParent );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -456,7 +456,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setContext( const UNO3_REFERENCE< UNO3_XINTERFACE >& xContext ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setContext( const UNO3_REFERENCE< UNO3_XINTERFACE >& xContext );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -471,7 +471,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel ) throw( UNO3_RUNTIMEEXCEPTION ) = 0 ;
+    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel ) = 0 ;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -486,7 +486,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setDesignMode( sal_Bool bOn ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setDesignMode( sal_Bool bOn );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -501,7 +501,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XINTERFACE > SAL_CALL getContext() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XINTERFACE > SAL_CALL getContext();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -516,7 +516,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel() throw( UNO3_RUNTIMEEXCEPTION ) = 0;
+    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel() = 0;
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -531,7 +531,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XWINDOWPEER > SAL_CALL getPeer() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XWINDOWPEER > SAL_CALL getPeer();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -546,7 +546,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XVIEW > SAL_CALL getView() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XVIEW > SAL_CALL getView();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -561,7 +561,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual sal_Bool SAL_CALL isDesignMode() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Bool SAL_CALL isDesignMode();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -576,7 +576,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual sal_Bool SAL_CALL isTransparent() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Bool SAL_CALL isTransparent();
 
 	//________________________________________________________________________________________________________
 	//	XWindow
@@ -599,7 +599,7 @@ public:
 										sal_Int32	nY		,
 										sal_Int32	nWidth	,
 										sal_Int32	nHeight	,
-										sal_Int16	nFlags	) throw( UNO3_RUNTIMEEXCEPTION );
+										sal_Int16	nFlags	);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -614,7 +614,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setVisible( sal_Bool bVisible ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setVisible( sal_Bool bVisible );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -629,7 +629,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setEnable( sal_Bool bEnable ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setEnable( sal_Bool bEnable );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -644,7 +644,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setFocus() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setFocus();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -659,7 +659,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_RECTANGLE SAL_CALL getPosSize() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_RECTANGLE SAL_CALL getPosSize();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -674,7 +674,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL addWindowListener( const UNO3_REFERENCE< UNO3_XWINDOWLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL addWindowListener( const UNO3_REFERENCE< UNO3_XWINDOWLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -689,7 +689,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL addFocusListener( const UNO3_REFERENCE< UNO3_XFOCUSLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL addFocusListener( const UNO3_REFERENCE< UNO3_XFOCUSLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -704,7 +704,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL addKeyListener( const UNO3_REFERENCE< UNO3_XKEYLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL addKeyListener( const UNO3_REFERENCE< UNO3_XKEYLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -719,7 +719,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL addMouseListener( const UNO3_REFERENCE< UNO3_XMOUSELISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL addMouseListener( const UNO3_REFERENCE< UNO3_XMOUSELISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -734,7 +734,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL addMouseMotionListener( const UNO3_REFERENCE< UNO3_XMOUSEMOTIONLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL addMouseMotionListener( const UNO3_REFERENCE< UNO3_XMOUSEMOTIONLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -749,7 +749,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL addPaintListener( const UNO3_REFERENCE< UNO3_XPAINTLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL addPaintListener( const UNO3_REFERENCE< UNO3_XPAINTLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -764,7 +764,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeWindowListener( const UNO3_REFERENCE< UNO3_XWINDOWLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeWindowListener( const UNO3_REFERENCE< UNO3_XWINDOWLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -779,7 +779,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeFocusListener( const UNO3_REFERENCE< UNO3_XFOCUSLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeFocusListener( const UNO3_REFERENCE< UNO3_XFOCUSLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -794,7 +794,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeKeyListener( const UNO3_REFERENCE< UNO3_XKEYLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeKeyListener( const UNO3_REFERENCE< UNO3_XKEYLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -809,7 +809,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeMouseListener( const UNO3_REFERENCE< UNO3_XMOUSELISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeMouseListener( const UNO3_REFERENCE< UNO3_XMOUSELISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -824,7 +824,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeMouseMotionListener( const UNO3_REFERENCE< UNO3_XMOUSEMOTIONLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeMouseMotionListener( const UNO3_REFERENCE< UNO3_XMOUSEMOTIONLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -839,7 +839,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removePaintListener( const UNO3_REFERENCE< UNO3_XPAINTLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removePaintListener( const UNO3_REFERENCE< UNO3_XPAINTLISTENER >& xListener );
 
 	//________________________________________________________________________________________________________
 	//	XView
@@ -859,7 +859,7 @@ public:
 	*/
 
     virtual void SAL_CALL draw(	sal_Int32	nX	,
-								sal_Int32	nY	) throw( UNO3_RUNTIMEEXCEPTION );
+								sal_Int32	nY	);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -874,7 +874,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual sal_Bool SAL_CALL setGraphics( const UNO3_REFERENCE< UNO3_XGRAPHICS >& xDevice ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Bool SAL_CALL setGraphics( const UNO3_REFERENCE< UNO3_XGRAPHICS >& xDevice );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -890,7 +890,7 @@ public:
 	*/
 
 	virtual void SAL_CALL setZoom(	float	fZoomX	,
-									float	fZoomY	) throw( UNO3_RUNTIMEEXCEPTION );
+									float	fZoomY	);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -905,7 +905,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XGRAPHICS > SAL_CALL getGraphics() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XGRAPHICS > SAL_CALL getGraphics();
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -920,7 +920,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_SIZE SAL_CALL getSize() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_SIZE SAL_CALL getSize();
 
 	//________________________________________________________________________________________________________
 	//	UNO3_XEVENTLISTENER
@@ -939,7 +939,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL disposing( const UNO3_EVENTOBJECT& rSource	) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL disposing( const UNO3_EVENTOBJECT& rSource	);
 
 	//________________________________________________________________________________________________________
 	//	XPaintListener
@@ -958,7 +958,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowPaint( const UNO3_PAINTEVENT& rEvent ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL windowPaint( const UNO3_PAINTEVENT& rEvent );
 
 	//________________________________________________________________________________________________________
 	//	XWindowListener
@@ -977,10 +977,10 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL windowResized( const UNO3_WINDOWEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION );
-    virtual void SAL_CALL windowMoved( const UNO3_WINDOWEVENT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION );
-    virtual void SAL_CALL windowShown( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION );
-    virtual void SAL_CALL windowHidden( const UNO3_EVENTOBJECT& aEvent ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL windowResized( const UNO3_WINDOWEVENT& aEvent );
+    virtual void SAL_CALL windowMoved( const UNO3_WINDOWEVENT& aEvent );
+    virtual void SAL_CALL windowShown( const UNO3_EVENTOBJECT& aEvent );
+    virtual void SAL_CALL windowHidden( const UNO3_EVENTOBJECT& aEvent );
 
 	//________________________________________________________________________________________________________
 	//	impl but public method to register service

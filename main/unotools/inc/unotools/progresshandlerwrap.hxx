@@ -39,12 +39,9 @@ public:
 	ProgressHandlerWrap( ::com::sun::star::uno::Reference< ::com::sun::star::task::XStatusIndicator > xSI );
 
 	// XProgressHandler
-    virtual void SAL_CALL push( const ::com::sun::star::uno::Any& Status )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL update( const ::com::sun::star::uno::Any& Status )
-		throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL pop()
-		throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL push( const ::com::sun::star::uno::Any& Status );
+    virtual void SAL_CALL update( const ::com::sun::star::uno::Any& Status );
+    virtual void SAL_CALL pop();
 };
 
 }	// namespace utl

@@ -112,12 +112,12 @@ public:
 public:
 
 	// XGraphicObjectResolver
-    virtual ::rtl::OUString SAL_CALL resolveGraphicObjectURL( const ::rtl::OUString& aURL ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL resolveGraphicObjectURL( const ::rtl::OUString& aURL );
 
     // XBinaryStreamResolver
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getInputStream( const ::rtl::OUString& rURL ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream > SAL_CALL createOutputStream(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL resolveOutputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rxBinaryStream ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getInputStream( const ::rtl::OUString& rURL );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream > SAL_CALL createOutputStream(  );
+    virtual ::rtl::OUString SAL_CALL resolveOutputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rxBinaryStream );
 };
 
 
@@ -135,7 +135,7 @@ namespace svx
     uses eCreateMode == GRAPHICHELPER_MODE_READ, bDirect == sal_True in
     SvXMLGraphicHelper
  */
-SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL SvXMLGraphicImportHelper_createInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr) throw( ::com::sun::star::uno::Exception );
+SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL SvXMLGraphicImportHelper_createInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 SVX_DLLPUBLIC ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SvXMLGraphicImportHelper_getSupportedServiceNames() throw();
 SVX_DLLPUBLIC ::rtl::OUString SAL_CALL SvXMLGraphicImportHelper_getImplementationName() throw();
 
@@ -151,7 +151,7 @@ SVX_DLLPUBLIC ::rtl::OUString SAL_CALL SvXMLGraphicImportHelper_getImplementatio
     uses eCreateMode == GRAPHICHELPER_MODE_WRITE, bDirect == sal_True in
     SvXMLGraphicHelper
  */
-SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL SvXMLGraphicExportHelper_createInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr) throw( ::com::sun::star::uno::Exception );
+SVX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL SvXMLGraphicExportHelper_createInstance(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rSMgr);
 SVX_DLLPUBLIC ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SvXMLGraphicExportHelper_getSupportedServiceNames() throw();
 SVX_DLLPUBLIC ::rtl::OUString SAL_CALL SvXMLGraphicExportHelper_getImplementationName() throw();
 }

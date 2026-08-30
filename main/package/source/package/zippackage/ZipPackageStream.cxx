@@ -478,7 +478,6 @@ void ZipPackageStream::SetPackageMember( sal_Bool bNewValue )
 // XActiveDataSink
 //--------------------------------------------------------------------------
 void SAL_CALL ZipPackageStream::setInputStream( const uno::Reference< io::XInputStream >& aStream )
-		throw( RuntimeException )
 {
 	// if seekable access is required the wrapping will be done on demand
 	xStream = aStream;
@@ -491,7 +490,6 @@ void SAL_CALL ZipPackageStream::setInputStream( const uno::Reference< io::XInput
 
 //--------------------------------------------------------------------------
 uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getRawData()
-		throw( RuntimeException )
 {
 	try
 	{
@@ -520,7 +518,6 @@ uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getRawData()
 
 //--------------------------------------------------------------------------
 uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getInputStream()
-		throw( RuntimeException )
 {
 	try
 	{
@@ -550,9 +547,6 @@ uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getInputStream()
 // XDataSinkEncrSupport
 //--------------------------------------------------------------------------
 uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getDataStream()
-		throw ( packages::WrongPasswordException,
-				io::IOException,
-				RuntimeException )
 {
 	// There is no stream attached to this object
 	if ( m_nStreamMode == PACKAGE_STREAM_NOTSET )
@@ -594,9 +588,6 @@ uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getDataStream()
 
 //--------------------------------------------------------------------------
 uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getRawStream()
-		throw ( packages::NoEncryptionException,
-				io::IOException,
-				uno::RuntimeException )
 {
 	// There is no stream attached to this object
 	if ( m_nStreamMode == PACKAGE_STREAM_NOTSET )
@@ -629,8 +620,6 @@ uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getRawStream()
 
 //--------------------------------------------------------------------------
 void SAL_CALL ZipPackageStream::setDataStream( const uno::Reference< io::XInputStream >& aStream )
-		throw ( io::IOException,
-				RuntimeException )
 {
 	setInputStream( aStream );
 	m_nStreamMode = PACKAGE_STREAM_DATA;
@@ -638,10 +627,6 @@ void SAL_CALL ZipPackageStream::setDataStream( const uno::Reference< io::XInputS
 
 //--------------------------------------------------------------------------
 void SAL_CALL ZipPackageStream::setRawStream( const uno::Reference< io::XInputStream >& aStream )
-		throw ( packages::EncryptionNotAllowedException,
-				packages::NoRawFormatException,
-				io::IOException,
-				RuntimeException )
 {
 	// wrap the stream in case it is not seekable
 	uno::Reference< io::XInputStream > xNewStream = ::comphelper::OSeekableInputWrapper::CheckSeekableCanWrap( aStream, m_xFactory );
@@ -669,8 +654,6 @@ void SAL_CALL ZipPackageStream::setRawStream( const uno::Reference< io::XInputSt
 
 //--------------------------------------------------------------------------
 uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getPlainRawStream()
-		throw ( io::IOException,
-				uno::RuntimeException )
 {
 	// There is no stream attached to this object
 	if ( m_nStreamMode == PACKAGE_STREAM_NOTSET )
@@ -702,7 +685,6 @@ uno::Reference< io::XInputStream > SAL_CALL ZipPackageStream::getPlainRawStream(
 
 //--------------------------------------------------------------------------
 sal_Int64 SAL_CALL ZipPackageStream::getSomething( const Sequence< sal_Int8 >& aIdentifier )
-	throw( RuntimeException )
 {
 	sal_Int64 nMe = 0;
 	if ( aIdentifier.getLength() == 16 &&
@@ -714,7 +696,6 @@ sal_Int64 SAL_CALL ZipPackageStream::getSomething( const Sequence< sal_Int8 >& a
 // XPropertySet
 //--------------------------------------------------------------------------
 void SAL_CALL ZipPackageStream::setPropertyValue( const OUString& aPropertyName, const Any& aValue )
-		throw( beans::UnknownPropertyException, beans::PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException )
 {
 	if ( aPropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "MediaType" )) )
 	{
@@ -873,7 +854,6 @@ void SAL_CALL ZipPackageStream::setPropertyValue( const OUString& aPropertyName,
 
 //--------------------------------------------------------------------------
 Any SAL_CALL ZipPackageStream::getPropertyValue( const OUString& PropertyName )
-		throw( beans::UnknownPropertyException, WrappedTargetException, RuntimeException )
 {
 	Any aAny;
 	if ( PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "MediaType" ) ) )
@@ -924,14 +904,12 @@ void ZipPackageStream::setSize ( const sal_Int32 nNewSize )
 }
 //--------------------------------------------------------------------------
 OUString ZipPackageStream::getImplementationName()
-	throw ( RuntimeException )
 {
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "ZipPackageStream" ) );
 }
 
 //--------------------------------------------------------------------------
 Sequence< OUString > ZipPackageStream::getSupportedServiceNames()
-	throw ( RuntimeException )
 {
 	Sequence< OUString > aNames( 1 );
 	aNames[0] = OUString( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.packages.PackageStream" ) );
@@ -939,7 +917,6 @@ Sequence< OUString > ZipPackageStream::getSupportedServiceNames()
 }
 //--------------------------------------------------------------------------
 sal_Bool SAL_CALL ZipPackageStream::supportsService( OUString const & rServiceName )
-	throw ( RuntimeException )
 {
 	return rServiceName == getSupportedServiceNames()[0];
 }

@@ -1,0 +1,545 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
+# win10-64-minimal — the shortest road to a Win10 toolchain build
+
+Branched from `bazel-migration` at `1bdcd7a4de`, the same point as
+`win10-64-support`. **Nothing from that branch is cherry-picked here.**
+
+## Goal, and what is deliberately not the goal
+
+**Goal: `--config=win10-x64` compiles the product with modern MSVC and the Windows 10 SDK.**
+**Reached** — `//main/staging:install` builds and the installation runs. See M5.
+
+Not here, on purpose:
+
+- **The DPI/HiDPI work.** It is incomplete on `win10-64-support` — several phases are written and
+  reasoned but have never run on a machine — so it is not something to pick up and carry. This
+  branch changes no rendering behaviour at all.
+- Manifests, theming, the capability port, the SOLID experiment. All Track A. All out of scope.
+- Running, installing, shipping. This branch targets **compiling**. The CRT/SxS story is the phase
+  after, and it is untouched.
+
+The `winXP-x86` / `winXP-x64` targets remain the regression baseline and must keep building
+unchanged, exactly as on the other branch.
+
+## What was measured before writing any code
+
+A modern `cl.exe` was pointed at real product source by replaying existing Bazel command lines
+through it with `/Zs` (syntax check, no code generation). No Bazel, no toolchain, no build. The
+script is disposable; the numbers are not.
+
+| | |
+| --- | --- |
+| Compiler | MSVC **14.29.30133** (`cl` 19.29.30159), VS2019 BuildTools |
+| SDK | Windows 10 **10.0.19041.0** |
+| Flags | `/std:c++14 /Zc:__cplusplus /Zc:wchar_t- /wd4996` |
+| Sampled | **216 files** across `sal`, `cppu`, `cppuhelper`, `comphelper`, `tools`, `vcl`, `svl`, `svtools`, `sfx2` |
+
+### Result: 4 files fail, from 2 root causes
+
+Once the two systematic issues below were removed, the sample came out:
+
+| Module | Files | Clean | Failing |
+| --- | ---: | ---: | ---: |
+| `sal` | 25 | 25 | 0 |
+| `cppu` | 19 | 19 | 0 |
+| `cppuhelper` | 22 | 21 | 1 |
+| `comphelper` | 25 | 25 | 0 |
+| `tools` | 25 | 24 | 1 |
+| `vcl` | 25 | 25 | 0 |
+| `svl` | 25 | 25 | 0 |
+| `svtools` | 25 | 24 | 1 |
+| `sfx2` | 25 | 24 | 1 |
+
+The four are two causes: `C2694` (a destructor's exception specification is less restrictive than
+its base's) in `cppuhelper/source/factory.cxx` and `comphelper/inc/comphelper/propstate.hxx` — the
+latter a *header*, so it accounts for both `svtools` and `sfx2` — and `C3861` (`clock` undeclared)
+in `tools/source/fsys/dirent.cxx`, which VC9's headers used to drag in transitively.
+
+### What is NOT a problem — every one of these was feared, and none of them bite
+
+This is the more valuable half of the measurement. The `win10-64-support` B0 survey listed these as
+the unknowns that could dominate the schedule:
+
+| Feared | Measured |
+| --- | --- |
+| ~46,000 dynamic exception specifications | **accepted** at `/std:c++14`. They are only ill-formed in C++17, which we are not using |
+| boost **1.55** (2013) against VS2019 | **compiles**. `shared_ptr`, `bind`, `scoped_ptr`, `noncopyable` and friends all fine |
+| `std::tr1` removed from the modern STL | **still present** — `_HAS_TR1_NAMESPACE` defaults to `!_HAS_CXX17` |
+| the Windows API floor at `0x0500` (Win2000) | **accepted** by the Win10 SDK. A0 is *not* a prerequisite |
+| `/Zc:wchar_t-` on a modern toolchain | **works**, as B2 predicted |
+| a large C++ conformance sweep (B3) | **2 root causes in 216 files** |
+
+So the phase the charter called "the real work" is, on this evidence, a short tail. That could still
+change as coverage widens — 216 files is a sample, not the tree — but it is a very different
+starting position from the one the survey assumed.
+
+## The blockers, and what each costs
+
+In the order they are hit:
+
+| # | Blocker | Fix | Size |
+| --- | --- | --- | --- |
+| 1 | `/Dsnprintf=_snprintf` collides with the UCRT's real `snprintf` (`C1189`) | do not pass the define on `win10` | one flag |
+| 2 | `sal/inc/systools/win32/snprintf.h` redeclares `snprintf` with different linkage (`C2375`) | guard the declarations on `_MSC_VER < 1900` | **done**, 1 header |
+| 3 | six of the nine `stlport` shims use `#include_next`, which MSVC lacks (`C1021`/`C1083`) | the include-path split from ADR-009 on `win10-64-support` | 1 BUILD file |
+| 4 | `/permissive-` rejects string-literal-to-non-const-pointer (`C2440`) | do not pass `/permissive-` | one flag |
+| 5 | destructor exception specifications (`C2694`) | add the base's specification to the derived destructor | small family |
+| 6 | `clock` undeclared (`C3861`) | `#include <time.h>` | 1 file |
+
+Nothing on that list is architectural. Items 1, 3 and 4 are build configuration; 2, 5 and 6 are
+small, mechanical source changes that are inert on VC9 and therefore backportable.
+
+## Plan
+
+| Phase | Deliverable |
+| --- | --- |
+| **M0** | *(done)* Measure. This document. |
+| **M1** | *(done — see below)* Toolchain discovery: find modern `cl.exe`/`lib.exe`/`link.exe` under `VS_MODERN_PATH` and the newest Windows 10 SDK, and expose the paths. |
+| **M2** | *(done — see below)* A third `cc_toolchain` on those paths, the `win10-x64` platform, `--config=win10-x64` with its own output tree. |
+| **M3** | *(done — see below)* Build **`//main/sal`** and climb: `sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`. |
+| **M4** | *(done — see below)* Widen to the rest of the tree, module by module. This is where the real conformance number is learned; the 216-file sample only says where to expect trouble. |
+| **M5** | *(done — see below)* The whole product: `//main/staging:install` links and runs under `--config=win10-x64`. |
+
+**Definition of done for every phase**: `--config=winXP-x86` unchanged. Same rule as the other
+branch, same reason.
+
+## M1 — what discovery exposes
+
+All of it lives in `build/vs_config_repo.bzl`, which already generated the VC9 constants; M1 adds
+two more installs to the same generated `@vs_config//:paths.bzl`.
+
+| Constant | Contents |
+| --- | --- |
+| `MSVC_TOOLSET_VER` / `MSVC_TOOLSET` / `MSVC_HOST` | the selected toolset, e.g. `14.29.30133`, and which `Host*` tree it is driven from |
+| `MSVC_BIN` / `MSVC_LIB` | dicts keyed `"x86"`/`"x64"` — `cl`/`link`/`lib`/`ml64` live in the first, the vcruntime import libs in the second |
+| `MSVC_INCLUDE` | the toolset's own C++ standard library headers |
+| `SDK10_VER` / `SDK10_ROOT` | the selected Windows 10 SDK |
+| `SDK10_INCLUDE` | a **list**, already in the order it belongs on `INCLUDE`: `ucrt`, `um`, `shared`, `winrt` |
+| `SDK10_LIB` | dict keyed by arch, each a list: `ucrt/<arch>`, `um/<arch>` |
+| `SDK10_BIN` | dict keyed by arch — `rc.exe`, `mt.exe` |
+
+Three things are worth knowing before M2 consumes them.
+
+**The SDK layout is genuinely different, not just renamed.** SDK v7.0 has one `include\` and one
+`lib\`; the Windows 10 SDK has *four* include trees and *two* lib trees per version, so the single
+`msvc_env_include` / `msvc_env_lib` strings the VC9 toolchains build by concatenation become a join
+over a list. That is why these are exposed as lists and dicts rather than pre-joined strings — the
+toolchain, not the discovery, decides the separator and the order it needs.
+
+**Version selection is "newest *complete*", numerically.** A plain string compare sorts `14.9` above
+`14.29`, so versions are compared component-by-component as integers. Completeness matters more than
+it sounds: on the reference machine `Windows Kits\10\bin` holds **six** versions while `Include` and
+`Lib` hold **two**, so selecting on `bin\` alone would pick a version with no headers at all. A
+toolset must have `cl.exe` plus its own headers; an SDK version must have both an `Include\<ver>` and
+a `Lib\<ver>`. Non-version siblings (`bin\x64`, `bin\arm64`) are filtered by the same numeric parse
+rather than by hardcoded names. Either can be pinned — `MSVC_TOOLSET_VERSION`, `WIN10_SDK_VERSION`.
+
+**This branch pins the SDK to `10.0.19041.0` rather than taking the newest.** The reference machine
+also has `10.0.26100.0`, but 19041 is what the M0 measurement above was taken against. Staying on it
+keeps any M3 compile failure attributable to the tree instead of to an SDK the 216-file sample never
+saw. The pin is a `--repo_env` line in `user.bazelrc`; dropping it moves to the newest.
+
+Not found is reported as the sentinel strings `MODERN_MSVC_TOOLSET_NOT_FOUND` /
+`WIN10_SDK_NOT_FOUND`, not `""` — an empty string silently degrades into a valid-looking relative
+path, while a sentinel puts its own name into the first error message.
+
+**Verified**, with a clean `INCLUDE`/`LIB` so nothing could leak in from an ambient `vcvars`: the
+discovered `cl.exe` (x64 *and* the x86 cross), `lib.exe`, `link.exe` and the SDK's `rc.exe` compile,
+archive, link and run a program using `<windows.h>`, `<string>` and `<time.h>` under the same
+`/std:c++14 /Zc:__cplusplus /Zc:wchar_t-` the M0 measurement used. `PDB_LINK`/`PDB_LINK_X64` — which
+the two VC9 toolchains use for their `generate_pdb` link path, and which now come from the shared
+toolset walk instead of a second copy of it — are byte-identical to before.
+
+## M2 — the third toolchain
+
+`--config=win10-x64` resolves `//build/toolchain:aoo_msvc_vs2019_x64`, which drives the M1-discovered
+compiler through the tree's own `windows_cc_toolchain_config.bzl`. Same `arch_defines`, same
+`/Z7`-embed debug story, same nop `tool_paths` as the VC9 x64 toolchain — only the tool paths and the
+search paths differ. Nothing else changes, on purpose: M3 should vary the compiler and nothing else.
+
+Two shape differences fall out of the SDK layout. `INCLUDE` is five directories rather than three
+(the toolset's own headers plus the SDK's four split trees), and `LIB` is the toolset's plus the
+SDK's `ucrt` and `um` — so both are `";".join()` over the lists M1 exposes instead of the
+hand-written concatenation the VC9 blocks use. The mspdbsrv link wrapper is *not* used: it exists
+only because the VC9 linker has one mspdbsrv and no `/FS`, and this `link.exe` is the modern one the
+VC9 toolchains already borrow for exactly that reason.
+
+`/std:c++14` is passed explicitly, in `cxx_flags` so C compiles never see a C++ std flag. Not
+`c++17` — the tree's ~46,000 dynamic exception specifications are legal at 14 and ill-formed at 17,
+which is the single measurement that keeps the conformance tail short. The config rule's own
+`default_cpp_std` feature stays disabled; it hardcodes `/std:c++17`.
+
+### The bug this phase had to fix first
+
+The VS2008 toolchains declared `target_compatible_with = [x86_64, windows]` and **no floor
+constraint**. Toolchain resolution accepts a toolchain when the target platform satisfies *all* of
+`target_compatible_with`, so `aoo_msvc_vs2008_x64` also matched the new `win10-x64` platform — and
+being registered first, it won. Verified, not reasoned: with the constraint removed,
+`--config=win10-x64` silently selects
+
+```
+toolchain //build/toolchain:aoo_msvc_vs2008_x64
+```
+
+i.e. the win10 target quietly compiled with VC9. Both VS2008 toolchains now pin
+`//build/constraints:winxp`, so each toolchain matches exactly one floor. This is the constraint
+dimension doing the job `//build/constraints/BUILD.bazel` was written for; the platform name alone
+would never have caught it.
+
+### Verified
+
+Resolution, all three configs:
+
+| config | selected toolchain |
+| --- | --- |
+| `winXP-x86` | `//build/toolchain:aoo_msvc_vs2008_x86` |
+| `winXP-x64` | `//build/toolchain:aoo_msvc_vs2008_x64` |
+| `win10-x64` | `//build/toolchain:aoo_msvc_vs2019_x64` |
+
+And end-to-end, with a throwaway `cc_binary` outside the product tree (built, run, then deleted):
+Bazel drove `…/14.29.30133/bin/Hostx64/x64/cl.exe`, emitted into
+`bazel-out/x64_windows-fastbuild-win10-x64/`, and the resulting binary ran and reported a 64-bit
+pointer size. The same target built and ran through `--config=winXP-x86` on VC9, unchanged.
+
+**Nothing from the product tree has been compiled with this toolchain yet** — that is M3, and the
+six blockers are expected there, not here.
+
+## M3 — the bottom of the stack compiles
+
+`sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`, all green under
+`--config=win10-x64`. The same six targets stay green under `--config=winXP-x86` and
+`--config=winXP-x64`, and `//main/tools/...` + `//main/comphelper/...` were rebuilt on VC9 x86
+(4151 actions, clean) because the stlport change below reaches every module that depends on it.
+
+### How the six predicted blockers actually landed
+
+| # | Predicted | What happened |
+| --- | --- | --- |
+| 1 | `/Dsnprintf=_snprintf` collides with the UCRT | Hit immediately. Fixed in the **toolchain**, not the modules |
+| 2 | `snprintf.h` redeclares `snprintf` | Header was already guarded — but the *implementation* was not. Same root cause, second site |
+| 3 | stlport shims use `#include_next` | Hit, and the real mechanism is different from the prediction |
+| 4 | `/permissive-` rejects string literals | **Never appeared.** We do not pass `/permissive-`, so it is a non-issue, not a fix |
+| 5 | destructor exception specifications | Hit exactly where M0 said: `cppuhelper/source/factory.cxx` |
+| 6 | `clock` undeclared | Not reached — it is in `tools`, which is M4 |
+
+**Blocker 1 belonged to the toolchain all along.** The define appears 134 times across 91 BUILD
+files, so patching call sites with `select()` was never the right shape. Which CRT is in play is a
+property of the toolchain, and a module BUILD file cannot know it — so `windows_cc_toolchain_config`
+gained a `crt_defines` attribute alongside `arch_defines`, set on both VC9 toolchains and empty on
+the modern one. The per-module copies are then redundant on VC9 and fatal on win10; the four in this
+stack are removed, and the remaining 87 files are M4's to sweep as it widens.
+
+**Blocker 2 had a second site.** `a77e965b54` guarded the *declarations* in
+`sal/inc/systools/win32/snprintf.h`. But uwinapi also *implements* C99 `snprintf`/`vsnprintf` in
+`systools/win32/uwinapi/sntprintf.c`, and defining those on top of the UCRT's declarations is the
+same C2375 conflict one layer down. Guarded the same way, on `_MSC_VER < 1900`. Nothing is lost:
+those symbols are exported only by `Uwinapi.def` (x86) and never by `Uwinapi64.def`, which exports
+`SHCreateItemFromParsingName` alone.
+
+**Blocker 3 was misdiagnosed, and the correction matters.** `#include_next` is not what bites —
+that branch is behind `HAVE_STL_INCLUDE_PATH`, which MSVC never defines. What bites is the MSVC
+branch itself: `#include <../../VC/include/list>`, a path relative to *VC9's own* include directory,
+which a modern toolset does not have (C1083). There is no MSVC spelling that rescues it — the
+portable escape is `#include_next`, which MSVC lacks, and a plain `#include <list>` from inside
+`<list>` is swallowed by the shim's own guard. So the headers must come off the include path, which
+is what "the include-path split" has to mean.
+
+The split is not the obvious one, though. The nine shims divide by whether they shadow a standard
+header, and that divides them by *branch order*:
+
+- `hash_map`, `hash_set`, `slist` test `__cplusplus >= 201103L` **before** `_MSC_VER`, so with
+  `/Zc:__cplusplus` they already resolve to `<unordered_map>` / `<unordered_set>` / `<forward_list>`
+  and need nothing. They are genuine extensions — no standard header has those names.
+- `list`, `map`, `set`, `vector`, `functional`, `numeric` test `_MSC_VER` first and can only reach
+  the real header through the VC9 path hack.
+
+So the six moved to `main/stlport/systemstl/vc9/`, which `includes` adds only when the target is not
+win10. **One caveat, recorded because it will resurface:** two of the six add declarations of their
+own rather than only forwarding — `vector` defines `std::bit_vector` and `std_bitset_count()`, and
+`functional` adds `std::hash` aliases. A win10 build does not see them. Nothing in this stack uses
+them; when a module does, the fix is to move that content into a normally-named header, not to
+reinstate the shadowing.
+
+**Blocker 5 was one line, and the cause is C++11 itself.** `OFactoryComponentHelper` derives from
+both `OSingleFactoryHelper` and `OComponentHelper`. The latter's destructor is declared
+`SAL_THROW( (RuntimeException) )`; the former's was bare, which from C++11 on means implicitly
+`noexcept`. The derived destructor's implicit specification is the union of its bases', so it came
+out less restrictive than one of them — C2694. Under C++03 destructors carry no implicit
+specification and the two already agreed, which is why VC9 never complained. Giving
+`~OSingleFactoryHelper` the same specification as its sibling base fixes it and is inert on VC9,
+where MSVC does not enforce a dynamic specification other than `throw()` at all.
+
+### One thing the modern compiler found on its own
+
+`main/store/source/storbase.cxx:139` formats a `sal_Size` with `%lu` (C4477). `sal_Size` is 64-bit
+on x64 and `%lu` is 32-bit on Windows, so the types genuinely disagree — on **both** x64 targets,
+not just win10; VC9 simply never warned. It is harmless as written (the value originates from a
+`sal_uInt16` and is the only variadic argument), so it is recorded rather than fixed: this branch
+does not churn source for warnings. A modern compiler pointed at old code is worth having for
+exactly this reason.
+
+## M4 — widening, and the one decision that needs making
+
+`tools`, `comphelper` and `svl` now build under `--config=win10-x64` on top of the M3 stack. All
+three configs stay green over `//main/tools/...`, `//main/comphelper/...` and `//main/svl:svl`.
+
+Three things were finished here:
+
+**The `snprintf` sweep.** 130 redundant defines across 88 BUILD files, removed now that the
+toolchain supplies them. Purely mechanical, and provably a no-op on VC9 — the identical define
+arrives from `crt_defines` instead.
+
+**Blocker 6, the last predicted one.** `clock` in `tools/source/fsys/dirent.cxx` wanted `<time.h>`.
+A second instance of the same class turned up immediately afterwards in
+`comphelper/source/property/opropertybag.cxx`, which uses `std::insert_iterator` and got `<iterator>`
+transitively from VC9's `<algorithm>`. Expect more of these: they are one line each and carry no
+risk, because a header the code already depends on cannot break by being named.
+
+**The stlport caveat came due, and the fix was better than expected.** M3 predicted that dropping
+`vector` and `functional` would cost `std::bit_vector` and the SGI emulation block; `comphelper`
+proved it within one module (`std::select1st`, then `std::insert_iterator`). Those two shims turn
+out to have *two* jobs — forward to the real header, and declare SGI extensions that ~40 files rely
+on — and only the first is VC9-specific. So they moved back onto the always-on include path and each
+grew a `_MSC_VER >= 1900` branch reaching the real header at `<../include/vector>`, which resolves
+against the toolset's own include directory and nothing else on the search path. That is the same
+trick the VC9 branch uses, retargeted — no generated headers, no absolute paths, no `#include_next`.
+`systemstl/vc9/` now holds only the four pure forwarders (`list`, `map`, `set`, `numeric`).
+
+### The C2694 family, and why it is paperwork rather than a defect
+
+`svl` hit the same destructor error as `cppuhelper` and `comphelper`, and it is worth writing down
+what the family actually is, because it will keep appearing and it looks alarming when it does not
+need to.
+
+A virtual function's override may not make a **weaker** promise about throwing than the function it
+overrides — otherwise a caller holding a base pointer, who was told "this never throws", gets an
+object that can. That rule is old. What changed is **who makes the promise**: under C++03 a
+destructor with no written specification had none, so nothing could conflict; from C++11 on the
+compiler supplies one, and a class with nothing throwing inside it silently gets "never throws".
+
+So at any class that inherits from *both* a pre-UNO hierarchy and a UNO one, three promises meet and
+only one of them was written by a person:
+
+| | Promise | Written by |
+| --- | --- | --- |
+| the `Sfx*`/legacy base | never throws | the compiler, as of C++11 |
+| the UNO base | may throw `RuntimeException` | a person |
+| the derived class | may throw `RuntimeException` | the compiler, deduced from its bases |
+
+The derived class is-a legacy base, which promised never to throw — so the deduced promise is too
+weak and the compile fails, in a class where nobody wrote a destructor at all. **None of these
+destructors actually throws.** It is a paperwork conflict, and the fix changes no generated code:
+MSVC does not enforce a dynamic specification at run time, but it does use it for this compile-time
+override check.
+
+You cannot opt out by staying on an older dialect — modern MSVC rejects `/std:c++03` outright
+(`D9002`), so C++14 is the floor and implicitly-`noexcept` destructors come with it.
+
+**The fix costs nothing, once you notice an exception specification does not need a complete type.**
+The obvious worry was that giving `SfxBroadcaster` and `SfxListener` the UNO specification means
+pulling `com/sun/star/uno/RuntimeException.hpp` into two of the most widely included low-level
+headers in the tree. It does not: both compilers accept a **forward declaration** there, verified
+directly. So each header gains a four-line namespace forward declaration and nothing else — no UNO
+include, no coupling change — and on GCC and Sun CC `SAL_THROW` expands to nothing at all, so the
+declaration is simply unused. One edit per base class then covers every derived class in the tree,
+rather than annotating each meeting point.
+
+## M5 — the whole product builds, and what the last mile was made of
+
+`//main/staging:install` builds under `--config=win10-x64` and the resulting installation runs.
+
+The tail after M4 was six defects in four families. None was architectural, and — worth stating
+because it is the branch's recurring shape — **only one was a build-configuration problem; the
+other five were real defects in code that VC9 had simply never held to the rule.**
+
+### The one build-configuration item: `snwprintf`, and why the CRT shim is not symmetric
+
+`svx/source/dialog/sendreportw32.cxx` and `framework/source/uielement/spinfieldtoolbarcontroller.cxx`
+call `snwprintf` bare. M3 removed `crt_defines` from the modern toolchain because the UCRT declares
+a real `snprintf` and refuses to be compiled with that name taken (C1189) — but the two halves of
+the VC9 shim are **not** symmetric. The UCRT declares no `snwprintf` at all: the wide C99 name never
+existed in any MSVC CRT, only `_snwprintf` does. So those sources are exactly as broken on a modern
+CRT as on VC9, and the modern toolchain now carries `crt_defines = ["snwprintf=_snwprintf"]` —
+the wide half only. Verified directly that this triggers no C1189 with the STL included.
+
+### `C3848` — a comparator must be callable on a `const` comparator
+
+`std::set`'s const member functions (`find`, `lower_bound`) hold the comparator by const reference,
+so `operator()` must be const. It is a standard requirement, not a modern-MSVC opinion; VC9's
+`<xtree>` reached the comparator through a non-const path and never checked. Eight sites, all of
+them `std::set`/`std::multiset` comparators, all fixed by adding `const`:
+
+| Module | Comparator |
+| --- | --- |
+| `sdext` | `PresenterTimer.cxx` `TimerTaskComparator` |
+| `sd` | `SlsRequestQueue.cxx` `Request::Comparator` |
+| `sd` | `TemplateScanner.cxx` `FolderDescriptor::Comparator` |
+| `sd` | `MasterPageContainerQueue.cxx` `PreviewCreationRequest::Compare` |
+| `sd` | `AllMasterPagesSelector.cxx` `MasterPageDescriptorOrder` |
+| `sw` | `unoportenum.cxx` `BookmarkCompareStruct`, `AnnotationStartCompareStruct`, `RedlineCompareStruct` |
+
+`RedlineCompareStruct` needed a second `const` on its `getPosition()` helper, since a const
+`operator()` can only call const members. **Method note, because it paid off and will again**: only
+two of these eight came from a build. The other six came from a sweep for every type used as the
+comparator argument of an associative container whose `operator()` lacks `const` — cheaper than six
+build round-trips. The sweep's noise is entirely dmake output trees (`*.pro/`, `solver/450/`) and
+bundled boost/vigra/nss, which Bazel never compiles; filter those out and what remains is small.
+
+### `C2280` — an output iterator must be CopyAssignable
+
+`chart2/source/controller/dialogs/DialogModel.cxx` defines two custom output iterators,
+`lcl_DataSeriesContainerAppend` and `lcl_RolesWithRangeAppend`, each holding its destination as a
+`tContainerType &`. A reference member deletes the implicit copy assignment, and `Cpp17Iterator`
+requires assignability — MSVC's `std::copy` assigns the destination iterator through
+`_Seek_wrapped` (`xutility` line 1378), VC9's never did. Both now hold a pointer, which is what the
+class always meant; inert on VC9. This is the one item in the tail that is a latent defect rather
+than paperwork: the type was never a conforming output iterator.
+
+### `<iterator>`, again
+
+`xmloff/source/chart/SchXMLSeriesHelper.cxx` (`back_inserter`) and
+`xmlhelp/source/cxxhelp/provider/resultsetforquery.cxx` (`inserter`) — the same transitive-include
+family as `<time.h>` in `tools/dirent.cxx`. A sweep says ~25 files in compiled code use the inserter
+family without naming the header, but **not all of them fail** — `PresenterTimer.cxx` is on that
+list and compiles fine, so it still gets the header transitively. The 23 were deliberately left
+alone: adding an include that changes nothing is churn in a diff meant to stay backportable. Fix
+them when a build names them.
+
+### The external dependency: NSS captured `<stdint.h>`
+
+`ext_libraries/modules/nss/3.39/overlay/nss/lib/freebl/stdint.h` is a hand-written shim for VS2008,
+and `nss/lib/freebl` sits on the `/I` list ahead of the system directories — so it captures *every*
+`<stdint.h>`, including the one the UCRT's own `<inttypes.h>` includes. VC9 never reaches it
+(`freebl/verified/kremlib_base.h` includes `<inttypes.h>` only from `_MSC_VER >= 1800` on); a modern
+MSVC does, and the shim has no `UINT64_C`. In C that is an implicit function declaration, which is
+why it surfaced as an *unresolved external* at link time rather than a compile error. Gated on
+`_MSC_VER >= 1900` and forwarded to the real header with the same retargeting trick M4 used for the
+stlport shims: `#include <../include/stdint.h>`, a path that resolves only from inside the toolset's
+own include directory. (The shim also hardcodes `SIZE_MAX` to 32 bits, which is wrong on x64 in
+*both* configs — recorded, not fixed; this branch does not churn source for latent warnings.)
+
+**The second bug there mattered more than the first.** None of the nine NSS/NSPR targets declared
+its headers: `srcs` lists only `.c`, and headers arrive through `copts` `/I`. Bazel therefore cannot
+see a header change and silently relinks the stale objects — the fix appeared not to work, with
+`190 action cache hit` as the only clue. This is exactly the latent bug the python27 overlay had
+(`9b268cdc02`), whose commit message predicted it would recur. `_ALL_HDRS = glob([...])` is now in
+the `srcs` of all nine. **Any overlay reaching headers only through `includes[]`/`copts` has it.**
+
+Two operational notes for the next overlay edit, both hit here:
+
+- `bazel mod deps --lockfile_mode=refresh` is **no longer sufficient on its own**. With Bazel 8.4's
+  repo contents cache, `external/<repo>` is a symlink into
+  `<output_user_root>/cache/repos/v1/contents/<key>/<uuid>` and the key does not cover the overlay
+  hashes. The order that works is: edit overlay → fix `source.json` → `refresh` (this pulls the new
+  content into the CAS) → `bazel fetch --force --repo=@@<canonical>` (this re-materializes) →
+  **diff the fetched file against the overlay** → build. `fetch --force` alone reports "fetched
+  successfully" while still materializing the old tree.
+- Hash overlay files **after** the pre-commit hooks have run, not before. A stale hash is silently
+  ignored, which looks exactly like the edit not working.
+
+### Verified on all three configs
+
+All three configs are green over the nine touched source files, so the phase meets the branch's
+definition of done rather than resting on "inert by construction": `--config=win10-x64` builds
+`//main/staging:install` and the installation runs, and `--config=winXP-x86` and `--config=winXP-x64`
+are unchanged. That the VC9 configs survive is not a formality — a `const` on a comparator, a
+pointer member in place of a reference, and two named includes are all legal C++03, and the only
+build-system change (`crt_defines`) is scoped to the `vs2019` config block, so no VC9 command line
+moved. The NSS overlay was verified on all three configs separately, since it is the one change that
+rebuilds an external dependency.
+
+## M6 — `bazel test` on `--config=win10-x64`
+
+M5 ended at "the product compiles and the installation runs". Running the *tests*
+on the modern toolchain took two more things, and neither was in the source.
+
+### The target platform has to be an execution platform too
+
+`bazel test --config=win10-x64` failed in analysis, before compiling anything:
+
+```
+No matching toolchains found for types:
+  @@bazel_tools//tools/test:default_test_toolchain_type
+```
+
+Bazel runs a test on the first **execution** platform matching all of the target
+platform's constraints. `winXP-x64` and `winXP-x86` were registered as execution
+platforms; `win10-x64` was only ever a target. No registered exec platform
+carries `//build/constraints:win10`, so no test toolchain resolved — and the
+message names the test toolchain, not the platform, which is what makes it read
+like a toolchain bug rather than a missing registration.
+
+The same reasoning already sits in `MODULE.bazel` for `winXP-x86`: it is
+registered *specifically* so x86 tests can resolve a test toolchain, not because
+anything builds there. `win10-x64` is now registered for that reason too, and
+**last**. Order matters: its cpu and os are identical to `winXP-x64`, so any
+earlier position would hand it exec-tool actions (idlc, cppumaker, rsc) on the
+winXP configs as well. Last, it is reached only by a target whose platform
+carries the `win10` constraint — exactly the case the other two cannot serve.
+
+### GoogleTest 1.7.0's tuple, and a define that was right until it wasn't
+
+With the platform registered, the test compiled — gtest did not. ~100 errors in
+`gtest-tuple.h`, of the form *"`type` is not a member of `std::tuple_element`"*.
+
+The gtest overlay pinned `defines = ["GTEST_USE_OWN_TR1_TUPLE=1"]`, reproducing
+the dmake recipe's `use-own-tuple.patch`: VS2008's own `<tr1/tuple>` is
+incomplete, so gtest must use its bundled one. Correct — while VC9 was the only
+compiler. A modern MSVC has no `std::tr1` at all, so forcing the bundled tuple
+declares it into a namespace the STL no longer owns, and it collides with the
+real `<tuple>`.
+
+**The fix is a deletion, not a `select()`.** `gtest-port.h` already derives this
+correctly on all three toolchains:
+
+| | `_MSC_VER >= 1600` | `GTEST_LANG_CXX11` | result |
+| --- | --- | --- | --- |
+| VC9 | no | no (`__cplusplus` 199711) | `GTEST_USE_OWN_TR1_TUPLE 1` — bundled |
+| VS2019 | yes | yes (`/std:c++14 /Zc:__cplusplus`) | `0` — real `<tuple>`, aliased into `::std::tr1` |
+
+So the hardcoded define only ever restated what detection already concluded on
+VC9, while overriding it wrongly on the modern one. Removing it leaves every VC9
+command line unchanged (verified by `aquery`: the define appears in zero compile
+actions on all three configs, and the VC9 suites stay green) and lets the modern
+build take the `<tuple>` path.
+
+Note `GTEST_LANG_CXX11` depends on `/Zc:__cplusplus`, which the `vs2019` block
+already passes in `all_compile_flags`. Without it MSVC reports `__cplusplus` as
+199711 whatever `/std:` says, detection would pick "the user has a conforming
+tr1" — and gtest would fail on a `std::tr1` that does not exist.
+
+### Verified — the first test executed on the modern toolchain
+
+`//main/unodevtools:skeletonmaker_test` runs 7/7 green on **all three** configs,
+which is the first test executed under `--config=win10-x64` on this branch. The
+VC9 gtest suites — binaryurp, cppu, cppuhelper, o3tl, salhelper, comphelper, sax,
+svl, tools — were re-run on `winXP-x86` to confirm the overlay change is inert
+there.
+
+## How this branch differs from `win10-64-support`
+
+They are not competing. `win10-64-support` is the long road — the SOLID experiment, the capability
+port, HiDPI, theming — and it carries the design record: `win10-support/` there holds ADRs 001-009
+and the B0 portability survey, which is where the reasoning behind blocker 3 lives.
+
+This branch borrows two things from it and nothing else: **ADR-009**, for the shim split, and the
+**B0 survey's method**, for how to measure before deciding. Everything else there is behaviour
+work that this branch has no opinion about.

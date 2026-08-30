@@ -702,7 +702,7 @@ void Job::impl_stopListening()
                 its results
 */
 void SAL_CALL Job::jobFinished( /*IN*/ const css::uno::Reference< css::task::XAsyncJob >& xJob    ,
-                                /*IN*/ const css::uno::Any&                               aResult ) throw(css::uno::RuntimeException)
+                                /*IN*/ const css::uno::Any&                               aResult )
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
@@ -745,8 +745,7 @@ void SAL_CALL Job::jobFinished( /*IN*/ const css::uno::Reference< css::task::XAs
     @throw  TerminateVetoException
                 if our internal wrapped job is still running.
  */
-void SAL_CALL Job::queryTermination( /*IN*/ const css::lang::EventObject& ) throw(css::frame::TerminationVetoException,
-                                                                                         css::uno::RuntimeException          )
+void SAL_CALL Job::queryTermination( /*IN*/ const css::lang::EventObject& )
 {
     /* SAFE { */
     ReadGuard aReadLock(m_aLock);
@@ -792,7 +791,7 @@ void SAL_CALL Job::queryTermination( /*IN*/ const css::lang::EventObject& ) thro
     @param  aEvent
                 describes the broadcaster and must be the desktop instance
  */
-void SAL_CALL Job::notifyTermination( /*IN*/ const css::lang::EventObject& ) throw(css::uno::RuntimeException)
+void SAL_CALL Job::notifyTermination( /*IN*/ const css::lang::EventObject& )
 {
     die();
     // Do nothing else here. Our internal resources was released ...
@@ -818,8 +817,7 @@ void SAL_CALL Job::notifyTermination( /*IN*/ const css::lang::EventObject& ) thr
                 if our internal wrapped job is still running.
  */
 void SAL_CALL Job::queryClosing( const css::lang::EventObject& aEvent         ,
-                                       sal_Bool                bGetsOwnership ) throw(css::util::CloseVetoException,
-                                                                                      css::uno::RuntimeException   )
+                                       sal_Bool                bGetsOwnership )
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
@@ -892,7 +890,7 @@ void SAL_CALL Job::queryClosing( const css::lang::EventObject& aEvent         ,
     @param  aEvent
             describes the broadcaster and must be the frame or model instance we know
  */
-void SAL_CALL Job::notifyClosing( const css::lang::EventObject& ) throw(css::uno::RuntimeException)
+void SAL_CALL Job::notifyClosing( const css::lang::EventObject& )
 {
     die();
     // Do nothing else here. Our internal resource was released ...
@@ -907,7 +905,7 @@ void SAL_CALL Job::notifyClosing( const css::lang::EventObject& ) throw(css::uno
     @param      aEvent
                 describe the broadcaster
 */
-void SAL_CALL Job::disposing( const css::lang::EventObject& aEvent ) throw(css::uno::RuntimeException)
+void SAL_CALL Job::disposing( const css::lang::EventObject& aEvent )
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);

@@ -50,10 +50,10 @@ public:
 	OObjectListener(OObjectBase* _pObject);
 
 	// XEventListener
-	virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const  ::com::sun::star::lang::EventObject& Source );
 
 	// XPropertyChangeListener
-	virtual void SAL_CALL propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt );
 };
 }
 #endif // _REPORT_RPTUILIST_HXX
