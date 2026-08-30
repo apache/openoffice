@@ -78,8 +78,24 @@ These apply to many packages — check before building any new module:
 
 - `/Zc:wchar_t-` — required for any module using `sal_Unicode`; VS2008 native `wchar_t`
   differs from `unsigned short`, breaking `Sequence<sal_Unicode>` / `cppu_detail_getUnoType`
-- `snprintf=_snprintf` — VS2008 MSVCRT only exports `_snprintf`, not `snprintf`
-- `snwprintf=_snwprintf` — same for the wide-char variant; needed by framework and potentially others
+- `snprintf` / `snwprintf` — NO LONGER a per-module define.  Both are injected by
+  the toolchain through the `crt_defines` attr (`build/toolchain/BUILD.bazel`),
+  because which CRT is in play is a toolchain property that a module BUILD cannot
+  know.  The 130 per-module copies were swept out 2026-08-11.  The two halves are
+  not symmetric: VC9 gets `snprintf=_snprintf` (its MSVCRT exports only the
+  underscored name) AND `snwprintf=_snwprintf`; the modern toolchain gets ONLY the
+  wide one — the UCRT declares a real `snprintf` and refuses to compile with the
+  name taken (C1189), while it declares no `snwprintf` at all, since the wide C99
+  name never existed in any MSVC CRT.
+- `MSC` — likewise global, hardcoded in windows_cc_toolchain_config.bzl (it names
+  the compiler, and every toolchain sharing that config rule is MSVC).  Upstream
+  defines it for every TU on MSVC (`solenv/inc/settings.mk:878`, the same line
+  `$(CPUNAME)` and `CPPU_ENV` come from).  26 source files test it and three
+  modules tested it WITHOUT defining it, silently taking the non-Windows branch —
+  live in `tools/source/fsys/dirent.cxx`, where temp filenames came from
+  `clock()`+`getpid()` instead of `GetTickCount()`+`_getpid()`.  It flips live
+  code tree-wide and appears on every command line, so per-module builds cannot
+  check it; validated by a full green `//main/staging:install --config=winXP-x86`.
 - `stlport` dep — required for modules using `boost::unordered_map` or `hash_map` via boost
 - `Z_PREFIX` + `SYSTEM_ZLIB` — required for all zlib consumers (all symbols prefixed with `z_`)
 - `/Imain/soltools/winunistd` — for modules that `#include <unistd.h>` unconditionally

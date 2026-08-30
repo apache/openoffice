@@ -29,11 +29,16 @@ first; this file only carries what the shared context in `../common/` and
 `winXP-x86` and `winXP-x64` remain the regression baseline and must keep
 building unchanged.
 
-## Corrections owed to `.agent/common/`
+## Corrections owed to `.agent/common/` — LANDED
 
-Per the `.agent/` contract this branch may not edit `common/`, so the shared
-docs still describe the tree as it was before this branch. Land these on
-`bazel-migration` when the branch merges:
+**These are done.** The branch merged into `bazel-migration` on 2026-08-30, and
+the three corrections below were applied to `common/10-toolchain.md` and
+`common/20-build-conventions.md` in the same series. They are kept here as the
+record of what the shared docs used to say and why they were wrong; the shared
+docs are now authoritative, so read those, not this list.
+
+Per the `.agent/` contract this branch could not edit `common/` itself, so while
+it was live the shared docs still described the tree as it was before it:
 
 - **`10-toolchain.md` — the VC9 toolchains are renamed.** They are
   `aoo_msvc_vs2008_x86_def` and `aoo_msvc_vs2008_x64_def`, not
