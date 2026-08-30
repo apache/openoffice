@@ -40,6 +40,8 @@
 #include <cppuhelper/factory.hxx>
 #include <vector>
 #include <hash_map>
+#include <unordered_map>
+#include <string>
 
 #include <tools/resmgr.hxx>
 
@@ -470,6 +472,117 @@ void SAL_CALL SolverComponent::solve()
         }
     }
 
+    // Try to combine complementary <= and >= rows with identical coefficients
+    // into a single ranged row 'R' with RANGE = upper - lower.
+    // We do this before building the column-wise matrix. When a pair is
+    // merged we zero out the coefficients of the removed row so it is
+    // ignored when building the sparse column representation.
+    // Allocate a row-indexed range array up-front (one entry per original row).
+    double* pRangeValues = new double[nRows];
+    for (size_t i = 0; i < nRows; ++i) pRangeValues[i] = 0.0;
+
+    // Two-pass approach: first collect best lower/upper per coefficient
+    // signature (exact bitwise signature). Second, convert compatibles to
+    // ranged rows. This avoids online erase/replace semantics and ensures
+    // decisions are based on the original model.
+    struct RowPair { size_t lowerIdx; double lowerVal; size_t upperIdx; double upperVal; };
+    const size_t npos = static_cast<size_t>(-1);
+    std::unordered_map< std::string, RowPair > rowMap;
+    rowMap.reserve(nRows * 2);
+
+    // Pass 1: populate rowMap with tightest lower (max G) and tightest
+    // upper (min L) for each coefficient signature.
+    for (size_t i = 0; i < nRows; ++i)
+    {
+        char ti = pRowType[i];
+        if ( ti != 'L' && ti != 'G' )
+            continue;
+
+        const char* data = reinterpret_cast<const char*>(&pCompMatrix[i * nVariables]);
+        size_t len = (size_t)nVariables * sizeof(double);
+        std::string sig;
+        sig.assign(data, len);
+
+        auto it = rowMap.find(sig);
+        if ( it == rowMap.end() )
+        {
+            RowPair rp; rp.lowerIdx = npos; rp.upperIdx = npos; rp.lowerVal = 0.0; rp.upperVal = 0.0;
+            std::pair<std::unordered_map<std::string, RowPair>::iterator, bool> res = rowMap.insert(std::make_pair(sig, rp));
+            it = res.first;
+        }
+
+        RowPair &rp = it->second;
+        if ( ti == 'L' )
+        {
+            double v = pRHS[i];
+            if ( rp.upperIdx == npos || v < rp.upperVal )
+            {
+                rp.upperIdx = i;
+                rp.upperVal = v;
+            }
+        }
+        else // 'G'
+        {
+            double v = pRHS[i];
+            if ( rp.lowerIdx == npos || v > rp.lowerVal )
+            {
+                rp.lowerIdx = i;
+                rp.lowerVal = v;
+            }
+        }
+    }
+
+    // Pass 2: perform conversions for entries that have both bounds.
+    size_t nMergedRows = 0;
+    for (auto &kv : rowMap)
+    {
+        RowPair &rp = kv.second;
+        if ( rp.lowerIdx == npos || rp.upperIdx == npos )
+            continue;
+
+        size_t idxLower = rp.lowerIdx;
+        size_t idxUpper = rp.upperIdx;
+        double lower = rp.lowerVal;
+        double upper = rp.upperVal;
+
+        if ( lower <= upper )
+        {
+            // make upper the ranged row and mark lower as removed
+            pRowType[idxUpper] = 'R';
+            pRHS[idxUpper] = upper;
+            pRangeValues[idxUpper] = upper - lower;
+
+            pRowType[idxLower] = 'N';
+            pRHS[idxLower] = 0.0;
+
+            ++nMergedRows;
+            OSL_TRACE("Solver: merging rows %lu (G %.17g) and %lu (L %.17g) into ranged row %lu [%.17g, %.17g]\n",
+                      static_cast<unsigned long>(idxLower), lower,
+                      static_cast<unsigned long>(idxUpper), upper,
+                      static_cast<unsigned long>(idxUpper), lower, upper);
+        }
+        else
+        {
+            // invalid (contradictory) bounds: leave rows unchanged
+            OSL_TRACE("Solver: contradictory bounds for coeff-signature - lowerRow=%lu (%.17g) upperRow=%lu (%.17g); leaving rows unchanged\n",
+                      static_cast<unsigned long>(idxLower), lower,
+                      static_cast<unsigned long>(idxUpper), upper);
+        }
+    }
+
+    // After Pass 2 produce a summary trace (rows merged, ranged rows created,
+    // rows eliminated). This is the default diagnostic; per-row traces are
+    // emitted above and can be enabled/disabled by adjusting trace levels.
+    int nRangeCount_tmp = 0;
+    int nEliminated = 0;
+    for (size_t i = 0; i < nRows; ++i)
+    {
+        if ( pRowType[i] == 'R' ) ++nRangeCount_tmp;
+        if ( pRowType[i] == 'N' ) ++nEliminated;
+    }
+    OSL_TRACE("Solver: %lu input rows, %d ranged rows created, %d rows eliminated, %lu merged pairs\n",
+              static_cast<unsigned long>(nRows), nRangeCount_tmp, nEliminated, static_cast<unsigned long>(nMergedRows));
+
     // Find non-zero coefficients, column-wise
 
     int* pMatrixBegin = new int[nVariables+1];
@@ -482,6 +595,8 @@ void SAL_CALL SolverComponent::solve()
         int nBegin = nMatrixPos;
         for (size_t nRow=0; nRow<nRows; nRow++)
         {
+            if ( pRowType[nRow] == 'N' )
+                continue;
             double fCoeff = pCompMatrix[ nRow * nVariables + nVar ];    // row-wise
             if ( fCoeff != 0.0 )
             {
@@ -496,6 +611,12 @@ void SAL_CALL SolverComponent::solve()
     pMatrixBegin[nVariables] = nMatrixPos;
     delete[] pCompMatrix;
     pCompMatrix = NULL;
+
+    // Count ranged rows and keep the row-indexed pRangeValues allocated above.
+    int nRangeCount = 0;
+    for (size_t i = 0; i < nRows; ++i)
+        if ( pRowType[i] == 'R' )
+            ++nRangeCount;
 
     // apply settings to all variables
 
@@ -541,12 +662,19 @@ void SAL_CALL SolverComponent::solve()
     int nObjectSense = mbMaximize ? SOLV_OBJSENS_MAX : SOLV_OBJSENS_MIN;
 
     HPROB hProb = CoinCreateProblem("");
-    int nResult = CoinLoadProblem( hProb, nVariables, nRows, nMatrixPos, 0,
+    int nResult = CoinLoadProblem( hProb, nVariables, nRows, nMatrixPos, nRangeCount,
                     nObjectSense, nObjectConst, pObjectCoeffs,
-                    pLowerBounds, pUpperBounds, pRowType, pRHS, NULL,
+                    pLowerBounds, pUpperBounds, pRowType, pRHS, pRangeValues,
                     pMatrixBegin, pMatrixCount, pMatrixIndex, pMatrix,
                     NULL, NULL, NULL );
-    nResult = CoinLoadInteger( hProb, pColType );
+    if ( nResult == SOLV_CALL_SUCCESS )
+        nResult = CoinLoadInteger( hProb, pColType );
+
+    if ( pRangeValues )
+    {
+        delete[] pRangeValues;
+        pRangeValues = NULL;
+    }
 
     // Supply the current variable values as a possible initial solution.
     // Pass the spreadsheet values unchanged; CoinMP/CBC is responsible for
