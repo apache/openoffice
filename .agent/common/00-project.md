@@ -39,6 +39,37 @@ Source code is NOT being changed — only the build system.
 - Goal: eliminate gmake and dmake from first-party builds entirely
 - rules_foreign_cc is a bridge for external code, not a destination
 
+## External dependencies are linked SHARED
+
+An external library is reached through an import library and shipped as its own
+DLL.  It is never statically bound into a product binary.  Static linking is
+acceptable only for a build-time tool that never ships and must be
+self-contained at build-action time — ICU's `genbrk`/`gencmn`/`genccode` are the
+worked example.
+
+Two reasons, and the second is the one that bites later:
+
+- **A dependency we do not maintain must stay replaceable.**  Swapping one for a
+  security fix, a newer version, or a distro's own copy should not mean
+  relinking the product.
+- **Distribution.**  A Linux packager needs `--with-system-<lib>`, and that is a
+  PROVENANCE choice — expressible only if the consumer links against an
+  interface rather than absorbing the implementation.  It is what the
+  `//build/config:*_system` branch of `//build/deps` exists for.  A statically
+  bound dependency has no such seam.
+
+Static linking also pulls AOO-side knowledge of how the dependency was built
+into our BUILD files — the `*_STATIC` / `*_INTERNAL` define families — and that
+coupling is what makes an AOO-specific patch feel cheap and a version bump
+expensive.  A registry that offers only static targets (the BCR `icu` module is
+static-only and propagates `U_STATIC_IMPLEMENTATION` on MSVC) is therefore a
+dependency we cannot consume yet, not a reason to go static.
+
+**This describes the direction, not the tree.**  Measured 2026-08-30: of the 36
+modules in `ext_libraries/modules`, four build a shared library — icu (3),
+nss (8), coinmp (1), python (1) — and the rest are static.  Every module touched
+for another reason is an opportunity to move one more.
+
 ## Out of scope
 
 - Modifying source code
