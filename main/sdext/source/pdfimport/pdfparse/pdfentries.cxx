@@ -676,7 +676,7 @@ bool PDFObject::getDeflatedStream( char** ppStream, unsigned int* pBytes, const 
     {
         unsigned int nOuterStreamLen = m_pStream->m_nEndOffset - m_pStream->m_nBeginOffset;
         *ppStream = static_cast<char*>(rtl_allocateMemory( nOuterStreamLen ));
-        if( ! ppStream )
+        if( ! *ppStream )
         {
             *pBytes = 0;
             return false;
@@ -719,6 +719,12 @@ bool PDFObject::getDeflatedStream( char** ppStream, unsigned int* pBytes, const 
             pStream++;
         // get the compressed length
         *pBytes = m_pStream->getDictLength( pObjectContainer );
+        // pStream has already advanced past the "stream" keyword inside it.
+        const unsigned int nSkipped =
+            static_cast<unsigned int>( pStream - *ppStream );
+        const unsigned int nAvailable = nOuterStreamLen - nSkipped;
+        if( *pBytes > nAvailable )
+            *pBytes = nAvailable;
         if( pStream != *ppStream )
             rtl_moveMemory( *ppStream, pStream, *pBytes );
         if( rContext.m_bDecrypt )
@@ -1361,8 +1367,18 @@ PDFFileImplData* PDFFile::impl_getData() const
                         if( len != pDict->m_aMap.end() )
                         {
                             PDFNumber* pNum = dynamic_cast<PDFNumber*>(len->second);
-                            if( pNum )
-                                m_pData->m_nKeyLength = static_cast<sal_uInt32>(pNum->m_fValue) / 8;
+                            // m_aDecryptionKey holds ENCRYPTION_KEY_LEN + 5
+                            // bytes: the key, plus the object and generation
+                            // numbers appended after it.
+                            if( pNum && pNum->m_fValue > 0 )
+                            {
+                                sal_uInt32 nBits =
+                                    static_cast<sal_uInt32>(pNum->m_fValue) / 8;
+                                if( nBits > ENCRYPTION_KEY_LEN )
+                                    nBits = ENCRYPTION_KEY_LEN;
+                                if( nBits > 0 )
+                                    m_pData->m_nKeyLength = nBits;
+                            }
                         }
                         PDFName* pFilter = dynamic_cast<PDFName*>(filter->second);
                         if( pFilter && pFilter->getFilteredName().equalsAscii( "Standard" ) )
