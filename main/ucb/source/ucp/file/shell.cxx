@@ -1905,6 +1905,23 @@ shell::write( sal_Int32 CommandId,
         }
     } while( nReadBytes == nRequestedBytes );
 
+    // Force the data onto the physical medium before success is reported.
+    // Closing alone only flushes osl's own buffer into the OS page cache; the
+    // file system journals the new file size but not the data, so a crash or
+    // power loss between here and the next writeback leaves a file of the
+    // right length containing nothing but zeros (i126990).
+    if( bSuccess )
+    {
+        err = aFile.sync();
+        if( err != osl::FileBase::E_None )
+        {
+            installError( CommandId,
+                          TASKHANDLING_FILEIOERROR_FOR_WRITE,
+                          err );
+            bSuccess = sal_False;
+        }
+    }
+
     err = aFile.close();
     if( err != osl::FileBase::E_None  )
     {
