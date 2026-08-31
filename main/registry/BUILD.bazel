@@ -101,3 +101,41 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+# ── regview executable ────────────────────────────────────────────
+# Dumps an .rdb registry as text.  Used by //build/tools:uno_graph.py to
+# recover the UNO type graph (services, interfaces, methods, parameters)
+# without re-parsing IDL — see build/tools/unograph_schema.md.
+cc_binary(
+    name = "regview",
+    srcs = [
+        "tools/regview.cxx",
+        "tools/fileurl.cxx",
+        "tools/fileurl.hxx",
+    ],
+    copts = _COPTS + ["/Imain/registry/tools"],
+    defines = _DEFINES,
+    deps = [
+        ":registry_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+    ],
+    # regview is run by a developer (via //build/tools:uno_graph.py), not by a
+    # build action that could stage an external <exe>.manifest beside it, so it
+    # has to carry its own VC90-CRT activation context: the manifest is compiled
+    # to a .res and linked in at RT_MANIFEST id 1.  Without it the /MD CRT is
+    # unresolvable and the process dies 0xC0000135 before main.  Same reasoning
+    # as //main/unodevtools:uno-skeletonmaker.
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/registry:reg_implib",
+        "//main/external/msvcp90:vc90_app_manifest_res",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/registry:reg_implib)",
+        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
