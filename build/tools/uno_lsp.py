@@ -97,6 +97,20 @@ class Graph:
                 return cand
         return None
 
+    def services_of_impl(self, impl):
+        """Rows for an IMPLEMENTATION name.
+
+        Implementation names appear as literals in the tree just as often as
+        service names do -- getImplementationName() returns one, and the
+        factory tables are built from them -- and they are easy to mistake for
+        services because they differ only by a `.comp.` segment.
+        """
+        return self.conn.execute("""
+            SELECT i.service, i.component, c.artifact, c.kind
+            FROM impl_services i JOIN components c ON c.path = i.component
+            WHERE i.impl = ? ORDER BY i.service
+        """, (impl,)).fetchall()
+
     def search(self, query):
         like = "%{}%".format(query)
         return self.conn.execute(
@@ -109,7 +123,7 @@ def describe(graph, name):
     cls = graph.type_of(name)
     impls = graph.implementations(name)
     if cls is None and not impls:
-        return None
+        return describe_impl(graph, name)
 
     out = ["**{}**".format(name)]
     if cls:
@@ -137,6 +151,27 @@ def describe(graph, name):
     if cls and not impls and "service" in cls:
         out.append("")
         out.append("_No registered implementation._")
+    return "\n".join(out)
+
+
+def describe_impl(graph, name):
+    """Hover body for an implementation name, or None if it is not one."""
+    rows = graph.services_of_impl(name)
+    if not rows:
+        return None
+    _svc, component, artifact, kind = rows[0]
+    built, staged = graph.producer(artifact)
+    out = ["**{}**".format(name), "`implementation`", ""]
+    out.append("- library `{}` ({})".format(artifact, kind))
+    if built:
+        out.append("- built by `{}` [{}]".format(built[0], built[1]))
+    out.append("- staged `{}`".format(staged) if staged
+               else "- **NOT STAGED** -- will fail to load")
+    out.append("- registered in `{}`".format(component))
+    out.append("")
+    out.append("**implements**")
+    for svc, _c, _a, _k in rows:
+        out.append("- `{}`".format(svc))
     return "\n".join(out)
 
 
