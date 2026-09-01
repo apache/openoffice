@@ -19,7 +19,7 @@
 #
 # *************************************************************
 RSCVERSION=510
-RSCREVISION=510m1(Build:9900)
-BUILD=9900
+RSCREVISION=510m1(Build:99000)
+BUILD=99000
 LAST_MINOR=m1
 SOURCEVERSION=AOO510
