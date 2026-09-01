@@ -48,10 +48,10 @@ PRODUCTLIST = openoffice
 # default values to minimize maintenance effort
 
 # CAUTION! $(OOOBASEVERSION) from openoffice.lst NOT available (!)
-PRODUCTVERSION = 4.5
+PRODUCTVERSION = 5.1
 
 # CAUTION! $(BRANDPACKAGEVERSION) from openoffice.lst NOT available (!)
-PRODUCTVERSIONSHORT = 4
+PRODUCTVERSIONSHORT = 5
 
 PKGVERSION = $(PRODUCTVERSION)
 # gnome-vfs treats everything behind the last '.' as an icon extension,

@@ -136,16 +136,16 @@ public class Installer implements Runnable {
 		final File install = new File(installed, "install");
 		final File enUs = new File(install, "en-US");
 		// *nix:
-		File openoffice4 = new File(enUs, "openoffice4");
-		if (!openoffice4.exists()) {
+		File openoffice5 = new File(enUs, "openoffice5");
+		if (!openoffice5.exists()) {
 			// Windows:
-			openoffice4 = new File(enUs, "OpenOffice 4");
+			openoffice5 = new File(enUs, "OpenOffice 5");
 		}
-		if (!openoffice4.exists()) {
-			throw new RuntimeException("Neither openoffice.home nor openoffice.pack were specified, and could not find OpenOffice in " + openoffice4.getAbsolutePath());
+		if (!openoffice5.exists()) {
+			throw new RuntimeException("Neither openoffice.home nor openoffice.pack were specified, and could not find OpenOffice in " + openoffice5.getAbsolutePath());
 		}
-		validateOpenOfficeInstallation(openoffice4);
-		return openoffice4.getAbsolutePath();
+		validateOpenOfficeInstallation(openoffice5);
+		return openoffice5.getAbsolutePath();
 	}
 
 	private static void validateOpenOfficeInstallation(File directory) {

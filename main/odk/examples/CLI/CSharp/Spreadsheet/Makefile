@@ -52,7 +52,7 @@ include $(SETTINGS)/stdtarget.mk
 
 
 # build executables
-#csc -lib:"d:\OpenOffice 4" does not work. csc does not understand the quotes.
+#csc -lib:"d:\OpenOffice 5" does not work. csc does not understand the quotes.
 #but they are needed if the path contains a space. Therefore we use full path
 #with the -reference switch
 $(SPREADSHEET_OUT)/%.exe : %.cs SpreadsheetDocHelper.cs
