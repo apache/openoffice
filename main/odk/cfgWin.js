@@ -922,7 +922,7 @@ function writeBatFile(fdir, file)
         "REM are necessary for building the examples of the Office Development Kit.\n" +
         "REM The Script was developed for the operating systems Windows.\n" +
         "REM The SDK name\n" +
-        "REM Example: @set \"OO_SDK_NAME=openoffice5.1_sdk\"\n" +
+        "REM Example: @set \"OO_SDK_NAME=openoffice5.0_sdk\"\n" +
         "@set \"OO_SDK_NAME=" + oo_sdk_name  +
         "\"\n\n" +
         "REM Installation directory of the Software Development Kit.\n" +

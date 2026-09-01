@@ -606,7 +606,7 @@ sub get_download_architecture
 	{
 		# iswindowsbuild is true for BOTH Windows architectures, so testing it
 		# here named every Windows download x86 -- an x64 build produced
-		# Apache_OpenOffice_5.1.0_Win_x86_install_en-US.exe, a filename
+		# Apache_OpenOffice_5.0.0_Win_x86_install_en-US.exe, a filename
 		# identical to the x86 one and differing only in its contents.
 		$arch = "x64";
 	}

@@ -9,7 +9,7 @@ VIAddVersionKey CompanyName "Apache Software Foundation"
 VIAddVersionKey LegalCopyright "(c) 2012-2026 The Apache Software Foundation"
 VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
 VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
-VIProductVersion "5.1.9900.500"
+VIProductVersion "5.0.9900.500"
 
 ; Enable Unicode
 Unicode true
