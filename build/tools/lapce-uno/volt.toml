@@ -1,0 +1,24 @@
+name = "lapce-uno"
+version = "0.1.0"
+display-name = "UNO (Apache OpenOffice)"
+author = "Apache OpenOffice"
+description = "Go-to-definition and hover across the UNO service/component boundary"
+wasm = "lapce-uno.wasm"
+
+# Activates on the same languages as clangd on purpose.  Lapce runs both
+# servers; uno_lsp answers only for dotted UNO names and returns null for
+# everything else, so it never competes with clangd for a C++ symbol.
+[activation]
+language = ["c", "cpp"]
+
+[config."volt.serverPath"]
+default = "python"
+description = "Python interpreter used to run uno_lsp.py"
+
+[config."volt.workspace"]
+default = ""
+description = "Path to the Apache OpenOffice checkout (required)"
+
+[config."volt.dbPath"]
+default = ""
+description = "uno.sqlite from uno_graph.py (default: <workspace>/uno.sqlite)"

@@ -1,0 +1,27 @@
+[package]
+name = "lapce-uno"
+version = "0.1.0"
+edition = "2021"
+autobins = false
+license = "Apache-2.0"
+description = "Lapce volt that launches uno_lsp.py alongside clangd"
+
+[lib]
+name = "lapce_uno"
+crate-type = ["cdylib"]
+# register_plugin! emits its own `fn main`, so the crate root is main.rs
+path = "src/main.rs"
+
+[dependencies]
+lapce-plugin = "0.1.2"
+serde_json = "1.0"
+anyhow = "1.0"
+
+# lsp-types is pinned through Cargo.lock, not here.  psp-types (pulled in by
+# lapce-plugin) declares `lsp-types = "0"`, an unbounded wildcard, so cargo
+# resolves the newest 0.x -- and 0.96 renamed Url to Uri, which does not
+# compile against psp-types 0.1.1.  A version requirement in this file cannot
+# fix it: 0.x releases are mutually semver-incompatible, so adding our own
+# lsp-types dependency just resolves a second copy and leaves psp-types on the
+# broken one.  The lock file is the only place that constrains it:
+#     cargo update -p lsp-types --precise 0.95.1
