@@ -54,30 +54,41 @@ def path_to_uri(path):
 
 
 class Graph:
+    """Queries the fact graph WITHOUT holding the database open.
+
+    A long-lived connection keeps a Windows file handle on uno.sqlite, and the
+    editor outlives every refresh -- so refresh_index.py could not replace the
+    file while Lapce was running.  Connecting per query costs microseconds on a
+    database this size and has the better property besides: a refreshed graph
+    is picked up on the next hover instead of needing the server restarted.
+    """
+
     def __init__(self, db, workspace):
-        self.conn = sqlite3.connect(db, check_same_thread=False)
+        self.db = db
         self.workspace = Path(workspace)
 
+    def _q(self, sql, params=()):
+        with sqlite3.connect(self.db) as conn:
+            return conn.execute(sql, params).fetchall()
+
     def type_of(self, name):
-        r = self.conn.execute(
-            "SELECT class FROM types WHERE name = ?", (name,)).fetchone()
-        return r[0] if r else None
+        r = self._q("SELECT class FROM types WHERE name = ?", (name,))
+        return r[0][0] if r else None
 
     def interfaces(self, service):
-        return self.conn.execute(
+        return self._q(
             "SELECT sort, target FROM service_refs WHERE service = ? "
-            "ORDER BY sort, target", (service,)).fetchall()
+            "ORDER BY sort, target", (service,))
 
     def implementations(self, service):
-        return self.conn.execute("""
+        return self._q("""
             SELECT i.impl, i.component, c.artifact, c.kind
             FROM impl_services i JOIN components c ON c.path = i.component
             WHERE i.service = ?
-        """, (service,)).fetchall()
+        """, (service,))
 
     def producer(self, artifact):
-        rows = self.conn.execute(
-            "SELECT label, kind, output, staged FROM provenance").fetchall()
+        rows = self._q("SELECT label, kind, output, staged FROM provenance")
         built, staged = None, None
         for label, kind, output, is_staged in rows:
             if Path(output).name != artifact:
@@ -105,17 +116,17 @@ class Graph:
         factory tables are built from them -- and they are easy to mistake for
         services because they differ only by a `.comp.` segment.
         """
-        return self.conn.execute("""
+        return self._q("""
             SELECT i.service, i.component, c.artifact, c.kind
             FROM impl_services i JOIN components c ON c.path = i.component
             WHERE i.impl = ? ORDER BY i.service
-        """, (impl,)).fetchall()
+        """, (impl,))
 
     def search(self, query):
         like = "%{}%".format(query)
-        return self.conn.execute(
+        return self._q(
             "SELECT name, class FROM types WHERE name LIKE ? ORDER BY name LIMIT 200",
-            (like,)).fetchall()
+            (like,))
 
 
 def describe(graph, name):

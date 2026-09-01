@@ -23,6 +23,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 import sqlite3
 import subprocess
@@ -231,12 +232,24 @@ def main(argv=None):
     print("  facts: {} provenance, {} registrations"
           .format(len(provenance), len(registrations)))
 
+    # Build beside the target and swap, so a reader never sees a half-written
+    # database and a failed run never destroys the previous good one.
     out = Path(args.out)
-    if out.exists():
-        out.unlink()
-    conn = sqlite3.connect(out)
+    tmp = out.with_suffix(out.suffix + ".new")
+    if tmp.exists():
+        tmp.unlink()
+    conn = sqlite3.connect(tmp)
     build(conn, types, provenance, registrations, args.workspace)
     conn.close()
+    try:
+        os.replace(tmp, out)
+    except OSError as e:
+        # On Windows a file cannot be replaced while another process holds it
+        # open.  uno_lsp connects per query precisely so it does not, but an
+        # older server or another tool still can.
+        sys.exit("could not replace {}: {}\n"
+                 "Something is holding it open -- the new graph is at {}"
+                 .format(out, e, tmp))
     print("wrote {}".format(out))
     return 0
 
