@@ -163,13 +163,13 @@
 		</condition>
 
 		<!-- Next try the internal install path that the with-package-format=installed option to configure uses -->
-		<available type="dir" file="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/openoffice4"
-			property="internalInstalledDirNix" value="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/openoffice4"/>
+		<available type="dir" file="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/openoffice5"
+			property="internalInstalledDirNix" value="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/openoffice5"/>
 		<condition property="test.arg0" value="-Dopenoffice.home=${internalInstalledDirNix}">
 			<isset property="internalInstalledDirNix" />
 		</condition>
-		<available type="dir" file="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/OpenOffice 4"
-			property="internalInstalledDirWin" value="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/OpenOffice 4"/>
+		<available type="dir" file="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/OpenOffice 5"
+			property="internalInstalledDirWin" value="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/OpenOffice 5"/>
 		<condition property="test.arg0" value="-Dopenoffice.home=${internalInstalledDirWin}">
 			<isset property="internalInstalledDirWin" />
 		</condition>

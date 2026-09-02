@@ -492,7 +492,7 @@ sub create_epm_header
 	{
 		# refer to the license in the matching AOO installation
 		# TODO: sync AOO dest license full path with lpacks/sdks/exts
-		my $licpath = "openoffice4/program/" . $licensefilename;
+		my $licpath = "openoffice5/program/" . $licensefilename;
 		$foundlicensefile = 1;
 		$line = "%license " . $licpath . "\n";
 		push(@epmheader, $line);

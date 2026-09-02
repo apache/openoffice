@@ -133,7 +133,7 @@ std::wstring GetOfficeInstallationPath(MSIHANDLE handle);
 
     @returns
     the absolute system path of the office executable (e.g.
-    "C:\Program Files (x86)\OpenOffice 4\program\soffice.exe").
+    "C:\Program Files (x86)\OpenOffice 5\program\soffice.exe").
 */
 std::wstring GetOfficeExecutablePath(MSIHANDLE handle);
 

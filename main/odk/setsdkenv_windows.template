@@ -23,15 +23,15 @@ REM This script sets all environment variables, which
 REM are necessary for building the examples of the Office Development Kit.
 REM The Script was developed for the operating systems Windows.
 REM The SDK name
-REM Example: @set "OO_SDK_NAME=openoffice4.0_sdk"
+REM Example: @set "OO_SDK_NAME=openoffice5.1_sdk"
 @set "OO_SDK_NAME=<your_input_here>"
 
 REM Installation directory of the Software Development Kit.
-REM Example: @set "OO_SDK_HOME=C:\Program Files\OpenOffice\4\sdk"
+REM Example: @set "OO_SDK_HOME=C:\Program Files\OpenOffice\5\sdk"
 @set "OO_SDK_HOME=<your_input_here>"
 
 REM Office installation directory.
-REM Example: @set "OFFICE_HOME=C:\Program Files\OpenOffice 4"
+REM Example: @set "OFFICE_HOME=C:\Program Files\OpenOffice 5"
 @set "OFFICE_HOME=<your_input_here>"
 
 REM Directory of the make command.
@@ -65,7 +65,7 @@ REM Example: @set "OO_SDK_JAVA_HOME=C:\Program Files\Java\jdk1.6.0_05"
 @set "OO_SDK_JAVA_HOME=<your_input_here>"
 
 REM Special output directory
-REM Example: @set "OO_SDK_OUT=C:\openoffice4.0_sdk"
+REM Example: @set "OO_SDK_OUT=C:\openoffice5.1_sdk"
 @set "OO_SDK_OUT=<your_input_here>"
 
 REM Automatic deployment

@@ -63,7 +63,7 @@ my_sofficepath = \
     $(SOLARSRC)'/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/Openoffice 4/program/soffice.exe'
 .ELSE
 my_sofficepath = \
-    $(SOLARSRC)/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/openoffice4/program/soffice
+    $(SOLARSRC)/instsetoo_native/$(INPATH)/Apache_OpenOffice/installed/install/en-US/openoffice5/program/soffice
 .END
 
 .IF "$(OOO_TEST_SOFFICE)" == ""
