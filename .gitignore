@@ -110,6 +110,9 @@ main/winaccessibility/source/UAccCOMIDL/dlldata.c
 # Bazel user cache (if inside repo)
 user.bazelrc
 .bazel/
+# Editor-local configuration
+.lapce/
+
 #AI related
 .claude/settings.local.json
 .vscode/settings.json
