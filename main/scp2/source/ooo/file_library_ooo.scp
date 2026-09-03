@@ -1593,16 +1593,16 @@ STD_JAR_FILE( gid_File_Jar_Xsltvalidate, XSLTValidate )
 #endif
 
 #ifndef SYSTEM_LIBXSLT
+// On macOS the bundled libxslt is built static (--enable-shared=no, like
+// main/libxml2) and linked into its consumers, so there is no shared
+// libxslt to package -- mirror libxml2, which has no scp2 File entry.
+#ifndef MACOSX
 File gid_File_Lib_Xslt
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef UNX
-    #ifdef MACOSX
-       Name = STRING(CONCAT4(libxslt,.,LIBXSLT_MAJOR,UNXSUFFIX));
-    #else
        Name = STRING(CONCAT4(libxslt,UNXSUFFIX,.,LIBXSLT_MAJOR));
-    #endif
   #else
    #ifdef _gcc3
     Name = "libxslt-1.dll";
@@ -1611,6 +1611,7 @@ File gid_File_Lib_Xslt
    #endif
   #endif
 End
+#endif
 #endif
 
 

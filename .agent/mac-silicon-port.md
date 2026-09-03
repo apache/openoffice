@@ -264,15 +264,54 @@ After that: rerun `./mac-silicon-build.sh`; if the DMG builds, smoke-test
 `pyuno` script). Then: code-signing / notarization for distribution (not done on this
 branch).
 
+## Milestone 3 — RESULT: the `.dmg` builds ✅ (2026-09-03)
+
+`./mac-silicon-build.sh --from scp2` → **`Successful packaging process!`**. Produced
+under `main/instsetoo_native/unxmaccr.pro/`:
+- `Apache_OpenOffice/dmg/install/<lang>/Apache_OpenOffice_5.1.0_MacOS_aarch64_install_<lang>.dmg`
+  for en-US de es fr it nl pt ru (~155–198 MB each)
+- `Apache_OpenOffice_SDK/dmg/install/en-US/Apache_OpenOffice-SDK_5.1.0_MacOS_aarch64_install_en-US.dmg`
+
+Verified (mounted en-US dmg): proper layout (`OpenOffice.app`, `Applications` symlink,
+LICENSEs, READMEs); `OpenOffice.app/Contents/MacOS/soffice` = **Mach-O arm64**;
+`python-core-3.11.15/lib/urllib/` complete.
+
+### Milestone-3 fix: macOS bundled-Python packaging (option b)
+
+`scp2` was written for a pre-2011 macOS Python **framework** (`OOoPython.framework.zip`)
+that no build has produced in years — `python/makefile.mk` + `pyuno/zipcore/makefile.mk`
+build the Unix `python-core-$(PYVERSION).zip` layout on macOS just like Linux. Switched
+the macOS `scp2` branches to that layout:
+- `scp2/source/python/file_python.scp`: `gid_File_Py_Python_Core` → `python-core-<ver>.zip`
+  for macOS too; enable `gid_File_Py_Python_Bin` on macOS; replace the whole framework
+  `Directory`/`Unixlink` block with a plain `gid_File_Lib_Python_So` (`libpython3.11.dylib`
+  into `program/`).
+- `scp2/source/python/profileitem_python.scp`: macOS `PYUNO_LOADER_PYTHONHOME` /
+  `PYTHONPATH` use `$ORIGIN/python-core-<ver>` like the other UNX.
+- `scp2/source/ooo/file_library_ooo.scp`: `gid_File_Lib_Xslt` — skip on macOS (bundled
+  libxslt is static there, like libxml2, so no shared lib to ship).
+
+### Benign warnings (verified harmless)
+- "ERROR: The following errors occurred in packaging process: ... Copy: .../urllib/error.py"
+  — `error.py` is nonetheless present in the mounted dmg; the installer double-lists that
+  first file and logs a scary line. dmake returns 0, "Successful packaging process!".
+- "Some modules contain old output trees" — leftover from earlier partial runs; cosmetic.
+
 ## Status / Next
 
-**Milestone 2 committed** on `mac-silicon-minimal`: `mac-silicon-build.sh`,
-`libxml2/makefile.mk` (`xmllint` deliver path), `scp2/.../file_library_ooo.scp` (openssl
-dylib names), configure-wrapper flags (`--without-system-{curl,libxml,libxslt}`, JDK 8),
-`mac-silicon-bootstrap.sh` (CA bundle), this doc.
+**A native arm64 Apache OpenOffice 5.1.0 `.dmg` for Apple Silicon now builds from trunk.**
+Committed on `mac-silicon-minimal`.
 
-**Next:** the macOS bundled-Python packaging item above → then a building `.dmg`.
-Other known gaps: NSS 3.39 age (compiled OK here, watch at runtime); code-signing.
+**Next (validation / polish, not yet done):**
+1. Smoke-test the app: mount en-US dmg, copy `OpenOffice.app` to /Applications, launch
+   (`open`), open Writer, run a Basic macro, run a `pyuno` script (`python-core` layout is
+   new on macOS — `PYTHONHOME`/`PYTHONPATH` + `libpython3.11.dylib` install-name
+   relocatability are the things to check).
+2. `libpython3.11.dylib` / `pyuno.so` install-name check (`--enable-shared` non-framework
+   CPython can bake an absolute `install_name`).
+3. From-scratch `./mac-silicon-build.sh` on a clean tree to confirm no ordering luck.
+4. Code-signing / notarization for distribution.
+5. NSS 3.39 age — compiled fine; watch at runtime (signatures / cert UI).
 
 **Milestone 1 (configure + bootstrap) DONE** — committed on `mac-silicon-minimal`
 (`503d3e75c9`): `main/mac-silicon-configure.sh`, `main/mac-silicon-bootstrap.sh`,
