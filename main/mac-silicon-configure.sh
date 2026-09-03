@@ -18,12 +18,17 @@ cd "$SRCDIR"
 
 # --- toolchain selection -----------------------------------------------------
 
-# JDK. Temurin 11 (arm64) is the intended production JDK, but installing the
-# Homebrew cask needs an admin password. OpenJDK 25 (arm64, already installed)
-# passes configure's checks and is fine for the configure/bootstrap milestone.
-# Override by exporting JAVA_HOME before running this script.
-: "${JAVA_HOME:=/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home}"
+# JDK. AOO's build (bundled apache-commons, saxon, lucene, hsqldb, ...) uses
+# javac source/target levels that JDK 11+ rejects ("Source option 1.5 is no
+# longer supported"), so this port builds with JDK 8 - and it must be a native
+# arm64 JDK 8 (no Rosetta). Amazon Corretto 8 ships macOS aarch64;
+# `brew install --cask corretto@8`. Override by exporting JAVA_HOME.
+: "${JAVA_HOME:=/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home}"
 export JAVA_HOME
+if [ ! -x "$JAVA_HOME/bin/javac" ]; then
+  echo "mac-silicon-configure: JAVA_HOME has no bin/javac: $JAVA_HOME" >&2
+  exit 1
+fi
 
 # Apple's system perl has every module configure requires (Archive::Zip,
 # LWP::UserAgent, LWP::Protocol::https, XML::Parser, Digest::*). Homebrew perl
@@ -45,6 +50,8 @@ autoconf
   --with-macosx-target=11.0 \
   --without-system-python \
   --without-system-curl \
+  --without-system-libxml \
+  --without-system-libxslt \
   --with-gnu-patch=/opt/homebrew/opt/gpatch/bin/gpatch \
   --without-junit \
   --without-stlport \

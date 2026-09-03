@@ -188,13 +188,92 @@ Non-blocking notes:
   before packaging.
 - Disk: user freed space — 37 GiB free at bootstrap time.
 
+## Milestone 2 — `build.pl --all` (in progress, 2026-09-03)
+
+- Installed **Temurin 11.0.32.1 (arm64)**, re-ran configure (JDK 11.0.32.1, `JDK=sun`),
+  re-ran bootstrap, started `build.pl --all -P4 --stoponerror`.
+- **~4 min in: `apache-commons/commons-logging` failed** — Temurin 11's `javac` rejects
+  the bundled `build.xml` `source="1.3"` / `target="1.5"` ("Source option 1.5 is no
+  longer supported. Use 1.6 or later."). This is the classic JDK-11+ vs old-Java-build
+  wall; `solenv/inc/antsettings.mk:90` sets `-Dant.build.javac.source/target=1.8` but
+  commons-logging's build.xml overrides it with explicit `<javac source target>`.
+- **Decision: build with JDK 8 instead** (AOO historically targets JDK 7–9). Switching
+  the JDK sidesteps this whole class of failures rather than patching each bundled
+  Java build. Need an **arm64** JDK 8 — the installed AdoptOpenJDK 8 is x86_64.
+  `main/mac-silicon-configure.sh` default JAVA_HOME → `.../temurin-8.jdk/...`.
+- Build process stopped; `logging.patch` reverted to pristine.
+
+### JDK 8 must be native arm64 (no Rosetta)
+
+User is disabling Rosetta, so the x86_64 Temurin 8 / AdoptOpenJDK 8 are out.
+`temurin@8` has **no** macOS arm64 build. **Amazon Corretto 8 does**
+(`corretto@8` cask → `amazon-corretto-8.504.01.1-macosx-aarch64.pkg`). Azul Zulu 8
+arm64 also exists as an alternative. Everything else in the toolchain is already
+native arm64 (clang, dmake, epm, gpatch, gawk; `/usr/bin/perl` is universal).
+
+### `build.pl --all` failures seen so far
+
+| Module | Failure | Fix |
+| --- | --- | --- |
+| `apache-commons/commons-logging` | javac `source 1.5` rejected | switch to JDK 8 (done) |
+| `hyphen` | `awk: calling undefined function gensub` — the bundled `hyphen-2.8.8` Makefile calls `awk`; macOS `awk` is BSD, `gensub` is gawk-only | `brew install gawk` (done); `mac-silicon-build.sh` puts `/opt/homebrew/opt/gawk/libexec/gnubin` (exposes gawk as `awk`) first on PATH |
+| `apache-commons/commons-logging` (2nd) | `servlet-api.jar ... class file has wrong version 55.0, should be 52.0` — the earlier JDK 11 run had delivered Java-11 `servlet-api.jar` / `saxon.jar` / `hsqldb.jar` into `solver/` | wiped all 21 `*/unxmaccr.pro` dirs + `main/solver`, re-bootstrapped, full clean rebuild under arm64 Corretto 8 |
+
+**Full clean rebuild started under arm64 Corretto 8** (build-all-4.log). Prior partial
+builds were a JDK-11/JDK-8/x86_64 mix — not trustworthy for a production build.
+
+| `xmlsecurity` (~149 modules in, run 4) | `clang++: error: no such file or directory: '.../MacOSX15.5.sdk/usr/lib/libxml2.a'` — `xmlsecurity/util/makefile.mk:179` links `$(LIBXML_PREFIX)/lib/libxml2.{dylib,a}`; configure had picked the SDK's `/usr/bin/xml2-config` as "system libxml", but the SDK ships only `.tbd` stubs (and its libxml2 is too old for bundled xmlsec1 per the makefile's own comments) | `--without-system-libxml --without-system-libxslt` in `mac-silicon-configure.sh` → build both bundled (also correct for a self-contained `.dmg`). On Darwin configure defaults these to system unless explicitly `no`; both must be disabled together (interlock). Re-bootstrap fetched `libxml2-2.9.10` + `libxslt-1.1.34`. Resumed → build-all-5.log. |
+
+vcl (native aqua backend), the arm64 UNO bridge (jvmfwk/bridges), svx, sfx2, framework,
+editeng all built clean before this — the arm64 C++ port is largely sound.
+
+New wrapper: **`main/mac-silicon-build.sh`** — prepends the gawk gnubin dir, sets the
+CA bundle, sources `MacOSXAARCH64Env.Set.sh`, runs `build.pl --all -P4 --stoponerror`
+(passes through any args, e.g. `--from hyphen`).
+
+## Milestone 2 — RESULT: whole codebase compiles on Apple Silicon ✅ (2026-09-03)
+
+`./mac-silicon-build.sh` (build-all-6.log): **166 modules built, zero compile errors**,
+under native arm64 Corretto 8 / clang 17 / macOS 15.5 SDK / deployment target 11.0.
+Includes VCL (native Cocoa/aqua backend), the arm64 UNO C++ bridge (`bridges`,
+`jvmfwk`), `sal`/`cppu`, `svx`, `sfx2`, `framework`, `editeng`, `sw` (Writer),
+`sc` (Calc), `sd` (Impress), `chart2`, `dbaccess`, `reportdesign`, `xmlsecurity`,
+bundled `python`/`curl`/`libxml2`/`libxslt`/`openssl`/`nss`/`hunspell`/`icu`/`coinmp`.
+
+**The `.dmg` assembly (`instsetoo_native`) is the only thing still failing**, on
+install-manifest (`scp2`) vs build-output mismatches:
+
+| Missing file (per `remove_Files_Without_Sourcedirectory`) | Cause | Status |
+| --- | --- | --- |
+| `libcrypto.dylib.3`, `libssl.dylib.3` | `scp2/inc/macros.inc:548` `SCP2_URE_DL_VER` emits Linux-style `libNAME.dylib.V`; `main/openssl` (openssl-3.0.20) delivers macOS-style `libNAME.V.dylib` | **fixed** — `MACOSX` branch in `scp2/source/ooo/file_library_ooo.scp` (`gid_File_Lib_Openssl`, `gid_File_Lib_Crypto`) → `libssl.3.dylib` / `libcrypto.3.dylib` |
+| `OOoPython.framework.zip` | `scp2/source/python/*.scp` still expects the old macOS **framework** layout (`OOoPython.framework`, `Python.app` symlinks, `PYTHONHOME` rel to framework). The Python-3 migration made `python/makefile.mk` build a **plain `--enable-shared` Unix install** on all UNX incl. macOS — no `--enable-framework`, no `.zip`. | **OPEN — next work item** |
+
+### Next work item: macOS bundled-Python packaging
+
+Pick one:
+- **(a)** `python/makefile.mk` macOS branch: `./configure --enable-framework=<path>/OOoPython.framework`
+  + produce `OOoPython.framework.zip`; keep `scp2/source/python/*.scp` as-is. (Closest to
+  what scp2 already wants; risk is `--enable-framework` on arm64 CPython 3.10 + AOO patches.)
+- **(b)** Rewrite `scp2/source/python/{file,profileitem,makefile,module}_python.scp` for the
+  Unix layout on macOS (mirror the Linux `#else` paths: `python-core-3.10.zip`,
+  `libpython3.10.dylib`, `program/python-core-3.10/lib/python3.10/...`), and fix pyuno's
+  runtime path resolution accordingly.
+
+After that: rerun `./mac-silicon-build.sh`; if the DMG builds, smoke-test
+`instsetoo_native/.../Apache_OpenOffice.app` (launch Writer, run a Basic macro, try a
+`pyuno` script). Then: code-signing / notarization for distribution (not done on this
+branch).
+
 ## Status / Next
 
-**Milestone (configure + bootstrap) DONE.** Committed on `mac-silicon-minimal`:
-`main/mac-silicon-configure.sh`, `main/mac-silicon-bootstrap.sh`, `main/.gitignore`
-(`/macos_c11`), this doc. (`unowinreg.dll` is gitignored, present locally only.)
+**Milestone 2 committed** on `mac-silicon-minimal`: `mac-silicon-build.sh`,
+`libxml2/makefile.mk` (`xmllint` deliver path), `scp2/.../file_library_ooo.scp` (openssl
+dylib names), configure-wrapper flags (`--without-system-{curl,libxml,libxslt}`, JDK 8),
+`mac-silicon-bootstrap.sh` (CA bundle), this doc.
 
-**Next (new milestone — reassess with user first):**
-`cd main && . ./MacOSXAARCH64Env.Set.sh && cd instsetoo_native && ../solenv/bin/build.pl --all`
-— expect real C++/clang-17 port work (NSS 3.39 too old for arm64; bundled curl/python/
-hunspell under clang 17; Java build under JDK 25 vs 11). ~20 GB, hours.
+**Next:** the macOS bundled-Python packaging item above → then a building `.dmg`.
+Other known gaps: NSS 3.39 age (compiled OK here, watch at runtime); code-signing.
+
+**Milestone 1 (configure + bootstrap) DONE** — committed on `mac-silicon-minimal`
+(`503d3e75c9`): `main/mac-silicon-configure.sh`, `main/mac-silicon-bootstrap.sh`,
+`main/.gitignore` (`/macos_c11`), this doc. (`unowinreg.dll` gitignored, local only.)

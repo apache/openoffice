@@ -1791,6 +1791,10 @@ File gid_File_Lib_Openssl
     Name = "libssl-3.dll";
   #elif defined(WNT) && defined(X86_64)
     Name = "libssl-3-x64.dll";
+  #elif defined(MACOSX)
+    /* macOS versions dylibs as libNAME.V.dylib, not SCP2_URE_DL_VER's
+       libNAME.dylib.V; match what main/openssl delivers. */
+    Name = "libssl.3.dylib";
   #else
     Name = SCP2_URE_DL_VER("ssl", "3");
   #endif
@@ -1806,6 +1810,9 @@ File gid_File_Lib_Crypto
     Name = "libcrypto-3.dll";
   #elif defined(WNT) && defined(X86_64)
     Name = "libcrypto-3-x64.dll";
+  #elif defined(MACOSX)
+    /* see gid_File_Lib_Openssl above */
+    Name = "libcrypto.3.dylib";
   #else
     Name = SCP2_URE_DL_VER("crypto", "3");
   #endif
