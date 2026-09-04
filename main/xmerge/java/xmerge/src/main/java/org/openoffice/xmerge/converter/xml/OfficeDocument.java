@@ -28,9 +28,8 @@ import java.io.OutputStream;
 import java.io.Reader;
 import java.io.BufferedReader;
 import java.io.StringReader;
-import java.io.StringWriter;
-import java.io.InputStreamReader;
 import java.io.ByteArrayOutputStream;
+import java.io.InputStreamReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.Iterator;
@@ -840,9 +839,6 @@ public abstract class OfficeDocument
      *  <p>Write out a <code>org.w3c.dom.Document</code> object into a
      *  <code>byte</code> array.</p>
      *
-     *  <p>TODO: remove dependency on com.sun.xml.tree.XmlDocument
-     *  package!</p>
-     *
      *  @param  doc  DOM <code>Document</code> object.
      *
      *  @return  <code>byte</code> array of DOM <code>Document</code>
@@ -852,118 +848,18 @@ public abstract class OfficeDocument
      */
     static byte[] docToBytes(Document doc)
         throws IOException {
-
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
-        java.lang.reflect.Constructor con;
-        java.lang.reflect.Method meth;
-
-        String domImpl = doc.getClass().getName();
-
-        /*
-         * We may have multiple XML parsers in the Classpath.
-         * Depending on which one is first, the actual type of
-         * doc may vary.  Need a way to find out which API is being
-         * used and use an appropriate serialization method.
-         */
-
         try {
-            // First of all try for JAXP 1.0
-            if (domImpl.equals("com.sun.xml.tree.XmlDocument")) {
-
-                Debug.log(Debug.INFO, "Using JAXP");
-
-                Class jaxpDoc = Class.forName("com.sun.xml.tree.XmlDocument");
-
-                // The method is in the XMLDocument class itself, not a helper
-                meth = jaxpDoc.getMethod("write",
-                            new Class[] { Class.forName("java.io.OutputStream") } );
-
-                meth.invoke(doc, new Object [] { baos } );
-            }
-	     else if (domImpl.equals("org.apache.crimson.tree.XmlDocument"))
-	    {
-                Debug.log(Debug.INFO, "Using Crimson");
-
-		 Class crimsonDoc = Class.forName("org.apache.crimson.tree.XmlDocument");
-		 // The method is in the XMLDocument class itself, not a helper
-                meth = crimsonDoc.getMethod("write",
-                            new Class[] { Class.forName("java.io.OutputStream") } );
-
-                meth.invoke(doc, new Object [] { baos } );
-	    }
-            else if (domImpl.equals("org.apache.xerces.dom.DocumentImpl")
-            || domImpl.equals("org.apache.xerces.dom.DeferredDocumentImpl")) {
-
-                Debug.log(Debug.INFO, "Using Xerces");
-
-                // Try for Xerces
-                Class xercesSer =
-                        Class.forName("org.apache.xml.serialize.XMLSerializer");
-
-                // Get the OutputStream constructor
-                // May want to use the OutputFormat parameter at some stage too
-                con = xercesSer.getConstructor(new Class []
-                        { Class.forName("java.io.OutputStream"),
-                          Class.forName("org.apache.xml.serialize.OutputFormat") } );
-
-
-                // Get the serialize method
-                meth = xercesSer.getMethod("serialize",
-                            new Class [] { Class.forName("org.w3c.dom.Document") } );
-
-
-                // Get an instance
-                Object serializer = con.newInstance(new Object [] { baos, null } );
-
-
-                // Now call serialize to write the document
-                meth.invoke(serializer, new Object [] { doc } );
-            }
-            else if (domImpl.equals("gnu.xml.dom.DomDocument")) {
-                Debug.log(Debug.INFO, "Using GNU");
-
-                Class gnuSer = Class.forName("gnu.xml.dom.ls.DomLSSerializer");
-
-                // Get the serialize method
-                meth = gnuSer.getMethod("serialize",
-                            new Class [] { Class.forName("org.w3c.dom.Node"),
-                            Class.forName("java.io.OutputStream") } );
-
-                // Get an instance
-                Object serializer = gnuSer.newInstance();
-
-                // Now call serialize to write the document
-                meth.invoke(serializer, new Object [] { doc, baos } );
-            }
-            else {
-		try {
-			DOMSource domSource = new DOMSource(doc);
-			StringWriter writer = new StringWriter();
-			StreamResult result = new StreamResult(writer);
-			TransformerFactory tf = TransformerFactory.newInstance();
-			Transformer transformer = tf.newTransformer();
-			transformer.transform(domSource, result);
-			return writer.toString().getBytes();
-		    }
-                catch (Exception e) {
-                    // We don't have another parser
-                    throw new IOException("No appropriate API (JAXP/Xerces) to serialize XML document: " + domImpl);
-                }
-            }
-        }
-        catch (ClassNotFoundException cnfe) {
-            throw new IOException(cnfe.toString());
+            DOMSource domSource = new DOMSource(doc);
+            ByteArrayOutputStream output = new ByteArrayOutputStream();
+            StreamResult result = new StreamResult(output);
+            TransformerFactory tf = TransformerFactory.newInstance();
+            Transformer transformer = tf.newTransformer();
+            transformer.transform(domSource, result);
+            return output.toByteArray();
         }
         catch (Exception e) {
-            // We may get some other errors, but the bottom line is that
-            // the steps being executed no longer work
-            throw new IOException(e.toString());
+            throw new IOException("Unable to serialize XML document: " + e);
         }
-
-        byte bytes[] = baos.toByteArray();
-
-        return bytes;
     }
 
 
