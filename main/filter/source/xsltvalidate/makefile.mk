@@ -32,19 +32,7 @@ XCLASSPATH+=":$(XML_CLASSPATH)"
 CLASSDIR!:=$(CLASSDIR)$/$(TARGET)
 #USE_UDK_EXTENDED_MANIFESTFILE=TRUE
 #USE_EXTENDED_MANIFESTFILE=TRUE
-JARFILES 		= ridl.jar unoil.jar jurt.jar juh.jar crimson.jar
-
-.IF "$(SYSTEM_XALAN)" == "YES"
-EXTRAJARFILES += $(XALAN_JAR)
-.ELSE
-JARFILES += xalan.jar
-.ENDIF
-
-.IF "$(SYSTEM_XML_APIS)" == "YES"
-EXTRAJARFILES += $(XML_APIS_JAR)
-.ELSE
-JARFILES += xml-apis.jar
-.ENDIF
+JARFILES 		= ridl.jar unoil.jar jurt.jar juh.jar
 
 JAVAFILES		= $(subst,$(CLASSDIR)$/, $(subst,.class,.java $(JAVACLASSFILES)))
 CUSTOMMANIFESTFILE = Manifest
