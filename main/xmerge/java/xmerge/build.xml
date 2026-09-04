@@ -28,12 +28,9 @@
     <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
 
     <target name="init-project">
-        <property name="jar.classpath" value="xml-apis.jar xercesImpl.jar serializer.jar"/>
         <property name="jar.manifest" value="manifest.mf"/>
 
         <path id="main.classpath">
-<!--            <pathelement location="${OUTDIR}/bin/xml-apis.jar"/> -->
-<!--            <pathelement location="${OUTDIR}/bin/xercesImpl.jar"/> -->
             <pathelement location="${OUTDIR}/bin/unoil.jar"/>
             <pathelement location="${OUTDIR}/bin/ridl.jar"/>
             <pathelement location="${OUTDIR}/bin/juh.jar"/>

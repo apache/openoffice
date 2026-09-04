@@ -31,8 +31,6 @@
     <property name="javadoc.dir" location="${WORKDIR}/Ant/xmerge-javadoc"/>
 
     <path id="main.classpath">
-<!--        <pathelement location="${OUTDIR}/bin/xml-apis.jar"/> -->
-<!--        <pathelement location="${OUTDIR}/bin/xercesImpl.jar"/> -->
         <pathelement location="${OUTDIR}/bin/unoil.jar"/>
         <pathelement location="${OUTDIR}/bin/ridl.jar"/>
         <pathelement location="${OUTDIR}/bin/jurt.jar"/>
