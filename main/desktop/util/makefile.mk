@@ -101,6 +101,12 @@ APP1STACK=10000000
 APP5TARGET=soffice
 APP5NOSAL=TRUE
 APP5RPATH=BRAND
+.IF "$(OS)" == "MACOSX"
+# soffice is the bundle launcher and lives alone in Contents/MacOS (only
+# Mach-O binaries may, or the bundle cannot be code-signed); the libraries it
+# links against are installed in Contents/program.
+APP5RPATH=BRANDBIN
+.ENDIF # MACOSX
 APP5OBJS=$(OBJ)$/copyright_ascii_ooo.obj $(OBJ)$/main.obj
 APP5STDLIBS = $(SALLIB) $(SOFFICELIB)
 .IF "$(OS)" == "LINUX"

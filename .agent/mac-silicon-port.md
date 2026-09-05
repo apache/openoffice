@@ -297,20 +297,91 @@ the macOS `scp2` branches to that layout:
   first file and logs a scary line. dmake returns 0, "Successful packaging process!".
 - "Some modules contain old output trees" — leftover from earlier partial runs; cosmetic.
 
+## Milestone 4 — a signable bundle layout ✅ (2026-09-05)
+
+The `.dmg` now ships an application that passes `codesign --verify --deep --strict`.
+The fix is in the build and the installer, not in a post-processing pass.
+
+    ./mac-silicon-sign.sh /Applications/OpenOffice.app                  # ad-hoc
+    ./mac-silicon-sign.sh -i "Developer ID Application: NAME (TEAMID)" OpenOffice.app
+    ./mac-silicon-sign.sh --verify OpenOffice.app
+    MACOSX_CODESIGNING_IDENTITY=- ./mac-silicon-build.sh                # signed .dmg
+
+### What was wrong
+
+The linker ad-hoc-signs every Mach-O on arm64 (`flags=0x20002 adhoc,linker-signed`), which
+is why all 367 dylibs load. But no *bundle* was ever sealed: `Sealed Resources=none`, no
+`_CodeSignature/`, identifier `soffice.21391-1788411067` (linker-invented). Upstream never
+fixed it — **official AOO 4.1.15 is "code object is not signed at all"** with this same
+layout.
+
+`codesign` refuses to seal a bundle that has anything but Mach-O in `Contents/MacOS`
+(verified: one stray data file is enough), and `gid_Brand_Dir_Program` put AOO's entire
+payload there — 993 non-Mach-O files plus loose `NOTICE`/`README` in `Contents`.
+
+### The layout change
+
+`Contents/MacOS` now holds only the `soffice` launcher; the installation sits in
+`Contents/program`, the same directory name every other UNX platform uses. Nothing moves
+relative to anything else.
+
+| Change | Why |
+| --- | --- |
+| `scp2/source/ooo/common_brand.scp`: `gid_Brand_Dir_Program` → `Contents/program`; `gid_Brand_File_Bin_Soffice` → new `gid_Dir_Bundle_Contents_MacOS`; dropped `gid_Brand_Unixlink_Program` (`program -> MacOS`) and `gid_Brand_Unixlink_Urelibs` (dangling in *every* AOO build incl. 4.1.15 — a pre-3.4 basis/ure leftover that `--deep --strict` rejects); added `gid_Brand_Unixlink_Soffice` (`program/soffice -> ../MacOS/soffice`) | the payload leaves `MacOS`; the launcher stays as `CFBundleExecutable` (codesign rejects a symlinked main executable — verified); the compat link keeps `findsofficepath()` and the SDK working |
+| `sal/rtl/source/bootstrap.cxx` (`#ifdef MACOSX`) | `getIniFileName_Impl` maps `…/Contents/MacOS/<exe>rc` to `…/Contents/program/`. `$ORIGIN` comes from the *ini file's* path (`bootstrap.cxx:496`), so this one hop anchors the whole chain — `URE_LIB_DIR`, `OOO_BASE_DIR`, services.rdb, unorc. Falls back to the old path if the file is not there (plain bundles, the mdimporter) |
+| `desktop/util/makefile.mk` + `macosx-change-install-names.pl` + `unxmac{c,x}.mk` | new mac-only `BRANDBIN` rpath location = `@executable_path/../program`, used for `soffice` only. `OXT`/`BOXT` libraries switched from `@executable_path` to `@executable_path/../program` — correct from both the launcher and the helper binaries in `program` |
+| `icu/icu4c-4_2_1-src.patch` (+ `icu-darwin.patch`) | ICU baked `-install_name @executable_path/…`; now `@loader_path/`, since ICU libs are loaded by their neighbours, not by the launcher |
+| `installer/scriptitems.pm` (`ismacosx` guard) | the generic "copy README/LICENSE to the installation root" step targets OFFICEDIRECTORY = `Contents` on macOS. Suppressed there; the copies users actually see are the ones in the `.dmg` root |
+| `scp2/source/ooo/ooo_brand.scp` | `NOTICE` went to `Contents` on macOS only; now next to `LICENSE` in `program` on every platform |
+| `installer/simplepackage.pm` | `hdiutil makehybrid -hfs` stamps an empty `com.apple.FinderInfo` on **every** file in the image, which makes `--strict` reject the app inside the `.dmg` (and would fail notarization). Replaced with `hdiutil create -srcfolder`. The `-hfs-openfolder` auto-open it also did is dead anyway: `bless --openfolder` is unsupported on Apple Silicon. Also signs each `.app` before imaging when `MACOSX_CODESIGNING_IDENTITY` is set |
+
+Everything is macOS-scoped: `#ifdef MACOSX` / `.IF "$(OS)" == "MACOSX"` / `ismacosx`,
+mac-only files (`unxmac*.mk`, `macosx-change-install-names.pl`), or Darwin-only patch hunks
+(`config/mh-darwin`). The one cross-platform line, `gid_Brand_Dir_Program`'s `DosName`, was
+already `"program"` everywhere but macOS.
+
+### Verified
+
+- App inside the built `.dmg`: `codesign --verify --deep --strict` → **valid on disk,
+  satisfies its Designated Requirement**. Same after copying it out of the image.
+- Boots to the first-start wizard (sampled `FirstStart::execute`), signed and unsigned.
+- `Contents/program/python -c "import uno"` → `pyuno ok 3.11.15`; `unopkg list` lists the
+  bundled dictionary extensions (exercises the OXT install-name path).
+- `Contents/MacOS` contains exactly one file; no dangling symlinks anywhere in the bundle.
+
+### Bisected along the way
+
+`Contents/presets` must stay a real directory in `Contents` — relocating it kills startup
+in `Desktop::HandleBootstrapErrors → FatalError`. Directories in `Contents` seal fine as
+resources, so only the loose files ever needed to move.
+
+### Still open for distribution
+
+- No signing identity on this machine (`security find-identity -p codesigning` → 0). A
+  **Developer ID Application** certificate (Apple Developer Program, 99 USD/yr) is needed
+  to get past Gatekeeper elsewhere; ad-hoc signatures are always `spctl: rejected`.
+- With a real identity the script adds hardened runtime + `--timestamp` and applies
+  `mac-silicon-entitlements.plist` (JIT and unsigned-exec-memory for the JVM,
+  disable-library-validation for the external JDK / extensions / Python modules,
+  dyld-env-vars, apple-events). Untested — no certificate to test with.
+- Then `xcrun notarytool submit --wait` the `.dmg`, `xcrun stapler staple`, and sign the
+  `.dmg` itself (`mac-silicon-sign.sh -i <ID> foo.dmg`).
+- Installing a *shared* extension writes into `share/uno_packages` inside the bundle and
+  breaks the seal. That is inherent to signing an app that modifies itself, not to this
+  layout change.
+
 ## Status / Next
 
-**A native arm64 Apache OpenOffice 5.1.0 `.dmg` for Apple Silicon now builds from trunk.**
-Committed on `mac-silicon-minimal`.
+**A native arm64 Apache OpenOffice 5.1.0 `.dmg` for Apple Silicon builds from trunk, and
+the application it installs is code-signable and verifies strictly.**
 
-**Next (validation / polish, not yet done):**
-1. Smoke-test the app: mount en-US dmg, copy `OpenOffice.app` to /Applications, launch
-   (`open`), open Writer, run a Basic macro, run a `pyuno` script (`python-core` layout is
-   new on macOS — `PYTHONHOME`/`PYTHONPATH` + `libpython3.11.dylib` install-name
-   relocatability are the things to check).
-2. `libpython3.11.dylib` / `pyuno.so` install-name check (`--enable-shared` non-framework
-   CPython can bake an absolute `install_name`).
-3. From-scratch `./mac-silicon-build.sh` on a clean tree to confirm no ordering luck.
-4. Code-signing / notarization for distribution.
+**Next (not done):**
+1. Full 8-language + SDK repackage (only `openoffice_en-US` has been rebuilt since the
+   layout change; `dmake openoffice_en-US` in `instsetoo_native/util` is the fast loop).
+2. Developer ID + notarization (needs the certificate above).
+3. Fuller smoke test: Writer/Calc round-trip, a Basic macro, a pyuno script against a
+   running soffice.
+4. From-scratch `./mac-silicon-build.sh` on a clean tree to confirm no ordering luck.
 5. NSS 3.39 age — compiled fine; watch at runtime (signatures / cert UI).
 
 **Milestone 1 (configure + bootstrap) DONE** — committed on `mac-silicon-minimal`

@@ -84,7 +84,7 @@ Module gid_Module_Root_Brand
              gid_Brand_File_Share_Xdg_StartCenter,
              gid_Brand_File_Share_Xdg_Writer,
              gid_Brand_File_Txt_Package);
-    Unixlinks = (gid_Brand_Unixlink_Program,
+    Unixlinks = (gid_Brand_Unixlink_Soffice,
                  gid_Brand_Unixlink_Unopkg);
 //    Unixlinks = (gid_Brand_Unixlink_BasisLink,
 //                 gid_Brand_Unixlink_Program,
@@ -122,11 +122,10 @@ End
 Directory gid_Brand_Dir_Program
 #if defined MACOSX
     ParentID = gid_Dir_Bundle_Contents;
-    DosName = "MacOS";
 #else
     ParentID = gid_Dir_Brand_Root;
-    DosName = "program";
 #endif
+    DosName = "program";
 End
 
 Directory gid_Brand_Dir_Resource
@@ -269,29 +268,21 @@ End
 
 // UnixLinks
 
-#if defined MACOSX
-Unixlink gid_Brand_Unixlink_Urelibs
-    Dir = gid_Brand_Dir_Program;
-    Name = "urelibs";
-    Target = "../basis-link/ure-link/lib";
-End
-#endif
-
-#if defined MACOSX
-Unixlink gid_Brand_Unixlink_Program
-    BIN_FILE_BODY;
-    Dir = gid_Dir_Bundle_Contents;
-    Name = "program";
-    Target = "MacOS";
-    Styles = ();
-End
-#endif
+// gid_Brand_Unixlink_Urelibs (urelibs -> ../basis-link/ure-link/lib) and
+// gid_Brand_Unixlink_Program (Contents/program -> MacOS) are gone: the first
+// has pointed at nothing since the basis/ure split was dropped, and
+// Contents/program is now the real installation directory.
 
 // Files
 
 File gid_Brand_File_Bin_Soffice
     BIN_FILE_BODY;
+#if defined MACOSX
+    // the bundle's CFBundleExecutable, and the only thing in Contents/MacOS
+    Dir = gid_Dir_Bundle_Contents_MacOS;
+#else
     Dir = gid_Brand_Dir_Program;
+#endif
     Name = EXENAME(soffice);
   #ifdef WNT
     Styles = (PACKED, PATCH_SO_NAME);
@@ -407,6 +398,19 @@ Unixlink gid_Brand_Unixlink_Unopkg
     Dir = gid_Brand_Dir_Program;
     Name = "unopkg";
     Target = "unopkg.bin";
+    Styles = ();
+End
+#endif
+
+// The launcher itself has to sit in Contents/MacOS, but everything that looks
+// for the office binary next to the installation -- cppuhelper's
+// findsofficepath(), scripts, the SDK -- expects it in the program directory.
+#if defined MACOSX
+Unixlink gid_Brand_Unixlink_Soffice
+    BIN_FILE_BODY;
+    Dir = gid_Brand_Dir_Program;
+    Name = "soffice";
+    Target = "../MacOS/soffice";
     Styles = ();
 End
 #endif

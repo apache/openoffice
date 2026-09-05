@@ -37,6 +37,16 @@ Directory gid_Dir_Bundle_Contents_Resources_Lang
 End
 #endif
 
+// Only Mach-O binaries may live here: code signing refuses to seal a bundle
+// with anything else in Contents/MacOS. The installation itself goes to
+// Contents/program, so this holds just the soffice launcher.
+#ifdef MACOSX
+Directory gid_Dir_Bundle_Contents_MacOS
+    ParentID = gid_Dir_Bundle_Contents;
+    HostName = "MacOS";
+End
+#endif
+
 #ifdef MACOSX
 Directory gid_Dir_Bundle_Contents_Library
     ParentID = gid_Dir_Bundle_Contents;

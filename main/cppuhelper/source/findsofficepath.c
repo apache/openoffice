@@ -135,8 +135,11 @@ static char* platformSpecific()
     /* On MacOS we have no soffice link under /usr/bin but the default office location is known
        and we check this only
      */
-    const char* MACDEFAULTOFFICEPATH = "/Applications/OpenOffice.app/Contents/MacOS";
-    const char* MACDEFAULTSOFFICE = "/Applications/OpenOffice.app/Contents/MacOS/soffice";
+    /* The installation lives in Contents/program (Contents/MacOS holds only the
+       launcher, so that the bundle can be code-signed); soffice is reachable
+       there through a symlink. */
+    const char* MACDEFAULTOFFICEPATH = "/Applications/OpenOffice.app/Contents/program";
+    const char* MACDEFAULTSOFFICE = "/Applications/OpenOffice.app/Contents/program/soffice";
 
     if ( !access( MACDEFAULTSOFFICE, F_OK ) )
     {
