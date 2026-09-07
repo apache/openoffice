@@ -1558,7 +1558,7 @@ void ScInterpreter::ScExpDist()
         else                                        // Verteilung
         {
             if (x > 0.0)
-                PushDouble(1.0 - exp(-lambda*x));
+                PushDouble(-expm1(-lambda*x));
             else
                 PushInt(0);
         }
@@ -1638,7 +1638,7 @@ void ScInterpreter::ScWeibull()
             PushDouble(alpha/pow(beta,alpha)*pow(x,alpha-1.0)*
                        exp(-pow(x/beta,alpha)));
         else                                        // Verteilung
-            PushDouble(1.0 - exp(-pow(x/beta,alpha)));
+            PushDouble(-expm1(-pow(x/beta,alpha)));
     }
 }
 
