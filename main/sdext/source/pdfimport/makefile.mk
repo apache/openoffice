@@ -61,6 +61,9 @@ SHL1LIBS=\
 	$(SLB)$/pdfsax.lib \
 	$(SLB)$/pdfparsetree.lib \
 	$(SLB)$/pdfodf.lib \
+# NB: xpdfwrapper.lib is wrapper/, which is ours -- wrapper/makefile.mk
+# still calls its TARGET that.  The poppler helper was xpdfwrapper/, a
+# different directory, and is gone.
 	$(SLB)$/xpdfwrapper.lib \
 	$(SLB)$/$(TARGET).lib
 
@@ -101,8 +104,15 @@ COMPONENT_XCU= \
     $(EXTENSIONDIR)$/pdf_import_filter.xcu \
     $(EXTENSIONDIR)$/pdf_types.xcu
 
+# The backend, and the jars it needs, packed into the extension.
+# pdfbackend.cxx probes the extension directory for pdfimport-pdfbox.jar, so
+# this is the lookup path rather than a convention.
 CONVERTER_FILE= \
-    $(EXTENSIONDIR)$/xpdfimport$(EXECPOST)
+    $(EXTENSIONDIR)$/pdfimport-pdfbox.jar \
+    $(EXTENSIONDIR)$/pdfbox-3.0.8.jar \
+    $(EXTENSIONDIR)$/pdfbox-io-3.0.8.jar \
+    $(EXTENSIONDIR)$/fontbox-3.0.8.jar \
+    $(EXTENSIONDIR)$/commons-logging-1.4.0.jar
 
 COMPONENT_DIALOGS= \
     $(EXTENSIONDIR)$/basic$/Module1.xba \

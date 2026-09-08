@@ -37,7 +37,8 @@ CDEFS+= -DPDFI_IMPL_IDENTIFIER=$(IMPLEMENTATION_IDENTIFIER)
 # --- Files --------------------------------------------------------
 
 SLOFILES=\
-	$(SLO)$/wrapper.obj
+	$(SLO)$/wrapper.obj \
+	$(SLO)$/pdfbackend.obj
 
 # --- Targets ------------------------------------------------------
 

@@ -256,6 +256,37 @@ if ( true )
     URL1 = https://sourceforge.net/projects/sampleicc/files/sampleicc/SampleIcc-1.6.11/SampleICC-1.6.11.zip/download
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
+# Apache PDFBox -- the PDF Import extension's parsing backend, run as a helper
+# process (sdext/source/pdfimport/PROTOCOL.md).  Apache-2.0, which is the point:
+# it replaces poppler, whose GPLv2 licence kept PDF import out of every release
+# build.  These four are the complete non-optional runtime closure; BouncyCastle
+# is deliberately absent, being optional to PDFBox and reached only by
+# public-key encrypted PDFs.  Java 8 bytecode.
+
+if (ENABLE_PDFIMPORT==YES)
+    MD5 = 92ed0441337f2ed1f43eeaa901bd7814
+    name = pdfbox-3.0.8.jar
+    URL1 = https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox/3.0.8/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_PDFIMPORT==YES)
+    MD5 = f45a2386cf4178b5955dda2807139745
+    name = pdfbox-io-3.0.8.jar
+    URL1 = https://repo1.maven.org/maven2/org/apache/pdfbox/pdfbox-io/3.0.8/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_PDFIMPORT==YES)
+    MD5 = 379e6faf6ea614ad3318eda879e4f423
+    name = fontbox-3.0.8.jar
+    URL1 = https://repo1.maven.org/maven2/org/apache/pdfbox/fontbox/3.0.8/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (ENABLE_PDFIMPORT==YES)
+    MD5 = 954e27d33e55e587a4694d5952a0c5c6
+    name = commons-logging-1.4.0.jar
+    URL1 = https://repo1.maven.org/maven2/commons-logging/commons-logging/1.4.0/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
 if (RAT_JAR_HOME==BUILD)
     MD5 = 0f926196d42577addec7e1aa5b510605
     name = apache-rat-0.10-bin.tar.bz2
