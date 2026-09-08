@@ -49,7 +49,7 @@ CONVERTFILES=build$/build.xml \
 			src$/org$/hsqldb$/persist$/HsqlDatabaseProperties.java \
 			src$/org$/hsqldb$/Library.java
 
-PATCH_FILES=patches$/i121754.patch patches$/script.patch patches$/runfinalizers.patch
+PATCH_FILES=patches$/i121754.patch patches$/script.patch patches$/runfinalizers.patch patches$/text_tables.patch
 
 # hsqldb's build.xml javac tasks specify no source/target; pin them so bytecode
 # stays Java 8 compatible regardless of the (possibly much newer) build JDK.
