@@ -25,6 +25,7 @@
 #include "precompiled_sdext.hxx"
 
 #include "contentsink.hxx"
+#include "pdfbackend.hxx"
 #include "pdfparse.hxx"
 #include "pdfihelper.hxx"
 
@@ -41,7 +42,6 @@
 #include "com/sun/star/io/XInputStream.hpp"
 #include "com/sun/star/uno/XComponentContext.hpp"
 #include "com/sun/star/awt/FontDescriptor.hpp"
-#include "com/sun/star/deployment/XPackageInformationProvider.hpp"
 #include "com/sun/star/beans/XMaterialHolder.hpp"
 #include "com/sun/star/rendering/PathCapType.hpp"
 #include "com/sun/star/rendering/PathJoinType.hpp"
@@ -60,20 +60,17 @@
 #include "basegfx/tools/unopolypolygon.hxx"
 
 #include <boost/bind.hpp>
-#include <boost/preprocessor/stringize.hpp>
 #include <boost/scoped_ptr.hpp>
 #include <boost/scoped_array.hpp>
 
 #include <unordered_map>
+#include <vector>
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
 
 #include "rtl/bootstrap.h"
-
-#ifndef PDFI_IMPL_IDENTIFIER
-# error define implementation name for pdfi extension, please!
-#endif
 
 using namespace com::sun::star;
 
@@ -144,7 +141,7 @@ class Parser
 
     const uno::Reference<uno::XComponentContext> m_xContext;
     const ContentSinkSharedPtr                   m_pSink;
-    const oslFileHandle                          m_pErr;
+    const oslFileHandle                          m_pBinary;
     ::rtl::OString                               m_aLine;
     FontMapType                                  m_aFontMap;
     sal_Int32                                    m_nNextToken;
@@ -184,12 +181,18 @@ class Parser
 
 
 public:
+    /** @param pBinary
+            handle the binary payloads (embedded fonts, bitmaps) arrive on.
+            Which handle that is depends on the backend's framing -- stderr for
+            v1, the same stdout the commands come from for v2 -- and is the only
+            thing that differs between them.  See PROTOCOL.md.
+     */
     Parser( const ContentSinkSharedPtr&                   rSink,
-            oslFileHandle                                 pErr,
+            oslFileHandle                                 pBinary,
             const uno::Reference<uno::XComponentContext>& xContext ) :
         m_xContext(xContext),
         m_pSink(rSink),
-        m_pErr(pErr),
+        m_pBinary(pBinary),
         m_aLine(),
         m_aFontMap(101),
         m_nNextToken(-1),
@@ -293,7 +296,7 @@ void Parser::readBinaryData( uno::Sequence<sal_Int8>& rBuf )
     sal_uInt64          nBytesRead(0);
     oslFileError        nRes=osl_File_E_None;
     while( nFileLen &&
-           osl_File_E_None == (nRes=osl_readFile( m_pErr, pBuf, nFileLen, &nBytesRead )) )
+           osl_File_E_None == (nRes=osl_readFile( m_pBinary, pBuf, nFileLen, &nBytesRead )) )
     {
         pBuf += nBytesRead;
         nFileLen -= sal::static_int_cast<sal_Int32>(nBytesRead);
@@ -778,7 +781,7 @@ void Parser::readSoftMaskedImage()
 void Parser::parseLine( const ::rtl::OString& rLine )
 {
     OSL_PRECOND( m_pSink,         "Invalid sink" );
-    OSL_PRECOND( m_pErr,          "Invalid filehandle" );
+    OSL_PRECOND( m_pBinary,       "Invalid filehandle" );
     OSL_PRECOND( m_xContext.is(), "Invalid service factory" );
 
     m_nNextToken = 0; m_nCharIndex = 0; m_aLine = rLine;
@@ -992,29 +995,36 @@ bool xpdf_ImportFromFile( const ::rtl::OUString&                             rUR
     rtl::OUString aPwd( rPwd );
     bool bIsEncrypted = false;
     if( checkEncryption( aSysUPath, xIHdl, aPwd, bIsEncrypted, aDocName ) == false )
-        return false;
-
-    rtl::OUStringBuffer converterURL = rtl::OUString::createFromAscii("xpdfimport");
-
-    // retrieve package location url (xpdfimport executable is located there)
-    // ---------------------------------------------------
-    uno::Reference<deployment::XPackageInformationProvider> xProvider(
-        xContext->getValueByName(
-            rtl::OUString::createFromAscii("/singletons/com.sun.star.deployment.PackageInformationProvider" )),
-        uno::UNO_QUERY);
-    if( xProvider.is() )
     {
-        converterURL.insert(
-            0,
-            rtl::OUString::createFromAscii("/"));
-        converterURL.insert(
-            0,
-            xProvider->getPackageLocation(
-                rtl::OUString::createFromAscii(
-                    BOOST_PP_STRINGIZE(PDFI_IMPL_IDENTIFIER))));
+        // Either the built-in parser could not read the file at all, or an
+        // encrypted document was not unlocked.  Distinguishing the two matters:
+        // the first is a bug, the second is the user cancelling.
+        fprintf( stderr, "pdfi: %s\n",
+                 bIsEncrypted ? "encrypted PDF was not unlocked"
+                              : "could not parse PDF structure (pdfparse)" );
+        return false;
     }
 
-    // spawn separate process to keep LGPL/GPL code apart.
+    const PdfBackend aBackend( selectPdfBackend( xContext ) );
+    if( !aBackend.isAvailable() )
+    {
+        // Say so out loud.  The only signal a caller gets from here is a false
+        // return, which odfConvert turns into an output file holding nothing
+        // but an XML declaration -- a symptom that says nothing about its
+        // cause.  stderr is free in v2 framing; use it.
+        fprintf( stderr,
+                 "pdfi: no PDF import backend found.\n"
+                 "      Looked for pdfimport-pdfbox.jar (also under classes/),\n"
+                 "      pdfiumimport and xpdfimport.  Set PDFI_HELPER_DIR to\n"
+                 "      the directory holding one of them.\n" );
+        return false;
+    }
+
+    // Spawn a separate process.  This began as a licence firewall -- the only
+    // backend linked poppler, which may not be linked into an Apache-licensed
+    // soffice.bin -- but it is kept for every backend, licence or not: a PDF is
+    // untrusted input, and a fault in the parser should cost one document
+    // rather than the user's session.
     // ---------------------------------------------------
     rtl_uString** ppEnv = NULL;
     sal_uInt32 nEnv = 0;
@@ -1032,17 +1042,23 @@ bool xpdf_ImportFromFile( const ::rtl::OUString&                             rUR
     nEnv = 1;
     #endif
 
-    rtl_uString*  args[] = { aSysUPath.pData };
-    sal_Int32 nArgs = 1;
+    // <backend prefix args...> <pdf path>; the path is always last
+    std::vector< rtl::OUString > aArgStrings( aBackend.aPrefixArgs );
+    aArgStrings.push_back( aSysUPath );
+
+    std::vector< rtl_uString* > aArgs;
+    aArgs.reserve( aArgStrings.size() );
+    for( size_t nArg = 0; nArg < aArgStrings.size(); ++nArg )
+        aArgs.push_back( aArgStrings[nArg].pData );
 
     oslProcess    aProcess;
     oslFileHandle pIn  = NULL;
     oslFileHandle pOut = NULL;
     oslFileHandle pErr = NULL;
     const oslProcessError eErr =
-        osl_executeProcess_WithRedirectedIO(converterURL.makeStringAndClear().pData,
-                                            args,
-                                            nArgs,
+        osl_executeProcess_WithRedirectedIO(aBackend.aProgram.pData,
+                                            &aArgs[0],
+                                            sal_Int32(aArgs.size()),
                                             osl_Process_SEARCHPATH|osl_Process_HIDDEN,
                                             osl_getCurrentSecurity(),
                                             0, ppEnv, nEnv,
@@ -1052,7 +1068,13 @@ bool xpdf_ImportFromFile( const ::rtl::OUString&                             rUR
     try
     {
         if( eErr!=osl_Process_E_None )
+        {
+            const rtl::OString aProgram(
+                rtl::OUStringToOString( aBackend.aProgram, RTL_TEXTENCODING_UTF8 ) );
+            fprintf( stderr, "pdfi: could not start backend '%s' (osl error %d)\n",
+                     aProgram.getStr(), (int)eErr );
             return false;
+        }
 
         if( pIn )
         {
@@ -1065,21 +1087,46 @@ bool xpdf_ImportFromFile( const ::rtl::OUString&                             rUR
             osl_writeFile( pIn, aBuf.getStr(), sal_uInt64(aBuf.getLength()), &nWritten );
         }
 
-        if( pOut && pErr )
+        // v1 backends put binary payloads on stderr and must alternate between
+        // the two pipes in lockstep; v2 backends inline them on stdout, which
+        // needs no such discipline and leaves stderr free for diagnostics.
+        // Only the handle differs -- the grammar is identical.
+        const oslFileHandle pBinary =
+            ( aBackend.eBinaryChannel == BINARY_ON_STDERR ) ? pErr : pOut;
+
+        if( pOut && pBinary )
         {
-            // read results of PDF parser. One line - one call to
-            // OutputDev. stderr is used for alternate streams, like
-            // embedded fonts and bitmaps
-            Parser aParser(rSink,pErr,xContext);
+            // read results of the PDF parser: one line, one ContentSink call
+            Parser aParser(rSink,pBinary,xContext);
             ::rtl::OStringBuffer line;
             while( osl_File_E_None == readLine(pOut, line) && line.getLength() )
                 aParser.parseLine(line.makeStringAndClear());
         }
     }
-    catch( uno::Exception& )
+    catch( const uno::Exception& rExc )
     {
         // crappy C file interface. need manual resource dealloc
+        const rtl::OString aMsg(
+            rtl::OUStringToOString( rExc.Message, RTL_TEXTENCODING_UTF8 ) );
+        fprintf( stderr, "pdfi: import aborted: %s\n", aMsg.getStr() );
         bRet = false;
+    }
+
+    // Forward whatever the helper said on its stderr.  osl always redirects it
+    // into a pipe, so without this the backend's own diagnostics -- the one
+    // place a failing helper explains itself -- are swallowed entirely.  Read
+    // it only after stdout has ended, by which point the helper is done
+    // writing and this cannot deadlock against it.
+    if( pErr )
+    {
+        sal_Char  aBuf[1024];
+        sal_uInt64 nRead = 0;
+        while( osl_readFile( pErr, aBuf, sizeof(aBuf)-1, &nRead ) == osl_File_E_None
+               && nRead > 0 )
+        {
+            aBuf[nRead] = 0;
+            fprintf( stderr, "%s", aBuf );
+        }
     }
 
     if( pIn )
