@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+
+<!-- The PDF Import extension's parsing backend.
+
+     This is a plain program, not a UNO component: it is spawned as its own
+     process and speaks the protocol in ../PROTOCOL.md over stdout, so it links
+     no UNO and needs none of the office jars on its classpath.  Keeping it out
+     of process is what lets an Apache-licensed office use any engine, and what
+     confines a fault in it to one document. -->
+
+<project name="pdfimport-pdfbox" default="main" basedir=".">
+
+    <property file="../../../../ant.properties"/>
+    <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
+
+    <target name="init-project">
+        <!-- Started as `java -jar`, so the four PDFBox jars have to be
+             reachable from this jar's own Class-Path.  They are packed beside
+             it in the extension, so plain filenames resolve. -->
+        <property name="jar.classpath"
+                  value="${external.pdfbox.jarclasspath} ${external.pdfbox-io.jarclasspath} ${external.fontbox.jarclasspath} ${external.commons-logging.jarclasspath}"/>
+        <property name="jar.manifest" location="manifest.mf"/>
+
+        <path id="main.classpath">
+            <pathelement location="${external.pdfbox.path}"/>
+            <pathelement location="${external.pdfbox-io.path}"/>
+            <pathelement location="${external.fontbox.path}"/>
+            <pathelement location="${external.commons-logging.path}"/>
+        </path>
+    </target>
+
+</project>

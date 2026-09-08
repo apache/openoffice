@@ -23,7 +23,6 @@ PRJ=..$/..$/..
 
 PRJNAME=sdext
 TARGET=pdfimport-pdfbox
-PACKAGE=org$/apache$/openoffice$/pdfimport
 
 # --- Settings -----------------------------------------------------
 
@@ -36,47 +35,48 @@ all:
 
 .ELSE
 
-# The four jars are downloaded by external_deps.lst into $(TARFILE_LOCATION).
-# They are needed twice over: on the compile classpath here, and in the
-# extension at run time, since the helper is started as `java -jar` and reaches
-# them through the Class-Path in its own manifest.
+ANT_BUILDFILE=build.xml
+.INCLUDE : antsettings.mk
+
+# external_deps.lst downloads the four jars into $(TARFILE_LOCATION).  They are
+# needed in two places and neither is optional: solenv/ant/externals.xml
+# resolves external.<name>.path to $(OUTDIR)/bin, which is what puts them on
+# ant's compile classpath, and the extension packs them beside the helper jar
+# so that `java -jar` can follow the Class-Path in its manifest.
+#
+# Unlike apache-commons, which fetches source and builds it, these are official
+# ASF release artifacts, so there is nothing to build -- only to place.
 PDFBOX_JARNAMES= \
 	pdfbox-3.0.8.jar \
 	pdfbox-io-3.0.8.jar \
 	fontbox-3.0.8.jar \
 	commons-logging-1.4.0.jar
 
-PDFBOX_JARS=$(foreach,i,$(PDFBOX_JARNAMES) $(TARFILE_LOCATION)$/$(i))
+SOLVER_JARS=$(foreach,i,$(PDFBOX_JARNAMES) $(OUTDIR)$/bin$/$(i))
 DELIVERED_JARS=$(foreach,i,$(PDFBOX_JARNAMES) $(BIN)$/$(i))
-
-# --- Files --------------------------------------------------------
-
-JAVAFILES= \
-	src$/$(PACKAGE)$/Main.java \
-	src$/$(PACKAGE)$/PdfiEngine.java \
-	src$/$(PACKAGE)$/PdfiWriter.java
-
-JAVACLASSFILES=$(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-# javac needs PDFBox on the classpath; the office's own jars are irrelevant
-# here, as the helper is a plain process and links no UNO.
-XCLASSPATH!:=$(XCLASSPATH)$(PATH_SEPERATOR)$(PDFBOX_JARS:t"$(PATH_SEPERATOR)")
-
-JARCLASSDIRS=org
-JARTARGET=$(TARGET).jar
-JARCOMPRESS=TRUE
-CUSTOMMANIFESTFILE=manifest.mf
 
 # --- Targets ------------------------------------------------------
 
 .INCLUDE : target.mk
 
-# Stage the downloaded jars beside the built one, because the extension's
-# packaging rule in ../makefile.mk copies every CONVERTER_FILE out of $(BIN).
-ALLTAR : $(DELIVERED_JARS)
+# The solver copies must exist before ant runs, or the compile classpath points
+# at nothing; the $(BIN) copies are what ../makefile.mk packs into the .oxt.
+ANTBUILD : $(SOLVER_JARS)
+
+ALLTAR : $(DELIVERED_JARS) $(BIN)$/$(TARGET).jar
+
+$(SOLVER_JARS) : $(TARFILE_LOCATION)$/$$(@:f)
+	@@-$(MKDIRHIER) $(@:d)
+	$(COPY) $< $@
 
 $(DELIVERED_JARS) : $(TARFILE_LOCATION)$/$$(@:f)
 	@@-$(MKDIRHIER) $(@:d)
 	$(COPY) $< $@
+
+# aoo-ant.xml writes the jar to $(WORKDIR)/Ant; bring it where the extension
+# packaging expects to find it.
+$(BIN)$/$(TARGET).jar : ANTBUILD
+	@@-$(MKDIRHIER) $(@:d)
+	$(COPY) $(WORKDIR)$/Ant$/$(TARGET).jar $@
 
 .ENDIF # ENABLE_PDFIMPORT
