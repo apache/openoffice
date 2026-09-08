@@ -55,19 +55,23 @@ SLOFILES=\
 SHL1DLLPRE=
 SHL1TARGET=$(TARGET).uno
 
+# NB: xpdfwrapper.lib is wrapper/, which is ours -- wrapper/makefile.mk
+# still calls its TARGET that.  The poppler helper was xpdfwrapper/, a
+# different directory, and is gone.
 SHL1LIBS=\
 	$(SLB)$/pdfmisc.lib \
 	$(SLB)$/pdfparse.lib \
 	$(SLB)$/pdfsax.lib \
 	$(SLB)$/pdfparsetree.lib \
 	$(SLB)$/pdfodf.lib \
-# NB: xpdfwrapper.lib is wrapper/, which is ours -- wrapper/makefile.mk
-# still calls its TARGET that.  The poppler helper was xpdfwrapper/, a
-# different directory, and is gone.
 	$(SLB)$/xpdfwrapper.lib \
 	$(SLB)$/$(TARGET).lib
 
+# jvmfwk: pdfbackend.cxx asks jfw_getSelectedJRE which JRE the office is
+# configured to use, so the PDFBox helper starts under the one the user
+# actually chose in Tools - Options - Java rather than whatever is on PATH.
 SHL1STDLIBS=\
+	$(JVMFWKLIB)	\
     $(CPPUHELPERLIB)	\
 	$(ZLIB3RDLIB)	    \
 	$(CPPULIB)			\
