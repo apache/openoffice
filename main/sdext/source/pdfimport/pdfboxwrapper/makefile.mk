@@ -26,57 +26,30 @@ TARGET=pdfimport-pdfbox
 
 # --- Settings -----------------------------------------------------
 
-.INCLUDE : settings.mk
-
 .IF "$(ENABLE_PDFIMPORT)" == "NO" || "$(SOLAR_JAVA)" == ""
 
-all:
+@all:
 	@echo "PDF Import extension disabled."
 
 .ELSE
 
-ANT_BUILDFILE=build.xml
-.INCLUDE : antsettings.mk
+# ant.mk, not antsettings.mk: it pulls in settings.mk and target.mk itself and
+# is what defines the ANTBUILD target.  antsettings.mk only sets variables, and
+# is for the BUILD_ACTION/tg_ext.mk route that unpacks a source tarball first --
+# apache-commons does that; there is nothing to unpack here.
+.INCLUDE : ant.mk
 
-# external_deps.lst downloads the four jars into $(TARFILE_LOCATION).  They are
-# needed in two places and neither is optional: solenv/ant/externals.xml
-# resolves external.<name>.path to $(OUTDIR)/bin, which is what puts them on
-# ant's compile classpath, and the extension packs them beside the helper jar
-# so that `java -jar` can follow the Class-Path in its manifest.
+# build.xml does the file placement, not dmake.  $(OUTDIR) and
+# $(TARFILE_LOCATION) are absolute and begin "C:", and dmake reads that colon as
+# its rule separator, so neither can appear as a target or a prerequisite -- it
+# fails with "Multiply defined recipe for target C".  Ant is unaffected.
 #
-# Unlike apache-commons, which fetches source and builds it, these are official
-# ASF release artifacts, so there is nothing to build -- only to place.
-PDFBOX_JARNAMES= \
-	pdfbox-3.0.8.jar \
-	pdfbox-io-3.0.8.jar \
-	fontbox-3.0.8.jar \
-	commons-logging-1.4.0.jar
-
-SOLVER_JARS=$(foreach,i,$(PDFBOX_JARNAMES) $(OUTDIR)$/bin$/$(i))
-DELIVERED_JARS=$(foreach,i,$(PDFBOX_JARNAMES) $(BIN)$/$(i))
+# $(BIN) is relative, so it survives the trip through -D as a plain value and
+# resolves against the build file's basedir, which is this directory.
+ANT_FLAGS+=-Dpdfi.bin.dir=$(BIN)
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE : target.mk
-
-# The solver copies must exist before ant runs, or the compile classpath points
-# at nothing; the $(BIN) copies are what ../makefile.mk packs into the .oxt.
-ANTBUILD : $(SOLVER_JARS)
-
-ALLTAR : $(DELIVERED_JARS) $(BIN)$/$(TARGET).jar
-
-$(SOLVER_JARS) : $(TARFILE_LOCATION)$/$$(@:f)
-	@@-$(MKDIRHIER) $(@:d)
-	$(COPY) $< $@
-
-$(DELIVERED_JARS) : $(TARFILE_LOCATION)$/$$(@:f)
-	@@-$(MKDIRHIER) $(@:d)
-	$(COPY) $< $@
-
-# aoo-ant.xml writes the jar to $(WORKDIR)/Ant; bring it where the extension
-# packaging expects to find it.
-$(BIN)$/$(TARGET).jar : ANTBUILD
-	@@-$(MKDIRHIER) $(@:d)
-	$(COPY) $(WORKDIR)$/Ant$/$(TARGET).jar $@
+ALLTAR : ANTBUILD
 
 .ENDIF # ENABLE_PDFIMPORT
