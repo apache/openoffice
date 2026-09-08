@@ -1,0 +1,13 @@
+diff -ru misc/hsqldb/src/org/hsqldb/persist/Log.java misc/build/hsqldb/src/org/hsqldb/persist/Log.java
+--- misc/hsqldb/src/org/hsqldb/persist/Log.java	2008-03-14 16:47:42.000000000 +0100
++++ misc/build/hsqldb/src/org/hsqldb/persist/Log.java	2026-09-08 22:40:39.681242533 +0200
+@@ -763,7 +763,7 @@
+ 
+         closeTextCache(table);
+ 
+-        if (!properties.isPropertyTrue(
++        if (database.isStoredFileAccess() || !properties.isPropertyTrue(
+                 HsqlDatabaseProperties.textdb_allow_full_path)) {
+             if (source.indexOf("..") != -1) {
+                 throw (Trace.error(Trace.ACCESS_IS_DENIED, source));
+
