@@ -67,13 +67,6 @@
 #define GSM_DBUS_INTERFACE      "org.gnome.SessionManager"
 #endif
 
-// make compile on gtk older than 2.10
-#if GTK_MINOR_VERSION < 10
-#define GDK_SUPER_MASK      (1 << 26)
-#define GDK_HYPER_MASK      (1 << 27)
-#define GDK_META_MASK       (1 << 28)
-#endif
-
 using namespace com::sun::star;
 
 int GtkSalFrame::m_nFloats = 0;

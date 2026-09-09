@@ -202,78 +202,16 @@ void GtkSalDisplay::screenSizeChanged( GdkScreen* pScreen )
 
 void GtkSalDisplay::monitorsChanged( GdkScreen* pScreen )
 {
-    /* Caution: since we support the _NET_WM_FULLSCREEN_MONITORS property now and
-       the EWMH spec says, the index used for that needs to be that of the
-       Xinerama extension, we need to ensure that the order of m_aXineramaScreens is actually intact.
 
-       gdk_screen_get_monitor_geometry however has a different sort order that has a default monitor number
-       Xinerama returns the default monitor as 0.
-       That means if we fill in the multiple monitors vector from gdk, we'll get the wrong order unless
-       the default monitor is incidentally the same (number 0).
-
-       Given that XRandR (which is what gdk_screen_get_monitor_geometry is based on) is
-       supposed to replace Xinerama, this is bound to get a problem at some time again,
-       unfortunately there does not currently seem to be a way to map the returns of xinerama to
-       that of randr. Currently getting Xinerama values again works with updated values, given
-       a new enough Xserver.
-    */
     InitXinerama();
     (void)pScreen;
-
-    #if 0
-    if( pScreen )
-    {
-        if( gdk_display_get_n_screens(m_pGdkDisplay) == 1 )
-        {
-            int nScreen = gdk_screen_get_number( pScreen );
-            if( nScreen == m_nDefaultScreen ) //To-Do, make m_aXineramaScreens a per-screen thing ?
-            {
-                gint nMonitors = gdk_screen_get_n_monitors(pScreen);
-                m_aXineramaScreens = std::vector<Rectangle>();
-                m_aXineramaScreenIndexMap = std::vector<int>(nMonitors);
-                for (gint i = 0; i < nMonitors; ++i)
-                {
-                    GdkRectangle dest;
-                    gdk_screen_get_monitor_geometry(pScreen, i, &dest);
-                    m_aXineramaScreenIndexMap[i] = addXineramaScreenUnique( dest.x, dest.y, dest.width, dest.height );
-                }
-                m_bXinerama = m_aXineramaScreens.size() > 1;
-                if( ! m_aFrames.empty() )
-                    m_aFrames.front()->CallCallback( SALEVENT_DISPLAYCHANGED, 0 );
-            }
-            else
-            {
-                DBG_ERROR( "monitors for non-default screen changed, extend-me" );
-            }
-        }
-    }
-    #endif
-}
-
-extern "C"
-{
-    typedef gint(* screen_get_primary_monitor)(GdkScreen *screen);
 }
 
 int GtkSalDisplay::GetDefaultMonitorNumber() const
 {
-    int n = 0;
-
-    // currently disabled, see remarks in monitorsChanged
-#if 0
-    GdkScreen* pScreen = gdk_display_get_screen( m_pGdkDisplay, m_nDefaultScreen );
-#if GTK_CHECK_VERSION(2,20,0)
-    n = gdk_screen_get_primary_monitor(pScreen);
-#else
-    static screen_get_primary_monitor sym_gdk_screen_get_primary_monitor =
-        (screen_get_primary_monitor)osl_getAsciiFunctionSymbol( GetSalData()->m_pPlugin, "gdk_screen_get_primary_monitor" );
-    if (sym_gdk_screen_get_primary_monitor)
-        n = sym_gdk_screen_get_primary_monitor( pScreen );
-#endif
-    if( n >= 0 && size_t(n) < m_aXineramaScreenIndexMap.size() )
-        n = m_aXineramaScreenIndexMap[n];
-#endif
-    return n;
+    // GTK's primary-monitor implementation is disabled; use the
+    // Xinerama default monitor.
+    return 0;
 }
 
 void GtkSalDisplay::initScreen( int nScreen ) const

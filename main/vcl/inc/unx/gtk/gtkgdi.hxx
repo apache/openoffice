@@ -27,7 +27,6 @@
 #include <tools/prex.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <gdk/gdkkeysyms.h>
 #include <tools/postx.h>
 
 #include <unx/salgdi.h>
