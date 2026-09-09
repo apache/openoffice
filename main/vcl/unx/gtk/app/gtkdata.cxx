@@ -219,61 +219,12 @@ void GtkSalDisplay::monitorsChanged( GdkScreen* pScreen )
     */
     InitXinerama();
     (void)pScreen;
-
-    #if 0
-    if( pScreen )
-    {
-        if( gdk_display_get_n_screens(m_pGdkDisplay) == 1 )
-        {
-            int nScreen = gdk_screen_get_number( pScreen );
-            if( nScreen == m_nDefaultScreen ) //To-Do, make m_aXineramaScreens a per-screen thing ?
-            {
-                gint nMonitors = gdk_screen_get_n_monitors(pScreen);
-                m_aXineramaScreens = std::vector<Rectangle>();
-                m_aXineramaScreenIndexMap = std::vector<int>(nMonitors);
-                for (gint i = 0; i < nMonitors; ++i)
-                {
-                    GdkRectangle dest;
-                    gdk_screen_get_monitor_geometry(pScreen, i, &dest);
-                    m_aXineramaScreenIndexMap[i] = addXineramaScreenUnique( dest.x, dest.y, dest.width, dest.height );
-                }
-                m_bXinerama = m_aXineramaScreens.size() > 1;
-                if( ! m_aFrames.empty() )
-                    m_aFrames.front()->CallCallback( SALEVENT_DISPLAYCHANGED, 0 );
-            }
-            else
-            {
-                DBG_ERROR( "monitors for non-default screen changed, extend-me" );
-            }
-        }
-    }
-    #endif
-}
-
-extern "C"
-{
-    typedef gint(* screen_get_primary_monitor)(GdkScreen *screen);
 }
 
 int GtkSalDisplay::GetDefaultMonitorNumber() const
 {
-    int n = 0;
-
-    // currently disabled, see remarks in monitorsChanged
-#if 0
-    GdkScreen* pScreen = gdk_display_get_screen( m_pGdkDisplay, m_nDefaultScreen );
-#if GTK_CHECK_VERSION(2,20,0)
-    n = gdk_screen_get_primary_monitor(pScreen);
-#else
-    static screen_get_primary_monitor sym_gdk_screen_get_primary_monitor =
-        (screen_get_primary_monitor)osl_getAsciiFunctionSymbol( GetSalData()->m_pPlugin, "gdk_screen_get_primary_monitor" );
-    if (sym_gdk_screen_get_primary_monitor)
-        n = sym_gdk_screen_get_primary_monitor( pScreen );
-#endif
-    if( n >= 0 && size_t(n) < m_aXineramaScreenIndexMap.size() )
-        n = m_aXineramaScreenIndexMap[n];
-#endif
-    return n;
+    // See remarks in monitorsChanged: Xinerama returns the default monitor as 0.
+    return 0;
 }
 
 void GtkSalDisplay::initScreen( int nScreen ) const

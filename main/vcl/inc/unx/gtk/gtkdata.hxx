@@ -55,7 +55,6 @@ class GtkSalDisplay : public SalDisplay
     GdkDisplay*						m_pGdkDisplay;
 	GdkCursor                      *m_aCursors[ POINTER_COUNT ];
     bool                            m_bStartupCompleted;
-    std::vector< int >              m_aXineramaScreenIndexMap;
 
 	GdkCursor* getFromXPM( const char *pBitmap, const char *pMask,
 						   int nWidth, int nHeight, int nXHot, int nYHot );
