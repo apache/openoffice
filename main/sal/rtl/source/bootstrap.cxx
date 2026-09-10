@@ -271,6 +271,28 @@ static OUString & getIniFileName_Impl()
 
 			// append config file suffix
 			fileName += OUString(RTL_CONSTASCII_USTRINGPARAM(SAL_CONFIGFILE("")));
+
+#ifdef MACOSX
+			// In an application bundle only Mach-O binaries may live in
+			// Contents/MacOS -- code signing rejects the bundle otherwise --
+			// so the installation itself (rc files, rdbs, the libraries) sits
+			// in Contents/program, exactly as on the other UNX platforms.
+			// Look the ini file up there; $ORIGIN is derived from it below,
+			// which anchors the whole bootstrap chain in the program dir.
+			OUString macOSDir (RTL_CONSTASCII_USTRINGPARAM("/Contents/MacOS/"));
+			sal_Int32 nMacOSDir = fileName.lastIndexOf(macOSDir);
+			if (nMacOSDir >= 0)
+			{
+				OUString programName =
+					fileName.replaceAt(nMacOSDir, macOSDir.getLength(),
+						OUString(RTL_CONSTASCII_USTRINGPARAM("/Contents/program/")));
+				// Fall back to the old location for anything that is not laid
+				// out this way (a plain bundle, an mdimporter, ...).
+				::osl::DirectoryItem item;
+				if (::osl::DirectoryItem::get(programName, item) == ::osl::DirectoryItem::E_None)
+					fileName = programName;
+			}
+#endif
 		}
 
 		static OUString theFileName;

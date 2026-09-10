@@ -118,7 +118,10 @@ OUTDIR2INC=include$/libxml
 .IF "$(OS)"=="MACOSX"
 EXTRPATH=URELIB
 OUT2LIB+=.libs$/libxml2.a
-OUT2BIN+=.libs$/xmllint
+# With --enable-shared=no (see CONFIGURE_FLAGS above), libtool links xmllint
+# directly against the static lib -- no .libs/ wrapper copy -- so the binary
+# lands at the build root. (Cf. libxslt/makefile.mk's xsltproc handling.)
+OUT2BIN+=xmllint
 OUT2BIN+=xml2-config
 .ELIF "$(OS)"=="WNT"
 .IF "$(COM)"=="GCC"

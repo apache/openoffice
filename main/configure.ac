@@ -982,6 +982,21 @@ AC_ARG_WITH(macosx-sdk,
                               Usage: --with-macosx-sdk=10.11
                               (or full path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk)
 ],with_macosx_sdk=$withval,)
+AC_ARG_WITH(macosx-codesigning-identity,
+[  --with-macosx-codesigning-identity
+                          Code-sign the macOS application bundle and disk image
+                          while packaging, with this codesign identity
+                          ("-" for ad-hoc). Unset: package unsigned, as before.
+
+                              Usage: --with-macosx-codesigning-identity="Developer ID Application: ..."
+],with_macosx_codesigning_identity=$withval,)
+AC_ARG_WITH(macosx-codesigning-keychain,
+[  --with-macosx-codesigning-keychain
+                          Keychain holding that identity (default: the
+                          keychain search list, i.e. normally the login keychain).
+
+                              Usage: --with-macosx-codesigning-keychain=/path/to/build.keychain-db
+],with_macosx_codesigning_keychain=$withval,)
 AC_ARG_WITH(rat-scan,
 [  --with-rat-scan         Scan source code for license headers.
                           Use as --with-rat-scan to automatically download pre-built Rat binaries.
@@ -4575,9 +4590,24 @@ if test  "$_os" = "Darwin"; then
    fi
 
 fi
+dnl Code signing during packaging: solenv/bin/modules/installer/simplepackage.pm
+dnl reads these from the environment (via set_soenv), so a bare "yes" is an error.
+MACOSX_CODESIGNING_IDENTITY=
+MACOSX_CODESIGNING_KEYCHAIN=
+if test "$with_macosx_codesigning_identity" = "yes"; then
+   AC_MSG_ERROR([--with-macosx-codesigning-identity needs a codesign identity, or "-" for ad-hoc])
+fi
+if test -n "$with_macosx_codesigning_identity" -a "$with_macosx_codesigning_identity" != "no"; then
+   MACOSX_CODESIGNING_IDENTITY=$with_macosx_codesigning_identity
+fi
+if test -n "$with_macosx_codesigning_keychain" -a "$with_macosx_codesigning_keychain" != "no" -a "$with_macosx_codesigning_keychain" != "yes"; then
+   MACOSX_CODESIGNING_KEYCHAIN=$with_macosx_codesigning_keychain
+fi
 AC_SUBST(MACOSX_DEPLOYMENT_TARGET)
 AC_SUBST(MACOSX_SDK_PATH)
 AC_SUBST(SDKROOT)
+AC_SUBST(MACOSX_CODESIGNING_IDENTITY)
+AC_SUBST(MACOSX_CODESIGNING_KEYCHAIN)
 
 
 dnl ===================================================================

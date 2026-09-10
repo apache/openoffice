@@ -33,6 +33,10 @@ sub action($$$)
          'app/SDK/URELIB' => '@executable_path',
          'app/BRAND/URELIB' => '@executable_path',
          'app/BRAND/OOO' => '@executable_path',
+         # BRANDBIN: the executable is the bundle launcher in Contents/MacOS,
+         # while the libraries are installed in Contents/program.
+         'app/BRANDBIN/URELIB' => '@executable_path/../program',
+         'app/BRANDBIN/OOO' => '@executable_path/../program',
          'app/NONE/URELIB' => '@__VIA_LIBRARY_PATH__',
          'app/NONE/OOO' => '@__VIA_LIBRARY_PATH__',
          'app/NONE/NONE' => '@__VIA_LIBRARY_PATH__',
@@ -40,8 +44,12 @@ sub action($$$)
          'shl/OOO/URELIB' => '@loader_path',
          'shl/OOO/OOO' => '@loader_path',
          'shl/LOADER/LOADER' => '@loader_path',
-         'shl/OXT/URELIB' => '@executable_path',
-         'shl/BOXT/URELIB' => '@executable_path',
+         # Extension libraries can live inside the installation or in an
+         # extension directory, so they cannot use @loader_path; the office
+         # libraries are always in Contents/program, one level up from the
+         # launcher in Contents/MacOS and from the helper binaries themselves.
+         'shl/OXT/URELIB' => '@executable_path/../program',
+         'shl/BOXT/URELIB' => '@executable_path/../program',
          'shl/BOXT/OOO' => '@loader_path',
          'shl/NONE/URELIB' => '@__VIA_LIBRARY_PATH__',
          'shl/NONE/OOO' => '@__VIA_LIBRARY_PATH__',
@@ -74,7 +82,7 @@ sub action($$$)
 }
 
 @ARGV == 3 || @ARGV >= 2 && $ARGV[0] eq "extshl" or die
-  'Usage: app|shl|extshl UREBIN|URELIB|OOO|SDK|BRAND|OXT|BOXT|NONE|LOADER <filepath>*';
+  'Usage: app|shl|extshl UREBIN|URELIB|OOO|SDK|BRAND|BRANDBIN|OXT|BOXT|NONE|LOADER <filepath>*';
 $type = shift @ARGV;
 $loc = shift @ARGV;
 if ($type eq "SharedLibrary")

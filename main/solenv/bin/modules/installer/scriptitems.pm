@@ -1713,12 +1713,20 @@ sub add_License_Files_into_Installdir
 				$newfile->{'modules'} = $installer::globals::rootbrandpackage;
 			}
 
-			push(@newfilesarray, $newfile);
+			# On Mac OS X the installation root is the bundle's Contents
+			# directory, where only the entries defined by Apple may live --
+			# a stray LICENSE or README there makes the bundle unsignable.
+			# The copy in the installation set (the .dmg root, below) is the
+			# one users actually see anyway.
+			if ( ! $installer::globals::ismacosx )
+			{
+				push(@newfilesarray, $newfile);
 
-            $installer::logger::Lang->printf(
-                "New files: Adding file %s for the installation root to the file list. Language: %s\n",
-                $newfilename,
-                $defaultlanguage);
+				$installer::logger::Lang->printf(
+					"New files: Adding file %s for the installation root to the file list. Language: %s\n",
+					$newfilename,
+					$defaultlanguage);
+			}
 
 			if ( defined $newfile->{'InstallName'} )
 			{

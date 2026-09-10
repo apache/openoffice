@@ -541,11 +541,33 @@ sub create_package
 			chdir $localfrom;
 		}
 
-		$systemcall = "cd $localtempdir && hdiutil makehybrid -hfs -hfs-openfolder $folder $folder -hfs-volume-name \"$volume_name\" -ov -o $installdir/tmp && hdiutil convert -ov -format UDZO $installdir/tmp.dmg -o $archive && ";
-        if (( $ref ne "" ) && ( $$ref ne "" )) {
-			$systemcall .= "hdiutil unflatten $archive && Rez -a $$ref -o $archive && hdiutil flatten $archive &&";
+		# Code-sign the .app before it is sealed into the .dmg. Opt-in: without
+		# MACOSX_CODESIGNING_IDENTITY the installation set is left as it was.
+		if ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} )
+		{
+			my $signscript = $ENV{'SOLARENV'} . "/bin/macosx-codesign.sh";
+			foreach my $appdir ( glob("$localtempdir/$folder/*.app") )
+			{
+				my $signcall = "$signscript -i \"$ENV{'MACOSX_CODESIGNING_IDENTITY'}\" \"$appdir\"";
+				my $signreturn = system($signcall);
+				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $appdir!", "create_package"); }
+				$installer::logger::Lang->print("Success: Code-signed $appdir\n");
+			}
 		}
-		$systemcall .= "rm -f $installdir/tmp.dmg";
+
+		# "hdiutil makehybrid -hfs" stamps an (empty) com.apple.FinderInfo onto
+		# every file in the image, which makes "codesign --verify --strict"
+		# reject the signed application inside the .dmg and would fail
+		# notarization. "hdiutil create -srcfolder" copies the files as they
+		# are. (The -hfs-openfolder auto-open it also did is not supported on
+		# Apple Silicon any more: bless refuses it.)
+		# "-fs HFS+" is not optional: left to itself "hdiutil create" makes an
+		# APFS image on recent macOS, which will not mount before 10.12.
+		# "makehybrid -hfs" always produced HFS+.
+		$systemcall = "cd $localtempdir && hdiutil create -srcfolder $folder -volname \"$volume_name\" -fs HFS+ -format UDZO -ov $archive";
+        if (( $ref ne "" ) && ( $$ref ne "" )) {
+			$systemcall .= " && hdiutil unflatten $archive && Rez -a $$ref -o $archive && hdiutil flatten $archive";
+		}
 	}
 	else
 	{
@@ -581,6 +603,25 @@ sub create_package
 		{
 			$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 			$installer::logger::Lang->print($infoline);
+			# Sign the finished disk image. This completes the chain: the .app
+			# inside was signed before the image was built, and the image itself
+			# is signed here. It has to happen at this point rather than earlier -
+			# the Rez step above rewrites the image to attach the license
+			# resource, and that would invalidate a signature applied before it.
+			#
+			# Skipped for an ad-hoc identity: an ad-hoc signed .dmg buys nothing
+			# (Gatekeeper rejects it either way) and macosx-codesign.sh refuses
+			# it outright, which would turn a working ad-hoc build into an error.
+			if (( $archive =~ /dmg$/ ) &&
+			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ) &&
+			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ne "-" ))
+			{
+				my $signscript = $ENV{'SOLARENV'} . "/bin/macosx-codesign.sh";
+				my $signcall = "$signscript -i \"$ENV{'MACOSX_CODESIGNING_IDENTITY'}\" \"$archive\"";
+				my $signreturn = system($signcall);
+				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $archive!", "create_package"); }
+				$installer::logger::Lang->print("Success: Code-signed $archive\n");
+			}
 		}
 	}
 

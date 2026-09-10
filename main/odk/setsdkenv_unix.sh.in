@@ -101,7 +101,9 @@ programdir=program
 javadir=bin
 case ${sdk_platform} in
   darwin*)
-    programdir="Contents/MacOS"
+    # The installation lives in Contents/program; Contents/MacOS holds only the
+    # soffice launcher, so that the bundle can be code-signed.
+    programdir="Contents/program"
     javacdir=Commands
     ;;
 esac

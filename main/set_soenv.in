@@ -1859,6 +1859,16 @@ if ( $platform =~ m/darwin/ )
     ToFile( "MACOSX_DEPLOYMENT_TARGET",       "@MACOSX_DEPLOYMENT_TARGET@",       "e" );
     ToFile( "MACOSX_SDK_PATH",       "@MACOSX_SDK_PATH@",       "e" );
     ToFile( "SDKROOT",       "@SDKROOT@",       "e" );
+# Optional code signing while packaging (simplepackage.pm). Only written when
+# configure was given a value, so an identity exported by hand is not clobbered.
+    if ( "@MACOSX_CODESIGNING_IDENTITY@" ne "" )
+    {
+        ToFile( "MACOSX_CODESIGNING_IDENTITY", "@MACOSX_CODESIGNING_IDENTITY@", "e" );
+    }
+    if ( "@MACOSX_CODESIGNING_KEYCHAIN@" ne "" )
+    {
+        ToFile( "MACOSX_CODESIGNING_KEYCHAIN", "@MACOSX_CODESIGNING_KEYCHAIN@", "e" );
+    }
     ToFile( "LIBINTL_PREFIX",       "@LIBINTL_PREFIX@", "e" );
 }
 if ( $platform =~ m/freebsd/ )
