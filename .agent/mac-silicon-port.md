@@ -355,15 +355,88 @@ already `"program"` everywhere but macOS.
 in `Desktop::HandleBootstrapErrors → FatalError`. Directories in `Contents` seal fine as
 resources, so only the loose files ever needed to move.
 
+### Adding artwork: packimages does not rebuild on its own
+
+The Start Center's PNGs are **not** compiled into the `.res` (`fween-US.res` is ~8 KB).
+`Bitmap ... File = "x.png"` entries are resolved at runtime from
+`Contents/share/config/images.zip`, which `packimages` builds. Its rule is
+
+    $(WORKDIR)/CustomTarget/packimages/bin/images.zip : $(COMMAND_IMAGE_LIST)
+
+so it depends only on `commandimagelist.ilst` -- not on the per-module `.ilst` lists
+and not on `default_images/`. Adding an image therefore does **nothing**: `make` in
+`packimages` reports success, `images.zip` keeps its old timestamp, and the image is
+simply absent at runtime. Nothing fails; the picture just never appears.
+
+To actually pick up new artwork, delete the zip first:
+
+    rm -f solver/510/unxmaccr.pro/workdir/CustomTarget/packimages/bin/images.zip \
+          solver/510/unxmaccr.pro/bin/images.zip
+    (cd packimages && make)
+    unzip -l solver/510/unxmaccr.pro/bin/images.zip | grep <your image>
+
+Verify the count before packaging -- a clean exit is not evidence the asset shipped.
+`rsc` *does* pick new `Bitmap` entries up into `solver/.../res/img/*.ilst` correctly,
+so the list is right; only the zip is stale.
+
+Also note: two packaging runs must never overlap. Both write
+`instsetoo_native/unxmaccr.pro/.../dmg/install/en-US_inprogress`, and the second dies
+with `Could not create parent directory` (dmake error 255), leaving a stray
+`Apache_OpenOffice_*_install_en-US/` directory that must be removed by hand.
+
 ### Still open for distribution
 
-- No signing identity on this machine (`security find-identity -p codesigning` → 0). A
-  **Developer ID Application** certificate (Apple Developer Program, 99 USD/yr) is needed
-  to get past Gatekeeper elsewhere; ad-hoc signatures are always `spctl: rejected`.
-- With a real identity the script adds hardened runtime + `--timestamp` and applies
-  `mac-silicon-entitlements.plist` (JIT and unsigned-exec-memory for the JVM,
-  disable-library-validation for the external JDK / extensions / Python modules,
-  dyld-env-vars, apple-events). Untested — no certificate to test with.
+- A signing identity now exists: `Apple Development: Peter Kovacs (GW985ZS85D)`, issued
+  to `O=The Apache Software Foundation` (Team `2GLGAFWEQD`), in the login keychain,
+  valid to 2027-09-09. Select it with
+  `export MACOSX_CODESIGNING_IDENTITY="Apple Development: Peter Kovacs (GW985ZS85D)"`;
+  no `MACOSX_CODESIGNING_KEYCHAIN` is needed, the login keychain is already searched.
+  - Its issuer is WWDR **G3**, an intermediate that ships in *neither* the login nor the
+    System keychain. Without it `codesign` fails with `unable to build chain to
+    self-signed root` / `errSecInternalComponent` and `find-identity -v` reports 0 valid
+    identities — while `security verify-cert` *succeeds*, because it fetches the chain
+    over the network and codesign does not. Import the copy Xcode already ships:
+    `security import /Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/AppleWWDRCA-2030.cer -k ~/Library/Keychains/login.keychain-db`
+    (`AppleWWDRCA-2030.cer` is G3 despite the name; `AppleWWDRCAG6.cer` is G6, the wrong
+    generation for this leaf.)
+- **Signing through the build is verified working** (2026-09-09). `simplepackage.pm`
+  signs each `.app` before `hdiutil create`; no code change was needed, only the env var:
+
+        cd main && source ./MacOSXAARCH64Env.Set.sh
+        unset SDKROOT MACOSX_SDK_PATH      # else xcrun inherits the stale pin below
+        export SDKROOT="$(xcrun --show-sdk-path)" MACOSX_SDK_PATH="$SDKROOT"
+        export MACOSX_CODESIGNING_IDENTITY="Apple Development: Peter Kovacs (GW985ZS85D)"
+        cd instsetoo_native/util && dmake openoffice_en-US.dmg
+
+  Produces 367 signed Mach-O objects, `Sealed Resources version=2 rules=13 files=4036`,
+  identifier `org.openoffice.script` (was the linker-invented `soffice.<n>-<n>`), and the
+  app inside the `.dmg` passes `codesign --verify --deep --strict`.
+- **Unattended signing needs the key ACL opened once, or the build hangs forever.** By
+  default the private key prompts on every use; `codesign` spawns SecurityAgent and
+  blocks with no output and no error, so the packaging step stalls indefinitely rather
+  than failing. Symptom: a `codesign` process in state `S` for hours, while
+  `codesign --sign -` still works (ad-hoc touches no keychain). Answer one *live* prompt
+  with **Always Allow**, or run
+  `security set-key-partition-list -S apple-tool:,apple:,codesign: -s -l "<cert CN>" ~/Library/Keychains/login.keychain-db`.
+  A prompt whose requesting process has already died is a zombie: no password will ever
+  be accepted, so dismiss it before retrying.
+- The packaging run ends with `ERROR: The following errors occurred in packaging process`
+  naming a `Copy:` of `python-core-*/lib/urllib/error.py`. **False positive** — the file
+  is copied correctly; `make_installer.pl` greps its own log for error patterns and hits
+  the *filename*. dmake exits 0 and the `.dmg` is sound.
+- Every entitlement is a `com.apple.security.cs.*` relaxation plus apple-events; there is
+  no sandbox, App Group or iCloud entitlement, so the bundle needs **no embedded
+  provisioning profile** and is not restricted to registered devices.
+- `MacOSXAARCH64Env.Set.sh` still pins `MacOSX15.5.sdk`, which is not installed (only
+  `MacOSX.sdk`, `MacOSX26.5.sdk`, `MacOSX26.sdk` are). The override above works per-run;
+  the real fix belongs in `set_soenv.in` at configure time, not in the generated file.
+- **`Apple Development` is not a distribution certificate.** It cannot be notarized, so
+  `spctl --assess` still rejects and a downloaded `.dmg` is blocked on first launch. That
+  is workable for hand-to-hand testing — each tester overrides once via System Settings
+  → Privacy & Security → "Open Anyway", or strips quarantine with
+  `xattr -dr com.apple.quarantine /Applications/OpenOffice.app` — but it is not fit for
+  public release. That needs **Developer ID Application**, which only ASF's Account Holder
+  can issue from the team's Apple Developer Program membership.
 - Then `xcrun notarytool submit --wait` the `.dmg`, `xcrun stapler staple`, and sign the
   `.dmg` itself (`mac-silicon-sign.sh -i <ID> foo.dmg`).
 - Installing a *shared* extension writes into `share/uno_packages` inside the bundle and
