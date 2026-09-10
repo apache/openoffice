@@ -302,9 +302,9 @@ the macOS `scp2` branches to that layout:
 The `.dmg` now ships an application that passes `codesign --verify --deep --strict`.
 The fix is in the build and the installer, not in a post-processing pass.
 
-    ./mac-silicon-sign.sh /Applications/OpenOffice.app                  # ad-hoc
-    ./mac-silicon-sign.sh -i "Developer ID Application: NAME (TEAMID)" OpenOffice.app
-    ./mac-silicon-sign.sh --verify OpenOffice.app
+    ./solenv/bin/mac-silicon-sign.sh /Applications/OpenOffice.app                  # ad-hoc
+    ./solenv/bin/mac-silicon-sign.sh -i "Developer ID Application: NAME (TEAMID)" OpenOffice.app
+    ./solenv/bin/mac-silicon-sign.sh --verify OpenOffice.app
     MACOSX_CODESIGNING_IDENTITY=- ./mac-silicon-build.sh                # signed .dmg
 
 ### What was wrong

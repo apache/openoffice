@@ -2,7 +2,7 @@
 #
 # Code-sign a built Apache OpenOffice .app (or .dmg) on macOS.
 #
-#   ./mac-silicon-sign.sh [options] <OpenOffice.app|installer.dmg> ...
+#   ./solenv/bin/mac-silicon-sign.sh [options] <OpenOffice.app|installer.dmg> ...
 #
 # Options:
 #   -i, --identity ID   codesign identity; "-" = ad-hoc (default, or

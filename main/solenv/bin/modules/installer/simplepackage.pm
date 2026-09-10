@@ -545,7 +545,7 @@ sub create_package
 		# MACOSX_CODESIGNING_IDENTITY the installation set is left as it was.
 		if ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} )
 		{
-			my $signscript = $ENV{'SRC_ROOT'} . "/mac-silicon-sign.sh";
+			my $signscript = $ENV{'SOLARENV'} . "/bin/mac-silicon-sign.sh";
 			foreach my $appdir ( glob("$localtempdir/$folder/*.app") )
 			{
 				my $signcall = "$signscript -i \"$ENV{'MACOSX_CODESIGNING_IDENTITY'}\" \"$appdir\"";
@@ -614,7 +614,7 @@ sub create_package
 			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ) &&
 			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ne "-" ))
 			{
-				my $signscript = $ENV{'SRC_ROOT'} . "/mac-silicon-sign.sh";
+				my $signscript = $ENV{'SOLARENV'} . "/bin/mac-silicon-sign.sh";
 				my $signcall = "$signscript -i \"$ENV{'MACOSX_CODESIGNING_IDENTITY'}\" \"$archive\"";
 				my $signreturn = system($signcall);
 				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $archive!", "create_package"); }
