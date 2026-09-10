@@ -601,6 +601,25 @@ sub create_package
 		{
 			$infoline = "Success: Executed \"$systemcall\" successfully!\n";
 			$installer::logger::Lang->print($infoline);
+			# Sign the finished disk image. This completes the chain: the .app
+			# inside was signed before the image was built, and the image itself
+			# is signed here. It has to happen at this point rather than earlier -
+			# the Rez step above rewrites the image to attach the license
+			# resource, and that would invalidate a signature applied before it.
+			#
+			# Skipped for an ad-hoc identity: an ad-hoc signed .dmg buys nothing
+			# (Gatekeeper rejects it either way) and mac-silicon-sign.sh refuses
+			# it outright, which would turn a working ad-hoc build into an error.
+			if (( $archive =~ /dmg$/ ) &&
+			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ) &&
+			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ne "-" ))
+			{
+				my $signscript = $ENV{'SRC_ROOT'} . "/mac-silicon-sign.sh";
+				my $signcall = "$signscript -i \"$ENV{'MACOSX_CODESIGNING_IDENTITY'}\" \"$archive\"";
+				my $signreturn = system($signcall);
+				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $archive!", "create_package"); }
+				$installer::logger::Lang->print("Success: Code-signed $archive\n");
+			}
 		}
 	}
 

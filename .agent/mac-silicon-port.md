@@ -437,8 +437,13 @@ with `Could not create parent directory` (dmake error 255), leaving a stray
   `xattr -dr com.apple.quarantine /Applications/OpenOffice.app` — but it is not fit for
   public release. That needs **Developer ID Application**, which only ASF's Account Holder
   can issue from the team's Apple Developer Program membership.
-- Then `xcrun notarytool submit --wait` the `.dmg`, `xcrun stapler staple`, and sign the
-  `.dmg` itself (`mac-silicon-sign.sh -i <ID> foo.dmg`).
+- The `.dmg` itself is now signed by the build too, in `simplepackage.pm` right after
+  the image is finalised -- it has to be after the `Rez` step, which rewrites the image
+  to attach the license resource and would invalidate an earlier signature. Skipped for
+  an ad-hoc identity, which `mac-silicon-sign.sh` refuses for a `.dmg` anyway. So the
+  whole chain (Mach-O objects, nested bundles, the `.app`, the `.dmg`) is one build.
+- Still missing for a public release: `xcrun notarytool submit --wait` followed by
+  `xcrun stapler staple`. Both need a Developer ID identity to be worth wiring up.
 - Installing a *shared* extension writes into `share/uno_packages` inside the bundle and
   breaks the seal. That is inherent to signing an app that modifies itself, not to this
   layout change.
