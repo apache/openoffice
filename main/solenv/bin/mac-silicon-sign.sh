@@ -8,6 +8,7 @@
 #   -i, --identity ID   codesign identity; "-" = ad-hoc (default, or
 #                       $MACOSX_CODESIGNING_IDENTITY when set)
 #   -e, --entitlements  entitlements plist (default: mac-silicon-entitlements.plist)
+#   -k, --keychain PATH keychain holding the identity (default: the search list)
 #       --hardened      force hardened runtime even for an ad-hoc signature
 #                       (implied by a real identity)
 #       --verify        only report the current signing state, change nothing
@@ -27,6 +28,7 @@ set -euo pipefail
 SRCDIR=$(cd "$(dirname "$0")" && pwd)
 IDENTITY="${MACOSX_CODESIGNING_IDENTITY:--}"
 ENTITLEMENTS="$SRCDIR/mac-silicon-entitlements.plist"
+KEYCHAIN="${MACOSX_CODESIGNING_KEYCHAIN:-}"
 HARDENED=no
 VERIFY_ONLY=no
 TARGETS=()
@@ -35,6 +37,7 @@ while [ $# -gt 0 ]; do
 	case "$1" in
 		-i|--identity)     IDENTITY="$2"; shift 2 ;;
 		-e|--entitlements) ENTITLEMENTS="$2"; shift 2 ;;
+		-k|--keychain)     KEYCHAIN="$2"; shift 2 ;;
 		--hardened)        HARDENED=yes; shift ;;
 		--verify)          VERIFY_ONLY=yes; shift ;;
 		-h|--help)         sed -n '2,25p' "$0"; exit 0 ;;
@@ -58,6 +61,9 @@ sign_one() {
 	fi
 	if [ "$HARDENED" = yes ]; then
 		args+=(--options runtime --entitlements "$ENTITLEMENTS")
+	fi
+	if [ -n "$KEYCHAIN" ]; then
+		args+=(--keychain "$KEYCHAIN")
 	fi
 	codesign "${args[@]}" "$@" "$path"
 }
