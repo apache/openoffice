@@ -20,13 +20,11 @@
 #
 #**************************************************************
 #
-# Fail when a Mach-O under the given paths still loads from or searches the
-# CPython staging prefix, which does not exist outside the build tree.
+# Fail when a Mach-O under the given paths still loads from or searches a
+# build-time location: the CPython staging prefix or an unresolved @_______
+# placeholder that macosx-change-install-names.pl should have rewritten.
 #
 #   ./solenv/bin/macosx-check-load-commands.sh <bundle-or-file> ...
-#
-# Unresolved @_______ placeholders are not rejected: gbuild executables such as
-# uno.bin and regcomp.bin still ship them and load only via DYLD_LIBRARY_PATH.
 
 set -euo pipefail
 
@@ -42,7 +40,7 @@ done < <(find "$@" -type f -print0 | xargs -0 file --no-pad --print0 -- 2>/dev/n
 bad=$(printf '%s\0' "${machos[@]}" | xargs -0 otool -l | awk '
 	/^[^[:space:]].*:$/ { file = $0; next }
 	$1 == "cmd" { cmd = $2; next }
-	cmd != "LC_ID_DYLIB" && ($1 == "name" || $1 == "path") && /python-inst/ {
+	cmd != "LC_ID_DYLIB" && ($1 == "name" || $1 == "path") && /python-inst|@_______/ {
 		print file " " cmd " " $2
 	}')
 if [ -n "$bad" ]; then

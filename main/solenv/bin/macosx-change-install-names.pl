@@ -37,6 +37,10 @@ sub action($$$)
          # while the libraries are installed in Contents/program.
          'app/BRANDBIN/URELIB' => '@executable_path/../program',
          'app/BRANDBIN/OOO' => '@executable_path/../program',
+         # gbuild calls its SDK and build-tool executable layers SDKBIN and NONEBIN.
+         'app/SDKBIN/URELIB' => '@executable_path',
+         'app/NONEBIN/URELIB' => '@__VIA_LIBRARY_PATH__',
+         'app/NONEBIN/OOO' => '@__VIA_LIBRARY_PATH__',
          'app/NONE/URELIB' => '@__VIA_LIBRARY_PATH__',
          'app/NONE/OOO' => '@__VIA_LIBRARY_PATH__',
          'app/NONE/NONE' => '@__VIA_LIBRARY_PATH__',
