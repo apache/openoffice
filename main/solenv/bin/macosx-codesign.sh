@@ -11,6 +11,11 @@
 #   -k, --keychain PATH keychain holding the identity (default: the search list)
 #       --hardened      force hardened runtime even for an ad-hoc signature
 #                       (implied by a real identity)
+#       --notarize PROFILE
+#                       after signing, submit to the Apple notary service with
+#                       the "xcrun notarytool store-credentials" keychain
+#                       profile PROFILE and staple the ticket (.dmg, or a .app
+#                       zipped for submission); needs a real identity
 #       --verify        only report the current signing state, change nothing
 #
 # The linker already ad-hoc-signs each Mach-O it produces, which is why the
@@ -29,6 +34,7 @@ SRCDIR=$(cd "$(dirname "$0")" && pwd)
 IDENTITY="${MACOSX_CODESIGNING_IDENTITY:--}"
 ENTITLEMENTS="$SRCDIR/macosx-codesign-entitlements.plist"
 KEYCHAIN="${MACOSX_CODESIGNING_KEYCHAIN:-}"
+NOTARY_PROFILE=""
 HARDENED=no
 VERIFY_ONLY=no
 TARGETS=()
@@ -45,8 +51,11 @@ while [ $# -gt 0 ]; do
 			[ $# -ge 2 ] || { echo "$1 requires an argument" >&2; exit 2; }
 			KEYCHAIN="$2"; shift 2 ;;
 		--hardened)        HARDENED=yes; shift ;;
+		--notarize)
+			[ $# -ge 2 ] || { echo "$1 requires an argument" >&2; exit 2; }
+			NOTARY_PROFILE="$2"; shift 2 ;;
 		--verify)          VERIFY_ONLY=yes; shift ;;
-		-h|--help)         sed -n '2,25p' "$0"; exit 0 ;;
+		-h|--help)         sed -n '2,29p' "$0"; exit 0 ;;
 		-*)                echo "unknown option: $1" >&2; exit 2 ;;
 		*)                 TARGETS+=("$1"); shift ;;
 	esac
@@ -54,6 +63,10 @@ done
 
 [ ${#TARGETS[@]} -gt 0 ] || { echo "usage: $(basename "$0") [options] <app-or-dmg> ..." >&2; exit 2; }
 [ "$IDENTITY" = "-" ] || HARDENED=yes
+if [ -n "$NOTARY_PROFILE" ] && [ "$IDENTITY" = "-" ]; then
+	echo "--notarize needs a Developer ID identity, not an ad-hoc signature" >&2
+	exit 2
+fi
 
 sign_one() {
 	local path="$1"; shift
@@ -83,6 +96,32 @@ sign_disk_image() {
 		args+=(--keychain "$KEYCHAIN")
 	fi
 	codesign "${args[@]}" "$path"
+}
+
+# notarytool exits 0 even when the notary service rejects the submission, so
+# a successful staple is the only proof the ticket exists. A .app cannot be
+# submitted as-is; it goes up zipped and the ticket is stapled to the bundle.
+notarize() {
+	local target="$1" upload="$1" zip=""
+	case "$target" in
+		*.dmg) ;;
+		*)
+			zip=$(mktemp -d)/$(basename "$target").zip
+			ditto -c -k --keepParent "$target" "$zip"
+			upload="$zip" ;;
+	esac
+	echo "==> notarizing $target  (profile: $NOTARY_PROFILE)"
+	if ! xcrun notarytool submit --wait --keychain-profile "$NOTARY_PROFILE" "$upload"; then
+		echo "notarization submission failed" >&2
+		[ -z "$zip" ] || rm -rf "$(dirname "$zip")"
+		return 1
+	fi
+	[ -z "$zip" ] || rm -rf "$(dirname "$zip")"
+	if ! xcrun stapler staple "$target"; then
+		echo "stapling failed: the submission was probably rejected; run 'xcrun notarytool log' for details" >&2
+		return 1
+	fi
+	echo "    stapled notarization ticket to $target"
 }
 
 report() {
@@ -198,11 +237,13 @@ for target in "${TARGETS[@]}"; do
 				exit 1
 			fi
 			sign_disk_image "$target"
+			[ -z "$NOTARY_PROFILE" ] || notarize "$target"
 			report "$target"
 			;;
 		*)
 			if [ "$VERIFY_ONLY" = yes ]; then report "$target"; continue; fi
 			sign_app "$target"
+			[ -z "$NOTARY_PROFILE" ] || notarize "$target"
 			;;
 	esac
 done
