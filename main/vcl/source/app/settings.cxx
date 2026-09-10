@@ -553,6 +553,7 @@ ImplStyleData::ImplStyleData( const ImplStyleData& rData ) :
 	maListBoxPreviewDefaultPixelSize = rData.maListBoxPreviewDefaultPixelSize;
 	mnListBoxPreviewDefaultLineWidth = rData.mnListBoxPreviewDefaultLineWidth;
 	mbPreviewUsesCheckeredBackground = rData.mbPreviewUsesCheckeredBackground;
+	maDefaultButtonTextColor    = rData.maDefaultButtonTextColor;
 }
 
 // -----------------------------------------------------------------------
@@ -586,6 +587,7 @@ void ImplStyleData::SetStandardStyles()
     maDarkShadowColor           = Color( COL_BLACK );
     maButtonTextColor           = Color( COL_BLACK );
     maButtonRolloverTextColor   = Color( COL_BLACK );
+    maDefaultButtonTextColor    = Color( COL_BLACK );
     maRadioCheckTextColor       = Color( COL_BLACK );
     maGroupTextColor            = Color( COL_BLACK );
     maLabelTextColor            = Color( COL_BLACK );
@@ -1011,6 +1013,7 @@ sal_Bool StyleSettings::operator ==( const StyleSettings& rSet ) const
          (mpData->maShadowColor             == rSet.mpData->maShadowColor)              &&
          (mpData->maDarkShadowColor         == rSet.mpData->maDarkShadowColor)          &&
          (mpData->maButtonTextColor         == rSet.mpData->maButtonTextColor)          &&
+         (mpData->maDefaultButtonTextColor  == rSet.mpData->maDefaultButtonTextColor)   &&
          (mpData->maRadioCheckTextColor     == rSet.mpData->maRadioCheckTextColor)      &&
          (mpData->maGroupTextColor          == rSet.mpData->maGroupTextColor)           &&
          (mpData->maLabelTextColor          == rSet.mpData->maLabelTextColor)           &&

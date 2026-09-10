@@ -967,7 +967,8 @@ static void ImplDrawBtnDropDownArrow( OutputDevice* pDev,
 void PushButton::ImplDrawPushButtonContent( OutputDevice* pDev, sal_uLong nDrawFlags,
                                             const Rectangle& rRect,
                                             bool bLayout,
-                                            bool bMenuBtnSep
+                                            bool bMenuBtnSep,
+                                            bool bNativeAccentBackground
                                             )
 {
     const StyleSettings&    rStyleSettings = GetSettings().GetStyleSettings();
@@ -987,10 +988,18 @@ void PushButton::ImplDrawPushButtonContent( OutputDevice* pDev, sal_uLong nDrawF
         aColor = Color( COL_BLACK );
     else if ( IsControlForeground() )
         aColor = GetControlForeground();
+    else if( bNativeAccentBackground )
+        // the theme filled this button with an accent color of its own choosing,
+        // so the label may not use the ordinary button text color. This has to be
+        // tested before the rollover case: such a button that is also hovered
+        // carries both flags, and the accent background is what it is actually
+        // painted with, so the rollover color would put dark text on it.
+        aColor = rStyleSettings.GetDefaultButtonTextColor();
     else if( nDrawFlags & WINDOW_DRAW_ROLLOVER )
         aColor = rStyleSettings.GetButtonRolloverTextColor();
     else
         aColor = rStyleSettings.GetButtonTextColor();
+
 
 	pDev->SetTextColor( aColor );
 
@@ -1215,20 +1224,36 @@ void PushButton::ImplDrawPushButton( bool bLayout )
 		Size aInRectSize( LogicToPixel( Size( aInRect.GetWidth(), aInRect.GetHeight() ) ) );
 		aControlValue.mbSingleLine = (aInRectSize.Height() < 2 * aFontSize.Height() );
 
+		// a flat button that is not hovered is deliberately left unpainted below,
+		// so bNativeOK alone does not tell whether the theme actually put a
+		// background behind the label - track that separately
+		bool bNativeBackgroundDrawn = false;
 		if( ((nState & CTRL_STATE_ROLLOVER)) || ! (GetStyle() & WB_FLATBUTTON) )
 		{
 			bNativeOK = DrawNativeControl( CTRL_PUSHBUTTON, PART_ENTIRE_CONTROL, aCtrlRegion, nState,
 							aControlValue, rtl::OUString()/*PushButton::GetText()*/ );
+			bNativeBackgroundDrawn = bNativeOK;
 		}
 		else
 		{
 			bNativeOK = true;
 		}
 
+		// A flat button is left unpainted until it is hovered, and the theme
+		// fills it with the accent color when it finally does paint it - so its
+		// label needs the accent foreground just as a default button's does. A
+		// non-flat button is painted in every state, so rollover on its own must
+		// not change the label, or an ordinary hovered button would get light
+		// text on its light face.
+		const bool bThemedAccentBackground = bNativeBackgroundDrawn &&
+			( (nState & CTRL_STATE_DEFAULT) != 0 ||
+			  ( (GetStyle() & WB_FLATBUTTON) != 0 && (nState & CTRL_STATE_ROLLOVER) != 0 ) );
+
 		// draw content using the same aInRect as non-native VCL would do
 		ImplDrawPushButtonContent( this,
 								   (nState&CTRL_STATE_ROLLOVER) ? WINDOW_DRAW_ROLLOVER : 0,
-								   aInRect, bLayout, bDrawMenuSep );
+								   aInRect, bLayout, bDrawMenuSep,
+								   bThemedAccentBackground );
 
 		if ( HasFocus() )
 			ShowFocus( ImplGetFocusRect() );

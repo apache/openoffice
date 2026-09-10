@@ -441,6 +441,11 @@ private:
     Size                            maListBoxPreviewDefaultPixelSize;
     sal_uInt16                      mnListBoxPreviewDefaultLineWidth;
     sal_Bool                        mbPreviewUsesCheckeredBackground;
+
+    // appended at the end on purpose: the accessors above are inline, so
+    // inserting a member anywhere else shifts the offsets every already
+    // compiled module reads mpData through
+    Color                           maDefaultButtonTextColor;
 };
 
 #define DEFAULT_WORKSPACE_GRADIENT_START_COLOR Color( 0x86, 0x8f, 0x97 )
@@ -548,6 +553,10 @@ public:
                                         { CopyData(); mpData->maButtonRolloverTextColor = rColor; }
     const Color&                    GetButtonRolloverTextColor() const
                                         { return mpData->maButtonRolloverTextColor; }
+    void                            SetDefaultButtonTextColor( const Color& rColor )
+                                        { CopyData(); mpData->maDefaultButtonTextColor = rColor; }
+    const Color&                    GetDefaultButtonTextColor() const
+                                        { return mpData->maDefaultButtonTextColor; }
     void                            SetRadioCheckTextColor( const Color& rColor )
                                         { CopyData(); mpData->maRadioCheckTextColor = rColor; }
     const Color&                    GetRadioCheckTextColor() const
