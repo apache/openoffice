@@ -53,6 +53,7 @@ set IdentifyQ to "[IdentifyQText]
 set IdentifyYES to "[IdentifyYES]"
 set IdentifyNO to "[IdentifyNO]"
 set installFailed to "[InstallFailedText]"
+set installSignedFailed to "[InstallSignedFailedText]"
 set installComplete to "[InstallCompleteText]
 
 [InstallCompleteText2]"
@@ -127,6 +128,16 @@ try
 on error
 	display dialog (choice as string) & appInvalid buttons {InstallLabel} default button 1 with icon 0
 	return 3 --wrong target-directory
+end try
+
+-- Adding files below Contents invalidates a sealed application's resource
+-- envelope. Refuse rather than silently break a Developer ID or ad-hoc seal.
+try
+	do shell script "/usr/bin/codesign --display " & quoted form of (choice as string)
+	display dialog installSignedFailed buttons {OKLabel} default button 1 with icon 0
+	return 4
+on error
+	-- Unsigned legacy installations can still accept the traditional language pack.
 end try
 
 (*

@@ -35,9 +35,15 @@ TARGETS=()
 
 while [ $# -gt 0 ]; do
 	case "$1" in
-		-i|--identity)     IDENTITY="$2"; shift 2 ;;
-		-e|--entitlements) ENTITLEMENTS="$2"; shift 2 ;;
-		-k|--keychain)     KEYCHAIN="$2"; shift 2 ;;
+		-i|--identity)
+			[ $# -ge 2 ] || { echo "$1 requires an argument" >&2; exit 2; }
+			IDENTITY="$2"; shift 2 ;;
+		-e|--entitlements)
+			[ $# -ge 2 ] || { echo "$1 requires an argument" >&2; exit 2; }
+			ENTITLEMENTS="$2"; shift 2 ;;
+		-k|--keychain)
+			[ $# -ge 2 ] || { echo "$1 requires an argument" >&2; exit 2; }
+			KEYCHAIN="$2"; shift 2 ;;
 		--hardened)        HARDENED=yes; shift ;;
 		--verify)          VERIFY_ONLY=yes; shift ;;
 		-h|--help)         sed -n '2,25p' "$0"; exit 0 ;;
@@ -55,26 +61,43 @@ sign_one() {
 	if [ "$IDENTITY" != "-" ]; then
 		args=(--force --sign "$IDENTITY" --timestamp)
 	fi
-	if [ "$HARDENED" = yes ]; then
-		args+=(--options runtime --entitlements "$ENTITLEMENTS")
-	fi
 	if [ -n "$KEYCHAIN" ]; then
 		args+=(--keychain "$KEYCHAIN")
 	fi
 	codesign "${args[@]}" "$@" "$path"
 }
 
-report() {
-	local app="$1"
-	echo "--- $app"
-	codesign -dv --verbose=2 "$app" 2>&1 | grep -E 'Identifier|Format|CodeDirectory|Authority|TeamIdentifier|Sealed' || true
-	if codesign --verify --deep --strict "$app" 2>/dev/null; then
-		echo "verify: OK"
+sign_executable() {
+	local path="$1"; shift
+	if [ "$HARDENED" = yes ]; then
+		sign_one "$path" --options runtime --entitlements "$ENTITLEMENTS" "$@"
 	else
-		echo "verify: FAILED"
-		codesign --verify --deep --strict --verbose=2 "$app" 2>&1 | tail -5
+		sign_one "$path" "$@"
 	fi
-	spctl --assess --type exec --verbose=4 "$app" 2>&1 | tail -2 || true
+}
+
+sign_disk_image() {
+	local path="$1"
+	local args=(--force --sign "$IDENTITY" --timestamp)
+	if [ -n "$KEYCHAIN" ]; then
+		args+=(--keychain "$KEYCHAIN")
+	fi
+	codesign "${args[@]}" "$path"
+}
+
+report() {
+	local target="$1"
+	echo "--- $target"
+	codesign -dv --verbose=2 "$target" 2>&1 | grep -E 'Identifier|Format|CodeDirectory|Authority|TeamIdentifier|Sealed' || true
+	if ! codesign --verify --deep --strict --verbose=2 "$target"; then
+		echo "verify: FAILED" >&2
+		return 1
+	fi
+	echo "verify: OK"
+	case "$target" in
+		*.dmg) spctl --assess --type open --context context:primary-signature --verbose=4 "$target" || true ;;
+		*)     spctl --assess --type exec --verbose=4 "$target" || true ;;
+	esac
 }
 
 # codesign rewrites every Mach-O it signs and writes _CodeSignature/ into
@@ -90,6 +113,10 @@ open_for_signing() {
 
 sign_app() {
 	local app="$1"
+	[ -d "$app/Contents" ] && [ -f "$app/Contents/Info.plist" ] || {
+		echo "not an application bundle: $app" >&2
+		return 1
+	}
 	echo "==> signing $app  (identity: $IDENTITY, hardened: $HARDENED)"
 
 	# Quarantine and other xattrs make codesign fail or produce an unstable seal.
@@ -109,10 +136,25 @@ sign_app() {
 
 	# Find every Mach-O with one batched file(1) run instead of a process per
 	# file (an installation holds ~10k). --print0 emits "path\0: type\n".
-	local machos=() f type
+	local machos=() executable_machos=() f type
 	while IFS= read -r -d '' f && IFS= read -r type; do
-		case "$type" in ": Mach-O"*) machos+=("$f") ;; esac
+		case "$type" in
+			": Mach-O"*)
+				machos+=("$f")
+				case "$type" in *" executable"*) executable_machos+=("$f") ;; esac
+				;;
+		esac
 	done < <(find "$app" -type f -print0 | xargs -0 file --no-pad --print0 -- 2>/dev/null)
+	if [ ${#machos[@]} -gt 0 ]; then
+		local bad_load_commands
+		bad_load_commands=$(printf '%s\0' "${machos[@]}" | xargs -0 otool -L 2>/dev/null |
+			grep -E 'python-inst|@_______' || true)
+		if [ -n "$bad_load_commands" ]; then
+			echo "unrelocated Mach-O load commands in $app:" >&2
+			echo "$bad_load_commands" >&2
+			return 1
+		fi
+	fi
 	# codesign rewrites a Mach-O through a temporary file beside it, so the
 	# containing directory has to be writable as well.
 	if [ ${#machos[@]} -gt 0 ]; then
@@ -123,12 +165,16 @@ sign_app() {
 	fi
 	for b in ${bundles[@]+"${bundles[@]}"}; do open_for_signing "$b"; done
 
-	# 1. every Mach-O object, deepest path first
+	# 1. every Mach-O object, deepest path first. Process entitlements belong
+	# on executables; dylibs and plug-ins inherit the host process's policy.
 	local count=0
 	if [ ${#machos[@]} -gt 0 ]; then
 		while IFS= read -r f; do
 			case " ${main_execs[*]-} " in *" $f "*) continue ;; esac
-			sign_one "$f"
+			case " ${executable_machos[*]-} " in
+				*" $f "*) sign_executable "$f" ;;
+				*)         sign_one "$f" ;;
+			esac
 			count=$((count + 1))
 		done < <(printf '%s\n' "${machos[@]}" | awk '{ print gsub(/\//,"/") "\t" $0 }' | sort -rn | cut -f2-)
 	fi
@@ -137,12 +183,15 @@ sign_app() {
 	# 2. nested bundles, deepest first, so each seal covers already-signed contents
 	for b in ${bundles[@]+"${bundles[@]}"}; do
 		[ "$b" = "$app" ] && continue
-		sign_one "$b"
+		case "$b" in
+			*.app) sign_executable "$b" ;;
+			*)     sign_one "$b" ;;
+		esac
 		echo "    sealed nested bundle: ${b#"$app"/}"
 	done
 
 	# 3. the app bundle itself
-	sign_one "$app"
+	sign_executable "$app"
 	echo "    sealed $app"
 	report "$app"
 }
@@ -157,7 +206,7 @@ for target in "${TARGETS[@]}"; do
 				echo "refusing to ad-hoc sign a .dmg (pointless); pass -i <Developer ID>" >&2
 				exit 1
 			fi
-			codesign --force --sign "$IDENTITY" --timestamp "$target"
+			sign_disk_image "$target"
 			report "$target"
 			;;
 		*)

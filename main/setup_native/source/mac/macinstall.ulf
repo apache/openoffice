@@ -58,6 +58,9 @@ en-US = "No, abort installation"
 [InstallFailedText]
 en-US = "Installation failed."
 
+[InstallSignedFailedText]
+en-US = "This add-on cannot modify a signed [PRODUCTNAME] application. Install a complete language-specific application instead."
+
 [InstallCompleteText]
 en-US = "Installation of [PRODUCTNAME] language pack completed."
 

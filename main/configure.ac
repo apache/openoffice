@@ -987,6 +987,9 @@ AC_ARG_WITH(macosx-codesigning-identity,
                           Code-sign the macOS application bundle and disk image
                           while packaging, with this codesign identity
                           ("-" for ad-hoc). Unset: package unsigned, as before.
+						  Traditional macOS language packs cannot be installed
+						  into a signed application because that would invalidate
+						  its resource seal.
 
                               Usage: --with-macosx-codesigning-identity="Developer ID Application: ..."
 ],with_macosx_codesigning_identity=$withval,)
@@ -8293,5 +8296,4 @@ else
    fi
    echo
 fi
-
 

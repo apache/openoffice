@@ -34,6 +34,13 @@ use installer::strip;
 use installer::systemactions;
 use installer::worker;
 
+sub shell_quote
+{
+	my ( $value ) = @_;
+	$value =~ s/'/'"'"'/g;
+	return "'$value'";
+}
+
 ####################################################
 # Checking if the simple packager is required.
 # This can be achieved by setting the global
@@ -496,7 +503,9 @@ sub create_package
 			if ($$translationfileref eq "") { installer::exiter::exit_program("ERROR: Could not find Apple script translation file $translationfilename!", "create_package"); }
 
 			$scriptfilename = $contentsfolder . "/" . $scriptrealfilename;
-			$scripthelperrealfilename = $contentsfolder . "/" . $scripthelperrealfilename;
+			my $macosfolder = $contentsfolder . "/MacOS";
+			installer::systemactions::create_directory($macosfolder);
+			$scripthelperrealfilename = $macosfolder . "/" . $scripthelperrealfilename;
 
 			installer::systemactions::copy_one_file($$scriptref, $scriptfilename);
 			installer::systemactions::copy_one_file($$scripthelperref, $scripthelperrealfilename);
@@ -548,8 +557,10 @@ sub create_package
 			my $signscript = $ENV{'SOLARENV'} . "/bin/macosx-codesign.sh";
 			foreach my $appdir ( glob("$localtempdir/$folder/*.app") )
 			{
-				my $signcall = "$signscript -i \"$ENV{'MACOSX_CODESIGNING_IDENTITY'}\" \"$appdir\"";
-				my $signreturn = system($signcall);
+				my @signcall = ($signscript, "-i", $ENV{'MACOSX_CODESIGNING_IDENTITY'});
+				push(@signcall, "-k", $ENV{'MACOSX_CODESIGNING_KEYCHAIN'}) if $ENV{'MACOSX_CODESIGNING_KEYCHAIN'};
+				push(@signcall, $appdir);
+				my $signreturn = system(@signcall);
 				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $appdir!", "create_package"); }
 				$installer::logger::Lang->print("Success: Code-signed $appdir\n");
 			}
@@ -564,9 +575,14 @@ sub create_package
 		# "-fs HFS+" is not optional: left to itself "hdiutil create" makes an
 		# APFS image on recent macOS, which will not mount before 10.12.
 		# "makehybrid -hfs" always produced HFS+.
-		$systemcall = "cd $localtempdir && hdiutil create -srcfolder $folder -volname \"$volume_name\" -fs HFS+ -format UDZO -ov $archive";
+		$systemcall = "cd " . shell_quote($localtempdir) .
+			" && hdiutil create -srcfolder " . shell_quote($folder) .
+			" -volname " . shell_quote($volume_name) .
+			" -fs HFS+ -format UDZO -ov " . shell_quote($archive);
         if (( $ref ne "" ) && ( $$ref ne "" )) {
-			$systemcall .= " && hdiutil unflatten $archive && Rez -a $$ref -o $archive && hdiutil flatten $archive";
+			$systemcall .= " && hdiutil unflatten " . shell_quote($archive) .
+				" && Rez -a " . shell_quote($$ref) . " -o " . shell_quote($archive) .
+				" && hdiutil flatten " . shell_quote($archive);
 		}
 	}
 	else
@@ -617,8 +633,10 @@ sub create_package
 			    ( $ENV{'MACOSX_CODESIGNING_IDENTITY'} ne "-" ))
 			{
 				my $signscript = $ENV{'SOLARENV'} . "/bin/macosx-codesign.sh";
-				my $signcall = "$signscript -i \"$ENV{'MACOSX_CODESIGNING_IDENTITY'}\" \"$archive\"";
-				my $signreturn = system($signcall);
+				my @signcall = ($signscript, "-i", $ENV{'MACOSX_CODESIGNING_IDENTITY'});
+				push(@signcall, "-k", $ENV{'MACOSX_CODESIGNING_KEYCHAIN'}) if $ENV{'MACOSX_CODESIGNING_KEYCHAIN'};
+				push(@signcall, $archive);
+				my $signreturn = system(@signcall);
 				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $archive!", "create_package"); }
 				$installer::logger::Lang->print("Success: Code-signed $archive\n");
 			}

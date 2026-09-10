@@ -53,6 +53,7 @@ set IdentifyQ to "[IdentifyQText]
 set IdentifyYES to "[IdentifyYES]"
 set IdentifyNO to "[IdentifyNO]"
 set installFailed to "[InstallFailedText]"
+set installSignedFailed to "[InstallSignedFailedText]"
 set installComplete to "[InstallCompleteTextPatch]"
 
 set sourcedir to (do shell script "dirname " & quoted form of POSIX path of (path to of me))
@@ -125,6 +126,15 @@ try
 on error
 	display dialog (choice as string) & appInvalid buttons {InstallLabel} default button 1 with icon 0
 	return 3 --wrong target-directory
+end try
+
+-- A patch changes sealed bundle contents and would invalidate the application.
+try
+	do shell script "/usr/bin/codesign --display " & quoted form of (choice as string)
+	display dialog installSignedFailed buttons {OKLabel} default button 1 with icon 0
+	return 4
+on error
+	-- Preserve support for unsigned legacy installations.
 end try
 
 (*
