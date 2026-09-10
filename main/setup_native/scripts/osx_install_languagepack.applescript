@@ -130,10 +130,10 @@ on error
 	return 3 --wrong target-directory
 end try
 
--- Adding files below Contents invalidates a sealed application's resource
--- envelope. Refuse rather than silently break a Developer ID or ad-hoc seal.
+-- Adding files below Contents would break a sealed application. Test for the seal
+-- itself: codesign --display also accepts the linker's ad-hoc signature on arm64.
 try
-	do shell script "/usr/bin/codesign --display " & quoted form of (choice as string)
+	do shell script "test -e " & quoted form of ((choice as string) & "/Contents/_CodeSignature/CodeResources")
 	display dialog installSignedFailed buttons {OKLabel} default button 1 with icon 0
 	return 4
 on error

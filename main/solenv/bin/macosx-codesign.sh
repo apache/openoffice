@@ -145,16 +145,7 @@ sign_app() {
 				;;
 		esac
 	done < <(find "$app" -type f -print0 | xargs -0 file --no-pad --print0 -- 2>/dev/null)
-	if [ ${#machos[@]} -gt 0 ]; then
-		local bad_load_commands
-		bad_load_commands=$(printf '%s\0' "${machos[@]}" | xargs -0 otool -L 2>/dev/null |
-			grep -E 'python-inst|@_______' || true)
-		if [ -n "$bad_load_commands" ]; then
-			echo "unrelocated Mach-O load commands in $app:" >&2
-			echo "$bad_load_commands" >&2
-			return 1
-		fi
-	fi
+	"$SRCDIR/macosx-check-load-commands.sh" "$app"
 	# codesign rewrites a Mach-O through a temporary file beside it, so the
 	# containing directory has to be writable as well.
 	if [ ${#machos[@]} -gt 0 ]; then

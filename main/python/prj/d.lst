@@ -96,17 +96,10 @@ mkdir: %_DEST%\inc%_EXT%\python\cpython
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\xmlrpc\* %_DEST%\lib%_EXT%\python\xmlrpc\*
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\zoneinfo\* %_DEST%\lib%_EXT%\python\zoneinfo\*
 ..\%__SRC%\misc\build\Python-3.11.15\Makefile %_DEST%\lib%_EXT%\python\python3.11\config\Makefile
-# _sysconfigdata filename is platform-mangled (e.g. _sysconfigdata__darwin_darwin.py on macOS,
-# _sysconfigdata__linux_x86_64-linux-gnu.py on Linux). On Linux, makefile.mk's BUILD_ACTION
-# renames the generated file to the plain name below before delivery runs. The source below
-# is deliberately NOT a wildcard: deliver.pl's
-# glob_line() only renames-on-copy when the destination also has a wildcard; paired with a
-# literal destination, a wildcard source makes it treat the destination as a directory and
-# append the matched filename onto it, producing a bogus nested path.
-..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata.py %_DEST%\lib%_EXT%\python\_sysconfigdata.py
-# Preserve the platform-mangled module that Python's sysconfig imports. Linux
-# renames it above, so this wildcard is effective only where one remains.
+# sysconfig imports the platform-named module (e.g. _sysconfigdata__darwin_darwin.py) by
+# that name, so it must keep it: with both sides wildcarded, deliver.pl keeps the filename.
 ..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata_*.py %_DEST%\lib%_EXT%\python\*.py
+..\%__SRC%\misc\build\python-inst\lib64\python3.11\_sysconfigdata_*.py %_DEST%\lib%_EXT%\python\*.py
 ..\pyversion.mk %_DEST%\inc%_EXT%\pyversion.mk
 ..\pyversion_dmake.mk %_DEST%\inc%_EXT%\pyversion_dmake.mk
 

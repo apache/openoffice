@@ -83,10 +83,6 @@ $(CONTENTS)$/%.plist : mdimporter/%.plist
 $(MACOS)$/OOoSpotlightImporter: $(SLOFILES)
     $(MKDIRHIER) $(@:d)
     $(CC) -o $(MACOS)$/OOoSpotlightImporter $(SLOFILES:s/.obj/.o/) $(EXTRA_LINKFLAGS) $(BUNDLELIBS) -bundle
-# we have to change the zlib install name, otherwise the plugin will not work
-    .IF "$(SYSTEM_ZLIB)"=="NO"
-    install_name_tool -change @executable_path/libz.1.dylib @loader_path/../../../../../program/libz.1.dylib $(MACOS)$/OOoSpotlightImporter
-    .ENDIF
 
 #the resources are just copied
 $(RESOURCES)$/% : mdimporter/%

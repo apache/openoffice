@@ -117,20 +117,13 @@ CONFIGURE_ACTION += --disable-ipv6
 .ENDIF
 BUILD_ACTION=$(ENV_BUILD) $(GNUMAKE) -j$(EXTMAXPROCESS) && $(GNUMAKE) install && chmod -R ug+w $(MYCWD)/python-inst && chmod g+w Include
 
-.IF "$(OS)"=="LINUX"
-# CPython's sysconfig module names its generated data module after the
-# platform/ABI (e.g. _sysconfigdata__linux_x86_64-linux-gnu.py) instead of
-# the plain "_sysconfigdata.py" that main/python/prj/d.lst delivers. Rename
-# it in place so delivery finds the name it's looking for.
-BUILD_ACTION+= && for d in $(MYCWD)/python-inst/lib/python3.11 $(MYCWD)/python-inst/lib64/python3.11; do test -d "$$d" && (cd "$$d" && for f in _sysconfigdata_*.py; do test -f "$$f" && mv -f "$$f" _sysconfigdata.py; done); done; true
-.ENDIF
-
 .IF "$(OS)"=="MACOSX"
 # CPython records its temporary installation prefix in the interpreter's load
 # command and the dylib ID. Both files are packaged together in program/.
-BUILD_ACTION+= && (cd $(MYCWD)/python-inst/lib/python3.11 && for f in _sysconfigdata_*.py; do test -f "$$f" && cp -f "$$f" _sysconfigdata.py; done)
 BUILD_ACTION+= && install_name_tool -id @loader_path/libpython3.11.dylib $(MYCWD)/python-inst/lib/libpython3.11.dylib
 BUILD_ACTION+= && install_name_tool -change $(MYCWD)/python-inst/lib/libpython3.11.dylib @executable_path/libpython3.11.dylib $(MYCWD)/python-inst/bin/python3.11
+# install_name_tool -change succeeds silently when the old name does not match.
+BUILD_ACTION+= && $(SOLARENV)$/bin$/macosx-check-load-commands.sh $(MYCWD)/python-inst/bin/python3.11
 .ENDIF
 
 .ELSE

@@ -471,11 +471,14 @@ sub create_package
 				$installer::logger::Lang->print($infoline);
 			}
 
+			# codesign treats loose files in Contents as unsigned nested code.
+			my $resourcesfolder = $contentsfolder . "/Resources";
 			my $sourcefile = $appfolder . "/" . $tarballname;
-			my $destfile = $contentsfolder . "/" . $tarballname;
+			my $destfile = $resourcesfolder . "/" . $tarballname;
 
 			installer::systemactions::remove_complete_directory($contentsfolder);
 			installer::systemactions::create_directory($contentsfolder);
+			installer::systemactions::create_directory($resourcesfolder);
 
 			installer::systemactions::copy_one_file($sourcefile, $destfile);
 			unlink($sourcefile);
@@ -502,7 +505,7 @@ sub create_package
 			my $translationfileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$translationfilename, $includepatharrayref, 0);
 			if ($$translationfileref eq "") { installer::exiter::exit_program("ERROR: Could not find Apple script translation file $translationfilename!", "create_package"); }
 
-			$scriptfilename = $contentsfolder . "/" . $scriptrealfilename;
+			$scriptfilename = $resourcesfolder . "/" . $scriptrealfilename;
 			my $macosfolder = $contentsfolder . "/MacOS";
 			installer::systemactions::create_directory($macosfolder);
 			$scripthelperrealfilename = $macosfolder . "/" . $scripthelperrealfilename;
@@ -529,9 +532,7 @@ sub create_package
 			my $iconfile = "ooo3_installer.icns";
 			my $iconfileref = installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$iconfile, $includepatharrayref, 0);
 			if ($$iconfileref eq "") { installer::exiter::exit_program("ERROR: Could not find Apple script icon file $iconfile!", "create_package"); }
-			my $subdir = $contentsfolder . "/" . "Resources";
-			if ( ! -d $subdir ) { installer::systemactions::create_directory($subdir); }
-			$destfile = $subdir . "/" . $iconfile;
+			$destfile = $resourcesfolder . "/" . $iconfile;
 			installer::systemactions::copy_one_file($$iconfileref, $destfile);
 
 			my $infoplistfile = "Info.plist.langpack";
@@ -548,6 +549,13 @@ sub create_package
 			installer::files::save_file($destfile, $scriptfilecontent);
 
 			chdir $localfrom;
+		}
+
+		# A build-time load path left in a shipped Mach-O breaks at runtime, signed or not.
+		foreach my $appdir ( glob("$localtempdir/$folder/*.app") )
+		{
+			my $checkreturn = system($ENV{'SOLARENV'} . "/bin/macosx-check-load-commands.sh", $appdir);
+			if ( $checkreturn ) { installer::exiter::exit_program("ERROR: Unrelocated Mach-O load commands in $appdir!", "create_package"); }
 		}
 
 		# Code-sign the .app before it is sealed into the .dmg. Opt-in: without
