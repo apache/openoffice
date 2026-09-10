@@ -157,6 +157,18 @@ static void initNSApp()
     // activate our delegate methods
     [NSApp setDelegate: NSApp];
 
+    // Run in the light appearance regardless of the desktop setting. This is not
+    // a palette problem - the style settings are read from the system and follow
+    // Dark Mode correctly - but the icon sets are light-only artwork: all ~8000
+    // images in images.zip are dark line art meant for a light toolbar, and they
+    // are close to invisible on a dark one. The only light-on-dark set that
+    // exists is images_hicontrast.zip, which is accessibility artwork rather
+    // than a dark theme. Remove this once a dark icon theme exists and VCL can
+    // tell a dark color scheme apart from high contrast mode (today only
+    // StyleSettings::GetHighContrastMode() exists, and its ~355 call sites
+    // conflate the two).
+    [NSApp setAppearance: [NSAppearance appearanceNamed: NSAppearanceNameAqua]];
+
     [[NSNotificationCenter defaultCenter] addObserver: NSApp
                                           selector: @selector(systemColorsChanged:)
                                           name: NSSystemColorsDidChangeNotification

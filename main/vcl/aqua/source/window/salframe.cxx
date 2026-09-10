@@ -1248,7 +1248,12 @@ void AquaSalFrame::UpdateSettings( AllSettings& rSettings )
     StyleSettings aStyleSettings = rSettings.GetStyleSettings();
 
     // Background Color
-    Color aBackgroundColor = Color( 0xEC, 0xEC, 0xEC );
+    // Follow the system appearance rather than a fixed light palette: this is
+    // the colour AppKit paints window backgrounds with, so it tracks Dark Mode
+    // along with the NSColor lookups below and with what HITheme draws. The
+    // literal is only a fallback for a colour that fails to convert.
+    Color aBackgroundColor = getColor( [NSColor windowBackgroundColor],
+                                       Color( 0xEC, 0xEC, 0xEC ), mpNSWindow );
     aStyleSettings.Set3DColors( aBackgroundColor );
     aStyleSettings.SetFaceColor( aBackgroundColor );
     Color aInactiveTabColor( aBackgroundColor );
@@ -1309,6 +1314,20 @@ void AquaSalFrame::UpdateSettings( AllSettings& rSettings )
                                     aStyleSettings.GetMenuTextColor(), mpNSWindow ) );
     aStyleSettings.SetMenuTextColor( aMenuTextColor );
     aStyleSettings.SetMenuBarTextColor( aMenuTextColor );
+
+    // the aqua backend has the system paint the control background, but draws
+    // button labels itself, so the label colors have to be taken from the
+    // system explicitly - otherwise they stay at VCL's COL_BLACK default
+    Color aControlTextColor( getColor( [NSColor controlTextColor],
+                                       aStyleSettings.GetButtonTextColor(), mpNSWindow ) );
+    aStyleSettings.SetButtonTextColor( aControlTextColor );
+    aStyleSettings.SetButtonRolloverTextColor( aControlTextColor );
+
+    // the default button gets filled with the system accent color, so its
+    // label needs the matching foreground rather than the control text color
+    Color aDefaultButtonTextColor( getColor( [NSColor alternateSelectedControlTextColor],
+                                             Color( 0xFF, 0xFF, 0xFF ), mpNSWindow ) );
+    aStyleSettings.SetDefaultButtonTextColor( aDefaultButtonTextColor );
 
     aStyleSettings.SetCursorBlinkTime( 500 );
 
