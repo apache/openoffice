@@ -350,7 +350,19 @@ void BackingWindow::initBackground()
 {
     SetBackground();
 
-    bool bDark = GetSettings().GetStyleSettings().GetHighContrastMode();
+    // The dark image set was only ever reachable through high contrast mode, so
+    // on a dark desktop theme the Start Center painted its white card into an
+    // otherwise dark UI. Treat a dark face color the same way: the backing_*_hc
+    // images are a black version of the same card, which is what is wanted here
+    // even though nothing about the desktop is "high contrast".
+    const StyleSettings& rBackingStyle = GetSettings().GetStyleSettings();
+    const bool bHighContrast = rBackingStyle.GetHighContrastMode();
+    // A dark desktop theme is not high contrast, but the light card would be a
+    // white rectangle in an otherwise dark UI. It gets its own image set rather
+    // than borrowing the accessibility one, so the card tone can match the
+    // system window background.
+    const bool bDarkTheme = !bHighContrast && rBackingStyle.GetFaceColor().IsDark();
+    bool bDark = bHighContrast || bDarkTheme;
     if( bDark )
         maWelcomeTextColor = maLabelTextColor = Color( COL_WHITE );
     else if( mnLayoutStyle == 1 )
@@ -361,7 +373,9 @@ void BackingWindow::initBackground()
     Color aTextBGColor( bDark ? COL_BLACK : COL_WHITE );
 
     // select image set
-    ImageContainerRes aRes( FwkResId( bDark ? RES_BACKING_IMAGES_HC : RES_BACKING_IMAGES ) );
+    ImageContainerRes aRes( FwkResId( bHighContrast ? RES_BACKING_IMAGES_HC :
+                                      bDarkTheme    ? RES_BACKING_IMAGES_DARK :
+                                                      RES_BACKING_IMAGES ) );
 
     // scale middle segment
     Size aMiddleSize;

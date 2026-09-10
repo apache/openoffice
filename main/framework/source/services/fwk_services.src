@@ -209,6 +209,81 @@ Resource RES_BACKING_IMAGES_HC
 	};
 };
 
+// Dark (but not high contrast) desktop themes. Same artwork as the HC set with
+// the card body retoned from pure black to #1E1E1E so it sits correctly next to
+// a macOS dark window background; the icons are shared with the HC set.
+Resource RES_BACKING_IMAGES_DARK
+{
+	Bitmap BMP_BACKING_BACKGROUND_LEFT
+	{
+		File = "backing_dark.png" ;
+	};
+	Bitmap BMP_BACKING_BACKGROUND_MIDDLE
+	{
+		File = "backing_space_dark.png" ;
+	};
+	Bitmap BMP_BACKING_BACKGROUND_RIGHT
+	{
+		File = "backing_right_dark.png" ;
+	};
+	Bitmap BMP_BACKING_BACKGROUND_RTL_LEFT
+	{
+		File = "backing_rtl_left_dark.png" ;
+	};
+	Bitmap BMP_BACKING_BACKGROUND_RTL_RIGHT
+	{
+		File = "backing_rtl_right_dark.png" ;
+	};
+	Bitmap BMP_BACKING_EXT
+	{
+		File = "extension_32_hc.png" ;
+	};
+//	Bitmap BMP_BACKING_REG
+//	{
+//		File = "register_32_hc.png" ;
+//	};
+	Bitmap BMP_BACKING_INFO
+	{
+		File = "info_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_TPLREP
+	{
+		File = "addtemplate_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_WRITER
+	{
+		File = "odt_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_CALC
+	{
+		File = "ods_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_IMPRESS
+	{
+		File = "odp_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_DRAW
+	{
+		File = "odg_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_DATABASE
+	{
+		File = "odb_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_FORMULA
+	{
+		File = "odf_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_OPENFILE
+	{
+		File = "folder_32_hc.png" ;
+	};
+	Bitmap BMP_BACKING_OPENTEMPLATE
+	{
+		File = "templates_32_hc.png" ;
+	};
+};
+
 Window WIN_TABWINDOW
 {
 	OutputSize = TRUE ;
