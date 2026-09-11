@@ -1869,6 +1869,10 @@ if ( $platform =~ m/darwin/ )
     {
         ToFile( "MACOSX_CODESIGNING_KEYCHAIN", "@MACOSX_CODESIGNING_KEYCHAIN@", "e" );
     }
+    if ( "@MACOSX_NOTARY_PROFILE@" ne "" )
+    {
+        ToFile( "MACOSX_NOTARY_PROFILE", "@MACOSX_NOTARY_PROFILE@", "e" );
+    }
     ToFile( "LIBINTL_PREFIX",       "@LIBINTL_PREFIX@", "e" );
 }
 if ( $platform =~ m/freebsd/ )

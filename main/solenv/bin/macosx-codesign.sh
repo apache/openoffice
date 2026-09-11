@@ -16,6 +16,10 @@
 #                       the "xcrun notarytool store-credentials" keychain
 #                       profile PROFILE and staple the ticket (.dmg, or a .app
 #                       zipped for submission); needs a real identity
+#       --release       fail if the Gatekeeper (spctl) assessment rejects the
+#                       result, instead of only reporting it; ignored for an
+#                       ad-hoc identity, which spctl always rejects regardless
+#                       of notarization
 #       --verify        only report the current signing state, change nothing
 #
 # The linker already ad-hoc-signs each Mach-O it produces, which is why the
@@ -36,6 +40,7 @@ ENTITLEMENTS="$SRCDIR/macosx-codesign-entitlements.plist"
 KEYCHAIN="${MACOSX_CODESIGNING_KEYCHAIN:-}"
 NOTARY_PROFILE=""
 HARDENED=no
+RELEASE=no
 VERIFY_ONLY=no
 TARGETS=()
 
@@ -54,8 +59,9 @@ while [ $# -gt 0 ]; do
 		--notarize)
 			[ $# -ge 2 ] || { echo "$1 requires an argument" >&2; exit 2; }
 			NOTARY_PROFILE="$2"; shift 2 ;;
+		--release)         RELEASE=yes; shift ;;
 		--verify)          VERIFY_ONLY=yes; shift ;;
-		-h|--help)         sed -n '2,29p' "$0"; exit 0 ;;
+		-h|--help)         sed -n '2,33p' "$0"; exit 0 ;;
 		-*)                echo "unknown option: $1" >&2; exit 2 ;;
 		*)                 TARGETS+=("$1"); shift ;;
 	esac
@@ -122,21 +128,70 @@ notarize() {
 		return 1
 	fi
 	echo "    stapled notarization ticket to $target"
+	if ! xcrun stapler validate "$target"; then
+		echo "stapler validate: FAILED (staple reported success but does not validate)" >&2
+		return 1
+	fi
+	echo "    stapled ticket validates"
+}
+
+# hdiutil create/codesign only ever touch the staged tree before it goes into
+# the image; nothing checks the *finished* image's own structure, or that the
+# application actually mounts and verifies from inside it. See the "older
+# hdiutil makehybrid" note above sign_app() for why that distinction matters.
+verify_dmg_contents() {
+	local dmg="$1" mnt rc=0 app
+	if ! hdiutil verify "$dmg" >/dev/null; then
+		echo "hdiutil verify: FAILED" >&2
+		return 1
+	fi
+	echo "hdiutil verify: OK"
+
+	mnt=$(hdiutil attach -readonly -nobrowse "$dmg" | tail -1 | awk -F'\t' '{print $NF}')
+	if [ -z "$mnt" ] || [ ! -d "$mnt" ]; then
+		echo "could not mount $dmg to verify its contents" >&2
+		return 1
+	fi
+	for app in "$mnt"/*.app; do
+		[ -d "$app" ] || continue
+		if ! codesign --verify --deep --strict --verbose=2 "$app"; then
+			echo "enclosed application verify: FAILED ($app)" >&2
+			rc=1
+		fi
+	done
+	hdiutil detach "$mnt" -quiet
+	if [ "$rc" -eq 0 ]; then
+		echo "    enclosed application verifies from the mounted image"
+	fi
+	return "$rc"
 }
 
 report() {
-	local target="$1"
+	local target="$1" spctl_rc=0 dv
 	echo "--- $target"
-	codesign -dv --verbose=2 "$target" 2>&1 | grep -E 'Identifier|Format|CodeDirectory|Authority|TeamIdentifier|Sealed' || true
+	dv=$(codesign -dv --verbose=2 "$target" 2>&1) || true
+	printf '%s\n' "$dv" | grep -E 'Identifier|Format|CodeDirectory|Authority|TeamIdentifier|Sealed' || true
 	if ! codesign --verify --deep --strict --verbose=2 "$target"; then
 		echo "verify: FAILED" >&2
 		return 1
 	fi
 	echo "verify: OK"
 	case "$target" in
-		*.dmg) spctl --assess --type open --context context:primary-signature --verbose=4 "$target" || true ;;
-		*)     spctl --assess --type exec --verbose=4 "$target" || true ;;
+		*.dmg)
+			verify_dmg_contents "$target" || return 1
+			spctl --assess --type open --context context:primary-signature --verbose=4 "$target" || spctl_rc=$? ;;
+		*)     spctl --assess --type exec --verbose=4 "$target" || spctl_rc=$? ;;
 	esac
+	# spctl rejects every ad-hoc signature outright, notarized or not, so only
+	# a real signature's rejection is meaningful enough to fail the build on.
+	# Detect that from the target's own signature (an "Authority=" line means a
+	# real CA-chained identity; ad-hoc has none) rather than the -i/env
+	# default, so this is also correct when --verify checks an
+	# already-signed artifact without re-passing -i.
+	if [ "$spctl_rc" -ne 0 ] && [ "$RELEASE" = yes ] && printf '%s\n' "$dv" | grep -q 'Authority='; then
+		echo "spctl: FAILED (fatal under --release)" >&2
+		return 1
+	fi
 }
 
 # codesign rewrites every Mach-O it signs and writes _CodeSignature/ into
@@ -223,7 +278,6 @@ sign_app() {
 	# 3. the app bundle itself
 	sign_executable "$app"
 	echo "    sealed $app"
-	report "$app"
 }
 
 for target in "${TARGETS[@]}"; do
@@ -244,6 +298,10 @@ for target in "${TARGETS[@]}"; do
 			if [ "$VERIFY_ONLY" = yes ]; then report "$target"; continue; fi
 			sign_app "$target"
 			[ -z "$NOTARY_PROFILE" ] || notarize "$target"
+			# spctl rejects a Developer ID app that isn't notarized yet, so this
+			# must run after notarize, not inside sign_app() - see the .dmg
+			# branch above, which already had this order right.
+			report "$target"
 			;;
 	esac
 done

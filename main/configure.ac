@@ -1000,6 +1000,18 @@ AC_ARG_WITH(macosx-codesigning-keychain,
 
                               Usage: --with-macosx-codesigning-keychain=/path/to/build.keychain-db
 ],with_macosx_codesigning_keychain=$withval,)
+AC_ARG_WITH(macosx-notary-profile,
+[  --with-macosx-notary-profile
+                          After code-signing with a Developer ID identity, submit
+                          the application and disk image to Apple's notary service
+                          and staple the ticket, using this "xcrun notarytool
+                          store-credentials" keychain profile name. Requires
+                          --with-macosx-codesigning-identity to be a real
+                          Developer ID identity (not "-"). Unset: package signed
+                          but not notarized, as before.
+
+                              Usage: --with-macosx-notary-profile=my-notary-profile
+],with_macosx_notary_profile=$withval,)
 AC_ARG_WITH(rat-scan,
 [  --with-rat-scan         Scan source code for license headers.
                           Use as --with-rat-scan to automatically download pre-built Rat binaries.
@@ -4000,13 +4012,36 @@ dnl ===================================================================
 dnl Checks for programs.
 dnl ===================================================================
 
+dnl EPM is not needed for Windows, or when every requested package format is
+dnl handled directly by the simple packager (installer/simplepackage.pm)
+dnl rather than by EPM: "archive"/"installed" on any platform, and Darwin's
+dnl "dmg" - including the empty default, which resolves to "dmg" on Darwin
+dnl below. simplepackage.pm never invokes EPM for any of these three, so
+dnl requiring EPM to be present for e.g. a plain "dmg" or "archive dmg"
+dnl build serves no purpose.
+need_epm_for_packaging=yes
+if test "$_os" = "WINNT"; then
+   need_epm_for_packaging=no
+elif test "$with_package_format" = "archive" -o "$with_package_format" = "installed"; then
+   need_epm_for_packaging=no
+elif test "$_os" = "Darwin"; then
+   need_epm_for_packaging=no
+   for pkgformat_word in $with_package_format; do
+      case "$pkgformat_word" in
+         archive|installed|dmg) ;;
+         *) need_epm_for_packaging=yes ;;
+      esac
+   done
+fi
+
 AC_MSG_CHECKING([whether to enable EPM for packing])
 if test "$enable_epm" = "yes"; then
    AC_MSG_RESULT([yes])
    dnl ================================================================================
-   dnl Check for epm - not needed for Windows or building archive or installed formats
+   dnl Check for epm - not needed for Windows, or when the requested package
+   dnl format(s) are all handled without it (see need_epm_for_packaging above)
    dnl ================================================================================
-   if test "$_os" != "WINNT" -a "$with_package_format" != "archive" -a "$with_package_format" != "installed"; then
+   if test "$need_epm_for_packaging" = "yes"; then
       if test -n "$with_epm"; then
 	      EPM=$with_epm
       else
@@ -4150,13 +4185,13 @@ msi - Windows .msi
    fi
    if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
       if test "$_os" = "Darwin"; then
-         if test "$_osxpkgbuild" = "no"; then
-            AC_MSG_CHECKING([for PackageMaker availability])
-            if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
-               AC_MSG_ERROR([not installed. Please install Apples Dev Tools])
-            else
-               AC_MSG_RESULT([ok])
-            fi
+         AC_MSG_CHECKING([for PackageMaker availability])
+         if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
+            AC_MSG_ERROR([not installed. Apple's PackageMaker does not exist on
+current Xcode; the "osx" EPM format is obsolete on this platform - use "dmg"
+instead, or see MACOS_PACKAGING_EPM_REVIEW.md for a modern product-PKG path.])
+         else
+            AC_MSG_RESULT([ok])
          fi
       else
          AC_MSG_ERROR([PackageMaker needed to build OSX packages and you are not on OSX...])
@@ -4176,7 +4211,15 @@ else
    AC_MSG_RESULT([no])
    BUILD_EPM=NO
    EPM=NO
-   PKGFORMAT=native
+   if test "$_os" = "Darwin" -a "$need_epm_for_packaging" = "no"; then
+      dnl simplepackage.pm builds archive/installed/dmg without EPM, so
+      dnl --disable-epm should not discard a requested "dmg" (or Darwin's
+      dnl "dmg" default) the way it must for a format that does need EPM.
+      PKGFORMAT=dmg
+      test -z "$with_package_format" || PKGFORMAT="$with_package_format"
+   else
+      PKGFORMAT=native
+   fi
 fi
 AC_SUBST(BUILD_EPM)
 AC_SUBST(EPM_URL)
@@ -4584,6 +4627,7 @@ dnl Code signing during packaging: solenv/bin/modules/installer/simplepackage.pm
 dnl reads these from the environment (via set_soenv), so a bare "yes" is an error.
 MACOSX_CODESIGNING_IDENTITY=
 MACOSX_CODESIGNING_KEYCHAIN=
+MACOSX_NOTARY_PROFILE=
 if test "$with_macosx_codesigning_identity" = "yes"; then
    AC_MSG_ERROR([--with-macosx-codesigning-identity needs a codesign identity, or "-" for ad-hoc])
 fi
@@ -4593,11 +4637,21 @@ fi
 if test -n "$with_macosx_codesigning_keychain" -a "$with_macosx_codesigning_keychain" != "no" -a "$with_macosx_codesigning_keychain" != "yes"; then
    MACOSX_CODESIGNING_KEYCHAIN=$with_macosx_codesigning_keychain
 fi
+if test "$with_macosx_notary_profile" = "yes"; then
+   AC_MSG_ERROR([--with-macosx-notary-profile needs a notarytool keychain profile name])
+fi
+if test -n "$with_macosx_notary_profile" -a "$with_macosx_notary_profile" != "no"; then
+   if test "$MACOSX_CODESIGNING_IDENTITY" = "" -o "$MACOSX_CODESIGNING_IDENTITY" = "-"; then
+      AC_MSG_ERROR([--with-macosx-notary-profile needs --with-macosx-codesigning-identity set to a real Developer ID identity, not ad-hoc])
+   fi
+   MACOSX_NOTARY_PROFILE=$with_macosx_notary_profile
+fi
 AC_SUBST(MACOSX_DEPLOYMENT_TARGET)
 AC_SUBST(MACOSX_SDK_PATH)
 AC_SUBST(SDKROOT)
 AC_SUBST(MACOSX_CODESIGNING_IDENTITY)
 AC_SUBST(MACOSX_CODESIGNING_KEYCHAIN)
+AC_SUBST(MACOSX_NOTARY_PROFILE)
 
 
 dnl ===================================================================

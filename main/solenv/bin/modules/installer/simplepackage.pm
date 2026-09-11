@@ -423,7 +423,7 @@ sub create_package
 
 		if ( ! $allvariables->{'HIDELICENSEDIALOG'} )
 		{
-			installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$sla, $includepatharrayref, 0);
+			$ref = installer::scriptitems::get_sourcepath_from_filename_and_includepath( \$sla, $includepatharrayref, 0);
 		}
 
 		my $localtempdir = $tempdir;
@@ -567,6 +567,7 @@ sub create_package
 			{
 				my @signcall = ($signscript, "-i", $ENV{'MACOSX_CODESIGNING_IDENTITY'});
 				push(@signcall, "-k", $ENV{'MACOSX_CODESIGNING_KEYCHAIN'}) if $ENV{'MACOSX_CODESIGNING_KEYCHAIN'};
+				push(@signcall, "--notarize", $ENV{'MACOSX_NOTARY_PROFILE'}) if $ENV{'MACOSX_NOTARY_PROFILE'};
 				push(@signcall, $appdir);
 				my $signreturn = system(@signcall);
 				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $appdir!", "create_package"); }
@@ -643,6 +644,7 @@ sub create_package
 				my $signscript = $ENV{'SOLARENV'} . "/bin/macosx-codesign.sh";
 				my @signcall = ($signscript, "-i", $ENV{'MACOSX_CODESIGNING_IDENTITY'});
 				push(@signcall, "-k", $ENV{'MACOSX_CODESIGNING_KEYCHAIN'}) if $ENV{'MACOSX_CODESIGNING_KEYCHAIN'};
+				push(@signcall, "--notarize", $ENV{'MACOSX_NOTARY_PROFILE'}) if $ENV{'MACOSX_NOTARY_PROFILE'};
 				push(@signcall, $archive);
 				my $signreturn = system(@signcall);
 				if ( $signreturn ) { installer::exiter::exit_program("ERROR: Could not code-sign $archive!", "create_package"); }

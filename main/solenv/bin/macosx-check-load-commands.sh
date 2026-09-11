@@ -34,7 +34,13 @@ machos=()
 while IFS= read -r -d '' f && IFS= read -r type; do
 	case "$type" in ": Mach-O"*) machos+=("$f") ;; esac
 done < <(find "$@" -type f -print0 | xargs -0 file --no-pad --print0 -- 2>/dev/null)
-[ ${#machos[@]} -gt 0 ] || exit 0
+# Every caller passes a real app bundle or binary that is expected to contain
+# Mach-O content; zero matches means a wrong path or missing build output, not
+# "nothing to check" - fail loudly instead of silently passing.
+if [ ${#machos[@]} -eq 0 ]; then
+	echo "no Mach-O files found under: $*" >&2
+	exit 1
+fi
 
 # A dylib's own ID (LC_ID_DYLIB) is never used to locate it at runtime.
 bad=$(printf '%s\0' "${machos[@]}" | xargs -0 otool -l | awk '

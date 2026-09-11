@@ -123,7 +123,7 @@ BUILD_ACTION=$(ENV_BUILD) $(GNUMAKE) -j$(EXTMAXPROCESS) && $(GNUMAKE) install &&
 BUILD_ACTION+= && install_name_tool -id @loader_path/libpython3.11.dylib $(MYCWD)/python-inst/lib/libpython3.11.dylib
 BUILD_ACTION+= && install_name_tool -change $(MYCWD)/python-inst/lib/libpython3.11.dylib @executable_path/libpython3.11.dylib $(MYCWD)/python-inst/bin/python3.11
 # install_name_tool -change succeeds silently when the old name does not match.
-BUILD_ACTION+= && $(SOLARENV)$/bin$/macosx-check-load-commands.sh $(MYCWD)/python-inst/bin/python3.11
+BUILD_ACTION+= && $(SOLARENV)$/bin$/macosx-check-load-commands.sh $(MYCWD)/python-inst/bin/python3.11 $(MYCWD)/python-inst/lib/libpython3.11.dylib
 .ENDIF
 
 .ELSE
