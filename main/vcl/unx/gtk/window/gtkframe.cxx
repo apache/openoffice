@@ -382,6 +382,11 @@ GtkSalFrame::GraphicsHolder::~GraphicsHolder()
 
 GtkSalFrame::GtkSalFrame( SalFrame* pParent, sal_uLong nStyle )
 {
+    memset( &m_aSystemData, 0, sizeof(m_aSystemData) );
+    m_aForeignParentWindow = None;
+    m_aForeignTopLevelWindow = None;
+    m_pForeignParent = NULL;
+    m_pForeignTopLevel = NULL;
     m_nScreen = getDisplay()->GetDefaultScreenNumber();
 	getDisplay()->registerFrame( this );
     m_bDefaultPos		= true;
@@ -392,6 +397,11 @@ GtkSalFrame::GtkSalFrame( SalFrame* pParent, sal_uLong nStyle )
 
 GtkSalFrame::GtkSalFrame( SystemParentData* pSysData )
 {
+    memset( &m_aSystemData, 0, sizeof(m_aSystemData) );
+    m_aForeignParentWindow = None;
+    m_aForeignTopLevelWindow = None;
+    m_pForeignParent = NULL;
+    m_pForeignTopLevel = NULL;
     m_nScreen = getDisplay()->GetDefaultScreenNumber();
 	getDisplay()->registerFrame( this );
     getDisplay()->setHaveSystemChildFrame();
@@ -413,6 +423,15 @@ GtkSalFrame::~GtkSalFrame()
     if( m_pParent )
         m_pParent->m_aChildren.remove( this );
 
+    // Early explicit removal of registered native and foreign window IDs
+    if( m_pWindow && m_pWindow->window )
+        getDisplay()->deregisterFrameWindow( GDK_WINDOW_XWINDOW(m_pWindow->window), this );
+    if( m_aForeignParentWindow != None )
+        getDisplay()->deregisterFrameWindow( (XLIB_Window)m_aForeignParentWindow, this );
+    if( m_aForeignTopLevelWindow != None )
+        getDisplay()->deregisterFrameWindow( (XLIB_Window)m_aForeignTopLevelWindow, this );
+
+    // Final safety net cleanup for frame list and window map
 	getDisplay()->deregisterFrame( this );
 
     if( m_pRegion )
@@ -573,6 +592,10 @@ void GtkSalFrame::InitCommon()
     // show the widgets
     gtk_widget_show( GTK_WIDGET(m_pFixedContainer) );
 
+    XLIB_Window aOldWindow = (XLIB_Window)m_aSystemData.aWindow;
+    if( aOldWindow != None )
+        getDisplay()->deregisterFrameWindow( aOldWindow, this );
+
     // realize the window, we need an XWindow id
     gtk_widget_realize( m_pWindow );
 
@@ -580,7 +603,10 @@ void GtkSalFrame::InitCommon()
     SalDisplay* pDisp = GetX11SalData()->GetDisplay();
     m_aSystemData.nSize 		= sizeof( SystemChildData );
     m_aSystemData.pDisplay		= pDisp->GetDisplay();
-    m_aSystemData.aWindow		= GDK_WINDOW_XWINDOW(m_pWindow->window);
+    if( m_pWindow && m_pWindow->window )
+        m_aSystemData.aWindow	= GDK_WINDOW_XWINDOW(m_pWindow->window);
+    else
+        m_aSystemData.aWindow   = None;
     m_aSystemData.pSalFrame		= this;
     m_aSystemData.pWidget		= m_pWindow;
     m_aSystemData.pVisual		= pDisp->GetVisual( m_nScreen ).GetVisual();
@@ -590,6 +616,9 @@ void GtkSalFrame::InitCommon()
     m_aSystemData.pAppContext	= NULL;
     m_aSystemData.aShellWindow	= m_aSystemData.aWindow;
     m_aSystemData.pShellWidget	= m_aSystemData.pWidget;
+
+    if( m_aSystemData.aWindow != None )
+        getDisplay()->registerFrameWindow( (XLIB_Window)m_aSystemData.aWindow, this );
 
 
     // fake an initial geometry, gets updated via configure event or SetPosSize
@@ -915,6 +944,11 @@ void GtkSalFrame::Init( SystemParentData* pSysData )
     }
     m_nStyle = SAL_FRAME_STYLE_PLUG;
 	InitCommon();
+
+    if( m_aForeignParentWindow != None )
+        getDisplay()->registerFrameWindow( (XLIB_Window)m_aForeignParentWindow, this );
+    if( m_aForeignTopLevelWindow != None && m_aForeignTopLevelWindow != m_aForeignParentWindow )
+        getDisplay()->registerFrameWindow( (XLIB_Window)m_aForeignTopLevelWindow, this );
 
     m_pForeignParent = gdk_window_foreign_new_for_display( getGdkDisplay(), m_aForeignParentWindow );
     gdk_window_set_events( m_pForeignParent, GDK_STRUCTURE_MASK );
@@ -1729,17 +1763,26 @@ void GtkSalFrame::moveToScreen( int nScreen )
     {
         m_nScreen = nScreen;
         gtk_window_set_screen( GTK_WINDOW(m_pWindow), pScreen );
+        XLIB_Window aOldWin = (XLIB_Window)m_aSystemData.aWindow;
+        if( aOldWin != None )
+            getDisplay()->deregisterFrameWindow( aOldWin, this );
+
         // realize the window, we need an XWindow id
         gtk_widget_realize( m_pWindow );
         // update system data
         GtkSalDisplay* pDisp = getDisplay();
-        m_aSystemData.aWindow		= GDK_WINDOW_XWINDOW(m_pWindow->window);
+        if( m_pWindow && m_pWindow->window )
+            m_aSystemData.aWindow	= GDK_WINDOW_XWINDOW(m_pWindow->window);
+        else
+            m_aSystemData.aWindow   = None;
         m_aSystemData.pVisual		= pDisp->GetVisual( m_nScreen ).GetVisual();
         m_aSystemData.nScreen		= nScreen;
         m_aSystemData.nDepth		= pDisp->GetVisual( m_nScreen ).GetDepth();
         m_aSystemData.aColormap		= pDisp->GetColormap( m_nScreen ).GetXColormap();
         m_aSystemData.pAppContext	= NULL;
         m_aSystemData.aShellWindow	= m_aSystemData.aWindow;
+        if( m_aSystemData.aWindow != None )
+            pDisp->registerFrameWindow( (XLIB_Window)m_aSystemData.aWindow, this );
         // update graphics if necessary
         for( unsigned int i = 0; i < sizeof(m_aGraphics)/sizeof(m_aGraphics[0]); i++ )
         {
@@ -2404,14 +2447,34 @@ void GtkSalFrame::createNewWindow( XLIB_Window aNewParent, bool bXEmbed, int nSc
     }
     if( m_pRegion )
         gdk_region_destroy( m_pRegion );
+    if( m_pWindow && m_pWindow->window )
+        getDisplay()->deregisterFrameWindow( GDK_WINDOW_XWINDOW(m_pWindow->window), this );
+    if( m_aForeignParentWindow != None )
+        getDisplay()->deregisterFrameWindow( (XLIB_Window)m_aForeignParentWindow, this );
+    if( m_aForeignTopLevelWindow != None )
+        getDisplay()->deregisterFrameWindow( (XLIB_Window)m_aForeignTopLevelWindow, this );
     if( m_pFixedContainer )
         gtk_widget_destroy( GTK_WIDGET(m_pFixedContainer) );
     if( m_pWindow )
         gtk_widget_destroy( m_pWindow );
+    m_pFixedContainer = NULL;
+    m_pWindow = NULL;
+
+    m_aSystemData.aWindow = None;
+    m_aSystemData.aShellWindow = None;
+    m_aForeignParentWindow = None;
+    m_aForeignTopLevelWindow = None;
+
     if( m_pForeignParent )
+    {
         g_object_unref( G_OBJECT(m_pForeignParent) );
+        m_pForeignParent = NULL;
+    }
     if( m_pForeignTopLevel )
+    {
         g_object_unref( G_OBJECT(m_pForeignTopLevel) );
+        m_pForeignTopLevel = NULL;
+    }
 
     // init new window
     m_bDefaultPos = m_bDefaultSize = false;
@@ -2491,25 +2554,29 @@ void GtkSalFrame::EndSetClipRegion()
         gdk_window_shape_combine_region( m_pWindow->window, m_pRegion, 0, 0 );
 }
 
-bool GtkSalFrame::Dispatch( const XEvent* pEvent )
+bool GtkSalFrame::dispatchXEvent( const XEvent* pEvent )
 {
-    bool bContinueDispatch = true;
+    bool bHandled = false;
 
     if( pEvent->type == PropertyNotify )
     {
         vcl_sal::WMAdaptor* pAdaptor = getDisplay()->getWMAdaptor();
         Atom nDesktopAtom = pAdaptor->getAtom( vcl_sal::WMAdaptor::NET_WM_DESKTOP );
         if( pEvent->xproperty.atom == nDesktopAtom &&
-            pEvent->xproperty.state == PropertyNewValue )
+            pEvent->xproperty.state == PropertyNewValue &&
+            m_pWindow && m_pWindow->window )
         {
             m_nWorkArea = pAdaptor->getWindowWorkArea( GDK_WINDOW_XWINDOW( m_pWindow->window) );
         }
     }
     else if( pEvent->type == ConfigureNotify )
     {
-        if( m_pForeignParent && pEvent->xconfigure.window == m_aForeignParentWindow )
+        if( m_pForeignParent &&
+            m_pWindow &&
+            m_pWindow->window &&
+            pEvent->xconfigure.window == m_aForeignParentWindow )
         {
-            bContinueDispatch = false;
+            bHandled = true;
             gtk_window_resize( GTK_WINDOW(m_pWindow), pEvent->xconfigure.width, pEvent->xconfigure.height );
             if( ( sal::static_int_cast< int >(maGeometry.nWidth) !=
                   pEvent->xconfigure.width ) ||
@@ -2522,9 +2589,11 @@ bool GtkSalFrame::Dispatch( const XEvent* pEvent )
                 getDisplay()->SendInternalEvent( this, NULL, SALEVENT_RESIZE );
             }
         }
-        else if( m_pForeignTopLevel && pEvent->xconfigure.window == m_aForeignTopLevelWindow )
+        else if( m_pForeignTopLevel &&
+                 m_pWindow && m_pWindow->window &&
+                 pEvent->xconfigure.window == m_aForeignTopLevelWindow )
         {
-            bContinueDispatch = false;
+            bHandled = true;
             // update position
             int x = 0, y = 0;
             XLIB_Window aChild;
@@ -2544,6 +2613,7 @@ bool GtkSalFrame::Dispatch( const XEvent* pEvent )
     }
     else if( pEvent->type == ClientMessage &&
              pEvent->xclient.message_type == getDisplay()->getWMAdaptor()->getAtom( vcl_sal::WMAdaptor::XEMBED ) &&
+             m_pWindow && m_pWindow->window &&
              pEvent->xclient.window == GDK_WINDOW_XWINDOW(m_pWindow->window) &&
              m_bWindowIsGtkPlug
              )
@@ -2563,7 +2633,12 @@ bool GtkSalFrame::Dispatch( const XEvent* pEvent )
         }
     }
 
-    return bContinueDispatch;
+    return bHandled;
+}
+
+bool GtkSalFrame::Dispatch( const XEvent* pEvent )
+{
+    return !dispatchXEvent( pEvent );
 }
 
 void GtkSalFrame::SetBackgroundBitmap( SalBitmap* pBitmap )

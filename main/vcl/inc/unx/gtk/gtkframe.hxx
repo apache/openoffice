@@ -269,9 +269,10 @@ public:
     GtkSalFrame( SalFrame* pParent, sal_uLong nStyle );
     GtkSalFrame( SystemParentData* pSysData );
 
-    // dispatches an event, returns true if dispatched
-    // and false else; if true was returned the event should
-    // be swallowed
+    // Dispatches an XEvent; true means handled and swallowed.
+    bool dispatchXEvent( const XEvent* pEvent );
+
+    // Legacy wrapper: true means continue, false means swallowed.
     bool Dispatch( const XEvent* pEvent );
     void grabPointer( sal_Bool bGrab, sal_Bool bOwnerEvents = sal_False );
 
