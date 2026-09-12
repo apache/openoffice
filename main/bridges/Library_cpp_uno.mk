@@ -156,6 +156,21 @@ $(eval $(call gb_Library_add_asmobjects,$(COMNAME)_uno,\
 	bridges/source/cpp_uno/gcc3_freebsd_x86-64/call \
 ))
 
+###########################################################
+else ifeq ($(OS)-$(CPUNAME)-$(COMNAME),FREEBSD-AARCH64-gcc3)
+###########################################################
+
+$(eval $(call gb_Library_add_exception_objects,$(COMNAME)_uno,\
+	bridges/source/cpp_uno/gcc3_freebsd_aarch64/abi \
+	bridges/source/cpp_uno/gcc3_freebsd_aarch64/except \
+	bridges/source/cpp_uno/gcc3_freebsd_aarch64/cpp2uno \
+	bridges/source/cpp_uno/gcc3_freebsd_aarch64/uno2cpp \
+))
+
+$(eval $(call gb_Library_add_asmobjects,$(COMNAME)_uno,\
+	bridges/source/cpp_uno/gcc3_freebsd_aarch64/call \
+))
+
 #########################################################
 else ifeq ($(OS)-$(CPUNAME)-$(COMNAME),LINUX-ALPHA_-gcc3)
 #########################################################
