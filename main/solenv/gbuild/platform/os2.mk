@@ -290,6 +290,12 @@ gb_LinkTarget_CXXFLAGS += -g
 gb_LinkTarget_OBJCXXFLAGS += -g
 endif
 
+ifeq ($(ENABLE_SANITIZER),TRUE)
+gb_CFLAGS += -fsanitize=address
+gb_CXXFLAGS += -fsanitize=address
+gb_LinkTarget_LDFLAGS += -fsanitize=address
+endif
+
 gb_LinkTarget_INCLUDE :=\
 	$(filter-out %/stl, $(subst -I. , ,$(SOLARINC))) \
 	$(foreach inc,$(subst ;, ,$(JDKINC)),-I$(inc)) \

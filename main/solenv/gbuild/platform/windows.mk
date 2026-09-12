@@ -193,6 +193,10 @@ gb_LinkTarget_LDFLAGS := \
 	-SUBSYSTEM:CONSOLE \
 	$(patsubst %,-LIBPATH:%,$(filter-out .,$(subst ;, ,$(subst \,/,$(ILIB))))) \
 
+ifeq ($(ENABLE_SANITIZER),TRUE)
+$(eval $(call gb_Output_error,Sanitizer unsupported under OS $(OS)))
+endif
+
 ifneq ($(ENABLE_CRASHDUMP),)
 gb_LinkTarget_LDFLAGS += -DEBUG
 gb_CFLAGS+=-Zi
