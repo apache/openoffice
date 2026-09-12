@@ -98,6 +98,11 @@ CFLAGSCXX= -pipe $(ARCH_FLAGS) -std=gnu++11
 CFLAGSCXX += -fvisibility-inlines-hidden
 .ENDIF # "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
 
+.IF "$(ENABLE_SANITIZER)"=="TRUE"
+CFLAGSCC += -fsanitize=address
+CFLAGSCXX += -fsanitize=address
+.ENDIF
+
 CFLAGS_CREATE_PCH=-x c++-header -I$(INCPCH) -DPRECOMPILED_HEADERS
 CFLAGS_USE_PCH=-I$(SLO)$/pch -DPRECOMPILED_HEADERS -Winvalid-pch
 CFLAGS_USE_EXCEPTIONS_PCH=-I$(SLO)$/pch_ex -DPRECOMPILED_HEADERS -Winvalid-pch
@@ -188,6 +193,11 @@ LINKFLAGSTACK=
 LINKFLAGSPROF=
 LINKFLAGSDEBUG=-g
 LINKFLAGSOPT=
+
+# Flag for enabling address sanitizer
+.IF "$(ENABLE_SANITIZER)"=="TRUE"
+LINKFLAGS += -fsanitize=address
+.ENDIF
 
 # linker flags for optimization (symbol hashtable)
 # for now, applied to symbol scoped libraries, only
