@@ -127,6 +127,7 @@ long ZCodec::EndCompression()
 		}
 		delete[] mpOutBuf;
 		delete[] mpInBuf;
+		mbInit = 0;
 	}
 	return ( mbStatus ) ? retvalue : -1;
 }
