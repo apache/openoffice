@@ -959,7 +959,7 @@ void PNGReaderImpl::ImplReadIDAT()
 		{
             // get bytes needed to fill the current scanline
             sal_Int32 nToRead = mnScansize - (mpScanCurrent - mpInflateInBuf);
-            sal_Int32 nRead = mpZCodec->ReadAsynchron( aIStrm, mpScanCurrent, nToRead );
+            sal_Int32 nRead = mpZCodec->Read( aIStrm, mpScanCurrent, nToRead );
             if ( nRead < 0 )
 			{
 				mbStatus = sal_False;
