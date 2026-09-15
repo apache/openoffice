@@ -292,6 +292,32 @@ namespace dbaui
 		catch(const Exception& e)
 		{
             DBG_UNHANDLED_EXCEPTION();
+
+            // DBG_UNHANDLED_EXCEPTION is debug-only, so in a product build this
+            // used to be completely silent: picking "Use Wizard to Create ..."
+            // did nothing at all, with no error message.  That is issue 80338
+            // (comment 21) -- there the wizard is a Java component and creation
+            // fails when the java_uno bridge cannot be loaded; it fails the same
+            // way whenever the wizard service is simply not registered, because
+            // UNO_QUERY_THROW above turns the resulting empty reference into an
+            // exception.  Show the error's own message rather than inventing a
+            // new localizable string.
+            // Lead with the service name.  The underlying text is a low-level UNO
+            // message -- for a service that is not registered, UNO_QUERY_THROW
+            // above produces "unsatisfied query for interface of type
+            // com.sun.star.task.XJobExecutor!", which never mentions which
+            // component is missing, and that is the one fact worth knowing.
+            ::rtl::OUString sMessage( ::rtl::OUString::createFromAscii( _pWizardService ) );
+            if ( e.Message.getLength() )
+                sMessage += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ":\n" ) ) + e.Message;
+            try
+            {
+                ErrorBox( m_pDialogParent, WB_OK, sMessage ).Execute();
+            }
+            catch( const Exception& )
+            {
+                // reporting an error must not replace it with another one
+            }
 		}
 	}
 	//------------------------------------------------------------------
