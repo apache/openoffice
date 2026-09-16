@@ -982,7 +982,7 @@ sal_Int32 ZipFile::readCEN()
 				throw ZipException(OUString( RTL_CONSTASCII_USTRINGPARAM ( "ZIP file contains a hole between local descriptor and file data" ) ), uno::Reference < XInterface > () );
 			// File data
 			nPos += aIt->second.nCompressedSize;
-			if ( aIt->second.nFlag & ( 1 << 3 ) ) {
+			if ( aIt->second.bHasDataDescriptor ) {
 				// Data descriptor...
 				nPos += 16;  // ...with signature
 				nPos2 = nPos - 4; // ...without signature
