@@ -240,6 +240,7 @@ eval()
 	opp->prec = opdope[OP_END];	/* And its precedence		*/
 	opp->skip = 0;			/* Not skipping now		*/
 	binop = 0;
+        skip = 0;
 again:
 #ifdef	DEBUG_EVAL
     fprintf( pCppOut, "In #if at again: skip = %d, binop = %d, line is: %s",
@@ -306,7 +307,9 @@ again:
 		}
 		opp->op = (char)op;
 		opp->prec = (char)prec;
-		skip = (valp[-1] != 0);		/* Short-circuit tester	*/
+                if (valp > value) {
+                    skip = (valp[-1] != 0);		/* Short-circuit tester	*/
+                }
 		/*
 		 * Do the short-circuit stuff here.  Short-circuiting
 		 * stops automagically when operators are evaluated.

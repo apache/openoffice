@@ -159,6 +159,12 @@ gb_DEBUG_CFLAGS := -ggdb3 -finline-limit=0 -fno-inline -fno-default-inline
 endif
 endif
 
+ifeq ($(ENABLE_SANITIZER),TRUE)
+gb_CFLAGS += -fsanitize=address
+gb_CXXFLAGS += -fsanitize=address
+gb_LinkTarget_LDFLAGS += -fsanitize=address
+endif
+
 ifeq ($(gb_DEBUGLEVEL),2)
 gb_COMPILEROPTFLAGS := -O0
 gb_COMPILEROPT1FLAGS := -O0

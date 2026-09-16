@@ -240,6 +240,13 @@ AC_ARG_ENABLE(symbols,
                           Enabling symbols disables the stripping of the solver
                           (--disable-strip-solver).
 ],,)
+AC_ARG_ENABLE(sanitizer,
+[  --enable-sanitizer       Enables -fsanitize=address compiler flag.
+                          Works with GCC and Clang.
+                          
+                          It is suggested to add --enable-symbols so that the
+                          address sanitizer can give more detailed information.
+],,)
 AC_ARG_ENABLE(strip-solver,
 [  --disable-strip-solver  Disable the stripping of the solver.
                           By default the solver is stripped unless a build with
@@ -1529,6 +1536,19 @@ else
    AC_MSG_RESULT([no])
 fi
 AC_SUBST(ENABLE_SYMBOLS)
+
+dnl ===================================================================
+dnl Set the ENABLE_SANITIZER variable. (Activate --enable-sanitizer)
+dnl ===================================================================
+AC_MSG_CHECKING([whether to enable address sanitizer])
+if test -n "$enable_sanitizer" && test "$enable_sanitizer" != "no"; then
+   ENABLE_SANITIZER="TRUE"
+   AC_MSG_RESULT([yes])
+else
+   ENABLE_SANITIZER="FALSE"
+   AC_MSG_RESULT([no])
+fi
+AC_SUBST(ENABLE_SANITIZER)
 
 dnl ===================================================================
 dnl Determine if the solver is to be stripped or not.
