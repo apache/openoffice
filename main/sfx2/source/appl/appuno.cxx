@@ -1913,6 +1913,8 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
                     if ( !pCurrent->AdjustMacroMode( String() ) )
                         return ERRCODE_IO_ACCESSDENIED;
                 }
+                else
+                    return ERRCODE_IO_ACCESSDENIED;
             }
 
             // find BASIC method
@@ -1978,7 +1980,7 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
     else
     {
         // direct API call on a specified object
-        if ( !pCurrent->AdjustMacroMode( String() ) )
+        if ( !pCurrent || !pCurrent->AdjustMacroMode( String() ) )
             // check forbids execution
             return ERRCODE_IO_ACCESSDENIED;
         String aCall( '[' );
