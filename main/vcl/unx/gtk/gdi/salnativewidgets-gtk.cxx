@@ -144,7 +144,7 @@ struct NWFWidgetData
 // Keep a hash table of Widgets->default flags so that we can
 // easily and quickly reset each to a default state before using
 // them
-static std::hash_map<long, guint>	gWidgetDefaultFlags;
+static std::hash_map<sal_IntPtr, guint>	gWidgetDefaultFlags;
 static std::vector<NWFWidgetData>   gWidgetData;
 
 static const GtkBorder aDefDefBorder		= { 1, 1, 1, 1 };
@@ -463,6 +463,8 @@ void GtkData::deInitNWF( void )
         delete gWidgetData[i].gNWPixmapCacheList;
         gWidgetData[i].gNWPixmapCacheList = NULL;
     }
+    gWidgetDefaultFlags.clear();
+    gWidgetData.clear();
 }
 
 
@@ -2495,10 +2497,6 @@ sal_Bool GtkSalGraphics::NWPaintGTKToolbar(
     {
 	    NWSetWidgetState( gWidgetData[m_nScreen].gToolbarWidget, nState, stateType );
 
-        GTK_WIDGET_UNSET_FLAGS( gWidgetData[m_nScreen].gToolbarWidget, GTK_SENSITIVE );
-        if ( nState & CTRL_STATE_ENABLED )
-            GTK_WIDGET_SET_FLAGS( gWidgetData[m_nScreen].gToolbarWidget, GTK_SENSITIVE );
-
         if( nPart == PART_DRAW_BACKGROUND_HORZ )
             gtk_toolbar_set_orientation( GTK_TOOLBAR(gWidgetData[m_nScreen].gToolbarWidget), GTK_ORIENTATION_HORIZONTAL );
         else
@@ -2508,10 +2506,6 @@ sal_Bool GtkSalGraphics::NWPaintGTKToolbar(
     else if( nPart == PART_THUMB_HORZ || nPart == PART_THUMB_VERT )
     {
 	    NWSetWidgetState( gWidgetData[m_nScreen].gHandleBoxWidget, nState, stateType );
-
-        GTK_WIDGET_UNSET_FLAGS( gWidgetData[m_nScreen].gHandleBoxWidget, GTK_SENSITIVE );
-        if ( nState & CTRL_STATE_ENABLED )
-            GTK_WIDGET_SET_FLAGS( gWidgetData[m_nScreen].gHandleBoxWidget, GTK_SENSITIVE );
 
         gtk_handle_box_set_shadow_type( GTK_HANDLE_BOX(gWidgetData[m_nScreen].gHandleBoxWidget), shadowType );
 
@@ -2659,10 +2653,6 @@ sal_Bool GtkSalGraphics::NWPaintGTKMenubar(
         {
             NWSetWidgetState( gWidgetData[m_nScreen].gMenubarWidget, nState, stateType );
 
-            GTK_WIDGET_UNSET_FLAGS( gWidgetData[m_nScreen].gMenubarWidget, GTK_SENSITIVE );
-            if ( nState & CTRL_STATE_ENABLED )
-                GTK_WIDGET_SET_FLAGS( gWidgetData[m_nScreen].gMenubarWidget, GTK_SENSITIVE );
-
             // #118704# for translucent menubar styles paint background first
             gtk_paint_flat_box( gWidgetData[m_nScreen].gMenubarWidget->style,
                                 gdkDrawable,
@@ -2736,10 +2726,6 @@ sal_Bool GtkSalGraphics::NWPaintGTKPopupMenu(
     }
 
     NWSetWidgetState( gWidgetData[m_nScreen].gMenuWidget, nState, stateType );
-
-    GTK_WIDGET_UNSET_FLAGS( gWidgetData[m_nScreen].gMenuWidget, GTK_SENSITIVE );
-    if ( nState & CTRL_STATE_ENABLED )
-        GTK_WIDGET_SET_FLAGS( gWidgetData[m_nScreen].gMenuWidget, GTK_SENSITIVE );
 
     for( clipList::const_iterator it = rClipList.begin(); it != rClipList.end(); ++it )
     {
@@ -3739,7 +3725,7 @@ static void NWSetWidgetState( GtkWidget* widget, ControlState nState, GtkStateTy
 	GTK_WIDGET_UNSET_FLAGS( widget, GTK_HAS_DEFAULT );
 	GTK_WIDGET_UNSET_FLAGS( widget, GTK_HAS_FOCUS );
 	GTK_WIDGET_UNSET_FLAGS( widget, GTK_SENSITIVE );
-	GTK_WIDGET_SET_FLAGS( widget, gWidgetDefaultFlags[(long)widget] );
+	GTK_WIDGET_SET_FLAGS( widget, gWidgetDefaultFlags[(sal_IntPtr)widget] );
 
 	if ( nState & CTRL_STATE_DEFAULT )
 		GTK_WIDGET_SET_FLAGS( widget, GTK_HAS_DEFAULT );
@@ -3755,6 +3741,15 @@ static void NWSetWidgetState( GtkWidget* widget, ControlState nState, GtkStateTy
  ************************************************************************/
 
 //-------------------------------------
+
+static void NWInitWidget( GtkWidget* widget )
+{
+	gtk_widget_realize( widget );
+	gtk_widget_ensure_style( widget );
+
+	// Store widget's default flags
+	gWidgetDefaultFlags[ (sal_IntPtr)widget ] = GTK_WIDGET_FLAGS( widget );
+}
 
 static void NWAddWidgetToCacheWindow( GtkWidget* widget, int nScreen )
 {
@@ -3776,11 +3771,7 @@ static void NWAddWidgetToCacheWindow( GtkWidget* widget, int nScreen )
 	}
 
 	gtk_container_add( GTK_CONTAINER(rData.gDumbContainer), widget );
-	gtk_widget_realize( widget );
-	gtk_widget_ensure_style( widget );
-
-	// Store widget's default flags
-	gWidgetDefaultFlags[ (long)widget ] = GTK_WIDGET_FLAGS( widget );
+	NWInitWidget( widget );
 }
 
 //-------------------------------------
@@ -3952,13 +3943,13 @@ static void NWEnsureGTKToolbar( int nScreen )
                               (char *)NULL);
 
         gtk_button_set_relief( GTK_BUTTON(gWidgetData[nScreen].gToolbarButtonWidget), aRelief );
-        GTK_WIDGET_UNSET_FLAGS( gWidgetData[nScreen].gToolbarButtonWidget, GTK_CAN_FOCUS );
-        GTK_WIDGET_UNSET_FLAGS( gWidgetData[nScreen].gToolbarButtonWidget, GTK_CAN_DEFAULT );
+        gtk_widget_set_can_focus( gWidgetData[nScreen].gToolbarButtonWidget, FALSE );
+        gtk_widget_set_can_default( gWidgetData[nScreen].gToolbarButtonWidget, FALSE );
         NWAddWidgetToCacheWindow( gWidgetData[nScreen].gToolbarButtonWidget, nScreen );
 
         gtk_button_set_relief( GTK_BUTTON(gWidgetData[nScreen].gToolbarToggleWidget), aRelief );
-        GTK_WIDGET_UNSET_FLAGS( gWidgetData[nScreen].gToolbarToggleWidget, GTK_CAN_FOCUS );
-        GTK_WIDGET_UNSET_FLAGS( gWidgetData[nScreen].gToolbarToggleWidget, GTK_CAN_DEFAULT );
+        gtk_widget_set_can_focus( gWidgetData[nScreen].gToolbarToggleWidget, FALSE );
+        gtk_widget_set_can_default( gWidgetData[nScreen].gToolbarToggleWidget, FALSE );
         NWAddWidgetToCacheWindow( gWidgetData[nScreen].gToolbarToggleWidget, nScreen );
     }
     if( ! gWidgetData[nScreen].gHandleBoxWidget )
@@ -3982,10 +3973,7 @@ static void NWEnsureGTKMenubar( int nScreen )
         gtk_widget_show( gWidgetData[nScreen].gMenubarWidget );
 
         // do what NWAddWidgetToCacheWindow does except adding to def container
-        gtk_widget_realize( gWidgetData[nScreen].gMenuItemMenubarWidget );
-        gtk_widget_ensure_style( gWidgetData[nScreen].gMenuItemMenubarWidget );
-
-        gWidgetDefaultFlags[ (long)gWidgetData[nScreen].gMenuItemMenubarWidget ] = GTK_WIDGET_FLAGS( gWidgetData[nScreen].gMenuItemMenubarWidget );
+        NWInitWidget( gWidgetData[nScreen].gMenuItemMenubarWidget );
     }
 }
 
@@ -4005,26 +3993,11 @@ static void NWEnsureGTKMenu( int nScreen )
         gtk_menu_shell_append( GTK_MENU_SHELL( gWidgetData[nScreen].gMenuWidget ), gWidgetData[nScreen].gImageMenuItem );
 
         // do what NWAddWidgetToCacheWindow does except adding to def container
-        gtk_widget_realize( gWidgetData[nScreen].gMenuWidget );
-        gtk_widget_ensure_style( gWidgetData[nScreen].gMenuWidget );
-
-        gtk_widget_realize( gWidgetData[nScreen].gMenuItemMenuWidget );
-        gtk_widget_ensure_style( gWidgetData[nScreen].gMenuItemMenuWidget );
-
-        gtk_widget_realize( gWidgetData[nScreen].gMenuItemCheckMenuWidget );
-        gtk_widget_ensure_style( gWidgetData[nScreen].gMenuItemCheckMenuWidget );
-
-        gtk_widget_realize( gWidgetData[nScreen].gMenuItemRadioMenuWidget );
-        gtk_widget_ensure_style( gWidgetData[nScreen].gMenuItemRadioMenuWidget );
-
-        gtk_widget_realize( gWidgetData[nScreen].gImageMenuItem );
-        gtk_widget_ensure_style( gWidgetData[nScreen].gImageMenuItem );
-
-        gWidgetDefaultFlags[ (long)gWidgetData[nScreen].gMenuWidget ] = GTK_WIDGET_FLAGS( gWidgetData[nScreen].gMenuWidget );
-        gWidgetDefaultFlags[ (long)gWidgetData[nScreen].gMenuItemMenuWidget ] = GTK_WIDGET_FLAGS( gWidgetData[nScreen].gMenuItemMenuWidget );
-        gWidgetDefaultFlags[ (long)gWidgetData[nScreen].gMenuItemCheckMenuWidget ] = GTK_WIDGET_FLAGS( gWidgetData[nScreen].gMenuItemCheckMenuWidget );
-        gWidgetDefaultFlags[ (long)gWidgetData[nScreen].gMenuItemRadioMenuWidget ] = GTK_WIDGET_FLAGS( gWidgetData[nScreen].gMenuItemRadioMenuWidget );
-        gWidgetDefaultFlags[ (long)gWidgetData[nScreen].gImageMenuItem ] = GTK_WIDGET_FLAGS( gWidgetData[nScreen].gImageMenuItem );
+        NWInitWidget( gWidgetData[nScreen].gMenuWidget );
+        NWInitWidget( gWidgetData[nScreen].gMenuItemMenuWidget );
+        NWInitWidget( gWidgetData[nScreen].gMenuItemCheckMenuWidget );
+        NWInitWidget( gWidgetData[nScreen].gMenuItemRadioMenuWidget );
+        NWInitWidget( gWidgetData[nScreen].gImageMenuItem );
     }
 }
 

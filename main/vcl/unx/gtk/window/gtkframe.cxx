@@ -934,8 +934,9 @@ void GtkSalFrame::Init( SystemParentData* pSysData )
     {
         m_pWindow = gtk_plug_new( pSysData->aWindow );
         m_bWindowIsGtkPlug = true;
-        GTK_WIDGET_SET_FLAGS( m_pWindow, GTK_CAN_FOCUS | GTK_SENSITIVE | GTK_CAN_DEFAULT );
-        gtk_widget_set_sensitive( m_pWindow, true );
+        gtk_widget_set_can_focus( m_pWindow, TRUE );
+        gtk_widget_set_can_default( m_pWindow, TRUE );
+        gtk_widget_set_sensitive( m_pWindow, TRUE );
     }
     else
     {
