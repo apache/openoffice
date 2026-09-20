@@ -1998,6 +1998,13 @@ ToFile( "MINGWSTRIP",        "@MINGWSTRIP@",     "e" );
 ToFile( "USE_SYSTEM_STL",    "@USE_SYSTEM_STL@", "e" );
 ToFile( "ALLOC",             "@ALLOC@",          "e" );
 ToFile( "ENABLE_SYMBOLS",    "@ENABLE_SYMBOLS@",    "e" );
+ToFile( "ENABLE_SANITIZER",  "@ENABLE_SANITIZER@",    "e" );
+if ( "@ENABLE_SANITIZER@" eq "TRUE" ) {
+     # Many tools leak memory, and it does not make sense to fix them all.
+     # Instead of disabling memory leak detection for each one of them,
+     # it's easiest to disable it fort the whole build.
+     ToFile( "ASAN_OPTIONS", "detect_leaks=0", "e" );
+}
 ToFile( "DISABLE_STRIP",     "@DISABLE_STRIP@",     "e" );
 ToFile( "LFS_CFLAGS",        "@LFS_CFLAGS@",     "e" );
 ToFile( "ENABLE_CRASHDUMP",  "@ENABLE_CRASHDUMP@",  "e" );
