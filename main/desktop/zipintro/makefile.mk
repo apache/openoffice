@@ -32,24 +32,24 @@ TARGET=zipintro
 DEFAULT_FLAVOURS=dev dev_nologo nologo intro beta
 
 ZIP1LIST= \
-	$(null,$(INTRO_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/dev$/intro.png $(INTRO_BITMAPS)) \
-	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/dev$/about.png $(ABOUT_BITMAPS)) \
+	$(null,$(INTRO_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/dev$/intro5.png $(INTRO_BITMAPS)) \
+	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/dev$/about5.png $(ABOUT_BITMAPS)) \
 	$(MISC)$/$(RSCDEFIMG)$/introabout$/logo.png
 ZIP2LIST= \
-	$(null,$(INTRO_BITMAPS) $(MISC)$/ooo_custom_images$/dev_nologo$/introabout$/intro.png $(INTRO_BITMAPS)) \
-	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/about.png $(ABOUT_BITMAPS)) \
+	$(null,$(INTRO_BITMAPS) $(MISC)$/ooo_custom_images$/dev_nologo$/introabout$/intro5.png $(INTRO_BITMAPS)) \
+	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/about5.png $(ABOUT_BITMAPS)) \
 	$(MISC)$/$(RSCDEFIMG)$/introabout$/logo.png
 ZIP3LIST= \
-	$(null,$(INTRO_BITMAPS) $(MISC)$/ooo_custom_images$/nologo$/introabout$/intro.png $(INTRO_BITMAPS)) \
-	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/about.png $(ABOUT_BITMAPS)) \
+	$(null,$(INTRO_BITMAPS) $(MISC)$/ooo_custom_images$/nologo$/introabout$/intro5.png $(INTRO_BITMAPS)) \
+	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/about5.png $(ABOUT_BITMAPS)) \
 	$(MISC)$/$(RSCDEFIMG)$/introabout$/logo.png
 ZIP4LIST= \
-	$(null,$(INTRO_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/intro.png $(INTRO_BITMAPS)) \
-	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/about.png $(ABOUT_BITMAPS)) \
+	$(null,$(INTRO_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/intro5.png $(INTRO_BITMAPS)) \
+	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/about5.png $(ABOUT_BITMAPS)) \
 	$(MISC)$/$(RSCDEFIMG)$/introabout$/logo.png
 ZIP5LIST= \
-	$(null,$(INTRO_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/beta$/intro.png $(INTRO_BITMAPS)) \
-	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/beta$/about.png $(ABOUT_BITMAPS)) \
+	$(null,$(INTRO_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/beta$/intro5.png $(INTRO_BITMAPS)) \
+	$(null,$(ABOUT_BITMAPS) $(MISC)$/$(RSCDEFIMG)$/introabout$/beta$/about5.png $(ABOUT_BITMAPS)) \
 	$(MISC)$/$(RSCDEFIMG)$/introabout$/logo.png
 
 ZIP1TARGET=dev_intro
