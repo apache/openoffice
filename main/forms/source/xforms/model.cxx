@@ -42,6 +42,7 @@
 
 #include <comphelper/propertysetinfo.hxx>
 #include <cppuhelper/typeprovider.hxx>
+#include <svtools/linkpolicy.hxx>
 
 #include <algorithm>
 
@@ -452,6 +453,14 @@ void Model::loadInstance( sal_Int32 nInstance )
     // if we have a URL, load the document and set it into the instance
     if( sURL.getLength() > 0 )
     {
+        // The instance src is document content, so the shared policy decides (see
+        // svtools/linkpolicy.hxx).
+        if( !::svt::linkpolicy::mayLoadDocumentReference( sURL ) )
+        {
+            // Leave the instance empty, as for a src that cannot be read.
+            return;
+        }
+
         try
         {
             Reference<XInputStream> xInput =

@@ -99,6 +99,7 @@ $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/ivctrl.hxx,svtools/ivc
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/javacontext.hxx,svtools/javacontext.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/javainteractionhandler.hxx,svtools/javainteractionhandler.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/langtab.hxx,svtools/langtab.hxx))
+$(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/linkpolicy.hxx,svtools/linkpolicy.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/localresaccess.hxx,svtools/localresaccess.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/menuoptions.hxx,svtools/menuoptions.hxx))
 $(eval $(call gb_Package_add_file,svtools_inc,inc/svtools/miscopt.hxx,svtools/miscopt.hxx))
