@@ -775,8 +775,8 @@ public class TableDescriptor extends CommandMetaData implements XContainerListen
         {
             XPropertySet xTablePropertySet = UnoRuntime.queryInterface(XPropertySet.class, arg0.Element);
             String stablename = AnyConverter.toString(xTablePropertySet.getPropertyValue(PropertyNames.PROPERTY_NAME));
-            String sschemaname = AnyConverter.toString(xPropTableDataDescriptor.getPropertyValue("SchemaName"));
-            String scatalogname = AnyConverter.toString(xPropTableDataDescriptor.getPropertyValue("CatalogName"));
+            String sschemaname = AnyConverter.toString(xTablePropertySet.getPropertyValue("SchemaName"));
+            String scatalogname = AnyConverter.toString(xTablePropertySet.getPropertyValue("CatalogName"));
             ComposedTableName = new CommandName(this, scatalogname, sschemaname, stablename, false);
             appendTableNameToFilter(ComposedTableName.getComposedName());
         }
