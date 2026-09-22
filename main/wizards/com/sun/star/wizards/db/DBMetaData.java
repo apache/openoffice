@@ -77,7 +77,6 @@ import com.sun.star.wizards.common.NumberFormatter;
 import com.sun.star.wizards.common.Properties;
 import com.sun.star.wizards.common.Resource;
 import com.sun.star.wizards.common.SystemDialog;
-import com.sun.star.uno.Any;
 import com.sun.star.wizards.common.PropertyNames;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -783,7 +782,7 @@ public class DBMetaData
         try
         {
             ensureDataSourceSettings();
-            Any primaryKeySupport = (Any)m_dataSourceSettings.getPropertyValue( "PrimaryKeySupport" );
+            Object primaryKeySupport = m_dataSourceSettings.getPropertyValue( "PrimaryKeySupport" );
             if ( AnyConverter.isVoid( primaryKeySupport ) )
                 supportsPrimaryKeys = supportsCoreSQLGrammar();
             else
