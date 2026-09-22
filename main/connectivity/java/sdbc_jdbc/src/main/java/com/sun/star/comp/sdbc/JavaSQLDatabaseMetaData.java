@@ -106,7 +106,7 @@ public class JavaSQLDatabaseMetaData extends WeakBase implements XDatabaseMetaDa
     @Override
     public XResultSet getSchemas() throws SQLException {
         try {
-            return wrapResultSet(jdbcDatabaseMetaData.getCatalogs());
+            return wrapResultSet(jdbcDatabaseMetaData.getSchemas());
         } catch (java.sql.SQLException jdbcSQLException) {
             throw Tools.toUnoException(this, jdbcSQLException);
         }
