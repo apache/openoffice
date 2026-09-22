@@ -441,7 +441,7 @@ public class JavaSQLResultSet extends PropertySet
 
     @Override
     public Object getObject(int columnIndex, XNameAccess typeMap) throws SQLException {
-        if (typeMap.hasElements()) {
+        if (typeMap != null && typeMap.hasElements()) {
             throw new SQLException(
                     SharedResources.getInstance().getResourceStringWithSubstitution(
                             Resources.STR_UNSUPPORTED_FEATURE, "$featurename$", "Type maps"),
