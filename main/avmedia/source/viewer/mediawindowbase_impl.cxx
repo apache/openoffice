@@ -29,6 +29,7 @@
 #include <comphelper/processfactory.hxx>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <com/sun/star/media/XManager.hpp>
+#include <svtools/linkpolicy.hxx>
 #ifndef _COM_SUN_STAR_LANG_XCOMPONENT_HDL_
 #include <com/sun/star/lang/XComponent.hdl>
 #endif
@@ -73,6 +74,12 @@ uno::Reference< media::XPlayer > MediaWindowBaseImpl::createPlayer( const ::rtl:
     uno::Reference< media::XPlayer >                xPlayer;
 
     rbJavaBased = sal_False;
+
+    // Every player in the office is built here, over a URL that comes out of
+    // document content, so the shared policy decides first (see
+    // svtools/linkpolicy.hxx).
+    if( !::svt::linkpolicy::mayLoadDocumentReference( rURL ) )
+        return xPlayer;
 
     if( xFactory.is() )
     {
