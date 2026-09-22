@@ -88,6 +88,9 @@ public class PageContext
 
     public String getHeader()
     {
+        if(header==null) {
+            return "";
+        }
         return header;
     }
 
@@ -99,6 +102,9 @@ public class PageContext
 
     public String getFooter()
     {
+        if(footer==null) {
+            return "";
+        }
         return footer;
     }
 
