@@ -304,7 +304,12 @@ public class JavaSQLResultSet extends PropertySet
     @Override
     public byte[] getBytes(int columnIndex) throws SQLException {
         try {
-            return jdbcResultSet.getBytes(columnIndex);
+            byte[] bytes = jdbcResultSet.getBytes(columnIndex);
+            if (bytes != null) {
+                return bytes;
+            } else {
+                return new byte[0];
+            }
         } catch (java.sql.SQLException exception) {
             throw Tools.toUnoException(this, exception);
         }
@@ -317,7 +322,7 @@ public class JavaSQLResultSet extends PropertySet
             if (jdbcDate != null) {
                 return DBTypeConversion.toDate(jdbcDate.toString());
             } else {
-                return null;
+                return new Date();
             }
         } catch (java.sql.SQLException exception) {
             throw Tools.toUnoException(this, exception);
