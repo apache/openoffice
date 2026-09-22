@@ -32,6 +32,7 @@
 #include <unotools/pathoptions.hxx>
 #include <sfx2/filedlghelper.hxx>
 #include <comphelper/processfactory.hxx>
+#include <svtools/linkpolicy.hxx>
 #include <com/sun/star/media/XManager.hpp>
 #include "com/sun/star/ui/dialogs/TemplateDescription.hpp"
 
@@ -525,9 +526,17 @@ uno::Reference< graphic::XGraphic > MediaWindow::grabFrame( const ::rtl::OUStrin
                                                             bool bAllowToCreateReplacementGraphic,
                                                             double fMediaTime )
 {
-    uno::Reference< media::XPlayer >    xPlayer( createPlayer( rURL ) );
+    uno::Reference< media::XPlayer >    xPlayer;
     uno::Reference< graphic::XGraphic > xRet;
     ::std::auto_ptr< Graphic >          apGraphic;
+
+    // Stricter than mayLoadDocumentReference: a grabbed frame is drawn into the
+    // document and exported with it, so any reference that carries a scheme is
+    // put to the document, a local file included. A relative reference is the
+    // document's own content and is grabbed as before.
+    if( !::svt::linkpolicy::isAbsoluteUrl( rURL )
+        || ::svt::linkpolicy::mayFollowDocumentLink( rURL ) )
+        xPlayer = createPlayer( rURL );
 
     if( xPlayer.is() )
     {
