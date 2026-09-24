@@ -214,6 +214,14 @@ sign_app() {
 	echo "==> signing $app  (identity: $IDENTITY, hardened: $HARDENED)"
 
 	# Quarantine and other xattrs make codesign fail or produce an unstable seal.
+	# xattr -c needs write permission, and installsets stage files read-only.
+	local readonly_xattr=() f
+	while IFS= read -r -d '' f; do readonly_xattr+=("$f"); done < <(find "$app" ! -type l ! -perm -u+w -xattr -print0)
+	if [ ${#readonly_xattr[@]} -gt 0 ]; then
+		printf '%s\0' "${readonly_xattr[@]}" | xargs -0 chmod u+w
+		printf '%s\0' "${readonly_xattr[@]}" | xargs -0 xattr -c
+		printf '%s\0' "${readonly_xattr[@]}" | xargs -0 chmod u-w
+	fi
 	xattr -cr "$app" 2>/dev/null || true
 
 	# A bundle's main executable is signed as part of its bundle, not on its own:
