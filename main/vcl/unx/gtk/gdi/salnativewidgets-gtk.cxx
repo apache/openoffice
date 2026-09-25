@@ -52,6 +52,7 @@ sal_Bool GtkSalGraphics::bNeedButtonStyleAsEditBackgroundWorkaround = sal_False;
 
 GtkSalGraphics::~GtkSalGraphics()
 {
+    m_pWindow = NULL;
 }
 
 
@@ -494,7 +495,7 @@ void GtkSalGraphics::copyBits( const SalTwoRect& rPosAry,
     if( pFrame && m_pWindow )
     {
         /* #i64117# some themes set the background pixmap VERY frequently */
-        GdkWindow* pWin = GTK_WIDGET(m_pWindow)->window;
+        GdkWindow* pWin = GetGdkWindow();
         if( pWin )
         {
             aWin = GDK_WINDOW_XWINDOW(pWin);
@@ -738,6 +739,8 @@ sal_Bool GtkSalGraphics::drawNativeControl(	ControlType nType,
 
     clipList aClip;
     GdkDrawable* gdkDrawable = GDK_DRAWABLE( GetGdkWindow() );
+    if( !gdkDrawable )
+        return sal_False;
     GdkPixmap* pixmap = NULL;
     Rectangle aPixmapRect;
     if( ( bNeedPixmapPaint )
@@ -2321,7 +2324,7 @@ sal_Bool GtkSalGraphics::NWPaintGTKTabItem( ControlType nType, ControlPart,
     paintRect.width = pixmapRect.GetWidth();
     paintRect.height = pixmapRect.GetHeight();
 
-    gtk_paint_flat_box( m_pWindow->style, pixmap, GTK_STATE_NORMAL,
+    gtk_paint_flat_box( gtk_widget_get_style( m_pWindow ), pixmap, GTK_STATE_NORMAL,
 		                GTK_SHADOW_NONE, &paintRect, m_pWindow, "base", 0, 0, -1, -1);
 
 	NWSetWidgetState( gWidgetData[m_nScreen].gNotebookWidget, nState, stateType );
@@ -3628,7 +3631,10 @@ void GtkSalGraphics::updateSettings( AllSettings& rSettings )
 GdkPixmap* GtkSalGraphics::NWGetPixmapFromScreen( Rectangle srcRect )
 {
     // Create a new pixmap to hold the composite of the window background and the control
-    GdkPixmap * pPixmap		= gdk_pixmap_new( GDK_DRAWABLE(GetGdkWindow()), srcRect.GetWidth(), srcRect.GetHeight(), -1 );
+    GdkWindow* pWin = GetGdkWindow();
+    if( !pWin )
+        return NULL;
+    GdkPixmap * pPixmap		= gdk_pixmap_new( GDK_DRAWABLE(pWin), srcRect.GetWidth(), srcRect.GetHeight(), -1 );
 	GdkGC *	 pPixmapGC	= gdk_gc_new( pPixmap );
 
     if( !pPixmap || !pPixmapGC )

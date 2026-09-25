@@ -279,6 +279,12 @@ public:
 	GtkSalDisplay*	getDisplay();
 	GdkDisplay*		getGdkDisplay();
     GtkWidget*	getWindow() const { return m_pWindow; }
+    GdkWindow*	getGdkWindow() const { return m_pWindow ? gtk_widget_get_window( m_pWindow ) : NULL; }
+    XLIB_Window	getXWindow() const
+    {
+        GdkWindow* pWin = getGdkWindow();
+        return pWin ? GDK_WINDOW_XWINDOW( pWin ) : None;
+    }
     GtkFixed*	getFixedContainer() const { return m_pFixedContainer; }
     GdkWindow*	getForeignParent() const { return m_pForeignParent; }
     GdkNativeWindow	getForeignParentWindow() const { return m_aForeignParentWindow; }
