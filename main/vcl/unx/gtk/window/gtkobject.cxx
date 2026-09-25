@@ -54,7 +54,7 @@ GtkSalObject::GtkSalObject( GtkSalFrame* pParent, sal_Bool bShow )
         SalDisplay* pDisp = GetX11SalData()->GetDisplay();
         m_aSystemData.nSize 		= sizeof( SystemChildData );
         m_aSystemData.pDisplay		= pDisp->GetDisplay();
-        m_aSystemData.aWindow		= GDK_WINDOW_XWINDOW(m_pSocket->window);
+        m_aSystemData.aWindow		= GDK_WINDOW_XWINDOW(gtk_widget_get_window(m_pSocket));
         m_aSystemData.pSalFrame		= NULL;
         m_aSystemData.pWidget		= m_pSocket;
         m_aSystemData.pVisual		= pDisp->GetVisual(pParent->getScreenNumber()).GetVisual();
@@ -62,7 +62,7 @@ GtkSalObject::GtkSalObject( GtkSalFrame* pParent, sal_Bool bShow )
         m_aSystemData.nDepth		= pDisp->GetVisual(pParent->getScreenNumber()).GetDepth();
         m_aSystemData.aColormap		= pDisp->GetColormap(pParent->getScreenNumber()).GetXColormap();
         m_aSystemData.pAppContext	= NULL;
-        m_aSystemData.aShellWindow	= GDK_WINDOW_XWINDOW(GTK_WIDGET(pParent->getWindow())->window);
+        m_aSystemData.aShellWindow	= pParent->getXWindow();
         m_aSystemData.pShellWidget	= GTK_WIDGET(pParent->getWindow());
 
         g_signal_connect( G_OBJECT(m_pSocket), "button-press-event", G_CALLBACK(signalButton), this );
@@ -97,7 +97,7 @@ GtkSalObject::~GtkSalObject()
 void GtkSalObject::ResetClipRegion()
 {
     if( m_pSocket )
-        gdk_window_shape_combine_region( m_pSocket->window, NULL, 0, 0 );
+        gdk_window_shape_combine_region( gtk_widget_get_window(m_pSocket), NULL, 0, 0 );
 }
 
 sal_uInt16 GtkSalObject::GetClipRegionType()
@@ -126,7 +126,7 @@ void GtkSalObject::UnionClipRegion( long nX, long nY, long nWidth, long nHeight 
 void GtkSalObject::EndSetClipRegion()
 {
     if( m_pSocket )
-        gdk_window_shape_combine_region( m_pSocket->window, m_pRegion, 0, 0 );
+        gdk_window_shape_combine_region( gtk_widget_get_window(m_pSocket), m_pRegion, 0, 0 );
 }
 
 void GtkSalObject::SetPosSize( long nX, long nY, long nWidth, long nHeight )
