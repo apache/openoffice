@@ -109,6 +109,51 @@ public final class ToolsTest {
     }
 
     @Test
+    public void testAddClassPathURLAddsLocalhostAndEscapedLocalFile() {
+        assertEquals(1, collect("file://localhost/opt/a.jar").size());
+        assertEquals(1, collect("file:///opt/Program%20Files/a.jar").size());
+        assertEquals(1, collect("file:///opt/a%2Fb/c.jar").size());
+        // One level of decoding only: this names a file called "%5C%5Chost".
+        assertEquals(1, collect("file:///opt/%255C%255Chost/a.jar").size());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsFileOnAnotherHost() {
+        assertTrue(collect(
+                "file://host/share/a.jar",
+                "file://wsl.localhost/distro/a.jar",
+                "jar:file://host/share/b.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsPathNamingAnotherHost() {
+        assertTrue(collect(
+                "file:////host/share/a.jar",
+                "file://localhost//host/share/b.jar",
+                "jar:file:////host/share/c.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsEscapedSeparatorNamingAnotherHost() {
+        // The file: handler decodes the path and, on Windows, turns slashes
+        // into backslashes, so each of these would be opened as \\host\share.
+        assertTrue(collect(
+                "file:///%5C%5Chost/share/a.jar",
+                "file:///%5c%5chost/share/b.jar",
+                "file:///%2F%2Fhost/share/c.jar",
+                "file:/%2Fhost/share/d.jar",
+                "file://localhost/%5C%5Chost/share/e.jar",
+                "jar:file:///%5C%5Chost/share/f.jar!/").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsBackslash() {
+        assertTrue(collect(
+                "file:\\\\host\\share\\a.jar",
+                "file:///C:%5C..%5Cb.jar").isEmpty());
+    }
+
+    @Test
     public void testAddClassPathURLKeepsOnlyLocalEntriesInOrder() {
         List<URL> urls = collect(
                 "http://host/a.jar",
