@@ -153,23 +153,26 @@ public class Tools {
     /**
      * Appends a class path entry to the list of URLs used to build a class loader.
      *
-     * <p>Only local entries or a jar: wrapping a local entry are added.
-     * A malformed or non-local entry is logged and skipped.</p>
+     * <p>Only local entries or a jar: wrapping a local entry are added; a file: entry must
+     * in addition name a path on this machine. A malformed or non-local entry is logged and
+     * skipped.</p>
      *
      * @param urls the list of class path URLs to append to
      * @param url  the class path entry to parse and validate
      */
     public static void addClassPathURL(Collection<URL> urls, String url) {
         URL javaURL;
-        String protocol;
+        URL effectiveURL;
         try {
             javaURL = new URL(url);
-            protocol = getEffectiveProtocol(javaURL);
+            effectiveURL = getEffectiveURL(javaURL);
         } catch (MalformedURLException e) {
             LOGGER.log(Level.WARNING, e, () -> "Skipping malformed class path entry: " + url);
             return;
         }
-        if (LOCAL_PROTOCOLS.contains(protocol)) {
+        String protocol = effectiveURL.getProtocol();
+        if (LOCAL_PROTOCOLS.contains(protocol)
+                && (!"file".equals(protocol) || isLocalFileLocation(effectiveURL))) {
             LOGGER.fine(() -> "Adding class path entry: " + url);
             urls.add(javaURL);
         } else {
@@ -178,21 +181,65 @@ public class Tools {
     }
 
     /**
-     * Returns the scheme that actually locates the resource.
+     * Returns the URL that actually locates the resource.
      *
-     * <p>Since {@code jar:} only wraps another URL, the scheme of that wrapped URL is returned.
-     * For any other URL its own scheme is returned.</p>
+     * <p>Since {@code jar:} only wraps another URL, that wrapped URL is returned.
+     * For any other URL the URL itself is returned.</p>
      *
      * @param url the class path URL to inspect
-     * @return the effective URL scheme
+     * @return the effective URL
      * @throws MalformedURLException if the wrapped jar: URL cannot be parsed
      */
-    private static String getEffectiveProtocol(URL url) throws MalformedURLException {
+    private static URL getEffectiveURL(URL url) throws MalformedURLException {
         if (!"jar".equals(url.getProtocol())) {
-            return url.getProtocol();
+            return url;
         }
         String path = url.getPath();
         int separator = path.lastIndexOf("!/");
-        return new URL(separator == -1 ? path : path.substring(0, separator)).getProtocol();
+        return new URL(separator == -1 ? path : path.substring(0, separator));
+    }
+
+    /**
+     * Tells whether a file: URL names a path on this machine.
+     *
+     * <p>The host must be empty or {@code localhost}, and the path must not name another
+     * machine by itself. The path is judged decoded, because the file: handler
+     * percent-decodes it and, on Windows, turns slashes into backslashes before opening
+     * it; a leading escaped slash or backslash would otherwise reach the file system as a
+     * reference to a share.</p>
+     *
+     * @param url a URL with the file: scheme
+     * @return whether the URL names a local path
+     */
+    private static boolean isLocalFileLocation(URL url) {
+        String host = url.getHost();
+        if (host != null && !host.isEmpty() && !"localhost".equalsIgnoreCase(host)) {
+            return false;
+        }
+        String path = percentDecoded(url.getPath());
+        return path.length() >= 2 && path.charAt(0) == '/' && path.charAt(1) != '/'
+                && path.indexOf('\\') == -1;
+    }
+
+    /**
+     * Undoes one level of %HH escapes, as the file: handler does. Only the ASCII
+     * separators matter to the caller, so each escape becomes the character of its byte
+     * value; a malformed escape is kept.
+     */
+    private static String percentDecoded(String s) {
+        StringBuilder buf = new StringBuilder(s.length());
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '%' && s.length() - i > 2) {
+                int hi = Character.digit(s.charAt(i + 1), 16);
+                int lo = Character.digit(s.charAt(i + 2), 16);
+                if (hi != -1 && lo != -1) {
+                    c = (char) (hi * 16 + lo);
+                    i += 2;
+                }
+            }
+            buf.append(c);
+        }
+        return buf.toString();
     }
 }

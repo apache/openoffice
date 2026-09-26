@@ -37,6 +37,7 @@
 #include "com/sun/star/uri/XVndSunStarExpandUrlReference.hpp"
 #include "com/sun/star/util/XMacroExpander.hpp"
 #include "osl/diagnose.h"
+#include "rtl/ustrbuf.hxx"
 #include "rtl/ustring.hxx"
 #include "sal/types.h"
 
@@ -49,22 +50,88 @@ namespace {
 namespace css = ::com::sun::star;
 
 #if defined SOLAR_JAVA
+int hexDigitValue(sal_Unicode c)
+{
+    if (c >= '0' && c <= '9') {
+        return c - '0';
+    }
+    if (c >= 'A' && c <= 'F') {
+        return c - 'A' + 10;
+    }
+    if (c >= 'a' && c <= 'f') {
+        return c - 'a' + 10;
+    }
+    return -1;
+}
+
+// Undoes one level of %HH escapes, as the JDK's file: handler does before it
+// opens a path.  Only the ASCII separators matter to the caller, so each escape
+// simply becomes the code unit of its byte value; a malformed escape is kept.
+::rtl::OUString percentDecoded(::rtl::OUString const & s)
+{
+    sal_Int32 const n = s.getLength();
+    ::rtl::OUStringBuffer buf(n);
+    for (sal_Int32 i = 0; i != n; ++i) {
+        sal_Unicode c = s[i];
+        if (c == '%' && n - i > 2) {
+            int const hi = hexDigitValue(s[i + 1]);
+            int const lo = hexDigitValue(s[i + 2]);
+            if (hi != -1 && lo != -1) {
+                c = static_cast< sal_Unicode >(hi * 16 + lo);
+                i += 2;
+            }
+        }
+        buf.append(c);
+    }
+    return buf.makeStringAndClear();
+}
+
+// Whether the part of a file: URL after the scheme names a path on this
+// machine: the authority, if any, must be empty or localhost, and the path must
+// not name another machine by itself.  The path is judged decoded, because the
+// JDK's file: handler percent-decodes it and, on Windows, turns slashes into
+// backslashes before opening it -- a leading escaped slash or backslash would
+// otherwise reach the file system as a reference to a share.
+bool isLocalFileLocation(::rtl::OUString const & afterScheme)
+{
+    ::rtl::OUString rest(afterScheme);
+    if (rest.indexOf('\\') != -1) {
+        return false;
+    }
+    if (rest.matchAsciiL(RTL_CONSTASCII_STRINGPARAM("//"))) {
+        sal_Int32 const end = rest.indexOf('/', 2);
+        ::rtl::OUString const authority(
+            end == -1 ? rest.copy(2) : rest.copy(2, end - 2));
+        if (authority.getLength() != 0
+            && !authority.equalsIgnoreAsciiCaseAsciiL(
+                RTL_CONSTASCII_STRINGPARAM("localhost")))
+        {
+            return false;
+        }
+        rest = end == -1 ? ::rtl::OUString() : rest.copy(end);
+    }
+    rest = percentDecoded(rest);
+    return rest.getLength() >= 2 && rest[0] == '/' && rest[1] != '/'
+        && rest.indexOf('\\') == -1;
+}
+
 // URL schemes that resolve to the local file system or the running JVM image,
-// optionally wrapped in a jar: URL.
+// optionally wrapped in a jar: URL; a file: URL must in addition name a path on
+// this machine.
 //
 // com.sun.star.comp.sdbc.Tools enforces the same allow-list on the Java side;
 // keep the two in sync.
 bool isLocalClassPathUrl(::rtl::OUString const & url)
 {
-    return url.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("file:"))
-        || url.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jrt:"))
-        || url.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jmod:"))
-        || url.matchIgnoreAsciiCaseAsciiL(
-               RTL_CONSTASCII_STRINGPARAM("jar:file:"))
-        || url.matchIgnoreAsciiCaseAsciiL(
-               RTL_CONSTASCII_STRINGPARAM("jar:jrt:"))
-        || url.matchIgnoreAsciiCaseAsciiL(
-               RTL_CONSTASCII_STRINGPARAM("jar:jmod:"));
+    ::rtl::OUString rest(url);
+    if (rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jar:"))) {
+        rest = rest.copy(RTL_CONSTASCII_LENGTH("jar:"));
+    }
+    if (rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("file:"))) {
+        return isLocalFileLocation(rest.copy(RTL_CONSTASCII_LENGTH("file:")));
+    }
+    return rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jrt:"))
+        || rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jmod:"));
 }
 #endif
 
