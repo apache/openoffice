@@ -64,6 +64,8 @@ interface XCharacters;
 interface XBorders;
 interface XValidation;
 interface XWorksheet;
+interface XFormatConditions;
+interface XQueryTable;
 
 interface XRange
 {
@@ -98,6 +100,8 @@ interface XRange
 	[attribute] any Style;
 	[attribute] any AddIndent;
 	[attribute] any ShowDetail;
+	[attribute, readonly] XFormatConditions FormatConditions;
+	[attribute, readonly] XQueryTable QueryTable;
 
 	XComment AddComment( [in] any Text );
 	void Clear();
