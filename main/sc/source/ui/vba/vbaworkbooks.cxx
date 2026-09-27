@@ -65,6 +65,8 @@ using namespace ::com::sun::star;
 
 const sal_Int16 CUSTOM_CHAR = 5;
 
+// MS Excel VBA: Sets up document modules and VBA compatibility mode for a new document.
+// Status: implemented
 void setUpDocumentModules( const uno::Reference< sheet::XSpreadsheetDocument >& xDoc )
 {
     uno::Reference< frame::XModel > xModel( xDoc, uno::UNO_QUERY );
@@ -133,6 +135,8 @@ void setUpDocumentModules( const uno::Reference< sheet::XSpreadsheetDocument >& 
     }
 }
 
+// MS Excel VBA: Returns a VBA Workbook object from a spreadsheet document.
+// Status: implemented - returns existing VBA document or creates new ScVbaWorkbook
 static uno::Any
 getWorkbook( uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< sheet::XSpreadsheetDocument > &xDoc, const uno::Reference< XHelperInterface >& xParent )
 {
@@ -152,6 +156,8 @@ getWorkbook( uno::Reference< uno::XComponentContext >& xContext, const uno::Refe
 	return uno::Any( uno::Reference< excel::XWorkbook > (pWb) );
 }
 
+// MS Excel VBA: Enumeration over all open workbooks.
+// Status: implemented
 class WorkBookEnumImpl : public EnumerationHelperImpl
 {
 	uno::Any m_aApplication;
@@ -166,15 +172,21 @@ public:
 
 };
 
+// MS Excel VBA: Constructs the Workbooks collection.
+// Status: implemented
 ScVbaWorkbooks::ScVbaWorkbooks( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext >& xContext ) : ScVbaWorkbooks_BASE( xParent, xContext, VbaDocumentsBase::EXCEL_DOCUMENT )
 {
 }
 // XEnumerationAccess
+// MS Excel VBA: Returns the element type of the collection (XWorkbook).
+// Status: implemented
 uno::Type
 ScVbaWorkbooks::getElementType()
 {
 	return excel::XWorkbook::static_type(0);
 }
+// MS Excel VBA: Creates an enumeration over all open workbooks.
+// Status: implemented
 uno::Reference< container::XEnumeration >
 ScVbaWorkbooks::createEnumeration()
 {
@@ -186,6 +198,8 @@ ScVbaWorkbooks::createEnumeration()
 	return new WorkBookEnumImpl( mxParent, mxContext, xEnumerationAccess->createEnumeration(), Application() );
 }
 
+// MS Excel VBA: Creates a VBA Workbook object from a data source.
+// Status: implemented
 uno::Any
 ScVbaWorkbooks::createCollectionObject( const css::uno::Any& aSource )
 {
@@ -194,6 +208,8 @@ ScVbaWorkbooks::createCollectionObject( const css::uno::Any& aSource )
 }
 
 
+// MS Excel VBA: Creates a new workbook. Optional Template parameter.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaWorkbooks::Add( const uno::Any& Template )
 {
@@ -238,12 +254,16 @@ ScVbaWorkbooks::Add( const uno::Any& Template )
     return uno::Any();
 }
 
+// MS Excel VBA: Closes all workbooks in the collection.
+// Status: implemented
 void SAL_CALL
 ScVbaWorkbooks::Close()
 {
     closeDocuments();
 }
 
+// MS Excel VBA: Internal helper - determines if a file type is text/csv.
+// Status: internal helper
 bool
 ScVbaWorkbooks::isTextFile( const rtl::OUString& sType )
 {
@@ -258,6 +278,8 @@ ScVbaWorkbooks::isTextFile( const rtl::OUString& sType )
 	return sType.equals( txtType ) || sType.equals( csvType ) || ( sType.getLength() == 0 ) || sType.equals( encodedTxtType );
 }
 
+// MS Excel VBA: Internal helper - determines if a file type is a spreadsheet.
+// Status: internal helper
 bool
 ScVbaWorkbooks::isSpreadSheetFile( const rtl::OUString& sType )
 {
@@ -269,6 +291,8 @@ ScVbaWorkbooks::isSpreadSheetFile( const rtl::OUString& sType )
 	return false;
 }
 
+// MS Excel VBA: Internal helper - detects the file filter type for a filename.
+// Status: internal helper
 rtl::OUString
 ScVbaWorkbooks::getFileFilterType( const rtl::OUString& rFileName )
 {
@@ -281,6 +305,8 @@ ScVbaWorkbooks::getFileFilterType( const rtl::OUString& rFileName )
 }
 
 // #TODO# #FIXME# can any of the unused params below be used?
+// MS Excel VBA: Opens a workbook from the given filename with specified options.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaWorkbooks::Open( const rtl::OUString& rFileName, const uno::Any& /*UpdateLinks*/, const uno::Any& ReadOnly, const uno::Any& Format, const uno::Any& /*Password*/, const uno::Any& /*WriteResPassword*/, const uno::Any& /*IgnoreReadOnlyRecommended*/, const uno::Any& /*Origin*/, const uno::Any& Delimiter, const uno::Any& /*Editable*/, const uno::Any& /*Notify*/, const uno::Any& /*Converter*/, const uno::Any& /*AddToMru*/ )
 {
@@ -368,6 +394,8 @@ ScVbaWorkbooks::Open( const rtl::OUString& rFileName, const uno::Any& /*UpdateLi
 	return aRet;
 }
 
+// MS Excel VBA: Returns the implementation service name for UNO.
+// Status: implemented
 rtl::OUString&
 ScVbaWorkbooks::getServiceImplName()
 {
@@ -375,6 +403,8 @@ ScVbaWorkbooks::getServiceImplName()
 	return sImplName;
 }
 
+// MS Excel VBA: Returns the list of supported service names for UNO.
+// Status: implemented
 css::uno::Sequence<rtl::OUString>
 ScVbaWorkbooks::getServiceNames()
 {

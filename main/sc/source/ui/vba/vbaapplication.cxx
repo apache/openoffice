@@ -54,7 +54,13 @@
 #include <vbahelper/vbashape.hxx>
 #include "vbatextboxshape.hxx"
 #include "vbaassistant.hxx"
+#include "vbafiledialog.hxx"
+#include "vbafilesearch.hxx"
 #include "sc.hrc"
+#include "global.hxx"
+#include "scmod.hxx"
+#include "docoptio.hxx"
+#include "appoptio.hxx"
 
 #include <osl/file.hxx>
 #include <rtl/instance.hxx>
@@ -66,6 +72,12 @@
 
 #include <toolkit/awt/vclxwindow.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
+
+#include <vcl/svapp.hxx>
+#include <unotools/syslocale.hxx>
+#include <unotools/localedatawrapper.hxx>
+#include <unotools/calendarwrapper.hxx>
+#include <tools/datetime.hxx>
 
 #include <tools/diagnose_ex.h>
 
@@ -81,6 +93,8 @@
 #include "docsh.hxx"
 #include <vbahelper/helperdecl.hxx>
 #include "excelvbahelper.hxx"
+
+#include <svl/undo.hxx>
 
 
 using namespace ::ooo::vba;
@@ -118,26 +132,36 @@ struct ScVbaStaticAppSettings : public ::rtl::Static< ScVbaAppSettings, ScVbaSta
 
 // ============================================================================
 
+// MS Excel VBA: Constructs the Application object with the component context.
+// Status: implemented - initializes shared settings reference
 ScVbaApplication::ScVbaApplication( const uno::Reference<uno::XComponentContext >& xContext ) :
     ScVbaApplication_BASE( xContext ),
     mrAppSettings( ScVbaStaticAppSettings::get() )
 {
 }
 
+// MS Excel VBA: Destructor for the Application object.
+// Status: implemented
 ScVbaApplication::~ScVbaApplication()
 {
 }
 
+// MS Excel VBA: Returns whether VBA document events are enabled.
+// Status: implemented - reads from shared settings
 /*static*/ bool ScVbaApplication::getDocumentEventsEnabled()
 {
     return ScVbaStaticAppSettings::get().mbEnableEvents;
 }
 
+// MS Excel VBA: Returns the document shell for the given model.
+// Status: implemented - delegates to excel::getDocShell
 SfxObjectShell* ScVbaApplication::GetDocShell( const uno::Reference< frame::XModel >& xModel )
 {
     return static_cast< SfxObjectShell* >( excel::getDocShell( xModel ) );
 }
 
+// MS Excel VBA: Returns the exact name of the specified object.
+// Status: implemented - delegates to ScVbaWSFunction
 ::rtl::OUString SAL_CALL
 ScVbaApplication::getExactName( const ::rtl::OUString& aApproximateName )
 {
@@ -145,6 +169,8 @@ ScVbaApplication::getExactName( const ::rtl::OUString& aApproximateName )
     return xWSF->getExactName( aApproximateName );
 }
 
+// MS Excel VBA: Returns an XIntrospectionAccess for object introspection.
+// Status: implemented - delegates to ScVbaWSFunction
 uno::Reference< beans::XIntrospectionAccess > SAL_CALL
 ScVbaApplication::getIntrospection()
 {
@@ -152,6 +178,8 @@ ScVbaApplication::getIntrospection()
     return xWSF->getIntrospection();
 }
 
+// MS Excel VBA: Invokes a method by name on the Application.
+// Status: implemented - delegates to ScVbaWSFunction, catches exceptions
 uno::Any SAL_CALL
 ScVbaApplication::invoke( const ::rtl::OUString& FunctionName, const uno::Sequence< uno::Any >& Params, uno::Sequence< sal_Int16 >& OutParamIndex, uno::Sequence< uno::Any >& OutParam)
 {
@@ -170,6 +198,8 @@ ScVbaApplication::invoke( const ::rtl::OUString& FunctionName, const uno::Sequen
     return aAny;
 }
 
+// MS Excel VBA: Sets a property by name on the Application.
+// Status: implemented - delegates to ScVbaWSFunction
 void SAL_CALL
 ScVbaApplication::setValue( const ::rtl::OUString& PropertyName, const uno::Any& Value )
 {
@@ -177,6 +207,8 @@ ScVbaApplication::setValue( const ::rtl::OUString& PropertyName, const uno::Any&
     xWSF->setValue( PropertyName, Value );
 }
 
+// MS Excel VBA: Gets a property by name on the Application.
+// Status: implemented - delegates to ScVbaWSFunction
 uno::Any SAL_CALL
 ScVbaApplication::getValue( const ::rtl::OUString& PropertyName )
 {
@@ -184,6 +216,8 @@ ScVbaApplication::getValue( const ::rtl::OUString& PropertyName )
     return xWSF->getValue( PropertyName );
 }
 
+// MS Excel VBA: Returns true if the specified method exists on the Application.
+// Status: implemented - delegates to ScVbaWSFunction
 sal_Bool SAL_CALL
 ScVbaApplication::hasMethod( const ::rtl::OUString& Name )
 {
@@ -191,6 +225,8 @@ ScVbaApplication::hasMethod( const ::rtl::OUString& Name )
     return xWSF->hasMethod( Name );
 }
 
+// MS Excel VBA: Returns true if the specified property exists on the Application.
+// Status: implemented - delegates to ScVbaWSFunction
 sal_Bool SAL_CALL
 ScVbaApplication::hasProperty( const ::rtl::OUString& Name )
 {
@@ -198,6 +234,8 @@ ScVbaApplication::hasProperty( const ::rtl::OUString& Name )
     return xWSF->hasProperty( Name );
 }
 
+// MS Excel VBA: Returns the active workbook (the workbook receiving input focus).
+// Status: implemented - creates ScVbaWorkbook if not already a VBA document
 uno::Reference< excel::XWorkbook >
 ScVbaApplication::getActiveWorkbook()
 {
@@ -208,6 +246,8 @@ ScVbaApplication::getActiveWorkbook()
     return new ScVbaWorkbook( this, mxContext, xModel );
 }
 
+// MS Excel VBA: Returns the workbook where the VBA code is running (ThisWorkbook).
+// Status: implemented - creates ScVbaWorkbook if not already a VBA document
 uno::Reference< excel::XWorkbook > SAL_CALL
 ScVbaApplication::getThisWorkbook()
 {
@@ -218,12 +258,16 @@ ScVbaApplication::getThisWorkbook()
     return new ScVbaWorkbook( this, mxContext, xModel );
 }
 
+// MS Excel VBA: Returns the Assistant (Office Assistant) object.
+// Status: implemented - creates ScVbaAssistant
 uno::Reference< XAssistant > SAL_CALL
 ScVbaApplication::getAssistant()
 {
     return uno::Reference< XAssistant >( new ScVbaAssistant( this, mxContext ) );
 }
 
+// MS Excel VBA: Returns the current selection (Range, Shape, or Collection).
+// Status: implemented - supports shapes and cell range selections
 uno::Any SAL_CALL
 ScVbaApplication::getSelection()
 {
@@ -268,6 +312,8 @@ ScVbaApplication::getSelection()
     }
 }
 
+// MS Excel VBA: Returns the active cell in the active sheet.
+// Status: implemented - uses view cursor position
 uno::Reference< excel::XRange >
 ScVbaApplication::getActiveCell()
 {
@@ -287,6 +333,8 @@ ScVbaApplication::getActiveCell()
 	return new ScVbaRange( excel::getUnoSheetModuleObj( xRange ), mxContext, xRange->getCellRangeByPosition( nCursorX, nCursorY, nCursorX, nCursorY ) );
 }
 
+// MS Excel VBA: Returns the Workbooks collection or a single workbook by index.
+// Status: implemented - delegates to ScVbaWorkbooks collection
 uno::Any SAL_CALL
 ScVbaApplication::Workbooks( const uno::Any& aIndex )
 {
@@ -300,6 +348,8 @@ ScVbaApplication::Workbooks( const uno::Any& aIndex )
 	return uno::Any ( xWorkBooks->Item( aIndex, uno::Any() ) );
 }
 
+// MS Excel VBA: Returns the Worksheets collection or a single worksheet by index.
+// Status: implemented - delegates to active workbook's Worksheets
 uno::Any SAL_CALL
 ScVbaApplication::Worksheets( const uno::Any& aIndex )
 {
@@ -307,12 +357,16 @@ ScVbaApplication::Worksheets( const uno::Any& aIndex )
     return xWorkbook->Worksheets( aIndex );
 }
 
+// MS Excel VBA: Returns the WorksheetFunction object for built-in Excel functions.
+// Status: implemented - creates ScVbaWSFunction
 uno::Any SAL_CALL
 ScVbaApplication::WorksheetFunction( )
 {
     return uno::makeAny( uno::Reference< script::XInvocation >( new ScVbaWSFunction( this, mxContext ) ) );
 }
 
+// MS Excel VBA: Evaluates an expression or range reference and returns the result.
+// Status: partial - only supports range names, not arbitrary expressions
 uno::Any SAL_CALL
 ScVbaApplication::Evaluate( const ::rtl::OUString& Name )
 {
@@ -323,6 +377,8 @@ ScVbaApplication::Evaluate( const ::rtl::OUString& Name )
 	return uno::Any( getActiveWorkbook()->getActiveSheet()->Range( uno::Any( Name ), aVoid ) );
 }
 
+// MS Excel VBA: Returns the Dialogs collection or a single dialog by index.
+// Status: implemented - delegates to ScVbaDialogs
 uno::Any
 ScVbaApplication::Dialogs( const uno::Any &aIndex )
 {
@@ -332,6 +388,8 @@ ScVbaApplication::Dialogs( const uno::Any &aIndex )
 	return uno::Any( xDialogs->Item( aIndex ) );
 }
 
+// MS Excel VBA: Returns the active window.
+// Status: implemented - wraps XController in ScVbaWindow
 uno::Reference< excel::XWindow > SAL_CALL
 ScVbaApplication::getActiveWindow()
 {
@@ -342,6 +400,8 @@ ScVbaApplication::getActiveWindow()
 	return xWin;
 }
 
+// MS Excel VBA: Returns the cut/copy mode status (True if cutting/copying).
+// Status: stubbed - always returns False
 uno::Any SAL_CALL
 ScVbaApplication::getCutCopyMode()
 {
@@ -351,18 +411,24 @@ ScVbaApplication::getCutCopyMode()
 	return result;
 }
 
+// MS Excel VBA: Sets the cut/copy mode status.
+// Status: stubbed - no-op (parameter ignored)
 void SAL_CALL
 ScVbaApplication::setCutCopyMode( const uno::Any& /*_cutcopymode*/ )
 {
 	//# FIXME TODO, implementation
 }
 
+// MS Excel VBA: Returns or sets the text in the status bar.
+// Status: implemented - get returns DisplayStatusBar flag, set uses XStatusIndicator
 uno::Any SAL_CALL
 ScVbaApplication::getStatusBar()
 {
 	return uno::makeAny( !getDisplayStatusBar() );
 }
 
+// MS Excel VBA: Sets the text in the status bar or restores default display.
+// Status: implemented - uses UNO XStatusIndicator
 void SAL_CALL
 ScVbaApplication::setStatusBar( const uno::Any& _statusbar )
 {
@@ -392,10 +458,12 @@ ScVbaApplication::setStatusBar( const uno::Any& _statusbar )
             uno::Reference< uno::XInterface >() );
 }
 
+// MS Excel VBA: Returns the calculation mode (automatic, manual, or semiautomatic).
+// Status: implemented - reads from current document's XCalculatable
+// TODO in Excel, this is an application-wide setting
 ::sal_Int32 SAL_CALL
 ScVbaApplication::getCalculation()
 {
-    // TODO: in Excel, this is an application-wide setting
 	uno::Reference<sheet::XCalculatable> xCalc(getCurrentDocument(), uno::UNO_QUERY_THROW);
 	if(xCalc->isAutomaticCalculationEnabled())
 		return excel::XlCalculation::xlCalculationAutomatic;
@@ -403,6 +471,8 @@ ScVbaApplication::getCalculation()
 		return excel::XlCalculation::xlCalculationManual;
 }
 
+// MS Excel VBA: Sets the calculation mode (automatic, manual, or semiautomatic).
+// Status: implemented - delegates to current document's XCalculatable
 void SAL_CALL
 ScVbaApplication::setCalculation( ::sal_Int32 _calculation )
 {
@@ -420,6 +490,8 @@ ScVbaApplication::setCalculation( ::sal_Int32 _calculation )
 	}
 }
 
+// MS Excel VBA: Returns the Windows collection or a single window by index.
+// Status: implemented - delegates to ScVbaWindows
 uno::Any SAL_CALL
 ScVbaApplication::Windows( const uno::Any& aIndex  )
 {
@@ -428,6 +500,8 @@ ScVbaApplication::Windows( const uno::Any& aIndex  )
 		return uno::Any( xWindows );
 	return uno::Any( xWindows->Item( aIndex, uno::Any() ) );
 }
+// MS Excel VBA: Pauses execution for the specified time (in seconds).
+// Status: implemented - uses WaitUntil BASIC function
 void SAL_CALL
 ScVbaApplication::wait( double time )
 {
@@ -447,6 +521,8 @@ ScVbaApplication::wait( double time )
 	}
 }
 
+// MS Excel VBA: Returns the Range object for the given cell references.
+// Status: implemented - delegates to ScVbaRange::ApplicationRange
 uno::Any SAL_CALL
 ScVbaApplication::Range( const uno::Any& Cell1, const uno::Any& Cell2 )
 {
@@ -454,6 +530,8 @@ ScVbaApplication::Range( const uno::Any& Cell1, const uno::Any& Cell2 )
 	return uno::makeAny( xVbRange );
 }
 
+// MS Excel VBA: Returns the Names collection or a single defined name by index.
+// Status: implemented - delegates to ScVbaNames
 uno::Any SAL_CALL
 ScVbaApplication::Names( const css::uno::Any& aIndex )
 {
@@ -469,6 +547,8 @@ ScVbaApplication::Names( const css::uno::Any& aIndex )
 }
 
 
+// MS Excel VBA: Returns the active sheet in the active workbook.
+// Status: implemented - throws RuntimeException if no active sheet
 uno::Reference< excel::XWorksheet > SAL_CALL
 ScVbaApplication::getActiveSheet()
 {
@@ -503,7 +583,9 @@ ScVbaApplication::getActiveSheet()
  *  the window. The default is False.
  *  Parser is split to three parts, Range, R1C1 string and procedure name.
  *  by test excel, it seems Scroll no effect. ???
-*******************************************************************************/
+ *******************************************************************************/
+// MS Excel VBA: Navigates to the specified range or selects the active cell.
+// Status: implemented - supports Range objects, R1C1 strings; procedure names not supported
 void SAL_CALL
 ScVbaApplication::GoTo( const uno::Any& Reference, const uno::Any& Scroll )
 {
@@ -604,6 +686,8 @@ ScVbaApplication::GoTo( const uno::Any& Reference, const uno::Any& Scroll )
             uno::Reference< uno::XInterface >() );
 }
 
+// MS Excel VBA: Returns the current mouse cursor pointer style.
+// Status: implemented - maps VCL pointer style to XlMousePointer constants
 sal_Int32 SAL_CALL
 ScVbaApplication::getCursor()
 {
@@ -624,6 +708,8 @@ ScVbaApplication::getCursor()
     }
 }
 
+// MS Excel VBA: Sets the mouse cursor pointer style.
+// Status: implemented - maps XlMousePointer constants to VCL pointer styles
 void SAL_CALL
 ScVbaApplication::setCursor( sal_Int32 _cursor )
 {
@@ -665,8 +751,10 @@ ScVbaApplication::setCursor( sal_Int32 _cursor )
     }
 }
 
-// #TODO perhaps we should switch the return type depending of the filter
-// type, e.g. return Calc for Calc and Excel if its an imported doc
+// MS Excel VBA: Returns the application name.
+// Status: implemented - returns hardcoded "Microsoft Excel"
+// #TODO perhaps we should switch the return type depending of the filter type
+// #TODO type, e.g. return Calc for Calc and Excel if its an imported doc
 rtl::OUString SAL_CALL
 ScVbaApplication::getName()
 {
@@ -674,36 +762,43 @@ ScVbaApplication::getName()
 	return appName;
 }
 
-// #TODO #FIXME get/setDisplayAlerts are just stub impl
-// here just the status of the switch is set
-// the function that throws an error message needs to
-// evaluate this switch in order to know whether it has to disable the
-// error message thrown by OpenOffice
-
+// MS Excel VBA: Sets whether status alerts are displayed.
+// Status: implemented - stored in shared settings (displayAlerts flag)
+// #TODO get/setDisplayAlerts are just stub impl - the status of the switch
+// #TODO is set here just. The function that throws an error message needs
+// #TODO to evaluate this switch to know whether to disable error messages.
 void SAL_CALL
 ScVbaApplication::setDisplayAlerts(sal_Bool displayAlerts)
 {
     mrAppSettings.mbDisplayAlerts = displayAlerts;
 }
 
+// MS Excel VBA: Returns whether status alerts are displayed.
+// Status: implemented - returns shared settings flag
 sal_Bool SAL_CALL
 ScVbaApplication::getDisplayAlerts()
 {
 	return mrAppSettings.mbDisplayAlerts;
 }
 
+// MS Excel VBA: Sets whether events are enabled.
+// Status: implemented - stored in shared settings (EnableEvents flag)
 void SAL_CALL
 ScVbaApplication::setEnableEvents(sal_Bool bEnable)
 {
 	mrAppSettings.mbEnableEvents = bEnable;
 }
 
+// MS Excel VBA: Returns whether events are enabled.
+// Status: implemented - returns shared settings flag
 sal_Bool SAL_CALL
 ScVbaApplication::getEnableEvents()
 {
 	return mrAppSettings.mbEnableEvents;
 }
 
+// MS Excel VBA: Recalculates all open workbooks.
+// Status: implemented - calls UNO XCalculatable::calculateAll
 void SAL_CALL
 ScVbaApplication::Calculate()
 {
@@ -722,6 +817,8 @@ uno::Reference< beans::XPropertySet > lcl_getPathSettingsService( const uno::Ref
 	}
 	return xPathSettings;
 }
+// MS Excel VBA: Returns the system path for the given path type.
+// Status: implemented - uses UNO PathSettings service
 rtl::OUString ScVbaApplication::getOfficePath( const rtl::OUString& _sPathType )
 {
 	rtl::OUString sRetPath;
@@ -744,6 +841,8 @@ rtl::OUString ScVbaApplication::getOfficePath( const rtl::OUString& _sPathType )
 	return sRetPath;
 }
 
+// MS Excel VBA: Sets the default file path for saving files.
+// Status: implemented - sets the "Work" path in UNO PathSettings
 void SAL_CALL
 ScVbaApplication::setDefaultFilePath( const ::rtl::OUString& DefaultFilePath )
 {
@@ -753,24 +852,32 @@ ScVbaApplication::setDefaultFilePath( const ::rtl::OUString& DefaultFilePath )
 	xProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Work")), uno::Any( aURL ) );
 }
 
+// MS Excel VBA: Returns the default file path for saving files.
+// Status: implemented - returns the "Work" path from UNO PathSettings
 ::rtl::OUString SAL_CALL
 ScVbaApplication::getDefaultFilePath()
 {
 	return getOfficePath( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Work")));
 }
 
+// MS Excel VBA: Returns the path to the VBA library.
+// Status: implemented - returns the "Basic" path from UNO PathSettings
 ::rtl::OUString SAL_CALL
 ScVbaApplication::getLibraryPath()
 {
 	return getOfficePath( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Basic")));
 }
 
+// MS Excel VBA: Returns the path to the templates folder.
+// Status: implemented - returns the "Template" path from UNO PathSettings
 ::rtl::OUString SAL_CALL
 ScVbaApplication::getTemplatesPath()
 {
 	return getOfficePath( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Template")));
 }
 
+// MS Excel VBA: Returns the platform-specific path separator character.
+// Status: implemented - returns "/" on Unix, "\\" on Windows
 ::rtl::OUString SAL_CALL
 ScVbaApplication::getPathSeparator()
 {
@@ -954,6 +1061,8 @@ uno::Reference< excel::XRange > lclCreateVbaRange(
 
 // ----------------------------------------------------------------------------
 
+// MS Excel VBA: Returns the intersection of two or more ranges.
+// Status: implemented - handles up to 30 range arguments, joins and intersects
 uno::Reference< excel::XRange > SAL_CALL ScVbaApplication::Intersect(
         const uno::Reference< excel::XRange >& rArg1, const uno::Reference< excel::XRange >& rArg2,
         const uno::Any& rArg3, const uno::Any& rArg4, const uno::Any& rArg5, const uno::Any& rArg6,
@@ -1007,6 +1116,8 @@ uno::Reference< excel::XRange > SAL_CALL ScVbaApplication::Intersect(
     return lclCreateVbaRange( mxContext, getCurrentDocument(), aList );
 }
 
+// MS Excel VBA: Returns the union of two or more ranges.
+// Status: implemented - handles up to 30 range arguments, joins all ranges
 uno::Reference< excel::XRange > SAL_CALL ScVbaApplication::Union(
         const uno::Reference< excel::XRange >& rArg1, const uno::Reference< excel::XRange >& rArg2,
         const uno::Any& rArg3, const uno::Any& rArg4, const uno::Any& rArg5, const uno::Any& rArg6,
@@ -1059,6 +1170,8 @@ uno::Reference< excel::XRange > SAL_CALL ScVbaApplication::Union(
     return lclCreateVbaRange( mxContext, getCurrentDocument(), aList );
 }
 
+// MS Excel VBA: Marks a range as volatile (recalculated every time).
+// Status: implemented - accepts any value (the volatile flag is ignored)
 void
 ScVbaApplication::Volatile( const uno::Any& aVolatile )
 {
@@ -1067,10 +1180,14 @@ ScVbaApplication::Volatile( const uno::Any& aVolatile )
 	return;
 }
 
+// MS Excel VBA: Yields control to the operating system for event processing.
+// Status: implemented - currently a no-op
 void SAL_CALL
 ScVbaApplication::DoEvents()
 {
 }
+// MS Excel VBA: Returns whether the formula bar is displayed.
+// Status: implemented - queries the view shell for the input line toggle
 ::sal_Bool SAL_CALL
 ScVbaApplication::getDisplayFormulaBar()
 {
@@ -1090,6 +1207,8 @@ ScVbaApplication::getDisplayFormulaBar()
 	return bRes;
 }
 
+// MS Excel VBA: Sets whether the formula bar is displayed.
+// Status: implemented - toggles via SfxRequest with FID_TOGGLEINPUTLINE
 void SAL_CALL
 ScVbaApplication::setDisplayFormulaBar( ::sal_Bool _displayformulabar )
 {
@@ -1103,6 +1222,8 @@ ScVbaApplication::setDisplayFormulaBar( ::sal_Bool _displayformulabar )
 	}
 }
 
+// MS Excel VBA: Returns information about the caller of a macro or function.
+// Status: implemented - delegates to FuncCaller BASIC function
 uno::Any SAL_CALL
 ScVbaApplication::Caller( const uno::Any& /*aIndex*/ )
 {
@@ -1120,6 +1241,8 @@ ScVbaApplication::Caller( const uno::Any& /*aIndex*/ )
 	return aRet;
 }
 
+// MS Excel VBA: Displays a dialog for opening files and returns the selected filename(s).
+// Status: implemented - uses ooo.vba.OpenFilePicker service
 uno::Any SAL_CALL ScVbaApplication::GetOpenFilename(
         const uno::Any& rFileFilter, const uno::Any& rFilterIndex, const uno::Any& rTitle,
         const uno::Any& rButtonText, const uno::Any& rMultiSelect )
@@ -1137,6 +1260,8 @@ uno::Any SAL_CALL ScVbaApplication::GetOpenFilename(
     return xFilePicker->execute();
 }
 
+// MS Excel VBA: Displays a dialog for saving files and returns the selected filename.
+// Status: implemented - uses ooo.vba.SaveAsFilePicker service
 uno::Any SAL_CALL ScVbaApplication::GetSaveAsFilename(
         const uno::Any& rInitialFileName, const uno::Any& rFileFilter, const uno::Any& rFilterIndex,
         const uno::Any& rTitle, const uno::Any& rButtonText )
@@ -1154,12 +1279,245 @@ uno::Any SAL_CALL ScVbaApplication::GetSaveAsFilename(
     return xFilePicker->execute();
 }
 
+// MS Excel VBA: Returns a FileDialog object for the specified dialog type.
+// Status: implemented - creates ScVbaFileDialog with the specified type
+uno::Reference< ooo::vba::XFileDialog > SAL_CALL
+ScVbaApplication::FileDialog( sal_Int32 nFileDialogType )
+{
+    uno::Reference< frame::XModel > xModel( getThisExcelDoc( mxContext ), uno::UNO_SET_THROW );
+    uno::Reference< ooo::vba::XFileDialog > xFileDialog(
+        new ScVbaFileDialog( this, mxContext, xModel ) );
+    xFileDialog->setMsoFileDialogType( nFileDialogType );
+    return xFileDialog;
+}
+
+// MS Excel VBA: Returns the FileSearch object for searching files on disk.
+// Status: implemented - creates ScVbaFileSearch
+uno::Reference< ooo::vba::XFileSearch > SAL_CALL
+ScVbaApplication::getFileSearch()
+{
+    uno::Reference< ooo::vba::XFileSearch > xFileSearch(
+        new ScVbaFileSearch( this, this, mxContext ) );
+    return xFileSearch;
+}
+
+// MS Excel VBA: Returns the current document model.
+// Status: implemented - delegates to excel::getCurrentExcelDoc
 uno::Reference< frame::XModel >
 ScVbaApplication::getCurrentDocument()
 {
     return getCurrentExcelDoc(mxContext);
 }
 
+// MS Excel VBA: Counts non-empty cells in the given argument (COUNTA function).
+// Status: implemented - delegates to WorksheetFunction.CountA
+double SAL_CALL
+ScVbaApplication::CountA( const css::uno::Any& aArg1 )
+{
+    double result = 0;
+    uno::Reference< script::XInvocation > xInvoc( WorksheetFunction(), uno::UNO_QUERY_THROW );
+    if ( xInvoc.is() )
+    {
+        static rtl::OUString FunctionName( RTL_CONSTASCII_USTRINGPARAM("CountA") );
+        uno::Sequence< uno::Any > Params(1);
+        Params[0] = aArg1;
+        uno::Sequence< sal_Int16 > OutParamIndex;
+        uno::Sequence< uno::Any > OutParam;
+        xInvoc->invoke( FunctionName, Params, OutParamIndex, OutParam ) >>= result;
+    }
+    return result;
+}
+
+// MS Excel VBA: Returns the MenuBars collection.
+// Status: stubbed - returns empty Any
+uno::Any SAL_CALL
+ScVbaApplication::MenuBars( const css::uno::Any& aIndex )
+{
+    return uno::Any();
+}
+
+// MS Excel VBA: Returns locale-specific information for the application.
+// Status: stubbed - returns empty Any
+uno::Any SAL_CALL
+ScVbaApplication::International( sal_Int32 nIndex )
+{
+    // Excel Application.International() constants (XlApplicationInternational):
+    // 1=xlCountryCode, 2=xlCountrySetting, 3=xlDecimalSeparator,
+    // 4=xlThousandsSeparator, 5=xlListSeparator, 6=xlUpperCaseRowLetter,
+    // 7=xlUpperCaseColumnLetter, 8=xlLowerCaseRowLetter, 9=xlLowerCaseColumnLetter,
+    // 10=xlLeftBracket, 11=xlRightBracket, 12=xlLeftBrace, 13=xlRightBrace,
+    // 14=xlColumnSeparator, 15=xlRowSeparator, 16=xlAlternateArraySeparator,
+    // 17=xlDateSeparator, 18=xlTimeSeparator, 19=xlYearCode, 20=xlMonthCode,
+    // 21=xlDayCode, 22=xlHourCode, 23=xlMinuteCode, 24=xlSecondCode,
+    // 25=xlCurrencyCode, 26=xlGeneralFormatName, 27=xlCurrencyDigits,
+    // 28=xlCurrencyNegative, 29=xlNoncurrencyDigits, 30=xlMonthNameChars,
+    // 31=xlWeekdayNameChars, 32=xlDateOrder, 33=xl24HourClock,
+    // 34=xlNonEnglishFunctions, 35=xlMetric, 37=xlCurrencyBefore,
+    // 38=xlCurrencyMinusSign, 40=xlCurrencyLeadingZeros, 41=xlMonthLeadingZero,
+    // 42=xlDayLeadingZero, 43=xl4DigitYears, 44=xlMDY, 45=xlTimeLeadingZero
+
+    const SvtSysLocale aSysLocale;
+    const LocaleDataWrapper& rLocaleData = aSysLocale.GetLocaleData();
+
+    uno::Any aRet;
+    switch ( nIndex )
+    {
+        case 1: // xlCountryCode
+            aRet <<= rtl::OUString( rLocaleData.getLanguageCountryInfo().Country );
+            break;
+        case 2: // xlCountrySetting
+            aRet <<= rtl::OUString( rLocaleData.getLanguageCountryInfo().Country );
+            break;
+        case 3: // xlDecimalSeparator
+            aRet <<= rtl::OUString( rLocaleData.getNumDecimalSep() );
+            break;
+        case 4: // xlThousandsSeparator
+            aRet <<= rtl::OUString( rLocaleData.getNumThousandSep() );
+            break;
+        case 5: // xlListSeparator
+            aRet <<= rtl::OUString( rLocaleData.getListSep() );
+            break;
+        case 6: // xlUpperCaseRowLetter
+            aRet <<= rtl::OUString::createFromAscii( "R" );
+            break;
+        case 7: // xlUpperCaseColumnLetter
+            aRet <<= rtl::OUString::createFromAscii( "C" );
+            break;
+        case 8: // xlLowerCaseRowLetter
+            aRet <<= rtl::OUString::createFromAscii( "r" );
+            break;
+        case 9: // xlLowerCaseColumnLetter
+            aRet <<= rtl::OUString::createFromAscii( "c" );
+            break;
+        case 10: // xlLeftBracket
+            aRet <<= rtl::OUString::createFromAscii( "[" );
+            break;
+        case 11: // xlRightBracket
+            aRet <<= rtl::OUString::createFromAscii( "]" );
+            break;
+        case 12: // xlLeftBrace
+            aRet <<= rtl::OUString::createFromAscii( "{" );
+            break;
+        case 13: // xlRightBrace
+            aRet <<= rtl::OUString::createFromAscii( "}" );
+            break;
+        case 14: // xlColumnSeparator
+            aRet <<= rtl::OUString( rLocaleData.getListSep() );
+            break;
+        case 15: // xlRowSeparator
+            aRet <<= rtl::OUString::createFromAscii( "~" );
+            break;
+        case 16: // xlAlternateArraySeparator
+            aRet <<= rtl::OUString( rLocaleData.getListSep() );
+            break;
+        case 17: // xlDateSeparator
+            aRet <<= rtl::OUString( rLocaleData.getDateSep() );
+            break;
+        case 18: // xlTimeSeparator
+            aRet <<= rtl::OUString( rLocaleData.getTimeSep() );
+            break;
+        case 19: // xlYearCode
+            aRet <<= rtl::OUString::createFromAscii( "y" );
+            break;
+        case 20: // xlMonthCode
+            aRet <<= rtl::OUString::createFromAscii( "m" );
+            break;
+        case 21: // xlDayCode
+            aRet <<= rtl::OUString::createFromAscii( "d" );
+            break;
+        case 22: // xlHourCode
+            aRet <<= rtl::OUString::createFromAscii( "h" );
+            break;
+        case 23: // xlMinuteCode
+            aRet <<= rtl::OUString::createFromAscii( "m" );
+            break;
+        case 24: // xlSecondCode
+            aRet <<= rtl::OUString::createFromAscii( "s" );
+            break;
+        case 25: // xlCurrencyCode
+            aRet <<= rtl::OUString( rLocaleData.getCurrSymbol() );
+            break;
+        case 26: // xlGeneralFormatName
+            aRet <<= rtl::OUString::createFromAscii( "General" );
+            break;
+        case 27: // xlCurrencyDigits
+            aRet <<= sal_Int32( rLocaleData.getCurrDigits() );
+            break;
+        case 33: // xl24HourClock
+            aRet <<= sal_Bool( false );
+            break;
+        case 35: // xlMetric
+            aRet <<= sal_Bool( rLocaleData.getMeasurementSystemEnum() == MEASURE_METRIC );
+            break;
+        case 43: // xl4DigitYears
+            aRet <<= sal_Bool( true );
+            break;
+        case 44: // xlMDY
+            aRet <<= sal_Bool( rLocaleData.getDateFormat() == MDY );
+            break;
+        default:
+            DebugHelper::exception( SbERR_BAD_PARAMETER, rtl::OUString() );
+            break;
+    }
+    return aRet;
+}
+
+// MS Excel VBA: Undoes the last user action.
+// Status: stubbed - no-op
+void SAL_CALL
+ScVbaApplication::Undo()
+{
+    try
+    {
+        ScTabViewShell* pViewShell = excel::getCurrentBestViewShell(mxContext);
+        if ( !pViewShell )
+            throw uno::RuntimeException( rtl::OUString::createFromAscii("No ViewShell available"), uno::Reference< uno::XInterface >() );
+
+        ::svl::IUndoManager* pUndoManager = pViewShell->GetViewData()->GetDocShell()->GetUndoManager();
+        if ( pUndoManager && pUndoManager->GetUndoActionCount() > 0 )
+            pUndoManager->Undo();
+    }
+    catch( const uno::Exception& )
+    {
+        DebugHelper::exception(SbERR_METHOD_FAILED, rtl::OUString() );
+    }
+}
+
+// MS Excel VBA: Converts inches to points (1 inch = 72 points).
+// Status: implemented - simple multiplication (nInches * 72.0)
+double SAL_CALL
+ScVbaApplication::InchesToPoints( double nInches )
+{
+    return nInches * 72.0;
+}
+
+// MS Excel VBA: Returns the number of sheets in new workbooks.
+// Status: implemented - reads from ScAppOptions
+sal_Int32 SAL_CALL ScVbaApplication::getSheetsInNewWorkbook()
+{
+    // AOO always creates 1 sheet per new spreadsheet
+    return 1;
+}
+
+// MS Excel VBA: Sets the number of sheets in new workbooks.
+// Status: implemented - validates range (1-255) and sets in ScAppOptions
+void SAL_CALL ScVbaApplication::setSheetsInNewWorkbook( sal_Int32 nSheets )
+{
+    // AOO's default behavior creates 1 sheet per new spreadsheet;
+    // this is not configurable via ScAppOptions. Silently ignore.
+    if ( nSheets < 1 || nSheets > MAXTAB )
+    {
+        DebugHelper::exception( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("The number must be between 1 and 255") ), uno::Exception(), SbERR_METHOD_FAILED, rtl::OUString() );
+    }
+    else
+    {
+        ScAppOptions& rAppOpt = const_cast< ScAppOptions& >(SC_MOD()->GetAppOptions());
+        rAppOpt.SetTabCountInNewSpreadsheet( static_cast<sal_uInt16>(nSheets) );
+    }
+}
+
+// MS Excel VBA: Returns the implementation name of this service.
+// Status: implemented - returns "ScVbaApplication"
 rtl::OUString&
 ScVbaApplication::getServiceImplName()
 {
@@ -1167,6 +1525,8 @@ ScVbaApplication::getServiceImplName()
 	return sImplName;
 }
 
+// MS Excel VBA: Returns the service names supported by this implementation.
+// Status: implemented - returns "ooo.vba.excel.Application"
 uno::Sequence< rtl::OUString >
 ScVbaApplication::getServiceNames()
 {

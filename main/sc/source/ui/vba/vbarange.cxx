@@ -146,6 +146,8 @@
 #include "vbaworksheet.hxx"
 #include "vbavalidation.hxx"
 #include "vbahyperlinks.hxx"
+#include "vbaquerytable.hxx"
+#include "vbaformatconditions.hxx"
 
 #include "tabvwsh.hxx"
 #include "rangelst.hxx"
@@ -181,16 +183,22 @@ const double fExtraWidth = 182.0 / 256.0;
 //    * 1 point = 1/72 inch = 20 twips
 //    * 1 inch = 72 points = 1440 twips
 //    * 1 cm = 567 twips
+// MS Excel VBA: Internal helper - converts HMM to points.
+// Status: internal helper
 double lcl_hmmToPoints( double nVal ) { return ( (double)((nVal /1000 ) * 567 ) / 20 ); }
 
 static const sal_Int16 supportedIndexTable[] = {  excel::XlBordersIndex::xlEdgeLeft, excel::XlBordersIndex::xlEdgeTop, excel::XlBordersIndex::xlEdgeBottom, excel::XlBordersIndex::xlEdgeRight, excel::XlBordersIndex::xlDiagonalDown, excel::XlBordersIndex::xlDiagonalUp, excel::XlBordersIndex::xlInsideVertical, excel::XlBordersIndex::xlInsideHorizontal };
 
+// MS Excel VBA: Internal helper - converts points to twips.
+// Status: internal helper
 sal_uInt16 lcl_pointsToTwips( double nVal )
 {
 	nVal = nVal * static_cast<double>(20);
 	short nTwips = static_cast<short>(nVal);
 	return nTwips;
 }
+// MS Excel VBA: Internal helper - converts twips to points.
+// Status: internal helper
 double lcl_TwipsToPoints( sal_uInt16 nVal )
 {
 	double nPoints = nVal;
@@ -208,6 +216,8 @@ double lcl_Round2DecPlaces( double nVal )
 	return nVal;
 }
 
+// MS Excel VBA: Internal helper - creates a Range object from any.
+// Status: internal helper
 uno::Any lcl_makeRange( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Any aAny, bool bIsRows, bool bIsColumns )
 {
 	uno::Reference< table::XCellRange > xCellRange( aAny, uno::UNO_QUERY_THROW );
@@ -243,6 +253,8 @@ uno::Reference< excel::XRange > lcl_makeXRangeFromSheetCellRanges( const uno::Re
 	return xRange;
 }
 
+// MS Excel VBA: Internal helper - gets the ScCellRangesBase interface.
+// Status: internal helper
 ScCellRangesBase* ScVbaRange::getCellRangesBase()
 {
     if( mxRanges.is() )
@@ -252,16 +264,22 @@ ScCellRangesBase* ScVbaRange::getCellRangesBase()
     throw uno::RuntimeException( rtl::OUString::createFromAscii("General Error creating range - Unknown" ), uno::Reference< uno::XInterface >() );
 }
 
+// MS Excel VBA: Internal helper - gets the ScCellRangeObj implementation.
+// Status: internal helper
 ScCellRangeObj* ScVbaRange::getCellRangeObj()
 {
 	return dynamic_cast< ScCellRangeObj* >( getCellRangesBase() );
 }
 
+// MS Excel VBA: Internal helper - gets the ScCellRangesObj implementation.
+// Status: internal helper
 ScCellRangesObj* ScVbaRange::getCellRangesObj()
 {
 	return dynamic_cast< ScCellRangesObj* >( getCellRangesBase() );
 }
 
+// MS Excel VBA: Internal helper - gets the current data set.
+// Status: internal helper
 SfxItemSet*  ScVbaRange::getCurrentDataSet( )
 {
 	SfxItemSet* pDataSet = excel::ScVbaCellRangeAccess::GetDataSet( getCellRangesBase() );
@@ -270,6 +288,8 @@ SfxItemSet*  ScVbaRange::getCurrentDataSet( )
 	return pDataSet;
 }
 
+// MS Excel VBA: Internal helper - fires a Worksheet_Change event for this range.
+// Status: internal helper
 void ScVbaRange::fireChangeEvent()
 {
     if( ScVbaApplication::getDocumentEventsEnabled() )
@@ -290,6 +310,8 @@ void ScVbaRange::fireChangeEvent()
     }
 }
 
+// MS Excel VBA: Internal enumeration class for single range.
+// Status: internal helper
 class SingleRangeEnumeration : public EnumerationHelper_BASE
 {
     uno::Reference< XHelperInterface > m_xParent;
@@ -300,6 +322,8 @@ public:
 
     SingleRangeEnumeration( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext >& xContext, const uno::Reference< table::XCellRange >& xRange ) : m_xParent( xParent ), m_xRange( xRange ), mxContext( xContext ), bHasMore( true ) { }
 	virtual ::sal_Bool SAL_CALL hasMoreElements(  ) { return bHasMore; }
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual uno::Any SAL_CALL nextElement(  )
 	{
 		if ( !bHasMore )
@@ -313,6 +337,8 @@ public:
 // just one item
 typedef ::cppu::WeakImplHelper2< container::XIndexAccess, container::XEnumerationAccess > SingleRange_BASE;
 
+// MS Excel VBA: Internal index access class for single range.
+// Status: internal helper
 class SingleRangeIndexAccess : public SingleRange_BASE
 {
 private:
@@ -324,6 +350,8 @@ public:
     SingleRangeIndexAccess( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< table::XCellRange >& xRange ):mxParent( xParent ), m_xRange( xRange ), mxContext( xContext ) {}
 	// XIndexAccess
 	virtual ::sal_Int32 SAL_CALL getCount() { return 1; }
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index )
 	{
 		if ( Index != 0 )
@@ -341,6 +369,8 @@ public:
 
 
 
+// MS Excel VBA: Internal enumeration class for range collections.
+// Status: internal helper
 class RangesEnumerationImpl : public EnumerationHelperImpl
 {
 	bool mbIsRows;
@@ -348,6 +378,8 @@ class RangesEnumerationImpl : public EnumerationHelperImpl
 public:
 
     RangesEnumerationImpl( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration, bool bIsRows, bool bIsColumns ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), mbIsRows( bIsRows ), mbIsColumns( bIsColumns ) {}
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual uno::Any SAL_CALL nextElement(  )
 	{
         return lcl_makeRange( m_xParent, m_xContext, m_xEnumeration->nextElement(), mbIsRows, mbIsColumns );
@@ -355,6 +387,8 @@ public:
 };
 
 
+// MS Excel VBA: Internal class representing the Areas collection of a range.
+// Status: internal helper
 class ScVbaRangeAreas : public ScVbaCollectionBaseImpl
 {
 	bool mbIsRows;
@@ -363,11 +397,15 @@ public:
     ScVbaRangeAreas( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XIndexAccess >& xIndexAccess, bool bIsRows, bool bIsColumns ) : ScVbaCollectionBaseImpl( xParent, xContext, xIndexAccess ), mbIsRows( bIsRows ), mbIsColumns( bIsColumns ) {}
 
 	// XEnumerationAccess
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration();
 
 	// XElementAccess
 	virtual uno::Type SAL_CALL getElementType(){ return excel::XRange::static_type(0); }
 
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual uno::Any createCollectionObject( const uno::Any& aSource );
 
 	virtual rtl::OUString& getServiceImplName() { static rtl::OUString sDummy; return sDummy; }
@@ -440,6 +478,8 @@ getDocumentFromRange( const uno::Reference< table::XCellRange >& xRange )
 
 
 ScDocument*
+// MS Excel VBA: Gets the underlying ScDocument for this range.
+// Status: implemented
 ScVbaRange::getScDocument()
 {
 	if ( mxRanges.is() )
@@ -452,6 +492,8 @@ ScVbaRange::getScDocument()
 }
 
 ScDocShell*
+// MS Excel VBA: Gets the underlying ScDocShell for this range.
+// Status: implemented
 ScVbaRange::getScDocShell()
 {
 	if ( mxRanges.is() )
@@ -463,12 +505,16 @@ ScVbaRange::getScDocShell()
 	return getDocShellFromRange( mxRange );
 }
 
+// MS Excel VBA: Returns the ScVbaRange implementation object for a VBA Range object.
+// Status: implemented
 /*static*/ ScVbaRange* ScVbaRange::getImplementation( const uno::Reference< excel::XRange >& rxRange )
 {
     // FIXME: always save to use dynamic_cast? Or better to (implement and) use XTunnel?
     return dynamic_cast< ScVbaRange* >( rxRange.get() );
 }
 
+// MS Excel VBA: Gets the underlying model object.
+// Status: implemented
 uno::Reference< frame::XModel > ScVbaRange::getUnoModel()
 {
     if( ScDocShell* pDocShell = getScDocShell() )
@@ -483,6 +529,8 @@ uno::Reference< frame::XModel > ScVbaRange::getUnoModel()
     throw uno::RuntimeException();
 }
 
+// MS Excel VBA: Gets the ScRangeList for this range.
+// Status: implemented
 const ScRangeList& ScVbaRange::getScRangeList()
 {
     if( ScCellRangesBase* pScRangesBase = getCellRangesBase() )
@@ -498,6 +546,8 @@ const ScRangeList& ScVbaRange::getScRangeList()
 }
 
 
+// MS Excel VBA: Internal helper class for number format operations.
+// Status: internal helper
 class NumFormatHelper
 {
 	uno::Reference< util::XNumberFormatsSupplier > mxSupplier;
@@ -604,6 +654,8 @@ public:
 
 };
 
+// MS Excel VBA: Internal struct representing a cell position.
+// Status: internal helper
 struct CellPos
 {
 	CellPos():m_nRow(-1), m_nCol(-1), m_nArea(0) {};
@@ -621,6 +673,8 @@ typedef ::std::vector< CellPos > vCellPos;
 // to handle rows and columns ( but I do this separately for now
 // and.. this class only handles singe areas ( does it have to handle
 // multi area ranges?? )
+// MS Excel VBA: Internal enumeration class for columns/rows.
+// Status: internal helper
 class ColumnsRowEnumeration: public CellsEnumeration_BASE
 {
 	uno::Reference< uno::XComponentContext > mxContext;
@@ -635,6 +689,8 @@ public:
 
 	virtual ::sal_Bool SAL_CALL hasMoreElements(){ return mCurElem < mMaxElems; }
 
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual uno::Any SAL_CALL nextElement()
 	{
 		if ( !hasMoreElements() )
@@ -644,6 +700,8 @@ public:
 	}
 };
 
+// MS Excel VBA: Internal enumeration class for cells.
+// Status: internal helper
 class CellsEnumeration : public CellsEnumeration_BASE
 {
     uno::WeakReference< XHelperInterface > mxParent;
@@ -685,6 +743,8 @@ public:
 	}
 	virtual ::sal_Bool SAL_CALL hasMoreElements(){ return m_it != m_CellPositions.end(); }
 
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual uno::Any SAL_CALL nextElement()
 	{
 		if ( !hasMoreElements() )
@@ -699,6 +759,8 @@ public:
 };
 
 
+// MS Excel VBA: Internal - property name constants for range cell properties.
+// Status: internal helper
 const static ::rtl::OUString ISVISIBLE(  RTL_CONSTASCII_USTRINGPARAM( "IsVisible"));
 const static ::rtl::OUString WIDTH(  RTL_CONSTASCII_USTRINGPARAM( "Width"));
 const static ::rtl::OUString HEIGHT(  RTL_CONSTASCII_USTRINGPARAM( "Height"));
@@ -716,6 +778,8 @@ const static rtl::OUString STR_ERRORMESSAGE_NOCELLSWEREFOUND( RTL_CONSTASCII_UST
 const static rtl::OUString STR_ERRORMESSAGE_APPLIESTOROWCOLUMNSONLY( RTL_CONSTASCII_USTRINGPARAM("Property only applicable for Columns and Rows") );
 const static rtl::OUString CELLSTYLE( RTL_CONSTASCII_USTRINGPARAM("CellStyle") );
 
+// MS Excel VBA: Internal helper class for setting cell values.
+// Status: internal helper
 class CellValueSetter : public ValueSetter
 {
 protected:
@@ -723,7 +787,11 @@ protected:
 	uno::TypeClass mTypeClass;
 public:
 	CellValueSetter( const uno::Any& aValue );
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual bool processValue( const uno::Any& aValue,  const uno::Reference< table::XCell >& xCell );
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void visitNode( sal_Int32 x, sal_Int32 y, const uno::Reference< table::XCell >& xCell );
 
 };
@@ -803,6 +871,8 @@ CellValueSetter::processValue( const uno::Any& aValue, const uno::Reference< tab
 }
 
 
+// MS Excel VBA: Internal helper class for getting cell values.
+// Status: internal helper
 class CellValueGetter : public ValueGetter
 {
 protected:
@@ -810,7 +880,11 @@ protected:
 	uno::TypeClass mTypeClass;
 public:
 	CellValueGetter() {}
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void visitNode( sal_Int32 x, sal_Int32 y, const uno::Reference< table::XCell >& xCell );
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void processValue( sal_Int32 x, sal_Int32 y, const uno::Any& aValue );
 	const uno::Any& getValue() const { return maValue; }
 
@@ -821,6 +895,8 @@ CellValueGetter::processValue(  sal_Int32 /*x*/, sal_Int32 /*y*/, const uno::Any
 {
 	maValue = aValue;
 }
+// MS Excel VBA: Internal - visits a cell node to get its value.
+// Status: internal helper
 void CellValueGetter::visitNode( sal_Int32 x, sal_Int32 y, const uno::Reference< table::XCell >& xCell )
 {
 	uno::Any aValue;
@@ -872,6 +948,8 @@ void CellValueGetter::visitNode( sal_Int32 x, sal_Int32 y, const uno::Reference<
 	processValue( x,y,aValue );
 }
 
+// MS Excel VBA: Internal helper class for setting formula values.
+// Status: internal helper
 class CellFormulaValueSetter : public CellValueSetter
 {
 private:
@@ -921,6 +999,8 @@ protected:
 
 };
 
+// MS Excel VBA: Internal helper - gets formula values from cells.
+// Status: internal helper
 class CellFormulaValueGetter : public CellValueGetter
 {
 private:
@@ -928,6 +1008,8 @@ private:
     formula::FormulaGrammar::Grammar m_eGrammar;
 public:
 	CellFormulaValueGetter(ScDocument* pDoc, formula::FormulaGrammar::Grammar eGram ) : CellValueGetter( ), m_pDoc( pDoc ), m_eGrammar( eGram ) {}
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void visitNode( sal_Int32 x, sal_Int32 y, const uno::Reference< table::XCell >& xCell )
 	{
 		uno::Any aValue;
@@ -957,11 +1039,15 @@ public:
 };
 
 
+// MS Excel VBA: Internal helper class for 2D array value retrieval.
+// Status: internal helper
 class Dim2ArrayValueGetter : public ArrayVisitor
 {
 protected:
 	uno::Any maValue;
 	ValueGetter& mValueGetter;
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void processValue( sal_Int32 x, sal_Int32 y, const uno::Any& aValue )
 	{
 		uno::Sequence< uno::Sequence< uno::Any > >& aMatrix = *( uno::Sequence< uno::Sequence< uno::Any > >* )( maValue.getValue() );
@@ -989,6 +1075,8 @@ public:
 
 const static rtl::OUString sNA = rtl::OUString::createFromAscii("#N/A");
 
+// MS Excel VBA: Internal helper class for 1D array value setting.
+// Status: internal helper
 class Dim1ArrayValueSetter : public ArrayVisitor
 {
 	uno::Sequence< uno::Any > aMatrix;
@@ -1000,6 +1088,8 @@ public:
 		aValue >>= aMatrix;
 		nColCount = aMatrix.getLength();
 	}
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void visitNode( sal_Int32 /*x*/, sal_Int32 y, const uno::Reference< table::XCell >& xCell )
 	{
 		if ( y < nColCount )
@@ -1011,6 +1101,8 @@ public:
 
 
 
+// MS Excel VBA: Internal helper - 2D array value setting.
+// Status: internal helper
 class Dim2ArrayValueSetter : public ArrayVisitor
 {
 	uno::Sequence< uno::Sequence< uno::Any > > aMatrix;
@@ -1025,6 +1117,8 @@ public:
 		nColCount = aMatrix[0].getLength();
 	}
 
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void visitNode( sal_Int32 x, sal_Int32 y, const uno::Reference< table::XCell >& xCell )
 	{
 		if ( x < nRowCount && y < nColCount )
@@ -1035,45 +1129,63 @@ public:
 	}
 };
 
+// MS Excel VBA: Internal helper class for range processing.
+// Status: internal helper
 class RangeProcessor
 {
 public:
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void process( const uno::Reference< excel::XRange >& xRange ) = 0;
 };
 
+// MS Excel VBA: Internal helper class for range value processing.
+// Status: internal helper
 class RangeValueProcessor : public RangeProcessor
 {
 	const uno::Any& m_aVal;
 public:
 	RangeValueProcessor( const uno::Any& rVal ):m_aVal( rVal ) {}
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void process( const uno::Reference< excel::XRange >& xRange )
 	{
 		xRange->setValue( m_aVal );
 	}
 };
 
+// MS Excel VBA: Internal helper class for range formula processing.
+// Status: internal helper
 class RangeFormulaProcessor : public RangeProcessor
 {
 	const uno::Any& m_aVal;
 public:
 	RangeFormulaProcessor( const uno::Any& rVal ):m_aVal( rVal ) {}
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void process( const uno::Reference< excel::XRange >& xRange )
 	{
 		xRange->setFormula( m_aVal );
 	}
 };
 
+// MS Excel VBA: Internal - processes range cell counts.
+// Status: internal helper
 class RangeCountProcessor : public RangeProcessor
 {
 	sal_Int32 nCount;
 public:
 	RangeCountProcessor():nCount(0){}
+// MS Excel VBA: Internal helper - number format interface method.
+// Status: internal helper
 	virtual void process( const uno::Reference< excel::XRange >& xRange )
 	{
 		nCount = nCount + xRange->getCount();
 	}
 	sal_Int32 value() { return nCount; }
 };
+// MS Excel VBA: Internal - visits range areas for processing.
+// Status: internal helper
 class AreasVisitor
 {
 private:
@@ -1095,6 +1207,8 @@ public:
 	}
 };
 
+// MS Excel VBA: Internal helper class for range operations.
+// Status: internal helper
 class RangeHelper
 {
 	uno::Reference< table::XCellRange > m_xCellRange;
@@ -1353,6 +1467,8 @@ util::TriState lclGetMergedState( const uno::Reference< table::XCellRange >& rxC
 // ----------------------------------------------------------------------------
 
 css::uno::Reference< excel::XRange >
+// MS Excel VBA: Creates a Range object from a range name string.
+// Status: implemented
 ScVbaRange::getRangeObjectForName(
         const uno::Reference< uno::XComponentContext >& xContext, const rtl::OUString& sRangeName,
         ScDocShell* pDocSh, formula::FormulaGrammar::AddressConvention eConv )
@@ -1422,6 +1538,8 @@ void lcl_NotifyRangeChanges( const uno::Reference< frame::XModel >& xModel, ScCe
 	}
 }
 
+// MS Excel VBA: Constructor taking arguments sequence (for UNO create).
+// Status: implemented
 ScVbaRange::ScVbaRange( uno::Sequence< uno::Any> const & args,
     uno::Reference< uno::XComponentContext> const & xContext ) : ScVbaRange_BASE( getXSomethingFromArgs< XHelperInterface >( args, 0 ), xContext, getXSomethingFromArgs< beans::XPropertySet >( args, 1, false ), getModelFromXIf( getXSomethingFromArgs< uno::XInterface >( args, 1 ) ), true ), mbIsRows( sal_False ), mbIsColumns( sal_False )
 {
@@ -1439,6 +1557,8 @@ ScVbaRange::ScVbaRange( uno::Sequence< uno::Any> const & args,
     m_Areas = new ScVbaRangeAreas( mxParent, mxContext, xIndex, mbIsRows, mbIsColumns );
 }
 
+// MS Excel VBA: Constructor from a cell range.
+// Status: implemented
 ScVbaRange::ScVbaRange( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< table::XCellRange >& xRange, sal_Bool bIsRows, sal_Bool bIsColumns )
 : ScVbaRange_BASE( xParent, xContext, uno::Reference< beans::XPropertySet >( xRange, uno::UNO_QUERY_THROW ), getModelFromRange( xRange), true ), mxRange( xRange ),
                 mbIsRows( bIsRows ),
@@ -1454,6 +1574,8 @@ ScVbaRange::ScVbaRange( const uno::Reference< XHelperInterface >& xParent, const
 
 }
 
+// MS Excel VBA: Constructor from a cell range container.
+// Status: implemented
 ScVbaRange::ScVbaRange( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< sheet::XSheetCellRangeContainer >& xRanges,  sal_Bool bIsRows, sal_Bool bIsColumns  )
 : ScVbaRange_BASE( xParent, xContext, uno::Reference< beans::XPropertySet >( xRanges, uno::UNO_QUERY_THROW ), getModelFromXIf( uno::Reference< uno::XInterface >( xRanges, uno::UNO_QUERY_THROW ) ), true ), mxRanges( xRanges ),mbIsRows( bIsRows ), mbIsColumns( bIsColumns )
 
@@ -1463,21 +1585,29 @@ ScVbaRange::ScVbaRange( const uno::Reference< XHelperInterface >& xParent, const
 
 }
 
+// MS Excel VBA: Destructor.
+// Status: implemented
 ScVbaRange::~ScVbaRange()
 {
 }
 
+// MS Excel VBA: Internal helper - gets or creates the Borders collection.
+// Status: internal helper
 uno::Reference< XCollection >& ScVbaRange::getBorders()
 {
 	if ( !m_Borders.is() )
 	{
 		uno::Reference< excel::XRange > xRange( m_Areas->Item( uno::makeAny( sal_Int32(1) ), uno::Any() ), uno::UNO_QUERY_THROW );
+// MS Excel VBA: Internal helper - sets up borders for a range.
+// Status: internal helper
 		m_Borders = lcl_setupBorders( this, mxContext, uno::Reference< table::XCellRange >( xRange->getCellRange(), uno::UNO_QUERY_THROW ) );
 	}
 	return m_Borders;
 }
 
 void
+// MS Excel VBA: Internal helper - visits all cells in an array for processing.
+// Status: internal helper
 ScVbaRange::visitArray( ArrayVisitor& visitor )
 {
     table::CellRangeAddress aRangeAddr = lclGetRangeAddress( mxRange );
@@ -1497,6 +1627,8 @@ ScVbaRange::visitArray( ArrayVisitor& visitor )
 
 
 uno::Any
+// MS Excel VBA: Internal helper - gets values using a ValueGetter.
+// Status: internal helper
 ScVbaRange::getValue( ValueGetter& valueGetter)
 {
 	uno::Reference< table::XColumnRowRange > xColumnRowRange(mxRange, uno::UNO_QUERY_THROW );
@@ -1514,6 +1646,8 @@ ScVbaRange::getValue( ValueGetter& valueGetter)
 	return uno::makeAny( script::ArrayWrapper( sal_False, arrayGetter.getValue() ) );
 }
 
+// MS Excel VBA: Gets the value of the range as a Variant.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getValue()
 {
@@ -1534,6 +1668,8 @@ ScVbaRange::getValue()
 
 
 void
+// MS Excel VBA: Internal helper - sets values using a ValueSetter.
+// Status: internal helper
 ScVbaRange::setValue( const uno::Any& aValue, ValueSetter& valueSetter, bool bFireEvent )
 {
 	uno::TypeClass aClass = aValue.getValueTypeClass();
@@ -1572,6 +1708,8 @@ ScVbaRange::setValue( const uno::Any& aValue, ValueSetter& valueSetter, bool bFi
     if( bFireEvent ) fireChangeEvent();
 }
 
+// MS Excel VBA: Sets the value of the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::setValue( const uno::Any  &aValue )
 {
@@ -1589,6 +1727,8 @@ ScVbaRange::setValue( const uno::Any  &aValue )
 	lcl_NotifyRangeChanges( getScDocShell()->GetModel(), getCellRangesBase() );
 }
 
+// MS Excel VBA: Clears the entire range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::Clear()
 {
@@ -1601,6 +1741,8 @@ ScVbaRange::Clear()
 
 //helper ClearContent
 void
+// MS Excel VBA: Internal helper - clears contents with specified flags.
+// Status: internal helper
 ScVbaRange::ClearContents( sal_Int32 nFlags, bool bFireEvent )
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1628,12 +1770,16 @@ ScVbaRange::ClearContents( sal_Int32 nFlags, bool bFireEvent )
     if( bFireEvent ) fireChangeEvent();
 }
 
+// MS Excel VBA: Clears all comments in the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::ClearComments()
 {
 	ClearContents( sheet::CellFlags::ANNOTATION, false );
 }
 
+// MS Excel VBA: Clears the contents of the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::ClearContents()
 {
@@ -1642,6 +1788,8 @@ ScVbaRange::ClearContents()
 	ClearContents( nFlags, true );
 }
 
+// MS Excel VBA: Clears the formatting of the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::ClearFormats()
 {
@@ -1654,6 +1802,8 @@ ScVbaRange::ClearFormats()
 }
 
 void
+// MS Excel VBA: Internal helper - sets formula values in cells.
+// Status: internal helper
 ScVbaRange::setFormulaValue( const uno::Any& rFormula, formula::FormulaGrammar::Grammar eGram, bool bFireEvent )
 {
 	// If this is a multiple selection apply setFormula over all areas
@@ -1671,6 +1821,8 @@ ScVbaRange::setFormulaValue( const uno::Any& rFormula, formula::FormulaGrammar::
 }
 
 uno::Any
+// MS Excel VBA: Internal helper - gets formula values from cells.
+// Status: internal helper
 ScVbaRange::getFormulaValue( formula::FormulaGrammar::Grammar eGram )
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1688,6 +1840,8 @@ ScVbaRange::getFormulaValue( formula::FormulaGrammar::Grammar eGram )
 }
 
 void
+// MS Excel VBA: Sets the formula of the range.
+// Status: implemented
 ScVbaRange::setFormula(const uno::Any &rFormula )
 {
 	// #FIXME converting "=$a$1" e.g. CONV_XL_A1 -> CONV_OOO                        	// results in "=$a$1:a1", temporalily disable conversion
@@ -1695,24 +1849,32 @@ ScVbaRange::setFormula(const uno::Any &rFormula )
 }
 
 uno::Any
+// MS Excel VBA: Gets the formula in R1C1 notation.
+// Status: implemented
 ScVbaRange::getFormulaR1C1()
 {
 	return getFormulaValue( formula::FormulaGrammar::GRAM_NATIVE_XL_R1C1 );
 }
 
 void
+// MS Excel VBA: Sets the formula in R1C1 notation.
+// Status: implemented
 ScVbaRange::setFormulaR1C1(const uno::Any& rFormula )
 {
 	setFormulaValue( rFormula,formula::FormulaGrammar::GRAM_NATIVE_XL_R1C1, true );
 }
 
 uno::Any
+// MS Excel VBA: Gets the formula of the range.
+// Status: implemented
 ScVbaRange::getFormula()
 {
 	return getFormulaValue( formula::FormulaGrammar::GRAM_NATIVE_XL_A1 );
 }
 
 sal_Int32
+// MS Excel VBA: Gets the number of cells in the range.
+// Status: implemented
 ScVbaRange::getCount()
 {
 	// If this is a multiple selection apply setValue over all areas
@@ -1737,6 +1899,8 @@ ScVbaRange::getCount()
 }
 
 sal_Int32
+// MS Excel VBA: Gets the row number of the first cell.
+// Status: implemented
 ScVbaRange::getRow()
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1753,6 +1917,8 @@ ScVbaRange::getRow()
 }
 
 sal_Int32
+// MS Excel VBA: Gets the column number of the first cell.
+// Status: implemented
 ScVbaRange::getColumn()
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1769,6 +1935,8 @@ ScVbaRange::getColumn()
 }
 
 uno::Any
+// MS Excel VBA: Checks if the range contains any formulas.
+// Status: implemented
 ScVbaRange::HasFormula()
 {
 	if ( m_Areas->getCount() > 1 )
@@ -1809,6 +1977,8 @@ ScVbaRange::HasFormula()
 	return uno::makeAny( sal_True );
 }
 void
+// MS Excel VBA: Internal helper - fills cells with a series of values.
+// Status: internal helper
 ScVbaRange::fillSeries( sheet::FillDirection nFillDirection, sheet::FillMode nFillMode, sheet::FillDateMode nFillDateMode, double fStep, double fEndValue )
 {
 	if ( m_Areas->getCount() > 1 )
@@ -1833,6 +2003,8 @@ ScVbaRange::fillSeries( sheet::FillDirection nFillDirection, sheet::FillMode nFi
 }
 
 void
+// MS Excel VBA: Fills left from the source range.
+// Status: implemented
 ScVbaRange::FillLeft()
 {
 	fillSeries(sheet::FillDirection_TO_LEFT,
@@ -1840,6 +2012,8 @@ ScVbaRange::FillLeft()
 }
 
 void
+// MS Excel VBA: Fills right from the source range.
+// Status: implemented
 ScVbaRange::FillRight()
 {
 	fillSeries(sheet::FillDirection_TO_RIGHT,
@@ -1847,6 +2021,8 @@ ScVbaRange::FillRight()
 }
 
 void
+// MS Excel VBA: Fills up from the source range.
+// Status: implemented
 ScVbaRange::FillUp()
 {
 	fillSeries(sheet::FillDirection_TO_TOP,
@@ -1854,6 +2030,8 @@ ScVbaRange::FillUp()
 }
 
 void
+// MS Excel VBA: Fills down from the source range.
+// Status: implemented
 ScVbaRange::FillDown()
 {
 	fillSeries(sheet::FillDirection_TO_BOTTOM,
@@ -1861,6 +2039,8 @@ ScVbaRange::FillDown()
 }
 
 ::rtl::OUString
+// MS Excel VBA: Gets the text content of the range.
+// Status: implemented
 ScVbaRange::getText()
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1877,6 +2057,8 @@ ScVbaRange::getText()
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a range offset from the current range by row and column.
+// Status: implemented
 ScVbaRange::Offset( const ::uno::Any &nRowOff, const uno::Any &nColOff )
 {
 	SCROW nRowOffset = 0;
@@ -1913,6 +2095,8 @@ ScVbaRange::Offset( const ::uno::Any &nRowOff, const uno::Any &nColOff )
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns the current region (data area) around the range.
+// Status: implemented
 ScVbaRange::CurrentRegion()
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1934,6 +2118,8 @@ ScVbaRange::CurrentRegion()
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns the current array for the range.
+// Status: implemented
 ScVbaRange::CurrentArray()
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1954,6 +2140,8 @@ ScVbaRange::CurrentArray()
 }
 
 uno::Any
+// MS Excel VBA: Gets the formula as an array.
+// Status: implemented
 ScVbaRange::getFormulaArray()
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1974,6 +2162,8 @@ ScVbaRange::getFormulaArray()
 }
 
 void
+// MS Excel VBA: Sets the formula as an array.
+// Status: implemented
 ScVbaRange::setFormulaArray(const uno::Any& rFormula)
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -1992,6 +2182,8 @@ ScVbaRange::setFormulaArray(const uno::Any& rFormula)
 }
 
 ::rtl::OUString
+// MS Excel VBA: Returns a Characters object for the range.
+// Status: implemented
 ScVbaRange::Characters(const uno::Any& Start, const uno::Any& Length)
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -2018,6 +2210,8 @@ ScVbaRange::Characters(const uno::Any& Start, const uno::Any& Length)
 }
 
 ::rtl::OUString
+// MS Excel VBA: Returns the address of the range.
+// Status: implemented
 ScVbaRange::Address(  const uno::Any& RowAbsolute, const uno::Any& ColumnAbsolute, const uno::Any& ReferenceStyle, const uno::Any& External, const uno::Any& RelativeTo )
 {
 	if ( m_Areas->getCount() > 1 )
@@ -2095,6 +2289,8 @@ ScVbaRange::Address(  const uno::Any& RowAbsolute, const uno::Any& ColumnAbsolut
 }
 
 uno::Reference < excel::XFont >
+// MS Excel VBA: Returns the Font object for the range.
+// Status: implemented
 ScVbaRange::Font()
 {
 	uno::Reference< beans::XPropertySet > xProps(mxRange, ::uno::UNO_QUERY );
@@ -2119,6 +2315,8 @@ ScVbaRange::Font()
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a cell or cells from the range.
+// Status: implemented
 ScVbaRange::Cells( const uno::Any &nRowIndex, const uno::Any &nColumnIndex )
 {
 	// #TODO code within the test below "if ( m_Areas.... " can be removed
@@ -2133,11 +2331,50 @@ ScVbaRange::Cells( const uno::Any &nRowIndex, const uno::Any &nColumnIndex )
 
     // Performance: Use a common helper method for ScVbaRange::Cells and ScVbaWorksheet::Cells,
     // instead of creating a new ScVbaRange object in often-called ScVbaWorksheet::Cells
-    return CellsHelper( mxParent, mxContext, mxRange, nRowIndex, nColumnIndex );
+        return CellsHelper( mxParent, mxContext, mxRange, nRowIndex, nColumnIndex );
+}
+
+uno::Reference< ooo::vba::excel::XQueryTable >
+// MS Excel VBA: Returns the QueryTable for the range.
+// Status: stubbed - not fully implemented in Calc
+ScVbaRange::getQueryTable()
+{
+    // Return an instance of the QueryTable associated with this range
+    // The ScVbaQueryTable constructor takes parent, context, document, and range pointer
+    ScDocument* pDocument = getScDocument();
+    uno::Reference< ooo::vba::excel::XQueryTable > xQueryTable(
+        new ScVbaQueryTable( mxParent, mxContext, pDocument, this ) );
+    return xQueryTable;
+}
+
+uno::Reference< ooo::vba::excel::XFormatConditions >
+// MS Excel VBA: Returns the FormatConditions collection.
+// Status: stubbed - not fully implemented in Calc
+ScVbaRange::getFormatConditions()
+{
+    uno::Reference< beans::XPropertySet > xProps( mxRange, uno::UNO_QUERY_THROW );
+    uno::Reference< css::sheet::XSheetConditionalEntries > xEntries;
+    try
+    {
+        xEntries.set(
+            xProps->getPropertyValue(
+                rtl::OUString::createFromAscii( "ConditionalFormat" ) ),
+            uno::UNO_QUERY );
+    }
+    catch ( uno::Exception& )
+    {
+        // Property may not be set on this range; proceed with empty entries
+    }
+    uno::Reference< frame::XModel > xModel( getUnoModel() );
+    uno::Reference< ooo::vba::excel::XFormatConditions > xFormatConditions(
+        new ScVbaFormatConditions( mxParent, mxContext, xEntries, xModel ) );
+    return xFormatConditions;
 }
 
 // static
 uno::Reference< excel::XRange >
+// MS Excel VBA: Creates a Range object from row and column indices.
+// Status: implemented
 ScVbaRange::CellsHelper( const uno::Reference< ov::XHelperInterface >& xParent,
                          const uno::Reference< uno::XComponentContext >& xContext,
                          const uno::Reference< css::table::XCellRange >& xRange,
@@ -2202,6 +2439,8 @@ ScVbaRange::CellsHelper( const uno::Reference< ov::XHelperInterface >& xParent,
 }
 
 void
+// MS Excel VBA: Selects the range.
+// Status: implemented
 ScVbaRange::Select()
 {
 	ScCellRangesBase* pUnoRangesBase = getCellRangesBase();
@@ -2252,6 +2491,8 @@ void setCursor(  const SCCOL& nCol, const SCROW& nRow, const uno::Reference< fra
 }
 
 void
+// MS Excel VBA: Activates the range.
+// Status: implemented
 ScVbaRange::Activate()
 {
 	// get first cell of current range
@@ -2312,6 +2553,8 @@ ScVbaRange::Activate()
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a row or rows from the range.
+// Status: implemented
 ScVbaRange::Rows(const uno::Any& aIndex )
 {
 	SCROW nStartRow = 0;
@@ -2358,6 +2601,8 @@ ScVbaRange::Rows(const uno::Any& aIndex )
 	return new ScVbaRange(  mxParent, mxContext, mxRange, true );
 }
 
+// MS Excel VBA: Returns a column or columns from the range.
+// Status: implemented
 uno::Reference< excel::XRange >
 ScVbaRange::Columns(const uno::Any& aIndex )
 {
@@ -2402,6 +2647,8 @@ ScVbaRange::Columns(const uno::Any& aIndex )
 }
 
 void
+// MS Excel VBA: Sets whether cells are merged in the range.
+// Status: implemented
 ScVbaRange::setMergeCells( const uno::Any& aIsMerged )
 {
     bool bMerge = extractBoolFromAny( aIsMerged );
@@ -2436,6 +2683,8 @@ ScVbaRange::setMergeCells( const uno::Any& aIsMerged )
 }
 
 uno::Any
+// MS Excel VBA: Gets whether cells are merged in the range.
+// Status: implemented
 ScVbaRange::getMergeCells()
 {
     if( mxRanges.is() )
@@ -2465,6 +2714,8 @@ ScVbaRange::getMergeCells()
 }
 
 void
+// MS Excel VBA: Copies the range to the clipboard or destination.
+// Status: implemented
 ScVbaRange::Copy(const ::uno::Any& Destination)
 {
 	if ( m_Areas->getCount() > 1 )
@@ -2493,6 +2744,8 @@ ScVbaRange::Copy(const ::uno::Any& Destination)
 }
 
 void
+// MS Excel VBA: Cuts the range to the clipboard or destination.
+// Status: implemented
 ScVbaRange::Cut(const ::uno::Any& Destination)
 {
 	if ( m_Areas->getCount() > 1 )
@@ -2518,6 +2771,8 @@ ScVbaRange::Cut(const ::uno::Any& Destination)
 }
 
 void
+// MS Excel VBA: Sets the number format for the range.
+// Status: implemented
 ScVbaRange::setNumberFormat( const uno::Any& aFormat )
 {
 	rtl::OUString sFormat;
@@ -2537,6 +2792,8 @@ ScVbaRange::setNumberFormat( const uno::Any& aFormat )
 }
 
 uno::Any
+// MS Excel VBA: Gets the number format for the range.
+// Status: implemented
 ScVbaRange::getNumberFormat()
 {
 
@@ -2566,6 +2823,8 @@ ScVbaRange::getNumberFormat()
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Resizes the range to specified rows and columns.
+// Status: implemented
 ScVbaRange::Resize( const uno::Any &RowSize, const uno::Any &ColumnSize )
 {
 	long nRowSize = 0, nColumnSize = 0;
@@ -2590,6 +2849,8 @@ ScVbaRange::Resize( const uno::Any &RowSize, const uno::Any &ColumnSize )
 }
 
 void
+// MS Excel VBA: Sets whether text is wrapped in the range.
+// Status: implemented
 ScVbaRange::setWrapText( const uno::Any& aIsWrapped )
 {
 	if ( m_Areas->getCount() > 1 )
@@ -2610,6 +2871,8 @@ ScVbaRange::setWrapText( const uno::Any& aIsWrapped )
 }
 
 uno::Any
+// MS Excel VBA: Gets whether text is wrapped in the range.
+// Status: implemented
 ScVbaRange::getWrapText()
 {
 	if ( m_Areas->getCount() > 1 )
@@ -2638,16 +2901,22 @@ ScVbaRange::getWrapText()
 	return aValue;
 }
 
+// MS Excel VBA: Returns the Interior (fill/background) object for the range.
+// Status: implemented
 uno::Reference< excel::XInterior > ScVbaRange::Interior( )
 {
 	uno::Reference< beans::XPropertySet > xProps( mxRange, uno::UNO_QUERY_THROW );
         return new ScVbaInterior ( this, mxContext, xProps, getScDocument() );
 }
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a subrange within the range.
+// Status: implemented
 ScVbaRange::Range( const uno::Any &Cell1, const uno::Any &Cell2 )
 {
     return Range( Cell1, Cell2, false );
 }
+// MS Excel VBA: Returns a subrange within the range with forced input range.
+// Status: implemented
 uno::Reference< excel::XRange >
 ScVbaRange::Range( const uno::Any &Cell1, const uno::Any &Cell2, bool bForceUseInpuRangeTab )
 
@@ -2752,6 +3021,8 @@ ScVbaRange::Range( const uno::Any &Cell1, const uno::Any &Cell2, bool bForceUseI
 
 // Allow access to underlying openoffice uno api ( useful for debugging
 // with openoffice basic )
+// MS Excel VBA: Gets the cell range object.
+// Status: implemented
 uno::Any SAL_CALL ScVbaRange::getCellRange(  )
 {
 	uno::Any aAny;
@@ -2822,6 +3093,8 @@ getPasteFormulaBits( sal_Int32 Operation)
 
 return nFormulaBits;
 }
+// MS Excel VBA: Pastes from clipboard with specified paste options.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::PasteSpecial( const uno::Any& Paste, const uno::Any& Operation, const uno::Any& SkipBlanks, const uno::Any& Transpose )
 {
@@ -2850,7 +3123,11 @@ ScVbaRange::PasteSpecial( const uno::Any& Paste, const uno::Any& Operation, cons
 	if ( Transpose.hasValue() )
 		Transpose >>= bTranspose;
 
+// MS Excel VBA: Internal helper - converts paste type to flags.
+// Status: internal helper
 	sal_uInt16 nFlags = getPasteFlags(nPaste);
+// MS Excel VBA: Internal helper - converts operation to formula bits.
+// Status: internal helper
 	sal_uInt16 nFormulaBits = getPasteFormulaBits(nOperation);
 	excel::implnPasteSpecial(pShell->GetModel(), nFlags,nFormulaBits,bSkipBlanks,bTranspose);
 	// restore selection
@@ -2858,6 +3135,8 @@ ScVbaRange::PasteSpecial( const uno::Any& Paste, const uno::Any& Operation, cons
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Internal helper - gets the entire column or row of the range.
+// Status: internal helper
 ScVbaRange::getEntireColumnOrRow( bool bColumn )
 {
 	ScCellRangesBase* pUnoRangesBase = getCellRangesBase();
@@ -2887,18 +3166,24 @@ ScVbaRange::getEntireColumnOrRow( bool bColumn )
 	return new ScVbaRange( mxParent, mxContext, xRange, !bColumn, bColumn  );
 }
 
+// MS Excel VBA: Returns the entire row(s) of the range.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::getEntireRow()
 {
 	return getEntireColumnOrRow(false);
 }
 
+// MS Excel VBA: Returns the entire column(s) of the range.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::getEntireColumn()
 {
 	return getEntireColumnOrRow();
 }
 
+// MS Excel VBA: Adds a comment to the range.
+// Status: implemented
 uno::Reference< excel::XComment > SAL_CALL
 ScVbaRange::AddComment( const uno::Any& Text )
 {
@@ -2923,6 +3208,8 @@ ScVbaRange::AddComment( const uno::Any& Text )
 	return new ScVbaComment( this, mxContext, getUnoModel(), mxRange );
 }
 
+// MS Excel VBA: Gets or sets the comment for the range.
+// Status: implemented
 uno::Reference< excel::XComment > SAL_CALL
 ScVbaRange::getComment()
 {
@@ -2947,6 +3234,8 @@ getRowOrColumnProps( const uno::Reference< table::XCellRange >& xCellRange, bool
 	return xProps;
 }
 
+// MS Excel VBA: Gets whether the range is hidden.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getHidden()
 {
@@ -2971,6 +3260,8 @@ ScVbaRange::getHidden()
 	return uno::makeAny( !bIsVisible );
 }
 
+// MS Excel VBA: Sets whether the range is hidden.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::setHidden( const uno::Any& _hidden )
 {
@@ -2988,6 +3279,8 @@ ScVbaRange::setHidden( const uno::Any& _hidden )
     bool bHidden = extractBoolFromAny( _hidden );
 	try
 	{
+// MS Excel VBA: Internal helper - gets properties for rows or columns.
+// Status: internal helper
 		uno::Reference< beans::XPropertySet > xProps = getRowOrColumnProps( mxRange, mbIsRows );
 		xProps->setPropertyValue( ISVISIBLE, uno::Any( !bHidden ) );
 	}
@@ -2997,6 +3290,8 @@ ScVbaRange::setHidden( const uno::Any& _hidden )
 	}
 }
 
+// MS Excel VBA: Replaces values matching What with Replacement.
+// Status: implemented
 ::sal_Bool SAL_CALL
 ScVbaRange::Replace( const ::rtl::OUString& What, const ::rtl::OUString& Replacement, const uno::Any& LookAt, const uno::Any& SearchOrder, const uno::Any& MatchCase, const uno::Any& MatchByte, const uno::Any& SearchFormat, const uno::Any& ReplaceFormat  )
 {
@@ -3084,12 +3379,16 @@ ScVbaRange::Replace( const ::rtl::OUString& What, const ::rtl::OUString& Replace
 			// Fire the range change event.
 			ScCellRangesBase* pScCellRangesBase = ScCellRangesBase::getImplementation( xIndexAccess );
 			// i108874 - the original convert method will fail in SUSE
+// MS Excel VBA: Internal helper - notifies of range changes.
+// Status: internal helper
 			lcl_NotifyRangeChanges( getScDocShell()->GetModel(), pScCellRangesBase );
 		}
 	}
 	return sal_True; // always
 }
 
+// MS Excel VBA: Finds a value matching the search criteria.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::Find( const uno::Any& What, const uno::Any& After, const uno::Any& LookIn, const uno::Any& LookAt, const uno::Any& SearchOrder, const uno::Any& SearchDirection, const uno::Any& MatchCase, const uno::Any& /*MatchByte*/, const uno::Any& /*SearchFormat*/ )
 {
@@ -3327,6 +3626,8 @@ void updateTableSortField( const uno::Reference< table::XCellRange >& xParentRan
 
 }
 
+// MS Excel VBA: Sorts the range by specified keys.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::Sort( const uno::Any& Key1, const uno::Any& Order1, const uno::Any& Key2, const uno::Any& /*Type*/, const uno::Any& Order2, const uno::Any& Key3, const uno::Any& Order3, const uno::Any& Header, const uno::Any& OrderCustom, const uno::Any& MatchCase, const uno::Any& Orientation, const uno::Any& SortMethod,  const uno::Any& DataOption1, const uno::Any& DataOption2, const uno::Any& DataOption3  )
 {
@@ -3520,6 +3821,8 @@ ScVbaRange::Sort( const uno::Any& Key1, const uno::Any& Order1, const uno::Any& 
 
 }
 
+// MS Excel VBA: Returns the last cell in the specified direction.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::End( ::sal_Int32 Direction )
 {
@@ -3546,6 +3849,8 @@ ScVbaRange::End( ::sal_Int32 Direction )
 	// position current cell upper left of this range
 	Cells( uno::makeAny( (sal_Int32) 1 ), uno::makeAny( (sal_Int32) 1 ) )->Select();
 
+// MS Excel VBA: Internal helper - gets XModel from a cell range.
+// Status: internal helper
         uno::Reference< frame::XModel > xModel = getModelFromRange( mxRange );
 
 	SfxViewFrame* pViewFrame = excel::getViewFrame( xModel );
@@ -3602,6 +3907,8 @@ ScVbaRange::End( ::sal_Int32 Direction )
 }
 
 bool
+// MS Excel VBA: Checks if this range is a single cell.
+// Status: implemented
 ScVbaRange::isSingleCellRange()
 {
     uno::Reference< sheet::XCellRangeAddressable > xAddressable( mxRange, uno::UNO_QUERY );
@@ -3613,6 +3920,8 @@ ScVbaRange::isSingleCellRange()
     return false;
 }
 
+// MS Excel VBA: Returns a Characters object for a substring.
+// Status: implemented
 uno::Reference< excel::XCharacters > SAL_CALL
 ScVbaRange::characters( const uno::Any& Start, const uno::Any& Length )
 {
@@ -3627,6 +3936,8 @@ ScVbaRange::characters( const uno::Any& Start, const uno::Any& Length )
 	return  new ScVbaCharacters( this, mxContext, aPalette, xSimple, Start, Length );
 }
 
+// MS Excel VBA: Deletes the range with specified shift.
+// Status: implemented
  void SAL_CALL
 ScVbaRange::Delete( const uno::Any& Shift )
 {
@@ -3675,6 +3986,8 @@ ScVbaRange::Delete( const uno::Any& Shift )
 }
 
 //XElementAccess
+// MS Excel VBA: Checks if the range has elements.
+// Status: implemented
 sal_Bool SAL_CALL
 ScVbaRange::hasElements()
 {
@@ -3687,6 +4000,8 @@ ScVbaRange::hasElements()
 }
 
 // XEnumerationAccess
+// MS Excel VBA: Creates an enumeration over cells in the range.
+// Status: implemented
 uno::Reference< container::XEnumeration > SAL_CALL
 ScVbaRange::createEnumeration()
 {
@@ -3705,6 +4020,8 @@ ScVbaRange::createEnumeration()
     return new CellsEnumeration( mxParent, mxContext, m_Areas );
 }
 
+// MS Excel VBA: Returns the default method name (XDefaultMethod).
+// Status: implemented
 ::rtl::OUString SAL_CALL
 ScVbaRange::getDefaultMethodName(  )
 {
@@ -3715,6 +4032,8 @@ ScVbaRange::getDefaultMethodName(  )
 
 // returns calc internal col. width ( in points )
 double
+// MS Excel VBA: Internal helper - calculates column width for a cell range address.
+// Status: internal helper
 ScVbaRange::getCalcColWidth( const table::CellRangeAddress& rAddress)
 {
 	ScDocument* pDoc = getScDocument();
@@ -3725,6 +4044,8 @@ ScVbaRange::getCalcColWidth( const table::CellRangeAddress& rAddress)
 }
 
 double
+// MS Excel VBA: Internal helper - calculates row height for a cell range address.
+// Status: internal helper
 ScVbaRange::getCalcRowHeight( const table::CellRangeAddress& rAddress )
 {
 	ScDocument* pDoc = getDocumentFromRange( mxRange );
@@ -3735,6 +4056,8 @@ ScVbaRange::getCalcRowHeight( const table::CellRangeAddress& rAddress )
 }
 
 // return Char Width in points
+// MS Excel VBA: Internal helper - gets the default character width.
+// Status: internal helper
 double getDefaultCharWidth( ScDocShell* pDocShell )
 {
     ScDocument* pDoc = pDocShell->GetDocument();
@@ -3747,6 +4070,8 @@ double getDefaultCharWidth( ScDocShell* pDocShell )
     return lcl_hmmToPoints( nCharWidth );
 }
 
+// MS Excel VBA: Gets the column width of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getColumnWidth()
 {
@@ -3785,6 +4110,8 @@ ScVbaRange::getColumnWidth()
 	return uno::makeAny( nColWidth );
 }
 
+// MS Excel VBA: Sets the column width of the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::setColumnWidth( const uno::Any& _columnwidth )
 {
@@ -3821,6 +4148,8 @@ ScVbaRange::setColumnWidth( const uno::Any& _columnwidth )
 		}
 }
 
+// MS Excel VBA: Gets the width of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getWidth()
 {
@@ -3842,6 +4171,8 @@ ScVbaRange::getWidth()
 	return uno::makeAny( nWidth );
 }
 
+// MS Excel VBA: Returns the Areas collection of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::Areas( const uno::Any& item)
 {
@@ -3851,6 +4182,8 @@ ScVbaRange::Areas( const uno::Any& item)
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Internal helper - gets a sub-range by index.
+// Status: internal helper
 ScVbaRange::getArea( sal_Int32 nIndex )
 {
 	if ( !m_Areas.is() )
@@ -3860,6 +4193,8 @@ ScVbaRange::getArea( sal_Int32 nIndex )
 }
 
 uno::Any
+// MS Excel VBA: Returns a Border object or Border collection.
+// Status: implemented
 ScVbaRange::Borders( const uno::Any& item )
 {
 	if ( !item.hasValue() )
@@ -3867,6 +4202,8 @@ ScVbaRange::Borders( const uno::Any& item )
 	return getBorders()->Item( item, uno::Any() );
 }
 
+// MS Excel VBA: Sets border around the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::BorderAround( const css::uno::Any& LineStyle, const css::uno::Any& Weight,
                 const css::uno::Any& ColorIndex, const css::uno::Any& Color )
@@ -3914,6 +4251,8 @@ ScVbaRange::BorderAround( const css::uno::Any& LineStyle, const css::uno::Any& W
     return uno::makeAny( sal_True );
 }
 
+// MS Excel VBA: Gets the row height of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getRowHeight()
 {
@@ -3953,6 +4292,8 @@ ScVbaRange::getRowHeight()
 	return uno::makeAny( nHeight );
 }
 
+// MS Excel VBA: Sets the row height of the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::setRowHeight( const uno::Any& _rowheight)
 {
@@ -3983,6 +4324,8 @@ ScVbaRange::setRowHeight( const uno::Any& _rowheight)
                                                                         nTwips, sal_True, sal_True );
 }
 
+// MS Excel VBA: Gets/sets the page break for the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getPageBreak()
 {
@@ -4019,6 +4362,8 @@ ScVbaRange::getPageBreak()
 	return uno::makeAny( nPageBreak );
 }
 
+// MS Excel VBA: Sets the page break for the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::setPageBreak( const uno::Any& _pagebreak)
 {
@@ -4050,6 +4395,8 @@ ScVbaRange::setPageBreak( const uno::Any& _pagebreak)
 	}
 }
 
+// MS Excel VBA: Gets the height of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getHeight()
 {
@@ -4072,6 +4419,8 @@ ScVbaRange::getHeight()
 }
 
 awt::Point
+// MS Excel VBA: Internal helper - gets the position of the range.
+// Status: internal helper
 ScVbaRange::getPosition()
 {
         awt::Point aPoint;
@@ -4083,6 +4432,8 @@ ScVbaRange::getPosition()
 	xProps->getPropertyValue(POSITION) >>= aPoint;
 	return aPoint;
 }
+// MS Excel VBA: Gets the left position of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getLeft()
 {
@@ -4094,6 +4445,8 @@ ScVbaRange::getLeft()
 }
 
 
+// MS Excel VBA: Gets the top position of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getTop()
 {
@@ -4105,6 +4458,8 @@ ScVbaRange::getTop()
 }
 
 uno::Reference< excel::XWorksheet >
+// MS Excel VBA: Returns the parent worksheet.
+// Status: implemented
 ScVbaRange::getWorksheet()
 {
 	// #TODO #FIXME parent should always be set up ( currently that's not
@@ -4130,6 +4485,8 @@ ScVbaRange::getWorksheet()
 // #TODO remove this ugly application processing
 // Process an application Range request e.g. 'Range("a1,b2,a4:b6")
 uno::Reference< excel::XRange >
+// MS Excel VBA: Static helper - creates a Range object from cell references.
+// Status: internal helper
 ScVbaRange::ApplicationRange( const uno::Reference< uno::XComponentContext >& xContext, const css::uno::Any &Cell1, const css::uno::Any &Cell2 )
 {
 	// Although the documentation seems clear that Range without a
@@ -4262,6 +4619,8 @@ void lcl_SelectAll( ScDocShell* pDocShell, ScQueryParam& aParam )
 
 ScQueryParam lcl_GetQueryParam( ScDocShell* pDocShell, sal_Int16 nSheet )
 {
+// MS Excel VBA: Internal helper - gets DB data.
+// Status: internal helper
 	ScDBData* pDBData = lcl_GetDBData_Impl( pDocShell, nSheet );
 	ScQueryParam aParam;
 	if (pDBData)
@@ -4296,6 +4655,8 @@ void lcl_SetAllQueryForField( ScDocShell* pDocShell, SCCOLROW nField, sal_Int16 
 {
 	ScQueryParam aParam = lcl_GetQueryParam( pDocShell, nSheet );
 	lcl_SetAllQueryForField( aParam, nField );
+// MS Excel VBA: Internal helper - selects all rows matching criteria.
+// Status: internal helper
 	lcl_SelectAll( pDocShell, aParam );
 }
 
@@ -4387,6 +4748,8 @@ void lcl_setTableFieldsFromCriteria( rtl::OUString& sCriteria1, uno::Reference< 
 	rFilterField.StringValue = sCriteria1;
 }
 
+// MS Excel VBA: Filters the range using AutoFilter criteria.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::AutoFilter( const uno::Any& Field, const uno::Any& Criteria1, const uno::Any& Operator, const uno::Any& Criteria2, const uno::Any& VisibleDropDown )
 {
@@ -4397,6 +4760,8 @@ ScVbaRange::AutoFilter( const uno::Any& Field, const uno::Any& Criteria1, const 
 	ScDocShell* pShell = getScDocShell();
 	sal_Bool bHasAuto = sal_False;
 	rtl::OUString sAutofiltRangeName;
+// MS Excel VBA: Internal helper - gets the auto filter range.
+// Status: internal helper
 	uno::Reference< sheet::XDatabaseRange > xDataBaseRange = lcl_GetAutoFiltRange( pShell, nSheet, sAutofiltRangeName );
 	if ( xDataBaseRange.is() )
 		bHasAuto = true;
@@ -4444,6 +4809,8 @@ ScVbaRange::AutoFilter( const uno::Any& Field, const uno::Any& Criteria1, const 
             }
 		}
 
+// MS Excel VBA: Internal helper - gets all database ranges.
+// Status: internal helper
 		uno::Reference< sheet::XDatabaseRanges > xDBRanges = lcl_GetDataBaseRanges( pShell );
 		if ( xDBRanges.is() )
 		{
@@ -4578,6 +4945,8 @@ ScVbaRange::AutoFilter( const uno::Any& Field, const uno::Any& Criteria1, const 
 					if ( sCriteria2.getLength() > 0 )
 					{
 						uno::Reference< beans::XPropertySet > xProps;
+// MS Excel VBA: Internal helper - sets table fields from filter criteria.
+// Status: internal helper
 						lcl_setTableFieldsFromCriteria( sCriteria2, xProps,  sTabFilts[1] );
 						sTabFilts[1].IsNumeric = sal_False;
 					}
@@ -4611,12 +4980,16 @@ ScVbaRange::AutoFilter( const uno::Any& Field, const uno::Any& Criteria1, const 
 		if ( bHasAuto )
 		{
 			// find the any field with the query and select all
+// MS Excel VBA: Internal helper - gets query parameters.
+// Status: internal helper
 			ScQueryParam aParam = lcl_GetQueryParam( pShell, nSheet );
 			SCSIZE i = 0;
 			for (; i<MAXQUERY; i++)
 			{
 				ScQueryEntry& rEntry = aParam.GetEntry(i);
 				if ( rEntry.bDoQuery )
+// MS Excel VBA: Internal helper - sets all query fields.
+// Status: internal helper
 					lcl_SetAllQueryForField( pShell, rEntry.nField, nSheet );
 			}
 			// remove existing filters
@@ -4630,6 +5003,8 @@ ScVbaRange::AutoFilter( const uno::Any& Field, const uno::Any& Criteria1, const 
 	}
 }
 
+// MS Excel VBA: Inserts cells with specified shift.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::Insert( const uno::Any& Shift, const uno::Any& /* CopyOrigin */ )
 {
@@ -4681,6 +5056,8 @@ ScVbaRange::Insert( const uno::Any& Shift, const uno::Any& /* CopyOrigin */ )
 	}
 }
 
+// MS Excel VBA: Automatically fits row height or column width.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::Autofit()
 {
@@ -4729,6 +5106,8 @@ ScVbaRange::Autofit()
  * the main problem is to recognize the numeric and date, which associate with DecimalSeparator, ThousandsSeparator,
  * TrailingMinusNumbers and FieldInfo.
 ***************************************************************************************/
+// MS Excel VBA: Splits column data into separate columns.
+// Status: stubbed - not fully implemented in Calc
 void SAL_CALL
 ScVbaRange::TextToColumns( const css::uno::Any& Destination, const css::uno::Any& DataType, const css::uno::Any& TextQualifier,
         const css::uno::Any& ConsecutinveDelimiter, const css::uno::Any& Tab, const css::uno::Any& Semicolon, const css::uno::Any& Comma,
@@ -4848,6 +5227,8 @@ ScVbaRange::TextToColumns( const css::uno::Any& Destination, const css::uno::Any
  //TODO* TrailingMinusNumbers  Optional Variant. Numbers that begin with a minus character.
 }
 
+// MS Excel VBA: Returns a Hyperlink by index.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::Hyperlinks( const uno::Any& aIndex )
 {
@@ -4869,6 +5250,8 @@ ScVbaRange::Hyperlinks( const uno::Any& aIndex )
     return uno::Any( uno::Reference< excel::XHyperlinks >( xHlinks.get() ) );
 }
 
+// MS Excel VBA: Gets the data validation for the range.
+// Status: implemented
 css::uno::Reference< excel::XValidation > SAL_CALL
 ScVbaRange::getValidation()
 {
@@ -4901,6 +5284,8 @@ sal_Unicode lclGetPrefixChar( const uno::Reference< table::XCellRange >& rxRange
         prefixes for two cells, this function returns 0.
      */
     sal_Unicode cCurrPrefix = 0;
+// MS Excel VBA: Internal helper - gets CellRangeAddress from a cell range.
+// Status: internal helper
     table::CellRangeAddress aRangeAddr = lclGetRangeAddress( rxRange );
     sal_Int32 nEndCol = aRangeAddr.EndColumn - aRangeAddr.StartColumn;
     sal_Int32 nEndRow = aRangeAddr.EndRow - aRangeAddr.StartRow;
@@ -4943,6 +5328,8 @@ inline uno::Any lclGetPrefixVariant( sal_Unicode cPrefixChar )
 
 } // namespace
 
+// MS Excel VBA: Gets the prefix character for the range.
+// Status: implemented
 uno::Any SAL_CALL ScVbaRange::getPrefixCharacter()
 {
     /*  (1) If Application.TransitionNavigKeys is false, this function returns
@@ -4968,6 +5355,8 @@ uno::Any SAL_CALL ScVbaRange::getPrefixCharacter()
 	throw uno::RuntimeException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Unexpected empty Range object" ) ), uno::Reference< uno::XInterface >() );
 }
 
+// MS Excel VBA: Gets the show detail setting for the range.
+// Status: implemented
 uno::Any ScVbaRange::getShowDetail()
 {
 	// #FIXME, If the specified range is in a PivotTable report
@@ -5011,6 +5400,8 @@ uno::Any ScVbaRange::getShowDetail()
     return aNULL();
 }
 
+// MS Excel VBA: Sets the show detail setting for the range.
+// Status: implemented
 void ScVbaRange::setShowDetail(const uno::Any& aShowDetail)
 {
 	// #FIXME, If the specified range is in a PivotTable report
@@ -5046,6 +5437,8 @@ void ScVbaRange::setShowDetail(const uno::Any& aShowDetail)
 	}
 }
 
+// MS Excel VBA: Returns the MergeArea for the range.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::MergeArea()
 {
@@ -5075,6 +5468,8 @@ ScVbaRange::MergeArea()
     return new ScVbaRange( mxParent, mxContext, mxRange );
 }
 
+// MS Excel VBA: Prints the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::PrintOut( const uno::Any& From, const uno::Any& To, const uno::Any& Copies, const uno::Any& Preview, const uno::Any& ActivePrinter, const uno::Any& PrintToFile, const uno::Any& Collate, const uno::Any& PrToFileName )
 {
@@ -5109,6 +5504,8 @@ ScVbaRange::PrintOut( const uno::Any& From, const uno::Any& To, const uno::Any& 
 	}
 }
 
+// MS Excel VBA: Fills the range with a series using AutoFill.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::AutoFill(  const uno::Reference< excel::XRange >& Destination, const uno::Any& Type )
 {
@@ -5234,6 +5631,8 @@ ScVbaRange::AutoFill(  const uno::Reference< excel::XRange >& Destination, const
 	aFunc.FillAuto( aSourceRange, NULL, eDir, eCmd, eDateCmd, nCount, fStep, fEndValue, sal_True, sal_True );
 #endif
 }
+// MS Excel VBA: Performs goal seek to find input value for a goal.
+// Status: implemented
 sal_Bool SAL_CALL
 ScVbaRange::GoalSeek( const uno::Any& Goal, const uno::Reference< excel::XRange >& ChangingCell )
 {
@@ -5264,12 +5663,16 @@ ScVbaRange::GoalSeek( const uno::Any& Goal, const uno::Reference< excel::XRange 
 	return bRes;
 }
 
+// MS Excel VBA: Calculates the formulas in the range.
+// Status: implemented
 void
 ScVbaRange::Calculate(  )
 {
 	getWorksheet()->Calculate();
 }
 
+// MS Excel VBA: Returns a subrange at the specified row and column.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::Item( const uno::Any& row, const uno::Any& column )
 {
@@ -5288,6 +5691,8 @@ ScVbaRange::Item( const uno::Any& row, const uno::Any& column )
 }
 
 void
+// MS Excel VBA: Creates an outline for the range.
+// Status: stubbed - not fully implemented in Calc
 ScVbaRange::AutoOutline(  )
 {
 	// #TODO #FIXME needs to check for summary row/col ( whatever they are )
@@ -5311,6 +5716,8 @@ ScVbaRange::AutoOutline(  )
 		DebugHelper::exception(SbERR_METHOD_FAILED, rtl::OUString());
 }
 
+// MS Excel VBA: Clears the outline for the range.
+// Status: stubbed - not fully implemented in Calc
 void SAL_CALL
 ScVbaRange:: ClearOutline(  )
 {
@@ -5331,6 +5738,8 @@ ScVbaRange:: ClearOutline(  )
 }
 
 void
+// MS Excel VBA: Internal helper - groups or ungroups the range.
+// Status: internal helper
 ScVbaRange::groupUnGroup( bool bUnGroup )
 {
 	if ( m_Areas->getCount() > 1 )
@@ -5347,11 +5756,15 @@ ScVbaRange::groupUnGroup( bool bUnGroup )
 	        xSheetOutline->group( thisAddress, nOrient );
 }
 
+// MS Excel VBA: Groups the range.
+// Status: stubbed - not fully implemented in Calc
 void SAL_CALL
 ScVbaRange::Group(  )
 {
 	groupUnGroup();
 }
+// MS Excel VBA: Ungroups the range.
+// Status: stubbed - not fully implemented in Calc
 void SAL_CALL
 ScVbaRange::Ungroup(  )
 {
@@ -5363,6 +5776,8 @@ void lcl_mergeCellsOfRange( const uno::Reference< table::XCellRange >& xCellRang
         uno::Reference< util::XMergeable > xMergeable( xCellRange, uno::UNO_QUERY_THROW );
         xMergeable->merge(_bMerge);
 }
+// MS Excel VBA: Merges cells in the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::Merge( const uno::Any& Across )
 {
@@ -5392,6 +5807,8 @@ ScVbaRange::Merge( const uno::Any& Across )
 	}
 }
 
+// MS Excel VBA: Unmerges cells in the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::UnMerge(  )
 {
@@ -5405,9 +5822,13 @@ ScVbaRange::UnMerge(  )
 		}
 		return;
 	}
+// MS Excel VBA: Internal helper - merges or unmerges cells in a range.
+// Status: internal helper
 	lcl_mergeCellsOfRange( mxRange, sal_False);
 }
 
+// MS Excel VBA: Gets the style of the range.
+// Status: implemented
 uno::Any SAL_CALL
 ScVbaRange::getStyle()
 {
@@ -5424,6 +5845,8 @@ ScVbaRange::getStyle()
 	uno::Reference< excel::XStyle > xStyle = new ScVbaStyle( this, mxContext,  sStyleName, xModel );
 	return uno::makeAny( xStyle );
 }
+// MS Excel VBA: Sets the style of the range.
+// Status: implemented
 void SAL_CALL
 ScVbaRange::setStyle( const uno::Any& _style )
 {
@@ -5440,6 +5863,8 @@ ScVbaRange::setStyle( const uno::Any& _style )
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Internal helper - returns previous or next cell.
+// Status: internal helper
 ScVbaRange::PreviousNext( bool bIsPrevious )
 {
 	ScMarkData markedRange;
@@ -5468,6 +5893,8 @@ ScVbaRange::PreviousNext( bool bIsPrevious )
 	return new ScVbaRange( mxParent, mxContext, xRange );
 }
 
+// MS Excel VBA: Returns the next cell in the range.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::Next()
 {
@@ -5479,6 +5906,8 @@ ScVbaRange::Next()
 	return PreviousNext( false );
 }
 
+// MS Excel VBA: Returns the previous cell in the range.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::Previous()
 {
@@ -5490,6 +5919,8 @@ ScVbaRange::Previous()
 	return PreviousNext( true );
 }
 
+// MS Excel VBA: Returns a range of cells with specified type.
+// Status: implemented
 uno::Reference< excel::XRange > SAL_CALL
 ScVbaRange::SpecialCells( const uno::Any& _oType, const uno::Any& _oValue)
 {
@@ -5599,6 +6030,8 @@ sal_Int32 lcl_getFormulaResultFlags(const uno::Any& aType)
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Internal helper - implementation for SpecialCells method.
+// Status: internal helper
 ScVbaRange::SpecialCellsImpl( sal_Int32 nType, const uno::Any& _oValue)
 {
 	uno::Reference< excel::XRange > xRange;
@@ -5614,6 +6047,8 @@ ScVbaRange::SpecialCellsImpl( sal_Int32 nType, const uno::Any& _oValue)
 			case excel::XlCellType::xlCellTypeAllValidation:
 			case excel::XlCellType::xlCellTypeSameValidation:
 				// Shouldn't get here ( should be filtered out by
+// MS Excel VBA: Returns a range of cells with specified type.
+// Status: implemented
 				// ScVbaRange::SpecialCells()
 				DebugHelper::exception(SbERR_NOT_IMPLEMENTED, rtl::OUString());
 				break;
@@ -5643,6 +6078,8 @@ ScVbaRange::SpecialCellsImpl( sal_Int32 nType, const uno::Any& _oValue)
 		}
 		if (xLocSheetCellRanges.is())
 		{
+// MS Excel VBA: Internal helper - creates an XRange from sheet cell ranges.
+// Status: internal helper
 			xRange = lcl_makeXRangeFromSheetCellRanges( getParent(), mxContext, xLocSheetCellRanges, getScDocShell() );
 		}
 	}
@@ -5653,6 +6090,8 @@ ScVbaRange::SpecialCellsImpl( sal_Int32 nType, const uno::Any& _oValue)
 	return xRange;
 }
 
+// MS Excel VBA: Removes subtotals from the range.
+// Status: stubbed - not fully implemented in Calc
 void SAL_CALL
 ScVbaRange::RemoveSubtotal(  )
 {
@@ -5660,6 +6099,8 @@ ScVbaRange::RemoveSubtotal(  )
 	xSub->removeSubTotals();
 }
 
+// MS Excel VBA: Creates subtotals in the range.
+// Status: stubbed - not fully implemented in Calc
 void SAL_CALL
 ScVbaRange::Subtotal( ::sal_Int32 _nGroupBy, ::sal_Int32 _nFunction, const uno::Sequence< ::sal_Int32 >& _nTotalList, const uno::Any& aReplace, const uno::Any& PageBreaks, const uno::Any& /*SummaryBelowData*/ )
 {
@@ -5732,6 +6173,8 @@ ScVbaRange::Subtotal( ::sal_Int32 _nGroupBy, ::sal_Int32 _nFunction, const uno::
 }
 
 rtl::OUString&
+// MS Excel VBA: Returns the implementation service name for UNO.
+// Status: implemented
 ScVbaRange::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaRange") );
@@ -5739,6 +6182,8 @@ ScVbaRange::getServiceImplName()
 }
 
 uno::Sequence< rtl::OUString >
+// MS Excel VBA: Returns the list of supported service names for UNO.
+// Status: implemented
 ScVbaRange::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

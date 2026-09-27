@@ -26,6 +26,7 @@
 #include <com/sun/star/sheet/XCellRangeAddressable.hpp>
 #include <vbahelper/vbahelperinterface.hxx>
 #include <com/sun/star/sheet/ConditionOperator.hpp>
+#include <com/sun/star/uno/Sequence.hxx>
 
 template< typename Ifc1 >
 class ScVbaCondition : public InheritedHelperInterfaceImpl1< Ifc1 >
@@ -36,6 +37,8 @@ protected:
 	css::uno::Reference< css::sheet::XSheetCondition > mxSheetCondition;
 public:
 	ScVbaCondition(  const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::sheet::XSheetCondition >& _xSheetCondition );
+	ScVbaCondition(  const css::uno::Reference< css::uno::XComponentContext >& xContext ) : ScVbaCondition_BASE( xContext ) {}
+	ScVbaCondition(  const css::uno::Sequence< css::uno::Any >& /*args*/, const css::uno::Reference< css::uno::XComponentContext >& xContext ) : ScVbaCondition_BASE( xContext ) {}
 
 	static css::sheet::ConditionOperator retrieveAPIOperator( const css::uno::Any& _aOperator);
 

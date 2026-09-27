@@ -23,6 +23,7 @@
 #include <vbahelper/helperdecl.hxx>
 #include <tools/urlobj.hxx>
 #include <comphelper/unwrapargs.hxx>
+#include <vector>
 
 #include <com/sun/star/util/XModifiable.hpp>
 #include <com/sun/star/util/XProtectable.hpp>
@@ -91,6 +92,8 @@ void ScVbaWorkbook::initColorData( const uno::Sequence< sal_Int32 >& sColors )
 }
 
 
+// MS Excel VBA: Resets the color palette to its default values.
+// Status: implemented - loads default palette from ScVbaPalette
 void SAL_CALL
 ScVbaWorkbook::ResetColors(  )
 {
@@ -105,6 +108,8 @@ ScVbaWorkbook::ResetColors(  )
 		initColorData( dDefaultColors );
 }
 
+// MS Excel VBA: Returns the color at the given index, or all colors if Index is omitted.
+// Status: implemented - uses ColorData array
 ::uno::Any SAL_CALL
 ScVbaWorkbook::Colors( const ::uno::Any& Index )
 {
@@ -120,6 +125,8 @@ ScVbaWorkbook::Colors( const ::uno::Any& Index )
 	return aRet;
 }
 
+// MS Excel VBA: Returns the file format of the workbook.
+// Status: implemented - maps filter name to XlFileFormat constant
 ::sal_Int32 SAL_CALL
 ScVbaWorkbook::FileFormat(  )
 {
@@ -181,15 +188,20 @@ ScVbaWorkbook::FileFormat(  )
         return aFileFormat;
 }
 
+// MS Excel VBA: Initializes this workbook (resets colors if needed).
+// Status: implemented
 void
 ScVbaWorkbook::init()
 {
 	if ( !ColorData.getLength() )
 		ResetColors();
 }
+// MS Excel VBA: Constructs the Workbook object for use as ActiveSheet base class.
+// Status: implemented - initializes color data
 ScVbaWorkbook::ScVbaWorkbook( 	const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext) :ScVbaWorkbook_BASE( xParent, xContext )
 {
 	//#FIXME this persists the color data per office instance and
+	// # not per workbook instance, need to hook the data into XModel
 	// not per workbook instance, need to hook the data into XModel
 	// ( e.g. we already store the imported palette in there )
 	// so we should,
@@ -198,17 +210,23 @@ ScVbaWorkbook::ScVbaWorkbook( 	const css::uno::Reference< ov::XHelperInterface >
 	init();
 }
 
+// MS Excel VBA: Constructs the Workbook object with parent, context, and model.
+// Status: implemented - initializes color data
 ScVbaWorkbook::ScVbaWorkbook( 	const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, css::uno::Reference< css::frame::XModel > xModel ) : ScVbaWorkbook_BASE( xParent, xContext, xModel )
 {
 	init();
 }
 
+// MS Excel VBA: Constructs the Workbook object from arguments (service instantiation).
+// Status: implemented - initializes color data
 ScVbaWorkbook::ScVbaWorkbook( uno::Sequence< uno::Any> const & args,
     uno::Reference< uno::XComponentContext> const & xContext ) : ScVbaWorkbook_BASE( args, xContext )
 {
 	init();
 }
 
+// MS Excel VBA: Returns the active sheet in this workbook.
+// Status: implemented - returns the XWorksheet from the view or creates one
 uno::Reference< excel::XWorksheet >
 ScVbaWorkbook::getActiveSheet()
 {
@@ -222,12 +240,16 @@ ScVbaWorkbook::getActiveSheet()
     return new ScVbaWorksheet( this, mxContext, xSheet, xModel );
 }
 
+// MS Excel VBA: Returns the Sheets collection or a single sheet by index.
+// Status: implemented - aliases to Worksheets()
 uno::Any SAL_CALL
 ScVbaWorkbook::Sheets( const uno::Any& aIndex )
 {
 	return Worksheets( aIndex );
 }
 
+// MS Excel VBA: Returns the Worksheets collection or a single worksheet by index.
+// Status: implemented - delegates to ScVbaWorksheets
 uno::Any SAL_CALL
 ScVbaWorkbook::Worksheets( const uno::Any& aIndex )
 {
@@ -242,6 +264,8 @@ ScVbaWorkbook::Worksheets( const uno::Any& aIndex )
 	// pass on to collection
 	return uno::Any( xWorkSheets->Item( aIndex, uno::Any() ) );
 }
+// MS Excel VBA: Returns the Windows collection or a single window by index.
+// Status: implemented - delegates to ScVbaWindows
 uno::Any SAL_CALL
 ScVbaWorkbook::Windows( const uno::Any& aIndex )
 {
@@ -252,12 +276,16 @@ ScVbaWorkbook::Windows( const uno::Any& aIndex )
 	return uno::Any( xWindows->Item( aIndex, uno::Any() ) );
 }
 
+// MS Excel VBA: Activates this workbook (brings it to front).
+// Status: implemented - delegates to VbaDocumentBase::Activate
 void SAL_CALL
 ScVbaWorkbook::Activate()
 {
     VbaDocumentBase::Activate();
 }
 
+// MS Excel VBA: Returns whether the workbook structure is protected (VBA project).
+// Status: implemented - queries UNO XProtectable
 ::sal_Bool
 ScVbaWorkbook::getProtectStructure()
 {
@@ -265,6 +293,8 @@ ScVbaWorkbook::getProtectStructure()
 	return xProt->isProtected();
 }
 
+// MS Excel VBA: Returns whether precision is set as displayed (uses displayed values for calculations).
+// Status: implemented - reads from document options
 ::sal_Bool SAL_CALL ScVbaWorkbook::getPrecisionAsDisplayed()
 {
     uno::Reference< frame::XModel > xModel( getModel(), uno::UNO_QUERY_THROW );
@@ -272,6 +302,8 @@ ScVbaWorkbook::getProtectStructure()
     return pDoc->GetDocOptions().IsCalcAsShown();
 }
 
+// MS Excel VBA: Sets whether precision is set as displayed (uses displayed values for calculations).
+// Status: implemented - sets in document options
 void SAL_CALL ScVbaWorkbook::setPrecisionAsDisplayed( sal_Bool _precisionAsDisplayed )
 {
     uno::Reference< frame::XModel > xModel( getModel(), uno::UNO_QUERY_THROW );
@@ -281,6 +313,8 @@ void SAL_CALL ScVbaWorkbook::setPrecisionAsDisplayed( sal_Bool _precisionAsDispl
     pDoc->SetDocOptions( aOpt );
 }
 
+// MS Excel VBA: Saves a copy of the workbook to the specified filename.
+// Status: implemented - uses storeToURL with MS Excel 97 filter
 void
 ScVbaWorkbook::SaveCopyAs( const rtl::OUString& sFileName )
 {
@@ -293,7 +327,124 @@ ScVbaWorkbook::SaveCopyAs( const rtl::OUString& sFileName )
 	xStor->storeToURL( aURL, storeProps );
 }
 
-css::uno::Any SAL_CALL
+// MS Excel VBA: Saves the workbook with specified options.
+// Status: partial - only uses FileName and FileFormat; Password/WriteResPassword/ReadOnlyRecommended/CreateBackup ignored
+void SAL_CALL
+ScVbaWorkbook::SaveAs( const css::uno::Any& FileName, const css::uno::Any& FileFormat, const css::uno::Any& Password, const css::uno::Any& WriteResPassword, const css::uno::Any& ReadOnlyRecommended, const css::uno::Any& CreateBackup )
+{
+    rtl::OUString aFileName;
+    sal_Bool bHasFileName = ( FileName >>= aFileName );
+    if ( !bHasFileName )
+    {
+        aFileName = getName();
+    }
+    rtl::OUString aURL;
+    osl::FileBase::getFileURLFromSystemPath( aFileName, aURL );
+    uno::Reference< frame::XStorable > xStor( getModel(), uno::UNO_QUERY_THROW );
+
+    sal_Int32 aFileFormat = excel::XlFileFormat::xlExcel9795;
+    if ( FileFormat.hasValue() )
+        FileFormat >>= aFileFormat;
+
+    rtl::OUString aFilterName;
+    rtl::OUString aExtension;
+    switch ( aFileFormat )
+    {
+        case excel::XlFileFormat::xlCSV:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Text - txt - csv (StarCalc)" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".csv" ) );
+            break;
+        case excel::XlFileFormat::xlDBF4:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DBF" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".dbf" ) );
+            break;
+        case excel::XlFileFormat::xlDIF:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DIF" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".dif" ) );
+            break;
+        case excel::XlFileFormat::xlExcel4Workbook:
+        case excel::XlFileFormat::xlExcel4:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "MS Excel 4.0" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".xls" ) );
+            break;
+        case excel::XlFileFormat::xlExcel5:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "MS Excel 5.0/95" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".xls" ) );
+            break;
+        case excel::XlFileFormat::xlHtml:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "HTML (StarCalc)" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".html" ) );
+            break;
+        case excel::XlFileFormat::xlTemplate:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "calc_StarOffice_XML_Calc_Template" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".ots" ) );
+            break;
+        case excel::XlFileFormat::xlWorkbookNormal:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StarOffice XML (Calc)" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".ods" ) );
+            break;
+        case excel::XlFileFormat::xlXMLSpreadsheet:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "calc8" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".xlsx" ) );
+            break;
+        case excel::XlFileFormat::xlExcel9795:
+        default:
+            aFilterName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "MS Excel 97" ) );
+            aExtension = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".xls" ) );
+            break;
+    }
+
+    if ( aFileName.indexOf('.') == -1 )
+    {
+        aURL = aURL + aExtension;
+    }
+
+    std::vector< beans::PropertyValue > storeProps;
+    storeProps.push_back( beans::PropertyValue(
+        rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "FilterName" ) ), 0,
+        uno::makeAny( aFilterName ), beans::PropertyState_DIRECT_VALUE ) );
+
+    rtl::OUString sPassword;
+    if ( Password >>= sPassword )
+    {
+        storeProps.push_back( beans::PropertyValue(
+            rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Password" ) ), 0,
+            uno::makeAny( sPassword ), beans::PropertyState_DIRECT_VALUE ) );
+    }
+
+     rtl::OUString sWriteResPassword;
+     if ( WriteResPassword >>= sWriteResPassword )
+     {
+         storeProps.push_back( beans::PropertyValue(
+             rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "WriteResPassword" ) ), 0,
+             uno::makeAny( sWriteResPassword ), beans::PropertyState_DIRECT_VALUE ) );
+     }
+
+     sal_Bool bReadOnlyRecommended = sal_False;
+     if ( ReadOnlyRecommended >>= bReadOnlyRecommended )
+     {
+         storeProps.push_back( beans::PropertyValue(
+             rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "RecommendReadOnly" ) ), 0,
+             uno::makeAny( bReadOnlyRecommended ), beans::PropertyState_DIRECT_VALUE ) );
+     }
+
+     sal_Bool bCreateBackup = sal_False;
+     if ( CreateBackup >>= bCreateBackup )
+    {
+        storeProps.push_back( beans::PropertyValue(
+            rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "CreateBackup" ) ), 0,
+            uno::makeAny( bCreateBackup ), beans::PropertyState_DIRECT_VALUE ) );
+    }
+
+    uno::Sequence< beans::PropertyValue > aStoreProps( storeProps.size() );
+    for ( sal_Int32 i = 0; i < storeProps.size(); ++i )
+        aStoreProps[i] = storeProps[i];
+    xStor->storeAsURL( aURL, aStoreProps );
+}
+
+css::// MS Excel VBA: Returns the Styles collection or a single style by index.
+// Status: implemented - delegates to ScVbaStyles
+uno::Any SAL_CALL
 ScVbaWorkbook::Styles( const uno::Any& Item )
 {
 	// quick look and Styles object doesn't seem to have a valid parent
@@ -306,6 +457,8 @@ ScVbaWorkbook::Styles( const uno::Any& Item )
 }
 
 // Amelia Wang
+// MS Excel VBA: Returns the Names collection or a single name by index.
+// Status: implemented - delegates to ScVbaNames
 uno::Any SAL_CALL
 ScVbaWorkbook::Names( const uno::Any& aIndex )
 {
@@ -318,6 +471,8 @@ ScVbaWorkbook::Names( const uno::Any& aIndex )
 	return uno::Any( xNames );
 }
 
+// MS Excel VBA: Returns the implementation name of this service.
+// Status: implemented - returns "ScVbaWorkbook"
 rtl::OUString&
 ScVbaWorkbook::getServiceImplName()
 {
@@ -325,6 +480,8 @@ ScVbaWorkbook::getServiceImplName()
 	return sImplName;
 }
 
+// MS Excel VBA: Returns the service names supported by this implementation.
+// Status: implemented - returns "ooo.vba.excel.Workbook"
 uno::Sequence< rtl::OUString >
 ScVbaWorkbook::getServiceNames()
 {
@@ -337,6 +494,8 @@ ScVbaWorkbook::getServiceNames()
 	return aServiceNames;
 }
 
+// MS Excel VBA: Returns the code name of the workbook.
+// Status: implemented - reads "CodeName" property from model
 ::rtl::OUString SAL_CALL
 ScVbaWorkbook::getCodeName()
 {

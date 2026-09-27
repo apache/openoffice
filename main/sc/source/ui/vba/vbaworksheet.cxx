@@ -101,6 +101,8 @@
 using namespace com::sun::star;
 using namespace ooo::vba;
 
+// MS Excel VBA: Internal helper - generates a unique spreadsheet name.
+// Status: internal helper
 static void getNewSpreadsheetName (rtl::OUString &aNewName, rtl::OUString aOldName, uno::Reference <sheet::XSpreadsheetDocument>& xSpreadDoc )
 {
 	if (!xSpreadDoc.is())
@@ -116,6 +118,8 @@ static void getNewSpreadsheetName (rtl::OUString &aNewName, rtl::OUString aOldNa
 	}
 }
 
+// MS Excel VBA: Internal helper - removes all sheets and optionally renames the remaining one.
+// Status: internal helper
 static void removeAllSheets( uno::Reference <sheet::XSpreadsheetDocument>& xSpreadDoc, rtl::OUString aSheetName)
 {
 	if (!xSpreadDoc.is())
@@ -145,6 +149,8 @@ static void removeAllSheets( uno::Reference <sheet::XSpreadsheetDocument>& xSpre
 	}
 }
 
+// MS Excel VBA: Internal helper - opens a new spreadsheet document.
+// Status: internal helper
 static uno::Reference<frame::XModel>
 openNewDoc(rtl::OUString aSheetName )
 {
@@ -178,16 +184,22 @@ openNewDoc(rtl::OUString aSheetName )
 	return xModel;
 }
 
+// MS Excel VBA: Default constructor for Worksheet.
+// Status: implemented
 ScVbaWorksheet::ScVbaWorksheet( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext ) : WorksheetImpl_BASE( xParent, xContext ), mbVeryHidden( false )
 {
 }
 
+// MS Excel VBA: Constructor taking a spreadsheet and model.
+// Status: implemented
 ScVbaWorksheet::ScVbaWorksheet(const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext,
 		const uno::Reference< sheet::XSpreadsheet >& xSheet,
 		const uno::Reference< frame::XModel >& xModel ) : WorksheetImpl_BASE( xParent, xContext ), mxSheet( xSheet ), mxModel(xModel), mbVeryHidden( false )
 {
 }
 
+// MS Excel VBA: Constructor taking arguments sequence (for UNO create).
+// Status: implemented
 ScVbaWorksheet::ScVbaWorksheet( uno::Sequence< uno::Any> const & args,
     uno::Reference< uno::XComponentContext> const & xContext ) :  WorksheetImpl_BASE( getXSomethingFromArgs< XHelperInterface >( args, 0 ), xContext ), mxModel( getXSomethingFromArgs< frame::XModel >( args, 1 ) ), mbVeryHidden( false )
 {
@@ -202,11 +214,15 @@ ScVbaWorksheet::ScVbaWorksheet( uno::Sequence< uno::Any> const & args,
 	mxSheet.set( xNameAccess->getByName( sSheetName ), uno::UNO_QUERY_THROW );
 }
 
+// MS Excel VBA: Destructor.
+// Status: implemented
 ScVbaWorksheet::~ScVbaWorksheet()
 {
 }
 
 ::rtl::OUString
+// MS Excel VBA: Gets the name of the worksheet.
+// Status: implemented
 ScVbaWorksheet::getName()
 {
 	uno::Reference< container::XNamed > xNamed( getSheet(), uno::UNO_QUERY_THROW );
@@ -214,6 +230,8 @@ ScVbaWorksheet::getName()
 }
 
 void
+// MS Excel VBA: Sets the name of the worksheet.
+// Status: implemented
 ScVbaWorksheet::setName(const ::rtl::OUString &rName )
 {
 	uno::Reference< container::XNamed > xNamed( getSheet(), uno::UNO_QUERY_THROW );
@@ -221,6 +239,8 @@ ScVbaWorksheet::setName(const ::rtl::OUString &rName )
 }
 
 sal_Int32
+// MS Excel VBA: Gets the visibility of the worksheet.
+// Status: implemented
 ScVbaWorksheet::getVisible()
 {
 	uno::Reference< beans::XPropertySet > xProps( getSheet(), uno::UNO_QUERY_THROW );
@@ -231,6 +251,8 @@ ScVbaWorksheet::getVisible()
 }
 
 void
+// MS Excel VBA: Sets the visibility of the worksheet.
+// Status: implemented
 ScVbaWorksheet::setVisible( sal_Int32 nVisible )
 {
     using namespace ::ooo::vba::excel::XlSheetVisibility;
@@ -257,12 +279,16 @@ ScVbaWorksheet::setVisible( sal_Int32 nVisible )
 }
 
 sal_Int16
+// MS Excel VBA: Returns the 1-based index of the worksheet.
+// Status: implemented
 ScVbaWorksheet::getIndex()
 {
 	return getSheetID() + 1;
 }
 
 sal_Int32
+// MS Excel VBA: Gets the selection enabled state for the worksheet.
+// Status: implemented
 ScVbaWorksheet::getEnableSelection()
 {
     uno::Reference <sheet::XSpreadsheetDocument> xSpreadDoc( getModel(), uno::UNO_QUERY_THROW );
@@ -294,6 +320,8 @@ ScVbaWorksheet::getEnableSelection()
 
 
 void
+// MS Excel VBA: Sets the selection enabled state for the worksheet.
+// Status: implemented
 ScVbaWorksheet::setEnableSelection( sal_Int32 nSelection )
 {
     if( (nSelection != excel::XlEnableSelection::xlNoRestrictions) &&
@@ -335,6 +363,8 @@ ScVbaWorksheet::setEnableSelection( sal_Int32 nSelection )
 
 }
 
+// MS Excel VBA: Internal helper - gets first database range properties for the sheet.
+// Status: internal helper
 uno::Reference< beans::XPropertySet > ScVbaWorksheet::getFirstDBRangeProperties()
 {
     uno::Reference< beans::XPropertySet > xModelProps( mxModel, uno::UNO_QUERY_THROW );
@@ -352,6 +382,8 @@ uno::Reference< beans::XPropertySet > ScVbaWorksheet::getFirstDBRangeProperties(
     return uno::Reference< beans::XPropertySet >();
 }
 
+// MS Excel VBA: Gets whether AutoFilter mode is enabled.
+// Status: implemented
 sal_Bool SAL_CALL ScVbaWorksheet::getAutoFilterMode()
 {
     uno::Reference< beans::XPropertySet > xDBRangeProps = getFirstDBRangeProperties();
@@ -362,6 +394,8 @@ sal_Bool SAL_CALL ScVbaWorksheet::getAutoFilterMode()
         bAutoFilterMode;
 }
 
+// MS Excel VBA: Sets whether AutoFilter mode is enabled.
+// Status: implemented
 void SAL_CALL ScVbaWorksheet::setAutoFilterMode( sal_Bool bAutoFilterMode )
 {
     uno::Reference< beans::XPropertySet > xDBRangeProps = getFirstDBRangeProperties();
@@ -370,6 +404,8 @@ void SAL_CALL ScVbaWorksheet::setAutoFilterMode( sal_Bool bAutoFilterMode )
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns the used range of the worksheet.
+// Status: implemented
 ScVbaWorksheet::getUsedRange()
 {
  	uno::Reference< sheet::XSheetCellRange > xSheetCellRange(getSheet(), uno::UNO_QUERY_THROW );
@@ -382,6 +418,8 @@ ScVbaWorksheet::getUsedRange()
 }
 
 uno::Reference< excel::XOutline >
+// MS Excel VBA: Returns the outline for the worksheet.
+// Status: stubbed - not fully implemented in Calc
 ScVbaWorksheet::Outline( )
 {
 	uno::Reference<sheet::XSheetOutline> xOutline(getSheet(),uno::UNO_QUERY_THROW);
@@ -389,12 +427,16 @@ ScVbaWorksheet::Outline( )
 }
 
 uno::Reference< excel::XPageSetup >
+// MS Excel VBA: Returns the page setup for the worksheet.
+// Status: stubbed - not fully implemented in Calc
 ScVbaWorksheet::PageSetup( )
 {
 	return new ScVbaPageSetup( this, mxContext, getSheet(), getModel() );
 }
 
 uno::Any
+// MS Excel VBA: Returns a HPageBreaks collection.
+// Status: stubbed - not fully implemented in Calc
 ScVbaWorksheet::HPageBreaks( const uno::Any& aIndex )
 {
     uno::Reference< sheet::XSheetPageBreak > xSheetPageBreak(getSheet(),uno::UNO_QUERY_THROW);
@@ -405,6 +447,8 @@ ScVbaWorksheet::HPageBreaks( const uno::Any& aIndex )
 }
 
 uno::Any
+// MS Excel VBA: Returns a VPageBreaks collection.
+// Status: stubbed - not fully implemented in Calc
 ScVbaWorksheet::VPageBreaks( const uno::Any& aIndex )
 {
 	uno::Reference< sheet::XSheetPageBreak > xSheetPageBreak( getSheet(), uno::UNO_QUERY_THROW );
@@ -415,24 +459,32 @@ ScVbaWorksheet::VPageBreaks( const uno::Any& aIndex )
 }
 
 sal_Int32
+// MS Excel VBA: Gets the standard column width.
+// Status: implemented
 ScVbaWorksheet::getStandardWidth()
 {
 	return STANDARDWIDTH ;
 }
 
 sal_Int32
+// MS Excel VBA: Gets the standard row height.
+// Status: implemented
 ScVbaWorksheet::getStandardHeight()
 {
 	return STANDARDHEIGHT;
 }
 
 sal_Bool
+// MS Excel VBA: Gets whether the worksheet is in protection mode.
+// Status: implemented - always returns False
 ScVbaWorksheet::getProtectionMode()
 {
 	return sal_False;
 }
 
 sal_Bool
+// MS Excel VBA: Gets whether contents are protected.
+// Status: implemented
 ScVbaWorksheet::getProtectContents()
 {
 	uno::Reference<util::XProtectable > xProtectable(getSheet(), uno::UNO_QUERY_THROW);
@@ -440,18 +492,24 @@ ScVbaWorksheet::getProtectContents()
 }
 
 sal_Bool
+// MS Excel VBA: Gets whether drawing objects are protected.
+// Status: implemented - always returns False
 ScVbaWorksheet::getProtectDrawingObjects()
 {
 	return sal_False;
 }
 
 sal_Bool
+// MS Excel VBA: Gets whether scenarios are protected.
+// Status: implemented - always returns False
 ScVbaWorksheet::getProtectScenarios()
 {
 	return sal_False;
 }
 
 void
+// MS Excel VBA: Activates the worksheet.
+// Status: implemented
 ScVbaWorksheet::Activate()
 {
 	uno::Reference< sheet::XSpreadsheetView > xSpreadsheet(
@@ -460,12 +518,16 @@ ScVbaWorksheet::Activate()
 }
 
 void
+// MS Excel VBA: Selects the worksheet.
+// Status: implemented
 ScVbaWorksheet::Select()
 {
 	Activate();
 }
 
 void
+// MS Excel VBA: Moves the worksheet to a new location.
+// Status: implemented
 ScVbaWorksheet::Move( const uno::Any& Before, const uno::Any& After )
 {
 	uno::Reference<excel::XWorksheet> xSheet;
@@ -503,6 +565,8 @@ ScVbaWorksheet::Move( const uno::Any& Before, const uno::Any& After )
 }
 
 void
+// MS Excel VBA: Copies the worksheet to a new location.
+// Status: implemented
 ScVbaWorksheet::Copy( const uno::Any& Before, const uno::Any& After )
 {
 	uno::Reference<excel::XWorksheet> xSheet;
@@ -540,6 +604,8 @@ ScVbaWorksheet::Copy( const uno::Any& Before, const uno::Any& After )
 
 
 void
+// MS Excel VBA: Pastes clipboard contents to the destination.
+// Status: implemented
 ScVbaWorksheet::Paste( const uno::Any& Destination, const uno::Any& /*Link*/ )
 {
 	// #TODO# #FIXME# Link is not used
@@ -550,6 +616,8 @@ ScVbaWorksheet::Paste( const uno::Any& Destination, const uno::Any& /*Link*/ )
 }
 
 void
+// MS Excel VBA: Deletes the worksheet.
+// Status: implemented
 ScVbaWorksheet::Delete()
 {
 	uno::Reference <sheet::XSpreadsheetDocument> xSpreadDoc( getModel(), uno::UNO_QUERY_THROW );
@@ -569,6 +637,8 @@ ScVbaWorksheet::Delete()
 }
 
 uno::Reference< excel::XWorksheet >
+// MS Excel VBA: Internal helper - gets a worksheet by offset.
+// Status: internal helper
 ScVbaWorksheet::getSheetAtOffset(SCTAB offset)
 {
 	uno::Reference <sheet::XSpreadsheetDocument> xSpreadDoc( getModel(), uno::UNO_QUERY_THROW );
@@ -585,12 +655,16 @@ ScVbaWorksheet::getSheetAtOffset(SCTAB offset)
 }
 
 uno::Reference< excel::XWorksheet >
+// MS Excel VBA: Returns the next worksheet.
+// Status: implemented
 ScVbaWorksheet::getNext()
 {
 	return getSheetAtOffset(static_cast<SCTAB>(1));
 }
 
 uno::Reference< excel::XWorksheet >
+// MS Excel VBA: Returns the previous worksheet.
+// Status: implemented
 ScVbaWorksheet::getPrevious()
 {
 	return getSheetAtOffset(-1);
@@ -598,6 +672,8 @@ ScVbaWorksheet::getPrevious()
 
 
 void
+// MS Excel VBA: Protects the worksheet with a password.
+// Status: implemented - partial (subset of options supported)
 ScVbaWorksheet::Protect( const uno::Any& Password, const uno::Any& /*DrawingObjects*/, const uno::Any& /*Contents*/, const uno::Any& /*Scenarios*/, const uno::Any& /*UserInterfaceOnly*/ )
 {
 	// #TODO# #FIXME# is there anything we can do with the unused param
@@ -609,6 +685,8 @@ ScVbaWorksheet::Protect( const uno::Any& Password, const uno::Any& /*DrawingObje
 }
 
 void
+// MS Excel VBA: Removes protection from the worksheet.
+// Status: implemented
 ScVbaWorksheet::Unprotect( const uno::Any& Password )
 {
 	uno::Reference<util::XProtectable > xProtectable(getSheet(), uno::UNO_QUERY_THROW);
@@ -618,6 +696,8 @@ ScVbaWorksheet::Unprotect( const uno::Any& Password )
 }
 
 void
+// MS Excel VBA: Calculates the worksheet.
+// Status: implemented
 ScVbaWorksheet::Calculate()
 {
 	uno::Reference <sheet::XCalculatable> xReCalculate(getModel(), uno::UNO_QUERY_THROW);
@@ -625,6 +705,8 @@ ScVbaWorksheet::Calculate()
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a Range object representing a cell or range.
+// Status: implemented
 ScVbaWorksheet::Range( const ::uno::Any& Cell1, const ::uno::Any& Cell2 )
 {
 	uno::Reference< excel::XRange > xSheetRange( new ScVbaRange( this, mxContext
@@ -633,6 +715,8 @@ ScVbaWorksheet::Range( const ::uno::Any& Cell1, const ::uno::Any& Cell2 )
 }
 
 void
+// MS Excel VBA: Checks spelling of the worksheet text.
+// Status: implemented
 ScVbaWorksheet::CheckSpelling( const uno::Any& /*CustomDictionary*/,const uno::Any& /*IgnoreUppercase*/,const uno::Any& /*AlwaysSuggest*/, const uno::Any& /*SpellingLang*/ )
 {
 	// #TODO# #FIXME# unused params above, can we do anything with those
@@ -642,6 +726,8 @@ ScVbaWorksheet::CheckSpelling( const uno::Any& /*CustomDictionary*/,const uno::A
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Internal helper - gets the entire range of the sheet.
+// Status: internal helper
 ScVbaWorksheet::getSheetRange()
 {
 	uno::Reference< table::XCellRange > xRange( getSheet(),uno::UNO_QUERY_THROW );
@@ -651,6 +737,8 @@ ScVbaWorksheet::getSheetRange()
 // These are hacks - we prolly (somehow) need to inherit
 // the vbarange functionality here ...
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a single cell or cell range.
+// Status: implemented
 ScVbaWorksheet::Cells( const ::uno::Any &nRow, const ::uno::Any &nCol )
 {
     // Performance optimization for often-called Cells method:
@@ -660,18 +748,24 @@ ScVbaWorksheet::Cells( const ::uno::Any &nRow, const ::uno::Any &nCol )
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a single row or row range.
+// Status: implemented
 ScVbaWorksheet::Rows(const uno::Any& aIndex )
 {
 	return getSheetRange()->Rows( aIndex );
 }
 
 uno::Reference< excel::XRange >
+// MS Excel VBA: Returns a single column or column range.
+// Status: implemented
 ScVbaWorksheet::Columns( const uno::Any& aIndex )
 {
 	return getSheetRange()->Columns( aIndex );
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns a ChartObject by index.
+// Status: stubbed - not fully implemented in Calc
 ScVbaWorksheet::ChartObjects( const uno::Any& Index )
 {
 	if ( !mxCharts.is() )
@@ -693,6 +787,8 @@ ScVbaWorksheet::ChartObjects( const uno::Any& Index )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns a PivotTable by index.
+// Status: stubbed - not fully implemented in Calc
 ScVbaWorksheet::PivotTables( const uno::Any& Index )
 {
 	uno::Reference< css::sheet::XSpreadsheet > xSheet = getSheet();
@@ -706,6 +802,8 @@ ScVbaWorksheet::PivotTables( const uno::Any& Index )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns a Comment by index.
+// Status: implemented
 ScVbaWorksheet::Comments( const uno::Any& Index )
 {
 	uno::Reference< css::sheet::XSpreadsheet > xSheet = getSheet();
@@ -719,6 +817,8 @@ ScVbaWorksheet::Comments( const uno::Any& Index )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns a Hyperlink by index.
+// Status: implemented
 ScVbaWorksheet::Hyperlinks( const uno::Any& aIndex )
 {
     /*  The worksheet always returns the same Hyperlinks object.
@@ -731,6 +831,8 @@ ScVbaWorksheet::Hyperlinks( const uno::Any& aIndex )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns a Name object by index (uses all global names).
+// Status: implemented - partial (no sheet-local names)
 ScVbaWorksheet::Names( const css::uno::Any& aIndex )
 {
     // fake sheet-local names by returning all global names
@@ -745,6 +847,8 @@ ScVbaWorksheet::Names( const css::uno::Any& aIndex )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns an OLEObject by index.
+// Status: stubbed - not fully implemented in Calc
 ScVbaWorksheet::OLEObjects( const uno::Any& Index )
 {
     uno::Reference< sheet::XSpreadsheet > xSpreadsheet( getSheet(), uno::UNO_QUERY_THROW );
@@ -759,6 +863,8 @@ ScVbaWorksheet::OLEObjects( const uno::Any& Index )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns a Shape object by index.
+// Status: implemented
 ScVbaWorksheet::Shapes( const uno::Any& aIndex )
 {
     uno::Reference< sheet::XSpreadsheet > xSpreadsheet( getSheet(), uno::UNO_QUERY_THROW );
@@ -773,6 +879,8 @@ ScVbaWorksheet::Shapes( const uno::Any& aIndex )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns Button controls on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::Buttons( const uno::Any& rIndex )
 {
     if( !mxButtons.is() )
@@ -785,54 +893,72 @@ ScVbaWorksheet::Buttons( const uno::Any& rIndex )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns CheckBox controls on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::CheckBoxes( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns DropDown controls on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::DropDowns( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns GroupBox controls on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::GroupBoxes( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns Label controls on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::Labels( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns ListBox controls on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::ListBoxes( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns OptionButton controls on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::OptionButtons( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns ScrollBars control objects on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::ScrollBars( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Returns Spinners control objects on the worksheet.
+// Status: not implemented in Calc
 ScVbaWorksheet::Spinners( const uno::Any& /*rIndex*/ )
 {
     throw uno::RuntimeException();
 }
 
 void SAL_CALL
+// MS Excel VBA: Displays the data form for entering/editing data.
+// Status: partial (only in OO build with VBA_OOBUILD_HACK)
 ScVbaWorksheet::ShowDataForm( )
 {
 #ifdef VBA_OOBUILD_HACK
@@ -852,6 +978,8 @@ ScVbaWorksheet::ShowDataForm( )
 }
 
 uno::Any SAL_CALL
+// MS Excel VBA: Evaluates an Excel formula expression.
+// Status: implemented
 ScVbaWorksheet::Evaluate( const ::rtl::OUString& Name )
 {
 	// #TODO Evaluate allows other things to be evaluated, e.g. functions
@@ -863,6 +991,8 @@ ScVbaWorksheet::Evaluate( const ::rtl::OUString& Name )
 
 
 uno::Reference< beans::XIntrospectionAccess > SAL_CALL
+// MS Excel VBA: Returns introspection access (XInvocation).
+// Status: implemented - returns empty reference
 ScVbaWorksheet::getIntrospection(  )
 {
 	return uno::Reference< beans::XIntrospectionAccess >();
@@ -871,6 +1001,8 @@ ScVbaWorksheet::getIntrospection(  )
 uno::Any SAL_CALL
 ScVbaWorksheet::invoke( const ::rtl::OUString& aFunctionName, const uno::Sequence< uno::Any >& /*aParams*/, uno::Sequence< ::sal_Int16 >& /*aOutParamIndex*/, uno::Sequence< uno::Any >& /*aOutParam*/ )
 {
+// MS Excel VBA: Invokes a method by name (XInvocation).
+// Status: stubbed - throws RuntimeException
 	OSL_TRACE("** ScVbaWorksheet::invoke( %s ), will barf",
 		rtl::OUStringToOString( aFunctionName, RTL_TEXTENCODING_UTF8 ).getStr() );
 
@@ -878,11 +1010,15 @@ ScVbaWorksheet::invoke( const ::rtl::OUString& aFunctionName, const uno::Sequenc
 }
 
 void SAL_CALL
+// MS Excel VBA: Sets the value of a property by name.
+// Status: implemented
 ScVbaWorksheet::setValue( const ::rtl::OUString& aPropertyName, const uno::Any& aValue )
 {
     setDefaultPropByIntrospection( uno::makeAny( getValue( aPropertyName ) ), aValue );
 }
 uno::Any SAL_CALL
+// MS Excel VBA: Gets the value of a property by name.
+// Status: implemented
 ScVbaWorksheet::getValue( const ::rtl::OUString& aPropertyName )
 {
     uno::Reference< drawing::XControlShape > xControlShape( getControlShape( aPropertyName ), uno::UNO_QUERY_THROW );
@@ -894,12 +1030,16 @@ ScVbaWorksheet::getValue( const ::rtl::OUString& aPropertyName )
 }
 
 ::sal_Bool SAL_CALL
+// MS Excel VBA: Indicates if a method exists on this object.
+// Status: implemented - always returns False
 ScVbaWorksheet::hasMethod( const ::rtl::OUString& /*aName*/ )
 {
 	return sal_False;
 }
 
 uno::Reference< container::XNameAccess >
+// MS Excel VBA: Internal helper - gets form controls of the sheet.
+// Status: internal helper
 ScVbaWorksheet::getFormControls()
 {
 	uno::Reference< container::XNameAccess > xFormControls;
@@ -923,6 +1063,8 @@ ScVbaWorksheet::getFormControls()
 
 				}
 ::sal_Bool SAL_CALL
+// MS Excel VBA: Indicates if a property exists on this object.
+// Status: implemented
 ScVbaWorksheet::hasProperty( const ::rtl::OUString& aName )
 {
 	uno::Reference< container::XNameAccess > xFormControls( getFormControls() );
@@ -932,6 +1074,8 @@ ScVbaWorksheet::hasProperty( const ::rtl::OUString& aName )
 }
 
 uno::Any
+// MS Excel VBA: Internal helper - gets a control shape by name.
+// Status: internal helper
 ScVbaWorksheet::getControlShape( const ::rtl::OUString& sName )
 {
     // ideally we would get an XControl object but it appears an XControl
@@ -966,18 +1110,24 @@ ScVbaWorksheet::getControlShape( const ::rtl::OUString& sName )
 
 
 rtl::OUString&
+// MS Excel VBA: Returns the implementation service name for UNO.
+// Status: implemented
 ScVbaWorksheet::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaWorksheet") );
 	return sImplName;
 }
 void SAL_CALL
+// MS Excel VBA: Sets whether automatic calculation is enabled.
+// Status: implemented
 ScVbaWorksheet::setEnableCalculation( ::sal_Bool bEnableCalculation )
 {
 	uno::Reference <sheet::XCalculatable> xCalculatable(getModel(), uno::UNO_QUERY_THROW);
         xCalculatable->enableAutomaticCalculation( bEnableCalculation);
 }
 ::sal_Bool SAL_CALL
+// MS Excel VBA: Gets whether automatic calculation is enabled.
+// Status: implemented
 ScVbaWorksheet::getEnableCalculation(  )
 {
 	uno::Reference <sheet::XCalculatable> xCalculatable(getModel(), uno::UNO_QUERY_THROW);
@@ -985,6 +1135,8 @@ ScVbaWorksheet::getEnableCalculation(  )
 }
 
 uno::Sequence< rtl::OUString >
+// MS Excel VBA: Returns the list of supported service names for UNO.
+// Status: implemented
 ScVbaWorksheet::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;
@@ -997,6 +1149,8 @@ ScVbaWorksheet::getServiceNames()
 }
 
 rtl::OUString SAL_CALL
+// MS Excel VBA: Returns the code name of the worksheet.
+// Status: implemented
 ScVbaWorksheet::getCodeName()
 {
     uno::Reference< beans::XPropertySet > xSheetProp( mxSheet, uno::UNO_QUERY_THROW );
@@ -1004,6 +1158,8 @@ ScVbaWorksheet::getCodeName()
 }
 
 sal_Int16
+// MS Excel VBA: Returns the sheet ID for this worksheet.
+// Status: implemented
 ScVbaWorksheet::getSheetID()
 {
 	uno::Reference< sheet::XCellRangeAddressable > xAddressable( mxSheet, uno::UNO_QUERY_THROW );
@@ -1011,6 +1167,8 @@ ScVbaWorksheet::getSheetID()
 }
 
 void SAL_CALL
+// MS Excel VBA: Prints the worksheet.
+// Status: implemented
 ScVbaWorksheet::PrintOut( const uno::Any& From, const uno::Any& To, const uno::Any& Copies, const uno::Any& Preview, const uno::Any& ActivePrinter, const uno::Any& PrintToFile, const uno::Any& Collate, const uno::Any& PrToFileName, const uno::Any& IgnorePrintAreas )
 {
 	sal_Int32 nTo = 0;

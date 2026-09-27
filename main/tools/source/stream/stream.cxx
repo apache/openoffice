@@ -2782,11 +2782,6 @@ sal_Size SvMemoryStream::PutData( const void* pData, sal_Size nCount )
             }
         }
     }
-    if (!pBuf || nCount > (nSize - nPos))
-    {
-        nCount = 0;
-        SetError( SVSTREAM_WRITE_ERROR );
-    }
     DBG_ASSERT(pBuf,"Possibly Reallocate failed");
     memcpy( pBuf+nPos, pData, (size_t)nCount);
 

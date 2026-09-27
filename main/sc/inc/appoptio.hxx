@@ -71,14 +71,16 @@ public:
 	ScLkUpdMode GetLinkMode() const				{ return eLinkMode ;}
 	void		SetLinkMode( ScLkUpdMode nSet )	{ 	eLinkMode  = nSet;}
 
-	void		SetDefaultObjectSizeWidth(sal_Int32 nNew)	{ nDefaultObjectSizeWidth = nNew; }
-	sal_Int32		GetDefaultObjectSizeWidth() const		{ return nDefaultObjectSizeWidth; }
-	void		SetDefaultObjectSizeHeight(sal_Int32 nNew)	{ nDefaultObjectSizeHeight = nNew; }
-	sal_Int32		GetDefaultObjectSizeHeight() const		{ return nDefaultObjectSizeHeight; }
+    sal_uInt16  GetTabCountInNewSpreadsheet() const { return mnTabCountInNewSpreadsheet; }
+    void        SetTabCountInNewSpreadsheet( sal_uInt16 nNew ) { mnTabCountInNewSpreadsheet = nNew; }
 
     void        SetShowSharedDocumentWarning( sal_Bool bNew )   { mbShowSharedDocumentWarning = bNew; }
     sal_Bool        GetShowSharedDocumentWarning() const        { return mbShowSharedDocumentWarning; }
 
+	void		SetDefaultObjectSizeWidth(sal_Int32 nNew)	{ nDefaultObjectSizeWidth = nNew; }
+	sal_Int32		GetDefaultObjectSizeWidth() const		{ return nDefaultObjectSizeWidth; }
+	void		SetDefaultObjectSizeHeight(sal_Int32 nNew)	{ nDefaultObjectSizeHeight = nNew; }
+	sal_Int32		GetDefaultObjectSizeHeight() const		{ return nDefaultObjectSizeHeight; }
 
 	const ScAppOptions&	operator=	( const ScAppOptions& rOpt );
 
@@ -100,6 +102,7 @@ private:
 	sal_Int32		nDefaultObjectSizeWidth;
 	sal_Int32		nDefaultObjectSizeHeight;
     sal_Bool        mbShowSharedDocumentWarning;
+    sal_uInt16      mnTabCountInNewSpreadsheet;
 };
 
 

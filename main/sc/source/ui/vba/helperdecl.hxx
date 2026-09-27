@@ -19,14 +19,18 @@
  *
  *************************************************************/
 
+#ifndef SC_VBA_HELPERDECL_HXX
+#define SC_VBA_HELPERDECL_HXX
 
+#ifndef SC_VBA_HELPERDECL_HXX
+#define SC_VBA_HELPERDECL_HXX
 #include <comphelper/servicedecl.hxx>
 #include <ooo/vba/XHelperInterface.hpp>
 
 namespace comphelper {
 namespace service_decl {
 template <typename ImplT_, typename WithArgsT = with_args<false> >
-struct vba_service_class_ : public serviceimpl_base< vba_detail::OwnServiceImpl<ImplT_>, WithArgsT >
+struct vba_service_class_ : public serviceimpl_base< detail::OwnServiceImpl<ImplT_>, WithArgsT >
 {
     typedef serviceimpl_base< detail::OwnServiceImpl<ImplT_>, WithArgsT > baseT;
     /** Default ctor.  Implementation class without args, expecting
@@ -46,3 +50,5 @@ struct vba_service_class_ : public serviceimpl_base< vba_detail::OwnServiceImpl<
 
 } // namespace service_decl
 } // namespace comphelper
+
+#endif
