@@ -70,11 +70,7 @@ namespace textframe
 {
 extern sdecl::ServiceDecl const serviceDecl;
 }
-namespace scripting
-{
-extern sdecl::ServiceDecl const serviceDecl;
-}
-
+ 
 extern "C"
 {
     SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
@@ -90,9 +86,9 @@ extern "C"
     {
 		OSL_TRACE("In component_getFactory for %s", pImplName );
     void* pRet =  component_getFactoryHelper(
-    	pImplName, pServiceManager, pRegistryKey, range::serviceDecl, workbook::serviceDecl, worksheet::serviceDecl, globals::serviceDecl, window::serviceDecl, hyperlink::serviceDecl, application::serviceDecl );
+        	pImplName, pServiceManager, pRegistryKey, range::serviceDecl, workbook::serviceDecl, worksheet::serviceDecl, globals::serviceDecl, window::serviceDecl, hyperlink::serviceDecl, application::serviceDecl );
     if( !pRet )
-        pRet = component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, vbaeventshelper::serviceDecl, textframe::serviceDecl, scripting::serviceDecl );
+        pRet = component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, vbaeventshelper::serviceDecl, textframe::serviceDecl );
 	OSL_TRACE("Ret is 0x%x", pRet);
 	return pRet;
     }
