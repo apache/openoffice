@@ -293,6 +293,41 @@ ScVbaWorkbook::SaveCopyAs( const rtl::OUString& sFileName )
 	xStor->storeToURL( aURL, storeProps );
 }
 
+void SAL_CALL
+ScVbaWorkbook::SaveAs( const css::uno::Any& FileName, const css::uno::Any& FileFormat, const css::uno::Any& Password, const css::uno::Any& WriteResPassword, const css::uno::Any& ReadOnlyRecommended, const css::uno::Any& /*CreateBackup*/ )
+{
+    rtl::OUString aFileName;
+    sal_Bool bHasFileName = ( FileName >>= aFileName );
+    if ( !bHasFileName )
+    {
+        aFileName = getName();
+    }
+    rtl::OUString aURL;
+    osl::FileBase::getFileURLFromSystemPath( aFileName, aURL );
+    uno::Reference< frame::XStorable > xStor( getModel(), uno::UNO_QUERY_THROW );
+
+    sal_Int32 aFileFormat = excel::XlFileFormat::xlExcel9795;
+    if ( FileFormat.hasValue() )
+        FileFormat >>= aFileFormat;
+
+    if ( aFileName.indexOf('.') == -1 )
+    {
+        if ( aFileFormat == excel::XlFileFormat::xlExcel9795 )
+        {
+            aURL = aURL + rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".xls" ) );
+        }
+        else if ( aFileFormat == excel::XlFileFormat::xlCSV )
+        {
+            aURL = aURL + rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".csv" ) );
+        }
+    }
+
+    uno::Sequence< beans::PropertyValue > storeProps(1);
+    storeProps[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "FilterName" ) );
+    storeProps[0].Value <<= rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "MS Excel 97" ) );
+    xStor->storeAsURL( aURL, storeProps );
+}
+
 css::uno::Any SAL_CALL
 ScVbaWorkbook::Styles( const uno::Any& Item )
 {

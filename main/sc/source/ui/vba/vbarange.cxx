@@ -146,6 +146,8 @@
 #include "vbaworksheet.hxx"
 #include "vbavalidation.hxx"
 #include "vbahyperlinks.hxx"
+#include "vbaquerytable.hxx"
+#include "vbaformatconditions.hxx"
 
 #include "tabvwsh.hxx"
 #include "rangelst.hxx"
@@ -2133,7 +2135,32 @@ ScVbaRange::Cells( const uno::Any &nRowIndex, const uno::Any &nColumnIndex )
 
     // Performance: Use a common helper method for ScVbaRange::Cells and ScVbaWorksheet::Cells,
     // instead of creating a new ScVbaRange object in often-called ScVbaWorksheet::Cells
-    return CellsHelper( mxParent, mxContext, mxRange, nRowIndex, nColumnIndex );
+        return CellsHelper( mxParent, mxContext, mxRange, nRowIndex, nColumnIndex );
+}
+
+uno::Reference< ooo::vba::excel::XQueryTable >
+ScVbaRange::getQueryTable()
+{
+    // Return an instance of the QueryTable associated with this range
+    // The ScVbaQueryTable constructor takes parent, context, document, and range pointer
+    ScDocument* pDocument = getScDocument();
+    uno::Reference< ooo::vba::excel::XQueryTable > xQueryTable(
+        new ScVbaQueryTable( mxParent, mxContext, pDocument, this ) );
+    return xQueryTable;
+}
+
+uno::Reference< ooo::vba::excel::XFormatConditions >
+ScVbaRange::getFormatConditions()
+{
+    uno::Reference< beans::XPropertySet > xProps( mxRange, uno::UNO_QUERY_THROW );
+    uno::Reference< css::sheet::XSheetConditionalEntries > xEntries(
+        xProps->getPropertyValue(
+            rtl::OUString::createFromAscii( "ConditionalFormat" ) ),
+        uno::UNO_QUERY );
+    uno::Reference< frame::XModel > xModel( getUnoModel() );
+    uno::Reference< ooo::vba::excel::XFormatConditions > xFormatConditions(
+        new ScVbaFormatConditions( mxParent, mxContext, xEntries, xModel ) );
+    return xFormatConditions;
 }
 
 // static

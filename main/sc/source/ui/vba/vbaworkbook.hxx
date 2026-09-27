@@ -65,6 +65,7 @@ public:
 	virtual css::uno::Any SAL_CALL Colors( const css::uno::Any& Index );
 	virtual ::sal_Int32 SAL_CALL FileFormat(  );
 	virtual void SAL_CALL SaveCopyAs( const rtl::OUString& Filename );
+	virtual void SAL_CALL SaveAs( const css::uno::Any& FileName, const css::uno::Any& FileFormat, const css::uno::Any& Password, const css::uno::Any& WriteResPassword, const css::uno::Any& ReadOnlyRecommended, const css::uno::Any& CreateBackup );
     // code name
     virtual ::rtl::OUString SAL_CALL getCodeName();
 
