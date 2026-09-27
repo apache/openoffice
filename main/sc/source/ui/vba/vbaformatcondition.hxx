@@ -54,6 +54,8 @@ public:
 	virtual ::sal_Int32 SAL_CALL Type(  );
 	virtual ::sal_Int32 Operator( sal_Bool  );
 	virtual ::sal_Int32 SAL_CALL Operator(  );
+	virtual rtl::OUString SAL_CALL Formula1(  );
+	virtual rtl::OUString SAL_CALL Formula2(  );
 	virtual void setFormula1( const css::uno::Any& _aFormula1);
 	virtual void setFormula2( const css::uno::Any& _aFormula2);
 	virtual css::uno::Reference< ::ooo::vba::excel::XInterior > SAL_CALL Interior(  );

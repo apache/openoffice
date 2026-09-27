@@ -292,5 +292,15 @@ ScVbaFormatConditions::getServiceNames()
 		aServiceNames.realloc( 1 );
 		aServiceNames[ 0 ] = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ooo.vba.excel.FormatConditions" ) );
 	}
-	return aServiceNames;
+		return aServiceNames;
+}
+
+namespace formatconditions
+{
+namespace sdecl = comphelper::service_decl;
+sdecl::vba_service_class_<ScVbaFormatConditions, sdecl::with_args<true> > serviceImpl;
+extern sdecl::ServiceDecl const serviceDecl(
+    serviceImpl,
+    "ScVbaFormatConditions",
+    "ooo.vba.excel.FormatConditions" );
 }

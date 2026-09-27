@@ -70,6 +70,30 @@ namespace textframe
 {
 extern sdecl::ServiceDecl const serviceDecl;
 }
+namespace filedialog
+{
+extern sdecl::ServiceDecl const serviceDecl;
+}
+namespace filesearch
+{
+extern sdecl::ServiceDecl const serviceDecl;
+}
+namespace foundfiles
+{
+extern sdecl::ServiceDecl const serviceDecl;
+}
+namespace formatconditions
+{
+extern sdecl::ServiceDecl const serviceDecl;
+}
+namespace formatcondition
+{
+extern sdecl::ServiceDecl const serviceDecl;
+}
+namespace querytable
+{
+extern sdecl::ServiceDecl const serviceDecl;
+}
 
 extern "C"
 {
@@ -85,10 +109,12 @@ extern "C"
         registry::XRegistryKey * pRegistryKey )
     {
 		OSL_TRACE("In component_getFactory for %s", pImplName );
-	void* pRet =  component_getFactoryHelper(
+    void* pRet =  component_getFactoryHelper(
         	pImplName, pServiceManager, pRegistryKey, range::serviceDecl, workbook::serviceDecl, worksheet::serviceDecl, globals::serviceDecl, window::serviceDecl, hyperlink::serviceDecl, application::serviceDecl );
     if( !pRet )
         pRet = component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, vbaeventshelper::serviceDecl, textframe::serviceDecl );
+    if( !pRet )
+        pRet = component_getFactoryHelper( pImplName, pServiceManager, pRegistryKey, filedialog::serviceDecl, filesearch::serviceDecl, foundfiles::serviceDecl, querytable::serviceDecl, formatconditions::serviceDecl, formatcondition::serviceDecl );
 	OSL_TRACE("Ret is 0x%x", pRet);
 	return pRet;
     }

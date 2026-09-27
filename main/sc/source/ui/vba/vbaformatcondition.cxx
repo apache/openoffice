@@ -139,6 +139,18 @@ ScVbaFormatCondition::Operator(  )
 	return ScVbaFormatCondition_BASE::Operator( sal_True );
 }
 
+rtl::OUString SAL_CALL
+ScVbaFormatCondition::Formula1()
+{
+    return mxSheetCondition->getFormula1();
+}
+
+rtl::OUString SAL_CALL
+ScVbaFormatCondition::Formula2()
+{
+    return mxSheetCondition->getFormula2();
+}
+
 void
 ScVbaFormatCondition::notifyRange()
 {
@@ -168,5 +180,15 @@ ScVbaFormatCondition::getServiceNames()
 		aServiceNames.realloc( 1 );
 		aServiceNames[ 0 ] = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ooo.vba.excel.FormatCondition" ) );
 	}
-	return aServiceNames;
+		return aServiceNames;
+}
+
+namespace formatcondition
+{
+namespace sdecl = comphelper::service_decl;
+sdecl::vba_service_class_<ScVbaFormatCondition, sdecl::with_args<true> > serviceImpl;
+extern sdecl::ServiceDecl const serviceDecl(
+    serviceImpl,
+    "ScVbaFormatCondition",
+    "ooo.vba.excel.FormatCondition" );
 }

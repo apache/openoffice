@@ -54,7 +54,13 @@
 #include <vbahelper/vbashape.hxx>
 #include "vbatextboxshape.hxx"
 #include "vbaassistant.hxx"
+#include "vbafiledialog.hxx"
+#include "vbafilesearch.hxx"
 #include "sc.hrc"
+#include "global.hxx"
+#include "scmod.hxx"
+#include "docoptio.hxx"
+#include "appoptio.hxx"
 
 #include <osl/file.hxx>
 #include <rtl/instance.hxx>
@@ -1154,10 +1160,87 @@ uno::Any SAL_CALL ScVbaApplication::GetSaveAsFilename(
     return xFilePicker->execute();
 }
 
+uno::Reference< ooo::vba::XFileDialog > SAL_CALL
+ScVbaApplication::FileDialog( sal_Int32 nFileDialogType )
+{
+    uno::Reference< frame::XModel > xModel( getThisExcelDoc( mxContext ), uno::UNO_SET_THROW );
+    uno::Reference< ooo::vba::XFileDialog > xFileDialog(
+        new ScVbaFileDialog( this, mxContext, xModel ) );
+    xFileDialog->setMsoFileDialogType( nFileDialogType );
+    return xFileDialog;
+}
+
+uno::Reference< ooo::vba::XFileSearch > SAL_CALL
+ScVbaApplication::getFileSearch()
+{
+    uno::Reference< ooo::vba::XFileSearch > xFileSearch(
+        new ScVbaFileSearch( this, this, mxContext ) );
+    return xFileSearch;
+}
+
 uno::Reference< frame::XModel >
 ScVbaApplication::getCurrentDocument()
 {
     return getCurrentExcelDoc(mxContext);
+}
+
+double SAL_CALL
+ScVbaApplication::CountA( const css::uno::Any& aArg1 )
+{
+    double result = 0;
+    uno::Reference< script::XInvocation > xInvoc( WorksheetFunction(), uno::UNO_QUERY_THROW );
+    if ( xInvoc.is() )
+    {
+        static rtl::OUString FunctionName( RTL_CONSTASCII_USTRINGPARAM("CountA") );
+        uno::Sequence< uno::Any > Params(1);
+        Params[0] = aArg1;
+        uno::Sequence< sal_Int16 > OutParamIndex;
+        uno::Sequence< uno::Any > OutParam;
+        xInvoc->invoke( FunctionName, Params, OutParamIndex, OutParam ) >>= result;
+    }
+    return result;
+}
+
+uno::Any SAL_CALL
+ScVbaApplication::MenuBars( const css::uno::Any& aIndex )
+{
+    return uno::Any();
+}
+
+uno::Any SAL_CALL
+ScVbaApplication::International( sal_Int32 nIndex )
+{
+    return uno::Any();
+}
+
+void SAL_CALL
+ScVbaApplication::Undo()
+{
+}
+
+double SAL_CALL
+ScVbaApplication::InchesToPoints( double nInches )
+{
+    return nInches * 72.0;
+}
+
+sal_Int32 SAL_CALL ScVbaApplication::getSheetsInNewWorkbook()
+{
+    const ScAppOptions& rAppOpt = SC_MOD()->GetAppOptions();
+    return rAppOpt.GetTabCountInNewSpreadsheet();
+}
+
+void SAL_CALL ScVbaApplication::setSheetsInNewWorkbook( sal_Int32 nSheets )
+{
+    if ( nSheets < 1 || nSheets > MAXTAB )
+    {
+        DebugHelper::exception( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("The number must be between 1 and 255") ), uno::Exception(), SbERR_METHOD_FAILED, rtl::OUString() );
+    }
+    else
+    {
+        ScAppOptions& rAppOpt = const_cast< ScAppOptions& >(SC_MOD()->GetAppOptions());
+        rAppOpt.SetTabCountInNewSpreadsheet( nSheets );
+    }
 }
 
 rtl::OUString&

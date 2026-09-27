@@ -27,6 +27,8 @@
 #include <com/sun/star/script/XInvocation.idl>
 #include <ooo/vba/XHelperInterface.idl>
 #include <ooo/vba/XAssistant.idl>
+#include <ooo/vba/XFileDialog.idl>
+#include <ooo/vba/XFileSearch.idl>
 
 module ooo {  module vba {  module excel {
 
@@ -37,6 +39,8 @@ interface XWorksheets;
 interface XWorksheetFunction;
 interface XWindow;
 interface XWorksheet;
+interface ::ooo::vba::XFileDialog;
+interface ::ooo::vba::XFileSearch;
 
 interface XApplication
 {
@@ -66,6 +70,9 @@ interface XApplication
     [attribute, readonly] string TemplatesPath;
     [attribute, readonly] string PathSeparator;
 
+    ::ooo::vba::XFileDialog FileDialog( [in] long MsoFileDialogType );
+    [attribute, readonly] ::ooo::vba::XFileSearch FileSearch;
+
     //any CommandBars( [in] any Index );
 	any Workbooks( [in] any Index );
 	any Worksheets( [in] any Index );
@@ -88,6 +95,13 @@ interface XApplication
 	any Caller( [in] any Index );
 	any GetOpenFilename( [in] any FileFilter, [in] any FilterIndex, [in] any Title, [in] any ButtonText, [in] any MultiSelect );
 	any GetSaveAsFilename( [in] any InitialFileName, [in] any FileFilter, [in] any FilterIndex, [in] any Title, [in] any ButtonText );
+	double CountA( [in] any arg1 );
+	any MenuBars( [in] any aIndex );
+	any International( [in] long Index );
+	void Undo();
+	double InchesToPoints( [in] double Inches );
+	void setSheetsInNewWorkbook( [in] long SheetsInNewWorkbook );
+	long getSheetsInNewWorkbook();
 };
 
 }; }; };

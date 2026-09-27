@@ -27,6 +27,8 @@
 #include <com/sun/star/container/XEnumerationAccess.hpp>
 
 #include <ooo/vba/excel/XRange.hpp>
+#include <ooo/vba/excel/XQueryTable.hpp>
+#include <ooo/vba/excel/XFormatConditions.hpp>
 #include <com/sun/star/table/XCellRange.hpp>
 #include <ooo/vba/excel/XFont.hpp>
 #include <ooo/vba/excel/XComment.hpp>
@@ -266,6 +268,8 @@ public:
 	virtual void SAL_CALL UnMerge(  );
 	virtual css::uno::Any SAL_CALL getStyle();
 	virtual void SAL_CALL setStyle( const css::uno::Any& _style );
+	virtual css::uno::Reference< ooo::vba::excel::XFormatConditions > SAL_CALL getFormatConditions();
+	virtual css::uno::Reference< ooo::vba::excel::XQueryTable > SAL_CALL getQueryTable();
 	virtual css::uno::Reference< ov::excel::XRange > SAL_CALL Next();
 	virtual css::uno::Reference< ov::excel::XRange > SAL_CALL Previous();
 	virtual void SAL_CALL RemoveSubtotal(  );

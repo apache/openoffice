@@ -26,6 +26,8 @@
 
 #include <ooo/vba/excel/XWorksheetFunction.hpp>
 #include <ooo/vba/excel/XApplication.hpp>
+#include <ooo/vba/XFileDialog.hpp>
+#include <ooo/vba/XFileSearch.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
 
 #include <vbahelper/vbahelperinterface.hxx>
@@ -118,6 +120,18 @@ public:
 	virtual css::uno::Any SAL_CALL Caller( const css::uno::Any& aIndex );
 	virtual css::uno::Any SAL_CALL GetOpenFilename( const css::uno::Any& rFileFilter, const css::uno::Any& rFilterIndex, const css::uno::Any& rTitle, const css::uno::Any& rButtonText, const css::uno::Any& rMultiSelect );
 	virtual css::uno::Any SAL_CALL GetSaveAsFilename( const css::uno::Any& rInitialFileName, const css::uno::Any& rFileFilter, const css::uno::Any& rFilterIndex, const css::uno::Any& rTitle, const css::uno::Any& rButtonText );
+
+	virtual css::uno::Reference< ooo::vba::XFileDialog > SAL_CALL FileDialog( sal_Int32 nFileDialogType );
+	virtual css::uno::Reference< ooo::vba::XFileSearch > SAL_CALL getFileSearch();
+
+	virtual double SAL_CALL CountA( const css::uno::Any& aArg1 );
+	virtual css::uno::Any SAL_CALL MenuBars( const css::uno::Any& aIndex );
+	virtual css::uno::Any SAL_CALL International( sal_Int32 nIndex );
+	virtual void SAL_CALL Undo();
+	virtual double SAL_CALL InchesToPoints( double nInches );
+	virtual void SAL_CALL setSheetsInNewWorkbook( sal_Int32 nSheets );
+	virtual sal_Int32 SAL_CALL getSheetsInNewWorkbook();
+
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

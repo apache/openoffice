@@ -74,6 +74,10 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,oovbaapi,\
 	oovbaapi/ooo/vba/XDocumentsBase \
 	oovbaapi/ooo/vba/XErrObject \
 	oovbaapi/ooo/vba/XExecutableDialog \
+	oovbaapi/ooo/vba/XFileDialog \
+	oovbaapi/ooo/vba/XFileDialogSelectedItems \
+	oovbaapi/ooo/vba/XFileSearch \
+	oovbaapi/ooo/vba/XFoundFiles \
 	oovbaapi/ooo/vba/XFontBase \
 	oovbaapi/ooo/vba/XGlobalsBase \
 	oovbaapi/ooo/vba/XHelperInterface \
@@ -120,6 +124,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,oovbaapi,\
 	oovbaapi/ooo/vba/excel/XPivotCache \
 	oovbaapi/ooo/vba/excel/XPivotTable \
 	oovbaapi/ooo/vba/excel/XPivotTables \
+	oovbaapi/ooo/vba/excel/XQueryTable \
 	oovbaapi/ooo/vba/excel/XRange \
 	oovbaapi/ooo/vba/excel/XSeries \
 	oovbaapi/ooo/vba/excel/XSeriesCollection \
