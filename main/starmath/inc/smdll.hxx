@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef SMDLL_HXX
 #define SMDLL_HXX
 
@@ -33,13 +32,15 @@ class SfxFilter;
 
 class SmDLL
 {
-    static sal_Bool bInitialized;
+	static sal_Bool bInitialized;
 public:
 	static void Init();
 	static void Exit();
 
 	static sal_uLong DetectFilter( SfxMedium& rMedium, const SfxFilter **ppFilter,
-							   SfxFilterFlags nMust, SfxFilterFlags nDont );
+								SfxFilterFlags nMust, SfxFilterFlags nDont );
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
