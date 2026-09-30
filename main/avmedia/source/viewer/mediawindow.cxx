@@ -526,17 +526,14 @@ uno::Reference< graphic::XGraphic > MediaWindow::grabFrame( const ::rtl::OUStrin
                                                             bool bAllowToCreateReplacementGraphic,
                                                             double fMediaTime )
 {
-    uno::Reference< media::XPlayer >    xPlayer;
+    // createPlayer() applies the shared policy (mayLoadDocumentReference): a
+    // relative reference or a local file is grabbed without asking. This runs
+    // while a view paints, so it must not put a question to the user for the
+    // ordinary case; anything else has been put to the document already, when
+    // the media object got its URL (see SdrMediaObj).
+    uno::Reference< media::XPlayer >    xPlayer( createPlayer( rURL ) );
     uno::Reference< graphic::XGraphic > xRet;
     ::std::auto_ptr< Graphic >          apGraphic;
-
-    // Stricter than mayLoadDocumentReference: a grabbed frame is drawn into the
-    // document and exported with it, so any reference that carries a scheme is
-    // put to the document, a local file included. A relative reference is the
-    // document's own content and is grabbed as before.
-    if( !::svt::linkpolicy::isAbsoluteUrl( rURL )
-        || ::svt::linkpolicy::mayFollowDocumentLink( rURL ) )
-        xPlayer = createPlayer( rURL );
 
     if( xPlayer.is() )
     {
