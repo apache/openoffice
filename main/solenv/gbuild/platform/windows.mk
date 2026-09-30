@@ -287,6 +287,10 @@ ifeq ($(gb_DEBUGGING),TRUE)
 gb_LinkTarget_LDFLAGS += -DEBUG
 endif
 
+ifeq ($(ENABLE_SANITIZER),TRUE)
+$(eval $(call gb_Output_error,Sanitizer unsupported under OS $(OS)))
+endif
+
 # this does not use CFLAGS so it is not overridable
 ifneq ($(ENABLE_CRASHDUMP),)
 gb_CFLAGS+=-Zi
