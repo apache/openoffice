@@ -30,7 +30,48 @@
 #include "svx/svdglob.hxx"
 #include "svx/svdstr.hrc"
 #include <svx/sdr/contact/viewcontactofsdrmediaobj.hxx>
+#include <svx/svdmodel.hxx>
 #include <avmedia/mediawindow.hxx>
+#include <svtools/linkpolicy.hxx>
+
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
+#include <com/sun/star/uno/RuntimeException.hpp>
+
+using namespace ::com::sun::star;
+
+namespace {
+
+// Asks the document that holds the media object whether rURL may be loaded.
+// The document's LinkManager keeps the answer, so the checks that avmedia makes
+// later -- some of them while a view paints -- get it without a question.
+// A reference mayLoadDocumentReference() accepts without asking (relative, or
+// a local file) needs nothing; nor does a model without a document behind it.
+void lcl_authorizeURL( SdrModel* pModel, const ::rtl::OUString& rURL )
+{
+	if( !pModel || !pModel->GetPersist() || rURL.getLength() == 0 )
+		return;
+
+	if( !::svt::linkpolicy::isAbsoluteUrl( rURL ) )
+	{
+		if( !rURL.matchIgnoreAsciiCaseAsciiL( RTL_CONSTASCII_STRINGPARAM( "\\\\" ) )
+			&& !rURL.matchIgnoreAsciiCaseAsciiL( RTL_CONSTASCII_STRINGPARAM( "//" ) ) )
+			return;
+	}
+	else if( ::svt::linkpolicy::isLocalFileUrl( rURL ) )
+		return;
+
+	try
+	{
+		const uno::Reference< document::XLinkAuthorizer > xAuthorizer( pModel->getUnoModel(), uno::UNO_QUERY );
+		if( xAuthorizer.is() )
+			xAuthorizer->authorizeLinks( rURL );
+	}
+	catch( const uno::RuntimeException& )
+	{
+	}
+}
+
+}
 
 // ---------------
 // - SdrMediaObj -
@@ -137,7 +178,11 @@ void SdrMediaObj::operator=(const SdrObject& rObj)
 	if( rObj.ISA( SdrMediaObj ) )
     {
         const SdrMediaObj& rMediaObj = static_cast< const SdrMediaObj& >( rObj );
-		
+
+        // A copy is not a new reference from document content: take the URL
+        // first, so mediaPropertiesChanged() sees no change and asks nobody
+        // (a copy to the clipboard would otherwise put the question again).
+        maMediaProperties.setURL( rMediaObj.getURL() );
         setMediaProperties( rMediaObj.getMediaProperties() );
         setGraphic( rMediaObj.mapGraphic.get() );
     }
@@ -265,6 +310,12 @@ void SdrMediaObj::mediaPropertiesChanged( const ::avmedia::MediaItem& rNewProper
     {
         setGraphic();
     	maMediaProperties.setURL( rNewProperties.getURL() );
+
+		// The URL is set on insertion, while a document loads, and through
+		// the API -- never while painting. Put the question now, so that the
+		// checks made later while a view paints (the player and the frame
+		// grab in avmedia) find the document's answer already given.
+		lcl_authorizeURL( GetModel(), getURL() );
     }
 	
 	if( AVMEDIA_SETMASK_LOOP & nMaskSet )
