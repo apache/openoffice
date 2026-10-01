@@ -877,13 +877,13 @@ public class utils {
      */
     public static String replaceAll13(String originalString, String searchString, String replaceString) {
 
-        StringBuffer changeStringBuffer = new StringBuffer(originalString);
+        StringBuilder changeStringBuilder = new StringBuilder(originalString);
         int searchLength = searchString.length();
         int replaceLength = replaceString.length();
         int index = originalString.indexOf(searchString);
         while (index != -1) {
-            changeStringBuffer = changeStringBuffer.replace(index, index + searchLength, replaceString);
-            originalString = changeStringBuffer.toString();
+            changeStringBuilder = changeStringBuilder.replace(index, index + searchLength, replaceString);
+            originalString = changeStringBuilder.toString();
             index = originalString.indexOf(searchString, index + replaceLength);
         }
         return originalString;

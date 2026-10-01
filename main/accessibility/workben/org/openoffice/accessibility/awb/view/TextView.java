@@ -252,7 +252,7 @@ public class TextView
         int nMaxDisplayCount = 30;
 
         // build up string
-        StringBuffer aCharacterArray = new StringBuffer();
+        StringBuilder aCharacterArray = new StringBuilder();
         int nIndex = 0;
         try
         {
@@ -281,7 +281,7 @@ public class TextView
         */
     private String GetTextBoundsString ()
     {
-        StringBuffer aBuffer = new StringBuffer ();
+        StringBuilder aBuffer = new StringBuilder ();
         try
         {
             // Iterate over all characters in the text.
@@ -340,7 +340,7 @@ public class TextView
         {
             aSegment = GetTextSegment (nIndex, nTextType, nWhere);
             DefaultMutableTreeNode aSegmentNode = new DefaultMutableTreeNode (
-                new StringBuffer (
+                new StringBuilder (
                     Integer.toString (nIndex) + " -> "
                     + Integer.toString (aSegment.SegmentStart) + " - "
                     + Integer.toString (aSegment.SegmentEnd) + " : "

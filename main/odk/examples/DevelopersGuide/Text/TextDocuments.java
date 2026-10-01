@@ -193,7 +193,7 @@ public class TextDocuments {
 
         // load template with User fields and bookmark
         java.io.File sourceFile = new java.io.File("TextTemplateWithUserFields.odt");
-        StringBuffer sTemplateFileUrl = new StringBuffer("file:///");
+        StringBuilder sTemplateFileUrl = new StringBuilder("file:///");
         sTemplateFileUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
 
         XComponent xTemplateComponent =
@@ -405,7 +405,7 @@ public class TextDocuments {
         PropertyValue[] loadProps = new PropertyValue[0];
 
         java.io.File sourceFile = new java.io.File("PrintDemo.odt");
-        StringBuffer sLoadFileUrl = new StringBuffer("file:///");
+        StringBuilder sLoadFileUrl = new StringBuilder("file:///");
         sLoadFileUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
 
         XComponent xDoc = xComponentLoader.loadComponentFromURL(
@@ -413,7 +413,7 @@ public class TextDocuments {
 
         if ( xDoc != null ) {
             sourceFile = new java.io.File(sOutputDir);
-            StringBuffer sStoreFileUrl = new StringBuffer();
+            StringBuilder sStoreFileUrl = new StringBuilder();
             sStoreFileUrl.append(sourceFile.toURL().toString());
             sStoreFileUrl.append("somepopularfileformat.doc");
 

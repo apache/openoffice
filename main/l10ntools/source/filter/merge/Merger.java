@@ -185,7 +185,7 @@ public class Merger
     public synchronized void merge()
         throws java.lang.Exception
     {
-        java.lang.StringBuffer sBuffer  = new java.lang.StringBuffer(1000000);
+        java.lang.StringBuilder sBuffer  = new java.lang.StringBuilder(1000000);
         java.lang.String       sPackage = m_aCfg.getString(PROP_PKG);
 
         m_aLog.setGlobalInfo("create package \""+sPackage+"\" ...");
@@ -288,7 +288,7 @@ public class Merger
                               java.lang.String       sSetName   ,
                               java.util.Vector       lFragments ,
                               int                    nPrettyTabs,
-                              java.lang.StringBuffer sBuffer    )
+                              java.lang.StringBuilder sBuffer    )
         throws java.lang.Exception
     {
         if (lFragments.size()<1)

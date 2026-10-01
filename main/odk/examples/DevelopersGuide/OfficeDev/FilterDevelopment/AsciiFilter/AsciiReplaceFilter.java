@@ -424,7 +424,7 @@ public class AsciiReplaceFilter
 
             try
             {
-                StringBuffer sBuffer  = new StringBuffer(100000);
+                StringBuilder sBuffer  = new StringBuilder(100000);
                 byte[][]     lData    = new byte[1][];
                 int          nRead    = aOptions.m_xInput.readBytes( lData, 4096 );
 
@@ -556,7 +556,7 @@ public class AsciiReplaceFilter
 
             try
             {
-                StringBuffer sBuffer = new StringBuffer(xText.getString());
+                StringBuilder sBuffer = new StringBuilder(xText.getString());
                 String       sText   = implts_replace(sBuffer,aOptions);
 
                 measure("get text from model");
@@ -595,11 +595,11 @@ public class AsciiReplaceFilter
         }
 
         /**
-         * helper function to convert the used StringBuffer into a String value.
+         * helper function to convert the used StringBuilder into a String value.
          * And we use this chance to have a look on optional filter options
          * which can invite replacing of strings.
          */
-        private String implts_replace( StringBuffer rBuffer, FilterOptions aOptions )
+        private String implts_replace( StringBuilder rBuffer, FilterOptions aOptions )
         {
             // replace complete strings first
             // Because it's easier on a buffer than on a string

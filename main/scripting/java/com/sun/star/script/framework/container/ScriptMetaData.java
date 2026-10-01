@@ -321,7 +321,7 @@ public class ScriptMetaData extends ScriptEntry implements Cloneable {
 
                 if ( sourceUrl != null )
                 {
-                    StringBuffer buf = new StringBuffer();
+                    StringBuilder buf = new StringBuilder();
                     InputStream in = sourceUrl.openStream();
 
                     byte[] contents = new byte[1024];

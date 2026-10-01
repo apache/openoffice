@@ -121,7 +121,7 @@ public class NumberNode<T extends Comparable<T>>
     @Override
     public String toString ()
     {
-        final StringBuffer sMessage = new StringBuffer();
+        final StringBuilder sMessage = new StringBuilder();
         sMessage.append(meType);
         if (maEnumeration != null)
         {

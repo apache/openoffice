@@ -66,7 +66,7 @@ public class PathUtils {
     }
     static  public String make_url( String baseUrl, String url )
     {
-        StringBuffer buff = new StringBuffer( baseUrl.length() + url.length() );        buff.append( baseUrl );
+        StringBuilder buff = new StringBuilder( baseUrl.length() + url.length() );        buff.append( baseUrl );
         StringTokenizer t = new StringTokenizer( url, "/");
         while ( t.hasMoreElements() )
         {

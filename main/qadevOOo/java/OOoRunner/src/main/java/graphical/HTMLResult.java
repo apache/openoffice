@@ -133,7 +133,7 @@ public class HTMLResult
  */
     private String getHREF(String _sHREF, String _sPathInfo)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             a.append("<a href=\"");
             a.append(_sHREF);
             a.append("\">");
@@ -149,7 +149,7 @@ public class HTMLResult
      */
     private String tableDataCell(String _sValue)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             a.append("<td>");
             a.append(_sValue);
             a.append("</td>");
@@ -163,7 +163,7 @@ public class HTMLResult
      */
     private String tableHeaderCell(String _sValue)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             a.append("<th>");
             a.append(_sValue);
             a.append("</th>");
@@ -197,7 +197,7 @@ public class HTMLResult
 // -----------------------------------------------------------------------------
     private String stronghtml(String _sValue)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             a.append("<strong>");
             a.append(_sValue);
             a.append("</strong>");

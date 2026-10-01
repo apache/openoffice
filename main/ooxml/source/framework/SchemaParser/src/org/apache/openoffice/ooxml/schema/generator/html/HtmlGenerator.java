@@ -594,7 +594,7 @@ public class HtmlGenerator
         if ( ! aIterator.hasNext())
             return "";
 
-        final StringBuffer aBuffer = new StringBuffer(aIterator.next());
+        final StringBuilder aBuffer = new StringBuilder(aIterator.next());
         while (aIterator.hasNext())
         {
             aBuffer.append(sSeparator);

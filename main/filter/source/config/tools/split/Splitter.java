@@ -211,7 +211,7 @@ public class Splitter
             (nContentHandlers != 0)
            )
         {
-            java.lang.StringBuffer sStatistic = new java.lang.StringBuffer(256);
+            java.lang.StringBuilder sStatistic = new java.lang.StringBuilder(256);
             sStatistic.append("some cache items seems to be not transformed:\n");
             sStatistic.append(nTypes          +" unhandled types\n"          );
             sStatistic.append(nFilters        +" unhandled filters\n"        );

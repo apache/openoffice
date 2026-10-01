@@ -174,7 +174,7 @@ public class PageContext
             return getFooter();
         }
 
-        final StringBuffer b = new StringBuffer();
+        final StringBuilder b = new StringBuilder();
 
         PageContext pc = this;
         while (pc != null)
@@ -201,7 +201,7 @@ public class PageContext
             return getHeader();
         }
 
-        final StringBuffer b = new StringBuffer();
+        final StringBuilder b = new StringBuilder();
         b.append(parent.getPageHeaderContent());
         b.append(getHeader());
 

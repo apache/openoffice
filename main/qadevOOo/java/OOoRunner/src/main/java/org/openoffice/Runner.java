@@ -78,7 +78,7 @@ public class Runner
         long sec = (_nTime / 1000) % 60;
         long min = (_nTime / (60 * 1000)) % 60;
         long hour = _nTime / (60 * 60 * 1000);
-        StringBuffer aTime = new StringBuffer();
+        StringBuilder aTime = new StringBuilder();
         aTime.append(helper.StringHelper.createValueString((int) hour, 2)).
                 append(':').
                 append(helper.StringHelper.createValueString((int) min, 2)).

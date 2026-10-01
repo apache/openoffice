@@ -170,7 +170,7 @@ public class Helper {
 			File file = new File( systemPath );
             String url = file.toURL().toString();
             if ( url.charAt( 6 ) != '/' ) { // file:/xxx vs. file:///xxxx
-                StringBuffer buf1 = new StringBuffer( "file:///" );
+                StringBuilder buf1 = new StringBuilder( "file:///" );
                 buf1.append( url.substring( 6 ) );
                 url = buf1.toString();
             }
@@ -187,7 +187,7 @@ public class Helper {
     {
         // get url of current dir.
         String url = getAbsoluteFileURLFromSystemPath( "" );
-		StringBuffer buf = new StringBuffer( url );
+		StringBuilder buf = new StringBuilder( url );
         if ( !url.endsWith( File.separator ) )
             buf.append( File.separator );
 		buf.append( relativeURL );
@@ -198,7 +198,7 @@ public class Helper {
     {
         try
         {
-            StringBuffer buf = new StringBuffer();
+            StringBuilder buf = new StringBuilder();
             if ( workDir != null && workDir.length() > 0 ) {
                 buf.append( workDir );
                 buf.append( File.separator );
@@ -208,7 +208,7 @@ public class Helper {
             File file = new File( buf.toString() );
             String url = file.toURL().toString();
             if ( url.charAt( 6 ) != '/' ) { // file:/xxx vs. file:///xxxx
-                StringBuffer buf1 = new StringBuffer( "file:///" );
+                StringBuilder buf1 = new StringBuilder( "file:///" );
                 buf1.append( url.substring( 6 ) );
                 url = buf1.toString();
             }

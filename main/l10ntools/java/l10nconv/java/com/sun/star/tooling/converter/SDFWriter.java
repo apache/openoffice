@@ -99,7 +99,7 @@ public class SDFWriter  extends DataWriter {
      */
     public final void writeData() throws java.io.IOException {
 
-        StringBuffer buffer=new StringBuffer("");
+        StringBuilder buffer=new StringBuilder("");
 
         // get the values of the found fields
         //create the two sdf lines

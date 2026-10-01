@@ -279,7 +279,7 @@ public final class DocumentSerializerImpl
 
                     case Node.ELEMENT_NODE:
                         if (child.getNodeName().equals(TAG_SPACE)) {
-                            StringBuffer sb = new StringBuffer("");
+                            StringBuilder sb = new StringBuilder("");
                             int count = 1;
 
                             NamedNodeMap map = child.getAttributes();

@@ -87,7 +87,7 @@ public class WeakBase_Test
         // byte 0 - 3 contain hashcode and the remaining bytes represent the classname
         byte [] ar= comp.getImplementationId();
 
-        StringBuffer buff= new StringBuffer();
+        StringBuilder buff= new StringBuilder();
         for (int c= 0; c < ar.length - 4; c++){
             buff.append((char) ar[4 + c]);
 //            buff.append(" ");

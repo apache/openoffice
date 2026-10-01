@@ -281,7 +281,7 @@ public class FileUtil {
 	}
 
 	public static String readStreamAsString(InputStream inputStream, String charsetName) {
-		StringBuffer strBuffer = new StringBuffer(10240);
+		StringBuilder strBuffer = new StringBuilder(10240);
 		BufferedReader reader = null;
 		try {
 			reader = new BufferedReader(charsetName == null ? new InputStreamReader(inputStream) : new InputStreamReader(inputStream, charsetName));

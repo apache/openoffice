@@ -26,14 +26,14 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 /**
- * Write all logs into a java.io.PrintWriter, i.e. a StringBuffer.
+ * Write all logs into a java.io.PrintWriter, i.e. a StringBuilder.
  * Log is gathered there.
  */
 public class InternalLogWriter extends PrintWriter
                                             implements share.LogWriter {
     /** log active **/
     boolean active;
-    /** write all output to a StringBuffer **/
+    /** write all output to a StringBuilder **/
     static StringWriter writer = new StringWriter();
 
     /**
@@ -56,7 +56,7 @@ public class InternalLogWriter extends PrintWriter
     }
 
     /**
-     * Method to print a line that is added to the StringBuffer.
+     * Method to print a line that is added to the StringBuilder.
      * @param msg The message that is printed.
      */
     public void println(String msg) {
@@ -65,7 +65,7 @@ public class InternalLogWriter extends PrintWriter
     }
 
     /**
-     * Method to print to the StringBuffer.
+     * Method to print to the StringBuilder.
      * @param msg The message that is printed.
      */
     public void print(String msg) {
@@ -76,7 +76,7 @@ public class InternalLogWriter extends PrintWriter
 
     /**
      * Is used to sum up the information.
-     * The summary is also added to the StringBuffer.
+     * The summary is also added to the StringBuilder.
      * @param entry The description entry.
      * @return True, if a summary could be created.
      */
@@ -99,9 +99,9 @@ public class InternalLogWriter extends PrintWriter
 
     /**
      * Return all the written stuff.
-     * @return All that was written to the StringBuffer with the
+     * @return All that was written to the StringBuilder with the
      * 'println()', 'print()' and 'summarize()' methods.
-     * The StringBuffer is emptied afterwards.
+     * The StringBuilder is emptied afterwards.
      **/
     public String getLog() {
         String message = writer.getBuffer().toString();

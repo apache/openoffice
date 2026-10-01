@@ -211,9 +211,9 @@ public class XLIFFWriter extends DataWriter {
 	 */
 	private void writeTransUnit() throws IOException, DirtyTagWrapper.TagWrapperException {
 		try{
-            StringBuffer writeBuffer = new StringBuffer(1000);
+            StringBuilder writeBuffer = new StringBuilder(1000);
 
-    		StringBuffer allLinesEnd = new StringBuffer(200);
+    		StringBuilder allLinesEnd = new StringBuilder(200);
     		String sRessource = "";
     		int parts = 0;
     		if (data == null) {

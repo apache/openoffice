@@ -80,7 +80,7 @@ public class FileHelper
             (sFileURL.startsWith("file://") == false)
           )
         {
-            java.lang.StringBuffer sWorkBuffer = new java.lang.StringBuffer(sFileURL);
+            java.lang.StringBuilder sWorkBuffer = new java.lang.StringBuilder(sFileURL);
             sWorkBuffer.insert(6,"//");
             sFileURL = sWorkBuffer.toString();
         }
@@ -259,7 +259,7 @@ public class FileHelper
         int    nLength = sName.length();
         char[] lBuffer = sName.toCharArray();
 
-        java.lang.StringBuffer sNewName = new java.lang.StringBuffer(nLength);
+        java.lang.StringBuilder sNewName = new java.lang.StringBuilder(nLength);
         for (i=0; i<nLength; ++i)
         {
             char c = lBuffer[i];
@@ -391,7 +391,7 @@ public class FileHelper
      */
     public static void readEncodedBufferFromFile(java.io.File           aFile    ,
                                                  java.lang.String       sEncoding,
-                                                 java.lang.StringBuffer sBuffer  )
+                                                 java.lang.StringBuilder sBuffer  )
         throws java.io.IOException
     {
         if (sEncoding.equals("UTF-8Special"))
@@ -412,7 +412,7 @@ public class FileHelper
     }
 
     //___________________________________________
-    private static void logEncodingData(java.lang.StringBuffer sLog         ,
+    private static void logEncodingData(java.lang.StringBuilder sLog         ,
                                         int                    nUTF8        ,
                                         int                    nByteOrg1    ,
                                         int                    nByteOrg2    ,
@@ -464,7 +464,7 @@ public class FileHelper
 
     //___________________________________________
     public static void readAndCheckUTF8File(java.io.File           aFile  ,
-                                            java.lang.StringBuffer sBuffer)
+                                            java.lang.StringBuilder sBuffer)
         throws java.io.IOException
     {
         java.io.FileInputStream aByteStream     = new java.io.FileInputStream(aFile.getAbsolutePath());
@@ -481,7 +481,7 @@ public class FileHelper
         char                    nUTF8           = 0;
         int                     i               = 0;
         int                     nEncodingType   = 0;
-        java.lang.StringBuffer  sLog            = new java.lang.StringBuffer();
+        java.lang.StringBuilder  sLog            = new java.lang.StringBuilder();
 
         try
         {
@@ -741,7 +741,7 @@ public class FileHelper
     public static void writeEncodedBufferToFile(java.io.File           aFile    ,
                                                 java.lang.String       sEncoding,
                                                 boolean                bAppend  ,
-                                                java.lang.StringBuffer sBuffer  )
+                                                java.lang.StringBuilder sBuffer  )
         throws java.io.IOException
     {
         java.io.FileOutputStream   aByteStream    = new java.io.FileOutputStream(aFile.getAbsolutePath(), bAppend);

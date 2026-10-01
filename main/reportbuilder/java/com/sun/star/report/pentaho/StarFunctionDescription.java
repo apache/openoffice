@@ -141,7 +141,7 @@ public final class StarFunctionDescription extends WeakBase
     public String getSignature()
     {
         final int count = functionDescription.getParameterCount();
-        final StringBuffer signature = new StringBuffer(getName());
+        final StringBuilder signature = new StringBuilder(getName());
         signature.append('(');
         for (int i = 0; i < count; i++)
         {
@@ -184,7 +184,7 @@ public final class StarFunctionDescription extends WeakBase
             throw new com.sun.star.lang.IllegalArgumentException();
         }
 
-        final StringBuffer formula = new StringBuffer(getName());
+        final StringBuilder formula = new StringBuilder(getName());
         formula.append('(');
         for (int i = 0; i < arguments.length; ++i)
         {

@@ -210,9 +210,9 @@ public class SDBCReportData implements DataSource
         return date;
     }
 
-    private static StringBuffer getTimeString(final int hours, final int minutes, final int seconds)
+    private static StringBuilder getTimeString(final int hours, final int minutes, final int seconds)
     {
-        final StringBuffer timeString = new StringBuffer();
+        final StringBuilder timeString = new StringBuilder();
         if (hours < 10)
         {
             timeString.append('0');
@@ -233,11 +233,11 @@ public class SDBCReportData implements DataSource
         return timeString;
     }
 
-    static private StringBuffer getDateString(final int years, final int months, final int days)
+    static private StringBuilder getDateString(final int years, final int months, final int days)
     {
-        final StringBuffer str = new StringBuffer();
+        final StringBuilder str = new StringBuilder();
         str.append(years);
-        final StringBuffer str2 = new StringBuffer("0000");
+        final StringBuilder str2 = new StringBuilder("0000");
         str2.delete(0, str.length());
         str.insert(0, str2);
         str.append('-');
@@ -276,7 +276,7 @@ public class SDBCReportData implements DataSource
         if (obj instanceof DateTime)
         {
             final DateTime unoTs = (DateTime) obj;
-            final StringBuffer str = getDateString(unoTs.Year, unoTs.Month, unoTs.Day);
+            final StringBuilder str = getDateString(unoTs.Year, unoTs.Month, unoTs.Day);
             str.append(' ');
             str.append(getTimeString(unoTs.Hours, unoTs.Minutes, unoTs.Seconds));
             str.append('.');

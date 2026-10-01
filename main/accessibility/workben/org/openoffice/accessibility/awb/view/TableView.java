@@ -24,7 +24,7 @@
 package org.openoffice.accessibility.awb.view;
 
 import java.lang.Integer;
-import java.lang.StringBuffer;
+import java.lang.StringBuilder;
 
 import javax.swing.JLabel;
 
@@ -95,7 +95,7 @@ public class TableView
             maColumnCountLabel.setText (Integer.toString (nColumnCount));
             maCellCountLabel.setText (Integer.toString (nRowCount*nColumnCount));
 
-            StringBuffer sList = new StringBuffer();
+            StringBuilder sList = new StringBuilder();
             int[] aSelected = mxTable.getSelectedAccessibleRows();
             boolean bFirst = true;
             for (int i=0; i<aSelected.length; i++)
@@ -108,7 +108,7 @@ public class TableView
                 sList.append (Integer.toString(aSelected[i]));
             }
             maSelectedRowsLabel.setText (sList.toString());
-            sList = new StringBuffer();
+            sList = new StringBuilder();
             aSelected = mxTable.getSelectedAccessibleColumns();
             bFirst = true;
             for (int i=0; i<aSelected.length; i++)

@@ -123,7 +123,7 @@ public class DBUtil {
 	 */
 	static public void dropTable(final String _name, final boolean _ifExists)
 			throws SQLException {
-		final StringBuffer dropStatement = new StringBuffer("DROP TABLE \"");
+		final StringBuilder dropStatement = new StringBuilder("DROP TABLE \"");
 		dropStatement.append(_name);
 		if (_ifExists) {
 			dropStatement.append("\" IF EXISTS");
@@ -145,7 +145,7 @@ public class DBUtil {
 	 */
 	static public void createTable(String _name, HsqlColumnDescriptor[] _columns)
 			throws SQLException {
-		StringBuffer createStatement = new StringBuffer(
+		StringBuilder createStatement = new StringBuilder(
 				"CREATE CACHED TABLE \"");
 		createStatement.append(_name);
 		createStatement.append("\" ( ");
@@ -187,7 +187,7 @@ public class DBUtil {
 				foreignKeysForTable += "\"" + columns[i].getName() + "\"";
 				foreignKeys.put(foreignTable, foreignKeysForTable);
 
-				final StringBuffer foreignKeyRefsForTable = new StringBuffer(
+				final StringBuilder foreignKeyRefsForTable = new StringBuilder(
 						foreignKeyRefs.containsKey(foreignTable) ? (String) foreignKeyRefs
 								.get(foreignTable) : "");
 				if (foreignKeyRefsForTable.length() > 0) {

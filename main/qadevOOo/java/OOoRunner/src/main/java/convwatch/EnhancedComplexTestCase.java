@@ -49,7 +49,7 @@ public abstract class EnhancedComplexTestCase extends ComplexTestCase
             bBackValue = aHandler.executeSynchronously();
             TimeHelper.waitInSeconds(1, "wait after ProcessHandler.executeSynchronously()");
 
-            StringBuffer aBuffer = new StringBuffer();
+            StringBuilder aBuffer = new StringBuilder();
             aBuffer.append(aHandler.getErrorText()).append(aHandler.getOutputText());
             String sText = aBuffer.toString();
 

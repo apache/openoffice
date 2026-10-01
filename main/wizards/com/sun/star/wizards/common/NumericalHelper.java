@@ -1367,11 +1367,11 @@ public class NumericalHelper
     private static class TransformNumToHex
     {
 
-        private StringBuffer val;
+        private StringBuilder val;
 
         public TransformNumToHex(long number)
         {
-            val = new StringBuffer();
+            val = new StringBuilder();
             transform(number);
         }
 
@@ -1544,7 +1544,7 @@ public class NumericalHelper
         public static String getRomanEquivalent(int n)
                 throws Exception
         {
-            StringBuffer romanNumber = new StringBuffer();
+            StringBuilder romanNumber = new StringBuilder();
             try
             {
                 if (n > MAX_NUMBER || n < MIN_NUMBER)
@@ -1561,7 +1561,7 @@ public class NumericalHelper
                 int symbolIndex = 0;
                 for (int i = number.length() - 1; i >= 0; i--)
                 {
-                    StringBuffer romanDigit = new StringBuffer();
+                    StringBuilder romanDigit = new StringBuilder();
                     int b = (int) number.charAt(i) - ASCII_CODE_0;
                     if (b == FOUR)
                     { // special case IV

@@ -173,7 +173,7 @@ public final class XmlUtil {
         	    break;
         }
 
-        StringBuffer buffer = new StringBuffer("name=\"");
+        StringBuilder buffer = new StringBuilder("name=\"");
         buffer.append(node.getNodeName());
         buffer.append("\"  type=\"");
         buffer.append(str);

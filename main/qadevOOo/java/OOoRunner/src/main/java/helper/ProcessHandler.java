@@ -55,7 +55,7 @@ class Pump extends Thread
 
     private LineNumberReader reader;
     private String pref;
-    private StringBuffer buf = new StringBuffer(256);
+    private StringBuilder buf = new StringBuilder(256);
     private PrintWriter log;
     private boolean bOutput;
 
@@ -104,7 +104,7 @@ class Pump extends Thread
     /**
      * Returns the text collected from input stream.
      */
-    public String getStringBuffer()
+    public String getStringBuilder()
     {
         return buf.toString();
     }
@@ -766,7 +766,7 @@ public class ProcessHandler
         }
         else
         {
-            return stdout.getStringBuffer();
+            return stdout.getStringBuilder();
         }
     }
 
@@ -782,7 +782,7 @@ public class ProcessHandler
         }
         else
         {
-            return stderr.getStringBuffer();
+            return stderr.getStringBuilder();
         }
     }
 

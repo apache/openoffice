@@ -341,7 +341,7 @@ public class AsyncJob extends WeakBase implements XServiceInfo, XAsyncJob
                                            com.sun.star.beans.NamedValue[] lEnvironment  ,
                                            com.sun.star.beans.NamedValue[] lDynamicData )
     {
-        java.lang.StringBuffer sOut = new java.lang.StringBuffer(1024);
+        java.lang.StringBuilder sOut = new java.lang.StringBuilder(1024);
 
         sOut.append("list \"Config\": ");
         if (lGenericConfig==null)

@@ -192,7 +192,7 @@ public class TokenDecoder {
 			Debug.log(Debug.TRACE,"Expected " + len + " bytes. Could only read " + numRead + " bytes.");
 			//throw new IOException("Expected " + len + " bytes. Could only read " + numRead + " bytes.");
 		}
-        StringBuffer outputString = new StringBuffer();
+        StringBuilder outputString = new StringBuilder();
 		outputString.append('"');
 		try {
 			Debug.log(Debug.TRACE,"Using LE encoding");

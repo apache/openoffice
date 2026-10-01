@@ -249,7 +249,7 @@ public class JPropEx
         // -> <path>/<lang>/<more_path>
         if( pathPrefixArg != null && pathPrefixArg.length()>0 && pathPostfixArg != null && pathPostfixArg.length()>0 )
         {
-            path = new StringBuffer().append( pathPrefixArg ).append( "/" ).append( lcLang ).append( "/" ).append( pathPostfixArg ).append( "/" ).toString();
+            path = new StringBuilder().append( pathPrefixArg ).append( "/" ).append( lcLang ).append( "/" ).append( pathPostfixArg ).append( "/" ).toString();
             name += formatFilename( filename , filenameIdx , lang , type );
         }
         //use of -i <one_filename>
@@ -350,21 +350,21 @@ public class JPropEx
                         lang += "_" + langpart2.toUpperCase();
                     else                                            // -> de_DE
                         lang += "_" + langpart1.toUpperCase();
-                    return new StringBuffer().append( filename.substring( filenameIdx , filename.lastIndexOf( "_en_US.properties" ) ) )
+                    return new StringBuilder().append( filename.substring( filenameIdx , filename.lastIndexOf( "_en_US.properties" ) ) )
                                         .append( "_" ).append( lang.replaceAll("-","_") ).append( ".properties" ).toString();
                     // -> de
                 case JAVA_ENUS_TYPE:
                     lang = langpart1.toLowerCase();
                     if( langpart2.length() > 0 )
                         lang += "_" + langpart2.toLowerCase();
-                    return new StringBuffer().append( filename.substring( filenameIdx , filename.lastIndexOf( "_en_us.properties" ) ) )
+                    return new StringBuilder().append( filename.substring( filenameIdx , filename.lastIndexOf( "_en_us.properties" ) ) )
                                         .append( "_" ).append( lang.replaceAll("-","_") ).append( ".properties" ).toString();
                     // -> de
                 case JAVA_TYPE:
                     lang = langpart1.toLowerCase();
                     if( langpart2.length() > 0 )
                         lang += "_" + langpart2.toLowerCase();
-                    return new StringBuffer().append( filename.substring( filenameIdx , filename.lastIndexOf( ".properties" ) ) )
+                    return new StringBuilder().append( filename.substring( filenameIdx , filename.lastIndexOf( ".properties" ) ) )
                                         .append( "_" ).append( lang.replaceAll("-","_") ).append( ".properties" ).toString();
                 default:
                         System.err.println("ERROR: Something is really broken here, l10ntools/java/jprop/java/JPropEx.java :: formatFilename()");

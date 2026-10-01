@@ -342,7 +342,7 @@ public class ParserTablesGenerator
                 {
                     final int nCurrentIndex = nIndex++;
 
-                    final StringBuffer aLine = new StringBuffer();
+                    final StringBuilder aLine = new StringBuilder();
                     aLine.append(String.format(
                         "simple-type %5d %1d %c ",
                         maTypeNameToIdMap.get(aEntry.getKey()),
@@ -395,7 +395,7 @@ public class ParserTablesGenerator
 
 
     private static void AppendStringDescription (
-        final StringBuffer aLine,
+        final StringBuilder aLine,
         final StringNode aType)
     {
         aLine.append("S ");
@@ -432,7 +432,7 @@ public class ParserTablesGenerator
 
 
     private static void AppendNumberDescription (
-        final StringBuffer aLine,
+        final StringBuilder aLine,
         final NumberNode<?> aType)
     {
         aLine.append("N ");
@@ -495,7 +495,7 @@ public class ParserTablesGenerator
 
 
     private static void AppendDateTimeDescription (
-        final StringBuffer aLine,
+        final StringBuilder aLine,
         final DateTimeNode aType)
     {
         aLine.append("D");
@@ -505,7 +505,7 @@ public class ParserTablesGenerator
 
 
     private static void AppendBlobDescription (
-        final StringBuffer aLine,
+        final StringBuilder aLine,
         final BlobNode aType)
     {
         aLine.append("B ");

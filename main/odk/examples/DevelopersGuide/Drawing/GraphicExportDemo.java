@@ -65,7 +65,7 @@ public class GraphicExportDemo
             pPropValues[ 0 ].Value = new Boolean( true );
 
             java.io.File sourceFile = new java.io.File(args[0]);
-            StringBuffer sUrl = new StringBuffer("file:///");
+            StringBuilder sUrl = new StringBuilder("file:///");
             sUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
 
             xComponent = Helper.createDocument( xOfficeContext,

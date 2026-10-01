@@ -59,7 +59,7 @@ public class DocumentLoader {
             String sUrl = args[0];
             if ( sUrl.indexOf("private:") != 0) {
                 java.io.File sourceFile = new java.io.File(args[0]);
-                StringBuffer sbTmp = new StringBuffer("file:///");
+                StringBuilder sbTmp = new StringBuilder("file:///");
                 sbTmp.append(sourceFile.getCanonicalPath().replace('\\', '/'));
                 sUrl = sbTmp.toString();
             }

@@ -55,7 +55,7 @@ public class DocumentPrinter {
                          com.sun.star.frame.XComponentLoader.class, oDesktop);
 
             java.io.File sourceFile = new java.io.File(args[1]);
-            StringBuffer sUrl = new StringBuffer("file:///");
+            StringBuilder sUrl = new StringBuilder("file:///");
             sUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
 
             // Load a Writer document, which will be automatically displayed

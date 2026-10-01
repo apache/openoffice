@@ -78,7 +78,7 @@ class AccessibleRelationHandler
             {
                 AccessibleRelation aRelation = xRelation.getRelation( i );
 
-                StringBuffer aBuffer = new StringBuffer();
+                StringBuilder aBuffer = new StringBuilder();
                 aBuffer.append (NameProvider.getRelationName (aRelation.RelationType));
                 aBuffer.append( ": " );
 

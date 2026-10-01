@@ -187,7 +187,7 @@ public class StreamView
 
     private String GetPackagePathForTreePath (final TreePath aPath)
     {
-        final StringBuffer sPath = new StringBuffer("");
+        final StringBuilder sPath = new StringBuilder("");
         final Object aNodes[] = aPath.getPath();
         for (int nIndex=1; nIndex<aNodes.length; ++nIndex)
         {

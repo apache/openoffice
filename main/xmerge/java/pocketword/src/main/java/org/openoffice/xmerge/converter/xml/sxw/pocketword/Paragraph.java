@@ -172,7 +172,7 @@ class Paragraph implements PocketWordConstants {
 
         int totalLength = data.length;
 
-        StringBuffer sb = new StringBuffer("");
+        StringBuilder sb = new StringBuilder("");
 
         // Setup text style information
         int mask = TextStyle.BOLD | TextStyle.ITALIC | TextStyle.UNDERLINE
@@ -200,7 +200,7 @@ class Paragraph implements PocketWordConstants {
                 if (sawText) {
                     // Style change so dump previous segment and style info
                     addTextSegment(sb.toString(), ts);
-                    sb = new StringBuffer("");
+                    sb = new StringBuilder("");
                     sawText = false;
                 }
 
@@ -655,7 +655,7 @@ class Paragraph implements PocketWordConstants {
         // In courier, can have no more than 29 chars per line
 
         int chunkStart = 0;
-        StringBuffer sb = new StringBuffer("");
+        StringBuilder sb = new StringBuilder("");
 
         // Line Descriptor info should be eliminated each time
         lineDescriptors = new Vector(1, 1);

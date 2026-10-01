@@ -96,7 +96,7 @@ public class UnoUrl {
 		}
 
         public String getUninterpretedString() {
-            StringBuffer buf = new StringBuffer(partTypeName);
+            StringBuilder buf = new StringBuilder(partTypeName);
             if (uninterpretedParameterString.length() > 0) {
                 buf.append(',');
                 buf.append(uninterpretedParameterString);

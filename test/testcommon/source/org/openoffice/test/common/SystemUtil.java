@@ -66,7 +66,7 @@ public class SystemUtil {
 
 	static {
 		if (isLinux()) {
-			StringBuffer output = new StringBuffer();
+			StringBuilder output = new StringBuilder();
 			if (exec(new String[]{"lsb_release", "-is"}, output) == 0)
 				osName = output.toString().trim();
 			output.setLength(0);
@@ -180,7 +180,7 @@ public class SystemUtil {
 	 * @return
 	 */
 	public static int execScript(String content) {
-		StringBuffer output = new StringBuffer();
+		StringBuilder output = new StringBuilder();
 		int code = execScript(content, output, output);
 		LOG.info(content + "\n" + "Exit Code: " + code + "\n" + output);
 		return code;
@@ -193,7 +193,7 @@ public class SystemUtil {
 	 * @param error
 	 * @return
 	 */
-	public static int execScript(String content, StringBuffer output, StringBuffer error) {
+	public static int execScript(String content, StringBuilder output, StringBuilder error) {
 		File file = null;
 		try {
 			file = FileUtil.getUniqueFile(SCRIPT_TEMP_DIR, "tempscript", ".bat");
@@ -221,7 +221,7 @@ public class SystemUtil {
 	 * @param error
 	 * @return
 	 */
-	public static Process backgroundExec(String[] cmd, String[] env, File dir, StringBuffer output, StringBuffer error) {
+	public static Process backgroundExec(String[] cmd, String[] env, File dir, StringBuilder output, StringBuilder error) {
 		try {
 			Process process = Runtime.getRuntime().exec(cmd, env, dir);
 			StreamPump inputPump = new StreamPump(output, process.getInputStream());
@@ -243,7 +243,7 @@ public class SystemUtil {
 	 * @param error
 	 * @return
 	 */
-	public static int exec(String[] cmd, String[] env, File dir, StringBuffer output, StringBuffer error) {
+	public static int exec(String[] cmd, String[] env, File dir, StringBuilder output, StringBuilder error) {
 		Process process = null;
 		try {
 			LOG.log(Level.FINE,  "exec: " + Arrays.toString(cmd));
@@ -268,7 +268,7 @@ public class SystemUtil {
 		}
 	}
 
-	public static int exec(String[] cmd, StringBuffer output) {
+	public static int exec(String[] cmd, StringBuilder output) {
 		return exec(cmd, null, null, output, output);
 	}
 
@@ -292,7 +292,7 @@ public class SystemUtil {
 	public static List<HashMap<String, Object>> getProcesses() {
 		List<HashMap<String, Object>> ret = new ArrayList<HashMap<String, Object>>();
 		try {
-			StringBuffer output = new StringBuffer();
+			StringBuilder output = new StringBuilder();
 			if (isWindows()) {
 				File file = new File(SCRIPT_TEMP_DIR, "ps.vbs");
 //				if (!file.exists()) {
@@ -317,7 +317,7 @@ public class SystemUtil {
 			while ((line = reader.readLine()) != null) {
 				HashMap<String, Object> p = new HashMap<String, Object>();
 				StringTokenizer tokenizer = new StringTokenizer(line, " ", true);
-				StringBuffer last = new StringBuffer();
+				StringBuilder last = new StringBuilder();
 				int col = 0;
 				while (tokenizer.hasMoreTokens()) {
 					String token = tokenizer.nextToken();
@@ -395,7 +395,7 @@ public class SystemUtil {
 	 */
 	public static HashMap<String, Object> getProcessPerfData(String processId) {
 		try {
-			StringBuffer output = new StringBuffer();
+			StringBuilder output = new StringBuilder();
 			if (isWindows()) {
 				File file = new File(SCRIPT_TEMP_DIR, "pps.vbs");
 				String contents = "Set wmi=GetObject(\"Winmgmts:\")\n\r"
@@ -480,7 +480,7 @@ public class SystemUtil {
 		ArrayList<String> arguments = new ArrayList<String>();
 		StringTokenizer tokenizer = new StringTokenizer(line, "\"\' ", true);
 		int state = 0;
-		StringBuffer current = new StringBuffer();
+		StringBuilder current = new StringBuilder();
 		while (tokenizer.hasMoreTokens()) {
 			String token = tokenizer.nextToken();
 			switch (state) {
@@ -506,7 +506,7 @@ public class SystemUtil {
 				} else if (" ".equals(token)) {
 					if (current.length() > 0) {
 						arguments.add(current.toString());
-						current = new StringBuffer();
+						current = new StringBuilder();
 					}
 				} else {
 					current.append(token);

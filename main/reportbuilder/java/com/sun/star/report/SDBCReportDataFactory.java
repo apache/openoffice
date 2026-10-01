@@ -237,7 +237,7 @@ public class SDBCReportDataFactory implements DataSourceFactory
 
     private String getOrderStatement(final int commandType, final String command, final List groupExpressions)
     {
-        final StringBuffer order = new StringBuffer();
+        final StringBuilder order = new StringBuilder();
         final int count = groupExpressions.size();
         if (count != 0)
         {
@@ -491,7 +491,7 @@ public class SDBCReportDataFactory implements DataSourceFactory
 
                 // create the new filter
                 final String quote = connection.getMetaData().getIdentifierQuoteString();
-                final StringBuffer oldFilter = new StringBuffer();
+                final StringBuilder oldFilter = new StringBuilder();
                 oldFilter.append(composer.getFilter());
                 if (oldFilter.length() != 0)
                 {
@@ -539,7 +539,7 @@ public class SDBCReportDataFactory implements DataSourceFactory
             WrappedTargetException,
             NoSuchElementException
     {
-        final StringBuffer order = new StringBuffer(getOrderStatement(commandType, command, (ArrayList) parameters.get(GROUP_EXPRESSIONS)));
+        final StringBuilder order = new StringBuilder(getOrderStatement(commandType, command, (ArrayList) parameters.get(GROUP_EXPRESSIONS)));
         if (order.length() > 0 && commandType != CommandType.TABLE)
         {
             String statement = command;
