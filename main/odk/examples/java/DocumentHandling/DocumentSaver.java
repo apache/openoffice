@@ -65,11 +65,11 @@ public class DocumentSaver {
                          com.sun.star.frame.XComponentLoader.class, oDesktop);
 
             java.io.File sourceFile = new java.io.File(args[0]);
-            StringBuffer sLoadUrl = new StringBuffer("file:///");
+            StringBuilder sLoadUrl = new StringBuilder("file:///");
             sLoadUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
 
             sourceFile = new java.io.File(args[1]);
-            StringBuffer sSaveUrl = new StringBuffer("file:///");
+            StringBuilder sSaveUrl = new StringBuilder("file:///");
             sSaveUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
 
             com.sun.star.beans.PropertyValue[] propertyValue =

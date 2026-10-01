@@ -390,7 +390,7 @@ void generateXCompatibilityNamesBodies(std::ostream& o)
         "        com.sun.star.sheet.LocalizedName[] seqLocalizedNames =\n"
         "            new com.sun.star.sheet.LocalizedName[0];\n\n        try {\n";
 
-    o << "            StringBuffer path = new StringBuffer(aProgrammaticName);\n"
+    o << "            StringBuilder path = new StringBuilder(aProgrammaticName);\n"
         "            path.append(\"/CompatibilityName\");\n"
         "            String hname = path.toString();\n\n";
 
@@ -416,8 +416,8 @@ void generateXCompatibilityNamesBodies(std::ostream& o)
         "                    if (nToken >= 1) aLocale.Language = tokens[0];\n"
         "                    if (nToken >= 2) aLocale.Country = tokens[1];\n"
         "                    if (nToken >= 3)  {\n"
-        "                        StringBuffer buf = \n"
-        "                            new StringBuffer(tokens[2]);\n"
+        "                        StringBuilder buf = \n"
+        "                            new StringBuilder(tokens[2]);\n"
         "                        for (int t=3; t < nToken; ++t)\n"
         "                            buf.append(tokens[t]);\n\n"
         "                        aLocale.Variant = buf.toString();\n"
@@ -660,7 +660,7 @@ void generateAddinConstructorAndHelper(std::ostream& o,
     o << "        String sReadOnlyView = "
         "\"com.sun.star.configuration.ConfigurationAccess\";\n\n";
 
-    o << "        StringBuffer sPath = new StringBuffer(\n"
+    o << "        StringBuilder sPath = new StringBuilder(\n"
         "             \"/org.openoffice.Office.CalcAddIns/AddInInfo/\");\n"
         "        sPath.append(sADDIN_SERVICENAME);\n"
         "        sPath.append(\"/AddInFunctions\");\n\n";
@@ -713,8 +713,8 @@ void generateAddinConstructorAndHelper(std::ostream& o,
     o << "    // addin configuration property helper function:\n"
         "    String getAddinProperty(String funcName, "
         "String paramName, String propName)\n    {\n"
-        "        try {\n            StringBuffer buf = "
-        "new StringBuffer(funcName);\n\n"
+        "        try {\n            StringBuilder buf = "
+        "new StringBuilder(funcName);\n\n"
         "            if (paramName.length() > 0) {\n"
         "                buf.append(\"/Parameters/\");\n"
         "                buf.append(paramName);\n            }\n\n";

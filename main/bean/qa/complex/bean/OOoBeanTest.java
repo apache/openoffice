@@ -403,7 +403,7 @@ public class OOoBeanTest
                 // #1
                 Thread.sleep(1000);
 
-                StringBuffer buf = new StringBuffer(1000);
+                StringBuilder buf = new StringBuilder(1000);
                 for (int i = 0; i < 1; i++)
                 {
 //                    Thread.sleep(1000);
@@ -471,7 +471,7 @@ public class OOoBeanTest
                 frame.validate();
                 // #1
                 Thread.sleep(1000);
-                StringBuffer buf = new StringBuffer(1000);
+                StringBuilder buf = new StringBuilder(1000);
                 int i = 0;
 
                 for (; i < 1; i++)

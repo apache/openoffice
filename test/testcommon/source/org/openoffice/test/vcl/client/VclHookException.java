@@ -353,7 +353,7 @@ public class VclHookException extends RuntimeException {
 
 		Pattern pattern = Pattern.compile("\\(\\$([^\\)]*)\\)");
 		Matcher matcher = pattern.matcher(originalMsg);
-		StringBuffer result = new StringBuffer();
+		StringBuilder result = new StringBuilder();
 		while (matcher.find()) {
 			String rep = properties.getProperty(matcher.group(1), matcher.group()).replace("$", "\\$");
 			matcher.appendReplacement(result, rep);

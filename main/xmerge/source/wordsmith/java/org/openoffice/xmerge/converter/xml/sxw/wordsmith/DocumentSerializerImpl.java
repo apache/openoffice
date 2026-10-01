@@ -297,7 +297,7 @@ implements OfficeConstants, DocumentSerializer {
                         // this is for text:s tags.
                         NamedNodeMap map = child.getAttributes();
                         Node attr = map.getNamedItem(ATTRIBUTE_SPACE_COUNT);
-                        StringBuffer space = new StringBuffer(" ");
+                        StringBuilder space = new StringBuilder(" ");
                         int count = 1;
 
                         if (attr != null) {

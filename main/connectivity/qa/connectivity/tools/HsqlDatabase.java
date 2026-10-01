@@ -91,7 +91,7 @@ public class HsqlDatabase extends AbstractDatabase
      */
     public void dropTable(final String _name, final boolean _ifExists) throws SQLException
     {
-        final StringBuffer dropStatement = new StringBuffer("DROP TABLE \"");
+        final StringBuilder dropStatement = new StringBuilder("DROP TABLE \"");
         dropStatement.append(_name);
         if (_ifExists)
         {
@@ -113,7 +113,7 @@ public class HsqlDatabase extends AbstractDatabase
      */
     public void createTable(final HsqlTableDescriptor _tableDesc) throws SQLException
     {
-        StringBuffer createStatement = new StringBuffer("CREATE CACHED TABLE \"");
+        StringBuilder createStatement = new StringBuilder("CREATE CACHED TABLE \"");
         createStatement.append(_tableDesc.getName());
         createStatement.append("\" ( ");
 
@@ -159,7 +159,7 @@ public class HsqlDatabase extends AbstractDatabase
                 foreignKeysForTable += "\"" + columns[i].getName() + "\"";
                 foreignKeys.put(foreignTable, foreignKeysForTable);
 
-                final StringBuffer foreignKeyRefsForTable = new StringBuffer(foreignKeyRefs.containsKey(foreignTable) ? (String) foreignKeyRefs.get(foreignTable) : "");
+                final StringBuilder foreignKeyRefsForTable = new StringBuilder(foreignKeyRefs.containsKey(foreignTable) ? (String) foreignKeyRefs.get(foreignTable) : "");
                 if (foreignKeyRefsForTable.length() > 0)
                 {
                     foreignKeyRefsForTable.append(", ");

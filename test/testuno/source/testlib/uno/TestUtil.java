@@ -172,7 +172,7 @@ public class TestUtil {
 	 * @return
 	 */
 	public static String connectByOperator(double[] number, String operator) throws Exception{
-		StringBuffer buffer = new StringBuffer();
+		StringBuilder buffer = new StringBuilder();
 
 		for (int i = 0; i < number.length; i++) {
 			buffer.append(number[i]);

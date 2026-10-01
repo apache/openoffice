@@ -92,7 +92,7 @@ public class Restriction
     @Override
     public String toString ()
     {
-        final StringBuffer aBuffer = new StringBuffer("restriction based on ");
+        final StringBuilder aBuffer = new StringBuilder("restriction based on ");
         aBuffer.append(maBaseType.GetDisplayName());
 
         if (msMinInclusive != null)

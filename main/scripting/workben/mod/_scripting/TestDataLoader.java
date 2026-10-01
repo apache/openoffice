@@ -105,7 +105,7 @@ public class TestDataLoader {
             if (tokens.countTokens() == 1)
                 value = tokens.nextToken();
             else {
-                StringBuffer buf = new StringBuffer(tokens.nextToken());
+                StringBuilder buf = new StringBuilder(tokens.nextToken());
                 while (tokens.hasMoreTokens())
                     buf.append(separator).append(tokens.nextToken());
                 value = buf.toString();

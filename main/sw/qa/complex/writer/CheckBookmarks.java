@@ -66,7 +66,7 @@ class BookmarkHashes {
     static public java.math.BigInteger getBookmarksHash(XTextDocument xDoc)
         throws com.sun.star.uno.Exception, java.security.NoSuchAlgorithmException
     {
-        StringBuffer buffer = new StringBuffer("");
+        StringBuilder buffer = new StringBuilder("");
         XBookmarksSupplier xBookmarksSupplier = UnoRuntime.queryInterface(
             XBookmarksSupplier.class,
             xDoc);

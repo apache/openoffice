@@ -317,7 +317,7 @@ public class GraphicalDifferenceCheck
     {
 
         // find the adequate XML StarOffice output filter to save the document and adequate suffix
-        StringBuffer suffix = new StringBuffer();
+        StringBuilder suffix = new StringBuilder();
         String exportFilter = getXMLOutputFilterforXComponent(xComponent, suffix);
         if(resultDocName == null)
             resultDocName = "OOoTestDocument";
@@ -353,7 +353,7 @@ public class GraphicalDifferenceCheck
     }
 
 
-    private static String getXMLOutputFilterforXComponent(XComponent xComponent, StringBuffer suffix){
+    private static String getXMLOutputFilterforXComponent(XComponent xComponent, StringBuilder suffix){
         XServiceInfo xSI = UnoRuntime.queryInterface(XServiceInfo.class, xComponent);
         if (xSI.supportsService("com.sun.star.text.TextDocument")){
             resetBuffer(suffix, ".sxw");
@@ -374,7 +374,7 @@ public class GraphicalDifferenceCheck
         return null;
     }
 
-    private static StringBuffer resetBuffer(StringBuffer sb, String suffix)
+    private static StringBuilder resetBuffer(StringBuilder sb, String suffix)
         {
             if(sb != null)
             {

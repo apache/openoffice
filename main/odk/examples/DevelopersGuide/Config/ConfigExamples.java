@@ -360,7 +360,7 @@ public class ConfigExamples
         public int subdivision_y;
 
         public String toString() {
-            StringBuffer aBuffer = new StringBuffer();
+            StringBuilder aBuffer = new StringBuilder();
             aBuffer.append("[ Grid is "); aBuffer.append(visible ? "VISIBLE" : "HIDDEN");
             aBuffer.append("; resolution  = (" + resolution_x  + "," + resolution_y  + ")");
             aBuffer.append("; subdivision = (" + subdivision_x + "," + subdivision_y + ")");

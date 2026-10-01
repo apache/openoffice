@@ -73,7 +73,7 @@ final class DocDecoder implements DocConstants {
         dumpHeader(header);
 
         // store all the characters in textBuffer
-        StringBuffer textBuffer = new StringBuffer(header.textLen);
+        StringBuilder textBuffer = new StringBuilder(header.textLen);
 
         switch (header.version) {
 

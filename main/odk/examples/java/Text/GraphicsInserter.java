@@ -127,7 +127,7 @@ public class GraphicsInserter {
             try {
                 // Creating a string for the graphic url
                 java.io.File sourceFile = new java.io.File(args[0]);
-                StringBuffer sUrl = new StringBuffer("file:///");
+                StringBuilder sUrl = new StringBuilder("file:///");
                 sUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
                 System.out.println( "insert graphic \"" + sUrl + "\"");
 

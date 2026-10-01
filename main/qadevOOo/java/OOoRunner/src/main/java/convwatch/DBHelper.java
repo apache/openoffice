@@ -113,7 +113,7 @@ public class DBHelper
             //
             // aInsertStr = "INSERT INTO " + _sTableName + " (" + value_names + " ) VALUES (" + values + ")";
             // ExecSQL(_aCon, aInsertStr);
-            StringBuffer aInsertStr = new StringBuffer();
+            StringBuilder aInsertStr = new StringBuilder();
 
             aInsertStr.append( "INSERT INTO " ) . append( _sTableName );
             aInsertStr.append( " (").append( value_names ).append ( ")" );
@@ -133,7 +133,7 @@ public class DBHelper
             //
             // aUpdateStr = "UPDATE " + _sTableName + " SET " + _sSet + " WHERE " + _sWhere;
             // ExecSQL( _aCon, aUpdateStr );
-            StringBuffer aUpdateStr = new StringBuffer();
+            StringBuilder aUpdateStr = new StringBuilder();
 
             aUpdateStr.append( "UPDATE " ).append( _sTableName )
                 .append( " SET " ).append( _sSet )

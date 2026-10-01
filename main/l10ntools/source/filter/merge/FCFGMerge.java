@@ -96,7 +96,7 @@ public class FCFGMerge
      */
     private static void printCopyright()
     {
-        java.lang.StringBuffer sOut = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sOut = new java.lang.StringBuilder(256);
         sOut.append("FCFGMerge\n");
         sOut.append("Copyright: 2003 by Sun Microsystems, Inc.\n");
         sOut.append("All Rights Reserved.\n");
@@ -109,7 +109,7 @@ public class FCFGMerge
      */
     private static void printHelp()
     {
-        java.lang.StringBuffer sOut = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sOut = new java.lang.StringBuilder(256);
         sOut.append("____________________________________________________________\n");
         sOut.append("usage: FCFGMerge cfg=<file name>\n"                            );
         sOut.append("parameters:\n"                                                 );

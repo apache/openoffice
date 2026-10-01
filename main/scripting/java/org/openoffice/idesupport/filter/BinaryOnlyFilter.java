@@ -42,7 +42,7 @@ public class BinaryOnlyFilter implements FileFilter {
     }
 
     public String toString() {
-        /* StringBuffer buf = new StringBuffer(DESCRIPTION + ": ");
+        /* StringBuilder buf = new StringBuilder(DESCRIPTION + ": ");
 
         for (int i = 0; i < EXTENSIONS.length - 1; i++)
             buf.append("<" + EXTENSIONS[i] + "> ");

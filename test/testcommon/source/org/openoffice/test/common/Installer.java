@@ -101,7 +101,7 @@ public class Installer implements Runnable {
 				FileUtil.deleteFile(installTempDir);
 				installTempDir.mkdirs();
 				if (packFile.getName().endsWith(".gz")) {
-					StringBuffer output = new StringBuffer();
+					StringBuilder output = new StringBuilder();
 					if (SystemUtil.exec(new String[] { "tar", "-zxpf", packFile.getAbsolutePath(), "-C", installTempDir.getAbsolutePath() }, output) != 0)
 						throw new RuntimeException(MessageFormat.format("{0} can not be installed! Cause: {1}", packFile, output));
 				} else {

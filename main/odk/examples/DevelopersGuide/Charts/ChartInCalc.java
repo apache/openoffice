@@ -196,13 +196,13 @@ public class ChartInCalc
                                                   0x0000ff - 0x40 * i ));
                 if( 1 == i )
                 {
-                    StringBuffer sUrl = new StringBuffer("file:///");
+                    StringBuilder sUrl = new StringBuilder("file:///");
                     try {
                         /* for use without net it's easier to load a local graphic */
                         java.io.File sourceFile = new java.io.File("bullet.gif");
                         sUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
                     } catch (java.io.IOException e) {
-                        sUrl = new StringBuffer("http://graphics.openoffice.org/chart/bullet1.gif");
+                        sUrl = new StringBuilder("http://graphics.openoffice.org/chart/bullet1.gif");
                     }
 
                     // set a bitmap via URL as symbol for the first series

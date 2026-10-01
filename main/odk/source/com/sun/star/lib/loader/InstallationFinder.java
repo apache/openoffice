@@ -475,7 +475,7 @@ final class InstallationFinder {
         {
             return null;
         }
-        StringBuffer buf = new StringBuffer(prefix);
+        StringBuilder buf = new StringBuilder(prefix);
         int n = oooUrl.indexOf('/', prefix.length());
         if (n < 0) {
             n = oooUrl.length();

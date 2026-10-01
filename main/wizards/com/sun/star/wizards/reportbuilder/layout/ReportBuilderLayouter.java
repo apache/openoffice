@@ -706,7 +706,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
 
     protected String convertToFieldName(String _sElementName)
     {
-        final StringBuffer aDataField = new StringBuffer(32);
+        final StringBuilder aDataField = new StringBuilder(32);
         aDataField.append("field:[").append(_sElementName).append(']');
         return aDataField.toString();
 
@@ -1573,7 +1573,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
             m_aLabelWidthMap = new HashMap();
         }
         // At first, try to get the Width out of a HashMap (Cache)
-        StringBuffer aKey = new StringBuffer(40);
+        StringBuilder aKey = new StringBuilder(40);
         final String sKey = aKey.append(_sLabel).append(_nCharWeight).append(_nCharHeight).toString();
         if (m_aLabelWidthMap.containsKey(sKey))
         {

@@ -214,7 +214,7 @@ public class Protocol extends JComponent
         /** format this line as an ascii string for writing log files */
         public synchronized String toString()
         {
-            StringBuffer sLine = new StringBuffer(1000);
+            StringBuilder sLine = new StringBuilder(1000);
 
             // insert line number
             // Use right bound notation and format 6 digits!
@@ -302,7 +302,7 @@ public class Protocol extends JComponent
          */
         public synchronized String toHTML()
         {
-            StringBuffer sLine = new StringBuffer(1000);
+            StringBuilder sLine = new StringBuilder(1000);
             sLine.append("<tr>");
 
             // insert line number
@@ -455,7 +455,7 @@ public class Protocol extends JComponent
          * @param   bBold
          *          enable/disable bold state for the text content.
          */
-        private void impl_generateColoredHTMLCell(StringBuffer sCell   ,
+        private void impl_generateColoredHTMLCell(StringBuilder sCell   ,
                                                   String       sContent,
                                                   String       sBGColor,
                                                   String       sFGColor,
@@ -569,7 +569,7 @@ public class Protocol extends JComponent
      */
     public synchronized void log( /*IN*/ com.sun.star.beans.NamedValue[] lProps )
     {
-        StringBuffer sValues = new StringBuffer(1000);
+        StringBuilder sValues = new StringBuilder(1000);
         impl_logPropertyArray(sValues, lProps);
 
         log(TYPE_SCOPE_OPEN  | TYPE_INFO, "property array ["+lProps.length+"]:");
@@ -578,7 +578,7 @@ public class Protocol extends JComponent
 
     public synchronized void log( /*IN*/ com.sun.star.beans.PropertyValue[] lProps )
     {
-        StringBuffer sValues = new StringBuffer(1000);
+        StringBuilder sValues = new StringBuilder(1000);
         impl_logPropertyArray(sValues, lProps);
 
         log(TYPE_SCOPE_OPEN  | TYPE_INFO, "property array ["+lProps.length+"]:");
@@ -587,7 +587,7 @@ public class Protocol extends JComponent
 
     public synchronized void log( /*IN*/ com.sun.star.beans.NamedValue aProp )
     {
-        StringBuffer sValue = new StringBuffer(1000);
+        StringBuilder sValue = new StringBuilder(1000);
         impl_logProperty(sValue, aProp);
 
         log(TYPE_SCOPE_OPEN  | TYPE_INFO, "property:"      );
@@ -596,7 +596,7 @@ public class Protocol extends JComponent
 
     public synchronized void log( /*IN*/ com.sun.star.beans.PropertyValue aProp )
     {
-        StringBuffer sValue = new StringBuffer(1000);
+        StringBuilder sValue = new StringBuilder(1000);
         impl_logProperty(sValue, aProp);
 
         log(TYPE_SCOPE_OPEN  | TYPE_INFO, "property:"      );
@@ -605,7 +605,7 @@ public class Protocol extends JComponent
 
     public synchronized void log( /*IN*/ Object aAny )
     {
-        StringBuffer sValue = new StringBuffer(1000);
+        StringBuilder sValue = new StringBuilder(1000);
         impl_logAny(sValue, aAny);
 
         log(TYPE_SCOPE_OPEN  | TYPE_INFO, "any:"           );
@@ -706,7 +706,7 @@ public class Protocol extends JComponent
         if ((m_nMode & MODE_HTML) != MODE_HTML)
             return;
 
-        StringBuffer sLog = new StringBuffer(1000);
+        StringBuilder sLog = new StringBuilder(1000);
         sLog.append("<a href=\"");
         sLog.append(sTarget     );
         sLog.append("\">"       );
@@ -794,7 +794,7 @@ public class Protocol extends JComponent
      * @param   lProps
      *              represent the property(array) to be logged.
      */
-    private void impl_logPropertyArray( /*OUT*/ StringBuffer                       sOut   ,
+    private void impl_logPropertyArray( /*OUT*/ StringBuilder                       sOut   ,
                                         /*IN */ com.sun.star.beans.PropertyValue[] lProps )
     {
         int i = 0;
@@ -804,7 +804,7 @@ public class Protocol extends JComponent
             impl_logProperty(sOut, lProps[i]);
     }
 
-    private void impl_logPropertyArray( /*OUT*/ StringBuffer                    sOut   ,
+    private void impl_logPropertyArray( /*OUT*/ StringBuilder                    sOut   ,
                                         /*IN */ com.sun.star.beans.NamedValue[] lProps )
     {
         int i = 0;
@@ -814,14 +814,14 @@ public class Protocol extends JComponent
             impl_logProperty(sOut, lProps[i]);
     }
 
-    private void impl_logProperty( /*OUT*/ StringBuffer                  sOut  ,
+    private void impl_logProperty( /*OUT*/ StringBuilder                  sOut  ,
                                    /*IN*/  com.sun.star.beans.NamedValue aProp )
     {
         sOut.append("\""+aProp.Name+"\" = ");
         impl_logAny(sOut, aProp.Value);
     }
 
-    private void impl_logProperty( /*OUT*/ StringBuffer                     sOut  ,
+    private void impl_logProperty( /*OUT*/ StringBuilder                     sOut  ,
                                    /*IN*/  com.sun.star.beans.PropertyValue aProp )
     {
         sOut.append("\""+aProp.Name+"\" = ");
@@ -832,7 +832,7 @@ public class Protocol extends JComponent
     /**
      * it tries to convert the given any into a suitable string notation .-)
     */
-    private synchronized void impl_logAny( /*OUT*/ StringBuffer sOut ,
+    private synchronized void impl_logAny( /*OUT*/ StringBuilder sOut ,
                                            /*IN */ Object       aAny )
     {
         try

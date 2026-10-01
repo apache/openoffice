@@ -110,7 +110,7 @@ public class HTMLOutputter
 
     String getHREF(String _sHREF, String _sPathInfo)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             if (! OSHelper.isWindows())
             {
                 // System.out.println("Tu'nix system.");
@@ -142,7 +142,7 @@ public class HTMLOutputter
                 // {
                 //     // int index = 0;
                 //     // remove "X:" and insert "/tausch"
-                //     StringBuffer sbUNIXPath = new StringBuffer( _sHREF.substring(0, index) );
+                //     StringBuilder sbUNIXPath = new StringBuilder( _sHREF.substring(0, index) );
                 //     sbUNIXPath.append("/tausch");
                 //     sbUNIXPath.append(_sHREF.substring(index + 2));
                 //     String sUNIXPath = sbUNIXPath.toString();
@@ -165,7 +165,7 @@ public class HTMLOutputter
 
     String tableDataCell(String _sValue)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             a.append("<TD>");
             a.append(_sValue);
             a.append("</TD>");
@@ -174,7 +174,7 @@ public class HTMLOutputter
 
     String tableHeaderCell(String _sValue)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             a.append("<TH>");
             a.append(_sValue);
             a.append("</TH>");
@@ -224,7 +224,7 @@ public class HTMLOutputter
 // -----------------------------------------------------------------------------
     String stronghtml(String _sValue)
         {
-            StringBuffer a = new StringBuffer();
+            StringBuilder a = new StringBuilder();
             a.append("<STRONG>");
             a.append(_sValue);
             a.append("</STRONG>");

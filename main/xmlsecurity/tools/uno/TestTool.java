@@ -888,7 +888,7 @@ public class TestTool extends JFrame implements ActionListener
 		try
 		{
 			fis = new FileInputStream(f);
-			StringBuffer commandBuffer = new StringBuffer();
+			StringBuilder commandBuffer = new StringBuilder();
 
 			m_logFileOutputStream = new FileOutputStream("TestTool-log.txt");
 			m_bIsBatchRunning = true;
@@ -967,7 +967,7 @@ public class TestTool extends JFrame implements ActionListener
 						m_logFileOutputStream.write("command end \n\n".getBytes());
 					}
 
-					commandBuffer = new StringBuffer();
+					commandBuffer = new StringBuilder();
 				}
 			}
 

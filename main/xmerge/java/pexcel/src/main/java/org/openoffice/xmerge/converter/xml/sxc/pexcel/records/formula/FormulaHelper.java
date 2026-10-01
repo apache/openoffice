@@ -100,7 +100,7 @@ public class FormulaHelper {
 		Vector parseTokens = decoder.getTokenVector(formula);
 		Vector infixTokens = compiler.RPN2Infix(parseTokens);
 
-		StringBuffer buff = new StringBuffer();
+		StringBuilder buff = new StringBuilder();
 		for (Enumeration e = infixTokens.elements();e.hasMoreElements();) {
 			Token t = (Token)e.nextElement();
 			buff.append(t.toString());

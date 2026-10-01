@@ -593,7 +593,7 @@ public class SDFReader extends DataReader {
      * @return the blockId as String
      */
     private String getSDFBlockId(String[] splitLine) {
-        StringBuffer BlockId = new StringBuffer("");
+        StringBuilder BlockId = new StringBuilder("");
         for (int i = 0; i < 8; i++) {
             BlockId.append(splitLine[i]);
         }

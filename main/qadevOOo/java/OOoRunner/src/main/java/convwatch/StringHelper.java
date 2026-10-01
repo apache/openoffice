@@ -86,7 +86,7 @@
 // LLA: moved to helper.StringHelper     public static String createValueString(int _nValue, int _nLen)
 // LLA: moved to helper.StringHelper         {
 // LLA: moved to helper.StringHelper             String sValue = String.valueOf(_nValue);
-// LLA: moved to helper.StringHelper             StringBuffer a = new StringBuffer();
+// LLA: moved to helper.StringHelper             StringBuilder a = new StringBuilder();
 // LLA: moved to helper.StringHelper             while (_nLen > sValue.length())
 // LLA: moved to helper.StringHelper             {
 // LLA: moved to helper.StringHelper                 a.append('0');

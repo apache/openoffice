@@ -199,8 +199,8 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
      */
     protected String parseFormula(String formula) {
 
-        StringBuffer inFormula = new StringBuffer(formula);
-        StringBuffer outFormula = new StringBuffer();
+        StringBuilder inFormula = new StringBuilder(formula);
+        StringBuilder outFormula = new StringBuilder();
 
         boolean inBrace = false;
         boolean firstCharAfterBrace = false;

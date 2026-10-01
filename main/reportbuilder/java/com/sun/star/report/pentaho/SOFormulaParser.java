@@ -249,7 +249,7 @@ public final class SOFormulaParser extends ComponentBase
 
     public String printFormula(com.sun.star.sheet.FormulaToken[] aTokens, com.sun.star.table.CellAddress aReferencePos)
     {
-        final StringBuffer ret = new StringBuffer();
+        final StringBuilder ret = new StringBuilder();
         for (int i = 0; i < aTokens.length; i++)
         {
             final FormulaToken formulaToken = aTokens[i];

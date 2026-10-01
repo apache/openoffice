@@ -198,7 +198,7 @@ public class TagPair {
     }
 
     public String toString(){
-        StringBuffer outString= new StringBuffer(this.startTag.toString());
+        StringBuilder outString= new StringBuilder(this.startTag.toString());
         TagPair help=new TagPair();
         Iterator iter=enclosedTags.iterator();
         outString.append(this.startingText);
@@ -216,7 +216,7 @@ public class TagPair {
 
     public String getWrapped() throws IOException{
         Iterator iter=enclosedTags.iterator();
-        StringBuffer returnBuffer=new StringBuffer();
+        StringBuilder returnBuffer=new StringBuilder();
 
             returnBuffer.append(wrap(this.startTag)+xmlString(this.startingText));
             while(iter.hasNext()){

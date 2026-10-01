@@ -479,7 +479,7 @@ public class FormulaParser {
  	private void expression() throws FormulaParsingException {
 
 		if (look == '"') { //Extract a quoted string...
-			StringBuffer buff = new StringBuffer();
+			StringBuilder buff = new StringBuilder();
 			boolean success = true;
 			success = getChar();
 			while (look != '"' && success) {
@@ -545,7 +545,7 @@ public class FormulaParser {
 	}
 
 	private String makeErrorString() {
-		StringBuffer buff = new StringBuffer();
+		StringBuilder buff = new StringBuilder();
 		for (int i=0; i<index-1; i++) {
 			buff.append(' ');
 		}

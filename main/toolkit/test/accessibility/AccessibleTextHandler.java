@@ -249,7 +249,7 @@ class AccessibleTextHandler extends NodeHandler
             nChars = 30;
 
         // build up string
-        StringBuffer aChars = new StringBuffer();
+        StringBuilder aChars = new StringBuilder();
         try
         {
             aChars.append( "[" );
@@ -281,7 +281,7 @@ class AccessibleTextHandler extends NodeHandler
      * back and forth */
     private String bounds( XAccessibleText xText )
     {
-        StringBuffer aBuffer = new StringBuffer( "bounds: " );
+        StringBuilder aBuffer = new StringBuilder( "bounds: " );
         try
         {
             // iterate over characters

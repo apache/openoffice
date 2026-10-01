@@ -315,7 +315,7 @@ public class FileAccess
             String sVariant = aLocale.Variant;
 
             // de-DE-Bayrisch
-            StringBuffer aLocaleAll = new StringBuffer();
+            StringBuilder aLocaleAll = new StringBuilder();
             aLocaleAll.append(sLanguage).append('-').append(sCountry).append('-').append(sVariant);
             String sPath = _sPath + "/" + aLocaleAll.toString();
 
@@ -327,7 +327,7 @@ public class FileAccess
             }
 
             // de-DE
-            StringBuffer aLocaleLang_Country = new StringBuffer();
+            StringBuilder aLocaleLang_Country = new StringBuilder();
             aLocaleLang_Country.append(sLanguage).append('-').append(sCountry);
             sPath = _sPath + "/" + aLocaleLang_Country.toString();
 
@@ -337,7 +337,7 @@ public class FileAccess
             }
 
             // de
-            StringBuffer aLocaleLang = new StringBuffer();
+            StringBuilder aLocaleLang = new StringBuilder();
             aLocaleLang.append(sLanguage);
             sPath = _sPath + "/" + aLocaleLang.toString();
 

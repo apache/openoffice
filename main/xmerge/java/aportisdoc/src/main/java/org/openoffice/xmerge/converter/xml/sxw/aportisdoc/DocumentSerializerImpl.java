@@ -273,7 +273,7 @@ public final class DocumentSerializerImpl
             // this is for text:s tags.
             NamedNodeMap map = node.getAttributes();
             Node attr = map.getNamedItem(ATTRIBUTE_SPACE_COUNT);
-            StringBuffer space = new StringBuffer(SPACE_CHAR);
+            StringBuilder space = new StringBuilder(SPACE_CHAR);
             int count = 1;
 
             if (attr != null) {

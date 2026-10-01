@@ -297,7 +297,7 @@ public class XMLHelper
                                                        int               nPrettyTabs)
         throws java.lang.Exception
     {
-        java.lang.StringBuffer sXML = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sXML = new java.lang.StringBuilder(256);
 
         java.util.Iterator it1 = aPropSet.keySet().iterator();
         while(it1.hasNext())
@@ -336,7 +336,7 @@ public class XMLHelper
             }
 
             // unknown type!
-            java.lang.StringBuffer sMsg = new java.lang.StringBuffer(256);
+            java.lang.StringBuilder sMsg = new java.lang.StringBuilder(256);
             sMsg.append("unsupported object type detected.");
             sMsg.append("\ttype ?  : \""+sProp+"\" = "+aVal);
             sMsg.append("\tprop set: \""+aPropSet          );
@@ -348,8 +348,8 @@ public class XMLHelper
 
     public static java.lang.String encodeHTMLSigns(java.lang.String sValue)
     {
-        java.lang.StringBuffer sSource      = new java.lang.StringBuffer(sValue);
-        java.lang.StringBuffer sDestination = new java.lang.StringBuffer(1000  );
+        java.lang.StringBuilder sSource      = new java.lang.StringBuilder(sValue);
+        java.lang.StringBuilder sDestination = new java.lang.StringBuilder(1000  );
 
         for (int i=0; i<sSource.length(); ++i)
         {
@@ -393,7 +393,7 @@ public class XMLHelper
                                                              int              nPrettyTabs)
         throws java.lang.Exception
     {
-        java.lang.StringBuffer sXML = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sXML = new java.lang.StringBuilder(256);
         for (int t=0; t<nPrettyTabs; ++t)
             sXML.append("\t");
 
@@ -461,7 +461,7 @@ public class XMLHelper
                                                      int              nPrettyTabs)
         throws java.lang.Exception
     {
-        java.lang.StringBuffer sXML = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sXML = new java.lang.StringBuilder(256);
 
         for (int t=0; t<nPrettyTabs; ++t)
             sXML.append("\t");
@@ -485,7 +485,7 @@ public class XMLHelper
         // at the end of the following loop ...
 
         int                    d        = 0;
-        java.lang.StringBuffer sValBuff = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sValBuff = new java.lang.StringBuilder(256);
         for (int i=0; i<c; ++i)
         {
             // get the next list item
@@ -566,7 +566,7 @@ public class XMLHelper
                                                                int               nPrettyTabs)
         throws java.lang.Exception
     {
-        java.lang.StringBuffer sXML = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sXML = new java.lang.StringBuilder(256);
 
         int c = aValue.size();
         if (c < 1)
@@ -776,7 +776,7 @@ public class XMLHelper
                                                   java.lang.String sPackage     ,
                                                   boolean          bLanguagePack)
     {
-        java.lang.StringBuffer sHeader = new java.lang.StringBuffer(256);
+        java.lang.StringBuilder sHeader = new java.lang.StringBuilder(256);
 
         if (bLanguagePack)
         {

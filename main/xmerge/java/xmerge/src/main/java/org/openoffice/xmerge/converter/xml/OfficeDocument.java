@@ -1041,7 +1041,7 @@ public abstract class OfficeDocument
     private static Reader hack(InputStream is) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder buffer = new StringBuilder();
 
         String str = null;
 
@@ -1109,7 +1109,7 @@ public abstract class OfficeDocument
 
         BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
         char[] charArray = new char[4096];
-        StringBuffer sBuf = new StringBuffer();
+        StringBuilder sBuf = new StringBuilder();
         int n = 0;
         while ((n=br.read(charArray, 0, charArray.length)) > 0)
             sBuf.append(charArray, 0, n);

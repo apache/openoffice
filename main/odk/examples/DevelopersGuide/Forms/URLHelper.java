@@ -58,7 +58,7 @@ public class URLHelper
             (sFileURL.startsWith("file://") == false)
           )
         {
-            StringBuffer sWorkBuffer = new StringBuffer(sFileURL);
+            StringBuilder sWorkBuffer = new StringBuilder(sFileURL);
             sWorkBuffer.insert(6,"//");
             sFileURL = sWorkBuffer.toString();
         }

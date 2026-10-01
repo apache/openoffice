@@ -448,7 +448,7 @@ public class Helper
             InputStreamReader aInputReader = new InputStreamReader( new FileInputStream( aFile ), "UTF-8" );
             BufferedReader aBufReader = new BufferedReader( aInputReader );
 
-            StringBuffer aBuf = new StringBuffer();
+            StringBuilder aBuf = new StringBuilder();
             String sEachLine = aBufReader.readLine();
 
             while( sEachLine != null )

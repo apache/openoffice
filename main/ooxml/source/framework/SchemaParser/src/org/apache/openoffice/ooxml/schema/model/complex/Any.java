@@ -88,7 +88,7 @@ public class Any
     @Override
     public String toString ()
     {
-        final StringBuffer aBuffer = new StringBuffer();
+        final StringBuilder aBuffer = new StringBuilder();
         aBuffer.append("any processContents=");
         aBuffer.append(meProcessContents.toString());
         aBuffer.append(", namespaces=");

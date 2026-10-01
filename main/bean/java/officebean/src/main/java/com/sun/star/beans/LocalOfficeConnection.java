@@ -381,7 +381,7 @@ public class LocalOfficeConnection
 		String	pipe	= null;
 		char	ch;
 		int		state	= 0;
-		StringBuffer	buffer	= new StringBuffer();
+		StringBuilder	buffer	= new StringBuilder();
 		for(idx = 0; idx < params.length(); idx += 1) {
 			ch	= params.charAt(idx);
 			switch (state) {
@@ -529,11 +529,11 @@ public class LocalOfficeConnection
 
 	/* replaces each substring aSearch in aString by aReplace.
 
-		StringBuffer.replaceAll() is not available in Java 1.3.x.
+		StringBuilder.replaceAll() is not available in Java 1.3.x.
 	 */
 	private static String replaceAll(String aString, String aSearch, String aReplace )
 	{
-		StringBuffer aBuffer = new StringBuffer(aString);
+		StringBuilder aBuffer = new StringBuilder(aString);
 
 		int nPos = aString.length();
 		int nOfs = aSearch.length();
