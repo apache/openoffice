@@ -64,7 +64,7 @@ void logMessage( char* msg)
     fclose( log);
 }
 
-// dump comand line arguments
+// dump command line arguments
 void dumpArgs( int argc, char *argv[] )
 {
     int	i;

@@ -48,7 +48,7 @@ module com { module sun { module star { module xml { module crypto {
  * <p>The encrypter or decrypter concrete a key by retrieve security context
  * and encryption template.</p>
  *
- * <p>In some cases, the encrypter or decrypter can dertermine and locate the
+ * <p>In some cases, the encrypter or decrypter can determine and locate the
  * EncrytedKey from the encryption template by dereference the RetrievalMethod
  * inside EncryptedData.</p>
  *

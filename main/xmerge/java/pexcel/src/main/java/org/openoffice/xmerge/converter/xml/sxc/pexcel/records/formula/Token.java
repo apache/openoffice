@@ -28,7 +28,7 @@ package org.openoffice.xmerge.converter.xml.sxc.pexcel.records.formula;
  * A Token is the basic building block of any formula.
  * A Token can be of four types (Operator, Operand, Function with fixed
  * arguments and function with a variable number of arguments. Each type can
- * have numerous id's. Thetypes are define in <code>ParseToken</code> and the
+ * have numerous id's. The types are define in <code>ParseToken</code> and the
  * id's are defined in <code>TokenConstants</code>. The other member variables
  * are priority which is returned from the <code>PrecedenceTable</code>, the
  * value which is the String equivalent of the token (eg. "+", "$A$12", "SUM")
@@ -61,7 +61,7 @@ public class Token implements ParseToken {
 	/**
 	 * Checks if the current token is an operator
 	 *
-	 * @return A <code>boolean</code> result of the comaparison
+	 * @return A <code>boolean</code> result of the comparison
 	 */
 	public boolean isOperator() {
 		return type == ParseToken.TOKEN_OPERATOR;
@@ -70,7 +70,7 @@ public class Token implements ParseToken {
 	/**
 	 * Checks if the current token is an operand
 	 *
-	 * @return A <code>boolean</code> result of the comaparison
+	 * @return A <code>boolean</code> result of the comparison
 	 */
 	public boolean isOperand() {
 		return type == ParseToken.TOKEN_OPERAND;
@@ -79,7 +79,7 @@ public class Token implements ParseToken {
 	/**
 	 * Checks if the current token is a function
 	 *
-	 * @return A <code>boolean</code> result of the comaparison
+	 * @return A <code>boolean</code> result of the comparison
 	 */
 	public boolean isFunction() {
 		return (type==ParseToken.TOKEN_FUNCTION_FIXED) || (type==ParseToken.TOKEN_FUNCTION_VARIABLE);

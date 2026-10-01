@@ -117,7 +117,7 @@
     <target name="compile" depends="prepare,res">
 	<javac destdir="${build.class}"
 	       debug="${debug}"
-               deprecation="${deprication}"
+               deprecation="${deprecation}"
 	       optimize="${optimize}"
 	       classpathref="classpath">
             <src path="${java.dir}"/>
