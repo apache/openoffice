@@ -23,12 +23,10 @@ package complex.sdbc;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Assume;
 import org.junit.Test;
 
 import com.sun.star.comp.sdbc.Tools;
@@ -47,16 +45,6 @@ public final class ToolsTest {
         return urls;
     }
 
-    /** True if the running JRE has a URL stream handler for the given scheme. */
-    private static boolean schemeSupported(String scheme) {
-        try {
-            new URL(scheme + ":/probe");
-            return true;
-        } catch (MalformedURLException e) {
-            return false;
-        }
-    }
-
     @Test
     public void testAddClassPathURLAddsLocalFileEntry() {
         List<URL> urls = collect("file:/opt/a.jar");
@@ -65,14 +53,14 @@ public final class ToolsTest {
     }
 
     @Test
-    public void testAddClassPathURLAddsJarWrappedLocalFile() {
-        assertEquals(1, collect("jar:file:/opt/a.jar!/").size());
+    public void testAddClassPathURLTreatsSchemeCaseInsensitively() {
+        assertEquals(1, collect("FILE:/opt/a.jar").size());
     }
 
     @Test
-    public void testAddClassPathURLTreatsJarInnerSchemeCaseInsensitively() {
-        // URL.getPath() does not normalize the wrapped URL.
-        assertEquals(1, collect("jar:FILE:/opt/a.jar!/").size());
+    public void testAddClassPathURLSkipsJarWrappedLocalFile() {
+        // A JAR file is added by its own file: URL; a jar: URL is never needed.
+        assertTrue(collect("jar:file:/opt/a.jar!/").isEmpty());
     }
 
     @Test
@@ -166,14 +154,24 @@ public final class ToolsTest {
     }
 
     @Test
-    public void testAddClassPathURLAddsJrtSchemeWhenSupported() {
-        Assume.assumeTrue(schemeSupported("jrt"));
-        assertEquals(1, collect("jrt:/java.base/module-info.class").size());
+    public void testAddClassPathURLAddsPathWithPlus() {
+        List<URL> urls = collect("file:/opt/c++/a.jar");
+        assertEquals(1, urls.size());
+        assertEquals("/opt/c++/a.jar", urls.get(0).getPath());
     }
 
     @Test
-    public void testAddClassPathURLAddsJmodSchemeWhenSupported() {
-        Assume.assumeTrue(schemeSupported("jmod"));
-        assertEquals(1, collect("jmod:/x").size());
+    public void testAddClassPathURLSkipsMalformedEscape() {
+        assertTrue(collect(
+                "file:/opt/%zz.jar",
+                "file:/opt/a.jar%").isEmpty());
+    }
+
+    @Test
+    public void testAddClassPathURLSkipsJvmImageSchemes() {
+        // Unsupported schemes fail to parse and are skipped as well.
+        assertTrue(collect(
+                "jrt:/java.base/module-info.class",
+                "jmod:/x").isEmpty());
     }
 }
