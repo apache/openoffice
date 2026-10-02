@@ -1,0 +1,81 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
+
+# bean — the OfficeBean: a java.awt.Container that hosts a running office
+# window inside a Java (AWT/Swing) application.  Two halves, and both ship:
+#   officebean.jar  — com.sun.star.comp.beans (current) and com.sun.star.beans
+#                     (the deprecated original API, kept for compatibility)
+#   officebean.dll  — JNI: hands Java the HWND behind an AWT Canvas via JAWT so
+#                     the office can parent its frame window into it.
+# Upstream: Ant_officebean.mk + Library_officebean.mk (gbuild).
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "SHAREDLIB", "_DLL_",
+]
+
+java_library(
+    name = "officebean_classes",
+    srcs = glob(["java/officebean/src/main/java/**/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/javaunohelper:juh_jar",
+        "//main/jurt:jurt",
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+    ],
+)
+
+# No Class-Path: upstream's build.xml sets no jar.classpath.  The application
+# embedding the bean supplies the UNO jars itself.
+uno_jar(
+    name = "officebean_jar",
+    out = "officebean.jar",
+    jars = [":officebean_classes"],
+)
+
+# ── officebean.dll ───────────────────────────────────────────────────────────
+# Found by the Java side via jurt's NativeLibraryLoader, which looks beside the
+# jar and one directory UP — i.e. program/classes/officebean.jar finds
+# program/officebean.dll.
+#
+# The DEF exists only to export the four Java_* names UNDECORATED: JNICALL is
+# __stdcall on Win32, so otherwise they leave as _Java_…@N (same trick as
+# //main/jurt jpipe.def).
+#
+# RT_MANIFEST id 2 IS needed, unlike //main/connectivity:hsqldb.  This DLL is
+# loaded by the EMBEDDING application's JVM — a stock java.exe with no VC90
+# activation context — not by a JVM running inside soffice.exe.  Without its
+# own manifest MSVCR90.dll is unresolvable and System.loadLibrary reports only
+# "Can't find dependent libraries".  Same reason as jpipe/jpipx.
+#
+# jawt comes from //build/third_party/jawt, an import library built from the
+# JDK's own header rather than a machine-installed JDK's lib/jawt.lib; see the
+# note there for why a DEF-generated one would be wrong on x86.
+_DLL_MANIFEST_RES = "//main/external/msvcp90:vc90_dll_manifest_res"
+
+cc_binary(
+    name = "officebean",
+    srcs = [
+        "native/win32/com_sun_star_beans_LocalOfficeWindow.c",
+        "native/win32/com_sun_star_comp_beans_LocalOfficeWindow.c",
+    ],
+    copts = ["/TC"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/officebean.def",
+    deps = ["//build/third_party/jawt:jawt_headers"],
+    additional_linker_inputs = [
+        "//build/third_party/jawt:jawt_implib",
+        _DLL_MANIFEST_RES,
+    ],
+    linkopts = [
+        "$(execpath //build/third_party/jawt:jawt_implib)",
+        "$(execpath %s)" % _DLL_MANIFEST_RES,
+        "user32.lib", "/MANIFEST:NO",
+    ],
+)

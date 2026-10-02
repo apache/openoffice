@@ -104,6 +104,11 @@ collect_outputs(
         # "uno:pipe,name=…;urp;StarOffice.ComponentContext".
         "//main/jurt:jpipe",
         "//main/jurt:jpipx",
+        # officebean.dll — JNI half of the OfficeBean (//main/bean).  Same
+        # situation as jpipe: loaded only by an EXTERNAL Java application
+        # embedding an office window, never by the office itself.  Found from
+        # program/classes/officebean.jar one directory up.
+        "//main/bean:officebean",
         # com.sun.star.loader.Java2, in two halves: javavm starts/locates the
         # JVM through jvmfwk, javaloader is the loader that builds a class
         # loader over a component's jar.  Registered in services.rdb by
@@ -791,6 +796,9 @@ filegroup(
         "//main/javaunohelper:juh_runtime_jar",
         "//main/bridges:java_uno_runtime_jar",
         "//main/unoil:unoil_jar",
+        # The OfficeBean API jar, for applications that embed an office window;
+        # officebean.dll is found from here one directory up (NativeLibraryLoader).
+        "//main/bean:officebean_jar",
         # The embedded-database pair.  Not part of the UNO runtime like the six
         # above, but they belong in the same directory: HDriver.cxx builds the
         # JDBC classpath as the literal

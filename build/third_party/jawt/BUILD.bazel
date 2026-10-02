@@ -1,0 +1,60 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load(":import_lib.bzl", "import_lib_only")
+
+# jawt.h / jawt_md.h, copied out of the current Java runtime exactly the way
+# rules_java's own @rules_java//toolchains:jni gets jni.h -- that target stops
+# at jni.h/jni_md.h, so the AWT headers need their own copy.
+[genrule(
+    name = "gen_" + h.replace("/", "_"),
+    srcs = ["@rules_java//toolchains:current_java_runtime"],
+    outs = [h],
+    cmd = "cp $(JAVABASE)/%s $@" % h,
+    toolchains = ["@rules_java//toolchains:current_java_runtime"],
+) for h in ["include/jawt.h", "include/win32/jawt_md.h"]]
+
+cc_library(
+    name = "jawt_headers",
+    hdrs = ["include/jawt.h", "include/win32/jawt_md.h"],
+    includes = ["include", "include/win32"],
+    deps = ["@rules_java//toolchains:jni"],
+    visibility = ["//visibility:public"],
+)
+
+# Import library for the JDK's jawt.dll (the AWT native interface), for code
+# that calls JAWT_GetAWT -- //main/bean's officebean.dll.
+#
+# Upstream links $(JAVA_HOME)/lib/jawt.lib (AWTLIB in solenv/inc/libs.mk).  That
+# would tie a shipped DLL to a JDK installed on the build machine, of the TARGET
+# arch, and the hermetic @remotejdk21_win is x64-only.  But an import library
+# carries no code, only the DLL name and the exported symbol, so it can be
+# produced from a stub built here: same jawt.h declaration, compiled by the
+# target toolchain, linked as a DLL named jawt.  The stub DLL itself must
+# never be staged -- at run time the import has to resolve to the JVM's own
+# jawt.dll -- and that is enforced, not just intended: see jawt_implib below.
+#
+# Why a stub DLL rather than `lib /DEF:`: on x86 JAWT_GetAWT is __stdcall and
+# the JDK's jawt.dll exports the DECORATED name _JAWT_GetAWT@8 (verified with
+# dumpbin against Adoptium 8u452, both arches).  A DEF-generated import lib
+# records that symbol with name type "no prefix", i.e. it asks the loader for
+# JAWT_GetAWT@8 -- a name jawt.dll does not export, which the linker cannot see
+# and the loader reports only as a failed LoadLibrary.  MSVC's lib has no
+# syntax for an explicit import name (`==` is LNK1118).  A plain dllexport
+# without a DEF is exactly how the JDK builds it, so it reproduces the real
+# import record on both arches: x86 "_JAWT_GetAWT@8, name type: name", x64
+# "JAWT_GetAWT, name type: name".
+cc_binary(
+    name = "jawt",
+    srcs = ["jawt_stub.c"],
+    copts = ["/TC"],
+    linkshared = True,
+    linkopts = ["/MANIFEST:NO"],
+    deps = [":jawt_headers"],
+)
+
+# NOT a filegroup over :jawt like every other *_implib in the tree: staging
+# follows those to the DLL and would ship the stub.  See import_lib.bzl.
+import_lib_only(
+    name = "jawt_implib",
+    dll = ":jawt",
+    visibility = ["//visibility:public"],
+)
