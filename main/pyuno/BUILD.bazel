@@ -156,3 +156,73 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+
+# ── program/python.exe — the Python launcher (zipcore/python.cxx) ────────────
+# What a user runs to script the office from an external Python.  It is NOT
+# Python itself: it sets PATH (program/ first, for python27.dll and the UNO
+# DLLs), PYTHONPATH (program/ for uno.py + pyuno.pyd, then the core lib dirs),
+# PYTHONHOME, UNO_PATH and URE_BOOTSTRAP (program/fundamental.ini), all relative
+# to its own location, then runs python-core-<ver>/bin/python.exe with the same
+# arguments and returns its exit code.  Upstream: zipcore/makefile.mk APP1.
+#
+# Before this, program/ held the raw CPython exe from @python, which (a) set
+# none of that environment and (b) had no CRT manifest, so it could not even
+# start (0xC0000135, MSVCR90.dll unresolvable).  This one embeds the VC90
+# manifest at RT_MANIFEST id 1 like every other /MD exe here.
+genrule(
+    name = "pyversion_hxx",
+    srcs = ["zipcore/pyversion.inc"],
+    outs = ["zipcore/pyversion.hxx"],
+    # zipcore/makefile.mk: sed s/@/$(PYVERSION)/g.  Keep in step with the
+    # python-core-<ver> directory name in //main/staging.
+    cmd = "sed 's/@/2.7.18/g' < $< > $@",
+)
+
+cc_library(
+    name = "pyversion_hdr",
+    hdrs = [":pyversion_hxx"],
+    includes = ["zipcore"],
+)
+
+_APP_MANIFEST_RES = "//main/external/msvcp90:vc90_app_manifest_res"
+
+cc_binary(
+    name = "python",
+    srcs = ["zipcore/python.cxx"],
+    defines = ["WNT", "WIN32", "UNICODE", "_UNICODE"],
+    copts = ["/EHsc", "/Zc:wchar_t-"],
+    deps = [
+        ":pyversion_hdr",
+        "//main/tools:ooopathutils",
+        "//main/tools:tools_headers",
+        "//main/sal:sal_headers",
+    ],
+    additional_linker_inputs = [_APP_MANIFEST_RES],
+    linkopts = [
+        "$(execpath %s)" % _APP_MANIFEST_RES,
+        "user32.lib",  # wsprintfW
+        "/SUBSYSTEM:CONSOLE",
+        "/MANIFEST:NO",
+    ],
+)
+
+# ── python-core-<ver>/bin/python.exe — CPython, with a CRT manifest ──────────
+# @python links its python.exe /MANIFEST:NO and embeds none, so as staged it
+# cannot resolve MSVCR90.dll.  The external module cannot name a main-repo
+# label, so the VC90 application manifest is embedded here, into a copy, with
+# the SDK's mt.exe (resource id 1, the EXE slot).
+genrule(
+    name = "python_core_exe",
+    srcs = [
+        "@python//:python",
+        "//main/external/msvcp90:vc90_app_manifest",
+    ],
+    outs = ["python-core/python.exe"],
+    cmd_bat = (
+        "copy /y \"$(location @python//:python)\" \"$(OUTS)\" > nul&&" +
+        "set \"_MT=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\mt.exe\"&&" +
+        "\"!_MT!\" -nologo" +
+        " -manifest \"$(location //main/external/msvcp90:vc90_app_manifest)\"" +
+        " \"-outputresource:$(OUTS);#1\""
+    ),
+)

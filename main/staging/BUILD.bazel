@@ -388,7 +388,10 @@ collect_outputs(
         "//main/oovbaapi:oovbaapi_rdb",
 
         # ── Python ────────────────────────────────────────────────────────────
-        "@python//:python",
+        # program/python.exe is the LAUNCHER (pyuno zipcore), not CPython: it
+        # sets up PATH/PYTHONPATH/PYTHONHOME/URE_BOOTSTRAP and runs
+        # python-core-2.7.18/bin/python.exe (see :install_python_bin).
+        "//main/pyuno:python",
         "@python//:python27",
     ] + select({
         # ATL-gated modules (VS Professional/Enterprise only; not Express/BuildTools).
@@ -961,13 +964,15 @@ tree_install(
     dst          = "program/python-core-2.7.18/lib",
 )
 
-# ── python.exe inside the core tree → python-core-2.7.18/bin/python.exe ──────
-# Same binary as in program/ root; installed again under the versioned tree.
+# ── CPython → python-core-2.7.18/bin/python.exe ─────────────────────────────
+# The real interpreter, run by the program/python.exe launcher.  The copy with
+# the VC90 manifest embedded (//main/pyuno:python_core_exe): @python's own is
+# linked /MANIFEST:NO and cannot resolve MSVCR90.dll.
 tree_install(
     name = "install_python_bin",
-    src          = "@python//:python",
-    strip_prefix = "",
-    dst          = "program/python-core-2.7.18/bin",
+    src     = "//main/pyuno:python_core_exe",
+    flatten = True,
+    dst     = "program/python-core-2.7.18/bin",
 )
 
 # ── install_all: kept as an alias for :install ────────────────────────────────
