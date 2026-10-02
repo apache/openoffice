@@ -143,3 +143,27 @@ are already zero by default in release, so only debug is affected.
 uses on *nix to load `pyuno.so` lazily.  Windows does not have
 `dlfcn.h`, and `python27.dll` is loaded implicitly via the import
 library, so this target is not needed.
+
+### `program/python.exe` is the launcher, not CPython (2026-10-02)
+`zipcore/python.cxx` — upstream's `APP1TARGET=python` — is what a user runs
+to script the office from outside.  It sets `PATH` (program/ first),
+`PYTHONPATH` (the core `lib` + `site-packages`, then any user value),
+`PYTHONHOME`, `UNO_PATH` and `URE_BOOTSTRAP` (program/fundamental.ini) from its
+own location, then runs `python-core-2.7.18/bin/python.exe` and returns its
+exit code.  It links `ooopathutils` and `user32` (wsprintfW) and embeds the
+VC90 manifest at RT_MANIFEST id 1.  `pyversion.hxx` is generated from
+`zipcore/pyversion.inc` (sed `@` → `2.7.18`; keep in step with the
+`python-core-<ver>` directory name).
+
+Before this, program/ held @python's raw `python.exe`, which could not start
+at all (0xC0000135): `@python` links it `/MANIFEST:NO` and embeds none, so
+`MSVCR90.dll` is unresolvable.  The interpreter under `python-core-2.7.18/bin`
+is therefore `:python_core_exe` — a copy with the VC90 application manifest
+embedded by the SDK's `mt.exe`, done here because the external module cannot
+name a main-repo label.
+
+Upstream's launcher does **not** put program/ on `PYTHONPATH`, so `import uno`
+resolves through `sys.path[0]` — the script's directory, or the CWD for `-c` —
+or through a `PYTHONPATH` the user sets (the launcher appends it).  Same as
+upstream; verified both ways, x86 and x64, including a full headless export
+run driven from the staged launcher.

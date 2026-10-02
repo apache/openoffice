@@ -871,14 +871,15 @@ xmerge        ✅  DONE 2026-10-02 — 5 jars to program/classes, all entry+mani
                    as upstream.  See main/xmerge/readme.md.
                    LIVE-TEST RECIPE (AOO has NO -convert-to; that is LibreOffice):
                    soffice -headless -accept=pipe,… then pyuno storeToURL per filter.
-                   FOUND DOING IT — program/python.exe CANNOT START (0xC0000135): it is the
-                   raw @python CPython exe, staged with NO CRT manifest (imports MSVCR90).
-                   Upstream ships AOO's own launcher there (pyuno/source/zipcore), never
-                   migrated.  In-office Python (pythonloader) is unaffected; external
-                   Python scripting is dead.  Test workaround: a scratch copy of
-                   python.exe + python27.dll + vc90_app.manifest beside it, PYTHONHOME=
-                   program/python-core-2.7.18, PYTHONPATH=program, URE_BOOTSTRAP=
-                   vnd.sun.star.pathname:program/fundamental.ini.  ⬜ TO FIX.
+                   FOUND DOING IT, FIXED SAME DAY — program/python.exe could not start
+                   (0xC0000135): it was the raw @python CPython exe, no CRT manifest, and
+                   none of the environment AOO's launcher sets.  Now program/python.exe
+                   IS upstream's launcher (pyuno/zipcore/python.cxx, embedded manifest),
+                   and python-core-2.7.18/bin/python.exe is CPython with the VC90
+                   manifest embedded by mt.exe (@python cannot name a main-repo label).
+                   Verified x86+x64.  NOTE upstream's launcher does NOT put program/ on
+                   PYTHONPATH: `import uno` resolves via sys.path[0] (script dir / CWD)
+                   or a user PYTHONPATH — same as upstream, not a migration gap.
 javainstaller2 ⬜ (Java installer UI)
 swext         ⬜  (Writer Java extensions e.g. mediawiki)
 unodevtools   ✅  MIGRATED 2026-08-18 and MOVED OUT of this bucket — it is not
