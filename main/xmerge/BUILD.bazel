@@ -1,0 +1,104 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
+
+# xmerge — the Java document-conversion framework behind the Palm / Pocket PC
+# filters (AportisDoc, Pocket Word, Pocket Excel).  Upstream: the Ant_*.mk
+# gbuild targets in this directory.  Five jars ship, all to program/classes:
+#
+#   xmerge.jar        the framework (plugin registry, DOM/merge utilities)
+#   XMergeBridge.jar  the UNO component com.sun.star.documentconversion.
+#                     XMergeBridge that XmlFilterAdaptor instantiates for
+#                     those filters (filter configs name it in UserData[0])
+#   aportisdoc.jar, pexcel.jar, pocketword.jar
+#                     the plugins.  NOT on any Class-Path: XMergeBridge opens
+#                     each one by URL, "$(progurl)/" + UserData[1], and the
+#                     filter configs say "classes/<plugin>.jar" — so their
+#                     location is fixed by the filter configuration, and each
+#                     must carry META-INF/converter.xml (read through a
+#                     jar: URL by ConverterInfoReader).
+#
+# NOT built, matching what upstream ships (scp2 file_javafilter.scp):
+# htmlsoff (built but never installed), the javadoc target, source/minicalc
+# and source/wordsmith (pre-gbuild leftovers, not in Module_xmerge.mk), and
+# xmergesync.dll — a PREBUILT ActiveSync binary checked in under
+# source/activesync/BIN, 32-bit only, for syncing with a Windows CE device.
+
+_JAVACOPTS = ["--release", "8", "-XepDisableAllChecks"]
+
+_UNO_DEPS = [
+    "//main/javaunohelper:juh_jar",
+    "//main/jurt:jurt",
+    "//main/ridljar:ridl",
+    "//main/unoil:unoil",
+]
+
+# ── xmerge.jar ───────────────────────────────────────────────────────────────
+# Manifest = java/xmerge/manifest.mf + the build.xml's jar.classpath, line for
+# line.  The Class-Path names three Xerces/Xalan jars that AOO does not ship
+# either; a missing Class-Path entry is skipped by the JVM, and the framework
+# runs on the JDK's own JAXP.  "#IMPL-VERSION#" is upstream's literal: the
+# substitution it was meant for never existed in the gbuild Ant build either.
+java_library(
+    name = "xmerge_classes",
+    srcs = glob(["java/xmerge/src/main/java/**/*.java"]),
+    resources = glob(["java/xmerge/src/main/resources/**"]),
+    resource_strip_prefix = "main/xmerge/java/xmerge/src/main/resources",
+    javacopts = _JAVACOPTS,
+    deps = _UNO_DEPS,
+)
+
+uno_jar(
+    name = "xmerge_jar",
+    out = "xmerge.jar",
+    jars = [":xmerge_classes"],
+    manifest_lines = [
+        "Main-Class: org.openoffice.xmerge.test.Driver",
+        "Specification-Title: Apache OpenOffice XMerge Framework",
+        "Specification-Vendor: Apache OpenOffice",
+        "Specification-Version: 0.6.0",
+        "Implementation-Version: #IMPL-VERSION#",
+        "Class-Path: xml-apis.jar xercesImpl.jar serializer.jar",
+    ],
+)
+
+# ── XMergeBridge.jar ─────────────────────────────────────────────────────────
+# UNO-Type-Path present and EMPTY (trailing space: singlejar splits on ": ");
+# absent is NOT the same — see //main/wizards.
+java_library(
+    name = "xmergebridge_classes",
+    srcs = glob(["java/XMergeBridge/src/main/java/**/*.java"]),
+    javacopts = _JAVACOPTS,
+    deps = _UNO_DEPS + [":xmerge_classes"],
+)
+
+uno_jar(
+    name = "XMergeBridge_jar",
+    out = "XMergeBridge.jar",
+    jars = [":xmergebridge_classes"],
+    manifest_lines = [
+        "RegistrationClassName: XMergeBridge",
+        "UNO-Type-Path: ",
+        "Class-Path: xmerge.jar",
+    ],
+)
+
+# ── the three plugins ────────────────────────────────────────────────────────
+[(
+    java_library(
+        name = p + "_classes",
+        srcs = glob(["java/%s/src/main/java/**/*.java" % p]),
+        resources = glob(["java/%s/src/main/resources/**" % p]),
+        resource_strip_prefix = "main/xmerge/java/%s/src/main/resources" % p,
+        javacopts = _JAVACOPTS,
+        deps = [":xmerge_classes"],
+    ),
+    uno_jar(
+        name = p + "_jar",
+        out = p + ".jar",
+        jars = [":%s_classes" % p],
+    ),
+) for p in ["aportisdoc", "pexcel", "pocketword"]]
+
+exports_files(["java/XMergeBridge/XMergeBridge.component"])

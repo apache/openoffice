@@ -563,6 +563,32 @@ res_stage(
 # Shared autotext (.dat, .bau), wordbook dictionaries, gallery SVG/GIF objects,
 # document templates, bibliography database, and the OpenSymbol font.
 
+# ── share/xslt — XSLT filter stylesheets (//main/filter) ─────────────────────
+# Without these, every XSLT filter fails AFTER the Java transformer starts:
+# XSLTransformer throws FileNotFoundException on e.g.
+# share/xslt/export/xhtml/opendoc2xhtml.xsl and the store reports a bare
+# ErrorCodeIOException.
+tree_install(
+    name = "_install_xslt",
+    src          = "//main/filter:xslt_stylesheets",
+    strip_prefix = "main/filter/source/xslt",
+    dst          = "share/xslt",
+)
+
+tree_install(
+    name = "_install_xslt_odf2xhtml",
+    src          = "//main/filter:xslt_odf2xhtml_stylesheets",
+    strip_prefix = "main/filter/source/xslt/odf2xhtml",
+    dst          = "share/xslt",
+)
+
+tree_install(
+    name = "_install_xslt_docbook",
+    src          = "//main/filter:xslt_docbook",
+    strip_prefix = "main/filter/source/docbook",
+    dst          = "share/xslt/docbook",
+)
+
 tree_install(
     name = "_install_autotext",
     src          = "//main/extras:autotext_files",
@@ -829,6 +855,15 @@ filegroup(
         # (commonwizards.jar names saxon9.jar in its Class-Path too.)
         "//main/filter:XSLTFilter_jar",
         "//main/saxon:saxon9_jar",
+        # xmerge, for the Palm / Pocket PC filters.  program/classes is the
+        # lookup path for all five: XMergeBridge.jar is registered there and
+        # names xmerge.jar by relative Class-Path, and the three plugins are
+        # opened as "$(progurl)/classes/<plugin>.jar" from the filter configs.
+        "//main/xmerge:xmerge_jar",
+        "//main/xmerge:XMergeBridge_jar",
+        "//main/xmerge:aportisdoc_jar",
+        "//main/xmerge:pexcel_jar",
+        "//main/xmerge:pocketword_jar",
     ],
 )
 
@@ -902,6 +937,9 @@ filegroup(
         ":_install_images_industrial_zip",
         ":_install_uiconfig",
         ":_install_classes",
+        ":_install_xslt",
+        ":_install_xslt_odf2xhtml",
+        ":_install_xslt_docbook",
         ":_install_java_config",
         ":_install_python_scripts",
         # The Python stdlib tree is NOT optional: pythonloader.dll calls

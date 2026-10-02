@@ -25,7 +25,7 @@ load("@product_info//:defs.bzl", "PRODUCT_NAME", "PRODUCT_FULLNAME", "PRODUCT_VE
 # ── Component files — Windows build ──────────────────────────────────────────
 # Mirrors packcomponents/makefile.mk my_components for OS=WNT.
 # The remaining Java-only components (ScriptFramework, postgresql,
-# XMergeBridge, LuceneHelpWrapper, XSLTValidate) are omitted — those modules
+# LuceneHelpWrapper, XSLTValidate) are omitted — those modules
 # are not migrated yet.  hsqldb/jdbc landed with the embedded database, and the
 # eight wizards components with //main/wizards.
 # ENABLE_ONLINE_UPDATE components (updchk.uno) are included.
@@ -278,6 +278,11 @@ _SERVICES_COMPONENTS = {
         basis_native("xsltfilter.dll"),
     "//main/filter:source/xsltfilter/XSLTFilter.jar.component":
         basis_java("XSLTFilter.jar"),
+    # XMergeBridge — what the Palm / Pocket PC filters (palm/pocketword/
+    # pocketexcel xcd) instantiate.  Those filters were packed before this
+    # existed, i.e. offered with nothing behind them.  //main/xmerge.
+    "//main/xmerge:java/XMergeBridge/XMergeBridge.component":
+        basis_java("XMergeBridge.jar"),
 
     # ── forms ────────────────────────────────────────────────────────────
     "//main/forms:util/frm.component":

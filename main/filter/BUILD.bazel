@@ -685,6 +685,36 @@ uno_jar(
     ],
 )
 
+# ── share/xslt — the stylesheets the XSLT filters run ─────────────────────────
+# The filter configs name these by path (e.g. XHTML export opens
+# share/xslt/export/xhtml/opendoc2xhtml.xsl), so the LAYOUT is the contract.
+# Mirrors filter/prj/d.lst + scp2 (55 files): d.lst flattens odf2xhtml/export/
+# onto export/, hence a separate group with its own strip prefix.
+# common/copy.xsl is delivered by d.lst but never installed by scp2; omitted.
+filegroup(
+    name = "xslt_stylesheets",
+    srcs = glob(
+        [
+            "source/xslt/common/*.xsl",
+            "source/xslt/export/*/*.xsl",
+            "source/xslt/import/*/*.xsl",
+        ],
+        exclude = ["source/xslt/common/copy.xsl"],
+    ),
+)
+
+filegroup(
+    name = "xslt_odf2xhtml_stylesheets",
+    srcs = glob(["source/xslt/odf2xhtml/export/**/*.xsl"]),
+)
+
+# DocBook import/export: the two heading stylesheets and the template the
+# DocBook_File filter config names as ../share/xslt/docbook/DocBookTemplate.stw.
+filegroup(
+    name = "xslt_docbook",
+    srcs = glob(["source/docbook/*.xsl", "source/docbook/*.stw"]),
+)
+
 # ── xsltdlg.dll ──────────────────────────────────────────────────────────────
 # .src resource files skipped — no rsc pipeline yet
 cc_library(
