@@ -20,13 +20,11 @@
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Arrays;
+import java.net.URLDecoder;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -45,15 +43,6 @@ public class Tools {
     private static final int MAX_EXCEPTION_NESTING = 8;
 
     private static final Logger LOGGER = Logger.getLogger(Tools.class.getName());
-
-    /**
-     * URL schemes that resolve to the local filesystem or the running JVM image.
-     *
-     * <p>jvmaccess/source/classpath.cxx enforces the same allow-list in C++ for
-     * the UNO bootstrap class path; keep the two in sync.</p>
-     */
-    private static final Set<String> LOCAL_PROTOCOLS =
-            Collections.unmodifiableSet(new HashSet<>(Arrays.asList("file", "jrt", "jmod")));
 
     public static SQLException toUnoException(Object source, Throwable throwable) {
         return toUnoException(source, throwable, 0);
@@ -153,26 +142,21 @@ public class Tools {
     /**
      * Appends a class path entry to the list of URLs used to build a class loader.
      *
-     * <p>Only local entries or a jar: wrapping a local entry are added; a file: entry must
-     * in addition name a path on this machine. A malformed or non-local entry is logged and
-     * skipped.</p>
+     * <p>Only a file: entry naming a path on this machine is added.
+     * A malformed or non-local entry is logged and skipped.</p>
      *
      * @param urls the list of class path URLs to append to
      * @param url  the class path entry to parse and validate
      */
     public static void addClassPathURL(Collection<URL> urls, String url) {
         URL javaURL;
-        URL effectiveURL;
         try {
             javaURL = new URL(url);
-            effectiveURL = getEffectiveURL(javaURL);
         } catch (MalformedURLException e) {
             LOGGER.log(Level.WARNING, e, () -> "Skipping malformed class path entry: " + url);
             return;
         }
-        String protocol = effectiveURL.getProtocol();
-        if (LOCAL_PROTOCOLS.contains(protocol)
-                && (!"file".equals(protocol) || isLocalFileLocation(effectiveURL))) {
+        if (isLocalFileUrl(javaURL)) {
             LOGGER.fine(() -> "Adding class path entry: " + url);
             urls.add(javaURL);
         } else {
@@ -181,65 +165,34 @@ public class Tools {
     }
 
     /**
-     * Returns the URL that actually locates the resource.
+     * Tells whether a class path entry is a file: URL naming a path on this machine.
      *
-     * <p>Since {@code jar:} only wraps another URL, that wrapped URL is returned.
-     * For any other URL the URL itself is returned.</p>
+     * <p>jvmaccess/source/classpath.cxx enforces the same check in C++; keep the two in sync.</p>
      *
-     * @param url the class path URL to inspect
-     * @return the effective URL
-     * @throws MalformedURLException if the wrapped jar: URL cannot be parsed
-     */
-    private static URL getEffectiveURL(URL url) throws MalformedURLException {
-        if (!"jar".equals(url.getProtocol())) {
-            return url;
-        }
-        String path = url.getPath();
-        int separator = path.lastIndexOf("!/");
-        return new URL(separator == -1 ? path : path.substring(0, separator));
-    }
-
-    /**
-     * Tells whether a file: URL names a path on this machine.
-     *
-     * <p>The host must be empty or {@code localhost}, and the path must not name another
-     * machine by itself. The path is judged decoded, because the file: handler
-     * percent-decodes it and, on Windows, turns slashes into backslashes before opening
-     * it; a leading escaped slash or backslash would otherwise reach the file system as a
-     * reference to a share.</p>
-     *
-     * @param url a URL with the file: scheme
+     * @param url the class path entry
      * @return whether the URL names a local path
      */
-    private static boolean isLocalFileLocation(URL url) {
+    private static boolean isLocalFileUrl(URL url) {
+        if (!"file".equals(url.getProtocol())) {
+            return false;
+        }
+        // The authority, if any, must be empty or localhost.
         String host = url.getHost();
         if (host != null && !host.isEmpty() && !"localhost".equalsIgnoreCase(host)) {
             return false;
         }
-        String path = percentDecoded(url.getPath());
+        // The decoded path must start with exactly one slash,
+        // which also rules out a path without a leading slash,
+        // and must contain no backslash at all.
+        String path;
+        try {
+            // URLDecoder decodes form data, so a literal '+' is escaped to keep it a '+'.
+            path = URLDecoder.decode(url.getPath().replace("+", "%2B"), "UTF-8");
+        } catch (UnsupportedEncodingException | java.lang.IllegalArgumentException e) {
+            // A malformed escape, which the file: handler cannot decode either.
+            return false;
+        }
         return path.length() >= 2 && path.charAt(0) == '/' && path.charAt(1) != '/'
                 && path.indexOf('\\') == -1;
-    }
-
-    /**
-     * Undoes one level of %HH escapes, as the file: handler does. Only the ASCII
-     * separators matter to the caller, so each escape becomes the character of its byte
-     * value; a malformed escape is kept.
-     */
-    private static String percentDecoded(String s) {
-        StringBuilder buf = new StringBuilder(s.length());
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (c == '%' && s.length() - i > 2) {
-                int hi = Character.digit(s.charAt(i + 1), 16);
-                int lo = Character.digit(s.charAt(i + 2), 16);
-                if (hi != -1 && lo != -1) {
-                    c = (char) (hi * 16 + lo);
-                    i += 2;
-                }
-            }
-            buf.append(c);
-        }
-        return buf.toString();
     }
 }

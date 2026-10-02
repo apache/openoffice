@@ -34,10 +34,12 @@
 #include "com/sun/star/uno/XComponentContext.hpp"
 #include "com/sun/star/uno/XInterface.hpp"
 #include "com/sun/star/uri/UriReferenceFactory.hpp"
+#include "com/sun/star/uri/XUriReference.hpp"
+#include "com/sun/star/uri/XUriReferenceFactory.hpp"
 #include "com/sun/star/uri/XVndSunStarExpandUrlReference.hpp"
 #include "com/sun/star/util/XMacroExpander.hpp"
 #include "osl/diagnose.h"
-#include "rtl/ustrbuf.hxx"
+#include "rtl/uri.hxx"
 #include "rtl/ustring.hxx"
 #include "sal/types.h"
 
@@ -50,88 +52,48 @@ namespace {
 namespace css = ::com::sun::star;
 
 #if defined SOLAR_JAVA
-int hexDigitValue(sal_Unicode c)
+// Whether a class path entry is a file: URL naming a path on this machine.
+//
+// On Windows, Java opens a file: URL as a UNC path, i.e. a file on another
+// machine, in two cases:
+//
+// - if its authority names a host, e.g. file://host/share/a.jar;
+// - if its path (or opaque part), once percent-decoded and with backslashes
+//   read as slashes, starts with two slashes, e.g. file:////host/share/a.jar,
+//   file:/%5C%5Chost/share/a.jar or file:%5C%5Chost/share/a.jar.
+//
+// com.sun.star.comp.sdbc.Tools enforces the same check on the Java side; keep
+// the two in sync.
+bool isLocalFileUrl(
+    css::uno::Reference< css::uri::XUriReferenceFactory > const & factory,
+    ::rtl::OUString const & url)
 {
-    if (c >= '0' && c <= '9') {
-        return c - '0';
-    }
-    if (c >= 'A' && c <= 'F') {
-        return c - 'A' + 10;
-    }
-    if (c >= 'a' && c <= 'f') {
-        return c - 'a' + 10;
-    }
-    return -1;
-}
-
-// Undoes one level of %HH escapes, as the JDK's file: handler does before it
-// opens a path.  Only the ASCII separators matter to the caller, so each escape
-// simply becomes the code unit of its byte value; a malformed escape is kept.
-::rtl::OUString percentDecoded(::rtl::OUString const & s)
-{
-    sal_Int32 const n = s.getLength();
-    ::rtl::OUStringBuffer buf(n);
-    for (sal_Int32 i = 0; i != n; ++i) {
-        sal_Unicode c = s[i];
-        if (c == '%' && n - i > 2) {
-            int const hi = hexDigitValue(s[i + 1]);
-            int const lo = hexDigitValue(s[i + 2]);
-            if (hi != -1 && lo != -1) {
-                c = static_cast< sal_Unicode >(hi * 16 + lo);
-                i += 2;
-            }
-        }
-        buf.append(c);
-    }
-    return buf.makeStringAndClear();
-}
-
-// Whether the part of a file: URL after the scheme names a path on this
-// machine: the authority, if any, must be empty or localhost, and the path must
-// not name another machine by itself.  The path is judged decoded, because the
-// JDK's file: handler percent-decodes it and, on Windows, turns slashes into
-// backslashes before opening it -- a leading escaped slash or backslash would
-// otherwise reach the file system as a reference to a share.
-bool isLocalFileLocation(::rtl::OUString const & afterScheme)
-{
-    ::rtl::OUString rest(afterScheme);
-    if (rest.indexOf('\\') != -1) {
+    css::uno::Reference< css::uri::XUriReference > const uriRef(
+        factory->parse(url));
+    if (!uriRef.is()
+        || !uriRef->getScheme().equalsIgnoreAsciiCaseAsciiL(
+            RTL_CONSTASCII_STRINGPARAM("file")))
+    {
         return false;
     }
-    if (rest.matchAsciiL(RTL_CONSTASCII_STRINGPARAM("//"))) {
-        sal_Int32 const end = rest.indexOf('/', 2);
-        ::rtl::OUString const authority(
-            end == -1 ? rest.copy(2) : rest.copy(2, end - 2));
+    // The authority, if any, must be empty or localhost.
+    if (uriRef->hasAuthority()) {
+        ::rtl::OUString const authority(uriRef->getAuthority());
         if (authority.getLength() != 0
             && !authority.equalsIgnoreAsciiCaseAsciiL(
                 RTL_CONSTASCII_STRINGPARAM("localhost")))
         {
             return false;
         }
-        rest = end == -1 ? ::rtl::OUString() : rest.copy(end);
     }
-    rest = percentDecoded(rest);
-    return rest.getLength() >= 2 && rest[0] == '/' && rest[1] != '/'
-        && rest.indexOf('\\') == -1;
-}
-
-// URL schemes that resolve to the local file system or the running JVM image,
-// optionally wrapped in a jar: URL; a file: URL must in addition name a path on
-// this machine.
-//
-// com.sun.star.comp.sdbc.Tools enforces the same allow-list on the Java side;
-// keep the two in sync.
-bool isLocalClassPathUrl(::rtl::OUString const & url)
-{
-    ::rtl::OUString rest(url);
-    if (rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jar:"))) {
-        rest = rest.copy(RTL_CONSTASCII_LENGTH("jar:"));
-    }
-    if (rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("file:"))) {
-        return isLocalFileLocation(rest.copy(RTL_CONSTASCII_LENGTH("file:")));
-    }
-    return rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jrt:"))
-        || rest.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jmod:"));
+    // The decoded path must start with exactly one slash, which also rules out
+    // the opaque form, and must contain no backslash at all.
+    ::rtl::OUString const path(
+        ::rtl::Uri::decode(
+            uriRef->getPath(), rtl_UriDecodeWithCharset,
+            RTL_TEXTENCODING_UTF8));
+    return path.getLength() >= 2 && path[0] == '/' && path[1] != '/'
+        && path.indexOf('\\') == -1;
 }
 #endif
 
@@ -153,14 +115,14 @@ void * ::jvmaccess::ClassPath::doTranslateToUrls(
     if (ctorUrl == 0) {
         return 0;
     }
+    css::uno::Reference< css::uri::XUriReferenceFactory > const factory(
+        css::uri::UriReferenceFactory::create(context));
     ::std::vector< jobject > urls;
     for (::sal_Int32 i = 0; i != -1;) {
         ::rtl::OUString url(classPath.getToken(0, ' ', i));
         if (url.getLength() != 0) {
             css::uno::Reference< css::uri::XVndSunStarExpandUrlReference >
-                expUrl(
-                    css::uri::UriReferenceFactory::create(context)->parse(url),
-                    css::uno::UNO_QUERY);
+                expUrl(factory->parse(url), css::uno::UNO_QUERY);
             if (expUrl.is()) {
                 css::uno::Reference< css::util::XMacroExpander > expander(
                     context->getValueByName(
@@ -181,7 +143,7 @@ void * ::jvmaccess::ClassPath::doTranslateToUrls(
                 }
             }
             // Add only local entries; a non-local one is logged and skipped.
-            if (!isLocalClassPathUrl(url))
+            if (!isLocalFileUrl(factory, url))
             {
                 OSL_TRACE(
                     "jvmaccess::ClassPath: skipping non-local class path"
