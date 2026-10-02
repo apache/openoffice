@@ -52,6 +52,7 @@ bazel_dep(name = "mdds",                   version = "0.3.1")
 bazel_dep(name = "coinmp",                 version = "1.7.6")
 bazel_dep(name = "gtest",                  version = "1.7.0")  # GoogleTest — C++ unit-test foundation (//main/test)
 bazel_dep(name = "hsqldb",                 version = "1.8.0")  # embedded database engine behind sdbc:embedded:hsqldb (//main/connectivity)
+bazel_dep(name = "saxon",                  version = "9.0.0.7")  # XSLT 2.0 processor behind the Java XSLT filter (//main/saxon -> saxon9.jar)
 
 # Host JDK.  Expose a downloaded JDK so we can register an ARCH-NEUTRAL java
 # RUNTIME toolchain (see //build/toolchain/java).  rules_java only auto-registers

@@ -1,0 +1,44 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
+
+# saxon9.jar — Saxon-B 9.0.0.7, the XSLT 2.0 processor the Java XSLT filter
+# runs (//main/filter xsltfilter).  The classes are compiled in the @saxon
+# bzlmod module (ext_libraries/modules/saxon), which carries the notes on how
+# that compile mirrors upstream's Ant target compile-bj; this package does
+# what jar-bj does on top of it.
+#
+# Built against the toolchain JDK's javax.xml.stream: no stax jar, see the
+# "Dropped: stax" entry in .agent/migration/frontier.md.
+
+# jar-bj's <metainf> adds one JAXP service registration.  Note what it does:
+# with saxon9.jar on a class loader, TransformerFactory.newInstance() through
+# that loader returns SAXON, not the JDK's built-in XSLT 1.0 processor.  That
+# is upstream's behaviour and the point of shipping it; it is also why every
+# jar that names saxon9.jar in its Class-Path (commonwizards.jar does) gets
+# XSLT 2.0 from plain JAXP calls.
+genrule(
+    name = "transformer_factory_service",
+    outs = ["META-INF/services/javax.xml.transform.TransformerFactory"],
+    cmd = "echo net.sf.saxon.TransformerFactoryImpl> $@",
+)
+
+java_library(
+    name = "saxon9_meta_inf",
+    resources = [":transformer_factory_service"],
+    resource_strip_prefix = "main/saxon",
+)
+
+uno_jar(
+    name = "saxon9_jar",
+    out = "saxon9.jar",
+    jars = [
+        "@saxon//:saxon9_classes",
+        ":saxon9_meta_inf",
+    ],
+    manifest_lines = [
+        "Project-Name: Saxon-B",
+        "Main-Class: net.sf.saxon.Transform",
+    ],
+)

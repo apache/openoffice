@@ -1,6 +1,8 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//main/filter:filter_rules.bzl", "FILTER_COPTS", "FILTER_HDR_DEPS", "graphic_filter")
 
@@ -593,7 +595,9 @@ filegroup(
 )
 
 # ── xsltfilter.dll ────────────────────────────────────────────────────────────
-# Java companion (XSLTFilter.jar) skipped — no Java pipeline yet
+# Does NOT transform anything itself: XSLTFilter.cxx always asks for
+# com.sun.star.comp.JAXTHelper, which only the Java XSLTransformer below
+# implements.  So this DLL alone serves no filter at all — see XSLTFilter.jar.
 cc_binary(
     name = "xsltfilter",
     srcs = [
@@ -641,6 +645,44 @@ filegroup(
     srcs = [":xsltfilter"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+# ── XSLTFilter.jar — the Java half of the XSLT filter ─────────────────────────
+# XSLTransformer is com.sun.star.comp.JAXTHelper, the only transformer
+# xsltfilter.dll ever asks for, so EVERY XSLT-based filter goes through it:
+# XHTML export (Writer/Calc/Impress/Draw), MS Word/Excel 2003 XML, DocBook and
+# UOF.  It was registered in services.rdb long before it was built, which made
+# all of those filters selectable with nothing behind them.
+#
+# Manifest = the checked-in source/xsltfilter/Manifest, line for line:
+#   * Class-Path: saxon9.jar — a RELATIVE entry resolved against this jar's own
+#     URL, so saxon9.jar must sit beside it in program/classes.  saxon9.jar's
+#     META-INF/services is what makes TransformerFactory.newInstance() in
+#     XSLTransformer return Saxon (XSLT 2.0) instead of the JDK's XSLT 1.0.
+#   * UNO-Type-Path present and EMPTY (trailing space: singlejar splits on
+#     ": ").  Absent is NOT the same — see //main/wizards.
+java_library(
+    name = "xsltfilter_classes",
+    srcs = glob(["source/xsltfilter/com/sun/star/comp/xsltfilter/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/javaunohelper:juh_jar",
+        "//main/jurt:jurt",
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+        "@saxon//:saxon9_classes",
+    ],
+)
+
+uno_jar(
+    name = "XSLTFilter_jar",
+    out = "XSLTFilter.jar",
+    jars = [":xsltfilter_classes"],
+    manifest_lines = [
+        "RegistrationClassName: com.sun.star.comp.xsltfilter.XSLTransformer",
+        "Class-Path: saxon9.jar",
+        "UNO-Type-Path: ",
+    ],
 )
 
 # ── xsltdlg.dll ──────────────────────────────────────────────────────────────

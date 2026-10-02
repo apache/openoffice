@@ -1,0 +1,78 @@
+load("@rules_java//java:defs.bzl", "java_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Saxon-B 9.0.0.7 — the XSLT 2.0 processor behind the Java XSLT filter
+# (//main/filter xsltfilter: UOF, DocBook and user XSLT 2.0 import/export).
+# Consumed as saxon9.jar via //main/saxon.
+#
+# Mirrors AOO's build.xml (added to the tarball by main/saxon's patch, which
+# touches nothing else): target compile-bj + jar-bj.
+#
+#   * compile set = net/** minus the optional bindings, exactly upstream's
+#     <exclude> list.  Each excluded package is an adapter to a library AOO
+#     does not ship (dom4j, jdom, xom, sql, xqj), a separately-jarred API
+#     (xpath, s9api), .NET, or Ant.  The patterns match a directory of that
+#     name at ANY depth, as Ant's do.
+#   * upstream's copysource step also replaces /*DOTNETONLY*/ with // in
+#     Configuration.java.  That token does not occur in 9.0.0.7 (only
+#     /*JAVAONLY*/ does, and that one is kept), so the replace is a no-op and
+#     there is nothing to reproduce.
+#   * pull/PullToStax.java and pull/StaxBridge.java ARE compiled: they use
+#     javax.xml.stream, which the JDK has provided since Java 6 — the reason
+#     AOO's separate stax module is dropped rather than migrated.
+#
+# ENCODING.  Upstream's <javac encoding="ISO-8859-1">, and ten files really
+# are Latin-1 -- in the Numberer_* ones inside STRING LITERALS (localized month
+# and day names, e.g. "März"), so the bytes are behaviour, not comments.
+# Bazel's JavaBuilder compiles UTF-8 and overrides an -encoding in javacopts,
+# so those ten are transcoded ISO-8859-1 -> UTF-8 here (a lossless mapping:
+# every Latin-1 byte is one code point) and the originals excluded.  The list
+# is exact: every other source is ASCII.  A new non-ASCII file in a future
+# version would fail loudly as "unmappable character", not silently.
+_LATIN1_SRCS = [
+    "net/sf/saxon/codenorm/NormalizerData.java",
+    "net/sf/saxon/codenorm/UnicodeDataGenerator.java",
+    "net/sf/saxon/number/Numberer_da.java",
+    "net/sf/saxon/number/Numberer_de.java",
+    "net/sf/saxon/number/Numberer_fr.java",
+    "net/sf/saxon/number/Numberer_frBE.java",
+    "net/sf/saxon/number/Numberer_it.java",
+    "net/sf/saxon/number/Numberer_nl.java",
+    "net/sf/saxon/number/Numberer_nlBE.java",
+    "net/sf/saxon/number/Numberer_sv.java",
+]
+
+[genrule(
+    name = "utf8_" + f.split("/")[-1].replace(".java", ""),
+    srcs = [f],
+    outs = ["utf8/" + f],
+    cmd = "iconv -f ISO-8859-1 -t UTF-8 $< > $@",
+) for f in _LATIN1_SRCS]
+
+# Upstream compiled with source/target 1.4; javac 21 cannot go below 8, which
+# is what every other Java target in this tree uses.
+java_library(
+    name = "saxon9_classes",
+    srcs = ["utf8/" + f for f in _LATIN1_SRCS] + glob(
+        ["net/**/*.java"],
+        exclude = _LATIN1_SRCS + [
+            "**/ant/**",
+            "**/dom/**",
+            "**/dom4j/**",
+            "**/dotnet/**",
+            "**/javax/**",
+            "**/jdom/**",
+            "**/s9api/**",
+            "**/sql/**",
+            "**/xom/**",
+            "**/xpath/**",
+            "**/xqj/**",
+        ],
+    ),
+    javacopts = [
+        "--release", "8",
+        "-nowarn",
+        "-XepDisableAllChecks",
+    ],
+)

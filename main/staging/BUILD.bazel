@@ -823,6 +823,12 @@ filegroup(
         "//main/wizards:report_jar",
         "//main/wizards:table_jar",
         "//main/wizards:web_jar",
+        # The XSLT filter.  services.rdb registers XSLTFilter.jar at
+        # program/classes, and its manifest's "Class-Path: saxon9.jar" is
+        # resolved relative to its own URL — so both belong here, together.
+        # (commonwizards.jar names saxon9.jar in its Class-Path too.)
+        "//main/filter:XSLTFilter_jar",
+        "//main/saxon:saxon9_jar",
     ],
 )
 
