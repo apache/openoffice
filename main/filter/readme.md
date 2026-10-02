@@ -56,9 +56,21 @@ impswfdialog.src, t602filter.src, xsltdialog/*.src, eps/epsstr.src) are
 **skipped** — no rsc compilation pipeline exists in the Bazel build yet.
 UI strings/dialogs from those targets will be absent at runtime.
 
-**Java components skipped** — `xsltvalidate` (pure Java) and the Java half of
-`xsltfilter` (XSLTFilter.jar) require a Java pipeline not yet implemented.
-`svgimport.cxx` (JVM-based SVG import) is also omitted.
+**XSLTFilter.jar** (the Java half of `xsltfilter`, built 2026-10-02) — the C++
+`xsltfilter.dll` transforms nothing itself: `XSLTFilter.cxx` always asks for
+`com.sun.star.comp.JAXTHelper`, which only the Java `XSLTransformer` provides.
+So EVERY XSLT-based filter goes through this jar — XHTML export
+(Writer/Calc/Impress/Draw), MS Word/Excel 2003 XML, DocBook, UOF.  It had been
+registered in services.rdb at `program/classes/XSLTFilter.jar` all along with
+no jar behind it, while those filters were packed and offered in the UI.
+Manifest = the checked-in `source/xsltfilter/Manifest`: `Class-Path:
+saxon9.jar` (relative, so `//main/saxon` is staged beside it) and an EMPTY but
+present `UNO-Type-Path` (needs the trailing space; see `//main/wizards`).
+Verified against the dmake jar: identical entries and manifest attributes.
+
+**Still skipped** — `xsltvalidate` (needs crimson/xalan jars; NOT registered,
+so nothing reaches it — its only caller is the XSLT dialog's validate action)
+and `svgimport.cxx` (JVM-based SVG import).
 
 **COMPMOD_NAMESPACE** — `xmlfa` and `xfld` define `COMPMOD_NAMESPACE=framework`
 as in their makefiles (used for internal namespace routing).

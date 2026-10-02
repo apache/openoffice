@@ -786,16 +786,35 @@ bridges (incl. the java_uno JNI bridge: java_uno.dll + java_uno.jar, done
 the higher-level Java apps/extensions still to do (no longer gated on rules_java
 itself; per-module UNO-Java component/packaging rules may still be needed).
 reportbuilder ⬜  (pure Java .oxt extension; blockers: JFreeReport suite not on Maven, SourceForge ZIPs have token-based URLs; wizards dep also deferred)
-bean          ⬜  (Java bean component)
-saxon         ⬜  (XSLT 2.0 processor — IN SCOPE for full migration.  Feeds the
-                   Java xsltfilter UNO component (UOF/DocBook/user XSLT-2.0 filters);
-                   without it those filters silently drop (upstream gates the whole
-                   xsltfilter lib behind DISABLE_SAXON).  Leaf of the Java bucket —
-                   only useful once Java/UNO-component rules exist, so sequence AFTER
-                   rules_java enablement, not before.  saxon9.jar = 3rd-party tarball
-                   source-9.0.0.7-bj (ant/build.xml) → http_archive + java build or
-                   vendored jar.  When built, compile against the toolchain JDK's
-                   javax.xml.stream — no bundled stax jar.  See Dropped: stax below.)
+bean          ✅  DONE 2026-10-02 — officebean.jar (program/classes) + officebean.dll
+                   (program/, found one dir up by jurt NativeLibraryLoader).  Jar
+                   entry-identical to dmake's.  DLL: undecorated Java_* DEF + RT_MANIFEST
+                   id 2 (a foreign java.exe loads it — jpipe rule).  jawt is an import
+                   lib cut from a STUB compiled against the JDK's jawt.h
+                   (//build/third_party/jawt), not a machine JDK's jawt.lib: a
+                   `lib /DEF:` one is WRONG on x86 (name type "no prefix" ⇒ loader wants
+                   JAWT_GetAWT@8, jawt.dll exports _JAWT_GetAWT@8; MSVC lib has no `==`).
+                   LANDMINE: the staging aspect follows additional_linker_inputs to the
+                   DLL — right for every real DLL, fatal for a stub (beside
+                   officebean.dll it wins the import) — so the stub is exposed via
+                   import_lib_only, whose attr the aspect does not traverse.
+                   GENERAL: //main/staging never PRUNES — a file that stops being
+                   produced stays in bazel-*-bin/main/staging until a clean.
+                   See main/bean/readme.md.
+saxon         ✅  DONE 2026-10-02 — saxon9.jar via a bzlmod module over the
+                   ext_sources zip; entry-identical (1046) to the dmake jar, Latin-1
+                   string constants byte-identical.  No stax (JDK javax.xml.stream).
+                   LANDMINE: JavaBuilder IGNORES -encoding in javacopts (forces UTF-8);
+                   ten Latin-1 sources (Numberer_* STRING LITERALS) are iconv'd in the
+                   overlay.  The jar's META-INF/services TransformerFactory entry makes
+                   JAXP return Saxon wherever it is on the class path.
+                   UNBLOCKED A LIVE DEFECT: XSLTFilter.jar (filter/xsltfilter Java half)
+                   had been REGISTERED with no jar while xsltfilter.dll only ever asks for
+                   its JAXTHelper ⇒ XHTML export, Word/Excel 2003 XML, DocBook, UOF all
+                   offered with nothing behind them.  Now built (entry-identical to dmake)
+                   and staged beside saxon9.jar (relative Class-Path).  Not yet exercised
+                   in a running office.  xsltvalidate still ⬜ (crimson/xalan, and
+                   unregistered).  See main/saxon/readme.md, main/filter/readme.md.
 wizards       ✅  DONE 2026-08-16 — File > Wizards is LIVE (officecfg had
                    dispatched service:com.sun.star.wizards.letter.CallWizard?start
                    at nothing since the demo baseline).  Three unrelated halves:
