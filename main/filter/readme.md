@@ -68,6 +68,16 @@ saxon9.jar` (relative, so `//main/saxon` is staged beside it) and an EMPTY but
 present `UNO-Type-Path` (needs the trailing space; see `//main/wizards`).
 Verified against the dmake jar: identical entries and manifest attributes.
 
+**share/xslt** — the stylesheets themselves, staged 2026-10-02 (55 files,
+identical to scp2's list: filter/prj/d.lst maps `source/xslt/odf2xhtml/export/`
+onto `export/`, so it is its own filegroup; `common/copy.xsl` is delivered by
+d.lst but never installed; DocBook's three files go to `share/xslt/docbook/`).
+Without them every XSLT filter failed AFTER the transformer started — Java
+FileNotFoundException on the .xsl, a bare ErrorCodeIOException at the API.
+**Exercised in a running office** (x86): XHTML, MS Word 2003 XML and DocBook
+export all produce correct output; Saxon's "Running an XSLT 1.0 stylesheet with
+an XSLT 2.0 processor" warning confirms JAXP resolves to Saxon, as upstream.
+
 **Still skipped** — `xsltvalidate` (needs crimson/xalan jars; NOT registered,
 so nothing reaches it — its only caller is the XSLT dialog's validate action)
 and `svgimport.cxx` (JVM-based SVG import).

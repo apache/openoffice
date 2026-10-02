@@ -812,8 +812,11 @@ saxon         ✅  DONE 2026-10-02 — saxon9.jar via a bzlmod module over the
                    had been REGISTERED with no jar while xsltfilter.dll only ever asks for
                    its JAXTHelper ⇒ XHTML export, Word/Excel 2003 XML, DocBook, UOF all
                    offered with nothing behind them.  Now built (entry-identical to dmake)
-                   and staged beside saxon9.jar (relative Class-Path).  Not yet exercised
-                   in a running office.  xsltvalidate still ⬜ (crimson/xalan, and
+                   and staged beside saxon9.jar (relative Class-Path).  Then a THIRD
+                   layer: share/xslt (the .xsl files) was never staged either — fixed, 55
+                   files identical to scp2.  EXERCISED LIVE (x86): XHTML, Word 2003 XML,
+                   DocBook export all correct; Saxon's "XSLT 1.0 stylesheet with an XSLT
+                   2.0 processor" warning proves JAXP resolves to Saxon.  xsltvalidate still ⬜ (crimson/xalan, and
                    unregistered).  See main/saxon/readme.md, main/filter/readme.md.
 wizards       ✅  DONE 2026-08-16 — File > Wizards is LIVE (officecfg had
                    dispatched service:com.sun.star.wizards.letter.CallWizard?start
@@ -857,7 +860,25 @@ wizards       ✅  DONE 2026-08-16 — File > Wizards is LIVE (officecfg had
                    1033 source edits or re-keying images.zip for every module, i.e.
                    a product change; deliberately not slipped into a module port.
                    See main/wizards/readme.md.
-xmerge        ⬜  (document format converter, Java)
+xmerge        ✅  DONE 2026-10-02 — 5 jars to program/classes, all entry+manifest
+                   identical to dmake's; XMergeBridge registered.  The palm/pocketword/
+                   pocketexcel .xcd were packed long before, i.e. those filters were
+                   offered with NOTHING behind them (same class as connectivity +
+                   XSLTFilter).  EXERCISED LIVE (x86): Pocket Word export writes a valid
+                   .psw.  Plugins sit on no class path — XMergeBridge opens
+                   "$(progurl)/" + the filter config's "classes/<plugin>.jar".
+                   xmergesync.dll (prebuilt 32-bit ActiveSync) and htmlsoff not shipped,
+                   as upstream.  See main/xmerge/readme.md.
+                   LIVE-TEST RECIPE (AOO has NO -convert-to; that is LibreOffice):
+                   soffice -headless -accept=pipe,… then pyuno storeToURL per filter.
+                   FOUND DOING IT — program/python.exe CANNOT START (0xC0000135): it is the
+                   raw @python CPython exe, staged with NO CRT manifest (imports MSVCR90).
+                   Upstream ships AOO's own launcher there (pyuno/source/zipcore), never
+                   migrated.  In-office Python (pythonloader) is unaffected; external
+                   Python scripting is dead.  Test workaround: a scratch copy of
+                   python.exe + python27.dll + vc90_app.manifest beside it, PYTHONHOME=
+                   program/python-core-2.7.18, PYTHONPATH=program, URE_BOOTSTRAP=
+                   vnd.sun.star.pathname:program/fundamental.ini.  ⬜ TO FIX.
 javainstaller2 ⬜ (Java installer UI)
 swext         ⬜  (Writer Java extensions e.g. mediawiki)
 unodevtools   ✅  MIGRATED 2026-08-18 and MOVED OUT of this bucket — it is not
