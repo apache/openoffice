@@ -92,34 +92,54 @@ GNU-`patch` reference.  The originals stay at
 `source.json` change needs `bazel mod deps --lockfile_mode=refresh` — otherwise
 the stale external repo is reused and the rebuild "fails" for the old reason.
 
+## ODBC and MySQL drivers
+
+`odbcbase.dll` + `odbc.dll` and `mysql.dll`, migrated 2026-10-02.
+
+- `odbcbase` is to `odbc` what `file` is to `dbase`/`flat`/`calc`: the shared
+  connection/statement/result-set implementation, not a UNO component, exported
+  by declspec (`OOO_DLLIMPLEMENTATION_ODBCBASE`, `odbcbasedllapi.hxx`) so it has
+  no DEF.  It is staged but not registered.
+- **No ODBC import library is linked anywhere.**  `odbc.dll`'s `OFunctions.cxx`
+  `osl_loadModule`s `ODBC32.DLL` on the first connect and resolves every `SQL*`
+  entry point into function pointers, so `//main/unixODBC:odbc_headers` supplies
+  declarations only.  The office therefore starts, and the driver registers, on a
+  machine with no ODBC configured at all.
+- `mysql` is a pure delegator: `YDriver.cxx` rewrites `sdbc:mysql:odbc:` /
+  `sdbc:mysql:jdbc:` and asks `com.sun.star.sdbc.DriverManager` for the real
+  driver **by URL**, so it links neither `odbc` nor `jdbc` — but each arm only
+  works with its driver registered, which is why it came after `odbc`.
+  `mysql.xcu` also declares a third, native arm, `sdbc:mysql:mysqlc:*`, which
+  `YDriver` forwards as `sdbc:mysqlc:` — a driver only the separate MySQL
+  Connector extension provides.  That is safe without it, unlike the unbuilt
+  drivers below: nothing is registered for that URL, so `getDriverByURL` returns
+  null and `connect()` returns no connection; no library load is ever attempted.
+  Same behaviour as upstream without the extension.  It ships no MySQL client:
+  the user supplies Connector/J or an ODBC DSN.
+- Found while wiring these: `jdbc.xcu` had never been packed although `jdbc.dll`
+  was built and registered with the embedded database, so the generic **JDBC**
+  connection type was missing from the Base wizard (hsqldb did not need it —
+  dbaccess hardcodes `sdbc:embedded:hsqldb`).  Now packed.
+
 ## Drivers deliberately NOT registered
 
-`adabas`, `ado`, `mysql` and `odbc` have `.component` files and DataAccess
-`.xcu` files in this module, and **all four used to be registered in
-services.rdb with no DLL behind them**.  That is worse than not registering
-them: the driver manager resolves the service, `osl_loadModule` fails on a file
-that was never produced, and the resulting UNO exception escapes the VCL message
-loop to `desktop/source/app/app.cxx:2241`, whose `catch` calls `FatalError()` →
-`_exit()`.  Picking such a driver in Base killed the office instead of reporting
-an error.  They are now unregistered until their `cc_binary` exists.  What each
-would take:
+`adabas` and `ado` have `.component` files and DataAccess `.xcu` files in this
+module, and **both used to be registered in services.rdb with no DLL behind
+them** (as did `mysql` and `odbc` until they were built).  That is worse than not
+registering them: the driver manager resolves the service, `osl_loadModule` fails
+on a file that was never produced, and the resulting UNO exception escapes the VCL
+message loop to `desktop/source/app/app.cxx:2241`, whose `catch` calls
+`FatalError()` → `_exit()`.  Picking such a driver in Base killed the office
+instead of reporting an error.  They stay unregistered until their `cc_binary`
+exists.  What each would take:
 
-- **odbc** — `odbcbase.dll` (9 sources, declspec exports via
-  `OOO_DLLIMPLEMENTATION_ODBCBASE`) + `odbc.dll` (3 sources).  The header
-  dependency is already solved: `//main/unixODBC:odbc_headers` exists and works
-  on Windows (`_IODBCUNIX_H` guard; dbaccess already consumes it).  Cheapest of
-  the four.
-- **mysql** — 9 sources, no external libs.  A pure delegator: `YDriver.cxx`
-  routes `sdbc:mysql:odbc:` to the ODBC driver and `sdbc:mysql:jdbc:` to the
-  JDBC one.  Useless alone; nearly free once odbc exists, and the JDBC arm works
-  today.  Ships no MySQL client — the user supplies Connector/J or a DSN.
 - **ado** — 32 sources of COM/OLE-DB wrapper.  `adoint.h`, `adoctint.h`,
   `oledb.h`, `oaidl.h`, `ocidl.h` are all present in the pinned SDK v7.0 this
   build already uses, so there is no external module to add — just the largest
   file count and the least value on modern Windows.
-- **adabas** — 22 sources plus `odbcbase`, and it needs an installed Adabas D
-  server and client.  Discontinued commercial product; nothing can exercise it.
-  Recommend leaving it unregistered permanently.
+- **adabas** — 22 sources plus `odbcbase` (now built), and it needs an installed
+  Adabas D server and client.  Discontinued commercial product; nothing can
+  exercise it.  Recommend leaving it unregistered permanently.
 
 ## Source layout
 
@@ -190,4 +210,4 @@ files as textual fragments (declared via `_parse_generated` cc_library).
   its own comment says the `.res` is never installed and it exists only to force two
   images into `images.zip`, which was a dmake necessity.  `//main/default_images:images`
   globs `database/**/*.png` directly, so it would be a dead target here
-- Drivers still unmigrated: ado, odbc/odbcbase, mysql, adabas (see above)
+- Drivers still unmigrated: ado, adabas (see above)

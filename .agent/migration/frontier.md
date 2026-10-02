@@ -743,20 +743,24 @@ java.library.path — it resolves today because the JVM is in-process in
 soffice.exe and hsqldb.dll is already loaded from program/.  Its other preloads
 (msvcr71, uwinapi, dbtoolsmi) are STALE names absent from this build; those
 failures are swallowed by design, so they are noise, not the bug.
-STILL UNMIGRATED, with what each needs (none is blocked, all are just work):
- • odbc — odbcbase.dll (9 srcs, OOO_DLLIMPLEMENTATION_ODBCBASE declspec) +
-   odbc.dll (3 srcs).  Header dep ALREADY SOLVED: //main/unixODBC:odbc_headers
-   exists and works on Windows (_IODBCUNIX_H guard; dbaccess already uses it).
-   Cheapest of the four — do this next.
- • mysql — 9 srcs, zero external libs, a pure delegator (YDriver.cxx routes
-   sdbc:mysql:odbc: to ODBC and sdbc:mysql:jdbc: to JDBC).  The JDBC arm works
-   TODAY, so it is nearly free.  Ships no client; user supplies Connector/J.
+ODBC + MYSQL DONE 2026-10-02 (x86 install + x64 DLLs green; not yet run against
+a live DSN).  odbcbase.dll (declspec, unregistered — the file.dll of the ODBC
+side) + odbc.dll + mysql.dll, all registered, staged, DataAccess XCUs packed.
+NO ODBC IMPORT LIB anywhere: OFunctions.cxx osl_loadModule()s ODBC32.DLL on the
+first connect, so unixODBC is headers only.  mysql delegates BY URL through the
+driver manager (links neither odbc nor jdbc).  Its XCU's third, native arm
+(sdbc:mysql:mysqlc:) needs the MySQL Connector extension and is SAFE without it
+— getDriverByURL returns null, no library load is attempted — unlike an
+unbuilt-but-registered driver.  FOUND ALONG THE WAY: jdbc.xcu had never been
+packed although jdbc.dll was registered with the embedded database, so the
+generic JDBC type was missing from the Base wizard; now packed.
+STILL UNMIGRATED:
  • ado — 32 srcs of COM/OLE-DB.  adoint.h/adoctint.h/oledb.h/oaidl.h/ocidl.h
    are ALL in the pinned SDK v7.0 this build already uses, so there is NO
    external module to add — just the largest file count, lowest value.
- • adabas — 22 srcs + odbcbase, and needs an installed Adabas D server+client.
-   Discontinued commercial product; nothing can exercise it.  Recommend leaving
-   it unregistered permanently rather than migrating.
+ • adabas — 22 srcs + odbcbase (now built), and needs an installed Adabas D
+   server+client.  Discontinued commercial product; nothing can exercise it.
+   Recommend leaving it unregistered permanently rather than migrating.
 RESOURCE-LIBRARY SPLIT, fixed 2026-08-14 — GENERAL rsc_res LESSON: one module's
 source/**/*.src is NOT necessarily one .res.  connectivity/source/resource builds
 THREE (cnr, sdbcl, sdberr) and the old glob merged them into cnren-US.res alone,
