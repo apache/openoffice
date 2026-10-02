@@ -310,6 +310,10 @@ collect_outputs(
         "//main/connectivity:calc",
         "//main/connectivity:jdbc",
         "//main/connectivity:hsqldb",
+        # odbcbase is to odbc what file is to dbase: unregistered, but linked.
+        "//main/connectivity:odbcbase",
+        "//main/connectivity:odbc",
+        "//main/connectivity:mysql",
         "//main/dbaccess:dba",
         "//main/dbaccess:dbu",
         "//main/dbaccess:dbaxml",

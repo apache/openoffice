@@ -176,9 +176,15 @@ _SERVICES_COMPONENTS = {
         basis_native("hsqldb.dll"),
     "//main/connectivity:source/drivers/jdbc/jdbc.component":
         basis_native("jdbc.dll"),
+    # mysql adds MySQL catalog handling over one of jdbc/odbc, reached by URL
+    # through the driver manager, so it is only useful with both registered.
+    "//main/connectivity:source/drivers/mysql/mysql.component":
+        basis_native("mysql.dll"),
+    "//main/connectivity:source/drivers/odbc/odbc.component":
+        basis_native("odbc.dll"),
     "//main/connectivity:source/manager/sdbc2.component":
         basis_native("sdbc2.dll"),
-    # NOT registered: adabas, ado, mysql, odbc.  Their DLLs are not built (see
+    # NOT registered: adabas, ado.  Their DLLs are not built (see
     # connectivity/readme.md), and a registration without a library behind it is
     # worse than none: the driver manager resolves the service, osl_loadModule
     # fails on a file that was never produced, and the resulting UNO exception
@@ -993,10 +999,15 @@ _MAIN_XCU = [
     # what make a connection type selectable in the Base wizard, so listing a
     # driver here whose DLL does not exist is what turns "unsupported database"
     # into a hard process exit.  Keep this list in step with the component
-    # registrations above: dbase, flat, calc, hsqldb.
+    # registrations above: dbase, flat, calc, hsqldb, jdbc,
+    # odbc, mysql.  (jdbc.dll was registered from the start but its XCU was
+    # missed, so the generic JDBC type never showed in the wizard.)
     "//main/connectivity:source/drivers/dbase/dbase.xcu",
     "//main/connectivity:source/drivers/flat/flat.xcu",
     "//main/connectivity:source/drivers/hsqldb/hsqldb.xcu",
+    "//main/connectivity:source/drivers/jdbc/jdbc.xcu",
+    "//main/connectivity:source/drivers/mysql/mysql.xcu",
+    "//main/connectivity:source/drivers/odbc/odbc.xcu",
     # FCFGMerge spool
     fcfg("fcfg_base_types"),
     fcfg("fcfg_base_filters"),

@@ -413,6 +413,122 @@ cc_binary(
     visibility = ["//visibility:public"],
 )
 
+# ── odbcbase.dll — shared ODBC SDBC implementation ─────────────────
+# Not a UNO component, the same role file.dll plays for dbase/flat/calc: the
+# ODBC connection/statement/result-set classes that odbc.dll (and upstream's
+# adabas) derive from.  Exported by declspec via OOO_DLLPUBLIC_ODBCBASE
+# (source/inc/odbc/odbcbasedllapi.hxx), hence no win_def_file.
+#
+# Nothing here links an ODBC import library.  The ODBC API is reached only
+# through function pointers that odbc.dll's OFunctions.cxx resolves from
+# ODBC32.DLL at run time (osl_loadModule), so //main/unixODBC contributes
+# headers only -- the declarations of those pointer types.
+cc_binary(
+    name = "odbcbase",
+    srcs = glob(["source/drivers/odbcbase/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES + ["OOO_DLLIMPLEMENTATION_ODBCBASE"],
+    linkshared = True,
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+        "//main/unixODBC:odbc_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/vos:vos3MSC_implib",
+        ":dbtools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+        "$(execpath :dbtools_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "odbcbase_implib",
+    srcs = [":odbcbase"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── odbc.dll — ODBC driver (sdbc:odbc:) ────────────────────────────
+# The UNO component.  It loads ODBC32.DLL itself on first connect
+# (OFunctions.cxx LoadLibrary_ODBC3), so the office starts and the driver
+# registers fine on a machine with no ODBC data sources at all.
+cc_binary(
+    name = "odbc",
+    srcs = glob(["source/drivers/odbc/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/odbc.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+        "//main/unixODBC:odbc_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        ":odbcbase_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath :odbcbase_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── mysql.dll — MySQL driver (sdbc:mysql:odbc: / sdbc:mysql:jdbc:) ──
+# A pure delegator: YDriver.cxx rewrites the URL and asks the driver manager
+# for the ODBC or JDBC driver, so it adds MySQL-specific catalog/user/view
+# handling on top of one of those and ships no MySQL client of its own.  The
+# delegation is by URL through sdbc2, not by linking, hence no odbc or jdbc
+# implib below -- but each arm needs its driver REGISTERED, which is why this
+# target did not come before odbc.
+cc_binary(
+    name = "mysql",
+    srcs = glob(["source/drivers/mysql/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/mysql.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        ":dbtools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath :dbtools_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
 # ── jdbc.dll — generic JDBC bridge driver ──────────────────────────
 # SOLAR_JAVA is LOAD-BEARING, not a feature switch: jvmaccess/virtualmachine.hxx
 # #includes the real <jni.h> only under it and otherwise declares stubs, so
@@ -620,6 +736,7 @@ exports_files([
     "source/drivers/dbase/dbase.xcu",
     "source/drivers/flat/flat.xcu",
     "source/drivers/hsqldb/hsqldb.xcu",
+    "source/drivers/jdbc/jdbc.xcu",
     "source/drivers/mysql/mysql.xcu",
     "source/drivers/odbc/odbc.xcu",
 ])
