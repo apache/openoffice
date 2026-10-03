@@ -21,7 +21,6 @@
 
 
 import com.sun.star.uno.TypeClass;
-import java.util.Vector;
 
 public interface XLanguageSourceCodeGenerator {
 

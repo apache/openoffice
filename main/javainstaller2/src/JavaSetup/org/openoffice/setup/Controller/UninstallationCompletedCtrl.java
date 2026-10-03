@@ -31,7 +31,6 @@ import org.openoffice.setup.SetupData.ProductDescription;
 import org.openoffice.setup.SetupData.SetupDataProvider;
 import org.openoffice.setup.Util.InfoCtrl;
 import org.openoffice.setup.Util.LogManager;
-import java.util.Vector;
 
 public class UninstallationCompletedCtrl extends PanelController {
 

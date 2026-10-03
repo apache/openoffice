@@ -24,7 +24,6 @@
 package org.openoffice.netbeans.modules.office.actions;
 
 import java.util.Vector;
-import java.util.Enumeration;
 
 import org.openide.nodes.Node;
 import org.openide.util.HelpCtx;

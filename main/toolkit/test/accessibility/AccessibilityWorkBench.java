@@ -50,7 +50,6 @@ import com.sun.star.accessibility.XAccessibleStateSet;
 
 import com.sun.star.awt.XExtendedToolkit;
 
-import java.util.Vector;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

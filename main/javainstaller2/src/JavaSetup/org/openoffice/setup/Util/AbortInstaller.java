@@ -24,7 +24,6 @@
 package org.openoffice.setup.Util;
 
 import org.openoffice.setup.InstallData;
-import java.util.Vector;
 
 public class AbortInstaller {
 

@@ -23,7 +23,6 @@
 
 package org.openoffice.netbeans.modules.office.options;
 
-import java.util.Hashtable;
 import java.util.Enumeration;
 import java.io.File;
 import java.io.IOException;

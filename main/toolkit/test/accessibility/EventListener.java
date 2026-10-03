@@ -25,9 +25,7 @@ import javax.swing.tree.TreePath;
 import javax.swing.event.TreeModelListener;
 import javax.swing.event.TreeModelEvent;
 
-import java.util.Vector;
 import java.util.HashMap;
-import java.util.Enumeration;
 
 import com.sun.star.accessibility.*;
 import com.sun.star.uno.*;

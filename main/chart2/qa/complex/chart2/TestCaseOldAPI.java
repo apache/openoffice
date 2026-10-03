@@ -30,7 +30,6 @@ import com.sun.star.uno.Type;
 import com.sun.star.uno.XComponentContext;
 
 import java.io.PrintWriter;
-import java.util.Hashtable;
 
 import com.sun.star.lang.*;
 import com.sun.star.beans.*;

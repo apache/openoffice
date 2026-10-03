@@ -28,7 +28,6 @@ import com.sun.star.lang.IndexOutOfBoundsException;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Vector;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
