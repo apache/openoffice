@@ -881,7 +881,29 @@ xmerge        ✅  DONE 2026-10-02 — 5 jars to program/classes, all entry+mani
                    PYTHONPATH: `import uno` resolves via sys.path[0] (script dir / CWD)
                    or a user PYTHONPATH — same as upstream, not a migration gap.
 javainstaller2 ⬜ (Java installer UI)
-swext         ⬜  (Writer Java extensions e.g. mediawiki)
+swext         ✅  DONE 2026-10-03 — wiki-publisher.oxt (//main/swext:wiki-publisher), a
+                   DELIVERABLE like upstream's (nothing installs it).  Entry list identical
+                   to the dmake .oxt (59); processed XCUs byte-identical to dmake's en-US
+                   output.  VERIFIED LIVE x86+x64: unopkg add, WikiEditor instantiates
+                   from the extension jar, MediaWiki export incl. <math> via filter/math;
+                   httpclient GET through the shipped Class-Path.  New: build/rules/
+                   extension.bzl (ext_files/xcu_default/oxt_package, keyed by ARCHIVE
+                   PATH), help_extension (HelpLinker -extlangsrc/-extlangdest, help.*_),
+                   @commons-{codec,httpclient,lang3,logging} + //main/apache-commons,
+                   @xsltml, @tomcat repaired (servlet API only), main/BUILD.bazel
+                   (exports LICENSE_ALv2).  FOUR STAGING DEFECTS found and fixed — no
+                   extension with a Java component could ever have worked: unopkg.exe
+                   no manifest (0xC0000135); no version.ini ("unsatisfied
+                   dependencies"); uno.exe unstaged ("unknown error!" = raiseProcess);
+                   fundamental.ini URE_MORE_SERVICES empty (config applies, services
+                   null).  LANDMINE in the last fix: UNO_TYPES/UNO_SERVICES must NOT be
+                   in fundamental.ini — a missing layer unorc falls back to it and the
+                   URE_MORE_* chain recurses = startup stack overflow 0xC00000FD.
+                   TEST LANDMINES: headless + fresh -env:UserInstallation exits 0 in
+                   seconds unless -nofirststartwizard; unopkg's license answer must be
+                   UTF-16LE on stdin (8-bit "yes" loops forever, 200+ MB).  Still open:
+                   unopkg.com (unopkgio.exe staged under its build name).
+                   See main/swext/README.md.
 unodevtools   ✅  MIGRATED 2026-08-18 and MOVED OUT of this bucket — it is not
                    Java and never was.  `uno-skeletonmaker.exe`, 9 C++ sources, no
                    Java source at all: Java is only one of the OUTPUT languages of
@@ -927,8 +949,8 @@ helpcontent2  ✅  DONE 2026-10-03 — the F1 help, en-US: help/en/ with all 9 m
                    outputs); indexer -extension leaves an empty index for a module
                    that links nothing, so it is not run there; the dmake oracle is
                    an OLDER source revision (AOO41X) — compare structure, not bytes.
-                   UNBLOCKS swext (its .oxt help) — extension help is HelpLinker's
-                   -extension mode, not yet wired.  See main/helpcontent2/readme.md.
+                   Extension help (swext) is help_extension, same driver family.
+                   See main/helpcontent2/readme.md.
 xml2cmp       ⬜  (XML component comparison tool)
 
 ── Remaining: Standalone/misc ───────────────────────────────────────────

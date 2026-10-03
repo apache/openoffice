@@ -28,6 +28,13 @@ redland / raptor2 / rasqal (RDF stack, native-cc static) + unordf.dll - rdf-read
 rhino - ext_libraries\modules\rhino\README
 saxon 9.0.0.7 (bzlmod, Java) - main/saxon/readme.md  (Latin-1 sources transcoded)
 lucene 2.9.4 (bzlmod, Java) - main/xmlhelp/readme.md  (long_path.patch regenerated)
+commons-codec 1.9 / commons-httpclient 3.1 / commons-lang3 3.3 / commons-logging 1.1.3
+  (bzlmod, Java) - main/apache-commons/readme.md  (two Latin-1 files transcoded;
+  jars assembled under upstream's delivered names in //main/apache-commons)
+tomcat 5.5.36 (bzlmod, Java) - main/apache-commons/readme.md  (servlet API only,
+  compile-only for commons-logging)
+xsltml 2.1.2 (bzlmod, data) - main/xsltml/readme.md  (overlay carries the patched
+  files; CRLF kept by a -text .gitattributes)
 sal_pch - was merged with sal_headers
 
 ## Open question — shared vs static linkage (deferred, 2026-08-31)

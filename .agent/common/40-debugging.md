@@ -55,3 +55,11 @@
   handle is inherited whether or not a console is attached, so this needs no
   debugger — useful because UNO exceptions do not derive from std::exception and
   their message often reaches only stderr, flushed at process exit.
+- HEADLESS WITH A FRESH PROFILE needs `-nofirststartwizard`, learned
+  2026-10-03: `soffice -headless -env:UserInstallation=file:///C:/temp/x
+  -accept=...` exits with code 0 within ~5 s (the acceptor loads, then the
+  office quits) because the first-start wizard cannot run headless.  The
+  default profile finished its first start long ago, so the same command
+  without `-env:UserInstallation` stays up — which makes it look like whatever
+  you just put into the test profile is to blame.  Exit 0 and a log ending in
+  `closing log file` mean a deliberate shutdown, not a crash.
