@@ -47,7 +47,6 @@
         <property name="officeclasses" value="${solar.jar}"/>
 
         <!-- build options -->
-        <property name="sourcelevel" value="1.4"/>
         <property name="verbose" value="false"/>
         <property name="debug" value="${antdebug}"/>
 
