@@ -30,7 +30,7 @@ class AccessibleTableHandler extends NodeHandler
     public NodeHandler createHandler (XAccessibleContext xContext)
     {
         XAccessibleTable xTable =
-            (XAccessibleTable) UnoRuntime.queryInterface (
+            UnoRuntime.queryInterface (
                 XAccessibleTable.class, xContext);
         if (xTable != null)
             return new AccessibleTableHandler (xTable);
@@ -50,7 +50,7 @@ class AccessibleTableHandler extends NodeHandler
 
     protected static XAccessibleTable getTable(Object aObject)
     {
-        return (XAccessibleTable) UnoRuntime.queryInterface (
+        return UnoRuntime.queryInterface (
             XAccessibleTable.class, aObject);
     }
 

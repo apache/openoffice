@@ -330,7 +330,7 @@ public class Interceptor implements com.sun.star.frame.XFrameActionListener,
             xFrame          = m_xFrame;
         }
 
-        com.sun.star.frame.XDispatchProviderInterception xRegistration = (com.sun.star.frame.XDispatchProviderInterception)UnoRuntime.queryInterface(
+        com.sun.star.frame.XDispatchProviderInterception xRegistration = UnoRuntime.queryInterface(
             com.sun.star.frame.XDispatchProviderInterception.class,
             xFrame);
 
@@ -642,7 +642,7 @@ public class Interceptor implements com.sun.star.frame.XFrameActionListener,
 
         if (bIsRegistered)
         {
-            com.sun.star.frame.XDispatchProviderInterception xRegistration = (com.sun.star.frame.XDispatchProviderInterception)UnoRuntime.queryInterface(
+            com.sun.star.frame.XDispatchProviderInterception xRegistration = UnoRuntime.queryInterface(
                 com.sun.star.frame.XDispatchProviderInterception.class,
                 xFrame);
 

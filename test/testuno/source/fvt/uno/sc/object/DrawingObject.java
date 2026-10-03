@@ -135,9 +135,9 @@ public class DrawingObject {
 	    scDocument = SCUtil.getSCDocument(scComponent);
 		XSpreadsheet xSheet = SCUtil.getCurrentSheet(scDocument);
 		XDrawPageSupplier xDrawPageSupplier =
-        		(XDrawPageSupplier)UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
+        		UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
         XDrawPage xDrawPage = xDrawPageSupplier.getDrawPage();
-        XShapes xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+        XShapes xShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 
         //Execute add shape action
         Point po = new Point(100, 100);
@@ -156,9 +156,9 @@ public class DrawingObject {
 
 		xSheet = SCUtil.getCurrentSheet(scDocument);
 	    xDrawPageSupplier =
-	    		(XDrawPageSupplier)UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
+	    		UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
 		xDrawPage = xDrawPageSupplier.getDrawPage();
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 
 		//Verify number of shape in sheet.
 		assertEquals("Verify number of shape in sheet.",1, xShapes.getCount());
@@ -166,7 +166,7 @@ public class DrawingObject {
 		//Verify correct shape type added.
 		assertEquals("Verify shape type is correct.",inputType, xShape.getShapeType());
 
-		xShape = (XShape) UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(0));
+		xShape = UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(0));
 
 		//Execute remove drawing objects
 		xShapes.remove(xShape);
@@ -185,9 +185,9 @@ public class DrawingObject {
         //Get Draw page
       	xSheet = SCUtil.getCurrentSheet(scDocument);
       	xDrawPageSupplier =
-      			(XDrawPageSupplier)UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
+      			UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
       	xDrawPage = xDrawPageSupplier.getDrawPage();
-        xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+        xShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 
         //Verify number of shape in sheet after executing remove action.
         assertEquals("Verify 0 shape in sheet after executing remove action.",

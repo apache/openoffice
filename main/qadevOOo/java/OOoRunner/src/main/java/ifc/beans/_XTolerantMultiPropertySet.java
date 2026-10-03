@@ -62,7 +62,7 @@ public class _XTolerantMultiPropertySet extends MultiMethodTest {
      * Throws a lib StatusException if the Component doesn't support XPropertySet or XPropertyState
      */
     public void before() {
-        PS = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,
+        PS = UnoRuntime.queryInterface(XPropertySet.class,
                                                       tEnv.getTestObject());
 
         if (PS == null) {
@@ -70,7 +70,7 @@ public class _XTolerantMultiPropertySet extends MultiMethodTest {
                                               "Component doesn't provide the needed XPropertySet"));
         }
 
-        pState = (XPropertyState) UnoRuntime.queryInterface(
+        pState = UnoRuntime.queryInterface(
                          XPropertyState.class, tEnv.getTestObject());
 
         if (pState == null) {

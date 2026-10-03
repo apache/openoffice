@@ -110,7 +110,7 @@ public class PropertiesRetriever {
 
             // Execute command "getPropertyValues".
             XRow values =
-                ( XRow )UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XRow.class, m_helper.executeCommand( m_content,"getPropertyValues", props ));
 
             m_propValues = new Vector();

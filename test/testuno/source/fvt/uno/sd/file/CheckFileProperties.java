@@ -72,7 +72,7 @@ public class CheckFileProperties {
 		if (FileUtil.fileExists(m_filePath)) {//load
 			m_xSDComponent = app.loadDocument(m_filePath);
 		} else {//new
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(
+			m_xSDComponent = UnoRuntime.queryInterface(
 					XComponent.class, app.newDocument("simpress"));
 		}
 	}
@@ -82,7 +82,7 @@ public class CheckFileProperties {
 		Object configurationProvider = app.getServiceFactory().
 				createInstance("com.sun.star.configuration.ConfigurationProvider");
 
-		XMultiServiceFactory msFac = (XMultiServiceFactory)UnoRuntime.queryInterface(
+		XMultiServiceFactory msFac = UnoRuntime.queryInterface(
 				XMultiServiceFactory.class, configurationProvider);
 
 		PropertyValue[] propValue = new PropertyValue[1];
@@ -92,7 +92,7 @@ public class CheckFileProperties {
 
 		Object configurationAccess = msFac.createInstanceWithArguments(
 				"com.sun.star.configuration.ConfigurationAccess", propValue);
-		XNameAccess nameAcc = (XNameAccess)UnoRuntime.queryInterface(XNameAccess.class, configurationAccess);
+		XNameAccess nameAcc = UnoRuntime.queryInterface(XNameAccess.class, configurationAccess);
 		String givenname = (String)nameAcc.getByName("givenname");
 		String sn = (String)nameAcc.getByName("sn");
 		String name = null;
@@ -103,7 +103,7 @@ public class CheckFileProperties {
 	}
 
 	private XDocumentProperties getDocumentProperties(){
-		XDocumentPropertiesSupplier xDocumentProSupplier = (XDocumentPropertiesSupplier)UnoRuntime.queryInterface(
+		XDocumentPropertiesSupplier xDocumentProSupplier = UnoRuntime.queryInterface(
 				XDocumentPropertiesSupplier.class, this.m_xSDComponent);
 		return xDocumentProSupplier.getDocumentProperties();
 	}
@@ -457,7 +457,7 @@ public class CheckFileProperties {
 		private Object getCustomPro(String propertyName) throws UnknownPropertyException, WrappedTargetException{
 			XDocumentProperties xDocPro = getDocumentProperties();
 			XPropertyContainer proContainer = xDocPro.getUserDefinedProperties();
-			XPropertySet xProSet = (XPropertySet)UnoRuntime.queryInterface(
+			XPropertySet xProSet = UnoRuntime.queryInterface(
 					XPropertySet.class, proContainer);
 
 			return xProSet.getPropertyValue(propertyName);
@@ -581,7 +581,7 @@ public class CheckFileProperties {
 			addCustomPro("testPro", "value");
 			XDocumentProperties xDocPro = getDocumentProperties();
 			XPropertyContainer proContainer = xDocPro.getUserDefinedProperties();
-			XPropertySet xProSet = (XPropertySet)UnoRuntime.queryInterface(
+			XPropertySet xProSet = UnoRuntime.queryInterface(
 					XPropertySet.class, proContainer);
 			XPropertySetInfo xproSetInfo = xProSet.getPropertySetInfo();
 			Property[] pros = xproSetInfo.getProperties();
@@ -598,7 +598,7 @@ public class CheckFileProperties {
 
 			XDocumentProperties xDocPro2 = getDocumentProperties();
 			XPropertyContainer proContainer2 = xDocPro2.getUserDefinedProperties();
-			XPropertySet xProSet2 = (XPropertySet)UnoRuntime.queryInterface(
+			XPropertySet xProSet2 = UnoRuntime.queryInterface(
 					XPropertySet.class, proContainer2);
 			XPropertySetInfo xproSetInfo2 = xProSet2.getPropertySetInfo();
 			Property[] pros2 = xproSetInfo2.getProperties();

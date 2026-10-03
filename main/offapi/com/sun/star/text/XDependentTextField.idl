@@ -60,7 +60,7 @@ published interface XDependentTextField: com::sun::star::text::XTextField
 		<listing>
                 // Create a fieldmaster for our newly created User Text field, and access it's
                 // XPropertySet interface
-                XPropertySet xMasterPropSet = (XPropertySet) UnoRuntime.queryInterface(
+                XPropertySet xMasterPropSet = UnoRuntime.queryInterface(
                                 XPropertySet.class, mxDocFactory.createInstance(
                                                 "com.sun.star.text.FieldMaster.User"));
                 // Set the name and value of the FieldMaster

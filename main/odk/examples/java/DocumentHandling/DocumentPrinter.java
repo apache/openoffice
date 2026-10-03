@@ -50,7 +50,7 @@ public class DocumentPrinter {
                 "com.sun.star.frame.Desktop", xContext);
 
             com.sun.star.frame.XComponentLoader xCompLoader =
-                (com.sun.star.frame.XComponentLoader)
+
                      UnoRuntime.queryInterface(
                          com.sun.star.frame.XComponentLoader.class, oDesktop);
 
@@ -65,7 +65,7 @@ public class DocumentPrinter {
 
             // Querying for the interface XPrintable on the loaded document
             com.sun.star.view.XPrintable xPrintable =
-                (com.sun.star.view.XPrintable)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.view.XPrintable.class, xComp);
 
             // Setting the property "Name" for the favoured printer (name of

@@ -129,10 +129,10 @@ public class SdXShape extends TestCase {
 
         // get the drawpage of drawing here
         log.println( "getting Drawpage" );
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, xDrawDoc);
         XDrawPages oDPn = oDPS.getDrawPages();
-        XIndexAccess oDPi = (XIndexAccess)
+        XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class, oDPn);
         XDrawPage oDP = null;
         try {
@@ -151,7 +151,7 @@ public class SdXShape extends TestCase {
 
         //get a Shape
         log.println( "getting Shape" );
-        XShapes oShapes = (XShapes) UnoRuntime.queryInterface
+        XShapes oShapes = UnoRuntime.queryInterface
             (XShapes.class, oDP);
         XInterface oObj = SOF.createShape
             (xDrawDoc, 5000, 3500, 7500, 5000, "Rectangle");
@@ -169,7 +169,7 @@ public class SdXShape extends TestCase {
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
         log.println( "adding two style as ObjRelation for ShapeDescriptor" );
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class, oObj);
         XStyle aStyle = null;
         try {
@@ -191,7 +191,7 @@ public class SdXShape extends TestCase {
         }
 
         tEnv.addObjRelation("Style1", aStyle);
-        oShapeProps = (XPropertySet)
+        oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class, oShape);
         try {
             aStyle = (XStyle) AnyConverter.toObject(

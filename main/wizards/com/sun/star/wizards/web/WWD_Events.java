@@ -1196,7 +1196,7 @@ public abstract class WWD_Events extends WWD_Startup
 
         try
         {
-            //XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, myDocument);
+            //XCloseable xCloseable = UnoRuntime.queryInterface(XCloseable.class, myDocument);
             //if (xCloseable != null)
             //    xCloseable.close(false);
 

@@ -60,19 +60,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_LeftBottom() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.LEFT_BOTTOM);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -82,7 +82,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -94,16 +94,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_BOTTOM,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_BOTTOM,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -120,19 +120,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_LeftMiddle() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.LEFT_MIDDLE);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -142,7 +142,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -154,16 +154,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_MIDDLE,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_MIDDLE,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -180,19 +180,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_LeftTop() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.LEFT_TOP);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -202,7 +202,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -214,16 +214,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_TOP,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.LEFT_TOP,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -240,19 +240,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_MiddleBottom() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -262,7 +262,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -274,16 +274,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -300,19 +300,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_MiddleMiddle() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -322,7 +322,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -334,16 +334,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -360,20 +360,20 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_MiddleTop() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.MIDDLE_TOP);
 		//save and reload text document
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -383,7 +383,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -395,16 +395,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_TOP,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_TOP,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -421,19 +421,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_RightBottom() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -443,7 +443,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -455,16 +455,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -481,19 +481,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_RightMiddle() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -503,7 +503,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -515,16 +515,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -541,19 +541,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_RightTop() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.RIGHT_TOP);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -563,7 +563,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -575,16 +575,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_TOP,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_TOP,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -601,19 +601,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_Area() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.AREA);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -623,7 +623,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -635,16 +635,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.AREA,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.AREA,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -661,19 +661,19 @@ public class ParagraphBackGraphic {
 	@Test@Ignore("Bug #120638 - [testUNO patch]graphic background lost when save to doc")
 	public void testParagraphBackGraphic_Titled() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xCursorProps.setPropertyValue("ParaBackGraphicFilter","draw_jpg_Export");
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.TILED);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -683,7 +683,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -695,16 +695,16 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.TILED,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicFilter"));
 		assertEquals("verify paragraph backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/sw/paragraphtable/Desert.jpg")),xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicURL"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.TILED,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 		assertEquals("verify paragraph backgraphic filter","draw_jpg_Export",xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicFilter"));
@@ -721,17 +721,17 @@ public class ParagraphBackGraphic {
 	@Test
 	public void testParagraphBackGraphic_Nonne() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//set paragraph background color
 		xCursorProps.setPropertyValue("ParaBackGraphicLocation",com.sun.star.style.GraphicLocation.NONE);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -741,7 +741,7 @@ public class ParagraphBackGraphic {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -753,14 +753,14 @@ public class ParagraphBackGraphic {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.NONE,xCursorProps_Assert_odt.getPropertyValue("ParaBackGraphicLocation"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph background graphic
 		assertEquals("verify paragraph backgraphic location",com.sun.star.style.GraphicLocation.NONE,xCursorProps_Assert_doc.getPropertyValue("ParaBackGraphicLocation"));
 

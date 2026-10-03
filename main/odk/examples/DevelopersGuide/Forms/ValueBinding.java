@@ -47,7 +47,7 @@ public class ValueBinding extends DocumentBasedExample
 
         // insert a table with exactly one cell. The content of this table will be synced with
         // the content of a form control
-        XTextDocument textDoc = (XTextDocument)UnoRuntime.queryInterface( XTextDocument.class,  m_document.getDocument() );
+        XTextDocument textDoc = UnoRuntime.queryInterface( XTextDocument.class,  m_document.getDocument() );
         XText documentText = textDoc.getText();
         XTextCursor textCursor = documentText.createTextCursor();
         documentText.insertString( textCursor, "Below, there's a table cell, and a text field. ", false );
@@ -55,7 +55,7 @@ public class ValueBinding extends DocumentBasedExample
         documentText.insertString( textCursor, "That means that anything you insert into the table cell is reflected in the ", false );
         documentText.insertString( textCursor, "text field, and vice versa.\n", false );
 
-        XTextTable table = (XTextTable)UnoRuntime.queryInterface( XTextTable.class,
+        XTextTable table = UnoRuntime.queryInterface( XTextTable.class,
             m_document.createInstance( "com.sun.star.text.TextTable" )
         );
         table.initialize( 1, 1 );
@@ -67,7 +67,7 @@ public class ValueBinding extends DocumentBasedExample
         // create a value binding for the first cell of the table
         XValueBinding cellBinding = new TableCellTextBinding( table.getCellByName( "A1" ) );
         // and bind it to the control
-        XBindableValue bindable = (XBindableValue)UnoRuntime.queryInterface(
+        XBindableValue bindable = UnoRuntime.queryInterface(
             XBindableValue.class, textControl
         );
         bindable.setValueBinding( cellBinding );

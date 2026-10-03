@@ -155,8 +155,8 @@ public class SubjectField {
 	 */
 	private void createSubjectFiled(XTextDocument document) throws Exception {
 
-		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
-		XTextField  subjectField = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.docinfo.Subject"));
+		XMultiServiceFactory sevriceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XTextField  subjectField = UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.docinfo.Subject"));
 
 
 		SWUtil.moveCuror2Start(document);
@@ -183,12 +183,12 @@ public class SubjectField {
 	 * @throws Exception
 	 */
 	private boolean isContainSubjectField(XTextDocument document, String content) throws Exception {
-		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
 			  	Object field =  enumeration.nextElement();
-				XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
+				XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, field);
 				String strContent = (String) props.getPropertyValue("Content");
 			    return content.equals(strContent);
 

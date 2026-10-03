@@ -118,7 +118,7 @@ public class ScCellTextCursor extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -152,7 +152,7 @@ public class ScCellTextCursor extends TestCase {
         try {
             log.println("Getting spreadsheet") ;
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
                     new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
@@ -174,7 +174,7 @@ public class ScCellTextCursor extends TestCase {
                 "Error getting cell object from spreadsheet document",e) ;
         }
 
-        XText aText = (XText) UnoRuntime.queryInterface(XText.class, aCell);
+        XText aText = UnoRuntime.queryInterface(XText.class, aCell);
         aText.setString("ScCellTextCursor");
         oObj = aText.createTextCursor();
 

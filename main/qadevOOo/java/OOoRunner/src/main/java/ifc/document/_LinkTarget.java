@@ -41,7 +41,7 @@ public class _LinkTarget extends MultiPropertyTest {
 
     public void _LinkDisplayName() {
         // check if Service is available
-        XServiceInfo xInfo = (XServiceInfo)
+        XServiceInfo xInfo =
             UnoRuntime.queryInterface(XServiceInfo.class, oObj);
         String [] sa = xInfo.getSupportedServiceNames();
 

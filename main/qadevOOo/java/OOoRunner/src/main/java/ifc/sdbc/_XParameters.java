@@ -407,7 +407,7 @@ public class _XParameters extends MultiMethodTest {
             try {
                 Object oStream = ((XMultiServiceFactory)tParam.getMSF()).
                         createInstance("com.sun.star.io.DataInputStream") ;
-                XInputStream xStream = (XInputStream)UnoRuntime.queryInterface
+                XInputStream xStream = UnoRuntime.queryInterface
                     (XInputStream.class, oStream);
 
                 oObj.setBinaryStream(idx, xStream, 2) ;
@@ -437,7 +437,7 @@ public class _XParameters extends MultiMethodTest {
             try {
                 Object oStream = ((XMultiServiceFactory)tParam.getMSF())
                         .createInstance("com.sun.star.io.TextInputStream") ;
-                XInputStream xStream = (XInputStream)UnoRuntime.queryInterface
+                XInputStream xStream = UnoRuntime.queryInterface
                     (XInputStream.class, oStream);
 
                 oObj.setCharacterStream(idx, xStream, 2) ;

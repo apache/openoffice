@@ -637,9 +637,9 @@ class EnumConverter
         while (xEnum.hasMoreElements()) {
             TreeNode node;
             Object xElement = xEnum.nextElement();
-            XTextRange xPortion = (XTextRange)
+            XTextRange xPortion =
                 UnoRuntime.queryInterface(XTextRange.class, xElement);
-            XPropertySet xPropSet = (XPropertySet)
+            XPropertySet xPropSet =
                 UnoRuntime.queryInterface(XPropertySet.class, xPortion);
             String type = (String) xPropSet.getPropertyValue("TextPortionType");
             if (type.equals("Text")) {
@@ -653,24 +653,24 @@ class EnumConverter
                 }
             } else if (type.equals("TextField")) {
                 Object xField = xPropSet.getPropertyValue("TextField");
-                XServiceInfo xService = (XServiceInfo)
+                XServiceInfo xService =
                     UnoRuntime.queryInterface(XServiceInfo.class, xField);
                 if (xService.supportsService(
                         "com.sun.star.text.textfield.MetadataField"))
                 {
-                    XMetadatable xMeta = (XMetadatable)
+                    XMetadatable xMeta =
                         UnoRuntime.queryInterface(XMetadatable.class, xField);
                     StringPair xmlid = xMeta.getMetadataReference();
                     node = new MetaFieldNode(xmlid);
                     m_Stack.push(node);
-                    XEnumerationAccess xEA = (XEnumerationAccess)
+                    XEnumerationAccess xEA =
                         UnoRuntime.queryInterface(XEnumerationAccess.class,
                         xMeta);
                     XEnumeration xEnumChildren = xEA.createEnumeration();
                     TreeNode node2 = convertChildren(xEnumChildren);
                     assertSame("stack error: meta-field", node2, node);
                 } else {
-                    XPropertySet xFieldPropSet = (XPropertySet)
+                    XPropertySet xFieldPropSet =
                         UnoRuntime.queryInterface(XPropertySet.class, xField);
                     String content = (String)
                         xFieldPropSet.getPropertyValue("Content");
@@ -681,22 +681,22 @@ class EnumConverter
                 }
             } else if (type.equals("Footnote")) {
                 Object xNote = xPropSet.getPropertyValue("Footnote");
-                XFootnote xFootnote = (XFootnote)
+                XFootnote xFootnote =
                     UnoRuntime.queryInterface(XFootnote.class, xNote);
                 String label = xFootnote.getLabel();
                 node = new FootnoteNode(label);
             } else if (type.equals("Frame")) {
-                XContentEnumerationAccess xCEA = (XContentEnumerationAccess)
+                XContentEnumerationAccess xCEA =
                     UnoRuntime.queryInterface(XContentEnumerationAccess.class,
                         xPortion);
                 XEnumeration xContentEnum = xCEA.createContentEnumeration("");
                 while (xContentEnum.hasMoreElements()) {
                     Object xFrame = xContentEnum.nextElement();
-                    XPropertySet xFramePropSet = (XPropertySet)
+                    XPropertySet xFramePropSet =
                         UnoRuntime.queryInterface(XPropertySet.class, xFrame);
                     TextContentAnchorType anchor = (TextContentAnchorType)
                         xFramePropSet.getPropertyValue("AnchorType");
-                    XNamed xNamed = (XNamed)
+                    XNamed xNamed =
                         UnoRuntime.queryInterface(XNamed.class, xFrame);
                     String name = xNamed.getName();
                     node = new FrameNode(name, anchor);
@@ -709,10 +709,10 @@ class EnumConverter
                 node = new ControlCharacterNode(c);
             } else if (type.equals("Bookmark")) {
                 Object xMark = xPropSet.getPropertyValue("Bookmark");
-                XNamed xNamed = (XNamed)
+                XNamed xNamed =
                     UnoRuntime.queryInterface(XNamed.class, xMark);
                 String name = xNamed.getName();
-                XMetadatable xMetadatable = (XMetadatable)
+                XMetadatable xMetadatable =
                     UnoRuntime.queryInterface(XMetadatable.class, xMark);
                 StringPair xmlid = xMetadatable.getMetadataReference();
                 boolean isCollapsed = (Boolean)
@@ -730,7 +730,7 @@ class EnumConverter
                 }
             } else if (type.equals("ReferenceMark")) {
                 Object xMark = xPropSet.getPropertyValue("ReferenceMark");
-                XNamed xNamed = (XNamed)
+                XNamed xNamed =
                     UnoRuntime.queryInterface(XNamed.class, xMark);
                 String name = xNamed.getName();
                 boolean isCollapsed = (Boolean)
@@ -748,7 +748,7 @@ class EnumConverter
                 }
             } else if (type.equals("DocumentIndexMark")) {
                 Object xMark = xPropSet.getPropertyValue("DocumentIndexMark");
-                XPropertySet xMarkSet = (XPropertySet)
+                XPropertySet xMarkSet =
                     UnoRuntime.queryInterface(XPropertySet.class, xMark);
                 String name = (String) xMarkSet.getPropertyValue("PrimaryKey");
                 boolean isCollapsed = (Boolean)
@@ -784,12 +784,12 @@ class EnumConverter
                 }
             } else if (type.equals("InContentMetadata")) {
                 Object xMeta = xPropSet.getPropertyValue("InContentMetadata");
-                XMetadatable xMetadatable = (XMetadatable)
+                XMetadatable xMetadatable =
                     UnoRuntime.queryInterface(XMetadatable.class, xMeta);
                 StringPair xmlid = xMetadatable.getMetadataReference();
                 node = new MetaNode(xmlid);
                 m_Stack.push(node);
-                XEnumerationAccess xEA = (XEnumerationAccess)
+                XEnumerationAccess xEA =
                     UnoRuntime.queryInterface(XEnumerationAccess.class, xMeta);
                 XEnumeration xEnumChildren = xEA.createEnumeration();
                 TreeNode node2 = convertChildren(xEnumChildren);
@@ -815,11 +815,11 @@ abstract class Inserter
 
     Inserter(XTextDocument xDoc)
     {
-        m_xDocFactory = (XMultiServiceFactory)
+        m_xDocFactory =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xDoc);
         m_xText = xDoc.getText();
         XTextCursor xCursor = m_xText.createTextCursor();
-        m_xCursor = (XParagraphCursor)
+        m_xCursor =
             UnoRuntime.queryInterface(XParagraphCursor.class, xCursor);
     }
 
@@ -853,9 +853,9 @@ abstract class Inserter
     {
         Object xField =
             m_xDocFactory.createInstance("com.sun.star.text.textfield.Author");
-        XTextContent xContent = (XTextContent)
+        XTextContent xContent =
             UnoRuntime.queryInterface(XTextContent.class, xField);
-        XPropertySet xPropSet = (XPropertySet)
+        XPropertySet xPropSet =
             UnoRuntime.queryInterface(XPropertySet.class, xField);
         xPropSet.setPropertyValue("IsFixed", true);
         xPropSet.setPropertyValue("FullName", false);
@@ -875,12 +875,12 @@ abstract class Inserter
     {
         Object xFrame =
             m_xDocFactory.createInstance("com.sun.star.text.TextFrame");
-        XTextContent xContent = (XTextContent)
+        XTextContent xContent =
             UnoRuntime.queryInterface(XTextContent.class, xFrame);
-        XPropertySet xPropSet = (XPropertySet)
+        XPropertySet xPropSet =
             UnoRuntime.queryInterface(XPropertySet.class, xFrame);
         xPropSet.setPropertyValue("AnchorType", anchor);
-        XNamed xNamed = (XNamed)
+        XNamed xNamed =
             UnoRuntime.queryInterface(XNamed.class, xContent);
         xNamed.setName(name);
         return xContent;
@@ -896,9 +896,9 @@ abstract class Inserter
     {
         Object xNote =
             m_xDocFactory.createInstance("com.sun.star.text.Footnote");
-        XTextContent xContent = (XTextContent)
+        XTextContent xContent =
             UnoRuntime.queryInterface(XTextContent.class, xNote);
-        XFootnote xFootnote = (XFootnote)
+        XFootnote xFootnote =
             UnoRuntime.queryInterface(XFootnote.class, xNote);
         xFootnote.setLabel(label);
         return xContent;
@@ -911,7 +911,7 @@ abstract class Inserter
         xContent.attach(xCursor);
         if (!xmlid.First.equals(""))
         {
-            XMetadatable xMetadatable = (XMetadatable)
+            XMetadatable xMetadatable =
                 UnoRuntime.queryInterface(XMetadatable.class, xContent);
             xMetadatable.setMetadataReference(xmlid);
         }
@@ -921,9 +921,9 @@ abstract class Inserter
     {
         Object xBookmark =
             m_xDocFactory.createInstance("com.sun.star.text.Bookmark");
-        XTextContent xContent = (XTextContent)
+        XTextContent xContent =
             UnoRuntime.queryInterface(XTextContent.class, xBookmark);
-        XNamed xNamed = (XNamed)
+        XNamed xNamed =
             UnoRuntime.queryInterface(XNamed.class, xContent);
         xNamed.setName(name);
         return xContent;
@@ -939,9 +939,9 @@ abstract class Inserter
     {
         Object xMark =
             m_xDocFactory.createInstance("com.sun.star.text.ReferenceMark");
-        XTextContent xContent = (XTextContent)
+        XTextContent xContent =
             UnoRuntime.queryInterface(XTextContent.class, xMark);
-        XNamed xNamed = (XNamed)
+        XNamed xNamed =
             UnoRuntime.queryInterface(XNamed.class, xContent);
         xNamed.setName(name);
         return xContent;
@@ -958,9 +958,9 @@ abstract class Inserter
     {
         Object xMark =
             m_xDocFactory.createInstance("com.sun.star.text.DocumentIndexMark");
-        XTextContent xContent = (XTextContent)
+        XTextContent xContent =
             UnoRuntime.queryInterface(XTextContent.class, xMark);
-        XPropertySet xPropSet = (XPropertySet)
+        XPropertySet xPropSet =
             UnoRuntime.queryInterface(XPropertySet.class, xMark);
         xPropSet.setPropertyValue("PrimaryKey", key);
         return xContent;
@@ -968,14 +968,14 @@ abstract class Inserter
 
     void insertHyperlink(XTextCursor xCursor, String url) throws Exception
     {
-        XPropertySet xPropSet = (XPropertySet)
+        XPropertySet xPropSet =
             UnoRuntime.queryInterface(XPropertySet.class, xCursor);
         xPropSet.setPropertyValue("HyperLinkURL", url);
     }
 
     void insertRuby(XTextCursor xCursor, String rubytext) throws Exception
     {
-        XPropertySet xPropSet = (XPropertySet)
+        XPropertySet xPropSet =
             UnoRuntime.queryInterface(XPropertySet.class, xCursor);
         xPropSet.setPropertyValue("RubyText", rubytext);
     }
@@ -985,7 +985,7 @@ abstract class Inserter
     {
         XTextContent xContent = makeMeta();
         xContent.attach(xCursor);
-        XMetadatable xMetadatable = (XMetadatable)
+        XMetadatable xMetadatable =
             UnoRuntime.queryInterface(XMetadatable.class, xContent);
         xMetadatable.setMetadataReference(xmlid);
         return xContent;
@@ -995,7 +995,7 @@ abstract class Inserter
     {
         Object xMeta = m_xDocFactory.createInstance(
                 "com.sun.star.text.InContentMetadata");
-        XTextContent xContent = (XTextContent)
+        XTextContent xContent =
             UnoRuntime.queryInterface(XTextContent.class, xMeta);
         return xContent;
     }
@@ -1005,7 +1005,7 @@ abstract class Inserter
     {
         XTextField xContent = makeMetaField();
         xContent.attach(xCursor);
-        XMetadatable xMetadatable = (XMetadatable)
+        XMetadatable xMetadatable =
             UnoRuntime.queryInterface(XMetadatable.class, xContent);
         xMetadatable.setMetadataReference(xmlid);
         return xContent;
@@ -1015,7 +1015,7 @@ abstract class Inserter
     {
         Object xMeta = m_xDocFactory.createInstance(
                 "com.sun.star.text.textfield.MetadataField");
-        XTextField xContent = (XTextField)
+        XTextField xContent =
             UnoRuntime.queryInterface(XTextField.class, xMeta);
         return xContent;
     }
@@ -1148,7 +1148,7 @@ class TreeInserter extends Inserter
     XParagraphCursor mkCursor(XTextRange xRange)
     {
         XTextCursor xCursor = m_xText.createTextCursorByRange(xRange);
-        XParagraphCursor xParaCursor = (XParagraphCursor)
+        XParagraphCursor xParaCursor =
             UnoRuntime.queryInterface(XParagraphCursor.class, xCursor);
         xParaCursor.gotoEndOfParagraph(true);
         return xParaCursor;
@@ -1248,10 +1248,10 @@ public class TextPortionEnumerationTest
         m_xMSF = UnoRuntime.queryInterface(
             XMultiServiceFactory.class,
             connection.getComponentContext().getServiceManager());
-        XPropertySet xPropertySet = (XPropertySet)
+        XPropertySet xPropertySet =
             UnoRuntime.queryInterface(XPropertySet.class, m_xMSF);
         Object defaultCtx = xPropertySet.getPropertyValue("DefaultContext");
-        m_xContext = (XComponentContext)
+        m_xContext =
             UnoRuntime.queryInterface(XComponentContext.class, defaultCtx);
         assertNotNull("could not get component context.", m_xContext);
         m_xDoc = util.WriterTools.createTextDoc(m_xMSF);
@@ -2897,7 +2897,7 @@ public class TextPortionEnumerationTest
 
         XText xDocText = m_xDoc.getText();
         XTextCursor xDocTextCursor = xDocText.createTextCursor();
-        XParagraphCursor xParagraphCursor = (XParagraphCursor)
+        XParagraphCursor xParagraphCursor =
             UnoRuntime.queryInterface(XParagraphCursor.class, xDocTextCursor);
         xParagraphCursor.gotoNextParagraph(false); // second paragraph
         // X12XX34X56X78X9
@@ -2922,16 +2922,16 @@ public class TextPortionEnumerationTest
             id6,
             id6,
         };
-        XPropertySet xPropertySet = (XPropertySet)
+        XPropertySet xPropertySet =
             UnoRuntime.queryInterface(XPropertySet.class, xDocTextCursor);
         for (int i = 0; i < nestedTextContent.length; ++i) {
             Object oNTC = xPropertySet.getPropertyValue("NestedTextContent");
-            XTextContent xNTC = (XTextContent)
+            XTextContent xNTC =
                 UnoRuntime.queryInterface(XTextContent.class, oNTC);
             if (null == nestedTextContent[i]) {
                 assertNull("unexpected NestedTextContent at: " + i, xNTC);
             } else {
-                XMetadatable xMetadatable = (XMetadatable)
+                XMetadatable xMetadatable =
                     UnoRuntime.queryInterface(XMetadatable.class, xNTC);
                 StringPair xmlid = xMetadatable.getMetadataReference();
                 assertTrue("wrong NestedTextContent at: " + i,
@@ -2940,17 +2940,17 @@ public class TextPortionEnumerationTest
             xDocTextCursor.goRight((short)1, false);
         }
 
-        XChild xChild1 = (XChild)
+        XChild xChild1 =
             UnoRuntime.queryInterface(XChild.class, xMeta1);
-        XChild xChild2 = (XChild)
+        XChild xChild2 =
             UnoRuntime.queryInterface(XChild.class, xMeta2);
-        XChild xChild3 = (XChild)
+        XChild xChild3 =
             UnoRuntime.queryInterface(XChild.class, xMeta3);
-        XChild xChild4 = (XChild)
+        XChild xChild4 =
             UnoRuntime.queryInterface(XChild.class, xMeta4);
-        XChild xChild5 = (XChild)
+        XChild xChild5 =
             UnoRuntime.queryInterface(XChild.class, xMeta5);
-        XChild xChild6 = (XChild)
+        XChild xChild6 =
             UnoRuntime.queryInterface(XChild.class, xMeta6);
         try {
             xChild1.setParent(xChild4);
@@ -2962,21 +2962,21 @@ public class TextPortionEnumerationTest
         {
             Object xParent3 = xChild3.getParent();
             assertNotNull("getParent(): null", xParent3);
-            XMetadatable xMetadatable = (XMetadatable)
+            XMetadatable xMetadatable =
                 UnoRuntime.queryInterface(XMetadatable.class, xParent3);
             StringPair xmlid = xMetadatable.getMetadataReference();
             assertTrue("getParent(): wrong", MetaNode.eq(xmlid, id2));
         }{
             Object xParent4 = xChild4.getParent();
             assertNotNull("getParent(): null", xParent4);
-            XMetadatable xMetadatable = (XMetadatable)
+            XMetadatable xMetadatable =
                 UnoRuntime.queryInterface(XMetadatable.class, xParent4);
             StringPair xmlid = xMetadatable.getMetadataReference();
             assertTrue("getParent(): wrong", MetaNode.eq(xmlid, id3));
         }{
             Object xParent5 = xChild5.getParent();
             assertNotNull("getParent(): null", xParent5);
-            XMetadatable xMetadatable = (XMetadatable)
+            XMetadatable xMetadatable =
                 UnoRuntime.queryInterface(XMetadatable.class, xParent5);
             StringPair xmlid = xMetadatable.getMetadataReference();
             assertTrue("getParent(): wrong", MetaNode.eq(xmlid, id3));
@@ -3000,10 +3000,10 @@ public class TextPortionEnumerationTest
         xDocText.insertTextContent(xDocTextCursor, xMeta, true);
 //        xMeta.attach(xDocTextCursor);
 
-        XMetadatable xMetadatable = (XMetadatable)
+        XMetadatable xMetadatable =
             UnoRuntime.queryInterface(XMetadatable.class, xMeta);
         xMetadatable.setMetadataReference(meta.getXmlId());
-        XText xText = (XText) UnoRuntime.queryInterface(XText.class, xMeta);
+        XText xText = UnoRuntime.queryInterface(XText.class, xMeta);
 
         XText xParentText = xText.getText();
         assertNotNull("getText(): no parent", xParentText);
@@ -3160,16 +3160,16 @@ public class TextPortionEnumerationTest
         doTest(root, false);
         */
 
-        XEnumerationAccess xEA = (XEnumerationAccess)
+        XEnumerationAccess xEA =
             UnoRuntime.queryInterface(XEnumerationAccess.class, xMeta);
         XEnumeration xEnum = xEA.createEnumeration();
         assertNotNull("createEnumeration(): returns null", xEnum);
         {
             assertTrue("hasNext(): first missing", xEnum.hasMoreElements());
             Object xElement = xEnum.nextElement();
-            XTextRange xPortion = (XTextRange)
+            XTextRange xPortion =
                 UnoRuntime.queryInterface(XTextRange.class, xElement);
-            XPropertySet xPropSet = (XPropertySet)
+            XPropertySet xPropSet =
                 UnoRuntime.queryInterface(XPropertySet.class, xPortion);
             String type = (String) xPropSet.getPropertyValue("TextPortionType");
             assertEquals("first: not text", "Text", type);
@@ -3179,9 +3179,9 @@ public class TextPortionEnumerationTest
         {
             assertTrue("hasNext(): second missing", xEnum.hasMoreElements());
             Object xElement = xEnum.nextElement();
-            XTextRange xPortion = (XTextRange)
+            XTextRange xPortion =
                 UnoRuntime.queryInterface(XTextRange.class, xElement);
-            XPropertySet xPropSet = (XPropertySet)
+            XPropertySet xPropSet =
                 UnoRuntime.queryInterface(XPropertySet.class, xPortion);
             String type = (String) xPropSet.getPropertyValue("TextPortionType");
             assertEquals("second: not text", "TextField", type);
@@ -3189,7 +3189,7 @@ public class TextPortionEnumerationTest
         // no ruby end here!!!
         assertFalse("hasNext(): more elements?", xEnum.hasMoreElements());
 
-        XComponent xComponent = (XComponent)
+        XComponent xComponent =
             UnoRuntime.queryInterface(XComponent.class, xMeta);
         xComponent.dispose();
 
@@ -3217,10 +3217,10 @@ public class TextPortionEnumerationTest
         xDocText.insertTextContent(xDocTextCursor, xMeta, true);
         xDocTextCursor.gotoStart(true);
 
-        XMetadatable xMetadatable = (XMetadatable)
+        XMetadatable xMetadatable =
             UnoRuntime.queryInterface(XMetadatable.class, xMeta);
         xMetadatable.setMetadataReference(met1.getXmlId());
-        XText xText = (XText) UnoRuntime.queryInterface(XText.class, xMeta);
+        XText xText = UnoRuntime.queryInterface(XText.class, xMeta);
 
         XTextRange xStart = xText.getStart();
         assertNotNull("getStart(): no start", xStart);
@@ -3252,7 +3252,7 @@ public class TextPortionEnumerationTest
         // XWordCursor
         xText.setString("Two words");
         xTextCursor.gotoStart(false);
-        XWordCursor xWordCursor = (XWordCursor)
+        XWordCursor xWordCursor =
             UnoRuntime.queryInterface(XWordCursor.class, xTextCursor);
 
         bSuccess = xWordCursor.gotoNextWord(true);
@@ -3298,7 +3298,7 @@ public class TextPortionEnumerationTest
         // XSentenceCursor
         xText.setString("This is a sentence. Another sentence.");
         xTextCursor.gotoStart(false);
-        XSentenceCursor xSentenceCursor = (XSentenceCursor)
+        XSentenceCursor xSentenceCursor =
             UnoRuntime.queryInterface(XSentenceCursor.class, xTextCursor);
 
         bSuccess = xSentenceCursor.gotoNextSentence(true);
@@ -3344,7 +3344,7 @@ public class TextPortionEnumerationTest
         bSuccess = xSentenceCursor.gotoStartOfSentence(false);
         assertFalse("gotoStartOfSentence(): succeeded", bSuccess);
 
-        XParagraphCursor xParagraphCursor = (XParagraphCursor)
+        XParagraphCursor xParagraphCursor =
             UnoRuntime.queryInterface(XParagraphCursor.class, xTextCursor);
 
         // XParagraphCursor (does not make sense)
@@ -3447,7 +3447,7 @@ public class TextPortionEnumerationTest
                 }
                 void postInserted(TreeNode node, XTextContent xContent)
                         throws Exception {
-                    XMetadatable xMetadatable = (XMetadatable)
+                    XMetadatable xMetadatable =
                         UnoRuntime.queryInterface(XMetadatable.class, xContent);
                     xMetadatable.setMetadataReference(
                             ((MetaNode)node).getXmlId());
@@ -3469,10 +3469,10 @@ public class TextPortionEnumerationTest
         xDocTextCursor.goRight((short)2, true);
         xDocText.insertTextContent(xDocTextCursor, xMeta, true);
 
-        XMetadatable xMetadatable = (XMetadatable)
+        XMetadatable xMetadatable =
             UnoRuntime.queryInterface(XMetadatable.class, xMeta);
         xMetadatable.setMetadataReference(met1.getXmlId());
-        XText xText = (XText) UnoRuntime.queryInterface(XText.class, xMeta);
+        XText xText = UnoRuntime.queryInterface(XText.class, xMeta);
         XTextRange xStart = null;
         XTextRange xEnd = null;
 
@@ -3686,7 +3686,7 @@ public class TextPortionEnumerationTest
     @Test public void testMetaFieldXTextField() throws Exception
     {
         com.sun.star.rdf.XRepositorySupplier xModel =
-            (com.sun.star.rdf.XRepositorySupplier) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.rdf.XRepositorySupplier.class, m_xDoc);
         com.sun.star.rdf.XRepository xRepo = xModel.getRDFRepository();
         // for testing just add it to the first graph
@@ -3715,7 +3715,7 @@ public class TextPortionEnumerationTest
 
         xDocText.insertTextContent(xDocTextCursor, xMetaField, true);
 
-        XMetadatable xMetadatable = (XMetadatable)
+        XMetadatable xMetadatable =
             UnoRuntime.queryInterface(XMetadatable.class, xMetaField);
         xMetadatable.ensureMetadataReference();
 
@@ -3740,7 +3740,7 @@ public class TextPortionEnumerationTest
 
         xDocText.insertTextContent(xDocTextCursor, xMetaField, true);
 
-        XPropertySet xPropertySet = (XPropertySet)
+        XPropertySet xPropertySet =
             UnoRuntime.queryInterface(XPropertySet.class, xMetaField);
         assertNotNull("PropertySet: not supported?", xPropertySet);
         XPropertySetInfo xPropertySetInfo = xPropertySet.getPropertySetInfo();
@@ -3787,7 +3787,7 @@ public class TextPortionEnumerationTest
     {
         System.out.println("Storing test document...");
 
-        XStorable xStor = (XStorable) UnoRuntime.queryInterface(
+        XStorable xStor = UnoRuntime.queryInterface(
                     XStorable.class, xComp);
 
         xStor.storeToURL(file, new PropertyValue[0]);
@@ -3809,7 +3809,7 @@ public class TextPortionEnumerationTest
         xComp = util.DesktopTools.loadDoc(m_xMSF, file, loadProps);
 //        xComp =  util.DesktopTools.getCLoader(m_xMSF).loadComponentFromURL(file, "_blank", 0, loadProps);
 
-        XTextDocument xTextDoc = (XTextDocument)
+        XTextDocument xTextDoc =
             UnoRuntime.queryInterface(XTextDocument.class, xComp);
 
         assertNotNull("cannot load: " + file, xTextDoc);
@@ -3899,21 +3899,21 @@ public class TextPortionEnumerationTest
 
         System.out.println("Checking bookmarks in loaded test document...");
 
-        XRepositorySupplier xRS = (XRepositorySupplier)
+        XRepositorySupplier xRS =
             UnoRuntime.queryInterface(XRepositorySupplier.class, xTextDoc);
-        XDocumentRepository xRepo = (XDocumentRepository)
+        XDocumentRepository xRepo =
             UnoRuntime.queryInterface(XDocumentRepository.class,
                 xRS.getRDFRepository());
-        XBookmarksSupplier xBMS = (XBookmarksSupplier)
+        XBookmarksSupplier xBMS =
             UnoRuntime.queryInterface(XBookmarksSupplier.class, xTextDoc);
         XNameAccess xBookmarks = xBMS.getBookmarks();
-        XMetadatable xMark1 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xMark1 = UnoRuntime.queryInterface(
                 XMetadatable.class, xBookmarks.getByName("mk1"));
         assertTrue("mark1",
                 eq(xMark1.getMetadataReference(),
                     new StringPair("content.xml", "id90")));
 
-        XMetadatable xMark2 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xMark2 = UnoRuntime.queryInterface(
                 XMetadatable.class, xBookmarks.getByName("mk2"));
         Pair<Statement[], Boolean> result = xRepo.getStatementRDFa(xMark2);
         assertTrue("mark2", (result.First.length == 1)
@@ -3922,7 +3922,7 @@ public class TextPortionEnumerationTest
             && result.First[0].Object.getStringValue().contains("a fooish bar")
             );
 
-        XMetadatable xMark3 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xMark3 = UnoRuntime.queryInterface(
                 XMetadatable.class, xBookmarks.getByName("mk3"));
         assertTrue("mark3",
                 eq(xMark3.getMetadataReference(),
@@ -3932,58 +3932,58 @@ public class TextPortionEnumerationTest
 
         System.out.println("Checking sections in loaded test document...");
 
-        XTextSectionsSupplier xTSS = (XTextSectionsSupplier)
+        XTextSectionsSupplier xTSS =
             UnoRuntime.queryInterface(XTextSectionsSupplier.class, xTextDoc);
 
         XNameAccess xSections = xTSS.getTextSections();
 
-        XMetadatable xSection1 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection1 = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Section 1"));
         assertTrue("idsection1", eq(xSection1.getMetadataReference(),
                     new StringPair("content.xml", "idSection1")));
 
-        XMetadatable xSection2 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection2 = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Section 2"));
         assertTrue("idSection2", eq(xSection2.getMetadataReference(),
                     new StringPair("content.xml", "idSection2")));
 
-        XMetadatable xSection3 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection3 = UnoRuntime.queryInterface(
                 XMetadatable.class,
                 xSections.getByName("Table of Contents1_Head"));
         assertTrue("idTOCTitle", eq(xSection3.getMetadataReference(),
                     new StringPair("content.xml", "idTOCTitle")));
 
-        XMetadatable xSection4 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection4 = UnoRuntime.queryInterface(
                 XMetadatable.class,
                 xSections.getByName("Alphabetical Index1_Head"));
         assertTrue("idAITitle", eq(xSection4.getMetadataReference(),
                     new StringPair("content.xml", "idAITitle")));
 
-        XMetadatable xSection5 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection5 = UnoRuntime.queryInterface(
                 XMetadatable.class,
                 xSections.getByName("Illustration Index1_Head"));
         assertTrue("idIITitle", eq(xSection5.getMetadataReference(),
                     new StringPair("content.xml", "idIITitle")));
 
-        XMetadatable xSection6 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection6 = UnoRuntime.queryInterface(
                 XMetadatable.class,
                 xSections.getByName("Index of Tables1_Head"));
         assertTrue("idIOTTitle", eq(xSection6.getMetadataReference(),
                     new StringPair("content.xml", "idIOTTitle")));
 
-        XMetadatable xSection7 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection7 = UnoRuntime.queryInterface(
                 XMetadatable.class,
                 xSections.getByName("User-Defined1_Head"));
         assertTrue("idUDTitle", eq(xSection7.getMetadataReference(),
                     new StringPair("content.xml", "idUDTitle")));
 
-        XMetadatable xSection8 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection8 = UnoRuntime.queryInterface(
                 XMetadatable.class,
                 xSections.getByName("Table of Objects1_Head"));
         assertTrue("idTOOTitle", eq(xSection8.getMetadataReference(),
                     new StringPair("content.xml", "idTOOTitle")));
 
-        XMetadatable xSection9 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xSection9 = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Bibliography1_Head"));
         assertTrue("idBibTitle", eq(xSection9.getMetadataReference(),
                     new StringPair("content.xml", "idBibTitle")));
@@ -3992,71 +3992,71 @@ public class TextPortionEnumerationTest
 
         System.out.println("Checking indexes in loaded test document...");
 
-        XDocumentIndexesSupplier xDIS = (XDocumentIndexesSupplier)
+        XDocumentIndexesSupplier xDIS =
             UnoRuntime.queryInterface(XDocumentIndexesSupplier.class, xTextDoc);
         XIndexAccess xIndexesIA = xDIS.getDocumentIndexes();
         XNameAccess xIndexes =
             UnoRuntime.queryInterface(XNameAccess.class, xIndexesIA);
 
-        XMetadatable xIndex1 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex1 = UnoRuntime.queryInterface(
                 XMetadatable.class, xIndexes.getByName("Table of Contents1"));
         assertTrue("idTOC", eq(xIndex1.getMetadataReference(),
                     new StringPair("content.xml", "idTOC")));
-        XMetadatable xIndex1s = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex1s = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Table of Contents1"));
         assertTrue("idTOC", eq(xIndex1s.getMetadataReference(),
                     new StringPair("content.xml", "idTOC")));
 
-        XMetadatable xIndex2 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex2 = UnoRuntime.queryInterface(
                 XMetadatable.class, xIndexes.getByName("Alphabetical Index1"));
         assertTrue("idAI", eq(xIndex2.getMetadataReference(),
                     new StringPair("content.xml", "idAI")));
-        XMetadatable xIndex2s = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex2s = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Alphabetical Index1"));
         assertTrue("idAI", eq(xIndex2s.getMetadataReference(),
                     new StringPair("content.xml", "idAI")));
 
-        XMetadatable xIndex3 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex3 = UnoRuntime.queryInterface(
                 XMetadatable.class, xIndexes.getByName("Illustration Index1"));
         assertTrue("idII", eq(xIndex3.getMetadataReference(),
                     new StringPair("content.xml", "idII")));
-        XMetadatable xIndex3s = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex3s = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Illustration Index1"));
         assertTrue("idII", eq(xIndex3s.getMetadataReference(),
                     new StringPair("content.xml", "idII")));
 
-        XMetadatable xIndex4 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex4 = UnoRuntime.queryInterface(
                 XMetadatable.class, xIndexes.getByName("Index of Tables1"));
         assertTrue("idIOT", eq(xIndex4.getMetadataReference(),
                     new StringPair("content.xml", "idIOT")));
-        XMetadatable xIndex4s = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex4s = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Index of Tables1"));
         assertTrue("idIOT", eq(xIndex4s.getMetadataReference(),
                     new StringPair("content.xml", "idIOT")));
 
-        XMetadatable xIndex5 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex5 = UnoRuntime.queryInterface(
                 XMetadatable.class, xIndexes.getByName("User-Defined1"));
         assertTrue("idUD", eq(xIndex5.getMetadataReference(),
                     new StringPair("content.xml", "idUD")));
-        XMetadatable xIndex5s = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex5s = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("User-Defined1"));
         assertTrue("idUD", eq(xIndex5s.getMetadataReference(),
                     new StringPair("content.xml", "idUD")));
 
-        XMetadatable xIndex6 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex6 = UnoRuntime.queryInterface(
                 XMetadatable.class, xIndexes.getByName("Table of Objects1"));
         assertTrue("idTOO", eq(xIndex6.getMetadataReference(),
                     new StringPair("content.xml", "idTOO")));
-        XMetadatable xIndex6s = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex6s = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Table of Objects1"));
         assertTrue("idTOO", eq(xIndex6s.getMetadataReference(),
                     new StringPair("content.xml", "idTOO")));
 
-        XMetadatable xIndex7 = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex7 = UnoRuntime.queryInterface(
                 XMetadatable.class, xIndexes.getByName("Bibliography1"));
         assertTrue("idBib", eq(xIndex7.getMetadataReference(),
                     new StringPair("content.xml", "idBib")));
-        XMetadatable xIndex7s = (XMetadatable) UnoRuntime.queryInterface(
+        XMetadatable xIndex7s = UnoRuntime.queryInterface(
                 XMetadatable.class, xSections.getByName("Bibliography1"));
         assertTrue("idBib", eq(xIndex7s.getMetadataReference(),
                     new StringPair("content.xml", "idBib")));
@@ -4067,7 +4067,7 @@ public class TextPortionEnumerationTest
     static void close(XComponent i_comp)
     {
         try {
-            XCloseable xClos = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable xClos = UnoRuntime.queryInterface(
                         XCloseable.class, i_comp);
             if (xClos != null) xClos.close(true);
         } catch (Exception e) {
@@ -4096,13 +4096,13 @@ public class TextPortionEnumerationTest
 //Thread.sleep(10000);
 
         XText xText = xDoc.getText();
-        XEnumerationAccess xTextEA = (XEnumerationAccess)
+        XEnumerationAccess xTextEA =
             UnoRuntime.queryInterface(XEnumerationAccess.class, xText);
         XEnumeration xTextEnum = xTextEA.createEnumeration();
         // skip to right paragraph
         xTextEnum.nextElement(); // skip first -- always empty!
         Object xElement = xTextEnum.nextElement(); // second contains test case
-        XEnumerationAccess xEA = (XEnumerationAccess)
+        XEnumerationAccess xEA =
             UnoRuntime.queryInterface(XEnumerationAccess.class, xElement);
         XEnumeration xEnum = xEA.createEnumeration();
         TreeNode outtree = new EnumConverter().convert(xEnum);

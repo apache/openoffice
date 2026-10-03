@@ -87,10 +87,10 @@ public class DispatchRecorder extends TestCase {
             catch (InterruptedException ex) {
             }
 
-            XModel model = (XModel) UnoRuntime.queryInterface(XModel.class, oDoc);
+            XModel model = UnoRuntime.queryInterface(XModel.class, oDoc);
             xFrame = model.getCurrentController().getFrame();
 
-            XPropertySet xFramePS = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet xFramePS = UnoRuntime.queryInterface
                 (XPropertySet.class, xFrame);
             XDispatchRecorderSupplier xDRS = null;
             xDRS = (XDispatchRecorderSupplier) AnyConverter.toObject(
@@ -101,7 +101,7 @@ public class DispatchRecorder extends TestCase {
                 Object oDRS = ((XMultiServiceFactory)Param.getMSF()).createInstance(
                     "com.sun.star.comp.framework.DispatchRecorderSupplier");
                 xFramePS.setPropertyValue("DispatchRecorderSupplier", oDRS);
-                xDRS = (XDispatchRecorderSupplier)
+                xDRS =
                     UnoRuntime.queryInterface(XDispatchRecorderSupplier.class,oDRS);
             }
 
@@ -111,7 +111,7 @@ public class DispatchRecorder extends TestCase {
             } else {
                 oObj = (XInterface)((XMultiServiceFactory)Param.getMSF()).createInstance(
                     "com.sun.star.comp.framework.DispatchRecorder");
-                xDR = (XDispatchRecorder) UnoRuntime.queryInterface
+                xDR = UnoRuntime.queryInterface
                     (XDispatchRecorder.class, oObj);
                 xDRS.setDispatchRecorder(xDR);
             }

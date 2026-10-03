@@ -60,13 +60,13 @@ public class ParagraphAlignment {
 	@Test@Ignore("Bug #120636 - [testUNO patch]the expand single word option disable when save to doc")
 	public void testParagraphAlignmentJustified() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//apply paragraph alignment as justified and last line alignment
 		xTextCursor.gotoStart(false);
 		xTextCursor.goRight((short)180 , true);
@@ -74,7 +74,7 @@ public class ParagraphAlignment {
 		xCursorProps.setPropertyValue("ParaLastLineAdjust", com.sun.star.style.ParagraphAdjust.LEFT);
 		xCursorProps.setPropertyValue("ParaExpandSingleWord", true);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -84,7 +84,7 @@ public class ParagraphAlignment {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -96,18 +96,18 @@ public class ParagraphAlignment {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert table margin to page setting
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextCursor xTextCursor_assert_odt = assertDocument_odt.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
+		XPropertySet xCursorProps_assert_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
 		//verify paragraph alignment property
 		assertEquals("assert first paragraph alignment is justified",(short)2,xCursorProps_assert_odt.getPropertyValue("ParaAdjust"));
 		assertEquals("assert first paragraph last line alignment is left",(short)0, xCursorProps_assert_odt.getPropertyValue("ParaLastLineAdjust"));
 		assertEquals("assert expand single word is true",true,xCursorProps_assert_odt.getPropertyValue("ParaExpandSingleWord"));
 
 		//reopen the document and assert table margin to page setting
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XTextCursor xTextCursor_assert_doc = assertDocument_doc.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
+		XPropertySet xCursorProps_assert_doc = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
 		//verify paragraph alignment property
 	    assertEquals("assert first paragraph alignment is justified",(short)2,xCursorProps_assert_doc.getPropertyValue("ParaAdjust"));
 		assertEquals("assert first paragraph last line alignment is left",(short)0, xCursorProps_assert_doc.getPropertyValue("ParaLastLineAdjust"));
@@ -125,18 +125,18 @@ public class ParagraphAlignment {
 	@Test
 	public void testParagraphAlignmentLeft() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		xTextCursor.gotoStart(false);
 		xTextCursor.goRight((short)180 , true);
 		xCursorProps.setPropertyValue("ParaAdjust",com.sun.star.style.ParagraphAdjust.LEFT);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -146,7 +146,7 @@ public class ParagraphAlignment {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -159,15 +159,15 @@ public class ParagraphAlignment {
 		app.closeDocument(xTextDocument);
 
 		//reopen the odt document and assert paragraph alignment
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextCursor xTextCursor_assert_odt = assertDocument_odt.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
+		XPropertySet xCursorProps_assert_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
 		//verify paragraph alignment property
 		assertEquals("assert first paragraph alignment is left",(short)0,xCursorProps_assert_odt.getPropertyValue("ParaAdjust"));
 		//reopen the doc document and assert paragraph alignment
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XTextCursor xTextCursor_assert_doc = assertDocument_doc.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
+		XPropertySet xCursorProps_assert_doc = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
 		//verify paragraph alignment property
 		assertEquals("assert first paragraph alignment is left",(short)0,xCursorProps_assert_doc.getPropertyValue("ParaAdjust"));
 
@@ -184,19 +184,19 @@ public class ParagraphAlignment {
 	@Test
 	public void testParagraphAlignmentRight() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//apply paragraph alignment as justified and last line alignment
 		xTextCursor.gotoStart(false);
 		xTextCursor.goRight((short)180 , true);
 		xCursorProps.setPropertyValue("ParaAdjust",com.sun.star.style.ParagraphAdjust.RIGHT);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -206,7 +206,7 @@ public class ParagraphAlignment {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -218,15 +218,15 @@ public class ParagraphAlignment {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert paragraph alignment
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextCursor xTextCursor_assert_odt = assertDocument_odt.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
+		XPropertySet xCursorProps_assert_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
 		//verify paragraph alignment property
 		assertEquals("assert first paragraph alignment is right",(short)1,xCursorProps_assert_odt.getPropertyValue("ParaAdjust"));
 		//reopen the document and assert paragraph alignment
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XTextCursor xTextCursor_assert_doc = assertDocument_doc.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
+		XPropertySet xCursorProps_assert_doc = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
 		//verify paragraph alignment property
 		assertEquals("assert first paragraph alignment is right",(short)1,xCursorProps_assert_doc.getPropertyValue("ParaAdjust"));
 	}
@@ -241,19 +241,19 @@ public class ParagraphAlignment {
 	@Test
 	public void testParagraphAlignmentCenter() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//apply paragraph alignment as justified and last line alignment
 		xTextCursor.gotoStart(false);
 		xTextCursor.goRight((short)180 , true);
 		xCursorProps.setPropertyValue("ParaAdjust",com.sun.star.style.ParagraphAdjust.CENTER);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -263,7 +263,7 @@ public class ParagraphAlignment {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -276,14 +276,14 @@ public class ParagraphAlignment {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert paragraph alignment
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextCursor xTextCursor_assert_odt = assertDocument_odt.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
+		XPropertySet xCursorProps_assert_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_odt);
 		assertEquals("assert first paragraph alignment is center",(short)3,xCursorProps_assert_odt.getPropertyValue("ParaAdjust"));
 		//reopen the document and assert paragraph alignment
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XTextCursor xTextCursor_assert_doc = assertDocument_doc.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
+		XPropertySet xCursorProps_assert_doc = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
 		assertEquals("assert first paragraph alignment is center",(short)3,xCursorProps_assert_doc.getPropertyValue("ParaAdjust"));
 	}
 }

@@ -64,7 +64,7 @@ public class XMLDocument extends integration.forms.DocumentHelper
     /* ------------------------------------------------------------------ */
     private void impl_initialize( XComponent _document )
     {
-        m_formsSupplier = (XFormsSupplier)UnoRuntime.queryInterface( XFormsSupplier.class,
+        m_formsSupplier = UnoRuntime.queryInterface( XFormsSupplier.class,
             _document );
 
         if ( m_formsSupplier == null )
@@ -98,10 +98,10 @@ public class XMLDocument extends integration.forms.DocumentHelper
         XModel newModel = null;
         try
         {
-            newModel = (XModel) UnoRuntime.queryInterface( XModel.class,
+            newModel = UnoRuntime.queryInterface( XModel.class,
                 getOrb().createInstance( "com.sun.star.xforms.Model" ) );
             newModel.setID(_modelName);
-            XFormsUIHelper1 modelHelper = (XFormsUIHelper1) UnoRuntime.queryInterface(
+            XFormsUIHelper1 modelHelper = UnoRuntime.queryInterface(
                 XFormsUIHelper1.class, newModel );
             modelHelper.newInstance( "Instance 1", new String(), true );
             newModel.initialize();

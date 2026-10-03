@@ -62,23 +62,23 @@ public class FrameDescription {
 
 	@Test
 	public void testFrameDescription() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextFrame xTextFrame = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
+		XTextFrame xTextFrame = UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
 		xText.insertTextContent(xTextCursor,xTextFrame,false);
-		XPropertySet xTextFrameProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
+		XPropertySet xTextFrameProps = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
 		xTextFrameProps.setPropertyValue("Title", "Frame");
 		xTextFrameProps.setPropertyValue("Description", "Test Frame");
 
 		//save and reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
-		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
+		XTextFramesSupplier xTFS_odt = UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
-		XPropertySet xTextFrameProps_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrames_odt.getByName("Frame1"));
+		XPropertySet xTextFrameProps_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextFrames_odt.getByName("Frame1"));
 		assertEquals("Test Frame title","Frame", xTextFrameProps_odt.getPropertyValue("Title"));
 		assertEquals("Test Frame description","Test Frame", xTextFrameProps_odt.getPropertyValue("Description"));
 	}

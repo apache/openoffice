@@ -76,7 +76,7 @@ public class ComponentView
 
     public void SetObject (XAccessibleContext xContext)
     {
-        mxComponent = (XAccessibleComponent)UnoRuntime.queryInterface(
+        mxComponent = UnoRuntime.queryInterface(
             XAccessibleComponent.class, xContext);
         super.SetObject (xContext);
     }
@@ -132,7 +132,7 @@ public class ComponentView
 					"Bounding box conflicts with size";
 			XAccessible xParent = mxContext.getAccessibleParent();
 			XAccessibleComponent xParentComponent =
-				(XAccessibleComponent)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XAccessibleComponent.class, xParent);
 			if (xParentComponent == null)
 			{

@@ -67,7 +67,7 @@ class SelectionView
         ObjectViewContainer aContainer,
         XAccessibleContext xContext)
     {
-        XAccessibleSelection xSelection = (XAccessibleSelection)UnoRuntime.queryInterface(
+        XAccessibleSelection xSelection = UnoRuntime.queryInterface(
                 XAccessibleSelection.class, xContext);
         if (xSelection != null)
             return new SelectionView(aContainer);
@@ -140,7 +140,7 @@ class SelectionView
 
     public void SetObject (XAccessibleContext xContext)
     {
-        mxSelection = (XAccessibleSelection)UnoRuntime.queryInterface(
+        mxSelection = UnoRuntime.queryInterface(
             XAccessibleSelection.class, xContext);
         super.SetObject (xContext);
     }

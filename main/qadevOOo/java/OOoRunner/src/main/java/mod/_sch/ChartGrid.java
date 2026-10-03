@@ -103,7 +103,7 @@ public class ChartGrid extends TestCase {
 
         // get the Grid
         log.println( "getting ChartGrid" );
-        XAxisXSupplier oAxisSup = (XAxisXSupplier)
+        XAxisXSupplier oAxisSup =
             UnoRuntime.queryInterface(XAxisXSupplier.class,oDiagram);
         oObj = (XPropertySet) oAxisSup.getXMainGrid();
 

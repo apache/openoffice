@@ -107,7 +107,7 @@ class SecurityEntity
 		try
 		{
 			XKeyCollector xKeyCollector =
-				(XKeyCollector)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XKeyCollector.class, m_xReferenceResolvedListener);
 			xKeyCollector.setKeyId(id);
 		}
@@ -163,7 +163,7 @@ class SecurityEntity
 			m_xSAXEventKeeper.setSecurityId(referenceId, m_nSecurityId);
 
 			XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
-				(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 
 			xReferenceResolvedBroadcaster.addReferenceResolvedListener(referenceId, m_xReferenceResolvedListener);
@@ -181,7 +181,7 @@ class SecurityEntity
 	protected boolean endMission()
 	{
 		XMissionTaker xMissionTaker =
-			(XMissionTaker)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMissionTaker.class, m_xReferenceResolvedListener);
 
 		boolean rc = xMissionTaker.endMission();

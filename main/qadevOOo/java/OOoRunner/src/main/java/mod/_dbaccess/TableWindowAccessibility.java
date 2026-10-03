@@ -146,7 +146,7 @@ public class TableWindowAccessibility extends TestCase {
         info[1].Name = "password";
         info[1].Value = password;
 
-        XPropertySet propSetDBSource = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet propSetDBSource = UnoRuntime.queryInterface(
                                                XPropertySet.class, oDBSource);
 
         try {
@@ -172,9 +172,9 @@ public class TableWindowAccessibility extends TestCase {
 
         try {
             log.println ("writing database file ...");
-            XDocumentDataSource xDDS = (XDocumentDataSource)
+            XDocumentDataSource xDDS =
             UnoRuntime.queryInterface(XDocumentDataSource.class, oDBSource);
-            store = (XStorable) UnoRuntime.queryInterface(XStorable.class,
+            store = UnoRuntime.queryInterface(XStorable.class,
                     xDDS.getDatabaseDocument());
             aFile = utils.getOfficeTemp ((XMultiServiceFactory) Param.getMSF ())+"TableWindow.odb";
             log.println("... filename will be "+aFile);
@@ -185,7 +185,7 @@ public class TableWindowAccessibility extends TestCase {
             throw new StatusException(Status.failed("Couldn't register object"));
         }
 
-        isolConnection = (XIsolatedConnection) UnoRuntime.queryInterface(
+        isolConnection = UnoRuntime.queryInterface(
                                                      XIsolatedConnection.class,
                                                      oDBSource);
 
@@ -224,13 +224,13 @@ public class TableWindowAccessibility extends TestCase {
             }
         }
 
-        XQueryDefinitionsSupplier querySuppl = (XQueryDefinitionsSupplier) UnoRuntime.queryInterface(
+        XQueryDefinitionsSupplier querySuppl = UnoRuntime.queryInterface(
                                                        XQueryDefinitionsSupplier.class,
                                                        oDBSource);
 
         XNameAccess defContainer = querySuppl.getQueryDefinitions();
 
-        XPropertySet queryProp = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet queryProp = UnoRuntime.queryInterface(
                                          XPropertySet.class, newQuery);
 
         try {
@@ -257,7 +257,7 @@ public class TableWindowAccessibility extends TestCase {
                                               "Couldn't set property value"));
         }
 
-        XNameContainer queryContainer = (XNameContainer) UnoRuntime.queryInterface(
+        XNameContainer queryContainer = UnoRuntime.queryInterface(
                                                 XNameContainer.class,
                                                 defContainer);
 
@@ -315,7 +315,7 @@ public class TableWindowAccessibility extends TestCase {
 
         shortWait();
 
-        XAccessibleComponent accComp = (XAccessibleComponent) UnoRuntime.queryInterface(
+        XAccessibleComponent accComp = UnoRuntime.queryInterface(
                                                XAccessibleComponent.class,
                                                oObj);
 
@@ -352,7 +352,7 @@ public class TableWindowAccessibility extends TestCase {
             log.println ("... done");
             XMultiServiceFactory xMSF = (XMultiServiceFactory)Param.getMSF ();
             Object sfa = xMSF.createInstance ("com.sun.star.comp.ucb.SimpleFileAccess");
-            XSimpleFileAccess xSFA = (XSimpleFileAccess) UnoRuntime.queryInterface (XSimpleFileAccess.class, sfa);
+            XSimpleFileAccess xSFA = UnoRuntime.queryInterface (XSimpleFileAccess.class, sfa);
             log.println ("deleting database file");
             xSFA.kill (aFile);
             log.println ("Could delete file "+aFile+": "+!xSFA.exists (aFile));

@@ -163,13 +163,13 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 
 				if ( nState == EmbedStates.EMBED_ACTIVE || nState == EmbedStates.EMBED_RUNNING )
 				{
-					XComponentSupplier xCompProv = (XComponentSupplier)UnoRuntime.queryInterface(
+					XComponentSupplier xCompProv = UnoRuntime.queryInterface(
 																					XComponentSupplier.class,
 																					m_xEmbedObj );
 					if ( xCompProv != null )
 					{
 						XComponent xComp = xCompProv.getComponent();
-						XTransferable xTransfer = (XTransferable)UnoRuntime.queryInterface(
+						XTransferable xTransfer = UnoRuntime.queryInterface(
 																					XTransferable.class,
 																					xComp );
 						if ( xTransfer != null )
@@ -233,7 +233,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 		if ( m_xEmbedObj != null )
 		{
 			try {
-				XEmbedPersist xPersist = (XEmbedPersist)UnoRuntime.queryInterface( XEmbedPersist.class, m_xEmbedObj );
+				XEmbedPersist xPersist = UnoRuntime.queryInterface( XEmbedPersist.class, m_xEmbedObj );
 				if ( xPersist != null )
 				{
 					xPersist.storeOwn();
@@ -402,7 +402,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 						if ( m_bLinkObj )
 							storeLinkToStorage();
 
-						XTransactedObject xTransact = (XTransactedObject)UnoRuntime.queryInterface( XTransactedObject.class,
+						XTransactedObject xTransact = UnoRuntime.queryInterface( XTransactedObject.class,
 																									m_xStorage );
 						if ( xTransact != null )
 							xTransact.commit();
@@ -633,12 +633,12 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 				if ( m_xStorage != null )
 				{
 					try {
-						XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class,
+						XNameAccess xNameAccess = UnoRuntime.queryInterface( XNameAccess.class,
 																						m_xStorage );
 						if ( xNameAccess != null && xNameAccess.hasByName( "LinkName" ) )
 							m_xStorage.removeElement( "LinkName" );
 
-						XEmbedPersist xPersist = (XEmbedPersist)UnoRuntime.queryInterface( XEmbedPersist.class,
+						XEmbedPersist xPersist = UnoRuntime.queryInterface( XEmbedPersist.class,
 																						m_xEmbedObj );
 						if ( xPersist != null )
 						{
@@ -726,7 +726,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 			// create embedded object based on the class ID
 			try {
 				Object oEmbedFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectFactory" );
-				XEmbedObjectFactory xEmbedFactory = (XEmbedObjectFactory)UnoRuntime.queryInterface(
+				XEmbedObjectFactory xEmbedFactory = UnoRuntime.queryInterface(
 																						XEmbedObjectFactory.class,
 																						oEmbedFactory );
 				if ( xEmbedFactory != null )
@@ -735,7 +735,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 																		"Dummy name",
 																		m_xStorage,
 																		"EmbedSub" );
-					xEmbObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+					xEmbObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 				}
 				else
 					JOptionPane.showMessageDialog( m_aFrame,
@@ -760,13 +760,13 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 
 		try {
 			Object oEmbedFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectFactory" );
-			XEmbedObjectFactory xEmbedFactory = (XEmbedObjectFactory)UnoRuntime.queryInterface(
+			XEmbedObjectFactory xEmbedFactory = UnoRuntime.queryInterface(
 																					XEmbedObjectFactory.class,
 																					oEmbedFactory );
 			if ( xEmbedFactory != null )
 			{
 				Object oEmbObj = xEmbedFactory.createInstanceLink( aLinkURL );
-				xEmbObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+				xEmbObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 			}
 			else
 				JOptionPane.showMessageDialog( m_aFrame,
@@ -789,7 +789,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 		XEmbeddedObject xEmbObj = null;
 		try {
 			Object oEmbedFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectFactory" );
-			XEmbedObjectFactory xEmbedFactory = (XEmbedObjectFactory)UnoRuntime.queryInterface(
+			XEmbedObjectFactory xEmbedFactory = UnoRuntime.queryInterface(
 																					XEmbedObjectFactory.class,
 																					oEmbedFactory );
 			if ( xEmbedFactory != null )
@@ -802,7 +802,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 				Object oEmbObj = xEmbedFactory.createInstanceInitFromMediaDescriptor( m_xStorage,
 																					"EmbedSub",
 																					aMedDescr );
-				xEmbObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+				xEmbObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 			}
 			else
 				JOptionPane.showMessageDialog( m_aFrame,
@@ -833,7 +833,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 		if ( m_xEmbedObj != null )
 		{
 			try {
-				XComponent xComponent = (XComponent)UnoRuntime.queryInterface( XComponent.class, m_xEmbedObj );
+				XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, m_xEmbedObj );
 				if ( xComponent != null )
 					xComponent.dispose();
 			}
@@ -845,7 +845,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 		if ( m_xStorage != null )
 		{
 			try {
-				XComponent xComponent = (XComponent)UnoRuntime.queryInterface( XComponent.class, m_xStorage );
+				XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, m_xStorage );
 				if ( xComponent != null )
 					xComponent.dispose();
 			}
@@ -861,13 +861,13 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 
 		try {
 			Object oStorageFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.StorageFactory" );
-			XSingleServiceFactory xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xStorageFactory = UnoRuntime.queryInterface(
 																						XSingleServiceFactory.class,
 																						oStorageFactory );
 			if ( xStorageFactory != null )
 			{
 				Object oStorage = xStorageFactory.createInstance();
-				xTempStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oStorage );
+				xTempStorage = UnoRuntime.queryInterface( XStorage.class, oStorage );
 			}
 			else
 				JOptionPane.showMessageDialog( m_aFrame,
@@ -887,7 +887,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 	{
 		try {
 			Object oStorageFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.StorageFactory" );
-			XSingleServiceFactory xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xStorageFactory = UnoRuntime.queryInterface(
 																						XSingleServiceFactory.class,
 																						oStorageFactory );
 			if ( xStorageFactory != null )
@@ -897,10 +897,10 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 				aArgs[1] = new Integer( ElementModes.ELEMENT_READWRITE );
 
 				Object oStorage = xStorageFactory.createInstanceWithArguments( aArgs );
-				XStorage xTargetStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oStorage );
+				XStorage xTargetStorage = UnoRuntime.queryInterface( XStorage.class, oStorage );
 				m_xStorage.copyToStorage( xTargetStorage );
 
-				XComponent xComponent = (XComponent)UnoRuntime.queryInterface( XComponent.class, m_xStorage );
+				XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, m_xStorage );
 				xComponent.dispose();
 
 				m_xStorage = xTargetStorage;
@@ -924,7 +924,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 		try
 		{
 			Object oStorageFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.StorageFactory" );
-			XSingleServiceFactory xStorageFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xStorageFactory = UnoRuntime.queryInterface(
 																						XSingleServiceFactory.class,
 																						oStorageFactory );
 			Object aArgs[] = new Object[2];
@@ -932,14 +932,14 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 			aArgs[1] = new Integer( ElementModes.ELEMENT_READWRITE );
 
 			Object oStorage = xStorageFactory.createInstanceWithArguments( aArgs );
-			XStorage xTargetStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oStorage );
+			XStorage xTargetStorage = UnoRuntime.queryInterface( XStorage.class, oStorage );
 
 			Object oEmbedFactory = m_xServiceFactory.createInstance( "com.sun.star.embed.EmbeddedObjectFactory" );
-			XEmbedObjectFactory xEmbedFactory = (XEmbedObjectFactory)UnoRuntime.queryInterface(
+			XEmbedObjectFactory xEmbedFactory = UnoRuntime.queryInterface(
 																					XEmbedObjectFactory.class,
 																					oEmbedFactory );
 
-			XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class,
+			XNameAccess xNameAccess = UnoRuntime.queryInterface( XNameAccess.class,
 																			xTargetStorage );
 			if ( xNameAccess == null )
 			{
@@ -970,7 +970,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 																	"EmbedSub",
 																	false );
 
-			m_xEmbedObj = (XEmbeddedObject)UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+			m_xEmbedObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
 
 			if ( m_xEmbedObj != null )
 			{
@@ -999,7 +999,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 				if ( xLinkStream != null )
 				{
 					XOutputStream xLinkOutStream = xLinkStream.getOutputStream();
-					XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class,
+					XTruncate xTruncate = UnoRuntime.queryInterface( XTruncate.class,
 																			 	xLinkOutStream );
 					if ( xLinkOutStream != null && xTruncate != null )
 					{
@@ -1013,7 +1013,7 @@ public class EmbedContApp extends Applet implements MouseListener, XEmbeddedClie
 						xLinkOutStream.writeBytes( aLinkBytes );
 						xLinkOutStream.closeOutput();
 
-						XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class,
+						XComponent xComponent = UnoRuntime.queryInterface( XComponent.class,
 																						xLinkStream );
 						if ( xComponent != null )
 							xComponent.dispose();

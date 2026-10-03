@@ -87,7 +87,7 @@ public class Pipe extends TestCase {
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
         //add relation for io.XOutputStream
-        final XInputStream iStream = (XInputStream)
+        final XInputStream iStream =
                 UnoRuntime.queryInterface(XInputStream.class, oObj);
 
         tEnv.addObjRelation("ByteData", byteData);

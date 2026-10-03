@@ -101,7 +101,7 @@ public class ScDataPilotItemObj extends TestCase {
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xSheetDoc ");
 
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface(
+        XComponent oComp = UnoRuntime.queryInterface(
                                    XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -149,7 +149,7 @@ public class ScDataPilotItemObj extends TestCase {
         XSpreadsheets xSpreadsheets = (XSpreadsheets) xSheetDoc.getSheets();
         XSpreadsheet oSheet = null;
         XSpreadsheet oSheet2 = null;
-        XIndexAccess oIndexAccess = (XIndexAccess) UnoRuntime.queryInterface(
+        XIndexAccess oIndexAccess = UnoRuntime.queryInterface(
                                             XIndexAccess.class, xSpreadsheets);
 
         try {
@@ -216,7 +216,7 @@ public class ScDataPilotItemObj extends TestCase {
         // create the test objects
         log.println("Getting test objects");
 
-        XDataPilotTablesSupplier DPTS = (XDataPilotTablesSupplier) UnoRuntime.queryInterface(
+        XDataPilotTablesSupplier DPTS = UnoRuntime.queryInterface(
                                                 XDataPilotTablesSupplier.class,
                                                 oSheet);
         XDataPilotTables DPT = DPTS.getDataPilotTables();
@@ -227,7 +227,7 @@ public class ScDataPilotItemObj extends TestCase {
 
         try {
             Object oDataPilotField = DPDsc.getDataPilotFields().getByIndex(0);
-            fieldPropSet = (XPropertySet) UnoRuntime.queryInterface(
+            fieldPropSet = UnoRuntime.queryInterface(
                                    XPropertySet.class, oDataPilotField);
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
@@ -284,13 +284,13 @@ public class ScDataPilotItemObj extends TestCase {
         log.println("Creating object - " +
                     ((oObj == null) ? "FAILED" : "OK"));
 
-        XDataPilotField xDataPilotField = (XDataPilotField) UnoRuntime.queryInterface(
+        XDataPilotField xDataPilotField = UnoRuntime.queryInterface(
                                                   XDataPilotField.class, oObj);
 
         XIndexAccess xIA = xDataPilotField.getItems();
 
         try {
-            oObj = (XInterface) UnoRuntime.queryInterface(XInterface.class,
+            oObj = UnoRuntime.queryInterface(XInterface.class,
                                                           xIA.getByIndex(0));
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             log.println("Couldn't get DataPilotItemObj");
@@ -332,7 +332,7 @@ public class ScDataPilotItemObj extends TestCase {
                 return;
             }
 
-            XNamed named = (XNamed) UnoRuntime.queryInterface(XNamed.class,
+            XNamed named = UnoRuntime.queryInterface(XNamed.class,
                                                               field);
             String name = named.getName();
 
@@ -341,7 +341,7 @@ public class ScDataPilotItemObj extends TestCase {
             if (!name.equals("Data")) {
                 fieldsNames[cnt] = name;
 
-                XPropertySet props = (XPropertySet) UnoRuntime.queryInterface(
+                XPropertySet props = UnoRuntime.queryInterface(
                                              XPropertySet.class, field);
 
                 try {

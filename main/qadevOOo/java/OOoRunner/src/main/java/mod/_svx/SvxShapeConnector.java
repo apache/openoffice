@@ -133,12 +133,12 @@ public class SvxShapeConnector extends TestCase {
         // first we write what we are intend to do to log file
         log.println( "creating a test environment" );
         try {
-            XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oDocMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class,xDrawDoc);
             Object oInt = oDocMSF.createInstance
                 ( "com.sun.star.drawing.ConnectorShape" );
 
-            oShape = (XShape)UnoRuntime.queryInterface( XShape.class, oInt );
+            oShape = UnoRuntime.queryInterface( XShape.class, oInt );
             DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape);
         }
         catch (Exception e) {
@@ -162,7 +162,7 @@ public class SvxShapeConnector extends TestCase {
         }
 
         log.println( "adding two style as ObjRelation for ShapeDescriptor" );
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
@@ -171,7 +171,7 @@ public class SvxShapeConnector extends TestCase {
         } catch (Exception e) {}
 
         tEnv.addObjRelation("Style1",aStyle);
-        oShapeProps = (XPropertySet)
+        oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
             aStyle = (XStyle) AnyConverter.toObject(

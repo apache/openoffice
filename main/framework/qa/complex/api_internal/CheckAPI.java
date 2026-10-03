@@ -128,7 +128,7 @@ public class CheckAPI  {
             if ( param.get("job1")==null )
             {
                 // get all test jobs from runner service
-                XPropertyAccess xPropAcc = (XPropertyAccess)UnoRuntime.queryInterface(XPropertyAccess.class, oObj);
+                XPropertyAccess xPropAcc = UnoRuntime.queryInterface(XPropertyAccess.class, oObj);
                 props = xPropAcc.getPropertyValues();
             }
             else  {

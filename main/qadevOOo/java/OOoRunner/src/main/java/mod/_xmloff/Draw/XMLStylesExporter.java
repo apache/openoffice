@@ -132,12 +132,12 @@ public class XMLStylesExporter extends TestCase {
         try {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Draw.XMLStylesExporter", new Object[] {arg});
-            XExporter xEx = (XExporter)
+            XExporter xEx =
                 UnoRuntime.queryInterface(XExporter.class,oObj);
             xEx.setSourceDocument(xDrawDoc);
 
             //obtain style families
-            XStyleFamiliesSupplier styleSup = (XStyleFamiliesSupplier)
+            XStyleFamiliesSupplier styleSup =
                 UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, xDrawDoc);
             XNameAccess StyleFamilies = styleSup.getStyleFamilies();
             //obtain all style family names
@@ -145,11 +145,11 @@ public class XMLStylesExporter extends TestCase {
             String styleFamilyName = styleFamiliesNames[0];
             //obtain style family with name[0]
             Object objectStyle = StyleFamilies.getByName(styleFamilyName);
-            XNameContainer xStyleFamilyName = (XNameContainer)
+            XNameContainer xStyleFamilyName =
                 UnoRuntime.queryInterface(XNameContainer.class, objectStyle);
             //creat new style
             Object SC = SOF.createInstance(xDrawDoc, "com.sun.star.style.Style");
-            XStyle Style = (XStyle) UnoRuntime.queryInterface(XStyle.class,SC);
+            XStyle Style = UnoRuntime.queryInterface(XStyle.class,SC);
             //add new style to style familiy with name[0]
             xStyleFamilyName.insertByName(STYLE_NAME,Style);
         } catch (com.sun.star.uno.Exception e) {

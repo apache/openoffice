@@ -58,7 +58,7 @@ public class AccStatisticsObject extends TestCase {
             log.println( "creating a chartdocument" );
             xChartDoc = SOF.createChartDoc(null);
             log.println("Display MeanValue");
-            XPropertySet diagProps = (XPropertySet)
+            XPropertySet diagProps =
                 UnoRuntime.queryInterface(XPropertySet.class, xChartDoc.getDiagram());
             diagProps.setPropertyValue("MeanValue",new Boolean(true));
         } catch (com.sun.star.uno.Exception e) {
@@ -69,7 +69,7 @@ public class AccStatisticsObject extends TestCase {
 
         XInterface oObj = null;
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xChartDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -88,7 +88,7 @@ public class AccStatisticsObject extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        final XAccessibleComponent acc = (XAccessibleComponent)
+        final XAccessibleComponent acc =
                 UnoRuntime.queryInterface(
                     XAccessibleComponent.class,oObj);
         tEnv.addObjRelation("EventProducer",

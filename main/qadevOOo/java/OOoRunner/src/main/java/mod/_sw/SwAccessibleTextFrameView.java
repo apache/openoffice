@@ -89,7 +89,7 @@ public class SwAccessibleTextFrameView extends TestCase {
         log.println( "creating Frames" );
         try {
             oFrame1 = SOF.createTextFrame(xTextDoc, 500, 500);
-            oPropSet = (XPropertySet)UnoRuntime.queryInterface(
+            oPropSet = UnoRuntime.queryInterface(
                 XPropertySet.class, oFrame1 );
             oPropSet.setPropertyValue("AnchorType",
                 TextContentAnchorType.AS_CHARACTER);
@@ -97,7 +97,7 @@ public class SwAccessibleTextFrameView extends TestCase {
             oCursor = oText.createTextCursor();
 
             log.println( "inserting Frame1" );
-            XTextContent the_content = (XTextContent)
+            XTextContent the_content =
                 UnoRuntime.queryInterface(XTextContent.class, oFrame1);
             oText.insertTextContent(oCursor, the_content, true);
         } catch (Exception e) {
@@ -105,7 +105,7 @@ public class SwAccessibleTextFrameView extends TestCase {
             throw new StatusException("Couldn't insert TextFrame", e);
         }
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -123,7 +123,7 @@ public class SwAccessibleTextFrameView extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         XController xController = xTextDoc.getCurrentController();
-        XViewSettingsSupplier xViewSetSup = (XViewSettingsSupplier)
+        XViewSettingsSupplier xViewSetSup =
                 UnoRuntime.queryInterface(XViewSettingsSupplier.class,
                 xController);
 

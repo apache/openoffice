@@ -74,7 +74,7 @@ public class TextView
         ObjectViewContainer aContainer,
         XAccessibleContext xContext)
     {
-        XAccessibleText xText = (XAccessibleText)UnoRuntime.queryInterface(
+        XAccessibleText xText = UnoRuntime.queryInterface(
                 XAccessibleText.class, xContext);
         if (xText != null)
             return new TextView (aContainer);
@@ -130,7 +130,7 @@ public class TextView
     */
     public void SetObject (XAccessibleContext xObject)
     {
-        mxText = (XAccessibleText)UnoRuntime.queryInterface(
+        mxText = UnoRuntime.queryInterface(
             XAccessibleText.class, xObject);
         maCaretSpinnerModel = new CaretSpinnerModel(mxText);
         maCaretPositionSpinner.setModel (maCaretSpinnerModel);
@@ -178,7 +178,7 @@ public class TextView
             maCaretPositionSpinner.setValue (new Integer (mxText.getCaretPosition()));
 
             // Multi line methods.
-            XAccessibleMultiLineText xMultiText = (XAccessibleMultiLineText)
+            XAccessibleMultiLineText xMultiText =
                 UnoRuntime.queryInterface( XAccessibleMultiLineText.class, mxText );
 
             if( null != xMultiText ) {

@@ -47,7 +47,7 @@ public class XAccessibleEventLog implements XAccessibleEventListener {
     }
 
     public static void addEventListener(XAccessibleContext xac, java.awt.Component c) {
-        XAccessibleEventBroadcaster broadcaster = (XAccessibleEventBroadcaster)
+        XAccessibleEventBroadcaster broadcaster =
             UnoRuntime.queryInterface(XAccessibleEventBroadcaster.class, xac);
         if (broadcaster != null) {
             broadcaster.addEventListener(XAccessibleEventLog.get());
@@ -142,7 +142,7 @@ public class XAccessibleEventLog implements XAccessibleEventListener {
     }
 
     protected static void logMessage(Object o, String s) {
-        XAccessibleContext xac = (XAccessibleContext) UnoRuntime.queryInterface(XAccessibleContext.class, o);
+        XAccessibleContext xac = UnoRuntime.queryInterface(XAccessibleContext.class, o);
         if( xac != null ) {
             String oid = UnoRuntime.generateOid(xac);
             synchronized (proxyList) {

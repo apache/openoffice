@@ -77,7 +77,7 @@ public class ChartHelper
     {
         XChartDocument aResult = null;
 
-        XMultiServiceFactory aFact = (XMultiServiceFactory)
+        XMultiServiceFactory aFact =
             UnoRuntime.queryInterface(XMultiServiceFactory.class,
                                       maContainerDocument );
 
@@ -85,19 +85,19 @@ public class ChartHelper
         {
             try
             {
-                XTextContent xTextContent = (XTextContent)UnoRuntime.queryInterface(
+                XTextContent xTextContent = UnoRuntime.queryInterface(
                 XTextContent.class,
                 aFact.createInstance("com.sun.star.text.TextEmbeddedObject"));
 
                 if ( xTextContent != null )
                 {
-                    XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(
+                    XPropertySet xPropSet = UnoRuntime.queryInterface(
                         XPropertySet.class, xTextContent);
 
                     Any aAny = new Any(String.class, msChartClassID);
                     xPropSet.setPropertyValue("CLSID", aAny );
 
-                    XTextDocument xTextDoc = (XTextDocument)
+                    XTextDocument xTextDoc =
                         UnoRuntime.queryInterface(XTextDocument.class,
                                                   maContainerDocument);
                     XText xText = xTextDoc.getText();
@@ -107,7 +107,7 @@ public class ChartHelper
                     xText.insertTextContent( xCursor, xTextContent, true );
 
                     // set size and position
-                    XShape xShape = (XShape)UnoRuntime.queryInterface(
+                    XShape xShape = UnoRuntime.queryInterface(
                         XShape.class, xTextContent);
                     xShape.setSize( aExtent );
 
@@ -123,16 +123,16 @@ public class ChartHelper
                     xPropSet.setPropertyValue("HoriOrientPosition", aAny );
 
                     // retrieve the chart document as model of the OLE shape
-                    aResult = (XChartDocument) UnoRuntime.queryInterface(
+                    aResult = UnoRuntime.queryInterface(
                             XChartDocument.class,
                             xPropSet.getPropertyValue( "Model" ));
 
                     // create a diagram via the factory and set this as
                     // new diagram
                     aResult.setDiagram(
-                        (XDiagram) UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             XDiagram.class,
-                            ((XMultiServiceFactory) UnoRuntime.queryInterface(
+                            (UnoRuntime.queryInterface(
                                 XMultiServiceFactory.class,
                                 aResult )).createInstance(sChartServiceName )));
                 }
@@ -156,7 +156,7 @@ public class ChartHelper
         XShapes aPage = null;
 
         // try interface for multiple pages in a document
-        XDrawPagesSupplier aSupplier = (XDrawPagesSupplier)
+        XDrawPagesSupplier aSupplier =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class,
                                       maContainerDocument );
 
@@ -165,7 +165,7 @@ public class ChartHelper
             try
             {
                 // get first page
-                aPage = (XShapes) UnoRuntime.queryInterface(
+                aPage = UnoRuntime.queryInterface(
                     XShapes.class, aSupplier.getDrawPages().getByIndex( 0 ) );
             }
             catch( Exception ex )
@@ -177,20 +177,20 @@ public class ChartHelper
         else
         {
             // try interface for single draw page (e.g. spreadsheet)
-            XDrawPageSupplier aOnePageSupplier = (XDrawPageSupplier)
+            XDrawPageSupplier aOnePageSupplier =
                 UnoRuntime.queryInterface(XDrawPageSupplier.class,
                                           maContainerDocument );
 
             if( aOnePageSupplier != null )
             {
-                aPage = (XShapes) UnoRuntime.queryInterface(
+                aPage = UnoRuntime.queryInterface(
                     XShapes.class, aOnePageSupplier.getDrawPage());
             }
         }
 
         if( aPage != null )
         {
-            XMultiServiceFactory aFact = (XMultiServiceFactory)
+            XMultiServiceFactory aFact =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class,
                                           maContainerDocument );
 
@@ -199,7 +199,7 @@ public class ChartHelper
                 try
                 {
                     // create an OLE shape
-                    XShape aShape = (XShape) UnoRuntime.queryInterface(
+                    XShape aShape = UnoRuntime.queryInterface(
                         XShape.class,
                         aFact.createInstance( "com.sun.star.drawing.OLE2Shape" ));
 
@@ -209,7 +209,7 @@ public class ChartHelper
                     aShape.setSize( aExtent );
 
                     // make the OLE shape a chart
-                    XPropertySet aShapeProp = (XPropertySet)
+                    XPropertySet aShapeProp =
                         UnoRuntime.queryInterface(XPropertySet.class, aShape );
                     if( aShapeProp != null )
                     {
@@ -217,16 +217,16 @@ public class ChartHelper
                         aShapeProp.setPropertyValue( "CLSID", msChartClassID );
 
                         // retrieve the chart document as model of the OLE shape
-                        aResult = (XChartDocument) UnoRuntime.queryInterface(
+                        aResult = UnoRuntime.queryInterface(
                             XChartDocument.class,
                             aShapeProp.getPropertyValue( "Model" ));
 
                         // create a diagram via the factory and set this as
                         // new diagram
                         aResult.setDiagram(
-                            (XDiagram) UnoRuntime.queryInterface(
+                            UnoRuntime.queryInterface(
                                 XDiagram.class,
-                                ((XMultiServiceFactory) UnoRuntime.queryInterface(
+                                (UnoRuntime.queryInterface(
                                     XMultiServiceFactory.class,
                                     aResult )).createInstance(sChartServiceName )));
                     }

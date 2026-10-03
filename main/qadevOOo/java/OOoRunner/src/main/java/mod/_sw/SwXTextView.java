@@ -149,12 +149,12 @@ public class SwXTextView extends TestCase {
             XTextCursor oCursor = oText.createTextCursor();
             oFrame1 = SOF.createInstance
                 (xTextDoc, "com.sun.star.text.TextFrame" );
-            first = (XTextFrame)UnoRuntime.queryInterface
+            first = UnoRuntime.queryInterface
                 ( XTextFrame.class, oFrame1);
             oText.insertTextContent(oCursor,first, false);
             first.getText().setString("Frame 1");
             oFrame2 = SOF.createInstance(xTextDoc, "com.sun.star.text.TextFrame" );
-            second = (XTextFrame)UnoRuntime.queryInterface
+            second = UnoRuntime.queryInterface
                 ( XTextFrame.class, oFrame2);
             oText.insertTextContent(oCursor,second, false);
             second.getText().setString("Frame 2");
@@ -169,7 +169,7 @@ public class SwXTextView extends TestCase {
             throw new StatusException("Couldn't insert text table ", Ex);
         }
 
-        XSearchable oSearch = (XSearchable)UnoRuntime.queryInterface
+        XSearchable oSearch = UnoRuntime.queryInterface
             (XSearchable.class, xTextDoc);
         XSearchDescriptor xSDesc = oSearch.createSearchDescriptor();
         xSDesc.setSearchString("SwXTextRanges");
@@ -182,9 +182,9 @@ public class SwXTextView extends TestCase {
             oFrame1, oFrame2, textRanges1, textRanges2});
         tEnv.addObjRelation("Comparer", new Comparator() {
             public int compare(Object o1, Object o2) {
-                XServiceInfo serv1 = (XServiceInfo)
+                XServiceInfo serv1 =
                     UnoRuntime.queryInterface(XServiceInfo.class, o1);
-                XServiceInfo serv2 = (XServiceInfo)
+                XServiceInfo serv2 =
                     UnoRuntime.queryInterface(XServiceInfo.class, o2);
 
                 String implName1 = serv1.getImplementationName();
@@ -193,9 +193,9 @@ public class SwXTextView extends TestCase {
                     return -1;
                 }
 
-                XIndexAccess indAc1 = (XIndexAccess)
+                XIndexAccess indAc1 =
                     UnoRuntime.queryInterface(XIndexAccess.class, o1);
-                XIndexAccess indAc2 = (XIndexAccess)
+                XIndexAccess indAc2 =
                     UnoRuntime.queryInterface(XIndexAccess.class, o2);
 
                 if (indAc1 != null && indAc2 != null) {
@@ -204,9 +204,9 @@ public class SwXTextView extends TestCase {
                     return c1 == c2 ? 0 : 1;
                 }
 
-                XText text1 = (XText)
+                XText text1 =
                     UnoRuntime.queryInterface(XText.class, o1);
-                XText text2 = (XText)
+                XText text2 =
                     UnoRuntime.queryInterface(XText.class, o2);
 
                 if (text1 != null && text2 != null) {
@@ -219,7 +219,7 @@ public class SwXTextView extends TestCase {
                 return compare(this, obj) == 0;
             } });
 
-        XSelectionSupplier xsel = (XSelectionSupplier)
+        XSelectionSupplier xsel =
             UnoRuntime.queryInterface(XSelectionSupplier.class,xContr);
         try {
             xsel.select(second);

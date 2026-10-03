@@ -74,7 +74,7 @@ public class AccessibleBrowseBoxTable extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class,
+        the_Desk = UnoRuntime.queryInterface(XDesktop.class,
             DesktopTools.createDesktop(
             (XMultiServiceFactory)Param.getMSF()));
     }
@@ -137,12 +137,12 @@ public class AccessibleBrowseBoxTable extends TestCase {
 
         shortWait();
 
-        XModel aModel1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel aModel1 = UnoRuntime.queryInterface(XModel.class,
             xTextDoc);
 
         XController secondController = aModel1.getCurrentController();
 
-        XDispatchProvider aProv = (XDispatchProvider)UnoRuntime.queryInterface(
+        XDispatchProvider aProv = UnoRuntime.queryInterface(
             XDispatchProvider.class,
             secondController);
 
@@ -186,7 +186,7 @@ public class AccessibleBrowseBoxTable extends TestCase {
         param3.Value = "biblio";
         params[2] = param3;
 
-        final XSelectionSupplier xSelect = (XSelectionSupplier) UnoRuntime.queryInterface(
+        final XSelectionSupplier xSelect = UnoRuntime.queryInterface(
             XSelectionSupplier.class, xCont);
 
 

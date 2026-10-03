@@ -89,24 +89,24 @@ public class FrameBackGraphic {
 	}
 	@Test
 	public void testFrameBackGraphic() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new Frame from the document's factory
-		XTextFrame xTextFrame1 = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
+		XTextFrame xTextFrame1 = UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
 		xText.insertTextContent(xTextCursor,xTextFrame1,false);
-		XPropertySet xFrameProps1 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrame1);
+		XPropertySet xFrameProps1 = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame1);
 		xFrameProps1.setPropertyValue("BackGraphicURL",graphicURL);
 		xFrameProps1.setPropertyValue("BackGraphicFilter",graphicName);
 		xFrameProps1.setPropertyValue("BackGraphicLocation",backGraphicLocation);
-		XTextDocument xTextDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
-		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class,xTextDocument_odt);
+		XTextDocument xTextDocument_odt=UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
+		XTextFramesSupplier xTFS_odt = UnoRuntime.queryInterface(XTextFramesSupplier.class,xTextDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
 		Object xFrame_obj1=xTextFrames_odt.getByName("Frame1");
-		XTextFrame xFrame_Assert1=(XTextFrame) UnoRuntime.queryInterface(XTextFrame.class, xFrame_obj1);
-		XPropertySet xFrameProps1_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFrame_Assert1);
+		XTextFrame xFrame_Assert1=UnoRuntime.queryInterface(XTextFrame.class, xFrame_obj1);
+		XPropertySet xFrameProps1_assert = UnoRuntime.queryInterface(XPropertySet.class, xFrame_Assert1);
 		GraphicLocation graphiclocation=(GraphicLocation)xFrameProps1_assert.getPropertyValue("BackGraphicLocation");
 		assertEquals("verify Frame backgraphic location",backGraphicLocation,graphiclocation.getValue());
 		assertEquals("verify Frame backgraphic filter",graphicName,xFrameProps1_assert.getPropertyValue("BackGraphicFilter"));

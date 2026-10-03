@@ -136,10 +136,10 @@ public class _XScriptNameResolver extends MultiMethodTest {
 
         if (storageManager == null) {
             try {
-                XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet xProp = UnoRuntime.queryInterface(
                     XPropertySet.class, tParam.getMSF());
 
-                XComponentContext xContext = (XComponentContext)
+                XComponentContext xContext =
                     UnoRuntime.queryInterface(XComponentContext.class,
                     xProp.getPropertyValue("DefaultContext"));
 
@@ -147,7 +147,7 @@ public class _XScriptNameResolver extends MultiMethodTest {
                     xContext.getValueByName("/singletons/drafts.com.sun.star." +
                     "script.framework.storage.theScriptStorageManager");
 
-                storageManager = (XScriptStorageManager)
+                storageManager =
                     UnoRuntime.queryInterface(XScriptStorageManager.class, ifc);
             }
             catch( Exception e ) {
@@ -171,7 +171,7 @@ public class _XScriptNameResolver extends MultiMethodTest {
             Object fa = tParam.getMSF().createInstance(
                 "com.sun.star.ucb.SimpleFileAccess");
 
-            access = (XSimpleFileAccess)
+            access =
                 UnoRuntime.queryInterface(XSimpleFileAccess.class, fa);
         }
         catch (com.sun.star.uno.Exception e) {

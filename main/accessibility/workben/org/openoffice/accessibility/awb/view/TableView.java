@@ -71,7 +71,7 @@ public class TableView
 
     public void SetObject (XAccessibleContext xContext)
     {
-        mxTable = (XAccessibleTable)UnoRuntime.queryInterface(
+        mxTable = UnoRuntime.queryInterface(
             XAccessibleTable.class, xContext);
         super.SetObject (xContext);
     }

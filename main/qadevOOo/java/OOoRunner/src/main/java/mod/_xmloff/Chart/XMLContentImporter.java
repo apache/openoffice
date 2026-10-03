@@ -137,7 +137,7 @@ public class XMLContentImporter extends TestCase {
 
 
             Object oTitle = xChartDoc.getTitle() ;
-            xTitleProp = (XPropertySet) UnoRuntime.queryInterface
+            xTitleProp = UnoRuntime.queryInterface
                 (XPropertySet.class, oTitle) ;
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log) ;

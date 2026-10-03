@@ -88,9 +88,9 @@ public class Pump extends TestCase {
         XInterface oObj = (XInterface) oInterface;
 
         // setting up input and output streams for pump
-        XActiveDataSink xSink = (XActiveDataSink)
+        XActiveDataSink xSink =
             UnoRuntime.queryInterface(XActiveDataSink.class, oObj);
-        XActiveDataSource xSource = (XActiveDataSource)
+        XActiveDataSource xSource =
             UnoRuntime.queryInterface(XActiveDataSource.class, oObj);
 
         XInputStream xInput = new MyInput();

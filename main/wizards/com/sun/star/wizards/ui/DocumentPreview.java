@@ -71,10 +71,10 @@ public class DocumentPreview
 	public DocumentPreview(XMultiServiceFactory xmsf, Object control) throws Exception
 	{
 
-		//((XWindow)UnoRuntime.queryInterface(XWindow.class,control)).addPaintListener(this);
+		//(UnoRuntime.queryInterface(XWindow.class,control)).addPaintListener(this);
 		xControl = UnoRuntime.queryInterface(XControl.class, control);
 		//register this object as a listener, to close the frame when disposing.
-		//((XComponent) UnoRuntime.queryInterface(XComponent.class, control)).addEventListener(this);
+		//(UnoRuntime.queryInterface(XComponent.class, control)).addEventListener(this);
 
 		createPreviewFrame(xmsf, xControl);
 	}
@@ -163,7 +163,7 @@ public class DocumentPreview
 		xWindow = UnoRuntime.queryInterface(XWindow.class, xPeer);
 		Object frame = xmsf.createInstance("com.sun.star.frame.Frame");
 		xFrame = UnoRuntime.queryInterface(XFrame.class, frame);
-//		XFrame xF = (XFrame) UnoRuntime.queryInterface(XFrame.class, Desktop.getDesktop(xmsf));
+//		XFrame xF = UnoRuntime.queryInterface(XFrame.class, Desktop.getDesktop(xmsf));
 //		xFrame = xF.findFrame("_blank", 0);
 		xFrame.initialize(xWindow);
 		xWindow.setVisible(true);

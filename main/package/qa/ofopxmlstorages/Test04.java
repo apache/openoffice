@@ -286,7 +286,7 @@ public class Test04 implements StorageTest {
 
 			try
 			{
-				XNameAccess xResAccess = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xResStorage );
+				XNameAccess xResAccess = UnoRuntime.queryInterface( XNameAccess.class, xResStorage );
 				if ( xResAccess.hasByName( "SubStorage2" ) )
 					m_aTestHelper.Error( "SubStorage2 must be removed already!" );
 			}

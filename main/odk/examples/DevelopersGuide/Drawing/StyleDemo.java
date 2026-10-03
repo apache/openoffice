@@ -80,10 +80,10 @@ public class StyleDemo
 			   that is available within the styles of the document to red. It
 			   will also print each family and style name to the standard output */
 			XModel xModel =
-				(XModel)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XModel.class, xComponent );
 			com.sun.star.style.XStyleFamiliesSupplier xSFS =
-                (com.sun.star.style.XStyleFamiliesSupplier)
+
 				UnoRuntime.queryInterface(
                     com.sun.star.style.XStyleFamiliesSupplier.class, xModel );
 
@@ -100,7 +100,7 @@ public class StyleDemo
 				// and now all available styles
 				Object aFamilyObj = xFamilies.getByName( Families[ i ] );
 				com.sun.star.container.XNameAccess xStyles =
-                    (com.sun.star.container.XNameAccess)
+
 					UnoRuntime.queryInterface(
                         com.sun.star.container.XNameAccess.class, aFamilyObj );
 				String[] Styles = xStyles.getElementNames();
@@ -108,12 +108,12 @@ public class StyleDemo
 				{
 					System.out.println( "   " + Styles[ j ] );
 					Object aStyleObj = xStyles.getByName( Styles[ j ] );
-					com.sun.star.style.XStyle xStyle = (com.sun.star.style.XStyle)
+					com.sun.star.style.XStyle xStyle =
 						UnoRuntime.queryInterface(
                             com.sun.star.style.XStyle.class, aStyleObj );
 					// now we have the XStyle Interface and the CharColor for
 					// all styles is exemplary be set to red.
-					XPropertySet xStylePropSet = (XPropertySet)
+					XPropertySet xStylePropSet =
 						UnoRuntime.queryInterface( XPropertySet.class, xStyle );
 					XPropertySetInfo xStylePropSetInfo =
                         xStylePropSet.getPropertySetInfo();
@@ -131,25 +131,25 @@ public class StyleDemo
 			   the "graphics" family */
 
 			Object obj = xFamilies.getByName( "graphics" );
-			com.sun.star.container.XNameAccess xStyles = (XNameAccess)
+			com.sun.star.container.XNameAccess xStyles =
 				UnoRuntime.queryInterface(com.sun.star.container.XNameAccess.class,
                                           obj );
 			obj = xStyles.getByName( "title1" );
-			com.sun.star.style.XStyle xTitle1Style = (com.sun.star.style.XStyle)
+			com.sun.star.style.XStyle xTitle1Style =
 				UnoRuntime.queryInterface( com.sun.star.style.XStyle.class, obj );
 
 			XDrawPagesSupplier xDrawPagesSupplier =
-				(XDrawPagesSupplier)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XDrawPagesSupplier.class, xComponent );
 			XDrawPages xDrawPages = xDrawPagesSupplier.getDrawPages();
-			XDrawPage xDrawPage = (XDrawPage)UnoRuntime.queryInterface(
+			XDrawPage xDrawPage = UnoRuntime.queryInterface(
                 XDrawPage.class, xDrawPages.getByIndex( 0 ));
-			XShapes xShapes = (XShapes)UnoRuntime.queryInterface(XShapes.class,
+			XShapes xShapes = UnoRuntime.queryInterface(XShapes.class,
                                                                  xDrawPage );
 			XShape xShape = ShapeHelper.createShape( xComponent, new Point( 0, 0 ),
 				new Size( 5000, 5000 ), "com.sun.star.drawing.RectangleShape" );
 			xShapes.add( xShape );
-			XPropertySet xPropSet = (XPropertySet)
+			XPropertySet xPropSet =
 				UnoRuntime.queryInterface( XPropertySet.class, xShape );
 			xPropSet.setPropertyValue( "Style", xTitle1Style );
 

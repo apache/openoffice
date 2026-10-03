@@ -96,11 +96,11 @@ public class SwXTextSection extends TestCase {
         oText = xTextDoc.getText();
             XTextCursor oCursor = oText.createTextCursor();
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
 
         try {
-            XTextSectionsSupplier oTSSupp = (XTextSectionsSupplier)
+            XTextSectionsSupplier oTSSupp =
             UnoRuntime.queryInterface
                     ( XTextSectionsSupplier.class, xTextDoc );
             XNameAccess oTSSuppName = oTSSupp.getTextSections();
@@ -110,7 +110,7 @@ public class SwXTextSection extends TestCase {
                 XTextSection old = (XTextSection) AnyConverter.toObject(
                     new Type(XTextSection.class),
                         oTSSuppName.getByName("SwXTextSection"));
-                XComponent oldC = (XComponent)
+                XComponent oldC =
                         UnoRuntime.queryInterface(XComponent.class,old);
                 oldC.dispose();
                 oText.setString("");
@@ -120,10 +120,10 @@ public class SwXTextSection extends TestCase {
             oTS = (XInterface) oDocMSF.createInstance
                     ("com.sun.star.text.TextSection");
             instance = oDocMSF.createInstance("com.sun.star.text.TextSection");
-            XTextContent oTSC = (XTextContent)
+            XTextContent oTSC =
                     UnoRuntime.queryInterface(XTextContent.class, oTS);
             oText.insertTextContent(oCursor, oTSC, false);
-            XWordCursor oWordC = (XWordCursor)
+            XWordCursor oWordC =
                 UnoRuntime.queryInterface(XWordCursor.class, oCursor);
             oCursor.setString("End of TextSection");
             oCursor.gotoStart(false);
@@ -131,16 +131,16 @@ public class SwXTextSection extends TestCase {
             oWordC.gotoEndOfWord(false);
             XInterface oTS2 = (XInterface) oDocMSF.createInstance
                 ("com.sun.star.text.TextSection");
-            oTSC = (XTextContent)UnoRuntime.queryInterface(XTextContent.class, oTS2);
+            oTSC = UnoRuntime.queryInterface(XTextContent.class, oTS2);
             oText.insertTextContent(oCursor, oTSC, false);
 
-            XIndexAccess oTSSuppIndex = (XIndexAccess)
+            XIndexAccess oTSSuppIndex =
             UnoRuntime.queryInterface(XIndexAccess.class, oTSSuppName);
 
             log.println( "getting a TextSection with the XTextSectionSupplier()" );
             xTS = (XTextSection) AnyConverter.toObject(
                         new Type(XTextSection.class),oTSSuppIndex.getByIndex(0));
-            XNamed xTSName = (XNamed)
+            XNamed xTSName =
                     UnoRuntime.queryInterface( XNamed.class, xTS);
             xTSName.setName("SwXTextSection");
         }
@@ -162,7 +162,7 @@ public class SwXTextSection extends TestCase {
         tEnv.addObjRelation("TRO",new Boolean(true));
 
         try {
-            TC = (XTextColumns) UnoRuntime.queryInterface(XTextColumns.class,
+            TC = UnoRuntime.queryInterface(XTextColumns.class,
                     oDocMSF.createInstance("com.sun.star.text.TextColumns"));
         } catch ( com.sun.star.uno.Exception e ) {
             e.printStackTrace(log);
@@ -171,7 +171,7 @@ public class SwXTextSection extends TestCase {
         }
         tEnv.addObjRelation("TC",TC);
 
-        tEnv.addObjRelation("CONTENT", (XTextContent)
+        tEnv.addObjRelation("CONTENT",
                         UnoRuntime.queryInterface(XTextContent.class,instance));
         tEnv.addObjRelation("RANGE", xTextDoc.getText().createTextCursor());
 

@@ -258,10 +258,10 @@ public class RecoveryTest {
         while (allComp.hasMoreElements()){
             try{
                 // get all components from the desktop
-                XComponent xComponent = (XComponent) UnoRuntime.queryInterface(
+                XComponent xComponent = UnoRuntime.queryInterface(
                                        XComponent.class, allComp.nextElement());
 
-                XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class, xComponent);
+                XModel xModel = UnoRuntime.queryInterface(XModel.class, xComponent);
 
                 String frameName = xModel.getCurrentController().getFrame().getName();
 
@@ -340,7 +340,7 @@ public class RecoveryTest {
 
             assertTrue("could not get Recovery Window",(oDialog != null));
 
-            XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, oDialog);
+            XWindow xWindow = UnoRuntime.queryInterface(XWindow.class, oDialog);
 
             UITools oUITools = new UITools(xMSF, xWindow);
 
@@ -377,7 +377,7 @@ public class RecoveryTest {
             XDialog oDialog = rt.getActiveDialog(xMSF);
             assertTrue("could not get CrashReporter Dialog", oDialog != null);
 
-            XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, oDialog);
+            XWindow xWindow = UnoRuntime.queryInterface(XWindow.class, oDialog);
 
             System.out.println(oDialog.getTitle());
 
@@ -442,7 +442,7 @@ public class RecoveryTest {
 
             assertTrue("could not get Recovery Dialog at start of office", (oDialog != null));
 
-            XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, oDialog);
+            XWindow xWindow = UnoRuntime.queryInterface(XWindow.class, oDialog);
             System.out.println("got the following dialog: '" +oDialog.getTitle() + "'");
 
             UITools oUITools = new UITools(xMSF, xWindow);
@@ -644,7 +644,7 @@ public class RecoveryTest {
         System.out.println("creating Impress document '" + frameName + "'");
         XComponent xImpressDoc = createNewImpressDoc(frameName);
         if (withContent) fillImpressDocWithContent(xImpressDoc);
-        positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
+        positioningDocument(UnoRuntime.queryInterface(XModel.class,
                                                                xImpressDoc));
     }
 
@@ -652,7 +652,7 @@ public class RecoveryTest {
         System.out.println("creating Draw document '" + frameName + "'");
         XComponent xDrawDoc = createNewDrawDoc(frameName);
         if (withContent) fillDrawDocWithContent(xDrawDoc);
-        positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
+        positioningDocument(UnoRuntime.queryInterface(XModel.class,
                                                                  xDrawDoc));
     }
 
@@ -660,7 +660,7 @@ public class RecoveryTest {
         System.out.println("creating Calc document '" + frameName + "'");
         XSpreadsheetDocument xSpreadsheetDoc = createNewCalcDoc(frameName);
         if (withContent) fillCalcDocWithContent(xSpreadsheetDoc);
-        positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
+        positioningDocument(UnoRuntime.queryInterface(XModel.class,
                                                            xSpreadsheetDoc));
     }
 
@@ -706,7 +706,7 @@ public class RecoveryTest {
         System.out.println("creating Math document '" + frameName + "'");
         XComponent xMathDoc = createNewMathDoc(frameName);
         if (withContent) fillMathDocWithContent(xMathDoc);
-        positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
+        positioningDocument(UnoRuntime.queryInterface(XModel.class,
                                                                xMathDoc));
     }
 
@@ -724,7 +724,7 @@ public class RecoveryTest {
     private void fillMathDocWithContent(XComponent xMathDoc){
         // setting a formula in document
         final String expFormula = "sum a cdot b";
-        final XPropertySet xPS = (XPropertySet) UnoRuntime.queryInterface
+        final XPropertySet xPS = UnoRuntime.queryInterface
             (XPropertySet.class, xMathDoc);
         try {
             xPS.setPropertyValue("Formula", expFormula);
@@ -758,19 +758,19 @@ public class RecoveryTest {
     private void fillImpressDocWithContent(XComponent xImpressDoc){
 
         System.out.println( "get presentation" );
-        XPresentationSupplier oPS = (XPresentationSupplier)
+        XPresentationSupplier oPS =
             UnoRuntime.queryInterface(XPresentationSupplier.class, xImpressDoc);
         XInterface oObj = oPS.getPresentation();
 
         System.out.println( "get custom presentation" );
-        XCustomPresentationSupplier oCPS = (XCustomPresentationSupplier)
+        XCustomPresentationSupplier oCPS =
             UnoRuntime.queryInterface(
                 XCustomPresentationSupplier.class, xImpressDoc);
         XNameContainer xCP = oCPS.getCustomPresentations();
 
         XInterface oInstance = null;
 
-        XSingleServiceFactory oSingleMSF = (XSingleServiceFactory)
+        XSingleServiceFactory oSingleMSF =
             UnoRuntime.queryInterface(XSingleServiceFactory.class, xCP);
 
         try{
@@ -806,10 +806,10 @@ public class RecoveryTest {
     }
 
     private void fillDrawDocWithContent(XComponent xDrawDoc){
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, xDrawDoc);
         XDrawPages oDPn = oDPS.getDrawPages();
-        XIndexAccess oDPi = (XIndexAccess)
+        XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class, oDPn);
         XDrawPage oDP = null;
         try {
@@ -828,7 +828,7 @@ public class RecoveryTest {
 
         // get a Shape
         System.out.println( "getting Shape" );
-        XShapes oShapes = (XShapes) UnoRuntime.queryInterface
+        XShapes oShapes = UnoRuntime.queryInterface
             (XShapes.class, oDP);
         XInterface oObj = SOF.createShape
             (xDrawDoc, 5000, 3500, 7500, 5000, "Rectangle");
@@ -843,7 +843,7 @@ public class RecoveryTest {
         oShapes.add((XShape) oShape);
 
 
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class, oObj);
         XStyle aStyle = null;
         try {
@@ -869,7 +869,7 @@ public class RecoveryTest {
         System.out.println("creating Writer document '" + frameName + "'");
         XTextDocument xTextDoc = createNewWriterDoc(frameName);
         if (withContent) fillWriterDocWithContent(xTextDoc);
-        positioningDocument((XModel) UnoRuntime.queryInterface(XModel.class,
+        positioningDocument(UnoRuntime.queryInterface(XModel.class,
                                                                  xTextDoc));
     }
 
@@ -938,7 +938,7 @@ public class RecoveryTest {
 
             XCellRange testRange = oSheet.getCellRangeByName("$A$1:$D$4");
 
-            XSheetCellRange testSheetRange = (XSheetCellRange) UnoRuntime.queryInterface(
+            XSheetCellRange testSheetRange = UnoRuntime.queryInterface(
                                                      XSheetCellRange.class,
                                                      testRange);
             oSheet.getCellByPosition(1, 1).setValue(1);

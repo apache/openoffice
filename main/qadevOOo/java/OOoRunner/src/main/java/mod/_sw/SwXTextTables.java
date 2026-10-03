@@ -119,9 +119,9 @@ public class SwXTextTables extends TestCase {
                     + uE.getMessage(), uE);
         }
 
-        XMultiServiceFactory msf = (XMultiServiceFactory)
+        XMultiServiceFactory msf =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
-        XTextTablesSupplier oTTSupp = (XTextTablesSupplier)
+        XTextTablesSupplier oTTSupp =
             UnoRuntime.queryInterface(XTextTablesSupplier.class, msf);
         oObj = oTTSupp.getTextTables();
 

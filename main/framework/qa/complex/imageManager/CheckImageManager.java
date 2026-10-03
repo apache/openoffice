@@ -131,7 +131,7 @@ public class CheckImageManager  {
         assertTrue(testObjectName + "::XUIConfig.addConfigurationListener", _xUIConfig._addConfigurationListener());
         assertTrue(testObjectName + "::XUIConfig.removeConfigurationListener", _xUIConfig._removeConfigurationListener());
 
-        XUIConfigurationPersistence xUIConfigPersistence = (XUIConfigurationPersistence)UnoRuntime.queryInterface(XUIConfiguration.class, xImageManager);
+        XUIConfigurationPersistence xUIConfigPersistence = UnoRuntime.queryInterface(XUIConfigurationPersistence.class, xImageManager);
         _XUIConfigurationPersistence _xUIConfigPersistence = new _XUIConfigurationPersistence(param, xUIConfigPersistence);
         _xUIConfigPersistence.before();
         assertTrue(testObjectName + "::XUIConfigPersistence.isModified", _xUIConfigPersistence._isModified());

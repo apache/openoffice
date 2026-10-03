@@ -93,7 +93,7 @@ public class SdDocLinkTargets extends TestCase {
 
         // get the Links here
         log.println( "getting Links" );
-        XLinkTargetSupplier oLTS = (XLinkTargetSupplier)
+        XLinkTargetSupplier oLTS =
             UnoRuntime.queryInterface(XLinkTargetSupplier.class,xDrawDoc);
         XInterface oObj = oLTS.getLinks();
 

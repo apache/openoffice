@@ -151,7 +151,7 @@ public class Test03 implements StorageTest {
 				return false;
 			}
 
-			XNameAccess xRootNameAccess = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xTempStorage );
+			XNameAccess xRootNameAccess = UnoRuntime.queryInterface( XNameAccess.class, xTempStorage );
 			if ( xRootNameAccess == null )
 			{
 				m_aTestHelper.Error( "Root storage doesn't support XNameAccess!" );
@@ -206,7 +206,7 @@ public class Test03 implements StorageTest {
 														aRelations ) )
 				return false;
 
-			XNameAccess xChildAccess = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xResultSubStorage );
+			XNameAccess xChildAccess = UnoRuntime.queryInterface( XNameAccess.class, xResultSubStorage );
 			if ( xChildAccess == null )
 			{
 				m_aTestHelper.Error( "Child storage doesn't support XNameAccess!" );
@@ -235,7 +235,7 @@ public class Test03 implements StorageTest {
 		try
 		{
 			Object oStorage = xAccess.getByName( sName );
-			XStorage xResult = (XStorage) UnoRuntime.queryInterface( XStorage.class, oStorage );
+			XStorage xResult = UnoRuntime.queryInterface( XStorage.class, oStorage );
 
 			if ( xResult != null )
 				return xResult;

@@ -142,10 +142,10 @@ public class PageCountField {
 	 * @throws Exception
 	 */
 	private void createPageCountField(XTextDocument document) throws Exception {
-		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
-		XTextField  PageCountField = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.PageCount"));
+		XMultiServiceFactory sevriceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XTextField  PageCountField = UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.PageCount"));
 
-		XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, PageCountField);
+		XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, PageCountField);
 		props.setPropertyValue("NumberingType", NumberingType.ARABIC);//Set page count display as Arabic
 
 		SWUtil.moveCuror2Start(document);
@@ -173,14 +173,14 @@ public class PageCountField {
 	 * @throws Exception
 	 */
 	private boolean isContainPageCountField(XTextDocument document) throws Exception {
-		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
 			  	Object field =  enumeration.nextElement();
 
-				XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
+				XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, field);
 				short countType = (Short) props.getPropertyValue("NumberingType");
 			    return countType == NumberingType.ARABIC;
 

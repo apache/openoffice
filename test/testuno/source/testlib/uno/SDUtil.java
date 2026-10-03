@@ -48,27 +48,27 @@ public class SDUtil {
 	}
 
 	public static Object getPageByIndex(XComponent doc, int index) throws Exception {
-		XDrawPagesSupplier xDrawPagesSupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(XDrawPagesSupplier.class, doc);
+		XDrawPagesSupplier xDrawPagesSupplier = UnoRuntime.queryInterface(XDrawPagesSupplier.class, doc);
 		Object drawPages = xDrawPagesSupplier.getDrawPages();
-		XIndexAccess xIndexedDrawPages = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, drawPages);
+		XIndexAccess xIndexedDrawPages = UnoRuntime.queryInterface(XIndexAccess.class, drawPages);
 		return xIndexedDrawPages.getByIndex(index);
 	}
 
 	public static Object getShapeOfPageByIndex(Object page, int index) throws Exception {
-		XDrawPage xDrawPage = (XDrawPage) UnoRuntime.queryInterface(XDrawPage.class, page);
-		XShapes m_xdrawShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+		XDrawPage xDrawPage = UnoRuntime.queryInterface(XDrawPage.class, page);
+		XShapes m_xdrawShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 		return m_xdrawShapes.getByIndex(index);
 	}
 
 	public static Object[] getShapesOfPageByType(XDrawPage xDrawPage, String shapeType) throws Exception {
-		XShapes m_xdrawShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+		XShapes m_xdrawShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 		int count = m_xdrawShapes.getCount();
 		Object[] temp = new Object[count];
 		int shapeNum=0;
 		for(int i=0;i<count; i++)
 		{
 			Object shape = m_xdrawShapes.getByIndex(i);
-			XShape xshape = (XShape)UnoRuntime.queryInterface(XShape.class, shape);
+			XShape xshape = UnoRuntime.queryInterface(XShape.class, shape);
 			String type = xshape.getShapeType();
 			if(type.equals(shapeType))
 			{
@@ -97,7 +97,7 @@ public class SDUtil {
 		storeProps[1].Value = new Boolean(true);
 
 		XStorable sdStorable =
-				(XStorable) UnoRuntime.queryInterface(XStorable.class, sdComponent);
+				UnoRuntime.queryInterface(XStorable.class, sdComponent);
 		sdStorable.storeAsURL(storeUrl, storeProps);
 	}
 

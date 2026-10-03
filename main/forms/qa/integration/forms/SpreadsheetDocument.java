@@ -58,7 +58,7 @@ public class SpreadsheetDocument extends DocumentHelper
     */
     public XSpreadsheets getSheets() throws com.sun.star.uno.Exception
     {
-        XSpreadsheetDocument spreadsheetDoc = (XSpreadsheetDocument)UnoRuntime.queryInterface( XSpreadsheetDocument.class,
+        XSpreadsheetDocument spreadsheetDoc = UnoRuntime.queryInterface( XSpreadsheetDocument.class,
             getDocument()
         );
         return spreadsheetDoc.getSheets();
@@ -69,10 +69,10 @@ public class SpreadsheetDocument extends DocumentHelper
     */
     public XCellRange getSheet( int index ) throws com.sun.star.uno.Exception
     {
-        XIndexAccess sheets = (XIndexAccess)UnoRuntime.queryInterface( XIndexAccess.class,
+        XIndexAccess sheets = UnoRuntime.queryInterface( XIndexAccess.class,
             getSheets()
         );
-        return (XCellRange)UnoRuntime.queryInterface( XCellRange.class,
+        return UnoRuntime.queryInterface( XCellRange.class,
             sheets.getByIndex( index )
         );
     }
@@ -103,7 +103,7 @@ public class SpreadsheetDocument extends DocumentHelper
         {
             CellAddress address = new CellAddress( sheet, column, row );
             Object[] initParam = new Object[] { new NamedValue( "BoundCell", address ) };
-            cellBinding = (com.sun.star.form.binding.XValueBinding)UnoRuntime.queryInterface(
+            cellBinding = UnoRuntime.queryInterface(
                 com.sun.star.form.binding.XValueBinding.class,
                 createInstanceWithArguments(
                     supportIntegerValues ? "com.sun.star.table.ListPositionCellBinding"
@@ -132,7 +132,7 @@ public class SpreadsheetDocument extends DocumentHelper
             CellRangeAddress rangeAddress = new CellRangeAddress( sheet, column,
                 topRow, column, bottomRow );
             Object[] initParam = new Object[] { new NamedValue( "CellRange", rangeAddress ) };
-            entrySource = (com.sun.star.form.binding.XListEntrySource)UnoRuntime.queryInterface(
+            entrySource = UnoRuntime.queryInterface(
                 com.sun.star.form.binding.XListEntrySource.class,
                 createInstanceWithArguments(
                     "com.sun.star.table.CellRangeListSource", initParam ) );

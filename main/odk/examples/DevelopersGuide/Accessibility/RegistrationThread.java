@@ -99,7 +99,7 @@ public class RegistrationThread
         {
             // Register the root node.
             XAccessibleEventBroadcaster xBroadcaster =
-                (XAccessibleEventBroadcaster) UnoRuntime.queryInterface (
+                UnoRuntime.queryInterface (
                     XAccessibleEventBroadcaster.class,
                     xRoot);
             if (xBroadcaster != null)

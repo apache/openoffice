@@ -168,7 +168,7 @@ public class _XNamedRanges extends MultiMethodTest {
                                 queryInterface(XCellRangeReferrer.class,range);
 
                 XCellRange CR = CRR.getReferredCells();
-                XCellRangeAddressable xCRA = (XCellRangeAddressable)
+                XCellRangeAddressable xCRA =
                     UnoRuntime.queryInterface(XCellRangeAddressable.class, CR);
 
                 CellRangeAddress objCRA = xCRA.getRangeAddress();
@@ -189,7 +189,7 @@ public class _XNamedRanges extends MultiMethodTest {
                                 queryInterface(XCellRangeReferrer.class,range);
 
                 XCellRange CR = CRR.getReferredCells();
-                XCellRangeAddressable xCRA = (XCellRangeAddressable)
+                XCellRangeAddressable xCRA =
                     UnoRuntime.queryInterface(XCellRangeAddressable.class, CR);
 
                 CellRangeAddress objCRA = xCRA.getRangeAddress();
@@ -236,7 +236,7 @@ public class _XNamedRanges extends MultiMethodTest {
         try {
             for (int i = 0; i < elementsCount; i++) {
                 XCell cell = oSheet.getCellByPosition(0, i);
-                XTextRange textrange = (XTextRange)
+                XTextRange textrange =
                     UnoRuntime.queryInterface(XTextRange.class, cell);
                 String str = textrange.getString();
                 bResult &= oObj.hasByName(str);

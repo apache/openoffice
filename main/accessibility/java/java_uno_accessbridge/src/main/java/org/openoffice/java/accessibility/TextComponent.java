@@ -91,7 +91,7 @@ public class TextComponent extends Component implements javax.accessibility.Acce
                 return null;
 
             try {
-                XAccessibleText unoAccessibleText = (XAccessibleText)
+                XAccessibleText unoAccessibleText =
                     UnoRuntime.queryInterface(XAccessibleText.class,unoAccessibleComponent);
                 if (unoAccessibleText != null) {
                     return new AccessibleTextImpl(unoAccessibleText);
@@ -106,7 +106,7 @@ public class TextComponent extends Component implements javax.accessibility.Acce
         /** Gets the AccessibleEditableText associated with this object presenting text on the display */
         public javax.accessibility.AccessibleEditableText getAccessibleEditableText() {
             try {
-                XAccessibleEditableText unoAccessibleText = (XAccessibleEditableText)
+                XAccessibleEditableText unoAccessibleText =
                     UnoRuntime.queryInterface(XAccessibleEditableText.class,unoAccessibleComponent);
                 if (unoAccessibleText != null) {
                     return new AccessibleEditableTextImpl(unoAccessibleText);
@@ -121,7 +121,7 @@ public class TextComponent extends Component implements javax.accessibility.Acce
         /** Gets the AccessibleAction associated with this object that has a graphical representation */
         public javax.accessibility.AccessibleAction getAccessibleAction() {
             try {
-                XAccessibleAction unoAccessibleAction = (XAccessibleAction)
+                XAccessibleAction unoAccessibleAction =
                     UnoRuntime.queryInterface(XAccessibleAction.class, unoAccessibleComponent);
                 return (unoAccessibleAction != null) ?
                     new AccessibleActionImpl(unoAccessibleAction) : null;

@@ -126,7 +126,7 @@ public class SwXHeadFootText extends TestCase {
         XStyle StdStyle = null;
 
         log.println( "creating a test environment" );
-        XStyleFamiliesSupplier StyleFam = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, xTextDoc);
         XNameAccess StyleFamNames = StyleFam.getStyleFamilies();
 
@@ -147,7 +147,7 @@ public class SwXHeadFootText extends TestCase {
             throw new StatusException("Error getting style by name!", e);
         }
 
-        PropSet = (XPropertySet)
+        PropSet =
             UnoRuntime.queryInterface( XPropertySet.class, StdStyle);
 
         // changing/getting some properties
@@ -157,7 +157,7 @@ public class SwXHeadFootText extends TestCase {
             log.println( "Switching on footer" );
             PropSet.setPropertyValue("FooterIsOn", new Boolean(true));
             log.println( "Get header text" );
-            oObj = (XText) UnoRuntime.queryInterface(
+            oObj = UnoRuntime.queryInterface(
                         XText.class, PropSet.getPropertyValue("HeaderText"));
         } catch ( com.sun.star.lang.WrappedTargetException e ) {
             e.printStackTrace(log);

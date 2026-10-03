@@ -154,10 +154,10 @@ public class DrawController_DrawView extends TestCase {
 
         // get the drawpage of drawing here
         log.println( "getting Drawpage" );
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, xDrawDoc);
         XDrawPages the_pages = oDPS.getDrawPages();
-        XIndexAccess oDPi = (XIndexAccess)
+        XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class,the_pages);
 
         XDrawPage oDrawPage = null;
@@ -177,7 +177,7 @@ public class DrawController_DrawView extends TestCase {
 
         //put something on the drawpage
         log.println( "inserting some Shapes" );
-        XShapes oShapes = (XShapes)
+        XShapes oShapes =
             UnoRuntime.queryInterface(XShapes.class, oDrawPage);
         XShape shape1 = SOF.createShape(
             xDrawDoc, 3000, 4500, 15000, 1000, "Ellipse");
@@ -190,16 +190,16 @@ public class DrawController_DrawView extends TestCase {
         oShapes.add(shape3);
         shortWait();
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         XInterface oObj = aModel.getCurrentController();
 
-        XModel aModel2 = (XModel)
+        XModel aModel2 =
             UnoRuntime.queryInterface(XModel.class, xSecondDrawDoc);
         XController aController2 = aModel2.getCurrentController();
 
-        XWindow anotherWindow = (XWindow) UnoRuntime.queryInterface(
+        XWindow anotherWindow = UnoRuntime.queryInterface(
                                 XWindow.class, aController2);
 
         log.println( "creating a new environment for impress view object" );
@@ -221,9 +221,9 @@ public class DrawController_DrawView extends TestCase {
             throw new StatusException(Status.failed("Couldn't create instance"));
         }
 
-        XShapes xShapes1 = (XShapes)
+        XShapes xShapes1 =
             UnoRuntime.queryInterface(XShapes.class, oShapeCol1);
-        XShapes xShapes2 = (XShapes)
+        XShapes xShapes2 =
             UnoRuntime.queryInterface(XShapes.class, oShapeCol2);
         xShapes1.add(shape2);
         xShapes1.add(shape3);
@@ -235,9 +235,9 @@ public class DrawController_DrawView extends TestCase {
             oDrawPage, oShapeCol1, oShapeCol2});
         tEnv.addObjRelation("Comparer", new Comparator() {
             public int compare(Object o1, Object o2) {
-                XIndexAccess indAc1 = (XIndexAccess)
+                XIndexAccess indAc1 =
                     UnoRuntime.queryInterface(XIndexAccess.class, o1);
-                XIndexAccess indAc2 = (XIndexAccess)
+                XIndexAccess indAc2 =
                     UnoRuntime.queryInterface(XIndexAccess.class, o2);
                 if (indAc1 == null || indAc2 == null) return -1;
                 if (indAc1.getCount() == indAc2.getCount()) {
@@ -274,7 +274,7 @@ public class DrawController_DrawView extends TestCase {
 
         log.println("Implementation Name: "+utils.getImplName(oObj));
 
-        XModifiable modify = (XModifiable)
+        XModifiable modify =
             UnoRuntime.queryInterface(XModifiable.class,xDrawDoc);
 
         tEnv.addObjRelation("Modifiable",modify);

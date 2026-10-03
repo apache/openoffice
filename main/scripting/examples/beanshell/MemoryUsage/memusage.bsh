@@ -39,17 +39,17 @@ import com.sun.star.script.provider.XScriptContext;
 
 createSpreadsheet()
 {
-    loader = (XComponentLoader)
+    loader =
         UnoRuntime.queryInterface(
             XComponentLoader.class, XSCRIPTCONTEXT.getDesktop());
 
     comp = loader.loadComponentFromURL(
         "private:factory/scalc", "_blank", 4, new PropertyValue[0]);
 
-    doc = (XSpreadsheetDocument)
+    doc =
         UnoRuntime.queryInterface(XSpreadsheetDocument.class, comp);
 
-    index = (XIndexAccess)
+    index =
         UnoRuntime.queryInterface(XIndexAccess.class, doc.getSheets());
 
     sheet = (XSpreadsheet) AnyConverter.toObject(
@@ -79,10 +79,10 @@ addChart(sheet)
     rect.Width = 10000;
     rect.Height = 8000;
 
-    range = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, sheet);
+    range = UnoRuntime.queryInterface(XCellRange.class, sheet);
     myRange = range.getCellRangeByName("A1:B2");
 
-    rangeAddr = (XCellRangeAddressable)
+    rangeAddr =
         UnoRuntime.queryInterface(XCellRangeAddressable.class, myRange);
 
     myAddr = rangeAddr.getRangeAddress();
@@ -90,7 +90,7 @@ addChart(sheet)
     CellRangeAddress[] addr = new CellRangeAddress[1];
     addr[0] = myAddr;
 
-    supp = (XTableChartsSupplier)
+    supp =
         UnoRuntime.queryInterface( XTableChartsSupplier.class, sheet);
     charts = supp.getCharts();
     charts.addNewByName("Example", rect, addr, false, true);
@@ -98,29 +98,29 @@ addChart(sheet)
     try { Thread.sleep(3000); } catch (java.lang.InterruptedException e) { }
 
     // get the diagram and Change some of the properties
-    chartsAccess = (XNameAccess)
+    chartsAccess =
         UnoRuntime.queryInterface( XNameAccess.class, charts);
 
-    tchart = (XTableChart)
+    tchart =
         UnoRuntime.queryInterface(
             XTableChart.class, chartsAccess.getByName("Example"));
 
-    eos = (XEmbeddedObjectSupplier)
+    eos =
         UnoRuntime.queryInterface( XEmbeddedObjectSupplier.class, tchart );
     xifc = eos.getEmbeddedObject();
 
-    xChart = (XChartDocument)
+    xChart =
         UnoRuntime.queryInterface(XChartDocument.class, xifc);
 
-    xDocMSF = (XMultiServiceFactory)
+    xDocMSF =
         UnoRuntime.queryInterface(XMultiServiceFactory.class, xChart);
 
     diagObject = xDocMSF.createInstance("com.sun.star.chart.PieDiagram");
-    xDiagram = (XDiagram)
+    xDiagram =
         UnoRuntime.queryInterface(XDiagram.class, diagObject);
     xChart.setDiagram(xDiagram);
 
-    propset = (XPropertySet)
+    propset =
         UnoRuntime.queryInterface( XPropertySet.class, xChart.getTitle() );
     propset.setPropertyValue("String", "JVM Memory Usage");
 }

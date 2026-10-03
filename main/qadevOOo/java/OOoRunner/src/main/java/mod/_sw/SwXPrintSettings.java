@@ -94,7 +94,7 @@ public class SwXPrintSettings extends TestCase {
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create instance!", e );
         }
-        XPrintSettingsSupplier xPSS = (XPrintSettingsSupplier)
+        XPrintSettingsSupplier xPSS =
             UnoRuntime.queryInterface(XPrintSettingsSupplier.class, oInst);
         oObj = xPSS.getPrintSettings();
 

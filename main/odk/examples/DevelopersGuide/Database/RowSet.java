@@ -73,7 +73,7 @@ public class RowSet
 	public static void printDataSources() throws com.sun.star.uno.Exception
 	{
 		// create a DatabaseContext and print all DataSource names
-		XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface(
+		XNameAccess xNameAccess = UnoRuntime.queryInterface(
             XNameAccess.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.DatabaseContext",
                                            xContext));
@@ -85,13 +85,13 @@ public class RowSet
 	public static void useRowSet() throws com.sun.star.uno.Exception
 	{
 		// first we create our RowSet object
-		XRowSet xRowRes = (XRowSet)UnoRuntime.queryInterface(
+		XRowSet xRowRes = UnoRuntime.queryInterface(
             XRowSet.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.RowSet", xContext));
 
 		System.out.println("RowSet created!");
 		// set the properties needed to connect to a database
-		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
+		XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
 		xProp.setPropertyValue("DataSourceName","Bibliography");
 		xProp.setPropertyValue("Command","biblio");
 		xProp.setPropertyValue("CommandType",new Integer(com.sun.star.sdb.CommandType.TABLE));
@@ -100,7 +100,7 @@ public class RowSet
 		System.out.println("RowSet executed!");
 
 
-		XComponent xComp = (XComponent)UnoRuntime.queryInterface(XComponent.class,xRowRes);
+		XComponent xComp = UnoRuntime.queryInterface(XComponent.class,xRowRes);
 		xComp.dispose();
 		System.out.println("RowSet destroyed!");
 	}
@@ -108,13 +108,13 @@ public class RowSet
 	public static void showRowSetPrivileges() throws com.sun.star.uno.Exception
 	{
 		// first we create our RowSet object
-		XRowSet xRowRes = (XRowSet)UnoRuntime.queryInterface(
+		XRowSet xRowRes = UnoRuntime.queryInterface(
             XRowSet.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.RowSet", xContext));
 
 		System.out.println("RowSet created!");
 		// set the properties needed to connect to a database
-		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
+		XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
 		xProp.setPropertyValue("DataSourceName","Bibliography");
 		xProp.setPropertyValue("Command","biblio");
 		xProp.setPropertyValue("CommandType",new Integer(com.sun.star.sdb.CommandType.TABLE));
@@ -134,7 +134,7 @@ public class RowSet
 			System.out.println("DELETE");
 
 		// now destroy the RowSet
-		XComponent xComp = (XComponent)UnoRuntime.queryInterface(XComponent.class,xRowRes);
+		XComponent xComp = UnoRuntime.queryInterface(XComponent.class,xRowRes);
 		xComp.dispose();
 		System.out.println("RowSet destroyed!");
 	}
@@ -142,13 +142,13 @@ public class RowSet
 	public static void showRowSetRowCount() throws com.sun.star.uno.Exception
 	{
 		// first we create our RowSet object
-		XRowSet xRowRes = (XRowSet)UnoRuntime.queryInterface(
+		XRowSet xRowRes = UnoRuntime.queryInterface(
             XRowSet.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.RowSet", xContext));
 
 		System.out.println("RowSet created!");
 		// set the properties needed to connect to a database
-		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
+		XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
 		xProp.setPropertyValue("DataSourceName","Bibliography");
 		xProp.setPropertyValue("Command","biblio");
 		xProp.setPropertyValue("CommandType",new Integer(com.sun.star.sdb.CommandType.TABLE));
@@ -159,14 +159,14 @@ public class RowSet
 		// now look if the RowCount is already final
 		System.out.println("The RowCount is final: " + xProp.getPropertyValue("IsRowCountFinal"));
 
-		XResultSet xRes = (XResultSet)UnoRuntime.queryInterface(XResultSet.class,xRowRes);
+		XResultSet xRes = UnoRuntime.queryInterface(XResultSet.class,xRowRes);
 		xRes.last();
 
 		System.out.println("The RowCount is final: " + xProp.getPropertyValue("IsRowCountFinal"));
 		System.out.println("There are " + xProp.getPropertyValue("RowCount") + " rows!");
 
 		// now destroy the RowSet
-		XComponent xComp = (XComponent)UnoRuntime.queryInterface(XComponent.class,xRowRes);
+		XComponent xComp = UnoRuntime.queryInterface(XComponent.class,xRowRes);
 		xComp.dispose();
 		System.out.println("RowSet destroyed!");
 	}
@@ -174,7 +174,7 @@ public class RowSet
 	public static void showRowSetEvents() throws com.sun.star.uno.Exception
 	{
 		// first we create our RowSet object
-		XRowSet xRowRes = (XRowSet)UnoRuntime.queryInterface(
+		XRowSet xRowRes = UnoRuntime.queryInterface(
             XRowSet.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.RowSet", xContext));
 
@@ -182,12 +182,12 @@ public class RowSet
 		// add our Listener
 		System.out.println("Append our Listener!");
 		RowSetEventListener pRow = new RowSetEventListener();
-		XRowSetApproveBroadcaster xApBroad = (XRowSetApproveBroadcaster)UnoRuntime.queryInterface(XRowSetApproveBroadcaster.class,xRowRes);
+		XRowSetApproveBroadcaster xApBroad = UnoRuntime.queryInterface(XRowSetApproveBroadcaster.class,xRowRes);
 		xApBroad.addRowSetApproveListener(pRow);
 		xRowRes.addRowSetListener(pRow);
 
 		// set the properties needed to connect to a database
-		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
+		XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,xRowRes);
 		xProp.setPropertyValue("DataSourceName","Bibliography");
 		xProp.setPropertyValue("Command","biblio");
 		xProp.setPropertyValue("CommandType",new Integer(com.sun.star.sdb.CommandType.TABLE));
@@ -196,7 +196,7 @@ public class RowSet
 		System.out.println("RowSet executed!");
 
 		// do some movements to check if we got all notifications
-		XResultSet xRes = (XResultSet)UnoRuntime.queryInterface(XResultSet.class,xRowRes);
+		XResultSet xRes = UnoRuntime.queryInterface(XResultSet.class,xRowRes);
 		System.out.println("beforeFirst");
 		xRes.beforeFirst();
 		// this should lead to no notifications because
@@ -222,7 +222,7 @@ public class RowSet
 		System.out.println("We stand after the last row: " + xRes.isAfterLast());
 
 		// now destroy the RowSet
-		XComponent xComp = (XComponent)UnoRuntime.queryInterface(XComponent.class,xRowRes);
+		XComponent xComp = UnoRuntime.queryInterface(XComponent.class,xRowRes);
 		xComp.dispose();
 		System.out.println("RowSet destroyed!");
 	}

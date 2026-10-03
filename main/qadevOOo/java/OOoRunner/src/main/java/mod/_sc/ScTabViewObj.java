@@ -118,10 +118,10 @@ public class ScTabViewObj extends TestCase {
      */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
         UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
-        XComponent oComp2 = (XComponent)
+        XComponent oComp2 =
         UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc2) ;
         util.DesktopTools.closeDoc(oComp2);
     }
@@ -144,10 +144,10 @@ public class ScTabViewObj extends TestCase {
     protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, PrintWriter log) {
         XDrawPage oDrawPage = null;
 
-        XModel aModel = (XModel)
+        XModel aModel =
         UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
-        XModel aSecondModel = (XModel)
+        XModel aSecondModel =
         UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc2);
 
         XInterface oObj = aModel.getCurrentController();
@@ -157,7 +157,7 @@ public class ScTabViewObj extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
         UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
@@ -206,9 +206,9 @@ public class ScTabViewObj extends TestCase {
 
         tEnv.addObjRelation("Comparer", new Comparator() {
             public int compare(Object o1, Object o2) {
-                XCellRangeAddressable adr1 = (XCellRangeAddressable)
+                XCellRangeAddressable adr1 =
                 UnoRuntime.queryInterface(XCellRangeAddressable.class, o1);
-                XCellRangeAddressable adr2 = (XCellRangeAddressable)
+                XCellRangeAddressable adr2 =
                 UnoRuntime.queryInterface(XCellRangeAddressable.class, o2);
                 if (adr1 == null || adr2 == null) return -1;
                 CellRangeAddress range1 = adr1.getRangeAddress();
@@ -228,7 +228,7 @@ public class ScTabViewObj extends TestCase {
             XShape aShape = null;
             try{
                 log.println("adding control shape '" + kindOfControl + "'");
-                XComponent oComp = (XComponent) UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
+                XComponent oComp = UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
 
                 aShape = FormTools.createControlShape(oComp, 3000, 4500, 15000, 10000, kindOfControl);
 
@@ -241,7 +241,7 @@ public class ScTabViewObj extends TestCase {
             log.println("adding relation for com.sun.star.view.XFormLayerAccess: XForm");
             try {
                 log.println( "getting Drawpages" );
-                XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+                XDrawPagesSupplier oDPS =
                 UnoRuntime.queryInterface(XDrawPagesSupplier.class,xSpreadsheetDoc);
                 XDrawPages oDP = (XDrawPages) oDPS.getDrawPages();
                 oDP.insertNewByIndex(1);

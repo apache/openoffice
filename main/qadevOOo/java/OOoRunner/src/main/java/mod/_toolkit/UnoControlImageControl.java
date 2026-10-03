@@ -94,7 +94,7 @@ public class UnoControlImageControl extends TestCase {
 
         XControlModel the_Model = aShape.getControl();
 
-        XPropertySet xPS = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet xPS = UnoRuntime.queryInterface(
                                    XPropertySet.class, the_Model);
 
         XControlShape aShape2 = FormTools.createControlShape(xTextDoc, 3000,
@@ -106,7 +106,7 @@ public class UnoControlImageControl extends TestCase {
         XControlModel the_Model2 = aShape2.getControl();
 
         //Try to query XControlAccess
-        XControlAccess the_access = (XControlAccess) UnoRuntime.queryInterface(
+        XControlAccess the_access = UnoRuntime.queryInterface(
                                             XControlAccess.class,
                                             xTextDoc.getCurrentController());
 
@@ -144,7 +144,7 @@ public class UnoControlImageControl extends TestCase {
         tEnv.addObjRelation("TOOLKIT", the_kit);
         tEnv.addObjRelation("MODEL", the_Model);
 
-        XWindow forObjRel = (XWindow) UnoRuntime.queryInterface(XWindow.class,
+        XWindow forObjRel = UnoRuntime.queryInterface(XWindow.class,
                                                                 aControl);
 
         tEnv.addObjRelation("XWindow.AnotherWindow", forObjRel);

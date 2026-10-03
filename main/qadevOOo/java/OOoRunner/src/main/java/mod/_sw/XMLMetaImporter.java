@@ -127,7 +127,7 @@ public class XMLMetaImporter extends TestCase {
         try {
             oInt = xMSF.createInstance
                 ("com.sun.star.comp.Writer.XMLMetaImporter") ;
-            //XImporter imp = (XImporter) UnoRuntime.queryInterface
+            //XImporter imp = UnoRuntime.queryInterface
             //    (XImporter.class, oInt) ;
             //imp.setTargetDocument(xTextDoc) ;
         } catch (com.sun.star.uno.Exception e) {
@@ -158,9 +158,9 @@ public class XMLMetaImporter extends TestCase {
 
         tEnv.addObjRelation("XDocumentHandler.XMLData", xml) ;
 
-        XDocumentInfoSupplier infoSup = (XDocumentInfoSupplier) UnoRuntime.queryInterface
+        XDocumentInfoSupplier infoSup = UnoRuntime.queryInterface
             (XDocumentInfoSupplier.class, xTextDoc) ;
-        final XPropertySet docInfo = (XPropertySet) UnoRuntime.queryInterface
+        final XPropertySet docInfo = UnoRuntime.queryInterface
             (XPropertySet.class, infoSup.getDocumentInfo()) ;
         final PrintWriter logF = log ;
 

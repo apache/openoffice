@@ -88,7 +88,7 @@ public class ScAutoFormatsObj extends TestCase{
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface
+        XComponent oComp = UnoRuntime.queryInterface
             (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -116,7 +116,7 @@ public class ScAutoFormatsObj extends TestCase{
         try {
             // creation of testobject here
             // get AutoFormats
-            XComponent xComp = (XComponent)UnoRuntime.queryInterface
+            XComponent xComp = UnoRuntime.queryInterface
                 (XComponent.class, xSheetDoc);
             oObj = (XInterface) AnyConverter.toObject(
                 new Type(XInterface.class),((XMultiServiceFactory)Param.getMSF()).createInstance

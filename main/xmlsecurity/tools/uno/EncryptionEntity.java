@@ -69,14 +69,14 @@ class EncryptionEntity extends SecurityEntity
 					TestTool.ENCRYPTOR_COMPONENT, m_xRemoteContext);
 
 				m_xReferenceResolvedListener =
-					(XReferenceResolvedListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XReferenceResolvedListener.class, encryptor);
 
 				/*
 				 * initializes the Encryptor.
 				 */
 				XInitialization xInitialization =
-					(XInitialization)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XInitialization.class, m_xReferenceResolvedListener);
 				Object args[]=new Object[5];
 				args[0] = new Integer(m_nSecurityId).toString();
@@ -90,10 +90,10 @@ class EncryptionEntity extends SecurityEntity
 				 * sets encryption result listener.
 				 */
 				XEncryptionResultBroadcaster m_xEncryptionResultBroadcaster =
-					(XEncryptionResultBroadcaster)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XEncryptionResultBroadcaster.class, m_xReferenceResolvedListener);
 				m_xEncryptionResultBroadcaster.addEncryptionResultListener(
-					(XEncryptionResultListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XEncryptionResultListener.class, resultListener));
 			}
 			catch( com.sun.star.uno.Exception e)
@@ -111,13 +111,13 @@ class EncryptionEntity extends SecurityEntity
 					TestTool.DECRYPTOR_COMPONENT, m_xRemoteContext);
 
 				m_xReferenceResolvedListener =
-					(XReferenceResolvedListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XReferenceResolvedListener.class, decryptor);
 
 				/*
 				 * initializes the Decryptor.
 				 */
-				XInitialization xInitialization = (XInitialization)UnoRuntime.queryInterface(XInitialization.class, m_xReferenceResolvedListener);
+				XInitialization xInitialization = UnoRuntime.queryInterface(XInitialization.class, m_xReferenceResolvedListener);
 				Object args[]=new Object[5];
 				args[0] = new Integer(m_nSecurityId).toString();
 				args[1] = m_xSAXEventKeeper;
@@ -130,10 +130,10 @@ class EncryptionEntity extends SecurityEntity
 				 * sets decryption result listener.
 				 */
 				XDecryptionResultBroadcaster m_xDecryptionResultBroadcaster =
-					(XDecryptionResultBroadcaster)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XDecryptionResultBroadcaster.class, m_xReferenceResolvedListener);
 				m_xDecryptionResultBroadcaster.addDecryptionResultListener(
-					(XDecryptionResultListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XDecryptionResultListener.class, resultListener));
 			}
 			catch( com.sun.star.uno.Exception e)
@@ -150,7 +150,7 @@ class EncryptionEntity extends SecurityEntity
 
 		try
 		{
-			XBlockerMonitor xBlockerMonitor = (XBlockerMonitor)UnoRuntime.queryInterface(
+			XBlockerMonitor xBlockerMonitor = UnoRuntime.queryInterface(
 				XBlockerMonitor.class, m_xReferenceResolvedListener);
 			xBlockerMonitor.setBlockerId(blockerId);
 		}
@@ -163,7 +163,7 @@ class EncryptionEntity extends SecurityEntity
 		 * configures the resolve listener for the encryption template.
 		 */
 		XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
-			(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 		xReferenceResolvedBroadcaster.addReferenceResolvedListener(m_nEncryptionElementCollectorId, m_xReferenceResolvedListener);
 	}
@@ -190,7 +190,7 @@ class EncryptionEntity extends SecurityEntity
 		m_xSAXEventKeeper.setSecurityId(referenceId, m_nSecurityId);
 
 		XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
-			(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 		xReferenceResolvedBroadcaster.addReferenceResolvedListener(
 			referenceId, m_xReferenceResolvedListener);
@@ -198,7 +198,7 @@ class EncryptionEntity extends SecurityEntity
 		try
 		{
 			XReferenceCollector xReferenceCollector =
-				(XReferenceCollector)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XReferenceCollector.class, m_xReferenceResolvedListener);
 			xReferenceCollector.setReferenceId(referenceId);
 		}

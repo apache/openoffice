@@ -60,7 +60,7 @@ public class DocumentSaver {
                 "com.sun.star.frame.Desktop", xContext);
 
             com.sun.star.frame.XComponentLoader xCompLoader =
-                (com.sun.star.frame.XComponentLoader)
+
                      UnoRuntime.queryInterface(
                          com.sun.star.frame.XComponentLoader.class, oDesktop);
 
@@ -81,7 +81,7 @@ public class DocumentSaver {
             Object oDocToStore = xCompLoader.loadComponentFromURL(
                 sLoadUrl.toString(), "_blank", 0, propertyValue );
             com.sun.star.frame.XStorable xStorable =
-                (com.sun.star.frame.XStorable)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XStorable.class, oDocToStore );
 
             propertyValue = new com.sun.star.beans.PropertyValue[ 2 ];
@@ -96,7 +96,7 @@ public class DocumentSaver {
             System.out.println("\nDocument \"" + sLoadUrl + "\" saved under \"" +
                                sSaveUrl + "\"\n");
 
-            com.sun.star.util.XCloseable xCloseable = (com.sun.star.util.XCloseable)
+            com.sun.star.util.XCloseable xCloseable =
                 UnoRuntime.queryInterface(com.sun.star.util.XCloseable.class,
                                           oDocToStore );
 
@@ -104,7 +104,7 @@ public class DocumentSaver {
                 xCloseable.close(false);
             } else
             {
-                com.sun.star.lang.XComponent xComp = (com.sun.star.lang.XComponent)
+                com.sun.star.lang.XComponent xComp =
                     UnoRuntime.queryInterface(
                         com.sun.star.lang.XComponent.class, oDocToStore );
                 xComp.dispose();

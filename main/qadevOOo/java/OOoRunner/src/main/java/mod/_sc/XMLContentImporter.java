@@ -78,7 +78,7 @@ public class XMLContentImporter extends TestCase {
         try {
             log.println( "creating a Spreadsheet document" );
             xSheetDoc = SOF.createCalcDoc( null );
-            comp = (XComponent) UnoRuntime.queryInterface
+            comp = UnoRuntime.queryInterface
                 (XComponent.class, xSheetDoc) ;
         } catch ( com.sun.star.uno.Exception e ) {
             // Some exception occurred. FAILED
@@ -131,7 +131,7 @@ public class XMLContentImporter extends TestCase {
         try {
             oInt = xMSF.createInstance
                 ("com.sun.star.comp.Calc.XMLContentImporter") ;
-            XImporter imp = (XImporter) UnoRuntime.queryInterface
+            XImporter imp = UnoRuntime.queryInterface
                 (XImporter.class, oInt) ;
             imp.setTargetDocument(comp);
         } catch (com.sun.star.uno.Exception e) {

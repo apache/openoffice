@@ -93,7 +93,7 @@ public class ScAnnotationsObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -115,11 +115,11 @@ public class ScAnnotationsObj extends TestCase {
 
         log.println("Getting test object ") ;
 
-        XSpreadsheetDocument xSpreadsheetDoc = (XSpreadsheetDocument)
+        XSpreadsheetDocument xSpreadsheetDoc =
             UnoRuntime.queryInterface(XSpreadsheetDocument.class, xSheetDoc);
         XSpreadsheets sheets = (XSpreadsheets) xSpreadsheetDoc.getSheets();
 
-        XNameAccess oNames = (XNameAccess)
+        XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, sheets );
         XCell oCell = null;
         XSpreadsheet oSheet  = null;
@@ -128,7 +128,7 @@ public class ScAnnotationsObj extends TestCase {
                     new Type(XSpreadsheet.class),
                         oNames.getByName(oNames.getElementNames()[0]));
             // adding an annotation...
-            XCellRange oCRange = (XCellRange)
+            XCellRange oCRange =
                 UnoRuntime.queryInterface(XCellRange.class, oSheet);
             oCell = oCRange.getCellByPosition(10,10);
         } catch (com.sun.star.lang.WrappedTargetException e) {
@@ -149,14 +149,14 @@ public class ScAnnotationsObj extends TestCase {
                 "Error getting test object from spreadsheet document",e) ;
         }
 
-        XSheetAnnotationAnchor oAnnoA = (XSheetAnnotationAnchor)
+        XSheetAnnotationAnchor oAnnoA =
             UnoRuntime.queryInterface(XSheetAnnotationAnchor.class, oCell);
         XSheetAnnotation oAnno = oAnnoA.getAnnotation();
-        XSimpleText sText = ((XSimpleText)
+        XSimpleText sText = (
             UnoRuntime.queryInterface(XSimpleText.class, oAnno));
         sText.setString("ScAnnotationsObj");
 
-        XSheetAnnotationsSupplier supp = (XSheetAnnotationsSupplier)
+        XSheetAnnotationsSupplier supp =
             UnoRuntime.queryInterface(
                 XSheetAnnotationsSupplier.class, oSheet);
         oObj = supp.getAnnotations();

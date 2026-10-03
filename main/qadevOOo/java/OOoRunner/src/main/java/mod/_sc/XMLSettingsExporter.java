@@ -126,15 +126,15 @@ public class XMLSettingsExporter extends TestCase {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Calc.XMLSettingsExporter",
                 new Object[] {arg} );
-            XExporter xEx = (XExporter) UnoRuntime.queryInterface
+            XExporter xEx = UnoRuntime.queryInterface
                 (XExporter.class,oObj);
             xEx.setSourceDocument(xSheetDoc);
 
             //set some settings
-            XModel xSheetModel = (XModel)
+            XModel xSheetModel =
                 UnoRuntime.queryInterface(XModel.class, xSheetDoc);
             XController xController = xSheetModel.getCurrentController();
-            XPropertySet xPropSet = (XPropertySet)
+            XPropertySet xPropSet =
                 UnoRuntime.queryInterface(XPropertySet.class, xController);
             xPropSet.setPropertyValue("ShowGrid", "false");
 

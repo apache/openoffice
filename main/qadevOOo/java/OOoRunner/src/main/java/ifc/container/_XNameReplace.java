@@ -111,7 +111,7 @@ public class _XNameReplace extends MultiMethodTest {
         }
 
         log.println("getting the existent object's name");
-        XNameAccess oNameAccess = (XNameAccess)UnoRuntime.queryInterface(
+        XNameAccess oNameAccess = UnoRuntime.queryInterface(
                                                        XNameAccess.class, oObj);
         oNames = oNameAccess.getElementNames();
         /* Some Objects can't replace the firsr that comes along, i.e.
@@ -177,10 +177,10 @@ public class _XNameReplace extends MultiMethodTest {
     // method returns false if the ranges are equal and true otherwise
 
     private boolean compareRanges(Object old, Object newEl) {
-        XCellRangeAddressable xCRA = (XCellRangeAddressable)
+        XCellRangeAddressable xCRA =
                 UnoRuntime.queryInterface(XCellRangeAddressable.class,old);
 
-        XCellRangeAddressable xCRA2 = (XCellRangeAddressable)
+        XCellRangeAddressable xCRA2 =
                 UnoRuntime.queryInterface(XCellRangeAddressable.class,newEl);
 
         int orgStartCol = xCRA.getRangeAddress().StartColumn;

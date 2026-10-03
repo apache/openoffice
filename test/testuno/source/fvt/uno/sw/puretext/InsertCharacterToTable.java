@@ -56,13 +56,13 @@ public class InsertCharacterToTable {
 
 	@Test
 	public void testCreateTable() throws Exception {
-		xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText = xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable) UnoRuntime.queryInterface(XTextTable.class,xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class,xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xTable.initialize(4, 4);
 		xText.insertTextContent(xTextCursor, xTable, false);
         //insert text in to table cell
@@ -72,7 +72,7 @@ public class InsertCharacterToTable {
 		insertIntoCell( "B3","*^$%^$^$", xTable );
 
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -82,7 +82,7 @@ public class InsertCharacterToTable {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -94,22 +94,22 @@ public class InsertCharacterToTable {
 		app.closeDocument(xTextDocument);
 
 		// reopen the document and assert create table successfully
-		XTextDocument assertDocument_odt = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt);
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt = UnoRuntime.queryInterface(XTextDocument.class,app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt);
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt = xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt = (XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XTextTable xTable_Assert_odt = UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
 		assertEquals("assert table cell text","test",getFromCell("A1", xTable_Assert_odt));
 		assertEquals("assert table cell text","*^$%^$^$",getFromCell("B3", xTable_Assert_odt));
 		assertEquals("assert table cell text","123",getFromCell("C4", xTable_Assert_odt));
 		assertEquals("assert table cell text","fsdf132134",getFromCell("D2", xTable_Assert_odt));
 
 		// reopen the document and assert create table successfully
-		XTextDocument assertDocument_doc = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc);
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc = UnoRuntime.queryInterface(XTextDocument.class,app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc);
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc = xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc = (XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XTextTable xTable_Assert_doc = UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
 		assertEquals("assert table cell text","test",getFromCell("A1", xTable_Assert_doc));
 		assertEquals("assert table cell text","*^$%^$^$",getFromCell("B3", xTable_Assert_doc));
 		assertEquals("assert table cell text","123",getFromCell("C4", xTable_Assert_doc));
@@ -118,14 +118,14 @@ public class InsertCharacterToTable {
 	// This method is inserts string sText in table cell by sCellName.
 	public static void insertIntoCell(String sCellName, String sText, XTextTable xTable) {
 		// Access the XText interface of the cell referred to by sCellName
-		XText xCellText = (XText) UnoRuntime.queryInterface(XText.class, xTable.getCellByName(sCellName));
+		XText xCellText = UnoRuntime.queryInterface(XText.class, xTable.getCellByName(sCellName));
 		// Set the text in the cell to sText
 		xCellText.setString(sText);
 	}
 	// This method is get string sText in table cell by sCellName.
 	public static String getFromCell(String sCellName, XTextTable xTable) {
 		// Access the XText interface of the cell referred to by sCellName
-		XText xCellText = (XText) UnoRuntime.queryInterface(XText.class, xTable.getCellByName(sCellName));
+		XText xCellText = UnoRuntime.queryInterface(XText.class, xTable.getCellByName(sCellName));
 		// Set the text in the cell to sText
 		return xCellText.getString();
 	}

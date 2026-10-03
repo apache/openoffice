@@ -44,13 +44,13 @@ public class Container extends java.awt.Container implements javax.accessibility
 		accessibleRole = role;
 		unoAccessible = xAccessible;
 		unoAccessibleContext = xAccessibleContext;
-		unoAccessibleComponent = (XAccessibleComponent)
+		unoAccessibleComponent =
 			UnoRuntime.queryInterface(XAccessibleComponent.class,
 			xAccessibleContext);
 
 		// Add the event listener right away, because the global focus notification doesn't
 		// work yet...
-		XAccessibleEventBroadcaster broadcaster = (XAccessibleEventBroadcaster)
+		XAccessibleEventBroadcaster broadcaster =
 			UnoRuntime.queryInterface(XAccessibleEventBroadcaster.class,
 			unoAccessibleContext);
 		if (broadcaster != null) {
@@ -133,7 +133,7 @@ public class Container extends java.awt.Container implements javax.accessibility
 			java.util.ArrayList list = new java.util.ArrayList(targetSet.length);
 			for (int i=0; i < targetSet.length; i++) {
 				java.awt.Component c = AccessibleObjectFactory.getAccessibleComponent(
-					(XAccessible) UnoRuntime.queryInterface(XAccessible.class, targetSet[i]));
+					UnoRuntime.queryInterface(XAccessible.class, targetSet[i]));
 				if (c != null) {
 					list.add(c);
 				}
@@ -572,7 +572,7 @@ public class Container extends java.awt.Container implements javax.accessibility
 		/** Returns the AccessibleSelection interface for this object */
 		public javax.accessibility.AccessibleSelection getAccessibleSelection() {
 			try {
-				XAccessibleSelection unoAccessibleSelection = (XAccessibleSelection)
+				XAccessibleSelection unoAccessibleSelection =
 					UnoRuntime.queryInterface(XAccessibleSelection.class, unoAccessibleContext);
 				if (unoAccessibleSelection != null) {
 					return new AccessibleSelectionImpl(unoAccessibleSelection);

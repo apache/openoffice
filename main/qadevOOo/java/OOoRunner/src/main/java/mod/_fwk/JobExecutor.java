@@ -129,7 +129,7 @@ public class JobExecutor extends TestCase {
         try {
             Object obj = ((XMultiServiceFactory)Param.getMSF()).createInstance
                 ("com.sun.star.configuration.ConfigurationProvider");
-            XMultiServiceFactory xConfigMSF = (XMultiServiceFactory)
+            XMultiServiceFactory xConfigMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, obj);
             PropertyValue[] args = new PropertyValue[1];
             args[0] = new PropertyValue();
@@ -137,13 +137,13 @@ public class JobExecutor extends TestCase {
             args[0].Value = "org.openoffice.Office.Jobs";
             oRootCfg = xConfigMSF.createInstanceWithArguments(
                 "com.sun.star.configuration.ConfigurationUpdateAccess", args);
-            XHierarchicalNameAccess xHNA = (XHierarchicalNameAccess)
+            XHierarchicalNameAccess xHNA =
                 UnoRuntime.queryInterface(XHierarchicalNameAccess.class, oRootCfg);
             obj = xHNA.getByHierarchicalName("Jobs");
-            jobs = (XNameAccess) UnoRuntime.queryInterface
+            jobs = UnoRuntime.queryInterface
                 (XNameAccess.class, obj);
             obj = xHNA.getByHierarchicalName("Events");
-            events = (XNameAccess) UnoRuntime.queryInterface
+            events = UnoRuntime.queryInterface
                 (XNameAccess.class, obj);
         } catch (Exception e) {
             throw new StatusException("Couldn't get configuration", e);
@@ -157,22 +157,22 @@ public class JobExecutor extends TestCase {
         if (!configured) {
             try {
                 log.println("Adding configuration to Jobs  ...");
-                XSingleServiceFactory jobsFac = (XSingleServiceFactory)
+                XSingleServiceFactory jobsFac =
                     UnoRuntime.queryInterface(XSingleServiceFactory.class, jobs);
                 Object oNewJob = jobsFac.createInstance();
-                XNameReplace xNewJobNR = (XNameReplace)
+                XNameReplace xNewJobNR =
                     UnoRuntime.queryInterface(XNameReplace.class, oNewJob);
                 xNewJobNR.replaceByName("Service", "test.Job");
-                XNameContainer xJobsNC = (XNameContainer)
+                XNameContainer xJobsNC =
                     UnoRuntime.queryInterface(XNameContainer.class, jobs);
                 xJobsNC.insertByName("TestJob", oNewJob);
 
                 log.println("Adding configuration to Events  ...");
-                XSingleServiceFactory eventsFac = (XSingleServiceFactory)
+                XSingleServiceFactory eventsFac =
                     UnoRuntime.queryInterface(XSingleServiceFactory.class, events);
                 Object oNewEvent = eventsFac.createInstance();
 
-                XNameAccess xNewEventNA = (XNameAccess)
+                XNameAccess xNewEventNA =
                     UnoRuntime.queryInterface(XNameAccess.class, oNewEvent);
                 Object oJobList = xNewEventNA.getByName("JobList");
                 XSingleServiceFactory jobListFac = (XSingleServiceFactory)
@@ -187,11 +187,11 @@ public class JobExecutor extends TestCase {
                 jobListNC.insertByName("TestJob",  oNewJobTimeStamps);
 
 
-                XNameContainer xEventsNC = (XNameContainer)
+                XNameContainer xEventsNC =
                     UnoRuntime.queryInterface(XNameContainer.class, events);
                 xEventsNC.insertByName("TestEvent", oNewEvent);
 
-                XChangesBatch xCB = (XChangesBatch)
+                XChangesBatch xCB =
                     UnoRuntime.queryInterface(XChangesBatch.class, oRootCfg);
                 xCB.commitChanges();
 
@@ -228,7 +228,7 @@ public class JobExecutor extends TestCase {
                 Status.failed("Couldn't create instance"));
         }
 
-        xNamed = (XNamed) UnoRuntime.queryInterface(XNamed.class, job);
+        xNamed = UnoRuntime.queryInterface(XNamed.class, job);
         log.println("Count = " + xNamed.getName());
 
         TestEnvironment tEnv = new TestEnvironment( oObj );

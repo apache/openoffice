@@ -78,17 +78,17 @@ public class RegistryTypeDescriptionProvider extends TestCase {
 
         try {
             XMultiServiceFactory xMSF = (XMultiServiceFactory)Param.getMSF();
-            XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(
+            XPropertySet xProp = UnoRuntime.queryInterface(
                                                 XPropertySet.class, xMSF);
             // get context
-            XComponentContext xContext = (XComponentContext)
+            XComponentContext xContext =
                             UnoRuntime.queryInterface(XComponentContext.class,
                             xProp.getPropertyValue("DefaultContext"));
             // get the type description manager
             Object o = xContext.getValueByName("/singletons/" +
                         "com.sun.star.reflection.theTypeDescriptionManager");
             // the manager contains all providers
-            XEnumerationAccess aProviderAccess = (XEnumerationAccess)
+            XEnumerationAccess aProviderAccess =
                         UnoRuntime.queryInterface(XEnumerationAccess.class, o);
             // collect enumeration
             XEnumeration xProviderEnum;

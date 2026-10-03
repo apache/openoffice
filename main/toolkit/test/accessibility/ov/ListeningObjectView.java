@@ -47,7 +47,7 @@ abstract class ListeningObjectView
     {
         super.SetObject (xContext);
         XAccessibleEventBroadcaster xBroadcaster =
-            (XAccessibleEventBroadcaster)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XAccessibleEventBroadcaster.class, xContext);
         if (xBroadcaster != null)
             xBroadcaster.addEventListener (this);
@@ -61,7 +61,7 @@ abstract class ListeningObjectView
     {
         super.Destroy ();
         XAccessibleEventBroadcaster xBroadcaster =
-            (XAccessibleEventBroadcaster)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XAccessibleEventBroadcaster.class, mxContext);
         if (xBroadcaster != null)
             xBroadcaster.removeEventListener (this);

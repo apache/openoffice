@@ -164,7 +164,7 @@ public class ValidityTypeTest {
 		XSpreadsheet currentsheet = SCUtil.getCurrentSheet(scDocument);
 		// --- Data validation ---
 		XCellRange xCellRange = currentsheet.getCellRangeByName("A7:C7");
-		XPropertySet xCellPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xCellPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, xCellRange);
 
 		// validation properties
@@ -205,7 +205,7 @@ public class ValidityTypeTest {
 
 		// --- Data validation ---
 		xCellRange = currentsheet.getCellRangeByName("A7:C7");
-		xCellPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		xCellPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, xCellRange);
 		// validation properties
 		xValidPropSet = (XPropertySet) UnoRuntime
@@ -233,7 +233,7 @@ public class ValidityTypeTest {
 				xValidPropSet.getPropertyValue("ErrorAlertStyle"));
 		assertEquals(inputTitle, xValidPropSet.getPropertyValue("InputTitle"));
 
-		xCondition = (XSheetCondition) UnoRuntime.queryInterface(
+		xCondition = UnoRuntime.queryInterface(
 				XSheetCondition.class, xValidPropSet);
 		assertEquals(formula1, xCondition.getFormula1());
 		assertEquals(formula2, xCondition.getFormula2());

@@ -82,7 +82,7 @@ public class ScSheetLinksObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -109,7 +109,7 @@ public class ScSheetLinksObj extends TestCase {
 
         log.println("Getting test object ") ;
         XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-        XIndexAccess oIndexSheets = (XIndexAccess)
+        XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
@@ -125,7 +125,7 @@ public class ScSheetLinksObj extends TestCase {
             throw new StatusException("Couldn't get a spreadsheet", e);
         }
 
-        XSheetLinkable SL = (XSheetLinkable)
+        XSheetLinkable SL =
             UnoRuntime.queryInterface(XSheetLinkable.class, oSheet);
 
         // creating link. Doesn't matter that it refers to unexistant object.
@@ -135,7 +135,7 @@ public class ScSheetLinksObj extends TestCase {
             com.sun.star.sheet.SheetLinkMode.VALUE);
 
         // Getting links.
-        XPropertySet docProps = (XPropertySet)
+        XPropertySet docProps =
             UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
 
         Object links = null;
@@ -149,7 +149,7 @@ public class ScSheetLinksObj extends TestCase {
             throw new StatusException("Couldn't get SheetLinks", e);
         }
 
-        oObj = (XInterface)UnoRuntime.queryInterface(XInterface.class, links);
+        oObj = UnoRuntime.queryInterface(XInterface.class, links);
 
         log.println("Creating object - " +
                                     ((oObj == null) ? "FAILED" : "OK"));

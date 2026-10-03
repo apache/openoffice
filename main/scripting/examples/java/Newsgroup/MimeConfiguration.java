@@ -46,7 +46,7 @@ public class MimeConfiguration
 			XMultiComponentFactory xmf = xcc.getServiceManager();
 
 			Object pathSub = xmf.createInstanceWithContext( "com.sun.star.comp.framework.PathSubstitution", xcc );
-			XStringSubstitution stringSub = ( XStringSubstitution ) UnoRuntime.queryInterface( XStringSubstitution.class, pathSub );
+			XStringSubstitution stringSub = UnoRuntime.queryInterface( XStringSubstitution.class, pathSub );
 			instPath = stringSub.getSubstituteVariableValue( "$(inst)" );
 
 		}

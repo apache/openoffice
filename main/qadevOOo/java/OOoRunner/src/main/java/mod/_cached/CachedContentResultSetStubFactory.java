@@ -110,7 +110,7 @@ public class CachedContentResultSetStubFactory extends TestCase {
                 ("com.sun.star.ucb.UniversalContentBroker",
                 new Object[] {"Local", "Office"}) ;
 
-            XContentIdentifierFactory ciFac = (XContentIdentifierFactory)
+            XContentIdentifierFactory ciFac =
                 UnoRuntime.queryInterface(XContentIdentifierFactory.class, oUCB) ;
 
             String url = util.utils.getFullTestURL("SwXTextEmbeddedObject.sxw") ;
@@ -131,12 +131,12 @@ public class CachedContentResultSetStubFactory extends TestCase {
 
             XContentIdentifier CI = ciFac.createContentIdentifier(cntUrl) ;
 
-            XContentProvider cntProv = (XContentProvider)
+            XContentProvider cntProv =
                 UnoRuntime.queryInterface(XContentProvider.class, oUCB) ;
 
             XContent cnt = cntProv.queryContent(CI) ;
 
-            XCommandProcessor cmdProc = (XCommandProcessor)
+            XCommandProcessor cmdProc =
                 UnoRuntime.queryInterface(XCommandProcessor.class, cnt) ;
 
             Property prop = new Property() ;

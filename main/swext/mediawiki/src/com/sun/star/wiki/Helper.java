@@ -250,7 +250,7 @@ public class Helper
 
             XPropertySet xProps = Helper.GetConfigProps( xContext, "org.openoffice.Office.Custom.WikiExtension/Settings" );
             xProps.setPropertyValue( "PreselectShowBrowser", new Boolean( bValue ) );
-            XChangesBatch xBatch = ( XChangesBatch ) UnoRuntime.queryInterface( XChangesBatch.class, xProps );
+            XChangesBatch xBatch = UnoRuntime.queryInterface( XChangesBatch.class, xProps );
             if ( xBatch != null )
                 xBatch.commitChanges();
         }
@@ -267,7 +267,7 @@ public class Helper
         {
             XMultiComponentFactory xFactory = xContext.getServiceManager();
             if ( xFactory != null )
-                m_xPasswordContainer = (XPasswordContainer)UnoRuntime.queryInterface(
+                m_xPasswordContainer = UnoRuntime.queryInterface(
                                         XPasswordContainer.class,
                                         xFactory.createInstanceWithContext( "com.sun.star.task.PasswordContainer", xContext ) );
         }
@@ -285,7 +285,7 @@ public class Helper
         {
             XMultiComponentFactory xFactory = xContext.getServiceManager();
             if ( xFactory != null )
-                m_xInteractionHandler = ( XInteractionHandler )UnoRuntime.queryInterface(
+                m_xInteractionHandler = UnoRuntime.queryInterface(
                                         XInteractionHandler.class,
                                         xFactory.createInstanceWithContext( "com.sun.star.task.InteractionHandler", xContext ) );
         }
@@ -389,8 +389,8 @@ public class Helper
             try
             {
                 Object oTempFile = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.io.TempFile", xContext );
-                XStream xStream = ( XStream ) UnoRuntime.queryInterface( XStream.class, oTempFile );
-                XSeekable xSeekable = ( XSeekable ) UnoRuntime.queryInterface( XSeekable.class, oTempFile );
+                XStream xStream = UnoRuntime.queryInterface( XStream.class, oTempFile );
+                XSeekable xSeekable = UnoRuntime.queryInterface( XSeekable.class, oTempFile );
                 if ( xStream != null && xSeekable != null )
                 {
                     XOutputStream xOutputStream = xStream.getOutputStream();
@@ -423,13 +423,13 @@ public class Helper
         try
         {
             Object oTempFile = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.io.TempFile", xContext );
-            XPropertySet xPropertySet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
+            XPropertySet xPropertySet = UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
             xPropertySet.setPropertyValue( "RemoveFile", Boolean.FALSE );
             sURL = ( String ) xPropertySet.getPropertyValue( "Uri" );
 
-            XInputStream xInputStream = ( XInputStream ) UnoRuntime.queryInterface( XInputStream.class, oTempFile );
+            XInputStream xInputStream = UnoRuntime.queryInterface( XInputStream.class, oTempFile );
             xInputStream.closeInput();
-            XOutputStream xOutputStream = ( XOutputStream ) UnoRuntime.queryInterface( XOutputStream.class, oTempFile );
+            XOutputStream xOutputStream = UnoRuntime.queryInterface( XOutputStream.class, oTempFile );
             xOutputStream.closeOutput();
         } catch ( com.sun.star.uno.Exception ex )
         {
@@ -469,8 +469,8 @@ public class Helper
     protected static String GetDocTitle( XModel xDoc )
     {
         String sTitle = "";
-        XDocumentInfoSupplier xDocInfoSup = ( XDocumentInfoSupplier ) UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
-        XPropertySet xPropSet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
+        XDocumentInfoSupplier xDocInfoSup = UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
+        XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
         try
         {
             sTitle = ( String ) xPropSet.getPropertyValue( "Title" );
@@ -483,10 +483,10 @@ public class Helper
 
     protected static void SetDocTitle( XModel xDoc, String sTitle )
     {
-        XDocumentInfoSupplier xDocInfoSup = ( XDocumentInfoSupplier ) UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
+        XDocumentInfoSupplier xDocInfoSup = UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
         if ( xDocInfoSup != null )
         {
-            XPropertySet xPropSet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
+            XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
             if ( xPropSet != null )
             {
                 try
@@ -513,7 +513,7 @@ public class Helper
                     throw new com.sun.star.uno.RuntimeException();
 
                 Object oModuleManager = xFactory.createInstanceWithContext( "com.sun.star.frame.ModuleManager", xContext );
-                XModuleManager xModuleManager = ( XModuleManager ) UnoRuntime.queryInterface( XModuleManager.class, oModuleManager );
+                XModuleManager xModuleManager = UnoRuntime.queryInterface( XModuleManager.class, oModuleManager );
                 if ( xModuleManager != null )
                     aDocServiceName = xModuleManager.identify( xModel );
             }
@@ -535,7 +535,7 @@ public class Helper
             try
             {
                 Object oFilterFactory = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.document.FilterFactory", xContext );
-                XContainerQuery xQuery = ( XContainerQuery )UnoRuntime.queryInterface( XContainerQuery.class, oFilterFactory );
+                XContainerQuery xQuery = UnoRuntime.queryInterface( XContainerQuery.class, oFilterFactory );
                 if ( xQuery != null )
                 {
                     NamedValue[] aRequest = new NamedValue[2];
@@ -586,7 +586,7 @@ public class Helper
         {
             XMultiComponentFactory xFactory = xContext.getServiceManager();
             Object oConfigProvider = xFactory.createInstanceWithContext( "com.sun.star.configuration.ConfigurationProvider", xContext );
-            xConfigurationProvider = ( XMultiServiceFactory ) UnoRuntime.queryInterface( XMultiServiceFactory.class, oConfigProvider );
+            xConfigurationProvider = UnoRuntime.queryInterface( XMultiServiceFactory.class, oConfigProvider );
         }
 
         if ( xConfigurationProvider == null )
@@ -616,7 +616,7 @@ public class Helper
     protected static XPropertySet GetConfigProps( XComponentContext xContext, String sNodepath )
         throws com.sun.star.uno.Exception
     {
-        XPropertySet xProps = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, GetConfig( xContext, sNodepath, true ) );
+        XPropertySet xProps = UnoRuntime.queryInterface( XPropertySet.class, GetConfig( xContext, sNodepath, true ) );
         if ( xProps == null )
             throw new com.sun.star.uno.RuntimeException();
 
@@ -627,7 +627,7 @@ public class Helper
     protected static XNameContainer GetConfigNameContainer( XComponentContext xContext, String sNodepath )
         throws com.sun.star.uno.Exception
     {
-        XNameContainer xContainer = ( XNameContainer ) UnoRuntime.queryInterface( XNameContainer.class, GetConfig( xContext, sNodepath, true ) );
+        XNameContainer xContainer = UnoRuntime.queryInterface( XNameContainer.class, GetConfig( xContext, sNodepath, true ) );
         if ( xContainer == null )
             throw new com.sun.star.uno.RuntimeException();
 
@@ -637,7 +637,7 @@ public class Helper
     protected static XNameAccess GetConfigNameAccess( XComponentContext xContext, String sNodepath )
         throws com.sun.star.uno.Exception
     {
-        XNameAccess xNameAccess = ( XNameAccess ) UnoRuntime.queryInterface( XNameAccess.class, GetConfig( xContext, sNodepath, false ) );
+        XNameAccess xNameAccess = UnoRuntime.queryInterface( XNameAccess.class, GetConfig( xContext, sNodepath, false ) );
         if ( xNameAccess == null )
             throw new com.sun.star.uno.RuntimeException();
 
@@ -878,12 +878,12 @@ public class Helper
     private static XControl GetControlFromDialog( XDialog xDialog, String aControlName )
     {
         XControl xResult = null;
-        XControlContainer xControlCont = (XControlContainer) UnoRuntime.queryInterface( XControlContainer.class, xDialog );
+        XControlContainer xControlCont = UnoRuntime.queryInterface( XControlContainer.class, xDialog );
 
         if ( xControlCont != null )
         {
             Object oControl = xControlCont.getControl( aControlName );
-            xResult = ( XControl ) UnoRuntime.queryInterface( XControl.class, oControl );
+            xResult = UnoRuntime.queryInterface( XControl.class, oControl );
         }
 
         return xResult;
@@ -893,7 +893,7 @@ public class Helper
     {
         XControl xControl = GetControlFromDialog( xDialog, aControlName );
         if ( xControl != null )
-            return ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xControl.getModel() );
+            return UnoRuntime.queryInterface( XPropertySet.class, xControl.getModel() );
 
         return null;
     }
@@ -942,7 +942,7 @@ public class Helper
         boolean bResult = false;
         try
         {
-            XMasterPasswordHandling xMasterHdl = (XMasterPasswordHandling)UnoRuntime.queryInterface( XMasterPasswordHandling.class, GetPasswordContainer( xContext ) );
+            XMasterPasswordHandling xMasterHdl = UnoRuntime.queryInterface( XMasterPasswordHandling.class, GetPasswordContainer( xContext ) );
             if ( xMasterHdl != null )
                 bResult = xMasterHdl.isPersistentStoringAllowed();
         }
@@ -957,7 +957,7 @@ public class Helper
     protected static void ShowError( XComponentContext xContext, XDialog xDialog, int nTitleID, int nErrorID, String sArg, boolean bQuery )
     {
         XWindowPeer xPeer = null;
-        XControl xControl = (XControl)UnoRuntime.queryInterface( XControl.class, xDialog );
+        XControl xControl = UnoRuntime.queryInterface( XControl.class, xDialog );
         if ( xControl != null )
             xPeer = xControl.getPeer();
         ShowError( xContext, xPeer, nTitleID, nErrorID, sArg, bQuery );
@@ -998,7 +998,7 @@ public class Helper
                 {
                     XMultiComponentFactory xFactory = xContext.getServiceManager();
                     if ( xFactory != null )
-                        xMBFactory = (XMessageBoxFactory)UnoRuntime.queryInterface(
+                        xMBFactory = UnoRuntime.queryInterface(
                                      XMessageBoxFactory.class,
                                      xFactory.createInstanceWithContext( "com.sun.star.awt.Toolkit", xContext ) );
 
@@ -1051,7 +1051,7 @@ public class Helper
             XNameAccess xNameAccess = GetConfigNameAccess( xContext, "org.openoffice.Office.Custom.WikiExtension/SpecialData" );
             if ( xNameAccess.hasByName( aURL ) )
             {
-                XNameAccess xEntry = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
+                XNameAccess xEntry = UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
                 if ( xEntry != null && xEntry.hasByName( "AllowUnknownCertificate" ) )
                     return AnyConverter.toBoolean( xEntry.getByName( "AllowUnknownCertificate" ) );
             }
@@ -1071,10 +1071,10 @@ public class Helper
             XNameAccess xNameAccess = GetConfigNameAccess( xContext, "org.openoffice.Office.Custom.WikiExtension/SpecialData" );
             if ( xNameAccess.hasByName( aURL ) )
             {
-                XNameAccess xEntry = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
+                XNameAccess xEntry = UnoRuntime.queryInterface( XNameAccess.class, xNameAccess.getByName( aURL ) );
                 if ( xEntry != null )
                 {
-                    XNameAccess xArgs = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xEntry.getByName( "AdditionalLoginArguments" ) );
+                    XNameAccess xArgs = UnoRuntime.queryInterface( XNameAccess.class, xEntry.getByName( "AdditionalLoginArguments" ) );
                     if ( xArgs != null )
                     {
                         String[] pNames = xArgs.getElementNames();
@@ -1083,7 +1083,7 @@ public class Helper
                             String[][] pResult = new String[pNames.length][2];
                             for ( int nInd = 0; nInd < pNames.length; nInd++ )
                             {
-                                XNameAccess xArgument = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xArgs.getByName( pNames[nInd] ) );
+                                XNameAccess xArgument = UnoRuntime.queryInterface( XNameAccess.class, xArgs.getByName( pNames[nInd] ) );
                                 if ( xArgument == null )
                                     throw new com.sun.star.uno.RuntimeException();
 
@@ -1133,7 +1133,7 @@ public class Helper
         {
             try
             {
-                XComponent xComp = (XComponent)UnoRuntime.queryInterface( XComponent.class, oObject );
+                XComponent xComp = UnoRuntime.queryInterface( XComponent.class, oObject );
                 if ( xComp != null )
                     xComp.dispose();
             }

@@ -102,7 +102,7 @@ public class SwXLineNumberingProperties extends TestCase {
             log.println("Exception occurred: " + e);
         }
 
-        XLineNumberingProperties oLNP = (XLineNumberingProperties)
+        XLineNumberingProperties oLNP =
                 UnoRuntime.queryInterface(XLineNumberingProperties.class,xTextDoc);
         XPropertySet lineNumProps = oLNP.getLineNumberingProperties();
         dbg.printPropertiesNames(lineNumProps);

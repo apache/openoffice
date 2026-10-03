@@ -174,7 +174,7 @@ public class ConfigExamples
         {
             // check the provider implementation
             XServiceInfo xProviderServices =
-                (XServiceInfo) UnoRuntime.queryInterface( XServiceInfo.class, xProvider );
+                UnoRuntime.queryInterface( XServiceInfo.class, xProvider );
 
             if (xProviderServices == null ||
                 !xProviderServices.supportsService("com.sun.star.configuration.ConfigurationProvider"))
@@ -212,7 +212,7 @@ public class ConfigExamples
         final String sProviderService = "com.sun.star.configuration.ConfigurationProvider";
 
         // create the provider and return it as a XMultiServiceFactory
-        XMultiServiceFactory xProvider = (XMultiServiceFactory)
+        XMultiServiceFactory xProvider =
             UnoRuntime.queryInterface(XMultiServiceFactory.class,
                 mxServiceManager.createInstanceWithContext(sProviderService,
                                                            mxContext));
@@ -384,7 +384,7 @@ public class ConfigExamples
 
       // accessing a single nested value
         XHierarchicalPropertySet xProperties =
-            (XHierarchicalPropertySet)UnoRuntime.queryInterface(XHierarchicalPropertySet.class, xViewRoot);
+            UnoRuntime.queryInterface(XHierarchicalPropertySet.class, xViewRoot);
 
         Object aVisible = xProperties.getHierarchicalPropertyValue("Option/VisibleGrid");
         options.visible = ((Boolean) aVisible).booleanValue();
@@ -393,7 +393,7 @@ public class ConfigExamples
         Object xSubdivision = xProperties.getHierarchicalPropertyValue("Subdivision");
 
         XMultiPropertySet xSubdivProperties =
-            (XMultiPropertySet)UnoRuntime.queryInterface(XMultiPropertySet.class, xSubdivision);
+            UnoRuntime.queryInterface(XMultiPropertySet.class, xSubdivision);
 
         // variables for multi-element access
         String[] aElementNames = new String[2];
@@ -410,7 +410,7 @@ public class ConfigExamples
         Object xResolution = xProperties.getHierarchicalPropertyValue("Resolution");
 
         XMultiHierarchicalPropertySet xResolutionProperties =
-            (XMultiHierarchicalPropertySet)
+
                 UnoRuntime.queryInterface(XMultiHierarchicalPropertySet.class, xResolution);
 
         aElementNames[0] = "XAxis/Metric";
@@ -424,7 +424,7 @@ public class ConfigExamples
       // all options have been retrieved - clean up and return
         // we are done with the view - dispose it
 
-        ((XComponent)UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
+        (UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
 
         return options;
     }
@@ -445,7 +445,7 @@ public class ConfigExamples
     {
         // First process this as an element (preorder traversal)
         XHierarchicalName xElementPath =
-            (XHierarchicalName) UnoRuntime.queryInterface(XHierarchicalName.class, xElement);
+            UnoRuntime.queryInterface(XHierarchicalName.class, xElement);
 
         String sPath = xElementPath.getHierarchicalName();
 
@@ -453,7 +453,7 @@ public class ConfigExamples
 
         // now process this as a container
         XNameAccess xChildAccess =
-            (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xElement);
+            UnoRuntime.queryInterface(XNameAccess.class, xElement);
 
         // get a list of child elements
         String[] aElementNames = xChildAccess.getElementNames();
@@ -467,7 +467,7 @@ public class ConfigExamples
             if ( aAnyConv.isObject(aChild) && !aAnyConv.isArray(aChild) )
             {
                 // then get an interface
-                XInterface xChildElement = (XInterface)UnoRuntime.queryInterface(XInterface.class, aChild);
+                XInterface xChildElement = UnoRuntime.queryInterface(XInterface.class, aChild);
 
                 // and continue processing child elements recursively
                 browseElementRecursively( xChildElement, aProcessor );
@@ -505,7 +505,7 @@ public class ConfigExamples
         //   This assumes that the processor
         //   does not keep a reference to the elements in processStructuralElement
 
-        ((XComponent) UnoRuntime.queryInterface(XComponent.class,xViewRoot)).dispose();
+        (UnoRuntime.queryInterface(XComponent.class,xViewRoot)).dispose();
         xViewRoot = null;
     }
 
@@ -544,11 +544,11 @@ public class ConfigExamples
                public void processStructuralElement( String sPath_, XInterface xElement_) {
                    // get template information, to detect instances of the 'Filter' template
                    XTemplateInstance xInstance =
-                       ( XTemplateInstance )UnoRuntime.queryInterface( XTemplateInstance .class,xElement_);
+                       UnoRuntime.queryInterface( XTemplateInstance .class,xElement_);
 
                    // only select the Filter entries
                    if (xInstance != null && xInstance.getTemplateName().endsWith("Filter")) {
-                        XNamed xNamed = (XNamed)UnoRuntime.queryInterface(XNamed.class,xElement_);
+                        XNamed xNamed = UnoRuntime.queryInterface(XNamed.class,xElement_);
                         System.out.println("Filter " + xNamed.getName() + " (" + sPath_ + ")");
                    }
                }
@@ -574,7 +574,7 @@ public class ConfigExamples
       // set up the initial values and register listeners
         // get a data access interface, to supply the view with a model
         XMultiHierarchicalPropertySet xProperties =
-            (XMultiHierarchicalPropertySet)
+
                 UnoRuntime.queryInterface(XMultiHierarchicalPropertySet.class, xViewRoot);
 
         dialog.setModel( xProperties );
@@ -584,7 +584,7 @@ public class ConfigExamples
         XChangesListener xListener = dialog.createChangesListener( );
 
         XChangesNotifier xNotifier =
-            (XChangesNotifier)UnoRuntime.queryInterface(XChangesNotifier.class, xViewRoot);
+            UnoRuntime.queryInterface(XChangesNotifier.class, xViewRoot);
 
         xNotifier.addChangesListener( xListener );
 
@@ -595,7 +595,7 @@ public class ConfigExamples
         {
             // changes have been applied to the view here
             XChangesBatch xUpdateControl =
-                (XChangesBatch) UnoRuntime.queryInterface(XChangesBatch.class,xViewRoot);
+                UnoRuntime.queryInterface(XChangesBatch.class,xViewRoot);
 
             try
             {
@@ -612,7 +612,7 @@ public class ConfigExamples
         xNotifier.removeChangesListener( xListener );
 
         // we are done with the view - dispose it
-        ((XComponent)UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
+        (UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
     }
 
     /** A class that changes some grid options settings
@@ -716,7 +716,7 @@ public class ConfigExamples
             try
             {
                 XHierarchicalPropertySet xHPS =
-                    (XHierarchicalPropertySet)UnoRuntime.queryInterface(XHierarchicalPropertySet.class, mxModel);
+                    UnoRuntime.queryInterface(XHierarchicalPropertySet.class, mxModel);
 
                 final String sSetting = "Option/VisibleGrid";
 
@@ -744,7 +744,7 @@ public class ConfigExamples
         {
             Object xOtherViewRoot = createUpdatableView(xKey);
 
-            XNameReplace aReplace = (XNameReplace)UnoRuntime.queryInterface(XNameReplace.class, xOtherViewRoot);
+            XNameReplace aReplace = UnoRuntime.queryInterface(XNameReplace.class, xOtherViewRoot);
 
             String aItemNames [] = aReplace.getElementNames();
             for (int i=0; i < aItemNames.length; ++i) {
@@ -773,12 +773,12 @@ public class ConfigExamples
 
             // commit the changes
             XChangesBatch xUpdateControl =
-                (XChangesBatch) UnoRuntime.queryInterface(XChangesBatch.class,xOtherViewRoot);
+                UnoRuntime.queryInterface(XChangesBatch.class,xOtherViewRoot);
 
             xUpdateControl.commitChanges();
 
             // we are done with the view - dispose it
-            ((XComponent)UnoRuntime.queryInterface(XComponent.class, xOtherViewRoot)).dispose();
+            (UnoRuntime.queryInterface(XComponent.class, xOtherViewRoot)).dispose();
         }
         catch (Exception e)
         {
@@ -800,13 +800,13 @@ public class ConfigExamples
 
      // resetting a single nested value
         XHierarchicalNameAccess xHierarchicalAccess =
-            (XHierarchicalNameAccess)UnoRuntime.queryInterface(XHierarchicalNameAccess.class, xViewRoot);
+            UnoRuntime.queryInterface(XHierarchicalNameAccess.class, xViewRoot);
 
         // get using absolute name
         Object xOptions = xHierarchicalAccess.getByHierarchicalName(cGridOptionsPath + "/Option");
 
         XPropertyState xOptionState =
-            (XPropertyState)UnoRuntime.queryInterface(XPropertyState.class, xOptions);
+            UnoRuntime.queryInterface(XPropertyState.class, xOptions);
 
         xOptionState.setPropertyToDefault("VisibleGrid");
 
@@ -815,9 +815,9 @@ public class ConfigExamples
         Object xResolutionY = xHierarchicalAccess.getByHierarchicalName("Resolution/YAxis");
 
         XPropertyState xResolutionStateX =
-            (XPropertyState)UnoRuntime.queryInterface(XPropertyState.class, xResolutionX);
+            UnoRuntime.queryInterface(XPropertyState.class, xResolutionX);
         XPropertyState xResolutionStateY =
-            (XPropertyState)UnoRuntime.queryInterface(XPropertyState.class, xResolutionY);
+            UnoRuntime.queryInterface(XPropertyState.class, xResolutionY);
 
         xResolutionStateX.setPropertyToDefault("Metric");
         xResolutionStateY.setPropertyToDefault("Metric");
@@ -826,18 +826,18 @@ public class ConfigExamples
         Object xSubdivision = xHierarchicalAccess.getByHierarchicalName("Subdivision");
 
         XMultiPropertyStates xSubdivisionStates =
-            (XMultiPropertyStates)UnoRuntime.queryInterface(XMultiPropertyStates.class, xSubdivision);
+            UnoRuntime.queryInterface(XMultiPropertyStates.class, xSubdivision);
 
         xSubdivisionStates.setAllPropertiesToDefault();
 
         // commit the changes
         XChangesBatch xUpdateControl =
-            (XChangesBatch) UnoRuntime.queryInterface(XChangesBatch.class,xViewRoot);
+            UnoRuntime.queryInterface(XChangesBatch.class,xViewRoot);
 
         xUpdateControl.commitChanges();
 
        // we are done with the view - dispose it
-        ((XComponent)UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
+        (UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
     }
 
 
@@ -895,7 +895,7 @@ public class ConfigExamples
 
       // set the values
         XPropertySet xDataSourceProperties =
-            (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xDataSource);
+            UnoRuntime.queryInterface(XPropertySet.class, xDataSource);
 
         xDataSourceProperties.setPropertyValue("URL",  sDataSourceURL  );
         xDataSourceProperties.setPropertyValue("User", sUser  );
@@ -918,12 +918,12 @@ public class ConfigExamples
 
         // commit the changes
         XChangesBatch xUpdateControl =
-            (XChangesBatch) UnoRuntime.queryInterface(XChangesBatch.class,xViewRoot);
+            UnoRuntime.queryInterface(XChangesBatch.class,xViewRoot);
 
         xUpdateControl.commitChanges();
 
         // now clean up
-        ((XComponent) UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
+        (UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
     }
 
     /** This method gets the DataSourceDescription for a data source.
@@ -951,7 +951,7 @@ public class ConfigExamples
             xProvider.createInstanceWithArguments(cUpdatableView, aArguments);
 
         XNameAccess xSetOfDataSources =
-            (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class,xViewRoot);
+            UnoRuntime.queryInterface(XNameAccess.class,xViewRoot);
 
         Object xDataSourceDescriptor = null; // the result
         if ( xSetOfDataSources .hasByName( sDataSourceName ))
@@ -960,7 +960,7 @@ public class ConfigExamples
             try
             {
                 // the view should point to the element directly, so we need to extend the path
-                XHierarchicalName xComposePath = (XHierarchicalName)
+                XHierarchicalName xComposePath =
                     UnoRuntime.queryInterface(XHierarchicalName.class, xSetOfDataSources );
 
                 String sElementPath = xComposePath.composeHierarchicalName( sDataSourceName );
@@ -979,7 +979,7 @@ public class ConfigExamples
                 if ( xDataSourceDescriptor != null) // all went fine
                 {
                     // dispose the other view
-                    ((XComponent)UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
+                    (UnoRuntime.queryInterface(XComponent.class, xViewRoot)).dispose();
                     xViewRoot = null;
                 }
             }
@@ -996,11 +996,11 @@ public class ConfigExamples
         {
             // get the container
             XNameContainer xSetUpdate =
-                (XNameContainer)UnoRuntime.queryInterface(XNameContainer.class, xViewRoot);
+                UnoRuntime.queryInterface(XNameContainer.class, xViewRoot);
 
             // create a new detached set element (instance of DataSourceDescription)
             XSingleServiceFactory xElementFactory =
-                (XSingleServiceFactory)UnoRuntime.queryInterface(XSingleServiceFactory.class, xSetUpdate);
+                UnoRuntime.queryInterface(XSingleServiceFactory.class, xSetUpdate);
 
             // the new element is the result !
              xDataSourceDescriptor = xElementFactory.createInstance();
@@ -1021,16 +1021,16 @@ public class ConfigExamples
 
         // get the settings set as a container
         XNameContainer xSettingsContainer =
-            (XNameContainer) UnoRuntime.queryInterface( XNameContainer.class, xSettingsSet);
+            UnoRuntime.queryInterface( XNameContainer.class, xSettingsSet);
 
         // and get a factory interface for creating the entries
         XSingleServiceFactory xSettingsFactory =
-            (XSingleServiceFactory) UnoRuntime.queryInterface(XSingleServiceFactory.class, xSettingsSet);
+            UnoRuntime.queryInterface(XSingleServiceFactory.class, xSettingsSet);
 
         // now insert the individual settings
         for (int i = 0; i < aSettings.length; ++i) {
             // create a DataSourceSetting object
-            XPropertySet xSetting = (XPropertySet)
+            XPropertySet xSetting =
                 UnoRuntime.queryInterface( XPropertySet.class, xSettingsFactory.createInstance() );
 
             // can set the value before inserting
@@ -1056,7 +1056,7 @@ public class ConfigExamples
         do
         {
             XChild xParentAccess =
-                (XChild) UnoRuntime.queryInterface(XChild.class,xResult);
+                UnoRuntime.queryInterface(XChild.class,xResult);
 
             if (xParentAccess != null)
                 xParent = xParentAccess.getParent();
@@ -1077,10 +1077,10 @@ public class ConfigExamples
     void renameSetItem(XNamed xNamedItem, String sNewName)
 		throws com.sun.star.uno.Exception
     {
-        XChild xChildItem = (XChild)
+        XChild xChildItem =
             UnoRuntime.queryInterface(XChild.class, xNamedItem);
 
-        XNameContainer xParentSet = (XNameContainer)
+        XNameContainer xParentSet =
             UnoRuntime.queryInterface( XNameContainer.class, xChildItem.getParent() );
 
         String sOldName = xNamedItem.getName();
@@ -1094,10 +1094,10 @@ public class ConfigExamples
     void moveSetItem(XChild xChildItem, XNameContainer xNewParent)
 		throws com.sun.star.uno.Exception
     {
-        XNamed xNamedItem = (XNamed)
+        XNamed xNamedItem =
             UnoRuntime.queryInterface(XNamed.class, xChildItem);
 
-        XNameContainer xOldParent = (XNameContainer)
+        XNameContainer xOldParent =
             UnoRuntime.queryInterface( XNameContainer.class, xChildItem.getParent() );
 
         String sItemName = xNamedItem.getName();

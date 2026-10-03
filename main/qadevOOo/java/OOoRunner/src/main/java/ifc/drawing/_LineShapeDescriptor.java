@@ -38,7 +38,7 @@ public class _LineShapeDescriptor extends MultiMethodTest {
 
 
     public void _LineColor() {
-        XServiceInfo xInfo = (XServiceInfo)
+        XServiceInfo xInfo =
             UnoRuntime.queryInterface(XServiceInfo.class, oObj);
         if ( ! xInfo.supportsService
                 ("com.sun.star.drawing.LineShapeDescriptor")) {

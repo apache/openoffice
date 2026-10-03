@@ -204,21 +204,21 @@ public class XMergeBridge {
 	    try{
 
 		Object xCfgMgrObj=xMSF.createInstance("com.sun.star.config.SpecialConfigManager");
-		 XConfigManager xCfgMgr = (XConfigManager) UnoRuntime.queryInterface(
+		 XConfigManager xCfgMgr = UnoRuntime.queryInterface(
 										    XConfigManager.class , xCfgMgrObj );
 		String PathString=xCfgMgr.substituteVariables("$(progurl)" );
 		PathString= PathString.concat("/");
 		udJarPath= PathString.concat(udJarPath);
 
 		Object xPipeObj=xMSF.createInstance("com.sun.star.io.Pipe");
-		xInStream = (XInputStream) UnoRuntime.queryInterface(
+		xInStream = UnoRuntime.queryInterface(
                         XInputStream.class , xPipeObj );
-	        xOutStream = (XOutputStream) UnoRuntime.queryInterface(
+	        xOutStream = UnoRuntime.queryInterface(
                         XOutputStream.class , xPipeObj );
 		convert (xis,xOutStream,false,udJarPath,sFileName,offMime,sdMime);
 		Object xSaxParserObj=xMSF.createInstance("com.sun.star.xml.sax.Parser");
 
-		XParser xParser = (XParser) UnoRuntime.queryInterface(
+		XParser xParser = UnoRuntime.queryInterface(
                         XParser.class , xSaxParserObj );
 		if (xParser==null){
 		    System.out.println("\nParser creation Failed");
@@ -313,7 +313,7 @@ public class XMergeBridge {
 	     try{
 
 		 Object xCfgMgrObj=xMSF.createInstance("com.sun.star.config.SpecialConfigManager");
-		 XConfigManager xCfgMgr = (XConfigManager) UnoRuntime.queryInterface(
+		 XConfigManager xCfgMgr = UnoRuntime.queryInterface(
 										    XConfigManager.class , xCfgMgrObj );
 
 		String PathString=xCfgMgr.substituteVariables("$(progurl)" );
@@ -321,9 +321,9 @@ public class XMergeBridge {
 		udJarPath= PathString.concat(udJarPath);
 
 		Object xPipeObj=xMSF.createInstance("com.sun.star.io.Pipe");
-		xInStream = (XInputStream) UnoRuntime.queryInterface(
+		xInStream = UnoRuntime.queryInterface(
                         XInputStream.class , xPipeObj );
-		xOutStream = (XOutputStream) UnoRuntime.queryInterface(
+		xOutStream = UnoRuntime.queryInterface(
                         XOutputStream.class , xPipeObj );
 	       }
 	      catch (Exception e){

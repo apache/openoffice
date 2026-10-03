@@ -605,7 +605,7 @@ public class TestTool extends JFrame implements ActionListener
 				return false;
 			}
 
-			m_xSEInitializer = (XSEInitializer)UnoRuntime.queryInterface(
+			m_xSEInitializer = UnoRuntime.queryInterface(
 						XSEInitializer.class, seInitializerObj);
 
 			m_xXMLSecurityContext = m_xSEInitializer.createSecurityContext(tokenPath);
@@ -619,7 +619,7 @@ public class TestTool extends JFrame implements ActionListener
 				return false;
 			}
 
-			m_xXMLSignature = (XXMLSignature)UnoRuntime.queryInterface(
+			m_xXMLSignature = UnoRuntime.queryInterface(
 						XXMLSignature.class, xmlSignatureObj);
 
 			Object xmlEncryptionObj = m_xRemoteServiceManager.createInstanceWithContext(
@@ -631,7 +631,7 @@ public class TestTool extends JFrame implements ActionListener
 				return false;
 			}
 
-			m_xXMLEncryption = (XXMLEncryption)UnoRuntime.queryInterface(
+			m_xXMLEncryption = UnoRuntime.queryInterface(
 						XXMLEncryption.class, xmlEncryptionObj);
 
 			return true;
@@ -686,7 +686,7 @@ public class TestTool extends JFrame implements ActionListener
 			/*
 			 * query XUnoUrlResolver interface from urlResolver object
 			 */
-			XUnoUrlResolver xUnoUrlResolver = (XUnoUrlResolver) UnoRuntime.queryInterface(
+			XUnoUrlResolver xUnoUrlResolver = UnoRuntime.queryInterface(
 				XUnoUrlResolver.class, urlResolver );
 
 			/*
@@ -694,10 +694,10 @@ public class TestTool extends JFrame implements ActionListener
 			 * retrieve its property DefaultContext and get the remote servicemanager
 			 */
 			Object initialObject = xUnoUrlResolver.resolve( unoUrl );
-			XPropertySet xPropertySet = (XPropertySet)UnoRuntime.queryInterface(
+			XPropertySet xPropertySet = UnoRuntime.queryInterface(
 			XPropertySet.class, initialObject);
 			Object context = xPropertySet.getPropertyValue("DefaultContext");
-			m_xRemoteContext = (XComponentContext)UnoRuntime.queryInterface(
+			m_xRemoteContext = UnoRuntime.queryInterface(
 				XComponentContext.class, context);
 		}
 		return m_xRemoteContext.getServiceManager();

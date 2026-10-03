@@ -64,7 +64,7 @@ public class AccLegendEntry extends TestCase {
 
         XInterface oObj = null;
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xChartDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -83,7 +83,7 @@ public class AccLegendEntry extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        final XAccessibleComponent acc = (XAccessibleComponent)
+        final XAccessibleComponent acc =
                 UnoRuntime.queryInterface(
                     XAccessibleComponent.class,oObj);
         tEnv.addObjRelation("EventProducer",

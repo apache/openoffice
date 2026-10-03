@@ -127,7 +127,7 @@ public class _XConnector extends MultiMethodTest {
             throw new StatusException("Can't create service", e) ;
         }
 
-        xAcceptor = (XAcceptor)UnoRuntime.queryInterface(XAcceptor.class, x);
+        xAcceptor = UnoRuntime.queryInterface(XAcceptor.class, x);
 
         acceptorThread = new AcceptorThread(xAcceptor) ;
         acceptorThread.start() ;

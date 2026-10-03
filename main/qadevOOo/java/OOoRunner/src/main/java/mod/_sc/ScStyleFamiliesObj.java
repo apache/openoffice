@@ -79,7 +79,7 @@ public class ScStyleFamiliesObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -103,7 +103,7 @@ public class ScStyleFamiliesObj extends TestCase {
         XNameAccess oStyleFamilies=null;
         // create testobject here
         log.println("getting style families");
-        XStyleFamiliesSupplier oStyleFamiliesSupplier =(XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier oStyleFamiliesSupplier =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class, xSpreadsheetDoc);
 

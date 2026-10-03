@@ -182,7 +182,7 @@ public class AccessBridge {
         * XTopWindowListener
         */
         public void windowOpened(com.sun.star.lang.EventObject event) {
-            XAccessible xAccessible = (XAccessible) UnoRuntime.queryInterface(XAccessible.class,
+            XAccessible xAccessible = UnoRuntime.queryInterface(XAccessible.class,
                     event.Source);
             java.awt.Window w = getTopWindow(xAccessible);
         }
@@ -203,7 +203,7 @@ public class AccessBridge {
         }
 
         public void windowClosed(com.sun.star.lang.EventObject event) {
-            XAccessible xAccessible = (XAccessible) UnoRuntime.queryInterface(XAccessible.class,
+            XAccessible xAccessible = UnoRuntime.queryInterface(XAccessible.class,
                     event.Source);
 
             java.awt.Window w = removeTopWindow(xAccessible);

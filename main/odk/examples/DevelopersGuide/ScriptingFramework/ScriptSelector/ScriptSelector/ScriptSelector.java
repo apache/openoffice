@@ -82,7 +82,7 @@ public class ScriptSelector {
 
             Object obj = ctxt.getComponentContext().getValueByName(MSP_FACTORY);
 
-            XScriptProviderFactory fac = (XScriptProviderFactory)
+            XScriptProviderFactory fac =
                 UnoRuntime.queryInterface(XScriptProviderFactory.class, obj);
 
             final XScriptProvider msp =
@@ -112,7 +112,7 @@ public class ScriptSelector {
                 new TreeSelectionListener() {
                     public void valueChanged(TreeSelectionEvent e) {
                         XBrowseNode xbn = selectorPanel.getSelection();
-                        XPropertySet props = (XPropertySet)
+                        XPropertySet props =
                             UnoRuntime.queryInterface(XPropertySet.class, xbn);
 
                         if (xbn != null &&
@@ -237,11 +237,11 @@ public class ScriptSelector {
         XBrowseNode result = null;
 
         XComponentContext xcc = ctxt.getComponentContext();
-        XBrowseNodeFactory xBrowseFac = (XBrowseNodeFactory)
+        XBrowseNodeFactory xBrowseFac =
             UnoRuntime.queryInterface(
                 XBrowseNodeFactory.class, xcc.getValueByName(BROWSE_FACTORY));
 
-        result = (XBrowseNode)UnoRuntime.queryInterface(
+        result = UnoRuntime.queryInterface(
            XBrowseNode.class, xBrowseFac.createView(
                BrowseNodeFactoryViewTypes.MACROSELECTOR ) );
 
@@ -294,7 +294,7 @@ class ScriptSelectorPanel extends JPanel {
         tree.addTreeSelectionListener(new TreeSelectionListener() {
             public void valueChanged(TreeSelectionEvent e) {
                 XBrowseNode xbn = getSelection();
-                XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet props = UnoRuntime.queryInterface(
                     XPropertySet.class, xbn);
 
                 if (xbn == null) {

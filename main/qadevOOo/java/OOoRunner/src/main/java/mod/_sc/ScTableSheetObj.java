@@ -153,7 +153,7 @@ public class ScTableSheetObj extends TestCase {
         log.println("    disposing xSheetDoc ");
 
         try {
-            XCloseable oCloser = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable oCloser = UnoRuntime.queryInterface(
                                          XCloseable.class, xSheetDoc);
             oCloser.close(true);
         } catch (com.sun.star.util.CloseVetoException e) {
@@ -197,7 +197,7 @@ public class ScTableSheetObj extends TestCase {
         log.println("getting a sheet");
 
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess) UnoRuntime.queryInterface(
+        XIndexAccess oIndexAccess = UnoRuntime.queryInterface(
                                             XIndexAccess.class, xSpreadsheets);
 
         try {
@@ -232,7 +232,7 @@ public class ScTableSheetObj extends TestCase {
             throw new StatusException("Exception occurred while filling cells", e);
         }
 
-        oObj = (XInterface) UnoRuntime.queryInterface(XInterface.class, oSheet);
+        oObj = UnoRuntime.queryInterface(XInterface.class, oSheet);
 
         log.println("creating a new environment for object");
 
@@ -255,7 +255,7 @@ public class ScTableSheetObj extends TestCase {
         tEnv.addObjRelation("XSheetLinkable.LinkSheet", "ScSheetLinksObj.sdc");
 
         //adding Scenario and with that a ScenarioSheet-Relation for Scenario and XScenarioEnhanced
-        XScenariosSupplier scene = (XScenariosSupplier) UnoRuntime.queryInterface(
+        XScenariosSupplier scene = UnoRuntime.queryInterface(
                                            XScenariosSupplier.class,
                                            tEnv.getTestObject());
         scene.getScenarios()
@@ -267,7 +267,7 @@ public class ScTableSheetObj extends TestCase {
         XSpreadsheet sSheet = null;
 
         try {
-            sSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            sSheet = UnoRuntime.queryInterface(
                              XSpreadsheet.class,
                              xSpreadsheets.getByName("Scenario"));
         } catch (com.sun.star.container.NoSuchElementException e) {
@@ -282,7 +282,7 @@ public class ScTableSheetObj extends TestCase {
                     " 'XArrayFormulaRange'");
         tEnv.addObjRelation("noArray", "ScTableSheetObj");
 
-        XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet PropSet = UnoRuntime.queryInterface(
                                        XPropertySet.class, oObj);
         tEnv.addObjRelation("PropSet", PropSet);
         tEnv.addObjRelation("SHEET", oSheet);

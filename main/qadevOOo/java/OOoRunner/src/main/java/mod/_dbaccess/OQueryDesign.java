@@ -69,7 +69,7 @@ public class OQueryDesign extends TestCase {
 	 * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
 	 */
 	protected void initialize(TestParameters Param, PrintWriter log) {
-		xDesk = (XDesktop) UnoRuntime.queryInterface(
+		xDesk = UnoRuntime.queryInterface(
 					XDesktop.class, DesktopTools.createDesktop((XMultiServiceFactory)Param.getMSF()) );
 	}
 
@@ -79,7 +79,7 @@ public class OQueryDesign extends TestCase {
 
 		XInterface oObj = null;
 
-		XDispatchProvider aProv = (XDispatchProvider)
+		XDispatchProvider aProv =
 				UnoRuntime.queryInterface(XDispatchProvider.class,xDesk);
 
 		XDispatch getting = null;
@@ -90,7 +90,7 @@ public class OQueryDesign extends TestCase {
 			// we use the first DataSource
 			XDataSource xDS = null;
 		try {
-			xNameAccess = (XNameAccess) UnoRuntime.queryInterface(
+			xNameAccess = UnoRuntime.queryInterface(
 						XNameAccess.class,
 						xMSF.createInstance("com.sun.star.sdb.DatabaseContext"));
 		} catch (Exception ex) {
@@ -98,7 +98,7 @@ public class OQueryDesign extends TestCase {
 			throw new StatusException( "Could not get Databasecontext", ex );
 		}
 		try {
-			xDS = (XDataSource) UnoRuntime.queryInterface(
+			xDS = UnoRuntime.queryInterface(
 					XDataSource.class, xNameAccess.getByName( "Bibliography" ));
 		} catch (NoSuchElementException ex) {
 			ex.printStackTrace( log );
@@ -108,7 +108,7 @@ public class OQueryDesign extends TestCase {
 			throw new StatusException( "Could not get XDataSource", ex );
 		}
 		try {
-			xNameAccess = (XNameAccess) UnoRuntime.queryInterface(
+			xNameAccess = UnoRuntime.queryInterface(
 						XNameAccess.class,
 						xMSF.createInstance("com.sun.star.sdb.DatabaseContext"));
 		} catch (Exception ex) {
@@ -156,15 +156,15 @@ public class OQueryDesign extends TestCase {
 
 		Object oDataSource = null;
 		try{
-			XNameAccess xNA = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, oDBC);
+			XNameAccess xNA = UnoRuntime.queryInterface(XNameAccess.class, oDBC);
 			oDataSource = xNA.getByName(sDataSourceName);
 		} catch ( com.sun.star.container.NoSuchElementException e){
 			throw new StatusException("could not get '" + sDataSourceName + "'" , e) ;
 		} catch ( com.sun.star.lang.WrappedTargetException e){
 			throw new StatusException("could not get '" + sDataSourceName + "'" , e) ;
 		}
-		XDocumentDataSource xDDS = (XDocumentDataSource) UnoRuntime.queryInterface(XDocumentDataSource.class, oDataSource);
-//		XModel xMod = (XModel) UnoRuntime.queryInterface(XModel.class, xDDS.getDatabaseDocument ());
+		XDocumentDataSource xDDS = UnoRuntime.queryInterface(XDocumentDataSource.class, oDataSource);
+//		XModel xMod = UnoRuntime.queryInterface(XModel.class, xDDS.getDatabaseDocument ());
 
 //		Frame = xMod.getCurrentController().getFrame();
 
@@ -183,7 +183,7 @@ public class OQueryDesign extends TestCase {
 			throw new StatusException( "Could not create document", e );
 		}
 
-		XModel xDocMod = (XModel) UnoRuntime.queryInterface(XModel.class, xTextDoc);
+		XModel xDocMod = UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
 		XFrame xTextFrame = xDocMod.getCurrentController().getFrame();
 
@@ -255,7 +255,7 @@ public class OQueryDesign extends TestCase {
 
 		Object oDataSource = null;
 		try{
-			XNameAccess xNA = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, oDBC);
+			XNameAccess xNA = UnoRuntime.queryInterface(XNameAccess.class, oDBC);
 			oDataSource = xNA.getByName(sDataSourceName);
 		} catch ( com.sun.star.container.NoSuchElementException e){
 			throw new StatusException("could not get '" + sDataSourceName + "'" , e) ;
@@ -263,8 +263,8 @@ public class OQueryDesign extends TestCase {
 			throw new StatusException("could not get '" + sDataSourceName + "'" , e) ;
 		}
 
-		XDocumentDataSource xDDS = (XDocumentDataSource) UnoRuntime.queryInterface(XDocumentDataSource.class, oDataSource);
-		XModel xMod = (XModel) UnoRuntime.queryInterface(XModel.class, xDDS.getDatabaseDocument ());
+		XDocumentDataSource xDDS = UnoRuntime.queryInterface(XDocumentDataSource.class, oDataSource);
+		XModel xMod = UnoRuntime.queryInterface(XModel.class, xDDS.getDatabaseDocument ());
 
 		// get an instance of QueryDesign
 		Object oQueryDesign = null;
@@ -274,7 +274,7 @@ public class OQueryDesign extends TestCase {
 			throw new StatusException("Could not instantiate QueryDesign", e) ;
 		}
 
-		XController xCont = (XController) UnoRuntime.queryInterface(XController.class, oQueryDesign);
+		XController xCont = UnoRuntime.queryInterface(XController.class, oQueryDesign);
 
 		// marry them all
 		xCont.attachModel(xMod);
@@ -287,7 +287,7 @@ public class OQueryDesign extends TestCase {
 
 		//xCont.attachFrame(xFrame);
 
-		return (XInitialization) UnoRuntime.queryInterface(XInitialization.class, oQueryDesign);
+		return UnoRuntime.queryInterface(XInitialization.class, oQueryDesign);
 
 	}
 

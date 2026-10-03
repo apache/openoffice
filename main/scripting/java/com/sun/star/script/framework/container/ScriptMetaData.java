@@ -355,7 +355,7 @@ public class ScriptMetaData extends ScriptEntry implements Cloneable {
         OutputStream os = null;
         try
         {
-            XSimpleFileAccess2 xSFA2 = ( XSimpleFileAccess2 )
+            XSimpleFileAccess2 xSFA2 =
                 UnoRuntime.queryInterface( XSimpleFileAccess2.class,
                     parent.m_xSFA );
             if ( xSFA2 != null )

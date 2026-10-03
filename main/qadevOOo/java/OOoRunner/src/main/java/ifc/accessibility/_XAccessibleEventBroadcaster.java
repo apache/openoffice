@@ -183,7 +183,7 @@ public class _XAccessibleEventBroadcaster extends MultiMethodTest {
 
     protected static boolean chkTransient(Object Testcase) {
         boolean ret = false;
-        XAccessibleContext accCon = (XAccessibleContext)
+        XAccessibleContext accCon =
                     UnoRuntime.queryInterface(XAccessibleContext.class,Testcase);
         if (accCon.getAccessibleStateSet().contains(
             com.sun.star.accessibility.AccessibleStateType.TRANSIENT)){

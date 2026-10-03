@@ -86,7 +86,7 @@ class AccessibleRelationHandler
                 {
                     Object aTarget = aRelation.TargetSet[j];
                     XAccessible xAccTarget =
-                        (XAccessible)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                              XAccessible.class, aTarget );
                     if( xAccTarget == null )
                     {

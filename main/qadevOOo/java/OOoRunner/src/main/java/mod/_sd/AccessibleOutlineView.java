@@ -83,7 +83,7 @@ public class AccessibleOutlineView extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, aModel);
         final XDrawPages oDPn = oDPS.getDrawPages();
 
@@ -137,7 +137,7 @@ public class AccessibleOutlineView extends TestCase {
             throw new StatusException("Couldn't create document", e);
         }
 
-        aModel = (XModel)
+        aModel =
             UnoRuntime.queryInterface(XModel.class, xImpressDoc);
 
         XInterface oObj = aModel.getCurrentController();
@@ -145,9 +145,9 @@ public class AccessibleOutlineView extends TestCase {
         //Change to Outline view
         try {
             String aSlotID = "slot:27010";
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface( XDispatchProvider.class, oObj );
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
                 ((XMultiServiceFactory)Param.getMSF()).
                 createInstance("com.sun.star.util.URLTransformer"));

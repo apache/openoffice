@@ -93,7 +93,7 @@ public class ScViewPaneObj extends TestCase {
      */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println("disposing xSpreadsheetDocument");
-        XComponent oComp = (XComponent)
+        XComponent oComp =
         UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -116,10 +116,10 @@ public class ScViewPaneObj extends TestCase {
     protected TestEnvironment createTestEnvironment(TestParameters Param, PrintWriter log) {
         XDrawPage oDrawPage;
 
-        XModel xm = (XModel)
+        XModel xm =
         UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
         XController xc = xm.getCurrentController();
-        XIndexAccess xIA = (XIndexAccess)
+        XIndexAccess xIA =
         UnoRuntime.queryInterface(XIndexAccess.class, xc);
         try {
             oObj = (XInterface) AnyConverter.toObject(
@@ -141,7 +141,7 @@ public class ScViewPaneObj extends TestCase {
         tEnv.addObjRelation("DOCUMENT", UnoRuntime.queryInterface(XComponent.class,xSpreadsheetDoc));
         tEnv.addObjRelation("XControlAccess.isSheet", Boolean.TRUE);
 
-        XViewPane VP = (XViewPane)
+        XViewPane VP =
         UnoRuntime.queryInterface(XViewPane.class, oObj);
         CellRangeAddress dataArea = VP.getVisibleRange();
         tEnv.addObjRelation("DATAAREA", dataArea);
@@ -154,7 +154,7 @@ public class ScViewPaneObj extends TestCase {
         XShape aShape = null;
         try{
             log.println("adding control shape '" + kindOfControl + "'");
-            XComponent oComp = (XComponent) UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
+            XComponent oComp = UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
 
             aShape = FormTools.createControlShape(oComp, 3000, 4500, 15000, 10000, kindOfControl);
 
@@ -166,7 +166,7 @@ public class ScViewPaneObj extends TestCase {
 
         try {
             log.println( "getting Drawpages" );
-            XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+            XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class,xSpreadsheetDoc);
             XDrawPages oDP = (XDrawPages) oDPS.getDrawPages();
             oDP.insertNewByIndex(1);

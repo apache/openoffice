@@ -1124,7 +1124,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
         try
         {
             // Object aControlContainer = getGlobalMSF().createInstance("com.sun.star.awt.UnoControlContainer");
-            // XControlContainer xControlContainer = (XControlContainer)UnoRuntime.queryInterface(XControlContainer.class, aControlContainer);
+            // XControlContainer xControlContainer = UnoRuntime.queryInterface(XControlContainer.class, aControlContainer);
 
             final Object aFixedTextModel = getGlobalMSF().createInstance("com.sun.star.awt.UnoControlFixedTextModel");
             final XControlModel xFixedTextModel = UnoRuntime.queryInterface(XControlModel.class, aFixedTextModel);
@@ -1134,7 +1134,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
             aPropertySetHelper.setPropertyValueDontThrow(PropertyNames.FONT_DESCRIPTOR, _aFont);
 
             final Object aUnoCtrlFixedText = getGlobalMSF().createInstance("com.sun.star.awt.UnoControlFixedText");
-//            XServiceInfo xServiceInfo2 = (XServiceInfo)UnoRuntime.queryInterface(XServiceInfo.class, aUnoCtrlFixedText);
+//            XServiceInfo xServiceInfo2 = UnoRuntime.queryInterface(XServiceInfo.class, aUnoCtrlFixedText);
 //            String[] sServices2 = xServiceInfo2.getSupportedServiceNames();
 
             final XWindow xWindow = UnoRuntime.queryInterface(XWindow.class, aUnoCtrlFixedText);
@@ -1252,7 +1252,7 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
                 Object aEnumObj = xEnum.nextElement();
                 XReportComponent aComponent = UnoRuntime.queryInterface(XReportComponent.class, aEnumObj);
 
-                // XCloneable aClone = (XCloneable)UnoRuntime.queryInterface(XCloneable.class, aEnumObj);
+                // XCloneable aClone = UnoRuntime.queryInterface(XCloneable.class, aEnumObj);
                 if (aComponent != null)
                 {
                     Object aClone = aComponent.createClone();

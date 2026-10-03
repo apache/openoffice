@@ -58,7 +58,7 @@ public class AccessiblePresentationGraphicShape extends TestCase {
         try {
             log.println( "creating a drawdoc" );
             xDoc = SOF.createImpressDoc(null);
-            aModel = (XModel)
+            aModel =
                 UnoRuntime.queryInterface(XModel.class, xDoc);
 
         } catch ( com.sun.star.uno.Exception e ) {
@@ -86,10 +86,10 @@ public class AccessiblePresentationGraphicShape extends TestCase {
         // first we write what we are intend to do to log file
         log.println( "creating a test environment" );
 
-        XMultiServiceFactory docMSF = (XMultiServiceFactory)
+        XMultiServiceFactory docMSF =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xDoc);
         try {
-            oShape = (XShape) UnoRuntime.queryInterface(XShape.class,
+            oShape = UnoRuntime.queryInterface(XShape.class,
                 docMSF.createInstance
                 ("com.sun.star.presentation.GraphicObjectShape"));
         } catch (com.sun.star.uno.Exception e) {
@@ -98,7 +98,7 @@ public class AccessiblePresentationGraphicShape extends TestCase {
 
         DrawTools.getShapes(DrawTools.getDrawPage(xDoc,0)).add(oShape);
 
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
             oShapeProps.setPropertyValue(

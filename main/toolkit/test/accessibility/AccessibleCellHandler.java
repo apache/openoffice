@@ -37,7 +37,7 @@ class AccessibleCellHandler extends NodeHandler
             if (xParent != null)
             {
                 XAccessibleTable xTable =
-                    (XAccessibleTable) UnoRuntime.queryInterface (
+                    UnoRuntime.queryInterface (
                         XAccessibleTable.class, xParent.getAccessibleContext());
                 if (xTable != null)
                     aCellHandler = new AccessibleCellHandler (xTable);
@@ -59,7 +59,7 @@ class AccessibleCellHandler extends NodeHandler
 
     protected static XAccessibleTable getTable(Object aObject)
     {
-        return (XAccessibleTable) UnoRuntime.queryInterface (
+        return UnoRuntime.queryInterface (
             XAccessibleTable.class, aObject);
     }
 

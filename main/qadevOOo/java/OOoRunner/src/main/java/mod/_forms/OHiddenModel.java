@@ -116,7 +116,7 @@ public class OHiddenModel extends TestCase {
         log.println("    disposing xDrawDoc ");
 
         try {
-            XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable closer = UnoRuntime.queryInterface(
                     XCloseable.class, xDrawDoc);
             closer.close(true);
         } catch (com.sun.star.util.CloseVetoException e) {
@@ -158,7 +158,7 @@ public class OHiddenModel extends TestCase {
 
             Object frm = nc.getByName("OHiddenModelForm");
 
-            XNameContainer frmNC = (XNameContainer) UnoRuntime.queryInterface(
+            XNameContainer frmNC = UnoRuntime.queryInterface(
                     XNameContainer.class, frm);
 
             frmNC.insertByName("OHiddenModel", ctrl);

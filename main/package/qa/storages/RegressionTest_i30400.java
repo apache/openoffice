@@ -71,7 +71,7 @@ public class RegressionTest_i30400 implements StorageTest {
 			String pPass1 = "1, 2, 3, 4, 5";
 
 			Object oTempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			XStorage xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			XStorage xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -186,7 +186,7 @@ public class RegressionTest_i30400 implements StorageTest {
 
 			pArgs[1] = new Integer( ElementModes.READ );
 			oTempStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -252,7 +252,7 @@ public class RegressionTest_i30400 implements StorageTest {
 		String pPass1 = "1, 2, 3, 4, 5";
 
 		Object oTempStorage2 = m_xStorageFactory.createInstanceWithArguments( pArgs );
-		XStorage xTempStorage2 = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage2 );
+		XStorage xTempStorage2 = UnoRuntime.queryInterface( XStorage.class, oTempStorage2 );
 		if ( xTempStorage2 == null )
 		{
 			m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -343,7 +343,7 @@ public class RegressionTest_i30400 implements StorageTest {
 
 		pArgs[1] = new Integer( ElementModes.READ );
 		oTempStorage2 = m_xStorageFactory.createInstanceWithArguments( pArgs );
-		xTempStorage2 = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage2 );
+		xTempStorage2 = UnoRuntime.queryInterface( XStorage.class, oTempStorage2 );
 		if ( xTempStorage2 == null )
 		{
 			m_aTestHelper.Error( "Can't create temporary storage representation!" );

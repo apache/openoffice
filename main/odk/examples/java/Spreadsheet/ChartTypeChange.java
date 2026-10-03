@@ -141,19 +141,19 @@ public class ChartTypeChange {
      */
     public void changeChartType( String stringType, boolean booleanIs3D )
     throws Exception {
-        XEmbeddedObjectSupplier xEmbeddedObjSupplier = (XEmbeddedObjectSupplier)
+        XEmbeddedObjectSupplier xEmbeddedObjSupplier =
             UnoRuntime.queryInterface(XEmbeddedObjectSupplier.class, xtablechart);
         XInterface xInterface = xEmbeddedObjSupplier.getEmbeddedObject();
 
-        XChartDocument xChartDoc = (XChartDocument)UnoRuntime.queryInterface(
+        XChartDocument xChartDoc = UnoRuntime.queryInterface(
             XChartDocument.class, xInterface);
         XDiagram xDiagram = (XDiagram) xChartDoc.getDiagram();
-        XMultiServiceFactory xMSF = (XMultiServiceFactory)
+        XMultiServiceFactory xMSF =
             UnoRuntime.queryInterface( XMultiServiceFactory.class, xChartDoc );
         Object object = xMSF.createInstance( stringType );
-        xDiagram = (XDiagram) UnoRuntime.queryInterface(XDiagram.class, object);
+        xDiagram = UnoRuntime.queryInterface(XDiagram.class, object);
 
-        XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet xPropSet = UnoRuntime.queryInterface(
             XPropertySet.class, xDiagram );
         xPropSet.setPropertyValue( "Dim3D", new Boolean( booleanIs3D ) );
 
@@ -171,7 +171,7 @@ public class ChartTypeChange {
                frames in which components can be loaded. Desktop is the
                environment for components which can instantiate within
                frames. */
-            XComponentLoader xComponentloader = (XComponentLoader)
+            XComponentLoader xComponentloader =
                 UnoRuntime.queryInterface( XComponentLoader.class,
                     xMCF.createInstanceWithContext("com.sun.star.frame.Desktop",
                                                    xCompContext ) );
@@ -182,24 +182,24 @@ public class ChartTypeChange {
             new PropertyValue[0] );
 
             // Query for the interface XSpreadsheetDocument
-            XSpreadsheetDocument xSpreadSheetDocument = ( XSpreadsheetDocument )
+            XSpreadsheetDocument xSpreadSheetDocument =
                 UnoRuntime.queryInterface( XSpreadsheetDocument.class, xComponent );
 
             XSpreadsheets xSpreadsheets = xSpreadSheetDocument.getSheets() ;
 
-            XIndexAccess xIndexAccess = (XIndexAccess)
+            XIndexAccess xIndexAccess =
                 UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets );
 
-            XSpreadsheet xSpreadsheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            XSpreadsheet xSpreadsheet = UnoRuntime.queryInterface(
                 XSpreadsheet.class, xIndexAccess.getByIndex(0));
 
-            XTableChartsSupplier xTableChartsSupplier = ( XTableChartsSupplier )
+            XTableChartsSupplier xTableChartsSupplier =
                 UnoRuntime.queryInterface( XTableChartsSupplier.class, xSpreadsheet );
 
-            xIndexAccess = (XIndexAccess) UnoRuntime.queryInterface(
+            xIndexAccess = UnoRuntime.queryInterface(
                 XIndexAccess.class, xTableChartsSupplier.getCharts() );
 
-            this.xtablechart = (XTableChart) UnoRuntime.queryInterface(
+            this.xtablechart = UnoRuntime.queryInterface(
                 XTableChart.class,  xIndexAccess.getByIndex( 0 ) );
         }
         catch( Exception exception ) {
@@ -217,7 +217,7 @@ public class ChartTypeChange {
                frames in which components can be loaded. Desktop is the
                environment for components which can instantiate within
                frames. */
-            XComponentLoader xcomponentloader = ( XComponentLoader )
+            XComponentLoader xcomponentloader =
                 UnoRuntime.queryInterface( XComponentLoader.class,
                                            xMCF.createInstanceWithContext(
                                                "com.sun.star.frame.Desktop",
@@ -229,18 +229,18 @@ public class ChartTypeChange {
             new PropertyValue[0] );
 
             // Query for the interface XSpreadsheetDocument
-            XSpreadsheetDocument xspreadsheetdocument = ( XSpreadsheetDocument )
+            XSpreadsheetDocument xspreadsheetdocument =
                 UnoRuntime.queryInterface( XSpreadsheetDocument.class, xComponent );
 
             // Get all sheets of the spreadsheet document.
             XSpreadsheets xspreadsheets = xspreadsheetdocument.getSheets() ;
 
             // Get the index of the spreadsheet document.
-            XIndexAccess xindexaccess = (XIndexAccess) UnoRuntime.queryInterface(
+            XIndexAccess xindexaccess = UnoRuntime.queryInterface(
                 XIndexAccess.class, xspreadsheets );
 
             // Get the first spreadsheet.
-            XSpreadsheet xspreadsheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            XSpreadsheet xspreadsheet = UnoRuntime.queryInterface(
                 XSpreadsheet.class, xindexaccess.getByIndex(0));
 
             // The double array will written to the spreadsheet
@@ -261,7 +261,7 @@ public class ChartTypeChange {
             rectangle.Height = 11000;
 
             // Get the cell range of the spreadsheet.
-            XCellRange xcellrange = ( XCellRange ) UnoRuntime.queryInterface(
+            XCellRange xcellrange = UnoRuntime.queryInterface(
                 XCellRange.class, xspreadsheet );
 
             // Create the Unicode of the character for the column name.
@@ -281,7 +281,7 @@ public class ChartTypeChange {
 
             // Get the addressable cell range.
             XCellRangeAddressable xcellrangeaddressable =
-            ( XCellRangeAddressable ) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XCellRangeAddressable.class, xcellrangeChart );
 
             // Get the cell range address.
@@ -293,7 +293,7 @@ public class ChartTypeChange {
             cellrangeaddressChart[ 0 ] = cellrangeaddress;
 
             // Get the table charts supplier of the spreadsheet.
-            XTableChartsSupplier xtablechartssupplier = ( XTableChartsSupplier )
+            XTableChartsSupplier xtablechartssupplier =
                 UnoRuntime.queryInterface( XTableChartsSupplier.class, xspreadsheet );
 
             // Get all table charts of the spreadsheet.
@@ -304,8 +304,8 @@ public class ChartTypeChange {
             cellrangeaddressChart, true, true );
 
             // Get the created table chart.
-            this.xtablechart = ( XTableChart ) UnoRuntime.queryInterface(
-                XTableChart.class, (( XNameAccess ) UnoRuntime.queryInterface(
+            this.xtablechart = UnoRuntime.queryInterface(
+                XTableChart.class, (UnoRuntime.queryInterface(
                     XNameAccess.class, xtablecharts ) ).getByName( "Example" ));
         }
         catch( Exception exception ) {

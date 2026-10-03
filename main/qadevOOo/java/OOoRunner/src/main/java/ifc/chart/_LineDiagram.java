@@ -79,7 +79,7 @@ public class _LineDiagram extends MultiPropertyTest {
 
         oldDiagram = doc.getDiagram();
         doc.setDiagram(Line);
-        oObj = (XPropertySet)
+        oObj =
             UnoRuntime.queryInterface( XPropertySet.class, doc.getDiagram() );
     }
 

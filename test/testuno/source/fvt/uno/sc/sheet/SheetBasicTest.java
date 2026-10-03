@@ -247,7 +247,7 @@ public class SheetBasicTest {
 				activesheetname);
 
 		// show sheet "hide sheet"
-		sheetPropertySet = (XPropertySet) UnoRuntime.queryInterface(
+		sheetPropertySet = UnoRuntime.queryInterface(
 				XPropertySet.class,
 				SCUtil.getSCSheetByIndex(scDocument, (short) 1));
 		isvisiable = true;
@@ -292,7 +292,7 @@ public class SheetBasicTest {
 		scDocument = scDocumentTemp;
 
 		// Get first sheet color
-		sheet1PropertySet = (XPropertySet) UnoRuntime.queryInterface(
+		sheet1PropertySet = UnoRuntime.queryInterface(
 				XPropertySet.class,
 				SCUtil.getSCSheetByIndex(scDocument, (short) 0));
 		int firstSheetcolorid = (Integer) sheet1PropertySet
@@ -449,7 +449,7 @@ public class SheetBasicTest {
 				.queryInterface(XPropertySet.class, scDocument);
 		Object sheetLinks = sheetpropertyset.getPropertyValue("SheetLinks");
 
-		XIndexAccess xsheetlinks = (XIndexAccess) UnoRuntime.queryInterface(
+		XIndexAccess xsheetlinks = UnoRuntime.queryInterface(
 				XIndexAccess.class, sheetLinks);
 
 		// Refresh all links

@@ -156,12 +156,12 @@ public class _XUnoUrlResolver extends MultiMethodTest {
             XMultiServiceFactory xMSF = (XMultiServiceFactory)tParam.getMSF();
 
             // get the bridge factory
-            XBridgeFactory xBrdgFctr = (XBridgeFactory)
+            XBridgeFactory xBrdgFctr =
                         UnoRuntime.queryInterface(XBridgeFactory.class,
                                     tEnv.getObjRelation("BRIDGEFACTORY"));
 
             // get the acceptor
-            XAcceptor xAcc = (XAcceptor)UnoRuntime.queryInterface(
+            XAcceptor xAcc = UnoRuntime.queryInterface(
                     XAcceptor.class, tEnv.getObjRelation("ACCEPTOR"));
 
             // instance provider
@@ -179,7 +179,7 @@ public class _XUnoUrlResolver extends MultiMethodTest {
             Object obj = oObj.resolve(
                     "uno:" + connectStr + ";urp;com.sun.star.lang.ServiceManager");
             // got the instance?
-            XMultiServiceFactory oMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oMSF =
                     UnoRuntime.queryInterface(XMultiServiceFactory.class, obj);
 
             if (brThread.isAlive())

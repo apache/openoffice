@@ -447,7 +447,7 @@ public class AccessibilityTreeModel
     protected XAccessibleEventBroadcaster getBroadcaster (Object aObject)
     {
         if (aObject instanceof AccTreeNode)
-            return (XAccessibleEventBroadcaster) UnoRuntime.queryInterface (
+            return UnoRuntime.queryInterface (
                 XAccessibleEventBroadcaster.class, ((AccTreeNode)aObject).getContext());
         else
             return null;

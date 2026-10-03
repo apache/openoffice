@@ -88,7 +88,7 @@ public class Helper
 
     public XSpreadsheetDocument createSpreadsheetDocument()
     {
-        return (XSpreadsheetDocument) UnoRuntime.queryInterface(
+        return UnoRuntime.queryInterface(
             XSpreadsheetDocument.class, createDocument( "scalc" ));
     }
 
@@ -120,12 +120,12 @@ public class Helper
         XModel aResult = null;
         try
         {
-            XComponentLoader aLoader = (XComponentLoader)
+            XComponentLoader aLoader =
                 UnoRuntime.queryInterface(XComponentLoader.class,
                 maMCFactory.createInstanceWithContext("com.sun.star.frame.Desktop",
                                                       maContext) );
 
-            aResult = (XModel) UnoRuntime.queryInterface(
+            aResult = UnoRuntime.queryInterface(
                 XModel.class,
                 aLoader.loadComponentFromURL( "private:factory/" + sDocType,
                                               "_blank",

@@ -92,7 +92,7 @@ public class SmGraphicAccessible extends TestCase {
 
         // setting a formula in document
         final String expFormula = "sum a cdot b";
-        final XPropertySet xPS = (XPropertySet) UnoRuntime.queryInterface
+        final XPropertySet xPS = UnoRuntime.queryInterface
             (XPropertySet.class, xMathDoc);
         try {
             xPS.setPropertyValue("Formula", expFormula);
@@ -112,7 +112,7 @@ public class SmGraphicAccessible extends TestCase {
 
         XInterface oObj = null;
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xMathDoc);
 
 
@@ -126,7 +126,7 @@ public class SmGraphicAccessible extends TestCase {
 
         log.println("ImplementationName " + utils.getImplName(oObj));
 
-        final XAccessibleComponent xAC = (XAccessibleComponent)
+        final XAccessibleComponent xAC =
             UnoRuntime.queryInterface(XAccessibleComponent.class, oObj);
 
         TestEnvironment tEnv = new TestEnvironment(oObj);

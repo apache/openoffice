@@ -134,7 +134,7 @@ public class PathSettings extends TestCase {
 
     private void saveAllPropertyValues(XInterface oObj){
 
-        xPS = (XPropertySet) UnoRuntime.queryInterface(
+        xPS = UnoRuntime.queryInterface(
                                                 XPropertySet.class, oObj);
 
         XPropertySetInfo xPSI = xPS.getPropertySetInfo();

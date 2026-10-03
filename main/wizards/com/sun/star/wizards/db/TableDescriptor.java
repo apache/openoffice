@@ -111,7 +111,7 @@ public class TableDescriptor extends CommandMetaData implements XContainerListen
     {
         if (super.getConnection(_curPropertyValue))
         {
-            // XTablesSupplier xDBTables = (XTablesSupplier) UnoRuntime.queryInterface(XTablesSupplier.class, DBConnection);
+            // XTablesSupplier xDBTables = UnoRuntime.queryInterface(XTablesSupplier.class, DBConnection);
             // xTableNames = xDBTables.getTables();
             xTableAppend = UnoRuntime.queryInterface( XAppend.class, getTableNamesAsNameAccess() );
             xTableDrop = UnoRuntime.queryInterface( XDrop.class, getTableNamesAsNameAccess() );

@@ -224,7 +224,7 @@ public class DocumentInfo
             try
             {
                 // get an XPropertySet, here the one of a text cursor
-                // XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, mxDocCursor);
+                // XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, mxDocCursor);
 
                 // get the property info interface of this XPropertySet
                 XPropertySetInfo xPropsInfo = xProps.getPropertySetInfo();

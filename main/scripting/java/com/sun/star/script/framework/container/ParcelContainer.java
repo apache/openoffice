@@ -299,7 +299,7 @@ public class ParcelContainer implements XNameAccess
         }
         try
         {
-            m_xSFA = ( XSimpleFileAccess )UnoRuntime.queryInterface(
+            m_xSFA = UnoRuntime.queryInterface(
                 XSimpleFileAccess.class,
                 m_xCtx.getServiceManager().createInstanceWithContext(
                     "com.sun.star.ucb.SimpleFileAccess", m_xCtx ) );
@@ -463,7 +463,7 @@ public class ParcelContainer implements XNameAccess
             ParcelDescriptor pd = new ParcelDescriptor();
             pd.setLanguage( language );
             String parcelDesc = PathUtils.make_url( pathToParcel, ParcelDescriptor.PARCEL_DESCRIPTOR_NAME );
-            XSimpleFileAccess2 xSFA2 = ( XSimpleFileAccess2 )
+            XSimpleFileAccess2 xSFA2 =
                 UnoRuntime.queryInterface( XSimpleFileAccess2.class, m_xSFA );
             if ( xSFA2 != null )
             {
@@ -676,7 +676,7 @@ public  ParsedScriptUri parseScriptUri( String scriptURI ) throws com.sun.star.l
         try
         {
             xMcFac = m_xCtx.getServiceManager();
-            xFac = ( XUriReferenceFactory )
+            xFac =
                 UnoRuntime.queryInterface( XUriReferenceFactory.class,
                     xMcFac.createInstanceWithContext(
                         "com.sun.star.uri.UriReferenceFactory", m_xCtx ) );
@@ -693,7 +693,7 @@ public  ParsedScriptUri parseScriptUri( String scriptURI ) throws com.sun.star.l
         }
 
         XUriReference uriRef = xFac.parse( scriptURI );
-        XVndSunStarScriptUrl  sfUri = ( XVndSunStarScriptUrl )
+        XVndSunStarScriptUrl  sfUri =
             UnoRuntime.queryInterface( XVndSunStarScriptUrl.class, uriRef );
 
         if ( sfUri == null )

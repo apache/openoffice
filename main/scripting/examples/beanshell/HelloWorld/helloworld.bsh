@@ -28,7 +28,7 @@ import com.sun.star.text.XTextRange;
 // scripts
 oDoc = XSCRIPTCONTEXT.getDocument();
 //get the XTextDocument interface
-xTextDoc = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,oDoc);
+xTextDoc = UnoRuntime.queryInterface(XTextDocument.class,oDoc);
 //get the XText interface
 xText = xTextDoc.getText();
 // get an (empty) XTextRange at the end of the document

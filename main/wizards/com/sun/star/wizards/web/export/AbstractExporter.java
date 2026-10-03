@@ -126,7 +126,7 @@ public abstract class AbstractExporter implements Exporter
     {
         /*OfficeDocument.dispose(
         xmsf,
-        (XComponent) UnoRuntime.queryInterface(XComponent.class, doc));*/
+        UnoRuntime.queryInterface(XComponent.class, doc));*/
         try
         {
             XCloseable xc = UnoRuntime.queryInterface(XCloseable.class, doc);

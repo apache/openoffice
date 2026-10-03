@@ -59,7 +59,7 @@ public class TestHelper  {
 		}
 
 		// get XTrucate implementation from output stream
-		XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class, xOutput );
+		XTruncate xTruncate = UnoRuntime.queryInterface( XTruncate.class, xOutput );
 		if ( xTruncate == null )
 		{
 			Error( "Can't get XTruncate implementation from substream '" + sStreamName + "'!" );
@@ -79,7 +79,7 @@ public class TestHelper  {
 		}
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStream );
 		if ( xPropSet == null )
 		{
 			Error( "Can't get XPropertySet implementation from substream '" + sStreamName + "'!" );
@@ -127,7 +127,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openStreamElement( sStreamName, ElementModes.WRITE );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamName + "'!" );
@@ -149,7 +149,7 @@ public class TestHelper  {
 		}
 
 		// get XTrucate implementation from output stream
-		XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class, xOutput );
+		XTruncate xTruncate = UnoRuntime.queryInterface( XTruncate.class, xOutput );
 		if ( xTruncate == null )
 		{
 			Error( "Can't get XTruncate implementation from substream '" + sStreamName + "'!" );
@@ -169,7 +169,7 @@ public class TestHelper  {
 		}
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
 		if ( xPropSet == null )
 		{
 			Error( "Can't get XPropertySet implementation from substream '" + sStreamName + "'!" );
@@ -222,7 +222,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openStreamElement( sStreamName, ElementModes.WRITE );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamName + "'!" );
@@ -257,7 +257,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openEncryptedStreamElement( sStreamName, ElementModes.WRITE, sPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamName + "'!" );
@@ -292,7 +292,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openStreamElement( sStreamName, ElementModes.WRITE );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamName + "'!" );
@@ -306,7 +306,7 @@ public class TestHelper  {
 		}
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
 		if ( xPropSet == null )
 		{
 			Error( "Can't get XPropertySet implementation from substream '" + sStreamName + "'!" );
@@ -346,7 +346,7 @@ public class TestHelper  {
 		try
 		{
 			XHierarchicalStorageAccess xHStorage =
-				(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
+				UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
 			if ( xHStorage == null )
 			{
 				Error( "The storage does not support hierarchical access!" );
@@ -354,7 +354,7 @@ public class TestHelper  {
 			}
 
 			Object oSubStream = xHStorage.openStreamElementByHierarchicalName( sStreamPath, ElementModes.WRITE );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamPath + "'!" );
@@ -371,7 +371,7 @@ public class TestHelper  {
 			return false;
 
 		XTransactedObject xTransact =
-			(XTransactedObject) UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
+			UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
 		if ( xTransact == null )
 		{
 			Error( "Substream '" + sStreamPath + "', stream opened for writing must be transacted!" );
@@ -409,7 +409,7 @@ public class TestHelper  {
 		try
 		{
 			XHierarchicalStorageAccess xHStorage =
-				(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
+				UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
 			if ( xHStorage == null )
 			{
 				Error( "The storage does not support hierarchical access!" );
@@ -419,7 +419,7 @@ public class TestHelper  {
 			Object oSubStream = xHStorage.openEncryptedStreamElementByHierarchicalName( sStreamPath,
 																						ElementModes.WRITE,
 																						sPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamPath + "'!" );
@@ -436,7 +436,7 @@ public class TestHelper  {
 			return false;
 
 		XTransactedObject xTransact =
-			(XTransactedObject) UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
+			UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
 		if ( xTransact == null )
 		{
 			Error( "Substream '" + sStreamPath + "', stream opened for writing must be transacted!" );
@@ -474,7 +474,7 @@ public class TestHelper  {
 		try
 		{
 			XHierarchicalStorageAccess xHStorage =
-				(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
+				UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
 			if ( xHStorage == null )
 			{
 				Error( "The storage does not support hierarchical access!" );
@@ -482,7 +482,7 @@ public class TestHelper  {
 			}
 
 			Object oSubStream = xHStorage.openStreamElementByHierarchicalName( sStreamPath, ElementModes.WRITE );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't create substream '" + sStreamPath + "'!" );
@@ -496,7 +496,7 @@ public class TestHelper  {
 		}
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xSubStream );
 		if ( xPropSet == null )
 		{
 			Error( "Can't get XPropertySet implementation from substream '" + sStreamPath + "'!" );
@@ -518,7 +518,7 @@ public class TestHelper  {
 			return false;
 
 		XTransactedObject xTransact =
-			(XTransactedObject) UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
+			UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
 		if ( xTransact == null )
 		{
 			Error( "Substream '" + sStreamPath + "', stream opened for writing must be transacted!" );
@@ -553,7 +553,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openEncryptedStreamElement( sStreamName, ElementModes.WRITE, sOldPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open substream '" + sStreamName + "'!" );
@@ -569,7 +569,7 @@ public class TestHelper  {
 
 		// change the password for the stream
 		XEncryptionProtectedSource xStreamEncryption =
-				(XEncryptionProtectedSource) UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xSubStream );
+				UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xSubStream );
 
 		if ( xStreamEncryption == null )
 		{
@@ -601,7 +601,7 @@ public class TestHelper  {
 	{
 		// open substream element
 		XHierarchicalStorageAccess xHStorage =
-			(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
+			UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
 		if ( xHStorage == null )
 		{
 			Error( "The storage does not support hierarchical access!" );
@@ -612,7 +612,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xHStorage.openEncryptedStreamElementByHierarchicalName( sPath, ElementModes.WRITE, sOldPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open encrypted substream '" + sPath + "'!" );
@@ -627,7 +627,7 @@ public class TestHelper  {
 
 		// change the password for the stream
 		XEncryptionProtectedSource xStreamEncryption =
-				(XEncryptionProtectedSource) UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xSubStream );
+				UnoRuntime.queryInterface( XEncryptionProtectedSource.class, xSubStream );
 
 		if ( xStreamEncryption == null )
 		{
@@ -645,7 +645,7 @@ public class TestHelper  {
 		}
 
 		XTransactedObject xTransact =
-			(XTransactedObject) UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
+			UnoRuntime.queryInterface( XTransactedObject.class, xSubStream );
 		if ( xTransact == null )
 		{
 			Error( "Substream '" + sPath + "', stream opened for writing must be transacted!" );
@@ -675,7 +675,7 @@ public class TestHelper  {
 		boolean bOk = false;
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStorage );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStorage );
 		if ( xPropSet != null )
 		{
 			try
@@ -720,7 +720,7 @@ public class TestHelper  {
 		boolean bOk = false;
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStorage );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStorage );
 		if ( xPropSet != null )
 		{
 			try
@@ -821,7 +821,7 @@ public class TestHelper  {
 		boolean bOk = false;
 
 		// get access to the XPropertySet interface
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, xStream );
+		XPropertySet xPropSet = UnoRuntime.queryInterface( XPropertySet.class, xStream );
 		if ( xPropSet != null )
 		{
 			try
@@ -875,7 +875,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xParentStorage.openStreamElement( sName, ElementModes.READ );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open substream '" + sName + "'!" );
@@ -940,7 +940,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xParentStorage.openEncryptedStreamElement( sName, ElementModes.READ, sPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open encrypted substream '" + sName + "'!" );
@@ -976,7 +976,7 @@ public class TestHelper  {
 		try
 		{
 			XHierarchicalStorageAccess xHStorage =
-				(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xParentStorage );
+				UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xParentStorage );
 			if ( xHStorage == null )
 			{
 				Error( "The storage does not support hierarchical access!" );
@@ -984,7 +984,7 @@ public class TestHelper  {
 			}
 
 			Object oSubStream = xHStorage.openStreamElementByHierarchicalName( sPath, ElementModes.READ );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open substream '" + sPath + "'!" );
@@ -1015,7 +1015,7 @@ public class TestHelper  {
 		// Important: a common password for any of parent storage should not be set or
 		// 			  should be different from sPass
 		XHierarchicalStorageAccess xHStorage =
-			(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xParentStorage );
+			UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xParentStorage );
 		if ( xHStorage == null )
 		{
 			Error( "The storage does not support hierarchical access!" );
@@ -1025,7 +1025,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xHStorage.openStreamElementByHierarchicalName( sPath, ElementModes.READ );
-			XStream xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			XStream xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			Error( "Encrypted substream '" + sPath + "' was opened without password!" );
 			return false;
 		}
@@ -1042,7 +1042,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xHStorage.openEncryptedStreamElementByHierarchicalName( sPath, ElementModes.READ, sWrongPass );
-			XStream xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			XStream xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			Error( "Encrypted substream '" + sPath + "' was opened with wrong password!" );
 			return false;
 		}
@@ -1058,7 +1058,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xHStorage.openEncryptedStreamElementByHierarchicalName( sPath, ElementModes.READ, sPass );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 			{
 				Error( "Can't open encrypted substream '" + sPath + "'!" );
@@ -1102,7 +1102,7 @@ public class TestHelper  {
 	public boolean commitStorage( XStorage xStorage )
 	{
 		// XTransactedObject must be supported by storages
-		XTransactedObject xTransact = (XTransactedObject) UnoRuntime.queryInterface( XTransactedObject.class, xStorage );
+		XTransactedObject xTransact = UnoRuntime.queryInterface( XTransactedObject.class, xStorage );
 		if ( xTransact == null )
 		{
 			Error( "Storage doesn't implement transacted access!" );
@@ -1124,7 +1124,7 @@ public class TestHelper  {
 
 	public boolean disposeStream( XStream xStream, String sStreamName )
 	{
-		XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class, xStream );
+		XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, xStream );
 		if ( xComponent == null )
 		{
 			Error( "Can't get XComponent implementation from substream '" + sStreamName + "'!" );
@@ -1147,7 +1147,7 @@ public class TestHelper  {
 	public boolean disposeStorage( XStorage xStorage )
 	{
 		// dispose the storage
-		XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class, xStorage );
+		XComponent xComponent = UnoRuntime.queryInterface( XComponent.class, xStorage );
 		if ( xComponent == null )
 		{
 			Error( "Can't retrieve XComponent implementation from storage!" );
@@ -1221,7 +1221,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStorage = xStorage.openStorageElement( sName, nMode );
-			XStorage xSubStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oSubStorage );
+			XStorage xSubStorage = UnoRuntime.queryInterface( XStorage.class, oSubStorage );
 			return xSubStorage;
 		}
 		catch( Exception e )
@@ -1239,7 +1239,7 @@ public class TestHelper  {
 		try
 		{
 			Object oTempFile = xMSF.createInstance( "com.sun.star.io.TempFile" );
-			xTempFileStream = (XStream)UnoRuntime.queryInterface( XStream.class, oTempFile );
+			xTempFileStream = UnoRuntime.queryInterface( XStream.class, oTempFile );
 		}
 		catch( Exception e )
 		{}
@@ -1259,7 +1259,7 @@ public class TestHelper  {
 		try
 		{
 			Object oTempFile = xMSF.createInstance( "com.sun.star.io.TempFile" );
-			xTempFileProps = (XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
+			xTempFileProps = UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
 		}
 		catch( Exception e )
 		{}
@@ -1284,7 +1284,7 @@ public class TestHelper  {
 		// close temporary file explicitly
 		try
 		{
-			XStream xStream = (XStream)UnoRuntime.queryInterface( XStream.class, xTempFileProps );
+			XStream xStream = UnoRuntime.queryInterface( XStream.class, xTempFileProps );
 			if ( xStream != null )
 			{
 				XOutputStream xOut = xStream.getOutputStream();
@@ -1395,7 +1395,7 @@ public class TestHelper  {
 		try
 		{
 			Object oSubStream = xStorage.openStreamElement( sStreamName, nMode );
-			xSubStream = (XStream) UnoRuntime.queryInterface( XStream.class, oSubStream );
+			xSubStream = UnoRuntime.queryInterface( XStream.class, oSubStream );
 			if ( xSubStream == null )
 				Error( "Can't create substream '" + sStreamName + "'!" );
 		}
@@ -1413,7 +1413,7 @@ public class TestHelper  {
 		XStorageRawAccess xRawStorage;
 		try
 		{
-			xRawStorage = (XStorageRawAccess) UnoRuntime.queryInterface( XStorageRawAccess.class, xStorage );
+			xRawStorage = UnoRuntime.queryInterface( XStorageRawAccess.class, xStorage );
 		}
 		catch( Exception e )
 		{
@@ -1547,7 +1547,7 @@ public class TestHelper  {
 		// try to open the substream with specified mode must fail
 
 		XHierarchicalStorageAccess xHStorage =
-			(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
+			UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
 		if ( xHStorage == null )
 		{
 			Error( "The storage does not support hierarchical access!" );
@@ -1572,7 +1572,7 @@ public class TestHelper  {
 		// try to open the substream with specified mode must fail
 
 		XHierarchicalStorageAccess xHStorage =
-			(XHierarchicalStorageAccess) UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
+			UnoRuntime.queryInterface( XHierarchicalStorageAccess.class, xStorage );
 		if ( xHStorage == null )
 		{
 			Error( "The storage does not support hierarchical access!" );
@@ -1604,7 +1604,7 @@ public class TestHelper  {
 		try
 		{
 			Object oTempStorage = xFactory.createInstance();
-			xResult = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			xResult = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xResult != null )
 				xStorage.copyLastCommitTo( xResult );
 		}
@@ -1624,7 +1624,7 @@ public class TestHelper  {
 		try
 		{
 			Object oTempStorage = xFactory.createInstance();
-			xResult = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			xResult = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xResult != null )
 				xStorage.copyStorageElementLastCommitTo( sName, xResult );
 		}

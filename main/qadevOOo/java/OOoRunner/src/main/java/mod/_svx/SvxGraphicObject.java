@@ -173,7 +173,7 @@ public class SvxGraphicObject extends TestCase {
         oShape = SOF.createShape(xDrawDoc,3000,4500,15000,1000,"Ellipse");
         DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape);
 
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
@@ -185,7 +185,7 @@ public class SvxGraphicObject extends TestCase {
         }
         tEnv.addObjRelation("Style1",aStyle);
 
-        oShapeProps = (XPropertySet)
+        oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
             aStyle = (XStyle) AnyConverter.toObject(
@@ -198,7 +198,7 @@ public class SvxGraphicObject extends TestCase {
 
 
         // adding graphic as ObjRelation for GraphicObjectShape
-        oShapeProps = (XPropertySet)
+        oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XBitmap aBitmap = null;
         try {
@@ -231,7 +231,7 @@ public class SvxGraphicObject extends TestCase {
         tEnv.addObjRelation("Bitmap2",aBitmap);
 
         try {
-            XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oDocMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class,xDrawDoc);
             imap = oDocMSF.createInstance
                 ( "com.sun.star.image.ImageMapRectangleObject" );

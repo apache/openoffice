@@ -72,7 +72,7 @@ public class TextDemo
 				"private:factory/sdraw", "_blank", 0, pPropValues );
 
 			XDrawPage xPage = PageHelper.getDrawPageByIndex( xDrawDoc, 0 );
-			XShapes xShapes = (XShapes)
+			XShapes xShapes =
 					UnoRuntime.queryInterface( XShapes.class, xPage );
 
 
@@ -89,7 +89,7 @@ public class TextDemo
 					new Size( 15000, 7500 ),
 						"com.sun.star.drawing.RectangleShape" );
 			xShapes.add( xRectangle );
-			xShapePropSet = (XPropertySet)
+			xShapePropSet =
 					UnoRuntime.queryInterface( XPropertySet.class, xRectangle );
 
 
@@ -117,7 +117,7 @@ public class TextDemo
 					new Size( 21000, 12500 ),
 						"com.sun.star.drawing.RectangleShape" );
 			xShapes.add( xRectangle );
-			xShapePropSet = (XPropertySet)
+			xShapePropSet =
 					UnoRuntime.queryInterface( XPropertySet.class, xRectangle );
 			xShapePropSet.setPropertyValue( "TextFitToSize",
                                             TextFitToSizeType.PROPORTIONAL );

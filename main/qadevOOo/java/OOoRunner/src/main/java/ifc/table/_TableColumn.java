@@ -48,7 +48,7 @@ public class _TableColumn extends MultiPropertyTest {
         boolean res = false;
         try {
             XInterface tObject = tEnv.getTestObject();
-            XCellRange aRange = (XCellRange)
+            XCellRange aRange =
                     UnoRuntime.queryInterface(XCellRange.class, tObject);
             aRange.getCellByPosition(0,0).setFormula("That's a pretty long text");
             Object width_before = oObj.getPropertyValue("Width");

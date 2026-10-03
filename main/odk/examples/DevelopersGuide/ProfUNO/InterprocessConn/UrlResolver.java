@@ -56,7 +56,7 @@ class UrlResolver
 
         // query for the XUnoUrlResolver interface
         XUnoUrlResolver xUrlResolver =
-            (XUnoUrlResolver) UnoRuntime.queryInterface( XUnoUrlResolver.class, urlResolver );
+            UnoRuntime.queryInterface( XUnoUrlResolver.class, urlResolver );
 
         try
         {

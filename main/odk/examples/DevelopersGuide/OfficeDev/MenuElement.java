@@ -29,7 +29,7 @@ public class MenuElement
 {
     static public boolean IsMenuEntry( com.sun.star.beans.XPropertySet xMenuElement ) {
         com.sun.star.lang.XServiceInfo xServiceInfo =
-            (com.sun.star.lang.XServiceInfo)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.lang.XServiceInfo.class, xMenuElement );
 
         return xServiceInfo.supportsService( "com.sun.star.ui.ActionTrigger" );
@@ -37,7 +37,7 @@ public class MenuElement
 
     static public boolean IsMenuSeparator( com.sun.star.beans.XPropertySet xMenuElement ) {
         com.sun.star.lang.XServiceInfo xServiceInfo =
-            (com.sun.star.lang.XServiceInfo)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.lang.XServiceInfo.class, xMenuElement );
 
         return xServiceInfo.supportsService( "com.sun.star.ui.ActionTriggerSeparator" );

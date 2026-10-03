@@ -73,7 +73,7 @@ public class ScRecentFunctionsObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -117,7 +117,7 @@ public class ScRecentFunctionsObj extends TestCase {
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
         // Other parameters required for interface tests
-        XNameAccess NA = (XNameAccess)
+        XNameAccess NA =
             UnoRuntime.queryInterface(XNameAccess.class, allFunctions);
         tEnv.addObjRelation("FUNCTIONLIST", NA);
 

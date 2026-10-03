@@ -71,7 +71,7 @@ public class _ChartTwoAxisXSupplier extends MultiPropertyTest {
 
         doc.setDiagram(bar);
         log.println("Set it to 3D");
-        oObj = (XPropertySet)
+        oObj =
             UnoRuntime.queryInterface( XPropertySet.class, doc.getDiagram() );
         try {
             oObj.setPropertyValue("Dim3D", new Boolean(true));

@@ -57,7 +57,7 @@ public class AccessibleControlShape extends TestCase {
         try {
             log.println( "creating a drawdoc" );
             xDrawDoc = SOF.createDrawDoc(null);
-            aModel = (XModel)
+            aModel =
                 UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         } catch ( com.sun.star.uno.Exception e ) {

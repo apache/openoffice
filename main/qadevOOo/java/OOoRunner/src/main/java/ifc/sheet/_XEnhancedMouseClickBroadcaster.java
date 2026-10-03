@@ -57,7 +57,7 @@ public class _XEnhancedMouseClickBroadcaster extends MultiMethodTest {
     private XModel docModel = null;
 
     public void before() {
-        docModel = (XModel) UnoRuntime.queryInterface(
+        docModel = UnoRuntime.queryInterface(
                 XModel.class,tEnv.getObjRelation("FirstModel"));
         DesktopTools.bringWindowToFront(docModel);
     }
@@ -95,7 +95,7 @@ public class _XEnhancedMouseClickBroadcaster extends MultiMethodTest {
 
         XInterface oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PANEL);
 
-        XAccessibleComponent window = (XAccessibleComponent) UnoRuntime.queryInterface(
+        XAccessibleComponent window = UnoRuntime.queryInterface(
                 XAccessibleComponent.class, oObj);
 
         Point point = window.getLocationOnScreen();

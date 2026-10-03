@@ -101,7 +101,7 @@ public class ObjectInputStream extends TestCase {
             try {
                 Object o = xMSF.createInstance(
                         "com.sun.star.registry.ImplementationRegistration");
-                xir = (XImplementationRegistration)
+                xir =
                                     UnoRuntime.queryInterface(
                                     XImplementationRegistration.class, o);
 
@@ -204,35 +204,35 @@ public class ObjectInputStream extends TestCase {
         // Creating construction :
         // ObjectOutputStream -> MarkableOutputStream -> Pipe ->
         // -> MarkableInputStream -> ObjectInputStream
-        XActiveDataSource xdSo = (XActiveDataSource)
+        XActiveDataSource xdSo =
             UnoRuntime.queryInterface(XActiveDataSource.class, ostream);
 
-        XActiveDataSource xdSmo = (XActiveDataSource)
+        XActiveDataSource xdSmo =
             UnoRuntime.queryInterface(XActiveDataSource.class, mostream);
 
-        XOutputStream moStream = (XOutputStream)
+        XOutputStream moStream =
             UnoRuntime.queryInterface(XOutputStream.class, mostream);
 
-        XOutputStream PipeOut = (XOutputStream)
+        XOutputStream PipeOut =
             UnoRuntime.queryInterface(XOutputStream.class, aPipe);
-        XInputStream PipeIn = (XInputStream)
+        XInputStream PipeIn =
             UnoRuntime.queryInterface(XInputStream.class, aPipe);
 
         xdSo.setOutputStream(moStream);
         xdSmo.setOutputStream(PipeOut);
 
-        XObjectInputStream iStream = (XObjectInputStream)
+        XObjectInputStream iStream =
             UnoRuntime.queryInterface(XObjectInputStream.class, istream);
         XObjectOutputStream oStream = null;
-        oStream = (XObjectOutputStream)
+        oStream =
             UnoRuntime.queryInterface(XObjectOutputStream.class, ostream);
 
-        XActiveDataSink xmSi = (XActiveDataSink)
+        XActiveDataSink xmSi =
             UnoRuntime.queryInterface(XActiveDataSink.class, mistream);
-        XInputStream xmIstream = (XInputStream)
+        XInputStream xmIstream =
             UnoRuntime.queryInterface(XInputStream.class, mistream);
 
-        XActiveDataSink xdSi = (XActiveDataSink) UnoRuntime.queryInterface
+        XActiveDataSink xdSi = UnoRuntime.queryInterface
             (XActiveDataSink.class, istream);
         xdSi.setInputStream(xmIstream);
         xmSi.setInputStream(PipeIn);
@@ -242,7 +242,7 @@ public class ObjectInputStream extends TestCase {
         try {
             Object oPersObj = xMSF.createInstance
                 ("com.sun.star.cmp.PersistObject");
-            xPersObj = (XPersistObject)
+            xPersObj =
                 UnoRuntime.queryInterface(XPersistObject.class, oPersObj);
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);

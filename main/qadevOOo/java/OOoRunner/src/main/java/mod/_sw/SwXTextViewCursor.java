@@ -99,7 +99,7 @@ public class SwXTextViewCursor extends TestCase {
         // create testobject here
         oObj = xTextDoc.getCurrentController();
 
-        XTextViewCursorSupplier oTVCSupp = (XTextViewCursorSupplier)
+        XTextViewCursorSupplier oTVCSupp =
             UnoRuntime.queryInterface(XTextViewCursorSupplier.class, oObj);
 
         oObj = oTVCSupp.getViewCursor();

@@ -66,21 +66,21 @@ public class ParagraphNumberingAndBullet_Graphic_WidthAndHeight {
 	@Test@Ignore("Bug #120833 - [testUNO patch]graphic bullet will change to character bullet when save to doc.")
 	public void testNumberingBullet_Graphic() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
 		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
-		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xTextProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		XMultiServiceFactory  xWriterFactory= UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		Size size=new Size();
 		size.Height=1000;
 		size.Width=1000;
-		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
+		XIndexAccess xNumRule = UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.BITMAP;
@@ -88,13 +88,13 @@ public class ParagraphNumberingAndBullet_Graphic_WidthAndHeight {
 		propsRule[1].Value = FileUtil.getUrl(Testspace.prepareData("uno/coffee_1.gif"));
 		propsRule[2].Name = "GraphicSize";
 		propsRule[2].Value = size;
-		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
+		XIndexReplace xReplaceRule = UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
 		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
 
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -104,7 +104,7 @@ public class ParagraphNumberingAndBullet_Graphic_WidthAndHeight {
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -116,11 +116,11 @@ public class ParagraphNumberingAndBullet_Graphic_WidthAndHeight {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
-		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
-		XIndexReplace xReplaceRule_assert_odt = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule_assert_odt);
-		PropertyValue[] propsRule_assert_odt=(PropertyValue[]) UnoRuntime.queryInterface(PropertyValue[].class,xReplaceRule_assert_odt.getByIndex(0));
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XIndexAccess xNumRule_assert_odt = UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
+		XIndexReplace xReplaceRule_assert_odt = UnoRuntime.queryInterface(XIndexReplace.class, xNumRule_assert_odt);
+		PropertyValue[] propsRule_assert_odt=UnoRuntime.queryInterface(PropertyValue[].class,xReplaceRule_assert_odt.getByIndex(0));
 		//verify paragraph numbering and bullet alignment
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.BITMAP,propsRule_assert_odt[11].Value);
@@ -132,10 +132,10 @@ public class ParagraphNumberingAndBullet_Graphic_WidthAndHeight {
 		assertEquals("assert numbering and bullet",1000,size_assert_odt.Width);
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
-		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
-		PropertyValue[] propsRule_assert_doc=(PropertyValue[]) UnoRuntime.queryInterface(PropertyValue[].class,xNumRule_assert_doc.getByIndex(0));
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XIndexAccess xNumRule_assert_doc = UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
+		PropertyValue[] propsRule_assert_doc=UnoRuntime.queryInterface(PropertyValue[].class,xNumRule_assert_doc.getByIndex(0));
 		//verify paragraph numbering and bullet alignment
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_doc[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.CHAR_SPECIAL,propsRule_assert_doc[11].Value);

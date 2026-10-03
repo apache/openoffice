@@ -59,7 +59,7 @@ public class _XColumnsSupplier extends MultiMethodTest {
 
         XServiceInfo info = null ;
         try {
-            info = (XServiceInfo) UnoRuntime.queryInterface
+            info = UnoRuntime.queryInterface
                 (XServiceInfo.class, cols.getByName("colNames[0]")) ;
         } catch (com.sun.star.uno.Exception e) {}
 

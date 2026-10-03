@@ -145,7 +145,7 @@ public class _XCommandProcessor {
 
             boolean found = false;
 
-            XCommandInfo xCmdInfo = (XCommandInfo)UnoRuntime.queryInterface(
+            XCommandInfo xCmdInfo = UnoRuntime.queryInterface(
                     XCommandInfo.class, result);
             if (xCmdInfo != null) {
                 CommandInfo[] cmdInfo = xCmdInfo.getCommands();
@@ -158,7 +158,7 @@ public class _XCommandProcessor {
     	        }
             }
 
-            XPropertySetInfo xPropInfo = (XPropertySetInfo)UnoRuntime.queryInterface(
+            XPropertySetInfo xPropInfo = UnoRuntime.queryInterface(
                     XPropertySetInfo.class, result);
             if (xPropInfo != null) {
                 Property[] props = xPropInfo.getProperties();

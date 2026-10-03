@@ -69,14 +69,14 @@ public class HsqlDatabase extends AbstractDatabase
             documentFile.delete();
         m_databaseDocumentFile = URLHelper.getFileURLFromSystemPath(documentFile);
 
-        m_databaseDocument = (XOfficeDatabaseDocument) UnoRuntime.queryInterface(
+        m_databaseDocument = UnoRuntime.queryInterface(
                 XOfficeDatabaseDocument.class, m_orb.createInstance("com.sun.star.sdb.OfficeDatabaseDocument"));
         m_dataSource = new DataSource(m_orb, m_databaseDocument.getDataSource());
 
-        final XPropertySet dsProperties = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, m_databaseDocument.getDataSource());
+        final XPropertySet dsProperties = UnoRuntime.queryInterface(XPropertySet.class, m_databaseDocument.getDataSource());
         dsProperties.setPropertyValue("URL", "sdbc:embedded:hsqldb");
 
-        final XStorable storable = (XStorable) UnoRuntime.queryInterface(XStorable.class, m_databaseDocument);
+        final XStorable storable = UnoRuntime.queryInterface(XStorable.class, m_databaseDocument);
         storable.storeAsURL( m_databaseDocumentFile, new PropertyValue[]
 			{	new PropertyValue( "PickListEntry", 0, false, PropertyState.DIRECT_VALUE )
 			} );

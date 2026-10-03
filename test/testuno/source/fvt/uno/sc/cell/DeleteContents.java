@@ -107,7 +107,7 @@ public class DeleteContents {
 
 		// Get cell range B5:C15 by position - (column, row, column, row)
         XCellRange xCellRange = xSheet.getCellRangeByPosition( 1, 4, 2, 14 );
-        XSheetOperation xSheetOp = (XSheetOperation) UnoRuntime.queryInterface(XSheetOperation.class, xCellRange);
+        XSheetOperation xSheetOp = UnoRuntime.queryInterface(XSheetOperation.class, xCellRange);
 
         //Get Cell B5
         XCell cellB5 = xSheet.getCellByPosition(1, 4);
@@ -141,7 +141,7 @@ public class DeleteContents {
         xSheetOp.clearContents(8);
 
         XSheetAnnotationsSupplier xAnnotationsSupp =
-		         (XSheetAnnotationsSupplier) UnoRuntime.queryInterface(
+		         UnoRuntime.queryInterface(
 		             XSheetAnnotationsSupplier.class, xSheet);
 		XSheetAnnotations xAnnotations = xAnnotationsSupp.getAnnotations();
 
@@ -163,10 +163,10 @@ public class DeleteContents {
 
         //Get Draw page
         XDrawPageSupplier xDrawPageSupplier =
-        		(XDrawPageSupplier)UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
+        		UnoRuntime.queryInterface(XDrawPageSupplier.class, xSheet);
         XDrawPage xDrawPage = xDrawPageSupplier.getDrawPage();
 
-        XShapes xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+        XShapes xShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 
         //Verify number of shape in sheet.
         assertEquals("Verify number of shape in sheet.",1, xShapes.getCount());
@@ -174,7 +174,7 @@ public class DeleteContents {
         //Delete drawing object from Cell Range B5:C15
         xSheetOp.clearContents(128);
 
-        xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+        xShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 
         //Verify results after execute delete 'Objects' contents in cell range.
         assertEquals("Verify shape is deleted in sheet after execute delete 'Objects' contents in cell range."

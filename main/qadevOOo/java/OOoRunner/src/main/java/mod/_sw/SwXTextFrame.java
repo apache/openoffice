@@ -99,7 +99,7 @@ public class SwXTextFrame extends TestCase {
         try {
             oFrame1 = SOF.createTextFrame(xTextDoc, 500, 500);
             oFrame2 = SOF.createTextFrame(xTextDoc, 1500, 1500);
-            oPropSet = (XPropertySet) UnoRuntime.queryInterface(
+            oPropSet = UnoRuntime.queryInterface(
                                XPropertySet.class, oFrame1);
 
 
@@ -112,12 +112,12 @@ public class SwXTextFrame extends TestCase {
 
             log.println("inserting Frame1");
 
-            XTextContent the_content = (XTextContent) UnoRuntime.queryInterface(
+            XTextContent the_content = UnoRuntime.queryInterface(
                                                XTextContent.class, oFrame1);
             oText.insertTextContent(oCursor, the_content, true);
 
             log.println("inserting Frame2");
-            the_content = (XTextContent) UnoRuntime.queryInterface(
+            the_content = UnoRuntime.queryInterface(
                                   XTextContent.class, oFrame2);
             oText.insertTextContent(oCursor, the_content, true);
 
@@ -139,7 +139,7 @@ public class SwXTextFrame extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         tEnv.addObjRelation("CONTENT",
-                            (XTextContent) UnoRuntime.queryInterface(
+                            UnoRuntime.queryInterface(
                                     XTextContent.class, instance));
         tEnv.addObjRelation("RANGE", xTextDoc.getText().createTextCursor());
 

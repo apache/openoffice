@@ -97,7 +97,7 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
         XCell xCell = null;
         try {
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = null;
             try {
@@ -133,16 +133,16 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
             e.printStackTrace(log);
         }
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XController xController = aModel.getCurrentController();
 
         // switching to 'Page Preview' mode
         try {
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             ((XMultiServiceFactory)Param.getMSF()).createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of URL objects.
@@ -176,7 +176,7 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        XDesktop desk = (XDesktop) UnoRuntime.queryInterface(
+        XDesktop desk = UnoRuntime.queryInterface(
                 XDesktop.class,util.DesktopTools.createDesktop((XMultiServiceFactory)Param.getMSF()));
         final XWindow win = desk.getCurrentFrame().getComponentWindow();
 
@@ -201,7 +201,7 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
     */
     protected void cleanup( TestParameters Param, PrintWriter log) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -224,7 +224,7 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
             log.println("creating a spreadsheetdocument");
             String url = utils.getFullTestURL("calcshapes.sxc");
             log.println("loading document "+url);
-            xSpreadsheetDoc = (XSpreadsheetDocument)UnoRuntime.queryInterface(
+            xSpreadsheetDoc = UnoRuntime.queryInterface(
                             XSpreadsheetDocument.class,SOF.loadDocument(url));
             try {
                 Thread.sleep(500);

@@ -104,10 +104,10 @@ public class SwXTextColumns extends TestCase {
 
         log.println( "creating a test environment" );
         log.println("getting PageStyle");
-        XStyleFamiliesSupplier oSFS = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier oSFS =
             UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, xTextDoc);
         XNameAccess oSF = oSFS.getStyleFamilies();
-        XIndexAccess oSFIA = (XIndexAccess)
+        XIndexAccess oSFIA =
             UnoRuntime.queryInterface(XIndexAccess.class, oSF);
 
         try {
@@ -132,7 +132,7 @@ public class SwXTextColumns extends TestCase {
         try {
             log.println("Getting property ('TextColumns') value of style "
                 + oStyle.getName());
-            XPropertySet xProps = (XPropertySet)
+            XPropertySet xProps =
                 UnoRuntime.queryInterface(XPropertySet.class,oStyle);
             oObj = (XTextColumns) AnyConverter.toObject(
                 new Type(XTextColumns.class),xProps.getPropertyValue("TextColumns"));

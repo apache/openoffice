@@ -99,7 +99,7 @@ public final class GlobalTransfer_Test {
         }
 
         XCommandProcessor xCmdProc
-            = (XCommandProcessor)UnoRuntime.queryInterface(
+            = UnoRuntime.queryInterface(
                                                XCommandProcessor.class, oObj );
         assertTrue( "UCB does not implement mandatory interface XCommandProcessor!",
                 xCmdProc != null);
@@ -176,7 +176,7 @@ public final class GlobalTransfer_Test {
                 for ( int i = 0; i < continuations.length; ++i ) {
 /*
                     XInteractionAbort xAbort
-                        = (XInteractionAbort)UnoRuntime.queryInterface(
+                        = UnoRuntime.queryInterface(
                             XInteractionAbort.class, continuations[ i ] );
                     if ( xAbort != null ) {
                         System.out.println( "Interaction Handler selects: ABORT" );
@@ -186,7 +186,7 @@ public final class GlobalTransfer_Test {
 */
 /*
                     XInteractionReplaceExistingData xReplace
-                        = (XInteractionReplaceExistingData)
+                        =
                             UnoRuntime.queryInterface(
                                 XInteractionReplaceExistingData.class,
                                 continuations[ i ] );
@@ -197,7 +197,7 @@ public final class GlobalTransfer_Test {
                     }
 */
                     XInteractionSupplyName xSupplyName
-                        = (XInteractionSupplyName)
+                        =
                             UnoRuntime.queryInterface(
                                 XInteractionSupplyName.class,
                                 continuations[ i ] );

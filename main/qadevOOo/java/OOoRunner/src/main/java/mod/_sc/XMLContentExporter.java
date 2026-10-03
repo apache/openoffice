@@ -129,15 +129,15 @@ public class XMLContentExporter extends TestCase {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Calc.XMLContentExporter",
                 new Object[] {arg} );
-            XExporter xEx = (XExporter) UnoRuntime.queryInterface
+            XExporter xEx = UnoRuntime.queryInterface
                 (XExporter.class,oObj);
             xEx.setSourceDocument(xSheetDoc);
 
             // Setting some string to a cell
-            XSpreadsheetDocument xSpreadsheetDoc = (XSpreadsheetDocument)
+            XSpreadsheetDocument xSpreadsheetDoc =
                 UnoRuntime.queryInterface(XSpreadsheetDocument.class, xSheetDoc);
             XSpreadsheets xSpreadsheets = xSpreadsheetDoc.getSheets();
-            XIndexAccess xSheetsIndexArray = (XIndexAccess)
+            XIndexAccess xSheetsIndexArray =
                 UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
             XSpreadsheet xSheet = (XSpreadsheet) AnyConverter.toObject(
                 new Type(XSpreadsheet.class),xSheetsIndexArray.getByIndex(0));

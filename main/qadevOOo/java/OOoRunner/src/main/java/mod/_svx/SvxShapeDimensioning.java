@@ -137,7 +137,7 @@ public class SvxShapeDimensioning extends TestCase {
          TestEnvironment tEnv = new TestEnvironment(oObj);
 
         log.println( "adding two styles as ObjRelation for ShapeDescriptor" );
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
@@ -145,7 +145,7 @@ public class SvxShapeDimensioning extends TestCase {
                 new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
         tEnv.addObjRelation("Style1",aStyle);
-        oShapeProps = (XPropertySet)
+        oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
             aStyle = (XStyle) AnyConverter.toObject(

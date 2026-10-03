@@ -88,7 +88,7 @@ public class UnoDialog implements EventNames
             xPSetDlg = UnoRuntime.queryInterface(XPropertySet.class, xDialogModel);
             xDlgContainer = UnoRuntime.queryInterface(XControlContainer.class, xUnoDialog);
             xDlgNames = UnoRuntime.queryInterface(XNameContainer.class, xDialogModel);
-            // xDlgNameAccess = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xDialogModel);
+            // xDlgNameAccess = UnoRuntime.queryInterface(XNameAccess.class, xDialogModel);
             xComponent = UnoRuntime.queryInterface(XComponent.class, xUnoDialog);
             xWindow = UnoRuntime.queryInterface(XWindow.class, xUnoDialog);
 
@@ -312,10 +312,10 @@ public class UnoDialog implements EventNames
 
     /*    public XButton insertButton(String sName, int iControlKey, XActionListener xActionListener, String[] sProperties, Object[] sValues) throws com.sun.star.uno.Exception{
     Object oButtonModel = insertControlModel("com.sun.star.awt.UnoControlButtonModel", sName, sProperties, sValues);
-    XPropertySet xPSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, oButtonModel);
+    XPropertySet xPSet = UnoRuntime.queryInterface(XPropertySet.class, oButtonModel);
     xPSet.setPropertyValue(PropertyNames.PROPERTY_NAME, sName);
     Object objectButton = xDlgContainer.getControl( new String(sName));
-    XButton xButton = ( XButton ) UnoRuntime.queryInterface( XButton.class, objectButton );
+    XButton xButton = UnoRuntime.queryInterface( XButton.class, objectButton );
     xButton.addActionListener(xActionListener);
     Integer ControlKey = new Integer(iControlKey);
     if (ControlList != null)

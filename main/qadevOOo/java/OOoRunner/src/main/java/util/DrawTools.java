@@ -73,7 +73,7 @@ public class DrawTools {
     public static XDrawPages getDrawPages ( XComponent aDoc ) {
         XDrawPages oDPn = null;
         try {
-            XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+            XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class,aDoc);
 
             oDPn = oDPS.getDrawPages();
@@ -110,7 +110,7 @@ public class DrawTools {
     */
 
     public static XShapes getShapes ( XDrawPage oDP ) {
-        return (XShapes) UnoRuntime.queryInterface(XShapes.class,oDP);
+        return UnoRuntime.queryInterface(XShapes.class,oDP);
     }
 
     /**

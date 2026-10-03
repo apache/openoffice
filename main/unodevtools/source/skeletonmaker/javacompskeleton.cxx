@@ -437,7 +437,7 @@ void generateXInitializationBodies(std::ostream& o)
         "    public void initialize( Object[] object )\n"
         "        throws com.sun.star.uno.Exception\n    {\n"
         "        if ( object.length > 0 )\n        {\n"
-        "            m_xFrame = (com.sun.star.frame.XFrame)UnoRuntime.queryInterface(\n"
+        "            m_xFrame = UnoRuntime.queryInterface(\n"
         "                com.sun.star.frame.XFrame.class, object[0]);\n        }\n    }\n\n";
 }
 

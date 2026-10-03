@@ -145,7 +145,7 @@ class TextualDisplay
         // Try to cast the given accessible context to the
         // XAccessibleComponent interface.
         XAccessibleComponent xComponent =
-            (XAccessibleComponent)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XAccessibleComponent.class, xContext);
         if (xComponent != null)
         {

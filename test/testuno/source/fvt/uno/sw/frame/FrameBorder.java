@@ -58,15 +58,15 @@ public class FrameBorder {
 
 	@Test
 	public void testInsertFrame() throws Exception {
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextFrame xTextFrame = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
+		XTextFrame xTextFrame = UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
 		xText.insertTextContent(xTextCursor,xTextFrame,false);
-		XPropertySet xTextFramerops = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
+		XPropertySet xTextFramerops = UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
 		//set frame border
 		BorderLine[]borderLine=new BorderLine[] {new BorderLine(),new BorderLine(),new BorderLine(),new BorderLine()};
 		borderLine[0].Color=0x00FF0000;
@@ -90,26 +90,26 @@ public class FrameBorder {
 		xTextFramerops.setPropertyValue("TopBorder", borderLine[2]);
 		xTextFramerops.setPropertyValue("BottomBorder", borderLine[3]);
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, SWUtil.saveTo_Override_reload(xTextDocument,"writer8", Testspace.getPath("output/test.odt"),app));
-		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, SWUtil.saveTo_Override_reload(xTextDocument,"writer8", Testspace.getPath("output/test.odt"),app));
+		XTextFramesSupplier xTFS_odt = UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
-		XPropertySet xFrameProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrames_odt.getByName("Frame1"));
-		BorderLine LeftBorder_Assert_odt=(BorderLine) UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("LeftBorder"));
+		XPropertySet xFrameProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, xTextFrames_odt.getByName("Frame1"));
+		BorderLine LeftBorder_Assert_odt=UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("LeftBorder"));
 		assertEquals("assert topline color as setting",0x00FF0000,LeftBorder_Assert_odt.Color);
 		assertEquals("assert topline innerline width as setting",101,LeftBorder_Assert_odt.InnerLineWidth);
 		assertEquals("assert topline outerlinewidth as setting",19,LeftBorder_Assert_odt.OuterLineWidth);
 		assertEquals("assert topline linedistance as setting",101,LeftBorder_Assert_odt.LineDistance);
-		BorderLine RightBorder_Assert_odt=(BorderLine) UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("RightBorder"));
+		BorderLine RightBorder_Assert_odt=UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("RightBorder"));
 		assertEquals("assert bottomline color as setting",0x00FFFF00,RightBorder_Assert_odt.Color);
 		assertEquals("assert bottomline innerline width as setting",101,RightBorder_Assert_odt.InnerLineWidth);
 		assertEquals("assert bottomline outerlinewidth as setting",19,RightBorder_Assert_odt.OuterLineWidth);
 		assertEquals("assert bottomline linedistance as setting",101,RightBorder_Assert_odt.LineDistance);
-		BorderLine TopBorder_Assert_odt=(BorderLine) UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("TopBorder"));
+		BorderLine TopBorder_Assert_odt=UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("TopBorder"));
 		assertEquals("assert leftline color as setting",0x0000FF00,TopBorder_Assert_odt.Color);
 		assertEquals("assert leftline innerline width as setting",150,TopBorder_Assert_odt.InnerLineWidth);
 		assertEquals("assert leftline outerlinewidth as setting",19,TopBorder_Assert_odt.OuterLineWidth);
 		assertEquals("assert leftline linedistance as setting",101,TopBorder_Assert_odt.LineDistance);
-		BorderLine BottomBorder_Assert_odt=(BorderLine) UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("BottomBorder"));
+		BorderLine BottomBorder_Assert_odt=UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("BottomBorder"));
 		assertEquals("assert rightline color as setting",0x0000FF00,BottomBorder_Assert_odt.Color);
 		assertEquals("assert rightline linedistance as setting",101,BottomBorder_Assert_odt.LineDistance);
 		assertEquals("assert rightline innerline width as setting",150,BottomBorder_Assert_odt.InnerLineWidth);

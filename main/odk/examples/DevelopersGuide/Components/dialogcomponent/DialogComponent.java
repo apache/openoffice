@@ -75,7 +75,7 @@ public class DialogComponent {
 
 			try {
 				// Create the toolkit to have access to it later
-				m_xToolkit = (XToolkit) UnoRuntime.queryInterface(
+				m_xToolkit = UnoRuntime.queryInterface(
 					XToolkit.class,
 					m_xCmpCtx.getServiceManager().createInstanceWithContext("com.sun.star.awt.Toolkit",
 																			m_xCmpCtx));
@@ -106,7 +106,7 @@ public class DialogComponent {
 						"com.sun.star.awt.DialogProvider2", m_xCmpCtx );
 				}
 
-				XDialogProvider2 xDialogProvider = (XDialogProvider2)
+				XDialogProvider2 xDialogProvider =
 					UnoRuntime.queryInterface( XDialogProvider2.class, obj );
 
 				XDialog xDialog = xDialogProvider.createDialogWithHandler( DialogURL, this );
@@ -120,13 +120,13 @@ public class DialogComponent {
 		}
 
 		public void copyText( XDialog xDialog, Object aEventObject ) {
-			XControlContainer xControlContainer = (XControlContainer)UnoRuntime.queryInterface(
+			XControlContainer xControlContainer = UnoRuntime.queryInterface(
 				XControlContainer.class, xDialog );
 			String aTextPropertyStr = "Text";
 			String aText = "";
 			XControl xTextField1Control = xControlContainer.getControl( "TextField1" );
 			XControlModel xControlModel1 = xTextField1Control.getModel();
-			XPropertySet xPropertySet1 = (XPropertySet)UnoRuntime.queryInterface(
+			XPropertySet xPropertySet1 = UnoRuntime.queryInterface(
 				XPropertySet.class, xControlModel1 );
 			try
 			{
@@ -138,7 +138,7 @@ public class DialogComponent {
 
 			XControl xTextField2Control = xControlContainer.getControl( "TextField2" );
 			XControlModel xControlModel2 = xTextField2Control.getModel();
-			XPropertySet xPropertySet2 = (XPropertySet)UnoRuntime.queryInterface(
+			XPropertySet xPropertySet2 = UnoRuntime.queryInterface(
 				XPropertySet.class, xControlModel2 );
 			try
 			{
@@ -251,7 +251,7 @@ public class DialogComponent {
 					aDescriptor.Type              = WindowClass.MODALTOP;
 					aDescriptor.WindowServiceName = new String( "infobox" );
 					aDescriptor.ParentIndex       = -1;
-					aDescriptor.Parent            = (XWindowPeer)UnoRuntime.queryInterface(
+					aDescriptor.Parent            = UnoRuntime.queryInterface(
 						XWindowPeer.class, m_xFrame.getContainerWindow());
 					aDescriptor.Bounds            = new Rectangle(0,0,300,200);
 					aDescriptor.WindowAttributes  = WindowAttribute.BORDER |
@@ -260,7 +260,7 @@ public class DialogComponent {
 
 					XWindowPeer xPeer = m_xToolkit.createWindow( aDescriptor );
 					if ( null != xPeer ) {
-						XMessageBox xMsgBox = (XMessageBox)UnoRuntime.queryInterface(
+						XMessageBox xMsgBox = UnoRuntime.queryInterface(
 							XMessageBox.class, xPeer);
 						if ( null != xMsgBox )
 						{

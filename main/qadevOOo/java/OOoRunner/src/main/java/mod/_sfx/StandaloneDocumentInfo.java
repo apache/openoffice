@@ -111,7 +111,7 @@ public class StandaloneDocumentInfo extends TestCase {
         String Iname = util.utils.getImplName(oObj);
         log.println("Implementation Name: "+Iname);
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        XStandaloneDocumentInfo the_info = (XStandaloneDocumentInfo)
+        XStandaloneDocumentInfo the_info =
                 UnoRuntime.queryInterface(XStandaloneDocumentInfo.class, oObj);
         try {
             the_info.loadFromURL(destUrl);

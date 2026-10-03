@@ -129,9 +129,9 @@ public class SdXImpressDocument extends TestCase {
             throw new StatusException("Couldn't create documents", e);
         }
 
-        XModel xModel1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xModel1 = UnoRuntime.queryInterface(XModel.class,
             xImpressDoc);
-        XModel xModel2 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xModel2 = UnoRuntime.queryInterface(XModel.class,
             xImpressDoc2);
 
         XController cont1 = xModel1.getCurrentController();
@@ -140,14 +140,14 @@ public class SdXImpressDocument extends TestCase {
         cont1.getFrame().setName("cont1");
         cont2.getFrame().setName("cont2");
 
-        XSelectionSupplier sel = (XSelectionSupplier) UnoRuntime.queryInterface(
+        XSelectionSupplier sel = UnoRuntime.queryInterface(
             XSelectionSupplier.class, cont1);
 
         XShape aShape = SOF.createShape(xImpressDoc, 5000, 3500, 7500, 5000,
             "Rectangle");
 
 
-        XPropertySet xShapeProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aShape);
+        XPropertySet xShapeProps = UnoRuntime.queryInterface(XPropertySet.class, aShape);
 
         try {
             xShapeProps.setPropertyValue("FillStyle", com.sun.star.drawing.FillStyle.SOLID);

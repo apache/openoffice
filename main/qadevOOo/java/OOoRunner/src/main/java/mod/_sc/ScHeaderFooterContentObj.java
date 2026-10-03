@@ -81,7 +81,7 @@ public class ScHeaderFooterContentObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -107,7 +107,7 @@ public class ScHeaderFooterContentObj extends TestCase {
         XNameAccess PageStyles = null;
         XStyle StdStyle = null;
 
-        XStyleFamiliesSupplier StyleFam = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class,
                 xSpreadsheetDoc );
@@ -129,7 +129,7 @@ public class ScHeaderFooterContentObj extends TestCase {
         }
 
         //get the property-set
-        PropSet = (XPropertySet)
+        PropSet =
             UnoRuntime.queryInterface(XPropertySet.class, StdStyle);
 
         XHeaderFooterContent RPHC = null;

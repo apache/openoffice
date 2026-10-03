@@ -85,14 +85,14 @@ public class DialogFactory
         }
 
         // add an action listener to the button controls
-        XControlContainer controls = (XControlContainer)
+        XControlContainer controls =
             UnoRuntime.queryInterface(XControlContainer.class, xDialog);
 
-        XButton okButton = (XButton) UnoRuntime.queryInterface(
+        XButton okButton = UnoRuntime.queryInterface(
             XButton.class, controls.getControl("Ok"));
         okButton.setActionCommand("Ok");
 
-        XButton cancelButton = (XButton) UnoRuntime.queryInterface(
+        XButton cancelButton = UnoRuntime.queryInterface(
             XButton.class, controls.getControl("Cancel"));
         cancelButton.setActionCommand("Cancel");
 
@@ -142,18 +142,18 @@ public class DialogFactory
         }
 
         // add an action listener to the button controls
-        XControlContainer controls = (XControlContainer)
+        XControlContainer controls =
             UnoRuntime.queryInterface(XControlContainer.class, xDialog);
 
-        XButton okButton = (XButton) UnoRuntime.queryInterface(
+        XButton okButton = UnoRuntime.queryInterface(
             XButton.class, controls.getControl("Ok"));
         okButton.setActionCommand("Ok");
 
-        XButton cancelButton = (XButton) UnoRuntime.queryInterface(
+        XButton cancelButton = UnoRuntime.queryInterface(
             XButton.class, controls.getControl("Cancel"));
         cancelButton.setActionCommand("Cancel");
 
-        final XTextComponent textField = (XTextComponent)
+        final XTextComponent textField =
             UnoRuntime.queryInterface(
                 XTextComponent.class, controls.getControl("NameField"));
 
@@ -209,7 +209,7 @@ public class DialogFactory
         Object dialogModel = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.UnoControlDialogModel", xComponentContext);
 
-        XPropertySet props = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet props = UnoRuntime.queryInterface(
             XPropertySet.class, dialogModel);
 
         props.setPropertyValue("Title", title);
@@ -217,7 +217,7 @@ public class DialogFactory
 
         // get the service manager from the dialog model
         XMultiServiceFactory xMultiServiceFactory =
-            (XMultiServiceFactory) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XMultiServiceFactory.class, dialogModel);
 
         // create the label model and set the properties
@@ -226,7 +226,7 @@ public class DialogFactory
 
         setDimensions(label, 15, 5, 134, 12);
 
-        XPropertySet labelProps = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet labelProps = UnoRuntime.queryInterface(
             XPropertySet.class, label);
         labelProps.setPropertyValue("Name", "PromptLabel");
         labelProps.setPropertyValue("Label", prompt);
@@ -237,7 +237,7 @@ public class DialogFactory
 
         setDimensions(okButtonModel, 40, 18, 38, 15);
 
-        XPropertySet buttonProps = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet buttonProps = UnoRuntime.queryInterface(
             XPropertySet.class, okButtonModel);
         buttonProps.setPropertyValue("Name", "Ok");
         buttonProps.setPropertyValue("Label", "Ok");
@@ -248,13 +248,13 @@ public class DialogFactory
 
         setDimensions(cancelButtonModel, 83, 18, 38, 15);
 
-        buttonProps = (XPropertySet) UnoRuntime.queryInterface(
+        buttonProps = UnoRuntime.queryInterface(
             XPropertySet.class, cancelButtonModel);
         buttonProps.setPropertyValue("Name", "Cancel");
         buttonProps.setPropertyValue("Label", "Cancel");
 
         // insert the control models into the dialog model
-        XNameContainer xNameCont = (XNameContainer) UnoRuntime.queryInterface(
+        XNameContainer xNameCont = UnoRuntime.queryInterface(
             XNameContainer.class, dialogModel);
 
         xNameCont.insertByName("PromptLabel", label);
@@ -264,30 +264,30 @@ public class DialogFactory
         // create the dialog control and set the model
         Object dialog = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.UnoControlDialog", xComponentContext);
-        XControl xControl = (XControl) UnoRuntime.queryInterface(
+        XControl xControl = UnoRuntime.queryInterface(
             XControl.class, dialog);
 
-        XControlModel xControlModel = (XControlModel)
+        XControlModel xControlModel =
             UnoRuntime.queryInterface(XControlModel.class, dialogModel);
         xControl.setModel(xControlModel);
 
         // create a peer
         Object toolkit = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.ExtToolkit", xComponentContext);
-        XToolkit xToolkit = (XToolkit) UnoRuntime.queryInterface(
+        XToolkit xToolkit = UnoRuntime.queryInterface(
             XToolkit.class, toolkit);
-        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(
+        XWindow xWindow = UnoRuntime.queryInterface(
             XWindow.class, xControl);
         xWindow.setVisible(false);
         xControl.createPeer(xToolkit, null);
 
-        return (XDialog) UnoRuntime.queryInterface(XDialog.class, dialog);
+        return UnoRuntime.queryInterface(XDialog.class, dialog);
     }
 
     private void setDimensions(Object o, int x, int y, int width, int height)
         throws com.sun.star.uno.Exception
     {
-        XPropertySet props = (XPropertySet)
+        XPropertySet props =
             UnoRuntime.queryInterface(XPropertySet.class, o);
 
         props.setPropertyValue("PositionX", new Integer(x));
@@ -319,13 +319,13 @@ public class DialogFactory
 
         setDimensions(dialogModel, 100, 100, 157, 58);
 
-        XPropertySet props = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet props = UnoRuntime.queryInterface(
             XPropertySet.class, dialogModel);
         props.setPropertyValue("Title", title);
 
         // get the service manager from the dialog model
         XMultiServiceFactory xMultiServiceFactory =
-            (XMultiServiceFactory) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XMultiServiceFactory.class, dialogModel);
 
         // create the label model and set the properties
@@ -334,7 +334,7 @@ public class DialogFactory
 
         setDimensions(label, 15, 5, 134, 12);
 
-        XPropertySet labelProps = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet labelProps = UnoRuntime.queryInterface(
             XPropertySet.class, label);
         labelProps.setPropertyValue("Name", "PromptLabel");
         labelProps.setPropertyValue("Label", prompt);
@@ -345,7 +345,7 @@ public class DialogFactory
 
         setDimensions(edit, 15, 18, 134, 12);
 
-        XPropertySet editProps = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet editProps = UnoRuntime.queryInterface(
             XPropertySet.class, edit);
         editProps.setPropertyValue("Name", "NameField");
 
@@ -355,7 +355,7 @@ public class DialogFactory
 
         setDimensions(okButtonModel, 40, 39, 38, 15);
 
-        XPropertySet buttonProps = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet buttonProps = UnoRuntime.queryInterface(
             XPropertySet.class, okButtonModel);
         buttonProps.setPropertyValue("Name", "Ok");
         buttonProps.setPropertyValue("Label", "Ok");
@@ -366,13 +366,13 @@ public class DialogFactory
 
         setDimensions(cancelButtonModel, 83, 39, 38, 15);
 
-        buttonProps = (XPropertySet) UnoRuntime.queryInterface(
+        buttonProps = UnoRuntime.queryInterface(
             XPropertySet.class, cancelButtonModel);
         buttonProps.setPropertyValue("Name", "Cancel");
         buttonProps.setPropertyValue("Label", "Cancel");
 
         // insert the control models into the dialog model
-        XNameContainer xNameCont = (XNameContainer)
+        XNameContainer xNameCont =
             UnoRuntime.queryInterface(XNameContainer.class, dialogModel);
 
         xNameCont.insertByName("PromptLabel", label);
@@ -383,24 +383,24 @@ public class DialogFactory
         // create the dialog control and set the model
         Object dialog = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.UnoControlDialog", xComponentContext);
-        XControl xControl = (XControl) UnoRuntime.queryInterface(
+        XControl xControl = UnoRuntime.queryInterface(
             XControl.class, dialog);
 
-        XControlModel xControlModel = (XControlModel)
+        XControlModel xControlModel =
             UnoRuntime.queryInterface(XControlModel.class, dialogModel);
         xControl.setModel(xControlModel);
 
         // create a peer
         Object toolkit = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.ExtToolkit", xComponentContext);
-        XToolkit xToolkit = (XToolkit) UnoRuntime.queryInterface(
+        XToolkit xToolkit = UnoRuntime.queryInterface(
             XToolkit.class, toolkit);
-        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(
+        XWindow xWindow = UnoRuntime.queryInterface(
             XWindow.class, xControl);
         xWindow.setVisible(false);
         xControl.createPeer(xToolkit, null);
 
-        return (XDialog) UnoRuntime.queryInterface(XDialog.class, dialog);
+        return UnoRuntime.queryInterface(XDialog.class, dialog);
     }
 
     private static class ResultHolder {

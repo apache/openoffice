@@ -90,7 +90,7 @@ class AccTreeNode
     public XAccessibleComponent getComponent ()
     {
         if (mxComponent == null && mxContext != null)
-            mxComponent = (XAccessibleComponent)UnoRuntime.queryInterface(
+            mxComponent = UnoRuntime.queryInterface(
                 XAccessibleComponent.class, mxContext);
         return mxComponent;
     }
@@ -100,7 +100,7 @@ class AccTreeNode
         if (mxComponent == null)
             getComponent();
         if (mxComponent != null)
-            return (XAccessibleExtendedComponent)UnoRuntime.queryInterface(
+            return UnoRuntime.queryInterface(
                 XAccessibleExtendedComponent.class, mxComponent);
         else
             return null;
@@ -109,21 +109,21 @@ class AccTreeNode
     public XAccessibleText getText ()
     {
         if (mxText == null && mxContext != null)
-            mxText = (XAccessibleText)UnoRuntime.queryInterface(
+            mxText = UnoRuntime.queryInterface(
                 XAccessibleText.class, mxContext);
         return mxText;
     }
 
     public XAccessibleEditableText getEditText ()
     {
-        return (XAccessibleEditableText)UnoRuntime.queryInterface(
+        return UnoRuntime.queryInterface(
                 XAccessibleEditableText.class, mxContext);
     }
 
     public XAccessibleTable getTable ()
     {
         if (mxTable == null && mxContext != null)
-            mxTable = (XAccessibleTable)UnoRuntime.queryInterface(
+            mxTable = UnoRuntime.queryInterface(
                 XAccessibleTable.class, mxContext);
         return mxTable;
     }
@@ -132,14 +132,14 @@ class AccTreeNode
     public XAccessible getAccessible()
     {
         if ((mxAccessible == null) && (mxContext != null))
-            mxAccessible = (XAccessible)UnoRuntime.queryInterface(
+            mxAccessible = UnoRuntime.queryInterface(
                 XAccessible.class, mxContext);
         return mxAccessible;
     }
 
     public XAccessibleSelection getSelection ()
     {
-        return (XAccessibleSelection)UnoRuntime.queryInterface(
+        return UnoRuntime.queryInterface(
                 XAccessibleSelection.class, mxContext);
     }
 

@@ -97,24 +97,24 @@ public class CheckCharacterStyle {
 		filePath = Testspace.getPath("temp/CheckCharacterStyle.odp");
 		if(FileUtil.fileExists(filePath))
 		{	//load
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+			m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 						app.loadDocument(filePath));
 			xShapeText = getFirstTextbox();
 		}
 		else{
 			//create a sd
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));
+			m_xSDComponent = UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));
 			xShapeText = getFirstTextbox();
 			xShapeText.setString("test");
 		}
-		xtextProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
+		xtextProps = UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
 	}
 
 	private XText getFirstTextbox() throws Exception
 	{
 		Object firstPage = SDUtil.getPageByIndex(m_xSDComponent, 0);
 		Object firstTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 0);
-		return (XText)UnoRuntime.queryInterface(XText.class, firstTextBox);
+		return UnoRuntime.queryInterface(XText.class, firstTextBox);
 	}
 
 	/**
@@ -137,10 +137,10 @@ public class CheckCharacterStyle {
 		app.saveDocument(m_xSDComponent, filePath);
 		m_xSDComponent.dispose();
 		//reopen
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 					app.loadDocument(filePath));
 		xShapeText = getFirstTextbox();
-		xtextProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
+		xtextProps = UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
 		//check character styles
 		assertEquals("character color should be red", 0xFF0000,xtextProps.getPropertyValue("CharColor"));
 
@@ -152,10 +152,10 @@ public class CheckCharacterStyle {
 		app.saveDocument(m_xSDComponent, filePath);
 		m_xSDComponent.dispose();
 		//reopen
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 					app.loadDocument(filePath));
 		xShapeText = getFirstTextbox();
-		xtextProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
+		xtextProps = UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
 		//check character styles
 		assertEquals("character should be underlined", com.sun.star.awt.FontUnderline.SINGLE, xtextProps.getPropertyValue("CharUnderline"));
 	}
@@ -167,10 +167,10 @@ public class CheckCharacterStyle {
 		app.saveDocument(m_xSDComponent, filePath);
 		m_xSDComponent.dispose();
 		//reopen
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 					app.loadDocument(filePath));
 		xShapeText = getFirstTextbox();
-		xtextProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
+		xtextProps = UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
 		//check character styles
 		assertEquals("font size should be 12.0", "12.0", xtextProps.getPropertyValue("CharHeight").toString());
 	}
@@ -181,10 +181,10 @@ public class CheckCharacterStyle {
 		app.saveDocument(m_xSDComponent, filePath);
 		m_xSDComponent.dispose();
 		//reopen
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 					app.loadDocument(filePath));
 		xShapeText = getFirstTextbox();
-		xtextProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
+		xtextProps = UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
 		assertEquals("font style should be bold", com.sun.star.awt.FontWeight.BOLD, xtextProps.getPropertyValue("CharWeight"));
 	}
 
@@ -195,10 +195,10 @@ public class CheckCharacterStyle {
 		app.saveDocument(m_xSDComponent, filePath);
 		m_xSDComponent.dispose();
 		//reopen
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 					app.loadDocument(filePath));
 		xShapeText = getFirstTextbox();
-		xtextProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
+		xtextProps = UnoRuntime.queryInterface(XPropertySet.class, xShapeText);
 		assertEquals("font style should be bold", com.sun.star.awt.FontSlant.ITALIC, xtextProps.getPropertyValue("CharPosture"));
 	}
 }

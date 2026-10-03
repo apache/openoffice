@@ -121,10 +121,10 @@ public class StardarFilterTest {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Get cell range
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 
 		// Set filter property and filter the cell range
-		XSheetFilterable xFilter = (XSheetFilterable) UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
+		XSheetFilterable xFilter = UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
 		XSheetFilterDescriptor xFilterDesc = xFilter.createFilterDescriptor(true);
 		TableFilterField[] aFilterFields = new TableFilterField[1];
 		aFilterFields[0] = new TableFilterField();
@@ -133,16 +133,16 @@ public class StardarFilterTest {
 		aFilterFields[0].Operator = (FilterOperator) operator;
 		aFilterFields[0].NumericValue = value;
 		xFilterDesc.setFilterFields(aFilterFields);
-		XPropertySet xFilterProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
+		XPropertySet xFilterProp = UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
 		xFilterProp.setPropertyValue("ContainsHeader", new Boolean(true));
 		xFilter.filter(xFilterDesc);
 
 		// Verify filter result
-		XColumnRowRange ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		XColumnRowRange ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		XTableRows Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			assertEquals(rowshow[i], (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 
@@ -152,12 +152,12 @@ public class StardarFilterTest {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Verify the result agains
-		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			assertEquals(rowshow[i], (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 		SCUtil.save(scDocument);

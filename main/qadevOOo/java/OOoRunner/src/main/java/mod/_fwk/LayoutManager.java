@@ -54,7 +54,7 @@ public class LayoutManager extends TestCase {
         log.println("    disposing xTextDoc ");
 
         try {
-            XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable closer = UnoRuntime.queryInterface(
             XCloseable.class, xTextDoc);
             closer.close(true);
         } catch (com.sun.star.util.CloseVetoException e) {
@@ -91,10 +91,10 @@ public class LayoutManager extends TestCase {
         }
 
         XFrame xFrame = xTextDoc.getCurrentController().getFrame();
-        XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xFrame);
+        XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class, xFrame);
         try {
             Object any = xProp.getPropertyValue("LayoutManager");
-            xManager = (XInterface)UnoRuntime.queryInterface(XInterface.class, any);
+            xManager = UnoRuntime.queryInterface(XInterface.class, any);
         }
         catch(com.sun.star.beans.UnknownPropertyException e) {
             e.printStackTrace(log);

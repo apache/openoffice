@@ -105,7 +105,7 @@ public class GraphicalDisplay
             // When the context supports the XAccessibleComponent interface
             // then draw its outline.
             XAccessibleComponent xComponent =
-                (XAccessibleComponent)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XAccessibleComponent.class, xContext);
             if (xComponent != null)
             {

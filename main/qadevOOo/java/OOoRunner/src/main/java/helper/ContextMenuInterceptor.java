@@ -42,20 +42,20 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
             // create sub menus, menu entries and separators
             XIndexContainer xContextMenu = aEvent.ActionTriggerContainer;
             XMultiServiceFactory xMenuElementFactory =
-                    (XMultiServiceFactory)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                     XMultiServiceFactory.class, xContextMenu );
 
             if ( xMenuElementFactory != null ) {
 
                 // create root menu entry for sub menu and sub menu
                 XPropertySet xRootMenuEntry =
-                        (XPropertySet)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                         XPropertySet.class,
                         xMenuElementFactory.createInstance("com.sun.star.ui.ActionTrigger" ));
 
                 // create a line separator for our new help sub menu
                 XPropertySet xSeparator =
-                        (XPropertySet)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                         XPropertySet.class,
                         xMenuElementFactory.createInstance("com.sun.star.ui.ActionTriggerSeparator" ) );
                 Short aSeparatorType = new Short( ActionTriggerSeparatorType.LINE );
@@ -63,7 +63,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
 
                 // query sub menu for index container to get access
                 XIndexContainer xSubMenuContainer =
-                        (XIndexContainer)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                         XIndexContainer.class,
                         xMenuElementFactory.createInstance("com.sun.star.ui.ActionTriggerContainer" ));
 
@@ -76,7 +76,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
                 // create menu entries for the new sub menu
                 // initialize help/content menu entry
                 // entry "Content"
-                XPropertySet xMenuEntry = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet xMenuEntry = UnoRuntime.queryInterface(
                         XPropertySet.class, xMenuElementFactory.createInstance(
                         "com.sun.star.ui.ActionTrigger" ));
                 xMenuEntry.setPropertyValue( "Text", new String( "Content" ));
@@ -88,7 +88,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
 
                 // initialize help/help agent
                 // entry "Help Agent"
-                xMenuEntry = (XPropertySet)UnoRuntime.queryInterface(
+                xMenuEntry = UnoRuntime.queryInterface(
                         XPropertySet.class,
                         xMenuElementFactory.createInstance("com.sun.star.ui.ActionTrigger" ));
                 xMenuEntry.setPropertyValue( "Text", new String( "Help Agent" ));
@@ -99,7 +99,7 @@ public class ContextMenuInterceptor implements XContextMenuInterceptor {
                 xSubMenuContainer.insertByIndex( 1, (Object)xMenuEntry );
                 // initialize help/tips
                 // entry "Tips"
-                xMenuEntry = (XPropertySet)UnoRuntime.queryInterface(
+                xMenuEntry = UnoRuntime.queryInterface(
                         XPropertySet.class,
                         xMenuElementFactory.createInstance("com.sun.star.ui.ActionTrigger" ));
                 xMenuEntry.setPropertyValue( "Text", new String( "Tips" ));

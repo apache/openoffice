@@ -139,7 +139,7 @@ public class ScDDELinksObj extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
@@ -174,7 +174,7 @@ public class ScDDELinksObj extends TestCase {
             log.println("Getting test object ") ;
 
             // Getting named ranges.
-            XPropertySet docProps = (XPropertySet)
+            XPropertySet docProps =
                 UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
             oObj = (XInterface)AnyConverter.toObject(
                 new Type(XInterface.class),docProps.getPropertyValue("DDELinks"));

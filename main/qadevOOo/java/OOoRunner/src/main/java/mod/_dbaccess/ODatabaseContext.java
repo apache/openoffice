@@ -112,14 +112,14 @@ public class ODatabaseContext extends TestCase {
             xMSF = (XMultiServiceFactory)Param.getMSF();
             oInterface = xMSF.createInstance( "com.sun.star.sdb.DataSource" );
 
-            XPropertySet xDSProps = (XPropertySet)
+            XPropertySet xDSProps =
                 UnoRuntime.queryInterface(XPropertySet.class, oInterface) ;
 
             xDSProps.setPropertyValue("URL", "sdbc:dbase:file:///.") ;
 
-            XDocumentDataSource xDDS = (XDocumentDataSource)
+            XDocumentDataSource xDDS =
             UnoRuntime.queryInterface(XDocumentDataSource.class, oInterface);
-            XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class,
+            XStorable store = UnoRuntime.queryInterface(XStorable.class,
             xDDS.getDatabaseDocument ());
             String aFile = utils.getOfficeTemp ((XMultiServiceFactory) Param.getMSF ())+"DatabaseContext.odb";
             log.println("store to '" + aFile + "'");
@@ -130,7 +130,7 @@ public class ODatabaseContext extends TestCase {
             tEnv.addObjRelation("INSTANCE", oInterface);
 
             tEnv.addObjRelation("XContainer.Container",
-                (XNamingService) UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                                     XNamingService.class, oObj));
 
         } catch (com.sun.star.uno.Exception e) {

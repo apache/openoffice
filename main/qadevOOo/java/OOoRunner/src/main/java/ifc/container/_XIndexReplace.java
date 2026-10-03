@@ -139,7 +139,7 @@ public class _XIndexReplace extends MultiMethodTest {
             log.println("1. replaceByIndex(): Exception expected! - FAILED");
 
 
-            XNameContainer xNC = (XNameContainer)
+            XNameContainer xNC =
                 UnoRuntime.queryInterface(XNameContainer.class, oObj) ;
             String[] names = xNC.getElementNames() ;
             log.println("Element names :") ;
@@ -166,7 +166,7 @@ public class _XIndexReplace extends MultiMethodTest {
             log.println("2. replaceByIndex(): Exception expected! - FAILED");
 
 
-            XNameContainer xNC = (XNameContainer)
+            XNameContainer xNC =
                 UnoRuntime.queryInterface(XNameContainer.class, oObj) ;
             String[] names = xNC.getElementNames() ;
             log.println("Element names :") ;

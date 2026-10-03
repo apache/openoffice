@@ -294,7 +294,7 @@ public class TestParameters extends Hashtable {
         Object context = get( "ComponentContext" );
         if ( context == null )
         {
-            XPropertySet factoryProps = (XPropertySet)com.sun.star.uno.UnoRuntime.queryInterface(
+            XPropertySet factoryProps = com.sun.star.uno.UnoRuntime.queryInterface(
                 XPropertySet.class, getMSF() );
             try
             {

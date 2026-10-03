@@ -55,7 +55,7 @@ public class _FunctionDescription extends MultiMethodTest {
 
     public void _Arguments() {
         // check if Service is available
-        XServiceInfo xInfo = (XServiceInfo)
+        XServiceInfo xInfo =
             UnoRuntime.queryInterface(XServiceInfo.class, oObj );
 
         if ( ! xInfo.supportsService

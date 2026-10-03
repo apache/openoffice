@@ -94,7 +94,7 @@ published interface XDispatch: com::sun::star::uno::XInterface
             &nbsp;&nbsp;aURL[0] = new com.sun.star.util.URL();
             &nbsp;&nbsp;aURL[0].Complete = sURL;
 
-            &nbsp;&nbsp;com.sun.star.util.XURLTransformer xParser = (com.sun.star.util.XURLTransformer)UnoRuntime.queryInterface(
+            &nbsp;&nbsp;com.sun.star.util.XURLTransformer xParser = UnoRuntime.queryInterface(
             &nbsp;&nbsp;&nbsp;&nbsp;com.sun.star.util.XURLTransformer.class,
             &nbsp;&nbsp;&nbsp;&nbsp;mxServiceManager.createInstance("com.sun.star.util.URLTransformer"));
 

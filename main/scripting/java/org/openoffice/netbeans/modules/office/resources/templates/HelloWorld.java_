@@ -46,7 +46,7 @@ public class HelloWorld {
         XComponent xcomponent = xSc.getDocument();
         
         // Getting the text document object
-        XTextDocument xtextdocument = (XTextDocument) UnoRuntime.queryInterface(
+        XTextDocument xtextdocument = UnoRuntime.queryInterface(
 XTextDocument.class, xcomponent);
 
         //Getting the text object

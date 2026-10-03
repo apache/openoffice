@@ -185,7 +185,7 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
                     Boolean.TRUE
                 });
 
-        //XWindow win = (XWindow)UnoRuntime.queryInterface(XWindow.class,lblContainer);
+        //XWindow win = UnoRuntime.queryInterface(XWindow.class,lblContainer);
         /*dialog.xWindow.addWindowListener(uiEventListener);
         String dName = (String)Helper.getUnoPropertyValue(dialog.xDialogModel,PropertyNames.PROPERTY_NAME);
 
@@ -891,7 +891,7 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
     private void setBorder(Object control, Short border)
     {
         Helper.setUnoPropertyValue(getModel(control), PropertyNames.PROPERTY_BORDER, border);
-    //XWindowPeer peer = ((XControl)UnoRuntime.queryInterface(XControl.class,control)).getPeer();
+    //XWindowPeer peer = (UnoRuntime.queryInterface(XControl.class,control)).getPeer();
     //peer.invalidate(InvalidateStyle.CHILDREN);
     }
 

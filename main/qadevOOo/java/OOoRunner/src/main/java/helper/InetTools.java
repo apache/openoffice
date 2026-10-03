@@ -50,7 +50,7 @@ public class InetTools {
             Object oProvider = xMSF.createInstance(
                                        "com.sun.star.configuration.ConfigurationProvider");
 
-            XMultiServiceFactory oProviderMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(
+            XMultiServiceFactory oProviderMSF = UnoRuntime.queryInterface(
                                                         XMultiServiceFactory.class,
                                                         oProvider);
 
@@ -58,7 +58,7 @@ public class InetTools {
                                    "com.sun.star.configuration.ConfigurationUpdateAccess",
                                    ProvArgs);
 
-            XPropertySet oInetProps = (XPropertySet) UnoRuntime.queryInterface(
+            XPropertySet oInetProps = UnoRuntime.queryInterface(
                                               XPropertySet.class, oInet);
 
             String HTTPProxyName = (String)param.get("HTTPProxyName");
@@ -72,7 +72,7 @@ public class InetTools {
             oInetProps.setPropertyValue("ooInetHTTPProxyPort", HTTPProxyPort);
             oInetProps.setPropertyValue("ooInetProxyType", new Long(2));
 
-            XChangesBatch oSecureChange = (XChangesBatch) UnoRuntime.queryInterface(
+            XChangesBatch oSecureChange = UnoRuntime.queryInterface(
                                                   XChangesBatch.class, oInet);
             oSecureChange.commitChanges();
         }

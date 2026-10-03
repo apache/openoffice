@@ -80,7 +80,7 @@ public class SwXTextDefaults extends TestCase {
 
         XInterface oObj = null;
 
-        XMultiServiceFactory docMSF = (XMultiServiceFactory)
+        XMultiServiceFactory docMSF =
             UnoRuntime.queryInterface(XMultiServiceFactory.class,xTextDoc);
 
         try {

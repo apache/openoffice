@@ -88,7 +88,7 @@ public class XStorageHelper implements XEventListener
                throw new IOException("Invalid path");
             }
             XDocumentSubStorageSupplier xDocumentSubStorageSupplier =
-                (XDocumentSubStorageSupplier) UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XDocumentSubStorageSupplier.class, xModel);
             xStorages =  new XStorage[tokens.countTokens()  ];
             LogUtils.DEBUG("XStorageHelper ctor, path chunks length: " + xStorages.length );
@@ -106,7 +106,7 @@ public class XStorageHelper implements XEventListener
                     {
                         LogUtils.DEBUG("** boo hoo Storage is null " );
                     }
-                    XPropertySet xProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,storage );
+                    XPropertySet xProps = UnoRuntime.queryInterface(XPropertySet.class,storage );
                     if ( xProps != null )
                     {
                         String mediaType = AnyConverter.toString( xProps.getPropertyValue( "MediaType" ) );
@@ -119,7 +119,7 @@ public class XStorageHelper implements XEventListener
                 }
                 else
                 {
-                    XNameAccess xNameAccess = (XNameAccess)
+                    XNameAccess xNameAccess =
                     UnoRuntime.queryInterface(XNameAccess.class, xStorages[i-1]);
                     if (xNameAccess == null )
                     {
@@ -167,7 +167,7 @@ public class XStorageHelper implements XEventListener
     {
         // TODO needs to cater for model for untitled document
         modelMap.put( PathUtils.getOidForModel( model ), model );
-        XComponent xComp = (XComponent)
+        XComponent xComp =
              UnoRuntime.queryInterface(XComponent.class, model);
 
         if ( xComp != null )
@@ -186,7 +186,7 @@ public class XStorageHelper implements XEventListener
 
     public void disposing( EventObject Source )
     {
-        XModel model = (XModel)
+        XModel model =
             UnoRuntime.queryInterface(XModel.class,Source.Source );
 
         if ( model != null )
@@ -239,7 +239,7 @@ public class XStorageHelper implements XEventListener
             return;
         }
 
-        XComponent xComponent = (XComponent)
+        XComponent xComponent =
         UnoRuntime.queryInterface(XComponent.class, xInterface);
 
         if (xComponent == null) {
@@ -249,7 +249,7 @@ public class XStorageHelper implements XEventListener
     }
     static public void commit( XInterface xInterface )
     {
-        XTransactedObject xTrans = (XTransactedObject)
+        XTransactedObject xTrans =
         UnoRuntime.queryInterface(XTransactedObject.class, xInterface);
         if ( xTrans != null )
         {

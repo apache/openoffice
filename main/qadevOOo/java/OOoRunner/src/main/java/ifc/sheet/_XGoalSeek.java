@@ -46,12 +46,12 @@ public class _XGoalSeek extends MultiMethodTest {
 		Exception ex = null;
         // get two sheets
         try {
-            XSpreadsheetDocument xSpreadsheetDocument = (XSpreadsheetDocument)
+            XSpreadsheetDocument xSpreadsheetDocument =
                     UnoRuntime.queryInterface(XSpreadsheetDocument.class, oObj);
             XSpreadsheets oSheets = xSpreadsheetDocument.getSheets();
-            XIndexAccess oIndexSheets = (XIndexAccess) UnoRuntime.queryInterface(
+            XIndexAccess oIndexSheets = UnoRuntime.queryInterface(
                                                 XIndexAccess.class, oSheets);
-            xSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            xSheet = UnoRuntime.queryInterface(
                                       XSpreadsheet.class, oIndexSheets.getByIndex(1));
         }
         catch(com.sun.star.lang.IndexOutOfBoundsException e) {

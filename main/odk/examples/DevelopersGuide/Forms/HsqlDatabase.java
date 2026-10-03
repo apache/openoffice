@@ -75,9 +75,9 @@ public class HsqlDatabase
     {
         m_databaseDocumentFile = _docURL;
 
-        XNameAccess dbContext = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class,
+        XNameAccess dbContext = UnoRuntime.queryInterface( XNameAccess.class,
             m_context.getServiceManager().createInstanceWithContext( "com.sun.star.sdb.DatabaseContext", m_context ) );
-        XDocumentDataSource dataSource = (XDocumentDataSource)UnoRuntime.queryInterface( XDocumentDataSource.class,
+        XDocumentDataSource dataSource = UnoRuntime.queryInterface( XDocumentDataSource.class,
             dbContext.getByName( _docURL ) );
 
         m_databaseDocument = dataSource.getDatabaseDocument();
@@ -91,14 +91,14 @@ public class HsqlDatabase
         documentFile.deleteOnExit();
         m_databaseDocumentFile = URLHelper.getFileURLFromSystemPath( documentFile );
 
-        m_databaseDocument = (XOfficeDatabaseDocument)UnoRuntime.queryInterface(
+        m_databaseDocument = UnoRuntime.queryInterface(
             XOfficeDatabaseDocument.class, m_context.getServiceManager().createInstanceWithContext(
                 "com.sun.star.sdb.OfficeDatabaseDocument", m_context ) );
 
-        XPropertySet dsProperties = (XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, m_databaseDocument.getDataSource() );
+        XPropertySet dsProperties = UnoRuntime.queryInterface( XPropertySet.class, m_databaseDocument.getDataSource() );
         dsProperties.setPropertyValue("URL", "sdbc:embedded:hsqldb");
 
-        XStorable storable = (XStorable)UnoRuntime.queryInterface( XStorable.class, m_databaseDocument );
+        XStorable storable = UnoRuntime.queryInterface( XStorable.class, m_databaseDocument );
         storable.storeAsURL( m_databaseDocumentFile, new PropertyValue[]{} );
     }
 
@@ -130,7 +130,7 @@ public class HsqlDatabase
     {
         if ( m_databaseDocument != null )
         {
-            XStorable storeDoc = (XStorable)UnoRuntime.queryInterface( XStorable.class,
+            XStorable storeDoc = UnoRuntime.queryInterface( XStorable.class,
                 m_databaseDocument );
             storeDoc.store();
         }
@@ -144,7 +144,7 @@ public class HsqlDatabase
     public void close()
     {
         // close connection
-        XCloseable closeConn = (XCloseable)UnoRuntime.queryInterface( XCloseable.class,
+        XCloseable closeConn = UnoRuntime.queryInterface( XCloseable.class,
             m_connection );
         if ( closeConn != null )
         {
@@ -159,7 +159,7 @@ public class HsqlDatabase
         m_connection = null;
 
         // close document
-        com.sun.star.util.XCloseable closeDoc = (com.sun.star.util.XCloseable)UnoRuntime.queryInterface(
+        com.sun.star.util.XCloseable closeDoc = UnoRuntime.queryInterface(
             com.sun.star.util.XCloseable.class, m_databaseDocument );
         if ( closeDoc != null )
         {
@@ -212,7 +212,7 @@ public class HsqlDatabase
     */
     XModel getModel()
     {
-        return (XModel)UnoRuntime.queryInterface( XModel.class, m_databaseDocument );
+        return UnoRuntime.queryInterface( XModel.class, m_databaseDocument );
     }
 
     /** drops the table with a given name

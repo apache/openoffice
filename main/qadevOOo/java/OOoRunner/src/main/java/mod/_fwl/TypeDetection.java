@@ -115,7 +115,7 @@ public class TypeDetection extends TestCase {
         log.println( "creating a new environment for object" );
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
-        XNameAccess xNA = (XNameAccess) UnoRuntime.queryInterface
+        XNameAccess xNA = UnoRuntime.queryInterface
             (XNameAccess.class, oObj);
         String[] elementNames = xNA.getElementNames();
         String elementName = elementNames[0];
@@ -154,7 +154,7 @@ public class TypeDetection extends TestCase {
             fileURL = utils.getOfficeTemp((XMultiServiceFactory)Param.getMSF() );
             fileURL = fileURL + "bookmarks.oot";
 
-            XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDoc);
+            XStorable store = UnoRuntime.queryInterface(XStorable.class, xTextDoc);
             System.out.println(fileURL);
             store.storeToURL(fileURL, new PropertyValue[0]);
 

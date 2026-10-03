@@ -66,7 +66,7 @@ public class _BaseIndex extends MultiPropertyTest {
     */
     protected PropertyTester CustomTester = new PropertyTester() {
         protected Object getNewValue(String propName, Object oldValue) {
-            XTextColumns TC = (XTextColumns) UnoRuntime.queryInterface(
+            XTextColumns TC = UnoRuntime.queryInterface(
                                       XTextColumns.class, oldValue);
             TC.setColumnCount((short) (TC.getColumnCount() + (short) 1));
 
@@ -108,7 +108,7 @@ public class _BaseIndex extends MultiPropertyTest {
             PropertyValue[][] oldVal = null;
 
             protected Object getNewValue(String propName, Object oldValue) {
-                XIndexReplace indProp = (XIndexReplace) UnoRuntime.queryInterface(
+                XIndexReplace indProp = UnoRuntime.queryInterface(
                                                 XIndexReplace.class, oldValue);
 
                 try {
@@ -147,7 +147,7 @@ public class _BaseIndex extends MultiPropertyTest {
                                        Object newValue, Object resValue,
                                        Exception exception)
                                 throws Exception {
-                PropertyValue[][] res = (PropertyValue[][]) ((XIndexAccess) UnoRuntime.queryInterface(
+                PropertyValue[][] res = (PropertyValue[][]) (UnoRuntime.queryInterface(
                                                                      XIndexAccess.class,
                                                                      resValue)).getByIndex(0);
 
@@ -167,7 +167,7 @@ public class _BaseIndex extends MultiPropertyTest {
      * value into <code>log</code>.
      */
     private void printLevelFormatProperty(Object value) {
-        XIndexReplace indProp = (XIndexReplace) UnoRuntime.queryInterface(
+        XIndexReplace indProp = UnoRuntime.queryInterface(
                                         XIndexReplace.class, value);
         PropertyValue[][] val = null;
 

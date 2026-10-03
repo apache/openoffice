@@ -50,7 +50,7 @@ public class MethodHandler implements XPropertyHandler
 
         try
         {
-            m_introspection = (XIntrospection)UnoRuntime.queryInterface( XIntrospection.class,
+            m_introspection = UnoRuntime.queryInterface( XIntrospection.class,
                 m_context.getServiceManager().createInstanceWithContext( "com.sun.star.beans.Introspection", m_context )
             );
         }
@@ -101,7 +101,7 @@ public class MethodHandler implements XPropertyHandler
         descriptor.IndentLevel = 0;
         try
         {
-            XPropertyControl control = (XPropertyControl)UnoRuntime.queryInterface(
+            XPropertyControl control = UnoRuntime.queryInterface(
                     XPropertyControl.class, _propertyControlFactory.createPropertyControl(
                     PropertyControlType.TextField, true ) );
 

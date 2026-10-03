@@ -78,7 +78,7 @@ public class _XActivationBroadcaster extends MultiMethodTest {
     }
 
     public void before() {
-        xSpreadsheetView = (XSpreadsheetView) UnoRuntime.queryInterface(
+        xSpreadsheetView = UnoRuntime.queryInterface(
                                    XSpreadsheetView.class,
                                    tEnv.getTestObject());
 

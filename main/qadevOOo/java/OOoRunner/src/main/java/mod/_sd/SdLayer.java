@@ -103,12 +103,12 @@ public class SdLayer extends TestCase {
 
         // get the drawpage of drawing here
         log.println( "getting LayerManager" );
-        XLayerSupplier oLS = (XLayerSupplier)
+        XLayerSupplier oLS =
             UnoRuntime.queryInterface(XLayerSupplier.class, xDrawDoc);
         XNameAccess oNA = oLS.getLayerManager();
-        oLM = (XLayerManager)
+        oLM =
             UnoRuntime.queryInterface(XLayerManager.class, oNA);
-        XIndexAccess oIA = (XIndexAccess)
+        XIndexAccess oIA =
             UnoRuntime.queryInterface(XIndexAccess.class,oLM);
         log.println( "getting LayerManager" );
         try {

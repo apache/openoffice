@@ -90,7 +90,7 @@ public class PresentationDemo
 
 			// set the slide transition for the first page
 			xPage = PageHelper.getDrawPageByIndex( xDrawDoc, 0 );
-			xShapes = (XShapes)
+			xShapes =
 				UnoRuntime.queryInterface( XShapes.class, xPage );
 			// set slide transition effect
 			setSlideTransition( xPage,
@@ -115,7 +115,7 @@ public class PresentationDemo
 
 			// set the slide transition for the second page
 			xPage = PageHelper.getDrawPageByIndex( xDrawDoc, 1 );
-			xShapes = (XShapes)
+			xShapes =
 				UnoRuntime.queryInterface( XShapes.class, xPage );
 			setSlideTransition( xPage,
 				com.sun.star.presentation.FadeEffect.FADE_FROM_RIGHT,
@@ -136,7 +136,7 @@ public class PresentationDemo
 			// the second object lets the presentation jump to page two
 			// by using a ClickAction.BOOKMARK;
 			xPage = PageHelper.getDrawPageByIndex( xDrawDoc, 2 );
-			xShapes = (XShapes)
+			xShapes =
 				UnoRuntime.queryInterface( XShapes.class, xPage );
 			setSlideTransition( xPage,
 				com.sun.star.presentation.FadeEffect.ROLL_FROM_LEFT,
@@ -148,7 +148,7 @@ public class PresentationDemo
 			xShapes.add( xShape );
 			ShapeHelper.addPortion( xShape, "click to go", false );
 			ShapeHelper.addPortion( xShape, "to first page", true );
-			xShapePropSet = (XPropertySet)
+			xShapePropSet =
 				UnoRuntime.queryInterface( XPropertySet.class, xShape );
 			xShapePropSet.setPropertyValue("Effect",
                 com.sun.star.presentation.AnimationEffect.FADE_FROM_BOTTOM );
@@ -162,7 +162,7 @@ public class PresentationDemo
 			xShapes.add( xShape );
 			ShapeHelper.addPortion( xShape, "click to go", false );
 			ShapeHelper.addPortion( xShape, "to the second page", true );
-			xShapePropSet = (XPropertySet)
+			xShapePropSet =
 				UnoRuntime.queryInterface( XPropertySet.class, xShape );
 			xShapePropSet.setPropertyValue("Effect",
                 com.sun.star.presentation.AnimationEffect.FADE_FROM_BOTTOM );
@@ -170,7 +170,7 @@ public class PresentationDemo
 			xShapePropSet.setPropertyValue(
 				"OnClick", com.sun.star.presentation.ClickAction.BOOKMARK );
 			// set the name of page two, and use it with the bookmark action
-			XNamed xPageName = (XNamed)UnoRuntime.queryInterface(
+			XNamed xPageName = UnoRuntime.queryInterface(
 				XNamed.class, PageHelper.getDrawPageByIndex( xDrawDoc, 1 ) );
 			xPageName.setName( "page two" );
 			xShapePropSet.setPropertyValue(
@@ -180,10 +180,10 @@ public class PresentationDemo
 			/* start an endless presentation which is displayed in
 			   full-screen mode and placed on top */
 
-			XPresentationSupplier xPresSupplier = (XPresentationSupplier)
+			XPresentationSupplier xPresSupplier =
 				UnoRuntime.queryInterface( XPresentationSupplier.class, xDrawDoc );
 			XPresentation xPresentation = xPresSupplier.getPresentation();
-			XPropertySet xPresPropSet = (XPropertySet)
+			XPropertySet xPresPropSet =
 				UnoRuntime.queryInterface( XPropertySet.class, xPresentation );
 			xPresPropSet.setPropertyValue( "IsEndless", new Boolean( true ) );
 			xPresPropSet.setPropertyValue( "IsAlwaysOnTop", new Boolean( true ) );
@@ -207,13 +207,13 @@ public class PresentationDemo
 		// the following test is only sensible if you do not exactly know
 		// what type of page xPage is, for this purpose it can been tested
 		// if the com.sun.star.presentation.DrawPage service is supported
-		XServiceInfo xInfo = (XServiceInfo)UnoRuntime.queryInterface(
+		XServiceInfo xInfo = UnoRuntime.queryInterface(
 				XServiceInfo.class, xPage );
 		if ( xInfo.supportsService( "com.sun.star.presentation.DrawPage" ) == true )
 		{
 			try
 			{
-				XPropertySet xPropSet = (XPropertySet)
+				XPropertySet xPropSet =
 					UnoRuntime.queryInterface( XPropertySet.class, xPage );
 				xPropSet.setPropertyValue( "Effect",   eEffect );
 				xPropSet.setPropertyValue( "Speed",    eSpeed );

@@ -77,7 +77,7 @@ public class ChartInCalc
 
         // insert a cell range with 4 columns and 24 rows filled with random numbers
         XCellRange aRange = aCalcHelper.insertRandomRange( 4, 24 );
-        CellRangeAddress aRangeAddress = ((XCellRangeAddressable) UnoRuntime.queryInterface(
+        CellRangeAddress aRangeAddress = (UnoRuntime.queryInterface(
             XCellRangeAddressable.class, aRange)).getRangeAddress();
 
         // change view to sheet containing the chart
@@ -147,7 +147,7 @@ public class ChartInCalc
     public void lockControllers()
         throws RuntimeException
     {
-        ((XModel) UnoRuntime.queryInterface( XModel.class, maChartDocument )).lockControllers();
+        (UnoRuntime.queryInterface( XModel.class, maChartDocument )).lockControllers();
     }
 
     // ____________________
@@ -155,7 +155,7 @@ public class ChartInCalc
     public void unlockControllers()
         throws RuntimeException
     {
-        ((XModel) UnoRuntime.queryInterface( XModel.class, maChartDocument )).unlockControllers();
+        (UnoRuntime.queryInterface( XModel.class, maChartDocument )).unlockControllers();
     }
 
     // ____________________
@@ -164,7 +164,7 @@ public class ChartInCalc
         throws RuntimeException, UnknownPropertyException, PropertyVetoException,
                com.sun.star.lang.IllegalArgumentException, WrappedTargetException
     {
-        XPropertySet aDiaProp = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, maDiagram );
+        XPropertySet aDiaProp = UnoRuntime.queryInterface( XPropertySet.class, maDiagram );
 
         if( aDiaProp != null )
         {
@@ -234,7 +234,7 @@ public class ChartInCalc
             // determine the maximum value of the first series
             int nMaxIndex = 0;
 
-            XChartDataArray aDataArray = (XChartDataArray) UnoRuntime.queryInterface(
+            XChartDataArray aDataArray = UnoRuntime.queryInterface(
                 XChartDataArray.class, maChartDocument.getData());
             double aData[][] = aDataArray.getData();
 
@@ -290,7 +290,7 @@ public class ChartInCalc
         throws RuntimeException, UnknownPropertyException, PropertyVetoException,
                com.sun.star.lang.IllegalArgumentException, WrappedTargetException
     {
-        XPropertySet aWall = ((X3DDisplay) UnoRuntime.queryInterface(
+        XPropertySet aWall = (UnoRuntime.queryInterface(
                                   X3DDisplay.class, maDiagram )).getWall();
 
         // change background color of area
@@ -305,12 +305,12 @@ public class ChartInCalc
                com.sun.star.lang.IllegalArgumentException, WrappedTargetException
     {
         // change main title
-        XPropertySet aDocProp = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet aDocProp = UnoRuntime.queryInterface(
             XPropertySet.class, maChartDocument );
         aDocProp.setPropertyValue( "HasMainTitle", new Boolean( true ));
 
         XShape aTitle = maChartDocument.getTitle();
-        XPropertySet aTitleProp = (XPropertySet) UnoRuntime.queryInterface( XPropertySet.class, aTitle );
+        XPropertySet aTitleProp = UnoRuntime.queryInterface( XPropertySet.class, aTitle );
 
         // set new text
         if( aTitleProp != null )
@@ -320,8 +320,8 @@ public class ChartInCalc
         }
 
         // align title with y axis
-        XShape aAxis = (XShape) UnoRuntime.queryInterface(
-            XShape.class, ((XAxisYSupplier) UnoRuntime.queryInterface(
+        XShape aAxis = UnoRuntime.queryInterface(
+            XShape.class, (UnoRuntime.queryInterface(
                 XAxisYSupplier.class, maDiagram )).getYAxis() );
 
         if( aAxis != null &&
@@ -341,7 +341,7 @@ public class ChartInCalc
                MalformedNumberFormatException
     {
         // x axis
-        XPropertySet aAxisProp = ((XAxisXSupplier) UnoRuntime.queryInterface(
+        XPropertySet aAxisProp = (UnoRuntime.queryInterface(
                                       XAxisXSupplier.class, maDiagram )).getXAxis();
         if( aAxisProp != null )
         {
@@ -350,12 +350,12 @@ public class ChartInCalc
         }
 
         // change number format for y axis
-        aAxisProp = ((XAxisYSupplier) UnoRuntime.queryInterface(
+        aAxisProp = (UnoRuntime.queryInterface(
                          XAxisYSupplier.class, maDiagram )).getYAxis();
 
         // add a new custom number format and get the new key
         int nNewNumberFormat = 0;
-        XNumberFormatsSupplier aNumFmtSupp = (XNumberFormatsSupplier) UnoRuntime.queryInterface(
+        XNumberFormatsSupplier aNumFmtSupp = UnoRuntime.queryInterface(
             XNumberFormatsSupplier.class, maChartDocument );
 
         if( aNumFmtSupp != null )
@@ -380,9 +380,9 @@ public class ChartInCalc
                com.sun.star.lang.IllegalArgumentException, WrappedTargetException
     {
         // y major grid
-        XPropertySet aGridProp = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet aGridProp = UnoRuntime.queryInterface(
             XPropertySet.class,
-            ( (XAxisYSupplier) UnoRuntime.queryInterface(
+            ( UnoRuntime.queryInterface(
                 XAxisYSupplier.class, maDiagram )).getYMainGrid());
 
         if( aGridProp != null )
