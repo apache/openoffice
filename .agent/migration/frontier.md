@@ -911,7 +911,24 @@ solenv        ⬜  (legacy build environment, mostly migrated away)
 autodoc       ⬜  (API documentation generator)
 odk           ⬜  (OpenDocument/Developer Kit)
 helpauthoring ⬜  (help authoring tools)
-helpcontent2  ⬜  (help content sources)
+helpcontent2  ✅  DONE 2026-10-03 — the F1 help, en-US: help/en/ with all 9 modules
+                   (.db/.ht/.key HelpLinker, .jar pages, .cfg, .tree Contents, .idxl
+                   Lucene Find tab).  VERIFIED LIVE x86+x64: pages render through the
+                   help UCB, search returns hits via LuceneHelpWrapper, hits open.
+                   New: build/rules/help_pipeline.bzl + help_link.pl; @lucene 2.9.4
+                   module (source build, long_path.patch); LuceneHelpWrapper
+                   registered; HelpIndexerTool java_binary.  Lists (LINKLINKFILES,
+                   LINKADDEDFILES, ZIP1LIST, XHPFILES) are upstream's, generated into
+                   help_modules.bzl by gen_help_modules.py.  Output check is exact:
+                   the driver fails on any undeclared or missing file.  Reproducible
+                   except Lucene's segments_2 (time-seeded).  LANDMINES: page ids are
+                   URL-ENCODED; the page set is XHPFILES not a glob; sdatabase's jar
+                   is ONE page; never walk the output tree (Bazel keeps stale
+                   outputs); indexer -extension leaves an empty index for a module
+                   that links nothing, so it is not run there; the dmake oracle is
+                   an OLDER source revision (AOO41X) — compare structure, not bytes.
+                   UNBLOCKS swext (its .oxt help) — extension help is HelpLinker's
+                   -extension mode, not yet wired.  See main/helpcontent2/readme.md.
 xml2cmp       ⬜  (XML component comparison tool)
 
 ── Remaining: Standalone/misc ───────────────────────────────────────────

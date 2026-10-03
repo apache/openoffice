@@ -26,6 +26,8 @@ redland / raptor2 / rasqal (RDF stack, native-cc static) + unordf.dll - rdf-read
    migration notes — overlay mechanism, *_INTERNAL/HAVE_CONFIG_H defines,
    local_defines vs defines, `*_STATIC`, RAPTOR_WWW_NONE/S_ISREG — are in rdf-readme.md)
 rhino - ext_libraries\modules\rhino\README
+saxon 9.0.0.7 (bzlmod, Java) - main/saxon/readme.md  (Latin-1 sources transcoded)
+lucene 2.9.4 (bzlmod, Java) - main/xmlhelp/readme.md  (long_path.patch regenerated)
 sal_pch - was merged with sal_headers
 
 ## Open question — shared vs static linkage (deferred, 2026-08-31)
