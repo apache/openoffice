@@ -32,7 +32,7 @@ public class HelloWorld {
   public static void printHW(XScriptContext xSc) {
 
     // getting the text document object
-    XTextDocument xtextdocument = (XTextDocument) UnoRuntime.queryInterface(
+    XTextDocument xtextdocument = UnoRuntime.queryInterface(
 XTextDocument.class, xSc.getDocument());
     XText xText = xtextdocument.getText();
     XTextRange xTextRange = xText.getEnd();

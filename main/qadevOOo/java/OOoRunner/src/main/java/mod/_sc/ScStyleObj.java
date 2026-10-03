@@ -92,7 +92,7 @@ public class ScStyleObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -128,11 +128,11 @@ public class ScStyleObj extends TestCase {
         log.println("creating a test environment");
 
         log.println("getting style");
-        XStyleFamiliesSupplier oStyleFamiliesSupplier = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier oStyleFamiliesSupplier =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class, xSpreadsheetDoc);
         XNameAccess oStyleFamilies = oStyleFamiliesSupplier.getStyleFamilies();
-        XIndexAccess oStyleFamiliesIndexAccess = (XIndexAccess)
+        XIndexAccess oStyleFamiliesIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, oStyleFamilies);
         XNameAccess oStyleFamilyNameAccess = null;
         XStyle oStyle = null;
@@ -141,7 +141,7 @@ public class ScStyleObj extends TestCase {
                 new Type(XNameAccess.class),
                     oStyleFamiliesIndexAccess.getByIndex(0));
 
-            XIndexAccess oStyleFamilyIndexAccess = (XIndexAccess)
+            XIndexAccess oStyleFamilyIndexAccess =
                 UnoRuntime.queryInterface(XIndexAccess.class,
                 oStyleFamilyNameAccess);
             oStyle = (XStyle) AnyConverter.toObject(
@@ -158,7 +158,7 @@ public class ScStyleObj extends TestCase {
         }
 
         log.println("Creating a user-defined style");
-        XMultiServiceFactory oMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oMSF =
             UnoRuntime.queryInterface(
                 XMultiServiceFactory.class, xSpreadsheetDoc);
 
@@ -170,7 +170,7 @@ public class ScStyleObj extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create instance", e);
         }
-        XStyle oMyStyle = (XStyle)UnoRuntime.queryInterface(XStyle.class, oInt);
+        XStyle oMyStyle = UnoRuntime.queryInterface(XStyle.class, oInt);
 
         XNameContainer oStyleFamilyNameContainer = (XNameContainer)UnoRuntime.
             queryInterface(XNameContainer.class, oStyleFamilyNameAccess);
@@ -199,7 +199,7 @@ public class ScStyleObj extends TestCase {
         //using the style
         log.println("Getting spreadsheet") ;
         XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-        XIndexAccess oIndexSheets = (XIndexAccess)
+        XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
 
         XCell aCell = null;
@@ -219,7 +219,7 @@ public class ScStyleObj extends TestCase {
             throw new StatusException("Couldn't get spreadsheet by index", e);
         }
 
-        XPropertySet xProp = (XPropertySet)
+        XPropertySet xProp =
             UnoRuntime.queryInterface(XPropertySet.class, aCell);
 
         try {
@@ -244,7 +244,7 @@ public class ScStyleObj extends TestCase {
         tEnv.addObjRelation("PoolStyle", oStyle);
 
         tEnv.addObjRelation("PropertyNames", getPropertyNames
-            ((XPropertySet) UnoRuntime.queryInterface
+            (UnoRuntime.queryInterface
             (XPropertySet.class, oMyStyle)));
 
         return tEnv;

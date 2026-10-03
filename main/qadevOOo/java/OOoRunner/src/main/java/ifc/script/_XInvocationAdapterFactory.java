@@ -80,7 +80,7 @@ public class _XInvocationAdapterFactory extends MultiMethodTest {
 
             Object oInv = xInvFac.createInstanceWithArguments(args) ;
 
-            xInv = (XInvocation) UnoRuntime.queryInterface
+            xInv = UnoRuntime.queryInterface
                 (XInvocation.class, oInv) ;
 
         } catch (com.sun.star.uno.Exception e) {
@@ -93,7 +93,7 @@ public class _XInvocationAdapterFactory extends MultiMethodTest {
         Object adp = oObj.createAdapter(xInv,
                 new Type(XInputStream.class)) ;
 
-        xInStr = (XInterface) UnoRuntime.queryInterface
+        xInStr = UnoRuntime.queryInterface
                 (XInputStream.class, adp) ;
 
 

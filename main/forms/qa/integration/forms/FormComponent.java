@@ -52,16 +52,16 @@ public class FormComponent
     /* ------------------------------------------------------------------ */
     public FormComponent( XDrawPage drawPage )
     {
-        XFormsSupplier supp = (XFormsSupplier)UnoRuntime.queryInterface(
+        XFormsSupplier supp = UnoRuntime.queryInterface(
             XFormsSupplier.class, drawPage );
         m_component = supp.getForms();
 
         m_nameAccess = (XNameAccess)m_component;
-        m_indexAccess = (XIndexAccess)UnoRuntime.queryInterface(
+        m_indexAccess = UnoRuntime.queryInterface(
             XIndexAccess.class, m_component );
-        m_child = (XChild)UnoRuntime.queryInterface(
+        m_child = UnoRuntime.queryInterface(
             XChild.class, m_component );
-        m_named = (XNamed)UnoRuntime.queryInterface(
+        m_named = UnoRuntime.queryInterface(
             XNamed.class, m_component );
     }
 
@@ -69,13 +69,13 @@ public class FormComponent
     public FormComponent( Object element )
     {
         m_component = element;
-        m_nameAccess = (XNameAccess)UnoRuntime.queryInterface(
+        m_nameAccess = UnoRuntime.queryInterface(
             XNameAccess.class, m_component );
-        m_indexAccess = (XIndexAccess)UnoRuntime.queryInterface(
+        m_indexAccess = UnoRuntime.queryInterface(
             XIndexAccess.class, m_component );
-        m_child = (XChild)UnoRuntime.queryInterface(
+        m_child = UnoRuntime.queryInterface(
             XChild.class, m_component );
-        m_named = (XNamed)UnoRuntime.queryInterface(
+        m_named = UnoRuntime.queryInterface(
             XNamed.class, m_component );
     }
 
@@ -184,7 +184,7 @@ public class FormComponent
     /* ------------------------------------------------------------------ */
     public String getImplementationName()
     {
-        XServiceInfo si = (XServiceInfo)UnoRuntime.queryInterface(
+        XServiceInfo si = UnoRuntime.queryInterface(
             XServiceInfo.class, m_component );
         if ( si != null )
             return si.getImplementationName();

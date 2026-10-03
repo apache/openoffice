@@ -56,7 +56,7 @@ public class Test01 {
         try
         {
             Object oDoc = m_xMSF.createInstance( "com.sun.star.comp.Draw.DrawingDocument" );
-            XLoadable xLoad = (XLoadable) UnoRuntime.queryInterface( XLoadable.class, oDoc );
+            XLoadable xLoad = UnoRuntime.queryInterface( XLoadable.class, oDoc );
             if ( xLoad == null )
             {
                 m_aTestHelper.Error( "Can not get XLoadable!" );
@@ -65,7 +65,7 @@ public class Test01 {
 
             xLoad.initNew();
 
-            XDrawPagesSupplier xDPSupply = (XDrawPagesSupplier) UnoRuntime.queryInterface( XDrawPagesSupplier.class, oDoc );
+            XDrawPagesSupplier xDPSupply = UnoRuntime.queryInterface( XDrawPagesSupplier.class, oDoc );
             if ( xDPSupply == null )
             {
                 m_aTestHelper.Error( "Can not get XDrawPagesSupplier!" );
@@ -86,14 +86,14 @@ public class Test01 {
             }
 
             Object oPage = xDrawPages.getByIndex( 0 );
-            XDrawPage xPage = (XDrawPage) UnoRuntime.queryInterface( XDrawPage.class, oPage );
+            XDrawPage xPage = UnoRuntime.queryInterface( XDrawPage.class, oPage );
             if ( xPage == null )
             {
                 m_aTestHelper.Error( "Can not get access to drawing page!" );
                 return false;
             }
 
-            XMultiServiceFactory xDrFactory = ( XMultiServiceFactory ) UnoRuntime.queryInterface( XMultiServiceFactory.class, oDoc );
+            XMultiServiceFactory xDrFactory = UnoRuntime.queryInterface( XMultiServiceFactory.class, oDoc );
             if ( xDrFactory == null )
             {
                 m_aTestHelper.Error( "Can not get drawing factory!" );
@@ -101,14 +101,14 @@ public class Test01 {
             }
 
             Object oShape = xDrFactory.createInstance( "com.sun.star.drawing.OLE2Shape" );
-            XShape xShape = ( XShape ) UnoRuntime.queryInterface( XShape.class, oShape );
+            XShape xShape = UnoRuntime.queryInterface( XShape.class, oShape );
             if ( xShape == null )
             {
                 m_aTestHelper.Error( "Can not create new shape!" );
                 return false;
             }
 
-            XPropertySet xShapeProps = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, oShape );
+            XPropertySet xShapeProps = UnoRuntime.queryInterface( XPropertySet.class, oShape );
             if ( xShapeProps == null )
             {
                 m_aTestHelper.Error( "Can not get access to shapes properties!" );
@@ -119,7 +119,7 @@ public class Test01 {
             xShapeProps.setPropertyValue( "CLSID", "078B7ABA-54FC-457F-8551-6147e776a997" );
 
             Object oEmbObj = xShapeProps.getPropertyValue( "EmbeddedObject" );
-            XEmbeddedObject xEmbObj = ( XEmbeddedObject ) UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
+            XEmbeddedObject xEmbObj = UnoRuntime.queryInterface( XEmbeddedObject.class, oEmbObj );
             if ( xEmbObj == null )
             {
                 m_aTestHelper.Error( "Embedded object can not be accessed!" );
@@ -134,7 +134,7 @@ public class Test01 {
             }
 
             Object oReplacement = xShapeProps.getPropertyValue( "Graphic" );
-            XGraphic xReplGraph = ( XGraphic ) UnoRuntime.queryInterface( XGraphic.class, oReplacement );
+            XGraphic xReplGraph = UnoRuntime.queryInterface( XGraphic.class, oReplacement );
             if ( xReplGraph == null )
             {
                 m_aTestHelper.Error( "The replacement graphic should be available!" );

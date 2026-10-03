@@ -59,10 +59,10 @@ public class _XContextMenuInterception extends MultiMethodTest {
     private Point point = null;
 
     public void before() {
-        docModel = (XModel) UnoRuntime.queryInterface(
+        docModel = UnoRuntime.queryInterface(
                 XModel.class,tEnv.getObjRelation("FirstModel"));
 
-        xCI = (XContextMenuInterceptor) UnoRuntime.queryInterface(
+        xCI = UnoRuntime.queryInterface(
                 XContextMenuInterceptor.class, new ContextMenuInterceptor());
 
         xMSF = (XMultiServiceFactory)tParam.getMSF();
@@ -108,7 +108,7 @@ public class _XContextMenuInterception extends MultiMethodTest {
         } catch (com.sun.star.uno.Exception e){
             log.println("could not get Toolkit " + e.toString());
         }
-        XExtendedToolkit tk = (XExtendedToolkit) UnoRuntime.queryInterface(
+        XExtendedToolkit tk = UnoRuntime.queryInterface(
                 XExtendedToolkit.class, toolkit);
 
         XAccessible xRoot = null;
@@ -116,7 +116,7 @@ public class _XContextMenuInterception extends MultiMethodTest {
         AccessibilityTools at = new AccessibilityTools();
 
         try {
-            xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class,
+            xWindow = UnoRuntime.queryInterface(XWindow.class,
                     tk.getTopWindow(0));
 
             xRoot = at.getAccessibleObject(xWindow);
@@ -167,7 +167,7 @@ public class _XContextMenuInterception extends MultiMethodTest {
 
         XInterface oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PANEL);
 
-        XAccessibleComponent window = (XAccessibleComponent) UnoRuntime.queryInterface(
+        XAccessibleComponent window = UnoRuntime.queryInterface(
                 XAccessibleComponent.class, oObj);
 
         point = window.getLocationOnScreen();

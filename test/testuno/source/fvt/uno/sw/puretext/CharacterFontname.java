@@ -50,7 +50,7 @@ public class CharacterFontname {
 	}
 	@Test
 	public void testCharacterFontSetting() throws Exception {
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("We are Chinese,they are American. We are all living in one earth!"
 				+ "and we all love our home very much!!!We are Chinese,they are American. " +
@@ -80,7 +80,7 @@ public class CharacterFontname {
 				"We are all living in one earth!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		xTextCursor.gotoStart(false);
 		xTextCursor.goRight((short) 100, true);
 		xCursorProps.setPropertyValue("CharFontName", "Times New Roman");
@@ -139,7 +139,7 @@ public class CharacterFontname {
 		xTextCursor.goRight((short) 100, true);
 		xCursorProps.setPropertyValue("CharFontName", "Lucida Bright");
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -149,7 +149,7 @@ public class CharacterFontname {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -161,9 +161,9 @@ public class CharacterFontname {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert font style
-		XTextDocument assertDocument=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextDocument assertDocument=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextCursor xTextCursor_assert = assertDocument.getText().createTextCursor();
-		XPropertySet xCursorProps_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert);
+		XPropertySet xCursorProps_assert = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert);
 
 		xTextCursor_assert.gotoStart(false);
 		xTextCursor_assert.goRight((short) 100, true);
@@ -224,9 +224,9 @@ public class CharacterFontname {
 		assertEquals("Lucida Bright",xCursorProps_assert.getPropertyValue("CharFontName"));
 
 		//reopen the document and assert font style
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextCursor xTextCursor_assert_doc = assertDocument_doc.getText().createTextCursor();
-		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
+		XPropertySet xCursorProps_assert_doc = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
 
 		xTextCursor_assert_doc.gotoStart(false);
 		xTextCursor_assert_doc.goRight((short) 100, true);

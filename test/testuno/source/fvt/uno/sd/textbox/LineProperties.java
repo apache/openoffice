@@ -87,12 +87,12 @@ public class LineProperties {
 	 @Test
 	 public void testShapeLineStyle() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.TextShape");
 	 xShapes.add(xShape);
 	 ShapeUtil.addPortion(xShape, "test", false);
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("LineStyle", LineStyle.DASH);
 
@@ -105,7 +105,7 @@ public class LineProperties {
 
 	 // --------------------------
 	 xShape=saveAndLoadShape(1,0);
-	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
+	 xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xShape);
 	 // ----------------------------
 	 assertEquals("Not Dash Line Style",LineStyle.DASH,xPropSet.getPropertyValue("LineStyle"));
 	 aLineDash=(LineDash) xPropSet.getPropertyValue("LineDash");
@@ -120,17 +120,17 @@ public class LineProperties {
 	 @Test
 	 public void testShapeLineColor() throws Exception {
 	 Point po = new Point(1000, 8000);
-	 xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+	 xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 	 XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 	 5000, 5000), "com.sun.star.drawing.TextShape");
 	 xShapes.add(xShape);
 	 ShapeUtil.addPortion(xShape, "test", false);
-	 XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+	 XPropertySet xPropSet = UnoRuntime.queryInterface(
 	 XPropertySet.class, xShape);
 	 xPropSet.setPropertyValue("LineStyle", LineStyle.DASH);
 	 xPropSet.setPropertyValue("LineColor", 0x00ff00);
 	 xShape=saveAndLoadShape(1,0);
-	 xPropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xShape);
+	 xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xShape);
 	 // ----------------------------
 	 assertEquals("Not Dash Line Style",LineStyle.DASH,xPropSet.getPropertyValue("LineStyle"));
 	 assertEquals("wrong line color", 0x00ff00,xPropSet.getPropertyValue("LineColor"));
@@ -142,9 +142,9 @@ public class LineProperties {
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
-		impressDocument = (XComponent) UnoRuntime.queryInterface(
+		impressDocument = UnoRuntime.queryInterface(
 				XComponent.class, unoApp.newDocument("simpress"));
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
 		drawpages.insertNewByIndex(1);
@@ -163,7 +163,7 @@ public class LineProperties {
 			throws Exception {
 		reLoadFile = saveAndReloadDoc(impressDocument, "impress8", "odp");
 		xShapes = ShapeUtil.getShapes(reLoadFile, pageIndex);
-		return (XShape) UnoRuntime.queryInterface(XShape.class,
+		return UnoRuntime.queryInterface(XShape.class,
 				xShapes.getByIndex(shapeIndex));
 	}
 
@@ -186,11 +186,11 @@ public class LineProperties {
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
 		aStoreProperties[1].Value = sFilter;
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 }

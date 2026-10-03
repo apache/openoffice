@@ -63,10 +63,10 @@ public class SOfficeFactory {
         }
 
         // query the desktop interface and then it's componentloader
-        XDesktop oDesktop = (XDesktop) UnoRuntime.queryInterface(
+        XDesktop oDesktop = UnoRuntime.queryInterface(
             XDesktop.class, oInterface);
 
-        oCLoader = (XComponentLoader) UnoRuntime.queryInterface(
+        oCLoader = UnoRuntime.queryInterface(
             XComponentLoader.class, oDesktop);
     }
 
@@ -97,7 +97,7 @@ public class SOfficeFactory {
 
         if (oDoc != null) {
             DesktopTools.bringWindowToFront(oDoc);
-            return (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, oDoc);
+            return UnoRuntime.queryInterface(XTextDocument.class, oDoc);
         } else {
             return null;
         }
@@ -116,7 +116,7 @@ public class SOfficeFactory {
 
         if (oDoc != null) {
             DesktopTools.bringWindowToFront(oDoc);
-            return (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, oDoc);
+            return UnoRuntime.queryInterface(XTextDocument.class, oDoc);
         } else {
             return null;
         }
@@ -134,7 +134,7 @@ public class SOfficeFactory {
 
         if (oDoc != null) {
             DesktopTools.bringWindowToFront(oDoc);
-            return (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, oDoc);
+            return UnoRuntime.queryInterface(XSpreadsheetDocument.class, oDoc);
         } else {
             return null;
         }
@@ -152,7 +152,7 @@ public class SOfficeFactory {
 
         if (oDoc != null) {
             DesktopTools.bringWindowToFront(oDoc);
-            return (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, oDoc);
+            return UnoRuntime.queryInterface(XSpreadsheetDocument.class, oDoc);
         } else {
             return null;
         }
@@ -230,7 +230,7 @@ public class SOfficeFactory {
 
         if (oDoc != null) {
             DesktopTools.bringWindowToFront(oDoc);
-            return (XChartDocument) UnoRuntime.queryInterface(XChartDocument.class, oDoc);
+            return UnoRuntime.queryInterface(XChartDocument.class, oDoc);
         } else {
             return null;
         }
@@ -295,7 +295,7 @@ public class SOfficeFactory {
     public static void insertString(XTextDocument xTextDoc, String cString)
         throws com.sun.star.uno.Exception {
         XText xText = xTextDoc.getText();
-        XText oText = (XText) UnoRuntime.queryInterface(
+        XText oText = UnoRuntime.queryInterface(
             XText.class, xText);
 
         XTextCursor oCursor = oText.createTextCursor();
@@ -306,7 +306,7 @@ public class SOfficeFactory {
         XTextContent xCont)
         throws com.sun.star.lang.IllegalArgumentException {
         XText xText = xTextDoc.getText();
-        XText oText = (XText) UnoRuntime.queryInterface(
+        XText oText = UnoRuntime.queryInterface(
             XText.class, xText);
 
         XTextCursor oCursor = oText.createTextCursor();
@@ -372,12 +372,12 @@ public class SOfficeFactory {
     public static XTextContent createIndex(XTextDocument xTextDoc, String kind)
         throws com.sun.star.uno.Exception {
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class,
+        XMultiServiceFactory oDocMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class,
             xTextDoc);
 
         Object oInt = oDocMSF.createInstance(kind);
 
-        XTextContent xTC = (XTextContent) UnoRuntime.queryInterface(XDocumentIndex.class, oInt);
+        XTextContent xTC = UnoRuntime.queryInterface(XDocumentIndex.class, oInt);
 
         return xTC;
 
@@ -386,28 +386,28 @@ public class SOfficeFactory {
     public static XSpreadsheet createSpreadsheet(XSpreadsheetDocument oDoc)
         throws com.sun.star.uno.Exception {
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
+        XMultiServiceFactory oDocMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
 
         Object oInt = oDocMSF.createInstance(
             "com.sun.star.sheet.Spreadsheet");
 
-        XSpreadsheet oSpreadsheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, oInt);
+        XSpreadsheet oSpreadsheet = UnoRuntime.queryInterface(XSpreadsheet.class, oInt);
 
         return oSpreadsheet;
     }
 
     public static XIndexAccess getTableCollection(XTextDocument oDoc) {
 
-        XTextTablesSupplier oTTS = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, oDoc);
+        XTextTablesSupplier oTTS = UnoRuntime.queryInterface(XTextTablesSupplier.class, oDoc);
 
         XNameAccess oNA = oTTS.getTextTables();
-        XIndexAccess oIA = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, oNA);
+        XIndexAccess oIA = UnoRuntime.queryInterface(XIndexAccess.class, oNA);
 
         return oIA;
     }
 
     public static String getUniqueName(XInterface oInterface, String prefix) {
-        XNameAccess oNameAccess = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, oInterface);
+        XNameAccess oNameAccess = UnoRuntime.queryInterface(XNameAccess.class, oInterface);
         if (oNameAccess == null) {
             return null;
         }
@@ -437,11 +437,11 @@ public class SOfficeFactory {
         XDiagram oDiagram = null;
 
         //get LineDiagram
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
+        XMultiServiceFactory oDocMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
 
         try {
             oInterface = (XInterface) oDocMSF.createInstance("com.sun.star.chart." + kind);
-            oDiagram = (XDiagram) UnoRuntime.queryInterface(XDiagram.class, oInterface);
+            oDiagram = UnoRuntime.queryInterface(XDiagram.class, oInterface);
         } catch (Exception e) {
             // Some exception occurred. FAILED
             System.out.println("Couldn't create " + kind + "-Diagram " + e);
@@ -456,7 +456,7 @@ public class SOfficeFactory {
 
         XInterface oControl = null;
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
+        XMultiServiceFactory oDocMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
 
         try {
             oControl = (XInterface) oDocMSF.createInstance("com.sun.star.form.component." + kind);
@@ -474,7 +474,7 @@ public class SOfficeFactory {
 
         Object oInstance = null;
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
+        XMultiServiceFactory oDocMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
 
         try {
             oInstance = (Object) oDocMSF.createInstance(kind);
@@ -493,13 +493,13 @@ public class SOfficeFactory {
         XControlModel aControl = null;
 
         //get MSF
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
+        XMultiServiceFactory oDocMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, oDoc);
 
         try {
             Object oInt = oDocMSF.createInstance("com.sun.star.drawing.ControlShape");
             Object aCon = oDocMSF.createInstance("com.sun.star.form.component." + kind);
-            aControl = (XControlModel) UnoRuntime.queryInterface(XControlModel.class, aCon);
-            oCShape = (XControlShape) UnoRuntime.queryInterface(XControlShape.class, oInt);
+            aControl = UnoRuntime.queryInterface(XControlModel.class, aCon);
+            oCShape = UnoRuntime.queryInterface(XControlShape.class, oInt);
             size.Height = height;
             size.Width = width;
             position.X = x;
@@ -613,7 +613,7 @@ public class SOfficeFactory {
     // query for XServiceInfo
     public Object queryXServiceInfo(Object oObj) {
         if (oObj != null) {
-            XServiceInfo oInfo = (XServiceInfo) UnoRuntime.queryInterface(
+            XServiceInfo oInfo = UnoRuntime.queryInterface(
                 XServiceInfo.class, oObj);
             System.out.println("!!!! XServiceInfo n.a. !!!! ");
         } else {

@@ -61,13 +61,13 @@ public class ViewSample extends SpreadsheetDocHelper
     public void doSampleFunction() throws Exception
     {
         com.sun.star.sheet.XSpreadsheetDocument xDoc = getDocument();
-        com.sun.star.frame.XModel xModel = (com.sun.star.frame.XModel)
+        com.sun.star.frame.XModel xModel =
             UnoRuntime.queryInterface( com.sun.star.frame.XModel.class, xDoc);
         com.sun.star.frame.XController xController = xModel.getCurrentController();
 
         // --- Spreadsheet view ---
         // freeze the first column and first two rows
-        com.sun.star.sheet.XViewFreezable xFreeze = (com.sun.star.sheet.XViewFreezable)
+        com.sun.star.sheet.XViewFreezable xFreeze =
             UnoRuntime.queryInterface( com.sun.star.sheet.XViewFreezable.class, xController );
         if ( null != xFreeze )
             System.out.println( "got xFreeze" );
@@ -75,27 +75,27 @@ public class ViewSample extends SpreadsheetDocHelper
 
         // --- View pane ---
         // get the cell range shown in the second pane and assign a cell background to them
-        com.sun.star.container.XIndexAccess xIndex = (com.sun.star.container.XIndexAccess)
+        com.sun.star.container.XIndexAccess xIndex =
             UnoRuntime.queryInterface( com.sun.star.container.XIndexAccess.class, xController );
         Object aPane = xIndex.getByIndex(1);
-        com.sun.star.sheet.XCellRangeReferrer xRefer = (com.sun.star.sheet.XCellRangeReferrer)
+        com.sun.star.sheet.XCellRangeReferrer xRefer =
             UnoRuntime.queryInterface( com.sun.star.sheet.XCellRangeReferrer.class, aPane );
         com.sun.star.table.XCellRange xRange = xRefer.getReferredCells();
-        com.sun.star.beans.XPropertySet xRangeProp = (com.sun.star.beans.XPropertySet)
+        com.sun.star.beans.XPropertySet xRangeProp =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xRange );
         xRangeProp.setPropertyValue( "IsCellBackgroundTransparent", new Boolean( false ) );
         xRangeProp.setPropertyValue( "CellBackColor", new Integer( 0xFFFFCC ) );
 
         // --- View settings ---
         // change the view to display green grid lines
-        com.sun.star.beans.XPropertySet xProp = (com.sun.star.beans.XPropertySet)
+        com.sun.star.beans.XPropertySet xProp =
             UnoRuntime.queryInterface( com.sun.star.beans.XPropertySet.class, xController );
         xProp.setPropertyValue( "ShowGrid", new Boolean(true) );
         xProp.setPropertyValue( "GridColor", new Integer(0x00CC00) );
 
         // --- Range selection ---
         // let the user select a range and use it as the view's selection
-        com.sun.star.sheet.XRangeSelection xRngSel = (com.sun.star.sheet.XRangeSelection)
+        com.sun.star.sheet.XRangeSelection xRngSel =
             UnoRuntime.queryInterface( com.sun.star.sheet.XRangeSelection.class, xController );
         ExampleRangeListener aListener = new ExampleRangeListener();
         xRngSel.addRangeSelectionListener( aListener );
@@ -114,9 +114,9 @@ public class ViewSample extends SpreadsheetDocHelper
         xRngSel.removeRangeSelectionListener( aListener );
         if ( aListener.aResult != null && aListener.aResult.length() != 0 )
         {
-            com.sun.star.view.XSelectionSupplier xSel = (com.sun.star.view.XSelectionSupplier)
+            com.sun.star.view.XSelectionSupplier xSel =
                 UnoRuntime.queryInterface( com.sun.star.view.XSelectionSupplier.class, xController );
-            com.sun.star.sheet.XSpreadsheetView xView = (com.sun.star.sheet.XSpreadsheetView)
+            com.sun.star.sheet.XSpreadsheetView xView =
                 UnoRuntime.queryInterface( com.sun.star.sheet.XSpreadsheetView.class, xController );
             com.sun.star.sheet.XSpreadsheet xSheet = xView.getActiveSheet();
             com.sun.star.table.XCellRange xResultRange = xSheet.getCellRangeByName( aListener.aResult );

@@ -142,10 +142,10 @@ public class PageNumberField {
 	 * @throws Exception
 	 */
 	private void createPageNumberFiled(XTextDocument document) throws Exception {
-		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
-		XTextField  pageNumberFiled = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.PageNumber"));
+		XMultiServiceFactory sevriceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XTextField  pageNumberFiled = UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.PageNumber"));
 
-		XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, pageNumberFiled);
+		XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, pageNumberFiled);
 		props.setPropertyValue("NumberingType", NumberingType.ARABIC);//Set page number display as Arabic
 
 		SWUtil.moveCuror2End(document);
@@ -179,12 +179,12 @@ public class PageNumberField {
 	 * @throws Exception
 	 */
 	private boolean isContainPageNumberField(XTextDocument document) throws Exception {
-		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
 			  	Object field =  enumeration.nextElement();
-				XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
+				XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, field);
 				short numberType = (Short) props.getPropertyValue("NumberingType");
 			    return numberType == 4;
 

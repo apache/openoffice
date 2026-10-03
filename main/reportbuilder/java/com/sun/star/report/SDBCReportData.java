@@ -57,7 +57,7 @@ public class SDBCReportData implements DataSource
 
     public SDBCReportData(final XRowSet rowSet) throws SQLException
     {
-        row = (XRow) UnoRuntime.queryInterface(XRow.class, rowSet);
+        row = UnoRuntime.queryInterface(XRow.class, rowSet);
         this.rowSet = rowSet;
 
         if (rowSet == null)
@@ -69,17 +69,17 @@ public class SDBCReportData implements DataSource
         }
         else
         {
-            final XParametersSupplier xSuppParams = (XParametersSupplier) UnoRuntime.queryInterface(
+            final XParametersSupplier xSuppParams = UnoRuntime.queryInterface(
                     XParametersSupplier.class, rowSet);
             if (xSuppParams != null)
             {
                 parameters = xSuppParams.getParameters();
             }
 
-            final XColumnsSupplier columnsSup = (XColumnsSupplier) UnoRuntime.queryInterface(XColumnsSupplier.class, rowSet);
+            final XColumnsSupplier columnsSup = UnoRuntime.queryInterface(XColumnsSupplier.class, rowSet);
             final XNameAccess columns = columnsSup.getColumns();
             final String[] columnNamesList = columns.getElementNames();
-            final XResultSetMetaDataSupplier sup = (XResultSetMetaDataSupplier) UnoRuntime.queryInterface(XResultSetMetaDataSupplier.class, rowSet);
+            final XResultSetMetaDataSupplier sup = UnoRuntime.queryInterface(XResultSetMetaDataSupplier.class, rowSet);
             final XResultSetMetaData resultSetMetaData = sup.getMetaData();
 
             columnCount = resultSetMetaData.getColumnCount();
@@ -103,7 +103,7 @@ public class SDBCReportData implements DataSource
                 {
                     try
                     {
-                        final XPropertySet paramColumn = (XPropertySet) UnoRuntime.queryInterface(
+                        final XPropertySet paramColumn = UnoRuntime.queryInterface(
                                 XPropertySet.class, parameters.getByIndex(i - firstParameterIndex));
                         columnNames[i - 1] = (String) paramColumn.getPropertyValue("Name");
                         columnTypes[i - 1] = (Integer) paramColumn.getPropertyValue("Type");
@@ -303,7 +303,7 @@ public class SDBCReportData implements DataSource
             final boolean wasNull;
             if (isParameterValue)
             {
-                final XPropertySet paramCol = (XPropertySet) UnoRuntime.queryInterface(
+                final XPropertySet paramCol = UnoRuntime.queryInterface(
                         XPropertySet.class, parameters.getByIndex(column - firstParameterIndex));
                 obj = paramCol.getPropertyValue("Value");
                 wasNull = obj == null;

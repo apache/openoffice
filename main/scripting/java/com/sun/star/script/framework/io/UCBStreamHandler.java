@@ -119,7 +119,7 @@ public class UCBStreamHandler extends URLStreamHandler {
 
                     // we will only deal with simple file write
                     XOutputStream xos = m_xSimpleFileAccess.openFileWrite( path );
-                    XTruncate xtrunc = ( XTruncate ) UnoRuntime.queryInterface( XTruncate.class, xos );
+                    XTruncate xtrunc = UnoRuntime.queryInterface( XTruncate.class, xos );
                     if ( xtrunc != null )
                     {
                         xtrunc.truncate();

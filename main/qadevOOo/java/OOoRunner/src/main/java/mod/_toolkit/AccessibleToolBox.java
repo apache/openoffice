@@ -75,7 +75,7 @@ public class AccessibleToolBox extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class,
+        the_Desk = UnoRuntime.queryInterface(XDesktop.class,
                 DesktopTools.createDesktop(
                 (XMultiServiceFactory) Param.getMSF()));
     }
@@ -163,7 +163,7 @@ public class AccessibleToolBox extends TestCase {
 
         util.dbg.printInterfaces(child);
 
-        final XAccessibleAction action = (XAccessibleAction) UnoRuntime.queryInterface(
+        final XAccessibleAction action = UnoRuntime.queryInterface(
                 XAccessibleAction.class,
                 child);
 

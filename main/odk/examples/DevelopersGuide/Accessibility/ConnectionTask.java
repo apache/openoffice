@@ -91,7 +91,7 @@ class ConnectionTask
                 com.sun.star.lang.EventObject aEvent = new com.sun.star.lang.EventObject();
                 for (int i=0; i<nTopWindowCount; i++)
                 {
-                    XAccessible xAccessible = (XAccessible) UnoRuntime.queryInterface(
+                    XAccessible xAccessible = UnoRuntime.queryInterface(
                         XAccessible.class,
                         xToolkit.getTopWindow(i));
                     XAccessibleContext xContext = xAccessible.getAccessibleContext();
@@ -132,7 +132,7 @@ class ConnectionTask
         {
             if (xFactory != null)
             {
-                xToolkit = (XExtendedToolkit) UnoRuntime.queryInterface(
+                xToolkit = UnoRuntime.queryInterface(
                     XExtendedToolkit.class,
                     xFactory.createInstance ("stardiv.Toolkit.VCLXToolkit"));
             }
@@ -167,7 +167,7 @@ class ConnectionTask
             com.sun.star.lang.XMultiComponentFactory xMCF =
                 xCmpContext.getServiceManager();
 
-            return (XMultiServiceFactory) UnoRuntime.queryInterface (
+            return UnoRuntime.queryInterface (
                 XMultiServiceFactory.class, xMCF);
         }
 

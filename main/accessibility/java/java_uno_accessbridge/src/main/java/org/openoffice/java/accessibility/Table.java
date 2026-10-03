@@ -135,7 +135,7 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
         protected XAccessibleTable unoAccessibleTable;
 
         public AccessibleTable() {
-            unoAccessibleTable = (XAccessibleTable) UnoRuntime.queryInterface(XAccessibleTable.class, unoAccessibleContext);
+            unoAccessibleTable = UnoRuntime.queryInterface(XAccessibleTable.class, unoAccessibleContext);
         }
 
         /** Gets the role of this object */
@@ -464,7 +464,7 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
             try {
                 java.util.ArrayList list = new java.util.ArrayList(targetSet.length);
                 for (int i=0; i < targetSet.length; i++) {
-                    XAccessible xAccessible = (XAccessible) UnoRuntime.queryInterface(
+                    XAccessible xAccessible = UnoRuntime.queryInterface(
                         XAccessible.class, targetSet[i]);
                     if (xAccessible != null) {
                         list.add(new TableCell(xAccessible));
@@ -655,7 +655,7 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
             /** Gets the AccessibleComponent associated with this object that has a graphical representation */
             public javax.accessibility.AccessibleComponent getAccessibleComponent() {
                 try {
-                    XAccessibleComponent unoAccessibleComponent = (XAccessibleComponent)
+                    XAccessibleComponent unoAccessibleComponent =
                         UnoRuntime.queryInterface(XAccessibleComponent.class, unoAccessibleContext);
                     return (unoAccessibleComponent != null) ?
                         new AccessibleComponentImpl(unoAccessibleComponent) : null;
@@ -667,7 +667,7 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
             /** Gets the AccessibleAction associated with this object that has a graphical representation */
             public javax.accessibility.AccessibleAction getAccessibleAction() {
                 try {
-                    XAccessibleAction unoAccessibleAction = (XAccessibleAction)
+                    XAccessibleAction unoAccessibleAction =
                         UnoRuntime.queryInterface(XAccessibleAction.class, unoAccessibleContext);
                     return (unoAccessibleAction != null) ?
                         new AccessibleActionImpl(unoAccessibleAction) : null;
@@ -683,7 +683,7 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
                     return null;
 
                 try {
-                    XAccessibleText unoAccessibleText = (XAccessibleText)
+                    XAccessibleText unoAccessibleText =
                         UnoRuntime.queryInterface(XAccessibleText.class, unoAccessibleContext);
                     return (unoAccessibleText != null) ?
                         new AccessibleTextImpl(unoAccessibleText) : null;
@@ -695,7 +695,7 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
             /** Gets the AccessibleValue associated with this object that has a graphical representation */
             public javax.accessibility.AccessibleValue getAccessibleValue() {
                 try {
-                    XAccessibleValue unoAccessibleValue = (XAccessibleValue)
+                    XAccessibleValue unoAccessibleValue =
                         UnoRuntime.queryInterface(XAccessibleValue.class, unoAccessibleContext);
                     return (unoAccessibleValue != null) ?
                         new AccessibleValueImpl(unoAccessibleValue) : null;
@@ -707,7 +707,7 @@ public class Table extends DescendantManager implements javax.accessibility.Acce
             /** Gets the AccessibleText associated with this object presenting text on the display */
             public javax.accessibility.AccessibleIcon[] getAccessibleIcon() {
                 try {
-                    XAccessibleImage unoAccessibleImage = (XAccessibleImage)
+                    XAccessibleImage unoAccessibleImage =
                         UnoRuntime.queryInterface(XAccessibleImage.class, unoAccessibleContext);
                     if (unoAccessibleImage != null) {
                         javax.accessibility.AccessibleIcon[] icons = { new AccessibleIconImpl(unoAccessibleImage) };

@@ -100,17 +100,17 @@ public class AccessibleListItem extends TestCase {
             throw new StatusException("Couldn't get toolkit", e);
         }
 
-        XExtendedToolkit tk = (XExtendedToolkit) UnoRuntime.queryInterface(
+        XExtendedToolkit tk = UnoRuntime.queryInterface(
                                       XExtendedToolkit.class, oObj);
 
         shortWait();
 
-        XModel aModel1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel aModel1 = UnoRuntime.queryInterface(XModel.class,
                                                             xTextDoc);
 
         XController secondController = aModel1.getCurrentController();
 
-        XDispatchProvider aProv = (XDispatchProvider) UnoRuntime.queryInterface(
+        XDispatchProvider aProv = UnoRuntime.queryInterface(
                                           XDispatchProvider.class,
                                           secondController);
 
@@ -119,7 +119,7 @@ public class AccessibleListItem extends TestCase {
         try {
             XInterface transf = (XInterface) msf.createInstance(
                                         "com.sun.star.util.URLTransformer");
-            urlTransf = (XURLTransformer) UnoRuntime.queryInterface(
+            urlTransf = UnoRuntime.queryInterface(
                                 XURLTransformer.class, transf);
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
@@ -142,7 +142,7 @@ public class AccessibleListItem extends TestCase {
 
         AccessibilityTools at = new AccessibilityTools();
 
-        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class,
+        XWindow xWindow = UnoRuntime.queryInterface(XWindow.class,
                                                               tk.getActiveTopWindow());
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
@@ -152,14 +152,14 @@ public class AccessibleListItem extends TestCase {
         // obtaining 'Close' button
         oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PUSH_BUTTON,
                                              "Close");
-        action = (XAccessibleAction) UnoRuntime.queryInterface(
+        action = UnoRuntime.queryInterface(
                          XAccessibleAction.class, oObj);
 
         // Selecting 'New Document' tab
         try {
             oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.TREE);
 
-            XAccessibleSelection xAccSel = (XAccessibleSelection) UnoRuntime.queryInterface(
+            XAccessibleSelection xAccSel = UnoRuntime.queryInterface(
                                                    XAccessibleSelection.class,
                                                    oObj);
             xAccSel.selectAccessibleChild(3);
@@ -179,7 +179,7 @@ public class AccessibleListItem extends TestCase {
 
         tEnv.addObjRelation("LimitedBounds", "yes");
 
-        final XAccessibleComponent acomp = (XAccessibleComponent) UnoRuntime.queryInterface(
+        final XAccessibleComponent acomp = UnoRuntime.queryInterface(
                                                    XAccessibleComponent.class,
                                                    oObj);
         tEnv.addObjRelation("EventProducer",

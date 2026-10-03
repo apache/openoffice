@@ -86,7 +86,7 @@ class TextActionDialog
         maText.setEditable (false);
         aContent.add (maText, BorderLayout.CENTER);
 
-        XAccessibleText xText = (XAccessibleText)UnoRuntime.queryInterface(
+        XAccessibleText xText = UnoRuntime.queryInterface(
             XAccessibleText.class, mxContext);
         String sText = xText.getText();
         maText.setText (sText);
@@ -154,13 +154,13 @@ class TextActionDialog
         try
         {
             XAccessibleText xText =
-                (XAccessibleText)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XAccessibleText.class, mxContext);
             if (xText != null)
                 bSuccess = bSuccess && TextAction (xText);
 
             XAccessibleEditableText xEditableText =
-                (XAccessibleEditableText)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XAccessibleEditableText.class, mxContext);
             if (xEditableText != null)
                 bSuccess = bSuccess && EditableTextAction (xEditableText);

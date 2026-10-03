@@ -124,10 +124,10 @@ public class SwXDocumentIndex extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(xTC);
 
-        tEnv.addObjRelation("CONTENT", (XTextContent)
+        tEnv.addObjRelation("CONTENT",
                         UnoRuntime.queryInterface(XTextContent.class,instance));
         oCursor.gotoEnd(false);
-        tEnv.addObjRelation("RANGE", (XTextRange)
+        tEnv.addObjRelation("RANGE",
                         UnoRuntime.queryInterface(XTextRange.class, oCursor));
 
         // relation for XDocumentIndex

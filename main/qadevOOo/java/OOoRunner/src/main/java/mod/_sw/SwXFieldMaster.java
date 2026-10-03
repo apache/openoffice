@@ -89,7 +89,7 @@ public class SwXFieldMaster extends TestCase {
 
         log.println( "creating a test environment" );
         try {
-            XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oDocMSF =
                 UnoRuntime.queryInterface( XMultiServiceFactory.class, xTextDoc );
             oObj = (XInterface)
                 oDocMSF.createInstance( "com.sun.star.text.FieldMaster.Database" );

@@ -67,7 +67,7 @@ public UnoMenu(XComponentContext _xContext, XMultiComponentFactory _xMCF) {
     try{
         // create a popup menu
         Object oPopupMenu = m_xMCF.createInstanceWithContext("com.sun.star.awt.PopupMenu", m_xContext);
-        xPopupMenu = (XPopupMenu) UnoRuntime.queryInterface(XPopupMenu.class, oPopupMenu);
+        xPopupMenu = UnoRuntime.queryInterface(XPopupMenu.class, oPopupMenu);
 
         // ID must start be > 0
         short nId = 1;
@@ -99,7 +99,7 @@ public UnoMenu(XComponentContext _xContext, XMultiComponentFactory _xMCF) {
         // create a menubar at the global MultiComponentFactory...
         Object oMenuBar = m_xMCF.createInstanceWithContext("com.sun.star.awt.MenuBar", m_xContext);
         // add the menu items...
-        XMenuBar xMenuBar = (XMenuBar) UnoRuntime.queryInterface(XMenuBar.class, oMenuBar);
+        XMenuBar xMenuBar = UnoRuntime.queryInterface(XMenuBar.class, oMenuBar);
         xMenuBar.insertItem((short) 1, "~First MenuBar Item", com.sun.star.awt.MenuItemStyle.AUTOCHECK, (short) 0);
         xMenuBar.insertItem((short) 2, "~Second MenuBar Item", com.sun.star.awt.MenuItemStyle.AUTOCHECK, (short) 1);
         xMenuBar.setPopupMenu((short) 1, getPopupMenu());
@@ -110,7 +110,7 @@ public UnoMenu(XComponentContext _xContext, XMultiComponentFactory _xMCF) {
     }}
 
     protected void closeDialog(){
-        XComponent xComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, mxTopWindow);
+        XComponent xComponent = UnoRuntime.queryInterface(XComponent.class, mxTopWindow);
         if (xComponent != null){
             xComponent.dispose();
         }
@@ -124,7 +124,7 @@ public UnoMenu(XComponentContext _xContext, XMultiComponentFactory _xMCF) {
     try {
         // The Toolkit is the creator of all windows...
         Object oToolkit = m_xMCF.createInstanceWithContext("com.sun.star.awt.Toolkit", m_xContext);
-        XToolkit xToolkit = (XToolkit) UnoRuntime.queryInterface(XToolkit.class, oToolkit);
+        XToolkit xToolkit = UnoRuntime.queryInterface(XToolkit.class, oToolkit);
 
         // set up a window description and create the window. A parent window is always necessary for this...
         com.sun.star.awt.WindowDescriptor aWindowDescriptor = new com.sun.star.awt.WindowDescriptor();
@@ -137,17 +137,17 @@ public UnoMenu(XComponentContext _xContext, XMultiComponentFactory _xMCF) {
 
         // create the window...
         XWindowPeer xWindowPeer = xToolkit.createWindow(aWindowDescriptor);
-        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, xWindowPeer);
+        XWindow xWindow = UnoRuntime.queryInterface(XWindow.class, xWindowPeer);
 
         // create a frame and initialize it with the created window...
         Object oFrame = m_xMCF.createInstanceWithContext("com.sun.star.frame.Frame", m_xContext);
-        m_xFrame = (XFrame) UnoRuntime.queryInterface(XFrame.class, oFrame);
+        m_xFrame = UnoRuntime.queryInterface(XFrame.class, oFrame);
 
         Object oDesktop = m_xMCF.createInstanceWithContext("com.sun.star.frame.Desktop", m_xContext);
-        XFramesSupplier xFramesSupplier = (XFramesSupplier) UnoRuntime.queryInterface(XFramesSupplier.class, oDesktop);
+        XFramesSupplier xFramesSupplier = UnoRuntime.queryInterface(XFramesSupplier.class, oDesktop);
         m_xFrame.setCreator(xFramesSupplier);
         // get the XTopWindow interface..
-        xTopWindow = (XTopWindow) UnoRuntime.queryInterface(XTopWindow.class, xWindow);
+        xTopWindow = UnoRuntime.queryInterface(XTopWindow.class, xWindow);
     } catch (com.sun.star.lang.IllegalArgumentException ex) {
         ex.printStackTrace();
     } catch (com.sun.star.uno.Exception ex) {
@@ -157,7 +157,7 @@ public UnoMenu(XComponentContext _xContext, XMultiComponentFactory _xMCF) {
     }
 
     public void addMenuBar(XWindow _xWindow){
-        XTopWindow xTopWindow = (XTopWindow) UnoRuntime.queryInterface(XTopWindow.class, _xWindow);
+        XTopWindow xTopWindow = UnoRuntime.queryInterface(XTopWindow.class, _xWindow);
         addMenuBar(xTopWindow, this);
     }
 

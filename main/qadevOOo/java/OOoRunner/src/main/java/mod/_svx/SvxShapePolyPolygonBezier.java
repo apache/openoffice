@@ -189,12 +189,12 @@ public class SvxShapePolyPolygonBezier extends TestCase {
 
             SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)tParam.getMSF());
 
-            XMultiServiceFactory xMSF = (XMultiServiceFactory)
+            XMultiServiceFactory xMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, xDrawDoc) ;
 
             XInterface oInst = (XInterface) xMSF.createInstance
                 ("com.sun.star.drawing.ClosedBezierShape") ;
-            oShape = (XShape) UnoRuntime.queryInterface
+            oShape = UnoRuntime.queryInterface
                 (XShape.class, oInst) ;
 
             Point[] points = new Point[2];
@@ -226,7 +226,7 @@ public class SvxShapePolyPolygonBezier extends TestCase {
 
             oObj = oShape ;
 
-            XPropertySet shapeProps = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet shapeProps = UnoRuntime.queryInterface
                 (XPropertySet.class, oObj);
 
             shapeProps.setPropertyValue("PolyPolygonBezier",coords);
@@ -245,7 +245,7 @@ public class SvxShapePolyPolygonBezier extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         log.println( "adding two styles as ObjRelation for ShapeDescriptor" );
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
@@ -253,7 +253,7 @@ public class SvxShapePolyPolygonBezier extends TestCase {
                 new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
         tEnv.addObjRelation("Style1",aStyle);
-        oShapeProps = (XPropertySet)
+        oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
             aStyle = (XStyle) AnyConverter.toObject(

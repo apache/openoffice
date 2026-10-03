@@ -101,7 +101,7 @@ public class ScAccessiblePageHeader extends TestCase {
         XCell xCell = null;
         try {
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = null;
             try {
@@ -120,16 +120,16 @@ public class ScAccessiblePageHeader extends TestCase {
             e.printStackTrace(log);
         }
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XController xController = aModel.getCurrentController();
 
         // switching to 'Page Preview' mode
         try {
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             ( (XMultiServiceFactory) Param.getMSF()).createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of URL objects.
@@ -163,7 +163,7 @@ public class ScAccessiblePageHeader extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        XStyleFamiliesSupplier StyleFam = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class,
                 xSpreadsheetDoc );
@@ -187,7 +187,7 @@ public class ScAccessiblePageHeader extends TestCase {
         }
 
         //get the property-set
-        final XPropertySet PropSet = (XPropertySet)
+        final XPropertySet PropSet =
             UnoRuntime.queryInterface(XPropertySet.class, StdStyle);
 
         XHeaderFooterContent RPHC = null;
@@ -244,7 +244,7 @@ public class ScAccessiblePageHeader extends TestCase {
     protected void cleanup( TestParameters Param, PrintWriter log) {
         log.println( "    disposing xSheetDoc " );
         try {
-        XCloseable oComp = (XCloseable)
+        XCloseable oComp =
             UnoRuntime.queryInterface (XCloseable.class, xSpreadsheetDoc) ;
         oComp.close(true);
         } catch(com.sun.star.util.CloseVetoException e) {

@@ -118,12 +118,12 @@ public class SwXTextField extends TestCase {
 
           // create testobject here
         try {
-            XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oDocMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
 
             Object FieldMaster = oDocMSF.createInstance
                 ( "com.sun.star.text.FieldMaster.Database" );
-            XPropertySet PFieldMaster = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet PFieldMaster = UnoRuntime.queryInterface
                 (XPropertySet.class,(XInterface) FieldMaster);
             oObj = (XInterface) oDocMSF.createInstance
                 ( "com.sun.star.text.TextField.Database" );
@@ -131,7 +131,7 @@ public class SwXTextField extends TestCase {
             instance = (XInterface) oDocMSF.createInstance
                 ( "com.sun.star.text.TextField.DateTime" );
 
-            XDependentTextField xTF = (XDependentTextField)
+            XDependentTextField xTF =
                 UnoRuntime.queryInterface(XDependentTextField.class,oObj);
 
             PFieldMaster.setPropertyValue("DataBaseName","Address Book File");
@@ -139,7 +139,7 @@ public class SwXTextField extends TestCase {
             PFieldMaster.setPropertyValue("DataColumnName","FIRSTNAME");
             XText the_Text = xTextDoc.getText();
             XTextCursor the_Cursor = the_Text.createTextCursor();
-            XTextContent the_Field = (XTextContent)
+            XTextContent the_Field =
                              UnoRuntime.queryInterface(XTextContent.class,oObj);
 
             xTF.attachTextFieldMaster(PFieldMaster);
@@ -154,7 +154,7 @@ public class SwXTextField extends TestCase {
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
 
-        tEnv.addObjRelation("CONTENT", (XTextContent)
+        tEnv.addObjRelation("CONTENT",
                         UnoRuntime.queryInterface(XTextContent.class,instance));
         tEnv.addObjRelation("RANGE", xTextDoc.getText().createTextCursor());
 

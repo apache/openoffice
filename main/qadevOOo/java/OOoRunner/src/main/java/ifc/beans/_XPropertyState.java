@@ -75,7 +75,7 @@ public class _XPropertyState extends MultiMethodTest {
         * implemented by object.
         */
         public void before() throws StatusException {
-            oPS = (XPropertySet)
+            oPS =
                 UnoRuntime.queryInterface( XPropertySet.class, oObj );
             if (oPS == null)
                 throw new StatusException

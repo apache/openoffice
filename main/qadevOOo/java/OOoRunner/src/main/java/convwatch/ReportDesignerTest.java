@@ -80,7 +80,7 @@ class PropertySetHelper
     XPropertySet m_xPropertySet;
     public PropertySetHelper(Object _aObj)
         {
-            m_xPropertySet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, _aObj);
+            m_xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, _aObj);
         }
 
     /**
@@ -204,7 +204,7 @@ public class ReportDesignerTest extends ComplexTestCase {
                 try
                 {
                     XInterface xInterface = (XInterface) m_xXMultiServiceFactory.createInstance( "com.sun.star.frame.Desktop" );
-                    m_xDesktop = (XDesktop) UnoRuntime.queryInterface(XDesktop.class, xInterface);
+                    m_xDesktop = UnoRuntime.queryInterface(XDesktop.class, xInterface);
                 }
                 catch (com.sun.star.uno.Exception e)
                 {
@@ -387,26 +387,26 @@ public class ReportDesignerTest extends ComplexTestCase {
                 assure("can't create instance of com.sun.star.sdb.DatabaseContext", x != null);
                 log.println("createInstance com.sun.star.sdb.DatabaseContext done");
 
-                XNameAccess xNameAccess = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, x);
+                XNameAccess xNameAccess = UnoRuntime.queryInterface(XNameAccess.class, x);
                 showElements(xNameAccess);
                 Object aObj = xNameAccess.getByName(sFileURL);
 //                    log.println("1");
 
                     // PropertySetHelper aHelper = new PropertySetHelper(aObj);
-                XDocumentDataSource xDataSource = (XDocumentDataSource)UnoRuntime.queryInterface(XDocumentDataSource.class, aObj);
+                XDocumentDataSource xDataSource = UnoRuntime.queryInterface(XDocumentDataSource.class, aObj);
 //                    Object aDatabaseDocmuent = aHelper.getPropertyValueAsObject("DatabaseDocument");
                 XOfficeDatabaseDocument xOfficeDBDoc = xDataSource.getDatabaseDocument();
 
-                // XOfficeDatabaseDocument xOfficeDBDoc = (XOfficeDatabaseDocument)UnoRuntime.queryInterface(XOfficeDatabaseDocument.class, aDatabaseDocument);
+                // XOfficeDatabaseDocument xOfficeDBDoc = UnoRuntime.queryInterface(XOfficeDatabaseDocument.class, aDatabaseDocument);
                 assure("can't access DatabaseDocument", xOfficeDBDoc != null);
 //                    log.println("2");
 
-                XModel xDBSource = (XModel)UnoRuntime.queryInterface(XModel.class, xOfficeDBDoc);
+                XModel xDBSource = UnoRuntime.queryInterface(XModel.class, xOfficeDBDoc);
                 Object aController = xDBSource.getCurrentController();
                 assure("Controller of xOfficeDatabaseDocument is empty!", aController != null);
 //                     log.println("3");
 
-                XDatabaseDocumentUI aDBDocUI = (XDatabaseDocumentUI)UnoRuntime.queryInterface(XDatabaseDocumentUI.class, aController);
+                XDatabaseDocumentUI aDBDocUI = UnoRuntime.queryInterface(XDatabaseDocumentUI.class, aController);
                 aDBDocUI.connect();
 //                     if (aDBDocUI.isConnected())
 //                     {
@@ -425,7 +425,7 @@ public class ReportDesignerTest extends ComplexTestCase {
                 assure("ActiveConnection is empty", aActiveConnectionObj != null);
 //                     log.println("5");
 
-                XReportDocumentsSupplier xSupplier = (XReportDocumentsSupplier)UnoRuntime.queryInterface(XReportDocumentsSupplier.class, xOfficeDBDoc);
+                XReportDocumentsSupplier xSupplier = UnoRuntime.queryInterface(XReportDocumentsSupplier.class, xOfficeDBDoc);
                 xNameAccess = xSupplier.getReportDocuments();
                 assure("xOfficeDatabaseDocument returns no Report Document", xNameAccess != null);
 //                     log.println("5");
@@ -518,7 +518,7 @@ public class ReportDesignerTest extends ComplexTestCase {
     private String getFormatExtension(Object _xComponent /* int _nType*/ )
          {
              String sExtension;
-             XServiceInfo xServiceInfo = (XServiceInfo) UnoRuntime.queryInterface( XServiceInfo.class, _xComponent );
+             XServiceInfo xServiceInfo = UnoRuntime.queryInterface( XServiceInfo.class, _xComponent );
              if ( xServiceInfo.supportsService( "com.sun.star.sheet.SpreadsheetDocument" ) )
              {
                  // calc
@@ -626,7 +626,7 @@ public class ReportDesignerTest extends ComplexTestCase {
             aPropertyList.add(aOverwrite);
 
             // store the document in an other directory
-            XStorable aStorable = (XStorable) UnoRuntime.queryInterface( XStorable.class, _xComponent);
+            XStorable aStorable = UnoRuntime.queryInterface( XStorable.class, _xComponent);
             if (aStorable != null)
             {
                 log.println("store document as URL: '" + sOutputURL + "'");
@@ -646,7 +646,7 @@ public class ReportDesignerTest extends ComplexTestCase {
     private XComponent loadComponent(String _sName, Object _xComponent, ArrayList _aPropertyList)
         {
             XComponent xDocComponent = null;
-            XComponentLoader xComponentLoader = (XComponentLoader) UnoRuntime.queryInterface( XComponentLoader.class, _xComponent );
+            XComponentLoader xComponentLoader = UnoRuntime.queryInterface( XComponentLoader.class, _xComponent );
 
             try
             {
@@ -673,7 +673,7 @@ public class ReportDesignerTest extends ComplexTestCase {
     private void closeComponent(XComponent _xDoc)
         {
             // Close the document
-            XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, _xDoc);
+            XCloseable xCloseable = UnoRuntime.queryInterface(XCloseable.class, _xDoc);
             try
             {
                 xCloseable.close(true);

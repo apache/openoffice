@@ -75,7 +75,7 @@ public class _XDispatchProvider extends MultiMethodTest {
 
         url.Complete = dispatchUrl;
         try {
-            XURLTransformer xParser=(XURLTransformer)
+            XURLTransformer xParser=
                 UnoRuntime.queryInterface(XURLTransformer.class,
                     ((XMultiServiceFactory)tParam.getMSF()).createInstance
                         ("com.sun.star.util.URLTransformer"));
@@ -110,7 +110,7 @@ public class _XDispatchProvider extends MultiMethodTest {
         url2.Complete = dispatchUrl;
         try {
             log.println("Parsing URL");
-            XURLTransformer xParser = (XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
                     ((XMultiServiceFactory)tParam.getMSF()).createInstance
                         ("com.sun.star.util.URLTransformer"));

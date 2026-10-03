@@ -89,11 +89,11 @@ public class ParagraphStyle {
 	@Test
 	public void ParaStyle() throws Exception {
 		Point po = new Point(5000, 5000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		// create the shape
 		XShape xRectangle = ShapeUtil.createShape(impressDocument, po, new Size(21000, 12500), "com.sun.star.drawing.RectangleShape");
 		 xShapes.add(xRectangle);
-		 XPropertySet xShapePropSet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xRectangle);
+		 XPropertySet xShapePropSet = UnoRuntime.queryInterface(XPropertySet.class, xRectangle);
 		 // TextFitToSize
 		 xShapePropSet.setPropertyValue("TextFitToSize", TextFitToSizeType.PROPORTIONAL);
 
@@ -139,7 +139,7 @@ public class ParagraphStyle {
 
 		// use its XShape interface to determine position and size before
 		// insertion
-		XShape xShape = (XShape) UnoRuntime.queryInterface(XShape.class, xObj);
+		XShape xShape = UnoRuntime.queryInterface(XShape.class, xObj);
 		xShape.setPosition(aPos);
 		xShape.setSize(aSize);
 		return xShape;
@@ -147,17 +147,17 @@ public class ParagraphStyle {
 
 	public static XPropertySet addPortion(XShape xShape, String sText, boolean bNewParagraph)
 	         throws com.sun.star.lang.IllegalArgumentException {
-	     XText xText = (XText)UnoRuntime.queryInterface(XText.class, xShape);
+	     XText xText = UnoRuntime.queryInterface(XText.class, xShape);
 	     XTextCursor xTextCursor = xText.createTextCursor();
 	     xTextCursor.gotoEnd(false);
 	     if (bNewParagraph) {
 	         xText.insertControlCharacter(xTextCursor, ControlCharacter.PARAGRAPH_BREAK, false);
 	         xTextCursor.gotoEnd(false);
 	     }
-	     XTextRange xTextRange = (XTextRange)UnoRuntime.queryInterface(XTextRange.class, xTextCursor);
+	     XTextRange xTextRange = UnoRuntime.queryInterface(XTextRange.class, xTextCursor);
 	     xTextRange.setString(sText);
 	     xTextCursor.gotoEnd(true);
-	     XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextRange);
+	     XPropertySet xPropSet = UnoRuntime.queryInterface(XPropertySet.class, xTextRange);
 	     return xPropSet;
 	 }
 
@@ -167,9 +167,9 @@ public class ParagraphStyle {
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
-		impressDocument = (XComponent) UnoRuntime.queryInterface(
+		impressDocument = UnoRuntime.queryInterface(
 				XComponent.class, unoApp.newDocument("simpress"));
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
 		drawpages.insertNewByIndex(1);
@@ -188,7 +188,7 @@ public class ParagraphStyle {
 		reLoadFile = saveAndReloadDoc(impressDocument,
 				"impress8", "odp");
 		xShapes=ShapeUtil.getShapes(reLoadFile, pageIndex);
-		return  (XShape) UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
+		return  UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
 	}
 
 	/**
@@ -211,11 +211,11 @@ public class ParagraphStyle {
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
 		aStoreProperties[1].Value = sFilter;
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 }

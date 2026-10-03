@@ -150,9 +150,9 @@ public final class WikiEditorImpl extends WeakBase
         if ( args.length > 0 )
         {
             m_bInitialized = true;
-            m_xFrame = ( XFrame )UnoRuntime.queryInterface( XFrame.class, args[0] );
+            m_xFrame = UnoRuntime.queryInterface( XFrame.class, args[0] );
             // become close listener
-            XCloseBroadcaster cb = ( XCloseBroadcaster )UnoRuntime.queryInterface(
+            XCloseBroadcaster cb = UnoRuntime.queryInterface(
                 XCloseBroadcaster.class, m_xFrame );
         }
     }
@@ -196,7 +196,7 @@ public final class WikiEditorImpl extends WeakBase
                 {
                     try
                     {
-                        XCloseable xclose = ( XCloseable )UnoRuntime.queryInterface(
+                        XCloseable xclose = UnoRuntime.queryInterface(
                             XCloseable.class, m_xFrame );
                         xclose.close( true );
                     } catch ( CloseVetoException cve )
@@ -319,7 +319,7 @@ public final class WikiEditorImpl extends WeakBase
                     if ( m_aFilterName == null || m_aFilterName.length() == 0 )
                     {
                         Helper.ShowError( m_xContext,
-                                          (XWindowPeer)UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
+                                          UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
                                           Helper.DLG_SENDTITLE,
                                           Helper.NOWIKIFILTER_ERROR,
                                           null,
@@ -368,7 +368,7 @@ public final class WikiEditorImpl extends WeakBase
                     aSendDialog.SetThrobberActive( false );
                     bAllowSending = Helper.ShowError(
                                       m_xContext,
-                                      (XWindowPeer)UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
+                                      UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
                                       Helper.DLG_SENDTITLE,
                                       Helper.DLG_WIKIPAGEEXISTS_LABEL1,
                                       aSendDialog.GetWikiTitle(),
@@ -388,7 +388,7 @@ public final class WikiEditorImpl extends WeakBase
 
                     sTemp2Url = Helper.CreateTempFile( m_xContext );
 
-                    XStorable xStore = ( com.sun.star.frame.XStorable )UnoRuntime.queryInterface ( XStorable.class, m_xModel );
+                    XStorable xStore = UnoRuntime.queryInterface ( XStorable.class, m_xModel );
                     if ( xStore == null )
                         throw new com.sun.star.uno.RuntimeException();
 
@@ -399,7 +399,7 @@ public final class WikiEditorImpl extends WeakBase
                     {
                         bResult = true;
                         Object desktop = m_xContext.getServiceManager().createInstanceWithContext( "com.sun.star.frame.Desktop", m_xContext );
-                        XDesktop xDesktop = ( XDesktop ) UnoRuntime.queryInterface( com.sun.star.frame.XDesktop.class, desktop );
+                        XDesktop xDesktop = UnoRuntime.queryInterface( com.sun.star.frame.XDesktop.class, desktop );
                         Helper.SetDocTitle( m_xModel, aArticle.GetTitle() );
                         Hashtable aDocInfo = new Hashtable();
                         aDocInfo.put( "Doc", aArticle.GetTitle() );
@@ -411,7 +411,7 @@ public final class WikiEditorImpl extends WeakBase
                     else
                     {
                         Helper.ShowError( m_xContext,
-                                          (XWindowPeer)UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
+                                          UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
                                           Helper.DLG_SENDTITLE,
                                           Helper.GENERALSEND_ERROR,
                                           null,
@@ -429,7 +429,7 @@ public final class WikiEditorImpl extends WeakBase
                 {
                     // report the error only if sending was not canceled
                     Helper.ShowError( m_xContext,
-                                      (XWindowPeer)UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
+                                      UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
                                       Helper.DLG_SENDTITLE,
                                       Helper.UNKNOWNCERT_ERROR,
                                       null,
@@ -442,7 +442,7 @@ public final class WikiEditorImpl extends WeakBase
                 {
                     // report the error only if sending was not canceled
                     Helper.ShowError( m_xContext,
-                                      (XWindowPeer)UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
+                                      UnoRuntime.queryInterface( XWindowPeer.class, m_xFrame.getContainerWindow() ),
                                       Helper.DLG_SENDTITLE,
                                       Helper.GENERALSEND_ERROR,
                                       null,

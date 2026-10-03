@@ -100,7 +100,7 @@ public class SwAccessibleDocumentView extends TestCase {
             throw new StatusException( "Couldn't insert lines", e );
         }
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -118,7 +118,7 @@ public class SwAccessibleDocumentView extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         getAccessibleObjectForRole(xRoot, AccessibleRole.SCROLL_BAR);
-        final XAccessibleValue xAccVal = (XAccessibleValue) UnoRuntime.queryInterface
+        final XAccessibleValue xAccVal = UnoRuntime.queryInterface
                                 (XAccessibleValue.class, SearchedContext) ;
 
         tEnv.addObjRelation("EventProducer",

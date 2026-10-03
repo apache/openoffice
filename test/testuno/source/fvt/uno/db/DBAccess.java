@@ -111,9 +111,9 @@ public class DBAccess {
 	public void testSaveAs() throws Exception, IOException, java.lang.Exception {
 
 		m_databaseDocument = saveAndReloadDoc(m_databaseDocument, "", "odb");
-		XModel docModel = (XModel) UnoRuntime.queryInterface(XModel.class,
+		XModel docModel = UnoRuntime.queryInterface(XModel.class,
 				m_databaseDocument);
-		m_documentUI = (XDatabaseDocumentUI) UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
+		m_documentUI = UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
 				docModel.getCurrentController());
 		m_documentUI.connect();
 		assertTrue("could not connect to " + DBUtil.getDocumentURL(),
@@ -132,12 +132,12 @@ public class DBAccess {
 		// ---save and reload database document
 		m_databaseDocument = saveAndReloadDoc(m_databaseDocument, "", "odb");
 
-		XModel docModel = (XModel) UnoRuntime.queryInterface(XModel.class,
+		XModel docModel = UnoRuntime.queryInterface(XModel.class,
 				m_databaseDocument);
-		m_documentUI = (XDatabaseDocumentUI) UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
+		m_documentUI = UnoRuntime.queryInterface(XDatabaseDocumentUI.class,
 				docModel.getCurrentController());
 		m_documentUI.connect();
-		XTablesSupplier suppTables = (XTablesSupplier) UnoRuntime.queryInterface(
+		XTablesSupplier suppTables = UnoRuntime.queryInterface(
 				XTablesSupplier.class, m_documentUI.getActiveConnection());
 		XNameAccess tables = suppTables.getTables();
 		assertTrue("the newly created table has not been written",
@@ -145,7 +145,7 @@ public class DBAccess {
 	}
 
 	protected XMultiServiceFactory getMSF() {
-		final XMultiServiceFactory xMSF1 = (XMultiServiceFactory) UnoRuntime.queryInterface(
+		final XMultiServiceFactory xMSF1 = UnoRuntime.queryInterface(
 				XMultiServiceFactory.class, app.getComponentContext()
 						.getServiceManager());
 		return xMSF1;
@@ -161,11 +161,11 @@ public class DBAccess {
 		aStoreProperties[0].Name = "Override";
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, m_databaseDocument2);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XOfficeDatabaseDocument) UnoRuntime.queryInterface(XOfficeDatabaseDocument.class,
+		return UnoRuntime.queryInterface(XOfficeDatabaseDocument.class,
 				app.loadDocument(filePath));
 	}
 }

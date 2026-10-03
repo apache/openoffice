@@ -115,7 +115,7 @@ public class XMLFormSettings
         File tempFile = File.createTempFile( "xmlforms", ".odt" );
         tempFile.deleteOnExit();
         String fileURL = tempFile.toURL().toExternalForm();
-        XStorable store = (XStorable)UnoRuntime.queryInterface( XStorable.class,
+        XStorable store = UnoRuntime.queryInterface( XStorable.class,
             m_document.getDocument() );
         store.storeAsURL( fileURL, new PropertyValue[] {} );
         assertTrue( "document still modified after saving it", !m_document.isModified() );
@@ -133,7 +133,7 @@ public class XMLFormSettings
     {
         if ( m_document != null )
         {
-            XCloseable closeDoc = (XCloseable)UnoRuntime.queryInterface( XCloseable.class,
+            XCloseable closeDoc = UnoRuntime.queryInterface( XCloseable.class,
                 m_document.getDocument() );
             closeDoc.close( true );
         }
@@ -142,9 +142,9 @@ public class XMLFormSettings
     /* ------------------------------------------------------------------ */
     private static void impl_bind( XPropertySet _control, XPropertySet _binding ) throws IncompatibleTypesException
     {
-        XBindableValue bindableControl = (XBindableValue)UnoRuntime.queryInterface(
+        XBindableValue bindableControl = UnoRuntime.queryInterface(
             XBindableValue.class, _control );
-        XValueBinding binding = (XValueBinding)UnoRuntime.queryInterface(
+        XValueBinding binding = UnoRuntime.queryInterface(
             XValueBinding.class, _binding );
         bindableControl.setValueBinding( binding );
     }
@@ -225,7 +225,7 @@ public class XMLFormSettings
      */
     private void impl_storeDocument() throws IOException
     {
-        XStorable store = (XStorable)UnoRuntime.queryInterface( XStorable.class,
+        XStorable store = UnoRuntime.queryInterface( XStorable.class,
             m_document.getDocument() );
         store.store();
         assertTrue( "document still modified after saving it", !m_document.isModified() );

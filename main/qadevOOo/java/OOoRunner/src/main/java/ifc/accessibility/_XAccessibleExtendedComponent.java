@@ -87,7 +87,7 @@ public class _XAccessibleExtendedComponent extends MultiMethodTest {
 
         boolean res = true;
 
-        XAccessibleStateSet accStateSet = (XAccessibleStateSet)
+        XAccessibleStateSet accStateSet =
             UnoRuntime.queryInterface(XAccessibleStateSet.class, oObj);
 
         if (accStateSet != null) {

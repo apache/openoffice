@@ -258,7 +258,7 @@ public class AsciiReplaceFilter
             if (xDocument==null)
                 throw new com.sun.star.lang.IllegalArgumentException("null reference detected");
 
-            com.sun.star.lang.XServiceInfo xInfo = (com.sun.star.lang.XServiceInfo)UnoRuntime.queryInterface(
+            com.sun.star.lang.XServiceInfo xInfo = UnoRuntime.queryInterface(
                                     com.sun.star.lang.XServiceInfo.class, xDocument);
             if ( ! xInfo.supportsService("com.sun.star.text.TextDocument") )
                 throw new com.sun.star.lang.IllegalArgumentException( "wrong document type" );
@@ -267,7 +267,7 @@ public class AsciiReplaceFilter
             // Don't forget to mark this filter used for importing too
             synchronized(this)
             {
-                m_xDocument = (com.sun.star.text.XTextDocument)UnoRuntime.queryInterface(
+                m_xDocument = UnoRuntime.queryInterface(
                         com.sun.star.text.XTextDocument.class, xDocument);
                 m_bImport = true;
             }
@@ -294,7 +294,7 @@ public class AsciiReplaceFilter
             if (xDocument==null)
                 throw new com.sun.star.lang.IllegalArgumentException( "null reference given" );
 
-            com.sun.star.lang.XServiceInfo xInfo = (com.sun.star.lang.XServiceInfo)UnoRuntime.queryInterface(
+            com.sun.star.lang.XServiceInfo xInfo = UnoRuntime.queryInterface(
                         com.sun.star.lang.XServiceInfo.class, xDocument);
             if ( ! xInfo.supportsService("com.sun.star.text.TextDocument") )
                 throw new com.sun.star.lang.IllegalArgumentException( "wrong document type" );
@@ -303,7 +303,7 @@ public class AsciiReplaceFilter
             // Don't forget to mark this filter used for exporting too
             synchronized(this)
             {
-                m_xDocument = (com.sun.star.text.XTextDocument)UnoRuntime.queryInterface(
+                m_xDocument = UnoRuntime.queryInterface(
                         com.sun.star.text.XTextDocument.class, xDocument);
                 m_bImport = false;
             }
@@ -414,7 +414,7 @@ public class AsciiReplaceFilter
         {
             measure("implts_import {");
 
-            com.sun.star.text.XSimpleText xText = (com.sun.star.text.XSimpleText)UnoRuntime.queryInterface(
+            com.sun.star.text.XSimpleText xText = UnoRuntime.queryInterface(
                 com.sun.star.text.XSimpleText.class,
                 xTarget.getText());
 
@@ -464,7 +464,7 @@ public class AsciiReplaceFilter
                 int nEnd    = -1;
                 int nLength = sText.length();
 
-                com.sun.star.text.XTextRange xCursor = (com.sun.star.text.XTextRange)UnoRuntime.queryInterface(
+                com.sun.star.text.XTextRange xCursor = UnoRuntime.queryInterface(
                     com.sun.star.text.XTextRange.class,
                     xText.createTextCursor());
 
@@ -499,7 +499,7 @@ public class AsciiReplaceFilter
                 measure("set on model");
 
                 // with refreshing the document we are on the safe-side, otherwise the first time the filter is used the document is not fully shown (flaw!).
-                com.sun.star.util.XRefreshable xRefresh = (com.sun.star.util.XRefreshable)UnoRuntime.queryInterface(
+                com.sun.star.util.XRefreshable xRefresh = UnoRuntime.queryInterface(
                 com.sun.star.util.XRefreshable.class,
                 xTarget);
                 xRefresh.refresh();
@@ -546,7 +546,7 @@ public class AsciiReplaceFilter
         {
             measure("implts_export {");
 
-            com.sun.star.text.XTextRange xText = (com.sun.star.text.XSimpleText)UnoRuntime.queryInterface(
+            com.sun.star.text.XTextRange xText = UnoRuntime.queryInterface(
                 com.sun.star.text.XSimpleText.class,
                 xSource.getText());
 

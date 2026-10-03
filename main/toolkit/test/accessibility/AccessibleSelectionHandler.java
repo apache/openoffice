@@ -40,7 +40,7 @@ class AccessibleSelectionHandler
     public NodeHandler createHandler( XAccessibleContext xContext )
     {
         XAccessibleSelection xSelection =
-            (XAccessibleSelection) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 XAccessibleSelection.class, xContext);
         return (xSelection == null) ? null :
             new AccessibleSelectionHandler(xSelection);

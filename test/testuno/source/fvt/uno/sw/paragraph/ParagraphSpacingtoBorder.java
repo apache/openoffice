@@ -61,13 +61,13 @@ public class ParagraphSpacingtoBorder {
 	@Test
 	public void testParagraphSpacingtoBorderSetting() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		BorderLine[]borderLine=new BorderLine[] {new BorderLine(),new BorderLine(),new BorderLine(),new BorderLine()};
 		borderLine[0].Color=0x00FF0000;
 		borderLine[0].InnerLineWidth=101;
@@ -94,7 +94,7 @@ public class ParagraphSpacingtoBorder {
 		xCursorProps.setPropertyValue("TopBorderDistance",499);
 		xCursorProps.setPropertyValue("BottomBorderDistance",499);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -104,7 +104,7 @@ public class ParagraphSpacingtoBorder {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -116,8 +116,8 @@ public class ParagraphSpacingtoBorder {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph border
 		//verify paragraph border
 		assertEquals("assert paragraph left border spacing",499,xCursorProps_Assert_odt.getPropertyValue("LeftBorderDistance"));
@@ -126,8 +126,8 @@ public class ParagraphSpacingtoBorder {
 		assertEquals("assert paragraph bottom border spacing",499,xCursorProps_Assert_odt.getPropertyValue("BottomBorderDistance"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph border
 		assertEquals("assert paragraph left border spacing",494,xCursorProps_Assert_doc.getPropertyValue("LeftBorderDistance"));
 		assertEquals("assert paragraph right border spacing",494,xCursorProps_Assert_doc.getPropertyValue("RightBorderDistance"));

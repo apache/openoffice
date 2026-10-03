@@ -92,7 +92,7 @@ public class ChartLegend extends TestCase {
             log.println( "creating a chartdocument" );
             XComponent xComp = SOF.loadDocument(
                              utils.getFullTestURL("TransparencyChart.sxs"));
-            xChartDoc = (XChartDocument)
+            xChartDoc =
                 UnoRuntime.queryInterface(XChartDocument.class,xComp);
         } catch (com.sun.star.uno.Exception e) {
             // Some exception occurred. FAILED

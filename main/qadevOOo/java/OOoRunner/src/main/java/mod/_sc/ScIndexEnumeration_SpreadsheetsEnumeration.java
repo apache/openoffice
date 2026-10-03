@@ -63,7 +63,7 @@ public class ScIndexEnumeration_SpreadsheetsEnumeration extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println("disposing xSpreadsheetDocument");
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -73,11 +73,11 @@ public class ScIndexEnumeration_SpreadsheetsEnumeration extends TestCase {
         log.println("getting sheets");
         XSpreadsheets xSpreadsheets = (XSpreadsheets)xSpreadsheetDoc.getSheets();
 
-        XInterface oObj = (XInterface)
+        XInterface oObj =
             UnoRuntime.queryInterface(XInterface.class, xSpreadsheets);
 
         log.println("creating a new environment for object");
-        XEnumerationAccess ea = (XEnumerationAccess)
+        XEnumerationAccess ea =
                     UnoRuntime.queryInterface(XEnumerationAccess.class,oObj);
 
         oObj = ea.createEnumeration();

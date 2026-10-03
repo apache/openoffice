@@ -736,7 +736,7 @@ ScVbaChart::setLocation( ::sal_Int32 /*where*/, const css::uno::Any& /*Name*/ )
 //        if ((name != null) && name instanceof String) {
 //            sheetName = (String) name;
 //        }
-//        XSpreadsheetDocument xShDoc = (XSpreadsheetDocument) UnoRuntime.queryInterface( XSpreadsheetDocument.class,getXModel() );
+//        XSpreadsheetDocument xShDoc = UnoRuntime.queryInterface( XSpreadsheetDocument.class,getXModel() );
 //        com.sun.star.sheet.XSpreadsheets xSheets = xShDoc.Sheets();
 //
 //        switch (where) {
@@ -766,9 +766,9 @@ ScVbaChart::setLocation( ::sal_Int32 /*where*/, const css::uno::Any& /*Name*/ )
 //                e.printStackTrace();
 //            }
 //
-//            XTableChartsSupplier xTCS = (XTableChartsSupplier) UnoRuntime.queryInterface( XTableChartsSupplier.class, chartSheet);
+//            XTableChartsSupplier xTCS = UnoRuntime.queryInterface( XTableChartsSupplier.class, chartSheet);
 //            XTableCharts xTableCharts = xTCS.getCharts();
-//            XIndexAccess xIA = (XIndexAccess) UnoRuntime.queryInterface( XIndexAccess.class, xTableCharts);
+//            XIndexAccess xIA = UnoRuntime.queryInterface( XIndexAccess.class, xTableCharts);
 //            int numCharts = xIA.getCount();
 //            chartName = "Chart " + (numCharts + 1);
 //
@@ -779,7 +779,7 @@ ScVbaChart::setLocation( ::sal_Int32 /*where*/, const css::uno::Any& /*Name*/ )
 //        case ClLocationType.clLocationAutomatic_value:default: //{
 //            chartName = "Chart 1"; // Since it's a new sheet, it's the first on it...
 //
-//            XIndexAccess xSheetIA = (XIndexAccess) UnoRuntime.queryInterface( XIndexAccess.class, xSheets);
+//            XIndexAccess xSheetIA = UnoRuntime.queryInterface( XIndexAccess.class, xSheets);
 //
 //            short newSheetNum = (short) (xSheetIA.getCount() + 1);
 //

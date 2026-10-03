@@ -75,7 +75,7 @@ public class LayerDemo
 
 			// create two rectangles
 			XDrawPage xPage = PageHelper.getDrawPageByIndex( xDrawDoc, 0 );
-			XShapes xShapes = (XShapes)
+			XShapes xShapes =
 					UnoRuntime.queryInterface( XShapes.class, xPage );
 
 			XShape xRect1 = ShapeHelper.createShape( xDrawDoc,
@@ -101,11 +101,11 @@ public class LayerDemo
 
 			// query for the XLayerManager
 			XLayerSupplier xLayerSupplier = (XLayerSupplier)
-				(XLayerSupplier)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XLayerSupplier.class, xDrawDoc );
 			XNameAccess xNameAccess = xLayerSupplier.getLayerManager();
 			XLayerManager xLayerManager = (XLayerManager)
-				(XLayerManager)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XLayerManager.class, xNameAccess );
 
 			// create a layer and set its properties
@@ -114,7 +114,7 @@ public class LayerDemo
                 xLayerManager.getCount() );
 
 			xLayerPropSet = (XPropertySet)
-				(XPropertySet)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XPropertySet.class, xNotVisibleAndEditable );
 			xLayerPropSet.setPropertyValue( "Name", "NotVisibleAndEditable" );
 			xLayerPropSet.setPropertyValue( "IsVisible", new Boolean( false ) );
@@ -125,7 +125,7 @@ public class LayerDemo
                 xLayerManager.getCount() );
 
 			xLayerPropSet = (XPropertySet)
-				(XPropertySet)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XPropertySet.class, xNotEditable );
 			xLayerPropSet.setPropertyValue( "Name", "NotEditable" );
 			xLayerPropSet.setPropertyValue( "IsVisible", new Boolean( true ) );

@@ -118,7 +118,7 @@ public class SwXTextGraphicObjects extends TestCase {
 
         XText the_text = xTextDoc.getText();
         XTextCursor the_cursor = the_text.createTextCursor();
-        XTextContent the_content = (XTextContent)
+        XTextContent the_content =
                             UnoRuntime.queryInterface(XTextContent.class,oObj);
 
        log.println( "inserting graphic" );
@@ -131,7 +131,7 @@ public class SwXTextGraphicObjects extends TestCase {
         }
 
         log.println( "adding graphic" );
-        XPropertySet oProps = (XPropertySet)
+        XPropertySet oProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         try {
             String wat = util.utils.getFullTestURL("space-metal.jpg");
@@ -146,7 +146,7 @@ public class SwXTextGraphicObjects extends TestCase {
             throw new StatusException("Couldn't set property 'GraphicURL'", e );
         }
 
-        XTextGraphicObjectsSupplier xTGS = (XTextGraphicObjectsSupplier)
+        XTextGraphicObjectsSupplier xTGS =
             UnoRuntime.queryInterface(XTextGraphicObjectsSupplier.class,
             xTextDoc);
         oObj = xTGS.getGraphicObjects();

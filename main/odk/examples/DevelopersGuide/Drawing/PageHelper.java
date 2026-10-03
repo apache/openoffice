@@ -52,7 +52,7 @@ public class PageHelper
 	static public int getDrawPageCount( XComponent xComponent )
 	{
 		XDrawPagesSupplier xDrawPagesSupplier =
-			(XDrawPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xDrawPagesSupplier.getDrawPages();
 		return xDrawPages.getCount();
@@ -65,10 +65,10 @@ public class PageHelper
 			com.sun.star.lang.WrappedTargetException
 	{
 		XDrawPagesSupplier xDrawPagesSupplier =
-			(XDrawPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xDrawPagesSupplier.getDrawPages();
-		return (XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, xDrawPages.getByIndex( nIndex ));
+		return UnoRuntime.queryInterface(XDrawPage.class, xDrawPages.getByIndex( nIndex ));
 	}
 
     /** creates and inserts a draw page into the giving position,
@@ -78,7 +78,7 @@ public class PageHelper
 		throws Exception
 	{
 		XDrawPagesSupplier xDrawPagesSupplier =
-			(XDrawPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xDrawPagesSupplier.getDrawPages();
 		return xDrawPages.insertNewByIndex( nIndex );
@@ -89,7 +89,7 @@ public class PageHelper
 	static public void removeDrawPage( XComponent xComponent, XDrawPage xDrawPage )
 	{
 		XDrawPagesSupplier xDrawPagesSupplier =
-			(XDrawPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xDrawPagesSupplier.getDrawPages();
 		xDrawPages.remove( xDrawPage );
@@ -101,7 +101,7 @@ public class PageHelper
 		throws com.sun.star.beans.UnknownPropertyException,
 			com.sun.star.lang.WrappedTargetException
 	{
-		XPropertySet xPageProperties = (XPropertySet)
+		XPropertySet xPageProperties =
 			UnoRuntime.queryInterface( XPropertySet.class, xDrawPage );
 		return new Size(
 			((Integer)xPageProperties.getPropertyValue( "Width" )).intValue(),
@@ -115,7 +115,7 @@ public class PageHelper
 	static public int getMasterPageCount( XComponent xComponent )
 	{
 		XMasterPagesSupplier xMasterPagesSupplier =
-			(XMasterPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMasterPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xMasterPagesSupplier.getMasterPages();
 		return xDrawPages.getCount();
@@ -128,10 +128,10 @@ public class PageHelper
 			com.sun.star.lang.WrappedTargetException
 	{
 		XMasterPagesSupplier xMasterPagesSupplier =
-			(XMasterPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMasterPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xMasterPagesSupplier.getMasterPages();
-		return (XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, xDrawPages.getByIndex( nIndex ));
+		return UnoRuntime.queryInterface(XDrawPage.class, xDrawPages.getByIndex( nIndex ));
 	}
 
     /** creates and inserts a new master page into the giving position,
@@ -140,7 +140,7 @@ public class PageHelper
 	static public XDrawPage insertNewMasterPageByIndex( XComponent xComponent, int nIndex )
 	{
 		XMasterPagesSupplier xMasterPagesSupplier =
-			(XMasterPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMasterPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xMasterPagesSupplier.getMasterPages();
 		return xDrawPages.insertNewByIndex( nIndex );
@@ -151,7 +151,7 @@ public class PageHelper
 	static public void removeMasterPage( XComponent xComponent, XDrawPage xDrawPage )
 	{
 		XMasterPagesSupplier xMasterPagesSupplier =
-			(XMasterPagesSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMasterPagesSupplier.class, xComponent );
 		XDrawPages xDrawPages = xMasterPagesSupplier.getMasterPages();
 		xDrawPages.remove( xDrawPage );
@@ -162,7 +162,7 @@ public class PageHelper
 	static public XDrawPage getMasterPage( XDrawPage xDrawPage )
 	{
 		XMasterPageTarget xMasterPageTarget =
-			(XMasterPageTarget)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMasterPageTarget.class, xDrawPage );
 		return xMasterPageTarget.getMasterPage();
 	}
@@ -172,7 +172,7 @@ public class PageHelper
 	static public void setMasterPage( XDrawPage xDrawPage, XDrawPage xMasterPage )
 	{
 		XMasterPageTarget xMasterPageTarget =
-			(XMasterPageTarget)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XMasterPageTarget.class, xDrawPage );
 		xMasterPageTarget.setMasterPage( xMasterPage );
 	}
@@ -185,7 +185,7 @@ public class PageHelper
 	*/
 	static public boolean isImpressDocument( XComponent xComponent )
 	{
-		XServiceInfo xInfo = (XServiceInfo)UnoRuntime.queryInterface(
+		XServiceInfo xInfo = UnoRuntime.queryInterface(
 				XServiceInfo.class, xComponent );
 		return xInfo.supportsService( "com.sun.star.presentation.PresentationDocument" );
 	}
@@ -195,7 +195,7 @@ public class PageHelper
 	static public XDrawPage getNotesPage( XDrawPage xDrawPage )
 	{
 		XPresentationPage aPresentationPage =
-			(XPresentationPage)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XPresentationPage.class, xDrawPage );
 		return aPresentationPage.getNotesPage();
 	}
@@ -205,7 +205,7 @@ public class PageHelper
 	static public XDrawPage getHandoutMasterPage( XComponent xComponent )
 	{
 		XHandoutMasterSupplier aHandoutMasterSupplier =
-			(XHandoutMasterSupplier)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XHandoutMasterSupplier.class, xComponent );
 		return aHandoutMasterSupplier.getHandoutMasterPage();
 	}

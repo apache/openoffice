@@ -72,7 +72,7 @@ public class SwAccessibleParagraphView extends TestCase {
         XText oText = xTextDoc.getText();
         oText.setString("XAccessibleText");
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         AccessibilityTools at = new AccessibilityTools();

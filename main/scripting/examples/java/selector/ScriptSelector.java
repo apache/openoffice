@@ -74,7 +74,7 @@ public class ScriptSelector {
             XBrowseNode root = getRootNode(ctxt);
 
             final XScriptProvider msp =
-                (XScriptProvider)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                  XScriptProvider.class, root);
 
             final JFrame client = new JFrame("Script");
@@ -115,7 +115,7 @@ public class ScriptSelector {
                 new TreeSelectionListener() {
                     public void valueChanged(TreeSelectionEvent e) {
                         XBrowseNode xbn = selectorPanel.getSelection();
-                        XPropertySet props = (XPropertySet)
+                        XPropertySet props =
                             UnoRuntime.queryInterface(XPropertySet.class, xbn);
 
                         checkEnabled(props, "Creatable", createButton);
@@ -244,7 +244,7 @@ public class ScriptSelector {
     {
         Object obj = node.getUserObject();
         XInvocation inv =
-            (XInvocation)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
             XInvocation.class, obj);
         Object[] args = new Object[] { ctxt };
         try {
@@ -266,7 +266,7 @@ public class ScriptSelector {
     {
         Object obj = node.getUserObject();
         XInvocation inv =
-            (XInvocation)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
             XInvocation.class, obj);
         Object[] args = new Object[] { ctxt };
         try {
@@ -290,7 +290,7 @@ public class ScriptSelector {
     {
         Object obj = node.getUserObject();
         XInvocation inv =
-            (XInvocation)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
             XInvocation.class, obj);
         Object[] args = new Object[] { ctxt };
         try {
@@ -339,12 +339,12 @@ public class ScriptSelector {
 
         XComponentContext xcc = ctxt.getComponentContext();
         XMultiComponentFactory xmcf = xcc.getServiceManager();
-        XBrowseNodeFactory xBrowseFac = (XBrowseNodeFactory)
+        XBrowseNodeFactory xBrowseFac =
             UnoRuntime.queryInterface( XBrowseNodeFactory.class, xcc.getValueByName(
                 "/singletons/com.sun.star.script.browse.theBrowseNodeFactory") );
 
 
-        result = (XBrowseNode)UnoRuntime.queryInterface(
+        result = UnoRuntime.queryInterface(
            XBrowseNode.class, xBrowseFac.createView( BrowseNodeFactoryViewTypes.MACROORGANIZER ) );
         return result;
     }
@@ -395,7 +395,7 @@ class ScriptSelectorPanel extends JPanel {
         tree.addTreeSelectionListener(new TreeSelectionListener() {
             public void valueChanged(TreeSelectionEvent e) {
                 XBrowseNode xbn = getSelection();
-                XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet props = UnoRuntime.queryInterface(
                     XPropertySet.class, xbn);
 
                 if (xbn == null) {

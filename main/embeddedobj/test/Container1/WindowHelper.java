@@ -53,7 +53,7 @@ class WindowHelper {
 
 		// get access to toolkit of remote office to create the container window of new target frame
 		try{
-			xToolkit = (XToolkit)UnoRuntime.queryInterface( XToolkit.class,
+			xToolkit = UnoRuntime.queryInterface( XToolkit.class,
 															xFactory.createInstance("com.sun.star.awt.Toolkit") );
 		}
 		catch( Exception ex )
@@ -61,7 +61,7 @@ class WindowHelper {
 			return null;
 		}
 
-		XSystemChildFactory xChildFactory = (XSystemChildFactory)UnoRuntime.queryInterface(
+		XSystemChildFactory xChildFactory = UnoRuntime.queryInterface(
 				XSystemChildFactory.class,
 				xToolkit);
 
@@ -82,7 +82,7 @@ class WindowHelper {
 			{
 				JavaWindowPeerFake aWrapper = new JavaWindowPeerFake(aParent);
 
-				XWindowPeer xParentPeer = (XWindowPeer)UnoRuntime.queryInterface(
+				XWindowPeer xParentPeer = UnoRuntime.queryInterface(
 						XWindowPeer.class,
 						aWrapper);
 
@@ -111,7 +111,7 @@ class WindowHelper {
 				xPeer = xToolkit.createWindow( aDescriptor );
 			}
 
-			xWindow = (XWindow)UnoRuntime.queryInterface( XWindow.class, xPeer);
+			xWindow = UnoRuntime.queryInterface( XWindow.class, xPeer);
 			if ( xWindow != null )
 				xWindow.setPosSize( (int)aBounds.getX(),
 									(int)aBounds.getY(),
@@ -138,11 +138,11 @@ class WindowHelper {
 		XBitmap xResult = null;
 
 		try {
-			XSingleServiceFactory xBitmapFactory = (XSingleServiceFactory)UnoRuntime.queryInterface(
+			XSingleServiceFactory xBitmapFactory = UnoRuntime.queryInterface(
 					XSingleServiceFactory.class,
 					xFactory.createInstance( "com.sun.star.embed.BitmapCreator" ) );
 
-			xResult = (XBitmap)UnoRuntime.queryInterface(
+			xResult = UnoRuntime.queryInterface(
 					XBitmap.class,
 					xBitmapFactory.createInstanceWithArguments( aArgs ) );
 		}

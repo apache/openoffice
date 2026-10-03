@@ -89,7 +89,7 @@ public class UnoControlDialogModel extends TestCase {
                                   "com.sun.star.awt.UnoControlDialogModel");
 
             // create the dialog model and set the properties
-            XPropertySet xPSetDialog = (XPropertySet) UnoRuntime.queryInterface(
+            XPropertySet xPSetDialog = UnoRuntime.queryInterface(
                                                XPropertySet.class, dialogModel);
             xPSetDialog.setPropertyValue("PositionX", new Integer(100));
             xPSetDialog.setPropertyValue("PositionY", new Integer(100));
@@ -100,14 +100,14 @@ public class UnoControlDialogModel extends TestCase {
 
 
             // get the service manager from the dialog model
-            xMultiServiceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(
+            xMultiServiceFactory = UnoRuntime.queryInterface(
                                            XMultiServiceFactory.class,
                                            dialogModel);
 
             // create the button model and set the properties
             Object buttonModel = xMultiServiceFactory.createInstance(
                                          "com.sun.star.awt.UnoControlButtonModel");
-            XPropertySet xPSetButton = (XPropertySet) UnoRuntime.queryInterface(
+            XPropertySet xPSetButton = UnoRuntime.queryInterface(
                                                XPropertySet.class, buttonModel);
             xPSetButton.setPropertyValue("PositionX", new Integer(50));
             xPSetButton.setPropertyValue("PositionY", new Integer(30));
@@ -120,7 +120,7 @@ public class UnoControlDialogModel extends TestCase {
             // create the label model and set the properties
             Object labelModel = xMultiServiceFactory.createInstance(
                                         "com.sun.star.awt.UnoControlFixedTextModel");
-            XPropertySet xPSetLabel = (XPropertySet) UnoRuntime.queryInterface(
+            XPropertySet xPSetLabel = UnoRuntime.queryInterface(
                                               XPropertySet.class, labelModel);
             xPSetLabel.setPropertyValue("PositionX", new Integer(40));
             xPSetLabel.setPropertyValue("PositionY", new Integer(60));
@@ -131,20 +131,20 @@ public class UnoControlDialogModel extends TestCase {
             xPSetLabel.setPropertyValue("Label", _labelPrefix);
 
             // insert the control models into the dialog model
-            XNameContainer xNameCont = (XNameContainer) UnoRuntime.queryInterface(
+            XNameContainer xNameCont = UnoRuntime.queryInterface(
                                                XNameContainer.class,
                                                dialogModel);
             xNameCont.insertByName(_buttonName, buttonModel);
             xNameCont.insertByName(_labelName, labelModel);
 
             // create the dialog control and set the model
-            XControl dialog = (XControl) UnoRuntime.queryInterface(
+            XControl dialog = UnoRuntime.queryInterface(
                                       XControl.class,
                                       ((XMultiServiceFactory) Param.getMSF()).createInstance(
                                               "com.sun.star.awt.UnoControlDialog"));
-            XControl xControl = (XControl) UnoRuntime.queryInterface(
+            XControl xControl = UnoRuntime.queryInterface(
                                         XControl.class, dialog);
-            XControlModel xControlModel = (XControlModel) UnoRuntime.queryInterface(
+            XControlModel xControlModel = UnoRuntime.queryInterface(
                                                   XControlModel.class,
                                                   dialogModel);
             xControl.setModel(xControlModel);
@@ -156,7 +156,7 @@ public class UnoControlDialogModel extends TestCase {
 
         log.println("creating a new environment for object");
 
-        XMultiServiceFactory oMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(
+        XMultiServiceFactory oMSF = UnoRuntime.queryInterface(
                                             XMultiServiceFactory.class, oObj);
 
         TestEnvironment tEnv = new TestEnvironment(oObj);

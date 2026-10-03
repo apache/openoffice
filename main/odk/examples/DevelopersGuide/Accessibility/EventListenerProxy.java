@@ -163,7 +163,7 @@ class EventListenerProxy
                 public void run()
                 {
                     maListener.windowOpened (
-                        (XAccessible) UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             XAccessible.class,
                             aEvent.Source));
                 }
@@ -181,7 +181,7 @@ class EventListenerProxy
                 public void run()
                 {
                     maListener.windowClosed (
-                        (XAccessible) UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             XAccessible.class,
                             aEvent.Source));
                 }

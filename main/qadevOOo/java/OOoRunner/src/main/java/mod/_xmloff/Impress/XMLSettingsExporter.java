@@ -127,28 +127,28 @@ public class XMLSettingsExporter extends TestCase {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Impress.XMLSettingsExporter",
                 new Object[] {arg});
-            XExporter xEx = (XExporter)
+            XExporter xEx =
                 UnoRuntime.queryInterface(XExporter.class,oObj);
             xEx.setSourceDocument(xImpressDoc);
 
             //set some settings
-            XModel xImpressModel = (XModel)
+            XModel xImpressModel =
                 UnoRuntime.queryInterface(XModel.class, xImpressDoc);
             XController xController = xImpressModel.getCurrentController();
-            XPropertySet xPropSet = (XPropertySet)
+            XPropertySet xPropSet =
                 UnoRuntime.queryInterface(XPropertySet.class, xController);
             NewDataValue = ! ((Boolean) xPropSet.getPropertyValue
                 ("IsLayerMode")).booleanValue();
             xPropSet.setPropertyValue("IsLayerMode",
                 new Boolean (NewDataValue));
 
-/*            XViewDataSupplier xViewDataSupp = (XViewDataSupplier)
+/*            XViewDataSupplier xViewDataSupp =
                 UnoRuntime.queryInterface(XViewDataSupplier.class, xImpressDoc);
             XIndexAccess xViewData = xViewDataSupp.getViewData();
             PropertyValue[] xData = (PropertyValue[]) xViewData.getByIndex(0);
             NewDataValue = ! ((Boolean) xData[1].Value).booleanValue();
             xData[1].Value = new Boolean(NewDataValue);
-            XIndexReplace xViewDataReplacable = (XIndexReplace)
+            XIndexReplace xViewDataReplacable =
                 UnoRuntime.queryInterface(XIndexReplace.class, xViewData);
             xViewDataReplacable.replaceByIndex(0,xData);
 */

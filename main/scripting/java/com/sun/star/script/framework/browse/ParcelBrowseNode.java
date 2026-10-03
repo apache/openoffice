@@ -104,7 +104,7 @@ public class ParcelBrowseNode extends PropertySet
         XMultiComponentFactory xFac = xCtx.getServiceManager();
         try
         {
-            XSimpleFileAccess xSFA = ( XSimpleFileAccess)
+            XSimpleFileAccess xSFA =
                 UnoRuntime.queryInterface( XSimpleFileAccess.class,
                     xFac.createInstanceWithContext(
                         "com.sun.star.ucb.SimpleFileAccess",

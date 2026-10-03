@@ -82,13 +82,13 @@ public class CalcHelper
 
     public XSpreadsheet getChartSheet() throws RuntimeException
     {
-        XNameAccess aSheetsNA = (XNameAccess) UnoRuntime.queryInterface(
+        XNameAccess aSheetsNA = UnoRuntime.queryInterface(
             XNameAccess.class, maSpreadSheetDoc.getSheets() );
 
         XSpreadsheet aSheet = null;
         try
         {
-            aSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            aSheet = UnoRuntime.queryInterface(
                 XSpreadsheet.class, aSheetsNA.getByName( msChartSheetName ) );
         }
         catch( NoSuchElementException ex )
@@ -105,7 +105,7 @@ public class CalcHelper
 
     public XSpreadsheet getDataSheet() throws RuntimeException
     {
-        XNameAccess aSheetsNA = (XNameAccess) UnoRuntime.queryInterface(
+        XNameAccess aSheetsNA = UnoRuntime.queryInterface(
             XNameAccess.class, maSpreadSheetDoc.getSheets() );
 
         XSpreadsheet aSheet = null;
@@ -113,7 +113,7 @@ public class CalcHelper
         {
             try
             {
-                aSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+                aSheet = UnoRuntime.queryInterface(
                     XSpreadsheet.class, aSheetsNA.getByName( msDataSheetName ) );
             }
             catch( NoSuchElementException ex )
@@ -149,7 +149,7 @@ public class CalcHelper
         // get the sheet to insert the chart
         try
         {
-            aSheet = (XTableChartsSupplier) UnoRuntime.queryInterface(
+            aSheet = UnoRuntime.queryInterface(
                 XTableChartsSupplier.class, getChartSheet() );
         }
         catch( Exception ex )
@@ -159,7 +159,7 @@ public class CalcHelper
         }
 
         XTableCharts aChartCollection = aSheet.getCharts();
-        XNameAccess  aChartCollectionNA = (XNameAccess) UnoRuntime.queryInterface(
+        XNameAccess  aChartCollectionNA = UnoRuntime.queryInterface(
             XNameAccess.class, aChartCollection );
 
         if( aChartCollectionNA != null &&
@@ -176,21 +176,21 @@ public class CalcHelper
 
             try
             {
-                XTableChart aTableChart = (XTableChart) UnoRuntime.queryInterface(
+                XTableChart aTableChart = UnoRuntime.queryInterface(
                     XTableChart.class, aChartCollectionNA.getByName( sChartName ));
 
                 // the table chart is an embedded object which contains the chart document
-                aResult = (XChartDocument) UnoRuntime.queryInterface(
+                aResult = UnoRuntime.queryInterface(
                     XChartDocument.class,
-                    ((XEmbeddedObjectSupplier) UnoRuntime.queryInterface(
+                    (UnoRuntime.queryInterface(
                         XEmbeddedObjectSupplier.class,
                         aTableChart )).getEmbeddedObject());
 
                 // create a diagram via the factory and set this as new diagram
                 aResult.setDiagram(
-                    (XDiagram) UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         XDiagram.class,
-                        ((XMultiServiceFactory) UnoRuntime.queryInterface(
+                        (UnoRuntime.queryInterface(
                             XMultiServiceFactory.class,
                             aResult )).createInstance( sChartServiceName )));
             }
@@ -218,7 +218,7 @@ public class CalcHelper
         try
         {
             XSpreadsheet aSheet = getDataSheet();
-            XCellRange aSheetRange = (XCellRange) UnoRuntime.queryInterface( XCellRange.class, aSheet );
+            XCellRange aSheetRange = UnoRuntime.queryInterface( XCellRange.class, aSheet );
 
             aRange = aSheetRange.getCellRangeByPosition(
                 0, 0,
@@ -281,7 +281,7 @@ public class CalcHelper
         try
         {
             XSpreadsheet aSheet = getDataSheet();
-            XCellRange aSheetRange = (XCellRange) UnoRuntime.queryInterface( XCellRange.class, aSheet );
+            XCellRange aSheetRange = UnoRuntime.queryInterface( XCellRange.class, aSheet );
 
             aRange = aSheetRange.getCellRangeByPosition(
                 0, 0,
@@ -296,7 +296,7 @@ public class CalcHelper
             int nFactorCol = nColumnCount + 2;
             (aSheet.getCellByPosition( nFactorCol - 1, 0 )).setValue( 0.2 );
 
-            XText xCellText = (XText) UnoRuntime.queryInterface( XText.class, aSheet.getCellByPosition( nFactorCol - 1, 1 ) );
+            XText xCellText = UnoRuntime.queryInterface( XText.class, aSheet.getCellByPosition( nFactorCol - 1, 1 ) );
             xCellText.setString( "Change the factor above and\nwatch the changes in the chart" );
 
             for( nCol = 0; nCol < nColumnCount; nCol++ )
@@ -337,9 +337,9 @@ public class CalcHelper
      */
     public void raiseChartSheet()
     {
-        ((XSpreadsheetView) UnoRuntime.queryInterface(
+        (UnoRuntime.queryInterface(
             XSpreadsheetView.class,
-            ((XModel) UnoRuntime.queryInterface(
+            (UnoRuntime.queryInterface(
                 XModel.class,
                 maSpreadSheetDoc )).getCurrentController()) ).setActiveSheet( getChartSheet() );
     }
@@ -362,9 +362,9 @@ public class CalcHelper
         if( maSpreadSheetDoc != null )
         {
             XSpreadsheets  aSheets    = maSpreadSheetDoc.getSheets();
-            XNameContainer aSheetsNC  = (XNameContainer)  UnoRuntime.queryInterface(
+            XNameContainer aSheetsNC  = UnoRuntime.queryInterface(
                 XNameContainer.class, aSheets );
-            XIndexAccess   aSheetsIA  = (XIndexAccess)    UnoRuntime.queryInterface(
+            XIndexAccess   aSheetsIA  = UnoRuntime.queryInterface(
                 XIndexAccess.class, aSheets );
 
             if( aSheets   != null &&
@@ -377,11 +377,11 @@ public class CalcHelper
                     for( int i = aSheetsIA.getCount() - 1; i > 0; i-- )
                     {
                         aSheetsNC.removeByName(
-                            ( (XNamed) UnoRuntime.queryInterface(
+                            ( UnoRuntime.queryInterface(
                                 XNamed.class, aSheetsIA.getByIndex( i ) )).getName() );
                     }
 
-                    XNamed aFirstSheet = (XNamed) UnoRuntime.queryInterface(
+                    XNamed aFirstSheet = UnoRuntime.queryInterface(
                         XNamed.class,
                         aSheetsIA.getByIndex( 0 ));
 

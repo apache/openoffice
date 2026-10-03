@@ -77,7 +77,7 @@ public class _BarDiagram extends MultiPropertyTest {
 
         oldDiagram = doc.getDiagram();
         doc.setDiagram(bar);
-        oObj = (XPropertySet)
+        oObj =
             UnoRuntime.queryInterface( XPropertySet.class, doc.getDiagram() );
         log.println("Set it to 3D");
         try {

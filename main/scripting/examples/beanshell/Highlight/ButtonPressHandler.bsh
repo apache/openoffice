@@ -37,16 +37,16 @@ XButton button = (XButton)AnyConverter.toObject(
     new Type(XButton.class), event.Source);
 
 // We can now query for the model of the button and get its properties
-XControl control = (XControl)UnoRuntime.queryInterface(XControl.class, button);
+XControl control = UnoRuntime.queryInterface(XControl.class, button);
 XControlModel cmodel = control.getModel();
-XPropertySet pset = (XPropertySet)UnoRuntime.queryInterface(
+XPropertySet pset = UnoRuntime.queryInterface(
     XPropertySet.class, cmodel);
 
 if (pset.getPropertyValue("Label").equals("Exit"))
 {
     // We can get the XDialog in which this control appears by calling
     // getContext() on the XControl interface
-    XDialog xDialog = (XDialog)UnoRuntime.queryInterface(
+    XDialog xDialog = UnoRuntime.queryInterface(
         XDialog.class, control.getContext());
     
     // Close the dialog
@@ -56,11 +56,11 @@ else
 {
     // We can get the list of controls for this dialog by calling
     // getContext() on the XControl interface of the button
-    XControlContainer controls = (XControlContainer)UnoRuntime.queryInterface(
+    XControlContainer controls = UnoRuntime.queryInterface(
         XControlContainer.class, control.getContext());
 
     // Now get the text field control from the list
-    XTextComponent textField = (XTextComponent)
+    XTextComponent textField =
         UnoRuntime.queryInterface(
             XTextComponent.class, controls.getControl("HighlightTextField"));
 
@@ -70,7 +70,7 @@ else
     java.awt.Color cRed = new java.awt.Color(255, 0, 0);
     int red = cRed.getRGB();
 
-    XReplaceable replaceable = (XReplaceable)
+    XReplaceable replaceable =
         UnoRuntime.queryInterface(XReplaceable.class, XSCRIPTCONTEXT.getDocument()); 
 
     XReplaceDescriptor descriptor =
@@ -78,7 +78,7 @@ else
 
     // Gets a XPropertyReplace object for altering the properties
     // of the replaced text
-    XPropertyReplace xPropertyReplace = (XPropertyReplace)
+    XPropertyReplace xPropertyReplace =
         UnoRuntime.queryInterface(XPropertyReplace.class, descriptor);
 
     // Sets the replaced text property fontweight value to Bold

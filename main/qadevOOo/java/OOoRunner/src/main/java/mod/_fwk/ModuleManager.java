@@ -96,7 +96,7 @@ public class ModuleManager extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document ", e);
         }
-        XModel xTextMode1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xTextMode1 = UnoRuntime.queryInterface(XModel.class,
                                                        xTextDoc);
         XController xTextController = xTextMode1.getCurrentController();
         XFrame xTextFrame = xTextController.getFrame();
@@ -111,7 +111,7 @@ public class ModuleManager extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document ", e);
         }
-        XModel xWebMode1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xWebMode1 = UnoRuntime.queryInterface(XModel.class,
                                                        xWebDoc);
         XController xWebController = xWebMode1.getCurrentController();
         XFrame xWebFrame = xWebController.getFrame();
@@ -125,7 +125,7 @@ public class ModuleManager extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document ", e);
         }
-        XModel xGlobalMode1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xGlobalMode1 = UnoRuntime.queryInterface(XModel.class,
                                                        xGlobalDoc);
         XController xGlobalController = xGlobalMode1.getCurrentController();
         XFrame xGlobalFrame = xGlobalController.getFrame();
@@ -138,7 +138,7 @@ public class ModuleManager extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document ", e);
         }
-        XModel xSheetMode1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xSheetMode1 = UnoRuntime.queryInterface(XModel.class,
                                                        xSheetDoc);
 
         XController xSheetController = xSheetMode1.getCurrentController();
@@ -151,7 +151,7 @@ public class ModuleManager extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document ", e);
         }
-        XModel xDrawMode1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xDrawMode1 = UnoRuntime.queryInterface(XModel.class,
                                                        xDrawDoc);
         XController xDrawController = xDrawMode1.getCurrentController();
         XFrame xDrawFrame = xDrawController.getFrame();
@@ -164,7 +164,7 @@ public class ModuleManager extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document ", e);
         }
-        XModel xImpressMode1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xImpressMode1 = UnoRuntime.queryInterface(XModel.class,
                                                        xImpressDoc);
         XController xImpressController = xImpressMode1.getCurrentController();
         XFrame xImpressFrame = xImpressController.getFrame();
@@ -177,7 +177,7 @@ public class ModuleManager extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document ", e);
         }
-        XModel xMathMode1 = (XModel) UnoRuntime.queryInterface(XModel.class,
+        XModel xMathMode1 = UnoRuntime.queryInterface(XModel.class,
                                                        xMathDoc);
         XController xMathController = xMathMode1.getCurrentController();
         XFrame xMathFrame = xMathController.getFrame();

@@ -76,7 +76,7 @@ public class RecoveryTools {
      */
     public XDialog getActiveDialog( XMultiServiceFactory xMSF){
         XWindow xWin = getActiveWindow(xMSF);
-        return (XDialog) UnoRuntime.queryInterface(XDialog.class, xWin);
+        return UnoRuntime.queryInterface(XDialog.class, xWin);
     }
 
     public XWindow getActiveWindow( XMultiServiceFactory xMSF){
@@ -87,10 +87,10 @@ public class RecoveryTools {
           return null;
         }
 
-        XExtendedToolkit tk = (XExtendedToolkit)
+        XExtendedToolkit tk =
             UnoRuntime.queryInterface(XExtendedToolkit.class, xToolKit);
         Object atw = tk.getActiveTopWindow();
-        return (XWindow) UnoRuntime.queryInterface(XWindow.class, atw);
+        return UnoRuntime.queryInterface(XWindow.class, atw);
     }
 
     /**
@@ -214,7 +214,7 @@ public class RecoveryTools {
      */
     public boolean closeOffice(XMultiServiceFactory xMSF) {
         try {
-            XDesktop desk = (XDesktop) UnoRuntime.queryInterface(
+            XDesktop desk = UnoRuntime.queryInterface(
                     XDesktop.class, xMSF.createInstance(
                     "com.sun.star.frame.Desktop"));
             xMSF = null;

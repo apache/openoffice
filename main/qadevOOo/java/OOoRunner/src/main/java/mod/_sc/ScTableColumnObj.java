@@ -89,7 +89,7 @@ public class ScTableColumnObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -121,7 +121,7 @@ public class ScTableColumnObj extends TestCase {
         XSpreadsheet xSpreadsheet = null;
 
         XSpreadsheets xSpreadsheets = (XSpreadsheets)xSheetDoc.getSheets();
-        XNameAccess oNames = (XNameAccess)
+        XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, xSpreadsheets );
         try {
             xSpreadsheet = (XSpreadsheet) AnyConverter.toObject(
@@ -138,10 +138,10 @@ public class ScTableColumnObj extends TestCase {
             throw new StatusException("Couldn't get element by name", e);
         }
 
-        XColumnRowRange oColumnRowRange = (XColumnRowRange)
+        XColumnRowRange oColumnRowRange =
             UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
         XTableColumns oColumns = (XTableColumns) oColumnRowRange.getColumns();
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, oColumns);
         try {
             oObj = (XInterface) AnyConverter.toObject(

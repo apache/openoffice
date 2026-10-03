@@ -156,8 +156,8 @@ public class TitleField {
 	 */
 	private void createTitleFiled(XTextDocument document) throws Exception {
 
-		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
-		XTextField  TitleField = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.docinfo.Title"));
+		XMultiServiceFactory sevriceFactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
+		XTextField  TitleField = UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.docinfo.Title"));
 
 
 		SWUtil.moveCuror2Start(document);
@@ -184,12 +184,12 @@ public class TitleField {
 	 * @throws Exception
 	 */
 	private boolean isContainTitleField(XTextDocument document, String content) throws Exception {
-		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
+		XTextFieldsSupplier fieldsSupplier = UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
 			  	Object field =  enumeration.nextElement();
-				XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
+				XPropertySet props = UnoRuntime.queryInterface(XPropertySet.class, field);
 				String strContent = (String) props.getPropertyValue("CurrentPresentation");
 			    return content.equals(strContent);
 

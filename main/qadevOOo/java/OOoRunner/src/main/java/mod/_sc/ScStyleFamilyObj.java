@@ -90,7 +90,7 @@ public class ScStyleFamilyObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -127,12 +127,12 @@ public class ScStyleFamilyObj extends TestCase {
         XNameAccess oStyleFamilyNameAccess = null;
         // create testobject here
         log.println("getting style");
-        XStyleFamiliesSupplier oStyleFamiliesSupplier = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier oStyleFamiliesSupplier =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class, xSpreadsheetDoc);
 
         XNameAccess oStyleFamilies = oStyleFamiliesSupplier.getStyleFamilies();
-        XIndexAccess oStyleFamiliesIndexAccess = (XIndexAccess)
+        XIndexAccess oStyleFamiliesIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, oStyleFamilies);
         try {
             oStyleFamilyNameAccess = (XNameAccess) AnyConverter.toObject(
@@ -153,14 +153,14 @@ public class ScStyleFamilyObj extends TestCase {
         }
 
         SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)tParam.getMSF());
-        XComponent xComp = (XComponent)
+        XComponent xComp =
             UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc);
 
         XInterface oInstance = (XInterface)
             SOF.createInstance(xComp,"com.sun.star.style.CellStyle");
 
         // insert a Style which can be replaced by name
-        XNameContainer oContainer = (XNameContainer)
+        XNameContainer oContainer =
             UnoRuntime.queryInterface(
                 XNameContainer.class, oStyleFamilyNameAccess);
         try {

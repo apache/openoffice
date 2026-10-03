@@ -183,15 +183,15 @@ public class OSingleSelectQueryComposer extends TestCase {
         try {
             xMSF = (XMultiServiceFactory)Param.getMSF();
 
-      		XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface(
+      		XNameAccess xNameAccess = UnoRuntime.queryInterface(
                         XNameAccess.class,
                         xMSF.createInstance("com.sun.star.sdb.DatabaseContext"));
             // we use the first datasource
-    		XDataSource xDS = (XDataSource)UnoRuntime.queryInterface(
+    		XDataSource xDS = UnoRuntime.queryInterface(
                     XDataSource.class, xNameAccess.getByName( "Bibliography" ));
 
             log.println("check XMultiServiceFactory");
-            XMultiServiceFactory xConn = (XMultiServiceFactory)
+            XMultiServiceFactory xConn =
                         UnoRuntime.queryInterface(XMultiServiceFactory.class,
                         xDS.getConnection(new String(),new String()));
 
@@ -212,7 +212,7 @@ public class OSingleSelectQueryComposer extends TestCase {
 
             Object oRowSet = xMSF.createInstance("com.sun.star.sdb.RowSet") ;
 
-            XPropertySet xSetProp = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet xSetProp = UnoRuntime.queryInterface
                 (XPropertySet.class, oRowSet) ;
 
             xSetProp.setPropertyValue("DataSourceName", "Bibliography") ;
@@ -220,13 +220,13 @@ public class OSingleSelectQueryComposer extends TestCase {
             xSetProp.setPropertyValue("CommandType",
                 new Integer(CommandType.TABLE)) ;
 
-            com.sun.star.sdbc.XRowSet xORowSet = (com.sun.star.sdbc.XRowSet)
+            com.sun.star.sdbc.XRowSet xORowSet =
                 UnoRuntime.queryInterface(com.sun.star.sdbc.XRowSet.class,
                 oRowSet) ;
 
             xORowSet.execute() ;
 
-            XColumnsSupplier xColSup = (XColumnsSupplier)
+            XColumnsSupplier xColSup =
                     UnoRuntime.queryInterface(XColumnsSupplier.class, oRowSet);
 
             XNameAccess xCols = xColSup.getColumns();
@@ -235,12 +235,12 @@ public class OSingleSelectQueryComposer extends TestCase {
                                 new Type(XPropertySet.class),
                                 xCols.getByName(xCols.getElementNames()[0]));
 
-            XSingleSelectQueryAnalyzer xQueryAna = (XSingleSelectQueryAnalyzer)
+            XSingleSelectQueryAnalyzer xQueryAna =
                      UnoRuntime.queryInterface(XSingleSelectQueryAnalyzer.class,
                      oInterface);
 
             // XSingleSelectQueryComposer
-            XSingleSelectQueryComposer xComposer = (XSingleSelectQueryComposer)
+            XSingleSelectQueryComposer xComposer =
                       UnoRuntime.queryInterface(XSingleSelectQueryComposer.class,
                       xQueryAna);
             xQueryAna.setQuery("SELECT * FROM \"biblio\"");

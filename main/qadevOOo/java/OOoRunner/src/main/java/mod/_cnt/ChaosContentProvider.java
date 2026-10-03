@@ -92,7 +92,7 @@ public class ChaosContentProvider extends TestCase {
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
         // adding relation for XContentProvider
-        XContentIdentifierFactory CIF = (XContentIdentifierFactory)
+        XContentIdentifierFactory CIF =
         UnoRuntime.queryInterface(XContentIdentifierFactory.class, cntFactory);
 
         tEnv.addObjRelation("FACTORY", CIF) ;

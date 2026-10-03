@@ -83,13 +83,13 @@ public class ScAutoFormatObj extends TestCase {
         try {
             XInterface formats = (XInterface)oMSF.createInstance
                     ("com.sun.star.sheet.TableAutoFormats");
-            XIndexAccess formatsIndex = (XIndexAccess)
+            XIndexAccess formatsIndex =
                     UnoRuntime.queryInterface(XIndexAccess.class, formats);
             oObj = (XInterface) AnyConverter.toObject(
                     new Type(XInterface.class),formatsIndex.getByIndex
                                             (formatsIndex.getCount() - 1));
 
-            XNamed objNamed = (XNamed)
+            XNamed objNamed =
                 UnoRuntime.queryInterface(XNamed.class, oObj) ;
             log.println("AutoFormat name is '" + objNamed.getName() + "'") ;
         } catch (com.sun.star.uno.Exception e) {

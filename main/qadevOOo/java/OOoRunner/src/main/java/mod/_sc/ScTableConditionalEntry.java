@@ -88,7 +88,7 @@ public class ScTableConditionalEntry extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -114,7 +114,7 @@ public class ScTableConditionalEntry extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 
         try {
@@ -145,7 +145,7 @@ public class ScTableConditionalEntry extends TestCase {
         XPropertySet Props = null;
 
         try {
-            Props = (XPropertySet)
+            Props =
                 UnoRuntime.queryInterface(XPropertySet.class, oSheet);
             CFormat = Props.getPropertyValue("ConditionalFormat");
             if (utils.isVoid(CFormat)) {
@@ -160,7 +160,7 @@ public class ScTableConditionalEntry extends TestCase {
         }
 
         try {
-            XSheetConditionalEntries xSCE = (XSheetConditionalEntries)
+            XSheetConditionalEntries xSCE =
                 UnoRuntime.queryInterface(XSheetConditionalEntries.class, CFormat);
             xSCE.addNew(Conditions());
             Props.setPropertyValue("ConditionalFormat", xSCE);

@@ -187,11 +187,11 @@ public class SvxShapePolyPolygon extends TestCase {
             // adding some shapes for testing.
             //SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)tParam.getMSF());
             //oShape = SOF.createShape(xDrawDoc,6000,6000,5000,5000,"PolyPolygon");
-            XMultiServiceFactory xMSF = (XMultiServiceFactory)
+            XMultiServiceFactory xMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, xDrawDoc) ;
             XInterface oInst = (XInterface) xMSF.createInstance
                 ("com.sun.star.drawing.PolyPolygonShape") ;
-            oShape = (XShape) UnoRuntime.queryInterface
+            oShape = UnoRuntime.queryInterface
                 (XShape.class, oInst) ;
 
             oShape.setSize(new Size(0,0)) ;
@@ -213,7 +213,7 @@ public class SvxShapePolyPolygon extends TestCase {
 
             Point[][] polygon = new Point[][] {square1, square2};
 
-            ((XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,
+            (UnoRuntime.queryInterface(XPropertySet.class,
                 oShape)).setPropertyValue("PolyPolygon", polygon) ;
 
             oObj = oShape ;
@@ -232,7 +232,7 @@ public class SvxShapePolyPolygon extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         log.println( "adding two styles as ObjRelation for ShapeDescriptor" );
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
@@ -240,7 +240,7 @@ public class SvxShapePolyPolygon extends TestCase {
                 new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
         tEnv.addObjRelation("Style1",aStyle);
-        oShapeProps = (XPropertySet)
+        oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
             aStyle = (XStyle) AnyConverter.toObject(

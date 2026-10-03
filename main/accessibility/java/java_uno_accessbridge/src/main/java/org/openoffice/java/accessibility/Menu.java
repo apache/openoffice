@@ -177,7 +177,7 @@ public class Menu extends AbstractButton
     protected class AccessibleMenu extends AccessibleAbstractButton
         implements javax.accessibility.AccessibleSelection {
         protected AccessibleMenu() {
-            unoAccessibleSelection = (XAccessibleSelection) UnoRuntime.queryInterface(XAccessibleSelection.class,
+            unoAccessibleSelection = UnoRuntime.queryInterface(XAccessibleSelection.class,
                     unoAccessibleContext);
         }
 

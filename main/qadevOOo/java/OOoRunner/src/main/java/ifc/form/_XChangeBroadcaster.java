@@ -106,7 +106,7 @@ public class _XChangeBroadcaster extends MultiMethodTest {
      * is queried.
      */
     public void before() {
-        xText = (XTextComponent)
+        xText =
             UnoRuntime.queryInterface(XTextComponent.class,oObj);
         changer = (Changer) tEnv.getObjRelation("XChangeBroadcaster.Changer") ;
 
@@ -132,7 +132,7 @@ public class _XChangeBroadcaster extends MultiMethodTest {
         shortWait();
 
         win2.setFocus();
-        XTextComponent TC = (XTextComponent)UnoRuntime.queryInterface
+        XTextComponent TC = UnoRuntime.queryInterface
             (XTextComponent.class,tEnv.getObjRelation("CONTROL"));
         TC.setText("NOXChangeBroadcaster");
         shortWait();

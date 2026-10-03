@@ -76,7 +76,7 @@ public class _XDataPilotTable2 extends MultiMethodTest
     protected void before()
     {
         Object o = tEnv.getObjRelation("DATAPILOTTABLE2");
-        xDPTab2 = (XDataPilotTable2)UnoRuntime.queryInterface(
+        xDPTab2 = UnoRuntime.queryInterface(
             XDataPilotTable2.class, o);
 
         if (xDPTab2 == null)
@@ -193,7 +193,7 @@ public class _XDataPilotTable2 extends MultiMethodTest
         boolean testResult = true;
         int cellCount = mResultCells.size();
         XSpreadsheets xSheets = xSheetDoc.getSheets();
-        XIndexAccess xIA = (XIndexAccess)UnoRuntime.queryInterface(
+        XIndexAccess xIA = UnoRuntime.queryInterface(
             XIndexAccess.class, xSheets);
         int sheetCount = xIA.getCount();
         for (int i = 0; i < cellCount && testResult; ++i)
@@ -222,7 +222,7 @@ public class _XDataPilotTable2 extends MultiMethodTest
                 XSpreadsheet xSheet = null;
                 try
                 {
-                    xSheet = (XSpreadsheet)UnoRuntime.queryInterface(
+                    xSheet = UnoRuntime.queryInterface(
                         XSpreadsheet.class, xIA.getByIndex(addr.Sheet));
                 }
                 catch (com.sun.star.uno.Exception e)
@@ -243,7 +243,7 @@ public class _XDataPilotTable2 extends MultiMethodTest
 
                 // Remove the sheet just inserted.
 
-                XNamed xNamed = (XNamed)UnoRuntime.queryInterface(XNamed.class, xSheet);
+                XNamed xNamed = UnoRuntime.queryInterface(XNamed.class, xSheet);
                 String name = xNamed.getName();
                 try
                 {
@@ -420,7 +420,7 @@ public class _XDataPilotTable2 extends MultiMethodTest
     private void buildDataFields()
     {
         mDataFieldDims = new ArrayList();
-        XDataPilotDescriptor xDesc = (XDataPilotDescriptor)UnoRuntime.queryInterface(
+        XDataPilotDescriptor xDesc = UnoRuntime.queryInterface(
             XDataPilotDescriptor.class, xDPTab2);
 
         XIndexAccess xFields = xDesc.getDataPilotFields();
@@ -430,7 +430,7 @@ public class _XDataPilotTable2 extends MultiMethodTest
             try
             {
                 Object field = xFields.getByIndex(i);
-                XPropertySet propSet = (XPropertySet)UnoRuntime.queryInterface(
+                XPropertySet propSet = UnoRuntime.queryInterface(
                     XPropertySet.class, field);
                 DataPilotFieldOrientation orient =
                     (DataPilotFieldOrientation)propSet.getPropertyValue("Orientation");
@@ -494,7 +494,7 @@ public class _XDataPilotTable2 extends MultiMethodTest
             return false;
         }
 
-        XCellRangeData xCRD = (XCellRangeData)UnoRuntime.queryInterface(
+        XCellRangeData xCRD = UnoRuntime.queryInterface(
             XCellRangeData.class, xCR);
 
         Object[][] sheetData = xCRD.getDataArray();
@@ -549,16 +549,16 @@ public class _XDataPilotTable2 extends MultiMethodTest
         try
         {
             XCellRange xRng = xSheet.getCellRangeByPosition(nCol, nRow, nCol, nRow);
-            XSheetCellRange xSCR = (XSheetCellRange)UnoRuntime.queryInterface(
+            XSheetCellRange xSCR = UnoRuntime.queryInterface(
                 XSheetCellRange.class, xRng);
 
             XSheetCellCursor xCursor = xSheet.createCursorByRange(xSCR);
-            XCellCursor xCellCursor = (XCellCursor)UnoRuntime.queryInterface(
+            XCellCursor xCellCursor = UnoRuntime.queryInterface(
                 XCellCursor.class, xCursor);
 
             xCellCursor.gotoEnd();
             XCell xCell = xCursor.getCellByPosition(0, 0);
-            XCellAddressable xCellAddr = (XCellAddressable)UnoRuntime.queryInterface(
+            XCellAddressable xCellAddr = UnoRuntime.queryInterface(
                 XCellAddressable.class, xCell);
 
             return xCellAddr.getCellAddress();

@@ -64,7 +64,7 @@ public class AccWall extends TestCase {
         }
 
         log.println("Change Diagram to 3D");
-        XPropertySet ChartProps = (XPropertySet)
+        XPropertySet ChartProps =
             UnoRuntime.queryInterface( XPropertySet.class, xChartDoc.getDiagram() );
         try {
             ChartProps.setPropertyValue("Dim3D", new Boolean(true));
@@ -88,7 +88,7 @@ public class AccWall extends TestCase {
 
         XInterface oObj = null;
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xChartDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -108,7 +108,7 @@ public class AccWall extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        final XAccessibleComponent acc = (XAccessibleComponent)
+        final XAccessibleComponent acc =
                 UnoRuntime.queryInterface(
                     XAccessibleComponent.class,oObj);
         tEnv.addObjRelation("EventProducer",

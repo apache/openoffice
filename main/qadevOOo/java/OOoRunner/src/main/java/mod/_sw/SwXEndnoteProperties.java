@@ -93,11 +93,11 @@ public class SwXEndnoteProperties extends TestCase {
         XInterface oEndnote;
 
         log.println( "Creating a test environment" );
-        XMultiServiceFactory msf = (XMultiServiceFactory)
+        XMultiServiceFactory msf =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
         log.println("creating a endnote");
         try {
-            oEndnote = (XInterface) UnoRuntime.queryInterface(XInterface.class,
+            oEndnote = UnoRuntime.queryInterface(XInterface.class,
                     msf.createInstance("com.sun.star.text.Endnote"));
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
@@ -108,7 +108,7 @@ public class SwXEndnoteProperties extends TestCase {
         XTextCursor oCursor = oText.createTextCursor();
 
         log.println("inserting the footnote into text document");
-        XTextContent xTC = (XTextContent)
+        XTextContent xTC =
             UnoRuntime.queryInterface(XTextContent.class, oEndnote);
         try {
             oText.insertTextContent(oCursor, xTC, false);
@@ -117,7 +117,7 @@ public class SwXEndnoteProperties extends TestCase {
             throw new StatusException("Couldn't insert the endnote", e);
         }
 
-        oInterface = (XEndnotesSupplier)
+        oInterface =
             UnoRuntime.queryInterface(XEndnotesSupplier.class, xTextDoc);
         oObj = oInterface.getEndnoteSettings();
         dbg.printPropertiesNames((XPropertySet) oObj);

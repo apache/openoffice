@@ -344,7 +344,7 @@ public class AccessibilityTools {
             ac.getAccessibleDescription() + "):" +
             utils.getImplName(ac));
 
-        XAccessibleComponent aComp = (XAccessibleComponent) UnoRuntime.queryInterface(
+        XAccessibleComponent aComp = UnoRuntime.queryInterface(
             XAccessibleComponent.class, xacc);
 
         if (aComp != null) {
@@ -394,7 +394,7 @@ public class AccessibilityTools {
     }
 
     public static String accessibleToString(Object AC) {
-        XAccessibleContext xAC = (XAccessibleContext) UnoRuntime.queryInterface(
+        XAccessibleContext xAC = UnoRuntime.queryInterface(
             XAccessibleContext.class, AC);
 
         if (xAC != null) {
@@ -403,7 +403,7 @@ public class AccessibilityTools {
                 xAC.getAccessibleDescription() + "):";
         }
 
-        XAccessible xA = (XAccessible) UnoRuntime.queryInterface(
+        XAccessible xA = UnoRuntime.queryInterface(
             XAccessible.class, AC);
 
         if (xA == null) {

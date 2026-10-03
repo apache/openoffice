@@ -214,7 +214,7 @@ public class TypeDetection {
         XInterface oObj = (XInterface) oInterface ;
         System.out.println("ImplName: "+utils.getImplName(oObj));
 
-        m_xDetection = (XTypeDetection)
+        m_xDetection =
                 UnoRuntime.queryInterface(XTypeDetection.class, oInterface);
         // create instance of helper class
         helper = new Helper(xMSF);

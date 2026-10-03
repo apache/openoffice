@@ -41,12 +41,12 @@ public class ChartUtil {
 		XChartDocument aChartDoc = null;
 		final String msChartClassID = "12dcae26-281f-416f-a234-c3086127382e";
 		// make the OLE shape a chart
-		XPropertySet aShapeProp = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet aShapeProp = UnoRuntime.queryInterface(
 				XPropertySet.class, xShape);
 		// set the class id for charts
 		aShapeProp.setPropertyValue("CLSID", msChartClassID);
 		// retrieve the chart document as model of the OLE shape
-		aChartDoc = (XChartDocument) UnoRuntime.queryInterface(
+		aChartDoc = UnoRuntime.queryInterface(
 				XChartDocument.class, aShapeProp.getPropertyValue("Model"));
 		return aChartDoc;
 	}
@@ -63,7 +63,7 @@ public class ChartUtil {
 		com.sun.star.chart2.XChartDocument aChartDoc = null;
 		final String msChartClassID = "12dcae26-281f-416f-a234-c3086127382e";
 		// make the OLE shape a chart
-		XPropertySet aShapeProp = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet aShapeProp = UnoRuntime.queryInterface(
 				XPropertySet.class, xShape);
 		// set the class id for charts
 		aShapeProp.setPropertyValue("CLSID", msChartClassID);
@@ -89,7 +89,7 @@ public class ChartUtil {
 		// get the factory that can create diagrams
 		XMultiServiceFactory aFact = (XMultiServiceFactory) UnoRuntime
 				.queryInterface(XMultiServiceFactory.class, aChartDoc);
-		XDiagram aDiagram = (XDiagram) UnoRuntime.queryInterface(
+		XDiagram aDiagram = UnoRuntime.queryInterface(
 				XDiagram.class, aFact.createInstance(ChartType));
 		return aDiagram;
 	}
@@ -126,10 +126,10 @@ public class ChartUtil {
 	public static XChartDocument getChartDocument(XShape xShape)
 			throws Exception {
 		XChartDocument aChartDoc = null;
-		XPropertySet aShapeProp = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet aShapeProp = UnoRuntime.queryInterface(
 				XPropertySet.class, xShape);
 		// retrieve the chart document as model of the OLE shape
-		aChartDoc = (XChartDocument) UnoRuntime.queryInterface(
+		aChartDoc = UnoRuntime.queryInterface(
 				XChartDocument.class, aShapeProp.getPropertyValue("Model"));
 		return aChartDoc;
 
@@ -144,10 +144,10 @@ public class ChartUtil {
 	public static com.sun.star.chart2.XChartDocument getChart2Document(XShape xShape)
 			throws Exception {
 		com.sun.star.chart2.XChartDocument aChartDoc = null;
-		XPropertySet aShapeProp = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet aShapeProp = UnoRuntime.queryInterface(
 				XPropertySet.class, xShape);
 		// retrieve the chart document as model of the OLE shape
-		aChartDoc = (com.sun.star.chart2.XChartDocument) UnoRuntime.queryInterface(
+		aChartDoc = UnoRuntime.queryInterface(
 				com.sun.star.chart2.XChartDocument.class, aShapeProp.getPropertyValue("Model"));
 		return aChartDoc;
 

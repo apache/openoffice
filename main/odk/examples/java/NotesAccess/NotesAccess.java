@@ -139,7 +139,7 @@ public class NotesAccess implements Runnable {
                frames in which components can be loaded. Desktop is the
                environment for components which can instantiate within
                frames. */
-            XComponentLoader xLoader = ( XComponentLoader )
+            XComponentLoader xLoader =
                 UnoRuntime.queryInterface(XComponentLoader.class,
                     xMCF.createInstanceWithContext(
                         "com.sun.star.frame.Desktop", xContext));
@@ -151,18 +151,18 @@ public class NotesAccess implements Runnable {
 
             // Querying for the interface XSpreadsheetDocument
             XSpreadsheetDocument xSpreadsheetDoc =
-                (XSpreadsheetDocument) UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XSpreadsheetDocument.class, xComponent);
 
             // Getting all sheets from the spreadsheet document.
             XSpreadsheets xSpreadsheets = xSpreadsheetDoc.getSheets() ;
 
             // Querying for the interface XIndexAccess.
-            XIndexAccess xIndexAccess = (XIndexAccess) UnoRuntime.queryInterface(
+            XIndexAccess xIndexAccess = UnoRuntime.queryInterface(
                 XIndexAccess.class, xSpreadsheets);
 
             // Getting the first spreadsheet.
-            XSpreadsheet xSpreadsheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            XSpreadsheet xSpreadsheet = UnoRuntime.queryInterface(
                 XSpreadsheet.class, xIndexAccess.getByIndex(0));
 
             Session session;

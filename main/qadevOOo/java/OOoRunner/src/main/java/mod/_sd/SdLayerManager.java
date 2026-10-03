@@ -119,7 +119,7 @@ public class SdLayerManager extends TestCase {
         log.println( "creating a test environment" );
 
         // create testobject here
-        XLayerSupplier oLS = (XLayerSupplier)
+        XLayerSupplier oLS =
             UnoRuntime.queryInterface(XLayerSupplier.class, xDrawDoc);
         XInterface oObj = oLS.getLayerManager();
 
@@ -133,10 +133,10 @@ public class SdLayerManager extends TestCase {
 
         // get the drawpage of drawing here
         log.println( "getting Drawpage" );
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class,xDrawDoc);
         XDrawPages oDPn = oDPS.getDrawPages();
-        XIndexAccess oDPi = (XIndexAccess)
+        XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class,oDPn);
 
         XDrawPage oDP = null;
@@ -154,7 +154,7 @@ public class SdLayerManager extends TestCase {
             throw new StatusException("Couldn't get by index", e);
         }
 
-        XShapes oShapes = (XShapes)
+        XShapes oShapes =
             UnoRuntime.queryInterface(XShapes.class, oDP);
 
         log.println( "adding Shapes as mod relation to environment" );

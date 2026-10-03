@@ -75,7 +75,7 @@ public class ScIndexEnumeration_TableChartsEnumeration extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -87,7 +87,7 @@ public class ScIndexEnumeration_TableChartsEnumeration extends TestCase {
         try {
             log.println("Getting spreadsheet") ;
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
                         UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             oSheet = (XSpreadsheet) AnyConverter.toObject(
                     new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
@@ -171,16 +171,16 @@ public class ScIndexEnumeration_TableChartsEnumeration extends TestCase {
         // insert a chart
         Rectangle oRect = new Rectangle(500, 3000, 25000, 11000);
 
-        XCellRange oRange = (XCellRange)
+        XCellRange oRange =
             UnoRuntime.queryInterface(XCellRange.class, oSheet);
         XCellRange myRange = oRange.getCellRangeByName("A1:N4");
-        XCellRangeAddressable oRangeAddr = (XCellRangeAddressable)
+        XCellRangeAddressable oRangeAddr =
             UnoRuntime.queryInterface(XCellRangeAddressable.class, myRange);
         CellRangeAddress myAddr = oRangeAddr.getRangeAddress();
 
         CellRangeAddress[] oAddr = new CellRangeAddress[1];
         oAddr[0] = myAddr;
-        XTableChartsSupplier oSupp = (XTableChartsSupplier)
+        XTableChartsSupplier oSupp =
             UnoRuntime.queryInterface(XTableChartsSupplier.class, oSheet);
 
 
@@ -189,7 +189,7 @@ public class ScIndexEnumeration_TableChartsEnumeration extends TestCase {
         oCharts.addNewByName("ScChartObj", oRect, oAddr, true, true);
 
         log.println("creating a new environment for object");
-        XEnumerationAccess ea = (XEnumerationAccess)
+        XEnumerationAccess ea =
                     UnoRuntime.queryInterface(XEnumerationAccess.class,oCharts);
 
         XInterface oObj = ea.createEnumeration();

@@ -60,12 +60,12 @@ public class ParagraphOutlineAndNumbering {
 	@Test@Ignore("Bug #120753 - [testUNO patch]paragraph outline level and numbering style change when save to doc")
 	public void testOutlineAndNumbering_NumberStyle() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.\nwe are all living in one earth!Hello,world!Hello,world!\nHello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		XTextCursor xTextCursor=xText.createTextCursor();
-		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xTextProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		xTextProps.setPropertyValue("OutlineLevel", (short)6);
 		xTextProps.setPropertyValue("NumberingStyleName", "Numbering 2");
 		xTextProps.setPropertyValue("ParaIsNumberingRestart", true);
@@ -73,7 +73,7 @@ public class ParagraphOutlineAndNumbering {
 		xTextProps.setPropertyValue("ParaLineNumberCount",true);
 		xTextProps.setPropertyValue("ParaLineNumberStartValue",(long)4);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -83,7 +83,7 @@ public class ParagraphOutlineAndNumbering {
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -95,8 +95,8 @@ public class ParagraphOutlineAndNumbering {
 		//app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph outline and numbering
 		assertEquals("assert paragraph outline and numbering",(short)6,xCursorProps_Assert_odt.getPropertyValue("OutlineLevel"));
 		assertEquals("assert paragraph outline and numbering","Numbering 2",xCursorProps_Assert_odt.getPropertyValue("NumberingStyleName"));
@@ -106,8 +106,8 @@ public class ParagraphOutlineAndNumbering {
 		assertEquals("assert paragraph outline and numbering",(long)4,xCursorProps_Assert_odt.getPropertyValue("ParaLineNumberStartValue"));
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph outline and numbering
 		assertEquals("assert paragraph outline and numbering",(short)6,xCursorProps_Assert_doc.getPropertyValue("OutlineLevel"));
 		assertEquals("assert paragraph outline and numbering","Numbering 2",xCursorProps_Assert_doc.getPropertyValue("NumberingStyleName"));
@@ -120,12 +120,12 @@ public class ParagraphOutlineAndNumbering {
 	@Test@Ignore("Bug #120753 - [testUNO patch]paragraph outline level and numbering style change when save to doc")
 	public void testOutlineAndNumbering_ListStyle() throws Exception {
 
-		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
+		XTextDocument xTextDocument = UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
 		xText.setString("we are Chinese,they are American.\nwe are all living in one earth!Hello,world!Hello,world!\nHello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		XTextCursor xTextCursor=xText.createTextCursor();
-		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xTextProps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		xTextProps.setPropertyValue("OutlineLevel", (short)3);
 		xTextProps.setPropertyValue("NumberingStyleName", "List 3");
 		xTextProps.setPropertyValue("ParaIsNumberingRestart", true);
@@ -133,7 +133,7 @@ public class ParagraphOutlineAndNumbering {
 		xTextProps.setPropertyValue("ParaLineNumberCount",true);
 		xTextProps.setPropertyValue("ParaLineNumberStartValue",(long)4);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -143,7 +143,7 @@ public class ParagraphOutlineAndNumbering {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -155,8 +155,8 @@ public class ParagraphOutlineAndNumbering {
 		//app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph outline and numbering
 		assertEquals("assert paragraph outline and numbering",(short)3,xCursorProps_Assert_odt.getPropertyValue("OutlineLevel"));
 		assertEquals("assert paragraph outline and numbering","List 3",xCursorProps_Assert_odt.getPropertyValue("NumberingStyleName"));
@@ -167,8 +167,8 @@ public class ParagraphOutlineAndNumbering {
 
 
 		//reopen the document
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph outline and numbering
 		assertEquals("assert paragraph outline and numbering",(short)3,xCursorProps_Assert_doc.getPropertyValue("OutlineLevel"));
 		assertEquals("assert paragraph outline and numbering","List 3",xCursorProps_Assert_doc.getPropertyValue("NumberingStyleName"));

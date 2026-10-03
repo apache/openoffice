@@ -223,7 +223,7 @@ public class Parcel implements XNameContainer
         String pathToDescriptor = PathUtils.make_url(
             getPathToParcel(),  ParcelDescriptor.PARCEL_DESCRIPTOR_NAME );
 
-        XSimpleFileAccess2 xSFA2 = ( XSimpleFileAccess2 )
+        XSimpleFileAccess2 xSFA2 =
             UnoRuntime.queryInterface( XSimpleFileAccess2.class, m_xSFA );
 
         if ( xSFA2 != null )

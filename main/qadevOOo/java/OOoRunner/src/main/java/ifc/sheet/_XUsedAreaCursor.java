@@ -63,7 +63,7 @@ public class _XUsedAreaCursor extends MultiMethodTest {
     public void _gotoEndOfUsedArea() {
         boolean result = true ;
 
-        XCellRangeAddressable oAddr = (XCellRangeAddressable)
+        XCellRangeAddressable oAddr =
                 UnoRuntime.queryInterface (XCellRangeAddressable.class, oObj) ;
 
         // first with true argument
@@ -97,7 +97,7 @@ public class _XUsedAreaCursor extends MultiMethodTest {
     * start of the used area in second case. <p>
     */
     public void _gotoStartOfUsedArea() {
-        XCellRangeAddressable oAddr = (XCellRangeAddressable)
+        XCellRangeAddressable oAddr =
                 UnoRuntime.queryInterface (XCellRangeAddressable.class, oObj) ;
 
         boolean result = true ;

@@ -77,7 +77,7 @@ public class XMLImporter extends TestCase {
         try {
             log.println( "creating a Spreadsheet document" );
             XSpreadsheetDocument xSpreadsheetDoc = SOF.createCalcDoc( null );
-            xSheetDoc = (XComponent) UnoRuntime.queryInterface
+            xSheetDoc = UnoRuntime.queryInterface
                 (XComponent.class, xSpreadsheetDoc);
         } catch ( com.sun.star.uno.Exception e ) {
             // Some exception occurred. FAILED
@@ -129,7 +129,7 @@ public class XMLImporter extends TestCase {
 
         try {
             oInt = xMSF.createInstance("com.sun.star.comp.Calc.XMLImporter") ;
-            XImporter imp = (XImporter) UnoRuntime.queryInterface
+            XImporter imp = UnoRuntime.queryInterface
                 (XImporter.class, oInt) ;
             imp.setTargetDocument(xSheetDoc);
         } catch (com.sun.star.uno.Exception e) {
@@ -164,7 +164,7 @@ public class XMLImporter extends TestCase {
         tEnv.addObjRelation("XDocumentHandler.XMLData", xml) ;
 
         final PrintWriter fLog = log ;
-        XSpreadsheetDocument xSpreadsheetDoc = (XSpreadsheetDocument)
+        XSpreadsheetDocument xSpreadsheetDoc =
             UnoRuntime.queryInterface(XSpreadsheetDocument.class, xSheetDoc);
         final XSpreadsheets sheets = xSpreadsheetDoc.getSheets() ;
         log.println("Sheets before importing :") ;

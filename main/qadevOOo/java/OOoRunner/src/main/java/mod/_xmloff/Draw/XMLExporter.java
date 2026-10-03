@@ -140,25 +140,25 @@ public class XMLExporter extends TestCase {
                 "com.sun.star.comp.Draw.XMLExporter", new Object[] {arg});
 
 
-            XDrawPagesSupplier supp = (XDrawPagesSupplier)
+            XDrawPagesSupplier supp =
                 UnoRuntime.queryInterface(XDrawPagesSupplier.class, xDrawDoc);
             XDrawPages set = supp.getDrawPages();
 
             // This is an XML-export BUG (new slide named "NewSlide2" can not be exported to XML)
             set.insertNewByIndex(1);
 
-            XDrawPage page1 = (XDrawPage)
+            XDrawPage page1 =
                 UnoRuntime.queryInterface(XDrawPage.class, set.getByIndex(0));
-            XNamed NPage1 = (XNamed)
+            XNamed NPage1 =
                 UnoRuntime.queryInterface(XNamed.class,page1);
             NPage1.setName("NewSlide1");
-            XDrawPage page2 = (XDrawPage)
+            XDrawPage page2 =
                 UnoRuntime.queryInterface(XDrawPage.class, set.getByIndex(1));
-            XNamed NPage2 = (XNamed)
+            XNamed NPage2 =
                 UnoRuntime.queryInterface(XNamed.class,page2);
             NPage2.setName("NewSlide2");
 
-            XExporter xEx = (XExporter)
+            XExporter xEx =
                 UnoRuntime.queryInterface(XExporter.class,oObj);
             xEx.setSourceDocument(xDrawDoc);
 

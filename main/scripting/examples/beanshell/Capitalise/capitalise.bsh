@@ -54,7 +54,7 @@ void capitalise() {
     if(count>=1) { //ie we have a selection
         for(i=0;i<count;i++) {
             // get the i-th region selected
-            xTextRange = (XTextRange)
+            xTextRange =
                 UnoRuntime.queryInterface(XTextRange.class, xIndexAccess.getByIndex(i));
             System.out.println("string: "+xTextRange.getString());
             // get the selected string
@@ -62,9 +62,9 @@ void capitalise() {
             if(theString.length()==0) {
                 // sadly we can have a selection where nothing is selected
                 // in this case we get the XWordCursor and make a selection!
-                xText = (XText)
+                xText =
                     UnoRuntime.queryInterface(XText.class, xTextRange.getText());
-                xWordCursor = (XWordCursor)
+                xWordCursor =
                     UnoRuntime.queryInterface(XWordCursor.class, xText.createTextCursorByRange(xTextRange));
                 // move the Word cursor to the start of the word if its not
                 // already there
@@ -100,13 +100,13 @@ void capitalise() {
 
 // The XSCRIPTCONTEXT variable is of type XScriptContext and is available to
 // all BeanShell scripts executed by the Script Framework
-xModel = (XModel)
+xModel =
     UnoRuntime.queryInterface(XModel.class, XSCRIPTCONTEXT.getDocument());
 //the writer controller impl supports the css.view.XSelectionSupplier interface
-xSelectionSupplier = (XSelectionSupplier)
+xSelectionSupplier =
     UnoRuntime.queryInterface(XSelectionSupplier.class, xModel.getCurrentController());
 //see section 7.5.1 of developers' guide
-xIndexAccess = (XIndexAccess)
+xIndexAccess =
     UnoRuntime.queryInterface(XIndexAccess.class, xSelectionSupplier.getSelection());
 
 //call the method that does the work

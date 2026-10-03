@@ -125,7 +125,7 @@ public class ChildrenRetriever {
             XDynamicResultSet set;
 
             // Execute command "open".
-            set = ( XDynamicResultSet )UnoRuntime.queryInterface(
+            set = UnoRuntime.queryInterface(
                 XDynamicResultSet.class, m_helper.executeCommand( m_content, "open", arg ));
             XResultSet resultSet = ( XResultSet )set.getStaticResultSet();
 
@@ -137,9 +137,9 @@ public class ChildrenRetriever {
 
                 // Move to begin.
             if ( resultSet.first() ) {
-                XContentAccess contentAccess = ( XContentAccess )UnoRuntime.queryInterface(
+                XContentAccess contentAccess = UnoRuntime.queryInterface(
                     XContentAccess.class, resultSet );
-                XRow row = ( XRow )UnoRuntime.queryInterface( XRow.class, resultSet );
+                XRow row = UnoRuntime.queryInterface( XRow.class, resultSet );
 
                 do {
                     Vector propsValues = new Vector();

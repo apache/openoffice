@@ -79,11 +79,11 @@ public class ScUniqueCellFormatsObj extends TestCase {
                                                     PrintWriter log) {
         log.println("Getting the first sheet");
 
-        XIndexAccess xIA = (XIndexAccess) UnoRuntime.queryInterface(
+        XIndexAccess xIA = UnoRuntime.queryInterface(
                                    XIndexAccess.class, xSheetDoc.getSheets());
 
         try {
-            oSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            oSheet = UnoRuntime.queryInterface(
                              XSpreadsheet.class, xIA.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -101,7 +101,7 @@ public class ScUniqueCellFormatsObj extends TestCase {
         changeColor("C1:C10", 0, 0, 255);
         changeColor("D1:D10", 0, 255, 0);
 
-        XUniqueCellFormatRangesSupplier xUCRS = (XUniqueCellFormatRangesSupplier) UnoRuntime.queryInterface(
+        XUniqueCellFormatRangesSupplier xUCRS = UnoRuntime.queryInterface(
                                                         XUniqueCellFormatRangesSupplier.class,
                                                         oSheet);
 
@@ -115,7 +115,7 @@ public class ScUniqueCellFormatsObj extends TestCase {
 
     protected void changeColor(String RangeName, int r, int g, int b) {
         XCellRange xRange = oSheet.getCellRangeByName(RangeName);
-        XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(
+        XPropertySet xPropertySet = UnoRuntime.queryInterface(
                                             XPropertySet.class, xRange);
         Color c = new Color(r, g, b);
         int c2int = 16777216 + c.hashCode();

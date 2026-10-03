@@ -109,10 +109,10 @@ public class SvxShapeGroup extends TestCase {
         // get the drawpage of drawing here
         try {
             log.println( "getting Drawpage" );
-            XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+            XDrawPagesSupplier oDPS =
                 UnoRuntime.queryInterface(XDrawPagesSupplier.class,xDrawDoc);
             XDrawPages oDPn = oDPS.getDrawPages();
-            XIndexAccess oDPi = (XIndexAccess)
+            XIndexAccess oDPi =
                 UnoRuntime.queryInterface(XIndexAccess.class,oDPn);
             oObj = (XDrawPage) AnyConverter.toObject(
                 new Type(XDrawPage.class),oDPi.getByIndex(0));
@@ -130,7 +130,7 @@ public class SvxShapeGroup extends TestCase {
 
         //put something on the drawpage
         log.println( "inserting some Shapes" );
-        oShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class,oObj);
+        oShapes = UnoRuntime.queryInterface(XShapes.class,oObj);
         XShape Shape1 = SOF.createShape(xDrawDoc,
             3000,4500,15000,1000,"Ellipse");
         oShapes.add(SOF.createShape(xDrawDoc,
@@ -141,14 +141,14 @@ public class SvxShapeGroup extends TestCase {
         oShapes.add(Shape2);
 
         log.println( "adding two style as ObjRelation for ShapeDescriptor" );
-        XPropertySet oShapeProps = (XPropertySet)
+        XPropertySet oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,Shape1);
         XStyle aStyle1 = null;
         try {
             aStyle1 = (XStyle) AnyConverter.toObject(
                 new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
-        oShapeProps = (XPropertySet)
+        oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,Shape2);
         XStyle aStyle2 = null;
         try {
@@ -160,7 +160,7 @@ public class SvxShapeGroup extends TestCase {
        //get the XShapeGrouper
        try{
             log.println("get XShapeGroup");
-            XShapeGrouper oSG = (XShapeGrouper)UnoRuntime.queryInterface
+            XShapeGrouper oSG = UnoRuntime.queryInterface
                 (XShapeGrouper.class, oObj);
             oObj = oSG.group(oShapes);
         } catch ( Exception e) {

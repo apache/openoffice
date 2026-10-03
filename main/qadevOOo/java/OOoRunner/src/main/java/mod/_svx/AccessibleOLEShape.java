@@ -58,7 +58,7 @@ public class AccessibleOLEShape extends TestCase {
         try {
             log.println( "creating a drawdoc" );
             xDrawDoc = SOF.createDrawDoc(null);
-            aModel = (XModel)
+            aModel =
                 UnoRuntime.queryInterface(XModel.class, xDrawDoc);
 
         } catch ( com.sun.star.uno.Exception e ) {
@@ -91,7 +91,7 @@ public class AccessibleOLEShape extends TestCase {
 
         DrawTools.getShapes(DrawTools.getDrawPage(xDrawDoc,0)).add(oShape);
 
-        XPropertySet shape_props = (XPropertySet)
+        XPropertySet shape_props =
                         UnoRuntime.queryInterface(XPropertySet.class,oShape);
 
         log.println("Inserting a Chart");

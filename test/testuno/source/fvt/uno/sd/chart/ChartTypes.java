@@ -89,7 +89,7 @@ public class ChartTypes {
 		XChartDocument xChartDoc = null;
 		XDiagram aDiagram = null;
 		Point po = new Point(1000, 1000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 				15000, 9271), "com.sun.star.drawing.OLE2Shape");
 		xShapes.add(xShape);
@@ -113,7 +113,7 @@ public class ChartTypes {
 		XChartDocument xChartDoc = null;
 		XDiagram aDiagram = null;
 		Point po = new Point(1000, 1000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 				15000, 9271), "com.sun.star.drawing.OLE2Shape");
 		xShapes.add(xShape);
@@ -136,7 +136,7 @@ public class ChartTypes {
 	public void testInsertBarChart() throws Exception {
 		XChartDocument xChartDoc = null;
 		Point po = new Point(1000, 1000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 				15000, 9271), "com.sun.star.drawing.OLE2Shape");
 		xShapes.add(xShape);
@@ -158,14 +158,14 @@ public class ChartTypes {
 		XChartDocument xChartDoc = null;
 		XDiagram aDiagram = null;
 		Point po = new Point(1000, 1000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 				15000, 9271), "com.sun.star.drawing.OLE2Shape");
 		xShapes.add(xShape);
 		xChartDoc = ChartUtil.retrieveChartDocument(xShape);
 		aDiagram = ChartUtil.createChart(xChartDoc,
 				"com.sun.star.chart.BarDiagram");
-		XPropertySet aDiaProp = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet aDiaProp = UnoRuntime.queryInterface(
 				XPropertySet.class, aDiagram);
 		aDiaProp.setPropertyValue("Dim3D", true);
 		aDiaProp.setPropertyValue("Deep", true);
@@ -175,7 +175,7 @@ public class ChartTypes {
 		xChartDoc.setDiagram(aDiagram);
 		xShape = saveAndLoadShape(1, 0);
 		xChartDoc = ChartUtil.getChartDocument(xShape);
-		aDiaProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,
+		aDiaProp = UnoRuntime.queryInterface(XPropertySet.class,
 				xChartDoc.getDiagram());
 		assertEquals("Not Cone Chart", com.sun.star.chart.ChartSolidType.CONE,
 				aDiaProp.getPropertyValue("SolidType"));
@@ -192,7 +192,7 @@ public class ChartTypes {
 		XChartDocument xChartDoc = null;
 		XDiagram aDiagram = null;
 		Point po = new Point(1000, 1000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 				15000, 9271), "com.sun.star.drawing.OLE2Shape");
 		xShapes.add(xShape);
@@ -216,7 +216,7 @@ public class ChartTypes {
 		XChartDocument xChartDoc = null;
 		XDiagram aDiagram = null;
 		Point po = new Point(1000, 1000);
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		XShape xShape = ShapeUtil.createShape(impressDocument, po, new Size(
 				15000, 9271), "com.sun.star.drawing.OLE2Shape");
 		xShapes.add(xShape);
@@ -236,9 +236,9 @@ public class ChartTypes {
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
-		impressDocument = (XComponent) UnoRuntime.queryInterface(
+		impressDocument = UnoRuntime.queryInterface(
 				XComponent.class, unoApp.newDocument("simpress"));
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
 		drawpages.insertNewByIndex(1);
@@ -258,7 +258,7 @@ public class ChartTypes {
 		reLoadFile = saveAndReloadDoc(impressDocument,
 				"impress8", "odp");
 		xShapes = ShapeUtil.getShapes(reLoadFile, pageIndex);
-		return (XShape) UnoRuntime.queryInterface(XShape.class,
+		return UnoRuntime.queryInterface(XShape.class,
 				xShapes.getByIndex(shapeIndex));
 	}
 
@@ -281,11 +281,11 @@ public class ChartTypes {
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
 		aStoreProperties[1].Value = sFilter;
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 }

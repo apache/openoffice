@@ -775,10 +775,10 @@ public class XMLTools {
             XOutputStream xPipeOutput = (XOutputStream) UnoRuntime.
                 queryInterface(XOutputStream.class, oPipe) ;
 
-            XActiveDataSource xADS = (XActiveDataSource)
+            XActiveDataSource xADS =
                 UnoRuntime.queryInterface(XActiveDataSource.class,Writer);
             xADS.setOutputStream(xPipeOutput);
-            XDocumentHandler handler = (XDocumentHandler)
+            XDocumentHandler handler =
                 UnoRuntime.queryInterface(XDocumentHandler.class,Writer);
 
             Any arg = new Any(new Type(XDocumentHandler.class),handler);
@@ -817,14 +817,14 @@ public class XMLTools {
     {
         XInterface oFacc = (XInterface)xMSF.createInstance(
             "com.sun.star.comp.ucb.SimpleFileAccess");
-        XSimpleFileAccess xFacc = (XSimpleFileAccess)UnoRuntime.queryInterface
+        XSimpleFileAccess xFacc = UnoRuntime.queryInterface
             (XSimpleFileAccess.class, oFacc) ;
 
         XInterface oWriter = (XInterface)xMSF.createInstance(
             "com.sun.star.xml.sax.Writer");
-        XActiveDataSource xWriterDS = (XActiveDataSource)
+        XActiveDataSource xWriterDS =
             UnoRuntime.queryInterface(XActiveDataSource.class, oWriter);
-        XDocumentHandler xDocHandWriter = (XDocumentHandler) UnoRuntime.queryInterface
+        XDocumentHandler xDocHandWriter = UnoRuntime.queryInterface
             (XDocumentHandler.class, oWriter) ;
 
         if (xFacc.exists(fileURL))
@@ -847,13 +847,13 @@ public class XMLTools {
     {
         XInterface oFacc = (XInterface)xMSF.createInstance(
             "com.sun.star.comp.ucb.SimpleFileAccess");
-        XSimpleFileAccess xFacc = (XSimpleFileAccess)UnoRuntime.queryInterface
+        XSimpleFileAccess xFacc = UnoRuntime.queryInterface
             (XSimpleFileAccess.class, oFacc) ;
         XInputStream oIn = xFacc.openFileRead(fileURL) ;
 
         XInterface oParser = (XInterface)xMSF.createInstance(
             "com.sun.star.xml.sax.Parser");
-        XParser xParser = (XParser) UnoRuntime.queryInterface(XParser.class, oParser);
+        XParser xParser = UnoRuntime.queryInterface(XParser.class, oParser);
 
         xParser.setDocumentHandler(handler) ;
         InputSource inSrc = new InputSource() ;
@@ -891,11 +891,11 @@ public class XMLTools {
             "com.sun.star.comp." + docType + ".XML" + exportType + "Exporter",
             new Object[] {arg});
 
-        XExporter xExp = (XExporter) UnoRuntime.queryInterface
+        XExporter xExp = UnoRuntime.queryInterface
             (XExporter.class, oExp) ;
         xExp.setSourceDocument(xDoc) ;
 
-        XFilter filter = (XFilter) UnoRuntime.queryInterface(XFilter.class, oExp) ;
+        XFilter filter = UnoRuntime.queryInterface(XFilter.class, oExp) ;
         filter.filter(XMLTools.createMediaDescriptor(
             new String[] {"FilterName"},
             new Object[] {"Custom filter"})) ;
@@ -924,9 +924,9 @@ public class XMLTools {
 
         XInterface oImp = (XInterface)xMSF.createInstance(
             "com.sun.star.comp." + docType + ".XML" + importType + "Importer");
-        XImporter xImp = (XImporter) UnoRuntime.queryInterface
+        XImporter xImp = UnoRuntime.queryInterface
             (XImporter.class, oImp) ;
-        XDocumentHandler xDocHandImp = (XDocumentHandler) UnoRuntime.queryInterface
+        XDocumentHandler xDocHandImp = UnoRuntime.queryInterface
             (XDocumentHandler.class, oImp) ;
 
         xImp.setTargetDocument(xDoc) ;

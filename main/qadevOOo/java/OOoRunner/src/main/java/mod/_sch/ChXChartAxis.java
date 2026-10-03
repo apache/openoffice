@@ -110,7 +110,7 @@ public class ChXChartAxis extends TestCase {
 
         // get the Axis
         log.println( "getting ChartAxis" );
-        XAxisYSupplier oAxisSup = (XAxisYSupplier)
+        XAxisYSupplier oAxisSup =
             UnoRuntime.queryInterface(XAxisYSupplier.class,oDiagram);
         oObj = (XPropertySet) oAxisSup.getYAxis();
 

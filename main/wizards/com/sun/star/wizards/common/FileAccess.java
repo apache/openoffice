@@ -232,7 +232,7 @@ public class FileAccess
             XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xPathInterface);
             // String WritePath = PropertyNames.EMPTY_STRING;
             // XInterface xUcbInterface = (XInterface) xMSF.createInstance("com.sun.star.ucb.SimpleFileAccess");
-            // XSimpleFileAccess xSimpleFileAccess = (XSimpleFileAccess) com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
+            // XSimpleFileAccess xSimpleFileAccess = com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
 
             Template_writable = (String) xPropertySet.getPropertyValue(_sPath + "_writable");
             Template_internal = (String[]) xPropertySet.getPropertyValue(_sPath + "_internal");
@@ -378,7 +378,7 @@ public class FileAccess
     boolean bexists = false;
     try {
     XInterface xUcbInterface = (XInterface) xMSF.createInstance("com.sun.star.ucb.SimpleFileAccess");
-    XSimpleFileAccess xSimpleFileAccess = (XSimpleFileAccess) com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
+    XSimpleFileAccess xSimpleFileAccess = com.sun.star.uno.UnoRuntime.queryInterface(XSimpleFileAccess.class, xUcbInterface);
     ResultPath = getOfficePath(xMSF, sPath, xSimpleFileAccess);
     PathList = JavaTools.ArrayoutofString(ResultPath, PropertyNames.SEMI_COLON);
     if (!sType.equals(PropertyNames.EMPTY_STRING)) {

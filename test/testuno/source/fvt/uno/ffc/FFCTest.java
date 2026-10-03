@@ -191,7 +191,7 @@ public class FFCTest {
 		lProperties[2].Name = "AsyncMode";
 		lProperties[2].Value = new Boolean(false);
 
-		XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, document);
+		XStorable store = UnoRuntime.queryInterface(XStorable.class, document);
 		File file = new File(testFile);
 		String fileName = file.getName();
 		String saveAsFilePath = file.getParentFile().getAbsolutePath() + File.separator + fileName + "." + formatMap.get(suffix);//TODO
@@ -212,7 +212,7 @@ public class FFCTest {
 
 	private void exportAsPDF(String testFilePath) throws Exception {
 		XComponent xComponent = loadSampleFile(testFilePath);
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, xComponent);
 
 		PropertyValue[] aMediaDescriptor = new PropertyValue[1];
@@ -298,7 +298,7 @@ public class FFCTest {
 			}
 
 			String urlPath = Testspace.getUrl(filePath);
-			XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, app.getDesktop());
+			XComponentLoader componentLoader = UnoRuntime.queryInterface(XComponentLoader.class, app.getDesktop());
 			return componentLoader.loadComponentFromURL(urlPath, "_blank", 0, loadProps);
 		}
 		return null;

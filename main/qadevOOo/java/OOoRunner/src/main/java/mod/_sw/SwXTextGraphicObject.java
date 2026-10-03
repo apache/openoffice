@@ -123,12 +123,12 @@ public class SwXTextGraphicObject extends TestCase {
 
             XText the_text = xTextDoc.getText();
             XTextCursor the_cursor = the_text.createTextCursor();
-            XTextContent the_content = (XTextContent)
+            XTextContent the_content =
                 UnoRuntime.queryInterface(XTextContent.class,oObj);
 
             log.println("inserting Frame");
             try{
-                XTextContent Framecontent = (XTextContent) UnoRuntime.queryInterface(
+                XTextContent Framecontent = UnoRuntime.queryInterface(
                                                    XTextContent.class, xTextFrame);
                 the_text.insertTextContent(the_cursor, Framecontent, true);
             } catch (Exception e) {
@@ -148,7 +148,7 @@ public class SwXTextGraphicObject extends TestCase {
             }
 
             log.println( "adding graphic" );
-            XPropertySet oProps = (XPropertySet)
+            XPropertySet oProps =
                 UnoRuntime.queryInterface(XPropertySet.class,oObj);
             try {
                 String wat = util.utils.getFullTestURL("space-metal.jpg");
@@ -176,7 +176,7 @@ public class SwXTextGraphicObject extends TestCase {
             //creating ObjectRelation for the property
             // 'ImageMap' of 'TextGraphicObject'
             try {
-                XMultiServiceFactory xDocMSF = (XMultiServiceFactory)
+                XMultiServiceFactory xDocMSF =
                     UnoRuntime.queryInterface
                     (XMultiServiceFactory.class,xTextDoc);
                 ImgMap = xDocMSF.createInstance
@@ -188,7 +188,7 @@ public class SwXTextGraphicObject extends TestCase {
 
             tEnv.addObjRelation("IMGMAP",ImgMap);
 
-            tEnv.addObjRelation("CONTENT", (XTextContent)
+            tEnv.addObjRelation("CONTENT",
                         UnoRuntime.queryInterface(XTextContent.class,instance));
             tEnv.addObjRelation("RANGE", xTextDoc.getText().createTextCursor());
 

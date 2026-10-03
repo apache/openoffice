@@ -621,7 +621,7 @@ public class AccessibilityWorkBench
     // XEventListener
     public void disposing (EventObject aSourceObj)
     {
-		XFrame xFrame = (XFrame)UnoRuntime.queryInterface(
+		XFrame xFrame = UnoRuntime.queryInterface(
 		    XFrame.class, aSourceObj.Source);
 
 		if( xFrame != null )

@@ -358,7 +358,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
         if (! bRegister)
             return;
 
-        com.sun.star.frame.XDispatchProvider xProvider = (com.sun.star.frame.XDispatchProvider)UnoRuntime.queryInterface(
+        com.sun.star.frame.XDispatchProvider xProvider = UnoRuntime.queryInterface(
             com.sun.star.frame.XDispatchProvider.class,
             xFrame);
 

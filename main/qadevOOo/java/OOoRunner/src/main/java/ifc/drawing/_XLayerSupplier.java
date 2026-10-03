@@ -55,7 +55,7 @@ public class _XLayerSupplier extends MultiMethodTest{
         log.println("testing getLayerManager() ... ");
 
         oNA = oObj.getLayerManager();
-        oLM = (XLayerManager)
+        oLM =
             UnoRuntime.queryInterface ( XLayerManager.class, oNA);
         result = oLM != null;
 

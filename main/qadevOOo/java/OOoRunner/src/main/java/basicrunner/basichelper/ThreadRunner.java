@@ -171,12 +171,12 @@ class ToolkitDialogThread extends Thread {
     }
 
     public void run() {
-	XModel aModel = (XModel) UnoRuntime.queryInterface(XModel.class, oDoc);
+	XModel aModel = UnoRuntime.queryInterface(XModel.class, oDoc);
 	XController xController = aModel.getCurrentController();
 	try {
-	    XDispatchProvider xDispProv = (XDispatchProvider)
+	    XDispatchProvider xDispProv =
 		UnoRuntime.queryInterface( XDispatchProvider.class, xController );
-	    XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+	    XURLTransformer xParser =
 		UnoRuntime.queryInterface(XURLTransformer.class,
 					  msf.createInstance("com.sun.star.util.URLTransformer"));
 	    URL[] aParseURL = new URL[1];
@@ -241,7 +241,7 @@ class ExecuteDialogThread extends Thread {
         } catch(com.sun.star.uno.Exception e) {
             throw new StatusException(Status.failed("Couldn't create service"));
         }
-        XExecutableDialog execDlg = (XExecutableDialog)UnoRuntime.queryInterface
+        XExecutableDialog execDlg = UnoRuntime.queryInterface
             (XExecutableDialog.class, dlg);
         execDlg.execute();
     }

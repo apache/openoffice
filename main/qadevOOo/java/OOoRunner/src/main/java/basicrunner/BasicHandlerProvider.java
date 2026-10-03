@@ -82,7 +82,7 @@ public class BasicHandlerProvider {
 	    oThreadRunner = new ThreadRunner(xMSF);
             oCeptor = new DispatchProviderInterceptor() ;
             oAttributeList = new AttributeList();
-            XSet xMSFSet = (XSet)UnoRuntime.queryInterface(XSet.class, xMSF);
+            XSet xMSFSet = UnoRuntime.queryInterface(XSet.class, xMSF);
 
             try {
                 xMSFSet.insert(oHandler);
@@ -131,7 +131,7 @@ public class BasicHandlerProvider {
                 oHandler.dispose();
             }
             if (MSF != null) {
-                XSet xMSFSet = (XSet)UnoRuntime.queryInterface(XSet.class, MSF);
+                XSet xMSFSet = UnoRuntime.queryInterface(XSet.class, MSF);
                 xMSFSet.remove(oHandler);
                 xMSFSet.remove(oFilter);
                 xMSFSet.remove(oConnector);

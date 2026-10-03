@@ -150,7 +150,7 @@ public class CommandFieldSelection extends FieldSelection implements Comparator
                     {
                         Boolean.TRUE, Boolean.FALSE, 12, HelpIds.getHelpIdString(super.FirstHelpIndex - 1), new Short(UnoDialog.getListBoxLineCount()), 95, 37, IStep, new Short((short) 4), getListboxWidth()
                     });
-            // XWindow xTableListBoxWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, xTableListBox);
+            // XWindow xTableListBoxWindow = UnoRuntime.queryInterface(XWindow.class, xTableListBox);
             fillupCommandListBox();
         }
         catch (Exception exception)

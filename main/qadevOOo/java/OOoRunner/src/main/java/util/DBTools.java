@@ -171,7 +171,7 @@ public class DBTools {
         * class fields.
         */
         public DataSourceInfo(Object dataSource) {
-            XPropertySet xProps = (XPropertySet)
+            XPropertySet xProps =
                 UnoRuntime.queryInterface(XPropertySet.class, dataSource) ;
 
             try {
@@ -249,7 +249,7 @@ public class DBTools {
         {
             Object src = src = xMSF.createInstance("com.sun.star.sdb.DataSource") ;
 
-            XPropertySet props = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet props = UnoRuntime.queryInterface
                 (XPropertySet.class, src) ;
 
             if (Name != null) props.setPropertyValue("Name", Name) ;
@@ -279,7 +279,7 @@ public class DBTools {
         try {
             Object cont = xMSF.createInstance("com.sun.star.sdb.DatabaseContext") ;
 
-            dbContext = (XNamingService) UnoRuntime.queryInterface
+            dbContext = UnoRuntime.queryInterface
                 (XNamingService.class, cont) ;
 
         } catch (com.sun.star.uno.Exception e) {}
@@ -325,9 +325,9 @@ public class DBTools {
             revokeDB(name) ;
         } catch (com.sun.star.uno.Exception e) {}
 
-        XDocumentDataSource xDDS = (XDocumentDataSource)
+        XDocumentDataSource xDDS =
         UnoRuntime.queryInterface(XDocumentDataSource.class, dataSource);
-        XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class,
+        XStorable store = UnoRuntime.queryInterface(XStorable.class,
                 xDDS.getDatabaseDocument());
         String aFile = utils.getOfficeTemp(xMSF) + name + ".odb";
         store.storeAsURL(aFile, new PropertyValue[] {  });
@@ -346,7 +346,7 @@ public class DBTools {
             XInterface newSource = (XInterface) xMSF.createInstance
                 ("com.sun.star.sdb.DataSource") ;
 
-            XPropertySet xSrcProp = (XPropertySet)
+            XPropertySet xSrcProp =
                 UnoRuntime.queryInterface(XPropertySet.class, newSource);
 
             xSrcProp.setPropertyValue("URL", "sdbc:text:" + dirToUrl(dbDir));
@@ -360,10 +360,10 @@ public class DBTools {
             dbContext.registerObject(contextName, newSource) ;
 
             Object handler = xMSF.createInstance("com.sun.star.sdb.InteractionHandler");
-            XInteractionHandler xHandler = (XInteractionHandler)
+            XInteractionHandler xHandler =
                 UnoRuntime.queryInterface(XInteractionHandler.class, handler) ;
 
-            XCompletedConnection xSrcCon = (XCompletedConnection)
+            XCompletedConnection xSrcCon =
                 UnoRuntime.queryInterface(XCompletedConnection.class, newSource) ;
 
             XConnection con = xSrcCon.connectWithCompletion(xHandler) ;
@@ -391,7 +391,7 @@ public class DBTools {
             XInterface newSource = (XInterface) xMSF.createInstance
                 ("com.sun.star.sdb.DataSource") ;
 
-            XPropertySet xSrcProp = (XPropertySet)
+            XPropertySet xSrcProp =
                 UnoRuntime.queryInterface(XPropertySet.class, newSource);
             xSrcProp.setPropertyValue("URL", "sdbc:dbase:" + dirToUrl(dbDir));
 
@@ -420,10 +420,10 @@ public class DBTools {
         throws com.sun.star.uno.Exception {
 
         Object handler = xMSF.createInstance("com.sun.star.sdb.InteractionHandler");
-        XInteractionHandler xHandler = (XInteractionHandler)
+        XInteractionHandler xHandler =
             UnoRuntime.queryInterface(XInteractionHandler.class, handler) ;
 
-        XCompletedConnection xSrcCon = (XCompletedConnection)
+        XCompletedConnection xSrcCon =
             UnoRuntime.queryInterface(XCompletedConnection.class, dbSource) ;
 
         return xSrcCon.connectWithCompletion(xHandler) ;
@@ -453,14 +453,14 @@ public class DBTools {
 
         String existURL = null ;
 
-        XNameAccess na = (XNameAccess) UnoRuntime.queryInterface
+        XNameAccess na = UnoRuntime.queryInterface
             (XNameAccess.class, dbContext) ;
 
         Object src = null ;
         if (na.hasByName("APITestDatabase")) {
             src = dbContext.getRegisteredObject("APITestDatabase") ;
 
-            XPropertySet srcPs = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet srcPs = UnoRuntime.queryInterface
                 (XPropertySet.class, src) ;
 
             existURL = (String) srcPs.getPropertyValue("URL") ;
@@ -514,7 +514,7 @@ public class DBTools {
 
         XResultSet set = stat.executeQuery("SELECT * FROM " + table) ;
 
-        XResultSetUpdate updt = (XResultSetUpdate) UnoRuntime.queryInterface
+        XResultSetUpdate updt = UnoRuntime.queryInterface
             (XResultSetUpdate.class, set) ;
 
         int count = 0 ;
@@ -528,7 +528,7 @@ public class DBTools {
             count ++ ;
         }
 
-        XCloseable xClose = (XCloseable) UnoRuntime.queryInterface
+        XCloseable xClose = UnoRuntime.queryInterface
             (XCloseable.class, set) ;
         xClose.close() ;
 
@@ -560,10 +560,10 @@ public class DBTools {
 
         XResultSet set = stat.executeQuery("SELECT * FROM " + table) ;
 
-        XResultSetUpdate updt = (XResultSetUpdate) UnoRuntime.queryInterface
+        XResultSetUpdate updt = UnoRuntime.queryInterface
             (XResultSetUpdate.class, set) ;
 
-        XRowUpdate rowUpdt = (XRowUpdate) UnoRuntime.queryInterface
+        XRowUpdate rowUpdt = UnoRuntime.queryInterface
             (XRowUpdate.class, set) ;
 
         updt.moveToInsertRow() ;
@@ -596,7 +596,7 @@ public class DBTools {
 
         updt.insertRow() ;
 
-        XCloseable xClose = (XCloseable) UnoRuntime.queryInterface
+        XCloseable xClose = UnoRuntime.queryInterface
             (XCloseable.class, set) ;
         xClose.close() ;
     }
@@ -626,7 +626,7 @@ public class DBTools {
     * Prints full info about currently registered DataSource's.
     */
     public void printRegisteredDatabasesInfo(PrintWriter out) {
-        XEnumerationAccess dbContEA = (XEnumerationAccess)
+        XEnumerationAccess dbContEA =
             UnoRuntime.queryInterface(XEnumerationAccess.class, dbContext) ;
 
         XEnumeration xEnum = dbContEA.createEnumeration() ;

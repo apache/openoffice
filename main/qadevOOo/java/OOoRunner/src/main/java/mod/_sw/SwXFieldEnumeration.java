@@ -107,17 +107,17 @@ public class SwXFieldEnumeration extends TestCase {
         XTextContent the_Field;
 
         log.println( "creating a test environment" );
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
             UnoRuntime.queryInterface( XMultiServiceFactory.class, xTextDoc );
 
         try {
             FieldMaster = oDocMSF.createInstance
                 ( "com.sun.star.text.FieldMaster.Database" );
-            PFieldMaster = (XPropertySet) UnoRuntime.queryInterface
+            PFieldMaster = UnoRuntime.queryInterface
                 (XPropertySet.class,(XInterface) FieldMaster);
             oObj = (XInterface)
                 oDocMSF.createInstance("com.sun.star.text.TextField.Database");
-            xTF = (XDependentTextField)
+            xTF =
                 UnoRuntime.queryInterface(XDependentTextField.class,oObj);
         } catch ( com.sun.star.uno.Exception e ) {
             e.printStackTrace(log);
@@ -143,7 +143,7 @@ public class SwXFieldEnumeration extends TestCase {
 
         the_Text = xTextDoc.getText();
         the_Cursor = the_Text.createTextCursor();
-        the_Field = (XTextContent)
+        the_Field =
             UnoRuntime.queryInterface(XTextContent.class, oObj);
 
         try {
@@ -155,7 +155,7 @@ public class SwXFieldEnumeration extends TestCase {
         }
 
         // create testobject here
-        XTextFieldsSupplier oTFS = (XTextFieldsSupplier)
+        XTextFieldsSupplier oTFS =
             UnoRuntime.queryInterface( XTextFieldsSupplier.class, xTextDoc );
         xFEA = oTFS.getTextFields();
         oObj = oTFS.getTextFields().createEnumeration();

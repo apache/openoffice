@@ -76,7 +76,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
         if (oSheet == null) {
             log.println("Object relation oSheet is missing");
             log.println("Trying to query the needed Interface");
-            oSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            oSheet = UnoRuntime.queryInterface(
                              XSpreadsheet.class, tEnv.getTestObject());
 
             if (oSheet == null) {
@@ -89,7 +89,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
         mExpectedResults = (String[])tEnv.getObjRelation(
                                             "XCellRangesQuery.EXPECTEDRESULTS");
 
-        XColumnRowRange oColumnRowRange = (XColumnRowRange) UnoRuntime.queryInterface(
+        XColumnRowRange oColumnRowRange = UnoRuntime.queryInterface(
                                                   XColumnRowRange.class,
                                                   oSheet);
         oRows = (XTableRows)oColumnRowRange.getRows();
@@ -271,7 +271,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
 
     protected void setRowVisible(boolean vis) {
         try {
-            XPropertySet rowProp = (XPropertySet) UnoRuntime.queryInterface(
+            XPropertySet rowProp = UnoRuntime.queryInterface(
                                            XPropertySet.class,
                                            oRows.getByIndex(0));
             rowProp.setPropertyValue("IsVisible", new Boolean(vis));

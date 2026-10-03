@@ -132,13 +132,13 @@ public class XMLSettingsExporter extends TestCase {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Writer.XMLSettingsExporter",
                 new Object[] {arg});
-            XExporter xEx = (XExporter) UnoRuntime.queryInterface
+            XExporter xEx = UnoRuntime.queryInterface
                 (XExporter.class,oObj);
             xEx.setSourceDocument(xTextDoc);
 
             //set some settings
             XController xController = xTextDoc.getCurrentController();
-            XViewSettingsSupplier xViewSetSup = (XViewSettingsSupplier)
+            XViewSettingsSupplier xViewSetSup =
                 UnoRuntime.queryInterface(XViewSettingsSupplier.class,
                 xController);
             XPropertySet xPropSet = xViewSetSup.getViewSettings();

@@ -328,7 +328,7 @@ public class GraphicalDifferenceCheck
         String resultURL = URLHelper.getFileURLFromSystemPath(ensureEndingFileSep(_sOutputPath) + resultDocName);
 
         XStorable xStorable = null;
-        xStorable  = (com.sun.star.frame.XStorable)UnoRuntime.queryInterface(com.sun.star.frame.XStorable.class, xComponent);
+        xStorable  = UnoRuntime.queryInterface(com.sun.star.frame.XStorable.class, xComponent);
         if(xStorable == null)
         {
             throw new ConvWatchCancelException("com.sun.star.frame.XStorable could not be instantiated from the office.");
@@ -354,7 +354,7 @@ public class GraphicalDifferenceCheck
 
 
     private static String getXMLOutputFilterforXComponent(XComponent xComponent, StringBuffer suffix){
-        XServiceInfo xSI = (XServiceInfo) UnoRuntime.queryInterface(XServiceInfo.class, xComponent);
+        XServiceInfo xSI = UnoRuntime.queryInterface(XServiceInfo.class, xComponent);
         if (xSI.supportsService("com.sun.star.text.TextDocument")){
             resetBuffer(suffix, ".sxw");
             return "swriter: StarOffice XML (Writer)";

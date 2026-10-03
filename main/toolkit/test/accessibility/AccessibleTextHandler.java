@@ -58,7 +58,7 @@ class AccessibleTextHandler extends NodeHandler
 {
     public NodeHandler createHandler (XAccessibleContext xContext)
     {
-        XAccessibleText xText = (XAccessibleText) UnoRuntime.queryInterface (
+        XAccessibleText xText = UnoRuntime.queryInterface (
             XAccessibleText.class, xContext);
         if (xText != null)
             return new AccessibleTextHandler (xText);

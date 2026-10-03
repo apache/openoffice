@@ -109,7 +109,7 @@ public class ScCellObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -139,14 +139,14 @@ public class ScCellObj extends TestCase {
         try {
             log.println("Getting spreadsheet") ;
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             oSheet = (XSpreadsheet) AnyConverter.toObject(
                     new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
 
             log.println("Getting a cell from sheet") ;
             oObj = oSheet.getCellByPosition(2, 3) ;
-            cell = (XCell)UnoRuntime.queryInterface(XCell.class, oObj);
+            cell = UnoRuntime.queryInterface(XCell.class, oObj);
 
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -201,7 +201,7 @@ public class ScCellObj extends TestCase {
         // XTextFieldsSupplier
         tEnv.addObjRelation("SPREADSHEET", xSheetDoc);
 
-        XPropertySet PropSet = (XPropertySet)
+        XPropertySet PropSet =
                     UnoRuntime.queryInterface(XPropertySet.class, oObj);
         tEnv.addObjRelation("PropSet",PropSet);
 

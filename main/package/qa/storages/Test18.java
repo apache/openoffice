@@ -63,7 +63,7 @@ public class Test18 implements StorageTest {
 			// create temporary storage based on arbitrary medium
 			// after such a storage is closed it is lost
 			Object oTempStorage = m_xStorageFactory.createInstance();
-			XStorage xTempStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oTempStorage );
+			XStorage xTempStorage = UnoRuntime.queryInterface( XStorage.class, oTempStorage );
 			if ( xTempStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create temporary storage representation!" );
@@ -118,7 +118,7 @@ public class Test18 implements StorageTest {
 			pArgs[1] = new Integer( ElementModes.WRITE );
 
 			Object oTempFileStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			XStorage xTempFileStorage = (XStorage)UnoRuntime.queryInterface( XStorage.class, oTempFileStorage );
+			XStorage xTempFileStorage = UnoRuntime.queryInterface( XStorage.class, oTempFileStorage );
 			if ( xTempFileStorage == null )
 			{
 				m_aTestHelper.Error( "Can't create storage based on temporary file!" );
@@ -141,7 +141,7 @@ public class Test18 implements StorageTest {
 			// the temporary file must not be locked any more after storage disposing
 			pArgs[1] = new Integer( ElementModes.WRITE );
 			Object oResultStorage = m_xStorageFactory.createInstanceWithArguments( pArgs );
-			XStorage xResultStorage = (XStorage) UnoRuntime.queryInterface( XStorage.class, oResultStorage );
+			XStorage xResultStorage = UnoRuntime.queryInterface( XStorage.class, oResultStorage );
 			if ( xResultStorage == null )
 			{
 				m_aTestHelper.Error( "Can't reopen storage based on temporary file!" );

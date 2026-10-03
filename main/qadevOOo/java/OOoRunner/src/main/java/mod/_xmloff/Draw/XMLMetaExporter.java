@@ -129,15 +129,15 @@ public class XMLMetaExporter extends TestCase {
         try {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Draw.XMLMetaExporter", new Object[] {arg});
-            XExporter xEx = (XExporter)
+            XExporter xEx =
                 UnoRuntime.queryInterface(XExporter.class, oObj);
             xEx.setSourceDocument(xDrawDoc);
 
             //set some meta data
-            XDocumentInfoSupplier infoSup = (XDocumentInfoSupplier)
+            XDocumentInfoSupplier infoSup =
                 UnoRuntime.queryInterface(XDocumentInfoSupplier.class,
                 xDrawDoc) ;
-            XPropertySet docInfo = (XPropertySet) UnoRuntime.queryInterface
+            XPropertySet docInfo = UnoRuntime.queryInterface
                             (XPropertySet.class, infoSup.getDocumentInfo()) ;
             docInfo.setPropertyValue("Title", TITLE);
 

@@ -57,7 +57,7 @@ public class CHelpContentProvider extends TestCase {
 
         oObj = (XInterface) oInterface;
 
-        XContentIdentifierFactory CIF = (XContentIdentifierFactory)
+        XContentIdentifierFactory CIF =
                 UnoRuntime.queryInterface(XContentIdentifierFactory.class,aUCB);
 
         System.out.println("ImplementationName: "+util.utils.getImplName(oObj));

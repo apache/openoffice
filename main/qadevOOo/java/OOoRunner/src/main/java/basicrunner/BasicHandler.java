@@ -187,9 +187,9 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
             this.xMSF = xMSF;
             Object oInterface = xMSF.createInstance(
                                                 "com.sun.star.frame.Desktop");
-            XDesktop oDesktop = (XDesktop) UnoRuntime.queryInterface(
+            XDesktop oDesktop = UnoRuntime.queryInterface(
                                                 XDesktop.class, oInterface);
-            XComponentLoader oCLoader = (XComponentLoader)
+            XComponentLoader oCLoader =
                                         UnoRuntime.queryInterface(
                                         XComponentLoader.class, oDesktop);
 
@@ -212,7 +212,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
             Object oProvider = xMSF.createInstance(
                         "com.sun.star.configuration.ConfigurationProvider");
 
-            XMultiServiceFactory oProviderMSF = (XMultiServiceFactory)
+            XMultiServiceFactory oProviderMSF =
                                     UnoRuntime.queryInterface(
                                     XMultiServiceFactory.class, oProvider);
 
@@ -220,17 +220,17 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
                         "com.sun.star.configuration.ConfigurationUpdateAccess",
                         ProvArgs);
 
-            XPropertySet oSecureProps = (XPropertySet)
+            XPropertySet oSecureProps =
                         UnoRuntime.queryInterface(XPropertySet.class, oSecure);
 
             Object oScripting = oSecureProps.getPropertyValue("Scripting");
-            XPropertySet oScriptingSettings = (XPropertySet)
+            XPropertySet oScriptingSettings =
                     UnoRuntime.queryInterface(XPropertySet.class, oScripting);
 
             oScriptingSettings.setPropertyValue("Warning", Boolean.FALSE);
             oScriptingSettings.setPropertyValue("OfficeBasic", new Integer(2));
 
-            XChangesBatch oSecureChange = (XChangesBatch)
+            XChangesBatch oSecureChange =
                     UnoRuntime.queryInterface(XChangesBatch.class, oSecure);
             oSecureChange.commitChanges();
 

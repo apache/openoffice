@@ -117,17 +117,17 @@ public class MarkableOutputStream extends TestCase {
 
         // Creating construction :
         // MarkableOutputStream -> Pipe -> MarkableInputStream
-        XActiveDataSource xdSmo = (XActiveDataSource)
+        XActiveDataSource xdSmo =
             UnoRuntime.queryInterface(XActiveDataSource.class, mostream);
 
-        final XOutputStream PipeOut = (XOutputStream)
+        final XOutputStream PipeOut =
             UnoRuntime.queryInterface(XOutputStream.class,aPipe);
-        final XInputStream PipeIn = (XInputStream)
+        final XInputStream PipeIn =
             UnoRuntime.queryInterface(XInputStream.class,aPipe);
 
         xdSmo.setOutputStream(PipeOut);
 
-        XActiveDataSink xmSi = (XActiveDataSink)
+        XActiveDataSink xmSi =
             UnoRuntime.queryInterface(XActiveDataSink.class, mistream);
 
         xmSi.setInputStream(PipeIn) ;
@@ -181,13 +181,13 @@ public class MarkableOutputStream extends TestCase {
                     try {
                         Object oInStream = msf.createInstance(
                             "com.sun.star.io.MarkableInputStream");
-                        xInStream = (XInputStream) UnoRuntime.queryInterface
+                        xInStream = UnoRuntime.queryInterface
                             (XInputStream.class, oInStream);
                     } catch(com.sun.star.uno.Exception e) {
                         return null;
                     }
 
-                    XActiveDataSink xDataSink = (XActiveDataSink)
+                    XActiveDataSink xDataSink =
                         UnoRuntime.queryInterface(
                             XActiveDataSink.class, xInStream);
                     xDataSink.setInputStream(PipeIn);

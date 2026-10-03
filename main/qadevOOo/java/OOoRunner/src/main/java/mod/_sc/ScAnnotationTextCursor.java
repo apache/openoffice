@@ -83,7 +83,7 @@ public class ScAnnotationTextCursor extends TestCase {
 
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface
+        XComponent oComp = UnoRuntime.queryInterface
             (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -107,26 +107,26 @@ public class ScAnnotationTextCursor extends TestCase {
         try {
             log.println("Getting test object ") ;
 
-            XSpreadsheetDocument xArea = (XSpreadsheetDocument)
+            XSpreadsheetDocument xArea =
                 UnoRuntime.queryInterface(XSpreadsheetDocument.class, xSheetDoc);
 
             XSpreadsheets oSheets = (XSpreadsheets) xArea.getSheets();
 
-            XIndexAccess XAccess = (XIndexAccess)
+            XIndexAccess XAccess =
                         UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
 
             XSpreadsheet oSheet = (XSpreadsheet)XAccess.getByIndex(cellPos.Sheet);
 
-            XCellRange oCRange = (XCellRange)
+            XCellRange oCRange =
                             UnoRuntime.queryInterface(XCellRange.class, oSheet);
 
             XCell oCell = oCRange.getCellByPosition(cellPos.Column, cellPos.Row);
 
-            XSheetAnnotationAnchor oAnnoA = (XSheetAnnotationAnchor)
+            XSheetAnnotationAnchor oAnnoA =
                 UnoRuntime.queryInterface(XSheetAnnotationAnchor.class, oCell);
 
             XSheetAnnotation oAnno = oAnnoA.getAnnotation();
-            XSimpleText aText = (XSimpleText)
+            XSimpleText aText =
                             UnoRuntime.queryInterface(XSimpleText.class,oAnno);
             aText.setString("A nice little Test");
             oObj = aText.createTextCursor();

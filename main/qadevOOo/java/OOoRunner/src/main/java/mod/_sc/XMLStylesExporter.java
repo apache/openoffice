@@ -133,12 +133,12 @@ public class XMLStylesExporter extends TestCase {
         try {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Calc.XMLStylesExporter", new Object[] {arg});
-            XExporter xEx = (XExporter)
+            XExporter xEx =
                 UnoRuntime.queryInterface(XExporter.class,oObj);
             xEx.setSourceDocument(xSheetDoc);
 
             // Obtaining and changing property values
-            XStyleFamiliesSupplier styleSup = (XStyleFamiliesSupplier)
+            XStyleFamiliesSupplier styleSup =
                 UnoRuntime.queryInterface(
                     XStyleFamiliesSupplier.class, xSheetDoc);
             XNameAccess StyleFamilies = styleSup.getStyleFamilies();
@@ -148,7 +148,7 @@ public class XMLStylesExporter extends TestCase {
                     StyleFamilies.getByName(styleFamiliesNames[0]));
             Object SC = SOF.createInstance(
                 xSheetDoc, "com.sun.star.style.CellStyle");
-            XStyle StyleCell = (XStyle)
+            XStyle StyleCell =
                 UnoRuntime.queryInterface(XStyle.class,SC);
             StyleFamilyName.insertByName(newName, StyleCell);
 

@@ -93,7 +93,7 @@ public class ScCellFieldObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -128,7 +128,7 @@ public class ScCellFieldObj extends TestCase {
             // we want to create an instance of ScCellFieldObj.
             // to do this we must get an MultiServiceFactory.
 
-            XMultiServiceFactory _oMSF = (XMultiServiceFactory)
+            XMultiServiceFactory _oMSF =
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, xSheetDoc);
 
             // Now create the instance of com.sun.star.text.TextField.
@@ -139,26 +139,26 @@ public class ScCellFieldObj extends TestCase {
 
             aField = (XInterface)
                 _oMSF.createInstance("com.sun.star.text.TextField.URL");
-            oContent = (XTextContent)
+            oContent =
                 UnoRuntime.queryInterface(XTextContent.class, aField);
 
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = (XIndexAccess)
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
                     new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
 
             XCell oCell = oSheet.getCellByPosition(2,3);
-            oText = (XText)UnoRuntime.queryInterface(XText.class, oCell);
+            oText = UnoRuntime.queryInterface(XText.class, oCell);
 
-            XTextContent oTextContent = (XTextContent)
+            XTextContent oTextContent =
                 UnoRuntime.queryInterface(XTextContent.class, oObj);
 
             oText.insertTextContent(
                 oText.createTextCursor(), oTextContent, true);
 
             oCell = oSheet.getCellByPosition(1,4);
-            oText = (XText)UnoRuntime.queryInterface(XText.class, oCell);
+            oText = UnoRuntime.queryInterface(XText.class, oCell);
         } catch (com.sun.star.lang.WrappedTargetException e) {
             log.println("Exception occurred while creating test Object.");
             e.printStackTrace(log);

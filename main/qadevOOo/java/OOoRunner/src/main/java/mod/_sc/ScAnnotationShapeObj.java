@@ -89,7 +89,7 @@ public class ScAnnotationShapeObj extends TestCase {
             log.println("Loading: "+utils.getFullTestURL(
                             "ScAnnotationShapeObj.sxc"));
             xSheetDoc =
-                (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class,
+                UnoRuntime.queryInterface(XSpreadsheetDocument.class,
                     SOF.loadDocument(utils.getFullTestURL(
                             "ScAnnotationShapeObj.sxc")));
         } catch (com.sun.star.uno.Exception e) {
@@ -106,7 +106,7 @@ public class ScAnnotationShapeObj extends TestCase {
         log.println("    disposing xSheetDoc ");
 
         XComponent oComp =
-            (XComponent) UnoRuntime.queryInterface(XComponent.class,
+            UnoRuntime.queryInterface(XComponent.class,
                 xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -138,12 +138,12 @@ public class ScAnnotationShapeObj extends TestCase {
         log.println("Getting test object ");
 
         XSpreadsheetDocument xArea =
-            (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class,
+            UnoRuntime.queryInterface(XSpreadsheetDocument.class,
                 xSheetDoc);
         XSpreadsheets oSheets = (XSpreadsheets) xArea.getSheets();
 
         XIndexAccess XAccess =
-            (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,
+            UnoRuntime.queryInterface(XIndexAccess.class,
                 oSheets);
         XCell oCell = null;
 
@@ -153,7 +153,7 @@ public class ScAnnotationShapeObj extends TestCase {
                         XSpreadsheet.class),
                     XAccess.getByIndex(cellPos.Sheet));
             XCellRange oCRange =
-                (XCellRange) UnoRuntime.queryInterface(XCellRange.class,
+                UnoRuntime.queryInterface(XCellRange.class,
                     oSheet);
             oCell =
                 oCRange.getCellByPosition(cellPos.Column, cellPos.Row);
@@ -172,17 +172,17 @@ public class ScAnnotationShapeObj extends TestCase {
         }
 
         XSheetAnnotationAnchor oAnnoA =
-            (XSheetAnnotationAnchor) UnoRuntime.queryInterface(XSheetAnnotationAnchor.class,
+            UnoRuntime.queryInterface(XSheetAnnotationAnchor.class,
                 oCell);
         XSheetAnnotation oAnno = oAnnoA.getAnnotation();
 
         XSimpleText xAnnoText =
-            (XSimpleText) UnoRuntime.queryInterface(XSimpleText.class,
+            UnoRuntime.queryInterface(XSimpleText.class,
                 oAnno);
         xAnnoText.setString("ScAnnotationShapeObj");
 
         XSheetAnnotationShapeSupplier xSheetAnnotationShapeSupplier =
-            (XSheetAnnotationShapeSupplier) UnoRuntime.queryInterface(XSheetAnnotationShapeSupplier.class,
+            UnoRuntime.queryInterface(XSheetAnnotationShapeSupplier.class,
                 oAnno);
 
         oObj = xSheetAnnotationShapeSupplier.getAnnotationShape();

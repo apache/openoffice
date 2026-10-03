@@ -51,7 +51,7 @@ public class TextDocumentStructure {
             // get the component loader from the desktop to create a new
             // text document
             com.sun.star.frame.XComponentLoader xCLoader =
-                (com.sun.star.frame.XComponentLoader)
+
                 UnoRuntime.queryInterface(
                     com.sun.star.frame.XComponentLoader.class,oDesktop);
             com.sun.star.beans.PropertyValue [] szEmptyArgs =
@@ -65,7 +65,7 @@ public class TextDocumentStructure {
 
             // query the new document for the XTextDocument interface
             com.sun.star.text.XTextDocument xTextDocument =
-                (com.sun.star.text.XTextDocument)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.text.XTextDocument.class, xComp);
 
             // create some example data
@@ -83,19 +83,19 @@ public class TextDocumentStructure {
             System.out.println("create an enumeration of all paragraphs");
             // create an enumeration access of all paragraphs of a document
             com.sun.star.container.XEnumerationAccess xEnumerationAccess =
-                (com.sun.star.container.XEnumerationAccess)
+
                     UnoRuntime.queryInterface(
                         com.sun.star.container.XEnumerationAccess.class, xText);
             xParagraphEnumeration = xEnumerationAccess.createEnumeration();
 
             // Loop through all paragraphs of the document
             while ( xParagraphEnumeration.hasMoreElements() ) {
-                xTextElement = (com.sun.star.text.XTextContent)
+                xTextElement =
                     UnoRuntime.queryInterface(
                         com.sun.star.text.XTextContent.class,
                         xParagraphEnumeration.nextElement());
                 com.sun.star.lang.XServiceInfo xServiceInfo =
-                    (com.sun.star.lang.XServiceInfo)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.lang.XServiceInfo.class, xTextElement);
 
                 // check ifs the current paragraph really a paragraph or an
@@ -108,7 +108,7 @@ public class TextDocumentStructure {
                     // create another enumeration to get all text portions of
                     // the paragraph
                     xParaEnumerationAccess =
-                        (com.sun.star.container.XEnumerationAccess)
+
                             UnoRuntime.queryInterface(
                                 com.sun.star.container.XEnumerationAccess.class,
                                 xTextElement);
@@ -116,14 +116,14 @@ public class TextDocumentStructure {
 
                     while ( xTextPortionEnum.hasMoreElements() ) {
                         com.sun.star.text.XTextRange xTextPortion =
-                            (com.sun.star.text.XTextRange)UnoRuntime.queryInterface(
+                            UnoRuntime.queryInterface(
                                 com.sun.star.text.XTextRange.class,
                                 xTextPortionEnum.nextElement());
                         System.out.println( "Text from the portion : "
                                             + xTextPortion.getString() );
 
                         com.sun.star.beans.XPropertySet xPropertySet =
-                            (com.sun.star.beans.XPropertySet)
+
                                  UnoRuntime.queryInterface(
                                      com.sun.star.beans.XPropertySet.class,
                                      xTextPortion);
@@ -132,7 +132,7 @@ public class TextDocumentStructure {
 
                         // PropertyState status of each text portion.
                         com.sun.star.beans.XPropertyState xPropertyState =
-                            (com.sun.star.beans.XPropertyState)
+
                                 UnoRuntime.queryInterface(
                                     com.sun.star.beans.XPropertyState.class,
                                     xTextPortion);
@@ -170,7 +170,7 @@ public class TextDocumentStructure {
             xText.setString( "This is an example sentence" );
 
             com.sun.star.text.XWordCursor xWordCursor =
-                (com.sun.star.text.XWordCursor)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.text.XWordCursor.class, xText.getStart());
 
             xWordCursor.gotoNextWord(false);
@@ -178,7 +178,7 @@ public class TextDocumentStructure {
             xWordCursor.gotoEndOfWord(true);
 
             com.sun.star.beans.XPropertySet xPropertySet =
-                (com.sun.star.beans.XPropertySet)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.beans.XPropertySet.class, xWordCursor );
             xPropertySet.setPropertyValue("CharWeight",
                              new Float( com.sun.star.awt.FontWeight.BOLD ));

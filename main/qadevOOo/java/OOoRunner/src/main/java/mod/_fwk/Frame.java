@@ -87,7 +87,7 @@ public class Frame extends TestCase {
         }
 
         frame = xTextDoc.getCurrentController().getFrame();
-        oObj = (XInterface)UnoRuntime.queryInterface(XInterface.class, frame);
+        oObj = UnoRuntime.queryInterface(XInterface.class, frame);
 
         log.println(util.utils.getImplName(oObj));
 
@@ -107,7 +107,7 @@ public class Frame extends TestCase {
      */
     protected void cleanup( TestParameters Param, PrintWriter log) {
         try {
-            XCloseable xTextClose = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, xTextDoc);
+            XCloseable xTextClose = UnoRuntime.queryInterface(XCloseable.class, xTextDoc);
             xTextClose.close(true);
         } catch(Exception e){}
 

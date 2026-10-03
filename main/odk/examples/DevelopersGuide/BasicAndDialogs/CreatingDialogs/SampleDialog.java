@@ -134,7 +134,7 @@ public class SampleDialog extends WeakBase implements XServiceInfo, XJobExecutor
         // create the dialog model and set the properties
         Object dialogModel = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.UnoControlDialogModel", _xComponentContext );
-        XPropertySet xPSetDialog = ( XPropertySet )UnoRuntime.queryInterface(
+        XPropertySet xPSetDialog = UnoRuntime.queryInterface(
             XPropertySet.class, dialogModel );
         xPSetDialog.setPropertyValue( "PositionX", new Integer( 100 ) );
         xPSetDialog.setPropertyValue( "PositionY", new Integer( 100 ) );
@@ -143,13 +143,13 @@ public class SampleDialog extends WeakBase implements XServiceInfo, XJobExecutor
         xPSetDialog.setPropertyValue( "Title", new String( "Runtime Dialog Demo" ) );
 
         // get the service manager from the dialog model
-        XMultiServiceFactory xMultiServiceFactory = ( XMultiServiceFactory )UnoRuntime.queryInterface(
+        XMultiServiceFactory xMultiServiceFactory = UnoRuntime.queryInterface(
             XMultiServiceFactory.class, dialogModel );
 
         // create the button model and set the properties
         Object buttonModel = xMultiServiceFactory.createInstance(
             "com.sun.star.awt.UnoControlButtonModel" );
-        XPropertySet xPSetButton = ( XPropertySet )UnoRuntime.queryInterface(
+        XPropertySet xPSetButton = UnoRuntime.queryInterface(
             XPropertySet.class, buttonModel );
         xPSetButton.setPropertyValue( "PositionX", new Integer( 20 ) );
         xPSetButton.setPropertyValue( "PositionY", new Integer( 70 ) );
@@ -162,7 +162,7 @@ public class SampleDialog extends WeakBase implements XServiceInfo, XJobExecutor
         // create the label model and set the properties
         Object labelModel = xMultiServiceFactory.createInstance(
             "com.sun.star.awt.UnoControlFixedTextModel" );
-        XPropertySet xPSetLabel = ( XPropertySet )UnoRuntime.queryInterface(
+        XPropertySet xPSetLabel = UnoRuntime.queryInterface(
             XPropertySet.class, labelModel );
         xPSetLabel.setPropertyValue( "PositionX", new Integer( 40 ) );
         xPSetLabel.setPropertyValue( "PositionY", new Integer( 30 ) );
@@ -175,7 +175,7 @@ public class SampleDialog extends WeakBase implements XServiceInfo, XJobExecutor
         // create a Cancel button model and set the properties
         Object cancelButtonModel = xMultiServiceFactory.createInstance(
             "com.sun.star.awt.UnoControlButtonModel" );
-        XPropertySet xPSetCancelButton = ( XPropertySet )UnoRuntime.queryInterface(
+        XPropertySet xPSetCancelButton = UnoRuntime.queryInterface(
             XPropertySet.class, cancelButtonModel );
         xPSetCancelButton.setPropertyValue( "PositionX", new Integer( 80 ) );
         xPSetCancelButton.setPropertyValue( "PositionY", new Integer( 70 ) );
@@ -187,7 +187,7 @@ public class SampleDialog extends WeakBase implements XServiceInfo, XJobExecutor
         xPSetCancelButton.setPropertyValue( "Label", new String( "Cancel" ) );
 
         // insert the control models into the dialog model
-        XNameContainer xNameCont = ( XNameContainer )UnoRuntime.queryInterface(
+        XNameContainer xNameCont = UnoRuntime.queryInterface(
             XNameContainer.class, dialogModel );
         xNameCont.insertByName( _buttonName, buttonModel );
         xNameCont.insertByName( _labelName, labelModel );
@@ -196,37 +196,37 @@ public class SampleDialog extends WeakBase implements XServiceInfo, XJobExecutor
         // create the dialog control and set the model
         Object dialog = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.UnoControlDialog", _xComponentContext );
-        XControl xControl = ( XControl )UnoRuntime.queryInterface(
+        XControl xControl = UnoRuntime.queryInterface(
             XControl.class, dialog );
-        XControlModel xControlModel = ( XControlModel )UnoRuntime.queryInterface(
+        XControlModel xControlModel = UnoRuntime.queryInterface(
             XControlModel.class, dialogModel );
         xControl.setModel( xControlModel );
 
         // add an action listener to the button control
-        XControlContainer xControlCont = ( XControlContainer )UnoRuntime.queryInterface(
+        XControlContainer xControlCont = UnoRuntime.queryInterface(
             XControlContainer.class, dialog );
         Object objectButton = xControlCont.getControl( "Button1" );
-        XButton xButton = ( XButton )UnoRuntime.queryInterface(
+        XButton xButton = UnoRuntime.queryInterface(
             XButton.class, objectButton );
         xButton.addActionListener( new ActionListenerImpl( xControlCont ) );
 
         // create a peer
         Object toolkit = xMultiComponentFactory.createInstanceWithContext(
             "com.sun.star.awt.ExtToolkit", _xComponentContext );
-        XToolkit xToolkit = ( XToolkit )UnoRuntime.queryInterface(
+        XToolkit xToolkit = UnoRuntime.queryInterface(
             XToolkit.class, toolkit );
-        XWindow xWindow = ( XWindow )UnoRuntime.queryInterface(
+        XWindow xWindow = UnoRuntime.queryInterface(
             XWindow.class, xControl );
         xWindow.setVisible( false );
         xControl.createPeer( xToolkit, null );
 
         // execute the dialog
-        XDialog xDialog = ( XDialog )UnoRuntime.queryInterface(
+        XDialog xDialog = UnoRuntime.queryInterface(
             XDialog.class, dialog );
         xDialog.execute();
 
         // dispose the dialog
-        XComponent xComponent = ( XComponent )UnoRuntime.queryInterface(
+        XComponent xComponent = UnoRuntime.queryInterface(
             XComponent.class, dialog );
         xComponent.dispose();
     }
@@ -256,7 +256,7 @@ public class SampleDialog extends WeakBase implements XServiceInfo, XJobExecutor
 
             // set label text
             Object label = _xControlCont.getControl( "Label1" );
-            XFixedText xLabel = ( XFixedText )UnoRuntime.queryInterface(
+            XFixedText xLabel = UnoRuntime.queryInterface(
                 XFixedText.class, label );
             xLabel.setText( _labelPrefix + _nCounts );
         }

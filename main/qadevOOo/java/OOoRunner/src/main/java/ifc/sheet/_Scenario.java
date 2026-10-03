@@ -30,7 +30,7 @@ import lib.MultiPropertyTest;
 
 public class _Scenario extends MultiPropertyTest {
     public void before() {
-        oObj = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,
+        oObj = UnoRuntime.queryInterface(XPropertySet.class,
                                                         tEnv.getObjRelation(
                                                                 "ScenarioSheet"));
     }

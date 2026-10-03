@@ -79,10 +79,10 @@ public class CellMerge {
 
 		String sheetname = "sheet1";
 		scComponent = unoApp.newDocument("scalc");
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+		scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 		XSpreadsheets spreadsheets = scDocument.getSheets();
 		Object sheetObj = spreadsheets.getByName(sheetname);
-		XSpreadsheet sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+		XSpreadsheet sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
 		// Select A1 and input "12"
 		XCell cell = sheet.getCellByPosition(0, 0);
@@ -93,7 +93,7 @@ public class CellMerge {
 		//XCellRange CellRange = sheet.getCellRangeByName("A1:B1");
 
 		// Merge cell range A1:B1 into one cell
-		XMergeable xMerge = (XMergeable) UnoRuntime.queryInterface(XMergeable.class, CellRange);
+		XMergeable xMerge = UnoRuntime.queryInterface(XMergeable.class, CellRange);
 		xMerge.merge(true);
 
 		// Verify if the cell range A1:B1 is completely merged

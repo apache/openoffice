@@ -95,7 +95,7 @@ public class TextAnimation {
 		// create pages, so that three are available
 		drawpages.insertNewByIndex(0);
 		// get the shape container for page one
-		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class,
+		xShapes = UnoRuntime.queryInterface(XShapes.class,
 				drawpages.getByIndex(0));
 		// create a rectangle that is placed on the top left of the page
 		XShape xRectangle = ShapeUtil.createShape(impressDocument, po,
@@ -120,7 +120,7 @@ public class TextAnimation {
 	public XPropertySet addPortion(XShape xShape, String sText,
 			boolean bNewParagraph)
 			throws com.sun.star.lang.IllegalArgumentException {
-		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xShape);
+		XText xText = UnoRuntime.queryInterface(XText.class, xShape);
 
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.gotoEnd(false);
@@ -129,11 +129,11 @@ public class TextAnimation {
 					ControlCharacter.PARAGRAPH_BREAK, false);
 			xTextCursor.gotoEnd(false);
 		}
-		XTextRange xTextRange = (XTextRange) UnoRuntime.queryInterface(
+		XTextRange xTextRange = UnoRuntime.queryInterface(
 				XTextRange.class, xTextCursor);
 		xTextRange.setString(sText);
 		xTextCursor.gotoEnd(true);
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, xText);
 		return xPropSet;
 	}
@@ -144,13 +144,13 @@ public class TextAnimation {
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
-		impressDocument = (XComponent) UnoRuntime.queryInterface(
+		impressDocument = UnoRuntime.queryInterface(
 				XComponent.class, unoApp.newDocument("simpress"));
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
 
-		sdDocument = (XPresentationSupplier) UnoRuntime.queryInterface(
+		sdDocument = UnoRuntime.queryInterface(
 				XPresentationSupplier.class, impressDocument);
 		pre = sdDocument.getPresentation();
 	}
@@ -165,11 +165,11 @@ public class TextAnimation {
 	public void saveAndLoadSlide() throws Exception {
 		reLoadFile = saveAndReloadDoc(impressDocument,
 				"StarOffice XML (Impress)", "odp");
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, reLoadFile);
 		drawpages = drawsupplier.getDrawPages();
 
-		sdDocument = (XPresentationSupplier) UnoRuntime.queryInterface(
+		sdDocument = UnoRuntime.queryInterface(
 				XPresentationSupplier.class, reLoadFile);
 		pre = sdDocument.getPresentation();
 	}
@@ -193,11 +193,11 @@ public class TextAnimation {
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
 		aStoreProperties[1].Value = sFilter;
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent)UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 }

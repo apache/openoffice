@@ -126,12 +126,12 @@ public class XMLMetaExporter extends TestCase {
         try {
             oObj = (XInterface) xMSF.createInstanceWithArguments(
                 "com.sun.star.comp.Math.XMLMetaExporter", new Object[] {arg});
-            XExporter xEx = (XExporter) UnoRuntime.queryInterface
+            XExporter xEx = UnoRuntime.queryInterface
                 (XExporter.class,oObj);
             xEx.setSourceDocument(xMathDoc);
 
             // setting a new name and value for user info field
-            XDocumentInfoSupplier xDocInfoSup = (XDocumentInfoSupplier)
+            XDocumentInfoSupplier xDocInfoSup =
                 UnoRuntime.queryInterface(XDocumentInfoSupplier.class, xMathDoc) ;
             XDocumentInfo xDocInfo = xDocInfoSup.getDocumentInfo() ;
             xDocInfo.setUserFieldName((short) 0, expName) ;

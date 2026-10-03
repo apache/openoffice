@@ -71,7 +71,7 @@ public class ScIndexEnumeration_SheetCellRangesEnumeration extends TestCase {
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
         XComponent oComp =
-            (XComponent) UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
+            UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
 
@@ -89,20 +89,20 @@ public class ScIndexEnumeration_SheetCellRangesEnumeration extends TestCase {
 
         log.println("Getting test object ");
 
-        XComponent oComp = (XComponent)
+        XComponent oComp =
                     UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
 
         oObj = (XInterface)
             SOF.createInstance(oComp, "com.sun.star.sheet.SheetCellRanges");
 
         XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-        XIndexAccess oIndSheets = (XIndexAccess)
+        XIndexAccess oIndSheets =
             UnoRuntime.queryInterface (XIndexAccess.class, oSheets);
         XSpreadsheet oSheet = null;
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
                     new Type(XSpreadsheet.class),oIndSheets.getByIndex(0));
-            XNameContainer oRanges = (XNameContainer)
+            XNameContainer oRanges =
                 UnoRuntime.queryInterface(XNameContainer.class, oObj);
 
             oRange = oSheet.getCellRangeByName("C1:D4");
@@ -145,7 +145,7 @@ public class ScIndexEnumeration_SheetCellRangesEnumeration extends TestCase {
                 "Exception occurred while filling cells", e);
         }
 
-        XEnumerationAccess ea = (XEnumerationAccess)
+        XEnumerationAccess ea =
                     UnoRuntime.queryInterface(XEnumerationAccess.class,oObj);
 
         oObj = ea.createEnumeration();

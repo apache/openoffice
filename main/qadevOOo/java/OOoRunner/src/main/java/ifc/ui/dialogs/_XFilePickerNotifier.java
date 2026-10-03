@@ -100,7 +100,7 @@ public class _XFilePickerNotifier extends MultiMethodTest {
      * interface.
      */
     public void before() {
-        fps = (XFilePicker) UnoRuntime.queryInterface
+        fps = UnoRuntime.queryInterface
                 (XFilePicker.class, oObj) ;
 
         if (fps == null) {
@@ -109,7 +109,7 @@ public class _XFilePickerNotifier extends MultiMethodTest {
                     ("The object doesn't implement XFilePicker"));
         }
 
-        XExecutableDialog exD = (XExecutableDialog) UnoRuntime.queryInterface(
+        XExecutableDialog exD = UnoRuntime.queryInterface(
                 XExecutableDialog.class, tEnv.getTestObject());
 
         dir1 = util.utils.getOfficeTemp((XMultiServiceFactory)tParam.getMSF());
@@ -217,7 +217,7 @@ public class _XFilePickerNotifier extends MultiMethodTest {
     }
 
     private void closeDialog() {
-        XCancellable canc = (XCancellable) UnoRuntime.queryInterface(
+        XCancellable canc = UnoRuntime.queryInterface(
                 XCancellable.class, tEnv.getTestObject());
         if (canc != null) {
             log.println("Cancelling Dialog");
@@ -272,7 +272,7 @@ public class _XFilePickerNotifier extends MultiMethodTest {
             eThread.yield();
         }
 
-        XExecutableDialog exD = (XExecutableDialog) UnoRuntime.queryInterface(
+        XExecutableDialog exD = UnoRuntime.queryInterface(
                 XExecutableDialog.class, tEnv.getTestObject());
 
         dir1 = util.utils.getOfficeTemp((XMultiServiceFactory)tParam.getMSF());

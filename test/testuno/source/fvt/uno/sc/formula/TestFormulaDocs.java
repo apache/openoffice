@@ -102,7 +102,7 @@ public class TestFormulaDocs {
 		PropertyValue prop = new PropertyValue();
 		prop.Name = "MacroExecutionMode";
 		prop.Value = MacroExecMode.ALWAYS_EXECUTE_NO_WARN;
-		XSpreadsheetDocument scDoc = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+		XSpreadsheetDocument scDoc = UnoRuntime.queryInterface(
 			XSpreadsheetDocument.class, unoApp.loadDocument(sample, prop));
 		XSpreadsheet xSheet = SCUtil.getCurrentSheet( scDoc);
 
@@ -113,7 +113,7 @@ public class TestFormulaDocs {
 		for( int y = 0; y < 8; ++y) {
 			for( int x = 0; x < 26; ++x) {
 				XCell xCell = xSheet.getCellByPosition( x, y);
-				XText xText = (XText)UnoRuntime.queryInterface( XText.class, xCell);
+				XText xText = UnoRuntime.queryInterface( XText.class, xCell);
 				String name = xText.getString();
 				if( name.equals( "TestID")) {
 					assertTrue( "Multiple rows with TestID marker!", nTestIdCol == -1);
@@ -136,7 +136,7 @@ public class TestFormulaDocs {
 		for( int y = nTestRowStart; y < nTestRowEnd; ++y) {
 			// get the test id
 			XCell xCell = xSheet.getCellByPosition( nTestIdCol, y);
-			XText xText = (XText)UnoRuntime.queryInterface( XText.class, xCell);
+			XText xText = UnoRuntime.queryInterface( XText.class, xCell);
 			String testId = xText.getString();
 			// ignore rows without test ids
 			if( testId.length() == 0)
@@ -145,7 +145,7 @@ public class TestFormulaDocs {
 
 			// get and check the test result
 			xCell = xSheet.getCellByPosition( nTestOkCol, y);
-			String testOk = ((XText)UnoRuntime.queryInterface( XText.class, xCell)).getString();
+			String testOk = (UnoRuntime.queryInterface( XText.class, xCell)).getString();
 			assertTrue( "Test result must be TRUE or FALSE", testOk.equals("TRUE") || testOk.equals("FALSE"));
 			boolean bOK = testOk.equals("TRUE");
 			// mark evaluated test results
@@ -159,7 +159,7 @@ public class TestFormulaDocs {
 
 		assertTrue( (nFailCount+" of "+nTestCount+" tests failed for " + filename), nFailCount==0);
 
-		XModifiable modified = (XModifiable)UnoRuntime.queryInterface( XModifiable.class, scDoc);
+		XModifiable modified = UnoRuntime.queryInterface( XModifiable.class, scDoc);
 		modified.setModified( false);
 		SCUtil.closeFile( scDoc);
 	}

@@ -141,13 +141,13 @@ public class AccessibleHypertextImpl extends AccessibleTextImpl
 
     public static javax.accessibility.AccessibleText get(com.sun.star.uno.XInterface unoObject) {
         try {
-            XAccessibleHypertext unoAccessibleHypertext = (XAccessibleHypertext)
+            XAccessibleHypertext unoAccessibleHypertext =
                 UnoRuntime.queryInterface(XAccessibleHypertext.class, unoObject);
             if (unoAccessibleHypertext != null) {
                 return new AccessibleHypertextImpl(unoAccessibleHypertext);
             }
 
-            XAccessibleText unoAccessibleText = (XAccessibleText)
+            XAccessibleText unoAccessibleText =
                 UnoRuntime.queryInterface(XAccessibleText.class, unoObject);
             if (unoAccessibleText != null) {
                 return new AccessibleTextImpl(unoAccessibleText);

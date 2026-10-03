@@ -102,7 +102,7 @@ public class SwXParagraph extends TestCase {
         log.println("    disposing xTextDoc ");
 
         try {
-            XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable closer = UnoRuntime.queryInterface(
             XCloseable.class, xTextDoc);
             closer.close(true);
         } catch (com.sun.star.util.CloseVetoException e) {
@@ -141,7 +141,7 @@ public class SwXParagraph extends TestCase {
             log.println("    disposing xTextDoc ");
 
             try {
-                XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+                XCloseable closer = UnoRuntime.queryInterface(
                 XCloseable.class, xTextDoc);
                 closer.close(true);
             } catch (com.sun.star.util.CloseVetoException e) {
@@ -195,14 +195,14 @@ public class SwXParagraph extends TestCase {
         }
 
         // Enumeration
-        XEnumerationAccess oEnumA = (XEnumerationAccess)
+        XEnumerationAccess oEnumA =
         UnoRuntime.queryInterface(XEnumerationAccess.class, oText );
         XEnumeration oEnum = oEnumA.createEnumeration();
 
         try {
             para = (XInterface) AnyConverter.toObject(
             new Type(XInterface.class),oEnum.nextElement());
-            XEnumerationAccess oEnumB = (XEnumerationAccess)
+            XEnumerationAccess oEnumB =
             UnoRuntime.queryInterface( XEnumerationAccess.class, para );
             XEnumeration oEnum2 = oEnumB.createEnumeration();
             port = (XInterface) AnyConverter.toObject(
@@ -219,9 +219,9 @@ public class SwXParagraph extends TestCase {
         }
 
         try {
-            portP = (XPropertySet)
+            portP =
             UnoRuntime.queryInterface(XPropertySet.class, port);
-            paraP = (XPropertySet)
+            paraP =
             UnoRuntime.queryInterface(XPropertySet.class, para);
             paraP.setPropertyValue("NumberingStyleName","Numbering 4");
             nRules = paraP.getPropertyValue("NumberingRules");

@@ -85,10 +85,10 @@ public class StandardFilterOption {
 		// Open document
 		scDocument = SCUtil.openFile(sample, unoApp);
 		// Get cell range
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 
 		// Set filter property and filter the cell range
-		XSheetFilterable xFilter = (XSheetFilterable) UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
+		XSheetFilterable xFilter = UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
 		XSheetFilterDescriptor xFilterDesc = xFilter.createFilterDescriptor(true);
 		TableFilterField[] aFilterFields = new TableFilterField[1];
 		aFilterFields[0] = new TableFilterField();
@@ -97,16 +97,16 @@ public class StandardFilterOption {
 		aFilterFields[0].Operator = FilterOperator.EQUAL;
 		aFilterFields[0].StringValue = "Tom";
 		xFilterDesc.setFilterFields(aFilterFields);
-		XPropertySet xFilterProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
+		XPropertySet xFilterProp = UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
 		xFilterProp.setPropertyValue("ContainsHeader", new Boolean(true));
 		xFilter.filter(xFilterDesc);
 
 		// Verify filter result
-		XColumnRowRange ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
+		XColumnRowRange ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
 		XTableRows Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 0 | i == 5) {
 				assertTrue("Verify row is invisible.", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -119,12 +119,12 @@ public class StandardFilterOption {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Verify the result again
-		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
+		xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 0 | i == 5) {
 				assertTrue("Verify row is invisible.", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -143,10 +143,10 @@ public class StandardFilterOption {
 		// Open document
 		scDocument = SCUtil.openFile(sample, unoApp);
 		// Get cell range
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 
 		// Set filter property and filter the cell range
-		XSheetFilterable xFilter = (XSheetFilterable) UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
+		XSheetFilterable xFilter = UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
 		XSheetFilterDescriptor xFilterDesc = xFilter.createFilterDescriptor(true);
 		TableFilterField[] aFilterFields = new TableFilterField[1];
 		aFilterFields[0] = new TableFilterField();
@@ -155,17 +155,17 @@ public class StandardFilterOption {
 		aFilterFields[0].Operator = FilterOperator.EQUAL;
 		aFilterFields[0].StringValue = "No";
 		xFilterDesc.setFilterFields(aFilterFields);
-		XPropertySet xFilterProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
+		XPropertySet xFilterProp = UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
 		xFilterProp.setPropertyValue("ContainsHeader", new Boolean(true));
 		xFilterProp.setPropertyValue("IsCaseSensitive", false);
 		xFilter.filter(xFilterDesc);
 
 		// Verify filter result
-		XColumnRowRange ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		XColumnRowRange ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		XTableRows Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 0 | i == 1 | i == 5) {
 				assertTrue("Expect should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -179,7 +179,7 @@ public class StandardFilterOption {
 		// Verify result
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 0 | i == 5) {
 				assertTrue("Expect should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -192,12 +192,12 @@ public class StandardFilterOption {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Verify the result again
-		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 0 | i == 5) {
 				assertTrue("Expect should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -215,10 +215,10 @@ public class StandardFilterOption {
 		// Open document
 		scDocument = SCUtil.openFile(sample, unoApp);
 		// Get cell range
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 
 		// Set filter property and filter the cell range
-		XSheetFilterable xFilter = (XSheetFilterable) UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
+		XSheetFilterable xFilter = UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
 		XSheetFilterDescriptor xFilterDesc = xFilter.createFilterDescriptor(true);
 		TableFilterField[] aFilterFields = new TableFilterField[1];
 		aFilterFields[0] = new TableFilterField();
@@ -227,16 +227,16 @@ public class StandardFilterOption {
 		aFilterFields[0].Operator = FilterOperator.LESS;
 		aFilterFields[0].NumericValue = 44;
 		xFilterDesc.setFilterFields(aFilterFields);
-		XPropertySet xFilterProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
+		XPropertySet xFilterProp = UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
 		xFilterProp.setPropertyValue("ContainsHeader", new Boolean(true));
 		xFilter.filter(xFilterDesc);
 
 		// Verify filter result
-		XColumnRowRange ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
+		XColumnRowRange ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
 		XTableRows Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 0 | i == 1 | i == 4) {
 				assertTrue("Expect result should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -250,7 +250,7 @@ public class StandardFilterOption {
 		// Verify result
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 1 | i == 4) {
 				assertTrue("Expect result should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -263,12 +263,12 @@ public class StandardFilterOption {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Verify filter result again
-		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 1 | i == 4) {
 				assertTrue("Expect result should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -287,18 +287,18 @@ public class StandardFilterOption {
 		// Open document
 		scDocument = SCUtil.openFile(sample, unoApp);
 		// Get cell range
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 		XSpreadsheet currentSheet = SCUtil.getCurrentSheet(scDocument);
 		// Get the value before filter
 		String[][] souce = SCUtil.getTextFromCellRange(currentSheet, 0, 0, 5, 5);
 
 		// Copy to cell position
 		XCell cell = currentSheet.getCellByPosition(7, 7);
-		XCellAddressable xCellAddr = (XCellAddressable) UnoRuntime.queryInterface(XCellAddressable.class, cell);
+		XCellAddressable xCellAddr = UnoRuntime.queryInterface(XCellAddressable.class, cell);
 		CellAddress copytoAddress = xCellAddr.getCellAddress();
 
 		// Set filter property and filter the cell range
-		XSheetFilterable xFilter = (XSheetFilterable) UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
+		XSheetFilterable xFilter = UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
 		XSheetFilterDescriptor xFilterDesc = xFilter.createFilterDescriptor(true);
 		TableFilterField[] aFilterFields = new TableFilterField[1];
 		aFilterFields[0] = new TableFilterField();
@@ -307,18 +307,18 @@ public class StandardFilterOption {
 		aFilterFields[0].Operator = FilterOperator.GREATER;
 		aFilterFields[0].NumericValue = 155;
 		xFilterDesc.setFilterFields(aFilterFields);
-		XPropertySet xFilterProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
+		XPropertySet xFilterProp = UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
 		xFilterProp.setPropertyValue("ContainsHeader", new Boolean(true));
 		xFilterProp.setPropertyValue("CopyOutputData", new Boolean(true));
 		xFilterProp.setPropertyValue("OutputPosition", copytoAddress);
 		xFilter.filter(xFilterDesc);
 
 		// Verify source range not changed
-		XColumnRowRange ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		XColumnRowRange ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		XTableRows Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			assertTrue("Expect should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 
@@ -327,10 +327,10 @@ public class StandardFilterOption {
 		assertArrayEquals(souce, dataafterFilter);
 
 		// Get the copyto filter result, verify it
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("H8:M10"));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("H8:M10"));
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			assertTrue("Expect should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 		// Verify the first filter line data
@@ -348,12 +348,12 @@ public class StandardFilterOption {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Verify filter result again
-		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			assertTrue("Expect should be true", (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 
@@ -363,10 +363,10 @@ public class StandardFilterOption {
 		assertArrayEquals(souce, dataafterFilter);
 
 		// Get the copyto filter result, verify it
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("H8:M10"));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("H8:M10"));
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			assertTrue("Expect should be True", (Boolean) PropSet.getPropertyValue("IsVisible"));
 		}
 		// Verify the first filter line data
@@ -389,10 +389,10 @@ public class StandardFilterOption {
 		// Open document
 		scDocument = SCUtil.openFile(sample, unoApp);
 		// Get cell range
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 
 		// Set filter property and filter the cell range
-		XSheetFilterable xFilter = (XSheetFilterable) UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:E6"));
+		XSheetFilterable xFilter = UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:E6"));
 		XSheetFilterDescriptor xFilterDesc = xFilter.createFilterDescriptor(true);
 		TableFilterField[] aFilterFields = new TableFilterField[1];
 		aFilterFields[0] = new TableFilterField();
@@ -401,17 +401,17 @@ public class StandardFilterOption {
 		aFilterFields[0].Operator = FilterOperator.GREATER_EQUAL;
 		aFilterFields[0].NumericValue = 155;
 		xFilterDesc.setFilterFields(aFilterFields);
-		XPropertySet xFilterProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
+		XPropertySet xFilterProp = UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
 		xFilterProp.setPropertyValue("ContainsHeader", new Boolean(true));
 		xFilterProp.setPropertyValue("SkipDuplicates", new Boolean(true));
 		xFilter.filter(xFilterDesc);
 
 		// Verify filter result
-		XColumnRowRange ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
+		XColumnRowRange ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
 		XTableRows Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 2) {
 				assertFalse("Verify row is invisible.", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -423,11 +423,11 @@ public class StandardFilterOption {
 		xFilter.filter(xFilterDesc);
 
 		// Verify filter result
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 2 | i == 6) {
 				assertFalse("Expect should be false", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -440,12 +440,12 @@ public class StandardFilterOption {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Verify filter result again
-		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
+		xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:E6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount() - 1; i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 2 | i == 6) {
 				assertFalse("Expect should be false", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -464,10 +464,10 @@ public class StandardFilterOption {
 		// Open document
 		scDocument = SCUtil.openFile(sample, unoApp);
 		// Get cell range
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 
 		// Set filter property and filter the cell range
-		XSheetFilterable xFilter = (XSheetFilterable) UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
+		XSheetFilterable xFilter = UnoRuntime.queryInterface(XSheetFilterable.class, xdataRange.getCellRangeByName("A1:F6"));
 		XSheetFilterDescriptor xFilterDesc = xFilter.createFilterDescriptor(true);
 		TableFilterField[] aFilterFields = new TableFilterField[1];
 		aFilterFields[0] = new TableFilterField();
@@ -476,17 +476,17 @@ public class StandardFilterOption {
 		aFilterFields[0].Operator = FilterOperator.EQUAL;
 		aFilterFields[0].StringValue = "^.{3}$";
 		xFilterDesc.setFilterFields(aFilterFields);
-		XPropertySet xFilterProp = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
+		XPropertySet xFilterProp = UnoRuntime.queryInterface(XPropertySet.class, xFilterDesc);
 		xFilterProp.setPropertyValue("ContainsHeader", new Boolean(true));
 		xFilterProp.setPropertyValue("UseRegularExpressions", new Boolean(true));
 		xFilter.filter(xFilterDesc);
 
 		// Verify filter result
-		XColumnRowRange ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		XColumnRowRange ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		XTableRows Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 2 | i == 4) {
 				assertFalse("Expect should be false", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else
@@ -499,12 +499,12 @@ public class StandardFilterOption {
 		scDocument = SCUtil.openFile(sample, unoApp);
 
 		// Verify filter result again
-		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
-		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
+		xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
+		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		Rows = ColRowRange.getRows();
 		for (int i = 0; i < Rows.getCount(); i++) {
 			Object aRowObj = Rows.getByIndex(i);
-			XPropertySet PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+			XPropertySet PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 			if (i == 2 | i == 4) {
 				assertFalse("Expect should be false", (Boolean) PropSet.getPropertyValue("IsVisible"));
 			} else

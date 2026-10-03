@@ -290,7 +290,7 @@ public class TestCacheSize {
         XPreparedStatement ps = cConnection.prepareStatement(
             "INSERT INTO test (firstname,lastname,zip,filler) VALUES (?,?,?,?)");
 
-        XParameters para = (XParameters)UnoRuntime.queryInterface(XParameters.class,ps);
+        XParameters para = UnoRuntime.queryInterface(XParameters.class,ps);
         para.setString(1, "Julia");
         para.setString(2, "Clancy");
 
@@ -319,12 +319,12 @@ public class TestCacheSize {
                     && i % deleteWhileInsertInterval == 0) {
                 sStatement.execute("CALL IDENTITY();");
 
-                XMultipleResults mrs = (XMultipleResults)UnoRuntime.queryInterface(XMultipleResults.class,sStatement);
+                XMultipleResults mrs = UnoRuntime.queryInterface(XMultipleResults.class,sStatement);
                 XResultSet rs = mrs.getResultSet();
 
                 rs.next();
 
-                XRow row = (XRow)UnoRuntime.queryInterface(XRow.class,rs);
+                XRow row = UnoRuntime.queryInterface(XRow.class,rs);
                 int lastId = row.getInt(1);
 
                 sStatement.execute(
@@ -353,7 +353,7 @@ public class TestCacheSize {
         XPreparedStatement ps = cConnection.prepareStatement(
             "INSERT INTO test2 (id1, id2, firstname,lastname,zip,filler) VALUES (?,?,?,?,?,?)");
 
-        XParameters para = (XParameters)UnoRuntime.queryInterface(XParameters.class,ps);
+        XParameters para = UnoRuntime.queryInterface(XParameters.class,ps);
         para.setString(3, "Julia");
         para.setString(4, "Clancy");
 
@@ -419,9 +419,9 @@ public class TestCacheSize {
             // use primary index
             sStatement.execute("SELECT count(*) from TEST");
 
-            XMultipleResults mrs = (XMultipleResults)UnoRuntime.queryInterface(XMultipleResults.class,sStatement);
+            XMultipleResults mrs = UnoRuntime.queryInterface(XMultipleResults.class,sStatement);
             rs = mrs.getResultSet();
-            XRow row = (XRow)UnoRuntime.queryInterface(XRow.class,rs);
+            XRow row = UnoRuntime.queryInterface(XRow.class,rs);
 
             rs.next();
             System.out.println("Row Count: " + row.getInt(1));
@@ -471,7 +471,7 @@ public class TestCacheSize {
         try {
             XPreparedStatement ps = cConnection.prepareStatement(
                 "SELECT TOP 1 firstname,lastname,zip,filler FROM test WHERE zip = ?");
-            XParameters para = (XParameters)UnoRuntime.queryInterface(XParameters.class,ps);
+            XParameters para = UnoRuntime.queryInterface(XParameters.class,ps);
 
             for (; i < bigrows; i++) {
                 para.setInt(1, randomgen.nextInt(smallrows));
@@ -500,7 +500,7 @@ public class TestCacheSize {
         try {
             XPreparedStatement ps = cConnection.prepareStatement(
                 "SELECT firstname,lastname,zip,filler FROM test WHERE id = ?");
-            XParameters para = (XParameters)UnoRuntime.queryInterface(XParameters.class,ps);
+            XParameters para = UnoRuntime.queryInterface(XParameters.class,ps);
 
             for (i = 0; i < bigrows; i++) {
                 para.setInt(1, randomgen.nextInt(bigrows - 1));
@@ -524,7 +524,7 @@ public class TestCacheSize {
         try {
             XPreparedStatement ps = cConnection.prepareStatement(
                 "SELECT zip FROM zip WHERE zip = ?");
-            XParameters para = (XParameters)UnoRuntime.queryInterface(XParameters.class,ps);
+            XParameters para = UnoRuntime.queryInterface(XParameters.class,ps);
 
             for (i = 0; i < bigrows; i++) {
                 para.setInt(1, randomgen.nextInt(smallrows - 1));
@@ -556,7 +556,7 @@ public class TestCacheSize {
         try {
             XPreparedStatement ps = cConnection.prepareStatement(
                 "UPDATE test SET filler = filler || zip WHERE zip = ?");
-            XParameters para = (XParameters)UnoRuntime.queryInterface(XParameters.class,ps);
+            XParameters para = UnoRuntime.queryInterface(XParameters.class,ps);
 
             for (; i < smallrows; i++) {
                 int random = randomgen.nextInt(smallrows - 1);
@@ -583,7 +583,7 @@ public class TestCacheSize {
         try {
             XPreparedStatement ps = cConnection.prepareStatement(
                 "UPDATE test SET zip = zip + 1 WHERE id = ?");
-            XParameters para = (XParameters)UnoRuntime.queryInterface(XParameters.class,ps);
+            XParameters para = UnoRuntime.queryInterface(XParameters.class,ps);
 
             for (i = 0; i < bigrows; i++) {
                 int random = randomgen.nextInt(bigrows - 1);

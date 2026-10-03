@@ -74,7 +74,7 @@ public class MixedTest {
 	@Test
 	public void testUseBothUNOAndGuiAPI()  throws Exception  {
 		//Use UNO API to create a new document
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, unoApp.newDocument("swriter"));
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, unoApp.newDocument("swriter"));
 		XText xText = textDocument.getText();
 		xText.setString("UNO: Hello World!");
 		//Input something by typing keyboard
@@ -87,7 +87,7 @@ public class MixedTest {
 		effectsPage.ok();
 		//Verify the result via UNO API
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xps = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		Assert.assertEquals("Text Color", 0x00CC00, xps.getPropertyValue("CharColor"));
 	}
 }

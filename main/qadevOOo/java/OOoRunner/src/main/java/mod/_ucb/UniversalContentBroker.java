@@ -63,7 +63,7 @@ public class UniversalContentBroker extends TestCase {
 
         oObj = (XInterface) oInterface;
 
-        XContentIdentifierFactory CIF = (XContentIdentifierFactory)
+        XContentIdentifierFactory CIF =
                 UnoRuntime.queryInterface(XContentIdentifierFactory.class,oObj);
 
         System.out.println("ImplementationName: "+util.utils.getImplName(oObj));

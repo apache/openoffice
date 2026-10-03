@@ -86,7 +86,7 @@ public class ScCellsObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -108,7 +108,7 @@ public class ScCellsObj extends TestCase {
 
         // creation of testobject here
         XSpreadsheets oSheets = (XSpreadsheets)xSheetDoc.getSheets();
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         XCellRange oSheet = null;
         try {
@@ -116,7 +116,7 @@ public class ScCellsObj extends TestCase {
                     new Type(XCellRange.class),oIndexAccess.getByIndex(0));
 
             XCell oCell_1 = (XCell)oSheet.getCellByPosition(0, 0);
-            XTextRange oTextRange = (XTextRange)
+            XTextRange oTextRange =
                 UnoRuntime.queryInterface(XTextRange.class, oCell_1);
 
             oTextRange.setString("ScCellsObj test 1");
@@ -125,7 +125,7 @@ public class ScCellsObj extends TestCase {
             oCell_2.setValue(15);
 
             XCell oCell_3 = (XCell)oSheet.getCellByPosition(3, 9);
-            oTextRange = (XTextRange)
+            oTextRange =
                 UnoRuntime.queryInterface(XTextRange.class, oCell_3);
 
             oTextRange.setString("ScCellsObj test 2");
@@ -147,7 +147,7 @@ public class ScCellsObj extends TestCase {
             throw new StatusException("Couldn't create test object", e);
         }
 
-        XCellRangesQuery oCellRangesQuery = (XCellRangesQuery)
+        XCellRangesQuery oCellRangesQuery =
             UnoRuntime.queryInterface(XCellRangesQuery.class, oSheet);
         XSheetCellRanges oSheetCellRanges = oCellRangesQuery.queryVisibleCells();
 

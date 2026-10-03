@@ -116,7 +116,7 @@ public class SwXCellRange extends TestCase {
             }
         }
         try {
-            XCellRange the_Range = (XCellRange)
+            XCellRange the_Range =
                     UnoRuntime.queryInterface(XCellRange.class, the_table);
             oObj = the_Range.getCellRangeByPosition(0, 0, 3, 4);
         } catch (com.sun.star.uno.Exception e) {
@@ -129,7 +129,7 @@ public class SwXCellRange extends TestCase {
         TestEnvironment tEnv = new TestEnvironment( oObj );
         log.println("ImplName: " + util.utils.getImplName(oObj));
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
         try {
             XInterface oTS = (XInterface)

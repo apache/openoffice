@@ -77,7 +77,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
      * @see ifc.accessibility._XAccessibleContext
      */
     protected void before() {
-        xAC = (XAccessibleContext) UnoRuntime.queryInterface(
+        xAC = UnoRuntime.queryInterface(
                       XAccessibleContext.class, oObj);
 
         if (xAC == null) {
@@ -538,7 +538,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
 
     protected static int chkSelectable(Object Testcase) {
         int ret = 0;
-        XAccessibleContext accCon = (XAccessibleContext) UnoRuntime.queryInterface(
+        XAccessibleContext accCon = UnoRuntime.queryInterface(
                                             XAccessibleContext.class, Testcase);
         int cc = accCon.getAccessibleChildCount();
 
@@ -562,7 +562,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
     }
 
     protected static boolean isSelectable(Object Testcase, int index) {
-        XAccessibleContext accCon = (XAccessibleContext) UnoRuntime.queryInterface(
+        XAccessibleContext accCon = UnoRuntime.queryInterface(
                                             XAccessibleContext.class, Testcase);
         boolean res = false;
 

@@ -39,11 +39,11 @@ class EventHandler
 
         mnEventId = aEvent.EventId;
 
-        mxEventSource = (XAccessibleContext)UnoRuntime.queryInterface(
+        mxEventSource = UnoRuntime.queryInterface(
             XAccessibleContext.class, aEvent.Source);
         if (mxEventSource == null)
         {
-            XAccessible xAccessible = (XAccessible)UnoRuntime.queryInterface(
+            XAccessible xAccessible = UnoRuntime.queryInterface(
                 XAccessible.class, aEvent.Source);
             if (xAccessible != null)
                 mxEventSource = xAccessible.getAccessibleContext();

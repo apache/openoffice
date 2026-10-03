@@ -96,7 +96,7 @@ public class FrameGrabber implements com.sun.star.lang.XServiceInfo,
                         javax.imageio.ImageIO.write( (java.awt.image.BufferedImage) aImage, "png", aTempFile );
 
                         com.sun.star.graphic.XGraphicProvider aProvider =
-                            (com.sun.star.graphic.XGraphicProvider) UnoRuntime.queryInterface(
+                            UnoRuntime.queryInterface(
                                 com.sun.star.graphic.XGraphicProvider.class,
                                 maFactory.createInstance("com.sun.star.graphic.GraphicProvider") );
 

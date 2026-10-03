@@ -80,13 +80,13 @@ public class InsertDeleteCells {
 	public void testInsertCells() throws Exception {
 
 		scComponent = unoApp.newDocument("scalc");
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+		scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 		XSpreadsheets xSpreadsheets = scDocument.getSheets();
 
 		// Gets the first sheet in the document.
-        XIndexAccess xSheetsIA = (XIndexAccess)UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
-        Object sheetObj = (XSpreadsheet)UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
-		XSpreadsheet xSheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+        XIndexAccess xSheetsIA = UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
+        Object sheetObj = UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
+		XSpreadsheet xSheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
 	    // Create a 3x3 cell range "A2:C4" with the values 0 ... 8.
 	    int nCol = 0;
@@ -106,11 +106,11 @@ public class InsertDeleteCells {
 
 		// Get cell range A2:B2 by position - (column, row, column, row)
         XCellRange xCellRange = xSheet.getCellRangeByPosition( 0, 1, 1, 1 );
-        XCellRangeMovement xCellRangeMovement = (XCellRangeMovement)
+        XCellRangeMovement xCellRangeMovement =
         		UnoRuntime.queryInterface(XCellRangeMovement.class, xSheet);
 
         // Gets the selected range's address/location.
- 	    XCellRangeAddressable xCellRangeAddr = (XCellRangeAddressable)
+ 	    XCellRangeAddressable xCellRangeAddr =
 	            UnoRuntime.queryInterface( XCellRangeAddressable.class, xCellRange );
 	    CellRangeAddress address = xCellRangeAddr.getRangeAddress();
 
@@ -210,13 +210,13 @@ public class InsertDeleteCells {
     public void testDeleteCells() throws Exception {
 
 	    scComponent = unoApp.newDocument("scalc");
-	    scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+	    scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 	    XSpreadsheets xSpreadsheets = scDocument.getSheets();
 
 	    // Gets the first sheet in the document.
-        XIndexAccess xSheetsIA = (XIndexAccess)UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
-        Object sheetObj = (XSpreadsheet)UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
-	    XSpreadsheet xSheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+        XIndexAccess xSheetsIA = UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
+        Object sheetObj = UnoRuntime.queryInterface(XSpreadsheet.class, xSheetsIA.getByIndex(0));
+	    XSpreadsheet xSheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
         // Create a 3x3 cell range "A2:C4" with the values 0 ... 8.
         int nCol = 0;
@@ -236,11 +236,11 @@ public class InsertDeleteCells {
 
 	    // Get cell range A2:B2 by position - (column, row, column, row)
         XCellRange xCellRange = xSheet.getCellRangeByPosition( 0, 1, 1, 1 );
-        XCellRangeMovement xCellRangeMovement = (XCellRangeMovement)
+        XCellRangeMovement xCellRangeMovement =
     		UnoRuntime.queryInterface(XCellRangeMovement.class, xSheet);
 
         // Gets the selected range's address/location.
-	    XCellRangeAddressable xCellRangeAddr = (XCellRangeAddressable)
+	    XCellRangeAddressable xCellRangeAddr =
             UnoRuntime.queryInterface( XCellRangeAddressable.class, xCellRange );
         CellRangeAddress address = xCellRangeAddr.getRangeAddress();
 

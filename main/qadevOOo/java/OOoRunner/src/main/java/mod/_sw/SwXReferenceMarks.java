@@ -104,7 +104,7 @@ public class SwXReferenceMarks extends TestCase {
         log.println( "creating a test environment" );
         oText = xTextDoc.getText();
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
             UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDoc);
 
         // Creation and insertion of ReferenceMark01
@@ -115,9 +115,9 @@ public class SwXReferenceMarks extends TestCase {
             e.printStackTrace( log );
             throw new StatusException( "Couldn't get ReferenceMark", e);
         }
-        XNamed oObjN = (XNamed) UnoRuntime.queryInterface(XNamed.class, oObj);
+        XNamed oObjN = UnoRuntime.queryInterface(XNamed.class, oObj);
         oObjN.setName(Name);
-        XTextContent oObjTC = (XTextContent)
+        XTextContent oObjTC =
             UnoRuntime.queryInterface(XTextContent.class, oObj);
         XTextCursor oCursor = oText.createTextCursor();
         try {
@@ -135,10 +135,10 @@ public class SwXReferenceMarks extends TestCase {
             e.printStackTrace( log );
             throw new StatusException( "Couldn't get ReferenceMark", e);
         }
-        XNamed oObjN2 = (XNamed) UnoRuntime.queryInterface(XNamed.class, oObj);
+        XNamed oObjN2 = UnoRuntime.queryInterface(XNamed.class, oObj);
         oObjN2.setName(Name2);
 
-        XTextContent oObjTC2 = (XTextContent)
+        XTextContent oObjTC2 =
             UnoRuntime.queryInterface(XTextContent.class, oObj);
         try {
             oText.insertTextContent(oCursor, oObjTC2, false);
@@ -148,7 +148,7 @@ public class SwXReferenceMarks extends TestCase {
         }
 
         // getting ReferenceMarks from text document
-        XReferenceMarksSupplier oRefSupp = (XReferenceMarksSupplier)
+        XReferenceMarksSupplier oRefSupp =
             UnoRuntime.queryInterface(XReferenceMarksSupplier.class, xTextDoc);
         oObj = oRefSupp.getReferenceMarks();
 

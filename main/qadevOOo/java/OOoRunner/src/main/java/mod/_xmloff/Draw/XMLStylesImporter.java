@@ -162,7 +162,7 @@ public class XMLStylesImporter extends TestCase {
 
         final PrintWriter logF = log;
         //obtain style families
-        XStyleFamiliesSupplier styleSup = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier styleSup =
             UnoRuntime.queryInterface (XStyleFamiliesSupplier.class, xDrawDoc) ;
         final XNameAccess StyleFamilies = styleSup.getStyleFamilies();
 
@@ -172,7 +172,7 @@ public class XMLStylesImporter extends TestCase {
                     try {
                         Object objectStyle =
                             StyleFamilies.getByName(impFamilyName);
-                        XNameContainer StyleFamilyName = (XNameContainer)
+                        XNameContainer StyleFamilyName =
                             UnoRuntime.queryInterface
                             (XNameContainer.class, objectStyle);
                         boolean hasStyle =

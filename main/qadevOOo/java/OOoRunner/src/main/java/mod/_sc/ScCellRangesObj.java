@@ -114,7 +114,7 @@ public class ScCellRangesObj extends TestCase {
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
         XComponent oComp =
-            (XComponent) UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
+            UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
 
@@ -150,20 +150,20 @@ public class ScCellRangesObj extends TestCase {
 
         log.println("Getting test object ");
 
-        XComponent oComp = (XComponent)
+        XComponent oComp =
                     UnoRuntime.queryInterface (XComponent.class, xSheetDoc);
 
         oObj = (XInterface)
             SOF.createInstance(oComp, "com.sun.star.sheet.SheetCellRanges");
 
         XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-        XIndexAccess oIndSheets = (XIndexAccess)
+        XIndexAccess oIndSheets =
             UnoRuntime.queryInterface (XIndexAccess.class, oSheets);
         XSpreadsheet oSheet = null;
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
                     new Type(XSpreadsheet.class), oIndSheets.getByIndex(0));
-            XNameContainer oRanges = (XNameContainer)
+            XNameContainer oRanges =
                 UnoRuntime.queryInterface(XNameContainer.class, oObj);
 
             oRange = oSheet.getCellRangeByName("C1:D4");
@@ -232,7 +232,7 @@ public class ScCellRangesObj extends TestCase {
             tEnv.addObjRelation("INSTANCE" + n, oRange);
         }
 
-        XPropertySet PropSet = (XPropertySet)
+        XPropertySet PropSet =
                     UnoRuntime.queryInterface(XPropertySet.class, oObj);
         tEnv.addObjRelation("PropSet",PropSet);
         tEnv.addObjRelation("SHEET", oSheet);

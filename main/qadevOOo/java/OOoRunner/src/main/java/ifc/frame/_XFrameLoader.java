@@ -107,7 +107,7 @@ public class _XFrameLoader extends MultiMethodTest {
 
                 Object oDsk = ((XMultiServiceFactory)tParam.getMSF())
                         .createInstance("com.sun.star.frame.Desktop") ;
-                XDesktop dsk = (XDesktop)
+                XDesktop dsk =
                     UnoRuntime.queryInterface(XDesktop.class, oDsk) ;
 
                 shortWait() ;

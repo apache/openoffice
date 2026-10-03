@@ -68,7 +68,7 @@ public class ServicesHandler implements XPropertyHandler
                 // the OpenHyperlink command, to be dispatched to the Desktop
                 com.sun.star.util.URL dispatchURL[] = { new com.sun.star.util.URL() };
                 dispatchURL[0].Complete = ".uno:OpenHyperlink";
-                com.sun.star.util.XURLTransformer transformer = (com.sun.star.util.XURLTransformer)UnoRuntime.queryInterface(
+                com.sun.star.util.XURLTransformer transformer = UnoRuntime.queryInterface(
                         com.sun.star.util.XURLTransformer.class,
                         m_context.getServiceManager().createInstanceWithContext( "com.sun.star.util.URLTransformer", m_context ) );
                 transformer.parseStrict( dispatchURL );
@@ -135,7 +135,7 @@ public class ServicesHandler implements XPropertyHandler
         descriptor.IndentLevel = 0;
         try
         {
-            XHyperlinkControl hyperlinkControl = (XHyperlinkControl)UnoRuntime.queryInterface(
+            XHyperlinkControl hyperlinkControl = UnoRuntime.queryInterface(
                     XHyperlinkControl.class, _propertyControlFactory.createPropertyControl( PropertyControlType.HyperlinkField, true ) );
             hyperlinkControl.addActionListener( new ClickHandler( m_context,  _propertyName ) );
 
@@ -186,7 +186,7 @@ public class ServicesHandler implements XPropertyHandler
 
     public void inspect(Object _component) throws com.sun.star.lang.NullPointerException
     {
-        XServiceInfo serviceInfo = (XServiceInfo)UnoRuntime.queryInterface( XServiceInfo.class, _component );
+        XServiceInfo serviceInfo = UnoRuntime.queryInterface( XServiceInfo.class, _component );
         if ( serviceInfo != null )
             m_supportedServices = serviceInfo.getSupportedServiceNames();
     }

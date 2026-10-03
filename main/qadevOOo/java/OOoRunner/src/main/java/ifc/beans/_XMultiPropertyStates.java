@@ -130,7 +130,7 @@ public class _XMultiPropertyStates extends MultiMethodTest {
         for(int i = 0; i < names.length; i++) {
             if (!mayBeDef && states[i] != PropertyState.DEFAULT_VALUE ) {
                 propName = names[i];
-                XPropertySet xPropSet = (XPropertySet)
+                XPropertySet xPropSet =
                     UnoRuntime.queryInterface(XPropertySet.class, oObj);
                 XPropertySetInfo xPropSetInfo = xPropSet.getPropertySetInfo();
                 Property prop = null;
@@ -201,7 +201,7 @@ public class _XMultiPropertyStates extends MultiMethodTest {
                 if (!part_result) {
                     log.println("Property '" + names[i] +
                         "' wasn't set to default");
-                    XPropertySet xPropSet = (XPropertySet)
+                    XPropertySet xPropSet =
                         UnoRuntime.queryInterface(XPropertySet.class, oObj);
                     XPropertySetInfo xPropSetInfo =
                         xPropSet.getPropertySetInfo();

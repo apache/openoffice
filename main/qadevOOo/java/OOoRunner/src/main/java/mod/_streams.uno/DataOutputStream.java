@@ -98,10 +98,10 @@ public class DataOutputStream extends TestCase {
 
         oObj = (XInterface) oInterface;
 
-        final XOutputStream xPipeOutput = (XOutputStream)
+        final XOutputStream xPipeOutput =
             UnoRuntime.queryInterface(XOutputStream.class, oPipe);
 
-        XActiveDataSource xDataSource = (XActiveDataSource)
+        XActiveDataSource xDataSource =
             UnoRuntime.queryInterface(XActiveDataSource.class, oObj);
 
         xDataSource.setOutputStream(xPipeOutput);
@@ -129,7 +129,7 @@ public class DataOutputStream extends TestCase {
 
         //add relation for io.XOutputStream
         final XMultiServiceFactory msf = xMSF;
-        final XInputStream xPipeInput = (XInputStream)
+        final XInputStream xPipeInput =
             UnoRuntime.queryInterface(XInputStream.class, oPipe);
         tEnv.addObjRelation("XOutputStream.StreamChecker",
             new ifc.io._XOutputStream.StreamChecker() {
@@ -154,13 +154,13 @@ public class DataOutputStream extends TestCase {
                     try {
                         Object oInStream = msf.createInstance(
                             "com.sun.star.io.DataInputStream");
-                        xInStream = (XInputStream) UnoRuntime.queryInterface
+                        xInStream = UnoRuntime.queryInterface
                             (XInputStream.class, oInStream);
                     } catch(com.sun.star.uno.Exception e) {
                         return null;
                     }
 
-                    XActiveDataSink xDataSink = (XActiveDataSink)
+                    XActiveDataSink xDataSink =
                         UnoRuntime.queryInterface(
                             XActiveDataSink.class, xInStream);
                     xDataSink.setInputStream(xPipeInput);

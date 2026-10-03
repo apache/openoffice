@@ -85,7 +85,7 @@ public class FunctionHelper
 
             // Create special service for parsing of given URL.
             com.sun.star.util.XURLTransformer xParser =
-                (com.sun.star.util.XURLTransformer)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.util.XURLTransformer.class,
                     xOfficeCtx.getServiceManager().createInstanceWithContext(
                         "com.sun.star.util.URLTransformer", xOfficeCtx));
@@ -139,7 +139,7 @@ public class FunctionHelper
         com.sun.star.frame.XFrame xFrame = null;
 
         try{
-            xFrame = (com.sun.star.frame.XFrame)UnoRuntime.queryInterface(
+            xFrame = UnoRuntime.queryInterface(
                 com.sun.star.frame.XFrame.class,
                 xCtx.getServiceManager().createInstanceWithContext(
                     "com.sun.star.frame.Task", xCtx));
@@ -148,7 +148,7 @@ public class FunctionHelper
         if (xFrame==null)
         {
             try{
-                xFrame = (com.sun.star.frame.XFrame)UnoRuntime.queryInterface(
+                xFrame = UnoRuntime.queryInterface(
                     com.sun.star.frame.XFrame.class,
                     xCtx.getServiceManager().createInstanceWithContext(
                         "com.sun.star.frame.Frame", xCtx));
@@ -206,7 +206,7 @@ public class FunctionHelper
         // get access to toolkit of remote office to create the container window of
         // new target frame
         try{
-            xToolkit = (com.sun.star.awt.XToolkit)UnoRuntime.queryInterface(
+            xToolkit = UnoRuntime.queryInterface(
                 com.sun.star.awt.XToolkit.class,
                 xCtx.getServiceManager().createInstanceWithContext(
                     "com.sun.star.awt.Toolkit", xCtx));
@@ -250,7 +250,7 @@ public class FunctionHelper
             // the remote office. Means if this java client and the remote office
             // use the same display!
             com.sun.star.awt.XSystemChildFactory xChildFactory =
-                (com.sun.star.awt.XSystemChildFactory)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.awt.XSystemChildFactory.class, xToolkit);
 
             try
@@ -272,7 +272,7 @@ public class FunctionHelper
                         JavaWindowPeerFake(aParentView);
 
                     com.sun.star.awt.XWindowPeer xParentPeer =
-                        (com.sun.star.awt.XWindowPeer)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             com.sun.star.awt.XWindowPeer.class, aWrapper);
 
                     com.sun.star.awt.WindowDescriptor aDescriptor =
@@ -309,7 +309,7 @@ public class FunctionHelper
 
         // It doesn't matter which way was used to get the window peer.
         // Cast it to the right return interface and return it.
-        xWindow = (com.sun.star.awt.XWindow)UnoRuntime.queryInterface(
+        xWindow = UnoRuntime.queryInterface(
             com.sun.star.awt.XWindow.class,
             xPeer);
 
@@ -363,7 +363,7 @@ public class FunctionHelper
 
             // Insert the new frame in desktop hierarchy.
             // Use XFrames interface to do so. It provides access to the child frame container of that instance.
-            com.sun.star.frame.XFramesSupplier xTreeRoot = (com.sun.star.frame.XFramesSupplier)UnoRuntime.queryInterface(
+            com.sun.star.frame.XFramesSupplier xTreeRoot = UnoRuntime.queryInterface(
                 com.sun.star.frame.XFramesSupplier.class,
                 xCtx.getServiceManager().createInstanceWithContext(
                     "com.sun.star.frame.Desktop", xCtx));
@@ -388,7 +388,7 @@ public class FunctionHelper
                 // After the dispose() call forget all references to this frame and let him die.
                 // If a new exception will occur ... no generell solution exist then.
                 // Nobody can guarantee if next call will work or not.
-                com.sun.star.lang.XComponent xComponent = (com.sun.star.lang.XComponent)UnoRuntime.queryInterface(
+                com.sun.star.lang.XComponent xComponent = UnoRuntime.queryInterface(
                     com.sun.star.lang.XComponent.class,
                     xFrame);
                 xComponent.dispose();
@@ -404,7 +404,7 @@ public class FunctionHelper
             // Without the desktop service that wasn't possible. So no further rollbacks must follow.
             if(xFrame!=null)
             {
-                com.sun.star.lang.XComponent xComponent = (com.sun.star.lang.XComponent)UnoRuntime.queryInterface(
+                com.sun.star.lang.XComponent xComponent = UnoRuntime.queryInterface(
                     com.sun.star.lang.XComponent.class,
                     xFrame);
                 xComponent.dispose();
@@ -446,7 +446,7 @@ public class FunctionHelper
         try
         {
             // Query the frame for right interface which provides access to all available dispatch objects.
-            com.sun.star.frame.XDispatchProvider xProvider = (com.sun.star.frame.XDispatchProvider)UnoRuntime.queryInterface(
+            com.sun.star.frame.XDispatchProvider xProvider = UnoRuntime.queryInterface(
                 com.sun.star.frame.XDispatchProvider.class,
                 xFrame);
 
@@ -504,7 +504,7 @@ public class FunctionHelper
         try
         {
             // Query the frame for right interface which provides access to all available dispatch objects.
-            com.sun.star.frame.XDispatchProvider xProvider = (com.sun.star.frame.XDispatchProvider)UnoRuntime.queryInterface(
+            com.sun.star.frame.XDispatchProvider xProvider = UnoRuntime.queryInterface(
                 com.sun.star.frame.XDispatchProvider.class,
                 xFrame);
 
@@ -512,7 +512,7 @@ public class FunctionHelper
             // Force THIS frame as target for following dispatch.
             // Attention: The interface XNotifyingDispatch is an optional one!
             com.sun.star.frame.XDispatch xDispatcher = xProvider.queryDispatch(aURL,"",0);
-            com.sun.star.frame.XNotifyingDispatch xNotifyingDispatcher = (com.sun.star.frame.XNotifyingDispatch)UnoRuntime.queryInterface(
+            com.sun.star.frame.XNotifyingDispatch xNotifyingDispatcher = UnoRuntime.queryInterface(
                 com.sun.star.frame.XNotifyingDispatch.class,
                 xDispatcher);
 
@@ -564,7 +564,7 @@ public class FunctionHelper
             // Get access to the global component loader of the office
             // for synchronous loading the document.
             com.sun.star.frame.XComponentLoader xLoader =
-                (com.sun.star.frame.XComponentLoader)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XComponentLoader.class,
                     xCtx.getServiceManager().createInstanceWithContext(
                         "com.sun.star.frame.Desktop", xCtx));
@@ -635,18 +635,18 @@ public class FunctionHelper
             // Normally the application documents (text, spreadsheet ...) do so
             // but some other ones (e.g. db components) don't do that.
             // They can't be save then.
-            com.sun.star.frame.XModel xModel = (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
+            com.sun.star.frame.XModel xModel = UnoRuntime.queryInterface(
                 com.sun.star.frame.XModel.class,
                 xDocument);
             if(xModel!=null)
             {
                 // Check for modifications => break save process if there is nothing to do.
-                com.sun.star.util.XModifiable xModified = (com.sun.star.util.XModifiable)UnoRuntime.queryInterface(
+                com.sun.star.util.XModifiable xModified = UnoRuntime.queryInterface(
                     com.sun.star.util.XModifiable.class,
                     xModel);
                 if(xModified.isModified()==true)
                 {
-                    com.sun.star.frame.XStorable xStore = (com.sun.star.frame.XStorable)UnoRuntime.queryInterface(
+                    com.sun.star.frame.XStorable xStore = UnoRuntime.queryInterface(
                         com.sun.star.frame.XStorable.class,
                         xModel);
 
@@ -696,7 +696,7 @@ public class FunctionHelper
             // Well known filter names are used directly. They must exist in current
             // office installation. Otherwise this code will fail. But to prevent
             // this code against missing filters it check for existing state of it.
-            com.sun.star.lang.XServiceInfo xInfo = (com.sun.star.lang.XServiceInfo)
+            com.sun.star.lang.XServiceInfo xInfo =
                 UnoRuntime.queryInterface(com.sun.star.lang.XServiceInfo.class,
                                           xDocument);
 
@@ -720,7 +720,7 @@ public class FunctionHelper
                         OfficeConnect.getOfficeContext();
 
                     com.sun.star.container.XNameAccess xFilterContainer =
-                        (com.sun.star.container.XNameAccess)
+
                         UnoRuntime.queryInterface(
                             com.sun.star.container.XNameAccess.class,
                             xCtx.getServiceManager().createInstanceWithContext(
@@ -748,7 +748,7 @@ public class FunctionHelper
                     lProperties[1].Value = Boolean.TRUE;
 
                     com.sun.star.frame.XStorable xStore =
-                        (com.sun.star.frame.XStorable)UnoRuntime.queryInterface(
+                        UnoRuntime.queryInterface(
                             com.sun.star.frame.XStorable.class, xDocument);
 
                     xStore.storeAsURL(sURL,lProperties);
@@ -790,7 +790,7 @@ public class FunctionHelper
         {
             // Check supported functionality of the document (model or controller).
             com.sun.star.frame.XModel xModel =
-                (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XModel.class, xDocument);
 
             if(xModel!=null)
@@ -799,7 +799,7 @@ public class FunctionHelper
                 // Reset the modify state of it and close it.
                 // Note: Model can disgree by throwing a veto exception.
                 com.sun.star.util.XModifiable xModify =
-                    (com.sun.star.util.XModifiable)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.util.XModifiable.class, xModel);
 
                 xModify.setModified(false);
@@ -811,7 +811,7 @@ public class FunctionHelper
                 // window only. If it's at least a controller - we can try to
                 // suspend him. But - he can disagree with that!
                 com.sun.star.frame.XController xController =
-                    (com.sun.star.frame.XController)UnoRuntime.queryInterface(
+                    UnoRuntime.queryInterface(
                         com.sun.star.frame.XController.class, xDocument);
 
                 if(xController!=null)
@@ -872,7 +872,7 @@ public class FunctionHelper
             // It replace the deprecated XTask::close() and should be preferred ...
             // if it can be queried.
             com.sun.star.util.XCloseable xCloseable =
-                (com.sun.star.util.XCloseable)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.util.XCloseable.class, xFrame);
             if (xCloseable!=null)
             {
@@ -892,7 +892,7 @@ public class FunctionHelper
             else
             {
                 // OK: the new way isn't possible. Try the old one.
-                com.sun.star.frame.XTask xTask = (com.sun.star.frame.XTask)
+                com.sun.star.frame.XTask xTask =
                     UnoRuntime.queryInterface(com.sun.star.frame.XTask.class,
                                               xFrame);
                 if (xTask!=null)
@@ -939,13 +939,13 @@ public class FunctionHelper
         try
         {
             com.sun.star.frame.XFramesSupplier xSupplier =
-                (com.sun.star.frame.XFramesSupplier)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.frame.XFramesSupplier.class,
                     xCtx.getServiceManager().createInstanceWithContext(
                         "com.sun.star.frame.Desktop", xCtx));
 
             com.sun.star.container.XIndexAccess xContainer =
-                (com.sun.star.container.XIndexAccess)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.container.XIndexAccess.class,
                     xSupplier.getFrames());
 

@@ -75,7 +75,7 @@ public class _XRelativeTextContentInsert extends MultiMethodTest {
             XInstCreator para = (XInstCreator)tEnv.getObjRelation( "PARA" );
             XInterface oInt = para.createInstance();
             XTextContent new_content = (XTextContent) oInt;
-            XText theText = (XText)
+            XText theText =
                 UnoRuntime.queryInterface(XText.class,oObj);
             XTextCursor oCursor = theText.createTextCursor();
             XInstCreator info = (XInstCreator)

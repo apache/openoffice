@@ -79,7 +79,7 @@ public class DataSort {
 		scDocument = SCUtil.getSCDocument(scComponent);
 		XSpreadsheet currentsheet = SCUtil.getCurrentSheet(scDocument);
 		XCellRange sourceRange = currentsheet.getCellRangeByName("A1:E8");
-		XCellRangeData sourceData = (XCellRangeData) UnoRuntime.queryInterface(
+		XCellRangeData sourceData = UnoRuntime.queryInterface(
 				XCellRangeData.class, sourceRange);
 		Object[][] Source = { { "Level", "Code", "No.", "Team", "Name" },
 				{ "BS", 20, 4, "B", "Elle" }, { "BS", 20, 6, "C", "Sweet" },
@@ -105,7 +105,7 @@ public class DataSort {
 		aSortDesc[1].Value = new Boolean(true);
 
 		// perform the sorting
-		XSortable xSort = (XSortable) UnoRuntime.queryInterface(
+		XSortable xSort = UnoRuntime.queryInterface(
 				XSortable.class, sourceRange);
 		xSort.sort(aSortDesc);
 
@@ -141,7 +141,7 @@ public class DataSort {
 		scDocument = SCUtil.getSCDocument(scComponent);
 		XSpreadsheet currentsheet = SCUtil.getCurrentSheet(scDocument);
 		XCellRange sourceRange = currentsheet.getCellRangeByName("A1:E8");
-		XCellRangeData sourceData = (XCellRangeData) UnoRuntime.queryInterface(
+		XCellRangeData sourceData = UnoRuntime.queryInterface(
 				XCellRangeData.class, sourceRange);
 		Object[][] Source = { { "Level", "Code", "No.", "Team", "Name" },
 				{ "BS", 20, 4, "B", "Elle" }, { "BS", 20, 6, "C", "Sweet" },
@@ -171,7 +171,7 @@ public class DataSort {
 		aSortDesc[1].Value = new Boolean(true);
 
 		// perform the sorting
-		XSortable xSort = (XSortable) UnoRuntime.queryInterface(
+		XSortable xSort = UnoRuntime.queryInterface(
 				XSortable.class, sourceRange);
 		xSort.sort(aSortDesc);
 
@@ -207,7 +207,7 @@ public class DataSort {
 		scDocument = SCUtil.getSCDocument(scComponent);
 		XSpreadsheet currentsheet = SCUtil.getCurrentSheet(scDocument);
 		XCellRange sourceRange = currentsheet.getCellRangeByName("A1:E8");
-		XCellRangeData sourceData = (XCellRangeData) UnoRuntime.queryInterface(
+		XCellRangeData sourceData = UnoRuntime.queryInterface(
 				XCellRangeData.class, sourceRange);
 		Object[][] Source = { { "Level", "Code", "No.", "Team", "Name" },
 				{ "BS", 20, 4, "B", "Elle" }, { "MS", 20, 6, "C", "Sweet" },
@@ -243,7 +243,7 @@ public class DataSort {
 		aSortDesc[1].Value = new Boolean(true);
 
 		// perform the sorting
-		XSortable xSort = (XSortable) UnoRuntime.queryInterface(
+		XSortable xSort = UnoRuntime.queryInterface(
 				XSortable.class, sourceRange);
 		xSort.sort(aSortDesc);
 
@@ -278,7 +278,7 @@ public class DataSort {
 		scDocument = SCUtil.getSCDocument(scComponent);
 		XSpreadsheet currentsheet = SCUtil.getCurrentSheet(scDocument);
 		XCellRange sourceRange = currentsheet.getCellRangeByName("A1:A8");
-		XCellRangeData sourceData = (XCellRangeData) UnoRuntime.queryInterface(
+		XCellRangeData sourceData = UnoRuntime.queryInterface(
 				XCellRangeData.class, sourceRange);
 		Object[][] source = { { "Fri" }, { "Mon" }, { "Sun" }, { "Wed" },
 				{ "Thu" }, { "Sat" }, { "Tue" }, { "SUN" } };
@@ -324,7 +324,7 @@ public class DataSort {
 		aSortDesc[6].Value = copytoAddress;
 
 		// perform the sorting
-		XSortable xSort = (XSortable) UnoRuntime.queryInterface(
+		XSortable xSort = UnoRuntime.queryInterface(
 				XSortable.class, sourceRange);
 		xSort.sort(aSortDesc);
 

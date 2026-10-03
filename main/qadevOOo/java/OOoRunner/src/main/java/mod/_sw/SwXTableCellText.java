@@ -141,7 +141,7 @@ public class SwXTableCellText extends TestCase {
         }
 
         XCell oCell = oTable.getCellByName("A1");
-        XSimpleText oCellText = (XSimpleText)
+        XSimpleText oCellText =
             UnoRuntime.queryInterface(XSimpleText.class, oCell);
         oCellText.setString("SwXTableCellText");
         oObj = oCellText.getText();

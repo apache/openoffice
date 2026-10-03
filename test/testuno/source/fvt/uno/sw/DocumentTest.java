@@ -76,8 +76,8 @@ public class DocumentTest {
 	public void testNewAndCloseDocument() throws Exception
 	{
 		XComponent component = unoApp.newDocument("swriter");
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
-		XTitle xTitle = (XTitle)UnoRuntime.queryInterface(XTitle.class, textDocument);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, component);
+		XTitle xTitle = UnoRuntime.queryInterface(XTitle.class, textDocument);
 		String title = xTitle.getTitle();
 		Assert.assertEquals("New Document title start with \"Untitled\"",true, title.startsWith("Untitled"));
 		unoApp.closeDocument(component);
@@ -95,12 +95,12 @@ public class DocumentTest {
 	public void testNewDocumentFromTemplate() throws Exception
 	{
 		XComponent component = SWUtil.newDocumentFromTemplate(workingTemplatePath,unoApp);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
-		XTitle xTitle = (XTitle)UnoRuntime.queryInterface(XTitle.class, textDocument);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, component);
+		XTitle xTitle = UnoRuntime.queryInterface(XTitle.class, textDocument);
 		XText xText = textDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.gotoEnd(true);
-		XPropertySet xPropertySet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		String paraStyle = (String)xPropertySet.getPropertyValue("ParaStyleName");
         Assert.assertEquals("new document from template, heading style in template is remained. ", "Heading 1", paraStyle);
         Assert.assertEquals("new document from template, title start with \"Untitled\".", true, xTitle.getTitle().startsWith("Untitled"));
@@ -114,20 +114,20 @@ public class DocumentTest {
 	public void testSaveDocument() throws Exception
 	{
 		XComponent component = unoApp.loadDocument(workingFilePath);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, component);
 		XText xText = textDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.gotoEnd(true);
-		XPropertySet xPropertySet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		xPropertySet.setPropertyValue("ParaStyleName", "Heading 1");
 		SWUtil.save(textDocument);
         unoApp.closeDocument(textDocument);
         component = unoApp.loadDocument(workingFilePath);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, component);
 		xText = textDocument.getText();
 		xTextCursor = xText.createTextCursor();
 		xTextCursor.gotoEnd(true);
-		xPropertySet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
         Assert.assertEquals("Modify plain text to heading 1 style. ", "Heading 1", (String)xPropertySet.getPropertyValue("ParaStyleName"));
 	}
 
@@ -140,10 +140,10 @@ public class DocumentTest {
 	{
 		File saveAsFile = new File(workingFilePath + ".doc");
 		XComponent component = unoApp.loadDocument(workingFilePath);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, component);
 		XText xText = textDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XPropertySet xPropertySet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 
 		xPropertySet.setPropertyValue("ParaStyleName", "Heading 1");
 		xText.insertString(xTextCursor, "test Save odt as doc.", false);
@@ -160,9 +160,9 @@ public class DocumentTest {
 	{
 		File saveAsFile = new File(workingFilePath + ".pdf");
 		XComponent component = unoApp.loadDocument(workingFilePath);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, component);
 
-		XStorable xStorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, component);
+		XStorable xStorable = UnoRuntime.queryInterface(XStorable.class, component);
         PropertyValue[] storeProps = new PropertyValue[3];
 
         storeProps[0] = new PropertyValue();
@@ -191,15 +191,15 @@ public class DocumentTest {
 	{
 		File saveAsFile = new File(workingFilePath + ".ott");
 		XComponent component = unoApp.loadDocument(workingFilePath);
-		textDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, component);
+		textDocument = UnoRuntime.queryInterface(XTextDocument.class, component);
 		XText xText = textDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.gotoEnd(true);
-		XPropertySet xPropertySet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
+		XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 
 		xPropertySet.setPropertyValue("ParaStyleName", "Heading 1");
 
-		XStorable xStorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, component);
+		XStorable xStorable = UnoRuntime.queryInterface(XStorable.class, component);
         xStorable.store();
 
 		PropertyValue[] storeProps = new PropertyValue[3];

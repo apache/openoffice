@@ -71,7 +71,7 @@ public class OfficeAttachment
 			status.setStatus( 1, statusLine );
 			XScriptContext scriptcontext = xsc;
 			XModel xmodel = scriptcontext.getDocument();
-			storedDoc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xmodel);
+			storedDoc = UnoRuntime.queryInterface(XStorable.class, xmodel);
 			// find document name from storedDoc
 			attachmentName = storedDoc.getLocation();
 		}

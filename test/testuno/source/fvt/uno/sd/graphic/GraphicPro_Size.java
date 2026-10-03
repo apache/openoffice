@@ -83,10 +83,10 @@ public class GraphicPro_Size {
 
 	@Before
 	public void setUpDocument() throws Exception {
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(
+		m_xSDComponent = UnoRuntime.queryInterface(
 				XComponent.class, app.newDocument("simpress"));
 		Object drawPage = SDUtil.getPageByIndex(m_xSDComponent, 0);
-		m_xCurrentPage = (XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawPage);
+		m_xCurrentPage = UnoRuntime.queryInterface(XDrawPage.class, drawPage);
 
 		String graphicURL = FileUtil.getUrl(Testspace.prepareData("uno/sd/36.gif"));
 		Size orgSize = getSizePixelOfGraphicFile(app,graphicURL);
@@ -114,10 +114,10 @@ public class GraphicPro_Size {
 	}
 
 	private XDrawPage load(String filePath) throws Exception{
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 				app.loadDocument(filePath));
 		Object drawPage = SDUtil.getPageByIndex(m_xSDComponent, 0);
-		return (XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawPage);
+		return UnoRuntime.queryInterface(XDrawPage.class, drawPage);
 	}
 
 	@Test
@@ -126,7 +126,7 @@ public class GraphicPro_Size {
 		String filePath = Testspace.getPath("temp/"+fileName+"."+m_fileType);
 		Object[] graphics = getGraphicsOfPage(m_xCurrentPage);
 		Object oGraphic = graphics[0];
-		XShape xGraphicShape = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic);
+		XShape xGraphicShape = UnoRuntime.queryInterface(XShape.class, oGraphic);
 
 		xGraphicShape.setSize(m_Size);
 
@@ -135,7 +135,7 @@ public class GraphicPro_Size {
 
 		XDrawPage CurrentPage = load(filePath);
 		Object oGraphic2 = getGraphicsOfPage(CurrentPage)[0];
-		XShape xGraphicShape2 = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic2);
+		XShape xGraphicShape2 = UnoRuntime.queryInterface(XShape.class, oGraphic2);
 
 		assertEquals("Height of graphic error", m_ExpectedSize.Height, xGraphicShape2.getSize().Height, 3);
 		assertEquals("Width of graphic error", m_ExpectedSize.Width, xGraphicShape2.getSize().Width, 3);

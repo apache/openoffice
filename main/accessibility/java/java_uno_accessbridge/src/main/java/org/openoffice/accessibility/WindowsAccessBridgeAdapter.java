@@ -68,7 +68,7 @@ public class WindowsAccessBridgeAdapter {
                         "/singletons/com.sun.star.java.theJavaVirtualMachine");
 
                 if (AnyConverter.isObject(any)) {
-                    XJavaVM xJavaVM = (XJavaVM) UnoRuntime.queryInterface(XJavaVM.class,
+                    XJavaVM xJavaVM = UnoRuntime.queryInterface(XJavaVM.class,
                             AnyConverter.toObject(new Type(XJavaVM.class), any));
 
                     if (xJavaVM != null) {

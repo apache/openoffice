@@ -66,7 +66,7 @@ public class AccessibleEditableTextPara extends TestCase {
         XInterface oObj = null;
 
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -79,7 +79,7 @@ public class AccessibleEditableTextPara extends TestCase {
         XAccessibleContext InputLine = at.getAccessibleObjectForRole(xRoot, AccessibleRole.TEXT_FRAME,"Input line");
         try {
             oObj = InputLine.getAccessibleChild(0);
-            XAccessibleEditableText et = (XAccessibleEditableText) UnoRuntime.queryInterface(XAccessibleEditableText.class, oObj);
+            XAccessibleEditableText et = UnoRuntime.queryInterface(XAccessibleEditableText.class, oObj);
             et.setText("AccessibleEditablePara");
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
 
@@ -88,7 +88,7 @@ public class AccessibleEditableTextPara extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        final XAccessibleEditableText edText = (XAccessibleEditableText)
+        final XAccessibleEditableText edText =
             UnoRuntime.queryInterface(XAccessibleEditableText.class,oObj) ;
 
         tEnv.addObjRelation("EventProducer",
@@ -134,7 +134,7 @@ public class AccessibleEditableTextPara extends TestCase {
 
         try {
             log.println("creating a spreadsheetdocument");
-            xSpreadsheetDoc = (XComponent) UnoRuntime.queryInterface(XComponent.class,SOF.createCalcDoc(null));
+            xSpreadsheetDoc = UnoRuntime.queryInterface(XComponent.class,SOF.createCalcDoc(null));
             shortWait();
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace( log );

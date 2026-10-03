@@ -157,7 +157,7 @@ public class ConnectionAwareClient extends java.awt.Frame
             Object x = _ctx.getServiceManager().createInstanceWithContext(
                 "com.sun.star.connection.Connector", _ctx );
 
-            XConnector xConnector = (XConnector )
+            XConnector xConnector =
                 UnoRuntime.queryInterface(XConnector.class, x);
 
             String a[] = parseUnoUrl( _url );
@@ -172,7 +172,7 @@ public class ConnectionAwareClient extends java.awt.Frame
             x = _ctx.getServiceManager().createInstanceWithContext(
                 "com.sun.star.bridge.BridgeFactory", _ctx );
 
-            XBridgeFactory xBridgeFactory = (XBridgeFactory) UnoRuntime.queryInterface(
+            XBridgeFactory xBridgeFactory = UnoRuntime.queryInterface(
                 XBridgeFactory.class , x );
 
             // create a nameless bridge with no instance provider
@@ -180,7 +180,7 @@ public class ConnectionAwareClient extends java.awt.Frame
             XBridge bridge = xBridgeFactory.createBridge( "" , a[1] , connection , null );
 
             // query for the XComponent interface and add this as event listener
-            XComponent xComponent = (XComponent) UnoRuntime.queryInterface(
+            XComponent xComponent = UnoRuntime.queryInterface(
                 XComponent.class, bridge );
             xComponent.addEventListener( this );
 
@@ -195,12 +195,12 @@ public class ConnectionAwareClient extends java.awt.Frame
             }
 
             // Query the initial object for its main factory interface
-            XMultiComponentFactory xOfficeMultiComponentFactory = ( XMultiComponentFactory )
+            XMultiComponentFactory xOfficeMultiComponentFactory =
                 UnoRuntime.queryInterface( XMultiComponentFactory.class, x );
 
             // retrieve the component context (it's not yet exported from the office)
             // Query for the XPropertySet interface.
-            XPropertySet xProperySet = ( XPropertySet )
+            XPropertySet xProperySet =
                 UnoRuntime.queryInterface( XPropertySet.class, xOfficeMultiComponentFactory );
 
             // Get the default context from the office server.
@@ -209,7 +209,7 @@ public class ConnectionAwareClient extends java.awt.Frame
 
             // Query for the interface XComponentContext.
             XComponentContext xOfficeComponentContext =
-                ( XComponentContext ) UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     XComponentContext.class, oDefaultContext );
 
 
@@ -218,7 +218,7 @@ public class ConnectionAwareClient extends java.awt.Frame
             Object oDesktop = xOfficeMultiComponentFactory.createInstanceWithContext(
                 "com.sun.star.frame.Desktop", xOfficeComponentContext );
 
-            officeComponentLoader = ( XComponentLoader )
+            officeComponentLoader =
                 UnoRuntime.queryInterface( XComponentLoader.class, oDesktop );
 
             if( officeComponentLoader == null )

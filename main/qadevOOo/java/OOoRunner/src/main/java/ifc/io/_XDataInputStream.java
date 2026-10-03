@@ -84,7 +84,7 @@ public class _XDataInputStream extends MultiMethodTest {
     public void before(){
 
         XInterface x = (XInterface)tEnv.getObjRelation("StreamWriter") ;
-        oStream = (XDataOutputStream)UnoRuntime.queryInterface(
+        oStream = UnoRuntime.queryInterface(
                                                     XDataOutputStream.class, x);
         Vector data = (Vector) tEnv.getObjRelation("StreamData") ;
         if (data == null || oStream == null) {

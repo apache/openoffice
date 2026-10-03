@@ -112,10 +112,10 @@ public class CheckBuildInBullet {
 		}
 		else{
 			//create a sd
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));
+			m_xSDComponent = UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));
 			Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 			Object firstTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 0);
-			XShape xfirstTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, firstTextBox);
+			XShape xfirstTextBox = UnoRuntime.queryInterface(XShape.class, firstTextBox);
 			m_xtextProps = addPortion(xfirstTextBox, "test Build-in Bullet", false);
 		}
 	}
@@ -129,11 +129,11 @@ public class CheckBuildInBullet {
 		FileUtil.deleteFile(Testspace.getPath("temp"));
 	}
 	private XPropertySet load() throws Exception{
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 				app.loadDocument(m_filePath));
 		Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 		Object firstTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 0);
-		XShape xfirstTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, firstTextBox);
+		XShape xfirstTextBox = UnoRuntime.queryInterface(XShape.class, firstTextBox);
 		return getPortion(xfirstTextBox, 0);
 	}
 
@@ -142,7 +142,7 @@ public class CheckBuildInBullet {
 
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[2];
@@ -167,7 +167,7 @@ public class CheckBuildInBullet {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);

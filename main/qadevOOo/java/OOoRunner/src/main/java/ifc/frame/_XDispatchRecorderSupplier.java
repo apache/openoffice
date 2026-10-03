@@ -88,7 +88,7 @@ public class _XDispatchRecorderSupplier extends MultiMethodTest {
 
             Object inst = (XInterface)((XMultiServiceFactory)tParam.getMSF()).createInstance
                 ("com.sun.star.frame.Desktop");
-            desktop = (XDesktop) UnoRuntime.queryInterface
+            desktop = UnoRuntime.queryInterface
                 (XDesktop.class, inst);
         } catch ( com.sun.star.uno.Exception e ) {
             // Some exception occurred. FAILED
@@ -171,7 +171,7 @@ public class _XDispatchRecorderSupplier extends MultiMethodTest {
             try {
                 Object inst = ((XMultiServiceFactory) tParam.getMSF()).createInstance
                     ("com.sun.star.comp.framework.DispatchRecorder");
-                recorder = (XDispatchRecorder) UnoRuntime.queryInterface
+                recorder = UnoRuntime.queryInterface
                     (XDispatchRecorder.class, inst);
                 oObj.setDispatchRecorder(recorder);
             } catch (com.sun.star.uno.Exception e) {
@@ -183,10 +183,10 @@ public class _XDispatchRecorderSupplier extends MultiMethodTest {
             Thread.sleep(500);
         } catch (InterruptedException ex) {}
 
-        XModel model = (XModel) UnoRuntime.queryInterface(XModel.class, xTextDoc);
+        XModel model = UnoRuntime.queryInterface(XModel.class, xTextDoc);
         XFrame fr = model.getCurrentController().getFrame();
 
-        XDispatchProvider xDispProv = (XDispatchProvider)
+        XDispatchProvider xDispProv =
             UnoRuntime.queryInterface(XDispatchProvider.class, fr);
 
         URL dispURL = utils.parseURL((XMultiServiceFactory) tParam.getMSF(), ".uno:InsertText");

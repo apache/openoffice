@@ -68,12 +68,12 @@ public class Dispatch extends TestCase {
             SOF = SOfficeFactory.getFactory( xMSF );
             String docPath = util.utils.getFullTestURL( "ExampleSpreadSheetLatest.sxc" );
             XComponent doc = SOF.loadDocument( docPath );
-            XModel model = ( XModel ) UnoRuntime.queryInterface( XModel.class,
+            XModel model = UnoRuntime.queryInterface( XModel.class,
                 doc );
             XFrame frame = model.getCurrentController().getFrame();
             oObj = ( XInterface )xMSF.createInstanceWithArguments( "com.sun.star.comp.ScriptProtocolHandler", new Object[] { frame } );
 
-            XURLTransformer xParser=(XURLTransformer)
+            XURLTransformer xParser=
                 UnoRuntime.queryInterface(XURLTransformer.class,
                     tParam.getMSF().createInstance
                         ("com.sun.star.util.URLTransformer"));

@@ -143,7 +143,7 @@ public class ResourceCreator {
             info.Attributes = 0;
 
             // Create new, empty content (execute command "createNewContent").
-            XContent newContent = ( XContent )UnoRuntime.queryInterface(
+            XContent newContent = UnoRuntime.queryInterface(
                 XContent.class,
                 m_helper.executeCommand( m_content, "createNewContent", info ) );
 

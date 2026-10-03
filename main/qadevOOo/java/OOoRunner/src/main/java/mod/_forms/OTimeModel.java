@@ -211,9 +211,9 @@ public class OTimeModel extends GenericModelTest {
             }
 
             public void commit() throws com.sun.star.sdbc.SQLException {
-                XBoundComponent bound = (XBoundComponent) UnoRuntime.queryInterface(
+                XBoundComponent bound = UnoRuntime.queryInterface(
                                                 XBoundComponent.class, ctrl);
-                XResultSetUpdate update = (XResultSetUpdate) UnoRuntime.queryInterface(
+                XResultSetUpdate update = UnoRuntime.queryInterface(
                                                   XResultSetUpdate.class,
                                                   formLoaderF);
 

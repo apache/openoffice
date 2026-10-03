@@ -83,7 +83,7 @@ public class _XSheetAnnotationAnchor extends MultiMethodTest {
     * Returns <b>true</b> if the method returns <code>true</code>.
     */
     protected boolean check_getIsVisible() {
-      XSimpleText oText  = (XSimpleText)
+      XSimpleText oText  =
         UnoRuntime.queryInterface(XSimpleText.class, anno);
       oText.setString("XSheetAnnotation");
       anno.setIsVisible(true);
@@ -109,7 +109,7 @@ public class _XSheetAnnotationAnchor extends MultiMethodTest {
     */
     protected boolean check_setIsVisible() {
       boolean bResult = true;
-      XSimpleText oText  = (XSimpleText)
+      XSimpleText oText  =
           UnoRuntime.queryInterface(XSimpleText.class, anno);
       oText.setString("XSheetAnnotation");
       anno.setIsVisible(false);

@@ -82,7 +82,7 @@ public class SwAccessibleFooterView extends TestCase {
         XNameAccess PageStyles = null;
         XStyle StdStyle = null;
 
-        XStyleFamiliesSupplier StyleFam = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, xTextDoc);
         XNameAccess StyleFamNames = StyleFam.getStyleFamilies();
 
@@ -103,7 +103,7 @@ public class SwAccessibleFooterView extends TestCase {
             throw new StatusException("Error getting style by name!", e);
         }
 
-        final XPropertySet PropSet = (XPropertySet)
+        final XPropertySet PropSet =
             UnoRuntime.queryInterface( XPropertySet.class, StdStyle);
 
         // changing/getting some properties
@@ -114,7 +114,7 @@ public class SwAccessibleFooterView extends TestCase {
             //change zoom value to 10%
             //footer should be in the vissible area of the document
             XController xController = xTextDoc.getCurrentController();
-            XViewSettingsSupplier xViewSetSup = (XViewSettingsSupplier)
+            XViewSettingsSupplier xViewSetSup =
                 UnoRuntime.queryInterface(XViewSettingsSupplier.class,
                 xController);
             XPropertySet xPropSet = xViewSetSup.getViewSettings();
@@ -133,7 +133,7 @@ public class SwAccessibleFooterView extends TestCase {
             throw new StatusException("Couldn't set propertyValue...", e);
         }
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         AccessibilityTools at = new AccessibilityTools();

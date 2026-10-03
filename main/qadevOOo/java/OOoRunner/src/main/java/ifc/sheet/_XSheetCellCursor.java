@@ -72,7 +72,7 @@ public class _XSheetCellCursor extends MultiMethodTest {
     public void _collapseToCurrentArray() {
         boolean bResult = false;
 
-        XCellRangeAddressable crAddr = (XCellRangeAddressable)
+        XCellRangeAddressable crAddr =
             UnoRuntime.queryInterface(XCellRangeAddressable.class, oObj);
         CellRangeAddress addr = crAddr.getRangeAddress() ;
         int leftCol = addr.StartColumn ;
@@ -95,7 +95,7 @@ public class _XSheetCellCursor extends MultiMethodTest {
         }
 
         log.println("DB: Successfully new range created");
-        XArrayFormulaRange arrFormulaRange = (XArrayFormulaRange)
+        XArrayFormulaRange arrFormulaRange =
             UnoRuntime.queryInterface (XArrayFormulaRange.class, new_range);
         // write a simple formula (this array assigns another array)
         arrFormulaRange.setArrayFormula("A1:A" + height) ;
@@ -105,9 +105,9 @@ public class _XSheetCellCursor extends MultiMethodTest {
         oObj.collapseToCurrentArray() ;
 
         // check the size of result range
-        int cols = ( (XColumnRowRange)UnoRuntime.queryInterface(
+        int cols = ( UnoRuntime.queryInterface(
                   XColumnRowRange.class, oObj) ).getColumns().getCount();
-        int rows = ( (XColumnRowRange)UnoRuntime.queryInterface(
+        int rows = ( UnoRuntime.queryInterface(
                   XColumnRowRange.class, oObj) ).getRows().getCount();
 
         if (cols == 1 && rows == height) {
@@ -129,7 +129,7 @@ public class _XSheetCellCursor extends MultiMethodTest {
             bResult = false ;
             log.println(
                 "Array formula hasn't been cleared with setArrayFormula(\"\")");
-            XSheetOperation clearRange = (XSheetOperation)
+            XSheetOperation clearRange =
                 UnoRuntime.queryInterface (XSheetOperation.class, new_range);
             int allFlags =
                 CellFlags.ANNOTATION | CellFlags.DATETIME | CellFlags.EDITATTR;
@@ -158,13 +158,13 @@ public class _XSheetCellCursor extends MultiMethodTest {
         int leftCol = -1, topRow = -1;
 
         XSpreadsheet oSheet = oObj.getSpreadsheet();
-        ((XSheetOperation) UnoRuntime.queryInterface(
+        (UnoRuntime.queryInterface(
             XSheetOperation.class, oSheet) ).clearContents(65535);
         oObj.collapseToCurrentRegion();
-        int cols = ((XColumnRowRange)
+        int cols = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getColumns().getCount();
-        int rows = ((XColumnRowRange)
+        int rows = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getRows().getCount();
 
@@ -190,10 +190,10 @@ public class _XSheetCellCursor extends MultiMethodTest {
                 oObj.collapseToCurrentRegion() ;
 
                 // checking results
-                cols = ((XColumnRowRange)
+                cols = (
                     UnoRuntime.queryInterface(
                         XColumnRowRange.class, oObj)).getColumns().getCount();
-                rows = ((XColumnRowRange)
+                rows = (
                     UnoRuntime.queryInterface(
                         XColumnRowRange.class, oObj)).getRows().getCount();
 
@@ -242,7 +242,7 @@ public class _XSheetCellCursor extends MultiMethodTest {
             bResult = false;
         }
 
-        XMergeable mergeRange = (XMergeable)
+        XMergeable mergeRange =
             UnoRuntime.queryInterface (XMergeable.class, newRange);
         if (mergeRange == null) {
             log.println("DB: newRange doesn't implement XMergeable interface");
@@ -261,10 +261,10 @@ public class _XSheetCellCursor extends MultiMethodTest {
         log.println("DB: Successfully unmerged.") ;
 
         // checking results
-        int cols = ((XColumnRowRange)
+        int cols = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getColumns().getCount();
-        int rows = ((XColumnRowRange)
+        int rows = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getRows().getCount();
         log.println("DB: Column and row numbers successfully get") ;
@@ -299,10 +299,10 @@ public class _XSheetCellCursor extends MultiMethodTest {
         oObj.collapseToSize (width + 3, height + 3);
 
         // checking results
-        int cols = ((XColumnRowRange)
+        int cols = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getColumns().getCount();
-        int rows = ((XColumnRowRange)
+        int rows = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getRows().getCount();
 
@@ -336,10 +336,10 @@ public class _XSheetCellCursor extends MultiMethodTest {
         oObj.expandToEntireColumns () ;
 
         // checking results
-        int cols = ((XColumnRowRange)
+        int cols = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getColumns().getCount();
-        int rows = ((XColumnRowRange)
+        int rows = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getRows().getCount();
 
@@ -373,10 +373,10 @@ public class _XSheetCellCursor extends MultiMethodTest {
         oObj.expandToEntireRows () ;
 
         // checking results
-        int cols = ((XColumnRowRange)
+        int cols = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getColumns().getCount();
-        int rows = ((XColumnRowRange)
+        int rows = (
             UnoRuntime.queryInterface(
                 XColumnRowRange.class, oObj) ).getRows().getCount();
 

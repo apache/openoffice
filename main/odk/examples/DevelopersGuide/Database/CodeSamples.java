@@ -114,7 +114,7 @@ public class CodeSamples
 		{
 			System.out.println("Connection was created!");
 			// now we dispose the connection to close it
-			XComponent xComponent = (XComponent)UnoRuntime.queryInterface(XComponent.class,con);
+			XComponent xComponent = UnoRuntime.queryInterface(XComponent.class,con);
 			if(xComponent != null)
 			{
 				// connections must be disposed
@@ -136,7 +136,7 @@ public class CodeSamples
                                            xContext);
 		// query for the interface
 		com.sun.star.sdbc.XDriverManager xDriverManager;
-		xDriverManager = (XDriverManager)UnoRuntime.queryInterface(XDriverManager.class,driverManager);
+		xDriverManager = UnoRuntime.queryInterface(XDriverManager.class,driverManager);
 		if(xDriverManager != null)
 		{
 			// first create the needed url
@@ -164,7 +164,7 @@ public class CodeSamples
                                            xContext);
 		// query for the interface
 		com.sun.star.sdbc.XDriver xDriver;
-		xDriver = (XDriver)UnoRuntime.queryInterface(XDriver.class,aDriver);
+		xDriver = UnoRuntime.queryInterface(XDriver.class,aDriver);
 		if(xDriver != null)
 		{
 			// first create the needed url
@@ -186,7 +186,7 @@ public class CodeSamples
 	public static void printDataSources() throws com.sun.star.uno.Exception
 	{
 		// create a DatabaseContext and print all DataSource names
-		XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface(
+		XNameAccess xNameAccess = UnoRuntime.queryInterface(
             XNameAccess.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.DatabaseContext",
                                            xContext));
@@ -200,7 +200,7 @@ public class CodeSamples
 	{
 		XDatabaseMetaData dm = con.getMetaData();
 		XResultSet rsTables = dm.getTables(null,"%","SALES",null);
-		XRow       rowTB = (XRow)UnoRuntime.queryInterface(XRow.class, rsTables);
+		XRow       rowTB = UnoRuntime.queryInterface(XRow.class, rsTables);
 		while ( rsTables.next() )
 		{
 			String catalog = rowTB.getString( 1 );
@@ -216,7 +216,7 @@ public class CodeSamples
 			System.out.println("Catalog: " + catalog + " Schema: " + schema + " Table: " + table + " Type: " + type);
 			System.out.println("------------------ Columns ------------------");
 			XResultSet rsColumns = dm.getColumns(catalog,schema,table,"%");
-			XRow       rowCL = (XRow)UnoRuntime.queryInterface(XRow.class, rsColumns);
+			XRow       rowCL = UnoRuntime.queryInterface(XRow.class, rsColumns);
 			while ( rsColumns.next() )
 			{
 				System.out.println("Column: " + rowCL.getString( 4 ) + " Type: " + rowCL.getInt( 5 ) + " TypeName: " + rowCL.getString( 6 ) );
@@ -259,25 +259,25 @@ public class CodeSamples
 	// creates a new query definition
 	public static void createQuerydefinition() throws com.sun.star.uno.Exception
 	{
-		XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface(
+		XNameAccess xNameAccess = UnoRuntime.queryInterface(
             XNameAccess.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.DatabaseContext",
                                            xContext));
 		// we use the first datasource
-		XQueryDefinitionsSupplier xQuerySup = (XQueryDefinitionsSupplier)
+		XQueryDefinitionsSupplier xQuerySup =
 											UnoRuntime.queryInterface(XQueryDefinitionsSupplier.class,
 											xNameAccess.getByName( "Bibliography" ));
 		XNameAccess xQDefs = xQuerySup.getQueryDefinitions();
 		// create new query definition
-		XSingleServiceFactory xSingleFac =	(XSingleServiceFactory)
+		XSingleServiceFactory xSingleFac =
 											UnoRuntime.queryInterface(XSingleServiceFactory.class, xQDefs);
 
-		XPropertySet xProp = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xProp = UnoRuntime.queryInterface(
             XPropertySet.class,xSingleFac.createInstance());
 		xProp.setPropertyValue("Command","SELECT * FROM biblio");
 		xProp.setPropertyValue("EscapeProcessing",new Boolean(true));
 
-		XNameContainer xCont = (XNameContainer) UnoRuntime.queryInterface(XNameContainer.class, xQDefs);
+		XNameContainer xCont = UnoRuntime.queryInterface(XNameContainer.class, xQDefs);
                 try
                 {
                     if ( xCont.hasByName("Query1") )
@@ -286,29 +286,29 @@ public class CodeSamples
                 catch(com.sun.star.uno.Exception e)
                 {}
 		xCont.insertByName("Query1",xProp);
-		XDocumentDataSource xDs = (XDocumentDataSource)UnoRuntime.queryInterface(XDocumentDataSource.class, xQuerySup);
+		XDocumentDataSource xDs = UnoRuntime.queryInterface(XDocumentDataSource.class, xQuerySup);
 
-        XStorable xStore = (XStorable)UnoRuntime.queryInterface(XStorable.class,xDs.getDatabaseDocument());
+        XStorable xStore = UnoRuntime.queryInterface(XStorable.class,xDs.getDatabaseDocument());
         xStore.store();
 	}
 
 	// prints all column names from Query1
 	public static void printQueryColumnNames() throws com.sun.star.uno.Exception
 	{
-		XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface(
+		XNameAccess xNameAccess = UnoRuntime.queryInterface(
             XNameAccess.class,
             xMCF.createInstanceWithContext("com.sun.star.sdb.DatabaseContext",
                                            xContext));
 		// we use the first datasource
-		XDataSource xDS = (XDataSource)UnoRuntime.queryInterface(
+		XDataSource xDS = UnoRuntime.queryInterface(
             XDataSource.class, xNameAccess.getByName( "Bibliography" ));
 		XConnection con = xDS.getConnection("","");
-		XQueriesSupplier xQuerySup = (XQueriesSupplier)
+		XQueriesSupplier xQuerySup =
 											UnoRuntime.queryInterface(XQueriesSupplier.class, con);
 
 		XNameAccess xQDefs = xQuerySup.getQueries();
 
-		XColumnsSupplier xColsSup = (XColumnsSupplier) UnoRuntime.queryInterface(
+		XColumnsSupplier xColsSup = UnoRuntime.queryInterface(
             XColumnsSupplier.class,xQDefs.getByName("Query1"));
 		XNameAccess xCols = xColsSup.getColumns();
 		String aNames [] = xCols.getElementNames();

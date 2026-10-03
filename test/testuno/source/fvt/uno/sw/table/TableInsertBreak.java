@@ -56,23 +56,23 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertPage_BeforeBreak_Split_KeepTogether() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
 		//insert page break for table
-		XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		assertEquals("assert default split",true,xCursorProps.getPropertyValue("Split"));
 		assertEquals("assert default keep_together",false,xCursorProps.getPropertyValue("KeepTogether"));
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("Split",false);
 		xCursorProps.setPropertyValue("KeepTogether",true);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -82,7 +82,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -94,24 +94,24 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert table break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert table split",false,xCursorProps_Assert_odt.getPropertyValue("Split"));
 		assertEquals("assert table keep_tpgether",true,xCursorProps_Assert_odt.getPropertyValue("KeepTogether"));
 
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert table break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert table split",false,xCursorProps_Assert_doc.getPropertyValue("Split"));
@@ -120,19 +120,19 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertPage_AfterBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		//set table break type
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_AFTER);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -142,7 +142,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -154,40 +154,40 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_AFTER,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_AFTER,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 	}
 	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertColumn_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.COLUMN_BEFORE);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -197,7 +197,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -209,40 +209,40 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.COLUMN_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.COLUMN_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 	}
 	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertColumn_AfterBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.COLUMN_AFTER);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -252,7 +252,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -264,42 +264,42 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.COLUMN_AFTER,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify table break
 		assertEquals("assert table break",com.sun.star.style.BreakType.COLUMN_AFTER,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 	}
 	@Test@Ignore("Bug #120719 - [testUNO patch]the page_after break change to page_before break when save to doc.")
 	public void InsertPage_Endnote_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Endnote");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -309,7 +309,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -321,23 +321,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Endnote",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Endnote",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -347,20 +347,20 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Envelop_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Envelope");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -370,7 +370,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -382,23 +382,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Envelope",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Envelope",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -408,20 +408,20 @@ public class TableInsertBreak {
 	@Test
 	public void InsertPage_Firstpage_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","First Page");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -431,7 +431,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -443,23 +443,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","First Page",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","First Page",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -468,20 +468,20 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Footnote_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Footnote");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -491,7 +491,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -503,23 +503,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Footnote",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Footnote",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -528,20 +528,20 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_HTML_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","HTML");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -551,7 +551,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -563,23 +563,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","HTML",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","HTML",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -588,20 +588,20 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Index_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Index");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -611,7 +611,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -623,23 +623,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Index",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Index",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -648,20 +648,20 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_Landscape_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Landscape");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -671,7 +671,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -683,23 +683,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Landscape",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Landscape",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -708,20 +708,20 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_LeftPage_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Left Page");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -731,7 +731,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -743,23 +743,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Left Page",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Left Page",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));
@@ -768,20 +768,20 @@ public class TableInsertBreak {
 	@Test@Ignore("Bug #120721 - [testUNO patch]the page_endnote_break type change to page_default_break when save to doc.")
 	public void InsertPage_RightPage_BeforeBreak() throws Exception {
 
-		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
+		xTextDocument =UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
 		xText=xTextDocument.getText();
 		XTextCursor xTextCursor = xText.createTextCursor();
 		// get internal service factory of the document
-		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
+		xWriterFactory =UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
-		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
+		XTextTable xTable = UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
+		XPropertySet xCursorProps = UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Right Page");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
 		//save to odt
-		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_odt = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
 		aStoreProperties_odt[1] = new PropertyValue();
@@ -791,7 +791,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
 		//save to doc
-		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
+		XStorable xStorable_doc = UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
 		aStoreProperties_doc[1] = new PropertyValue();
@@ -803,23 +803,23 @@ public class TableInsertBreak {
 		app.closeDocument(xTextDocument);
 
 		//reopen the document
-		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
-		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
-		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
+		XTextDocument assertDocument_odt=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
+		XTextTablesSupplier xTablesSupplier_odt = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
+		XIndexAccess xIndexedTables_odt = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
 		Object xTable_obj_odt=xIndexedTables_odt.getByIndex(0);
-		XTextTable xTable_Assert_odt=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
-		XPropertySet xCursorProps_Assert_odt = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
+		XTextTable xTable_Assert_odt=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_odt);
+		XPropertySet xCursorProps_Assert_odt = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_odt);
 		//verify paragraph break
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_odt.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Right Page",xCursorProps_Assert_odt.getPropertyValue("PageDescName"));
 		assertEquals("assert paragraph break",(short)3,xCursorProps_Assert_odt.getPropertyValue("PageNumberOffset"));
 		//reopen the doc document and assert table break
-		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
-		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
-		XIndexAccess xIndexedTables_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
+		XTextDocument assertDocument_doc=UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
+		XTextTablesSupplier xTablesSupplier_doc = UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc );
+		XIndexAccess xIndexedTables_doc = UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_doc.getTextTables());
 		Object xTable_obj_doc=xIndexedTables_doc.getByIndex(0);
-		XTextTable xTable_Assert_doc=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
-		XPropertySet xCursorProps_Assert_doc = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
+		XTextTable xTable_Assert_doc=UnoRuntime.queryInterface(XTextTable.class, xTable_obj_doc);
+		XPropertySet xCursorProps_Assert_doc = UnoRuntime.queryInterface(XPropertySet.class,xTable_Assert_doc);
 		//verify paragraph background color
 		assertEquals("assert paragraph break",com.sun.star.style.BreakType.PAGE_BEFORE,xCursorProps_Assert_doc.getPropertyValue("BreakType"));
 		assertEquals("assert paragraph break","Right Page",xCursorProps_Assert_doc.getPropertyValue("PageDescName"));

@@ -126,14 +126,14 @@ public class SwXStyleFamily extends TestCase {
         log.println( "Creating Test Environment..." );
 
         SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)Param.getMSF());
-        XComponent xComp = (XComponent)
+        XComponent xComp =
             UnoRuntime.queryInterface(XComponent.class, xTextDoc);
         XInterface oInstance = (XInterface)
             SOF.createInstance(xComp, "com.sun.star.style.CharacterStyle");
-        XStyleFamiliesSupplier oSFsS = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier oSFsS =
                 UnoRuntime.queryInterface(XStyleFamiliesSupplier.class, xTextDoc);
         XNameAccess oSF = oSFsS.getStyleFamilies();
-        XIndexAccess oSFIA = (XIndexAccess)
+        XIndexAccess oSFIA =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSF);
 
         try {
@@ -150,7 +150,7 @@ public class SwXStyleFamily extends TestCase {
             throw new StatusException("Unexpected exception. ", e);
         }
 
-        XNameContainer oContainer = (XNameContainer)
+        XNameContainer oContainer =
             UnoRuntime.queryInterface(XNameContainer.class, oSFNA);
 
         // insert a Style which can be replaced by name

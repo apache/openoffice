@@ -929,7 +929,7 @@ public class ViewForwarder {
         System.out.println("*****************");
 
 
-/*        XAccessibleContext accCtx = (XAccessibleContext)
+/*        XAccessibleContext accCtx =
                 UnoRuntime.queryInterface(XAccessibleContext.class, oObj);
         try {
             System.out.println("Children now: " + accCtx.getAccessibleChild(0).getAccessibleContext().getAccessibleChildCount());

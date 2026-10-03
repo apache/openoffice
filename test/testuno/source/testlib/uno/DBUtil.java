@@ -92,7 +92,7 @@ public class DBUtil {
 						m_databaseDocument.getDataSource());
 		dsProperties.setPropertyValue("URL", "sdbc:embedded:hsqldb");
 
-		final XStorable storable = (XStorable) UnoRuntime.queryInterface(
+		final XStorable storable = UnoRuntime.queryInterface(
 				XStorable.class, m_databaseDocument);
 		storable.storeAsURL(m_databaseDocumentFile,
 				new PropertyValue[] { new PropertyValue("PickListEntry", 0,
@@ -103,10 +103,10 @@ public class DBUtil {
 	public static void getDocument(final String _docURL) throws Exception {
 		m_databaseDocumentFile = _docURL;
 
-		final XNameAccess dbContext = (XNameAccess) UnoRuntime.queryInterface(
+		final XNameAccess dbContext = UnoRuntime.queryInterface(
 				XNameAccess.class,
 				m_orb.createInstance("com.sun.star.sdb.DatabaseContext"));
-		final XDocumentDataSource dataSource = (XDocumentDataSource) UnoRuntime.queryInterface(
+		final XDocumentDataSource dataSource = UnoRuntime.queryInterface(
 				XDocumentDataSource.class, dbContext.getByName(_docURL));
 
 		m_databaseDocument = dataSource.getDatabaseDocument();
@@ -259,7 +259,7 @@ public class DBUtil {
 	 */
 	static public void close() {
 		// close connection
-		final XCloseable closeConn = (XCloseable) UnoRuntime.queryInterface(
+		final XCloseable closeConn = UnoRuntime.queryInterface(
 				XCloseable.class, m_connection != null ? m_connection : null);
 		if (closeConn != null) {
 			try {

@@ -46,7 +46,7 @@ public class sdbcx
 					test.createConnection();
 					test.displayTableProperties();
 					// now we dispose the connection to close it
-					XComponent xComponent = (XComponent)UnoRuntime.queryInterface(XComponent.class,con);
+					XComponent xComponent = UnoRuntime.queryInterface(XComponent.class,con);
 					if(xComponent != null)
 				{
 					xComponent.dispose();
@@ -70,12 +70,12 @@ public class sdbcx
 
 		// create a connector, so that it can contact the office
 		Object xUrlResolver = xLocalServiceManager.createInstance( "com.sun.star.bridge.UnoUrlResolver" );
-		XUnoUrlResolver urlResolver = (XUnoUrlResolver)UnoRuntime.queryInterface(
+		XUnoUrlResolver urlResolver = UnoRuntime.queryInterface(
 			XUnoUrlResolver.class, xUrlResolver );
 
 		Object rInitialObject = urlResolver.resolve( "uno:" + connectStr + ";urp;StarOffice.NamingService" );
 
-		XNamingService rName = (XNamingService)UnoRuntime.queryInterface(
+		XNamingService rName = UnoRuntime.queryInterface(
 			XNamingService.class, rInitialObject );
 
 		XMultiServiceFactory xMSF = null;
@@ -83,7 +83,7 @@ public class sdbcx
 			System.err.println( "got the remote naming service !" );
 			Object rXsmgr = rName.getRegisteredObject("StarOffice.ServiceManager" );
 
-			xMSF = (XMultiServiceFactory)
+			xMSF =
 				UnoRuntime.queryInterface( XMultiServiceFactory.class, rXsmgr );
 		}
 
@@ -102,7 +102,7 @@ public class sdbcx
 		Object aDriver = xORB.createInstance("com.sun.star.comp.sdbcx.adabas.ODriver");
 		// query for the interface
 		com.sun.star.sdbc.XDriver xDriver;
-		xDriver = (XDriver)UnoRuntime.queryInterface(XDriver.class,aDriver);
+		xDriver = UnoRuntime.queryInterface(XDriver.class,aDriver);
 		if(xDriver != null)
 		{
 			// first create the needed URL
@@ -120,7 +120,7 @@ public class sdbcx
 			{
 				System.out.println("Connection could be created!");
 				// we the XDatabaseDefinitionSupplier interface from the driver to get the XTablesSupplier
-				XDataDefinitionSupplier xDDSup = (XDataDefinitionSupplier)UnoRuntime.queryInterface(
+				XDataDefinitionSupplier xDDSup = UnoRuntime.queryInterface(
 						XDataDefinitionSupplier.class,xDriver);
 				if(xDDSup != null)
 				{
@@ -150,7 +150,7 @@ public class sdbcx
 		if(0 != aTableNames.length)
 		{
 			Object table = xTables.getByName(aTableNames[0]);
-			XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,table);
+			XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,table);
 			System.out.println("Name:          " + xProp.getPropertyValue("Name"));
 			System.out.println("CatalogName:   " + xProp.getPropertyValue("CatalogName"));
 			System.out.println("SchemaName:    " + xProp.getPropertyValue("SchemaName"));
@@ -182,7 +182,7 @@ public class sdbcx
 	public static void printKeys(XColumnsSupplier xColumnsSup) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example printKeys");
-		XKeysSupplier xKeysSup = (XKeysSupplier)UnoRuntime.queryInterface(XKeysSupplier.class,xColumnsSup);
+		XKeysSupplier xKeysSup = UnoRuntime.queryInterface(XKeysSupplier.class,xColumnsSup);
 		if(xKeysSup != null)
 		{
 			System.out.println("--- Keys ---");
@@ -190,9 +190,9 @@ public class sdbcx
 			for ( int i =0; i < xKeys.getCount(); i++)
 			{
 				Object key = xKeys.getByIndex(i);
-				XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,key);
+				XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,key);
 				System.out.println("    " + xProp.getPropertyValue("Name"));
-				XColumnsSupplier xKeyColumnsSup = ( XColumnsSupplier ) UnoRuntime.queryInterface(XColumnsSupplier.class,xProp);
+				XColumnsSupplier xKeyColumnsSup = UnoRuntime.queryInterface(XColumnsSupplier.class,xProp);
 				printColumns(xKeyColumnsSup);
 			}
 		}
@@ -204,7 +204,7 @@ public class sdbcx
 	public static void printIndexes(XColumnsSupplier xColumnsSup) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example printIndexes");
-		XIndexesSupplier xIndexesSup = (XIndexesSupplier)UnoRuntime.queryInterface(XIndexesSupplier.class,xColumnsSup);
+		XIndexesSupplier xIndexesSup = UnoRuntime.queryInterface(XIndexesSupplier.class,xColumnsSup);
 		if(xIndexesSup != null)
 		{
 			System.out.println("--- Indexes ---");
@@ -214,7 +214,7 @@ public class sdbcx
 			{
 				System.out.println("    " + aIndexNames[i]);
 				Object index = xIndexs.getByName(aIndexNames[i]);
-				XColumnsSupplier xIndexColumnsSup = (XColumnsSupplier)UnoRuntime.queryInterface(XColumnsSupplier.class,index);
+				XColumnsSupplier xIndexColumnsSup = UnoRuntime.queryInterface(XColumnsSupplier.class,index);
 				printColumns(xIndexColumnsSup);
 			}
 		}
@@ -227,7 +227,7 @@ public class sdbcx
 	public static void printColumnProperties(Object column) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example printColumnProperties");
-		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,column);
+		XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,column);
 		System.out.println("Name:            " + xProp.getPropertyValue("Name"));
 		System.out.println("Type:            " + xProp.getPropertyValue("Type"));
 		System.out.println("TypeName:        " + xProp.getPropertyValue("TypeName"));
@@ -252,7 +252,7 @@ public class sdbcx
 	public static void printIndexProperties(Object index) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example printIndexProperties");
-		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,index);
+		XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,index);
 		System.out.println("Name:              " + xProp.getPropertyValue("Name"));
 		System.out.println("Catalog:           " + xProp.getPropertyValue("Catalog"));
 		System.out.println("IsUnique:          " + xProp.getPropertyValue("IsUnique"));
@@ -267,7 +267,7 @@ public class sdbcx
 	public static void printKeyProperties(Object key) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example printKeyProperties");
-		XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,key);
+		XPropertySet xProp = UnoRuntime.queryInterface(XPropertySet.class,key);
 		System.out.println("Name:            " + xProp.getPropertyValue("Name"));
 		System.out.println("Type:            " + xProp.getPropertyValue("Type"));
 		System.out.println("ReferencedTable: " + xProp.getPropertyValue("ReferencedTable"));
@@ -282,7 +282,7 @@ public class sdbcx
 	public static void printGroups(XTablesSupplier xTabSup) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example printGroups");
-		XGroupsSupplier xGroupsSup = (XGroupsSupplier)UnoRuntime.queryInterface(XGroupsSupplier.class,xTabSup);
+		XGroupsSupplier xGroupsSup = UnoRuntime.queryInterface(XGroupsSupplier.class,xTabSup);
 		if(xGroupsSup != null)
 		{
 			// the table must be at least support a XColumnsSupplier interface
@@ -292,10 +292,10 @@ public class sdbcx
 			for ( int i =0; i < aGroupNames.length; i++)
 			{
 				System.out.println("    " + aGroupNames[i]);
-				XUsersSupplier xUsersSup = (XUsersSupplier)UnoRuntime.queryInterface(XUsersSupplier.class,xGroups.getByName(aGroupNames[i]));
+				XUsersSupplier xUsersSup = UnoRuntime.queryInterface(XUsersSupplier.class,xGroups.getByName(aGroupNames[i]));
 				if(xUsersSup != null)
 				{
-					XAuthorizable xAuth = (XAuthorizable)UnoRuntime.queryInterface(XAuthorizable.class,xUsersSup);
+					XAuthorizable xAuth = UnoRuntime.queryInterface(XAuthorizable.class,xUsersSup);
 					// the table must be at least support a XColumnsSupplier interface
 					System.out.println("\t--- Users ---");
 					XNameAccess xUsers = xUsersSup.getUsers();
@@ -316,7 +316,7 @@ public class sdbcx
 	public static void createTableSalesMen(XNameAccess xTables) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example createTableSalesMen");
-		XDataDescriptorFactory xTabFac = (XDataDescriptorFactory)UnoRuntime.queryInterface(XDataDescriptorFactory.class,xTables);
+		XDataDescriptorFactory xTabFac = UnoRuntime.queryInterface(XDataDescriptorFactory.class,xTables);
 		if(xTabFac != null)
 		{
 			// create the new table
@@ -324,9 +324,9 @@ public class sdbcx
 			// set the name of the new table
 			xTable.setPropertyValue("Name","SALESMAN");
 			// append the columns
-			XColumnsSupplier xColumSup = (XColumnsSupplier)UnoRuntime.queryInterface(XColumnsSupplier.class,xTable);
-			XDataDescriptorFactory xColFac = (XDataDescriptorFactory)UnoRuntime.queryInterface(XDataDescriptorFactory.class,xColumSup.getColumns());
-			XAppend xAppend = (XAppend)UnoRuntime.queryInterface(XAppend.class,xColFac);
+			XColumnsSupplier xColumSup = UnoRuntime.queryInterface(XColumnsSupplier.class,xTable);
+			XDataDescriptorFactory xColFac = UnoRuntime.queryInterface(XDataDescriptorFactory.class,xColumSup.getColumns());
+			XAppend xAppend = UnoRuntime.queryInterface(XAppend.class,xColFac);
 			// we only need one descriptor
 			XPropertySet xCol = xColFac.createDataDescriptor();
 			// create first column and append
@@ -362,15 +362,15 @@ public class sdbcx
 			xCol.setPropertyValue("Precision",new Integer(10)); // default value integer
 			xAppend.appendByDescriptor(xCol);
 			// now we create the primary key
-			XKeysSupplier xKeySup = (XKeysSupplier)UnoRuntime.queryInterface(XKeysSupplier.class,xTable);
-			XDataDescriptorFactory xKeyFac = (XDataDescriptorFactory)UnoRuntime.queryInterface(XDataDescriptorFactory.class,xKeySup.getKeys());
-			XAppend xKeyAppend = (XAppend)UnoRuntime.queryInterface(XAppend.class,xKeyFac);
+			XKeysSupplier xKeySup = UnoRuntime.queryInterface(XKeysSupplier.class,xTable);
+			XDataDescriptorFactory xKeyFac = UnoRuntime.queryInterface(XDataDescriptorFactory.class,xKeySup.getKeys());
+			XAppend xKeyAppend = UnoRuntime.queryInterface(XAppend.class,xKeyFac);
 			XPropertySet xKey = xKeyFac.createDataDescriptor();
 			xKey.setPropertyValue("Type",new Integer(KeyType.PRIMARY));
 			// now append the columns to key
-			XColumnsSupplier xKeyColumSup = (XColumnsSupplier)UnoRuntime.queryInterface(XColumnsSupplier.class,xKey);
-			XDataDescriptorFactory xKeyColFac = (XDataDescriptorFactory)UnoRuntime.queryInterface(XDataDescriptorFactory.class,xKeyColumSup.getColumns());
-			XAppend xKeyColAppend = (XAppend)UnoRuntime.queryInterface(XAppend.class,xKeyColFac);
+			XColumnsSupplier xKeyColumSup = UnoRuntime.queryInterface(XColumnsSupplier.class,xKey);
+			XDataDescriptorFactory xKeyColFac = UnoRuntime.queryInterface(XDataDescriptorFactory.class,xKeyColumSup.getColumns());
+			XAppend xKeyColAppend = UnoRuntime.queryInterface(XAppend.class,xKeyColFac);
 			// we only need one descriptor
 			XPropertySet xKeyCol = xKeyColFac.createDataDescriptor();
 			xKeyCol.setPropertyValue("Name","SNR");
@@ -379,7 +379,7 @@ public class sdbcx
 			// append the key
 			xKeyAppend.appendByDescriptor(xKey);
 			// the last step is to append the new table to the tables collection
-			 XAppend xTableAppend = (XAppend)UnoRuntime.queryInterface(XAppend.class,xTabFac);
+			 XAppend xTableAppend = UnoRuntime.queryInterface(XAppend.class,xTabFac);
 			 xTableAppend.appendByDescriptor(xTable);
 		}
 	}
@@ -391,7 +391,7 @@ public class sdbcx
 	public static void createUser(XNameAccess xUsers) throws com.sun.star.uno.Exception,SQLException
 	{
 		System.out.println("Example createUser");
-		XDataDescriptorFactory xUserFac = (XDataDescriptorFactory)UnoRuntime.queryInterface(XDataDescriptorFactory.class,xUsers);
+		XDataDescriptorFactory xUserFac = UnoRuntime.queryInterface(XDataDescriptorFactory.class,xUsers);
 		if(xUserFac != null)
 		{
 			// create the new table
@@ -399,7 +399,7 @@ public class sdbcx
 			// set the name of the new table
 			xUser.setPropertyValue("Name","BOSS");
 			xUser.setPropertyValue("Password","BOSSWIFENAME");
-			XAppend xAppend = (XAppend)UnoRuntime.queryInterface(XAppend.class,xUserFac);
+			XAppend xAppend = UnoRuntime.queryInterface(XAppend.class,xUserFac);
 			xAppend.appendByDescriptor(xUser);
 		}
 	}

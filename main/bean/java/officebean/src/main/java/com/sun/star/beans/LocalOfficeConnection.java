@@ -226,7 +226,7 @@ public class LocalOfficeConnection
 
 			// query for the XUnoUrlResolver interface
 			XUnoUrlResolver xUrlResolver =
-				(XUnoUrlResolver) UnoRuntime.queryInterface( XUnoUrlResolver.class, urlResolver );
+				UnoRuntime.queryInterface( XUnoUrlResolver.class, urlResolver );
 
 			// try to connect to soffice
 			Object aInitialObject = null;
@@ -266,10 +266,10 @@ public class LocalOfficeConnection
 			// XComponentContext
 			if( null != aInitialObject )
 			{
-				XPropertySet xPropertySet = (XPropertySet)
+				XPropertySet xPropertySet =
 					UnoRuntime.queryInterface( XPropertySet.class, aInitialObject);
 						Object xContext = xPropertySet.getPropertyValue("DefaultContext");
-						XComponentContext xComponentContext = (XComponentContext) UnoRuntime.queryInterface(
+						XComponentContext xComponentContext = UnoRuntime.queryInterface(
 					XComponentContext.class, xContext);
 				return xComponentContext;
 			}

@@ -110,7 +110,7 @@ public class ToolkitNode extends DefaultMutableTreeNode
 
     /** Returns the XAccessible interface corresponding to the toplevel window */
     private AccessibilityNode getTopWindowNode(XTopWindow w) {
-        XAccessible xAccessible = (XAccessible)
+        XAccessible xAccessible =
             UnoRuntime.queryInterface(XAccessible.class, w);
         if (xAccessible != null) {
             // XTopWindows usually have an accessible parent, which is the
@@ -144,7 +144,7 @@ public class ToolkitNode extends DefaultMutableTreeNode
     }
 
     public void windowClosed(com.sun.star.lang.EventObject eventObject) {
-        XAccessible xAccessible = (XAccessible) UnoRuntime.queryInterface(
+        XAccessible xAccessible = UnoRuntime.queryInterface(
             XAccessible.class, eventObject.Source);
         if (xAccessible != null) {
             AccessibilityNode node = treeModel.findNode(xAccessible);
@@ -188,7 +188,7 @@ public class ToolkitNode extends DefaultMutableTreeNode
     }
 
     public void windowOpened(com.sun.star.lang.EventObject eventObject) {
-        final XTopWindow xTopWindow = (XTopWindow) UnoRuntime.queryInterface(
+        final XTopWindow xTopWindow = UnoRuntime.queryInterface(
             XTopWindow.class, eventObject.Source);
         if (xTopWindow != null) {
             final ToolkitNode tn = this;

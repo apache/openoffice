@@ -57,7 +57,7 @@ public class ShapeUtil {
 			throws java.lang.Exception {
 		XShape xShape = createShape(xDrawDoc, aPos, aSize, sShapeType);
 		xShapes.add(xShape);
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, xShape);
 		return xPropSet;
 	}
@@ -71,7 +71,7 @@ public class ShapeUtil {
 		XMultiServiceFactory xFactory = (XMultiServiceFactory) UnoRuntime
 				.queryInterface(XMultiServiceFactory.class, xDrawDoc);
 		Object xObj = xFactory.createInstance(sShapeType);
-		xShape = (XShape) UnoRuntime.queryInterface(XShape.class, xObj);
+		xShape = UnoRuntime.queryInterface(XShape.class, xObj);
 		xShape.setPosition(aPos);
 		xShape.setSize(aSize);
 		return xShape;
@@ -85,7 +85,7 @@ public class ShapeUtil {
 	public static XPropertySet addPortion(XShape xShape, String sText,
 			boolean bNewParagraph)
 			throws com.sun.star.lang.IllegalArgumentException {
-		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xShape);
+		XText xText = UnoRuntime.queryInterface(XText.class, xShape);
 
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.gotoEnd(false);
@@ -94,11 +94,11 @@ public class ShapeUtil {
 					ControlCharacter.PARAGRAPH_BREAK, false);
 			xTextCursor.gotoEnd(false);
 		}
-		XTextRange xTextRange = (XTextRange) UnoRuntime.queryInterface(
+		XTextRange xTextRange = UnoRuntime.queryInterface(
 				XTextRange.class, xTextCursor);
 		xTextRange.setString(sText);
 		xTextCursor.gotoEnd(true);
-		XPropertySet xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, xTextRange);
 		return xPropSet;
 	}
@@ -108,7 +108,7 @@ public class ShapeUtil {
 	 * range that specified by the index
 	 */
 	public static XPropertySet getPortion(XShape xShape, int index) throws NoSuchElementException, WrappedTargetException {
-		XEnumerationAccess m_paraAccess = (XEnumerationAccess)UnoRuntime.queryInterface(XEnumerationAccess.class, xShape);
+		XEnumerationAccess m_paraAccess = UnoRuntime.queryInterface(XEnumerationAccess.class, xShape);
 		XEnumeration xParaEnum = m_paraAccess.createEnumeration();
 		XPropertySet xPropSet = null;
 		int i=0;
@@ -117,9 +117,9 @@ public class ShapeUtil {
 			if(i == index)
 			{
 				Object aPortionObj = xParaEnum.nextElement();
-				XTextRange xTextRange = (XTextRange)UnoRuntime.queryInterface(XTextRange.class, aPortionObj);
+				XTextRange xTextRange = UnoRuntime.queryInterface(XTextRange.class, aPortionObj);
 //				System.out.println(xTextRange.getText().getString());
-				xPropSet = (XPropertySet) UnoRuntime.queryInterface(
+				xPropSet = UnoRuntime.queryInterface(
 						XPropertySet.class, xTextRange);
 				break;
 			}
@@ -136,10 +136,10 @@ public class ShapeUtil {
 	 */
 	public static String getPortion(XShape xShape) {
 		String text = null;
-		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xShape);
+		XText xText = UnoRuntime.queryInterface(XText.class, xShape);
 
 		XTextCursor xTextCursor = xText.createTextCursor();
-		XTextRange xTextRange = (XTextRange) UnoRuntime.queryInterface(
+		XTextRange xTextRange = UnoRuntime.queryInterface(
 				XTextRange.class, xTextCursor);
 		text = xTextRange.getString();
 		return text;
@@ -178,11 +178,11 @@ public class ShapeUtil {
 	 */
 	public static XShapes getShapes(XComponent impressDocument, int pageIndex) throws Exception{
 
-		XDrawPagesSupplier drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		XDrawPagesSupplier drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		XDrawPages drawpages = drawsupplier.getDrawPages();
-		XDrawPage xpage=(XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawpages.getByIndex(pageIndex));
-		XShapes xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
+		XDrawPage xpage=UnoRuntime.queryInterface(XDrawPage.class, drawpages.getByIndex(pageIndex));
+		XShapes xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
 		return xShapes;
 
 	}
@@ -195,12 +195,12 @@ public class ShapeUtil {
 	 * @throws Exception
 	 */
 	public static void removeOneShape(XComponent impressDocument, int pageIndex, int shapeIndex) throws Exception{
-		XDrawPagesSupplier drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		XDrawPagesSupplier drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		XDrawPages drawpages = drawsupplier.getDrawPages();
-		XDrawPage xpage=(XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawpages.getByIndex(pageIndex));
-		XShapes xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
-		XShape xShape = (XShape) UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
+		XDrawPage xpage=UnoRuntime.queryInterface(XDrawPage.class, drawpages.getByIndex(pageIndex));
+		XShapes xShapes = UnoRuntime.queryInterface(XShapes.class, xpage);
+		XShape xShape = UnoRuntime.queryInterface(XShape.class, xShapes.getByIndex(shapeIndex));
 		xShapes.remove(xShape);
 
 	}

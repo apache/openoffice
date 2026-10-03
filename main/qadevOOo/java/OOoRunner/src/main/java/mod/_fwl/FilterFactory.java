@@ -95,7 +95,7 @@ public class FilterFactory extends TestCase {
         log.println( "creating a new environment for object" );
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
-        XNameAccess xNA = (XNameAccess) UnoRuntime.queryInterface
+        XNameAccess xNA = UnoRuntime.queryInterface
             (XNameAccess.class, oObj);
         String[] filterNames = xNA.getElementNames();
 

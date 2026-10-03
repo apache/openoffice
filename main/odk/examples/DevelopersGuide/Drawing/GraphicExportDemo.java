@@ -75,7 +75,7 @@ public class GraphicExportDemo
             Object GraphicExportFilter =
                 xOfficeContext.getServiceManager().createInstanceWithContext(
                     "com.sun.star.drawing.GraphicExportFilter", xOfficeContext);
-            XExporter xExporter = (XExporter)
+            XExporter xExporter =
                 UnoRuntime.queryInterface( XExporter.class, GraphicExportFilter );
 
             PropertyValue aProps[] = new PropertyValue[2];
@@ -101,10 +101,10 @@ public class GraphicExportDemo
 			{
                 XDrawPage xPage = PageHelper.getDrawPageByIndex( xComponent,
                                                                  nPageIndex );
-                XComponent xComp = (XComponent)
+                XComponent xComp =
                     UnoRuntime.queryInterface( XComponent.class, xPage );
                 xExporter.setSourceDocument( xComp );
-                XFilter xFilter = (XFilter)
+                XFilter xFilter =
                     UnoRuntime.queryInterface( XFilter.class, xExporter );
                 xFilter.filter( aProps );
                 System.out.println( "*** graphics on page \"" + nPageIndex
@@ -118,7 +118,7 @@ public class GraphicExportDemo
 
 
             // close the document
-            com.sun.star.util.XCloseable xCloseable = (com.sun.star.util.XCloseable)
+            com.sun.star.util.XCloseable xCloseable =
                 UnoRuntime.queryInterface(com.sun.star.util.XCloseable.class,
                                           xComponent);
 

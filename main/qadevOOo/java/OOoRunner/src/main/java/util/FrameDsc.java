@@ -90,7 +90,7 @@ public class FrameDsc extends InstDescr {
         }
         catch( com.sun.star.uno.Exception cssuE ){
         }
-        XShape shape = (XShape)UnoRuntime.queryInterface( XShape.class, SrvObj );
+        XShape shape = UnoRuntime.queryInterface( XShape.class, SrvObj );
         try {
             shape.setSize(size);
         }
@@ -99,7 +99,7 @@ public class FrameDsc extends InstDescr {
 
         XTextFrame TF = (XTextFrame)UnoRuntime.queryInterface( ifcClass, SrvObj );
 
-        XPropertySet oPropSet = (XPropertySet)
+        XPropertySet oPropSet =
                         UnoRuntime.queryInterface( XPropertySet.class, SrvObj );
 
 

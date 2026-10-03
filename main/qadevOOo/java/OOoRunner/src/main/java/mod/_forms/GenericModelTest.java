@@ -284,14 +284,14 @@ public class GenericModelTest extends TestCase {
 
         log.println("closing data source...");
         try {
-            XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable closer = UnoRuntime.queryInterface(
                                         XCloseable.class, m_dbSrc);
             if ( closer == null )
             {
-                XDocumentDataSource dataSource = (XDocumentDataSource)UnoRuntime.queryInterface(
+                XDocumentDataSource dataSource = UnoRuntime.queryInterface(
                     XDocumentDataSource.class, m_dbSrc);
                 if ( dataSource != null )
-                    closer = (XCloseable) UnoRuntime.queryInterface(
+                    closer = UnoRuntime.queryInterface(
                         XCloseable.class, dataSource.getDatabaseDocument() );
             }
             if (debug && closer==null){
@@ -308,7 +308,7 @@ public class GenericModelTest extends TestCase {
 
         log.println("disposing data source...");
         try {
-            XComponent dataSourceComp = (XComponent)UnoRuntime.queryInterface(
+            XComponent dataSourceComp = UnoRuntime.queryInterface(
                 XComponent.class, m_dbSrc);
             dataSourceComp.dispose();
         }
@@ -319,7 +319,7 @@ public class GenericModelTest extends TestCase {
         log.println("closing document...");
 
         try {
-            XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+            XCloseable closer = UnoRuntime.queryInterface(
                                         XCloseable.class, m_xTextDoc);
             closer.close(true);
         } catch (com.sun.star.util.CloseVetoException e) {
@@ -436,7 +436,7 @@ public class GenericModelTest extends TestCase {
                                               10000, m_LCShape_Type);
         WriterTools.getDrawPage(m_xTextDoc).add((XShape) aShape);
 
-        m_XPS = (XPropertySet) UnoRuntime.queryInterface(
+        m_XPS = UnoRuntime.queryInterface(
                                         XPropertySet.class, oObj);
 
         int i = 0;
@@ -543,9 +543,9 @@ public class GenericModelTest extends TestCase {
             }
 
             public void commit() throws com.sun.star.sdbc.SQLException {
-                XBoundComponent bound = (XBoundComponent) UnoRuntime.queryInterface(
+                XBoundComponent bound = UnoRuntime.queryInterface(
                                                 XBoundComponent.class, ctrl);
-                XResultSetUpdate update = (XResultSetUpdate) UnoRuntime.queryInterface(
+                XResultSetUpdate update = UnoRuntime.queryInterface(
                                                   XResultSetUpdate.class,
                                                   formLoaderF);
 

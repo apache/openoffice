@@ -190,7 +190,7 @@ public class TestUtil {
 	 */
 	public static void printPropertiesList(Object obj) throws Exception {
 		// Get the property set of specific object
-		XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
+		XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, obj);
 		XPropertySetInfo xPropertySetInfo = xPropertySet.getPropertySetInfo();
 
 	    // Get all properties info

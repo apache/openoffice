@@ -60,7 +60,7 @@ oDoc = UnoRuntime.queryInterface(XModel.class,XSCRIPTCONTEXT.getInvocationContex
 if ( oDoc == null )
   oDoc = XSCRIPTCONTEXT.getDocument();
 
-xTextDoc = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,oDoc);
+xTextDoc = UnoRuntime.queryInterface(XTextDocument.class,oDoc);
 xText = xTextDoc.getText();
 xTextRange = xText.getEnd();
 

@@ -155,10 +155,10 @@ public class SdDrawPage extends TestCase {
 
         // get the drawpage of drawing here
         log.println( "getting Drawpage" );
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, xDrawDoc);
         XDrawPages oDPn = oDPS.getDrawPages();
-        XIndexAccess oDPi = (XIndexAccess)
+        XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class,oDPn);
         try {
             oObj = (XDrawPage) AnyConverter.toObject(
@@ -176,7 +176,7 @@ public class SdDrawPage extends TestCase {
 
         //put something on the drawpage
         log.println( "inserting some Shapes" );
-        XShapes oShapes = (XShapes) UnoRuntime.queryInterface
+        XShapes oShapes = UnoRuntime.queryInterface
             (XShapes.class,oObj);
         oShapes.add(SOF.createShape
             (xDrawDoc, 2000, 1500, 1000, 1000, "Line"));
@@ -187,7 +187,7 @@ public class SdDrawPage extends TestCase {
 
         //get the XMasterPagesSupplier
         log.println("get XMasterPagesSupplier");
-        XMasterPagesSupplier oMPS = (XMasterPagesSupplier)
+        XMasterPagesSupplier oMPS =
             UnoRuntime.queryInterface(XMasterPagesSupplier.class, xDrawDoc);
         XDrawPages oGroup = oMPS.getMasterPages();
 

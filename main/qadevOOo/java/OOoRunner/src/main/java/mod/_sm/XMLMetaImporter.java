@@ -124,7 +124,7 @@ public class XMLMetaImporter extends TestCase {
             oObj = (XInterface)xMSF.createInstance(
                     "com.sun.star.comp.Math.XMLMetaImporter");
 
-            xDocInfoSup = (XDocumentInfoSupplier) UnoRuntime.queryInterface
+            xDocInfoSup = UnoRuntime.queryInterface
                 (XDocumentInfoSupplier.class, xMathDoc) ;
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
@@ -162,7 +162,7 @@ public class XMLMetaImporter extends TestCase {
                 public boolean checkImport() {
                     try {
                         XDocumentInfo xDocInfo = xDocInfoSup.getDocumentInfo() ;
-                        XPropertySet xDocInfoProp = (XPropertySet)
+                        XPropertySet xDocInfoProp =
                             UnoRuntime.queryInterface
                             (XPropertySet.class, xDocInfo) ;
                         boolean result = false ;

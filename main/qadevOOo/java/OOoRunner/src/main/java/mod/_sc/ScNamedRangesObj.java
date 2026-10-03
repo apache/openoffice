@@ -87,7 +87,7 @@ public class ScNamedRangesObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -118,7 +118,7 @@ public class ScNamedRangesObj extends TestCase {
 
         log.println("Getting test object ");
         XSpreadsheets oSheets = xSheetDoc.getSheets();
-        XIndexAccess oIndexSheets = (XIndexAccess)
+        XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
@@ -135,7 +135,7 @@ public class ScNamedRangesObj extends TestCase {
         }
 
         // Getting named ranges.
-        XPropertySet docProps = (XPropertySet)
+        XPropertySet docProps =
             UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
         Object ranges = null;
         try {
@@ -148,7 +148,7 @@ public class ScNamedRangesObj extends TestCase {
             throw new StatusException("Couldn't get NamedRanges", e);
         }
 
-        XNamedRanges xNamedRanges = (XNamedRanges)
+        XNamedRanges xNamedRanges =
             UnoRuntime.queryInterface(XNamedRanges.class, ranges);
 
         CellRangeAddress DataArea = new CellRangeAddress((short)0, 0, 0, 2, 2);

@@ -52,14 +52,14 @@ public abstract class DocumentBasedExample implements com.sun.star.lang.XEventLi
                 createInitialComponentContext( null );
             final XMultiComponentFactory localServiceManager = componentContext.getServiceManager();
 
-            final XUnoUrlResolver urlResolver = (XUnoUrlResolver) UnoRuntime.queryInterface(
+            final XUnoUrlResolver urlResolver = UnoRuntime.queryInterface(
                 XUnoUrlResolver.class, localServiceManager.createInstanceWithContext(
                     "com.sun.star.bridge.UnoUrlResolver", componentContext) );
 
             final String connectStr = "uno:pipe,name=<pipename>;urp;StarOffice.ComponentContext";
             final Object initialObject = urlResolver.resolve( connectStr );
 
-            m_xCtx = (XComponentContext)UnoRuntime.queryInterface( XComponentContext.class,
+            m_xCtx = UnoRuntime.queryInterface( XComponentContext.class,
                 initialObject );
             */
 
@@ -166,7 +166,7 @@ public abstract class DocumentBasedExample implements com.sun.star.lang.XEventLi
             // close our document
             if ( m_document != null )
             {
-                XCloseable closeDoc = (XCloseable)
+                XCloseable closeDoc =
                     UnoRuntime.queryInterface( XCloseable.class,
                                                m_document.getDocument() );
                 if (closeDoc != null)

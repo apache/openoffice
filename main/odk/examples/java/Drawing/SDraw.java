@@ -81,13 +81,13 @@ public class SDraw  {
         try {
             System.out.println( "getting Drawpage" );
             com.sun.star.drawing.XDrawPagesSupplier xDPS =
-                (com.sun.star.drawing.XDrawPagesSupplier)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.drawing.XDrawPagesSupplier.class, xDrawDoc);
             com.sun.star.drawing.XDrawPages xDPn = xDPS.getDrawPages();
             com.sun.star.container.XIndexAccess xDPi =
-                (com.sun.star.container.XIndexAccess)UnoRuntime.queryInterface(
+                UnoRuntime.queryInterface(
                     com.sun.star.container.XIndexAccess.class, xDPn);
-            xDrawPage = (com.sun.star.drawing.XDrawPage)UnoRuntime.queryInterface(
+            xDrawPage = UnoRuntime.queryInterface(
                 com.sun.star.drawing.XDrawPage.class, xDPi.getByIndex(0));
         } catch ( Exception e ) {
             System.err.println( "Couldn't create document"+ e );
@@ -98,7 +98,7 @@ public class SDraw  {
 
         //put something on the drawpage
         System.out.println( "inserting some Shapes" );
-        com.sun.star.drawing.XShapes xShapes = (com.sun.star.drawing.XShapes)
+        com.sun.star.drawing.XShapes xShapes =
             UnoRuntime.queryInterface(
                 com.sun.star.drawing.XShapes.class, xDrawPage);
         xShapes.add(createShape(xDrawDoc,2000,1500,1000,1000,"Line",0));
@@ -125,7 +125,7 @@ public class SDraw  {
             Object oDesktop = xMCF.createInstanceWithContext(
                                         "com.sun.star.frame.Desktop", xContext);
 
-            xCLoader = (com.sun.star.frame.XComponentLoader)
+            xCLoader =
                 UnoRuntime.queryInterface(com.sun.star.frame.XComponentLoader.class,
                                           oDesktop);
             com.sun.star.beans.PropertyValue szEmptyArgs[] =
@@ -152,13 +152,13 @@ public class SDraw  {
 
         //get MSF
         com.sun.star.lang.XMultiServiceFactory xDocMSF =
-            (com.sun.star.lang.XMultiServiceFactory) UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.lang.XMultiServiceFactory.class, xDocComp );
 
         try {
             Object oInt = xDocMSF.createInstance("com.sun.star.drawing."
                                                  +kind + "Shape");
-            xShape = (com.sun.star.drawing.XShape)UnoRuntime.queryInterface(
+            xShape = UnoRuntime.queryInterface(
                 com.sun.star.drawing.XShape.class, oInt);
             size.Height = height;
             size.Width = width;
@@ -172,7 +172,7 @@ public class SDraw  {
             e.printStackTrace(System.err);
         }
 
-        com.sun.star.beans.XPropertySet xSPS = (com.sun.star.beans.XPropertySet)
+        com.sun.star.beans.XPropertySet xSPS =
             UnoRuntime.queryInterface(
                 com.sun.star.beans.XPropertySet.class, xShape);
 
@@ -192,7 +192,7 @@ public class SDraw  {
         com.sun.star.awt.Size size = new com.sun.star.awt.Size();
         com.sun.star.awt.Point position = new com.sun.star.awt.Point();
         com.sun.star.drawing.XShape xShape = null;
-        com.sun.star.drawing.XShapes xShapes = (com.sun.star.drawing.XShapes)
+        com.sun.star.drawing.XShapes xShapes =
             UnoRuntime.queryInterface(com.sun.star.drawing.XShapes.class, xDP);
         int height = 3000;
         int width = 3500;
@@ -205,13 +205,13 @@ public class SDraw  {
 
         //get MSF
         com.sun.star.lang.XMultiServiceFactory xDocMSF =
-            (com.sun.star.lang.XMultiServiceFactory)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.lang.XMultiServiceFactory.class, xDocComp );
 
         for (int i=0; i<370; i=i+25) {
             try{
                 oInt = xDocMSF.createInstance("com.sun.star.drawing.EllipseShape");
-                xShape = (com.sun.star.drawing.XShape)UnoRuntime.queryInterface(
+                xShape = UnoRuntime.queryInterface(
                     com.sun.star.drawing.XShape.class, oInt);
                 size.Height = height;
                 size.Width = width;
@@ -229,7 +229,7 @@ public class SDraw  {
 
             b=b+8;
 
-            com.sun.star.beans.XPropertySet xSPS = (com.sun.star.beans.XPropertySet)
+            com.sun.star.beans.XPropertySet xSPS =
                 UnoRuntime.queryInterface(com.sun.star.beans.XPropertySet.class,
                                           xShape);
 
@@ -244,7 +244,7 @@ public class SDraw  {
         }
 
         com.sun.star.drawing.XShapeGrouper xSGrouper =
-            (com.sun.star.drawing.XShapeGrouper)UnoRuntime.queryInterface(
+            UnoRuntime.queryInterface(
                 com.sun.star.drawing.XShapeGrouper.class, xDP);
 
         xShape = xSGrouper.group(xShapes);

@@ -160,7 +160,7 @@ public class CallReportWizard
         {
             this.m_wizardContext = Properties.convertToPropertyValueArray(object);
 
-        //    xmultiservicefactory = (XMultiservicefactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, object[0]);
+        //    xmultiservicefactory = UnoRuntime.queryInterface(XMultiServiceFactory.class, object[0]);
         }
 
         /** This method returns an array of all supported service names.

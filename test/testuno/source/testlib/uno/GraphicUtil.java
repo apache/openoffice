@@ -56,7 +56,7 @@ public class GraphicUtil {
 
 	public static String getUniqueIDbyXGraphic(UnoApp unoApp, XGraphic xgraphic) throws Exception{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicObject");
-		XGraphicObject xgraphicObj = (XGraphicObject)UnoRuntime.queryInterface(XGraphicObject.class, graphicObj);
+		XGraphicObject xgraphicObj = UnoRuntime.queryInterface(XGraphicObject.class, graphicObj);
 		xgraphicObj.setGraphic(xgraphic);
 
 		return xgraphicObj.getUniqueID();
@@ -73,7 +73,7 @@ public class GraphicUtil {
 	public static XGraphic getXGraphicOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception
 	{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicProvider");
-		XGraphicProvider xgraphicProvider = (XGraphicProvider)UnoRuntime.queryInterface(XGraphicProvider.class, graphicObj);
+		XGraphicProvider xgraphicProvider = UnoRuntime.queryInterface(XGraphicProvider.class, graphicObj);
 		PropertyValue[] sourceProps = new PropertyValue[1];
 		sourceProps[0]       = new PropertyValue();
 		sourceProps[0].Name  = "URL";
@@ -84,7 +84,7 @@ public class GraphicUtil {
 	public static Size getSize100thMMOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception
 	{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicProvider");
-		XGraphicProvider xgraphicProvider = (XGraphicProvider)UnoRuntime.queryInterface(XGraphicProvider.class, graphicObj);
+		XGraphicProvider xgraphicProvider = UnoRuntime.queryInterface(XGraphicProvider.class, graphicObj);
 		PropertyValue[] sourceProps = new PropertyValue[1];
 		sourceProps[0]       = new PropertyValue();
 		sourceProps[0].Name  = "URL";
@@ -97,7 +97,7 @@ public class GraphicUtil {
 	public static Size getSizePixelOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception
 	{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicProvider");
-		XGraphicProvider xgraphicProvider = (XGraphicProvider)UnoRuntime.queryInterface(XGraphicProvider.class, graphicObj);
+		XGraphicProvider xgraphicProvider = UnoRuntime.queryInterface(XGraphicProvider.class, graphicObj);
 		PropertyValue[] sourceProps = new PropertyValue[1];
 		sourceProps[0]       = new PropertyValue();
 		sourceProps[0].Name  = "URL";
@@ -110,14 +110,14 @@ public class GraphicUtil {
 
 	//GraphicObjectShape
 	public static Object[] getGraphicsOfPage(XDrawPage xDrawPage) throws Exception {
-		XShapes m_xdrawShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
+		XShapes m_xdrawShapes = UnoRuntime.queryInterface(XShapes.class, xDrawPage);
 		int count = m_xdrawShapes.getCount();
 		Object[] temp = new Object[count];
 		int graphicNum=0;
 		for(int i=0;i<count; i++)
 		{
 			Object shape = m_xdrawShapes.getByIndex(i);
-			XShape xshape = (XShape)UnoRuntime.queryInterface(XShape.class, shape);
+			XShape xshape = UnoRuntime.queryInterface(XShape.class, shape);
 			String type = xshape.getShapeType();
 			if(type.equals("com.sun.star.drawing.GraphicObjectShape"))
 			{
@@ -141,14 +141,14 @@ public class GraphicUtil {
 	public static void insertGraphic(XComponent component, XDrawPage toPage, String graphicURL, Size size, Point position) throws Exception
 	{
 		XMultiServiceFactory xDrawFactory =
-	            (XMultiServiceFactory)UnoRuntime.queryInterface(
+	            UnoRuntime.queryInterface(
 	                XMultiServiceFactory.class, component);
 
 	    Object oGraphic = xDrawFactory.createInstance("com.sun.star.drawing.GraphicObjectShape");
-	    XPropertySet xGraphicPro = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, oGraphic);
+	    XPropertySet xGraphicPro = UnoRuntime.queryInterface(XPropertySet.class, oGraphic);
 	    xGraphicPro.setPropertyValue("GraphicURL", graphicURL);
 
-	    XShape xDrawShape = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic);
+	    XShape xDrawShape = UnoRuntime.queryInterface(XShape.class, oGraphic);
 
 	    xDrawShape.setSize(size);
 	    xDrawShape.setPosition(position);

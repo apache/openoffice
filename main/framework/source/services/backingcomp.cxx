@@ -402,12 +402,12 @@ css::uno::Reference< css::lang::XSingleServiceFactory > BackingComp::impl_create
     May he will do the following things:
 
     <listing>
-        XController xBackingComp = (XController)UnoRuntime.queryInterface(
+        XController xBackingComp = UnoRuntime.queryInterface(
             XController.class,
             xSMGR.createInstance(SERVICENAME_STARTMODULE));
 
         // at this time XWindow isn't present at this instance!
-        XWindow xBackingComp = (XWindow)UnoRuntime.queryInterface(
+        XWindow xBackingComp = UnoRuntime.queryInterface(
             XWindow.class,
             xBackingComp);
 
@@ -416,7 +416,7 @@ css::uno::Reference< css::lang::XSingleServiceFactory > BackingComp::impl_create
         // the component window. From now we offer the window interfaces!
         xBackingComp.attachFrame(xFrame);
 
-        XWindow xBackingComp = (XWindow)UnoRuntime.queryInterface(
+        XWindow xBackingComp = UnoRuntime.queryInterface(
             XWindow.class,
             xBackingComp);
 
@@ -425,7 +425,7 @@ css::uno::Reference< css::lang::XSingleServiceFactory > BackingComp::impl_create
 
         // But that had no effect to our view state.
         // We must be started to create our UI elements like e.g. menu, title, background ...
-        XInitialization xBackingInit = (XInitialization)UnoRuntime.queryInterface(
+        XInitialization xBackingInit = UnoRuntime.queryInterface(
             XInitialization.class,
             xBackingComp);
 

@@ -87,7 +87,7 @@ public class Hyphenator extends TestCase {
                 ("com.sun.star.linguistic2.Hyphenator");
             Object LP = xMSF.createInstance
                 ("com.sun.star.linguistic2.LinguProperties");
-            XPropertySet LProps = (XPropertySet)
+            XPropertySet LProps =
                 UnoRuntime.queryInterface(XPropertySet.class,LP);
             LProps.setPropertyValue("IsGermanPreReform",new Boolean(true));
         } catch (com.sun.star.uno.Exception e) {

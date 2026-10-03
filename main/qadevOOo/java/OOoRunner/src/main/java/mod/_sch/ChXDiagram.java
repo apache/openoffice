@@ -222,7 +222,7 @@ public class ChXDiagram extends TestCase {
 
         System.out.println("Getting spreadsheet") ;
         XSpreadsheets oSheets = xSheetDoc.getSheets() ;
-        XIndexAccess oIndexSheets = (XIndexAccess)
+        XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
@@ -304,16 +304,16 @@ public class ChXDiagram extends TestCase {
         // insert a chart
         Rectangle oRect = new Rectangle(500, 3000, 25000, 11000);
 
-        XCellRange oRange = (XCellRange)
+        XCellRange oRange =
             UnoRuntime.queryInterface(XCellRange.class, oSheet);
         XCellRange myRange = oRange.getCellRangeByName("A1:N4");
-        XCellRangeAddressable oRangeAddr = (XCellRangeAddressable)
+        XCellRangeAddressable oRangeAddr =
             UnoRuntime.queryInterface(XCellRangeAddressable.class, myRange);
         CellRangeAddress myAddr = oRangeAddr.getRangeAddress();
 
         CellRangeAddress[] oAddr = new CellRangeAddress[1];
         oAddr[0] = myAddr;
-        XTableChartsSupplier oSupp = (XTableChartsSupplier)
+        XTableChartsSupplier oSupp =
             UnoRuntime.queryInterface(XTableChartsSupplier.class, oSheet);
 
         log.println("Insert Chart");
@@ -328,7 +328,7 @@ public class ChXDiagram extends TestCase {
         XTableChart oChart = null;
         try {
             oChart = (XTableChart) AnyConverter.toObject(
-                new Type(XTableChart.class),((XNameAccess)
+                new Type(XTableChart.class),(
                     UnoRuntime.queryInterface(
                         XNameAccess.class, oCharts)).getByName("ChXDiagram"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
@@ -342,10 +342,10 @@ public class ChXDiagram extends TestCase {
             throw new StatusException("Couldn't get TableChart", e);
         }
 
-        XEmbeddedObjectSupplier oEOS = (XEmbeddedObjectSupplier)
+        XEmbeddedObjectSupplier oEOS =
             UnoRuntime.queryInterface(XEmbeddedObjectSupplier.class, oChart);
         XInterface oInt = oEOS.getEmbeddedObject();
-        xChartDoc = (XChartDocument)
+        xChartDoc =
              UnoRuntime.queryInterface(XChartDocument.class,oInt);
         oObj = (XDiagram) xChartDoc.getDiagram();
 
@@ -355,7 +355,7 @@ public class ChXDiagram extends TestCase {
         log.println( "adding ChartDocument as mod relation to environment" );
         tEnv.addObjRelation("CHARTDOC", xChartDoc);
 
-        XChartDataArray da = (XChartDataArray)
+        XChartDataArray da =
             UnoRuntime.queryInterface(XChartDataArray.class, xChartDoc.getData());
         int cols = da.getColumnDescriptions().length;
         int rows = da.getRowDescriptions().length;

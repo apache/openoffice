@@ -86,7 +86,7 @@ public class ScTableRowsObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -108,7 +108,7 @@ public class ScTableRowsObj extends TestCase {
         XSpreadsheet xSpreadsheet = null;
 
         XSpreadsheets xSpreadsheets = (XSpreadsheets)xSheetDoc.getSheets();
-        XNameAccess oNames = (XNameAccess)
+        XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, xSpreadsheets );
         try {
             xSpreadsheet = (XSpreadsheet) AnyConverter.toObject(
@@ -125,7 +125,7 @@ public class ScTableRowsObj extends TestCase {
             throw new StatusException("Couldn't get spreadsheet", e);
         }
 
-        XColumnRowRange oColumnRowRange = (XColumnRowRange)
+        XColumnRowRange oColumnRowRange =
             UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
 
         XTableRows oRows = (XTableRows) oColumnRowRange.getRows();

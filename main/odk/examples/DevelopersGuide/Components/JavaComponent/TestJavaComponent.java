@@ -43,7 +43,7 @@ public class TestJavaComponent
         XMultiComponentFactory serviceManager, Object singleFactory )
         throws com.sun.star.uno.Exception
     {
-        XSet set = (XSet ) UnoRuntime.queryInterface( XSet.class, serviceManager );
+        XSet set = UnoRuntime.queryInterface( XSet.class, serviceManager );
         set.insert( singleFactory );
     }
 
@@ -51,7 +51,7 @@ public class TestJavaComponent
         XMultiComponentFactory serviceManager, Object singleFactory )
         throws com.sun.star.uno.Exception
     {
-        XSet set = (XSet ) UnoRuntime.queryInterface( XSet.class, serviceManager );
+        XSet set = UnoRuntime.queryInterface( XSet.class, serviceManager );
         set.remove( singleFactory );
 
     }

@@ -100,7 +100,7 @@ public class SdMasterPagesAccess extends TestCase {
 
         // get the MasterPages here
         log.println( "getting MasterPages" );
-        XMasterPagesSupplier oMPS = (XMasterPagesSupplier)
+        XMasterPagesSupplier oMPS =
             UnoRuntime.queryInterface( XMasterPagesSupplier.class, xDrawDoc);
         XDrawPages oMP = oMPS.getMasterPages();
         log.println( "insert MasterPages" );

@@ -68,30 +68,30 @@ public void testResizeColumn() throws Exception {
 
 	//Create Spreadsheet file.
 	scComponent = unoApp.newDocument("scalc");
-	scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+	scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 
 	//Create a sheet at the first place.
 	XSpreadsheets spreadsheets = scDocument.getSheets();
 	spreadsheets.insertNewByName(sheetname, (short) 0);
 	Object sheetObj = spreadsheets.getByName(sheetname);
 
-	XSpreadsheet sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	XSpreadsheet sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
 	//Active the new sheet.
-	XModel scModel = (XModel) UnoRuntime.queryInterface(XModel.class, scDocument);
+	XModel scModel = UnoRuntime.queryInterface(XModel.class, scDocument);
     XController scController = scModel.getCurrentController();
-    XSpreadsheetView sheetview = (XSpreadsheetView) UnoRuntime.queryInterface(XSpreadsheetView.class, scController);
+    XSpreadsheetView sheetview = UnoRuntime.queryInterface(XSpreadsheetView.class, scController);
     sheetview.setActiveSheet(sheet);
 
     //Set cell range to A1:B1
     XCellRange CellRange = sheet.getCellRangeByPosition(0, 0, 1, 0);
 
     //Get column A1 by index
-    XColumnRowRange ColRowRange = (XColumnRowRange)UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
+    XColumnRowRange ColRowRange = UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
     XTableColumns Columns = ColRowRange.getColumns();
     Object aColumnObj = Columns.getByIndex( 0 );
 
-    PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aColumnObj);
+    PropSet = UnoRuntime.queryInterface(XPropertySet.class, aColumnObj);
 
     //Verify the default values of specified column A1
     assertTrue("Verify column is visible as default.",  (Boolean) PropSet.getPropertyValue("IsVisible"));
@@ -106,17 +106,17 @@ public void testResizeColumn() throws Exception {
 
     spreadsheets = scDocument.getSheets();
    	sheetObj = spreadsheets.getByName(sheetname);
-	sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
     //Set cell range to A1:B1
     CellRange = sheet.getCellRangeByPosition(0, 0, 1, 0);
-    ColRowRange = (XColumnRowRange)UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
+    ColRowRange = UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
     Columns = ColRowRange.getColumns();
 
     //Get column A1 by index
     aColumnObj = Columns.getByIndex( 0 );
 
-    PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aColumnObj);
+    PropSet = UnoRuntime.queryInterface(XPropertySet.class, aColumnObj);
 
     //Verify the  values of specified column A1 after resize
        int expectedWidth = 6001;
@@ -136,17 +136,17 @@ public void testResizeColumn() throws Exception {
 
     spreadsheets = scDocument.getSheets();
 	sheetObj = spreadsheets.getByName(sheetname);
-	sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
     //Set cell range to A1:B1
     CellRange = sheet.getCellRangeByPosition(0, 0, 1, 0);
-    ColRowRange = (XColumnRowRange)UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
+    ColRowRange = UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
     Columns = ColRowRange.getColumns();
 
     //Get column A1 by index
     aColumnObj = Columns.getByIndex( 0 );
 
-    PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aColumnObj);
+    PropSet = UnoRuntime.queryInterface(XPropertySet.class, aColumnObj);
 
     //Verify the values of specified column A1 after save
     assertFalse("Verify column A1 is invisible", (Boolean) PropSet.getPropertyValue("IsVisible"));
@@ -160,30 +160,30 @@ public void testResizeRow() throws Exception {
 
 	//Create Spreadsheet file.
 	scComponent = unoApp.newDocument("scalc");
-	scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
+	scDocument = UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 
 	//Create a sheet at the first place.
 	XSpreadsheets spreadsheets = scDocument.getSheets();
 	spreadsheets.insertNewByName(sheetname, (short) 0);
 	Object sheetObj = spreadsheets.getByName(sheetname);
-	XSpreadsheet sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	XSpreadsheet sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
 	//Active the new sheet.
-	XModel scModel = (XModel) UnoRuntime.queryInterface(XModel.class, scDocument);
+	XModel scModel = UnoRuntime.queryInterface(XModel.class, scDocument);
     XController scController = scModel.getCurrentController();
-    XSpreadsheetView sheetview = (XSpreadsheetView) UnoRuntime.queryInterface(XSpreadsheetView.class, scController);
+    XSpreadsheetView sheetview = UnoRuntime.queryInterface(XSpreadsheetView.class, scController);
     sheetview.setActiveSheet(sheet);
 
     //Set cell range to A1:A2
     XCellRange CellRange = sheet.getCellRangeByPosition(0, 0, 0, 1);
     //XCell cell = sheet.getCellByPosition(1, 0);
-    XColumnRowRange ColRowRange = (XColumnRowRange)UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
+    XColumnRowRange ColRowRange = UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
     XTableRows Rows = ColRowRange.getRows();
 
     //Get Row 1 by index
     Object aRowObj = Rows.getByIndex( 0 );
 
-    PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj );
+    PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj );
 
     //Verify the default values of specified Row 1
     assertTrue("Verify column is visible as default.",  (Boolean) PropSet.getPropertyValue("IsVisible"));
@@ -198,17 +198,17 @@ public void testResizeRow() throws Exception {
 
     spreadsheets = scDocument.getSheets();
 	sheetObj = spreadsheets.getByName(sheetname);
-	sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+	sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
     //Set cell range to A1:A2
     CellRange = sheet.getCellRangeByPosition(0, 0, 0, 1);
-    ColRowRange = (XColumnRowRange)UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
+    ColRowRange = UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
     Rows = ColRowRange.getRows();
 
     //Get Row 1 by index
     aRowObj = Rows.getByIndex( 0 );
 
-    PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+    PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 
     //Verify the  values of specified Row 1 after resize
     int expectedHeight = 5001;
@@ -228,17 +228,17 @@ public void testResizeRow() throws Exception {
 
     spreadsheets = scDocument.getSheets();
  	sheetObj = spreadsheets.getByName(sheetname);
- 	sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
+ 	sheet = UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
 
     //Set cell range to A1:A2
     CellRange = sheet.getCellRangeByPosition(0, 0, 0, 1);
-    ColRowRange = (XColumnRowRange)UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
+    ColRowRange = UnoRuntime.queryInterface( XColumnRowRange.class, CellRange );
     Rows = ColRowRange.getRows();
 
     //Get Row 1 by index
     aRowObj = Rows.getByIndex( 0 );
 
-    PropSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
+    PropSet = UnoRuntime.queryInterface(XPropertySet.class, aRowObj);
 
     //Verify the values of specified Row 1 after resize
     assertEquals("Verify current height value is 5001 after hide it.", expectedHeight, PropSet.getPropertyValue("Height"));

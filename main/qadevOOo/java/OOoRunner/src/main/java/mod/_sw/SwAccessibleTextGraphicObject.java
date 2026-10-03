@@ -83,7 +83,7 @@ public class SwAccessibleTextGraphicObject extends TestCase {
 
         XText the_text = xTextDoc.getText();
         XTextCursor the_cursor = the_text.createTextCursor();
-        XTextContent the_content = (XTextContent)
+        XTextContent the_content =
             UnoRuntime.queryInterface(XTextContent.class, oGraphObj);
 
         log.println( "inserting graphic" );
@@ -94,7 +94,7 @@ public class SwAccessibleTextGraphicObject extends TestCase {
             throw new StatusException("Couldn't insert Content", e);
         }
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -112,7 +112,7 @@ public class SwAccessibleTextGraphicObject extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         XController xController = xTextDoc.getCurrentController();
-        XViewSettingsSupplier xViewSetSup = (XViewSettingsSupplier)
+        XViewSettingsSupplier xViewSetSup =
                 UnoRuntime.queryInterface(XViewSettingsSupplier.class,
                 xController);
 

@@ -59,7 +59,7 @@ public class CheckIndeterminateState {
      * The used tools are in project qadevOOo/runner
      */
     @Test public void checkToolBoxItem() throws Exception {
-        XModel aModel = (XModel)
+        XModel aModel =
                     UnoRuntime.queryInterface(XModel.class, document);
 
         XController xController = aModel.getCurrentController();
@@ -83,7 +83,7 @@ public class CheckIndeterminateState {
             AccessibleRole.TOGGLE_BUTTON, "Bold");
         assertNotNull("Found a TOGGLE_BUTTON", oObj);
 
-        XAccessibleContext oContext = (XAccessibleContext)
+        XAccessibleContext oContext =
             UnoRuntime.queryInterface(XAccessibleContext.class, oObj);
 
         XAccessibleStateSet oSet = oContext.getAccessibleStateSet();

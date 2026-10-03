@@ -125,7 +125,7 @@ public class SwXTextPortion extends TestCase {
         }
 
         // Enumeration
-        XEnumerationAccess oEnumA = (XEnumerationAccess)
+        XEnumerationAccess oEnumA =
             UnoRuntime.queryInterface( XEnumerationAccess.class, oText );
         XEnumeration oEnum = oEnumA.createEnumeration();
 
@@ -143,7 +143,7 @@ public class SwXTextPortion extends TestCase {
             n++;
         }
 
-        XEnumerationAccess oEnumP = (XEnumerationAccess)
+        XEnumerationAccess oEnumP =
             UnoRuntime.queryInterface( XEnumerationAccess.class, param );
         XEnumeration oEnum2 = oEnumP.createEnumeration();
         try {
@@ -155,9 +155,9 @@ public class SwXTextPortion extends TestCase {
             throw new StatusException( "Couldn't get TextPortion", e );
         }
 
-        portP = (XPropertySet)
+        portP =
                 UnoRuntime.queryInterface(XPropertySet.class, oObj);
-        paraP = (XPropertySet)
+        paraP =
                 UnoRuntime.queryInterface(XPropertySet.class, param);
 
 

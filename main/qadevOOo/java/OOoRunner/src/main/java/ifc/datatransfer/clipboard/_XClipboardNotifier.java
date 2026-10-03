@@ -118,7 +118,7 @@ public class _XClipboardNotifier extends MultiMethodTest {
     public void _addClipboardListener() {
         oObj.addClipboardListener(myListener = new MyClipboardListener());
 
-        XClipboard board = (XClipboard)UnoRuntime.queryInterface(
+        XClipboard board = UnoRuntime.queryInterface(
                 XClipboard.class, tEnv.getTestObject());
 
         board.setContents(new MyTransferable(), new MyOwner());
@@ -153,7 +153,7 @@ public class _XClipboardNotifier extends MultiMethodTest {
             oObj.removeClipboardListener(myListener);
         }
 
-        XClipboard board = (XClipboard)UnoRuntime.queryInterface(
+        XClipboard board = UnoRuntime.queryInterface(
                 XClipboard.class, oObj);
 
         board.setContents(new MyTransferable(), new MyOwner());

@@ -105,7 +105,7 @@ public class Inspector{
         String sRetPath = "";
         try{
             XNameAccess xNameAccess  = getConfigurationAccess("org.openoffice.inspector.ObjectInspector", true);
-            XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xNameAccess);
+            XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xNameAccess);
             sRetPath = (String) xPropertySet.getPropertyValue("SDKPath");
         }catch( Exception exception ) {
             exception.printStackTrace(System.out);
@@ -142,9 +142,9 @@ public class Inspector{
         try {
             String sInstallationFolder = "";
             Object oFolderPicker = m_xComponentContext.getServiceManager().createInstanceWithContext("com.sun.star.ui.dialogs.FolderPicker", m_xComponentContext);
-            XFolderPicker xFolderPicker = (XFolderPicker) UnoRuntime.queryInterface(XFolderPicker.class, oFolderPicker);
-            XExecutableDialog xExecutable = (XExecutableDialog) UnoRuntime.queryInterface(XExecutableDialog.class, oFolderPicker);
-            XComponent xComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, oFolderPicker);
+            XFolderPicker xFolderPicker = UnoRuntime.queryInterface(XFolderPicker.class, oFolderPicker);
+            XExecutableDialog xExecutable = UnoRuntime.queryInterface(XExecutableDialog.class, oFolderPicker);
+            XComponent xComponent = UnoRuntime.queryInterface(XComponent.class, oFolderPicker);
             String sPath = getSDKPath();
             if (!sPath.equals("")){
                 xFolderPicker.setDisplayDirectory(sPath);
@@ -155,15 +155,15 @@ public class Inspector{
                 sInstallationFolder = xFolderPicker.getDirectory();
                 if (m_oIntrospector.isValidSDKInstallationPath(sInstallationFolder)){
                     XNameAccess xNameAccess = getConfigurationAccess(true);
-                    XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xNameAccess);
+                    XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xNameAccess);
                     xPropertySet.setPropertyValue("SDKPath", sInstallationFolder);
-                    XChangesBatch xBatch = (XChangesBatch) UnoRuntime.queryInterface(XChangesBatch.class, xNameAccess);
+                    XChangesBatch xBatch = UnoRuntime.queryInterface(XChangesBatch.class, xNameAccess);
                     xBatch.commitChanges();
                 }
                 else{
-                    XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFolderPicker);
+                    XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xFolderPicker);
                     Object oWindow = xPropertySet.getPropertyValue("Window");
-                    XWindowPeer xWindowPeer = (XWindowPeer) UnoRuntime.queryInterface(XWindowPeer.class, oWindow);
+                    XWindowPeer xWindowPeer = UnoRuntime.queryInterface(XWindowPeer.class, oWindow);
                     showErrorMessageBox(xWindowPeer, sTitle, sWRONGINSTALLATIONPATH);
                     assignSDKPath();
                 }
@@ -177,9 +177,9 @@ public class Inspector{
         public void showErrorMessageBox(XWindowPeer _xWindowPeer, String _sTitle, String _sMessage){
         try {
             Object oToolkit = m_xComponentContext.getServiceManager().createInstanceWithContext("com.sun.star.awt.Toolkit", m_xComponentContext);
-            XMessageBoxFactory xMessageBoxFactory = (XMessageBoxFactory) UnoRuntime.queryInterface(XMessageBoxFactory.class, oToolkit);
+            XMessageBoxFactory xMessageBoxFactory = UnoRuntime.queryInterface(XMessageBoxFactory.class, oToolkit);
             XMessageBox xMessageBox = xMessageBoxFactory.createMessageBox(_xWindowPeer, com.sun.star.awt.MessageBoxType.ERRORBOX, com.sun.star.awt.MessageBoxButtons.BUTTONS_OK, _sTitle, _sMessage);
-            XComponent xComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, xMessageBox);
+            XComponent xComponent = UnoRuntime.queryInterface(XComponent.class, xMessageBox);
             if (xMessageBox != null){
                 short nResult = xMessageBox.execute();
                 xComponent.dispose();
@@ -250,7 +250,7 @@ public class Inspector{
         try{
             String sLanguage = "Java";
             XNameAccess xNameAccess  = getConfigurationAccess("org.openoffice.inspector.ObjectInspector", true);
-            XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xNameAccess);
+            XPropertySet xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, xNameAccess);
             switch (_nLanguage){
                 case XLanguageSourceCodeGenerator.nJAVA:
                     sLanguage = "Java";
@@ -265,7 +265,7 @@ public class Inspector{
                     System.out.println("Warning: Sourcecode language is not defined!");
             }
             xPropertySet.setPropertyValue("Language", sLanguage);
-            XChangesBatch xBatch = (XChangesBatch) UnoRuntime.queryInterface(XChangesBatch.class, xNameAccess);
+            XChangesBatch xBatch = UnoRuntime.queryInterface(XChangesBatch.class, xNameAccess);
             xBatch.commitChanges();
             for (int i = 0; i < m_oSwingDialogProvider.getInspectorPageCount(); i++){
                 m_oSwingDialogProvider.getInspectorPage(i).convertCompleteSourceCode(_nLanguage);
@@ -314,7 +314,7 @@ public class Inspector{
                     XComponent xComponent = (XComponent) aHiddenDocuments.get(i);
                     if (xComponent != null){
                         try {
-                            XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, xComponent);
+                            XCloseable xCloseable = UnoRuntime.queryInterface(XCloseable.class, xComponent);
                             xCloseable.close(true);
                             aHiddenDocuments.remove(i);
                         } catch (CloseVetoException ex) {
@@ -399,9 +399,9 @@ public class Inspector{
             }
             XMultiComponentFactory xMCF = m_xComponentContext.getServiceManager();
             Object oDefaultProvider = xMCF.createInstanceWithContext("com.sun.star.configuration.DefaultProvider", this.getXComponentContext());
-            XMultiServiceFactory xMSFCfg = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, oDefaultProvider);
+            XMultiServiceFactory xMSFCfg = UnoRuntime.queryInterface(XMultiServiceFactory.class, oDefaultProvider);
             Object oAccess = xMSFCfg.createInstanceWithArguments(sAccess, new Object[]{new NamedValue("nodepath", _sNodePath)});
-            xNameAccess = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, oAccess);
+            xNameAccess = UnoRuntime.queryInterface(XNameAccess.class, oAccess);
         } catch (com.sun.star.uno.Exception e) {
         }
         return xNameAccess;

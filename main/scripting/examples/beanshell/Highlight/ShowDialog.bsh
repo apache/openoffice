@@ -40,7 +40,7 @@ boolean tryLoadingLibrary( xmcf, context, name )
                "com.sun.star.script.Application" + name + "LibraryContainer",
                context.getComponentContext());
 
-        xLibraryContainer = (XLibraryContainer)
+        xLibraryContainer =
                     UnoRuntime.queryInterface(XLibraryContainer.class, obj);
 
         System.err.println("Got XLibraryContainer");
@@ -103,7 +103,7 @@ catch (com.sun.star.uno.Exception e) {
 }
 
 // get the XDialogProvider interface from the object created above
-XDialogProvider xDialogProvider = (XDialogProvider)
+XDialogProvider xDialogProvider =
     UnoRuntime.queryInterface(XDialogProvider.class, obj);
 
 System.err.println("Got DialogProvider, now get dialog");

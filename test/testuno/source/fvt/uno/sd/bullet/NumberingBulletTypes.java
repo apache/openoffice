@@ -78,21 +78,21 @@ public class NumberingBulletTypes {
 		if (FileUtil.fileExists(m_filePath)) {//load
 			m_xtextProps = load();
 		} else {//new
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(
+			m_xSDComponent = UnoRuntime.queryInterface(
 					XComponent.class, app.newDocument("simpress"));
 			Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 			Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
-			XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
+			XShape xsecondTextBox = UnoRuntime.queryInterface(XShape.class, secondTextBox);
 			m_xtextProps = addPortion(xsecondTextBox, "Numbering bullets", false);
 		}
 	}
 	private XPropertySet load() throws Exception{
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 				app.loadDocument(m_filePath));
 		Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 		XDrawPage firstpage = getDrawPageByIndex(m_xSDComponent, 0);
 		Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
-		XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
+		XShape xsecondTextBox = UnoRuntime.queryInterface(XShape.class, secondTextBox);
 		return getPortion(xsecondTextBox, 0);
 	}
 
@@ -141,7 +141,7 @@ public class NumberingBulletTypes {
 	public void testNumberingTypes() throws Exception {
 		Object numberingrules = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules);
 
 		PropertyValue[] props = new PropertyValue[1];
@@ -163,7 +163,7 @@ public class NumberingBulletTypes {
 
 		Object numberingrules2 = m_xtextProps.getPropertyValue("NumberingRules");
 
-		XIndexReplace xReplace2 = (XIndexReplace) UnoRuntime.queryInterface(
+		XIndexReplace xReplace2 = UnoRuntime.queryInterface(
 	             XIndexReplace.class, numberingrules2);
 
 		PropertyValue[] proValues2 = (PropertyValue[])xReplace2.getByIndex(0);

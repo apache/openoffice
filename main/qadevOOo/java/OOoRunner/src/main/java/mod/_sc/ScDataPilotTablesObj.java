@@ -89,7 +89,7 @@ public class ScDataPilotTablesObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface(XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -127,7 +127,7 @@ public class ScDataPilotTablesObj extends TestCase {
 
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
-        XIndexAccess oIndexAccess = (XIndexAccess)
+        XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
@@ -160,7 +160,7 @@ public class ScDataPilotTablesObj extends TestCase {
             throw new StatusException("Couldn't fill some cells", e);
         }
 
-        XDataPilotTablesSupplier DPTS = (XDataPilotTablesSupplier)
+        XDataPilotTablesSupplier DPTS =
             UnoRuntime.queryInterface(XDataPilotTablesSupplier.class, oSheet);
 
         log.println("Getting test object ") ;

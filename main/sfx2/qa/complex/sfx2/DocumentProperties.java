@@ -169,11 +169,11 @@ public class DocumentProperties
                 new StreamSimulator("./testdocuments/TEST.odt", true, param);
             Object oSF =
                 xMSF.createInstance("com.sun.star.embed.StorageFactory");
-            XSingleServiceFactory xSF = (XSingleServiceFactory)
+            XSingleServiceFactory xSF =
                 UnoRuntime.queryInterface(XSingleServiceFactory.class, oSF);
             Object oStor = xSF.createInstanceWithArguments(
                 new Object[] { xStream });
-            XStorage xStor = (XStorage) UnoRuntime.queryInterface(
+            XStorage xStor = UnoRuntime.queryInterface(
                 XStorage.class, oStor);
             xDP.loadFromStorage(xStor);*/
 

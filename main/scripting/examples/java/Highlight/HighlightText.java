@@ -65,7 +65,7 @@ public class HighlightText implements com.sun.star.awt.XActionListener {
             return;
         }
 
-        XDialogProvider xDialogProvider = (XDialogProvider)
+        XDialogProvider xDialogProvider =
             UnoRuntime.queryInterface(XDialogProvider.class, obj);
 
         System.err.println("Got DialogProvider, now get dialog");
@@ -98,21 +98,21 @@ public class HighlightText implements com.sun.star.awt.XActionListener {
             }
         }
 
-        XControlContainer controls = (XControlContainer)
+        XControlContainer controls =
             UnoRuntime.queryInterface(XControlContainer.class, findDialog);
 
-        XButton highlightButton = (XButton) UnoRuntime.queryInterface(
+        XButton highlightButton = UnoRuntime.queryInterface(
             XButton.class, controls.getControl("HighlightButton"));
         highlightButton.setActionCommand("Highlight");
 
-        findTextBox = (XTextComponent) UnoRuntime.queryInterface(
+        findTextBox = UnoRuntime.queryInterface(
             XTextComponent.class, controls.getControl("HighlightTextField"));
 
-        XButton exitButton = (XButton) UnoRuntime.queryInterface(
+        XButton exitButton = UnoRuntime.queryInterface(
             XButton.class, controls.getControl("ExitButton"));
         exitButton.setActionCommand("Exit");
 
-        theDocument = (XTextDocument) UnoRuntime.queryInterface(
+        theDocument = UnoRuntime.queryInterface(
             XTextDocument.class, context.getDocument());
 
         highlightButton.addActionListener(this);
@@ -135,7 +135,7 @@ public class HighlightText implements com.sun.star.awt.XActionListener {
             Color cRed = new Color(255, 0, 0);
             int red = cRed.getRGB();
 
-            XReplaceable replaceable = (XReplaceable)
+            XReplaceable replaceable =
                 UnoRuntime.queryInterface(XReplaceable.class, theDocument);
 
             XReplaceDescriptor descriptor =
@@ -143,7 +143,7 @@ public class HighlightText implements com.sun.star.awt.XActionListener {
 
             // Gets a XPropertyReplace object for altering the properties
             // of the replaced text
-            XPropertyReplace xPropertyReplace = (XPropertyReplace)
+            XPropertyReplace xPropertyReplace =
                 UnoRuntime.queryInterface(XPropertyReplace.class, descriptor);
 
             // Sets the replaced text property fontweight value to Bold
@@ -207,7 +207,7 @@ public class HighlightText implements com.sun.star.awt.XActionListener {
                "com.sun.star.script.Application" + name + "LibraryContainer",
                context.getComponentContext());
 
-            XLibraryContainer xLibraryContainer = (XLibraryContainer)
+            XLibraryContainer xLibraryContainer =
                 UnoRuntime.queryInterface(XLibraryContainer.class, obj);
 
             System.err.println("Got XLibraryContainer");

@@ -200,7 +200,7 @@ public class _XDataPilotDescriptor extends MultiMethodTest {
                 return;
             }
 
-            XNamed named = (XNamed)
+            XNamed named =
                 UnoRuntime.queryInterface(XNamed.class, field);
             String name = named.getName();
 
@@ -210,7 +210,7 @@ public class _XDataPilotDescriptor extends MultiMethodTest {
 
                 fieldsNames[cnt] = name ;
 
-                XPropertySet props = (XPropertySet)
+                XPropertySet props =
                     UnoRuntime.queryInterface(XPropertySet.class, field);
 
                 try {
@@ -395,7 +395,7 @@ public class _XDataPilotDescriptor extends MultiMethodTest {
             log.print("Fields returned ") ;
             for (int i = 0; i < IA.getCount(); i++) {
                 Object field = IA.getByIndex(i);
-                XNamed named = (XNamed)UnoRuntime.queryInterface
+                XNamed named = UnoRuntime.queryInterface
                     (XNamed.class, field);
                 name = named.getName();
                 log.print(" " + name) ;

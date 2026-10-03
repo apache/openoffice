@@ -108,14 +108,14 @@ public class SwAccessiblePageView extends TestCase {
         }
 
         // Enumeration
-        XEnumerationAccess oEnumA = (XEnumerationAccess)
+        XEnumerationAccess oEnumA =
         UnoRuntime.queryInterface(XEnumerationAccess.class, oText );
         XEnumeration oEnum = oEnumA.createEnumeration();
 
         try {
             para = (XInterface) AnyConverter.toObject(
             new Type(XInterface.class),oEnum.nextElement());
-            XEnumerationAccess oEnumB = (XEnumerationAccess)
+            XEnumerationAccess oEnumB =
             UnoRuntime.queryInterface( XEnumerationAccess.class, para );
             XEnumeration oEnum2 = oEnumB.createEnumeration();
             port = (XInterface) AnyConverter.toObject(
@@ -132,9 +132,9 @@ public class SwAccessiblePageView extends TestCase {
         }
 
         try {
-            portP = (XPropertySet)
+            portP =
             UnoRuntime.queryInterface(XPropertySet.class, port);
-            paraP = (XPropertySet)
+            paraP =
             UnoRuntime.queryInterface(XPropertySet.class, para);
             paraP.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_AFTER);
         } catch ( com.sun.star.lang.WrappedTargetException e ) {
@@ -159,14 +159,14 @@ public class SwAccessiblePageView extends TestCase {
 
         XController xController = xTextDoc.getCurrentController();
 
-        XModel aModel = (XModel)
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         //switch to 'Print Preview' mode
         try {
-            XDispatchProvider xDispProv = (XDispatchProvider)
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = (com.sun.star.util.XURLTransformer)
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             ((XMultiServiceFactory)Param.getMSF()).createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of URL objects.
@@ -202,7 +202,7 @@ public class SwAccessiblePageView extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         getAccessibleObjectForRole(xRoot, AccessibleRole.SCROLL_BAR);
-        final XAccessibleValue xAccVal = (XAccessibleValue) UnoRuntime.queryInterface
+        final XAccessibleValue xAccVal = UnoRuntime.queryInterface
                                 (XAccessibleValue.class, SearchedContext) ;
 
         tEnv.addObjRelation("EventProducer",

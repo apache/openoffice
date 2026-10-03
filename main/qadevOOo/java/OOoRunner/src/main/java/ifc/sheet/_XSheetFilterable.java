@@ -47,7 +47,7 @@ public class _XSheetFilterable extends MultiMethodTest {
         if (oSheet == null) {
             log.println("Object relation oSheet is missing");
             log.println("Trying to query the needed Interface");
-            oSheet = (XSpreadsheet) UnoRuntime.queryInterface(
+            oSheet = UnoRuntime.queryInterface(
                              XSpreadsheet.class, tEnv.getTestObject());
 
             if (oSheet == null) {
@@ -87,11 +87,11 @@ public class _XSheetFilterable extends MultiMethodTest {
             oSheet.getCellByPosition(1, 2).setFormula("B");
             oObj.filter(desc);
 
-            XColumnRowRange oColumnRowRange = (XColumnRowRange) UnoRuntime.queryInterface(
+            XColumnRowRange oColumnRowRange = UnoRuntime.queryInterface(
                                                       XColumnRowRange.class,
                                                       oSheet);
             XTableRows oRows = (XTableRows) oColumnRowRange.getRows();
-            XPropertySet rowProp = (XPropertySet) UnoRuntime.queryInterface(
+            XPropertySet rowProp = UnoRuntime.queryInterface(
                                            XPropertySet.class,
                                            oRows.getByIndex(0));
             boolean locRes = ((Boolean) rowProp.getPropertyValue("IsVisible")).booleanValue();
@@ -103,7 +103,7 @@ public class _XSheetFilterable extends MultiMethodTest {
                 res &= true;
             }
 
-            rowProp = (XPropertySet) UnoRuntime.queryInterface(
+            rowProp = UnoRuntime.queryInterface(
                               XPropertySet.class, oRows.getByIndex(1));
             locRes = ((Boolean) rowProp.getPropertyValue("IsVisible")).booleanValue();
 

@@ -127,12 +127,12 @@ public class SdXCustomPresentation extends TestCase {
         log.println( "creating a test environment" );
 
         log.println( "get presentation" );
-        XCustomPresentationSupplier oPS = (XCustomPresentationSupplier)
+        XCustomPresentationSupplier oPS =
             UnoRuntime.queryInterface(
                 XCustomPresentationSupplier.class, xImpressDoc);
         XInterface oObj = oPS.getCustomPresentations();
 
-        XSingleServiceFactory oSingleMSF = (XSingleServiceFactory)
+        XSingleServiceFactory oSingleMSF =
             UnoRuntime.queryInterface(XSingleServiceFactory.class, oObj);
 
         XInterface oInstance = null;
@@ -143,7 +143,7 @@ public class SdXCustomPresentation extends TestCase {
             throw new StatusException("Couldn't create instance", e);
         }
 
-        XNameContainer aContainer = (XNameContainer)
+        XNameContainer aContainer =
             UnoRuntime.queryInterface(XNameContainer.class, oObj);
 
         try {
@@ -161,10 +161,10 @@ public class SdXCustomPresentation extends TestCase {
 
         // get the drawpage of drawing here
         log.println( "getting Drawpage" );
-        XDrawPagesSupplier oDPS = (XDrawPagesSupplier)
+        XDrawPagesSupplier oDPS =
             UnoRuntime.queryInterface(XDrawPagesSupplier.class, xImpressDoc);
         XDrawPages oDPn = oDPS.getDrawPages();
-        XIndexAccess oDPi = (XIndexAccess)
+        XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class, oDPn);
 
         XDrawPage oDrawPage = null;
@@ -182,7 +182,7 @@ public class SdXCustomPresentation extends TestCase {
             throw new StatusException("Couldn't get by index", e);
         }
 
-        XIndexContainer aIContainer = (XIndexContainer)
+        XIndexContainer aIContainer =
             UnoRuntime.queryInterface(XIndexContainer.class,oInstance);
 
         try {

@@ -62,7 +62,7 @@ public abstract class AbstractButton extends Component {
                 return null;
 
             try {
-                XAccessibleText unoAccessibleText = (XAccessibleText)
+                XAccessibleText unoAccessibleText =
                     UnoRuntime.queryInterface(XAccessibleText.class,unoAccessibleComponent);
                 if (unoAccessibleText != null) {
                     return new AccessibleTextImpl(unoAccessibleText);
@@ -142,7 +142,7 @@ public abstract class AbstractButton extends Component {
                         XAccessibleContext xAccessibleContext = unoAccessibleContext;
                         if (xAccessibleContext != null) {
                             // Query for XAccessibleAction interface
-                            XAccessibleAction xAccessibleAction = (XAccessibleAction)
+                            XAccessibleAction xAccessibleAction =
                                 UnoRuntime.queryInterface(XAccessibleAction.class, xAccessibleContext);
 
                             if (xAccessibleAction != null) {

@@ -88,7 +88,7 @@ public class ScAreaLinksObj extends TestCase {
     */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent) UnoRuntime.queryInterface
+        XComponent oComp = UnoRuntime.queryInterface
             (XComponent.class, xSheetDoc) ;
         util.DesktopTools.closeDoc(oComp);
     }
@@ -110,14 +110,14 @@ public class ScAreaLinksObj extends TestCase {
       try {
 
         // creation of testobject here
-        XPropertySet props = (XPropertySet)UnoRuntime.queryInterface
+        XPropertySet props = UnoRuntime.queryInterface
             (XPropertySet.class, xSheetDoc);
         oObj = (XInterface) AnyConverter.toObject(
                 new Type(XInterface.class),props.getPropertyValue("AreaLinks")) ;
         XAreaLinks links = null ;
 
         // adding one link into collection (for best testing)
-        links = (XAreaLinks) UnoRuntime.queryInterface(XAreaLinks.class, oObj) ;
+        links = UnoRuntime.queryInterface(XAreaLinks.class, oObj) ;
         CellAddress addr = new CellAddress ((short) 1,2,3) ;
         String aSourceArea = util.utils.getFullTestURL("calcshapes.sxc");
         links.insertAtPosition (addr, aSourceArea, "a2:b5", "", "") ;

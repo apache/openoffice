@@ -130,7 +130,7 @@ class PaintThread extends java.lang.Thread
 			if ( bPaint )
 			{
 				// System.out.println( "The bitmap is going to be painted!" );
-				XDevice xDevice = (XDevice)UnoRuntime.queryInterface( XDevice.class, m_xWindow );
+				XDevice xDevice = UnoRuntime.queryInterface( XDevice.class, m_xWindow );
 				if ( xDevice != null )
 				{
 				 	// System.out.println( "Step1" );

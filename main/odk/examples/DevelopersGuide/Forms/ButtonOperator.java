@@ -108,7 +108,7 @@ public class ButtonOperator implements XActionListener, XFeatureInvalidation
 		DocumentViewHelper aCurrentView = m_aDocument.getCurrentView();
 
 		// add a listener so we get noticed if the user presses the button
-		XButton xButtonControl = (XButton)UnoRuntime.queryInterface( XButton.class,
+		XButton xButtonControl = UnoRuntime.queryInterface( XButton.class,
 			aCurrentView.getFormControl( _buttonModel ) );
 		xButtonControl.addActionListener( this );
 

@@ -79,10 +79,10 @@ public class SubtotalsForGroup {
 		scComponent = unoApp.newDocument("scalc");
 		scDocument = SCUtil.getSCDocument(scComponent);
 		XSpreadsheet currentsheet = SCUtil.getCurrentSheet(scDocument);
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(
+		XCellRange xdataRange = UnoRuntime.queryInterface(
 				XCellRange.class, currentsheet);
 		XCellRange sourceRange = currentsheet.getCellRangeByName("A1:E8");
-		XCellRangeData sourceData = (XCellRangeData) UnoRuntime.queryInterface(
+		XCellRangeData sourceData = UnoRuntime.queryInterface(
 				XCellRangeData.class, sourceRange);
 		Object[][] Source = { { "Level", "Code", "No.", "Team", "Name" },
 				{ "BS", 20, 4, "B", "Elle" }, { "BS", 20, 6, "C", "Sweet" },
@@ -325,10 +325,10 @@ public class SubtotalsForGroup {
 		scComponent = unoApp.newDocument("scalc");
 		scDocument = SCUtil.getSCDocument(scComponent);
 		XSpreadsheet currentsheet = SCUtil.getCurrentSheet(scDocument);
-		XCellRange xdataRange = (XCellRange) UnoRuntime.queryInterface(
+		XCellRange xdataRange = UnoRuntime.queryInterface(
 				XCellRange.class, currentsheet);
 		XCellRange sourceRange = currentsheet.getCellRangeByName("A1:E8");
-		XCellRangeData sourceData = (XCellRangeData) UnoRuntime.queryInterface(
+		XCellRangeData sourceData = UnoRuntime.queryInterface(
 				XCellRangeData.class, sourceRange);
 		Object[][] Source = { { "Level", "Code", "No.", "Team", "Name" },
 				{ "BS", 20, 4, "B", "Elle" }, { "BS", 20, 6, "C", "Sweet" },

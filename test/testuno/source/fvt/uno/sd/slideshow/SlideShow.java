@@ -81,7 +81,7 @@ public class SlideShow {
 		Point po = new Point(5000, 5000);
 
 		XDrawPage xPage1 = createSlide(0);
-		XShapes xShapes1 = (XShapes) UnoRuntime.queryInterface(XShapes.class,
+		XShapes xShapes1 = UnoRuntime.queryInterface(XShapes.class,
 				xPage1);
 		XShape xRectangle1 = ShapeUtil.createShape(impressDocument, po,
 				new Size(21000, 12500), "com.sun.star.drawing.RectangleShape");
@@ -89,7 +89,7 @@ public class SlideShow {
 		ShapeUtil.addPortion(xRectangle1, "Page1", false);
 
 		XDrawPage xPage2 = createSlide(1);
-		XShapes xShapes2 = (XShapes) UnoRuntime.queryInterface(XShapes.class,
+		XShapes xShapes2 = UnoRuntime.queryInterface(XShapes.class,
 				xPage2);
 		XShape xRectangle2 = ShapeUtil.createShape(impressDocument, po,
 				new Size(21000, 12500), "com.sun.star.drawing.RectangleShape");
@@ -97,14 +97,14 @@ public class SlideShow {
 		ShapeUtil.addPortion(xRectangle2, "Page2", false);
 
 		XDrawPage xPage3 = createSlide(2);
-		XShapes xShapes3 = (XShapes) UnoRuntime.queryInterface(XShapes.class,
+		XShapes xShapes3 = UnoRuntime.queryInterface(XShapes.class,
 				xPage3);
 		XShape xRectangle3 = ShapeUtil.createShape(impressDocument, po,
 				new Size(21000, 12500), "com.sun.star.drawing.RectangleShape");
 		xShapes3.add(xRectangle3);
 		ShapeUtil.addPortion(xRectangle3, "Page3", false);
 
-		XPropertySet xPresPropSet = (XPropertySet) UnoRuntime.queryInterface(
+		XPropertySet xPresPropSet = UnoRuntime.queryInterface(
 				XPropertySet.class, pre);
 		xPresPropSet.setPropertyValue("IsEndless", Boolean.FALSE);
 		xPresPropSet.setPropertyValue("IsFullScreen", Boolean.TRUE);
@@ -132,12 +132,12 @@ public class SlideShow {
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
-		impressDocument = (XComponent) UnoRuntime.queryInterface(
+		impressDocument = UnoRuntime.queryInterface(
 				XComponent.class, unoApp.newDocument("simpress"));
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
-		sdDocument = (XPresentationSupplier) UnoRuntime.queryInterface(
+		sdDocument = UnoRuntime.queryInterface(
 				XPresentationSupplier.class, impressDocument);
 		pre = sdDocument.getPresentation();
 	}
@@ -152,11 +152,11 @@ public class SlideShow {
 	public void saveAndLoadSlide() throws Exception {
 		reLoadFile = saveAndReloadDoc(impressDocument,
 				"StarOffice XML (Impress)", "odp");
-		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
+		drawsupplier = UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, reLoadFile);
 		drawpages = drawsupplier.getDrawPages();
 
-		sdDocument = (XPresentationSupplier) UnoRuntime.queryInterface(
+		sdDocument = UnoRuntime.queryInterface(
 				XPresentationSupplier.class, reLoadFile);
 		pre = sdDocument.getPresentation();
 	}
@@ -180,11 +180,11 @@ public class SlideShow {
 		aStoreProperties[0].Value = true;
 		aStoreProperties[1].Name = "FilterName";
 		aStoreProperties[1].Value = sFilter;
-		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(
+		XStorable xStorable = UnoRuntime.queryInterface(
 				XStorable.class, presentationDocument);
 		xStorable.storeToURL(FileUtil.getUrl(filePath), aStoreProperties);
 
-		return (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		return UnoRuntime.queryInterface(XComponent.class,
 				unoApp.loadDocument(filePath));
 	}
 }

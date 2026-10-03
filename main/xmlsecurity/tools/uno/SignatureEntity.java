@@ -74,14 +74,14 @@ class SignatureEntity extends SecurityEntity
 					TestTool.SIGNATURECREATOR_COMPONENT, m_xRemoteContext);
 
 				m_xReferenceResolvedListener =
-					(XReferenceResolvedListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XReferenceResolvedListener.class, signatureCreator);
 
 	                        /*
 	                         * initializes the SignatureCreator.
 	                         */
 				XInitialization xInitialization =
-					(XInitialization)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XInitialization.class, m_xReferenceResolvedListener);
 
 				Object args[]=new Object[5];
@@ -98,7 +98,7 @@ class SignatureEntity extends SecurityEntity
 				int blockerId = m_xSAXEventKeeper.addBlocker();
 				m_xSAXEventKeeper.setSecurityId(blockerId, m_nSecurityId);
 
-				XBlockerMonitor xBlockerMonitor = (XBlockerMonitor)UnoRuntime.queryInterface(
+				XBlockerMonitor xBlockerMonitor = UnoRuntime.queryInterface(
 					XBlockerMonitor.class, m_xReferenceResolvedListener);
 				xBlockerMonitor.setBlockerId(blockerId);
 
@@ -106,10 +106,10 @@ class SignatureEntity extends SecurityEntity
 				 * sets signature creation result listener.
 				 */
 				XSignatureCreationResultBroadcaster xSignatureCreationResultBroadcaster =
-					(XSignatureCreationResultBroadcaster)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XSignatureCreationResultBroadcaster.class, m_xReferenceResolvedListener);
 				xSignatureCreationResultBroadcaster.addSignatureCreationResultListener(
-					(XSignatureCreationResultListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XSignatureCreationResultListener.class, resultListener));
 			}
 			catch( com.sun.star.uno.Exception e)
@@ -134,14 +134,14 @@ class SignatureEntity extends SecurityEntity
 					TestTool.SIGNATUREVERIFIER_COMPONENT, m_xRemoteContext);
 
 				m_xReferenceResolvedListener =
-					(XReferenceResolvedListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XReferenceResolvedListener.class, signatureVerifier);
 
 	                        /*
 	                         * initializes the SignatureVerifier.
 	                         */
 				XInitialization xInitialization =
-					(XInitialization)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XInitialization.class, m_xReferenceResolvedListener);
 				Object args[]=new Object[5];
 				args[0] = new Integer(m_nSecurityId).toString();
@@ -155,10 +155,10 @@ class SignatureEntity extends SecurityEntity
 				 * sets signature verify result listener.
 				 */
 				XSignatureVerifyResultBroadcaster xSignatureVerifyResultBroadcaster =
-					(XSignatureVerifyResultBroadcaster)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XSignatureVerifyResultBroadcaster.class, m_xReferenceResolvedListener);
 				xSignatureVerifyResultBroadcaster.addSignatureVerifyResultListener(
-					(XSignatureVerifyResultListener)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XSignatureVerifyResultListener.class, resultListener));
 			}
 			catch( com.sun.star.uno.Exception e)
@@ -171,7 +171,7 @@ class SignatureEntity extends SecurityEntity
 		 * configures the resolve listener for the signature template.
 		 */
 		XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
-			(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
+			UnoRuntime.queryInterface(
 				XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 		xReferenceResolvedBroadcaster.addReferenceResolvedListener(
 			m_nSignatureElementCollectorId, m_xReferenceResolvedListener);
@@ -223,7 +223,7 @@ class SignatureEntity extends SecurityEntity
 		try
 		{
 			XReferenceCollector xReferenceCollector =
-				(XReferenceCollector)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XReferenceCollector.class, m_xReferenceResolvedListener);
 			xReferenceCollector.setReferenceCount(m_vReferenceIds.size());
 		}
@@ -258,7 +258,7 @@ class SignatureEntity extends SecurityEntity
 			m_xSAXEventKeeper.setSecurityId(referenceId, m_nSecurityId);
 
 			XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
-				(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
+				UnoRuntime.queryInterface(
 					XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 			xReferenceResolvedBroadcaster.addReferenceResolvedListener(
 				referenceId, m_xReferenceResolvedListener);
@@ -266,7 +266,7 @@ class SignatureEntity extends SecurityEntity
 			try
 			{
 				XReferenceCollector xReferenceCollector =
-					(XReferenceCollector)UnoRuntime.queryInterface(
+					UnoRuntime.queryInterface(
 						XReferenceCollector.class, m_xReferenceResolvedListener);
 				xReferenceCollector.setReferenceId(referenceId);
 			}

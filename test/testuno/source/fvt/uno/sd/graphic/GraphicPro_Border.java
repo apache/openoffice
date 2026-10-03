@@ -100,10 +100,10 @@ public class GraphicPro_Border {
 
 	@Before
 	public void setUpDocument() throws Exception {
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(
+		m_xSDComponent = UnoRuntime.queryInterface(
 				XComponent.class, app.newDocument("simpress"));
 		Object drawPage = SDUtil.getPageByIndex(m_xSDComponent, 0);
-		m_xCurrentPage = (XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawPage);
+		m_xCurrentPage = UnoRuntime.queryInterface(XDrawPage.class, drawPage);
 		String graphicURL = FileUtil.getUrl(Testspace.prepareData("uno/sd/36.gif"));
 
 		Size orgSize = getSizePixelOfGraphicFile(app,graphicURL);
@@ -131,10 +131,10 @@ public class GraphicPro_Border {
 	}
 
 	private XDrawPage load(String filePath) throws Exception{
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
+		m_xSDComponent = UnoRuntime.queryInterface(XComponent.class,
 				app.loadDocument(filePath));
 		Object drawPage = SDUtil.getPageByIndex(m_xSDComponent, 0);
-		return (XDrawPage)UnoRuntime.queryInterface(XDrawPage.class, drawPage);
+		return UnoRuntime.queryInterface(XDrawPage.class, drawPage);
 	}
 
 	@Test
@@ -144,9 +144,9 @@ public class GraphicPro_Border {
 		String filePath = Testspace.getPath("temp/"+fileName+"."+fileType);
 		Object[] graphics = getGraphicsOfPage(m_xCurrentPage);
 		Object oGraphic = graphics[0];
-		XShape xGraphicShape = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic);
+		XShape xGraphicShape = UnoRuntime.queryInterface(XShape.class, oGraphic);
 
-		XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(
+		XPropertySet xPropSet = UnoRuntime.queryInterface(
 			     XPropertySet.class, xGraphicShape );
 
 		xPropSet.setPropertyValue( "LineStyle", this.m_LineStyle);
@@ -162,8 +162,8 @@ public class GraphicPro_Border {
 
 		XDrawPage CurrentPage = load(filePath);
 		Object oGraphic2 = getGraphicsOfPage(CurrentPage)[0];
-		XShape xGraphicShape2 = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic2);
-		XPropertySet xPropSet2 = (XPropertySet)UnoRuntime.queryInterface(
+		XShape xGraphicShape2 = UnoRuntime.queryInterface(XShape.class, oGraphic2);
+		XPropertySet xPropSet2 = UnoRuntime.queryInterface(
 			     XPropertySet.class, xGraphicShape2 );
 
 		assertEquals("line style changed", this.m_expLineStyle, xPropSet2.getPropertyValue("LineStyle"));
@@ -181,9 +181,9 @@ public class GraphicPro_Border {
 		String filePath = Testspace.getPath("temp/"+fileName+"."+fileType);
 		Object[] graphics = getGraphicsOfPage(m_xCurrentPage);
 		Object oGraphic = graphics[0];
-		XShape xGraphicShape = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic);
+		XShape xGraphicShape = UnoRuntime.queryInterface(XShape.class, oGraphic);
 
-		XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(
+		XPropertySet xPropSet = UnoRuntime.queryInterface(
 			     XPropertySet.class, xGraphicShape );
 
 		xPropSet.setPropertyValue( "LineStyle", this.m_LineStyle);
@@ -199,8 +199,8 @@ public class GraphicPro_Border {
 
 		XDrawPage CurrentPage = load(filePath);
 		Object oGraphic2 = getGraphicsOfPage(CurrentPage)[0];
-		XShape xGraphicShape2 = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic2);
-		XPropertySet xPropSet2 = (XPropertySet)UnoRuntime.queryInterface(
+		XShape xGraphicShape2 = UnoRuntime.queryInterface(XShape.class, oGraphic2);
+		XPropertySet xPropSet2 = UnoRuntime.queryInterface(
 			     XPropertySet.class, xGraphicShape2 );
 
 		assertEquals("line style changed", this.m_expLineStyle, xPropSet2.getPropertyValue("LineStyle"));

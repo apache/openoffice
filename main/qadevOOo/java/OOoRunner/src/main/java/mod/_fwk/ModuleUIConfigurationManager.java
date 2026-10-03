@@ -67,7 +67,7 @@ public class ModuleUIConfigurationManager extends TestCase {
         log.println("    disposing xTextDoc ");
         if (xTextDoc != null) {
             try {
-                XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
+                XCloseable closer = UnoRuntime.queryInterface(
                     XCloseable.class, xTextDoc);
                 closer.close(true);
             } catch (com.sun.star.util.CloseVetoException e) {
@@ -95,7 +95,7 @@ public class ModuleUIConfigurationManager extends TestCase {
             xTextDoc = WriterTools.createTextDoc(xMSF);
 
             Object o = (XInterface)xMSF.createInstance("com.sun.star.ui.ModuleUIConfigurationManagerSupplier");
-            XModuleUIConfigurationManagerSupplier xMUICMS = (XModuleUIConfigurationManagerSupplier)
+            XModuleUIConfigurationManagerSupplier xMUICMS =
             UnoRuntime.queryInterface(XModuleUIConfigurationManagerSupplier.class, o);
 
             util.dbg.printInterfaces(xMUICMS);
@@ -104,11 +104,11 @@ public class ModuleUIConfigurationManager extends TestCase {
             log.println("TestObject: " + utils.getImplName(oObj));
             tEnv = new TestEnvironment(oObj);
 
-            XNameAccess xMM = (XNameAccess)UnoRuntime.queryInterface(XNameAccess.class, xMSF.createInstance("com.sun.star.comp.framework.ModuleManager"));
+            XNameAccess xMM = UnoRuntime.queryInterface(XNameAccess.class, xMSF.createInstance("com.sun.star.comp.framework.ModuleManager"));
             String[] names = xMM.getElementNames();
 
             o = xMSF.createInstance("com.sun.star.embed.StorageFactory");
-            XSingleServiceFactory xStorageService = (XSingleServiceFactory)
+            XSingleServiceFactory xStorageService =
                     UnoRuntime.queryInterface(XSingleServiceFactory.class, o);
             Object[]props = new Object[2];
 
@@ -117,7 +117,7 @@ public class ModuleUIConfigurationManager extends TestCase {
 
             props[0] = aFile;
             props[1] = new Integer(ElementModes.READWRITE);
-            xStore = (XStorage)UnoRuntime.queryInterface(XStorage.class, xStorageService.createInstanceWithArguments(props));
+            xStore = UnoRuntime.queryInterface(XStorage.class, xStorageService.createInstanceWithArguments(props));
 
             PropertyValue[] initProps = new PropertyValue[4];
             PropertyValue propVal = new PropertyValue();
@@ -134,7 +134,7 @@ public class ModuleUIConfigurationManager extends TestCase {
             initProps[2] = propVal;
             propVal = new PropertyValue();
             propVal.Name = "UserRootCommit";
-            propVal.Value = (XTransactedObject)UnoRuntime.queryInterface(XTransactedObject.class, xStore);
+            propVal.Value = UnoRuntime.queryInterface(XTransactedObject.class, xStore);
             initProps[3] = propVal;
 
 
@@ -150,7 +150,7 @@ public class ModuleUIConfigurationManager extends TestCase {
                                             "private:resource/menubar/menubar");
             tEnv.addObjRelation("XUIConfiguration.XUIConfigurationListenerImpl",
                             new ConfigurationListener(log,
-                            (XUIConfigurationManager)UnoRuntime.queryInterface(
+                            UnoRuntime.queryInterface(
                             XUIConfigurationManager.class, oObj), xMSF));
             tEnv.addObjRelation("XModuleUIConfigurationManagerSupplier.ConfigManagerImplementationName",
                         "com.sun.star.comp.framework.ModuleUIConfigurationManager");
@@ -189,9 +189,9 @@ public class ModuleUIConfigurationManager extends TestCase {
                 PropertyValue[]prop = _XUIConfigurationManager.createMenuBarEntry(
                                         "Trigger Event", xMenuBarSettings, xMSF, log);
                 _XUIConfigurationManager.createMenuBarItem("Click for Macro",
-                                (XIndexContainer)UnoRuntime.queryInterface(
+                                UnoRuntime.queryInterface(
                                 XIndexContainer.class, prop[3].Value), log);
-                XIndexContainer x = (XIndexContainer)UnoRuntime.queryInterface(XIndexContainer.class, xMenuBarSettings);
+                XIndexContainer x = UnoRuntime.queryInterface(XIndexContainer.class, xMenuBarSettings);
                 x.insertByIndex(x.getCount(), prop);
                 xUIManager.replaceSettings("private:resource/menubar/menubar", xMenuBarSettings);
                 xUIManager.reset();

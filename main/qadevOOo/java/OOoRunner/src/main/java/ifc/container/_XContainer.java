@@ -94,10 +94,10 @@ public class _XContainer extends MultiMethodTest {
         // do this test with a different object
         Object altObj = tEnv.getObjRelation("XContainer.AlternateObject");
         if (altObj != null) {
-            oObj = (XContainer)UnoRuntime.queryInterface(XContainer.class, altObj);
+            oObj = UnoRuntime.queryInterface(XContainer.class, altObj);
         }
 
-        NC = (XNameContainer) UnoRuntime.queryInterface
+        NC = UnoRuntime.queryInterface
             (XNameContainer.class, oObj) ;
 
         Object container = null;

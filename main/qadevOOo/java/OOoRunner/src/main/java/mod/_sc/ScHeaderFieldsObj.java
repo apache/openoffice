@@ -91,7 +91,7 @@ public class ScHeaderFieldsObj extends TestCase {
      */
     protected void cleanup( TestParameters tParam, PrintWriter log ) {
         log.println( "    disposing xSheetDoc " );
-        XComponent oComp = (XComponent)
+        XComponent oComp =
             UnoRuntime.queryInterface (XComponent.class, xSpreadsheetDoc);
         util.DesktopTools.closeDoc(oComp);
     }
@@ -121,7 +121,7 @@ public class ScHeaderFieldsObj extends TestCase {
         XNameAccess PageStyles = null;
         XStyle StdStyle = null;
 
-        XStyleFamiliesSupplier StyleFam = (XStyleFamiliesSupplier)
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(XStyleFamiliesSupplier.class,
             xSpreadsheetDoc );
 
@@ -143,7 +143,7 @@ public class ScHeaderFieldsObj extends TestCase {
         }
 
         //get the property-set
-        PropSet = (XPropertySet)
+        PropSet =
             UnoRuntime.queryInterface(XPropertySet.class, StdStyle);
 
         XHeaderFooterContent RPHC = null;
@@ -167,7 +167,7 @@ public class ScHeaderFieldsObj extends TestCase {
 
         XText left = RPHC.getLeftText();
 
-        XMultiServiceFactory oDocMSF = (XMultiServiceFactory)
+        XMultiServiceFactory oDocMSF =
             UnoRuntime.queryInterface(
                 XMultiServiceFactory.class,
                 xSpreadsheetDoc );
@@ -177,7 +177,7 @@ public class ScHeaderFieldsObj extends TestCase {
             oObj = (XInterface)
                 oDocMSF.createInstance( "com.sun.star.text.TextField.Time" );
 
-            the_Field = (XTextContent)
+            the_Field =
                 UnoRuntime.queryInterface(XTextContent.class,oObj);
 
         } catch(com.sun.star.uno.Exception e) {
@@ -204,7 +204,7 @@ public class ScHeaderFieldsObj extends TestCase {
             throw new StatusException("Couldn't create a test environment", e);
         }
 
-        XTextFieldsSupplier xTFSupp = (XTextFieldsSupplier)
+        XTextFieldsSupplier xTFSupp =
             UnoRuntime.queryInterface(XTextFieldsSupplier.class, left);
 
         oObj = xTFSupp.getTextFields();
