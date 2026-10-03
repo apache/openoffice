@@ -1,0 +1,54 @@
+load("@rules_java//java:defs.bzl", "java_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Apache Commons Lang 3.3 -- shipped inside the Wiki Publisher extension
+# (//main/swext), named on mediawiki.jar's Class-Path.  The jar under its
+# delivered name is //main/apache-commons:commons-lang3-3.3.jar.
+#
+# Mirrors build.xml target "jar": every source under src/main/java, no
+# resources.
+#
+# ENCODING.  Upstream's <javac> names no encoding, so it compiled with the
+# platform default (cp1252 on Windows).  EntityArrays.java is the one file
+# with non-ASCII bytes: Latin-1 characters in COMMENTS only (each row of the
+# entity table is annotated with the character itself; the values are \u
+# escapes).  Bazel's JavaBuilder compiles UTF-8 and overrides an -encoding in
+# javacopts, so the file is transcoded ISO-8859-1 -> UTF-8 (lossless) and the
+# original excluded -- the same treatment as @saxon's Latin-1 sources.
+_LATIN1_SRCS = [
+    "src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java",
+]
+
+[genrule(
+    name = "utf8_" + f.split("/")[-1].replace(".java", ""),
+    srcs = [f],
+    outs = ["utf8/" + f],
+    cmd = "iconv -f ISO-8859-1 -t UTF-8 $< > $@",
+) for f in _LATIN1_SRCS]
+
+java_library(
+    name = "commons-lang3",
+    srcs = ["utf8/" + f for f in _LATIN1_SRCS] + glob(
+        ["src/main/java/**/*.java"],
+        exclude = _LATIN1_SRCS,
+    ),
+    javacopts = [
+        "--release", "8",
+        "-nowarn",
+        "-XepDisableAllChecks",
+    ],
+)
+
+genrule(
+    name = "meta_inf_files",
+    srcs = ["LICENSE.txt", "NOTICE.txt"],
+    outs = ["META-INF/LICENSE.txt", "META-INF/NOTICE.txt"],
+    cmd = "cp $(location LICENSE.txt) $(location META-INF/LICENSE.txt) && " +
+          "cp $(location NOTICE.txt) $(location META-INF/NOTICE.txt)",
+)
+
+java_library(
+    name = "meta_inf",
+    resources = [":meta_inf_files"],
+)

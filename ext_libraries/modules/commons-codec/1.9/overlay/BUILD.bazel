@@ -1,0 +1,44 @@
+load("@rules_java//java:defs.bzl", "java_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Apache Commons Codec 1.9 -- a runtime dependency of commons-httpclient, and
+# shipped next to it inside the Wiki Publisher extension (//main/swext).
+# The jar under its delivered name is //main/apache-commons:commons-codec-1.9.jar.
+#
+# Mirrors build.xml target "jar", which AOO ran: every source under
+# src/main/java, plus as resources the Beider-Morse rule tables from
+# src/main/resources AND the package.html/overview.html files under
+# src/main/java (Ant's jar step copies both trees into build/classes).  Both
+# are Maven source roots, which Bazel's default resource path strips, so both
+# land at org/apache/commons/codec/... as upstream's do.
+java_library(
+    name = "commons-codec",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resources = glob(
+        ["src/main/java/**", "src/main/resources/**"],
+        exclude = ["**/*.java"],
+    ),
+    javacopts = [
+        "--release", "8",
+        "-nowarn",
+        "-XepDisableAllChecks",
+    ],
+)
+
+# META-INF/LICENSE.txt + META-INF/NOTICE.txt.  Upstream's build.xml copies
+# LICENSE.txt to BOTH names, so the dmake jar carries the license twice and no
+# NOTICE; AOO's apache-commons/patches/codec.patch fixes exactly that but was
+# never listed in PATCH_FILES.  The real NOTICE is shipped here.
+genrule(
+    name = "meta_inf_files",
+    srcs = ["LICENSE.txt", "NOTICE.txt"],
+    outs = ["META-INF/LICENSE.txt", "META-INF/NOTICE.txt"],
+    cmd = "cp $(location LICENSE.txt) $(location META-INF/LICENSE.txt) && " +
+          "cp $(location NOTICE.txt) $(location META-INF/NOTICE.txt)",
+)
+
+java_library(
+    name = "meta_inf",
+    resources = [":meta_inf_files"],
+)

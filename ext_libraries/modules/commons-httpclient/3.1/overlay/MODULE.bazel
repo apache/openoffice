@@ -1,0 +1,9 @@
+module(
+    name = "commons-httpclient",
+    version = "3.1",
+    compatibility_level = 1,
+)
+
+bazel_dep(name = "rules_java", version = "8.11.0")
+bazel_dep(name = "commons-codec", version = "1.9")
+bazel_dep(name = "commons-logging", version = "1.1.3")

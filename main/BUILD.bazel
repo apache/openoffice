@@ -1,0 +1,8 @@
+# The source tree's top-level files.  Every module under main/ is its own
+# package with its own BUILD.bazel; this one exists only so that files living
+# directly in main/ can be referenced by label.
+
+# The Apache License 2.0 text.  readlicense_oo delivered it as
+# bin/osl/LICENSE_ALv2, from where extensions copied it into their archives
+# as license/LICENSE (e.g. swext's mediawiki/src/makefile.mk PACKLICS).
+exports_files(["LICENSE_ALv2"])

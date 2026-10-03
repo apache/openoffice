@@ -1,0 +1,46 @@
+load("@rules_java//java:defs.bzl", "java_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Apache Commons Logging 1.1.3 -- commons-httpclient's logging facade, shipped
+# inside the Wiki Publisher extension (//main/swext).  The jar under its
+# delivered name is //main/apache-commons:commons-logging-1.1.3.jar.
+#
+# Mirrors build.xml targets "compile build-jar" as AOO ran them.  That
+# build.xml compiles each optional adapter only when its library is on the
+# class path; AOO supplied none of log4j, Avalon or LogKit, so those three
+# adapters were never built and are excluded here.  The Servlet API WAS
+# supplied (-Dservletapi.jar=servlet-api.jar from main/tomcat), so
+# ServletContextCleaner is compiled -- against @tomcat's servlet API as a
+# compile-only (neverlink) dependency, exactly as upstream: the jar never
+# carried javax.servlet, and needs it only when run inside a servlet container.
+java_library(
+    name = "commons-logging",
+    srcs = glob(
+        ["src/main/java/**/*.java"],
+        exclude = [
+            "src/main/java/org/apache/commons/logging/impl/AvalonLogger.java",
+            "src/main/java/org/apache/commons/logging/impl/Log4JLogger.java",
+            "src/main/java/org/apache/commons/logging/impl/LogKitLogger.java",
+        ],
+    ),
+    deps = ["@tomcat//:servlet-api-neverlink"],
+    javacopts = [
+        "--release", "8",
+        "-nowarn",
+        "-XepDisableAllChecks",
+    ],
+)
+
+genrule(
+    name = "meta_inf_files",
+    srcs = ["LICENSE.txt", "NOTICE.txt"],
+    outs = ["META-INF/LICENSE.txt", "META-INF/NOTICE.txt"],
+    cmd = "cp $(location LICENSE.txt) $(location META-INF/LICENSE.txt) && " +
+          "cp $(location NOTICE.txt) $(location META-INF/NOTICE.txt)",
+)
+
+java_library(
+    name = "meta_inf",
+    resources = [":meta_inf_files"],
+)

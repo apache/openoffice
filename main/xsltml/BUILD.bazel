@@ -1,0 +1,10 @@
+package(default_visibility = ["//visibility:public"])
+
+# The XSLT MathML Library, as main/xsltml delivered it (bin/xslt/export/xsltml):
+# its seven stylesheets, patched.  The archive, the patch and why the overlay
+# carries the patched files are documented in @xsltml's overlay BUILD.bazel.
+# Consumed only by the Wiki Publisher extension (//main/swext), as filter/math/.
+alias(
+    name = "xsltml",
+    actual = "@xsltml//:xsltml",
+)

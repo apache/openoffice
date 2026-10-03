@@ -1,0 +1,9 @@
+{
+    "url": "file:///C:/workspace/openoffice/ext_sources/e8e197d628436490886d17cffa108fe3-commons-logging-1.1.3-src.tar.gz",
+    "integrity": "sha256-OjLfuEbFjTs/8mQjXPy69UrQhqeT9ky+RAn0aIbOtlU=",
+    "strip_prefix": "commons-logging-1.1.3-src",
+    "overlay": {
+        "BUILD.bazel": "sha256-1mFrii76EWiF0XPouMcjwEcG/zXXPsEilsLrsCnMAyg=",
+        "MODULE.bazel": "sha256-cYCMHAfY68sRBt0SJUfknx8FiyZM8SlFh+R9Xq3/Ubw="
+    }
+}

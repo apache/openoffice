@@ -1,0 +1,30 @@
+load("@rules_java//java:defs.bzl", "java_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Apache Tomcat 5.5.36 -- AOO uses only the Servlet 2.4 API (JSR 154) out of it.
+#
+# Mirrors AOO's retired main/tomcat module, which ran servletapi/jsr154's
+# build.xml target "jar" and delivered servlet-api.jar.  Its single consumer
+# was the commons-logging build (ServletContextCleaner implements
+# javax.servlet.ServletContextListener); the jar was never installed.  So this
+# is a COMPILE-ONLY dependency: consumers take :servlet-api through
+# :servlet-api-neverlink and nothing of it reaches a shipped jar.
+#
+# The API's LocalStrings*.properties resources are left out: they are read by
+# the servlet implementation classes at run time, never at compile time.
+java_library(
+    name = "servlet-api",
+    srcs = glob(["servletapi/jsr154/src/share/javax/**/*.java"]),
+    javacopts = [
+        "--release", "8",
+        "-nowarn",
+        "-XepDisableAllChecks",
+    ],
+)
+
+java_library(
+    name = "servlet-api-neverlink",
+    exports = [":servlet-api"],
+    neverlink = True,
+)

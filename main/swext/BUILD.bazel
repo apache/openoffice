@@ -1,0 +1,245 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:extension.bzl", "ext_files", "oxt_package", "xcu_default")
+load("//build/rules:help_pipeline.bzl", "help_extension")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
+
+# swext -- the Wiki Publisher extension, wiki-publisher.oxt.
+#
+# A Writer add-on that publishes the current document to a MediaWiki server:
+# a Java UNO component (mediawiki.jar) talking HTTP through Apache Commons, an
+# XSLT export filter (ODT -> MediaWiki markup), a Basic dialog library, its
+# configuration and its own help.  Upstream builds it with Ant
+# (mediawiki/build.xml, target uno-package), after dmake has processed the
+# configuration files (mediawiki/src/registry/**/makefile.mk) and linked the
+# help (mediawiki/help/makefile.mk).  This file is all three.
+#
+# The .oxt is a DELIVERABLE, not part of the install: nothing in scp2 ships it,
+# upstream distributes it separately, and a user adds it with the Extension
+# Manager (or unopkg add).  So //main/staging does not take it.
+#
+# Not built: mediawiki_develop.zip, Ant's "development-package" -- the same
+# files unzipped for development; nothing in the tree consumes it.
+#
+# See readme.md.
+
+# Ant's <filterset>, applied to every file its tmpdir step copies (the
+# configuration, description.xml, help/component.txt), and the same three
+# tokens the help makefile seds into the pages.
+TOKENS = {
+    "@WIKIEXTENSIONPRODUCTNAME@": "Wiki Publisher",
+    "@WIKIEXTENSIONID@": "com.sun.wiki-publisher",
+    "@WIKIEXTENSIONFILENAME@": "wiki-publisher",
+}
+
+# ── mediawiki.jar ────────────────────────────────────────────────────────────
+
+java_library(
+    name = "mediawiki_classes",
+    srcs = glob(["mediawiki/src/com/sun/star/wiki/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/javaunohelper:juh_jar",
+        "//main/jurt:jurt",
+        "//main/unoil:unoil",
+        "@commons-httpclient//:commons-httpclient",
+    ],
+)
+
+# The manifest is upstream's, attribute for attribute (build.xml target jar):
+# javaloader registers RegistrationClassName, and Class-Path finds the Commons
+# jars next to mediawiki.jar in the installed extension -- by exact filename.
+# There is NO UNO-Type-Path, as upstream; see readme.md for what that means.
+uno_jar(
+    name = "mediawiki_jar",
+    out = "mediawiki.jar",
+    jars = [":mediawiki_classes"],
+    manifest_lines = [
+        "Class-Path: commons-codec-1.9.jar commons-lang3-3.3.jar commons-httpclient-3.1.jar commons-logging-1.1.3.jar",
+        "RegistrationClassName: com.sun.star.wiki.WikiEditorImpl",
+    ],
+)
+
+# ── configuration ────────────────────────────────────────────────────────────
+
+_REG = "mediawiki/src/registry/"
+
+# The extension's own schema, trimmed as tg_config.mk does for every .xcs.
+genrule(
+    name = "wikiextension_xcs",
+    srcs = [
+        _REG + "schema/org/openoffice/Office/Custom/WikiExtension.xcs",
+        "//main/officecfg:util/schema_trim.xsl",
+    ],
+    outs = ["trimmed/registry/schema/org/openoffice/Office/Custom/WikiExtension.xcs"],
+    tools = ["@libxslt//:xsltproc"],
+    cmd_bat = "$(location @libxslt//:xsltproc) --novalid -o $(OUTS) " +
+              "$(location //main/officecfg:util/schema_trim.xsl) " +
+              "$(location %s)" % (_REG + "schema/org/openoffice/Office/Custom/WikiExtension.xcs"),
+)
+
+# The data files' locale-independent form.  In an en-US build that IS what
+# Ant packs: its tmpdir step takes the cfgex-merged copies from misc/<id>/merge
+# only when they exist, which needs WITH_LANG; otherwise its xcumerge step
+# fills merge/ from registry/data, i.e. from exactly this.
+xcu_default(
+    name = "registry_data",
+    srcs = [
+        _REG + "data/org/openoffice/Office/Addons.xcu",
+        _REG + "data/org/openoffice/Office/OptionsDialog.xcu",
+        _REG + "data/org/openoffice/Office/Paths.xcu",
+        _REG + "data/org/openoffice/Office/ProtocolHandler.xcu",
+        _REG + "data/org/openoffice/Office/Custom/WikiExtension.xcu",
+    ],
+    schemas = [
+        ":wikiextension_xcs",
+        "//main/officecfg:registry_schema_trimmed",
+    ],
+)
+
+# All flat at the archive root, where META-INF/manifest.xml names them.  The
+# TypeDetection pair is the SOURCE file, not a processed one: build.xml takes
+# it from src/ on purpose ("the build xcu files can not be used since the tag
+# containing x-default attribute is thrown away, issue 99378").
+ext_files(
+    name = "config",
+    srcs = [
+        ":registry_data",
+        ":wikiextension_xcs",
+        _REG + "data/org/openoffice/TypeDetection/Filter.xcu",
+        _REG + "data/org/openoffice/TypeDetection/Types.xcu",
+        "mediawiki/src/description.xml",
+    ],
+    substitutions = TOKENS,
+)
+
+ext_files(
+    name = "manifest",
+    srcs = ["mediawiki/src/uno-extension-manifest.xml"],
+    dest = "META-INF",
+    rename = {"uno-extension-manifest.xml": "manifest.xml"},
+)
+
+# ── code ─────────────────────────────────────────────────────────────────────
+
+ext_files(
+    name = "jars",
+    srcs = [
+        ":mediawiki_jar",
+        "//main/apache-commons:commons-codec",
+        "//main/apache-commons:commons-httpclient",
+        "//main/apache-commons:commons-lang3",
+        "//main/apache-commons:commons-logging",
+    ],
+)
+
+# The Basic library behind the Send-to-MediaWiki dialogs.
+ext_files(
+    name = "basic",
+    srcs = glob([
+        "mediawiki/dialogs/*.xba",
+        "mediawiki/dialogs/*.xdl",
+        "mediawiki/dialogs/*.xlb",
+    ]),
+    dest = "WikiEditor",
+)
+
+# The export filter: odt2mediawiki.xsl imports math/mmltex.xsl, so the MathML
+# stylesheets sit in filter/math/ next to it.
+ext_files(
+    name = "filter",
+    srcs = ["mediawiki/src/filter/odt2mediawiki.xsl"],
+    dest = "filter",
+)
+
+ext_files(
+    name = "filter_math",
+    srcs = ["//main/xsltml"],
+    dest = "filter/math",
+)
+
+ext_files(
+    name = "templates",
+    srcs = ["mediawiki/src/filter/mediawiki.ott"],
+    dest = "templates/MediaWiki",
+)
+
+ext_files(
+    name = "license",
+    srcs = [
+        "//main:LICENSE_ALv2",
+        "mediawiki/src/THIRDPARTYLICENSEREADME.html",
+    ],
+    dest = "license",
+    rename = {"LICENSE_ALv2": "LICENSE"},
+)
+
+# ── help ─────────────────────────────────────────────────────────────────────
+#
+# Two languages, en-US and en: the help makefile links $(uniq en $(alllangiso))
+# because "the help uses en instead of en-US" -- the extension manager falls
+# back from en-GB, en-ZA, ... to en, never to en-US.  Upstream's en pages are
+# helpex's merge for a language with no translation: the en-US text with every
+# xml-lang="en-US" rewritten to xml-lang="en", which is all the second
+# substitution does.  For en-US helpex's merge is a copy (as in helpcontent2).
+
+_PACKAGE = "com.sun.wiki-publisher"
+
+_XHPFILES = [
+    "mediawiki/help/wiki.xhp",
+    "mediawiki/help/wikiaccount.xhp",
+    "mediawiki/help/wikiformats.xhp",
+    "mediawiki/help/wikisend.xhp",
+    "mediawiki/help/wikisettings.xhp",
+]
+
+ext_files(
+    name = "component_txt",
+    srcs = ["mediawiki/help/component.txt"],
+    dest = "help",
+    substitutions = TOKENS,
+)
+
+[
+    ext_files(
+        name = "help_pages_" + lang,
+        srcs = _XHPFILES,
+        dest = "help/%s/%s" % (lang, _PACKAGE),
+        substitutions = TOKENS if lang == "en-US" else dict(
+            TOKENS.items() + [('xml-lang="en-US"', 'xml-lang="%s"' % lang)],
+        ),
+    )
+    for lang in ["en-US", "en"]
+]
+
+[
+    help_extension(
+        name = "help_" + lang,
+        lang = lang,
+        pages = ":help_pages_" + lang,
+    )
+    for lang in ["en-US", "en"]
+]
+
+# ── the extension ────────────────────────────────────────────────────────────
+
+oxt_package(
+    name = "wiki-publisher",
+    out = "wiki-publisher.oxt",
+    contents = [
+        ":basic",
+        ":component_txt",
+        ":config",
+        ":filter",
+        ":filter_math",
+        ":help_en",
+        ":help_en-US",
+        ":help_pages_en",
+        ":help_pages_en-US",
+        ":jars",
+        ":license",
+        ":manifest",
+        ":templates",
+    ],
+)

@@ -18,7 +18,16 @@ for one language.  Three rules:
 
 Outputs land at <package>/help/<installed lang dir>/..., ready for a
 tree_install into the staged install.
+
+A fourth rule serves extensions, whose help is linked differently:
+
+  help_extension HelpLinker's extension mode (-extlangsrc/-extlangdest, as
+                 solenv's extension_helplink.mk runs it) over one language's
+                 pages, then the page jar and HelpIndexerTool -extension.
+                 Returns OxtEntriesInfo for extension.bzl's oxt_package.
 """
+
+load("//build/rules:extension.bzl", "OxtEntriesInfo")
 
 _TOOL_DLLS = [
     # (attr, runtime name) — sal.dll's import library records LIBRARY sal3.
@@ -115,12 +124,10 @@ help_trees = rule(
 # (shared) gets NO index: indexDocs finds nothing and the tool deletes it.
 _IDXL_FILES = ["_0.cfs", "_0.cfx", "segments.gen", "segments_2"]
 
-def _help_module_impl(ctx):
-    m = ctx.attr.module
-    tree = ctx.attr.xhp_tree[HelpXhpTreeInfo]
-    dest = "help/%s/" % ctx.attr.install_lang
+def _stage_helplinker(ctx):
+    """Tool dir: HelpLinker.exe + sal3.dll + CRT + an external manifest.
 
-    # Tool dir: HelpLinker.exe + sal3.dll + CRT + an external manifest.
+    Returns (helplinker, all staged files)."""
     tools_prefix = ctx.label.name + "_tools/"
     staged = []
     for f, name in [(ctx.executable._helplinker, "HelpLinker.exe")] + \
@@ -132,7 +139,14 @@ def _help_module_impl(ctx):
     manifest = ctx.actions.declare_file(tools_prefix + "HelpLinker.exe.manifest")
     ctx.actions.symlink(output = manifest, target_file = ctx.file._app_manifest)
     staged.append(manifest)
-    helplinker = staged[0]
+    return staged[0], staged
+
+def _help_module_impl(ctx):
+    m = ctx.attr.module
+    tree = ctx.attr.xhp_tree[HelpXhpTreeInfo]
+    dest = "help/%s/" % ctx.attr.install_lang
+
+    helplinker, staged = _stage_helplinker(ctx)
 
     links = ctx.actions.declare_file(ctx.label.name + "_links.txt")
     ctx.actions.write(links, "\n".join(ctx.attr.links) + "\n")
@@ -221,6 +235,105 @@ help_module = rule(
                   "xmlhelp's processLang falls back from en-US to en either way.",
         ),
         "_driver": attr.label(default = "//build/rules:help_link.pl", allow_single_file = True),
+        "_perl": attr.label(
+            default = "@strawberry-perl//:perl_exe",
+            allow_single_file = True,
+            cfg = "exec",
+        ),
+        "_helplinker": attr.label(
+            default = "//main/l10ntools:HelpLinker",
+            executable = True,
+            cfg = "exec",
+        ),
+        "_sal_dll": attr.label(default = "//main/sal:sal", allow_single_file = True, cfg = "exec"),
+        "_crt_dlls": attr.label(default = "//main/external/msvcp90:msvcp90", allow_files = True, cfg = "exec"),
+        "_app_manifest": attr.label(
+            default = "//main/external/msvcp90:vc90_app_manifest",
+            allow_single_file = True,
+            cfg = "exec",
+        ),
+        "_indexer": attr.label(
+            default = "//main/l10ntools:HelpIndexerTool_deploy.jar",
+            allow_single_file = True,
+            cfg = "exec",
+        ),
+        "_embed_xsl": attr.label(default = "//main/xmlhelp:util/embed.xsl", allow_single_file = True),
+        "_idxcaption_xsl": attr.label(default = "//main/xmlhelp:util/idxcaption.xsl", allow_single_file = True),
+        "_idxcontent_xsl": attr.label(default = "//main/xmlhelp:util/idxcontent.xsl", allow_single_file = True),
+    },
+)
+
+# ── help_extension ───────────────────────────────────────────────────────────
+
+# What one language of an extension's help consists of, besides its pages.
+# HelpLinker's extension mode names its databases with a trailing underscore
+# (HelpLinker.cxx bUse_), and the module is always "help": the extension
+# manager looks for help/<lang>/help.* (dp_help).
+_EXT_PRODUCTS = ["help.db_", "help.ht_", "help.key_", "help.jar"] +                 ["help.idxl/" + f for f in _IDXL_FILES]
+
+def _help_extension_impl(ctx):
+    dest = "help/" + ctx.attr.lang
+    helplinker, staged = _stage_helplinker(ctx)
+
+    # The pages, by their path below help/<lang>/ ("<package id>/x.xhp").
+    pages = {}
+    for path, f in ctx.attr.pages[OxtEntriesInfo].entries.items():
+        if not path.startswith(dest + "/"):
+            fail("page %s is not under %s/" % (path, dest))
+        pages[path[len(dest) + 1:]] = f
+    if not pages:
+        fail("help_extension %s: no pages" % ctx.label)
+
+    args = ctx.actions.args()
+    args.add(ctx.file._driver)
+    args.add("--helplinker", helplinker)
+    args.add("--tools-dir", helplinker.dirname)
+    java_rt = ctx.toolchains["@bazel_tools//tools/jdk:runtime_toolchain_type"].java_runtime
+    args.add("--java", java_rt.java_executable_exec_path)
+    args.add("--indexer", ctx.file._indexer)
+    args.add("--lang", ctx.attr.lang)
+    args.add("--sty", ctx.file._embed_xsl)
+    args.add("--idxcaption", ctx.file._idxcaption_xsl)
+    args.add("--idxcontent", ctx.file._idxcontent_xsl)
+    for rel in sorted(pages.keys()):
+        args.add("--page", "%s=%s" % (rel, pages[rel].path))
+
+    work = ctx.actions.declare_directory(ctx.label.name + "_work")
+    args.add("--work", work.path)
+
+    entries = {}
+    for rel in _EXT_PRODUCTS:
+        out = ctx.actions.declare_file("%s/%s/%s" % (ctx.label.name, dest, rel))
+        args.add("--out", "%s=%s" % (rel, out.path))
+        entries[dest + "/" + rel] = out
+
+    ctx.actions.run(
+        executable = ctx.file._perl,
+        arguments = [args],
+        inputs = depset(
+            staged + pages.values() + [ctx.file._driver, ctx.file._indexer, ctx.file._embed_xsl,
+                                       ctx.file._idxcaption_xsl, ctx.file._idxcontent_xsl],
+            transitive = [java_rt.files],
+        ),
+        outputs = entries.values() + [work],
+        use_default_shell_env = True,
+        mnemonic = "HelpExtension",
+        progress_message = "Linking extension help %s (%s)" % (ctx.label, ctx.attr.lang),
+    )
+    return [DefaultInfo(files = depset(entries.values())), OxtEntriesInfo(entries = entries)]
+
+help_extension = rule(
+    implementation = _help_extension_impl,
+    toolchains = ["@bazel_tools//tools/jdk:runtime_toolchain_type"],
+    attrs = {
+        "lang": attr.string(mandatory = True, doc = "Language directory under help/, e.g. en-US."),
+        "pages": attr.label(
+            mandatory = True,
+            providers = [OxtEntriesInfo],
+            doc = "The language's pages, at help/<lang>/<package id>/*.xhp (an ext_files target).  " +
+                  "They ship in the archive from there too; this rule adds the compiled files.",
+        ),
+        "_driver": attr.label(default = "//build/rules:help_extension_link.pl", allow_single_file = True),
         "_perl": attr.label(
             default = "@strawberry-perl//:perl_exe",
             allow_single_file = True,

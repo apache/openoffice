@@ -1,0 +1,9 @@
+{
+    "url": "file:///C:/workspace/openoffice/ext_sources/4c8c505cc3cba4c467c479e3e0f09ba4-commons-lang3-3.3-src.tar.gz",
+    "integrity": "sha256-pCbIMF1/0LG77z1e5TfUCewN/iAwXHe2BfiixoPGsNg=",
+    "strip_prefix": "commons-lang3-3.3-src",
+    "overlay": {
+        "BUILD.bazel": "sha256-fkCOkBLDMdS91iV30QwPYju2T+yFaqmJg1Wsvz9eTCo=",
+        "MODULE.bazel": "sha256-+GLLoaN+AGGQj78SJJn52z9sP1uZ8QAgM6OmenFEomA="
+    }
+}

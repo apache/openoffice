@@ -1,0 +1,26 @@
+package(default_visibility = ["//visibility:public"])
+
+# XSLT MathML Library 2.1.2 -- MathML -> LaTeX stylesheets.  Shipped as
+# filter/math/ inside the Wiki Publisher extension (//main/swext), whose
+# odt2mediawiki.xsl imports math/mmltex.xsl to turn formulas into <math> markup.
+#
+# AOO's main/xsltml unpacks the zip, converts the files' line ends, applies
+# xsltml_2.1.2.patch to all seven stylesheets and delivers them; no other file
+# of the archive is used.  Because the patch touches EVERY delivered file, the
+# overlay carries the seven patched stylesheets themselves rather than the
+# patch: they are dmake's output byte for byte (CRLF, as CONVERTFILES leaves
+# them), identical to filter/math/ in the dmake-built wiki-publisher.oxt.  An
+# overlay entry is copied verbatim, so none of it can be silently dropped the
+# way a multi-file bzlmod patch can be.
+filegroup(
+    name = "xsltml",
+    srcs = [
+        "cmarkup.xsl",
+        "entities.xsl",
+        "glayout.xsl",
+        "mmltex.xsl",
+        "scripts.xsl",
+        "tables.xsl",
+        "tokens.xsl",
+    ],
+)

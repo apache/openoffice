@@ -1,0 +1,58 @@
+load("@rules_java//java:defs.bzl", "java_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Apache Commons HttpClient 3.1 -- the HTTP client of the Wiki Publisher
+# extension (//main/swext), which talks to MediaWiki servers through it.  The
+# jar under its delivered name is //main/apache-commons:commons-httpclient-3.1.jar.
+#
+# Mirrors build.xml target "dist" as AOO ran it: the library is src/java only
+# (examples and tests are separate trees, never jarred).  Its manifest comes
+# from src/conf/MANIFEST.MF, reproduced at //main/apache-commons.
+#
+# ENCODING.  AOO's httpclient.patch adds encoding="iso8859-1" to every
+# <javac>.  The one genuinely Latin-1 file is HttpContentTooLargeException.java,
+# whose only non-ASCII byte is in an @author COMMENT; it is transcoded to UTF-8,
+# since Bazel's JavaBuilder overrides an -encoding in javacopts.  Two other
+# files already hold UTF-8 bytes, likewise only in @author comments, so reading
+# them as UTF-8 instead of Latin-1 changes no compiled byte.
+_LATIN1_SRCS = [
+    "src/java/org/apache/commons/httpclient/HttpContentTooLargeException.java",
+]
+
+[genrule(
+    name = "utf8_" + f.split("/")[-1].replace(".java", ""),
+    srcs = [f],
+    outs = ["utf8/" + f],
+    cmd = "iconv -f ISO-8859-1 -t UTF-8 $< > $@",
+) for f in _LATIN1_SRCS]
+
+java_library(
+    name = "commons-httpclient",
+    srcs = ["utf8/" + f for f in _LATIN1_SRCS] + glob(
+        ["src/java/**/*.java"],
+        exclude = _LATIN1_SRCS,
+    ),
+    deps = [
+        "@commons-codec//:commons-codec",
+        "@commons-logging//:commons-logging",
+    ],
+    javacopts = [
+        "--release", "8",
+        "-nowarn",
+        "-XepDisableAllChecks",
+    ],
+)
+
+# Upstream's jar task adds <metainf> LICENSE.txt only; 3.1 has no NOTICE.
+genrule(
+    name = "meta_inf_files",
+    srcs = ["LICENSE.txt"],
+    outs = ["META-INF/LICENSE.txt"],
+    cmd = "cp $< $@",
+)
+
+java_library(
+    name = "meta_inf",
+    resources = [":meta_inf_files"],
+)

@@ -81,6 +81,9 @@ exports_files(glob([
     "registry/schema/**/*.xcs",
     "registry/data/**/*.xcu",
     "registry/data/**/*.xcu.tmpl",
+    # the processing stylesheets, for extensions' configuration files
+    # (//build/rules:extension.bzl xcu_default)
+    "util/*.xsl",
 ]))
 
 filegroup(

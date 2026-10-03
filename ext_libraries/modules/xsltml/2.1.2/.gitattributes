@@ -1,0 +1,3 @@
+# Vendored, verified byte for byte (CRLF): source.json pins these exact bytes,
+# and a wrong overlay hash is silently ignored.  Never normalise line ends.
+*.xsl -text
