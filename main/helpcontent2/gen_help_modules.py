@@ -128,7 +128,9 @@ def main():
     out.append("HELP_PAGES = [")
     out.extend("    %r," % p for p in merged_pages())
     out.append("]")
-    with open(os.path.join(HERE, "help_modules.bzl"), "w") as f:
+    # newline="\n": the checked-in file is LF; text mode on Windows would
+    # write CRLF and every regeneration would churn the whole file.
+    with open(os.path.join(HERE, "help_modules.bzl"), "w", newline="\n") as f:
         f.write("\n".join(out) + "\n")
 
 
