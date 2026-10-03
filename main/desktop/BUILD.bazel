@@ -943,11 +943,19 @@ cc_binary(
         "SUPD=680",
     ],
     deps = ["//main/sal:sal_headers"],
+    # The VC90-CRT manifest at RT_MANIFEST id 1, as uno-skeletonmaker carries
+    # it.  Staging installs this exe AS program/unopkg.exe (upstream's
+    # unopkg.bin, behind a guiloader unopkg.exe) and stages no external
+    # unopkg.exe.manifest, so without it the /MD CRT is unresolvable and the
+    # process dies at load with 0xC0000135 before running a line -- every
+    # `unopkg add/list/remove` failed silently that way.
     additional_linker_inputs = [
+        "//main/external/msvcp90:vc90_app_manifest_res",
         "//main/sal:sal_implib",
         ":unopkgapp_implib",
     ],
     linkopts = [
+        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
         "$(execpath //main/sal:sal_implib)",
         "$(execpath :unopkgapp_implib)",
         "/SUBSYSTEM:WINDOWS",

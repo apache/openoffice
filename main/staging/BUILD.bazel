@@ -1,10 +1,37 @@
+load("@bazel_skylib//rules:write_file.bzl", "write_file")
+load("@product_info//:defs.bzl", "PRODUCT_VERSION")
 load("//main/staging:collect_files_aspect.bzl", "collect_outputs", "flat_install", "res_stage", "tree_install")
+
+# ── program/version.ini ───────────────────────────────────────────────────────
+# scp2's gid_Brand_Profile_Version_Ini (common_brand.scp), the [Version] keys
+# that are a pure function of the product version: openoffice.lst sets
+# OOOBASEVERSION to <major>.<minor> and OOOPACKAGEVERSION to the full version,
+# which here is MODULE.bazel's module(version).  The extension manager checks
+# every extension's OpenOffice.org-minimal/maximal-version dependency against
+# exactly these two (dp_dependencies.cxx), and the update dialogs read the
+# second.  Without the file both expand to "", so EVERY extension declaring a
+# version range -- the Wiki Publisher, for one -- is refused with "unsatisfied
+# dependencies".
+# Not written: buildid, ProductCode, UpgradeCode, UpdateID, MsiProductVersion
+# and the other installer-time values; they are release identity, which this
+# build does not invent (see the frontier's release-identity item).
+write_file(
+    name = "version_ini",
+    out = "version.ini",
+    content = [
+        "[Version]",
+        "OOOBaseVersion=" + ".".join(PRODUCT_VERSION.split(".")[:2]),
+        "OOOPackageVersion=" + PRODUCT_VERSION,
+        "",
+    ],
+)
 
 # ── Profile INI files (equivalent to scp2-generated profiles in dmake) ────────
 # All ini files land in program/ alongside the DLLs and EXEs.
 filegroup(
     name = "profile_ini",
     srcs = [
+        ":version_ini",
         "bootstrap.ini",
         "fundamental.ini",
         "soffice.ini",
@@ -75,6 +102,14 @@ collect_outputs(
         # nothing links it and it must be listed here explicitly.  Missing, the
         # office reports no Java installed however many JDKs are present.
         "//main/jvmfwk:sunjavaplugin",
+
+        # ── uno.exe (URE, scp2 gid_File_Exe_Uno) ──────────────────────────────
+        # Nothing links it: the extension manager starts $URE_BIN_DIR/uno to
+        # register a component that uses active registration (a Java jar with a
+        # RegistrationClassName, e.g. the Wiki Publisher's mediawiki.jar), and
+        # without it `unopkg add` of such an extension fails "unknown error!"
+        # (osl_executeProcess on a missing image, dp_misc raiseProcess).
+        "//main/cpputools:uno",
 
         # ── UNO runtime infrastructure ────────────────────────────────────────
         "//main/stoc:bootstrap.uno",

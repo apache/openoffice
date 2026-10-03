@@ -69,10 +69,19 @@ cc_binary(
     srcs = ["source/unoexe/unoexe.cxx"],
     defines = _DEFINES,
     deps = _COMMON_DEPS + ["//main/salhelper:salhelper_headers"],
+    # The VC90-CRT manifest at RT_MANIFEST id 1: uno.exe is INSTALLED
+    # (program/, scp2 gid_File_Exe_Uno), and the extension manager starts it
+    # as $URE_BIN_DIR/uno to register every component that still uses active
+    # registration (dp_component.cxx raise_uno_process).  Without an
+    # activation context the /MD CRT is unresolvable there.  The test fixtures
+    # that stage their own external uno.exe.manifest are unaffected: both
+    # declare the same assembly.
     additional_linker_inputs = _COMMON_LINKER_INPUTS + [
+        "//main/external/msvcp90:vc90_app_manifest_res",
         "//main/salhelper:salhelper_implib",
     ],
     linkopts = _COMMON_LINKOPTS[:-1] + [  # drop /MANIFEST:NO, add salhelper before it
+        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
         "$(execpath //main/salhelper:salhelper_implib)",
         "/MANIFEST:NO",
     ],
