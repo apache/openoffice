@@ -132,6 +132,7 @@
 #include <connectivity/CommonTools.hxx>
 #include <connectivity/DriversConfig.hxx>
 #include "dsntypes.hxx"
+#include <set>
 
 using namespace ::com::sun::star;
 
@@ -743,7 +744,7 @@ const SvXMLTokenMap& ODBFilter::GetDataSourceElemTokenMap() const
             { XML_NAMESPACE_DB,	    XML_LOCAL_SOCKET,			        XML_TOK_LOCAL_SOCKET},
             { XML_NAMESPACE_DB,	    XML_DATABASE_NAME,			        XML_TOK_DATABASE_NAME},
             { XML_NAMESPACE_DB,	    XML_DRIVER_SETTINGS,			    XML_TOK_DRIVER_SETTINGS},
-            { XML_NAMESPACE_DB,	    XML_JAVA_CLASSPATH,			        XML_TOK_JAVA_CLASSPATH},
+            // db:java-classpath is intentionally not mapped
             { XML_NAMESPACE_DB,	    XML_CHARACTER_SET,			        XML_TOK_CHARACTER_SET},
             { XML_NAMESPACE_DB,	    XML_APPLICATION_CONNECTION_SETTINGS,XML_TOK_APPLICATION_CONNECTION_SETTINGS},
 			XML_TOKEN_MAP_END
@@ -956,7 +957,20 @@ void ODBFilter::setPropertyInfo()
 
     Sequence<PropertyValue> aInfo;
     if ( !m_aInfoSequence.empty() )
-        aInfo = Sequence<PropertyValue>(&(*m_aInfoSequence.begin()),m_aInfoSequence.size());
+    {
+        // Ignore UNO property names that do not belong to documents.
+        static const ::std::set< ::rtl::OUString > s_aDeniedSettings = {
+            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "JavaDriverClassPath" ) ),
+            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SystemProperties" ) )
+        };
+        ::std::vector< PropertyValue > aAccepted;
+        aAccepted.reserve( m_aInfoSequence.size() );
+        for ( const auto & i : m_aInfoSequence )
+            if ( s_aDeniedSettings.find( i.Name ) == s_aDeniedSettings.end() )
+                aAccepted.push_back( i );
+        if ( !aAccepted.empty() )
+            aInfo = Sequence<PropertyValue>( &(*aAccepted.begin()), aAccepted.size() );
+    }
     aDataSourceSettings.merge( ::comphelper::NamedValueCollection( aInfo ), true );
 
     aDataSourceSettings >>= aInfo;

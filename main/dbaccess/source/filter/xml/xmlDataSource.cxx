@@ -189,9 +189,6 @@ OXMLDataSource::OXMLDataSource( ODBFilter& rImport,
 				aProperty.Name = INFO_CONN_LDAP_ROWCOUNT;
 				aProperty.Value <<= sValue.toInt32();
 				break;
-            case XML_TOK_JAVA_CLASSPATH:
-                aProperty.Name = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("JavaDriverClassPath"));
-                break;
 		}
 		if ( aProperty.Name.getLength() )
 		{
