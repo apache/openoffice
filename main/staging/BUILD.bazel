@@ -592,6 +592,24 @@ tree_install(
     dst          = "share/xslt/docbook",
 )
 
+# ── help/ — the office's F1 help (//main/helpcontent2, //main/xmlhelp) ──────
+# help/en/: the 9 compiled modules (upstream installs en-US as "en"; xmlhelp's
+# processLang falls back from en-US to en).  help/: the three stylesheets the
+# viewer renders every page through (upstream's helpxsl.zip).
+tree_install(
+    name = "_install_help",
+    src          = "//main/helpcontent2:help",
+    strip_prefix = "main/helpcontent2/help",
+    dst          = "help",
+)
+
+tree_install(
+    name = "_install_helpxsl",
+    src          = "//main/xmlhelp:helpxsl",
+    strip_prefix = "main/xmlhelp/util",
+    dst          = "help",
+)
+
 tree_install(
     name = "_install_autotext",
     src          = "//main/extras:autotext_files",
@@ -867,6 +885,11 @@ filegroup(
         "//main/xmerge:aportisdoc_jar",
         "//main/xmerge:pexcel_jar",
         "//main/xmerge:pocketword_jar",
+        # Help search (Find tab): LuceneHelpWrapper is registered at
+        # program/classes and names both Lucene jars by relative Class-Path.
+        "//main/xmlhelp:LuceneHelpWrapper_jar",
+        "//main/xmlhelp:lucene_core_jar",
+        "//main/xmlhelp:lucene_analyzers_jar",
     ],
 )
 
@@ -943,6 +966,8 @@ filegroup(
         ":_install_xslt",
         ":_install_xslt_odf2xhtml",
         ":_install_xslt_docbook",
+        ":_install_help",
+        ":_install_helpxsl",
         ":_install_java_config",
         ":_install_python_scripts",
         # The Python stdlib tree is NOT optional: pythonloader.dll calls

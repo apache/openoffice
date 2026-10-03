@@ -1,0 +1,53 @@
+package(default_visibility = ["//visibility:public"])
+
+load("//build/rules:help_pipeline.bzl", "help_module", "help_trees", "help_xhp_tree")
+load(":help_modules.bzl", "HELP_MODULES", "HELP_PAGES")
+
+# helpcontent2 — the office's F1 help, en-US.  Produces help/en/ for the
+# staged install: per module <m>.db/.ht/.key (HelpLinker), <m>.jar (the pages),
+# <m>.cfg, <m>.tree (Contents tab), <m>.idxl/ (Lucene, Find tab), plus shared's
+# stylesheets and err.html.  Pipeline and its landmines: help_pipeline.bzl and
+# readme.md.  Which pages each module links is upstream's verbatim list, kept
+# in help_modules.bzl (regenerate with gen_help_modules.py).
+
+# HelpLinker's -src tree and the module .jars hold exactly the pages upstream's
+# merge step delivers -- the XHPFILES lists, not every .xhp on disk (two pages
+# exist that no makefile lists, and so never ship).
+help_xhp_tree(
+    name = "xhp",
+    srcs = ["source/" + p for p in HELP_PAGES],
+)
+
+help_trees(
+    name = "trees",
+    script = "helpers/update_tree.pl",
+    trees = glob(["source/auxiliary/*.tree"]),
+    # update_tree.pl reads titles straight from source/, like upstream.
+    xhp = glob(["source/text/**/*.xhp"]),
+)
+
+[help_module(
+    name = "help_" + m,
+    module = m,
+    links = spec.links,
+    # "tree" entries come from :trees instead (update_tree.pl output).
+    added_files = {
+        src: name
+        for name, src in spec.added.items()
+        if src != "tree"
+    },
+    # ZIP1LIST: "text/<dir>/*" zips that subtree, anything else is one page.
+    jar_pages = [
+        p
+        for p in HELP_PAGES
+        if (spec.jar.endswith("/*") and p.startswith(spec.jar[:-1])) or p == spec.jar
+    ],
+    jar_root = spec.jar[:-2] if spec.jar.endswith("/*") else "",
+    trees = ":trees",
+    xhp_tree = ":xhp",
+) for m, spec in HELP_MODULES.items()]
+
+filegroup(
+    name = "help",
+    srcs = [":help_" + m for m in HELP_MODULES],
+)

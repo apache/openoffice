@@ -1,0 +1,13 @@
+{
+    "url": "file:///C:/workspace/openoffice/ext_sources/17960f35b2239654ba608cf1f3e256b3-lucene-2.9.4-src.tar.gz",
+    "integrity": "sha256-KovXxvBjK8QGvOwAkdKGs+/UdDwtRf2IsNDVZCgXgM0=",
+    "strip_prefix": "lucene-2.9.4",
+    "overlay": {
+        "MODULE.bazel": "sha256-Z5/aEtSwUQBK5odMRIBhId5uVLT+qwQ3k9tYQ0f4hWs=",
+        "BUILD.bazel": "sha256-zidHWV1FpwjvB/GlNUyfFqegYK5Xo+cn4aVMvYt+xG4="
+    },
+    "patches": {
+        "aoo-lucene-long-path.patch": "sha256-h1vIR1KibmliYzt+lGkcI4H5Te82dKxl4ifJW+hY5OE="
+    },
+    "patch_strip": 1
+}

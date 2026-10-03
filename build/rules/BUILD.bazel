@@ -2,4 +2,4 @@
 
 # Helper script used by rsc_pipeline.bzl (rsc_res) to normalize ImageList
 # IdList blocks in generated .srs files so rsc2 can resolve Prefix+Id images.
-exports_files(["normalize_idlist.pl"])
+exports_files(["normalize_idlist.pl", "help_link.pl"])

@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_java//java:defs.bzl", "java_binary", "java_library")
 
 # ── Common settings ───────────────────────────────────────────────
 # l10ntools: localisation extraction/merging tools.
@@ -362,5 +363,30 @@ cc_library(
     hdrs = ["source/help/compilehelp.hxx"],
     strip_include_prefix = "source/help",
     include_prefix = "l10ntools",
+    visibility = ["//visibility:public"],
+)
+
+# ── HelpIndexerTool — Lucene full-text index for one help module ─────────────
+# Build-time tool of the help pipeline (build/rules/help_pipeline.bzl); the
+# same two classes also ship inside //main/xmlhelp:LuceneHelpWrapper_jar as
+# the runtime com.sun.star.help.HelpIndexer.
+java_library(
+    name = "help_indexer",
+    srcs = [
+        "source/help/HelpFileDocument.java",
+        "source/help/HelpIndexerTool.java",
+    ],
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "@lucene//:lucene_analyzers",
+        "@lucene//:lucene_core",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+java_binary(
+    name = "HelpIndexerTool",
+    main_class = "com.sun.star.help.HelpIndexerTool",
+    runtime_deps = [":help_indexer"],
     visibility = ["//visibility:public"],
 )

@@ -1,6 +1,8 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
 
 # ── xmlhelp — XML help runtime ────────────────────────────────────────────────
 # Two DLLs:
@@ -11,6 +13,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 
 exports_files(glob([
     "**/*.component",
+    "util/*.xsl",
 ]))
 
 _DEFINES = [
@@ -149,4 +152,82 @@ filegroup(
     name = "ucpchelp1_implib",
     srcs = [":ucpchelp1"],
     output_group = "interface_library",
+)
+
+# ── Help full-text search: Lucene + LuceneHelpWrapper ────────────────────────
+# All three jars go to program/classes (scp2 STD_JAR_FILE).  LuceneHelpWrapper
+# names the two Lucene jars by relative Class-Path, so they must sit beside it.
+# The classes are compiled in the @lucene bzlmod module; these targets give
+# them upstream's file names and manifests (Ant's Created-By/Ant-Version
+# omitted, as for every jar here).
+uno_jar(
+    name = "lucene_core_jar",
+    out = "lucene-core-2.9.4-dev.jar",
+    jars = ["@lucene//:lucene_core", "@lucene//:lucene_legal"],
+    manifest_lines = [
+        "Specification-Title: Lucene Search Engine: core",
+        "Specification-Version: 2.9.4-dev",
+        "Specification-Vendor: The Apache Software Foundation",
+        "Implementation-Title: org.apache.lucene",
+        "Implementation-Version: 2.9.4-dev",
+        "Implementation-Vendor: The Apache Software Foundation",
+    ],
+)
+
+uno_jar(
+    name = "lucene_analyzers_jar",
+    out = "lucene-analyzers-2.9.4-dev.jar",
+    jars = ["@lucene//:lucene_analyzers", "@lucene//:lucene_legal"],
+    manifest_lines = [
+        "Specification-Title: Lucene Search Engine: analyzers",
+        "Specification-Version: 2.9.4-dev",
+        "Specification-Vendor: The Apache Software Foundation",
+        "Implementation-Title: org.apache.lucene",
+        "Implementation-Version: 2.9.4-dev",
+        "Implementation-Vendor: The Apache Software Foundation",
+    ],
+)
+
+# com.sun.star.help.HelpSearch / HelpIndexer — the UNO component the help
+# viewer's Find tab calls.  Upstream copies the indexer classes from
+# l10ntools/source/help into this jar (build.xml import-helpindexer), so the
+# runtime HelpIndexer service and the build-time HelpIndexerTool are the same
+# code; here the jar simply merges //main/l10ntools:help_indexer.
+java_library(
+    name = "lucene_help_wrapper_classes",
+    srcs = glob(["java/LuceneHelpWrapper/src/main/java/**/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/javaunohelper:juh_jar",
+        "//main/jurt:jurt",
+        "//main/l10ntools:help_indexer",
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+        "@lucene//:lucene_analyzers",
+        "@lucene//:lucene_core",
+    ],
+)
+
+uno_jar(
+    name = "LuceneHelpWrapper_jar",
+    out = "LuceneHelpWrapper.jar",
+    jars = [
+        ":lucene_help_wrapper_classes",
+        "//main/l10ntools:help_indexer",
+    ],
+    manifest_lines = [
+        "RegistrationClassName: com.sun.star.help.HelpComponent",
+        "Class-Path: lucene-core-2.9.4-dev.jar lucene-analyzers-2.9.4-dev.jar",
+    ],
+)
+
+# helpxsl.zip upstream (Zip_helpxsl.mk) — unpacked by the installer into
+# help/.  The help viewer renders every page through main_transform.xsl.
+filegroup(
+    name = "helpxsl",
+    srcs = [
+        "util/idxcaption.xsl",
+        "util/idxcontent.xsl",
+        "util/main_transform.xsl",
+    ],
 )
