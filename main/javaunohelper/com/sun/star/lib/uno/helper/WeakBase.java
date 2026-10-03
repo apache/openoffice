@@ -26,7 +26,7 @@ import com.sun.star.uno.XWeak;
 import com.sun.star.uno.XAdapter;
 import com.sun.star.lang.XTypeProvider;
 import com.sun.star.uno.Type;
-import java.util.Vector;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Hashtable;
 
@@ -77,7 +77,7 @@ public class WeakBase implements XWeak, XTypeProvider
         Type[] arTypes= (Type[]) _mapTypes.get( getClass());
         if (arTypes == null)
         {
-            Vector vec= new Vector();
+            ArrayList<Type> vec= new ArrayList<>();
             Class currentClass= getClass();
             do
             {
@@ -93,8 +93,7 @@ public class WeakBase implements XWeak, XTypeProvider
             } while (currentClass != null);
 
             Type types[]= new Type[vec.size()];
-            for( int i= 0; i < types.length; i++)
-                types[i]= (Type) vec.elementAt(i);
+            vec.toArray(types);
             _mapTypes.put(getClass(), types);
             arTypes= types;
         }

@@ -24,7 +24,7 @@ package com.sun.star.wizards.text;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.Vector;
+import java.util.ArrayList;
 
 import com.sun.star.text.XDependentTextField;
 import com.sun.star.text.XTextContent;
@@ -148,7 +148,7 @@ public class TextFieldHandler
         try
         {
             XDependentTextField[] xDependentFields;
-            Vector xDependentVector = new Vector();
+            ArrayList<XDependentTextField> xDependentVector = new ArrayList<>();
             if (xTextFieldsSupplier.getTextFields().hasElements())
             {
                 XEnumeration xEnum = xTextFieldsSupplier.getTextFields().createEnumeration();
@@ -168,7 +168,7 @@ public class TextFieldHandler
                                 String sValue = AnyConverter.toString(oValue);
                                 if (sValue.equals(_aPropertyValue))
                                 {
-                                    xDependentVector.addElement(xDependent);
+                                    xDependentVector.add(xDependent);
                                 }
                             }
                         }
@@ -180,7 +180,7 @@ public class TextFieldHandler
                                 short ishortValue = AnyConverter.toShort(oValue);
                                 if (ishortValue == iShortParam)
                                 {
-                                    xDependentVector.addElement(xDependent);
+                                    xDependentVector.add(xDependent);
                                 }
                             }
                         }

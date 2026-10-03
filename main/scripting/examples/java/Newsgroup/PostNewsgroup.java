@@ -23,7 +23,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
-import java.util.Vector;
+import java.util.ArrayList;
 import com.sun.star.script.framework.runtime.XScriptContext;
 
 
@@ -328,9 +328,9 @@ public class PostNewsgroup extends JFrame
 		}
 		else
 		{
-			// Copy all newsgroups into a vector for comparison
+			// Copy all newsgroups into an ArrayList for comparison
 			// Alter entries (to include host name) if duplication is found
-			Vector vector = new Vector( subscribedNewsgroups.length );
+			ArrayList<String> vector = new ArrayList<>( subscribedNewsgroups.length );
 			for(int i=0; i < subscribedNewsgroups.length; i++ )
 			{
 				vector.add( subscribedNewsgroups[i].getNewsgroupName() );
@@ -349,10 +349,10 @@ public class PostNewsgroup extends JFrame
 					}
 				}
 			}
-			// Copy converted newsgroups from vector to combo box
+			// Copy converted newsgroups from ArrayList to combo box
 			for(int i=0; i < subscribedNewsgroups.length; i++ )
 			{
-				newsgroupComboBox.addItem( vector.elementAt(i) );
+				newsgroupComboBox.addItem( vector.get(i) );
 			}
 		}// else
 

@@ -46,7 +46,7 @@ import com.sun.star.util.XCloseable;
 import com.sun.star.util.XModifiable;
 import com.sun.star.view.XViewSettingsSupplier;
 import helper.ConfigHelper;
-import java.util.Vector;
+import java.util.ArrayList;
 import lib.StatusException;
 
 /**
@@ -142,7 +142,7 @@ public class DesktopTools
      */
     public static Object[] getAllOpenDocuments(XMultiServiceFactory xMSF)
     {
-        Vector components = new Vector();
+        ArrayList<XComponent> components = new ArrayList<>();
         XDesktop xDesktop = UnoRuntime.queryInterface(
                 XDesktop.class, createDesktop(xMSF));
 

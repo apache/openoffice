@@ -24,7 +24,7 @@
 package com.sun.star.lib.uno.helper;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * Object representation and parsing of Uno Urls,
@@ -225,7 +225,7 @@ public class UnoUrl {
 
 	private static String decodeUTF8(String s)
 		throws com.sun.star.lang.IllegalArgumentException {
-		Vector v = new Vector();
+		ArrayList<Integer> v = new ArrayList<>();
 
 		for (int i = 0; i < s.length(); i++) {
 			int ch = s.charAt(i);
@@ -236,13 +236,13 @@ public class UnoUrl {
 				ch = (hb << 4) | lb;
 			}
 
-			v.addElement(ch);
+			v.add(ch);
 		}
 
 		int size = v.size();
 		byte[] bytes = new byte[size];
 		for (int i = 0; i < size; i++) {
-			Integer anInt = (Integer) v.elementAt(i);
+			Integer anInt = v.get(i);
 			bytes[i] = (byte) (anInt.intValue() & 0xFF);
 		}
 

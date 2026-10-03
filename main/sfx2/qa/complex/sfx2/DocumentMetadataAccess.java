@@ -977,36 +977,23 @@ public class DocumentMetadataAccess
 
     static Statement[] toSeq(XEnumeration i_Enum) throws Exception
     {
-        java.util.Collection c = new java.util.Vector();
+        java.util.Collection c = new java.util.ArrayList();
         while (i_Enum.hasMoreElements()) {
             Statement s = (Statement) i_Enum.nextElement();
 //System.out.println("toSeq: " + s.getSubject().getStringValue() + " " + s.getPredicate().getStringValue() + " " + s.getObject().getStringValue() + ".");
             c.add(s);
         }
-//        return (Statement[]) c.toArray();
-        // java sucks
-        Object[] arr = c.toArray();
-        Statement[] ret = new Statement[arr.length];
-        for (int i = 0; i < arr.length; ++i) {
-            ret[i] = (Statement) arr[i];
-        }
-        return ret;
+        return c.toArray(new Statement[c.size()]);
     }
 
     static XNode[][] toSeqs(XEnumeration i_Enum) throws Exception
     {
-        java.util.Collection c = new java.util.Vector();
+        java.util.Collection c = new java.util.ArrayList();
         while (i_Enum.hasMoreElements()) {
             XNode[] s = (XNode[]) i_Enum.nextElement();
             c.add(s);
         }
-//        return (XNode[][]) c.toArray();
-        Object[] arr = c.toArray();
-        XNode[][] ret = new XNode[arr.length][];
-        for (int i = 0; i < arr.length; ++i) {
-            ret[i] = (XNode[]) arr[i];
-        }
-        return ret;
+        return c.toArray(new XNode[c.size()][]);
     }
 
     static class BindingComp implements java.util.Comparator

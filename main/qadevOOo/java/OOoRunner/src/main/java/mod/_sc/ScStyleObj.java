@@ -24,7 +24,7 @@
 package mod._sc;
 
 import java.io.PrintWriter;
-import java.util.Vector;
+import java.util.ArrayList;
 
 import lib.StatusException;
 import lib.TestCase;
@@ -252,7 +252,7 @@ public class ScStyleObj extends TestCase {
 
     public String[] getPropertyNames(XPropertySet props) {
         Property[] the_props = props.getPropertySetInfo().getProperties();
-        Vector names = new Vector() ;
+        ArrayList<String> names = new ArrayList<>();
 
         for (int i=0;i<the_props.length;i++) {
             boolean isWritable =
@@ -261,6 +261,6 @@ public class ScStyleObj extends TestCase {
                 names.add(the_props[i].Name);
             }
         }
-        return (String[]) names.toArray(new String[names.size()]) ;
+        return names.toArray(new String[names.size()]);
     }
 }    // finish class ScStyleObj

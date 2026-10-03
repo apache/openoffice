@@ -304,7 +304,7 @@ public class ScriptEditorForJavaScript implements ScriptEditor
         synchronized( BEING_EDITED )
         {
             java.util.Iterator iter = BEING_EDITED.keySet().iterator();
-            java.util.Vector keysToRemove = new java.util.Vector();
+            java.util.ArrayList<URL> keysToRemove = new java.util.ArrayList<>();
             while ( iter.hasNext() )
             {
 
@@ -313,7 +313,7 @@ public class ScriptEditorForJavaScript implements ScriptEditor
             }
             for ( int i=0; i<keysToRemove.size(); i++ )
             {
-                BEING_EDITED.remove( keysToRemove.elementAt( i ) );
+                BEING_EDITED.remove( keysToRemove.get( i ) );
             }
             keysToRemove = null;
         }
