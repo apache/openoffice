@@ -1030,13 +1030,12 @@ abstract public class ReportBuilderLayouter implements IReportBuilderLayouter
 //    protected static String getDateString(String _sFormat)
 //        {
 //            GregorianCalendar aCalendar = new GregorianCalendar();
-//            StringBuffer aBuf = new StringBuffer();
 //
 //            Locale aLocale = new Locale("en","US");
 //            SimpleDateFormat aFormat = new SimpleDateFormat(_sFormat, aLocale);
-//            aBuf = aFormat.format(aCalendar.getTime(), aBuf, new FieldPosition(0) );
-//            // DebugHelper.writeInfo("Date: " + aBuf.toString());
-//            return aBuf.toString();
+//            String aBuf = aFormat.format(aCalendar.getTime());
+//            // DebugHelper.writeInfo("Date: " + aBuf);
+//            return aBuf;
 //    }
 //    protected String getCurrentDate()
 //    {
