@@ -25,10 +25,8 @@ package org.openoffice.netbeans.modules.office.actions;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Enumeration;
 
 import javax.swing.JMenuItem;
 import javax.swing.JFileChooser;

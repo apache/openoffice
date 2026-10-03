@@ -27,7 +27,6 @@ import org.openoffice.setup.InstallData;
 import org.openoffice.setup.SetupData.PackageDescription;
 import org.openoffice.setup.SetupData.ProductDescription;
 import java.util.Enumeration;
-import java.util.Vector;
 
 public class InfoCtrl {
 

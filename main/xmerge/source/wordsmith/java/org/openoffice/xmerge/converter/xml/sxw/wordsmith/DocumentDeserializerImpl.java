@@ -26,7 +26,6 @@ package org.openoffice.xmerge.converter.xml.sxw.wordsmith;
 import org.w3c.dom.*;
 
 import java.io.IOException;
-import java.util.Enumeration;
 
 import org.openoffice.xmerge.Document;
 import org.openoffice.xmerge.ConvertData;

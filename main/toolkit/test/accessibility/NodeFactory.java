@@ -20,7 +20,6 @@
  *************************************************************/
 
 import com.sun.star.accessibility.*;
-import java.util.Vector;
 
 import tools.NameProvider;
 

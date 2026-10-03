@@ -23,8 +23,6 @@
 
 package org.openoffice.accessibility.awb.view;
 
-import java.util.Vector;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 

@@ -35,7 +35,6 @@ import org.openoffice.setup.Util.InfoCtrl;
 import org.openoffice.setup.Util.Informer;
 import org.openoffice.setup.Util.LogManager;
 import org.openoffice.setup.Util.ModuleCtrl;
-import java.util.Vector;
 
 public class InstallationImminentCtrl extends PanelController {
 

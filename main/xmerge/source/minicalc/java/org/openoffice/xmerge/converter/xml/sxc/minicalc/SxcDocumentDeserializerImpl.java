@@ -30,7 +30,6 @@ import org.openoffice.xmerge.ConvertData;
 import org.openoffice.xmerge.converter.palm.PalmDocument;
 
 import java.io.IOException;
-import java.util.Enumeration;
 
 /**
  *  <p>MiniCalc implementation of <code>DocumentDeserializer</code>

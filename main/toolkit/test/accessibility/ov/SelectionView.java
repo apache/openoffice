@@ -21,8 +21,6 @@
 
 package ov;
 
-import java.util.Vector;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
