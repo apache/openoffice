@@ -959,15 +959,17 @@ void ODBFilter::setPropertyInfo()
     if ( !m_aInfoSequence.empty() )
     {
         // Ignore UNO property names that do not belong to documents.
-        static const ::std::set< ::rtl::OUString > s_aDeniedSettings = {
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "JavaDriverClassPath" ) ),
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SystemProperties" ) )
-        };
+        static ::std::set< ::rtl::OUString > s_aDeniedSettings;
+        if (s_aDeniedSettings.empty()) {
+            s_aDeniedSettings.insert( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "JavaDriverClassPath" ) ) );
+            s_aDeniedSettings.insert( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SystemProperties" ) ) );
+        }
         ::std::vector< PropertyValue > aAccepted;
         aAccepted.reserve( m_aInfoSequence.size() );
-        for ( const auto & i : m_aInfoSequence )
-            if ( s_aDeniedSettings.find( i.Name ) == s_aDeniedSettings.end() )
-                aAccepted.push_back( i );
+        for ( TInfoSequence::const_iterator i = m_aInfoSequence.begin();
+              i != m_aInfoSequence.end(); ++i)
+            if ( s_aDeniedSettings.find( i->Name ) == s_aDeniedSettings.end() )
+                aAccepted.push_back( *i );
         if ( !aAccepted.empty() )
             aInfo = Sequence<PropertyValue>( &(*aAccepted.begin()), aAccepted.size() );
     }
