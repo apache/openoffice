@@ -145,6 +145,12 @@ else
 gb_DEBUG_CFLAGS := -g3
 endif
 
+ifeq ($(ENABLE_SANITIZER),TRUE)
+gb_CFLAGS += -fsanitize=address
+gb_CXXFLAGS += -fsanitize=address
+gb_LinkTarget_LDFLAGS += -fsanitize=address
+endif
+
 ifeq ($(gb_DEBUGLEVEL),2)
 gb_COMPILEROPTFLAGS := -O0
 gb_COMPILEROPT1FLAGS := -O0

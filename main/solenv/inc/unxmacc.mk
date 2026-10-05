@@ -132,6 +132,12 @@ CFLAGSPROF=
 CFLAGSDEBUG=-g
 CFLAGSDBGUTIL=
 
+# Flags for enabling address sanitizer
+.IF "$(ENABLE_SANITIZER)"=="TRUE"
+CFLAGSCC += -fsanitize=address
+CFLAGSCXX += -fsanitize=address
+.ENDIF
+
 # Flag to specify output file to compiler/linker
 CFLAGSOUTOBJ=-o
 
@@ -209,6 +215,11 @@ LINKFLAGSPROF=
 # Flag to add debugging information to final products
 LINKFLAGSDEBUG=-g
 LINKFLAGSOPT=
+
+# Flag for enabling address sanitizer
+.IF "$(ENABLE_SANITIZER)"=="TRUE"
+LINKFLAGS += -fsanitize=address
+.ENDIF
 
 # ---------------------------------
 #  MacOS X shared library specifics

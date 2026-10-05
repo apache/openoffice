@@ -119,6 +119,11 @@ CFLAGSCC += -fstack-protector
 CFLAGSCXX += -fstack-protector
 .ENDIF
 
+.IF "$(ENABLE_SANITIZER)"=="TRUE"
+CFLAGSCC += -fsanitize=address
+CFLAGSCXX += -fsanitize=address
+.ENDIF
+
 # Compiler flags for compiling static object in multi threaded environment with graphical user interface
 CFLAGSOBJGUIMT=
 # Compiler flags for compiling static object in multi threaded environment with character user interface
@@ -200,6 +205,11 @@ LINKFLAGSTACK=
 LINKFLAGSPROF=
 LINKFLAGSDEBUG=-g
 LINKFLAGSOPT=
+
+# Flag for enabling address sanitizer
+.IF "$(ENABLE_SANITIZER)"=="TRUE"
+LINKFLAGS += -fsanitize=address
+.ENDIF
 
 # linker flags for optimization (symbol hashtable)
 # for now, applied to symbol scoped libraries, only
