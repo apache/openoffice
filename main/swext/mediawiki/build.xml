@@ -71,7 +71,7 @@
 
     <target name="compile" depends="init">
         <javac debug="${debug}" debuglevel="lines,vars,source" destdir="${classes}" classpathref="classpath"
-               source="${sourcelevel}" verbose="${verbose}" includeantruntime="false">
+               verbose="${verbose}" includeantruntime="false">
             <src path="src"/>
         </javac>
     </target>
