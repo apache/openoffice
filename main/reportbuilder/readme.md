@@ -1,6 +1,22 @@
 # reportbuilder — Bazel Migration Notes
 
-## Status: Deferred
+## Status: REMOVED FROM THE MIGRATION (2026-10-06)
+
+This module was spun off into its own project on branch `bazel-reportbuilder`
+(see `.agent/branches/bazel-reportbuilder.md` there) and struck off the
+migration frontier. Its Java engine is built on the JFreeReport suite, which is
+not on Maven and has merged into the separate Pentaho Reporting product; the
+owner will not carry an external reporting lib. The replacement — a native C++
+report engine — is a product change the migration charter forbids, so it cannot
+be done here. If that project is not pursued, reportbuilder is dropped from the
+codebase (owner decision with the team).
+
+**Everything below predates that decision** (it was written when the plan was to
+vendor the JFreeReport JARs) and is kept only as historical context. Note that
+two of its three "blockers" are themselves now stale: `wizards` is migrated (it
+already produces `reportbuilderwizard.jar`) and `java_uno.jar` is built.
+
+---
 
 This module is a pure Java UNO extension (`.oxt` package). It does not produce
 any C++ DLLs and is not on the critical path to `desktop`.

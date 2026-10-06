@@ -785,7 +785,22 @@ bridges (incl. the java_uno JNI bridge: java_uno.dll + java_uno.jar, done
 2026-06-26)/stoc/io/remotebridges/unotools/unoil/pyuno.  The items below are
 the higher-level Java apps/extensions still to do (no longer gated on rules_java
 itself; per-module UNO-Java component/packaging rules may still be needed).
-reportbuilder ⬜  (pure Java .oxt extension; blockers: JFreeReport suite not on Maven, SourceForge ZIPs have token-based URLs; wizards dep also deferred)
+reportbuilder ➡️  REMOVED FROM THE MIGRATION 2026-10-06 — spun off to its own
+                   project on branch `bazel-reportbuilder` (see
+                   .agent/branches/bazel-reportbuilder.md there).  The Java engine
+                   is built on the JFreeReport suite (not on Maven; merged into the
+                   separate Pentaho Reporting product), and the owner will not carry
+                   an external reporting lib.  The alternative — a native C++ engine
+                   — is a product change the migration charter forbids, so it cannot
+                   live here.  Analysis found this is cheap-ish: the report MODEL is
+                   already native C++ on the svx drawing layer (reportdesign:
+                   RptModel/RptObject), output is only ODT/ODS (Writer/Calc ARE the
+                   layout engines), and the engine is a config-swappable XJob service
+                   (DefaultReportEngine) — so a native engine is a drop-in needing no
+                   reportdesign change.  Do NOT revive this as a migration task; if the
+                   native-engine project is not pursued, reportbuilder is dropped from
+                   the codebase (owner decision with the team).  main/reportbuilder/
+                   readme.md is now stale (it predates this decision).
 bean          ✅  DONE 2026-10-02 — officebean.jar (program/classes) + officebean.dll
                    (program/, found one dir up by jurt NativeLibraryLoader).  Jar
                    entry-identical to dmake's.  DLL: undecorated Java_* DEF + RT_MANIFEST
