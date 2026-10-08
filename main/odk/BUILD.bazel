@@ -2,6 +2,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("//build/rules:extension.bzl", "ext_files", "oxt_package")
 load("//build/rules:gendocu.bzl", "autodoc_html", "javadoc_html")
 load("//build/rules:java_pipeline.bzl", "javac_classes")
+load("//build/rules:odk_pkg.bzl", "odk_sdk_zip")
 
 # odk — the Office Development Kit (SDK).  Mirrors prj/build.lst.
 #
@@ -367,7 +368,7 @@ ext_files(
 )
 
 # ── odkcommon.zip — the whole SDK tree (util PRODUCTZIPFILE) ───────────────────
-oxt_package(
+odk_sdk_zip(
     name = "odkcommon",
     out = "odkcommon.zip",
     contents = [
@@ -395,6 +396,12 @@ oxt_package(
         ":_sdk_scripts",
         ":_sdk_setsdkenv",
         ":_sdk_examples_html",
+    ],
+    # The generated API reference trees (gendocu), zipped under docs/*/ref.
+    trees = [
+        ":idl_reference",
+        ":cpp_reference",
+        ":java_reference",
     ],
     visibility = ["//visibility:public"],
 )
@@ -438,13 +445,13 @@ oxt_package(
 # The generated API reference — pack/gendocu + pack/copying (needs autodoc)
 # ═══════════════════════════════════════════════════════════════════════════
 #
-# autodoc.exe is now available, so the reference trees that were held back can
-# be generated.  First the IDL reference -- pack/copying's IDL_DOCU_INDEX_FILE
-# (the one piece of pack/copying deferred when autodoc was unmigrated).  Output
-# is a TREE artifact (its HTML file set depends on the API), so it is not yet
-# folded into odkcommon.zip -- that needs a tree->zip step (zipper cannot
-# recurse a directory).  See readme.md for the remaining gendocu work (the C++
-# reference, the Java reference, the idl.css overlay, and the packaging).
+# autodoc.exe is now available, so the reference trees that were held back are
+# generated here and folded into odkcommon.zip by odk_sdk_zip (the tree->zip
+# step, since zipper cannot recurse a directory).  First the IDL reference --
+# pack/copying's IDL_DOCU_INDEX_FILE (the one piece of pack/copying deferred
+# when autodoc was unmigrated).  Output is a TREE artifact (its HTML file set
+# depends on the API).  See readme.md for the one remaining item (the css
+# overlay).
 #
 # Matches the pack/copying recipe:
 #   autodoc -html <docs/common/ref> -dvgroot <wiki> -name "<OFFICENAME REL> API"
