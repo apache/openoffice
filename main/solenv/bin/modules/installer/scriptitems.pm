@@ -153,6 +153,32 @@ sub resolve_all_directory_names
 }
 
 #############################################################################
+# A File item with no Name in any language names no file at all.  That is
+# what a per-language list such as EXTRA_ALL_LANG_BUT_EN_US expands to in an
+# en-US only build (gid_File_Registry_Lang): such an item would otherwise
+# reach the language pack module checks as a non-multilingual file.
+#############################################################################
+
+sub remove_nameless_files_from_productlists
+{
+	my ($productarrayref) = @_;
+
+	my @newitems = ();
+
+	foreach my $oneitem ( @{$productarrayref} )
+	{
+		if ( ! grep { /^\s*Name\s*(\(.*\))?\s*$/ } keys %{$oneitem} )
+		{
+			$installer::logger::Lang->printf("Removing file %s from file list: it has no Name in any language.\n", $oneitem->{'gid'});
+			next;
+		}
+		push(@newitems, $oneitem);
+	}
+
+	return \@newitems;
+}
+
+#############################################################################
 # Files with flag DELETE_ONLY do not need to be packed into installation set
 #############################################################################
 

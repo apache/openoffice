@@ -103,6 +103,11 @@ sub check_system_path
 	if (($installer::globals::iswin) && ($installer::globals::iswindowsbuild))
 	{
 		@needed_files_in_path = ("zip.exe", "msiinfo.exe", "msidb.exe", "uuidgen.exe", "makecab.exe", "msitran.exe", "expand.exe");
+		# A native Windows Perl has no Unix zip at hand, and building an msi
+		# does not use one: ARCHIVE files are unpacked with Archive::Zip, and
+		# zip is only run for ConfigurationItems (configuration.pm) and the
+		# "archive" package format (simplepackage.pm).
+		if ( $^O =~ /MSWin32/i ) { shift(@needed_files_in_path); }
 	}
 	elsif ($installer::globals::iswin || $installer::globals::isos2)
 	{

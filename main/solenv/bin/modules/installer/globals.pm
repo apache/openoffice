@@ -488,6 +488,20 @@ BEGIN
 		$iswin = 1;
 		$archiveformat = ".zip";
 	}
+	elsif ( $plat =~ /MSWin32/i )
+	{
+		# A native Windows Perl (e.g. Strawberry): Windows like cygwin above,
+		# but its PATH is ';'-separated, and paths need no cygpath conversion.
+		$zippath = "zip";
+		$checksumfile = "so_checksum";
+		$unopkgfile = "unopkg.exe";
+		$separator = "/";
+		$pathseparator = "\;";
+		$libextension = "\.dll";
+		$isunix = 0;
+		$iswin = 1;
+		$archiveformat = ".zip";
+	}
 	elsif ( $plat =~ /os2/i )
 	{
 		print "Setup OS/2 platform\n";

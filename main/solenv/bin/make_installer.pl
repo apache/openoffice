@@ -1540,6 +1540,8 @@ $installer::logger::Info->print( "... analyzing files ... \n" );
 
 my $filesinproductarrayref = installer::setupscript::get_all_items_from_script($setupscriptref, "File");
 
+$filesinproductarrayref = installer::scriptitems::remove_nameless_files_from_productlists($filesinproductarrayref);
+
 $filesinproductarrayref = installer::scriptitems::remove_delete_only_files_from_productlists($filesinproductarrayref);
 
 if (( ! $installer::globals::iswindowsbuild ) &&

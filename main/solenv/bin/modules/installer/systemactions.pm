@@ -52,11 +52,11 @@ sub create_directory
 			$installer::logger::Lang->printf("Created directory: %s\n", $directory);
 
 			my $localcall = "chmod 0775 $directory \>\/dev\/null 2\>\&1";
-			system($localcall);
+			system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 
 			# chmod 0775 is not sufficient on mac to remove sticky tag
 			$localcall = "chmod a-s $directory \>\/dev\/null 2\>\&1";
-			system($localcall);
+			system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 		}
 		else
 		{
@@ -87,7 +87,7 @@ sub create_directory
 							$parentdir);
 
 						my $localcall = "chmod 775 $parentdir \>\/dev\/null 2\>\&1";
-						system($localcall);
+						system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 					}
 					else
 					{
@@ -121,7 +121,7 @@ sub create_directory
 						$directory);
 
 					my $localcall = "chmod 775 $directory \>\/dev\/null 2\>\&1";
-					system($localcall);
+					system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 				}
 				else
 				{
@@ -176,7 +176,7 @@ sub create_directory_with_privileges
 			$installer::logger::Lang->printf("Created directory: %s\n", $directory);
 
 			my $localcall = "chmod $privileges $directory \>\/dev\/null 2\>\&1";
-			system($localcall);
+			system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 		}
 		else
 		{
@@ -207,7 +207,7 @@ sub create_directory_with_privileges
 							$parentdir);
 
 						my $localcall = "chmod $privileges $parentdir \>\/dev\/null 2\>\&1";
-						system($localcall);
+						system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 					}
 					else
 					{
@@ -240,7 +240,7 @@ sub create_directory_with_privileges
 						$directory);
 
 					my $localcall = "chmod $privileges $directory \>\/dev\/null 2\>\&1";
-					system($localcall);
+					system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 				}
 				else
 				{
@@ -273,7 +273,7 @@ sub create_directory_with_privileges
 		$installer::logger::Lang->printf("Already existing directory, did not create: %s\n", $directory);
 
 		my $localcall = "chmod $privileges $directory \>\/dev\/null 2\>\&1";
-		system($localcall);
+		system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 	}
 }
 
@@ -1490,11 +1490,11 @@ sub try_to_create_directory
 			$installer::logger::Lang->printf("Created directory: %s\n", $directory);
 
 			my $localcall = "chmod 0775 $directory \>\/dev\/null 2\>\&1";
-			system($localcall);
+			system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 
 			# chmod 0775 is not sufficient on mac to remove sticky tag
 			$localcall = "chmod a-s $directory \>\/dev\/null 2\>\&1";
-			system($localcall);
+			system($localcall) unless ( $^O =~ /MSWin32/i );	# no chmod, no /dev/null
 		}
 		else
 		{
