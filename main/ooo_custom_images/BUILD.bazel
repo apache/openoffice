@@ -1,15 +1,13 @@
-load("//build/rules:images.bzl", "images_zip")
+exports_files(["classic/classic_images.tar.gz"])
 
-# ── images_industrial.zip ─────────────────────────────────────────────────────
-# Industrial theme: overrides default_images/ icons with tango-style versions.
-# In the dmake build packimages.pl merges default_images + industrial overrides.
-# Here we zip only the industrial-specific overrides; OOo loads images_industrial
-# as a fallback over images.zip so any icon not in industrial falls back to the
-# default set automatically.
-images_zip(
-    name = "images_industrial",
+# images_industrial.zip is //main/packimages:images_industrial -- a complete
+# set, these overrides merged over default_images.
+
+# The industrial theme's own images, for //main/packimages (which merges them
+# over default_images into a complete images_industrial.zip).
+filegroup(
+    name = "industrial_png",
     srcs = glob(["industrial/**/*.png"]),
-    strip_prefix = "main/ooo_custom_images/industrial",
     visibility = ["//visibility:public"],
 )
 

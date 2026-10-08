@@ -1,0 +1,49 @@
+load(":packimages.bzl", "images_theme")
+
+# packimages — share/config/images*.zip.  Mirrors pack/makefile.mk: images.zip
+# plus the three alternative icon themes, each a complete set (see
+# packimages.bzl for why).  scp2 file_ooo.scp installs all four.
+
+exports_files([
+    "packimages_driver.pl",
+    "pack/image-sort.lst",
+])
+
+images_theme(
+    name = "images",
+    out = "images.zip",
+)
+
+# -c ooo_custom_images/industrial
+images_theme(
+    name = "images_industrial",
+    out = "images_industrial.zip",
+    custom_images = ["//main/ooo_custom_images:industrial_png"],
+    custom_roots = ["main/ooo_custom_images/industrial"],
+)
+
+# -c $(MISC)/hicontrast, made by hicontrast-to-theme.pl from default_images'
+# *_h.png / lch_* / sch_* ... variants renamed onto their normal names.
+images_theme(
+    name = "images_hicontrast",
+    out = "images_hicontrast.zip",
+    hicontrast = True,
+)
+
+# -c $(MISC)/classic, unpacked from ooo_custom_images/classic's tarball.
+images_theme(
+    name = "images_classic",
+    out = "images_classic.zip",
+    classic_tar = "//main/ooo_custom_images:classic/classic_images.tar.gz",
+)
+
+filegroup(
+    name = "all_zips",
+    srcs = [
+        ":images",
+        ":images_classic",
+        ":images_hicontrast",
+        ":images_industrial",
+    ],
+    visibility = ["//visibility:public"],
+)

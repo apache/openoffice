@@ -51,3 +51,20 @@ filegroup(
     name = "help",
     srcs = [":help_" + m for m in HELP_MODULES],
 )
+
+# ── helpimg.ilst — the help pages' images, for images.zip ────────────────────
+# source/auxiliary/makefile.mk: helpers/create_ilst.pl lists every png under
+# default_images/res/helpimg as %GLOBALRES%/helpimg/..., delivered to solver
+# res/img beside the rsc image lists, so packimages puts them into images.zip.
+# The help viewer loads a page's pictures from there.
+genrule(
+    name = "helpimg_ilst",
+    srcs = ["//main/default_images:helpimg_png"],
+    outs = ["helpimg.ilst"],
+    cmd_bat = "$(location @strawberry-perl//:perl_exe) $(location helpers/create_ilst.pl) -dir=main/default_images/res/helpimg > $@",
+    tools = [
+        "helpers/create_ilst.pl",
+        "@strawberry-perl//:perl_exe",
+    ],
+    visibility = ["//visibility:public"],
+)

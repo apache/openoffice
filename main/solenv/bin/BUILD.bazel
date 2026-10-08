@@ -4,6 +4,10 @@ exports_files([
     "createcomponent.xslt",
     "packcomponents.xslt",
     "packregistry.xslt",
+    # //main/packimages runs these three unchanged.
+    "hicontrast-to-theme.pl",
+    "image-sort.pl",
+    "packimages.pl",
 ])
 
 # Perl wrapper: runs cl.exe via IPC::Open3, captures stdout → .pre file.
