@@ -148,8 +148,8 @@ neither is the Bazel build entry point.
 Reusable Starlark rules live in [build/rules/](rules/): the SDI compiler
 (`sdi_target.bzl`), IDL pipeline (`idl_pipeline.bzl`), resource compiler
 (`rsc_pipeline.bzl`), locale data codegen (`localedata_pipeline.bzl`), scp2
-installer archives (`scp2.bzl`), RDB merge (`merge_rdb.bzl`), and image packing
-(`images.bzl`).
+installer archives (`scp2.bzl`), and RDB merge (`merge_rdb.bzl`).  Image packing
+is `main/packimages/packimages.bzl`, which runs upstream's own `packimages.pl`.
 
 ---
 
@@ -404,7 +404,7 @@ containers passed between DLLs will read garbage.
 
 Most files here are **build-step helpers**: a Bazel rule runs them as part of an
 action, and they are listed in `build/tools/BUILD.bazel` under `exports_files`
-so a rule can name them as a label (`make_images_zip.pl`, `fcfg_merge.pl`,
+so a rule can name them as a label (`fcfg_merge.pl`,
 `stage_install.pl`, …). Adding one means adding it to that list.
 
 `throwspec.py` is the exception and is **not** in `exports_files`. It is a

@@ -123,6 +123,13 @@ These apply to many packages — check before building any new module:
   it never showed).  Cannot be =1: ~8 modules (comphelper, connectivity, sw, oox, fpicker, tools,
   svtools, pyuno) don't compile at =1 (heterogeneous comparators).  Global =0 matches upstream
   solenv; the per-module /D_HAS_ITERATOR_DEBUGGING=0 in those BUILD files are now redundant.
+- rsc_res `images` must cover EVERY image its .src names: since 2026-10-08 the rule
+  runs upstream's rsc2 -s normalisation, so the one-line `Bitmap { File = ...; }`
+  form is resolved too, and an image it cannot find fails the build ("The
+  image(s) <...> could not be found").  Take the set from upstream's
+  `RESLIBnIMAGES` (dmake) or `set_reslocation` (gbuild) plus the global
+  `//main/default_images:shared_images`.  images.zip is built from the `.ilst`
+  each rsc_res declares (output group `ilst`) — see main/packimages/readme.md.
 - rsc_res `images_root` MUST be `"main/default_images"` for every module that uses
   `Bitmap { File = "xxx.png" }` resources.  `BitmapEx(ResId)` reads the filename from .res and
   looks it up by exact name in `images.zip`.  `images.zip` uses `strip_prefix="main/default_images"`

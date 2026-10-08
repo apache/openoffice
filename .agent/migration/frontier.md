@@ -859,6 +859,9 @@ wizards       ✅  DONE 2026-08-16 — File > Wizards is LIVE (officecfg had
                    the deferred reportbuilder .oxt), basicsrvweb + basicsrvlauncher
                    (file_ooo.scp has no File entry for either and script.xlc does
                    not list them — upstream builds and then discards them).
+                   [FIXED 2026-10-08 by packimages: the cause was our rsc_res
+                   skipping upstream's rsc2 -s phase, so "upstream's own" below is
+                   wrong — see main/packimages/readme.md.]
                    DEFECT FOUND, LEFT UNFIXED — the wizard thumbnails are blank,
                    and it is NOT the usual images_root mistake.  rsc2 rewrites a
                    File= line into a path-qualified one ONLY when that line holds
@@ -947,7 +950,19 @@ unoil         ⬜  update climaker
 ── Remaining: Installer/packaging ───────────────────────────────────────
 instsetoo_native ⬜ (native Windows installer build)
 setup_native  ⬜  (Windows setup UI)
-packimages    ⬜  (image packaging for install)
+packimages    ✅  DONE 2026-10-08 — images.zip + images_{hicontrast,industrial,
+                   classic}.zip via upstream's packimages.pl/image-sort.pl/
+                   hicontrast-to-theme.pl unchanged, entry set from the .ilst lists
+                   (rsc_res output group "ilst", RES_BUNDLES shared with staging,
+                   + commandimagelist, helpimg.ilst, hsqldb_res).  Each theme is a
+                   COMPLETE set: ImplImageTree reads images.zip only for style
+                   "default" ⇒ before this, Industrial showed only its ~2400
+                   overrides and high-contrast mode had NO icons.  ROOT-CAUSED the
+                   "1033 one-line Bitmap refs" defect: rsc_res skipped upstream's
+                   rsc2 -s (src→srs) phase, which normalises one attribute per line;
+                   added (step 1.7).  63 .res: same resources, only image names now
+                   path-qualified.  Verified vs AOO 4.1.17 zips + headless pyuno.
+                   GUI not yet looked at.  See main/packimages/readme.md.
 sysui         ⬜  (system UI integration — mime types, desktop entries)
 solenv        ⬜  (legacy build environment, mostly migrated away)
 

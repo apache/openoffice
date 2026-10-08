@@ -206,8 +206,9 @@ files as textual fragments (declared via `_parse_generated` cc_library).
   bundles.  `sdbcl` is inert while logging is off — the level check returns before
   any resource lookup — which is why its absence went unnoticed until a driver was
   actually built; `sdberr` hollows out error text at exactly the wrong moment.
-- upstream's fourth reslib, `hsqldb` (from `hsqlui.src`), is deliberately NOT built:
-  its own comment says the `.res` is never installed and it exists only to force two
-  images into `images.zip`, which was a dmake necessity.  `//main/default_images:images`
-  globs `database/**/*.png` directly, so it would be a dead target here
+- upstream's fourth reslib, `hsqldb` (from `hsqlui.src`), is built but never
+  installed: its own comment says it exists only to force two images into
+  `images.zip`.  Since 2026-10-08 `images.zip` is built from the `.ilst` image
+  lists as upstream does (`//main/packimages`), so `:hsqldb_res` is exactly that
+  input -- `linked_text_table(_hc).png`, loaded as `private:imagerepository/...`
 - Drivers still unmigrated: ado, adabas (see above)

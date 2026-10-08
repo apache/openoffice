@@ -169,7 +169,19 @@ A `com` bundle is also referenced — `InitResources("Tools", "com")` in
 included.  It guards an error-message lookup, so the branch is simply dead.  Not
 a migration gap; do not go looking for it.
 
-## Known defect found, not fixed: the wizard thumbnails will be blank
+## FIXED 2026-10-08 — and it was ours, not upstream's
+
+The analysis below stands except its conclusion.  Upstream compiles resources
+in two phases: `rsc -fp=x.srs` first, where rsc2 in no-link mode (`-s`) parses
+the `.src` and writes it back one attribute per line, then the link step.  So
+upstream's link step never sees the one-line form — it sees a bare
+`File = "portrait_32.png";` line and rewrites it.  Our `rsc_res` skipped that
+phase; it now runs it (`build/rules/rsc_pipeline.bzl` step 1.7), `wzi`'s image
+list went from 0 to 30 entries, and `images.zip` is now built from those lists
+(`//main/packimages`).  Not yet looked at in the GUI.  See
+`main/packimages/readme.md`.
+
+### Original analysis (2026-08-16): the wizard thumbnails will be blank
 
 `wzi` holds the report/form/web wizards' orientation and layout thumbnails,
 requested as `private:resource/wzi/image/<id>`.  They will not load.  The cause
@@ -219,4 +231,4 @@ simply inert for the stored name here.
   neither).
 - `reportbuilderwizard.jar` built but not staged (belongs to the deferred
   `.oxt`).
-- The wizard thumbnails are blank, as upstream — see above.
+- The wizard thumbnails were blank — fixed 2026-10-08, see above.
