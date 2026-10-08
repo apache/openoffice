@@ -1,5 +1,6 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("//build/rules:extension.bzl", "ext_files", "oxt_package")
+load("//build/rules:gendocu.bzl", "autodoc_html")
 load("//build/rules:java_pipeline.bzl", "javac_classes")
 
 # odk — the Office Development Kit (SDK).  Mirrors prj/build.lst.
@@ -430,5 +431,47 @@ oxt_package(
     name = "odkexamples",
     out = "odkexamples.zip",
     contents = [":_odkexamples_files"],
+    visibility = ["//visibility:public"],
+)
+
+# ═══════════════════════════════════════════════════════════════════════════
+# The generated API reference — pack/gendocu + pack/copying (needs autodoc)
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# autodoc.exe is now available, so the reference trees that were held back can
+# be generated.  First the IDL reference -- pack/copying's IDL_DOCU_INDEX_FILE
+# (the one piece of pack/copying deferred when autodoc was unmigrated).  Output
+# is a TREE artifact (its HTML file set depends on the API), so it is not yet
+# folded into odkcommon.zip -- that needs a tree->zip step (zipper cannot
+# recurse a directory).  See readme.md for the remaining gendocu work (the C++
+# reference, the Java reference, the idl.css overlay, and the packaging).
+#
+# Matches the pack/copying recipe:
+#   autodoc -html <docs/common/ref> -dvgroot <wiki> -name "<OFFICENAME REL> API"
+#           -lg idl -dvgfile idl_chapter_refs.txt -t <idl tree>
+# with the udkapi + offapi source IDL as the two -t roots (autodoc merges them,
+# which is required: offapi types reference udkapi types).
+autodoc_html(
+    name = "idl_reference",
+    out_dir = "docs/common/ref",
+    srcs = [
+        "//main/udkapi:sdk_idl",
+        "//main/offapi:sdk_idl",
+        "pack/copying/idl_chapter_refs.txt",
+    ],
+    roots = [
+        "main/udkapi",
+        "main/offapi",
+    ],
+    args = [
+        "-dvgroot",
+        "https://wiki.openoffice.org/wiki",
+        "-name",
+        "OpenOffice 4.5.0 API",
+        "-lg",
+        "idl",
+        "-dvgfile",
+        "main/odk/pack/copying/idl_chapter_refs.txt",
+    ],
     visibility = ["//visibility:public"],
 )
