@@ -1,0 +1,110 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+# autodoc — the API documentation generator (autodoc.exe).  Mirrors
+# prj/build.lst (deps sal soltools stlport) + Executable_autodoc.mk.  A single
+# self-contained C++ tool: it uses its OWN cosv OS-abstraction library, not
+# sal/osl, so despite the build.lst ordering dep it links no first-party DLL --
+# only the systemstl shim (gbuild's `stl`).
+#
+# Two consumers, so it carries the VC90-CRT manifest embedded at RT_MANIFEST
+# id 1 (like uno-skeletonmaker/regcompare): the odk gendocu build step runs it,
+# and odk pack/copying ships it in the SDK's bin/.
+#
+# Not yet wired anywhere: gendocu (odk) is the first consumer and is the next
+# step.  See readme.md.
+
+package(default_visibility = ["//visibility:public"])
+
+# gbuild's -I set, in its exact order -- `#include <precomp.h>` exists in three
+# subtrees (source/inc, source/cosv/inc, source/udm/inc) and must resolve to
+# source/inc/precomp.h, the one listed first here.  These parents carry the
+# qualified includes (<tokens/x.hxx>, <s2_luidl/x.hxx>, ...), which is how the
+# duplicate token-header basenames stay unambiguous.
+_INCLUDES = [
+    "/Imain/autodoc/inc",
+    "/Imain/autodoc/source/inc",
+    "/Imain/autodoc/source/ary/inc",
+    "/Imain/autodoc/source/cosv/inc",
+    "/Imain/autodoc/source/display/inc",
+    "/Imain/autodoc/source/parser/inc",
+    "/Imain/autodoc/source/parser_i/inc",
+    "/Imain/autodoc/source/udm/inc",
+]
+
+# Every directory that holds a compiled .cxx, because the sources bare-include
+# their siblings with angle brackets (<c_slots.hxx>) -- gbuild adds each
+# object's own directory; this is the explicit equivalent.  Appended AFTER the
+# parents so precomp.h still resolves to source/inc, and safe against the five
+# duplicate header basenames because those are only ever included qualified or
+# quoted, never bare.
+_SOURCE_DIRS = [
+    "/Imain/autodoc/source/ary/cpp",
+    "/Imain/autodoc/source/ary/doc",
+    "/Imain/autodoc/source/ary/idl",
+    "/Imain/autodoc/source/ary/info",
+    "/Imain/autodoc/source/ary/kernel",
+    "/Imain/autodoc/source/ary/loc",
+    "/Imain/autodoc/source/ary_i/kernel",
+    "/Imain/autodoc/source/cosv/comphelp",
+    "/Imain/autodoc/source/cosv/service",
+    "/Imain/autodoc/source/cosv/storage",
+    "/Imain/autodoc/source/cosv/strings",
+    "/Imain/autodoc/source/display/html",
+    "/Imain/autodoc/source/display/idl",
+    "/Imain/autodoc/source/display/kernel",
+    "/Imain/autodoc/source/display/toolkit",
+    "/Imain/autodoc/source/exes/adc_uni",
+    "/Imain/autodoc/source/parser/adoc",
+    "/Imain/autodoc/source/parser/cpp",
+    "/Imain/autodoc/source/parser/kernel",
+    "/Imain/autodoc/source/parser/semantic",
+    "/Imain/autodoc/source/parser/tokens",
+    "/Imain/autodoc/source/parser_i/idl",
+    "/Imain/autodoc/source/parser_i/idoc",
+    "/Imain/autodoc/source/parser_i/tokens",
+    "/Imain/autodoc/source/tools",
+    "/Imain/autodoc/source/udm/html",
+    "/Imain/autodoc/source/udm/xml",
+]
+
+cc_binary(
+    name = "autodoc",
+    srcs = glob(
+        [
+            "source/**/*.cxx",
+            "inc/**/*.hxx",
+            "inc/**/*.h",
+            "source/**/*.hxx",
+            "source/**/*.h",
+        ],
+        exclude = [
+            # Unit tests and two unused variants -- not in Executable_autodoc.mk.
+            "source/cosv/unittest/**",
+            "source/udm/unittest/**",
+            "source/cosv/service/commandline.cxx",  # the built one is comdline.cxx
+            "source/display/idl/hfi_linklist.cxx",
+        ],
+    ),
+    copts = [
+        "/EHsc",  # the tree throws (x_parse, badcast, ...)
+        "/GR",    # dynamic_cast in ary/cpp, ary/doc, ...
+        "/Zm500",
+        "/Zc:forScope",
+        "/nologo",
+        "/wd4061",
+        "/wd4063",
+        "/wd4127",
+    ] + _INCLUDES + _SOURCE_DIRS,
+    defines = [
+        "WNT",
+        "WIN32",
+    ],
+    deps = ["//main/stlport:stlport"],
+    # SDK bin/ tool (and a build tool run without a staged external manifest),
+    # so it embeds its own VC90-CRT activation context.
+    additional_linker_inputs = ["//main/external/msvcp90:vc90_app_manifest_res"],
+    linkopts = [
+        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
+        "/MANIFEST:NO",
+    ],
+)
