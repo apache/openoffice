@@ -973,7 +973,22 @@ sysui         ⬜  (system UI integration — mime types, desktop entries)
 solenv        ⬜  (legacy build environment, mostly migrated away)
 
 ── Remaining: Docs/dev tooling ──────────────────────────────────────────
-autodoc       ⬜  (API documentation generator)
+autodoc       🟡  autodoc.exe done 2026-10-08 (winXP-x86): //main/autodoc:autodoc,
+                   one cc_binary over 263 .cxx (ary/ary_i/cosv/display/parser/
+                   parser_i/tools/udm/exes).  Self-contained — uses its OWN cosv
+                   OS layer, NO sal/osl/rtl headers, links only stlport (the
+                   build.lst sal/soltools deps are ordering, not link).  LANDMINE:
+                   sources bare-include siblings with ANGLE brackets
+                   (<c_slots.hxx>), so EVERY .cxx dir must be on -I (gbuild adds
+                   each object's own dir); the 8 inc/ parents lead so precomp.h
+                   (3 copies) resolves to source/inc, and the 5 duplicate token
+                   headers are always QUALIFIED/quoted so no bare collision.
+                   6 .cxx globbed out (unittest/**, commandline.cxx vs the built
+                   comdline.cxx, hfi_linklist.cxx).  VC90 manifest embedded (build
+                   tool AND SDK bin/ tool).  Builds + runs (usage on no args).
+                   NEXT: gendocu (odk pack/gendocu) -- run it over udkapi/offapi
+                   IDL for docs/common/ref, then fold into odkcommon.zip; unblocks
+                   the two odk pieces held for autodoc.  See main/autodoc/readme.md.
 odk           🟡  source/ + pack/copying done 2026-10-08.  source/: loader
                    classes, unowinreg.dll, unoapploader.exe, uno_loader_classes.zip
                    (verified by running them, 32-bit Temurin 8 for x86); static CRT
