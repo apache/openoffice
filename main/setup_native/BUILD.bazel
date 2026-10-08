@@ -1,0 +1,45 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+# setup_native — the Windows installer's own tools and MSI custom actions.
+# Mirrors prj/build.lst.  So far only the build tool the installer step needs
+# first; the custom-action DLLs (source/win32/customactions) are not migrated.
+# See readme.md.
+
+exports_files([
+    # make_installer's -msilanguage input is converted with this table.
+    "source/win32/msi-encodinglist.txt",
+])
+
+# VC9 runtime manifest at RT_MANIFEST id 1, winXP builds only -- same select as
+# //main/desktop's small EXEs, which explains why.
+_VC90_MANIFEST_INPUTS = select({
+    "//build/constraints:is_win10": [],
+    "//conditions:default": ["//main/external/msvcp90:vc90_app_manifest_res"],
+})
+
+_VC90_MANIFEST_LINKOPTS = select({
+    "//build/constraints:is_win10": [],
+    "//conditions:default": ["$(execpath //main/external/msvcp90:vc90_app_manifest_res)"],
+})
+
+# ── ulfconv.exe — source/ulfconv ─────────────────────────────────────────────
+# Converts the installer's UTF-8 .ulf string files into .mlf, each language in
+# its MSI codepage (rules.mk %.mlf: ulfconv -t msi-encodinglist.txt).  A BUILD
+# tool: the installer step runs it, nothing installs it.
+cc_binary(
+    name = "ulfconv",
+    srcs = ["source/ulfconv/ulfconv.cxx"],
+    copts = [
+        "/EHsc",
+        "/Imain/soltools/winunistd",
+    ],
+    defines = ["WNT", "WIN32"],
+    deps = ["//main/sal:sal_headers"],
+    additional_linker_inputs = ["//main/sal:sal_implib"] + _VC90_MANIFEST_INPUTS,
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/SUBSYSTEM:CONSOLE",
+        "/MANIFEST:NO",
+    ] + _VC90_MANIFEST_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
