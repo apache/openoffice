@@ -953,7 +953,14 @@ solenv        ⬜  (legacy build environment, mostly migrated away)
 
 ── Remaining: Docs/dev tooling ──────────────────────────────────────────
 autodoc       ⬜  (API documentation generator)
-odk           ⬜  (OpenDocument/Developer Kit)
+odk           🟡  STARTED 2026-10-08 — source/ done on all three configs:
+                   loader classes, unowinreg.dll, unoapploader.exe,
+                   uno_loader_classes.zip; each verified by running it (32-bit
+                   Temurin 8 for x86).  Static CRT as upstream, so
+                   _SNPRINTF_DLLIMPORT= (empty) avoids C2375 from sal's
+                   snprintf.h.  javac_classes now handles packaged classes.
+                   NEXT: pack/copying (the SDK tree + odkcommon/odkexamples
+                   zips); gendocu blocked on autodoc.  See main/odk/readme.md.
 helpauthoring ⬜  (help authoring tools)
 helpcontent2  ✅  DONE 2026-10-03 — the F1 help, en-US: help/en/ with all 9 modules
                    (.db/.ht/.key HelpLinker, .jar pages, .cfg, .tree Contents, .idxl
