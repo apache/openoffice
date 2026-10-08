@@ -475,3 +475,43 @@ autodoc_html(
     ],
     visibility = ["//visibility:public"],
 )
+
+# The C++ reference -- gendocu's CPP_DOCU_INDEX_FILE.  Same autodoc_html rule,
+# but the C++ `-p <proj> <root> -t <sub>` sequence goes entirely in `args`
+# (roots = []): each project's root is that module's own inc/ dir (upstream uses
+# one INCOUT holding every subtree; here they are separate), and the -t subdirs
+# are relative to the preceding -p root.  -name uses UDK 3.2.7 (udkversion.mk).
+# The two -ignoredefine flags drop the DLL-export macros so autodoc's C++ parser
+# does not trip on them.  cpp.css overlay deferred (as for the IDL ref).
+autodoc_html(
+    name = "cpp_reference",
+    out_dir = "docs/cpp/ref",
+    srcs = [
+        "//main/sal:sdk_headers",
+        "//main/store:sdk_headers",
+        "//main/registry:sdk_headers",
+        "//main/cppu:sdk_headers",
+        "//main/cppuhelper:sdk_headers",
+        "//main/salhelper:sdk_headers",
+        "//main/bridges:sdk_headers",
+    ],
+    roots = [],
+    args = [
+        "-name",
+        "UDK 3.2.7 C/C++ API Reference",
+        "-ignoredefine",
+        "CPPUHELPER_DLLPUBLIC",
+        "-ignoredefine",
+        "SAL_DLLPUBLIC_EXPORT",
+        "-lg",
+        "c++",
+        "-p", "sal", "main/sal/inc", "-t", "sal", "-t", "osl", "-t", "rtl",
+        "-p", "store", "main/store/inc", "-t", "store",
+        "-p", "registry", "main/registry/inc", "-t", "registry",
+        "-p", "cppu", "main/cppu/inc", "-t", "cppu", "-t", "com", "-t", "typelib", "-t", "uno",
+        "-p", "cppuhelper", "main/cppuhelper/inc", "-t", "cppuhelper",
+        "-p", "salhelper", "main/salhelper/inc", "-t", "salhelper",
+        "-p", "bridges", "main/bridges/inc", "-t", "bridges",
+    ],
+    visibility = ["//visibility:public"],
+)

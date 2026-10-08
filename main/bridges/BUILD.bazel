@@ -80,6 +80,13 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
+# The public inc/bridges tree, for the odk C++ API reference (gendocu).
+filegroup(
+    name = "sdk_headers",
+    srcs = glob(["inc/bridges/**/*.h", "inc/bridges/**/*.hxx"], allow_empty = True),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── msci_uno.dll ─────────────────────────────────────────────────
 # Windows MSVC x86 C++/UNO bridge.
 # Sources: platform-neutral shared/ layer + msvc_win32_intel/ platform layer.
