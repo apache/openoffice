@@ -966,7 +966,13 @@ helpcontent2  ✅  DONE 2026-10-03 — the F1 help, en-US: help/en/ with all 9 m
                    an OLDER source revision (AOO41X) — compare structure, not bytes.
                    Extension help (swext) is help_extension, same driver family.
                    See main/helpcontent2/readme.md.
-xml2cmp       ⬜  (XML component comparison tool)
+xml2cmp       ✅  DONE 2026-10-08 — xml2cmp.exe + srvdepy.exe, green on all three
+                   configs, not staged (d.lst empty; only dmake's COMPnTYPELIST
+                   ever consumed it).  It is a component-DESCRIPTION tool, not a
+                   "comparison" one.  Per-subdir /I for angle-bracket local
+                   includes.  LANDMINE: srvdepy reads stdin until "#" and never
+                   checks EOF — run it unattended and it loops forever (1 GB of
+                   log in 2 min).  See main/xml2cmp/readme.md.
 
 ── Remaining: Standalone/misc ───────────────────────────────────────────
 automation    ⬜  (test automation/macro recorder framework)
