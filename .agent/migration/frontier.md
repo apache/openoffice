@@ -948,8 +948,14 @@ cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
 unoil         ⬜  update climaker
 
 ── Remaining: Installer/packaging ───────────────────────────────────────
-instsetoo_native ⬜ (native Windows installer build)
-setup_native  ⬜  (Windows setup UI)
+instsetoo_native 🟡 STARTED 2026-10-08 — owner chose: upstream make_installer.pl
+                   under Strawberry Perl, PORTED (not Cygwin, not a rewrite).  Port
+                   done (MSWin32 branch, no zip/chmod, name-less items dropped); it
+                   runs to file collection and reports 379 missing files —
+                   categorised, with the spike recipe, in
+                   main/instsetoo_native/readme.md.  NEXT: scp2 defines that match
+                   this build, then the solver tree rule.
+setup_native  🟡  ulfconv only (2026-10-08); the MSI custom-action DLLs are next
 packimages    ✅  DONE 2026-10-08 — images.zip + images_{hicontrast,industrial,
                    classic}.zip via upstream's packimages.pl/image-sort.pl/
                    hicontrast-to-theme.pl unchanged, entry set from the .ilst lists
