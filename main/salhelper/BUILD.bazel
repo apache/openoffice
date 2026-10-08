@@ -62,6 +62,13 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── SDK headers (odk include/salhelper) ───────────────────────────
+filegroup(
+    name = "sdk_headers",
+    srcs = glob(["inc/salhelper/**/*.h", "inc/salhelper/**/*.hxx"]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── salhelper_test — RTTI/type_info checks for salhelper's public API ──
 # Standalone GoogleTest (own main()), no UNO runtime.  Links sal + salhelper
 # import libs; needs sal3.dll + salhelper3MSC.dll at run time.  Mirrors

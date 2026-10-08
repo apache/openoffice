@@ -4,4 +4,5 @@ exports_files([
     "version.lst",   # source of version numbers; read by gen_versionlist_hrc.pl
     "version.hrc",   # includes versionlist.hrc + verinfo.hrc; used in soreport.rc
     "verinfo.hrc",   # version string macros; included by version.hrc
+    "udkversion.mk", # UDK version; shipped verbatim into the SDK's include/ (odk)
 ])

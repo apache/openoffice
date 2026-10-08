@@ -20,6 +20,15 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# The raw .idl SOURCE tree, for the SDK's idl/ reference (odk pack/copying).
+# Unlike :udkapi_idl (which compiles them to a .rdb + header tree) this is the
+# unprocessed source the SDK ships verbatim.
+filegroup(
+    name = "sdk_idl",
+    srcs = glob(["com/sun/star/**/*.idl"]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── Generated headers as a cc_library dep ─────────────────────────
 # Consumers get the cppumaker output tree on their include path via
 # includes = ["udkapi_idl_inc"]  (Bazel prepends both source and bin roots)

@@ -57,3 +57,21 @@ cc_library(
     }),
     visibility = ["//visibility:public"],
 )
+
+# ── SDK headers (odk include/stl) ─────────────────────────────────
+# Upstream's prj/d.lst delivers inc/stlport/* plus systemstlguards/*.h into the
+# SDK's include/stl.  In the systemstl world those are the shim forwarders
+# (systemstl/ and its vc9/ subdir) and the two guard headers; best-effort
+# mapping.  Split in two because the odk assembly re-roots each source prefix
+# (systemstl, systemstlguards) onto the single include/stl destination.
+filegroup(
+    name = "sdk_headers_stl",
+    srcs = glob(["systemstl/**"]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
+filegroup(
+    name = "sdk_headers_guards",
+    srcs = glob(["systemstlguards/*.h"]),
+    visibility = ["//main/odk:__pkg__"],
+)

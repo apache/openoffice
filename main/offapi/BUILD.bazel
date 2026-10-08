@@ -91,6 +91,16 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
+# The raw .idl SOURCE tree, for the SDK's idl/ reference (odk pack/copying).
+# The full tree, including the files :offapi_idl leaves out of compilation --
+# those exclusions are an idlc batching concern, not a delivery one; the SDK
+# ships every .idl as API reference.
+filegroup(
+    name = "sdk_idl",
+    srcs = glob(["com/sun/star/**/*.idl"]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── types.rdb — merged UNO type library (udkapi + offapi) ─────────
 # Mirrors UnoApi_types.mk: regmerge udkapi.rdb + offapi.rdb → types.rdb.
 # Installed to program/types.rdb alongside services.rdb and oovbaapi.rdb.

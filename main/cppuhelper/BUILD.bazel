@@ -128,6 +128,13 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── SDK headers (odk include/cppuhelper) ──────────────────────────
+filegroup(
+    name = "sdk_headers",
+    srcs = glob(["inc/cppuhelper/**/*.h", "inc/cppuhelper/**/*.hxx"]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── qa unit tests ─────────────────────────────────────────────────
 # Standalone GoogleTest exes (own main()) that link cppuhelper3MSC.dll's import
 # lib.  cppuhelper drags in sal3/cppu3/salhelper3MSC at run time, so all four

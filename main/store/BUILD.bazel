@@ -74,3 +74,10 @@ filegroup(
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
+
+# ── SDK headers (odk include/store) ───────────────────────────────
+filegroup(
+    name = "sdk_headers",
+    srcs = glob(["inc/store/**/*.h", "inc/store/**/*.hxx"]),
+    visibility = ["//main/odk:__pkg__"],
+)

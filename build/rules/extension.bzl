@@ -168,14 +168,26 @@ def _oxt_package_impl(ctx):
                 fail("%s is contributed twice (again by %s)" % (path, t.label))
             entries[path] = f
     out = ctx.actions.declare_file(ctx.attr.out)
-    args = ctx.actions.args()
-    args.add("cC")  # create, deflate
-    args.add(out)
+
+    # zipper wants its command flags and the output path as direct arguments;
+    # only the "<archive path>=<file>" entries may be spilled.
+    flags = ctx.actions.args()
+    flags.add("cC")  # create, deflate
+    flags.add(out)
+
+    # A large archive (the SDK's idl/ + include/ trees, say) has thousands of
+    # entries, which overflow Windows' 32 KiB command line.  Spill them to a
+    # flagfile zipper reads as @file (one entry per line).  zipper rejects its
+    # flags when THEY are in the flagfile too, so only this second Args spills.
+    entry_args = ctx.actions.args()
     for path in sorted(entries.keys()):
-        args.add("%s=%s" % (path, entries[path].path))
+        entry_args.add("%s=%s" % (path, entries[path].path))
+    entry_args.use_param_file("@%s", use_always = True)
+    entry_args.set_param_file_format("multiline")
+
     ctx.actions.run(
         executable = ctx.executable._zipper,
-        arguments = [args],
+        arguments = [flags, entry_args],
         inputs = entries.values(),
         outputs = [out],
         mnemonic = "OxtPackage",

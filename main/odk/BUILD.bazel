@@ -121,3 +121,314 @@ oxt_package(
     ],
     visibility = ["//visibility:public"],
 )
+
+# ═══════════════════════════════════════════════════════════════════════════
+# The SDK tree and its zips — pack/copying + util/makefile.mk
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# Upstream pack/copying lays a solver-shaped tree under $(OUT)/bin/odkcommon/
+# (bin, lib, include, idl, classes, settings, docs, examples) from the file
+# lists in pack/copying/makefile.mk + util/makefile.pmk, then util/makefile.mk
+# zips the tree to odkcommon.zip and examples/ to odkexamples.zip -- the two
+# deliverables prj/d.lst hands to solver bin/.  oxt_package works in archive
+# paths, so there is no on-disk tree to assemble: each ext_files group below
+# places one part of pack/copying's lists at its archive path, and the two
+# oxt_package targets zip them.
+#
+# NOT YET, and deliberately absent (see readme.md):
+#   - bin/autodoc + docs/common/ref (the IDL reference) -- blocked on autodoc.
+#   - cli/ + bin/climaker -- blocked on cli_ure/.NET.
+#   - lib/irmcxt.lib -- no module in this source tree produces `rmcxt`
+#     (bridges/version.mk's RMCXT_TARGET is a vestigial version stamp nothing
+#     consumes); shipped without it rather than guessing a mapping.
+
+_PRODUCT_RELEASE = "4.5.0"       # util/makefile.pmk PRODUCT_RELEASE (= MODULE.bazel version)
+_SDKDIRNAME = "OpenOffice_4.5.0_SDK"  # util/makefile.pmk SDKDIRNAME, WNT branch
+
+# ── bin/ — the SDK tools (EXELIST) ───────────────────────────────────────────
+# autodoc and climaker are omitted (blocked); unoapploader is this module's.
+ext_files(
+    name = "_sdk_bin",
+    srcs = [
+        "//main/codemaker:cppumaker",
+        "//main/codemaker:javamaker",
+        "//main/idlc:idlc",
+        "//main/registry:regcompare",
+        "//main/unodevtools:uno-skeletonmaker",
+        "@ucpp//:ucpp",
+        ":unoapploader",
+    ],
+    dest = "bin",
+)
+
+# ── lib/ — import libraries under their SDK names (LIBLIST) ───────────────────
+# Each DLL's interface library (<stem>.if.lib) renamed to the SDK's i<name>.lib.
+ext_files(
+    name = "_sdk_lib",
+    srcs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppu:purpenvhelper_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/store:store_implib",
+        "//main/registry:reg_implib",
+    ],
+    dest = "lib",
+    rename = {
+        "sal3.if.lib": "isal.lib",
+        "salhelper3MSC.if.lib": "isalhelper.lib",
+        "cppu3.if.lib": "icppu.lib",
+        "purpenvhelper3MSC.if.lib": "ipurpenvhelper3MSC.lib",
+        "cppuhelper3MSC.if.lib": "icppuhelper.lib",
+        "store.if.lib": "istore.lib",
+        "reg.if.lib": "ireg.lib",
+    },
+)
+
+# ── include/ — the public C++ API headers (INCLUDELIST) ───────────────────────
+# Each owning module exposes exactly its SDK subtree as :sdk_headers (no
+# inc/pch, no inc/internal); strip_prefix re-roots inc/<dir> onto include/<dir>.
+ext_files(
+    name = "_sdk_inc_sal",
+    srcs = ["//main/sal:sdk_headers"],
+    strip_prefix = "main/sal/inc",
+    dest = "include",
+)
+
+ext_files(
+    name = "_sdk_inc_salhelper",
+    srcs = ["//main/salhelper:sdk_headers"],
+    strip_prefix = "main/salhelper/inc",
+    dest = "include",
+)
+
+ext_files(
+    name = "_sdk_inc_store",
+    srcs = ["//main/store:sdk_headers"],
+    strip_prefix = "main/store/inc",
+    dest = "include",
+)
+
+ext_files(
+    name = "_sdk_inc_cppu",
+    srcs = ["//main/cppu:sdk_headers"],
+    strip_prefix = "main/cppu/inc",
+    dest = "include",
+)
+
+ext_files(
+    name = "_sdk_inc_cppuhelper",
+    srcs = ["//main/cppuhelper:sdk_headers"],
+    strip_prefix = "main/cppuhelper/inc",
+    dest = "include",
+)
+
+ext_files(
+    name = "_sdk_inc_registry",
+    srcs = ["//main/registry:sdk_headers"],
+    strip_prefix = "main/registry/inc",
+    dest = "include",
+)
+
+# include/stl -- the systemstl shim forwarders + the two guard headers,
+# re-rooted from their two source dirs onto the single stl/ destination.
+ext_files(
+    name = "_sdk_inc_stl",
+    srcs = ["//main/stlport:sdk_headers_stl"],
+    strip_prefix = "main/stlport/systemstl",
+    dest = "include/stl",
+)
+
+ext_files(
+    name = "_sdk_inc_stl_guards",
+    srcs = ["//main/stlport:sdk_headers_guards"],
+    strip_prefix = "main/stlport/systemstlguards",
+    dest = "include/stl",
+)
+
+# include/udkversion.mk (DESTINCLUDELIST appends it explicitly).
+ext_files(
+    name = "_sdk_inc_udkversion",
+    srcs = ["//main/solenv/inc:udkversion.mk"],
+    dest = "include",
+)
+
+# ── idl/ — the raw UNO IDL source tree (DESTIDLLIST) ──────────────────────────
+ext_files(
+    name = "_sdk_idl_udkapi",
+    srcs = ["//main/udkapi:sdk_idl"],
+    strip_prefix = "main/udkapi",
+    dest = "idl",
+)
+
+ext_files(
+    name = "_sdk_idl_offapi",
+    srcs = ["//main/offapi:sdk_idl"],
+    strip_prefix = "main/offapi",
+    dest = "idl",
+)
+
+# ── classes/ — the loader classes + win/unowinreg.dll (DESTCLASSESLIST) ───────
+ext_files(
+    name = "_sdk_classes",
+    srcs = [":loader_classes"],
+    strip_prefix = "main/odk",
+    dest = "classes",
+)
+
+ext_files(
+    name = "_sdk_classes_win",
+    srcs = [":unowinreg"],
+    dest = "classes/win",
+)
+
+# ── settings/ — the SDK makefile fragments (SETTINGSLIST) ─────────────────────
+ext_files(
+    name = "_sdk_settings",
+    srcs = glob(["settings/*.mk"]) + ["settings/component.uno.def"],
+    dest = "settings",
+)
+
+# dk.mk carries the version stamp; @@BUILDID@@/@@SCMREVISION@@ are left empty
+# (a wall-clock/VCS stamp defeats a reproducible build -- see the frontier's
+# release-identity note; they become a stable provenance key when that lands).
+ext_files(
+    name = "_sdk_settings_dk",
+    srcs = ["pack/copying/dk.mk"],
+    dest = "settings",
+    substitutions = {
+        "@@RELEASE@@": _PRODUCT_RELEASE,
+        "@@BUILDID@@": "",
+        "@@SCMREVISION@@": "",
+    },
+)
+
+# ── docs/ + root install files (DOCUFILES, INSTALLSCRIPT, index.html) ──────────
+ext_files(
+    name = "_sdk_docs_html",
+    srcs = [
+        "docs/install.html",
+        "docs/notsupported.html",
+        "docs/tools.html",
+    ],
+    dest = "docs",
+    substitutions = {"%PRODUCT_RELEASE%": _PRODUCT_RELEASE},
+)
+
+ext_files(
+    name = "_sdk_docs_css",
+    srcs = ["docs/sdk_styles.css"],
+    dest = "docs",
+)
+
+ext_files(
+    name = "_sdk_docs_images",
+    srcs = glob(["docs/images/*"]),
+    dest = "docs/images",
+)
+
+ext_files(
+    name = "_sdk_index",
+    srcs = ["index.html"],
+    dest = "",
+    substitutions = {"%PRODUCT_RELEASE%": _PRODUCT_RELEASE},
+)
+
+ext_files(
+    name = "_sdk_scripts",
+    srcs = [
+        "setsdkenv_windows.template",
+        "setsdkname.bat",
+        "cfgWin.js",
+    ],
+    dest = "",
+)
+
+ext_files(
+    name = "_sdk_setsdkenv",
+    srcs = ["setsdkenv_windows.bat"],
+    dest = "",
+    substitutions = {"__SDKNAME__": _SDKDIRNAME},
+)
+
+# examples.html pair -- the DOCUFILES entries that live under examples/ (the
+# examples SOURCES ship separately in odkexamples.zip).
+ext_files(
+    name = "_sdk_examples_html",
+    srcs = [
+        "examples/examples.html",
+        "examples/DevelopersGuide/examples.html",
+    ],
+    strip_prefix = "main/odk",
+    dest = "",
+    substitutions = {"%PRODUCT_RELEASE%": _PRODUCT_RELEASE},
+)
+
+# ── odkcommon.zip — the whole SDK tree (util PRODUCTZIPFILE) ───────────────────
+oxt_package(
+    name = "odkcommon",
+    out = "odkcommon.zip",
+    contents = [
+        ":_sdk_bin",
+        ":_sdk_lib",
+        ":_sdk_inc_sal",
+        ":_sdk_inc_salhelper",
+        ":_sdk_inc_store",
+        ":_sdk_inc_cppu",
+        ":_sdk_inc_cppuhelper",
+        ":_sdk_inc_registry",
+        ":_sdk_inc_stl",
+        ":_sdk_inc_stl_guards",
+        ":_sdk_inc_udkversion",
+        ":_sdk_idl_udkapi",
+        ":_sdk_idl_offapi",
+        ":_sdk_classes",
+        ":_sdk_classes_win",
+        ":_sdk_settings",
+        ":_sdk_settings_dk",
+        ":_sdk_docs_html",
+        ":_sdk_docs_css",
+        ":_sdk_docs_images",
+        ":_sdk_index",
+        ":_sdk_scripts",
+        ":_sdk_setsdkenv",
+        ":_sdk_examples_html",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── odkexamples.zip — the example SOURCES (util ZIP1TARGET) ────────────────────
+# ZIP1LIST: examples/ minus build scaffolding and the few samples upstream drops.
+ext_files(
+    name = "_odkexamples_files",
+    srcs = glob(
+        ["examples/**"],
+        exclude = [
+            "examples/**/CVS/**",
+            "examples/**/makefile.mk",
+            "examples/**/examples.html",
+            "examples/**/*Inspector*",
+            "examples/**/*Inspector*/**",
+            "examples/**/*Container1*",
+            "examples/**/*Container1*/**",
+            "examples/**/*Storage*",
+            "examples/**/*Storage*/**",
+            "examples/**/*register_component*",
+            "examples/**/*ConverterServlet*",
+            "examples/**/*NotesAccess*",
+            "examples/**/*NotesAccess*/**",
+            "examples/**/*delphi*",
+            "examples/**/*delphi*/**",
+        ],
+    ),
+    strip_prefix = "main/odk",
+    dest = "",
+)
+
+oxt_package(
+    name = "odkexamples",
+    out = "odkexamples.zip",
+    contents = [":_odkexamples_files"],
+    visibility = ["//visibility:public"],
+)

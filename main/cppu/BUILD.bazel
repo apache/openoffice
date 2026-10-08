@@ -159,6 +159,25 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── SDK headers (odk include/{cppu,typelib,uno,com}) ──────────────
+# The public cppu, typelib and uno trees plus the handful of C++ UNO helper
+# headers under com/sun/star/uno (Any/Reference/Sequence/Type/genfunc .h+.hxx).
+# inc/pch is build-private and excluded.
+filegroup(
+    name = "sdk_headers",
+    srcs = glob([
+        "inc/cppu/**/*.h",
+        "inc/cppu/**/*.hxx",
+        "inc/typelib/**/*.h",
+        "inc/typelib/**/*.hxx",
+        "inc/uno/**/*.h",
+        "inc/uno/**/*.hxx",
+        "inc/com/**/*.h",
+        "inc/com/**/*.hxx",
+    ], allow_empty = True),  # inc/cppu is .hxx-only
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── Bridge DLLs ───────────────────────────────────────────────────
 # Each bridge exports uno_initEnvironment / uno_ext_getMapping via
 # SAL_DLLPUBLIC_EXPORT, so no explicit DEF symbols are needed.

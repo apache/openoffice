@@ -192,6 +192,25 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── SDK headers (odk include/{sal,rtl,osl,systools}) ──────────────
+# The public headers the SDK ships from this module -- the osl, rtl, sal and
+# (Windows) systools trees.  inc/internal and inc/pch are build-private and
+# deliberately excluded.
+filegroup(
+    name = "sdk_headers",
+    srcs = glob([
+        "inc/osl/**/*.h",
+        "inc/osl/**/*.hxx",
+        "inc/rtl/**/*.h",
+        "inc/rtl/**/*.hxx",
+        "inc/sal/**/*.h",
+        "inc/sal/**/*.hxx",
+        "inc/systools/**/*.h",
+        "inc/systools/**/*.hxx",
+    ], allow_empty = True),  # inc/sal is .h-only
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── unit tests (qa/) ──────────────────────────────────────────────
 # Standalone GoogleTest apps (each has its own main()), link sal only.
 # See sal_qa.bzl for the shared copts/deps.  $(TESTSHL2LIB) in the dmake
