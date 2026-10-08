@@ -1,0 +1,81 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# xml2cmp — reads an old-style UNO component description (.xml) and emits the
+# component's type list, a C++ description function, or HTML documentation.
+# srvdepy — the same parser turned on a directory of descriptions, reporting
+# service dependencies.  Mirrors Executable_xml2cmp.mk / Executable_srvdepy.mk.
+#
+# A standalone developer tool: no UNO, no sal, only the C++ runtime + stlport.
+# Nothing in the Bazel build consumes it (dmake's rules.mk/settings.mk used it
+# for COMPnTYPELIST, which no migrated module has), so it is built, not staged.
+# source/x2cclass is not built upstream either and is not built here.
+
+_DEFINES = [
+    "WNT",
+    "WIN32",
+]
+
+_COPTS = [
+    "/Zc:forScope",
+    "/GR",
+    "/nologo",
+    "/EHsc",
+    # Same-directory headers are included with angle brackets
+    # (<parse.hxx>, <sistr.hxx>, ...), which MSVC does not resolve relative
+    # to the including file — hence one /I per source subdirectory.
+    "/Imain/xml2cmp/source/inc",
+    "/Imain/xml2cmp/source/support",
+    "/Imain/xml2cmp/source/xcd",
+]
+
+_HDRS = glob([
+    "source/inc/*.h",
+    "source/support/*.hxx",
+    "source/xcd/*.hxx",
+    "source/finder/*.hxx",
+])
+
+# The parser + HTML/index writers shared by both executables.  Upstream
+# compiles them twice, once into each exe; one static library is equivalent.
+cc_library(
+    name = "xml2cmp_common",
+    srcs = [
+        "source/support/badcast.cxx",
+        "source/support/cmdline.cxx",
+        "source/support/heap.cxx",
+        "source/support/sistr.cxx",
+        "source/support/syshelp.cxx",
+        "source/xcd/cr_html.cxx",
+        "source/xcd/cr_index.cxx",
+        "source/xcd/cr_metho.cxx",
+        "source/xcd/filebuff.cxx",
+        "source/xcd/parse.cxx",
+        "source/xcd/xmlelem.cxx",
+        "source/xcd/xmltree.cxx",
+    ],
+    hdrs = _HDRS,
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = ["//main/stlport:stlport"],
+)
+
+cc_binary(
+    name = "xml2cmp",
+    srcs = ["source/xcd/main.cxx"] + _HDRS,
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [":xml2cmp_common"],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "srvdepy",
+    srcs = [
+        "source/finder/dep_main.cxx",
+        "source/finder/dependy.cxx",
+    ] + _HDRS,
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [":xml2cmp_common"],
+    visibility = ["//visibility:public"],
+)
