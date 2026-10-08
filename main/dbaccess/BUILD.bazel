@@ -901,6 +901,14 @@ rsc_res(
         "main/dbaccess/source/ext/adabas",
         "main/svl/inc",
     ],
+    # Image search path as upstream's: gb_AllLangResTarget_set_reslocation,adabasui,dbaccess.  Needed since rsc_res
+    # normalises its sources like dmake's srs phase; before that, the one-line
+    # Bitmap form in this .src was silently skipped and no image was looked up.
+    images = [
+        "//main/default_images:dbaccess_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
 

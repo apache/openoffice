@@ -308,6 +308,11 @@ rsc_res(
         "main/extensions/source/dbpilots",
         "main/svl/inc",
     ],
+    # Image search path as upstream's: no RESLIB1IMAGES, so default_images/res only.  Needed since rsc_res
+    # normalises its sources like dmake's srs phase; before that, the one-line
+    # Bitmap form in this .src was silently skipped and no image was looked up.
+    images = ["//main/default_images:shared_images"],
+    images_root = "main/default_images",
 )
 
 # abp.res — address book pilot
@@ -322,6 +327,14 @@ rsc_res(
         "main/extensions/source/abpilot",
         "main/svl/inc",
     ],
+    # Image search path as upstream's: RESLIB1IMAGES=$(PRJ)/res.  Needed since rsc_res
+    # normalises its sources like dmake's srs phase; before that, the one-line
+    # Bitmap form in this .src was silently skipped and no image was looked up.
+    images = [
+        "//main/default_images:extensions_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images",
 )
 
 # preload.res — OEM preload/wizard

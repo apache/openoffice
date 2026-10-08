@@ -142,6 +142,14 @@ def _rsc_res_impl(ctx):
     # We run in normal mode so only .res is produced.
     res_out = ctx.actions.declare_file(ctx.label.name + ".res")
 
+    # rsc2 ALWAYS also writes <res name>.ilst beside the .res (rsc.cxx: the
+    # -oil= dir, defaulting to the .res's own): one line per image the .res
+    # references, "%images%\<zip entry>" with this rule's -subimages prefix.
+    # packimages builds images*.zip from exactly these lists, so it is a
+    # declared output -- in its own output group, so that .res consumers
+    # (res_stage wants exactly one file) are unaffected.
+    ilst_out = ctx.actions.declare_file(ctx.label.name + ".ilst")
+
     # ── Common argument fragments ─────────────────────────────────────────
     include_args = ["-I" + d for d in ctx.attr.includes]
     define_args  = ["-D" + d for d in ctx.attr.defines]
@@ -261,7 +269,38 @@ def _rsc_res_impl(ctx):
             mnemonic              = "RscFixImageList",
             progress_message      = "Normalizing ImageList IdLists in %s" % srs_int.basename,
         )
-        srs_for_rsc2.append(srs_idlist)
+
+        # ── Step 1.7: rsc2 -s — upstream's src→srs phase ──────────────────────
+        # dmake compiles in TWO phases (_tg_srs.mk then the RESLIB step): first
+        # rsc -fp=x.srs, where rsc2 in no-link mode (-s) PARSES the source and
+        # writes it back through WriteSrc, one attribute per line; only then
+        # does the link step read those .srs files.  Its image resolver
+        # (rsc.cxx PreprocessSrsFile) rewrites a line only when it holds a
+        # single '=', so it relies on that normalisation: the one-line form
+        #   ImageBitmap = Bitmap { File = "x.png" ; };
+        # (1033 references in 19 modules) reaches it as a bare
+        #   File = "x.png";
+        # line upstream, and was silently skipped here -- the .res kept the bare
+        # basename, nothing reached the .ilst, and the image never loaded.
+        srs_norm = ctx.actions.declare_file(
+            ctx.label.name + "_srs_norm/" + srs_int.basename,
+        )
+        ctx.actions.run(
+            executable = staged["rsc2.exe"].path,
+            arguments  = (
+                ["-s", "-lgEN_US", "-fp=" + srs_norm.path]
+                + include_args
+                + define_args
+                + [srs_idlist.path]
+            ),
+            inputs                = [srs_idlist] + all_staged,
+            outputs               = [srs_norm],
+            env                   = {"PATH": tools_dir},
+            mnemonic              = "RscNormalize",
+            progress_message      = "Normalizing RSC %s" % srs_int.basename,
+            use_default_shell_env = False,
+        )
+        srs_for_rsc2.append(srs_norm)
 
     # ── Step 2: Compile all .srs intermediates → .res with rsc2 ──────────
     ctx.actions.run(
@@ -278,14 +317,17 @@ def _rsc_res_impl(ctx):
             + [f.path for f in srs_for_rsc2]
         ),
         inputs                = srs_for_rsc2 + all_staged,
-        outputs               = [res_out],
+        outputs               = [res_out, ilst_out],
         env                   = {"PATH": tools_dir},
         mnemonic              = "Rsc2Compile",
         progress_message      = "Compiling RSC resources for %s" % ctx.label.name,
         use_default_shell_env = False,
     )
 
-    return [DefaultInfo(files = depset([res_out]))]
+    return [
+        DefaultInfo(files = depset([res_out])),
+        OutputGroupInfo(ilst = depset([ilst_out])),
+    ]
 
 rsc_res = rule(
     implementation = _rsc_res_impl,

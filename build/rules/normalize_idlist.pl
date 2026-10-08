@@ -63,6 +63,11 @@ sub normalize {
     $kw = $1 while $block =~ /([Pp])refix\s*=/g;
     return $head . $body . $tail unless $kw eq 'P';
 
+    # rscpp line markers ("# 123") can sit inside the list when a macro supplies
+    # it (svtools imagemgr.src X_IMAGE_LIST).  Kept as a token they would come
+    # out as "# 123;", which rsc2's parser rejects; they only steer error line
+    # numbers, so drop them.
+    $body =~ s/^[ \t]*#[^\n]*$//mg;
     my @out;
     for my $tok (split /;/, $body) {
         $tok =~ s/^\s+//;
