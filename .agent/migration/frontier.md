@@ -989,19 +989,23 @@ autodoc       🟡  autodoc.exe done 2026-10-08 (winXP-x86): //main/autodoc:auto
                    USED: //build/rules:gendocu.bzl autodoc_html runs it as a build
                    tool (cfg=exec) -- autodoc also BUILDS on x64 (exec), no arch
                    issues.  See main/autodoc/readme.md.
-odk gendocu   🟡  IDL + C++ references DONE 2026-10-08 (tree artifacts via
-                   //build/rules:gendocu.bzl autodoc_html).  IDL:
+odk gendocu   🟡  ALL THREE references DONE 2026-10-08 (tree artifacts via
+                   //build/rules:gendocu.bzl).  autodoc_html: IDL
                    //main/odk:idl_reference -> docs/common/ref (8156 files; the
                    IDL_DOCU_INDEX_FILE pack/copying deferred), autodoc over
                    udkapi+offapi source IDL as two -t roots (merged: offapi refs
-                   udkapi).  C++: //main/odk:cpp_reference -> docs/cpp/ref (1156
+                   udkapi); C++ //main/odk:cpp_reference -> docs/cpp/ref (1156
                    files), the C++ -p<proj> <inc> -t<sub> form in args/roots=[],
                    each -p root a module's own inc/, +2 -ignoredefine for the
-                   DLL-export macros; reuses the 6 sdk_headers + a new
-                   //main/bridges:sdk_headers.  Output is a TREE artifact (HTML set
-                   is API-dependent).  NEXT: Java ref (javadoc over *_src.zip,
-                   gated on those zips); idl.css/cpp.css overlay; fold the trees
-                   into odkcommon.zip -- zipper can't recurse a dir, so needs a
+                   DLL-export macros; reuses 6 sdk_headers + //main/bridges:sdk_headers.
+                   javadoc_html: Java //main/odk:java_reference -> docs/java/ref
+                   (the UNO runtime reference), JDK runtime toolchain, multi-root
+                   -sourcepath over the in-place sources (no *_src.zip unzip),
+                   ridl/jurt/juh jars on classpath, -linkoffline + index patch
+                   dropped; new sdk_javadoc_srcs in jurt/javaunohelper/ridljar.
+                   All outputs are TREE artifacts (HTML set is API-dependent).
+                   NEXT: idl.css/cpp.css overlay; fold the three trees into
+                   odkcommon.zip -- zipper can't recurse a dir, so needs a
                    tree->zip step (Args expand_directories or a zip-tree tool).
 odk           🟡  source/ + pack/copying done 2026-10-08.  source/: loader
                    classes, unowinreg.dll, unoapploader.exe, uno_loader_classes.zip

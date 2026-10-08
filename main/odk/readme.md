@@ -144,15 +144,23 @@ file set depends on the API).
   trip.  Reuses the six `sdk_headers` filegroups plus a new one in `bridges`.
   Green on `--config=winXP-x86`.
 
+- **Java reference — DONE.**  `//main/odk:java_reference` → the `docs/java/ref`
+  tree (the UNO Java *runtime* reference: `com.sun.star.{comp.helper,
+  lib.uno.helper,lib.unoloader,uno}` + `UrlToFileMapper`).  New rule
+  `javadoc_html` (JDK runtime toolchain, same tree-artifact shape).  Upstream
+  unzips `*_src.zip` into one `JAVA_SRC_DIR`; here javadoc reads the source
+  trees in place via a multi-root `-sourcepath`, with `ridl`/`jurt`/`juh` jars
+  on the classpath; the `-linkoffline` cross-links and the `index.html` patch
+  are dropped (they only add external links).  New `sdk_javadoc_srcs`
+  filegroups in `jurt`/`javaunohelper`/`ridljar`.  Green on
+  `--config=winXP-x86` (the toolchain JDK's javadoc, so modern HTML).
+
 ### Remaining gendocu work
 
-- **Java reference** (gendocu `JAVA_DOCU_INDEX_FILE`): javadoc over the UNO Java
-  `*_src.zip` (jurt/juh/ridl/unoloader) from the solver; gated on those source
-  zips existing as Bazel outputs.
-- **idl.css overlay**: pack/copying replaces autodoc's generated `idl.css` with
-  the styled `docs/common/ref/idl.css`.  Left as autodoc's own for now.
-- **Packaging into `odkcommon.zip`**: the reference is a tree artifact and
-  `zipper` cannot recurse a directory, so folding `docs/common/ref` (and the
-  C++/Java refs) into odkcommon needs a tree→zip step (an `Args.add_all` with
-  `expand_directories = True`, or a small zip-the-tree tool).  Until then
-  `idl_reference` is a standalone target.
+- **idl.css / cpp.css overlay**: pack/copying replaces autodoc's generated css
+  with the styled `docs/{common,cpp}/ref/*.css`.  Left as autodoc's own for now.
+- **Packaging into `odkcommon.zip`**: all three references are tree artifacts
+  and `zipper` cannot recurse a directory, so folding `docs/common/ref`,
+  `docs/cpp/ref` and `docs/java/ref` into odkcommon needs a tree→zip step (an
+  `Args.add_all` with `expand_directories = True`, or a small zip-the-tree
+  tool).  Until then the three `*_reference` targets are standalone.
