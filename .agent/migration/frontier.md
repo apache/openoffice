@@ -1004,9 +1004,14 @@ odk gendocu   🟡  ALL THREE references DONE 2026-10-08 (tree artifacts via
                    ridl/jurt/juh jars on classpath, -linkoffline + index patch
                    dropped; new sdk_javadoc_srcs in jurt/javaunohelper/ridljar.
                    All outputs are TREE artifacts (HTML set is API-dependent).
-                   NEXT: idl.css/cpp.css overlay; fold the three trees into
-                   odkcommon.zip -- zipper can't recurse a dir, so needs a
-                   tree->zip step (Args expand_directories or a zip-tree tool).
+                   PACKAGED into odkcommon.zip (now 13908 entries, was 4482) by
+                   //build/rules:odk_pkg.bzl odk_sdk_zip: it zips the individual
+                   SDK files + the three ref trees in ONE zipper action, expanding
+                   each tree at exec time via Args.add_all(expand_directories=True)
+                   at archive path = short_path minus "main/odk/"; autodoc's
+                   Autodoc_DiagnosticMessages.txt filtered out.  ONLY REMAINING:
+                   the idl.css/cpp.css overlay (cosmetic -- autodoc's own css
+                   stands; pack/copying replaces it with a styled one).
 odk           🟡  source/ + pack/copying done 2026-10-08.  source/: loader
                    classes, unowinreg.dll, unoapploader.exe, uno_loader_classes.zip
                    (verified by running them, 32-bit Temurin 8 for x86); static CRT

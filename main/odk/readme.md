@@ -155,12 +155,18 @@ file set depends on the API).
   filegroups in `jurt`/`javaunohelper`/`ridljar`.  Green on
   `--config=winXP-x86` (the toolchain JDK's javadoc, so modern HTML).
 
+- **Packaging into `odkcommon.zip` — DONE.**  `//build/rules:odk_pkg.bzl`'s
+  `odk_sdk_zip` zips the individual SDK files *and* the three reference tree
+  artifacts in one zipper action: the trees are expanded at execution time with
+  `Args.add_all(expand_directories = True)` and placed at their declared
+  `out_dir` (the archive path is each file's `short_path` minus `main/odk/`).
+  autodoc's `Autodoc_DiagnosticMessages.txt` is filtered out.  `odkcommon.zip`
+  is now 13908 entries (was 4482): `docs/common/ref` (8155), `docs/cpp/ref`
+  (1155), `docs/java/ref` (116) on top of the SDK tree.
+
 ### Remaining gendocu work
 
 - **idl.css / cpp.css overlay**: pack/copying replaces autodoc's generated css
-  with the styled `docs/{common,cpp}/ref/*.css`.  Left as autodoc's own for now.
-- **Packaging into `odkcommon.zip`**: all three references are tree artifacts
-  and `zipper` cannot recurse a directory, so folding `docs/common/ref`,
-  `docs/cpp/ref` and `docs/java/ref` into odkcommon needs a tree→zip step (an
-  `Args.add_all` with `expand_directories = True`, or a small zip-the-tree
-  tool).  Until then the three `*_reference` targets are standalone.
+  with the styled `docs/{common,cpp}/ref/*.css`.  Left as autodoc's own for now
+  (functional; the shipped css is only a nicer style).  This is the one
+  cosmetic item left in the odk reference.
