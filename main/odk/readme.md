@@ -26,7 +26,7 @@ The Office Development Kit (SDK).  Upstream builds it in three layers
 |---|---|---|
 | What odk COMPILES | `source/` | **done 2026-10-08**, all three configs |
 | The SDK tree and its zips | `pack/copying`, `util` | **assembled 2026-10-08** (minus the autodoc/CLI-blocked parts) |
-| The generated API reference | `pack/gendocu` (autodoc + javadoc) | not yet; blocked on `autodoc` |
+| The generated API reference | `pack/gendocu` (autodoc + javadoc) | IDL reference done 2026-10-08; C++/Java references + packaging pending |
 
 ## What is built
 
@@ -118,3 +118,36 @@ What each part maps to (the lists are pack/copying's `makefile.mk` +
   oracle; not yet ported.  Until it is, the gaps above are the known deltas.
 - CRLF: `ext_files` byte-copies, where upstream `MY_TEXTCOPY` strips `\r`.  Fine
   for the Windows SDK; revisit if a cross-platform SDK is ever built here.
+
+## pack/gendocu — the generated API reference (2026-10-08)
+
+autodoc is migrated (`//main/autodoc:autodoc`), so the reference trees it drives
+can be generated.  The pipeline rule is `//build/rules:gendocu.bzl`'s
+`autodoc_html` (one `ctx.actions.run`, output is a tree artifact since the HTML
+file set depends on the API).
+
+- **IDL reference — DONE.**  `//main/odk:idl_reference` → the `docs/common/ref`
+  tree (8156 files: `com/…`, `index-files/`, `module-ix.html`).  This is
+  pack/copying's `IDL_DOCU_INDEX_FILE`, the one pack/copying step deferred while
+  autodoc was unmigrated.  autodoc runs over the **udkapi + offapi** source IDL
+  as two `-t` roots (it merges them — offapi types reference udkapi types).
+  Green on `--config=winXP-x86`, which also builds autodoc for the **x64 exec**
+  platform (no arch issues).
+
+### Remaining gendocu work
+
+- **C++ reference** (gendocu `CPP_DOCU_INDEX_FILE`): same `autodoc_html` rule,
+  but the C++ `-p <proj> <root> -t <sub>…` form goes entirely in `args` (roots
+  = []).  Roots are each module's `inc/` (`-p sal main/sal/inc -t sal -t osl -t
+  rtl`, `… -p bridges main/bridges/inc -t bridges`); needs a `bridges`
+  `sdk_headers`-style filegroup and reuses the six already added for odkcommon.
+- **Java reference** (gendocu `JAVA_DOCU_INDEX_FILE`): javadoc over the UNO Java
+  `*_src.zip` (jurt/juh/ridl/unoloader) from the solver; gated on those source
+  zips existing as Bazel outputs.
+- **idl.css overlay**: pack/copying replaces autodoc's generated `idl.css` with
+  the styled `docs/common/ref/idl.css`.  Left as autodoc's own for now.
+- **Packaging into `odkcommon.zip`**: the reference is a tree artifact and
+  `zipper` cannot recurse a directory, so folding `docs/common/ref` (and the
+  C++/Java refs) into odkcommon needs a tree→zip step (an `Args.add_all` with
+  `expand_directories = True`, or a small zip-the-tree tool).  Until then
+  `idl_reference` is a standalone target.

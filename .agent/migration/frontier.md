@@ -986,9 +986,19 @@ autodoc       🟡  autodoc.exe done 2026-10-08 (winXP-x86): //main/autodoc:auto
                    6 .cxx globbed out (unittest/**, commandline.cxx vs the built
                    comdline.cxx, hfi_linklist.cxx).  VC90 manifest embedded (build
                    tool AND SDK bin/ tool).  Builds + runs (usage on no args).
-                   NEXT: gendocu (odk pack/gendocu) -- run it over udkapi/offapi
-                   IDL for docs/common/ref, then fold into odkcommon.zip; unblocks
-                   the two odk pieces held for autodoc.  See main/autodoc/readme.md.
+                   USED: //build/rules:gendocu.bzl autodoc_html runs it as a build
+                   tool (cfg=exec) -- autodoc also BUILDS on x64 (exec), no arch
+                   issues.  See main/autodoc/readme.md.
+odk gendocu   🟡  IDL reference DONE 2026-10-08: //main/odk:idl_reference ->
+                   docs/common/ref tree (8156 files; the IDL_DOCU_INDEX_FILE
+                   pack/copying deferred).  autodoc over udkapi+offapi source IDL
+                   as two -t roots (merged: offapi refs udkapi).  Output is a TREE
+                   artifact (HTML set is API-dependent).  NEXT: C++ ref (same rule,
+                   -p <proj> <inc> -t <sub> in args, roots=[]; needs a bridges
+                   sdk_headers filegroup); Java ref (javadoc over *_src.zip, gated
+                   on those zips); idl.css overlay; fold the trees into odkcommon.zip
+                   -- zipper can't recurse a dir, so needs a tree->zip step
+                   (Args expand_directories or a zip-tree tool).
 odk           🟡  source/ + pack/copying done 2026-10-08.  source/: loader
                    classes, unowinreg.dll, unoapploader.exe, uno_loader_classes.zip
                    (verified by running them, 32-bit Temurin 8 for x86); static CRT
