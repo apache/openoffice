@@ -9,6 +9,10 @@ load("//build:jre.bzl", "jre_home_env")
 load("//build/rules:gtest_test.bzl", "gtest_test")
 load("//main/postprocess:postprocess.bzl", "services_rdb")
 
+# findsofficepath.c is also compiled into //main/odk:unoapploader -- upstream
+# delivers its .obj on its own for exactly that (Package_findsofficepath.mk).
+exports_files(["source/findsofficepath.c"])
+
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",

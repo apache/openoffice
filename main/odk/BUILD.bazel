@@ -1,0 +1,123 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("//build/rules:extension.bzl", "ext_files", "oxt_package")
+load("//build/rules:java_pipeline.bzl", "javac_classes")
+
+# odk — the Office Development Kit (SDK).  Mirrors prj/build.lst.
+#
+# This file so far holds the three things odk COMPILES (source/); the SDK tree
+# itself (pack/copying: tools, import libs, headers, IDL, settings, examples,
+# docs) and the generated reference (pack/gendocu, needs autodoc) are not yet
+# migrated.  See readme.md.
+
+_DEFINES = [
+    "WNT",
+    "WIN32",
+]
+
+# Both native targets link the STATIC CRT.  sal/config.h pulls in
+# systools/win32/snprintf.h, which declares snprintf -- renamed _snprintf by
+# the VC9 toolchain's crt_defines -- as __declspec(dllimport), matching only
+# the DLL CRT; against libcmt's plain declaration that is C2375.  An empty
+# _SNPRINTF_DLLIMPORT is the header's own switch for that.
+_STATIC_CRT_DEFINES = _DEFINES + ["_SNPRINTF_DLLIMPORT="]
+
+# ── com.sun.star.lib.loader — source/com/sun/star/lib/loader ─────────────────
+# The class loader an SDK client application ships inside its own jar: it finds
+# an office installation (registry via unowinreg.dll, or UNO_PATH) and puts its
+# UNO jars on a custom class loader.  Loose classes, not a jar: the SDK copies
+# them into a client's jar under com/sun/star/lib/loader/.
+#
+# --release 8: these run inside the CLIENT's JRE, not the build JDK.
+javac_classes(
+    name = "loader_classes",
+    srcs = glob(["source/com/sun/star/lib/loader/*.java"]),
+    outs = ["com/sun/star/lib/loader/" + c + ".class" for c in [
+        "InstallationFinder",
+        "InstallationFinder$StreamGobbler",
+        "Loader",
+        "Loader$CustomURLClassLoader",
+        "Loader$Drain",
+        "WinRegKey",
+        "WinRegKeyException",
+    ]],
+    visibility = ["//visibility:public"],
+)
+
+# ── unowinreg.dll — source/unowinreg/win ─────────────────────────────────────
+# The JNI half of WinRegKey above.  Loaded by the CLIENT's java.exe, never by
+# the office, so it links the static CRT (upstream: STDSHL= + LIBCMT) and needs
+# no manifest at all.  Exports are the undecorated Java_* names; the .def is
+# unowinreg.dxp as a DEF (same trick as jurt's jpipe.def -- on x86 link.exe
+# binds each name to its __stdcall _Java_...@N symbol).
+cc_binary(
+    name = "unowinreg",
+    srcs = ["source/unowinreg/win/unowinreg.cxx"],
+    copts = [
+        "/EHsc",
+        "/Imain/odk/inc/pch",
+    ],
+    defines = _STATIC_CRT_DEFINES,
+    features = ["static_link_msvcrt"],
+    linkshared = True,
+    win_def_file = "util/unowinreg.def",
+    deps = ["@rules_java//toolchains:jni"],
+    linkopts = [
+        "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── unoapploader.exe — source/unoapploader/win ───────────────────────────────
+# Copied by an SDK client next to its own exe under the client's name; finds
+# the office (findsofficepath.c, shared with cppuhelper), puts it on PATH and
+# starts the client's real exe.  Static CRT (upstream DYNAMIC_CRT= is empty),
+# so it runs before any office -- and any VC runtime -- has been found.
+cc_binary(
+    name = "unoapploader",
+    srcs = [
+        "source/unoapploader/win/unoapploader.c",
+        "//main/cppuhelper:source/findsofficepath.c",
+    ],
+    copts = ["/TC"],
+    defines = _STATIC_CRT_DEFINES,
+    features = ["static_link_msvcrt"],
+    deps = [
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/sal:sal_headers",
+    ],
+    linkopts = [
+        "advapi32.lib",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── uno_loader_classes.zip ────────────────────────────────────────────────────
+# Upstream pack/copying: zip -r of the SDK's classes/ dir, "com/* win/*" -- the
+# loader classes plus win/unowinreg.dll, the layout InstallationFinder expects
+# when it loads the DLL from beside the classes.  Delivered to solver bin/ by
+# prj/d.lst.  oxt_package is a plain zip-by-archive-path; nothing about it is
+# extension-specific.
+ext_files(
+    name = "_loader_zip_classes",
+    srcs = [":loader_classes"],
+    strip_prefix = "main/odk",
+)
+
+ext_files(
+    name = "_loader_zip_win",
+    srcs = [":unowinreg"],
+    dest = "win",
+)
+
+oxt_package(
+    name = "uno_loader_classes",
+    out = "uno_loader_classes.zip",
+    contents = [
+        ":_loader_zip_classes",
+        ":_loader_zip_win",
+    ],
+    visibility = ["//visibility:public"],
+)

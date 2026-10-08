@@ -301,7 +301,11 @@ def _javac_classes_impl(ctx):
         fail("javac_classes: could not locate javac(.exe) in the JDK runtime")
 
     outs = [ctx.actions.declare_file(n) for n in ctx.attr.outs]
-    out_dir = outs[0].dirname
+
+    # javac -d takes the CLASS-PATH ROOT and adds package directories below
+    # it, so the root is the output path minus the declared name, which for a
+    # packaged class carries those directories ("com/sun/.../X.class").
+    out_dir = outs[0].path[:-len(ctx.attr.outs[0]) - 1]
 
     ctx.actions.run(
         executable = javac.path,
@@ -327,7 +331,7 @@ javac_classes = rule(
         ),
         "outs": attr.string_list(
             mandatory = True,
-            doc       = "Every .class file javac will emit, e.g. [\"JREProperties.class\"].",
+            doc       = "Every .class file javac will emit, relative to the class-path root, e.g. [\"JREProperties.class\"] or [\"com/sun/star/lib/loader/Loader.class\"].",
         ),
         "release": attr.string(
             default = "8",
