@@ -1,6 +1,6 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("//build/rules:extension.bzl", "ext_files", "oxt_package")
-load("//build/rules:gendocu.bzl", "autodoc_html")
+load("//build/rules:gendocu.bzl", "autodoc_html", "javadoc_html")
 load("//build/rules:java_pipeline.bzl", "javac_classes")
 
 # odk — the Office Development Kit (SDK).  Mirrors prj/build.lst.
@@ -512,6 +512,49 @@ autodoc_html(
         "-p", "cppuhelper", "main/cppuhelper/inc", "-t", "cppuhelper",
         "-p", "salhelper", "main/salhelper/inc", "-t", "salhelper",
         "-p", "bridges", "main/bridges/inc", "-t", "bridges",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# The Java reference -- gendocu's JAVA_DOCU_INDEX_FILE.  javadoc over the UNO
+# Java runtime sources (the JAVA_PACKAGES set), from each module's source root.
+# Upstream unzips *_src.zip into one JAVA_SRC_DIR; here javadoc reads the source
+# trees in place via a multi-root -sourcepath, and ridl/jurt/juh jars on the
+# classpath resolve referenced types.  The -linkoffline cross-links and the
+# index.html patch are dropped (they only add external links); the generated
+# output is otherwise the same focused runtime reference.
+javadoc_html(
+    name = "java_reference",
+    out_dir = "docs/java/ref",
+    srcs = [
+        "//main/jurt:sdk_javadoc_srcs",
+        "//main/javaunohelper:sdk_javadoc_srcs",
+        "//main/ridljar:sdk_javadoc_srcs",
+    ],
+    sourcepath = [
+        "main/jurt/java/jurt/src/main/java",
+        "main/javaunohelper",
+        "main/ridljar/java/unoloader/src/main/java",
+    ],
+    classpath = [
+        "//main/ridljar:ridl_jar",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+    ],
+    args = [
+        "-use",
+        "-splitindex",
+        "-windowtitle",
+        "Java UNO Runtime Reference",
+        "-header",
+        "UDK 3.2.7 Java API Reference",
+    ],
+    tail = [
+        "com.sun.star.comp.helper",
+        "com.sun.star.lib.uno.helper",
+        "com.sun.star.lib.unoloader",
+        "com.sun.star.uno",
+        "main/jurt/java/jurt/src/main/java/com/sun/star/lib/util/UrlToFileMapper.java",
     ],
     visibility = ["//visibility:public"],
 )

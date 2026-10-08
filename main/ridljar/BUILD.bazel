@@ -47,6 +47,13 @@ java_library(
     visibility = ["//visibility:public"],
 )
 
+# Sources the SDK Java reference (odk gendocu) documents: com.sun.star.lib.unoloader.
+filegroup(
+    name = "sdk_javadoc_srcs",
+    srcs = glob(["java/unoloader/src/main/java/com/sun/star/lib/unoloader/**/*.java"]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── Runtime jars → program/classes/ ──────────────────────────────────────
 # Staged by //main/staging:install.  The names are exact-string lookups, not
 # conventions: javavm.cxx::setUpUnoVirtualMachine builds a URLClassLoader over

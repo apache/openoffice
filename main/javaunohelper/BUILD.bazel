@@ -33,6 +33,17 @@ java_library(
     visibility = ["//visibility:public"],
 )
 
+# Sources the SDK Java reference (odk gendocu) documents from javaunohelper:
+# com.sun.star.comp.helper and com.sun.star.lib.uno.helper.
+filegroup(
+    name = "sdk_javadoc_srcs",
+    srcs = glob([
+        "com/sun/star/comp/helper/**/*.java",
+        "com/sun/star/lib/uno/helper/**/*.java",
+    ]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── juh.jar → program/classes/ ────────────────────────────────────────────────
 # Two exact-string lookups land on this file: UnoClassLoader.createUrls() names
 # it "juh.jar", and services.rdb registers util/juh.component at

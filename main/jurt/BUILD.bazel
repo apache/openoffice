@@ -29,6 +29,17 @@ java_library(
     visibility = ["//visibility:public"],
 )
 
+# Sources the SDK Java reference (odk gendocu) documents from jurt: the
+# com.sun.star.uno package and the one com.sun.star.lib.util helper.
+filegroup(
+    name = "sdk_javadoc_srcs",
+    srcs = glob([
+        "java/jurt/src/main/java/com/sun/star/uno/**/*.java",
+        "java/jurt/src/main/java/com/sun/star/lib/util/UrlToFileMapper.java",
+    ]),
+    visibility = ["//main/odk:__pkg__"],
+)
+
 # ── jurt.jar → program/classes/ ───────────────────────────────────────────────
 # UnoClassLoader.createUrls() looks this up as the bare string "jurt.jar".
 #
