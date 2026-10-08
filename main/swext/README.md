@@ -111,9 +111,11 @@ Each one alone made any extension with a Java component unusable:
    missing `unorc` falls back to `fundamental.ini` and would recurse into a
    stack overflow at startup.
 
-Not fixed: upstream's `unopkg.com` console wrapper (`unopkgio.exe`) is staged
-under its build name, and `unopkg.exe` is upstream's `unopkg.bin` (no guiloader
-in front), so console output reaches only a redirected handle.
+Since 2026-10-08 `program/` has upstream's three files -- `unopkg.com` ->
+`unopkg.exe` (guiloader) -> `unopkg.bin` -- so `echo yes| unopkg.com add
+wiki-publisher.oxt` accepts the license with plain 8-bit input (verified on all
+three configs).  See main/desktop/readme.md for how the chain works and why
+`unopkg.com`'s output cannot be redirected.
 
 ### Testing it
 

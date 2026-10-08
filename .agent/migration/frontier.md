@@ -916,8 +916,15 @@ swext         ✅  DONE 2026-10-03 — wiki-publisher.oxt (//main/swext:wiki-pub
                    URE_MORE_* chain recurses = startup stack overflow 0xC00000FD.
                    TEST LANDMINES: headless + fresh -env:UserInstallation exits 0 in
                    seconds unless -nofirststartwizard; unopkg's license answer must be
-                   UTF-16LE on stdin (8-bit "yes" loops forever, 200+ MB).  Still open:
-                   unopkg.com (unopkgio.exe staged under its build name).
+                   UTF-16LE on stdin (8-bit "yes" loops forever, 200+ MB) -- or go
+                   through unopkg.com, which converts.  unopkg.com/.exe/.bin
+                   triad DONE 2026-10-08 (verified all 3 configs: oxt installs
+                   via `echo yes| unopkg.com add`, 12 parts registered).  FOUND
+                   ALONG THE WAY: 15 EXEs could not start at all on winXP-x86/
+                   x64 -- swriter/scalc/... launchers, quickstart, crashrep,
+                   rebaseoo/gui, unoinfo, the loaders -- /MD + /MANIFEST:NO, no
+                   VC90 manifest => "System Error" box before main().  Now
+                   embedded, winXP only.  See main/desktop/readme.md.
                    See main/swext/README.md.
 unodevtools   ✅  MIGRATED 2026-08-18 and MOVED OUT of this bucket — it is not
                    Java and never was.  `uno-skeletonmaker.exe`, 9 C++ sources, no

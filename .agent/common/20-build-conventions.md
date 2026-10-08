@@ -44,6 +44,15 @@
   → same "loading component library failed" class as fileacc/uui. To reach upstream
   parity (cosmetic): apply .uno infix in the link/staging step AND regenerate
   services.rdb together so both sides move in lockstep. Left as-is for the en-US demo.
+- EVERY staged /MD EXE needs the VC90 manifest on the winXP builds, embedded at
+  RT_MANIFEST id 1 (`//main/external/msvcp90:vc90_app_manifest_res` in
+  additional_linker_inputs + linkopts), gated off with
+  `//build/constraints:is_win10` (the modern runtime is not side-by-side).
+  Without it a `/MANIFEST:NO` EXE dies before main() with a "System Error" box,
+  and nothing in the build notices -- 15 launchers sat broken that way until
+  2026-10-08.  Audit a staged tree: dumpbin /dependents shows MSVCR90.dll, and
+  the file contains neither the string `Microsoft.VC90.CRT` nor a sibling
+  `<name>.manifest`.  Pattern: `_VC90_MANIFEST_INPUTS` in main/desktop/BUILD.bazel.
 - IDL pipeline: tools link /MD (dynamic CRT); stage msvcr90/msvcp90 DLLs +
   external .manifest files alongside EXEs (no mt.exe embedding); use
   ctx.actions.symlink (pure Bazel, no shell) for staging
