@@ -134,13 +134,18 @@ file set depends on the API).
   Green on `--config=winXP-x86`, which also builds autodoc for the **x64 exec**
   platform (no arch issues).
 
+- **C++ reference — DONE.**  `//main/odk:cpp_reference` → the `docs/cpp/ref`
+  tree (1156 files: `names/…`, `index-files/`, `index.html`).  Same
+  `autodoc_html` rule, but the C++ `-p <proj> <root> -t <sub>…` form goes
+  entirely in `args` (roots = []): each project's root is that module's own
+  `inc/` (upstream uses one INCOUT holding every subtree; here they are
+  separate), the `-t` subdirs are relative to the preceding `-p`, and the two
+  `-ignoredefine` flags drop the DLL-export macros so the C++ parser does not
+  trip.  Reuses the six `sdk_headers` filegroups plus a new one in `bridges`.
+  Green on `--config=winXP-x86`.
+
 ### Remaining gendocu work
 
-- **C++ reference** (gendocu `CPP_DOCU_INDEX_FILE`): same `autodoc_html` rule,
-  but the C++ `-p <proj> <root> -t <sub>…` form goes entirely in `args` (roots
-  = []).  Roots are each module's `inc/` (`-p sal main/sal/inc -t sal -t osl -t
-  rtl`, `… -p bridges main/bridges/inc -t bridges`); needs a `bridges`
-  `sdk_headers`-style filegroup and reuses the six already added for odkcommon.
 - **Java reference** (gendocu `JAVA_DOCU_INDEX_FILE`): javadoc over the UNO Java
   `*_src.zip` (jurt/juh/ridl/unoloader) from the solver; gated on those source
   zips existing as Bazel outputs.
