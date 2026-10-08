@@ -25,7 +25,7 @@ The Office Development Kit (SDK).  Upstream builds it in three layers
 | Layer | Upstream | State |
 |---|---|---|
 | What odk COMPILES | `source/` | **done 2026-10-08**, all three configs |
-| The SDK tree and its zips | `pack/copying`, `pack/unzip_udk`, `pack/check*`, `util` | not yet |
+| The SDK tree and its zips | `pack/copying`, `util` | **assembled 2026-10-08** (minus the autodoc/CLI-blocked parts) |
 | The generated API reference | `pack/gendocu` (autodoc + javadoc) | not yet; blocked on `autodoc` |
 
 ## What is built
@@ -75,10 +75,46 @@ build JDK 21 for x64):
 - `unoapploader.exe` installed as `foo.exe` beside a `_foo.exe` starts it with the
   staged `program/` first on `PATH`.
 
-## Next
+## pack/copying — the SDK tree and its zips (2026-10-08)
 
-`pack/copying` is a file list more than a build: `bin/` (cppumaker, idlc,
-javamaker, regcompare, ucpp, uno-skeletonmaker, unoapploader; climaker and
-autodoc not yet migrated), `lib/` import libraries under their SDK names
-(`isal.lib`, `icppu.lib`, ...), `include/`, `idl/`, `classes/`, `settings/`,
-docs and examples, then `odkcommon.zip`/`odkexamples.zip`.
+`pack/copying` is a file list more than a build, so it is assembled with the
+existing `ext_files`/`oxt_package` rules (archive paths, no on-disk tree) rather
+than a new rule.  Two deliverables, both in `//main/odk`:
+
+- **`:odkcommon`** → `odkcommon.zip`, the whole SDK tree (`util` PRODUCTZIPFILE).
+- **`:odkexamples`** → `odkexamples.zip`, the example SOURCES (`util` ZIP1TARGET).
+
+What each part maps to (the lists are pack/copying's `makefile.mk` +
+`util/makefile.pmk`):
+
+| Tree path | Source |
+|---|---|
+| `bin/` | `//main/codemaker:{cppumaker,javamaker}`, `//main/idlc:idlc`, `//main/registry:regcompare` (**new target**), `//main/unodevtools:uno-skeletonmaker`, `@ucpp//:ucpp`, `:unoapploader` |
+| `lib/` | each DLL's `<stem>.if.lib` renamed to the SDK `i<name>.lib` (`isal`, `isalhelper`, `icppu`, `ipurpenvhelper3MSC`, `icppuhelper`, `istore`, `ireg`) |
+| `include/` | each owning module's new `:sdk_headers` filegroup (the exact SDK subtree, no `inc/pch` or `inc/internal`), re-rooted `inc/<dir>` → `include/<dir>`; `include/stl` = stlport's systemstl shim; `include/udkversion.mk` from solenv |
+| `idl/` | `//main/udkapi:sdk_idl` + `//main/offapi:sdk_idl` (new filegroups: the raw `.idl` source, the full tree — the compile-time exclusions are an idlc batching concern, not a delivery one) |
+| `classes/` | `:loader_classes` + `win/unowinreg.dll` |
+| `settings/` | `settings/*.mk` + `component.uno.def`; `dk.mk` with `@@RELEASE@@` substituted |
+| `docs/`, root scripts | docs html (`%PRODUCT_RELEASE%`), css, images; `index.html`; `setsdkenv_windows.bat` (`__SDKNAME__`), `.template`, `setsdkname.bat`, `cfgWin.js` |
+
+### Deliberately absent (not guessed)
+
+- **`bin/autodoc` + `docs/common/ref`** (the generated IDL reference, and the
+  `module-ix.html` index): blocked on the unmigrated `autodoc`.
+- **`cli/` + `bin/climaker`**: blocked on `cli_ure`/.NET (see the frontier's
+  .NET-interop bucket).
+- **`lib/irmcxt.lib`**: *no module in this source tree produces `rmcxt`.*  The
+  only trace is `bridges/version.mk`'s `RMCXT_TARGET=rmcxt`, a version stamp
+  nothing consumes; `bridges` delivers no `.lib`.  Shipped without it rather
+  than mapping it to the wrong DLL — an open question to resolve (or confirm it
+  is dead) before the SDK's own `pack/check` content check can pass.
+- `dk.mk`'s `@@BUILDID@@`/`@@SCMREVISION@@` are left empty: a wall-clock/VCS
+  stamp defeats a reproducible build (see the frontier's release-identity note),
+  and they are informational only.
+
+### Open items
+
+- `pack/check*` (checkbin/checkidl/checkinc) is the upstream completeness
+  oracle; not yet ported.  Until it is, the gaps above are the known deltas.
+- CRLF: `ext_files` byte-copies, where upstream `MY_TEXTCOPY` strips `\r`.  Fine
+  for the Windows SDK; revisit if a cross-platform SDK is ever built here.

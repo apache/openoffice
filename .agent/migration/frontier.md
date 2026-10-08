@@ -974,14 +974,36 @@ solenv        ⬜  (legacy build environment, mostly migrated away)
 
 ── Remaining: Docs/dev tooling ──────────────────────────────────────────
 autodoc       ⬜  (API documentation generator)
-odk           🟡  STARTED 2026-10-08 — source/ done on all three configs:
-                   loader classes, unowinreg.dll, unoapploader.exe,
-                   uno_loader_classes.zip; each verified by running it (32-bit
-                   Temurin 8 for x86).  Static CRT as upstream, so
-                   _SNPRINTF_DLLIMPORT= (empty) avoids C2375 from sal's
-                   snprintf.h.  javac_classes now handles packaged classes.
-                   NEXT: pack/copying (the SDK tree + odkcommon/odkexamples
-                   zips); gendocu blocked on autodoc.  See main/odk/readme.md.
+odk           🟡  source/ + pack/copying done 2026-10-08.  source/: loader
+                   classes, unowinreg.dll, unoapploader.exe, uno_loader_classes.zip
+                   (verified by running them, 32-bit Temurin 8 for x86); static CRT
+                   as upstream, _SNPRINTF_DLLIMPORT= (empty) dodges C2375 from sal's
+                   snprintf.h; javac_classes handles packaged classes.
+                   pack/copying: //main/odk:odkcommon (odkcommon.zip, the whole SDK
+                   tree, 4482 entries) + :odkexamples (odkexamples.zip, 480 example
+                   sources).  NO new rule — assembled with ext_files/oxt_package
+                   (archive paths, no on-disk tree).  New supporting targets:
+                   //main/registry:regcompare (source existed, no rule); a :sdk_headers
+                   filegroup in sal/salhelper/store/cppu/cppuhelper/registry (the exact
+                   SDK subtree, no inc/pch|inc/internal) + split systemstl groups in
+                   stlport for include/stl; :sdk_idl (raw .idl) in udkapi/offapi;
+                   udkversion.mk exported from solenv/inc.  lib/ renames each DLL's
+                   <stem>.if.lib → the SDK i<name>.lib.
+                   LANDMINES: (1) this Bazel rejects empty globs PER PATTERN —
+                   inc/sal is .h-only, inc/cppu is .hxx-only → allow_empty=True on
+                   those two sdk_headers.  (2) oxt_package passed every entry on the
+                   zipper command line; the idl tree (4200) overflowed Windows' 32 KiB
+                   CreateProcessW limit → oxt_package now spills ENTRIES to a zipper
+                   @flagfile, but zipper rejects its cC/output flags when THEY are in
+                   the flagfile too, so flags stay direct (two Args objects).  Fix is
+                   in the shared rule, so every .oxt benefits.
+                   GAP (raised, not patched): lib/irmcxt.lib has NO producer in this
+                   tree — RMCXT_TARGET=rmcxt in bridges/version.mk is a vestigial
+                   version stamp nothing consumes, and bridges delivers no .lib;
+                   shipped without it.  NEXT: gendocu + bin/autodoc + docs/common/ref
+                   (blocked on autodoc); cli/ + bin/climaker (blocked on cli_ure/.NET);
+                   port pack/check* (the content oracle) and resolve/kill irmcxt.
+                   See main/odk/readme.md.
 helpauthoring ⬜  (help authoring tools)
 helpcontent2  ✅  DONE 2026-10-03 — the F1 help, en-US: help/en/ with all 9 modules
                    (.db/.ht/.key HelpLinker, .jar pages, .cfg, .tree Contents, .idxl
