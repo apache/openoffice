@@ -112,7 +112,9 @@ res_stage = rule(
 # "pyd": Python extension modules.  Python 2.7's importer accepts ONLY this
 # suffix on Windows (Python/dynload_win.c), so pyuno ships as pyuno.pyd; without
 # it here the file is collected but silently dropped on the way to program/.
-_INSTALL_EXTS = {"exe": True, "dll": True, "pyd": True, "rdb": True, "zip": True, "py": True, "ini": True, "manifest": True}
+# "bin"/"com": unopkg.bin, unopkg.com and crashrep.com, the launcher front ends
+# //main/desktop produces under their installed names (see unopkg_com there).
+_INSTALL_EXTS = {"exe": True, "dll": True, "pyd": True, "rdb": True, "zip": True, "py": True, "ini": True, "manifest": True, "bin": True, "com": True}
 
 def _flat_install_impl(ctx):
     all_files = depset(transitive = [

@@ -1,5 +1,6 @@
 package(default_visibility = ["//visibility:public"])
 
+load("@bazel_skylib//rules:copy_file.bzl", "copy_file")
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:gtest_test.bzl", "gtest_test")
@@ -788,11 +789,13 @@ cc_binary(
         ":unopkgapp",
         # Launcher / helper EXEs shipped alongside soffice.exe
         ":officeloader",
-        ":guiloader",
         ":unoinfo",
-        ":guistdio",
-        ":unopkgio",
-        ":unopkg",
+        # Under their installed names only -- guiloader, guistdio and unopkgio
+        # are never shipped under their build names (desktop/prj/d.lst).
+        ":unopkg_com",
+        ":unopkg_exe",
+        ":unopkg_bin",
+        ":crashrep_com",
         ":swriter",
         ":scalc",
         ":sdraw",
@@ -806,6 +809,25 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+# ── VC9 runtime manifest for the small EXEs ───────────────────────────────────
+# Every EXE below links /MD and /MANIFEST:NO.  Under VC9 the CRT is a
+# side-by-side assembly: without a manifest naming Microsoft.VC90.CRT the
+# loader never consults WinSxS, MSVCR90.dll is unresolvable, and the process
+# dies before main() with a "System Error" box (0xC0000135).  dmake embedded a
+# manifest into every EXE with mt.exe; here it is linked in as a .res at
+# RT_MANIFEST id 1.  The modern toolchain's runtime is not side-by-side, so a
+# win10 build gets nothing -- a VC90 manifest there would demand an assembly
+# the image never uses.
+_VC90_MANIFEST_INPUTS = select({
+    "//build/constraints:is_win10": [],
+    "//conditions:default": ["//main/external/msvcp90:vc90_app_manifest_res"],
+})
+
+_VC90_MANIFEST_LINKOPTS = select({
+    "//build/constraints:is_win10": [],
+    "//conditions:default": ["$(execpath //main/external/msvcp90:vc90_app_manifest_res)"],
+})
 
 # ── officeloader.exe ──────────────────────────────────────────────────────────
 # Bootstrap loader (delivered as soffice.exe in the final install)
@@ -829,7 +851,8 @@ cc_binary(
         "advapi32.lib", "shell32.lib", "shlwapi.lib", "user32.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 
@@ -858,7 +881,8 @@ cc_binary(
         "shlwapi.lib", "user32.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 
@@ -882,7 +906,8 @@ cc_binary(
     linkopts = [
         "/SUBSYSTEM:CONSOLE",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 
@@ -904,7 +929,8 @@ cc_binary(
         "user32.lib",
         "/SUBSYSTEM:CONSOLE",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 
@@ -925,12 +951,15 @@ cc_binary(
     linkopts = [
         "/SUBSYSTEM:CONSOLE",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 
-# ── unopkg.exe ────────────────────────────────────────────────────────────────
-# Thin bootstrap loader that calls unopkg_main() from unopkgapp.dll
+# ── unopkg.exe → program/unopkg.bin ──────────────────────────────────────────
+# Thin bootstrap that calls unopkg_main() from unopkgapp.dll.  Upstream ships it
+# as unopkg.bin behind two front ends (see "unopkg front ends" below); staging
+# takes it from :unopkg_bin under that name, never under its build name.
 cc_binary(
     name = "unopkg",
     srcs = ["source/pkgchk/unopkg/unopkg_main.c"],
@@ -943,25 +972,60 @@ cc_binary(
         "SUPD=680",
     ],
     deps = ["//main/sal:sal_headers"],
-    # The VC90-CRT manifest at RT_MANIFEST id 1, as uno-skeletonmaker carries
-    # it.  Staging installs this exe AS program/unopkg.exe (upstream's
-    # unopkg.bin, behind a guiloader unopkg.exe) and stages no external
-    # unopkg.exe.manifest, so without it the /MD CRT is unresolvable and the
-    # process dies at load with 0xC0000135 before running a line -- every
-    # `unopkg add/list/remove` failed silently that way.
     additional_linker_inputs = [
-        "//main/external/msvcp90:vc90_app_manifest_res",
         "//main/sal:sal_implib",
         ":unopkgapp_implib",
-    ],
+    ] + _VC90_MANIFEST_INPUTS,
     linkopts = [
-        "$(execpath //main/external/msvcp90:vc90_app_manifest_res)",
         "$(execpath //main/sal:sal_implib)",
         "$(execpath :unopkgapp_implib)",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
     visibility = ["//visibility:public"],
+)
+
+# ── unopkg front ends ─────────────────────────────────────────────────────────
+# Upstream installs THREE files for one tool (desktop/prj/d.lst, scp2
+# common_brand.scp), and each finds the next by its OWN filename:
+#   unopkg.com  = unopkgio.exe   console wrapper; guistdio.inc swaps its .COM
+#                                for .EXE and relays stdin/stdout/stderr
+#   unopkg.exe  = guiloader.exe  extendLoaderEnvironment() swaps .exe for .bin
+#   unopkg.bin  = :unopkg        the tool
+# So the names are the lookup keys and are produced here, at the producing
+# package, not by a staging rename table.  Typed at a console, `unopkg`
+# resolves to unopkg.COM (PATHEXT puts .COM before .EXE), which is the point:
+# unopkg.bin is a /SUBSYSTEM:WINDOWS image whose output reaches a console only
+# through the .com's pipes.  The copies live under brand/ so that unopkg.exe
+# does not collide with :unopkg's own output in this package.
+copy_file(
+    name = "unopkg_com",
+    src = ":unopkgio",
+    out = "brand/unopkg.com",
+    is_executable = True,
+)
+
+copy_file(
+    name = "unopkg_exe",
+    src = ":guiloader",
+    out = "brand/unopkg.exe",
+    is_executable = True,
+)
+
+copy_file(
+    name = "unopkg_bin",
+    src = ":unopkg",
+    out = "brand/unopkg.bin",
+    is_executable = True,
+)
+
+# crashrep.com — same trick for the crash reporter (scp2 file_crashrep.scp):
+# guistdio.exe renamed, which starts crashrep.exe beside it.
+copy_file(
+    name = "crashrep_com",
+    src = ":guistdio",
+    out = "brand/crashrep.com",
+    is_executable = True,
 )
 
 # ── Application launcher EXEs (swriter, scalc, etc.) ─────────────────────────
@@ -985,7 +1049,8 @@ cc_binary(
         "user32.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 ) for app in ["swriter", "scalc", "sdraw", "simpress", "sbase", "smath", "sweb"]]
 
@@ -1011,7 +1076,8 @@ cc_binary(
         "shell32.lib", "imagehlp.lib", "user32.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 
@@ -1037,7 +1103,8 @@ cc_binary(
         "shell32.lib", "imagehlp.lib", "user32.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 
@@ -1064,7 +1131,8 @@ cc_binary(
         "oleaut32.lib", "comdlg32.lib", "kernel32.lib", "uuid.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
+    additional_linker_inputs = _VC90_MANIFEST_INPUTS,
     visibility = ["//visibility:public"],
 )
 

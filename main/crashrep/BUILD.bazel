@@ -88,6 +88,20 @@ _COPTS = [
     "/D_INPATH=\\\"wntmsci9\\\"",
 ]
 
+# VC9 runtime manifest at RT_MANIFEST id 1, winXP builds only -- the same
+# select as the small EXEs in //main/desktop, which explains it.  Without it
+# crashrep.exe died at load with a "System Error" box, i.e. a crash produced a
+# second failure instead of a report.
+_VC90_MANIFEST_INPUTS = select({
+    "//build/constraints:is_win10": [],
+    "//conditions:default": ["//main/external/msvcp90:vc90_app_manifest_res"],
+})
+
+_VC90_MANIFEST_LINKOPTS = select({
+    "//build/constraints:is_win10": [],
+    "//conditions:default": ["$(execpath //main/external/msvcp90:vc90_app_manifest_res)"],
+})
+
 # ── crashrep.exe — Windows GUI crash reporter (= soreport.exe in dmake) ──────
 # d.lst delivers soreport.exe as bin/crashrep.exe; naming the target "crashrep"
 # achieves the rename without a post-build step.
@@ -107,7 +121,7 @@ cc_binary(
     additional_linker_inputs = [
         ":soreport_res",
         "//main/sal:sal_implib",
-    ],
+    ] + _VC90_MANIFEST_INPUTS,
     linkopts = [
         "$(execpath :soreport_res)",
         "$(execpath //main/sal:sal_implib)",
@@ -122,7 +136,7 @@ cc_binary(
         "psapi.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
-    ],
+    ] + _VC90_MANIFEST_LINKOPTS,
     deps = [
         "//main/sal:sal_headers",
         "//main/stlport:stlport",
