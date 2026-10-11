@@ -225,8 +225,8 @@ public class ChXDiagram extends TestCase {
         XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get sheet", e);
@@ -327,10 +327,10 @@ public class ChXDiagram extends TestCase {
         // get the TableChart
         XTableChart oChart = null;
         try {
-            oChart = (XTableChart) AnyConverter.toObject(
-                new Type(XTableChart.class),(
+            oChart = AnyConverter.toObject(
+                XTableChart.class,
                     UnoRuntime.queryInterface(
-                        XNameAccess.class, oCharts)).getByName("ChXDiagram"));
+                        XNameAccess.class, oCharts).getByName("ChXDiagram"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get TableChart", e);

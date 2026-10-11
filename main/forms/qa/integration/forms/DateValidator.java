@@ -64,7 +64,7 @@ public class DateValidator extends integration.forms.ControlValidator
             if ( isVoid( Value ) )
                 return false;
 
-            com.sun.star.util.Date dateValue = (com.sun.star.util.Date)
+            com.sun.star.util.Date dateValue =
                 com.sun.star.uno.AnyConverter.toObject(
                     com.sun.star.util.Date.class, Value);
             if ( isDedicatedInvalidDate( dateValue ) )

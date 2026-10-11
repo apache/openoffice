@@ -88,8 +88,8 @@ public class ScIndexEnumeration_DatabaseRangesEnumeration extends TestCase {
 
         XDatabaseRanges dbRanges = null;
         try {
-            dbRanges = (XDatabaseRanges) AnyConverter.toObject(
-                new Type(XDatabaseRanges.class),
+            dbRanges = AnyConverter.toObject(
+                XDatabaseRanges.class,
                     docProps.getPropertyValue("DatabaseRanges"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log) ;

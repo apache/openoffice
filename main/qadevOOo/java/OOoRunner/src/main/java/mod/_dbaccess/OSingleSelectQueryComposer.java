@@ -231,8 +231,8 @@ public class OSingleSelectQueryComposer extends TestCase {
 
             XNameAccess xCols = xColSup.getColumns();
 
-            XPropertySet xCol = (XPropertySet) AnyConverter.toObject(
-                                new Type(XPropertySet.class),
+            XPropertySet xCol = AnyConverter.toObject(
+                                XPropertySet.class,
                                 xCols.getByName(xCols.getElementNames()[0]));
 
             XSingleSelectQueryAnalyzer xQueryAna =

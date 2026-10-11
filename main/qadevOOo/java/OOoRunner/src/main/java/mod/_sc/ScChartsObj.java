@@ -129,8 +129,8 @@ public class ScChartsObj extends TestCase {
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
                         UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             log.println("Couldn't get Sheet ");
             e.printStackTrace(log);

@@ -33,8 +33,8 @@ public class _UserDefinedAttributeSupplier extends lib.MultiPropertyTest {
         XNameContainer uda = null;
         boolean res = false;
         try {
-            uda = (XNameContainer) AnyConverter.toObject(
-                    new Type(XNameContainer.class),
+            uda = AnyConverter.toObject(
+                    XNameContainer.class,
                         oObj.getPropertyValue("UserDefinedAttributes"));
             AttributeData attr = new AttributeData();
             attr.Namespace = "http://www.sun.com/staroffice/apitest/Chartprop";
@@ -43,8 +43,8 @@ public class _UserDefinedAttributeSupplier extends lib.MultiPropertyTest {
             uda.insertByName("Chartprop:has-first-alien-attribute",attr);
             String[] els = uda.getElementNames();
             oObj.setPropertyValue("UserDefinedAttributes",uda);
-            uda = (XNameContainer) AnyConverter.toObject(
-                    new Type(XNameContainer.class),
+            uda = AnyConverter.toObject(
+                    XNameContainer.class,
                         oObj.getPropertyValue("UserDefinedAttributes"));
             els = uda.getElementNames();
             Object obj = uda.getByName("Chartprop:has-first-alien-attribute");

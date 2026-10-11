@@ -239,7 +239,7 @@ public class FormHandler
             XInterface xHiddenControl;
             if (xNameAccess.hasByName(ControlName))
             {
-                xHiddenControl = (XInterface) AnyConverter.toObject(new Type(XInterface.class), xNameAccess.getByName(ControlName));
+                xHiddenControl = AnyConverter.toObject(XInterface.class, xNameAccess.getByName(ControlName));
             }
             else
             {
@@ -373,7 +373,7 @@ public class FormHandler
         {
             if (xNamedForms.hasByName(_sname))
             {
-                Object oDBForm = AnyConverter.toObject(new Type(XInterface.class), Helper.getUnoObjectbyName(xNamedForms, _sname));
+                Object oDBForm = AnyConverter.toObject(XInterface.class, Helper.getUnoObjectbyName(xNamedForms, _sname));
                 xNamedForm = UnoRuntime.queryInterface(XNameContainer.class, oDBForm);
             }
         }

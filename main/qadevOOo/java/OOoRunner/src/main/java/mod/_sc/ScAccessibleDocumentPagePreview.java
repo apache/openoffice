@@ -101,16 +101,16 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = null;
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(1));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(1));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }
             xCell = oSheet.getCellByPosition(0, 0) ;
             xCell.setFormula("ScAccessibleDocumentPagePreview - Page 2");
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(2));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(2));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }
@@ -118,8 +118,8 @@ public class ScAccessibleDocumentPagePreview extends TestCase {
             xCell.setFormula("ScAccessibleDocumentPagePreview - Page 3");
 
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(0));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }

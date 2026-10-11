@@ -69,7 +69,7 @@ public class WindowsAccessBridgeAdapter {
 
                 if (AnyConverter.isObject(any)) {
                     XJavaVM xJavaVM = UnoRuntime.queryInterface(XJavaVM.class,
-                            AnyConverter.toObject(new Type(XJavaVM.class), any));
+                            AnyConverter.toObject(XJavaVM.class, any));
 
                     if (xJavaVM != null) {
                         any = xJavaVM.getJavaVM(getProcessID());

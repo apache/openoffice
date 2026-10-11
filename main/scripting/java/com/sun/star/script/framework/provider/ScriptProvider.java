@@ -134,8 +134,8 @@ public abstract class ScriptProvider
             Object serviceObj = m_xContext.getValueByName(
                 "/singletons/com.sun.star.util.theMacroExpander");
 
-            XMacroExpander me = (XMacroExpander) AnyConverter.toObject(
-                new Type(XMacroExpander.class), serviceObj);
+            XMacroExpander me = AnyConverter.toObject(
+                XMacroExpander.class, serviceObj);
 
             XMLParserFactory.setOfficeDTDURL(me.expandMacros(
                 "${$OOO_BASE_DIR/program/bootstraprc::BaseInstallation}/share/dtd/officedocument/1_0/"));

@@ -166,8 +166,8 @@ public class ScCellCursorObj extends TestCase {
                                                xSheetDoc)).getSheets();
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class),
+            oSheet = AnyConverter.toObject(
+                             XSpreadsheet.class,
                              oSpreadsheets.getByName(
                                      oSpreadsheets.getElementNames()[0]));
 

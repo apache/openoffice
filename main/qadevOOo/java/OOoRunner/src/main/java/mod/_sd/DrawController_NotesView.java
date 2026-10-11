@@ -178,8 +178,8 @@ public class DrawController_NotesView extends TestCase {
 
         XDrawPage oDrawPage = null;
         try {
-            oDrawPage = (XDrawPage) AnyConverter.toObject(
-                        new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oDrawPage = AnyConverter.toObject(
+                        XDrawPage.class,oDPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get DrawPage", e);

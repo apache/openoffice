@@ -78,8 +78,8 @@ public class _XDrawView extends MultiMethodTest {
         try {
             XDrawPages the_pages = (XDrawPages) tEnv.getObjRelation("Pages");
             the_pages.insertNewByIndex(0);
-            XDrawPage newPage = (XDrawPage) AnyConverter.toObject(
-                            new Type(XDrawPage.class),the_pages.getByIndex(1));
+            XDrawPage newPage = AnyConverter.toObject(
+                            XDrawPage.class,the_pages.getByIndex(1));
             oObj.setCurrentPage(newPage);
             XDrawPage getting = oObj.getCurrentPage();
             boolean eq = newPage.equals(getting);

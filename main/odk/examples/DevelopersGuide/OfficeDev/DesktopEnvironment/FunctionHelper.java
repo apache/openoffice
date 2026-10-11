@@ -952,7 +952,7 @@ public class FunctionHelper
             int nCount = xContainer.getCount();
             for (int i=0; i<nCount; ++i )
             {
-                com.sun.star.frame.XFrame xFrame = (com.sun.star.frame.XFrame)AnyConverter.toObject(new com.sun.star.uno.Type(com.sun.star.frame.XFrame.class), xContainer.getByIndex(i));
+                com.sun.star.frame.XFrame xFrame = AnyConverter.toObject(com.sun.star.frame.XFrame.class, xContainer.getByIndex(i));
                                         sName  = new String(BASEFRAMENAME+mnViewCount);
                 while(sName.compareTo(xFrame.getName())==0)
                 {

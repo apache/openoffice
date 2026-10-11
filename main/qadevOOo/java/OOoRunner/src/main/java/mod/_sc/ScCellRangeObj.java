@@ -153,8 +153,8 @@ public class ScCellRangeObj extends TestCase {
         XSpreadsheet oSheet = null;
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class),
+            oSheet = AnyConverter.toObject(
+                             XSpreadsheet.class,
                              oNames.getByName(oNames.getElementNames()[0]));
 
             oObj = oSheet.getCellRangeByPosition(0, 0, 3, 4);

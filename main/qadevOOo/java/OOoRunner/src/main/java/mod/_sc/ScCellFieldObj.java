@@ -145,8 +145,8 @@ public class ScCellFieldObj extends TestCase {
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
 
             XCell oCell = oSheet.getCellByPosition(2,3);
             oText = UnoRuntime.queryInterface(XText.class, oCell);

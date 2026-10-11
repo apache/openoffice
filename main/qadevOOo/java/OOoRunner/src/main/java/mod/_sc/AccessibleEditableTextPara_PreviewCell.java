@@ -99,8 +99,8 @@ public class AccessibleEditableTextPara_PreviewCell extends TestCase {
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
 
             log.println("Getting a cell from sheet") ;
             xCell = oSheet.getCellByPosition(0, 0);

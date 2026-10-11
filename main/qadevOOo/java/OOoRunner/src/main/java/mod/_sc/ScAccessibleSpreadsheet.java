@@ -133,8 +133,8 @@ public class ScAccessibleSpreadsheet extends TestCase {
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
             xCell = oSheet.getCellByPosition(5, 5) ;
             xCell.setFormula(text);
         } catch(com.sun.star.lang.WrappedTargetException e) {

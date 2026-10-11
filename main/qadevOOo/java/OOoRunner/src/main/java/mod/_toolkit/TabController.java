@@ -102,7 +102,7 @@ public class TabController extends TestCase {
         XForm form = null;
 
         try {
-            form = (XForm) AnyConverter.toObject(new Type(XForm.class),
+            form = AnyConverter.toObject(XForm.class,
                                                  (FormTools.getForms(
                                                          WriterTools.getDrawPage(
                                                                  xTextDoc)))

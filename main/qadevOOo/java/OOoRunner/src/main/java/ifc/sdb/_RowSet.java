@@ -117,8 +117,8 @@ public class _RowSet extends MultiPropertyTest {
             XConnection the_connection = null;
 
             try {
-                the_connection = (XConnection) AnyConverter.toObject(
-                                    new Type(XConnection.class),
+                the_connection = AnyConverter.toObject(
+                                    XConnection.class,
                                     oObj.getPropertyValue("ActiveConnection"));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't convert Any",iae);

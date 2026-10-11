@@ -443,7 +443,7 @@ public class TestCaseOldAPI {
             xLegendProp.setPropertyValue( "Alignment", eNewPos );
             assertTrue( "Property Alignment",
                     AnyConverter.toObject(
-                        new Type( ChartLegendPosition.class ),
+                        ChartLegendPosition.class,
                         xLegendProp.getPropertyValue( "Alignment" )) == eNewPos );
 
             float fNewCharHeight = (float)(11.0);
@@ -491,8 +491,8 @@ public class TestCaseOldAPI {
 
 //             String aTestAttributeName = "test:foo";
 //             String aTestAttributeValue = "content";
-//             XNameContainer xUserDefAttributes = (XNameContainer) AnyConverter.toObject(
-//                 new Type( XNameContainer.class ), xArea.getPropertyValue( "ChartUserDefinedAttributes" ));
+//             XNameContainer xUserDefAttributes = AnyConverter.toObject(
+//                 XNameContainer.class, xArea.getPropertyValue( "ChartUserDefinedAttributes" ));
 //             xUserDefAttributes.insertByName( aTestAttributeName, aTestAttributeValue );
 
 //             String aContent = AnyConverter.toString( xUserDefAttributes.getByName( aTestAttributeName ));
@@ -635,8 +635,8 @@ public class TestCaseOldAPI {
             xProp.setPropertyValue( "FillGradientName", aGradientName );
             String aNewGradientName = AnyConverter.toString( xProp.getPropertyValue( "FillGradientName" ));
             assertTrue( "GradientName", aNewGradientName.equals( aGradientName ));
-            Gradient aNewGradient = (Gradient) AnyConverter.toObject(
-                new Type( Gradient.class ),
+            Gradient aNewGradient = AnyConverter.toObject(
+                Gradient.class,
                 xGradientTable.getByName( aNewGradientName ));
             assertTrue( "Gradient Style", aNewGradient.Style == aGradient.Style );
             assertTrue( "Gradient StartColor", aNewGradient.StartColor == aGradient.StartColor );
@@ -672,8 +672,8 @@ public class TestCaseOldAPI {
             xProp.setPropertyValue( "FillBackground", new Boolean( true ));
             String aNewHatchName = AnyConverter.toString( xProp.getPropertyValue( "FillHatchName" ));
             assertTrue( "HatchName", aNewHatchName.equals( aHatchName ));
-            Hatch aNewHatch = (Hatch) AnyConverter.toObject(
-                new Type( Hatch.class ),
+            Hatch aNewHatch = AnyConverter.toObject(
+                Hatch.class,
                 xHatchTable.getByName( aNewHatchName ));
             assertTrue( "Hatch Style", aNewHatch.Style == aHatch.Style );
             assertTrue( "Hatch Color", aNewHatch.Color == aHatch.Color );
@@ -723,7 +723,7 @@ public class TestCaseOldAPI {
             xDiaProp.setPropertyValue( "DataRowSource", eNewSource );
             assertTrue( "Couldn't set \"DataRowSource\" property at Diagram",
                     AnyConverter.toObject(
-                        new Type( ChartDataRowSource.class ),
+                        ChartDataRowSource.class,
                         xDiaProp.getPropertyValue( "DataRowSource" )) == eNewSource );
 
             double aData[][] =
@@ -860,7 +860,7 @@ public class TestCaseOldAPI {
             xDiaProp.setPropertyValue( "DataRowSource", eNewSource );
             assertTrue( "Couldn't set \"DataRowSource\" property at Diagram",
                     AnyConverter.toObject(
-                        new Type( ChartDataRowSource.class ),
+                        ChartDataRowSource.class,
                         xDiaProp.getPropertyValue( "DataRowSource" )) == eNewSource );
 
             XChartData xData = mxOldDoc.getData();
@@ -973,9 +973,9 @@ public class TestCaseOldAPI {
         if( xProp != null )
             try
             {
-                xResult = (XComponentContext)
+                xResult =
                     AnyConverter.toObject(
-                        new Type( XComponentContext.class ),
+                        XComponentContext.class,
                         xProp.getPropertyValue( "DefaultContext" ) );
             }
             catch( Exception ex )

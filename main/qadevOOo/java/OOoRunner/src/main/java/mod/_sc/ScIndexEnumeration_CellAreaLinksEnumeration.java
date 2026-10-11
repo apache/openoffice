@@ -85,8 +85,8 @@ public class ScIndexEnumeration_CellAreaLinksEnumeration extends TestCase {
         // creation of testobject here
         XPropertySet props = UnoRuntime.queryInterface
             (XPropertySet.class, xSheetDoc);
-        oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),props.getPropertyValue("AreaLinks")) ;
+        oObj = AnyConverter.toObject(
+                XInterface.class,props.getPropertyValue("AreaLinks")) ;
         XAreaLinks links = null ;
 
         // adding one link into collection (for best testing)

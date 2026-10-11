@@ -251,7 +251,7 @@ public class GenericModelTest extends TestCase {
         try {
             XIndexAccess forms = UnoRuntime.queryInterface( XIndexAccess.class,
                 FormTools.getForms( WriterTools.getDrawPage( m_xTextDoc ) ) );
-            XForm myForm = (XForm) AnyConverter.toObject(new Type(XForm.class),
+            XForm myForm = AnyConverter.toObject(XForm.class,
                                                  forms.getByIndex(0));
 
             if (debug){

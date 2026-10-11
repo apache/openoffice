@@ -99,8 +99,8 @@ public class RegistryTypeDescriptionProvider extends TestCase {
                                         "No TypeDescriptionProvider given"));
             // take the first registry type description provider
             oInterface = xProviderEnum.nextElement();
-            oObj = (XInterface) AnyConverter.toObject(
-                            new Type(XInterface.class),oInterface);
+            oObj = AnyConverter.toObject(
+                            XInterface.class,oInterface);
         }
         catch( com.sun.star.uno.Exception e ) {
             log.println("Service not available" );

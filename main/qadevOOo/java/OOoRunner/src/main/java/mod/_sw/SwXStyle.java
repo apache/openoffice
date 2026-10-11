@@ -129,12 +129,12 @@ public class SwXStyle extends TestCase {
             XNameAccess oSF = oSFS.getStyleFamilies();
             XIndexAccess oSFsIA =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSF);
-            oSFNA = (XNameAccess) AnyConverter.toObject(
-                        new Type(XNameAccess.class),oSFsIA.getByIndex(0));
+            oSFNA = AnyConverter.toObject(
+                        XNameAccess.class,oSFsIA.getByIndex(0));
             XIndexAccess oSFIA =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSFNA);
-            oStyle = (XStyle) AnyConverter.toObject(
-                    new Type(XStyle.class),oSFIA.getByIndex(10));
+            oStyle = AnyConverter.toObject(
+                    XStyle.class,oSFIA.getByIndex(10));
         } catch ( com.sun.star.lang.WrappedTargetException e ) {
             log.println("Error: exception occurred.");
             e.printStackTrace(log);

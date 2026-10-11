@@ -154,15 +154,15 @@ public class Factory_Test
             XMultiServiceFactory xMgr = RegistryServiceFactory.create( rdb );
             XPropertySet xProps = UnoRuntime.queryInterface(
                 XPropertySet.class, xMgr );
-            XComponentContext xContext = (XComponentContext)AnyConverter.toObject(
-                new Type( XComponentContext.class ), xProps.getPropertyValue( "DefaultContext" ) );
+            XComponentContext xContext = AnyConverter.toObject(
+                XComponentContext.class, xProps.getPropertyValue( "DefaultContext" ) );
             // insert java loader
-            XSet xSet = (XSet)AnyConverter.toObject(
-                new Type( XSet.class ), xContext.getServiceManager() );
+            XSet xSet = AnyConverter.toObject(
+                XSet.class, xContext.getServiceManager() );
             xSet.insert( new com.sun.star.comp.loader.JavaLoaderFactory( xMgr ) );
             // get rdb of smgr
-            XSimpleRegistry xRDB = (XSimpleRegistry)AnyConverter.toObject(
-                new Type( XSimpleRegistry.class ), xProps.getPropertyValue( "Registry" ) );
+            XSimpleRegistry xRDB = AnyConverter.toObject(
+                XSimpleRegistry.class, xProps.getPropertyValue( "Registry" ) );
             // register impl
             XImplementationRegistration xImpReg =
                 UnoRuntime.queryInterface(

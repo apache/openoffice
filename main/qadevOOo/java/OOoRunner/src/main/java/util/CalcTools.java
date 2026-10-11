@@ -133,8 +133,8 @@ public class CalcTools {
                         UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 
             try{
-                xSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),xSheetsIndexArray.getByIndex(sheetNumber));
+                xSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,xSheetsIndexArray.getByIndex(sheetNumber));
 
             } catch (IllegalArgumentException e){
                 throw new Exception(

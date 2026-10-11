@@ -114,11 +114,11 @@ public class FlatXml implements XImportFilter, XExportFilter, XServiceName,
 	        {
 		        sName = aSourceData[i].Name;
 		        if (sName.equals("InputStream"))
-			        xin = (XInputStream)AnyConverter.toObject(XInputStream.class, aSourceData[i].Value);
+			        xin = AnyConverter.toObject(XInputStream.class, aSourceData[i].Value);
 		        if (sName.equals("URL"))
-			        sURL=(String)AnyConverter.toObject(String.class, aSourceData[i].Value);
+			        sURL=AnyConverter.toObject(String.class, aSourceData[i].Value);
 		        if (sName.equals("FileName"))
-			        sFileName=(String)AnyConverter.toObject(String.class, aSourceData[i].Value);
+			        sFileName=AnyConverter.toObject(String.class, aSourceData[i].Value);
 		    }
 
 		    Object tmpObj=m_xServiceFactory.createInstance("com.sun.star.xml.sax.Parser");
@@ -154,9 +154,9 @@ public class FlatXml implements XImportFilter, XExportFilter, XServiceName,
 	        {
 		        sName = aSourceData[i].Name;
 		        if (sName.equals("OutputStream"))
-			        xos = (XOutputStream)AnyConverter.toObject(XOutputStream.class, aSourceData[i].Value);
+			        xos = AnyConverter.toObject(XOutputStream.class, aSourceData[i].Value);
 		        if (sName.equals("URL"))
-			        sURL=(String)AnyConverter.toObject(String.class, aSourceData[i].Value);
+			        sURL=AnyConverter.toObject(String.class, aSourceData[i].Value);
 		    }
 
 		    // prepare the XML writer

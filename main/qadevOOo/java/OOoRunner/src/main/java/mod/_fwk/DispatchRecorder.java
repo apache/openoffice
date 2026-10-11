@@ -93,8 +93,8 @@ public class DispatchRecorder extends TestCase {
             XPropertySet xFramePS = UnoRuntime.queryInterface
                 (XPropertySet.class, xFrame);
             XDispatchRecorderSupplier xDRS = null;
-            xDRS = (XDispatchRecorderSupplier) AnyConverter.toObject(
-                             new Type(XDispatchRecorderSupplier.class),
+            xDRS = AnyConverter.toObject(
+                          XDispatchRecorderSupplier.class,
                           xFramePS.getPropertyValue("DispatchRecorderSupplier"));
             if (xDRS == null) {
 

@@ -128,8 +128,8 @@ public class SvxUnoTextContent extends TestCase {
             xEA = UnoRuntime.queryInterface
                 (XEnumerationAccess.class, text) ;
 
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),xEA.createEnumeration().nextElement());
+            oObj = AnyConverter.toObject(
+                XInterface.class,xEA.createEnumeration().nextElement());
         } catch (Exception e) {
             log.println("Can't create test object") ;
             e.printStackTrace(log) ;

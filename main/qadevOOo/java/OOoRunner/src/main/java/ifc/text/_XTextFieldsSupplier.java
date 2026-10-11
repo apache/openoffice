@@ -88,8 +88,8 @@ public class _XTextFieldsSupplier extends MultiMethodTest {
                 XSpreadsheets oSheets = xSheetDoc.getSheets() ;
                 XIndexAccess oIndexSheets =
                     UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-                XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+                XSpreadsheet oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(0));
 
                 String[] services = _oMSF.getAvailableServiceNames();
                 for (int i=0; i<services.length; i++) {

@@ -124,8 +124,8 @@ public class ScSheetLinkObj extends TestCase {
         XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get a spreadsheet", e);
@@ -165,8 +165,8 @@ public class ScSheetLinkObj extends TestCase {
         String[] names = links.getElementNames();
 
         try {
-            oObj = (XInterface)AnyConverter.toObject(
-                        new Type(XInterface.class),links.getByName(names[0]));
+            oObj = AnyConverter.toObject(
+                        XInterface.class,links.getByName(names[0]));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by name", e);

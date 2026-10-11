@@ -260,8 +260,8 @@ public class AccessibleTextImpl implements javax.accessibility.AccessibleText {
 				if (property.Value instanceof ParagraphAdjust) {
 					adjust = (ParagraphAdjust) property.Value;
 				} else if (property.Value instanceof Any) {
-					adjust = (ParagraphAdjust) AnyConverter.toObject(new Type(
-								ParagraphAdjust.class), property.Value);
+					adjust = AnyConverter.toObject(
+								ParagraphAdjust.class, property.Value);
 				} else {
 					adjust = ParagraphAdjust.fromInt(AnyConverter.toInt(
 								property.Value));
@@ -329,8 +329,8 @@ public class AccessibleTextImpl implements javax.accessibility.AccessibleText {
 				if (property.Value instanceof FontSlant) {
 					fs = (FontSlant) property.Value;
 				} else if (property.Value instanceof Any) {
-					fs = (FontSlant) AnyConverter.toObject(new Type(
-								FontSlant.class), property.Value);
+					fs = AnyConverter.toObject(
+								FontSlant.class, property.Value);
 				}
 
 				if (fs != null) {
@@ -354,8 +354,8 @@ public class AccessibleTextImpl implements javax.accessibility.AccessibleText {
 				if (property.Value instanceof LineSpacing) {
 					ls = (LineSpacing) property.Value;
 				} else if (property.Value instanceof Any) {
-					ls = (LineSpacing) AnyConverter.toObject(new Type(
-								LineSpacing.class), property.Value);
+					ls = AnyConverter.toObject(
+								LineSpacing.class, property.Value);
 				}
 
 				if (ls != null) {

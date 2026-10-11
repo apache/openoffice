@@ -301,8 +301,8 @@ public class utils {
             Object settings = msf.createInstance("com.sun.star.comp.framework.PathSettings");
             XPropertySet pthSettings = null;
             try {
-                pthSettings = (XPropertySet) AnyConverter.toObject(
-                    new Type(XPropertySet.class), settings);
+                pthSettings = AnyConverter.toObject(
+                    XPropertySet.class, settings);
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 System.out.println("### couldn't get Office Settings");
             }
@@ -322,8 +322,8 @@ public class utils {
             Object settings = msf.createInstance("com.sun.star.comp.framework.PathSettings");
             XPropertySet pthSettings = null;
             try {
-                pthSettings = (XPropertySet) AnyConverter.toObject(
-                    new Type(XPropertySet.class), settings);
+                pthSettings = AnyConverter.toObject(
+                    XPropertySet.class, settings);
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 System.out.println("### couldn't get Office Settings");
             }

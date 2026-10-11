@@ -35,7 +35,7 @@ public class _ServiceManager extends MultiPropertyTest {
         XComponentContext get = null;
         boolean res = false;
         try {
-            get = (XComponentContext)AnyConverter.toObject(new Type(XComponentContext.class), oObj.getPropertyValue("DefaultContext"));
+            get = AnyConverter.toObject(XComponentContext.class, oObj.getPropertyValue("DefaultContext"));
             res = get != null;
         } catch (com.sun.star.lang.IllegalArgumentException iae) {
             log.println("Illegal Argument Exception");

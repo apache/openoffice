@@ -107,8 +107,8 @@ public class SwXTextSection extends TestCase {
 
             //cleanup if necessary
             if (oTSSuppName.hasByName("SwXTextSection")) {
-                XTextSection old = (XTextSection) AnyConverter.toObject(
-                    new Type(XTextSection.class),
+                XTextSection old = AnyConverter.toObject(
+                    XTextSection.class,
                         oTSSuppName.getByName("SwXTextSection"));
                 XComponent oldC =
                         UnoRuntime.queryInterface(XComponent.class,old);
@@ -138,8 +138,8 @@ public class SwXTextSection extends TestCase {
             UnoRuntime.queryInterface(XIndexAccess.class, oTSSuppName);
 
             log.println( "getting a TextSection with the XTextSectionSupplier()" );
-            xTS = (XTextSection) AnyConverter.toObject(
-                        new Type(XTextSection.class),oTSSuppIndex.getByIndex(0));
+            xTS = AnyConverter.toObject(
+                        XTextSection.class,oTSSuppIndex.getByIndex(0));
             XNamed xTSName =
                     UnoRuntime.queryInterface( XNamed.class, xTS);
             xTSName.setName("SwXTextSection");

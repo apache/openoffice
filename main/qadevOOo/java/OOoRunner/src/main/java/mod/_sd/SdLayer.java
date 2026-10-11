@@ -112,8 +112,8 @@ public class SdLayer extends TestCase {
             UnoRuntime.queryInterface(XIndexAccess.class,oLM);
         log.println( "getting LayerManager" );
         try {
-            oObj = (XLayer) AnyConverter.toObject(
-                        new Type(XLayer.class),oIA.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XLayer.class,oIA.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get by index", e);

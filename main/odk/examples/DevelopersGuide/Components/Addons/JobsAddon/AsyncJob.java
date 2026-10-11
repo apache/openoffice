@@ -135,8 +135,8 @@ public class AsyncJob extends WeakBase implements XServiceInfo, XAsyncJob
                 sEventName = com.sun.star.uno.AnyConverter.toString(lEnvironment[i].Value);
             else
             if (lEnvironment[i].Name.equals("Frame"))
-                xFrame = (com.sun.star.frame.XFrame)com.sun.star.uno.AnyConverter.toObject(
-                            new com.sun.star.uno.Type(com.sun.star.frame.XFrame.class),
+                xFrame = com.sun.star.uno.AnyConverter.toObject(
+                            com.sun.star.frame.XFrame.class,
                             lEnvironment[i].Value);
         }
 

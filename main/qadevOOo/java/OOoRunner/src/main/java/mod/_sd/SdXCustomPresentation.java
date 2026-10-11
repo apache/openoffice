@@ -169,8 +169,8 @@ public class SdXCustomPresentation extends TestCase {
 
         XDrawPage oDrawPage = null;
         try {
-            oDrawPage = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oDrawPage = AnyConverter.toObject(
+                    XDrawPage.class,oDPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by index", e);
@@ -217,8 +217,8 @@ public class SdXCustomPresentation extends TestCase {
                 log.println( "adding INSTANCE" + n
                     +" as mod relation to environment" );
                 oDPn.insertNewByIndex(0);
-                oDrawPage = (XDrawPage) AnyConverter.toObject(
-                        new Type(XDrawPage.class),oDPi.getByIndex(0));
+                oDrawPage = AnyConverter.toObject(
+                        XDrawPage.class,oDPi.getByIndex(0));
                 tEnv.addObjRelation("INSTANCE" + n, oDrawPage);
             }
         } catch (com.sun.star.lang.WrappedTargetException e) {

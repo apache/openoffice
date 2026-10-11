@@ -152,11 +152,11 @@ public class ScDataPilotFieldObj extends TestCase {
                                             XIndexAccess.class, xSpreadsheets);
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class),
+            oSheet = AnyConverter.toObject(
+                             XSpreadsheet.class,
                              oIndexAccess.getByIndex(0));
-            oSheet2 = (XSpreadsheet) AnyConverter.toObject(
-                              new Type(XSpreadsheet.class),
+            oSheet2 = AnyConverter.toObject(
+                              XSpreadsheet.class,
                               oIndexAccess.getByIndex(1));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
@@ -267,8 +267,8 @@ public class ScDataPilotFieldObj extends TestCase {
         DPT.insertNewByName("DataPilotTable", sCellAdress, DPDsc);
 
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                           new Type(XInterface.class), IA.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                           XInterface.class, IA.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
             throw new StatusException("Couldn't get data pilot field", e);

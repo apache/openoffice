@@ -132,10 +132,10 @@ public class SwXHeadFootText extends TestCase {
 
         // obtains style 'Standatd' from style family 'PageStyles'
         try {
-            PageStyles = (XNameAccess) AnyConverter.toObject(
-                new Type(XNameAccess.class),StyleFamNames.getByName("PageStyles"));
-            StdStyle = (XStyle) AnyConverter.toObject(
-                    new Type(XStyle.class),PageStyles.getByName("Standard"));
+            PageStyles = AnyConverter.toObject(
+                XNameAccess.class,StyleFamNames.getByName("PageStyles"));
+            StdStyle = AnyConverter.toObject(
+                    XStyle.class,PageStyles.getByName("Standard"));
         } catch ( com.sun.star.lang.WrappedTargetException e ) {
             e.printStackTrace(log);
             throw new StatusException("Error getting style by name!", e);

@@ -145,33 +145,33 @@ public class XSLTransformer
         debug("The transformation's parameters as 'name = value' pairs:\n");
 
         for (int i = 0; i < values.length; i++) {
-            nv = (NamedValue) AnyConverter.toObject(new Type(NamedValue.class), values[i]);
+            nv = AnyConverter.toObject(NamedValue.class, values[i]);
 
             if (nv.Name != null && !nv.Name.equals("")) {
                 debug(nv.Name + " = " + nv.Value);
             }
 
             if (nv.Name.equals("StylesheetURL")) {
-                stylesheeturl = (String) AnyConverter.toObject(
-                        new Type(String.class), nv.Value);
+                stylesheeturl = AnyConverter.toObject(
+                        String.class, nv.Value);
             } else if (nv.Name.equals("SourceURL")) {
-                sourceurl = (String) AnyConverter.toObject(
-                        new Type(String.class), nv.Value);
+                sourceurl = AnyConverter.toObject(
+                        String.class, nv.Value);
             } else if (nv.Name.equals("TargetURL")) {
-                targeturl = (String) AnyConverter.toObject(
-                        new Type(String.class), nv.Value);
+                targeturl = AnyConverter.toObject(
+                        String.class, nv.Value);
             } else if (nv.Name.equals("SourceBaseURL")) {
-                sourcebaseurl = (String) AnyConverter.toObject(
-                        new Type(String.class), nv.Value);
+                sourcebaseurl = AnyConverter.toObject(
+                        String.class, nv.Value);
             } else if (nv.Name.equals("TargetBaseURL")) {
-                targetbaseurl = (String) AnyConverter.toObject(
-                        new Type(String.class), nv.Value);
+                targetbaseurl = AnyConverter.toObject(
+                        String.class, nv.Value);
             } else if (nv.Name.equals("SystemType")) {
-                systype = (String) AnyConverter.toObject(
-                        new Type(String.class), nv.Value);
+                systype = AnyConverter.toObject(
+                        String.class, nv.Value);
             } else if (nv.Name.equals("PublicType")) {
-                pubtype = (String) AnyConverter.toObject(
-                        new Type(String.class), nv.Value);
+                pubtype = AnyConverter.toObject(
+                        String.class, nv.Value);
             }
         }
     }

@@ -175,11 +175,11 @@ public class JobExecutor extends TestCase {
                 XNameAccess xNewEventNA =
                     UnoRuntime.queryInterface(XNameAccess.class, oNewEvent);
                 Object oJobList = xNewEventNA.getByName("JobList");
-                XSingleServiceFactory jobListFac = (XSingleServiceFactory)
-                    AnyConverter.toObject(new Type(XSingleServiceFactory.class),
+                XSingleServiceFactory jobListFac =
+                    AnyConverter.toObject(XSingleServiceFactory.class,
                     oJobList);
-                XNameContainer jobListNC = (XNameContainer)
-                    AnyConverter.toObject(new Type(XNameContainer.class),
+                XNameContainer jobListNC =
+                    AnyConverter.toObject(XNameContainer.class,
                     oJobList);
                 log.println("\tAdding TimeStamps to Events ...");
                 Object oNewJobTimeStamps = jobListFac.createInstance();

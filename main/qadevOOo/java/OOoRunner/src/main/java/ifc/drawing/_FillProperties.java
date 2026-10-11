@@ -180,13 +180,13 @@ public class _FillProperties extends MultiPropertyTest {
 
                 oObj.setPropertyValue("FillBitmapURL", util.utils.getFullTestURL("crazy-blue.jpg"));
 
-                the_bitmap = (XBitmap) AnyConverter.toObject(
-                        new Type(XBitmap.class), oObj.getPropertyValue("FillBitmap"));
+                the_bitmap = AnyConverter.toObject(
+                        XBitmap.class, oObj.getPropertyValue("FillBitmap"));
 
                 oObj.setPropertyValue("FillBitmapURL", util.utils.getFullTestURL("space-metal.jpg"));
 
-                the_secondBitmap = (XBitmap) AnyConverter.toObject(
-                        new Type(XBitmap.class), oObj.getPropertyValue("FillBitmap"));
+                the_secondBitmap = AnyConverter.toObject(
+                        XBitmap.class, oObj.getPropertyValue("FillBitmap"));
 
                 testProperty("FillBitmap", BitmapTester);
 

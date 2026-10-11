@@ -161,8 +161,8 @@ public class SdDrawPage extends TestCase {
         XIndexAccess oDPi =
             UnoRuntime.queryInterface(XIndexAccess.class,oDPn);
         try {
-            oObj = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                    XDrawPage.class,oDPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException( "Couldn't get DrawPage", e );

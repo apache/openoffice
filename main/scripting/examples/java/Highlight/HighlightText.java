@@ -215,8 +215,8 @@ public class HighlightText implements com.sun.star.awt.XActionListener {
             Object serviceObj = context.getComponentContext().getValueByName(
                 "/singletons/com.sun.star.util.theMacroExpander");
 
-            XMacroExpander xme = (XMacroExpander) AnyConverter.toObject(
-                new Type(XMacroExpander.class), serviceObj);
+            XMacroExpander xme = AnyConverter.toObject(
+                XMacroExpander.class, serviceObj);
 
             String bootstrapName = "bootstraprc";
             if (System.getProperty("os.name").startsWith("Windows")) {

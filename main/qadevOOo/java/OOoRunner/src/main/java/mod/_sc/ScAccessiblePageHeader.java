@@ -105,8 +105,8 @@ public class ScAccessiblePageHeader extends TestCase {
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = null;
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(0));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }
@@ -171,11 +171,11 @@ public class ScAccessiblePageHeader extends TestCase {
         XStyle StdStyle = null;
 
         try{
-            XNameAccess PageStyles = (XNameAccess) AnyConverter.toObject(
-                            new Type(XNameAccess.class),
+            XNameAccess PageStyles = AnyConverter.toObject(
+                            XNameAccess.class,
                                         StyleFamNames.getByName("PageStyles"));
-            StdStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class), PageStyles.getByName("Default"));
+            StdStyle = AnyConverter.toObject(
+                XStyle.class, PageStyles.getByName("Default"));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by name", e);
@@ -195,8 +195,8 @@ public class ScAccessiblePageHeader extends TestCase {
         // first we write what we are intend to do to log file
         log.println( "creating a test environment" );
         try {
-            RPHC = (XHeaderFooterContent) AnyConverter.toObject(
-                new Type(XHeaderFooterContent.class),
+            RPHC = AnyConverter.toObject(
+                XHeaderFooterContent.class,
                     PropSet.getPropertyValue("RightPageHeaderContent"));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);

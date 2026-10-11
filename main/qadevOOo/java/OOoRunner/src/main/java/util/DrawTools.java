@@ -94,8 +94,8 @@ public class DrawTools {
     public static XDrawPage getDrawPage ( XComponent aDoc, int nr ) {
         XDrawPage oDP = null;
         try {
-            oDP = (XDrawPage) AnyConverter.toObject(
-                new Type(XDrawPage.class),getDrawPages( aDoc ).getByIndex( nr ));
+            oDP = AnyConverter.toObject(
+                XDrawPage.class,getDrawPages( aDoc ).getByIndex( nr ));
         } catch ( Exception e ) {
             throw new IllegalArgumentException( "Couldn't get drawpage" );
         }

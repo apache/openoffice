@@ -164,7 +164,7 @@ public final class GlobalTransfer_Test {
             System.out.println( "Interaction Handler called." );
 
             try {
-                NameClashResolveRequest req = (NameClashResolveRequest)
+                NameClashResolveRequest req =
                     AnyConverter.toObject(
                         NameClashResolveRequest.class, Request.getRequest() );
 

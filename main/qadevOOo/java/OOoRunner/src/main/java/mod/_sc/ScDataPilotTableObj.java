@@ -148,8 +148,8 @@ public class ScDataPilotTableObj extends TestCase {
         Object oChangeCell = null;
         Object oCheckCell = null;
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
             oChangeCell = oSheet.getCellByPosition(1, 5);
             oCheckCell = oSheet.getCellByPosition(
                 sCellAddress.Column, sCellAddress.Row + 3);
@@ -248,8 +248,8 @@ public class ScDataPilotTableObj extends TestCase {
         }
         DPT.insertNewByName("DataPilotTable", sCellAddress, DPDsc);
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),DPT.getByName(DPT.getElementNames()[0]));
+            oObj = AnyConverter.toObject(
+                XInterface.class,DPT.getByName(DPT.getElementNames()[0]));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create a test environment", e);
