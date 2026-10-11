@@ -137,15 +137,15 @@ public class ScStyleObj extends TestCase {
         XNameAccess oStyleFamilyNameAccess = null;
         XStyle oStyle = null;
         try {
-            oStyleFamilyNameAccess = (XNameAccess) AnyConverter.toObject(
-                new Type(XNameAccess.class),
+            oStyleFamilyNameAccess = AnyConverter.toObject(
+                XNameAccess.class,
                     oStyleFamiliesIndexAccess.getByIndex(0));
 
             XIndexAccess oStyleFamilyIndexAccess =
                 UnoRuntime.queryInterface(XIndexAccess.class,
                 oStyleFamilyNameAccess);
-            oStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oStyleFamilyIndexAccess.getByIndex(0));
+            oStyle = AnyConverter.toObject(
+                XStyle.class,oStyleFamilyIndexAccess.getByIndex(0));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by index", e);
@@ -204,8 +204,8 @@ public class ScStyleObj extends TestCase {
 
         XCell aCell = null;
         try {
-            XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
             log.println("Getting a cell from sheet") ;
             aCell = oSheet.getCellByPosition(2,3) ;
         } catch(com.sun.star.lang.WrappedTargetException e) {

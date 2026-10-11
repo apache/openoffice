@@ -85,8 +85,8 @@ public class ScIndexEnumeration_TableRowsEnumeration extends TestCase {
         XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, xSpreadsheets );
         try {
-            xSpreadsheet = (XSpreadsheet) AnyConverter.toObject(
-                new Type(XSpreadsheet.class),
+            xSpreadsheet = AnyConverter.toObject(
+                XSpreadsheet.class,
                     oNames.getByName(oNames.getElementNames()[0]));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);

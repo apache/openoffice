@@ -173,14 +173,14 @@ public class SdUnoPresView extends TestCase {
         XDrawPage oDrawPage = null;
         XDrawPage secondDrawPage = null;
         try {
-            oDrawPage = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oDrawPage = AnyConverter.toObject(
+                    XDrawPage.class,oDPi.getByIndex(0));
             the_pages.insertNewByIndex(0);
             the_pages.insertNewByIndex(0);
             the_pages.insertNewByIndex(0);
             the_pages.insertNewByIndex(0);
-           secondDrawPage = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),oDPi.getByIndex(3));
+           secondDrawPage = AnyConverter.toObject(
+                    XDrawPage.class,oDPi.getByIndex(3));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get DrawPage", e);

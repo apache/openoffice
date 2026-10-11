@@ -103,8 +103,8 @@ public class _TextSection extends MultiPropertyTest {
 
         TC = (XTextColumns) tEnv.getObjRelation("TC");
         try {
-            val2set += ((XTextColumns) AnyConverter.toObject(
-                new Type(XTextColumns.class),oldValue)).getColumnCount();
+            val2set += AnyConverter.toObject(
+                XTextColumns.class,oldValue).getColumnCount();
         } catch (com.sun.star.lang.IllegalArgumentException iae) {
             log.println("Couldn't change Column count");
         }
@@ -117,10 +117,10 @@ public class _TextSection extends MultiPropertyTest {
             short val1 = 0;
             short val2 = 1;
             try {
-                val1 = ((XTextColumns) AnyConverter.toObject(
-                    new Type(XTextColumns.class),obj1)).getColumnCount();
-                val2 = ((XTextColumns) AnyConverter.toObject(
-                    new Type(XTextColumns.class),obj2)).getColumnCount();
+                val1 = AnyConverter.toObject(
+                    XTextColumns.class,obj1).getColumnCount();
+                val2 = AnyConverter.toObject(
+                    XTextColumns.class,obj2).getColumnCount();
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 log.println("comparing values failed");
             }

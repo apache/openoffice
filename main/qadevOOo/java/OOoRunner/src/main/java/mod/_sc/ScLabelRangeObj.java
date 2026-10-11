@@ -117,8 +117,8 @@ public class ScLabelRangeObj extends TestCase {
             CellRangeAddress aRange1 = new CellRangeAddress((short)0, 0, 0, 0, 1);
             lRanges.addNew(aRange1, aRange2);
 
-            oObj = (XLabelRange) AnyConverter.toObject(
-                        new Type(XLabelRange.class),lRanges.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XLabelRange.class,lRanges.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log) ;
             throw new StatusException(

@@ -118,8 +118,8 @@ public class ScAutoFormatsObj extends TestCase{
             // get AutoFormats
             XComponent xComp = UnoRuntime.queryInterface
                 (XComponent.class, xSheetDoc);
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),((XMultiServiceFactory)Param.getMSF()).createInstance
+            oObj = AnyConverter.toObject(
+                XInterface.class,((XMultiServiceFactory)Param.getMSF()).createInstance
                                     ("com.sun.star.sheet.TableAutoFormats"));
             Object secondInstance = SOF.createInstance
                 (xComp, "com.sun.star.sheet.TableAutoFormat");

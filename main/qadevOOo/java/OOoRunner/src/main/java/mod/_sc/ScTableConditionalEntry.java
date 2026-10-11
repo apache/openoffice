@@ -118,8 +118,8 @@ public class ScTableConditionalEntry extends TestCase {
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);
@@ -164,8 +164,8 @@ public class ScTableConditionalEntry extends TestCase {
                 UnoRuntime.queryInterface(XSheetConditionalEntries.class, CFormat);
             xSCE.addNew(Conditions());
             Props.setPropertyValue("ConditionalFormat", xSCE);
-            oObj = (XSheetConditionalEntry) AnyConverter.toObject(
-                    new Type(XSheetConditionalEntry.class),xSCE.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                    XSheetConditionalEntry.class,xSCE.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException(

@@ -150,7 +150,7 @@ public class SwXAutoTextEntry extends TestCase {
         }
 
         try{
-            oObj = (XInterface) AnyConverter.toObject(new Type(XInterface.class),oContNames.getByName("mytexts"));
+            oObj = AnyConverter.toObject(XInterface.class,oContNames.getByName("mytexts"));
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get AutoTextGroup", e);
@@ -173,8 +173,8 @@ public class SwXAutoTextEntry extends TestCase {
             }
             log.println("Adding new element 'NewEntryName' to group...");
             oGroup.insertNewByName("NewEntryName", "NewEntryTitle", oTextRange);
-            oEntry = (XAutoTextEntry) AnyConverter.toObject(
-                    new Type(XAutoTextEntry.class),oGroup.getByName("NewEntryName"));
+            oEntry = AnyConverter.toObject(
+                    XAutoTextEntry.class,oGroup.getByName("NewEntryName"));
         } catch ( com.sun.star.container.ElementExistException e ) {
             e.printStackTrace(log);
         } catch ( com.sun.star.container.NoSuchElementException e ) {

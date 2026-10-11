@@ -143,8 +143,8 @@ public class XMLStylesExporter extends TestCase {
                     XStyleFamiliesSupplier.class, xSheetDoc);
             XNameAccess StyleFamilies = styleSup.getStyleFamilies();
             String[] styleFamiliesNames = StyleFamilies.getElementNames();
-            XNameContainer StyleFamilyName = (XNameContainer)
-                AnyConverter.toObject(new Type(XNameContainer.class),
+            XNameContainer StyleFamilyName =
+                AnyConverter.toObject(XNameContainer.class,
                     StyleFamilies.getByName(styleFamiliesNames[0]));
             Object SC = SOF.createInstance(
                 xSheetDoc, "com.sun.star.style.CellStyle");

@@ -114,8 +114,8 @@ public class SvxShapeGroup extends TestCase {
             XDrawPages oDPn = oDPS.getDrawPages();
             XIndexAccess oDPi =
                 UnoRuntime.queryInterface(XIndexAccess.class,oDPn);
-            oObj = (XDrawPage) AnyConverter.toObject(
-                new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                XDrawPage.class,oDPi.getByIndex(0));
         } catch ( Exception e ) {
             // Some exception occurred. FAILED
             e.printStackTrace( log );
@@ -145,15 +145,15 @@ public class SvxShapeGroup extends TestCase {
             UnoRuntime.queryInterface(XPropertySet.class,Shape1);
         XStyle aStyle1 = null;
         try {
-            aStyle1 = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle1 = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
         oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,Shape2);
         XStyle aStyle2 = null;
         try {
-            aStyle2 = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle2 = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
 
 

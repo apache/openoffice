@@ -275,8 +275,8 @@ public class ScriptSelector {
 
             if (result != null)
             {
-                XBrowseNode xbn = (XBrowseNode)
-                    AnyConverter.toObject(new Type(XBrowseNode.class), result);
+                XBrowseNode xbn =
+                    AnyConverter.toObject(XBrowseNode.class, result);
                 selectorPanel.addNode(node, xbn);
             }
         }

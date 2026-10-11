@@ -135,8 +135,8 @@ public class ScStyleFamilyObj extends TestCase {
         XIndexAccess oStyleFamiliesIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, oStyleFamilies);
         try {
-            oStyleFamilyNameAccess = (XNameAccess) AnyConverter.toObject(
-                new Type(XNameAccess.class),
+            oStyleFamilyNameAccess = AnyConverter.toObject(
+                XNameAccess.class,
                     oStyleFamiliesIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);

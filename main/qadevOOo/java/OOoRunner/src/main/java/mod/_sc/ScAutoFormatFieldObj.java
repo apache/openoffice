@@ -81,12 +81,12 @@ public class ScAutoFormatFieldObj extends TestCase {
                 ("com.sun.star.sheet.TableAutoFormats");
             XIndexAccess formatsIndex = UnoRuntime.queryInterface
                 (XIndexAccess.class, formats);
-            XInterface format = (XInterface) AnyConverter.toObject(
-                        new Type(XInterface.class),formatsIndex.getByIndex(0));
+            XInterface format = AnyConverter.toObject(
+                        XInterface.class,formatsIndex.getByIndex(0));
             XIndexAccess formatIndex = UnoRuntime.queryInterface
                 (XIndexAccess.class, format);
-            oObj = (XInterface) AnyConverter.toObject(
-                        new Type(XInterface.class),formatIndex.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XInterface.class,formatIndex.getByIndex(0));
 
         } catch (com.sun.star.uno.Exception e) {
             log.println ("Exception occurred while creating test Object.") ;

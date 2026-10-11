@@ -142,8 +142,8 @@ public class ScDDELinksObj extends TestCase {
         XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get a spreadsheet", e);
@@ -176,8 +176,8 @@ public class ScDDELinksObj extends TestCase {
             // Getting named ranges.
             XPropertySet docProps =
                 UnoRuntime.queryInterface(XPropertySet.class, xSheetDoc);
-            oObj = (XInterface)AnyConverter.toObject(
-                new Type(XInterface.class),docProps.getPropertyValue("DDELinks"));
+            oObj = AnyConverter.toObject(
+                XInterface.class,docProps.getPropertyValue("DDELinks"));
             log.println("Creating object - " +
                                         ((oObj == null) ? "FAILED" : "OK"));
         } catch (com.sun.star.lang.WrappedTargetException e) {

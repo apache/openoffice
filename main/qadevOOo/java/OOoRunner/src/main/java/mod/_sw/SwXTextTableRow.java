@@ -103,8 +103,8 @@ public class SwXTextTableRow extends TestCase {
             XTableRows oTRn = oTable.getRows();
             XIndexAccess oIA = UnoRuntime.queryInterface
                 (XIndexAccess.class,oTRn);
-            oObj = (XPropertySet) AnyConverter.toObject(
-                    new Type(XPropertySet.class),oIA.getByIndex(1));
+            oObj = AnyConverter.toObject(
+                    XPropertySet.class,oIA.getByIndex(1));
         } catch( Exception e ) {
             e.printStackTrace(log);
         }

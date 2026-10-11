@@ -150,7 +150,7 @@ public class SwXAutoTextGroup extends TestCase {
         }
 
         try{
-            oObj = (XInterface) AnyConverter.toObject(new Type(XInterface.class),oContNames.getByName(myGroupName));
+            oObj = AnyConverter.toObject(XInterface.class,oContNames.getByName(myGroupName));
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get AutoTextGroup '"+myGroupName + "'", e);

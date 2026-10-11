@@ -177,8 +177,8 @@ public class SvxGraphicObject extends TestCase {
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
@@ -188,8 +188,8 @@ public class SvxGraphicObject extends TestCase {
         oShapeProps =
                             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
@@ -204,8 +204,8 @@ public class SvxGraphicObject extends TestCase {
         try {
             oShapeProps.setPropertyValue(
                 "GraphicURL",util.utils.getFullTestURL("space-metal.jpg"));
-            aBitmap = (XBitmap) AnyConverter.toObject(
-                new Type(XBitmap.class),oShapeProps.getPropertyValue
+            aBitmap = AnyConverter.toObject(
+                XBitmap.class,oShapeProps.getPropertyValue
                     ("GraphicObjectFillBitmap"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
@@ -219,8 +219,8 @@ public class SvxGraphicObject extends TestCase {
         try {
              oShapeProps.setPropertyValue(
                 "GraphicURL",util.utils.getFullTestURL("crazy-blue.jpg"));
-            aBitmap = (XBitmap) AnyConverter.toObject(
-                new Type(XBitmap.class),oShapeProps.getPropertyValue
+            aBitmap = AnyConverter.toObject(
+                XBitmap.class,oShapeProps.getPropertyValue
                     ("GraphicObjectFillBitmap"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {

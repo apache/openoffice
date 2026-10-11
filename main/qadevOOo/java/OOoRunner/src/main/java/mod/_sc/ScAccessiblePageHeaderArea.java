@@ -100,8 +100,8 @@ public class ScAccessiblePageHeaderArea extends TestCase {
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                            new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                            XSpreadsheet.class,oIndexSheets.getByIndex(0));
             xCell = oSheet.getCellByPosition(0, 0) ;
             xCell.setFormula("ScAccessiblePageHeaderArea");
         } catch(com.sun.star.lang.WrappedTargetException e) {

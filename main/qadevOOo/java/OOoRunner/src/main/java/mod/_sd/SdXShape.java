@@ -136,8 +136,8 @@ public class SdXShape extends TestCase {
             UnoRuntime.queryInterface(XIndexAccess.class, oDPn);
         XDrawPage oDP = null;
         try {
-            oDP = (XDrawPage) AnyConverter.toObject(
-                        new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oDP = AnyConverter.toObject(
+                        XDrawPage.class,oDPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get by index", e);
@@ -173,8 +173,8 @@ public class SdXShape extends TestCase {
             UnoRuntime.queryInterface(XPropertySet.class, oObj);
         XStyle aStyle = null;
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
             oShapeProps.setPropertyValue("ZOrder", new Integer(1));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -194,8 +194,8 @@ public class SdXShape extends TestCase {
         oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class, oShape);
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get property value", e);

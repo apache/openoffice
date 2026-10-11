@@ -141,8 +141,8 @@ public class ScCellObj extends TestCase {
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
 
             log.println("Getting a cell from sheet") ;
             oObj = oSheet.getCellByPosition(2, 3) ;

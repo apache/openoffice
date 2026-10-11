@@ -147,8 +147,8 @@ public class ScNamedRangeObj extends TestCase {
         xNamedRanges.outputList(listOutputPosition);
 
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),xNamedRanges.getByName("ANamedRange"));
+            oObj = AnyConverter.toObject(
+                XInterface.class,xNamedRanges.getByName("ANamedRange"));
         } catch(com.sun.star.lang.WrappedTargetException e){
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by name", e);

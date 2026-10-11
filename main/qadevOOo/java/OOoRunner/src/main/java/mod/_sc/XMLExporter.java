@@ -136,8 +136,8 @@ public class XMLExporter extends TestCase {
             XSpreadsheets xSpreadsheets = xSpreadsheetDoc.getSheets();
             XIndexAccess xSheetsIndexArray =
                 UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
-            XSpreadsheet xSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),xSheetsIndexArray.getByIndex(0));
+            XSpreadsheet xSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,xSheetsIndexArray.getByIndex(0));
             XNamed xSheetNamed =
                 UnoRuntime.queryInterface(XNamed.class, xSheet);
             xSheetNamed.setName(SHEET_NAME);

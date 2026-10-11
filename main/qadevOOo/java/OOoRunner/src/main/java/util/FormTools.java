@@ -228,7 +228,7 @@ public class FormTools {
             Object aForm = FormTools.getIndexedForms(WriterTools.getDrawPage(aDoc)).getByIndex(0);
             XForm the_form = null;
             try {
-                the_form = (XForm) AnyConverter.toObject(new Type(XForm.class), aForm);
+                the_form = AnyConverter.toObject(XForm.class, aForm);
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 System.out.println("### Couldn't convert Any");
             }
@@ -259,7 +259,7 @@ public class FormTools {
     public static XLoadable bindForm( XTextDocument aDoc, String sourceName, String tableName )
     	throws com.sun.star.uno.Exception {
 
-        XForm the_form = (XForm) AnyConverter.toObject(new Type(XForm.class),
+        XForm the_form = AnyConverter.toObject(XForm.class,
             FormTools.getIndexedForms(WriterTools.getDrawPage(aDoc)).getByIndex(0));
         XPropertySet formProps = UnoRuntime.queryInterface(XPropertySet.class, the_form);
         formProps.setPropertyValue("DataSourceName",sourceName);
@@ -302,7 +302,7 @@ public class FormTools {
     public static XLoadable bindForm( XTextDocument aDoc, String formName, String sourceName,
     	String tableName) throws com.sun.star.uno.Exception {
 
-        XForm the_form = (XForm) AnyConverter.toObject(new Type(XForm.class),
+        XForm the_form = AnyConverter.toObject(XForm.class,
             FormTools.getForms(WriterTools.getDrawPage(aDoc)).getByName(formName));
         XPropertySet formProps = UnoRuntime.queryInterface(XPropertySet.class, the_form);
         formProps.setPropertyValue("DataSourceName",sourceName);

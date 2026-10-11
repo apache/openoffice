@@ -197,10 +197,10 @@ public class CheckDataPilot {
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
-            oSheet2 = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(1));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
+            oSheet2 = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(1));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
             throw new StatusException( "Couldn't get a spreadsheet", e);
@@ -299,8 +299,8 @@ public class CheckDataPilot {
         }
         DPT.insertNewByName("DataPilotTable", sCellAdress, DPDsc);
         try {
-            mDataPilotTableObject = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),DPT.getByName(DPT.getElementNames()[0]));
+            mDataPilotTableObject = AnyConverter.toObject(
+                XInterface.class,DPT.getByName(DPT.getElementNames()[0]));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
             throw new StatusException("Couldn't create a test environment", e);
@@ -314,8 +314,8 @@ public class CheckDataPilot {
 
         XIndexAccess IA = DPDsc.getDataPilotFields();
         try {
-            mDataPilotFieldObject = (XInterface)AnyConverter.toObject(
-                                new Type(XInterface.class),IA.getByIndex(0));
+            mDataPilotFieldObject = AnyConverter.toObject(
+                                XInterface.class,IA.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace();
             throw new StatusException("Couldn't get data pilot field", e);

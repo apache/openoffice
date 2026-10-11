@@ -124,8 +124,8 @@ public class ScAnnotationsObj extends TestCase {
         XCell oCell = null;
         XSpreadsheet oSheet  = null;
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,
                         oNames.getByName(oNames.getElementNames()[0]));
             // adding an annotation...
             XCellRange oCRange =

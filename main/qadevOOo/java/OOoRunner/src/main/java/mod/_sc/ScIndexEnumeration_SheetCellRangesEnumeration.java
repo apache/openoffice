@@ -100,8 +100,8 @@ public class ScIndexEnumeration_SheetCellRangesEnumeration extends TestCase {
             UnoRuntime.queryInterface (XIndexAccess.class, oSheets);
         XSpreadsheet oSheet = null;
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndSheets.getByIndex(0));
             XNameContainer oRanges =
                 UnoRuntime.queryInterface(XNameContainer.class, oObj);
 

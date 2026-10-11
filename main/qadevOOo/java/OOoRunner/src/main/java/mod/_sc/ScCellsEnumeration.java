@@ -118,8 +118,8 @@ public class ScCellsEnumeration extends TestCase {
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         XCellRange oSheet = null;
         try {
-            oSheet = (XCellRange) AnyConverter.toObject(
-                    new Type(XCellRange.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XCellRange.class,oIndexAccess.getByIndex(0));
 
             XCell oCell_1 = (XCell)oSheet.getCellByPosition(0, 0);
             XTextRange oTextRange =

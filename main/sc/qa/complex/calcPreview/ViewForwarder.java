@@ -127,8 +127,8 @@ public class ViewForwarder {
             XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             Object o = oIndexSheets.getByIndex(0);
-            XSpreadsheet oSheet = (XSpreadsheet)AnyConverter.toObject(
-                            new com.sun.star.uno.Type(XSpreadsheet.class), o);
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                            XSpreadsheet.class, o);
             xCell = oSheet.getCellByPosition(0, 0) ;
             xCell.setFormula("ScAccessiblePageHeader");
 
@@ -162,12 +162,12 @@ public class ViewForwarder {
 
         try{
             Object o = StyleFamNames.getByName("PageStyles");
-            XNameAccess PageStyles = (XNameAccess)AnyConverter.toObject(
-                            new com.sun.star.uno.Type(XNameAccess.class), o);
+            XNameAccess PageStyles = AnyConverter.toObject(
+                            XNameAccess.class, o);
 
             o = PageStyles.getByName("Default");
-            StdStyle = (XStyle)AnyConverter.toObject(
-                            new com.sun.star.uno.Type(XStyle.class), o);
+            StdStyle = AnyConverter.toObject(
+                            XStyle.class, o);
         } catch(com.sun.star.lang.IllegalArgumentException e) {
             fail(e.getMessage());
         } catch(com.sun.star.lang.WrappedTargetException e){
@@ -187,8 +187,8 @@ public class ViewForwarder {
         // get the header
         try {
             Object o = PropSet.getPropertyValue("RightPageHeaderContent");
-            RPHFC = (XHeaderFooterContent)AnyConverter.toObject(
-                    new com.sun.star.uno.Type(XHeaderFooterContent.class), o);
+            RPHFC = AnyConverter.toObject(
+                    XHeaderFooterContent.class, o);
 
         } catch(com.sun.star.lang.IllegalArgumentException e) {
             fail(e.getMessage());
@@ -214,8 +214,8 @@ public class ViewForwarder {
         RPHFC = null;
         try {
             Object o = PropSet.getPropertyValue("RightPageHeaderContent");
-            RPHFC = (XHeaderFooterContent)AnyConverter.toObject(
-                    new com.sun.star.uno.Type(XHeaderFooterContent.class), o);
+            RPHFC = AnyConverter.toObject(
+                    XHeaderFooterContent.class, o);
         } catch(com.sun.star.lang.IllegalArgumentException e) {
             fail(e.getMessage());
         } catch(com.sun.star.lang.WrappedTargetException e){
@@ -538,8 +538,8 @@ public class ViewForwarder {
             XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             Object o = oIndexSheets.getByIndex(0);
-            XSpreadsheet oSheet = (XSpreadsheet)AnyConverter.toObject(
-                            new com.sun.star.uno.Type(XSpreadsheet.class), o);
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                            XSpreadsheet.class, o);
             xCell = oSheet.getCellByPosition(0, 0) ;
             xCell.setFormula("ScAccessiblePageHeader");
 
@@ -573,12 +573,12 @@ public class ViewForwarder {
 
         try{
             Object o = StyleFamNames.getByName("PageStyles");
-            XNameAccess PageStyles = (XNameAccess)AnyConverter.toObject(
-                            new com.sun.star.uno.Type(XNameAccess.class), o);
+            XNameAccess PageStyles = AnyConverter.toObject(
+                            XNameAccess.class, o);
 
             o = PageStyles.getByName("Default");
-            StdStyle = (XStyle)AnyConverter.toObject(
-                            new com.sun.star.uno.Type(XStyle.class), o);
+            StdStyle = AnyConverter.toObject(
+                            XStyle.class, o);
         } catch(com.sun.star.lang.IllegalArgumentException e) {
             fail(e.getMessage());
         } catch(com.sun.star.lang.WrappedTargetException e){
@@ -599,8 +599,8 @@ public class ViewForwarder {
         System.out.println( "Creating a test environment" );
         try {
             Object o = PropSet.getPropertyValue("RightPageHeaderContent");
-            RPHFC = (XHeaderFooterContent)AnyConverter.toObject(
-                    new com.sun.star.uno.Type(XHeaderFooterContent.class), o);
+            RPHFC = AnyConverter.toObject(
+                    XHeaderFooterContent.class, o);
         } catch(com.sun.star.lang.IllegalArgumentException e) {
             fail(e.getMessage());
         } catch(com.sun.star.lang.WrappedTargetException e){
@@ -625,8 +625,8 @@ public class ViewForwarder {
         RPHFC = null;
         try {
             Object o = PropSet.getPropertyValue("RightPageFooterContent");
-            RPHFC = (XHeaderFooterContent)AnyConverter.toObject(
-                    new com.sun.star.uno.Type(XHeaderFooterContent.class), o);
+            RPHFC = AnyConverter.toObject(
+                    XHeaderFooterContent.class, o);
         } catch(com.sun.star.lang.IllegalArgumentException e) {
             fail(e.getMessage());
         } catch(com.sun.star.lang.WrappedTargetException e){
@@ -808,8 +808,8 @@ public class ViewForwarder {
             XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             Object o = oIndexSheets.getByIndex(0);
-            XSpreadsheet oSheet = (XSpreadsheet)AnyConverter.toObject(
-                            new com.sun.star.uno.Type(XSpreadsheet.class), o);
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                            XSpreadsheet.class, o);
 
             System.out.println("Getting a cell from sheet") ;
             xCell = oSheet.getCellByPosition(0, 0);

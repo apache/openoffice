@@ -147,8 +147,8 @@ public class ScDatabaseRangeObj extends TestCase {
             Object sheet = sheets.getByName(names[0]);
             xImp = UnoRuntime.queryInterface(XImportable.class,
                                                            sheet);
-            dbRanges = (XDatabaseRanges) AnyConverter.toObject(
-                               new Type(XDatabaseRanges.class),
+            dbRanges = AnyConverter.toObject(
+                               XDatabaseRanges.class,
                                docProps.getPropertyValue("DatabaseRanges"));
             _doImport(xImp);
         } catch (com.sun.star.lang.WrappedTargetException e) {
@@ -192,8 +192,8 @@ public class ScDatabaseRangeObj extends TestCase {
                                                     XCellRangeAddressable.class,
                                                     aReferrer.getReferredCells());
             aRange = aRangeA.getRangeAddress();
-            oObj = (XInterface) AnyConverter.toObject(
-                           new Type(XInterface.class),
+            oObj = AnyConverter.toObject(
+                           XInterface.class,
                            dbrNA.getByName("dbRange"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);

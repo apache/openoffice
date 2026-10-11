@@ -85,8 +85,8 @@ public class ScAutoFormatObj extends TestCase {
                     ("com.sun.star.sheet.TableAutoFormats");
             XIndexAccess formatsIndex =
                     UnoRuntime.queryInterface(XIndexAccess.class, formats);
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),formatsIndex.getByIndex
+            oObj = AnyConverter.toObject(
+                    XInterface.class,formatsIndex.getByIndex
                                             (formatsIndex.getCount() - 1));
 
             XNamed objNamed =

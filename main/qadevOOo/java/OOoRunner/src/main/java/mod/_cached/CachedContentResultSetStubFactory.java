@@ -148,8 +148,8 @@ public class CachedContentResultSetStubFactory extends TestCase {
 
             XDynamicResultSet dynResSet = null;
             try {
-                dynResSet = (XDynamicResultSet)
-                    AnyConverter.toObject(new Type(XDynamicResultSet.class),
+                dynResSet =
+                    AnyConverter.toObject(XDynamicResultSet.class,
                                         cmdProc.execute(cmd, 0, null));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("Couldn't convert Any ",iae);

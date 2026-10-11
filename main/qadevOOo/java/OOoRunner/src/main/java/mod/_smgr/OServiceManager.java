@@ -136,8 +136,8 @@ public class OServiceManager extends TestCase {
             XPropertySet xProp = UnoRuntime.queryInterface(
                                             XPropertySet.class, oInterface);
             if (xProp != null) {
-                xContext = (XComponentContext) AnyConverter.toObject(
-                    new Type(XComponentContext.class),
+                xContext = AnyConverter.toObject(
+                    XComponentContext.class,
                             xProp.getPropertyValue("DefaultContext"));
             }
         } catch (com.sun.star.uno.Exception e) {

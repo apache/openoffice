@@ -137,8 +137,8 @@ public class SwXStyleFamily extends TestCase {
                 UnoRuntime.queryInterface(XIndexAccess.class, oSF);
 
         try {
-            oSFNA = (XNameAccess) AnyConverter.toObject(
-                        new Type(XNameAccess.class),oSFIA.getByIndex(0));
+            oSFNA = AnyConverter.toObject(
+                        XNameAccess.class,oSFIA.getByIndex(0));
         } catch ( com.sun.star.lang.IndexOutOfBoundsException e ) {
             e.printStackTrace(log);
             throw new StatusException("Unexpected exception. ", e);

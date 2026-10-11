@@ -172,7 +172,7 @@ public class DBMetaData
         {
             try
             {
-                XNumberFormatsSupplier xNumberFormatsSupplier = (XNumberFormatsSupplier) AnyConverter.toObject(XNumberFormatsSupplier.class, xDataSourcePropertySet.getPropertyValue("NumberFormatsSupplier"));
+                XNumberFormatsSupplier xNumberFormatsSupplier = AnyConverter.toObject(XNumberFormatsSupplier.class, xDataSourcePropertySet.getPropertyValue("NumberFormatsSupplier"));
                 //TODO get the locale from the datasource
                 aLocale = Configuration.getOfficeLocale(xMSF);
                 oNumberFormatter = new NumberFormatter(xMSF, xNumberFormatsSupplier, aLocale);

@@ -119,8 +119,8 @@ public class ScTableRowObj extends TestCase {
         XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, xSpreadsheets );
         try {
-            xSpreadsheet = (XSpreadsheet) AnyConverter.toObject(
-                new Type(XSpreadsheet.class),
+            xSpreadsheet = AnyConverter.toObject(
+                XSpreadsheet.class,
                     oNames.getByName(oNames.getElementNames()[0]));
 
             XColumnRowRange oColumnRowRange =
@@ -128,8 +128,8 @@ public class ScTableRowObj extends TestCase {
             XTableRows oRows = (XTableRows) oColumnRowRange.getRows();
             XIndexAccess oIndexAccess =
                 UnoRuntime.queryInterface(XIndexAccess.class, oRows);
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),oIndexAccess.getByIndex(6));
+            oObj = AnyConverter.toObject(
+                    XInterface.class,oIndexAccess.getByIndex(6));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException(

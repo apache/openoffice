@@ -121,8 +121,8 @@ public class ScNamedRangesObj extends TestCase {
         XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);

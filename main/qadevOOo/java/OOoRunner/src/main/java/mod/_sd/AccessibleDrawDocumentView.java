@@ -85,8 +85,8 @@ public class AccessibleDrawDocumentView extends TestCase {
             UnoRuntime.queryInterface(XIndexAccess.class, oDPn);
         XDrawPage oDP = null;
         try {
-            oDP = (XDrawPage) AnyConverter.toObject(
-                                new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oDP = AnyConverter.toObject(
+                                XDrawPage.class,oDPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get by index", e);

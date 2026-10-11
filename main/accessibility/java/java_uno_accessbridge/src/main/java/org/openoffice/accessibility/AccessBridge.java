@@ -154,8 +154,8 @@ public class AccessBridge {
             try {
                 // FIXME: Currently there is no way to determine if key event forwarding is needed or not,
                 // so we have to do it always ..
-                XExtendedToolkit unoToolkit = (XExtendedToolkit) AnyConverter.toObject(new Type(
-                            XExtendedToolkit.class), arguments[0]);
+                XExtendedToolkit unoToolkit = AnyConverter.toObject(
+                            XExtendedToolkit.class, arguments[0]);
 
                 if (unoToolkit != null) {
                     // FIXME this should be done in VCL

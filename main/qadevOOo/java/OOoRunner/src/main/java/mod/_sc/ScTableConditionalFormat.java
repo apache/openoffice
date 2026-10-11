@@ -121,8 +121,8 @@ public class ScTableConditionalFormat extends TestCase {
         XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexAccess.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);
@@ -147,8 +147,8 @@ public class ScTableConditionalFormat extends TestCase {
         XPropertySet Props =
             UnoRuntime.queryInterface(XPropertySet.class, oSheet);
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),
+            oObj = AnyConverter.toObject(
+                    XInterface.class,
                         Props.getPropertyValue("ConditionalFormat"));
         } catch(com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);

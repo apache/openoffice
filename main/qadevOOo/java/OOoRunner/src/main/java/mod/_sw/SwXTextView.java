@@ -265,7 +265,7 @@ public class SwXTextView extends TestCase {
                     log.println("Element[" + i + "] :" + elements[i]);
                 }
 
-            myForm = (XForm) AnyConverter.toObject(new Type(XForm.class), xForms.getByName("Standard"));
+            myForm = AnyConverter.toObject(XForm.class, xForms.getByName("Standard"));
                 if (myForm == null){
                     log.println("ERROR: could not get 'Standard' from drawpage!");
             if (debug){

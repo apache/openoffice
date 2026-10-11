@@ -136,8 +136,8 @@ public class SwXTextEmbeddedObject extends TestCase {
                                      XIndexAccess.class, oEmObj);
 
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                           new Type(XInterface.class), oEmIn.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                           XInterface.class, oEmIn.getByIndex(0));
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get Object", e);

@@ -131,11 +131,11 @@ public class ScDataPilotFieldGroupObj extends TestCase
 
         try
         {
-            oSheet = (XSpreadsheet) AnyConverter.toObject (
-                new Type (XSpreadsheet.class),
+            oSheet = AnyConverter.toObject (
+                XSpreadsheet.class,
                 oIndexAccess.getByIndex (0));
-            oSheet2 = (XSpreadsheet) AnyConverter.toObject (
-                new Type (XSpreadsheet.class),
+            oSheet2 = AnyConverter.toObject (
+                XSpreadsheet.class,
                 oIndexAccess.getByIndex (1));
         }
         catch (com.sun.star.lang.WrappedTargetException e)
@@ -288,8 +288,8 @@ public class ScDataPilotFieldGroupObj extends TestCase
             IA = xDPT.getRowFields ();
             //getSRange(IA);
             System.out.println ("COUNT: "+IA.getCount ());
-            datapilotfield = (XInterface) AnyConverter.toObject (
-                new Type (XInterface.class), IA.getByIndex (0));
+            datapilotfield = AnyConverter.toObject (
+                XInterface.class, IA.getByIndex (0));
         }
         catch (com.sun.star.lang.WrappedTargetException e)
         {
@@ -331,8 +331,8 @@ public class ScDataPilotFieldGroupObj extends TestCase
         }
             for (int i=0;i<IA.getCount ();i++)
             {
-                datapilotfield = (XInterface) AnyConverter.toObject (
-                    new Type (XInterface.class), IA.getByIndex (i));
+                datapilotfield = AnyConverter.toObject (
+                    XInterface.class, IA.getByIndex (i));
                 XPropertySet xPropertySet = UnoRuntime.queryInterface (XPropertySet.class, IA.getByIndex (i));
                 if (((Boolean)xPropertySet.getPropertyValue ("IsGroupField")).booleanValue ())
                 {

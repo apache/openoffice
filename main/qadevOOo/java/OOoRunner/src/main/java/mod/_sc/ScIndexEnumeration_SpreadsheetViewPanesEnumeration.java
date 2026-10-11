@@ -82,8 +82,8 @@ public class ScIndexEnumeration_SpreadsheetViewPanesEnumeration extends TestCase
         XIndexAccess xIA =
             UnoRuntime.queryInterface(XIndexAccess.class, xc);
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                        new Type(XInterface.class),xIA.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XInterface.class,xIA.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by index", e);

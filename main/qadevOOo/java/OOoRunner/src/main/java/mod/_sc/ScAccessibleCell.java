@@ -129,8 +129,8 @@ public class ScAccessibleCell extends TestCase {
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = null;
             try {
-                oSheet = (XSpreadsheet) AnyConverter.toObject(
-                        new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+                oSheet = AnyConverter.toObject(
+                        XSpreadsheet.class,oIndexSheets.getByIndex(0));
             } catch (com.sun.star.lang.IllegalArgumentException iae) {
                 throw new StatusException("couldn't get sheet",iae);
             }

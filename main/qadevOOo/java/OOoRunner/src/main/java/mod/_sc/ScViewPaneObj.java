@@ -122,8 +122,8 @@ public class ScViewPaneObj extends TestCase {
         XIndexAccess xIA =
         UnoRuntime.queryInterface(XIndexAccess.class, xc);
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                new Type(XInterface.class),xIA.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                XInterface.class,xIA.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by index", e);
@@ -171,8 +171,8 @@ public class ScViewPaneObj extends TestCase {
             XDrawPages oDP = (XDrawPages) oDPS.getDrawPages();
             oDP.insertNewByIndex(1);
             oDP.insertNewByIndex(2);
-            oDrawPage = (XDrawPage) AnyConverter.toObject(
-                new Type(XDrawPage.class),oDP.getByIndex(0));
+            oDrawPage = AnyConverter.toObject(
+                XDrawPage.class,oDP.getByIndex(0));
             if (oDrawPage == null)
                 log.println("ERROR: could not get DrawPage: null");
 
@@ -180,7 +180,7 @@ public class ScViewPaneObj extends TestCase {
             log.println("getting XForm");
             XNameContainer xForm = FormTools.getForms(oDrawPage);
             try {
-                myForm = (XForm) AnyConverter.toObject(new Type(XForm.class),xForm.getByName("Standard"));
+                myForm = AnyConverter.toObject(XForm.class,xForm.getByName("Standard"));
             } catch (WrappedTargetException ex) {
                 log.println("ERROR: could not XFormm 'Standard': " + ex.toString());
             } catch (com.sun.star.lang.IllegalArgumentException ex) {

@@ -115,8 +115,8 @@ public class ScDrawPageObj extends TestCase {
             oDP = (XDrawPages) oDPS.getDrawPages();
             oDP.insertNewByIndex(1);
             oDP.insertNewByIndex(2);
-            oObj = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),oDP.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                    XDrawPage.class,oDP.getByIndex(0));
 
             SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)tParam.getMSF());
 

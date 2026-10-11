@@ -236,15 +236,15 @@ public class SvxShapePolyPolygon extends TestCase {
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
         tEnv.addObjRelation("Style1",aStyle);
         oShapeProps =
             UnoRuntime.queryInterface(XPropertySet.class,oShape);
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (Exception e) {}
         tEnv.addObjRelation("Style2",aStyle);
 

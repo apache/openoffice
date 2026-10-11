@@ -149,8 +149,8 @@ public class ScAnnotationShapeObj extends TestCase {
 
         try {
             XSpreadsheet oSheet =
-                (XSpreadsheet) AnyConverter.toObject(new Type(
-                        XSpreadsheet.class),
+                AnyConverter.toObject(
+                    XSpreadsheet.class,
                     XAccess.getByIndex(cellPos.Sheet));
             XCellRange oCRange =
                 UnoRuntime.queryInterface(XCellRange.class,

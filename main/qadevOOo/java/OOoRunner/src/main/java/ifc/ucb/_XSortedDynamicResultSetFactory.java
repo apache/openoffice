@@ -117,8 +117,8 @@ public class _XSortedDynamicResultSetFactory extends MultiMethodTest {
                 (OpenMode.ALL, 10000, null, new Property[] {prop},
                  new NumberedSortingInfo[0])) ;
 
-            dynResSet = (XDynamicResultSet) AnyConverter.toObject(
-                new Type(XDynamicResultSet.class),cmdProc.execute(cmd, 0, null));
+            dynResSet = AnyConverter.toObject(
+                XDynamicResultSet.class,cmdProc.execute(cmd, 0, null));
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
         }

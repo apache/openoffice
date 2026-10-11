@@ -437,8 +437,8 @@ public class _CharacterProperties extends MultiPropertyTest {
 
         try {
             try{
-                uda = (XNameContainer) AnyConverter.toObject(
-                          new Type(XNameContainer.class),
+                uda = AnyConverter.toObject(
+                          XNameContainer.class,
                           oObj.getPropertyValue("TextUserDefinedAttributes"));
             } catch (com.sun.star.lang.IllegalArgumentException e){
                 log.println("TextUserDefinedAttributes is empty.");
@@ -452,8 +452,8 @@ public class _CharacterProperties extends MultiPropertyTest {
 
             String[] els = uda.getElementNames();
             oObj.setPropertyValue("TextUserDefinedAttributes", uda);
-            uda = (XNameContainer) AnyConverter.toObject(
-                          new Type(XNameContainer.class),
+            uda = AnyConverter.toObject(
+                          XNameContainer.class,
                           oObj.getPropertyValue("TextUserDefinedAttributes"));
             els = uda.getElementNames();
 

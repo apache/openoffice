@@ -121,8 +121,8 @@ public class ScChartObj extends TestCase {
             XSpreadsheets oSheets = xSheetDoc.getSheets() ;
             XIndexAccess oIndexSheets =
                         UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
+            oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,oIndexSheets.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             log.println("Couldn't get Sheet ");
             e.printStackTrace(log);
@@ -224,12 +224,12 @@ public class ScChartObj extends TestCase {
         // get the TableChart
         XTableChart oChart = null;
         try {
-            XNameAccess names = (XNameAccess) AnyConverter.toObject(
-                new Type(XNameAccess.class),UnoRuntime.queryInterface(
+            XNameAccess names = AnyConverter.toObject(
+                XNameAccess.class,UnoRuntime.queryInterface(
                     XNameAccess.class, oCharts));
 
-            oChart = (XTableChart) AnyConverter.toObject(
-                new Type(XTableChart.class),names.getByName("ScChartObj"));
+            oChart = AnyConverter.toObject(
+                XTableChart.class,names.getByName("ScChartObj"));
 
         } catch (com.sun.star.lang.WrappedTargetException e) {
             log.println("Couldn't get TableChart");

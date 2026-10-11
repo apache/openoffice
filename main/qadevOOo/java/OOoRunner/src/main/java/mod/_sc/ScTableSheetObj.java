@@ -201,8 +201,8 @@ public class ScTableSheetObj extends TestCase {
                                             XIndexAccess.class, xSpreadsheets);
 
         try {
-            oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class),
+            oSheet = AnyConverter.toObject(
+                             XSpreadsheet.class,
                              oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);

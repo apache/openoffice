@@ -128,8 +128,7 @@ public class _CellProperties extends MultiPropertyTest {
             protected Object getNewValue(String propName, Object oldValue) {
                 XNameContainer NC = null;
                 try {
-                    NC = (XNameContainer)
-                    AnyConverter.toObject(new Type(XNameContainer.class),oldValue);
+                    NC = AnyConverter.toObject(XNameContainer.class,oldValue);
                     NC.insertByName("MyAttribute",
                         new AttributeData("","CDATA","Value"));
                 } catch ( com.sun.star.lang.IllegalArgumentException e ) {

@@ -540,7 +540,7 @@ public class AcceleratorsConfigurationTest
         {
             System.out.println("get preferred key for command " + sCommandList[i] + ":");
 
-            KeyEvent aKeyEvent = (KeyEvent) AnyConverter.toObject(KeyEvent.class, oKeyEvents[i]);
+            KeyEvent aKeyEvent = AnyConverter.toObject(KeyEvent.class, oKeyEvents[i]);
             String sKeyEvent = convertAWTKey2Shortcut(aKeyEvent);
             System.out.println(sKeyEvent);
 

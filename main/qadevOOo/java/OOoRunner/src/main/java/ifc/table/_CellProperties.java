@@ -70,8 +70,8 @@ public class _CellProperties extends MultiPropertyTest {
         XNameContainer uda = null;
         boolean res = false;
         try {
-            uda = (XNameContainer) AnyConverter.toObject(
-                new Type(XNameContainer.class),
+            uda = AnyConverter.toObject(
+                XNameContainer.class,
                     oObj.getPropertyValue("UserDefinedAttributes"));
             AttributeData attr = new AttributeData();
             attr.Namespace = "http://www.sun.com/staroffice/apitest/Cellprop";
@@ -80,8 +80,8 @@ public class _CellProperties extends MultiPropertyTest {
             uda.insertByName("Cellprop:has-first-alien-attribute",attr);
             String[] els = uda.getElementNames();
             oObj.setPropertyValue("UserDefinedAttributes",uda);
-            uda = (XNameContainer) AnyConverter.toObject(
-                new Type(XNameContainer.class),
+            uda = AnyConverter.toObject(
+                XNameContainer.class,
                     oObj.getPropertyValue("UserDefinedAttributes"));
             els = uda.getElementNames();
             Object obj = uda.getByName("Cellprop:has-first-alien-attribute");

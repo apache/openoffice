@@ -813,8 +813,8 @@ public class RecoveryTest {
             UnoRuntime.queryInterface(XIndexAccess.class, oDPn);
         XDrawPage oDP = null;
         try {
-            oDP = (XDrawPage) AnyConverter.toObject(
-                        new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oDP = AnyConverter.toObject(
+                        XDrawPage.class,oDPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             System.out.println("Could not get Draw pages while filling Draw document with content.");
             fail("Couldn't create test environment");
@@ -847,8 +847,8 @@ public class RecoveryTest {
             UnoRuntime.queryInterface(XPropertySet.class, oObj);
         XStyle aStyle = null;
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
             oShapeProps.setPropertyValue("ZOrder", new Integer(1));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             System.out.println("Exception occurred while setting or getting property value while filling Draw document with content.");
@@ -931,8 +931,8 @@ public class RecoveryTest {
         try{
             XSpreadsheets oSpreadsheets = xSpreadsheetDoc.getSheets();
 
-            XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class),
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                             XSpreadsheet.class,
                              oSpreadsheets.getByName(
                                      oSpreadsheets.getElementNames()[0]));
 

@@ -124,8 +124,8 @@ public class ScTableColumnObj extends TestCase {
         XNameAccess oNames =
             UnoRuntime.queryInterface( XNameAccess.class, xSpreadsheets );
         try {
-            xSpreadsheet = (XSpreadsheet) AnyConverter.toObject(
-                new Type(XSpreadsheet.class),
+            xSpreadsheet = AnyConverter.toObject(
+                XSpreadsheet.class,
                     oNames.getByName(oNames.getElementNames()[0]));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -144,8 +144,8 @@ public class ScTableColumnObj extends TestCase {
         XIndexAccess oIndexAccess =
             UnoRuntime.queryInterface(XIndexAccess.class, oColumns);
         try {
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),oIndexAccess.getByIndex(10));
+            oObj = AnyConverter.toObject(
+                    XInterface.class,oIndexAccess.getByIndex(10));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get by index", e);

@@ -199,7 +199,7 @@ public class UnoTreeControl extends TestCase {
                                         XMutableTreeNode.class, o1);
                 XTreeNode xNode2a = null;
                 try {
-                    xNode2a = (XTreeNode) AnyConverter.toObject(new Type(XTreeNode.class), o2);
+                    xNode2a = AnyConverter.toObject(XTreeNode.class, o2);
                 } catch (com.sun.star.lang.IllegalArgumentException ex) {
                     ex.printStackTrace();
                 }

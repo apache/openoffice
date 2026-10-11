@@ -78,8 +78,8 @@ public class MemoryUsage
         XIndexAccess index =
             UnoRuntime.queryInterface(XIndexAccess.class, doc.getSheets());
 
-        XSpreadsheet sheet = (XSpreadsheet) AnyConverter.toObject(
-            new Type(com.sun.star.sheet.XSpreadsheet.class), index.getByIndex(0));
+        XSpreadsheet sheet = AnyConverter.toObject(
+            com.sun.star.sheet.XSpreadsheet.class, index.getByIndex(0));
 
         return sheet;
     }

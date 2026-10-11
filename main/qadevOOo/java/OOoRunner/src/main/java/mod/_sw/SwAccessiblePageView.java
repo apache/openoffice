@@ -113,13 +113,13 @@ public class SwAccessiblePageView extends TestCase {
         XEnumeration oEnum = oEnumA.createEnumeration();
 
         try {
-            para = (XInterface) AnyConverter.toObject(
-            new Type(XInterface.class),oEnum.nextElement());
+            para = AnyConverter.toObject(
+            XInterface.class,oEnum.nextElement());
             XEnumerationAccess oEnumB =
             UnoRuntime.queryInterface( XEnumerationAccess.class, para );
             XEnumeration oEnum2 = oEnumB.createEnumeration();
-            port = (XInterface) AnyConverter.toObject(
-            new Type(XInterface.class),oEnum2.nextElement());
+            port = AnyConverter.toObject(
+            XInterface.class,oEnum2.nextElement());
         } catch ( com.sun.star.lang.WrappedTargetException e ) {
             e.printStackTrace(log);
             log.println("Error: exception occurred...");

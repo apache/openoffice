@@ -150,8 +150,8 @@ public class SdGenericDrawPage extends TestCase {
         XIndexAccess oDPi = UnoRuntime.queryInterface
             (XIndexAccess.class,oDPn);
         try {
-            oObj = (XDrawPage) AnyConverter.toObject(
-                        new Type(XDrawPage.class),oDPi.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XDrawPage.class,oDPi.getByIndex(0));
         } catch(com.sun.star.uno.Exception e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get DrawPage", e);

@@ -463,7 +463,7 @@ public class ODatabaseForm extends TestCase {
         formLoader.load();
 
         try {
-            oObj = (XForm) AnyConverter.toObject(new Type(XForm.class),
+            oObj = AnyConverter.toObject(XForm.class,
                                                  (FormTools.getForms(
                                                          WriterTools.getDrawPage(
                                                                  xTextDoc)))
@@ -471,8 +471,8 @@ public class ODatabaseForm extends TestCase {
 
             XPropertySet xSetProp = UnoRuntime.queryInterface(
                                             XPropertySet.class, oObj);
-            connection = (XConnection) AnyConverter.toObject(
-                                 new Type(XConnection.class),
+            connection = AnyConverter.toObject(
+                                 XConnection.class,
                                  xSetProp.getPropertyValue("ActiveConnection"));
         } catch (com.sun.star.uno.Exception e) {
             log.println("Couldn't get Form");

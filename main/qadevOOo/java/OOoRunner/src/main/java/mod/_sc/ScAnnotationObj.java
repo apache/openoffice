@@ -135,8 +135,8 @@ public class ScAnnotationObj extends TestCase {
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
         XCell oCell = null;
         try {
-            XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                    new Type(XSpreadsheet.class),XAccess.getByIndex(cellPos.Sheet));
+            XSpreadsheet oSheet = AnyConverter.toObject(
+                    XSpreadsheet.class,XAccess.getByIndex(cellPos.Sheet));
             XCellRange oCRange =
                 UnoRuntime.queryInterface(XCellRange.class, oSheet);
             oCell = oCRange.getCellByPosition(cellPos.Column, cellPos.Row);

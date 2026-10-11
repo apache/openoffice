@@ -192,8 +192,8 @@ public class SvxShape extends TestCase {
                             UnoRuntime.queryInterface(XPropertySet.class,oObj);
         XStyle aStyle = null;
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
@@ -203,8 +203,8 @@ public class SvxShape extends TestCase {
         oShapeProps = UnoRuntime.queryInterface
             (XPropertySet.class,oShape);
         try {
-            aStyle = (XStyle) AnyConverter.toObject(
-                new Type(XStyle.class),oShapeProps.getPropertyValue("Style"));
+            aStyle = AnyConverter.toObject(
+                XStyle.class,oShapeProps.getPropertyValue("Style"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
         } catch (com.sun.star.beans.UnknownPropertyException e) {
         } catch (com.sun.star.lang.IllegalArgumentException e) {

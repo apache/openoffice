@@ -146,8 +146,8 @@ public class SdMasterPage extends TestCase {
         log.println( "getting MasterPage" );
         XInterface oObj = null;
         try {
-            oObj = (XDrawPage) AnyConverter.toObject(
-                        new Type(XDrawPage.class),oMPi.getByIndex(0));
+            oObj = AnyConverter.toObject(
+                        XDrawPage.class,oMPi.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get MasterPage by index", e);

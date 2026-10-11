@@ -95,12 +95,12 @@ public class TextStyleHandler
         try
         {
             _xPropPageStyle.setPropertyValue("IsLandscape", Boolean.valueOf(_bIsLandscape));
-            Size aPageSize = (Size) AnyConverter.toObject(Size.class, _xPropPageStyle.getPropertyValue("Size"));
+            Size aPageSize = AnyConverter.toObject(Size.class, _xPropPageStyle.getPropertyValue("Size"));
             int nPageWidth = aPageSize.Width;
             int nPageHeight = aPageSize.Height;
             Size aSize = new Size(nPageHeight, nPageWidth);
             _xPropPageStyle.setPropertyValue("Size", aSize);
-            return (Size) AnyConverter.toObject(Size.class, _xPropPageStyle.getPropertyValue("Size"));
+            return AnyConverter.toObject(Size.class, _xPropPageStyle.getPropertyValue("Size"));
         }
         catch (Exception e)
         {

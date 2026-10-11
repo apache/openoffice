@@ -237,8 +237,8 @@ public class _XDocumentTemplates extends MultiMethodTest {
 
         XDynamicResultSet DynResSet = null;
         try {
-            DynResSet = (XDynamicResultSet) AnyConverter.toObject(
-                new Type(XDynamicResultSet.class),comProc.execute(command, 0, null));
+            DynResSet = AnyConverter.toObject(
+                XDynamicResultSet.class,comProc.execute(command, 0, null));
         } catch(com.sun.star.ucb.CommandAbortedException e) {
             log.println("Couldn't execute command:" + e);
         } catch(com.sun.star.uno.Exception e) {

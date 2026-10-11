@@ -162,8 +162,8 @@ public class OHiddenModel extends TestCase {
                     XNameContainer.class, frm);
 
             frmNC.insertByName("OHiddenModel", ctrl);
-            oObj = (XInterface) AnyConverter.toObject(
-                    new Type(XInterface.class),
+            oObj = AnyConverter.toObject(
+                    XInterface.class,
                     frmNC.getByName("OHiddenModel"));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
