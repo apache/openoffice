@@ -552,7 +552,8 @@ sub create_package
 		}
 
 		# A build-time load path left in a shipped Mach-O breaks at runtime, signed or not.
-		foreach my $appdir ( glob("$localtempdir/$folder/*.app") )
+		# The language-pack app is only scripts and a plist, so it has no Mach-O to check.
+		foreach my $appdir ( $installer::globals::languagepack ? () : glob("$localtempdir/$folder/*.app") )
 		{
 			my $checkreturn = system($ENV{'SOLARENV'} . "/bin/macosx-check-load-commands.sh", $appdir);
 			if ( $checkreturn ) { installer::exiter::exit_program("ERROR: Unrelocated Mach-O load commands in $appdir!", "create_package"); }
