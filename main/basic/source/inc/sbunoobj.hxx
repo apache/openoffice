@@ -305,10 +305,13 @@ void clearNativeObjectWrapperVector( void );
 //========================================================================
 // #118116 Collection object
 
+class CollectionNameMap;
+
 class BasicCollection : public SbxObject
 {
 	friend class SbiRuntime;
 	SbxArrayRef xItemArray;
+	CollectionNameMap* mpNameMap;
 	static SbxInfoRef xAddInfo;
 	static SbxInfoRef xItemInfo;
 
@@ -318,6 +321,11 @@ class BasicCollection : public SbxObject
 							 const SfxHint& rHint, const TypeId& rHintType );
 	sal_Int32 implGetIndex( SbxVariable* pIndexVar );
 	sal_Int32 implGetIndexForName( const String& rName );
+	SbxVariable* implFindByName( const String& rName );
+	void implRegisterName( SbxVariable* pVar );
+	void implUnregisterName( SbxVariable* pVar );
+	BasicCollection( const BasicCollection& );
+	BasicCollection& operator=( const BasicCollection& );
 	void CollAdd( SbxArray* pPar_ );
 	void CollItem( SbxArray* pPar_ );
 	void CollRemove( SbxArray* pPar_ );
