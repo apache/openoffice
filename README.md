@@ -34,7 +34,7 @@ Currently supported platforms include:
 - FreeBSD
 - OS/2
 
-OpenOffice is used by millions of users worldwide and with more than 408 million downloads it is one of the most successful open source projects.
+OpenOffice is used by millions of users worldwide and with more than 400 million downloads it is one of the most successful open source projects.
 
 # Getting the latest sources via Git
 
