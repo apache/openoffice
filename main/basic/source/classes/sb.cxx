@@ -59,6 +59,8 @@
 #include "errobject.hxx"
 #include <map>
 #include <hash_map>
+#include <vector>
+#include <algorithm>
 
 #include <com/sun/star/script/ModuleType.hpp>
 #include <com/sun/star/script/ModuleInfo.hpp>
@@ -2051,8 +2053,21 @@ static sal_uInt16 nCountHash = 0, nAddHash, nItemHash, nRemoveHash;
 SbxInfoRef BasicCollection::xAddInfo = NULL;
 SbxInfoRef BasicCollection::xItemInfo = NULL;
 
+// Items may share a name (an item added without a key keeps the name of the
+// variable it was copied from), so each name maps to all of its holders.
+class CollectionNameMap : public
+	std::hash_map< ::rtl::OUString, std::vector< SbxVariable* >,
+		::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > >
+{};
+
+// Matches EqualsIgnoreCaseAscii: only ASCII letters are folded
+static ::rtl::OUString lcl_foldCollectionName( const String& rName )
+{
+	return ::rtl::OUString( rName ).toAsciiUpperCase();
+}
+
 BasicCollection::BasicCollection( const XubString& rClass )
-			 : SbxObject( rClass )
+			 : SbxObject( rClass ), mpNameMap( new CollectionNameMap )
 {
 	if( !nCountHash )
 	{
@@ -2066,7 +2081,9 @@ BasicCollection::BasicCollection( const XubString& rClass )
 }
 
 BasicCollection::~BasicCollection()
-{}
+{
+	delete mpNameMap;
+}
 
 void BasicCollection::Clear()
 {
@@ -2077,6 +2094,7 @@ void BasicCollection::Clear()
 void BasicCollection::Initialize()
 {
 	xItemArray = new SbxArray();
+	mpNameMap->clear();
 	SetType( SbxOBJECT );
 	SetFlag( SBX_FIXED );
 	ResetFlag( SBX_WRITE );
@@ -2165,22 +2183,69 @@ sal_Int32 BasicCollection::implGetIndex( SbxVariable* pIndexVar )
 	return nIndex;
 }
 
-sal_Int32 BasicCollection::implGetIndexForName( const String& rName )
+void BasicCollection::implRegisterName( SbxVariable* pVar )
 {
-	sal_Int32 nIndex = -1;
+	// Nameless items are never found by name, see implFindByName
+	if( pVar->GetName().Len() )
+		(*mpNameMap)[ lcl_foldCollectionName( pVar->GetName() ) ].push_back( pVar );
+}
+
+void BasicCollection::implUnregisterName( SbxVariable* pVar )
+{
+	if( !pVar->GetName().Len() )
+		return;
+	CollectionNameMap::iterator it = mpNameMap->find( lcl_foldCollectionName( pVar->GetName() ) );
+	if( it == mpNameMap->end() )
+		return;
+	std::vector< SbxVariable* >& rVars = it->second;
+	rVars.erase( std::remove( rVars.begin(), rVars.end(), pVar ), rVars.end() );
+	if( rVars.empty() )
+		mpNameMap->erase( it );
+}
+
+// Returns the item with the lowest index that has the given name
+SbxVariable* BasicCollection::implFindByName( const String& rName )
+{
 	sal_Int32 nCount = xItemArray->Count32();
-	sal_Int32 nNameHash = MakeHashCode( rName );
+	if( !rName.Len() )
+	{
+		// Nameless items are not indexed
+		for( sal_Int32 i = 0 ; i < nCount ; i++ )
+		{
+			SbxVariable* pVar = xItemArray->Get32( i );
+			if( !pVar->GetName().Len() )
+				return pVar;
+		}
+		return NULL;
+	}
+
+	CollectionNameMap::iterator it = mpNameMap->find( lcl_foldCollectionName( rName ) );
+	if( it == mpNameMap->end() )
+		return NULL;
+	std::vector< SbxVariable* >& rVars = it->second;
+	if( rVars.size() == 1 )
+		return rVars[0];
 	for( sal_Int32 i = 0 ; i < nCount ; i++ )
 	{
 		SbxVariable* pVar = xItemArray->Get32( i );
-		if( pVar->GetHashCode() == nNameHash &&
-			pVar->GetName().EqualsIgnoreCaseAscii( rName ) )
-		{
-			nIndex = i;
-			break;
-		}
+		if( std::find( rVars.begin(), rVars.end(), pVar ) != rVars.end() )
+			return pVar;
 	}
-	return nIndex;
+	return NULL;
+}
+
+sal_Int32 BasicCollection::implGetIndexForName( const String& rName )
+{
+	SbxVariable* pFound = implFindByName( rName );
+	if( !pFound )
+		return -1;
+	sal_Int32 nCount = xItemArray->Count32();
+	for( sal_Int32 i = 0 ; i < nCount ; i++ )
+	{
+		if( xItemArray->Get32( i ) == pFound )
+			return i;
+	}
+	return -1;
 }
 
 void BasicCollection::CollAdd( SbxArray* pPar_ )
@@ -2253,6 +2318,7 @@ void BasicCollection::CollAdd( SbxArray* pPar_ )
 		}
 		pNewItem->SetFlag( SBX_READWRITE );
 		xItemArray->Insert32( pNewItem, nNextIndex );
+		implRegisterName( pNewItem );
 	}
 	else
 	{
@@ -2270,9 +2336,16 @@ void BasicCollection::CollItem( SbxArray* pPar_ )
 	}
 	SbxVariable* pRes = NULL;
 	SbxVariable* p = pPar_->Get( 1 );
-	sal_Int32 nIndex = implGetIndex( p );
-	if( nIndex >= 0 && nIndex < (sal_Int32)xItemArray->Count32() )
-		pRes = xItemArray->Get32( nIndex );
+	if( p->GetType() == SbxSTRING )
+	{
+		pRes = implFindByName( p->GetString() );
+	}
+	else
+	{
+		sal_Int32 nIndex = implGetIndex( p );
+		if( nIndex >= 0 && nIndex < (sal_Int32)xItemArray->Count32() )
+			pRes = xItemArray->Get32( nIndex );
+	}
 	if( !pRes )
 		SetError( SbERR_BAD_ARGUMENT );
 	else
@@ -2291,6 +2364,7 @@ void BasicCollection::CollRemove( SbxArray* pPar_ )
 	sal_Int32 nIndex = implGetIndex( p );
 	if( nIndex >= 0 && nIndex < (sal_Int32)xItemArray->Count32() )
 	{
+		implUnregisterName( xItemArray->Get32( nIndex ) );
 		xItemArray->Remove32( nIndex );
 
 		// Correct for stack if necessary
