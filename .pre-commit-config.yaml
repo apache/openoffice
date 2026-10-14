@@ -26,13 +26,13 @@ repos:
       - id: identity
       - id: check-hooks-apply
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.30.0
+    rev: 83d9cd684c87d95d656c1458ef04895a7f1cbd8e  # frozen: v8.30.1
     hooks:
       - id: gitleaks
         name: run gitleaks
         description: check for secrets with gitleaks
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.5
+    rev: ad1b27d73581aa16cca06fc4a0761fc563ffe8e8  # frozen: v1.5.6
     hooks:
       - id: insert-license
         name: add license for all Markdown files
@@ -44,7 +44,7 @@ repos:
           - .github/workflows/license-templates/LICENSE.txt
           - --fuzzy-match-generates-todo
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
       - id: check-case-conflict
         description: check for files with names that would conflict on a case-insensitive filesystem like MacOS HFS+ or Windows FAT
@@ -67,7 +67,7 @@ repos:
         files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cs|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$
         args: [--markdown-linebreak-ext=md]
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: 57b21406f092110c18776e39b0bda50d37c945c8  # frozen: v2.4.3
     hooks:
       - id: codespell
         name: run codespell
@@ -75,7 +75,7 @@ repos:
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: ^extras/
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.47.0
+    rev: 5b5dddc4fb0f83c3ea1fc5616fa63e115dce83e0  # frozen: v0.49.1
     hooks:
       - id: markdownlint
         name: run markdownlint
