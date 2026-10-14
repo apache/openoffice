@@ -124,19 +124,19 @@ public class SheetBasicTest {
 	public void copypastesheet() throws Exception {
 		// Insert some value into cells
 		scDocument = SCUtil.getSCDocument(scComponent);
-		String souceSheetName = "sourcesheet";
-		SCUtil.setSCSheetNameByIndex(scDocument, (short) 0, souceSheetName);
+		String sourceSheetName = "sourcesheet";
+		SCUtil.setSCSheetNameByIndex(scDocument, (short) 0, sourceSheetName);
 		String[][] stringValues = { { "", "Jan", "Feb", "Mar", "Apr", "Mai" },
 				{ "Profit", "12.3", "43.2", "5.1", "76", "56.8" },
 				{ "Rival in business", "12.2", "12.6", "17.7", "20.4", "100" }, };
 		XSpreadsheet sourceSpreadSheet = SCUtil.getSCSheetByName(scDocument,
-				souceSheetName);
+				sourceSheetName);
 		// input strings into sheet1
 		SCUtil.setTextToCellRange(sourceSpreadSheet, 0, 0, stringValues);
 		// copy the sheet from sourcesheet to copysheet
 		String newcopysheet = "copysheet";
 		XSpreadsheets spreadsheets = scDocument.getSheets();
-		spreadsheets.copyByName(souceSheetName, newcopysheet, (short) 2);
+		spreadsheets.copyByName(sourceSheetName, newcopysheet, (short) 2);
 
 		// Save and reload document
 		SCUtil.saveFileAs(scComponent, "TestCopysheet", "xls");
