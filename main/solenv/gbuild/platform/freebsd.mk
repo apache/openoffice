@@ -292,6 +292,12 @@ gb_DEBUG_CFLAGS := -ggdb3
 endif
 endif
 
+ifeq ($(ENABLE_SANITIZER),TRUE)
+gb_CFLAGS += -fsanitize=address
+gb_CXXFLAGS += -fsanitize=address
+gb_LinkTarget_LDFLAGS += -fsanitize=address
+endif
+
 gb_LinkTarget_INCLUDE := $(filter-out %/stl, $(subst -I. , ,$(SOLARINC)))
 gb_LinkTarget_INCLUDE_STL := $(filter %/stl, $(subst -I. , ,$(SOLARINC)))
 

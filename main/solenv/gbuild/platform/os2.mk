@@ -312,6 +312,12 @@ else
 gb_DEBUG_CFLAGS := -g3
 endif
 
+ifeq ($(ENABLE_SANITIZER),TRUE)
+gb_CFLAGS += -fsanitize=address
+gb_CXXFLAGS += -fsanitize=address
+gb_LinkTarget_LDFLAGS += -fsanitize=address
+endif
+
 gb_LinkTarget_INCLUDE :=\
 	$(filter-out %/stl, $(subst -I. , ,$(SOLARINC))) \
 	$(foreach inc,$(subst ;, ,$(JDKINC)),-I$(inc)) \
