@@ -470,14 +470,14 @@ namespace
 //------------------------------------------------------------------
 Reference< XInterface >  FmFormObj::ensureModelEnv(const Reference< XInterface > & _rSourceContainer, const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer >  _rTopLevelDestContainer)
 {
-	Reference< XInterface >  xTopLevelSouce;
-	String sAccessPath = lcl_getFormComponentAccessPath(_rSourceContainer, xTopLevelSouce);
-	if (!xTopLevelSouce.is())
+	Reference< XInterface >  xTopLevelSource;
+	String sAccessPath = lcl_getFormComponentAccessPath(_rSourceContainer, xTopLevelSource);
+	if (!xTopLevelSource.is())
 		// something went wrong, maybe _rSourceContainer isn't part of a valid forms hierarchy
 		return Reference< XInterface > ();
 
 	Reference< XIndexContainer >  xDestContainer(_rTopLevelDestContainer);
-	Reference< XIndexContainer >  xSourceContainer(xTopLevelSouce, UNO_QUERY);
+	Reference< XIndexContainer >  xSourceContainer(xTopLevelSource, UNO_QUERY);
 	DBG_ASSERT(xSourceContainer.is(), "FmFormObj::ensureModelEnv : the top level source is invalid !");
 
 	for (xub_StrLen i=0; i<sAccessPath.GetTokenCount('\\'); ++i)
