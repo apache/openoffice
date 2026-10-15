@@ -28,6 +28,7 @@
 #endif
 #include <svx/modctrl.hxx>
 #include <svx/zoomctrl.hxx>
+#include <svx/zoomsliderctrl.hxx>
 #include <sfx2/docfac.hxx>
 #include <svx/lboxctrl.hxx>
 #include <sfx2/docfile.hxx>
@@ -47,39 +48,36 @@
 
 #include <svx/xmlsecctrl.hxx>
 
-
-
 sal_Bool SmDLL::bInitialized = sal_False;
 
 /*************************************************************************
-|*
 |* Initialisierung
-|*
 \************************************************************************/
 void SmDLL::Init()
 {
-    if ( bInitialized )
-        return;
+	if ( bInitialized )
+		return;
 
-    bInitialized = sal_True;
+	bInitialized = sal_True;
 
-    SfxObjectFactory& rFactory = SmDocShell::Factory();
+	SfxObjectFactory& rFactory = SmDocShell::Factory();
 
 	SmModule** ppShlPtr = (SmModule**) GetAppData(SHL_SM);
-    *ppShlPtr = new SmModule( &rFactory );
+	*ppShlPtr = new SmModule( &rFactory );
 
-    SfxModule *p = SM_MOD();
+	SfxModule *p = SM_MOD();
 	SmModule *pp = (SmModule *) p;
 
-    rFactory.SetDocumentServiceName( String::CreateFromAscii("com.sun.star.formula.FormulaProperties") );
+	rFactory.SetDocumentServiceName( String::CreateFromAscii("com.sun.star.formula.FormulaProperties") );
 
 	SmModule::RegisterInterface(pp);
-    SmDocShell::RegisterInterface(pp);
+	SmDocShell::RegisterInterface(pp);
 	SmViewShell::RegisterInterface(pp);
 
 	SmViewShell::RegisterFactory(1);
 
 	SvxZoomStatusBarControl::RegisterControl( SID_ATTR_ZOOM, pp );
+	SvxZoomSliderControl::RegisterControl(SID_ATTR_ZOOMSLIDER, pp);
 	SvxModifyControl::RegisterControl( SID_TEXTSTATUS, pp );
 	SvxUndoRedoControl::RegisterControl( SID_UNDO, pp );
 	SvxUndoRedoControl::RegisterControl( SID_REDO, pp );
@@ -90,9 +88,7 @@ void SmDLL::Init()
 }
 
 /*************************************************************************
-|*
 |* Deinitialisierung
-|*
 \************************************************************************/
 void SmDLL::Exit()
 {

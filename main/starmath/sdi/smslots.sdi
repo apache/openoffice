@@ -220,18 +220,18 @@ interface FormulaView
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
 	]
-	// idlpp kein Menüeintrag , also keine Texte
-	SID_COPYOBJECT // idlpp ole : no , status : no
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-	]
-	// idlpp kein Menüeintrag , also keine Texte
-	SID_PASTEOBJECT // idlpp ole : no , status : no
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-	]
+		// idlpp kein Menüeintrag , also keine Texte
+		SID_COPYOBJECT // idlpp ole : no , status : no
+		[
+				ExecMethod = Execute ;
+				StateMethod = GetState ;
+		]
+		// idlpp kein Menüeintrag , also keine Texte
+		SID_PASTEOBJECT // idlpp ole : no , status : no
+		[
+				ExecMethod = Execute ;
+				StateMethod = GetState ;
+		]
 	SID_CUT // idlpp ole : no , status : no
 	[
 		ExecMethod = Execute ;
@@ -288,6 +288,12 @@ interface FormulaView
 		StateMethod = GetState ;
 	]
 	// idlpp kein Menüeintrag , also keine Texte
+	SID_ATTR_ZOOMSLIDER
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
+	]
+	// idlpp kein Menüeintrag , also keine Texte
 	SID_TEXTSTATUS // idlpp ole : no , status : no
 	[
 		ExecMethod = Execute ;
@@ -311,16 +317,16 @@ interface FormulaView
 		ExecMethod = NoExec ;
 		StateMethod = NoState ;
 	]
-	SID_TOOLBOX // idlpp ole : no , status : no
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-	]
-	SID_SYMBOLS_CATALOGUE // idlpp ole : no , status : no
-	[
-		ExecMethod = Execute ;
-		StateMethod = GetState ;
-	]
+		SID_TOOLBOX // idlpp ole : no , status : no
+		[
+				ExecMethod = Execute ;
+				StateMethod = GetState ;
+		]
+		SID_SYMBOLS_CATALOGUE // idlpp ole : no , status : no
+		[
+				ExecMethod = Execute ;
+				StateMethod = GetState ;
+		]
 }
 
 shell SmViewShell
