@@ -92,7 +92,7 @@ public:
     virtual sal_Int32 SAL_CALL getTabIndex();
     virtual void SAL_CALL setTabIndex( sal_Int32 nTabIndex );
     //remove resource because ooo.vba.excel.XControl is a wrapper of com.sun.star.drawing.XControlShape
-    virtual void removeResouce();
+    virtual void removeResource();
     //XHelperInterface
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();

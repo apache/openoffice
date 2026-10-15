@@ -116,7 +116,7 @@ ScVbaControlListener::disposing( const lang::EventObject& )
 {
     if( pControl )
     {
-        pControl->removeResouce();
+        pControl->removeResource();
         pControl = NULL;
     }
 }
@@ -155,7 +155,7 @@ ScVbaControl::setGeometryHelper( AbstractGeometryAttributes* pHelper )
     mpGeometryHelper.reset( pHelper );
 }
 
-void ScVbaControl::removeResouce()
+void ScVbaControl::removeResource()
 {
     uno::Reference< lang::XComponent > xComponent( m_xControl, uno::UNO_QUERY_THROW );
     xComponent->removeEventListener( m_xEventListener );

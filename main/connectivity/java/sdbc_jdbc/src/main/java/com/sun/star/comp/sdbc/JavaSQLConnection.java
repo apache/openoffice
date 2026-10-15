@@ -470,11 +470,11 @@ public class JavaSQLConnection extends ComponentBase
         }
     }
 
-    private static String getDriverLoadErrorMessage(SharedResources sharedResouces, String driverClass, String driverClassPath) {
-        String error1 = sharedResouces.getResourceStringWithSubstitution(
+    private static String getDriverLoadErrorMessage(SharedResources sharedResources, String driverClass, String driverClassPath) {
+        String error1 = sharedResources.getResourceStringWithSubstitution(
                 Resources.STR_NO_CLASSNAME, "$classname$", driverClass);
         if (!driverClassPath.isEmpty()) {
-            String error2 = sharedResouces.getResourceStringWithSubstitution(
+            String error2 = sharedResources.getResourceStringWithSubstitution(
                     Resources.STR_NO_CLASSNAME_PATH, "$classpath$", driverClassPath);
             error1 += error2;
         }

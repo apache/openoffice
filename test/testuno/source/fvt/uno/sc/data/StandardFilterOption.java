@@ -290,7 +290,7 @@ public class StandardFilterOption {
 		XCellRange xdataRange = UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 		XSpreadsheet currentSheet = SCUtil.getCurrentSheet(scDocument);
 		// Get the value before filter
-		String[][] souce = SCUtil.getTextFromCellRange(currentSheet, 0, 0, 5, 5);
+		String[][] source = SCUtil.getTextFromCellRange(currentSheet, 0, 0, 5, 5);
 
 		// Copy to cell position
 		XCell cell = currentSheet.getCellByPosition(7, 7);
@@ -324,7 +324,7 @@ public class StandardFilterOption {
 
 		// Get the data after filter
 		String[][] dataafterFilter = SCUtil.getTextFromCellRange(currentSheet, 0, 0, 5, 5);
-		assertArrayEquals(souce, dataafterFilter);
+		assertArrayEquals(source, dataafterFilter);
 
 		// Get the copyto filter result, verify it
 		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("H8:M10"));
@@ -360,7 +360,7 @@ public class StandardFilterOption {
 		// Get the data after filter
 		currentSheet = SCUtil.getCurrentSheet(scDocument);
 		dataafterFilter = SCUtil.getTextFromCellRange(currentSheet, 0, 0, 5, 5);
-		assertArrayEquals(souce, dataafterFilter);
+		assertArrayEquals(source, dataafterFilter);
 
 		// Get the copyto filter result, verify it
 		ColRowRange = UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("H8:M10"));
