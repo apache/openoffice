@@ -351,10 +351,10 @@ $(BIN)$/dev$/images.zip : $(SOLARBINDIR)$/images.zip
 		$@				\
 		framework/res/			\
 		$(SRC_ROOT)/default_images/framework/res/dev/	\
-		backing.png			\
-		backing_hc.png			\
-		backing_rtl_left.png		\
-		backing_rtl_left_hc.png
+		backing5.png			\
+		backing_hc5.png			\
+		backing_rtl_left5.png		\
+		backing_rtl_left_hc5.png
 
 $(BIN)$/beta$/intro.zip : $(SOLARCOMMONPCKDIR)$/openoffice_beta$/intro.zip
 	@-$(MKDIR) $(@:d)
@@ -367,10 +367,10 @@ $(BIN)$/beta$/images.zip : $(SOLARBINDIR)$/images.zip
 		$@				\
 		framework/res/			\
 		$(SRC_ROOT)/default_images/framework/res/beta/	\
-		backing.png			\
-		backing_hc.png			\
-		backing_rtl_left.png		\
-		backing_rtl_left_hc.png
+		backing5.png			\
+		backing_hc5.png			\
+		backing_rtl_left5.png		\
+		backing_rtl_left_hc5.png
 
 .IF "$(OS)" == "WNT"
 $(foreach,P,$(PACKAGE_FORMATS) $(foreach,L,$(alllangiso) patch-create_$L.$P)) .PHONY :
