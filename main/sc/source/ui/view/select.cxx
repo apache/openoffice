@@ -594,7 +594,7 @@ sal_Bool ScViewFunctionSet::SetCursorAtCell( SCsCOL nPosX, SCsROW nPosY, sal_Boo
 				aAnchorPos.Set( nPosX, nPosY, nTab );
 				bStarted = sal_True;
 			}
-			// #i3875# *Hack* When a new cell is Ctrl-clicked with no pre-selected cells,
+			// #i3875# *Hack* When a new cell is Ctrl-clicked with no preselected cells,
 			// it highlights that new cell as well as the old cell where the cursor is
 			// positioned prior to the click.  A selection mode via Shift-F8 should also
 			// follow the same behavior.

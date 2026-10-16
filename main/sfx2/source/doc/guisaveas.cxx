@@ -1498,7 +1498,7 @@ sal_Bool SfxStoringHelper::GUIStoreModel( const uno::Reference< frame::XModel >&
         {
             bUseFilterOptions = aModelData.OutputFileDialog( nStoreMode, aFilterProps, bSetStandardName, aSuggestedName, bPreselectPassword, aSuggestedDir, nDialog, sStandardDir, aBlackList );
 
-			// in case the dialog is opend a second time the folder should be the same as before, not what was handed over by parameters
+			// in case the dialog is opened a second time the folder should be the same as before, not what was handed over by parameters
 			aSuggestedDir = ::rtl::OUString();
             if ( nStoreMode == SAVEAS_REQUESTED )
             {

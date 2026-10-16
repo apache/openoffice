@@ -946,7 +946,7 @@ System.out.println("    exception: " + ioe.getMessage());
     }
 
     /* -----------------------------------------------------------
-     * Cleans each entiry in the filesystem cache.
+     * Cleans each entry in the filesystem cache.
      */
     private class CleanStrategy
         implements Strategy
