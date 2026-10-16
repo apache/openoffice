@@ -38,7 +38,7 @@ namespace abp
 	//= TypeSelectionPage
 	//=====================================================================
 	//---------------------------------------------------------------------
-	TypeSelectionPage::TypeSelectionPage( OAddessBookSourcePilot* _pParent )
+	TypeSelectionPage::TypeSelectionPage( OAddressBookSourcePilot* _pParent )
 		:AddressBookSourcePage(_pParent, ModuleRes(RID_PAGE_SELECTABTYPE))
 		,m_aHint				(this,	ModuleRes(FT_TYPE_HINTS))
 		,m_aTypeSep				(this,	ModuleRes(FL_TYPE))

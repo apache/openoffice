@@ -38,7 +38,7 @@ namespace abp
 	//= TableSelectionPage
 	//=====================================================================
 	//---------------------------------------------------------------------
-	TableSelectionPage::TableSelectionPage( OAddessBookSourcePilot* _pParent )
+	TableSelectionPage::TableSelectionPage( OAddressBookSourcePilot* _pParent )
         :AddressBookSourcePage(_pParent, ModuleRes(RID_PAGE_TABLESELECTION_AB))
 		,m_aLabel			( this, ModuleRes( FL_TOOMUCHTABLES ) )
 		,m_aTableList		( this, ModuleRes( LB_TABLELIST ) )
