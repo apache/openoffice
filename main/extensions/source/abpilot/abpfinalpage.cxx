@@ -57,7 +57,7 @@ namespace abp
 	//= FinalPage
 	//=====================================================================
 	//---------------------------------------------------------------------
-	FinalPage::FinalPage( OAddessBookSourcePilot* _pParent )
+	FinalPage::FinalPage( OAddressBookSourcePilot* _pParent )
 		:AddressBookSourcePage(_pParent, ModuleRes(RID_PAGE_FINAL))
 		,m_aExplanation			( this, ModuleRes( FT_FINISH_EXPL ) )
 		,m_aLocationLabel		( this, ModuleRes( FT_LOCATION ) )
