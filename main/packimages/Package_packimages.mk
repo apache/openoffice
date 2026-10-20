@@ -22,7 +22,7 @@
 $(eval $(call gb_Package_Package,packimages_packimages,$(WORKDIR)/CustomTarget/packimages,packimages))
 
 # Custom sets, at 24x24 & 16x16 fall-back to industrial preferentially
-CUSTOM_IMAGE_SETS := hicontrast industrial classic
+CUSTOM_IMAGE_SETS := hicontrast industrial classic remixdark
 CUSTOM_PREFERRED_FALLBACK_1 := -c $(SRCDIR)/ooo_custom_images/industrial
 CLASSIC_TARBALL=$(SRCDIR)/ooo_custom_images/classic/classic_images.tar.gz
 
