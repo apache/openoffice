@@ -85,7 +85,7 @@ namespace svt
             String selectedDataSource = _dataSourceCombo.GetText();
             if ( _dataSourceCombo.GetEntryPos( selectedDataSource ) == LISTBOX_ENTRY_NOTFOUND )
             {
-                // none of the pre-selected entries -> assume a path to a database document
+                // none of the preselected entries -> assume a path to a database document
 	            OFileNotation aFileNotation( selectedDataSource, OFileNotation::N_SYSTEM );
 	            selectedDataSource = aFileNotation.get( OFileNotation::N_URL );
             }
