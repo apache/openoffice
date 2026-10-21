@@ -164,12 +164,15 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
 	case typelib_TypeClass_DOUBLE:
 		*reinterpret_cast<double *>( pRegisterReturn ) = fpReturn[0];
 		break;
-	case typelib_TypeClass_STRUCT:
-	case typelib_TypeClass_EXCEPTION:
-		aarch64::fill_struct( pReturnTypeRef, &gpReturn[0], &fpReturn[0], pRegisterReturn );
-		break;
 	default:
-		break;
+		{
+			sal_Int32 const nRetSize = pReturnTypeRef->pType->nSize;
+			if (bSimpleReturn && nRetSize > 0)
+			{
+				aarch64::fill_struct( pReturnTypeRef, &gpReturn[0], &fpReturn[0], pRegisterReturn );
+			}
+			break;
+		}
 	}
 }
 
