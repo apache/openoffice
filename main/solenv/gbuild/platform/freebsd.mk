@@ -40,6 +40,10 @@ ifeq ($(CPU),P)
 CPUNAME := POWERPC64
 endif
 
+ifeq ($(CPU),A)
+CPUNAME := AARCH64
+endif
+
 # use CC/CXX if they are nondefaults
 ifneq ($(origin CC),default)
 gb_CC := $(CC)
@@ -151,7 +155,7 @@ gb_LinkTarget_LDFLAGS += \
 
 endif
 
-ifneq ($(filter $(CPUNAME),INTEL X86_64),)
+ifneq ($(filter $(CPUNAME),INTEL X86_64 AARCH64),)
 gb_CFLAGS += -fstack-protector
 gb_CXXFLAGS += -fstack-protector
 gb_LinkTarget_LDFLAGS += -fstack-protector

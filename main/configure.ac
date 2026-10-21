@@ -6808,7 +6808,7 @@ dnl ===================================================================
 dnl Check the ARM target
 dnl ===================================================================
 
-if echo "$build_cpu" | $GREP -q arm; then
+if echo "$build_cpu" | $GREP -q arm && test "$build_cpu" != "arm64" && test "$build_cpu" != "aarch64"; then
     # default value
     ARM_TARGET=ARMV4T
     AC_MSG_CHECKING([which ARM processor optimization to use])
