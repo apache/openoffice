@@ -143,54 +143,67 @@ privateSnippetExecutor:
 	b.eq	Lpse_signed_byte
 	cmp	w0, #4			// typelib_TypeClass_SHORT
 	b.eq	Lpse_signed_short
-	cmp	w0, #1			// typelib_TypeClass_VOID
+	cmp	w0, #1			// typelib_TypeClass_CHAR
+	b.eq	Lpse_unsigned_short
+	cmp	w0, #5			// typelib_TypeClass_UNSIGNED_SHORT
+	b.eq	Lpse_unsigned_short
+	cmp	w0, #2			// typelib_TypeClass_BOOLEAN
+	b.eq	Lpse_unsigned_byte
+	cmp	w0, #6			// typelib_TypeClass_LONG
+	b.eq	Lpse_word
+	cmp	w0, #7			// typelib_TypeClass_UNSIGNED_LONG
+	b.eq	Lpse_word
+	cmp	w0, #0			// typelib_TypeClass_VOID
 	b.eq	Lpse_void
+	cmp	w0, #15			// typelib_TypeClass_ENUM
+	b.eq	Lpse_word
 
-	// integer / pointer return
-	ldr	x0, [x6, #0]
-	ldr	x1, [x6, #8]
-	ldr	d0, [x6, #16]
-	ldr	d1, [x6, #24]
-	b	Lpse_finish
-
-Lpse_hfa_float:
-	// HFA float: up to 4 floats in d0..d3
-	ldr	d0, [x6, #0]
-	ldr	d1, [x6, #8]
-	ldr	d2, [x6, #16]
-	ldr	d3, [x6, #24]
-	b	Lpse_finish
-
-Lpse_hfa_double:
-	// HFA double: up to 4 doubles in d0..d3
-	ldr	d0, [x6, #0]
-	ldr	d1, [x6, #8]
-	ldr	d2, [x6, #16]
-	ldr	d3, [x6, #24]
-	b	Lpse_finish
-
-Lpse_float:
-	// single float/double returned in d0
-	ldr	d0, [x6, #16]
-	b	Lpse_finish
-
-Lpse_signed_byte:
-	ldr	x0, [x6, #0]
-	b	Lpse_finish
-
-Lpse_signed_short:
-	ldr	x0, [x6, #0]
+	// integer / pointer / <=16B aggregate
+	ldr	x0, [sp, #144]
+	ldr	x1, [sp, #152]
 	b	Lpse_finish
 
 Lpse_void:
 	mov	x0, #0
 	b	Lpse_finish
 
+Lpse_hfa_float:
+	ldr	s0, [sp, #144]
+	ldr	s1, [sp, #148]
+	ldr	s2, [sp, #152]
+	ldr	s3, [sp, #156]
+	b	Lpse_finish
+
+Lpse_hfa_double:
+	ldp	d0, d1, [sp, #144]
+	ldp	d2, d3, [sp, #160]
+	b	Lpse_finish
+
+Lpse_float:
+	ldr	d0, [sp, #144]
+	b	Lpse_finish
+
+Lpse_signed_byte:
+	ldrsb	w0, [sp, #144]
+	b	Lpse_finish
+
+Lpse_unsigned_byte:
+	ldrb	w0, [sp, #144]
+	b	Lpse_finish
+
+Lpse_signed_short:
+	ldrsh	w0, [sp, #144]
+	b	Lpse_finish
+
+Lpse_unsigned_short:
+	ldrh	w0, [sp, #144]
+	b	Lpse_finish
+
+Lpse_word:
+	ldr	w0, [sp, #144]
 Lpse_finish:
-	ldp	x23, x24, [sp], #16
-	ldp	x21, x22, [sp], #16
-	ldp	x19, x20, [sp], #16
-	ldp	x29, x30, [sp], #16
+	mov	sp, x29
+	ldp	x29, x30, [sp], #176
 	ret
 	.cfi_endproc
 

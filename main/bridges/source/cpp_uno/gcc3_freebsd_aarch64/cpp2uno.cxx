@@ -120,19 +120,9 @@ static typelib_TypeClass cpp2uno_call(
 
 		int nUsedGPR = 0;
 		int nUsedFPR = 0;
+		aarch64::examine_argument( rParam.pTypeRef, false, nUsedGPR, nUsedFPR );
 		if ( !rParam.bOut && bridges::cpp_uno::shared::isSimpleType( rParam.pTypeRef ) ) // value
 		{
-			// A simple UNO type occupies exactly one register, GPR or FPR.
-			if ( rParam.pTypeRef->eTypeClass == typelib_TypeClass_FLOAT ||
-				 rParam.pTypeRef->eTypeClass == typelib_TypeClass_DOUBLE )
-			{
-				nUsedFPR = 1; nUsedGPR = 0;
-			}
-			else
-			{
-				nUsedFPR = 0; nUsedGPR = 1;
-			}
-
 			OSL_ASSERT( ( nUsedFPR == 1 && nUsedGPR == 0 ) || ( nUsedFPR == 0 && nUsedGPR == 1 ) );
 
 			if ( nUsedFPR == 1 )
@@ -203,24 +193,13 @@ static typelib_TypeClass cpp2uno_call(
 				// will be released at reconversion
 				ppTempParamTypeDescr[nTempIndizes++] = pParamTypeDescr;
 			}
-
-			if ( pCppStack )
+			else // direct way
 			{
-				if ( pParamTypeDescr->eTypeClass == typelib_TypeClass_STRUCT ||
-					 pParamTypeDescr->eTypeClass == typelib_TypeClass_EXCEPTION )
-				{
-					// struct in registers/stack: copy it to a temporary if
-					// it needs conversion
-					if ( bridges::cpp_uno::shared::relatesToInterfaceType( pParamTypeDescr ) )
-					{
-						// already handled above
-					}
-					else
-						pUnoArgs[nPos] = pCppStack;
-				}
-			}
-			if ( pParamTypeDescr )
+				// struct in registers/stack: copy it directly
+				pUnoArgs[nPos] = pCppStack;
+				// no longer needed
 				TYPELIB_DANGER_RELEASE( pParamTypeDescr );
+			}
 		}
 	}
 
@@ -435,4 +414,117 @@ extern "C" sal_uInt32 cpp_vtable_call(
 	}
 
 	return eRet;
+}
+
+
+//==================================================================================================
+extern "C" void privateSnippetExecutor( void );
+
+const int codeSnippetSize = 40;
+
+unsigned char * codeSnippet( unsigned char * code,
+	sal_Int32 nFunctionIndex, sal_Int32 nVtableOffset,
+	bool bHasHiddenParam ) SAL_THROW( () )
+{
+	sal_uInt64 nOffsetAndIndex = ( static_cast<sal_uInt64>( nVtableOffset ) << 32 ) | static_cast<sal_uInt64>( nFunctionIndex );
+
+	if ( bHasHiddenParam )
+		nOffsetAndIndex |= 0x80000000;
+
+	sal_uInt32 * p = reinterpret_cast<sal_uInt32 *>( code );
+
+	p[0] = 0x58000000 | ( 6 << 5 ) | 16;
+	p[1] = 0x58000000 | ( 7 << 5 ) | 17;
+	p[2] = 0xD61F0000 | ( 17 << 5 );
+	p[3] = 0xD503201F; // NOP
+	p[4] = 0xD503201F; // NOP
+
+	*reinterpret_cast<sal_uInt64 *>( code + 24 ) = nOffsetAndIndex;
+	*reinterpret_cast<sal_uInt64 *>( code + 32 ) = reinterpret_cast<sal_uInt64>( privateSnippetExecutor );
+
+	return code + codeSnippetSize;
+}
+
+//==================================================================================================
+struct bridges::cpp_uno::shared::VtableFactory::Slot { void * fn; };
+
+bridges::cpp_uno::shared::VtableFactory::Slot *
+bridges::cpp_uno::shared::VtableFactory::mapBlockToVtable(void * block)
+{
+    return static_cast< Slot * >(block) + 2;
+}
+
+//==================================================================================================
+sal_Size bridges::cpp_uno::shared::VtableFactory::getBlockSize(
+    sal_Int32 slotCount)
+{
+    return (slotCount + 2) * sizeof (Slot) + slotCount * codeSnippetSize;
+}
+
+//==================================================================================================
+bridges::cpp_uno::shared::VtableFactory::Slot *
+bridges::cpp_uno::shared::VtableFactory::initializeBlock(
+    void * block, sal_Int32 slotCount)
+{
+    Slot * slots = mapBlockToVtable(block);
+    slots[-2].fn = 0;
+    slots[-1].fn = 0;
+    return slots + slotCount;
+}
+
+//==================================================================================================
+
+unsigned char * bridges::cpp_uno::shared::VtableFactory::addLocalFunctions(
+	Slot ** slots, unsigned char * code, sal_PtrDiff writetoexecdiff,
+	typelib_InterfaceTypeDescription const * type, sal_Int32 nFunctionOffset,
+	sal_Int32 functionCount, sal_Int32 nVtableOffset )
+{
+	(*slots) -= functionCount;
+	Slot * s = *slots;
+	for ( sal_Int32 nPos = 0; nPos < type->nMembers; ++nPos )
+	{
+		typelib_TypeDescription * pTD = 0;
+
+		TYPELIB_DANGER_GET( &pTD, type->ppMembers[ nPos ] );
+		OSL_ASSERT( pTD );
+
+		if ( typelib_TypeClass_INTERFACE_ATTRIBUTE == pTD->eTypeClass )
+		{
+			typelib_InterfaceAttributeTypeDescription *pAttrTD =
+				reinterpret_cast<typelib_InterfaceAttributeTypeDescription *>( pTD );
+
+			(s++)->fn = code + writetoexecdiff;
+			code = codeSnippet( code, nFunctionOffset++, nVtableOffset,
+								aarch64::return_in_hidden_param( pAttrTD->pAttributeTypeRef ) );
+
+			if ( ! pAttrTD->bReadOnly )
+			{
+				(s++)->fn = code + writetoexecdiff;
+				code = codeSnippet( code, nFunctionOffset++, nVtableOffset, false );
+			}
+		}
+		else if ( typelib_TypeClass_INTERFACE_METHOD == pTD->eTypeClass )
+		{
+			typelib_InterfaceMethodTypeDescription *pMethodTD =
+				reinterpret_cast<typelib_InterfaceMethodTypeDescription *>( pTD );
+
+			(s++)->fn = code + writetoexecdiff;
+			code = codeSnippet( code, nFunctionOffset++, nVtableOffset,
+								aarch64::return_in_hidden_param( pMethodTD->pReturnTypeRef ) );
+		}
+		else
+			OSL_ASSERT( false );
+
+		TYPELIB_DANGER_RELEASE( pTD );
+	}
+	return code;
+}
+
+//==================================================================================================
+void bridges::cpp_uno::shared::VtableFactory::flushCode(
+	unsigned char const * begin, unsigned char const * end )
+{
+	__clear_cache(
+		const_cast<unsigned char *>(begin),
+		const_cast<unsigned char *>(end) );
 }
