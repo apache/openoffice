@@ -250,4 +250,153 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 	return p;
 }
 
+//__________________________________________________________________________________________________
+type_info * RTTI::synthesiseRTTI(
+	OString const & rSymbolName,
+	typelib_CompoundTypeDescription * pTypeDescr ) SAL_THROW( () )
+{
+	if (! rttiDonorsUsable())
+		return 0;
+
+	type_info * pBaseRtti = 0;
+	if (pTypeDescr->pBaseTypeDescription != 0)
+	{
+		pBaseRtti = getRTTI(
+			(typelib_CompoundTypeDescription *) pTypeDescr->pBaseTypeDescription );
+		if (pBaseRtti == 0)
+			return 0;
+	}
+
+	char * pName = strdup( rSymbolName.getStr() + 4 );
+	if (pName == 0)
+		return 0;
+	sal_uIntPtr nName = reinterpret_cast< sal_uIntPtr >( pName );
+	if (rttiIsNonUnique())
+		nName |= NON_UNIQUE_RTTI_BIT;
+
+	if (pBaseRtti != 0)
+	{
+		RttiSiClassLayout * p = static_cast< RttiSiClassLayout * >(
+			calloc( 1, sizeof (RttiSiClassLayout) ) );
+		if (p == 0) { free( pName ); return 0; }
+		p->pVtable = siDonor()->pVtable;
+		p->nName   = nName;
+		p->pBase   = pBaseRtti;
+		return reinterpret_cast< type_info * >( p );
+	}
+
+	RttiClassLayout * p = static_cast< RttiClassLayout * >(
+		calloc( 1, sizeof (RttiClassLayout) ) );
+	if (p == 0) { free( pName ); return 0; }
+	p->pVtable = classDonor()->pVtable;
+	p->nName   = nName;
+	return reinterpret_cast< type_info * >( p );
+}
+
+//--------------------------------------------------------------------------------------------------
+static void deleteException( void * pExc )
+{
+	typelib_TypeDescription * pTD = 0;
+	{
+		MutexGuard guard( exceptionMapsMutex() );
+		ThrownTypes::iterator i = thrownTypes().find( pExc );
+		if ( i != thrownTypes().end() )
+		{
+			pTD = i->second;
+			thrownTypes().erase( i );
+		}
+	}
+	if ( pTD )
+	{
+		::uno_destructData( pExc, pTD, cpp_release );
+		::typelib_typedescription_release( pTD );
+	}
+}
+
+//==================================================================================================
+void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
+{
+	void * pCppExc;
+	type_info * rtti;
+	OUString typeName(
+		*reinterpret_cast< OUString const * >( &pUnoExc->pType->pTypeName ) );
+
+	OUString message;
+	if ( pUnoExc->pData != 0 &&
+		 *reinterpret_cast< rtl_uString * const * >( pUnoExc->pData ) != 0 )
+	{
+		message = *reinterpret_cast< OUString const * >( pUnoExc->pData );
+	}
+
+	{
+	typelib_TypeDescription * pTypeDescr = 0;
+	TYPELIB_DANGER_GET( &pTypeDescr, pUnoExc->pType );
+	OSL_ASSERT( pTypeDescr );
+	if (! pTypeDescr)
+	{
+		throw RuntimeException(
+			OUString( RTL_CONSTASCII_USTRINGPARAM("cannot get typedescription for type ") ) +
+			typeName + OUString( RTL_CONSTASCII_USTRINGPARAM(": ") ) + message,
+			Reference< XInterface >() );
+	}
+
+	pCppExc = __cxa_allocate_exception( pTypeDescr->nSize );
+	::uno_copyAndConvertData( pCppExc, pUnoExc->pData, pTypeDescr, pUno2Cpp );
+
+	static RTTI rtti_data;
+	rtti = rtti_data.getRTTI(
+		(typelib_CompoundTypeDescription *) pTypeDescr );
+	OSL_ENSURE( rtti, "### no rtti for throwing exception!" );
+	if (! rtti)
+	{
+		::uno_destructData( pCppExc, pTypeDescr, cpp_release );
+		__cxa_free_exception( pCppExc );
+		TYPELIB_DANGER_RELEASE( pTypeDescr );
+		::uno_any_destruct( pUnoExc, 0 );
+		throw RuntimeException(
+			OUString( RTL_CONSTASCII_USTRINGPARAM("no rtti for type ") ) +
+			typeName + OUString( RTL_CONSTASCII_USTRINGPARAM(": ") ) + message,
+			Reference< XInterface >() );
+	}
+
+	{
+		MutexGuard guard( exceptionMapsMutex() );
+		typelib_typedescription_acquire( pTypeDescr );
+		thrownTypes()[pCppExc] = pTypeDescr;
+	}
+	TYPELIB_DANGER_RELEASE( pTypeDescr );
+	::uno_any_destruct( pUnoExc, 0 );
+	}
+
+	__cxa_throw( pCppExc, rtti, deleteException );
+}
+
+void fillUnoException(
+	std::type_info const & type, void * exception, uno_Any * pUnoExc,
+	uno_Mapping * pCpp2Uno )
+{
+	typelib_TypeDescription * pExcTypeDescr = 0;
+	OUString unoName( toUNOname( type.name() ) );
+	{
+		MutexGuard guard( exceptionMapsMutex() );
+		observedRttis()[unoName] = const_cast<std::type_info *>( &type );
+	}
+	typelib_typedescription_getByName( &pExcTypeDescr, unoName.pData );
+	if ( pExcTypeDescr == 0 )
+	{
+		RuntimeException aRE(
+			OUString( RTL_CONSTASCII_USTRINGPARAM("exception type not found: ") ) + unoName,
+			Reference< XInterface >() );
+		Type const & rType = ::getCppuType( &aRE );
+		uno_type_any_constructAndConvert(
+			pUnoExc, &aRE, rType.getTypeLibType(), pCpp2Uno );
+	}
+	else
+	{
+		uno_any_constructAndConvert(
+			pUnoExc, exception, pExcTypeDescr, pCpp2Uno );
+		typelib_typedescription_release( pExcTypeDescr );
+	}
+}
+
 } // namespace CPPU_CURRENT_NAMESPACE

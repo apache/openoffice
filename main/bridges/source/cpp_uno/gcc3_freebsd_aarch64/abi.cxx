@@ -197,115 +197,159 @@ namespace aarch64
 
 bool examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool bInReturn, int &nUsedGPR, int &nUsedFPR )
 {
-	// For returns, the hidden param rule uses >16 bytes for aggregates.
-	if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT || pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
-	{
-		return classifyAggregate( pTypeRef, nUsedGPR, nUsedFPR );
-	}
+	nUsedGPR = 0;
+	nUsedFPR = 0;
 
-	// Scalars: floats -> FPR, others -> GPR
 	switch ( pTypeRef->eTypeClass )
 	{
+		case typelib_TypeClass_VOID:
+			return true;
+
+		case typelib_TypeClass_CHAR:
+		case typelib_TypeClass_BOOLEAN:
+		case typelib_TypeClass_BYTE:
+		case typelib_TypeClass_SHORT:
+		case typelib_TypeClass_UNSIGNED_SHORT:
+		case typelib_TypeClass_LONG:
+		case typelib_TypeClass_UNSIGNED_LONG:
+		case typelib_TypeClass_HYPER:
+		case typelib_TypeClass_UNSIGNED_HYPER:
+		case typelib_TypeClass_ENUM:
+			nUsedGPR = 1;
+			return true;
+
 		case typelib_TypeClass_FLOAT:
-			nUsedFPR = 1; nUsedGPR = 0; return true;
 		case typelib_TypeClass_DOUBLE:
-			nUsedFPR = 1; nUsedGPR = 0; return true;
+			nUsedFPR = 1;
+			return true;
+
+		// These UNO types are always handled by the bridge as a pointer/
+		// reference (one GPR), never passed by value through this classifier.
+		case typelib_TypeClass_STRING:
+		case typelib_TypeClass_TYPE:
+		case typelib_TypeClass_ANY:
+		case typelib_TypeClass_TYPEDEF:
+		case typelib_TypeClass_SEQUENCE:
+		case typelib_TypeClass_INTERFACE:
+			nUsedGPR = 1;
+			return true;
+
+		case typelib_TypeClass_STRUCT:
+		case typelib_TypeClass_EXCEPTION:
+			if ( bInReturn )
+				return classifyAggregate( pTypeRef, nUsedGPR, nUsedFPR );
+			nUsedGPR = 1; // generated UNO C++ bindings pass aggregates by const reference
+			return true;
+
 		default:
-			nUsedFPR = 0; nUsedGPR = 1; return true;
+			return false;
 	}
 }
 
 bool return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef )
 {
-	if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT || pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
+	switch ( pTypeRef->eTypeClass )
 	{
-		typelib_TypeDescription * pTypeDescr = 0;
-		TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
-		bool ret = pTypeDescr->nSize > 16;
-		TYPELIB_DANGER_RELEASE( pTypeDescr );
-		return ret;
+		case typelib_TypeClass_STRING:
+		case typelib_TypeClass_TYPE:
+		case typelib_TypeClass_ANY:
+		case typelib_TypeClass_TYPEDEF:
+		case typelib_TypeClass_UNION:
+		case typelib_TypeClass_ARRAY:
+		case typelib_TypeClass_SEQUENCE:
+		case typelib_TypeClass_INTERFACE:
+			// These are C++ wrapper objects, not pointer-sized scalar values.
+			// On FreeBSD aarch64 (System V), C++ class return values (non-POD
+			// with non-trivial copy constructor) are returned via x8 buffer.
+			return true;
+		default:
+			break;
 	}
-	return false; // scalars and small aggregates return in registers
+
+	if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT ||
+		 pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
+	{
+		if ( isComplexAggregate( pTypeRef ) )
+			return true;
+	}
+
+	int g, s;
+	// Returned in registers iff examine_argument() says it fits;
+	// otherwise the caller must pass an indirect-result buffer in x8.
+	return !examine_argument( pTypeRef, true, g, s );
 }
 
 sal_uInt32 get_return_kind( typelib_TypeDescriptionReference *pTypeRef )
 {
-	if ( pTypeRef->eTypeClass == typelib_TypeClass_FLOAT )
-		return typelib_TypeClass_FLOAT;
-
-	if ( pTypeRef->eTypeClass == typelib_TypeClass_DOUBLE )
-		return typelib_TypeClass_DOUBLE;
-
 	if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT ||
 		 pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
 	{
 		HfaKind kind = HFA_NONE;
 		int count = 0;
-
-		if ( collectHfa( pTypeRef, kind, count ) )
-		{
-			if ( kind == HFA_FLOAT )
-				return RETURN_KIND_HFA_FLOAT;
-
-			if ( kind == HFA_DOUBLE )
-				return RETURN_KIND_HFA_DOUBLE;
-		}
+		if ( collectHfa( pTypeRef, kind, count ) && count >= 1 && count <= 4 )
+			return kind == HFA_FLOAT ? RETURN_KIND_HFA_FLOAT : RETURN_KIND_HFA_DOUBLE;
 	}
-
 	return pTypeRef->eTypeClass;
 }
 
 void fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal_uInt64* pGPR, const double* pFPR, void *pStruct )
 {
-	// For small aggregates, copy from GPR slots; for HFAs, copy from FPR slots.
-	if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT || pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
+	int nUsedGPR = 0;
+	int nUsedFPR = 0;
+	if ( !examine_argument( pTypeRef, true, nUsedGPR, nUsedFPR ) )
 	{
-		int nGPR=0, nFPR=0;
-		if ( classifyAggregate( pTypeRef, nGPR, nFPR ) )
+		return;
+	}
+
+	if ( nUsedFPR > 0 )
+	{
+		// HFA: each member occupies one v register; the members are contiguous
+		// in the struct.  Copy element-by-element to honour FLOAT (4-byte) vs
+		// DOUBLE (8-byte) element width.
+		HfaKind kind = HFA_NONE;
+		int count = 0;
+		collectHfa( pTypeRef, kind, count );
+		if ( kind == HFA_FLOAT )
 		{
-			if ( nFPR > 0 )
-			{
-			// HFA: copy elements from FPR slots. For FLOAT HFAs each element is
-			// 4 bytes but occupies an 8-byte saved slot; copy each float from the
-			// low 4 bytes of the corresponding double-sized slot. DOUBLE HFAs
-			// can be copied directly.
-			HfaKind kind = HFA_NONE;
-			int count = 0;
-			if ( collectHfa( pTypeRef, kind, count ) && kind == HFA_FLOAT )
-			{
-				for ( int i = 0; i < nFPR; ++i )
-					memcpy(
-						static_cast<char *>( pStruct ) + i * sizeof(float),
-						reinterpret_cast<const char *>( pFPR) + i * sizeof(double),
-						sizeof(float) );
-			}
-			else
-			{
-				memcpy( pStruct, pFPR, nFPR * sizeof(double) );
-			}
-			}
-			else
-			{
-				memcpy( pStruct, pGPR, nGPR * sizeof(sal_uInt64) );
-			}
+			float *pDest = reinterpret_cast< float *>( pStruct );
+			for ( int i = 0; i < nUsedFPR; ++i )
+				pDest[i] = *reinterpret_cast< const float *>( pFPR + i );
 		}
+		else // HFA_DOUBLE
+		{
+			double *pDest = reinterpret_cast< double *>( pStruct );
+			for ( int i = 0; i < nUsedFPR; ++i )
+				pDest[i] = pFPR[i];
+		}
+	}
+	else
+	{
+		typelib_TypeDescription * pTypeDescr = 0;
+		TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+		memcpy( pStruct, pGPR, pTypeDescr->nSize );
+		TYPELIB_DANGER_RELEASE( pTypeDescr );
 	}
 }
 
 sal_uInt32 align_stack_offset( sal_uInt32 offset, typelib_TypeDescriptionReference *pTypeRef )
 {
-	// AArch64 stack overflow area is packed; align to natural alignment of the type (8)
+	// On aarch64 System V ABI, the smallest stack slot is 8 bytes.
+	// Align to 8 bytes regardless of the type's natural alignment.
 	const sal_uInt32 align = 8;
 	return ( offset + align - 1 ) & ~( align - 1 );
 }
 
 sal_uInt32 stack_size( typelib_TypeDescriptionReference *pTypeRef )
 {
-	// For simple types and small aggregates, size is rounded to 8
 	typelib_TypeDescription * pTypeDescr = 0;
 	TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
 	sal_uInt32 size = pTypeDescr->nSize;
 	TYPELIB_DANGER_RELEASE( pTypeDescr );
+	// In the System V AMD64 / AAPCS64 stack layout, the smallest slot that
+	// can be passed is 8 bytes (the natural stack slot size).  Round up
+	// so that small types like BOOLEAN (1B), SHORT (2B), LONG (4B) each
+	// occupy a full 8-byte slot on the overflow stack, matching what the
+	// callee's ABI expects.
 	return ( size + 7 ) & ~7u;
 }
 
