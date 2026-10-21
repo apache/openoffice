@@ -57,6 +57,7 @@ my @platforms = (
         "unxfbsdi",
         "unxfbsd",
         "unxfbsdx",
+        "unxfbsda",
         "unxhpgr",
         "unxhpxr",
         "unxirgm",

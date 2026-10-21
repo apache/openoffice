@@ -95,6 +95,9 @@ else
         amd64-*-freebsd*|x86_64-*-freebsd*)
             . ./FreeBSDAMDEnv.Set.sh
         ;;
+        aarch64-*-freebsd*|arm64-*-freebsd*)
+            . ./FreeBSDAARCH64Env.Set.sh
+        ;;
         arm*-*-freebsd*)
             . ./FreeBSDARMEnv.Set.sh
         ;;

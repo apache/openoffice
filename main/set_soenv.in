@@ -383,6 +383,17 @@ elsif ( $platform =~ m/freebsd/ )
          $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."amd64".$ds."native_threads";
       }
    }
+   elsif (($platform =~ m/^aarch64/) || ($platform =~ m/^arm64/))
+   {  print "Setting FreeBSD AArch64 specific values... ";
+      $outfile        = "FreeBSDAARCH64Env.Set";
+      $CPU            = "A";
+      $CPUNAME        = "AARCH64";
+      $OUTPATH        = "unxfbsda";
+      $JRELIBDIR      = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64";
+      $JRETOOLKITDIR  = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64".$ds."server";
+      $JRETHREADDIR   = '$JAVA_HOME'.$ds."jre".$ds."lib".$ds."aarch64".$ds."native_threads";
+      $EPM_FLAGS      = "-a aarch64";
+   }
    elsif ($platform =~ m/^i386/)
    {  print "Setting FreeBSD x86 specific values... ";
       $outfile        = "FreeBSDX86Env.Set";
@@ -1490,7 +1501,7 @@ if ($platform =~ m/linux|freebsd|netbsd/)
 {
 # This simply adds an include path, so even cases that break the FHS work
 }
-if ($platform =~ m/solaris/ && ! $CC =~ "gcc")
+if ($platform =~ m/solaris/ && $CC !~ "gcc")
 {
 $SOLARINC            .= '/SC5 ';
 }

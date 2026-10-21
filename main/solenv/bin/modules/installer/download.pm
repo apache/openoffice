@@ -611,11 +611,13 @@ sub get_download_architecture
 		$arch = "x64";
 	}
 	elsif(( $installer::globals::compiler =~ /^unxlngx/ )
-	||    ( $installer::globals::compiler =~ /^unxmaccx/ ))
+	||    ( $installer::globals::compiler =~ /^unxmaccx/ )
+	||    ( $installer::globals::compiler =~ /^unxfbsdx/ ))
 	{
 		$arch = "x86-64";
 	}
-	elsif ( $installer::globals::compiler =~ /^unxmaccr/ )
+	elsif(( $installer::globals::compiler =~ /^unxmaccr/ )
+	||    ( $installer::globals::compiler =~ /^unxfbsda/ ))
 	{
 		$arch = "aarch64";
 	}
