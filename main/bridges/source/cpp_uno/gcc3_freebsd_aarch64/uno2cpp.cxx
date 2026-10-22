@@ -362,46 +362,55 @@ static void cpp_call(
 			// (sal_uInt64) scratch slot; reuse them with a local counter.
 			nStack = aarch64::align_stack_offset( nStack, rParam.pTypeRef );
 			sal_uInt32 size = aarch64::stack_size( rParam.pTypeRef );
-			sal_uInt64 scratch[1] = {0};
-			int tempNr = 0;
-			switch (pParamTypeDescr->eTypeClass)
+			if ( size > 8 )
 			{
+			    // Larger types are copied raw (no extension needed).
+			    memcpy( pStackStart + nStack, pCppArgs[nPos], pParamTypeDescr->nSize );
+			    nStack += size;
+			}
+			else
+			{
+			    sal_uInt64 scratch[1] = {0};
+			    int tempNr = 0;
+			    switch (pParamTypeDescr->eTypeClass)
+			    {
 				case typelib_TypeClass_FLOAT:
-					INSERT_FLOAT( pCppArgs[nPos], tempNr, reinterpret_cast<double *>(scratch) );
-					break;
+				    INSERT_FLOAT( pCppArgs[nPos], tempNr, reinterpret_cast<double *>(scratch) );
+				    break;
 				case typelib_TypeClass_DOUBLE:
-					INSERT_DOUBLE( pCppArgs[nPos], tempNr, reinterpret_cast<double *>(scratch) );
-					break;
+				    INSERT_DOUBLE( pCppArgs[nPos], tempNr, reinterpret_cast<double *>(scratch) );
+				    break;
 				case typelib_TypeClass_HYPER:
 				case typelib_TypeClass_UNSIGNED_HYPER:
-					INSERT_INT64( pCppArgs[nPos], tempNr, scratch );
-					break;
+				    INSERT_INT64( pCppArgs[nPos], tempNr, scratch );
+				    break;
 				case typelib_TypeClass_LONG:
-					INSERT_SIGNED_INT32( pCppArgs[nPos], tempNr, scratch );
-					break;
+				    INSERT_SIGNED_INT32( pCppArgs[nPos], tempNr, scratch );
+				    break;
 				case typelib_TypeClass_UNSIGNED_LONG:
 				case typelib_TypeClass_ENUM:
-					INSERT_INT32( pCppArgs[nPos], tempNr, scratch );
-					break;
+				    INSERT_INT32( pCppArgs[nPos], tempNr, scratch );
+				    break;
 				case typelib_TypeClass_SHORT:
-					INSERT_SIGNED_INT16( pCppArgs[nPos], tempNr, scratch );
-					break;
+				    INSERT_SIGNED_INT16( pCppArgs[nPos], tempNr, scratch );
+				    break;
 				case typelib_TypeClass_CHAR:
 				case typelib_TypeClass_UNSIGNED_SHORT:
-					INSERT_INT16( pCppArgs[nPos], tempNr, scratch );
-					break;
+				    INSERT_INT16( pCppArgs[nPos], tempNr, scratch );
+				    break;
 				case typelib_TypeClass_BYTE:
-					INSERT_SIGNED_INT8( pCppArgs[nPos], tempNr, scratch );
-					break;
+				    INSERT_SIGNED_INT8( pCppArgs[nPos], tempNr, scratch );
+				    break;
 				case typelib_TypeClass_BOOLEAN:
-					INSERT_INT8( pCppArgs[nPos], tempNr, scratch );
-					break;
+				    INSERT_INT8( pCppArgs[nPos], tempNr, scratch );
+				    break;
 				default:
-					memcpy( scratch, pCppArgs[nPos], pParamTypeDescr->nSize );
-					break;
+				    memcpy( scratch, pCppArgs[nPos], pParamTypeDescr->nSize );
+				    break;
+			    }
+			    memcpy( pStackStart + nStack, scratch, size );
+			    nStack += size;
 			}
-			memcpy( pStackStart + nStack, scratch, size );
-				nStack += size;
 			}
 
 			TYPELIB_DANGER_RELEASE( pParamTypeDescr );
