@@ -32,7 +32,13 @@
 
 #include "salinst.hxx"
 
+#include <boost/function.hpp>
+#include <boost/bind.hpp>
+#include <boost/ref.hpp>
+
+#include <exception>
 #include <list>
+#include <pthread.h>
 
 class AquaSalFrame;
 class ApplicationEvent;
@@ -46,14 +52,39 @@ class SalYieldMutex : public vos::OMutex
 {
 	sal_uLong										mnCount;
 	vos::OThread::TThreadIdentifier             mnThreadId;
+    vos::OThread::TThreadIdentifier             mnMainThreadId;
+
+    // state for running code on the main thread on behalf of the owner
+    pthread_mutex_t                             maMainThreadMutex;
+    pthread_cond_t                              maMainThreadCond;
+    pthread_cond_t                              maResultCond;
+    bool                                        mbWakeUpMain;
+    bool                                        mbMainWaiting;
+    bool                                        mbResultReady;
+    const boost::function0<void>*               mpMainThreadFunc;
+    std::exception_ptr                          maMainThreadException;
+    bool                                        mbRunningForOwner;  // main thread only
+
+    bool                                        isMainThread() const;
+    void                                        acquireOnMainThread();
+    void                                        runForOwner( const boost::function0<void>* pFunc );
 
 public:
 												SalYieldMutex();
+                                                ~SalYieldMutex();
 	virtual void								acquire();
 	virtual void								release();
 	virtual sal_Bool							tryToAcquire();
 	sal_uLong										GetAcquireCount() const { return mnCount; }
 	vos::OThread::TThreadIdentifier             GetThreadId() const { return mnThreadId; }
+
+    void                                        setMainThread( vos::OThread::TThreadIdentifier nId ) { mnMainThreadId = nId; }
+    // runs rFunc on the main thread while the calling thread keeps owning the mutex
+    void                                        runOnMainThread( const boost::function0<void>& rFunc );
+    // true while the main thread runs code for the owner; the main thread then counts as owner
+    bool                                        isRunningForOwner() const;
+    // runs a function handed over by runOnMainThread(), if any; main thread only
+    void                                        runPendingOnMainThread();
 };
 
 #define YIELD_GUARD vos::OGuard aGuard( GetSalData()->mpFirstInstance->GetYieldMutex() )
@@ -157,6 +188,11 @@ public:
 
     void wakeupYield();
 
+    template< typename R > static void assignResult( R* pResult, const boost::function0<R>& rFunc )
+    {
+        *pResult = rFunc();
+    }
+
  public:
     friend class AquaSalFrame;
 
@@ -164,6 +200,16 @@ public:
     void delayedSettingsChanged( bool bInvalidate );
 
     bool isNSAppThread() const;
+
+    // AppKit raises or deadlocks when used off the main thread (e.g. by remote UNO calls):
+    // off the main thread these run rFunc there and return true, on it they return false
+    bool forwardToMainThread( const boost::function0<void>& rFunc );
+    template< typename R > R callOnMainThread( const boost::function0<R>& rFunc )
+    {
+        R aResult = R();
+        mpSalYieldMutex->runOnMainThread( boost::bind( &AquaSalInstance::assignResult<R>, &aResult, boost::cref( rFunc ) ) );
+        return aResult;
+    }
 
     void startedPrintJob() { mnActivePrintJobs++; }
     void endedPrintJob() { mnActivePrintJobs--; }
