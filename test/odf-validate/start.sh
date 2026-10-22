@@ -25,5 +25,5 @@ mkdir -p $D/runs
 nohup $APP/MacOS/soffice -headless -nofirststartwizard -norestore -nologo -nodefault \
   -env:UserInstallation=file://$D/runs/profile_$1 "-accept=socket,host=localhost,port=$2;urp;" \
   >>$D/runs/soffice_$1.log 2>&1 &
-for i in {1..60}; do lsof -nP -iTCP:$2 -sTCP:LISTEN >/dev/null 2>&1 && exit 0; sleep 1; done
+for i in {1..180}; do lsof -nP -iTCP:$2 -sTCP:LISTEN >/dev/null 2>&1 && exit 0; sleep 1; done
 echo "start.sh: office on port $2 did not come up" >&2; exit 1
