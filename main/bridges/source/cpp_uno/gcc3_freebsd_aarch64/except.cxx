@@ -83,13 +83,11 @@ Mutex & exceptionMapsMutex()
 	return mutex;
 }
 
-// libc++ marks a type_info whose object is not unique across images by setting
-// the top bit of type_info::__type_name; comparison then falls back to strcmp
-// of the mangled name (see __non_unique_arm_rtti_bit_impl in <typeinfo>).  On
-// arm64 Darwin clang emits the typeinfo of every keyless class -- which is every
-// UNO exception -- hidden and therefore non-unique, so a synthesised object must
-// set the bit too, or std::type_info::operator== degenerates to an address
-// comparison and never matches the handler's real typeinfo.
+ // libc++ marks a type_info whose object is not unique across images by setting
+ // the top bit of type_info::__type_name; comparison then falls back to strcmp
+ // of the mangled name (see __non_unique_arm_rtti_bit_impl in <typeinfo>).
+ // This is detected at runtime below; the synthesised RTTI mirrors whatever
+ // convention the running compiler actually uses.
 sal_uIntPtr const NON_UNIQUE_RTTI_BIT =
 	static_cast< sal_uIntPtr >(1) << (8 * sizeof (sal_uIntPtr) - 1);
 
