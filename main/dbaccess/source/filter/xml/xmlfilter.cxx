@@ -154,6 +154,10 @@ namespace dbaxml
                 ,m_eWhat(_eType)
 		    {}
 
+            // E_CALC runs as a main-thread user event: as a detached thread it could outlive
+            // DeInitVCL, and its frame creation then restarted VCL while the office was exiting.
+            DECL_STATIC_LINK( FastLoader, RunHdl, FastLoader* );
+
 	    protected:
             virtual ~FastLoader(){}
 
@@ -236,6 +240,12 @@ namespace dbaxml
 	    {
             delete this;
 	    }
+        IMPL_STATIC_LINK_NOINSTANCE( FastLoader, RunHdl, FastLoader*, pLoader )
+        {
+            pLoader->run();
+            delete pLoader;
+            return 0;
+        }
 
         class DatasourceURLListener : public ::cppu::WeakImplHelper1< beans::XPropertyChangeListener >
         {
@@ -260,7 +270,7 @@ namespace dbaxml
                 } // if ( m_aTypeCollection.needsJVM(sURL) )
                 else if ( sURL.matchIgnoreAsciiCaseAsciiL("sdbc:calc:",10,0) )
                 {
-                    pCreatorThread = new FastLoader(m_xFactory,FastLoader::E_CALC);
+                    Application::PostUserEvent( STATIC_LINK( NULL, FastLoader, RunHdl ), new FastLoader(m_xFactory,FastLoader::E_CALC) );
                 }
                 if ( pCreatorThread )
                 {
