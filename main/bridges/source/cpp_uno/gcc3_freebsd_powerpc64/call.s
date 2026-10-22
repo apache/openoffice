@@ -56,9 +56,6 @@ callVirtualMethod:
 	stw 9,296(31)
 	ld 9,304(31)
 	std 9,96(31)
-	ld 9,-28688(13)
-	std 9,184(31)
-	li 9,0
 	lwz 9,280(31)
 	cmpwi 0,9,0
 	beq 0,.L2
@@ -198,14 +195,6 @@ callVirtualMethod:
 	bl MapReturn
 	nop
 	nop
-	ld 9,184(31)
-	ld 10,-28688(13)
-	xor. 9,9,10
-	li 10,0
-	beq 0,.L5
-	bl __stack_chk_fail
-	nop
-.L5:
 	addi 1,31,208
 	.cfi_def_cfa 1, 0
 	ld 0,16(1)
@@ -241,9 +230,6 @@ privateSnippetExecutor:
 	.cfi_offset 31, -8
 	mr 31,1
 	.cfi_def_cfa_register 31
-	ld 0,-28688(13)
-	std 0,248(31)
-	li 0,0
 	std 3,80(31)
 	std 4,88(31)
 	std 5,96(31)
@@ -392,14 +378,6 @@ stfd 13, 96(9)
 	nop
 .L17:
 	nop
-	ld 9,248(31)
-	ld 10,-28688(13)
-	xor. 9,9,10
-	li 10,0
-	beq 0,.L18
-	bl __stack_chk_fail
-	nop
-.L18:
 	addi 1,31,272
 	.cfi_def_cfa 1, 0
 	ld 0,16(1)
