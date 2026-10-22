@@ -156,7 +156,7 @@ namespace abp
 	//--------------------------------------------------------------------------
 	Dialog*	OABSPilotUno::createDialog(Window* _pParent)
 	{
-		return new OAddessBookSourcePilot(_pParent, m_aContext.getLegacyServiceFactory());
+		return new OAddressBookSourcePilot(_pParent, m_aContext.getLegacyServiceFactory());
 	}
 
 	//--------------------------------------------------------------------------
@@ -181,7 +181,7 @@ namespace abp
     {
         if ( _nExecutionResult == RET_OK )
         {
-            const AddressSettings& aSettings = static_cast<OAddessBookSourcePilot*>(m_pDialog)->getSettings();
+            const AddressSettings& aSettings = static_cast<OAddressBookSourcePilot*>(m_pDialog)->getSettings();
             m_sDataSourceName = aSettings.bRegisterDataSource ? aSettings.sRegisteredDataSourceName : aSettings.sDataSourceName;
         }
     }
