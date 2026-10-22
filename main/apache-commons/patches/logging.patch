@@ -13,3 +13,11 @@
  
    <!-- Should Java compilations set the 'debug' compiler option? -->
    <property name="compile.debug"           value="true"/>
+@@ -364,6 +364,7 @@
+       <classpath refid="compile.classpath"/>
+     
+       <exclude name="org/apache/commons/logging/impl/Log4J*.java"/>
++      <exclude name="org/apache/commons/logging/impl/ServletContextCleaner.java"/>
+ 
+       <exclude name="org/apache/commons/logging/impl/Jdk13LumberjackLogger.java"
+                unless="jdk.1.4.present"/>

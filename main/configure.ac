@@ -515,25 +515,13 @@ AC_ARG_ENABLE(pdfimport,
 AC_ARG_ENABLE(wiki-publisher,
 [  --enable-wiki-publisher      enables the build of the Wiki Publisher extension
 ],,)
-AC_ARG_WITH(commons-codec-jar,
-[  --with-commons-codec-jar=JARFILE   Specify path to jarfile manually ],
-[ COMMONS_CODEC_JAR="$withval"
-])
 AC_ARG_WITH(commons-lang-jar,
 [  --with-commons-lang-jar=JARFILE   Specify path to jarfile manually ],
 [ COMMONS_LANG_JAR="$withval"
 ])
-AC_ARG_WITH(commons-httpclient-jar,
-[  --with-commons-httpclient-jar=JARFILE   Specify path to jarfile manually ],
-[ COMMONS_HTTPCLIENT_JAR="$withval"
-])
 AC_ARG_WITH(commons-logging-jar,
 [  --with-commons-logging-jar=JARFILE   Specify path to jarfile manually ],
 [ COMMONS_LOGGING_JAR="$withval"
-])
-AC_ARG_WITH(servlet-api-jar,
-[  --servlet-api-jar=JARFILE   Specify path to jarfile manually ],
-[ SERVLETAPI_JAR="$withval"
 ])
 AC_ARG_ENABLE(report-builder,
 [  --enable-report-builder  enables the build of the Report Builder extension
@@ -6965,25 +6953,6 @@ else
 fi
 AC_SUBST(ENABLE_MEDIAWIKI)
 
-if test "$ENABLE_MEDIAWIKI" = "YES"; then
-  AC_MSG_CHECKING([which Servlet API Jar to use])
-  if test -n "$with_system_servlet_api"; then
-    AC_MSG_RESULT([external])
-    SYSTEM_SERVLETAPI=YES
-      if test -z "$SERVLETAPI_JAR"; then
-	SERVLETAPI_JAR=/usr/share/java/servlet-api.jar
-      fi
-      AC_CHECK_FILE($SERVLETAPI_JAR, [],
-             [AC_MSG_ERROR(servlet-api.jar not found.)], [])
-  else
-    AC_MSG_RESULT([internal])
-    SYSTEM_SERVLETAPI=NO
-    BUILD_TYPE="$BUILD_TYPE TOMCAT"
-  fi
-fi
-AC_SUBST(SYSTEM_SERVLETAPI)
-AC_SUBST(SERVLETAPI_JAR)
-
 AC_MSG_CHECKING([whether to build the Report Builder extension])
 if test -n "$enable_report_builder" -a "$enable_report_builder" != "no" && test "$WITH_JAVA" != "no"; then
   AC_MSG_RESULT([yes])
@@ -7172,9 +7141,8 @@ AC_SUBST(LIBREPOSITORY_JAR)
 AC_SUBST(LIBFONTS_JAR)
 AC_SUBST(LIBSERIALIZER_JAR)
 
-# this has to be here because both the Wiki Publisher and the Report
-# Builder use commons-logging, while the non-optional PostgreSQL
-# connector uses commons-lang.
+# this has to be here because the Report Builder uses commons-logging,
+# while the non-optional PostgreSQL connector uses commons-lang.
 AC_MSG_CHECKING([which Apache commons-* libs to use])
 if test "$with_system_apache_commons" = "yes"; then
   SYSTEM_APACHE_COMMONS=YES
@@ -7210,38 +7178,7 @@ if test "$with_system_apache_commons" = "yes"; then
       AC_MSG_ERROR([no, you need Apache Commons Lang 3.x])
   fi
 
-  if test "$ENABLE_MEDIAWIKI" = "YES"; then
-    if test -z $COMMONS_CODEC_JAR; then
-      AC_CHECK_FILE(/usr/share/java/commons-codec-1.9.jar,
-        [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec-1.9.jar ],
-        [
-          AC_CHECK_FILE(/usr/share/java/commons-codec.jar,
-            [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec.jar ],
-            [AC_MSG_ERROR(commons-codec.jar replacement not found.)]
-          )
-        ]
-      )
-    else
-      AC_CHECK_FILE($COMMONS_CODEC_JAR, [],
-           [AC_MSG_ERROR(commons-codec.jar not found.)], [])
-    fi
-
-    if test -z $COMMONS_HTTPCLIENT_JAR; then
-      AC_CHECK_FILE(/usr/share/java/commons-httpclient-3.1.jar,
-        [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient-3.1.jar ],
-        [
-          AC_CHECK_FILE(/usr/share/java/commons-httpclient.jar,
-            [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient.jar ],
-            [AC_MSG_ERROR(commons-httpclient.jar replacement not found.)]
-          )
-        ]
-      )
-    else
-      AC_CHECK_FILE($COMMONS_HTTPCLIENT_JAR, [],
-           [AC_MSG_ERROR(commons-httpclient.jar not found.)], [])
-    fi
-  fi
-  if test "$ENABLE_MEDIAWIKI" = "YES" -o "$ENABLE_REPORTBUILDER" = "YES"; then
+  if test "$ENABLE_REPORTBUILDER" = "YES"; then
     if test -z $COMMONS_LOGGING_JAR; then
       AC_CHECK_FILE(/usr/share/java/commons-logging-1.1.3.jar,
         [ COMMONS_LOGGING_JAR=/usr/share/java/commons-logging-1.1.3.jar ],
@@ -7260,12 +7197,10 @@ if test "$with_system_apache_commons" = "yes"; then
 else
   AC_MSG_RESULT([internal])
   SYSTEM_APACHE_COMMONS=NO
-  BUILD_TYPE="$BUILD_TYPE APACHE_COMMONS TOMCAT"
+  BUILD_TYPE="$BUILD_TYPE APACHE_COMMONS"
 fi
 AC_SUBST(SYSTEM_APACHE_COMMONS)
-AC_SUBST(COMMONS_CODEC_JAR)
 AC_SUBST(COMMONS_LANG_JAR)
-AC_SUBST(COMMONS_HTTPCLIENT_JAR)
 AC_SUBST(COMMONS_LOGGING_JAR)
 
 dnl ===================================================================

@@ -50,18 +50,6 @@
     </macrodef>
 
     <define-external
-        name="commons-codec"
-        system-test="${SYSTEM_APACHE_COMMONS}"
-        system-path="${COMMONS_CODEC_JAR}"
-        internal-filename="commons-codec-1.9.jar"/>
-
-    <define-external
-        name="commons-httpclient"
-        system-test="${SYSTEM_APACHE_COMMONS}"
-        system-path="${COMMONS_HTTPCLIENT_JAR}"
-        internal-filename="commons-httpclient-3.1.jar"/>
-
-    <define-external
         name="hsqldb"
         system-test="${SYSTEM_HSQLDB}"
         system-path="${HSQLDB_JAR}"
