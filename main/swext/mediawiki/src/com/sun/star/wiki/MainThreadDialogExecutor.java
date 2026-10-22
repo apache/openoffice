@@ -84,11 +84,7 @@ public class MainThreadDialogExecutor implements XCallback
                     if ( xRequest != null )
                     {
                         xRequest.addCallback( aExecutor, Any.VOID );
-                        do
-                        {
-                            Thread.yield();
-                        }
-                        while( !aExecutor.m_bCalled );
+                        aExecutor.WaitForCall();
                     }
                 }
                 else
@@ -120,7 +116,28 @@ public class MainThreadDialogExecutor implements XCallback
     {
         m_xDialog = xDialog;
         m_bClose = true;
-        m_bCalled = true; // no yielding, asynchronous closing
+        m_bCalled = true; // no waiting, asynchronous closing
+    }
+
+    private void WaitForCall()
+    {
+        boolean bInterrupted = false;
+        synchronized( this )
+        {
+            while( !m_bCalled )
+            {
+                try
+                {
+                    wait();
+                }
+                catch( InterruptedException e )
+                {
+                    bInterrupted = true;
+                }
+            }
+        }
+        if ( bInterrupted )
+            Thread.currentThread().interrupt();
     }
 
     private boolean GetResult()
@@ -129,6 +146,22 @@ public class MainThreadDialogExecutor implements XCallback
     }
 
     public void notify( Object aData )
+    {
+        try
+        {
+            CallInMainThread();
+        }
+        finally
+        {
+            synchronized( this )
+            {
+                m_bCalled = true;
+                notifyAll();
+            }
+        }
+    }
+
+    private void CallInMainThread()
     {
         if ( m_aTask != null )
         {
@@ -158,7 +191,5 @@ public class MainThreadDialogExecutor implements XCallback
                 m_bResult = true;
             }
         }
-
-        m_bCalled = true;
     }
 }
