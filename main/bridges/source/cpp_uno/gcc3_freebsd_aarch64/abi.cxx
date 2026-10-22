@@ -347,6 +347,10 @@ sal_uInt32 stack_size( typelib_TypeDescriptionReference *pTypeRef )
 	typelib_TypeDescription * pTypeDescr = 0;
 	TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
 	sal_uInt32 size = pTypeDescr->nSize;
+	// AAPCS64 requires each stack argument to occupy a full 8-byte
+	// slot; small types are sign- or zero-extended into the slot.
+	if ( size < 8 )
+		size = 8;
 	TYPELIB_DANGER_RELEASE( pTypeDescr );
 	return size;
 }
