@@ -150,9 +150,10 @@ void writeConsoleError(::rtl::OString const & sText);
     On Linux/Unix/etc. it uses fgets to read char values and converts them to OUString
     using osl_getThreadTextEncoding as target encoding. The returned string has a maximum
     size of 1024 and does NOT include leading and trailing white space(applied OUString::trim())
+    Returns false at end of input or on a read error.
 */
 DESKTOP_DEPLOYMENTMISC_DLLPUBLIC
-::rtl::OUString readConsole();
+bool readConsole( ::rtl::OUString & rLine );
 
 /** print the text to the console in a debug build.
     The argument is forwarded to writeConsole. The function does not add new line.
