@@ -25,6 +25,7 @@
 #include "precompiled_vcl.hxx"
 
 #include <stdio.h>
+#include <utility>
 
 #include "tools/fsys.hxx"
 #include "tools/getprocessworkingdir.hxx"
@@ -339,21 +340,159 @@ void DeInitSalMain()
 
 // =======================================================================
 
+static void postYieldWakeupEvent()
+{
+    if( ! NSApp )
+        return;
+    SalData::ensureThreadAutoreleasePool();
+    NSEvent* pEvent = [NSEvent otherEventWithType: NSApplicationDefined
+                               location: NSZeroPoint
+                               modifierFlags: 0
+                               timestamp: 0
+                               windowNumber: 0
+                               context: nil
+                               subtype: AquaSalInstance::YieldWakeupEvent
+                               data1: 0
+                               data2: 0 ];
+    if( pEvent )
+        [NSApp postEvent: pEvent atStart: NO];
+}
+
+@interface SalMainThreadRunner : NSObject
+{
+}
+-(void)runPending: (id)pUnused;
+@end
+
+@implementation SalMainThreadRunner
+-(void)runPending: (id)pUnused
+{
+    (void)pUnused;
+    GetSalData()->mpFirstInstance->mpSalYieldMutex->runPendingOnMainThread();
+}
+@end
+
 SalYieldMutex::SalYieldMutex()
 {
 	mnCount	 = 0;
 	mnThreadId  = 0;
+    mnMainThreadId = 0;
+    pthread_mutex_init( &maMainThreadMutex, NULL );
+    pthread_cond_init( &maMainThreadCond, NULL );
+    pthread_cond_init( &maResultCond, NULL );
+    mbWakeUpMain = false;
+    mbMainWaiting = false;
+    mbResultReady = false;
+    mpMainThreadFunc = NULL;
+    mbRunningForOwner = false;
+}
+
+SalYieldMutex::~SalYieldMutex()
+{
+    pthread_cond_destroy( &maResultCond );
+    pthread_cond_destroy( &maMainThreadCond );
+    pthread_mutex_destroy( &maMainThreadMutex );
+}
+
+bool SalYieldMutex::isMainThread() const
+{
+    return mnMainThreadId != 0 && vos::OThread::getCurrentIdentifier() == mnMainThreadId;
 }
 
 void SalYieldMutex::acquire()
 {
-	OMutex::acquire();
+    if( isMainThread() )
+    {
+        if( mbRunningForOwner )
+            return;
+        acquireOnMainThread();
+    }
+    else
+        OMutex::acquire();
 	mnThreadId = vos::OThread::getCurrentIdentifier();
 	mnCount++;
 }
 
+void SalYieldMutex::acquireOnMainThread()
+{
+    // while another thread owns the mutex, run what it hands over via runOnMainThread()
+    for(;;)
+    {
+        pthread_mutex_lock( &maMainThreadMutex );
+        if( OMutex::tryToAcquire() )
+        {
+            mbWakeUpMain = false;
+            pthread_mutex_unlock( &maMainThreadMutex );
+            return;
+        }
+        mbMainWaiting = true;
+        while( ! mbWakeUpMain )
+            pthread_cond_wait( &maMainThreadCond, &maMainThreadMutex );
+        mbMainWaiting = false;
+        mbWakeUpMain = false;
+        const boost::function0<void>* pFunc = mpMainThreadFunc;
+        mpMainThreadFunc = NULL;
+        pthread_mutex_unlock( &maMainThreadMutex );
+
+        if( pFunc )
+            runForOwner( pFunc );
+    }
+}
+
+void SalYieldMutex::runPendingOnMainThread()
+{
+    if( ! isMainThread() || mbRunningForOwner )
+        return;
+
+    pthread_mutex_lock( &maMainThreadMutex );
+    const boost::function0<void>* pFunc = mpMainThreadFunc;
+    mpMainThreadFunc = NULL;
+    pthread_mutex_unlock( &maMainThreadMutex );
+
+    if( pFunc )
+        runForOwner( pFunc );
+}
+
+void SalYieldMutex::runForOwner( const boost::function0<void>* pFunc )
+{
+    std::exception_ptr aException;
+    mbRunningForOwner = true;
+    try
+    {
+        (*pFunc)();
+    }
+    catch( ... )
+    {
+        aException = std::current_exception();
+    }
+    mbRunningForOwner = false;
+
+    pthread_mutex_lock( &maMainThreadMutex );
+    maMainThreadException = aException;
+    mbResultReady = true;
+    pthread_cond_signal( &maResultCond );
+    pthread_mutex_unlock( &maMainThreadMutex );
+}
+
 void SalYieldMutex::release()
 {
+    const bool bMainThread = isMainThread();
+    if( bMainThread && mbRunningForOwner )
+        return;
+
+    // the main thread may be waiting for this release in acquireOnMainThread()
+    if( ! bMainThread && mnCount == 1 && mnThreadId == vos::OThread::getCurrentIdentifier() )
+    {
+        pthread_mutex_lock( &maMainThreadMutex );
+        mnThreadId = 0;
+        mnCount--;
+        OMutex::release();
+        mbWakeUpMain = true;
+        pthread_cond_signal( &maMainThreadCond );
+        pthread_mutex_unlock( &maMainThreadMutex );
+        return;
+    }
+
 	if ( mnThreadId == vos::OThread::getCurrentIdentifier() )
 	{
 		if ( mnCount == 1 )
@@ -363,8 +502,56 @@ void SalYieldMutex::release()
 	OMutex::release();
 }
 
+void SalYieldMutex::runOnMainThread( const boost::function0<void>& rFunc )
+{
+    if( isMainThread() )
+    {
+        rFunc();
+        return;
+    }
+
+    // the main thread only runs rFunc for the owner of the mutex
+    vos::OGuard aGuard( *this );
+
+    bool bMainWaiting;
+    pthread_mutex_lock( &maMainThreadMutex );
+    mpMainThreadFunc = &rFunc;
+    mbWakeUpMain = true;
+    bMainWaiting = mbMainWaiting;
+    pthread_cond_signal( &maMainThreadCond );
+    pthread_mutex_unlock( &maMainThreadMutex );
+
+    // common modes also reach a main thread inside AppKit's menu tracking or live resize loops
+    if( ! bMainWaiting )
+    {
+        static SalMainThreadRunner* pRunner = [[SalMainThreadRunner alloc] init];
+        [pRunner performSelectorOnMainThread: @selector(runPending:)
+                 withObject: nil
+                 waitUntilDone: NO
+                 modes: [NSArray arrayWithObject: NSRunLoopCommonModes]];
+    }
+
+    std::exception_ptr aException;
+    pthread_mutex_lock( &maMainThreadMutex );
+    while( ! mbResultReady )
+        pthread_cond_wait( &maResultCond, &maMainThreadMutex );
+    mbResultReady = false;
+    std::swap( aException, maMainThreadException );
+    pthread_mutex_unlock( &maMainThreadMutex );
+
+    if( aException )
+        std::rethrow_exception( aException );
+}
+
+bool SalYieldMutex::isRunningForOwner() const
+{
+    return isMainThread() && mbRunningForOwner;
+}
+
 sal_Bool SalYieldMutex::tryToAcquire()
 {
+    if( isMainThread() && mbRunningForOwner )
+        return sal_True;
 	if ( OMutex::tryToAcquire() )
 	{
 		mnThreadId = vos::OThread::getCurrentIdentifier();
@@ -444,10 +631,11 @@ void DestroySalInstance( SalInstance* pInst )
 
 AquaSalInstance::AquaSalInstance()
 {
+    maMainThread = vos::OThread::getCurrentIdentifier();
 	mpSalYieldMutex = new SalYieldMutex;
+    mpSalYieldMutex->setMainThread( maMainThread );
 	mpSalYieldMutex->acquire();
 	::tools::SolarMutex::SetSolarMutex( mpSalYieldMutex );
-    maMainThread = vos::OThread::getCurrentIdentifier();
     mbWaitingYield = false;
     maUserEventListMutex = osl_createMutex();
     mnActivePrintJobs = 0;
@@ -471,20 +659,7 @@ void AquaSalInstance::wakeupYield()
 {
     // wakeup :Yield
     if( mbWaitingYield )
-    {
-        SalData::ensureThreadAutoreleasePool();
-        NSEvent* pEvent = [NSEvent otherEventWithType: NSApplicationDefined
-                                   location: NSZeroPoint
-                                   modifierFlags: 0
-                                   timestamp: 0
-                                   windowNumber: 0
-                                   context: nil
-                                   subtype: AquaSalInstance::YieldWakeupEvent
-                                   data1: 0
-                                   data2: 0 ];
-        if( pEvent )
-            [NSApp postEvent: pEvent atStart: NO];
-    }
+        postYieldWakeupEvent();
 }
 
 // -----------------------------------------------------------------------
@@ -546,6 +721,9 @@ bool AquaSalInstance::CheckYieldMutex()
 {
     bool bRet = true;
 
+    if( mpSalYieldMutex->isRunningForOwner() )
+        return bRet;
+
 	SalYieldMutex* pYieldMutex = mpSalYieldMutex;
 	if ( pYieldMutex->GetThreadId() !=
 		 vos::OThread::getCurrentIdentifier() )
@@ -561,6 +739,16 @@ bool AquaSalInstance::CheckYieldMutex()
 bool AquaSalInstance::isNSAppThread() const
 {
     return vos::OThread::getCurrentIdentifier() == maMainThread;
+}
+
+// -----------------------------------------------------------------------
+
+bool AquaSalInstance::forwardToMainThread( const boost::function0<void>& rFunc )
+{
+    if( isNSAppThread() )
+        return false;
+    mpSalYieldMutex->runOnMainThread( rFunc );
+    return true;
 }
 
 // -----------------------------------------------------------------------
@@ -820,6 +1008,9 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
 
 bool AquaSalInstance::AnyInput( sal_uInt16 nType )
 {
+    if( ! isNSAppThread() )
+        return callOnMainThread< bool >( boost::bind( &AquaSalInstance::AnyInput, this, nType ) );
+
     if( nType & INPUT_APPEVENT )
     {
         if( ! aAppEventList.empty() )
@@ -883,6 +1074,8 @@ SalFrame* AquaSalInstance::CreateFrame( SalFrame* pParent, sal_uLong nSalFrameSt
 
 void AquaSalInstance::DestroyFrame( SalFrame* pFrame )
 {
+    if( forwardToMainThread( boost::bind( &AquaSalInstance::DestroyFrame, this, pFrame ) ) )
+        return;
 	delete pFrame;
 }
 
