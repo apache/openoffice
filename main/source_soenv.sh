@@ -104,7 +104,7 @@ else
         powerpc-*-freebsd*)
             . ./FreeBSDPPCEnv.Set.sh
         ;;
-        powerpc64-*-freebsd*)
+        powerpc64-*-freebsd*|powerpc64le-*-freebsd*)
             . ./FreeBSDPPC64Env.Set.sh
         ;;
         # the result here (whether you get x86_64) seems to depend on $CC...
