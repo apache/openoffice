@@ -1018,6 +1018,10 @@ void SAL_CALL SfxDocumentMetaData::updateUserDefinedAndAttributes()
         updateElement("meta:hyperlink-behaviour");
     }
     attributes.clear();
+
+    if (!isValidDateTime(textToDateTimeDefault(getMetaText("meta:print-date")))) {
+        static_cast<void>(setMetaText("meta:print-date", ::rtl::OUString()));
+    }
 }
 
 // create empty DOM tree (XDocument)
