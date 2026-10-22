@@ -1,6 +1,6 @@
 --- misc/src/build.xml	2008-07-11 12:11:50.079281000 +0200
 +++ misc/build/src/build.xml	2008-07-11 12:17:29.848740000 +0200
-@@ -1 +1,1027 @@
+@@ -1 +1,1023 @@
 -dummy
 +<?xml version="1.0" encoding="UTF-8"?>
 +
@@ -171,11 +171,7 @@
 +    -->
 +
 +    <property name="solar.bin" value="${solarbindir}"/>
-+    <path id="classpath-j">
-+        <fileset dir="${solar.bin}">
-+
-+        </fileset>
-+    </path>
++    <path id="classpath-j"/>
 +
 +    <path id="classpath-n">
 +        <fileset dir="${lib.dir}">
