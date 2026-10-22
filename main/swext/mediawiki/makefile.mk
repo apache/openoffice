@@ -28,32 +28,16 @@ TARGET=mediawiki
 .IF "$(ENABLE_MEDIAWIKI)" == "YES"
 .INCLUDE : ant.mk
 
-.IF "$(SYSTEM_APACHE_COMMONS)" != "YES"
-COMMONS_CODEC_JAR=$(SOLARVER)$/$(INPATH)$/bin$(UPDMINOREXT)$/commons-codec-1.9.jar
-COMMONS_LANG_JAR=$(SOLARVER)$/$(INPATH)$/bin$(UPDMINOREXT)$/commons-lang3-3.3.jar
-COMMONS_HTTPCLIENT_JAR=$(SOLARVER)$/$(INPATH)$/bin$(UPDMINOREXT)$/commons-httpclient-3.1.jar
-COMMONS_LOGGING_JAR=$(SOLARVER)$/$(INPATH)$/bin$(UPDMINOREXT)$/commons-logging-1.1.3.jar
-.ELSE
-COMP=fix_system_commons
-.ENDIF
-
 .IF defined(debug) || defined(DEBUG)
 ANTDEBUG=true
 .ELSE
 ANTDEBUG=off
 .ENDIF
 
-ANT_FLAGS+=-Dcommons-codec-jar=$(COMMONS_CODEC_JAR) -Dcommons-lang-jar=$(COMMONS_LANG_JAR) -Dcommons-httpclient-jar=$(COMMONS_HTTPCLIENT_JAR) -Dcommons-logging-jar=$(COMMONS_LOGGING_JAR) -Dantdebug=$(ANTDEBUG)
+ANT_FLAGS+=-Dantdebug=$(ANTDEBUG)
 
 # creates two files wiki-publisher.oxt and mediawiki_develop.zip, the second one might be used in further build process
-ALLTAR: $(COMP) ANTBUILD
-
-fix_system_commons:
-	@echo "Fix Java Class-Path entry for Apache Commons libraries from system."
-	@$(SED) -i.bak -r -e "s#(name=\"Class-Path\" value=\").*\"#\1file://$(COMMONS_CODEC_JAR) file://$(COMMONS_LANG_JAR) \
-file://$(COMMONS_HTTPCLIENT_JAR) file://$(COMMONS_LOGGING_JAR)\"#" build.xml
-	@echo "Unbundle Apache Commons libraries from Mediawiki Presentation extension."
-	@$(SED) -i.bak '/file="..commons/d' build.xml
+ALLTAR: ANTBUILD
 
 .ELSE
 @all:

@@ -26,36 +26,31 @@ package com.sun.star.wiki;
 import com.sun.star.uno.Any;
 import com.sun.star.awt.XDialog;
 import com.sun.star.awt.XCallback;
-import com.sun.star.awt.XMessageBox;
 import com.sun.star.awt.XRequestCallback;
 import com.sun.star.lang.XMultiComponentFactory;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
+import java.util.concurrent.Callable;
 
 public class MainThreadDialogExecutor implements XCallback
 {
-    private WikiDialog m_aWikiDialog;
+    private Callable<Boolean> m_aTask;
     private XDialog    m_xDialog;
-    private XMessageBox m_xMessageBox;
     private boolean    m_bResult = false;
     private boolean    m_bCalled = false;
     private boolean    m_bClose = false;
 
-    static public boolean Show( XComponentContext xContext, WikiDialog aWikiDialog )
+    /** Runs aTask on the main thread. Dialogs and message boxes must also be created there:
+        on macOS a window created on another thread gets no native window and its modal execute never returns. */
+    static public boolean Run( XComponentContext xContext, Callable<Boolean> aTask )
     {
-        MainThreadDialogExecutor aExecutor = new MainThreadDialogExecutor( aWikiDialog );
+        MainThreadDialogExecutor aExecutor = new MainThreadDialogExecutor( aTask );
         return GetCallback( xContext, aExecutor );
     }
 
     static public boolean Execute( XComponentContext xContext, XDialog xDialog )
     {
         MainThreadDialogExecutor aExecutor = new MainThreadDialogExecutor( xDialog );
-        return GetCallback( xContext, aExecutor );
-    }
-
-    static public boolean Execute( XComponentContext xContext, XMessageBox xMessageBox )
-    {
-        MainThreadDialogExecutor aExecutor = new MainThreadDialogExecutor( xMessageBox );
         return GetCallback( xContext, aExecutor );
     }
 
@@ -111,9 +106,9 @@ public class MainThreadDialogExecutor implements XCallback
         return aExecutor.GetResult();
     }
 
-    private MainThreadDialogExecutor( WikiDialog aWikiDialog )
+    private MainThreadDialogExecutor( Callable<Boolean> aTask )
     {
-        m_aWikiDialog = aWikiDialog;
+        m_aTask = aTask;
     }
 
     private MainThreadDialogExecutor( XDialog xDialog )
@@ -128,11 +123,6 @@ public class MainThreadDialogExecutor implements XCallback
         m_bCalled = true; // no yielding, asynchronous closing
     }
 
-    private MainThreadDialogExecutor( XMessageBox xMessageBox )
-    {
-        m_xMessageBox = xMessageBox;
-    }
-
     private boolean GetResult()
     {
         return m_bResult;
@@ -140,8 +130,17 @@ public class MainThreadDialogExecutor implements XCallback
 
     public void notify( Object aData )
     {
-        if ( m_aWikiDialog != null )
-            m_bResult = m_aWikiDialog.show();
+        if ( m_aTask != null )
+        {
+            try
+            {
+                m_bResult = m_aTask.call().booleanValue();
+            }
+            catch( Exception e )
+            {
+                e.printStackTrace();
+            }
+        }
         else if ( m_xDialog != null )
         {
             if ( !m_bClose )
@@ -158,12 +157,6 @@ public class MainThreadDialogExecutor implements XCallback
                 }
                 m_bResult = true;
             }
-        }
-        else if ( m_xMessageBox != null )
-        {
-            int nRes = m_xMessageBox.execute();
-            m_bResult = ( nRes == com.sun.star.awt.MessageBoxResults.OK
-                          || nRes == com.sun.star.awt.MessageBoxResults.YES );
         }
 
         m_bCalled = true;

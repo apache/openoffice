@@ -56,11 +56,6 @@
             <pathelement location="${officeclasses}/jurt.jar"/>
             <pathelement location="${officeclasses}/ridl.jar"/>
             <pathelement location="${officeclasses}/unoil.jar"/>
-            <!-- 3rd party libs -->
-            <pathelement location="${commons-codec-jar}"/>
-            <pathelement location="${commons-httpclient-jar}"/>
-            <pathelement location="${commons-lang-jar}"/>
-            <pathelement location="${commons-logging-jar}"/>
         </path>
 
         <!-- create output directories -->
@@ -93,8 +88,6 @@
     <target name="jar" depends="compile, init">
         <jar basedir="${classes}" compress="true" jarfile="${dist}/${target}.jar">
             <manifest>
-		<!-- FIXME: Set Class-Path correctly for the system case !-->
-                <attribute name="Class-Path" value="commons-codec-1.9.jar commons-lang3-3.3.jar commons-httpclient-3.1.jar commons-logging-1.1.3.jar"/>
                 <attribute name="RegistrationClassName" value="com.sun.star.wiki.WikiEditorImpl"/>
             </manifest>
         </jar>
@@ -125,10 +118,6 @@
         <zip destfile="${dist}/${name}.${ext}">
             <fileset dir="${out}/misc/${target}/package_tmp" casesensitive="yes"/>
             <fileset dir="${dist}" includes="${target}.jar" casesensitive="yes"/>
-            <file file="${commons-codec-jar}"/>
-            <file file="${commons-httpclient-jar}"/>
-            <file file="${commons-lang-jar}"/>
-            <file file="${commons-logging-jar}"/>
             <zipfileset file="src/filter/odt2mediawiki.xsl" casesensitive="yes" fullpath="filter/odt2mediawiki.xsl"/>
             <zipfileset file="src/filter/mediawiki.ott" casesensitive="yes" fullpath="templates/MediaWiki/mediawiki.ott"/>
             <zipfileset dir="${solar.bin}/xslt/export/xsltml" casesensitive="yes" prefix="filter/math"/>
@@ -137,7 +126,6 @@
             <zipfileset dir="${out}/misc/${target}/license" includes="LICENSE*" casesensitive="yes" prefix="license"/>
             <zipfileset dir="${out}/misc/${target}/help" includes="**/*.idxl/*,**/*.*_,**/*.jar" casesensitive="yes" prefix="help"/>
             <zipfileset dir="${out}/misc/${target}/help" includes="**/*.xhp" casesensitive="yes" prefix="help"/>
-            <zipfileset dir="src" includes="THIRDPARTYLICENSEREADME.html" casesensitive="yes" prefix="license"/>
         </zip>
     </target>
 
@@ -161,7 +149,6 @@
             <zipfileset dir="dialogs" includes="**/*.xdl,**/*.xba,**/*.xlb" casesensitive="yes" prefix="WikiEditor" filemode="664" dirmode="775"/>
             <zipfileset dir="src" includes="uno-extension-manifest.xml" casesensitive="yes" fullpath="META-INF/manifest.xml" filemode="664" dirmode="775"/>
             <zipfileset dir="${out}/misc/${target}/license" includes="LICENSE*" casesensitive="yes" prefix="license" filemode="664" dirmode="775"/>
-            <zipfileset dir="src" includes="THIRDPARTYLICENSEREADME.html" casesensitive="yes" prefix="license" filemode="664" dirmode="775"/>
         </zip>
     </target>
 
