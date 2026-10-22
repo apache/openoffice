@@ -333,10 +333,13 @@ void fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal_uInt64* 
 
 sal_uInt32 align_stack_offset( sal_uInt32 offset, typelib_TypeDescriptionReference *pTypeRef )
 {
-	// On aarch64 System V ABI, the smallest stack slot is 8 bytes.
-	// Align to 8 bytes regardless of the type's natural alignment.
-	const sal_uInt32 align = 8;
-	return ( offset + align - 1 ) & ~( align - 1 );
+	typelib_TypeDescription * pTypeDescr = 0;
+	TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+	sal_uInt32 alignment = pTypeDescr->nAlignment;
+	TYPELIB_DANGER_RELEASE( pTypeDescr );
+	if ( alignment == 0 )
+		alignment = 1;
+	return ( offset + alignment - 1 ) & ~( alignment - 1 );
 }
 
 sal_uInt32 stack_size( typelib_TypeDescriptionReference *pTypeRef )
@@ -344,13 +347,12 @@ sal_uInt32 stack_size( typelib_TypeDescriptionReference *pTypeRef )
 	typelib_TypeDescription * pTypeDescr = 0;
 	TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
 	sal_uInt32 size = pTypeDescr->nSize;
+	// AAPCS64 requires each stack argument to occupy a full 8-byte
+	// slot; small types are sign- or zero-extended into the slot.
+	if ( size < 8 )
+		size = 8;
 	TYPELIB_DANGER_RELEASE( pTypeDescr );
-	// In the System V AMD64 / AAPCS64 stack layout, the smallest slot that
-	// can be passed is 8 bytes (the natural stack slot size).  Round up
-	// so that small types like BOOLEAN (1B), SHORT (2B), LONG (4B) each
-	// occupy a full 8-byte slot on the overflow stack, matching what the
-	// callee's ABI expects.
-	return ( size + 7 ) & ~7u;
+	return size;
 }
 
 } // namespace aarch64
