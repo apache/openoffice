@@ -179,8 +179,8 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
 //==================================================================================================
 // The AArch64 outgoing-call trampoline, implemented in call.s, is declared in ABI
 // and used by callVirtualMethod above. The rest of the file implements the
-// public callVirtualMethod entrypoints used by the bridge; these are identical
-// to the macOS AArch64 implementation and therefore are compatible on FreeBSD.
+// public callVirtualMethod entrypoints used by the bridge; these follow the
+// System V AMD64 / AAPCS64 ABI for FreeBSD aarch64.
 
 extern "C" void callVirtualFunction(
 	sal_uInt64 pFunction, sal_uInt64 pIndirectRet,
