@@ -187,8 +187,8 @@ callVirtualMethod:
 	mr 9,3
 	mr 10,4
 	lfd 0,152(31)
-	ld 7,128(31)
-	ld 6,120(31)
+	ld 6,128(31)
+	ld 5,120(31)
 	fmr 1,0
 	mr 4,10
 	mr 3,9
@@ -273,6 +273,8 @@ stfd 13, 96(9)
 	mr 9,3
 	stw 9,44(31)
 	lwa 9,44(31)
+	cmpwi 0,9,100
+	beq 0,.Lfprs
 	cmplwi 0,9,15
 	bgt 0,.L7
 	sldi 10,9,2
@@ -373,6 +375,16 @@ stfd 13, 96(9)
 
  # 0 "" 2
 #NO_APP
+	b .L17
+.Lfprs:
+	lfd 1,144(31)
+	lfd 2,152(31)
+	lfd 3,160(31)
+	lfd 4,168(31)
+	lfd 5,176(31)
+	lfd 6,184(31)
+	lfd 7,192(31)
+	lfd 8,200(31)
 	b .L17
 .L19:
 	nop
