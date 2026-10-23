@@ -2547,10 +2547,13 @@ sal_Int32 XMLTextParagraphExport::addTextFrameAttributes(
 	{
 		sal_Int16 nPage = 0;
 		rPropSet->getPropertyValue( sAnchorPageNo ) >>= nPage;
-		GetExport().GetMM100UnitConverter().convertNumber( sValue,
-														   (sal_Int32)nPage );
-		GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_ANCHOR_PAGE_NUMBER,
-								  sValue.makeStringAndClear() );
+		if( nPage > 0 )
+		{
+			GetExport().GetMM100UnitConverter().convertNumber( sValue,
+															   (sal_Int32)nPage );
+			GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_ANCHOR_PAGE_NUMBER,
+									  sValue.makeStringAndClear() );
+		}
 	}
 	else
 	{
