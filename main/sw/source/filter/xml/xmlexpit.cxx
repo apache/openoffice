@@ -138,7 +138,7 @@ void SvXMLExportItemMapper::exportXML( const SvXMLExport& rExport,
 			if( rEntry.nNameSpace == XML_NAMESPACE_STYLE )
 			{
 				if( (rExport.getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE ) == 0 ||
-					rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ||
+					rExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_012 ||
 					!QueryXMLValue(rItem, aValue,
 					static_cast< sal_uInt16 >( rEntry.nMemberId & MID_SW_FLAG_MASK ),
 					rUnitConverter ) )
