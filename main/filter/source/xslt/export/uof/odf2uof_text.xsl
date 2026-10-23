@@ -2848,12 +2848,12 @@
 						<xsl:attribute name="uof:attrList">固定值 最小值</xsl:attribute>
 					</xsl:element>
 				</xsl:for-each>
-				<xsl:if test="key('set_styleStyle',$rowStyleName)/style:table-row-properties[@style:keep-together]">
+				<xsl:if test="key('set_styleStyle',$rowStyleName)/style:table-row-properties[@style:keep-together or @fo:keep-together]">
 					<xsl:element name="字:跨页">
 						<xsl:attribute name="uof:locID">t0146</xsl:attribute>
 						<xsl:attribute name="uof:attrList">值</xsl:attribute>
-						<xsl:for-each select="key('set_styleStyle',$rowStyleName)/style:table-row-properties[@style:keep-together]">
-							<xsl:attribute name="字:值"><xsl:choose><xsl:when test="@style:keep-together='false'">false</xsl:when><xsl:otherwise>true</xsl:otherwise></xsl:choose></xsl:attribute>
+						<xsl:for-each select="key('set_styleStyle',$rowStyleName)/style:table-row-properties[@style:keep-together or @fo:keep-together]">
+							<xsl:attribute name="字:值"><xsl:choose><xsl:when test="@style:keep-together='false' or @fo:keep-together='always'">false</xsl:when><xsl:otherwise>true</xsl:otherwise></xsl:choose></xsl:attribute>
 						</xsl:for-each>
 					</xsl:element>
 				</xsl:if>
