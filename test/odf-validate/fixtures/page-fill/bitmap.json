@@ -1,6 +1,23 @@
 [
  {
   "name": "page_bitmap",
-  "expr": "[(pre or 'page', ('GraphicObject:0000' not in u and 'GraphicObject:' in u), g.getPropertyValue(pre+'FillStyle').value) for g in [doc.StyleFamilies.getByName('PageStyles').getByName('P_bitmap')] for pre in ('', 'Header', 'Footer') for u in [g.getPropertyValue(pre+'BackGraphicURL')]]"
+  "expr": "[(pre or 'page', ('GraphicObject:0000' not in u and 'GraphicObject:' in u), g.getPropertyValue(pre+'FillStyle').value) for g in [doc.StyleFamilies.getByName('PageStyles').getByName('P_bitmap')] for pre in ('', 'Header', 'Footer') for u in [g.getPropertyValue(pre+'BackGraphicURL')]]",
+  "expect": [
+   [
+    "page",
+    true,
+    "BITMAP"
+   ],
+   [
+    "Header",
+    true,
+    "BITMAP"
+   ],
+   [
+    "Footer",
+    true,
+    "BITMAP"
+   ]
+  ]
  }
 ]

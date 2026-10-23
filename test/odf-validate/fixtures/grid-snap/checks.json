@@ -1,6 +1,26 @@
 [
  {
   "name": "page_grid",
-  "expr": "[(n, ps.GridMode, ps.StandardPageMode, ps.GridBaseWidth, ps.GridSnapToChars) for n in ('G_snap_on','G_snap_off','G_lines_off') for ps in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]"
+  "expr": "[(n, ps.GridMode, ps.GridBaseWidth, ps.GridSnapToChars) for n in ('G_snap_on','G_snap_off','G_lines_off') for ps in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]",
+  "expect": [
+   [
+    "G_snap_on",
+    2,
+    706,
+    true
+   ],
+   [
+    "G_snap_off",
+    2,
+    706,
+    false
+   ],
+   [
+    "G_lines_off",
+    1,
+    706,
+    false
+   ]
+  ]
  }
 ]

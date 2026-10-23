@@ -1,14 +1,116 @@
 [
  {
   "name": "page_fill",
-  "expr": "[(n, s.BackColor, s.BackTransparent, s.FillStyle.value, s.FillColor, s.FillTransparence) for n in ('P_solid','P_transp','P_grad','P_bitmap') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]"
+  "expr": "[(n, s.BackColor, s.BackTransparent, s.FillStyle.value, s.FillColor, s.FillTransparence) for n in ('P_solid','P_transp','P_grad','P_bitmap') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]",
+  "expect": [
+   [
+    "P_solid",
+    6737151,
+    false,
+    "SOLID",
+    6737151,
+    0
+   ],
+   [
+    "P_transp",
+    1701235967,
+    false,
+    "SOLID",
+    6737151,
+    40
+   ],
+   [
+    "P_grad",
+    8388736,
+    false,
+    "GRADIENT",
+    8388736,
+    0
+   ],
+   [
+    "P_bitmap",
+    -1,
+    true,
+    "BITMAP",
+    13625333,
+    0
+   ]
+  ]
  },
  {
   "name": "hf_fill",
-  "expr": "[(n, s.HeaderBackColor, s.HeaderFillStyle.value, s.HeaderFillColor, s.HeaderFillTransparence, s.FooterBackColor, s.FooterFillStyle.value, s.FooterFillColor, s.FooterFillTransparence) for n in ('P_solid','P_transp','P_grad','P_bitmap') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]"
+  "expr": "[(n, s.HeaderBackColor, s.HeaderFillStyle.value, s.HeaderFillColor, s.HeaderFillTransparence, s.FooterBackColor, s.FooterFillStyle.value, s.FooterFillColor, s.FooterFillTransparence) for n in ('P_solid','P_transp','P_grad','P_bitmap') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]",
+  "expect": [
+   [
+    "P_solid",
+    13434726,
+    "SOLID",
+    13434726,
+    0,
+    16737996,
+    "SOLID",
+    16737996,
+    0
+   ],
+   [
+    "P_transp",
+    1707933542,
+    "SOLID",
+    13434726,
+    40,
+    1711236812,
+    "SOLID",
+    16737996,
+    40
+   ],
+   [
+    "P_grad",
+    8388736,
+    "GRADIENT",
+    8388736,
+    0,
+    16777164,
+    "HATCH",
+    16777164,
+    0
+   ],
+   [
+    "P_bitmap",
+    -1,
+    "BITMAP",
+    13625333,
+    0,
+    -1,
+    "BITMAP",
+    13625333,
+    0
+   ]
+  ]
  },
  {
   "name": "page_desc_names",
-  "expr": "[(p.String, p.PageDescName) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None)]"
+  "expr": "[(p.String, p.PageDescName) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None)]",
+  "expect": [
+   [
+    "page P_solid",
+    "P_solid"
+   ],
+   [
+    "page P_transp",
+    "P_transp"
+   ],
+   [
+    "page P_grad",
+    "P_grad"
+   ],
+   [
+    "page P_bitmap",
+    "P_bitmap"
+   ],
+   [
+    "",
+    null
+   ]
+  ]
  }
 ]

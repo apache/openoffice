@@ -1,18 +1,74 @@
 [
  {
   "name": "frames",
-  "expr": "[(f.Text.String, f.FillStyle.value, f.FillColor, f.FillGradient.StartColor, f.FillGradient.EndColor, f.BackColor, f.BackTransparent) for n in doc.TextFrames.ElementNames for f in [doc.TextFrames.getByName(n)]]"
+  "expr": "[(f.Text.String, f.FillStyle.value, f.FillColor, f.FillGradient.StartColor, f.FillGradient.EndColor, f.BackColor, f.BackTransparent) for n in doc.TextFrames.ElementNames for f in [doc.TextFrames.getByName(n)]]",
+  "expect": [
+   [
+    "frame solid",
+    "SOLID",
+    3385941,
+    0,
+    16777215,
+    3385941,
+    false
+   ],
+   [
+    "frame gradient",
+    "GRADIENT",
+    13625333,
+    16711680,
+    255,
+    8388736,
+    false
+   ]
+  ]
  },
  {
   "name": "table",
-  "expr": "[(c, t.getCellByName(c).BackColor, t.getCellByName(c).BackTransparent) for t in [doc.TextTables.getByIndex(0)] for c in ('A1','B1','A2')] + [doc.TextTables.getByIndex(0).BackColor]"
+  "expr": "[(c, t.getCellByName(c).BackColor, t.getCellByName(c).BackTransparent) for t in [doc.TextTables.getByIndex(0)] for c in ('A1','B1','A2')] + [doc.TextTables.getByIndex(0).BackColor]",
+  "expect": [
+   [
+    "A1",
+    16763904,
+    false
+   ],
+   [
+    "B1",
+    16755404,
+    false
+   ],
+   [
+    "A2",
+    -1,
+    true
+   ],
+   13434828
+  ]
  },
  {
   "name": "section",
-  "expr": "[(s.BackColor, s.BackTransparent) for s in [doc.TextSections.getByIndex(0)]]"
+  "expr": "[(s.BackColor, s.BackTransparent) for s in [doc.TextSections.getByIndex(0)]]",
+  "expect": [
+   [
+    13421823,
+    false
+   ]
+  ]
  },
  {
   "name": "paras",
-  "expr": "[(p.String, p.ParaBackColor, p.ParaBackTransparent) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None) if p.supportsService('com.sun.star.text.Paragraph')]"
+  "expr": "[(p.String, p.ParaBackColor, p.ParaBackTransparent) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None) if p.supportsService('com.sun.star.text.Paragraph')]",
+  "expect": [
+   [
+    "",
+    -3151883,
+    true
+   ],
+   [
+    "",
+    -3151883,
+    true
+   ]
+  ]
  }
 ]

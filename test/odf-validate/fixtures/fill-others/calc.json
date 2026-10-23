@@ -1,14 +1,42 @@
 [
  {
   "name": "cell",
-  "expr": "[(c.String, c.CellBackColor, c.IsCellBackgroundTransparent) for c in [doc.Sheets.getByIndex(0).getCellByPosition(0,0), doc.Sheets.getByIndex(0).getCellByPosition(2,2)]]"
+  "expr": "[(c.String, c.CellBackColor, c.IsCellBackgroundTransparent) for c in [doc.Sheets.getByIndex(0).getCellByPosition(0,0), doc.Sheets.getByIndex(0).getCellByPosition(2,2)]]",
+  "expect": [
+   [
+    "cell",
+    16763904,
+    false
+   ],
+   [
+    "",
+    -1,
+    true
+   ]
+  ]
  },
  {
   "name": "page_style",
-  "expr": "[(s.BackColor, s.IsBackgroundTransparent) for s in [doc.StyleFamilies.getByName('PageStyles').getByName('Default')]]"
+  "expr": "[(s.BackColor, s.IsBackgroundTransparent) for s in [doc.StyleFamilies.getByName('PageStyles').getByName('Default')]]",
+  "expect": [
+   [
+    14544639,
+    false
+   ]
+  ]
  },
  {
   "name": "shapes",
-  "expr": "[(s.String, s.FillStyle.value, s.FillColor, s.FillGradient.StartColor, s.FillGradient.EndColor, s.FillTransparence) for i in range(doc.Sheets.getByIndex(0).DrawPage.Count) for s in [doc.Sheets.getByIndex(0).DrawPage.getByIndex(i)]]"
+  "expr": "[(s.String, s.FillStyle.value, s.FillColor, s.FillGradient.StartColor, s.FillGradient.EndColor, s.FillTransparence) for i in range(doc.Sheets.getByIndex(0).DrawPage.Count) for s in [doc.Sheets.getByIndex(0).DrawPage.getByIndex(i)]]",
+  "expect": [
+   [
+    "calc shape",
+    "GRADIENT",
+    13625333,
+    16711680,
+    255,
+    0
+   ]
+  ]
  }
 ]
