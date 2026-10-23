@@ -1668,7 +1668,8 @@ void XMLShapeExport::ImpExportOLE2Shape(
 			SvXMLElementExport aElem( mrExport, XML_NAMESPACE_DRAW, eElem, sal_True, sal_True );
 
             // #i118485# Add text export, the draw OLE shape allows text now
-            if( mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_010 || mrExport.getDefaultVersion() > SvtSaveOptions::ODFVER_012 ) ImpExportText( xShape );
+            uno::Reference< text::XText > xOleText( xShape, uno::UNO_QUERY );
+            if( ( mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_010 || mrExport.getDefaultVersion() > SvtSaveOptions::ODFVER_012 ) && xOleText.is() && xOleText->getString().getLength() ) ImpExportText( xShape );
 
 			if(bExportEmbedded && !bIsEmptyPresObj)
 			{
