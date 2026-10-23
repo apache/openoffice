@@ -1656,10 +1656,17 @@ void XMLTextFieldExport::ExportFieldHelper(
 		// reference to end-/footnote: format, generate name, (and element)
 		GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_NOTE_CLASS,
 			FIELD_ID_REF_ENDNOTE==nToken ? XML_ENDNOTE : XML_FOOTNOTE );
-		ProcessString(XML_REFERENCE_FORMAT,
-					  MapReferenceType(GetInt16Property(
-						  sPropertyReferenceFieldPart, rPropSet)),
-					  XML_TEMPLATE);
+		{
+			sal_Int16 nPart = GetInt16Property(
+				sPropertyReferenceFieldPart, rPropSet);
+			// sequence-only formats; a note reference shows the same text
+			if( ReferenceFieldPart::CATEGORY_AND_NUMBER == nPart ||
+				ReferenceFieldPart::ONLY_CAPTION == nPart ||
+				ReferenceFieldPart::ONLY_SEQUENCE_NUMBER == nPart )
+				nPart = ReferenceFieldPart::TEXT;
+			ProcessString(XML_REFERENCE_FORMAT, MapReferenceType(nPart),
+						  XML_TEMPLATE);
+		}
 		ProcessString(XML_REF_NAME,
 					  MakeFootnoteRefName(GetInt16Property(
 						  sPropertySequenceNumber, rPropSet)));
