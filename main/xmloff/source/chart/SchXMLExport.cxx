@@ -1731,6 +1731,7 @@ void SchXMLExportHelper_Impl::exportTable()
         SvXMLElementExport aHeaderColumns( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_HEADER_COLUMNS, sal_True, sal_True );
         SvXMLElementExport aHeaderColumn( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_COLUMN, sal_True, sal_True );
     }
+    if( !aData.aHiddenColumns.empty() || !aData.aColumnDescriptions.empty() )
     {
         SvXMLElementExport aColumns( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_COLUMNS, sal_True, sal_True );
 
@@ -1824,6 +1825,7 @@ void SchXMLExportHelper_Impl::exportTable()
     } // closing row and header-rows elements
 
     // export value rows
+    if( !aData.aDataInRows.empty() )
     {
         SvXMLElementExport aRows( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_ROWS, sal_True, sal_True );
         tStringVector::const_iterator aRowDescriptionsIter( aData.aRowDescriptions.begin());
