@@ -1,0 +1,16 @@
+[
+ {
+  "name": "calc_aliens",
+  "expr": "sorted(doc.Sheets.getByIndex(0).getCellByPosition(0, 0).UserDefinedAttributes.ElementNames)",
+  "expect": [
+   "ex:alien-foreign"
+  ]
+ },
+ {
+  "name": "calc_aliens_foreign",
+  "expr": "[n for n in sorted(doc.Sheets.getByIndex(0).getCellByPosition(0, 0).UserDefinedAttributes.ElementNames) if n.startswith('ex:')]",
+  "expect": [
+   "ex:alien-foreign"
+  ]
+ }
+]
