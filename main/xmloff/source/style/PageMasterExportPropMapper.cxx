@@ -553,6 +553,18 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 			lcl_RemoveState(pPMFooterGraphicUrl);
 	}
 
+	// ext output writes the page fill as the drawing page style of the master page instead
+	if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+	{
+		for( ::std::vector< XMLPropertyState >::iterator aIter = rPropState.begin(); aIter != rPropState.end(); ++aIter )
+		{
+			if( aIter->mnIndex != -1 &&
+				( aPropMapper->GetEntryType( aIter->mnIndex ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_PAGE_LAYOUT &&
+				aPropMapper->GetEntryAPIName( aIter->mnIndex ).matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "Fill" ) ) )
+				lcl_RemoveState( &(*aIter) );
+		}
+	}
+
 	if( pPMGridBaseWidth && pPMStandardMode )
 		lcl_RemoveState(pPMStandardMode);
 
