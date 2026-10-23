@@ -337,6 +337,8 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 	XMLPropertyState*		pPMStandardMode    	= NULL;
 	XMLPropertyState*		pPMGridBaseWidth   	= NULL;
 	XMLPropertyState*		pPMGridSnapToChars 	= NULL;
+	XMLPropertyState*		pPMHeaderGraphicUrl = NULL;
+	XMLPropertyState*		pPMFooterGraphicUrl = NULL;
 
     XMLPropertyState*       pPrint              = NULL;
 
@@ -405,6 +407,8 @@ void XMLPageMasterExportPropMapper::ContextFilter(
             case CTF_PM_STANDARD_MODE:		pPMStandardMode		= pProp;	break;
             case CTP_PM_GRID_BASE_WIDTH:		pPMGridBaseWidth	= pProp;	break;
             case CTP_PM_GRID_SNAP_TO_CHARS:		pPMGridSnapToChars	= pProp;	break;
+            case CTF_PM_HEADERGRAPHICURL:		pPMHeaderGraphicUrl	= pProp;	break;
+            case CTF_PM_FOOTERGRAPHICURL:		pPMFooterGraphicUrl	= pProp;	break;
 
             //UUUU
             case CTF_PM_REPEAT_OFFSET_X:
@@ -525,6 +529,15 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 			lcl_RemoveState(pPMGridBaseWidth);
 		if( pPMGridSnapToChars )
 			lcl_RemoveState(pPMGridSnapToChars);
+	}
+
+	// ext output stays as before (the ids once collided with the repeat offsets, so none was written)
+	if( SvtSaveOptions().GetODFDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+	{
+		if( pPMHeaderGraphicUrl )
+			lcl_RemoveState(pPMHeaderGraphicUrl);
+		if( pPMFooterGraphicUrl )
+			lcl_RemoveState(pPMFooterGraphicUrl);
 	}
 
 	if( pPMGridBaseWidth && pPMStandardMode )
