@@ -1454,7 +1454,7 @@ void XMLShapeExport::ImpExportConnectorShape(
 
             const basegfx::B2DRange aPathRange(basegfx::tools::getRange(aPolyPolygon));
             SdXMLImExViewBox aViewBox(0, 0, FRound(aPathRange.getWidth()) + 1, FRound(aPathRange.getHeight()) + 1);
-            mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_VIEWBOX, aViewBox.GetExportString());
+            if( mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_010 || mrExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_012 ) mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_VIEWBOX, aViewBox.GetExportString());
         }
     }
 
