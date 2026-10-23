@@ -1,0 +1,10 @@
+[
+ {
+  "name": "para_bitmap",
+  "expr": "[(p.String, ('GraphicObject:0000' not in u and 'GraphicObject:' in u), p.FillStyle.value) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None) if p.String.endswith('bitmap') for u in [p.ParaBackGraphicURL]]"
+ },
+ {
+  "name": "parastyle_bitmap",
+  "expr": "[(('GraphicObject:0000' not in u and 'GraphicObject:' in u), s.FillStyle.value) for s in [doc.StyleFamilies.getByName('ParagraphStyles').getByName('S_bitmap')] for u in [s.ParaBackGraphicURL]]"
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "name": "paragraphs",
+  "expr": "[(p.String, p.ParaBackColor, p.ParaBackTransparent, p.FillStyle.value, p.FillColor, p.FillTransparence) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None)]"
+ },
+ {
+  "name": "para_styles",
+  "expr": "[(n, p.ParaBackColor, p.ParaBackTransparent, p.FillStyle.value, p.FillColor, p.FillTransparence) for n in doc.StyleFamilies.getByName('ParagraphStyles').ElementNames if n.startswith('S_') for p in [doc.StyleFamilies.getByName('ParagraphStyles').getByName(n)]]"
+ },
+ {
+  "name": "styled_para_style_names",
+  "expr": "[(p.String, p.ParaStyleName) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None)]"
+ }
+]

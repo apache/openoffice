@@ -1,0 +1,14 @@
+[
+ {
+  "name": "page_fill",
+  "expr": "[(n, s.BackColor, s.BackTransparent, s.FillStyle.value, s.FillColor, s.FillTransparence) for n in ('P_solid','P_transp','P_grad','P_bitmap') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]"
+ },
+ {
+  "name": "hf_fill",
+  "expr": "[(n, s.HeaderBackColor, s.HeaderFillStyle.value, s.HeaderFillColor, s.HeaderFillTransparence, s.FooterBackColor, s.FooterFillStyle.value, s.FooterFillColor, s.FooterFillTransparence) for n in ('P_solid','P_transp','P_grad','P_bitmap') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]"
+ },
+ {
+  "name": "page_desc_names",
+  "expr": "[(p.String, p.PageDescName) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None)]"
+ }
+]

@@ -1,0 +1,6 @@
+[
+ {
+  "name": "page_grid",
+  "expr": "[(n, ps.GridMode, ps.StandardPageMode, ps.GridBaseWidth, ps.GridSnapToChars) for n in ('G_snap_on','G_snap_off','G_lines_off') for ps in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]"
+ }
+]

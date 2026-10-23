@@ -1,0 +1,10 @@
+[
+ {
+  "name": "shapes",
+  "expr": "[(s.String, s.FillStyle.value, s.FillColor, s.FillGradient.StartColor, s.FillGradient.EndColor, s.FillTransparence) for i in range(doc.DrawPages.getByIndex(0).Count) for s in [doc.DrawPages.getByIndex(0).getByIndex(i)]]"
+ },
+ {
+  "name": "background",
+  "expr": "[(b.FillStyle.value, b.FillColor, b.FillGradient.StartColor, b.FillGradient.EndColor) for b in [doc.DrawPages.getByIndex(0).Background]] if doc.DrawPages.getByIndex(0).Background is not None else None"
+ }
+]

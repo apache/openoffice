@@ -1,0 +1,18 @@
+[
+ {
+  "name": "frames",
+  "expr": "[(f.Text.String, f.FillStyle.value, f.FillColor, f.FillGradient.StartColor, f.FillGradient.EndColor, f.BackColor, f.BackTransparent) for n in doc.TextFrames.ElementNames for f in [doc.TextFrames.getByName(n)]]"
+ },
+ {
+  "name": "table",
+  "expr": "[(c, t.getCellByName(c).BackColor, t.getCellByName(c).BackTransparent) for t in [doc.TextTables.getByIndex(0)] for c in ('A1','B1','A2')] + [doc.TextTables.getByIndex(0).BackColor]"
+ },
+ {
+  "name": "section",
+  "expr": "[(s.BackColor, s.BackTransparent) for s in [doc.TextSections.getByIndex(0)]]"
+ },
+ {
+  "name": "paras",
+  "expr": "[(p.String, p.ParaBackColor, p.ParaBackTransparent) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None) if p.supportsService('com.sun.star.text.Paragraph')]"
+ }
+]
