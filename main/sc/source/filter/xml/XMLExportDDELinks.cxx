@@ -167,6 +167,18 @@ void ScXMLExportDDELinks::WriteTable(const sal_Int32 nPos)
 			nRepeatColsCount = 1;
 		}
 	}
+	else
+	{
+		// no cached result: table:table-columns/-rows wrappers are skipped on import, so no empty matrix is created
+		SvXMLElementExport aTableElem(rExport, XML_NAMESPACE_TABLE, XML_TABLE, sal_True, sal_True);
+		{
+			SvXMLElementExport aElemCols(rExport, XML_NAMESPACE_TABLE, XML_TABLE_COLUMNS, sal_True, sal_True);
+			SvXMLElementExport aElemCol(rExport, XML_NAMESPACE_TABLE, XML_TABLE_COLUMN, sal_True, sal_True);
+		}
+		SvXMLElementExport aElemRows(rExport, XML_NAMESPACE_TABLE, XML_TABLE_ROWS, sal_True, sal_True);
+		SvXMLElementExport aElemRow(rExport, XML_NAMESPACE_TABLE, XML_TABLE_ROW, sal_True, sal_True);
+		WriteCell(sal_True, sal_True, String(), 0.0, 1);
+	}
 }
 
 void ScXMLExportDDELinks::WriteDDELinks(uno::Reference<sheet::XSpreadsheetDocument>& xSpreadDoc)
