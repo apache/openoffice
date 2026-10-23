@@ -213,6 +213,7 @@ void SvXMLMetaExport::_MExport()
     const sal_Int32 sReloadDelay = mxDocProps->getAutoloadSecs();
     if (sReloadDelay != 0 || sReloadURL.getLength() != 0)
     {
+        mrExport.AddAttribute( XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE );
         mrExport.AddAttribute( XML_NAMESPACE_XLINK, XML_HREF,
                               mrExport.GetRelativeReference( sReloadURL ) );
 
