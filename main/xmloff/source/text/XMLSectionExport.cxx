@@ -495,6 +495,7 @@ void XMLSectionExport::ExportRegularSectionStart(
 	{
 		if (aFileLink.FileURL.getLength() > 0)
 		{
+			GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 			GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_HREF,
 									 GetExport().GetRelativeReference( aFileLink.FileURL) );
 		}
