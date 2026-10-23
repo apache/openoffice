@@ -1,0 +1,18 @@
+[
+ {
+  "name": "ole",
+  "expr": "[[s.ShapeType, s.String, s.CLSID] for s in [doc.DrawPages.getByIndex(0).getByIndex(i) for i in range(doc.DrawPages.getByIndex(0).Count)]]",
+  "expect": [
+   [
+    "com.sun.star.drawing.OLE2Shape",
+    "",
+    "078B7ABA-54FC-457F-8551-6147e776a997"
+   ],
+   [
+    "com.sun.star.drawing.OLE2Shape",
+    "OLE label",
+    "078B7ABA-54FC-457F-8551-6147e776a997"
+   ]
+  ]
+ }
+]

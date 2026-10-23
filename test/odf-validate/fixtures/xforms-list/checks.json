@@ -1,0 +1,44 @@
+[
+ {
+  "name": "controls",
+  "expr": "[[doc.DrawPage.Forms.getByIndex(f).getByIndex(i).Name, doc.DrawPage.Forms.getByIndex(f).getByIndex(i).ClassId, doc.DrawPage.Forms.getByIndex(f).getByIndex(i).getValueBinding() is not None, doc.DrawPage.Forms.getByIndex(f).getByIndex(i).getListEntrySource() is not None] for f in range(doc.DrawPage.Forms.Count) for i in range(doc.DrawPage.Forms.getByIndex(f).Count) if doc.DrawPage.Forms.getByIndex(f).getByIndex(i).ClassId in (6, 7)]",
+  "expect": [
+   [
+    "ComboBox",
+    7,
+    true,
+    true
+   ],
+   [
+    "ListBox1",
+    6,
+    true,
+    true
+   ],
+   [
+    "ComboBox2",
+    7,
+    true,
+    false
+   ],
+   [
+    "ComboBox3",
+    7,
+    true,
+    false
+   ],
+   [
+    "ComboBox4",
+    7,
+    true,
+    false
+   ],
+   [
+    "ComboBox5",
+    7,
+    true,
+    false
+   ]
+  ]
+ }
+]
