@@ -47,6 +47,7 @@
 #define XML_PM_TYPE_FIRSTPAGENUMBER		(XML_PM_TYPES_START + 14)
 #define XML_PM_TYPE_CENTER_HORIZONTAL	(XML_PM_TYPES_START + 15)
 #define XML_PM_TYPE_CENTER_VERTICAL		(XML_PM_TYPES_START + 16)
+#define XML_PM_TYPE_BACKGROUNDSIZE		(XML_PM_TYPES_START + 17)
 
 // control flags
 #define CTF_PM_FLAGMASK					(XML_PM_CTF_START + 0x0F00)
@@ -190,6 +191,7 @@
 #define CTF_PM_FTN_DISTANCE				(XML_PM_CTF_START + 0x0066)
 
 extern const XMLPropertyMapEntry aXMLPageMasterStyleMap[];
+extern const XMLPropertyMapEntry aXMLPageMasterDrawingPageStyleMap[];
 extern const XMLPropertyMapEntry aXMLPageMasterHeaderImportStyleMap[];
 extern const XMLPropertyMapEntry aXMLPageMasterFooterImportStyleMap[];
 

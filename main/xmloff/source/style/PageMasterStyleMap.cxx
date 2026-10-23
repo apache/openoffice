@@ -285,4 +285,33 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     { 0L, 0, 0, XML_EMPTY, 0, 0, SvtSaveOptions::ODFVER_010 } // index 190
 };
 
+#define DPMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_DRAWING_PAGE,context)
+
+const XMLPropertyMapEntry aXMLPageMasterDrawingPageStyleMap[] =
+{
+    DPMAP( "FillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  0 ),
+    DPMAP( "BackgroundFullSize",            XML_NAMESPACE_DRAW,     XML_BACKGROUND_SIZE,        XML_PM_TYPE_BACKGROUNDSIZE,                             0 ),
+    DPMAP( "FillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         0 ),
+    DPMAP( "FillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         0 ),
+    DPMAP( "FillGradientName",              XML_NAMESPACE_DRAW,     XML_FILL_GRADIENT_NAME,     XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLGRADIENTNAME ),
+    DPMAP( "FillGradientStepCount",         XML_NAMESPACE_DRAW,     XML_GRADIENT_STEP_COUNT,    XML_TYPE_NUMBER16,                                      0 ),
+    DPMAP( "FillHatchName",                 XML_NAMESPACE_DRAW,     XML_FILL_HATCH_NAME,        XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLHATCHNAME ),
+    DPMAP( "FillBackground",                XML_NAMESPACE_DRAW,     XML_FILL_HATCH_SOLID,       XML_TYPE_BOOL,                                          0 ),
+    DPMAP( "FillBitmapName",                XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_NAME,        XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLBITMAPNAME ),
+    DPMAP( "FillTransparence",              XML_NAMESPACE_DRAW,     XML_OPACITY,                XML_TYPE_NEG_PERCENT16|MID_FLAG_MULTI_PROPERTY,         0 ),
+    DPMAP( "FillTransparenceGradientName",  XML_NAMESPACE_DRAW,     XML_OPACITY_NAME,           XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT,         CTF_PM_FILLTRANSNAME ),
+    DPMAP( "FillBitmapSizeX",               XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_WIDTH,       XML_SW_TYPE_FILLBITMAPSIZE|MID_FLAG_MULTI_PROPERTY,     0 ),
+    DPMAP( "FillBitmapLogicalSize",         XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_WIDTH,       XML_SW_TYPE_LOGICAL_SIZE|MID_FLAG_MULTI_PROPERTY,       0 ),
+    DPMAP( "FillBitmapSizeY",               XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_HEIGHT,      XML_SW_TYPE_FILLBITMAPSIZE|MID_FLAG_MULTI_PROPERTY,     0 ),
+    DPMAP( "FillBitmapLogicalSize",         XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_HEIGHT,      XML_SW_TYPE_LOGICAL_SIZE|MID_FLAG_MULTI_PROPERTY,       0 ),
+    DPMAP( "FillBitmapMode",                XML_NAMESPACE_STYLE,    XML_REPEAT,                 XML_SW_TYPE_BITMAP_MODE|MID_FLAG_MULTI_PROPERTY,        0 ),
+    DPMAP( "FillBitmapPositionOffsetX",     XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT_X, XML_TYPE_PERCENT,                                       0 ),
+    DPMAP( "FillBitmapPositionOffsetY",     XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT_Y, XML_TYPE_PERCENT,                                       0 ),
+    DPMAP( "FillBitmapRectanglePoint",      XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT,   XML_SW_TYPE_BITMAP_REFPOINT,                            0 ),
+    DPMAP( "FillBitmapOffsetX",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETX|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_X ),
+    DPMAP( "FillBitmapOffsetY",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_Y ),
+
+    { 0L, 0, 0, XML_EMPTY, 0, 0, SvtSaveOptions::ODFVER_010 }
+};
+
 //eof
