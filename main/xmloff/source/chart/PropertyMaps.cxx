@@ -306,6 +306,7 @@ void XMLChartExportPropertyMapper::handleElementItem(
                                               XML_ONLOAD );
                 }
 
+                if( aURLStr.getLength() )
                 {
                     sal_uInt32 nPropIndex = rProperty.mnIndex;
                     // this is the element that has to live until the next statement
