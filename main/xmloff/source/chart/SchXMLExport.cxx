@@ -1594,7 +1594,7 @@ void SchXMLExportHelper_Impl::parseDocument( Reference< chart::XChartDocument >&
             {
                 Any aShapesAny = xDocPropSet->getPropertyValue( OUString::createFromAscii( "AdditionalShapes" ));
                 aShapesAny >>= mxAdditionalShapes;
-                if( mrExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+                if( mrExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_010 && mrExport.getDefaultVersion() <= SvtSaveOptions::ODFVER_012 )
                     mxAdditionalShapes.clear();
             }
             catch( uno::Exception & rEx )
