@@ -1,0 +1,16 @@
+[
+ {
+  "name": "gradient_angle",
+  "expr": "[(n, doc.StyleFamilies.getByName('ParagraphStyles').getByName(n).FillGradient.Angle) for n in ('S_gradient','S_gradient_transp')]",
+  "expect": [
+   [
+    "S_gradient",
+    300
+   ],
+   [
+    "S_gradient_transp",
+    300
+   ]
+  ]
+ }
+]
