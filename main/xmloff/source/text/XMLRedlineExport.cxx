@@ -414,7 +414,9 @@ void XMLRedlineExport::ExportChangedRegion(
 
 	// if we actually got a hierarchical change, make element and
 	// process change info
-	if (aSuccessorData.getLength() > 0)
+	// ODF 1.2 allows one change per changed region, so the successor is extended-mode only
+	if (aSuccessorData.getLength() > 0 &&
+		rExport.getDefaultVersion() > SvtSaveOptions::ODFVER_012)
 	{
 		// The only change that can be "undone" is an insertion -
 		// after all, you can't re-insert an deletion, but you can
