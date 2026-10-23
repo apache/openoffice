@@ -34,6 +34,7 @@
 #include <xmloff/nmspmap.hxx>
 #include <xmloff/xmlnmspe.hxx>
 #include <editeng/xmlcnitm.hxx>
+#include <xmloff/xmlcnimp.hxx>
 #include <xmloff/xmlexp.hxx>
 #include <editeng/memberids.hrc>
 
@@ -173,6 +174,9 @@ void SvXMLExportItemMapper::exportXML( const SvXMLExport& rExport,
 			OUStringBuffer sName;
 			for( sal_uInt16 i=0; i < nCount; i++ )
 			{
+				if( rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 &&
+					SvXMLIsODFNamespace( pUnknown->GetAttrNamespace( i ) ) )
+					continue;
 				OUString sPrefix( pUnknown->GetAttrPrefix( i ) );
 				if( sPrefix.getLength() )
 				{

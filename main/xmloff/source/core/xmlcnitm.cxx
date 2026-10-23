@@ -28,6 +28,7 @@
 #include <com/sun/star/lang/XUnoTunnel.hpp>
 
 #include <xmloff/xmlcnimp.hxx>
+#include <xmloff/xmltoken.hxx>
 #include "xmloff/unoatrcn.hxx"
 
 using namespace rtl;
@@ -210,4 +211,12 @@ const ::rtl::OUString& SvXMLAttrContainerData::GetAttrValue(sal_uInt16 i) const
 {
 	OSL_ENSURE( i < pValues->Count(), "SvXMLAttrContainerData::GetValue: illegal index" );
 	return *(*pValues)[i];
+}
+
+sal_Bool SvXMLIsODFNamespace( const ::rtl::OUString& rNamespace )
+{
+	return rNamespace.matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "urn:oasis:names:tc:opendocument:xmlns:" ) ) ||
+		   rNamespace == ::xmloff::token::GetXMLToken( ::xmloff::token::XML_N_FO ) ||
+		   rNamespace == ::xmloff::token::GetXMLToken( ::xmloff::token::XML_N_XLINK ) ||
+		   rNamespace == ::xmloff::token::GetXMLToken( ::xmloff::token::XML_N_DC );
 }

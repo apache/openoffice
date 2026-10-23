@@ -41,6 +41,7 @@
 #include <xmloff/nmspmap.hxx>
 #include "xmloff/xmlnmspe.hxx"
 #include <xmloff/xmlexp.hxx>
+#include <xmloff/xmlcnimp.hxx>
 #include <xmloff/xmlprmap.hxx>
 #include <xmloff/PropertySetInfoHash.hxx>
 #include <comphelper/stl_types.hxx>
@@ -994,9 +995,12 @@ void SvXMLExportPropertyMapper::_exportXML(
 
 			OUStringBuffer sNameBuffer;
 			xml::AttributeData aData;
+			const sal_Bool bSkipODFNamespaces( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 );
 			for( sal_Int32 i=0; i < nCount; i++, pAttribName++ )
 			{
 				xAttrContainer->getByName( *pAttribName ) >>= aData;
+				if( bSkipODFNamespaces && SvXMLIsODFNamespace( aData.Namespace ) )
+					continue;
 				OUString sAttribName( *pAttribName );
 
 				// extract namespace prefix from attribute name if it exists
