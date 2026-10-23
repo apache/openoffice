@@ -232,7 +232,7 @@ eval()
 	int		value[NEXP];	/* Value stack			*/
 	OPTAB		opstack[NEXP];	/* Operand stack		*/
 #ifndef ZTC  /* BP */
-    extern int  *evaleval();    /* Does actual evaluation   */
+    extern int  *evaleval(int *, int, int);    /* Does actual evaluation   */
 #endif
 	valp = value;
 	opp = opstack;
