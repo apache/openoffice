@@ -1,0 +1,43 @@
+[
+ {
+  "name": "outer_changes",
+  "expr": "(lambda en: [(r.RedlineType, r.RedlineAuthor, r.RedlineDateTime.Year, r.RedlineDateTime.Month, r.RedlineDateTime.Day, r.RedlineDateTime.Hours, r.RedlineDateTime.Minutes, r.RedlineComment) for r in en(doc.Redlines.createEnumeration()) if r.RedlineAuthor != 'Unknown Author'])(lambda e:[e.nextElement() for _ in iter(e.hasMoreElements, False)])",
+  "expect": [
+   [
+    "Format",
+    "User 2",
+    2009,
+    3,
+    12,
+    11,
+    55,
+    ""
+   ],
+   [
+    "Delete",
+    "User 2",
+    2009,
+    3,
+    12,
+    11,
+    55,
+    ""
+   ],
+   [
+    "Format",
+    "User 2",
+    2009,
+    3,
+    12,
+    11,
+    55,
+    ""
+   ]
+  ]
+ },
+ {
+  "name": "text",
+  "expr": "doc.Text.String",
+  "expect": "Here is some added text.\n"
+ }
+]
