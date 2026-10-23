@@ -174,7 +174,7 @@ void SvXMLExportItemMapper::exportXML( const SvXMLExport& rExport,
 			OUStringBuffer sName;
 			for( sal_uInt16 i=0; i < nCount; i++ )
 			{
-				if( rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 &&
+				if( rExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_012 &&
 					SvXMLIsODFNamespace( pUnknown->GetAttrNamespace( i ) ) )
 					continue;
 				OUString sPrefix( pUnknown->GetAttrPrefix( i ) );

@@ -995,7 +995,7 @@ void SvXMLExportPropertyMapper::_exportXML(
 
 			OUStringBuffer sNameBuffer;
 			xml::AttributeData aData;
-			const sal_Bool bSkipODFNamespaces( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 );
+			const sal_Bool bSkipODFNamespaces( SvtSaveOptions().GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_012 );
 			for( sal_Int32 i=0; i < nCount; i++, pAttribName++ )
 			{
 				xAttrContainer->getByName( *pAttribName ) >>= aData;
