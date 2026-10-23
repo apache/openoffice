@@ -1441,7 +1441,6 @@ sal_uInt32 SvXMLExport::exportDoc( enum ::xmloff::token::XMLTokenEnum eClass )
 
 
 	// office:version = ...
-	if( !mbExtended )
     {
         const sal_Char* pVersion = 0;
         switch( getDefaultVersion() )
