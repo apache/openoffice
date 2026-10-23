@@ -1766,7 +1766,8 @@ namespace xmloff
         }
 
         // is (list-)control bound to XForms list?
-        if( getXFormsListBindName( m_xProps ).getLength() > 0 )
+        if( getXFormsListBindName( m_xProps ).getLength() > 0 &&
+            ( m_eType != COMBOBOX || m_rContext.getGlobalContext().getDefaultVersion() != SvtSaveOptions::ODFVER_012 ) )
         {
             m_nIncludeBindings |= BA_XFORMS_LISTBIND;
         }
