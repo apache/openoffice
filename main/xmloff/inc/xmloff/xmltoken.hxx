@@ -3139,6 +3139,7 @@ namespace xmloff { namespace token {
         XML_ASTERISK,
         XML_HORIZONTAL_BAR,
         XML_VERTICAL_BAR,
+        XML_LAYOUT_GRID_SNAP_TO,
 
         XML_TOKEN_END
     };

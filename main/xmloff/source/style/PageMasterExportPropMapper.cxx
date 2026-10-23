@@ -337,6 +337,7 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 	XMLPropertyState*		pPMStandardMode    	= NULL;
 	XMLPropertyState*		pPMGridBaseWidth   	= NULL;
 	XMLPropertyState*		pPMGridSnapToChars 	= NULL;
+	XMLPropertyState*		pPMGridSnapTo 		= NULL;
 	XMLPropertyState*		pPMHeaderGraphicUrl = NULL;
 	XMLPropertyState*		pPMFooterGraphicUrl = NULL;
 
@@ -407,6 +408,7 @@ void XMLPageMasterExportPropMapper::ContextFilter(
             case CTF_PM_STANDARD_MODE:		pPMStandardMode		= pProp;	break;
             case CTP_PM_GRID_BASE_WIDTH:		pPMGridBaseWidth	= pProp;	break;
             case CTP_PM_GRID_SNAP_TO_CHARS:		pPMGridSnapToChars	= pProp;	break;
+            case CTP_PM_GRID_SNAP_TO:			pPMGridSnapTo		= pProp;	break;
             case CTF_PM_HEADERGRAPHICURL:		pPMHeaderGraphicUrl	= pProp;	break;
             case CTF_PM_FOOTERGRAPHICURL:		pPMFooterGraphicUrl	= pProp;	break;
 
@@ -529,6 +531,17 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 			lcl_RemoveState(pPMGridBaseWidth);
 		if( pPMGridSnapToChars )
 			lcl_RemoveState(pPMGridSnapToChars);
+		if( pPMGridSnapTo )
+			lcl_RemoveState(pPMGridSnapTo);
+	}
+
+	// ODF 1.2 calls it style:layout-grid-snap-to; strict mode writes only that name
+	if( pPMGridSnapToChars && pPMGridSnapTo )
+	{
+		if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+			lcl_RemoveState( pPMGridSnapToChars );
+		else
+			lcl_RemoveState( pPMGridSnapTo );
 	}
 
 	// ext output stays as before (the ids once collided with the repeat offsets, so none was written)
