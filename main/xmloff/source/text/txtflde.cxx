@@ -1694,6 +1694,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 	{
 		// this field is a special case because it gets mapped onto a
 		// hyperlink, rather than one of the regular text field.
+		GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 		ProcessString(XML_HREF, GetExport().GetRelativeReference(GetStringProperty(sPropertyURL, rPropSet)),
 					  sal_False, XML_NAMESPACE_XLINK);
 		ProcessString(XML_TARGET_FRAME_NAME,
