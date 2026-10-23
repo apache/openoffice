@@ -37,6 +37,10 @@ using namespace ::xmloff::token;
 
 //UUUU
 #define GMAP(name,prefix,token,type,context) _MAP(name,prefix,token,static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC),context)
+// AOO extension, not ODF 1.2: strict export keeps only fo:background-color and style:background-image
+#define _MAP_EXT(name,prefix,token,type,context) { name, sizeof(name)-1, prefix, token, static_cast<sal_Int32>(type), context, SvtSaveOptions::ODFVER_LATEST }
+#define PLMAP_EXT(name,prefix,token,type,context) _MAP_EXT(name,prefix,token,type|XML_TYPE_PROP_PAGE_LAYOUT,context)
+#define HFMAP_EXT(name,prefix,token,type,context) _MAP_EXT(name,prefix,token,type|XML_TYPE_PROP_HEADER_FOOTER,context)
 
 //______________________________________________________________________________
 
@@ -125,6 +129,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     // Also need own defines for the used context flags (e.g. CTF_PM_FILLGRADIENTNAME instead of
     // CTF_FILLGRADIENTNAME) since these are used to *filter* up to which entry the attributes belong to the
     // 'page-layout-properties' section (!), see SvXMLAutoStylePoolP_Impl::exportXML, look for XML_STYLE_FAMILY_PAGE_MASTER
+#undef PLMAP
+#define PLMAP PLMAP_EXT
     PLMAP( "FillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  0 ),
     PLMAP( "FillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         0 ),
     PLMAP( "FillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         0 ),
@@ -145,6 +151,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     PLMAP( "FillBitmapRectanglePoint",      XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT,   XML_SW_TYPE_BITMAP_REFPOINT,                            0 ),
     PLMAP( "FillBitmapOffsetX",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETX|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_X ),
     PLMAP( "FillBitmapOffsetY",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY,   CTF_PM_REPEAT_OFFSET_Y ),
+#undef PLMAP
+#define PLMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_PAGE_LAYOUT,context)
 
     // Index 85: footnote
     PLMAP( "FootnoteHeight",            XML_NAMESPACE_STYLE,    XML_FOOTNOTE_MAX_HEIGHT, XML_TYPE_MEASURE, CTF_PM_FTN_HEIGTH ),
@@ -190,6 +198,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     //UUUUIndex 121: Header DrawingLayer FillAttributes
     // Use HFMAP to get XML_TYPE_PROP_HEADER_FOOTER ORed to the 4th entry
     // Names have to begin with 'Header', all 5th entries need to be ORed with the CTF_PM_HEADERFLAG
+#undef HFMAP
+#define HFMAP HFMAP_EXT
     HFMAP( "HeaderFillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  CTF_PM_HEADERFLAG ),
     HFMAP( "HeaderFillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         CTF_PM_HEADERFLAG ),
     HFMAP( "HeaderFillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         CTF_PM_HEADERFLAG ),
@@ -210,6 +220,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     HFMAP( "HeaderFillBitmapRectanglePoint",      XML_NAMESPACE_DRAW,     XML_FILL_IMAGE_REF_POINT,   XML_SW_TYPE_BITMAP_REFPOINT,                            CTF_PM_HEADERFLAG ),
     HFMAP( "HeaderFillBitmapOffsetX",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETX|MID_FLAG_MULTI_PROPERTY,   CTF_PM_HEADERREPEAT_OFFSET_X ),
     HFMAP( "HeaderFillBitmapOffsetY",             XML_NAMESPACE_DRAW,     XML_TILE_REPEAT_OFFSET,     XML_SW_TYPE_BITMAPREPOFFSETY|MID_FLAG_MULTI_PROPERTY,   CTF_PM_HEADERREPEAT_OFFSET_Y ),
+#undef HFMAP
+#define HFMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_HEADER_FOOTER,context)
 
     //////////////////////////////////////////////////////////////////////////
     //UUUUIndex 141: Section for 'footer-style' own section, all members *have* to use CTF_PM_FOOTERFLAG in the context entry (the 5th one)
@@ -246,6 +258,8 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     //UUUUIndex 170: Footer DrawingLayer FillAttributes
     // Use HFMAP to get XML_TYPE_PROP_HEADER_FOOTER ORed to the 4th entry
     // Names have to begin with 'Footer', all 5th entries need to be ORed with the CTF_PM_FOOTERFLAG
+#undef HFMAP
+#define HFMAP HFMAP_EXT
     HFMAP( "FooterFillStyle",                     XML_NAMESPACE_DRAW,     XML_FILL,                   XML_SW_TYPE_FILLSTYLE,                                  CTF_PM_FOOTERFLAG ),
     HFMAP( "FooterFillColor",                     XML_NAMESPACE_DRAW,     XML_FILL_COLOR,             XML_TYPE_COLOR,                                         CTF_PM_FOOTERFLAG ),
     HFMAP( "FooterFillColor2",                    XML_NAMESPACE_DRAW,     XML_SECONDARY_FILL_COLOR,   XML_TYPE_COLOR,                                         CTF_PM_FOOTERFLAG ),
