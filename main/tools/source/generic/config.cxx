@@ -459,18 +459,18 @@ static sal_uInt8* ImplGetConfigBuffer( const ImplConfigData* pData, sal_uIntPtr&
 
 	if ( pData->meLineEnd == LINEEND_CR )
 	{
-		aLineEndBuf[0] = _CR;
+		aLineEndBuf[0] = SAL_CR;
 		nLineEndLen = 1;
 	}
 	else if ( pData->meLineEnd == LINEEND_LF )
 	{
-		aLineEndBuf[0] = _LF;
+		aLineEndBuf[0] = SAL_LF;
 		nLineEndLen = 1;
 	}
 	else
 	{
-		aLineEndBuf[0] = _CR;
-		aLineEndBuf[1] = _LF;
+		aLineEndBuf[0] = SAL_CR;
+		aLineEndBuf[1] = SAL_LF;
 		nLineEndLen = 2;
 	}
 

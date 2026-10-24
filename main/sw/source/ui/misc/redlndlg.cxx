@@ -568,7 +568,7 @@ void SwRedlineAcceptDlg::Activate()
 			{
 				// Nur Kommentar aktualisieren
 				String sComment(rRedln.GetComment());
-				sComment.SearchAndReplaceAll((sal_Unicode)_LF,(sal_Unicode)' ');
+				sComment.SearchAndReplaceAll((sal_Unicode)SAL_LF,(sal_Unicode)' ');
 				pTable->SetEntryText(sComment, pParent->pTLBParent, 3);
 			}
 			pParent->sComment = rRedln.GetComment();
@@ -860,7 +860,7 @@ void SwRedlineAcceptDlg::InsertParents(sal_uInt16 nStart, sal_uInt16 nEnd)
 		pRedlineParent->pData	 = pRedlineData;
 		pRedlineParent->pNext	 = 0;
 		String sComment(rRedln.GetComment());
-		sComment.SearchAndReplaceAll((sal_Unicode)_LF,(sal_Unicode)' ');
+		sComment.SearchAndReplaceAll((sal_Unicode)SAL_LF,(sal_Unicode)' ');
 		pRedlineParent->sComment = sComment;
 		aRedlineParents.Insert(pRedlineParent, i);
 
@@ -1300,7 +1300,7 @@ IMPL_LINK( SwRedlineAcceptDlg, CommandHdl, void*, EMPTYARG )
 
                             // Kommentar einfuegen bzw aendern
                             pSh->SetRedlineComment(sMsg);
-                            sMsg.SearchAndReplaceAll((sal_Unicode)_LF,(sal_Unicode)' ');
+                            sMsg.SearchAndReplaceAll((sal_Unicode)SAL_LF,(sal_Unicode)' ');
                             pTable->SetEntryText(sMsg, pEntry, 3);
                         }
 

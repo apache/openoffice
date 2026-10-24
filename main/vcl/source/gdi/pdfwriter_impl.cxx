@@ -7851,7 +7851,7 @@ void PDFWriterImpl::drawText( const Rectangle& rRect, const String& rOrigStr, sa
                     xub_StrLen nLastLineLen = aLastLine.Len();
                     for ( i = 0; i < nLastLineLen; i++ )
                     {
-                        if ( aLastLine.GetChar( i ) == _LF )
+                        if ( aLastLine.GetChar( i ) == SAL_LF )
                             aLastLine.SetChar( i, ' ' );
                     }
                     aLastLine = m_pReferenceDevice->GetEllipsisString( aLastLine, nWidth, nStyle );
