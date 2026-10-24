@@ -73,6 +73,11 @@ CFLAGS_NO_EXCEPTIONS=-fno-exceptions
 CFLAGSCXX= -pipe -frtti $(ARCH_FLAGS)
 PICSWITCH:=-fpic
 
+.IF "$(ENABLE_SANITIZER)"=="TRUE"
+CFLAGSCC += -fsanitize=address
+CFLAGSCXX += -fsanitize=address
+.ENDIF
+
 # Compiler flags for compiling static object in multi threaded environment with graphical user interface
 CFLAGSOBJGUIMT=
 # Compiler flags for compiling static object in multi threaded environment with character user interface
