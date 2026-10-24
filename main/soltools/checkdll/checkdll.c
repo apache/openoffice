@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 	if (!silent) printf("Checking DLL %s ...", argv[1]);
 	fflush(stdout);
 
-	if ( (phandle = dlopen(argv[1], RTLD_NOW)) != NULL ) {
+	if ( (phandle = dlopen(argv[1], RTLD_LAZY)) != NULL ) {
 		if  ( (pfun = (char *(*)(void))dlsym(phandle, psymbol)) != NULL ) {
 			if (!silent) printf(": ok\n");
 		}
