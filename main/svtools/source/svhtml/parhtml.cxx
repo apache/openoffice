@@ -2175,8 +2175,8 @@ bool HTMLParser::ParseMetaOptionsImpl(
     if ( bHTTPEquiv || HTML_META_DESCRIPTION != nAction )
     {
         // if it is not a Description, remove CRs and LFs from CONTENT
-        aContent.EraseAllChars( _CR );
-        aContent.EraseAllChars( _LF );
+        aContent.EraseAllChars( SAL_CR );
+        aContent.EraseAllChars( SAL_LF );
     }
     else
     {

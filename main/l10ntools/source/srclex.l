@@ -55,17 +55,17 @@
 extern int WorkOnTokenSet( int, char* );
 extern int InitExport( char * , char * );
 extern int Parse( int nTyp, char *pTokenText );
-extern int EndExport();
-extern int SetError();
-extern int GetError();
+extern int EndExport(void);
+extern int SetError(void);
+extern int GetError(void);
 extern char *GetOutputFile( int argc, char* argv[]);
-extern FILE *GetNextFile();
-extern int isQuiet();
-extern void Close();
-extern char* getFilename();
+extern FILE *GetNextFile(void);
+extern int isQuiet(void);
+extern void Close(void);
+extern char *getFilename(void);
 
 /* forwards */
-void YYWarning();
+void YYWarning(char *);
 %}
 
 %p 24000
