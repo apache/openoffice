@@ -92,6 +92,36 @@ for n, (st, attr, val, msg) in enumerate(cases):
 for c in bad_cases[:10]:
     print("CASE", *c)
 checks["formulacheck: all %d cases in formula-cases.tsv give exactly the expected findings" % len(cases)] = not bad_cases and len(cases) > 100
+checks.update({
+    "extended: extforeign.odt invalid as written, valid once foreign content is removed": bool(errs("12", "extforeign.odt")) and not errs("12x", "extforeign.odt"),
+    "extended: good.odt, goodid.odt clean": not errs("12x", "good.odt") and not errs("12x", "goodid.odt"),
+    "extended: bad.odt (unknown element in an ODF namespace) still flagged": any('"text:bogus"' in m for m in errs("12x", "bad.odt")),
+    "extended: wrongver.odt (attribute in an ODF namespace) still flagged": any("office:version" in m for m in errs("12x", "wrongver.odt")),
+    "extended: badns.odt (unbound prefix) still flagged": any("not bound" in m for m in errs("12x", "badns.odt")),
+})
+fspec = importlib.util.spec_from_file_location("foreign", os.path.join(D, "foreign.py"))
+fg = importlib.util.module_from_spec(fspec)
+fspec.loader.exec_module(fg)
+MIXED = fg.mixed_elements(os.path.join(D, "schema", "OpenDocument-v1.2-os-schema.rng"))
+HDR = ('<office:text xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" '
+       'xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:foo="urn:foo" xmlns:dc="http://purl.org/dc/elements/1.1/" '
+       'xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xf="http://www.w3.org/2002/xforms"')
+FOREIGN_CASES = [
+    ("foreign attribute removed", '<text:p foo:x="1" text:style-name="a">t</text:p>', '<text:p text:style-name="a">t</text:p>'),
+    ("foreign element outside a paragraph dropped with its content", '<foo:x>stuff<text:p>q</text:p></foo:x><text:p>t</text:p>', '<text:p>t</text:p>'),
+    ("foreign element in a paragraph: tags removed, content kept", '<text:p>a<foo:x>b<text:span>c</text:span></foo:x>d</text:p>', '<text:p>a<text:span>c</text:span>bd</text:p>'.replace("<text:span>c</text:span>bd", "b<text:span>c</text:span>d")),
+    ("foreign element in a span in a paragraph: tags removed", '<text:p><text:span>a<foo:x>b</foo:x></text:span></text:p>', '<text:p><text:span>ab</text:span></text:p>'),
+    ("foreign element below a frame (no character data): dropped", '<text:p><draw:frame><foo:x>b</foo:x></draw:frame></text:p>', '<text:p><draw:frame></draw:frame></text:p>'),
+    ("namespace declared on an unwrapped element is kept for its children", '<text:p><foo:x xmlns:t2="urn:oasis:names:tc:opendocument:xmlns:text:1.0"><t2:span>a</t2:span></foo:x></text:p>',
+     '<text:p><t2:span xmlns:t2="urn:oasis:names:tc:opendocument:xmlns:text:1.0">a</t2:span></text:p>'),
+    ("elements and attributes of table 4 namespaces kept", '<text:p xlink:href="u"><dc:title>t</dc:title></text:p>', '<text:p xlink:href="u"><dc:title>t</dc:title></text:p>'),
+    ("content below a table 4 element kept (wildcard content)", '<xf:model><foo:data><bar/></foo:data></xf:model>', '<xf:model><foo:data><bar></bar></foo:data></xf:model>'),
+    ("text is escaped again", '<text:p>a &amp; b &lt; c</text:p>', '<text:p>a &amp; b &lt; c</text:p>'),
+]
+for name, src, want in FOREIGN_CASES:
+    got = fg.strip_foreign(HDR + ">" + src + "</office:text>", MIXED).split("\n", 1)[1].strip()
+    inner = got[got.index(">") + 1:-len("</office:text>")] if got.startswith("<office:text") else got
+    checks["foreign.py: " + name] = inner == want
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)

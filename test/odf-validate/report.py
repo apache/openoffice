@@ -19,7 +19,7 @@
 #
 #**************************************************************
 
-# usage: report.py <val.json> <kinds.json> [12|14]   -- groups errors by normalized message
+# usage: report.py <val.json> <kinds.json> [12|14|12x]   -- groups errors by normalized message
 import sys, re, json, collections
 
 
@@ -39,6 +39,6 @@ for f, line, col, msg in d["errors"][ver]:
 res = {k: {"errors": v["errors"], "packages": sorted(v["packages"])} for k, v in kinds.items()}
 json.dump(res, open(out, "w"), indent=1, sort_keys=True)
 tot = sum(v["errors"] for v in res.values())
-print(f"ODF {ver[0]}.{ver[1]}: {len(res)} kinds, {tot} errors, {len({p for v in res.values() for p in v['packages']})} packages with errors")
+print(f"ODF {ver[0]}.{ver[1]}{' extended, foreign content removed' if ver.endswith('x') else ''}: {len(res)} kinds, {tot} errors, {len({p for v in res.values() for p in v['packages']})} packages with errors")
 for k, v in sorted(res.items(), key=lambda kv: -kv[1]["errors"]):
     print(f"  {v['errors']:5d} {len(v['packages']):4d}  {k[:120]}")

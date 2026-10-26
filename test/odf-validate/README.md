@@ -42,7 +42,11 @@ The steps:
   - It resumes where it left off, kills a hung office and continues, and
     stops at the first crash.
 - `validate.py` checks content, styles, meta, settings and manifest streams
-  against 1.2 as written and against 1.4 with `office:version` rewritten.
+  against 1.2 as written, against 1.4 with `office:version` rewritten, and
+  against 1.2 as an extended document (`12x`): `foreign.py` first removes
+  foreign elements and attributes as Part 1 §2.2.2 B.1 and §3.17 describe (the
+  manifest is left as written). Use `report.py <val.json> <kinds.json> 12x` to
+  measure what is wrong apart from foreign content.
   Embedded objects whose `content.xml` is MathML are skipped (ODF 1.2 Part 1
   §2.2.1 B.4).
 - `report.py` groups the errors by normalized message.
