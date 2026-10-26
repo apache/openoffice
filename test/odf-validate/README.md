@@ -12,7 +12,7 @@ It runs on macOS only (zsh scripts, `hdiutil`, `.app` layout).
 - An AOO macOS build (`.dmg`).
 - The Python that the office's pyuno links against. Check with
   `otool -L <app>/Contents/program/libpyuno.dylib`, then set `ODFV_PYTHON`.
-- `jing.jar` (set `ODFV_JING`) and `java`.
+- `jing.jar` (set `ODFV_JING`) and `java`; `ODFV_ODFVALIDATOR` and `ODFV_JAVA` for `crosscheck.py`.
 - `gtimeout` (GNU coreutils), used by `drive.sh`.
 
 Defaults for `ODFV_APP`, `ODFV_PYTHON`, `ODFV_JING` and `ODFV_SOLVER` are in
@@ -22,6 +22,7 @@ Defaults for `ODFV_APP`, `ODFV_PYTHON`, `ODFV_JING` and `ODFV_SOLVER` are in
 
     ./fetch-schemas.sh                 # OASIS schemas, checksum-verified, into schema/
     ./setup-app.sh <path-to-AOO.dmg>   # copies OpenOffice.app into app/
+    ./fetch-odfvalidator.sh            # optional: odfvalidator for crosscheck.py
     python3 -I selftest.py             # validator negative controls
 
 The schemas are not committed because they carry OASIS copyright terms.
@@ -80,6 +81,22 @@ The steps:
     `,` between arguments, lowercase ` and `, `!=` as the relational operator.
   - `formula-cases.tsv` is the table of good and bad values that `selftest.py`
     runs.
+- `crosscheck.py <outdir> <val.json> <cross.json>` runs the Apache ODF Toolkit
+  `odfvalidator` 1.1.8 (`fetch-odfvalidator.sh`; MSV instead of jing, the same
+  OASIS schemas) in conformance mode (`-c`) and extended mode (`-e`) and
+  compares each stream with the `12` and `12x` results of `validate.py`.
+  - Error counts differ between engines; it compares whether a stream has
+    any error and, in `-c` mode, where its first error is.
+  - It exits if odfvalidator stops before finishing every package. Its
+    failures are silent (an invalid schema prints "Validation aborted"; a
+    crash on one package aborts the run): crashes are skipped and listed.
+  - odfvalidator's own schema lookup fails on current JDKs, so the schemas are
+    passed explicitly; its jar has no MathML 2 schema, so a schema that accepts
+    anything stands in (as `validate.py` skips MathML).
+  - Known leniencies: it truncates a `draw:points` over 2048 characters and
+    adapts old OOo namespaces. It is stricter than Part 3 §3.2 in wanting
+    `META-INF/documentsignatures.xml` listed in the manifest. It checks ID
+    uniqueness, which `jing -i` does not.
 - `idcheck.py <outdir> <ids.json>` parses every stream namespace-aware and
   checks `xml:id` syntax and uniqueness per stream (ODF 1.2 Part 1 §2.2.1
   D.1, D.2). `jing -i` does not check ID uniqueness.

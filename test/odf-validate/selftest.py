@@ -122,6 +122,21 @@ for name, src, want in FOREIGN_CASES:
     got = fg.strip_foreign(HDR + ">" + src + "</office:text>", MIXED).split("\n", 1)[1].strip()
     inner = got[got.index(">") + 1:-len("</office:text>")] if got.startswith("<office:text") else got
     checks["foreign.py: " + name] = inner == want
+ODFV_JAR = os.environ.get("ODFV_ODFVALIDATOR", os.path.join(D, "tools", "odfvalidator-1.1.8-incubating-jar-with-dependencies.jar"))
+if os.path.isfile(ODFV_JAR):
+    cc = os.path.join(D, "runs", "control", "cross.json")
+    subprocess.run([sys.executable, "-I", os.path.join(D, "crosscheck.py"), os.path.join(D, "fixtures", "control"), os.path.join(D, "runs", "control", "val.json"), cc], check=True, capture_output=True)
+    x = json.load(open(cc))
+    c, e = x["conformance"], x["extended"]
+    checks.update({
+        "crosscheck: odfvalidator flags bad.odt in both modes": all("bad.odt/content.xml" in m["odfvalidator_error_streams"] for m in (c, e)),
+        "crosscheck: odfvalidator flags extforeign.odt as written but not as an extended document": "extforeign.odt/content.xml" in c["odfvalidator_error_streams"] and "extforeign.odt/content.xml" not in e["odfvalidator_error_streams"],
+        "crosscheck: odfvalidator finds the duplicate xml:id that jing -i cannot": "dupid.odt/content.xml" in c["odfvalidator_error_streams"],
+        "crosscheck: good.odt clean in odfvalidator": not any("good.odt/" in k for m in (c, e) for k in m["odfvalidator_error_streams"]),
+        "crosscheck: no stream where only jing reports errors": not c["only_jing"] and not e["only_jing"],
+    })
+else:
+    print("SKIP crosscheck controls: odfvalidator not installed (fetch-odfvalidator.sh)")
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)
