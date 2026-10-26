@@ -61,6 +61,21 @@ The steps:
   `...graphic-template`; the registered `...graphics` and `...graphics-template`
   of Part 1 appendix C are accepted. `...text-web` and `...formula-template`
   are registered but no §2.2.x allows them, so they are reported.
+- `formulacheck.py <outdir> <formulas.json>` parses the `style:condition`,
+  `table:condition`, `table:expression`, `table:formula` and `text:formula`
+  values (Part 1 §2.2.1 D.3, §2.2.4 D/E) with the OpenFormula grammar (Part 2
+  chapter 5) and the condition syntaxes of Part 1 §19.468 and §19.596.
+  - Syntax only; no semantics, function arity or type checking.
+  - A prefix bound to another namespace is out of Part 2's reach: `should:` in
+    general, `shall:` for `table:formula` inside `office:spreadsheet` (§2.2.4 D).
+  - Non-ASCII name characters use Unicode categories instead of the XML 1.0
+    4th edition tables; an IRI is checked by character class, not the full
+    RFC 3987 grammar; `openformula-functions.txt` holds the Part 2 function
+    names.
+  - The condition syntaxes follow the prose of Part 1, which has no grammar:
+    `,` between arguments, lowercase ` and `, `!=` as the relational operator.
+  - `formula-cases.tsv` is the table of good and bad values that `selftest.py`
+    runs.
 - `idcheck.py <outdir> <ids.json>` parses every stream namespace-aware and
   checks `xml:id` syntax and uniqueness per stream (ODF 1.2 Part 1 §2.2.1
   D.1, D.2). `jing -i` does not check ID uniqueness.

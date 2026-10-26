@@ -20,7 +20,7 @@
 #**************************************************************
 
 # usage: selftest.py -- validator negative controls; exits 1 if any control misbehaves
-import json, os, subprocess, sys
+import collections, json, os, subprocess, sys
 D = os.path.dirname(os.path.abspath(__file__))
 val = os.path.join(D, "runs", "control", "val.json")
 os.makedirs(os.path.dirname(val), exist_ok=True)
@@ -65,6 +65,33 @@ dexpected = json.load(open(os.path.join(ddir, ".expected.json")))
 def dfound(doc): return sorted({tuple(m.split("]")[0].split(": [")) for m in (e[3] for e in de if e[0].startswith(doc + "/"))})
 for doc in sorted(dexpected):
     checks["doctypecheck: " + doc + " reports exactly " + (", ".join(r for _, r in dexpected[doc]) or "nothing")] = dfound(doc) == [tuple(x) for x in dexpected[doc]]
+import importlib.util
+from xml.sax.saxutils import quoteattr
+spec = importlib.util.spec_from_file_location("formulacheck", os.path.join(D, "formulacheck.py"))
+fc = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(fc)
+cases = [l.rstrip("\n").split("\t") for l in open(os.path.join(D, "formula-cases.tsv"), encoding="utf-8") if not l.startswith("#") and l.strip()]
+NSDECL = ('xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" '
+          'xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" '
+          'xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:ooow="http://openoffice.org/2004/writer"')
+lines = ["<office:document-content %s><office:body>" % NSDECL]
+for st, attr, val, msg in cases:
+    val = val.replace("\\n", "\n").replace("\\u00a0", "\u00a0")
+    name, _, ctx = attr.partition("@")
+    tag = "office:text" if ctx == "text" else "office:spreadsheet"
+    lines.append("<%s><table:table-cell %s=%s/></%s>" % (tag, name, quoteattr(val, {"\n": "&#10;"}), tag))
+lines.append("</office:body></office:document-content>")
+got = collections.defaultdict(list)
+for line, col, level, rule, m in fc.check_stream("\n".join(lines).encode("utf-8"), collections.Counter()):
+    got[line - 2].append((level + ":" + rule, m))
+bad_cases = []
+for n, (st, attr, val, msg) in enumerate(cases):
+    want = [] if st == "ok" else st.split("+")
+    if sorted(r for r, _ in got[n]) != sorted(want) or (msg and not any(msg in m for _, m in got[n])):
+        bad_cases.append((n, st, attr, val, got[n]))
+for c in bad_cases[:10]:
+    print("CASE", *c)
+checks["formulacheck: all %d cases in formula-cases.tsv give exactly the expected findings" % len(cases)] = not bad_cases and len(cases) > 100
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)
