@@ -33,6 +33,7 @@
 #include <cppuhelper/implbase2.hxx>
 
 #include <vbahelper/vbahelperinterface.hxx>
+#include <memory>
 
 typedef  ::cppu::WeakImplHelper2< ov::msforms::XShape, css::lang::XEventListener > ListeningShape;
 
@@ -42,7 +43,7 @@ class VBAHELPER_DLLPUBLIC ScVbaShape : public ScVbaShape_BASE
 {
 private:
 protected:
-    std::auto_ptr< ov::ShapeHelper > m_pShapeHelper;
+    std::unique_ptr< ov::ShapeHelper > m_pShapeHelper;
     css::uno::Reference< css::drawing::XShape > m_xShape;
     css::uno::Reference< css::drawing::XShapes > m_xShapes;
     css::uno::Reference< css::beans::XPropertySet > m_xPropertySet;

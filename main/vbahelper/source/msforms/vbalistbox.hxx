@@ -32,12 +32,13 @@
 #include <vbahelper/vbapropvalue.hxx>
 #include "vbalistcontrolhelper.hxx"
 #include <vbahelper/vbahelper.hxx>
+#include <memory>
 
 typedef cppu::ImplInheritanceHelper2<ScVbaControl, ov::msforms::XListBox, css::script::XDefaultProperty > ListBoxImpl_BASE;
 class ScVbaListBox : public ListBoxImpl_BASE
     ,public PropListener
 {
-	std::auto_ptr< ListControlHelper > mpListHelper;
+	std::unique_ptr< ListControlHelper > mpListHelper;
 	rtl::OUString sSourceName;
 	rtl::OUString msDftPropName;
 
