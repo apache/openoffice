@@ -65,6 +65,7 @@ static TokenTable aTokTable_Basic [] = {		// Token-Tabelle:
 	{ _CDECL_,	"Cdecl" },
 	{ CLASSMODULE, "ClassModule" },
 	{ CLOSE,	"Close" },
+	{ INTERFACE,	"Interface" },
 	{ COMPARE,	"Compare" },
 	{ COMPATIBLE,"Compatible" },
 	{ _CONST_,	"Const" },
