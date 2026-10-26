@@ -101,6 +101,41 @@ The steps:
   checks `xml:id` syntax and uniqueness per stream (ODF 1.2 Part 1 §2.2.1
   D.1, D.2). `jing -i` does not check ID uniqueness.
 
+## The regression gate
+
+    python3 -I gate.py <tag> --prev runs/gate-<earlier tag>      # everything
+    python3 -I gate.py <tag> --build xmloff,sw --prev ...        # rebuild first
+    python3 -I gate.py smoke --limit 8 --prev ... --stages corpus,validate,dump,diff
+
+`gate.py` runs the stages below in `runs/gate-<tag>/`, records `results.json`,
+skips stages already done (`--force` reruns) and exits 0 only if everything
+that ran passed.
+
+| stage | does | passes if |
+|---|---|---|
+| `build` | `build.pl` and `deliver.pl` for the `--build` modules (environment script: `ODFV_BUILD_ENV`) | exit codes 0 |
+| `refresh` | copies `--libs` from the solver into `app/` (`refresh-app.sh`) | copies identical |
+| `corpus` | saves the job list in `ext` and `strict` mode | no crash, every job accounted for, OK/FAIL counts equal `--prev` |
+| `validate` | `validate.py`, `report.py` and the four checkers per mode | kinds not worse than `baseline/<mode>.kinds.json` or than `--prev` (checked both ways) |
+| `dump` | reloads every saved package with `dump7.py` | no office failure; hangs and crashes are listed |
+| `diff` | `diff7.py` on the dumps and `cmp7.py` on the packages against `--prev` | every difference is a document in `gate-volatile.tsv` |
+| `fixtures` | `gate-fixtures.tsv`: saves in `v00 v10 v11 ext strict`, runs the reload checks, validates | saved, checked, and unchanged against `--prev` |
+
+- Inputs are frozen: without `--jobs` the list of `--prev` is reused (outputs
+  are rewritten), so the same documents are saved when files under `main/`
+  change. A later run's `--prev` may be any earlier gate directory or a
+  directory with the same layout (`<mode>/out`, `<mode>/dump`).
+- The dump stage kills the office only when the dump makes no progress for
+  `--stall` seconds (default 300), then writes a `HANG` marker for that
+  document alone. A long batch that keeps progressing is never killed.
+- `gate-volatile.tsv` names the documents whose dumps differ between runs
+  without an export change (volatile Calc formulas, redline timestamps, the
+  `0238` loader order, the intermittent Basic library loss of `0048`). A new
+  entry needs a reason.
+- The first fixtures run has nothing to compare with: its mismatch pattern is
+  only recorded. By design, strict, ODF 1.0 and ODF 1.1 mode fail the 14
+  reload rows that need gradient or transparency fills.
+
 ## Checking a change
 
     python3 -I compare.py baseline/strict.kinds.json runs/new/strict.kinds.json

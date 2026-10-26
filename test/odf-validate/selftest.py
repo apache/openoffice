@@ -137,6 +137,34 @@ if os.path.isfile(ODFV_JAR):
     })
 else:
     print("SKIP crosscheck controls: odfvalidator not installed (fetch-odfvalidator.sh)")
+import tempfile, time
+gspec = importlib.util.spec_from_file_location("gate", os.path.join(D, "gate.py"))
+gt = importlib.util.module_from_spec(gspec)
+gspec.loader.exec_module(gt)
+vol = gt.read_volatile()
+checks["gate: gate-volatile.tsv lists the 12 documents with a reason"] = len(vol) == 12 and all(len(r) > 10 for r in vol.values())
+checks["gate: rewrite_jobs keeps sources and moves outputs"] = gt.rewrite_jobs([("/a/b.odt", "/x/0001_b.odt")], "/new") == [("/a/b.odt", "/new/0001_b.odt")]
+fake = {"0067_AddInChart.ods": {"ndiff": 1}, "0001_x.odt": {"ndiff": 0}, "0002_y.odt": {"ndiff": 3}}
+checks["gate: classify separates volatile from unexplained differences"] = gt.classify(fake, vol) == (1, ["0067_AddInChart.ods"], ["0002_y.odt"])
+gtmp = tempfile.mkdtemp()
+stub = os.path.join(gtmp, "stub.py")
+open(stub, "w").write("import sys,os,time,json\ndest=sys.argv[1]\nfor f in sys.argv[2:]:\n    d=os.path.join(dest,os.path.basename(f)+'.json')\n"
+                      "    if os.path.exists(d): continue\n    open(os.path.join(dest,'.current'),'w').write(f)\n    time.sleep(600 if 'hang' in f else 0.6)\n    json.dump({'type':'x'},open(d,'w'))\n")
+gsrc = os.path.join(gtmp, "src")
+os.makedirs(gsrc)
+for n in ("a", "b", "hang", "c"):
+    open(os.path.join(gsrc, n), "w").write("x")
+mk = lambda port, dest, files: [sys.executable, stub, dest] + files
+r1 = gt.dump_dir(gsrc, os.path.join(gtmp, "d1"), "p", 0, 2, os.path.join(gtmp, "l1"), tool=mk, poll=0.3)
+hang = json.load(open(os.path.join(gtmp, "d1", "hang.json")))
+checks["gate: a stalled document gets one HANG marker, the others are dumped"] = r1 == {"documents": 4, "stalls": 1} and hang["error"].startswith("HANG") \
+    and all("error" not in json.load(open(os.path.join(gtmp, "d1", n + ".json"))) for n in ("a", "b", "c"))
+os.remove(os.path.join(gsrc, "hang"))
+for n in ("d", "e", "f"):
+    open(os.path.join(gsrc, n), "w").write("x")
+t0 = time.time()
+r2 = gt.dump_dir(gsrc, os.path.join(gtmp, "d2"), "p", 0, 2, os.path.join(gtmp, "l2"), tool=mk, poll=0.3)
+checks["gate: a batch longer than the stall limit that keeps progressing is not killed"] = r2 == {"documents": 6, "stalls": 0} and time.time() - t0 > 2
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)
