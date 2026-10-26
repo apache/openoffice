@@ -20,7 +20,7 @@
 #**************************************************************
 
 # usage: idcheck.py <outdir> <ids.json>
-# ODF 1.2 Part 1 2.2.1 D.1 and D.2, which `jing -i` does not check: each XML stream is
+# ODF 1.2 Part 1 2.2.1 D.1 and D.2, and Part 3 2.2.1 F, which `jing -i` does not check: each XML stream is
 # parsed namespace-aware, and its xml:id values must be NCNames, unique within the stream.
 import sys, os, re, zipfile, json
 from xml.parsers import expat
@@ -70,7 +70,8 @@ def main():
         except Exception:
             bad_zip.append(pkg); continue
         for name in z.namelist():
-            if name.rsplit("/", 1)[-1] not in STREAMS:
+            base = name.rsplit("/", 1)[-1]
+            if base not in STREAMS and not (name.startswith("META-INF/") and "signatures" in base):
                 continue
             nstreams += 1
             for line, col, msg in check_stream(z.read(name)):

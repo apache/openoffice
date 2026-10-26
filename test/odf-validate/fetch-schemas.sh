@@ -28,6 +28,7 @@ typeset -A SUMS
 SUMS=(
   https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-schema.rng ca5d2510858c6f922b20cd27dc76d34959c1a976b9dfc6b5caeadbebfc83dbbb
   https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-manifest-schema.rng 75f972902bc785c15e51fb4e112e2f1b24e2327829eb54786cf8687ee39c7631
+  https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-dsig-schema.rng 52fbf196dc11fcaac41ff4b320f005daf419794c2f343a26ecab05778d7e7f6f
   https://docs.oasis-open.org/office/OpenDocument/v1.4/os/schemas/OpenDocument-v1.4-schema.rng 4034ec6be29205d5fc1ee5f42468ac6ef824287b3aba6d9289032af4fafbda7f
   https://docs.oasis-open.org/office/OpenDocument/v1.4/os/schemas/OpenDocument-v1.4-manifest-schema.rng f96e1fe95f4e3609717a307c28e2fe0654c890fe70ea03eb8a53caa20b684782
 )

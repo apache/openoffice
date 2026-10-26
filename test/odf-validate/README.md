@@ -46,6 +46,12 @@ The steps:
   Embedded objects whose `content.xml` is MathML are skipped (ODF 1.2 Part 1
   §2.2.1 B.4).
 - `report.py` groups the errors by normalized message.
+- `pkgcheck.py <outdir> <pkg.json>` checks the ODF 1.2 Part 3 package rules
+  (§2.2.1, 3.2, 3.3, 3.4.1): zip methods, `mimetype` first / stored / no extra
+  field / equal to the `/` media type, one manifest entry per file, META-INF
+  contents, `manifest:size` and STORED on encrypted entries, and signature
+  files (well-formed, root, `OpenDocument-v1.2-os-dsig-schema.rng`). Findings
+  are `shall:` or `should:`; only `shall` findings are non-conformances.
 - `idcheck.py <outdir> <ids.json>` parses every stream namespace-aware and
   checks `xml:id` syntax and uniqueness per stream (ODF 1.2 Part 1 §2.2.1
   D.1, D.2). `jing -i` does not check ID uniqueness.

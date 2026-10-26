@@ -53,3 +53,5 @@ mk("dupid", "1.2", '<text:p xml:id="a1">x</text:p><text:p xml:id=" a1 ">y</text:
 mk("badid", "1.2", '<text:p xml:id="1abc">x</text:p>')
 mk("badid2", "1.2", '<text:p xml:id="a b">x</text:p>')
 mk("badns", "1.2", "<text:p><zz:span/></text:p>")
+# Part 3 2.2.1 F: signature files are held to the same rules (validate.py does not look at them)
+mk("badsig", "1.2", "<text:p>hi</text:p>", {"META-INF/documentsignatures.xml": '<a><b xml:id="x"/><b xml:id="x"/></a>'})

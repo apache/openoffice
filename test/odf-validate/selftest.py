@@ -44,8 +44,18 @@ checks.update({
     "idcheck: dupid.odt flags the duplicate after normalization": any("duplicates" in m for m in ierrs("dupid.odt")),
     "idcheck: badid.odt, badid2.odt flag non-NCName ids": all(any("not an NCName" in m for m in ierrs(p)) for p in ("badid.odt", "badid2.odt")),
     "idcheck: badns.odt flags the unbound prefix": any("unbound prefix" in m for m in ierrs("badns.odt")),
-    "idcheck: no errors in other packages": {e[0].split("/")[0] for e in i["errors"]} == {"dupid.odt", "badid.odt", "badid2.odt", "badns.odt"},
+    "idcheck: badsig.odt flags a duplicate id in a signature file": any("duplicates" in m for m in ierrs("badsig.odt")),
+    "idcheck: no errors in other packages": {e[0].split("/")[0] for e in i["errors"]} == {"dupid.odt", "badid.odt", "badid2.odt", "badns.odt", "badsig.odt"},
 })
+subprocess.run([sys.executable, "-I", os.path.join(D, "make-pkg-controls.py")], check=True)
+pk = os.path.join(D, "runs", "control", "pkg.json")
+pdir = os.path.join(D, "fixtures", "control-pkg")
+subprocess.run([sys.executable, "-I", os.path.join(D, "pkgcheck.py"), pdir, pk], check=True, capture_output=True)
+pe = json.load(open(pk))["errors"]
+expected = json.load(open(os.path.join(pdir, ".expected.json")))
+def found(pkg): return sorted({tuple(m.split("]")[0].split(": [")) for m in (e[3] for e in pe if e[0].startswith(pkg + "/"))})
+for pkg in sorted(expected):
+    checks["pkgcheck: " + pkg + " reports exactly " + (", ".join(r for _, r in map(tuple, expected[pkg])) or "nothing")] = found(pkg) == [tuple(x) for x in expected[pkg]]
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)
