@@ -56,6 +56,15 @@ expected = json.load(open(os.path.join(pdir, ".expected.json")))
 def found(pkg): return sorted({tuple(m.split("]")[0].split(": [")) for m in (e[3] for e in pe if e[0].startswith(pkg + "/"))})
 for pkg in sorted(expected):
     checks["pkgcheck: " + pkg + " reports exactly " + (", ".join(r for _, r in map(tuple, expected[pkg])) or "nothing")] = found(pkg) == [tuple(x) for x in expected[pkg]]
+subprocess.run([sys.executable, "-I", os.path.join(D, "make-doctype-controls.py")], check=True)
+dt = os.path.join(D, "runs", "control", "dt.json")
+ddir = os.path.join(D, "fixtures", "control-doctype")
+subprocess.run([sys.executable, "-I", os.path.join(D, "doctypecheck.py"), ddir, dt], check=True, capture_output=True)
+de = json.load(open(dt))["errors"]
+dexpected = json.load(open(os.path.join(ddir, ".expected.json")))
+def dfound(doc): return sorted({tuple(m.split("]")[0].split(": [")) for m in (e[3] for e in de if e[0].startswith(doc + "/"))})
+for doc in sorted(dexpected):
+    checks["doctypecheck: " + doc + " reports exactly " + (", ".join(r for _, r in dexpected[doc]) or "nothing")] = dfound(doc) == [tuple(x) for x in dexpected[doc]]
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)

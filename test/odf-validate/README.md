@@ -52,6 +52,15 @@ The steps:
   contents, `manifest:size` and STORED on encrypted entries, and signature
   files (well-formed, root, `OpenDocument-v1.2-os-dsig-schema.rng`). Findings
   are `shall:` or `should:`; only `shall` findings are non-conformances.
+- `doctypecheck.py <outdir> <dt.json>` checks Part 1 §2.2.1 A.2/E and
+  §2.2.3-2.2.10: the `mimetype` file (or `office:mimetype` of a flat file), the
+  root element and the `office:body` child must agree on one document type.
+  Embedded sub documents are compared with their manifest media type
+  (`should:` findings). Two deviations from the literal text of §2.2.5: it
+  spells the drawing values `application.vnd.oasis.opendocument.graphics` and
+  `...graphic-template`; the registered `...graphics` and `...graphics-template`
+  of Part 1 appendix C are accepted. `...text-web` and `...formula-template`
+  are registered but no §2.2.x allows them, so they are reported.
 - `idcheck.py <outdir> <ids.json>` parses every stream namespace-aware and
   checks `xml:id` syntax and uniqueness per stream (ODF 1.2 Part 1 §2.2.1
   D.1, D.2). `jing -i` does not check ID uniqueness.
