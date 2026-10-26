@@ -43,31 +43,26 @@ all:
 
 # --- Files --------------------------------------------------------
 
-LUCENE_MAJOR=2
-LUCENE_MINOR=9
+LUCENE_MAJOR=8
+LUCENE_MINOR=11
 LUCENE_MICRO=4
 
 LUCENE_NAME=lucene-$(LUCENE_MAJOR).$(LUCENE_MINOR).$(LUCENE_MICRO)
-# NOTE that the jar names do not contain the micro version
-LUCENE_CORE_JAR=lucene-core-$(LUCENE_MAJOR).$(LUCENE_MINOR).$(LUCENE_MICRO)-dev.jar
-LUCENE_ANALYZERS_JAR=lucene-analyzers-$(LUCENE_MAJOR).$(LUCENE_MINOR).$(LUCENE_MICRO)-dev.jar
+LUCENE_CORE_JAR=lucene-core-$(LUCENE_MAJOR).$(LUCENE_MINOR).$(LUCENE_MICRO).jar
+LUCENE_ANALYZERS_JAR=lucene-analyzers-common-$(LUCENE_MAJOR).$(LUCENE_MINOR).$(LUCENE_MICRO).jar
 
 TARFILE_NAME=$(LUCENE_NAME)-src
-TARFILE_MD5=17960f35b2239654ba608cf1f3e256b3
+TARFILE_MD5=9275dbc22d542d7ca54783867d8628ef
 TARFILE_ROOTDIR=$(LUCENE_NAME)
 
-PATCH_FILES=lucene.patch
-
-.IF "$(OS)" == "WNT"
-PATCH_FILES+= long_path.patch
-.ENDIF
-
-PATCH_FILES+=lucene-java-version.patch
+# Upstream's Ant build needs Ivy and network access; this adds a minimal one.
+ADDITIONAL_FILES=aoo-build.xml
+PATCH_FILES=lucene-aoo-build.patch
 
 BUILD_DIR=.
-BUILD_ACTION= ${ANT} -buildfile .$/contrib$/analyzers$/build.xml
+BUILD_ACTION= ${ANT} -buildfile aoo-build.xml
 
-OUT2BIN=.$/build$/$(LUCENE_CORE_JAR) .$/build$/contrib$/analyzers/common$/$(LUCENE_ANALYZERS_JAR)
+OUT2BIN=.$/aoo-out$/$(LUCENE_CORE_JAR) .$/aoo-out$/$(LUCENE_ANALYZERS_JAR)
 
 .ELSE			# $(SOLAR_JAVA)!= ""
 nojava:

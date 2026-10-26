@@ -32,6 +32,8 @@ import java.io.StringReader;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.StringField;
+import org.apache.lucene.document.TextField;
 
 /** Lucene Document for help files */
 public class HelpFileDocument
@@ -63,16 +65,16 @@ public class HelpFileDocument
 		if( aFile != null )
 		{
 			String aPath = "#HLP#" + aModule + "/" + aFile.getName();
-			doc.add(new Field("path", aPath, Field.Store.YES, Field.Index.NOT_ANALYZED));
+			doc.add(new StringField("path", aPath, Field.Store.YES));
 		}
 
 		// Add the caption of the file to a field named "caption".  Specify a Reader,
 		// so that the text of the file is tokenized and indexed, but not stored.
-		doc.add( new Field( "caption", getReaderForFile( aCaptionFile ) ) );
+		doc.add( new TextField( "caption", getReaderForFile( aCaptionFile ) ) );
 
 		// Add the contents of the file to a field named "content".  Specify a Reader,
 		// so that the text of the file is tokenized and indexed, but not stored.
-		doc.add( new Field( "content", getReaderForFile( aContentFile ) ) );
+		doc.add( new TextField( "content", getReaderForFile( aContentFile ) ) );
 
 		// return the document
 		return doc;

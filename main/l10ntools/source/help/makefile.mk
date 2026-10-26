@@ -95,7 +95,7 @@ JAVACLASSFILES = \
 .IF "$(SYSTEM_LUCENE)" == "YES"
 EXTRAJARFILES += $(LUCENE_CORE_JAR) $(LUCENE_ANALYZERS_JAR)
 .ELSE
-JARFILES += lucene-core-2.9.4-dev.jar lucene-analyzers-2.9.4-dev.jar
+JARFILES += lucene-core-8.11.4.jar lucene-analyzers-common-8.11.4.jar
 .ENDIF
 JAVAFILES = $(subst,$(CLASSDIR)$/$(PACKAGE)$/, $(subst,.class,.java $(JAVACLASSFILES)))
 

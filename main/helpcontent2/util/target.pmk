@@ -34,7 +34,7 @@ $(LINKALLTARGETS) : $(foreach,i,$(LINKLINKFILES) $(COMMONMISC)$/$$(@:b:s/_/./:e:
 .IF "$(CHECK_LUCENCE_INDEXER_OUTPUT)" == ""
 	$(JAVAI) $(JAVAIFLAGS) $(JAVA_LIBRARY_PATH) -cp "$(my_cp)" com.sun.star.help.HelpIndexerTool -lang $(@:b:s/_/./:e:s/.//) -mod $(LINKNAME) -zipdir $(MISC)$/ziptmp$(@:b) -o $@.$(INPATH)
 .ELSE
-	$(JAVAI) $(JAVAIFLAGS) $(JAVA_LIBRARY_PATH) -cp "$(my_cp)" com.sun.star.help.HelpIndexerTool -lang $(@:b:s/_/./:e:s/.//) -mod $(LINKNAME) -zipdir $(MISC)$/ziptmp$(@:b) -o $@.$(INPATH) -checkcfsandsegname _0 _3
+	$(JAVAI) $(JAVAIFLAGS) $(JAVA_LIBRARY_PATH) -cp "$(my_cp)" com.sun.star.help.HelpIndexerTool -lang $(@:b:s/_/./:e:s/.//) -mod $(LINKNAME) -zipdir $(MISC)$/ziptmp$(@:b) -o $@.$(INPATH) -checkindex
 .ENDIF
    $(RENAME) $@.$(INPATH) $@
 .ELSE

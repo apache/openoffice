@@ -1,0 +1,59 @@
+--- misc/build/lucene-8.11.4/aoo-build.xml
++++ misc/build/lucene-8.11.4/aoo-build.xml
+@@ -1 +1,55 @@
+-dummy
++<?xml version="1.0" encoding="UTF-8"?>
++<!-- Minimal AOO build of lucene-core and lucene-analyzers-common.
++     Upstream's build needs Ivy and network access. -->
++<project name="lucene-aoo" default="jar" basedir=".">
++
++  <property name="version" value="8.11.4"/>
++  <property name="out.dir" location="aoo-out"/>
++
++  <!-- Same rule as upstream common-build.xml: source/target flags on Java 8,
++       the release flag elsewhere so no Java 9+ API gets linked. -->
++  <condition property="javac.release.args" value="-source 8 -target 8" else="--release 8">
++    <equals arg1="${ant.java.version}" arg2="1.8"/>
++  </condition>
++
++  <macrodef name="build-module">
++    <attribute name="name"/>
++    <attribute name="dir"/>
++    <attribute name="classpath" default=""/>
++    <sequential>
++      <mkdir dir="${out.dir}/@{name}/classes"/>
++      <javac srcdir="@{dir}/src/java" destdir="${out.dir}/@{name}/classes"
++             encoding="UTF-8" includeantruntime="false" debug="on" deprecation="off"
++             createMissingPackageInfoClass="false"
++             classpath="@{classpath}">
++        <compilerarg line="${javac.release.args}"/>
++      </javac>
++      <copy todir="${out.dir}/@{name}/classes">
++        <fileset dir="@{dir}/src/resources"/>
++      </copy>
++      <jar destfile="${out.dir}/lucene-@{name}-${version}.jar" basedir="${out.dir}/@{name}/classes">
++        <manifest>
++          <attribute name="Specification-Title" value="Lucene Search Engine: @{name}"/>
++          <attribute name="Specification-Version" value="${version}"/>
++          <attribute name="Specification-Vendor" value="The Apache Software Foundation"/>
++          <attribute name="Implementation-Title" value="org.apache.lucene"/>
++          <attribute name="Implementation-Version" value="${version}"/>
++          <attribute name="Implementation-Vendor" value="The Apache Software Foundation"/>
++          <attribute name="X-Compile-Source-JDK" value="8"/>
++          <attribute name="X-Compile-Target-JDK" value="8"/>
++        </manifest>
++        <metainf dir="." includes="LICENSE.txt,NOTICE.txt"/>
++      </jar>
++    </sequential>
++  </macrodef>
++
++  <target name="jar">
++    <build-module name="core" dir="core"/>
++    <build-module name="analyzers-common" dir="analysis/common"
++                  classpath="${out.dir}/core/classes"/>
++  </target>
++
++  <target name="clean">
++    <delete dir="${out.dir}"/>
++  </target>
++</project>

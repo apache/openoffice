@@ -71,12 +71,12 @@
         name="lucene-core"
         system-test="${SYSTEM_LUCENE}"
         system-path="${LUCENE_CORE_JAR}"
-        internal-filename="lucene-core-2.9.4-dev.jar"/>
+        internal-filename="lucene-core-8.11.4.jar"/>
 
     <define-external
         name="lucene-analyzers"
         system-test="${SYSTEM_LUCENE}"
         system-path="${LUCENE_ANALYZERS_JAR}"
-        internal-filename="lucene-analyzers-2.9.4-dev.jar"/>
+        internal-filename="lucene-analyzers-common-8.11.4.jar"/>
 
 </project>

@@ -4777,16 +4777,11 @@ if test -n "$with_system_lucene" -o -n "$with_system_libs" && \
         AC_MSG_RESULT([external])
         SYSTEM_LUCENE=YES
         if test -z $LUCENE_CORE_JAR; then
-          AC_CHECK_FILE(/usr/share/java/lucene-core-2.9.4.jar,
-            [ LUCENE_CORE_JAR=/usr/share/java/lucene-core-2.9.4.jar ],
-            [
-              AC_CHECK_FILE(/usr/share/java/lucene-core.jar,
-                [ LUCENE_CORE_JAR=/usr/share/java/lucene-core.jar ],
-                [ AC_CHECK_FILE(/usr/share/java/lucene.jar,
-                   [ LUCENE_CORE_JAR=/usr/share/java/lucene.jar ],
-                   [ AC_MSG_ERROR(lucene-core.jar replacement not found)]
-                  )
-                ]
+          AC_CHECK_FILE(/usr/share/java/lucene-core.jar,
+            [ LUCENE_CORE_JAR=/usr/share/java/lucene-core.jar ],
+            [ AC_CHECK_FILE(/usr/share/java/lucene.jar,
+               [ LUCENE_CORE_JAR=/usr/share/java/lucene.jar ],
+               [ AC_MSG_ERROR(lucene-core.jar replacement not found)]
               )
             ]
           )
@@ -4796,49 +4791,29 @@ if test -n "$with_system_lucene" -o -n "$with_system_libs" && \
         fi
 
         if test -z $LUCENE_ANALYZERS_JAR; then
-          AC_CHECK_FILE(/usr/share/java/lucene-analyzers-2.3.jar,
-            [ LUCENE_ANALYZERS_JAR=/usr/share/java/lucene-analyzers-2.3.jar ],
-            [
-              AC_CHECK_FILE(/usr/share/java/lucene-contrib/lucene-analyzers.jar,
-                [ LUCENE_ANALYZERS_JAR=/usr/share/java/lucene-contrib/lucene-analyzers.jar ],
-                [ AC_MSG_ERROR(lucene-analyzers.jar replacement not found.)]
-              )
-            ]
+          AC_CHECK_FILE(/usr/share/java/lucene-analyzers-common.jar,
+            [ LUCENE_ANALYZERS_JAR=/usr/share/java/lucene-analyzers-common.jar ],
+            [ AC_MSG_ERROR(lucene-analyzers-common.jar replacement not found.)]
           )
         else
-          AC_CHECK_FILE($LUCENE_CORE_JAR, [],
-               [ AC_MSG_ERROR(lucene-analyzers.jar not found.)], [])
+          AC_CHECK_FILE($LUCENE_ANALYZERS_JAR, [],
+               [ AC_MSG_ERROR(lucene-analyzers-common.jar not found.)], [])
         fi
-        AC_MSG_CHECKING([whether lucene is version 2.x])
+        AC_MSG_CHECKING([whether lucene is version 8.x])
         export LUCENE_CORE_JAR
         if $PERL -e 'use Archive::Zip;
             my $file = "$ENV{'LUCENE_CORE_JAR'}";
             my $zip = Archive::Zip->new( $file );
             my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
-            if ( $mf =~ m/Specification-Version: 2.*/ ) {
+            if ( $mf =~ m/Specification-Version: 8\..*/ ) {
                 exit 0;
             } else {
                 exit 1;
             }'; then
             AC_MSG_RESULT([yes])
-         else
-            AC_MSG_RESULT([no])
-            AC_MSG_CHECKING([whether lucene is version 3.x])
-
-            if $PERL -e 'use Archive::Zip;
-                my $file = "$ENV{'LUCENE_CORE_JAR'}";
-                my $zip = Archive::Zip->new( $file );
-                my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
-                if ( $mf =~ m/Specification-Version: 3.*/ ) {
-                    exit 0;
-                } else {
-                    exit 1;
-                }'; then
-                AC_MSG_RESULT([yes])
-             else
-                AC_MSG_ERROR([no, you need lucene 2 or 3])
-             fi
-         fi
+        else
+            AC_MSG_ERROR([no, you need lucene 8.x])
+        fi
 
 else
     AC_MSG_RESULT([internal])

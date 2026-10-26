@@ -73,9 +73,9 @@ if ( true )
     URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && SYSTEM_LUCENE!=YES)
-    MD5 = 17960f35b2239654ba608cf1f3e256b3
-    name = lucene-2.9.4-src.tar.gz
-    URL1 = https://archive.apache.org/dist/lucene/java/2.9.4/lucene-2.9.4-src.tar.gz
+    MD5 = 9275dbc22d542d7ca54783867d8628ef
+    name = lucene-8.11.4-src.tgz
+    URL1 = https://archive.apache.org/dist/lucene/java/8.11.4/lucene-8.11.4-src.tgz
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_NSS_MODULE!=NO && SYSTEM_NSS!=YES)

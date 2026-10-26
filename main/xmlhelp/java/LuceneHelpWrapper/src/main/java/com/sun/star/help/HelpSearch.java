@@ -34,26 +34,21 @@ import com.sun.star.uno.Type;
 import com.sun.star.uno.Any;
 import com.sun.star.uno.AnyConverter;
 
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.analysis.cjk.CJKAnalyzer;
 import org.apache.lucene.document.Document;
+import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
-import org.apache.lucene.search.Searcher;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.WildcardQuery;
-import org.apache.lucene.util.Version;
 import org.apache.lucene.store.NIOFSDirectory;
 
 import com.sun.star.script.XInvocation;
 import com.sun.star.beans.XIntrospectionAccess;
 
-import java.io.File;
 
 /** This class capsulates the class, that implements the minimal component and a
  * factory for creating the service (<CODE>__getComponentFactory</CODE>).
@@ -254,10 +249,9 @@ public class HelpSearch
 		private static String[] queryImpl( String aLanguageStr, String aIndexStr, String aQueryStr,
 			boolean bCaptionOnly, Object[] aScoreOutArray ) throws Exception
 		{
-			File aIndexFile = new File( aIndexStr );
-			IndexReader reader = IndexReader.open( NIOFSDirectory.open( aIndexFile ), true );
-			Searcher searcher = new IndexSearcher( reader );
-			Analyzer analyzer = aLanguageStr.equals("ja") ? (Analyzer)new CJKAnalyzer(Version.LUCENE_29) : (Analyzer)new StandardAnalyzer(Version.LUCENE_29);
+			NIOFSDirectory aDirectory = new NIOFSDirectory( HelpIndexerTool.toPath( aIndexStr ) );
+			IndexReader reader = DirectoryReader.open( aDirectory );
+			IndexSearcher searcher = new IndexSearcher( reader );
 
 			String aField;
 			if( bCaptionOnly )
@@ -288,6 +282,7 @@ public class HelpSearch
 			aScoreOutArray[0] = aScores;
 
 			reader.close();
+			aDirectory.close();
 
 			return aDocs;
 		}

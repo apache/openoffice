@@ -35,27 +35,40 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.cjk.CJKAnalyzer;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.util.Version;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.NIOFSDirectory;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Date;
-
-/**
-   When this tool is used with long path names on Windows, that is paths which start
-   with \\?\, then the caller must make sure that the path is unique. This is achieved
-   by removing '.' and '..' from the path. Paths which are created by
-   osl_getSystemPathFromFileURL fulfill this requirement. This is necessary because
-   lucene is patched to not use File.getCanonicalPath. See long_path.patch in the lucene
-   module.
- */
 
 public class HelpIndexerTool
 {
     public HelpIndexerTool()
 	{
+    }
+
+    /** Converts a path to a java.nio Path. On Windows the path may start with the
+        long path prefix \\?\ (as created by osl_getSystemPathFromFileURL); if the
+        runtime rejects it, retry without the prefix.
+    */
+    public static Path toPath( String aPath )
+	{
+        try
+		{
+            return Paths.get( aPath );
+        }
+        catch( InvalidPathException e )
+		{
+            if( aPath.startsWith( "\\\\?\\" ) )
+                return Paths.get( aPath.substring( 4 ) );
+            throw e;
+        }
     }
 
 
@@ -75,8 +88,6 @@ public class HelpIndexerTool
         String aLanguageStr = "";
         String aModule = "";
         String aTargetZipFileStr = "";
-        String aCfsName = "";
-        String aSegmentName = "";
 
         // Scan arguments
         //If this tool is invoked in the build process for extensions help,
@@ -87,8 +98,7 @@ public class HelpIndexerTool
         boolean bZipDir = false;
         boolean bSrcDir = false;
         boolean bOutput = false;
-        boolean bCfsName = false;
-        boolean bSegmentName = false;
+        boolean bCheckIndex = false;
 
         int nArgCount = args.length;
         for( int i = 0 ; i < nArgCount ; i++ )
@@ -142,25 +152,9 @@ public class HelpIndexerTool
                 }
                 i++;
             }
-			else if( "-checkcfsandsegname".equals(args[i]) )
+			else if( "-checkindex".equals(args[i]) )
 			{
-                if( i + 1 < nArgCount )
-				{
-                    aCfsName = args[i + 1] + ".cfs";
-                    bCfsName = true;
-                }
-                i++;
-                if( i + 1 < nArgCount )
-				{
-                    aSegmentName = "segments" + args[i + 1];
-                    bSegmentName = true;
-                }
-                i++;
-                if (!(bCfsName && bSegmentName))
-                {
-                    System.out.println("Usage: HelpIndexer -checkcfsandsegname _0 _3 (2 arguments needed)");
-                    System.exit( -1 );
-                }
+                bCheckIndex = true;
             }
         }
 
@@ -184,8 +178,14 @@ public class HelpIndexerTool
         try
 		{
             Date start = new Date();
-	    Analyzer analyzer = aLanguageStr.equals("ja") ? (Analyzer)new CJKAnalyzer(Version.LUCENE_29) : (Analyzer)new StandardAnalyzer(Version.LUCENE_29);
-	    IndexWriter writer = new IndexWriter( NIOFSDirectory.open(aIndexDir), analyzer, true, IndexWriter.MaxFieldLength.UNLIMITED );
+	    Analyzer analyzer = aLanguageStr.equals("ja") ? (Analyzer)new CJKAnalyzer() : (Analyzer)new StandardAnalyzer();
+	    // never mix with the files of an index written by another Lucene version
+	    deleteRecursively( aIndexDir );
+	    IndexWriterConfig aWriterConfig = new IndexWriterConfig( analyzer );
+	    aWriterConfig.setOpenMode( IndexWriterConfig.OpenMode.CREATE );
+	    aWriterConfig.getMergePolicy().setNoCFSRatio( 1.0 );
+	    Directory aLuceneDir = new NIOFSDirectory( toPath( aIndexDir.getPath() ) );
+	    IndexWriter writer = new IndexWriter( aLuceneDir, aWriterConfig );
 			if( !bExtensionMode )
 	            System.out.println( "Lucene: Indexing to directory '" + aIndexDir + "'..." );
             int nRet = indexDocs( writer, aModule, bExtensionMode, aCaptionFilesDir, aContentFilesDir );
@@ -196,22 +196,32 @@ public class HelpIndexerTool
 					System.out.println();
 					System.out.println( "Optimizing ..." );
 				}
-                writer.optimize();
+                writer.forceMerge( 1 );
             }
             writer.close();
+            aLuceneDir.close();
+            // the lock file outlives the writer and would end up in the help zip
+            new File( aIndexDir, "write.lock" ).delete();
 
 			boolean bCfsFileOk = true;
 			boolean bSegmentFileOk = true;
-			if( bCfsName && bSegmentName && !bExtensionMode && nRet != -1 )
+			if( bCheckIndex && !bExtensionMode && nRet != -1 )
 			{
-				String aCompleteCfsFileName = aDirToZipStr + File.separator + aIndexDirName + File.separator + aCfsName;
-				String aCompleteSegmentFileName = aDirToZipStr + File.separator + aIndexDirName + File.separator + aSegmentName;
-				File aCfsFile = new File( aCompleteCfsFileName );
-				File aSegmentFile = new File( aCompleteSegmentFileName );
-				bCfsFileOk = aCfsFile.exists();
-				bSegmentFileOk = aSegmentFile.exists();
-				System.out.println( "Checking cfs file " + aCfsName+ ": " + (bCfsFileOk ? "Found" : "Not found") );
-				System.out.println( "Checking segment file " + aSegmentName+ ": " + (bSegmentFileOk ? "Found" : "Not found") );
+				// the segment names depend on the corpus, so count files instead
+				int nCfsFiles = 0;
+				int nSegmentFiles = 0;
+				String[] aIndexFiles = aIndexDir.list();
+				for( int i = 0 ; aIndexFiles != null && i < aIndexFiles.length ; i++ )
+				{
+					if( aIndexFiles[i].endsWith( ".cfs" ) )
+						nCfsFiles++;
+					else if( aIndexFiles[i].startsWith( "segments_" ) )
+						nSegmentFiles++;
+				}
+				bCfsFileOk = ( nCfsFiles == 1 );
+				bSegmentFileOk = ( nSegmentFiles == 1 );
+				System.out.println( "Checking cfs file: " + nCfsFiles + " found, 1 expected" );
+				System.out.println( "Checking segment file: " + nSegmentFiles + " found, 1 expected" );
 			}
 
 			if( bExtensionMode || bExtension)

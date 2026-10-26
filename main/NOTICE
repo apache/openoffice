@@ -25,16 +25,73 @@ Apache projects:
 The notices from these projects are following:
 
 Apache Lucene
-Copyright 2006 The Apache Software Foundation
+Copyright 2001-2021 The Apache Software Foundation
 
-This product includes software developed by
-The Apache Software Foundation (https://www.apache.org/).
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Includes software from other Apache Software Foundation projects,
+including, but not limited to:
+ - Apache Ant
+ - Apache Jakarta Regexp
+ - Apache Commons
+ - Apache Xerces
+
+Brics Automaton (under core/src/java/org/apache/lucene/util/automaton) is
+BSD-licensed, created by Anders Møller. See http://www.brics.dk/automaton/
+
+The levenshtein automata tables (under core/src/java/org/apache/lucene/util/automaton) were
+automatically generated with the moman/finenight FSA library, created by
+Jean-Philippe Barrette-LaPierre. This library is available under an MIT license,
+see http://sites.google.com/site/rrettesite/moman and
+http://bitbucket.org/jpbarrette/moman/overview/
+
+The class org.apache.lucene.util.WeakIdentityMap was derived from
+the Apache CXF project and is Apache License 2.0.
+
+The class org.apache.lucene.util.compress.LZ4 is a Java rewrite of the LZ4
+compression library (https://github.com/lz4/lz4/tree/dev/lib) that is licensed
+under the 2-clause BSD license.
+(https://opensource.org/licenses/bsd-license.php)
 
 The snowball stemmers in
- contrib/snowball/src/java/net/sf/snowball
+  analysis/common/src/java/net/sf/snowball
+were developed by Martin Porter and Richard Boulton.
+The snowball stopword lists in
+  analysis/common/src/resources/org/apache/lucene/analysis/snowball
 were developed by Martin Porter and Richard Boulton.
 The full snowball package is available from
- http://snowball.tartarus.org/
+  http://snowball.tartarus.org/
+
+The KStem stemmer in
+  analysis/common/src/org/apache/lucene/analysis/en
+was developed by Bob Krovetz and Sergio Guzman-Lara (CIIR-UMass Amherst)
+under the BSD-license.
+
+The Arabic,Persian,Romanian,Bulgarian, Hindi and Bengali analyzers (common) come with a default
+stopword list that is BSD-licensed created by Jacques Savoy.  These files reside in:
+analysis/common/src/resources/org/apache/lucene/analysis/ar/stopwords.txt,
+analysis/common/src/resources/org/apache/lucene/analysis/fa/stopwords.txt,
+analysis/common/src/resources/org/apache/lucene/analysis/ro/stopwords.txt,
+analysis/common/src/resources/org/apache/lucene/analysis/bg/stopwords.txt,
+analysis/common/src/resources/org/apache/lucene/analysis/hi/stopwords.txt,
+analysis/common/src/resources/org/apache/lucene/analysis/bn/stopwords.txt
+See http://members.unine.ch/jacques.savoy/clef/index.html.
+
+The German,Spanish,Finnish,French,Hungarian,Italian,Portuguese,Russian and Swedish light stemmers
+(common) are based on BSD-licensed reference implementations created by Jacques Savoy and
+Ljiljana Dolamic. These files reside in:
+analysis/common/src/java/org/apache/lucene/analysis/de/GermanLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/de/GermanMinimalStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/es/SpanishLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/fi/FinnishLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/fr/FrenchLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/fr/FrenchMinimalStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/hu/HungarianLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/it/ItalianLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/pt/PortugueseLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/ru/RussianLightStemmer.java
+analysis/common/src/java/org/apache/lucene/analysis/sv/SwedishLightStemmer.java
 
 
 Apache Portable Runtime
