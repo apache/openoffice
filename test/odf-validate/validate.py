@@ -71,12 +71,17 @@ def main():
     for v in ("12", "14"):
         errs = []
         for schema, fl in ((SCH[v][0], files[v][0]), (SCH[v][1], files[v][1])):
-            for i in range(0, len(fl), 400):
-                r = subprocess.run(JING + [schema] + fl[i:i + 400], capture_output=True, text=True)
+            while fl:
+                batch = fl[:400]
+                r = subprocess.run(JING + [schema] + batch, capture_output=True, text=True)
+                fl = fl[400:]
                 for line in (r.stdout + r.stderr).splitlines():
                     m = ERR.match(line)
                     if m:
                         errs.append([os.path.relpath(m.group(1), os.path.join(work, v)), int(m.group(2)), int(m.group(3)), m.group(5)])
+                        # a fatal error stops jing: resume with the files after the one that caused it
+                        if m.group(4) == "fatal" and m.group(1) in batch:
+                            fl = batch[batch.index(m.group(1)) + 1:] + fl
                     elif line.strip():
                         errs.append(["?", 0, 0, line.strip()])
         errors[v] = errs

@@ -35,6 +35,17 @@ checks = {
     "mathobj.odt MathML object skipped": d["mathml_skipped"] == ["mathobj.odt/Object 1/content.xml"] and not errs("12", "mathobj.odt"),
     "no unparsed jing output": not any(e[0] == "?" for v in d["errors"] for e in d["errors"][v]),
 }
+ids = os.path.join(D, "runs", "control", "ids.json")
+subprocess.run([sys.executable, "-I", os.path.join(D, "idcheck.py"), os.path.join(D, "fixtures", "control"), ids], check=True, capture_output=True)
+i = json.load(open(ids))
+def ierrs(pkg): return [e[3] for e in i["errors"] if e[0].startswith(pkg + "/")]
+checks.update({
+    "idcheck: good.odt, goodid.odt (normalized ids) clean": not ierrs("good.odt") and not ierrs("goodid.odt"),
+    "idcheck: dupid.odt flags the duplicate after normalization": any("duplicates" in m for m in ierrs("dupid.odt")),
+    "idcheck: badid.odt, badid2.odt flag non-NCName ids": all(any("not an NCName" in m for m in ierrs(p)) for p in ("badid.odt", "badid2.odt")),
+    "idcheck: badns.odt flags the unbound prefix": any("unbound prefix" in m for m in ierrs("badns.odt")),
+    "idcheck: no errors in other packages": {e[0].split("/")[0] for e in i["errors"]} == {"dupid.odt", "badid.odt", "badid2.odt", "badns.odt"},
+})
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)

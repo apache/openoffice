@@ -47,3 +47,9 @@ mk("bad", "1.2", "<text:bogus/>")
 mk("wrongver", "1.1", "<text:p>hi</text:p>")
 # ODF 1.2 Part 1 2.2.1 B.4: an embedded object whose content.xml is MathML
 mk("mathobj", "1.2", "<text:p>hi</text:p>", {"Object 1/content.xml": MATH})
+# ODF 1.2 Part 1 2.2.1 D.1/D.2: checked by idcheck.py, not by the schema
+mk("goodid", "1.2", '<text:p xml:id="a1">x</text:p><text:p xml:id=" b-2.c ">y</text:p>')
+mk("dupid", "1.2", '<text:p xml:id="a1">x</text:p><text:p xml:id=" a1 ">y</text:p>')
+mk("badid", "1.2", '<text:p xml:id="1abc">x</text:p>')
+mk("badid2", "1.2", '<text:p xml:id="a b">x</text:p>')
+mk("badns", "1.2", "<text:p><zz:span/></text:p>")

@@ -46,6 +46,9 @@ The steps:
   Embedded objects whose `content.xml` is MathML are skipped (ODF 1.2 Part 1
   §2.2.1 B.4).
 - `report.py` groups the errors by normalized message.
+- `idcheck.py <outdir> <ids.json>` parses every stream namespace-aware and
+  checks `xml:id` syntax and uniqueness per stream (ODF 1.2 Part 1 §2.2.1
+  D.1, D.2). `jing -i` does not check ID uniqueness.
 
 ## Checking a change
 
@@ -67,5 +70,7 @@ expressions with expected values; `--capture <out.json>` records them instead.
 - jing must run with `-i`, otherwise it rejects the ODF schemas themselves.
 - A jing fatal error can hide later errors. Such lines are reported as
   `UNPARSED` kinds, and `compare.py` fails on any new `UNPARSED` kind.
+- jing stops at a fatal error (a stream that is not well-formed);
+  `validate.py` records it and carries on with the remaining files.
 - `setup-app.sh` renames an existing `app/OpenOffice.app` to
   `OpenOffice.app.old.<timestamp>` instead of deleting it.
