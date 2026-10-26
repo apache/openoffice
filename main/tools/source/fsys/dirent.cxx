@@ -2146,7 +2146,8 @@ DirEntry DirEntry::TempName( DirEntryKind eKind ) const
         i = strlen(dir);
         // need to add ?\\? + prefix + number + pid + .ext + '\0'
 #       define TMPNAME_SIZE  ( 1 + 5 + 5 + 10 + 4 + 1 )
-        ret_val = new char[i + TMPNAME_SIZE ];
+        size_t nBufSize = i + TMPNAME_SIZE;
+        ret_val = new char[nBufSize];
         if (ret_val)
         {
             strcpy(ret_val,dir);
@@ -2183,7 +2184,7 @@ DirEntry DirEntry::TempName( DirEntryKind eKind ) const
             for ( unsigned long nOld = u; ++u != nOld; ) /* Hae??? */
             {
                 u %= 100000;  /* on *NIX repeats every 100ms, maybe less if CLOCKS_PER_SEC > 10^6 */
-                snprintf(ret_val+i, TMPNAME_SIZE, "%05lu%lu", u, mypid);
+                snprintf(ret_val+i, nBufSize - i, "%05lu%lu", u, mypid);
 
                 strcat(ret_val,ext);
 
