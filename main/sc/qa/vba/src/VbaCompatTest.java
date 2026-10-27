@@ -42,6 +42,14 @@ import com.sun.star.uno.XComponentContext;
 
 import org.openoffice.test.OfficeConnection;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 /**
@@ -50,9 +58,18 @@ import static org.junit.Assert.*;
  * Provides infrastructure for:
  * - Connecting to a headless AOO instance with VBA support
  * - Creating a calc document with VBA compatibility mode enabled
- * - Inserting BASIC test modules with VBA code
+ * - Inserting BASIC test modules with VBA code (following Arrange-Act-Assert
+ *   convention, with '@TestMethod' markers in comments)
  * - Executing BASIC macros via XScriptProvider
+ * - Creating temp files for deterministic FileSearch/FileDialog tests
+ *   (using Fakes pattern for intercepting environment variables)
  * - Reading back cell values for verification
+ *
+ * Result channel convention:
+ * - Cell Z1 (column 25, row 0): primary numeric result
+ * - Cell Z2 (column 25, row 1): secondary numeric result
+ * - Cell AA1 (column 26, row 0): primary string result
+ * - Cell AA2 (column 26, row 1): secondary string result
  */
 public abstract class VbaCompatTest {
 
@@ -63,12 +80,16 @@ public abstract class VbaCompatTest {
     protected XSpreadsheetDocument document;
     protected XModel documentModel;
 
+    private final List<File> tempFiles = new ArrayList<>();
+    private Path tempDir;
+
     @org.junit.Before
     public void setUp() throws Exception {
         connection.setUp();
         context = connection.getComponentContext();
         serviceFactory = UnoRuntime.queryInterface(
             XMultiServiceFactory.class, context.getServiceManager());
+        tempDir = Files.createTempDirectory("aoo_vba_test");
         createDocument();
     }
 
@@ -85,6 +106,7 @@ public abstract class VbaCompatTest {
                 // ignore close errors during teardown
             }
         }
+        cleanupTempFiles();
         connection.tearDown();
     }
 
@@ -130,7 +152,12 @@ public abstract class VbaCompatTest {
     /**
      * Inserts a BASIC module into the "Standard" library of the current document.
      *
-     * @param moduleName the name of the module (e.g., "FormatConditionTests")
+     * BASIC modules should follow these conventions:
+     * - Start with a '@TestModule' comment marker
+     * - Each test should have AAA structure (Arrange-Act-Assert)
+     * - Use 'Option VBASupport 1' for VBA compatibility
+     *
+     * @param moduleName the name of the module
      * @param sourceCode the BASIC source code
      */
     protected void addBasicModule(String moduleName, String sourceCode) throws Exception {
@@ -138,7 +165,6 @@ public abstract class VbaCompatTest {
             XStarBasicAccess.class, documentModel);
         assertNotNull("Document model does not support XStarBasicAccess", basicAccess);
 
-        // Create Standard library if needed
         try {
             basicAccess.createLibrary("Standard", "", "", "");
         } catch (com.sun.star.container.ElementExistException e) {
@@ -152,7 +178,7 @@ public abstract class VbaCompatTest {
      * Executes a BASIC macro in the "Standard" library.
      *
      * @param moduleName the module name (e.g., "FormatConditionTests")
-     * @param functionName the sub/function name to execute
+     * @param functionName the sub name to execute
      * @return the return value of the macro, or null for Subs
      */
     protected Object runMacro(String moduleName, String functionName) throws Exception {
@@ -181,6 +207,35 @@ public abstract class VbaCompatTest {
     }
 
     /**
+     * Creates a test file in the temp directory and returns its path.
+     * Used to set up deterministic FileSearch test fixtures.
+     */
+    protected File createTempFile(String filename, String content) throws IOException {
+        File file = new File(tempDir.toFile(), filename);
+        Files.write(file.toPath(), content.getBytes());
+        tempFiles.add(file);
+        return file;
+    }
+
+    /**
+     * Creates a subdirectory in the temp directory for FileSearch subfolder tests.
+     */
+    protected File createTempSubdir(String name) throws IOException {
+        File subdir = new File(tempDir.toFile(), name);
+        Files.createDirectories(subdir.toPath());
+        tempFiles.add(subdir);
+        return subdir;
+    }
+
+    /**
+     * Returns the temp directory path as a string suitable for passing to VBA.
+     * On Windows, backslashes are converted to forward slashes or file:// URLs.
+     */
+    protected String getTempDirPath() {
+        return tempDir.toAbsolutePath().toString();
+    }
+
+    /**
      * Gets a cell from the first sheet by position (column, row).
      */
     protected XCell getCell(int column, int row) throws Exception {
@@ -191,7 +246,7 @@ public abstract class VbaCompatTest {
     }
 
     /**
-     * Gets the active sheet's range as a string address (e.g., "A1:B10").
+     * Gets the active sheet's range by name (e.g., "A1:B10").
      */
     protected XCellRange getRangeByAddress(String address) throws Exception {
         XSpreadsheets sheets = document.getSheets();
@@ -201,55 +256,82 @@ public abstract class VbaCompatTest {
     }
 
     /**
-     * Reads the value written to cell A1 by a BASIC test macro.
-     * This is the standard result channel for BASIC tests.
-     */
-    protected double getResultAsDouble() throws Exception {
-        return getCell(0, 0).getValue();
-    }
-
-    /**
-     * Reads the string value written to cell A1 by a BASIC test macro.
-     */
-    protected String getResultAsString() throws Exception {
-        return getCell(0, 0).getString();
-    }
-
-    /**
-     * Reads the numeric result from cell B1.
-     */
-    protected double getNumericResultB1() throws Exception {
-        return getCell(1, 0).getValue();
-    }
-
-    /**
-     * Reads the string result from cell B1.
-     */
-    protected String getStringResultB1() throws Exception {
-        return getCell(1, 0).getString();
-    }
-
-    /**
-     * Writes a value to cell A1 (for communication to BASIC macros if needed).
-     */
-    protected void writeValue(int column, int row, double value) throws Exception {
-        getCell(column, row).setValue(value);
-    }
-
-    /**
-     * Writes a string to cell A1 (for communication to BASIC macros if needed).
-     */
-    protected void writeString(int column, int row, String value) throws Exception {
-        getCell(column, row).setString(value);
-    }
-
-    /**
-     * Clears the first row of the active sheet.
+     * Clears the result row (row 0, columns 0-10).
+     * Called before each test to ensure clean results.
      */
     protected void clearResultRow() throws Exception {
         for (int c = 0; c < 10; c++) {
             getCell(c, 0).setString("");
             getCell(c, 0).setValue(0.0);
         }
+        for (int c = 24; c < 30; c++) {
+            getCell(c, 0).setString("");
+            getCell(c, 0).setValue(0.0);
+            getCell(c, 1).setString("");
+            getCell(c, 1).setValue(0.0);
+        }
+    }
+
+    /**
+     * Reads a numeric result from the Z column (column 25).
+     */
+    protected double getNumericResult(int row) throws Exception {
+        return getCell(25, row).getValue();
+    }
+
+    /**
+     * Reads a string result from the AA column (column 26).
+     */
+    protected String getStringResult(int row) throws Exception {
+        return getCell(26, row).getString();
+    }
+
+    /**
+     * Reads the numeric result from cell Z1 (column 25, row 0).
+     */
+    protected double getResultAsDouble() throws Exception {
+        return getCell(25, 0).getValue();
+    }
+
+    /**
+     * Reads the string result from cell AA1 (column 26, row 0).
+     */
+    protected String getResultAsString() throws Exception {
+        return getCell(26, 0).getString();
+    }
+
+    private void cleanupTempFiles() {
+        for (File f : tempFiles) {
+            try {
+                if (f.isDirectory()) {
+                    deleteDirectory(f);
+                } else {
+                    f.delete();
+                }
+            } catch (Exception e) {
+                // ignore cleanup errors
+            }
+        }
+        try {
+            if (tempDir != null) {
+                deleteDirectory(tempDir.toFile());
+            }
+        } catch (Exception e) {
+            // ignore
+        }
+    }
+
+    private static void deleteDirectory(File dir) {
+        File[] files = dir.listFiles();
+        if (files != null) {
+            for (File f : files) {
+                if (f.isDirectory()) {
+                    deleteDirectory(f);
+                } else {
+                    f.delete();
+                }
+            }
+        }
+        dir.delete();
     }
 }

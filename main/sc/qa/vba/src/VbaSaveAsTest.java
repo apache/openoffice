@@ -24,6 +24,8 @@ package org.openoffice.sc.qa.vba;
 import org.junit.Test;
 import org.junit.Before;
 
+import java.io.File;
+
 import static org.junit.Assert.*;
 
 /**
@@ -33,16 +35,20 @@ import static org.junit.Assert.*;
  * - ThisWorkbook.SaveAs with xlCSV format
  * - ThisWorkbook.SaveAs with xlExcel9795 format
  * - File creation verification after SaveAs
- * - Error handling for invalid paths
- * - SaveAs with overwrite behavior
+ * - SaveAs with overwrite behavior (second save to same path)
+ * - SaveAs with default format (no explicit format parameter)
  *
  * Reference Excel constants:
  * - xlCSV = 6
  * - xlExcel9795 = 43
- * - xlWorkbookNormal = -4143
  *
  * Test methodology: BASIC macros call SaveAs to save the document to a
- * temp path, then Java verifies the file exists on disk.
+ * temp path, then Java verifies the file exists on disk. Uses temp
+ * directory created by Java for deterministic file operations.
+ *
+ * Result columns:
+ * - Z column (index 25): numeric results (1 = success)
+ * - AA column (index 26): string results (file paths)
  */
 public class VbaSaveAsTest extends VbaCompatTest {
 
@@ -54,87 +60,153 @@ public class VbaSaveAsTest extends VbaCompatTest {
 
     private static final String BASIC_SOURCE =
         "REM  *****  BASIC  *****\n" +
+        "'@TestModule\n" +
         "Option VBASupport 1\n" +
-        "\n" +
-        "Sub TestSaveAsCSV()\n" +
+
+        "'@TestMethod\n" +
+        "Sub TestSaveAsCSV(tempPath As String)\n" +
+        "    ' Arrange\n" +
         "    Dim wb As Object\n" +
         "    Set wb = ThisWorkbook\n" +
-        "    Dim tempPath As String\n" +
-        "    tempPath = Environ(\"TEMP\") & \"\\\\test_saveas_csv.xls\"\n" +
+        "\n" +
+        "    ' Act\n" +
         "    wb.SaveAs tempPath, " + XL_CSV + "\n" +
+        "\n" +
+        "    ' Assert - write result\n" +
         "    Range(\"Z1\").Value = 1\n" +
+        "    Range(\"AA1\").Value = tempPath\n" +
         "End Sub\n" +
         "\n" +
-        "Sub TestSaveAsExcel9795()\n" +
+
+        "'@TestMethod\n" +
+        "Sub TestSaveAsExcel9795(tempPath As String)\n" +
+        "    ' Arrange\n" +
         "    Dim wb As Object\n" +
         "    Set wb = ThisWorkbook\n" +
-        "    Dim tempPath As String\n" +
-        "    tempPath = Environ(\"TEMP\") & \"\\\\test_saveas_9795.xls\"\n" +
+        "\n" +
+        "    ' Act\n" +
         "    wb.SaveAs tempPath, " + XL_EXCEL_97_95 + "\n" +
+        "\n" +
+        "    ' Assert\n" +
         "    Range(\"Z1\").Value = 1\n" +
+        "    Range(\"AA1\").Value = tempPath\n" +
         "End Sub\n" +
         "\n" +
-        "Sub TestSaveAsDefault()\n" +
+
+        "'@TestMethod\n" +
+        "Sub TestSaveAsDefault(tempPath As String)\n" +
+        "    ' Arrange\n" +
         "    Dim wb As Object\n" +
         "    Set wb = ThisWorkbook\n" +
-        "    Dim tempPath As String\n" +
-        "    tempPath = Environ(\"TEMP\") & \"\\\\test_saveas_default.xls\"\n" +
+        "\n" +
+        "    ' Act\n" +
         "    wb.SaveAs tempPath\n" +
+        "\n" +
+        "    ' Assert\n" +
         "    Range(\"Z1\").Value = 1\n" +
+        "    Range(\"AA1\").Value = tempPath\n" +
         "End Sub\n" +
         "\n" +
-        "Sub TestSaveAsOverwrite()\n" +
+
+        "'@TestMethod\n" +
+        "Sub TestSaveAsOverwrite(tempPath As String)\n" +
+        "    ' Arrange\n" +
         "    Dim wb As Object\n" +
         "    Set wb = ThisWorkbook\n" +
-        "    Dim tempPath As String\n" +
-        "    tempPath = Environ(\"TEMP\") & \"\\\\test_saveas_overwrite.ods\"\n" +
+        "\n" +
+        "    ' Act - first save\n" +
         "    wb.SaveAs tempPath\n" +
         "    Range(\"Z1\").Value = 1\n" +
+        "\n" +
+        "    ' Act - second save (overwrite)\n" +
+        "    wb.SaveAs tempPath\n" +
+        "    Range(\"Z2\").Value = 1\n" +
         "End Sub\n";
+
+    private String tempFileDir;
 
     @Before
     public void setUpVbaModules() throws Exception {
         addBasicModule(MODULE_NAME, BASIC_SOURCE);
+        tempFileDir = getTempDirPath();
     }
 
     @Test
     public void testSaveAsCSV() throws Exception {
         clearResultRow();
-        try {
-            runMacro(MODULE_NAME, "TestSaveAsCSV");
-            double result = getNumericResultAt(25, 0);
-            assertEquals("SaveAs should complete and set result to 1", 1.0, result, 0.001);
-        } catch (Exception e) {
-            // If VBA SaveAs is not fully implemented, the error is recorded
-            fail("SaveAs CSV test failed: " + e.getMessage());
-        }
+        String tempPath = tempFileDir + File.separator + "test_saveas_csv.xls";
+        runMacroWithArg(MODULE_NAME, "TestSaveAsCSV", tempPath);
+
+        double result = getNumericResult(0);
+        assertEquals("SaveAs CSV should complete and set result to 1", 1.0, result, 0.001);
+
+        File savedFile = new File(tempPath);
+        assertTrue("Saved file should exist on disk", savedFile.exists());
+        assertTrue("Saved file should not be empty", savedFile.length() > 0);
+
+        savedFile.delete();
     }
 
     @Test
     public void testSaveAsExcel9795() throws Exception {
         clearResultRow();
-        try {
-            runMacro(MODULE_NAME, "TestSaveAsExcel9795");
-            double result = getNumericResultAt(25, 0);
-            assertEquals("SaveAs should complete and set result to 1", 1.0, result, 0.001);
-        } catch (Exception e) {
-            fail("SaveAs Excel9795 test failed: " + e.getMessage());
-        }
+        String tempPath = tempFileDir + File.separator + "test_saveas_9795.xls";
+        runMacroWithArg(MODULE_NAME, "TestSaveAsExcel9795", tempPath);
+
+        double result = getNumericResult(0);
+        assertEquals("SaveAs Excel9795 should complete and set result to 1", 1.0, result, 0.001);
+
+        File savedFile = new File(tempPath);
+        assertTrue("Saved file should exist on disk", savedFile.exists());
+        savedFile.delete();
     }
 
     @Test
     public void testSaveAsDefault() throws Exception {
         clearResultRow();
-        try {
-            runMacro(MODULE_NAME, "TestSaveAsDefault");
-            double result = getNumericResultAt(25, 0);
-            assertEquals("SaveAs with default format should complete", 1.0, result, 0.001);
-        } catch (Exception e) {
-            fail("SaveAs default format test failed: " + e.getMessage());
-        }
+        String tempPath = tempFileDir + File.separator + "test_saveas_default.xls";
+        runMacroWithArg(MODULE_NAME, "TestSaveAsDefault", tempPath);
+
+        double result = getNumericResult(0);
+        assertEquals("SaveAs default format should complete", 1.0, result, 0.001);
+
+        File savedFile = new File(tempPath);
+        assertTrue("Saved file should exist on disk", savedFile.exists());
+        savedFile.delete();
     }
 
-    private double getNumericResultAt(int column, int row) throws Exception {
-        return getCell(column, row).getValue();
+    @Test
+    public void testSaveAsOverwrite() throws Exception {
+        clearResultRow();
+        String tempPath = tempFileDir + File.separator + "test_saveas_overwrite.ods";
+        runMacroWithArg(MODULE_NAME, "TestSaveAsOverwrite", tempPath);
+
+        double firstSave = getNumericResult(0);
+        assertEquals("First SaveAs should succeed", 1.0, firstSave, 0.001);
+
+        double secondSave = getNumericResult(1);
+        assertEquals("Second SaveAs (overwrite) should succeed", 1.0, secondSave, 0.001);
+
+        File savedFile = new File(tempPath);
+        assertTrue("Saved file should exist on disk", savedFile.exists());
+        savedFile.delete();
+    }
+
+    private void runMacroWithArg(String moduleName, String functionName, String arg) throws Exception {
+        com.sun.star.script.provider.XScriptProviderSupplier scriptSupplier =
+            com.sun.star.uno.UnoRuntime.queryInterface(
+                com.sun.star.script.provider.XScriptProviderSupplier.class, documentModel);
+        com.sun.star.script.provider.XScriptProvider provider = scriptSupplier.getScriptProvider();
+
+        String scriptURI = "vnd.sun.star.script:Standard." + moduleName + "." + functionName
+                         + "?language=Basic&location=document";
+
+        com.sun.star.script.provider.XScript script = provider.getScript(scriptURI);
+        assertNotNull(script);
+
+        short[][] outIndices = new short[1][];
+        Object[][] outParams = new Object[1][];
+
+        script.invoke(new Object[]{arg}, outIndices, outParams);
     }
 }
