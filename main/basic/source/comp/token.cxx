@@ -115,6 +115,7 @@ static TokenTable aTokTable_Basic [] = {		// Token-Tabelle:
 	{ _IN_,		"In" },
 	{ INPUT,	"Input" },				// auch INPUT #
 	{ TINTEGER,	"Integer" },
+	{ INTERFACE,	"Interface" },
 	{ IS,		"Is" },
 	{ LET,		"Let" },
 	{ LIB,		"Lib" },
@@ -184,6 +185,11 @@ static TokenTable aTokTable_Basic [] = {		// Token-Tabelle:
 	{ WITHEVENTS,	"WithEvents" },
 	{ WRITE,	"Write" },				// auch WRITE #
 	{ XOR,		"Xor" },
+	{ PP_IF,		"#If" },
+	{ PP_ELSEIF,	"#ElseIf" },
+	{ PP_ELSE,		"#Else" },
+	{ PP_ENDIF,		"#End If" },
+	{ PP_CONST,		"#Const" },
 	{ NIL,		"" }
 };
 
@@ -353,8 +359,8 @@ TokenTable aTokTable_Java [] = {		// Token-Tabelle:
 // #i109076
 TokenLabelInfo::TokenLabelInfo( void )
 {
-	m_pTokenCanBeLabelTab = new bool[VBASUPPORT+1];
-	for( int i = 0 ; i <= VBASUPPORT ; ++i )
+	m_pTokenCanBeLabelTab = new bool[INTERFACE+1];
+	for( int i = 0 ; i <= INTERFACE ; ++i )
 		m_pTokenCanBeLabelTab[i] = false;
 
 	// Token accepted as label by VBA
