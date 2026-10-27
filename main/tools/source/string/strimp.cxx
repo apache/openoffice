@@ -1146,7 +1146,7 @@ STRING& STRING::ConvertLineEnd( LineEnd eLineEnd )
 	while ( i < mpData->mnLen )
 	{
 		// Bei \r oder \n gibt es neuen Zeilenumbruch
-		if ( (pStr[i] == _CR) || (pStr[i] == _LF) )
+		if ( (pStr[i] == SAL_CR) || (pStr[i] == SAL_LF) )
 		{
 			if( nLen <= STRING_MAXLEN - nLineEndLen )
 				nLen = nLen + nLineEndLen;
@@ -1157,17 +1157,17 @@ STRING& STRING::ConvertLineEnd( LineEnd eLineEnd )
 			if ( !bConvert )
 			{
 				// Muessen wir Konvertieren
-				if ( ((eLineEnd != LINEEND_LF) && (pStr[i] == _LF)) ||
-					 ((eLineEnd == LINEEND_CRLF) && (pStr[i+1] != _LF)) ||
+				if ( ((eLineEnd != LINEEND_LF) && (pStr[i] == SAL_LF)) ||
+					 ((eLineEnd == LINEEND_CRLF) && (pStr[i+1] != SAL_LF)) ||
 					 ((eLineEnd == LINEEND_LF) &&
-					  ((pStr[i] == _CR) || (pStr[i+1] == _CR))) ||
+					  ((pStr[i] == SAL_CR) || (pStr[i+1] == SAL_CR))) ||
 					 ((eLineEnd == LINEEND_CR) &&
-					  ((pStr[i] == _LF) || (pStr[i+1] == _LF))) )
+					  ((pStr[i] == SAL_LF) || (pStr[i+1] == SAL_LF))) )
 					bConvert = sal_True;
 			}
 
 			// \r\n oder \n\r, dann Zeichen ueberspringen
-			if ( ((pStr[i+1] == _CR) || (pStr[i+1] == _LF)) &&
+			if ( ((pStr[i+1] == SAL_CR) || (pStr[i+1] == SAL_LF)) &&
 				 (pStr[i] != pStr[i+1]) )
 				++i;
 		}
@@ -1193,24 +1193,24 @@ STRING& STRING::ConvertLineEnd( LineEnd eLineEnd )
 		while ( i < mpData->mnLen )
 		{
 			// Bei \r oder \n gibt es neuen Zeilenumbruch
-			if ( (pStr[i] == _CR) || (pStr[i] == _LF) )
+			if ( (pStr[i] == SAL_CR) || (pStr[i] == SAL_LF) )
 			{
 				if ( eLineEnd == LINEEND_CRLF )
 				{
-					pNewData->maStr[j]	 = _CR;
-					pNewData->maStr[j+1] = _LF;
+					pNewData->maStr[j]	 = SAL_CR;
+					pNewData->maStr[j+1] = SAL_LF;
 					j += 2;
 				}
 				else
 				{
 					if ( eLineEnd == LINEEND_CR )
-						pNewData->maStr[j] = _CR;
+						pNewData->maStr[j] = SAL_CR;
 					else
-						pNewData->maStr[j] = _LF;
+						pNewData->maStr[j] = SAL_LF;
 					++j;
 				}
 
-				if ( ((pStr[i+1] == _CR) || (pStr[i+1] == _LF)) &&
+				if ( ((pStr[i+1] == SAL_CR) || (pStr[i+1] == SAL_LF)) &&
 					 (pStr[i] != pStr[i+1]) )
 					++i;
 			}

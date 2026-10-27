@@ -1283,7 +1283,7 @@ sal_Bool SvStream::ReadCsvLine( String& rStr, sal_Bool bEmbeddedLineBreak,
                 nLastOffset = rStr.Len();
                 String aNext;
                 ReadUniOrByteStringLine( aNext);
-                rStr += sal_Unicode(_LF);
+                rStr += sal_Unicode(SAL_LF);
                 rStr += aNext;
             }
             else
@@ -2541,11 +2541,11 @@ SvStream& endl( SvStream& rStr )
 {
     LineEnd eDelim = rStr.GetLineDelimiter();
     if ( eDelim == LINEEND_CR )
-        rStr << _CR;
+        rStr << SAL_CR;
     else if( eDelim == LINEEND_LF )
-        rStr << _LF;
+        rStr << SAL_LF;
     else
-        rStr << _CR << _LF;
+        rStr << SAL_CR << SAL_LF;
     return rStr;
 }
 
@@ -2554,13 +2554,13 @@ SvStream& endlu( SvStream& rStrm )
     switch ( rStrm.GetLineDelimiter() )
     {
         case LINEEND_CR :
-            rStrm << sal_Unicode(_CR);
+            rStrm << sal_Unicode(SAL_CR);
         break;
         case LINEEND_LF :
-            rStrm << sal_Unicode(_LF);
+            rStrm << sal_Unicode(SAL_LF);
         break;
         default:
-            rStrm << sal_Unicode(_CR) << sal_Unicode(_LF);
+            rStrm << sal_Unicode(SAL_CR) << sal_Unicode(SAL_LF);
     }
     return rStrm;
 }

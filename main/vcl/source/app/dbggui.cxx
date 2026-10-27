@@ -718,7 +718,7 @@ void DbgWindow::InsertLine( const XubString& rLine )
 {
     XubString aStr = rLine;
     aStr.ConvertLineEnd( LINEEND_LF );
-    xub_StrLen  nPos = aStr.Search( _LF );
+    xub_StrLen  nPos = aStr.Search( SAL_LF );
     sal_Bool bFirstEntry = sal_True;
     while ( nPos != STRING_NOTFOUND )
     {
@@ -731,7 +731,7 @@ void DbgWindow::InsertLine( const XubString& rLine )
         bFirstEntry = sal_False;
 
         aStr.Erase( 0, nPos+1 );
-        nPos = aStr.Search( _LF );
+        nPos = aStr.Search( SAL_LF );
     }
     if ( maLstBox.GetEntryCount() >= DBGWIN_MAXLINES )
         maLstBox.RemoveEntry( 0 );
@@ -1371,7 +1371,7 @@ void DbgInfoDialog::SetInfoText( const XubString& rStr )
     sal_uInt16 nFoundIndex;
     do
     {
-        nFoundIndex = aStr.Search( _LF, nStrIndex );
+        nFoundIndex = aStr.Search( SAL_LF, nStrIndex );
         XubString aTextParagraph = aStr.Copy( nStrIndex, nFoundIndex-nStrIndex );
         if ( mbHelpText )
         {

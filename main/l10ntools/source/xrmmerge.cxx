@@ -440,7 +440,7 @@ void XRMResParser::ConvertStringToDBFormat( ByteString &rString )
 	ByteString sResult;
     do {
 		sResult = rString;
-		rString.EraseLeadingChars( _LF );
+		rString.EraseLeadingChars( SAL_LF );
 	//	rString.EraseLeadingChars( ' ' );
 		rString.EraseLeadingChars( '\t' );
 	//	rString.EraseTrailingChars( ' ' );
