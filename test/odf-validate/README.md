@@ -97,6 +97,18 @@ The steps:
     adapts old OOo namespaces. It is stricter than Part 3 §3.2 in wanting
     `META-INF/documentsignatures.xml` listed in the manifest. It checks ID
     uniqueness, which `jing -i` does not.
+- `fixtures/doctypes/` (`run.sh`, `make.py`, `derive-chart.py`), `fixtures/encrypted/`, `fixtures/signed/`, `fixtures/base/`: documents
+  of the kinds the corpus lacks (templates, master, Writer/Web, Impress as Draw, Math, chart, encrypted, signed, Base), saved
+  in strict and extended mode under `runs/task12/gen-*`. `decrypt.py <in-dir> <out-dir> <password>` writes plain copies of
+  encrypted packages for the schema checkers; `pkgcheck.py` must still run on the real ones. Signing needs a visible
+  (`-invisible`) office because `-headless` cancels the dialog: see the header of `fixtures/signed/make.py`.
+- `fixtures/{writer,calc,draw,chart,styles-text,styles-gfx,leak}/make.py`, run with `fixtures/gen-run.sh <area> <strict|ext> <port> <abs-outdir>`:
+  documents built through UNO to exercise the elements, attributes and enumerated values that `cov_report.py` lists as gaps
+  (`leak` classifies the names AOO emits that the schema does not define). Use an absolute `<outdir>`.
+- `cov_schema.py`, `cov_source.py`, `cov_corpus.py`, `cov_report.py`: schema-coverage report. The schema universe
+  (ODF 1.2 elements, element/attribute pairs, enumerated values), the names the export code in `main/` can emit (static
+  C++ scan; a lower bound, table-driven names are missed) and what a corpus exercises are joined by namespace URI and
+  local name into the gaps worth generating documents for. Outputs live under `runs/`.
 - `idcheck.py <outdir> <ids.json>` parses every stream namespace-aware and
   checks `xml:id` syntax and uniqueness per stream (ODF 1.2 Part 1 §2.2.1
   D.1, D.2). `jing -i` does not check ID uniqueness.
