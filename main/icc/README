@@ -8,7 +8,7 @@ It's composed of a small application, which lurks in:
 icc/source/create_sRGB_profile
 
 That application links to a support library
-(icc/download/SampleICC-1.3.2), build at OOo
+(icc/download/SampleICC-1.6.11), build at OOo
 build time.
 Finally, the application is run at OOo build time to
 generate the only file delivered to solver:
@@ -29,11 +29,22 @@ Notes for porters
 the endianness and other platform specific configuration
 are in:
 
-<build>/misc/build/SampleICC-1.3.2/IccProfLib/IccProfLibConf.h
+<build>/misc/build/SampleICC-1.6.11/IccProfLib/IccProfLibConf.h
 
-The patchs:
-SampleICC-1.3.2.patch tweaks the build to use the endianness
-detected in sal.
+The patch:
+SampleICC-1.6.11.patch performs the following modifications:
+- Replaces platform-based endianness detection in IccProfLibConf.h
+  with SAL-based detection (osl/endian.h _LITTLE_ENDIAN/_BIG_ENDIAN)
+- Replaces stdint.h types (uint32_t, int32_t) with SAL types
+  (sal_uInt32, sal_Int32, etc.)
+- Replaces #include <memory.h> with #include <memory> (C++ compatibility)
+- Adds missing #include <stdlib.h> and <string.h> to IccCmm.cpp
+- Normalizes \\r\\n to \\n in string literals across library source
+- Preserves ICC_ENUM_CONVENIENCE define (native in 1.6.11, provides
+  in-enum max values for type-safe case labels with Clang 16+)
+
+Note: The older 1.3.2 patches for format-security warnings and Win64
+support are no longer needed as these are already fixed in 1.6.11.
 
 beppec56@openoffice.org
 
