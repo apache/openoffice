@@ -32,7 +32,7 @@ AC_ARG_WITH(dmake-path,
 ])
 AC_ARG_WITH(dmake-url,
 [  --with-dmake-url=<URL>   Specify the location of downloadable dmake source code. For example:
-                          https://github.com/jimjag/dmake/archive/v4.13.1/dmake-4.13.1.tar.gz
+                          https://github.com/jimjag/dmake/archive/v4.13.2/dmake-4.13.2.tar.gz
                           Note that dmake is under GPL license.],
 [  DMAKE_URL="$withval"
 ])
@@ -132,7 +132,7 @@ AC_ARG_WITH(epm,
 ],,)
 AC_ARG_WITH(epm-url,
 [  --with-epm-url=<URL>    Specify the location of downloadable epm source code. For example:
-                            https://github.com/jimjag/epm/archive/v5.0.0/epm-5.0.0.tar.gz
+                            https://github.com/jimjag/epm/archive/v5.1.0/epm-5.1.0.tar.gz
                           Version 5.0.0 or later is required.
 ],[  EPM_URL="$withval"
 ])
@@ -2019,9 +2019,9 @@ if test "$DMAKE" = "no"; then
        DMAKE_URL=$with_dmake_url
        AC_MSG_RESULT([dmake will be downloaded and compiled in bootstrap])
        DMAKE=
+       BUILD_DMAKE=YES
     else
        AC_MSG_ERROR([no URL for dmake source code specified, either. Use --with-dmake-url to supply an URL; run configure with the --help option for a list of possible URLs.])
-       BUILD_DMAKE=YES
     fi
 else
     AC_MSG_CHECKING([whether the found dmake is the right dmake])
@@ -2054,6 +2054,7 @@ if test "$DMAKE" = "no"; then
    AC_MSG_ERROR([please use --with-dmake-path or --with-dmake-url to specify dmake executable or source])
 fi
 AC_SUBST(DMAKE_URL)
+AC_SUBST(BUILD_DMAKE)
 AC_SUBST(DMAKE_PATH)
 AC_SUBST(IS_SYSTEM_DMAKE)
 

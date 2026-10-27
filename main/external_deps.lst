@@ -28,6 +28,24 @@ OOO_EXTRAS=https://sourceforge.net/projects/oooextras.mirror/files/
 
 
 ###############################################################################
+# Build tools, built from source during bootstrap when no suitable system
+# version is used (--with-dmake-url / --with-epm-url). Not part of the product.
+#
+
+if (BUILD_DMAKE == YES)
+    MD5 = c21b94ccef7ef69364f0ecc8d35eaa5f
+    name = dmake-4.13.2.tar.gz
+    URL1 = https://github.com/jimjag/dmake/archive/v4.13.2/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+if (BUILD_EPM == YES)
+    MD5 = 95ebbf8e6fa2e3940d5409f210ae7ba0
+    name = epm-5.1.0.tar.gz
+    URL1 = https://github.com/jimjag/epm/archive/v5.1.0/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+
+
+###############################################################################
 # Libraries with category A license
 #
 
