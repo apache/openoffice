@@ -813,7 +813,8 @@ sal_Bool ScXMLImportWrapper::ExportToComponent(uno::Reference<lang::XMultiServic
             // #i108978# If an embedded object is saved and no events are notified, don't use the stream
             // because without the ...DONE events, stream positions aren't updated.
             ScSheetSaveData* pSheetData = ScModelObj::getImplementation(xModel)->GetSheetSaveData();
-            if (pSheetData && pSheetData->IsInSupportedSave())
+            // strict ODF 1.2: no copying of sheet text that was loaded from a document that is not strict
+            if (pSheetData && pSheetData->IsInSupportedSave() && pExport->getDefaultVersion() != SvtSaveOptions::ODFVER_012)
             {
                 try
                 {
