@@ -556,6 +556,9 @@ void SbiRuntime::StepBASED( sal_uInt32 nOp1 )
 	// #109275 Check compatibility mode
 	bool bCompatible = ((nOp1 & 0x8000) != 0);
 	sal_uInt16 uBase = static_cast<sal_uInt16>(nOp1 & 1);		// Can only be 0 or 1
+	// VBA respects Option Base for implicit array bounds:
+	// Dim arr(n) with Option Base 0 -> 0 To n, with Option Base 1 -> 1 To n
+	// (only VBA's Array() function is always 0-based regardless of Option Base)
 	p1->PutInteger( uBase );
 	if( !bCompatible )
 		x2->Compute( SbxPLUS, *p1 );

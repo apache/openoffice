@@ -612,7 +612,7 @@ void SbiParser::DefType( sal_Bool bPrivate )
 					{
 						// Dimension the target array
 
-						for ( short i=0; i<pDim->GetSize();++i )
+					for ( short i=0; i<pDim->GetSize();++i )
 						{
 							sal_Int32 ub = -1;
 							sal_Int32 lb = nBase;
@@ -626,8 +626,9 @@ void SbiParser::DefType( sal_Bool bPrivate )
 								lb = ub;
 								ub = pNode->GetNumber();
 							}
-							else if ( !bCompatible )
-								ub += nBase;
+						else if ( !bCompatible )
+							ub += nBase;
+						// VBA: lb = nBase (respects Option Base), ub = declared value
 							pArray->AddDim32( lb, ub );
 						}
 						pArray->setHasFixedSize( true );

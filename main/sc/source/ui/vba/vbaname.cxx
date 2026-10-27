@@ -64,11 +64,9 @@ ScVbaName::getWorkSheet()
 ::rtl::OUString
 ScVbaName::getName()
 {
-	String sName;
-	sName += UniString( getWorkSheet()->getName());
-	sName += String::CreateFromAscii("!");
-	sName += UniString ( mxNamedRange->getName() );
-	return ::rtl::OUString( sName );
+	// In VBA, workbook-level names return just the name without sheet prefix
+	// AOO stores all names at document level, so return the raw name
+	return mxNamedRange->getName();
 }
 
 void
@@ -228,8 +226,13 @@ ScVbaName::setRefersToR1C1Local( const ::rtl::OUString & rRefersTo )
 css::uno::Reference< ov::excel::XRange >
 ScVbaName::getRefersToRange()
 {
-    uno::Reference< ov::excel::XRange > xRange = ScVbaRange::getRangeObjectForName(
-        mxContext, mxNamedRange->getName(), excel::getDocShell( mxModel ), formula::FormulaGrammar::CONV_XL_R1C1 );
+	// #i129350: use getValue() (returns "=Sheet1!$A$1:$A$3") instead of
+	// getName() (returns just the name of the named range)
+	::rtl::OUString sRefersTo = getValue();
+	if ( sRefersTo.getLength() > 0 && sRefersTo[0] == '=' )
+		sRefersTo = sRefersTo.copy(1);
+	uno::Reference< ov::excel::XRange > xRange = ScVbaRange::getRangeObjectForName(
+		mxContext, sRefersTo, excel::getDocShell( mxModel ), formula::FormulaGrammar::CONV_XL_A1 );
 	return xRange;
 }
 

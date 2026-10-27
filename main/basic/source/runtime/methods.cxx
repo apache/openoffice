@@ -3629,12 +3629,23 @@ RTLFUNC(TypeName)
 		StarBASIC::Error( SbERR_BAD_ARGUMENT );
 	else
 	{
-		SbxDataType eType = rPar.Get(1)->GetType();
-		sal_Bool bIsArray = ( ( eType & SbxARRAY ) != 0 );
-		String aRetStr = getBasicTypeName( eType );
-		if( bIsArray )
-			aRetStr.AppendAscii( "()" );
-		rPar.Get(0)->PutString( aRetStr );
+		SbxVariable* pVar = rPar.Get(1);
+		SbxDataType eType = pVar->GetType();
+
+		// #i129350: In VBA compatibility mode, return "Nothing" for null objects
+		sal_Bool bVBA = SbiRuntime::isVBAEnabled();
+		if( bVBA && eType == SbxOBJECT && !pVar->GetObject() )
+		{
+			rPar.Get(0)->PutString( String( RTL_CONSTASCII_USTRINGPARAM("Nothing") ) );
+		}
+		else
+		{
+			sal_Bool bIsArray = ( ( eType & SbxARRAY ) != 0 );
+			String aRetStr = getBasicTypeName( eType );
+			if( bIsArray )
+				aRetStr.AppendAscii( "()" );
+			rPar.Get(0)->PutString( aRetStr );
+		}
 	}
 }
 

@@ -68,16 +68,29 @@ void ImpGetIntntlSep( sal_Unicode& rcDecimalSep, sal_Unicode& rcThousandSep )
 SbxError ImpScan( const ::rtl::OUString& rWSrc, double& nVal, SbxDataType& rType,
 				  sal_uInt16* pLen, sal_Bool bAllowIntntl, sal_Bool bOnlyIntntl )
 {
-	::rtl::OString aBStr( ::rtl::OUStringToOString( rWSrc, RTL_TEXTENCODING_ASCII_US ) );
+	// Handle non-breaking space (U+00A0) as thousands separator.
+	// The ASCII US conversion below would replace NBSP with '?',
+	// causing locale-aware number parsing to fail (e.g. "1 000,5" in fr_FR).
+	sal_Unicode cDecimalSep, cThousandSep = 0;
+	if( bAllowIntntl || bOnlyIntntl )
+	{
+		ImpGetIntntlSep( cDecimalSep, cThousandSep );
+		if( cThousandSep == 0xA0 ) // NBSP
+			cThousandSep = (sal_Unicode)' ';
+	}
+
+	// Replace NBSP in source so the ASCII US conversion preserves it as ' '
+	rtl::OUString aUSrc = rWSrc;
+	if( cThousandSep == ' ' )
+		aUSrc = aUSrc.replace( sal_Unicode(0xA0), ' ' );
+	::rtl::OString aBStr( ::rtl::OUStringToOString( aUSrc, RTL_TEXTENCODING_ASCII_US ) );
 
 	// Bei International Komma besorgen
 	char cIntntlComma, cIntntl1000;
 	char cNonIntntlComma = '.';
 
-	sal_Unicode cDecimalSep, cThousandSep = 0;
 	if( bAllowIntntl || bOnlyIntntl )
 	{
-		ImpGetIntntlSep( cDecimalSep, cThousandSep );
 		cIntntlComma = (char)cDecimalSep;
 		cIntntl1000 = (char)cThousandSep;
 	}
