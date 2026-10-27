@@ -996,10 +996,12 @@ void SvXMLExportPropertyMapper::_exportXML(
 			OUStringBuffer sNameBuffer;
 			xml::AttributeData aData;
 			const sal_Bool bSkipODFNamespaces( SvtSaveOptions().GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_012 );
+			// strict ODF 1.2: foreign attributes are invalid too
+			const sal_Bool bSkipForeign( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 );
 			for( sal_Int32 i=0; i < nCount; i++, pAttribName++ )
 			{
 				xAttrContainer->getByName( *pAttribName ) >>= aData;
-				if( bSkipODFNamespaces && SvXMLIsODFNamespace( aData.Namespace ) )
+				if( bSkipForeign || ( bSkipODFNamespaces && SvXMLIsODFNamespace( aData.Namespace ) ) )
 					continue;
 				OUString sAttribName( *pAttribName );
 
