@@ -101,9 +101,19 @@ main/sc/qa/vba/
     VbaQueryTableTest.java          — P3: QueryTable Refresh/Delete (5 tests)
     VbaRangeTest.java               — P4: Range methods (12 tests)
     VbaDictionaryTest.java          — P3: Scripting.Dictionary (12 tests)
+    VbaLibreNamedRangesTest.java    — LO-style: cross-sheet names, RefersToRange, string indexer (6 tests)
+    VbaLibreOptionalArgsTest.java   — LO-style: optional arg handling for Offset/Address/Cells/etc (8 tests)
+    VbaLibreArraysTest.java         — LO-style: 1-based Dim arrays, LBound/UBound, For Each (8 tests)
+    VbaLibreVariantTest.java        — LO-style: VarType/TypeName/TypeConversion for Variant (10 tests)
+    VbaLibreRangeOpsTest.java       — LO-style: Intersect/Union/MergeArea edge cases (11 tests)
+    VbaLibreLocaleTest.java         — LO-style: locale number parsing, NBSP thousands sep (10 tests)
+    VbaLibreErrorTest.java          — LO-style: On Error, Err, EnableCancelKey, state cleanup (9 tests)
 main/sc/JunitTest_sc_vba.mk         — gbuild JUnit test registration
 main/sc/Module_sc.mk                — (modified) adds JunitTest_sc_vba to build
 ```
+
+**Phase 1-4 tests**: 8 registered test classes, 62 test methods (existing).
+**Phase 5 tests**: 7 LibreOffice-style failure hypothesis classes as untracked source files (not registered in build per user preference).
 
 ## 6. Test Summary
 
@@ -193,6 +203,50 @@ Properties like `Connection`, `CommandText`, and `Destination` are not yet imple
 `FileDialog.Show()` requires an interactive desktop session and cannot be tested
 headlessly. The test is documented here for manual verification. The VBA FileDialog
 object is accessed via `Application.FileDialog(msoFileDialogFilePicker)`.
+
+## 6.2. LibreOffice-Style Failure Hypothesis Tests
+
+The following test classes probe known trouble areas from the LibreOffice VBA port.
+They exist as **untracked source files** in `src/` and are **not** registered in
+`JunitTest_sc_vba.mk` (per user preference). They exist solely to surface potential
+failure hypotheses informed by the old third-party LibreOffice VBA port's documented
+trouble areas. Each test is designed to probe a specific failure mode rather than
+verify a known-good behavior.
+
+### Code Fixes Applied (in response to failure hypotheses)
+
+| Fix | File:Line | Description |
+|-----|-----------|-------------|
+| Array base 1 in VBA mode | `main/basic/source/runtime/step1.cxx:551-564` | `StepBASED` now sets lower bound to 1 in VBA mode (matches VBA `Dim arr(n)` semantics) |
+| DefType array base 1 | `main/basic/source/comp/dim.cxx:615-632` | Same fix for type-member arrays (DefType) in VBA mode |
+| TypeName for null objects | `main/basic/source/runtime/methods.cxx:3623-3637` | Returns "Nothing" instead of "Object" for null in VBA mode |
+| Array() 0-based in VBA | `main/basic/source/runtime/methods1.cxx:771` | `Array()` is always 0-based per VBA spec (not 1-based under `Option Base 1`) |
+| NamedRanges.Add string RefersTo | `main/sc/source/ui/vba/vbanames.cxx:122-151` | String addresses like `"=Sheet1!$A$1:$A$3"` are now parsed via `getRangeObjectForName` after stripping `=` |
+| NamedRange.Name without sheet prefix | `main/sc/source/ui/vba/vbaname.cxx:64-72` | `getName()` returns raw name (was prepending `Sheet1!`) |
+| NamedRange.RefersToRange fix | `main/sc/source/ui/vba/vbaname.cxx:228-234` | Uses `getValue()` (formatted VBA address) instead of `getName()` to resolve the range |
+| NBSP as thousands separator | `main/basic/source/sbx/sbxscan.cxx:71-80` | Replaces U+00A0 with space before ASCII-US conversion; also normalizes locale `cThousandSep` |
+| JunitTest registration | `main/sc/JunitTest_sc_vba.mk` | Phase 1-4 tests already registered; 7 LibreOffice-style files left unassigned per user preference |
+
+### Failure Hypothesis Summary
+
+| Test File | Primary Hypotheses |
+|-----------|--------------------|
+| `VbaLibreNamedRangesTest` | Worksheet-level `Names()` may not resolve cross-sheet references; `RefersToRange` may not handle sheet-qualified addresses; string indexer on `Names` collection may fail |
+| `VbaLibreOptionalArgsTest` | Omitted VBA optional arguments may not be converted to `Missing` by the UNO bridge; `Offset()`, `Resize()`, `Address()` default parameter handling may break |
+| `VbaLibreArraysTest` | VBA arrays may be 0-based (BASIC convention) instead of 1-based; `LBound`/`UBound` may return wrong values; `For Each` over Variant arrays may iterate in wrong order |
+| `VbaLibreVariantTest` | Variant subtypes (Empty, Null, Error) may not be preserved through UNO Any bridge; `VarType`/`TypeName` may return BASIC types instead of VBA types; `CVErr` may not be supported |
+| `VbaLibreRangeOpsTest` | `Intersect`/`Union` on merged ranges may not expand to merge boundaries; `MergeArea` may not return full merged range; `Cells(row, col)` indexing may be 0-based |
+| `VbaLibreLocaleTest` | `CDbl` may not handle comma as decimal separator; NBSP (0xA0) as thousands separator may not parse; `Format`, `Str`, `Val` may use fixed locale instead of system locale |
+| `VbaLibreErrorTest` | `Err.Number` may not be set correctly after VBA-style errors; `On Error Resume Next` may not properly suppress errors; `EnableCancelKey` may not be wired; error state may leak between operations |
+
+### Known Missing Functionality
+
+| API | Status | File |
+|-----|--------|------|
+| `Application.Run` method | Missing from XApplication.idl | `main/oovbaapi/ooo/vba/excel/XApplication.idl:95` |
+| `Application.EnableCancelKey` get/set | Implemented in interop but may not support xlErrorHandler mode | `main/sc/source/ui/vba/vbaapplication.cxx` |
+| `Range.Worksheet` property | Not in XRange.idl | `main/oovbaapi/ooo/vba/excel/XRange.idl` |
+| `XWorksheetFunction` interface | IDL is empty — no actual Excel functions exposed | `main/oovbaapi/ooo/vba/excel/XWorksheetFunction.idl:48` |
 
 ## 7. Running the Tests
 
