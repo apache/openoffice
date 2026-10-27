@@ -20,7 +20,11 @@
 ###############################################################
 
 # This GoogleTest tests the BASIC preprocessor/conditional compilation
-# by including the tokenizer and scanner source files directly.
+# by including the tokenizer, scanner, and parser source files directly.
+# The parser (parser.cxx) and its dependencies (symtbl.cxx, codegen.cxx,
+# exprtree.cxx, exprnode.cxx, dim.cxx, buffer.cxx, exprgen.cxx, io.cxx,
+# loops.cxx, sbcomp.cxx) are compiled directly to test the full
+# SbiParser::Parse() flow including #If/#Const/#Else/#ElseIf/#End If.
 
 $(eval $(call gb_GoogleTest_GoogleTest,basic_compiler))
 
@@ -30,6 +34,17 @@ $(eval $(call gb_GoogleTest_add_exception_objects,basic_compiler,\
 	test/source/basic/stub_getsbdat \
 	basic/source/comp/scanner \
 	basic/source/comp/token \
+	basic/source/comp/parser \
+	basic/source/comp/symtbl \
+	basic/source/comp/codegen \
+	basic/source/comp/exprtree \
+	basic/source/comp/exprnode \
+	basic/source/comp/dim \
+	basic/source/comp/buffer \
+	basic/source/comp/exprgen \
+	basic/source/comp/io \
+	basic/source/comp/loops \
+	basic/source/comp/sbcomp \
 ))
 
 $(eval $(call gb_GoogleTest_set_include,basic_compiler,\

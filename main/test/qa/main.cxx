@@ -4,79 +4,106 @@
 #include <cstring>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <string>
 
-static void WriteXmlReport(const char* path, int nFailures, int nTests)
+// Test runner using fork() to isolate heap corruption issues.
+//
+// The child process runs gtest with native XML output enabled, then calls
+// _exit() to skip static destructors that previously caused heap corruption
+// after RUN_ALL_TESTS() returned. The parent waits for the child and
+// propagates the exit status. If the child crashes before producing XML,
+// the parent writes a minimal failure report.
+
+static std::string extractXmlPath(int argc, char** argv)
 {
-    FILE* f = fopen(path, "w");
-    if (!f) return;
-    fprintf(f, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-    fprintf(f, "<testsuites tests=\"%d\" failures=\"%d\" disabled=\"0\" errors=\"0\" time=\"0\">\n", nTests, nFailures);
-    fprintf(f, "  <testsuite name=\"BasicCompilerTest\" tests=\"%d\" failures=\"%d\" disabled=\"0\" errors=\"0\">\n", nTests, nFailures);
-    fprintf(f, "    <testcase name=\"PP_CreateAndNext\" status=\"run\" result=\"completed\" time=\"0\"/>\n");
-    fprintf(f, "    <testcase name=\"PP_ConstToken\" status=\"run\" result=\"completed\" time=\"0\"/>\n");
-    fprintf(f, "    <testcase name=\"PP_ElseToken\" status=\"run\" result=\"completed\" time=\"0\"/>\n");
-    fprintf(f, "    <testcase name=\"PP_ElseIfToken\" status=\"run\" result=\"completed\" time=\"0\"/>\n");
-    fprintf(f, "    <testcase name=\"PP_EndIfToken\" status=\"run\" result=\"completed\" time=\"0\"/>\n");
-    fprintf(f, "    <testcase name=\"PP_MallocAfterTokenizer\" status=\"run\" result=\"completed\" time=\"0\"/>\n");
-    fprintf(f, "  </testsuite>\n");
-    fprintf(f, "</testsuites>\n");
-    fclose(f);
+    for (int i = 1; i < argc; ++i)
+    {
+        const char* prefix = "--gtest_output=xml:";
+        size_t plen = strlen(prefix);
+        if (strncmp(argv[i], prefix, plen) == 0)
+            return std::string(argv[i] + plen);
+    }
+    return "";
 }
-
-// Custom listener to suppress gtest output and avoid XML writer crash
-class SilentListener : public ::testing::EmptyTestEventListener
-{
-public:
-    void OnTestProgramStart(const ::testing::UnitTest& /*unit_test*/) override {}
-    void OnTestIterationStart(const ::testing::UnitTest& /*unit_test*/, int /*i*/) override {}
-    void OnTestIterationEnd(const ::testing::UnitTest& /*unit_test*/, int /*i*/) override {}
-    void OnTestProgramEnd(const ::testing::UnitTest& /*unit_test*/) override {}
-    void OnTestStart(const ::testing::TestInfo& /*test_info*/) override {}
-    void OnTestPartResult(const ::testing::TestPartResult& /*test_part_result*/) override {}
-    void OnTestEnd(const ::testing::TestInfo& /*test_info*/) override {}
-};
 
 int main(int argc, char **argv)
 {
-    // Parse --gtest_output BEFORE gtest consumes it
-    const char* xml_path = nullptr;
-    for (int i = 1; i < argc; ++i)
-    {
-        if (strncmp(argv[i], "--gtest_output=xml:", 18) == 0)
-        {
-            xml_path = argv[i] + 19;
-            break;
-        }
-    }
+    std::string xmlPath = extractXmlPath(argc, argv);
 
     ::testing::InitGoogleTest(&argc, argv);
 
-    ::testing::TestEventListeners& listeners =
-        ::testing::UnitTest::GetInstance()->listeners();
-    delete listeners.Release(listeners.default_result_printer());
-    delete listeners.Release(listeners.default_xml_generator());
-    listeners.Append(new SilentListener);
-
-    // xml_path already parsed above
-
-    // Run tests in a forked child to isolate heap corruption
+    // Fork to isolate heap corruption during static destructor cleanup
     pid_t pid = fork();
-    if (pid == 0)
+    if (pid < 0)
     {
+        fprintf(stderr, "FATAL: fork() failed in test runner\n");
+        _exit(3);
+    }
+    else if (pid == 0)
+    {
+        // --- Child process ---
+        // Child inherits gtest initialization from parent (which already
+        // parsed --gtest_output). Let gtest write XML natively via its
+        // default XML generator, then _exit() to skip destructors.
         int nRet = RUN_ALL_TESTS();
         fflush(stdout);
+        fflush(stderr);
         _exit(nRet);
     }
 
+    // --- Parent process ---
     int status = 0;
     waitpid(pid, &status, 0);
-    int nRet = WIFEXITED(status) ? WEXITSTATUS(status) : 1;
 
-    if (xml_path)
+    int nRet;
+    if (WIFEXITED(status))
     {
-        int nTests = 6;
-        int nFailures = (nRet != 0) ? 1 : 0;
-        WriteXmlReport(xml_path, nFailures, nTests);
+        nRet = WEXITSTATUS(status);
+    }
+    else if (WIFSIGNALED(status))
+    {
+        nRet = 1;
+        fprintf(stderr, "Test child process killed by signal %d\n",
+                WTERMSIG(status));
+    }
+    else
+    {
+        nRet = 1;
+        fprintf(stderr, "Test child process had unknown status %d\n",
+                status);
+    }
+
+    // If tests failed or child crashed, verify the XML report exists
+    if (nRet != 0 && !xmlPath.empty())
+    {
+        FILE* f = fopen(xmlPath.c_str(), "r");
+        if (!f)
+        {
+            // XML was not written — produce a minimal failure report
+            FILE* out = fopen(xmlPath.c_str(), "w");
+            if (out)
+            {
+                fprintf(out,
+                        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                        "<testsuites tests=\"1\" failures=\"1\" "
+                        "disabled=\"0\" errors=\"0\" time=\"0\">\n"
+                        "  <testsuite name=\"BasicCompilerTest\" "
+                        "tests=\"1\" failures=\"1\" disabled=\"0\" "
+                        "errors=\"0\">\n"
+                        "    <testcase name=\"crashed\" "
+                        "status=\"run\" result=\"completed\" time=\"0\">\n"
+                        "      <failure message=\"child process crashed "
+                        "before producing XML report\" type=\"\"></failure>\n"
+                        "    </testcase>\n"
+                        "  </testsuite>\n"
+                        "</testsuites>\n");
+                fclose(out);
+            }
+        }
+        else
+        {
+            fclose(f);
+        }
     }
 
     _exit(nRet);
