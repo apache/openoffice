@@ -103,7 +103,7 @@ main/sc/qa/vba/
     VbaDictionaryTest.java          — P3: Scripting.Dictionary (12 tests)
     VbaLibreNamedRangesTest.java    — LO-style: cross-sheet names, RefersToRange, string indexer (6 tests)
     VbaLibreOptionalArgsTest.java   — LO-style: optional arg handling for Offset/Address/Cells/etc (8 tests)
-    VbaLibreArraysTest.java         — LO-style: 1-based Dim arrays, LBound/UBound, For Each (8 tests)
+    VbaLibreArraysTest.java         — LO-style: Dim arr(n) with Option Base 0/1, explicit To bounds, Array(), Split (10 tests)
     VbaLibreVariantTest.java        — LO-style: VarType/TypeName/TypeConversion for Variant (10 tests)
     VbaLibreRangeOpsTest.java       — LO-style: Intersect/Union/MergeArea edge cases (11 tests)
     VbaLibreLocaleTest.java         — LO-style: locale number parsing, NBSP thousands sep (10 tests)
@@ -113,7 +113,7 @@ main/sc/Module_sc.mk                — (modified) adds JunitTest_sc_vba to buil
 ```
 
 **Phase 1-4 tests**: 8 registered test classes, 62 test methods (existing).
-**Phase 5 tests**: 7 LibreOffice-style failure hypothesis classes as untracked source files (not registered in build per user preference).
+**Phase 5 tests**: 7 LibreOffice-style failure hypothesis classes (64 test methods total) as untracked source files (not registered in build per user preference).
 
 ## 6. Test Summary
 
@@ -217,27 +217,38 @@ verify a known-good behavior.
 
 | Fix | File:Line | Description |
 |-----|-----------|-------------|
-| Array base 1 in VBA mode | `main/basic/source/runtime/step1.cxx:551-564` | `StepBASED` now sets lower bound to 1 in VBA mode (matches VBA `Dim arr(n)` semantics) |
-| DefType array base 1 | `main/basic/source/comp/dim.cxx:615-632` | Same fix for type-member arrays (DefType) in VBA mode |
 | TypeName for null objects | `main/basic/source/runtime/methods.cxx:3623-3637` | Returns "Nothing" instead of "Object" for null in VBA mode |
-| Array() 0-based in VBA | `main/basic/source/runtime/methods1.cxx:771` | `Array()` is always 0-based per VBA spec (not 1-based under `Option Base 1`) |
-| NamedRanges.Add string RefersTo | `main/sc/source/ui/vba/vbanames.cxx:122-151` | String addresses like `"=Sheet1!$A$1:$A$3"` are now parsed via `getRangeObjectForName` after stripping `=` |
+| Array() 0-based in VBA | `main/basic/source/runtime/methods1.cxx:771` | `Array()` is always 0-based per VBA spec (ignores `Option Base 1` in VBA mode) |
+| NamedRanges.Add string RefersTo | `main/sc/source/ui/vba/vbanames.cxx:122-151` | String addresses like `"=Sheet1!A1:A3"` are now parsed via `getRangeObjectForName` after stripping `=` prefix |
 | NamedRange.Name without sheet prefix | `main/sc/source/ui/vba/vbaname.cxx:64-72` | `getName()` returns raw name (was prepending `Sheet1!`) |
 | NamedRange.RefersToRange fix | `main/sc/source/ui/vba/vbaname.cxx:228-234` | Uses `getValue()` (formatted VBA address) instead of `getName()` to resolve the range |
 | NBSP as thousands separator | `main/basic/source/sbx/sbxscan.cxx:71-80` | Replaces U+00A0 with space before ASCII-US conversion; also normalizes locale `cThousandSep` |
+| Array base respects Option Base | `main/basic/source/runtime/step1.cxx:551-564` | `StepBASED` in VBA mode uses the compiled `Option Base` value (0 or 1), not forced 1 |
+| DefType respects Option Base | `main/basic/source/comp/dim.cxx:615-632` | Same as above for type-member arrays (DefType); `Dim arr(n)` with `Option Base 0` -> `0 To n`, with `Option Base 1` -> `1 To n` |
 | JunitTest registration | `main/sc/JunitTest_sc_vba.mk` | Phase 1-4 tests already registered; 7 LibreOffice-style files left unassigned per user preference |
 
 ### Failure Hypothesis Summary
 
-| Test File | Primary Hypotheses |
-|-----------|--------------------|
-| `VbaLibreNamedRangesTest` | Worksheet-level `Names()` may not resolve cross-sheet references; `RefersToRange` may not handle sheet-qualified addresses; string indexer on `Names` collection may fail |
-| `VbaLibreOptionalArgsTest` | Omitted VBA optional arguments may not be converted to `Missing` by the UNO bridge; `Offset()`, `Resize()`, `Address()` default parameter handling may break |
-| `VbaLibreArraysTest` | VBA arrays may be 0-based (BASIC convention) instead of 1-based; `LBound`/`UBound` may return wrong values; `For Each` over Variant arrays may iterate in wrong order |
-| `VbaLibreVariantTest` | Variant subtypes (Empty, Null, Error) may not be preserved through UNO Any bridge; `VarType`/`TypeName` may return BASIC types instead of VBA types; `CVErr` may not be supported |
-| `VbaLibreRangeOpsTest` | `Intersect`/`Union` on merged ranges may not expand to merge boundaries; `MergeArea` may not return full merged range; `Cells(row, col)` indexing may be 0-based |
-| `VbaLibreLocaleTest` | `CDbl` may not handle comma as decimal separator; NBSP (0xA0) as thousands separator may not parse; `Format`, `Str`, `Val` may use fixed locale instead of system locale |
-| `VbaLibreErrorTest` | `Err.Number` may not be set correctly after VBA-style errors; `On Error Resume Next` may not properly suppress errors; `EnableCancelKey` may not be wired; error state may leak between operations |
+| Test File | Test Count | Primary Hypotheses | Status |
+|-----------|-----------|--------------------|--------|
+| `VbaLibreNamedRangesTest` | 6 | Workbook-level vs worksheet-level `Names()` scoping; `RefersToRange` resolution; string indexer access | Exploratory |
+| `VbaLibreOptionalArgsTest` | 8 | Omitted VBA optional arguments may not convert to `Missing`; `Offset()`/`Resize()`/`Address()` default params; `Cells(row, col)` indexing | Exploratory |
+| `VbaLibreArraysTest` | 10 | `Dim arr(n)` with `Option Base 0` vs `1` vs explicit `To`; `Array()` always 0-based; `Split()`; Range.Value 1-based | Exploratory |
+| `VbaLibreVariantTest` | 10 | Variant subtypes (Empty, Null, Error) preserved through UNO Any bridge; `VarType`/`TypeName` codes; `CVErr` support; type conversion | Exploratory |
+| `VbaLibreRangeOpsTest` | 11 | `Intersect`/`Union` overlap removal; non-contiguous ranges; `MergeArea` on merged cells; `Count` semantics | Exploratory |
+| `VbaLibreLocaleTest` | 10 | `CDbl` with comma decimal separator; NBSP as thousands separator; `Format`/`Str`/`Val`/`CSng` locale sensitivity | Exploratory |
+| `VbaLibreErrorTest` | 9 | `On Error Resume Next` suppression; `Err.Number`/`Description`; `EnableCancelKey`; error state cleanup after exception | Exploratory |
+
+### Test Status Distinctions
+
+| Status | Definition |
+|--------|-----------|
+| **Exploratory** | Written but not executed or verified. Hypotheses need validation against AOO runtime. |
+| **Validated** | Run against AOO and checked against documented expected behavior. |
+| **Regression** | Integrated into the test build (`JunitTest_sc_vba.mk`) and suitable for repeatable execution. |
+
+All 7 LibreOffice-style test classes are currently **Exploratory**. They are not integrated
+into the build and require a full AOO build with `--enable-vba` to run.
 
 ### Known Missing Functionality
 
