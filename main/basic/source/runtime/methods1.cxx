@@ -768,7 +768,10 @@ RTLFUNC(Array)
 	sal_uInt16 nArraySize = rPar.Count() - 1;
 
 	// Option Base zunaechst ignorieren (kennt leider nur der Compiler)
-	bool bIncIndex = (IsBaseIndexOne() && SbiRuntime::isVBAEnabled() );
+	// #i129350: In VBA mode, Array() is always 0-based per VBA spec
+	// (Option Base is not a VBA feature)
+	bool bVBAEnabled = SbiRuntime::isVBAEnabled();
+	bool bIncIndex = (IsBaseIndexOne() && !bVBAEnabled) ;
 	if( nArraySize )
 	{
 		if ( bIncIndex )
