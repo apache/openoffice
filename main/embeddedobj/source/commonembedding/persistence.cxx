@@ -53,6 +53,7 @@
 #include <com/sun/star/beans/IllegalTypeException.hpp>
 #include <com/sun/star/chart2/XChartDocument.hpp>
 
+#include <comphelper/configurationhelper.hxx>
 #include <comphelper/fileformat.h>
 #include <comphelper/storagehelper.hxx>
 #include <comphelper/mimeconfighelper.hxx>
@@ -66,6 +67,28 @@
 
 using namespace ::com::sun::star;
 
+
+//------------------------------------------------------
+// the value of Save/ODF/DefaultVersion that selects strict ODF 1.2 (SvtSaveOptions::ODFVER_012)
+static sal_Bool IsStrictODF12_Impl( const uno::Reference< lang::XMultiServiceFactory >& xFactory )
+{
+	try
+	{
+		sal_Int16 nVersion = 0;
+		::comphelper::ConfigurationHelper::readDirectKey(
+				xFactory,
+				::rtl::OUString::createFromAscii( "org.openoffice.Office.Common/" ),
+				::rtl::OUString::createFromAscii( "Save/ODF" ),
+				::rtl::OUString::createFromAscii( "DefaultVersion" ),
+				::comphelper::ConfigurationHelper::E_READONLY ) >>= nVersion;
+		return nVersion == 4;
+	}
+	catch ( uno::Exception& )
+	{
+	}
+
+	return sal_False;
+}
 
 //------------------------------------------------------
 uno::Sequence< beans::PropertyValue > GetValuableArgs_Impl( const uno::Sequence< beans::PropertyValue >& aMedDescr,
@@ -1218,6 +1241,20 @@ void SAL_CALL OCommonEmbeddedObject::storeToEntry( const uno::Reference< embed::
 
 	sal_Bool bSwitchBackToLoaded = sal_False;
 
+	// strict ODF 1.2: write the object anew instead of copying a stream that may not be strict;
+	// if the object can not be started the stream is copied as before
+	if ( m_nObjectState == embed::EmbedStates::LOADED && IsStrictODF12_Impl( m_xFactory ) )
+	{
+		try
+		{
+			changeState( embed::EmbedStates::RUNNING );
+			bSwitchBackToLoaded = sal_True;
+		}
+		catch ( uno::Exception& )
+		{
+		}
+	}
+
 	// Storing to different format can be done only in running state.
 	if ( m_nObjectState == embed::EmbedStates::LOADED )
 	{
@@ -1345,6 +1382,20 @@ void SAL_CALL OCommonEmbeddedObject::storeAsEntry( const uno::Reference< embed::
 	}
 
 	sal_Bool bSwitchBackToLoaded = sal_False;
+
+	// strict ODF 1.2: write the object anew instead of copying a stream that may not be strict;
+	// if the object can not be started the stream is copied as before
+	if ( m_nObjectState == embed::EmbedStates::LOADED && IsStrictODF12_Impl( m_xFactory ) )
+	{
+		try
+		{
+			changeState( embed::EmbedStates::RUNNING );
+			bSwitchBackToLoaded = sal_True;
+		}
+		catch ( uno::Exception& )
+		{
+		}
+	}
 
 	// Storing to different format can be done only in running state.
 	if ( m_nObjectState == embed::EmbedStates::LOADED )
