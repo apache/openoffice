@@ -58,8 +58,9 @@ if (SYSTEM_MDDS != YES)
 if (SYSTEM_LIBTEXTCAT != YES)
     MD5 = 128cfc86ed5953e57fe0f5ae98b62c2e
     name = libtextcat-2.2.tar.gz
-    URL1 = https://software.wise-guys.nl/download/libtextcat-2.2.tar.gz
+    URL1 = https://dev-www.libreoffice.org/src/$(MD5)-$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL3 = https://software.wise-guys.nl/download/libtextcat-2.2.tar.gz
 
 if (SOLAR_JAVA == TRUE)
     MD5 = 17410483b5b5f267aa18b7e00b65e6e0
@@ -129,7 +130,7 @@ if (SYSTEM_LIBPNG != YES)
 if (SYSTEM_JPEG != YES)
     MD5 = 52654eb3b2e60c35731ea8fc87f1bd29
     name = jpeg-8d.tar.gz
-    URL1 = https://www.ijg.org/files/jpegsrc.v8d.tar.gz
+    URL1 = https://dev-www.libreoffice.org/src/$(MD5)-jpegsrc.v8d.tar.gz
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE)
@@ -191,7 +192,7 @@ if (SYSTEM_VIGRA != YES)
 if (SYSTEM_EXPAT != YES)
     MD5 = 5e9974d422dc4b157f300568ad28ebf6
     name = expat-2.5.0.tar.bz2
-    URL1 = https://sourceforge.net/projects/expat/files/expat/2.5.0/$(name)
+    URL1 = https://github.com/libexpat/libexpat/releases/download/R_2_5_0/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)
@@ -209,13 +210,13 @@ if (WITH_CATA_FONTS == YES)
 if (WITH_CATA_FONTS==YES)
     MD5 = 3c90ac73fd13bd79684d9dc073840328
     name = croscorefonts-1.31.0.tar.bz2
-    URL1 = https://gsdview.appspot.com/chromeos-localmirror/distfiles/$(name)
+    URL1 = https://storage.googleapis.com/chromeos-localmirror/distfiles/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (WITH_CATA_FONTS==YES)
     MD5 = 368f114c078f94214a308a74c7e991bc
     name = crosextrafonts-20130214.tar.gz
-    URL1 = https://gsdview.appspot.com/chromeos-localmirror/distfiles/$(name)
+    URL1 = https://storage.googleapis.com/chromeos-localmirror/distfiles/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
@@ -244,13 +245,15 @@ if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
 if (ENABLE_CATEGORY_B==YES && SYSTEM_COINMP!=YES)
     MD5 = dd85ff540997a95ebb233bb5ae7bcc61
     name = CoinMP-1.8.4.tgz
-    URL1 = https://www.coin-or.org/download/source/CoinMP/$(name)
+    URL1 = https://dev-www.libreoffice.org/src/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL3 = https://web.archive.org/web/2023if_/https://www.coin-or.org/download/source/CoinMP/$(name)
+    URL4 = https://www.coin-or.org/download/source/CoinMP/$(name)
 
 if (WITH_CATB_FONTS==YES)
     MD5 = c74b7223abe75949b4af367942d96c7a
     name = crosextrafonts-carlito-20130920.tar.gz
-    URL1 = https://gsdview.appspot.com/chromeos-localmirror/distfiles/$(name)
+    URL1 = https://storage.googleapis.com/chromeos-localmirror/distfiles/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (WITH_CATB_FONTS == YES)
