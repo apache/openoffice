@@ -197,6 +197,18 @@ namespace dbaxml
 		{
 			// nothing to do here
 		}
+		// style:font-width is not in ODF 1.2
+		virtual void ContextFilter( ::std::vector< XMLPropertyState >& rProperties,
+				Reference< XPropertySet > rPropSet ) const
+		{
+			if ( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+			{
+				for ( ::std::vector< XMLPropertyState >::iterator aIter = rProperties.begin(); aIter != rProperties.end(); ++aIter )
+					if ( aIter->mnIndex != -1 && getPropertySetMapper()->GetEntryAPIName( aIter->mnIndex ).equals( PROPERTY_FONTWIDTH ) )
+						aIter->mnIndex = -1;
+			}
+			SvXMLExportPropertyMapper::ContextFilter( rProperties, rPropSet );
+		}
 	};
 // -----------------------------------------------------------------------------
 ODBExport::ODBExport(const Reference< XMultiServiceFactory >& _rxMSF,sal_uInt16 nExportFlag)
