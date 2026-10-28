@@ -165,6 +165,26 @@ for n in ("d", "e", "f"):
 t0 = time.time()
 r2 = gt.dump_dir(gsrc, os.path.join(gtmp, "d2"), "p", 0, 2, os.path.join(gtmp, "l2"), tool=mk, poll=0.3)
 checks["gate: a batch longer than the stall limit that keeps progressing is not killed"] = r2 == {"documents": 6, "stalls": 0} and time.time() - t0 > 2
+stub2 = os.path.join(gtmp, "stub2.py")   # a document that "kills the office": it and the rest get a bridge error, once
+open(stub2, "w").write("import sys,os,json\ndest=sys.argv[1]\nonce=os.path.join(dest,'.once')\nbad=False\nfor f in sys.argv[2:]:\n    d=os.path.join(dest,os.path.basename(f)+'.json')\n"
+                       "    if os.path.exists(d): continue\n    if os.path.basename(f)=='bad' and not os.path.exists(once): open(once,'w').write('x'); bad=True\n"
+                       "    json.dump({'error':'Binary URP bridge already disposed'} if bad else {'type':'x'},open(d,'w'))\n")
+stub3 = os.path.join(gtmp, "stub3.py")   # the same document always kills the office
+open(stub3, "w").write("import sys,os,json\ndest=sys.argv[1]\nbad=False\nfor f in sys.argv[2:]:\n    d=os.path.join(dest,os.path.basename(f)+'.json')\n"
+                       "    if os.path.exists(d): continue\n    bad = bad or os.path.basename(f)=='bad'\n"
+                       "    json.dump({'error':'Binary URP bridge already disposed'} if bad else {'type':'x'},open(d,'w'))\n")
+gsrc2 = os.path.join(gtmp, "src2")
+os.makedirs(gsrc2)
+for n in ("a", "bad", "c", "d"):
+    open(os.path.join(gsrc2, n), "w").write("x")
+mk2 = lambda port, dest, files: [sys.executable, stub2, dest] + files
+mk3 = lambda port, dest, files: [sys.executable, stub3, dest] + files
+r3 = gt.dump_dir(gsrc2, os.path.join(gtmp, "d3"), "p", 0, 5, os.path.join(gtmp, "l3"), tool=mk2, poll=0.3)
+checks["gate: dumps that only say 'bridge disposed' are redone and counted"] = r3 == {"documents": 4, "stalls": 0, "bridge_retried": 3} \
+    and not any(gt.bridge_dead(os.path.join(gtmp, "d3", n + ".json")) for n in ("a", "bad", "c", "d"))
+r4 = gt.dump_dir(gsrc2, os.path.join(gtmp, "d4"), "p", 0, 5, os.path.join(gtmp, "l4"), tool=mk3, poll=0.3)
+checks["gate: a document that always kills the office stays an error after the retries (negative control)"] = r4["documents"] == 4 \
+    and r4["bridge_retried"] == 9 and gt.bridge_dead(os.path.join(gtmp, "d4", "bad.json")) and not gt.bridge_dead(os.path.join(gtmp, "d4", "a.json"))
 for k, ok in checks.items():
     print(("PASS " if ok else "FAIL ") + k)
 sys.exit(0 if all(checks.values()) else 1)

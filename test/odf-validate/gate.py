@@ -104,6 +104,15 @@ def run_with_stall(cmd, progress, stall, poll=2.0, log=None):
             out.close()
 
 
+def bridge_dead(path):
+    """True for a dump that only records that the office died under an earlier document."""
+    try:
+        d = json.load(open(path))
+    except Exception:
+        return False
+    return isinstance(d, dict) and str(d.get("error", "")).startswith("Binary URP bridge")
+
+
 def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0):
     """Reloads every package in src into dest/*.json. A document that stalls the office or kills it gets an error
     marker only after `stall` seconds without progress, never because the whole batch took long.
@@ -112,27 +121,41 @@ def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0):
     files = sorted(os.path.join(src, f) for f in os.listdir(src) if not f.startswith("."))
     count = lambda: len([f for f in os.listdir(dest) if f.endswith(".json")])
     stalls = 0
-    while count() < len(files):
-        if tool is None and not listening(port):
-            if run([os.path.join(D, "start.sh"), profile, str(port)], log) != 0:
-                return {"error": "office did not start", "stalls": stalls}
-        before = count()
-        marker = os.path.join(dest, ".current")
-        argv = tool(port, dest, files) if tool else [os.path.join(D, "runpy.sh"), os.path.join(D, "dump7.py"), str(port), dest] + files
-        how, rc = run_with_stall(argv, lambda: (count(), os.path.getmtime(marker) if os.path.exists(marker) else 0), stall, poll, log=log)
-        if how == "stalled" or rc != 0:
-            cur = open(marker).read().strip() if os.path.exists(marker) else ""
-            if cur and not os.path.exists(os.path.join(dest, os.path.basename(cur) + ".json")):
-                reason = ("HANG: no progress for %ds" % stall) if how == "stalled" else "CRASH: rc=%s" % rc
-                json.dump({"error": reason}, open(os.path.join(dest, os.path.basename(cur) + ".json"), "w"))
-                stalls += 1
-            if tool is None:
-                kill_office(profile)
-        elif count() == before:
-            return {"error": "dump7.py made no progress", "stalls": stalls}
+    retried = 0
+    for attempt in range(4):
+        while count() < len(files):
+            if tool is None and not listening(port):
+                if run([os.path.join(D, "start.sh"), profile, str(port)], log) != 0:
+                    return {"error": "office did not start", "stalls": stalls}
+            before = count()
+            marker = os.path.join(dest, ".current")
+            argv = tool(port, dest, files) if tool else [os.path.join(D, "runpy.sh"), os.path.join(D, "dump7.py"), str(port), dest] + files
+            how, rc = run_with_stall(argv, lambda: (count(), os.path.getmtime(marker) if os.path.exists(marker) else 0), stall, poll, log=log)
+            if how == "stalled" or rc != 0:
+                cur = open(marker).read().strip() if os.path.exists(marker) else ""
+                if cur and not os.path.exists(os.path.join(dest, os.path.basename(cur) + ".json")):
+                    reason = ("HANG: no progress for %ds" % stall) if how == "stalled" else "CRASH: rc=%s" % rc
+                    json.dump({"error": reason}, open(os.path.join(dest, os.path.basename(cur) + ".json"), "w"))
+                    stalls += 1
+                if tool is None:
+                    kill_office(profile)
+            elif count() == before:
+                return {"error": "dump7.py made no progress", "stalls": stalls}
+        # dump7.py records "bridge disposed" for every document after an office crash; those are not dumps, so redo them
+        gone = [f for f in os.listdir(dest) if f.endswith(".json") and bridge_dead(os.path.join(dest, f))]
+        if not gone or attempt == 3:
+            break
+        if tool is None:
+            kill_office(profile)
+        for f in gone:
+            os.remove(os.path.join(dest, f))
+        retried += len(gone)
     if tool is None:
         kill_office(profile)
-    return {"documents": count(), "stalls": stalls}
+    res = {"documents": count(), "stalls": stalls}
+    if retried:
+        res["bridge_retried"] = retried
+    return res
 
 
 def count_done(done):
@@ -268,6 +291,8 @@ class Gate:
         res["ok"] = all("error" not in r for r in res.values())
         for mode in self.modes:
             md = os.path.join(self.run, mode, "dump")
+            res[mode]["bridge_errors"] = sorted(f for f in os.listdir(md) if f.endswith(".json") and bridge_dead(os.path.join(md, f)))
+            res["ok"] = res["ok"] and not res[mode]["bridge_errors"]
             res[mode]["hang_markers"] = sorted(f for f in os.listdir(md) if f.endswith(".json") and "error" in json.load(open(os.path.join(md, f))) and
                                                str(json.load(open(os.path.join(md, f)))["error"]).startswith(("HANG", "CRASH")))
         return res
