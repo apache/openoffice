@@ -2083,6 +2083,16 @@ namespace xmloff
 	//---------------------------------------------------------------------
 	void OFormExport::exportSubTags()
 	{
+		// let the base class export the remaining properties and the events
+		OElementExport::exportSubTags();
+		// loop through all children
+		Reference< XIndexAccess > xCollection(m_xProps, UNO_QUERY);
+		OSL_ENSURE(xCollection.is(), "OFormLayerXMLExport::implExportForm: a form which is not an index access? Suspic�ous!");
+
+		if (xCollection.is())
+			m_rContext.exportCollectionElements(xCollection);
+
+		// the schema wants connection-resource after the controls
 		if ( m_bCreateConnectionResourceElement && m_xProps.is() )
 		{
 			m_rContext.getGlobalContext().ClearAttrList();
@@ -2100,15 +2110,6 @@ namespace xmloff
 				SvXMLElementExport aFormElement(m_rContext.getGlobalContext(), XML_NAMESPACE_FORM, xmloff::token::XML_CONNECTION_RESOURCE, sal_True, sal_True);
 			}
 		}
-
-		// let the base class export the remaining properties and the events
-		OElementExport::exportSubTags();
-		// loop through all children
-		Reference< XIndexAccess > xCollection(m_xProps, UNO_QUERY);
-		OSL_ENSURE(xCollection.is(), "OFormLayerXMLExport::implExportForm: a form which is not an index access? Suspic�ous!");
-
-		if (xCollection.is())
-			m_rContext.exportCollectionElements(xCollection);
 	}
 
 	//---------------------------------------------------------------------

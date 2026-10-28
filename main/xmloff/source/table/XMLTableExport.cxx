@@ -199,6 +199,18 @@ XMLTableExport::~XMLTableExport ()
 
 // --------------------------------------------------------------------
 
+// a 0 width or height is not a positiveLength
+static void drop_zero_measure( std::vector< XMLPropertyState >& rStates, const UniReference< XMLPropertySetMapper >& xMapper, const sal_Char* pApiName )
+{
+	for( std::vector< XMLPropertyState >::iterator aIter( rStates.begin() ); aIter != rStates.end(); ++aIter )
+	{
+		sal_Int32 nValue = 0;
+		if( aIter->mnIndex != -1 && ( aIter->maValue >>= nValue ) && nValue == 0 &&
+			xMapper->GetEntryAPIName( aIter->mnIndex ).equalsAscii( pApiName ) )
+			aIter->mnIndex = -1;
+	}
+}
+
 static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 {
 	if( !xPropStates.empty() )
@@ -233,6 +245,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 		{
  			Reference< XPropertySet > xPropSet( xIndexAccessCols->getByIndex(nColumn) , UNO_QUERY_THROW );
 			std::vector< XMLPropertyState > xPropStates( mxColumnExportPropertySetMapper->Filter( xPropSet ) );
+			drop_zero_measure( xPropStates, mxColumnExportPropertySetMapper->getPropertySetMapper(), "Width" );
 
 			if( has_states( xPropStates ) )
 			{
@@ -256,6 +269,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 		{
  			Reference< XPropertySet > xPropSet( xIndexAccessRows->getByIndex(nRow) , UNO_QUERY_THROW );
 			std::vector< XMLPropertyState > xRowPropStates( mxRowExportPropertySetMapper->Filter( xPropSet ) );
+			drop_zero_measure( xRowPropStates, mxRowExportPropertySetMapper->getPropertySetMapper(), "Height" );
 
 			if( has_states( xRowPropStates ) )
 			{
