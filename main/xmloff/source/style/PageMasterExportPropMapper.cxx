@@ -590,10 +590,22 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 		lcl_RemoveStateIfZero16( pPMScaleTo );
 	if( pPMScaleToPages )
 		lcl_RemoveStateIfZero16( pPMScaleToPages );
+	// style:scale-to-X and -Y are not in ODF 1.2
+	const sal_Bool bStrict = SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012;
 	if( pPMScaleToX )
-		lcl_RemoveStateIfZero16( pPMScaleToX );
+	{
+		if( bStrict )
+			lcl_RemoveState( pPMScaleToX );
+		else
+			lcl_RemoveStateIfZero16( pPMScaleToX );
+	}
 	if( pPMScaleToY )
-		lcl_RemoveStateIfZero16( pPMScaleToY );
+	{
+		if( bStrict )
+			lcl_RemoveState( pPMScaleToY );
+		else
+			lcl_RemoveStateIfZero16( pPMScaleToY );
+	}
 
     if (pPrint)
     {
