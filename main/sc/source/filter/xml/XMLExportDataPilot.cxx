@@ -191,7 +191,8 @@ void ScXMLExportDataPilot::WriteDPFilter(const ScQueryParam& aQueryParam)
 					aQueryParam.nCol2, aQueryParam.nRow2, aQueryParam.nTab);
 				rtl::OUString sConditionRange;
 				ScRangeStringConverter::GetStringFromRange( sConditionRange, aConditionRange, pDoc, ::formula::FormulaGrammar::CONV_OOO );
-				rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_CONDITION_SOURCE_RANGE_ADDRESS, sConditionRange);
+				if (sConditionRange.getLength())
+					rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_CONDITION_SOURCE_RANGE_ADDRESS, sConditionRange);
 			}
 			if (!aQueryParam.bDuplicate)
 				rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_DISPLAY_DUPLICATES, XML_FALSE);
@@ -627,6 +628,8 @@ void ScXMLExportDataPilot::WriteNumGroupDim(const ScDPSaveNumGroupDimension* pNu
     if (pNumGroupDim)
     {
         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_IS_GROUP_FIELD, XML_TRUE);
+        // required by the schema; empty marks a numeric or date group
+        rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_SOURCE_FIELD_NAME, rtl::OUString());
         if (pNumGroupDim->GetDatePart())
         {
             WriteDatePart(pNumGroupDim->GetDatePart());
@@ -716,8 +719,8 @@ void ScXMLExportDataPilot::WriteDimension(ScDPSaveDimension* pDim, const ScDPDim
 	rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_FUNCTION, sValueStr);
 
     SvXMLElementExport aElemDPF(rExport, XML_NAMESPACE_TABLE, XML_DATA_PILOT_FIELD, sal_True, sal_True);
-    WriteFieldReference(pDim);
     WriteLevels(pDim);
+    WriteFieldReference(pDim);
     if( pDim->GetOrientation() != sheet::DataPilotFieldOrientation_DATA )
         WriteGroupDimElements(pDim, pDimData);
 }
