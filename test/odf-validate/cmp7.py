@@ -89,6 +89,8 @@ def normalise(root, cnt, strict, is_old):
         if t in (q("office", "document-content"), q("office", "document-styles")) and q("office", "version") in a:
             drop_attr(e, q("office", "version")); bump("c7615ea10d office:version present")
         elif t in (q("office", "document-content"), q("office", "document-styles")): bump("c7615ea10d office:version MISSING")
+        if t == q("style", "page-layout-properties") and q("style", "layout-grid-standard-mode") in a:
+            drop_attr(e, q("style", "layout-grid-standard-mode")); bump("f18a0e638f layout-grid-standard-mode in page layouts")
         if t == q("meta", "print-date"):
             if not re.match(r'\d{4,}-\d\d-\d\dT', (e.text or "")): parent[e].remove(e); bump("150358e458 print-date bogus")
         if t == q("form", "property") and q("office", "value") in a:
