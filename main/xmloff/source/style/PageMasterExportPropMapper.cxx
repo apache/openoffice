@@ -29,6 +29,7 @@
 #include <xmloff/PageMasterStyleMap.hxx>
 #include <tools/debug.hxx>
 #include <rtl/ustrbuf.hxx>
+#include <unotools/saveopt.hxx>
 #include <comphelper/extract.hxx>
 
 //UUUU
@@ -565,7 +566,9 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 		}
 	}
 
-	if( pPMGridBaseWidth && pPMStandardMode )
+	// ODF 1.2 allows style:layout-grid-standard-mode in the default page layout only, so the other modes
+	// drop it; extended mode keeps it so that a page style in standard mode survives a round trip
+	if( pPMGridBaseWidth && pPMStandardMode && SvtSaveOptions().GetODFDefaultVersion() != SvtSaveOptions::ODFVER_LATEST )
 		lcl_RemoveState(pPMStandardMode);
 
 	aPageBuffer.ContextFilter( rPropState );
