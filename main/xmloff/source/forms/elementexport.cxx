@@ -711,6 +711,18 @@ namespace xmloff
 
             if ( m_nIncludeCommon & CCA_VISUAL_EFFECT )
             {
+				// strict ODF 1.2 knows only flat and 3d: NONE is written as flat
+				sal_Int16 nVisualEffect = VisualEffect::LOOK3D;
+				m_xProps->getPropertyValue( PROPERTY_VISUAL_EFFECT ) >>= nVisualEffect;
+				if ( m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012 && VisualEffect::NONE == nVisualEffect )
+				{
+					AddAttributeASCII(
+						OAttributeMetaData::getCommonControlAttributeNamespace( CCA_VISUAL_EFFECT ),
+						OAttributeMetaData::getCommonControlAttributeName( CCA_VISUAL_EFFECT ),
+						"flat" );
+					exportedProperty( PROPERTY_VISUAL_EFFECT );
+				}
+				else
 				exportEnumPropertyAttribute(
 					OAttributeMetaData::getCommonControlAttributeNamespace( CCA_VISUAL_EFFECT ),
 					OAttributeMetaData::getCommonControlAttributeName( CCA_VISUAL_EFFECT ),
@@ -839,7 +851,8 @@ namespace xmloff
 
 			OSL_ENSURE((NULL == pValuePropertyName) == (0 == (CCA_VALUE & m_nIncludeCommon)),
 				"OControlExport::exportCommonControlAttributes: no property found for the value attribute!");
-			OSL_ENSURE((NULL == pCurrentValuePropertyName ) == (0 == (CCA_CURRENT_VALUE & m_nIncludeCommon)),
+			OSL_ENSURE((NULL == pCurrentValuePropertyName ) == (0 == (CCA_CURRENT_VALUE & m_nIncludeCommon)) ||
+				( VALUERANGE == m_eType && m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012 ),
 				"OControlExport::exportCommonControlAttributes: no property found for the current-value attribute!");
 
 		#if OSL_DEBUG_LEVEL > 0
@@ -873,6 +886,10 @@ namespace xmloff
         // InputRequired
         if ( DA_INPUT_REQUIRED & m_nIncludeDatabase )
         {
+            // form:input-required is an ODF 1.4 attribute
+            if ( m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+                exportedProperty( PROPERTY_INPUT_REQUIRED );
+            else
             exportBooleanPropertyAttribute(
                 OAttributeMetaData::getDatabaseAttributeNamespace( DA_INPUT_REQUIRED ),
                 OAttributeMetaData::getDatabaseAttributeName( DA_INPUT_REQUIRED ),
@@ -1471,7 +1488,9 @@ namespace xmloff
                     m_eType = TIME;
                     knownType = true;
                 }
-				m_nIncludeSpecial |= SCA_VALIDATION;
+				// form:validation is allowed on form:formatted-text only in ODF 1.2
+				if ( m_rContext.getGlobalContext().getDefaultVersion() != SvtSaveOptions::ODFVER_012 )
+					m_nIncludeSpecial |= SCA_VALIDATION;
                 // NO BREAK
 			case FormComponentType::NUMERICFIELD:
 			case FormComponentType::CURRENCYFIELD:
@@ -1707,7 +1726,10 @@ namespace xmloff
 				m_eType = VALUERANGE;
 				m_nIncludeCommon =
 					CCA_NAME | CCA_SERVICE_NAME | CCA_DISABLED | CCA_PRINTABLE |
-                    CCA_TITLE | CCA_CURRENT_VALUE | CCA_VALUE | CCA_ORIENTATION;
+                    CCA_TITLE | CCA_VALUE | CCA_ORIENTATION;
+				// form:current-value is not allowed on form:value-range in ODF 1.2
+				if ( m_rContext.getGlobalContext().getDefaultVersion() != SvtSaveOptions::ODFVER_012 )
+					m_nIncludeCommon |= CCA_CURRENT_VALUE;
                 m_nIncludeSpecial = SCA_MAX_VALUE | SCA_STEP_SIZE | SCA_MIN_VALUE | SCA_REPEAT_DELAY;
 
                 if ( m_nClassId == FormComponentType::SCROLLBAR )
