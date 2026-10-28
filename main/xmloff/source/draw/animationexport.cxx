@@ -876,7 +876,9 @@ void AnimationsExporterImpl::exportNode( const Reference< XAnimationNode >& xNod
 		}
 
 		aTemp = xNode->getEndSync();
-		if( aTemp.hasValue() )
+		const sal_Int16 nEndSyncNodeType = xNode->getType();
+		// smil:endsync is only allowed on par, seq and iterate
+		if( aTemp.hasValue() && ( nEndSyncNodeType == AnimationNodeType::PAR || nEndSyncNodeType == AnimationNodeType::SEQ || nEndSyncNodeType == AnimationNodeType::ITERATE ) )
 		{
 			if( aTemp >>= nTemp )
 			{
