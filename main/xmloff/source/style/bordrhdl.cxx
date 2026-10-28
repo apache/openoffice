@@ -29,6 +29,7 @@
 #include <xmloff/xmltoken.hxx>
 #include <xmloff/xmluconv.hxx>
 #include <rtl/ustrbuf.hxx>
+#include <unotools/saveopt.hxx>
 #include <com/sun/star/uno/Any.hxx>
 #include <com/sun/star/table/BorderLine.hpp>
 
@@ -290,6 +291,11 @@ sal_Bool XMLBorderWidthHdl::exportXML( OUString& rStrExpValue, const uno::Any& r
 		return sal_False;
 
 	if( aBorderLine.LineDistance == 0 && aBorderLine.InnerLineWidth == 0)
+		return sal_False;
+
+	// strict ODF 1.2 wants three positive lengths; a zero part is dropped on reload
+	if( ( aBorderLine.LineDistance == 0 || aBorderLine.InnerLineWidth == 0 || aBorderLine.OuterLineWidth == 0 ) &&
+		SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
 		return sal_False;
 
 	rUnitConverter.convertMeasure( aOut, aBorderLine.InnerLineWidth );
