@@ -561,6 +561,7 @@ void ODBExport::exportConnectionData()
                 SvtPathOptions aPathOptions;
                 const String sOrigUrl = m_aTypeCollection.cutPrefix(sValue);
 			    String sFileName = aPathOptions.SubstituteVariable(sOrigUrl);
+                AddAttribute(XML_NAMESPACE_XLINK,XML_TYPE,XML_SIMPLE);
                 if ( sOrigUrl == sFileName )
                 {
                     ::svt::OFileNotation aTransformer( sFileName );
@@ -613,54 +614,14 @@ void ODBExport::exportConnectionData()
                     if ( sDatabaseName.Len() )
                         AddAttribute(XML_NAMESPACE_DB,XML_DATABASE_NAME,sDatabaseName);
 
-                    try
-                    {
-                        Reference< XPropertySet > xDataSourceSettings( xProp->getPropertyValue( PROPERTY_SETTINGS ), UNO_QUERY_THROW );
-                        Reference< XPropertySetInfo > xSettingsInfo( xDataSourceSettings->getPropertySetInfo(), UNO_SET_THROW );
-
-                        struct PropertyMap
-                        {
-                            const sal_Char* pAsciiPropertyName;
-                            sal_uInt16      nAttributeId;
-
-                            PropertyMap() :pAsciiPropertyName( NULL ), nAttributeId(0) { }
-                            PropertyMap( const sal_Char* _pAsciiPropertyName, const sal_uInt16 _nAttributeId )
-                                :pAsciiPropertyName( _pAsciiPropertyName )
-                                ,nAttributeId( _nAttributeId )
-                            {
-                            }
-                        };
-                        PropertyMap aProperties[] =
-                        {
-                            PropertyMap( "LocalSocket", XML_LOCAL_SOCKET )
-                            //PropertyMap( "NamedPipe", 0 /* TODO */ )
-                        };
-
-                        for (   size_t i=0;
-                                i < sizeof( aProperties ) / sizeof( aProperties[0] );
-                                ++i
-                            )
-                        {
-                            const ::rtl::OUString sPropertyName = ::rtl::OUString::createFromAscii( aProperties[i].pAsciiPropertyName );
-                            if ( xSettingsInfo->hasPropertyByName( sPropertyName ) )
-                            {
-                                ::rtl::OUString sPropertyValue;
-                                if ( ( xDataSourceSettings->getPropertyValue( sPropertyName ) >>= sPropertyValue ) && sPropertyValue.getLength() )
-                                    AddAttribute( XML_NAMESPACE_DB, XML_LOCAL_SOCKET, sPropertyValue );
-
-                            }
-                        }
-                    }
-                    catch( const Exception& )
-                    {
-                    	DBG_UNHANDLED_EXCEPTION();
-                    }
+                    // db:local-socket is not allowed with db:hostname; LocalSocket is kept as a data source setting
 
                     SvXMLElementExport aServerDB(*this,XML_NAMESPACE_DB, XML_SERVER_DATABASE, sal_True, sal_True);
                 }
             }
             else
             {
+	            AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 	            AddAttribute(XML_NAMESPACE_XLINK, XML_HREF,sValue);
                 SvXMLElementExport aElem(*this,XML_NAMESPACE_DB, XML_CONNECTION_RESOURCE, sal_True, sal_True);
             }
@@ -762,7 +723,7 @@ void ODBExport::exportCharSet()
 	{
 		AddAttribute(XML_NAMESPACE_DB, XML_ENCODING,m_sCharSet);
 
-		SvXMLElementExport aElem(*this,XML_NAMESPACE_DB, XML_FONT_CHARSET, sal_True, sal_True);
+		SvXMLElementExport aElem(*this,XML_NAMESPACE_DB, XML_CHARACTER_SET, sal_True, sal_True);
 	}
 }
 // -----------------------------------------------------------------------------
@@ -868,6 +829,7 @@ void ODBExport::exportComponent(XPropertySet* _xProp)
 	else
 		sValue = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("reports/")) + sValue;
 
+	AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 	AddAttribute(XML_NAMESPACE_XLINK, XML_HREF,sValue);
 	sal_Bool bAsTemplate = sal_False;
 	_xProp->getPropertyValue(PROPERTY_AS_TEMPLATE) >>= bAsTemplate;
@@ -893,9 +855,9 @@ void ODBExport::exportQuery(XPropertySet* _xProp)
 
 	SvXMLElementExport aComponents(*this,XML_NAMESPACE_DB, XML_QUERY, sal_True, sal_True);
 	Reference<XColumnsSupplier> xCol(_xProp,UNO_QUERY);
-	exportColumns(xCol);
-	exportFilter(_xProp,PROPERTY_FILTER,XML_FILTER_STATEMENT);
 	exportFilter(_xProp,PROPERTY_ORDER,XML_ORDER_STATEMENT);
+	exportFilter(_xProp,PROPERTY_FILTER,XML_FILTER_STATEMENT);
+	exportColumns(xCol);
 	exportTableName(_xProp,sal_True);
 }
 // -----------------------------------------------------------------------------
@@ -917,9 +879,9 @@ void ODBExport::exportTable(XPropertySet* _xProp)
 
 	SvXMLElementExport aComponents(*this,XML_NAMESPACE_DB, XML_TABLE_REPRESENTATION, sal_True, sal_True);
 	Reference<XColumnsSupplier> xCol(_xProp,UNO_QUERY);
-	exportColumns(xCol);
-	exportFilter(_xProp,PROPERTY_FILTER,XML_FILTER_STATEMENT);
 	exportFilter(_xProp,PROPERTY_ORDER,XML_ORDER_STATEMENT);
+	exportFilter(_xProp,PROPERTY_FILTER,XML_FILTER_STATEMENT);
+	exportColumns(xCol);
 }
 // -----------------------------------------------------------------------------
 void ODBExport::exportStyleName(XPropertySet* _xProp,SvXMLAttributeList& _rAtt)
@@ -1312,6 +1274,7 @@ void ODBExport::GetViewSettings(Sequence<PropertyValue>& aProps)
 				const ::rtl::OUString* pEnd	  = pIter + aSeq.getLength();
 
 				Sequence<PropertyValue> aQueries(aSeq.getLength());
+				sal_Bool bHasLayout = sal_False;
 				for(sal_Int32 i = 0;pIter != pEnd;++pIter,++i)
 				{
 					Reference<XPropertySet> xProp(xCollection->getByName(*pIter),UNO_QUERY);
@@ -1319,9 +1282,16 @@ void ODBExport::GetViewSettings(Sequence<PropertyValue>& aProps)
 					{
 						aQueries[i].Name = *pIter;
 						aQueries[i].Value = xProp->getPropertyValue(PROPERTY_LAYOUTINFORMATION);
+						Sequence<PropertyValue> aLayout;
+						if ( aQueries[i].Value.hasValue() && ( !( aQueries[i].Value >>= aLayout ) || aLayout.getLength() ) )
+							bHasLayout = sal_True;
 					}
 				}
-				aProps[nLength].Value <<= aQueries;
+				// an empty config-item-set is invalid
+				if ( bHasLayout )
+					aProps[nLength].Value <<= aQueries;
+				else
+					aProps.realloc(nLength);
 			}
 			catch(Exception)
 			{
