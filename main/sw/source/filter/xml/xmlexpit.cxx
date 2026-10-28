@@ -959,9 +959,9 @@ sal_Bool SvXMLExportItemMapper::QueryXMLValue(
             SwFmtHoriOrient* pHoriOrient = PTR_CAST(SwFmtHoriOrient, &rItem);
             DBG_ASSERT( pHoriOrient != NULL, "Wrong Which-ID" );
 
-            rUnitConverter.convertEnum( aOut, pHoriOrient->GetHoriOrient(),
-                                        aXMLTableAlignMap );
-            bOk = sal_True;
+            // INSIDE and OUTSIDE have no table:align value
+            bOk = rUnitConverter.convertEnum( aOut, pHoriOrient->GetHoriOrient(),
+                                              aXMLTableAlignMap );
         }
         break;
 
