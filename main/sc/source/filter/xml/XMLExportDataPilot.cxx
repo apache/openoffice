@@ -613,7 +613,8 @@ void ScXMLExportDataPilot::WriteGroupDimAttributes(const ScDPSaveGroupDimension*
 {
     if (pGroupDim)
     {
-        rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_IS_GROUP_FIELD, XML_TRUE);
+        if (rExport.getDefaultVersion() != SvtSaveOptions::ODFVER_012)	// not in the schema
+            rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_IS_GROUP_FIELD, XML_TRUE);
         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_SOURCE_FIELD_NAME, pGroupDim->GetSourceDimName());
         if (pGroupDim->GetDatePart())
         {
@@ -627,7 +628,8 @@ void ScXMLExportDataPilot::WriteNumGroupDim(const ScDPSaveNumGroupDimension* pNu
 {
     if (pNumGroupDim)
     {
-        rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_IS_GROUP_FIELD, XML_TRUE);
+        if (rExport.getDefaultVersion() != SvtSaveOptions::ODFVER_012)	// not in the schema
+            rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_IS_GROUP_FIELD, XML_TRUE);
         // required by the schema; empty marks a numeric or date group
         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_SOURCE_FIELD_NAME, rtl::OUString());
         if (pNumGroupDim->GetDatePart())
