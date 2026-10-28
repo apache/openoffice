@@ -433,7 +433,10 @@ void XMLSectionExport::ExportRegularSectionStart(
 	OUString sCond;
 	aAny >>= sCond;
 	enum XMLTokenEnum eDisplay = XML_TOKEN_INVALID;
-	if (sCond.getLength() > 0)
+	// strict ODF 1.2 has no form for the condition of a visible section (display="condition" means hidden)
+	const sal_Bool bStrict = GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012;
+	const sal_Bool bIsVisible = *(sal_Bool*)xPropSet->getPropertyValue(sIsVisible).getValue();
+	if (sCond.getLength() > 0 && !( bStrict && bIsVisible ))
 	{
 		OUString sQValue =
 			GetExport().GetNamespaceMap().GetQNameByKey( XML_NAMESPACE_OOOW,
@@ -443,7 +446,7 @@ void XMLSectionExport::ExportRegularSectionStart(
 
         // #97450# store hidden-status (of conditional sections only)
         aAny = xPropSet->getPropertyValue(sIsCurrentlyVisible);
-        if (! *(sal_Bool*)aAny.getValue())
+        if (!bStrict && ! *(sal_Bool*)aAny.getValue())
         {
             GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_IS_HIDDEN,
                                      XML_TRUE);
@@ -1379,10 +1382,13 @@ void XMLSectionExport::ExportIndexTemplateElement(
 			eElement = XML_INDEX_ENTRY_CHAPTER;
 			break;
 		case TOK_TTYPE_HYPERLINK_START:
-			eElement = XML_INDEX_ENTRY_LINK_START;
+			// strict ODF 1.2 allows the link tokens in table-of-content templates only
+			if ( aODFVersion != SvtSaveOptions::ODFVER_012 || TEXT_SECTION_TYPE_TOC == eType )
+				eElement = XML_INDEX_ENTRY_LINK_START;
 			break;
 		case TOK_TTYPE_HYPERLINK_END:
-			eElement = XML_INDEX_ENTRY_LINK_END;
+			if ( aODFVersion != SvtSaveOptions::ODFVER_012 || TEXT_SECTION_TYPE_TOC == eType )
+				eElement = XML_INDEX_ENTRY_LINK_END;
 			break;
 		case TOK_TTYPE_BIBLIOGRAPHY:
 			if (bBibliographyDataOK)
@@ -1502,7 +1508,7 @@ void XMLSectionExport::ExportIndexTemplateElement(
 			}
 
             // #i21237#
-            if (bWithTabStopOK && ! bWithTabStop)
+            if (bWithTabStopOK && ! bWithTabStop && aODFVersion != SvtSaveOptions::ODFVER_012)
             {
                	GetExport().AddAttribute(XML_NAMESPACE_STYLE,
 										 XML_WITH_TAB,
