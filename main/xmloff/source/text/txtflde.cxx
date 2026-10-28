@@ -278,6 +278,24 @@ inline Sequence<OUString> const GetStringSequenceProperty(
 
 
 
+// ODF 1.2 allows only some reference formats per element; the others show the same text
+static sal_Int16 lcl_GetValidReferencePart( sal_Int16 nPart, sal_Bool bSequence, sal_Bool bNote )
+{
+	switch( nPart )
+	{
+		case ReferenceFieldPart::CATEGORY_AND_NUMBER:
+		case ReferenceFieldPart::ONLY_CAPTION:
+		case ReferenceFieldPart::ONLY_SEQUENCE_NUMBER:
+			return bSequence ? nPart : ReferenceFieldPart::TEXT;
+		case ReferenceFieldPart::NUMBER:
+		case ReferenceFieldPart::NUMBER_NO_CONTEXT:
+		case ReferenceFieldPart::NUMBER_FULL_CONTEXT:
+			return ( bSequence || bNote ) ? ReferenceFieldPart::TEXT : nPart;
+		default:
+			return nPart;
+	}
+}
+
 XMLTextFieldExport::XMLTextFieldExport( SvXMLExport& rExp,
 										XMLPropertyState* pCombinedCharState)
 	: rExport(rExp),
@@ -1623,8 +1641,9 @@ void XMLTextFieldExport::ExportFieldHelper(
 		// reference to sequence: format, name, find value (and element)
 		// was: if (nSeqNumber != -1) ...
 		ProcessString(XML_REFERENCE_FORMAT,
-					  MapReferenceType(GetInt16Property(
-						  sPropertyReferenceFieldPart, rPropSet)),
+					  MapReferenceType(lcl_GetValidReferencePart(
+						  GetInt16Property(sPropertyReferenceFieldPart, rPropSet),
+						  sal_True, sal_False)),
 					  XML_TEMPLATE);
 		ProcessString(XML_REF_NAME,
 					  MakeSequenceRefName(
@@ -1640,8 +1659,9 @@ void XMLTextFieldExport::ExportFieldHelper(
 	case FIELD_ID_REF_BOOKMARK:
 		// reference to bookmarks, references: format, name (and element)
 		ProcessString(XML_REFERENCE_FORMAT,
-					  MapReferenceType(GetInt16Property(
-						  sPropertyReferenceFieldPart, rPropSet)),
+					  MapReferenceType(lcl_GetValidReferencePart(
+						  GetInt16Property(sPropertyReferenceFieldPart, rPropSet),
+						  sal_False, sal_False)),
 					  XML_TEMPLATE);
 		ProcessString(XML_REF_NAME,
 					  GetStringProperty(sPropertySourceName, rPropSet));
@@ -1657,13 +1677,8 @@ void XMLTextFieldExport::ExportFieldHelper(
 		GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_NOTE_CLASS,
 			FIELD_ID_REF_ENDNOTE==nToken ? XML_ENDNOTE : XML_FOOTNOTE );
 		{
-			sal_Int16 nPart = GetInt16Property(
-				sPropertyReferenceFieldPart, rPropSet);
-			// sequence-only formats; a note reference shows the same text
-			if( ReferenceFieldPart::CATEGORY_AND_NUMBER == nPart ||
-				ReferenceFieldPart::ONLY_CAPTION == nPart ||
-				ReferenceFieldPart::ONLY_SEQUENCE_NUMBER == nPart )
-				nPart = ReferenceFieldPart::TEXT;
+			const sal_Int16 nPart = lcl_GetValidReferencePart( GetInt16Property(
+				sPropertyReferenceFieldPart, rPropSet), sal_False, sal_True );
 			ProcessString(XML_REFERENCE_FORMAT, MapReferenceType(nPart),
 						  XML_TEMPLATE);
 		}
@@ -1721,6 +1736,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 				   "Unexpected presentation for script field");
 		if (GetBoolProperty(sPropertyURLContent, rPropSet))
 		{
+			GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 			ProcessString(XML_HREF,
 						  GetExport().GetRelativeReference(GetStringProperty(sPropertyContent, rPropSet)),
 						  sal_False, XML_NAMESPACE_XLINK);

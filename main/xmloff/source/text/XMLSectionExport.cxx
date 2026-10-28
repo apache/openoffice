@@ -1916,7 +1916,7 @@ void XMLSectionExport::ExportMasterDocHeadingDummies()
 
 			OUStringBuffer sTmp;
 			sTmp.append( nLevel + 1 );
-			GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_LEVEL,
+			GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_OUTLINE_LEVEL,
 								  	  sTmp.makeStringAndClear() );
 			SvXMLElementExport aElem( GetExport(), XML_NAMESPACE_TEXT, XML_H,
 								  	  sal_True, sal_False );
