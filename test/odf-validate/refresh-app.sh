@@ -22,6 +22,8 @@
 # usage: refresh-app.sh <lib.dylib>... -- copy rebuilt libs from the solver into the app copy
 source ${0:A:h}/env.sh
 : ${SOLVER:?} ${APP:?}
+# overwriting a library an office has mapped makes macOS SIGKILL everything that later touches the file
+pgrep -f "$APP/MacOS/soffice" > /dev/null && { echo "refresh-app.sh: an office from $APP is still running; stop it first" >&2; exit 3; }
 rc=0
 for l in "$@"; do [[ -n $l && $l != */* ]] || { echo "bad lib name: $l"; exit 2; }; done
 for l in "$@"; do
