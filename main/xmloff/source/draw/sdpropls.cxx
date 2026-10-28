@@ -1521,6 +1521,17 @@ void XMLShapeExportPropertyMapper::ContextFilter(
 	if( pClipState != NULL && pClip11State != NULL  )
 		pClip11State->mnIndex = -1;
 
+	// the FontWork attributes are not in ODF 1.2
+	if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+	{
+		XMLPropertyState* aFontWork[] = { pFontWorkStyle, pFontWorkAdjust, pFontWorkDistance, pFontWorkStart,
+			pFontWorkMirror, pFontWorkOutline, pFontWorkShadow, pFontWorkShadowColor, pFontWorkShadowOffsetx,
+			pFontWorkShadowOffsety, pFontWorkForm, pFontWorkHideform, pFontWorkShadowTransparence };
+		for( size_t i = 0; i < sizeof( aFontWork ) / sizeof( aFontWork[0] ); ++i )
+			if( aFontWork[i] )
+				aFontWork[i]->mnIndex = -1;
+	}
+
 	SvXMLExportPropertyMapper::ContextFilter(rProperties, rPropSet);
 }
 
