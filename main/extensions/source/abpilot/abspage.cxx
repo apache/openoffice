@@ -37,7 +37,7 @@ namespace abp
 	//=====================================================================
 	//= AddressBookSourcePage
 	//=====================================================================
-	AddressBookSourcePage::AddressBookSourcePage( OAddessBookSourcePilot* _pParent, const ResId& _rId )
+	AddressBookSourcePage::AddressBookSourcePage( OAddressBookSourcePilot* _pParent, const ResId& _rId )
 		:AddressBookSourcePage_Base(_pParent, _rId)
 	{
 	}
@@ -50,15 +50,15 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	OAddessBookSourcePilot* AddressBookSourcePage::getDialog()
+	OAddressBookSourcePilot* AddressBookSourcePage::getDialog()
 	{
-		return static_cast<OAddessBookSourcePilot*>(GetParent());
+		return static_cast<OAddressBookSourcePilot*>(GetParent());
 	}
 
 	//---------------------------------------------------------------------
-	const OAddessBookSourcePilot* AddressBookSourcePage::getDialog() const
+	const OAddressBookSourcePilot* AddressBookSourcePage::getDialog() const
 	{
-		return static_cast<const OAddessBookSourcePilot*>(GetParent());
+		return static_cast<const OAddressBookSourcePilot*>(GetParent());
 	}
 
 	//---------------------------------------------------------------------

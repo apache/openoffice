@@ -42,7 +42,7 @@ namespace abp
 		FixedText		m_aHint;
 
 	public:
-		FieldMappingPage( OAddessBookSourcePilot* _pParent );
+		FieldMappingPage( OAddressBookSourcePilot* _pParent );
 
 	protected:
 		// OWizardPage overridables
