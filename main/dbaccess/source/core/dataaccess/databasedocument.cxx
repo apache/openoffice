@@ -1644,6 +1644,17 @@ void ODatabaseDocument::impl_writeStorage_throw( const Reference< XStorage >& _r
 
 	Reference< XPropertySet > xProp( _rxTargetStorage, UNO_QUERY_THROW );
     xProp->setPropertyValue( INFO_MEDIATYPE, makeAny( (rtl::OUString)MIMETYPE_OASIS_OPENDOCUMENT_DATABASE ) );
+    // manifest:version is taken from the storage's Version property
+    if ( aVersion.getLength() )
+    {
+        try
+        {
+            xProp->setPropertyValue( rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "Version" )), uno::makeAny( aVersion ) );
+        }
+        catch( uno::Exception& )
+        {
+        }
+    }
 
 	Reference< XComponent > xComponent( *const_cast< ODatabaseDocument* >( this ), UNO_QUERY_THROW );
 

@@ -1392,6 +1392,19 @@ sal_Bool SfxObjectShell::SaveTo_Impl
 
                     xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "MediaType" ),
                                             uno::makeAny( aDataFlavor.MimeType ) );
+
+                    // manifest:version is taken from the storage; SetupStorage is not called on this path
+                    SvtSaveOptions aSaveOpt;
+                    if ( aSaveOpt.GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_012 )
+                    {
+                        try
+                        {
+                            xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ), uno::makeAny( ODFVER_012_TEXT ) );
+                        }
+                        catch( uno::Exception& )
+                        {
+                        }
+                    }
                 }
                 catch( uno::Exception& )
                 {
