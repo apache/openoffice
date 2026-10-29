@@ -4488,6 +4488,13 @@ void ScXMLExport::CollectUserDefinedNamespaces(const SfxItemPool* pPool, sal_uIn
         GetXMLToken( XML_NP_PRESENTATION ),
         GetXMLToken( XML_N_PRESENTATION ),
         XML_NAMESPACE_PRESENTATION );
+
+    // shapes carry drawooo:display
+    if( getDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+        _GetNamespaceMap().Add(
+            GetXMLToken( XML_NP_DRAW_EXT ),
+            GetXMLToken( XML_N_DRAW_EXT ),
+            XML_NAMESPACE_DRAW_EXT );
 }
 
 void ScXMLExport::IncrementProgressBar(sal_Bool bEditCell, sal_Int32 nInc)

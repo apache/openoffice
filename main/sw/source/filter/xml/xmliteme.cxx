@@ -244,6 +244,11 @@ void SwXMLExport::_InitItemExport()
             GetXMLToken(XML_NP_TEXT_EXT),
             GetXMLToken(XML_N_TEXT_EXT),
             XML_NAMESPACE_TEXT_EXT);
+        // shapes carry drawooo:display
+        _GetNamespaceMap().Add(
+            GetXMLToken(XML_NP_DRAW_EXT),
+            GetXMLToken(XML_N_DRAW_EXT),
+            XML_NAMESPACE_DRAW_EXT);
     }
 }
 
