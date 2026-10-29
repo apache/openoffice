@@ -96,6 +96,27 @@ namespace xmloff
 	using namespace ::com::sun::star::text;
     using namespace ::com::sun::star::form::binding;
 
+    namespace
+    {
+        // PTnnHnnMnn[.f]S -> nn:nn:nn[.f], keeping the digits of the duration; anything else is left alone
+        ::rtl::OUString lcl_durationToXsdTime( const ::rtl::OUString& _rDuration )
+        {
+            const sal_Int32 nLen = _rDuration.getLength();
+            const sal_Int32 nH = _rDuration.indexOf( sal_Unicode( 'H' ) );
+            const sal_Int32 nM = _rDuration.indexOf( sal_Unicode( 'M' ) );
+            if ( !_rDuration.matchAsciiL( "PT", 2 ) || nH < 3 || nM < nH + 2 || nLen < nM + 3
+                || _rDuration.getStr()[ nLen - 1 ] != sal_Unicode( 'S' ) )
+                return _rDuration;
+
+            ::rtl::OUStringBuffer aBuffer( _rDuration.copy( 2, nH - 2 ) );
+            aBuffer.append( sal_Unicode( ':' ) );
+            aBuffer.append( _rDuration.copy( nH + 1, nM - nH - 1 ) );
+            aBuffer.append( sal_Unicode( ':' ) );
+            aBuffer.append( _rDuration.copy( nM + 1, nLen - nM - 2 ) );
+            return aBuffer.makeStringAndClear();
+        }
+    }
+
 	//=====================================================================
 	//= OElementExport
 	//=====================================================================
@@ -510,6 +531,16 @@ namespace xmloff
 
                     const Any propValue = m_xProps->getPropertyValue( prop->Name );
                     attributeValue = handler->getAttributeValue( propValue );
+
+                    // ODF 1.2 wants xsd:time for the time controls
+                    if  (   m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012
+                        &&  (   propDescription->propertyId == PID_TIME_MIN
+                            ||  propDescription->propertyId == PID_TIME_MAX
+                            ||  propDescription->propertyId == PID_DEFAULT_TIME
+                            ||  propDescription->propertyId == PID_TIME
+                            )
+                        )
+                        attributeValue = lcl_durationToXsdTime( attributeValue );
                 }
                 else
                 {
