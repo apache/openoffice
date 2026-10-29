@@ -1,0 +1,78 @@
+--- misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/Logger.java	2019-05-31 10:26:20.000000000 -0500
++++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/Logger.java	2026-10-29 00:54:34.415210848 -0500
+@@ -62,6 +62,7 @@
+ import org.hsqldb.lib.FileAccess;
+ import org.hsqldb.lib.FileUtil;
+ import org.hsqldb.lib.FrameworkLogger;
++import java.lang.reflect.Constructor;
+ import org.hsqldb.lib.HsqlArrayList;
+ import org.hsqldb.lib.InputStreamInterface;
+ import org.hsqldb.lib.InputStreamWrapper;
+@@ -183,6 +184,26 @@
+         this.database = database;
+     }
+ 
++    private static FileAccess getFileAccessCustom(Database database) {
++        String fileAccessClassName = database.urlProperties.getProperty("fileaccess_class_name");
++        if (fileAccessClassName != null && !fileAccessClassName.isEmpty()) {
++            try {
++                Class<?> fileAccessClass = Class.forName(fileAccessClassName);
++                String storageKey = database.urlProperties.getProperty("storage_key");
++                if (storageKey != null) {
++                    Constructor<?> ctor = fileAccessClass.getConstructor(Object.class);
++                    return (FileAccess) ctor.newInstance(storageKey);
++                } else {
++                    Constructor<?> ctor = fileAccessClass.getConstructor();
++                    return (FileAccess) ctor.newInstance();
++                }
++            } catch (Exception e) {
++                return FileUtil.getFileAccess(database.isFilesInJar());
++            }
++        }
++        return FileUtil.getFileAccess(database.isFilesInJar());
++    }
++
+     /**
+      *  Opens the specified Database object's database files and starts up
+      *  the logging process. <p>
+@@ -198,7 +219,7 @@
+         boolean hasFileProps = false;
+         boolean hasScript    = false;
+ 
+-        fileAccess = FileUtil.getFileAccess(database.isFilesInJar());
++        fileAccess = getFileAccessCustom(database);
+         propIsFileDatabase          = database.getType().isFileBased();
+         database.databaseProperties = new HsqlDatabaseProperties(database);
+         propTextAllowFullPath = database.databaseProperties.isPropertyTrue(
+--- misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAFile.java	2019-04-27 08:55:28.000000000 -0500
++++ misc/build/hsqldb-2.5.0/hsqldb/src/org/hsqldb/persist/RAFile.java	2026-10-29 00:55:40.935211237 -0500
+@@ -43,6 +43,8 @@
+ import org.hsqldb.lib.ArrayUtil;
+ import org.hsqldb.lib.HsqlByteArrayInputStream;
+ import org.hsqldb.lib.HsqlByteArrayOutputStream;
++import org.hsqldb.lib.Storage;
++import java.lang.reflect.Constructor;
+ 
+ /**
+  * This class is a wrapper for a random access file such as that used for
+@@ -93,6 +95,20 @@
+             String name, boolean readonly,
+             int type) throws FileNotFoundException, IOException {
+ 
++        String storageClassName = database.urlProperties.getProperty("storage_class_name");
++        if (storageClassName != null && !storageClassName.isEmpty()) {
++            try {
++                Class<?> storageClass = Class.forName(storageClassName);
++                String storageKey = database.urlProperties.getProperty("storage_key");
++                Constructor<?> ctor = storageClass.getConstructor(
++                        String.class, Boolean.class, Object.class);
++                Storage storage = (Storage) ctor.newInstance(
++                        name, Boolean.valueOf(readonly), storageKey);
++                return new RAStorageWrapper(storage);
++            } catch (Exception e) {
++                // fall through to default implementation
++            }
++        }
+         if (type == DATA_FILE_JAR) {
+             return new RAFileInJar(name);
+         } else if (type == DATA_FILE_TEXT) {

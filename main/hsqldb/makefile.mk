@@ -48,7 +48,7 @@ TARFILE_ROOTDIR=hsqldb-$(HSQLDB_VERSION)$/hsqldb
 CONVERTFILES=build$/build.xml \
 			src$/org$/hsqldb$/persist$/HsqlDatabaseProperties.java
 
-PATCH_FILES=
+PATCH_FILES=patches$/aoo_integration.patch
 
 JAVAC_SRCTGT=-Dant.build.javac.source=1.8 -Dant.build.javac.target=1.8
 

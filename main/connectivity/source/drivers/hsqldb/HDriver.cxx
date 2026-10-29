@@ -337,13 +337,6 @@ namespace connectivity
 				{
 					::dbtools::throwGenericSQLException(sMessage ,*this);
 				}
-				// check if database was shutdown correctly before converting to new a version
-				if ( bModified && bAskUser )
-				{
-					::connectivity::SharedResources aResources;
-					const ::rtl::OUString sShutdownMessage = aResources.getResourceString(STR_SHUTDOWN_REQUIRED);
-					::dbtools::throwGenericSQLException(sShutdownMessage ,*this);
-				}
 				// need to convert file, ask for user approvement
                 if ( xInteraction.is() && bAskUser )
                 {
@@ -358,8 +351,8 @@ namespace connectivity
 			        pRequest->addContinuation(pDisApprove);
                     xInteraction->handle(xRequest);
                     if ( !pDisApprove->wasSelected() )
-				        bAskUser = false;
-					aProperties.put( "sql.enforce_size", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "false" ) ) );
+                        bAskUser = false;
+                    aProperties.put( "sql.enforce_size", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "false" ) ) );
                 }
 
                 // readonly?
@@ -370,12 +363,9 @@ namespace connectivity
 					xProp->getPropertyValue(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("OpenMode"))) >>= nMode;
 					if ( (nMode & ElementModes::WRITE) != ElementModes::WRITE )
 					{
-                        bAskUser = true; // which means already added
-                        //aProperties.put( "readonly", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
+						aProperties.put( "readonly", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
 					}
-				} // if ( xProp.is() )
-                if ( bAskUser )
-                    aProperties.put( "readonly", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
+				}
 
                 Sequence< PropertyValue > aConnectionArgs;
                 aProperties >>= aConnectionArgs;
