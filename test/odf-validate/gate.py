@@ -25,7 +25,8 @@
 #   build     rebuild the modules (--build) and deliver them to the solver
 #   refresh   copy the rebuilt libraries (--libs) from the solver into the app copy and verify them
 #   corpus    save the job list in ODF 1.2 Extended (ext) and strict (strict) mode with the app copy
-#   validate  validate.py and the checkers on the saved packages; kinds compared with baseline/ and --prev
+#   validate  validate.py and the checkers on the saved packages; kinds compared with baseline/ and --prev;
+#             a checker that did not run, a shall finding of idcheck/pkgcheck/doctypecheck, or more formula findings than --prev fails
 #   dump      reload every saved package and dump a fixed property set (dump7.py), with a stall watchdog
 #   diff      dumps (diff7.py) and packages (cmp7.py) against --prev; differences not in gate-volatile.tsv are unexplained
 #   fixtures  gate-fixtures.tsv saved in five version modes, reload checks, validation; results against --prev
@@ -243,6 +244,28 @@ class Gate:
             res["ok"] = res["ok"] and all(tuple(r["prev_ok_fail"]) == (r["ok"], r["fail"]) for r in res.values() if isinstance(r, dict) and "prev_ok_fail" in r)
         return res
 
+    def prev_validate(self, *keys):
+        """The validate-result dict of --prev at keys, or None when it has none."""
+        pf = self.prev_path("results.json")
+        d = json.load(open(pf)) if pf else {}
+        for k in keys:
+            d = d.get(k) if isinstance(d, dict) else None
+        return d if isinstance(d, dict) else None
+
+    def shall_problems(self, r, prev):
+        """Checker results that must fail the gate: a checker that did not run, a Part 1/3 finding, a formula finding that grew."""
+        bad = []
+        for n in ("ids", "pkg", "doctype", "formulas"):
+            if r.get("shall_" + n) is None:
+                bad.append("%s checker did not run" % n)
+        for n in ("ids", "pkg", "doctype"):
+            if r.get("shall_" + n):
+                bad.append("%d shall findings in %s" % (r["shall_" + n], n))
+        pf = (prev or {}).get("shall_formulas")
+        if not self.a.limit and r.get("shall_formulas") is not None and pf is not None and r["shall_formulas"] > pf:
+            bad.append("shall_formulas %d > %d in --prev" % (r["shall_formulas"], pf))
+        return bad
+
     def validate_dir(self, md, out, kinds_base, label):
         """validate.py + report.py + the checkers on out/; returns a result dict."""
         r = {}
@@ -259,7 +282,7 @@ class Gate:
                                   ("doctype", "doctypecheck.py", r"(\d+) shall"), ("formulas", "formulacheck.py", r"(\d+) shall")):
             o = subprocess.run(PY + [os.path.join(D, script), out, os.path.join(md, name + ".json")], capture_output=True, text=True)
             m = re.search(pat, o.stdout)
-            r["shall_" + name] = int(m.group(1)) if m else None
+            r["shall_" + name] = int(m.group(1)) if m and o.returncode == 0 else None
         base = kinds_base
         if base and os.path.exists(base):
             r["vs_baseline"] = run(PY + [os.path.join(D, "compare.py"), base, os.path.join(md, "kinds.json")], os.path.join(md, "compare_base.log"))
@@ -271,11 +294,14 @@ class Gate:
             md = os.path.join(self.run, mode)
             r = self.validate_dir(md, os.path.join(md, "out"), os.path.join(D, "baseline", mode + ".kinds.json"), mode)
             pk = self.prev_path(mode + "/kinds.json")
+            r["problems"] = self.shall_problems(r, self.prev_validate("validate", mode))
+            if not self.a.limit and not pk and "vs_baseline" not in r:
+                r["problems"].append("no baseline/%s.kinds.json and no --prev kinds to compare with" % mode)
             if pk and not self.a.limit:
                 r["vs_prev"] = run(PY + [os.path.join(D, "compare.py"), pk, os.path.join(md, "kinds.json")], os.path.join(md, "compare_prev.log"))
                 r["vs_prev_reverse"] = run(PY + [os.path.join(D, "compare.py"), os.path.join(md, "kinds.json"), pk], os.path.join(md, "compare_prev_rev.log"))
             res[mode] = r
-        res["ok"] = all(r.get("vs_baseline", 0) == 0 and r.get("vs_prev", 0) == 0 and r.get("vs_prev_reverse", 0) == 0 for r in res.values())
+        res["ok"] = all(r.get("vs_baseline", 0) == 0 and r.get("vs_prev", 0) == 0 and r.get("vs_prev_reverse", 0) == 0 and not r["problems"] for r in res.values())
         return res
 
     def dump(self):
@@ -373,6 +399,7 @@ class Gate:
                     r["checks"][key] = {"mismatches": sorted(re.findall(r"^MISMATCH (\S+?):", p.stdout, re.M)), "match": int(m.group(1)) if m else None, "total": int(m.group(2)) if m else None}
                 kill_office(prof)
                 r["validate"] = self.validate_dir(md, out, None, mode)
+                r["problems"] = self.shall_problems(r["validate"], self.prev_validate("fixtures", mode, "validate"))
                 res[mode] = r
             t = threading.Thread(target=one); t.start(); threads.append(t)
         for t in threads:
@@ -388,7 +415,7 @@ class Gate:
                         changed.append("%s %s" % (mode, k))
         res["changed_vs_prev"] = changed if pf else "no previous fixtures results"
         res["ok"] = all(res[m]["drive_rc"] == 0 and res[m]["failed"] == 0 and not res[m]["missing"] and
-                        all("error" not in c and c["total"] for c in res[m]["checks"].values()) for m in FIX_MODES) and not changed
+                        all("error" not in c and c["total"] for c in res[m]["checks"].values()) and not res[m]["problems"] for m in FIX_MODES) and not changed
         return res
 
 

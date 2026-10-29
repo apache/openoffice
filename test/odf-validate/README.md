@@ -128,10 +128,10 @@ that ran passed.
 | `build` | `build.pl` and `deliver.pl` for the `--build` modules (environment script: `ODFV_BUILD_ENV`) | exit codes 0 |
 | `refresh` | copies `--libs` from the solver into `app/` (`refresh-app.sh`) | copies identical |
 | `corpus` | saves the job list in `ext` and `strict` mode | no crash, every job accounted for, OK/FAIL counts equal `--prev` |
-| `validate` | `validate.py`, `report.py` and the four checkers per mode | kinds not worse than `baseline/<mode>.kinds.json` or than `--prev` (checked both ways) |
+| `validate` | `validate.py`, `report.py` and the four checkers per mode | kinds not worse than `baseline/<mode>.kinds.json` or than `--prev` (checked both ways); all four checkers ran; no `shall` finding from the id, package and document-type checkers; formula findings not above `--prev`; a baseline or `--prev` exists |
 | `dump` | reloads every saved package with `dump7.py` | no office failure; hangs and crashes are listed |
 | `diff` | `diff7.py` on the dumps and `cmp7.py` on the packages against `--prev` | every difference is a document in `gate-volatile.tsv` |
-| `fixtures` | `gate-fixtures.tsv`: saves in `v00 v10 v11 ext strict`, runs the reload checks, validates | saved, checked, and unchanged against `--prev` |
+| `fixtures` | `gate-fixtures.tsv`: saves in `v00 v10 v11 ext strict`, runs the reload checks, validates | saved, checked, and unchanged against `--prev`; the same checker rules as `validate` (formula findings are compared per mode with `--prev`) |
 
 - Inputs are frozen: without `--jobs` the list of `--prev` is reused (outputs
   are rewritten), so the same documents are saved when files under `main/`
