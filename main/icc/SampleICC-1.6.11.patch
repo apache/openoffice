@@ -2381,3 +2381,21 @@
      sReport += buf;
      rv = icMaxStatus(rv, icValidateWarning);
    }
+@@ -1919,5 +1919,5 @@
+ #ifdef ICC_WCHAR_32BIT
+   size_t sizeSrc = buf.size();
+-  wchar_t *szStr = buf.c_str();
++  const wchar_t *szStr = buf.c_str();
+ 
+   if (sizeSrc) {
+@@ -1973,4 +1973,7 @@
+   icUInt16Number *srcStr = m_str;
+-  UTF32 *dstStr = buf.c_str();
+-
+-  icConvertUTF16toUTF32((UTF16**)&srcStr, &strStr[m_len], &dstStr, &dstStr[buf.size()], lenientConversion);
++
++  if (buf.size()) {
++    UTF32 *dstStr = (UTF32*)&buf[0];
++
++    icConvertUTF16toUTF32((const UTF16**)&srcStr, &srcStr[m_len], &dstStr, &dstStr[buf.size()], lenientConversion);
++  }

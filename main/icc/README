@@ -42,6 +42,10 @@ SampleICC-1.6.11.patch performs the following modifications:
 - Normalizes \\r\\n to \\n in string literals across library source
 - Preserves ICC_ENUM_CONVENIENCE define (native in 1.6.11, provides
   in-enum max values for type-safe case labels with Clang 16+)
+- Fixes const-correctness in IccUtil.cpp: FromWString() assigns
+  buf.c_str() (const) to a const pointer; ToWString() uses mutable
+  &buf[0] instead of c_str() and guards with if(buf.size())
+- Fixes typo in ToWString(): strStr -> srcStr
 
 Note: The older 1.3.2 patches for format-security warnings and Win64
 support are no longer needed as these are already fixed in 1.6.11.
