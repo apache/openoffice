@@ -180,7 +180,7 @@ public class CRMDatabase
                 new HsqlColumnDescriptor( "Address",VARCHAR50),
                 new HsqlColumnDescriptor( "City",VARCHAR50),
                 new HsqlColumnDescriptor( "Postal",VARCHAR50),
-                new HsqlColumnDescriptor( "Comment","LONGVARCHAR")} );
+                new HsqlColumnDescriptor( "Comment","CLOB")} );
         m_database.createTable( table, true );
 
         m_database.executeSQL( "INSERT INTO \"customers\" VALUES(1,'Food, Inc.','Down Under','Melbourne','509','Prefered') " );
