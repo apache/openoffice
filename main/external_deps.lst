@@ -81,9 +81,9 @@ if (SYSTEM_LIBTEXTCAT != YES)
     URL3 = https://software.wise-guys.nl/download/libtextcat-2.2.tar.gz
 
 if (SOLAR_JAVA == TRUE)
-    MD5 = 17410483b5b5f267aa18b7e00b65e6e0
-    name = hsqldb_1_8_0.zip
-    URL1 = https://sourceforge.net/projects/hsqldb/files/hsqldb/hsqldb_1_8_0/hsqldb_1_8_0_10.zip
+    MD5 = 8140e899c4cdf04e31a06743230f8523
+    name = hsqldb-2.5.0.zip
+    URL1 = https://downloads.sourceforge.net/project/hsqldb/hsqldb/hsqldb_2_5/hsqldb-2.5.0.zip
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )

@@ -44,6 +44,12 @@ public class StorageNativeOutputStream {
         openStream(name, (String)key, NativeStorageAccess.WRITE | NativeStorageAccess.TRUNCATE);
     }
 
+    public StorageNativeOutputStream(String _name,Object _key, int mode) {
+        name = _name;
+        key = _key;
+        openStream(name, (String)key, mode);
+    }
+
     public native void openStream(String name,String key, int mode);
     /**
      * Writes <code>len</code> bytes from the specified byte array

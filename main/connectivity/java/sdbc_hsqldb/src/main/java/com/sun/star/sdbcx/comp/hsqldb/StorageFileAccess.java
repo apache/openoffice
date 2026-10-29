@@ -55,8 +55,8 @@ public class StorageFileAccess implements org.hsqldb.lib.FileAccess{
         return new NativeInputStreamHelper(key,streamName);
     }
 
-    public java.io.OutputStream openOutputStreamElement(java.lang.String streamName) throws java.io.IOException {
-        return new NativeOutputStreamHelper(key,streamName);
+    public java.io.OutputStream openOutputStreamElement(java.lang.String streamName, boolean append) throws java.io.IOException {
+        return new NativeOutputStreamHelper(key, streamName, append);
     }
 
     public void removeElement(java.lang.String filename) throws java.util.NoSuchElementException {
@@ -68,15 +68,15 @@ public class StorageFileAccess implements org.hsqldb.lib.FileAccess{
        }
     }
 
-    public void renameElement(java.lang.String oldName, java.lang.String newName) throws java.util.NoSuchElementException {
+    public void renameElement(java.lang.String oldName, java.lang.String newName, boolean bPreserve) throws java.util.NoSuchElementException {
         try {
             if ( isStreamElement(key,oldName) ){
                 removeElement(key,newName);
                 renameElement(key,oldName, newName);
             }
-       } catch (java.io.IOException e) {
-           throw new FileSystemRuntimeException( e, FileSystemRuntimeException.fileAccessRenameElementFailed );
-       }
+        } catch (java.io.IOException e) {
+            throw new FileSystemRuntimeException( e, FileSystemRuntimeException.fileAccessRenameElementFailed );
+        }
     }
 
     public class FileSync implements FileAccess.FileSync

@@ -633,5 +633,13 @@ String STR_ERROR_NEW_VERSION
 {
 	Text = "The connection could not be established. The database was created by a newer version of %PRODUCTNAME." ;
 };
+String STR_CONVERT_TO_NEW_VERSION
+{
+	Text = "The database file is stored in an old version. Do you want to convert into the new version?" ;
+};
+String STR_SHUTDOWN_REQUIRED
+{
+	Text = "The database file was not stored correctly by a previous version of %PRODUCTNAME.\nPlease open the file with Apache OpenOffice 4.1.x, then click the Tables icon and save." ;
+};
 
 // ********************************************************************** EOF

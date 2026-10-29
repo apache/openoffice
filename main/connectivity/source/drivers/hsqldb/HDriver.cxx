@@ -40,6 +40,7 @@
 #include <com/sun/star/frame/XDesktop.hpp>
 #include <com/sun/star/lang/Locale.hpp>
 #include <com/sun/star/util/XFlushable.hpp>
+#include <com/sun/star/task/XInteractionHandler.hpp>
 #include "HTerminateListener.hxx"
 #include "hsqldb/HCatalog.hxx"
 #include "diagnose_ex.h"
@@ -48,6 +49,7 @@
 #include <osl/process.h>
 #include <connectivity/dbexception.hxx>
 #include <comphelper/namedvaluecollection.hxx>
+#include <comphelper/interaction.hxx>
 #include <unotools/confignode.hxx>
 #include <unotools/ucbstreamhelper.hxx>
 #include "resource/hsqldb_res.hrc"
@@ -58,6 +60,7 @@ namespace connectivity
 {
 //........................................................................
 	using namespace hsqldb;
+    using namespace ::comphelper;
 	using namespace ::com::sun::star::uno;
 	using namespace ::com::sun::star::sdbc;
 	using namespace ::com::sun::star::sdbcx;
@@ -65,9 +68,9 @@ namespace connectivity
     using namespace ::com::sun::star::frame;
 	using namespace ::com::sun::star::lang;
 	using namespace ::com::sun::star::embed;
-	using namespace ::com::sun::star::io;
+    using namespace ::com::sun::star::io;
+	using namespace ::com::sun::star::util;
     using namespace ::com::sun::star::task;
-    using namespace ::com::sun::star::util;
 	using namespace ::com::sun::star::reflection;
 
 	namespace hsqldb
@@ -182,6 +185,7 @@ namespace connectivity
 			{
 				::rtl::OUString sURL;
 				Reference<XStorage> xStorage;
+                Reference< XInteractionHandler > xInteraction;
 				const PropertyValue* pIter = info.getConstArray();
 				const PropertyValue* pEnd = pIter + info.getLength();
 
@@ -194,6 +198,10 @@ namespace connectivity
 					else if ( pIter->Name.equalsAscii("URL") )
 					{
 						pIter->Value >>= sURL;
+					}
+                    else if ( pIter->Name.equalsAscii("InteractionHandler") )
+					{
+						pIter->Value >>= xInteraction;
 					}
 				}
 
@@ -229,7 +237,7 @@ namespace connectivity
 
                 // JDBC driver and driver's classpath
                 aProperties.put( "JavaDriverClass",
-                    ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.hsqldb.jdbcDriver" ) ) );
+                    ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.hsqldb.jdbc.JDBCDriver" ) ) );
                 aProperties.put( "JavaDriverClassPath",
 				    ::rtl::OUString(
 #ifdef SYSTEM_HSQLDB
@@ -250,6 +258,8 @@ namespace connectivity
                 // don't want to expose HSQLDB's schema capabilities which exist since 1.8.0RC10
                 aProperties.put( "default_schema",
                     ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
+				aProperties.put( "hsqldb.default_table_type",
+                    ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "cached" ) ) );
 
                 // security: permitted Java classes
                 NamedValue aPermittedClasses(
@@ -258,8 +268,12 @@ namespace connectivity
                 );
                 aProperties.put( "SystemProperties", Sequence< NamedValue >( &aPermittedClasses, 1 ) );
 
-				const ::rtl::OUString sProperties( RTL_CONSTASCII_USTRINGPARAM( "properties" ) );
-				::rtl::OUString sMessage;
+				aProperties.put( "jdbc.interval_as_varchar", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
+				aProperties.put( "get_column_name", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "false" ) ) );
+
+                bool bAskUser = false,bModified = false;
+                ::rtl::OUString sMessage;
+                ::rtl::OUString sProperties( RTL_CONSTASCII_USTRINGPARAM( "properties" ) );
                 try
                 {
                     if ( !bIsNewDatabase && xStorage->isStreamElement(sProperties) )
@@ -282,27 +296,32 @@ namespace connectivity
                                     {
                                         sVersionString = sValue;
                                     }
+									else if ( sLine.Equals("modified=yes",0,sizeof("modified=yes")-1) )
+                                    {
+										bModified = true;
+									}
                                     else
                                     {
-                                        if  (   sIniKey.Equals( "version" )
-                                            &&  ( sVersionString.Len() == 0 )
+                                        if  (   (  sVersionString.Len() == 0 )
+												&& sIniKey.Equals( "version" )
                                             )
                                         {
                                             sVersionString = sValue;
                                         }
                                     }
                                 }
-                                if ( sVersionString.Len() )
+                                 if ( sVersionString.Len() )
                                 {
 									const sal_Int32 nMajor = sVersionString.GetToken(0,'.').ToInt32();
 									const sal_Int32 nMinor = sVersionString.GetToken(1,'.').ToInt32();
-									const sal_Int32 nMicro = sVersionString.GetToken(2,'.').ToInt32();
-									if ( 	 nMajor > 1
-										|| ( nMajor == 1 && nMinor > 8 )
-										|| ( nMajor == 1 && nMinor == 8 && nMicro > 0 ) )
-					                {
+									if ( nMajor > 2 || (nMajor == 2 && nMinor > 5) )
+									{
 					                    ::connectivity::SharedResources aResources;
 					                    sMessage = aResources.getResourceString(STR_ERROR_NEW_VERSION);
+									}
+									else if ( nMajor < 2 )
+					                {
+										bAskUser = true;
 					                }
                                 }
                             }
@@ -313,10 +332,35 @@ namespace connectivity
                 catch(Exception&)
                 {
                 }
+				// reject databases from newer HSQLDB versions that cannot be opened
 				if ( sMessage.getLength() )
 				{
 					::dbtools::throwGenericSQLException(sMessage ,*this);
 				}
+				// check if database was shutdown correctly before converting to new a version
+				if ( bModified && bAskUser )
+				{
+					::connectivity::SharedResources aResources;
+					const ::rtl::OUString sShutdownMessage = aResources.getResourceString(STR_SHUTDOWN_REQUIRED);
+					::dbtools::throwGenericSQLException(sShutdownMessage ,*this);
+				}
+				// need to convert file, ask for user approvement
+                if ( xInteraction.is() && bAskUser )
+                {
+					::connectivity::SharedResources aResources;
+					const ::rtl::OUString sRequest( aResources.getResourceString(STR_CONVERT_TO_NEW_VERSION));
+                    SQLException aInfo(sRequest,*this,::rtl::OUString(),0,Any());
+                    OInteractionRequest* pRequest = new OInteractionRequest(makeAny(aInfo));
+			        Reference< XInteractionRequest > xRequest(pRequest);
+                    OInteraction< XInteractionApprove >* pApprove = new OInteraction< XInteractionApprove >();
+			        pRequest->addContinuation(pApprove);
+                    OInteraction< XInteractionDisapprove >* pDisApprove = new OInteraction< XInteractionDisapprove >;
+			        pRequest->addContinuation(pDisApprove);
+                    xInteraction->handle(xRequest);
+                    if ( !pDisApprove->wasSelected() )
+				        bAskUser = false;
+					aProperties.put( "sql.enforce_size", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "false" ) ) );
+                }
 
                 // readonly?
 				Reference<XPropertySet> xProp(xStorage,UNO_QUERY);
@@ -326,9 +370,12 @@ namespace connectivity
 					xProp->getPropertyValue(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("OpenMode"))) >>= nMode;
 					if ( (nMode & ElementModes::WRITE) != ElementModes::WRITE )
 					{
-                        aProperties.put( "readonly", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
+                        bAskUser = true; // which means already added
+                        //aProperties.put( "readonly", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
 					}
-				}
+				} // if ( xProp.is() )
+                if ( bAskUser )
+                    aProperties.put( "readonly", ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "true" ) ) );
 
                 Sequence< PropertyValue > aConnectionArgs;
                 aProperties >>= aConnectionArgs;
@@ -341,10 +388,16 @@ namespace connectivity
                 {
                     xOrig = xDriver->connect( sConnectURL, aConnectionArgs );
                 }
+				catch(const SQLException& e)
+                {
+                    StorageContainer::revokeStorage(sKey,NULL);
+                    OSL_UNUSED(e);
+                    throw;
+                }
                 catch(const Exception& e)
                 {
                     StorageContainer::revokeStorage(sKey,NULL);
-                    (void)e;
+                    OSL_UNUSED(e);
                     throw;
                 }
 

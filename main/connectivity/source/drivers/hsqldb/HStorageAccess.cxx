@@ -435,6 +435,8 @@ void write_to_storage_stream_from_buffer( JNIEnv* env, jobject /*obj_this*/, jst
 		if ( xOut.is() )
 		{
 			jbyte *buf = env->GetByteArrayElements(buffer,NULL);
+            OSL_ENSURE(len <= env->GetArrayLength(buffer),"Length is greater than the buffer!");
+
 			if (JNI_FALSE != env->ExceptionCheck())
             {
                 env->ExceptionClear();

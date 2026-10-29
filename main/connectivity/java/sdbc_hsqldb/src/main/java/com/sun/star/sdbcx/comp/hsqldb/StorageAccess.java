@@ -149,6 +149,18 @@ public class StorageAccess implements org.hsqldb.lib.Storage {
         return false;
     }
 
+    public boolean canAccess(int length) {
+        return true;
+    }
+
+    public boolean canSeek(long position) {
+        return true;
+    }
+
+    public org.hsqldb.Database getDatabase() {
+        return null;
+    }
+
     public void writeLong(long v) throws java.io.IOException {
 		//appLog.sendLine("NIOScaledRAFile.writeLong(" +v+") ");
         byte [] oneByte = new byte [8];

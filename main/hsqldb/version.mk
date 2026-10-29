@@ -20,7 +20,7 @@
 # *************************************************************
 # when you want to change the HSQLDB version, you must update the d.lst
 # in the HSQLDB_thon project accordingly !!!
-HSQLDB_MAJOR=1
-HSQLDB_MINOR=8
+HSQLDB_MAJOR=2
+HSQLDB_MINOR=5
 HSQLDB_MICRO=0
-HSQLDB_VERSION=$(HSQLDB_MAJOR)_$(HSQLDB_MINOR)_$(HSQLDB_MICRO)
+HSQLDB_VERSION=$(HSQLDB_MAJOR).$(HSQLDB_MINOR).$(HSQLDB_MICRO)
