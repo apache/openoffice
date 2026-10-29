@@ -3046,7 +3046,41 @@ void XMLTextParagraphExport::_exportTextGraphic(
 	// svg:transform
 	sal_Int16 nVal = 0;
 	rPropSet->getPropertyValue( sGraphicRotation ) >>= nVal;
-	if( nVal != 0 )
+	if( nVal != 0 && GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+	{
+		// draw:transform, radians and counter-clockwise like GraphicRotation, about the frame centre
+		TextContentAnchorType eAnchor = TextContentAnchorType_AT_PARAGRAPH;
+		rPropSet->getPropertyValue( sAnchorType ) >>= eAnchor;
+		sal_Int16 nOrient = HoriOrientation::NONE;
+		sal_Int32 nX = 0, nY = 0, nW = 0, nH = 0;
+		rPropSet->getPropertyValue( sHoriOrient ) >>= nOrient;
+		if( HoriOrientation::NONE == nOrient && TextContentAnchorType_AS_CHARACTER != eAnchor )
+			rPropSet->getPropertyValue( sHoriOrientPosition ) >>= nX;
+		nOrient = VertOrientation::NONE;
+		rPropSet->getPropertyValue( sVertOrient ) >>= nOrient;
+		if( VertOrientation::NONE == nOrient )
+			rPropSet->getPropertyValue( sVertOrientPosition ) >>= nY;
+		rPropSet->getPropertyValue( sWidth ) >>= nW;
+		rPropSet->getPropertyValue( sHeight ) >>= nH;
+		const sal_Int32 nCX = nX + nW / 2;
+		const sal_Int32 nCY = nY + nH / 2;
+		SvXMLUnitConverter& rConv = GetExport().GetMM100UnitConverter();
+		OUStringBuffer sRet;
+		sRet.appendAscii( "translate (" );
+		rConv.convertMeasure( sRet, -nCX );
+		sRet.append( (sal_Unicode)' ' );
+		rConv.convertMeasure( sRet, -nCY );
+		sRet.appendAscii( ") rotate (" );
+		SvXMLUnitConverter::convertDouble( sRet, basegfx::deg2rad( nVal / 10.0 ) );
+		sRet.appendAscii( ") translate (" );
+		rConv.convertMeasure( sRet, nCX );
+		sRet.append( (sal_Unicode)' ' );
+		rConv.convertMeasure( sRet, nCY );
+		sRet.append( (sal_Unicode)')' );
+		GetExport().AddAttribute( XML_NAMESPACE_DRAW, XML_TRANSFORM,
+								  sRet.makeStringAndClear() );
+	}
+	else if( nVal != 0 )
 	{
 		OUStringBuffer sRet( GetXMLToken(XML_ROTATE).getLength()+4 );
 		sRet.append( GetXMLToken(XML_ROTATE));

@@ -1067,7 +1067,21 @@ XMLTextFrameContext_Impl::XMLTextFrameContext_Impl(
                 const OUString aRotate(GetXMLToken(XML_ROTATE));
 				const sal_Int32 nRotateLen(aRotate.getLength());
 				sal_Int32 nLen = sValue.getLength();
-				if( nLen >= nRotateLen+3 &&
+				if( XML_NAMESPACE_DRAW == nPrefix )
+				{
+					// "translate (..) rotate (radians) translate (..)", only the angle is used
+					const sal_Int32 nPos = sValue.indexOf( aRotate );
+					const sal_Int32 nOpen = nPos < 0 ? -1 : sValue.indexOf( (sal_Unicode)'(', nPos );
+					const sal_Int32 nClose = nOpen < 0 ? -1 : sValue.indexOf( (sal_Unicode)')', nOpen );
+					double fRad = 0.0;
+					if( nClose > 0 && SvXMLUnitConverter::convertDouble( fRad,
+							sValue.copy( nOpen+1, nClose-nOpen-1 ).trim() ) )
+					{
+						const sal_Int32 nTenths = basegfx::fround( fmod( basegfx::rad2deg( fRad ), 360.0 ) * 10.0 );
+						nRotation = (sal_Int16)( ( nTenths + 3600 ) % 3600 );
+					}
+				}
+				else if( nLen >= nRotateLen+3 &&
 					0 == sValue.compareTo( aRotate, nRotateLen ) &&
 					'(' == sValue[nRotateLen] &&
 					')' == sValue[nLen-1] )
