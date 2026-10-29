@@ -44,6 +44,8 @@
 
 #include <comphelper/sequenceasvector.hxx>
 #include <unotools/docinfohelper.hxx>
+#include <unotools/saveopt.hxx>
+#include <xmloff/xmlcnimp.hxx>
 
 #include <string.h>
 
@@ -330,13 +332,47 @@ static const char *s_xmlns2 = "xmlns:";
 static const char *s_meta   = "meta:";
 static const char *s_href   = "xlink:href";
 
+// namespace URI bound to the prefix of a (non-xmlns) name; empty if none or "xml:"
+static ::rtl::OUString lcl_GetNsUri(
+        const ::rtl::OUString& rName, bool bElement,
+        const std::vector< beans::StringPair >& rDecls )
+{
+    const sal_Int32 nColon = rName.indexOf( ':' );
+    if( nColon < 0 && !bElement )
+        return ::rtl::OUString();
+    ::rtl::OUString aDecl( RTL_CONSTASCII_USTRINGPARAM( "xmlns" ) );
+    if( nColon >= 0 )
+    {
+        if( rName.copy( 0, nColon ).equalsAscii( "xml" ) )
+            return ::rtl::OUString();
+        aDecl += ::rtl::OUString( sal_Unicode(':') ) + rName.copy( 0, nColon );
+    }
+    for( size_t i = rDecls.size(); i > 0; --i )
+        if( rDecls[i-1].First.equals( aDecl ) )
+            return rDecls[i-1].Second;
+    return ::rtl::OUString();
+}
+
+static bool lcl_IsForeignAttr(
+        const ::rtl::OUString& rName, const ::rtl::OUString& rValue,
+        const std::vector< beans::StringPair >& rDecls )
+{
+    if( rName.matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "xmlns" ) ) )
+        return rValue.getLength() && !SvXMLIsODFNamespace( rValue );
+    const ::rtl::OUString aUri( lcl_GetNsUri( rName, false, rDecls ) );
+    return aUri.getLength() && !SvXMLIsODFNamespace( aUri );
+}
+
 SvXMLMetaExport::SvXMLMetaExport(
         SvXMLExport& i_rExp,
         const uno::Reference<document::XDocumentProperties>& i_rDocProps ) :
     mrExport( i_rExp ),
 	mxDocProps( i_rDocProps ),
     m_level( 0 ),
-    m_preservedNSs()
+    m_preservedNSs(),
+    m_nsDecls(),
+    m_nsMarks(),
+    m_skip( 0 )
 {
     DBG_ASSERT( mxDocProps.is(), "no document properties" );
 }
@@ -397,6 +433,32 @@ void SAL_CALL
 SvXMLMetaExport::startElement(const ::rtl::OUString & i_rName,
     const uno::Reference< xml::sax::XAttributeList > & i_xAttribs)
 {
+    // strict ODF 1.2: custom metadata (foreign content) is not allowed
+    const bool bStrict = mrExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012;
+
+    if (m_skip) {
+        ++m_skip;
+        return;
+    }
+
+    const sal_Int32 nMark = m_nsDecls.size();
+    const sal_Int16 nDecls = i_xAttribs->getLength();
+    for (sal_Int16 i = 0; i < nDecls; ++i) {
+        const ::rtl::OUString name(i_xAttribs->getNameByIndex(i));
+        if (name.matchAsciiL(s_xmlns, strlen(s_xmlns)))
+            m_nsDecls.push_back(beans::StringPair(name,
+                i_xAttribs->getValueByIndex(i)));
+    }
+
+    if (bStrict && m_level > 0) {
+        const ::rtl::OUString aUri(lcl_GetNsUri(i_rName, true, m_nsDecls));
+        if (aUri.getLength() && !SvXMLIsODFNamespace(aUri)) {
+            m_nsDecls.resize(nMark);
+            m_skip = 1;
+            return;
+        }
+    }
+    m_nsMarks.push_back(nMark);
 
     if (m_level == 0) {
         // namespace decls: default ones have been written at the root element
@@ -414,7 +476,8 @@ SvXMLMetaExport::startElement(const ::rtl::OUString & i_rName,
                         break;
                     }
                 }
-                if (!found) {
+                if (!found && !(bStrict && lcl_IsForeignAttr(name,
+                        i_xAttribs->getValueByIndex(i), m_nsDecls))) {
                     m_preservedNSs.push_back(beans::StringPair(name,
                         i_xAttribs->getValueByIndex(i)));
                 }
@@ -457,14 +520,16 @@ SvXMLMetaExport::startElement(const ::rtl::OUString & i_rName,
             if (name.matchAsciiL(s_href, strlen(s_href))) {
                 value = mrExport.GetRelativeReference(value);
             }
-            mrExport.AddAttribute(name, value);
+            if (!bStrict || !lcl_IsForeignAttr(name, value, m_nsDecls))
+                mrExport.AddAttribute(name, value);
         }
     } else {
         const sal_Int16 nLength = i_xAttribs->getLength();
         for (sal_Int16 i = 0; i < nLength; ++i) {
             const ::rtl::OUString name  (i_xAttribs->getNameByIndex(i));
             const ::rtl::OUString value (i_xAttribs->getValueByIndex(i));
-            mrExport.AddAttribute(name, value);
+            if (!bStrict || !lcl_IsForeignAttr(name, value, m_nsDecls))
+                mrExport.AddAttribute(name, value);
         }
     }
 
@@ -478,7 +543,13 @@ SvXMLMetaExport::startElement(const ::rtl::OUString & i_rName,
 void SAL_CALL
 SvXMLMetaExport::endElement(const ::rtl::OUString & i_rName)
 {
+    if (m_skip) {
+        --m_skip;
+        return;
+    }
     --m_level;
+    m_nsDecls.resize(m_nsMarks.back());
+    m_nsMarks.pop_back();
     if (m_level == 0) {
         // ignore the root; see startElement
         return;
@@ -490,12 +561,16 @@ SvXMLMetaExport::endElement(const ::rtl::OUString & i_rName)
 void SAL_CALL
 SvXMLMetaExport::characters(const ::rtl::OUString & i_rChars)
 {
+    if (m_skip)
+        return;
     mrExport.Characters(i_rChars);
 }
 
 void SAL_CALL
 SvXMLMetaExport::ignorableWhitespace(const ::rtl::OUString & /*i_rWhitespaces*/)
 {
+    if (m_skip)
+        return;
     mrExport.IgnorableWhitespace(/*i_rWhitespaces*/);
 }
 
