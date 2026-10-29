@@ -5010,32 +5010,32 @@ if test -n "$with_system_hsqldb" -o -n "$with_system_libs" && \
         fi
         AC_CHECK_FILE($HSQLDB_JAR, [],
                [AC_MSG_ERROR(hsqldb.jar not found.)], [])
-        AC_MSG_CHECKING([whether hsqldb is 1.8.0.x])
+AC_MSG_CHECKING([whether hsqldb is newer than 2.7])
         export HSQLDB_JAR
         if $PERL -e 'use Archive::Zip;
             my $file = "$ENV{'HSQLDB_JAR'}";
             my $zip = Archive::Zip->new( $file );
             my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
-            if ( $mf =~ m/Specification-Version: 1.8.*/ ) {
-               push @l, split(/\n/, $mf);
-               foreach my $line (@l) {
-                  if ($line =~ m/Specification-Version:/) {
-                      ($t, $version) = split (/:/,$line);
-                      $version =~ s/^\s//;
-                      ($a, $b, $c, $d) = split (/\./,$version);
-                      if ($c == "0" && $d > "8")  {
-                          exit 0;
-                      } else {
-                          exit 1;
-                      }
-                  }
-               }
+            if ( $mf =~ m/Specification-Version: 2\.\d+\.\d+/ ) {
+                push @l, split(/\n/, $mf);
+                foreach my $line (@l) {
+                    if ($line =~ m/Specification-Version:/) {
+                        ($t, $version) = split (/:/,$line);
+                        $version =~ s/^\s//;
+                        ($a, $b, $c) = split (/\./,$version);
+                        if ($a == 2 && ($b > 7 || ($b == 7 && $c > 0)))  {
+                            exit 0;
+                        } else {
+                            exit 1;
+                        }
+                    }
+                }
             } else {
                 exit 1;
             }'; then
             AC_MSG_RESULT([yes])
          else
-            AC_MSG_ERROR([no, you need hsqldb >= 1.8.0.9 but < 1.8.1])
+            AC_MSG_ERROR([no, you need hsqldb > 2.7])
          fi
 else
     AC_MSG_RESULT([internal])
