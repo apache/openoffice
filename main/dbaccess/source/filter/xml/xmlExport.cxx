@@ -613,7 +613,8 @@ void ODBExport::exportConnectionData()
             String sDatabaseName,sHostName;
             sal_Int32 nPort = -1;
             m_aTypeCollection.extractHostNamePort(sValue,sDatabaseName,sHostName,nPort);
-            if ( sHostName.Len() )
+            // db:type must use a declared namespace prefix in ODF 1.2, so the URL goes into the connection resource
+            if ( sHostName.Len() && SvtSaveOptions().GetODFDefaultVersion() != SvtSaveOptions::ODFVER_012 )
             {
                 SvXMLElementExport aDatabaseDescription(*this,XML_NAMESPACE_DB, XML_DATABASE_DESCRIPTION, sal_True, sal_True);
                 {
