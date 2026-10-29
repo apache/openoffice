@@ -1594,6 +1594,18 @@ void XMLShapeExport::ImpExportOLE2Shape(
 		sal_Bool bCreateNewline( (nFeatures & SEF_EXPORT_NO_WS) == 0 ); // #86116#/#92210#
 		sal_Bool bExportEmbedded(0 != (mrExport.getExportFlags() & EXPORT_EMBEDDED));
 		OUString sPersistName;
+		if( mrExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 && !bIsEmptyPresObj && !bExportEmbedded )
+		{
+			// neither link nor content is invalid in 1.2, and the replacement image would only name an empty object
+			sal_Bool bIsInt = sal_False;
+			OUString sLinkURL, sObjName;
+			xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("IsInternal"))) >>= bIsInt;
+			if( bIsInt )
+				xPropSet->getPropertyValue( OUString::createFromAscii( "LinkURL" ) ) >>= sLinkURL;
+			xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("PersistName"))) >>= sObjName;
+			if( !sLinkURL.getLength() && !sObjName.getLength() )
+				return;
+		}
 		SvXMLElementExport aElement( mrExport, XML_NAMESPACE_DRAW,
 								  XML_FRAME, bCreateNewline, sal_True );
 
