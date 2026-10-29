@@ -43,6 +43,13 @@ public class NativeOutputStreamHelper extends java.io.OutputStream{
         out = new StorageNativeOutputStream(file,key);
     }
 
+    public NativeOutputStreamHelper(String key,String _file, boolean append) {
+        file = _file;
+        this.key = key;
+        int mode = append ? NativeStorageAccess.WRITE : (NativeStorageAccess.WRITE | NativeStorageAccess.TRUNCATE);
+        out = new StorageNativeOutputStream(file,key, mode);
+    }
+
     public void write(byte[] b, int off, int len)  throws java.io.IOException{
         out.write(key,file,b, off, len);
     }

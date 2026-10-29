@@ -57,8 +57,8 @@ namespace connectivity
 		{
 			try
 			{
-                m_xStream.clear();
-			    m_xSeek.clear();
+				m_xStream.clear();
+				m_xSeek.clear();
 				if ( m_xInputStream.is() )
 				{
 					m_xInputStream->closeInput();
