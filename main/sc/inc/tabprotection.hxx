@@ -38,8 +38,9 @@ class ScTableProtectionImpl;
 
 enum ScPasswordHash
 {
-    PASSHASH_OOO = 0,
-    PASSHASH_XL
+    PASSHASH_OOO = 0,   // ODF hash: SHA-1 (20 bytes) or SHA-256 of the UTF-8 password (32 bytes)
+    PASSHASH_XL,
+    PASSHASH_SHA256     // only requested from getPasswordHash(); never stored as the tag
 };
 
 class ScPassHashHelper

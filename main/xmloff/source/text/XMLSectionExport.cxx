@@ -56,6 +56,8 @@
 #include <xmloff/xmlexp.hxx>
 #include <xmloff/xmltkmap.hxx>
 #include "txtflde.hxx"
+#include <svl/PasswordHelper.hxx>
+#include <unotools/saveopt.hxx>
 
 
 
@@ -476,6 +478,14 @@ void XMLSectionExport::ExportRegularSectionStart(
 		SvXMLUnitConverter::encodeBase64(aBuffer, aPassword);
 		GetExport().AddAttribute(XML_NAMESPACE_TEXT, XML_PROTECTION_KEY,
 								 aBuffer.makeStringAndClear());
+		// ODF 1.2 19.851; without the attribute the key is read as SHA-1
+		const OUString aDigest( SvPasswordHelper::GetDigestAlgorithmIRI( aPassword ) );
+		if (aDigest.getLength() &&
+			GetExport().getDefaultVersion() >= SvtSaveOptions::ODFVER_012)
+		{
+			GetExport().AddAttribute(XML_NAMESPACE_TEXT,
+									 XML_PROTECTION_KEY_DIGEST_ALGORITHM, aDigest);
+		}
 	}
 
 	// export element

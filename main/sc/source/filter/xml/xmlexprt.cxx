@@ -65,6 +65,7 @@
 #include "externalrefmgr.hxx"
 #include "editutil.hxx"
 #include "tabprotection.hxx"
+#include <svl/PasswordHelper.hxx>
 
 #include <xmloff/xmltoken.hxx>
 #include <xmloff/xmlnmspe.hxx>
@@ -1509,6 +1510,22 @@ void ScXMLExport::FillColumnRowGroups()
 	}
 }
 
+// ODF 1.2 19.698: SHA-256 of the UTF-8 password; a stored SHA-1 key and ODF 1.0/1.1 keep what the model has
+static uno::Sequence<sal_Int8> lcl_GetProtectionKey( const ScPassHashProtectable& rProtect,
+        bool bODF12, rtl::OUString& rDigest )
+{
+    if (bODF12 && rProtect.hasPasswordHash(PASSHASH_SHA256))
+    {
+        uno::Sequence<sal_Int8> aKey = rProtect.getPasswordHash(PASSHASH_SHA256);
+        if (aKey.getLength())
+        {
+            rDigest = SvPasswordHelper::GetDigestAlgorithmIRI(aKey);
+            return aKey;
+        }
+    }
+    return rProtect.getPasswordHash(PASSHASH_OOO);
+}
+
 void ScXMLExport::SetBodyAttributes()
 {
 	if (pDoc && pDoc->IsDocProtected())
@@ -1516,12 +1533,17 @@ void ScXMLExport::SetBodyAttributes()
 		AddAttribute(XML_NAMESPACE_TABLE, XML_STRUCTURE_PROTECTED, XML_TRUE);
 		rtl::OUStringBuffer aBuffer;
         uno::Sequence<sal_Int8> aPassHash;
+        rtl::OUString aDigest;
         const ScDocProtection* p = pDoc->GetDocProtection();
         if (p)
-            aPassHash = p->getPasswordHash(PASSHASH_OOO);
+            aPassHash = lcl_GetProtectionKey(*p, getDefaultVersion() >= SvtSaveOptions::ODFVER_012, aDigest);
 		SvXMLUnitConverter::encodeBase64(aBuffer, aPassHash);
 		if (aBuffer.getLength())
+		{
 			AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY, aBuffer.makeStringAndClear());
+			if (aDigest.getLength())
+				AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY_DIGEST_ALGORITHM, aDigest);
+		}
 	}
 }
 
@@ -1725,14 +1747,19 @@ void ScXMLExport::_ExportContent()
                         {
                             AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTED, XML_TRUE);
                             rtl::OUStringBuffer aBuffer;
+                            rtl::OUString aDigest;
                             if (pDoc)
                             {
                                 ScTableProtection* pProtect = pDoc->GetTabProtection(static_cast<SCTAB>(nTable));
                                 if (pProtect)
-                                    SvXMLUnitConverter::encodeBase64(aBuffer, pProtect->getPasswordHash(PASSHASH_OOO));
+                                    SvXMLUnitConverter::encodeBase64(aBuffer, lcl_GetProtectionKey(*pProtect, getDefaultVersion() >= SvtSaveOptions::ODFVER_012, aDigest));
                             }
                             if (aBuffer.getLength())
+                            {
                                 AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY, aBuffer.makeStringAndClear());
+                                if (aDigest.getLength())
+                                    AddAttribute(XML_NAMESPACE_TABLE, XML_PROTECTION_KEY_DIGEST_ALGORITHM, aDigest);
+                            }
                         }
                         rtl::OUString sPrintRanges;
                         table::CellRangeAddress aColumnHeaderRange;

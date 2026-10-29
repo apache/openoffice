@@ -1424,6 +1424,7 @@ namespace xmloff { namespace token {
         TOKEN( "size",                            XML_PROTECT_SIZE ),
         TOKEN( "protected",                       XML_PROTECTED ),
         TOKEN( "protection-key",                  XML_PROTECTION_KEY ),
+        TOKEN( "protection-key-digest-algorithm", XML_PROTECTION_KEY_DIGEST_ALGORITHM ),
         TOKEN( "prsubset",                        XML_PRSUBSET ),
         TOKEN( "publisher",                       XML_PUBLISHER ),
         TOKEN( "punctuation-wrap",                XML_PUNCTUATION_WRAP ),
