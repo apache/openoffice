@@ -1090,7 +1090,7 @@ XMLTextFrameContext_Impl::XMLTextFrameContext_Impl(
 					sValue.trim();
 					sal_Int32 nVal;
 					if( GetImport().GetMM100UnitConverter().convertNumber( nVal, sValue ) )
-						nRotation = (sal_Int16)(nVal % 360 );
+						nRotation = (sal_Int16)(nVal % 3600 );
 				}
 			}
 			break;
