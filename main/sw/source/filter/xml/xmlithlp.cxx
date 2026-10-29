@@ -405,6 +405,7 @@ const struct  SvXMLEnumMapEntry aXMLTableVAlignMap[] =
     { XML_TOP,                  text::VertOrientation::TOP        },
     { XML_MIDDLE,               text::VertOrientation::CENTER     },
     { XML_BOTTOM,               text::VertOrientation::BOTTOM     },
+    { XML_AUTOMATIC,            text::VertOrientation::NONE       },
 	{ XML_TOKEN_INVALID, 0 }
 };
 
