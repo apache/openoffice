@@ -4232,12 +4232,14 @@ void ScXMLExport::WriteConsolidation()
 			ScRangeStringConverter::GetStringFromAddress( sStrData, ScAddress( pCons->nCol, pCons->nRow, pCons->nTab ), pDoc, FormulaGrammar::CONV_OOO );
 			AddAttribute( XML_NAMESPACE_TABLE, XML_TARGET_CELL_ADDRESS, sStrData );
 
+			const XMLTokenEnum eUseLabel =
+				getDefaultVersion() == SvtSaveOptions::ODFVER_012 ? XML_USE_LABELS : XML_USE_LABEL;
 			if( pCons->bByCol && !pCons->bByRow )
-				AddAttribute( XML_NAMESPACE_TABLE, XML_USE_LABEL, XML_COLUMN );
+				AddAttribute( XML_NAMESPACE_TABLE, eUseLabel, XML_COLUMN );
 			else if( !pCons->bByCol && pCons->bByRow )
-				AddAttribute( XML_NAMESPACE_TABLE, XML_USE_LABEL, XML_ROW );
+				AddAttribute( XML_NAMESPACE_TABLE, eUseLabel, XML_ROW );
 			else if( pCons->bByCol && pCons->bByRow )
-				AddAttribute( XML_NAMESPACE_TABLE, XML_USE_LABEL, XML_BOTH );
+				AddAttribute( XML_NAMESPACE_TABLE, eUseLabel, XML_BOTH );
 
 			if( pCons->bReferenceData )
 				AddAttribute( XML_NAMESPACE_TABLE, XML_LINK_TO_SOURCE_DATA, XML_TRUE );

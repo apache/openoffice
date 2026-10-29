@@ -208,13 +208,15 @@ void ScXMLExportDDELinks::WriteDDELinks(uno::Reference<sheet::XSpreadsheetDocume
 							if (rExport.GetDocument() &&
 								rExport.GetDocument()->GetDdeLinkMode(nDDELink, nMode))
 							{
+								const sal_uInt16 nModePrefix = rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ?
+									XML_NAMESPACE_OFFICE : XML_NAMESPACE_TABLE;
 								switch (nMode)
 								{
 									case SC_DDE_ENGLISH :
-										rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_CONVERSION_MODE, XML_INTO_ENGLISH_NUMBER);
+										rExport.AddAttribute(nModePrefix, XML_CONVERSION_MODE, XML_INTO_ENGLISH_NUMBER);
 									break;
 									case SC_DDE_TEXT :
-										rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_CONVERSION_MODE, XML_KEEP_TEXT);
+										rExport.AddAttribute(nModePrefix, XML_CONVERSION_MODE, XML_KEEP_TEXT);
 									break;
 								}
 							}

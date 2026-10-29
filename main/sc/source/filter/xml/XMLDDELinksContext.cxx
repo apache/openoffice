@@ -231,7 +231,7 @@ ScXMLDDESourceContext::ScXMLDDESourceContext( ScXMLImport& rImport,
 			else if (IsXMLToken(aLocalName, XML_DDE_ITEM))
 				pDDELink->SetItem(sValue);
 		}
-		else if ((nPrefix == XML_NAMESPACE_TABLE) && IsXMLToken(aLocalName, XML_CONVERSION_MODE))
+		if ((nPrefix == XML_NAMESPACE_TABLE || nPrefix == XML_NAMESPACE_OFFICE) && IsXMLToken(aLocalName, XML_CONVERSION_MODE))
 		{
 			if (IsXMLToken(sValue, XML_INTO_ENGLISH_NUMBER))
 				pDDELink->SetMode(SC_DDE_ENGLISH);
