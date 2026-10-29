@@ -1467,6 +1467,9 @@ SvXMLNumFormatContext::SvXMLNumFormatContext( SvXMLImport& rImport,
         SvNumberFormatter* pFormatter = pData->GetNumberFormatter();
         if ( pFormatter )
         {
+            // ODF 1.2 19.364: a missing style means "short"
+            if ( !aNatNumAttr.Style.getLength() )
+                aNatNumAttr.Style = GetXMLToken( XML_SHORT );
             sal_Int32 nNatNum = pFormatter->GetNatNum()->convertFromXmlAttributes( aNatNumAttr );
             aFormatCode.appendAscii( RTL_CONSTASCII_STRINGPARAM( "[NatNum" ) );
             aFormatCode.append( nNatNum, 10 );
