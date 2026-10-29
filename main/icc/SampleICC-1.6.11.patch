@@ -2399,3 +2399,12 @@
 +
 +    icConvertUTF16toUTF32((const UTF16**)&srcStr, &srcStr[m_len], &dstStr, &dstStr[buf.size()], lenientConversion);
 +  }
+--- misc/SampleICC-1.6.11/Contrib/ICC_utils/Vetters.cpp	2010-08-24 15:50:00.000000000 -0400
++++ misc/build/SampleICC-1.6.11/Contrib/ICC_utils/Vetters.cpp	2026-10-29 18:15:00.000000000 -0400
+@@ -69,5 +69,5 @@
+ //////////////////////////////////////////////////////////////////////
+ 
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ #include <sstream>
