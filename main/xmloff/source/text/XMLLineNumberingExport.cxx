@@ -69,6 +69,16 @@ SvXMLEnumMapEntry __READONLY_DATA aLineNumberPositionMap[] =
 	{ XML_TOKEN_INVALID, 0 }
 };
 
+// ODF 1.2 knows inner and outer, not inside and outside
+SvXMLEnumMapEntry __READONLY_DATA aLineNumberPositionMapStrict[] =
+{
+	{ XML_LEFT,	    style::LineNumberPosition::LEFT },
+	{ XML_RIGHT,	style::LineNumberPosition::RIGHT },
+	{ XML_INNER,	style::LineNumberPosition::INSIDE },
+	{ XML_OUTER,    style::LineNumberPosition::OUTSIDE },
+	{ XML_TOKEN_INVALID, 0 }
+};
+
 
 
 void XMLLineNumberingExport::Export()
@@ -160,7 +170,8 @@ void XMLLineNumberingExport::Export()
 			sal_Int16 nPosition = 0;
 			aAny >>= nPosition;
 			if (SvXMLUnitConverter::convertEnum(sNumPosBuf, nPosition,
-												aLineNumberPositionMap))
+					rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ?
+					aLineNumberPositionMapStrict : aLineNumberPositionMap))
 			{
 				rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_NUMBER_POSITION,
 									 sNumPosBuf.makeStringAndClear());

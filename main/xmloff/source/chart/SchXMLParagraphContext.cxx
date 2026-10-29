@@ -95,7 +95,8 @@ SvXMLImportContext* SchXMLParagraphContext::CreateChildContext(
 {
 	if( nPrefix == XML_NAMESPACE_TEXT )
 	{
-		if( rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_TAB_STOP )))
+		if( rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_TAB_STOP )) ||
+			rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_TAB )))
         {
             maBuffer.append( sal_Unicode( 0x0009 ));  // tabulator
         }

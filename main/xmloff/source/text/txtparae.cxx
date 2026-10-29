@@ -2511,7 +2511,8 @@ sal_Bool lcl_txtpara_isBoundAsChar(
 sal_Int32 XMLTextParagraphExport::addTextFrameAttributes(
 	const Reference < XPropertySet >& rPropSet,
 	sal_Bool bShape,
-	OUString *pMinHeightValue )
+	OUString *pMinHeightValue,
+	OUString *pMinWidthValue )
 {
 	sal_Int32 nShapeFeatures = SEF_DEFAULT;
 
@@ -2616,7 +2617,9 @@ sal_Int32 XMLTextParagraphExport::addTextFrameAttributes(
     		rPropSet->getPropertyValue( sWidth ) >>= nWidth;
         }
 		GetExport().GetMM100UnitConverter().convertMeasure( sValue, nWidth );
-		if( SizeType::FIX != nWidthType )
+		if( SizeType::FIX != nWidthType && pMinWidthValue )
+			*pMinWidthValue = sValue.makeStringAndClear();
+		else if( SizeType::FIX != nWidthType )
 			GetExport().AddAttribute( XML_NAMESPACE_FO, XML_MIN_WIDTH,
 									  sValue.makeStringAndClear() );
 		else
@@ -2840,11 +2843,14 @@ void XMLTextParagraphExport::_exportTextFrame(
 
 	OUString sAutoStyle( sStyle );
 	OUString aMinHeightValue;
+	OUString aMinWidthValue;
 	sAutoStyle = Find( XML_STYLE_FAMILY_TEXT_FRAME, rPropSet, sStyle );
 	if( sAutoStyle.getLength() )
 		GetExport().AddAttribute( XML_NAMESPACE_DRAW, XML_STYLE_NAME,
 							  GetExport().EncodeStyleName( sAutoStyle ) );
-	addTextFrameAttributes( rPropSet, sal_False, &aMinHeightValue );
+	// fo:min-width is not allowed on draw:frame in strict ODF 1.2
+	addTextFrameAttributes( rPropSet, sal_False, &aMinHeightValue,
+		GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012 ? &aMinWidthValue : 0 );
 
 	SvXMLElementExport aElem( GetExport(), XML_NAMESPACE_DRAW,
 							  XML_FRAME, sal_False, sal_True );
@@ -2852,6 +2858,9 @@ void XMLTextParagraphExport::_exportTextFrame(
 	if( aMinHeightValue.getLength() )
 		GetExport().AddAttribute( XML_NAMESPACE_FO, XML_MIN_HEIGHT,
 								  aMinHeightValue );
+	if( aMinWidthValue.getLength() )
+		GetExport().AddAttribute( XML_NAMESPACE_FO, XML_MIN_WIDTH,
+								  aMinWidthValue );
 
 	// draw:chain-next-name
 	if( rPropSetInfo->hasPropertyByName( sChainNextName ) )

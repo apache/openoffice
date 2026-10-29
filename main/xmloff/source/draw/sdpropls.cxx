@@ -647,10 +647,33 @@ SvXMLEnumMapEntry __READONLY_DATA pXML_MeasureUnit_Enum[] =
 	{ XML_UNIT_PT,		6 },
 	{ XML_UNIT_PC,		7 },
 	{ XML_UNIT_INCH,	8 },
+	{ XML_INCH,			8 },
     { XML_UNIT_FOOT,	9 },
 	{ XML_UNIT_MILES,	10 },
 	{ XML_TOKEN_INVALID,0 }
 };
+
+// ODF 1.2 spells the unit "inch"; "in" stays readable
+class XMLMeasureUnitHdl : public XMLEnumPropertyHdl
+{
+public:
+	XMLMeasureUnitHdl( const SvXMLEnumMapEntry* pEnumMap, const ::com::sun::star::uno::Type& rType ) : XMLEnumPropertyHdl( pEnumMap, rType ) {}
+
+	virtual sal_Bool exportXML(
+			::rtl::OUString& rStrExpValue,
+			const ::com::sun::star::uno::Any& rValue,
+			const SvXMLUnitConverter& rUnitConverter ) const;
+};
+
+sal_Bool XMLMeasureUnitHdl::exportXML( OUString& rStrExpValue, const Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
+{
+	if( !XMLEnumPropertyHdl::exportXML( rStrExpValue, rValue, rUnitConverter ) )
+		return sal_False;
+
+	if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 && IsXMLToken( rStrExpValue, XML_UNIT_INCH ) )
+		rStrExpValue = GetXMLToken( XML_INCH );
+	return sal_True;
+}
 
 SvXMLEnumMapEntry __READONLY_DATA pXML_Measure_HAlign_Enum[] =
 {
@@ -1064,7 +1087,7 @@ const XMLPropertyHandler* XMLSdPropHdlFactory::GetPropertyHandler( sal_Int32 nTy
 				pHdl = new XMLEnumPropertyHdl( pXML_FitToSize_Enum, ::getCppuType((const com::sun::star::drawing::TextFitToSizeType*)0) );
 				break;
 			case XML_SD_TYPE_MEASURE_UNIT:
-				pHdl = new XMLEnumPropertyHdl( pXML_MeasureUnit_Enum, ::getCppuType((const sal_Int32*)0) );
+				pHdl = new XMLMeasureUnitHdl( pXML_MeasureUnit_Enum,::getCppuType((const sal_Int32*)0) );
 				break;
 			case XML_SD_TYPE_MEASURE_HALIGN:
 				pHdl = new XMLEnumPropertyHdl( pXML_Measure_HAlign_Enum, ::getCppuType((const com::sun::star::drawing::MeasureTextHorzPos*)0) );
