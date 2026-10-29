@@ -1882,6 +1882,12 @@ void XMLTextFieldExport::ExportFieldHelper(
 
     case FIELD_ID_DROP_DOWN:
     {
+        // text:drop-down is not in ODF 1.2; keep the shown item as plain text
+        if ( bStrict )
+        {
+            GetExport().Characters( sPresentation );
+            break;
+        }
 		ProcessString(XML_NAME, GetStringProperty(sPropertyName, rPropSet));
         ProcessString(XML_HELP,
                       GetStringProperty(sPropertyHelp, rPropSet), true);

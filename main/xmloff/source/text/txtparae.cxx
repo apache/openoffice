@@ -1464,6 +1464,27 @@ static const enum XMLTokenEnum lcl_XmlReferenceElements[] = {
 static const enum XMLTokenEnum lcl_XmlBookmarkElements[] = {
     XML_BOOKMARK, XML_BOOKMARK_START, XML_BOOKMARK_END };
 
+// ODF 1.2 has no field:fieldmark; keep the position as a bookmark with the fieldmark's name
+static void lcl_ExportFieldmarkAsBookmark(
+    SvXMLExport& rExport, const Reference<XPropertySet>& rPropSet,
+    const OUString& rProperty, enum XMLTokenEnum eElement, OUString& rLastPoint )
+{
+    Reference<XNamed> xName(rPropSet->getPropertyValue(rProperty), UNO_QUERY);
+    if (xName.is() && xName->getName().getLength() > 0)
+    {
+        // a checkbox is a point bookmark; the end portion that follows it has no start to close
+        if (eElement == XML_BOOKMARK)
+            rLastPoint = xName->getName();
+        else if (eElement == XML_BOOKMARK_END && xName->getName() == rLastPoint)
+        {
+            rLastPoint = OUString();
+            return;
+        }
+        rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_NAME, xName->getName());
+        SvXMLElementExport aElem(rExport, XML_NAMESPACE_TEXT, eElement, sal_False, sal_False);
+    }
+}
+
 // This function replaces the text portion iteration during auto style
 // collection.
 bool XMLTextParagraphExport::collectTextAutoStylesOptimized( sal_Bool bIsProgress )
@@ -2228,6 +2249,7 @@ void XMLTextParagraphExport::exportTextRangeEnumeration(
     static OUString sAnnotationEnd(RTL_CONSTASCII_USTRINGPARAM("AnnotationEnd"));
 
     sal_Bool bPrevCharIsSpace = bPrvChrIsSpc;
+    OUString sFormElementName;
 
     while( rTextEnum->hasMoreElements() )
     {
@@ -2314,6 +2336,16 @@ void XMLTextParagraphExport::exportTextRangeEnumeration(
             else if (sType.equals(sMeta))
             {
                 exportMeta( xPropSet, bAutoStyles, bIsProgress );
+            }
+            else if (GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012 &&
+                     (sType.equals(sTextFieldStart) || sType.equals(sTextFieldEnd) ||
+                      sType.equals(sTextFieldStartEnd)))
+            {
+                if (!bAutoStyles)
+                    lcl_ExportFieldmarkAsBookmark( GetExport(), xPropSet, sBookmark,
+                        sType.equals(sTextFieldStart) ? XML_BOOKMARK_START :
+                        sType.equals(sTextFieldEnd) ? XML_BOOKMARK_END : XML_BOOKMARK,
+                        sFormElementName );
             }
             else if (sType.equals(sTextFieldStart))
             {
