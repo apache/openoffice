@@ -45,7 +45,9 @@ SampleICC-1.6.11.patch performs the following modifications:
 - Fixes const-correctness in IccUtil.cpp: FromWString() assigns
   buf.c_str() (const) to a const pointer; ToWString() uses mutable
   &buf[0] instead of c_str() and guards with if(buf.size())
-- Fixes typo in ToWString(): strStr -> srcStr
+ - Fixes typo in ToWString(): strStr -> srcStr
+ - Fixes include filename casing in Vetters.cpp: "Vetters.h" -> "vetters.h"
+   (filesystem case-sensitivity on FreeBSD/macOS/Linux)
 
 Note: The older 1.3.2 patches for format-security warnings and Win64
 support are no longer needed as these are already fixed in 1.6.11.
