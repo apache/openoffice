@@ -26,7 +26,7 @@ import com.sun.star.document.XEmbeddedScripts;
 import com.sun.star.frame.XComponentLoader;
 import com.sun.star.frame.XModel;
 import com.sun.star.lang.XComponent;
-import com.sun.star.lang.XMultiServiceFactory;
+import com.sun.star.lang.XMultiComponentFactory;
 import com.sun.star.script.provider.XScript;
 import com.sun.star.script.provider.XScriptProvider;
 import com.sun.star.script.provider.XScriptProviderSupplier;
@@ -35,6 +35,7 @@ import com.sun.star.script.XStarBasicAccess;
 import com.sun.star.table.XCell;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
+import com.sun.star.container.XIndexAccess;
 import com.sun.star.sheet.XSpreadsheets;
 import com.sun.star.table.XCellRange;
 import com.sun.star.uno.UnoRuntime;
@@ -76,7 +77,7 @@ public abstract class VbaCompatTest {
     protected final OfficeConnection connection = new OfficeConnection();
 
     protected XComponentContext context;
-    protected XMultiServiceFactory serviceFactory;
+    protected XMultiComponentFactory serviceFactory;
     protected XSpreadsheetDocument document;
     protected XModel documentModel;
 
@@ -88,7 +89,7 @@ public abstract class VbaCompatTest {
         connection.setUp();
         context = connection.getComponentContext();
         serviceFactory = UnoRuntime.queryInterface(
-            XMultiServiceFactory.class, context.getServiceManager());
+            XMultiComponentFactory.class, context.getServiceManager());
         tempDir = Files.createTempDirectory("aoo_vba_test");
         createDocument();
     }
@@ -240,8 +241,10 @@ public abstract class VbaCompatTest {
      */
     protected XCell getCell(int column, int row) throws Exception {
         XSpreadsheets sheets = document.getSheets();
+        XIndexAccess indexAccess = UnoRuntime.queryInterface(
+            XIndexAccess.class, sheets);
         XSpreadsheet sheet = UnoRuntime.queryInterface(
-            XSpreadsheet.class, sheets.getByIndex(0));
+            XSpreadsheet.class, indexAccess.getByIndex(0));
         return sheet.getCellByPosition(column, row);
     }
 
@@ -250,8 +253,10 @@ public abstract class VbaCompatTest {
      */
     protected XCellRange getRangeByAddress(String address) throws Exception {
         XSpreadsheets sheets = document.getSheets();
+        XIndexAccess indexAccess = UnoRuntime.queryInterface(
+            XIndexAccess.class, sheets);
         XSpreadsheet sheet = UnoRuntime.queryInterface(
-            XSpreadsheet.class, sheets.getByIndex(0));
+            XSpreadsheet.class, indexAccess.getByIndex(0));
         return sheet.getCellRangeByName(address);
     }
 
@@ -261,13 +266,13 @@ public abstract class VbaCompatTest {
      */
     protected void clearResultRow() throws Exception {
         for (int c = 0; c < 10; c++) {
-            getCell(c, 0).setString("");
+            getCell(c, 0).setFormula("");
             getCell(c, 0).setValue(0.0);
         }
         for (int c = 24; c < 30; c++) {
-            getCell(c, 0).setString("");
+            getCell(c, 0).setFormula("");
             getCell(c, 0).setValue(0.0);
-            getCell(c, 1).setString("");
+            getCell(c, 1).setFormula("");
             getCell(c, 1).setValue(0.0);
         }
     }
@@ -283,7 +288,7 @@ public abstract class VbaCompatTest {
      * Reads a string result from the AA column (column 26).
      */
     protected String getStringResult(int row) throws Exception {
-        return getCell(26, row).getString();
+        return getCell(26, row).getFormula();
     }
 
     /**
@@ -297,7 +302,7 @@ public abstract class VbaCompatTest {
      * Reads the string result from cell AA1 (column 26, row 0).
      */
     protected String getResultAsString() throws Exception {
-        return getCell(26, 0).getString();
+        return getCell(26, 0).getFormula();
     }
 
     private void cleanupTempFiles() {
