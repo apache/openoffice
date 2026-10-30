@@ -449,6 +449,19 @@ SbxObject* SbiFactory::CreateObject( const String& rClass )
         catch( Exception& )
         {}
     }
+    else
+    if( rClass.EqualsIgnoreCaseAscii( "Scripting.Dictionary" ) )
+    {
+        try
+        {
+            Reference< XMultiServiceFactory > xFactory( comphelper::getProcessServiceFactory(), UNO_SET_THROW );
+            ::rtl::OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "ooo.vba.scripting.Dictionary" ) );
+            Reference< XInterface > xInterface( xFactory->createInstance( aServiceName ), UNO_SET_THROW );
+            return new SbUnoObject( aServiceName, uno::makeAny( xInterface ) );
+        }
+        catch( Exception& )
+        {}
+    }
 
     return NULL;
 }

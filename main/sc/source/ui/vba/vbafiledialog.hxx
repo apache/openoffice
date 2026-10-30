@@ -85,7 +85,6 @@ private:
     rtl::OUString m_sTitle;
     sal_Bool m_bAllowMultiSelect;
     css::uno::Sequence< rtl::OUString > m_sSelectedItems;
-    css::uno::Reference< css::frame::XModel > m_xModel;
     VbaFileDialogSelectedItems *m_pSelectedItems;
     VbaFileDialogSelectedObj m_FileDialogSelectedObj;
 };

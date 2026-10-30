@@ -122,6 +122,7 @@ $(eval $(call gb_Library_add_exception_objects,vbaobj,\
 	sc/source/ui/vba/vbaworksheet \
 	sc/source/ui/vba/vbaworksheets \
 	sc/source/ui/vba/vbawsfunction \
+	sc/source/ui/vba/vbadictionary \
 	sc/source/ui/vba/vbafiledialog \
 	sc/source/ui/vba/vbafiledialogselecteditems \
 	sc/source/ui/vba/vbafilesearch \

@@ -32,7 +32,7 @@
 #include <com/sun/star/sheet/XCalculatable.hpp>
 #include <com/sun/star/frame/XLayoutManager.hpp>
 #include <com/sun/star/frame/XModel.hpp>
-#include <com/sun/star/script/XScript.hpp>
+#include <com/sun/star/script/provider/XScript.hpp>
 #include <com/sun/star/script/provider/XScriptProvider.hpp>
 #include <com/sun/star/script/provider/XScriptProviderSupplier.hpp>
 #include <com/sun/star/task/XStatusIndicatorSupplier.hpp>
@@ -226,7 +226,7 @@ sal_Bool SAL_CALL
 ScVbaApplication::hasMethod( const ::rtl::OUString& Name )
 {
     // Application.Run is implemented as a typed method on XApplication
-    if( Name.equalsIgnoreAsciiCase( "Run" ) )
+    if( Name.equalsIgnoreAsciiCaseAscii( "Run" ) )
         return sal_True;
     uno::Reference< script::XInvocation > xWSF( new ScVbaWSFunction( this, mxContext ) );
     return xWSF->hasMethod( Name );
@@ -1513,7 +1513,7 @@ ScVbaApplication::Run( const rtl::OUString& rMacroName, const uno::Any& Arg1, co
             rtl::OUString::createFromAscii("?language=Basic&location=document");
 
         // Get the script
-        uno::Reference< script::XScript > xScript = xScriptProvider->getScript( sScriptURI );
+        uno::Reference< script::provider::XScript > xScript = xScriptProvider->getScript( sScriptURI );
         if( !xScript.is() )
             throw script::BasicErrorException( ::rtl::OUString(), uno::Reference< uno::XInterface >(), 1000, ::rtl::OUString() );
 

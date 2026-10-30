@@ -1746,7 +1746,7 @@ ScVbaRange::getValue2()
 	if ( m_Areas->getCount() > 1 )
 	{
 		uno::Reference< excel::XRange > xRange( getArea( 0 ), uno::UNO_QUERY_THROW );
-		return xRange->getValue2();
+                return xRange->getValue();
 	}
 
 	CellValueGetter2 valueGetter;
