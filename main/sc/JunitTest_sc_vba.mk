@@ -41,6 +41,11 @@ $(eval $(call gb_JunitTest_add_sourcefiles,sc_vba,\
 	sc/qa/vba/src/VbaQueryTableTest \
 	sc/qa/vba/src/VbaRangeTest \
 	sc/qa/vba/src/VbaDictionaryTest \
+	sc/qa/vba/src/VbaSapColumnOpsTest \
+	sc/qa/vba/src/VbaSapFeatureGapsTest \
+	sc/qa/vba/src/VbaSapRangeOpsTest \
+	sc/qa/vba/src/VbaSapOutlineTest \
+	sc/qa/vba/src/VbaSapStringTest \
 ))
 
 $(eval $(call gb_JunitTest_add_classes,sc_vba,\
@@ -51,6 +56,11 @@ $(eval $(call gb_JunitTest_add_classes,sc_vba,\
 	org.openoffice.sc.qa.vba.VbaQueryTableTest \
 	org.openoffice.sc.qa.vba.VbaRangeTest \
 	org.openoffice.sc.qa.vba.VbaDictionaryTest \
+	org.openoffice.sc.qa.vba.VbaSapColumnOpsTest \
+	org.openoffice.sc.qa.vba.VbaSapFeatureGapsTest \
+	org.openoffice.sc.qa.vba.VbaSapRangeOpsTest \
+	org.openoffice.sc.qa.vba.VbaSapOutlineTest \
+	org.openoffice.sc.qa.vba.VbaSapStringTest \
 ))
 
 # vim: set noet sw=4 ts=4:
