@@ -156,6 +156,7 @@ class XMLOFF_DLLPUBLIC SvXMLNumFormatContext : public SvXMLStyleContext
 	rtl::OUStringBuffer	aFormatCode;
 	rtl::OUStringBuffer	aConditions;
 	sal_Bool			bHasLongDoW;
+	sal_Bool			bHasFillChar;
 	sal_Bool			bHasEra;
 	sal_Bool			bHasDateTime;
 	sal_Bool			bRemoveAfterUse;
@@ -203,6 +204,8 @@ public:
 	sal_Bool IsFromSystem() const					{ return bFromSystem; }
 	sal_Bool HasLongDoW() const						{ return bHasLongDoW; }
 	void SetHasLongDoW(sal_Bool bSet)				{ bHasLongDoW = bSet; }
+	sal_Bool HasFillChar() const					{ return bHasFillChar; }
+	void SetHasFillChar()							{ bHasFillChar = sal_True; }
 	sal_Bool HasEra() const							{ return bHasEra; }
 	void SetHasEra(sal_Bool bSet)					{ bHasEra = bSet; }
 

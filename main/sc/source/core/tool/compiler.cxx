@@ -885,6 +885,21 @@ struct ConventionOOO_A1 : public Convention_A1
         aRef.Ref1.CalcAbsIfRel( rComp.GetPos() );
         if( !bSingleRef )
             aRef.Ref2.CalcAbsIfRel( rComp.GetPos() );
+        if (bODF)
+        {
+            // OpenFormula has no spelling for a part of a reference that was deleted: the whole reference is [#REF!]
+            bool bBroken = aRef.Ref1.IsColDeleted() || aRef.Ref1.IsRowDeleted() ||
+                    (aRef.Ref1.IsFlag3D() && aRef.Ref1.IsTabDeleted());
+            if (!bSingleRef)
+                bBroken = bBroken || aRef.Ref2.IsColDeleted() || aRef.Ref2.IsRowDeleted() ||
+                        ((aRef.Ref2.IsFlag3D() || aRef.Ref2.nTab != aRef.Ref1.nTab) && aRef.Ref2.IsTabDeleted());
+            if (bBroken)
+            {
+                rBuffer.append(ScGlobal::GetRscString(STR_NO_REF_TABLE));
+                rBuffer.append(sal_Unicode(']'));
+                return;
+            }
+        }
         if( aRef.Ref1.IsFlag3D() )
         {
             if (aRef.Ref1.IsTabDeleted())
@@ -2290,7 +2305,8 @@ Label_MaskStateMachine:
                     bool bAddToSymbol = true;
                     if ((nMask & SC_COMPILER_C_ODF_RBRACKET) && !(nRefInName & kOpen))
                     {
-                        DBG_ASSERT( nRefInName & (kPast | kDefName),
+                        DBG_ASSERT( (nRefInName & (kPast | kDefName)) || (pSym - cSymbol == 5 &&
+                                cSymbol[0] == '#' && cSymbol[1] == 'R' && cSymbol[2] == 'E' && cSymbol[3] == 'F' && cSymbol[4] == '!'),
                                 "ScCompiler::NextSymbol: reference: "
                                 "closing bracket ']' without prior sheet name separator '.' violates ODF spec");
                         // eaten, not added to pSym
@@ -3580,6 +3596,23 @@ sal_Bool ScCompiler::NextNewToken( bool bInArray )
     if (mnPredetectedReference)
     {
         String aStr( cSymbol);
+        if (aStr.EqualsAscii( "#REF!"))
+        {
+            // [#REF!], what ODF writes for a broken reference, is a deleted reference
+            ScSingleRefData aRef;
+            aRef.InitMembers();
+            aRef.InitAddress( MAXCOL+1, MAXROW+1, MAXTAB+3);    // out of range, as for an invalid reference
+            aRef.SetColRel( sal_True);
+            aRef.SetRowRel( sal_True);
+            aRef.SetColDeleted( sal_True);
+            aRef.SetRowDeleted( sal_True);
+            aRef.SetTabDeleted( sal_True);
+            aRef.CalcRelFromAbs( aPos);
+            ScRawToken aToken;
+            aToken.SetSingleReference( aRef);
+            pRawToken = aToken.Clone();
+            return true;
+        }
         if (!IsPredetectedReference( aStr) && !IsExternalNamedRange( aStr))
         {
             /* TODO: it would be nice to generate a #REF! error here, which

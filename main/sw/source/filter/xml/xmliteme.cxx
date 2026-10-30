@@ -238,12 +238,17 @@ void SwXMLExport::_InitItemExport()
 
 	pTableItemMapper = new SwXMLTableItemMapper_Impl( xTableItemMap, *this );
 
-    if( getDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+    if( SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
     {
         _GetNamespaceMap().Add(
             GetXMLToken(XML_NP_TEXT_EXT),
             GetXMLToken(XML_N_TEXT_EXT),
             XML_NAMESPACE_TEXT_EXT);
+        // shapes carry drawooo:display
+        _GetNamespaceMap().Add(
+            GetXMLToken(XML_NP_DRAW_EXT),
+            GetXMLToken(XML_N_DRAW_EXT),
+            XML_NAMESPACE_DRAW_EXT);
     }
 }
 

@@ -1709,7 +1709,7 @@ bool DiagramHelper::switchDiagramPositioningToExcludingPositioning(
 {
     //return true if something was changed
     const SvtSaveOptions::ODFDefaultVersion nCurrentODFVersion( SvtSaveOptions().GetODFDefaultVersion() );
-    if( nCurrentODFVersion == SvtSaveOptions::ODFVER_LATEST )//#i100778# todo: change this dependent on fileformat evolution
+    if( SvtSaveOptions::IsODFExtended( nCurrentODFVersion ) )//#i100778# todo: change this dependent on fileformat evolution
     {
         uno::Reference< ::com::sun::star::chart::XChartDocument > xOldDoc( xChartModel, uno::UNO_QUERY ) ;
         if( xOldDoc.is() )

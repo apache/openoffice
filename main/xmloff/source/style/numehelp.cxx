@@ -189,33 +189,32 @@ void XMLNumberFormatAttributesExportHelper::WriteAttributes(SvXMLExport& rXMLExp
 		break;
 	case util::NumberFormat::LOGICAL:
 		{
+			const sal_Bool bIsTrue = ::rtl::math::approxEqual( rValue, 1.0 );
+			const sal_Bool bIsFalse = ::rtl::math::approxEqual( rValue, 0.0 );
+			const sal_Bool bAsFloat = bExportValue && !bIsTrue && !bIsFalse;
 			if (!bWasSetTypeAttribute)
 			{
-				rXMLExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_VALUE_TYPE, XML_BOOLEAN);
+				rXMLExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_VALUE_TYPE, bAsFloat ? XML_FLOAT : XML_BOOLEAN);
 				bWasSetTypeAttribute = sal_True;
 			}
 			if (bExportValue)
 			{
-				double fTempValue = rValue;
-				if (::rtl::math::approxEqual( fTempValue, 1.0 ))
+				if (bIsTrue)
 				{
 					rXMLExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_BOOLEAN_VALUE, XML_TRUE);
 				}
+				else if (bIsFalse)
+				{
+					rXMLExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_BOOLEAN_VALUE, XML_FALSE);
+				}
 				else
 				{
-					if (::rtl::math::approxEqual( rValue, 0.0 ))
-					{
-						rXMLExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_BOOLEAN_VALUE, XML_FALSE);
-					}
-					else
-					{
-                        rtl::OUString sValue( ::rtl::math::doubleToUString(
-                                    fTempValue,
-                                    rtl_math_StringFormat_Automatic,
-                                    rtl_math_DecimalPlaces_Max, '.',
-                                    sal_True));
-						rXMLExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_BOOLEAN_VALUE, sValue);
-					}
+					rtl::OUString sValue( ::rtl::math::doubleToUString(
+								rValue,
+								rtl_math_StringFormat_Automatic,
+								rtl_math_DecimalPlaces_Max, '.',
+								sal_True));
+					rXMLExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_VALUE, sValue);
 				}
 			}
 		}
@@ -472,33 +471,32 @@ void XMLNumberFormatAttributesExportHelper::WriteAttributes(
 		break;
 	case util::NumberFormat::LOGICAL:
 		{
+			const sal_Bool bIsTrue = ::rtl::math::approxEqual( rValue, 1.0 );
+			const sal_Bool bIsFalse = ::rtl::math::approxEqual( rValue, 0.0 );
+			const sal_Bool bAsFloat = bExportValue && !bIsTrue && !bIsFalse;
 			if (!bWasSetTypeAttribute)
 			{
-				pExport->AddAttribute(sAttrValueType, XML_BOOLEAN);
+				pExport->AddAttribute(sAttrValueType, bAsFloat ? XML_FLOAT : XML_BOOLEAN);
 				bWasSetTypeAttribute = sal_True;
 			}
 			if (bExportValue)
 			{
-				double fTempValue = rValue;
-				if (::rtl::math::approxEqual( fTempValue, 1.0 ))
+				if (bIsTrue)
 				{
 					pExport->AddAttribute(sAttrBooleanValue, XML_TRUE);
 				}
+				else if (bIsFalse)
+				{
+					pExport->AddAttribute(sAttrBooleanValue, XML_FALSE);
+				}
 				else
 				{
-					if (::rtl::math::approxEqual( rValue, 0.0 ))
-					{
-						pExport->AddAttribute(sAttrBooleanValue, XML_FALSE);
-					}
-					else
-					{
-                        rtl::OUString sValue( ::rtl::math::doubleToUString(
-                                    fTempValue,
-                                    rtl_math_StringFormat_Automatic,
-                                    rtl_math_DecimalPlaces_Max, '.',
-                                    sal_True));
-						pExport->AddAttribute(sAttrBooleanValue, sValue);
-					}
+					rtl::OUString sValue( ::rtl::math::doubleToUString(
+								rValue,
+								rtl_math_StringFormat_Automatic,
+								rtl_math_DecimalPlaces_Max, '.',
+								sal_True));
+					pExport->AddAttribute(sAttrValue, sValue);
 				}
 			}
 		}

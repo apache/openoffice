@@ -494,7 +494,7 @@
 <embed href="text/shared/00/00000001.xhp#regulaer"/>
 <paragraph xml-lang="en-US" id="hd_id3156099" role="heading" level="3" l10n="U">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153218" role="code" l10n="U">DCOUNT(Database; DatabaseField; SearchCriteria)</paragraph>
-<paragraph xml-lang="en-US" id="par_id3153273" role="paragraph" l10n="U">For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href="text/scalc/01/04060101.xhp#quotes"/>
+<paragraph xml-lang="en-US" id="par_id3153273" role="paragraph" l10n="U">For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter can be left empty, as in DCOUNT(A1:E10;;A13:E14); the function then counts all rows that match the search criteria. <embedvar href="text/scalc/01/04060101.xhp#quotes"/>
 </paragraph>
 <paragraph xml-lang="en-US" id="hd_id3154743" role="heading" level="3" l10n="U">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153623" role="paragraph" l10n="U">In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type="input">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges.</paragraph>

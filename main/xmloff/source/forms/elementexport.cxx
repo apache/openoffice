@@ -96,6 +96,27 @@ namespace xmloff
 	using namespace ::com::sun::star::text;
     using namespace ::com::sun::star::form::binding;
 
+    namespace
+    {
+        // PTnnHnnMnn[.f]S -> nn:nn:nn[.f], keeping the digits of the duration; anything else is left alone
+        ::rtl::OUString lcl_durationToXsdTime( const ::rtl::OUString& _rDuration )
+        {
+            const sal_Int32 nLen = _rDuration.getLength();
+            const sal_Int32 nH = _rDuration.indexOf( sal_Unicode( 'H' ) );
+            const sal_Int32 nM = _rDuration.indexOf( sal_Unicode( 'M' ) );
+            if ( !_rDuration.matchAsciiL( "PT", 2 ) || nH < 3 || nM < nH + 2 || nLen < nM + 3
+                || _rDuration.getStr()[ nLen - 1 ] != sal_Unicode( 'S' ) )
+                return _rDuration;
+
+            ::rtl::OUStringBuffer aBuffer( _rDuration.copy( 2, nH - 2 ) );
+            aBuffer.append( sal_Unicode( ':' ) );
+            aBuffer.append( _rDuration.copy( nH + 1, nM - nH - 1 ) );
+            aBuffer.append( sal_Unicode( ':' ) );
+            aBuffer.append( _rDuration.copy( nM + 1, nLen - nM - 2 ) );
+            return aBuffer.makeStringAndClear();
+        }
+    }
+
 	//=====================================================================
 	//= OElementExport
 	//=====================================================================
@@ -510,6 +531,16 @@ namespace xmloff
 
                     const Any propValue = m_xProps->getPropertyValue( prop->Name );
                     attributeValue = handler->getAttributeValue( propValue );
+
+                    // ODF 1.2 wants xsd:time for the time controls
+                    if  (   SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() )
+                        &&  (   propDescription->propertyId == PID_TIME_MIN
+                            ||  propDescription->propertyId == PID_TIME_MAX
+                            ||  propDescription->propertyId == PID_DEFAULT_TIME
+                            ||  propDescription->propertyId == PID_TIME
+                            )
+                        )
+                        attributeValue = lcl_durationToXsdTime( attributeValue );
                 }
                 else
                 {
@@ -711,6 +742,18 @@ namespace xmloff
 
             if ( m_nIncludeCommon & CCA_VISUAL_EFFECT )
             {
+				// strict ODF 1.2 knows only flat and 3d: NONE is written as flat
+				sal_Int16 nVisualEffect = VisualEffect::LOOK3D;
+				m_xProps->getPropertyValue( PROPERTY_VISUAL_EFFECT ) >>= nVisualEffect;
+				if ( SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) && VisualEffect::NONE == nVisualEffect )
+				{
+					AddAttributeASCII(
+						OAttributeMetaData::getCommonControlAttributeNamespace( CCA_VISUAL_EFFECT ),
+						OAttributeMetaData::getCommonControlAttributeName( CCA_VISUAL_EFFECT ),
+						"flat" );
+					exportedProperty( PROPERTY_VISUAL_EFFECT );
+				}
+				else
 				exportEnumPropertyAttribute(
 					OAttributeMetaData::getCommonControlAttributeNamespace( CCA_VISUAL_EFFECT ),
 					OAttributeMetaData::getCommonControlAttributeName( CCA_VISUAL_EFFECT ),
@@ -839,7 +882,8 @@ namespace xmloff
 
 			OSL_ENSURE((NULL == pValuePropertyName) == (0 == (CCA_VALUE & m_nIncludeCommon)),
 				"OControlExport::exportCommonControlAttributes: no property found for the value attribute!");
-			OSL_ENSURE((NULL == pCurrentValuePropertyName ) == (0 == (CCA_CURRENT_VALUE & m_nIncludeCommon)),
+			OSL_ENSURE((NULL == pCurrentValuePropertyName ) == (0 == (CCA_CURRENT_VALUE & m_nIncludeCommon)) ||
+				( VALUERANGE == m_eType && SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) ),
 				"OControlExport::exportCommonControlAttributes: no property found for the current-value attribute!");
 
 		#if OSL_DEBUG_LEVEL > 0
@@ -873,6 +917,10 @@ namespace xmloff
         // InputRequired
         if ( DA_INPUT_REQUIRED & m_nIncludeDatabase )
         {
+            // form:input-required is an ODF 1.4 attribute
+            if ( SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) )
+                exportedProperty( PROPERTY_INPUT_REQUIRED );
+            else
             exportBooleanPropertyAttribute(
                 OAttributeMetaData::getDatabaseAttributeNamespace( DA_INPUT_REQUIRED ),
                 OAttributeMetaData::getDatabaseAttributeName( DA_INPUT_REQUIRED ),
@@ -1471,7 +1519,9 @@ namespace xmloff
                     m_eType = TIME;
                     knownType = true;
                 }
-				m_nIncludeSpecial |= SCA_VALIDATION;
+				// form:validation is allowed on form:formatted-text only in ODF 1.2
+				if ( !SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) )
+					m_nIncludeSpecial |= SCA_VALIDATION;
                 // NO BREAK
 			case FormComponentType::NUMERICFIELD:
 			case FormComponentType::CURRENCYFIELD:
@@ -1707,7 +1757,10 @@ namespace xmloff
 				m_eType = VALUERANGE;
 				m_nIncludeCommon =
 					CCA_NAME | CCA_SERVICE_NAME | CCA_DISABLED | CCA_PRINTABLE |
-                    CCA_TITLE | CCA_CURRENT_VALUE | CCA_VALUE | CCA_ORIENTATION;
+                    CCA_TITLE | CCA_VALUE | CCA_ORIENTATION;
+				// form:current-value is not allowed on form:value-range in ODF 1.2
+				if ( !SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) )
+					m_nIncludeCommon |= CCA_CURRENT_VALUE;
                 m_nIncludeSpecial = SCA_MAX_VALUE | SCA_STEP_SIZE | SCA_MIN_VALUE | SCA_REPEAT_DELAY;
 
                 if ( m_nClassId == FormComponentType::SCROLLBAR )
@@ -1766,7 +1819,9 @@ namespace xmloff
         }
 
         // is (list-)control bound to XForms list?
-        if( getXFormsListBindName( m_xProps ).getLength() > 0 )
+        if( getXFormsListBindName( m_xProps ).getLength() > 0 &&
+            ( m_eType != COMBOBOX || m_rContext.getGlobalContext().getDefaultVersion() < SvtSaveOptions::ODFVER_010 ||
+              SvtSaveOptions::IsODFExtended( m_rContext.getGlobalContext().getDefaultVersion() ) ) )
         {
             m_nIncludeBindings |= BA_XFORMS_LISTBIND;
         }
@@ -2081,6 +2136,16 @@ namespace xmloff
 	//---------------------------------------------------------------------
 	void OFormExport::exportSubTags()
 	{
+		// let the base class export the remaining properties and the events
+		OElementExport::exportSubTags();
+		// loop through all children
+		Reference< XIndexAccess > xCollection(m_xProps, UNO_QUERY);
+		OSL_ENSURE(xCollection.is(), "OFormLayerXMLExport::implExportForm: a form which is not an index access? Suspic�ous!");
+
+		if (xCollection.is())
+			m_rContext.exportCollectionElements(xCollection);
+
+		// the schema wants connection-resource after the controls
 		if ( m_bCreateConnectionResourceElement && m_xProps.is() )
 		{
 			m_rContext.getGlobalContext().ClearAttrList();
@@ -2098,15 +2163,6 @@ namespace xmloff
 				SvXMLElementExport aFormElement(m_rContext.getGlobalContext(), XML_NAMESPACE_FORM, xmloff::token::XML_CONNECTION_RESOURCE, sal_True, sal_True);
 			}
 		}
-
-		// let the base class export the remaining properties and the events
-		OElementExport::exportSubTags();
-		// loop through all children
-		Reference< XIndexAccess > xCollection(m_xProps, UNO_QUERY);
-		OSL_ENSURE(xCollection.is(), "OFormLayerXMLExport::implExportForm: a form which is not an index access? Suspic�ous!");
-
-		if (xCollection.is())
-			m_rContext.exportCollectionElements(xCollection);
 	}
 
 	//---------------------------------------------------------------------

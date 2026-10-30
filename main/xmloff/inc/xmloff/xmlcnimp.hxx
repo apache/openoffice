@@ -121,4 +121,6 @@ inline const ::rtl::OUString& SvXMLAttrContainerData::GetPrefix( sal_uInt16 i ) 
 	return aNamespaceMap.GetPrefixByIndex( i );
 }
 
+XMLOFF_DLLPUBLIC sal_Bool SvXMLIsODFNamespace( const ::rtl::OUString& rNamespace );
+
 #endif

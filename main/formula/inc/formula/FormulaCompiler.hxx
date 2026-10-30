@@ -319,7 +319,12 @@ private:
 
     static inline void ForceArrayOperator( FormulaTokenRef& rCurr, const FormulaTokenRef& rPrev )
         {
-            if ( rPrev.Is() && rPrev->HasForceArray() &&
+            // ODF 1.3: the lookup and regression functions take array-mode arguments, but only the tokens nested in them
+            // are marked, not the function itself. A bare reference in a scalar parameter keeps the implicit intersection;
+            // an operator or function nested in that parameter is array-evaluated too.
+            if ( rPrev.Is() && ( rPrev->HasForceArray() || ( rPrev.get() != rCurr.get() && ( rPrev->GetOpCode() == ocHLookup ||
+                        rPrev->GetOpCode() == ocVLookup || rPrev->GetOpCode() == ocMatch || rPrev->GetOpCode() == ocRGP ||
+                        rPrev->GetOpCode() == ocRKP ) ) ) &&
                     rCurr->GetType() == svByte && rCurr->GetOpCode() != ocPush
                     && !rCurr->HasForceArray() )
                 rCurr->SetForceArray( true);

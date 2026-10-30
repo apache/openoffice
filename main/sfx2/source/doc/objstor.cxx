@@ -374,7 +374,8 @@ void SfxObjectShell::SetupStorage( const uno::Reference< embed::XStorage >& xSto
                     try
                     {
                         // older versions can not have this property set, it exists only starting from ODF1.2
-                        xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ), uno::makeAny( ODFVER_012_TEXT ) );
+                        xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ),
+                            nDefVersion >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
                     }
                     catch( uno::Exception& )
                     {
@@ -856,8 +857,8 @@ sal_Bool SfxObjectShell::DoLoad( SfxMedium *pMed )
                 if ( sVersion.getLength() )
                 {
                     double nVersion = sVersion.toDouble();
-                    if ( nVersion > 1.20001  && SfxObjectShell_Impl::NeedsOfficeUpdateDialog() )
-                        // ODF version greater than 1.2 - added some decimal places to be safe against floating point conversion errors (hack)
+                    if ( nVersion > 1.30001  && SfxObjectShell_Impl::NeedsOfficeUpdateDialog() )
+                        // ODF version greater than 1.3 - added some decimal places to be safe against floating point conversion errors (hack)
                     {
                         ::rtl::OUString sDocumentURL( pMedium->GetOrigURL() );
                         ::rtl::OUString aSystemFileURL;
@@ -1211,7 +1212,7 @@ sal_Bool SfxObjectShell::SaveTo_Impl
             bTryToPreserveScriptSignature = pMedium->GetFilter() && pFilter && pMedium->GetFilter()->GetFilterName() == pFilter->GetFilterName();
 
             bNoPreserveForOasis = (
-                                   (aODFVersion.equals( ODFVER_012_TEXT ) && nVersion == SvtSaveOptions::ODFVER_011) ||
+                                   (aODFVersion.compareTo( ODFVER_012_TEXT ) >= 0 && nVersion == SvtSaveOptions::ODFVER_011) ||
                                    (!aODFVersion.getLength() && nVersion >= SvtSaveOptions::ODFVER_012)
                                   );
         }
@@ -1392,6 +1393,20 @@ sal_Bool SfxObjectShell::SaveTo_Impl
 
                     xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "MediaType" ),
                                             uno::makeAny( aDataFlavor.MimeType ) );
+
+                    // manifest:version is taken from the storage; SetupStorage is not called on this path
+                    SvtSaveOptions aSaveOpt;
+                    if ( aSaveOpt.GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_012 )
+                    {
+                        try
+                        {
+                            xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ),
+                                aSaveOpt.GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
+                        }
+                        catch( uno::Exception& )
+                        {
+                        }
+                    }
                 }
                 catch( uno::Exception& )
                 {

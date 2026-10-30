@@ -2584,20 +2584,9 @@ void ScInterpreter::ScFTest()
         PushNoValue();
         return;
     }
-    double fF, fF1, fF2;
-    if (fS1 > fS2)
-    {
-        fF = fS1/fS2;
-        fF1 = fCount1-1.0;
-        fF2 = fCount2-1.0;
-    }
-    else
-    {
-        fF = fS2/fS1;
-        fF1 = fCount2-1.0;
-        fF2 = fCount1-1.0;
-    }
-    PushDouble(2.0*GetFDist(fF, fF1, fF2));
+    // ODF 1.3: two-tailed, from the right tail of F(n1-1, n2-1) beyond the ratio of the first to the second variance
+    double fRightTail = GetFDist(fS1/fS2, fCount1-1.0, fCount2-1.0);
+    PushDouble(2.0*(fRightTail < 0.5 ? fRightTail : 1.0-fRightTail));
 /*
     double Z = (pow(fF,1.0/3.0)*(1.0-2.0/(9.0*fF2)) - (1.0-2.0/(9.0*fF1))) /
                sqrt(2.0/(9.0*fF1) + pow(fF,2.0/3.0)*2.0/(9.0*fF2));

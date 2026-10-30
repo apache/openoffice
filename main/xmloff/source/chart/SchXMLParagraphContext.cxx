@@ -88,24 +88,66 @@ void SchXMLParagraphContext::EndElement()
     mrText = maBuffer.makeStringAndClear();
 }
 
+namespace
+{
+SvXMLImportContext* lcl_CreateTextChild( SvXMLImport& rImport, sal_uInt16 nPrefix,
+                                         const OUString& rLocalName, ::rtl::OUStringBuffer& rBuffer );
+
+// text:span: its text belongs to the surrounding paragraph
+class SchXMLSpanContext : public SvXMLImportContext
+{
+    ::rtl::OUStringBuffer& mrBuffer;
+
+public:
+    SchXMLSpanContext( SvXMLImport& rImport, sal_uInt16 nPrefix, const OUString& rLocalName,
+                       ::rtl::OUStringBuffer& rBuffer ) :
+        SvXMLImportContext( rImport, nPrefix, rLocalName ),
+        mrBuffer( rBuffer )
+    {
+    }
+
+    virtual SvXMLImportContext* CreateChildContext( sal_uInt16 nPrefix, const OUString& rLocalName,
+                                                    const uno::Reference< xml::sax::XAttributeList >& )
+    {
+        return lcl_CreateTextChild( GetImport(), nPrefix, rLocalName, mrBuffer );
+    }
+
+    virtual void Characters( const OUString& rChars )
+    {
+        mrBuffer.append( rChars );
+    }
+};
+
+SvXMLImportContext* lcl_CreateTextChild( SvXMLImport& rImport, sal_uInt16 nPrefix,
+                                         const OUString& rLocalName, ::rtl::OUStringBuffer& rBuffer )
+{
+	if( nPrefix == XML_NAMESPACE_TEXT )
+	{
+		if( rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_TAB_STOP )) ||
+			rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_TAB )))
+        {
+            rBuffer.append( sal_Unicode( 0x0009 ));  // tabulator
+        }
+        else if( rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_LINE_BREAK )))
+        {
+            rBuffer.append( sal_Unicode( 0x000A ));  // linefeed
+        }
+        else if( rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_SPAN )))
+        {
+            return new SchXMLSpanContext( rImport, nPrefix, rLocalName, rBuffer );
+        }
+    }
+
+	return new SvXMLImportContext( rImport, nPrefix, rLocalName );
+}
+}
+
 SvXMLImportContext* SchXMLParagraphContext::CreateChildContext(
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
     const uno::Reference< xml::sax::XAttributeList >& )
 {
-	if( nPrefix == XML_NAMESPACE_TEXT )
-	{
-		if( rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_TAB_STOP )))
-        {
-            maBuffer.append( sal_Unicode( 0x0009 ));  // tabulator
-        }
-        else if( rLocalName.equals( ::xmloff::token::GetXMLToken( ::xmloff::token::XML_LINE_BREAK )))
-        {
-            maBuffer.append( sal_Unicode( 0x000A ));  // linefeed
-        }
-    }
-
-	return new SvXMLImportContext( GetImport(), nPrefix, rLocalName );
+    return lcl_CreateTextChild( GetImport(), nPrefix, rLocalName, maBuffer );
 }
 
 void SchXMLParagraphContext::Characters( const OUString& rChars )

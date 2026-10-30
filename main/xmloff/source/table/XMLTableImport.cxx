@@ -32,6 +32,7 @@
 #include <com/sun/star/text/XText.hpp>
 #include <com/sun/star/container/XNameContainer.hpp>
 #include <com/sun/star/lang/XSingleServiceFactory.hpp>
+#include <com/sun/star/drawing/FillStyle.hpp>
 
 #include "xmloff/table/XMLTableImport.hxx"
 #include "xmloff/xmltkmap.hxx"
@@ -204,6 +205,42 @@ SvXMLImportContext * XMLProxyContext::CreateChildContext( sal_uInt16 nPrefix, co
 }
 
 // --------------------------------------------------------------------
+
+// fo:background-color in style:table-cell-properties is a solid fill; chained before the text mapper, whose finished() ends the chain
+class XMLTableCellImportPropertyMapper : public SvXMLImportPropertyMapper
+{
+public:
+	XMLTableCellImportPropertyMapper( const UniReference< XMLPropertySetMapper >& rMapper, SvXMLImport& rImport ) : SvXMLImportPropertyMapper( rMapper, rImport ) {}
+
+	virtual void finished( ::std::vector< XMLPropertyState >& rProperties, sal_Int32 nStartIndex, sal_Int32 nEndIndex ) const;
+};
+
+void XMLTableCellImportPropertyMapper::finished( ::std::vector< XMLPropertyState >& rProperties, sal_Int32 nStartIndex, sal_Int32 nEndIndex ) const
+{
+	bool bHasBackground = false;
+	bool bHasFillStyle = false;
+	for( ::std::vector< XMLPropertyState >::const_iterator aIter( rProperties.begin() ); aIter != rProperties.end(); ++aIter )
+	{
+		if( aIter->mnIndex == -1 )
+			continue;
+
+		if( ( maPropMapper->GetEntryFlags( aIter->mnIndex ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_TABLE_CELL )
+			bHasBackground = true;
+		else if( maPropMapper->GetEntryAPIName( aIter->mnIndex ).equalsAscii( "FillStyle" ) )
+			bHasFillStyle = true;
+	}
+
+	if( bHasBackground && !bHasFillStyle )
+	{
+		const sal_Int32 nFillStyle = maPropMapper->FindEntryIndex( "FillStyle", XML_NAMESPACE_DRAW, GetXMLToken( XML_FILL ) );
+		if( nFillStyle != -1 )
+			rProperties.push_back( XMLPropertyState( nFillStyle, Any( ::com::sun::star::drawing::FillStyle_SOLID ) ) );
+	}
+
+	SvXMLImportPropertyMapper::finished( rProperties, nStartIndex, nEndIndex );
+}
+
+// --------------------------------------------------------------------
 // class XMLTableImport
 // --------------------------------------------------------------------
 
@@ -211,6 +248,7 @@ XMLTableImport::XMLTableImport( SvXMLImport& rImport, const rtl::Reference< XMLP
 : mrImport( rImport )
 {
 	mxCellImportPropertySetMapper = new SvXMLImportPropertyMapper( xCellPropertySetMapper.get(), rImport );
+	mxCellImportPropertySetMapper->ChainImportMapper(new XMLTableCellImportPropertyMapper( new XMLPropertySetMapper( getCellPropertiesMap(), xFactoryRef.get() ), rImport ));
 	mxCellImportPropertySetMapper->ChainImportMapper(XMLTextImportHelper::CreateParaExtPropMapper(rImport));
 
 
@@ -773,7 +811,8 @@ void XMLTableTemplateContext::StartElement( const Reference< XAttributeList >& x
 	{
 		OUString sAttrName;
 		sal_uInt16 nAttrPrefix = GetImport().GetNamespaceMap().GetKeyByAttrName( xAttrList->getNameByIndex( i ), &sAttrName );
-		if( (nAttrPrefix == XML_NAMESPACE_TEXT ) && IsXMLToken( sAttrName, XML_STYLE_NAME ) )
+		if( ( (nAttrPrefix == XML_NAMESPACE_TEXT ) && IsXMLToken( sAttrName, XML_STYLE_NAME ) ) ||
+			( (nAttrPrefix == XML_NAMESPACE_TABLE ) && IsXMLToken( sAttrName, XML_NAME ) ) )
 		{
 			msTemplateStyleName = xAttrList->getValueByIndex( i );
 			break;
@@ -807,7 +846,7 @@ SvXMLImportContext * XMLTableTemplateContext::CreateChildContext( sal_uInt16 nPr
 			{
 				OUString sAttrName;
 				sal_uInt16 nAttrPrefix = GetImport().GetNamespaceMap().GetKeyByAttrName( xAttrList->getNameByIndex( i ), &sAttrName );
-				if( (nAttrPrefix == XML_NAMESPACE_TEXT) && IsXMLToken( sAttrName, XML_STYLE_NAME ) )
+				if( ( (nAttrPrefix == XML_NAMESPACE_TEXT) || (nAttrPrefix == XML_NAMESPACE_TABLE) ) && IsXMLToken( sAttrName, XML_STYLE_NAME ) )
 				{
 					maTableTemplate[pElements->msStyleName] = xAttrList->getValueByIndex( i );
 					break;

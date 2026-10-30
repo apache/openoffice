@@ -828,6 +828,7 @@ void ImpExportEnhancedGeometry( SvXMLExport& rExport, const uno::Reference< bean
 										com::sun::star::drawing::EnhancedCustomShapeTextPathMode eTextPathMode;
 										if ( rProp.Value >>= eTextPathMode )
 										{
+											aStr = ::rtl::OUString();
 											switch ( eTextPathMode )
 											{
 												case com::sun::star::drawing::EnhancedCustomShapeTextPathMode_NORMAL: aStr = GetXMLToken( XML_NORMAL ); break;
@@ -925,6 +926,7 @@ void ImpExportEnhancedGeometry( SvXMLExport& rExport, const uno::Reference< bean
 										sal_Int16 nGluePointType = sal_Int16();
 										if ( rProp.Value >>= nGluePointType )
 										{
+											aStr = ::rtl::OUString();	// don't write a stale value for CUSTOM
 											switch ( nGluePointType )
 											{
 												case com::sun::star::drawing::EnhancedCustomShapeGluePointType::NONE     : aStr = GetXMLToken( XML_NONE );    break;
@@ -1070,7 +1072,8 @@ void XMLShapeExport::ImpExportCustomShape(
 			if ( xPropSetInfo->hasPropertyByName( sCustomShapeEngine ) )
 			{
 				uno::Any aEngine( xPropSet->getPropertyValue( sCustomShapeEngine ) );
-				if ( ( aEngine >>= aStr ) && aStr.getLength() )
+				// draw:engine must be a QName; an empty engine selects the built-in one (svdoashp.cxx)
+				if ( ( aEngine >>= aStr ) && aStr.getLength() && !aStr.equalsAscii( "com.sun.star.drawing.EnhancedCustomShapeEngine" ) )
 					mrExport.AddAttribute( XML_NAMESPACE_DRAW, XML_ENGINE, aStr );
 			}
 			const rtl::OUString	sCustomShapeData( RTL_CONSTASCII_USTRINGPARAM( "CustomShapeData" ) );

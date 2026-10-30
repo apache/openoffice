@@ -218,6 +218,8 @@ void ScInterpreter::ScGetDayOfWeek()
         }
         else if (nFlag == 2)
             nVal += 1;
+        else if (nFlag >= 11 && nFlag <= 17)    // ODF 1.3: week starts on Monday (11) to Sunday (17), numbered 1-7
+            nVal = ((nVal + (18 - nFlag)) % 7) + 1;
         PushInt( nVal );
     }
 }

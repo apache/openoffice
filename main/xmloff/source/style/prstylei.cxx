@@ -37,6 +37,7 @@
 #include <com/sun/star/beans/XMultiPropertyStates.hpp>
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #include <xmloff/xmlimp.hxx>
+#include <xmloff/nmspmap.hxx>
 #include <xmloff/prstylei.hxx>
 #include <xmloff/attrlist.hxx>
 #include "xmloff/xmlerror.hxx"
@@ -169,6 +170,112 @@ const OldFillStyleDefinitionSet& XMLPropStyleContext::getParaSet()
     return maParaSet;
 }
 
+namespace
+{
+const sal_Char s_aExtGraphicNamespace[] = "urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0";
+
+// Keeps the fill only if it is usable and no earlier fill exists; otherwise the fallback attributes apply.
+class XMLExtParaFillContext : public SvXMLPropertySetContext
+{
+    const size_t mnFirst;
+
+    bool Exists( const Reference< XNameContainer >& rTable, sal_uInt16 nStyleFamily, const OUString& rName ) const
+    {
+        return rName.getLength() && rTable.is() &&
+            rTable->hasByName( GetImport().GetStyleDisplayName( nStyleFamily, rName ) );
+    }
+
+public:
+    XMLExtParaFillContext( SvXMLImport& rImport, sal_uInt16 nPrfx, const OUString& rLName,
+        const Reference< XAttributeList >& xAttrList, std::vector< XMLPropertyState >& rProps,
+        const UniReference< SvXMLImportPropertyMapper >& rMap, size_t nFirst )
+    :   SvXMLPropertySetContext( rImport, nPrfx, rLName, xAttrList, XML_TYPE_PROP_GRAPHIC, rProps, rMap ),
+        mnFirst( nFirst )
+    {
+    }
+
+    virtual void EndElement();
+};
+
+void XMLExtParaFillContext::EndElement()
+{
+    const UniReference< XMLPropertySetMapper > xMap( mxMapper->getPropertySetMapper() );
+    bool bNativeFill = false, bColor = false;
+    sal_Int32 nStyle = -1, nTransName = -1;
+    OUString aGradient, aHatch, aBitmap, aTrans;
+
+    for( size_t i = 0; i < mrProperties.size(); ++i )
+    {
+        const XMLPropertyState& rState = mrProperties[i];
+        if( rState.mnIndex == -1 )
+            continue;
+        const OUString& rName = xMap->GetEntryAPIName( rState.mnIndex );
+        if( rName.equalsAscii( "FillStyle" ) )
+        {
+            if( i < mnFirst )
+                bNativeFill = true;
+            else
+                nStyle = static_cast< sal_Int32 >( i );
+        }
+        else if( i >= mnFirst )
+        {
+            if( rName.equalsAscii( "FillColor" ) )
+                bColor = true;
+            else if( rName.equalsAscii( "FillGradientName" ) )
+                rState.maValue >>= aGradient;
+            else if( rName.equalsAscii( "FillHatchName" ) )
+                rState.maValue >>= aHatch;
+            else if( rName.equalsAscii( "FillBitmapName" ) )
+                rState.maValue >>= aBitmap;
+            else if( rName.equalsAscii( "FillTransparenceGradientName" ) )
+            {
+                rState.maValue >>= aTrans;
+                nTransName = static_cast< sal_Int32 >( i );
+            }
+        }
+    }
+
+    bool bUsable = false;
+    if( nStyle != -1 && !bNativeFill )
+    {
+        FillStyle eStyle = FillStyle_NONE;
+        sal_Int32 nValue = 0;
+        const Any& rAny = mrProperties[nStyle].maValue;
+        if( !( rAny >>= eStyle ) && ( rAny >>= nValue ) )
+            eStyle = static_cast< FillStyle >( nValue );
+        SvXMLImport& rImport = GetImport();
+        switch( eStyle )
+        {
+            case FillStyle_SOLID:
+                bUsable = bColor;
+                break;
+            case FillStyle_GRADIENT:
+                bUsable = Exists( rImport.GetGradientHelper(), XML_STYLE_FAMILY_SD_GRADIENT_ID, aGradient );
+                break;
+            case FillStyle_HATCH:
+                bUsable = Exists( rImport.GetHatchHelper(), XML_STYLE_FAMILY_SD_HATCH_ID, aHatch );
+                break;
+            case FillStyle_BITMAP:
+                bUsable = Exists( rImport.GetBitmapHelper(), XML_STYLE_FAMILY_SD_FILL_IMAGE_ID, aBitmap );
+                break;
+            default:
+                break;
+        }
+    }
+
+    if( !bUsable )
+    {
+        for( size_t i = mnFirst; i < mrProperties.size(); ++i )
+            mrProperties[i].mnIndex = -1;
+    }
+    else if( nTransName != -1 &&
+        !Exists( GetImport().GetTransGradientHelper(), XML_STYLE_FAMILY_SD_GRADIENT_ID, aTrans ) )
+    {
+        mrProperties[nTransName].mnIndex = -1;
+    }
+}
+}
+
 SvXMLImportContext *XMLPropStyleContext::CreateChildContext(
 		sal_uInt16 nPrefix,
 		const OUString& rLocalName,
@@ -213,6 +320,17 @@ SvXMLImportContext *XMLPropStyleContext::CreateChildContext(
 													nFamily,
 													maProperties,
 													xImpPrMap );
+	}
+
+	if( !pContext && ( XML_NAMESPACE_UNKNOWN_FLAG & nPrefix ) && GetFamily() == XML_STYLE_FAMILY_TEXT_PARAGRAPH &&
+		IsXMLToken( rLocalName, XML_GRAPHIC_PROPERTIES ) &&
+		GetImport().GetNamespaceMap().GetNameByKey( nPrefix ).equalsAscii( s_aExtGraphicNamespace ) )
+	{
+		UniReference < SvXMLImportPropertyMapper > xImpPrMap =
+			((SvXMLStylesContext *)&mxStyles)->GetImportPropertyMapper( GetFamily() );
+		if( xImpPrMap.is() )
+			pContext = new XMLExtParaFillContext( GetImport(), nPrefix, rLocalName, xAttrList,
+												  maProperties, xImpPrMap, maProperties.size() );
 	}
 
 	if( !pContext )

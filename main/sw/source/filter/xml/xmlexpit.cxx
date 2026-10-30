@@ -34,6 +34,7 @@
 #include <xmloff/nmspmap.hxx>
 #include <xmloff/xmlnmspe.hxx>
 #include <editeng/xmlcnitm.hxx>
+#include <xmloff/xmlcnimp.hxx>
 #include <xmloff/xmlexp.hxx>
 #include <editeng/memberids.hrc>
 
@@ -137,6 +138,7 @@ void SvXMLExportItemMapper::exportXML( const SvXMLExport& rExport,
 			if( rEntry.nNameSpace == XML_NAMESPACE_STYLE )
 			{
 				if( (rExport.getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE ) == 0 ||
+					rExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_012 ||
 					!QueryXMLValue(rItem, aValue,
 					static_cast< sal_uInt16 >( rEntry.nMemberId & MID_SW_FLAG_MASK ),
 					rUnitConverter ) )
@@ -172,6 +174,11 @@ void SvXMLExportItemMapper::exportXML( const SvXMLExport& rExport,
 			OUStringBuffer sName;
 			for( sal_uInt16 i=0; i < nCount; i++ )
 			{
+				// strict ODF 1.2: foreign attributes are invalid too
+				if( SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ||
+					( rExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_012 &&
+					  SvXMLIsODFNamespace( pUnknown->GetAttrNamespace( i ) ) ) )
+					continue;
 				OUString sPrefix( pUnknown->GetAttrPrefix( i ) );
 				if( sPrefix.getLength() )
 				{
@@ -952,9 +959,9 @@ sal_Bool SvXMLExportItemMapper::QueryXMLValue(
             SwFmtHoriOrient* pHoriOrient = PTR_CAST(SwFmtHoriOrient, &rItem);
             DBG_ASSERT( pHoriOrient != NULL, "Wrong Which-ID" );
 
-            rUnitConverter.convertEnum( aOut, pHoriOrient->GetHoriOrient(),
-                                        aXMLTableAlignMap );
-            bOk = sal_True;
+            // INSIDE and OUTSIDE have no table:align value
+            bOk = rUnitConverter.convertEnum( aOut, pHoriOrient->GetHoriOrient(),
+                                              aXMLTableAlignMap );
         }
         break;
 

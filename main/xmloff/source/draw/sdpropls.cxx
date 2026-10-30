@@ -322,7 +322,9 @@ const XMLPropertyMapEntry aXMLSDPresPageProps[] =
 	DPMAP( "FillGradientName",			XML_NAMESPACE_DRAW, XML_FILL_GRADIENT_NAME, 	XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT, CTF_FILLGRADIENTNAME ),
 	DPMAP( "FillGradientStepCount",		XML_NAMESPACE_DRAW, XML_GRADIENT_STEP_COUNT,	XML_TYPE_NUMBER, 0 ),
 	DPMAP( "FillHatchName",				XML_NAMESPACE_DRAW, XML_FILL_HATCH_NAME,		XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT, CTF_FILLHATCHNAME ),
-	GMAP( "FillBackground",					XML_NAMESPACE_DRAW, XML_FILL_HATCH_SOLID,		XML_TYPE_BOOL, 0 ),
+	DPMAP( "FillBackground",				XML_NAMESPACE_DRAW, XML_FILL_HATCH_SOLID,		XML_TYPE_BOOL, 0 ),
+	// older files carry it in style:graphic-properties of the drawing-page style
+	GMAP( "FillBackground",					XML_NAMESPACE_DRAW, XML_FILL_HATCH_SOLID,		XML_TYPE_BOOL|MID_FLAG_NO_PROPERTY_EXPORT, 0 ),
 	DPMAP( "FillBitmapName",				XML_NAMESPACE_DRAW, XML_FILL_IMAGE_NAME,	XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT, CTF_FILLBITMAPNAME ),
 	DPMAP( "FillTransparenceGradientName",	XML_NAMESPACE_DRAW, XML_OPACITY_NAME,		XML_TYPE_STYLENAME|MID_FLAG_NO_PROPERTY_IMPORT, CTF_FILLTRANSNAME ),
 	DPMAP( "FillBitmapSizeX",			XML_NAMESPACE_DRAW,	XML_FILL_IMAGE_WIDTH,		XML_SD_TYPE_FILLBITMAPSIZE|MID_FLAG_MULTI_PROPERTY, 0 ),
@@ -645,10 +647,33 @@ SvXMLEnumMapEntry __READONLY_DATA pXML_MeasureUnit_Enum[] =
 	{ XML_UNIT_PT,		6 },
 	{ XML_UNIT_PC,		7 },
 	{ XML_UNIT_INCH,	8 },
+	{ XML_INCH,			8 },
     { XML_UNIT_FOOT,	9 },
 	{ XML_UNIT_MILES,	10 },
 	{ XML_TOKEN_INVALID,0 }
 };
+
+// ODF 1.2 spells the unit "inch"; "in" stays readable
+class XMLMeasureUnitHdl : public XMLEnumPropertyHdl
+{
+public:
+	XMLMeasureUnitHdl( const SvXMLEnumMapEntry* pEnumMap, const ::com::sun::star::uno::Type& rType ) : XMLEnumPropertyHdl( pEnumMap, rType ) {}
+
+	virtual sal_Bool exportXML(
+			::rtl::OUString& rStrExpValue,
+			const ::com::sun::star::uno::Any& rValue,
+			const SvXMLUnitConverter& rUnitConverter ) const;
+};
+
+sal_Bool XMLMeasureUnitHdl::exportXML( OUString& rStrExpValue, const Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
+{
+	if( !XMLEnumPropertyHdl::exportXML( rStrExpValue, rValue, rUnitConverter ) )
+		return sal_False;
+
+	if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) && IsXMLToken( rStrExpValue, XML_UNIT_INCH ) )
+		rStrExpValue = GetXMLToken( XML_INCH );
+	return sal_True;
+}
 
 SvXMLEnumMapEntry __READONLY_DATA pXML_Measure_HAlign_Enum[] =
 {
@@ -1062,7 +1087,7 @@ const XMLPropertyHandler* XMLSdPropHdlFactory::GetPropertyHandler( sal_Int32 nTy
 				pHdl = new XMLEnumPropertyHdl( pXML_FitToSize_Enum, ::getCppuType((const com::sun::star::drawing::TextFitToSizeType*)0) );
 				break;
 			case XML_SD_TYPE_MEASURE_UNIT:
-				pHdl = new XMLEnumPropertyHdl( pXML_MeasureUnit_Enum, ::getCppuType((const sal_Int32*)0) );
+				pHdl = new XMLMeasureUnitHdl( pXML_MeasureUnit_Enum,::getCppuType((const sal_Int32*)0) );
 				break;
 			case XML_SD_TYPE_MEASURE_HALIGN:
 				pHdl = new XMLEnumPropertyHdl( pXML_Measure_HAlign_Enum, ::getCppuType((const com::sun::star::drawing::MeasureTextHorzPos*)0) );
@@ -1518,6 +1543,17 @@ void XMLShapeExportPropertyMapper::ContextFilter(
 
 	if( pClipState != NULL && pClip11State != NULL  )
 		pClip11State->mnIndex = -1;
+
+	// the FontWork attributes are not in ODF 1.2
+	if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
+	{
+		XMLPropertyState* aFontWork[] = { pFontWorkStyle, pFontWorkAdjust, pFontWorkDistance, pFontWorkStart,
+			pFontWorkMirror, pFontWorkOutline, pFontWorkShadow, pFontWorkShadowColor, pFontWorkShadowOffsetx,
+			pFontWorkShadowOffsety, pFontWorkForm, pFontWorkHideform, pFontWorkShadowTransparence };
+		for( size_t i = 0; i < sizeof( aFontWork ) / sizeof( aFontWork[0] ); ++i )
+			if( aFontWork[i] )
+				aFontWork[i]->mnIndex = -1;
+	}
 
 	SvXMLExportPropertyMapper::ContextFilter(rProperties, rPropSet);
 }

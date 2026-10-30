@@ -67,9 +67,10 @@ private:
 	SAL_DLLPRIVATE void WriteNumberElement_Impl( sal_Int32 nDecimals, sal_Int32 nInteger,
 										const ::rtl::OUString& rDashStr, sal_Bool bVarDecimals,
 										sal_Bool bGrouping, sal_Int32 nTrailingThousands,
-										const SvXMLEmbeddedTextEntryArr& rEmbeddedEntries );
+										const SvXMLEmbeddedTextEntryArr& rEmbeddedEntries,
+										sal_Int32 nMinDecimals = -1 );
 	SAL_DLLPRIVATE void WriteScientificElement_Impl( sal_Int32 nDecimals, sal_Int32 nInteger,
-										sal_Bool bGrouping, sal_Int32 nExp );
+										sal_Bool bGrouping, sal_Int32 nExp, sal_Int32 nMinDecimals = -1 );
 	SAL_DLLPRIVATE void WriteFractionElement_Impl( sal_Int32 nInteger, sal_Bool bGrouping,
 										sal_Int32 nNumerator, sal_Int32 nDenominator );
 	SAL_DLLPRIVATE void WriteCurrencyElement_Impl( const ::rtl::OUString& rString,

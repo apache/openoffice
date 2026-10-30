@@ -41,6 +41,7 @@
 #include <com/sun/star/table/XMergeableCell.hpp>
 #include <com/sun/star/style/XStyle.hpp>
 #include <com/sun/star/beans/XPropertySetInfo.hpp>
+#include <com/sun/star/drawing/FillStyle.hpp>
 
 #include "xmloff/table/XMLTableExport.hxx"
 #include "xmloff/xmlnmspe.hxx"
@@ -65,6 +66,7 @@ using namespace ::xmloff::token;
 #define _MAP(name,prefix,token,type,context)  { name, sizeof(name)-1, prefix, token, type, context, SvtSaveOptions::ODFVER_010 }
 #define CMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_TABLE_COLUMN,context)
 #define RMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_TABLE_ROW,context)
+#define CELLMAP(name,prefix,token,type,context) _MAP(name,prefix,token,type|XML_TYPE_PROP_TABLE_CELL,context)
 #define MAP_END { 0L, 0, 0, XML_EMPTY, 0, 0, SvtSaveOptions::ODFVER_010 }
 
 // --------------------------------------------------------------------
@@ -94,6 +96,62 @@ const XMLPropertyMapEntry* getRowPropertiesMap()
 	};
 
 	return &aXMLRowProperties[0];
+}
+
+// --------------------------------------------------------------------
+
+const XMLPropertyMapEntry* getCellPropertiesMap()
+{
+	static const XMLPropertyMapEntry aXMLCellProperties[] =
+	{
+		CELLMAP( "FillColor",		XML_NAMESPACE_FO,	XML_BACKGROUND_COLOR,	XML_TYPE_COLOR,	0 ),
+		MAP_END
+	};
+
+	return &aXMLCellProperties[0];
+}
+
+// --------------------------------------------------------------------
+
+// ODF 1.2 strict: a table cell style has no style:graphic-properties; only a solid fill survives, as fo:background-color
+class XMLTableCellExportPropertyMapper : public SvXMLExportPropertyMapper
+{
+public:
+	XMLTableCellExportPropertyMapper( const UniReference< XMLPropertySetMapper >& rMapper ) : SvXMLExportPropertyMapper( rMapper ) {}
+
+protected:
+	virtual void ContextFilter( std::vector< XMLPropertyState >& rProperties, Reference< XPropertySet > rPropSet ) const;
+};
+
+void XMLTableCellExportPropertyMapper::ContextFilter( std::vector< XMLPropertyState >& rProperties, Reference< XPropertySet > rPropSet ) const
+{
+	const bool bStrict = SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() );
+	bool bSolid = false;
+	if( bStrict ) try
+	{
+		::com::sun::star::drawing::FillStyle eFillStyle = ::com::sun::star::drawing::FillStyle_NONE;
+		bSolid = ( rPropSet->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM("FillStyle") ) ) >>= eFillStyle ) && eFillStyle == ::com::sun::star::drawing::FillStyle_SOLID;
+	}
+	catch( Exception& )
+	{
+	}
+
+	for( std::vector< XMLPropertyState >::iterator aIter( rProperties.begin() ); aIter != rProperties.end(); ++aIter )
+	{
+		if( aIter->mnIndex == -1 )
+			continue;
+
+		const sal_uInt32 nPropType = maPropMapper->GetEntryFlags( aIter->mnIndex ) & XML_TYPE_PROP_MASK;
+		if( nPropType == XML_TYPE_PROP_TABLE_CELL )
+		{
+			if( !bSolid )
+				aIter->mnIndex = -1;
+		}
+		else if( bStrict && nPropType == XML_TYPE_PROP_GRAPHIC )
+			aIter->mnIndex = -1;
+	}
+
+	SvXMLExportPropertyMapper::ContextFilter( rProperties, rPropSet );
 }
 
 // --------------------------------------------------------------------
@@ -169,6 +227,7 @@ XMLTableExport::XMLTableExport(SvXMLExport& rExp, const rtl::Reference< SvXMLExp
 
 	mxCellExportPropertySetMapper = xExportPropertyMapper;
 	mxCellExportPropertySetMapper->ChainExportMapper(XMLTextParagraphExport::CreateParaExtPropMapper(rExp));
+	mxCellExportPropertySetMapper->ChainExportMapper(new XMLTableCellExportPropertyMapper( new XMLPropertySetMapper( getCellPropertiesMap(), xFactoryRef.get() ) ));
 
 	mxRowExportPropertySetMapper = new SvXMLExportPropertyMapper( new XMLPropertySetMapper( getRowPropertiesMap(), xFactoryRef.get() ) );
 	mxColumnExportPropertySetMapper = new SvXMLExportPropertyMapper( new XMLPropertySetMapper( getColumnPropertiesMap(), xFactoryRef.get() ) );
@@ -198,6 +257,18 @@ XMLTableExport::~XMLTableExport ()
 }
 
 // --------------------------------------------------------------------
+
+// a 0 width or height is not a positiveLength
+static void drop_zero_measure( std::vector< XMLPropertyState >& rStates, const UniReference< XMLPropertySetMapper >& xMapper, const sal_Char* pApiName )
+{
+	for( std::vector< XMLPropertyState >::iterator aIter( rStates.begin() ); aIter != rStates.end(); ++aIter )
+	{
+		sal_Int32 nValue = 0;
+		if( aIter->mnIndex != -1 && ( aIter->maValue >>= nValue ) && nValue == 0 &&
+			xMapper->GetEntryAPIName( aIter->mnIndex ).equalsAscii( pApiName ) )
+			aIter->mnIndex = -1;
+	}
+}
 
 static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 {
@@ -233,6 +304,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 		{
  			Reference< XPropertySet > xPropSet( xIndexAccessCols->getByIndex(nColumn) , UNO_QUERY_THROW );
 			std::vector< XMLPropertyState > xPropStates( mxColumnExportPropertySetMapper->Filter( xPropSet ) );
+			drop_zero_measure( xPropStates, mxColumnExportPropertySetMapper->getPropertySetMapper(), "Width" );
 
 			if( has_states( xPropStates ) )
 			{
@@ -256,6 +328,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 		{
  			Reference< XPropertySet > xPropSet( xIndexAccessRows->getByIndex(nRow) , UNO_QUERY_THROW );
 			std::vector< XMLPropertyState > xRowPropStates( mxRowExportPropertySetMapper->Filter( xPropSet ) );
+			drop_zero_measure( xRowPropStates, mxRowExportPropertySetMapper->getPropertySetMapper(), "Height" );
 
 			if( has_states( xRowPropStates ) )
 			{
@@ -538,6 +611,11 @@ void XMLTableExport::exportTableTemplates()
      if( !mbExportTables )
          return;
 
+	// ODF 1.2 strict: table:name, table:style-name and the part order of the schema (body before even-rows)
+	const bool bStrict = SvtSaveOptions::IsODFStrict( mrExport.getDefaultVersion() );
+	const TableStyleElement* pMap = getTableStyleMap();
+	static const sal_Int32 aStrictPartOrder[] = { 0, 1, 2, 3, 8, 4, 5, 6, 7 };
+
 	try
 	{
 		Reference< XStyleFamiliesSupplier > xFamiliesSupp( mrExport.GetModel(), UNO_QUERY_THROW );
@@ -553,19 +631,30 @@ void XMLTableExport::exportTableTemplates()
 
 			Reference< XNameAccess > xStyleNames( xTableStyle, UNO_QUERY_THROW );
 
-			mrExport.AddAttribute(XML_NAMESPACE_TEXT, XML_STYLE_NAME, GetExport().EncodeStyleName( xTableStyle->getName() ) );
+			if( bStrict )
+			{
+				mrExport.AddAttribute(XML_NAMESPACE_TABLE, XML_NAME, GetExport().EncodeStyleName( xTableStyle->getName() ) );
+				mrExport.AddAttributeASCII(XML_NAMESPACE_TABLE, "first-row-start-column", "row" );
+				mrExport.AddAttributeASCII(XML_NAMESPACE_TABLE, "first-row-end-column", "row" );
+				mrExport.AddAttributeASCII(XML_NAMESPACE_TABLE, "last-row-start-column", "row" );
+				mrExport.AddAttributeASCII(XML_NAMESPACE_TABLE, "last-row-end-column", "row" );
+			}
+			else
+				mrExport.AddAttribute(XML_NAMESPACE_TEXT, XML_STYLE_NAME, GetExport().EncodeStyleName( xTableStyle->getName() ) );
  			SvXMLElementExport tableTemplate( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_TEMPLATE, sal_True, sal_True );
 
 			const TableStyleElement* pElements = getTableStyleMap();
+			sal_Int32 nPart = 0;
 			while( pElements->meElement != XML_TOKEN_END )
 			{
 				try
 				{
-					Reference< XStyle > xStyle( xStyleNames->getByName( pElements->msStyleName ), UNO_QUERY );
+					const TableStyleElement* pPart = bStrict ? pMap + aStrictPartOrder[nPart] : pElements;
+					Reference< XStyle > xStyle( xStyleNames->getByName( pPart->msStyleName ), UNO_QUERY );
 					if( xStyle.is() )
 					{
-						mrExport.AddAttribute(XML_NAMESPACE_TEXT, XML_STYLE_NAME, GetExport().EncodeStyleName( xStyle->getName() ) );
-			 			SvXMLElementExport element( mrExport, XML_NAMESPACE_TABLE, pElements->meElement, sal_True, sal_True );
+						mrExport.AddAttribute(bStrict ? XML_NAMESPACE_TABLE : XML_NAMESPACE_TEXT, XML_STYLE_NAME, GetExport().EncodeStyleName( xStyle->getName() ) );
+			 			SvXMLElementExport element( mrExport, XML_NAMESPACE_TABLE, pPart->meElement, sal_True, sal_True );
 					}
 				}
 				catch( Exception& )
@@ -574,6 +663,7 @@ void XMLTableExport::exportTableTemplates()
 				}
 
 				pElements++;
+				nPart++;
 			}
 		}
 		catch( Exception& )
