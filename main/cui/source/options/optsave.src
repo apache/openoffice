@@ -152,6 +152,8 @@ TabPage RID_SFXPAGE_SAVE
 			< "1.0/1.1" ;						2 ; > ;
 			< "1.2" ;							4 ; > ;
 			< "1.2 Extended (recommended)" ;	5 ; > ;
+			< "1.3" ;							6 ; > ;
+			< "1.3 Extended" ;					7 ; > ;
 		};
 	};
 	CheckBox BTN_ODFENCRYPTION
@@ -231,7 +233,7 @@ TabPage RID_SFXPAGE_SAVE
 		Pos = MAP_APPFONT ( 23, 177 ) ;
 		Size = MAP_APPFONT ( 239, 8 ) ;
 		Hide = TRUE ;
-		Text [ en-US ] = "Not using ODF 1.2 Extended may cause information to be lost." ;
+		Text [ en-US ] = "Not using ODF Extended may cause information to be lost." ;
 	};
 	Image IMG_ODF_WARNING
 	{
