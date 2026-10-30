@@ -142,6 +142,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,oovbaapi,\
 	oovbaapi/ooo/vba/excel/XWorksheet \
 	oovbaapi/ooo/vba/excel/XWorksheetFunction \
 	oovbaapi/ooo/vba/excel/XWorksheets \
+	oovbaapi/ooo/vba/scripting/XDictionary \
 	oovbaapi/ooo/vba/excel/XlBuildInDialog \
 	oovbaapi/ooo/vba/msforms/XCheckBox \
 	oovbaapi/ooo/vba/msforms/XColorFormat \

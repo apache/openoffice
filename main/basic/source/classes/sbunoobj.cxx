@@ -2397,6 +2397,49 @@ void SbUnoObject::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 				}
                 GetSbData()->bBlockCompilerError = sal_False;  // #106433 Unblock compiler errors
 			}
+			else if( pHint->GetId() == SBX_HINT_DATACHANGED )
+			{
+				if( bInvocation && pParams && mxInvocation.is() )
+				{
+					sal_uInt32 nParamCount = pParams ? ((sal_uInt32)pParams->Count() - 1) : 0;
+					Sequence< Any > args( nParamCount + 1 );
+					Any* pAnyArgs = args.getArray();
+					bool bBlockConversionToSmallestType = pINST->IsCompatibility();
+
+					for( sal_uInt32 i = 0 ; i < nParamCount ; i++ )
+						pAnyArgs[i] = sbxToUnoValueImpl( pParams->Get( (sal_uInt16)(i+1) ),
+														  bBlockConversionToSmallestType );
+
+					pAnyArgs[nParamCount] = sbxToUnoValueImpl( pVar, bBlockConversionToSmallestType );
+
+                    GetSbData()->bBlockCompilerError = sal_True;  // #106433 Block compiler errors for API calls
+					try
+					{
+						Sequence< sal_Int16 > OutParamIndex;
+						Sequence< Any > OutParam;
+						Any aRetAny = mxInvocation->invoke( pMeth->GetName(), args, OutParamIndex, OutParam );
+
+						const sal_Int16* pIndices = OutParamIndex.getConstArray();
+						sal_uInt32 nLen = OutParamIndex.getLength();
+						if( nLen )
+						{
+							const Any* pNewValues = OutParam.getConstArray();
+							for( sal_uInt32 j = 0 ; j < nLen ; j++ )
+							{
+								sal_Int16 iTarget = pIndices[ j ];
+								if( iTarget >= (sal_Int16)nParamCount )
+									break;
+								unoToSbxValue( (SbxVariable*)pParams->Get( (sal_uInt16)(j+1) ), pNewValues[ j ] );
+							}
+						}
+					}
+					catch( const Exception& )
+					{
+						implHandleAnyException( ::cppu::getCaughtException() );
+					}
+                    GetSbData()->bBlockCompilerError = sal_False;  // #106433 Unblock compiler errors
+				}
+			}
 		}
 		else
 			SbxObject::SFX_NOTIFY( rBC, rBCType, rHint, rHintType );
