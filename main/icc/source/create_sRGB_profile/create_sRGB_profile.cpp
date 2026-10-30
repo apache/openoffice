@@ -78,7 +78,7 @@ using namespace std;
 #include "IccUtil.h"
 #include "IccProfile.h"
 
-#include "Vetters.h"
+#include "vetters.h"
 #include "CAT.h"
 #include "CLUT.h"
 
