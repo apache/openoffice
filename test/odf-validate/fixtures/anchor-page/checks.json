@@ -1,0 +1,18 @@
+[
+ {
+  "name": "shapes",
+  "expr": "[(g.ShapeType, g.AnchorType.value, g.Name) for g in [doc.DrawPage.getByIndex(i) for i in range(doc.DrawPage.Count)]]",
+  "expect": [
+   [
+    "com.sun.star.drawing.GraphicObjectShape",
+    "AT_PAGE",
+    "statue_by_nicu.png"
+   ],
+   [
+    "FrameShape",
+    "AT_CHARACTER",
+    "1"
+   ]
+  ]
+ }
+]

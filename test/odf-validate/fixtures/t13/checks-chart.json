@@ -1,0 +1,48 @@
+[
+ {
+  "name": "chart_diagram_pos",
+  "expr": "doc.Sheets.getByIndex(0).Charts.getByName('C1').EmbeddedObject.Diagram.calculateDiagramPositionExcludingAxes()",
+  "expect": {
+   "Height": 4500,
+   "Width": 6000,
+   "X": 1500,
+   "Y": 1200
+  }
+ },
+ {
+  "name": "chart_diagram_excluding",
+  "expr": "doc.Sheets.getByIndex(0).Charts.getByName('C1').EmbeddedObject.Diagram.isExcludingDiagramPositioning()",
+  "expect": true
+ },
+ {
+  "name": "chart_diagram_auto",
+  "expr": "doc.Sheets.getByIndex(0).Charts.getByName('C1').EmbeddedObject.Diagram.isAutomaticDiagramPositioning()",
+  "expect": false
+ },
+ {
+  "name": "chart_has_legend",
+  "expr": "doc.Sheets.getByIndex(0).Charts.getByName('C1').EmbeddedObject.HasLegend",
+  "expect": true
+ },
+ {
+  "name": "chart_legend_expansion",
+  "expr": "doc.Sheets.getByIndex(0).Charts.getByName('C1').EmbeddedObject.Legend.Expansion",
+  "expect": "CUSTOM"
+ },
+ {
+  "name": "chart_legend_size",
+  "expr": "(lambda z: [z.Width, z.Height])(doc.Sheets.getByIndex(0).Charts.getByName('C1').EmbeddedObject.Legend.getSize())",
+  "expect": [
+   2500,
+   1800
+  ]
+ },
+ {
+  "name": "chart_legend_pos",
+  "expr": "(lambda p: [p.X, p.Y])(doc.Sheets.getByIndex(0).Charts.getByName('C1').EmbeddedObject.Legend.getPosition())",
+  "expect": [
+   8800,
+   1500
+  ]
+ }
+]

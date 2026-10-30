@@ -1,0 +1,77 @@
+[
+ {
+  "name": "ole_text",
+  "expr": "[[s.ShapeType.split('.')[-1], s.String, s.CLSID] for s in [doc.DrawPages.getByIndex(0).getByIndex(i) for i in range(doc.DrawPages.getByIndex(0).Count)]]",
+  "expect": [
+   [
+    "OLE2Shape",
+    "",
+    "078B7ABA-54FC-457F-8551-6147e776a997"
+   ],
+   [
+    "OLE2Shape",
+    "OLE label",
+    "078B7ABA-54FC-457F-8551-6147e776a997"
+   ],
+   [
+    "OLE2Shape",
+    " ",
+    "078B7ABA-54FC-457F-8551-6147e776a997"
+   ],
+   [
+    "OLE2Shape",
+    "\n",
+    "078B7ABA-54FC-457F-8551-6147e776a997"
+   ],
+   [
+    "OLE2Shape",
+    "1/3/1",
+    "078B7ABA-54FC-457F-8551-6147e776a997"
+   ]
+  ]
+ },
+ {
+  "name": "ole_paragraphs",
+  "expr": "[[(lambda en: [p.String for p in [en.nextElement() for _ in iter(en.hasMoreElements, False)]])(s.createEnumeration())] for s in [doc.DrawPages.getByIndex(0).getByIndex(i) for i in range(doc.DrawPages.getByIndex(0).Count)]]",
+  "expect": [
+   [
+    [
+     ""
+    ]
+   ],
+   [
+    [
+     "OLE label"
+    ]
+   ],
+   [
+    [
+     " "
+    ]
+   ],
+   [
+    [
+     "",
+     ""
+    ]
+   ],
+   [
+    [
+     "1/3/1"
+    ]
+   ]
+  ]
+ },
+ {
+  "name": "ole_has_field",
+  "expr": "[any(pt.TextPortionType == 'TextField' for pt in (lambda en: [en.nextElement() for _ in iter(en.hasMoreElements, False)])(par.createEnumeration())) for s in [doc.DrawPages.getByIndex(0).getByIndex(i) for i in range(doc.DrawPages.getByIndex(0).Count)] for par in (lambda en: [en.nextElement() for _ in iter(en.hasMoreElements, False)])(s.createEnumeration())]",
+  "expect": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   true
+  ]
+ }
+]

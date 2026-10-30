@@ -1,0 +1,25 @@
+[
+ {
+  "name": "writer_aliens",
+  "expr": "[sorted(doc.Text.createTextCursor().ParaUserDefinedAttributes.ElementNames), sorted(doc.TextTables.getByIndex(0).UserDefinedAttributes.ElementNames), sorted(doc.TextSections.getByIndex(0).UserDefinedAttributes.ElementNames)]",
+  "expect": [
+   [
+    "ex:alien-foreign",
+    "text:enable-numbering"
+   ],
+   [
+    "draw:alien-draw",
+    "ex:alien-foreign",
+    "fo:alien-fo",
+    "office:alien-office",
+    "style:alien-style",
+    "svg:alien-svg",
+    "table:alien-table",
+    "text:enable-numbering"
+   ],
+   [
+    "ex:alien-foreign"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,22 @@
+[
+ {
+  "name": "style_user_attributes",
+  "expr": "[(n, sorted(st.getByName(n).ParaUserDefinedAttributes.ElementNames)) for st in [doc.StyleFamilies.getByName('ParagraphStyles')] for n in ('S_solid', 'S_gradient')]",
+  "expect": [
+   [
+    "S_solid",
+    [
+     "loext:hyphenation-keep-line",
+     "loext:hyphenation-keep-type"
+    ]
+   ],
+   [
+    "S_gradient",
+    [
+     "loext:hyphenation-keep-line",
+     "loext:hyphenation-keep-type"
+    ]
+   ]
+  ]
+ }
+]

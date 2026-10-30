@@ -1,0 +1,14 @@
+[
+ {
+  "name": "dde_links",
+  "expr": "[(n, doc.DDELinks.getByName(n).Application, doc.DDELinks.getByName(n).Topic, doc.DDELinks.getByName(n).Item) for n in doc.DDELinks.ElementNames]"
+ },
+ {
+  "name": "dde_cells",
+  "expr": "[(r,c,doc.Sheets.getByIndex(0).getCellByPosition(c,r).Formula) for r in range(8) for c in range(4) if doc.Sheets.getByIndex(0).getCellByPosition(c,r).Formula.startswith('=DDE')]"
+ },
+ {
+  "name": "dde_cell_result",
+  "expr": "[(cl.String, cl.Value, cl.getError()) for cl in [doc.Sheets.getByIndex(0).getCellByPosition(0,4)]]"
+ }
+]

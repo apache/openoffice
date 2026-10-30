@@ -1,0 +1,19 @@
+[
+ {
+  "name": "calc_page_background",
+  "expr": "[(s.BackGraphicURL.endswith('tile.png'), s.BackGraphicLocation.value, s.BackColor, s.BackTransparent) for s in [doc.StyleFamilies.getByName('PageStyles').getByName('P_image')]]",
+  "expect": [
+   [
+    true,
+    "TILED",
+    6737151,
+    false
+   ]
+  ]
+ },
+ {
+  "name": "calc_sheet_page_style",
+  "expr": "doc.Sheets.getByIndex(0).PageStyle",
+  "expect": "P_image"
+ }
+]

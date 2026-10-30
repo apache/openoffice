@@ -1,0 +1,20 @@
+[
+ {
+  "name": "objid_values",
+  "expr": "[c.ObjIDinMSO for c in [doc.DrawPage.Forms.getByIndex(0).getByIndex(i) for i in range(doc.DrawPage.Forms.getByIndex(0).Count)] if c.getPropertySetInfo().hasPropertyByName('ObjIDinMSO')]",
+  "expect": [
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   65535,
+   12
+  ]
+ }
+]

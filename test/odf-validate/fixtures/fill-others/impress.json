@@ -1,0 +1,52 @@
+[
+ {
+  "name": "shapes",
+  "expr": "[(s.String, s.FillStyle.value, s.FillColor, s.FillGradient.StartColor, s.FillGradient.EndColor, s.FillTransparence) for i in range(doc.DrawPages.getByIndex(0).Count) for s in [doc.DrawPages.getByIndex(0).getByIndex(i)]]",
+  "expect": [
+   [
+    "",
+    "NONE",
+    13625333,
+    0,
+    16777215,
+    0
+   ],
+   [
+    "",
+    "NONE",
+    16777215,
+    0,
+    16777215,
+    0
+   ],
+   [
+    "impress solid",
+    "SOLID",
+    3385941,
+    8421504,
+    16777215,
+    0
+   ],
+   [
+    "impress grad",
+    "GRADIENT",
+    13625333,
+    16711680,
+    255,
+    0
+   ]
+  ]
+ },
+ {
+  "name": "background",
+  "expr": "[(b.FillStyle.value, b.FillColor, b.FillGradient.StartColor, b.FillGradient.EndColor) for b in [doc.DrawPages.getByIndex(0).Background]] if doc.DrawPages.getByIndex(0).Background is not None else None",
+  "expect": [
+   [
+    "SOLID",
+    13430527,
+    0,
+    16777215
+   ]
+  ]
+ }
+]

@@ -1,0 +1,172 @@
+# status<TAB>attribute<TAB>value<TAB>message substring. status: ok, or level:rule[+level:rule] (exact findings). attribute@text: outside office:spreadsheet.
+# values are the attribute text, with \n for a line feed and \u00a0 for a no-break space; the first rule's message must contain the substring.
+ok	table:formula	of:=1	
+ok	table:formula	of:=1+2*3	
+ok	table:formula	of:==1	
+ok	table:formula	of:=-1	
+ok	table:formula	of:=+1	
+ok	table:formula	of:=--1	
+ok	table:formula	of:=1%	
+ok	table:formula	of:=1%%	
+ok	table:formula	of:=2^3^2	
+ok	table:formula	of:=(1+2)*3	
+ok	table:formula	of:= 1 + 2 	
+ok	table:formula	of:=.5	
+ok	table:formula	of:=1E5	
+ok	table:formula	of:=1.5e-3	
+ok	table:formula	of:="a""b"	
+ok	table:formula	of:=""	
+ok	table:formula	of:=SUM([.A1:.B2])	
+ok	table:formula	of:=SUM([.A1:.B2];3)	
+ok	table:formula	of:=TRUE()	
+ok	table:formula	of:=IF([.A1]>1;"x";"y")	
+ok	table:formula	of:=SUM(;)	
+ok	table:formula	of:=SUM(1;)	
+ok	table:formula	of:=SUM( )	
+ok	table:formula	of:=[.A1]	
+ok	table:formula	of:=[$Sheet1.A1]	
+ok	table:formula	of:=[$Sheet1.$A$1]	
+ok	table:formula	of:=['Sheet 1'.A1]	
+ok	table:formula	of:=[$'Sheet 1'.A1:.B2]	
+ok	table:formula	of:=[.A:.A]	
+ok	table:formula	of:=[.1:.1]	
+ok	table:formula	of:=[$Sheet1.A1:$Sheet2.B2]	
+ok	table:formula	of:=[.A1:.B2]![.B1:.C3]	
+ok	table:formula	of:=[.A1]~[.B1]	
+ok	table:formula	of:=[.A1]:[.B2]	
+ok	table:formula	of:=['file:///x.ods'#$Sheet1.A1]	
+ok	table:formula	of:=[#REF!]	
+ok	table:formula	of:=#N/A	
+ok	table:formula	of:=#DIV/0!	
+ok	table:formula	of:=#NAME?	
+ok	table:formula	of:=#NULL!	
+ok	table:formula	of:={1;2|3;4}	
+ok	table:formula	of:={"a";"b"}	
+ok	table:formula	of:=myname	
+ok	table:formula	of:=$$myname	
+ok	table:formula	of:=$$'my name'	
+ok	table:formula	of:='Sheet1'.myname	
+ok	table:formula	of:='file:///x.ods'#myname	
+ok	table:formula	of:='file:///x.ods'#$'S'.name	
+ok	table:formula	of:='label'	
+ok	table:formula	of:='a'!!'b'	
+ok	table:formula	of:=SUM('label')	
+ok	table:formula	of:=ORG.OPENOFFICE.STYLE(1)	
+ok	table:formula	of:=COM.MICROSOFT.X(1)	
+ok	table:formula	=1+2	
+ok	table:formula	1+2	
+ok	table:formula	SUM([.A1])	
+ok	table:formula	of:=SUM( [.A1] ; 2 )	
+ok	table:formula	of:=1 +2	
+ok	table:formula	of:= 1	
+ok	table:formula	of:=1\n+2	
+ok	table:formula	of:=[.A1]<>[.B1]	
+ok	table:formula	of:=[.A1]<=[.B1]	
+ok	table:formula	of:=[.A1]>=[.B1]	
+ok	table:formula	of:=2*[.A1]	
+ok	table:formula	of:=[.A1]&"x"	
+ok	table:formula	of:=ERROR.TYPE(1)	
+ok	table:formula	of:=Ünï+1	
+shall:formula-syntax	table:formula	of:=	expression expected
+shall:formula-syntax	table:formula	of:=1+	expression expected
+shall:formula-syntax	table:formula	of:=*1	unexpected '*'
+shall:formula-syntax	table:formula	of:=1 2	unexpected '2'
+shall:formula-syntax	table:formula	of:=SUM(1,2)	')' expected
+shall:formula-syntax	table:formula	of:=SUM(1;2	')' expected
+shall:formula-syntax	table:formula	of:=SUM (1)	whitespace between function name
+shall:formula-syntax	table:formula	of:=A1	cell reference
+shall:formula-syntax	table:formula	of:=TRUE	not an identifier
+shall:formula-syntax	table:formula	of:=5.	unexpected '.'
+shall:formula-syntax	table:formula	of:=1e	unexpected 'e'
+shall:formula-syntax	table:formula	of:="abc	unterminated string
+shall:formula-syntax	table:formula	of:=[.A1	without ']'
+shall:formula-syntax	table:formula	of:=[A1]	malformed reference
+shall:formula-syntax	table:formula	of:=[.a1]	malformed reference
+shall:formula-syntax	table:formula	of:=[.A0]	malformed reference
+shall:formula-syntax	table:formula	of:=[Sheet 1.A1]	malformed reference
+shall:formula-syntax	table:formula	of:=[.A1:B2]	malformed reference
+shall:formula-syntax	table:formula	of:=[$Sheet1.$#REF!$#REF!:.$#REF!$#REF!]	malformed reference
+shall:formula-syntax	table:formula	of:=#ref!	malformed error constant
+shall:formula-syntax	table:formula	of:=#REF	malformed error constant
+shall:formula-syntax	table:formula	of:={}	unexpected '}'
+shall:formula-syntax	table:formula	of:=(1	')' expected
+shall:formula-syntax	table:formula	of:=1)	unexpected ')'
+shall:formula-syntax	table:formula	of:=[.A1];[.B1]	unexpected ';'
+shall:formula-syntax	table:formula	of:=-	expression expected
+shall:formula-syntax	table:formula	of:=1 % 2	unexpected '2'
+shall:formula-syntax	table:formula	of:=$A1	'$' must be
+shall:formula-syntax	table:formula	of:='abc'.	identifier expected
+shall:formula-syntax	table:formula	of:=1\u00a0+2	unexpected
+shall:formula-syntax	table:formula	of:='a b'#myname	source: not an IRI reference
+shall:formula-syntax	table:formula	of:=a.b	unexpected '.'
+shall:formula-prefix-unbound	table:formula	zz:=1	not bound
+shall:formula-namespace	table:formula	oooc:=1	bound to <http://openoffice.org/2004/calc>
+should:formula-foreign-namespace	table:formula@text	oooc:=1	bound to <http://openoffice.org/2004/calc>
+ok	table:formula@text	of:=1+1	
+should:formula-function-unprefixed	table:formula	of:=FOO(1)	not a function of Part 2
+should:formula-function-case	table:formula	of:=sum(1)	upper case
+should:formula-array-ragged	table:formula	of:={1;2|3}	rows have 2/1 columns
+ok	table:expression	[.A1]	
+ok	table:expression	of:=[.A1]	
+ok	table:expression	=[.A1]	
+ok	table:expression	[$Sheet1.$A$1:.$B$2]~[$Sheet1.$D$1:.$E$2]	
+shall:formula-syntax	table:expression	of:[.A1]	must start with '='
+shall:formula-syntax	table:expression	[.A1];[.B1]	unexpected ';'
+ok	text:formula	of:=1+1	
+ok	text:formula	Table+1	
+should:formula-foreign-namespace	text:formula	ooow:Table+1	bound to <http://openoffice.org/2004/writer>
+shall:formula-syntax	text:formula	of:=1+	expression expected
+ok	style:condition	value()>=0	
+ok	style:condition	value()=1	
+ok	style:condition	value()!=true	
+ok	style:condition	value()<-1.5	
+ok	style:condition	footnote()	
+ok	style:condition	endnote()	
+ok	style:condition	header()	
+ok	style:condition	footer()	
+ok	style:condition	section()	
+ok	style:condition	table()	
+ok	style:condition	table-header()	
+ok	style:condition	list-level()=2	
+ok	style:condition	outline-level()=1	
+ok	style:condition	cell-content()>5	
+ok	style:condition	cell-content()="a"	
+ok	style:condition	cell-content()>[.A1]	
+ok	style:condition	cell-content-is-between(1,2)	
+ok	style:condition	cell-content-is-not-between([.A1],[.B1])	
+ok	style:condition	cell-content-is-between("a,b","c")	
+ok	style:condition	is-true-formula([.A1]>1)	
+ok	style:condition	of:is-true-formula(SUM([.A1];2)>1)	
+ok	style:condition	is-true-formula(IF(1;2;3))	
+ok	style:condition	cell-content() >= 5	
+ok	style:condition	cell-content-is-between( 1 , 2 )	
+shall:formula-syntax	style:condition	value()	relational operator expected
+shall:formula-syntax	style:condition	value()>	number, true or false expected
+shall:formula-syntax	style:condition	list-level()=0	positive integer expected
+shall:formula-syntax	style:condition	list-level()=x	positive integer expected
+shall:formula-syntax	style:condition	footnote	'(' expected
+shall:formula-syntax	style:condition	cell-content()<>5	unexpected '>'
+shall:formula-syntax	style:condition	cell-content-is-between(1;2)	',' expected
+shall:formula-syntax	style:condition	cell-content-is-between(1)	',' expected
+shall:formula-syntax	style:condition	bogus()	unknown condition 'bogus'
+shall:formula-syntax	style:condition	footnote() and header()	unexpected 'a'
+shall:formula-syntax	style:condition	is-true-formula()	unexpected ')'
+shall:formula-syntax	style:condition	cell-content()>5)	unexpected ')'
+ok	table:condition	of:cell-content-text-length()<0	
+ok	table:condition	cell-content-text-length()>=5	
+ok	table:condition	cell-content-text-length-is-between(1,5)	
+ok	table:condition	cell-content-text-length-is-not-between(1,5)	
+ok	table:condition	cell-content-is-in-list("a";"b")	
+ok	table:condition	cell-content-is-in-list("a")	
+ok	table:condition	cell-content-is-in-list([.A1:.A5])	
+ok	table:condition	cell-content-is-whole-number() and cell-content-is-between(1,5)	
+ok	table:condition	cell-content-is-decimal-number() and cell-content()>=1.5	
+ok	table:condition	cell-content-is-date() and is-true-formula([.A1]>0)	
+ok	table:condition	cell-content-is-time() and cell-content-is-not-between(1,2)	
+ok	table:condition	is-true-formula([.A1]>0)	
+shall:formula-syntax	table:condition	cell-content()>5	unknown condition 'cell-content'
+shall:formula-syntax	table:condition	cell-content-is-whole-number()	'and' expected
+shall:formula-syntax	table:condition	cell-content-is-whole-number() and footnote()	value condition expected
+shall:formula-syntax	table:condition	cell-content-is-in-list()	unexpected ')'
+shall:formula-syntax	table:condition	 and cell-content()>1	unknown condition 'and'
+shall:formula-syntax	table:condition	cell-content-text-length()	relational operator expected

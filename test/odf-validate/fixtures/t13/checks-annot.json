@@ -1,0 +1,36 @@
+[
+ {
+  "name": "ann_count",
+  "expr": "len([f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.Annotation')])",
+  "expect": 2
+ },
+ {
+  "name": "ann_initials",
+  "expr": "[f.Initials for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.Annotation')]]",
+  "expect": [
+   "AB",
+   ""
+  ]
+ },
+ {
+  "name": "ann_author",
+  "expr": "[f.Author for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.Annotation')]]",
+  "expect": [
+   "Ann Author",
+   "Bob Author"
+  ]
+ },
+ {
+  "name": "ann_content",
+  "expr": "[f.Content for f in [f for f in (lambda e: [e.nextElement() for _ in iter(e.hasMoreElements, False)])(doc.TextFields.createEnumeration()) if f.supportsService('com.sun.star.text.textfield.Annotation')]]",
+  "expect": [
+   "first note",
+   "second note"
+  ]
+ },
+ {
+  "name": "ann_text",
+  "expr": "doc.Text.String",
+  "expect": "with initials \nwithout initials "
+ }
+]

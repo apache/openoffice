@@ -1,0 +1,224 @@
+[
+ {
+  "name": "paragraphs",
+  "expr": "[(p.String, p.ParaBackColor, p.ParaBackTransparent, p.FillStyle.value, p.FillColor, p.FillTransparence) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None)]",
+  "expect": [
+   [
+    "direct solid",
+    -3151883,
+    true,
+    "NONE",
+    13625333,
+    0
+   ],
+   [
+    "styled solid",
+    16763904,
+    false,
+    "SOLID",
+    16763904,
+    0
+   ],
+   [
+    "direct solid_fill",
+    3385941,
+    false,
+    "SOLID",
+    3385941,
+    0
+   ],
+   [
+    "styled solid_fill",
+    3385941,
+    false,
+    "SOLID",
+    3385941,
+    0
+   ],
+   [
+    "direct solid_transp",
+    1697863082,
+    false,
+    "SOLID",
+    3364266,
+    40
+   ],
+   [
+    "styled solid_transp",
+    1697863082,
+    false,
+    "SOLID",
+    3364266,
+    40
+   ],
+   [
+    "direct gradient",
+    8421504,
+    false,
+    "GRADIENT",
+    13625333,
+    0
+   ],
+   [
+    "styled gradient",
+    8388736,
+    false,
+    "GRADIENT",
+    13625333,
+    0
+   ],
+   [
+    "direct hatch",
+    16777164,
+    false,
+    "HATCH",
+    16777164,
+    0
+   ],
+   [
+    "styled hatch",
+    16777164,
+    false,
+    "HATCH",
+    16777164,
+    0
+   ],
+   [
+    "direct bitmap",
+    -1,
+    true,
+    "BITMAP",
+    13625333,
+    0
+   ],
+   [
+    "styled bitmap",
+    -1,
+    true,
+    "BITMAP",
+    13625333,
+    0
+   ],
+   [
+    "",
+    -3151883,
+    true,
+    "NONE",
+    13625333,
+    0
+   ]
+  ]
+ },
+ {
+  "name": "para_styles",
+  "expr": "[(n, p.ParaBackColor, p.ParaBackTransparent, p.FillStyle.value, p.FillColor, p.FillTransparence) for n in doc.StyleFamilies.getByName('ParagraphStyles').ElementNames if n.startswith('S_') for p in [doc.StyleFamilies.getByName('ParagraphStyles').getByName(n)]]",
+  "expect": [
+   [
+    "S_solid",
+    16763904,
+    false,
+    "SOLID",
+    16763904,
+    0
+   ],
+   [
+    "S_solid_fill",
+    3385941,
+    false,
+    "SOLID",
+    3385941,
+    0
+   ],
+   [
+    "S_solid_transp",
+    1697863082,
+    false,
+    "SOLID",
+    3364266,
+    40
+   ],
+   [
+    "S_gradient",
+    8388736,
+    false,
+    "GRADIENT",
+    13625333,
+    0
+   ],
+   [
+    "S_hatch",
+    16777164,
+    false,
+    "HATCH",
+    16777164,
+    0
+   ],
+   [
+    "S_bitmap",
+    -1,
+    true,
+    "BITMAP",
+    13625333,
+    0
+   ]
+  ]
+ },
+ {
+  "name": "styled_para_style_names",
+  "expr": "[(p.String, p.ParaStyleName) for e in [doc.Text.createEnumeration()] for p in iter(lambda: e.nextElement() if e.hasMoreElements() else None, None)]",
+  "expect": [
+   [
+    "direct solid",
+    "Standard"
+   ],
+   [
+    "styled solid",
+    "S_solid"
+   ],
+   [
+    "direct solid_fill",
+    "Standard"
+   ],
+   [
+    "styled solid_fill",
+    "S_solid_fill"
+   ],
+   [
+    "direct solid_transp",
+    "Standard"
+   ],
+   [
+    "styled solid_transp",
+    "S_solid_transp"
+   ],
+   [
+    "direct gradient",
+    "Standard"
+   ],
+   [
+    "styled gradient",
+    "S_gradient"
+   ],
+   [
+    "direct hatch",
+    "Standard"
+   ],
+   [
+    "styled hatch",
+    "S_hatch"
+   ],
+   [
+    "direct bitmap",
+    "Standard"
+   ],
+   [
+    "styled bitmap",
+    "S_bitmap"
+   ],
+   [
+    "",
+    "Standard"
+   ]
+  ]
+ }
+]
