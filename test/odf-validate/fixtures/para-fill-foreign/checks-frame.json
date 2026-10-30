@@ -1,0 +1,10 @@
+[
+ {
+  "name": "frame_style_g9",
+  "expr": "[doc.StyleFamilies.getByName('FrameStyles').hasByName('G9')] + ([doc.StyleFamilies.getByName('FrameStyles').getByName('G9').FillStyle.value] if doc.StyleFamilies.getByName('FrameStyles').hasByName('G9') else [])",
+  "expect": [
+   true,
+   "NONE"
+  ]
+ }
+]

@@ -1,0 +1,4 @@
+# Twin pairs (1.2 and 1.3 output of the same producer) whose reload dumps may differ. name<TAB>reason. Read by smoke13.py --known.
+AddInChart.ods	volatile Calc formula (NOW, TODAY or RAND), as in gate-volatile.tsv
+CurrentTime.ods	volatile Calc formula (NOW, TODAY or RAND), as in gate-volatile.tsv
+fields.odt	the producer writes draw:style-name on the master page in 1.3 (a drawing-page style with draw:opacity="0%"); AOO reads it, so BackColor is transparent white instead of white

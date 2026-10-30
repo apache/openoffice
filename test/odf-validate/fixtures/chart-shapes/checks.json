@@ -1,0 +1,29 @@
+[
+ {
+  "name": "chart_shapes",
+  "expr": "[[s.ShapeType, getattr(s, 'String', None)] for s in [doc.Sheets.getByIndex(0).Charts.getByIndex(0).EmbeddedObject.DrawPage.getByIndex(i) for i in range(doc.Sheets.getByIndex(0).Charts.getByIndex(0).EmbeddedObject.DrawPage.Count)]]",
+  "expect": [
+   [
+    "com.sun.star.drawing.GroupShape",
+    null
+   ],
+   [
+    "com.sun.star.drawing.PolyLineShape",
+    ""
+   ],
+   [
+    "com.sun.star.drawing.RectangleShape",
+    "rect"
+   ],
+   [
+    "com.sun.star.drawing.TextShape",
+    "note"
+   ]
+  ]
+ },
+ {
+  "name": "chart_type",
+  "expr": "doc.Sheets.getByIndex(0).Charts.getByIndex(0).EmbeddedObject.getDiagram().getDiagramType()",
+  "expect": "com.sun.star.chart.BarDiagram"
+ }
+]

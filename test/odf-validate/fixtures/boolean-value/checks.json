@@ -1,0 +1,1 @@
+[{"name":"cells","expr":"[(c.AbsoluteName, c.Value, c.String, doc.NumberFormats.getByKey(c.NumberFormat).Type) for c in [doc.Sheets.getByIndex(0).getCellByPosition(x,y) for x in range(4) for y in range(6)] if c.Type.value!='EMPTY']","expect":[["$Sheet1.$A$1",12345.0,"TRUE",1024],["$Sheet1.$A$2",0.0,"FALSE",1024]]}]

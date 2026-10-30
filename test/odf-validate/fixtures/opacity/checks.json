@@ -1,0 +1,1 @@
+[{"name":"shape_fill_transparence_clamped","expr":"[doc.DrawPage.getByIndex(i).FillTransparence for i in range(doc.DrawPage.Count) if doc.DrawPage.getByIndex(i).getPropertySetInfo().hasPropertyByName('FillTransparence')]","expect":[0,0]}]

@@ -1,0 +1,2 @@
+[{"name":"print_date_absent","expr":"[doc.DocumentProperties.PrintDate.Year,doc.DocumentProperties.PrintDate.Month,doc.DocumentProperties.PrintDate.Day]","expect":[0,0,0]},
+ {"name":"creation_date_kept","expr":"doc.DocumentProperties.CreationDate.Year","expect":2000}]

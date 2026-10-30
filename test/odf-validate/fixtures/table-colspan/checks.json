@@ -1,0 +1,28 @@
+[
+ {
+  "name": "cell_text",
+  "expr": "[(n, doc.TextTables.getByIndex(0).getCellByName(n).String) for n in doc.TextTables.getByIndex(0).CellNames]",
+  "expect": [
+   [
+    "A1",
+    "Merged top left two cells"
+   ],
+   [
+    "A2",
+    "Bottom left"
+   ],
+   [
+    "B2",
+    "Bottom center"
+   ]
+  ]
+ },
+ {
+  "name": "rows_cols",
+  "expr": "(doc.TextTables.getByIndex(0).Rows.Count, doc.TextTables.getByIndex(0).Columns.Count)",
+  "expect": [
+   2,
+   1
+  ]
+ }
+]

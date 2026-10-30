@@ -1,0 +1,241 @@
+[
+ {
+  "name": "page_fill",
+  "expr": "[(n, s.FillStyle.value, s.FillColor, s.FillTransparence) for n in ('Standard','First Page','P_solid','P_solid_transp','P_gradient','P_gradient_transp','P_gradient_tgrad','P_hatch','P_hatch_nobg','P_bitmap_tile','P_bitmap_stretch','P_bitmap_once','P_none','P_shared','P_shared2') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)]]",
+  "expect": [
+   [
+    "Standard",
+    "SOLID",
+    3385941,
+    0
+   ],
+   [
+    "First Page",
+    "HATCH",
+    43520,
+    0
+   ],
+   [
+    "P_solid",
+    "SOLID",
+    3385941,
+    0
+   ],
+   [
+    "P_solid_transp",
+    "SOLID",
+    3364266,
+    40
+   ],
+   [
+    "P_gradient",
+    "SOLID",
+    16711680,
+    0
+   ],
+   [
+    "P_gradient_transp",
+    "GRADIENT",
+    8388736,
+    30
+   ],
+   [
+    "P_gradient_tgrad",
+    "GRADIENT",
+    8421504,
+    0
+   ],
+   [
+    "P_hatch",
+    "HATCH",
+    16777164,
+    0
+   ],
+   [
+    "P_hatch_nobg",
+    "HATCH",
+    43520,
+    0
+   ],
+   [
+    "P_bitmap_tile",
+    "BITMAP",
+    7512015,
+    0
+   ],
+   [
+    "P_bitmap_stretch",
+    "BITMAP",
+    7512015,
+    0
+   ],
+   [
+    "P_bitmap_once",
+    "BITMAP",
+    7512015,
+    0
+   ],
+   [
+    "P_none",
+    "NONE",
+    7512015,
+    0
+   ],
+   [
+    "P_shared",
+    "SOLID",
+    16711680,
+    0
+   ],
+   [
+    "P_shared2",
+    "SOLID",
+    16711680,
+    0
+   ]
+  ]
+ },
+ {
+  "name": "page_gradient",
+  "expr": "[(n, g.Style.value, g.StartColor, g.EndColor, g.Angle, g.Border) for n in ('Standard','First Page','P_solid','P_solid_transp','P_gradient','P_gradient_transp','P_gradient_tgrad','P_hatch','P_hatch_nobg','P_bitmap_tile','P_bitmap_stretch','P_bitmap_once','P_none','P_shared','P_shared2') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)] if s.FillStyle.value == 'GRADIENT' for g in [s.FillGradient]]",
+  "expect": [
+   [
+    "P_gradient_transp",
+    "LINEAR",
+    16711680,
+    255,
+    0,
+    10
+   ],
+   [
+    "P_gradient_tgrad",
+    "LINEAR",
+    65280,
+    16711935,
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "name": "page_transparence_gradient",
+  "expr": "[(n, s.FillTransparenceGradientName, g.Style.value, g.StartColor, g.EndColor) for n in ('Standard','First Page','P_solid','P_solid_transp','P_gradient','P_gradient_transp','P_gradient_tgrad','P_hatch','P_hatch_nobg','P_bitmap_tile','P_bitmap_stretch','P_bitmap_once','P_none','P_shared','P_shared2') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)] if s.FillTransparenceGradientName for g in [s.FillTransparenceGradient]]",
+  "expect": [
+   [
+    "P_gradient_tgrad",
+    "TG1",
+    "LINEAR",
+    0,
+    16777215
+   ]
+  ]
+ },
+ {
+  "name": "page_hatch",
+  "expr": "[(n, h.Style.value, h.Color, h.Distance, h.Angle, s.FillBackground) for n in ('Standard','First Page','P_solid','P_solid_transp','P_gradient','P_gradient_transp','P_gradient_tgrad','P_hatch','P_hatch_nobg','P_bitmap_tile','P_bitmap_stretch','P_bitmap_once','P_none','P_shared','P_shared2') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)] if s.FillStyle.value == 'HATCH' for h in [s.FillHatch]]",
+  "expect": [
+   [
+    "First Page",
+    "SINGLE",
+    43520,
+    200,
+    450,
+    false
+   ],
+   [
+    "P_hatch",
+    "SINGLE",
+    43520,
+    200,
+    450,
+    true
+   ],
+   [
+    "P_hatch_nobg",
+    "SINGLE",
+    43520,
+    200,
+    450,
+    false
+   ]
+  ]
+ },
+ {
+  "name": "page_bitmap",
+  "expr": "[(n, s.FillBitmapMode.value, 'GraphicObject:' in s.FillBitmapURL and 'GraphicObject:0000000' not in s.FillBitmapURL, s.FillBitmapRectanglePoint.value, s.FillBitmapPositionOffsetX, s.FillBitmapPositionOffsetY, s.FillBitmapOffsetX, s.FillBitmapOffsetY, s.FillBitmapLogicalSize, s.FillBitmapSizeX, s.FillBitmapSizeY) for n in ('Standard','First Page','P_solid','P_solid_transp','P_gradient','P_gradient_transp','P_gradient_tgrad','P_hatch','P_hatch_nobg','P_bitmap_tile','P_bitmap_stretch','P_bitmap_once','P_none','P_shared','P_shared2') for s in [doc.StyleFamilies.getByName('PageStyles').getByName(n)] if s.FillStyle.value == 'BITMAP']",
+  "expect": [
+   [
+    "P_bitmap_tile",
+    "REPEAT",
+    true,
+    "MIDDLE_MIDDLE",
+    0,
+    0,
+    0,
+    0,
+    true,
+    0,
+    0
+   ],
+   [
+    "P_bitmap_stretch",
+    "STRETCH",
+    true,
+    "MIDDLE_MIDDLE",
+    0,
+    0,
+    0,
+    0,
+    true,
+    0,
+    0
+   ],
+   [
+    "P_bitmap_once",
+    "NO_REPEAT",
+    true,
+    "MIDDLE_MIDDLE",
+    0,
+    0,
+    0,
+    0,
+    true,
+    0,
+    0
+   ]
+  ]
+ },
+ {
+  "name": "header_fill",
+  "expr": "[(s.HeaderIsOn, s.HeaderFillStyle.value, s.HeaderFillColor, s.HeaderFillHatch.Color, s.HeaderFillBackground) for s in [doc.StyleFamilies.getByName('PageStyles').getByName('P_gradient')]]",
+  "expect": [
+   [
+    true,
+    "HATCH",
+    16777164,
+    43520,
+    true
+   ]
+  ]
+ },
+ {
+  "name": "page_usage",
+  "expr": "[e.nextElement().PageDescName for e in [doc.Text.createEnumeration()] for i in range(14)]",
+  "expect": [
+   "First Page",
+   "P_solid",
+   "P_solid_transp",
+   "P_gradient",
+   "P_gradient_transp",
+   "P_gradient_tgrad",
+   "P_hatch",
+   "P_hatch_nobg",
+   "P_bitmap_tile",
+   "P_bitmap_stretch",
+   "P_bitmap_once",
+   "P_none",
+   "P_shared",
+   "P_shared2"
+  ]
+ }
+]

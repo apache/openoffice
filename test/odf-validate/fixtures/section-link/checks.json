@@ -1,0 +1,14 @@
+[
+ {
+  "name": "sections",
+  "expr": "[(n, doc.TextSections.getByName(n).FileLink.FileURL, doc.TextSections.getByName(n).FileLink.FilterName, doc.TextSections.getByName(n).LinkRegion) for n in doc.TextSections.ElementNames]",
+  "expect": [
+   [
+    "Section1",
+    "file:///C:/Documents%20and%20Settings/sw93809/My%20Documents/chinese.sxw",
+    "",
+    ""
+   ]
+  ]
+ }
+]

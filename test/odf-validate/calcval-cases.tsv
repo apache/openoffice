@@ -1,0 +1,267 @@
+# calcval cases for calcval.py.  Columns (tab separated): id, formula, mode, expected, note.
+# formula: AOO API syntax (English function names, ';' separators, '|' row separator in inline arrays), leading '='.
+# mode: cell | cell@N (plain cell, scratch cell AA<N>; default AA1) | array[:CxR] (setArrayFormula on AA1 sized C columns x R rows; default 1x1).
+# expected: '-' = record only; number (relative tolerance 1e-9; '~' prefix = 1e-6); '#N/A'; '#ERR' (any error); 's:text'; for array modes a '|' separated row-major list of those.
+# RECEIVED, BESSELK, BESSELY are Analysis add-in functions: calcval.py rewrites them to their programmatic names.
+# Expected values come from the public ODF 1.3 Part 4 text (OpenDocument-v1.3-os-part4-formula).
+#
+# Data written by calcval.py on sheet 1 (second sheet is named Other):
+#   A1:A9  y,x,x,y,x,y,x,x,y            B1:B9  y,x,y,y,y,y,x,y,x
+#   D1:F5  D=10,20,30,40,50  E=11,22,33,44,55  F=101,202,303,404,505
+#   H1:L3  row1 10,20,30,40,50  row2 11,22,33,44,55  row3 101,202,303,404,505
+#   N1:N6  3,5,8,9,13,14 (y)   O1:O6  1..6 (x)   P1:P6  2,4,7,15,30,58 (positive y)
+#   R1:T6  database: header Name,Age,Score; A,20,5; B,30,"n/a"; C,40,15; D,50,(empty); E,60,25
+#   V1:V2  criteria Age,">=30"   W1:W2  criteria Age,(empty)   Y1:Y2  criteria Name,"A"
+#   AH1:AH11 6,6,6,6,3,2,1,2,6,4,2 (variance 4.2)   AI1:AI3 1,3,5 (variance 4)
+#   AJ1:AJ4 and AK1:AK4  2,4,7,9
+#   Scratch area AA1:AF12 is cleared after every case.
+WEEKDAY.Sun.1	=WEEKDAY(DATE(2024;1;7);1)	cell	1	Part 4 6.10.20 Table 6, Sunday type 1
+WEEKDAY.Sun.2	=WEEKDAY(DATE(2024;1;7);2)	cell	7	Part 4 6.10.20 Table 6, Sunday type 2
+WEEKDAY.Sun.3	=WEEKDAY(DATE(2024;1;7);3)	cell	6	Part 4 6.10.20 Table 6, Sunday type 3
+WEEKDAY.Sun.11	=WEEKDAY(DATE(2024;1;7);11)	cell	7	Part 4 6.10.20 Table 6, Sunday type 11
+WEEKDAY.Sun.12	=WEEKDAY(DATE(2024;1;7);12)	cell	6	Part 4 6.10.20 Table 6, Sunday type 12
+WEEKDAY.Sun.13	=WEEKDAY(DATE(2024;1;7);13)	cell	5	Part 4 6.10.20 Table 6, Sunday type 13
+WEEKDAY.Sun.14	=WEEKDAY(DATE(2024;1;7);14)	cell	4	Part 4 6.10.20 Table 6, Sunday type 14
+WEEKDAY.Sun.15	=WEEKDAY(DATE(2024;1;7);15)	cell	3	Part 4 6.10.20 Table 6, Sunday type 15
+WEEKDAY.Sun.16	=WEEKDAY(DATE(2024;1;7);16)	cell	2	Part 4 6.10.20 Table 6, Sunday type 16
+WEEKDAY.Sun.17	=WEEKDAY(DATE(2024;1;7);17)	cell	1	Part 4 6.10.20 Table 6, Sunday type 17
+WEEKDAY.Mon.1	=WEEKDAY(DATE(2024;1;8);1)	cell	2	Part 4 6.10.20 Table 6, Monday type 1
+WEEKDAY.Mon.2	=WEEKDAY(DATE(2024;1;8);2)	cell	1	Part 4 6.10.20 Table 6, Monday type 2
+WEEKDAY.Mon.3	=WEEKDAY(DATE(2024;1;8);3)	cell	0	Part 4 6.10.20 Table 6, Monday type 3
+WEEKDAY.Mon.11	=WEEKDAY(DATE(2024;1;8);11)	cell	1	Part 4 6.10.20 Table 6, Monday type 11
+WEEKDAY.Mon.12	=WEEKDAY(DATE(2024;1;8);12)	cell	7	Part 4 6.10.20 Table 6, Monday type 12
+WEEKDAY.Mon.13	=WEEKDAY(DATE(2024;1;8);13)	cell	6	Part 4 6.10.20 Table 6, Monday type 13
+WEEKDAY.Mon.14	=WEEKDAY(DATE(2024;1;8);14)	cell	5	Part 4 6.10.20 Table 6, Monday type 14
+WEEKDAY.Mon.15	=WEEKDAY(DATE(2024;1;8);15)	cell	4	Part 4 6.10.20 Table 6, Monday type 15
+WEEKDAY.Mon.16	=WEEKDAY(DATE(2024;1;8);16)	cell	3	Part 4 6.10.20 Table 6, Monday type 16
+WEEKDAY.Mon.17	=WEEKDAY(DATE(2024;1;8);17)	cell	2	Part 4 6.10.20 Table 6, Monday type 17
+WEEKDAY.Tue.1	=WEEKDAY(DATE(2024;1;9);1)	cell	3	Part 4 6.10.20 Table 6, Tuesday type 1
+WEEKDAY.Tue.2	=WEEKDAY(DATE(2024;1;9);2)	cell	2	Part 4 6.10.20 Table 6, Tuesday type 2
+WEEKDAY.Tue.3	=WEEKDAY(DATE(2024;1;9);3)	cell	1	Part 4 6.10.20 Table 6, Tuesday type 3
+WEEKDAY.Tue.11	=WEEKDAY(DATE(2024;1;9);11)	cell	2	Part 4 6.10.20 Table 6, Tuesday type 11
+WEEKDAY.Tue.12	=WEEKDAY(DATE(2024;1;9);12)	cell	1	Part 4 6.10.20 Table 6, Tuesday type 12
+WEEKDAY.Tue.13	=WEEKDAY(DATE(2024;1;9);13)	cell	7	Part 4 6.10.20 Table 6, Tuesday type 13
+WEEKDAY.Tue.14	=WEEKDAY(DATE(2024;1;9);14)	cell	6	Part 4 6.10.20 Table 6, Tuesday type 14
+WEEKDAY.Tue.15	=WEEKDAY(DATE(2024;1;9);15)	cell	5	Part 4 6.10.20 Table 6, Tuesday type 15
+WEEKDAY.Tue.16	=WEEKDAY(DATE(2024;1;9);16)	cell	4	Part 4 6.10.20 Table 6, Tuesday type 16
+WEEKDAY.Tue.17	=WEEKDAY(DATE(2024;1;9);17)	cell	3	Part 4 6.10.20 Table 6, Tuesday type 17
+WEEKDAY.Wed.1	=WEEKDAY(DATE(2024;1;10);1)	cell	4	Part 4 6.10.20 Table 6, Wednesday type 1
+WEEKDAY.Wed.2	=WEEKDAY(DATE(2024;1;10);2)	cell	3	Part 4 6.10.20 Table 6, Wednesday type 2
+WEEKDAY.Wed.3	=WEEKDAY(DATE(2024;1;10);3)	cell	2	Part 4 6.10.20 Table 6, Wednesday type 3
+WEEKDAY.Wed.11	=WEEKDAY(DATE(2024;1;10);11)	cell	3	Part 4 6.10.20 Table 6, Wednesday type 11
+WEEKDAY.Wed.12	=WEEKDAY(DATE(2024;1;10);12)	cell	2	Part 4 6.10.20 Table 6, Wednesday type 12
+WEEKDAY.Wed.13	=WEEKDAY(DATE(2024;1;10);13)	cell	1	Part 4 6.10.20 Table 6, Wednesday type 13
+WEEKDAY.Wed.14	=WEEKDAY(DATE(2024;1;10);14)	cell	7	Part 4 6.10.20 Table 6, Wednesday type 14
+WEEKDAY.Wed.15	=WEEKDAY(DATE(2024;1;10);15)	cell	6	Part 4 6.10.20 Table 6, Wednesday type 15
+WEEKDAY.Wed.16	=WEEKDAY(DATE(2024;1;10);16)	cell	5	Part 4 6.10.20 Table 6, Wednesday type 16
+WEEKDAY.Wed.17	=WEEKDAY(DATE(2024;1;10);17)	cell	4	Part 4 6.10.20 Table 6, Wednesday type 17
+WEEKDAY.Thu.1	=WEEKDAY(DATE(2024;1;11);1)	cell	5	Part 4 6.10.20 Table 6, Thursday type 1
+WEEKDAY.Thu.2	=WEEKDAY(DATE(2024;1;11);2)	cell	4	Part 4 6.10.20 Table 6, Thursday type 2
+WEEKDAY.Thu.3	=WEEKDAY(DATE(2024;1;11);3)	cell	3	Part 4 6.10.20 Table 6, Thursday type 3
+WEEKDAY.Thu.11	=WEEKDAY(DATE(2024;1;11);11)	cell	4	Part 4 6.10.20 Table 6, Thursday type 11
+WEEKDAY.Thu.12	=WEEKDAY(DATE(2024;1;11);12)	cell	3	Part 4 6.10.20 Table 6, Thursday type 12
+WEEKDAY.Thu.13	=WEEKDAY(DATE(2024;1;11);13)	cell	2	Part 4 6.10.20 Table 6, Thursday type 13
+WEEKDAY.Thu.14	=WEEKDAY(DATE(2024;1;11);14)	cell	1	Part 4 6.10.20 Table 6, Thursday type 14
+WEEKDAY.Thu.15	=WEEKDAY(DATE(2024;1;11);15)	cell	7	Part 4 6.10.20 Table 6, Thursday type 15
+WEEKDAY.Thu.16	=WEEKDAY(DATE(2024;1;11);16)	cell	6	Part 4 6.10.20 Table 6, Thursday type 16
+WEEKDAY.Thu.17	=WEEKDAY(DATE(2024;1;11);17)	cell	5	Part 4 6.10.20 Table 6, Thursday type 17
+WEEKDAY.Fri.1	=WEEKDAY(DATE(2024;1;12);1)	cell	6	Part 4 6.10.20 Table 6, Friday type 1
+WEEKDAY.Fri.2	=WEEKDAY(DATE(2024;1;12);2)	cell	5	Part 4 6.10.20 Table 6, Friday type 2
+WEEKDAY.Fri.3	=WEEKDAY(DATE(2024;1;12);3)	cell	4	Part 4 6.10.20 Table 6, Friday type 3
+WEEKDAY.Fri.11	=WEEKDAY(DATE(2024;1;12);11)	cell	5	Part 4 6.10.20 Table 6, Friday type 11
+WEEKDAY.Fri.12	=WEEKDAY(DATE(2024;1;12);12)	cell	4	Part 4 6.10.20 Table 6, Friday type 12
+WEEKDAY.Fri.13	=WEEKDAY(DATE(2024;1;12);13)	cell	3	Part 4 6.10.20 Table 6, Friday type 13
+WEEKDAY.Fri.14	=WEEKDAY(DATE(2024;1;12);14)	cell	2	Part 4 6.10.20 Table 6, Friday type 14
+WEEKDAY.Fri.15	=WEEKDAY(DATE(2024;1;12);15)	cell	1	Part 4 6.10.20 Table 6, Friday type 15
+WEEKDAY.Fri.16	=WEEKDAY(DATE(2024;1;12);16)	cell	7	Part 4 6.10.20 Table 6, Friday type 16
+WEEKDAY.Fri.17	=WEEKDAY(DATE(2024;1;12);17)	cell	6	Part 4 6.10.20 Table 6, Friday type 17
+WEEKDAY.Sat.1	=WEEKDAY(DATE(2024;1;13);1)	cell	7	Part 4 6.10.20 Table 6, Saturday type 1
+WEEKDAY.Sat.2	=WEEKDAY(DATE(2024;1;13);2)	cell	6	Part 4 6.10.20 Table 6, Saturday type 2
+WEEKDAY.Sat.3	=WEEKDAY(DATE(2024;1;13);3)	cell	5	Part 4 6.10.20 Table 6, Saturday type 3
+WEEKDAY.Sat.11	=WEEKDAY(DATE(2024;1;13);11)	cell	6	Part 4 6.10.20 Table 6, Saturday type 11
+WEEKDAY.Sat.12	=WEEKDAY(DATE(2024;1;13);12)	cell	5	Part 4 6.10.20 Table 6, Saturday type 12
+WEEKDAY.Sat.13	=WEEKDAY(DATE(2024;1;13);13)	cell	4	Part 4 6.10.20 Table 6, Saturday type 13
+WEEKDAY.Sat.14	=WEEKDAY(DATE(2024;1;13);14)	cell	3	Part 4 6.10.20 Table 6, Saturday type 14
+WEEKDAY.Sat.15	=WEEKDAY(DATE(2024;1;13);15)	cell	2	Part 4 6.10.20 Table 6, Saturday type 15
+WEEKDAY.Sat.16	=WEEKDAY(DATE(2024;1;13);16)	cell	1	Part 4 6.10.20 Table 6, Saturday type 16
+WEEKDAY.Sat.17	=WEEKDAY(DATE(2024;1;13);17)	cell	7	Part 4 6.10.20 Table 6, Saturday type 17
+WEEKDAY.Wed.0	=WEEKDAY(DATE(2024;1;10);0)	cell	-	type not listed in 1.3 Table 6; spec gives no value or error rule
+WEEKDAY.Wed.4	=WEEKDAY(DATE(2024;1;10);4)	cell	-	type not listed in 1.3 Table 6; spec gives no value or error rule
+WEEKDAY.Wed.10	=WEEKDAY(DATE(2024;1;10);10)	cell	-	type not listed in 1.3 Table 6; spec gives no value or error rule
+WEEKDAY.Wed.18	=WEEKDAY(DATE(2024;1;10);18)	cell	-	type not listed in 1.3 Table 6; spec gives no value or error rule
+WEEKDAY.Wed.m1	=WEEKDAY(DATE(2024;1;10);-1)	cell	-	type not listed in 1.3 Table 6; spec gives no value or error rule
+WEEKDAY.Wed.2p7	=WEEKDAY(DATE(2024;1;10);2.7)	cell	-	non-integer Type; conversion to Integer is implementation-defined (6.3.6)
+WEEKDAY.Wed.default	=WEEKDAY(DATE(2024;1;10))	cell	4	Type omitted defaults to 1 (6.10.20 syntax); Wednesday type 1 = 4
+WEEKDAY.Sat.default	=WEEKDAY(DATE(2024;1;13))	cell	7	Type omitted defaults to 1; Saturday = 7
+RECEIVED.lt.12m	=RECEIVED(DATE(2024;1;1);DATE(2025;1;1);1000;0.05)	cell	1052.63157895	Investment/(1-Discount*YEARFRAC), basis 0 (30/360) YEARFRAC=1
+RECEIVED.lt.6m	=RECEIVED(DATE(2024;1;1);DATE(2024;7;1);1000;0.05)	cell	1025.64102564	basis 0 YEARFRAC=180/360=0.5
+RECEIVED.eq	=RECEIVED(DATE(2024;1;1);DATE(2024;1;1);1000;0.05)	cell	-	Settlement = Maturity violates constraint Settlement < Maturity; no value specified
+RECEIVED.gt	=RECEIVED(DATE(2025;1;1);DATE(2024;1;1);1000;0.05)	cell	-	Settlement > Maturity violates constraint Settlement < Maturity; no value specified
+DCOUNT.name.crit	=DCOUNT(R1:T6;"Name";V1:V2)	cell	0	Age>=30 matches 4 records; Name is text: COUNT 0, COUNTA 4
+DCOUNT.score.crit	=DCOUNT(R1:T6;"Score";V1:V2)	cell	2	Age>=30 records have Score n/a, 15, empty, 25: COUNT 2, COUNTA 3
+DCOUNT.namecase	=DCOUNT(R1:T6;"score";V1:V2)	cell	2	4.11.10: field names should match case-insensitively
+DCOUNT.idx.crit	=DCOUNT(R1:T6;3;V1:V2)	cell	2	4.11.10: Number field selects column 3 (Score)
+DCOUNT.zero.crit	=DCOUNT(R1:T6;0;V1:V2)	cell	#ERR	KNOWN DEVIATION, kept on purpose: 0 means the whole database in AOO (legacy, documented in its help); 4.11.10: Number field is a positive integer; field 0 does not exist, so Error
+DCOUNT.badfield	=DCOUNT(R1:T6;9;V1:V2)	cell	#ERR	4.11.10: nonexistent field returns Error
+DCOUNT.badname	=DCOUNT(R1:T6;"Nope";V1:V2)	cell	#ERR	4.11.10: nonexistent field name returns Error
+DCOUNT.omit.crit	=DCOUNT(R1:T6;;V1:V2)	cell	4	Field omitted: count of all records satisfying criteria (Age>=30 = 4)
+DCOUNT.omit.name	=DCOUNT(R1:T6;;Y1:Y2)	cell	1	Field omitted, criteria Name=A matches 1 record
+DCOUNT.two.param	=DCOUNT(R1:T6;V1:V2)	cell	-	syntax is D ; [F] ; C, separators required; the two-parameter form is not listed
+DCOUNT.emptycrit	=DCOUNT(R1:T6;"Age";W1:W2)	cell	0	KNOWN DEVIATION, kept on purpose: one reading of 4.11.11; AOO ignores empty criteria cells (documented in its help); 4.11.11: empty criterion cell is the numeric value 0; no record has Age 0
+DCOUNTA.name.crit	=DCOUNTA(R1:T6;"Name";V1:V2)	cell	4	Age>=30 matches 4 records; Name is text: COUNT 0, COUNTA 4
+DCOUNTA.score.crit	=DCOUNTA(R1:T6;"Score";V1:V2)	cell	3	Age>=30 records have Score n/a, 15, empty, 25: COUNT 2, COUNTA 3
+DCOUNTA.namecase	=DCOUNTA(R1:T6;"score";V1:V2)	cell	3	4.11.10: field names should match case-insensitively
+DCOUNTA.idx.crit	=DCOUNTA(R1:T6;3;V1:V2)	cell	3	4.11.10: Number field selects column 3 (Score)
+DCOUNTA.zero.crit	=DCOUNTA(R1:T6;0;V1:V2)	cell	#ERR	KNOWN DEVIATION, kept on purpose: 0 means the whole database in AOO (legacy, documented in its help); 4.11.10: Number field is a positive integer; field 0 does not exist, so Error
+DCOUNTA.badfield	=DCOUNTA(R1:T6;9;V1:V2)	cell	#ERR	4.11.10: nonexistent field returns Error
+DCOUNTA.badname	=DCOUNTA(R1:T6;"Nope";V1:V2)	cell	#ERR	4.11.10: nonexistent field name returns Error
+DCOUNTA.omit.crit	=DCOUNTA(R1:T6;;V1:V2)	cell	4	Field omitted: count of all records satisfying criteria (Age>=30 = 4)
+DCOUNTA.omit.name	=DCOUNTA(R1:T6;;Y1:Y2)	cell	1	Field omitted, criteria Name=A matches 1 record
+DCOUNTA.two.param	=DCOUNTA(R1:T6;V1:V2)	cell	-	syntax is D ; [F] ; C, separators required; the two-parameter form is not listed
+DCOUNTA.emptycrit	=DCOUNTA(R1:T6;"Age";W1:W2)	cell	0	KNOWN DEVIATION, kept on purpose: one reading of 4.11.11; AOO ignores empty criteria cells (documented in its help); 4.11.11: empty criterion cell is the numeric value 0; no record has Age 0
+IF.a.true	=IF(1=1)	cell	1	6.15.4: IfTrue is TRUE (case a); TRUE as number 1
+IF.a.false	=IF(1=2)	cell	0	6.15.4: IfFalse is FALSE (case a); FALSE as number 0
+IF.b.true	=IF(1=1;)	cell	0	6.15.4: IfTrue null is 0 (case b); TRUE as number 1
+IF.b.false	=IF(1=2;)	cell	0	6.15.4: IfFalse is FALSE with 2 parameters (case b); FALSE as number 0
+IF.c.true	=IF(1=1;5)	cell	5	6.15.4: IfTrue (case c); TRUE as number 1
+IF.c.false	=IF(1=2;5)	cell	0	6.15.4: IfFalse is FALSE with 2 parameters (case c); FALSE as number 0
+IF.d.true	=IF(1=1;;)	cell	0	6.15.4: IfTrue null is 0 (case d); TRUE as number 1
+IF.d.false	=IF(1=2;;)	cell	0	6.15.4: IfFalse null is 0 (case d); FALSE as number 0
+IF.e.true	=IF(1=1;;7)	cell	0	6.15.4: IfTrue null is 0 (case e); TRUE as number 1
+IF.e.false	=IF(1=2;;7)	cell	7	6.15.4: IfFalse (case e); FALSE as number 0
+IF.f.true	=IF(1=1;5;)	cell	5	6.15.4: IfTrue (case f); TRUE as number 1
+IF.f.false	=IF(1=2;5;)	cell	0	6.15.4: IfFalse null is 0 (case f); FALSE as number 0
+IF.g.true	=IF(1=1;5;7)	cell	5	6.15.4: IfTrue (case g); TRUE as number 1
+IF.g.false	=IF(1=2;5;7)	cell	7	6.15.4: IfFalse (case g); FALSE as number 0
+IF.text.true	=IF(1=1;"a";"b")	cell	s:a	control
+IF.text.false	=IF(1=2;"a";"b")	cell	s:b	control
+SYN.sum.control	=SUM(1)	cell	1	control
+SYN.sum.trail	=SUM(1;)	cell	-	compile behaviour only
+SYN.sum.lead	=SUM(;1)	cell	-	compile behaviour only
+SYN.sum.empty	=SUM()	cell	-	compile behaviour only
+SYN.sum.mid	=SUM(1;;2)	cell	-	compile behaviour only
+SYN.semi	=(;)	cell	-	compile behaviour only
+SYN.parens	=()	cell	-	compile behaviour only
+SYN.inline.trail	={1;}	cell	-	compile behaviour only (inline array with empty element)
+SYN.sum.space	=SUM (1)	cell	-	whitespace before parenthesis; compile behaviour and read-back only
+VLOOKUP.range.exact.cell	=VLOOKUP(30;D1:F5;2;0)	cell	33	6.14.12 VLOOKUP exact, range source
+VLOOKUP.range.exact.arr	=VLOOKUP(30;D1:F5;2;0)	array	33	6.14.12 VLOOKUP exact, range source
+VLOOKUP.range.col3.cell	=VLOOKUP(30;D1:F5;3;0)	cell	303	6.14.12 VLOOKUP exact, third column
+VLOOKUP.range.col3.arr	=VLOOKUP(30;D1:F5;3;0)	array	303	6.14.12 VLOOKUP exact, third column
+VLOOKUP.range.sorted.cell	=VLOOKUP(35;D1:F5;2)	cell	33	6.14.12 VLOOKUP sorted: largest entry <= lookup
+VLOOKUP.range.sorted.arr	=VLOOKUP(35;D1:F5;2)	array	33	6.14.12 VLOOKUP sorted: largest entry <= lookup
+VLOOKUP.range.nomatch.cell	=VLOOKUP(35;D1:F5;2;0)	cell	#N/A	6.14.12 VLOOKUP exact, no match is #N/A
+VLOOKUP.range.nomatch.arr	=VLOOKUP(35;D1:F5;2;0)	array	#N/A	6.14.12 VLOOKUP exact, no match is #N/A
+VLOOKUP.range.below.cell	=VLOOKUP(5;D1:F5;2)	cell	#N/A	6.14.12 VLOOKUP no data <= lookup is #N/A
+VLOOKUP.range.below.arr	=VLOOKUP(5;D1:F5;2)	array	#N/A	6.14.12 VLOOKUP no data <= lookup is #N/A
+VLOOKUP.inline.exact.cell	=VLOOKUP(30;{10;11|20;22|30;33};2;0)	cell	33	6.14.12 VLOOKUP inline-array source
+VLOOKUP.inline.exact.arr	=VLOOKUP(30;{10;11|20;22|30;33};2;0)	array	33	6.14.12 VLOOKUP inline-array source
+VLOOKUP.inline.sorted.cell	=VLOOKUP(35;{10;11|20;22|30;33|40;44};2)	cell	33	6.14.12 VLOOKUP inline-array source, sorted
+VLOOKUP.inline.sorted.arr	=VLOOKUP(35;{10;11|20;22|30;33|40;44};2)	array	33	6.14.12 VLOOKUP inline-array source, sorted
+VLOOKUP.nested.exact.cell	=VLOOKUP(30;D1:E5*1;2;0)	cell	33	6.14.12 VLOOKUP nested-expression source (ForceArray)
+VLOOKUP.nested.exact.arr	=VLOOKUP(30;D1:E5*1;2;0)	array	33	6.14.12 VLOOKUP nested-expression source (ForceArray)
+HLOOKUP.range.exact.cell	=HLOOKUP(30;H1:L3;2;0)	cell	33	6.14.5 HLOOKUP exact, range source
+HLOOKUP.range.exact.arr	=HLOOKUP(30;H1:L3;2;0)	array	33	6.14.5 HLOOKUP exact, range source
+HLOOKUP.range.row3.cell	=HLOOKUP(30;H1:L3;3;0)	cell	303	6.14.5 HLOOKUP exact, third row
+HLOOKUP.range.row3.arr	=HLOOKUP(30;H1:L3;3;0)	array	303	6.14.5 HLOOKUP exact, third row
+HLOOKUP.range.sorted.cell	=HLOOKUP(35;H1:L3;2)	cell	33	6.14.5 HLOOKUP sorted: largest entry <= lookup
+HLOOKUP.range.sorted.arr	=HLOOKUP(35;H1:L3;2)	array	33	6.14.5 HLOOKUP sorted: largest entry <= lookup
+HLOOKUP.range.nomatch.cell	=HLOOKUP(35;H1:L3;2;0)	cell	#N/A	6.14.5 HLOOKUP exact, no match is #N/A
+HLOOKUP.range.nomatch.arr	=HLOOKUP(35;H1:L3;2;0)	array	#N/A	6.14.5 HLOOKUP exact, no match is #N/A
+HLOOKUP.inline.exact.cell	=HLOOKUP(30;{10;20;30|11;22;33};2;0)	cell	33	6.14.5 HLOOKUP inline-array source
+HLOOKUP.inline.exact.arr	=HLOOKUP(30;{10;20;30|11;22;33};2;0)	array	33	6.14.5 HLOOKUP inline-array source
+HLOOKUP.inline.sorted.cell	=HLOOKUP(35;{10;20;30;40|11;22;33;44};2)	cell	33	6.14.5 HLOOKUP inline-array source, sorted
+HLOOKUP.inline.sorted.arr	=HLOOKUP(35;{10;20;30;40|11;22;33;44};2)	array	33	6.14.5 HLOOKUP inline-array source, sorted
+HLOOKUP.nested.exact.cell	=HLOOKUP(30;H1:L2*1;2;0)	cell	33	6.14.5 HLOOKUP nested-expression source (ForceArray)
+HLOOKUP.nested.exact.arr	=HLOOKUP(30;H1:L2*1;2;0)	array	33	6.14.5 HLOOKUP nested-expression source (ForceArray)
+MATCH.range.exact.cell	=MATCH(30;D1:D5;0)	cell	3	6.14.9 MATCH exact, column range
+MATCH.range.exact.arr	=MATCH(30;D1:D5;0)	array	3	6.14.9 MATCH exact, column range
+MATCH.range.sorted.cell	=MATCH(35;D1:D5)	cell	3	6.14.9 MATCH MatchType 1: largest value <= search
+MATCH.range.sorted.arr	=MATCH(35;D1:D5)	array	3	6.14.9 MATCH MatchType 1: largest value <= search
+MATCH.range.nomatch.cell	=MATCH(35;D1:D5;0)	cell	#N/A	6.14.9 MATCH exact, no match is #N/A
+MATCH.range.nomatch.arr	=MATCH(35;D1:D5;0)	array	#N/A	6.14.9 MATCH exact, no match is #N/A
+MATCH.row.exact.cell	=MATCH(30;H1:L1;0)	cell	3	6.14.9 MATCH exact, row range
+MATCH.row.exact.arr	=MATCH(30;H1:L1;0)	array	3	6.14.9 MATCH exact, row range
+MATCH.inline.row.cell	=MATCH(30;{10;20;30;40};0)	cell	3	6.14.9 MATCH inline-array row source
+MATCH.inline.row.arr	=MATCH(30;{10;20;30;40};0)	array	3	6.14.9 MATCH inline-array row source
+MATCH.inline.col.cell	=MATCH(30;{10|20|30|40};0)	cell	3	6.14.9 MATCH inline-array column source
+MATCH.inline.col.arr	=MATCH(30;{10|20|30|40};0)	array	3	6.14.9 MATCH inline-array column source
+MATCH.nested.and.cell	=MATCH(1;(A1:A9="x")*(B1:B9="y");0)	cell	3	6.14.9 MATCH nested-expression source: first row with A=x and B=y
+MATCH.nested.and.arr	=MATCH(1;(A1:A9="x")*(B1:B9="y");0)	array	3	6.14.9 MATCH nested-expression source: first row with A=x and B=y
+MATCH.nested.mul.cell	=MATCH(30;D1:D5*1;0)	cell	3	6.14.9 MATCH nested-expression source
+MATCH.nested.mul.arr	=MATCH(30;D1:D5*1;0)	array	3	6.14.9 MATCH nested-expression source
+MATCH.nested.sorted.cell	=MATCH(35;D1:D5*1;1)	cell	3	6.14.9 MATCH nested-expression source, MatchType 1
+MATCH.nested.sorted.arr	=MATCH(35;D1:D5*1;1)	array	3	6.14.9 MATCH nested-expression source, MatchType 1
+ISECT.abs.row3	=ABS(D1:D5)	cell@3	30	3.3 1.2.2: column-vector range in scalar parameter, intersect formula row 3
+ISECT.abs.row7	=ABS(D1:D5)	cell@7	#ERR	3.3 note 4: no intersection gives #N/A or a more specific Error
+ISECT.match.row4	=MATCH(D1:D5;D1:D5;0)	cell@4	4	Search is Scalar: implicit intersection gives D4=40, position 4
+ISECT.match.row2	=MATCH(D1:D5;D1:D5;0)	cell@2	2	Search is Scalar: implicit intersection gives D2=20, position 2
+ISECT.match.row7	=MATCH(D1:D5;D1:D5;0)	cell@7	#ERR	no intersection at row 7: #N/A or a more specific Error
+ISECT.vlookup.row2	=VLOOKUP(D1:D5;D1:F5;2;0)	cell@2	22	Lookup is Any, not ForceArray: intersection D2=20, then column 2 = 22
+LINEST.range.cell	=LINEST(N1:N6;O1:O6)	cell	2.28571428571	6.18.41 LINEST: plain cell shows element (0;0) by 3.2.2/3.3 1.1 = slope
+LINEST.range.arr	=LINEST(N1:N6;O1:O6)	array:2x1	2.28571428571|0.666666666667	6.18.41 LINEST: slope, intercept
+LINEST.range.stats	=LINEST(N1:N6;O1:O6;1;1)	array:2x5	2.28571428571|0.666666666667|0.164957219768|0.64241607444|0.979591836735|0.690065559342|192|4|91.4285714286|1.90476190476	6.18.41 LINEST Table 29 with Stats TRUE, values from the 1.3 formulas
+LINEST.range.statscell	=LINEST(N1:N6;O1:O6;1;1)	cell	2.28571428571	6.18.41 LINEST: plain cell with Stats shows element (0;0)
+LINEST.nox.cell	=LINEST(N1:N6)	cell	2.28571428571	6.18.41 LINEST: KnownX omitted = 1,2,3,...
+LINEST.nox.arr	=LINEST(N1:N6)	array:2x1	2.28571428571|0.666666666667	6.18.41 LINEST: KnownX omitted = 1,2,3,...
+LINEST.emptyx.arr	=LINEST(N1:N6;;1;0)	array:2x1	2.28571428571|0.666666666667	6.18.41 LINEST: KnownX empty parameter = 1,2,3,...
+LINEST.noconst.cell	=LINEST(N1:N6;O1:O6;0)	cell	2.43956043956	6.18.41 LINEST: Const FALSE, slope through origin
+LINEST.noconst.arr	=LINEST(N1:N6;O1:O6;0)	array:2x1	2.43956043956|0	6.18.41 LINEST: Const FALSE, a = 0
+LINEST.inline.cell	=LINEST({3;5;8;9;13;14};{1;2;3;4;5;6})	cell	2.28571428571	6.18.41 LINEST inline-array sources
+LINEST.inline.arr	=LINEST({3;5;8;9;13;14};{1;2;3;4;5;6})	array:2x1	2.28571428571|0.666666666667	6.18.41 LINEST inline-array sources
+LINEST.nested.cell	=LINEST(N1:N6*1;O1:O6*1)	cell	2.28571428571	6.18.41 LINEST nested-expression sources (ForceArray)
+LINEST.nested.arr	=LINEST(N1:N6*1;O1:O6*1)	array:2x1	2.28571428571|0.666666666667	6.18.41 LINEST nested-expression sources (ForceArray)
+LINEST.k2.const	=LINEST({3;5};{1;2})	cell	#ERR	KNOWN DEVIATION, kept on purpose: AOO allows zero degrees of freedom (two-point regression); 6.18.41 LINEST: Const TRUE and k <= n+1 (k=2, n=1) returns an error
+LINEST.k1.noconst	=LINEST({3};{1};0)	cell	#ERR	KNOWN DEVIATION, kept on purpose: AOO allows zero degrees of freedom (two-point regression); 6.18.41 LINEST: Const FALSE and k <= n (k=1, n=1) returns an error
+LINEST.k2.noconst	=LINEST({3;5};{1;2};0)	cell	2.6	6.18.41 LINEST: Const FALSE, k=2 > n=1 is valid, slope through origin
+LINEST.k3.cell	=LINEST({3;5;8};{1;2;3})	cell	2.5	6.18.41 LINEST: k=3 > n+1, valid
+LINEST.constmissing	=LINEST(N1:N6;O1:O6;)	cell	-	empty Const parameter is not in the 1.3 syntax; current behaviour only
+LINEST.nonnum	=LINEST({3;"a";8};{1;2;3})	cell	#ERR	6.18.41 LINEST: an entry that does not convert to Number is an error
+LOGEST.range.cell	=LOGEST(P1:P6;O1:O6)	cell	1.96506174	6.18.42 LOGEST: plain cell shows element (0;0) = e^b
+LOGEST.range.arr	=LOGEST(P1:P6;O1:O6)	array:2x1	1.96506174|1.00150869124	6.18.42 LOGEST: e^b, e^a
+LOGEST.range.stats	=LOGEST(P1:P6;O1:O6;1;1)	array:2x5	-	6.18.42 LOGEST with Stats: statistics of the linearized fit not recomputed here; current behaviour only
+LOGEST.nox.cell	=LOGEST(P1:P6)	cell	1.96506174	6.18.42 LOGEST: KnownX omitted = 1,2,3,...
+LOGEST.nox.arr	=LOGEST(P1:P6)	array:2x1	1.96506174|1.00150869124	6.18.42 LOGEST: KnownX omitted = 1,2,3,...
+LOGEST.inline.cell	=LOGEST({2;4;7;15;30;58};{1;2;3;4;5;6})	cell	1.96506174	6.18.42 LOGEST inline-array sources
+LOGEST.inline.arr	=LOGEST({2;4;7;15;30;58};{1;2;3;4;5;6})	array:2x1	1.96506174|1.00150869124	6.18.42 LOGEST inline-array sources
+LOGEST.nested.cell	=LOGEST(P1:P6*1;O1:O6*1)	cell	1.96506174	6.18.42 LOGEST nested-expression sources (ForceArray)
+LOGEST.nested.arr	=LOGEST(P1:P6*1;O1:O6*1)	array:2x1	1.96506174|1.00150869124	6.18.42 LOGEST nested-expression sources (ForceArray)
+LOGEST.negy	=LOGEST({3;-5;8};{1;2;3})	cell	#ERR	6.18.42 LOGEST: a negative entry in KnownY is an error
+FTEST.11_3.cell	=FTEST(AH1:AH11;AI1:AI3)	cell	0.8364238848	6.18.30 FTEST: n1=11, n2=3, s1^2/s2^2=1.05, 2*min(Ptail,1-Ptail)
+FTEST.11_3.arr	=FTEST(AH1:AH11;AI1:AI3)	array	0.8364238848	6.18.30 FTEST: n1=11, n2=3, s1^2/s2^2=1.05
+FTEST.3_11.cell	=FTEST(AI1:AI3;AH1:AH11)	cell	0.8364238848	6.18.30 FTEST: arguments swapped, ratio 1/1.05, F(2,10)
+FTEST.equal.cell	=FTEST(AJ1:AJ4;AK1:AK4)	cell	1	6.18.30 FTEST: identical data, ratio 1, Ptail=0.5, result 1
+FTEST.inline.cell	=FTEST({6;6;6;6;3;2;1;2;6;4;2};{1;3;5})	cell	0.8364238848	6.18.30 FTEST inline-array sources, same data as FTEST.11_3
+FTEST.nested.cell	=FTEST(AH1:AH11*1;AI1:AI3*1)	cell	0.8364238848	6.18.30 FTEST nested-expression sources, same data
+FTEST.one	=FTEST(AI1:AI1;AI1:AI3)	cell	-	constraint (at least 2 numbers) violated; the Error is not stated for constraint violations here
+FTEST.zerovar	=FTEST({1;1;1};{1;3;5})	cell	-	constraint (nonzero variances) violated; the Error is not stated
+DAYS360.us.false	=DAYS360(DATE(2024;2;29);DATE(2024;3;31);FALSE)	cell	30	6.10.7 DAYS360: US method, start last day of Feb becomes 30, end 31 becomes 30
+DAYS360.eu.true	=DAYS360(DATE(2024;2;29);DATE(2024;3;31);TRUE)	cell	31	6.10.7 DAYS360: European method, Feb days never changed, end 31 becomes 30
+DAYS360.omit	=DAYS360(DATE(2024;2;29);DATE(2024;3;31))	cell	30	6.10.7 DAYS360: Method defaults to FALSE
+DAYS360.swap.true	=DAYS360(DATE(2024;3;31);DATE(2024;2;29);TRUE)	cell	-31	6.10.7 DAYS360: European method swaps dates, sign -1
+DAYS360.swap.false	=DAYS360(DATE(2024;3;31);DATE(2024;2;29);FALSE)	cell	-31	6.10.7 DAYS360: US method never swaps
+DAYS360.feb23.false	=DAYS360(DATE(2023;2;28);DATE(2023;3;31);FALSE)	cell	30	6.10.7 DAYS360: US method, 28 Feb 2023 is last day of Feb -> 30
+DAYS360.feb23.true	=DAYS360(DATE(2023;2;28);DATE(2023;3;31);TRUE)	cell	32	6.10.7 DAYS360: European method, 28 stays
+DAYS360.num0	=DAYS360(DATE(2024;2;29);DATE(2024;3;31);0)	cell	-	Method as a number: conversion not exercised by the 1.3 text here
+DAYS360.num1	=DAYS360(DATE(2024;2;29);DATE(2024;3;31);1)	cell	-	Method as a number: conversion not exercised by the 1.3 text here
+CELL.addr.other	=CELL("ADDRESS";$Other.B2)	cell	-	6.13.3: sheet name included for another sheet; the text form is not specified
+CELL.addr.other.range	=CELL("ADDRESS";$Other.B2:C3)	cell	-	6.13.3: top-left cell of the range; text form not specified
+CELL.addr.same	=CELL("ADDRESS";B2)	cell	-	6.13.3: same sheet, no sheet name; text form not specified
+CELL.col.other	=CELL("COL";$Other.B2)	cell	2	6.13.3 Table 17: column number
+CELL.row.other	=CELL("ROW";$Other.B2)	cell	2	6.13.3 Table 17: row number
+CELL.sheet.other	=CELL("SHEET";$Other.B2)	cell	-	6.13.3 Table 17: sheet number; numbering base not stated
+BESSELK.x0	=BESSELK(0;1)	cell	-	6.16.14/15: constraint X <> 0; no value is given for x <= 0
+BESSELK.xm1	=BESSELK(-1;1)	cell	-	6.16.14/15: constraint X <> 0; no value is given for x <= 0
+BESSELK.xm0p5	=BESSELK(-0.5;1)	cell	-	6.16.14/15: constraint X <> 0; no value is given for x <= 0
+BESSELK.n0.x0	=BESSELK(0;0)	cell	-	constraint X <> 0 violated
+BESSELY.x0	=BESSELY(0;1)	cell	-	6.16.14/15: constraint X <> 0; no value is given for x <= 0
+BESSELY.xm1	=BESSELY(-1;1)	cell	-	6.16.14/15: constraint X <> 0; no value is given for x <= 0
+BESSELY.xm0p5	=BESSELY(-0.5;1)	cell	-	6.16.14/15: constraint X <> 0; no value is given for x <= 0
+BESSELY.n0.x0	=BESSELY(0;0)	cell	-	constraint X <> 0 violated
+BESSELK.ctl.K0	=BESSELK(1;0)	cell	~0.421024438241	control: K0(1), integral definition evaluated numerically; ~ = relative tolerance 1e-6 (the build is accurate to about 1e-8)
+BESSELK.ctl.K1	=BESSELK(1;1)	cell	~0.601907230197	control: K1(1); ~ tolerance
+BESSELY.ctl.Y0	=BESSELY(1;0)	cell	~0.0882569642157	control: Y0(1); ~ tolerance
+BESSELY.ctl.Y1	=BESSELY(1;1)	cell	~-0.7812128213	control: Y1(1); ~ tolerance
+FARR.sumprod.match	=SUMPRODUCT(--ISNUMBER(MATCH(D1:D5;D1:D5;0)))	cell	5	ForceArray context of SUMPRODUCT reaches the scalar parameter of MATCH (must keep working in a plain cell)
+FARR.sumprod.vlookup	=SUMPRODUCT(VLOOKUP(D1:D3;D1:E5;2;0))	cell	66	same for VLOOKUP: 11+22+33
+FARR.sumprod.abs	=SUMPRODUCT(ABS(D1:D3))	cell	60	control without lookup function
