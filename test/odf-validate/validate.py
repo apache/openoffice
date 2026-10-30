@@ -20,16 +20,19 @@
 #**************************************************************
 
 # usage: validate.py <outdir> <val.json>
-# Validates every package in <outdir> against ODF 1.2 as written, against ODF 1.4 with the version rewritten ("14"),
-# and against ODF 1.2 after removing foreign elements and attributes ("12x", Part 1 2.2.2 B.1; manifest left as written).
+# Validates every package in <outdir> against ODF 1.2 as written, against ODF 1.3 and 1.4 with the version rewritten
+# ("13", "14"), and against ODF 1.2 and 1.3 after removing foreign elements and attributes ("12x", "13x"; Part 1 2.2.2 B.1;
+# manifest left as written apart from the version).
 import sys, os, re, zipfile, subprocess, json, shutil, importlib.util
 
 D = os.path.dirname(os.path.abspath(__file__))
 JING = ["java", "-jar", os.environ.get("ODFV_JING", "/Applications/XMLauthor/lib/jing.jar"), "-i"]
 SCH = {"12": (D + "/schema/OpenDocument-v1.2-os-schema.rng", D + "/schema/OpenDocument-v1.2-os-manifest-schema.rng"),
+       "13": (D + "/schema/OpenDocument-v1.3-schema.rng", D + "/schema/OpenDocument-v1.3-manifest-schema.rng"),
        "14": (D + "/schema/OpenDocument-v1.4-schema.rng", D + "/schema/OpenDocument-v1.4-manifest-schema.rng")}
 SCH["12x"] = SCH["12"]
-VERSIONS = ("12", "14", "12x")
+SCH["13x"] = SCH["13"]
+VERSIONS = ("12", "14", "12x", "13", "13x")
 _spec = importlib.util.spec_from_file_location("foreign", D + "/foreign.py")
 foreign = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(foreign)
@@ -50,7 +53,7 @@ def main():
         sys.exit("validate.py: <val.json> must live under " + os.path.join(D, "runs"))
     shutil.rmtree(work, ignore_errors=True)
     files = {v: ([], []) for v in VERSIONS}
-    mixed = foreign.mixed_elements(SCH["12"][0])
+    mixed = {"12x": foreign.mixed_elements(SCH["12"][0]), "13x": foreign.mixed_elements(SCH["13"][0])}
     skipped, bad_zip = [], []
     pkgs = sorted(p for p in os.listdir(outdir) if not p.startswith("."))
     for pkg in pkgs:
@@ -67,11 +70,11 @@ def main():
                 skipped.append(pkg + "/" + name); continue
             for v in VERSIONS:
                 t = text
-                if v == "14":
+                if v in ("12x", "13x") and not is_mani:
+                    t = foreign.strip_foreign(t, mixed[v])
+                if v in ("13", "13x", "14"):
                     attr = "manifest:version" if is_mani else "office:version"
-                    t = re.sub(attr + '="1.2"', attr + '="1.4"', t, count=1)
-                elif v == "12x" and not is_mani:
-                    t = foreign.strip_foreign(t, mixed)
+                    t = re.sub(attr + '="1.2"', attr + '="1.%s"' % v[1], t, count=1)
                 p = os.path.join(work, v, pkg, name)
                 os.makedirs(os.path.dirname(p), exist_ok=True)
                 open(p, "w", encoding="utf-8").write(t)
@@ -97,7 +100,7 @@ def main():
     json.dump({"packages": pkgs, "bad_zip": bad_zip, "mathml_skipped": skipped,
                "nfiles": len(files["12"][0]) + len(files["12"][1]), "errors": errors}, open(valjson, "w"))
     for v in VERSIONS:
-        print(f"ODF {v[0]}.{v[1]}{' extended, foreign content removed' if v == '12x' else ''}: {len(errors[v])} errors in {len({e[0].split('/')[0] for e in errors[v]})} of {len(pkgs)} packages")
+        print(f"ODF {v[0]}.{v[1]}{' extended, foreign content removed' if v.endswith('x') else ''}: {len(errors[v])} errors in {len({e[0].split('/')[0] for e in errors[v]})} of {len(pkgs)} packages")
     print(f"files validated: {len(files['12'][0]) + len(files['12'][1])}, MathML skipped: {len(skipped)}, bad zips: {bad_zip}")
     unparsed = [e for v in errors for e in errors[v] if e[0] == "?"]
     if unparsed:

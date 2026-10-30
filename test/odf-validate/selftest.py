@@ -32,6 +32,18 @@ checks = {
     "good.odt clean in 1.2 and 1.4": not errs("12", "good.odt") and not errs("14", "good.odt"),
     "bad.odt flags text:bogus in 1.2 and 1.4": all(any('"text:bogus"' in m for m in errs(v, "bad.odt")) for v in ("12", "14")),
     "wrongver.odt flags office:version in 1.2 and 1.4": all(any('office:version' in m for m in errs(v, "wrongver.odt")) for v in ("12", "14")),
+    "13: good.odt clean in 1.3 and 1.3 extended": not errs("13", "good.odt") and not errs("13x", "good.odt"),
+    "13: bad.odt flags text:bogus in 1.3 and 1.3 extended": all(any('"text:bogus"' in m for m in errs(v, "bad.odt")) for v in ("13", "13x")),
+    "13: wrongver.odt flags office:version in 1.3 and 1.3 extended": all(any("office:version" in m for m in errs(v, "wrongver.odt")) for v in ("13", "13x")),
+    "13: new13.odt (text:drop-down) invalid in 1.2, valid in 1.3 and 1.3 extended": bool(errs("12", "new13.odt")) and not errs("13", "new13.odt") and not errs("13x", "new13.odt"),
+    "13: extforeign.odt invalid as written, valid once foreign content is removed": bool(errs("13", "extforeign.odt")) and not errs("13x", "extforeign.odt"),
+    "13: meta:creator-initials invalid in 1.2, valid in 1.3 and 1.3 extended; the note without it is clean in all": any('"meta:creator-initials"' in m for m in errs("12", "newinit.odt"))
+        and not errs("13", "newinit.odt") and not errs("13x", "newinit.odt") and not any(errs(v, "baseinit.odt") for v in ("12", "13", "13x")),
+    "13: chart:coordinate-region invalid in 1.2, valid in 1.3 and 1.3 extended; the chart without it is clean in all": any('"chart:coordinate-region"' in m for m in errs("12", "newregion.odc"))
+        and not errs("13", "newregion.odc") and not errs("13x", "newregion.odc") and not any(errs(v, "baseregion.odc") for v in ("12", "13", "13x")),
+    "13: style:scale-to-X/Y together with style:scale-to invalid in 1.3 and 1.3 extended": all(any('"style:scale-to"' in m for m in errs(v, "scaleboth.odt")) for v in ("13", "13x")),
+    "13: style:scale-to-X/Y alone and style:scale-to alone valid in 1.3 and 1.3 extended; X/Y invalid in 1.2": not any(errs(v, p) for v in ("13", "13x") for p in ("scalexy.odt", "scaleone.odt"))
+        and any('"style:scale-to-X"' in m for m in errs("12", "scalexy.odt")) and not errs("12", "scaleone.odt"),
     "mathobj.odt MathML object skipped": d["mathml_skipped"] == ["mathobj.odt/Object 1/content.xml"] and not errs("12", "mathobj.odt"),
     "no unparsed jing output": not any(e[0] == "?" for v in d["errors"] for e in d["errors"][v]),
 }

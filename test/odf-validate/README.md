@@ -1,7 +1,7 @@
 # ODF validation harness
 
 This harness has OpenOffice save a corpus of documents as ODF, checks every
-saved package against the OASIS ODF 1.2 and ODF 1.4 RELAX NG schemas with
+saved package against the OASIS ODF 1.2, ODF 1.3 and ODF 1.4 RELAX NG schemas with
 jing, and reports the errors grouped by kind. Comparing those reports against
 a baseline shows whether an export change fixed errors or introduced new ones.
 
@@ -43,8 +43,9 @@ The steps:
   - It resumes where it left off, kills a hung office and continues, and
     stops at the first crash.
 - `validate.py` checks content, styles, meta, settings and manifest streams
-  against 1.2 as written, against 1.4 with `office:version` rewritten, and
-  against 1.2 as an extended document (`12x`): `foreign.py` first removes
+  against 1.2 as written, against 1.3 (`13`) and 1.4 (`14`) with
+  `office:version` rewritten, and against 1.2 and 1.3 as extended documents
+  (`12x`, `13x`): `foreign.py` first removes
   foreign elements and attributes as Part 1 §2.2.2 B.1 and §3.17 describe (the
   manifest is left as written). Use `report.py <val.json> <kinds.json> 12x` to
   measure what is wrong apart from foreign content.
@@ -161,6 +162,23 @@ solver into the app copy:
 
 `roundtrip.py <port> <file> <checks.json>` loads a document and compares UNO
 expressions with expected values; `--capture <out.json>` records them instead.
+
+## Formula evaluation baseline (calcval)
+
+    ./start.sh calcval 2792
+    ./runpy.sh calcval.py 2792 calcval-cases.tsv runs/phase4/baseline.json
+    python3 -I calcval.py --compare runs/phase4/baseline.json runs/phase4/new.json
+
+`calcval.py` opens a new Calc document, writes the data area described in the
+header of `calcval-cases.tsv`, and for each case enters the formula in a fresh
+scratch cell (`cell`, `cell@N`) or range (`array:CxR`), recalculates, records
+the result type, `getError()`, `getString()`, `getValue()` and the formula as
+read back, then clears the scratch area. `expected` is the value the ODF 1.3
+Part 4 text requires (`-` records the current behaviour only); the status of
+each case is `match`, `mismatch`, `record` or `exception`. The run prints
+every mismatch, which are the current deviations from ODF 1.3. `--compare`
+lists each case whose recorded result changed (exit 1 if any). RECEIVED and
+BESSELK/BESSELY are Analysis add-ins and are entered by programmatic name.
 
 ## Notes
 
