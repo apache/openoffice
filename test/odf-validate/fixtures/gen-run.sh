@@ -17,11 +17,11 @@
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-# usage: fixtures/gen-run.sh <area> <strict|ext> <port> <outdir>
+# usage: fixtures/gen-run.sh <area> <strict|ext|v13|x13> <port> <outdir>
 # Starts a headless office saving in the given ODF mode (profile created as drive.sh does), runs fixtures/<area>/make.py <port> <outdir>, stops it.
 source ${0:A:h:h}/env.sh
 area=$1; mode=$2; port=$3; out=$4
-case $mode in ext) v=3;; strict) v=4;; *) echo "gen-run.sh: unknown mode $mode" >&2; exit 2;; esac
+case $mode in ext) v=3;; strict) v=4;; v13) v=5;; x13) v=6;; *) echo "gen-run.sh: unknown mode $mode" >&2; exit 2;; esac
 [[ -f $D/fixtures/$area/make.py ]] || { echo "gen-run.sh: no fixtures/$area/make.py" >&2; exit 2; }
 prof=t12_${area}_$mode
 /bin/rm -rf $D/runs/profile_$prof
