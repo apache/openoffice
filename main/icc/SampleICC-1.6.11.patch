@@ -2408,3 +2408,133 @@
 +#include "vetters.h"
  
  #include <sstream>
+diff --git misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile/create_CLUT_profile.cpp misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile/create_CLUT_profile.cpp
+index 3f77724..6ee59cc 100644
+--- misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile/create_CLUT_profile.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile/create_CLUT_profile.cpp
+@@ -81,7 +81,7 @@ using namespace std;
+ 
+ #include <getopt.h> // for getopt_long
+ #include "ICC_tool_exception.h"
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ // At the moment this is a hack; later we will figure out how to set HAS_GETOPT_LONG
+ // in the configure script.  Feel free to extend this to support your favorite platform.
+diff --git misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_display_profile/create_display_profile.cpp misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_display_profile/create_display_profile.cpp
+index ecc9260..b737445 100644
+--- misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_display_profile/create_display_profile.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_display_profile/create_display_profile.cpp
+@@ -77,7 +77,7 @@ using namespace std;
+ #include "IccUtil.h"
+ #include "IccProfile.h"
+ 
+-#include "Vetters.h"
++#include "vetters.h"
+ #include "CAT.h"
+ #include "CLUT.h"
+ 
+diff --git misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/create_probe/create_probe.cpp misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/create_probe/create_probe.cpp
+index d16345d..99e021d 100644
+--- misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/create_probe/create_probe.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/create_probe/create_probe.cpp
+@@ -94,7 +94,7 @@
+ 
+ #include <iostream>
+ using namespace std;
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ #ifdef __APPLE__
+ 
+diff --git misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/extract_probe_data/extract_probe_data.cpp misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/extract_probe_data/extract_probe_data.cpp
+index b77a75b..ff058e0 100644
+--- misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/extract_probe_data/extract_probe_data.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/Mac_OS_X/extract_probe_data/extract_probe_data.cpp
+@@ -82,7 +82,7 @@
+ #include <iostream>
+ using namespace std;
+ 
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ #ifdef __APPLE__
+ 
+diff --git misc/build/SampleICC-1.6.11/Contrib/examples/RSR/create_pretransform_curve.cpp misc/build/SampleICC-1.6.11/Contrib/examples/RSR/create_pretransform_curve.cpp
+index c48b644..5ca89ab 100644
+--- misc/build/SampleICC-1.6.11/Contrib/examples/RSR/create_pretransform_curve.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/examples/RSR/create_pretransform_curve.cpp
+@@ -79,7 +79,7 @@
+ #include <cmath>
+ using namespace std;
+ 
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ void
+ usage(ostream& s, const char* const my_name)
+diff --git misc/build/SampleICC-1.6.11/Contrib/tests/generate_device_codes/generate_device_codes.cpp misc/build/SampleICC-1.6.11/Contrib/tests/generate_device_codes/generate_device_codes.cpp
+index d8464d5..e3639a4 100644
+--- misc/build/SampleICC-1.6.11/Contrib/tests/generate_device_codes/generate_device_codes.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/tests/generate_device_codes/generate_device_codes.cpp
+@@ -74,7 +74,7 @@
+ #include <limits>
+ using namespace std;
+ 
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ void
+ usage(ostream& s, const char* const myName)
+diff --git misc/build/SampleICC-1.6.11/Contrib/tests/reconstruct_measurements/reconstruct_measurements.cpp misc/build/SampleICC-1.6.11/Contrib/tests/reconstruct_measurements/reconstruct_measurements.cpp
+index aeebad6..0660695 100644
+--- misc/build/SampleICC-1.6.11/Contrib/tests/reconstruct_measurements/reconstruct_measurements.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/tests/reconstruct_measurements/reconstruct_measurements.cpp
+@@ -76,7 +76,7 @@ using namespace std;
+ 
+ #include "ICC_tool_exception.h"
+ #include "Measurement_extractor.h"
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ void
+ processMeasurements(istream& in_s,
+diff --git misc/build/SampleICC-1.6.11/Contrib/tests/round_trip_PCS_LAB/round_trip_PCS_LAB.cpp misc/build/SampleICC-1.6.11/Contrib/tests/round_trip_PCS_LAB/round_trip_PCS_LAB.cpp
+index eef8726..4164338 100644
+--- misc/build/SampleICC-1.6.11/Contrib/tests/round_trip_PCS_LAB/round_trip_PCS_LAB.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/tests/round_trip_PCS_LAB/round_trip_PCS_LAB.cpp
+@@ -76,7 +76,7 @@ using namespace std;
+ 
+ #include "IccUtil.h"
+ #include "ICC_tool_exception.h"
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ icFloatNumber
+ deltaE(icFloatNumber* first_LAB, icFloatNumber* second_LAB)
+diff --git misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile_from_probe/create_CLUT_profile_from_probe.cpp misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile_from_probe/create_CLUT_profile_from_probe.cpp
+index 843323d..615c62b 100644
+--- misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile_from_probe/create_CLUT_profile_from_probe.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/CmdLine/create_CLUT_profile_from_probe/create_CLUT_profile_from_probe.cpp
+@@ -87,7 +87,7 @@ using namespace std;
+ 
+ #include "ICC_tool_exception.h"
+ #include "Stubs.h"
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ #include "IccDefs.h"
+ #include "IccProfile.h"
+diff --git misc/build/SampleICC-1.6.11/Contrib/tests/flatten_AToB_tag/flatten_AToB_tag.cpp misc/build/SampleICC-1.6.11/Contrib/tests/flatten_AToB_tag/flatten_AToB_tag.cpp
+index ef0efe1..c7b058a 100644
+--- misc/build/SampleICC-1.6.11/Contrib/tests/flatten_AToB_tag/flatten_AToB_tag.cpp
++++ misc/build/SampleICC-1.6.11/Contrib/tests/flatten_AToB_tag/flatten_AToB_tag.cpp
+@@ -87,7 +87,7 @@ using namespace std;
+ #include "IccCmm.h"
+ // CIccCmm
+ 
+-#include "Vetters.h"
++#include "vetters.h"
+ 
+ typedef vector<icFloatNumber> ResultTuple;
+ typedef vector<ResultTuple> ResultTuples;
