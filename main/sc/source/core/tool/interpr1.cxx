@@ -6601,7 +6601,11 @@ ScDBQueryParamBase* ScInterpreter::GetDBParams( sal_Bool& rMissingField )
         if (rMissingField)
             ; // special case
         else if (bByVal)
+        {
+            if (nVal > pDBRef->getColSize())
+                return NULL;    // ODF 1.3 4.11.10: a field that does not exist is an error
             nField = pDBRef->findFieldColumn(static_cast<SCCOL>(nVal));
+        }
         else
         {
             sal_uInt16 nErr = 0;

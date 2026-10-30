@@ -1097,7 +1097,14 @@ void FormulaCompiler::Factor()
                 if ( ++nJumpCount <= nJumpMax )
                     pFacToken->GetJump()[nJumpCount] = pc-1;
                 NextToken();
-                eOp = Expression();
+                if ( pFacToken->GetOpCode() == ocIf && pToken->GetOpCode() == ocClose )
+                {   // ODF 1.3: IF(c;), IF(c;;) and IF(c;T;) have an empty last parameter
+                    FormulaTokenRef xMissing( new FormulaMissingToken );
+                    PutCode( xMissing );
+                    eOp = ocClose;
+                }
+                else
+                    eOp = Expression();
                 // ocSep or ocClose terminate the subexpression
                 PutCode( pToken );
             }
