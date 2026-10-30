@@ -30,6 +30,7 @@
 
 
 #include <vector>
+#include <map>
 typedef ::std::vector< String > StringVector;
 
 struct SbiParseStack;
@@ -139,6 +140,14 @@ public:
 	void While();					// WHILE/WEND
 	void With();					// WITH
 	void Write();					// WRITE
+	void PPIf();					// #If (VBA conditional compilation)
+	void PPConst();					// #Const (VBA conditional compilation)
+	bool evaluatePPCondition();		// Evaluate #If condition expression
+	void skipStatement();				// Skip a statement without generating code
+	void skipUntilEndIf();				// Skip statements until matching #End If
+
+	// Conditional compilation constants map
+	std::map<String, bool> maConstMap;
 };
 
 

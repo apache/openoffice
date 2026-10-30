@@ -96,6 +96,7 @@ interface XApplication
 	double CountA( [in] any arg1 );
 	any International( [in] long Index );
 	void Undo();
+	any Run( [in] string MacroName, [in] any Arg1, [in] any Arg2, [in] any Arg3, [in] any Arg4, [in] any Arg5 );
 	double InchesToPoints( [in] double Inches );
 	void setSheetsInNewWorkbook( [in] long SheetsInNewWorkbook );
 	long getSheetsInNewWorkbook();
