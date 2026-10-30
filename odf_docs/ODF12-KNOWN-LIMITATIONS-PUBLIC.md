@@ -21,6 +21,9 @@ This lists the known deviations of Apache OpenOffice from ODF 1.2 in its "ODF 1.
 - Graphic and OLE frames can still carry `fo:min-width` on `draw:frame`.
 - `style:layout-grid-standard-mode` is written only in the default page layout, as the specification says, so a per-page-style value does not round trip.
 - A formula that cannot be parsed is kept and written as typed. A cell with `=a0` (a name that looks like a cell reference, with no row 0) is saved as `of:=a0`, which Part 2 5.11 does not allow. There is no valid spelling for it.
+- The numeric value of a Writer input variable (`text:variable-input`) is not written, because ODF 1.2 allows no value attribute on that element. A variable that held 5 reloads with value 0 and empty content (runtime-checked). The "ODF 1.2 Extended" mode keeps the value.
+- A tracked insertion that was later deleted by another author is written as the deletion only; the name and date of the original inserter are not written, in any save mode. The earlier output for it was not valid in any ODF version.
+- A Draw OLE shape that has a hyperlink action and neither a link nor content is skipped in this mode, but its `draw:a` wrapper is written empty (from reading the code; rare).
 - The concordance file of an alphabetical index is written in the system text encoding, not UTF-8. It is written only from a dialog.
 - The extrusion attributes `draw:extrusion-first-light-harsh` and `draw:extrusion-second-light-harsh` are written from the light properties, but the renderer ignores them: harsh and soft lights look the same (runtime-checked).
 
