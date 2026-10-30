@@ -105,6 +105,11 @@ static SbiStatement StmntTable [] = {
 { WEND,		&SbiParser::BadBlock,	N, Y, }, // WEND
 { WITH,		&SbiParser::With,		N, Y, }, // WITH
 { WRITE,	&SbiParser::Write,		N, Y, }, // WRITE
+{ PP_IF,      &SbiParser::PPIf,           N, Y, }, // #IF
+{ PP_ELSEIF,  &SbiParser::PPIf,           N, Y, }, // #ELSEIF
+{ PP_ELSE,    &SbiParser::NoIf,           N, Y, }, // #ELSE
+{ PP_ENDIF,   &SbiParser::NoIf,           N, Y, }, // #ENDIF
+{ PP_CONST,   &SbiParser::PPConst,        Y, Y, }, // #CONST
 
 { NIL, NULL, N, N }
 };
@@ -863,4 +868,249 @@ void SbiParser::ErrorStmnt()
 	aGen.Gen( _ERROR );
 }
 
-/* vim: set noet sw=4 ts=4: */
+// MS Excel VBA: #If conditional compilation directive.
+// Status: implemented - supports #If, #ElseIf, #Else, #End If
+// Supports simple expressions: True, False, identifier references, Not, =
+void SbiParser::PPIf()
+{
+	// Parse condition: evaluate simple constant expressions
+	bool bCondition = evaluatePPCondition();
+
+	// Expect "Then" (optional in VBA, but expected in practice)
+	if( eCurTok == THEN )
+		Next();
+
+	// If condition is true, parse the block until #ElseIf/#Else/#End If
+	// If false, skip the block
+	SbiToken eTok = Peek();
+	while( !bAbort && !IsEof() &&
+		   !( eTok == PP_ELSEIF || eTok == PP_ELSE || eTok == PP_ENDIF ) )
+	{
+		if( bCondition )
+			Parse();
+		else
+			skipStatement();
+		eTok = Peek();
+	}
+
+	if( bCondition )
+	{
+		// We're in the true branch - skip any additional branches
+		if( eTok == PP_ELSE )
+		{
+			Next(); // consume #Else
+			skipUntilEndIf();
+		}
+		else if( eTok == PP_ELSEIF )
+		{
+			Next(); // consume #ElseIf
+			skipUntilEndIf();
+		}
+		else if( eTok == PP_ENDIF )
+		{
+			Next(); // consume #End If
+		}
+	}
+	else
+	{
+		// We're in the false branch - check if there's an #Else or #ElseIf
+		if( eTok == PP_ELSEIF )
+		{
+			Next(); // consume #ElseIf
+			PPIf(); // recursively handle the elseif branch
+			return;
+		}
+		else if( eTok == PP_ELSE )
+		{
+			Next(); // consume #Else
+			// Parse the else block
+			SbiToken eTok2 = Peek();
+			while( !bAbort && !IsEof() && !( eTok2 == PP_ENDIF ) )
+			{
+				Parse();
+				eTok2 = Peek();
+			}
+			if( eTok2 == PP_ENDIF )
+				Next(); // consume #End If
+		}
+		else if( eTok == PP_ENDIF )
+		{
+			Next(); // consume #End If
+		}
+	}
+}
+
+// Helper: Evaluate a conditional compilation expression.
+// Supports: True, False, identifier (looked up in maConstMap), Not expr, expr = expr
+bool SbiParser::evaluatePPCondition()
+{
+	Peek();
+	bool bResult = false;
+	bool bNegate = false;
+
+	// Handle "Not"
+	if( aSym.EqualsIgnoreCaseAscii( "Not" ) )
+	{
+		bNegate = true;
+		Next();
+		Peek();
+	}
+
+	// Get the left operand
+	if( eCurTok == SYMBOL )
+	{
+		// Check if it's a known constant
+		String aName = aSym;
+		Next();
+		Peek();
+
+		// Check for comparison: identifier = value
+		if( eCurTok == EQ )
+		{
+			Next(); // consume =
+			Peek();
+			// Get the right operand
+			if( eCurTok == SYMBOL )
+			{
+				String aVal = aSym;
+				Next();
+				bResult = (aName.EqualsIgnoreCaseAscii( aVal ));
+			}
+			else if( eCurTok == NUMBER )
+			{
+				bResult = (maConstMap.count( aName ) > 0 &&
+				           (maConstMap[ aName ] == (nVal != 0.0)));
+			}
+		}
+		else if( eCurTok == THEN )
+		{
+			// Just a constant: #If DEBUG Then
+			if( maConstMap.count( aName ) > 0 )
+				bResult = maConstMap[ aName ];
+			else
+				bResult = false; // unknown constant defaults to false
+		}
+		else
+		{
+			// End of expression or other token - use the constant directly
+			if( maConstMap.count( aName ) > 0 )
+				bResult = maConstMap[ aName ];
+		}
+	}
+	else if( aSym.EqualsIgnoreCaseAscii( "True" ) )
+	{
+		bResult = true;
+		Next();
+		Peek();
+	}
+	else if( aSym.EqualsIgnoreCaseAscii( "False" ) )
+	{
+		bResult = false;
+		Next();
+		Peek();
+	}
+	else if( eCurTok == NUMBER )
+	{
+		bResult = (nVal != 0.0);
+		Next();
+		Peek();
+	}
+	else
+	{
+		// Unknown expression - parse and consume it
+		SbiExpression aExpr( this );
+		bResult = true; // unknown, default to true
+	}
+
+	if( bNegate )
+		bResult = !bResult;
+
+	return bResult;
+}
+
+// Helper: Skip statements without generating code
+void SbiParser::skipStatement()
+{
+	// Simple statement skip - consume tokens until EOLN
+	while( !bAbort && !IsEos() && !IsEof() )
+		Next();
+	Next(); // consume EOLN
+}
+
+// MS Excel VBA: #Const conditional compilation constant declaration.
+// Status: implemented - stores name=value in the conditional compilation map
+void SbiParser::PPConst()
+{
+	// #Const name = value
+	// Parse: name
+	Peek();
+	if( eCurTok != SYMBOL )
+	{
+		Error( SbERR_SYMBOL_EXPECTED );
+		Next();
+		TestToken( ASSIGN );
+		return;
+	}
+
+	String aConstName = aSym;
+	Next();
+	TestToken( ASSIGN );
+	Next();
+
+	// Parse the value - expect True, False, or a number
+	Peek();
+	if( aSym.EqualsIgnoreCaseAscii( "True" ) )
+	{
+		maConstMap[ aConstName ] = true;
+		Next();
+	}
+	else if( aSym.EqualsIgnoreCaseAscii( "False" ) )
+	{
+		maConstMap[ aConstName ] = false;
+		Next();
+	}
+	else if( eCurTok == NUMBER )
+	{
+		maConstMap[ aConstName ] = (nVal != 0.0);
+		Next();
+	}
+	else
+	{
+		// Unknown constant value - default to false
+		maConstMap[ aConstName ] = false;
+		SbiExpression aExpr( this ); // consume the expression
+	}
+
+	// Expect end of statement
+	TestEoln();
+}
+
+// Helper: Skip all statements until matching #End If
+void SbiParser::skipUntilEndIf()
+{
+	sal_uInt16 nNesting = 0;
+	SbiToken eTok = Peek();
+	while( !bAbort && !IsEof() )
+	{
+		if( eTok == PP_IF )
+		{
+			nNesting++;
+			Next();
+		}
+		else if( eTok == PP_ENDIF )
+		{
+			if( nNesting == 0 )
+			{
+				Next();
+				return;
+			}
+			nNesting--;
+			Next();
+		}
+		else
+		{
+			skipStatement();
+		}
+		eTok = Peek();
+	}
+}

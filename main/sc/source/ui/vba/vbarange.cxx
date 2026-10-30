@@ -948,7 +948,77 @@ void CellValueGetter::visitNode( sal_Int32 x, sal_Int32 y, const uno::Reference<
 	processValue( x,y,aValue );
 }
 
-// MS Excel VBA: Internal helper class for setting formula values.
+// MS Excel VBA: Internal helper class for getting cell values without date coercion (Value2).
+// Status: internal helper
+class CellValueGetter2 : public ValueGetter
+{
+protected:
+	uno::Any maValue;
+public:
+	CellValueGetter2() {}
+	virtual void visitNode( sal_Int32 x, sal_Int32 y, const css::uno::Reference< table::XCell >& xCell );
+	virtual void processValue( sal_Int32 x, sal_Int32 y, const css::uno::Any& aValue );
+	const uno::Any& getValue() const { return maValue; }
+
+};
+
+void
+CellValueGetter2::processValue(  sal_Int32 /*x*/, sal_Int32 /*y*/, const css::uno::Any& aValue )
+{
+	maValue = aValue;
+}
+
+void CellValueGetter2::visitNode( sal_Int32 x, sal_Int32 y, const css::uno::Reference< table::XCell >& xCell )
+{
+	uno::Any aValue;
+	table::CellContentType eType = xCell->getType();
+	if( eType == table::CellContentType_VALUE || eType == table::CellContentType_FORMULA )
+	{
+		if ( eType == table::CellContentType_FORMULA )
+		{
+
+			rtl::OUString sFormula = xCell->getFormula();
+			if ( sFormula.equals( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("=TRUE()") ) ) )
+				aValue <<= sal_True;
+			else if ( sFormula.equals( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("=FALSE()") ) ) )
+				aValue <<= sal_False;
+			else
+			{
+				uno::Reference< beans::XPropertySet > xProp( xCell, uno::UNO_QUERY_THROW );
+
+				table::CellContentType eFormulaType = table::CellContentType_VALUE;
+				xProp->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("FormulaResultType" ) ) ) >>= eFormulaType;
+
+				if ( eFormulaType == table::CellContentType_TEXT )
+				{
+					uno::Reference< text::XTextRange > xTextRange(xCell, ::uno::UNO_QUERY_THROW);
+					aValue <<= xTextRange->getString();
+				}
+				else
+				{
+					aValue <<= xCell->getValue();
+				}
+			}
+		}
+		else
+		{
+			uno::Reference< table::XCellRange > xRange( xCell, uno::UNO_QUERY_THROW );
+			NumFormatHelper cellFormat( xRange );
+			if ( cellFormat.isBooleanType() )
+				aValue = uno::makeAny( ( xCell->getValue() != 0.0 ) );
+			else
+			{
+				aValue <<= xCell->getValue();
+			}
+		}
+	}
+	if( eType == table::CellContentType_TEXT )
+	{
+		uno::Reference< text::XTextRange > xTextRange(xCell, ::uno::UNO_QUERY_THROW);
+		aValue <<= xTextRange->getString();
+	}
+	processValue( x,y,aValue );
+}
 // Status: internal helper
 class CellFormulaValueSetter : public CellValueSetter
 {
@@ -1666,6 +1736,23 @@ ScVbaRange::getValue()
 
 }
 
+// MS Excel VBA: Gets the value of the range without date coercion (Value2 property).
+// Value2 differs from Value in that date values are returned as raw doubles
+// rather than as oleautomation::Date objects, and error values are not wrapped.
+// Status: implemented
+uno::Any SAL_CALL
+ScVbaRange::getValue2()
+{
+	if ( m_Areas->getCount() > 1 )
+	{
+		uno::Reference< excel::XRange > xRange( getArea( 0 ), uno::UNO_QUERY_THROW );
+		return xRange->getValue2();
+	}
+
+	CellValueGetter2 valueGetter;
+	return getValue( valueGetter );
+}
+
 
 void
 // MS Excel VBA: Internal helper - sets values using a ValueSetter.
@@ -1724,6 +1811,23 @@ ScVbaRange::setValue( const uno::Any  &aValue )
 	CellValueSetter valueSetter( aValue );
 	setValue( aValue, valueSetter, true );
 	// Fire the range change event.
+	lcl_NotifyRangeChanges( getScDocShell()->GetModel(), getCellRangesBase() );
+}
+
+// MS Excel VBA: Sets the value of the range without date coercion (Value2 property).
+// Status: implemented
+void SAL_CALL
+ScVbaRange::setValue2( const uno::Any& aValue )
+{
+	if ( m_Areas->getCount() > 1 )
+	{
+		AreasVisitor aVisitor( m_Areas );
+		RangeValueProcessor valueProcessor( aValue );
+		aVisitor.visit( valueProcessor );
+		return;
+	}
+	CellValueSetter valueSetter( aValue );
+	setValue( aValue, valueSetter, true );
 	lcl_NotifyRangeChanges( getScDocShell()->GetModel(), getCellRangesBase() );
 }
 
@@ -1870,6 +1974,22 @@ uno::Any
 ScVbaRange::getFormula()
 {
 	return getFormulaValue( formula::FormulaGrammar::GRAM_NATIVE_XL_A1 );
+}
+
+uno::Any
+// MS Excel VBA: Gets the formula using Formula2 syntax (array-enabled).
+// Status: implemented - delegates to getFormulaValue with GRAM_NATIVE_XL_A1
+ScVbaRange::getFormula2()
+{
+	return getFormulaValue( formula::FormulaGrammar::GRAM_NATIVE_XL_A1 );
+}
+
+void
+// MS Excel VBA: Sets the formula using Formula2 syntax (array-enabled).
+// Status: implemented - delegates to setFormulaValue with GRAM_NATIVE_XL_A1
+ScVbaRange::setFormula2( const css::uno::Any& rFormula )
+{
+	setFormulaValue( rFormula, formula::FormulaGrammar::GRAM_NATIVE_XL_A1, true );
 }
 
 sal_Int32

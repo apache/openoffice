@@ -109,6 +109,8 @@ enum SbiToken {
 	JS_PLUS, JS_MINUS, JS_MUL, JS_DIV, JS_MOD, JS_LOG_NOT, JS_BIT_NOT,
 	JS_INC, JS_DEC, JS_LPAREN, JS_RPAREN, JS_LINDEX, JS_RINDEX
 	, VBASUPPORT
+	// Conditional compilation preprocessor directives (VBA compatibility)
+	, PP_IF, PP_ELSEIF, PP_ELSE, PP_ENDIF, PP_CONST
 };
 
 #ifdef SbiTokenSHAREDTMPUNDEF

@@ -245,15 +245,25 @@ public:
 // MS Excel VBA: Gets the value of the range as a Variant.
 // Status: implemented
 	virtual css::uno::Any SAL_CALL getValue();
-// MS Excel VBA: Sets the value of the range.
-// Status: implemented
 	virtual void   SAL_CALL setValue( const css::uno::Any& aValue );
-// MS Excel VBA: Gets the formula of the range.
+	// MS Excel VBA: Gets the value of the range without date coercion.
+	// Status: implemented
+	virtual css::uno::Any SAL_CALL getValue2();
+	// MS Excel VBA: Sets the value of the range without date coercion.
+	// Status: implemented
+	virtual void   SAL_CALL setValue2( const css::uno::Any& aValue );
+	// MS Excel VBA: Gets the formula of the range.
 // Status: implemented
 	virtual css::uno::Any SAL_CALL getFormula();
-// MS Excel VBA: Sets the formula of the range.
+	// MS Excel VBA: Sets the formula of the range.
 // Status: implemented
 	virtual void   SAL_CALL setFormula( const css::uno::Any& rFormula );
+// MS Excel VBA: Gets the formula using Formula2 syntax (array-enabled).
+// Status: implemented
+	virtual css::uno::Any SAL_CALL getFormula2();
+// MS Excel VBA: Sets the formula using Formula2 syntax (array-enabled).
+// Status: implemented
+	virtual void   SAL_CALL setFormula2( const css::uno::Any& rFormula );
 // MS Excel VBA: Gets the formula as an array.
 // Status: implemented
 	virtual css::uno::Any SAL_CALL getFormulaArray();
