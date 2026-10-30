@@ -19,7 +19,7 @@
 #
 #**************************************************************
 
-# usage: gate.py <tag> [--stages s,...] [--modes ext,strict] [--prev DIR] [--jobs FILE] [--limit N] [--port P]
+# usage: gate.py <tag> [--stages s,...] [--modes ext,strict] [--fixture-modes v00,v10,v11,ext,strict] [--prev DIR] [--jobs FILE] [--limit N] [--port P]
 #                [--build mod,...] [--libs lib.dylib,...] [--stall SECONDS] [--force] [--crosscheck]
 # The corpus regression gate as one resumable run in runs/gate-<tag>/. Stages, in order:
 #   build     rebuild the modules (--build) and deliver them to the solver
@@ -111,7 +111,7 @@ def bridge_dead(path):
         d = json.load(open(path))
     except Exception:
         return False
-    return isinstance(d, dict) and str(d.get("error", "")).startswith("Binary URP bridge")
+    return isinstance(d, dict) and (str(d.get("error", "")).startswith("Binary URP bridge") or str(d.get("body_error", "")).startswith("Binary URP bridge"))
 
 
 def dump_dir(src, dest, profile, port, stall, log, tool=None, poll=2.0):
@@ -176,6 +176,7 @@ class Gate:
         self.res_path = os.path.join(self.run, "results.json")
         self.res = json.load(open(self.res_path)) if os.path.exists(self.res_path) else {}
         self.modes = a.modes.split(",")
+        self.fix_modes = a.fixture_modes.split(",")
         self.prev = os.path.abspath(a.prev) if a.prev else None
 
     def save(self):
@@ -274,7 +275,7 @@ class Gate:
         val = json.load(open(os.path.join(md, "val.json")))
         r["errors"] = {v: len(e) for v, e in val["errors"].items()}
         r["packages"] = len(val["packages"])
-        for v in ("12", "14", "12x"):
+        for v in ("12", "14", "12x", "13", "13x"):
             kp = os.path.join(md, "kinds%s.json" % ("" if v == "12" else v))
             run(PY + [os.path.join(D, "report.py"), os.path.join(md, "val.json"), kp, v], os.path.join(md, "report%s.log" % v))
             r["kinds" + v] = len(json.load(open(kp)))
@@ -375,7 +376,7 @@ class Gate:
             return ("pf13-" if s.startswith("page-fill-1_3/") else "") + b + "." + ext
         sources = sorted({e[0] for e in entries})
         res, threads = {}, []
-        for i, mode in enumerate(FIX_MODES):
+        for i, mode in enumerate(self.fix_modes):
             def one(mode=mode, i=i):
                 md = os.path.join(self.run, "fixtures", mode)
                 out = os.path.join(md, "out")
@@ -408,14 +409,14 @@ class Gate:
         changed = []
         if pf:
             prev = json.load(open(pf)).get("fixtures", {})
-            for mode in FIX_MODES:
+            for mode in self.fix_modes:
                 for k, c in res.get(mode, {}).get("checks", {}).items():
                     pc = prev.get(mode, {}).get("checks", {}).get(k)
                     if pc is not None and pc != c:
                         changed.append("%s %s" % (mode, k))
         res["changed_vs_prev"] = changed if pf else "no previous fixtures results"
         res["ok"] = all(res[m]["drive_rc"] == 0 and res[m]["failed"] == 0 and not res[m]["missing"] and
-                        all("error" not in c and c["total"] for c in res[m]["checks"].values()) and not res[m]["problems"] for m in FIX_MODES) and not changed
+                        all("error" not in c and c["total"] for c in res[m]["checks"].values()) and not res[m]["problems"] for m in self.fix_modes) and not changed
         return res
 
 
@@ -424,6 +425,7 @@ def main():
     ap.add_argument("tag")
     ap.add_argument("--stages", default="refresh,corpus,validate,dump,diff,fixtures")
     ap.add_argument("--modes", default="ext,strict")
+    ap.add_argument("--fixture-modes", default=",".join(FIX_MODES))
     ap.add_argument("--prev")
     ap.add_argument("--jobs")
     ap.add_argument("--limit", type=int, default=0)

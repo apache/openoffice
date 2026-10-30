@@ -19,14 +19,15 @@
 #  under the License.
 #
 #**************************************************************
-# usage: drive.sh <ext|strict|v00|v10|v11> <port> <jobs.tsv> <done.tsv>   (DefaultVersion 3, 4, 0 UNKNOWN, 1 = ODF 1.0, 2 = ODF 1.1)
+# usage: drive.sh <ext|strict|v00|v10|v11|v13|x13> <port> <jobs.tsv> <done.tsv>   (DefaultVersion 3, 4, 0 UNKNOWN, 1 = ODF 1.0, 2 = ODF 1.1, 5 = ODF 1.3, 6 = ODF 1.3 Extended)
+# No mode name may be a prefix of another: the kills below match "profile_<mode>" as a pattern (a mode ext13 died when ext finished).
 # Converts jobs in batches of 20. Stops on the first soffice crash; kills and resumes on a hang.
 source ${0:A:h}/env.sh
 mode=$1; port=$2; jobs=$3; done_=$4; log=${done_:r}.log
 prof=$mode
 if [[ ! -e $D/runs/profile_$prof/user/registrymodifications.xcu ]]; then
   mkdir -p $D/runs/profile_$prof/user
-  case $mode in v00) v=0;; v10) v=1;; v11) v=2;; ext) v=3;; strict) v=4;; *) echo "drive.sh: unknown mode $mode" >&2; exit 2;; esac
+  case $mode in v00) v=0;; v10) v=1;; v11) v=2;; ext) v=3;; strict) v=4;; v13) v=5;; x13) v=6;; *) echo "drive.sh: unknown mode $mode" >&2; exit 2;; esac
   cat > $D/runs/profile_$prof/user/registrymodifications.xcu <<XCU
 <?xml version="1.0" encoding="UTF-8"?>
 <oor:items xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
