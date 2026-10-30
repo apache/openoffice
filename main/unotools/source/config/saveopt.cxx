@@ -491,6 +491,10 @@ SvtSaveOptions_Impl::SvtSaveOptions_Impl()
                         {
                             if( nTmp == 3 )
                                 eODFDefaultVersion = SvtSaveOptions::ODFVER_012_EXT;
+                            else if( nTmp == 5 )
+                                eODFDefaultVersion = SvtSaveOptions::ODFVER_013;
+                            else if( nTmp == 6 )
+                                eODFDefaultVersion = SvtSaveOptions::ODFVER_013_EXT;
                             else if( nTmp >= 0 && nTmp <= 4 )
                                 eODFDefaultVersion = SvtSaveOptions::ODFDefaultVersion( nTmp );
                         }
@@ -746,7 +750,14 @@ void SvtSaveOptions_Impl::Commit()
             case ODFDEFAULTVERSION:
                 if (!bROODFDefaultVersion)
                 {
-                    pValues[nRealCount] <<= (eODFDefaultVersion == SvtSaveOptions::ODFVER_012_EXT) ? sal_Int16( 3 ) : sal_Int16( eODFDefaultVersion );
+                    sal_Int16 nODFVersion = sal_Int16( eODFDefaultVersion );
+                    if( eODFDefaultVersion == SvtSaveOptions::ODFVER_012_EXT )
+                        nODFVersion = 3;
+                    else if( eODFDefaultVersion == SvtSaveOptions::ODFVER_013 )
+                        nODFVersion = 5;
+                    else if( eODFDefaultVersion == SvtSaveOptions::ODFVER_013_EXT )
+                        nODFVersion = 6;
+                    pValues[nRealCount] <<= nODFVersion;
                     pNames[nRealCount] = pOrgNames[i];
                     ++nRealCount;
                 }
@@ -1052,6 +1063,16 @@ sal_Bool SvtSaveOptions::IsLoadDocumentPrinter() const
 void SvtSaveOptions::SetODFDefaultVersion( SvtSaveOptions::ODFDefaultVersion eVersion )
 {
     pImp->pSaveOpt->SetODFDefaultVersion( eVersion );
+}
+
+sal_Bool SvtSaveOptions::IsODFExtended( ODFDefaultVersion eVersion )
+{
+    return eVersion == ODFVER_012_EXT || eVersion == ODFVER_013_EXT;
+}
+
+sal_Bool SvtSaveOptions::IsODFStrict( ODFDefaultVersion eVersion )
+{
+    return eVersion == ODFVER_012 || eVersion == ODFVER_013;
 }
 
 SvtSaveOptions::ODFDefaultVersion SvtSaveOptions::GetODFDefaultVersion() const

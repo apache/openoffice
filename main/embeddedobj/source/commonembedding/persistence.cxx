@@ -69,7 +69,7 @@ using namespace ::com::sun::star;
 
 
 //------------------------------------------------------
-// the value of Save/ODF/DefaultVersion that selects strict ODF 1.2 (SvtSaveOptions::ODFVER_012)
+// the values of Save/ODF/DefaultVersion that select strict ODF 1.2 and 1.3 (SvtSaveOptions::ODFVER_012, ODFVER_013)
 static sal_Bool IsStrictODF12_Impl( const uno::Reference< lang::XMultiServiceFactory >& xFactory )
 {
 	try
@@ -81,7 +81,7 @@ static sal_Bool IsStrictODF12_Impl( const uno::Reference< lang::XMultiServiceFac
 				::rtl::OUString::createFromAscii( "Save/ODF" ),
 				::rtl::OUString::createFromAscii( "DefaultVersion" ),
 				::comphelper::ConfigurationHelper::E_READONLY ) >>= nVersion;
-		return nVersion == 4;
+		return nVersion == 4 || nVersion == 5;
 	}
 	catch ( uno::Exception& )
 	{

@@ -374,7 +374,8 @@ void SfxObjectShell::SetupStorage( const uno::Reference< embed::XStorage >& xSto
                     try
                     {
                         // older versions can not have this property set, it exists only starting from ODF1.2
-                        xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ), uno::makeAny( ODFVER_012_TEXT ) );
+                        xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ),
+                            nDefVersion >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
                     }
                     catch( uno::Exception& )
                     {
@@ -1211,7 +1212,7 @@ sal_Bool SfxObjectShell::SaveTo_Impl
             bTryToPreserveScriptSignature = pMedium->GetFilter() && pFilter && pMedium->GetFilter()->GetFilterName() == pFilter->GetFilterName();
 
             bNoPreserveForOasis = (
-                                   (aODFVersion.equals( ODFVER_012_TEXT ) && nVersion == SvtSaveOptions::ODFVER_011) ||
+                                   (aODFVersion.compareTo( ODFVER_012_TEXT ) >= 0 && nVersion == SvtSaveOptions::ODFVER_011) ||
                                    (!aODFVersion.getLength() && nVersion >= SvtSaveOptions::ODFVER_012)
                                   );
         }
@@ -1399,7 +1400,8 @@ sal_Bool SfxObjectShell::SaveTo_Impl
                     {
                         try
                         {
-                            xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ), uno::makeAny( ODFVER_012_TEXT ) );
+                            xProps->setPropertyValue( ::rtl::OUString::createFromAscii( "Version" ),
+                                aSaveOpt.GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_013 ? uno::makeAny( ODFVER_013_TEXT ) : uno::makeAny( ODFVER_012_TEXT ) );
                         }
                         catch( uno::Exception& )
                         {

@@ -63,13 +63,15 @@ public:
         DO_NOT_USE = 3,         // Do not use this, only here for compatibility with pre OOo 3.2 configuration
         ODFVER_012 = 4,         // ODF 1.2
         ODFVER_012_EXT = 5,     // ODF 1.2 with extensions
+        ODFVER_013 = 6,         // ODF 1.3
+        ODFVER_013_EXT = 7,     // ODF 1.3 with extensions
 
         ODFVER_EXTENSION = SAL_MAX_ENUM,   // only in property map tables: export in the extended modes only
     };
 
     // Test the mode with these, not with a compare against a version: the extended modes sort above the strict ones.
-    static sal_Bool         IsODFExtended( ODFDefaultVersion eVersion ) { return eVersion == ODFVER_012_EXT; }
-    static sal_Bool         IsODFStrict( ODFDefaultVersion eVersion ) { return eVersion == ODFVER_012; }
+    static sal_Bool         IsODFExtended( ODFDefaultVersion eVersion );
+    static sal_Bool         IsODFStrict( ODFDefaultVersion eVersion );
 
     SvtSaveOptions();
     virtual ~SvtSaveOptions();

@@ -108,6 +108,7 @@ using namespace ::xmloff::token;
 
 sal_Char __READONLY_DATA sXML_1_1[] = "1.1";
 sal_Char __READONLY_DATA sXML_1_2[] = "1.2";
+sal_Char __READONLY_DATA sXML_1_3[] = "1.3";
 
 const sal_Char *sOpenOfficeOrgProject ="OpenOffice.org_project";
 
@@ -1445,6 +1446,8 @@ sal_uInt32 SvXMLExport::exportDoc( enum ::xmloff::token::XMLTokenEnum eClass )
         const sal_Char* pVersion = 0;
         switch( getDefaultVersion() )
         {
+        case SvtSaveOptions::ODFVER_013_EXT: pVersion = sXML_1_3; break;
+        case SvtSaveOptions::ODFVER_013: pVersion = sXML_1_3; break;
         case SvtSaveOptions::ODFVER_012_EXT: pVersion = sXML_1_2; break;
         case SvtSaveOptions::ODFVER_012: pVersion = sXML_1_2; break;
         case SvtSaveOptions::ODFVER_011: pVersion = sXML_1_1; break;
