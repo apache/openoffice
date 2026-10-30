@@ -1488,8 +1488,24 @@ void FormulaCompiler::CreateStringFromTokenArray( rtl::OUStringBuffer& rBuffer )
     if ( pArr->IsRecalcModeForced() )
         rBuffer.append(sal_Unicode('='));
     FormulaToken* t = pArr->First();
+    sal_uInt16 nOpen = 0;
     while( t )
+    {
+        OpCode eOp = t->GetOpCode();
+        if (eOp == ocOpen)
+            ++nOpen;
+        else if (eOp == ocClose && nOpen)
+            --nOpen;
+        else if (bODFF && eOp == ocSep && !nOpen)
+        {
+            // The Excel import joins ranges with ocSep; outside parentheses ODFF has no
+            // separator, the union operator is meant.
+            rBuffer.append( mxSymbols->getSymbol( ocUnion));
+            t = pArr->Next();
+            continue;
+        }
         t = CreateStringFromToken( rBuffer, t, sal_True );
+    }
 
     if (pSaveArr != pArr)
     {
