@@ -536,10 +536,10 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 			lcl_RemoveState(pPMGridSnapTo);
 	}
 
-	// ODF 1.2 calls it style:layout-grid-snap-to; older modes keep the old name
+	// ODF 1.2 calls it style:layout-grid-snap-to; the other modes keep the old name, which released versions read
 	if( pPMGridSnapToChars && pPMGridSnapTo )
 	{
-		if( SvtSaveOptions().GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_012 )
+		if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
 			lcl_RemoveState( pPMGridSnapToChars );
 		else
 			lcl_RemoveState( pPMGridSnapTo );
