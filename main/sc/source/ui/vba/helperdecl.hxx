@@ -21,9 +21,6 @@
 
 #ifndef SC_VBA_HELPERDECL_HXX
 #define SC_VBA_HELPERDECL_HXX
-
-#ifndef SC_VBA_HELPERDECL_HXX
-#define SC_VBA_HELPERDECL_HXX
 #include <comphelper/servicedecl.hxx>
 #include <ooo/vba/XHelperInterface.hpp>
 
