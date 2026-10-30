@@ -32,7 +32,7 @@ import com.sun.star.script.provider.XScriptProvider;
 import com.sun.star.script.provider.XScriptProviderSupplier;
 import com.sun.star.script.vba.XVBACompatibility;
 import com.sun.star.script.XStarBasicAccess;
-import com.sun.star.sheet.XCell;
+import com.sun.star.table.XCell;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
 import com.sun.star.sheet.XSpreadsheets;
