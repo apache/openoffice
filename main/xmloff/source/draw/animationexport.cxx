@@ -876,7 +876,9 @@ void AnimationsExporterImpl::exportNode( const Reference< XAnimationNode >& xNod
 		}
 
 		aTemp = xNode->getEndSync();
-		if( aTemp.hasValue() )
+		const sal_Int16 nEndSyncNodeType = xNode->getType();
+		// smil:endsync is only allowed on par, seq and iterate
+		if( aTemp.hasValue() && ( nEndSyncNodeType == AnimationNodeType::PAR || nEndSyncNodeType == AnimationNodeType::SEQ || nEndSyncNodeType == AnimationNodeType::ITERATE ) )
 		{
 			if( aTemp >>= nTemp )
 			{
@@ -1036,7 +1038,7 @@ void AnimationsExporterImpl::exportContainer( const Reference< XTimeContainer >&
 			double fTemp = xIter->getIterateInterval();
 			if( fTemp )
 			{
-				if( 0 == ( mrExport.getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE ) )
+				if( 0 == ( mrExport.getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE ) || SvtSaveOptions::IsODFStrict( mrExport.getDefaultVersion() ) )
 				{
 					// issue 146582
 					sal_Int32 nSecondsFraction = static_cast<sal_Int32>(fTemp * 1000 ) % 1000;
@@ -1216,7 +1218,8 @@ void AnimationsExporterImpl::exportAnimate( const Reference< XAnimate >& xAnimat
 					mrExport.AddAttribute( XML_NAMESPACE_SMIL, XML_ACCUMULATE, XML_SUM );
 
 				nTemp = xAnimate->getAdditive();
-				if( nTemp != AnimationAdditiveMode::REPLACE )
+				// strict ODF 1.2 knows only replace and sum
+				if( nTemp != AnimationAdditiveMode::REPLACE && ( nTemp == AnimationAdditiveMode::SUM || !SvtSaveOptions::IsODFStrict( mrExport.getDefaultVersion() ) ) )
 				{
 					SvXMLUnitConverter::convertEnum( sTmp, (sal_uInt16)nTemp, getAnimationsEnumMap(Animations_EnumMap_AdditiveMode) );
 					mrExport.AddAttribute( XML_NAMESPACE_SMIL, XML_ADDITIVE, sTmp.makeStringAndClear() );

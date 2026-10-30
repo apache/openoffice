@@ -993,6 +993,9 @@ void SAL_CALL SfxDocumentMetaData::updateUserDefinedAndAttributes()
 
     if (!m_AutoloadURL.equalsAscii("") || (0 != m_AutoloadSecs)) {
         attributes.push_back(std::make_pair(
+                static_cast<const char*>("xlink:type"),
+                ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("simple"))));
+        attributes.push_back(std::make_pair(
                 static_cast<const char*>("xlink:href" ), m_AutoloadURL ));
         attributes.push_back(std::make_pair(
                 static_cast<const char*>("meta:delay" ),
@@ -1018,6 +1021,10 @@ void SAL_CALL SfxDocumentMetaData::updateUserDefinedAndAttributes()
         updateElement("meta:hyperlink-behaviour");
     }
     attributes.clear();
+
+    if (!isValidDateTime(textToDateTimeDefault(getMetaText("meta:print-date")))) {
+        static_cast<void>(setMetaText("meta:print-date", ::rtl::OUString()));
+    }
 }
 
 // create empty DOM tree (XDocument)

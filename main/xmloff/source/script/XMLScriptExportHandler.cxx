@@ -57,13 +57,22 @@ void XMLScriptExportHandler::Export(
 	Sequence<PropertyValue> & rValues,
 	sal_Bool bUseWhitespace)
 {
+	// without the property the listener would lack the required xlink:href and xlink:type
+	sal_Bool bHasScript = sal_False;
+	sal_Int32 nCount = rValues.getLength();
+	for(sal_Int32 i = 0; i < nCount; i++)
+	{
+		if (sURL.equals(rValues[i].Name))
+			bHasScript = sal_True;
+	}
+	if (!bHasScript)
+		return;
 
 	rExport.AddAttribute(XML_NAMESPACE_SCRIPT, XML_LANGUAGE,
 						 rExport.GetNamespaceMap().GetQNameByKey(
 							 XML_NAMESPACE_OOO, GetXMLToken(XML_SCRIPT) ) );
 	rExport.AddAttribute(XML_NAMESPACE_SCRIPT, XML_EVENT_NAME, rEventQName);
 
-	sal_Int32 nCount = rValues.getLength();
 	for(sal_Int32 i = 0; i < nCount; i++)
 	{
         if (sURL.equals(rValues[i].Name))

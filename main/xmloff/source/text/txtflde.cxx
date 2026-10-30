@@ -278,6 +278,37 @@ inline Sequence<OUString> const GetStringSequenceProperty(
 
 
 
+// strict ODF 1.2 has no place for AOO's attributes in ODF namespaces
+static sal_Bool lcl_IsStrict( SvXMLExport& rExport )
+{
+	return SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() );
+}
+
+// office:currency is not allowed on text:variable-decl in ODF 1.2
+static void lcl_DropCurrency( SvXMLExport& rExport )
+{
+	rExport.GetAttrList().RemoveAttribute( rExport.GetNamespaceMap().GetQNameByKey(
+		XML_NAMESPACE_OFFICE, GetXMLToken( XML_CURRENCY ) ) );
+}
+
+// ODF 1.2 allows only some reference formats per element; the others show the same text
+static sal_Int16 lcl_GetValidReferencePart( sal_Int16 nPart, sal_Bool bSequence, sal_Bool bNote )
+{
+	switch( nPart )
+	{
+		case ReferenceFieldPart::CATEGORY_AND_NUMBER:
+		case ReferenceFieldPart::ONLY_CAPTION:
+		case ReferenceFieldPart::ONLY_SEQUENCE_NUMBER:
+			return bSequence ? nPart : ReferenceFieldPart::TEXT;
+		case ReferenceFieldPart::NUMBER:
+		case ReferenceFieldPart::NUMBER_NO_CONTEXT:
+		case ReferenceFieldPart::NUMBER_FULL_CONTEXT:
+			return ( bSequence || bNote ) ? ReferenceFieldPart::TEXT : nPart;
+		default:
+			return nPart;
+	}
+}
+
 XMLTextFieldExport::XMLTextFieldExport( SvXMLExport& rExp,
 										XMLPropertyState* pCombinedCharState)
 	: rExport(rExp),
@@ -1075,6 +1106,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 	Reference<XPropertySetInfo> xPropSetInfo(rPropSet->getPropertySetInfo());
 
 	OUString sPresentation = rTextField->getPresentation(sal_False);
+	const sal_Bool bStrict = lcl_IsStrict( GetExport() );
 
 	// process each field type
 	switch (nToken) {
@@ -1132,7 +1164,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 		sal_Bool bCmd = GetBoolProperty(sPropertyIsShowFormula, rPropSet);
 		ProcessDisplay(sal_True, bCmd);
         // #i81766# for older versions export of the value-type
-        sal_Bool bExportValueType = !bCmd && ( GetExport().getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE );
+        sal_Bool bExportValueType = !bCmd && !bStrict && ( GetExport().getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE );
 		// show style, unless name will be shown
 		ProcessValueAndType(IsStringField(nToken, rPropSet),
 							GetIntProperty(sPropertyNumberFormat, rPropSet),
@@ -1154,18 +1186,23 @@ void XMLTextFieldExport::ExportFieldHelper(
 					  GetStringProperty(sPropertyHint , rPropSet));
 		ProcessDisplay(GetBoolProperty(sPropertyIsVisible, rPropSet),
 					   sal_False);
-		ProcessString(XML_FORMULA, XML_NAMESPACE_OOOW,
-					  GetStringProperty(sPropertyContent, rPropSet),
-					  sPresentation);
+		// text:formula and the office:*value attributes are not allowed on text:variable-input
+		if ( !bStrict )
+			ProcessString(XML_FORMULA, XML_NAMESPACE_OOOW,
+						  GetStringProperty(sPropertyContent, rPropSet),
+						  sPresentation);
 		ProcessValueAndType(IsStringField(nToken, rPropSet),
 							GetIntProperty(sPropertyNumberFormat, rPropSet),
 							GetStringProperty(sPropertyContent, rPropSet),
 							sPresentation,
 							GetDoubleProperty(sPropertyValue, rPropSet),
-							sal_True, sal_True, sal_True,
+							!bStrict, sal_True, sal_True,
                             ! GetOptionalBoolProperty(
                                  sPropertyIsFixedLanguage,
                                  rPropSet, xPropSetInfo, sal_False ) );
+		// office:currency is not allowed on text:variable-input either
+		if ( bStrict )
+			lcl_DropCurrency( GetExport() );
 		ExportElement(XML_VARIABLE_INPUT, sPresentation);
 		break;
 
@@ -1247,10 +1284,13 @@ void XMLTextFieldExport::ExportFieldHelper(
 		// text input field: description and string-value
 		ProcessString(XML_DESCRIPTION,
 					  GetStringProperty(sPropertyHint, rPropSet));
-        ProcessString(XML_HELP,
-                      GetStringProperty(sPropertyHelp, rPropSet), true);
-        ProcessString(XML_HINT,
-                      GetStringProperty(sPropertyTooltip, rPropSet), true);
+		if ( !bStrict )	// text:help and text:hint are not allowed on text:text-input
+		{
+			ProcessString(XML_HELP,
+						  GetStringProperty(sPropertyHelp, rPropSet), true);
+			ProcessString(XML_HINT,
+						  GetStringProperty(sPropertyTooltip, rPropSet), true);
+		}
 		ExportElement(XML_TEXT_INPUT, sPresentation);
 		break;
 
@@ -1372,7 +1412,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 					  sPresentation);
 		sal_Int32 nDummy = 0; // MapPageNumberName need int
 		ProcessString(XML_SELECT_PAGE, MapPageNumberName(rPropSet, nDummy));
-		if( 0 == ( GetExport().getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE ) )
+		if( bStrict || 0 == ( GetExport().getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE ) )
 			ExportElement(XML_PAGE_CONTINUATION, sPresentation);
 		else
 			ExportElement(XML_PAGE_CONTINUATION_STRING, sPresentation);
@@ -1383,8 +1423,9 @@ void XMLTextFieldExport::ExportFieldHelper(
 		ProcessString(XML_TABLE_NAME,
 					  GetStringProperty(sPropertyDataTableName, rPropSet));
         ProcessCommandType(GetIntProperty(sPropertyDataCommandType, rPropSet));
-		ProcessDisplay(GetBoolProperty(sPropertyIsVisible, rPropSet),
-					   sal_False);
+		if ( !bStrict )	// text:display is not allowed on the database fields
+			ProcessDisplay(GetBoolProperty(sPropertyIsVisible, rPropSet),
+						   sal_False);
 		ExportDataBaseElement(XML_DATABASE_NAME, sPresentation,
                               rPropSet, xPropSetInfo);
 		break;
@@ -1397,8 +1438,9 @@ void XMLTextFieldExport::ExportFieldHelper(
 			GetInt16Property(sPropertyNumberingType,rPropSet));
 		ProcessInteger(XML_VALUE,
 					   GetIntProperty(sPropertySetNumber, rPropSet));
-		ProcessDisplay(GetBoolProperty(sPropertyIsVisible, rPropSet),
-					   sal_False);
+		if ( !bStrict )
+			ProcessDisplay(GetBoolProperty(sPropertyIsVisible, rPropSet),
+						   sal_False);
 		ExportDataBaseElement(XML_DATABASE_ROW_NUMBER, sPresentation,
                               rPropSet, xPropSetInfo);
 		break;
@@ -1446,8 +1488,9 @@ void XMLTextFieldExport::ExportFieldHelper(
 								sEmpty, sEmpty, 0.0, // not used
 								sal_False, sal_False, sal_True, sal_False);
 		}
-		ProcessDisplay(GetBoolProperty(sPropertyIsVisible, rPropSet),
-					   sal_False);
+		if ( !bStrict )
+			ProcessDisplay(GetBoolProperty(sPropertyIsVisible, rPropSet),
+						   sal_False);
 		ExportDataBaseElement(XML_DATABASE_DISPLAY, sPresentation,
                               xMaster, xMaster->getPropertySetInfo());
 		break;
@@ -1623,8 +1666,9 @@ void XMLTextFieldExport::ExportFieldHelper(
 		// reference to sequence: format, name, find value (and element)
 		// was: if (nSeqNumber != -1) ...
 		ProcessString(XML_REFERENCE_FORMAT,
-					  MapReferenceType(GetInt16Property(
-						  sPropertyReferenceFieldPart, rPropSet)),
+					  MapReferenceType(lcl_GetValidReferencePart(
+						  GetInt16Property(sPropertyReferenceFieldPart, rPropSet),
+						  sal_True, sal_False)),
 					  XML_TEMPLATE);
 		ProcessString(XML_REF_NAME,
 					  MakeSequenceRefName(
@@ -1640,8 +1684,9 @@ void XMLTextFieldExport::ExportFieldHelper(
 	case FIELD_ID_REF_BOOKMARK:
 		// reference to bookmarks, references: format, name (and element)
 		ProcessString(XML_REFERENCE_FORMAT,
-					  MapReferenceType(GetInt16Property(
-						  sPropertyReferenceFieldPart, rPropSet)),
+					  MapReferenceType(lcl_GetValidReferencePart(
+						  GetInt16Property(sPropertyReferenceFieldPart, rPropSet),
+						  sal_False, sal_False)),
 					  XML_TEMPLATE);
 		ProcessString(XML_REF_NAME,
 					  GetStringProperty(sPropertySourceName, rPropSet));
@@ -1656,10 +1701,12 @@ void XMLTextFieldExport::ExportFieldHelper(
 		// reference to end-/footnote: format, generate name, (and element)
 		GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_NOTE_CLASS,
 			FIELD_ID_REF_ENDNOTE==nToken ? XML_ENDNOTE : XML_FOOTNOTE );
-		ProcessString(XML_REFERENCE_FORMAT,
-					  MapReferenceType(GetInt16Property(
-						  sPropertyReferenceFieldPart, rPropSet)),
-					  XML_TEMPLATE);
+		{
+			const sal_Int16 nPart = lcl_GetValidReferencePart( GetInt16Property(
+				sPropertyReferenceFieldPart, rPropSet), sal_False, sal_True );
+			ProcessString(XML_REFERENCE_FORMAT, MapReferenceType(nPart),
+						  XML_TEMPLATE);
+		}
 		ProcessString(XML_REF_NAME,
 					  MakeFootnoteRefName(GetInt16Property(
 						  sPropertySequenceNumber, rPropSet)));
@@ -1687,6 +1734,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 	{
 		// this field is a special case because it gets mapped onto a
 		// hyperlink, rather than one of the regular text field.
+		GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 		ProcessString(XML_HREF, GetExport().GetRelativeReference(GetStringProperty(sPropertyURL, rPropSet)),
 					  sal_False, XML_NAMESPACE_XLINK);
 		ProcessString(XML_TARGET_FRAME_NAME,
@@ -1713,6 +1761,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 				   "Unexpected presentation for script field");
 		if (GetBoolProperty(sPropertyURLContent, rPropSet))
 		{
+			GetExport().AddAttribute(XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE);
 			ProcessString(XML_HREF,
 						  GetExport().GetRelativeReference(GetStringProperty(sPropertyContent, rPropSet)),
 						  sal_False, XML_NAMESPACE_XLINK);
@@ -1764,15 +1813,16 @@ void XMLTextFieldExport::ExportFieldHelper(
 		}
 
         // initials
-        if ( GetExport().getDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+        const sal_Bool bODF13( GetExport().getDefaultVersion() >= SvtSaveOptions::ODFVER_013 );
+        if ( bODF13 || SvtSaveOptions::IsODFExtended( GetExport().getDefaultVersion() ) )
         {
             OUString aInitials( GetStringProperty(sPropertyInitials, rPropSet) );
             if ( aInitials.getLength() > 0 )
             {
                 SvXMLElementExport aCreatorElem(
                     GetExport(),
-                    XML_NAMESPACE_TEXT_EXT,
-                    XML_SENDER_INITIALS,
+                    bODF13 ? XML_NAMESPACE_META : XML_NAMESPACE_TEXT_EXT,
+                    bODF13 ? XML_CREATOR_INITIALS : XML_SENDER_INITIALS,
                     sal_True,
                     sal_False );
                 GetExport().Characters(aInitials);
@@ -1833,11 +1883,23 @@ void XMLTextFieldExport::ExportFieldHelper(
 
     case FIELD_ID_DROP_DOWN:
     {
+        // text:drop-down is not in ODF 1.2; keep the shown item as plain text
+        const sal_Bool bODF13( GetExport().getDefaultVersion() >= SvtSaveOptions::ODFVER_013 );
+        if ( bStrict && !bODF13 )
+        {
+            GetExport().Characters( sPresentation );
+            break;
+        }
 		ProcessString(XML_NAME, GetStringProperty(sPropertyName, rPropSet));
-        ProcessString(XML_HELP,
-                      GetStringProperty(sPropertyHelp, rPropSet), true);
-        ProcessString(XML_HINT,
-                      GetStringProperty(sPropertyTooltip, rPropSet), true);
+        // ODF 1.3 allows no text:help and text:hint here: extended mode moves them to the text-ext namespace, strict mode drops them
+        if ( !bODF13 || !bStrict )
+        {
+            const sal_uInt16 nHelpPrefix( bODF13 ? XML_NAMESPACE_TEXT_EXT : XML_NAMESPACE_TEXT );
+            ProcessString(XML_HELP,
+                          GetStringProperty(sPropertyHelp, rPropSet), true, nHelpPrefix);
+            ProcessString(XML_HINT,
+                          GetStringProperty(sPropertyTooltip, rPropSet), true, nHelpPrefix);
+        }
         SvXMLElementExport aElem( GetExport(),
                                   XML_NAMESPACE_TEXT, XML_DROPDOWN,
                                   sal_False, sal_False );
@@ -2049,6 +2111,8 @@ void XMLTextFieldExport::ExportFieldDeclarations(
 					0, sEmpty, sEmpty, 0.0,
 					sal_False, sal_True, sal_False, sal_False);
 			}
+			if ( lcl_IsStrict( GetExport() ) )
+				lcl_DropCurrency( GetExport() );
 
 			ProcessString(XML_NAME, sVarName);
 			ExportElement(XML_VARIABLE_DECL, sal_True);

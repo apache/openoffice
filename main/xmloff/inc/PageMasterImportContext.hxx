@@ -61,8 +61,37 @@ public:
 			const ::com::sun::star::uno::Reference<
 				::com::sun::star::beans::XPropertySet > & rPropSet );
 
+	void FillPropertySetWithoutOldPageFill(
+			const ::com::sun::star::uno::Reference<
+				::com::sun::star::beans::XPropertySet > & rPropSet );
+
 	//text grid enhancement
 	virtual void SetDefaults();
+};
+
+class DrawingPageStyleContext : public XMLPropStyleContext
+{
+private:
+    bool                mbChecked;
+    bool                mbUsable;
+
+    void CheckFill();
+
+public:
+
+	TYPEINFO();
+
+	DrawingPageStyleContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
+			const ::rtl::OUString& rLName,
+			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > & xAttrList,
+			SvXMLStylesContext& rStyles );
+	virtual ~DrawingPageStyleContext();
+
+	bool HasFill() { CheckFill(); return mbUsable; }
+
+	virtual void FillPropertySet(
+			const ::com::sun::star::uno::Reference<
+				::com::sun::star::beans::XPropertySet > & rPropSet );
 };
 
 #endif

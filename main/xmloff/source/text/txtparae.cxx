@@ -1464,6 +1464,27 @@ static const enum XMLTokenEnum lcl_XmlReferenceElements[] = {
 static const enum XMLTokenEnum lcl_XmlBookmarkElements[] = {
     XML_BOOKMARK, XML_BOOKMARK_START, XML_BOOKMARK_END };
 
+// ODF 1.2 has no field:fieldmark; keep the position as a bookmark with the fieldmark's name
+static void lcl_ExportFieldmarkAsBookmark(
+    SvXMLExport& rExport, const Reference<XPropertySet>& rPropSet,
+    const OUString& rProperty, enum XMLTokenEnum eElement, OUString& rLastPoint )
+{
+    Reference<XNamed> xName(rPropSet->getPropertyValue(rProperty), UNO_QUERY);
+    if (xName.is() && xName->getName().getLength() > 0)
+    {
+        // a checkbox is a point bookmark; the end portion that follows it has no start to close
+        if (eElement == XML_BOOKMARK)
+            rLastPoint = xName->getName();
+        else if (eElement == XML_BOOKMARK_END && xName->getName() == rLastPoint)
+        {
+            rLastPoint = OUString();
+            return;
+        }
+        rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_NAME, xName->getName());
+        SvXMLElementExport aElem(rExport, XML_NAMESPACE_TEXT, eElement, sal_False, sal_False);
+    }
+}
+
 // This function replaces the text portion iteration during auto style
 // collection.
 bool XMLTextParagraphExport::collectTextAutoStylesOptimized( sal_Bool bIsProgress )
@@ -2228,6 +2249,7 @@ void XMLTextParagraphExport::exportTextRangeEnumeration(
     static OUString sAnnotationEnd(RTL_CONSTASCII_USTRINGPARAM("AnnotationEnd"));
 
     sal_Bool bPrevCharIsSpace = bPrvChrIsSpc;
+    OUString sFormElementName;
 
     while( rTextEnum->hasMoreElements() )
     {
@@ -2314,6 +2336,16 @@ void XMLTextParagraphExport::exportTextRangeEnumeration(
             else if (sType.equals(sMeta))
             {
                 exportMeta( xPropSet, bAutoStyles, bIsProgress );
+            }
+            else if (SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() ) &&
+                     (sType.equals(sTextFieldStart) || sType.equals(sTextFieldEnd) ||
+                      sType.equals(sTextFieldStartEnd)))
+            {
+                if (!bAutoStyles)
+                    lcl_ExportFieldmarkAsBookmark( GetExport(), xPropSet, sBookmark,
+                        sType.equals(sTextFieldStart) ? XML_BOOKMARK_START :
+                        sType.equals(sTextFieldEnd) ? XML_BOOKMARK_END : XML_BOOKMARK,
+                        sFormElementName );
             }
             else if (sType.equals(sTextFieldStart))
             {
@@ -2511,7 +2543,8 @@ sal_Bool lcl_txtpara_isBoundAsChar(
 sal_Int32 XMLTextParagraphExport::addTextFrameAttributes(
 	const Reference < XPropertySet >& rPropSet,
 	sal_Bool bShape,
-	OUString *pMinHeightValue )
+	OUString *pMinHeightValue,
+	OUString *pMinWidthValue )
 {
 	sal_Int32 nShapeFeatures = SEF_DEFAULT;
 
@@ -2547,10 +2580,13 @@ sal_Int32 XMLTextParagraphExport::addTextFrameAttributes(
 	{
 		sal_Int16 nPage = 0;
 		rPropSet->getPropertyValue( sAnchorPageNo ) >>= nPage;
-		GetExport().GetMM100UnitConverter().convertNumber( sValue,
-														   (sal_Int32)nPage );
-		GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_ANCHOR_PAGE_NUMBER,
-								  sValue.makeStringAndClear() );
+		if( nPage > 0 )
+		{
+			GetExport().GetMM100UnitConverter().convertNumber( sValue,
+															   (sal_Int32)nPage );
+			GetExport().AddAttribute( XML_NAMESPACE_TEXT, XML_ANCHOR_PAGE_NUMBER,
+									  sValue.makeStringAndClear() );
+		}
 	}
 	else
 	{
@@ -2613,7 +2649,9 @@ sal_Int32 XMLTextParagraphExport::addTextFrameAttributes(
     		rPropSet->getPropertyValue( sWidth ) >>= nWidth;
         }
 		GetExport().GetMM100UnitConverter().convertMeasure( sValue, nWidth );
-		if( SizeType::FIX != nWidthType )
+		if( SizeType::FIX != nWidthType && pMinWidthValue )
+			*pMinWidthValue = sValue.makeStringAndClear();
+		else if( SizeType::FIX != nWidthType )
 			GetExport().AddAttribute( XML_NAMESPACE_FO, XML_MIN_WIDTH,
 									  sValue.makeStringAndClear() );
 		else
@@ -2837,11 +2875,14 @@ void XMLTextParagraphExport::_exportTextFrame(
 
 	OUString sAutoStyle( sStyle );
 	OUString aMinHeightValue;
+	OUString aMinWidthValue;
 	sAutoStyle = Find( XML_STYLE_FAMILY_TEXT_FRAME, rPropSet, sStyle );
 	if( sAutoStyle.getLength() )
 		GetExport().AddAttribute( XML_NAMESPACE_DRAW, XML_STYLE_NAME,
 							  GetExport().EncodeStyleName( sAutoStyle ) );
-	addTextFrameAttributes( rPropSet, sal_False, &aMinHeightValue );
+	// fo:min-width is not allowed on draw:frame in strict ODF 1.2
+	addTextFrameAttributes( rPropSet, sal_False, &aMinHeightValue,
+		SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() ) ? &aMinWidthValue : 0 );
 
 	SvXMLElementExport aElem( GetExport(), XML_NAMESPACE_DRAW,
 							  XML_FRAME, sal_False, sal_True );
@@ -2849,6 +2890,9 @@ void XMLTextParagraphExport::_exportTextFrame(
 	if( aMinHeightValue.getLength() )
 		GetExport().AddAttribute( XML_NAMESPACE_FO, XML_MIN_HEIGHT,
 								  aMinHeightValue );
+	if( aMinWidthValue.getLength() )
+		GetExport().AddAttribute( XML_NAMESPACE_FO, XML_MIN_WIDTH,
+								  aMinWidthValue );
 
 	// draw:chain-next-name
 	if( rPropSetInfo->hasPropertyByName( sChainNextName ) )
@@ -3002,7 +3046,41 @@ void XMLTextParagraphExport::_exportTextGraphic(
 	// svg:transform
 	sal_Int16 nVal = 0;
 	rPropSet->getPropertyValue( sGraphicRotation ) >>= nVal;
-	if( nVal != 0 )
+	if( nVal != 0 && SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() ) )
+	{
+		// draw:transform, radians and counter-clockwise like GraphicRotation, about the frame centre
+		TextContentAnchorType eAnchor = TextContentAnchorType_AT_PARAGRAPH;
+		rPropSet->getPropertyValue( sAnchorType ) >>= eAnchor;
+		sal_Int16 nOrient = HoriOrientation::NONE;
+		sal_Int32 nX = 0, nY = 0, nW = 0, nH = 0;
+		rPropSet->getPropertyValue( sHoriOrient ) >>= nOrient;
+		if( HoriOrientation::NONE == nOrient && TextContentAnchorType_AS_CHARACTER != eAnchor )
+			rPropSet->getPropertyValue( sHoriOrientPosition ) >>= nX;
+		nOrient = VertOrientation::NONE;
+		rPropSet->getPropertyValue( sVertOrient ) >>= nOrient;
+		if( VertOrientation::NONE == nOrient )
+			rPropSet->getPropertyValue( sVertOrientPosition ) >>= nY;
+		rPropSet->getPropertyValue( sWidth ) >>= nW;
+		rPropSet->getPropertyValue( sHeight ) >>= nH;
+		const sal_Int32 nCX = nX + nW / 2;
+		const sal_Int32 nCY = nY + nH / 2;
+		SvXMLUnitConverter& rConv = GetExport().GetMM100UnitConverter();
+		OUStringBuffer sRet;
+		sRet.appendAscii( "translate (" );
+		rConv.convertMeasure( sRet, -nCX );
+		sRet.append( (sal_Unicode)' ' );
+		rConv.convertMeasure( sRet, -nCY );
+		sRet.appendAscii( ") rotate (" );
+		SvXMLUnitConverter::convertDouble( sRet, basegfx::deg2rad( nVal / 10.0 ) );
+		sRet.appendAscii( ") translate (" );
+		rConv.convertMeasure( sRet, nCX );
+		sRet.append( (sal_Unicode)' ' );
+		rConv.convertMeasure( sRet, nCY );
+		sRet.append( (sal_Unicode)')' );
+		GetExport().AddAttribute( XML_NAMESPACE_DRAW, XML_TRANSFORM,
+								  sRet.makeStringAndClear() );
+	}
+	else if( nVal != 0 )
 	{
 		OUStringBuffer sRet( GetXMLToken(XML_ROTATE).getLength()+4 );
 		sRet.append( GetXMLToken(XML_ROTATE));
@@ -3486,6 +3564,7 @@ void XMLTextParagraphExport::exportTextDeclarations()
 			xPropertySet->getPropertyValue(sIndexAutoMarkFileURL) >>= sUrl;
 			if (sUrl.getLength() > 0)
 			{
+				GetExport().AddAttribute( XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE );
 				GetExport().AddAttribute( XML_NAMESPACE_XLINK, XML_HREF,
 										  GetExport().GetRelativeReference(sUrl) );
 				SvXMLElementExport aAutoMarkElement(

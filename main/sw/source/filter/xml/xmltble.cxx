@@ -1002,7 +1002,7 @@ void SwXMLExport::ExportTableLine( const SwTableLine& rLine,
             }
             // <--
 
-			sal_uInt16 nColSpan = nCol - nOldCol + 1U;
+			sal_uInt16 nColSpan = nCol >= nOldCol ? nCol - nOldCol + 1U : 1U;
 
             if ( nRowSpan >= 1 )
 			    ExportTableBox( *pBox, nColSpan, static_cast< sal_uInt16 >(nRowSpan), rTblInfo );

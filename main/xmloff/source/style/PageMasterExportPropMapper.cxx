@@ -338,6 +338,9 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 	XMLPropertyState*		pPMStandardMode    	= NULL;
 	XMLPropertyState*		pPMGridBaseWidth   	= NULL;
 	XMLPropertyState*		pPMGridSnapToChars 	= NULL;
+	XMLPropertyState*		pPMGridSnapTo 		= NULL;
+	XMLPropertyState*		pPMHeaderGraphicUrl = NULL;
+	XMLPropertyState*		pPMFooterGraphicUrl = NULL;
 
     XMLPropertyState*       pPrint              = NULL;
 
@@ -406,6 +409,9 @@ void XMLPageMasterExportPropMapper::ContextFilter(
             case CTF_PM_STANDARD_MODE:		pPMStandardMode		= pProp;	break;
             case CTP_PM_GRID_BASE_WIDTH:		pPMGridBaseWidth	= pProp;	break;
             case CTP_PM_GRID_SNAP_TO_CHARS:		pPMGridSnapToChars	= pProp;	break;
+            case CTP_PM_GRID_SNAP_TO:			pPMGridSnapTo		= pProp;	break;
+            case CTF_PM_HEADERGRAPHICURL:		pPMHeaderGraphicUrl	= pProp;	break;
+            case CTF_PM_FOOTERGRAPHICURL:		pPMFooterGraphicUrl	= pProp;	break;
 
             //UUUU
             case CTF_PM_REPEAT_OFFSET_X:
@@ -526,11 +532,43 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 			lcl_RemoveState(pPMGridBaseWidth);
 		if( pPMGridSnapToChars )
 			lcl_RemoveState(pPMGridSnapToChars);
+		if( pPMGridSnapTo )
+			lcl_RemoveState(pPMGridSnapTo);
+	}
+
+	// ODF 1.2 calls it style:layout-grid-snap-to; the other modes keep the old name, which released versions read
+	if( pPMGridSnapToChars && pPMGridSnapTo )
+	{
+		if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
+			lcl_RemoveState( pPMGridSnapToChars );
+		else
+			lcl_RemoveState( pPMGridSnapTo );
+	}
+
+	// ext output stays as before (the ids once collided with the repeat offsets, so none was written)
+	if( SvtSaveOptions::IsODFExtended( SvtSaveOptions().GetODFDefaultVersion() ) )
+	{
+		if( pPMHeaderGraphicUrl )
+			lcl_RemoveState(pPMHeaderGraphicUrl);
+		if( pPMFooterGraphicUrl )
+			lcl_RemoveState(pPMFooterGraphicUrl);
+	}
+
+	// ext output writes the page fill as the drawing page style of the master page instead
+	if( SvtSaveOptions::IsODFExtended( SvtSaveOptions().GetODFDefaultVersion() ) )
+	{
+		for( ::std::vector< XMLPropertyState >::iterator aIter = rPropState.begin(); aIter != rPropState.end(); ++aIter )
+		{
+			if( aIter->mnIndex != -1 &&
+				( aPropMapper->GetEntryType( aIter->mnIndex ) & XML_TYPE_PROP_MASK ) == XML_TYPE_PROP_PAGE_LAYOUT &&
+				aPropMapper->GetEntryAPIName( aIter->mnIndex ).matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "Fill" ) ) )
+				lcl_RemoveState( &(*aIter) );
+		}
 	}
 
 	// ODF 1.2 allows style:layout-grid-standard-mode in the default page layout only, so the other modes
 	// drop it; extended mode keeps it so that a page style in standard mode survives a round trip
-	if( pPMGridBaseWidth && pPMStandardMode && SvtSaveOptions().GetODFDefaultVersion() != SvtSaveOptions::ODFVER_LATEST )
+	if( pPMGridBaseWidth && pPMStandardMode && !SvtSaveOptions::IsODFExtended( SvtSaveOptions().GetODFDefaultVersion() ) )
 		lcl_RemoveState(pPMStandardMode);
 
 	aPageBuffer.ContextFilter( rPropState );
@@ -555,10 +593,31 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 		lcl_RemoveStateIfZero16( pPMScaleTo );
 	if( pPMScaleToPages )
 		lcl_RemoveStateIfZero16( pPMScaleToPages );
+	// style:scale-to-X and -Y are not in ODF 1.2
+	const SvtSaveOptions::ODFDefaultVersion nODFVersion( SvtSaveOptions().GetODFDefaultVersion() );
+	const sal_Bool bStrict = nODFVersion == SvtSaveOptions::ODFVER_012;
 	if( pPMScaleToX )
-		lcl_RemoveStateIfZero16( pPMScaleToX );
+	{
+		if( bStrict )
+			lcl_RemoveState( pPMScaleToX );
+		else
+			lcl_RemoveStateIfZero16( pPMScaleToX );
+	}
 	if( pPMScaleToY )
-		lcl_RemoveStateIfZero16( pPMScaleToY );
+	{
+		if( bStrict )
+			lcl_RemoveState( pPMScaleToY );
+		else
+			lcl_RemoveStateIfZero16( pPMScaleToY );
+	}
+	// ODF 1.3: style:scale-to-X and -Y exclude style:scale-to and style:scale-to-pages
+	if( nODFVersion >= SvtSaveOptions::ODFVER_013 && ( ( pPMScaleToX && pPMScaleToX->mnIndex != -1 ) || ( pPMScaleToY && pPMScaleToY->mnIndex != -1 ) ) )
+	{
+		if( pPMScaleTo )
+			lcl_RemoveState( pPMScaleTo );
+		if( pPMScaleToPages )
+			lcl_RemoveState( pPMScaleToPages );
+	}
 
     if (pPrint)
     {

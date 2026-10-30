@@ -563,8 +563,9 @@ void exportText( SvXMLExport& rExport, const OUString& rText, bool bConvertTabsL
                             rExport.GetDocHandler()->characters( rText.copy( nStartPos, (nPos - nStartPos)) );
                         nStartPos = nPos + 1;
 
+                        // text:tab-stop is not in ODF 1.2
                         SvXMLElementExport aElem( rExport, XML_NAMESPACE_TEXT,
-                                                  ::xmloff::token::GetXMLToken( ::xmloff::token::XML_TAB_STOP ),
+                                                  ::xmloff::token::GetXMLToken( SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ? ::xmloff::token::XML_TAB : ::xmloff::token::XML_TAB_STOP ),
                                                   sal_False, sal_False );
                     }
                     break;

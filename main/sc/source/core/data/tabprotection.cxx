@@ -111,6 +111,9 @@ Sequence<sal_Int8> ScTableProtectionImpl::hashPassword(const String& aPassText, 
         case PASSHASH_XL:
             aHash = ::comphelper::DocPasswordHelper::GetXLHashAsSequence( aPassText, RTL_TEXTENCODING_UTF8 );
         break;
+        case PASSHASH_SHA256:
+            SvPasswordHelper::GetHashPasswordSHA256(aHash, aPassText);
+        break;
         case PASSHASH_OOO:
         default:
             SvPasswordHelper::GetHashPassword(aHash, aPassText);
@@ -188,6 +191,9 @@ bool ScTableProtectionImpl::hasPasswordHash(ScPasswordHash eHash) const
     if (meHash == eHash)
         return true;
 
+    if (eHash == PASSHASH_SHA256 && meHash == PASSHASH_OOO && maPassHash.getLength() == 32)
+        return true;
+
     return false;
 }
 
@@ -203,6 +209,9 @@ Sequence<sal_Int8> ScTableProtectionImpl::getPasswordHash(ScPasswordHash eHash) 
 
     if (meHash == eHash)
         // Stored hash exists.
+        return maPassHash;
+
+    if (eHash == PASSHASH_SHA256 && meHash == PASSHASH_OOO && maPassHash.getLength() == 32)
         return maPassHash;
 
     // Failed to find a matching hash.
@@ -236,6 +245,10 @@ bool ScTableProtectionImpl::verifyPassword(const String& aPassText) const
     if (maPassText.Len())
         // Clear text password exists, and this one takes precedence.
         return aPassText.Equals(maPassText);
+
+    if (meHash == PASSHASH_OOO)
+        // the ODF key may be SHA-1 over UTF-16LE/BE/UTF-8 or SHA-256 over UTF-8
+        return SvPasswordHelper::CompareHashPassword(maPassHash, aPassText);
 
     Sequence<sal_Int8> aHash = hashPassword(aPassText, meHash);
 

@@ -60,6 +60,7 @@
 #include <com/sun/star/drawing/XCustomShapeEngine.hpp>
 
 #include "xmloff/xmlnmspe.hxx"
+#include <xmloff/nmspmap.hxx>
 
 using ::rtl::OUString;
 using ::rtl::OUStringBuffer;
@@ -562,7 +563,6 @@ void XMLShapeExport::exportShape(const uno::Reference< drawing::XShape >& xShape
 			{
 				mrExport.AddAttribute( XML_NAMESPACE_XLINK, XML_HREF, sURL );
 				mrExport.AddAttribute( XML_NAMESPACE_XLINK, XML_TYPE, XML_SIMPLE );
-				mrExport.AddAttribute( XML_NAMESPACE_XLINK, XML_SHOW, XML_EMBED );
 				mpHyperlinkElement.reset( new SvXMLElementExport(mrExport, XML_NAMESPACE_DRAW, XML_A, sal_True, sal_True) );
 			}
 		}
@@ -704,7 +704,8 @@ void XMLShapeExport::exportShape(const uno::Reference< drawing::XShape >& xShape
 	}
 
 	// export draw:display (do not export in ODF 1.2 or older)
-	if( xSet.is() && ( mrExport.getDefaultVersion() > SvtSaveOptions::ODFVER_012 ) )
+	if( xSet.is() && ( SvtSaveOptions::IsODFExtended( mrExport.getDefaultVersion() ) ) &&
+		mrExport.GetNamespaceMap().GetPrefixByKey( XML_NAMESPACE_DRAW_EXT ).getLength() )
 	{
 		if( aShapeInfo.meShapeType != XmlShapeTypeDrawPageShape && aShapeInfo.meShapeType != XmlShapeTypePresPageShape &&
 			aShapeInfo.meShapeType != XmlShapeTypeHandoutShape && aShapeInfo.meShapeType != XmlShapeTypeDrawChartShape )
@@ -1238,11 +1239,9 @@ void XMLShapeExport::ImpExportGluePoints( const uno::Reference< drawing::XShape 
 				mrExport.AddAttribute( XML_NAMESPACE_DRAW, XML_ALIGN, msBuffer.makeStringAndClear() );
 			}
 
-			if( aGluePoint.Escape != drawing::EscapeDirection_SMART )
-			{
-				SvXMLUnitConverter::convertEnum( msBuffer, aGluePoint.Escape, aXML_GlueEscapeDirection_EnumMap );
-				mrExport.AddAttribute( XML_NAMESPACE_DRAW, XML_ESCAPE_DIRECTION, msBuffer.makeStringAndClear() );
-			}
+			// required by the schema, so SMART ("auto") is written too
+			SvXMLUnitConverter::convertEnum( msBuffer, aGluePoint.Escape, aXML_GlueEscapeDirection_EnumMap );
+			mrExport.AddAttribute( XML_NAMESPACE_DRAW, XML_ESCAPE_DIRECTION, msBuffer.makeStringAndClear() );
 
 			SvXMLElementExport aEventsElemt(mrExport, XML_NAMESPACE_DRAW, XML_GLUE_POINT, sal_True, sal_True);
 		}

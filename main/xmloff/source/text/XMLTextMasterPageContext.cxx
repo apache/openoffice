@@ -112,6 +112,10 @@ XMLTextMasterPageContext::XMLTextMasterPageContext( SvXMLImport& rImport,
 				sPageMasterName = xAttrList->getValueByIndex( i );
 			}
 		}
+		else if( XML_NAMESPACE_DRAW == nPrefix && IsXMLToken( aLocalName, XML_STYLE_NAME ) )
+		{
+			sDrawingPageStyleName = xAttrList->getValueByIndex( i );
+		}
 	}
 
 	if( sDisplayName.getLength() )
@@ -250,15 +254,35 @@ void XMLTextMasterPageContext::Finish( sal_Bool bOverwrite )
 	if( xStyle.is() && (IsNew() || bOverwrite) )
 	{
 		Reference < XPropertySet > xPropSet( xStyle, UNO_QUERY );
+		DrawingPageStyleContext* pDrawingPage = 0;
+		if( sDrawingPageStyleName.getLength() &&
+			xPropSet->getPropertySetInfo()->hasPropertyByName( OUString( RTL_CONSTASCII_USTRINGPARAM( "FillStyle" ) ) ) )
+		{
+			const SvXMLStylesContext* pStyles = GetImport().GetAutoStyles();
+			const SvXMLStyleContext* pStyle = pStyles ? pStyles->FindStyleChildContext(
+				XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID, sDrawingPageStyleName, sal_True ) : 0;
+			pStyles = GetImport().GetStyles();
+			if( !pStyle && pStyles )
+				pStyle = pStyles->FindStyleChildContext( XML_STYLE_FAMILY_SD_DRAWINGPAGE_ID,
+					sDrawingPageStyleName, sal_True );
+			pDrawingPage = PTR_CAST( DrawingPageStyleContext, pStyle );
+			if( pDrawingPage && !pDrawingPage->HasFill() )
+				pDrawingPage = 0;
+		}
 		if( sPageMasterName.getLength() )
 		{
 			XMLPropStyleContext* pStyle =
 				GetImport().GetTextImport()->FindPageMaster( sPageMasterName );
-			if (pStyle)
+			PageStyleContext* pPageStyle = PTR_CAST( PageStyleContext, pStyle );
+			if( pDrawingPage && pPageStyle )
+				pPageStyle->FillPropertySetWithoutOldPageFill( xPropSet );
+			else if (pStyle)
 			{
 				pStyle->FillPropertySet(xPropSet);
 			}
 		}
+		if( pDrawingPage )
+			pDrawingPage->FillPropertySet( xPropSet );
 
 		Reference < XNameContainer > xPageStyles =
 			GetImport().GetTextImport()->GetPageStyles();

@@ -33,6 +33,7 @@
 #include <limits.h>
 #endif
 #include <rtl/ustrbuf.hxx>
+#include <unotools/saveopt.hxx>
 #include <rtl/ustring.hxx>
 
 #include <com/sun/star/uno/Any.hxx>
@@ -151,6 +152,18 @@ sal_Bool XMLFontWeightPropHdl::exportXML( OUString& rStrExpValue, const Any& rVa
 			{
 				 nWeight = aFontWeightMap[i].nValue;
 				 break;
+			}
+		}
+
+		// strict ODF 1.2 allows normal, bold and the hundreds only; rounding down keeps light and semilight apart
+		if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
+		{
+			switch( nWeight )
+			{
+				case 0:		return sal_False;
+				case 150:	nWeight = 100; break;
+				case 250:	nWeight = 200; break;
+				case 350:	nWeight = 300; break;
 			}
 		}
 

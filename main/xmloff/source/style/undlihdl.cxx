@@ -27,6 +27,7 @@
 #include <xmloff/xmltoken.hxx>
 #include <xmloff/xmluconv.hxx>
 #include <rtl/ustrbuf.hxx>
+#include <unotools/saveopt.hxx>
 
 
 #include <com/sun/star/uno/Any.hxx>
@@ -274,6 +275,9 @@ sal_Bool XMLUnderlineStylePropHdl::exportXML( OUString& rStrExpValue, const uno:
 
 	if( rValue >>= nValue )
 	{
+		// small-wave is not a lineStyle in ODF 1.2
+		if( FontUnderline::SMALLWAVE == nValue && SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
+			nValue = FontUnderline::WAVE;
         bRet = SvXMLUnitConverter::convertEnum(
             aOut, (sal_uInt16)nValue, pXML_UnderlineStyle_Enum );
 		if( bRet )
