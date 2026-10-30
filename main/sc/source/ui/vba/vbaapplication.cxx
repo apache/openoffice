@@ -31,6 +31,10 @@
 #include <com/sun/star/sheet/XCellRangeReferrer.hpp>
 #include <com/sun/star/sheet/XCalculatable.hpp>
 #include <com/sun/star/frame/XLayoutManager.hpp>
+#include <com/sun/star/frame/XModel.hpp>
+#include <com/sun/star/script/XScript.hpp>
+#include <com/sun/star/script/provider/XScriptProvider.hpp>
+#include <com/sun/star/script/provider/XScriptProviderSupplier.hpp>
 #include <com/sun/star/task/XStatusIndicatorSupplier.hpp>
 #include <com/sun/star/task/XStatusIndicator.hpp>
 #include <ooo/vba/excel/XlMousePointer.hpp>
@@ -217,10 +221,13 @@ ScVbaApplication::getValue( const ::rtl::OUString& PropertyName )
 }
 
 // MS Excel VBA: Returns true if the specified method exists on the Application.
-// Status: implemented - delegates to ScVbaWSFunction
+// Status: implemented - checks for "Run" first, then delegates to ScVbaWSFunction
 sal_Bool SAL_CALL
 ScVbaApplication::hasMethod( const ::rtl::OUString& Name )
 {
+    // Application.Run is implemented as a typed method on XApplication
+    if( Name.equalsIgnoreAsciiCase( "Run" ) )
+        return sal_True;
     uno::Reference< script::XInvocation > xWSF( new ScVbaWSFunction( this, mxContext ) );
     return xWSF->hasMethod( Name );
 }
@@ -1477,14 +1484,63 @@ ScVbaApplication::Undo()
         if ( pUndoManager && pUndoManager->GetUndoActionCount() > 0 )
             pUndoManager->Undo();
     }
-    catch( const uno::Exception& )
-    {
-        DebugHelper::exception(SbERR_METHOD_FAILED, rtl::OUString() );
-    }
+     catch( const uno::Exception& )
+     {
+         DebugHelper::exception(SbERR_METHOD_FAILED, rtl::OUString() );
+     }
 }
 
-// MS Excel VBA: Converts inches to points (1 inch = 72 points).
-// Status: implemented - simple multiplication (nInches * 72.0)
+// MS Excel VBA: Runs a macro by name, optionally with arguments.
+// Status: implemented - uses XScriptProvider to invoke the named macro
+uno::Any SAL_CALL
+ScVbaApplication::Run( const rtl::OUString& rMacroName, const uno::Any& Arg1, const uno::Any& Arg2, const uno::Any& Arg3, const uno::Any& Arg4, const uno::Any& Arg5 )
+{
+    uno::Any aResult;
+    try
+    {
+        // Get the script provider from the document model
+        uno::Reference< frame::XModel > xModel( getCurrentDocument() );
+        if( !xModel.is() )
+            throw script::BasicErrorException( ::rtl::OUString(), uno::Reference< uno::XInterface >(), 1000, ::rtl::OUString() );
+
+        uno::Reference< script::provider::XScriptProviderSupplier > xSPSupplier( xModel, uno::UNO_QUERY_THROW );
+        uno::Reference< script::provider::XScriptProvider > xScriptProvider = xSPSupplier->getScriptProvider();
+        if( !xScriptProvider.is() )
+            throw script::BasicErrorException( ::rtl::OUString(), uno::Reference< uno::XInterface >(), 1000, ::rtl::OUString() );
+
+        // Build the script URI
+        rtl::OUString sScriptURI = rtl::OUString::createFromAscii("vnd.sun.star.script:Standard.") + rMacroName +
+            rtl::OUString::createFromAscii("?language=Basic&location=document");
+
+        // Get the script
+        uno::Reference< script::XScript > xScript = xScriptProvider->getScript( sScriptURI );
+        if( !xScript.is() )
+            throw script::BasicErrorException( ::rtl::OUString(), uno::Reference< uno::XInterface >(), 1000, ::rtl::OUString() );
+
+        // Build arguments array (filter out empty/void arguments)
+        std::vector<uno::Any> args;
+        if( Arg1.hasValue() ) args.push_back(Arg1);
+        if( Arg2.hasValue() ) args.push_back(Arg2);
+        if( Arg3.hasValue() ) args.push_back(Arg3);
+        if( Arg4.hasValue() ) args.push_back(Arg4);
+        if( Arg5.hasValue() ) args.push_back(Arg5);
+
+        uno::Sequence<uno::Any> scriptArgs( args.size() );
+        for( size_t i = 0; i < args.size(); ++i )
+            scriptArgs[i] = args[i];
+
+        // Invoke the script
+        uno::Sequence<sal_Int16> outParamIndex;
+        uno::Sequence<uno::Any> outParams;
+        aResult = xScript->invoke( scriptArgs, outParamIndex, outParams );
+    }
+    catch( const uno::Exception& )
+    {
+        aResult <<= script::BasicErrorException( ::rtl::OUString(), uno::Reference< uno::XInterface >(), 1000, ::rtl::OUString() );
+    }
+    return aResult;
+}
+
 double SAL_CALL
 ScVbaApplication::InchesToPoints( double nInches )
 {

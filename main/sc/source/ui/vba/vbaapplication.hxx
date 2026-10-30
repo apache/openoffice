@@ -256,6 +256,9 @@ public:
     // MS Excel VBA: Undoes the last user action.
     // Status: stubbed - no-op
 	virtual void SAL_CALL Undo();
+    // MS Excel VBA: Runs a macro by name, optionally with arguments.
+    // Status: implemented - uses XScriptProvider to invoke the named macro
+    virtual css::uno::Any SAL_CALL Run( const rtl::OUString& rMacroName, const css::uno::Any& Arg1, const css::uno::Any& Arg2, const css::uno::Any& Arg3, const css::uno::Any& Arg4, const css::uno::Any& Arg5 );
     // MS Excel VBA: Converts inches to points (1 inch = 72 points).
     // Status: implemented - simple multiplication
 	virtual double SAL_CALL InchesToPoints( double nInches );

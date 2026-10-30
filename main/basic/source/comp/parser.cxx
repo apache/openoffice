@@ -940,33 +940,9 @@ void SbiParser::PPIf()
 	}
 }
 
-// Helper: Check if identifier is a predefined VBA constant
-bool SbiParser::isVBAPredefinedConst( const String& aName, bool& bValue )
-{
-	if( aName.EqualsIgnoreCaseAscii( "VBA7" ) )
-	{
-		bValue = true;
-		return true;
-	}
-	if( aName.EqualsIgnoreCaseAscii( "Win32" ) ||
-	    aName.EqualsIgnoreCaseAscii( "Win64" ) )
-	{
-		bValue = false;
-		return true;
-	}
-	if( aName.EqualsIgnoreCaseAscii( "Win16" ) ||
-	    aName.EqualsIgnoreCaseAscii( "Mac" ) ||
-	    aName.EqualsIgnoreCaseAscii( "Win" ) )
-	{
-		bValue = false;
-		return true;
-	}
-	return false;
-}
-
-// Helper: Evaluate a single term in a #If condition (no And/Or).
-// Handles: True, False, identifier, Not expr, expr = expr, numbers
-bool SbiParser::evaluatePPTerm()
+// Helper: Evaluate a conditional compilation expression.
+// Supports: True, False, identifier (looked up in maConstMap), Not expr, expr = expr
+bool SbiParser::evaluatePPCondition()
 {
 	Peek();
 	bool bResult = false;
@@ -981,19 +957,7 @@ bool SbiParser::evaluatePPTerm()
 	}
 
 	// Get the left operand
-	if( aSym.EqualsIgnoreCaseAscii( "True" ) )
-	{
-		bResult = true;
-		Next();
-		Peek();
-	}
-	else if( aSym.EqualsIgnoreCaseAscii( "False" ) )
-	{
-		bResult = false;
-		Next();
-		Peek();
-	}
-	else if( eCurTok == SYMBOL )
+	if( eCurTok == SYMBOL )
 	{
 		// Check if it's a known constant
 		String aName = aSym;
@@ -1005,36 +969,17 @@ bool SbiParser::evaluatePPTerm()
 		{
 			Next(); // consume =
 			Peek();
-			// Resolve left-hand value
-			bool bLVal = false;
-			if( maConstMap.count( aName ) > 0 )
-				bLVal = maConstMap[ aName ];
-			else if( !isVBAPredefinedConst( aName, bLVal ) )
-			{
-				// Unknown identifier - try to evaluate as expression
-				SbiExpression aLeftExpr( this );
-			}
 			// Get the right operand
 			if( eCurTok == SYMBOL )
 			{
 				String aVal = aSym;
 				Next();
-				// Resolve right-hand value
-				bool bRVal = false;
-				if( aVal.EqualsIgnoreCaseAscii( "True" ) )
-					bRVal = true;
-				else if( aVal.EqualsIgnoreCaseAscii( "False" ) )
-					bRVal = false;
-				else if( maConstMap.count( aVal ) > 0 )
-					bRVal = maConstMap[ aVal ];
-				else
-					isVBAPredefinedConst( aVal, bRVal );
-				bResult = (bLVal == bRVal);
+				bResult = (aName.EqualsIgnoreCaseAscii( aVal ));
 			}
 			else if( eCurTok == NUMBER )
 			{
-				bResult = (bLVal == (nVal != 0.0));
-				Next();
+				bResult = (maConstMap.count( aName ) > 0 &&
+				           (maConstMap[ aName ] == (nVal != 0.0)));
 			}
 		}
 		else if( eCurTok == THEN )
@@ -1043,16 +988,26 @@ bool SbiParser::evaluatePPTerm()
 			if( maConstMap.count( aName ) > 0 )
 				bResult = maConstMap[ aName ];
 			else
-				isVBAPredefinedConst( aName, bResult );
+				bResult = false; // unknown constant defaults to false
 		}
 		else
 		{
 			// End of expression or other token - use the constant directly
 			if( maConstMap.count( aName ) > 0 )
 				bResult = maConstMap[ aName ];
-			else
-				isVBAPredefinedConst( aName, bResult );
 		}
+	}
+	else if( aSym.EqualsIgnoreCaseAscii( "True" ) )
+	{
+		bResult = true;
+		Next();
+		Peek();
+	}
+	else if( aSym.EqualsIgnoreCaseAscii( "False" ) )
+	{
+		bResult = false;
+		Next();
+		Peek();
 	}
 	else if( eCurTok == NUMBER )
 	{
@@ -1069,27 +1024,6 @@ bool SbiParser::evaluatePPTerm()
 
 	if( bNegate )
 		bResult = !bResult;
-
-	return bResult;
-}
-
-// Helper: Evaluate a conditional compilation expression.
-// Supports: True, False, identifier, Not, And, Or, = comparisons, numbers
-bool SbiParser::evaluatePPCondition()
-{
-	bool bResult = evaluatePPTerm();
-
-	// Handle And/Or operators for compound expressions
-	while( eCurTok == AND || eCurTok == OR )
-	{
-		bool bIsAnd = (eCurTok == AND);
-		Next(); // consume And/Or
-		bool bTerm = evaluatePPTerm();
-		if( bIsAnd )
-			bResult = bResult && bTerm;
-		else
-			bResult = bResult || bTerm;
-	}
 
 	return bResult;
 }
