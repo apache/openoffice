@@ -1392,12 +1392,16 @@ void XMLSectionExport::ExportIndexTemplateElement(
 			eElement = XML_INDEX_ENTRY_CHAPTER;
 			break;
 		case TOK_TTYPE_HYPERLINK_START:
-			// strict ODF 1.2 allows the link tokens in table-of-content templates only
-			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType )
+			// strict ODF 1.2 allows the link tokens in table-of-content templates only, ODF 1.3 also in the table, illustration, object and user index templates
+			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType
+				|| ( aODFVersion >= SvtSaveOptions::ODFVER_013 && ( TEXT_SECTION_TYPE_TABLE == eType
+					|| TEXT_SECTION_TYPE_ILLUSTRATION == eType || TEXT_SECTION_TYPE_OBJECT == eType || TEXT_SECTION_TYPE_USER == eType ) ) )
 				eElement = XML_INDEX_ENTRY_LINK_START;
 			break;
 		case TOK_TTYPE_HYPERLINK_END:
-			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType )
+			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType
+				|| ( aODFVersion >= SvtSaveOptions::ODFVER_013 && ( TEXT_SECTION_TYPE_TABLE == eType
+					|| TEXT_SECTION_TYPE_ILLUSTRATION == eType || TEXT_SECTION_TYPE_OBJECT == eType || TEXT_SECTION_TYPE_USER == eType ) ) )
 				eElement = XML_INDEX_ENTRY_LINK_END;
 			break;
 		case TOK_TTYPE_BIBLIOGRAPHY:

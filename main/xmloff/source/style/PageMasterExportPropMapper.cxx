@@ -594,7 +594,8 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 	if( pPMScaleToPages )
 		lcl_RemoveStateIfZero16( pPMScaleToPages );
 	// style:scale-to-X and -Y are not in ODF 1.2
-	const sal_Bool bStrict = SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() );
+	const SvtSaveOptions::ODFDefaultVersion nODFVersion( SvtSaveOptions().GetODFDefaultVersion() );
+	const sal_Bool bStrict = nODFVersion == SvtSaveOptions::ODFVER_012;
 	if( pPMScaleToX )
 	{
 		if( bStrict )
@@ -608,6 +609,14 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 			lcl_RemoveState( pPMScaleToY );
 		else
 			lcl_RemoveStateIfZero16( pPMScaleToY );
+	}
+	// ODF 1.3: style:scale-to-X and -Y exclude style:scale-to and style:scale-to-pages
+	if( nODFVersion >= SvtSaveOptions::ODFVER_013 && ( ( pPMScaleToX && pPMScaleToX->mnIndex != -1 ) || ( pPMScaleToY && pPMScaleToY->mnIndex != -1 ) ) )
+	{
+		if( pPMScaleTo )
+			lcl_RemoveState( pPMScaleTo );
+		if( pPMScaleToPages )
+			lcl_RemoveState( pPMScaleToPages );
 	}
 
     if (pPrint)

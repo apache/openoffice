@@ -67,6 +67,7 @@ public:
         ODFVER_013_EXT = 7,     // ODF 1.3 with extensions
 
         ODFVER_EXTENSION = SAL_MAX_ENUM,   // only in property map tables: export in the extended modes only
+        ODFVER_EXTENSION_PRE_013 = SAL_MAX_ENUM - 1,   // only in property map tables: export in the extended modes below ODF 1.3
     };
 
     // Test the mode with these, not with a compare against a version: the extended modes sort above the strict ones.

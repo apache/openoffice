@@ -669,11 +669,17 @@ vector< XMLPropertyState > SvXMLExportPropertyMapper::_Filter(
                 const SvtSaveOptions::ODFDefaultVersion nCurrentVersion( SvtSaveOptions().GetODFDefaultVersion() );
                 const SvtSaveOptions::ODFDefaultVersion nEarliestODFVersionForExport(
                         maPropMapper->GetEarliestODFVersionForExport( i ) );
-                if( ( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION
-                        ? SvtSaveOptions::IsODFExtended( nCurrentVersion )
-                        : nCurrentVersion >= nEarliestODFVersionForExport )
-                        || nCurrentVersion == SvtSaveOptions::ODFVER_UNKNOWN
-                        || nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_UNKNOWN )
+                sal_Bool bExport( nCurrentVersion == SvtSaveOptions::ODFVER_UNKNOWN
+                        || nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_UNKNOWN );
+                if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION )
+                    bExport = bExport || SvtSaveOptions::IsODFExtended( nCurrentVersion );
+                else if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION_PRE_013 )
+                    bExport = bExport || ( SvtSaveOptions::IsODFExtended( nCurrentVersion ) && nCurrentVersion < SvtSaveOptions::ODFVER_013 );
+                else if( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_013 )
+                    bExport = nCurrentVersion >= SvtSaveOptions::ODFVER_013;   // the unknown mode keeps writing what it wrote before
+                else
+                    bExport = bExport || nCurrentVersion >= nEarliestODFVersionForExport;
+                if( bExport )
                     pFilterInfo->AddProperty(rAPIName, i);
             }
 		}

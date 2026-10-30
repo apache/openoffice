@@ -3147,6 +3147,9 @@ namespace xmloff { namespace token {
         XML_VERTICAL_BAR,
         XML_LAYOUT_GRID_SNAP_TO,
 
+        // ODF 1.3
+        XML_CREATOR_INITIALS,
+
         XML_TOKEN_END
     };
 

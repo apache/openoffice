@@ -1813,15 +1813,16 @@ void XMLTextFieldExport::ExportFieldHelper(
 		}
 
         // initials
-        if ( SvtSaveOptions::IsODFExtended( GetExport().getDefaultVersion() ) )
+        const sal_Bool bODF13( GetExport().getDefaultVersion() >= SvtSaveOptions::ODFVER_013 );
+        if ( bODF13 || SvtSaveOptions::IsODFExtended( GetExport().getDefaultVersion() ) )
         {
             OUString aInitials( GetStringProperty(sPropertyInitials, rPropSet) );
             if ( aInitials.getLength() > 0 )
             {
                 SvXMLElementExport aCreatorElem(
                     GetExport(),
-                    XML_NAMESPACE_TEXT_EXT,
-                    XML_SENDER_INITIALS,
+                    bODF13 ? XML_NAMESPACE_META : XML_NAMESPACE_TEXT_EXT,
+                    bODF13 ? XML_CREATOR_INITIALS : XML_SENDER_INITIALS,
                     sal_True,
                     sal_False );
                 GetExport().Characters(aInitials);
@@ -1883,16 +1884,22 @@ void XMLTextFieldExport::ExportFieldHelper(
     case FIELD_ID_DROP_DOWN:
     {
         // text:drop-down is not in ODF 1.2; keep the shown item as plain text
-        if ( bStrict )
+        const sal_Bool bODF13( GetExport().getDefaultVersion() >= SvtSaveOptions::ODFVER_013 );
+        if ( bStrict && !bODF13 )
         {
             GetExport().Characters( sPresentation );
             break;
         }
 		ProcessString(XML_NAME, GetStringProperty(sPropertyName, rPropSet));
-        ProcessString(XML_HELP,
-                      GetStringProperty(sPropertyHelp, rPropSet), true);
-        ProcessString(XML_HINT,
-                      GetStringProperty(sPropertyTooltip, rPropSet), true);
+        // ODF 1.3 allows no text:help and text:hint here: extended mode moves them to the text-ext namespace, strict mode drops them
+        if ( !bODF13 || !bStrict )
+        {
+            const sal_uInt16 nHelpPrefix( bODF13 ? XML_NAMESPACE_TEXT_EXT : XML_NAMESPACE_TEXT );
+            ProcessString(XML_HELP,
+                          GetStringProperty(sPropertyHelp, rPropSet), true, nHelpPrefix);
+            ProcessString(XML_HINT,
+                          GetStringProperty(sPropertyTooltip, rPropSet), true, nHelpPrefix);
+        }
         SvXMLElementExport aElem( GetExport(),
                                   XML_NAMESPACE_TEXT, XML_DROPDOWN,
                                   sal_False, sal_False );

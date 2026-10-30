@@ -3147,6 +3147,9 @@ namespace xmloff { namespace token {
         TOKEN( "vertical-bar",                 XML_VERTICAL_BAR ),
         TOKEN( "layout-grid-snap-to",          XML_LAYOUT_GRID_SNAP_TO ),
 
+        // ODF 1.3
+        TOKEN( "creator-initials",             XML_CREATOR_INITIALS ),
+
 #if OSL_DEBUG_LEVEL > 0
         { 0, NULL, NULL,                       XML_TOKEN_END }
 #else
