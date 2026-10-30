@@ -704,7 +704,7 @@ void XMLShapeExport::exportShape(const uno::Reference< drawing::XShape >& xShape
 	}
 
 	// export draw:display (do not export in ODF 1.2 or older)
-	if( xSet.is() && ( mrExport.getDefaultVersion() > SvtSaveOptions::ODFVER_012 ) &&
+	if( xSet.is() && ( SvtSaveOptions::IsODFExtended( mrExport.getDefaultVersion() ) ) &&
 		mrExport.GetNamespaceMap().GetPrefixByKey( XML_NAMESPACE_DRAW_EXT ).getLength() )
 	{
 		if( aShapeInfo.meShapeType != XmlShapeTypeDrawPageShape && aShapeInfo.meShapeType != XmlShapeTypePresPageShape &&

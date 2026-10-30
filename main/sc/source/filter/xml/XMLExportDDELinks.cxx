@@ -208,7 +208,7 @@ void ScXMLExportDDELinks::WriteDDELinks(uno::Reference<sheet::XSpreadsheetDocume
 							if (rExport.GetDocument() &&
 								rExport.GetDocument()->GetDdeLinkMode(nDDELink, nMode))
 							{
-								const sal_uInt16 nModePrefix = rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ?
+								const sal_uInt16 nModePrefix = SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ?
 									XML_NAMESPACE_OFFICE : XML_NAMESPACE_TABLE;
 								switch (nMode)
 								{

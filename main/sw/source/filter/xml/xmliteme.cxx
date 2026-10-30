@@ -238,7 +238,7 @@ void SwXMLExport::_InitItemExport()
 
 	pTableItemMapper = new SwXMLTableItemMapper_Impl( xTableItemMap, *this );
 
-    if( getDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+    if( SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
     {
         _GetNamespaceMap().Add(
             GetXMLToken(XML_NP_TEXT_EXT),

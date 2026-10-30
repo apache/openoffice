@@ -295,7 +295,7 @@ sal_Bool XMLBorderWidthHdl::exportXML( OUString& rStrExpValue, const uno::Any& r
 
 	// strict ODF 1.2 wants three positive lengths; a zero part is dropped on reload
 	if( ( aBorderLine.LineDistance == 0 || aBorderLine.InnerLineWidth == 0 || aBorderLine.OuterLineWidth == 0 ) &&
-		SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+		SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
 		return sal_False;
 
 	rUnitConverter.convertMeasure( aOut, aBorderLine.InnerLineWidth );

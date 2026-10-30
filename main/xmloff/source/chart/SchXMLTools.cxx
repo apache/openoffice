@@ -565,7 +565,7 @@ void exportText( SvXMLExport& rExport, const OUString& rText, bool bConvertTabsL
 
                         // text:tab-stop is not in ODF 1.2
                         SvXMLElementExport aElem( rExport, XML_NAMESPACE_TEXT,
-                                                  ::xmloff::token::GetXMLToken( rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ? ::xmloff::token::XML_TAB : ::xmloff::token::XML_TAB_STOP ),
+                                                  ::xmloff::token::GetXMLToken( SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ? ::xmloff::token::XML_TAB : ::xmloff::token::XML_TAB_STOP ),
                                                   sal_False, sal_False );
                     }
                     break;

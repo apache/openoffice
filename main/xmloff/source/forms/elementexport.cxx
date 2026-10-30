@@ -533,7 +533,7 @@ namespace xmloff
                     attributeValue = handler->getAttributeValue( propValue );
 
                     // ODF 1.2 wants xsd:time for the time controls
-                    if  (   m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012
+                    if  (   SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() )
                         &&  (   propDescription->propertyId == PID_TIME_MIN
                             ||  propDescription->propertyId == PID_TIME_MAX
                             ||  propDescription->propertyId == PID_DEFAULT_TIME
@@ -745,7 +745,7 @@ namespace xmloff
 				// strict ODF 1.2 knows only flat and 3d: NONE is written as flat
 				sal_Int16 nVisualEffect = VisualEffect::LOOK3D;
 				m_xProps->getPropertyValue( PROPERTY_VISUAL_EFFECT ) >>= nVisualEffect;
-				if ( m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012 && VisualEffect::NONE == nVisualEffect )
+				if ( SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) && VisualEffect::NONE == nVisualEffect )
 				{
 					AddAttributeASCII(
 						OAttributeMetaData::getCommonControlAttributeNamespace( CCA_VISUAL_EFFECT ),
@@ -883,7 +883,7 @@ namespace xmloff
 			OSL_ENSURE((NULL == pValuePropertyName) == (0 == (CCA_VALUE & m_nIncludeCommon)),
 				"OControlExport::exportCommonControlAttributes: no property found for the value attribute!");
 			OSL_ENSURE((NULL == pCurrentValuePropertyName ) == (0 == (CCA_CURRENT_VALUE & m_nIncludeCommon)) ||
-				( VALUERANGE == m_eType && m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012 ),
+				( VALUERANGE == m_eType && SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) ),
 				"OControlExport::exportCommonControlAttributes: no property found for the current-value attribute!");
 
 		#if OSL_DEBUG_LEVEL > 0
@@ -918,7 +918,7 @@ namespace xmloff
         if ( DA_INPUT_REQUIRED & m_nIncludeDatabase )
         {
             // form:input-required is an ODF 1.4 attribute
-            if ( m_rContext.getGlobalContext().getDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+            if ( SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) )
                 exportedProperty( PROPERTY_INPUT_REQUIRED );
             else
             exportBooleanPropertyAttribute(
@@ -1520,7 +1520,7 @@ namespace xmloff
                     knownType = true;
                 }
 				// form:validation is allowed on form:formatted-text only in ODF 1.2
-				if ( m_rContext.getGlobalContext().getDefaultVersion() != SvtSaveOptions::ODFVER_012 )
+				if ( !SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) )
 					m_nIncludeSpecial |= SCA_VALIDATION;
                 // NO BREAK
 			case FormComponentType::NUMERICFIELD:
@@ -1759,7 +1759,7 @@ namespace xmloff
 					CCA_NAME | CCA_SERVICE_NAME | CCA_DISABLED | CCA_PRINTABLE |
                     CCA_TITLE | CCA_VALUE | CCA_ORIENTATION;
 				// form:current-value is not allowed on form:value-range in ODF 1.2
-				if ( m_rContext.getGlobalContext().getDefaultVersion() != SvtSaveOptions::ODFVER_012 )
+				if ( !SvtSaveOptions::IsODFStrict( m_rContext.getGlobalContext().getDefaultVersion() ) )
 					m_nIncludeCommon |= CCA_CURRENT_VALUE;
                 m_nIncludeSpecial = SCA_MAX_VALUE | SCA_STEP_SIZE | SCA_MIN_VALUE | SCA_REPEAT_DELAY;
 
@@ -1821,7 +1821,7 @@ namespace xmloff
         // is (list-)control bound to XForms list?
         if( getXFormsListBindName( m_xProps ).getLength() > 0 &&
             ( m_eType != COMBOBOX || m_rContext.getGlobalContext().getDefaultVersion() < SvtSaveOptions::ODFVER_010 ||
-              m_rContext.getGlobalContext().getDefaultVersion() > SvtSaveOptions::ODFVER_012 ) )
+              SvtSaveOptions::IsODFExtended( m_rContext.getGlobalContext().getDefaultVersion() ) ) )
         {
             m_nIncludeBindings |= BA_XFORMS_LISTBIND;
         }

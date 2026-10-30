@@ -170,7 +170,7 @@ void XMLLineNumberingExport::Export()
 			sal_Int16 nPosition = 0;
 			aAny >>= nPosition;
 			if (SvXMLUnitConverter::convertEnum(sNumPosBuf, nPosition,
-					rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ?
+					SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ?
 					aLineNumberPositionMapStrict : aLineNumberPositionMap))
 			{
 				rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_NUMBER_POSITION,

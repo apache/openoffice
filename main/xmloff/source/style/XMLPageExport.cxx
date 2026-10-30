@@ -91,7 +91,7 @@ namespace
         const Reference< XPropertySet >& rPropSet )
     {
         ::std::vector< XMLPropertyState > aPropStates;
-        if( rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+        if( SvtSaveOptions::IsODFExtended( rExport.getDefaultVersion() ) )
         {
             UniReference< SvXMLExportPropertyMapper > xMapper( new XMLPageDrawingPageExportPropMapper( rExport ) );
             aPropStates = xMapper->Filter( rPropSet );

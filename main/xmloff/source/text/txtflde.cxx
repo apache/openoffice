@@ -281,7 +281,7 @@ inline Sequence<OUString> const GetStringSequenceProperty(
 // strict ODF 1.2 has no place for AOO's attributes in ODF namespaces
 static sal_Bool lcl_IsStrict( SvXMLExport& rExport )
 {
-	return rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012;
+	return SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() );
 }
 
 // office:currency is not allowed on text:variable-decl in ODF 1.2
@@ -1813,7 +1813,7 @@ void XMLTextFieldExport::ExportFieldHelper(
 		}
 
         // initials
-        if ( GetExport().getDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+        if ( SvtSaveOptions::IsODFExtended( GetExport().getDefaultVersion() ) )
         {
             OUString aInitials( GetStringProperty(sPropertyInitials, rPropSet) );
             if ( aInitials.getLength() > 0 )

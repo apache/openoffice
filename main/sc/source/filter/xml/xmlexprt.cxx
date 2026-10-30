@@ -1773,7 +1773,7 @@ void ScXMLExport::_ExportContent()
                         CheckAttrList();
 
                         if ( pDoc && pDoc->GetSheetEvents( static_cast<SCTAB>(nTable) ) &&
-                             getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+                             SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
                         {
                             // store sheet events
                             uno::Reference<document::XEventsSupplier> xSupplier(xTable, uno::UNO_QUERY);
@@ -4260,7 +4260,7 @@ void ScXMLExport::WriteConsolidation()
 			AddAttribute( XML_NAMESPACE_TABLE, XML_TARGET_CELL_ADDRESS, sStrData );
 
 			const XMLTokenEnum eUseLabel =
-				getDefaultVersion() == SvtSaveOptions::ODFVER_012 ? XML_USE_LABELS : XML_USE_LABEL;
+				SvtSaveOptions::IsODFStrict( getDefaultVersion() ) ? XML_USE_LABELS : XML_USE_LABEL;
 			if( pCons->bByCol && !pCons->bByRow )
 				AddAttribute( XML_NAMESPACE_TABLE, eUseLabel, XML_COLUMN );
 			else if( !pCons->bByCol && pCons->bByRow )
@@ -4490,7 +4490,7 @@ void ScXMLExport::CollectUserDefinedNamespaces(const SfxItemPool* pPool, sal_uIn
         XML_NAMESPACE_PRESENTATION );
 
     // shapes carry drawooo:display
-    if( getDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+    if( SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
         _GetNamespaceMap().Add(
             GetXMLToken( XML_NP_DRAW_EXT ),
             GetXMLToken( XML_N_DRAW_EXT ),
@@ -4527,7 +4527,7 @@ sal_uInt32 ScXMLExport::exportDoc( enum XMLTokenEnum eClass )
 
             // sheet events use officeooo namespace
             if( (getExportFlags() & EXPORT_CONTENT) != 0 &&
-                getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+                SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
             {
                 bool bAnySheetEvents = false;
                 SCTAB nTabCount = pDoc->GetTableCount();

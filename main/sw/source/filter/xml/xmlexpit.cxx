@@ -175,7 +175,7 @@ void SvXMLExportItemMapper::exportXML( const SvXMLExport& rExport,
 			for( sal_uInt16 i=0; i < nCount; i++ )
 			{
 				// strict ODF 1.2: foreign attributes are invalid too
-				if( rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ||
+				if( SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ||
 					( rExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_012 &&
 					  SvXMLIsODFNamespace( pUnknown->GetAttrNamespace( i ) ) ) )
 					continue;

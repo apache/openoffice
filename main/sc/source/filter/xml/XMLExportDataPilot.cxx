@@ -447,7 +447,7 @@ void ScXMLExportDataPilot::WriteSubTotals(ScDPSaveDimension* pDim)
 
 	sal_Int32 nSubTotalCount = pDim->GetSubTotalsCount();
     const OUString* pLayoutName = NULL;
-    if (rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST)
+    if (SvtSaveOptions::IsODFExtended( rExport.getDefaultVersion() ))
         // Export display names only for 1.2 extended or later.
         pLayoutName = pDim->GetSubtotalName();
 
@@ -479,7 +479,7 @@ void ScXMLExportDataPilot::WriteMembers(ScDPSaveDimension* pDim)
 		{
 			rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_NAME, rtl::OUString((*i)->GetName()));
 
-            if (rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST)
+            if (SvtSaveOptions::IsODFExtended( rExport.getDefaultVersion() ))
             {
                 // Export display names only for ODF 1.2 extended or later.
                 const OUString* pLayoutName = (*i)->GetLayoutName();
@@ -613,7 +613,7 @@ void ScXMLExportDataPilot::WriteGroupDimAttributes(const ScDPSaveGroupDimension*
 {
     if (pGroupDim)
     {
-        if (rExport.getDefaultVersion() != SvtSaveOptions::ODFVER_012)	// not in the schema
+        if (!SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ))	// not in the schema
             rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_IS_GROUP_FIELD, XML_TRUE);
         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_SOURCE_FIELD_NAME, pGroupDim->GetSourceDimName());
         if (pGroupDim->GetDatePart())
@@ -628,7 +628,7 @@ void ScXMLExportDataPilot::WriteNumGroupDim(const ScDPSaveNumGroupDimension* pNu
 {
     if (pNumGroupDim)
     {
-        if (rExport.getDefaultVersion() != SvtSaveOptions::ODFVER_012)	// not in the schema
+        if (!SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ))	// not in the schema
             rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_IS_GROUP_FIELD, XML_TRUE);
         // required by the schema; empty marks a numeric or date group
         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_SOURCE_FIELD_NAME, rtl::OUString());
@@ -692,7 +692,7 @@ void ScXMLExportDataPilot::WriteGroupDimElements(ScDPSaveDimension* pDim, const 
 void ScXMLExportDataPilot::WriteDimension(ScDPSaveDimension* pDim, const ScDPDimensionSaveData* pDimData)
 {
 	rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_SOURCE_FIELD_NAME, rtl::OUString(pDim->GetName()));
-    if (rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST)
+    if (SvtSaveOptions::IsODFExtended( rExport.getDefaultVersion() ))
     {
         // Export display names only for ODF 1.2 extended or later.
         const OUString* pLayoutName = pDim->GetLayoutName();
@@ -819,7 +819,7 @@ void ScXMLExportDataPilot::WriteDataPilots(const uno::Reference <sheet::XSpreads
                         // grand total elements.
 
                         const OUString* pGrandTotalName = pDPSave->GetGrandTotalName();
-                        if (pGrandTotalName && rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST)
+                        if (pGrandTotalName && SvtSaveOptions::IsODFExtended( rExport.getDefaultVersion() ))
                         {
                             // Use the new data-pilot-grand-total element.
                             if (bRowGrand && bColumnGrand)

@@ -2337,7 +2337,7 @@ void XMLTextParagraphExport::exportTextRangeEnumeration(
             {
                 exportMeta( xPropSet, bAutoStyles, bIsProgress );
             }
-            else if (GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012 &&
+            else if (SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() ) &&
                      (sType.equals(sTextFieldStart) || sType.equals(sTextFieldEnd) ||
                       sType.equals(sTextFieldStartEnd)))
             {
@@ -2882,7 +2882,7 @@ void XMLTextParagraphExport::_exportTextFrame(
 							  GetExport().EncodeStyleName( sAutoStyle ) );
 	// fo:min-width is not allowed on draw:frame in strict ODF 1.2
 	addTextFrameAttributes( rPropSet, sal_False, &aMinHeightValue,
-		GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012 ? &aMinWidthValue : 0 );
+		SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() ) ? &aMinWidthValue : 0 );
 
 	SvXMLElementExport aElem( GetExport(), XML_NAMESPACE_DRAW,
 							  XML_FRAME, sal_False, sal_True );
@@ -3046,7 +3046,7 @@ void XMLTextParagraphExport::_exportTextGraphic(
 	// svg:transform
 	sal_Int16 nVal = 0;
 	rPropSet->getPropertyValue( sGraphicRotation ) >>= nVal;
-	if( nVal != 0 && GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+	if( nVal != 0 && SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() ) )
 	{
 		// draw:transform, radians and counter-clockwise like GraphicRotation, about the frame centre
 		TextContentAnchorType eAnchor = TextContentAnchorType_AT_PARAGRAPH;

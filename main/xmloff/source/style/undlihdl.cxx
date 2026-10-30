@@ -276,7 +276,7 @@ sal_Bool XMLUnderlineStylePropHdl::exportXML( OUString& rStrExpValue, const uno:
 	if( rValue >>= nValue )
 	{
 		// small-wave is not a lineStyle in ODF 1.2
-		if( FontUnderline::SMALLWAVE == nValue && SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+		if( FontUnderline::SMALLWAVE == nValue && SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
 			nValue = FontUnderline::WAVE;
         bRet = SvXMLUnitConverter::convertEnum(
             aOut, (sal_uInt16)nValue, pXML_UnderlineStyle_Enum );

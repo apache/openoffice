@@ -670,7 +670,7 @@ sal_Bool XMLMeasureUnitHdl::exportXML( OUString& rStrExpValue, const Any& rValue
 	if( !XMLEnumPropertyHdl::exportXML( rStrExpValue, rValue, rUnitConverter ) )
 		return sal_False;
 
-	if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 && IsXMLToken( rStrExpValue, XML_UNIT_INCH ) )
+	if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) && IsXMLToken( rStrExpValue, XML_UNIT_INCH ) )
 		rStrExpValue = GetXMLToken( XML_INCH );
 	return sal_True;
 }
@@ -1545,7 +1545,7 @@ void XMLShapeExportPropertyMapper::ContextFilter(
 		pClip11State->mnIndex = -1;
 
 	// the FontWork attributes are not in ODF 1.2
-	if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+	if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
 	{
 		XMLPropertyState* aFontWork[] = { pFontWorkStyle, pFontWorkAdjust, pFontWorkDistance, pFontWorkStart,
 			pFontWorkMirror, pFontWorkOutline, pFontWorkShadow, pFontWorkShadowColor, pFontWorkShadowOffsetx,

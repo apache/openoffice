@@ -125,7 +125,7 @@ protected:
 
 void XMLTableCellExportPropertyMapper::ContextFilter( std::vector< XMLPropertyState >& rProperties, Reference< XPropertySet > rPropSet ) const
 {
-	const bool bStrict = SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012;
+	const bool bStrict = SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() );
 	bool bSolid = false;
 	if( bStrict ) try
 	{
@@ -612,7 +612,7 @@ void XMLTableExport::exportTableTemplates()
          return;
 
 	// ODF 1.2 strict: table:name, table:style-name and the part order of the schema (body before even-rows)
-	const bool bStrict = mrExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012;
+	const bool bStrict = SvtSaveOptions::IsODFStrict( mrExport.getDefaultVersion() );
 	const TableStyleElement* pMap = getTableStyleMap();
 	static const sal_Int32 aStrictPartOrder[] = { 0, 1, 2, 3, 8, 4, 5, 6, 7 };
 

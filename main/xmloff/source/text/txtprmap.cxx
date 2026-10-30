@@ -82,7 +82,7 @@ using namespace ::xmloff::token;
 //UUUU
 #define _MAP(name,prefix,token,type,context)  { name, sizeof(name)-1, prefix, token, type, context, SvtSaveOptions::ODFVER_010 }
 #define GMAP(name,prefix,token,type,context) _MAP(name,prefix,token,static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC),context)
-#define GMAP_EXT(name,prefix,token,type,context) { name, sizeof(name)-1, prefix, token, static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC), context, SvtSaveOptions::ODFVER_LATEST }
+#define GMAP_EXT(name,prefix,token,type,context) { name, sizeof(name)-1, prefix, token, static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC), context, SvtSaveOptions::ODFVER_EXTENSION }
 
 XMLPropertyMapEntry aXMLParaPropMap[] =
 {

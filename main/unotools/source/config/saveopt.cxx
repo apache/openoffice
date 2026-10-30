@@ -434,7 +434,7 @@ SvtSaveOptions_Impl::SvtSaveOptions_Impl()
     , bLoadDocPrinter( sal_True )
     , bUseSHA1InODF12( sal_False )
     , bUseBlowfishInODF12( sal_False )
-    , eODFDefaultVersion( SvtSaveOptions::ODFVER_LATEST )
+    , eODFDefaultVersion( SvtSaveOptions::ODFVER_012_EXT )
     , bROAutoSaveTime( CFG_READONLY_DEFAULT )
     , bROUseUserData( CFG_READONLY_DEFAULT )
     , bROBackup( CFG_READONLY_DEFAULT )
@@ -490,8 +490,8 @@ SvtSaveOptions_Impl::SvtSaveOptions_Impl()
                         if ( pValues[nProp] >>= nTmp )
                         {
                             if( nTmp == 3 )
-                                eODFDefaultVersion = SvtSaveOptions::ODFVER_LATEST;
-                            else
+                                eODFDefaultVersion = SvtSaveOptions::ODFVER_012_EXT;
+                            else if( nTmp >= 0 && nTmp <= 4 )
                                 eODFDefaultVersion = SvtSaveOptions::ODFDefaultVersion( nTmp );
                         }
                         else {
@@ -746,7 +746,7 @@ void SvtSaveOptions_Impl::Commit()
             case ODFDEFAULTVERSION:
                 if (!bROODFDefaultVersion)
                 {
-                    pValues[nRealCount] <<= (eODFDefaultVersion == SvtSaveOptions::ODFVER_LATEST) ? sal_Int16( 3 ) : sal_Int16( eODFDefaultVersion );
+                    pValues[nRealCount] <<= (eODFDefaultVersion == SvtSaveOptions::ODFVER_012_EXT) ? sal_Int16( 3 ) : sal_Int16( eODFDefaultVersion );
                     pNames[nRealCount] = pOrgNames[i];
                     ++nRealCount;
                 }

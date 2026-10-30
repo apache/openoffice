@@ -434,7 +434,7 @@ SvXMLMetaExport::startElement(const ::rtl::OUString & i_rName,
     const uno::Reference< xml::sax::XAttributeList > & i_xAttribs)
 {
     // strict ODF 1.2: custom metadata (foreign content) is not allowed
-    const bool bStrict = mrExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012;
+    const bool bStrict = SvtSaveOptions::IsODFStrict( mrExport.getDefaultVersion() );
 
     if (m_skip) {
         ++m_skip;

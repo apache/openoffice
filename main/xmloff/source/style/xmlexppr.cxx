@@ -669,7 +669,9 @@ vector< XMLPropertyState > SvXMLExportPropertyMapper::_Filter(
                 const SvtSaveOptions::ODFDefaultVersion nCurrentVersion( SvtSaveOptions().GetODFDefaultVersion() );
                 const SvtSaveOptions::ODFDefaultVersion nEarliestODFVersionForExport(
                         maPropMapper->GetEarliestODFVersionForExport( i ) );
-                if( nCurrentVersion >= nEarliestODFVersionForExport
+                if( ( nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_EXTENSION
+                        ? SvtSaveOptions::IsODFExtended( nCurrentVersion )
+                        : nCurrentVersion >= nEarliestODFVersionForExport )
                         || nCurrentVersion == SvtSaveOptions::ODFVER_UNKNOWN
                         || nEarliestODFVersionForExport == SvtSaveOptions::ODFVER_UNKNOWN )
                     pFilterInfo->AddProperty(rAPIName, i);
@@ -997,7 +999,7 @@ void SvXMLExportPropertyMapper::_exportXML(
 			xml::AttributeData aData;
 			const sal_Bool bSkipODFNamespaces( SvtSaveOptions().GetODFDefaultVersion() >= SvtSaveOptions::ODFVER_012 );
 			// strict ODF 1.2: foreign attributes are invalid too
-			const sal_Bool bSkipForeign( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 );
+			const sal_Bool bSkipForeign( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) );
 			for( sal_Int32 i=0; i < nCount; i++, pAttribName++ )
 			{
 				xAttrContainer->getByName( *pAttribName ) >>= aData;

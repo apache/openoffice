@@ -758,7 +758,7 @@ IMPL_LINK( SfxSaveTabPage, FilterHdl_Impl, ListBox *, pBox )
 IMPL_LINK( SfxSaveTabPage, ODFVersionHdl_Impl, ListBox *, EMPTYARG )
 {
     long nVersion = long( aODFVersionLB.GetEntryData( aODFVersionLB.GetSelectEntryPos() ) );
-    bool bShown = SvtSaveOptions::ODFDefaultVersion( nVersion ) != SvtSaveOptions::ODFVER_LATEST;
+    bool bShown = !SvtSaveOptions::IsODFExtended( SvtSaveOptions::ODFDefaultVersion( nVersion ) );
     if ( bShown )
     {
         bool bHasODFFormat = false;

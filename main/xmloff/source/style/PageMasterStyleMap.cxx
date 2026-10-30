@@ -38,7 +38,7 @@ using namespace ::xmloff::token;
 //UUUU
 #define GMAP(name,prefix,token,type,context) _MAP(name,prefix,token,static_cast<sal_Int32>(type|XML_TYPE_PROP_GRAPHIC),context)
 // AOO extension, not ODF 1.2: strict export keeps only fo:background-color and style:background-image
-#define _MAP_EXT(name,prefix,token,type,context) { name, sizeof(name)-1, prefix, token, static_cast<sal_Int32>(type), context, SvtSaveOptions::ODFVER_LATEST }
+#define _MAP_EXT(name,prefix,token,type,context) { name, sizeof(name)-1, prefix, token, static_cast<sal_Int32>(type), context, SvtSaveOptions::ODFVER_EXTENSION }
 #define PLMAP_EXT(name,prefix,token,type,context) _MAP_EXT(name,prefix,token,type|XML_TYPE_PROP_PAGE_LAYOUT,context)
 #define HFMAP_EXT(name,prefix,token,type,context) _MAP_EXT(name,prefix,token,type|XML_TYPE_PROP_HEADER_FOOTER,context)
 

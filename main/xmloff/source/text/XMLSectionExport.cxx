@@ -436,7 +436,7 @@ void XMLSectionExport::ExportRegularSectionStart(
 	aAny >>= sCond;
 	enum XMLTokenEnum eDisplay = XML_TOKEN_INVALID;
 	// strict ODF 1.2 has no form for the condition of a visible section (display="condition" means hidden)
-	const sal_Bool bStrict = GetExport().getDefaultVersion() == SvtSaveOptions::ODFVER_012;
+	const sal_Bool bStrict = SvtSaveOptions::IsODFStrict( GetExport().getDefaultVersion() );
 	const sal_Bool bIsVisible = *(sal_Bool*)xPropSet->getPropertyValue(sIsVisible).getValue();
 	if (sCond.getLength() > 0 && !( bStrict && bIsVisible ))
 	{
@@ -1393,11 +1393,11 @@ void XMLSectionExport::ExportIndexTemplateElement(
 			break;
 		case TOK_TTYPE_HYPERLINK_START:
 			// strict ODF 1.2 allows the link tokens in table-of-content templates only
-			if ( aODFVersion != SvtSaveOptions::ODFVER_012 || TEXT_SECTION_TYPE_TOC == eType )
+			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType )
 				eElement = XML_INDEX_ENTRY_LINK_START;
 			break;
 		case TOK_TTYPE_HYPERLINK_END:
-			if ( aODFVersion != SvtSaveOptions::ODFVER_012 || TEXT_SECTION_TYPE_TOC == eType )
+			if ( !SvtSaveOptions::IsODFStrict( aODFVersion ) || TEXT_SECTION_TYPE_TOC == eType )
 				eElement = XML_INDEX_ENTRY_LINK_END;
 			break;
 		case TOK_TTYPE_BIBLIOGRAPHY:
@@ -1518,7 +1518,7 @@ void XMLSectionExport::ExportIndexTemplateElement(
 			}
 
             // #i21237#
-            if (bWithTabStopOK && ! bWithTabStop && aODFVersion != SvtSaveOptions::ODFVER_012)
+            if (bWithTabStopOK && ! bWithTabStop && !SvtSaveOptions::IsODFStrict( aODFVersion ))
             {
                	GetExport().AddAttribute(XML_NAMESPACE_STYLE,
 										 XML_WITH_TAB,

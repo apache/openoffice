@@ -374,14 +374,14 @@ void ScMyValidationsContainer::WriteValidations(ScXMLExport& rExport)
                     {
                     case sheet::TableValidationVisibility::INVISIBLE:
                         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_DISPLAY_LIST,
-                            rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ? XML_NONE : XML_NO);
+                            SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ? XML_NONE : XML_NO);
                     break;
                     case sheet::TableValidationVisibility::UNSORTED:
                         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_DISPLAY_LIST, XML_UNSORTED);
                     break;
                     case sheet::TableValidationVisibility::SORTEDASCENDING:
                         rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_DISPLAY_LIST,
-                            rExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 ? XML_SORT_ASCENDING : XML_SORTED_ASCENDING);
+                            SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() ) ? XML_SORT_ASCENDING : XML_SORTED_ASCENDING);
                     break;
                     default:
                         DBG_ERROR("unknown ListType");

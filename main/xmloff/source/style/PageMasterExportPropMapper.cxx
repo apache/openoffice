@@ -546,7 +546,7 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 	}
 
 	// ext output stays as before (the ids once collided with the repeat offsets, so none was written)
-	if( SvtSaveOptions().GetODFDefaultVersion() > SvtSaveOptions::ODFVER_012 )
+	if( SvtSaveOptions::IsODFExtended( SvtSaveOptions().GetODFDefaultVersion() ) )
 	{
 		if( pPMHeaderGraphicUrl )
 			lcl_RemoveState(pPMHeaderGraphicUrl);
@@ -555,7 +555,7 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 	}
 
 	// ext output writes the page fill as the drawing page style of the master page instead
-	if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+	if( SvtSaveOptions::IsODFExtended( SvtSaveOptions().GetODFDefaultVersion() ) )
 	{
 		for( ::std::vector< XMLPropertyState >::iterator aIter = rPropState.begin(); aIter != rPropState.end(); ++aIter )
 		{
@@ -568,7 +568,7 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 
 	// ODF 1.2 allows style:layout-grid-standard-mode in the default page layout only, so the other modes
 	// drop it; extended mode keeps it so that a page style in standard mode survives a round trip
-	if( pPMGridBaseWidth && pPMStandardMode && SvtSaveOptions().GetODFDefaultVersion() != SvtSaveOptions::ODFVER_LATEST )
+	if( pPMGridBaseWidth && pPMStandardMode && !SvtSaveOptions::IsODFExtended( SvtSaveOptions().GetODFDefaultVersion() ) )
 		lcl_RemoveState(pPMStandardMode);
 
 	aPageBuffer.ContextFilter( rPropState );
@@ -594,7 +594,7 @@ void XMLPageMasterExportPropMapper::ContextFilter(
 	if( pPMScaleToPages )
 		lcl_RemoveStateIfZero16( pPMScaleToPages );
 	// style:scale-to-X and -Y are not in ODF 1.2
-	const sal_Bool bStrict = SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012;
+	const sal_Bool bStrict = SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() );
 	if( pPMScaleToX )
 	{
 		if( bStrict )

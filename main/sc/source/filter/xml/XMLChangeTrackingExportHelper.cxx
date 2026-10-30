@@ -198,7 +198,7 @@ void ScChangeTrackingExportHelper::WriteDepending(const ScChangeAction* pDependA
     // correct "dependency" element otherwise
     // ("dependence" is not in the schema, so strict ODF 1.2 always writes "dependency")
     const bool bSaveBackwardsCompatible = ( rExport.getExportFlags() & EXPORT_SAVEBACKWARDCOMPATIBLE ) &&
-        rExport.getDefaultVersion() != SvtSaveOptions::ODFVER_012;
+        !SvtSaveOptions::IsODFStrict( rExport.getDefaultVersion() );
     SvXMLElementExport aDependElem(rExport, XML_NAMESPACE_TABLE,
         bSaveBackwardsCompatible ? XML_DEPENDENCE : XML_DEPENDENCY,
         sal_True, sal_True);

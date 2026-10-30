@@ -201,7 +201,7 @@ namespace dbaxml
 		virtual void ContextFilter( ::std::vector< XMLPropertyState >& rProperties,
 				Reference< XPropertySet > rPropSet ) const
 		{
-			if ( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+			if ( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
 			{
 				for ( ::std::vector< XMLPropertyState >::iterator aIter = rProperties.begin(); aIter != rProperties.end(); ++aIter )
 					if ( aIter->mnIndex != -1 && getPropertySetMapper()->GetEntryAPIName( aIter->mnIndex ).equals( PROPERTY_FONTWIDTH ) )
@@ -614,7 +614,7 @@ void ODBExport::exportConnectionData()
             sal_Int32 nPort = -1;
             m_aTypeCollection.extractHostNamePort(sValue,sDatabaseName,sHostName,nPort);
             // db:type must use a declared namespace prefix in ODF 1.2, so the URL goes into the connection resource
-            if ( sHostName.Len() && SvtSaveOptions().GetODFDefaultVersion() != SvtSaveOptions::ODFVER_012 )
+            if ( sHostName.Len() && !SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
             {
                 SvXMLElementExport aDatabaseDescription(*this,XML_NAMESPACE_DB, XML_DATABASE_DESCRIPTION, sal_True, sal_True);
                 {

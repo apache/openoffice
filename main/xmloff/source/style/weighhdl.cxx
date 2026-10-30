@@ -156,7 +156,7 @@ sal_Bool XMLFontWeightPropHdl::exportXML( OUString& rStrExpValue, const Any& rVa
 		}
 
 		// strict ODF 1.2 allows normal, bold and the hundreds only; rounding down keeps light and semilight apart
-		if( SvtSaveOptions().GetODFDefaultVersion() == SvtSaveOptions::ODFVER_012 )
+		if( SvtSaveOptions::IsODFStrict( SvtSaveOptions().GetODFDefaultVersion() ) )
 		{
 			switch( nWeight )
 			{

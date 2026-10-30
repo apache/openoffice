@@ -1512,7 +1512,7 @@ void SchXMLExportHelper_Impl::parseDocument( Reference< chart::XChartDocument >&
 
 				// export legend size
                 const SvtSaveOptions::ODFDefaultVersion nCurrentODFVersion( SvtSaveOptions().GetODFDefaultVersion() );
-                if( xLegendShape.is() && nCurrentODFVersion >= SvtSaveOptions::ODFVER_012 && nCurrentODFVersion == SvtSaveOptions::ODFVER_LATEST )//do not export legend-expansion to ODF 1.0 and export size only if extensions are enabled //#i28670# todo: change this dependent on fileformat evolution
+                if( xLegendShape.is() && nCurrentODFVersion >= SvtSaveOptions::ODFVER_012 && SvtSaveOptions::IsODFExtended( nCurrentODFVersion ) )//do not export legend-expansion to ODF 1.0 and export size only if extensions are enabled //#i28670# todo: change this dependent on fileformat evolution
                 {
                     try
 				    {
@@ -1594,7 +1594,7 @@ void SchXMLExportHelper_Impl::parseDocument( Reference< chart::XChartDocument >&
             {
                 Any aShapesAny = xDocPropSet->getPropertyValue( OUString::createFromAscii( "AdditionalShapes" ));
                 aShapesAny >>= mxAdditionalShapes;
-                if( mrExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_010 && mrExport.getDefaultVersion() <= SvtSaveOptions::ODFVER_012 )
+                if( mrExport.getDefaultVersion() >= SvtSaveOptions::ODFVER_010 && !SvtSaveOptions::IsODFExtended( mrExport.getDefaultVersion() ) )
                     mxAdditionalShapes.clear();
             }
             catch( uno::Exception & rEx )
@@ -2278,9 +2278,9 @@ void SchXMLExportHelper_Impl::exportPlotArea(
 void SchXMLExportHelper_Impl::exportCoordinateRegion( const uno::Reference< chart::XDiagram >& xDiagram )
 {
     const SvtSaveOptions::ODFDefaultVersion nCurrentODFVersion( SvtSaveOptions().GetODFDefaultVersion() );
-    if( nCurrentODFVersion <= SvtSaveOptions::ODFVER_012 )//do not export to ODF 1.2 or older
+    if( !SvtSaveOptions::IsODFExtended( nCurrentODFVersion ) )//do not export to ODF 1.2 or older
         return;
-    if( nCurrentODFVersion != SvtSaveOptions::ODFVER_LATEST )//export only if extensions are enabled //#i100778# todo: change this dependent on fileformat evolution
+    if( !SvtSaveOptions::IsODFExtended( nCurrentODFVersion ) )//export only if extensions are enabled //#i100778# todo: change this dependent on fileformat evolution
         return;
 
     Reference< chart::XDiagramPositioning > xDiaPos( xDiagram, uno::UNO_QUERY );
@@ -2404,7 +2404,7 @@ bool lcl_exportAxisType( const Reference< chart2::XAxis > xChart2Axis, SvXMLExpo
         return bExportDateScale;
 
     const SvtSaveOptions::ODFDefaultVersion nCurrentODFVersion( SvtSaveOptions().GetODFDefaultVersion() );
-    if( nCurrentODFVersion != SvtSaveOptions::ODFVER_LATEST ) //#i25706#todo: change version for next ODF version
+    if( !SvtSaveOptions::IsODFExtended( nCurrentODFVersion ) ) //#i25706#todo: change version for next ODF version
         return bExportDateScale;
 
     chart2::ScaleData aScale( xChart2Axis->getScaleData() );
@@ -3670,7 +3670,7 @@ SchXMLExport::SchXMLExport(
 	maAutoStylePool( *this ),
 	maExportHelper( *this, maAutoStylePool )
 {
-    if( getDefaultVersion() == SvtSaveOptions::ODFVER_LATEST )
+    if( SvtSaveOptions::IsODFExtended( getDefaultVersion() ) )
         _GetNamespaceMap().Add( GetXMLToken(XML_NP_CHART_EXT), GetXMLToken(XML_N_CHART_EXT), XML_NAMESPACE_CHART_EXT);
 }
 

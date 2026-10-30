@@ -814,7 +814,7 @@ sal_Bool ScXMLImportWrapper::ExportToComponent(uno::Reference<lang::XMultiServic
             // because without the ...DONE events, stream positions aren't updated.
             ScSheetSaveData* pSheetData = ScModelObj::getImplementation(xModel)->GetSheetSaveData();
             // strict ODF 1.2: no copying of sheet text that was loaded from a document that is not strict
-            if (pSheetData && pSheetData->IsInSupportedSave() && pExport->getDefaultVersion() != SvtSaveOptions::ODFVER_012)
+            if (pSheetData && pSheetData->IsInSupportedSave() && !SvtSaveOptions::IsODFStrict( pExport->getDefaultVersion() ))
             {
                 try
                 {

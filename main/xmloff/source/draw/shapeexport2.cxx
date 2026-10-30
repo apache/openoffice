@@ -1594,7 +1594,7 @@ void XMLShapeExport::ImpExportOLE2Shape(
 		sal_Bool bCreateNewline( (nFeatures & SEF_EXPORT_NO_WS) == 0 ); // #86116#/#92210#
 		sal_Bool bExportEmbedded(0 != (mrExport.getExportFlags() & EXPORT_EMBEDDED));
 		OUString sPersistName;
-		if( mrExport.getDefaultVersion() == SvtSaveOptions::ODFVER_012 && !bIsEmptyPresObj && !bExportEmbedded )
+		if( SvtSaveOptions::IsODFStrict( mrExport.getDefaultVersion() ) && !bIsEmptyPresObj && !bExportEmbedded )
 		{
 			// neither link nor content is invalid in 1.2, and the replacement image would only name an empty object
 			sal_Bool bIsInt = sal_False;
@@ -1681,7 +1681,7 @@ void XMLShapeExport::ImpExportOLE2Shape(
 
             // #i118485# Add text export, the draw OLE shape allows text now
             uno::Reference< text::XText > xOleText( xShape, uno::UNO_QUERY );
-            if( ( mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_010 || mrExport.getDefaultVersion() > SvtSaveOptions::ODFVER_012 ) && xOleText.is() && xOleText->getString().getLength() ) ImpExportText( xShape );
+            if( ( mrExport.getDefaultVersion() < SvtSaveOptions::ODFVER_010 || SvtSaveOptions::IsODFExtended( mrExport.getDefaultVersion() ) ) && xOleText.is() && xOleText->getString().getLength() ) ImpExportText( xShape );
 
 			if(bExportEmbedded && !bIsEmptyPresObj)
 			{

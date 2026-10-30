@@ -380,7 +380,7 @@ void SvXMLExport::_InitCtor()
 		mpNamespaceMap->Add( GetXMLToken(XML_NP_OOOC),  GetXMLToken(XML_N_OOOC),    XML_NAMESPACE_OOOC );
 		mpNamespaceMap->Add( GetXMLToken(XML_NP_OF),    GetXMLToken(XML_N_OF),      XML_NAMESPACE_OF );
 
-		if (getDefaultVersion() > SvtSaveOptions::ODFVER_012)
+		if (SvtSaveOptions::IsODFExtended( getDefaultVersion() ))
 		{
 			mpNamespaceMap->Add(
 				GetXMLToken(XML_NP_TABLE_EXT), GetXMLToken(XML_N_TABLE_EXT), XML_NAMESPACE_TABLE_EXT);
@@ -1445,7 +1445,7 @@ sal_uInt32 SvXMLExport::exportDoc( enum ::xmloff::token::XMLTokenEnum eClass )
         const sal_Char* pVersion = 0;
         switch( getDefaultVersion() )
         {
-        case SvtSaveOptions::ODFVER_LATEST: pVersion = sXML_1_2; break;
+        case SvtSaveOptions::ODFVER_012_EXT: pVersion = sXML_1_2; break;
         case SvtSaveOptions::ODFVER_012: pVersion = sXML_1_2; break;
         case SvtSaveOptions::ODFVER_011: pVersion = sXML_1_1; break;
         case SvtSaveOptions::ODFVER_010: break;
