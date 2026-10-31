@@ -21,7 +21,7 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_basic.hxx"
-#include <basic/sbx.hxx>
+
 #include "sbcomp.hxx"
 #include <com/sun/star/script/ModuleType.hpp>
 
@@ -105,11 +105,11 @@ static SbiStatement StmntTable [] = {
 { WEND,		&SbiParser::BadBlock,	N, Y, }, // WEND
 { WITH,		&SbiParser::With,		N, Y, }, // WITH
 { WRITE,	&SbiParser::Write,		N, Y, }, // WRITE
-{ PP_IF,      &SbiParser::PPIf,           N, Y, }, // #IF
-{ PP_ELSEIF,  &SbiParser::PPIf,           N, Y, }, // #ELSEIF
-{ PP_ELSE,    &SbiParser::NoIf,           N, Y, }, // #ELSE
-{ PP_ENDIF,   &SbiParser::NoIf,           N, Y, }, // #ENDIF
-{ PP_CONST,   &SbiParser::PPConst,        Y, Y, }, // #CONST
+ { PP_IF,      &SbiParser::PPIf,           Y, Y, }, // #IF
+ { PP_ELSEIF,  &SbiParser::PPIf,           Y, Y, }, // #ELSEIF
+ { PP_ELSE,    &SbiParser::NoIf,           Y, Y, }, // #ELSE
+ { PP_ENDIF,   &SbiParser::NoIf,           Y, Y, }, // #ENDIF
+ { PP_CONST,   &SbiParser::PPConst,        Y, Y, }, // #CONST
 
 { NIL, NULL, N, N }
 };
@@ -340,9 +340,7 @@ sal_Bool SbiParser::Parse()
 
 	EnableErrors();
 
-	bErrorIsSymbol = false;
 	Peek();
-	bErrorIsSymbol = true;
 	// Dateiende?
 	if( IsEof() )
 	{
@@ -457,7 +455,7 @@ sal_Bool SbiParser::Parse()
 	if( !IsEos() )
 	{
 		Peek();
-		if( !IsEos() && eCurTok != ELSE )
+		if( !IsEos() && eCurTok != ELSE && eCurTok != PP_ENDIF && eCurTok != PP_ELSE && eCurTok != PP_ELSEIF )
 		{
 			// falls das Parsing abgebrochen wurde, bis zum ":" vorgehen:
 			Error( SbERR_UNEXPECTED, eCurTok );
@@ -869,73 +867,155 @@ void SbiParser::ErrorStmnt()
 }
 
 // MS Excel VBA: #If conditional compilation directive.
-// Status: implemented - supports #If, #ElseIf, #Else, #End If
-// Supports simple expressions: True, False, identifier references, Not, =
+// Supports #If, #ElseIf, #Else, #End If with simple expressions:
+// True, False, identifier references, Not, And, Or, =, numbers.
 void SbiParser::PPIf()
 {
-	// Parse condition: evaluate simple constant expressions
+	Next();
 	bool bCondition = evaluatePPCondition();
 
-	// Expect "Then" (optional in VBA, but expected in practice)
 	if( eCurTok == THEN )
 		Next();
 
-	// If condition is true, parse the block until #ElseIf/#Else/#End If
-	// If false, skip the block
+	sal_uInt16 nNesting = 0;
 	SbiToken eTok = Peek();
 	while( !bAbort && !IsEof() &&
 		   !( eTok == PP_ELSEIF || eTok == PP_ELSE || eTok == PP_ENDIF ) )
 	{
+		if( eCurTok == PP_IF )
+			nNesting++;
+		else if( eCurTok == PP_ENDIF )
+		{
+			if( nNesting > 0 )
+				nNesting--;
+		}
+
 		if( bCondition )
 			Parse();
 		else
 			skipStatement();
+
+		// After Parse/skipStatement, check if we hit a branch delimiter
+		if( nNesting == 0 &&
+			( eCurTok == PP_ELSEIF || eCurTok == PP_ELSE || eCurTok == PP_ENDIF ) )
+		{
+			eTok = eCurTok;
+			if( ePush == NIL )
+				ePush = eCurTok;
+			break;
+		}
+		if( nNesting == 0 && eCurTok == PP_IF )
+		{
+			eTok = eCurTok;
+			if( ePush == NIL )
+				ePush = eCurTok;
+			break;
+		}
 		eTok = Peek();
 	}
 
+	// After loop, handle branch transitions
 	if( bCondition )
 	{
-		// We're in the true branch - skip any additional branches
 		if( eTok == PP_ELSE )
 		{
-			Next(); // consume #Else
+			Next();
 			skipUntilEndIf();
 		}
 		else if( eTok == PP_ELSEIF )
 		{
-			Next(); // consume #ElseIf
+			Next();
 			skipUntilEndIf();
 		}
-		else if( eTok == PP_ENDIF )
+		else if( eTok == PP_ENDIF || eTok == PP_IF )
 		{
-			Next(); // consume #End If
+			Next();
 		}
 	}
 	else
 	{
-		// We're in the false branch - check if there's an #Else or #ElseIf
 		if( eTok == PP_ELSEIF )
 		{
-			Next(); // consume #ElseIf
-			PPIf(); // recursively handle the elseif branch
+			Next();
+			if( evaluatePPCondition() )
+			{
+				if( eCurTok == THEN )
+					Next();
+				SbiToken eTok2 = Peek();
+				while( !bAbort && !IsEof() &&
+					   !( eTok2 == PP_ELSEIF || eTok2 == PP_ELSE || eTok2 == PP_ENDIF ) )
+				{
+					Parse();
+					if( eCurTok == PP_ELSEIF || eCurTok == PP_ELSE || eCurTok == PP_ENDIF )
+					{
+						eTok2 = eCurTok;
+						if( ePush == NIL )
+							ePush = eCurTok;
+						break;
+					}
+					eTok2 = Peek();
+				}
+				if( eTok2 == PP_ENDIF )
+					Next();
+				else if( eTok2 == PP_ELSE )
+				{
+					Next();
+					skipUntilEndIf();
+				}
+			}
+			else
+			{
+				if( eCurTok == THEN )
+					Next();
+				skipUntilEndIf();
+				if( eCurTok == PP_ELSE )
+				{
+					Next();
+					SbiToken eTok2 = Peek();
+					while( !bAbort && !IsEof() &&
+						   !( eTok2 == PP_ELSEIF || eTok2 == PP_ELSE || eTok2 == PP_ENDIF ) )
+					{
+						Parse();
+						if( eCurTok == PP_ELSEIF || eCurTok == PP_ELSE || eCurTok == PP_ENDIF )
+						{
+							eTok2 = eCurTok;
+							if( ePush == NIL )
+								ePush = eCurTok;
+							break;
+						}
+						eTok2 = Peek();
+					}
+					if( eTok2 == PP_ENDIF )
+						Next();
+				}
+				else if( eCurTok == PP_ENDIF )
+					Next();
+			}
 			return;
 		}
 		else if( eTok == PP_ELSE )
 		{
-			Next(); // consume #Else
-			// Parse the else block
+			Next();
 			SbiToken eTok2 = Peek();
-			while( !bAbort && !IsEof() && !( eTok2 == PP_ENDIF ) )
+			while( !bAbort && !IsEof() &&
+				   !( eTok2 == PP_ELSEIF || eTok2 == PP_ELSE || eTok2 == PP_ENDIF ) )
 			{
 				Parse();
+				if( eCurTok == PP_ELSEIF || eCurTok == PP_ELSE || eCurTok == PP_ENDIF )
+				{
+					eTok2 = eCurTok;
+					if( ePush == NIL )
+						ePush = eCurTok;
+					break;
+				}
 				eTok2 = Peek();
 			}
 			if( eTok2 == PP_ENDIF )
-				Next(); // consume #End If
+				Next();
 		}
 		else if( eTok == PP_ENDIF )
 		{
-			Next(); // consume #End If
+			Next();
 		}
 	}
 }
@@ -965,77 +1045,115 @@ bool SbiParser::isVBAPredefinedConst( const String& aName, bool& bValue )
 }
 
 // Helper: Evaluate a single term in a #If condition (no And/Or).
-// Handles: True, False, identifier, Not expr, expr = expr, numbers
+// Handles: True, False, identifier, Not expr, expr = expr, numbers.
+// The caller (PPIf or evaluatePPCondition's And/Or loop) must have already
+// called Next() to read the operand token into eCurTok.
+// After returning, eCurTok points to the token following the term
+// (Then, And, Or, etc.) so evaluatePPCondition can continue.
 bool SbiParser::evaluatePPTerm()
 {
-	Peek();
 	bool bResult = false;
 	bool bNegate = false;
 
-	// Handle "Not"
+	// Handle "Not" - aSym is already set by the caller's Next()
 	if( aSym.EqualsIgnoreCaseAscii( "Not" ) )
 	{
 		bNegate = true;
-		Next();
-		Peek();
+		Next(); // read the negated operand
 	}
 
-	// Get the left operand
+	// Check aSym BEFORE Peek(), since Peek() overwrites it
 	if( aSym.EqualsIgnoreCaseAscii( "True" ) )
 	{
 		bResult = true;
-		Next();
-		Peek();
+		Next(); // advance past "True", read next token (Then or And/Or)
 	}
 	else if( aSym.EqualsIgnoreCaseAscii( "False" ) )
 	{
 		bResult = false;
-		Next();
-		Peek();
+		Next(); // advance past "False", read next token
 	}
 	else if( eCurTok == SYMBOL )
 	{
-		// Check if it's a known constant
+		// Identifier - save before Peek() overwrites aSym
 		String aName = aSym;
-		Next();
-		Peek();
+		Peek(); // look ahead to check for comparison
 
-		// Check for comparison: identifier = value
-		if( eCurTok == EQ )
+		if( eCurTok == EQ || eCurTok == NE || eCurTok == LT || eCurTok == GT ||
+			eCurTok == LE || eCurTok == GE )
 		{
-			Next(); // consume =
-			Peek();
+			// Comparison: identifier <op> value
+			SbiToken eOp = eCurTok;
+			Next(); // consume operator
+			Peek(); // read RHS
+
 			// Resolve left-hand value
 			bool bLVal = false;
-			if( maConstMap.count( aName ) > 0 )
-				bLVal = maConstMap[ aName ];
-			else if( !isVBAPredefinedConst( aName, bLVal ) )
+			double nLVal = 0.0;
+			bool bLIsNum = false;
+			if( maConstNumMap.count( aName ) > 0 )
 			{
-				// Unknown identifier - try to evaluate as expression
-				SbiExpression aLeftExpr( this );
+				nLVal = maConstNumMap[ aName ];
+				bLIsNum = true;
+				bLVal = (nLVal != 0.0);
 			}
-			// Get the right operand
+			else if( maConstMap.count( aName ) > 0 )
+				bLVal = maConstMap[ aName ];
+			else
+				isVBAPredefinedConst( aName, bLVal );
+
+			bool bRVal = false;
+			double nRVal = 0.0;
+			bool bRIsNum = false;
+
 			if( eCurTok == SYMBOL )
 			{
+				// RHS is True/False/identifier
 				String aVal = aSym;
-				Next();
-				// Resolve right-hand value
-				bool bRVal = false;
 				if( aVal.EqualsIgnoreCaseAscii( "True" ) )
 					bRVal = true;
 				else if( aVal.EqualsIgnoreCaseAscii( "False" ) )
 					bRVal = false;
+				else if( maConstNumMap.count( aVal ) > 0 )
+				{
+					nRVal = maConstNumMap[ aVal ];
+					bRIsNum = true;
+					bRVal = (nRVal != 0.0);
+				}
 				else if( maConstMap.count( aVal ) > 0 )
 					bRVal = maConstMap[ aVal ];
 				else
 					isVBAPredefinedConst( aVal, bRVal );
-				bResult = (bLVal == bRVal);
+				Next(); // consume RHS
 			}
 			else if( eCurTok == NUMBER )
 			{
-				bResult = (bLVal == (nVal != 0.0));
-				Next();
+				bRVal = (nVal != 0.0);
+				nRVal = nVal;
+				bRIsNum = true;
+				Next(); // consume number
 			}
+			else
+			{
+				bResult = false;
+			}
+
+			bool bNumCmp = bLIsNum || bRIsNum;
+			if( eOp == EQ )
+				bResult = bNumCmp ? (nLVal == nRVal) : (bLVal == bRVal);
+			else if( eOp == NE )
+				bResult = bNumCmp ? (nLVal != nRVal) : (bLVal != bRVal);
+			else if( eOp == LT )
+				bResult = bNumCmp ? (nLVal < nRVal) : (!bLVal && bRVal);
+			else if( eOp == GT )
+				bResult = bNumCmp ? (nLVal > nRVal) : (bLVal && !bRVal);
+			else if( eOp == LE )
+				bResult = bNumCmp ? (nLVal <= nRVal) : !bLVal;
+			else if( eOp == GE )
+				bResult = bNumCmp ? (nLVal >= nRVal) : bRVal;
+
+			// Read next token (THEN, AND, OR, etc.) for caller
+			Peek();
 		}
 		else if( eCurTok == THEN )
 		{
@@ -1044,6 +1162,7 @@ bool SbiParser::evaluatePPTerm()
 				bResult = maConstMap[ aName ];
 			else
 				isVBAPredefinedConst( aName, bResult );
+			// eCurTok is THEN (from Peek) - leave for caller
 		}
 		else
 		{
@@ -1052,19 +1171,13 @@ bool SbiParser::evaluatePPTerm()
 				bResult = maConstMap[ aName ];
 			else
 				isVBAPredefinedConst( aName, bResult );
+			// eCurTok is the peeked token - leave for caller
 		}
 	}
 	else if( eCurTok == NUMBER )
 	{
 		bResult = (nVal != 0.0);
-		Next();
-		Peek();
-	}
-	else
-	{
-		// Unknown expression - parse and consume it
-		SbiExpression aExpr( this );
-		bResult = true; // unknown, default to true
+		Next(); // advance past number, read next token
 	}
 
 	if( bNegate )
@@ -1093,16 +1206,38 @@ bool SbiParser::evaluatePPCondition()
 
 	return bResult;
 }
-
 // Helper: Skip statements without generating code
+// Tracks nested #If blocks so inactive branches are fully skipped.
+// Continues past EOLN/EOS to skip to the next line (unlike a single
+// statement terminator check).
 void SbiParser::skipStatement()
 {
-	// Simple statement skip - consume tokens until EOLN
-	while( !bAbort && !IsEos() && !IsEof() )
-		Next();
-	Next(); // consume EOLN
+	sal_uInt16 nNesting = 0;
+	while( !bAbort && !IsEof() )
+	{
+		if( eCurTok == PP_IF )
+		{
+			nNesting++;
+			Next();
+		}
+		else if( eCurTok == PP_ENDIF )
+		{
+			if( nNesting > 0 )
+			{
+				nNesting--;
+				Next();
+			}
+			else
+				break;
+		}
+		else if( nNesting == 0 && ( eCurTok == PP_ELSEIF || eCurTok == PP_ELSE ) )
+		{
+			break;
+		}
+		else
+			Next();
+	}
 }
-
 // MS Excel VBA: #Const conditional compilation constant declaration.
 // Status: implemented - stores name=value in the conditional compilation map
 void SbiParser::PPConst()
@@ -1120,25 +1255,23 @@ void SbiParser::PPConst()
 
 	String aConstName = aSym;
 	Next();
-	TestToken( ASSIGN );
+	TestToken( EQ );
 	Next();
 
 	// Parse the value - expect True, False, or a number
-	Peek();
+	// eCurTok has the value token already (from Next above)
 	if( aSym.EqualsIgnoreCaseAscii( "True" ) )
 	{
 		maConstMap[ aConstName ] = true;
-		Next();
 	}
 	else if( aSym.EqualsIgnoreCaseAscii( "False" ) )
 	{
 		maConstMap[ aConstName ] = false;
-		Next();
 	}
 	else if( eCurTok == NUMBER )
 	{
 		maConstMap[ aConstName ] = (nVal != 0.0);
-		Next();
+		maConstNumMap[ aConstName ] = nVal;
 	}
 	else
 	{
@@ -1175,7 +1308,7 @@ void SbiParser::skipUntilEndIf()
 		}
 		else
 		{
-			skipStatement();
+			Next();
 		}
 		eTok = Peek();
 	}

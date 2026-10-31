@@ -437,7 +437,7 @@ SbxObject* SbiFactory::CreateObject( const String& rClass )
 		return new BasicCollection( aCollectionName );
 	}
 	else
-    if( rClass.EqualsIgnoreCaseAscii( "FileSystemObject" ) )
+    if( rClass.EqualsIgnoreCaseAscii( "Scripting.FileSystemObject" ) )
     {
         try
         {

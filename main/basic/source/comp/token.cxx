@@ -359,8 +359,8 @@ TokenTable aTokTable_Java [] = {		// Token-Tabelle:
 // #i109076
 TokenLabelInfo::TokenLabelInfo( void )
 {
-	m_pTokenCanBeLabelTab = new bool[INTERFACE+1];
-	for( int i = 0 ; i <= INTERFACE ; ++i )
+	m_pTokenCanBeLabelTab = new bool[PP_CONST+1];
+	for( int i = 0 ; i <= PP_CONST ; ++i )
 		m_pTokenCanBeLabelTab[i] = false;
 
 	// Token accepted as label by VBA

@@ -150,6 +150,8 @@ public:
 
 	// Conditional compilation constants map
 	std::map<String, bool> maConstMap;
+	// Numeric constants (e.g. #Const VERSION = 2)
+	std::map<String, double> maConstNumMap;
 };
 
 
