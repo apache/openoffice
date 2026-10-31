@@ -83,6 +83,9 @@ else
         alpha-*-linux*)
             . ./LinuxAlphaEnv.Set.sh
         ;;
+        aarch64-*-linux*)
+            . ./LinuxAARCH64Env.Set.sh
+        ;;
         arm*-*-linux*)
             . ./LinuxARMEnv.Set.sh
         ;;

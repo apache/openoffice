@@ -52,6 +52,10 @@ PATCH_FILES=${TARFILE_NAME}.patch icu-win-layout.patch \
 PATCH_FILES+=icu-darwin.patch
 .ENDIF
 
+.IF "$(OS)$(CPUNAME)"=="LINUXAARCH64"
+PATCH_FILES+=icu-aarch64.patch
+.ENDIF
+
 # ADDITIONAL_FILES=
 
 .IF "$(GUI)"=="UNX"

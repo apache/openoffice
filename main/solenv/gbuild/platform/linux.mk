@@ -92,6 +92,11 @@ gb_CXXFLAGS := \
 	-std=gnu++11 \
 	-pipe \
 
+ifeq ($(CPUNAME),AARCH64)
+# with -Os, GCC 13 leaves inline thunks unresolved at link time (libsot)
+gb_CXXFLAGS += -fno-devirtualize
+endif
+
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
 # C++11 deprecation/narrowing warnings (std::auto_ptr, dynamic exception specs,
 # braced-init narrowing) must not be fatal.  Mirrors macosx.mk.

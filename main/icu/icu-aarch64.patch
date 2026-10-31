@@ -1,0 +1,24 @@
+diff -ru misc/icu/source/configure misc/build/icu/source/configure
+--- misc/icu/source/configure
++++ misc/build/icu/source/configure
+@@ -6106,7 +6106,7 @@
+ # Check to see if genccode can generate simple assembly.
+ GENCCODE_ASSEMBLY=
+ case "${host}" in
+-i*86-*-linux*|x86_64-*-linux*|powerpc*-*-linux*|i*86-*-*bsd*|i*86-pc-gnu)
++i*86-*-linux*|x86_64-*-linux*|aarch64-*-linux*|powerpc*-*-linux*|i*86-*-*bsd*|i*86-pc-gnu)
+     if test "$GCC" = yes; then
+         # We're using gcc, and the simple -a gcc command line works for genccode
+         GENCCODE_ASSEMBLY="-a gcc"
+diff -ru misc/icu/source/configure.in misc/build/icu/source/configure.in
+--- misc/icu/source/configure.in
++++ misc/build/icu/source/configure.in
+@@ -462,7 +462,7 @@
+ # Check to see if genccode can generate simple assembly.
+ GENCCODE_ASSEMBLY=
+ case "${host}" in
+-i*86-*-linux*|x86_64-*-linux*|powerpc*-*-linux*|i*86-*-*bsd*|i*86-pc-gnu)
++i*86-*-linux*|x86_64-*-linux*|aarch64-*-linux*|powerpc*-*-linux*|i*86-*-*bsd*|i*86-pc-gnu)
+     if test "$GCC" = yes; then
+         # We're using gcc, and the simple -a gcc command line works for genccode
+         GENCCODE_ASSEMBLY="-a gcc"
