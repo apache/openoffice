@@ -49,7 +49,10 @@ $(eval $(call gb_Library_add_linked_libs,test,\
 	cppuhelper \
 	gtest \
 	sal \
+	sb \
+	svl \
 	stl \
+	tl \
 	$(gb_STDLIBS) \
 ))
 

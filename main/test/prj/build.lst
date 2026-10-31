@@ -1,2 +1,2 @@
-te test : BOOST:boost cppu cppuhelper javaunohelper ridljar sal solenv stlport unoil NULL
+te test : BOOST:boost sb cppu cppuhelper javaunohelper ridljar sal solenv stlport unoil NULL
 te test\prj nmake - all test_prj NULL

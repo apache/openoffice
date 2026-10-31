@@ -34,9 +34,10 @@ $(eval $(call gb_Module_add_targets,test,\
 ))
 endif
 
-ifeq ($(ENABLE_UNIT_TESTS),YES)
+ ifeq ($(ENABLE_UNIT_TESTS),YES)
 $(eval $(call gb_Module_add_targets,test,\
         Library_test \
+        GoogleTest_basic_compiler \
 ))
 endif
 
