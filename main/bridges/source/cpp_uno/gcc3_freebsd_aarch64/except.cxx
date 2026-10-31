@@ -230,9 +230,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 
 	type_info * p = 0;
 	{
-		void * sym = dlsym( RTLD_DEFAULT, mangled.getStr() );
-		if ( sym )
-			p = *reinterpret_cast< type_info ** >( sym );
+		p = static_cast< type_info * >( dlsym( RTLD_DEFAULT, mangled.getStr() ) );
 	}
 
 	if ( p )

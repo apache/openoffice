@@ -77,6 +77,8 @@ UNAME=$(shell uname)
 			CONFIGURE_ACTION=Configure debian-kfreebsd-amd64 no-dso no-shared $(NO_ASM)
 		.ELIF "$(UNAME)" == "FreeBSD"
 			CONFIGURE_ACTION=Configure BSD-x86_64 no-dso no-shared $(NO_ASM)
+		.ELIF "$(UNAME)" == "Linux" && "$(CPUNAME)" == "AARCH64"
+			CONFIGURE_ACTION=Configure linux-aarch64 no-dso no-shared $(NO_ASM)
 		.ELSE
 			CONFIGURE_ACTION=Configure linux-x86_64 no-dso no-shared $(NO_ASM)
 		.ENDIF
