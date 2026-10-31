@@ -92,7 +92,7 @@ else
         mips-*-linux*)
             . ./LinuxMIPSEnv.Set.sh
         ;;
-        i386-*-freebsd*)
+        i[3456]86-*-freebsd*)
             . ./FreeBSDX86Env.Set.sh
         ;;
         amd64-*-freebsd*|x86_64-*-freebsd*)
